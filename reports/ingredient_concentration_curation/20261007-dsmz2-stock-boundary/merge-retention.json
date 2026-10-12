@@ -1,0 +1,17 @@
+{
+  "path": "data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml",
+  "id": "CultureMech:001399",
+  "fingerprint": "72f15851277b0435404409cf10475018ed4f85a81ecd98eaeff8f0b03ae8ef9d",
+  "group_paths": [
+    "data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml"
+  ],
+  "merged_id": "CultureMech:001399",
+  "field_retention": {
+    "ingredients": true,
+    "solutions": true,
+    "preparation_steps": true,
+    "evidence": true,
+    "references": true
+  },
+  "all_checked_fields_retained": true
+}

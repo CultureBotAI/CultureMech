@@ -11,6 +11,32 @@ composition:
   term:
     id: mediadive.compound:19
     label: Bacto peptone
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5829
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Bacto peptone",
+                      "compound_id": 19,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.5,
+                      "unit": "g",
+                      "g_l": 2.5,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Bacto peptone)
+      in MediaDive solution 5829; locator=$.data.recipe[0] (compound_id=19). Provider
+      explicitly reports g_l=2.5. Arithmetic check: 2.5 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 2.5 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:58:34.003262+00:00; response SHA256=4d757f3961869cb58cb1a4e98a681419d5dc0788dba153a6ae49cd47653eb954.'
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
@@ -59,6 +85,15 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5829
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "2.5"} -> {"unit":
+    "G_PER_L", "value": "2.5"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -67,3 +102,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5829
+  title: 'MediaDive solution 5829: Main sol. 1752'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=4d757f3961869cb58cb1a4e98a681419d5dc0788dba153a6ae49cd47653eb954;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

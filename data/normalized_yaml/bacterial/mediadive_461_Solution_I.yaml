@@ -16,10 +16,228 @@ composition:
     label: 1,4-dithiothreitol
     confidence: 0.9
     match_type: manual_curated
+  notes: 'Retain the explicitly reported stock g_l with its provider scope, not a
+    receiving-medium concentration or independently established final volume. Preserve
+    the source attribute separately: DTT. Source input: 0.4 g; stage=Solution I.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/461
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "DL-Dithiothreitol",
+                      "compound_id": 151,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "DTT",
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 40,
+                      "mmol_l": 259.235,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[0].preferred_term: Retain the explicitly reported stock g_l with its provider scope, not a receiving-medium concentration or independently established final volume. Preserve the source attribute separately: DTT. Source input: 0.4 g; stage=Solution I. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[0]; accessed=2026-10-09T10:04:31.227840+00:00; capture SHA256=2f948988af8f4b1a0eb4c7e5ea95cd54f647818ff1762178c8a44725fce34442.
+
+      Additional exact excerpt: {
+                      "recipe_order": 1,
+                      "compound": "DL-Dithiothreitol",
+                      "compound_id": 151,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "DTT",
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 40,
+                      "mmol_l": 259.235,
+                      "optional": 0
+                  }
+      composition[0].concentration: Retain the explicitly reported stock g_l with its provider scope, not a receiving-medium concentration or independently established final volume. Preserve the source attribute separately: DTT. Source input: 0.4 g; stage=Solution I. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[0]; accessed=2026-10-09T10:04:31.227840+00:00; capture SHA256=2f948988af8f4b1a0eb4c7e5ea95cd54f647818ff1762178c8a44725fce34442.
+
+      Additional exact excerpt: {
+                      "recipe_order": 1,
+                      "compound": "DL-Dithiothreitol",
+                      "compound_id": 151,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "DTT",
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 40,
+                      "mmol_l": 259.235,
+                      "optional": 0
+                  }
+      composition[0].notes: Retain the explicitly reported stock g_l with its provider scope, not a receiving-medium concentration or independently established final volume. Preserve the source attribute separately: DTT. Source input: 0.4 g; stage=Solution I. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[0]; accessed=2026-10-09T10:04:31.227840+00:00; capture SHA256=2f948988af8f4b1a0eb4c7e5ea95cd54f647818ff1762178c8a44725fce34442.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "DL-Dithiothreitol",
+                      "compound_id": 151,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "DTT",
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 40,
+                      "mmol_l": 259.235,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      ingredients: Every exact source row is represented in composition. Remove only the false composition placeholder and its incomplete-composition flag; this is not chemical-identity or measured-volume certification. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T10:04:31.227840+00:00; capture SHA256=2f948988af8f4b1a0eb4c7e5ea95cd54f647818ff1762178c8a44725fce34442.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "DL-Dithiothreitol",
+                      "compound_id": 151,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "DTT",
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 40,
+                      "mmol_l": 259.235,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      data_quality_flags: Every exact source row is represented in composition. Remove only the false composition placeholder and its incomplete-composition flag; this is not chemical-identity or measured-volume certification. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T10:04:31.227840+00:00; capture SHA256=2f948988af8f4b1a0eb4c7e5ea95cd54f647818ff1762178c8a44725fce34442.
+
+      Additional exact excerpt: "Solution I"
+      references[0].title: Use the exact source title; preserve accession and retrieval provenance in reference notes. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.name; accessed=2026-10-09T10:04:31.227840+00:00; capture SHA256=2f948988af8f4b1a0eb4c7e5ea95cd54f647818ff1762178c8a44725fce34442.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "DL-Dithiothreitol",
+                      "compound_id": 151,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "DTT",
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 40,
+                      "mmol_l": 259.235,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      notes: Archive the previous formulation nodes in append-only history. The inspected complete source defines this reconstruction, including removal of false LB expansion, placeholders and flattened stock quantities. Prior evidence content is preserved; same-reference explanations may be extended, never replaced. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T10:04:31.227840+00:00; capture SHA256=2f948988af8f4b1a0eb4c7e5ea95cd54f647818ff1762178c8a44725fce34442.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "DL-Dithiothreitol",
+                      "compound_id": 151,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "DTT",
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 40,
+                      "mmol_l": 259.235,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      notes: Archive the previous formulation nodes in append-only history. The inspected complete source defines this reconstruction, including removal of false LB expansion, placeholders and flattened stock quantities. Prior evidence content is preserved; same-reference explanations may be extended, never replaced. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T10:04:31.227840+00:00; capture SHA256=2f948988af8f4b1a0eb4c7e5ea95cd54f647818ff1762178c8a44725fce34442.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "DL-Dithiothreitol",
+                      "compound_id": 151,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "DTT",
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 40,
+                      "mmol_l": 259.235,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+              ]
+      notes: The complete source does not support this old copied ingredient, placeholder or flattened stock amount in the current formulation. Preserve its exact prior value in history. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T10:04:31.227840+00:00; capture SHA256=2f948988af8f4b1a0eb4c7e5ea95cd54f647818ff1762178c8a44725fce34442.
 - preferred_term: Distilled water
   concentration:
-    value: '1000.0'
-    unit: PERCENT_V_V
+    value: '0.01'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -28,6 +246,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/461
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Distilled
+      water) in MediaDive solution 461; locator=$.data.recipe[1] (compound_id=4).
+      Source water addition is 10 ml per prepared batch: 10 / 1000 = 0.01 L. No source
+      preparation step gives a competing make-up instruction. This is a batch dose,
+      not a volume percentage; no final-volume or solvent-density assumption is made.
+      Additional exact excerpt at $.data.volume: "volume": 10. Retrieved 2026-10-07T08:23:41.945571+00:00;
+      response SHA256=2f948988af8f4b1a0eb4c7e5ea95cd54f647818ff1762178c8a44725fce34442.'
 preparation_notes: 'Original volume: 10 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:32.129847Z'
@@ -62,11 +305,172 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-10-07T08:27:51.574555+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/461
+  changes: 'composition[1].concentration: {"unit": "PERCENT_V_V", "value": "1000.0"}
+    -> {"unit": "L", "value": "0.01"} (correct)'
+- timestamp: '2026-10-09T11:24:57.076143+00:00'
+  curator: codex
+  action: RESTORED_SYNTHROPHOMONAS_SOURCE_FORMULATIONS_WITH_EVIDENCE
+  notes: Restore source-specific medium212 formulations, stock-stage inputs and literal
+    quantity evidence. Preserve old evidence content and history. Same-reference explanations
+    are append-only; no final-volume, density, percent-basis or growth assertion is
+    inferred.
+  source: https://mediadive.dsmz.de/rest/solution/461
+  changes: '[{"old_field": "composition[0].preferred_term", "field": "composition[0].preferred_term",
+    "old": "DL-Dithiothreitol", "new": "DL-Dithiothreitol", "status": "evidence_only",
+    "reference": "https://mediadive.dsmz.de/rest/solution/461", "snippet": "{\n                \"recipe_order\":
+    1,\n                \"compound\": \"DL-Dithiothreitol\",\n                \"compound_id\":
+    151,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"DTT\",\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 40,\n                \"mmol_l\": 259.235,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[0].concentration", "field": "composition[0].concentration",
+    "old": {"value": "40", "unit": "G_PER_L"}, "new": {"value": "40", "unit": "G_PER_L"},
+    "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/solution/461",
+    "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\":
+    \"DL-Dithiothreitol\",\n                \"compound_id\": 151,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"DTT\",\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 40,\n                \"mmol_l\": 259.235,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[0].notes", "field": "composition[0].notes",
+    "old": null, "new": "Retain the explicitly reported stock g_l with its provider
+    scope, not a receiving-medium concentration or independently established final
+    volume. Preserve the source attribute separately: DTT. Source input: 0.4 g; stage=Solution
+    I.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/461",
+    "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\":
+    \"DL-Dithiothreitol\",\n                \"compound_id\": 151,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"DTT\",\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 40,\n                \"mmol_l\": 259.235,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].concentration", "field": "composition[1].concentration",
+    "old": {"value": "0.01", "unit": "L"}, "new": {"value": "0.01", "unit": "L"},
+    "status": "verified", "reference": "https://mediadive.dsmz.de/rest/solution/461",
+    "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "ingredients", "field": "ingredients", "old":
+    [{"preferred_term": "See source for composition", "concentration": {"value": "variable",
+    "unit": "VARIABLE"}}], "new": null, "status": "remove_unsupported", "reference":
+    "https://mediadive.dsmz.de/rest/solution/461", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"DL-Dithiothreitol\",\n                \"compound_id\":
+    151,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"DTT\",\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 40,\n                \"mmol_l\": 259.235,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "data_quality_flags", "field": "data_quality_flags",
+    "old": ["incomplete_composition"], "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/solution/461", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"DL-Dithiothreitol\",\n                \"compound_id\":
+    151,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"DTT\",\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 40,\n                \"mmol_l\": 259.235,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "references[0].title", "field": "references[0].title",
+    "old": "MediaDive solution 461: Solution I", "new": "Solution I", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/solution/461", "snippet": "\"Solution
+    I\""}, {"old_field": "ingredients", "field": "notes", "old": [{"preferred_term":
+    "See source for composition", "concentration": {"value": "variable", "unit": "VARIABLE"}}],
+    "new": "Archive the previous formulation nodes in append-only history. The inspected
+    complete source defines this reconstruction, including removal of false LB expansion,
+    placeholders and flattened stock quantities. Prior evidence content is preserved;
+    same-reference explanations may be extended, never replaced.\n\nArchive the previous
+    formulation nodes in append-only history. The inspected complete source defines
+    this reconstruction, including removal of false LB expansion, placeholders and
+    flattened stock quantities. Prior evidence content is preserved; same-reference
+    explanations may be extended, never replaced.", "status": "evidence_only", "reference":
+    "https://mediadive.dsmz.de/rest/solution/461", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"DL-Dithiothreitol\",\n                \"compound_id\":
+    151,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"DTT\",\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 40,\n                \"mmol_l\": 259.235,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "composition", "field": "notes",
+    "old": [{"preferred_term": "DL-Dithiothreitol", "concentration": {"value": "40",
+    "unit": "G_PER_L"}, "term": {"id": "mediadive.compound:151", "label": "DL-Dithiothreitol"},
+    "chebi_term": {"id": "CHEBI:18320", "label": "1,4-dithiothreitol", "confidence":
+    0.9, "match_type": "manual_curated"}}, {"preferred_term": "Distilled water", "concentration":
+    {"value": "0.01", "unit": "L"}, "term": {"id": "mediadive.compound:4", "label":
+    "Distilled water"}, "chebi_term": {"id": "CHEBI:15377", "label": "water", "confidence":
+    0.7, "match_type": "corpus_consensus"}, "evidence": [{"reference": "https://mediadive.dsmz.de/rest/solution/461",
+    "supports": "SUPPORT", "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }", "explanation": "Concentration evidence for composition[1].concentration
+    (Distilled water) in MediaDive solution 461; locator=$.data.recipe[1] (compound_id=4).
+    Source water addition is 10 ml per prepared batch: 10 / 1000 = 0.01 L. No source
+    preparation step gives a competing make-up instruction. This is a batch dose,
+    not a volume percentage; no final-volume or solvent-density assumption is made.
+    Additional exact excerpt at $.data.volume: \"volume\": 10. Retrieved 2026-10-07T08:23:41.945571+00:00;
+    response SHA256=2f948988af8f4b1a0eb4c7e5ea95cd54f647818ff1762178c8a44725fce34442."}]}],
+    "new": "Archive the previous formulation nodes in append-only history. The inspected
+    complete source defines this reconstruction, including removal of false LB expansion,
+    placeholders and flattened stock quantities. Prior evidence content is preserved;
+    same-reference explanations may be extended, never replaced.\n\nArchive the previous
+    formulation nodes in append-only history. The inspected complete source defines
+    this reconstruction, including removal of false LB expansion, placeholders and
+    flattened stock quantities. Prior evidence content is preserved; same-reference
+    explanations may be extended, never replaced.", "status": "evidence_only", "reference":
+    "https://mediadive.dsmz.de/rest/solution/461", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"DL-Dithiothreitol\",\n                \"compound_id\":
+    151,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"DTT\",\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 40,\n                \"mmol_l\": 259.235,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "ingredients[0].concentration", "field":
+    "notes", "old": {"value": "variable", "unit": "VARIABLE"}, "new": "Archive the
+    previous formulation nodes in append-only history. The inspected complete source
+    defines this reconstruction, including removal of false LB expansion, placeholders
+    and flattened stock quantities. Prior evidence content is preserved; same-reference
+    explanations may be extended, never replaced.\n\nArchive the previous formulation
+    nodes in append-only history. The inspected complete source defines this reconstruction,
+    including removal of false LB expansion, placeholders and flattened stock quantities.
+    Prior evidence content is preserved; same-reference explanations may be extended,
+    never replaced.", "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/solution/461",
+    "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"DL-Dithiothreitol\",\n                \"compound_id\": 151,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"DTT\",\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 40,\n                \"mmol_l\": 259.235,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ]"}]'
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/461
+  title: Solution I
+  notes: |-
+    source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07; source_organization=DSMZ; locator=$.data; response_sha256=2f948988af8f4b1a0eb4c7e5ea95cd54f647818ff1762178c8a44725fce34442; individual authors and publication year not supplied. Provider-declared solution amounts, not receiving-medium concentrations.
+
+    source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-09; capture_sha256=2f948988af8f4b1a0eb4c7e5ea95cd54f647818ff1762178c8a44725fce34442. Individual authors and publication year not supplied; copyright/access years are not publication years. Source-scoped formulation evidence, not organism-growth evidence.
+notes: |-
+  Archive the previous formulation nodes in append-only history. The inspected complete source defines this reconstruction, including removal of false LB expansion, placeholders and flattened stock quantities. Prior evidence content is preserved; same-reference explanations may be extended, never replaced.
+
+  Archive the previous formulation nodes in append-only history. The inspected complete source defines this reconstruction, including removal of false LB expansion, placeholders and flattened stock quantities. Prior evidence content is preserved; same-reference explanations may be extended, never replaced.

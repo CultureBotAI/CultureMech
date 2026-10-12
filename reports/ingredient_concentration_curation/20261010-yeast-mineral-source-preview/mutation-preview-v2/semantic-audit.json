@@ -1,0 +1,247 @@
+{
+  "terminal": true,
+  "passed": true,
+  "plan_sha256": "413ab653a133f8b37d2d89b1f2f39fff23baab998bbdf05f78ae0c80fab06560",
+  "source_sha256": "f8fc139c6c37261eed3e543224ea652ac81bc4701374b3c872bd119970d2a1b9",
+  "script_sha256": "1083b9fb83248ba6ed6129fc4219ca6b60829684a1b88a2b52dfaa9051e63bbf",
+  "records": [
+    {
+      "key": "397",
+      "path": "data/normalized_yaml/fungal/yeast_mineral_medium_10_g_l_glucose.yaml",
+      "counts": {
+        "corrected": 20,
+        "unresolved": 1
+      }
+    },
+    {
+      "key": "398",
+      "path": "data/normalized_yaml/fungal/yeast_mineral_medium_7_5_g_l_ethanol.yaml",
+      "counts": {
+        "corrected": 20,
+        "unresolved": 1
+      }
+    },
+    {
+      "key": "399",
+      "path": "data/normalized_yaml/fungal/yeast_mineral_medium_25_g_l_glucose.yaml",
+      "counts": {
+        "unresolved": 13,
+        "corrected": 8
+      }
+    },
+    {
+      "key": "400",
+      "path": "data/normalized_yaml/fungal/yeast_mineral_medium_7_9_g_l_ethanol.yaml",
+      "counts": {
+        "unresolved": 13,
+        "corrected": 8
+      }
+    }
+  ],
+  "rejected_faults": [
+    {
+      "key": "397",
+      "fault": "wrong_amount",
+      "rejected": true
+    },
+    {
+      "key": "397",
+      "fault": "lost_quote",
+      "rejected": true
+    },
+    {
+      "key": "397",
+      "fault": "upgraded_uncertainty",
+      "rejected": true
+    },
+    {
+      "key": "397",
+      "fault": "modified_history",
+      "rejected": true
+    },
+    {
+      "key": "397",
+      "fault": "invented_pore_size",
+      "rejected": true
+    },
+    {
+      "key": "397",
+      "fault": "unrelated_taxon",
+      "rejected": true
+    },
+    {
+      "key": "397",
+      "fault": "duplicate_reference",
+      "rejected": true
+    },
+    {
+      "key": "397",
+      "fault": "wrong_history_ingredient",
+      "rejected": true
+    },
+    {
+      "key": "397",
+      "fault": "wrong_antifoam_basis",
+      "rejected": true
+    },
+    {
+      "key": "397",
+      "fault": "lost_metadata",
+      "rejected": true
+    },
+    {
+      "key": "398",
+      "fault": "wrong_amount",
+      "rejected": true
+    },
+    {
+      "key": "398",
+      "fault": "lost_quote",
+      "rejected": true
+    },
+    {
+      "key": "398",
+      "fault": "upgraded_uncertainty",
+      "rejected": true
+    },
+    {
+      "key": "398",
+      "fault": "modified_history",
+      "rejected": true
+    },
+    {
+      "key": "398",
+      "fault": "invented_pore_size",
+      "rejected": true
+    },
+    {
+      "key": "398",
+      "fault": "unrelated_taxon",
+      "rejected": true
+    },
+    {
+      "key": "398",
+      "fault": "duplicate_reference",
+      "rejected": true
+    },
+    {
+      "key": "398",
+      "fault": "wrong_history_ingredient",
+      "rejected": true
+    },
+    {
+      "key": "398",
+      "fault": "wrong_antifoam_basis",
+      "rejected": true
+    },
+    {
+      "key": "398",
+      "fault": "lost_metadata",
+      "rejected": true
+    },
+    {
+      "key": "399",
+      "fault": "wrong_amount",
+      "rejected": true
+    },
+    {
+      "key": "399",
+      "fault": "lost_quote",
+      "rejected": true
+    },
+    {
+      "key": "399",
+      "fault": "upgraded_uncertainty",
+      "rejected": true
+    },
+    {
+      "key": "399",
+      "fault": "modified_history",
+      "rejected": true
+    },
+    {
+      "key": "399",
+      "fault": "invented_pore_size",
+      "rejected": true
+    },
+    {
+      "key": "399",
+      "fault": "unrelated_taxon",
+      "rejected": true
+    },
+    {
+      "key": "399",
+      "fault": "duplicate_reference",
+      "rejected": true
+    },
+    {
+      "key": "399",
+      "fault": "wrong_history_ingredient",
+      "rejected": true
+    },
+    {
+      "key": "399",
+      "fault": "wrong_antifoam_basis",
+      "rejected": true
+    },
+    {
+      "key": "399",
+      "fault": "lost_metadata",
+      "rejected": true
+    },
+    {
+      "key": "400",
+      "fault": "wrong_amount",
+      "rejected": true
+    },
+    {
+      "key": "400",
+      "fault": "lost_quote",
+      "rejected": true
+    },
+    {
+      "key": "400",
+      "fault": "upgraded_uncertainty",
+      "rejected": true
+    },
+    {
+      "key": "400",
+      "fault": "modified_history",
+      "rejected": true
+    },
+    {
+      "key": "400",
+      "fault": "invented_pore_size",
+      "rejected": true
+    },
+    {
+      "key": "400",
+      "fault": "unrelated_taxon",
+      "rejected": true
+    },
+    {
+      "key": "400",
+      "fault": "duplicate_reference",
+      "rejected": true
+    },
+    {
+      "key": "400",
+      "fault": "wrong_history_ingredient",
+      "rejected": true
+    },
+    {
+      "key": "400",
+      "fault": "wrong_antifoam_basis",
+      "rejected": true
+    },
+    {
+      "key": "400",
+      "fault": "lost_metadata",
+      "rejected": true
+    }
+  ],
+  "records_edited": 0,
+  "checks_are_read_only_preview_semantics": true,
+  "application_guard_tests_pending": true,
+  "all_record_goal_complete": false
+}

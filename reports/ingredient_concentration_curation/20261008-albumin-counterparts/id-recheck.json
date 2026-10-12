@@ -1,0 +1,63 @@
+{
+  "terminal": true,
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "0e1b0d61826c6c729ca46bd7adb32945695a509d8578fe651f380b9eef3778c7"
+  },
+  "checks": [
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "pytest_addopts": null,
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/albumin-counterparts-id-recheck-0.log"
+    },
+    {
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "pytest_addopts": "-k test_resolve_media_file",
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/albumin-counterparts-id-recheck-1.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "tests/test_resolve_media_file.py"
+      ],
+      "pytest_addopts": null,
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/albumin-counterparts-id-recheck-2.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "pytest_addopts": null,
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/albumin-counterparts-id-recheck-3.log"
+    }
+  ],
+  "initial_failure": {
+    "command": [
+      "just",
+      "assign-ids-check"
+    ],
+    "exit_code": 2,
+    "log": "/tmp/ingredient-media-20261007/albumin-counterparts-corpus-1.log"
+  },
+  "reason": "Existing resolver tests temporarily created/deleted YAML in the live corpus while the ID scanner ran. Both mutation tests now use a monkeypatched tmp_path corpus. The failed receipt is retained unchanged.",
+  "test_file": "tests/test_resolve_media_file.py",
+  "test_file_sha256": "6284327a2fb33ebd5416f27cb3da700545a1657f4dafbc8279541b292d32bd0d",
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "0e1b0d61826c6c729ca46bd7adb32945695a509d8578fe651f380b9eef3778c7"
+  },
+  "tests": "6 passed, 1 skipped, 11127 deselected, 2 warnings in 32.60s"
+}

@@ -1,0 +1,44 @@
+{
+  "terminal": true,
+  "passed": true,
+  "manual_scan_inspection": true,
+  "automated_ocr_verification_asserted": false,
+  "records_edited": 0,
+  "source_sha256": "321fcc92d528810d137f4bd0c83b97506ab5012562ebdf6821332dd9660b292b",
+  "grounding": [
+    {
+      "query_label": "Na-acetate",
+      "identifier": "CHEBI:32954",
+      "ontology_id": "CHEBI:32954",
+      "mim_preferred_term": "Na-acetate",
+      "matched_label": "Na-acetate",
+      "match_type": "preferred_term",
+      "mapping_status": "MAPPED",
+      "ambiguity": "unique",
+      "resolution_source": "mim_exact",
+      "local_identifier": null,
+      "source_compound_id": null,
+      "reason": "trusted MIM label-index answer"
+    },
+    {
+      "query_label": "Sodium dihydrogen phosphate monohydrate",
+      "identifier": "CHEBI:114249",
+      "ontology_id": "CHEBI:114249",
+      "mim_preferred_term": "Sodium phosphate monobasic monohydrate",
+      "matched_label": "Sodium dihydrogen phosphate monohydrate",
+      "match_type": "synonym",
+      "mapping_status": "MAPPED",
+      "ambiguity": "unique",
+      "resolution_source": "mim_exact",
+      "local_identifier": null,
+      "source_compound_id": null,
+      "reason": "trusted MIM label-index answer"
+    }
+  ],
+  "captures": {
+    "Geobacter1993.pdf": "9f13f636d439e2abe2a247212ad2edabf842e347ebd584be1c2b8f4d35a6223c",
+    "Geobacter1993-page-2.png": "b86edb125adbdcb4b1d65d98fffa51ef842e1f9c66abe73cd50e10b1bf453de5",
+    "Geobacter1993-page-4.png": "5ceff4355b2f7bbfcec1d920a5d7ca7c861baa4555627e395ba89f9b80e4b496",
+    "PMC202682-p1473.png": "82aae7d14cd71f7e1c5dad018a53c13c0bfd8630a858c43486fd4a2ee278d4a6"
+  }
+}

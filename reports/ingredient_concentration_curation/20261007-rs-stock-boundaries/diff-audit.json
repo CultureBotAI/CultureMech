@@ -1,0 +1,17 @@
+{
+  "new_evidence": 155,
+  "new_references": 2,
+  "new_curation_history": 2,
+  "recipe_context_notes_corrected": 2,
+  "unquantified_carrier_nodes_added": 59,
+  "stock_stage_concentrations_rebased": 76,
+  "new_quantity_slots": 59,
+  "stock_nodes_relocated": 77,
+  "ingredient_doses_relocated_to_stock": 1,
+  "stock_descriptors_added": 60,
+  "unsupported_quantity_slots_removed": 8,
+  "identity_conflicts_retained_unquantified": 2,
+  "quantity_corrections": 5,
+  "stock_dose_basis_corrections": 5,
+  "edited_records": 2
+}

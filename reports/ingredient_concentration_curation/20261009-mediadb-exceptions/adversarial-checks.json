@@ -1,0 +1,277 @@
+{
+  "terminal": true,
+  "passed": true,
+  "mutations_rejected": 54,
+  "checks": [
+    {
+      "key": "288",
+      "mutation": "amount",
+      "rejected": true
+    },
+    {
+      "key": "288",
+      "mutation": "unit",
+      "rejected": true
+    },
+    {
+      "key": "288",
+      "mutation": "snippet",
+      "rejected": true
+    },
+    {
+      "key": "288",
+      "mutation": "scope",
+      "rejected": true
+    },
+    {
+      "key": "288",
+      "mutation": "old_history",
+      "rejected": true
+    },
+    {
+      "key": "288",
+      "mutation": "root",
+      "rejected": true
+    },
+    {
+      "key": "288",
+      "mutation": "missing",
+      "rejected": true
+    },
+    {
+      "key": "288",
+      "mutation": "reorder",
+      "rejected": true
+    },
+    {
+      "key": "288",
+      "mutation": "reference",
+      "rejected": true
+    },
+    {
+      "key": "289",
+      "mutation": "amount",
+      "rejected": true
+    },
+    {
+      "key": "289",
+      "mutation": "unit",
+      "rejected": true
+    },
+    {
+      "key": "289",
+      "mutation": "snippet",
+      "rejected": true
+    },
+    {
+      "key": "289",
+      "mutation": "scope",
+      "rejected": true
+    },
+    {
+      "key": "289",
+      "mutation": "old_history",
+      "rejected": true
+    },
+    {
+      "key": "289",
+      "mutation": "root",
+      "rejected": true
+    },
+    {
+      "key": "289",
+      "mutation": "missing",
+      "rejected": true
+    },
+    {
+      "key": "289",
+      "mutation": "reorder",
+      "rejected": true
+    },
+    {
+      "key": "289",
+      "mutation": "reference",
+      "rejected": true
+    },
+    {
+      "key": "430",
+      "mutation": "amount",
+      "rejected": true
+    },
+    {
+      "key": "430",
+      "mutation": "unit",
+      "rejected": true
+    },
+    {
+      "key": "430",
+      "mutation": "snippet",
+      "rejected": true
+    },
+    {
+      "key": "430",
+      "mutation": "scope",
+      "rejected": true
+    },
+    {
+      "key": "430",
+      "mutation": "old_history",
+      "rejected": true
+    },
+    {
+      "key": "430",
+      "mutation": "root",
+      "rejected": true
+    },
+    {
+      "key": "430",
+      "mutation": "missing",
+      "rejected": true
+    },
+    {
+      "key": "430",
+      "mutation": "reorder",
+      "rejected": true
+    },
+    {
+      "key": "430",
+      "mutation": "reference",
+      "rejected": true
+    },
+    {
+      "key": "460",
+      "mutation": "amount",
+      "rejected": true
+    },
+    {
+      "key": "460",
+      "mutation": "unit",
+      "rejected": true
+    },
+    {
+      "key": "460",
+      "mutation": "snippet",
+      "rejected": true
+    },
+    {
+      "key": "460",
+      "mutation": "scope",
+      "rejected": true
+    },
+    {
+      "key": "460",
+      "mutation": "old_history",
+      "rejected": true
+    },
+    {
+      "key": "460",
+      "mutation": "root",
+      "rejected": true
+    },
+    {
+      "key": "460",
+      "mutation": "missing",
+      "rejected": true
+    },
+    {
+      "key": "460",
+      "mutation": "reorder",
+      "rejected": true
+    },
+    {
+      "key": "460",
+      "mutation": "reference",
+      "rejected": true
+    },
+    {
+      "key": "473",
+      "mutation": "amount",
+      "rejected": true
+    },
+    {
+      "key": "473",
+      "mutation": "unit",
+      "rejected": true
+    },
+    {
+      "key": "473",
+      "mutation": "snippet",
+      "rejected": true
+    },
+    {
+      "key": "473",
+      "mutation": "scope",
+      "rejected": true
+    },
+    {
+      "key": "473",
+      "mutation": "old_history",
+      "rejected": true
+    },
+    {
+      "key": "473",
+      "mutation": "root",
+      "rejected": true
+    },
+    {
+      "key": "473",
+      "mutation": "missing",
+      "rejected": true
+    },
+    {
+      "key": "473",
+      "mutation": "reorder",
+      "rejected": true
+    },
+    {
+      "key": "473",
+      "mutation": "reference",
+      "rejected": true
+    },
+    {
+      "key": "474",
+      "mutation": "amount",
+      "rejected": true
+    },
+    {
+      "key": "474",
+      "mutation": "unit",
+      "rejected": true
+    },
+    {
+      "key": "474",
+      "mutation": "snippet",
+      "rejected": true
+    },
+    {
+      "key": "474",
+      "mutation": "scope",
+      "rejected": true
+    },
+    {
+      "key": "474",
+      "mutation": "old_history",
+      "rejected": true
+    },
+    {
+      "key": "474",
+      "mutation": "root",
+      "rejected": true
+    },
+    {
+      "key": "474",
+      "mutation": "missing",
+      "rejected": true
+    },
+    {
+      "key": "474",
+      "mutation": "reorder",
+      "rejected": true
+    },
+    {
+      "key": "474",
+      "mutation": "reference",
+      "rejected": true
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "terminal": true,
+  "phase": "focused",
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_linked_middlebrook.py",
+        "tests/test_linked_middlebrook.py",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/audit.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/focused-0.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_linked_middlebrook.py",
+        "tests/test_linked_middlebrook.py",
+        "reports/ingredient_concentration_curation/20261009-middlebrook-linked/audit.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/focused-1.log",
+      "log_sha256": "45a468fa6205768496f23f1716ebb7575e9b723449d2099b88bf2afef60b721f"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_linked_middlebrook.py",
+        "tests/test_middlebrook_stages.py",
+        "tests/test_lactalbumin_formulations.py",
+        "tests/test_recipe_references.py",
+        "tests/test_recipe_pdf_references.py",
+        "tests/test_recipe_komodo_references.py",
+        "tests/test_recipe_nbrc_references.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/focused-2.log",
+      "log_sha256": "f988210ee0015771ef41852aac37250f0132bc86d45d6ed70279fde65bebbe05"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/focused-3.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "code_sha256": {
+    "scripts/repair_linked_middlebrook.py": "b6571c6b97979de2b2ee7b16b4c3bc071d17467ef57fa104e5902d8e1a6658f1",
+    "tests/test_linked_middlebrook.py": "e95182859d2d576c3266645dd2abbbfa34314c4ed9d20de0f4c3ea019a2f6034",
+    "reports/ingredient_concentration_curation/20261009-middlebrook-linked/audit.py": "807c71a2ea7076245bb0ee989868f81ce24a673e53f6c7462daaf2f47396a73b"
+  },
+  "plan_sha256": "8d9b1352d5227111048a31411104b8a6c255819111fd4e1153917b29ea74074a",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138"
+  }
+}

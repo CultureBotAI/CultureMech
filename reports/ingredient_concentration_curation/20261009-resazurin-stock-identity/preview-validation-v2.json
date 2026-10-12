@@ -1,0 +1,742 @@
+{
+  "terminal": true,
+  "phase": "preview-validation",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/methanofollis_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/preview-validation-v2-00.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/methanofollis_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/preview-validation-v2-01.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/preview-validation-v2-02.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/preview-validation-v2-03.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/synthrophomonas_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/preview-validation-v2-04.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/synthrophomonas_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/preview-validation-v2-05.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "--no-cov",
+        "tests/test_resazurin_stock_identity.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/preview-validation-v2-06.log",
+      "log_sha256": "e8361c5f186196669699278cebd0240a68d1806cfe1bfad23f5141313e6fa713"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_resazurin_stock_identity.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/audit.py",
+        "tests/test_resazurin_stock_identity.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/preview-validation-v2-07.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "--line-length",
+        "100",
+        "scripts/repair_resazurin_stock_identity.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/audit.py",
+        "tests/test_resazurin_stock_identity.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/preview-validation-v2-08.log",
+      "log_sha256": "45a468fa6205768496f23f1716ebb7575e9b723449d2099b88bf2afef60b721f"
+    }
+  ],
+  "records_edited": 0,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "plan_sha256": "fd4e0e684d80ee6d9b93497148c8858f545a6bf6a906c4adb18a66ec08c03db9",
+  "code_sha256": {
+    "scripts/repair_resazurin_stock_identity.py": "30cc133bf2a0da789fdc541d0a131bbb09d269127934bfce350f0d58c2a595fb",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/audit.py": "34bfff226e6aec3f00e7a4c54bbf4118695c7bd0c1553efcc0ec6c607c111393",
+    "tests/test_resazurin_stock_identity.py": "9dd67e689e3b365be7d6b8fafde1ed357e47323f74a665e1615a69d51ca53fa3"
+  },
+  "normalized_count": 15910,
+  "inventory_before_sha256": "82e954649cedc505c58a3630b18afc0ddb4d9d30f77b75693172a95010987d00",
+  "ontology": {
+    "label": "Resazurin",
+    "metadata": {
+      "id": [
+        "CHEBI:8806"
+      ],
+      "chemrof:charge": [
+        0
+      ],
+      "chemrof:generalized_empirical_formula": [
+        "C12H7NO4"
+      ],
+      "chemrof:inchi_key_string": [
+        "PLXBWHJQWKZRKG-UHFFFAOYSA-N"
+      ],
+      "chemrof:inchi_string": [
+        "InChI=1S/C12H7NO4/c14-7-1-3-9-11(5-7)17-12-6-8(15)2-4-10(12)13(9)16/h1-6,14H"
+      ],
+      "chemrof:mass": [
+        "229.191"
+      ],
+      "chemrof:monoisotopic_mass": [
+        "229.03751"
+      ],
+      "chemrof:smiles_string": [
+        "O=c1ccc2[n+]([O-])c3ccc(O)cc3oc-2c1"
+      ],
+      "oio:hasDbXref": [
+        "cas:550-82-3",
+        "kegg.compound:C11178"
+      ],
+      "oio:hasOBONamespace": [
+        "chebi_ontology"
+      ],
+      "oio:hasRelatedSynonym": [
+        "Resazurin"
+      ],
+      "oio:id": [
+        "CHEBI:8806"
+      ],
+      "oio:inSubset": [
+        "obo:chebi/2_STAR"
+      ],
+      "rdfs:label": [
+        "Resazurin"
+      ],
+      "sh:prefix": [
+        "CHEBI"
+      ],
+      "schema:url": [
+        "http://purl.obolibrary.org/obo/CHEBI_8806"
+      ],
+      "rdfs:isDefinedBy": [
+        "http://purl.obolibrary.org/obo/chebi.owl"
+      ]
+    },
+    "source": "sqlite:obo:chebi",
+    "live_reverified": false
+  },
+  "mim_metadata": {
+    "byte_count": 922191,
+    "consumer_contract_version": 1,
+    "data_row_count": 9876,
+    "header": [
+      "label",
+      "match_type",
+      "identifier",
+      "preferred_term",
+      "ontology_id",
+      "mapping_status",
+      "ambiguity"
+    ],
+    "repository": "https://github.com/CultureBotAI/MediaIngredientMech",
+    "sha256": "a36cd4683feb89e2fc2a1721dc15008d1e10c12044e89a36c27b6621a8aaf262",
+    "source_commit": "9f09e4fb97fb0e6cbbd6f25baca40b36512adb88",
+    "source_path": "docs/data/label_index.csv"
+  },
+  "sources": [
+    {
+      "version": 2,
+      "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+      "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium161.pdf",
+      "http_status": 200,
+      "sha256": "8cc1d165274c4c0ce7a215cbe458c48d9880b183c7d62cbefa2d54e637d7625a",
+      "accessed_at": "2026-10-09T08:54:14.964059+00:00",
+      "pdf_sha256": "0f4ea6194efcb146abe36366dd72ce890643e9cfe39bc947a9df7281959478e0",
+      "pdf_pages": 2,
+      "media_type": "application/pdf",
+      "encoding": "utf-8",
+      "extraction": {
+        "library": "pypdf",
+        "version": "6.16.1",
+        "mode": "layout"
+      },
+      "pdf_path": "references_cache/ingredient-161-next/DSMZ161.pdf"
+    },
+    {
+      "version": 2,
+      "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium212a.pdf",
+      "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium212a.pdf",
+      "http_status": 200,
+      "sha256": "ad4c2d523a31771296add87970bdde237a9a0a15ab0a2eb77557b023f0f4e1ca",
+      "accessed_at": "2026-10-09T09:57:44.499722+00:00",
+      "pdf_sha256": "efc94c3d15d0a3946a81d30bba6095ccaa6a2163ca130135c24e7db6bc03794e",
+      "pdf_pages": 4,
+      "media_type": "application/pdf",
+      "encoding": "utf-8",
+      "extraction": {
+        "library": "pypdf",
+        "version": "6.16.1",
+        "mode": "layout"
+      },
+      "pdf_path": "references_cache/ingredient-212-next/DSMZ212a.pdf"
+    },
+    {
+      "version": 2,
+      "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium212.pdf",
+      "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium212.pdf",
+      "http_status": 200,
+      "sha256": "b3b7e36e7b4ebcc4df6ee5eecf8f72e8707792782130975b8a810cea11ec4df0",
+      "accessed_at": "2026-10-09T09:57:33.466267+00:00",
+      "pdf_sha256": "b418dfff6502a47f1ae30498518488079a7360c03b5a355fc1d4973bc9557f98",
+      "pdf_pages": 3,
+      "media_type": "application/pdf",
+      "encoding": "utf-8",
+      "extraction": {
+        "library": "pypdf",
+        "version": "6.16.1",
+        "mode": "layout"
+      },
+      "pdf_path": "references_cache/ingredient-212-next/DSMZ212.pdf"
+    }
+  ],
+  "quantities_preserved": {
+    "data/normalized_yaml/archaea/methanofollis_medium.yaml": {
+      "ingredients[0].concentration": {
+        "value": "0.299700",
+        "unit": "G_PER_L"
+      },
+      "ingredients[1].concentration": {
+        "value": "0.299700",
+        "unit": "G_PER_L"
+      },
+      "ingredients[2].concentration": {
+        "value": "0.299700",
+        "unit": "G_PER_L"
+      },
+      "ingredients[3].concentration": {
+        "value": "0.599401",
+        "unit": "G_PER_L"
+      },
+      "ingredients[4].concentration": {
+        "value": "0.129870",
+        "unit": "G_PER_L"
+      },
+      "ingredients[5].concentration": {
+        "value": "0.008",
+        "unit": "L"
+      },
+      "ingredients[6].concentration": {
+        "value": "0.002",
+        "unit": "L"
+      },
+      "ingredients[7].concentration": {
+        "value": "0.999001",
+        "unit": "G_PER_L"
+      },
+      "ingredients[8].concentration": {
+        "value": "0.999001",
+        "unit": "G_PER_L"
+      },
+      "ingredients[9].concentration": {
+        "value": "0.0005",
+        "unit": "L"
+      },
+      "ingredients[10].concentration": {
+        "value": "1.99800",
+        "unit": "G_PER_L"
+      },
+      "ingredients[11].concentration": {
+        "value": "0.499500",
+        "unit": "G_PER_L"
+      },
+      "ingredients[12].concentration": {
+        "value": "0.499500",
+        "unit": "G_PER_L"
+      },
+      "ingredients[13].concentration": {
+        "value": "0.66",
+        "unit": "L"
+      },
+      "solutions[0].concentration": {
+        "value": "0.30",
+        "unit": "L"
+      },
+      "solutions[1].concentration": {
+        "value": "0.01",
+        "unit": "L"
+      },
+      "solutions[1].composition[0].concentration": null,
+      "solutions[1].composition[1].concentration": null,
+      "solutions[1].composition[2].concentration": null,
+      "solutions[1].composition[3].concentration": null,
+      "solutions[1].composition[4].concentration": null,
+      "solutions[1].composition[5].concentration": null,
+      "solutions[1].composition[6].concentration": null,
+      "solutions[1].composition[7].concentration": null,
+      "solutions[1].composition[8].concentration": null,
+      "solutions[1].composition[9].concentration": null,
+      "solutions[1].composition[10].concentration": null,
+      "solutions[1].composition[11].concentration": null,
+      "solutions[1].composition[12].concentration": null,
+      "solutions[1].composition[13].concentration": null,
+      "solutions[1].composition[14].concentration": null,
+      "solutions[1].composition[15].concentration": {
+        "value": "1.00",
+        "unit": "L"
+      },
+      "solutions[1].composition[16].concentration": null,
+      "solutions[2].concentration": {
+        "value": "0.02",
+        "unit": "L"
+      },
+      "solutions[2].composition[0].concentration": {
+        "value": "0.023",
+        "unit": "L"
+      },
+      "solutions[2].composition[1].concentration": {
+        "value": "0.027",
+        "unit": "L"
+      },
+      "solutions[2].composition[2].concentration": {
+        "value": "0.027",
+        "unit": "L"
+      },
+      "solutions[2].composition[3].concentration": {
+        "value": "0.027",
+        "unit": "L"
+      },
+      "solutions[2].composition[4].concentration": {
+        "value": "0.896",
+        "unit": "L"
+      },
+      "solutions[2].composition[5].concentration": null,
+      "solutions[3].concentration": {
+        "value": "0.001",
+        "unit": "L"
+      },
+      "solutions[3].composition[0].concentration": null,
+      "solutions[3].composition[1].concentration": null,
+      "solutions[3].composition[2].concentration": null,
+      "solutions[3].composition[3].concentration": null,
+      "solutions[3].composition[4].concentration": null,
+      "solutions[3].composition[5].concentration": null,
+      "solutions[3].composition[6].concentration": null,
+      "solutions[3].composition[7].concentration": null,
+      "solutions[3].composition[8].concentration": null,
+      "solutions[3].composition[9].concentration": null,
+      "solutions[3].composition[10].concentration": {
+        "value": "1.00",
+        "unit": "L"
+      }
+    },
+    "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml": {
+      "solutions[0].concentration": {
+        "value": "0.917",
+        "unit": "L"
+      },
+      "solutions[0].composition[0].concentration": null,
+      "solutions[0].composition[1].concentration": null,
+      "solutions[0].composition[2].concentration": null,
+      "solutions[0].composition[3].concentration": null,
+      "solutions[0].composition[4].concentration": null,
+      "solutions[0].composition[5].concentration": null,
+      "solutions[0].composition[6].concentration": null,
+      "solutions[0].composition[7].concentration": {
+        "value": "0.0005",
+        "unit": "L"
+      },
+      "solutions[0].composition[8].concentration": {
+        "value": "0.86",
+        "unit": "L"
+      },
+      "solutions[0].solutions[0].concentration": {
+        "value": "0.001",
+        "unit": "L"
+      },
+      "solutions[0].solutions[0].composition[0].concentration": {
+        "value": "0.01",
+        "unit": "L"
+      },
+      "solutions[0].solutions[0].composition[1].concentration": {
+        "value": "1.5",
+        "unit": "G_PER_L"
+      },
+      "solutions[0].solutions[0].composition[2].concentration": {
+        "value": "0.07",
+        "unit": "G_PER_L"
+      },
+      "solutions[0].solutions[0].composition[3].concentration": {
+        "value": "0.1",
+        "unit": "G_PER_L"
+      },
+      "solutions[0].solutions[0].composition[4].concentration": {
+        "value": "0.006",
+        "unit": "G_PER_L"
+      },
+      "solutions[0].solutions[0].composition[5].concentration": {
+        "value": "0.19",
+        "unit": "G_PER_L"
+      },
+      "solutions[0].solutions[0].composition[6].concentration": {
+        "value": "0.002",
+        "unit": "G_PER_L"
+      },
+      "solutions[0].solutions[0].composition[7].concentration": {
+        "value": "0.024",
+        "unit": "G_PER_L"
+      },
+      "solutions[0].solutions[0].composition[8].concentration": {
+        "value": "0.036",
+        "unit": "G_PER_L"
+      },
+      "solutions[0].solutions[0].composition[9].concentration": {
+        "value": "to 1 L final volume",
+        "unit": "VARIABLE"
+      },
+      "solutions[0].solutions[1].concentration": {
+        "value": "0.001",
+        "unit": "L"
+      },
+      "solutions[0].solutions[1].composition[0].concentration": null,
+      "solutions[0].solutions[1].composition[1].concentration": null,
+      "solutions[0].solutions[1].composition[2].concentration": null,
+      "solutions[0].solutions[1].composition[3].concentration": {
+        "value": "1",
+        "unit": "L"
+      },
+      "solutions[0].solutions[2].concentration": {
+        "value": "0.05",
+        "unit": "L"
+      },
+      "solutions[0].solutions[3].concentration": {
+        "value": "0.001",
+        "unit": "L"
+      },
+      "solutions[0].solutions[3].composition[0].concentration": {
+        "value": "0.0001",
+        "unit": "L"
+      },
+      "solutions[0].solutions[3].composition[1].concentration": {
+        "value": "0.02",
+        "unit": "L"
+      },
+      "solutions[0].solutions[4].concentration": {
+        "value": "0.0031",
+        "unit": "L"
+      },
+      "solutions[0].solutions[4].composition[0].concentration": {
+        "value": "0.5485",
+        "unit": "L"
+      },
+      "solutions[0].solutions[4].composition[1].concentration": {
+        "value": "0.1935",
+        "unit": "L"
+      },
+      "solutions[0].solutions[4].composition[2].concentration": {
+        "value": "0.129",
+        "unit": "L"
+      },
+      "solutions[0].solutions[4].composition[3].concentration": {
+        "value": "0.03225",
+        "unit": "L"
+      },
+      "solutions[0].solutions[4].composition[4].concentration": {
+        "value": "0.03225",
+        "unit": "L"
+      },
+      "solutions[0].solutions[4].composition[5].concentration": {
+        "value": "0.03225",
+        "unit": "L"
+      },
+      "solutions[0].solutions[4].composition[6].concentration": {
+        "value": "0.03225",
+        "unit": "L"
+      },
+      "solutions[1].concentration": {
+        "value": "0.03",
+        "unit": "L"
+      },
+      "solutions[1].composition[0].concentration": null,
+      "solutions[1].composition[1].concentration": {
+        "value": "0.03",
+        "unit": "L"
+      },
+      "solutions[2].concentration": {
+        "value": "0.004",
+        "unit": "L"
+      },
+      "solutions[2].composition[0].concentration": null,
+      "solutions[2].composition[1].concentration": {
+        "value": "0.004",
+        "unit": "L"
+      },
+      "solutions[3].concentration": {
+        "value": "0.004",
+        "unit": "L"
+      },
+      "solutions[3].composition[0].concentration": null,
+      "solutions[3].composition[1].concentration": {
+        "value": "0.004",
+        "unit": "L"
+      },
+      "solutions[4].concentration": {
+        "value": "0.03",
+        "unit": "L"
+      },
+      "solutions[4].solutions[0].concentration": {
+        "value": "0.03",
+        "unit": "L"
+      },
+      "solutions[4].solutions[0].composition[0].concentration": null,
+      "solutions[4].solutions[0].composition[1].concentration": null,
+      "solutions[4].solutions[0].composition[2].concentration": null,
+      "solutions[4].solutions[0].composition[3].concentration": null,
+      "solutions[4].solutions[0].composition[4].concentration": null,
+      "solutions[4].solutions[0].composition[5].concentration": {
+        "value": "1",
+        "unit": "L"
+      },
+      "solutions[5].concentration": {
+        "value": "0.001",
+        "unit": "L"
+      },
+      "solutions[5].solutions[0].concentration": {
+        "value": "0.001",
+        "unit": "L"
+      },
+      "solutions[5].solutions[0].composition[0].concentration": null,
+      "solutions[5].solutions[0].composition[1].concentration": null,
+      "solutions[5].solutions[0].composition[2].concentration": null,
+      "solutions[5].solutions[0].composition[3].concentration": null,
+      "solutions[5].solutions[0].composition[4].concentration": null,
+      "solutions[5].solutions[0].composition[5].concentration": null,
+      "solutions[5].solutions[0].composition[6].concentration": null,
+      "solutions[5].solutions[0].composition[7].concentration": {
+        "value": "1",
+        "unit": "L"
+      },
+      "solutions[6].concentration": {
+        "value": "0.002",
+        "unit": "L"
+      },
+      "solutions[6].composition[0].concentration": null,
+      "solutions[6].composition[1].concentration": {
+        "value": "0.002",
+        "unit": "L"
+      },
+      "solutions[7].concentration": {
+        "value": "0.01",
+        "unit": "L"
+      },
+      "solutions[7].composition[0].concentration": null,
+      "solutions[7].composition[1].concentration": {
+        "value": "0.01",
+        "unit": "L"
+      },
+      "solutions[8].concentration": {
+        "value": "0.01",
+        "unit": "L"
+      },
+      "solutions[8].composition[0].concentration": null,
+      "solutions[8].composition[1].concentration": {
+        "value": "0.01",
+        "unit": "L"
+      }
+    },
+    "data/normalized_yaml/bacterial/synthrophomonas_medium.yaml": {
+      "solutions[0].concentration": {
+        "value": "0.942",
+        "unit": "L"
+      },
+      "solutions[0].composition[0].concentration": null,
+      "solutions[0].composition[1].concentration": null,
+      "solutions[0].composition[2].concentration": null,
+      "solutions[0].composition[3].concentration": null,
+      "solutions[0].composition[4].concentration": null,
+      "solutions[0].composition[5].concentration": null,
+      "solutions[0].composition[6].concentration": null,
+      "solutions[0].composition[7].concentration": {
+        "value": "0.0005",
+        "unit": "L"
+      },
+      "solutions[0].composition[8].concentration": {
+        "value": "0.89",
+        "unit": "L"
+      },
+      "solutions[0].solutions[0].concentration": {
+        "value": "0.001",
+        "unit": "L"
+      },
+      "solutions[0].solutions[0].composition[0].concentration": {
+        "value": "0.01",
+        "unit": "L"
+      },
+      "solutions[0].solutions[0].composition[1].concentration": {
+        "value": "1.5",
+        "unit": "G_PER_L"
+      },
+      "solutions[0].solutions[0].composition[2].concentration": {
+        "value": "0.07",
+        "unit": "G_PER_L"
+      },
+      "solutions[0].solutions[0].composition[3].concentration": {
+        "value": "0.1",
+        "unit": "G_PER_L"
+      },
+      "solutions[0].solutions[0].composition[4].concentration": {
+        "value": "0.006",
+        "unit": "G_PER_L"
+      },
+      "solutions[0].solutions[0].composition[5].concentration": {
+        "value": "0.19",
+        "unit": "G_PER_L"
+      },
+      "solutions[0].solutions[0].composition[6].concentration": {
+        "value": "0.002",
+        "unit": "G_PER_L"
+      },
+      "solutions[0].solutions[0].composition[7].concentration": {
+        "value": "0.024",
+        "unit": "G_PER_L"
+      },
+      "solutions[0].solutions[0].composition[8].concentration": {
+        "value": "0.036",
+        "unit": "G_PER_L"
+      },
+      "solutions[0].solutions[0].composition[9].concentration": {
+        "value": "to 1 L final volume",
+        "unit": "VARIABLE"
+      },
+      "solutions[0].solutions[1].concentration": {
+        "value": "0.001",
+        "unit": "L"
+      },
+      "solutions[0].solutions[1].composition[0].concentration": null,
+      "solutions[0].solutions[1].composition[1].concentration": null,
+      "solutions[0].solutions[1].composition[2].concentration": null,
+      "solutions[0].solutions[1].composition[3].concentration": {
+        "value": "1",
+        "unit": "L"
+      },
+      "solutions[0].solutions[2].concentration": {
+        "value": "0.05",
+        "unit": "L"
+      },
+      "solutions[1].concentration": {
+        "value": "0.03",
+        "unit": "L"
+      },
+      "solutions[1].composition[0].concentration": null,
+      "solutions[1].composition[1].concentration": {
+        "value": "0.03",
+        "unit": "L"
+      },
+      "solutions[2].concentration": {
+        "value": "0.01",
+        "unit": "L"
+      },
+      "solutions[2].composition[0].concentration": null,
+      "solutions[2].composition[1].concentration": {
+        "value": "0.01",
+        "unit": "L"
+      },
+      "solutions[3].concentration": {
+        "value": "0.001",
+        "unit": "L"
+      },
+      "solutions[3].solutions[0].concentration": {
+        "value": "0.001",
+        "unit": "L"
+      },
+      "solutions[3].solutions[0].composition[0].concentration": null,
+      "solutions[3].solutions[0].composition[1].concentration": null,
+      "solutions[3].solutions[0].composition[2].concentration": null,
+      "solutions[3].solutions[0].composition[3].concentration": null,
+      "solutions[3].solutions[0].composition[4].concentration": null,
+      "solutions[3].solutions[0].composition[5].concentration": null,
+      "solutions[3].solutions[0].composition[6].concentration": null,
+      "solutions[3].solutions[0].composition[7].concentration": {
+        "value": "1",
+        "unit": "L"
+      },
+      "solutions[4].concentration": {
+        "value": "0.01",
+        "unit": "L"
+      },
+      "solutions[4].composition[0].concentration": null,
+      "solutions[4].composition[1].concentration": {
+        "value": "0.01",
+        "unit": "L"
+      },
+      "solutions[5].concentration": {
+        "value": "0.01",
+        "unit": "L"
+      },
+      "solutions[5].composition[0].concentration": null,
+      "solutions[5].composition[1].concentration": {
+        "value": "0.01",
+        "unit": "L"
+      }
+    }
+  },
+  "passed": true,
+  "inventory_after_sha256": "82e954649cedc505c58a3630b18afc0ddb4d9d30f77b75693172a95010987d00",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

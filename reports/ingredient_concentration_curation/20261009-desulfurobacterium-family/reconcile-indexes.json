@@ -1,0 +1,23 @@
+{
+  "terminal": true,
+  "phase": "indexes",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/generate_recipe_indexes.py",
+        "--recipe-dir",
+        "data/normalized_yaml",
+        "--output-dir",
+        "/tmp/ingredient-media-20261007/medium829-index-preview"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/reconcile-indexes-0.log",
+      "log_sha256": "325b2cb90e2b47c2ae589c8b0912e7eef1960a66601652eb0b5d5ae62ab5d371"
+    }
+  ],
+  "source_sha256": "48c3b9d310293ee12ee7655e555076f7787b0d9f52a88ff0a2f9d27ab98710b9",
+  "plan_sha256": "8452f7a0ffa1de24471cac81be183e7eb5deddfa26c4b03578ada91040181a1f",
+  "applied_files": 7,
+  "unique_records": 13
+}

@@ -1,0 +1,24 @@
+# Medium Concentration Review: TIBI MEDIUM
+
+- Record: data/normalized_yaml/bacterial/tibi_medium.yaml
+- ID: CultureMech:001362
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `cc3530e755a397773de5eccf048b44f6747506c1179a92e102bb460a9f2d32a0`
+- Proposed/result SHA256: `cf46f4e3c8782fe579ba447bdaf66497ebb6fee5c059391cb7e64377197f24f2`
+- Source: https://mediadive.dsmz.de/rest/medium/263
+- Source SHA256: 1cecf14a99ceeeab21520eedfbe44729f6cca2f8aa646bb227e63c463422a297
+- Retrieved: 2026-10-07T10:44:34.870994+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: changed locally; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `ingredients[0].concentration` | Sucrose | {"unit": "G_PER_L", "value": "150"} | {"unit": "G_PER_L", "value": "150"} | evidence_only | https://mediadive.dsmz.de/rest/medium/263 | {<br>                        "recipe_order": 1,<br>                        "compound": "Sucrose",<br>                        "compound_id": 108,<br>                        "amount": 150,<br>                        "unit": "g",<br>                        "g_l": 150,<br>                        "mmol_l": 438.212,<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[0] | Provider explicitly reports g_l=150; check: 150 g * 1 g/g / (1000 ml / 1000 ml per L) = 150 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. | applied |
+| `ingredients[1].concentration` | Fig | {"unit": "G_PER_L", "value": "1"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/263 | {<br>                        "recipe_order": 2,<br>                        "compound": "Fig",<br>                        "compound_id": 2293,<br>                        "attribute": "dried, quartered",<br>                        "amount": 1,<br>                        "unit": "piece",<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[1] | Optional addition or source attribute needs separate formulation/stock-strength review. | unchanged |
+| `ingredients[2].concentration` | Lemon | {"unit": "G_PER_L", "value": "1"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/263 | {<br>                        "recipe_order": 3,<br>                        "compound": "Lemon",<br>                        "compound_id": 2091,<br>                        "attribute": "0.5 cm wedge-shaped segment",<br>                        "amount": 1,<br>                        "unit": "piece",<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[2] | Optional addition or source attribute needs separate formulation/stock-strength review. | unchanged |
+| `ingredients[3].concentration` | Tap water | {"unit": "G_PER_L", "value": "1000"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/263 | {<br>                        "recipe_order": 4,<br>                        "compound": "Tap water",<br>                        "compound_id": 322,<br>                        "amount": 1000,<br>                        "unit": "ml",<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[3] | Liquid dose, percent basis, molar conversion, or other unit needs source-specific review; no water-based final volume is inferred. | unchanged |
+| `source.data.solutions[0].steps[0]` | preparation context | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/263 | {<br>                        "step": "Autoclave, cool to room temperature, and inoculate with about 50 ml Tibi grains. Set up the culture in a 1 l Erlenmeyer flask (cotton plugged). "<br>                    } | $.data.solutions[0].steps[0] | Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose. | unchanged |

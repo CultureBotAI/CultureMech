@@ -1,0 +1,119 @@
+{
+  "terminal": true,
+  "publication_ready": false,
+  "records": {
+    "data/normalized_yaml/bacterial/TOGO_M933_MMJYP2_For_AC55.yaml": "9aee391964d0fbedc181d7795c7fdb8582a8267e75690b2c81ee27cfc46be155",
+    "data/normalized_yaml/bacterial/TOGO_M1106_Thiobacillus_Prosperus_FO1_Medium.yaml": "cdb158cb4e05c8371ba3e9812843eb2e16e3679c183cf6e9150950f09155710e",
+    "data/normalized_yaml/bacterial/TOGO_M1124_Acetomicrobium_Faecale_Medium.yaml": "e69f71edb54e312fc0148c9217224e0ba3320fdca3dfe272d34264477966491e",
+    "data/normalized_yaml/bacterial/TOGO_M1153_Thiobacillus_Prosperus_Medium.yaml": "c853153744a0d1702a39e040d163c1a947e7f7dda8684435018e8d3e390cd522",
+    "data/normalized_yaml/bacterial/TOGO_M1378_HNN_Medium.yaml": "c1f2f761961e591f528f864cc4c4464361fcf000e54292e7a360473c5d22d87e",
+    "data/normalized_yaml/bacterial/TOGO_M1389_MMJF_Medium.yaml": "91e016b07d06e28f27f1f6bc89b3d332c7542b2e02f6d8cc554179300eba1fbb",
+    "data/normalized_yaml/bacterial/TOGO_M1390_MMJ_KT2_Medium.yaml": "60034fb42488c92a9b87bdcdd0e6decfd339bf2c26fcd2886e50acff361acd19"
+  },
+  "normalized_source_sha256": "4beb45130000546e286245f6bf5b82973c28a38ef2ede3c09716b81d749765de",
+  "only_reviewed_sources_changed": true,
+  "refreshed_metadata_artifacts_verified": 3,
+  "canonical_record_reports": {
+    "data/normalized_yaml/bacterial/TOGO_M933_MMJYP2_For_AC55.yaml": [
+      "reports/ingredient_concentration_curation/20261008-m142-nested-traces/records/M933.md"
+    ],
+    "data/normalized_yaml/bacterial/TOGO_M1106_Thiobacillus_Prosperus_FO1_Medium.yaml": [
+      "reports/ingredient_concentration_curation/20261008-m142-nested-traces/records/M1106.md"
+    ],
+    "data/normalized_yaml/bacterial/TOGO_M1124_Acetomicrobium_Faecale_Medium.yaml": [
+      "reports/ingredient_concentration_curation/20261008-m142-nested-traces/records/M1124.md"
+    ],
+    "data/normalized_yaml/bacterial/TOGO_M1153_Thiobacillus_Prosperus_Medium.yaml": [
+      "reports/ingredient_concentration_curation/20261008-m142-nested-traces/records/M1153.md"
+    ],
+    "data/normalized_yaml/bacterial/TOGO_M1378_HNN_Medium.yaml": [
+      "reports/ingredient_concentration_curation/20261008-m142-nested-traces/records/M1378.md"
+    ],
+    "data/normalized_yaml/bacterial/TOGO_M1389_MMJF_Medium.yaml": [
+      "reports/ingredient_concentration_curation/20261008-m142-nested-traces/records/M1389.md"
+    ],
+    "data/normalized_yaml/bacterial/TOGO_M1390_MMJ_KT2_Medium.yaml": [
+      "reports/ingredient_concentration_curation/20261008-m142-nested-traces/records/M1390.md"
+    ]
+  },
+  "code_sha256": {
+    "scripts/repair_m142_nested_traces.py": "d015c2df13aadb722e2ada9cd45fbd0e86e4cd48390edae78dab78d5df5ce80f",
+    "tests/test_m142_nested_traces.py": "ca2480dc4dce8325e21abfd79f4193f5215eda3c5c4392191b45ff471cac06b5",
+    "reports/ingredient_concentration_curation/20261008-m142-nested-traces/audit.py": "d1ea905662ae652fc29577c298837706569a0b92c90c8674ed8aec6441bee1d1",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "519fc9ccd40f050f16241167743cb9bab5322d18033de1c123330a6c53d1a6ef"
+  },
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_m142_nested_traces.py",
+        "tests/test_m142_nested_traces.py",
+        "reports/ingredient_concentration_curation/20261008-m142-nested-traces/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-final-0.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_m142_nested_traces.py",
+        "tests/test_m142_nested_traces.py",
+        "reports/ingredient_concentration_curation/20261008-m142-nested-traces/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-final-1.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-final-2.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_m142_nested_traces.py",
+        "tests/test_recipe_indexes.py",
+        "tests/test_media_content_review_manifest.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/nested-final-3.log"
+    }
+  ],
+  "failed_broad_gates": [
+    "verify-merges",
+    "freshness"
+  ],
+  "reference_validation_exit_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "literal_capture_matches": 206,
+  "installed_snippet_matches": 200,
+  "remaining_m142_baselines_verified": 91,
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10777,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8732,
+    "changed": 2045,
+    "unchanged": 0
+  }
+}

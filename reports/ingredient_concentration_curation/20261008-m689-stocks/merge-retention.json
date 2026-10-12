@@ -1,0 +1,18 @@
+{
+  "terminal": true,
+  "source_sha256": "636ead57e987b08ed47046ac5d4a0485c8c821953f80b009a6f1a3fd5f8a8d11",
+  "input_records": 15910,
+  "output_groups": 10777,
+  "targets": [
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M689_Spirochaeta_Caldaria_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M689_Spirochaeta_Caldaria_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    }
+  ],
+  "derived_yaml_written": false,
+  "scope": "Full corpus routing; only M689 output scientific retention recertified."
+}

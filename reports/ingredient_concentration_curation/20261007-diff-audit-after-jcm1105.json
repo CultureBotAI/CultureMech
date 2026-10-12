@@ -1,0 +1,19 @@
+{
+  "stock_nodes_relocated": 74,
+  "new_quantity_slots": 35,
+  "unsupported_quantity_slots_removed": 6,
+  "new_evidence": 28031,
+  "new_curation_history": 4850,
+  "new_references": 4874,
+  "quantity_corrections": 1164,
+  "extraction_preparations_added": 1,
+  "preparation_steps_relocated": 7,
+  "preparation_actions_corrected": 1,
+  "evidence_scopes_corrected": 3,
+  "extraction_preparations_restructured": 2,
+  "ingredient_labels_corrected": 1,
+  "preparation_text_encodings_corrected": 1,
+  "preparation_descriptions_corrected": 1,
+  "stock_preparation_notes_added": 1,
+  "edited_records": 4846
+}

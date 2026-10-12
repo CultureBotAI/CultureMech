@@ -1,0 +1,24 @@
+# Solution Concentration Review: Main sol. 1640
+
+- Record: data/normalized_yaml/bacterial/mediadive_3404_Main_sol_1640.yaml
+- ID: CultureMech:012544
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `efc2056fcf0f66a00c74aedf1f7c7b200dc24e93960f19f77397c57ee8ffa18a`
+- Proposed/result SHA256: `efc2056fcf0f66a00c74aedf1f7c7b200dc24e93960f19f77397c57ee8ffa18a`
+- Source: https://mediadive.dsmz.de/rest/solution/3404
+- Source SHA256: c1ced37608205fdc80d6c7f2c8d9e174bd16e98de74cdcb1c4c778e20f7704c0
+- Retrieved: 2026-10-07T09:21:11.321597+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: reviewed; unchanged; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `composition[0].concentration` | Anaerobe Basal Broth CM0957 | {"unit": "G_PER_L", "value": "35.0495"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/3404 | {<br>                "recipe_order": 1,<br>                "compound": "Anaerobe Basal Broth CM0957",<br>                "compound_id": 1473,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": "Dehydrated, OXOID",<br>                "amount": 35.4,<br>                "unit": "g",<br>                "g_l": 35.0495,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[0] (compound_id=1473) | Source attribute may encode stock strength, material grade, or preparation context; not discarded. | unchanged |
+| `composition[1].concentration` | Methanol | {"unit": "G_PER_L", "value": "7.84158"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/3404 | {<br>                "recipe_order": 2,<br>                "compound": "Methanol",<br>                "compound_id": 226,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": "15% v/v",<br>                "amount": 10,<br>                "unit": "ml",<br>                "g_l": 7.84158,<br>                "mmol_l": 244.728,<br>                "optional": 0<br>            } | $.data.recipe[1] (compound_id=226) | Source attribute may encode stock strength, material grade, or preparation context; not discarded. | unchanged |
+| `composition[2].concentration` | Sodium resazurin | {"unit": "G_PER_L", "value": "0.00049505"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/3404 | {<br>                "recipe_order": 3,<br>                "compound": "Sodium resazurin",<br>                "compound_id": 1852,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": "0.1% w/v",<br>                "amount": 0.5,<br>                "unit": "ml",<br>                "g_l": 0.00049505,<br>                "mmol_l": 0.00197097,<br>                "optional": 0<br>            } | $.data.recipe[2] (compound_id=1852) | Source attribute may encode stock strength, material grade, or preparation context; not discarded. | unchanged |
+| `composition[3].concentration` | Distilled water | {"unit": "PERCENT_V_V", "value": "990.09900990099"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/3404 | {<br>                "recipe_order": 4,<br>                "compound": "Distilled water",<br>                "compound_id": 4,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 1000,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[3] (compound_id=4) | Preparation steps may specify make-up volume; manual water review required | unchanged |
+| `ingredients[0].concentration` | See source for composition | {"unit": "VARIABLE", "value": "variable"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Outside direct composition matching; unchanged. | unchanged |

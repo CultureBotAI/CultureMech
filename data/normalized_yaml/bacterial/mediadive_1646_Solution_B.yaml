@@ -16,6 +16,32 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1646
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Glucose",
+                      "compound_id": 5,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 20,
+                      "unit": "g",
+                      "g_l": 40,
+                      "mmol_l": 222.025,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Glucose)
+      in MediaDive solution 1646; locator=$.data.recipe[0] (compound_id=5). Provider
+      explicitly reports g_l=40. Arithmetic check: 20 g * 1 g/g / (500 ml / 1000 ml
+      per L) = 4E+1 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 500. Retrieved 2026-10-07T08:55:01.961218+00:00; response SHA256=b49988360ea1eb65d0c8727eb97403797851004dd6f80df54ec86e478f7f0878.'
 - preferred_term: Agar
   concentration:
     value: '40'
@@ -28,6 +54,32 @@ composition:
     label: agar
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1646
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Agar",
+                      "compound_id": 3,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 20,
+                      "unit": "g",
+                      "g_l": 40,
+                      "mmol_l": 118.931,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Agar) in
+      MediaDive solution 1646; locator=$.data.recipe[1] (compound_id=3). Provider
+      explicitly reports g_l=40. Arithmetic check: 20 g * 1 g/g / (500 ml / 1000 ml
+      per L) = 4E+1 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 500. Retrieved 2026-10-07T08:55:01.961218+00:00; response SHA256=b49988360ea1eb65d0c8727eb97403797851004dd6f80df54ec86e478f7f0878.'
 - preferred_term: Water
   concentration:
     value: '1000.0'
@@ -74,6 +126,16 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:01:17.963098+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/1646
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "40"} -> {"unit":
+    "G_PER_L", "value": "40"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "40"} -> {"unit": "G_PER_L", "value": "40"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -82,3 +144,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/1646
+  title: 'MediaDive solution 1646: Solution B'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=b49988360ea1eb65d0c8727eb97403797851004dd6f80df54ec86e478f7f0878;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

@@ -1,0 +1,77 @@
+{
+  "routing_passed": true,
+  "tracked_normalized_records": 15910,
+  "input_content_sha256": "dc5c5d109fb199858521db4d8841104209a3bcdd7df27f74abea15088cd95472",
+  "record_classes": {
+    "MediaRecipe": 11125,
+    "SolutionRecipe": 4785
+  },
+  "routing": {
+    "total_processed": 15910,
+    "excluded_solutions": 4785,
+    "skipped_no_fingerprint": 2,
+    "skipped_error": 340,
+    "successfully_fingerprinted": 10783,
+    "reasons": {
+      "other_error": 340,
+      "no_valid_ingredients": 2
+    }
+  },
+  "medium_groups": 6492,
+  "all_normalized_bytes_unchanged_during_audit": true,
+  "curated_targets": [
+    {
+      "path": "data/normalized_yaml/bacterial/beijerinckia_medium.yaml",
+      "fingerprint": "41452513a06151fedc395115746a2cf50b80981ddd08fecac334e9594275f3e5",
+      "status": "medium_group",
+      "unchanged_from_scientific_curation": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_111_BEIJERINCKIA_MEDIUM.yaml",
+      "fingerprint": "41452513a06151fedc395115746a2cf50b80981ddd08fecac334e9594275f3e5",
+      "status": "medium_group",
+      "unchanged_from_scientific_curation": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_190_Main_sol_111.yaml",
+      "status": "outside_medium_scope",
+      "unchanged_from_scientific_curation": true
+    }
+  ],
+  "medium_111_retention": [
+    {
+      "path": "data/normalized_yaml/bacterial/beijerinckia_medium.yaml",
+      "fields": {
+        "ingredients": false,
+        "solutions": false,
+        "preparation_steps": true,
+        "preparation_notes": true,
+        "notes": false,
+        "ph_value": true,
+        "source_data": true,
+        "evidence": false,
+        "references": false,
+        "curation_history": false
+      },
+      "all_retained": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_111_BEIJERINCKIA_MEDIUM.yaml",
+      "fields": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "preparation_notes": true,
+        "notes": true,
+        "ph_value": true,
+        "source_data": true,
+        "evidence": true,
+        "references": true,
+        "curation_history": true
+      },
+      "all_retained": true
+    }
+  ],
+  "medium_111_all_retained": false,
+  "scope": "Routing success is not chemical identity or evidence-retention success. Standalone solutions remain authoritative normalized records; no new concentration claim is made."
+}

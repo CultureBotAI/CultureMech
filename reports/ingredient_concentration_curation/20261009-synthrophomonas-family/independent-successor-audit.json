@@ -1,0 +1,224 @@
+{
+  "terminal": true,
+  "auditor_sha256": "e21d75bf5b782c9eba2df6e30ced68989d9bfcc2000bf1b9066cdf04e2a47458",
+  "identity_review_sha256": "2f6d107a2c1042092e4402085f5941f969e5aa2a601f4a77b79747c93d5cc6b2",
+  "plan_sha256": "496c0f734f231756ee97a80021429802c1af9136472b77798c9f2162ad4b2d4c",
+  "context_sha256": "1d9b09a2915e57c4f212f1de08bb1a5ada6b2a4b8a47b6b6c5d528d00250e84a",
+  "records_edited": 0,
+  "results": [
+    {
+      "key": "K212",
+      "source_nodes": 32,
+      "old_quantity_slots": 51,
+      "claims": 136,
+      "prior_evidence_content_preserved": 0,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    {
+      "key": "B2805",
+      "source_nodes": 33,
+      "old_quantity_slots": 32,
+      "claims": 104,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    {
+      "key": "S1038",
+      "source_nodes": 8,
+      "old_quantity_slots": 9,
+      "claims": 14,
+      "prior_evidence_content_preserved": 8,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    {
+      "key": "S125",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 11,
+      "prior_evidence_content_preserved": 0,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    {
+      "key": "S1728",
+      "source_nodes": 6,
+      "old_quantity_slots": 7,
+      "claims": 12,
+      "prior_evidence_content_preserved": 6,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    {
+      "key": "S446",
+      "source_nodes": 12,
+      "old_quantity_slots": 10,
+      "claims": 30,
+      "prior_evidence_content_preserved": 7,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    {
+      "key": "S447",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    {
+      "key": "S448",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    {
+      "key": "S450",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    {
+      "key": "S451",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    {
+      "key": "S453",
+      "source_nodes": 14,
+      "old_quantity_slots": 10,
+      "claims": 38,
+      "prior_evidence_content_preserved": 7,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    {
+      "key": "S454",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    {
+      "key": "S455",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 10,
+      "prior_evidence_content_preserved": 1,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    {
+      "key": "S456",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    {
+      "key": "S459",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    {
+      "key": "S460",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 8,
+      "prior_evidence_content_preserved": 2,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    {
+      "key": "S461",
+      "source_nodes": 2,
+      "old_quantity_slots": 3,
+      "claims": 10,
+      "prior_evidence_content_preserved": 1,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    {
+      "key": "S595",
+      "source_nodes": 10,
+      "old_quantity_slots": 11,
+      "claims": 20,
+      "prior_evidence_content_preserved": 9,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    {
+      "key": "S608",
+      "source_nodes": 7,
+      "old_quantity_slots": 7,
+      "claims": 7,
+      "prior_evidence_content_preserved": 7,
+      "prior_evidence_explanations_extended": 0,
+      "changed": false
+    },
+    {
+      "key": "S777",
+      "source_nodes": 4,
+      "old_quantity_slots": 5,
+      "claims": 10,
+      "prior_evidence_content_preserved": 4,
+      "prior_evidence_explanations_extended": 1,
+      "changed": true
+    },
+    {
+      "key": "D212",
+      "source_nodes": 49,
+      "old_quantity_slots": 33,
+      "claims": 167,
+      "prior_evidence_content_preserved": 1,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    },
+    {
+      "key": "D212a",
+      "source_nodes": 74,
+      "old_quantity_slots": 51,
+      "claims": 254,
+      "prior_evidence_content_preserved": 0,
+      "prior_evidence_explanations_extended": 0,
+      "changed": true
+    }
+  ],
+  "totals": {
+    "source_nodes": 271,
+    "old_quantity_slots": 259,
+    "claims": 887,
+    "prior_evidence_content_preserved": 69,
+    "prior_evidence_explanations_extended": 14,
+    "changed": 21
+  },
+  "all_record_goal_complete": false,
+  "independent_source_projection_passed": true,
+  "limits": [
+    "Local preview only; no source YAML edited.",
+    "BacDive page evidence is checked against the captured HTML, not a verified DOI-version PDF.",
+    "Chemical annotations are preserved, not certified by quantity evidence.",
+    "Per-record external validators, runtime merging, and independent adjudication remain required before application."
+  ]
+}

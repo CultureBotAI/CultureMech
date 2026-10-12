@@ -1,0 +1,185 @@
+{
+  "terminal": true,
+  "normalized_count": 15910,
+  "source_sha256": "db8f5426f9aade2d77f947de6f5c4a756f3ed214bede448fbb31d273085da30f",
+  "only_reviewed_records_changed": true,
+  "canonical_reports": {
+    "data/normalized_yaml/archaea/KOMODO_119_METHANOBACTERIUM_medium.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/archaea/KOMODO_119_METHANOBACTERIUM_medium.yaml.md",
+    "data/normalized_yaml/archaea/methanomassiliicoccus_medium.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/archaea/methanomassiliicoccus_medium.yaml.md",
+    "data/normalized_yaml/bacterial/for_dsm_16632_and_dsm_16643.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/for_dsm_16632_and_dsm_16643.yaml.md",
+    "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11975.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_11975.yaml.md",
+    "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11977.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_11977.yaml.md",
+    "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11978.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_11978.yaml.md",
+    "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11979.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_11979.yaml.md",
+    "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11995.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_11995.yaml.md",
+    "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_1224.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_1224.yaml.md",
+    "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_15163.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_15163.yaml.md",
+    "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_3468.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_3468.yaml.md",
+    "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_4855.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_4855.yaml.md",
+    "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_6216.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_6216.yaml.md",
+    "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_7057.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_7057.yaml.md",
+    "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_7256.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_7256.yaml.md",
+    "data/normalized_yaml/bacterial/medium_119_modified_for_dsm_9575.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_9575.yaml.md",
+    "data/normalized_yaml/archaea/methanobacterium_medium.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/archaea/methanobacterium_medium.yaml.md",
+    "data/normalized_yaml/bacterial/gudongella_medium.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/gudongella_medium.yaml.md",
+    "data/normalized_yaml/archaea/methanobrevibacter_medium.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/archaea/methanobrevibacter_medium.yaml.md"
+  },
+  "updated_canonical_reports": [
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/archaea/KOMODO_119_METHANOBACTERIUM_medium.yaml.md",
+      "before_sha256": "4121967d74d3bb853dc3d71242105e3348ca7a290375bfdb0d065b9b3c584a24",
+      "after_sha256": "522fe129ae946a4fbc329c291b853ae8fff5d1c23ad41b18607911dfed651717"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/archaea/methanomassiliicoccus_medium.yaml.md",
+      "before_sha256": "eb01eeee4359dc92e2e45594781cbf895c25d8dbe27d2fd50eb8d57c1c1e6f40",
+      "after_sha256": "cd8917f9a2fccbe18d89bc3f69ee8390cb50d714195a3a5cfb2c93b9a3517e99"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/for_dsm_16632_and_dsm_16643.yaml.md",
+      "before_sha256": "6ea87ed92fa101a20e1732653245b52b1fa6d385a747456573dcbc4d6a520018",
+      "after_sha256": "d6e96ca6490fe5ca2d8411e866692869dacb70005be9caf968530af43b710df6"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_11975.yaml.md",
+      "before_sha256": "7677496221e3fa1f9f3603e85f680f04c56b8deb944c89235f2d7345b2946151",
+      "after_sha256": "ab4d96b05250675c624524286be4ddcb08daf7674d03cbb99db0ba44281da871"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_11977.yaml.md",
+      "before_sha256": "2ede211af1219655cf591a46f04542e9fa31b3fec430e021d89530d33345250a",
+      "after_sha256": "d4de9bd99981e436bab45cb7b02b7396c67c5bda4b2169f9e7fd24efd3baca1d"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_11978.yaml.md",
+      "before_sha256": "abeeb134f90c75bfa90aa781506131624dacdceb3b4ca9d3fc0e289a4ca5a8f8",
+      "after_sha256": "4f7aad3d4dc01bb20c74d57d10bfc1ceea30d2d339e19f014a596525e8d0dff3"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_11979.yaml.md",
+      "before_sha256": "f83c4171cad48a5c232e57090a99229e77343ef1c1996d6b075094bc32b44e8f",
+      "after_sha256": "6520215cf4e00b0bf2a0bcf2d5f830637e95df55d7a3685c5df324345e99c9dc"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_11995.yaml.md",
+      "before_sha256": "aa312d0a384557212b054e9345aa86066ca8cb2f5ae70e78cba3f2d7bc26bb7d",
+      "after_sha256": "6c5e58b0934681da92dc6d200c96c568484a54ec3ac827a1d28a4f8c87e09533"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_1224.yaml.md",
+      "before_sha256": "4451c999de88740ac2a508df4243e68451a16b33063848d8a35bfaa0a154af0b",
+      "after_sha256": "52c33193225889b4e55955921773ab55392da8f307e95bbe9e740c5b38561d45"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_15163.yaml.md",
+      "before_sha256": "c9133b3c71bb6d855a4d130d3680e3fa1999c0ea392c57b250f2fced8867ad04",
+      "after_sha256": "804315f5f54aabb5ae248b17c1f50cf97ae5d8f9dcaf424899ac08f3628871c4"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_3468.yaml.md",
+      "before_sha256": "9c1a83a52f684fe71e141349cc35bb9b073416434b1125849b61e1648c265a94",
+      "after_sha256": "2aa94fa848ac018518f0e6fa4046e973106cb33033c363dc1f9b9afb7dbe06f8"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_4855.yaml.md",
+      "before_sha256": "06b99e2e222cc5d13ae950a2cc23c7bf96584bc44c91ab5e21b36c948022f1bf",
+      "after_sha256": "8efb6b6b22ab63cdc23f77cb43229376dcf6f6056557ec837f533aac087b1cba"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_6216.yaml.md",
+      "before_sha256": "d55eb5737f66f44d13e41f3e0e0688fdd5b8516d0b594b3671d8cbb8aea03cc1",
+      "after_sha256": "73c1fd71803dd7ce5740cc3e26397db434fbafdb2167e53b44a2beece414711e"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_7057.yaml.md",
+      "before_sha256": "d28887ace7b1a8e4725c5561dfb946dad97fff1450e5f7b63b17291ee9c39551",
+      "after_sha256": "52c7735c5f6da9591297aa779c1f3fcd18964284fac106209b3b73b49691b318"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_7256.yaml.md",
+      "before_sha256": "27f80e080fd304cf5aa153f9b3aec3beea987cc2fd3657db9b4f86eb4eab0bf8",
+      "after_sha256": "4f484e0ec257cd78661d739dc8355de7bcfb686d624411d8339d902b0a837aa5"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/medium_119_modified_for_dsm_9575.yaml.md",
+      "before_sha256": "234dac35be051aca6ab1ecd4533478b7bbc854e4a0a3028e5b8aa7f04f994195",
+      "after_sha256": "af812b775e86dd18f9895a70189e361880d5629f412a3a2a9e9a8180fd60d74b"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/archaea/methanobacterium_medium.yaml.md",
+      "before_sha256": "2ef878508b6355bac19cbd0b408be7c0c35975ef8032af8c93fc7cb2fd5928e2",
+      "after_sha256": "34d1832ecf5de67af513d9bfcda70f62538dc46872f011441907cb4328d3d612"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/gudongella_medium.yaml.md",
+      "before_sha256": "93a5d629d05a2c135e1a5ed636b7067be74c0fa6e5406fb921598f7991bd7a49",
+      "after_sha256": "c2de625865eae67dd7f72870229121a65dcb9111eca490f7026ced76fa673e9d"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/archaea/methanobrevibacter_medium.yaml.md",
+      "before_sha256": "98368f20f52c024dac86a51ccaee0465a3c404a559af8355408be6bcae632003",
+      "after_sha256": "58359a8e3f53c5c66034561531cc110e02c663c34d99429ba1f44af303e09ab6"
+    }
+  ],
+  "cumulative_audit": {
+    "stock_nodes_relocated": 825,
+    "new_quantity_slots": 364,
+    "unsupported_quantity_slots_removed": 869,
+    "new_evidence": 34507,
+    "new_curation_history": 5423,
+    "new_references": 5738,
+    "stock_stage_concentrations_rebased": 199,
+    "stock_descriptors_added": 241,
+    "quantity_corrections": 1455,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 88,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 7,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 14,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5219
+  },
+  "followup_unique_records": 11798,
+  "outside_this_followup": 4112,
+  "remaining_identity_candidates": {
+    "methylbutyrate_name": 55
+  }
+}

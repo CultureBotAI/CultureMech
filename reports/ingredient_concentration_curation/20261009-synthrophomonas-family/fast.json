@@ -1,0 +1,39 @@
+{
+  "terminal": true,
+  "phase": "fast",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/fast-0.log",
+      "log_sha256": "2cc693141298cc24620ec974631da4d2e7e1147689790259fb94e4bdf2ae507b"
+    }
+  ],
+  "errors": [],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "a55dbe72d9740772e93f5dbb870bc17709d68b4b494cd12f69e5bb02b7c41f23"
+  },
+  "plan_sha256": "496c0f734f231756ee97a80021429802c1af9136472b77798c9f2162ad4b2d4c",
+  "context_sha256": "1d9b09a2915e57c4f212f1de08bb1a5ada6b2a4b8a47b6b6c5d528d00250e84a",
+  "preview_validation_sha256": "e0f27faf288e9d48aa44560169c45b46beae1856782c9a5aca7f3af77ee36eb8",
+  "code_sha256": {
+    "scripts/repair_synthrophomonas_family.py": "ef0dbeed08dfe0177b59bd628aa6b5ab5f828a1f3f2ea70e7298088831a61838",
+    "tests/test_synthrophomonas_family.py": "fc68e870d8cb3a56e73d29e2d6797f7fac8a241f33bdfb117ecf5bbe5f591a2e",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/audit.py": "e21d75bf5b782c9eba2df6e30ced68989d9bfcc2000bf1b9066cdf04e2a47458",
+    "tests/test_medium_concentration_batch.py": "61222e7e781696028f0a789a16e8c0b92476438408d6ab5b13ae5e41e2685e4c",
+    "tests/test_followup_report_coverage.py": "8f226c29d8081212461eec982f63a2db8ae0bc774b0df7fa487c37fe79819aba",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "6089cc38967e7859f9f81736b34a25ce43edcf08142050bb1a051e73c560c112",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/summarize_followup_coverage.py": "c73c13d5aa692cf19b42d802631fcfa7ff5b8a9469e33070b1f527fea15da904"
+  },
+  "focused_application_sha256": "d4e3746f6a9aee747fe3795603e79d9c8025d608352ca36ebad2805fdaee62f8",
+  "ignored_files_included": true,
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "a55dbe72d9740772e93f5dbb870bc17709d68b4b494cd12f69e5bb02b7c41f23"
+  },
+  "all_command_checks_passed": true
+}

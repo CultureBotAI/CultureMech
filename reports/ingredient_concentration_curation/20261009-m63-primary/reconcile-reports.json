@@ -1,0 +1,70 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "reports",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "reports": [
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-m63-primary/records/4.md",
+      "sha256": "b6ca05a5f19e66076b0ae63fa45d66f9af8866e5e64cba42cfcd3f42ca7e6127",
+      "claim_rows": 7
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-m63-primary/records/5.md",
+      "sha256": "92bea41b44a1b5383de1abaa9135d40b32eb239dcfe39b52c8c38eb34614dbe1",
+      "claim_rows": 7
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-m63-primary/records/6.md",
+      "sha256": "df2bee6e26eba847c9efd33e842fedbbfc3b5d506294f42868b1a5583cf9aa3e",
+      "claim_rows": 7
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-m63-primary/records/7.md",
+      "sha256": "0235566419db156f8cf2762d07f9ea4562082eac625a442de9e332ba36a5f47e",
+      "claim_rows": 7
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-m63-primary/records/8.md",
+      "sha256": "3e24d493e6905d030213055f1b68326d115180eb22babc005f9afd8d7dbce314",
+      "claim_rows": 7
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-m63-primary/records/9.md",
+      "sha256": "d659e6066d60826975028e79157c783655253b604f36a23a6709e57befafc7bf",
+      "claim_rows": 7
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-m63-primary/records/10.md",
+      "sha256": "85cf40d66a30fa2de0302f23e076ba84db33d8faf35b6dd46e7dca995635b4d3",
+      "claim_rows": 7
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-m63-primary/records/11.md",
+      "sha256": "9c36e64c2d31308e8d4265fdfd128beefdeecbd1fc47f4cbe1972eec0cf6a621",
+      "claim_rows": 7
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-m63-primary/records/12.md",
+      "sha256": "b416503820eee6af20d8c913c06e6b313150b67148883e7560a9b3a047d4e713",
+      "claim_rows": 7
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-m63-primary/records/13.md",
+      "sha256": "df46562c46571233e94ea67ee08b847b1e89e574fbc9ab39d0f499c042c2c37f",
+      "claim_rows": 7
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-m63-primary/records/14.md",
+      "sha256": "56262ac061c6f6fa595a27afdb7864e7aaed122ffde2afd98f29d5bf83850341",
+      "claim_rows": 7
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-m63-primary/records/15.md",
+      "sha256": "ad99c640e7c27071ae715a2d57afdb57b150195ab4272a500c66351bb6faea5f",
+      "claim_rows": 7
+    }
+  ],
+  "source_inventory_unchanged": true
+}

@@ -16,6 +16,33 @@ composition:
     label: magnesium sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3613
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "MgSO4 x 7 H2O",
+                      "compound_id": 8,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 0.50505,
+                      "mmol_l": 2.04909,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (MgSO4 x
+      7 H2O) in MediaDive solution 3613; locator=$.data.recipe[0] (compound_id=8).
+      Provider explicitly reports g_l=0.50505. Arithmetic check: 0.5 g * 1 g/g / (990
+      ml / 1000 ml per L) = 0.5050505050505050505050505051 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 990. Retrieved 2026-10-07T09:22:59.044844+00:00;
+      response SHA256=80e3944e073dcd8977df884bddc554ebce424e64e24d86b760c1c1e3f7ae3a9b.'
 - preferred_term: K2HPO4
   concentration:
     value: '1.0101'
@@ -28,6 +55,33 @@ composition:
     label: dipotassium hydrogen phosphate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3613
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "K2HPO4",
+                      "compound_id": 10,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 1.0101,
+                      "mmol_l": 5.79931,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (K2HPO4)
+      in MediaDive solution 3613; locator=$.data.recipe[1] (compound_id=10). Provider
+      explicitly reports g_l=1.0101. Arithmetic check: 1 g * 1 g/g / (990 ml / 1000
+      ml per L) = 1.010101010101010101010101010 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 990. Retrieved 2026-10-07T09:22:59.044844+00:00;
+      response SHA256=80e3944e073dcd8977df884bddc554ebce424e64e24d86b760c1c1e3f7ae3a9b.'
 - preferred_term: L-Asparagin
   concentration:
     value: '2.0202'
@@ -40,6 +94,33 @@ composition:
     label: L-asparagine
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3613
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "L-Asparagin",
+                      "compound_id": 405,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2.0202,
+                      "mmol_l": 15.2907,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (L-Asparagin)
+      in MediaDive solution 3613; locator=$.data.recipe[2] (compound_id=405). Provider
+      explicitly reports g_l=2.0202. Arithmetic check: 2 g * 1 g/g / (990 ml / 1000
+      ml per L) = 2.020202020202020202020202020 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 990. Retrieved 2026-10-07T09:22:59.044844+00:00;
+      response SHA256=80e3944e073dcd8977df884bddc554ebce424e64e24d86b760c1c1e3f7ae3a9b.'
 - preferred_term: Tap water
   concentration:
     value: '1000.0000000000001'
@@ -103,6 +184,18 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-10-07T09:30:59.704035+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/3613
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.50505"}
+    -> {"unit": "G_PER_L", "value": "0.50505"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "1.0101"} -> {"unit": "G_PER_L", "value": "1.0101"}
+    (evidence_only); composition[2].concentration: {"unit": "G_PER_L", "value": "2.0202"}
+    -> {"unit": "G_PER_L", "value": "2.0202"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -111,3 +204,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/3613
+  title: 'MediaDive solution 3613: Mineral Salts Solution with Asparagin (L)'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=80e3944e073dcd8977df884bddc554ebce424e64e24d86b760c1c1e3f7ae3a9b;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

@@ -1,0 +1,277 @@
+{
+  "path": "data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml",
+  "before_sha256": "ad5cbfc18e740f41f3e3f601fdd67747f2d0af310bf9c5a79a8d92671f62e1f6",
+  "timestamp": "2026-10-07T09:45:43.849320+00:00",
+  "after_sha256": "60f4887855bc7f9554ad424bb50e916a77cc0c9bb0df3cdc7b7739801ffb6226",
+  "claims": [
+    {
+      "pointer": [
+        "solutions",
+        1,
+        "composition",
+        0
+      ],
+      "field": "solutions[1].composition[0].concentration",
+      "ingredient": "Na2SeO3 x 5 H2O",
+      "old": {
+        "value": "4",
+        "unit": "MG_PER_L"
+      },
+      "new": {
+        "value": "4",
+        "unit": "MG_PER_L"
+      },
+      "status": "evidence_only",
+      "reference": "https://mediadive.dsmz.de/rest/solution/3981",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Na2SeO3 x 5 H2O\",\n                \"compound_id\": 107,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\": \"mg\",\n                \"g_l\": 0.004,\n                \"mmol_l\": 0.0152083,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for solutions[1].composition[0].concentration (Na2SeO3 x 5 H2O) within the stock. MediaDive explicitly reports g_l=0.004; 0.004 g/L * 1000 mg/g = 4.000 mg/L, matching the unchanged local value. Cross-check: 4 mg / (1000 ml / 1000 ml per L) = 4.000 mg/L. Additional exact excerpt at $.data.volume: \"volume\": 1000. Locator=$.data.recipe[0] (compound_id=107); response SHA256=f31ddb3c46606d262bb9d8fa48f9ea5d4bab81c8917dc35dce7a7f0da6369a23; accessed 2026-10-07. This supports provider-declared stock concentration, not an independently measured final volume, a dilution into the receiving medium, or either inline variant. The exact receiving-recipe link is https://mediadive.dsmz.de/rest/medium/J1219, $.data.solutions[0].recipe where solution_id=3981; additional exact excerpt: {\n                        \"recipe_order\": 8,\n                        \"solution\": \"Se/W solution\",\n                        \"solution_id\": 3981,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }. Medium response SHA256=ec7bff0980d24724c1052f1e90796ca659808e61f3206a93b61376d2e1dbac67; it identifies original recipe https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219. JCM 1219's cross-reference and the linked JCM stock table were manually checked."
+    },
+    {
+      "pointer": [
+        "solutions",
+        1,
+        "composition",
+        1
+      ],
+      "field": "solutions[1].composition[1].concentration",
+      "ingredient": "Na2WO4 x 2 H2O",
+      "old": {
+        "value": "4",
+        "unit": "MG_PER_L"
+      },
+      "new": {
+        "value": "4",
+        "unit": "MG_PER_L"
+      },
+      "status": "evidence_only",
+      "reference": "https://mediadive.dsmz.de/rest/solution/3981",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Na2WO4 x 2 H2O\",\n                \"compound_id\": 249,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\": \"mg\",\n                \"g_l\": 0.004,\n                \"mmol_l\": 0.0121267,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for solutions[1].composition[1].concentration (Na2WO4 x 2 H2O) within the stock. MediaDive explicitly reports g_l=0.004; 0.004 g/L * 1000 mg/g = 4.000 mg/L, matching the unchanged local value. Cross-check: 4 mg / (1000 ml / 1000 ml per L) = 4.000 mg/L. Additional exact excerpt at $.data.volume: \"volume\": 1000. Locator=$.data.recipe[1] (compound_id=249); response SHA256=f31ddb3c46606d262bb9d8fa48f9ea5d4bab81c8917dc35dce7a7f0da6369a23; accessed 2026-10-07. This supports provider-declared stock concentration, not an independently measured final volume, a dilution into the receiving medium, or either inline variant. The exact receiving-recipe link is https://mediadive.dsmz.de/rest/medium/J1219, $.data.solutions[0].recipe where solution_id=3981; additional exact excerpt: {\n                        \"recipe_order\": 8,\n                        \"solution\": \"Se/W solution\",\n                        \"solution_id\": 3981,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }. Medium response SHA256=ec7bff0980d24724c1052f1e90796ca659808e61f3206a93b61376d2e1dbac67; it identifies original recipe https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219. JCM 1219's cross-reference and the linked JCM stock table were manually checked."
+    },
+    {
+      "pointer": [
+        "solutions",
+        2,
+        "composition",
+        0
+      ],
+      "field": "solutions[2].composition[0].concentration",
+      "ingredient": "Biotin",
+      "old": {
+        "value": "2",
+        "unit": "MG_PER_L"
+      },
+      "new": {
+        "value": "2",
+        "unit": "MG_PER_L"
+      },
+      "status": "evidence_only",
+      "reference": "https://mediadive.dsmz.de/rest/solution/3861",
+      "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Biotin\",\n                \"compound_id\": 46,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"mg\",\n                \"g_l\": 0.002,\n                \"mmol_l\": 0.00818632,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for solutions[2].composition[0].concentration (Biotin) within the stock. MediaDive explicitly reports g_l=0.002; 0.002 g/L * 1000 mg/g = 2.000 mg/L, matching the unchanged local value. Cross-check: 2 mg / (1000 ml / 1000 ml per L) = 2.000 mg/L. Additional exact excerpt at $.data.volume: \"volume\": 1000. Locator=$.data.recipe[0] (compound_id=46); response SHA256=c6829f83ad6e234909db1d65f45a27c24993e0280ff68c4d7355a8f6344335b9; accessed 2026-10-07. This supports provider-declared stock concentration, not an independently measured final volume, a dilution into the receiving medium, or either inline variant. The exact receiving-recipe link is https://mediadive.dsmz.de/rest/medium/J1219, $.data.solutions[0].recipe where solution_id=3861; additional exact excerpt: {\n                        \"recipe_order\": 9,\n                        \"solution\": \"Trace vitamins\",\n                        \"solution_id\": 3861,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }. Medium response SHA256=ec7bff0980d24724c1052f1e90796ca659808e61f3206a93b61376d2e1dbac67; it identifies original recipe https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219. JCM 1219's cross-reference and the linked JCM stock table were manually checked."
+    },
+    {
+      "pointer": [
+        "solutions",
+        2,
+        "composition",
+        1
+      ],
+      "field": "solutions[2].composition[1].concentration",
+      "ingredient": "Folic acid",
+      "old": {
+        "value": "2",
+        "unit": "MG_PER_L"
+      },
+      "new": {
+        "value": "2",
+        "unit": "MG_PER_L"
+      },
+      "status": "evidence_only",
+      "reference": "https://mediadive.dsmz.de/rest/solution/3861",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Folic acid\",\n                \"compound_id\": 138,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"mg\",\n                \"g_l\": 0.002,\n                \"mmol_l\": 0.00453104,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for solutions[2].composition[1].concentration (Folic acid) within the stock. MediaDive explicitly reports g_l=0.002; 0.002 g/L * 1000 mg/g = 2.000 mg/L, matching the unchanged local value. Cross-check: 2 mg / (1000 ml / 1000 ml per L) = 2.000 mg/L. Additional exact excerpt at $.data.volume: \"volume\": 1000. Locator=$.data.recipe[1] (compound_id=138); response SHA256=c6829f83ad6e234909db1d65f45a27c24993e0280ff68c4d7355a8f6344335b9; accessed 2026-10-07. This supports provider-declared stock concentration, not an independently measured final volume, a dilution into the receiving medium, or either inline variant. The exact receiving-recipe link is https://mediadive.dsmz.de/rest/medium/J1219, $.data.solutions[0].recipe where solution_id=3861; additional exact excerpt: {\n                        \"recipe_order\": 9,\n                        \"solution\": \"Trace vitamins\",\n                        \"solution_id\": 3861,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }. Medium response SHA256=ec7bff0980d24724c1052f1e90796ca659808e61f3206a93b61376d2e1dbac67; it identifies original recipe https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219. JCM 1219's cross-reference and the linked JCM stock table were manually checked."
+    },
+    {
+      "pointer": [
+        "solutions",
+        2,
+        "composition",
+        2
+      ],
+      "field": "solutions[2].composition[2].concentration",
+      "ingredient": "Pyridoxine hydrochloride",
+      "old": {
+        "value": "10",
+        "unit": "MG_PER_L"
+      },
+      "new": {
+        "value": "10",
+        "unit": "MG_PER_L"
+      },
+      "status": "evidence_only",
+      "reference": "https://mediadive.dsmz.de/rest/solution/3861",
+      "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Pyridoxine hydrochloride\",\n                \"compound_id\": 519,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"mg\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0486287,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for solutions[2].composition[2].concentration (Pyridoxine hydrochloride) within the stock. MediaDive explicitly reports g_l=0.01; 0.01 g/L * 1000 mg/g = 10.00 mg/L, matching the unchanged local value. Cross-check: 10 mg / (1000 ml / 1000 ml per L) = 10.00 mg/L. Additional exact excerpt at $.data.volume: \"volume\": 1000. Locator=$.data.recipe[2] (compound_id=519); response SHA256=c6829f83ad6e234909db1d65f45a27c24993e0280ff68c4d7355a8f6344335b9; accessed 2026-10-07. This supports provider-declared stock concentration, not an independently measured final volume, a dilution into the receiving medium, or either inline variant. The exact receiving-recipe link is https://mediadive.dsmz.de/rest/medium/J1219, $.data.solutions[0].recipe where solution_id=3861; additional exact excerpt: {\n                        \"recipe_order\": 9,\n                        \"solution\": \"Trace vitamins\",\n                        \"solution_id\": 3861,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }. Medium response SHA256=ec7bff0980d24724c1052f1e90796ca659808e61f3206a93b61376d2e1dbac67; it identifies original recipe https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219. JCM 1219's cross-reference and the linked JCM stock table were manually checked."
+    },
+    {
+      "pointer": [
+        "solutions",
+        2,
+        "composition",
+        3
+      ],
+      "field": "solutions[2].composition[3].concentration",
+      "ingredient": "Thiamine HCl",
+      "old": {
+        "value": "5",
+        "unit": "MG_PER_L"
+      },
+      "new": {
+        "value": "5",
+        "unit": "MG_PER_L"
+      },
+      "status": "evidence_only",
+      "reference": "https://mediadive.dsmz.de/rest/solution/3861",
+      "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Thiamine HCl\",\n                \"compound_id\": 1207,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"mg\",\n                \"g_l\": 0.005,\n                \"mmol_l\": 0.0148236,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for solutions[2].composition[3].concentration (Thiamine HCl) within the stock. MediaDive explicitly reports g_l=0.005; 0.005 g/L * 1000 mg/g = 5.000 mg/L, matching the unchanged local value. Cross-check: 5 mg / (1000 ml / 1000 ml per L) = 5.000 mg/L. Additional exact excerpt at $.data.volume: \"volume\": 1000. Locator=$.data.recipe[3] (compound_id=1207); response SHA256=c6829f83ad6e234909db1d65f45a27c24993e0280ff68c4d7355a8f6344335b9; accessed 2026-10-07. This supports provider-declared stock concentration, not an independently measured final volume, a dilution into the receiving medium, or either inline variant. The exact receiving-recipe link is https://mediadive.dsmz.de/rest/medium/J1219, $.data.solutions[0].recipe where solution_id=3861; additional exact excerpt: {\n                        \"recipe_order\": 9,\n                        \"solution\": \"Trace vitamins\",\n                        \"solution_id\": 3861,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }. Medium response SHA256=ec7bff0980d24724c1052f1e90796ca659808e61f3206a93b61376d2e1dbac67; it identifies original recipe https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219. JCM 1219's cross-reference and the linked JCM stock table were manually checked."
+    },
+    {
+      "pointer": [
+        "solutions",
+        2,
+        "composition",
+        4
+      ],
+      "field": "solutions[2].composition[4].concentration",
+      "ingredient": "Riboflavin",
+      "old": {
+        "value": "5",
+        "unit": "MG_PER_L"
+      },
+      "new": {
+        "value": "5",
+        "unit": "MG_PER_L"
+      },
+      "status": "evidence_only",
+      "reference": "https://mediadive.dsmz.de/rest/solution/3861",
+      "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"Riboflavin\",\n                \"compound_id\": 136,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"mg\",\n                \"g_l\": 0.005,\n                \"mmol_l\": 0.0132837,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for solutions[2].composition[4].concentration (Riboflavin) within the stock. MediaDive explicitly reports g_l=0.005; 0.005 g/L * 1000 mg/g = 5.000 mg/L, matching the unchanged local value. Cross-check: 5 mg / (1000 ml / 1000 ml per L) = 5.000 mg/L. Additional exact excerpt at $.data.volume: \"volume\": 1000. Locator=$.data.recipe[4] (compound_id=136); response SHA256=c6829f83ad6e234909db1d65f45a27c24993e0280ff68c4d7355a8f6344335b9; accessed 2026-10-07. This supports provider-declared stock concentration, not an independently measured final volume, a dilution into the receiving medium, or either inline variant. The exact receiving-recipe link is https://mediadive.dsmz.de/rest/medium/J1219, $.data.solutions[0].recipe where solution_id=3861; additional exact excerpt: {\n                        \"recipe_order\": 9,\n                        \"solution\": \"Trace vitamins\",\n                        \"solution_id\": 3861,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }. Medium response SHA256=ec7bff0980d24724c1052f1e90796ca659808e61f3206a93b61376d2e1dbac67; it identifies original recipe https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219. JCM 1219's cross-reference and the linked JCM stock table were manually checked."
+    },
+    {
+      "pointer": [
+        "solutions",
+        2,
+        "composition",
+        5
+      ],
+      "field": "solutions[2].composition[5].concentration",
+      "ingredient": "Nicotinic acid",
+      "old": {
+        "value": "5",
+        "unit": "MG_PER_L"
+      },
+      "new": {
+        "value": "5",
+        "unit": "MG_PER_L"
+      },
+      "status": "evidence_only",
+      "reference": "https://mediadive.dsmz.de/rest/solution/3861",
+      "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"Nicotinic acid\",\n                \"compound_id\": 139,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"mg\",\n                \"g_l\": 0.005,\n                \"mmol_l\": 0.0406141,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for solutions[2].composition[5].concentration (Nicotinic acid) within the stock. MediaDive explicitly reports g_l=0.005; 0.005 g/L * 1000 mg/g = 5.000 mg/L, matching the unchanged local value. Cross-check: 5 mg / (1000 ml / 1000 ml per L) = 5.000 mg/L. Additional exact excerpt at $.data.volume: \"volume\": 1000. Locator=$.data.recipe[5] (compound_id=139); response SHA256=c6829f83ad6e234909db1d65f45a27c24993e0280ff68c4d7355a8f6344335b9; accessed 2026-10-07. This supports provider-declared stock concentration, not an independently measured final volume, a dilution into the receiving medium, or either inline variant. The exact receiving-recipe link is https://mediadive.dsmz.de/rest/medium/J1219, $.data.solutions[0].recipe where solution_id=3861; additional exact excerpt: {\n                        \"recipe_order\": 9,\n                        \"solution\": \"Trace vitamins\",\n                        \"solution_id\": 3861,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }. Medium response SHA256=ec7bff0980d24724c1052f1e90796ca659808e61f3206a93b61376d2e1dbac67; it identifies original recipe https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219. JCM 1219's cross-reference and the linked JCM stock table were manually checked."
+    },
+    {
+      "pointer": [
+        "solutions",
+        2,
+        "composition",
+        6
+      ],
+      "field": "solutions[2].composition[6].concentration",
+      "ingredient": "Calcium pantothenate",
+      "old": {
+        "value": "5",
+        "unit": "MG_PER_L"
+      },
+      "new": {
+        "value": "5",
+        "unit": "MG_PER_L"
+      },
+      "status": "evidence_only",
+      "reference": "https://mediadive.dsmz.de/rest/solution/3861",
+      "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\": \"Calcium pantothenate\",\n                \"compound_id\": 518,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"mg\",\n                \"g_l\": 0.005,\n                \"mmol_l\": 0.0104925,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for solutions[2].composition[6].concentration (Calcium pantothenate) within the stock. MediaDive explicitly reports g_l=0.005; 0.005 g/L * 1000 mg/g = 5.000 mg/L, matching the unchanged local value. Cross-check: 5 mg / (1000 ml / 1000 ml per L) = 5.000 mg/L. Additional exact excerpt at $.data.volume: \"volume\": 1000. Locator=$.data.recipe[6] (compound_id=518); response SHA256=c6829f83ad6e234909db1d65f45a27c24993e0280ff68c4d7355a8f6344335b9; accessed 2026-10-07. This supports provider-declared stock concentration, not an independently measured final volume, a dilution into the receiving medium, or either inline variant. The exact receiving-recipe link is https://mediadive.dsmz.de/rest/medium/J1219, $.data.solutions[0].recipe where solution_id=3861; additional exact excerpt: {\n                        \"recipe_order\": 9,\n                        \"solution\": \"Trace vitamins\",\n                        \"solution_id\": 3861,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }. Medium response SHA256=ec7bff0980d24724c1052f1e90796ca659808e61f3206a93b61376d2e1dbac67; it identifies original recipe https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219. JCM 1219's cross-reference and the linked JCM stock table were manually checked."
+    },
+    {
+      "pointer": [
+        "solutions",
+        2,
+        "composition",
+        7
+      ],
+      "field": "solutions[2].composition[7].concentration",
+      "ingredient": "Vitamin B12",
+      "old": {
+        "value": "0.1",
+        "unit": "MG_PER_L"
+      },
+      "new": {
+        "value": "0.1",
+        "unit": "MG_PER_L"
+      },
+      "status": "evidence_only",
+      "reference": "https://mediadive.dsmz.de/rest/solution/3861",
+      "snippet": "{\n                \"recipe_order\": 8,\n                \"compound\": \"Vitamin B12\",\n                \"compound_id\": 18,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"mg\",\n                \"g_l\": 0.0001,\n                \"mmol_l\": 7.3779e-5,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for solutions[2].composition[7].concentration (Vitamin B12) within the stock. MediaDive explicitly reports g_l=0.0001; 0.0001 g/L * 1000 mg/g = 0.1000 mg/L, matching the unchanged local value. Cross-check: 0.1 mg / (1000 ml / 1000 ml per L) = 0.1000 mg/L. Additional exact excerpt at $.data.volume: \"volume\": 1000. Locator=$.data.recipe[7] (compound_id=18); response SHA256=c6829f83ad6e234909db1d65f45a27c24993e0280ff68c4d7355a8f6344335b9; accessed 2026-10-07. This supports provider-declared stock concentration, not an independently measured final volume, a dilution into the receiving medium, or either inline variant. The exact receiving-recipe link is https://mediadive.dsmz.de/rest/medium/J1219, $.data.solutions[0].recipe where solution_id=3861; additional exact excerpt: {\n                        \"recipe_order\": 9,\n                        \"solution\": \"Trace vitamins\",\n                        \"solution_id\": 3861,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }. Medium response SHA256=ec7bff0980d24724c1052f1e90796ca659808e61f3206a93b61376d2e1dbac67; it identifies original recipe https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219. JCM 1219's cross-reference and the linked JCM stock table were manually checked."
+    },
+    {
+      "pointer": [
+        "solutions",
+        2,
+        "composition",
+        8
+      ],
+      "field": "solutions[2].composition[8].concentration",
+      "ingredient": "p-Aminobenzoic acid",
+      "old": {
+        "value": "5",
+        "unit": "MG_PER_L"
+      },
+      "new": {
+        "value": "5",
+        "unit": "MG_PER_L"
+      },
+      "status": "evidence_only",
+      "reference": "https://mediadive.dsmz.de/rest/solution/3861",
+      "snippet": "{\n                \"recipe_order\": 9,\n                \"compound\": \"p-Aminobenzoic acid\",\n                \"compound_id\": 47,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"mg\",\n                \"g_l\": 0.005,\n                \"mmol_l\": 0.0364591,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for solutions[2].composition[8].concentration (p-Aminobenzoic acid) within the stock. MediaDive explicitly reports g_l=0.005; 0.005 g/L * 1000 mg/g = 5.000 mg/L, matching the unchanged local value. Cross-check: 5 mg / (1000 ml / 1000 ml per L) = 5.000 mg/L. Additional exact excerpt at $.data.volume: \"volume\": 1000. Locator=$.data.recipe[8] (compound_id=47); response SHA256=c6829f83ad6e234909db1d65f45a27c24993e0280ff68c4d7355a8f6344335b9; accessed 2026-10-07. This supports provider-declared stock concentration, not an independently measured final volume, a dilution into the receiving medium, or either inline variant. The exact receiving-recipe link is https://mediadive.dsmz.de/rest/medium/J1219, $.data.solutions[0].recipe where solution_id=3861; additional exact excerpt: {\n                        \"recipe_order\": 9,\n                        \"solution\": \"Trace vitamins\",\n                        \"solution_id\": 3861,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }. Medium response SHA256=ec7bff0980d24724c1052f1e90796ca659808e61f3206a93b61376d2e1dbac67; it identifies original recipe https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219. JCM 1219's cross-reference and the linked JCM stock table were manually checked."
+    },
+    {
+      "pointer": [
+        "solutions",
+        2,
+        "composition",
+        9
+      ],
+      "field": "solutions[2].composition[9].concentration",
+      "ingredient": "Lipoic acid",
+      "old": {
+        "value": "5",
+        "unit": "MG_PER_L"
+      },
+      "new": {
+        "value": "5",
+        "unit": "MG_PER_L"
+      },
+      "status": "evidence_only",
+      "reference": "https://mediadive.dsmz.de/rest/solution/3861",
+      "snippet": "{\n                \"recipe_order\": 10,\n                \"compound\": \"Lipoic acid\",\n                \"compound_id\": 368,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"mg\",\n                \"g_l\": 0.005,\n                \"mmol_l\": 0.024233,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for solutions[2].composition[9].concentration (Lipoic acid) within the stock. MediaDive explicitly reports g_l=0.005; 0.005 g/L * 1000 mg/g = 5.000 mg/L, matching the unchanged local value. Cross-check: 5 mg / (1000 ml / 1000 ml per L) = 5.000 mg/L. Additional exact excerpt at $.data.volume: \"volume\": 1000. Locator=$.data.recipe[9] (compound_id=368); response SHA256=c6829f83ad6e234909db1d65f45a27c24993e0280ff68c4d7355a8f6344335b9; accessed 2026-10-07. This supports provider-declared stock concentration, not an independently measured final volume, a dilution into the receiving medium, or either inline variant. The exact receiving-recipe link is https://mediadive.dsmz.de/rest/medium/J1219, $.data.solutions[0].recipe where solution_id=3861; additional exact excerpt: {\n                        \"recipe_order\": 9,\n                        \"solution\": \"Trace vitamins\",\n                        \"solution_id\": 3861,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }. Medium response SHA256=ec7bff0980d24724c1052f1e90796ca659808e61f3206a93b61376d2e1dbac67; it identifies original recipe https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219. JCM 1219's cross-reference and the linked JCM stock table were manually checked."
+    }
+  ],
+  "source_hashes": {
+    "J1219": "ec7bff0980d24724c1052f1e90796ca659808e61f3206a93b61376d2e1dbac67",
+    "solution-3981": "f31ddb3c46606d262bb9d8fa48f9ea5d4bab81c8917dc35dce7a7f0da6369a23",
+    "solution-3861": "c6829f83ad6e234909db1d65f45a27c24993e0280ff68c4d7355a8f6344335b9"
+  }
+}

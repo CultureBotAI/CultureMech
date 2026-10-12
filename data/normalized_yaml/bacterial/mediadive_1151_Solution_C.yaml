@@ -16,6 +16,33 @@ composition:
     label: octadecanoic acid
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1151
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Stearic acid",
+                      "compound_id": 534,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.36,
+                      "unit": "g",
+                      "g_l": 32.7273,
+                      "mmol_l": 115.034,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Stearic
+      acid) in MediaDive solution 1151; locator=$.data.recipe[0] (compound_id=534).
+      Provider explicitly reports g_l=32.7273. Arithmetic check: 0.36 g * 1 g/g /
+      (11 ml / 1000 ml per L) = 32.72727272727272727272727273 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      11. Retrieved 2026-10-07T08:49:28.387207+00:00; response SHA256=eaf1186d0c9ac28a450cca1636c07c35e2a4c5c044f3d501513c0ab3adbe4fec.'
 - preferred_term: NaOH
   concentration:
     value: '57.27272727272727'
@@ -74,6 +101,15 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T08:52:28.993811+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/1151
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "32.7273"}
+    -> {"unit": "G_PER_L", "value": "32.7273"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -82,3 +118,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/1151
+  title: 'MediaDive solution 1151: Solution C'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=eaf1186d0c9ac28a450cca1636c07c35e2a4c5c044f3d501513c0ab3adbe4fec;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

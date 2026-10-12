@@ -1,0 +1,22 @@
+{
+  "normalized_inventory_sha256": "5fb7aa3854ad7d9a61f4d5b02b53487df4503f3cdcf137eaa516d7d74b5d2f75",
+  "previously_edited_records": 5371,
+  "previously_reviewed_records": 11899,
+  "newly_edited_targets": [
+    "data/normalized_yaml/algae/1_2_Enriched_Seawater.yaml",
+    "data/normalized_yaml/algae/2_3_Enriched_Seawater.yaml",
+    "data/normalized_yaml/algae/ES_10_Enriched_Seawater_Medium.yaml",
+    "data/normalized_yaml/algae/ES_2_Enriched_Seawater_Medium.yaml",
+    "data/normalized_yaml/algae/ES_4_Enriched_Seawater_Medium.yaml",
+    "data/normalized_yaml/algae/Enriched_Seawater_Medium.yaml"
+  ],
+  "newly_reviewed_targets": [
+    "data/normalized_yaml/algae/1_2_Enriched_Seawater.yaml",
+    "data/normalized_yaml/algae/2_3_Enriched_Seawater.yaml",
+    "data/normalized_yaml/algae/ES_10_Enriched_Seawater_Medium.yaml",
+    "data/normalized_yaml/algae/ES_2_Enriched_Seawater_Medium.yaml",
+    "data/normalized_yaml/algae/ES_4_Enriched_Seawater_Medium.yaml",
+    "data/normalized_yaml/algae/Enriched_Seawater_Medium.yaml"
+  ],
+  "report_search_includes_ignored_files": true
+}

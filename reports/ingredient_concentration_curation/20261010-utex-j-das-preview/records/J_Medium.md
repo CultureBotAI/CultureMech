@@ -1,0 +1,67 @@
+# UTEX Ingredient Concentration Review Preview
+
+- Record: data/normalized_yaml/algae/J_Medium.yaml
+- ID: CultureMech:000172
+- Reviewed commit: f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f
+- Baseline SHA256: a3041b06406883f0069a18a37859f383c661760a30f288e2845cbb71d548deec
+- Proposed SHA256: 26dbea63c625a5de074f1a0b747093a5b24e0447da85f25b852c34126682e26f
+- State: preview; authoritative record unchanged
+- Proposal: mutation-preview-v3
+- Canonical follow-up coverage increment: 0
+
+| Original field / ingredient | Proposed field | Old value / unit / basis | Proposed value / unit / basis | Status | Source evidence | Planned action |
+| --- | --- | --- | --- | --- | --- | --- |
+| ingredients[0].concentration / dH2O | ingredients[0].concentration | {"value": "1000", "unit": "ML_PER_L"} | null | unsupported | {"reference": "https://utex.org/products/j-medium", "snippet": "Bring total volume to 1 L with dH2O.", "basis_snippet": "To approximately 950 mL of dH2O", "locator": "Directions / formulation table", "calculation": "No conversion applied"} | Remove unsupported concentration; literal source input retained in notes and evidence. |
+| ingredients[1].concentration / CaCl2 x 2 H2O | ingredients[1].concentration | {"value": "0.02", "unit": "MILLIMOLAR"} | {"value": "0.02", "unit": "MILLIMOLAR"} | evidence_only | {"reference": "https://utex.org/products/j-medium", "snippet": "0.02 mM", "basis_snippet": "Final Concentration", "locator": "Formulation table row 3, Final Concentration column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[0].concentration / Macro Component 1 for J Medium | solutions[0].concentration | {"value": "10", "unit": "ML_PER_L"} | {"value": "10", "unit": "ML_PER_L"} | evidence_only | {"reference": "https://utex.org/products/j-medium", "snippet": "10 mL/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 1, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[0].composition[0].concentration / dH2O | solutions[0].composition[0].concentration | {"value": "1000", "unit": "ML_PER_L"} | null | unsupported | {"reference": "https://utex.org/products/macro-component-1-for-j-medium", "snippet": "Bring the total volume to 1 Liter with dH2O.", "basis_snippet": "For 1 L Total", "locator": "Directions / formulation table", "calculation": "No conversion applied"} | Remove unsupported concentration; literal source input retained in notes and evidence. |
+| solutions[0].composition[1].concentration / NaNO3 | solutions[0].composition[1].concentration | {"value": "67", "unit": "G_PER_L"} | {"value": "67", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/macro-component-1-for-j-medium", "snippet": "67 g/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 1, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[0].composition[2].concentration / Na2HPO4 | solutions[0].composition[2].concentration | {"value": "0.67", "unit": "G_PER_L"} | {"value": "0.67", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/macro-component-1-for-j-medium", "snippet": "0.67 g/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 2, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[0].composition[3].concentration / K2HPO4 | solutions[0].composition[3].concentration | {"value": "3.8", "unit": "G_PER_L"} | {"value": "3.8", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/macro-component-1-for-j-medium", "snippet": "3.8 g/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 3, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[0].composition[4].concentration / Tricine | solutions[0].composition[4].concentration | {"value": "25", "unit": "G_PER_L"} | {"value": "25", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/macro-component-1-for-j-medium", "snippet": "25 g/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 4, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[1].concentration / Macro Component 2 for J medium | solutions[1].concentration | {"value": "10", "unit": "ML_PER_L"} | {"value": "10", "unit": "ML_PER_L"} | evidence_only | {"reference": "https://utex.org/products/j-medium", "snippet": "10 mL/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 2, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[1].composition[0].concentration / dH2O | solutions[1].composition[0].concentration | {"value": "1000", "unit": "ML_PER_L"} | null | unsupported | {"reference": "https://utex.org/products/macro-component-2-for-j-medium", "snippet": "Bring the total volume to 1 Liter with dH2O.", "basis_snippet": "For 1 L Total", "locator": "Directions / formulation table", "calculation": "No conversion applied"} | Remove unsupported concentration; literal source input retained in notes and evidence. |
+| solutions[1].composition[1].concentration / Na2EDTA x 2 H2O | solutions[1].composition[1].concentration | {"value": "4.4", "unit": "G_PER_L"} | {"value": "4.4", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/macro-component-2-for-j-medium", "snippet": "4.4 g/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 1, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[1].composition[2].concentration / MgSO4 x 7 H2O | solutions[1].composition[2].concentration | {"value": "10", "unit": "G_PER_L"} | {"value": "10", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/macro-component-2-for-j-medium", "snippet": "10 g/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 2, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[1].composition[3].concentration / MgCl2 x 6 H2O | solutions[1].composition[3].concentration | {"value": "5", "unit": "G_PER_L"} | {"value": "5", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/macro-component-2-for-j-medium", "snippet": "5 g/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 3, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[1].composition[4].concentration / FeCl3 x 6 H2O | solutions[1].composition[4].concentration | {"value": "0.5", "unit": "G_PER_L"} | {"value": "0.5", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/macro-component-2-for-j-medium", "snippet": "0.5 g/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 4, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[2].concentration / G9 Trace Metals for J medium | solutions[2].concentration | {"value": "1", "unit": "ML_PER_L"} | {"value": "1", "unit": "ML_PER_L"} | evidence_only | {"reference": "https://utex.org/products/j-medium", "snippet": "1 mL/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 4, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[2].composition[0].concentration / dH2O | solutions[2].composition[0].concentration | {"value": "1000", "unit": "ML_PER_L"} | null | unsupported | {"reference": "https://utex.org/products/g9-trace-metals-for-j-medium", "snippet": "Bring total volume to 1 Liter with dH2O.", "basis_snippet": "For 1 L Total", "locator": "Directions / formulation table", "calculation": "No conversion applied"} | Remove unsupported concentration; literal source input retained in notes and evidence. |
+| solutions[2].composition[1].concentration / H3BO3 | solutions[2].composition[1].concentration | {"value": "3.25", "unit": "G_PER_L"} | {"value": "3.25", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/g9-trace-metals-for-j-medium", "snippet": "3.25 g/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 1, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[2].composition[2].concentration / MnSO4 x H2O | solutions[2].composition[2].concentration | {"value": "1.5", "unit": "G_PER_L"} | {"value": "1.5", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/g9-trace-metals-for-j-medium", "snippet": "1.5 g/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 2, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[2].composition[3].concentration / ZnSO4 x 7 H2O | solutions[2].composition[3].concentration | {"value": "0.3", "unit": "G_PER_L"} | {"value": "0.3", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/g9-trace-metals-for-j-medium", "snippet": "0.3 g/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 3, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[2].composition[4].concentration / (NH4)6Mo7O24 x 4 H2O | solutions[2].composition[4].concentration | {"value": "0.08", "unit": "G_PER_L"} | {"value": "0.08", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/g9-trace-metals-for-j-medium", "snippet": "0.08 g/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 4, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[2].composition[5].concentration / CuSO4 x 5 H2O | solutions[2].composition[5].concentration | {"value": "0.05", "unit": "G_PER_L"} | {"value": "0.05", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/g9-trace-metals-for-j-medium", "snippet": "0.05 g/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 5, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[2].composition[6].concentration / Co(NO3)2 x 6 H2O | solutions[2].composition[6].concentration | {"value": "0.15", "unit": "G_PER_L"} | {"value": "0.15", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/g9-trace-metals-for-j-medium", "snippet": "0.15 g/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 6, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+| solutions[2].composition[7].concentration / KI | solutions[2].composition[7].concentration | {"value": "0.01", "unit": "G_PER_L"} | {"value": "0.01", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/g9-trace-metals-for-j-medium", "snippet": "0.01 g/L", "basis_snippet": "For 1 L Total", "locator": "Formulation table row 7, Amount column", "calculation": "No conversion applied"} | Attach scoped evidence; numerical concentration unchanged. |
+
+## Source Metadata
+
+Each proposed YAML reference includes the inspected source title, source type, discovery mode and access date. Named authors, publication year and DOI remain unknown where not established; a persistent source URL is supplied instead.
+
+## Proposed Changes
+
+{
+  "unsupported_quantity_slots_removed": 4,
+  "inline_variant_options_added": 1,
+  "new_evidence": 22,
+  "ingredient_context_notes_corrected": 19,
+  "bibliographic_entries_enriched": 4,
+  "new_curation_history": 1,
+  "recipe_context_notes_corrected": 1
+}
+
+## Validation
+
+All four baseline/proposed CLI schema/strict checks for this record pass. No authoritative write or post-edit/reference-validation pass is claimed. The cohort validation receipt separately records literal-source arithmetic and altered-proposal rejection checks.
+
+- `just validate-schema data/normalized_yaml/algae/J_Medium.yaml` -> 0
+- `just validate-strict data/normalized_yaml/algae/J_Medium.yaml` -> 0
+- `just validate-schema reports/ingredient_concentration_curation/20261010-utex-j-das-preview/mutation-preview-v3/proposed/J_Medium.yaml` -> 0
+- `just validate-strict reports/ingredient_concentration_curation/20261010-utex-j-das-preview/mutation-preview-v3/proposed/J_Medium.yaml` -> 0
+
+## Remaining Work
+
+This is a concentration/ingredient preview, not certification of unrelated organism, role, salinity or culture-condition assertions. The full-record goal remains incomplete. Preserve source conflicts, identity-ledger access limits and unquantified recipe inputs. The volume-basis consumer patch remains unapplied. Guarded application, post-edit checks, canonical reports and required generated-artifact validation are still required.
+
+The source-triage ledger retains the initial disposition; this report reflects the current proposal version named above.

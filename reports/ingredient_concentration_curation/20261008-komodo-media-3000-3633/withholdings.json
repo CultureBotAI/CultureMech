@@ -1,0 +1,376 @@
+[
+  {
+    "id": "CultureMech:003731",
+    "medium_id": "1081",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1081",
+    "source_sha256": "4927e848f2195a495a649aed117b38f2eb2e5af4933496d58982eac3969e91a2",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "After autoclaving, aseptically add 100 ml of a 10% Na2CO3 solution to the medium. Check final pH to be about 10.0.",
+    "reason": "The basal recipe uses 900 ml water and receives 100 ml of a 10% carbonate stock after autoclaving. The percent basis and stock boundary are absent locally; do not endorse the flattened carbonate or assume a measured final litre. Original PDF corroborates these separate inputs."
+  },
+  {
+    "id": "CultureMech:003737",
+    "medium_id": "1085",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1085",
+    "source_sha256": "504dd51ea52ae4d8c093996c82edbdf0c6efd5dfa94f5d6db162977304bbf9d9",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Dissolve ingredients (except urea and thioglycolate), boil medium for 1 min, then cool to room temperature under 80% N2 and 20% CO2 gas mixture. Add thioglycolate, dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving add urea from a 10% (w/v) stock solution sterilized by filtration and stored under 100% N2 gas. Adjust pH of complete medium to 7.4.",
+    "reason": "Urea is added from a filter-sterilized anoxic 10% w/v stock, and resazurin is a separate 0.1% w/v stock. The local flat formulation omits stock and basal-versus-completed preparation stages."
+  },
+  {
+    "id": "CultureMech:003742",
+    "medium_id": "1091",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1091",
+    "source_sha256": "7fac27a9ccd8b9142e0ccdc07e485ec00f66d501d640cd783f48ea35c2fa5289",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      2,
+      "step"
+    ],
+    "snippet": "Yeast extract and sodium pyruvate are added from sterile (autoclaved) stock solutions to the respective concentrations.",
+    "reason": "Yeast extract and pyruvate are separate sterile stock additions; the table also specifies a 1 M Tris stock. Reconstruct the missing stock strengths, addition and preparation boundaries before endorsing the flat formulation."
+  },
+  {
+    "id": "CultureMech:003806",
+    "medium_id": "1106",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1106",
+    "source_sha256": "5802b5ad014a13551e59ad2b8d15d3984a2e439312b736ee71cd9ba5b7f1a98c",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Dissolve ingredients (except magnesium chloride, carbonate, glucose and reducing agents) and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 -45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add magnesium chloride, glucose, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. The glucose solution should be sterilized by filtration. Adjust pH of complete medium to 6.8 - 7.0, if necessary.",
+    "reason": "Magnesium chloride, glucose, cysteine, sulfide and carbonate come from separate sterile anoxic stocks with different gas/preparation requirements. The flat record does not represent these stages."
+  },
+  {
+    "id": "CultureMech:003813",
+    "medium_id": "1111",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1111",
+    "source_sha256": "bc67e453fee21b5e0fb4a4f659ebd2b78be5d112d72c50af3bc9bdb6dcd388a8",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      4
+    ],
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"attribute\": \"autoclaved separately\",\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 5.74132,\n                        \"optional\": 0\n                    }",
+    "reason": "Phosphate is autoclaved separately, a preparation boundary omitted locally. The source also specifies sodium carboxymethyl cellulose of high viscosity, not a verified match to the generic local material. The original PDF confirms both constraints."
+  },
+  {
+    "id": "CultureMech:003839",
+    "medium_id": "1130",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1130",
+    "source_sha256": "609ea3c039ebbf28066a7b3bb3f09a9ee1c278950f8dbb8be3d809bcdf43a2c7",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Note: for Agar plates, autoclave NaCl separately.  Otherwise the salts will precipitate and the plates not solidify properly.",
+    "reason": "For the local solid formulation, NaCl must be autoclaved separately to avoid precipitation; this boundary is absent locally. The source also specifies a supplier-dependent yeast extract requirement, so the generic local formulation is not established as equivalent."
+  },
+  {
+    "id": "CultureMech:003867",
+    "medium_id": "1157",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1157",
+    "source_sha256": "a9e4ae716b09f410794095b881cdf9ac286771a8941c8a774395185ee62ded06",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      4
+    ],
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"attribute\": \"0.2 mg/ml, filter-sterilized\",\n                        \"amount\": 5,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+    "reason": "The source adds 5 ml of 0.2 mg/ml riboflavin stock after autoclaving, not the local 5 G_PER_L. Glucose, magnesium sulfate and calcium chloride are additional percentage stocks. The original PDF confirms the doses; final volume and percentage bases are not established. Resolve stock topology without guessing final concentrations."
+  },
+  {
+    "id": "CultureMech:003877",
+    "medium_id": "1164",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1164",
+    "source_sha256": "bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      6
+    ],
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"FeCl3 x 6 H2O\",\n                        \"compound_id\": 82,\n                        \"attribute\": \"0.5 %\",\n                        \"amount\": 7,\n                        \"unit\": \"drops\",\n                        \"optional\": 0\n                    }",
+    "reason": "Both API and original PDF specify seven drops of 0.5% ferric chloride hexahydrate stock, not the local 7 G_PER_L. Neither drop volume nor percent basis is supplied. Preserve the nonnumeric drop dose and reconstruct its stock boundary in a separate guarded repair."
+  },
+  {
+    "id": "CultureMech:003895",
+    "medium_id": "1175",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1175",
+    "source_sha256": "4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O, cellulobiose or yeast extract. Boil the medium in a water bath and cool under a stream of nitrogen. Add the Na2CO3 and NaHCO3 to the cooled medium (the pH should be about 10.0) and dispense the medium into Hungate tubes or serum bottles under a stream of nitrogen. Seal the tubes under nitrogen gas and autoclave. To the cooled medium at the appropriate amounts of Na2S x 9 H2O, cellulobiose and yeast extract from sterile, anaerobic stock solutions (10% Na2S x 9 H2O, 5% cellulobiose, 10% yeast extract).",
+    "reason": "Sulfide, cellobiose and yeast extract are separate sterile anoxic stock additions, with carbonate added at a different preparation stage. The local flat formulation omits these boundaries; no final-volume arithmetic is justified."
+  },
+  {
+    "id": "CultureMech:003904",
+    "medium_id": "1184",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1184",
+    "source_sha256": "cf02ce7f3dbb3226c4e98166dc1cfaec74e9fd1850751b7f72833a1a1d976041",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "For solid medium add the NaCl after autoclaving.",
+    "reason": "For solid medium the source adds NaCl after autoclaving. The local solid record omits this preparation boundary; resolve the addition stage before endorsing the complete flat formulation."
+  },
+  {
+    "id": "CultureMech:003905",
+    "medium_id": "1185",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1185",
+    "source_sha256": "8ddbb74134ff8f70557f24248c2fdb3a226f0e2dc3b67b795ab8dff141b0f464",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      7
+    ],
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"MnSO4 x 2 H2O\",\n                        \"compound_id\": 258,\n                        \"attribute\": \"1% solution, 1 %\",\n                        \"amount\": 2,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.106934,\n                        \"optional\": 0\n                    }",
+    "reason": "Manganese sulfate dihydrate and ferrous sulfate heptahydrate are added as 1% stocks. The percent bases and stock boundaries are absent locally. Do not transfer the flattened nominal mass concentrations."
+  },
+  {
+    "id": "CultureMech:003952",
+    "medium_id": "1204",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1204",
+    "source_sha256": "c509ccdc5884082fcf6098688160fda6c3a2366ec1f69c018cde6cb179ebb2a7",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Dissolve ingredients except carbonate, maltose and DTT, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave at 121°C for 20 minutes. Add maltose and DTT from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration and carbonate from a sterile stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Check pH of complete medium and adjust to 7.4, if necessary.",
+    "reason": "Carbonate, maltose and DTT use separately sterilized stocks and gas conditions, omitted locally. Resolve preparation and exact source-version context, including the changed source name, before endorsing matching flat amounts."
+  },
+  {
+    "id": "CultureMech:003967",
+    "medium_id": "1216",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1216",
+    "source_sha256": "4032899d5254baaaf5b705f989cd006da7580b9779abdc3bf50590872a172321",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Add the vitamin B12 solution from a filter sterilised stock solution to the autoclaved, cooled medium. Add 15.0 g/l agar for solid media.",
+    "reason": "The source requires a vitamin B12 stock after autoclaving, but both its API table and local ingredients omit that addition. The original PDF likewise specifies no B12 amount or stock strength. Record the gap without inventing either quantity."
+  },
+  {
+    "id": "CultureMech:003989",
+    "medium_id": "1233",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1233",
+    "source_sha256": "29a4b7468f2bc213c10dbba197f9a20f01d3d8e5ee97832891094481b4c1406c",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Dissolve ingredients (except cysteine and glucose), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid cysteine and adjust pH to 7.3 - 7.5, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add glucose from a sterile anoxic stock solution prepared under 100% N2 gas.",
+    "reason": "The recipe combines multiple percentage stocks and a separate glucose stock with preparation-dependent additions. The declared API volume is not sufficient evidence for the flattened local final concentrations; preserve unquantified and optional additions as unresolved."
+  },
+  {
+    "id": "CultureMech:004005",
+    "medium_id": "1248",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1248",
+    "source_sha256": "8bc3fb80bcc4788628275d63cd31741fefec55bf73f8e4b92abc21e7a9b23ffe",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Dissolve ingredients except cysteine, thiosulfate and glucose. Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, then add cysteine and adjust pH to 6.8 - 7.2. Dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add thiosulfate and glucose from anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust pH of complete medium to 7.0, if necessary.",
+    "reason": "Thiosulfate and glucose are separate sterile anoxic stocks added after autoclaving, whereas cysteine is added before it. Those stock and preparation boundaries are absent locally; source-name/version equivalence also needs review."
+  },
+  {
+    "id": "CultureMech:004022",
+    "medium_id": "1265",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1265",
+    "source_sha256": "3163a70faa3c153a4ec326ae63ef239b1c27d3dbccf19e60b0aa5307ac22384c",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "NaHCO3 is prepared as 5% (w/v) solution, filter sterilized and added to the autoclaved medium.",
+    "reason": "Bicarbonate is added from a separately filter-sterilized 5% w/v stock after autoclaving. The stock strength, dose and preparation stage are not represented by the local flat formulation."
+  },
+  {
+    "id": "CultureMech:004025",
+    "medium_id": "1270",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1270",
+    "source_sha256": "c7c32c992a834a225e364624b69cf433b27a55e037750d36facad05a777ebf75",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      2
+    ],
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Trisodium citrate x 2 H2O\",\n                        \"compound_id\": 1249,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 3.4002,\n                        \"optional\": 0\n                    }",
+    "reason": "The API identifies trisodium citrate dihydrate, whereas the inspected original DSMZ PDF prints Na2citrate x 2 H2O. Resolve the sodium stoichiometry discrepancy before endorsing the formulation. The PDF also distinguishes dry-mix exclusions and separately added glucose; its explicit 40 microgram/L B12 does not resolve citrate identity."
+  },
+  {
+    "id": "CultureMech:004028",
+    "medium_id": "1274",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1274",
+    "source_sha256": "23f21de9df3d1dda441fabe4f9aa860d2fb809af04474644c9d2ba736e6aa758",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      4
+    ],
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Sea water\",\n                        \"compound_id\": 286,\n                        \"attribute\": \"artificial\",\n                        \"amount\": 500,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+    "reason": "The original PDF and API specify 500 ml artificial marine water plus 500 ml distilled water, not the local 500 G_PER_L Sea water. Artificial seawater composition and stock identity are unspecified here; the NBRC 1077 cross-reference requires separate verification before reconstruction."
+  },
+  {
+    "id": "CultureMech:004038",
+    "medium_id": "1288",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1288",
+    "source_sha256": "b757b12cd2d4c0914f0620ada7ef98db638688f79dd38009e02441d69ef77e81",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Prepare the medium without glucose, cellobiose, maltose, and soluble starch. Boil the medium and cool under an atmosphere of N2:CO2 (80:20) and adjust the pH to 6.8. Dispense into Hungate tubes or serum bottles under the same gas atmosphere and seal with rubber stoppers. Add the glucose, cellobiose, maltose, and soluble starch from N2/CO2 gassed and sterile-filtered stock solutions (pH 6.8).",
+    "reason": "Glucose, cellobiose, maltose and soluble starch are prepared as separate sterile anoxic stocks. Resolve these preparation stages before endorsing the local flattened formulation."
+  },
+  {
+    "id": "CultureMech:004064",
+    "medium_id": "1309",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1309",
+    "source_sha256": "97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "The NaCl and Na2CO3 were dissolved and autoclaved separately and added to the organic components at 60°C before pouring the agar medium.",
+    "reason": "NaCl and carbonate are autoclaved separately from organic components and mixed at 60 C before pouring. The local flat record omits the preparation groups and their volume allocation; no final-volume assumption is authorized."
+  }
+]

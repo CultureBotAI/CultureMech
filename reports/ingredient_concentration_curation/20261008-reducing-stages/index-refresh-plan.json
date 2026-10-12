@@ -1,0 +1,248 @@
+{
+  "source_sha256": "e02f89a4cd3c75ada002f31929e0943db79a84c319048feac12d2811e50c93dd",
+  "files": [
+    {
+      "target": "data/normalized_yaml/archaea_index.json",
+      "preview": "/tmp/ingredient-media-20261007/reducing-index-preview/archaea_index.json",
+      "before_sha256": "89c2499fd566c3267d5072ffd260544aedce8d66cbdf00ac2ee9ed875d2fe1a0",
+      "after_sha256": "c315ce8ed8bd45067cfe4ccbae6c7933bbe709ac17fb47acc3d0c2f0b436841a",
+      "changes": [
+        {
+          "key": "CultureMech:008846",
+          "id": "CultureMech:008846",
+          "changes": {
+            "ingredient_count": [
+              18,
+              16
+            ],
+            "solution_count": [
+              2,
+              4
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008954",
+          "id": "CultureMech:008954",
+          "changes": {
+            "ingredient_count": [
+              27,
+              11
+            ],
+            "solution_count": [
+              2,
+              4
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:009019",
+          "id": "CultureMech:009019",
+          "changes": {
+            "ingredient_count": [
+              19,
+              11
+            ],
+            "solution_count": [
+              4,
+              6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/bacterial_index.json",
+      "preview": "/tmp/ingredient-media-20261007/reducing-index-preview/bacterial_index.json",
+      "before_sha256": "4b489bb7d1444728c358aea74bc337f802a62a7e22383c2500aef5aadf285c3a",
+      "after_sha256": "2cca25a4b0eda2a40893dc8f0f09cf5cb15cec5cd98d8587c76d714797d8337e",
+      "changes": [
+        {
+          "key": "CultureMech:008885",
+          "id": "CultureMech:008885",
+          "changes": {
+            "ingredient_count": [
+              19,
+              8
+            ],
+            "solution_count": [
+              1,
+              3
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008934",
+          "id": "CultureMech:008934",
+          "changes": {
+            "ingredient_count": [
+              19,
+              17
+            ],
+            "solution_count": [
+              2,
+              4
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_togo_index.json",
+      "preview": "/tmp/ingredient-media-20261007/reducing-index-preview/by_source_togo_index.json",
+      "before_sha256": "ef96e2205e312b3d01797ce1dfa858a1bfe864ccf2ba204ebd9fce3537405840",
+      "after_sha256": "380f1fd582127417c557a03a0d8831a8fdff63ab342201c35897f9d8bc0a740c",
+      "changes": [
+        {
+          "key": "CultureMech:008846",
+          "id": "CultureMech:008846",
+          "changes": {
+            "ingredient_count": [
+              18,
+              16
+            ],
+            "solution_count": [
+              2,
+              4
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008954",
+          "id": "CultureMech:008954",
+          "changes": {
+            "ingredient_count": [
+              27,
+              11
+            ],
+            "solution_count": [
+              2,
+              4
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:009019",
+          "id": "CultureMech:009019",
+          "changes": {
+            "ingredient_count": [
+              19,
+              11
+            ],
+            "solution_count": [
+              4,
+              6
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008885",
+          "id": "CultureMech:008885",
+          "changes": {
+            "ingredient_count": [
+              19,
+              8
+            ],
+            "solution_count": [
+              1,
+              3
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008934",
+          "id": "CultureMech:008934",
+          "changes": {
+            "ingredient_count": [
+              19,
+              17
+            ],
+            "solution_count": [
+              2,
+              4
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_index.json",
+      "preview": "/tmp/ingredient-media-20261007/reducing-index-preview/recipe_index.json",
+      "before_sha256": "b969daa284db7bd69335c419b79185dfa3234a80c2d2a1a499593249e7f1223e",
+      "after_sha256": "60a1688f89c1495c1bcba63e7c1509e52b069107e5de118c6bbc4a34e20637b3",
+      "changes": [
+        {
+          "key": "CultureMech:008846",
+          "id": "CultureMech:008846",
+          "changes": {
+            "ingredient_count": [
+              18,
+              16
+            ],
+            "solution_count": [
+              2,
+              4
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008954",
+          "id": "CultureMech:008954",
+          "changes": {
+            "ingredient_count": [
+              27,
+              11
+            ],
+            "solution_count": [
+              2,
+              4
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:009019",
+          "id": "CultureMech:009019",
+          "changes": {
+            "ingredient_count": [
+              19,
+              11
+            ],
+            "solution_count": [
+              4,
+              6
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008885",
+          "id": "CultureMech:008885",
+          "changes": {
+            "ingredient_count": [
+              19,
+              8
+            ],
+            "solution_count": [
+              1,
+              3
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008934",
+          "id": "CultureMech:008934",
+          "changes": {
+            "ingredient_count": [
+              19,
+              17
+            ],
+            "solution_count": [
+              2,
+              4
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "only_reviewed_sources_changed": true
+}

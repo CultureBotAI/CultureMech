@@ -1,0 +1,42 @@
+{
+  "terminal": true,
+  "phase": "corpus",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-reducing-stages/strict-errors.tsv"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/reducing-corpus-0.log"
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/reducing-corpus-1.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/reducing-corpus-2.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "e02f89a4cd3c75ada002f31929e0943db79a84c319048feac12d2811e50c93dd"
+  },
+  "strict_scanned": 15910,
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "e02f89a4cd3c75ada002f31929e0943db79a84c319048feac12d2811e50c93dd"
+  }
+}

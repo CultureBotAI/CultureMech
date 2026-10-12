@@ -16,12 +16,27 @@ notes: UTEX prepares Modified CHEV Medium tube-by-tube from CR1 Soil, MgCO3, 11 
 ingredients:
 - preferred_term: CR1 Soil
   concentration:
-    value: 1 cc per 15 mL tube
-    unit: VARIABLE
+    value: '0.001'
+    unit: L
   term:
     id: ENVO:00001998
     label: soil
-  notes: UTEX lists 1 cc CR1 Soil per 15 mL glass tube.
+  notes: 'Source batch input: 1 cc CR1 Soil per tube in a 15 mL vessel. Stored as
+    0.001 L of input, not a concentration or final-volume claim.'
+  evidence:
+  - reference: https://utex.org/products/modified-chev-medium
+    supports: SUPPORT
+    snippet: 1 cc
+    explanation: 'Supports ingredients[0].concentration and notes (CR1 Soil) in UTEX:modified-chev-medium.
+      Locator: recipe table, row 1, Component=CR1 Soil, Amount column; Directions
+      specify the preparation basis. Record the source input volume per tube: 1 cc
+      / 1000 cc per L = 0.001 L. L here is an absolute ingredient input volume for
+      one tube, not a per-liter concentration or measured final volume. The 15 mL
+      figure is vessel capacity. Do not divide by that capacity or by a sum of liquid
+      inputs. One cubic centimetre equals one millilitre; this is bulk soil volume,
+      with no density, dry mass, water content or soil composition inferred. HTML
+      table and linked PDF page 1 inspected 2026-10-09. Existing chemical mappings
+      and growth conditions are not newly verified.'
 - preferred_term: MgCO3
   concentration:
     value: '0.5'
@@ -35,27 +50,57 @@ ingredients:
   supplier_catalog:
     supplier_name: MCIB
     catalog_number: CB486
-  notes: UTEX lists 1 mg MgCO3 per 12 mL liquid fill, for 0.5 mM final.
+  notes: UTEX lists 1 mg/12 mL in its Amount column and 0.5 mM in its Final Concentration
+    column. These columns are not reconciled; the retained molarity is unverified.
+  evidence:
+  - reference: https://utex.org/products/modified-chev-medium
+    supports: SUPPORT
+    snippet: 1 mg/12 mL
+    explanation: 'Supports ingredients[1].notes only; retained concentration remains
+      unverified (MgCO3) in UTEX:modified-chev-medium. Locator: recipe table, row
+      2, Component=MgCO 3 (MCIB CB486), Amount column; Directions specify the preparation
+      basis. The modified recipe doubles the printed MgCO3 mass relative to the other
+      inspected CHEV pages while retaining the same printed molarity. The PDF confirms
+      this source discrepancy. Neither column is selected as a corrected amount, and
+      no mass/molar conversion is applied. This evidence supports the discrepancy
+      note only, not the retained concentration. HTML table and linked PDF page 1
+      inspected 2026-10-09. Existing chemical mappings and growth conditions are not
+      newly verified.'
 - preferred_term: dH2O
   concentration:
-    value: 11 mL per 15 mL tube
-    unit: VARIABLE
+    value: '0.011'
+    unit: L
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-  notes: UTEX lists 11 mL dH2O per 15 mL glass tube.
+  notes: 'Source batch input: 11 mL dH2O per tube in a 15 mL vessel. Stored as 0.011
+    L of input, not a concentration or final-volume claim.'
+  evidence:
+  - reference: https://utex.org/products/modified-chev-medium
+    supports: SUPPORT
+    snippet: 11 mL
+    explanation: 'Supports ingredients[2].concentration and notes (dH2O) in UTEX:modified-chev-medium.
+      Locator: recipe table, row 3, Component=dH 2 O, Amount column; Directions specify
+      the preparation basis. Record the source input volume per tube: 11 mL / 1000
+      mL per L = 0.011 L. L here is an absolute ingredient input volume for one tube,
+      not a per-liter concentration or measured final volume. The 15 mL figure is
+      vessel capacity. Do not divide by that capacity or by a sum of liquid inputs.
+      No density, volume-additivity or stock-composition inference. HTML table and
+      linked PDF page 1 inspected 2026-10-09. Existing chemical mappings and growth
+      conditions are not newly verified.'
 solutions:
 - preferred_term: F/2 Medium
   concentration:
-    value: 1 mL per 15 mL tube
-    unit: VARIABLE
+    value: '0.001'
+    unit: L
   culturemech_term:
     id: CultureMech:000170
     label: F/2 Medium
-  notes: UTEX lists 1 mL prepared F/2 Medium per 15 mL glass tube.
+  notes: 'Source batch input: 1 mL F/2 Medium per tube in a 15 mL vessel. Stored as
+    0.001 L of input, not a concentration or final-volume claim.'
 preparation_steps:
 - step_number: 1
   action: ALIQUOT
@@ -118,9 +163,42 @@ curation_history:
   action: LINKED_UTEX_CR1_S_MODIFIED_2X_VARIANTS
   changes: Linked UTEX CR1-S and Modified 2X CHEV+Soil child media
   notes: Added or refreshed reciprocal parent-child link for algae/modified_2x_chev_soil_medium.yaml.
+- timestamp: '2026-10-09T23:38:36.585055+00:00'
+  curator: codex
+  action: CURATED_UTEX_CHEV_BATCH_INPUTS_AND_SCOPED_EVIDENCE
+  notes: L quantities are absolute input volumes per single-tube preparation, not
+    final concentrations. Vessel capacity and summed liquid inputs do not establish
+    final volume. The three fixed drop counts retain unresolved legacy VARIABLE encodings;
+    their new evidence supports notes only. No drop-volume estimate is introduced.
+    Modified CHEV's 1 mg/12 mL versus 0.5 mM source discrepancy remains unresolved.
+    Its new evidence supports the discrepancy note, not the retained molarity. Referenced
+    F/2 composition, chemical mappings, preparation, growth conditions and relationships
+    are preserved, not newly certified. No new taxa-media associations.
+  source: https://utex.org/products/modified-chev-medium
+  changes: '[{"evidence_scope": "concentration and notes", "ingredient": "CR1 Soil",
+    "new": {"unit": "L", "value": "0.001"}, "old": {"unit": "VARIABLE", "value": "1
+    cc per 15 mL tube"}, "pointer": ["ingredients", 0], "status": "correct"}, {"evidence_scope":
+    "notes only; retained concentration remains unverified", "ingredient": "MgCO3",
+    "new": {"unit": "MILLIMOLAR", "value": "0.5"}, "old": {"unit": "MILLIMOLAR", "value":
+    "0.5"}, "pointer": ["ingredients", 1], "status": "conflict"}, {"evidence_scope":
+    "concentration and notes", "ingredient": "dH2O", "new": {"unit": "L", "value":
+    "0.011"}, "old": {"unit": "VARIABLE", "value": "11 mL per 15 mL tube"}, "pointer":
+    ["ingredients", 2], "status": "correct"}, {"evidence_scope": "concentration and
+    notes", "ingredient": "F/2 Medium", "new": {"unit": "L", "value": "0.001"}, "old":
+    {"unit": "VARIABLE", "value": "1 mL per 15 mL tube"}, "pointer": ["solutions",
+    0], "status": "correct"}]'
 references:
 - reference: UTEX:modified-chev-medium
 - reference: https://utex.org/products/modified-chev-medium
+  title: Modified CHEV Medium
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-09; named authors and web-page publication year not stated;
+    publisher=UTEX Culture Collection of Algae; locator=recipe table and Directions;
+    html_sha256=39ab61e63d4552b3bc14acd743d553d8cff8fc9c883e1ab9ff80d5d0cfb3e66b;
+    corroborating PDF=https://web.biosci.utexas.edu/utex/Media%20PDF/modified-chev-medium.pdf;
+    pdf_sha256=b86906131583f168f29e072d97145bb6e460d4d2cd2649b157d54d6b41c447bd; PDF
+    page 1 visually inspected. Evidence is claim-specific; unresolved drop encodings
+    and the Modified CHEV magnesium-carbonate discrepancy are not certified.
 - reference: https://utex.org/products/f-2-medium
 original_name: Modified CHEV Medium
 data_quality_flags:
@@ -133,3 +211,16 @@ variant_children:
   name: modified_2x_chev_soil_medium
   notes: Uses 2 mL F/2 Medium and 10 mL dH2O per 12 mL liquid fill instead of 1 mL
     F/2 Medium and 11 mL dH2O.
+evidence:
+- reference: https://utex.org/products/modified-chev-medium
+  supports: SUPPORT
+  snippet: 1 mL
+  explanation: 'Supports solutions[0].concentration and notes (F/2 Medium) in UTEX:modified-chev-medium.
+    Locator: recipe table, row 4, Component=F/2 Medium, Amount column; Directions
+    specify the preparation basis. Record the source input volume per tube: 1 mL /
+    1000 mL per L = 0.001 L. L here is an absolute ingredient input volume for one
+    tube, not a per-liter concentration or measured final volume. The 15 mL figure
+    is vessel capacity. Do not divide by that capacity or by a sum of liquid inputs.
+    No density, volume-additivity or stock-composition inference. HTML table and linked
+    PDF page 1 inspected 2026-10-09. Existing chemical mappings and growth conditions
+    are not newly verified.'

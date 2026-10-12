@@ -1,0 +1,135 @@
+{
+  "source_sha256": "080aa90bdd97929b8a85e7ea3580ffaad4260d05d203723ca31bebfeef838433",
+  "files": [
+    {
+      "target": "data/normalized_yaml/archaea_index.json",
+      "preview": "/tmp/ingredient-media-20261007/marine-index-preview/archaea_index.json",
+      "before_sha256": "edb1fea8b199abaaf4c3c23d9c278772be644ed14dd7709a5f8702d5c7132024",
+      "after_sha256": "89c2499fd566c3267d5072ffd260544aedce8d66cbdf00ac2ee9ed875d2fe1a0",
+      "changes": [
+        {
+          "key": "CultureMech:008680",
+          "id": "CultureMech:008680",
+          "changes": {
+            "ingredient_count": [
+              28,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/bacterial_index.json",
+      "preview": "/tmp/ingredient-media-20261007/marine-index-preview/bacterial_index.json",
+      "before_sha256": "4354e1a95df76bd8f8edec90dfe7f46a0db3ffe19c81647927fd33a7de5a64a7",
+      "after_sha256": "4b489bb7d1444728c358aea74bc337f802a62a7e22383c2500aef5aadf285c3a",
+      "changes": [
+        {
+          "key": "CultureMech:008690",
+          "id": "CultureMech:008690",
+          "changes": {
+            "solution_count": [
+              3,
+              4
+            ],
+            "ingredient_count": [
+              28,
+              19
+            ],
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_togo_index.json",
+      "preview": "/tmp/ingredient-media-20261007/marine-index-preview/by_source_togo_index.json",
+      "before_sha256": "a146bf043bca38584ca301e6bceeb0595083a2d26210fef7c69ccdd52ad86b0e",
+      "after_sha256": "ef96e2205e312b3d01797ce1dfa858a1bfe864ccf2ba204ebd9fce3537405840",
+      "changes": [
+        {
+          "key": "CultureMech:008680",
+          "id": "CultureMech:008680",
+          "changes": {
+            "ingredient_count": [
+              28,
+              14
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008690",
+          "id": "CultureMech:008690",
+          "changes": {
+            "solution_count": [
+              3,
+              4
+            ],
+            "ingredient_count": [
+              28,
+              19
+            ],
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_index.json",
+      "preview": "/tmp/ingredient-media-20261007/marine-index-preview/recipe_index.json",
+      "before_sha256": "57d64798773c143627dbdeb0a7a913e567fc18a3ff769f639d0d0d5a74dd4b45",
+      "after_sha256": "b969daa284db7bd69335c419b79185dfa3234a80c2d2a1a499593249e7f1223e",
+      "changes": [
+        {
+          "key": "CultureMech:008680",
+          "id": "CultureMech:008680",
+          "changes": {
+            "ingredient_count": [
+              28,
+              14
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008690",
+          "id": "CultureMech:008690",
+          "changes": {
+            "solution_count": [
+              3,
+              4
+            ],
+            "ingredient_count": [
+              28,
+              19
+            ],
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_statistics.json",
+      "preview": "/tmp/ingredient-media-20261007/marine-index-preview/recipe_statistics.json",
+      "before_sha256": "f897d3ca5d488abd598718ab546214838c9272e40562232ada62d9fca74477ff",
+      "after_sha256": "4ab1363614fac6d94990e41df2bddfcc4e99b9d7819d1c40afa6812065072370",
+      "changes": [
+        {
+          "field": "with_hierarchy_enrichment",
+          "delta": -1,
+          "reason": "Existing generator inspects only top-level ingredients/composition; M209's preserved legacy KNO3 annotation is now in its marine stock."
+        }
+      ]
+    }
+  ],
+  "only_reviewed_sources_changed": true
+}

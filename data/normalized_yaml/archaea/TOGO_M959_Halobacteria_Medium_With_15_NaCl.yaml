@@ -7,111 +7,653 @@ composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: |-
+    Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component
+
+    Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Add components to distilled water and bring volume to 1.0 L.
+    explanation: |-
+      ingredients[0].concentration: Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Add components to distilled water and bring volume to 1.0 L.
+      ingredients[0].notes: Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+    explanation: 'ingredients[0].concentration: Water makes the preparation up to
+      1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor
+      a fixed 1 L water dose is supported. Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.'
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M959
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "distilled water",
+                "volume": 1,
+                "unit": "L",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001001",
+                "gmo_id": "GMO_001001",
+                "label": "Distilled water",
+                "properties": [
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000040",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                    "label": "Inorganic compound"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000044",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000044",
+                    "label": "Solvating media"
+                  }
+                ]
+              }
+    explanation: 'ingredients[0].concentration: Water makes the preparation up to
+      1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor
+      a fixed 1 L water dose is supported. Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:37.031499+00:00; source SHA256=c8aa8b4deef34b5aa064288de31b8be945a28ecaee4a03889b5891c53c406495.'
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: |-
+    Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component
+
+    20.0 g in the source preparation brought to 1.0 L gives 20 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: MgSO4·7H2O 20.0 g
+    explanation: |-
+      ingredients[1].concentration: 20.0 g in the source preparation brought to 1.0 L gives 20 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: MgSO4·7H2O 20.0 g
+      ingredients[1].notes: 20.0 g in the source preparation brought to 1.0 L gives 20 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+    explanation: 'ingredients[1].concentration: 20.0 g in the source preparation brought
+      to 1.0 L gives 20 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.'
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M959
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "MgSO4・7H2O",
+                "volume": 20,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001002",
+                "gmo_id": "GMO_001002",
+                "label": "Magnesium sulfate heptahydrate",
+                "properties": [
+                  {
+                    "id": "GMO_000040",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                    "label": "Inorganic compound"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  },
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000078",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000078",
+                    "label": "Mineral source"
+                  }
+                ]
+              }
+    explanation: 'ingredients[1].concentration: 20.0 g in the source preparation brought
+      to 1.0 L gives 20 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:37.031499+00:00; source SHA256=c8aa8b4deef34b5aa064288de31b8be945a28ecaee4a03889b5891c53c406495.'
 - preferred_term: NaCl
   concentration:
     value: '150'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+  notes: |-
+    Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound
+
+    Use the recipe-specific final formulation, not the copied base amount. The source explicitly gives this final g/L target.
   term:
     id: CHEBI:26710
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+    explanation: |-
+      ingredients[2].concentration: Use the recipe-specific final formulation, not the copied base amount. The source explicitly gives this final g/L target. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.
+
+      Additional exact excerpt: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+      ingredients[2].notes: Use the recipe-specific final formulation, not the copied base amount. The source explicitly gives this final g/L target. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.
+
+      Additional exact excerpt: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+      ingredients[2].concentration: Use the recipe-specific final formulation, not the copied base amount. The source explicitly gives this final g/L target. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Add components to distilled water and bring volume to 1.0 L.
+    explanation: 'ingredients[2].concentration: Use the recipe-specific final formulation,
+      not the copied base amount. The source explicitly gives this final g/L target.
+      Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00;
+      source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.'
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M959
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "NaCl",
+                "volume": 150,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001004",
+                "gmo_id": "GMO_001004",
+                "label": "Sodium chloride",
+                "properties": [
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  },
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000040",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                    "label": "Inorganic compound"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000078",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000078",
+                    "label": "Mineral source"
+                  }
+                ]
+              }
+    explanation: 'ingredients[2].concentration: Use the recipe-specific final formulation,
+      not the copied base amount. The source explicitly gives this final g/L target.
+      Exact captured recipe row/instruction; accessed=2026-10-09T13:07:37.031499+00:00;
+      source SHA256=c8aa8b4deef34b5aa064288de31b8be945a28ecaee4a03889b5891c53c406495.'
 - preferred_term: KCl
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: |-
+    Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component
+
+    2.0 g in the source preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".
   term:
     id: CHEBI:32588
     label: potassium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
     label: potassium chloride
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: KCl 2.0 g
+    explanation: |-
+      ingredients[3].concentration: 2.0 g in the source preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: KCl 2.0 g
+      ingredients[3].notes: 2.0 g in the source preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+    explanation: 'ingredients[3].concentration: 2.0 g in the source preparation brought
+      to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.'
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M959
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "KCl",
+                "volume": 2,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001017",
+                "gmo_id": "GMO_001017",
+                "label": "Potassium chloride",
+                "properties": [
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  },
+                  {
+                    "id": "GMO_000040",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                    "label": "Inorganic compound"
+                  },
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000078",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000078",
+                    "label": "Mineral source"
+                  }
+                ]
+              }
+    explanation: 'ingredients[3].concentration: 2.0 g in the source preparation brought
+      to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:37.031499+00:00; source SHA256=c8aa8b4deef34b5aa064288de31b8be945a28ecaee4a03889b5891c53c406495.'
 - preferred_term: MnCl2・4H2O
   concentration:
     value: '0.36'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+    unit: MG_PER_L
+  notes: |-
+    Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component
+
+    0.36 mg in the source preparation brought to 1.0 L gives 0.36 MG_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".
   term:
     id: CHEBI:86368
     label: manganese(II) chloride tetrahydrate
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: MnCl2·4H2O 0.36 mg
+    explanation: |-
+      ingredients[4].concentration: 0.36 mg in the source preparation brought to 1.0 L gives 0.36 MG_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: MnCl2·4H2O 0.36 mg
+      ingredients[4].notes: 0.36 mg in the source preparation brought to 1.0 L gives 0.36 MG_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+    explanation: 'ingredients[4].concentration: 0.36 mg in the source preparation
+      brought to 1.0 L gives 0.36 MG_PER_L. Separate exact volume excerpt: "Add components
+      to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.'
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M959
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "MnCl2・4H2O",
+                "volume": 0.36,
+                "unit": "mg",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001020",
+                "gmo_id": "GMO_001020",
+                "label": "Manganese chloride tetrahydrate",
+                "properties": [
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  },
+                  {
+                    "id": "GMO_000040",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                    "label": "Inorganic compound"
+                  },
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000078",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000078",
+                    "label": "Mineral source"
+                  }
+                ]
+              }
+    explanation: 'ingredients[4].concentration: 0.36 mg in the source preparation
+      brought to 1.0 L gives 0.36 MG_PER_L. Separate exact volume excerpt: "Add components
+      to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:37.031499+00:00; source SHA256=c8aa8b4deef34b5aa064288de31b8be945a28ecaee4a03889b5891c53c406495.'
 - preferred_term: Sodium glutamate
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
-    Simple component'
+  notes: |-
+    Role: Nitrogen source; Properties: Defined component, Organic compound, Simple component
+
+    1.0 g in the source preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".
   term:
     id: CHEBI:64220
     label: monosodium glutamate
   mediaingredientmech_chebi_term:
     id: CHEBI:64220
     label: monosodium glutamate
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Sodium glutamate 1.0 g
+    explanation: |-
+      ingredients[5].concentration: 1.0 g in the source preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Sodium glutamate 1.0 g
+      ingredients[5].notes: 1.0 g in the source preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+    explanation: 'ingredients[5].concentration: 1.0 g in the source preparation brought
+      to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.'
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M959
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Sodium glutamate",
+                "volume": 1,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001094",
+                "gmo_id": "GMO_001094",
+                "label": "Sodium glutamate",
+                "properties": [
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000041",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000041",
+                    "label": "Organic compound"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000062",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000062",
+                    "label": "Nitrogen source"
+                  }
+                ]
+              }
+    explanation: 'ingredients[5].concentration: 1.0 g in the source preparation brought
+      to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:37.031499+00:00; source SHA256=c8aa8b4deef34b5aa064288de31b8be945a28ecaee4a03889b5891c53c406495.'
 - preferred_term: Trisodium citrate
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  notes: |-
+    Role: Buffer; Properties: Defined component, Organic compound, Simple component
+
+    3.0 g in the source preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".
   term:
     id: CHEBI:53258
     label: sodium citrate
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
     label: sodium citrate
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Trisodium citrate 3.0 g
+    explanation: |-
+      ingredients[6].concentration: 3.0 g in the source preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Trisodium citrate 3.0 g
+      ingredients[6].notes: 3.0 g in the source preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+    explanation: 'ingredients[6].concentration: 3.0 g in the source preparation brought
+      to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.'
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M959
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Trisodium citrate",
+                "volume": 3,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001160",
+                "gmo_id": "GMO_001160",
+                "label": "Trisodium citrate",
+                "properties": [
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000041",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000041",
+                    "label": "Organic compound"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000038",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000038",
+                    "label": "Buffer"
+                  }
+                ]
+              }
+    explanation: 'ingredients[6].concentration: 3.0 g in the source preparation brought
+      to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:37.031499+00:00; source SHA256=c8aa8b4deef34b5aa064288de31b8be945a28ecaee4a03889b5891c53c406495.'
 - preferred_term: FeCl2・4H2O
   concentration:
     value: '36'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+    unit: MG_PER_L
+  notes: |-
+    Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component
+
+    36.0 mg in the source preparation brought to 1.0 L gives 36 MG_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".
   term:
     id: CHEBI:86249
     label: iron dichloride tetrahydrate
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: FeCl2·4H2O 36.0 mg
+    explanation: |-
+      ingredients[7].concentration: 36.0 mg in the source preparation brought to 1.0 L gives 36 MG_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: FeCl2·4H2O 36.0 mg
+      ingredients[7].notes: 36.0 mg in the source preparation brought to 1.0 L gives 36 MG_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+    explanation: 'ingredients[7].concentration: 36.0 mg in the source preparation
+      brought to 1.0 L gives 36 MG_PER_L. Separate exact volume excerpt: "Add components
+      to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.'
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M959
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "FeCl2・4H2O",
+                "volume": 36,
+                "unit": "mg",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001548",
+                "gmo_id": "GMO_001548",
+                "label": "Iron(II) chloride tetrahydrate",
+                "properties": [
+                  {
+                    "id": "GMO_000046",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                    "label": "Defined component"
+                  },
+                  {
+                    "id": "GMO_000040",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                    "label": "Inorganic compound"
+                  },
+                  {
+                    "id": "GMO_000049",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                    "label": "Simple component"
+                  }
+                ],
+                "roles": [
+                  {
+                    "id": "GMO_000078",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000078",
+                    "label": "Mineral source"
+                  }
+                ]
+              }
+    explanation: 'ingredients[7].concentration: 36.0 mg in the source preparation
+      brought to 1.0 L gives 36 MG_PER_L. Separate exact volume excerpt: "Add components
+      to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:37.031499+00:00; source SHA256=c8aa8b4deef34b5aa064288de31b8be945a28ecaee4a03889b5891c53c406495.'
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  notes: |-
+    Properties: Undefined component
+
+    5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Yeast extract (BD-Difco) 5.0 g
+    explanation: |-
+      ingredients[8].concentration: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Yeast extract (BD-Difco) 5.0 g
+      ingredients[8].notes: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+    explanation: 'ingredients[8].concentration: 5.0 g in the source preparation brought
+      to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.'
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M959
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Yeast extract (BD-Difco)",
+                "volume": 5,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001018",
+                "gmo_id": "GMO_001018",
+                "label": "Bacto &trade; Yeast extract",
+                "properties": [
+                  {
+                    "id": "GMO_000047",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000047",
+                    "label": "Undefined component"
+                  }
+                ],
+                "roles": []
+              }
+    explanation: 'ingredients[8].concentration: 5.0 g in the source preparation brought
+      to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:37.031499+00:00; source SHA256=c8aa8b4deef34b5aa064288de31b8be945a28ecaee4a03889b5891c53c406495.'
 - preferred_term: Casamino acids (BD-Difco)
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  notes: |-
+    Properties: Undefined component
+
+    5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+    supports: SUPPORT
+    snippet: Casamino acids (BD-Difco) 5.0 g
+    explanation: |-
+      ingredients[9].concentration: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+      Additional exact excerpt: Casamino acids (BD-Difco) 5.0 g
+      ingredients[9].notes: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
+    supports: SUPPORT
+    snippet: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+    explanation: 'ingredients[9].concentration: 5.0 g in the source preparation brought
+      to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.'
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M959
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Casamino acids (BD-Difco)",
+                "volume": 5,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001705",
+                "gmo_id": "GMO_001705",
+                "label": "Bacto &trade; Casamino acids",
+                "properties": [
+                  {
+                    "id": "GMO_000047",
+                    "uri": "http://purl.jp/bio/10/gmo/GMO_000047",
+                    "label": "Undefined component"
+                  }
+                ],
+                "roles": []
+              }
+    explanation: 'ingredients[9].concentration: 5.0 g in the source preparation brought
+      to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to
+      distilled water and bring volume to 1.0 L.". Exact captured recipe row/instruction;
+      accessed=2026-10-09T13:07:37.031499+00:00; source SHA256=c8aa8b4deef34b5aa064288de31b8be945a28ecaee4a03889b5891c53c406495.'
 media_term:
   preferred_term: TOGO Medium M959
   term:
     id: TOGO:M959
     label: Halobacteria Medium With 15% NaCl
-notes: 'Source: https://togomedium.org/medium/M959
-
+notes: |-
+  Source: https://togomedium.org/medium/M959
   Original source: JCM - JCM_M914
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
 
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914'
+  Ingredient amounts use the exact formulation and preparation stage. Separate preparation excerpt: "Add components to distilled water and bring volume to 1.0 L.". Conditional solid option: "For preparation of solid medium, add 20.0 g/L agar.". Agar is included only in M372/M960 in this reviewed variant cohort; no step ordering is invented.
 applications:
 - Microbial cultivation
 curation_history:
@@ -148,15 +690,119 @@ curation_history:
   notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
     magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
     labels untouched.
+- timestamp: '2026-10-09T14:23:51.976655+00:00'
+  curator: codex
+  action: CURATED_HALOBACTERIA_VARIANT_CONCENTRATIONS_AND_PREPARATION_STAGES
+  notes: Source-specific ingredient and variant review. Every change has an exact
+    PURL-backed excerpt. Prepared-base quantities, unquantified water/titrant, source
+    limitations, chemical identities and prior history are preserved; no taxa-media
+    assertions are added.
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914;
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M959
+  changes: |-
+    ingredients[0].concentration: {'value': '1', 'unit': 'G_PER_L'} -> None; ingredients[0].notes: Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component -> Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component
+
+    Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported.; ingredients[0].concentration: {'value': '1', 'unit': 'G_PER_L'} -> None; ingredients[0].concentration: {'value': '1', 'unit': 'G_PER_L'} -> None; ingredients[1].notes: Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component -> Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component
+
+    20.0 g in the source preparation brought to 1.0 L gives 20 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".; ingredients[2].notes: Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound -> Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound
+
+    Use the recipe-specific final formulation, not the copied base amount. The source explicitly gives this final g/L target.; ingredients[3].notes: Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component -> Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component
+
+    2.0 g in the source preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".; ingredients[4].concentration: {'value': '0.36', 'unit': 'G_PER_L'} -> {'value': '0.36', 'unit': 'MG_PER_L'}; ingredients[4].notes: Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component -> Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component
+
+    0.36 mg in the source preparation brought to 1.0 L gives 0.36 MG_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".; ingredients[4].concentration: {'value': '0.36', 'unit': 'G_PER_L'} -> {'value': '0.36', 'unit': 'MG_PER_L'}; ingredients[4].concentration: {'value': '0.36', 'unit': 'G_PER_L'} -> {'value': '0.36', 'unit': 'MG_PER_L'}; ingredients[5].notes: Role: Nitrogen source; Properties: Defined component, Organic compound, Simple component -> Role: Nitrogen source; Properties: Defined component, Organic compound, Simple component
+
+    1.0 g in the source preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".; ingredients[6].notes: Role: Buffer; Properties: Defined component, Organic compound, Simple component -> Role: Buffer; Properties: Defined component, Organic compound, Simple component
+
+    3.0 g in the source preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".; ingredients[7].concentration: {'value': '36', 'unit': 'G_PER_L'} -> {'value': '36', 'unit': 'MG_PER_L'}; ingredients[7].notes: Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component -> Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component
+
+    36.0 mg in the source preparation brought to 1.0 L gives 36 MG_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".; ingredients[7].concentration: {'value': '36', 'unit': 'G_PER_L'} -> {'value': '36', 'unit': 'MG_PER_L'}; ingredients[7].concentration: {'value': '36', 'unit': 'G_PER_L'} -> {'value': '36', 'unit': 'MG_PER_L'}; ingredients[8].notes: Properties: Undefined component -> Properties: Undefined component
+
+    5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".; ingredients[9].notes: Properties: Undefined component -> Properties: Undefined component
+
+    5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.".; ph_range: None -> {'min': 7.0, 'max': 7.2}; notes: Source: https://togomedium.org/medium/M959
+    Original source: JCM - JCM_M914
+    Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914 -> Source: https://togomedium.org/medium/M959
+    Original source: JCM - JCM_M914
+    Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
+
+    Ingredient amounts use the exact formulation and preparation stage. Separate preparation excerpt: "Add components to distilled water and bring volume to 1.0 L.". Conditional solid option: "For preparation of solid medium, add 20.0 g/L agar.". Agar is included only in M372/M960 in this reviewed variant cohort; no step ordering is invented.; notes: Source: https://togomedium.org/medium/M959
+    Original source: JCM - JCM_M914
+    Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914 -> Source: https://togomedium.org/medium/M959
+    Original source: JCM - JCM_M914
+    Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
+
+    Ingredient amounts use the exact formulation and preparation stage. Separate preparation excerpt: "Add components to distilled water and bring volume to 1.0 L.". Conditional solid option: "For preparation of solid medium, add 20.0 g/L agar.". Agar is included only in M372/M960 in this reviewed variant cohort; no step ordering is invented.; parent_media: {'path': 'data/normalized_yaml/bacterial/TOGO_M159_Halobacteria_Medium.yaml', 'relationship': 'SALINITY_VARIANT', 'id': 'CultureMech:008151', 'name': 'halobacteria_medium', 'notes': 'Reviewed TOGO liquid Halobacteria salinity pair; 15% NaCl record differs only in NaCl concentration.'} -> {'path': 'data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml', 'relationship': 'SALINITY_VARIANT', 'id': 'CultureMech:008151', 'name': 'halobacteria_medium', 'notes': "The recipe changes NaCl from the referenced base's 200 g/L to 150 g/L. Retain the reviewed liquid/solid distinction and source-explicit agar option; correct exact tracked paths."}; variant_modifications: ['NaCl decreased from 200 g/L to 150 g/L while the TOGO liquid Halobacteria medium formulation remains unchanged.'] -> ["The recipe changes NaCl from the referenced base's 200 g/L to 150 g/L. Retain the reviewed liquid/solid distinction and source-explicit agar option; correct exact tracked paths."]; parent_media: {'path': 'data/normalized_yaml/bacterial/TOGO_M159_Halobacteria_Medium.yaml', 'relationship': 'SALINITY_VARIANT', 'id': 'CultureMech:008151', 'name': 'halobacteria_medium', 'notes': 'Reviewed TOGO liquid Halobacteria salinity pair; 15% NaCl record differs only in NaCl concentration.'} -> {'path': 'data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml', 'relationship': 'SALINITY_VARIANT', 'id': 'CultureMech:008151', 'name': 'halobacteria_medium', 'notes': "The recipe changes NaCl from the referenced base's 200 g/L to 150 g/L. Retain the reviewed liquid/solid distinction and source-explicit agar option; correct exact tracked paths."}; parent_media: {'path': 'data/normalized_yaml/bacterial/TOGO_M159_Halobacteria_Medium.yaml', 'relationship': 'SALINITY_VARIANT', 'id': 'CultureMech:008151', 'name': 'halobacteria_medium', 'notes': 'Reviewed TOGO liquid Halobacteria salinity pair; 15% NaCl record differs only in NaCl concentration.'} -> {'path': 'data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml', 'relationship': 'SALINITY_VARIANT', 'id': 'CultureMech:008151', 'name': 'halobacteria_medium', 'notes': "The recipe changes NaCl from the referenced base's 200 g/L to 150 g/L. Retain the reviewed liquid/solid distinction and source-explicit agar option; correct exact tracked paths."}
 high_metal: true
 parent_media:
-  path: data/normalized_yaml/bacterial/TOGO_M159_Halobacteria_Medium.yaml
+  path: data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:008151
   name: halobacteria_medium
-  notes: Reviewed TOGO liquid Halobacteria salinity pair; 15% NaCl record differs
-    only in NaCl concentration.
+  notes: The recipe changes NaCl from the referenced base's 200 g/L to 150 g/L. Retain
+    the reviewed liquid/solid distinction and source-explicit agar option; correct
+    exact tracked paths.
 variant_relationship: SALINITY_VARIANT
 variant_modifications:
-- NaCl decreased from 200 g/L to 150 g/L while the TOGO liquid Halobacteria medium
-  formulation remains unchanged.
+- The recipe changes NaCl from the referenced base's 200 g/L to 150 g/L. Retain the
+  reviewed liquid/solid distinction and source-explicit agar option; correct exact
+  tracked paths.
+ph_range:
+  min: 7.0
+  max: 7.2
+evidence:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+  supports: SUPPORT
+  snippet: Adjust pH to 7.0-7.2.
+  explanation: |-
+    ph_range: Source-explicit base pH range retained by this formulation. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+    Additional exact excerpt: Add components to distilled water and bring volume to 1.0 L.
+    notes: Ingredient amounts use the exact formulation and preparation stage. Separate preparation excerpt: "Add components to distilled water and bring volume to 1.0 L.". Conditional solid option: "For preparation of solid medium, add 20.0 g/L agar.". Agar is included only in M372/M960 in this reviewed variant cohort; no step ordering is invented. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+    Additional exact excerpt: NaCl 200.0 g
+    parent_media: The recipe changes NaCl from the referenced base's 200 g/L to 150 g/L. Retain the reviewed liquid/solid distinction and source-explicit agar option; correct exact tracked paths. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
+  supports: SUPPORT
+  snippet: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+  explanation: |-
+    notes: Ingredient amounts use the exact formulation and preparation stage. Separate preparation excerpt: "Add components to distilled water and bring volume to 1.0 L.". Conditional solid option: "For preparation of solid medium, add 20.0 g/L agar.". Agar is included only in M372/M960 in this reviewed variant cohort; no step ordering is invented. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.
+
+    Additional exact excerpt: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+    parent_media: The recipe changes NaCl from the referenced base's 200 g/L to 150 g/L. Retain the reviewed liquid/solid distinction and source-explicit agar option; correct exact tracked paths. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.
+
+    Additional exact excerpt: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+    variant_relationship: The recipe changes NaCl from the referenced base's 200 g/L to 150 g/L. Retain the reviewed liquid/solid distinction and source-explicit agar option; correct exact tracked paths. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.
+
+    Additional exact excerpt: Use Medium No. 168 with 150.0 g/L (final) NaCl.
+    variant_modifications: The recipe changes NaCl from the referenced base's 200 g/L to 150 g/L. Retain the reviewed liquid/solid distinction and source-explicit agar option; correct exact tracked paths. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:28.892808+00:00; source SHA256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M959
+  supports: SUPPORT
+  snippet: |-
+    {
+        "gm": "http://togomedium.org/medium/M959",
+        "name": "Halobacteria Medium With 15% NaCl",
+        "original_media_id": "JCM_M914",
+        "src_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914"
+      }
+  explanation: 'parent_media: The recipe changes NaCl from the referenced base''s
+    200 g/L to 150 g/L. Retain the reviewed liquid/solid distinction and source-explicit
+    agar option; correct exact tracked paths. TOGO identifies JCM as the original
+    source, not NBRC. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:37.031499+00:00;
+    source SHA256=c8aa8b4deef34b5aa064288de31b8be945a28ecaee4a03889b5891c53c406495.'
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    accession=J168; response_sha256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+    Authors/year are not supplied; no publication year or DOI is invented.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    accession=J914; response_sha256=ab4c988225409e9022465a888ec90d3483ad7f1eddbeced2da5adaa4ca1d7d61.
+    Authors/year are not supplied; no publication year or DOI is invented.
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M959
+  title: Halobacteria Medium With 15% NaCl
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    accession=M959; response_sha256=c8aa8b4deef34b5aa064288de31b8be945a28ecaee4a03889b5891c53c406495.
+    Authors/year are not supplied; no publication year or DOI is invented.

@@ -1,0 +1,24 @@
+{
+  "terminal": true,
+  "keys": [
+    "D751",
+    "K751"
+  ],
+  "compared_fields": [
+    "ingredients",
+    "solutions",
+    "ph_value",
+    "physical_state",
+    "preparation_steps",
+    "variants",
+    "references",
+    "evidence"
+  ],
+  "all_fields_exactly_equal": true,
+  "reciprocal_links_valid": true,
+  "records": {
+    "data/normalized_yaml/bacterial/sc_medium.yaml": "458e98d500f7ea402604afad6ec1503da85104507901e96479b51a429a81372a",
+    "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml": "a1d63c31c3045012ec21bf7216b5f20713d1897c89c3a536f5ebd3b36d28fc72"
+  },
+  "scope": "SC source-duplicate pair only; no source-wrapper merge performed."
+}

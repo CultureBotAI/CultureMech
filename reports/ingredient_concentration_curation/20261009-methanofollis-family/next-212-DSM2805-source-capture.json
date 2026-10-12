@@ -1,0 +1,39 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "review_complete": false,
+  "normalized_sha256": "3e69263bb0c82e782c51c5a994945630fbf3a3b9f685248e16d7daf3367f05fc",
+  "sources": {
+    "BacDive16667": {
+      "url": "https://bacdive.dsmz.de/strain/16667",
+      "response_url": "https://bacdive.dsmz.de/strain/16667",
+      "http_status": 200,
+      "accessed_at": "2026-10-09T10:15:16.693061+00:00",
+      "path": "references_cache/ingredient-212-next/BacDive16667.html",
+      "sha256": "bcb8868161b15dba1a35748000e2a2f1194577523010c49f5688076c20edc059",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Syntrophobacter wolinii DB | Type strain |  DSM 2805 | BacDiveID:16667"
+    },
+    "DSM2805": {
+      "url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-2805",
+      "response_url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-2805",
+      "http_status": 200,
+      "accessed_at": "2026-10-09T10:15:17.809098+00:00",
+      "path": "references_cache/ingredient-212-next/DSM2805.html",
+      "sha256": "14061e818ada93a4ce4a1a63d5bb77d9866adc2f636574ef27f712840f469f03",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Details - Leibniz Institute DSMZ"
+    }
+  },
+  "errors": [],
+  "redirects": [
+    {
+      "key": "DOI16667",
+      "url": "https://doi.org/10.13145/bacdive16667.20260601.11",
+      "accessed_at": "2026-10-09T10:15:19.609067+00:00",
+      "http_status": 302,
+      "location": "https://bacdive.dsmz.de/index.php?site=pdf_view&id=16667&doi=doi:10.13145/bacdive16667.20260601.11"
+    }
+  ],
+  "limits": "Source access and raw capture only; no ingredient, taxonomy or growth claim is applied."
+}

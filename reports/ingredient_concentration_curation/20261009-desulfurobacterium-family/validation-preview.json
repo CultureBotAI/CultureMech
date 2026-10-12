@@ -1,0 +1,155 @@
+{
+  "terminal": true,
+  "state": "Validated fourteen-record successor preview; no normalized YAML applied. All-record goal remains active.",
+  "reviewed_commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+  "context_sha256": "ef9c0aa87ab3f6b939c9b088337f801601151ba34e0797406b69bb038a29a0be",
+  "plan_path": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/plan-v2.json",
+  "plan_sha256": "8452f7a0ffa1de24471cac81be183e7eb5deddfa26c4b03578ada91040181a1f",
+  "superseded_plan_sha256": "c7c09669520bf85485f7424800f8c02c40535d1024ef8e66ac93f98e67324f07",
+  "superseded_reference_failure_sha256": "ff0fa54038b658cd8d0819332deafc555437924f2dc2f0e15045a6133079d068",
+  "successor_comparison": [
+    {
+      "key": "K829",
+      "changed_roots_excluding_new_event": []
+    },
+    {
+      "key": "K829a",
+      "changed_roots_excluding_new_event": []
+    },
+    {
+      "key": "D829a",
+      "changed_roots_excluding_new_event": []
+    },
+    {
+      "key": "D829c",
+      "changed_roots_excluding_new_event": []
+    },
+    {
+      "key": "D829d",
+      "changed_roots_excluding_new_event": []
+    },
+    {
+      "key": "D829",
+      "changed_roots_excluding_new_event": []
+    },
+    {
+      "key": "K829.1",
+      "changed_roots_excluding_new_event": []
+    },
+    {
+      "key": "K829.2",
+      "changed_roots_excluding_new_event": []
+    },
+    {
+      "key": "K829.3",
+      "changed_roots_excluding_new_event": []
+    },
+    {
+      "key": "K829_16661",
+      "changed_roots_excluding_new_event": []
+    },
+    {
+      "key": "D829b",
+      "changed_roots_excluding_new_event": []
+    },
+    {
+      "key": "M2587",
+      "changed_roots_excluding_new_event": []
+    },
+    {
+      "key": "K2027",
+      "changed_roots_excluding_new_event": []
+    },
+    {
+      "key": "S1680",
+      "changed_roots_excluding_new_event": [
+        "composition",
+        "references"
+      ]
+    }
+  ],
+  "code_sha256": {
+    "scripts/repair_desulfurobacterium_family.py": "9701fcf22247d766000992718d3c553430a851d1031f80db0a30d6b3aee345cc",
+    "tests/test_desulfurobacterium_family.py": "358fbcf8308047c1c628ff651587c393c21dc242e5cdf1a189caa8749b38f900",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/audit.py": "f4abf7280174baaf9a1e967a99f1dd1fdbdb11aec4f35da2e750dfd856b73eb8",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/review_solution_concentration_evidence.py": "40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "scripts/validate_recipe_references.py": "087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/curate/curation_event.py": "e8aa053ba6dd06485b29ca5da640f91ef96513feff18492a72adc12f40130024",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a",
+    "src/culturemech/merge/formulation.py": "985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab",
+    "src/culturemech/merge/merger.py": "b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6",
+    "src/culturemech/merge/matcher.py": "5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885",
+    "src/culturemech/merge/fingerprint.py": "9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e"
+  },
+  "receipt_sha256": {
+    "focused-v2": "897356df5dcff13f6011202525af9fed82d0112e0fb17bb2a1feab81ff7fc811",
+    "cached-v2": "2045235de7530c461bea5bf657960d06c9b16b6bff9f4c760b54c4c65d47808c",
+    "audit": "03ad3771a28aca6eb42d19240a15a5ea045b291a0bab698f1dc1dbfba0e7a952",
+    "ledgers": "25df64f01ed523975f46eed6585f400b60daf6789055bc0c279cc9a98b655a69",
+    "presentation-preview": "4254b997a96256bc6e9ae83d9f3965a958b05f0e91194386f31d6e0080c7d50b",
+    "next-title-prefix-candidates": "e4d9b667abd1ab2046e56054d5671f2717d1db79d7fd5e55ec3fe7be1a92fb5d"
+  },
+  "document_sha256": {
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/README.md": "398defa25dc5937215fa8e491f1c086663960d9e91a3f618db6218bb5f3d5078",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/adversarial-review.md": "817e7f84868090574c581ed790103ec801b413ad9e7addf631a39fc4e17c7257",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/issue-source-conflicts.md": "4aec4d127fd58c831cf8c94f436a76f352125b56c33b886f13bfc71a452a02c4",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/issue-title-prefixes.md": "b3af9f19ea356ddee1d15486fa76ca1851d8949a9a51fb9d6771c228f270611a",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/next-work.md": "d3ada55ac120d7e819843944fe2a0d1533c2186456d28d310439f2628ae05e5d",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/records/K829.md": "185035953ae6fe571089ef8a31432eadeabc420c7c3aeaa346c4416cf5d05d36",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/records/K829a.md": "4ac7ee3dfead6fdb65da131250be0bd33c2d20c62c9355d62e3ae71435a179f6",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/records/D829a.md": "352b84b3f6105874e7da1cf5e6bbd6695e1ec642766988d01a180b1f731c2ee6",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/records/D829c.md": "9223240a3db2fcf04839be1ccbc409d4fed15158244ffbdcf1c12b2ca4e97bc4",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/records/D829d.md": "12a0e4401654195507761a01f644c4d906f022fd030dbc2c6d5305bcf1a31f88",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/records/D829.md": "d3551bf1837ae94edea16c5ff17370395897892fca75d6cb54065f920c49ba4a",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/records/K829.1.md": "6ae2bda656c8fcaad6e6ba596fc5ab0be877e64cefd0508cd215f7488e7aa520",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/records/K829.2.md": "af1826803f6169fbf7d328485af1683e3b9adc1de5c42b6f681257b8334bb5fd",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/records/K829.3.md": "1cf95ebea765154f11a8c9c580c6935e8ed2d8ae9733a9ed0ef4d97b8b1d73ad",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/records/K829_16661.md": "ef2b6723af5fe38f052dda81e07080fd2c4f371a907b65e6096ba4a646cac79b",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/records/D829b.md": "5be0c7be404c9cdd0343a45f41580221bcb95867f7259a004e4164475c5add72",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/records/M2587.md": "710c4cce2e5e99f6810049b34ef61656526114cf36470fb4ab9be673d164bfa1",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/records/K2027.md": "4b28e8e65ef0b59abe51c6ef35ad9a3d9a8a471b45086938925f5f7cbc90e9b9",
+    "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/records/S1680.md": "350248b11ba1ff93021cf87402f2df551a32a34f6c8be0332ed9f309af4e721a"
+  },
+  "full_corpus_unchanged": {
+    "count": 15910,
+    "sha256": "db8f5426f9aade2d77f947de6f5c4a756f3ed214bede448fbb31d273085da30f"
+  },
+  "records": 14,
+  "proposal_counts_not_applied": {
+    "source_nodes": 447,
+    "old_quantity_slots": 416,
+    "old_candidate_slots": 8,
+    "claims": 2067,
+    "new_evidence": 621,
+    "new_references": 32,
+    "new_curation_history": 14
+  },
+  "reference_checks": {
+    "total": 661,
+    "passed": 661
+  },
+  "reference_validation_mode": "Offline, hash-verified captures; not a new live refresh",
+  "test_summary": "930 passed, 2 warnings in 206.95s (0:03:26)",
+  "baseline_commands": 28,
+  "unchanged_root_text_spans": 137,
+  "prior_history_text_spans": 146,
+  "prior_acid_text_spans": 6,
+  "title_prefix_candidate_paths_not_confirmed_errors": 4867,
+  "applied_records": 0,
+  "new_taxa_media_associations": 0,
+  "runtime": "Existing partial locked Python 3.13 environment, not clean CI or complete-suite validation",
+  "remaining": [
+    "Guarded all-fourteen application/readback/no-op",
+    "Post-edit record and full-corpus validation",
+    "Index refresh, global merge retention, verification and freshness",
+    "Fast test tier and cumulative/canonical-report reconciliation",
+    "All remaining normalized ingredient records and source-title candidates",
+    "Publication separately unfinished"
+  ]
+}

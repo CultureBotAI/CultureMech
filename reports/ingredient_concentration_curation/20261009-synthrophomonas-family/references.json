@@ -1,0 +1,21 @@
+{
+  "terminal": true,
+  "phase": "references",
+  "records_applied": 0,
+  "checks": [],
+  "errors": [
+    "AssertionError: Network disabled for captured-source verification"
+  ],
+  "code_sha256": {
+    "scripts/repair_synthrophomonas_family.py": "76d17c072395868ef670d923fecc40090c3f6a31681d6901002ad8127bfcc54c",
+    "tests/test_synthrophomonas_family.py": "3671184eedb05cb9acd02cfdabdbf87d121408154fbd06f141e5e6ca49b2a1df",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/audit.py": "d846b22a482acc9d91e989fc1e392247a8c97e55471b34daaa2d575c21a6956f"
+  },
+  "plan_sha256": "83fdebb5c629773b4b0ec2c5b810a66dc226602ab0df9aed0728eba35a14276d",
+  "context_sha256": "1d9b09a2915e57c4f212f1de08bb1a5ada6b2a4b8a47b6b6c5d528d00250e84a",
+  "inventory_before": "3e69263bb0c82e782c51c5a994945630fbf3a3b9f685248e16d7daf3367f05fc",
+  "ignored_files_included": true,
+  "sources": {},
+  "records": {},
+  "all_checks_passed": false
+}

@@ -1,0 +1,399 @@
+{
+  "version": 1,
+  "commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+  "created_at": "2026-10-07T17:04:47.759246+00:00",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/king_b.yaml",
+      "id": "CultureMech:010433",
+      "name": "king_b",
+      "before_sha256": "4a2776ae69ffc1e5945dfdaa962c97044f6851632af4277fd57f37107d736eb0",
+      "medium_id": "P3",
+      "after_sha256": "ea94965d62553deb3b368aa5494b43313684466aa10cf230ecf8e23d3ec12c94",
+      "source_sha256": "b99db3eb162a4d9c72f25e7dd1344cea05d9ddd41b89a5ebb18a9261365d97d1",
+      "claims": [
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "K2HPO4",
+          "old": {
+            "value": "1.5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1.5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P3",
+          "snippet": "K2HPO4 1.5 g 1.5 8.612",
+          "locator": "sol-0 / recipe-0",
+          "explanation": "Supports ingredients[0].concentration (K2HPO4) only; locator: sol-0 / recipe-0. User-contributed dataset formulation, not a verified sterilization/makeup protocol. Table columns are Compound, Amount, Unit, Conc. [g/L], Conc. [mM]; the main-sol-vol value/data-volume both declare 1000 and the adjacent unit is ml. No molarity is asserted from the calculated mM column. The existing mass rate matches the source's g/L column exactly. Accessed 2026-10-07; source capture hashes: {\"P3-medium-page.html\": \"5ef4a1c49d241bfd226d2b343c94f3693832d3f93b29ab9ed5b976febc449e1b\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1
+          ],
+          "field": "ingredients[1].concentration",
+          "ingredient": "MgSO4 x 7 H2O",
+          "old": {
+            "value": "1.5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1.5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P3",
+          "snippet": "MgSO4 x 7 H2O 1.5 g 1.5 6.086",
+          "locator": "sol-0 / recipe-1",
+          "explanation": "Supports ingredients[1].concentration (MgSO4 x 7 H2O) only; locator: sol-0 / recipe-1. User-contributed dataset formulation, not a verified sterilization/makeup protocol. Table columns are Compound, Amount, Unit, Conc. [g/L], Conc. [mM]; the main-sol-vol value/data-volume both declare 1000 and the adjacent unit is ml. No molarity is asserted from the calculated mM column. The existing mass rate matches the source's g/L column exactly. Accessed 2026-10-07; source capture hashes: {\"P3-medium-page.html\": \"5ef4a1c49d241bfd226d2b343c94f3693832d3f93b29ab9ed5b976febc449e1b\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            2
+          ],
+          "field": "ingredients[2].concentration",
+          "ingredient": "Proteose peptone no. 3",
+          "old": {
+            "value": "20",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "20",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P3",
+          "snippet": "Proteose peptone no. 3 20.0 g 20 -",
+          "locator": "sol-0 / recipe-2",
+          "explanation": "Supports ingredients[2].concentration (Proteose peptone no. 3) only; locator: sol-0 / recipe-2. User-contributed dataset formulation, not a verified sterilization/makeup protocol. Table columns are Compound, Amount, Unit, Conc. [g/L], Conc. [mM]; the main-sol-vol value/data-volume both declare 1000 and the adjacent unit is ml. No molarity is asserted from the calculated mM column. The existing mass rate matches the source's g/L column exactly. Accessed 2026-10-07; source capture hashes: {\"P3-medium-page.html\": \"5ef4a1c49d241bfd226d2b343c94f3693832d3f93b29ab9ed5b976febc449e1b\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            3
+          ],
+          "field": "ingredients[3].concentration",
+          "ingredient": "Glycerol",
+          "old": {
+            "value": "10",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "10",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P3",
+          "snippet": "Glycerol 10.0 ml - -",
+          "locator": "sol-0 / recipe-3",
+          "explanation": "Supports ingredients[3].concentration (Glycerol) only; locator: sol-0 / recipe-3. User-contributed dataset formulation, not a verified sterilization/makeup protocol. Table columns are Compound, Amount, Unit, Conc. [g/L], Conc. [mM]; the main-sol-vol value/data-volume both declare 1000 and the adjacent unit is ml. No molarity is asserted from the calculated mM column. The 10 ml glycerol amount / declared 1 L recipe scale = 10 ML_PER_L; no density or mass conversion is made. Accessed 2026-10-07; source capture hashes: {\"P3-medium-page.html\": \"5ef4a1c49d241bfd226d2b343c94f3693832d3f93b29ab9ed5b976febc449e1b\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            4
+          ],
+          "field": "ingredients[4].concentration",
+          "ingredient": "Agar",
+          "old": {
+            "value": "15",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "15",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P3",
+          "snippet": "Agar 15.0 g 15 -",
+          "locator": "sol-0 / recipe-4",
+          "explanation": "Supports ingredients[4].concentration (Agar) only; locator: sol-0 / recipe-4. User-contributed dataset formulation, not a verified sterilization/makeup protocol. Table columns are Compound, Amount, Unit, Conc. [g/L], Conc. [mM]; the main-sol-vol value/data-volume both declare 1000 and the adjacent unit is ml. No molarity is asserted from the calculated mM column. The existing mass rate matches the source's g/L column exactly. Accessed 2026-10-07; source capture hashes: {\"P3-medium-page.html\": \"5ef4a1c49d241bfd226d2b343c94f3693832d3f93b29ab9ed5b976febc449e1b\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        }
+      ],
+      "baseline_errors": [],
+      "post_errors": [],
+      "failure": null,
+      "merge_fingerprint_unchanged": true,
+      "source_accessed_at": "2026-10-07",
+      "before_text": "id: CultureMech:010433\nname: king_b\noriginal_name: King B\ncategory: bacterial\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: SOLID_AGAR\nph_value: 7.2\nmedia_term:\n  preferred_term: public Medium P3\n  term:\n    id: mediadive.medium:P3\n    label: King B\nnotes: MediaDive public Medium P3 provides King B as a 1 L solid agar recipe at pH\n  7.2.\ningredients:\n- preferred_term: K2HPO4\n  concentration:\n    value: '1.5'\n    unit: G_PER_L\n  source: MediaDive public Medium P3\n  term:\n    id: CHEBI:131527\n    label: dipotassium hydrogen phosphate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:131527\n    label: dipotassium hydrogen phosphate\n- preferred_term: MgSO4 x 7 H2O\n  concentration:\n    value: '1.5'\n    unit: G_PER_L\n  source: MediaDive public Medium P3\n  term:\n    id: CHEBI:31795\n    label: magnesium sulfate heptahydrate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:31795\n    label: magnesium sulfate heptahydrate\n- preferred_term: Proteose peptone no. 3\n  concentration:\n    value: '20'\n    unit: G_PER_L\n  source: MediaDive public Medium P3\n  term:\n    id: MICRO:0000180\n    label: proteose peptone\n- preferred_term: Glycerol\n  concentration:\n    value: '10'\n    unit: ML_PER_L\n  source: MediaDive public Medium P3\n  term:\n    id: CHEBI:17754\n    label: glycerol\n  mediaingredientmech_chebi_term:\n    id: CHEBI:17754\n    label: glycerol\n- preferred_term: Agar\n  concentration:\n    value: '15'\n    unit: G_PER_L\n  source: MediaDive public Medium P3\n  term:\n    id: CHEBI:2509\n    label: agar\n  mediaingredientmech_chebi_term:\n    id: CHEBI:2509\n    label: agar\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-26T17:53:19.840359Z'\n  curator: mediadive-import\n  action: Imported from MediaDive\n  notes: 'Source: public, ID: P3'\n- timestamp: '2026-02-03T11:27:23.230560'\n  curator: quality-tagger-v1.0\n  action: Added data quality flag\n  notes: Marked as incomplete_composition due to placeholder ingredients\n- timestamp: '2026-03-13T06:20:13.819534Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:010433'\n- timestamp: '2026-03-17T19:46:32.797354+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"King B\" to \"king_b\" for consistent matching\n- timestamp: '2026-08-06T07:56:36.106863+00:00'\n  curator: curate_placeholder_composition.py\n  action: REMOVED_PLACEHOLDER_INGREDIENT\n  notes: Removed the 'See source for composition' placeholder ingredient; the record\n    carries no imported composition and is flagged incomplete (#175).\n  changes: Dropped placeholder ingredient 'See source for composition'\n- timestamp: '2026-09-08T00:00:00-07:00'\n  curator: repair_mediadive_public_score30.py\n  action: RESOLVED_MEDIADIVE_PUBLIC_SCORE30\n  changes: Resolved score-30 public MediaDive placeholder graph\n  source: https://www.bacmedia.dsmz.de/medium/P3\n  notes: MediaDive public Medium P3 provides King B as a 1 L solid agar recipe at\n    pH 7.2.\ndata_quality_flags:\n- ingredients_curated\n- has_ontology_mappings\nreferences:\n- reference: https://www.bacmedia.dsmz.de/medium/P3\n"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mta10.yaml",
+      "id": "CultureMech:010436",
+      "name": "mta10",
+      "before_sha256": "38a4d4634f878024c47e9c981c3ac7858883f6596c1a037e9c576148751b7c76",
+      "medium_id": "P6",
+      "after_sha256": "574c73dad2345094db3b826510cf1385607e16a4d3b3e53e4e324160c8c71c14",
+      "source_sha256": "18320400c8e8fd2dcf174e7851964b71afed6a560c1e1b3a9d00a15598980b41",
+      "claims": [
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "Tryptose",
+          "old": {
+            "value": "10",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "10",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P6",
+          "snippet": "Tryptose 10.0 g 10 -",
+          "locator": "sol-0 / recipe-0",
+          "explanation": "Supports ingredients[0].concentration (Tryptose) only; locator: sol-0 / recipe-0. User-contributed dataset formulation, not a verified sterilization/makeup protocol. Table columns are Compound, Amount, Unit, Conc. [g/L], Conc. [mM]; the main-sol-vol value/data-volume both declare 1000 and the adjacent unit is ml. No molarity is asserted from the calculated mM column. The existing mass rate matches the source's g/L column exactly. Accessed 2026-10-07; source capture hashes: {\"P6-article-PMC7564587.html\": \"4ba4130ab6f9e90804020f94a01f214a23fd3e2b1957d4934a8efefd7a77ffdc\", \"P6-correction-PMC8306464.html\": \"0d478c33c9abef1ebfacffda39f04bb84ff9a5b8394b679e00da89aed9280bf1\", \"P6-medium-page.html\": \"d308ad98c3128738c64a92d2666a8e17202c1f80aaa1ff3f99143c0848b091db\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "Tryptose",
+          "old": {
+            "value": "10",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "10",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "doi:10.3390/microorganisms8091359",
+          "snippet": "10 g/L Tryptose",
+          "locator": "Section 2.2.1, base mTA10 clause",
+          "explanation": "Supports ingredients[0].concentration (Tryptose) only; locator: Section 2.2.1, base mTA10 clause. Directly reported g/L in the base mTA10 clause, independently matching the complete six-ingredient P6 formulation. No MOPS, glucose, supplement, supplier restriction, growth or performance claim is imported. Full text inspected at https://pmc.ncbi.nlm.nih.gov/articles/PMC7564587/; the published correction at https://pmc.ncbi.nlm.nih.gov/articles/PMC8306464/ concerns primer sequences, not this formulation. Accessed 2026-10-07; source capture hashes: {\"P6-article-PMC7564587.html\": \"4ba4130ab6f9e90804020f94a01f214a23fd3e2b1957d4934a8efefd7a77ffdc\", \"P6-correction-PMC8306464.html\": \"0d478c33c9abef1ebfacffda39f04bb84ff9a5b8394b679e00da89aed9280bf1\", \"P6-medium-page.html\": \"d308ad98c3128738c64a92d2666a8e17202c1f80aaa1ff3f99143c0848b091db\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1
+          ],
+          "field": "ingredients[1].concentration",
+          "ingredient": "Beef extract",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P6",
+          "snippet": "Beef extract 5.0 g 5 -",
+          "locator": "sol-0 / recipe-1",
+          "explanation": "Supports ingredients[1].concentration (Beef extract) only; locator: sol-0 / recipe-1. User-contributed dataset formulation, not a verified sterilization/makeup protocol. Table columns are Compound, Amount, Unit, Conc. [g/L], Conc. [mM]; the main-sol-vol value/data-volume both declare 1000 and the adjacent unit is ml. No molarity is asserted from the calculated mM column. The existing mass rate matches the source's g/L column exactly. Accessed 2026-10-07; source capture hashes: {\"P6-article-PMC7564587.html\": \"4ba4130ab6f9e90804020f94a01f214a23fd3e2b1957d4934a8efefd7a77ffdc\", \"P6-correction-PMC8306464.html\": \"0d478c33c9abef1ebfacffda39f04bb84ff9a5b8394b679e00da89aed9280bf1\", \"P6-medium-page.html\": \"d308ad98c3128738c64a92d2666a8e17202c1f80aaa1ff3f99143c0848b091db\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1
+          ],
+          "field": "ingredients[1].concentration",
+          "ingredient": "Beef extract",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "doi:10.3390/microorganisms8091359",
+          "snippet": "5 g/L Beef extract",
+          "locator": "Section 2.2.1, base mTA10 clause",
+          "explanation": "Supports ingredients[1].concentration (Beef extract) only; locator: Section 2.2.1, base mTA10 clause. Directly reported g/L in the base mTA10 clause, independently matching the complete six-ingredient P6 formulation. No MOPS, glucose, supplement, supplier restriction, growth or performance claim is imported. Full text inspected at https://pmc.ncbi.nlm.nih.gov/articles/PMC7564587/; the published correction at https://pmc.ncbi.nlm.nih.gov/articles/PMC8306464/ concerns primer sequences, not this formulation. Accessed 2026-10-07; source capture hashes: {\"P6-article-PMC7564587.html\": \"4ba4130ab6f9e90804020f94a01f214a23fd3e2b1957d4934a8efefd7a77ffdc\", \"P6-correction-PMC8306464.html\": \"0d478c33c9abef1ebfacffda39f04bb84ff9a5b8394b679e00da89aed9280bf1\", \"P6-medium-page.html\": \"d308ad98c3128738c64a92d2666a8e17202c1f80aaa1ff3f99143c0848b091db\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            2
+          ],
+          "field": "ingredients[2].concentration",
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P6",
+          "snippet": "Yeast extract 5.0 g 5 -",
+          "locator": "sol-0 / recipe-2",
+          "explanation": "Supports ingredients[2].concentration (Yeast extract) only; locator: sol-0 / recipe-2. User-contributed dataset formulation, not a verified sterilization/makeup protocol. Table columns are Compound, Amount, Unit, Conc. [g/L], Conc. [mM]; the main-sol-vol value/data-volume both declare 1000 and the adjacent unit is ml. No molarity is asserted from the calculated mM column. The existing mass rate matches the source's g/L column exactly. Accessed 2026-10-07; source capture hashes: {\"P6-article-PMC7564587.html\": \"4ba4130ab6f9e90804020f94a01f214a23fd3e2b1957d4934a8efefd7a77ffdc\", \"P6-correction-PMC8306464.html\": \"0d478c33c9abef1ebfacffda39f04bb84ff9a5b8394b679e00da89aed9280bf1\", \"P6-medium-page.html\": \"d308ad98c3128738c64a92d2666a8e17202c1f80aaa1ff3f99143c0848b091db\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            2
+          ],
+          "field": "ingredients[2].concentration",
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "doi:10.3390/microorganisms8091359",
+          "snippet": "5 g/L Yeast extract",
+          "locator": "Section 2.2.1, base mTA10 clause",
+          "explanation": "Supports ingredients[2].concentration (Yeast extract) only; locator: Section 2.2.1, base mTA10 clause. Directly reported g/L in the base mTA10 clause, independently matching the complete six-ingredient P6 formulation. No MOPS, glucose, supplement, supplier restriction, growth or performance claim is imported. Full text inspected at https://pmc.ncbi.nlm.nih.gov/articles/PMC7564587/; the published correction at https://pmc.ncbi.nlm.nih.gov/articles/PMC8306464/ concerns primer sequences, not this formulation. Accessed 2026-10-07; source capture hashes: {\"P6-article-PMC7564587.html\": \"4ba4130ab6f9e90804020f94a01f214a23fd3e2b1957d4934a8efefd7a77ffdc\", \"P6-correction-PMC8306464.html\": \"0d478c33c9abef1ebfacffda39f04bb84ff9a5b8394b679e00da89aed9280bf1\", \"P6-medium-page.html\": \"d308ad98c3128738c64a92d2666a8e17202c1f80aaa1ff3f99143c0848b091db\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            3
+          ],
+          "field": "ingredients[3].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P6",
+          "snippet": "NaCl 5.0 g 5 85.558",
+          "locator": "sol-0 / recipe-3",
+          "explanation": "Supports ingredients[3].concentration (NaCl) only; locator: sol-0 / recipe-3. User-contributed dataset formulation, not a verified sterilization/makeup protocol. Table columns are Compound, Amount, Unit, Conc. [g/L], Conc. [mM]; the main-sol-vol value/data-volume both declare 1000 and the adjacent unit is ml. No molarity is asserted from the calculated mM column. The existing mass rate matches the source's g/L column exactly. Accessed 2026-10-07; source capture hashes: {\"P6-article-PMC7564587.html\": \"4ba4130ab6f9e90804020f94a01f214a23fd3e2b1957d4934a8efefd7a77ffdc\", \"P6-correction-PMC8306464.html\": \"0d478c33c9abef1ebfacffda39f04bb84ff9a5b8394b679e00da89aed9280bf1\", \"P6-medium-page.html\": \"d308ad98c3128738c64a92d2666a8e17202c1f80aaa1ff3f99143c0848b091db\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            3
+          ],
+          "field": "ingredients[3].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "doi:10.3390/microorganisms8091359",
+          "snippet": "5 g/L NaCl",
+          "locator": "Section 2.2.1, base mTA10 clause",
+          "explanation": "Supports ingredients[3].concentration (NaCl) only; locator: Section 2.2.1, base mTA10 clause. Directly reported g/L in the base mTA10 clause, independently matching the complete six-ingredient P6 formulation. No MOPS, glucose, supplement, supplier restriction, growth or performance claim is imported. Full text inspected at https://pmc.ncbi.nlm.nih.gov/articles/PMC7564587/; the published correction at https://pmc.ncbi.nlm.nih.gov/articles/PMC8306464/ concerns primer sequences, not this formulation. Accessed 2026-10-07; source capture hashes: {\"P6-article-PMC7564587.html\": \"4ba4130ab6f9e90804020f94a01f214a23fd3e2b1957d4934a8efefd7a77ffdc\", \"P6-correction-PMC8306464.html\": \"0d478c33c9abef1ebfacffda39f04bb84ff9a5b8394b679e00da89aed9280bf1\", \"P6-medium-page.html\": \"d308ad98c3128738c64a92d2666a8e17202c1f80aaa1ff3f99143c0848b091db\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            4
+          ],
+          "field": "ingredients[4].concentration",
+          "ingredient": "KH2PO4",
+          "old": {
+            "value": "3.4",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "3.4",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P6",
+          "snippet": "KH2PO4 3.4 g 3.4 24.984",
+          "locator": "sol-0 / recipe-4",
+          "explanation": "Supports ingredients[4].concentration (KH2PO4) only; locator: sol-0 / recipe-4. User-contributed dataset formulation, not a verified sterilization/makeup protocol. Table columns are Compound, Amount, Unit, Conc. [g/L], Conc. [mM]; the main-sol-vol value/data-volume both declare 1000 and the adjacent unit is ml. No molarity is asserted from the calculated mM column. The existing mass rate matches the source's g/L column exactly. Accessed 2026-10-07; source capture hashes: {\"P6-article-PMC7564587.html\": \"4ba4130ab6f9e90804020f94a01f214a23fd3e2b1957d4934a8efefd7a77ffdc\", \"P6-correction-PMC8306464.html\": \"0d478c33c9abef1ebfacffda39f04bb84ff9a5b8394b679e00da89aed9280bf1\", \"P6-medium-page.html\": \"d308ad98c3128738c64a92d2666a8e17202c1f80aaa1ff3f99143c0848b091db\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            4
+          ],
+          "field": "ingredients[4].concentration",
+          "ingredient": "KH2PO4",
+          "old": {
+            "value": "3.4",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "3.4",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "doi:10.3390/microorganisms8091359",
+          "snippet": "3.4 g/L KH2PO4",
+          "locator": "Section 2.2.1, base mTA10 clause",
+          "explanation": "Supports ingredients[4].concentration (KH2PO4) only; locator: Section 2.2.1, base mTA10 clause. Directly reported g/L in the base mTA10 clause, independently matching the complete six-ingredient P6 formulation. No MOPS, glucose, supplement, supplier restriction, growth or performance claim is imported. Full text inspected at https://pmc.ncbi.nlm.nih.gov/articles/PMC7564587/; the published correction at https://pmc.ncbi.nlm.nih.gov/articles/PMC8306464/ concerns primer sequences, not this formulation. Accessed 2026-10-07; source capture hashes: {\"P6-article-PMC7564587.html\": \"4ba4130ab6f9e90804020f94a01f214a23fd3e2b1957d4934a8efefd7a77ffdc\", \"P6-correction-PMC8306464.html\": \"0d478c33c9abef1ebfacffda39f04bb84ff9a5b8394b679e00da89aed9280bf1\", \"P6-medium-page.html\": \"d308ad98c3128738c64a92d2666a8e17202c1f80aaa1ff3f99143c0848b091db\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            5
+          ],
+          "field": "ingredients[5].concentration",
+          "ingredient": "Na2HPO4",
+          "old": {
+            "value": "19.3",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "19.3",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/medium/P6",
+          "snippet": "Na2HPO4 19.3 g 19.3 135.955",
+          "locator": "sol-0 / recipe-5",
+          "explanation": "Supports ingredients[5].concentration (Na2HPO4) only; locator: sol-0 / recipe-5. User-contributed dataset formulation, not a verified sterilization/makeup protocol. Table columns are Compound, Amount, Unit, Conc. [g/L], Conc. [mM]; the main-sol-vol value/data-volume both declare 1000 and the adjacent unit is ml. No molarity is asserted from the calculated mM column. The existing mass rate matches the source's g/L column exactly. Accessed 2026-10-07; source capture hashes: {\"P6-article-PMC7564587.html\": \"4ba4130ab6f9e90804020f94a01f214a23fd3e2b1957d4934a8efefd7a77ffdc\", \"P6-correction-PMC8306464.html\": \"0d478c33c9abef1ebfacffda39f04bb84ff9a5b8394b679e00da89aed9280bf1\", \"P6-medium-page.html\": \"d308ad98c3128738c64a92d2666a8e17202c1f80aaa1ff3f99143c0848b091db\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            5
+          ],
+          "field": "ingredients[5].concentration",
+          "ingredient": "Na2HPO4",
+          "old": {
+            "value": "19.3",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "19.3",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "doi:10.3390/microorganisms8091359",
+          "snippet": "19.3 g/L Na2HPO4",
+          "locator": "Section 2.2.1, base mTA10 clause",
+          "explanation": "Supports ingredients[5].concentration (Na2HPO4) only; locator: Section 2.2.1, base mTA10 clause. Directly reported g/L in the base mTA10 clause, independently matching the complete six-ingredient P6 formulation. No MOPS, glucose, supplement, supplier restriction, growth or performance claim is imported. Full text inspected at https://pmc.ncbi.nlm.nih.gov/articles/PMC7564587/; the published correction at https://pmc.ncbi.nlm.nih.gov/articles/PMC8306464/ concerns primer sequences, not this formulation. Accessed 2026-10-07; source capture hashes: {\"P6-article-PMC7564587.html\": \"4ba4130ab6f9e90804020f94a01f214a23fd3e2b1957d4934a8efefd7a77ffdc\", \"P6-correction-PMC8306464.html\": \"0d478c33c9abef1ebfacffda39f04bb84ff9a5b8394b679e00da89aed9280bf1\", \"P6-medium-page.html\": \"d308ad98c3128738c64a92d2666a8e17202c1f80aaa1ff3f99143c0848b091db\"}. HTML entities decoded, inline subscripts concatenated and whitespace collapsed."
+        }
+      ],
+      "baseline_errors": [],
+      "post_errors": [],
+      "failure": null,
+      "merge_fingerprint_unchanged": true,
+      "source_accessed_at": "2026-10-07",
+      "before_text": "id: CultureMech:010436\nname: mta10\noriginal_name: mTA10\ncategory: bacterial\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nph_value: 7.2\nmedia_term:\n  preferred_term: public Medium P6\n  term:\n    id: mediadive.medium:P6\n    label: mTA10\nnotes: MediaDive public Medium P6 provides mTA10 as a complete 1 L liquid recipe at\n  pH 7.2.\ningredients:\n- preferred_term: Tryptose\n  concentration:\n    value: '10'\n    unit: G_PER_L\n  source: MediaDive public Medium P6\n- preferred_term: Beef extract\n  concentration:\n    value: '5'\n    unit: G_PER_L\n  source: MediaDive public Medium P6\n- preferred_term: Yeast extract\n  concentration:\n    value: '5'\n    unit: G_PER_L\n  source: MediaDive public Medium P6\n  term:\n    id: FOODON:03315426\n    label: yeast extract\n- preferred_term: NaCl\n  concentration:\n    value: '5'\n    unit: G_PER_L\n  source: MediaDive public Medium P6\n  term:\n    id: CHEBI:26710\n    label: sodium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n- preferred_term: KH2PO4\n  concentration:\n    value: '3.4'\n    unit: G_PER_L\n  source: MediaDive public Medium P6\n  term:\n    id: CHEBI:63036\n    label: potassium dihydrogen phosphate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:63036\n    label: potassium dihydrogen phosphate\n- preferred_term: Na2HPO4\n  concentration:\n    value: '19.3'\n    unit: G_PER_L\n  source: MediaDive public Medium P6\n  term:\n    id: CHEBI:34683\n    label: disodium hydrogenphosphate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:34683\n    label: disodium hydrogenphosphate\napplications:\n- Microbial cultivation\nreferences:\n- reference: 10.1016/j.foodcont.2012.06.029\n- reference: https://www.bacmedia.dsmz.de/medium/P6\ncuration_history:\n- timestamp: '2026-01-26T17:53:19.844334Z'\n  curator: mediadive-import\n  action: Imported from MediaDive\n  notes: 'Source: public, ID: P6'\n- timestamp: '2026-02-03T11:27:23.234846'\n  curator: quality-tagger-v1.0\n  action: Added data quality flag\n  notes: Marked as incomplete_composition due to placeholder ingredients\n- timestamp: '2026-03-13T06:20:13.826547Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:010436'\n- timestamp: '2026-03-17T19:46:32.804460+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"mTA10\" to \"mta10\" for consistent matching\n- timestamp: '2026-08-06T07:56:36.120698+00:00'\n  curator: curate_placeholder_composition.py\n  action: REMOVED_PLACEHOLDER_INGREDIENT\n  notes: Removed the 'See source for composition' placeholder ingredient; the record\n    carries no imported composition and is flagged incomplete (#175).\n  changes: Dropped placeholder ingredient 'See source for composition'\n- timestamp: '2026-09-08T00:00:00-07:00'\n  curator: repair_mediadive_public_score30.py\n  action: RESOLVED_MEDIADIVE_PUBLIC_SCORE30\n  changes: Resolved score-30 public MediaDive placeholder graph\n  source: 10.1016/j.foodcont.2012.06.029; https://www.bacmedia.dsmz.de/medium/P6\n  notes: MediaDive public Medium P6 provides mTA10 as a complete 1 L liquid recipe\n    at pH 7.2.\ndata_quality_flags:\n- ingredients_curated\n- has_ontology_mappings\n- has_unmapped_ingredients\n"
+    }
+  ],
+  "target_class": "MediaRecipe"
+}

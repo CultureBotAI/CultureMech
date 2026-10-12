@@ -25,8 +25,8 @@ composition:
     match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
-    value: '800'
-    unit: PERCENT_V_V
+    value: '0.8'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -35,6 +35,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5067
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 800,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Distilled
+      water) in MediaDive solution 5067; locator=$.data.recipe[5] (compound_id=4).
+      Source water addition is 800 ml per prepared batch: 800 / 1000 = 0.8 L. No source
+      preparation step gives a competing make-up instruction. This is a batch dose,
+      not a volume percentage; no final-volume or solvent-density assumption is made.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:50:34.529404+00:00;
+      response SHA256=a35c1ecaa66de42eb8eb35dfa8a7e7bff8088743acf149f4c9fd25ba58970274.'
 curation_history:
 - timestamp: '2026-03-13T06:20:34.807277Z'
   curator: culturemech-id-assigner-v1.0
@@ -68,6 +93,15 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:53:16.572361+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5067
+  changes: 'composition[2].concentration: {"unit": "PERCENT_V_V", "value": "800"}
+    -> {"unit": "L", "value": "0.8"} (correct)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -76,3 +110,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5067
+  title: 'MediaDive solution 5067: Main sol. J1021'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=a35c1ecaa66de42eb8eb35dfa8a7e7bff8088743acf149f4c9fd25ba58970274;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

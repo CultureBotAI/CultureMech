@@ -1,0 +1,18 @@
+{
+  "stage": "applied",
+  "records": 3,
+  "new_evidence": 20,
+  "new_curation_history": 3,
+  "new_references": 5,
+  "stock_nodes_relocated": 3,
+  "unsupported_quantity_slots_removed": 3,
+  "new_quantity_slots": 5,
+  "quantity_corrections": 1,
+  "stock_descriptors_added": 3,
+  "ingredient_context_notes_added": 36,
+  "evidence_scopes_corrected": 20,
+  "recipe_context_notes_corrected": 3,
+  "preparation_steps_added": 1,
+  "full_record_inversion": true,
+  "historical_snippets_preserved": true
+}

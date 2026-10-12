@@ -1,0 +1,214 @@
+{
+  "source_sha256": "0e1b0d61826c6c729ca46bd7adb32945695a509d8578fe651f380b9eef3778c7",
+  "files": [
+    {
+      "target": "data/normalized_yaml/archaea_index.json",
+      "preview": "/tmp/ingredient-media-20261007/albumin-counterparts-index-preview/archaea_index.json",
+      "before_sha256": "b594f4f6a08b0179eb1c2b91244424f49e12ddb554ea36c8447709447e5c7765",
+      "after_sha256": "3e19561db94a000d3be738e3084c1f4528954e946bdc5b69fcc35edac2a7b850",
+      "changes": [
+        {
+          "key": "CultureMech:009029",
+          "id": "CultureMech:009029",
+          "changes": {
+            "solution_count": [
+              null,
+              3
+            ],
+            "ingredient_count": [
+              18,
+              13
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:002612",
+          "id": "CultureMech:002612",
+          "changes": {
+            "solution_count": [
+              null,
+              3
+            ],
+            "ingredient_count": [
+              16,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/bacterial_index.json",
+      "preview": "/tmp/ingredient-media-20261007/albumin-counterparts-index-preview/bacterial_index.json",
+      "before_sha256": "c9df67e0c2990742aa1bd2164053e7946dca98799309d5f68a7a31351ec53eab",
+      "after_sha256": "3b3a9c3245b359e66a263e29192bb607e49be20acd62b1bdb75ce6acdfaab01c",
+      "changes": [
+        {
+          "key": "CultureMech:008529",
+          "id": "CultureMech:008529",
+          "changes": {
+            "solution_count": [
+              null,
+              3
+            ],
+            "ingredient_count": [
+              14,
+              9
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008734",
+          "id": "CultureMech:008734",
+          "changes": {
+            "solution_count": [
+              null,
+              4
+            ],
+            "ingredient_count": [
+              12,
+              6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_mediadive_index.json",
+      "preview": "/tmp/ingredient-media-20261007/albumin-counterparts-index-preview/by_source_mediadive_index.json",
+      "before_sha256": "881608445b570061314c898db9e2d54f99fac1f84ab804656954be699cb83176",
+      "after_sha256": "cc5ad8c9e3901f89322798ce54d2680a8468fb2e1372ca1a203650b1a70a96b2",
+      "changes": [
+        {
+          "key": "CultureMech:002612",
+          "id": "CultureMech:002612",
+          "changes": {
+            "solution_count": [
+              null,
+              3
+            ],
+            "ingredient_count": [
+              16,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_togo_index.json",
+      "preview": "/tmp/ingredient-media-20261007/albumin-counterparts-index-preview/by_source_togo_index.json",
+      "before_sha256": "1f1de2b169a389f8c2a739064fe5b142f72d0ab7365d167aa0bc61c3cca74be6",
+      "after_sha256": "a019df6d701d2b6742bac59987988bf436e238043a7b13a6c2ecca536313803e",
+      "changes": [
+        {
+          "key": "CultureMech:009029",
+          "id": "CultureMech:009029",
+          "changes": {
+            "solution_count": [
+              null,
+              3
+            ],
+            "ingredient_count": [
+              18,
+              13
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008529",
+          "id": "CultureMech:008529",
+          "changes": {
+            "solution_count": [
+              null,
+              3
+            ],
+            "ingredient_count": [
+              14,
+              9
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008734",
+          "id": "CultureMech:008734",
+          "changes": {
+            "solution_count": [
+              null,
+              4
+            ],
+            "ingredient_count": [
+              12,
+              6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_index.json",
+      "preview": "/tmp/ingredient-media-20261007/albumin-counterparts-index-preview/recipe_index.json",
+      "before_sha256": "cc013c84186e2facfb7f87c0557339b1739442d4eefc82f992eee62e48f3ed57",
+      "after_sha256": "d9a2b86fbddf25847e570ee8fbcaeace0ed4f2672de68abac7c7898276b251a8",
+      "changes": [
+        {
+          "key": "CultureMech:009029",
+          "id": "CultureMech:009029",
+          "changes": {
+            "solution_count": [
+              null,
+              3
+            ],
+            "ingredient_count": [
+              18,
+              13
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:002612",
+          "id": "CultureMech:002612",
+          "changes": {
+            "solution_count": [
+              null,
+              3
+            ],
+            "ingredient_count": [
+              16,
+              12
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008529",
+          "id": "CultureMech:008529",
+          "changes": {
+            "solution_count": [
+              null,
+              3
+            ],
+            "ingredient_count": [
+              14,
+              9
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008734",
+          "id": "CultureMech:008734",
+          "changes": {
+            "solution_count": [
+              null,
+              4
+            ],
+            "ingredient_count": [
+              12,
+              6
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "only_reviewed_sources_changed": true
+}

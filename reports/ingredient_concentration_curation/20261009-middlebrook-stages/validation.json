@@ -1,0 +1,166 @@
+{
+  "terminal": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "normalized_count": 15910,
+  "normalized_sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138",
+  "only_reviewed_records_changed": true,
+  "applied_records": 13,
+  "independent_audit_totals": {
+    "new_evidence": 225,
+    "new_references": 15,
+    "new_curation_history": 13,
+    "old_quantity_slots": 234,
+    "claims": 548,
+    "source_nodes": 229
+  },
+  "tests_passed": {
+    "focused": "526 passed, 2 warnings in 56.26s",
+    "focused-retry": "526 passed, 2 warnings in 59.29s",
+    "fast": "9819 passed, 16 skipped, 1945 deselected, 2 warnings in 833.56s (0:13:53)"
+  },
+  "reference_checks": {
+    "passed": 239,
+    "failed": 1,
+    "manual_NBRC_quote_verified": true
+  },
+  "remaining_failed_gates": [
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/middlebrook_7h11_agar.yaml"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-post-17.log"
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-post-39.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/middlebrook-post-40.log"
+    }
+  ],
+  "merge_verification": {
+    "name_conflicts": 1247,
+    "fingerprint_issues": 3287
+  },
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10777,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8732,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "corpus_checks": {
+    "strict_scanned": 15910,
+    "ids_passed": true,
+    "product_warnings": 91,
+    "product_skipped_no_adapter": 96053,
+    "chemical_groundings_recertified": false
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 825,
+    "new_quantity_slots": 364,
+    "unsupported_quantity_slots_removed": 869,
+    "new_evidence": 33319,
+    "new_curation_history": 5391,
+    "new_references": 5653,
+    "stock_stage_concentrations_rebased": 199,
+    "stock_descriptors_added": 241,
+    "quantity_corrections": 1455,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 88,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 7,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 14,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5187
+  },
+  "followup_unique_records": 11798,
+  "outside_this_followup": 4112,
+  "remaining_queues": {
+    "identity": 87,
+    "methylbutyrate_name": 76,
+    "albumin_name": 11,
+    "M142_separate": 71
+  },
+  "reports_sha256": {
+    "apply.json": "b3843babe230988f0e1981738bd54d129c4e0ce1eab47a8767ab06a3445472d8",
+    "baseline.json": "81c9805dff4cd45228e3c1f424b97a6b3c0685232d1b8ab19e6768d375010ee1",
+    "context.json": "4836291dddb141d452fc5c01b0730d3badce0759dd54a8e7ba0446e7aff478d7",
+    "corpus.json": "7984d4a11fb71869dcecbe71a25447b380913a077eb55c93f9ec751f51b4496a",
+    "cumulative-audit.json": "01a1b0429687683600323b8c712e32057b6d2261c4f59c56257a161a989e8fb0",
+    "fast.json": "1f9b0bdf6438d1924d505e35f468a653cd49eac0c375cd522a6d74bc603b5793",
+    "focused.json": "6cd9288566549b44d737d7986bd97153a7bd54bebecdfab044d72b6051c8172f",
+    "focused-retry.json": "dec0311fc3c88fc1ce4bab27c59214ff768c524466afca4d91dc815a790e79ed",
+    "followup-coverage.json": "333057e9260bccfe58a128a98dbbc9bf21c060c05f88c3d1fecb3a66536a2ae1",
+    "index-refresh-application.json": "d7dba3c826062f487a3b22a1f9b8794cd57f9df85188a11a7feb7a68f3875afd",
+    "index-refresh-plan.json": "85001e6ce447eac746058f18bea213a1a8dbad498ca37df1c4c25ca49da8ba1f",
+    "live.json": "50721a94f683cc115ebe7016b4ddc16409f522ae009aca0e8bbd83c0203b92a3",
+    "merge-retention.json": "66580ee90b3c4392db2b05fc96f419cb0cbb1bc87e057b5b6318bcc5b5b6a98e",
+    "next-lb-identity-context.json": "2f91606fddc40597c85a2fa0a75d41e8e4fecb5277e49fbf68bc0eb96af43670",
+    "plan.json": "28032eb3f5837886b5e1d1b0b972bad659942781d4ca76950e2ee774df680e13",
+    "post.json": "9d8203a46659492b3fa81f0155904b976fd40a81581888245b84ab09436da3b0",
+    "reconciliation.json": "052b9680697d913cb5b203e69c672d278cb157a32d3328e3dbe7388bab7306af",
+    "remaining-queue.json": "6a1832e0120b13eae7c35e102f87d9372026e53c73e92a17f9af93ddb14f7250"
+  },
+  "code_sha256": {
+    "scripts/repair_middlebrook_stages.py": "94b5bb1954773797fe64799a35e9fb08bc2250d9a081df80b7267a4ad0df7c0f",
+    "tests/test_middlebrook_stages.py": "921f96ffafce8f58bca6c6665ef068bb36caa93583c97617bd3ac5efd7af7d10",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-middlebrook-stages/audit.py": "e50c1f643faf65c1d7f95a6c5eb50b1b65da02d9bccafbdf2ebed083dc14fd2b",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "7519f9e72b30914debd474726e683938b05387f46417314e877932140543ebea"
+  },
+  "runtime": "Existing partial locked Python 3.13 environment; not clean CI or complete-suite validation.",
+  "publication": "No commit, push, public issue, PR, merge or branch cleanup in this batch. Earlier outbound-payload approval remains unresolved."
+}

@@ -1,0 +1,42 @@
+{
+  "terminal": true,
+  "phase": "corpus",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-bsk-formulations/strict-errors.tsv"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/bsk-formulations-corpus-0.log"
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/bsk-formulations-corpus-1.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/bsk-formulations-corpus-2.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "781b097801c78303aae8b10e0b792993c35bd4c6eb10772559bc804536113b5a"
+  },
+  "strict_scanned": 15910,
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "781b097801c78303aae8b10e0b792993c35bd4c6eb10772559bc804536113b5a"
+  }
+}

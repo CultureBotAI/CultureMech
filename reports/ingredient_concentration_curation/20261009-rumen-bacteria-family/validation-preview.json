@@ -1,0 +1,197 @@
+{
+  "terminal": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "state": "Thirteen-record preview with terminal focused, source, schema and presentation gates; application disabled and broader gates pending",
+  "records_proposed": 13,
+  "records_applied": 0,
+  "cohort_records": 13,
+  "proposed_additions_not_applied": {
+    "source_nodes": 214,
+    "old_quantity_slots": 187,
+    "claims": 717,
+    "new_evidence": 214,
+    "new_references": 15,
+    "new_curation_history": 13
+  },
+  "focused_tests": "695 passed, 2 warnings in 96.49s (0:01:36)",
+  "reference_checks": {
+    "total": 245,
+    "passed": 245
+  },
+  "reference_mode": "Offline, sixteen hash-checked official captures; not a fresh live refresh",
+  "preview_schema_commands": 26,
+  "normalized_count": 15910,
+  "normalized_sha256": "2be09e9249a816360bba52b76c1f3d889e12aae7bfd90d12771f117acb01a0d1",
+  "normalized_unchanged": true,
+  "context_sha256": "97e6cfa229556a5251518fafb27c7506242afb62cb7be79ff7ff985dfb4e6c49",
+  "plan_sha256": "5940d6a1b64c0f21408a6bde46512049cb4cbfff12cb80ae9061c5c6edfd3a1f",
+  "receipt_sha256": {
+    "audit": "7e23a57a29981e8cc93dbccfda223c13a8c6e48248f9f72fe0f905ca8a7be3b0",
+    "references": "4e5bf66bf251052698d9700d2e2c5f9e6c33d137294562f12d9dcd4f5917d888",
+    "presentation": "ab6dc950f2e10faa9a28e337dd778f661483867ff6cd53ca5de1c906eaf90c6d",
+    "focused": "0d0d877243af66fcd486ed42d8396a14c1d360f24e55bbcfc2203dbaf45a9ad3",
+    "schema": "60ba8bae206701dc80293223ca50ef5c2f282084c9e3c02e3d6768a6b9e8b85e",
+    "ledgers": "d12917db384bddef7629b7ae52561074a8b15e86757592e6cad30d2d5dad3a29",
+    "preview-reviewed": "e2711312040c546d3e7cccde3616cc4d7a1126a9e01b0a1a0f4b1bbf83bc5542"
+  },
+  "code_sha256": {
+    "scripts/repair_rumen_bacteria_family.py": "808bc4c49331d814172109b4cbbabf958c35d71417a068142b849dc8ffb3f40f",
+    "tests/test_rumen_bacteria_family.py": "c0d9d4688da656d281112a0bdb016473dc59146d414c46e08c723ea4795d3271",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/audit.py": "8d886bcd4799b6c216b8aaab16f130f126ab253bbc963fdedc4e37f0b22d1890",
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/repair_mediadive_stock_concentration_evidence.py": "1badfa99205690cf6082d95db7dafbd6d4927b617027bc61fbaaf9dbd597c974",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a"
+  },
+  "documents": {
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/README.md": "a256eedcfd472a1e780ee621e46b5c39aec26eecaa04637cb54b534a00c9c8c9",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/adversarial-review.md": "29cc5ede0621083d08fbfd7811d7b031a5c8e7dac6005ba2ef172b926dd4fc55",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/issue-source-conflicts.md": "43f466d284f48969e3db185f6c817e10bcf4011ed7935b5cbdc106ac4b409b47",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/next-work.md": "e8d1ed669b2c312aa60c9798ad9a71c7381c5f404885f0ba1e95d049a04cfcae",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/records/D330.md": "8898a76e0675746e3e2b262272e5c533ebf5acf29773af8c8493a331e6d854f5",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/records/DJ1029.md": "39df05ad46d0e91e88e3de643db626e907168b7e91684535232de356d8f0aba9",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/records/K3032.md": "1ad13c44da2e1e58c6ac22e4f9dbc6c31ff49478671532c43e297f3d55e80665",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/records/K3131.md": "692249b8f4d13c22098cc1c7cb3cb188332bee341a807c44b403ccd942ca214a",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/records/K330.md": "e8d320f24d5b46f352dd956f3f2bc1385334b92e3d8d7c24d4e32078f6ba0ddc",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/records/K330_17630.md": "701d96b2615d8128c4fe7189ee20608ab242ced82a777b5fb3120bbc273807c6",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/records/M1093.md": "d35956a07ad4b1f57e8b163e3527bd4722d96386e97f6a5fc965ebe81befeb7f",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/records/S124.md": "2ff7aae71a5a2fa282d32cdd595fddbcfd6d96c36aeb72032a2e22fc9c20c3f5",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/records/S3774.md": "fc8c1377c3c16ee83c4c55735201839940c86b2a0866c6a7564bb6ba96037abc",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/records/S5080.md": "0855db2c12eee49b2eb634e731e01bb0156c866eb3f1d35f63c402e9bc5e8b94",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/records/S606.md": "8d8d28b0b5c84fad9f9fcc55266fcd182ea789badef0f1a0463fd4dda1f76d69",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/records/S607.md": "546d05f53f845b1fb38f6dd41845f84f3492bcb1959375cdb734476d9d0a207b",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-rumen-bacteria-family/records/S608.md": "048324dadf04eadae7d06818279c8c566d3db78ea619b1b199ad761973cb5d6d"
+  },
+  "prior_supported_evidence_unchanged": [
+    {
+      "key": "S124",
+      "pointer": [
+        "composition",
+        0,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5080",
+      "pointer": [
+        "composition",
+        0,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5080",
+      "pointer": [
+        "composition",
+        3,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5080",
+      "pointer": [
+        "composition",
+        9,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5080",
+      "pointer": [
+        "composition",
+        10,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5080",
+      "pointer": [
+        "composition",
+        11,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S5080",
+      "pointer": [
+        "composition",
+        12,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S607",
+      "pointer": [
+        "composition",
+        0,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S607",
+      "pointer": [
+        "composition",
+        1,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S607",
+      "pointer": [
+        "composition",
+        2,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S607",
+      "pointer": [
+        "composition",
+        3,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S607",
+      "pointer": [
+        "composition",
+        4,
+        "evidence",
+        0
+      ]
+    },
+    {
+      "key": "S607",
+      "pointer": [
+        "composition",
+        5,
+        "evidence",
+        0
+      ]
+    }
+  ],
+  "unchanged_root_text_spans": 98,
+  "prior_history_text_spans": 99,
+  "full_fast_tier_rerun": false,
+  "taxa_media_associations_added": 0,
+  "JCM1029_diagnostic_sha256": "0070e8631d7eb21855ef8957af60fb7212f420c1032169533dfac49c028bcc20",
+  "remaining": "Full objective unchanged. Guarded application and broader current-code tests, post-edit gates, report reconciliation, accounting and merge retention remain required. JCM1029 original access, global merge/freshness and publication remain open.",
+  "previous_turn": "Progress: completed prior medium436 validation and reporting; this continuation builds and verifies the next whole thirteen-record source family."
+}

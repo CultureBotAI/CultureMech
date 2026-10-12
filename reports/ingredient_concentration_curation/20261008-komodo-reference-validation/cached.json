@@ -1,0 +1,1575 @@
+{
+  "terminal": true,
+  "phase": "cached",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo-reference-cached-0.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo-reference-cached-1.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/mitsuhashi_maramorosch_m_m_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo-reference-cached-2.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo-reference-cached-3.log"
+    }
+  ],
+  "commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+  "files_sha256": {
+    "src/culturemech/validation/recipe_references.py": "496b60409c0f973063dbe2671785b2ebefbe810059cf988f99b5368cbe8f0f85",
+    "scripts/validate_recipe_references.py": "087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b",
+    "tests/test_recipe_komodo_references.py": "accc793474144d364a08ea91af82cf1b097e9b5e14091d84788f3edb31e69ce8",
+    "tests/test_recipe_references.py": "59d055b9239b03b3794ec5297f23c4b1ecb09e7984b252b4337755b86cf0f7ab",
+    "tests/test_recipe_pdf_references.py": "bd301e4d081a0ce7bd6d67e0a5fcc43406156eb27cc00ea7855c8d68a84d3166",
+    "tests/fixtures/recipe_references/DSMZ104a.json": "ec2600e109a962dd381c566c97c02d9b7873838de29593429c49e88065d7faa5",
+    "tests/fixtures/recipe_references/DSMZ1829.json": "e5746a0a85fbf74cd77490ebde4b427bf59579b622c54c1b113ead1b6ea1dda4",
+    "tests/fixtures/recipe_references/DSMZ261.json": "fd5b361d542572ce82b192e0f6ee26b6cb7a56639b6e48fbca28baea3a83974f",
+    "tests/fixtures/recipe_references/DSMZ403.json": "c8dfabc547468886a01ce5d5806ad87bd56b75cb313cd3d39e94b77f59673e1a",
+    "tests/fixtures/recipe_references/DSMZ605a.json": "a7888642201dd8a30dad78b0ec3af286a0981731ce15d993cca9facc0de5091d",
+    "tests/fixtures/recipe_references/DSMZ751.json": "a0f650c244d940185cc95bc884506ee2b589ac369b4bd29c9cd5797921a6b914",
+    "tests/fixtures/recipe_references/J151.json": "031437e5acf918fbe4a1f5284a30382521cf55fd4a87f5467eee250deef23852",
+    "tests/fixtures/recipe_references/JCM1084.json": "b36df18d9c126d4029cdc3b26e9d6d9ea46c15c03a1e09baf3db30d7d1f1a57a",
+    "tests/fixtures/recipe_references/JCM1282.json": "06b8a516026f912951ea5b857c982d5aa594de58ae5dd812f50dda4c23b2f01c",
+    "tests/fixtures/recipe_references/K1021.json": "2cdb9b77b35fb86fcd9870ae086a4e2a4a2bc5527f3a6be06a04ebeab2086144",
+    "tests/fixtures/recipe_references/K1021_16929.json": "be29bc90a30e1bce9d260b96febae642d97a27522ccbb18e242b93e26fdf8cb8",
+    "tests/fixtures/recipe_references/M1124.json": "4d9e7f49152b35ccce51ccceb43ad70530eb6caea989270d3f3541c5e9c69edf",
+    "tests/fixtures/recipe_references/README.md": "ee051cf42929f3e2cec04c99e8750db53c36b0fa2c3a7f90bcc4ce4519eef692",
+    "tests/fixtures/recipe_references/komodo_failed_excerpts.json": "6644fc181c01a66dce5136fd6456794f24d879daffbd6fcb1f5ae84c09c5ecdd",
+    "tests/fixtures/recipe_references/solution118.json": "a9116a6d5cb591e8ee66301fe1d56c32f68b96412bce2edb779b2d93f2306211"
+  },
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "d99a375e68d2bef008b27eae1eaa6da6fc414a7d67046a15a5d32a2661f813d2"
+  },
+  "prior_plan_sha256": "01711c7839a6e175b55b0237d48db7e74f3cc13f11b960213837bbbc19408462",
+  "prior_context_sha256": "b9afaadd95d0d21b285ebbde79b8a685f6fc18f6ecfb51b9cd2e86b2dcf8d8f2",
+  "sources": [
+    {
+      "key": "D1021",
+      "matches_inspected_capture": true,
+      "metadata": {
+        "version": 1,
+        "url": "https://mediadive.dsmz.de/rest/medium/1021",
+        "response_url": "https://mediadive.dsmz.de/rest/medium/1021",
+        "http_status": 200,
+        "sha256": "d325e15252a6497eccc092a46fac0d12cb13ea0d91b3765990ca6c6e3dccf4b4",
+        "accessed_at": "2026-10-09T00:17:22.999456+00:00"
+      }
+    },
+    {
+      "key": "DSMZ1021",
+      "matches_inspected_capture": true,
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+        "http_status": 200,
+        "sha256": "1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8",
+        "accessed_at": "2026-10-09T00:17:23.993183+00:00",
+        "pdf_sha256": "6af992ef5048ce852d2c1c88463f1eeedf3441b682522231c93341b3ce1debac",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      }
+    },
+    {
+      "key": "M2287",
+      "matches_inspected_capture": true,
+      "metadata": {
+        "version": 1,
+        "url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+        "response_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+        "http_status": 200,
+        "sha256": "092c9df0b4705f01f5861559ae0c405ea07cd55eb428512258ed5847c8dcbd24",
+        "accessed_at": "2026-10-09T00:17:24.686375+00:00"
+      }
+    },
+    {
+      "key": "K1021",
+      "matches_inspected_capture": true,
+      "metadata": {
+        "version": 1,
+        "url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+        "response_url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+        "http_status": 200,
+        "sha256": "e4a9e272f0b17354335496c754134b228d36dcba6f41b2288e83e584be6cbd16",
+        "accessed_at": "2026-10-09T00:19:31.890934+00:00",
+        "encoding": "utf-8",
+        "media_type": "text/plain",
+        "http_content_type": null,
+        "transport": "urllib.request"
+      }
+    },
+    {
+      "key": "K1021_16929",
+      "matches_inspected_capture": true,
+      "metadata": {
+        "version": 1,
+        "url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+        "response_url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+        "http_status": 200,
+        "sha256": "2446cf829f82e9aa7720dcbce9cd38805324f329277d7d25a908b41e2d98492b",
+        "accessed_at": "2026-10-09T00:19:32.595175+00:00",
+        "encoding": "utf-8",
+        "media_type": "text/plain",
+        "http_content_type": null,
+        "transport": "urllib.request"
+      }
+    }
+  ],
+  "records": {
+    "K1021": {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml",
+      "sha256": "e26a9ef01a8fe3130730db9ca330b9c97494cfbada9bbec5866c17a1dd6ebc28",
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "Yeast extract Yeast extract rich-peptone# 4.96 null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Yeast extract Yeast extract rich-peptone# 4.96 null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "D-Glucose D-Glucose SEED-cpd00027### 4.00 0.02",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "D-Glucose D-Glucose SEED-cpd00027### 4.00 0.02",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "KCl KCl SEED-cpd00099#cpd00205## 0.20 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "KCl KCl SEED-cpd00099#cpd00205## 0.20 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "MgCl2 x 6 H2O Magnesium chloride SEED-cpd00099#cpd00254#cpd04877# 0.10 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MgCl2 x 6 H2O Magnesium chloride SEED-cpd00099#cpd00254#cpd04877# 0.10 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "CaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.20 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.20 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "NaCl NaCl SEED-cpd00099#cpd00971## 6.96 0.12",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaCl NaCl SEED-cpd00099#cpd00971## 6.96 0.12",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "NaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 0.12 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 0.12 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "Agar Agar SEED-cpd13334### 13.60 null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Agar Agar SEED-cpd13334### 13.60 null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "NaH2PO4 x 2 H2O NaH2PO4 SEED-cpd00009#cpd00971## 0.22 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaH2PO4 x 2 H2O NaH2PO4 SEED-cpd00009#cpd00971## 0.22 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "casein hydrolysate casein hydrolysate rich-peptone# 6.48 null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "casein hydrolysate casein hydrolysate rich-peptone# 6.48 null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "Distilled water H2O SEED-cpd00001### null null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water H2O SEED-cpd00001### null null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "new borne calf serum new borne calf serum rich-serum# 200.00 0.20",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "new borne calf serum new borne calf serum rich-serum# 200.00 0.20",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "Sterilize solution A and B separately at 121\uf0b0C for 20 min. Cool to 50\uf0b0C, then combine. To\n4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium\nshould be filter sterilized instead of autoclaved.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Sterilize solution A and B separately at 121\uf0b0C for 20 min. Cool to 50\uf0b0C, then combine. To\n4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium\nshould be filter sterilized instead of autoclaved.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[11].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "MEDIUM 1021 MODIFIED FOR DSM 16929",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MEDIUM 1021 MODIFIED FOR DSM 16929",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "variant_children[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "casein hydrolysate casein hydrolysate",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "casein hydrolysate casein hydrolysate",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "parent_media.evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "Sterilize solution A and B separately at 121\uf0b0C for 20 min. Cool to 50\uf0b0C, then combine. To\n4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium\nshould be filter sterilized instead of autoclaved.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Sterilize solution A and B separately at 121\uf0b0C for 20 min. Cool to 50\uf0b0C, then combine. To\n4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium\nshould be filter sterilized instead of autoclaved.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "variants[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "Adjust pH to 8.0.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Adjust pH to 8.0.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "PH Info: 8.0",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "PH Info: 8.0",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[2].title"
+        }
+      ],
+      "issues": []
+    },
+    "K1021_16929": {
+      "path": "data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml",
+      "sha256": "502a85a5c5678cdd36283dceba01b3eca4699373969f7dbd2d332d9aa77da7c0",
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "Yeast extract Yeast extract rich-peptone# 4.96 null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Yeast extract Yeast extract rich-peptone# 4.96 null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "D-Glucose D-Glucose SEED-cpd00027### 4.00 0.02",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "D-Glucose D-Glucose SEED-cpd00027### 4.00 0.02",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "KCl KCl SEED-cpd00099#cpd00205## 0.20 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "KCl KCl SEED-cpd00099#cpd00205## 0.20 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "MgCl2 x 6 H2O Magnesium chloride SEED-cpd00099#cpd00254#cpd04877# 0.10 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MgCl2 x 6 H2O Magnesium chloride SEED-cpd00099#cpd00254#cpd04877# 0.10 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "CaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.20 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.20 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "NaCl NaCl SEED-cpd00099#cpd00971## 6.96 0.12",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaCl NaCl SEED-cpd00099#cpd00971## 6.96 0.12",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "NaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 0.12 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 0.12 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "Agar Agar SEED-cpd13334### 13.60 null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Agar Agar SEED-cpd13334### 13.60 null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "NaH2PO4 x 2 H2O NaH2PO4 SEED-cpd00009#cpd00971## 0.22 0.00",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaH2PO4 x 2 H2O NaH2PO4 SEED-cpd00009#cpd00971## 0.22 0.00",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "casein hydrolysate casein hydrolysate rich-peptone# 6.48 null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "casein hydrolysate casein hydrolysate rich-peptone# 6.48 null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "Distilled water H2O SEED-cpd00001### null null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water H2O SEED-cpd00001### null null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "new borne calf serum new borne calf serum rich-serum# 200.00 0.20",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "new borne calf serum new borne calf serum rich-serum# 200.00 0.20",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "Sterilize solution A and B separately at 121\uf0b0C for 20 min. Cool to 50\uf0b0C, then combine. To\n4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium\nshould be filter sterilized instead of autoclaved.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Sterilize solution A and B separately at 121\uf0b0C for 20 min. Cool to 50\uf0b0C, then combine. To\n4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium\nshould be filter sterilized instead of autoclaved.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[11].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "O2 O2 SEED-cpd00007### null null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "O2 O2 SEED-cpd00007### null null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[12].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "N2 N2 SEED-cpd00528### null null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "N2 N2 SEED-cpd00528### null null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[13].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "CO2 CO2 SEED-cpd00011### null null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CO2 CO2 SEED-cpd00011### null null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[14].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "MEDIUM 1021 MODIFIED FOR DSM 16929",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MEDIUM 1021 MODIFIED FOR DSM 16929",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "parent_media.evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "Sterilize solution A and B separately at 121\uf0b0C for 20 min. Cool to 50\uf0b0C, then combine. To\n4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium\nshould be filter sterilized instead of autoclaved.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Sterilize solution A and B separately at 121\uf0b0C for 20 min. Cool to 50\uf0b0C, then combine. To\n4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium\nshould be filter sterilized instead of autoclaved.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "variants[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "Adjust pH to 8.0.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Adjust pH to 8.0.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "PH Info: null",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "PH Info: null",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "issues": []
+    },
+    "M2287": {
+      "path": "data/normalized_yaml/bacterial/mitsuhashi_maramorosch_m_m_medium.yaml",
+      "sha256": "2f2c4e1dce171a2698312300893e404b0b37020e227871a42801afe20241d6cf",
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+          "supporting_text": "{\n          \"component_name\": \"heat-inactivated fetal bovine serum\",\n          \"volume\": 5,\n          \"unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001397\",\n          \"gmo_id\": \"GMO_001397\",\n          \"label\": \"Fetal bovine serum, heat-inactivated\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"heat-inactivated fetal bovine serum\",\n          \"volume\": 5,\n          \"unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001397\",\n          \"gmo_id\": \"GMO_001397\",\n          \"label\": \"Fetal bovine serum, heat-inactivated\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+          "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+          "supporting_text": "{\n          \"component_name\": \"yeast extract\",\n          \"volume\": 5,\n          \"unit\": \"g/L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\": \"GMO_001003\",\n          \"label\": \"Yeast extract\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"yeast extract\",\n          \"volume\": 5,\n          \"unit\": \"g/L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\": \"GMO_001003\",\n          \"label\": \"Yeast extract\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+          "supporting_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 120,\n          \"unit\": \"mM\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\": \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 120,\n          \"unit\": \"mM\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\": \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+          "supporting_text": "{\n          \"component_name\": \"D (+) glucose\",\n          \"volume\": 22,\n          \"unit\": \"mM\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001010\",\n          \"gmo_id\": \"GMO_001010\",\n          \"label\": \"D-Glucose\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"D (+) glucose\",\n          \"volume\": 22,\n          \"unit\": \"mM\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001010\",\n          \"gmo_id\": \"GMO_001010\",\n          \"label\": \"D-Glucose\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+          "supporting_text": "{\n          \"component_name\": \"KCl\",\n          \"volume\": 2.7,\n          \"unit\": \"mM\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\",\n          \"gmo_id\": \"GMO_001017\",\n          \"label\": \"Potassium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KCl\",\n          \"volume\": 2.7,\n          \"unit\": \"mM\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\",\n          \"gmo_id\": \"GMO_001017\",\n          \"label\": \"Potassium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+          "supporting_text": "{\n          \"component_name\": \"NaHCO3\",\n          \"volume\": 1.4,\n          \"unit\": \"mM\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001019\",\n          \"gmo_id\": \"GMO_001019\",\n          \"label\": \"Sodium bicarbonate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NaHCO3\",\n          \"volume\": 1.4,\n          \"unit\": \"mM\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001019\",\n          \"gmo_id\": \"GMO_001019\",\n          \"label\": \"Sodium bicarbonate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+          "supporting_text": "{\n          \"component_name\": \"CaCl2\",\n          \"volume\": 1,\n          \"unit\": \"mM\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001061\",\n          \"gmo_id\": \"GMO_001061\",\n          \"label\": \"Calcium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"CaCl2\",\n          \"volume\": 1,\n          \"unit\": \"mM\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001061\",\n          \"gmo_id\": \"GMO_001061\",\n          \"label\": \"Calcium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+          "supporting_text": "{\n          \"component_name\": \"MgCl2\",\n          \"volume\": 0.2,\n          \"unit\": \"mM\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001154\",\n          \"gmo_id\": \"GMO_001154\",\n          \"label\": \"Magnesium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"MgCl2\",\n          \"volume\": 0.2,\n          \"unit\": \"mM\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001154\",\n          \"gmo_id\": \"GMO_001154\",\n          \"label\": \"Magnesium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+          "supporting_text": "{\n          \"component_name\": \"NaH2PO4\",\n          \"volume\": 1.3,\n          \"unit\": \"mM\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001352\",\n          \"gmo_id\": \"GMO_001352\",\n          \"label\": \"Sodium dihydrogen phosphate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NaH2PO4\",\n          \"volume\": 1.3,\n          \"unit\": \"mM\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001352\",\n          \"gmo_id\": \"GMO_001352\",\n          \"label\": \"Sodium dihydrogen phosphate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+          "supporting_text": "{\n          \"component_name\": \"lactalbumin hydrolysate\",\n          \"volume\": 6.5,\n          \"unit\": \"g/L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002022\",\n          \"gmo_id\": \"GMO_002022\",\n          \"label\": \"Lactalbumin hydrolysate\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen source\"\n            }\n          ]\n        }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"lactalbumin hydrolysate\",\n          \"volume\": 6.5,\n          \"unit\": \"g/L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002022\",\n          \"gmo_id\": \"GMO_002022\",\n          \"label\": \"Lactalbumin hydrolysate\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen source\"\n            }\n          ]\n        }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+          "supporting_text": "{\n      \"paragraph_index\": 1,\n      \"comment\": \"Pure Sodalis cultures were maintained in vitro at 25\u00b0C in Mitsuhashi-Maramorosch (M&M) medium (1 mM CaCl2, 0.2 mM MgCl2, 2.7 mM KCl, 120 mM NaCl, 1.4 mM NaHCO3, 1.3 mM NaH2PO4, 22 mM D (+) glucose, 6.5 g/L lactalbumin hydrolysate, and 5.0 g/L yeast extract) supplemented with 5% heat-inactivated fetal bovine serum (Beard et al. 1993).\"\n    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n      \"paragraph_index\": 1,\n      \"comment\": \"Pure Sodalis cultures were maintained in vitro at 25\u00b0C in Mitsuhashi-Maramorosch (M&M) medium (1 mM CaCl2, 0.2 mM MgCl2, 2.7 mM KCl, 120 mM NaCl, 1.4 mM NaHCO3, 1.3 mM NaH2PO4, 22 mM D (+) glucose, 6.5 g/L lactalbumin hydrolysate, and 5.0 g/L yeast extract) supplemented with 5% heat-inactivated fetal bovine serum (Beard et al. 1993).\"\n    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2287",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        }
+      ],
+      "issues": []
+    },
+    "D1021": {
+      "path": "data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml",
+      "sha256": "a22d765a5e483f6ee7e0e7485c89c34608dcdf950b5175c97dd5cf05c25a090d",
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "casein hydrolysate casein hydrolysate",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "casein hydrolysate casein hydrolysate",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "variant_children[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1021",
+          "supporting_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 6.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 6.88889,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 6.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 6.88889,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "Yeast extract                                                                 6.20         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Yeast extract                                                                 6.20         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1021",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Lactalbumin hydrolysate\",\n                        \"compound_id\": 2143,\n                        \"amount\": 8.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 9,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Lactalbumin hydrolysate\",\n                        \"compound_id\": 2143,\n                        \"amount\": 8.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 9,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "Lactalbumin hydrolysate or\n Casein hydrolysate                                                            8.10         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Lactalbumin hydrolysate or\n Casein hydrolysate                                                            8.10         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1021",
+          "supporting_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"D-Glucose\",\n                        \"compound_id\": 211,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.55556,\n                        \"mmol_l\": 30.8368,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"D-Glucose\",\n                        \"compound_id\": 211,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.55556,\n                        \"mmol_l\": 30.8368,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "D-Glucose                                                                     5.00         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "D-Glucose                                                                     5.00         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1021",
+          "supporting_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.277778,\n                        \"mmol_l\": 3.72606,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.277778,\n                        \"mmol_l\": 3.72606,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "KCl                                                                           0.25         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "KCl                                                                           0.25         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1021",
+          "supporting_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.12,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.133333,\n                        \"mmol_l\": 0.655836,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.12,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.133333,\n                        \"mmol_l\": 0.655836,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "MgCl2 x 6 H2O                                                                 0.12         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MgCl2 x 6 H2O                                                                 0.12         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1021",
+          "supporting_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.277778,\n                        \"mmol_l\": 1.88945,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.277778,\n                        \"mmol_l\": 1.88945,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "CaCl2 x 2 H2O                                                                 0.25         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CaCl2 x 2 H2O                                                                 0.25         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1021",
+          "supporting_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 8.7,\n                        \"unit\": \"g\",\n                        \"g_l\": 9.66667,\n                        \"mmol_l\": 165.412,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 8.7,\n                        \"unit\": \"g\",\n                        \"g_l\": 9.66667,\n                        \"mmol_l\": 165.412,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "NaCl                                                                          8.70         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaCl                                                                          8.70         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[6].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1021",
+          "supporting_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\": 0.15,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.166667,\n                        \"mmol_l\": 1.98396,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\": 0.15,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.166667,\n                        \"mmol_l\": 1.98396,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "NaHCO3                                                                        0.15         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaHCO3                                                                        0.15         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[7].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1021",
+          "supporting_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\": 17,\n                        \"unit\": \"g\",\n                        \"g_l\": 18.8889,\n                        \"mmol_l\": 56.1618,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\": 17,\n                        \"unit\": \"g\",\n                        \"g_l\": 18.8889,\n                        \"mmol_l\": 56.1618,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "Agar                                                                        17.00          g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Agar                                                                        17.00          g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[8].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1021",
+          "supporting_text": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 900,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 900,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1021",
+          "supporting_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaH2PO4 x 2 H2O\",\n                        \"compound_id\": 678,\n                        \"amount\": 0.28,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.8,\n                        \"mmol_l\": 23.3378,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaH2PO4 x 2 H2O\",\n                        \"compound_id\": 678,\n                        \"amount\": 0.28,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.8,\n                        \"mmol_l\": 23.3378,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "NaH2PO4 x 2 H2O                                                               0.28         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "NaH2PO4 x 2 H2O                                                               0.28         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1021",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "Sterilize solution A and B separately at 121\uf0b0C for 20 min. Cool to 50\uf0b0C, then combine. To\n4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium\nshould be filter sterilized instead of autoclaved.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Sterilize solution A and B separately at 121\uf0b0C for 20 min. Cool to 50\uf0b0C, then combine. To\n4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium\nshould be filter sterilized instead of autoclaved.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "variants[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "Lactalbumin hydrolysate or\n Casein hydrolysate                                                            8.10         g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Lactalbumin hydrolysate or\n Casein hydrolysate                                                            8.10         g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "variants[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1021",
+          "supporting_text": "{\n                        \"step\": \"Sterilize solution A and B separately at 121\\u00b0C for 20 min. Cool to 50\\u00b0C, then combine. To 4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium should be filter sterilized instead of autoclaved.\"\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"step\": \"Sterilize solution A and B separately at 121\\u00b0C for 20 min. Cool to 50\\u00b0C, then combine. To 4 parts of the above, add 1 part sterile foetal or new borne calf serum. Liquid medium should be filter sterilized instead of autoclaved.\"\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "Adjust pH to 8.0.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Adjust pH to 8.0.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/1021",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[2].title"
+        }
+      ],
+      "issues": []
+    }
+  },
+  "all_reference_checks_passed": true,
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "d99a375e68d2bef008b27eae1eaa6da6fc414a7d67046a15a5d32a2661f813d2"
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "terminal": true,
+  "phase": "post",
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "readback",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_dsmz1157_1164_stocks.py",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-readback.log",
+      "artifact": null
+    },
+    {
+      "name": "noop",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_dsmz1157_1164_stocks.py",
+        "--apply"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-noop.log",
+      "artifact": null
+    },
+    {
+      "name": "independent-diff",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/20261008-dsmz1157-1164-stocks/audit.py",
+        "--applied",
+        "--out",
+        "reports/ingredient_concentration_curation/20261008-dsmz1157-1164-stocks/diff-audit.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-independent-diff.log",
+      "artifact": null
+    },
+    {
+      "name": "schema-MediaRecipe",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/linkml-validate",
+        "--schema",
+        "src/culturemech/schema/culturemech.yaml",
+        "--target-class",
+        "MediaRecipe",
+        "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+        "data/normalized_yaml/bacterial/pyem_medium.yaml",
+        "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+        "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-schema-MediaRecipe.log",
+      "artifact": null
+    },
+    {
+      "name": "schema-SolutionRecipe",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/linkml-validate",
+        "--schema",
+        "src/culturemech/schema/culturemech.yaml",
+        "--target-class",
+        "SolutionRecipe",
+        "data/normalized_yaml/bacterial/mediadive_2323_Main_sol_1157.yaml",
+        "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-schema-SolutionRecipe.log",
+      "artifact": null
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-strict.log",
+      "artifact": null
+    },
+    {
+      "name": "ids",
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-ids.log",
+      "artifact": null
+    },
+    {
+      "name": "variant-links",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_media_variant_links.py",
+        "--reports-dir",
+        "reports/ingredient_concentration_curation/20261008-dsmz1157-1164-stocks/variant-links"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-variant-links.log",
+      "artifact": null
+    },
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_dsmz1157_1164_stocks.py",
+        "tests/test_dsmz803_1046_1065_water.py",
+        "tests/test_komodo_concentration_final_batch.py",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_solution_concentration_batch.py",
+        "tests/test_record_io.py",
+        "tests/test_concentration_plausibility.py",
+        "--junitxml",
+        "/tmp/ingredient-media-20261007/stocks-1157-tests.xml"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-tests.log",
+      "artifact": null
+    },
+    {
+      "name": "cumulative-diff",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-cumulative-diff.log",
+      "artifact": "reports/ingredient_concentration_curation/20261008-diff-audit-after-stocks-1157.json"
+    },
+    {
+      "name": "coverage",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/summarize_followup_coverage.py",
+        "--out",
+        "reports/ingredient_concentration_curation/20261008-followup-coverage-after-stocks-1157.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-extraction-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo12-extraction/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm896-final-volume/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm1105-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-percent-supplements/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-direct/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-input-basis/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-rs-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz111-preparation/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz265-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz467-469-inputs/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph7/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph-adjustments/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo650-752-762-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz546-659-670-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo670-source-versions/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261008-dsmz803-1046-1065-water/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261008-dsmz1157-1164-stocks/plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-coverage.log",
+      "artifact": null
+    },
+    {
+      "name": "retention",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/20261008-dsmz1157-1164-stocks/retention.py"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-retention.log",
+      "artifact": null
+    },
+    {
+      "name": "references",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/tmp/ingredient-media-20261007/references_1157_1164.py"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-references.log",
+      "artifact": null
+    },
+    {
+      "name": "fast",
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-fast.log",
+      "artifact": null
+    },
+    {
+      "name": "products",
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-products.log",
+      "artifact": null
+    },
+    {
+      "name": "verify-merges",
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-verify-merges.log",
+      "artifact": null
+    },
+    {
+      "name": "freshness",
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-post-freshness.log",
+      "artifact": "reports/ingredient_concentration_curation/20261008-dsmz1157-1164-stocks/merge-freshness.json",
+      "capture_recovered_from_completed_output": true
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-terminal-diff-check.log",
+      "artifact": null
+    },
+    {
+      "name": "ruff",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_dsmz1157_1164_stocks.py",
+        "tests/test_dsmz1157_1164_stocks.py",
+        "tests/test_komodo_concentration_final_batch.py",
+        "tests/test_medium_concentration_batch.py",
+        "reports/ingredient_concentration_curation/20261008-dsmz1157-1164-stocks/audit.py",
+        "reports/ingredient_concentration_curation/20261008-dsmz1157-1164-stocks/retention.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-terminal-ruff.log",
+      "artifact": null
+    },
+    {
+      "name": "black",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_dsmz1157_1164_stocks.py",
+        "tests/test_dsmz1157_1164_stocks.py",
+        "tests/test_komodo_concentration_final_batch.py",
+        "tests/test_medium_concentration_batch.py",
+        "reports/ingredient_concentration_curation/20261008-dsmz1157-1164-stocks/audit.py",
+        "reports/ingredient_concentration_curation/20261008-dsmz1157-1164-stocks/retention.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-terminal-black.log",
+      "artifact": null
+    }
+  ],
+  "collector_recovery": "The completed freshness command exited 1. json.loads rejected the trailing just error line; raw_decode recovered the JSON and checked the exact failure trailer. No validator or data mutation was restarted.",
+  "focused_recheck": "focused-recheck.json",
+  "network_reference_recheck": "reference-validation-network-recheck.json"
+}

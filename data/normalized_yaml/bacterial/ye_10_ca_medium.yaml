@@ -21,6 +21,28 @@ ingredients:
   concentration:
     value: '0.06'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1463
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Peptone",
+                              "compound_id": 1,
+                              "amount": 0.06,
+                              "unit": "g",
+                              "g_l": 0.06,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[1].concentration (Peptone)
+      in MediaDive medium 1463; locator=$.data.solutions[0].recipe[1]. Provider explicitly
+      reports g_l=0.06; check: 0.06 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.06 g/L.
+      This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:12.324495+00:00;
+      response SHA256=5b6cde46b85b1f1e6db3ac6a24045614019ff67604d91040992e5a98558440f0.'
 - preferred_term: Tris-HCl buffer
   concentration:
     value: '0.61'
@@ -28,6 +50,28 @@ ingredients:
   term:
     id: CHEBI:9754
     label: tris
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1463
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "Tris-HCl buffer",
+                              "compound_id": 285,
+                              "amount": 0.61,
+                              "unit": "g",
+                              "g_l": 0.61,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[2].concentration (Tris-HCl
+      buffer) in MediaDive medium 1463; locator=$.data.solutions[0].recipe[2]. Provider
+      explicitly reports g_l=0.61; check: 0.61 g * 1 g/g / (1000 ml / 1000 ml per
+      L) = 0.61 g/L. This supports the provider-declared main-recipe concentration,
+      not an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T13:42:12.324495+00:00; response SHA256=5b6cde46b85b1f1e6db3ac6a24045614019ff67604d91040992e5a98558440f0.'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -38,6 +82,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1463
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "CaCl2 x 2 H2O",
+                              "compound_id": 7,
+                              "amount": 0.3,
+                              "unit": "g",
+                              "g_l": 0.3,
+                              "mmol_l": 2.04061,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[3].concentration (CaCl2 x
+      2 H2O) in MediaDive medium 1463; locator=$.data.solutions[0].recipe[3]. Provider
+      explicitly reports g_l=0.3; check: 0.3 g * 1 g/g / (1000 ml / 1000 ml per L)
+      = 0.3 g/L. This supports the provider-declared main-recipe concentration, not
+      an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T13:42:12.324495+00:00; response SHA256=5b6cde46b85b1f1e6db3ac6a24045614019ff67604d91040992e5a98558440f0.'
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -83,6 +150,19 @@ curation_history:
   action: LINKED_TOGO_M2361_SOURCE_DUPLICATE
   source: https://togomedium.org/medium/M2361; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1463.pdf
   notes: Linked TOGO M2361 as a source duplicate of DSMZ Medium 1463.
+- timestamp: '2026-10-07T13:57:59.694168+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/1463
+  changes: 'ingredients[1].concentration: {"unit": "G_PER_L", "value": "0.06"} ->
+    {"unit": "G_PER_L", "value": "0.06"} (evidence_only); ingredients[2].concentration:
+    {"unit": "G_PER_L", "value": "0.61"} -> {"unit": "G_PER_L", "value": "0.61"} (evidence_only);
+    ingredients[3].concentration: {"unit": "G_PER_L", "value": "0.3"} -> {"unit":
+    "G_PER_L", "value": "0.3"} (evidence_only)'
 kg_microbe_match: mediadive.medium:1143
 variant_children:
 - path: data/normalized_yaml/bacterial/TOGO_M2361_YE_10_Ca_Medium.yaml
@@ -91,3 +171,11 @@ variant_children:
   name: ye_10_ca_medium
   notes: TOGO M2361 imports DSMZ Medium 1463 and explicitly retains its distilled-water
     row.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/1463
+  title: 'MediaDive medium 1463: YE/10 + Ca MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=5b6cde46b85b1f1e6db3ac6a24045614019ff67604d91040992e5a98558440f0;
+    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1463.pdf;
+    individual authors and publication year not supplied. Provider-declared main-recipe
+    amounts only.

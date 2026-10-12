@@ -1,0 +1,209 @@
+[
+  {
+    "id": "CultureMech:006523",
+    "medium_id": "805",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/805",
+    "source_sha256": "a3052dd11a6e1d1bcc77180e5521a5e2729026110129c823c01846c690ec12e8",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      5
+    ],
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"attribute\": \"2%\",\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0719386,\n                        \"optional\": 0\n                    }",
+    "reason": "The 1 ml iron stock is labelled 2% without a percent basis and is flattened locally to 0.02 G_PER_L. Resolve stock composition, addition and water-input versus final-volume scope before endorsing the complete formulation."
+  },
+  {
+    "id": "CultureMech:006649",
+    "medium_id": "844",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/844",
+    "source_sha256": "469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Dissolve ingredients except magnesium chloride and calcium chloride. Add magnesium chloride and calcium chloride after autoclaving from sterile stock solutions of 5% (w/v) each. For agar plates add 1.2% Bacto agar",
+    "reason": "Magnesium and calcium are post-autoclave additions from separate 5% w/v stocks. The flat record omits both stocks and their addition/preparation boundaries. Reconstruct those stages without deriving doses from an assumed final volume."
+  },
+  {
+    "id": "CultureMech:006794",
+    "medium_id": "917",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/917",
+    "source_sha256": "5dd9cf98bec4e157ff1a4451dd8a7814ce4be9d9c63602098f30344eee58cf03",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Adjust to pH 7.2. Add agar and autoclave at 121°C for 20 min. A stock solution of calcium chloride should be sterilized separately and added to the medium after autoclaving.",
+    "reason": "Calcium chloride must be sterilized separately as a stock and added after autoclaving. Its strength, dose and preparation boundary are absent locally. Resolve basal versus completed-medium scope before endorsing the flat concentrations."
+  },
+  {
+    "id": "CultureMech:006829",
+    "medium_id": "923",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/923",
+    "source_sha256": "449972d7abc5dc2360c354d4429532e25145667319a3558b54764a4946cc2607",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "We recommend that liquid media be made by autoclaving the Na2CO3 separately, otherwise the high pH will cause ammonia to be lost. When making media solidified with agar (20 g/l) the agar should also not be autoclaved with the Na2CO3 otherwise the agar will be hydrolysed. When mixing the ingredients for solid media cool all components to about 55°C otherwise hydrolysis of the agar may occur.",
+    "reason": "The source separately autoclaves carbonate and explicitly prohibits autoclaving agar with it. The local solid medium omits this preparation boundary. Preserve the separate components and 55 C mixing stage without inventing stock volumes."
+  },
+  {
+    "id": "CultureMech:006904",
+    "medium_id": "959",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/959",
+    "source_sha256": "f02df5589361b9d8c7f677b58f99a24c11d8bd8d292284ae18a4acca7727da18",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Dissolve ingredients except maltose and sulfide, adjust pH to 7.0 - 7.2 and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving add maltose and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere. The pH of the complete medium should be 7.5.",
+    "reason": "The current source adds maltose and sulfide from separate anoxic stocks, absent locally. Its NaCl is 15 g per provider litre, versus the local 26 G_PER_L, and the source name has changed from SL to PETROTOGA OLEARIA MEDIUM. Resolve the exact formulation/version and stock boundaries before transferring even matching quantities; pH-variant children remain separate targets."
+  },
+  {
+    "id": "CultureMech:006921",
+    "medium_id": "964",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/964",
+    "source_sha256": "ac2d3b1b104288e259052243432f7d761bc1a952cfb6f3efaaf672c761458bcc",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Dissolve ingredients (except sulfur, peptone, yeast extract, and sulfide), sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH to 7.2 - 7.4, then dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials containing already the appropriate amount of sulfur and autoclave at <b>110°C</b> for 20 min. Add peptone, yeast extract and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The pH of the complete medium should be 7.5.",
+    "reason": "Peptone, yeast extract and sulfide are separate anoxic stock additions after basal sterilization; resazurin is also a stock in the source table. The local flat ingredients omit those boundaries. Resolve preparation-stage and volume scope before endorsing complete-medium concentrations."
+  },
+  {
+    "id": "CultureMech:006929",
+    "medium_id": "971",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/971",
+    "source_sha256": "0596bd516eadc09b586fa578d24fbbd2aca55027a0f0eafa56299c1864c63728",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "NaCl and Na2CO3 were autoclaved separately and added to the organic components at 60°C before pouring the agar media. Final pH should be about 10.0.",
+    "reason": "NaCl and carbonate are autoclaved separately from the organic components and mixed at 60 C before pouring. The local flat record omits the preparation groups and their volume allocation; establish these boundaries without assuming a final litre."
+  },
+  {
+    "id": "CultureMech:006945",
+    "medium_id": "983",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/983",
+    "source_sha256": "50b365bfe161b6ab75a5c05f57729fe0fa0c5ad270b2f28ba6cf46832ec1af55",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      4
+    ],
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"TAPSO\",\n                        \"compound_id\": 857,\n                        \"amount\": 1.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.3,\n                        \"mmol_l\": 5.01388,\n                        \"optional\": 0\n                    }",
+    "reason": "The local TAPSO node is grounded to CHEBI:84015 with label (1R,2R)-diclocymet, which does not denote the source-named buffer. The original DSMZ PDF lists batch masses but no water or final-volume statement; the API adds a 1000 ml water row. Resolve ingredient identity and volume provenance before supporting this formulation; no ontology substitution is guessed."
+  },
+  {
+    "id": "CultureMech:006962",
+    "medium_id": "990",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/990",
+    "source_sha256": "350acf77adb984d61446e8f9c40e2d3c9c033e7c2d81aac3d35477c2c1828710",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Prepare the medium without the yeast extract, peptone and sodium sulphide. Boil the medium and cool under nitrogen. Adjust the pH to 6.8. Dispense into hungate tubes or serum bottles under a nitrogen atmosphere. Sterilise the medium at 100°C for 3 hours on 3 consecutive days. Add the peptone and yeast extract from sterile (10% w/v) stock solutions. The medium is reduced by adding a sterile, neutralised 5% w/v sodium sulphide solution to an end concentration of 0.025%. Final pH should be 6.8",
+    "reason": "Yeast extract and peptone come from separate 10% w/v stocks, and sulfide from a neutralized 5% w/v stock to an end concentration. The local flat record omits these preparation stages. Reconstruct stock strengths, addition context and complete-medium basis without guessing doses."
+  },
+  {
+    "id": "CultureMech:003552",
+    "medium_id": "1038",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1038",
+    "source_sha256": "71b6c363ca855c0f99bdb1b7fcbd658cc38844f11c587ec5d0f24e5052ee3f7f",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Dissolve ingredients except glucose and yeast extract, adjust pH to 2.5, dispense in suitable cultivation vessels and autoclave. Add glucose and yeast extract after autoclaving from sterile stock solutions.",
+    "reason": "Glucose and yeast extract are added from separate sterile stocks after the acidic basal medium is autoclaved. Their stock strengths and doses are unspecified, and the local record has no preparation boundary. Resolve those stages before supporting flat complete-medium amounts."
+  },
+  {
+    "id": "CultureMech:003627",
+    "medium_id": "1052",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/1052",
+    "source_sha256": "cbde2f1a092e198b82a23d9ff7e0696d8cb451291da1b9c228ba6b485cadc872",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Same as solutions A and B of medium 585, CYE-ACES agar.",
+    "reason": "The source refers to solutions A and B of DSMZ 585, which are separately sterilized preparations containing 490 ml water each, while the local/API flat recipe lists 1000 ml water. Resolve the intended BOSEA preparation and water allocation without importing the distinct C/D supplements of 585 or assuming a measured final litre."
+  }
+]

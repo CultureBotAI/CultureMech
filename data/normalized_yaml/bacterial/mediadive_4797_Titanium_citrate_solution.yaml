@@ -16,6 +16,33 @@ composition:
     label: titanium tetrachloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4797
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Titanium chloride",
+                      "compound_id": 1909,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.75,
+                      "unit": "g",
+                      "g_l": 13.6364,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Titanium
+      chloride) in MediaDive solution 4797; locator=$.data.recipe[0] (compound_id=1909).
+      Provider explicitly reports g_l=13.6364. Arithmetic check: 0.75 g * 1 g/g /
+      (55 ml / 1000 ml per L) = 13.63636363636363636363636364 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      55. Retrieved 2026-10-07T09:47:38.931840+00:00; response SHA256=4044f513956509411d343aff7c7e301837b5afe11247701c758efcdfc187e28d.'
 - preferred_term: Trisodium citrate x 2 H2O
   concentration:
     value: '53.4545'
@@ -28,6 +55,33 @@ composition:
     label: sodium citrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4797
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Trisodium citrate x 2 H2O",
+                      "compound_id": 1249,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.94,
+                      "unit": "g",
+                      "g_l": 53.4545,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Trisodium
+      citrate x 2 H2O) in MediaDive solution 4797; locator=$.data.recipe[1] (compound_id=1249).
+      Provider explicitly reports g_l=53.4545. Arithmetic check: 2.94 g * 1 g/g /
+      (55 ml / 1000 ml per L) = 53.45454545454545454545454545 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      55. Retrieved 2026-10-07T09:47:38.931840+00:00; response SHA256=4044f513956509411d343aff7c7e301837b5afe11247701c758efcdfc187e28d.'
 - preferred_term: Distilled water
   concentration:
     value: '1000.0000000000001'
@@ -73,6 +127,17 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:53:16.572361+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/4797
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "13.6364"}
+    -> {"unit": "G_PER_L", "value": "13.6364"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "53.4545"} -> {"unit": "G_PER_L", "value": "53.4545"}
+    (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -81,3 +146,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/4797
+  title: 'MediaDive solution 4797: Titanium citrate solution'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=4044f513956509411d343aff7c7e301837b5afe11247701c758efcdfc187e28d;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

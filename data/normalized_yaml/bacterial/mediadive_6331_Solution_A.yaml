@@ -42,6 +42,33 @@ composition:
     label: 2-oxoglutarate(2-)
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6331
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Na2 alpha-ketoglutarate",
+                      "compound_id": 1412,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 2.04082,
+                      "mmol_l": 14.1643,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (Na2 alpha-ketoglutarate)
+      in MediaDive solution 6331; locator=$.data.recipe[3] (compound_id=1412). Provider
+      explicitly reports g_l=2.04082. Arithmetic check: 1 g * 1 g/g / (490 ml / 1000
+      ml per L) = 2.040816326530612244897959184 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 490. Retrieved 2026-10-07T10:02:17.882488+00:00;
+      response SHA256=4a3c099c1767990001dfd3e94a991f23f9cfb82b5ca562366bc53017d6b19b4a.'
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -93,6 +120,15 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T10:04:07.640757+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/6331
+  changes: 'composition[3].concentration: {"unit": "G_PER_L", "value": "2.04082"}
+    -> {"unit": "G_PER_L", "value": "2.04082"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -101,3 +137,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/6331
+  title: 'MediaDive solution 6331: Solution A'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=4a3c099c1767990001dfd3e94a991f23f9cfb82b5ca562366bc53017d6b19b4a;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

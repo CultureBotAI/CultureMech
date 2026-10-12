@@ -1,0 +1,182 @@
+{
+  "terminal": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "normalized_count": 15910,
+  "normalized_sha256": "586888cea49e962e3fe4ccbe021599c5c21ee5f15e4aae265f5bdfe305ce8bb0",
+  "only_reviewed_records_changed": true,
+  "applied_records": 11,
+  "independent_audit_totals": {
+    "source_nodes": 234,
+    "old_quantity_slots": 244,
+    "claims": 781,
+    "new_evidence": 274,
+    "new_references": 23,
+    "new_curation_history": 11
+  },
+  "tests_passed": {
+    "focused": "792 passed, 2 warnings in 355.58s (0:05:55)",
+    "fast": "10086 passed, 16 skipped, 1945 deselected, 2 warnings in 990.96s (0:16:30)"
+  },
+  "reference_checks": {
+    "passed": 297,
+    "failed": 0,
+    "mode": "cached",
+    "fresh_refresh_passed": false
+  },
+  "failed_live_refreshes": {
+    "live": {
+      "error": "RecipeReferenceError: source_cache: cannot read/write official recipe cache: HTTPError",
+      "sources_completed": 7
+    },
+    "live-retry": {
+      "error": "RecipeReferenceError: source_cache: cannot read/write official recipe cache: HTTPError",
+      "sources_completed": 8
+    }
+  },
+  "remaining_failed_gates": [
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/post-33.log",
+      "log_sha256": "b86f4b504ce5b27572941cfd465011a1fded4268af0e587ab151ca450136211c"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/post-34.log",
+      "log_sha256": "5824ed1316589e5ad63003a63fb79c48b5c0265d313b236126598211dd01e018"
+    }
+  ],
+  "merge_verification": {
+    "name_conflicts": 1247,
+    "fingerprint_issues": 3287
+  },
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10777,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8732,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "corpus_checks": {
+    "strict_scanned": 15910,
+    "ids_passed": true,
+    "product_warnings": 91,
+    "product_skipped_no_adapter": 96042,
+    "cohort_variant_findings": 0,
+    "global_variant_findings": 0,
+    "chemical_groundings_recertified": false
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 825,
+    "new_quantity_slots": 364,
+    "unsupported_quantity_slots_removed": 869,
+    "new_evidence": 33593,
+    "new_curation_history": 5402,
+    "new_references": 5676,
+    "stock_stage_concentrations_rebased": 199,
+    "stock_descriptors_added": 241,
+    "quantity_corrections": 1455,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 88,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 7,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 14,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5198
+  },
+  "followup_unique_records": 11798,
+  "outside_this_followup": 4112,
+  "remaining_queues": {
+    "identity": 76,
+    "M142_separate": 71
+  },
+  "remaining_family_preflight": {
+    "candidate_count": 76,
+    "family_count": 41,
+    "external_neighbor_count": 1,
+    "identity_error_count": 21
+  },
+  "reports_sha256": {
+    "apply.json": "c94e3525991a0de2207461faf7e7c51b4560af7d466395ce3ba306aac3ad6cf6",
+    "baseline.json": "4ee94484c27928ead5ba7cd62a2154b47e23438a2ff62c80ee80f787e18a033c",
+    "cached.json": "397cc31e01dcd431fefd9cc527725d88863655f11009bcf2096a8da7882cdf78",
+    "context.json": "de800cece2575a52bf0a6016c0e356d44d5459b653c3063e4945994dc63a98e6",
+    "corpus.json": "49220abb324ca26401402f9b661964bdde864d1c9be9bc9ab4bf6479c3a20830",
+    "cumulative-audit.json": "0b356c4269349118184ad932b4e4b377387605749575de12b2576f7e3138681a",
+    "fast.json": "87939d217c2c524b7dcd7fcd705be82f718dae7c0fdb1d11b697c3ba63e0aa37",
+    "focused.json": "31a4cf7d1cf4e7bfbd181d61713e09eaee914fa5f6546549a1008c33769fe011",
+    "followup-coverage.json": "09e233c99b8a55db52c6b2664a8b67c24aace95dc8117f0b1aa5b29b72b5fcb3",
+    "index-refresh-application.json": "b9dcb5e1272b7d74b807e6951f9fa54ad5e0c32caf0985e83a49a5b23970b053",
+    "index-refresh-plan.json": "a00f001f636026d8689efbc6cb42e51be753e894440b7791045670506822022a",
+    "live.json": "e305ca46f313a20eef9345858ac685e9e67462bba44f1906982cacd6ec14c707",
+    "live-retry.json": "b81263dfe253535a0b498b4f0ffe61aab19a1eca28514cca8e9af516ae9da18c",
+    "merge-retention.json": "caa689cc9a1d499f79aaa386197d3394b24f84583512eb1e2b091f43df07017a",
+    "next-acid-family-inventory.json": "63a7c13a2aff029cac804b34ba478b1e1f412a730a24c977255384ff4abc0a8a",
+    "next-acid-family-inventory-resolved.json": "718a561ca84c03fdad05a4993d02959387c00a8ef75362508f48da71b5b18878",
+    "next-allisonella-context.json": "dae45cfd1b14facc31aa8691044e6718031b2cd9f8f258b4e5ae141553bfc61f",
+    "next-allisonella-preflight.json": "b9dae556af8a0406a6ab9bb9f4627bdb3a7207f41331a1e0530e5af531e71c26",
+    "next-lb-identity-context.json": "c713252b8b3e9f4af60b9fa98a1044054e975df7be5fa208857e5d9b5487452b",
+    "plan.json": "8d9b1352d5227111048a31411104b8a6c255819111fd4e1153917b29ea74074a",
+    "post.json": "8dcb785e2fdaea1849923b23b99db3b432979a7c6d481a8eef29dcef4f6c681f",
+    "qa.json": "0b7dd884136f75226943e8fd3b7e6e8ebe034ba92518f419e3cd4da9f6e409c5",
+    "reconciliation.json": "9424c191d8cd071972c7f2147f39ab8528959fa2db2c6247626fdbdf568565d4",
+    "remaining-queue.json": "6a1832e0120b13eae7c35e102f87d9372026e53c73e92a17f9af93ddb14f7250",
+    "source-refresh.json": "3af9cc25ba027aa44bfbde2e0c237fa59444fd716ca06388cbefb1251681fe16"
+  },
+  "code_sha256": {
+    "scripts/repair_linked_middlebrook.py": "b6571c6b97979de2b2ee7b16b4c3bc071d17467ef57fa104e5902d8e1a6658f1",
+    "tests/test_linked_middlebrook.py": "e95182859d2d576c3266645dd2abbbfa34314c4ed9d20de0f4c3ea019a2f6034",
+    "reports/ingredient_concentration_curation/20261009-middlebrook-linked/audit.py": "807c71a2ea7076245bb0ee989868f81ce24a673e53f6c7462daaf2f47396a73b",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "8a2e33d42853fd8ab4897b7c55d47d5518acb546434adb6ea523a4ee3b183a60"
+  },
+  "runtime": "Existing partial locked Python 3.13 environment; not clean CI or complete-suite validation.",
+  "publication": "No commit, push, public issue, PR, merge or branch cleanup in this batch. Earlier outbound-payload approval remains unresolved."
+}

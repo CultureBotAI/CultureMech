@@ -1,0 +1,66 @@
+{
+  "terminal": true,
+  "phase": "final",
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_pyrodictium_variants.py",
+        "tests/test_pyrodictium_variants.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-pyrodictium-variants/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-final-0.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_pyrodictium_variants.py",
+        "tests/test_pyrodictium_variants.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-pyrodictium-variants/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-final-1.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_pyrodictium_variants.py",
+        "tests/test_basal_makeup_stages.py",
+        "tests/test_m689_stocks.py",
+        "tests/test_m142_nested_traces.py",
+        "tests/test_jcm_stock_preparations.py",
+        "tests/test_recipe_references.py",
+        "tests/test_medium_concentration_batch.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-final-2.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/pyrodictium-final-3.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "56a1e7d74710535fa9ea37fd3859560d08414fe5b8eb38e9290efd5d1f630c9c"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "56a1e7d74710535fa9ea37fd3859560d08414fe5b8eb38e9290efd5d1f630c9c"
+  }
+}

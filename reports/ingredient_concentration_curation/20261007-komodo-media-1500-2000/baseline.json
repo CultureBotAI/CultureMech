@@ -1,0 +1,80 @@
+{
+  "terminal": true,
+  "runtime": "isolated Python 3.11; not full project environment or CI",
+  "checks": [
+    {
+      "name": "independent-preview",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "reports/ingredient_concentration_curation/20261007-komodo-media-0000-0500/audit.py",
+        "--folder",
+        "reports/ingredient_concentration_curation/20261007-komodo-media-1500-2000",
+        "--cache",
+        "/tmp/ingredient-media-20261007/sources",
+        "--mapping",
+        "/tmp/ingredient-media-20261007/komodo-media-list-20261007-recheck.html",
+        "--out",
+        "reports/ingredient_concentration_curation/20261007-komodo-media-1500-2000/preflight.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo-2000-baseline-independent-preview.log"
+    },
+    {
+      "name": "schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/KOMODO_460_NITROGEN-FREE_medium_FOR_PSEUDOMONAS_STUTZERI.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo-2000-baseline-schema.log"
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo-2000-baseline-strict.log"
+    },
+    {
+      "name": "guard-tests",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_medium_concentration_review.py",
+        "tests/test_komodo_concentration_review.py",
+        "-k",
+        "not applied_komodo_batch",
+        "--junitxml",
+        "/tmp/ingredient-media-20261007/komodo-2000-baseline-tests.xml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo-2000-baseline-guard-tests.log"
+    }
+  ],
+  "presentation": {
+    "records": 6,
+    "inserted_lines": 910,
+    "removed_lines": 0,
+    "replaced_blocks": 0
+  },
+  "closed_schema_targets": 500,
+  "test_suites": [
+    {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "165",
+      "time": "10.139",
+      "timestamp": "2026-10-07T17:04:07.251856-07:00",
+      "hostname": "Marcins-MacBook-Pro-2.local"
+    }
+  ]
+}

@@ -1,0 +1,3326 @@
+{
+  "terminal": true,
+  "commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+  "normalized_records": 15910,
+  "normalized_sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c",
+  "scope": "DSMZ numeric official PDF reference fields only; not all sources or ingredient claims",
+  "records": [
+    {
+      "path": "data/normalized_yaml/archaea/DSMZ_1399_HALOPHILIC_MEDIUM.yaml",
+      "sha256": "90d9cb52a972d7e7bbac78adfcb2500bdebeabf25c196faebac76b78e27e2bca",
+      "id": "CultureMech:000252",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf",
+          "text": "DSMZ 1399. HALOPHILIC MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "sha256": "5571174c41d08044b97fa4ad5a4844a70505176bc3fa22d131e5cef433673e27",
+      "id": "CultureMech:003877",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+          "text": "FeCl3 x 6 H2O (0.5%) 7 drops"
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+          "text": "1164. HALOMICROBIUM KATESII MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_141_METHANOGENIUM_medium.yaml",
+      "sha256": "6c7038029ddf8dcc8303dd9861930dfc425f687c528cef8906e70a05f6810647",
+      "id": "CultureMech:004144",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_265_THERMOFILUM_PENDENS_medium.yaml",
+      "sha256": "0e064365a59fdf189f7c45d375bfa0fa2c91c39a2fb87ac36eb6df719238c678",
+      "id": "CultureMech:004668",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "ingredients[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "sulfur (10 g)-sterilized by steaming for 3 h on each of \nthree successive days"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[12].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "Distilled water 1000.00 ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[1].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[2].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "sucrose (20 ml of 10% \nw/v solution)-filter-sterilized"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[3].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "Na2S x 9 H2O (10 ml of 3% w/v \nsolution)-autoclaved under nitrogen atmosphere."
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[4].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "Polar lipid fraction prepared from \n Thermoproteus tenax (DSM 2078) \n or from any other archaebacterium, \n aqueous suspension 6 - 12.00 ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved"
+        },
+        {
+          "kind": "title",
+          "path": "references[0].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "DSMZ 265. THERMOFILUM PENDENS MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "sha256": "01fa91b39b9570417b3f07ab780f90d2f44aed16af6b7c927adf2dbf198feb8b",
+      "id": "CultureMech:000605",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+          "text": "1164. HALOMICROBIUM KATESII MEDIUM"
+        },
+        {
+          "kind": "snippet",
+          "path": "evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+          "text": "FeCl3 x 6 H2O (0.5%) 7 drops"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/methanogenium_medium_h2_co2.yaml",
+      "sha256": "7d9f3fc0fab5ea985fdca11a2a39449646302a6c01d8479b1c208e708d608e6b",
+      "id": "CultureMech:000254",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/thermofilum_pendens_medium.yaml",
+      "sha256": "0c92198681a294ee01a6ac55f2557a21d8a1d212bb7c05787b520171c2bb30ed",
+      "id": "CultureMech:001364",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "ingredients[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "sulfur (10 g)-sterilized by steaming for 3 h on each of \nthree successive days"
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "DSMZ 265. THERMOFILUM PENDENS MEDIUM"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[12].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "Distilled water 1000.00 ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[1].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[2].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "sucrose (20 ml of 10% \nw/v solution)-filter-sterilized"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[3].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "Na2S x 9 H2O (10 ml of 3% w/v \nsolution)-autoclaved under nitrogen atmosphere."
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[4].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "Polar lipid fraction prepared from \n Thermoproteus tenax (DSM 2078) \n or from any other archaebacterium, \n aqueous suspension 6 - 12.00 ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml",
+      "sha256": "b7d38626a936dac55db76b6c076a01d1ab08ae31457446e2c0df5304a1755779",
+      "id": "CultureMech:001029",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1551.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DSMZ_687_COLUMBIA_BLOOD_AGAR.yaml",
+      "sha256": "1bd1d60e982c9a02bf0cdd64ab3719ab732d02b2ffb5f6fc9042cc2e53db2acd",
+      "id": "CultureMech:001823",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium687.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1007_MINERAL_MEDIUM.yaml",
+      "sha256": "9ce5919f1bad48a4caf8672d622d611e5b8c030a35d7e1b661b0f9e62946dc25",
+      "id": "CultureMech:003510",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1007.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1046_ANOXYBACILLUS_AMYLOLYTICUS_medium.yaml",
+      "sha256": "60fd54e5e85a6635980a8e25e9252ecedb8c71229ca78d63587018e7e3f1c73b",
+      "id": "CultureMech:003604",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "ingredients[2].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf",
+          "text": "Tap water 1000.0 ml"
+        },
+        {
+          "kind": "title",
+          "path": "references[2].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf",
+          "text": "1046. ANOXYBACILLUS AMYLOLYTICUS MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1065_M1-NOCARDIOPSIS_ARABIA_medium.yaml",
+      "sha256": "8713d42ff61550eb7b5348f5a6a5e6ccce0c520c1c7e82ddadb45ca69da15ec2",
+      "id": "CultureMech:003648",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "ingredients[5].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf",
+          "text": "Sea water 1000.0 ml"
+        },
+        {
+          "kind": "title",
+          "path": "references[2].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf",
+          "text": "1065. M1-NOCARDIOPSIS ARABIA MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_111_BEIJERINCKIA_MEDIUM.yaml",
+      "sha256": "4d6740d46117ef7aefc3c6571eb4dab53e1fd06333c8cc9d08675366853d01e7",
+      "id": "CultureMech:003822",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+          "text": "DSMZ 111. BEIJERINCKIA MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+      "sha256": "1e0f79da0b7d6c74a57c4b6691ed672966dd25287451e689b4867e4f6945d6fc",
+      "id": "CultureMech:003867",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+          "text": "Riboflavin (0.2 mg/ml) filter-sterilized 5.0 ml"
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+          "text": "1157. PYEM MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1168_YPS_medium.yaml",
+      "sha256": "3bde5e87b3a35c67f7432ddfb3577fbf74064181f18e12a7061002f1a650467c",
+      "id": "CultureMech:003886",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1168.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1177_RUBITELEA_medium.yaml",
+      "sha256": "6b85ab4b2066e54eec66505e6be0cd7c976f33b2880315aea166d3ae37d98cb0",
+      "id": "CultureMech:003897",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1177.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1203_FASTIDIOUS_ANAEROBE_AGAR.yaml",
+      "sha256": "2853248face159a16aaddc004e71932eb1fd83587a5625be21b134d24bcc6ac1",
+      "id": "CultureMech:003951",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1203.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml",
+      "sha256": "9cb298367084d6cb6b8347acb301575cbbf14771acb8cea52df8979f522f578a",
+      "id": "CultureMech:004018",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[2].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+          "text": "DSMZ Medium 125: METHYLOBACTERIUM MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_12_SOIL_EXTRACT_medium.yaml",
+      "sha256": "89eb50decf05ab23c9f30cb79f976644a257bd69bd46797412dced7a82b8eadd",
+      "id": "CultureMech:004048",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf",
+          "text": "DSMZ medium 12: SOIL EXTRACT MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_138_LINDANE_medium.yaml",
+      "sha256": "c26bb66b7b0f3e48a464ac77ade48b56ebfa63d65e2c833fb783a0d55904fdff",
+      "id": "CultureMech:004112",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium138.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_189_OAT_FLAKE_medium.yaml",
+      "sha256": "703f3bffcb2b6b58848e40c043040a43c9f48aef1ee956ef19901c208e9b0fb2",
+      "id": "CultureMech:004213",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium189.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_191_CORN_MEAL_AGAR.yaml",
+      "sha256": "cd4239d4892d37c3b1c8e7a1ee3b310e616bcef37605adeeaadf2e0ed4577a8c",
+      "id": "CultureMech:004218",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_194_DESULFOBULBUS_MEDIUM.yaml",
+      "sha256": "b12f18438cdc09f8473df9c8dae37c884829dcebd36915e40b31c76797bf6b02",
+      "id": "CultureMech:004235",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium194.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_3073_Trace_element_solution_medium_318.yaml",
+      "sha256": "6817ca3ec79dfb4650878d4df24ea6c2914a5dfcce82853205d102780d8d5c26",
+      "id": "CultureMech:004859",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium318.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_3136_Fastidious_Anaerobe_Agar.yaml",
+      "sha256": "c5eab3dc4fcaeae5ac4668b48d4b73390b2a4197dfa50574e518d520a5ab13ea",
+      "id": "CultureMech:004984",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1203.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_363_PHENYLOBACTERIUM_MEDIUM.yaml",
+      "sha256": "6a0beb86c61e97cc921813feb08d24570b5395be155b402ceb4fa00d550e9416",
+      "id": "CultureMech:005086",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium363.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "sha256": "f082d7c6a1607d1f9b3d4edc86fbbea6464ca1072644ec2a4bae5f32686190a6",
+      "id": "CultureMech:005218",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Proteose peptone No 2 (DIFCO 0121-01-3)                                        5.0         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[1].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Proteose tryptone (DIFCO 0123-01)                                              1.0         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[2].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Proteose yeastolate (TC) (DIFCO 5577-15)                                       1.0         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[3].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "HEPES buffer (acid) (SIGMA H3375)                                              6.0         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[4].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Na-citrate                                                                     0.7         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[5].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Glucose (\u03b1-, D+)                                                               3.0         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[6].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Na-pyruvate                                                                    0.8         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[7].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "N-Acetylglucosamine                                                            0.4         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[8].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "MgCl2 x 6 H2O                                                                  0.3         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[9].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "L-Glutamine                                                                    0.1         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[10].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Aqua bidest. filter-sterilized                                              900.0         ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].solutions[1].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Stir slowly at 4 - 10\uf0b0C for 3 hours, adjust pH to 7.6 with 5 M NaOH. Filter sterilize."
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[1].composition[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Dissolve 14.0 g gelatine in 200 ml bidest. water,"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[1].composition[1].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Dissolve 14.0 g gelatine in 200 ml bidest. water,"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[2].composition[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143\nml bidest. water,"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[2].composition[1].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143\nml bidest. water,"
+        },
+        {
+          "kind": "snippet",
+          "path": "evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Rabbit serum, inactivated\n (GIBCO 037-06120M)                                                            86.0        ml"
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "403. BSK-MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_438_BORDET-GENGOU-MEDIUM_DIFCO.yaml",
+      "sha256": "2e0a3d1a55da7eddc3194124c77808ec71dc07d0f9ba9b9b4ad5554af10e711d",
+      "id": "CultureMech:005286",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium438.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_439_CASMAN-MEDIUM.yaml",
+      "sha256": "82f492761b35804283da6833858e2b7ca1575e4d96c7ef39143ca945e0319de6",
+      "id": "CultureMech:005287",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium439.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_459_SUCROSE-Peptone-MEDIUM.yaml",
+      "sha256": "91ec269a3c553c0f84a58cc05fa5d11a29ecfa3d21d2f699a6ff78cb23aec313",
+      "id": "CultureMech:005464",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium459.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_467_OTTOW_medium.yaml",
+      "sha256": "d3096542df25d59b05455cf785a218cf6aca26a110df99da5187eb8d22783da9",
+      "id": "CultureMech:005580",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "ingredients[6].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+          "text": "Tap water 1000.0 ml"
+        },
+        {
+          "kind": "title",
+          "path": "references[2].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+          "text": "DSMZ 467. OTTOW MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_469_YM-CATALASE_medium.yaml",
+      "sha256": "ed32038b0f388d4683c30c896de142d9e1a18600f4203156bdd664d3df3c27dd",
+      "id": "CultureMech:005582",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+          "text": "Catalase and MgSO4 are sterilized separately by filtration."
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+          "text": "DSMZ 469. YM-CATALASE MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml",
+      "sha256": "d466e3b6c68696467a9e6fbe58d25eecbf1ce32d0c83425426b297c28adc0f8e",
+      "id": "CultureMech:005614",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf",
+          "text": "Sodium resazurin (0.1% w/v) 0.50 ml"
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf",
+          "text": "489: LACRIMISPORA MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_51_SPHAEROTILUS_medium.yaml",
+      "sha256": "559e59e5a40c5bff79dce9b96d9ccfaee04a98ba498b8c404d014c3bb686fe9e",
+      "id": "CultureMech:005878",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium51.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_605a_NUTRIENT_AGAR_OXOID_CM3_WITH_PHOSPHATE.yaml",
+      "sha256": "dd55084ab6e3c9fc9d282da8fbfe8c704c75dd79d53ccf77d59f060b6bc8772c",
+      "id": "CultureMech:006094",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium605.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_618_TWEEN_80A_medium.yaml",
+      "sha256": "739b42757f58f416b2826588350510972dfd7d0029f0872983ff498bfd072b17",
+      "id": "CultureMech:006112",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "ingredients[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+          "text": "For solid media add 15.0 g agar. Dissolve ingredients and adjust the pH to 7.2. Sterilize by autoclaving. After sterilization add sterile Tween 80 to a final concentration of 1.0%."
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+          "text": "Casitone (Difco) 5.0 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[1].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+          "text": "Yeast extract (Difco) 3.0 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[2].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+          "text": "MgSO4 x 7 H2O 2.0 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[3].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+          "text": "For solid media add 15.0 g agar."
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[4].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+          "text": "Distilled water 1000.0 ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+          "text": "For solid media add 15.0 g agar. Dissolve ingredients and adjust the pH to 7.2. Sterilize by autoclaving. After sterilization add sterile Tween 80 to a final concentration of 1.0%."
+        },
+        {
+          "kind": "title",
+          "path": "references[0].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+          "text": "DSMZ 618: TWEEN 80A MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_646_RABBIT_BLOOD_AGAR.yaml",
+      "sha256": "0543ad3c22f2d895bd8324f97a74933111674f07c3a533792eaad7dc2a7aa4bf",
+      "id": "CultureMech:006192",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium646.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml",
+      "sha256": "d269dfa018bb979e7cec0a2f73495fa716ae7cfa39d12fcca6584c2f8068a685",
+      "id": "CultureMech:006265",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[4].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+          "text": "670: ACIDIFERROBACTER (MS) MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_672_HALF_STRENGTH_NUTRIENT_BROTH_OR_AGAR.yaml",
+      "sha256": "ebade0a2cec9cde0c1cfc96887ea439858013503ddf69c96303d4a1619832174",
+      "id": "CultureMech:006268",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium672.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "sha256": "a1d63c31c3045012ec21bf7216b5f20713d1897c89c3a536f5ebd3b36d28fc72",
+      "id": "CultureMech:006403",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "ingredients[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "Corn meal agar                                                               17.0          g"
+        },
+        {
+          "kind": "snippet",
+          "path": "ingredients[1].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "Peptone from soy meal                                                          8.0         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "ingredients[2].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "K2HPO4                                                                         1.0         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "ingredients[3].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "KH2PO4                                                                         1.0         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "ingredients[4].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "MgSO4 x 7 H2O                                                                  0.2         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "ingredients[5].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "Distilled water                                                           1000.0         ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].solutions[0].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[1].composition[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "20% bovine serum albumin, fraction V                                         10.0        ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[2].composition[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "10% glucose                                                                    5.0       ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[3].composition[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "10% cysteine (free base)                                                     10.0        ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "variants[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "For liquid medium, omit corn meal agar and change the phosphate concentration to\nKH2PO4, 1.5 g and K2HPO4, 0.5 g."
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "751. SC MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_803_SPHAEROTILUS-LEPTOTHRIX_medium.yaml",
+      "sha256": "fd04e734b4fcaa81288c8dd0d469f528b7734c282f2c66bd320b3588318fd891",
+      "id": "CultureMech:006520",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "ingredients[8].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf",
+          "text": "Tap water 1000.00 ml"
+        },
+        {
+          "kind": "title",
+          "path": "references[2].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf",
+          "text": "803. SPHAEROTILUS-LEPTOTHRIX MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_849_AE_medium.yaml",
+      "sha256": "3c53299493bac8510d1e357092c297a071d5a7935154424e3a121838afa96829",
+      "id": "CultureMech:006656",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium849.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+      "sha256": "fdcd031f21238e9ce826143de772bc4bf32c97e71ffd4941eb04c69b268e0163",
+      "id": "CultureMech:006900",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "KH2PO4 2.000 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[1].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "(NH4)2SO4 2.000 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[2].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "MgSO4 x 7 H2O 0.125 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[3].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "NaCl 0.500 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[4].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "FeSO4 x 7 H2O 0.002 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[5].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "Distilled water 1000.000 ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "variants[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%)."
+        },
+        {
+          "kind": "snippet",
+          "path": "variants[1].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%)."
+        },
+        {
+          "kind": "snippet",
+          "path": "evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%)."
+        },
+        {
+          "kind": "title",
+          "path": "references[0].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "DSMZ 956: MEDIUM FOR DSM 14457 AND 14458"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M2285_Vibrio_Natriegens_Medium.yaml",
+      "sha256": "664abdabd75b5734654fad9f7b7f6434d9e6c2a13456be614d030efdefac8998",
+      "id": "CultureMech:008871",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium115.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M2303_Thermus_Ruber_Medium.yaml",
+      "sha256": "fe4d78c228fef285c7dd9992c0b2641d85370d91c79b44b239b125eae7e7344d",
+      "id": "CultureMech:008889",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium256.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M2316_Ottow_Medium.yaml",
+      "sha256": "33abbdc0c3fda6aeeaae0b701bf059e41211ff4beed532e5294e140ed57f4599",
+      "id": "CultureMech:008903",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M2337_Cytophaga_Hutchinsonii_Medium.yaml",
+      "sha256": "0423c4ac3e740c58c4715de03115a311cf4efe8024a5d98492afd7bb510cc5df",
+      "id": "CultureMech:008924",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium160.pdf",
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M2339_Nutrient_Agar.yaml",
+      "sha256": "173cb0ae2eb78f4bf4d5154e8c7a75f8dc548734f2d0927dc2fc534a2d7aedb0",
+      "id": "CultureMech:008926",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M2340_Nutrient_Agar.yaml",
+      "sha256": "09a6a0bdda9dbfe33f46308687a2ec973fdb6a0939d5260caa9d1468fc8a2496",
+      "id": "CultureMech:008928",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M2354_Medium_For_Erythrobacter_Longus.yaml",
+      "sha256": "dbae5e0f4b5a5b1e9eb5ed70bac9c25bea7164e391c87f60a67c46926a46adda",
+      "id": "CultureMech:008939",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium695.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M2361_YE_10_Ca_Medium.yaml",
+      "sha256": "6baf161f9fcb65ec867099cdaa6aebfb8a2f13f43c9d5b70c6988088b3fbccd9",
+      "id": "CultureMech:008947",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1463.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M2362_Columbia_Blood_Agar.yaml",
+      "sha256": "bb2362247006c4cd131a3fa6d2221bd6b695d5c9edd19d38bda463999a071984",
+      "id": "CultureMech:008948",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium429.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M2582_Columbia_Blood_Medium.yaml",
+      "sha256": "1650713011b19ac6f84826a5d09c87327511650bab2960eeb0d875f685b786e6",
+      "id": "CultureMech:009150",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium693.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M2772_Serpulina_Murdochii_Medium.yaml",
+      "sha256": "3e9e814fca512af3651da12b84a5c375f6670d191371eec816acdc5c5dd36279",
+      "id": "CultureMech:009320",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium840.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M3116_Nutrient_Agar.yaml",
+      "sha256": "7a72df9ed31d0ca1b6b06346b6d0dfe64ae53ca85109695e2acf185d9354bfbf",
+      "id": "CultureMech:009588",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ae_medium.yaml",
+      "sha256": "b75660bfeda5a4c2daddb2a3d63a384cdc458414d5b8e9285f600bf2ecbe5484",
+      "id": "CultureMech:002006",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium849.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/agar_with_e_coli_as_feed.yaml",
+      "sha256": "31c79f5fe0b6796a599e798621c2ff84ff7cd4adf083a26c071995dd08209d3f",
+      "id": "CultureMech:002118",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium942.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/anoxybacillus_amylolyticus_medium.yaml",
+      "sha256": "61c23027dda09a164eb95d88e64807158766fea9d9e208369e04d581a5948ec5",
+      "id": "CultureMech:000469",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "ingredients[2].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf",
+          "text": "Tap water 1000.0 ml"
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf",
+          "text": "1046. ANOXYBACILLUS AMYLOLYTICUS MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/astidious_anaerobe_agar.yaml",
+      "sha256": "af2dfe52efa87ecd47992c5a589f2f52a100e3df83355bf1795581319932d08d",
+      "id": "CultureMech:009091",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1203.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bacillus_acidocaldarius_medium.yaml",
+      "sha256": "6302148d39581f7f35afdd342fdf182c5aee72aedbcb856cb7fed9c85d47e67b",
+      "id": "CultureMech:000861",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium13.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium13.pdf",
+          "text": "DSMZ medium 13: official recipe"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml",
+      "sha256": "ab92b341bd473a3ed09c7a28b5c244dd977dc22783f299b728673842c22c36c6",
+      "id": "CultureMech:001399",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[2].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf",
+          "text": "DSMZ 2. BACILLUS PASTEURII MEDIUM"
+        },
+        {
+          "kind": "title",
+          "path": "references[3].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+          "text": "DSMZ 1. NUTRIENT AGAR"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bacillus_schlegelii_heterotrophic_medium.yaml",
+      "sha256": "15f3c43c7646827c4d90cbc9b4e0ea58bee6667aa87adb7203975ed895cd7a7c",
+      "id": "CultureMech:001359",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+          "text": "DSMZ medium 260: official recipe"
+        },
+        {
+          "kind": "title",
+          "path": "references[2].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+          "text": "DSMZ medium 27: official recipe"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml",
+      "sha256": "f3af90a3c8f45afe680f0489ac7808318c88136aa0df90f6d9bcd26d4ec5da41",
+      "id": "CultureMech:001470",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium369.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium369.pdf",
+          "text": "DSMZ medium 369: official recipe"
+        },
+        {
+          "kind": "title",
+          "path": "references[2].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+          "text": "DSMZ medium 261: official recipe"
+        },
+        {
+          "kind": "title",
+          "path": "references[3].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+          "text": "DSMZ medium 260: official recipe"
+        },
+        {
+          "kind": "title",
+          "path": "references[4].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+          "text": "DSMZ medium 27: official recipe"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bacto_marine_agar.yaml",
+      "sha256": "b1415b4cbb30bedbc2b26bdd1b03096af51369b55f660fa4ec1c3706b37786f2",
+      "id": "CultureMech:006092",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium604.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/beijerinckia_medium.yaml",
+      "sha256": "26d5cf2253a725ad7623ad4626b28ac6b12cbd55ff5418aa1073c5f5da060a24",
+      "id": "CultureMech:000556",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+          "text": "DSMZ 111. BEIJERINCKIA MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bme_ctvm2_cell_line_medium_occidentia_massiliensis.yaml",
+      "sha256": "d06a1999c8260b4b6e8a609e094e51554c04a0752b9c67674ee8d7264b578fd0",
+      "id": "CultureMech:001155",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1670.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bordet_gengou_medium_difco.yaml",
+      "sha256": "132d7b8f7019f9fe8ba12ba9d698611a009a704c023b667a92f17b768d938695",
+      "id": "CultureMech:001546",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium438.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/brucella_agar.yaml",
+      "sha256": "c6acdb25379a635738235c5353b191bd7fffade7ecd6699a4bc0489c51b19104",
+      "id": "CultureMech:001710",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium584.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "sha256": "f8122a8f29ae15227cd3130a9e57d5d01a1369b662b6e67ee8c30c1fb0e71ae2",
+      "id": "CultureMech:001513",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Proteose peptone No 2 (DIFCO 0121-01-3)                                        5.0         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[1].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Proteose tryptone (DIFCO 0123-01)                                              1.0         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[2].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Proteose yeastolate (TC) (DIFCO 5577-15)                                       1.0         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[3].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "HEPES buffer (acid) (SIGMA H3375)                                              6.0         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[4].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Na-citrate                                                                     0.7         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[5].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Glucose (\u03b1-, D+)                                                               3.0         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[6].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Na-pyruvate                                                                    0.8         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[7].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "N-Acetylglucosamine                                                            0.4         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[8].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "MgCl2 x 6 H2O                                                                  0.3         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[9].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "L-Glutamine                                                                    0.1         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[10].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Aqua bidest. filter-sterilized                                              900.0         ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].solutions[1].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Stir slowly at 4 - 10\uf0b0C for 3 hours, adjust pH to 7.6 with 5 M NaOH. Filter sterilize."
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[1].composition[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Dissolve 14.0 g gelatine in 200 ml bidest. water,"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[1].composition[1].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Dissolve 14.0 g gelatine in 200 ml bidest. water,"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[2].composition[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143\nml bidest. water,"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[2].composition[1].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143\nml bidest. water,"
+        },
+        {
+          "kind": "snippet",
+          "path": "evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "Rabbit serum, inactivated\n (GIBCO 037-06120M)                                                            86.0        ml"
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+          "text": "403. BSK-MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/casman_medium.yaml",
+      "sha256": "bdd66a7f3d93301b8d7366266ab699ac90a6f9ea9ec397c0899132ee707d1d14",
+      "id": "CultureMech:001547",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium439.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/cherry_agar_cbs_formula.yaml",
+      "sha256": "dad6977624829a63ab81dfd5a3965ce34291bfb5a38109575959177314e62e86",
+      "id": "CultureMech:001374",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium277.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/chitin_stock_solution_medium_766.yaml",
+      "sha256": "984de1c75e4b37f1b2d05208786178dbba03d666c0770bc837d14560ac756060",
+      "id": "CultureMech:004269",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium766.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/clostridium_neopropionicum_medium.yaml",
+      "sha256": "8577ccd5217e37dd364ef021a57e6154f5af93d9172d1d520989866ba0916e86",
+      "id": "CultureMech:005884",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium318.pdf",
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium522.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/corn_meal_agar.yaml",
+      "sha256": "e9d140d6162916195a0764e063c59f700fa9a09f00e4586eac5255bef4642c95",
+      "id": "CultureMech:001283",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/cow_manure_agar.yaml",
+      "sha256": "0f25051dad672e09b6b25f3de36a6f225763127edbdd59e89c1a11ece118a2ee",
+      "id": "CultureMech:001794",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf",
+          "text": "DSMZ medium 657: COW MANURE AGAR"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/cultivation_medium_for_chlamydiae.yaml",
+      "sha256": "febe27974a97ce695b1f295d1084b140d83551acd28f97c9586f30425f774839",
+      "id": "CultureMech:000636",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1193.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/cultivation_medium_for_chlamydophila_pecorum.yaml",
+      "sha256": "4aaebea5123937963df89a51b50716aefc25d625db222904faedd3addaadb2ce",
+      "id": "CultureMech:000973",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1503.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfobacter_curvatus_medium.yaml",
+      "sha256": "eedd9ed7c6373d3b4cbd237ecb9af3eeebe7b8de0de151edf6ae3145ff3f3c76",
+      "id": "CultureMech:001291",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium195.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfobacter_sp_medium.yaml",
+      "sha256": "c417ad52cba8f4156cd5d8deaf56d023180ba4dd687261a0d300c41d2eac983e",
+      "id": "CultureMech:004252",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium195.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfobulbus_sp_medium_freshwater.yaml",
+      "sha256": "43585e3bdf3a58fc77540bdfae058471adadc4d0b3d5c42e68595fe7d15ef0d5",
+      "id": "CultureMech:001288",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium194.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfofrigus_medium.yaml",
+      "sha256": "3e5edd379ff1a14ba69fe073ddebb95f446bbb785d73510d8f413c7647f35c78",
+      "id": "CultureMech:002020",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium861.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/dilute_filtered_malt_extract_agar.yaml",
+      "sha256": "da0951e3b56ee611032a2cd01e949a2bb23e1a19cb9e59dcc95a3d7d465d9ab7",
+      "id": "CultureMech:004153",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1427.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/dsm_15672.yaml",
+      "sha256": "c1a86cc51ca61fe5c7d32fc45de9c89372c003f9b15ecc821685ab968158a51d",
+      "id": "CultureMech:003507",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1007.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/dsm_15673.yaml",
+      "sha256": "6719ec75ce661b7a68470f76c4ddb0bb007bd7d08aa11d94e70e0afb989b8398",
+      "id": "CultureMech:003508",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1007.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/dsm_16984_dsm_24478_24479_24480_24481_24492_24493_and_24527.yaml",
+      "sha256": "9bc7d0e225036dca99d94be26e4a6c79209a7dc178c95146cea118d4bbfc4850",
+      "id": "CultureMech:003509",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1007.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ex_lm_medium.yaml",
+      "sha256": "7ad50f43c39bf475d3e1a68074b04a1903f557279b48e0db21027c141f1a0689",
+      "id": "CultureMech:001028",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1550.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/fastidious_anaerobe_agar.yaml",
+      "sha256": "92dad8e37d4b7d7020609b82bedf86e1be88cb056b38cd7ff45dc3b65fd372d0",
+      "id": "CultureMech:000653",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1203.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/fe_iii_nta_solution_medium_1001.yaml",
+      "sha256": "01e9b149bce1b478a6e378610466097b534669761480adcf4e236fa7ab7b8eaa",
+      "id": "CultureMech:004271",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_12881.yaml",
+      "sha256": "ca4b6bfa3f592f06e07f87bf66e5e6bd6a13661218c51fb8aa1ba902247f4a91",
+      "id": "CultureMech:005690",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium504.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_13687.yaml",
+      "sha256": "ca11ceb6f3c68e9203c44219b055902dfb01e7d97c95b8dc3b0ab16a11eb99ba",
+      "id": "CultureMech:005691",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium504.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_14042.yaml",
+      "sha256": "bd0a42424e35318d8a84da40babd7bf1ec1fdb04869ea6c122e648c6f64c758b",
+      "id": "CultureMech:004140",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_14880.yaml",
+      "sha256": "88c75d49f9cfc378ceb2852aefba1c6f56bfe8b08c4db9401b1f088082875958",
+      "id": "CultureMech:004231",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium194.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_1744.yaml",
+      "sha256": "3337ec50824f432eddda40310349532335f6608ea350384027979c6caf95a66b",
+      "id": "CultureMech:004230",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium194.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_19335.yaml",
+      "sha256": "f5bb69b99e684b4d1931109c1a5b54c6675d6abf7893f4e2a973698531c9961a",
+      "id": "CultureMech:005692",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium504.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_2095.yaml",
+      "sha256": "d2567ec9d4db4e29405ba73be85e96984f29fbd5c8237a8a9c4f12a76c942582",
+      "id": "CultureMech:004132",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_2118.yaml",
+      "sha256": "83d68c915cbf0c9b83398b06accd80f67e426c2d9d1f390e99b8d69231ba9613",
+      "id": "CultureMech:005085",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium363.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_21556.yaml",
+      "sha256": "4e90ff2048fe791769b05fc8c3b7f32aeec1ebd4f29be0fd7dbf110f68e45ebd",
+      "id": "CultureMech:004232",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium194.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_21626.yaml",
+      "sha256": "dffb53c73317251c9631b0a8a2938d9317ad1c090ad342e9039502ec9ee21a28",
+      "id": "CultureMech:004124",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_2373.yaml",
+      "sha256": "7b17a83f5373d5e93b7a788c5fe460422f28d24a5cae4bd8091025479fdbe2c1",
+      "id": "CultureMech:004135",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_25720.yaml",
+      "sha256": "aff3d714dc765d710779b7c1e84b41c9ada1a97c94ceedca392acc2c6a9b1446",
+      "id": "CultureMech:004215",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_25939.yaml",
+      "sha256": "b7c8c1e99a8dfc63b105713bad3c72eea91e5121046a26f17b49fee465ccd843",
+      "id": "CultureMech:004217",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_25945.yaml",
+      "sha256": "b5db1084455f89453854a863497c9f9e8d9bdeae0b7f51a71659005a15b0e53c",
+      "id": "CultureMech:004216",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_2831.yaml",
+      "sha256": "fb06252847f5164d488353ac35404a6ec1a63c691576825059c1a3029acc7430",
+      "id": "CultureMech:004136",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_4254.yaml",
+      "sha256": "5135bd32ca184a987d6e0e3c0400c84531c6317be2da2acebd578aa78903f45d",
+      "id": "CultureMech:004139",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_4661.yaml",
+      "sha256": "4099b885ed51c5a4e2913763deb0bacbdfe0817f1234b2a2393dbe8a1123ab74",
+      "id": "CultureMech:004246",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium195.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_5848.yaml",
+      "sha256": "33de2cf43c8680cb645ff4b2611005891d15e1bdd755a90f9fbf991c24ff27c0",
+      "id": "CultureMech:005687",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium504.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_6233.yaml",
+      "sha256": "5b361edf6898e4a844fcb34696a88d2aa3ae51196dfbcc0a4fd3025e9a96659b",
+      "id": "CultureMech:005688",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium504.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9463.yaml",
+      "sha256": "bd20a7cc5a3d31e5fc81cae9d1d73410edd7c99e3ca9f07d7fef9858e819d656",
+      "id": "CultureMech:006260",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+          "text": "For DSM 9463: Adjust  pH  to 3.5  with 1 N H2SO4  prior to  autoclaving  and omit  FeSO4 x\n7 H2O from the medium. Before use, add 5.00 g/l of powdered sulfur sterilized by steaming\nin a boiling water bath for 3 hours on each of 3 successive days."
+        },
+        {
+          "kind": "snippet",
+          "path": "variants[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+          "text": "For DSM 9463: Adjust  pH  to 3.5  with 1 N H2SO4  prior to  autoclaving  and omit  FeSO4 x\n7 H2O from the medium. Before use, add 5.00 g/l of powdered sulfur sterilized by steaming\nin a boiling water bath for 3 hours on each of 3 successive days."
+        },
+        {
+          "kind": "title",
+          "path": "references[2].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+          "text": "670: ACIDIFERROBACTER (MS) MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9466.yaml",
+      "sha256": "e69e4d049c712d303e2a7ab5659bfdcec254c72b8c23a2708d1691cf99007f4e",
+      "id": "CultureMech:006262",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+          "text": "For DSM 9466: Adjust  pH  to 3.0  with 1 N H2SO4  prior  to autoclaving and  omit  FeSO4 x\n7 H2O from the medium. Before use, add 5.00 g/l of powdered sulfur sterilized by steaming\nin a boiling water bath for 3 hours on each of 3 successive days and 0.20 g/l of yeast\nextract (from a sterile stock solution)."
+        },
+        {
+          "kind": "snippet",
+          "path": "variants[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+          "text": "For DSM 9466: Adjust  pH  to 3.0  with 1 N H2SO4  prior  to autoclaving and  omit  FeSO4 x\n7 H2O from the medium. Before use, add 5.00 g/l of powdered sulfur sterilized by steaming\nin a boiling water bath for 3 hours on each of 3 successive days and 0.20 g/l of yeast\nextract (from a sterile stock solution)."
+        },
+        {
+          "kind": "title",
+          "path": "references[2].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+          "text": "670: ACIDIFERROBACTER (MS) MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9467.yaml",
+      "sha256": "3bd89db4acaafe29f61d1b188d61844bd35dda1a7a7b01367ac55d40de806b0a",
+      "id": "CultureMech:006263",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+          "text": "For DSM 9467: Adjust  pH to 3.0  with 1 N H2SO4  prior to autoclaving   and  omit  FeSO4 x\n7 H2O from the medium. Before use, add 2.00 g/l D-glucose and 0.1 g/l yeast extract from\nfilter-sterilized stock solutions."
+        },
+        {
+          "kind": "snippet",
+          "path": "variants[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+          "text": "For DSM 9467: Adjust  pH to 3.0  with 1 N H2SO4  prior to autoclaving   and  omit  FeSO4 x\n7 H2O from the medium. Before use, add 2.00 g/l D-glucose and 0.1 g/l yeast extract from\nfilter-sterilized stock solutions."
+        },
+        {
+          "kind": "title",
+          "path": "references[2].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+          "text": "670: ACIDIFERROBACTER (MS) MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9468.yaml",
+      "sha256": "d100dc4c4829f6b4464b39d8102e0c2beae8bc71a9441dba3b7aae7631d1d7cf",
+      "id": "CultureMech:006264",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "variants[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+          "text": "For DSM 9468: Adjust pH to 1.6 with 4 N H2SO4 prior to autoclaving."
+        },
+        {
+          "kind": "title",
+          "path": "references[2].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+          "text": "670: ACIDIFERROBACTER (MS) MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9705.yaml",
+      "sha256": "8598212ad1f24e23f11ff26e97194f9ef8aa3e7fc81d3042d3eae4c04d25e418",
+      "id": "CultureMech:005689",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium504.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/glucose_medium_nakayama.yaml",
+      "sha256": "29fde6ad1272ff50f226d76aff4a521b7037ba37f107a7b21d265294c12ebc6c",
+      "id": "CultureMech:001562",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium452.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium452.pdf",
+          "text": "DSMZ medium 452: official recipe"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/half_strength_nutrient_broth_or_agar.yaml",
+      "sha256": "500b5425cfd52fe8bc3f3c9d861adc945e69046bf860d0db912818418ba330cd",
+      "id": "CultureMech:001813",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium672.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/hutners_salts_medium_590.yaml",
+      "sha256": "3ed781bc0d2a74c5cbfddb53071805d8891a89fbda821cde672f902d44059af5",
+      "id": "CultureMech:004392",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium590.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/isp_7_medium.yaml",
+      "sha256": "0baff82eba6ee2c9318db2a4104840352d13e490992ca3f8da1507c09a303672",
+      "id": "CultureMech:001099",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1619.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/k7_medium.yaml",
+      "sha256": "a306810506bd01bec6957900750c4b7a5a63818ff7be8b4f608c1c3cb1ada03d",
+      "id": "CultureMech:000642",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1199.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/lacrimispora_medium.yaml",
+      "sha256": "cf4015c7c1ea37127283a0b1d6d23648a43304e9a00fce60f323c1576bfb451d",
+      "id": "CultureMech:001616",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf",
+          "text": "489: LACRIMISPORA MEDIUM"
+        },
+        {
+          "kind": "snippet",
+          "path": "evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf",
+          "text": "Sodium resazurin (0.1% w/v) 0.50 ml"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/lactic_acid_whey_medium_456.yaml",
+      "sha256": "6913850752d1bb6503c0aa86fb47e670214d520e0b07082eb070a32427d68341",
+      "id": "CultureMech:004985",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium456.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/leucothrix_medium.yaml",
+      "sha256": "c93134f4c1faaa4a87b58f9f121a39e92de9c817ee6bb679c666fcf9d4e7bfea",
+      "id": "CultureMech:001943",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium79.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium79.pdf",
+          "text": "DSMZ medium 79: official recipe"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/lindane_medium.yaml",
+      "sha256": "214edc620273f3638982dfe171874ccc3825332af8dee8b062fe59467f41a85f",
+      "id": "CultureMech:000850",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium138.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/liver_broth_oxoid_cm_77.yaml",
+      "sha256": "e26fd122ff3e111857d6fc01d155cba927151c21cd012c02576b840bdaec9f9b",
+      "id": "CultureMech:001915",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium77.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/m1_nocardiopsis_arabia_medium.yaml",
+      "sha256": "22246f677b01345ff651f98db159cf6554ec28a4d7ea890e81c450c3034a6318",
+      "id": "CultureMech:000498",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "ingredients[5].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf",
+          "text": "Sea water 1000.0 ml"
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf",
+          "text": "1065. M1-NOCARDIOPSIS ARABIA MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/m_05.yaml",
+      "sha256": "4931d4ccea712b09f09def73753f17e21cd186b9399e71a8988a75fd2a1ee515",
+      "id": "CultureMech:000910",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1447.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/marine_caulobacter_medium.yaml",
+      "sha256": "dd4dee73563ec7ea6e5a944f0880b98aa186dbdd54a17c4218521fc917137df6",
+      "id": "CultureMech:006089",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium601.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1634_Main_sol_803.yaml",
+      "sha256": "6f8437e436d0b63d8204dbefb673942905135fc88bb14edc3ab301c38c161f59",
+      "id": "CultureMech:011091",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "composition[8].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf",
+          "text": "Tap water 1000.00 ml"
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf",
+          "text": "803. SPHAEROTILUS-LEPTOTHRIX MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_190_Main_sol_111.yaml",
+      "sha256": "3a1b976e9bcd5b418eff9f7d9335298d551ab34b6cde06a874e5924801c228c1",
+      "id": "CultureMech:011325",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+          "text": "DSMZ 111. BEIJERINCKIA MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_1939_Main_sol_942.yaml",
+      "sha256": "908616708a795694dcfdf3e1827bbc335ed47aaa42cf1472ef15717718d2db1e",
+      "id": "CultureMech:011348",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium942.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2114_Main_sol_1046.yaml",
+      "sha256": "c955336d5c1e4bcc68a808759cecd98f12f8b5d6a80b9bd602d0620975a465c1",
+      "id": "CultureMech:011515",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "composition[2].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf",
+          "text": "Tap water 1000.0 ml"
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf",
+          "text": "1046. ANOXYBACILLUS AMYLOLYTICUS MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2155_Main_sol_1065.yaml",
+      "sha256": "f0cf7a5dc511b3b08a85ba9a3062ee44b381dcd704731fd043ef9aa2258b8e89",
+      "id": "CultureMech:011550",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "composition[5].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf",
+          "text": "Sea water 1000.0 ml"
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf",
+          "text": "1065. M1-NOCARDIOPSIS ARABIA MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_223_Main_sol_125.yaml",
+      "sha256": "b1ee6d78847637b14b08d136134423eb1b9a54a2f1bd5388431a595c2f64bb23",
+      "id": "CultureMech:011631",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+          "text": "DSMZ Medium 125: METHYLOBACTERIUM MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2323_Main_sol_1157.yaml",
+      "sha256": "d6fba1e1a18e07c3b6fb7625beaf8d74174a733fe40ffcc49f6214b89a70c4ef",
+      "id": "CultureMech:011703",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+          "text": "1157. PYEM MEDIUM"
+        },
+        {
+          "kind": "snippet",
+          "path": "source_data.evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+          "text": "Riboflavin (0.2 mg/ml) filter-sterilized 5.0 ml"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml",
+      "sha256": "4f966008d586099049e8cb21f4f62b76890142471b811eac4dec209d1f17942b",
+      "id": "CultureMech:011713",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+          "text": "1164. HALOMICROBIUM KATESII MEDIUM"
+        },
+        {
+          "kind": "snippet",
+          "path": "source_data.evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+          "text": "FeCl3 x 6 H2O (0.5%) 7 drops"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2838_Total_Salts.yaml",
+      "sha256": "9c8bf38adc102d98625e42260c4901b35800fdd9c84768a866a8c82671af885c",
+      "id": "CultureMech:012117",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[2].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf",
+          "text": "DSMZ 1399. HALOPHILIC MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3465_Main_sol_1670.yaml",
+      "sha256": "07e8012a527e2db8490eb8b1de649ef79020a7b595e8f1a3518d487f3a671e66",
+      "id": "CultureMech:012590",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1670.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_531_Main_sol_265.yaml",
+      "sha256": "28684ae21394b3dcd43f89b865618a6a81776e58548c29bfae89093963e6cdd8",
+      "id": "CultureMech:014231",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "sulfur (10 g)-sterilized by steaming for 3 h on each of \nthree successive days"
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "DSMZ 265. THERMOFILUM PENDENS MEDIUM"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[12].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "Distilled water 1000.00 ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[1].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[2].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "sucrose (20 ml of 10% \nw/v solution)-filter-sterilized"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[3].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "Na2S x 9 H2O (10 ml of 3% w/v \nsolution)-autoclaved under nitrogen atmosphere."
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[4].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "Polar lipid fraction prepared from \n Thermoproteus tenax (DSM 2078) \n or from any other archaebacterium, \n aqueous suspension 6 - 12.00 ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "source_data.evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+          "text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_959_Main_sol_467.yaml",
+      "sha256": "aaffbea00b891aed25712f88d0803e219d98e6ea82e4409a59fdfa3090d0f55f",
+      "id": "CultureMech:015296",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "composition[6].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+          "text": "Tap water 1000.0 ml"
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+          "text": "DSMZ 467. OTTOW MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_961_Main_sol_469.yaml",
+      "sha256": "d3f82f7d3356f9468ff1c11d283ce32f1cfa3a175629d6c3221110d502a6e437",
+      "id": "CultureMech:015299",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+          "text": "DSMZ 469. YM-CATALASE MEDIUM"
+        },
+        {
+          "kind": "snippet",
+          "path": "source_data.evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+          "text": "Catalase and MgSO4 are sterilized separately by filtration."
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_995_Main_sol_489.yaml",
+      "sha256": "911055dd2fd8265cce90b2ef7ee81baf379bbb06f79fb06d11e133d45e7898c5",
+      "id": "CultureMech:015327",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf",
+          "text": "489: LACRIMISPORA MEDIUM"
+        },
+        {
+          "kind": "snippet",
+          "path": "source_data.evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf",
+          "text": "Sodium resazurin (0.1% w/v) 0.50 ml"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_194_modified_for_dsm_13527.yaml",
+      "sha256": "2ec8fcc784c2a1d61f585a227787c6ed82e54f8de8cbc0ef2d3c2192964978c9",
+      "id": "CultureMech:004229",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium194.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_194_modified_for_dsm_5092.yaml",
+      "sha256": "84bbb6caa900688ab00f9b001da01923ea46727c4f938d9f343f4480a80df6e8",
+      "id": "CultureMech:004233",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium194.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_194_modified_for_dsm_6523.yaml",
+      "sha256": "012528fdf3f1ba6398c4114a7bd4cd96a981e908b10693b7cce9e4fbd79c6460",
+      "id": "CultureMech:004234",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium194.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_1_liquid_with_20_horse_serum.yaml",
+      "sha256": "4583ce509d8f2318397a8c9142bda3817061b907b35886282e15ba42ebb7a479",
+      "id": "CultureMech:008794",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_for_chemolithotrophic_growth_of_bacillus_schlegelii.yaml",
+      "sha256": "e68fed511a9c3b8ec58fa22ca86e9657f7a541fb16a221145a47d7fb6693db50",
+      "id": "CultureMech:001360",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+          "text": "DSMZ medium 261: official recipe"
+        },
+        {
+          "kind": "title",
+          "path": "references[2].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+          "text": "DSMZ medium 260: official recipe"
+        },
+        {
+          "kind": "title",
+          "path": "references[3].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+          "text": "DSMZ medium 27: official recipe"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+      "sha256": "f322e18503801cfdd53950330c2476d7e5bbce6e3a0798ac159699935bc5bae9",
+      "id": "CultureMech:002134",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "DSMZ 956: MEDIUM FOR DSM 14457 AND 14458"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "KH2PO4 2.000 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[1].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "(NH4)2SO4 2.000 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[2].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "MgSO4 x 7 H2O 0.125 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[3].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "NaCl 0.500 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[4].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "FeSO4 x 7 H2O 0.002 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[5].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "Distilled water 1000.000 ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "variants[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%)."
+        },
+        {
+          "kind": "snippet",
+          "path": "variants[1].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%)."
+        },
+        {
+          "kind": "snippet",
+          "path": "evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%)."
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine.yaml",
+      "sha256": "d0fcc93aba25c7662154bb86904cb303f4385b73419005de70f370b44fc79740",
+      "id": "CultureMech:006899",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "ingredients[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%)."
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "KH2PO4 2.000 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[1].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "(NH4)2SO4 2.000 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[2].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "MgSO4 x 7 H2O 0.125 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[3].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "NaCl 0.500 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[4].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "FeSO4 x 7 H2O 0.002 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[5].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "Distilled water 1000.000 ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%)."
+        },
+        {
+          "kind": "title",
+          "path": "references[0].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+          "text": "DSMZ 956: MEDIUM FOR DSM 14457 AND 14458"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/methylobacterium_medium.yaml",
+      "sha256": "5182ee774e098c981851a759200b18f4c8382d0332ccf10d9800b99e6094b969",
+      "id": "CultureMech:000718",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+          "text": "DSMZ Medium 125: METHYLOBACTERIUM MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mineral_medium.yaml",
+      "sha256": "be31208bf08071952ac99e9bcec6257a52a09e7c957550d6a73250cf3b05abcd",
+      "id": "CultureMech:000423",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1007.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/minimum_essential_medium_mem.yaml",
+      "sha256": "71a8efd4cefb0a8ba73956136de3e523624fe5c0944e07033df0ebd5123b3233",
+      "id": "CultureMech:001122",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1638.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/nutrient_agar_for_sporulation.yaml",
+      "sha256": "56117108c8dbffb626a4582f95a3a8e6c4a80f6a678b055c305b27df72683e17",
+      "id": "CultureMech:008929",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/nutrient_agar_oxoid_cm3.yaml",
+      "sha256": "bbbfa4dda5bbae4fcd8a9cbc1b068bfe43ebee088380ca8cd88884267dc10ccd",
+      "id": "CultureMech:001732",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium605.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/nutrient_agar_oxoid_cm3_with_phosphate.yaml",
+      "sha256": "4cf4b2e052efecdee93ce801eb8e8f08696ad9a443240a6b85fce4b857d7e244",
+      "id": "CultureMech:001733",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium605.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/oat_flake_medium.yaml",
+      "sha256": "fcc6ebd4768113ea76dab09bad3c5d82d0d6f7e6dfb8e693c5ec940900326453",
+      "id": "CultureMech:001281",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium189.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ottow_medium.yaml",
+      "sha256": "1f98e42a85b24347348bab2b82635d4f8064406a157ac9e3f187c53e21147a5b",
+      "id": "CultureMech:001596",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "ingredients[6].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+          "text": "Tap water 1000.0 ml"
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+          "text": "DSMZ 467. OTTOW MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/pelobacter_medium.yaml",
+      "sha256": "59b868bb524340b22e4abd1a3de92397f061d1176bfa8d96e5578d03bd06c05a",
+      "id": "CultureMech:005242",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium318.pdf",
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium418.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/peptone_broth.yaml",
+      "sha256": "a68b3d141a042bbfdcfc109df6d5e66e575a23a8fe1a62d61dc8338698db8dd1",
+      "id": "CultureMech:000938",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1471.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ph_medium.yaml",
+      "sha256": "14814451013322e5be98c1902b767dd1cc0ef1d797aa4313ecef23ea075d06ad",
+      "id": "CultureMech:000511",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1077.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/pyem_medium.yaml",
+      "sha256": "0dfe1a4a53d54ec50dc270670071be053684f1d867e93758fd2d7a2ca016217e",
+      "id": "CultureMech:000595",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+          "text": "1157. PYEM MEDIUM"
+        },
+        {
+          "kind": "snippet",
+          "path": "evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+          "text": "Riboflavin (0.2 mg/ml) filter-sterilized 5.0 ml"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/rabbit_blood_agar.yaml",
+      "sha256": "5e10ab42d2af58d19c8d8564ab3dc688ba84a885070dacd565c3e78e63814b3b",
+      "id": "CultureMech:001784",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium646.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/rcm_medium.yaml",
+      "sha256": "d46a32c1c75c049c55e2a604f80ec1fe20d0c81f69ba8ee65db12227b844a6bf",
+      "id": "CultureMech:001765",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium634.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/rhizobium_medium.yaml",
+      "sha256": "90b87448830e422a63bcade502988da691b5d598efd0565ad39f27094fcc48d4",
+      "id": "CultureMech:002171",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium98.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium98.pdf",
+          "text": "DSMZ medium 98: official recipe"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/rubitelea_medium.yaml",
+      "sha256": "32669e3136b49b4f7d643112905a4a3cede8d35512f1e682c74aaaed10d99d5b",
+      "id": "CultureMech:000619",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1177.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/sabouraud_glucose_medium.yaml",
+      "sha256": "fb21f19b59731093eb93c12e7188f86f28ceb8f3155067f78de61ae1c8ca26bf",
+      "id": "CultureMech:004154",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1429.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/salt_base_solution_medium_1189.yaml",
+      "sha256": "f7833a3a49287ad226a93880f76f9ffeb08888816766e52f1e984429cec16c9e",
+      "id": "CultureMech:004827",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1189.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/salt_solution_medium_592.yaml",
+      "sha256": "d16e591200a2489379bfef957b4acb0ab55f55b6ed8e61e16f1d4ecca5cebca0",
+      "id": "CultureMech:005192",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium592.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "sha256": "458e98d500f7ea402604afad6ec1503da85104507901e96479b51a429a81372a",
+      "id": "CultureMech:001884",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "ingredients[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "Corn meal agar                                                               17.0          g"
+        },
+        {
+          "kind": "snippet",
+          "path": "ingredients[1].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "Peptone from soy meal                                                          8.0         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "ingredients[2].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "K2HPO4                                                                         1.0         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "ingredients[3].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "KH2PO4                                                                         1.0         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "ingredients[4].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "MgSO4 x 7 H2O                                                                  0.2         g"
+        },
+        {
+          "kind": "snippet",
+          "path": "ingredients[5].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "Distilled water                                                           1000.0         ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].solutions[0].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[1].composition[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "20% bovine serum albumin, fraction V                                         10.0        ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[2].composition[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "10% glucose                                                                    5.0       ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[3].composition[0].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "10% cysteine (free base)                                                     10.0        ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "variants[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "For liquid medium, omit corn meal agar and change the phosphate concentration to\nKH2PO4, 1.5 g and K2HPO4, 0.5 g."
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+          "text": "751. SC MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/seawater_medium.yaml",
+      "sha256": "0d7d28f886d7ae4173404d68f6509ab8c6b26838114a0cd3c89a2b15c3bf3d56",
+      "id": "CultureMech:001225",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1752.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/soil_extract_medium.yaml",
+      "sha256": "fd4c42ebb7018bab05628d40958898adf8933e621c3534627463418adb8d4161",
+      "id": "CultureMech:000762",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf",
+          "text": "DSMZ medium 12: SOIL EXTRACT MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/solution_a_medium_1003.yaml",
+      "sha256": "c4c277cc773582399eb7e773af4b8036e7a7f844ad369b609f749c5c3382a31c",
+      "id": "CultureMech:004292",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1003.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/solution_a_medium_1145.yaml",
+      "sha256": "ed55c57c8b185c67e9e735b707a9ee11a9acabfdf0b14c4c30d4ad1086e02463",
+      "id": "CultureMech:004293",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1145.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/solution_of_growth_stimulating_factors_medium_829.yaml",
+      "sha256": "2d6a142307aec05278b1280cf5f8414f9fe3eae43afc6939b3fe6871e5e48a92",
+      "id": "CultureMech:004294",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/sphaerotilus_leptothrix_medium.yaml",
+      "sha256": "a4ee18710ac86f2930552801df501f1c801aaaf8494051661468df9cdd335869",
+      "id": "CultureMech:001947",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "ingredients[8].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf",
+          "text": "Tap water 1000.00 ml"
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf",
+          "text": "803. SPHAEROTILUS-LEPTOTHRIX MEDIUM"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/sphaerotilus_medium.yaml",
+      "sha256": "8faabb13bb468440a3e7cdf96b78990e4875f21d3406b59d7f930c5d36160373",
+      "id": "CultureMech:001652",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium51.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/spirochaeta_aurantia_medium.yaml",
+      "sha256": "214db7242fa8899e94a4bc52cc5dc7a5234ef39d870005abd56802e725db1866",
+      "id": "CultureMech:004195",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium168.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/spirochaeta_isovalerica_medium.yaml",
+      "sha256": "9ba9b7e0cc62670da4016da35ee7f51db2bb3d9c271196c3a5b34796d85b6411",
+      "id": "CultureMech:004701",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium273.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/srb_psychrophile_medium.yaml",
+      "sha256": "5d0ee2dbc9031c5b23da78ce404b0b8eec754273158f95e01ce95d57b9bb3d09",
+      "id": "CultureMech:006692",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium861.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/sucrose_peptone_medium.yaml",
+      "sha256": "cdd4efe14edcced1bcf57af39ecc3d1b204c5eee891a7f60a995559d10771dc0",
+      "id": "CultureMech:001573",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium459.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/swm_medium.yaml",
+      "sha256": "6c8f63b26a62fefed956c2251d848146116253ddf00c623926e1a54cc56fbbf1",
+      "id": "CultureMech:005693",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium504.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/tomato_juice_milk_medium.yaml",
+      "sha256": "15720c6f296e22d44fca0effb9b23797b8d57bb1abf69d225b87943be3396010",
+      "id": "CultureMech:001453",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium353.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/trace_element_solution_medium_318.yaml",
+      "sha256": "ffd49735ec58f3fcd3ac929c82d8283ac6a2216f6b9c7afa9a357398ca4246d8",
+      "id": "CultureMech:004400",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium318.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/tween_80a_medium.yaml",
+      "sha256": "5981441bc27f792d7ef0ccac817f2cdbfd0c354c34ed29a2b07d53c45d7ab627",
+      "id": "CultureMech:001748",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "snippet",
+          "path": "ingredients[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+          "text": "For solid media add 15.0 g agar. Dissolve ingredients and adjust the pH to 7.2. Sterilize by autoclaving. After sterilization add sterile Tween 80 to a final concentration of 1.0%."
+        },
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+          "text": "DSMZ 618: TWEEN 80A MEDIUM"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[0].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+          "text": "Casitone (Difco) 5.0 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[1].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+          "text": "Yeast extract (Difco) 3.0 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[2].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+          "text": "MgSO4 x 7 H2O 2.0 g"
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[3].evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+          "text": "For solid media add 15.0 g agar."
+        },
+        {
+          "kind": "snippet",
+          "path": "solutions[0].composition[4].evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+          "text": "Distilled water 1000.0 ml"
+        },
+        {
+          "kind": "snippet",
+          "path": "evidence[0].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+          "text": "For solid media add 15.0 g agar. Dissolve ingredients and adjust the pH to 7.2. Sterilize by autoclaving. After sterilization add sterile Tween 80 to a final concentration of 1.0%."
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/universal_medium_for_yeasts_ym.yaml",
+      "sha256": "e4a6878a3a4dfb21f0293118983d555c0953a01fa9e8738f6d3ef76f240cb1bc",
+      "id": "CultureMech:004210",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium186.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/vero_b4_medium.yaml",
+      "sha256": "0eb690edff49d2e485044c91bfb3d1877c0c9ff50c0b403223beac57a66b915b",
+      "id": "CultureMech:000641",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1198.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/vibrio_natriegens_medium_for_sporulation.yaml",
+      "sha256": "fb1e362f2e6aa05b27c441e2898b006e728f9003f607cfe9006c2b57356fa19b",
+      "id": "CultureMech:008872",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium115.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/vy_medium.yaml",
+      "sha256": "ea26bdccaf8c161e392ff3f6c318b008a0133347a676e98bf721a5c63076755f",
+      "id": "CultureMech:001704",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium577.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/wolfes_mineral_elixir_medium_792.yaml",
+      "sha256": "0da363abf9bd843eccddb148838702b5cface7dff6a0a2fc0378e376dbfaa54c",
+      "id": "CultureMech:004386",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/xtc_2_medium.yaml",
+      "sha256": "3b99351e32996a4d0ed90bbd7d899db54b3a585e149352ac44b5a1820ea68658",
+      "id": "CultureMech:000773",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1311.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/yeast_extract_skim_milk_medium.yaml",
+      "sha256": "cd9f6888e03e1e970f65cb4ed97527fc069be16aa4a15b5619d349dad1508efa",
+      "id": "CultureMech:004197",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium170.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ym_catalase_medium.yaml",
+      "sha256": "f182c9ebf843855662fd933ffa9927b5c7fc6bd44879123c1f498bd154c02ee1",
+      "id": "CultureMech:001598",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+          "text": "DSMZ 469. YM-CATALASE MEDIUM"
+        },
+        {
+          "kind": "snippet",
+          "path": "evidence[1].snippet",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+          "text": "Catalase and MgSO4 are sterilized separately by filtration."
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/yps_medium.yaml",
+      "sha256": "270ee352eb6bb797179790470cfea73b5c03855cc605448e8c38f41cba31fff4",
+      "id": "CultureMech:000610",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1168.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/zeikus_trace_elements_solution_medium_1343.yaml",
+      "sha256": "a0b19c4208184c7b1039c03bad6bcf17623c446d560582d2d11b4855e66c923f",
+      "id": "CultureMech:004982",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1343.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/fungal/dilute_filtered_malt_extract_agar.yaml",
+      "sha256": "f056ab9cb457ed2a01e6da4f500fd67437a006174cb7bdfd7e41594d9c581d19",
+      "id": "CultureMech:010452",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1427.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/fungal/potato_dextrose_agar.yaml",
+      "sha256": "f44d28688c166c55df27e18161dcb989a086e4f4446ea1b8ba3f95c4cfa4f105",
+      "id": "CultureMech:010445",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium129.pdf"
+      ],
+      "claims": [
+        {
+          "kind": "title",
+          "path": "references[1].title",
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium129.pdf",
+          "text": "DSMZ medium 129: official recipe"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/fungal/sabouraud_glucose_medium.yaml",
+      "sha256": "d9a2e8e90b1a88ff345f42509e328766df12fd1fdf503a2100823ce978663b9f",
+      "id": "CultureMech:010453",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1429.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/fungal/universal_medium_for_yeasts_ym.yaml",
+      "sha256": "7fd2fd0c262f20f4a14d7d6a6e28c661c667837d7d2aa773387496cb09d4cecb",
+      "id": "CultureMech:010463",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium186.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/fungal/yeast_extract_skim_milk_medium.yaml",
+      "sha256": "7a5d99f4446e68246716ec3dbb42b574624d66ee9de212b57b5a3b97b71d1e85",
+      "id": "CultureMech:010459",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium170.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/specialized/anaerobic_seawater_swm_medium.yaml",
+      "sha256": "7186aab4841ee06792c2b2cda47c796e07443dbbf8f1d13d4118b52f25e4bb23",
+      "id": "CultureMech:015356",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium504.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/specialized/bacto_marine_agar.yaml",
+      "sha256": "eefc9fb9382bedcd2509d964a301b39331e5ce36e976b414cf061e09ed37d4ab",
+      "id": "CultureMech:015364",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium604.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/specialized/gam_broth_gifu_anaerobic_medium_broth.yaml",
+      "sha256": "13a906ef1ce17ad36559def928d3525ed883b5335312317ff8ba2d5bdb2e50df",
+      "id": "CultureMech:015347",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1713.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/specialized/gam_broth_mod_gifu_anaerobic_medium_broth_modified.yaml",
+      "sha256": "39e4146e89334976c51b68a68031ff9eaa28f2eb87f6a7ddb1f27a6ac85679ab",
+      "id": "CultureMech:015348",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1715.pdf"
+      ],
+      "claims": []
+    },
+    {
+      "path": "data/normalized_yaml/specialized/marine_caulobacter_medium.yaml",
+      "sha256": "f5cde25722471a277d527a1c2a5840da00138d5dec4d979ff1d0d8c9d843d091",
+      "id": "CultureMech:015363",
+      "references": [
+        "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium601.pdf"
+      ],
+      "claims": []
+    }
+  ],
+  "sources": [
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1003.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1007.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1077.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1145.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium115.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1168.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1177.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1189.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1193.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1198.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1199.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1203.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium129.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium13.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1311.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1343.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium138.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1427.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1429.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1447.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1463.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1471.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1503.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1550.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1551.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium160.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1619.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1638.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1670.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium168.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium170.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1713.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1715.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1752.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium186.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium189.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium194.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium195.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium256.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium273.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium277.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium318.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium353.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium363.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium369.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium418.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium429.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium438.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium439.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium452.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium456.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium459.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium504.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium51.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium522.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium577.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium584.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium590.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium592.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium601.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium604.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium605.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium634.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium646.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium672.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium687.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium693.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium695.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium766.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium77.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium79.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium840.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium849.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium861.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium942.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium98.pdf"
+  ],
+  "counts": {
+    "records": 201,
+    "sources": 106,
+    "claims": 220
+  }
+}

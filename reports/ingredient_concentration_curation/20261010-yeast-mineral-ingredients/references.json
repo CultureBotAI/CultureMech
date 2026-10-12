@@ -1,0 +1,76 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "references",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/fungal/yeast_mineral_medium_10_g_l_glucose.yaml",
+        "--cache-dir",
+        "/tmp/yeast-mineral-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 2,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-mineral-ingredients/references-00.log",
+      "log_sha256": "831979cab0a3e1dcf0768a247e14b396d6e9aac288ed32075b2acd5e5a6d7203"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/fungal/yeast_mineral_medium_7_5_g_l_ethanol.yaml",
+        "--cache-dir",
+        "/tmp/yeast-mineral-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 2,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-mineral-ingredients/references-01.log",
+      "log_sha256": "831979cab0a3e1dcf0768a247e14b396d6e9aac288ed32075b2acd5e5a6d7203"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/fungal/yeast_mineral_medium_25_g_l_glucose.yaml",
+        "--cache-dir",
+        "/tmp/yeast-mineral-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 2,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-mineral-ingredients/references-02.log",
+      "log_sha256": "dbf35fcc783b974346495a2356be9b9b78ff3f5767e040dcadcfd9de3812ea1b"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/fungal/yeast_mineral_medium_7_9_g_l_ethanol.yaml",
+        "--cache-dir",
+        "/tmp/yeast-mineral-ingredient-reference-cache",
+        "--json"
+      ],
+      "returncode": 2,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-mineral-ingredients/references-03.log",
+      "log_sha256": "dbf35fcc783b974346495a2356be9b9b78ff3f5767e040dcadcfd9de3812ea1b"
+    }
+  ],
+  "source_sha256": "f8fc139c6c37261eed3e543224ea652ac81bc4701374b3c872bd119970d2a1b9",
+  "reviewed_preview_plan_sha256": "413ab653a133f8b37d2d89b1f2f39fff23baab998bbdf05f78ae0c80fab06560",
+  "applied_plan_sha256": "d142838fb68ac69ed7ff6ecb7f3e414a38c7571d83a979bf11b00c76d192e69f",
+  "code_sha256": {
+    "scripts/review_yeast_mineral_ingredients.py": "bf84d352506b2382f35c8c14475a82251325a930ce12286a5ab44a7432eeace8",
+    "tests/test_yeast_mineral_ingredients.py": "03097d7e9f9f9aee1cf0986c18febef441c39f6dac1d0a39b92b848883d0b978"
+  },
+  "inventory_before_sha256": "80e46610470e342131e2ebcdfc6770a67e351713dafbb30c29b78e4b86d596df",
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "production_reference_gate_passed": false,
+  "inventory_after_sha256": "80e46610470e342131e2ebcdfc6770a67e351713dafbb30c29b78e4b86d596df",
+  "normalized_inventory_unchanged": true
+}

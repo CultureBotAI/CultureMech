@@ -1,0 +1,70 @@
+{
+  "terminal": true,
+  "phase": "corpus",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/corpus-00.log",
+      "log_sha256": "e7a48e6e8ed0f78d7fc573bee52fa53a11fd99dd36405642430dd11568deb251"
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/corpus-01.log",
+      "log_sha256": "eb7360e4d6ac289a3c075ae3f26d2a32b53e6b2da8d03073cfda3e697295cbc0"
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/corpus-02.log",
+      "log_sha256": "b5022751d1e1933b39a783d0ae1fa6159dc7f6ea3f88eef1b3901f10ed13547a"
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/corpus-03.log",
+      "log_sha256": "09a2922082db841587410042dc33d7d3f72b2601f1d6b6f2b33322471ee47f2c"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/corpus-04.log",
+      "log_sha256": "22127ff9bdb97459d3d0d14ab1e9fd89c5b5e815548b94f1e52719bfb9fe00ca"
+    }
+  ],
+  "records_edited": 0,
+  "plan_sha256": "d7d3a7135aad5daf78ba2f3e82dfb73a0f3f185e1b7036457abd111da0892b9e",
+  "code_sha256": {
+    "scripts/repair_mediadb_ingredient_exceptions.py": "b27949707826eff4b229a612875452098d7cb5f6b3c62c81d0997958a1886f59",
+    "tests/test_mediadb_ingredient_exceptions.py": "9f96c7b25d1c5a1ef525d89328d7e594f73a55fed234dc3d795084bc00d51bc9"
+  },
+  "normalized_count": 15910,
+  "inventory_before_sha256": "83b9583a31a82ab2db7403fa21d8dc1fd30928d289bb7598a043348f4d82be2c",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "passed": true,
+  "inventory_after_sha256": "83b9583a31a82ab2db7403fa21d8dc1fd30928d289bb7598a043348f4d82be2c",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

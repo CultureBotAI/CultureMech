@@ -1,0 +1,548 @@
+{
+  "terminal": true,
+  "phase": "schema",
+  "records_applied": 0,
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/K212.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-0.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/K212.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-1.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/B2805.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-2.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/B2805.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-3.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S1038.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-4.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S1038.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-5.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S125.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-6.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S125.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-7.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S1728.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-8.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S1728.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-9.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S446.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-10.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S446.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-11.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S447.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-12.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S447.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-13.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S448.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-14.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S448.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-15.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S450.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-16.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S450.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-17.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S451.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-18.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S451.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-19.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S453.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-20.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S453.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-21.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S454.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-22.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S454.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-23.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S455.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-24.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S455.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-25.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S456.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-26.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S456.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-27.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S459.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-28.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S459.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-29.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S460.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-30.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S460.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-31.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S461.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-32.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S461.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-33.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S595.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-34.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S595.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-35.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S608.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-36.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S608.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-37.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S777.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-38.log",
+      "log_sha256": "ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/S777.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-39.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/D212.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-40.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/D212.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-41.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/D212a.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-42.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/tmp/ingredient-media-20261007/212-preview-yaml/D212a.yaml"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/schema-43.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    }
+  ],
+  "errors": [],
+  "code_sha256": {
+    "scripts/repair_synthrophomonas_family.py": "76d17c072395868ef670d923fecc40090c3f6a31681d6901002ad8127bfcc54c",
+    "tests/test_synthrophomonas_family.py": "3671184eedb05cb9acd02cfdabdbf87d121408154fbd06f141e5e6ca49b2a1df",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/audit.py": "d846b22a482acc9d91e989fc1e392247a8c97e55471b34daaa2d575c21a6956f"
+  },
+  "plan_sha256": "83fdebb5c629773b4b0ec2c5b810a66dc226602ab0df9aed0728eba35a14276d",
+  "context_sha256": "1d9b09a2915e57c4f212f1de08bb1a5ada6b2a4b8a47b6b6c5d528d00250e84a",
+  "inventory_before": "3e69263bb0c82e782c51c5a994945630fbf3a3b9f685248e16d7daf3367f05fc",
+  "ignored_files_included": true,
+  "files": [
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/K212.yaml",
+      "sha256": "195e286794329d37f8ac9d2b1dc2428f4304f6c3869fed4e580c012fac06b806"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/B2805.yaml",
+      "sha256": "c86330b5d8ad40476d2ca649f363bcba1aa84a0a40489461500c0bc65b14e9f1"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S1038.yaml",
+      "sha256": "2ce5ad4d65fc850fc8f8e1121491ea9a15d651369224b838151eda7679ab6e42"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S125.yaml",
+      "sha256": "2553c30993e31a01c65c253e46fe3dd57719f7af17d85143270b2666d9c0af2f"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S1728.yaml",
+      "sha256": "84abdfa4d8177f4b71bacee0519644fd98b7cd7a4bae6e59ef27dc2e0b9a6338"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S446.yaml",
+      "sha256": "4f3fae74d2d8c52d2f138ac054cabe7aabfabbd20fbacec68e5fc22699be4b3d"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S447.yaml",
+      "sha256": "ea6a0f01ee7667877869f678b02bc8578865130224e3b0f41fb57d3148cc5389"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S448.yaml",
+      "sha256": "b901feb393a1b1eb0f37493ca09653870a4425a9a18af966ac26582e17110ddc"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S450.yaml",
+      "sha256": "1e390c336dacde0752e8cb35b97d58d21a9d6288b3aaf24a4ccb777ddbde142c"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S451.yaml",
+      "sha256": "761e0b660c13e540f054c2c24f9501cb6340f172fe86e3576d7ef6d1e49794d7"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S453.yaml",
+      "sha256": "ff2bfbc4fe2c0bc16a905f1078fd765825f1665260fdf02783ed79326456e6dd"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S454.yaml",
+      "sha256": "ce80fac6673aab89427acf57b281d245dbe49577875cf8533186ce8c8d1c00de"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S455.yaml",
+      "sha256": "be8812408615d32b099208020fb3a4aff9a7f4afeb6c9ce248a54e82a86e64bb"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S456.yaml",
+      "sha256": "8394b26703936c49ac4704ef4db479811f8d0d994b629028d0c165408c852e5d"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S459.yaml",
+      "sha256": "613d9c2d53f65ed79df5a5826502b989e256b03e9284edfc4b3e8396e8dda0c0"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S460.yaml",
+      "sha256": "fa9c004a0077335291c2076b8a0b7520165a462043e19f0f70dff3f7a0a6375c"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S461.yaml",
+      "sha256": "93c8cc78097524f71ef6367f5dfbb35fdb686408f98db68b9271b098127c9275"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S595.yaml",
+      "sha256": "7eb5d36c3747726e6adb0adec4938e2b851fbb2469ebd3bad91060583a74bdc5"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S608.yaml",
+      "sha256": "801f8b158c2bfb41cb311dd649f9805e09df4ad1e1e4612b45af70c4b4a6dac7"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/S777.yaml",
+      "sha256": "0d2b06339d6a3ae344f0c4b6ce0c91524486fce79197a9797abcd6a1c78307b6"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/D212.yaml",
+      "sha256": "651b35960b7e4f038470e0cc7acc13b6c65a84130930862e78fa29e2fd1e87c1"
+    },
+    {
+      "path": "/tmp/ingredient-media-20261007/212-preview-yaml/D212a.yaml",
+      "sha256": "237373274bf38dc56bdd17afd15d556588e744f84fccd4365c82811d48408525"
+    }
+  ],
+  "all_checks_passed": true
+}

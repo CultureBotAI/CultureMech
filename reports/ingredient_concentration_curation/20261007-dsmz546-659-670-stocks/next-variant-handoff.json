@@ -1,0 +1,2194 @@
+{
+  "created_at": "2026-10-08T05:17:49.167294+00:00",
+  "commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+  "status": "Read-only unresolved handoff; not an apply plan or a claim of newly completed reviews.",
+  "pdf_captures": "reports/ingredient_concentration_curation/20261007-dsmz546-659-670-stocks/next-variant-source-captures.json",
+  "pdf_captures_sha256": "91eb71821b427e0da11c90ed1da9845df8609345754ed4e2bb84894aaa721ca1",
+  "mapping_source": {
+    "reference": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+    "http_status": 200,
+    "accessed_at": "2026-10-07T13:01:23.350274+00:00",
+    "sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+  },
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9463.yaml",
+      "id": "CultureMech:006260",
+      "sha256": "c05969404a17dff2024386299383b020e6bfcf24bb423c6df5644604a6661561",
+      "record": {
+        "id": "CultureMech:006260",
+        "name": "for_dsm_9463",
+        "original_name": "For DSM 9463",
+        "category": "bacterial",
+        "medium_type": "DEFINED",
+        "composition_type": "DEFINED",
+        "physical_state": "LIQUID",
+        "ph_value": 3.5,
+        "notes": "pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 670.1 | DSMZ Medium: 670 (mediadive.medium:670) | Aerobic: No",
+        "media_term": {
+          "preferred_term": "KOMODO Medium 670.1",
+          "term": {
+            "id": "komodo.medium:670.1",
+            "label": "For DSM 9463"
+          }
+        },
+        "ingredients": [
+          {
+            "preferred_term": "(NH4)2SO4",
+            "term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            },
+            "concentration": {
+              "value": "2",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            }
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.25",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "K2HPO4",
+            "term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "KCl",
+            "term": {
+              "id": "CHEBI:32588",
+              "label": "potassium chloride"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32588",
+              "label": "potassium chloride"
+            }
+          },
+          {
+            "preferred_term": "FeSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "20",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "H2SO4",
+            "term": {
+              "id": "CHEBI:26836",
+              "label": "sulfuric acid"
+            },
+            "notes": "pH adjustment (extracted from notes)",
+            "concentration": {
+              "value": "variable",
+              "unit": "VARIABLE"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:26836",
+              "label": "sulfuric acid"
+            }
+          }
+        ],
+        "applications": [
+          "Microbial cultivation"
+        ],
+        "curation_history": [
+          {
+            "timestamp": "2026-01-27T01:15:03.fZ",
+            "curator": "komodo-web-import",
+            "action": "Imported from KOMODO web table",
+            "notes": "Source: KOMODO, ID: 670.1"
+          },
+          {
+            "timestamp": "2026-02-03T11:19:17.618513",
+            "curator": "dsmz-resolver-v1.0",
+            "action": "Enriched with DSMZ composition",
+            "notes": "Copied ingredients from DSMZ Medium 670"
+          },
+          {
+            "timestamp": "2026-03-13T03:09:38.629874Z",
+            "curator": "data-quality-cleanup-v1.0",
+            "action": "Data quality fixes",
+            "notes": "Added pH buffer: H2SO4"
+          },
+          {
+            "timestamp": "2026-03-13T06:19:39.335048Z",
+            "curator": "culturemech-id-assigner-v1.0",
+            "action": "Assigned CultureMech ID",
+            "notes": "Assigned stable identifier: CultureMech:006260"
+          },
+          {
+            "curator": "schema-defaulter-v1.0",
+            "action": "Applied schema defaults and normalizations",
+            "notes": "Added default concentration for ingredient: H2SO4",
+            "timestamp": "2026-03-14T00:00:00+00:00"
+          },
+          {
+            "timestamp": "2026-03-17T06:30:50.000000Z",
+            "curator": "mediaingredientmech-enrichment-v1.0",
+            "action": "Added MediaIngredientMech links",
+            "notes": "Linked ingredients to MediaIngredientMech identifiers"
+          },
+          {
+            "timestamp": "2026-03-17T19:45:56.430081+00:00",
+            "curator": "normalize_media_names_to_snake_case.py",
+            "action": "NAME_NORMALIZED",
+            "notes": "Normalized name from \"For DSM 9463\" to \"for_dsm_9463\" for consistent matching"
+          },
+          {
+            "timestamp": "2026-05-16T09:03:34.887021+00:00",
+            "curator": "migrate_legacy_fields.py",
+            "action": "MIGRATED_LEGACY_FIELDS",
+            "notes": "curation_history.date->timestamp=1"
+          },
+          {
+            "timestamp": "2026-06-05T07:41:05.001127+00:00",
+            "curator": "mim-legacy-to-chebi-migration-v1.0",
+            "action": "Refreshed legacy MediaIngredientMech links to CHEBI keying",
+            "notes": "Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term (id-safe: ingredient's own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN id scheme."
+          },
+          {
+            "timestamp": "2026-06-10T07:46:58.636038+00:00",
+            "curator": "primary-term-label-canonicalization-v1.0",
+            "action": "Canonicalized primary term label to OBO canonical (OAK)",
+            "notes": "2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi."
+          },
+          {
+            "timestamp": "2026-09-13T00:00:00-07:00",
+            "curator": "repair_komodo_670_ms_ph_score10.py",
+            "action": "RESOLVED_KOMODO_670_MS_PH_VARIANTS",
+            "changes": "Linked as a KOMODO 670 pH variant",
+            "source": "KOMODO Medium 670.1",
+            "notes": "Marked KOMODO Medium 670.1 as a pH 3.5 strain-specific MS-MEDIUM variant."
+          }
+        ],
+        "data_quality_flags": [
+          "ingredients_curated"
+        ],
+        "parent_media": {
+          "path": "data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml",
+          "relationship": "PH_VARIANT",
+          "id": "CultureMech:006265",
+          "name": "ms_medium",
+          "notes": "KOMODO Medium 670 is the pH 2.2 MS-MEDIUM base for KOMODO Medium 670.1."
+        },
+        "variant_relationship": "PH_VARIANT",
+        "variant_modifications": [
+          "KOMODO Medium 670.1 specifies pH 3.5 for this DSM-specific MS-MEDIUM variant."
+        ]
+      },
+      "mapping": {
+        "cells": [
+          "670.1",
+          "For DSM 9463",
+          "3.5, H2SO4",
+          "false",
+          "false",
+          "false",
+          "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+        ],
+        "links": [
+          {
+            "href": "/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=670.1"
+          },
+          {
+            "href": "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+          }
+        ],
+        "snippet": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=670.1' >670.1</a></TD>\n\t\t\t\t\t<TD> For DSM 9463</TD>\n\t\t\t\t\t<TD> 3.5, H2SO4</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf</a></TD>\n\t\t\t\t</TR>",
+        "medium_id": "670",
+        "original_recipe": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+      },
+      "source_medium": "670",
+      "review_status": "base recipe incorrectly inherited; distinct strain formulation requires review"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9466.yaml",
+      "id": "CultureMech:006262",
+      "sha256": "e54899169ef5209514419606ac45beb4a00f8e2b2cca8292d407f6da0ef7e621",
+      "record": {
+        "id": "CultureMech:006262",
+        "name": "for_dsm_9466",
+        "original_name": "For DSM 9466",
+        "category": "bacterial",
+        "medium_type": "DEFINED",
+        "composition_type": "DEFINED",
+        "physical_state": "LIQUID",
+        "ph_value": 3.5,
+        "notes": "pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 670.3 | DSMZ Medium: 670 (mediadive.medium:670) | Aerobic: No",
+        "media_term": {
+          "preferred_term": "KOMODO Medium 670.3",
+          "term": {
+            "id": "komodo.medium:670.3",
+            "label": "For DSM 9466"
+          }
+        },
+        "ingredients": [
+          {
+            "preferred_term": "(NH4)2SO4",
+            "term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            },
+            "concentration": {
+              "value": "2",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            }
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.25",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "K2HPO4",
+            "term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "KCl",
+            "term": {
+              "id": "CHEBI:32588",
+              "label": "potassium chloride"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32588",
+              "label": "potassium chloride"
+            }
+          },
+          {
+            "preferred_term": "FeSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "20",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "H2SO4",
+            "term": {
+              "id": "CHEBI:26836",
+              "label": "sulfuric acid"
+            },
+            "notes": "pH adjustment (extracted from notes)",
+            "concentration": {
+              "value": "variable",
+              "unit": "VARIABLE"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:26836",
+              "label": "sulfuric acid"
+            }
+          }
+        ],
+        "applications": [
+          "Microbial cultivation"
+        ],
+        "curation_history": [
+          {
+            "timestamp": "2026-01-27T01:15:03.fZ",
+            "curator": "komodo-web-import",
+            "action": "Imported from KOMODO web table",
+            "notes": "Source: KOMODO, ID: 670.3"
+          },
+          {
+            "timestamp": "2026-02-03T11:18:54.840016",
+            "curator": "dsmz-resolver-v1.0",
+            "action": "Enriched with DSMZ composition",
+            "notes": "Copied ingredients from DSMZ Medium 670"
+          },
+          {
+            "timestamp": "2026-03-13T03:08:39.139117Z",
+            "curator": "data-quality-cleanup-v1.0",
+            "action": "Data quality fixes",
+            "notes": "Added pH buffer: H2SO4"
+          },
+          {
+            "timestamp": "2026-03-13T06:19:39.342809Z",
+            "curator": "culturemech-id-assigner-v1.0",
+            "action": "Assigned CultureMech ID",
+            "notes": "Assigned stable identifier: CultureMech:006262"
+          },
+          {
+            "curator": "schema-defaulter-v1.0",
+            "action": "Applied schema defaults and normalizations",
+            "notes": "Added default concentration for ingredient: H2SO4",
+            "timestamp": "2026-03-14T00:00:00+00:00"
+          },
+          {
+            "timestamp": "2026-03-17T06:29:40.000000Z",
+            "curator": "mediaingredientmech-enrichment-v1.0",
+            "action": "Added MediaIngredientMech links",
+            "notes": "Linked ingredients to MediaIngredientMech identifiers"
+          },
+          {
+            "timestamp": "2026-03-17T19:45:56.439780+00:00",
+            "curator": "normalize_media_names_to_snake_case.py",
+            "action": "NAME_NORMALIZED",
+            "notes": "Normalized name from \"For DSM 9466\" to \"for_dsm_9466\" for consistent matching"
+          },
+          {
+            "timestamp": "2026-05-16T09:03:34.892413+00:00",
+            "curator": "migrate_legacy_fields.py",
+            "action": "MIGRATED_LEGACY_FIELDS",
+            "notes": "curation_history.date->timestamp=1"
+          },
+          {
+            "timestamp": "2026-06-05T07:41:05.007051+00:00",
+            "curator": "mim-legacy-to-chebi-migration-v1.0",
+            "action": "Refreshed legacy MediaIngredientMech links to CHEBI keying",
+            "notes": "Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term (id-safe: ingredient's own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN id scheme."
+          },
+          {
+            "timestamp": "2026-06-10T07:46:58.638553+00:00",
+            "curator": "primary-term-label-canonicalization-v1.0",
+            "action": "Canonicalized primary term label to OBO canonical (OAK)",
+            "notes": "2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi."
+          },
+          {
+            "timestamp": "2026-09-13T00:00:00-07:00",
+            "curator": "repair_komodo_670_ms_ph_score10.py",
+            "action": "RESOLVED_KOMODO_670_MS_PH_VARIANTS",
+            "changes": "Linked as a KOMODO 670 pH variant",
+            "source": "KOMODO Medium 670.3",
+            "notes": "Marked KOMODO Medium 670.3 as a pH 3.5 strain-specific MS-MEDIUM variant."
+          }
+        ],
+        "data_quality_flags": [
+          "ingredients_curated"
+        ],
+        "parent_media": {
+          "path": "data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml",
+          "relationship": "PH_VARIANT",
+          "id": "CultureMech:006265",
+          "name": "ms_medium",
+          "notes": "KOMODO Medium 670 is the pH 2.2 MS-MEDIUM base for KOMODO Medium 670.3."
+        },
+        "variant_relationship": "PH_VARIANT",
+        "variant_modifications": [
+          "KOMODO Medium 670.3 specifies pH 3.5 for this DSM-specific MS-MEDIUM variant."
+        ]
+      },
+      "mapping": {
+        "cells": [
+          "670.3",
+          "For DSM 9466",
+          "3.5, H2SO4",
+          "true",
+          "false",
+          "false",
+          "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+        ],
+        "links": [
+          {
+            "href": "/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=670.3"
+          },
+          {
+            "href": "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+          }
+        ],
+        "snippet": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=670.3' >670.3</a></TD>\n\t\t\t\t\t<TD> For DSM 9466</TD>\n\t\t\t\t\t<TD> 3.5, H2SO4</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf</a></TD>\n\t\t\t\t</TR>",
+        "medium_id": "670",
+        "original_recipe": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+      },
+      "source_medium": "670",
+      "review_status": "base recipe incorrectly inherited; distinct strain formulation requires review"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9467.yaml",
+      "id": "CultureMech:006263",
+      "sha256": "cc6111d962dffd79e4275200b3dd546cb6fdb0a1c7b87b08f424e3f403f5c8e8",
+      "record": {
+        "id": "CultureMech:006263",
+        "name": "for_dsm_9467",
+        "original_name": "For DSM 9467",
+        "category": "bacterial",
+        "medium_type": "DEFINED",
+        "composition_type": "DEFINED",
+        "physical_state": "LIQUID",
+        "ph_value": 3.0,
+        "notes": "pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 670.4 | DSMZ Medium: 670 (mediadive.medium:670) | Aerobic: No",
+        "media_term": {
+          "preferred_term": "KOMODO Medium 670.4",
+          "term": {
+            "id": "komodo.medium:670.4",
+            "label": "For DSM 9467"
+          }
+        },
+        "ingredients": [
+          {
+            "preferred_term": "(NH4)2SO4",
+            "term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            },
+            "concentration": {
+              "value": "2",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            }
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.25",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "K2HPO4",
+            "term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "KCl",
+            "term": {
+              "id": "CHEBI:32588",
+              "label": "potassium chloride"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32588",
+              "label": "potassium chloride"
+            }
+          },
+          {
+            "preferred_term": "FeSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "20",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "H2SO4",
+            "term": {
+              "id": "CHEBI:26836",
+              "label": "sulfuric acid"
+            },
+            "notes": "pH adjustment (extracted from notes)",
+            "concentration": {
+              "value": "variable",
+              "unit": "VARIABLE"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:26836",
+              "label": "sulfuric acid"
+            }
+          }
+        ],
+        "applications": [
+          "Microbial cultivation"
+        ],
+        "curation_history": [
+          {
+            "timestamp": "2026-01-27T01:15:03.fZ",
+            "curator": "komodo-web-import",
+            "action": "Imported from KOMODO web table",
+            "notes": "Source: KOMODO, ID: 670.4"
+          },
+          {
+            "timestamp": "2026-02-03T11:19:05.292486",
+            "curator": "dsmz-resolver-v1.0",
+            "action": "Enriched with DSMZ composition",
+            "notes": "Copied ingredients from DSMZ Medium 670"
+          },
+          {
+            "timestamp": "2026-03-13T03:09:05.638515Z",
+            "curator": "data-quality-cleanup-v1.0",
+            "action": "Data quality fixes",
+            "notes": "Added pH buffer: H2SO4"
+          },
+          {
+            "timestamp": "2026-03-13T06:19:39.346975Z",
+            "curator": "culturemech-id-assigner-v1.0",
+            "action": "Assigned CultureMech ID",
+            "notes": "Assigned stable identifier: CultureMech:006263"
+          },
+          {
+            "curator": "schema-defaulter-v1.0",
+            "action": "Applied schema defaults and normalizations",
+            "notes": "Added default concentration for ingredient: H2SO4",
+            "timestamp": "2026-03-14T00:00:00+00:00"
+          },
+          {
+            "timestamp": "2026-03-17T06:30:11.000000Z",
+            "curator": "mediaingredientmech-enrichment-v1.0",
+            "action": "Added MediaIngredientMech links",
+            "notes": "Linked ingredients to MediaIngredientMech identifiers"
+          },
+          {
+            "timestamp": "2026-03-17T19:45:56.445025+00:00",
+            "curator": "normalize_media_names_to_snake_case.py",
+            "action": "NAME_NORMALIZED",
+            "notes": "Normalized name from \"For DSM 9467\" to \"for_dsm_9467\" for consistent matching"
+          },
+          {
+            "timestamp": "2026-05-16T09:03:34.897640+00:00",
+            "curator": "migrate_legacy_fields.py",
+            "action": "MIGRATED_LEGACY_FIELDS",
+            "notes": "curation_history.date->timestamp=1"
+          },
+          {
+            "timestamp": "2026-06-05T07:41:05.013056+00:00",
+            "curator": "mim-legacy-to-chebi-migration-v1.0",
+            "action": "Refreshed legacy MediaIngredientMech links to CHEBI keying",
+            "notes": "Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term (id-safe: ingredient's own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN id scheme."
+          },
+          {
+            "timestamp": "2026-06-10T07:46:58.641041+00:00",
+            "curator": "primary-term-label-canonicalization-v1.0",
+            "action": "Canonicalized primary term label to OBO canonical (OAK)",
+            "notes": "2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi."
+          },
+          {
+            "timestamp": "2026-09-13T00:00:00-07:00",
+            "curator": "repair_komodo_670_ms_ph_score10.py",
+            "action": "RESOLVED_KOMODO_670_MS_PH_VARIANTS",
+            "changes": "Linked as a KOMODO 670 pH variant",
+            "source": "KOMODO Medium 670.4",
+            "notes": "Marked KOMODO Medium 670.4 as a pH 3 strain-specific MS-MEDIUM variant."
+          }
+        ],
+        "data_quality_flags": [
+          "ingredients_curated"
+        ],
+        "parent_media": {
+          "path": "data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml",
+          "relationship": "PH_VARIANT",
+          "id": "CultureMech:006265",
+          "name": "ms_medium",
+          "notes": "KOMODO Medium 670 is the pH 2.2 MS-MEDIUM base for KOMODO Medium 670.4."
+        },
+        "variant_relationship": "PH_VARIANT",
+        "variant_modifications": [
+          "KOMODO Medium 670.4 specifies pH 3 for this DSM-specific MS-MEDIUM variant."
+        ]
+      },
+      "mapping": {
+        "cells": [
+          "670.4",
+          "For DSM 9467",
+          "3.0, H2SO4",
+          "true",
+          "false",
+          "false",
+          "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+        ],
+        "links": [
+          {
+            "href": "/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=670.4"
+          },
+          {
+            "href": "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+          }
+        ],
+        "snippet": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=670.4' >670.4</a></TD>\n\t\t\t\t\t<TD> For DSM 9467</TD>\n\t\t\t\t\t<TD> 3.0, H2SO4</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf</a></TD>\n\t\t\t\t</TR>",
+        "medium_id": "670",
+        "original_recipe": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+      },
+      "source_medium": "670",
+      "review_status": "base recipe incorrectly inherited; distinct strain formulation requires review"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9468.yaml",
+      "id": "CultureMech:006264",
+      "sha256": "93546c068861b38d9789eeb855e4b62c3a88a59c684c0b3ac1ea67933b01c15a",
+      "record": {
+        "id": "CultureMech:006264",
+        "name": "for_dsm_9468",
+        "original_name": "For DSM 9468",
+        "category": "bacterial",
+        "medium_type": "DEFINED",
+        "composition_type": "DEFINED",
+        "physical_state": "LIQUID",
+        "ph_value": 1.6,
+        "media_term": {
+          "preferred_term": "KOMODO Medium 670.5",
+          "term": {
+            "id": "komodo.medium:670.5",
+            "label": "For DSM 9468"
+          }
+        },
+        "notes": "Source: KOMODO ModelSEED | ID: 670.5 | DSMZ Medium: 670 (mediadive.medium:670) | Aerobic: No",
+        "ingredients": [
+          {
+            "preferred_term": "(NH4)2SO4",
+            "term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            },
+            "concentration": {
+              "value": "2",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            }
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.25",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "K2HPO4",
+            "term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "KCl",
+            "term": {
+              "id": "CHEBI:32588",
+              "label": "potassium chloride"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32588",
+              "label": "potassium chloride"
+            }
+          },
+          {
+            "preferred_term": "FeSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "20",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            }
+          }
+        ],
+        "applications": [
+          "Microbial cultivation"
+        ],
+        "curation_history": [
+          {
+            "timestamp": "2026-01-27T01:15:03.fZ",
+            "curator": "komodo-web-import",
+            "action": "Imported from KOMODO web table",
+            "notes": "Source: KOMODO, ID: 670.5"
+          },
+          {
+            "timestamp": "2026-02-03T11:19:11.766841",
+            "curator": "dsmz-resolver-v1.0",
+            "action": "Enriched with DSMZ composition",
+            "notes": "Copied ingredients from DSMZ Medium 670"
+          },
+          {
+            "timestamp": "2026-03-13T06:19:39.350679Z",
+            "curator": "culturemech-id-assigner-v1.0",
+            "action": "Assigned CultureMech ID",
+            "notes": "Assigned stable identifier: CultureMech:006264"
+          },
+          {
+            "timestamp": "2026-03-17T06:30:32.000000Z",
+            "curator": "mediaingredientmech-enrichment-v1.0",
+            "action": "Added MediaIngredientMech links",
+            "notes": "Linked ingredients to MediaIngredientMech identifiers"
+          },
+          {
+            "timestamp": "2026-03-17T19:45:56.449683+00:00",
+            "curator": "normalize_media_names_to_snake_case.py",
+            "action": "NAME_NORMALIZED",
+            "notes": "Normalized name from \"For DSM 9468\" to \"for_dsm_9468\" for consistent matching"
+          },
+          {
+            "timestamp": "2026-06-05T07:41:05.018432+00:00",
+            "curator": "mim-legacy-to-chebi-migration-v1.0",
+            "action": "Refreshed legacy MediaIngredientMech links to CHEBI keying",
+            "notes": "Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term (id-safe: ingredient's own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN id scheme."
+          },
+          {
+            "timestamp": "2026-06-10T07:46:58.643420+00:00",
+            "curator": "primary-term-label-canonicalization-v1.0",
+            "action": "Canonicalized primary term label to OBO canonical (OAK)",
+            "notes": "2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi."
+          },
+          {
+            "timestamp": "2026-09-13T00:00:00-07:00",
+            "curator": "repair_komodo_670_ms_ph_score10.py",
+            "action": "RESOLVED_KOMODO_670_MS_PH_VARIANTS",
+            "changes": "Linked as a KOMODO 670 pH variant",
+            "source": "KOMODO Medium 670.5",
+            "notes": "Marked KOMODO Medium 670.5 as a pH 1.6 strain-specific MS-MEDIUM variant."
+          }
+        ],
+        "data_quality_flags": [
+          "ingredients_curated"
+        ],
+        "parent_media": {
+          "path": "data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml",
+          "relationship": "PH_VARIANT",
+          "id": "CultureMech:006265",
+          "name": "ms_medium",
+          "notes": "KOMODO Medium 670 is the pH 2.2 MS-MEDIUM base for KOMODO Medium 670.5."
+        },
+        "variant_relationship": "PH_VARIANT",
+        "variant_modifications": [
+          "KOMODO Medium 670.5 specifies pH 1.6 for this DSM-specific MS-MEDIUM variant."
+        ]
+      },
+      "mapping": {
+        "cells": [
+          "670.5",
+          "For DSM 9468",
+          "1.6",
+          "false",
+          "false",
+          "false",
+          "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+        ],
+        "links": [
+          {
+            "href": "/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=670.5"
+          },
+          {
+            "href": "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+          }
+        ],
+        "snippet": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=670.5' >670.5</a></TD>\n\t\t\t\t\t<TD> For DSM 9468</TD>\n\t\t\t\t\t<TD> 1.6</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf</a></TD>\n\t\t\t\t</TR>",
+        "medium_id": "670",
+        "original_recipe": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf"
+      },
+      "source_medium": "670",
+      "review_status": "base recipe incorrectly inherited; distinct strain formulation requires review"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_673_THERMOCOCCUS_PROFUNDUS_medium.yaml",
+      "id": "CultureMech:006269",
+      "sha256": "bb61b3771c679694ebe3369436f9bde491c65a6329962ec5c0240f03263f7de4",
+      "record": {
+        "id": "CultureMech:006269",
+        "name": "thermococcus_profundus_medium",
+        "original_name": "THERMOCOCCUS PROFUNDUS medium",
+        "category": "archaea",
+        "medium_type": "COMPLEX",
+        "composition_type": "UNDEFINED",
+        "physical_state": "LIQUID",
+        "ph_value": 7.2,
+        "media_term": {
+          "preferred_term": "KOMODO Medium 673",
+          "term": {
+            "id": "komodo.medium:673",
+            "label": "THERMOCOCCUS PROFUNDUS medium"
+          }
+        },
+        "notes": "Source: KOMODO ModelSEED | ID: 673 | DSMZ Medium: 673 (mediadive.medium:673) | Aerobic: Yes",
+        "ingredients": [
+          {
+            "preferred_term": "(NH4)2SO4",
+            "term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            },
+            "concentration": {
+              "value": "1.3",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            }
+          },
+          {
+            "preferred_term": "KH2PO4",
+            "term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.28",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.25",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "CaCl2 x 2 H2O",
+            "term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            },
+            "concentration": {
+              "value": "0.07",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            }
+          },
+          {
+            "preferred_term": "FeCl3 x 6 H2O",
+            "term": {
+              "id": "CHEBI:86254",
+              "label": "iron trichloride hexahydrate"
+            },
+            "concentration": {
+              "value": "0.02",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86254",
+              "label": "iron trichloride hexahydrate"
+            }
+          },
+          {
+            "preferred_term": "MnCl2 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86368",
+              "label": "manganese(II) chloride tetrahydrate"
+            },
+            "concentration": {
+              "value": "0.0018",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86368",
+              "label": "manganese(II) chloride tetrahydrate"
+            }
+          },
+          {
+            "preferred_term": "Na2B4O7 x 10 H2O",
+            "concentration": {
+              "value": "0.0045",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "CHEBI:131366",
+              "label": "disodium tetraborate decahydrate"
+            }
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.00022",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "CuCl2 x 2 H2O",
+            "term": {
+              "id": "CHEBI:86318",
+              "label": "copper(II) chloride dihydrate"
+            },
+            "concentration": {
+              "value": "5e-05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86318",
+              "label": "copper(II) chloride dihydrate"
+            }
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "concentration": {
+              "value": "3e-05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            }
+          },
+          {
+            "preferred_term": "VOSO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:87009",
+              "label": "vanadyl sulfate dihydrate"
+            },
+            "concentration": {
+              "value": "3e-05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:87009",
+              "label": "vanadyl sulfate dihydrate"
+            }
+          },
+          {
+            "preferred_term": "CoSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:91244",
+              "label": "cobalt(2+) sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "1e-05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:91244",
+              "label": "cobalt(2+) sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "NaCl",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "25",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            }
+          },
+          {
+            "preferred_term": "Resazurin",
+            "term": {
+              "id": "CHEBI:8806",
+              "label": "Resazurin"
+            },
+            "concentration": {
+              "value": "0.001",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:8806",
+              "label": "Resazurin"
+            }
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Sulfur",
+            "term": {
+              "id": "CHEBI:26833",
+              "label": "sulfur atom"
+            },
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:26833",
+              "label": "sulfur atom"
+            }
+          },
+          {
+            "preferred_term": "Peptone",
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            }
+          }
+        ],
+        "applications": [
+          "Microbial cultivation"
+        ],
+        "curation_history": [
+          {
+            "timestamp": "2026-01-27T01:15:03.fZ",
+            "curator": "komodo-web-import",
+            "action": "Imported from KOMODO web table",
+            "notes": "Source: KOMODO, ID: 673"
+          },
+          {
+            "timestamp": "2026-02-03T11:19:01.080502",
+            "curator": "dsmz-resolver-v1.0",
+            "action": "Enriched with DSMZ composition",
+            "notes": "Copied ingredients from DSMZ Medium 673"
+          },
+          {
+            "timestamp": "2026-03-13T06:19:39.392527Z",
+            "curator": "culturemech-id-assigner-v1.0",
+            "action": "Assigned CultureMech ID",
+            "notes": "Assigned stable identifier: CultureMech:006269"
+          },
+          {
+            "timestamp": "2026-03-17T06:29:58.000000Z",
+            "curator": "mediaingredientmech-enrichment-v1.0",
+            "action": "Added MediaIngredientMech links",
+            "notes": "Linked ingredients to MediaIngredientMech identifiers"
+          },
+          {
+            "timestamp": "2026-03-17T19:45:56.498115+00:00",
+            "curator": "normalize_media_names_to_snake_case.py",
+            "action": "NAME_NORMALIZED",
+            "notes": "Normalized name from \"THERMOCOCCUS PROFUNDUS medium\" to \"thermococcus_profundus_medium\" for consistent matching"
+          },
+          {
+            "timestamp": "2026-06-05T07:40:25.344587+00:00",
+            "curator": "mim-legacy-to-chebi-migration-v1.0",
+            "action": "Refreshed legacy MediaIngredientMech links to CHEBI keying",
+            "notes": "Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term (id-safe: ingredient's own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN id scheme."
+          },
+          {
+            "timestamp": "2026-06-10T07:46:45.521408+00:00",
+            "curator": "primary-term-label-canonicalization-v1.0",
+            "action": "Canonicalized primary term label to OBO canonical (OAK)",
+            "notes": "2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi."
+          }
+        ],
+        "parent_media": {
+          "path": "data/normalized_yaml/bacterial/thermococcus_profundus_medium.yaml",
+          "relationship": "SOURCE_DUPLICATE",
+          "id": "CultureMech:001814",
+          "name": "thermococcus_profundus_medium",
+          "notes": "KOMODO record states DSMZ Medium 673 provenance and exactly matches the single same-category DSMZ parent signature."
+        },
+        "variant_relationship": "SOURCE_DUPLICATE",
+        "variant_modifications": [
+          "Same ingredient and concentration signature; KOMODO record copied from the matching DSMZ medium source."
+        ]
+      },
+      "source_medium": "673",
+      "review_status": "yeast-dose inheritance and parent sulfur conflict unresolved"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/thermococcus_profundus_medium.yaml",
+      "id": "CultureMech:001814",
+      "sha256": "d5ec724d27cdfde28be1cda0fa8f1d298b8d875dd6960b7552d6343aeb5e843a",
+      "record": {
+        "id": "CultureMech:001814",
+        "name": "thermococcus_profundus_medium",
+        "original_name": "THERMOCOCCUS PROFUNDUS MEDIUM",
+        "category": "archaea",
+        "medium_type": "COMPLEX",
+        "composition_type": "UNDEFINED",
+        "physical_state": "LIQUID",
+        "ph_value": 7.2,
+        "media_term": {
+          "preferred_term": "DSMZ Medium 673",
+          "term": {
+            "id": "mediadive.medium:673",
+            "label": "THERMOCOCCUS PROFUNDUS MEDIUM"
+          }
+        },
+        "notes": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium673.pdf",
+        "ingredients": [
+          {
+            "preferred_term": "(NH4)2SO4",
+            "term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            },
+            "concentration": {
+              "value": "1.3",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/medium/673",
+                "supports": "SUPPORT",
+                "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 1.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.3,\n                        \"mmol_l\": 9.83805,\n                        \"optional\": 0\n                    }",
+                "explanation": "Concentration evidence for ingredients[0].concentration ((NH4)2SO4) in MediaDive medium 673; locator=$.data.solutions[0].recipe[0]. Provider explicitly reports g_l=1.3; check: 1.3 g * 1 g/g / (1000 ml / 1000 ml per L) = 1.3 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:21.841640+00:00; response SHA256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e."
+              }
+            ]
+          },
+          {
+            "preferred_term": "KH2PO4",
+            "term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.28",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/medium/673",
+                "supports": "SUPPORT",
+                "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.28,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.28,\n                        \"mmol_l\": 2.05754,\n                        \"optional\": 0\n                    }",
+                "explanation": "Concentration evidence for ingredients[1].concentration (KH2PO4) in MediaDive medium 673; locator=$.data.solutions[0].recipe[1]. Provider explicitly reports g_l=0.28; check: 0.28 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.28 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:21.841640+00:00; response SHA256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e."
+              }
+            ]
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.25",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/medium/673",
+                "supports": "SUPPORT",
+                "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.25,\n                        \"mmol_l\": 1.0143,\n                        \"optional\": 0\n                    }",
+                "explanation": "Concentration evidence for ingredients[2].concentration (MgSO4 x 7 H2O) in MediaDive medium 673; locator=$.data.solutions[0].recipe[2]. Provider explicitly reports g_l=0.25; check: 0.25 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.25 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:21.841640+00:00; response SHA256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e."
+              }
+            ]
+          },
+          {
+            "preferred_term": "CaCl2 x 2 H2O",
+            "term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            },
+            "concentration": {
+              "value": "0.07",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/medium/673",
+                "supports": "SUPPORT",
+                "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.07,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\": 0.476142,\n                        \"optional\": 0\n                    }",
+                "explanation": "Concentration evidence for ingredients[3].concentration (CaCl2 x 2 H2O) in MediaDive medium 673; locator=$.data.solutions[0].recipe[3]. Provider explicitly reports g_l=0.07; check: 0.07 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.07 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:21.841640+00:00; response SHA256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e."
+              }
+            ]
+          },
+          {
+            "preferred_term": "FeCl3 x 6 H2O",
+            "term": {
+              "id": "CHEBI:86254",
+              "label": "iron trichloride hexahydrate"
+            },
+            "concentration": {
+              "value": "0.02",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86254",
+              "label": "iron trichloride hexahydrate"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/medium/673",
+                "supports": "SUPPORT",
+                "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"FeCl3 x 6 H2O\",\n                        \"compound_id\": 82,\n                        \"amount\": 0.02,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.073993,\n                        \"optional\": 0\n                    }",
+                "explanation": "Concentration evidence for ingredients[4].concentration (FeCl3 x 6 H2O) in MediaDive medium 673; locator=$.data.solutions[0].recipe[4]. Provider explicitly reports g_l=0.02; check: 0.02 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.02 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:21.841640+00:00; response SHA256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e."
+              }
+            ]
+          },
+          {
+            "preferred_term": "MnCl2 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86368",
+              "label": "manganese(II) chloride tetrahydrate"
+            },
+            "concentration": {
+              "value": "0.0018",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86368",
+              "label": "manganese(II) chloride tetrahydrate"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/medium/673",
+                "supports": "SUPPORT",
+                "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 1.8,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0018,\n                        \"mmol_l\": 0.00909527,\n                        \"optional\": 0\n                    }",
+                "explanation": "Concentration evidence for ingredients[5].concentration (MnCl2 x 4 H2O) in MediaDive medium 673; locator=$.data.solutions[0].recipe[5]. Provider explicitly reports g_l=0.0018; check: 1.8 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0018 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:21.841640+00:00; response SHA256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e."
+              }
+            ]
+          },
+          {
+            "preferred_term": "Na2B4O7 x 10 H2O",
+            "concentration": {
+              "value": "0.0045",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "CHEBI:131366",
+              "label": "disodium tetraborate decahydrate"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/medium/673",
+                "supports": "SUPPORT",
+                "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Na2B4O7 x 10 H2O\",\n                        \"compound_id\": 196,\n                        \"amount\": 4.5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0045,\n                        \"optional\": 0\n                    }",
+                "explanation": "Concentration evidence for ingredients[6].concentration (Na2B4O7 x 10 H2O) in MediaDive medium 673; locator=$.data.solutions[0].recipe[6]. Provider explicitly reports g_l=0.0045; check: 4.5 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0045 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:21.841640+00:00; response SHA256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e."
+              }
+            ]
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.00022",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/medium/673",
+                "supports": "SUPPORT",
+                "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.22,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.00022,\n                        \"mmol_l\": 0.000765055,\n                        \"optional\": 0\n                    }",
+                "explanation": "Concentration evidence for ingredients[7].concentration (ZnSO4 x 7 H2O) in MediaDive medium 673; locator=$.data.solutions[0].recipe[7]. Provider explicitly reports g_l=0.00022; check: 0.22 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00022 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:21.841640+00:00; response SHA256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e."
+              }
+            ]
+          },
+          {
+            "preferred_term": "CuCl2 x 2 H2O",
+            "term": {
+              "id": "CHEBI:86318",
+              "label": "copper(II) chloride dihydrate"
+            },
+            "concentration": {
+              "value": "5e-05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86318",
+              "label": "copper(II) chloride dihydrate"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/medium/673",
+                "supports": "SUPPORT",
+                "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 0.05,\n                        \"unit\": \"mg\",\n                        \"g_l\": 5.0e-5,\n                        \"mmol_l\": 0.000293284,\n                        \"optional\": 0\n                    }",
+                "explanation": "Concentration evidence for ingredients[8].concentration (CuCl2 x 2 H2O) in MediaDive medium 673; locator=$.data.solutions[0].recipe[8]. Provider explicitly reports g_l=5e-05; check: 0.05 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00005 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:21.841640+00:00; response SHA256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e."
+              }
+            ]
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "concentration": {
+              "value": "3e-05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/medium/673",
+                "supports": "SUPPORT",
+                "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 0.03,\n                        \"unit\": \"mg\",\n                        \"g_l\": 3.0e-5,\n                        \"mmol_l\": 0.000123993,\n                        \"optional\": 0\n                    }",
+                "explanation": "Concentration evidence for ingredients[9].concentration (Na2MoO4 x 2 H2O) in MediaDive medium 673; locator=$.data.solutions[0].recipe[9]. Provider explicitly reports g_l=3e-05; check: 0.03 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00003 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:21.841640+00:00; response SHA256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e."
+              }
+            ]
+          },
+          {
+            "preferred_term": "VOSO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:87009",
+              "label": "vanadyl sulfate dihydrate"
+            },
+            "concentration": {
+              "value": "3e-05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:87009",
+              "label": "vanadyl sulfate dihydrate"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/medium/673",
+                "supports": "SUPPORT",
+                "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"VOSO4 x 2 H2O\",\n                        \"compound_id\": 197,\n                        \"amount\": 0.03,\n                        \"unit\": \"mg\",\n                        \"g_l\": 3.0e-5,\n                        \"mmol_l\": 0.000150728,\n                        \"optional\": 0\n                    }",
+                "explanation": "Concentration evidence for ingredients[10].concentration (VOSO4 x 2 H2O) in MediaDive medium 673; locator=$.data.solutions[0].recipe[10]. Provider explicitly reports g_l=3e-05; check: 0.03 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00003 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:21.841640+00:00; response SHA256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e."
+              }
+            ]
+          },
+          {
+            "preferred_term": "CoSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:91244",
+              "label": "cobalt(2+) sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "1e-05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:91244",
+              "label": "cobalt(2+) sulfate heptahydrate"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/medium/673",
+                "supports": "SUPPORT",
+                "snippet": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"CoSO4 x 7 H2O\",\n                        \"compound_id\": 198,\n                        \"amount\": 0.01,\n                        \"unit\": \"mg\",\n                        \"g_l\": 1.0e-5,\n                        \"mmol_l\": 6.45178e-5,\n                        \"optional\": 0\n                    }",
+                "explanation": "Concentration evidence for ingredients[11].concentration (CoSO4 x 7 H2O) in MediaDive medium 673; locator=$.data.solutions[0].recipe[11]. Provider explicitly reports g_l=1e-05; check: 0.01 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00001 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:21.841640+00:00; response SHA256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e."
+              }
+            ]
+          },
+          {
+            "preferred_term": "NaCl",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "25",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/medium/673",
+                "supports": "SUPPORT",
+                "snippet": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 25,\n                        \"unit\": \"g\",\n                        \"g_l\": 25,\n                        \"mmol_l\": 427.789,\n                        \"optional\": 0\n                    }",
+                "explanation": "Concentration evidence for ingredients[12].concentration (NaCl) in MediaDive medium 673; locator=$.data.solutions[0].recipe[12]. Provider explicitly reports g_l=25; check: 25 g * 1 g/g / (1000 ml / 1000 ml per L) = 25 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:21.841640+00:00; response SHA256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e."
+              }
+            ]
+          },
+          {
+            "preferred_term": "Resazurin",
+            "term": {
+              "id": "CHEBI:8806",
+              "label": "Resazurin"
+            },
+            "concentration": {
+              "value": "0.001",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:8806",
+              "label": "Resazurin"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/medium/673",
+                "supports": "SUPPORT",
+                "snippet": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00436319,\n                        \"optional\": 0\n                    }",
+                "explanation": "Concentration evidence for ingredients[13].concentration (Resazurin) in MediaDive medium 673; locator=$.data.solutions[0].recipe[13]. Provider explicitly reports g_l=0.001; check: 1 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.001 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:21.841640+00:00; response SHA256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e."
+              }
+            ]
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/medium/673",
+                "supports": "SUPPORT",
+                "snippet": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"optional\": 0\n                    }",
+                "explanation": "Concentration evidence for ingredients[14].concentration (Yeast extract) in MediaDive medium 673; locator=$.data.solutions[0].recipe[14]. Provider explicitly reports g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:21.841640+00:00; response SHA256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e."
+              }
+            ]
+          },
+          {
+            "preferred_term": "Sulfur",
+            "term": {
+              "id": "CHEBI:26833",
+              "label": "sulfur atom"
+            },
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:26833",
+              "label": "sulfur atom"
+            }
+          },
+          {
+            "preferred_term": "Peptone",
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/medium/673",
+                "supports": "SUPPORT",
+                "snippet": "{\n                        \"recipe_order\": 18,\n                        \"compound\": \"Peptone\",\n                        \"compound_id\": 1,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+                "explanation": "Concentration evidence for ingredients[16].concentration (Peptone) in MediaDive medium 673; locator=$.data.solutions[0].recipe[17]. Provider explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:17:21.841640+00:00; response SHA256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e."
+              }
+            ]
+          }
+        ],
+        "preparation_steps": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for a few minutes not autoclaved; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere."
+          },
+          {
+            "step_number": 2,
+            "action": "ADJUST_PH",
+            "description": "Adjust final pH to 7.2."
+          }
+        ],
+        "applications": [
+          "Microbial cultivation"
+        ],
+        "curation_history": [
+          {
+            "timestamp": "2026-01-26T17:53:11.900659Z",
+            "curator": "mediadive-import",
+            "action": "Imported from MediaDive",
+            "notes": "Source: DSMZ, ID: 673"
+          },
+          {
+            "timestamp": "2026-03-13T06:19:07.414064Z",
+            "curator": "culturemech-id-assigner-v1.0",
+            "action": "Assigned CultureMech ID",
+            "notes": "Assigned stable identifier: CultureMech:001814"
+          },
+          {
+            "timestamp": "2026-03-17T06:30:39.000000Z",
+            "curator": "mediaingredientmech-enrichment-v1.0",
+            "action": "Added MediaIngredientMech links",
+            "notes": "Linked ingredients to MediaIngredientMech identifiers"
+          },
+          {
+            "timestamp": "2026-03-17T19:45:19.722305+00:00",
+            "curator": "normalize_media_names_to_snake_case.py",
+            "action": "NAME_NORMALIZED",
+            "notes": "Normalized name from \"THERMOCOCCUS PROFUNDUS MEDIUM\" to \"thermococcus_profundus_medium\" for consistent matching"
+          },
+          {
+            "timestamp": "2026-06-05T07:41:49.951357+00:00",
+            "curator": "mim-legacy-to-chebi-migration-v1.0",
+            "action": "Refreshed legacy MediaIngredientMech links to CHEBI keying",
+            "notes": "Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term (id-safe: ingredient's own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN id scheme."
+          },
+          {
+            "timestamp": "2026-06-10T07:47:12.930205+00:00",
+            "curator": "primary-term-label-canonicalization-v1.0",
+            "action": "Canonicalized primary term label to OBO canonical (OAK)",
+            "notes": "2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi."
+          },
+          {
+            "timestamp": "2026-10-07T12:21:30.028294+00:00",
+            "curator": "codex",
+            "action": "CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE",
+            "notes": "Exact medium/source membership, ingredient inventory/forms, physical-state conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only rows, preparation context, and variants remain explicit follow-up tasks; secondary chemical mappings unchanged.",
+            "source": "https://mediadive.dsmz.de/rest/medium/673",
+            "changes": "ingredients[0].concentration: {\"unit\": \"G_PER_L\", \"value\": \"1.3\"} -> {\"unit\": \"G_PER_L\", \"value\": \"1.3\"} (evidence_only); ingredients[1].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.28\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.28\"} (evidence_only); ingredients[2].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.25\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.25\"} (evidence_only); ingredients[3].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.07\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.07\"} (evidence_only); ingredients[4].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.02\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.02\"} (evidence_only); ingredients[5].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.0018\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.0018\"} (evidence_only); ingredients[6].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.0045\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.0045\"} (evidence_only); ingredients[7].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.00022\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.00022\"} (evidence_only); ingredients[8].concentration: {\"unit\": \"G_PER_L\", \"value\": \"5e-05\"} -> {\"unit\": \"G_PER_L\", \"value\": \"5e-05\"} (evidence_only); ingredients[9].concentration: {\"unit\": \"G_PER_L\", \"value\": \"3e-05\"} -> {\"unit\": \"G_PER_L\", \"value\": \"3e-05\"} (evidence_only); ingredients[10].concentration: {\"unit\": \"G_PER_L\", \"value\": \"3e-05\"} -> {\"unit\": \"G_PER_L\", \"value\": \"3e-05\"} (evidence_only); ingredients[11].concentration: {\"unit\": \"G_PER_L\", \"value\": \"1e-05\"} -> {\"unit\": \"G_PER_L\", \"value\": \"1e-05\"} (evidence_only); ingredients[12].concentration: {\"unit\": \"G_PER_L\", \"value\": \"25\"} -> {\"unit\": \"G_PER_L\", \"value\": \"25\"} (evidence_only); ingredients[13].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.001\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.001\"} (evidence_only); ingredients[14].concentration: {\"unit\": \"G_PER_L\", \"value\": \"1\"} -> {\"unit\": \"G_PER_L\", \"value\": \"1\"} (evidence_only); ingredients[16].concentration: {\"unit\": \"G_PER_L\", \"value\": \"5\"} -> {\"unit\": \"G_PER_L\", \"value\": \"5\"} (evidence_only)"
+          }
+        ],
+        "variant_children": [
+          {
+            "path": "data/normalized_yaml/bacterial/KOMODO_673_THERMOCOCCUS_PROFUNDUS_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006269",
+            "name": "thermococcus_profundus_medium",
+            "notes": "Same ingredient and concentration signature; KOMODO record copied from the matching DSMZ medium source."
+          }
+        ],
+        "references": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/673",
+            "title": "MediaDive medium 673: THERMOCOCCUS PROFUNDUS MEDIUM",
+            "notes": "source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ; accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e; original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium673.pdf; individual authors and publication year not supplied. Provider-declared main-recipe amounts only."
+          }
+        ]
+      },
+      "source_medium": "673",
+      "review_status": "yeast-dose inheritance and parent sulfur conflict unresolved"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_5645_Main_sol_673.yaml",
+      "id": "CultureMech:014512",
+      "sha256": "a57c2a29626833eeca18200a843fb69fd22c51eac46b65adbf45f621b188cf19",
+      "record": {
+        "id": "CultureMech:014512",
+        "preferred_term": "Main sol. 673",
+        "term": {
+          "id": "mediadive.solution:5645",
+          "label": "Main sol. 673"
+        },
+        "composition": [
+          {
+            "preferred_term": "(NH4)2SO4",
+            "concentration": {
+              "value": "1.3",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:27",
+              "label": "(NH4)2SO4"
+            },
+            "chebi_term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate",
+              "confidence": 1.0,
+              "match_type": "exact_match"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+                "supports": "SUPPORT",
+                "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.3,\n                \"unit\": \"g\",\n                \"g_l\": 1.3,\n                \"mmol_l\": 9.83805,\n                \"optional\": 0\n            }",
+                "explanation": "Concentration evidence for composition[0].concentration ((NH4)2SO4) in MediaDive solution 5645; locator=$.data.recipe[0] (compound_id=27). Provider explicitly reports g_l=1.3. Arithmetic check: 1.3 g * 1 g/g / (1000 ml / 1000 ml per L) = 1.3 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:56:53.099779+00:00; response SHA256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71."
+              }
+            ]
+          },
+          {
+            "preferred_term": "KH2PO4",
+            "concentration": {
+              "value": "0.28",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:11",
+              "label": "KH2PO4"
+            },
+            "chebi_term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate",
+              "confidence": 0.7,
+              "match_type": "corpus_consensus"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+                "supports": "SUPPORT",
+                "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.28,\n                \"unit\": \"g\",\n                \"g_l\": 0.28,\n                \"mmol_l\": 2.05754,\n                \"optional\": 0\n            }",
+                "explanation": "Concentration evidence for composition[1].concentration (KH2PO4) in MediaDive solution 5645; locator=$.data.recipe[1] (compound_id=11). Provider explicitly reports g_l=0.28. Arithmetic check: 0.28 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.28 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:56:53.099779+00:00; response SHA256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71."
+              }
+            ]
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "concentration": {
+              "value": "0.25",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:8",
+              "label": "MgSO4 x 7 H2O"
+            },
+            "chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate",
+              "confidence": 0.7,
+              "match_type": "corpus_consensus"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+                "supports": "SUPPORT",
+                "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.25,\n                \"unit\": \"g\",\n                \"g_l\": 0.25,\n                \"mmol_l\": 1.0143,\n                \"optional\": 0\n            }",
+                "explanation": "Concentration evidence for composition[2].concentration (MgSO4 x 7 H2O) in MediaDive solution 5645; locator=$.data.recipe[2] (compound_id=8). Provider explicitly reports g_l=0.25. Arithmetic check: 0.25 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.25 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:56:53.099779+00:00; response SHA256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71."
+              }
+            ]
+          },
+          {
+            "preferred_term": "CaCl2 x 2 H2O",
+            "concentration": {
+              "value": "0.07",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:7",
+              "label": "CaCl2 x 2 H2O"
+            },
+            "chebi_term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate",
+              "confidence": 0.7,
+              "match_type": "corpus_consensus"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+                "supports": "SUPPORT",
+                "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.07,\n                \"unit\": \"g\",\n                \"g_l\": 0.07,\n                \"mmol_l\": 0.476142,\n                \"optional\": 0\n            }",
+                "explanation": "Concentration evidence for composition[3].concentration (CaCl2 x 2 H2O) in MediaDive solution 5645; locator=$.data.recipe[3] (compound_id=7). Provider explicitly reports g_l=0.07. Arithmetic check: 0.07 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.07 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:56:53.099779+00:00; response SHA256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71."
+              }
+            ]
+          },
+          {
+            "preferred_term": "FeCl3 x 6 H2O",
+            "concentration": {
+              "value": "0.02",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:82",
+              "label": "FeCl3 x 6 H2O"
+            },
+            "chebi_term": {
+              "id": "CHEBI:86254",
+              "label": "iron trichloride hexahydrate",
+              "confidence": 0.7,
+              "match_type": "corpus_consensus"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+                "supports": "SUPPORT",
+                "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"FeCl3 x 6 H2O\",\n                \"compound_id\": 82,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.02,\n                \"unit\": \"g\",\n                \"g_l\": 0.02,\n                \"mmol_l\": 0.073993,\n                \"optional\": 0\n            }",
+                "explanation": "Concentration evidence for composition[4].concentration (FeCl3 x 6 H2O) in MediaDive solution 5645; locator=$.data.recipe[4] (compound_id=82). Provider explicitly reports g_l=0.02. Arithmetic check: 0.02 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.02 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:56:53.099779+00:00; response SHA256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71."
+              }
+            ]
+          },
+          {
+            "preferred_term": "MnCl2 x 4 H2O",
+            "concentration": {
+              "value": "0.0018",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:36",
+              "label": "MnCl2 x 4 H2O"
+            },
+            "chebi_term": {
+              "id": "CHEBI:86368",
+              "label": "manganese(II) chloride tetrahydrate",
+              "confidence": 0.7,
+              "match_type": "corpus_consensus"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+                "supports": "SUPPORT",
+                "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"MnCl2 x 4 H2O\",\n                \"compound_id\": 36,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.8,\n                \"unit\": \"mg\",\n                \"g_l\": 0.0018,\n                \"mmol_l\": 0.00909527,\n                \"optional\": 0\n            }",
+                "explanation": "Concentration evidence for composition[5].concentration (MnCl2 x 4 H2O) in MediaDive solution 5645; locator=$.data.recipe[5] (compound_id=36). Provider explicitly reports g_l=0.0018. Arithmetic check: 1.8 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0018 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:56:53.099779+00:00; response SHA256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71."
+              }
+            ]
+          },
+          {
+            "preferred_term": "Na2B4O7 x 10 H2O",
+            "concentration": {
+              "value": "0.0045",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:196",
+              "label": "Na2B4O7 x 10 H2O"
+            },
+            "chebi_term": {
+              "id": "CHEBI:131366",
+              "label": "disodium tetraborate decahydrate",
+              "confidence": 0.7,
+              "match_type": "corpus_consensus"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+                "supports": "SUPPORT",
+                "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\": \"Na2B4O7 x 10 H2O\",\n                \"compound_id\": 196,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 4.5,\n                \"unit\": \"mg\",\n                \"g_l\": 0.0045,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+                "explanation": "Concentration evidence for composition[6].concentration (Na2B4O7 x 10 H2O) in MediaDive solution 5645; locator=$.data.recipe[6] (compound_id=196). Provider explicitly reports g_l=0.0045. Arithmetic check: 4.5 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0045 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:56:53.099779+00:00; response SHA256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71."
+              }
+            ]
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "concentration": {
+              "value": "0.00022",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:35",
+              "label": "ZnSO4 x 7 H2O"
+            },
+            "chebi_term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate",
+              "confidence": 0.7,
+              "match_type": "corpus_consensus"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+                "supports": "SUPPORT",
+                "snippet": "{\n                \"recipe_order\": 8,\n                \"compound\": \"ZnSO4 x 7 H2O\",\n                \"compound_id\": 35,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.22,\n                \"unit\": \"mg\",\n                \"g_l\": 0.00022,\n                \"mmol_l\": 0.000765055,\n                \"optional\": 0\n            }",
+                "explanation": "Concentration evidence for composition[7].concentration (ZnSO4 x 7 H2O) in MediaDive solution 5645; locator=$.data.recipe[7] (compound_id=35). Provider explicitly reports g_l=0.00022. Arithmetic check: 0.22 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00022 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:56:53.099779+00:00; response SHA256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71."
+              }
+            ]
+          },
+          {
+            "preferred_term": "CuCl2 x 2 H2O",
+            "concentration": {
+              "value": "5e-05",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:39",
+              "label": "CuCl2 x 2 H2O"
+            },
+            "chebi_term": {
+              "id": "CHEBI:86318",
+              "label": "copper(II) chloride dihydrate",
+              "confidence": 0.7,
+              "match_type": "corpus_consensus"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+                "supports": "SUPPORT",
+                "snippet": "{\n                \"recipe_order\": 9,\n                \"compound\": \"CuCl2 x 2 H2O\",\n                \"compound_id\": 39,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.05,\n                \"unit\": \"mg\",\n                \"g_l\": 5.0e-5,\n                \"mmol_l\": 0.000293284,\n                \"optional\": 0\n            }",
+                "explanation": "Concentration evidence for composition[8].concentration (CuCl2 x 2 H2O) in MediaDive solution 5645; locator=$.data.recipe[8] (compound_id=39). Provider explicitly reports g_l=5e-05. Arithmetic check: 0.05 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00005 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:56:53.099779+00:00; response SHA256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71."
+              }
+            ]
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "concentration": {
+              "value": "3e-05",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:9",
+              "label": "Na2MoO4 x 2 H2O"
+            },
+            "chebi_term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate",
+              "confidence": 0.7,
+              "match_type": "corpus_consensus"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+                "supports": "SUPPORT",
+                "snippet": "{\n                \"recipe_order\": 10,\n                \"compound\": \"Na2MoO4 x 2 H2O\",\n                \"compound_id\": 9,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.03,\n                \"unit\": \"mg\",\n                \"g_l\": 3.0e-5,\n                \"mmol_l\": 0.000123993,\n                \"optional\": 0\n            }",
+                "explanation": "Concentration evidence for composition[9].concentration (Na2MoO4 x 2 H2O) in MediaDive solution 5645; locator=$.data.recipe[9] (compound_id=9). Provider explicitly reports g_l=3e-05. Arithmetic check: 0.03 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00003 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:56:53.099779+00:00; response SHA256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71."
+              }
+            ]
+          },
+          {
+            "preferred_term": "VOSO4 x 2 H2O",
+            "concentration": {
+              "value": "3e-05",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:197",
+              "label": "VOSO4 x 2 H2O"
+            },
+            "chebi_term": {
+              "id": "CHEBI:87009",
+              "label": "vanadyl sulfate dihydrate",
+              "match_type": "manual_curated"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+                "supports": "SUPPORT",
+                "snippet": "{\n                \"recipe_order\": 11,\n                \"compound\": \"VOSO4 x 2 H2O\",\n                \"compound_id\": 197,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.03,\n                \"unit\": \"mg\",\n                \"g_l\": 3.0e-5,\n                \"mmol_l\": 0.000150728,\n                \"optional\": 0\n            }",
+                "explanation": "Concentration evidence for composition[10].concentration (VOSO4 x 2 H2O) in MediaDive solution 5645; locator=$.data.recipe[10] (compound_id=197). Provider explicitly reports g_l=3e-05. Arithmetic check: 0.03 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00003 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:56:53.099779+00:00; response SHA256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71."
+              }
+            ]
+          },
+          {
+            "preferred_term": "CoSO4 x 7 H2O",
+            "concentration": {
+              "value": "1e-05",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:198",
+              "label": "CoSO4 x 7 H2O"
+            },
+            "chebi_term": {
+              "id": "CHEBI:91244",
+              "label": "cobalt(2+) sulfate heptahydrate",
+              "confidence": 0.7,
+              "match_type": "corpus_consensus"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+                "supports": "SUPPORT",
+                "snippet": "{\n                \"recipe_order\": 12,\n                \"compound\": \"CoSO4 x 7 H2O\",\n                \"compound_id\": 198,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\": \"mg\",\n                \"g_l\": 1.0e-5,\n                \"mmol_l\": 6.45178e-5,\n                \"optional\": 0\n            }",
+                "explanation": "Concentration evidence for composition[11].concentration (CoSO4 x 7 H2O) in MediaDive solution 5645; locator=$.data.recipe[11] (compound_id=198). Provider explicitly reports g_l=1e-05. Arithmetic check: 0.01 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00001 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:56:53.099779+00:00; response SHA256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71."
+              }
+            ]
+          },
+          {
+            "preferred_term": "NaCl",
+            "concentration": {
+              "value": "25",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:43",
+              "label": "NaCl"
+            },
+            "chebi_term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride",
+              "confidence": 1.0,
+              "match_type": "exact_match"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+                "supports": "SUPPORT",
+                "snippet": "{\n                \"recipe_order\": 13,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 25,\n                \"unit\": \"g\",\n                \"g_l\": 25,\n                \"mmol_l\": 427.789,\n                \"optional\": 0\n            }",
+                "explanation": "Concentration evidence for composition[12].concentration (NaCl) in MediaDive solution 5645; locator=$.data.recipe[12] (compound_id=43). Provider explicitly reports g_l=25. Arithmetic check: 25 g * 1 g/g / (1000 ml / 1000 ml per L) = 25 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:56:53.099779+00:00; response SHA256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71."
+              }
+            ]
+          },
+          {
+            "preferred_term": "Resazurin",
+            "concentration": {
+              "value": "0.001",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:25",
+              "label": "Resazurin"
+            },
+            "chebi_term": {
+              "id": "CHEBI:8806",
+              "label": "Resazurin",
+              "confidence": 1.0,
+              "match_type": "exact_match"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+                "supports": "SUPPORT",
+                "snippet": "{\n                \"recipe_order\": 14,\n                \"compound\": \"Resazurin\",\n                \"compound_id\": 25,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"mg\",\n                \"g_l\": 0.001,\n                \"mmol_l\": 0.00436319,\n                \"optional\": 0\n            }",
+                "explanation": "Concentration evidence for composition[13].concentration (Resazurin) in MediaDive solution 5645; locator=$.data.recipe[13] (compound_id=25). Provider explicitly reports g_l=0.001. Arithmetic check: 1 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.001 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:56:53.099779+00:00; response SHA256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71."
+              }
+            ]
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:16",
+              "label": "Yeast extract"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+                "supports": "SUPPORT",
+                "snippet": "{\n                \"recipe_order\": 15,\n                \"compound\": \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 1,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+                "explanation": "Concentration evidence for composition[14].concentration (Yeast extract) in MediaDive solution 5645; locator=$.data.recipe[14] (compound_id=16). Provider explicitly reports g_l=1. Arithmetic check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:56:53.099779+00:00; response SHA256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71."
+              }
+            ]
+          },
+          {
+            "preferred_term": "Sulfur",
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:80",
+              "label": "Sulfur"
+            },
+            "chebi_term": {
+              "id": "CHEBI:26833",
+              "label": "sulfur atom",
+              "confidence": 0.9,
+              "match_type": "corpus_consensus"
+            }
+          },
+          {
+            "preferred_term": "Distilled water",
+            "concentration": {
+              "value": "1000",
+              "unit": "PERCENT_V_V"
+            },
+            "term": {
+              "id": "mediadive.compound:4",
+              "label": "Distilled water"
+            },
+            "chebi_term": {
+              "id": "CHEBI:15377",
+              "label": "water",
+              "confidence": 0.7,
+              "match_type": "corpus_consensus"
+            }
+          },
+          {
+            "preferred_term": "Peptone",
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "mediadive.compound:1",
+              "label": "Peptone"
+            },
+            "evidence": [
+              {
+                "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+                "supports": "SUPPORT",
+                "snippet": "{\n                \"recipe_order\": 18,\n                \"compound\": \"Peptone\",\n                \"compound_id\": 1,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+                "explanation": "Concentration evidence for composition[17].concentration (Peptone) in MediaDive solution 5645; locator=$.data.recipe[17] (compound_id=1). Provider explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:56:53.099779+00:00; response SHA256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71."
+              }
+            ]
+          }
+        ],
+        "preparation_notes": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for a few minutes not autoclaved; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere.\nAdjust final pH to 7.2.",
+        "curation_history": [
+          {
+            "timestamp": "2026-03-13T06:20:38.176689Z",
+            "curator": "culturemech-id-assigner-v1.0",
+            "action": "Assigned CultureMech ID",
+            "notes": "Assigned stable identifier: CultureMech:014512"
+          },
+          {
+            "curator": "schema-defaulter-v1.0",
+            "action": "Applied schema defaults and normalizations",
+            "notes": "Added placeholder ingredients for missing composition",
+            "timestamp": "2026-03-14T00:00:00+00:00"
+          },
+          {
+            "timestamp": "2026-03-14T21:09:44.031671",
+            "curator": "quality-tagger-v1.0",
+            "action": "Added data quality flag",
+            "notes": "Marked as incomplete_composition due to placeholder ingredients"
+          },
+          {
+            "timestamp": "2026-04-04T17:50:20.100042",
+            "curator": "categorize_unknown_media",
+            "action": "CATEGORIZED",
+            "changes": "Set category to 'bacterial' (was: MISSING)",
+            "notes": "Automated categorization (confidence: 0.30). No clear match, defaulting to bacterial"
+          },
+          {
+            "timestamp": "2026-05-16T09:04:06.131364+00:00",
+            "curator": "migrate_legacy_fields.py",
+            "action": "MIGRATED_LEGACY_FIELDS",
+            "notes": "curation_history.date->timestamp=1"
+          },
+          {
+            "timestamp": "2026-06-10T06:38:39.339136+00:00",
+            "curator": "kg-fallback-consensus-v1.0",
+            "action": "Replaced low-confidence kg_fallback chebi_term with corpus consensus",
+            "notes": "Re-grounded 10 chebi_term(s) to the unanimous reliable CHEBI for the ingredient label seen elsewhere in the corpus (G25 Phase 1, zero external lookups)."
+          },
+          {
+            "timestamp": "2026-06-10T06:49:37.199260+00:00",
+            "curator": "kg-fallback-oak-ols-v1.0",
+            "action": "Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)",
+            "notes": "3 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority disambiguation, or mixture de-ground."
+          },
+          {
+            "timestamp": "2026-06-10T06:56:27.032678+00:00",
+            "curator": "kg-fallback-llm-curation-v1.0",
+            "action": "LLM-curated low-confidence chebi_term (G25 Phase 3)",
+            "notes": "2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded as a mixture, or confirmed correct."
+          },
+          {
+            "timestamp": "2026-10-07T09:59:54.456952+00:00",
+            "curator": "codex",
+            "action": "CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE",
+            "notes": "Source review decision captured at plan timestamp. Exact source IDs, labels, snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium concentration inferred.",
+            "source": "https://mediadive.dsmz.de/rest/solution/5645",
+            "changes": "composition[0].concentration: {\"unit\": \"G_PER_L\", \"value\": \"1.3\"} -> {\"unit\": \"G_PER_L\", \"value\": \"1.3\"} (evidence_only); composition[1].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.28\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.28\"} (evidence_only); composition[2].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.25\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.25\"} (evidence_only); composition[3].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.07\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.07\"} (evidence_only); composition[4].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.02\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.02\"} (evidence_only); composition[5].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.0018\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.0018\"} (evidence_only); composition[6].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.0045\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.0045\"} (evidence_only); composition[7].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.00022\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.00022\"} (evidence_only); composition[8].concentration: {\"unit\": \"G_PER_L\", \"value\": \"5e-05\"} -> {\"unit\": \"G_PER_L\", \"value\": \"5e-05\"} (evidence_only); composition[9].concentration: {\"unit\": \"G_PER_L\", \"value\": \"3e-05\"} -> {\"unit\": \"G_PER_L\", \"value\": \"3e-05\"} (evidence_only); composition[10].concentration: {\"unit\": \"G_PER_L\", \"value\": \"3e-05\"} -> {\"unit\": \"G_PER_L\", \"value\": \"3e-05\"} (evidence_only); composition[11].concentration: {\"unit\": \"G_PER_L\", \"value\": \"1e-05\"} -> {\"unit\": \"G_PER_L\", \"value\": \"1e-05\"} (evidence_only); composition[12].concentration: {\"unit\": \"G_PER_L\", \"value\": \"25\"} -> {\"unit\": \"G_PER_L\", \"value\": \"25\"} (evidence_only); composition[13].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.001\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.001\"} (evidence_only); composition[14].concentration: {\"unit\": \"G_PER_L\", \"value\": \"1\"} -> {\"unit\": \"G_PER_L\", \"value\": \"1\"} (evidence_only); composition[17].concentration: {\"unit\": \"G_PER_L\", \"value\": \"5\"} -> {\"unit\": \"G_PER_L\", \"value\": \"5\"} (evidence_only)"
+          }
+        ],
+        "ingredients": [
+          {
+            "preferred_term": "See source for composition",
+            "concentration": {
+              "value": "variable",
+              "unit": "VARIABLE"
+            }
+          }
+        ],
+        "data_quality_flags": [
+          "incomplete_composition"
+        ],
+        "category": "bacterial",
+        "references": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/solution/5645",
+            "title": "MediaDive solution 5645: Main sol. 673",
+            "notes": "source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07; source_organization=DSMZ; locator=$.data; response_sha256=0df395a75c5adf2e2eb056821ef9f63062b0ed324652f90c6f6946206c98ec71; individual authors and publication year not supplied. Provider-declared solution amounts, not receiving-medium concentrations."
+          }
+        ]
+      },
+      "source_medium": "673",
+      "review_status": "yeast-dose inheritance and parent sulfur conflict unresolved"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "terminal": true,
+  "applied": false,
+  "records": 1,
+  "counts": {
+    "stock_stage_concentrations_rebased": 1,
+    "new_quantity_slots": 1,
+    "stock_nodes_relocated": 1,
+    "stock_descriptors_added": 1,
+    "new_evidence": 3,
+    "new_references": 1,
+    "new_curation_history": 1,
+    "evidence_scopes_corrected": 2
+  }
+}

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self'; img-src 'self' data: https:; font-src 'self'; object-src 'none'; base-uri 'none'">
-<title>{{ medium.name }} ({{ medium.id }}) — CultureMech</title>
+<title>{{ medium.name or medium.preferred_term }} ({{ medium.id }}) — CultureMech</title>
 <link rel="stylesheet" href="{{ style_href }}">
 {% if composition_graph %}
 <script type="module" src="{{ mermaid_init_href }}"></script>
@@ -22,7 +22,7 @@
 </nav>
 
 <header>
-  <h1>{{ medium.name }}</h1>
+  <h1>{{ medium.name or medium.preferred_term }}</h1>
   <div class="meta">
     <span class="curie">{{ medium.id }}</span>
     {% if medium.category %}

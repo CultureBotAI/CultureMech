@@ -1,0 +1,171 @@
+[
+  {
+    "id": "CultureMech:002283",
+    "medium_id": "J1105",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J1105",
+    "source_sha256": "559db99d6d1e32f140e35701576a9d39128fcc0856b1f965910a9e9a6fe77f56",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Add components to distilled water and bring volume to 1.0 L.",
+    "reason": "The source makes the base to 1.0 L and then adds 10 ml carbonate stock. The API volume of 10 ml accounts only for that stock and inflates all main rates. Original JCM 1105 confirms the preparation. Restore base/stock boundaries before assigning concentrations; do not infer a percent basis."
+  },
+  {
+    "id": "CultureMech:002336",
+    "medium_id": "J1163",
+    "fields": [
+      "ingredients[5].concentration"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J1163",
+    "source_sha256": "0304321b864617988e579a5097433bc009993b65b8ed9fd0a88ff0893d9591de",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      5,
+      "compound"
+    ],
+    "snippet": "(NH4)2Ni(SO4)2 x 6 H2O",
+    "reason": "The API names a nickel ammonium double sulfate. Its chemical identity requires original-source confirmation; the official JCM 1163 endpoint returned Nothing found on 2026-10-07. This is an unresolved identity question, not evidence for substituting iron or another chemical."
+  },
+  {
+    "id": "CultureMech:002340",
+    "medium_id": "J1168",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J1168",
+    "source_sha256": "49da136948b490a5f4b42db14fdb381ba9c53953100229840c440b56a0fabf85",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      6,
+      "attribute"
+    ],
+    "snippet": "dissolved in methanol",
+    "reason": "Antibiotics are added after autoclaving: kanamycin dissolved in water and rifampicin in methanol. Neither solvent volume is established by the 1000 ml base table. Reconcile additions and volume before concentration support."
+  },
+  {
+    "id": "CultureMech:002370",
+    "medium_id": "J1201",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J1201",
+    "source_sha256": "7f96051c786c2a7685fd3801582df70ee05c198daf74124c618ea2031ef3b74c",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "add glucose from an anoxic stock solution",
+    "reason": "Glucose and carbonate are supplied from separately prepared stocks with unquantified solvent/dose accounting. The table does not establish the complete medium volume. Restore preparation and stock boundaries first."
+  },
+  {
+    "id": "CultureMech:002405",
+    "medium_id": "J1239",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J1239",
+    "source_sha256": "3525dbee89a1d1410fe7fb3ba28becb7a9f5a2c4dc79498a98c7b3417dc6eda8",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Separately autoclave yeast extract and sucrose and add to the medium.",
+    "reason": "Yeast extract and sucrose are separately autoclaved and added; their solvent volumes are not accounted for by the main table. Sulfur is added separately to culture vessels. Reconcile the complete formulation first."
+  },
+  {
+    "id": "CultureMech:002415",
+    "medium_id": "J1249",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J1249",
+    "source_sha256": "c701815bf576113ff1375cd0a207048e6ead386f3dc3ea65dd56f930309cd26d",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "After autoclaving, aseptically add 20 ml acetic acid (filter-sterilized).",
+    "reason": "The original JCM recipe and API preparation add 20 ml acetic acid, absent from the API table and its 1001 ml denominator. Restore the missing addition and volume basis; do not infer acid purity, density or final volume."
+  },
+  {
+    "id": "CultureMech:002428",
+    "medium_id": "J1262",
+    "fields": [
+      "ingredients[4].concentration"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J1262",
+    "source_sha256": "eab1ab5d095c3cb757837ddd95c6f64a3e059d00c7ee8dcc2b89483c6f6a2c25",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "After autoclaving, adjust pH to 10.0 with sterilized 10% Na2CO3 solution.",
+    "reason": "The 4.24 g carbonate table input is followed by an unquantified carbonate titration. It does not establish the total carbonate concentration after pH adjustment. Other base rows remain scoped to provider-declared rates."
+  },
+  {
+    "id": "CultureMech:002430",
+    "medium_id": "J1264",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J1264",
+    "source_sha256": "62ce2db4e4bb61bfdb61f8c94c745103ca1df5306263db29dd4edbae48c78f19",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "volume"
+    ],
+    "snippet": "1000",
+    "reason": "The API denominator is 1000 ml despite 1000 ml water plus 0.2 ml lactate solution in its table. An additional unquantified carbonate titration also changes total carbonate. Do not endorse the rounded denominator or infer a corrected measured final volume."
+  },
+  {
+    "id": "CultureMech:002487",
+    "medium_id": "J1323",
+    "fields": [
+      "ingredients[8].concentration"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J1323",
+    "source_sha256": "596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      8,
+      "compound"
+    ],
+    "snippet": "MnCl4 x 6 H2O",
+    "reason": "The API formula MnCl4 x 6 H2O requires original-source verification. The official JCM 1323 endpoint returned Nothing found on 2026-10-07. No corrected chloride stoichiometry or hydrate is established; withhold only this row rather than asserting a guessed substitute."
+  }
+]

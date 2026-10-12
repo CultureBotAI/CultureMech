@@ -1,0 +1,134 @@
+{
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/leucothrix_medium.yaml",
+      "id": "CultureMech:001943",
+      "fingerprint": "c0a6832516c0f8d00317cac67f23f1655a48f3d8a3f3f1b596ecbe5dc79a4941",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/leucothrix_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001943",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "evidence": true,
+        "references": true,
+        "ph_value": true
+      },
+      "all_checked_fields_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/rhizobium_medium.yaml",
+      "id": "CultureMech:002171",
+      "fingerprint": "9a68e4eb5832871ed964d5dae267c7b934547f8a7166476233e80217fe5a0646",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/rhizobium_medium.yaml"
+      ],
+      "merged_id": "CultureMech:002171",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "evidence": true,
+        "references": true,
+        "ph_value": true
+      },
+      "all_checked_fields_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/fungal/potato_dextrose_agar.yaml",
+      "id": "CultureMech:010445",
+      "fingerprint": "18fd4b8fd4a497361e144501e22bfb3f3946f00e0a6c79f085f9c3eb3dcc3940",
+      "group_paths": [
+        "data/normalized_yaml/fungal/potato_dextrose_agar.yaml"
+      ],
+      "merged_id": "CultureMech:010445",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "evidence": true,
+        "references": true,
+        "ph_value": true
+      },
+      "all_checked_fields_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bacillus_schlegelii_heterotrophic_medium.yaml",
+      "id": "CultureMech:001359",
+      "fingerprint": "2610c94ce536483493a9a3bbad194ec3072a5c2d54e306fd70517af89f84ec8a",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/bacillus_schlegelii_heterotrophic_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001359",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "evidence": true,
+        "references": true,
+        "ph_value": true
+      },
+      "all_checked_fields_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_for_chemolithotrophic_growth_of_bacillus_schlegelii.yaml",
+      "id": "CultureMech:001360",
+      "fingerprint": "bc1748928f11fb856d16428e8af1d35a764f06509d1d6375db73fb6fa14e3d7c",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml",
+        "data/normalized_yaml/bacterial/medium_for_chemolithotrophic_growth_of_bacillus_schlegelii.yaml"
+      ],
+      "merged_id": "CultureMech:001360",
+      "field_retention": {
+        "ingredients": false,
+        "solutions": true,
+        "preparation_steps": true,
+        "evidence": true,
+        "references": true,
+        "ph_value": true
+      },
+      "all_checked_fields_retained": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml",
+      "id": "CultureMech:001470",
+      "fingerprint": "bc1748928f11fb856d16428e8af1d35a764f06509d1d6375db73fb6fa14e3d7c",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml",
+        "data/normalized_yaml/bacterial/medium_for_chemolithotrophic_growth_of_bacillus_schlegelii.yaml"
+      ],
+      "merged_id": "CultureMech:001360",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": false,
+        "preparation_steps": false,
+        "evidence": false,
+        "references": false,
+        "ph_value": false
+      },
+      "all_checked_fields_retained": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/glucose_medium_nakayama.yaml",
+      "id": "CultureMech:001562",
+      "fingerprint": "3060210de3ee58d441431453ce70adcef569d2f41c35bd258c7f9f779da26b7b",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/glucose_medium_nakayama.yaml"
+      ],
+      "merged_id": "CultureMech:001562",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "evidence": true,
+        "references": true,
+        "ph_value": true
+      },
+      "all_checked_fields_retained": true
+    }
+  ],
+  "retained": 5,
+  "all_retained": false
+}

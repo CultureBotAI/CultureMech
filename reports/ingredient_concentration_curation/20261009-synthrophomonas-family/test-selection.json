@@ -1,0 +1,52 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "tests/test_synthrophomonas_family.py",
+        "--collect-only",
+        "-q",
+        "-m",
+        "corpus",
+        "--no-cov"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/test-selection-v2-test_synthrophomonas_family.log",
+      "log_sha256": "7e2c2f7fb961fd5bba8f140987ba5e342b6017c38cb43a5253f553f22f7b7e08",
+      "module_sha256": "fc68e870d8cb3a56e73d29e2d6797f7fac8a241f33bdfb117ecf5bbe5f591a2e"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "tests/test_followup_report_coverage.py",
+        "--collect-only",
+        "-q",
+        "-m",
+        "corpus",
+        "--no-cov"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/test-selection-v2-test_followup_report_coverage.log",
+      "log_sha256": "8129688316c8cd6ee8402850107a5ac30ff6de643da0b312ce6ea57c286d9f87",
+      "module_sha256": "8f226c29d8081212461eec982f63a2db8ae0bc774b0df7fa487c37fe79819aba"
+    }
+  ],
+  "corpus_tier_collection": {
+    "test_synthrophomonas_family.py": 565,
+    "test_followup_report_coverage.py": 8
+  },
+  "explanation": "The existing tests/conftest.py classifier marks whole modules containing data/normalized_yaml as corpus-tier. The medium212 application fixture now contains that literal path, so this module is excluded from test-fast. Its tests passed in the separate 837-test focused run. The eight follow-up coverage tests passed in the separate 127-test QA run. The historical preview and current fast counts are not identical selections. The later 103 Halobacteria tests were validated separately, not in this fast run.",
+  "receipt_sha256": {
+    "fast": "219427f9dd3694fd2299caf43bd9450d8348369dd72fef9d9effcde22db5d090",
+    "focused-application-v2": "d4e3746f6a9aee747fe3795603e79d9c8025d608352ca36ebad2805fdaee62f8",
+    "reconcile-qa": "7fdc1f090c6dbc161a0b7f8baec5be6b6497e6a66e5b7ca82cc22f42716b1f46"
+  },
+  "classifier_sha256": "f43cf452431b950a079fcee0a3c7e978067039fba749c956da1c94510c33b68b",
+  "initial_collection_diagnostic": "The initial helper expected 21 follow-up coverage tests but collection returned eight. Both initial collection commands succeeded; only the helper's expected-count assertion failed. Their logs are preserved. This successor records the actual eight tests."
+}

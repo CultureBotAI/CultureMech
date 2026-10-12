@@ -1,0 +1,39 @@
+{
+  "terminal": true,
+  "records": 4,
+  "sources": 5,
+  "report_rows": 48,
+  "literal_snippets_verified": 45,
+  "additional_triage_records_unchanged": 2,
+  "additional_triage_sources": 4,
+  "commands": [
+    [
+      "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+      "--check",
+      "scripts/repair_jcm973_preparations.py",
+      "scripts/repair_togo_first_pair_concentrations.py",
+      "tests/test_jcm973_preparations.py",
+      "tests/test_medium_concentration_batch.py",
+      "reports/ingredient_concentration_curation/20261008-jcm973-preparations/audit.py",
+      "reports/ingredient_concentration_curation/20261008-jcm973-preparations/retention.py",
+      "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+    ],
+    [
+      "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+      "check",
+      "scripts/repair_jcm973_preparations.py",
+      "scripts/repair_togo_first_pair_concentrations.py",
+      "tests/test_jcm973_preparations.py",
+      "tests/test_medium_concentration_batch.py",
+      "reports/ingredient_concentration_curation/20261008-jcm973-preparations/audit.py",
+      "reports/ingredient_concentration_curation/20261008-jcm973-preparations/retention.py",
+      "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+    ],
+    [
+      "git",
+      "diff",
+      "--check"
+    ]
+  ],
+  "publication_ready": false
+}

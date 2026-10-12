@@ -1,0 +1,50 @@
+{
+  "terminal": true,
+  "source_sha256": "e02f89a4cd3c75ada002f31929e0943db79a84c319048feac12d2811e50c93dd",
+  "input_records": 15910,
+  "output_groups": 10777,
+  "targets": [
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M225_Methanocaldococcus_Jannaschii_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M225_Methanocaldococcus_Jannaschii_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M236_Stetteria_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M236_Stetteria_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M243_Methanothermus_Fervidus_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M243_Methanothermus_Fervidus_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M229_Thermotoga_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M229_Thermotoga_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/togo_medium_m234.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/togo_medium_m234.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    }
+  ],
+  "derived_yaml_written": false,
+  "scope": "Full corpus routing; only the five repaired outputs recertified."
+}

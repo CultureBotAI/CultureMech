@@ -16,6 +16,33 @@ composition:
     label: 2-(N-morpholino)ethanesulfonic acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5088
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "MES",
+                      "compound_id": 824,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.95,
+                      "unit": "g",
+                      "g_l": 46.4286,
+                      "mmol_l": 237.803,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (MES) in
+      MediaDive solution 5088; locator=$.data.recipe[0] (compound_id=824). Provider
+      explicitly reports g_l=46.4286. Arithmetic check: 1.95 g * 1 g/g / (42 ml /
+      1000 ml per L) = 46.42857142857142857142857143 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 42. Retrieved 2026-10-07T09:50:49.366924+00:00;
+      response SHA256=30eea4a52c6f5b21b930ac8a8a0dadd11b3a145f5a7c8afb7bb1aa662f166ff8.'
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '238.0952380952381'
@@ -75,6 +102,33 @@ composition:
     label: xylan
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5088
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 8,
+                      "compound": "Xylan",
+                      "compound_id": 508,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 11.9048,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (Xylan)
+      in MediaDive solution 5088; locator=$.data.recipe[7] (compound_id=508). Provider
+      explicitly reports g_l=11.9048. Arithmetic check: 0.5 g * 1 g/g / (42 ml / 1000
+      ml per L) = 11.90476190476190476190476190 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 42. Retrieved 2026-10-07T09:50:49.366924+00:00;
+      response SHA256=30eea4a52c6f5b21b930ac8a8a0dadd11b3a145f5a7c8afb7bb1aa662f166ff8.'
 - preferred_term: Gellan Gum
   concentration:
     value: '190.476'
@@ -87,6 +141,33 @@ composition:
     label: gellan gum
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5088
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 9,
+                      "compound": "Gellan Gum",
+                      "compound_id": 1158,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 8,
+                      "unit": "g",
+                      "g_l": 190.476,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[6].concentration (Gellan
+      Gum) in MediaDive solution 5088; locator=$.data.recipe[8] (compound_id=1158).
+      Provider explicitly reports g_l=190.476. Arithmetic check: 8 g * 1 g/g / (42
+      ml / 1000 ml per L) = 190.4761904761904761904761905 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 42. Retrieved 2026-10-07T09:50:49.366924+00:00;
+      response SHA256=30eea4a52c6f5b21b930ac8a8a0dadd11b3a145f5a7c8afb7bb1aa662f166ff8.'
 preparation_notes: 'Adjust pH to 5.5
 
 
@@ -129,6 +210,18 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:53:16.572361+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5088
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "46.4286"}
+    -> {"unit": "G_PER_L", "value": "46.4286"} (evidence_only); composition[5].concentration:
+    {"unit": "G_PER_L", "value": "11.9048"} -> {"unit": "G_PER_L", "value": "11.9048"}
+    (evidence_only); composition[6].concentration: {"unit": "G_PER_L", "value": "190.476"}
+    -> {"unit": "G_PER_L", "value": "190.476"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -137,3 +230,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5088
+  title: 'MediaDive solution 5088: Main sol. J1035'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=30eea4a52c6f5b21b930ac8a8a0dadd11b3a145f5a7c8afb7bb1aa662f166ff8;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

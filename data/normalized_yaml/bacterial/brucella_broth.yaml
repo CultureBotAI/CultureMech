@@ -17,10 +17,54 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J538
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Pancreatic digest of casein",
+                              "compound_id": 531,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[0].concentration (Pancreatic
+      digest of casein) in MediaDive medium J538; locator=$.data.solutions[0].recipe[0].
+      Provider explicitly reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 10 g/L. This supports the provider-declared main-recipe concentration,
+      not an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T14:36:12.571196+00:00; response SHA256=c574f7d43308c1981d72c261a08025e904fd327fb5d3a6844753de98c16c8a26.'
 - preferred_term: Peptic digest of animal tissue
   concentration:
     value: '10'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J538
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Peptic digest of animal tissue",
+                              "compound_id": 1799,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[1].concentration (Peptic
+      digest of animal tissue) in MediaDive medium J538; locator=$.data.solutions[0].recipe[1].
+      Provider explicitly reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 10 g/L. This supports the provider-declared main-recipe concentration,
+      not an independently measured final volume, a stock composition, or a downstream
+      assay dilution. Water alone does not establish final volume. Exact source ingredient
+      labels/forms are matched; secondary ontology mappings are not validated by this
+      evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+      2026-10-07T14:36:12.571196+00:00; response SHA256=c574f7d43308c1981d72c261a08025e904fd327fb5d3a6844753de98c16c8a26.'
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -31,10 +75,55 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J538
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "Glucose",
+                              "compound_id": 5,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "mmol_l": 5.55062,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[2].concentration (Glucose)
+      in MediaDive medium J538; locator=$.data.solutions[0].recipe[2]. Provider explicitly
+      reports g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T14:36:12.571196+00:00;
+      response SHA256=c574f7d43308c1981d72c261a08025e904fd327fb5d3a6844753de98c16c8a26.'
 - preferred_term: Yeast extract
   concentration:
     value: '2'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J538
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 2,
+                              "unit": "g",
+                              "g_l": 2,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[3].concentration (Yeast extract)
+      in MediaDive medium J538; locator=$.data.solutions[0].recipe[3]. Provider explicitly
+      reports g_l=2; check: 2 g * 1 g/g / (1000 ml / 1000 ml per L) = 2 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T14:36:12.571196+00:00;
+      response SHA256=c574f7d43308c1981d72c261a08025e904fd327fb5d3a6844753de98c16c8a26.'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -45,6 +134,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J538
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "mmol_l": 85.5578,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[4].concentration (NaCl) in
+      MediaDive medium J538; locator=$.data.solutions[0].recipe[4]. Provider explicitly
+      reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T14:36:12.571196+00:00;
+      response SHA256=c574f7d43308c1981d72c261a08025e904fd327fb5d3a6844753de98c16c8a26.'
 - preferred_term: NaHSO3
   term:
     id: CHEBI:26709
@@ -55,6 +167,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26709
     label: sodium hydrogensulfite
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J538
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "NaHSO3",
+                              "compound_id": 1800,
+                              "amount": 0.1,
+                              "unit": "g",
+                              "g_l": 0.1,
+                              "mmol_l": 0.960966,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[5].concentration (NaHSO3)
+      in MediaDive medium J538; locator=$.data.solutions[0].recipe[5]. Provider explicitly
+      reports g_l=0.1; check: 0.1 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.1 g/L.
+      This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T14:36:12.571196+00:00;
+      response SHA256=c574f7d43308c1981d72c261a08025e904fd327fb5d3a6844753de98c16c8a26.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -89,3 +224,29 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-07T14:52:40.011908+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/J538
+  changes: 'ingredients[0].concentration: {"unit": "G_PER_L", "value": "10"} -> {"unit":
+    "G_PER_L", "value": "10"} (evidence_only); ingredients[1].concentration: {"unit":
+    "G_PER_L", "value": "10"} -> {"unit": "G_PER_L", "value": "10"} (evidence_only);
+    ingredients[2].concentration: {"unit": "G_PER_L", "value": "1"} -> {"unit": "G_PER_L",
+    "value": "1"} (evidence_only); ingredients[3].concentration: {"unit": "G_PER_L",
+    "value": "2"} -> {"unit": "G_PER_L", "value": "2"} (evidence_only); ingredients[4].concentration:
+    {"unit": "G_PER_L", "value": "5"} -> {"unit": "G_PER_L", "value": "5"} (evidence_only);
+    ingredients[5].concentration: {"unit": "G_PER_L", "value": "0.1"} -> {"unit":
+    "G_PER_L", "value": "0.1"} (evidence_only)'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/J538
+  title: 'MediaDive medium J538: BRUCELLA BROTH'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=c574f7d43308c1981d72c261a08025e904fd327fb5d3a6844753de98c16c8a26;
+    original_recipe=https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=538; individual
+    authors and publication year not supplied. Provider-declared main-recipe amounts
+    only. Original recipe collection=JCM; GRMD accession=538; DSMZ is the MediaDive
+    dataset provider, not the original recipe collection.

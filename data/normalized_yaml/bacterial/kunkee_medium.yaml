@@ -20,6 +20,29 @@ ingredients:
   term:
     id: MICRO:0000182
     label: Tryptone
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/368
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Tryptone",
+                              "compound_id": 71,
+                              "amount": 20,
+                              "unit": "g",
+                              "g_l": 20,
+                              "mmol_l": 281.373,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[0].concentration (Tryptone)
+      in MediaDive medium 368; locator=$.data.solutions[0].recipe[0]. Provider explicitly
+      reports g_l=20; check: 20 g * 1 g/g / (1000 ml / 1000 ml per L) = 20 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:02.660993+00:00;
+      response SHA256=de6ba13b828889cf820e62b008b308a37e9315670ce4fac8cea87f625b23f171.'
 - preferred_term: Peptone
   concentration:
     value: '5'
@@ -27,6 +50,28 @@ ingredients:
   term:
     id: MICRO:0000178
     label: Peptone
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/368
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Peptone",
+                              "compound_id": 1,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[1].concentration (Peptone)
+      in MediaDive medium 368; locator=$.data.solutions[0].recipe[1]. Provider explicitly
+      reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:02.660993+00:00;
+      response SHA256=de6ba13b828889cf820e62b008b308a37e9315670ce4fac8cea87f625b23f171.'
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -34,6 +79,28 @@ ingredients:
   term:
     id: FOODON:03315426
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/368
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[2].concentration (Yeast extract)
+      in MediaDive medium 368; locator=$.data.solutions[0].recipe[2]. Provider explicitly
+      reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:02.660993+00:00;
+      response SHA256=de6ba13b828889cf820e62b008b308a37e9315670ce4fac8cea87f625b23f171.'
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -44,6 +111,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/368
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "Glucose",
+                              "compound_id": 5,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "mmol_l": 27.7531,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[3].concentration (Glucose)
+      in MediaDive medium 368; locator=$.data.solutions[0].recipe[3]. Provider explicitly
+      reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This
+      supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:02.660993+00:00;
+      response SHA256=de6ba13b828889cf820e62b008b308a37e9315670ce4fac8cea87f625b23f171.'
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -99,6 +189,20 @@ curation_history:
   changes: Grounded exact bacterial score-10 ingredients
   source: src/culturemech/data/mediaingredientmech/label_index.csv
   notes: Applied local mappings for Peptone, Tomato juice, Tryptone, Yeast extract.
+- timestamp: '2026-10-07T10:55:41.454416+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/368
+  changes: 'ingredients[0].concentration: {"unit": "G_PER_L", "value": "20"} -> {"unit":
+    "G_PER_L", "value": "20"} (evidence_only); ingredients[1].concentration: {"unit":
+    "G_PER_L", "value": "5"} -> {"unit": "G_PER_L", "value": "5"} (evidence_only);
+    ingredients[2].concentration: {"unit": "G_PER_L", "value": "5"} -> {"unit": "G_PER_L",
+    "value": "5"} (evidence_only); ingredients[3].concentration: {"unit": "G_PER_L",
+    "value": "5"} -> {"unit": "G_PER_L", "value": "5"} (evidence_only)'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_368_KUNKEE_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -106,3 +210,11 @@ variant_children:
   name: kunkee_medium
   notes: KOMODO record is an exact source duplicate of DSMZ Medium 368; local ingredient
     and concentration signatures match.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/368
+  title: 'MediaDive medium 368: KUNKEE MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=de6ba13b828889cf820e62b008b308a37e9315670ce4fac8cea87f625b23f171;
+    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium368.pdf;
+    individual authors and publication year not supplied. Provider-declared main-recipe
+    amounts only.

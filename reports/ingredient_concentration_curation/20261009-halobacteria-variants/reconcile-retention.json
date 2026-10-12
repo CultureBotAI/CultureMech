@@ -1,0 +1,149 @@
+{
+  "terminal": true,
+  "phase": "retention",
+  "checks": [],
+  "errors": [],
+  "source_sha256": "82e954649cedc505c58a3630b18afc0ddb4d9d30f77b75693172a95010987d00",
+  "plan_sha256": "c9611e131c0bc87eb0ffca52aa596859e29f5a66e3b2b39349ff961ffe4f7b78",
+  "ignored_files_included": true,
+  "input_records": 15910,
+  "grouped_records": 10787,
+  "output_groups": 10781,
+  "routing": {
+    "total_processed": 15910,
+    "excluded_solutions": 4785,
+    "skipped_no_fingerprint": 2,
+    "skipped_error": 336,
+    "successfully_fingerprinted": 10787,
+    "reasons": {
+      "other_error": 336,
+      "no_valid_ingredients": 2
+    }
+  },
+  "targets": [
+    {
+      "path": "data/normalized_yaml/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M1065_Modified_Halobacteria_Medium-3.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M1065_Modified_Halobacteria_Medium-3.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M1212_Halobacteria_Medium_pH_8.0.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M1212_Halobacteria_Medium_pH_8.0.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M160_Halobacteria_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M160_Halobacteria_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M576_Modified_Halobacteria_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M576_Modified_Halobacteria_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M959_Halobacteria_Medium_With_15_NaCl.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M959_Halobacteria_Medium_With_15_NaCl.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M960_Halobacteria_Medium_With_15_NaCl.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M960_Halobacteria_Medium_With_15_NaCl.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halobacteria_medium_ph_8_0.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/halobacteria_medium_ph_8_0.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halobacteria_medium_with_15_nacl.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/halobacteria_medium_with_15_nacl.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/modified_halobacteria_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/modified_halobacteria_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/modified_halobacteria_medium_3.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/modified_halobacteria_medium_3.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/JCM_J377_LENTIBACILLUS_MEDIUM.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/JCM_J377_LENTIBACILLUS_MEDIUM.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M371_Lentibacillus_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M371_Lentibacillus_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M372_Lentibacillus_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M372_Lentibacillus_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    }
+  ],
+  "excluded_solution_paths": [
+    "data/normalized_yaml/bacterial/mediadive_3823_Main_sol_J168.yaml"
+  ],
+  "derived_yaml_written": false
+}

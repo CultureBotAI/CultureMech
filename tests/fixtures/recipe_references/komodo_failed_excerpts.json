@@ -1,0 +1,157 @@
+[
+  {
+    "capture": "K1021",
+    "snippet": "Yeast extract Yeast extract rich-peptone# 4.96 null",
+    "path": "ingredients[0].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021",
+    "snippet": "D-Glucose D-Glucose SEED-cpd00027### 4.00 0.02",
+    "path": "ingredients[1].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021",
+    "snippet": "KCl KCl SEED-cpd00099#cpd00205## 0.20 0.00",
+    "path": "ingredients[2].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021",
+    "snippet": "MgCl2 x 6 H2O Magnesium chloride SEED-cpd00099#cpd00254#cpd04877# 0.10 0.00",
+    "path": "ingredients[3].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021",
+    "snippet": "CaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.20 0.00",
+    "path": "ingredients[4].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021",
+    "snippet": "NaCl NaCl SEED-cpd00099#cpd00971## 6.96 0.12",
+    "path": "ingredients[5].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021",
+    "snippet": "NaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 0.12 0.00",
+    "path": "ingredients[6].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021",
+    "snippet": "Agar Agar SEED-cpd13334### 13.60 null",
+    "path": "ingredients[7].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021",
+    "snippet": "NaH2PO4 x 2 H2O NaH2PO4 SEED-cpd00009#cpd00971## 0.22 0.00",
+    "path": "ingredients[8].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021",
+    "snippet": "casein hydrolysate casein hydrolysate rich-peptone# 6.48 null",
+    "path": "ingredients[9].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021",
+    "snippet": "Distilled water H2O SEED-cpd00001### null null",
+    "path": "ingredients[10].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021",
+    "snippet": "new borne calf serum new borne calf serum rich-serum# 200.00 0.20",
+    "path": "ingredients[11].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021",
+    "snippet": "casein hydrolysate casein hydrolysate",
+    "path": "parent_media.evidence[0].snippet"
+  },
+  {
+    "capture": "K1021",
+    "snippet": "PH Info: 8.0",
+    "path": "evidence[1].snippet"
+  },
+  {
+    "capture": "K1021_16929",
+    "snippet": "Yeast extract Yeast extract rich-peptone# 4.96 null",
+    "path": "ingredients[0].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021_16929",
+    "snippet": "D-Glucose D-Glucose SEED-cpd00027### 4.00 0.02",
+    "path": "ingredients[1].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021_16929",
+    "snippet": "KCl KCl SEED-cpd00099#cpd00205## 0.20 0.00",
+    "path": "ingredients[2].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021_16929",
+    "snippet": "MgCl2 x 6 H2O Magnesium chloride SEED-cpd00099#cpd00254#cpd04877# 0.10 0.00",
+    "path": "ingredients[3].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021_16929",
+    "snippet": "CaCl2 x 2 H2O Calcium chloride SEED-cpd00063#cpd00099## 0.20 0.00",
+    "path": "ingredients[4].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021_16929",
+    "snippet": "NaCl NaCl SEED-cpd00099#cpd00971## 6.96 0.12",
+    "path": "ingredients[5].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021_16929",
+    "snippet": "NaHCO3 sodium bicarbonate SEED-cpd00242#cpd00971#cpd09249# 0.12 0.00",
+    "path": "ingredients[6].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021_16929",
+    "snippet": "Agar Agar SEED-cpd13334### 13.60 null",
+    "path": "ingredients[7].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021_16929",
+    "snippet": "NaH2PO4 x 2 H2O NaH2PO4 SEED-cpd00009#cpd00971## 0.22 0.00",
+    "path": "ingredients[8].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021_16929",
+    "snippet": "casein hydrolysate casein hydrolysate rich-peptone# 6.48 null",
+    "path": "ingredients[9].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021_16929",
+    "snippet": "Distilled water H2O SEED-cpd00001### null null",
+    "path": "ingredients[10].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021_16929",
+    "snippet": "new borne calf serum new borne calf serum rich-serum# 200.00 0.20",
+    "path": "ingredients[11].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021_16929",
+    "snippet": "O2 O2 SEED-cpd00007### null null",
+    "path": "ingredients[12].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021_16929",
+    "snippet": "N2 N2 SEED-cpd00528### null null",
+    "path": "ingredients[13].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021_16929",
+    "snippet": "CO2 CO2 SEED-cpd00011### null null",
+    "path": "ingredients[14].evidence[0].snippet"
+  },
+  {
+    "capture": "K1021_16929",
+    "snippet": "PH Info: null",
+    "path": "evidence[1].snippet"
+  },
+  {
+    "capture": "K1021",
+    "snippet": "casein hydrolysate casein hydrolysate",
+    "path": "variant_children[0].evidence[0].snippet"
+  }
+]

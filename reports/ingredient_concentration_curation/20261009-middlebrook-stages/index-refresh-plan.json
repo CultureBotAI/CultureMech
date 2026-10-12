@@ -1,0 +1,586 @@
+{
+  "source_sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138",
+  "files": [
+    {
+      "target": "data/normalized_yaml/bacterial_index.json",
+      "preview": "/tmp/ingredient-media-20261007/middlebrook-index-preview/bacterial_index.json",
+      "before_sha256": "33ac1a0dc50f1717dc8c71acdda434da2eeb565220463137c16f384065b113ee",
+      "after_sha256": "25a598c22cc1f5f575e5953288af39680f2d009e1d077658769ad647bc4c8c68",
+      "changes": [
+        {
+          "key": "CultureMech:002016",
+          "id": "CultureMech:002016",
+          "changes": {
+            "ingredient_count": [
+              17,
+              14
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008986",
+          "id": "CultureMech:008986",
+          "changes": {
+            "ingredient_count": [
+              22,
+              3
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008914",
+          "id": "CultureMech:008914",
+          "changes": {
+            "ingredient_count": [
+              11,
+              3
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:009413",
+          "id": "CultureMech:009413",
+          "changes": {
+            "ingredient_count": [
+              8,
+              3
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008980",
+          "id": "CultureMech:008980",
+          "changes": {
+            "ingredient_count": [
+              10,
+              3
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008525",
+          "id": "CultureMech:008525",
+          "changes": {
+            "ingredient_count": [
+              24,
+              17
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008990",
+          "id": "CultureMech:008990",
+          "changes": {
+            "ingredient_count": [
+              25,
+              17
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008984",
+          "id": "CultureMech:008984",
+          "changes": {
+            "ingredient_count": [
+              21,
+              2
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008985",
+          "id": "CultureMech:008985",
+          "changes": {
+            "ingredient_count": [
+              22,
+              2
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008978",
+          "id": "CultureMech:008978",
+          "changes": {
+            "ingredient_count": [
+              21,
+              2
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:009415",
+          "id": "CultureMech:009415",
+          "changes": {
+            "ingredient_count": [
+              8,
+              3
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008983",
+          "id": "CultureMech:008983",
+          "changes": {
+            "ingredient_count": [
+              21,
+              2
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008987",
+          "id": "CultureMech:008987",
+          "changes": {
+            "ingredient_count": [
+              23,
+              3
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_mediadive_index.json",
+      "preview": "/tmp/ingredient-media-20261007/middlebrook-index-preview/by_source_mediadive_index.json",
+      "before_sha256": "deb660aecf8daa9762150a9d7e7211ea6cf637818eff4c47793bcc023cfcc110",
+      "after_sha256": "2876b722a166c082b6d58232e14dfd04c9ab995deddcabccc2562429b90902a4",
+      "changes": [
+        {
+          "key": "CultureMech:002016",
+          "id": "CultureMech:002016",
+          "changes": {
+            "ingredient_count": [
+              17,
+              14
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_togo_index.json",
+      "preview": "/tmp/ingredient-media-20261007/middlebrook-index-preview/by_source_togo_index.json",
+      "before_sha256": "53da94f28705b4b558f925fb6a75c22ea259b9c55ae443553d63b736e1b540f3",
+      "after_sha256": "66ecd6f8533bfab58ba07cc48026750ac8ef43bc4d26729f895948e3f26fdf1a",
+      "changes": [
+        {
+          "key": "CultureMech:008986",
+          "id": "CultureMech:008986",
+          "changes": {
+            "ingredient_count": [
+              22,
+              3
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008914",
+          "id": "CultureMech:008914",
+          "changes": {
+            "ingredient_count": [
+              11,
+              3
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:009413",
+          "id": "CultureMech:009413",
+          "changes": {
+            "ingredient_count": [
+              8,
+              3
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008980",
+          "id": "CultureMech:008980",
+          "changes": {
+            "ingredient_count": [
+              10,
+              3
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008525",
+          "id": "CultureMech:008525",
+          "changes": {
+            "ingredient_count": [
+              24,
+              17
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008990",
+          "id": "CultureMech:008990",
+          "changes": {
+            "ingredient_count": [
+              25,
+              17
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008984",
+          "id": "CultureMech:008984",
+          "changes": {
+            "ingredient_count": [
+              21,
+              2
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008985",
+          "id": "CultureMech:008985",
+          "changes": {
+            "ingredient_count": [
+              22,
+              2
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008978",
+          "id": "CultureMech:008978",
+          "changes": {
+            "ingredient_count": [
+              21,
+              2
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:009415",
+          "id": "CultureMech:009415",
+          "changes": {
+            "ingredient_count": [
+              8,
+              3
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008983",
+          "id": "CultureMech:008983",
+          "changes": {
+            "ingredient_count": [
+              21,
+              2
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008987",
+          "id": "CultureMech:008987",
+          "changes": {
+            "ingredient_count": [
+              23,
+              3
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_index.json",
+      "preview": "/tmp/ingredient-media-20261007/middlebrook-index-preview/recipe_index.json",
+      "before_sha256": "6f6ee76527101d614b32d29a8d1cf7ccba401fa81bad6a4407289ad228e30d60",
+      "after_sha256": "14dcd2842679d9fee7f7e50f5bfb0d8a486492ff8d26cbd8f0abd8d52154ccad",
+      "changes": [
+        {
+          "key": "CultureMech:002016",
+          "id": "CultureMech:002016",
+          "changes": {
+            "ingredient_count": [
+              17,
+              14
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008986",
+          "id": "CultureMech:008986",
+          "changes": {
+            "ingredient_count": [
+              22,
+              3
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008914",
+          "id": "CultureMech:008914",
+          "changes": {
+            "ingredient_count": [
+              11,
+              3
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:009413",
+          "id": "CultureMech:009413",
+          "changes": {
+            "ingredient_count": [
+              8,
+              3
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008980",
+          "id": "CultureMech:008980",
+          "changes": {
+            "ingredient_count": [
+              10,
+              3
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008525",
+          "id": "CultureMech:008525",
+          "changes": {
+            "ingredient_count": [
+              24,
+              17
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008990",
+          "id": "CultureMech:008990",
+          "changes": {
+            "ingredient_count": [
+              25,
+              17
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008984",
+          "id": "CultureMech:008984",
+          "changes": {
+            "ingredient_count": [
+              21,
+              2
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008985",
+          "id": "CultureMech:008985",
+          "changes": {
+            "ingredient_count": [
+              22,
+              2
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008978",
+          "id": "CultureMech:008978",
+          "changes": {
+            "ingredient_count": [
+              21,
+              2
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:009415",
+          "id": "CultureMech:009415",
+          "changes": {
+            "ingredient_count": [
+              8,
+              3
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008983",
+          "id": "CultureMech:008983",
+          "changes": {
+            "ingredient_count": [
+              21,
+              2
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008987",
+          "id": "CultureMech:008987",
+          "changes": {
+            "ingredient_count": [
+              23,
+              3
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "metadata_changed_ids": [
+    "CultureMech:002016",
+    "CultureMech:008525",
+    "CultureMech:008914",
+    "CultureMech:008978",
+    "CultureMech:008980",
+    "CultureMech:008983",
+    "CultureMech:008984",
+    "CultureMech:008985",
+    "CultureMech:008986",
+    "CultureMech:008987",
+    "CultureMech:008990",
+    "CultureMech:009413",
+    "CultureMech:009415"
+  ]
+}

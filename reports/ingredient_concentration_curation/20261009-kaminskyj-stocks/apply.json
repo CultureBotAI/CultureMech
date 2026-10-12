@@ -1,0 +1,34 @@
+{
+  "terminal": true,
+  "phase": "apply",
+  "checks": [],
+  "plan_sha256": "51f1a4f37ad7005cc3cdf531607bdcfae3e3adddd61d9a030631744ef89fd43f",
+  "code_sha256": {
+    "scripts/repair_kaminskyj_stocks.py": "b33eb2996f01df62e6c96f9721e09a15503016fe4d046d28d0d9526933523ac0",
+    "tests/test_kaminskyj_stocks.py": "4397904336cd6bd04af81d30dde385a4de5c8de0533e5afa7f64f76865556c85"
+  },
+  "normalized_count": 15910,
+  "inventory_before_sha256": "83b9583a31a82ab2db7403fa21d8dc1fd30928d289bb7598a043348f4d82be2c",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "captured_source_snippet_checks": 20,
+  "captured_source_check_scope": "Re-extracted primary HTML, exact normalized text snippets, stock volume contexts, publisher metadata and MIM/local ontology labels; separate from production reference validation.",
+  "application": {
+    "changed": 1,
+    "already_applied": 0
+  },
+  "readback": {
+    "changed": 0,
+    "already_applied": 1
+  },
+  "repeat_noop": {
+    "changed": 0,
+    "already_applied": 1
+  },
+  "passed": true,
+  "inventory_after_sha256": "19c45017d3210c6bc2c2fde0ec7a2f2c4a4498191af394cb351249b3299f6a05",
+  "changed_paths": [
+    "data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml"
+  ],
+  "only_intended_records_changed": true
+}

@@ -1,0 +1,1898 @@
+{
+  "terminal": true,
+  "phase": "live",
+  "checks": [],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "cc01a6b89ff98426f13409c5d4a6114691a9a12094c0230b6ed7057aae17f842"
+  },
+  "sources": [
+    {
+      "key": "J201",
+      "url": "https://mediadive.dsmz.de/rest/medium/J201",
+      "sha256": "811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536",
+      "accessed_at": "2026-10-08T21:47:50.887794+00:00",
+      "matches_inspected_capture": true,
+      "formulation_evidence_available": true,
+      "issue": null
+    },
+    {
+      "key": "J220",
+      "url": "https://mediadive.dsmz.de/rest/medium/J220",
+      "sha256": "60124421b4435a039b1f18c6585fc351e9e7c19c20721819b19dfc98fe2db993",
+      "accessed_at": "2026-10-08T21:47:51.068800+00:00",
+      "matches_inspected_capture": true,
+      "formulation_evidence_available": true,
+      "issue": null
+    },
+    {
+      "key": "JCM201",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=201",
+      "sha256": "eec7768c3a12a00e699e649042b66d9ac12aa5304413b4825674c442d4d574a9",
+      "accessed_at": "2026-10-08T21:47:51.632630+00:00",
+      "matches_inspected_capture": true,
+      "formulation_evidence_available": false,
+      "issue": "source_unavailable: JCM returned no recipe"
+    },
+    {
+      "key": "JCM220",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+      "sha256": "1769837f02e8fbc89f06a76ffe989d7bc5957ce332af2d027246a5971007b24a",
+      "accessed_at": "2026-10-08T21:47:51.963544+00:00",
+      "matches_inspected_capture": true,
+      "formulation_evidence_available": true,
+      "issue": null
+    },
+    {
+      "key": "M194",
+      "url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M194",
+      "sha256": "84717c209dda5e9fc18a4ee5b1456ee655f243d31013b41b0d118ff17d03bdb9",
+      "accessed_at": "2026-10-08T21:47:52.544036+00:00",
+      "matches_inspected_capture": true,
+      "formulation_evidence_available": true,
+      "issue": null
+    },
+    {
+      "key": "M213",
+      "url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M213",
+      "sha256": "2b8145922d0cf518b5c39214eb4309fef864015a786391373e09a013d698c97c",
+      "accessed_at": "2026-10-08T21:47:52.711542+00:00",
+      "matches_inspected_capture": true,
+      "formulation_evidence_available": true,
+      "issue": null
+    },
+    {
+      "key": "M244",
+      "url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+      "sha256": "a91d625e45c57b5f51fcd0559a0ebfa4d4cf4c163cb78e024bdd03a524e6e7c8",
+      "accessed_at": "2026-10-08T21:47:52.883700+00:00",
+      "matches_inspected_capture": true,
+      "formulation_evidence_available": true,
+      "issue": null
+    },
+    {
+      "key": "J252",
+      "url": "https://mediadive.dsmz.de/rest/medium/J252",
+      "sha256": "2af9190b793ae4c7289bdc796e4fe9726db548077cc9ccdba5347f395a89cbe2",
+      "accessed_at": "2026-10-08T21:47:53.064845+00:00",
+      "matches_inspected_capture": true,
+      "formulation_evidence_available": true,
+      "issue": null
+    },
+    {
+      "key": "JCM252",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+      "sha256": "636d33620f991e794b0462ecbacfcd825dbec33ebf9fd5171c7c4d052dde8cb3",
+      "accessed_at": "2026-10-08T21:47:53.397029+00:00",
+      "matches_inspected_capture": true,
+      "formulation_evidence_available": true,
+      "issue": null
+    }
+  ],
+  "records": {
+    "M194": {
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M194",
+          "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 900,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 900,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M194",
+          "supporting_text": "{\n          \"component_name\": \"NaHCO3\",\n          \"volume\": 2.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001019\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NaHCO3\",\n          \"volume\": 2.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001019\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M194",
+          "supporting_text": "{\n          \"component_name\": \"Sodium pyruvate\",\n          \"volume\": 0.8,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001055\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Sodium pyruvate\",\n          \"volume\": 0.8,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001055\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M194",
+          "supporting_text": "{\n          \"component_name\": \"HEPES\",\n          \"volume\": 6,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001142\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"HEPES\",\n          \"volume\": 6,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001142\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M194",
+          "supporting_text": "{\n          \"component_name\": \"Trisodium citrate\",\n          \"volume\": 0.7,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001160\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Trisodium citrate\",\n          \"volume\": 0.7,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001160\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M194",
+          "supporting_text": "{\n          \"component_name\": \"N--Acetyl--D--glucosamine\",\n          \"volume\": 0.4,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001404\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"N--Acetyl--D--glucosamine\",\n          \"volume\": 0.4,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001404\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M194",
+          "supporting_text": "{\n          \"component_name\": \"Bovine albumin, Fraction V\",\n          \"volume\": 50,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Bovine albumin, Fraction V\",\n          \"volume\": 50,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M194",
+          "supporting_text": "{\n          \"component_name\": \"Glucose\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001815\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Glucose\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001815\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M194",
+          "supporting_text": "{\n          \"component_name\": \"Neopeptone (BD-Difco)\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001610\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Neopeptone (BD-Difco)\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001610\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M194",
+          "supporting_text": "{\n          \"component_name\": \"gelatin\",\n          \"volume\": 200,\n          \"unit\": \"ml\",\n          \"conc_value\": 7,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001395\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"gelatin\",\n          \"volume\": 200,\n          \"unit\": \"ml\",\n          \"conc_value\": 7,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001395\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M194",
+          "supporting_text": "{\n          \"component_name\": \"Bovine albumin, Fraction V\",\n          \"volume\": 50,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Bovine albumin, Fraction V\",\n          \"volume\": 50,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M194",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        }
+      ],
+      "reference_issues": []
+    },
+    "M213": {
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M213",
+          "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "Distilled water 1.0 L",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water 1.0 L",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M213",
+          "supporting_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 0.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 0.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "MgSO4\u00b77H2O 0.2 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MgSO4\u00b77H2O 0.2 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M213",
+          "supporting_text": "{\n          \"component_name\": \"KH2PO4\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001006\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KH2PO4\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001006\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "KH2PO4 1.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "KH2PO4 1.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M213",
+          "supporting_text": "{\n          \"component_name\": \"K2HPO4\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001009\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"K2HPO4\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001009\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "K2HPO4 1.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "K2HPO4 1.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M213",
+          "supporting_text": "{\n          \"component_name\": \"Corn meal agar (BD-Difco)\",\n          \"volume\": 17,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001539\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Corn meal agar (BD-Difco)\",\n          \"volume\": 17,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001539\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "Corn meal agar (BD-Difco) 17.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Corn meal agar (BD-Difco) 17.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M213",
+          "supporting_text": "{\n          \"component_name\": \"Phytone peptone (BD-BBL)\",\n          \"volume\": 8,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001622\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Phytone peptone (BD-BBL)\",\n          \"volume\": 8,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001622\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "Phytone peptone (BD-BBL) 8.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Phytone peptone (BD-BBL) 8.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M213",
+          "supporting_text": "{\n          \"component_name\": \"50% Glucose\",\n          \"volume\": 1,\n          \"unit\": \"ml\",\n          \"conc_value\": 50,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001465\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"50% Glucose\",\n          \"volume\": 1,\n          \"unit\": \"ml\",\n          \"conc_value\": 50,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001465\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "50% Glucose 1.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "50% Glucose 1.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M213",
+          "supporting_text": "{\n          \"component_name\": \"10% Cysteine\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001485\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"10% Cysteine\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001485\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "10% Cysteine 10.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "10% Cysteine 10.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M213",
+          "supporting_text": "{\n          \"component_name\": \"20% Bovine serum albumin, fraction V\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\": 20,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"20% Bovine serum albumin, fraction V\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\": 20,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "20% Bovine serum albumin, fraction V 10.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "20% Bovine serum albumin, fraction V 10.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M213",
+          "supporting_text": "{\n          \"component_name\": \"Hemin (0.1% in 0.05 N NaOH)\",\n          \"volume\": 15,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001449\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Hemin (0.1% in 0.05 N NaOH)\",\n          \"volume\": 15,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001449\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "Hemin (0.1% in 0.05 N NaOH) 15.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Hemin (0.1% in 0.05 N NaOH) 15.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M213",
+          "supporting_text": "{\n          \"component_name\": \"Hemin (0.1% in 0.05 N NaOH)\",\n          \"volume\": 15,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001449\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Hemin (0.1% in 0.05 N NaOH)\",\n          \"volume\": 15,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001449\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "Hemin (0.1% in 0.05 N NaOH) 15.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Hemin (0.1% in 0.05 N NaOH) 15.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].solutions[0].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M213",
+          "supporting_text": "{\n          \"component_name\": \"20% Bovine serum albumin, fraction V\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\": 20,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"20% Bovine serum albumin, fraction V\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\": 20,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "50% Glucose 1.0 ml",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "50% Glucose 1.0 ml",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M213",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "reference_issues": []
+    },
+    "M244": {
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Distilled water 1.0 L",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water 1.0 L",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 31,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 31,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "MgSO4\u00b77H2O 31.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MgSO4\u00b77H2O 31.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 66,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 66,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "CaCl2\u00b72H2O 66.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CaCl2\u00b72H2O 66.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001012\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001012\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Resazurin 1.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Resazurin 1.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"FeSO4\u30fb7H2O\",\n          \"volume\": 50,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001016\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"FeSO4\u30fb7H2O\",\n          \"volume\": 50,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001016\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "FeSO4\u00b77H2O 50.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "FeSO4\u00b77H2O 50.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"KCl\",\n          \"volume\": 31,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KCl\",\n          \"volume\": 31,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "KCl 31.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "KCl 31.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"ZnCl2\",\n          \"volume\": 2.1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001035\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"ZnCl2\",\n          \"volume\": 2.1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001035\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "ZnCl2 2.1 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "ZnCl2 2.1 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"Na2CO3\",\n          \"volume\": 230,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001045\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Na2CO3\",\n          \"volume\": 230,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001045\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Na2CO3 230.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Na2CO3 230.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"MnSO4\u30fbxH2O\",\n          \"volume\": 2.3,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001065\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"MnSO4\u30fbxH2O\",\n          \"volume\": 2.3,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001065\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "MnSO4\u00b7xH2O 2.3 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MnSO4\u00b7xH2O 2.3 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"Glycine\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001559\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Glycine\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001559\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Glycine 1.5 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Glycine 1.5 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[9].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"Na2B4O7\u30fb10H2O\",\n          \"volume\": 1.8,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001598\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Na2B4O7\u30fb10H2O\",\n          \"volume\": 1.8,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001598\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Na2B4O7\u00b710H2O 1.8 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Na2B4O7\u00b710H2O 1.8 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[10].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"EDTA\u30fb2Na\",\n          \"volume\": 32,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001058\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"EDTA\u30fb2Na\",\n          \"volume\": 32,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001058\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "EDTA\u00b72Na 32.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "EDTA\u00b72Na 32.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[11].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"N2\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"N2\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[12].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Bring to a boil for 5-10 sec and flush with N2.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Bring to a boil for 5-10 sec and flush with N2.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[12].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"Yeast extract (BD-Difco)\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001018\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Yeast extract (BD-Difco)\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001018\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Yeast extract (BD-Difco) 1.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Yeast extract (BD-Difco) 1.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"Bovine serum albumin\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Bovine serum albumin\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Bovine serum albumin 1.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Bovine serum albumin 1.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"Na2S\u30fb9H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001014\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Na2S\u30fb9H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001014\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Na2S\u00b79H2O 0.5 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Na2S\u00b79H2O 0.5 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "{\n          \"component_name\": \"Bovine serum albumin\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Bovine serum albumin\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Separately autoclave yeast extract as a 10% solution and neutralized Na2S\u00b79H2O as a 5% solution under a N2 atmosphere.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Separately autoclave yeast extract as a 10% solution and neutralized Na2S\u00b79H2O as a 5% solution under a N2 atmosphere.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M244",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "reference_issues": []
+    },
+    "J252": {
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.179846,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.179846,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "FeSO4\u00b77H2O 50.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "FeSO4\u00b77H2O 50.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Na2-EDTA\",\n                        \"compound_id\": 34,\n                        \"amount\": 32,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.032,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Na2-EDTA\",\n                        \"compound_id\": 34,\n                        \"amount\": 32,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.032,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "EDTA\u00b72Na 32.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "EDTA\u00b72Na 32.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 66,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.066,\n                        \"mmol_l\": 0.448934,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 66,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.066,\n                        \"mmol_l\": 0.448934,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "CaCl2\u00b72H2O 66.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "CaCl2\u00b72H2O 66.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 31,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.031,\n                        \"mmol_l\": 0.125773,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 31,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.031,\n                        \"mmol_l\": 0.125773,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "MgSO4\u00b77H2O 31.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MgSO4\u00b77H2O 31.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 31,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.031,\n                        \"mmol_l\": 0.415828,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 31,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.031,\n                        \"mmol_l\": 0.415828,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "KCl 31.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "KCl 31.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 2.1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0021,\n                        \"mmol_l\": 0.0154072,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 2.1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0021,\n                        \"mmol_l\": 0.0154072,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "ZnCl2 2.1 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "ZnCl2 2.1 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"MnSO4 x n H2O\",\n                        \"compound_id\": 1000,\n                        \"amount\": 2.3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0023,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"MnSO4 x n H2O\",\n                        \"compound_id\": 1000,\n                        \"amount\": 2.3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0023,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "MnSO4\u00b7xH2O 2.3 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "MnSO4\u00b7xH2O 2.3 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[6].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Na2B4O7 x 10 H2O\",\n                        \"compound_id\": 196,\n                        \"amount\": 1.8,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0018,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Na2B4O7 x 10 H2O\",\n                        \"compound_id\": 196,\n                        \"amount\": 1.8,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0018,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Na2B4O7\u00b710H2O 1.8 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Na2B4O7\u00b710H2O 1.8 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[7].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Glycine\",\n                        \"compound_id\": 358,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 19.9813,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Glycine\",\n                        \"compound_id\": 358,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 19.9813,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Glycine 1.5 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Glycine 1.5 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[8].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 230,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.23,\n                        \"mmol_l\": 2.17006,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 230,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.23,\n                        \"mmol_l\": 2.17006,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Na2CO3 230.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Na2CO3 230.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[9].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00436319,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00436319,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Resazurin 1.0 mg",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Resazurin 1.0 mg",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[10].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Distilled water 1.0 L",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Distilled water 1.0 L",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "ingredients[11].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Yeast extract (BD-Difco) 1.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Yeast extract (BD-Difco) 1.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Bovine serum albumin 1.0 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Bovine serum albumin 1.0 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[1].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.08175,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.08175,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Na2S\u00b79H2O 0.5 g",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Na2S\u00b79H2O 0.5 g",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"optional\": 0\n                    }",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"optional\": 0\n                    }",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "Separately autoclave yeast extract as a 10% solution and neutralized Na2S\u00b79H2O as a 5% solution under a N2 atmosphere.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Separately autoclave yeast extract as a 10% solution and neutralized Na2S\u00b79H2O as a 5% solution under a N2 atmosphere.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://mediadive.dsmz.de/rest/medium/J252",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=252",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "reference_issues": []
+    }
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "cc01a6b89ff98426f13409c5d4a6114691a9a12094c0230b6ed7057aae17f842"
+  }
+}

@@ -1,0 +1,23 @@
+# Solution Concentration Review: Phosphate buffer (10x)
+
+- Record: data/normalized_yaml/bacterial/mediadive_2695_Phosphate_buffer_10x.yaml
+- ID: CultureMech:012011
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `728b4224197f419572feacfba6e61c9a76ee6384b73378df07a5ad84b075cc93`
+- Proposed/result SHA256: `11c1784025e1b2bc06128cb92a060fc324204c6ec833414015ddbd431e39c2b9`
+- Source: https://mediadive.dsmz.de/rest/solution/2695
+- Source SHA256: bdfaafbd9d7b11dde53ae6ffde2afcb56956107ec5ab1674f397cea3b621ad12
+- Retrieved: 2026-10-07T09:14:55.582243+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: changed locally; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `composition[0].concentration` | K2HPO4 | {"unit": "G_PER_L", "value": "12"} | {"unit": "G_PER_L", "value": "12"} | evidence_only | https://mediadive.dsmz.de/rest/solution/2695 | {<br>                "recipe_order": 1,<br>                "compound": "K2HPO4",<br>                "compound_id": 10,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 12,<br>                "unit": "g",<br>                "g_l": 12,<br>                "mmol_l": 68.8958,<br>                "optional": 0<br>            } | $.data.recipe[0] (compound_id=10) | Provider explicitly reports g_l=12. Arithmetic check: 12 g * 1 g/g / (1000 ml / 1000 ml per L) = 12 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 1000. | applied |
+| `composition[1].concentration` | KH2PO4 | {"unit": "G_PER_L", "value": "6"} | {"unit": "G_PER_L", "value": "6"} | evidence_only | https://mediadive.dsmz.de/rest/solution/2695 | {<br>                "recipe_order": 2,<br>                "compound": "KH2PO4",<br>                "compound_id": 11,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 6,<br>                "unit": "g",<br>                "g_l": 6,<br>                "mmol_l": 44.0901,<br>                "optional": 0<br>            } | $.data.recipe[1] (compound_id=11) | Provider explicitly reports g_l=6. Arithmetic check: 6 g * 1 g/g / (1000 ml / 1000 ml per L) = 6 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 1000. | applied |
+| `composition[2].concentration` | Distilled water | {"unit": "PERCENT_V_V", "value": "1000"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/2695 | {<br>                "recipe_order": 3,<br>                "compound": "Distilled water",<br>                "compound_id": 4,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 1000,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[2] (compound_id=4) | Preparation steps may specify make-up volume; manual water review required | unchanged |
+| `ingredients[0].concentration` | See source for composition | {"unit": "VARIABLE", "value": "variable"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Outside direct composition matching; unchanged. | unchanged |

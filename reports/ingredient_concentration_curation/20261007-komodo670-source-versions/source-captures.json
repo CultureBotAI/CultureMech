@@ -1,0 +1,229 @@
+{
+  "terminal": true,
+  "scope": "Source/version investigation only. No date or immutable historical content inferred from a DOI query parameter alone.",
+  "sources": [
+    {
+      "key": "bacdive4303",
+      "url": "https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2",
+      "accessed_at": "2026-10-08T05:28:32.916372+00:00",
+      "http_status": 200,
+      "response_url": "https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2",
+      "content_type": "application/pdf",
+      "sha256": "3d9523eb3aed6d19f90680f747bcd807f659d323c50e4ac99a8eb4f4f09a09b1",
+      "local_cache": "/tmp/ingredient-media-20261007/komodo670-source-versions/bacdive4303.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "text": "Acidiferrobacter thiooxydans\nStrain identifier\nBacDive ID:\n4303\nDOI:\n10.13145/bacdive4303.20170829.2\nType strain:\nyes\nDesignation:\nm-1\nCulture col. no.:\nDSM 2392, JCM 17358\nSections\nName and taxonomic classification\nMorphology and physiology\nCulture and growth conditions\nIsolation, sampling and environmental informationarrow\nApplication and interaction\nMolecular biology\nStrain availability\nReferences\nName and taxonomic classification\nRef.: 1071\nDomain\nBacteria\nRef.: 1071\nPhylum\nProteobacteria\nRef.: 1071\nClass\nGammaproteobacteria\nRef.: 1071\nOrder\nChromatiales\nRef.: 1071\nFamily\nAcidiferrobacteraceae\nRef.: 1071\nGenus\nAcidiferrobacter\nRef.: 1071\nSpecies\nAcidiferrobacter thiooxydans\nRef.: 1071\nFull Scientific Name\nAcidiferrobacter thiooxydans Hallberg et al. 2011\nRef.: 1071\nDesignation:\nm-1\nRef.: 1071\nType strain:\nyes\nProkaryotic Nomenclature Up-to-date (PNU)\nRef.: 20215\nDomain\nBacteria\nRef.: 20215\nPhylum\nProteobacteria\nRef.: 20215\nClass\nGammaproteobacteria\nRef.: 20215\nLiterature reference\nInt. J. Syst. Evol. Microbiol. 55:2236\nRef.: 20215\nFamily\nAcidiferrobacteraceae\nRef.: 20215\nLiterature reference\nInt. J. Syst. Evol. Microbiol. 65:3712*\nRef.: 20215\nGenus\nAcidiferrobacter\n"
+        },
+        {
+          "page": 2,
+          "text": "Acidiferrobacter thiooxydans\nRef.: 20215\nTaxonomical status\ngen. nov. (VL) \nRef.: 20215\nLiterature reference\nInt. J. Syst. Evol. Microbiol. 61:2563\nRef.: 20215\nSpecies\nAcidiferrobacter thiooxydans\nRef.: 20215\nTaxonomical status\nsp. nov. (VL)\nRef.: 20215\nLiterature reference\nInt. J. Syst. Evol. Microbiol. 61:2563\nRef.: 20215\nFull Scientific Name\nAcidiferrobacter thiooxydans Hallberg et al. 2011\nMorphology and physiology\nRef.: 1071\nIncubation period\n3-7 days\nCulture and growth conditions\nRef.: 1071\nCulture medium\nACIDIFERROBACTER (MS) MEDIUM (DSMZ Medium 670), 30\u00b0C,\nwith strain-specific modifications\nRef.: 1071\nCulture medium growth\nyes\nRef.: 1071\nCulture medium link\nhttps://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670\n.pdf\nRef.: 1071\nCulture medium\ncomposition\n(NH4)2SO4 2.00 g MgSO4 x 7 H2O 0.25 g K2HPO4 0.10 g KCl 0.10 g\nDistilled water 1000.00 mlFor DSM 9463: Adjust pH of MS-medium to\n3.5 with 1N sulfuric acid prior to autoclaving. Before use, add 5 g/l of\nsterile powdered sulfur.For DSM 2392, DSM 9464 and DSM 9465:\nAdjust pH of MS-medium to 2.2 with 4 N H2SO4 prior to autoclaving.\nBefore use, add 0.25 ml 40% (w/v) FeSO4 x 7 H2O solution (dissolved\nin 0.2 N H2SO4 and filter sterilized or autoclaved under N2) per 5 ml\nMS-Medium.For DSM 9466: Adjust pH of MS-medium to 3.5 with 1 N\nH2SO4 prior to autoclaving. Before use, add 5 g/l of sterile, powdered\nsulfur and 0.2 g/l of yeast extract (from sterile, autoclaved stock\nsolution).For DSM 9467: Adjust pH of MS-medium to 3.0 with 2N\nH2SO4 prior to autoclaving. Before use, add 0.2% glucose from filter\nsterilized 10% w/v stock solution, and 0.01% yeast extract from\nautoclaved 1% stock solution.For DSM 9468: Adjust pH of\nMS-medium to 1.6 with 4 N H2SO4 prior to autoclaving. Before use,\nadd 0.25 ml 40% (w/v) FeSO4 x 7 H2O solution (dissolved in 0.2 N\nH2SO4 and filter sterilized or autoclaved under N2) per 5 ml\nMS-medium.\nTemperatures\nKind of temperature\nTemperature\nRef.: 1071\n optimum\n30 \u00b0C\nRef.: 1071\nTemperature range\nmesophilic\nIsolation, sampling and environmental information\n"
+        },
+        {
+          "page": 3,
+          "text": "Acidiferrobacter thiooxydans\nRef.: 1071\nSample type/isolated\nfrom\ncoal strip mine refuse\nRef.: 1071\nGeographic location\n(country and/or sea,\nregion)\nMississipi, Calloway county\nRef.: 1071\nCountry\nUSA\nRef.: 1071\nContinent\nNorth America\nApplication and interaction\nRef.: 1071\nBiosafety level\n1 Risk group (German classification)\nMolecular biology\nRef.: 1071\nGC-content\n65.0 mol%\nRef.: 1071\nGC-content\n63.1 \u00b1 0.4 mol%\nSequence\ndatabase\nSequence accession\ndescription\nSequence\naccession number\nSequence\nlength(bp)\nAssociated\nNCBI tax ID\nRef.: 20218\nMarker Gene\n(EMBL Direct\nsubmission)\nAcidiferrobacter thiooxydans\npartial 16S rRNA gene, type\nstrain DSM 2392T\nAJ459800\n1329\n163359\n*\nRef.: 20218\nMarker Gene\n(GenBank Direct\nsubmission)\nAcidiferrobacter thiooxydans\nstrain m-1\nribulose-1,5-bisphosphate\ncarboxylase/oxygenase form\nI large subunit (cbbL) gene,\npartial cds\nHQ234763\n619\n163359\n*\nRef.: 20218\nMarker Gene\n(GenBank Direct\nsubmission)\nAcidiferrobacter thiooxydans\nstrain m-1 dinitrogenase\nreductase (nifH) gene, partial\ncds\nHQ234764\n386\n163359\n*\nRef.: 20218\nINSDC\nSequence\nThiobacillus ferrooxidans\n(DSM 2392) 16S rRNA\nsequence\nM79416\n736\n920\n*\nRef.: 20218\nINSDC\nSequence\nThiobacillus ferrooxidans\n(DSM 2392) 16S rRNA\nsequence\nM79417\n354\n920\n*\nRef.: 1071\nGenBank Direct\nsubmission\nAF387301\nStrain availability\nRef.: 1071\nCulture collection no.\nDSM 2392, JCM 17358\n"
+        },
+        {
+          "page": 4,
+          "text": "Acidiferrobacter thiooxydans\nRef.: 1071\nStrain history\n<- A.P. Harrison, Jr., m-1 <- B. Jarvis\nAssociated Passport(s) in StrainInfo\nRef.: 20218\n157976 - http://www.straininfo.net/strains/157976\nRef.: 20218\n867588 - http://www.straininfo.net/strains/867588\nReferences\nRef.: 1071\nLeibniz Institut DSMZ-Deutsche Sammlung von Mikroorganismen und Zellkulturen GmbH;\nCurators of the DSMZ; DSM 2392\nRef.: 20215\nD.Gleim, M.Kracht, N.Weiss et. al.: Prokaryotic Nomenclature Up-to-date - compilation of all\nnames of Bacteria and Archaea, validly published according to the Bacteriological Code since 1.\nJan. 1980, and validly published nomenclatural changes since.\nRef.: 20218\nVerslyppe, B.; De Smet, W.; De Baets, B.; De Vos, P.; Dawyndt P. StrainInfo introduces\nelectronic passports for microorganisms.. Syst Appl Microbiol. 37: 42-50 2014\n(10.1016/j.syapm.2013.11.002, 24321274)\n* These References are textmined\nback to top\n"
+        }
+      ]
+    },
+    {
+      "key": "doi4303",
+      "url": "https://doi.org/10.13145/bacdive4303.20170829.2",
+      "accessed_at": "2026-10-08T05:28:34.366970+00:00",
+      "http_status": 200,
+      "response_url": "https://bacdive.dsmz.de/pdf-view/4303?site=pdf_view&id=4303&doi=doi%3A10.13145%2Fbacdive4303.20170829.2",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "f585dfeffadbff856e12ee9b28af0914ccf1fef7b5e3cb1148cb578f209bc199",
+      "local_cache": "/tmp/ingredient-media-20261007/komodo670-source-versions/doi4303.txt",
+      "text": "<!DOCTYPE html>\r\n<html lang='en'>\r\n<head>\r\n\t<meta charset=\"UTF-8\">\r\n\t<base href=\"https://bacdive.dsmz.de/\">    <title>Archive BacDiveID:10.13145/bacdive4303.20170829.2 | BacDive</title>\r\n    <meta name=\"description\" content=\"PDF View for DOI: 10.13145/bacdive4303.20170829.2\">\r\n    \r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n    <meta name=\"google-site-verification\" content=\"mIOYHrpUl_1G65CeMEFGWkETjn4L82yOiWWvhY3Zo04\" />\r\n    <meta name=\"expires\" content=\"0\" />\r\n    <meta http-equiv=\"expires\" content=\"0\" />\r\n    <meta name=\"pragma\" content=\"no-cache\" />\r\n    <meta http-equiv=\"pragma\" content=\"no-cache\" />\r\n    <meta name=\"cache-control\" content=\"no-cache\" />\r\n    <meta http-equiv=\"cache-control\" content=\"no-cache\" />\r\n    <meta name=\"Content-Language\" content=\"en\" />\r\n    <meta name=\"Revisit-After\" content=\"1 days\" />\r\n    <meta name=\"Publisher\" content=\"Leibniz-Institut DSMZ\" />\r\n    <meta name=\"Page-Type\" content=\"research\" />\r\n    <link rel=\"shortcut icon\" href=\"favicon.ico\" />\r\n    \r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes\" />\r\n    \r\n    <meta name=\"yandex-verification\" content=\"9a20b4d15aea727d\" />\r\n    \r\n    <link href=\"css/digidive/phosphoricons/regular/style.css?t=20260924\" rel=\"stylesheet\" />\r\n    <link rel=\"stylesheet\" href=\"css/digidive/d3icons/style.css?v=20260924\" type=\"text/css\" />\r\n    <link rel=\"stylesheet\" href=\"css/digidive/digidive.css?v=20260924\" type=\"text/css\" />\r\n    <link rel=\"stylesheet\" href=\"css/style2.css?v=20260924\" type=\"text/css\" />\r\n        \r\n    \r\n    <!-- <script type=\"text/javascript\" src=\"js/jquery.js?v=20260924\"></script>  -->\r\n    <!-- <script type=\"text/javascript\" src=\"js/jquery.simplemodal.js?v=20260924\"></script> -->\r\n\r\n    <!-- <script type=\"text/javascript\" src=\"js/jquery.tablesorter.js\"></script> -->\r\n    \r\n    \r\n        \r\n    <meta name=\"robots\" content=\"noindex,nofollow,disallow\">\r\n\t    \r\n        \r\n\t\t<script type=\"text/javascript\">\r\n    \t  var _paq = _paq || [];\r\n    \t  /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\r\n    \t  _paq.push([\"setCookieDomain\", \"*.bacdive.dsmz.de\"]);\r\n    \t      \t  _paq.push(['trackPageView']);\r\n    \t  _paq.push(['enableLinkTracking']);\r\n    \t  (function() {\r\n    \t    var u=\"https://piwik.dsmz.de/\";\r\n    \t    _paq.push(['setTrackerUrl', u+'piwik.php']);\r\n    \t    _paq.push(['setSiteId', '1']);\r\n    \t    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\r\n    \t    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\r\n    \t  })();\r\n\t</script>\r\n\t</head>\r\n\r\n\r\n    <body data-sidebar-size=\"small\">\r\n\r\n    <div class=\"loader\">\r\n        <span></span>\r\n    </div>\r\n\r\n    <div class=\"cite-bacdive-reminder\">\r\n        <span>Cite the latest</span><br>\r\n        <a href=\"https://academic.oup.com/nar/article/53/D1/D748/7848838?login=true\" target=\"_blank\">BacDive paper <i class=\"ph ph-arrow-square-out\"></i></a><br>\r\n        <button class=\"btn\">Got it!</button>\r\n    </div>\r\n\r\n        \r\n    <!-- Page wrapper start -->\r\n    <div class=\"page-wrapper\" data-sidebar-size=\"small\">\r\n    \r\n        <!-- Sticky alerts (toasts), empty container -->\r\n        <div class=\"sticky-alerts\"></div>\r\n        \r\n        <!-- Sidebar overlay -->\r\n        <div class=\"sidebar-overlay\" onclick=\"digidive.toggleSidebar()\"></div>\r\n    \r\n        <!-- Navbar start -->\r\n        <div class=\"navbar navbar-top\">\r\n            <a href=\"\" class=\"navbar-brand ml-20\">\r\n                <img src=\"images/logo/BacDiveLogo.svg\" alt=\"BacDive\">\r\n            </a>\r\n\r\n            <a href=\"https://hub.dsmz.de/\" class=\"navbar-brand ml-auto\" target=\"_blank\">\r\n                <img src=\"images/logo/STB-logo.svg\" alt=\"D3\" width=\"275\" height=\"84\">\r\n            </a>\r\n\r\n            \r\n        </div>\r\n        \r\n        <nav class=\"navbar navbar-bottom\">\r\n            \r\n            <!-- Button to toggle sidebar; optional -->\r\n            <button class=\"btn btn-action collapsible active\" type=\"button\" onclick=\"digidive.toggleSidebar()\"></button>\r\n            \r\n                        \r\n            <form method=\"get\" action=\"/search\" id=\"navbar-search\" class=\"nav-search main-search-autocomplete\">\r\n                <div class=\"input-cont\">\r\n                    <div class=\"input-group\">\r\n                        <input type=\"text\" name=\"search\" class=\"search-term form-control\" required=\"\" autocomplete=\"off\" placeholder=\"Search database\" type=\"text\" name=\"search\" value=\"\">\r\n                        <div class=\"input-group-append\">\r\n                            <button class=\"btn primary\" id=\"home-search-submit\" name=\"submit\" type=\"submit\"><i class=\"ph ph-magnifying-glass\"></i></button>\r\n                        </div>\r\n                        \r\n            \t\t\t<div class=\"suggested-example box\" style=\"display: none;\">\r\n                        \t<ul>\r\n            \t\t\t\t\t<li><b>Search examples</b></li>\r\n                        \t\t<li><a href=\"search?search=132485\"><span class=\"suggested-example-title\">BacDive-ID</span><span>132485</span></a></li>\r\n                        \t\t<li><a href=\"search?search=Ottowia thiooxydans\"><span class=\"suggested-example-title\">Species name</span><span>Ottowia thiooxydans</span></a></li>\r\n                        \t\t<li><a href=\"search?search=DSM 28473\"><span class=\"suggested-example-title\">Culture col. no.</span><span>DSM 4623</span></a></li>\r\n                        \t\t<li><a href=\"search?search=taxid:1604334\"><span class=\"suggested-example-title\">NCBI Tax-ID</span><span>taxid:1604334</span></a></li>\r\n                        \t\t<li><a href=\"search?search=AF000162\"><span class=\"suggested-example-title\">16S sequence accession</span><span>AF000162</span></a></li>\r\n                        \t</ul>\r\n            \t\t\t</div>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n\r\n        </nav>\r\n        \r\n        <!-- Sidebar start -->\r\n        <div class=\"sidebar\">\r\n            <div class=\"sidebar-menu\">\r\n\t\t\t\t<h5 class=\"title\">Content</h5>\r\n                <a class=\"primary with-icon \" href=\"/advsearch\">\r\n                \t<i class=\"ph ph-magnifying-glass-plus\"></i>\r\n                    <span class=\"label\">Advanced search</span>\r\n                </a>\r\n                <a class=\"secondary with-icon \" href=\"/isolation-sources\">\r\n                \t<i class=\"ph ph-map-pin-line\"></i>\r\n                    <span class=\"label\">Isolation sources</span>\r\n                </a>\r\n                <a class=\"success with-icon \" href=\"/api-test-finder\">\r\n                \t<i class=\"ph ph-pill\"></i>\r\n                    <span class=\"label\">API &reg; test finder</span>\r\n                </a>\r\n                <a class=\"signal with-icon \" href=\"/taxplorer\">\r\n                \t<i class=\"ph ph-tree-structure\"></i>\r\n                    <span class=\"label\">TAXplorer</span>\r\n                </a>\r\n                <a class=\"with-icon \" href=\"/genesearch\">\r\n                \t<i class=\"ph ph-dna-search\"></i>\r\n                    <span class=\"label\">GeneSearch</span>\r\n                </a>\r\n                <a class=\"with-icon \" href=\"/dashboard\">\r\n                \t<i class=\"ph ph-chart-line\"></i>\r\n                    <span class=\"label\">Statistics</span>\r\n                </a>\r\n                <a class=\"with-icon \" href=\"/special-collections\">\r\n                \t<i class=\"ph ph-folder\"></i>\r\n                    <span class=\"label\">Special collections</span>\r\n                </a>\r\n                <a class=\"with-icon \" href=\"/dlselect\">\r\n                \t<i class=\"ph ph-download\"></i>\r\n                \t<span class=\"label\">Download selection </a></span>\r\n                <a class=\"with-icon\" target=\"_blank\" href=\"https://api.bacdive.dsmz.de/\">\r\n                \t<i class=\"ph ph-cloud-arrow-down\"></i>\r\n                    <span class=\"label\">Web services<span style=\"font-size:1.4em; margin-left:7px;\" class=\"ph ph-arrow-square-out\" style></span></span>\r\n                </a>\r\n                <a class=\"with-icon\" href=\"https://sparql.dsmz.de/bacdive/\" target=\"_blank\">\r\n                \t<i class=\"ph ph-rdf\"></i>\r\n                    <span class=\"label\">SPARQL<span style=\"font-size:1.4em; margin-left:7px;\" class=\"ph ph-arrow-square-out\" style></span></span>\r\n                </a>\r\n                \r\n                <h5 class=\"title\">About us</h5>\r\n                <a class=\"with-icon \" href=\"/about\">\r\n                \t<i class=\"ph ph-info\"></i>\r\n                    <span class=\"label\">About</span>\r\n                </a>\r\n                <a class=\"with-icon \" href=\"/team\">\r\n                \t<i class=\"ph ph-users-four\"></i>\r\n                    <span class=\"label\">Team</span>\r\n                </a>\r\n                <a class=\"with-icon \" href=\"/contact\">\r\n                \t<i class=\"ph ph-headset\"></i>\r\n                    <span class=\"label\">Contact</span>\r\n                </a>\r\n                <a class=\"with-icon\" href=\"https://hub.dsmz.de/wiki/bacdive/about/\" target=\"_blank\">\r\n                \t<i class=\"ph ph-book\"></i>\r\n                    <span class=\"label\">Documentation</span>\r\n                </a>\r\n                <a class=\"with-icon \" href=\"/news\">\r\n                \t<i class=\"ph ph-newspaper\"></i>\r\n                    <span class=\"label\">News</span>\r\n                </a>\r\n                <a class=\"with-icon \" href=\"/mailinglist/subscribe\">\r\n                \t<i class=\"ph ph-envelope\"></i>\r\n                    <span class=\"label\">Mailinglist</span>\r\n                </a>\r\n            </div>\r\n        </div>\r\n        <!-- Sidebar end -->\r\n        \r\n        <!-- Content wrapper start -->\r\n        <div class=\"content-wrapper\">\r\n            <!-- OPTIONAL: title-bar -->\r\n            <div id=\"pdf_view\">\r\n\t<div id=\"topbar_searchresult\">\r\n\t\t\t<div class=\"infobox\">\r\n\t<div class=\"badge bg-white\">\r\n\t\t<span class=\"title\">BacDive ID</span>\r\n\t\t<span style=\"margin-bottom:4px;\" class=\"badge\" id=\"bacdive_id\">4303</span>\r\n\t</div>\r\n\r\n\t\r\n\t<!-- The status shows isotype information and is necessary for the creation of tombstone pages -->\r\n\t\r\n\t\t\t<div class=\"badge bg-white\">\r\n\r\n\t\t\t<span class=\"title\">Type strain</span>\r\n\t\t\t\t\t\t\t<div style=\"margin-top: 2px; margin-bottom:6px;\"><i class=\"ph ph-check text-success\"></i></div>\r\n\t\t\t\r\n\t\t</div>\r\n\t\r\n\t\t\t<div class=\"badge bg-white\">\r\n\t\t\t<span class=\"title\">Strain Designation</span>\r\n\t\t\t<span style=\"margin-bottom:4px;\" class=\"badge\">m-1</span>\r\n\t\t</div>\r\n\t\r\n\t\r\n\t \r\n\t\t<div class=\"badge bg-white\">\r\n\t\t\t<span class=\"title\">Culture col. no.</span>\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t<a style=\"margin-bottom:4px;\" href=\"https://www.dsmz.de/collection/catalogue/details/culture/DSM-2392\" target=\"_blank\" class=\"badge text-primary \">DSM 2392</a>\r\n\t\t\t\t\t\r\n\t\t\t<a style=\"margin-bottom:4px;\" href=\"http://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM=17358\" target=\"_blank\" class=\"badge text-primary \">JCM 17358</a>\r\n\t\t\t\t\t\r\n\t\t\t<span style=\"margin-bottom:4px;\" class=\"badge \">m-1</span>\r\n\t\t\t</div>\r\n\t\r\n\t\t\t<div class=\"badge bg-white\">\r\n\t\t\t<span class=\"title\">NCBI tax ID(s)</span>\r\n\t\t\t\t\t\t\t<a style=\"margin-bottom:4px;\" class=\"badge\" target=\"_blank\" data-toggle=\"tooltip\" data-title=\"Matched on species level\"\r\n\t\t\t\thref=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=163359\">163359</a>\r\n\t\t\t\t\t\t</span>\r\n\t\t</div>\r\n\t\r\n\t\r\n\t \r\n\t\t<div class=\"badge bg-white\">\r\n\t\t\t<span class=\"title\">History</span>\r\n\t\t\t\t\t\t\t<span style=\"margin-bottom:4px;\" class=\"badge\">DSMZ <- A. P. HarrisonJr, University of Missouri, Columbia, USA; m-1 (<i>Acidithiobacillus ferrooxidans</i>) <- B. Jarvis;</span>\r\n\t\t\t\t\t\t\t<span style=\"margin-bottom:4px;\" class=\"badge\">JCM <-- D. B. Johnson <-- DSM 2392 <-- A. P. Harrison, Jr. strain m-1 <-- B. Jarvis.</span>\r\n\t\t\t\t\t</div>\r\n\t\r\n\t\t\t<div class=\"badge bg-white\">\r\n\t\t\t<span class=\"title\">Links</span>\r\n\r\n\t\t\t<span class=\"links-detail-header\">\r\n\t\t\t\t\t\t\t\t\t<a data-section-num=\"1\" class=\"link-anchor-header badge\" title=\"StrainInfo\" href=\"/strain/4303#table-straininfo-link\"><img src=\"images/logo/straininfo.svg\" width=\"100\" height=\"15\"></a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a style=\"margin-bottom:1px;\" data-section-num=\"1\" class=\"link-anchor-header badge\" title=\"LPSN\" href=\"/strain/4303#table-phages\"><img src=\"images/logo/lpsn_logo.svg\" style=\"width:40px;\"></a>\r\n\t\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t</div>\r\n\t</div>\t</div>\r\n    \r\n    <div id=\"pdf_content\">\r\n         <div class=\"content version-list\" method=\"get\" action=\"/pdf-view/4303\">\r\n             <div><a href=\"/strain/4303\">&laquo;&nbsp;back to strain detail view</a></div>\r\n             <div class=\"box\"><div class=\"content\">For citation purpose refer to the digital object identifier (doi) of the <b>current version</b>.</div></div>\r\n             <h2>Archive</h2>\r\n                                                 <div>version&nbsp;11&nbsp;(<i>current version</i>):</div>\r\n                    <div><a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20260601.11\">10.13145/bacdive4303.20260601.11</a></div> \r\n                                                                 <div>version&nbsp;10: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20251217.10\">10.13145/bacdive4303.20251217.10</a></div>               \r\n                                                                 <div>version&nbsp;9.3: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20250331.9.3\">10.13145/bacdive4303.20250331.9.3</a></div>               \r\n                                                                 <div>version&nbsp;9.2: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20241212.9.2\">10.13145/bacdive4303.20241212.9.2</a></div>               \r\n                                                                 <div>version&nbsp;9.1: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20240916.9.1\">10.13145/bacdive4303.20240916.9.1</a></div>               \r\n                                                                 <div>version&nbsp;9: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20240510.9\">10.13145/bacdive4303.20240510.9</a></div>               \r\n                                                                 <div>version&nbsp;8.1: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20230509.8.1\">10.13145/bacdive4303.20230509.8.1</a></div>               \r\n                                                                 <div>version&nbsp;8: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20230509.8\">10.13145/bacdive4303.20230509.8</a></div>               \r\n                                                                 <div>version&nbsp;7.1: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20221219.7.1\">10.13145/bacdive4303.20221219.7.1</a></div>               \r\n                                                                 <div>version&nbsp;7: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20220920.7\">10.13145/bacdive4303.20220920.7</a></div>               \r\n                                                                 <div>version&nbsp;6: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20211221.6\">10.13145/bacdive4303.20211221.6</a></div>               \r\n                                                                 <div>version&nbsp;5: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20201210.5\">10.13145/bacdive4303.20201210.5</a></div>               \r\n                                                                 <div>version&nbsp;4.1: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20191129.4.1\">10.13145/bacdive4303.20191129.4.1</a></div>               \r\n                                                                 <div>version&nbsp;4: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20190402.4\">10.13145/bacdive4303.20190402.4</a></div>               \r\n                                                                 <div>version&nbsp;3: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20180622.3\">10.13145/bacdive4303.20180622.3</a></div>               \r\n                                                                 <div>version&nbsp;2.1: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20171208.2.1\">10.13145/bacdive4303.20171208.2.1</a></div>               \r\n                                                                 <div>version&nbsp;2: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20170829.2\">10.13145/bacdive4303.20170829.2</a></div>               \r\n                                                                 <div>version&nbsp;1: <a href=\"/pdf-view/4303?doi=10.13145%2Fbacdive4303.20170425.1\">10.13145/bacdive4303.20170425.1</a></div>               \r\n                                      </div>\r\n                 \r\n        <div id=\"pdffile\">\r\n                            <div class=\"text-center\">version&nbsp;2</div>\r\n                        \r\n                        \t<iframe src=\"/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2\" type=\"application/pdf\"></iframe> \r\n            \t\t</div>    \r\n    </div>\r\n    \r\n</div>            \r\n            \r\n\t\t\t<div class=\"page-footer\">\r\n\r\n                <div class=\"link-parade\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col\">\r\n                            <h3>Bac<em>Dive</em></h3>\r\n                            <a href=\"/about\">About</a>\r\n                            <a href=\"/team\">Team</a>\r\n                            <a href=\"/news\">News</a>\r\n                            <a href=\"/mailinglist/subscribe\">Mailinglist</a>\r\n                        </div>\r\n                        <div class=\"col\">\r\n                            <h3>Help</h3>\r\n                            <a href=\"https://hub.dsmz.de/wiki/bacdive/about/\" target=\"_blank\">Documentation</a>\r\n                            <a href=\"/about#how-to-cite\">How to cite</a>\r\n                            <a href=\"/tutorials\">Tutorials</a>\r\n                            <a href=\"/contact\">Contact</a>\r\n                        </div>\r\n                        <div class=\"col\">\r\n                            <h3>Social Media</h3>\r\n                            <a href=\"https://bsky.app/profile/bacdive.bsky.social\" target=\"_blank\">\r\n                                <img src=\"images/logo/Bluesky_butterfly-logo.svg\" alt=\"Bluesky\" width=\"32\" height=\"32\"><span  style=\"margin-left:10px;\">Bluesky</span>\r\n                            </a>\r\n                            <a href=\"https://www.linkedin.com/company/dsmzd3\" target=\"_blank\">\r\n                                <img src=\"images/logo/linkedin.svg\" alt=\"linkedin\" width=\"120\" height=\"30\">\r\n                            </a>\r\n                            <a href=\"https://www.surveymonkey.de/r/denbi-service?sc=db-node&tool=bacdive\" target=\"_blank\">de.NBI Survey</a>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"logo-parade\">\r\n                    <a href=\"https://www.dsmz.de/\" target=\"_blank\"><img src=\"images/logo/dsmz_logo_en.svg\" alt=\"DSMZ\"></a>\r\n                    <a href=\"https://globalbiodata.org/scientific-activities/global-core-biodata-resources\" target=\"_blank\"><img src=\"images/logo/GCBR-Logo-RGB.svg\" alt=\"Global core biodata resource\"></a>\r\n                    <a href=\"https://www.denbi.de/\" target=\"_blank\"><img src=\"images/logo/deNBI_Logo_rgb.svg\" alt=\"deNBI\"></a>\r\n                    <a href=\"https://elixir-europe.org/platforms/data/core-data-resources\" target=\"_blank\"><img src=\"images/logo/CoreData_Logo.svg\" alt=\"Elixis core data resource\"></a>\r\n                    <a href=\"https://www.dzif.de/\" target=\"_blank\"><img src=\"images/logo/dzif.svg\" alt=\"DZIF\"></a>\r\n                    <a href=\"https://www.nfdi4biodiversity.org/\" target=\"_blank\"><img src=\"images/logo/nfdi_biodiversity.svg\" alt=\"NFDI4 Biodiversity\"></a>\r\n                    <a href=\"https://nfdi4microbiota.de/\" target=\"_blank\"><img src=\"images/logo/nfdi4microbiota.png\" alt=\"NFDI4 Microbiota\"></a>\r\n                </div>\r\n                <hr>\r\n                <div class=\"footer\">\r\n                    <span>\r\n                        &copy; DSMZ 2026                    </span>\r\n                    <a href=\"/about\">Imprint</a>\r\n                    <a href=\"https://www.dsmz.de/privacy-statement\" target=\"_blank\">Privacy Statement</a>\r\n                    <a href=\"#\">Copyright &amp; License</a>\r\n                    <a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\">\r\n                        <img src=\"images/logo/cc.svg\" alt=\"\" style=\"height:1.3em;vertical-align:text-bottom;\">\r\n                        <img src=\"images/logo/by.svg\" alt=\"\" style=\"height:1.3em;vertical-align:text-bottom;\">\r\n                    \tLicense\r\n                    </a>\r\n                </div>\r\n            </div>\r\n            \r\n\t\t</div>\r\n\t\t<!-- Content wrapper end -->\r\n\t\t\r\n\t</div>\r\n    <!-- Page wrapper end -->\r\n    \r\n    <div class=\"modal\" id=\"modal-cart\" tabindex=\"-1\" role=\"dialog\">\r\n      <div class=\"modal-dialog\" role=\"document\">\r\n        <div class=\"modal-content\">\r\n          <button class=\"close\" role=\"button\" data-dismiss=\"modal\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n          </button>\r\n          <!-- <a href=\"#/\" class=\"close\" role=\"button\" aria-label=\"Close\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n          </a> -->\r\n          <h5 class=\"title\">Added to Download Selection</h5>\r\n          <p>\r\n            You can download your selection <a target=\"_blank\" href=\"/dlselect\">hier</a>.\r\n          </p>\r\n          <div class=\"text-right mt-20\">\r\n            <button data-dismiss=\"modal\" class=\"btn primary\">Close</button>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    \r\n        \r\n    <!-- digidive JS -->\r\n    <script src=\"js/digidive/digidive.js\"></script>\r\n    <script type=\"text/javascript\" src=\"js/helper.js?v=20260924\"></script>\r\n    <script type=\"text/javascript\" src=\"js/suggested.js?v=20260924\"></script>\r\n    <script type=\"text/javascript\" src=\"js/dlcart.js?v=20260924\"></script>\r\n\t\r\n</body>\r\n  \r\n</html>"
+    },
+    {
+      "key": "datacite4303",
+      "url": "https://api.datacite.org/dois/10.13145/bacdive4303.20170829.2",
+      "accessed_at": "2026-10-08T05:28:36.407608+00:00",
+      "http_status": 200,
+      "response_url": "https://api.datacite.org/dois/10.13145/bacdive4303.20170829.2",
+      "content_type": "application/json; charset=utf-8",
+      "sha256": "3a75c803a60e856eb7d0dd4ab08be7816c66b90f55474ba25481eaf686043daa",
+      "local_cache": "/tmp/ingredient-media-20261007/komodo670-source-versions/datacite4303.txt",
+      "data": {
+        "data": {
+          "id": "10.13145/bacdive4303.20170829.2",
+          "type": "dois",
+          "attributes": {
+            "doi": "10.13145/bacdive4303.20170829.2",
+            "prefix": "10.13145",
+            "suffix": "bacdive4303.20170829.2",
+            "identifiers": [],
+            "alternateIdentifiers": [],
+            "creators": [
+              {
+                "name": "Reimer, L.C.",
+                "nameType": "Personal",
+                "givenName": "L.C.",
+                "familyName": "Reimer",
+                "affiliation": [],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Vetcininova, A.",
+                "nameType": "Personal",
+                "givenName": "A.",
+                "familyName": "Vetcininova",
+                "affiliation": [],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Soehngen, C.",
+                "nameType": "Personal",
+                "givenName": "C.",
+                "familyName": "Soehngen",
+                "affiliation": [],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Podstawka, A.",
+                "nameType": "Personal",
+                "givenName": "A.",
+                "familyName": "Podstawka",
+                "affiliation": [],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Gleim, D.",
+                "nameType": "Personal",
+                "givenName": "D.",
+                "familyName": "Gleim",
+                "affiliation": [],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Overmann, J.",
+                "nameType": "Personal",
+                "givenName": "J.",
+                "familyName": "Overmann",
+                "affiliation": [],
+                "nameIdentifiers": []
+              }
+            ],
+            "titles": [
+              {
+                "title": "Acidiferrobacter thiooxydans Hallberg et al. 2011"
+              }
+            ],
+            "publisher": "DSMZ",
+            "container": {},
+            "publicationYear": 2017,
+            "subjects": [
+              {
+                "subject": "Strain-linked information about bacterial and archaeal biodiversity"
+              }
+            ],
+            "contributors": [],
+            "dates": [
+              {
+                "date": "2017-08-29",
+                "dateType": "Issued"
+              }
+            ],
+            "language": "en",
+            "types": {
+              "ris": "DATA",
+              "bibtex": "misc",
+              "citeproc": "dataset",
+              "schemaOrg": "Dataset",
+              "resourceType": "bacterial metadata",
+              "resourceTypeGeneral": "Dataset"
+            },
+            "relatedIdentifiers": [
+              {
+                "relationType": "IsPreviousVersionOf",
+                "relatedIdentifier": "10.13145/bacdive4303.20171208.2.1",
+                "relatedIdentifierType": "DOI"
+              }
+            ],
+            "relatedItems": [],
+            "sizes": [],
+            "formats": [],
+            "version": null,
+            "rightsList": [],
+            "descriptions": [
+              {
+                "description": "The range of data encompasses taxonomy, morphology, physiology, sampling and concomitant environmental conditions as well as molecular biology.",
+                "descriptionType": "Abstract"
+              }
+            ],
+            "geoLocations": [],
+            "fundingReferences": [],
+            "xml": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0ndXRmLTgnPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuMTMxNDUvYmFjZGl2ZTQzMDMuMjAxNzA4MjkuMjwvaWRlbnRpZmllcj4KICA8Y3JlYXRvcnM+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPlJlaW1lciwgTC5DLjwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPlZldGNpbmlub3ZhLCBBLiA8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5Tb2VobmdlbiwgQy48L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5Qb2RzdGF3a2EsIEEuPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+R2xlaW0sIEQuPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+T3Zlcm1hbm4sIEouPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+IEFjaWRpZmVycm9iYWN0ZXIgdGhpb294eWRhbnMgSGFsbGJlcmcgZXQgYWwuIDIwMTE8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+RFNNWjwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAxNzwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0PlN0cmFpbi1saW5rZWQgaW5mb3JtYXRpb24gYWJvdXQgYmFjdGVyaWFsIGFuZCBhcmNoYWVhbCBiaW9kaXZlcnNpdHk8L3N1YmplY3Q+CiAgPC9zdWJqZWN0cz4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iSXNzdWVkIj4yMDE3LTA4LTI5PC9kYXRlPgogIDwvZGF0ZXM+CiAgPGxhbmd1YWdlPmVuPC9sYW5ndWFnZT4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPmJhY3RlcmlhbCBtZXRhZGF0YTwvcmVzb3VyY2VUeXBlPgogIDxyZWxhdGVkSWRlbnRpZmllcnM+CiAgICA8cmVsYXRlZElkZW50aWZpZXIgcmVsYXRlZElkZW50aWZpZXJUeXBlPSJET0kiIHJlbGF0aW9uVHlwZT0iSXNQcmV2aW91c1ZlcnNpb25PZiI+MTAuMTMxNDUvYmFjZGl2ZTQzMDMuMjAxNzEyMDguMi4xPC9yZWxhdGVkSWRlbnRpZmllcj4KICA8L3JlbGF0ZWRJZGVudGlmaWVycz4KICA8dmVyc2lvbj4yLjA8L3ZlcnNpb24+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5UaGUgcmFuZ2Ugb2YgZGF0YSBlbmNvbXBhc3NlcyB0YXhvbm9teSwgbW9ycGhvbG9neSwgcGh5c2lvbG9neSwgc2FtcGxpbmcgYW5kIGNvbmNvbWl0YW50IGVudmlyb25tZW50YWwgY29uZGl0aW9ucyBhcyB3ZWxsIGFzIG1vbGVjdWxhciBiaW9sb2d5LjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+Cg==",
+            "url": "http://bacdive.dsmz.de/index.php?site=pdf_view&id=4303&doi=doi:10.13145/bacdive4303.20170829.2",
+            "contentUrl": null,
+            "metadataVersion": 2,
+            "schemaVersion": "http://datacite.org/schema/kernel-4",
+            "source": null,
+            "isActive": true,
+            "state": "findable",
+            "reason": null,
+            "viewCount": 0,
+            "viewsOverTime": [],
+            "downloadCount": 0,
+            "downloadsOverTime": [],
+            "referenceCount": 0,
+            "citationCount": 0,
+            "citationsOverTime": [],
+            "partCount": 0,
+            "partOfCount": 0,
+            "versionCount": 0,
+            "versionOfCount": 0,
+            "created": "2017-08-30T15:50:26.000Z",
+            "registered": "2017-08-30T15:50:27.000Z",
+            "published": "2017",
+            "updated": "2020-09-18T22:51:26.000Z"
+          },
+          "relationships": {
+            "client": {
+              "data": {
+                "id": "zbmed.dsmz",
+                "type": "clients"
+              }
+            },
+            "provider": {
+              "data": {
+                "id": "zypi",
+                "type": "providers"
+              }
+            },
+            "media": {
+              "data": {
+                "id": "10.13145/bacdive4303.20170829.2",
+                "type": "media"
+              }
+            },
+            "references": {
+              "data": []
+            },
+            "citations": {
+              "data": []
+            },
+            "parts": {
+              "data": []
+            },
+            "partOf": {
+              "data": []
+            },
+            "versions": {
+              "data": []
+            },
+            "versionOf": {
+              "data": []
+            }
+          }
+        }
+      }
+    }
+  ]
+}

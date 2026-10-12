@@ -1,15 +1,16 @@
 {
-  "generated": "2026-10-02T05:32:31.388904+00:00",
+  "generated": "2026-10-09T14:44:38.288838+00:00",
   "category": "archaea",
   "count": 746,
   "recipes": {
     "CultureMech:000252": {
       "name": "halophilic_medium",
       "filename": "DSMZ_1399_HALOPHILIC_MEDIUM.yaml",
-      "ingredient_count": 12,
+      "ingredient_count": 5,
       "id": "CultureMech:000252",
       "source_id": "mediadive.medium:1399",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -173,14 +174,14 @@
     "CultureMech:002510": {
       "name": "pyrococcus_medium",
       "filename": "JCM_J151_PYROCOCCUS_MEDIUM.yaml",
-      "ingredient_count": 26,
+      "ingredient_count": 6,
       "id": "CultureMech:002510",
       "source_id": "mediadive.medium:J151",
       "source": "MediaDive",
+      "solution_count": 3,
       "categories": [
         "archaea"
-      ],
-      "has_hierarchy_enrichment": true
+      ]
     },
     "CultureMech:002517": {
       "name": "thermococcus_celer_medium",
@@ -218,7 +219,7 @@
     "CultureMech:002527": {
       "name": "halobacteria_medium",
       "filename": "JCM_J168_HALOBACTERIA_MEDIUM.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 10,
       "id": "CultureMech:002527",
       "source_id": "mediadive.medium:J168",
       "source": "MediaDive",
@@ -295,10 +296,11 @@
     "CultureMech:002623": {
       "name": "methanomicrobium_mobile_medium",
       "filename": "JCM_J266_METHANOMICROBIUM_MOBILE_MEDIUM.yaml",
-      "ingredient_count": 38,
+      "ingredient_count": 12,
       "id": "CultureMech:002623",
       "source_id": "mediadive.medium:J266",
       "source": "MediaDive",
+      "solution_count": 6,
       "categories": [
         "archaea"
       ]
@@ -406,10 +408,11 @@
     "CultureMech:003335": {
       "name": "methanococcoides_medium",
       "filename": "JCM_J986_METHANOCOCCOIDES_MEDIUM.yaml",
-      "ingredient_count": 37,
+      "ingredient_count": 1,
       "id": "CultureMech:003335",
       "source_id": "mediadive.medium:J986",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -501,6 +504,7 @@
       "id": "CultureMech:003877",
       "source_id": "komodo.medium:1164",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -541,7 +545,7 @@
     "CultureMech:003939": {
       "name": "methanobacterium_medium",
       "filename": "KOMODO_119_METHANOBACTERIUM_medium.yaml",
-      "ingredient_count": 34,
+      "ingredient_count": 32,
       "id": "CultureMech:003939",
       "source_id": "komodo.medium:119",
       "source": "KOMODO",
@@ -709,7 +713,7 @@
     "CultureMech:004186": {
       "name": "methanomicrobium_mobile_medium",
       "filename": "KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml",
-      "ingredient_count": 40,
+      "ingredient_count": 43,
       "id": "CultureMech:004186",
       "source_id": "komodo.medium:161",
       "source": "KOMODO",
@@ -776,10 +780,11 @@
     "CultureMech:004668": {
       "name": "thermofilum_pendens_medium",
       "filename": "KOMODO_265_THERMOFILUM_PENDENS_medium.yaml",
-      "ingredient_count": 17,
+      "ingredient_count": 1,
       "id": "CultureMech:004668",
       "source_id": "komodo.medium:265",
       "source": "KOMODO",
+      "solution_count": 5,
       "categories": [
         "archaea"
       ]
@@ -1387,10 +1392,11 @@
     "CultureMech:007537": {
       "name": "halorhabdus_segorensis_medium",
       "filename": "TOGO_M1023_Halorhabdus_Segorensis_Medium.yaml",
-      "ingredient_count": 8,
+      "ingredient_count": 0,
       "id": "CultureMech:007537",
       "source_id": "TOGO:M1023",
       "source": "TOGO",
+      "solution_count": 2,
       "categories": [
         "archaea"
       ]
@@ -1398,10 +1404,11 @@
     "CultureMech:007538": {
       "name": "halorhabdus_segorensis_medium",
       "filename": "TOGO_M1024_Halorhabdus_Segorensis_Medium.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 0,
       "id": "CultureMech:007538",
       "source_id": "TOGO:M1024",
       "source": "TOGO",
+      "solution_count": 2,
       "categories": [
         "archaea"
       ]
@@ -1660,10 +1667,11 @@
     "CultureMech:007740": {
       "name": "halobacteria_medium_ph_8_0",
       "filename": "TOGO_M1212_Halobacteria_Medium_pH_8.0.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 0,
       "id": "CultureMech:007740",
       "source_id": "TOGO:M1212",
       "source": "TOGO",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -1921,11 +1929,11 @@
     "CultureMech:007968": {
       "name": "pyrococcus_medium",
       "filename": "TOGO_M142_Pyrococcus_Medium.yaml",
-      "ingredient_count": 30,
+      "ingredient_count": 7,
       "id": "CultureMech:007968",
       "source_id": "TOGO:M142",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 3,
       "categories": [
         "archaea"
       ],
@@ -2411,11 +2419,11 @@
     "CultureMech:008380": {
       "name": "desulfurococcus_amylolyticus_medium",
       "filename": "TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml",
-      "ingredient_count": 25,
+      "ingredient_count": 12,
       "id": "CultureMech:008380",
       "source_id": "TOGO:M180",
       "source": "TOGO",
-      "solution_count": 3,
+      "solution_count": 7,
       "categories": [
         "archaea"
       ],
@@ -2541,7 +2549,7 @@
       "id": "CultureMech:008551",
       "source_id": "TOGO:M196",
       "source": "TOGO",
-      "solution_count": 4,
+      "solution_count": 3,
       "categories": [
         "archaea"
       ],
@@ -2627,11 +2635,11 @@
     "CultureMech:008658": {
       "name": "archaeoglobus_fulgidus_medium",
       "filename": "TOGO_M206_Archaeoglobus_Fulgidus_Medium.yaml",
-      "ingredient_count": 18,
+      "ingredient_count": 17,
       "id": "CultureMech:008658",
       "source_id": "TOGO:M206",
       "source": "TOGO",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "archaea"
       ]
@@ -2639,11 +2647,11 @@
     "CultureMech:008669": {
       "name": "archaeoglobus_profundus_medium",
       "filename": "TOGO_M207_Archaeoglobus_Profundus_Medium.yaml",
-      "ingredient_count": 20,
+      "ingredient_count": 19,
       "id": "CultureMech:008669",
       "source_id": "TOGO:M207",
       "source": "TOGO",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "archaea"
       ]
@@ -2651,7 +2659,7 @@
     "CultureMech:008680": {
       "name": "pyrobaculum_aerophilum_medium",
       "filename": "TOGO_M208_Pyrobaculum_Aerophilum_Medium.yaml",
-      "ingredient_count": 28,
+      "ingredient_count": 14,
       "id": "CultureMech:008680",
       "source_id": "TOGO:M208",
       "source": "TOGO",
@@ -2736,11 +2744,11 @@
     "CultureMech:008846": {
       "name": "methanocaldococcus_jannaschii_medium",
       "filename": "TOGO_M225_Methanocaldococcus_Jannaschii_Medium.yaml",
-      "ingredient_count": 18,
+      "ingredient_count": 16,
       "id": "CultureMech:008846",
       "source_id": "TOGO:M225",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 4,
       "categories": [
         "archaea"
       ]
@@ -2843,11 +2851,11 @@
     "CultureMech:008954": {
       "name": "stetteria_medium",
       "filename": "TOGO_M236_Stetteria_Medium.yaml",
-      "ingredient_count": 27,
+      "ingredient_count": 11,
       "id": "CultureMech:008954",
       "source_id": "TOGO:M236",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 4,
       "categories": [
         "archaea"
       ],
@@ -2942,11 +2950,11 @@
     "CultureMech:009019": {
       "name": "methanothermus_fervidus_medium",
       "filename": "TOGO_M243_Methanothermus_Fervidus_Medium.yaml",
-      "ingredient_count": 19,
+      "ingredient_count": 11,
       "id": "CultureMech:009019",
       "source_id": "TOGO:M243",
       "source": "TOGO",
-      "solution_count": 4,
+      "solution_count": 6,
       "categories": [
         "archaea"
       ]
@@ -2954,10 +2962,11 @@
     "CultureMech:009029": {
       "name": "sulfophobococcus_medium",
       "filename": "TOGO_M244_Sulfophobococcus_Medium.yaml",
-      "ingredient_count": 18,
+      "ingredient_count": 13,
       "id": "CultureMech:009029",
       "source_id": "TOGO:M244",
       "source": "TOGO",
+      "solution_count": 3,
       "categories": [
         "archaea"
       ],
@@ -3062,11 +3071,11 @@
     "CultureMech:009148": {
       "name": "methanogenium_medium",
       "filename": "TOGO_M257_Methanogenium_Medium.yaml",
-      "ingredient_count": 20,
+      "ingredient_count": 17,
       "id": "CultureMech:009148",
       "source_id": "TOGO:M257",
       "source": "TOGO",
-      "solution_count": 5,
+      "solution_count": 4,
       "categories": [
         "archaea"
       ]
@@ -3074,11 +3083,11 @@
     "CultureMech:009157": {
       "name": "methanomicrobium_mobile_medium",
       "filename": "TOGO_M258_Methanomicrobium_Mobile_Medium.yaml",
-      "ingredient_count": 27,
+      "ingredient_count": 15,
       "id": "CultureMech:009157",
       "source_id": "TOGO:M258",
       "source": "TOGO",
-      "solution_count": 2,
+      "solution_count": 6,
       "categories": [
         "archaea"
       ]
@@ -4664,10 +4673,11 @@
     "CultureMech:002548": {
       "name": "desulfurococcus_amylolyticus_medium",
       "filename": "desulfurococcus_amylolyticus_medium.yaml",
-      "ingredient_count": 31,
+      "ingredient_count": 10,
       "id": "CultureMech:002548",
       "source_id": "mediadive.medium:J187",
       "source": "MediaDive",
+      "solution_count": 7,
       "categories": [
         "archaea"
       ]
@@ -4920,10 +4930,11 @@
     "CultureMech:002305": {
       "name": "halobacteria_medium_ph_8_0",
       "filename": "halobacteria_medium_ph_8_0.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 0,
       "id": "CultureMech:002305",
       "source_id": "mediadive.medium:J1132",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -4931,7 +4942,7 @@
     "CultureMech:003262": {
       "name": "halobacteria_medium_with_15_nacl",
       "filename": "halobacteria_medium_with_15_nacl.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 10,
       "id": "CultureMech:003262",
       "source_id": "mediadive.medium:J914",
       "source": "MediaDive",
@@ -5157,6 +5168,7 @@
       "id": "CultureMech:000605",
       "source_id": "mediadive.medium:1164",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -5267,10 +5279,11 @@
     "CultureMech:003322": {
       "name": "halorhabdus_segorensis_medium",
       "filename": "halorhabdus_segorensis_medium.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 0,
       "id": "CultureMech:003322",
       "source_id": "mediadive.medium:J973",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "archaea"
       ]
@@ -5756,10 +5769,11 @@
     "CultureMech:000643": {
       "name": "methanobacterium_medium",
       "filename": "methanobacterium_medium.yaml",
-      "ingredient_count": 30,
+      "ingredient_count": 12,
       "id": "CultureMech:000643",
       "source_id": "mediadive.medium:119",
       "source": "MediaDive",
+      "solution_count": 5,
       "categories": [
         "archaea"
       ]
@@ -5891,10 +5905,11 @@
     "CultureMech:000644": {
       "name": "methanobrevibacter_medium",
       "filename": "methanobrevibacter_medium.yaml",
-      "ingredient_count": 29,
+      "ingredient_count": 12,
       "id": "CultureMech:000644",
       "source_id": "mediadive.medium:119a",
       "source": "MediaDive",
+      "solution_count": 5,
       "categories": [
         "archaea"
       ]
@@ -6261,10 +6276,11 @@
     "CultureMech:001100": {
       "name": "methanofollis_medium",
       "filename": "methanofollis_medium.yaml",
-      "ingredient_count": 40,
+      "ingredient_count": 14,
       "id": "CultureMech:001100",
       "source_id": "mediadive.medium:161",
       "source": "MediaDive",
+      "solution_count": 4,
       "categories": [
         "archaea"
       ],
@@ -6340,10 +6356,11 @@
     "CultureMech:000295": {
       "name": "methanogenium_medium",
       "filename": "methanogenium_medium.yaml",
-      "ingredient_count": 37,
+      "ingredient_count": 14,
       "id": "CultureMech:000295",
       "source_id": "mediadive.medium:J265",
       "source": "MediaDive",
+      "solution_count": 4,
       "categories": [
         "archaea"
       ]
@@ -6640,10 +6657,11 @@
     "CultureMech:000645": {
       "name": "methanomassiliicoccus_medium",
       "filename": "methanomassiliicoccus_medium.yaml",
-      "ingredient_count": 34,
+      "ingredient_count": 12,
       "id": "CultureMech:000645",
       "source_id": "mediadive.medium:119b",
       "source": "MediaDive",
+      "solution_count": 7,
       "categories": [
         "archaea"
       ]
@@ -6686,10 +6704,11 @@
     "CultureMech:003334": {
       "name": "methanomethylovorans_uponensis_medium",
       "filename": "methanomethylovorans_uponensis_medium.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 8,
       "id": "CultureMech:003334",
       "source_id": "mediadive.medium:J985",
       "source": "MediaDive",
+      "solution_count": 7,
       "categories": [
         "archaea"
       ]
@@ -7387,10 +7406,11 @@
     "CultureMech:002920": {
       "name": "modified_halobacteria_medium",
       "filename": "modified_halobacteria_medium.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 10,
       "id": "CultureMech:002920",
       "source_id": "mediadive.medium:J572",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -7398,10 +7418,11 @@
     "CultureMech:002191": {
       "name": "modified_halobacteria_medium_2",
       "filename": "modified_halobacteria_medium_2.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 11,
       "id": "CultureMech:002191",
       "source_id": "mediadive.medium:J1007",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -7409,7 +7430,7 @@
     "CultureMech:002192": {
       "name": "modified_halobacteria_medium_3",
       "filename": "modified_halobacteria_medium_3.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 10,
       "id": "CultureMech:002192",
       "source_id": "mediadive.medium:J1008",
       "source": "MediaDive",
@@ -8215,10 +8236,11 @@
     "CultureMech:002612": {
       "name": "sulfophobococcus_medium",
       "filename": "sulfophobococcus_medium.yaml",
-      "ingredient_count": 16,
+      "ingredient_count": 12,
       "id": "CultureMech:002612",
       "source_id": "mediadive.medium:J252",
       "source": "MediaDive",
+      "solution_count": 3,
       "categories": [
         "archaea"
       ]
@@ -8418,10 +8440,11 @@
     "CultureMech:001364": {
       "name": "thermofilum_pendens_medium",
       "filename": "thermofilum_pendens_medium.yaml",
-      "ingredient_count": 17,
+      "ingredient_count": 1,
       "id": "CultureMech:001364",
       "source_id": "mediadive.medium:265",
       "source": "MediaDive",
+      "solution_count": 5,
       "categories": [
         "archaea"
       ]

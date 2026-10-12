@@ -8,130 +8,236 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '983.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component [Merged 3 duplicates: 981.0, 1.0, 1.0]'
+    value: '0.981'
+    unit: L
+  notes: |-
+    Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component [Merged 3 duplicates: 981.0, 1.0, 1.0]
+
+    Source water batch input: 981 ml = 0.981 L. This is not a measured final volume. Prior duplicate-collapse notes describe the superseded flattened record.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Distilled water",
+                "volume": 981,
+                "unit": "ml",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001001"
+    explanation: 'ingredients[0].concentration: Source water batch input: 981 ml =
+      0.981 L. This is not a measured final volume. Prior duplicate-collapse notes
+      describe the superseded flattened record. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=components[0].items[0];
+      accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
 - preferred_term: KH2PO4
-  concentration:
-    value: '0.75'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  notes: |-
+    Role: Buffer; Properties: Inorganic compound, Defined component, Simple component
+
+    Source batch input: 0.75 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "KH2PO4",
+                "volume": 0.75,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001006"
+    explanation: 'ingredients[1].concentration: Source batch input: 0.75 g. Final
+      preparation volume is not independently established; the unsupported g/L assertion
+      is withdrawn, not replaced by an assumed one-liter concentration. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[1];
+      accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
 - preferred_term: NH4Cl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: |-
+    Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component
+
+    Source batch input: 1 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
   term:
     id: CHEBI:31206
     label: ammonium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "NH4Cl",
+                "volume": 1,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001008"
+    explanation: 'ingredients[2].concentration: Source batch input: 1 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=components[0].items[2];
+      accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
 - preferred_term: K2HPO4
-  concentration:
-    value: '0.75'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  notes: |-
+    Role: Buffer; Properties: Inorganic compound, Defined component, Simple component
+
+    Source batch input: 0.75 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "K2HPO4",
+                "volume": 0.75,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001009"
+    explanation: 'ingredients[3].concentration: Source batch input: 0.75 g. Final
+      preparation volume is not independently established; the unsupported g/L assertion
+      is withdrawn, not replaced by an assumed one-liter concentration. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[3];
+      accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
 - preferred_term: Resazurin
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
-    component, Simple component'
+  notes: |-
+    Role: pH dependent redox indicator; Properties: Organic compound, Defined component, Simple component
+
+    Source batch input: 1 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
   term:
     id: CHEBI:8806
     label: Resazurin
   mediaingredientmech_chebi_term:
     id: CHEBI:8806
     label: Resazurin
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Resazurin",
+                "volume": 1,
+                "unit": "mg",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001012"
+    explanation: 'ingredients[4].concentration: Source batch input: 1 mg. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=components[0].items[4];
+      accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
 - preferred_term: MgCl2・6H2O
-  concentration:
-    value: '0.36'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: |-
+    Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+    Source batch input: 0.36 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-- preferred_term: NaS2・9H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: NaHCO3
-  concentration:
-    value: '0.8'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "MgCl2・6H2O",
+                "volume": 0.36,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001013"
+    explanation: 'ingredients[5].concentration: Source batch input: 0.36 g. Final
+      preparation volume is not independently established; the unsupported g/L assertion
+      is withdrawn, not replaced by an assumed one-liter concentration. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[5];
+      accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
 - preferred_term: Sodium acetate
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+  notes: |-
+    Role: Buffer; Properties: Organic compound, Defined component, Simple component
+
+    Source batch input: 2.5 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
   term:
     id: CHEBI:32954
     label: sodium acetate
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
     label: sodium acetate
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Sodium acetate",
+                "volume": 2.5,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001031"
+    explanation: 'ingredients[6].concentration: Source batch input: 2.5 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=components[0].items[8];
+      accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
 - preferred_term: Trimethylamine・HCl
-  concentration:
-    value: '8'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Organic compound, Defined component,
-    Simple component'
+  notes: |-
+    Role: Nutrient source; Properties: Organic compound, Defined component, Simple component
+
+    Source batch input: 8 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Trimethylamine・HCl",
+                "volume": 8,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001126"
+    explanation: 'ingredients[7].concentration: Source batch input: 8 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=components[0].items[9];
+      accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
 - preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: L--Cysteine・HCl・H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Properties: Organic compound, Simple component, Defined component'
-  term:
-    id: CHEBI:91248
-    label: L-cysteine hydrochloride hydrate
+  notes: |-
+    Properties: Undefined component
+
+    Source batch input: 0.1 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Yeast extract (BD-Difco)",
+                "volume": 0.1,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001018"
+    explanation: 'ingredients[8].concentration: Source batch input: 0.1 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=components[0].items[10];
+      accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
 - preferred_term: Polypepton (Nihon Pharm. Co.)
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Trace vitamins (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
+  notes: |-
+    Properties: Undefined component
+
+    Source batch input: 0.1 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Polypepton (Nihon Pharm. Co.)",
+                "volume": 0.1,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001322"
+    explanation: 'ingredients[9].concentration: Source batch input: 0.1 g. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=components[0].items[12];
+      accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -148,212 +254,6 @@ ingredients:
   term:
     id: CHEBI:17997
     label: dinitrogen
-- preferred_term: Biotin
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:15956
-    label: biotin
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15956
-    label: biotin
-- preferred_term: p--Aminobenzoic acid
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30753
-    label: 4-aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: 4-aminobenzoic acid
-- preferred_term: Thiamine・HCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:49105
-    label: thiamine hydrochloride
-- preferred_term: Calcium pantothenate
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-- preferred_term: Pyridoxine・HCl
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:30961
-    label: pyridoxine hydrochloride
-- preferred_term: Folic acid
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:27470
-    label: folic acid
-  mediaingredientmech_chebi_term:
-    id: CHEBI:27470
-    label: folic acid
-- preferred_term: Vitamin B12
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:176843
-    label: vitamin B12
-  mediaingredientmech_chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
-- preferred_term: Riboflavin
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:17015
-    label: riboflavin
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17015
-    label: riboflavin
-- preferred_term: Nicotinic acid
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:15940
-    label: nicotinic acid
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15940
-    label: nicotinic acid
-- preferred_term: Lipoic acid
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:16494
-    label: lipoic acid
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16494
-    label: lipoic acid
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: Na2MoO4・2H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-- preferred_term: H3BO3
-  concentration:
-    value: '0.019'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  mediaingredientmech_chebi_term:
-    id: CHEBI:33118
-    label: boric acid
-- preferred_term: MnCl2・4H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-- preferred_term: CoCl2・6H2O
-  concentration:
-    value: '0.17'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:35696
-    label: cobalt dichloride
-- preferred_term: NiCl2・6H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:34887
-    label: nickel dichloride
-- preferred_term: ZnCl2
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:49976
-    label: zinc dichloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:49976
-    label: zinc dichloride
-- preferred_term: Nitrilotriacetic acid
-  concentration:
-    value: '4.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-  mediaingredientmech_chebi_term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-- preferred_term: FeCl2・4H2O
-  concentration:
-    value: '0.4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86249
-    label: iron dichloride tetrahydrate
-- preferred_term: KOH
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  term:
-    id: CHEBI:32035
-    label: potassium hydroxide
-  concentration:
-    value: variable
-    unit: VARIABLE
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32035
-    label: potassium hydroxide
 media_term:
   preferred_term: TOGO Medium M190
   term:
@@ -424,10 +324,879 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-08T13:52:57.998884+00:00'
+  curator: codex
+  action: RESTORED_JCM_STOCK_PREPARATION_BOUNDARIES_WITH_EVIDENCE
+  notes: Restored preparation boundaries and explicit stock-dose bases. Preserved
+    source-specific conflicts, chemical annotations and earlier history. Batch-mass
+    notes do not assert final concentrations; provider-declared stock rates remain
+    qualified. No growth or identity equivalence claim inferred.
+  source: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+  changes: 'solutions[0].concentration -> solutions[0].concentration: {''value'':
+    ''9'', ''unit'': ''G_PER_L''} -> {''value'': ''0.009'', ''unit'': ''L''} (correct;
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190); ingredients[0].concentration
+    -> solutions[0].composition[0].concentration: {''value'': ''983.0'', ''unit'':
+    ''G_PER_L''} -> {''value'': ''1'', ''unit'': ''L''} (correct; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[26].concentration -> solutions[0].composition[1].concentration: {''value'':
+    ''0.02'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[27].concentration -> solutions[0].composition[2].concentration: {''value'':
+    ''0.01'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[28].concentration -> solutions[0].composition[3].concentration: {''value'':
+    ''0.019'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[29].concentration -> solutions[0].composition[4].concentration: {''value'':
+    ''0.1'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[30].concentration -> solutions[0].composition[5].concentration: {''value'':
+    ''0.17'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[31].concentration -> solutions[0].composition[6].concentration: {''value'':
+    ''0.03'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[32].concentration -> solutions[0].composition[7].concentration: {''value'':
+    ''0.1'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[33].concentration -> solutions[0].composition[8].concentration: {''value'':
+    ''4.5'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[34].concentration -> solutions[0].composition[9].concentration: {''value'':
+    ''0.4'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[35].concentration -> solutions[0].composition[10].concentration: {''value'':
+    ''variable'', ''unit'': ''VARIABLE''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[13].concentration -> solutions[1].concentration: {''value'': ''10'',
+    ''unit'': ''G_PER_L''} -> {''value'': ''0.01'', ''unit'': ''L''} (correct; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[0].concentration -> solutions[1].composition[0].concentration: {''value'':
+    ''983.0'', ''unit'': ''G_PER_L''} -> {''value'': ''1'', ''unit'': ''L''} (correct;
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190); ingredients[16].concentration
+    -> solutions[1].composition[1].concentration: {''value'': ''2'', ''unit'': ''G_PER_L''}
+    -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[17].concentration -> solutions[1].composition[2].concentration: {''value'':
+    ''5'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[18].concentration -> solutions[1].composition[3].concentration: {''value'':
+    ''5'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[19].concentration -> solutions[1].composition[4].concentration: {''value'':
+    ''5'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[20].concentration -> solutions[1].composition[5].concentration: {''value'':
+    ''10'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[21].concentration -> solutions[1].composition[6].concentration: {''value'':
+    ''2'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[22].concentration -> solutions[1].composition[7].concentration: {''value'':
+    ''0.1'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[23].concentration -> solutions[1].composition[8].concentration: {''value'':
+    ''5'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[24].concentration -> solutions[1].composition[9].concentration: {''value'':
+    ''5'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[25].concentration -> solutions[1].composition[10].concentration: {''value'':
+    ''5'', ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[0].concentration -> ingredients[0].concentration: {''value'': ''983.0'',
+    ''unit'': ''G_PER_L''} -> {''value'': ''0.981'', ''unit'': ''L''} (correct; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[1].concentration -> ingredients[1].concentration: {''value'': ''0.75'',
+    ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[2].concentration -> ingredients[2].concentration: {''value'': ''1'',
+    ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[3].concentration -> ingredients[3].concentration: {''value'': ''0.75'',
+    ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[4].concentration -> ingredients[4].concentration: {''value'': ''1'',
+    ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[5].concentration -> ingredients[5].concentration: {''value'': ''0.36'',
+    ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    None -> solutions[2].preparation_notes: None -> Receiving-medium instructions
+    (context only; not a stock-batch recipe): Mix ingredients except NaHCO3, Trace
+    vitamins, Na2S・9H2O and cysteine・HCl・H2O, and autoclave under a N2--CO2 (80:20)
+    atmosphere. Filter--sterilize NaHCO3 as an 8% solution and Trace vitamins while
+    gassing with N2. Separately autoclave Na2S・9H2O and cysteine・HCl・H2O as 5% solutions
+    under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins
+    to the medium under a N2--CO2 (80:20) atmosphere. Prior to inoculation, add the
+    sterile Na2S・9H2O and cysteine・HCl・H2O solutions, and adjust pH to 6.8. (add;
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190); ingredients[6].concentration
+    -> solutions[2].composition[0].concentration: {''value'': ''0.5'', ''unit'': ''G_PER_L''}
+    -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    None -> solutions[3].preparation_notes: None -> Receiving-medium instructions
+    (context only; not a stock-batch recipe): Mix ingredients except NaHCO3, Trace
+    vitamins, Na2S・9H2O and cysteine・HCl・H2O, and autoclave under a N2--CO2 (80:20)
+    atmosphere. Filter--sterilize NaHCO3 as an 8% solution and Trace vitamins while
+    gassing with N2. Separately autoclave Na2S・9H2O and cysteine・HCl・H2O as 5% solutions
+    under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins
+    to the medium under a N2--CO2 (80:20) atmosphere. Prior to inoculation, add the
+    sterile Na2S・9H2O and cysteine・HCl・H2O solutions, and adjust pH to 6.8. (add;
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190); ingredients[7].concentration
+    -> solutions[3].composition[0].concentration: {''value'': ''0.8'', ''unit'': ''G_PER_L''}
+    -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[8].concentration -> ingredients[6].concentration: {''value'': ''2.5'',
+    ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[9].concentration -> ingredients[7].concentration: {''value'': ''8'',
+    ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[10].concentration -> ingredients[8].concentration: {''value'': ''0.1'',
+    ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    None -> solutions[4].preparation_notes: None -> Receiving-medium instructions
+    (context only; not a stock-batch recipe): Mix ingredients except NaHCO3, Trace
+    vitamins, Na2S・9H2O and cysteine・HCl・H2O, and autoclave under a N2--CO2 (80:20)
+    atmosphere. Filter--sterilize NaHCO3 as an 8% solution and Trace vitamins while
+    gassing with N2. Separately autoclave Na2S・9H2O and cysteine・HCl・H2O as 5% solutions
+    under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins
+    to the medium under a N2--CO2 (80:20) atmosphere. Prior to inoculation, add the
+    sterile Na2S・9H2O and cysteine・HCl・H2O solutions, and adjust pH to 6.8. (add;
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190); ingredients[11].concentration
+    -> solutions[4].composition[0].concentration: {''value'': ''0.5'', ''unit'': ''G_PER_L''}
+    -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    ingredients[12].concentration -> ingredients[9].concentration: {''value'': ''0.1'',
+    ''unit'': ''G_PER_L''} -> None (remove_unsupported; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    None -> preparation_steps: None -> [{''step_number'': 1, ''action'': ''AUTOCLAVE'',
+    ''description'': ''Mix ingredients except NaHCO3, Trace vitamins, Na2S・9H2O and
+    cysteine・HCl・H2O, and autoclave under a N2--CO2 (80:20) atmosphere. Filter--sterilize
+    NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately
+    autoclave Na2S・9H2O and cysteine・HCl・H2O as 5% solutions under a N2 atmosphere.
+    Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under
+    a N2--CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S・9H2O
+    and cysteine・HCl・H2O solutions, and adjust pH to 6.8.''}] (add; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    None -> solutions[0].preparation_notes: None -> Adjust pH to 7.0 with 1 N KOH.
+    (add; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190); None
+    -> ph_value: None -> 6.8 (correct; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190);
+    preparation stages and source-specific pH are supported separately; percentage
+    bases and sulfide spelling disagreement remain unresolved.'
 solutions:
 - preferred_term: Trace mineral solution (see below)
-  composition: []
+  composition:
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+    notes: |-
+      Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component [Merged 3 duplicates: 981.0, 1.0, 1.0]
+
+      Source water batch input: 1 L = 1 L. This is not a measured final volume. Prior duplicate-collapse notes describe the superseded flattened record.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Distilled water",
+                  "volume": 1,
+                  "unit": "L",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001001"
+      explanation: 'solutions[0].composition[0].concentration: Source water batch
+        input: 1 L = 1 L. This is not a measured final volume. Prior duplicate-collapse
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=components[2].items[0];
+        accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: CaCl2・2H2O
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 0.02 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "CaCl2・2H2O",
+                  "volume": 0.02,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001005"
+      explanation: 'solutions[0].composition[1].concentration: Source batch input:
+        0.02 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[2].items[1]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: Na2MoO4・2H2O
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 0.01 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Na2MoO4・2H2O",
+                  "volume": 0.01,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001011"
+      explanation: 'solutions[0].composition[2].concentration: Source batch input:
+        0.01 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[2].items[2]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: H3BO3
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 0.019 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "H3BO3",
+                  "volume": 0.019,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001015"
+      explanation: 'solutions[0].composition[3].concentration: Source batch input:
+        0.019 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[2].items[3]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: MnCl2・4H2O
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 0.1 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "MnCl2・4H2O",
+                  "volume": 0.1,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001020"
+      explanation: 'solutions[0].composition[4].concentration: Source batch input:
+        0.1 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[2].items[4]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: CoCl2・6H2O
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 0.17 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:35696
+      label: cobalt dichloride
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "CoCl2・6H2O",
+                  "volume": 0.17,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001021"
+      explanation: 'solutions[0].composition[5].concentration: Source batch input:
+        0.17 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[2].items[5]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: NiCl2・6H2O
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 0.03 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:34887
+      label: nickel dichloride
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "NiCl2・6H2O",
+                  "volume": 0.03,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001022"
+      explanation: 'solutions[0].composition[6].concentration: Source batch input:
+        0.03 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[2].items[6]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: ZnCl2
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 0.1 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:49976
+      label: zinc dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49976
+      label: zinc dichloride
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "ZnCl2",
+                  "volume": 0.1,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001035"
+      explanation: 'solutions[0].composition[7].concentration: Source batch input:
+        0.1 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[2].items[7]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: Nitrilotriacetic acid
+    notes: |-
+      Role: Mineral source; Properties: Organic compound, Defined component, Simple component
+
+      Source batch input: 4.5 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Nitrilotriacetic acid",
+                  "volume": 4.5,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001053"
+      explanation: 'solutions[0].composition[8].concentration: Source batch input:
+        4.5 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[2].items[8]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: FeCl2・4H2O
+    notes: |-
+      Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 0.4 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:86249
+      label: iron dichloride tetrahydrate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "FeCl2・4H2O",
+                  "volume": 0.4,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001548"
+      explanation: 'solutions[0].composition[9].concentration: Source batch input:
+        0.4 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[2].items[9]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: KOH
+    notes: |-
+      Role: Mineral source; Properties: Defined component, Solution
+
+      pH-adjustment reagent; no fixed dose is specified. Source reagent strength: 1 N. Normality is not converted to molarity.
+    term:
+      id: CHEBI:32035
+      label: potassium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32035
+      label: potassium hydroxide
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "KOH",
+                  "conc_value": 1,
+                  "conc_unit": "N",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001903"
+      explanation: 'solutions[0].composition[10].concentration: pH-adjustment reagent;
+        no fixed dose is specified. Source reagent strength: 1 N. Normality is not
+        converted to molarity. No final-medium volume, percentage basis, density or
+        chemical grounding is inferred. Locator=components[2].items[10]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
   concentration:
-    value: '9'
-    unit: G_PER_L
+    value: '0.009'
+    unit: L
   name: Unknown solution
+  notes: 'Source stock addition: 9 ml = 0.009 L per receiving batch, not grams per
+    liter or a dose per final liter.'
+  preparation_notes: Adjust pH to 7.0 with 1 N KOH.
+- preferred_term: Trace vitamins (see below)
+  concentration:
+    value: '0.01'
+    unit: L
+  composition:
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+    notes: |-
+      Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component [Merged 3 duplicates: 981.0, 1.0, 1.0]
+
+      Source water batch input: 1 L = 1 L. This is not a measured final volume. Prior duplicate-collapse notes describe the superseded flattened record.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Distilled water",
+                  "volume": 1,
+                  "unit": "L",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001001"
+      explanation: 'solutions[1].composition[0].concentration: Source water batch
+        input: 1 L = 1 L. This is not a measured final volume. Prior duplicate-collapse
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=components[1].items[0];
+        accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: Biotin
+    notes: |-
+      Role: Vitamin; Properties: Organic compound, Defined component, Simple component
+
+      Source batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Biotin",
+                  "volume": 2,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001025"
+      explanation: 'solutions[1].composition[1].concentration: Source batch input:
+        2 mg. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[1]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: p--Aminobenzoic acid
+    notes: |-
+      Role: Vitamin; Properties: Organic compound, Defined component, Simple component
+
+      Source batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "p--Aminobenzoic acid",
+                  "volume": 5,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001026"
+      explanation: 'solutions[1].composition[2].concentration: Source batch input:
+        5 mg. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[2]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: Thiamine・HCl
+    notes: |-
+      Role: Vitamin; Properties: Organic compound, Defined component, Simple component
+
+      Source batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Thiamine・HCl",
+                  "volume": 5,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001027"
+      explanation: 'solutions[1].composition[3].concentration: Source batch input:
+        5 mg. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[3]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: Calcium pantothenate
+    notes: |-
+      Role: Vitamin; Properties: Organic compound, Defined component, Simple component
+
+      Source batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Calcium pantothenate",
+                  "volume": 5,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001028"
+      explanation: 'solutions[1].composition[4].concentration: Source batch input:
+        5 mg. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[4]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: Pyridoxine・HCl
+    notes: |-
+      Role: Vitamin; Properties: Organic compound, Defined component, Simple component
+
+      Source batch input: 10 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Pyridoxine・HCl",
+                  "volume": 10,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001029"
+      explanation: 'solutions[1].composition[5].concentration: Source batch input:
+        10 mg. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[5]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: Folic acid
+    notes: |-
+      Role: Vitamin; Properties: Organic compound, Defined component, Simple component
+
+      Source batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Folic acid",
+                  "volume": 2,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001033"
+      explanation: 'solutions[1].composition[6].concentration: Source batch input:
+        2 mg. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[6]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: Vitamin B12
+    notes: |-
+      Role: Vitamin; Properties: Organic compound, Defined component, Simple component
+
+      Source batch input: 0.1 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Vitamin B12",
+                  "volume": 0.1,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001034"
+      explanation: 'solutions[1].composition[7].concentration: Source batch input:
+        0.1 mg. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[7]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: Riboflavin
+    notes: |-
+      Role: Vitamin; Properties: Organic compound, Defined component, Simple component
+
+      Source batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Riboflavin",
+                  "volume": 5,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001037"
+      explanation: 'solutions[1].composition[8].concentration: Source batch input:
+        5 mg. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[8]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: Nicotinic acid
+    notes: |-
+      Role: Vitamin; Properties: Organic compound, Defined component, Simple component
+
+      Source batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Nicotinic acid",
+                  "volume": 5,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001038"
+      explanation: 'solutions[1].composition[9].concentration: Source batch input:
+        5 mg. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[9]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  - preferred_term: Lipoic acid
+    notes: |-
+      Role: Growth factor; Properties: Organic compound, Defined component, Simple component
+
+      Source batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+    term:
+      id: CHEBI:16494
+      label: lipoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16494
+      label: lipoic acid
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Lipoic acid",
+                  "volume": 5,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001699"
+      explanation: 'solutions[1].composition[10].concentration: Source batch input:
+        5 mg. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        No final-medium volume, percentage basis, density or chemical grounding is
+        inferred. Locator=components[1].items[10]; accessed=2026-10-08T13:22:46.432534+00:00;
+        capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  notes: 'Source stock addition: 10 ml = 0.01 L per receiving batch, not grams per
+    liter or a dose per final liter.'
+- preferred_term: NaS2・9H2O separately prepared solution
+  composition:
+  - preferred_term: NaS2・9H2O
+    notes: |-
+      Role: Reducing agent; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 0.5 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. This is the contribution specified for the receiving medium batch, not the mass for preparing an unspecified volume of stock.
+
+      Unresolved source identity discrepancy: the original JCM197 table spells NaS2, while its preparation spells Na2S. MediaDive normalizes the table to Na2S; TOGO retains NaS2. The existing label/grounding is preserved, not recertified, and no numeric sulfide concentration is asserted.
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "NaS2・9H2O",
+                  "volume": 0.5,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001014"
+      explanation: |-
+        solutions[2].composition[0].concentration: Source batch input: 0.5 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. This is the contribution specified for the receiving medium batch, not the mass for preparing an unspecified volume of stock. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[6]; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.
+
+        Additional exact excerpt: "Mix ingredients except NaHCO3, Trace vitamins, Na2S・9H2O and cysteine・HCl・H2O, and autoclave under a N2--CO2 (80:20) atmosphere. Filter--sterilize NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately autoclave Na2S・9H2O and cysteine・HCl・H2O as 5% solutions under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2--CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S・9H2O and cysteine・HCl・H2O solutions, and adjust pH to 6.8."
+        solutions[2].composition[0].notes: The preparation uses the different Na2S spelling; the discrepancy remains unresolved. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[0].comment; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+      supports: SUPPORT
+      snippet: NaS2·9H2O 0.5 g
+      explanation: 'solutions[2].composition[0].notes: Unresolved source identity
+        discrepancy: the original JCM197 table spells NaS2, while its preparation
+        spells Na2S. MediaDive normalizes the table to Na2S; TOGO retains NaS2. The
+        existing label/grounding is preserved, not recertified, and no numeric sulfide
+        concentration is asserted. No final-medium volume, percentage basis, density
+        or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T13:22:48.135690+00:00;
+        capture SHA256=39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532.'
+  preparation_notes: 'Receiving-medium instructions (context only; not a stock-batch
+    recipe): Mix ingredients except NaHCO3, Trace vitamins, Na2S・9H2O and cysteine・HCl・H2O,
+    and autoclave under a N2--CO2 (80:20) atmosphere. Filter--sterilize NaHCO3 as
+    an 8% solution and Trace vitamins while gassing with N2. Separately autoclave
+    Na2S・9H2O and cysteine・HCl・H2O as 5% solutions under a N2 atmosphere. Aseptically
+    and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2--CO2
+    (80:20) atmosphere. Prior to inoculation, add the sterile Na2S・9H2O and cysteine・HCl・H2O
+    solutions, and adjust pH to 6.8.'
+  notes: The source specifies a separate percentage-labelled preparation but does
+    not establish percentage basis or its addition volume. No numeric stock strength
+    or dose is asserted. Composition notes record the receiving-batch contribution
+    only.
+- preferred_term: NaHCO3 separately prepared solution
+  composition:
+  - preferred_term: NaHCO3
+    notes: |-
+      Role: Buffer; Properties: Inorganic compound, Defined component, Simple component
+
+      Source batch input: 0.8 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. This is the contribution specified for the receiving medium batch, not the mass for preparing an unspecified volume of stock.
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "NaHCO3",
+                  "volume": 0.8,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001019"
+      explanation: 'solutions[3].composition[0].concentration: Source batch input:
+        0.8 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        This is the contribution specified for the receiving medium batch, not the
+        mass for preparing an unspecified volume of stock. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=components[0].items[7];
+        accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  preparation_notes: 'Receiving-medium instructions (context only; not a stock-batch
+    recipe): Mix ingredients except NaHCO3, Trace vitamins, Na2S・9H2O and cysteine・HCl・H2O,
+    and autoclave under a N2--CO2 (80:20) atmosphere. Filter--sterilize NaHCO3 as
+    an 8% solution and Trace vitamins while gassing with N2. Separately autoclave
+    Na2S・9H2O and cysteine・HCl・H2O as 5% solutions under a N2 atmosphere. Aseptically
+    and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2--CO2
+    (80:20) atmosphere. Prior to inoculation, add the sterile Na2S・9H2O and cysteine・HCl・H2O
+    solutions, and adjust pH to 6.8.'
+  notes: The source specifies a separate percentage-labelled preparation but does
+    not establish percentage basis or its addition volume. No numeric stock strength
+    or dose is asserted. Composition notes record the receiving-batch contribution
+    only.
+- preferred_term: L--Cysteine・HCl・H2O separately prepared solution
+  composition:
+  - preferred_term: L--Cysteine・HCl・H2O
+    notes: |-
+      Properties: Organic compound, Simple component, Defined component
+
+      Source batch input: 0.5 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. This is the contribution specified for the receiving medium batch, not the mass for preparing an unspecified volume of stock.
+    term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "L--Cysteine・HCl・H2O",
+                  "volume": 0.5,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001205"
+      explanation: 'solutions[4].composition[0].concentration: Source batch input:
+        0.5 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        This is the contribution specified for the receiving medium batch, not the
+        mass for preparing an unspecified volume of stock. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=components[0].items[11];
+        accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.'
+  preparation_notes: 'Receiving-medium instructions (context only; not a stock-batch
+    recipe): Mix ingredients except NaHCO3, Trace vitamins, Na2S・9H2O and cysteine・HCl・H2O,
+    and autoclave under a N2--CO2 (80:20) atmosphere. Filter--sterilize NaHCO3 as
+    an 8% solution and Trace vitamins while gassing with N2. Separately autoclave
+    Na2S・9H2O and cysteine・HCl・H2O as 5% solutions under a N2 atmosphere. Aseptically
+    and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2--CO2
+    (80:20) atmosphere. Prior to inoculation, add the sterile Na2S・9H2O and cysteine・HCl・H2O
+    solutions, and adjust pH to 6.8.'
+  notes: The source specifies a separate percentage-labelled preparation but does
+    not establish percentage basis or its addition volume. No numeric stock strength
+    or dose is asserted. Composition notes record the receiving-batch contribution
+    only.
+evidence:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+  supports: SUPPORT
+  snippet: |-
+    {
+              "component_name": "Trace mineral solution (see below)",
+              "volume": 9,
+              "unit": "ml"
+  explanation: |-
+    solutions[0].concentration: Source stock addition: 9 ml = 0.009 L per receiving batch, not grams per liter or a dose per final liter. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[13]; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.
+
+    Additional exact excerpt: {
+              "component_name": "Trace vitamins (see below)",
+              "volume": 10,
+              "unit": "ml"
+    solutions[1].concentration: Source stock addition: 10 ml = 0.01 L per receiving batch, not grams per liter or a dose per final liter. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[0].items[14]; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.
+
+    Additional exact excerpt: "Mix ingredients except NaHCO3, Trace vitamins, Na2S・9H2O and cysteine・HCl・H2O, and autoclave under a N2--CO2 (80:20) atmosphere. Filter--sterilize NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately autoclave Na2S・9H2O and cysteine・HCl・H2O as 5% solutions under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2--CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S・9H2O and cysteine・HCl・H2O solutions, and adjust pH to 6.8."
+    solutions[2].preparation_notes: The source specifies a separate percentage-labelled preparation but does not establish percentage basis or its addition volume. No numeric stock strength or dose is asserted. Composition notes record the receiving-batch contribution only. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[0].comment; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.
+
+    Additional exact excerpt: "Mix ingredients except NaHCO3, Trace vitamins, Na2S・9H2O and cysteine・HCl・H2O, and autoclave under a N2--CO2 (80:20) atmosphere. Filter--sterilize NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately autoclave Na2S・9H2O and cysteine・HCl・H2O as 5% solutions under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2--CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S・9H2O and cysteine・HCl・H2O solutions, and adjust pH to 6.8."
+    solutions[3].preparation_notes: The source specifies a separate percentage-labelled preparation but does not establish percentage basis or its addition volume. No numeric stock strength or dose is asserted. Composition notes record the receiving-batch contribution only. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[0].comment; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.
+
+    Additional exact excerpt: "Mix ingredients except NaHCO3, Trace vitamins, Na2S・9H2O and cysteine・HCl・H2O, and autoclave under a N2--CO2 (80:20) atmosphere. Filter--sterilize NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately autoclave Na2S・9H2O and cysteine・HCl・H2O as 5% solutions under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2--CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S・9H2O and cysteine・HCl・H2O solutions, and adjust pH to 6.8."
+    solutions[4].preparation_notes: The source specifies a separate percentage-labelled preparation but does not establish percentage basis or its addition volume. No numeric stock strength or dose is asserted. Composition notes record the receiving-batch contribution only. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[0].comment; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.
+
+    Additional exact excerpt: "Mix ingredients except NaHCO3, Trace vitamins, Na2S・9H2O and cysteine・HCl・H2O, and autoclave under a N2--CO2 (80:20) atmosphere. Filter--sterilize NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately autoclave Na2S・9H2O and cysteine・HCl・H2O as 5% solutions under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2--CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S・9H2O and cysteine・HCl・H2O solutions, and adjust pH to 6.8."
+    preparation_steps: Restore the main-medium procedure and keep stock-only pH instructions out of the root sequence. FILTER denotes the explicit filtration; no pore size is inferred. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[0].comment; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.
+
+    Additional exact excerpt: "Adjust pH to 7.0 with 1 N KOH."
+    solutions[0].preparation_notes: Trace-stock-only pH procedure, not receiving-medium pH. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[1].comment; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.
+
+    Additional exact excerpt: "Mix ingredients except NaHCO3, Trace vitamins, Na2S・9H2O and cysteine・HCl・H2O, and autoclave under a N2--CO2 (80:20) atmosphere. Filter--sterilize NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately autoclave Na2S・9H2O and cysteine・HCl・H2O as 5% solutions under a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2--CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S・9H2O and cysteine・HCl・H2O solutions, and adjust pH to 6.8."
+    ph_value: Final-medium pH from the preparation; stock pH 7.0 is not the medium pH. MediaDive J197 metadata pH 7 disagrees with its main preparation and is not selected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=comments[0].comment; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix ingredients except NaHCO3, Trace vitamins, Na2S・9H2O and cysteine・HCl・H2O,
+    and autoclave under a N2--CO2 (80:20) atmosphere. Filter--sterilize NaHCO3 as
+    an 8% solution and Trace vitamins while gassing with N2. Separately autoclave
+    Na2S・9H2O and cysteine・HCl・H2O as 5% solutions under a N2 atmosphere. Aseptically
+    and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2--CO2
+    (80:20) atmosphere. Prior to inoculation, add the sterile Na2S・9H2O and cysteine・HCl・H2O
+    solutions, and adjust pH to 6.8.
+ph_value: 6.8
+references:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+  title: TOGO Medium M190
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    capture_sha256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.
+    Authors and publication year not supplied; source access/copyright year is not
+    publication year. Source-specific preparation and quantity evidence, not organism-growth
+    evidence.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-08;
+    capture_sha256=39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532.
+    Authors and publication year not supplied; source access/copyright year is not
+    publication year. Source-specific preparation and quantity evidence, not organism-growth
+    evidence.

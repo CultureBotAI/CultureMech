@@ -49,6 +49,33 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2597
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "D-Glucose",
+                      "compound_id": 211,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 1.99601,
+                      "mmol_l": 11.0791,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (D-Glucose)
+      in MediaDive solution 2597; locator=$.data.recipe[5] (compound_id=211). Provider
+      explicitly reports g_l=1.99601. Arithmetic check: 2 g * 1 g/g / (1002 ml / 1000
+      ml per L) = 1.996007984031936127744510978 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1002. Retrieved 2026-10-07T09:14:01.048587+00:00;
+      response SHA256=00f8de9b4887f49663cb372dbd55cee1935411cfa448ff556a98d000b5ffd94c.'
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.249501'
@@ -61,6 +88,33 @@ composition:
     label: sodium sulfide nonahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2597
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 8,
+                      "compound": "Na2S x 9 H2O",
+                      "compound_id": 54,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.25,
+                      "unit": "g",
+                      "g_l": 0.249501,
+                      "mmol_l": 1.0388,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (Na2S x
+      9 H2O) in MediaDive solution 2597; locator=$.data.recipe[7] (compound_id=54).
+      Provider explicitly reports g_l=0.249501. Arithmetic check: 0.25 g * 1 g/g /
+      (1002 ml / 1000 ml per L) = 0.2495009980039920159680638723 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      1002. Retrieved 2026-10-07T09:14:01.048587+00:00; response SHA256=00f8de9b4887f49663cb372dbd55cee1935411cfa448ff556a98d000b5ffd94c.'
 - preferred_term: Distilled water
   concentration:
     value: '998.003992015968'
@@ -120,6 +174,17 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:15:06.636792+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/2597
+  changes: 'composition[4].concentration: {"unit": "G_PER_L", "value": "1.99601"}
+    -> {"unit": "G_PER_L", "value": "1.99601"} (evidence_only); composition[5].concentration:
+    {"unit": "G_PER_L", "value": "0.249501"} -> {"unit": "G_PER_L", "value": "0.249501"}
+    (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -128,3 +193,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/2597
+  title: 'MediaDive solution 2597: Main sol. 1299'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=00f8de9b4887f49663cb372dbd55cee1935411cfa448ff556a98d000b5ffd94c;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

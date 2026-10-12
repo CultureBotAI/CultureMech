@@ -28,6 +28,15 @@ ingredients:
   notes: UTEX lists 1 g/L Proteose Peptone per 1 L final medium.
   nutritional_roles:
   - NITROGEN_SOURCE
+  evidence:
+  - reference: https://utex.org/products/proteose-medium
+    supports: SUPPORT
+    snippet: 1 g/L
+    explanation: 'ingredients[0].concentration: the source explicitly gives a one-litre
+      batch, one-litre Bristol input and 1 g/L proteose peptone. For the base input,
+      1 L x 1000 mL/L / 1 L batch = 1000 mL/L. The optional agar preparation is not
+      silently added to this liquid record. Locator: recipe table and For 1 L Total
+      heading.'
 solutions:
 - preferred_term: Bristol Medium
   concentration:
@@ -89,9 +98,71 @@ curation_history:
   source: https://utex.org/products/proteose-medium
   notes: UTEX prepares Proteose Medium by adding 1 g/L Proteose Peptone to prepared
     Bristol Medium.
+- timestamp: '2026-10-10T03:53:28.828041+00:00'
+  curator: codex
+  action: CURATED_UTEX_BRISTOL_BBM_INGREDIENT_AND_PREPARATION_EVIDENCE
+  notes: The BBM trace source prints MnCl with tetrahydrate; its intended chemical
+    identity and the existing MnCl2 amount remain unverified. Added node evidence
+    supports only that source-spelling conflict. BBM trace concentration columns and
+    stock-page parenthetical micromolar values conflict with explicit stock preparation
+    amounts. Preserve inspected Amount-per-litre stock recipes, not those incompatible
+    columns; no new final-medium conversions. The BBM iron stock does not specify
+    acid strength. No density, purity or molarity is assumed. The BBM study cites
+    Stein 1973; exact equivalence with the current UTEX parent is unverified. NH4Cl
+    ppm basis and culture working volume remain unspecified; no numerical conversion
+    or aliquot inference. Bristol-NaCl uses an unfinished parent preparation; its
+    table one-litre row is not certified as a working dose of completed Bristol. The
+    reference and explicit stage notes are retained without a fabricated dose. Optional
+    agar formulations are not silently added to these liquid records. No new taxa-media
+    associations, IDs or growth/role assertions are curated. Supplier-catalog identities,
+    generic incubation/light claims and unrelated preexisting organism evidence are
+    not blanket-certified by this ingredient review.
+  source: https://utex.org/products/proteose-medium
+  changes: '[{"counts": {"new_evidence": 1}, "kind": "set", "locator": "ingredients[0].concentration:
+    the source explicitly gives a one-litre batch, one-litre Bristol input and 1 g/L
+    proteose peptone. For the base input, 1 L x 1000 mL/L / 1 L batch = 1000 mL/L.
+    The optional agar preparation is not silently added to this liquid record. Locator:
+    recipe table and For 1 L Total heading.", "new": [{"explanation": "ingredients[0].concentration:
+    the source explicitly gives a one-litre batch, one-litre Bristol input and 1 g/L
+    proteose peptone. For the base input, 1 L x 1000 mL/L / 1 L batch = 1000 mL/L.
+    The optional agar preparation is not silently added to this liquid record. Locator:
+    recipe table and For 1 L Total heading.", "reference": "https://utex.org/products/proteose-medium",
+    "snippet": "1 g/L", "supports": "SUPPORT"}], "old": null, "old_present": false,
+    "pointer": ["ingredients", 0, "evidence"], "reason": "Attach the scoped, inspected
+    support without altering existing evidence.", "reference": "https://utex.org/products/proteose-medium",
+    "snippet": "1 g/L"}, {"counts": {"new_evidence": 1}, "kind": "set", "locator":
+    "solutions[0].concentration: the source explicitly gives a one-litre batch, one-litre
+    Bristol input and 1 g/L proteose peptone. For the base input, 1 L x 1000 mL/L
+    / 1 L batch = 1000 mL/L. The optional agar preparation is not silently added to
+    this liquid record. Locator: recipe table and For 1 L Total heading.", "new":
+    [{"explanation": "solutions[0].concentration: the source explicitly gives a one-litre
+    batch, one-litre Bristol input and 1 g/L proteose peptone. For the base input,
+    1 L x 1000 mL/L / 1 L batch = 1000 mL/L. The optional agar preparation is not
+    silently added to this liquid record. Locator: recipe table and For 1 L Total
+    heading.", "reference": "https://utex.org/products/proteose-medium", "snippet":
+    "1 L", "supports": "SUPPORT"}], "old": null, "old_present": false, "pointer":
+    ["evidence"], "reason": "Attach the scoped, inspected support without altering
+    existing evidence.", "reference": "https://utex.org/products/proteose-medium",
+    "snippet": "1 L"}, {"counts": {"bibliographic_entries_enriched": 1}, "kind": "set",
+    "locator": "source title/author context and inspected recipe or methods", "new":
+    {"authors": "UTEX Culture Collection of Algae", "notes": "source_type=culture_collection_page;
+    discovery_mode=existing_record_reference; accessed_on=2026-10-10. Exact recipe
+    or study formulation and preparation stage are retained; source conflicts are
+    not silently repaired. Recipe publication year is unknown; website/PDF copyright
+    is not used as publication year.", "reference": "https://utex.org/products/proteose-medium",
+    "title": "Proteose Medium | UTEX Culture Collection of Algae"}, "old": {"reference":
+    "https://utex.org/products/proteose-medium"}, "old_present": true, "pointer":
+    ["references", 1], "reason": "Enrich the existing reference with verified provenance.",
+    "reference": "https://utex.org/products/proteose-medium", "snippet": "1 g/L"}]'
 references:
 - reference: UTEX:proteose-medium
 - reference: https://utex.org/products/proteose-medium
+  title: Proteose Medium | UTEX Culture Collection of Algae
+  authors: UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage
+    are retained; source conflicts are not silently repaired. Recipe publication year
+    is unknown; website/PDF copyright is not used as publication year.
 original_name: Proteose Medium
 parent_media:
   path: data/normalized_yaml/algae/Bristol_Medium.yaml
@@ -105,3 +176,12 @@ variant_modifications:
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+evidence:
+- reference: https://utex.org/products/proteose-medium
+  supports: SUPPORT
+  snippet: 1 L
+  explanation: 'solutions[0].concentration: the source explicitly gives a one-litre
+    batch, one-litre Bristol input and 1 g/L proteose peptone. For the base input,
+    1 L x 1000 mL/L / 1 L batch = 1000 mL/L. The optional agar preparation is not
+    silently added to this liquid record. Locator: recipe table and For 1 L Total
+    heading.'

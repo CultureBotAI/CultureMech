@@ -1,0 +1,21 @@
+{
+  "mode": "applied",
+  "records": 9,
+  "counts": {
+    "new_evidence": 57,
+    "new_curation_history": 9,
+    "new_references": 6,
+    "new_quantity_slots": 18,
+    "water_input_nodes_added": 6,
+    "stock_nodes_relocated": 12,
+    "stock_stage_concentrations_rebased": 12,
+    "stock_descriptors_added": 12,
+    "ingredient_context_notes_added": 63,
+    "preparation_steps_added": 4,
+    "evidence_scopes_corrected": 30,
+    "quantity_corrections": 3,
+    "unquantified_carrier_nodes_added": 6,
+    "preparation_actions_corrected": 1,
+    "preparation_steps_relocated": 1
+  }
+}

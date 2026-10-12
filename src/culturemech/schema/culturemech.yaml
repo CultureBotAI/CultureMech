@@ -649,6 +649,17 @@ classes:
         description: Additional free-text notes
         range: string
 
+      evidence:
+        description: >-
+          Evidence for solution-level formulation, nested stock additions and
+          preparation claims. Ingredient concentration evidence belongs on the
+          relevant composition entry. Scope each claim to its exact field path
+          and preparation stage in the evidence explanation.
+        range: EvidenceItem
+        multivalued: true
+        recommended: false
+        inlined_as_list: true
+
   RecipeSynonym:
     description: An alternate name for a recipe from a specific source
     attributes:

@@ -1,0 +1,29 @@
+# Solution Concentration Review: Mineral solution 2
+
+- Record: data/normalized_yaml/bacterial/mediadive_884_Mineral_solution_2.yaml
+- ID: CultureMech:015244
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `d3325be13132b6a79cf1148f147ba1dc0895d9e18123e68e15bac35a4b4fccde`
+- Proposed/result SHA256: `d3325be13132b6a79cf1148f147ba1dc0895d9e18123e68e15bac35a4b4fccde`
+- Source: https://mediadive.dsmz.de/rest/solution/884
+- Source SHA256: 810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb
+- Retrieved: 2026-10-07T08:47:28.570992+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: reviewed; unchanged; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `composition[0].concentration` | KH2PO4 | {"unit": "G_PER_L", "value": "6"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/884 | {<br>                "recipe_order": 1,<br>                "compound": "KH2PO4",<br>                "compound_id": 11,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 0.6,<br>                "unit": "%",<br>                "g_l": 6,<br>                "mmol_l": 44.0901,<br>                "optional": 0<br>            } | $.data.recipe[0] (compound_id=11) | Unit or liquid/stock context requires source-specific review; no conversion guessed. | unchanged |
+| `composition[1].concentration` | (NH4)2SO4 | {"unit": "G_PER_L", "value": "20"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/884 | {<br>                "recipe_order": 2,<br>                "compound": "(NH4)2SO4",<br>                "compound_id": 27,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 2,<br>                "unit": "%",<br>                "g_l": 20,<br>                "mmol_l": 151.355,<br>                "optional": 0<br>            } | $.data.recipe[1] (compound_id=27) | Unit or liquid/stock context requires source-specific review; no conversion guessed. | unchanged |
+| `composition[2].concentration` | NaCl | {"unit": "G_PER_L", "value": "12"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/884 | {<br>                "recipe_order": 3,<br>                "compound": "NaCl",<br>                "compound_id": 43,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 1.2,<br>                "unit": "%",<br>                "g_l": 12,<br>                "mmol_l": 205.339,<br>                "optional": 0<br>            } | $.data.recipe[2] (compound_id=43) | Unit or liquid/stock context requires source-specific review; no conversion guessed. | unchanged |
+| `composition[3].concentration` | MgSO4 x 7 H2O | {"unit": "G_PER_L", "value": "2.5"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/884 | {<br>                "recipe_order": 4,<br>                "compound": "MgSO4 x 7 H2O",<br>                "compound_id": 8,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 0.25,<br>                "unit": "%",<br>                "g_l": 2.5,<br>                "mmol_l": 10.143,<br>                "optional": 0<br>            } | $.data.recipe[3] (compound_id=8) | Unit or liquid/stock context requires source-specific review; no conversion guessed. | unchanged |
+| `composition[4].concentration` | CaCl2 x 7 H2O | {"unit": "G_PER_L", "value": "1.6"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/884 | {<br>                "recipe_order": 5,<br>                "compound": "CaCl2 x 7 H2O",<br>                "compound_id": 479,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 0.16,<br>                "unit": "%",<br>                "g_l": 1.6,<br>                "mmol_l": 14.4166,<br>                "optional": 0<br>            } | $.data.recipe[4] (compound_id=479) | Unit or liquid/stock context requires source-specific review; no conversion guessed. | unchanged |
+| `ingredients[0].concentration` | See source for composition | {"unit": "VARIABLE", "value": "variable"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Outside direct composition matching; unchanged. | unchanged |
+
+## Ruminococcus Albus Source-Specific Follow-Up
+
+The source-specific formulation and stock-scope repair is applied locally. Complete old/new claims, exact supporting snippets and actual validation results are linked from the [applied follow-up](../../../20261009-ruminococcus-albus-family/applied-records/S884.md). This earlier report remains historical context.

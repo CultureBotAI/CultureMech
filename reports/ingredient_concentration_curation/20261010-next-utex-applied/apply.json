@@ -1,0 +1,123 @@
+{
+  "created_at": "2026-10-10T23:13:22.199652+00:00",
+  "terminal": true,
+  "passed": true,
+  "phase": "apply",
+  "checks": [],
+  "packet_sha256": "5c49fd5aee7c5432e0a7dc4b31e8789325e4c4c941309d5b832167e538e6aed6",
+  "sealed_prior_checkpoint_sha256": "c6a2213951401df06d96a3cbae10078a279b6459d4156511ddae941ec3f23918",
+  "code_sha256": {
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "4ccf128d4eed1664974b49d5706d7017d6873eca07b92b6257366cb395fd3040",
+    "scripts/review_utex_soil_seawater.py": "a3f3eb25142d4033ee9879c47bbf78b905b1a192d19e35fc956cc4d6ed55ee7c",
+    "tests/test_utex_soil_seawater.py": "371628e21ca8a510495c102fb8f0429fa0b66db8029c6117bf70203adc25cbc1",
+    "scripts/review_utex_organic_five.py": "5c2854b51ba1556205771ac1f1f8c567184d9b829db67d24e13903bd09eaf378",
+    "tests/test_utex_organic_five.py": "a6e7f3e3fa32377183a9f38fdf0c3fae7316d9c55e98b53a10ad641649c67aca",
+    "scripts/review_utex_six_blends.py": "e25ea38d771a89942452b7a1228c58cd0464d580c9fb9a03e575760fbba58436",
+    "tests/test_utex_six_blends.py": "008e7d2a8eb94f1ab25649799e12b336e3adb02bc8afa20b928e7f56b0f72243",
+    "src/culturemech/export/kgx_export.py": "eacbc2e7b363488cc1ed96e91737f54244dc1a2425dfa05c77ba89d0a5cd10e0",
+    "tests/test_kgx_nested_stocks.py": "f5f02d923202fffe7420e93711b74415bb5dce34231ed20b5e21441526892cda"
+  },
+  "inventory_before_sha256": "0a2927457b03118fbbc7e2a070e15dd5f2be63a0596c14f33adec609c4a77f08",
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "batches": [
+    {
+      "folder": "reports/ingredient_concentration_curation/20261010-utex-soil-seawater",
+      "applied": {
+        "changed": 7,
+        "pending": 0,
+        "already_applied": 0
+      },
+      "readback": {
+        "changed": 0,
+        "pending": 0,
+        "already_applied": 7
+      },
+      "repeat": {
+        "changed": 0,
+        "pending": 0,
+        "already_applied": 7
+      },
+      "plan_sha256": "b059b7e6261519d8d75850861642c8754f8c7bf77660c0edddd333834d890f21"
+    },
+    {
+      "folder": "reports/ingredient_concentration_curation/20261010-utex-organic-five",
+      "applied": {
+        "changed": 5,
+        "pending": 0,
+        "already_applied": 0
+      },
+      "readback": {
+        "changed": 0,
+        "pending": 0,
+        "already_applied": 5
+      },
+      "repeat": {
+        "changed": 0,
+        "pending": 0,
+        "already_applied": 5
+      },
+      "plan_sha256": "4b4da7bc71709744941911ccc43d7e12dcbd672ced445afbef516ea7a4d3359c"
+    },
+    {
+      "folder": "reports/ingredient_concentration_curation/20261010-utex-six-blends",
+      "applied": {
+        "changed": 6,
+        "pending": 0,
+        "already_applied": 0
+      },
+      "readback": {
+        "changed": 0,
+        "pending": 0,
+        "already_applied": 6
+      },
+      "repeat": {
+        "changed": 0,
+        "pending": 0,
+        "already_applied": 6
+      },
+      "plan_sha256": "eda02c7ee0fa9d435cfa83b5782cbed12db6dd47fe080cc13cca7ca521c0df71"
+    }
+  ],
+  "counts": {
+    "unsupported_quantity_slots_removed": 14,
+    "supplement_nodes_moved_to_variants": 5,
+    "inline_variant_options_added": 9,
+    "preparation_descriptions_corrected": 14,
+    "child_link_notes_corrected": 1,
+    "ingredient_context_notes_corrected": 23,
+    "new_evidence": 69,
+    "new_references": 1,
+    "bibliographic_entries_enriched": 20,
+    "new_curation_history": 18,
+    "ingredient_dose_basis_corrections": 12,
+    "recipe_context_notes_corrected": 1,
+    "parent_links_corrected": 1,
+    "variant_quantity_texts_corrected": 1,
+    "stock_context_notes_corrected": 4,
+    "ingredient_context_notes_added": 1,
+    "source_conflict_notes_added": 1
+  },
+  "changed_paths": [
+    "data/normalized_yaml/algae/1_2_Erdschreiber_Medium.yaml",
+    "data/normalized_yaml/algae/1_2_soil_seawater_medium.yaml",
+    "data/normalized_yaml/algae/1_3_soil_seawater_medium.yaml",
+    "data/normalized_yaml/algae/1_4_erdschreibers_medium.yaml",
+    "data/normalized_yaml/algae/1_4_soil_seawater_medium.yaml",
+    "data/normalized_yaml/algae/1_5_soil_seawater_medium.yaml",
+    "data/normalized_yaml/algae/20_allen_80_erdschreiber_1_4_medium.yaml",
+    "data/normalized_yaml/algae/2x_soil_seawater_medium.yaml",
+    "data/normalized_yaml/algae/5_3_soil_seawater_agar_medium.yaml",
+    "data/normalized_yaml/algae/Bold_1NV_Erdshreiber_1_1_Medium.yaml",
+    "data/normalized_yaml/algae/Bold_1NV_Erdshreiber_4_1_Medium.yaml",
+    "data/normalized_yaml/algae/Euglena_Medium.yaml",
+    "data/normalized_yaml/algae/Malt_Medium.yaml",
+    "data/normalized_yaml/algae/Ochromonas_Medium.yaml",
+    "data/normalized_yaml/algae/Polytomella_Medium.yaml",
+    "data/normalized_yaml/algae/Trebouxia_Medium.yaml",
+    "data/normalized_yaml/algae/soil_seawater_medium.yaml",
+    "data/normalized_yaml/algae/waris_soil_extract_medium.yaml"
+  ],
+  "inventory_after_sha256": "4d4a94316b71e9f878ef000220097820deed8d023f980a3327320cd0fb2244a7",
+  "normalized_inventory_unchanged": false
+}

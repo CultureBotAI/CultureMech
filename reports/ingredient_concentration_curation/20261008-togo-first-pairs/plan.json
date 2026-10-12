@@ -1,0 +1,1303 @@
+{
+  "version": 1,
+  "action": "CORRECTED_TOGO_JCM954_INPUT_VOLUMES_AND_STOCK_STRENGTH",
+  "context_sha256": "2add08d00b64bfa065f7a2a456e5c24111e8cfb4ffa22b66a1f27213ca170f92",
+  "commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+  "created_at": "2026-10-08T09:28:19.729810+00:00",
+  "records": [
+    {
+      "key": "M1001",
+      "path": "data/normalized_yaml/archaea/TOGO_M1001_Neutral_Oligotrophic_Haloarchaeal_Medium_NO.3.yaml",
+      "id": "CultureMech:007514",
+      "before_text": "id: CultureMech:007514\nname: neutral_oligotrophic_haloarchaeal_medium_no_3\noriginal_name: Neutral Oligotrophic Haloarchaeal Medium NO.3\ncategory: archaea\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\ningredients:\n- preferred_term: Distilled water\n  concentration:\n    value: '233'\n    unit: G_PER_L\n  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,\n    Simple component'\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n- preferred_term: Yeast extract\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  notes: 'Role: Nutrient source; Properties: Undefined component'\n- preferred_term: Sodium acetate\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'\n  term:\n    id: CHEBI:32954\n    label: sodium acetate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32954\n    label: sodium acetate\n- preferred_term: Sodium pyruvate\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic\n    compound'\n  term:\n    id: CHEBI:50144\n    label: sodium pyruvate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:50144\n    label: sodium pyruvate\n- preferred_term: Sodium lactate\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple\n    component'\n  term:\n    id: CHEBI:75228\n    label: sodium lactate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:75228\n    label: sodium lactate\n- preferred_term: Fish peptone (Fluka)\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: 'Role: Nutrient source; Properties: Undefined component'\n- preferred_term: Sodium formate\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: 'Properties: Defined component, Inorganic compound, Simple component'\n  term:\n    id: CHEBI:62965\n    label: sodium formate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:62965\n    label: sodium formate\nmedia_term:\n  preferred_term: TOGO Medium M1001\n  term:\n    id: TOGO:M1001\n    label: Neutral Oligotrophic Haloarchaeal Medium NO.3\nnotes: 'Source: https://togomedium.org/medium/M1001\n\n  Original source: JCM - JCM_M954\n\n  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954'\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-27T06:35:53.735201Z'\n  curator: togo-import\n  action: Imported from TOGO Medium\n  notes: 'Source: JCM, ID: M1001'\n- timestamp: '2026-01-28T19:48:09.997248Z'\n  curator: chebi-enrichment\n  action: Added CHEBI ontology terms to ingredients\n  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings\n- timestamp: '2026-03-09T08:04:16.275232+00:00'\n  curator: solution-migrator-v1.0\n  action: Migrated solutions from ingredients to solutions array\n  notes: Moved 3 solution(s) from ingredients\n- timestamp: '2026-03-13T06:19:49.319982Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:007514'\n- curator: schema-defaulter-v1.0\n  action: Applied schema defaults and normalizations\n  notes: Added default solution name; Added default solution name; Added default solution\n    name\n  timestamp: '2026-03-14T00:00:00+00:00'\n- timestamp: '2026-03-17T06:29:46.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:46:07.647625+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Neutral Oligotrophic Haloarchaeal Medium NO.3\" to \"neutral_oligotrophic_haloarchaeal_medium_no_3\"\n    for consistent matching\n- timestamp: '2026-05-16T09:03:06.790224+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1\n- timestamp: '2026-06-05T07:40:29.585802+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\nsolutions:\n- preferred_term: MDS salt water (see Medium [M578])\n  composition: []\n  notes: Cross-reference to Medium M578\n  concentration:\n    value: '767'\n    unit: G_PER_L\n  name: Unknown solution\n- preferred_term: 1 M NH4Cl solution*\n  composition: []\n  concentration:\n    value: '5'\n    unit: G_PER_L\n  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,\n    Solution'\n  name: Unknown solution\n- preferred_term: Potassium phosphate buffer (see Medium [M578])\n  composition: []\n  notes: Cross-reference to Medium M578\n  concentration:\n    value: '2'\n    unit: G_PER_L\n  name: Unknown solution\n",
+      "before_sha256": "a6d34f7e8554536f803139584b6df165b6ddb0fcf6ff03f9b52c4fb6fd85ba7e",
+      "target_class": "MediaRecipe",
+      "action": "CORRECTED_TOGO_JCM954_INPUT_VOLUMES_AND_STOCK_STRENGTH",
+      "after_text": "id: CultureMech:007514\nname: neutral_oligotrophic_haloarchaeal_medium_no_3\noriginal_name: Neutral Oligotrophic Haloarchaeal Medium NO.3\ncategory: archaea\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\ningredients:\n- preferred_term: Distilled water\n  concentration:\n    value: '0.233'\n    unit: L\n  notes: |-\n    Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component\n\n    Source batch input: 233 ml = 0.233 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made.\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n  evidence:\n  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001\n    supports: SUPPORT\n    snippet: |2-\n                \"component_name\": \"Distilled water\",\n                \"volume\": 233,\n                \"unit\": \"ml\",\n    explanation: 'ingredients[0].concentration (Distilled water): Source batch input:\n      233 ml = 0.233 L. This is an input volume, not g/L, ml/L, or a final-medium\n      volume. No density or final-volume assumption is made. Locator=$.components[0].items[0];\n      source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7;\n      accessed=2026-10-08T09:21:43.134345+00:00.'\n  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n    supports: SUPPORT\n    snippet: Distilled water 233.0 ml\n    explanation: 'ingredients[0].concentration (Distilled water): Source batch input:\n      233 ml = 0.233 L. This is an input volume, not g/L, ml/L, or a final-medium\n      volume. No density or final-volume assumption is made. Original-source locator=Recipe\n      table row: Distilled water. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;\n      accessed=2026-10-08T09:21:46.165737+00:00.'\n- preferred_term: Yeast extract\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  notes: |-\n    Role: Nutrient source; Properties: Undefined component\n\n    JCM954 specifies 1.0 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.\n  evidence:\n  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001\n    supports: SUPPORT\n    snippet: |2-\n                \"component_name\": \"Yeast extract\",\n                \"volume\": 1,\n                \"unit\": \"g\",\n    explanation: 'ingredients[1].concentration (Yeast extract): JCM954 specifies 1.0\n      g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Locator=$.components[0].items[1];\n      source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7;\n      accessed=2026-10-08T09:21:43.134345+00:00.'\n  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n    supports: SUPPORT\n    snippet: Yeast extract 1.0 g\n    explanation: 'ingredients[1].concentration (Yeast extract): JCM954 specifies 1.0\n      g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Original-source locator=Recipe\n      table row: Yeast extract. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;\n      accessed=2026-10-08T09:21:46.165737+00:00.'\n- preferred_term: Sodium acetate\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: |-\n    Role: Buffer; Properties: Organic compound, Simple component, Defined component\n\n    JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.\n  term:\n    id: CHEBI:32954\n    label: sodium acetate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32954\n    label: sodium acetate\n  evidence:\n  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001\n    supports: SUPPORT\n    snippet: |2-\n                \"component_name\": \"Sodium acetate\",\n                \"volume\": 0.25,\n                \"unit\": \"g\",\n    explanation: 'ingredients[2].concentration (Sodium acetate): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Locator=$.components[0].items[2];\n      source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7;\n      accessed=2026-10-08T09:21:43.134345+00:00.'\n  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n    supports: SUPPORT\n    snippet: Sodium acetate 0.25 g\n    explanation: 'ingredients[2].concentration (Sodium acetate): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Original-source locator=Recipe\n      table row: Sodium acetate. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;\n      accessed=2026-10-08T09:21:46.165737+00:00.'\n- preferred_term: Sodium pyruvate\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: |-\n    Role: Carbon source; Properties: Simple component, Defined component, Organic compound\n\n    JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.\n  term:\n    id: CHEBI:50144\n    label: sodium pyruvate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:50144\n    label: sodium pyruvate\n  evidence:\n  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001\n    supports: SUPPORT\n    snippet: |2-\n                \"component_name\": \"Sodium pyruvate\",\n                \"volume\": 0.25,\n                \"unit\": \"g\",\n    explanation: 'ingredients[3].concentration (Sodium pyruvate): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Locator=$.components[0].items[3];\n      source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7;\n      accessed=2026-10-08T09:21:43.134345+00:00.'\n  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n    supports: SUPPORT\n    snippet: Sodium pyruvate 0.25 g\n    explanation: 'ingredients[3].concentration (Sodium pyruvate): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Original-source locator=Recipe\n      table row: Sodium pyruvate. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;\n      accessed=2026-10-08T09:21:46.165737+00:00.'\n- preferred_term: Sodium lactate\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: |-\n    Role: Carbon source; Properties: Defined component, Organic compound, Simple component\n\n    JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.\n  term:\n    id: CHEBI:75228\n    label: sodium lactate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:75228\n    label: sodium lactate\n  evidence:\n  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001\n    supports: SUPPORT\n    snippet: |2-\n                \"component_name\": \"Sodium lactate\",\n                \"volume\": 0.25,\n                \"unit\": \"g\",\n    explanation: 'ingredients[4].concentration (Sodium lactate): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Locator=$.components[0].items[4];\n      source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7;\n      accessed=2026-10-08T09:21:43.134345+00:00.'\n  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n    supports: SUPPORT\n    snippet: Sodium lactate 0.25 g\n    explanation: 'ingredients[4].concentration (Sodium lactate): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Original-source locator=Recipe\n      table row: Sodium lactate. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;\n      accessed=2026-10-08T09:21:46.165737+00:00.'\n- preferred_term: Fish peptone (Fluka)\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: |-\n    Role: Nutrient source; Properties: Undefined component\n\n    JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.\n  evidence:\n  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001\n    supports: SUPPORT\n    snippet: |2-\n                \"component_name\": \"Fish peptone (Fluka)\",\n                \"volume\": 0.25,\n                \"unit\": \"g\",\n    explanation: 'ingredients[5].concentration (Fish peptone (Fluka)): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Locator=$.components[0].items[5];\n      source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7;\n      accessed=2026-10-08T09:21:43.134345+00:00.'\n  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n    supports: SUPPORT\n    snippet: Fish peptone (Fluka) 0.25 g\n    explanation: 'ingredients[5].concentration (Fish peptone (Fluka)): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Original-source locator=Recipe\n      table row: Fish peptone (Fluka). Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;\n      accessed=2026-10-08T09:21:46.165737+00:00.'\n- preferred_term: Sodium formate\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: |-\n    Properties: Defined component, Inorganic compound, Simple component\n\n    JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.\n  term:\n    id: CHEBI:62965\n    label: sodium formate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:62965\n    label: sodium formate\n  evidence:\n  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001\n    supports: SUPPORT\n    snippet: |2-\n                \"component_name\": \"Sodium formate\",\n                \"volume\": 0.25,\n                \"unit\": \"g\",\n    explanation: 'ingredients[6].concentration (Sodium formate): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Locator=$.components[0].items[6];\n      source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7;\n      accessed=2026-10-08T09:21:43.134345+00:00.'\n  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n    supports: SUPPORT\n    snippet: Sodium formate 0.25 g\n    explanation: 'ingredients[6].concentration (Sodium formate): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Original-source locator=Recipe\n      table row: Sodium formate. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;\n      accessed=2026-10-08T09:21:46.165737+00:00.'\nmedia_term:\n  preferred_term: TOGO Medium M1001\n  term:\n    id: TOGO:M1001\n    label: Neutral Oligotrophic Haloarchaeal Medium NO.3\nnotes: 'Source: https://togomedium.org/medium/M1001\n\n  Original source: JCM - JCM_M954\n\n  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954'\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-27T06:35:53.735201Z'\n  curator: togo-import\n  action: Imported from TOGO Medium\n  notes: 'Source: JCM, ID: M1001'\n- timestamp: '2026-01-28T19:48:09.997248Z'\n  curator: chebi-enrichment\n  action: Added CHEBI ontology terms to ingredients\n  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings\n- timestamp: '2026-03-09T08:04:16.275232+00:00'\n  curator: solution-migrator-v1.0\n  action: Migrated solutions from ingredients to solutions array\n  notes: Moved 3 solution(s) from ingredients\n- timestamp: '2026-03-13T06:19:49.319982Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:007514'\n- curator: schema-defaulter-v1.0\n  action: Applied schema defaults and normalizations\n  notes: Added default solution name; Added default solution name; Added default solution\n    name\n  timestamp: '2026-03-14T00:00:00+00:00'\n- timestamp: '2026-03-17T06:29:46.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:46:07.647625+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Neutral Oligotrophic Haloarchaeal Medium NO.3\" to \"neutral_oligotrophic_haloarchaeal_medium_no_3\"\n    for consistent matching\n- timestamp: '2026-05-16T09:03:06.790224+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1\n- timestamp: '2026-06-05T07:40:29.585802+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n- timestamp: '2026-10-08T09:28:19.729810+00:00'\n  curator: codex\n  action: CORRECTED_TOGO_JCM954_INPUT_VOLUMES_AND_STOCK_STRENGTH\n  notes: Source-pinned TOGO/JCM954 pair. Corrected four batch-volume units; added\n    explicit NH4Cl stock strength. Batch-mass notes do not validate retained G_PER_L\n    values. No inferred final volume, organism claims, chemical mappings, or historical\n    events changed.\n  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n  changes: 'ingredients[0].concentration: {''value'': ''233'', ''unit'': ''G_PER_L''}\n    -> {''value'': ''0.233'', ''unit'': ''L''} (corrected batch volume); ingredients[1].concentration:\n    {''value'': ''1'', ''unit'': ''G_PER_L''} -> {''value'': ''1'', ''unit'': ''G_PER_L''}\n    (added batch-mass note/evidence; concentration unchanged); ingredients[2].concentration:\n    {''value'': ''0.25'', ''unit'': ''G_PER_L''} -> {''value'': ''0.25'', ''unit'':\n    ''G_PER_L''} (added batch-mass note/evidence; concentration unchanged); ingredients[3].concentration:\n    {''value'': ''0.25'', ''unit'': ''G_PER_L''} -> {''value'': ''0.25'', ''unit'':\n    ''G_PER_L''} (added batch-mass note/evidence; concentration unchanged); ingredients[4].concentration:\n    {''value'': ''0.25'', ''unit'': ''G_PER_L''} -> {''value'': ''0.25'', ''unit'':\n    ''G_PER_L''} (added batch-mass note/evidence; concentration unchanged); ingredients[5].concentration:\n    {''value'': ''0.25'', ''unit'': ''G_PER_L''} -> {''value'': ''0.25'', ''unit'':\n    ''G_PER_L''} (added batch-mass note/evidence; concentration unchanged); ingredients[6].concentration:\n    {''value'': ''0.25'', ''unit'': ''G_PER_L''} -> {''value'': ''0.25'', ''unit'':\n    ''G_PER_L''} (added batch-mass note/evidence; concentration unchanged); solutions[0].concentration:\n    {''value'': ''767'', ''unit'': ''G_PER_L''} -> {''value'': ''0.767'', ''unit'':\n    ''L''} (corrected batch volume); solutions[1].concentration: {''value'': ''5'',\n    ''unit'': ''G_PER_L''} -> {''value'': ''0.005'', ''unit'': ''L''} (corrected batch\n    volume); solutions[2].concentration: {''value'': ''2'', ''unit'': ''G_PER_L''}\n    -> {''value'': ''0.002'', ''unit'': ''L''} (corrected batch volume); solutions[1].composition[0].concentration:\n    None -> {''value'': ''1'', ''unit'': ''MOLAR''} (added explicit stock composition\n    strength)'\nsolutions:\n- preferred_term: MDS salt water (see Medium [M578])\n  composition: []\n  notes: |-\n    Cross-reference to Medium M578\n\n    Source batch input: 767 ml = 0.767 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made.\n  concentration:\n    value: '0.767'\n    unit: L\n  name: Unknown solution\n- preferred_term: 1 M NH4Cl solution*\n  composition:\n  - preferred_term: NH4Cl\n    concentration:\n      value: '1'\n      unit: MOLAR\n    notes: Explicit 1 M NH4Cl stock strength, not its final-medium concentration.\n      The batch addition remains 5 ml; no final dilution is calculated.\n    evidence:\n    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001\n      supports: SUPPORT\n      snippet: |2-\n                  \"component_name\": \"1 M NH4Cl solution*\",\n                  \"volume\": 5,\n                  \"unit\": \"ml\",\n                  \"conc_value\": 1,\n                  \"conc_unit\": \"M\",\n      explanation: 'solutions[1].composition[0].concentration: Explicit 1 M NH4Cl\n        stock strength, not its final-medium concentration. The batch addition remains\n        5 ml; no final dilution is calculated. Locator=$.components[1].items[0]; original\n        JCM954 table 2 row 1.'\n    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n      supports: SUPPORT\n      snippet: 1 M NH4Cl solution* 5.0 ml\n      explanation: 'solutions[1].composition[0].concentration: Explicit 1 M NH4Cl\n        stock strength, not its final-medium concentration. The batch addition remains\n        5 ml; no final dilution is calculated. Locator=$.components[1].items[0]; original\n        JCM954 table 2 row 1.'\n  concentration:\n    value: '0.005'\n    unit: L\n  notes: |-\n    Role: Nitrogen source; Properties: Defined component, Inorganic compound, Solution\n\n    Source batch input: 5 ml = 0.005 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose.\n  name: Unknown solution\n- preferred_term: Potassium phosphate buffer (see Medium [M578])\n  composition: []\n  notes: |-\n    Cross-reference to Medium M578\n\n    Source batch input: 2 ml = 0.002 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose.\n  concentration:\n    value: '0.002'\n    unit: L\n  name: Unknown solution\nevidence:\n- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001\n  supports: SUPPORT\n  snippet: |2-\n              \"component_name\": \"MDS salt water (see Medium [M578])\",\n              \"volume\": 767,\n              \"unit\": \"ml\",\n  explanation: |-\n    solutions[0].concentration (MDS salt water (see Medium [M578])): Source batch input: 767 ml = 0.767 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Separate JCM954 preparation excerpt: \"Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.\". Locator=$.components[0].items[7]; source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7; accessed=2026-10-08T09:21:43.134345+00:00.\n\n    Additional exact excerpt:           \"component_name\": \"1 M NH4Cl solution*\",\n              \"volume\": 5,\n              \"unit\": \"ml\",\n    solutions[1].concentration (1 M NH4Cl solution*): Source batch input: 5 ml = 0.005 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose. Separate JCM954 preparation excerpt: \"Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.\". Locator=$.components[1].items[0]; source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7; accessed=2026-10-08T09:21:43.134345+00:00.\n\n    Additional exact excerpt:           \"component_name\": \"Potassium phosphate buffer (see Medium [M578])\",\n              \"volume\": 2,\n              \"unit\": \"ml\",\n    solutions[2].concentration (Potassium phosphate buffer (see Medium [M578])): Source batch input: 2 ml = 0.002 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose. Separate JCM954 preparation excerpt: \"Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.\". Locator=$.components[1].items[1]; source SHA256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7; accessed=2026-10-08T09:21:43.134345+00:00.\n- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n  supports: SUPPORT\n  snippet: MDS salt water (see Medium No. 574) 767.0 ml\n  explanation: |-\n    solutions[0].concentration (MDS salt water (see Medium [M578])): Source batch input: 767 ml = 0.767 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Separate JCM954 preparation excerpt: \"Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.\". Original-source locator=Recipe table row: MDS salt water (see Medium No. 574). Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971; accessed=2026-10-08T09:21:46.165737+00:00.\n\n    Additional exact excerpt: 1 M NH4Cl solution* 5.0 ml\n    solutions[1].concentration (1 M NH4Cl solution*): Source batch input: 5 ml = 0.005 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose. Separate JCM954 preparation excerpt: \"Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.\". Original-source locator=Recipe table row: 1 M NH4Cl solution*. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971; accessed=2026-10-08T09:21:46.165737+00:00.\n\n    Additional exact excerpt: Potassium phosphate buffer (see Medium No. 574) 2.0 ml\n    solutions[2].concentration (Potassium phosphate buffer (see Medium [M578])): Source batch input: 2 ml = 0.002 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose. Separate JCM954 preparation excerpt: \"Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.\". Original-source locator=Recipe table row: Potassium phosphate buffer (see Medium No. 574). Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971; accessed=2026-10-08T09:21:46.165737+00:00.\nreferences:\n- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001\n  title: Neutral Oligotrophic Haloarchaeal Medium NO.3\n  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;\n    accession=M1001; original_accession=JCM_M954; response_sha256=106eedca103eca454196c35494137b6835936de6747254fa4aab2ae0993002c7.\n    Authors and publication year not supplied.\n- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n  title: Medium data\n  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-08;\n    recipe=954 NEUTRAL OLIGOTROPHIC HALOARCHAEAL MEDIUM NO.3. Authors and publication\n    year not supplied; site copyright year is not a publication year.\n",
+      "after_sha256": "288db5419028b389db26baee08c4e8f517d17316202d26febcce25d9c2c6ab26",
+      "claims": [
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "Distilled water",
+          "old": {
+            "value": "233",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.233",
+            "unit": "L"
+          },
+          "status": "correct",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001",
+          "snippet": "          \"component_name\": \"Distilled water\",\n          \"volume\": 233,\n          \"unit\": \"ml\",",
+          "locator": "$.components[0].items[0]",
+          "explanation": "Source batch input: 233 ml = 0.233 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            0
+          ],
+          "action_taken": "corrected batch volume",
+          "primary_quote": "Distilled water 233.0 ml",
+          "primary_locator": "Recipe table row: Distilled water",
+          "evidence_pointer": [
+            "ingredients",
+            0
+          ]
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1
+          ],
+          "field": "ingredients[1].concentration",
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001",
+          "snippet": "          \"component_name\": \"Yeast extract\",\n          \"volume\": 1,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[1]",
+          "explanation": "JCM954 specifies 1.0 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            1
+          ],
+          "action_taken": "added batch-mass note/evidence; concentration unchanged",
+          "primary_quote": "Yeast extract 1.0 g",
+          "primary_locator": "Recipe table row: Yeast extract",
+          "evidence_pointer": [
+            "ingredients",
+            1
+          ]
+        },
+        {
+          "pointer": [
+            "ingredients",
+            2
+          ],
+          "field": "ingredients[2].concentration",
+          "ingredient": "Sodium acetate",
+          "old": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001",
+          "snippet": "          \"component_name\": \"Sodium acetate\",\n          \"volume\": 0.25,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[2]",
+          "explanation": "JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            2
+          ],
+          "action_taken": "added batch-mass note/evidence; concentration unchanged",
+          "primary_quote": "Sodium acetate 0.25 g",
+          "primary_locator": "Recipe table row: Sodium acetate",
+          "evidence_pointer": [
+            "ingredients",
+            2
+          ]
+        },
+        {
+          "pointer": [
+            "ingredients",
+            3
+          ],
+          "field": "ingredients[3].concentration",
+          "ingredient": "Sodium pyruvate",
+          "old": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001",
+          "snippet": "          \"component_name\": \"Sodium pyruvate\",\n          \"volume\": 0.25,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[3]",
+          "explanation": "JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            3
+          ],
+          "action_taken": "added batch-mass note/evidence; concentration unchanged",
+          "primary_quote": "Sodium pyruvate 0.25 g",
+          "primary_locator": "Recipe table row: Sodium pyruvate",
+          "evidence_pointer": [
+            "ingredients",
+            3
+          ]
+        },
+        {
+          "pointer": [
+            "ingredients",
+            4
+          ],
+          "field": "ingredients[4].concentration",
+          "ingredient": "Sodium lactate",
+          "old": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001",
+          "snippet": "          \"component_name\": \"Sodium lactate\",\n          \"volume\": 0.25,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[4]",
+          "explanation": "JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            4
+          ],
+          "action_taken": "added batch-mass note/evidence; concentration unchanged",
+          "primary_quote": "Sodium lactate 0.25 g",
+          "primary_locator": "Recipe table row: Sodium lactate",
+          "evidence_pointer": [
+            "ingredients",
+            4
+          ]
+        },
+        {
+          "pointer": [
+            "ingredients",
+            5
+          ],
+          "field": "ingredients[5].concentration",
+          "ingredient": "Fish peptone (Fluka)",
+          "old": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001",
+          "snippet": "          \"component_name\": \"Fish peptone (Fluka)\",\n          \"volume\": 0.25,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[5]",
+          "explanation": "JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            5
+          ],
+          "action_taken": "added batch-mass note/evidence; concentration unchanged",
+          "primary_quote": "Fish peptone (Fluka) 0.25 g",
+          "primary_locator": "Recipe table row: Fish peptone (Fluka)",
+          "evidence_pointer": [
+            "ingredients",
+            5
+          ]
+        },
+        {
+          "pointer": [
+            "ingredients",
+            6
+          ],
+          "field": "ingredients[6].concentration",
+          "ingredient": "Sodium formate",
+          "old": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001",
+          "snippet": "          \"component_name\": \"Sodium formate\",\n          \"volume\": 0.25,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[6]",
+          "explanation": "JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            6
+          ],
+          "action_taken": "added batch-mass note/evidence; concentration unchanged",
+          "primary_quote": "Sodium formate 0.25 g",
+          "primary_locator": "Recipe table row: Sodium formate",
+          "evidence_pointer": [
+            "ingredients",
+            6
+          ]
+        },
+        {
+          "pointer": [
+            "solutions",
+            0
+          ],
+          "field": "solutions[0].concentration",
+          "ingredient": "MDS salt water (see Medium [M578])",
+          "old": {
+            "value": "767",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.767",
+            "unit": "L"
+          },
+          "status": "correct",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001",
+          "snippet": "          \"component_name\": \"MDS salt water (see Medium [M578])\",\n          \"volume\": 767,\n          \"unit\": \"ml\",",
+          "locator": "$.components[0].items[7]",
+          "explanation": "Source batch input: 767 ml = 0.767 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            7
+          ],
+          "action_taken": "corrected batch volume",
+          "primary_quote": "MDS salt water (see Medium No. 574) 767.0 ml",
+          "primary_locator": "Recipe table row: MDS salt water (see Medium No. 574)",
+          "evidence_pointer": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            1
+          ],
+          "field": "solutions[1].concentration",
+          "ingredient": "1 M NH4Cl solution*",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.005",
+            "unit": "L"
+          },
+          "status": "correct",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001",
+          "snippet": "          \"component_name\": \"1 M NH4Cl solution*\",\n          \"volume\": 5,\n          \"unit\": \"ml\",",
+          "locator": "$.components[1].items[0]",
+          "explanation": "Source batch input: 5 ml = 0.005 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose.",
+          "source_pointer": [
+            "components",
+            1,
+            "items",
+            0
+          ],
+          "action_taken": "corrected batch volume",
+          "primary_quote": "1 M NH4Cl solution* 5.0 ml",
+          "primary_locator": "Recipe table row: 1 M NH4Cl solution*",
+          "evidence_pointer": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            2
+          ],
+          "field": "solutions[2].concentration",
+          "ingredient": "Potassium phosphate buffer (see Medium [M578])",
+          "old": {
+            "value": "2",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.002",
+            "unit": "L"
+          },
+          "status": "correct",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001",
+          "snippet": "          \"component_name\": \"Potassium phosphate buffer (see Medium [M578])\",\n          \"volume\": 2,\n          \"unit\": \"ml\",",
+          "locator": "$.components[1].items[1]",
+          "explanation": "Source batch input: 2 ml = 0.002 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose.",
+          "source_pointer": [
+            "components",
+            1,
+            "items",
+            1
+          ],
+          "action_taken": "corrected batch volume",
+          "primary_quote": "Potassium phosphate buffer (see Medium No. 574) 2.0 ml",
+          "primary_locator": "Recipe table row: Potassium phosphate buffer (see Medium No. 574)",
+          "evidence_pointer": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            0
+          ],
+          "field": "solutions[1].composition[0].concentration",
+          "ingredient": "NH4Cl",
+          "old": null,
+          "new": {
+            "value": "1",
+            "unit": "MOLAR"
+          },
+          "status": "add",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1001",
+          "snippet": "          \"component_name\": \"1 M NH4Cl solution*\",\n          \"volume\": 5,\n          \"unit\": \"ml\",\n          \"conc_value\": 1,\n          \"conc_unit\": \"M\",",
+          "source_pointer": [
+            "components",
+            1,
+            "items",
+            0
+          ],
+          "locator": "$.components[1].items[0]",
+          "primary_quote": "1 M NH4Cl solution* 5.0 ml",
+          "primary_locator": "Recipe table 2 row 1",
+          "explanation": "Explicit 1 M NH4Cl stock strength, not its final-medium concentration. The batch addition remains 5 ml; no final dilution is calculated.",
+          "evidence_pointer": [
+            "solutions",
+            1,
+            "composition",
+            0
+          ],
+          "action_taken": "added explicit stock composition strength"
+        }
+      ]
+    },
+    {
+      "key": "M1002",
+      "path": "data/normalized_yaml/archaea/TOGO_M1002_Neutral_Oligotrophic_Haloarchaeal_Medium_NO.3.yaml",
+      "id": "CultureMech:007515",
+      "before_text": "id: CultureMech:007515\nname: neutral_oligotrophic_haloarchaeal_medium_no_3\noriginal_name: Neutral Oligotrophic Haloarchaeal Medium NO.3\ncategory: archaea\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: SOLID_AGAR\ningredients:\n- preferred_term: Distilled water\n  concentration:\n    value: '233'\n    unit: G_PER_L\n  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,\n    Simple component'\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n- preferred_term: Yeast extract\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  notes: 'Role: Nutrient source; Properties: Undefined component'\n- preferred_term: Sodium acetate\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'\n  term:\n    id: CHEBI:32954\n    label: sodium acetate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32954\n    label: sodium acetate\n- preferred_term: Sodium pyruvate\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic\n    compound'\n  term:\n    id: CHEBI:50144\n    label: sodium pyruvate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:50144\n    label: sodium pyruvate\n- preferred_term: Sodium lactate\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple\n    component'\n  term:\n    id: CHEBI:75228\n    label: sodium lactate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:75228\n    label: sodium lactate\n- preferred_term: Fish peptone (Fluka)\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: 'Role: Nutrient source; Properties: Undefined component'\n- preferred_term: agar\n  concentration:\n    value: '20'\n    unit: G_PER_L\n  notes: 'Role: Solidifying component'\n  term:\n    id: CHEBI:2509\n    label: agar\n  mediaingredientmech_chebi_term:\n    id: CHEBI:2509\n    label: agar\n- preferred_term: Sodium formate\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: 'Properties: Defined component, Inorganic compound, Simple component'\n  term:\n    id: CHEBI:62965\n    label: sodium formate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:62965\n    label: sodium formate\nmedia_term:\n  preferred_term: TOGO Medium M1002\n  term:\n    id: TOGO:M1002\n    label: Neutral Oligotrophic Haloarchaeal Medium NO.3\nnotes: 'Source: https://togomedium.org/medium/M1002\n\n  Original source: JCM - JCM_M954-2\n\n  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954'\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-27T06:35:53.736805Z'\n  curator: togo-import\n  action: Imported from TOGO Medium\n  notes: 'Source: JCM, ID: M1002'\n- timestamp: '2026-01-28T19:48:14.991783Z'\n  curator: chebi-enrichment\n  action: Added CHEBI ontology terms to ingredients\n  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings\n- timestamp: '2026-03-09T08:04:24.917318+00:00'\n  curator: solution-migrator-v1.0\n  action: Migrated solutions from ingredients to solutions array\n  notes: Moved 3 solution(s) from ingredients\n- timestamp: '2026-03-13T06:19:49.326452Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:007515'\n- curator: schema-defaulter-v1.0\n  action: Applied schema defaults and normalizations\n  notes: Added default solution name; Added default solution name; Added default solution\n    name\n  timestamp: '2026-03-14T00:00:00+00:00'\n- timestamp: '2026-03-17T06:29:57.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:46:07.655350+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Neutral Oligotrophic Haloarchaeal Medium NO.3\" to \"neutral_oligotrophic_haloarchaeal_medium_no_3\"\n    for consistent matching\n- timestamp: '2026-05-16T09:03:06.797672+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1\n- timestamp: '2026-06-05T07:40:29.593631+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\nsolutions:\n- preferred_term: MDS salt water (see Medium [M578])\n  composition: []\n  notes: Cross-reference to Medium M578\n  concentration:\n    value: '767'\n    unit: G_PER_L\n  name: Unknown solution\n- preferred_term: 1 M NH4Cl solution*\n  composition: []\n  concentration:\n    value: '5'\n    unit: G_PER_L\n  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,\n    Solution'\n  name: Unknown solution\n- preferred_term: Potassium phosphate buffer (see Medium [M578])\n  composition: []\n  notes: Cross-reference to Medium M578\n  concentration:\n    value: '2'\n    unit: G_PER_L\n  name: Unknown solution\n",
+      "before_sha256": "d7f9615582d43796d487fb4ab012798e3c38a125bd1c55acdc6c204395570f39",
+      "target_class": "MediaRecipe",
+      "action": "CORRECTED_TOGO_JCM954_INPUT_VOLUMES_AND_STOCK_STRENGTH",
+      "after_text": "id: CultureMech:007515\nname: neutral_oligotrophic_haloarchaeal_medium_no_3\noriginal_name: Neutral Oligotrophic Haloarchaeal Medium NO.3\ncategory: archaea\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: SOLID_AGAR\ningredients:\n- preferred_term: Distilled water\n  concentration:\n    value: '0.233'\n    unit: L\n  notes: |-\n    Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component\n\n    Source batch input: 233 ml = 0.233 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made.\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n  evidence:\n  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002\n    supports: SUPPORT\n    snippet: |2-\n                \"component_name\": \"Distilled water\",\n                \"volume\": 233,\n                \"unit\": \"ml\",\n    explanation: 'ingredients[0].concentration (Distilled water): Source batch input:\n      233 ml = 0.233 L. This is an input volume, not g/L, ml/L, or a final-medium\n      volume. No density or final-volume assumption is made. Locator=$.components[0].items[0];\n      source SHA256=e6700e480acaffa3904d1494c607b705beb2d1eaeed7d04235d9b0379075f36c;\n      accessed=2026-10-08T09:21:43.847756+00:00.'\n  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n    supports: SUPPORT\n    snippet: Distilled water 233.0 ml\n    explanation: 'ingredients[0].concentration (Distilled water): Source batch input:\n      233 ml = 0.233 L. This is an input volume, not g/L, ml/L, or a final-medium\n      volume. No density or final-volume assumption is made. Original-source locator=Recipe\n      table row: Distilled water. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;\n      accessed=2026-10-08T09:21:46.165737+00:00.'\n- preferred_term: Yeast extract\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  notes: |-\n    Role: Nutrient source; Properties: Undefined component\n\n    JCM954 specifies 1.0 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.\n  evidence:\n  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002\n    supports: SUPPORT\n    snippet: |2-\n                \"component_name\": \"Yeast extract\",\n                \"volume\": 1,\n                \"unit\": \"g\",\n    explanation: 'ingredients[1].concentration (Yeast extract): JCM954 specifies 1.0\n      g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Locator=$.components[0].items[1];\n      source SHA256=e6700e480acaffa3904d1494c607b705beb2d1eaeed7d04235d9b0379075f36c;\n      accessed=2026-10-08T09:21:43.847756+00:00.'\n  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n    supports: SUPPORT\n    snippet: Yeast extract 1.0 g\n    explanation: 'ingredients[1].concentration (Yeast extract): JCM954 specifies 1.0\n      g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Original-source locator=Recipe\n      table row: Yeast extract. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;\n      accessed=2026-10-08T09:21:46.165737+00:00.'\n- preferred_term: Sodium acetate\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: |-\n    Role: Buffer; Properties: Organic compound, Simple component, Defined component\n\n    JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.\n  term:\n    id: CHEBI:32954\n    label: sodium acetate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32954\n    label: sodium acetate\n  evidence:\n  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002\n    supports: SUPPORT\n    snippet: |2-\n                \"component_name\": \"Sodium acetate\",\n                \"volume\": 0.25,\n                \"unit\": \"g\",\n    explanation: 'ingredients[2].concentration (Sodium acetate): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Locator=$.components[0].items[2];\n      source SHA256=e6700e480acaffa3904d1494c607b705beb2d1eaeed7d04235d9b0379075f36c;\n      accessed=2026-10-08T09:21:43.847756+00:00.'\n  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n    supports: SUPPORT\n    snippet: Sodium acetate 0.25 g\n    explanation: 'ingredients[2].concentration (Sodium acetate): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Original-source locator=Recipe\n      table row: Sodium acetate. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;\n      accessed=2026-10-08T09:21:46.165737+00:00.'\n- preferred_term: Sodium pyruvate\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: |-\n    Role: Carbon source; Properties: Simple component, Defined component, Organic compound\n\n    JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.\n  term:\n    id: CHEBI:50144\n    label: sodium pyruvate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:50144\n    label: sodium pyruvate\n  evidence:\n  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002\n    supports: SUPPORT\n    snippet: |2-\n                \"component_name\": \"Sodium pyruvate\",\n                \"volume\": 0.25,\n                \"unit\": \"g\",\n    explanation: 'ingredients[3].concentration (Sodium pyruvate): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Locator=$.components[0].items[3];\n      source SHA256=e6700e480acaffa3904d1494c607b705beb2d1eaeed7d04235d9b0379075f36c;\n      accessed=2026-10-08T09:21:43.847756+00:00.'\n  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n    supports: SUPPORT\n    snippet: Sodium pyruvate 0.25 g\n    explanation: 'ingredients[3].concentration (Sodium pyruvate): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Original-source locator=Recipe\n      table row: Sodium pyruvate. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;\n      accessed=2026-10-08T09:21:46.165737+00:00.'\n- preferred_term: Sodium lactate\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: |-\n    Role: Carbon source; Properties: Defined component, Organic compound, Simple component\n\n    JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.\n  term:\n    id: CHEBI:75228\n    label: sodium lactate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:75228\n    label: sodium lactate\n  evidence:\n  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002\n    supports: SUPPORT\n    snippet: |2-\n                \"component_name\": \"Sodium lactate\",\n                \"volume\": 0.25,\n                \"unit\": \"g\",\n    explanation: 'ingredients[4].concentration (Sodium lactate): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Locator=$.components[0].items[4];\n      source SHA256=e6700e480acaffa3904d1494c607b705beb2d1eaeed7d04235d9b0379075f36c;\n      accessed=2026-10-08T09:21:43.847756+00:00.'\n  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n    supports: SUPPORT\n    snippet: Sodium lactate 0.25 g\n    explanation: 'ingredients[4].concentration (Sodium lactate): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Original-source locator=Recipe\n      table row: Sodium lactate. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;\n      accessed=2026-10-08T09:21:46.165737+00:00.'\n- preferred_term: Fish peptone (Fluka)\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: |-\n    Role: Nutrient source; Properties: Undefined component\n\n    JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.\n  evidence:\n  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002\n    supports: SUPPORT\n    snippet: |2-\n                \"component_name\": \"Fish peptone (Fluka)\",\n                \"volume\": 0.25,\n                \"unit\": \"g\",\n    explanation: 'ingredients[5].concentration (Fish peptone (Fluka)): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Locator=$.components[0].items[5];\n      source SHA256=e6700e480acaffa3904d1494c607b705beb2d1eaeed7d04235d9b0379075f36c;\n      accessed=2026-10-08T09:21:43.847756+00:00.'\n  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n    supports: SUPPORT\n    snippet: Fish peptone (Fluka) 0.25 g\n    explanation: 'ingredients[5].concentration (Fish peptone (Fluka)): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Original-source locator=Recipe\n      table row: Fish peptone (Fluka). Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;\n      accessed=2026-10-08T09:21:46.165737+00:00.'\n- preferred_term: agar\n  concentration:\n    value: '20'\n    unit: G_PER_L\n  notes: |-\n    Role: Solidifying component\n\n    JCM954 explicitly specifies 20.0 g/L agar for the solid-medium preparation only.\n  term:\n    id: CHEBI:2509\n    label: agar\n  mediaingredientmech_chebi_term:\n    id: CHEBI:2509\n    label: agar\n  evidence:\n  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002\n    supports: SUPPORT\n    snippet: |2-\n                \"component_name\": \"agar\",\n                \"volume\": 20,\n                \"unit\": \"g/L\",\n    explanation: 'ingredients[6].concentration (agar): JCM954 explicitly specifies\n      20.0 g/L agar for the solid-medium preparation only. Locator=$.components[0].items[6];\n      source SHA256=e6700e480acaffa3904d1494c607b705beb2d1eaeed7d04235d9b0379075f36c;\n      accessed=2026-10-08T09:21:43.847756+00:00.'\n  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n    supports: SUPPORT\n    snippet: For preparation of solid medium, add 20.0 g/L agar.\n    explanation: 'ingredients[6].concentration (agar): JCM954 explicitly specifies\n      20.0 g/L agar for the solid-medium preparation only. Original-source locator=Preparation\n      paragraph after table 1. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;\n      accessed=2026-10-08T09:21:46.165737+00:00.'\n- preferred_term: Sodium formate\n  concentration:\n    value: '0.25'\n    unit: G_PER_L\n  notes: |-\n    Properties: Defined component, Inorganic compound, Simple component\n\n    JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.\n  term:\n    id: CHEBI:62965\n    label: sodium formate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:62965\n    label: sodium formate\n  evidence:\n  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002\n    supports: SUPPORT\n    snippet: |2-\n                \"component_name\": \"Sodium formate\",\n                \"volume\": 0.25,\n                \"unit\": \"g\",\n    explanation: 'ingredients[7].concentration (Sodium formate): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Locator=$.components[0].items[7];\n      source SHA256=e6700e480acaffa3904d1494c607b705beb2d1eaeed7d04235d9b0379075f36c;\n      accessed=2026-10-08T09:21:43.847756+00:00.'\n  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n    supports: SUPPORT\n    snippet: Sodium formate 0.25 g\n    explanation: 'ingredients[7].concentration (Sodium formate): JCM954 specifies\n      0.25 g per recipe batch for this component. The existing G_PER_L value is retained\n      but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave\n      additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final\n      make-up volume is specified. The evidence supports this batch-mass note only,\n      not the retained final-medium concentration. Original-source locator=Recipe\n      table row: Sodium formate. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971;\n      accessed=2026-10-08T09:21:46.165737+00:00.'\nmedia_term:\n  preferred_term: TOGO Medium M1002\n  term:\n    id: TOGO:M1002\n    label: Neutral Oligotrophic Haloarchaeal Medium NO.3\nnotes: 'Source: https://togomedium.org/medium/M1002\n\n  Original source: JCM - JCM_M954-2\n\n  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954'\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-27T06:35:53.736805Z'\n  curator: togo-import\n  action: Imported from TOGO Medium\n  notes: 'Source: JCM, ID: M1002'\n- timestamp: '2026-01-28T19:48:14.991783Z'\n  curator: chebi-enrichment\n  action: Added CHEBI ontology terms to ingredients\n  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings\n- timestamp: '2026-03-09T08:04:24.917318+00:00'\n  curator: solution-migrator-v1.0\n  action: Migrated solutions from ingredients to solutions array\n  notes: Moved 3 solution(s) from ingredients\n- timestamp: '2026-03-13T06:19:49.326452Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:007515'\n- curator: schema-defaulter-v1.0\n  action: Applied schema defaults and normalizations\n  notes: Added default solution name; Added default solution name; Added default solution\n    name\n  timestamp: '2026-03-14T00:00:00+00:00'\n- timestamp: '2026-03-17T06:29:57.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:46:07.655350+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Neutral Oligotrophic Haloarchaeal Medium NO.3\" to \"neutral_oligotrophic_haloarchaeal_medium_no_3\"\n    for consistent matching\n- timestamp: '2026-05-16T09:03:06.797672+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1\n- timestamp: '2026-06-05T07:40:29.593631+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n- timestamp: '2026-10-08T09:28:19.729810+00:00'\n  curator: codex\n  action: CORRECTED_TOGO_JCM954_INPUT_VOLUMES_AND_STOCK_STRENGTH\n  notes: Source-pinned TOGO/JCM954 pair. Corrected four batch-volume units; added\n    explicit NH4Cl stock strength. Batch-mass notes do not validate retained G_PER_L\n    values. No inferred final volume, organism claims, chemical mappings, or historical\n    events changed.\n  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n  changes: 'ingredients[0].concentration: {''value'': ''233'', ''unit'': ''G_PER_L''}\n    -> {''value'': ''0.233'', ''unit'': ''L''} (corrected batch volume); ingredients[1].concentration:\n    {''value'': ''1'', ''unit'': ''G_PER_L''} -> {''value'': ''1'', ''unit'': ''G_PER_L''}\n    (added batch-mass note/evidence; concentration unchanged); ingredients[2].concentration:\n    {''value'': ''0.25'', ''unit'': ''G_PER_L''} -> {''value'': ''0.25'', ''unit'':\n    ''G_PER_L''} (added batch-mass note/evidence; concentration unchanged); ingredients[3].concentration:\n    {''value'': ''0.25'', ''unit'': ''G_PER_L''} -> {''value'': ''0.25'', ''unit'':\n    ''G_PER_L''} (added batch-mass note/evidence; concentration unchanged); ingredients[4].concentration:\n    {''value'': ''0.25'', ''unit'': ''G_PER_L''} -> {''value'': ''0.25'', ''unit'':\n    ''G_PER_L''} (added batch-mass note/evidence; concentration unchanged); ingredients[5].concentration:\n    {''value'': ''0.25'', ''unit'': ''G_PER_L''} -> {''value'': ''0.25'', ''unit'':\n    ''G_PER_L''} (added batch-mass note/evidence; concentration unchanged); ingredients[6].concentration:\n    {''value'': ''20'', ''unit'': ''G_PER_L''} -> {''value'': ''20'', ''unit'': ''G_PER_L''}\n    (added concentration evidence); ingredients[7].concentration: {''value'': ''0.25'',\n    ''unit'': ''G_PER_L''} -> {''value'': ''0.25'', ''unit'': ''G_PER_L''} (added\n    batch-mass note/evidence; concentration unchanged); solutions[0].concentration:\n    {''value'': ''767'', ''unit'': ''G_PER_L''} -> {''value'': ''0.767'', ''unit'':\n    ''L''} (corrected batch volume); solutions[1].concentration: {''value'': ''5'',\n    ''unit'': ''G_PER_L''} -> {''value'': ''0.005'', ''unit'': ''L''} (corrected batch\n    volume); solutions[2].concentration: {''value'': ''2'', ''unit'': ''G_PER_L''}\n    -> {''value'': ''0.002'', ''unit'': ''L''} (corrected batch volume); solutions[1].composition[0].concentration:\n    None -> {''value'': ''1'', ''unit'': ''MOLAR''} (added explicit stock composition\n    strength)'\nsolutions:\n- preferred_term: MDS salt water (see Medium [M578])\n  composition: []\n  notes: |-\n    Cross-reference to Medium M578\n\n    Source batch input: 767 ml = 0.767 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made.\n  concentration:\n    value: '0.767'\n    unit: L\n  name: Unknown solution\n- preferred_term: 1 M NH4Cl solution*\n  composition:\n  - preferred_term: NH4Cl\n    concentration:\n      value: '1'\n      unit: MOLAR\n    notes: Explicit 1 M NH4Cl stock strength, not its final-medium concentration.\n      The batch addition remains 5 ml; no final dilution is calculated.\n    evidence:\n    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002\n      supports: SUPPORT\n      snippet: |2-\n                  \"component_name\": \"1 M NH4Cl solution*\",\n                  \"volume\": 5,\n                  \"unit\": \"ml\",\n                  \"conc_value\": 1,\n                  \"conc_unit\": \"M\",\n      explanation: 'solutions[1].composition[0].concentration: Explicit 1 M NH4Cl\n        stock strength, not its final-medium concentration. The batch addition remains\n        5 ml; no final dilution is calculated. Locator=$.components[1].items[0]; original\n        JCM954 table 2 row 1.'\n    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n      supports: SUPPORT\n      snippet: 1 M NH4Cl solution* 5.0 ml\n      explanation: 'solutions[1].composition[0].concentration: Explicit 1 M NH4Cl\n        stock strength, not its final-medium concentration. The batch addition remains\n        5 ml; no final dilution is calculated. Locator=$.components[1].items[0]; original\n        JCM954 table 2 row 1.'\n  concentration:\n    value: '0.005'\n    unit: L\n  notes: |-\n    Role: Nitrogen source; Properties: Defined component, Inorganic compound, Solution\n\n    Source batch input: 5 ml = 0.005 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose.\n  name: Unknown solution\n- preferred_term: Potassium phosphate buffer (see Medium [M578])\n  composition: []\n  notes: |-\n    Cross-reference to Medium M578\n\n    Source batch input: 2 ml = 0.002 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose.\n  concentration:\n    value: '0.002'\n    unit: L\n  name: Unknown solution\nevidence:\n- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002\n  supports: SUPPORT\n  snippet: |2-\n              \"component_name\": \"MDS salt water (see Medium [M578])\",\n              \"volume\": 767,\n              \"unit\": \"ml\",\n  explanation: |-\n    solutions[0].concentration (MDS salt water (see Medium [M578])): Source batch input: 767 ml = 0.767 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Separate JCM954 preparation excerpt: \"Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.\". Locator=$.components[0].items[8]; source SHA256=e6700e480acaffa3904d1494c607b705beb2d1eaeed7d04235d9b0379075f36c; accessed=2026-10-08T09:21:43.847756+00:00.\n\n    Additional exact excerpt:           \"component_name\": \"1 M NH4Cl solution*\",\n              \"volume\": 5,\n              \"unit\": \"ml\",\n    solutions[1].concentration (1 M NH4Cl solution*): Source batch input: 5 ml = 0.005 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose. Separate JCM954 preparation excerpt: \"Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.\". Locator=$.components[1].items[0]; source SHA256=e6700e480acaffa3904d1494c607b705beb2d1eaeed7d04235d9b0379075f36c; accessed=2026-10-08T09:21:43.847756+00:00.\n\n    Additional exact excerpt:           \"component_name\": \"Potassium phosphate buffer (see Medium [M578])\",\n              \"volume\": 2,\n              \"unit\": \"ml\",\n    solutions[2].concentration (Potassium phosphate buffer (see Medium [M578])): Source batch input: 2 ml = 0.002 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose. Separate JCM954 preparation excerpt: \"Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.\". Locator=$.components[1].items[1]; source SHA256=e6700e480acaffa3904d1494c607b705beb2d1eaeed7d04235d9b0379075f36c; accessed=2026-10-08T09:21:43.847756+00:00.\n- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n  supports: SUPPORT\n  snippet: MDS salt water (see Medium No. 574) 767.0 ml\n  explanation: |-\n    solutions[0].concentration (MDS salt water (see Medium [M578])): Source batch input: 767 ml = 0.767 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Separate JCM954 preparation excerpt: \"Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.\". Original-source locator=Recipe table row: MDS salt water (see Medium No. 574). Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971; accessed=2026-10-08T09:21:46.165737+00:00.\n\n    Additional exact excerpt: 1 M NH4Cl solution* 5.0 ml\n    solutions[1].concentration (1 M NH4Cl solution*): Source batch input: 5 ml = 0.005 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose. Separate JCM954 preparation excerpt: \"Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.\". Original-source locator=Recipe table row: 1 M NH4Cl solution*. Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971; accessed=2026-10-08T09:21:46.165737+00:00.\n\n    Additional exact excerpt: Potassium phosphate buffer (see Medium No. 574) 2.0 ml\n    solutions[2].concentration (Potassium phosphate buffer (see Medium [M578])): Source batch input: 2 ml = 0.002 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose. Separate JCM954 preparation excerpt: \"Autoclave and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.\". Original-source locator=Recipe table row: Potassium phosphate buffer (see Medium No. 574). Capture SHA256=f7665ac33e1c984081ebe595da1c4ab35ca8356aeaccd91a986ffc6d73dd6971; accessed=2026-10-08T09:21:46.165737+00:00.\nreferences:\n- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002\n  title: Neutral Oligotrophic Haloarchaeal Medium NO.3\n  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;\n    accession=M1002; original_accession=JCM_M954-2; response_sha256=e6700e480acaffa3904d1494c607b705beb2d1eaeed7d04235d9b0379075f36c.\n    Authors and publication year not supplied.\n- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954\n  title: Medium data\n  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-08;\n    recipe=954 NEUTRAL OLIGOTROPHIC HALOARCHAEAL MEDIUM NO.3. Authors and publication\n    year not supplied; site copyright year is not a publication year.\n",
+      "after_sha256": "f206c67571d2f63eb36fc2d5d95ab718841700f79b3599cd704077722c5745f1",
+      "claims": [
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "Distilled water",
+          "old": {
+            "value": "233",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.233",
+            "unit": "L"
+          },
+          "status": "correct",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002",
+          "snippet": "          \"component_name\": \"Distilled water\",\n          \"volume\": 233,\n          \"unit\": \"ml\",",
+          "locator": "$.components[0].items[0]",
+          "explanation": "Source batch input: 233 ml = 0.233 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            0
+          ],
+          "action_taken": "corrected batch volume",
+          "primary_quote": "Distilled water 233.0 ml",
+          "primary_locator": "Recipe table row: Distilled water",
+          "evidence_pointer": [
+            "ingredients",
+            0
+          ]
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1
+          ],
+          "field": "ingredients[1].concentration",
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002",
+          "snippet": "          \"component_name\": \"Yeast extract\",\n          \"volume\": 1,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[1]",
+          "explanation": "JCM954 specifies 1.0 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            1
+          ],
+          "action_taken": "added batch-mass note/evidence; concentration unchanged",
+          "primary_quote": "Yeast extract 1.0 g",
+          "primary_locator": "Recipe table row: Yeast extract",
+          "evidence_pointer": [
+            "ingredients",
+            1
+          ]
+        },
+        {
+          "pointer": [
+            "ingredients",
+            2
+          ],
+          "field": "ingredients[2].concentration",
+          "ingredient": "Sodium acetate",
+          "old": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002",
+          "snippet": "          \"component_name\": \"Sodium acetate\",\n          \"volume\": 0.25,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[2]",
+          "explanation": "JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            2
+          ],
+          "action_taken": "added batch-mass note/evidence; concentration unchanged",
+          "primary_quote": "Sodium acetate 0.25 g",
+          "primary_locator": "Recipe table row: Sodium acetate",
+          "evidence_pointer": [
+            "ingredients",
+            2
+          ]
+        },
+        {
+          "pointer": [
+            "ingredients",
+            3
+          ],
+          "field": "ingredients[3].concentration",
+          "ingredient": "Sodium pyruvate",
+          "old": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002",
+          "snippet": "          \"component_name\": \"Sodium pyruvate\",\n          \"volume\": 0.25,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[3]",
+          "explanation": "JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            3
+          ],
+          "action_taken": "added batch-mass note/evidence; concentration unchanged",
+          "primary_quote": "Sodium pyruvate 0.25 g",
+          "primary_locator": "Recipe table row: Sodium pyruvate",
+          "evidence_pointer": [
+            "ingredients",
+            3
+          ]
+        },
+        {
+          "pointer": [
+            "ingredients",
+            4
+          ],
+          "field": "ingredients[4].concentration",
+          "ingredient": "Sodium lactate",
+          "old": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002",
+          "snippet": "          \"component_name\": \"Sodium lactate\",\n          \"volume\": 0.25,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[4]",
+          "explanation": "JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            4
+          ],
+          "action_taken": "added batch-mass note/evidence; concentration unchanged",
+          "primary_quote": "Sodium lactate 0.25 g",
+          "primary_locator": "Recipe table row: Sodium lactate",
+          "evidence_pointer": [
+            "ingredients",
+            4
+          ]
+        },
+        {
+          "pointer": [
+            "ingredients",
+            5
+          ],
+          "field": "ingredients[5].concentration",
+          "ingredient": "Fish peptone (Fluka)",
+          "old": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002",
+          "snippet": "          \"component_name\": \"Fish peptone (Fluka)\",\n          \"volume\": 0.25,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[5]",
+          "explanation": "JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            5
+          ],
+          "action_taken": "added batch-mass note/evidence; concentration unchanged",
+          "primary_quote": "Fish peptone (Fluka) 0.25 g",
+          "primary_locator": "Recipe table row: Fish peptone (Fluka)",
+          "evidence_pointer": [
+            "ingredients",
+            5
+          ]
+        },
+        {
+          "pointer": [
+            "ingredients",
+            6
+          ],
+          "field": "ingredients[6].concentration",
+          "ingredient": "agar",
+          "old": {
+            "value": "20",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "20",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002",
+          "snippet": "          \"component_name\": \"agar\",\n          \"volume\": 20,\n          \"unit\": \"g/L\",",
+          "locator": "$.components[0].items[6]",
+          "explanation": "JCM954 explicitly specifies 20.0 g/L agar for the solid-medium preparation only.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            6
+          ],
+          "action_taken": "added concentration evidence",
+          "primary_quote": "For preparation of solid medium, add 20.0 g/L agar.",
+          "primary_locator": "Preparation paragraph after table 1",
+          "evidence_pointer": [
+            "ingredients",
+            6
+          ]
+        },
+        {
+          "pointer": [
+            "ingredients",
+            7
+          ],
+          "field": "ingredients[7].concentration",
+          "ingredient": "Sodium formate",
+          "old": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.25",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002",
+          "snippet": "          \"component_name\": \"Sodium formate\",\n          \"volume\": 0.25,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[7]",
+          "explanation": "JCM954 specifies 0.25 g per recipe batch for this component. The existing G_PER_L value is retained but remains unverified: 767 ml MDS salt water plus 233 ml water precede post-autoclave additions of 5 ml ammonium chloride stock and 2 ml phosphate buffer; no final make-up volume is specified. The evidence supports this batch-mass note only, not the retained final-medium concentration.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            7
+          ],
+          "action_taken": "added batch-mass note/evidence; concentration unchanged",
+          "primary_quote": "Sodium formate 0.25 g",
+          "primary_locator": "Recipe table row: Sodium formate",
+          "evidence_pointer": [
+            "ingredients",
+            7
+          ]
+        },
+        {
+          "pointer": [
+            "solutions",
+            0
+          ],
+          "field": "solutions[0].concentration",
+          "ingredient": "MDS salt water (see Medium [M578])",
+          "old": {
+            "value": "767",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.767",
+            "unit": "L"
+          },
+          "status": "correct",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002",
+          "snippet": "          \"component_name\": \"MDS salt water (see Medium [M578])\",\n          \"volume\": 767,\n          \"unit\": \"ml\",",
+          "locator": "$.components[0].items[8]",
+          "explanation": "Source batch input: 767 ml = 0.767 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            8
+          ],
+          "action_taken": "corrected batch volume",
+          "primary_quote": "MDS salt water (see Medium No. 574) 767.0 ml",
+          "primary_locator": "Recipe table row: MDS salt water (see Medium No. 574)",
+          "evidence_pointer": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            1
+          ],
+          "field": "solutions[1].concentration",
+          "ingredient": "1 M NH4Cl solution*",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.005",
+            "unit": "L"
+          },
+          "status": "correct",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002",
+          "snippet": "          \"component_name\": \"1 M NH4Cl solution*\",\n          \"volume\": 5,\n          \"unit\": \"ml\",",
+          "locator": "$.components[1].items[0]",
+          "explanation": "Source batch input: 5 ml = 0.005 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose.",
+          "source_pointer": [
+            "components",
+            1,
+            "items",
+            0
+          ],
+          "action_taken": "corrected batch volume",
+          "primary_quote": "1 M NH4Cl solution* 5.0 ml",
+          "primary_locator": "Recipe table row: 1 M NH4Cl solution*",
+          "evidence_pointer": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            2
+          ],
+          "field": "solutions[2].concentration",
+          "ingredient": "Potassium phosphate buffer (see Medium [M578])",
+          "old": {
+            "value": "2",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.002",
+            "unit": "L"
+          },
+          "status": "correct",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002",
+          "snippet": "          \"component_name\": \"Potassium phosphate buffer (see Medium [M578])\",\n          \"volume\": 2,\n          \"unit\": \"ml\",",
+          "locator": "$.components[1].items[1]",
+          "explanation": "Source batch input: 2 ml = 0.002 L. This is an input volume, not g/L, ml/L, or a final-medium volume. No density or final-volume assumption is made. Add after autoclaving and cooling; stock strength is distinct from dose.",
+          "source_pointer": [
+            "components",
+            1,
+            "items",
+            1
+          ],
+          "action_taken": "corrected batch volume",
+          "primary_quote": "Potassium phosphate buffer (see Medium No. 574) 2.0 ml",
+          "primary_locator": "Recipe table row: Potassium phosphate buffer (see Medium No. 574)",
+          "evidence_pointer": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            0
+          ],
+          "field": "solutions[1].composition[0].concentration",
+          "ingredient": "NH4Cl",
+          "old": null,
+          "new": {
+            "value": "1",
+            "unit": "MOLAR"
+          },
+          "status": "add",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1002",
+          "snippet": "          \"component_name\": \"1 M NH4Cl solution*\",\n          \"volume\": 5,\n          \"unit\": \"ml\",\n          \"conc_value\": 1,\n          \"conc_unit\": \"M\",",
+          "source_pointer": [
+            "components",
+            1,
+            "items",
+            0
+          ],
+          "locator": "$.components[1].items[0]",
+          "primary_quote": "1 M NH4Cl solution* 5.0 ml",
+          "primary_locator": "Recipe table 2 row 1",
+          "explanation": "Explicit 1 M NH4Cl stock strength, not its final-medium concentration. The batch addition remains 5 ml; no final dilution is calculated.",
+          "evidence_pointer": [
+            "solutions",
+            1,
+            "composition",
+            0
+          ],
+          "action_taken": "added explicit stock composition strength"
+        }
+      ]
+    },
+    {
+      "key": "M1023",
+      "path": "data/normalized_yaml/archaea/TOGO_M1023_Halorhabdus_Segorensis_Medium.yaml",
+      "id": "CultureMech:007537",
+      "before_text": "id: CultureMech:007537\nname: halorhabdus_segorensis_medium\noriginal_name: Halorhabdus Segorensis Medium\ncategory: archaea\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\ningredients:\n- preferred_term: Distilled water\n  concentration:\n    value: '1000'\n    unit: G_PER_L\n  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,\n    Simple component'\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n- preferred_term: NaCl\n  concentration:\n    value: '40.1'\n    unit: G_PER_L\n  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,\n    Simple component'\n  term:\n    id: CHEBI:26710\n    label: sodium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n- preferred_term: CaCl2\u30fb2H2O\n  concentration:\n    value: '29.4'\n    unit: G_PER_L\n  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,\n    Defined component'\n  term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n- preferred_term: MgCl2\u30fb6H2O\n  concentration:\n    value: '203'\n    unit: G_PER_L\n  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,\n    Simple component'\n  term:\n    id: CHEBI:86345\n    label: magnesium dichloride hexahydrate\n- preferred_term: KCl\n  concentration:\n    value: '7.5'\n    unit: G_PER_L\n  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic\n    compound'\n  term:\n    id: CHEBI:32588\n    label: potassium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32588\n    label: potassium chloride\n- preferred_term: Soluble starch\n  concentration:\n    value: '2'\n    unit: G_PER_L\n  notes: 'Role: Carbon source; Properties: Undefined component'\n  term:\n    id: CHEBI:28017\n    label: starch\n- preferred_term: Yeast extract (BD-Difco)\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  notes: 'Properties: Undefined component'\n- preferred_term: Casamino acids (BD-Difco)\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  notes: 'Properties: Undefined component'\nmedia_term:\n  preferred_term: TOGO Medium M1023\n  term:\n    id: TOGO:M1023\n    label: Halorhabdus Segorensis Medium\nnotes: 'Source: https://togomedium.org/medium/M1023\n\n  Original source: JCM - JCM_M973\n\n  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=973'\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-27T06:35:53.774395Z'\n  curator: togo-import\n  action: Imported from TOGO Medium\n  notes: 'Source: JCM, ID: M1023'\n- timestamp: '2026-01-28T19:48:38.530994Z'\n  curator: chebi-enrichment\n  action: Added CHEBI ontology terms to ingredients\n  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings\n- timestamp: '2026-03-13T06:19:49.483342Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:007537'\n- timestamp: '2026-03-17T06:30:47.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:46:07.825647+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Halorhabdus Segorensis Medium\" to \"halorhabdus_segorensis_medium\"\n    for consistent matching\n- timestamp: '2026-06-05T07:40:29.758388+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n",
+      "before_sha256": "9595b966ec95c1581dcc264a459e1950cc21f14dabc98ea8752e501eef667af7",
+      "target_class": "MediaRecipe",
+      "action": "CORRECTED_TOGO_JCM954_INPUT_VOLUMES_AND_STOCK_STRENGTH",
+      "after_text": "id: CultureMech:007537\nname: halorhabdus_segorensis_medium\noriginal_name: Halorhabdus Segorensis Medium\ncategory: archaea\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\ningredients:\n- preferred_term: Distilled water\n  concentration:\n    value: '1000'\n    unit: G_PER_L\n  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,\n    Simple component'\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n- preferred_term: NaCl\n  concentration:\n    value: '40.1'\n    unit: G_PER_L\n  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,\n    Simple component'\n  term:\n    id: CHEBI:26710\n    label: sodium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n- preferred_term: CaCl2\u30fb2H2O\n  concentration:\n    value: '29.4'\n    unit: G_PER_L\n  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,\n    Defined component'\n  term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n- preferred_term: MgCl2\u30fb6H2O\n  concentration:\n    value: '203'\n    unit: G_PER_L\n  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,\n    Simple component'\n  term:\n    id: CHEBI:86345\n    label: magnesium dichloride hexahydrate\n- preferred_term: KCl\n  concentration:\n    value: '7.5'\n    unit: G_PER_L\n  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic\n    compound'\n  term:\n    id: CHEBI:32588\n    label: potassium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32588\n    label: potassium chloride\n- preferred_term: Soluble starch\n  concentration:\n    value: '2'\n    unit: G_PER_L\n  notes: 'Role: Carbon source; Properties: Undefined component'\n  term:\n    id: CHEBI:28017\n    label: starch\n- preferred_term: Yeast extract (BD-Difco)\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  notes: 'Properties: Undefined component'\n- preferred_term: Casamino acids (BD-Difco)\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  notes: 'Properties: Undefined component'\nmedia_term:\n  preferred_term: TOGO Medium M1023\n  term:\n    id: TOGO:M1023\n    label: Halorhabdus Segorensis Medium\nnotes: 'Source: https://togomedium.org/medium/M1023\n\n  Original source: JCM - JCM_M973\n\n  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=973'\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-27T06:35:53.774395Z'\n  curator: togo-import\n  action: Imported from TOGO Medium\n  notes: 'Source: JCM, ID: M1023'\n- timestamp: '2026-01-28T19:48:38.530994Z'\n  curator: chebi-enrichment\n  action: Added CHEBI ontology terms to ingredients\n  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings\n- timestamp: '2026-03-13T06:19:49.483342Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:007537'\n- timestamp: '2026-03-17T06:30:47.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:46:07.825647+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Halorhabdus Segorensis Medium\" to \"halorhabdus_segorensis_medium\"\n    for consistent matching\n- timestamp: '2026-06-05T07:40:29.758388+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n",
+      "after_sha256": "9595b966ec95c1581dcc264a459e1950cc21f14dabc98ea8752e501eef667af7",
+      "claims": [
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "Distilled water",
+          "old": {
+            "value": "1000",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1000",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023",
+          "snippet": "          \"component_name\": \"Distilled water\",\n          \"volume\": 1000,\n          \"unit\": \"ml\",",
+          "locator": "$.components[0].items[0]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            0
+          ],
+          "action_taken": "unchanged"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1
+          ],
+          "field": "ingredients[1].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "40.1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "40.1",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023",
+          "snippet": "          \"component_name\": \"NaCl\",\n          \"volume\": 40.1,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[1]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            1
+          ],
+          "action_taken": "unchanged"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            2
+          ],
+          "field": "ingredients[2].concentration",
+          "ingredient": "CaCl2\u30fb2H2O",
+          "old": {
+            "value": "29.4",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "29.4",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023",
+          "snippet": "          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 29.4,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[2]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            2
+          ],
+          "action_taken": "unchanged"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            3
+          ],
+          "field": "ingredients[3].concentration",
+          "ingredient": "MgCl2\u30fb6H2O",
+          "old": {
+            "value": "203",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "203",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023",
+          "snippet": "          \"component_name\": \"MgCl2\u30fb6H2O\",\n          \"volume\": 203,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[3]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            3
+          ],
+          "action_taken": "unchanged"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            4
+          ],
+          "field": "ingredients[4].concentration",
+          "ingredient": "KCl",
+          "old": {
+            "value": "7.5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "7.5",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023",
+          "snippet": "          \"component_name\": \"KCl\",\n          \"volume\": 7.5,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[4]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            4
+          ],
+          "action_taken": "unchanged"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            5
+          ],
+          "field": "ingredients[5].concentration",
+          "ingredient": "Soluble starch",
+          "old": {
+            "value": "2",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "2",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023",
+          "snippet": "          \"component_name\": \"Soluble starch\",\n          \"volume\": 2,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[5]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            5
+          ],
+          "action_taken": "unchanged"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            6
+          ],
+          "field": "ingredients[6].concentration",
+          "ingredient": "Yeast extract (BD-Difco)",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023",
+          "snippet": "          \"component_name\": \"Yeast extract (BD-Difco)\",\n          \"volume\": 1,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[6]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            6
+          ],
+          "action_taken": "unchanged"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            7
+          ],
+          "field": "ingredients[7].concentration",
+          "ingredient": "Casamino acids (BD-Difco)",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1023",
+          "snippet": "          \"component_name\": \"Casamino acids (BD-Difco)\",\n          \"volume\": 1,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[7]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            7
+          ],
+          "action_taken": "unchanged"
+        }
+      ]
+    },
+    {
+      "key": "M1024",
+      "path": "data/normalized_yaml/archaea/TOGO_M1024_Halorhabdus_Segorensis_Medium.yaml",
+      "id": "CultureMech:007538",
+      "before_text": "id: CultureMech:007538\nname: halorhabdus_segorensis_medium\noriginal_name: Halorhabdus Segorensis Medium\ncategory: archaea\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: SOLID_AGAR\ningredients:\n- preferred_term: Distilled water\n  concentration:\n    value: '1000'\n    unit: G_PER_L\n  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,\n    Simple component'\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n- preferred_term: NaCl\n  concentration:\n    value: '40.1'\n    unit: G_PER_L\n  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,\n    Simple component'\n  term:\n    id: CHEBI:26710\n    label: sodium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n- preferred_term: CaCl2\u30fb2H2O\n  concentration:\n    value: '29.4'\n    unit: G_PER_L\n  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,\n    Defined component'\n  term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n- preferred_term: MgCl2\u30fb6H2O\n  concentration:\n    value: '203'\n    unit: G_PER_L\n  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,\n    Simple component'\n  term:\n    id: CHEBI:86345\n    label: magnesium dichloride hexahydrate\n- preferred_term: KCl\n  concentration:\n    value: '7.5'\n    unit: G_PER_L\n  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic\n    compound'\n  term:\n    id: CHEBI:32588\n    label: potassium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32588\n    label: potassium chloride\n- preferred_term: Soluble starch\n  concentration:\n    value: '2'\n    unit: G_PER_L\n  notes: 'Role: Carbon source; Properties: Undefined component'\n  term:\n    id: CHEBI:28017\n    label: starch\n- preferred_term: agar\n  concentration:\n    value: '20'\n    unit: G_PER_L\n  notes: 'Role: Solidifying component'\n  term:\n    id: CHEBI:2509\n    label: agar\n  mediaingredientmech_chebi_term:\n    id: CHEBI:2509\n    label: agar\n- preferred_term: Yeast extract (BD-Difco)\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  notes: 'Properties: Undefined component'\n- preferred_term: Casamino acids (BD-Difco)\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  notes: 'Properties: Undefined component'\nmedia_term:\n  preferred_term: TOGO Medium M1024\n  term:\n    id: TOGO:M1024\n    label: Halorhabdus Segorensis Medium\nnotes: 'Source: https://togomedium.org/medium/M1024\n\n  Original source: JCM - JCM_M973-2\n\n  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=973'\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-27T06:35:53.775645Z'\n  curator: togo-import\n  action: Imported from TOGO Medium\n  notes: 'Source: JCM, ID: M1024'\n- timestamp: '2026-01-28T19:48:30.034542Z'\n  curator: chebi-enrichment\n  action: Added CHEBI ontology terms to ingredients\n  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings\n- timestamp: '2026-03-13T06:19:49.488287Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:007538'\n- timestamp: '2026-03-17T06:30:29.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:46:07.831010+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Halorhabdus Segorensis Medium\" to \"halorhabdus_segorensis_medium\"\n    for consistent matching\n- timestamp: '2026-06-05T07:40:29.764213+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n",
+      "before_sha256": "834b1210c1a08b5f44f84fb0abe057b6135b69cebb2cf0fef30b785ad7eea90d",
+      "target_class": "MediaRecipe",
+      "action": "CORRECTED_TOGO_JCM954_INPUT_VOLUMES_AND_STOCK_STRENGTH",
+      "after_text": "id: CultureMech:007538\nname: halorhabdus_segorensis_medium\noriginal_name: Halorhabdus Segorensis Medium\ncategory: archaea\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: SOLID_AGAR\ningredients:\n- preferred_term: Distilled water\n  concentration:\n    value: '1000'\n    unit: G_PER_L\n  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,\n    Simple component'\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n- preferred_term: NaCl\n  concentration:\n    value: '40.1'\n    unit: G_PER_L\n  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,\n    Simple component'\n  term:\n    id: CHEBI:26710\n    label: sodium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n- preferred_term: CaCl2\u30fb2H2O\n  concentration:\n    value: '29.4'\n    unit: G_PER_L\n  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,\n    Defined component'\n  term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n- preferred_term: MgCl2\u30fb6H2O\n  concentration:\n    value: '203'\n    unit: G_PER_L\n  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,\n    Simple component'\n  term:\n    id: CHEBI:86345\n    label: magnesium dichloride hexahydrate\n- preferred_term: KCl\n  concentration:\n    value: '7.5'\n    unit: G_PER_L\n  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic\n    compound'\n  term:\n    id: CHEBI:32588\n    label: potassium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32588\n    label: potassium chloride\n- preferred_term: Soluble starch\n  concentration:\n    value: '2'\n    unit: G_PER_L\n  notes: 'Role: Carbon source; Properties: Undefined component'\n  term:\n    id: CHEBI:28017\n    label: starch\n- preferred_term: agar\n  concentration:\n    value: '20'\n    unit: G_PER_L\n  notes: 'Role: Solidifying component'\n  term:\n    id: CHEBI:2509\n    label: agar\n  mediaingredientmech_chebi_term:\n    id: CHEBI:2509\n    label: agar\n- preferred_term: Yeast extract (BD-Difco)\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  notes: 'Properties: Undefined component'\n- preferred_term: Casamino acids (BD-Difco)\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  notes: 'Properties: Undefined component'\nmedia_term:\n  preferred_term: TOGO Medium M1024\n  term:\n    id: TOGO:M1024\n    label: Halorhabdus Segorensis Medium\nnotes: 'Source: https://togomedium.org/medium/M1024\n\n  Original source: JCM - JCM_M973-2\n\n  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=973'\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-27T06:35:53.775645Z'\n  curator: togo-import\n  action: Imported from TOGO Medium\n  notes: 'Source: JCM, ID: M1024'\n- timestamp: '2026-01-28T19:48:30.034542Z'\n  curator: chebi-enrichment\n  action: Added CHEBI ontology terms to ingredients\n  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings\n- timestamp: '2026-03-13T06:19:49.488287Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:007538'\n- timestamp: '2026-03-17T06:30:29.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:46:07.831010+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Halorhabdus Segorensis Medium\" to \"halorhabdus_segorensis_medium\"\n    for consistent matching\n- timestamp: '2026-06-05T07:40:29.764213+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n",
+      "after_sha256": "834b1210c1a08b5f44f84fb0abe057b6135b69cebb2cf0fef30b785ad7eea90d",
+      "claims": [
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "Distilled water",
+          "old": {
+            "value": "1000",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1000",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1024",
+          "snippet": "          \"component_name\": \"Distilled water\",\n          \"volume\": 1000,\n          \"unit\": \"ml\",",
+          "locator": "$.components[0].items[0]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            0
+          ],
+          "action_taken": "unchanged"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1
+          ],
+          "field": "ingredients[1].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "40.1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "40.1",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1024",
+          "snippet": "          \"component_name\": \"NaCl\",\n          \"volume\": 40.1,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[1]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            1
+          ],
+          "action_taken": "unchanged"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            2
+          ],
+          "field": "ingredients[2].concentration",
+          "ingredient": "CaCl2\u30fb2H2O",
+          "old": {
+            "value": "29.4",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "29.4",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1024",
+          "snippet": "          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 29.4,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[2]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            2
+          ],
+          "action_taken": "unchanged"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            3
+          ],
+          "field": "ingredients[3].concentration",
+          "ingredient": "MgCl2\u30fb6H2O",
+          "old": {
+            "value": "203",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "203",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1024",
+          "snippet": "          \"component_name\": \"MgCl2\u30fb6H2O\",\n          \"volume\": 203,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[3]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            3
+          ],
+          "action_taken": "unchanged"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            4
+          ],
+          "field": "ingredients[4].concentration",
+          "ingredient": "KCl",
+          "old": {
+            "value": "7.5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "7.5",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1024",
+          "snippet": "          \"component_name\": \"KCl\",\n          \"volume\": 7.5,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[4]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            4
+          ],
+          "action_taken": "unchanged"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            5
+          ],
+          "field": "ingredients[5].concentration",
+          "ingredient": "Soluble starch",
+          "old": {
+            "value": "2",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "2",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1024",
+          "snippet": "          \"component_name\": \"Soluble starch\",\n          \"volume\": 2,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[5]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            5
+          ],
+          "action_taken": "unchanged"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            6
+          ],
+          "field": "ingredients[6].concentration",
+          "ingredient": "agar",
+          "old": {
+            "value": "20",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "20",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1024",
+          "snippet": "          \"component_name\": \"agar\",\n          \"volume\": 20,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[6]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            6
+          ],
+          "action_taken": "unchanged"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            7
+          ],
+          "field": "ingredients[7].concentration",
+          "ingredient": "Yeast extract (BD-Difco)",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1024",
+          "snippet": "          \"component_name\": \"Yeast extract (BD-Difco)\",\n          \"volume\": 1,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[7]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            7
+          ],
+          "action_taken": "unchanged"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            8
+          ],
+          "field": "ingredients[8].concentration",
+          "ingredient": "Casamino acids (BD-Difco)",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "status": "unsupported",
+          "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1024",
+          "snippet": "          \"component_name\": \"Casamino acids (BD-Difco)\",\n          \"volume\": 1,\n          \"unit\": \"g\",",
+          "locator": "$.components[0].items[8]",
+          "explanation": "Deferred: the original JCM973 page returns 'Nothing found.' TOGO's table is not a final-volume concentration: its preparation makes the magnesium solution up to 500 ml and dissolves the remaining components in 500 ml water, then autoclaves separately. Even agar is 20 g, not 20 g/L. The tabulated 1000 ml water does not establish an exact water input or final mixed volume. A preparation-aware repair and original-source recovery remain necessary. TOGO $.comments[0].comment: Dissolve MgCl2\u30fb6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine them after autoclaving.",
+          "source_pointer": [
+            "components",
+            0,
+            "items",
+            8
+          ],
+          "action_taken": "unchanged"
+        }
+      ]
+    }
+  ]
+}

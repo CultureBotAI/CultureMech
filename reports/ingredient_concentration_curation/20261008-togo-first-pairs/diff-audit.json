@@ -1,0 +1,14 @@
+{
+  "terminal": true,
+  "applied": true,
+  "records_reviewed": 4,
+  "records_changed": 2,
+  "counts": {
+    "new_evidence": 38,
+    "new_references": 4,
+    "new_curation_history": 2,
+    "quantity_corrections": 8,
+    "batch_mass_notes_unverified_concentrations": 12,
+    "new_quantity_slots": 2
+  }
+}

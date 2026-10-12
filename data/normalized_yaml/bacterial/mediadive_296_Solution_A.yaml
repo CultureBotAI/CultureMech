@@ -16,6 +16,33 @@ composition:
     label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/296
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "CaCl2 x 2 H2O",
+                      "compound_id": 7,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.04,
+                      "unit": "g",
+                      "g_l": 0.0420168,
+                      "mmol_l": 0.285799,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (CaCl2 x
+      2 H2O) in MediaDive solution 296; locator=$.data.recipe[0] (compound_id=7).
+      Provider explicitly reports g_l=0.0420168. Arithmetic check: 0.04 g * 1 g/g
+      / (952 ml / 1000 ml per L) = 0.04201680672268907563025210084 g/L, consistent
+      with the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      952. Retrieved 2026-10-07T08:22:18.348914+00:00; response SHA256=7b468a1ea6c492a22760540c1cf0aba18842b8cdffcba64076bfe3813525fb20.'
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.52521'
@@ -28,6 +55,33 @@ composition:
     label: magnesium sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/296
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "MgSO4 x 7 H2O",
+                      "compound_id": 8,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 0.52521,
+                      "mmol_l": 2.13088,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (MgSO4 x
+      7 H2O) in MediaDive solution 296; locator=$.data.recipe[1] (compound_id=8).
+      Provider explicitly reports g_l=0.52521. Arithmetic check: 0.5 g * 1 g/g / (952
+      ml / 1000 ml per L) = 0.5252100840336134453781512605 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 952. Retrieved 2026-10-07T08:22:18.348914+00:00;
+      response SHA256=7b468a1ea6c492a22760540c1cf0aba18842b8cdffcba64076bfe3813525fb20.'
 - preferred_term: Yeast extract
   concentration:
     value: '4.20168'
@@ -47,6 +101,33 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/296
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "D-Glucose",
+                      "compound_id": 211,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 4,
+                      "unit": "g",
+                      "g_l": 4.20168,
+                      "mmol_l": 23.3219,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (D-Glucose)
+      in MediaDive solution 296; locator=$.data.recipe[3] (compound_id=211). Provider
+      explicitly reports g_l=4.20168. Arithmetic check: 4 g * 1 g/g / (952 ml / 1000
+      ml per L) = 4.201680672268907563025210084 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 952. Retrieved 2026-10-07T08:22:18.348914+00:00;
+      response SHA256=7b468a1ea6c492a22760540c1cf0aba18842b8cdffcba64076bfe3813525fb20.'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -71,10 +152,37 @@ composition:
     label: L-cysteine hydrochloride hydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/296
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 8,
+                      "compound": "L-Cysteine HCl x H2O",
+                      "compound_id": 770,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 0.52521,
+                      "mmol_l": 2.99033,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (L-Cysteine
+      HCl x H2O) in MediaDive solution 296; locator=$.data.recipe[7] (compound_id=770).
+      Provider explicitly reports g_l=0.52521. Arithmetic check: 0.5 g * 1 g/g / (952
+      ml / 1000 ml per L) = 0.5252100840336134453781512605 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 952. Retrieved 2026-10-07T08:22:18.348914+00:00;
+      response SHA256=7b468a1ea6c492a22760540c1cf0aba18842b8cdffcba64076bfe3813525fb20.'
 - preferred_term: Distilled water
   concentration:
-    value: '997.8991596638656'
-    unit: PERCENT_V_V
+    value: '0.95'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -83,6 +191,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/296
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 9,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 950,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[6].concentration (Distilled
+      water) in MediaDive solution 296; locator=$.data.recipe[8] (compound_id=4).
+      Source water addition is 950 ml per prepared batch: 950 / 1000 = 0.95 L. No
+      source preparation step gives a competing make-up instruction. This is a batch
+      dose, not a volume percentage; no final-volume or solvent-density assumption
+      is made. Additional exact excerpt at $.data.volume: "volume": 952. Retrieved
+      2026-10-07T08:22:18.348914+00:00; response SHA256=7b468a1ea6c492a22760540c1cf0aba18842b8cdffcba64076bfe3813525fb20.'
 preparation_notes: 'Original volume: 952 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:24.518766Z'
@@ -122,6 +255,21 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T08:27:51.574555+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/296
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.0420168"}
+    -> {"unit": "G_PER_L", "value": "0.0420168"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.52521"} -> {"unit": "G_PER_L", "value": "0.52521"}
+    (evidence_only); composition[3].concentration: {"unit": "G_PER_L", "value": "4.20168"}
+    -> {"unit": "G_PER_L", "value": "4.20168"} (evidence_only); composition[5].concentration:
+    {"unit": "G_PER_L", "value": "0.52521"} -> {"unit": "G_PER_L", "value": "0.52521"}
+    (evidence_only); composition[6].concentration: {"unit": "PERCENT_V_V", "value":
+    "997.8991596638656"} -> {"unit": "L", "value": "0.95"} (correct)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -130,3 +278,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/296
+  title: 'MediaDive solution 296: Solution A'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=7b468a1ea6c492a22760540c1cf0aba18842b8cdffcba64076bfe3813525fb20;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

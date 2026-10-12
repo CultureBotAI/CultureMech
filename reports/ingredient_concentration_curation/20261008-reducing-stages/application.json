@@ -1,0 +1,96 @@
+{
+  "audit": {
+    "M225": {
+      "quantity_corrections": 1,
+      "unsupported_quantity_slots_removed": 17,
+      "stock_dose_basis_corrections": 2,
+      "new_quantity_slots": 2,
+      "stock_descriptors_added": 2,
+      "stock_nodes_relocated": 2,
+      "new_evidence": 89,
+      "new_references": 6,
+      "new_curation_history": 1,
+      "old_quantity_slots": 20,
+      "claims": 104,
+      "source_rows": 45
+    },
+    "M229": {
+      "quantity_corrections": 1,
+      "unsupported_quantity_slots_removed": 17,
+      "stock_dose_basis_corrections": 2,
+      "new_quantity_slots": 2,
+      "stock_nodes_relocated": 11,
+      "stock_descriptors_added": 1,
+      "new_evidence": 70,
+      "new_references": 4,
+      "new_curation_history": 1,
+      "old_quantity_slots": 20,
+      "claims": 84,
+      "source_rows": 36
+    },
+    "M234": {
+      "quantity_corrections": 1,
+      "unsupported_quantity_slots_removed": 18,
+      "stock_dose_basis_corrections": 2,
+      "new_quantity_slots": 2,
+      "stock_descriptors_added": 2,
+      "stock_nodes_relocated": 2,
+      "new_evidence": 91,
+      "new_references": 6,
+      "new_curation_history": 1,
+      "old_quantity_slots": 21,
+      "claims": 105,
+      "source_rows": 46
+    },
+    "M236": {
+      "quantity_corrections": 1,
+      "unsupported_quantity_slots_removed": 25,
+      "stock_nodes_relocated": 16,
+      "stock_dose_basis_corrections": 3,
+      "new_quantity_slots": 3,
+      "stock_descriptors_added": 1,
+      "new_evidence": 86,
+      "new_references": 4,
+      "new_curation_history": 1,
+      "old_quantity_slots": 29,
+      "claims": 108,
+      "source_rows": 45
+    },
+    "M243": {
+      "quantity_corrections": 1,
+      "unsupported_quantity_slots_removed": 18,
+      "stock_dose_basis_corrections": 4,
+      "new_quantity_slots": 4,
+      "stock_nodes_relocated": 8,
+      "stock_descriptors_added": 2,
+      "new_evidence": 95,
+      "new_references": 6,
+      "new_curation_history": 1,
+      "old_quantity_slots": 23,
+      "claims": 119,
+      "source_rows": 50
+    }
+  },
+  "terminal": true,
+  "application": {
+    "mode": "apply",
+    "records": 5,
+    "changed": 5,
+    "already_applied": 0,
+    "claims": 520
+  },
+  "verification": {
+    "mode": "verify",
+    "records": 5,
+    "changed": 0,
+    "already_applied": 5,
+    "claims": 520
+  },
+  "no_op_rerun": {
+    "mode": "apply",
+    "records": 5,
+    "changed": 0,
+    "already_applied": 5,
+    "claims": 520
+  }
+}

@@ -1,0 +1,469 @@
+{
+  "terminal": true,
+  "phase": "preview",
+  "plan_sha256": "c9611e131c0bc87eb0ffca52aa596859e29f5a66e3b2b39349ff961ffe4f7b78",
+  "preview_validation_sha256": "bdb37d465f8cc3b1b61050e73d95369c119590fa11f56041f7995bc3d8874c45",
+  "records": [
+    {
+      "key": "M1065",
+      "target": "data/normalized_yaml/archaea/TOGO_M1065_Modified_Halobacteria_Medium-3.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M1065.md",
+      "sha256": "fa4d41a362e67ea4b5046eca34383fabe34d8f691c0b352d05a5e72c40d10ebb",
+      "claims": 50,
+      "unchanged_parent_nodes": 0
+    },
+    {
+      "key": "M1212",
+      "target": "data/normalized_yaml/archaea/TOGO_M1212_Halobacteria_Medium_pH_8.0.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M1212.md",
+      "sha256": "065c28f868e925f14875dddd6f6a42bd98bd2e12dc9cc584e9ee56cd73ca0579",
+      "claims": 45,
+      "unchanged_parent_nodes": 0
+    },
+    {
+      "key": "M576",
+      "target": "data/normalized_yaml/archaea/TOGO_M576_Modified_Halobacteria_Medium.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M576.md",
+      "sha256": "93fa352aaedf667214fabcbeb106310ccb4638b78a28f2cba93498844996c876",
+      "claims": 55,
+      "unchanged_parent_nodes": 0
+    },
+    {
+      "key": "M959",
+      "target": "data/normalized_yaml/archaea/TOGO_M959_Halobacteria_Medium_With_15_NaCl.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M959.md",
+      "sha256": "4b19307483a1a2cdc9df287143ab83d0f1d84af85fbc49a4863db62d3656ac04",
+      "claims": 49,
+      "unchanged_parent_nodes": 0
+    },
+    {
+      "key": "M960",
+      "target": "data/normalized_yaml/archaea/TOGO_M960_Halobacteria_Medium_With_15_NaCl.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M960.md",
+      "sha256": "06eefcf0e64a9f081580a0a7a8a93bad1fb33a5b44eef49ef9f9e4f1fc97c0eb",
+      "claims": 53,
+      "unchanged_parent_nodes": 0
+    },
+    {
+      "key": "J1132",
+      "target": "data/normalized_yaml/archaea/halobacteria_medium_ph_8_0.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/J1132.md",
+      "sha256": "6c8d2950af372350fc5b01d7540fe3b45f2b37245548b76594ada505af087000",
+      "claims": 46,
+      "unchanged_parent_nodes": 0
+    },
+    {
+      "key": "J914",
+      "target": "data/normalized_yaml/archaea/halobacteria_medium_with_15_nacl.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/J914.md",
+      "sha256": "bfddac63f58f822ad7a7e23ee3a5b8bf540d71943b779fc5d76648cd124589d2",
+      "claims": 39,
+      "unchanged_parent_nodes": 0
+    },
+    {
+      "key": "J572",
+      "target": "data/normalized_yaml/archaea/modified_halobacteria_medium.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/J572.md",
+      "sha256": "d66cb3a2e96aa310759d52dc0cdc14a7b9a9a1ed0aa4e98f940365dcb7ebd50e",
+      "claims": 44,
+      "unchanged_parent_nodes": 0
+    },
+    {
+      "key": "J1008",
+      "target": "data/normalized_yaml/archaea/modified_halobacteria_medium_3.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/J1008.md",
+      "sha256": "d22ae1c2084174c42cd971fcc6aead22b3d708a4608a85e58925e50e700f83f4",
+      "claims": 40,
+      "unchanged_parent_nodes": 0
+    },
+    {
+      "key": "J377",
+      "target": "data/normalized_yaml/bacterial/JCM_J377_LENTIBACILLUS_MEDIUM.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/J377.md",
+      "sha256": "8ca055165efb1b6316b14bd2e5062ae09cd83dafd56c5eca4c23a0b699d03898",
+      "claims": 28,
+      "unchanged_parent_nodes": 0
+    },
+    {
+      "key": "M371",
+      "target": "data/normalized_yaml/bacterial/TOGO_M371_Lentibacillus_Medium.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M371.md",
+      "sha256": "6e22744565da297bba96f930867d2c283fd2ff32efed59dbaca771fa6b036db4",
+      "claims": 32,
+      "unchanged_parent_nodes": 0
+    },
+    {
+      "key": "M372",
+      "target": "data/normalized_yaml/bacterial/TOGO_M372_Lentibacillus_Medium.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M372.md",
+      "sha256": "8c4f67fa3d8d40886b0d353ea1d11e20a9b6b11260172203eabeeda44b14a375",
+      "claims": 35,
+      "unchanged_parent_nodes": 0
+    },
+    {
+      "key": "S3823",
+      "target": "data/normalized_yaml/bacterial/mediadive_3823_Main_sol_J168.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/S3823.md",
+      "sha256": "e54b7351dc8626af37caa2b1157a175589fbd1aa9d29df68b057d261de304361",
+      "claims": 35,
+      "unchanged_parent_nodes": 0
+    },
+    {
+      "key": "J168",
+      "target": "data/normalized_yaml/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/J168.md",
+      "sha256": "7008b45cd173a9a047575767f594b84cf6d478e4cb3fec4fe5ca8a51ae998766",
+      "claims": 10,
+      "unchanged_parent_nodes": 10
+    },
+    {
+      "key": "M159",
+      "target": "data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M159.md",
+      "sha256": "cbb6c2ae0205467e889cfedb328be6eb34011f3fc7122d7651da4cf5841634fb",
+      "claims": 11,
+      "unchanged_parent_nodes": 10
+    },
+    {
+      "key": "M160",
+      "target": "data/normalized_yaml/archaea/TOGO_M160_Halobacteria_Medium.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M160.md",
+      "sha256": "c031c1270a80c1c34d8000706e09a9813693805f3565ad09dee8b86a2287d8e7",
+      "claims": 3,
+      "unchanged_parent_nodes": 11
+    }
+  ],
+  "canonical_reports": {},
+  "updated_reports": [],
+  "all_record_goal_complete": false,
+  "canonical_followup_records": 11805,
+  "outside_canonical_followup": 4105,
+  "excluded_preview_reports": [
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-family/records-preview/J1007.md",
+      "target": "data/normalized_yaml/archaea/modified_halobacteria_medium_2.yaml",
+      "sha256": "adc9c3db28eeb603cc7ff7b334d5dc5880517db306bdd785802a75e5f1e7e294"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-family/records-preview/J168.md",
+      "target": "data/normalized_yaml/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml",
+      "sha256": "91b4737c3822d08ff09d906851c5345602e04da9963a806fa33bc27264181e0c"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-family/records-preview/M1064.md",
+      "target": "data/normalized_yaml/archaea/TOGO_M1064_Modified_Halobacteria_Medium-2.yaml",
+      "sha256": "7b393b76ca8aa3ccfa77f422df1bd7c8baffedc0d4490e8c05a2fa5fbc922889"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-family/records-preview/M159.md",
+      "target": "data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml",
+      "sha256": "8c6194628409fbef68ae40734e709190ecc6c66347132b044df312eb7403081b"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-family/records-preview/M160.md",
+      "target": "data/normalized_yaml/archaea/TOGO_M160_Halobacteria_Medium.yaml",
+      "sha256": "8a24d4740fbc2d62fc3829f705ecc1bcee3e6751a14eed68db113119e67d54b9"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/J1008.md",
+      "target": "data/normalized_yaml/archaea/modified_halobacteria_medium_3.yaml",
+      "sha256": "d22ae1c2084174c42cd971fcc6aead22b3d708a4608a85e58925e50e700f83f4"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/J1132.md",
+      "target": "data/normalized_yaml/archaea/halobacteria_medium_ph_8_0.yaml",
+      "sha256": "6c8d2950af372350fc5b01d7540fe3b45f2b37245548b76594ada505af087000"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/J168.md",
+      "target": "data/normalized_yaml/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml",
+      "sha256": "7008b45cd173a9a047575767f594b84cf6d478e4cb3fec4fe5ca8a51ae998766"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/J377.md",
+      "target": "data/normalized_yaml/bacterial/JCM_J377_LENTIBACILLUS_MEDIUM.yaml",
+      "sha256": "8ca055165efb1b6316b14bd2e5062ae09cd83dafd56c5eca4c23a0b699d03898"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/J572.md",
+      "target": "data/normalized_yaml/archaea/modified_halobacteria_medium.yaml",
+      "sha256": "d66cb3a2e96aa310759d52dc0cdc14a7b9a9a1ed0aa4e98f940365dcb7ebd50e"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/J914.md",
+      "target": "data/normalized_yaml/archaea/halobacteria_medium_with_15_nacl.yaml",
+      "sha256": "bfddac63f58f822ad7a7e23ee3a5b8bf540d71943b779fc5d76648cd124589d2"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M1065.md",
+      "target": "data/normalized_yaml/archaea/TOGO_M1065_Modified_Halobacteria_Medium-3.yaml",
+      "sha256": "fa4d41a362e67ea4b5046eca34383fabe34d8f691c0b352d05a5e72c40d10ebb"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M1212.md",
+      "target": "data/normalized_yaml/archaea/TOGO_M1212_Halobacteria_Medium_pH_8.0.yaml",
+      "sha256": "065c28f868e925f14875dddd6f6a42bd98bd2e12dc9cc584e9ee56cd73ca0579"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M159.md",
+      "target": "data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml",
+      "sha256": "cbb6c2ae0205467e889cfedb328be6eb34011f3fc7122d7651da4cf5841634fb"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M160.md",
+      "target": "data/normalized_yaml/archaea/TOGO_M160_Halobacteria_Medium.yaml",
+      "sha256": "c031c1270a80c1c34d8000706e09a9813693805f3565ad09dee8b86a2287d8e7"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M371.md",
+      "target": "data/normalized_yaml/bacterial/TOGO_M371_Lentibacillus_Medium.yaml",
+      "sha256": "6e22744565da297bba96f930867d2c283fd2ff32efed59dbaca771fa6b036db4"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M372.md",
+      "target": "data/normalized_yaml/bacterial/TOGO_M372_Lentibacillus_Medium.yaml",
+      "sha256": "8c4f67fa3d8d40886b0d353ea1d11e20a9b6b11260172203eabeeda44b14a375"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M576.md",
+      "target": "data/normalized_yaml/archaea/TOGO_M576_Modified_Halobacteria_Medium.yaml",
+      "sha256": "93fa352aaedf667214fabcbeb106310ccb4638b78a28f2cba93498844996c876"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M959.md",
+      "target": "data/normalized_yaml/archaea/TOGO_M959_Halobacteria_Medium_With_15_NaCl.yaml",
+      "sha256": "4b19307483a1a2cdc9df287143ab83d0f1d84af85fbc49a4863db62d3656ac04"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/M960.md",
+      "target": "data/normalized_yaml/archaea/TOGO_M960_Halobacteria_Medium_With_15_NaCl.yaml",
+      "sha256": "06eefcf0e64a9f081580a0a7a8a93bad1fb33a5b44eef49ef9f9e4f1fc97c0eb"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/records-preview/S3823.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_3823_Main_sol_J168.yaml",
+      "sha256": "e54b7351dc8626af37caa2b1157a175589fbd1aa9d29df68b057d261de304361"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/B2805.md",
+      "target": "data/normalized_yaml/bacterial/for_dsm_2805.yaml",
+      "sha256": "bbd9210c20dbdf0765ebbfdd6ef51e57307993044d2b303a7615067b8d273888"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/D212.md",
+      "target": "data/normalized_yaml/bacterial/synthrophomonas_medium.yaml",
+      "sha256": "938397f2964e71154cf5662ec0ffe27d9797b97039624cf6f38ad1b1295982d5"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/D212a.md",
+      "target": "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml",
+      "sha256": "579ea393e65c88048d2389fbd65f4abcb815ec9018579a76caa382fbd6b17fd8"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/K212.md",
+      "target": "data/normalized_yaml/bacterial/KOMODO_212_SYNTHROPHOMONAS_medium.yaml",
+      "sha256": "761078df9c6327615a1919b71849292063c22822579dd9fcbf2722cfc67c8944"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S1038.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_1038_Seven_vitamins_solution.yaml",
+      "sha256": "942be252232cc3cff683e80b90d71fd225d0cfe0e4457dbf4bdf8536affc74c7"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S125.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_125_Vitamin_K1_solution.yaml",
+      "sha256": "0625c426ef1b38cc3fde87a1e8c1112c6194fe7a679f2424317a17075e965f9c"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S1728.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_1728_Sugar_mix.yaml",
+      "sha256": "9b0ba02137ffefa15f357bf75f97f30e61a7f20119b22c23129ee6be42509369"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S446.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_446_Solution_A.yaml",
+      "sha256": "dbd46716fcfaf4fa13dd7dce7199006010f11de5432d2ceb46098f12bac52bce"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S447.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_447_Solution_B.yaml",
+      "sha256": "cc83b4d1330202cdaf8542743841e301cd64938342abb578dce1d2e2d1fb9ba3"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S448.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_448_Solution_C.yaml",
+      "sha256": "1d985fbdbef11b80df2ff035acf63513cca5f89a312966382f8d6f15a9552ff9"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S450.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_450_Solution_E.yaml",
+      "sha256": "12eb942e0fbe826f37e05bef6b098bdb0eb8bd68e76c0ed0095c88b0b319b454"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S451.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_451_Solution_F.yaml",
+      "sha256": "0ed7b44b61995c41d62e44a9b23fd6d5ba6accf2d813e9db29034abbbdcf99de"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S453.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_453_Solution_A.yaml",
+      "sha256": "c650c27d346f88e5fa2d58dd65915174d0ed47ee8a5f8debae333c6a0a70935c"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S454.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_454_Solution_B.yaml",
+      "sha256": "889b6f32a654a70c24eb940eb7ced203ec576530dec7e4d3528bff833f8b5ba5"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S455.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_455_Solution_C.yaml",
+      "sha256": "3b36772ea9ccd364b4dd919a7fe0434c45068ea29df60896d5710ffee676e941"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S456.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_456_Solution_D.yaml",
+      "sha256": "228295a15c4aa0dcef118d633cc95c721724105b0c7ece107acf169b08fe5742"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S459.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_459_Solution_G.yaml",
+      "sha256": "50c93ec23ce395ecc97839c3d6eaf3de175acf002d5133bba1a353e5f465d714"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S460.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_460_Solution_H.yaml",
+      "sha256": "26f90e905837fd0f4044c9f72b762bd8f16ba4d9729c546c9ce94ad544874628"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S461.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_461_Solution_I.yaml",
+      "sha256": "a9ed6cd5eaf2736547e8a3daeb8918cb4084dbc0f9e57a2eb6ad116b013b4151"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S595.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_595_Trace_element_solution_SL-10.yaml",
+      "sha256": "3950476a9f134781b3bff175e864b14d62be146e8a5fe3192b85d00a84f4ab19"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S608.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_608_Volatile_fatty_acid_mixture.yaml",
+      "sha256": "298078d75c22546123574d518fc4ab416ed875c43e7f2b34bddae4d1a79b656a"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S777.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml",
+      "sha256": "87a48210ef544ac3f8df3dfe3c281a32a4f97b77669ee8eb5f3ed55e512d2be4"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/B2805.md",
+      "target": "data/normalized_yaml/bacterial/for_dsm_2805.yaml",
+      "sha256": "fcb306d7013ed2efab2a303d07661e0e0ac84a64a3d8cd27834f7387519cce79"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/D212.md",
+      "target": "data/normalized_yaml/bacterial/synthrophomonas_medium.yaml",
+      "sha256": "117a43bef3875d9c2481fce44c5416997f244e385aa9ff3967ab57e0e321e212"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/D212a.md",
+      "target": "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml",
+      "sha256": "ba16ef108c5c7ca488f88ce93e23576786aa773a143ab53f67976aba9f60906b"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/K212.md",
+      "target": "data/normalized_yaml/bacterial/KOMODO_212_SYNTHROPHOMONAS_medium.yaml",
+      "sha256": "170a0425b450d792b6b4e7d2b89094ca9fd172d1d901eab038a95b00cefae5bd"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S1038.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_1038_Seven_vitamins_solution.yaml",
+      "sha256": "0da5e428ff206f96e2a28901753666678d44157ee73fb584fd72f45e2688b8d9"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S125.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_125_Vitamin_K1_solution.yaml",
+      "sha256": "59c05525f38649a590c34fe6feebcb8665080a1c61867a4bbaf5ae03664eb4dc"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S1728.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_1728_Sugar_mix.yaml",
+      "sha256": "d16f8a9414879ad705db4b48f53f6157108051edef42e835b4c57a1aff0d92f8"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S446.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_446_Solution_A.yaml",
+      "sha256": "a1f891436595ef2c34e9d56241e95782f13a80ad797cc2a9757148411db30315"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S447.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_447_Solution_B.yaml",
+      "sha256": "ee0c0c0c20280a2be5de0b909d8238ec50886a7030941a720dda2b5ca76df2b7"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S448.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_448_Solution_C.yaml",
+      "sha256": "e58b1d9e729abd12ba5e848598e81b3b793e47c6704664055b620b6931ad6277"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S450.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_450_Solution_E.yaml",
+      "sha256": "b05ba1bd9dd4e89a1ec3c13b8e660baa9df644355427991f7aa65f95c2b4f49e"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S451.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_451_Solution_F.yaml",
+      "sha256": "fdad75d2fda20caec63d5abb314d1da391ca014b795401b37063ede6d6c31561"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S453.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_453_Solution_A.yaml",
+      "sha256": "045f31761bfda8ccbfbc2188ebc26e1e1668758b60d565b8c095aedf9739ed58"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S454.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_454_Solution_B.yaml",
+      "sha256": "f7b3975ce3c8a793f82fc9e42513ba1f3c6ee18920b33743d183771686b05661"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S455.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_455_Solution_C.yaml",
+      "sha256": "2708c3f3d401796e867f387457abaaff5852bc0381651a02238e12da416229d2"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S456.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_456_Solution_D.yaml",
+      "sha256": "1f2c7af0212143f4ef5ebd1fff806bf81824bd2e1c164f6c772eb0f69d4c2e58"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S459.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_459_Solution_G.yaml",
+      "sha256": "cd9f3f6324490b186ee42220b85c522ba0749905064916bac7137360b02c9c2d"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S460.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_460_Solution_H.yaml",
+      "sha256": "791e0c00c28a8e80daf7d91864612ff1a7376fae832de91ea2438e64c418bc3b"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S461.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_461_Solution_I.yaml",
+      "sha256": "c61a39ba7177c2196ad919824349c6f83873216c76bb3dd28ffe93224b2bec8e"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S595.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_595_Trace_element_solution_SL-10.yaml",
+      "sha256": "3cbe1213299583de50f08212e026bb27ee12ebdbf6a15e9aea40328a93f7623a"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S608.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_608_Volatile_fatty_acid_mixture.yaml",
+      "sha256": "298078d75c22546123574d518fc4ab416ed875c43e7f2b34bddae4d1a79b656a"
+    },
+    {
+      "report": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S777.md",
+      "target": "data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml",
+      "sha256": "bb4cd6991e128cfe1ead03b460132dbcf87a7d6f5c1aa12a97302a108d7827ff"
+    }
+  ],
+  "ignored_files_included": true
+}

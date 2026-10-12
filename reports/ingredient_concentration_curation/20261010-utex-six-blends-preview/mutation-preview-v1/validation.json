@@ -1,0 +1,310 @@
+{
+  "terminal": true,
+  "passed": true,
+  "plan_sha256": "fa277fdced63a14095a72b2f0d24a182239c71a7adca1b2a4b125b36e772c60e",
+  "records_edited": 0,
+  "checks": [
+    {
+      "record": "data/normalized_yaml/algae/1_2_Erdschreiber_Medium.yaml",
+      "state": "baseline",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/1_2_Erdschreiber_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-00.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "record": "data/normalized_yaml/algae/1_2_Erdschreiber_Medium.yaml",
+      "state": "baseline",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/1_2_Erdschreiber_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-01.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "record": "data/normalized_yaml/algae/1_2_Erdschreiber_Medium.yaml",
+      "state": "proposed",
+      "command": [
+        "just",
+        "validate-schema",
+        "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/proposed/1_2_Erdschreiber_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-02.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "record": "data/normalized_yaml/algae/1_2_Erdschreiber_Medium.yaml",
+      "state": "proposed",
+      "command": [
+        "just",
+        "validate-strict",
+        "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/proposed/1_2_Erdschreiber_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-03.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "record": "data/normalized_yaml/algae/1_4_erdschreibers_medium.yaml",
+      "state": "baseline",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/1_4_erdschreibers_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-04.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "record": "data/normalized_yaml/algae/1_4_erdschreibers_medium.yaml",
+      "state": "baseline",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/1_4_erdschreibers_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-05.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "record": "data/normalized_yaml/algae/1_4_erdschreibers_medium.yaml",
+      "state": "proposed",
+      "command": [
+        "just",
+        "validate-schema",
+        "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/proposed/1_4_erdschreibers_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-06.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "record": "data/normalized_yaml/algae/1_4_erdschreibers_medium.yaml",
+      "state": "proposed",
+      "command": [
+        "just",
+        "validate-strict",
+        "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/proposed/1_4_erdschreibers_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-07.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "record": "data/normalized_yaml/algae/20_allen_80_erdschreiber_1_4_medium.yaml",
+      "state": "baseline",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/20_allen_80_erdschreiber_1_4_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-08.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "record": "data/normalized_yaml/algae/20_allen_80_erdschreiber_1_4_medium.yaml",
+      "state": "baseline",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/20_allen_80_erdschreiber_1_4_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-09.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "record": "data/normalized_yaml/algae/20_allen_80_erdschreiber_1_4_medium.yaml",
+      "state": "proposed",
+      "command": [
+        "just",
+        "validate-schema",
+        "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/proposed/20_allen_80_erdschreiber_1_4_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-10.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "record": "data/normalized_yaml/algae/20_allen_80_erdschreiber_1_4_medium.yaml",
+      "state": "proposed",
+      "command": [
+        "just",
+        "validate-strict",
+        "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/proposed/20_allen_80_erdschreiber_1_4_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-11.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "record": "data/normalized_yaml/algae/Bold_1NV_Erdshreiber_1_1_Medium.yaml",
+      "state": "baseline",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/Bold_1NV_Erdshreiber_1_1_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-12.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "record": "data/normalized_yaml/algae/Bold_1NV_Erdshreiber_1_1_Medium.yaml",
+      "state": "baseline",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/Bold_1NV_Erdshreiber_1_1_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-13.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "record": "data/normalized_yaml/algae/Bold_1NV_Erdshreiber_1_1_Medium.yaml",
+      "state": "proposed",
+      "command": [
+        "just",
+        "validate-schema",
+        "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/proposed/Bold_1NV_Erdshreiber_1_1_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-14.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "record": "data/normalized_yaml/algae/Bold_1NV_Erdshreiber_1_1_Medium.yaml",
+      "state": "proposed",
+      "command": [
+        "just",
+        "validate-strict",
+        "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/proposed/Bold_1NV_Erdshreiber_1_1_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-15.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "record": "data/normalized_yaml/algae/Bold_1NV_Erdshreiber_4_1_Medium.yaml",
+      "state": "baseline",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/Bold_1NV_Erdshreiber_4_1_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-16.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "record": "data/normalized_yaml/algae/Bold_1NV_Erdshreiber_4_1_Medium.yaml",
+      "state": "baseline",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/Bold_1NV_Erdshreiber_4_1_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-17.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "record": "data/normalized_yaml/algae/Bold_1NV_Erdshreiber_4_1_Medium.yaml",
+      "state": "proposed",
+      "command": [
+        "just",
+        "validate-schema",
+        "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/proposed/Bold_1NV_Erdshreiber_4_1_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-18.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "record": "data/normalized_yaml/algae/Bold_1NV_Erdshreiber_4_1_Medium.yaml",
+      "state": "proposed",
+      "command": [
+        "just",
+        "validate-strict",
+        "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/proposed/Bold_1NV_Erdshreiber_4_1_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-19.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "record": "data/normalized_yaml/algae/waris_soil_extract_medium.yaml",
+      "state": "baseline",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/waris_soil_extract_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-20.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "record": "data/normalized_yaml/algae/waris_soil_extract_medium.yaml",
+      "state": "baseline",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/waris_soil_extract_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-21.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "record": "data/normalized_yaml/algae/waris_soil_extract_medium.yaml",
+      "state": "proposed",
+      "command": [
+        "just",
+        "validate-schema",
+        "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/proposed/waris_soil_extract_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-22.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "record": "data/normalized_yaml/algae/waris_soil_extract_medium.yaml",
+      "state": "proposed",
+      "command": [
+        "just",
+        "validate-strict",
+        "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/proposed/waris_soil_extract_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/validation-23.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    }
+  ],
+  "quantity_fields": 12,
+  "evidence_entries": 8,
+  "source_conflicts": 1,
+  "mutants_rejected": {
+    "value": 12,
+    "unit": 12,
+    "per_volume": 12,
+    "snippet": 6,
+    "identity": 6,
+    "history": 6,
+    "unrelated": 6,
+    "removed_conflict": 1
+  },
+  "inputs_unchanged": true
+}

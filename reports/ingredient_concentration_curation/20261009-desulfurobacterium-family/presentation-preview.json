@@ -1,0 +1,285 @@
+{
+  "terminal": true,
+  "state": "Preview only, no applied YAML",
+  "plan_path": "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family/plan-v2.json",
+  "plan_sha256": "8452f7a0ffa1de24471cac81be183e7eb5deddfa26c4b03578ada91040181a1f",
+  "records": [
+    {
+      "key": "K829",
+      "path": "data/normalized_yaml/bacterial/KOMODO_829_DESULFUROBACTERIUM_MEDIUM.yaml",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans": 13,
+      "prior_acid_spans": 0,
+      "diff_path": "/tmp/ingredient-media-20261007/829-preview-diffs/K829.diff",
+      "diff_sha256": "a442da7553585c2ab171e36171826a44a53134aa55a8f4457ed6c85256f6a5a3"
+    },
+    {
+      "key": "K829a",
+      "path": "data/normalized_yaml/bacterial/KOMODO_829a_DESULFUROBACTERIUM_ATLANTICUM_MEDIUM.yaml",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "id",
+        "media_term",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans": 10,
+      "prior_acid_spans": 0,
+      "diff_path": "/tmp/ingredient-media-20261007/829-preview-diffs/K829a.diff",
+      "diff_sha256": "8756d71c6986c082bb991abb7bf9cb0a20a7a18b89b9db73539bd2c0cadc9e0d"
+    },
+    {
+      "key": "D829a",
+      "path": "data/normalized_yaml/bacterial/desulfurobacterium_atlanticum_medium.yaml",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans": 7,
+      "prior_acid_spans": 0,
+      "diff_path": "/tmp/ingredient-media-20261007/829-preview-diffs/D829a.diff",
+      "diff_sha256": "207fa988758a80d629e3ecfbe99159a43784d2705627b4a37810e6a80b1d6256"
+    },
+    {
+      "key": "D829c",
+      "path": "data/normalized_yaml/bacterial/desulfurobacterium_crinifex_medium.yaml",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_range",
+        "physical_state"
+      ],
+      "prior_history_spans": 9,
+      "prior_acid_spans": 0,
+      "diff_path": "/tmp/ingredient-media-20261007/829-preview-diffs/D829c.diff",
+      "diff_sha256": "3cb5ee5b436acc1d8eb5483e56a4d0413bbab11d6e3eae96eaf137b8628c9862"
+    },
+    {
+      "key": "D829d",
+      "path": "data/normalized_yaml/bacterial/desulfurobacterium_indicum_medium.yaml",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_range",
+        "physical_state"
+      ],
+      "prior_history_spans": 9,
+      "prior_acid_spans": 0,
+      "diff_path": "/tmp/ingredient-media-20261007/829-preview-diffs/D829d.diff",
+      "diff_sha256": "7ac442bf104cf79ea1b46f579e3e79d78ab9f42bbae2897b213b6212622338c1"
+    },
+    {
+      "key": "D829",
+      "path": "data/normalized_yaml/bacterial/desulfurobacterium_medium.yaml",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans": 11,
+      "prior_acid_spans": 0,
+      "diff_path": "/tmp/ingredient-media-20261007/829-preview-diffs/D829.diff",
+      "diff_sha256": "ec6bc528488c4700200fb7d99e116413d66ec182654750d1091c843bbc8f7d4b"
+    },
+    {
+      "key": "K829.1",
+      "path": "data/normalized_yaml/bacterial/for_dsm_14290.yaml",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "data_quality_flags",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans": 12,
+      "prior_acid_spans": 0,
+      "diff_path": "/tmp/ingredient-media-20261007/829-preview-diffs/K829.1.diff",
+      "diff_sha256": "a1e0f0bd9c4711b46ceff093b78ad0e056f9d15732d00fc2859f4f396b4e9138"
+    },
+    {
+      "key": "K829.2",
+      "path": "data/normalized_yaml/bacterial/for_dsm_15218_dsm_15521_dsm_15522_dsm_16304.yaml",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_range",
+        "physical_state"
+      ],
+      "prior_history_spans": 12,
+      "prior_acid_spans": 0,
+      "diff_path": "/tmp/ingredient-media-20261007/829-preview-diffs/K829.2.diff",
+      "diff_sha256": "2245582165bbcf6833ca829df44630e29a32986fadfba32b0cf8abaf9a17dfbc"
+    },
+    {
+      "key": "K829.3",
+      "path": "data/normalized_yaml/bacterial/for_dsm_21157.yaml",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "data_quality_flags",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state",
+        "variant_relationship"
+      ],
+      "prior_history_spans": 12,
+      "prior_acid_spans": 0,
+      "diff_path": "/tmp/ingredient-media-20261007/829-preview-diffs/K829.3.diff",
+      "diff_sha256": "f61090f864e469e9acf01b13de3d1ad564f390c400dcb359a678d19cfeab2d80"
+    },
+    {
+      "key": "K829_16661",
+      "path": "data/normalized_yaml/bacterial/medium_829_modified_for_dsm_16661.yaml",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state"
+      ],
+      "prior_history_spans": 11,
+      "prior_acid_spans": 0,
+      "diff_path": "/tmp/ingredient-media-20261007/829-preview-diffs/K829_16661.diff",
+      "diff_sha256": "382ad0f3f8da76364d6937ac93d20f9ecdd8739f5a3e76f3effb267e50732b72"
+    },
+    {
+      "key": "D829b",
+      "path": "data/normalized_yaml/bacterial/thermodesulfobacterium_hydrogeniphilum_medium.yaml",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans": 11,
+      "prior_acid_spans": 0,
+      "diff_path": "/tmp/ingredient-media-20261007/829-preview-diffs/D829b.diff",
+      "diff_sha256": "ee74110318640e97f3fcbf299f70143a6402f1a4a3ba6f67f964947e1a4104cd"
+    },
+    {
+      "key": "M2587",
+      "path": "data/normalized_yaml/bacterial/TOGO_M2587_Desulfurobacterium_Medium.yaml",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "physical_state"
+      ],
+      "prior_history_spans": 13,
+      "prior_acid_spans": 0,
+      "diff_path": "/tmp/ingredient-media-20261007/829-preview-diffs/M2587.diff",
+      "diff_sha256": "30facc4d76a8aa997db216430213519d7b179b1e3bb59a0f935d4fce3c65b4c6"
+    },
+    {
+      "key": "K2027",
+      "path": "data/normalized_yaml/bacterial/solution_of_growth_stimulating_factors_medium_829.yaml",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "data_quality_flags",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state",
+        "preparation_steps",
+        "sterilization"
+      ],
+      "prior_history_spans": 8,
+      "prior_acid_spans": 0,
+      "diff_path": "/tmp/ingredient-media-20261007/829-preview-diffs/K2027.diff",
+      "diff_sha256": "98539506fe1be357bc5f0b570f38e10a4537f904ddb9ea544bc6a57aaeb62345"
+    },
+    {
+      "key": "S1680",
+      "path": "data/normalized_yaml/bacterial/mediadive_1680_Growth-stimulating_factors.yaml",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans": 8,
+      "prior_acid_spans": 6,
+      "diff_path": "/tmp/ingredient-media-20261007/829-preview-diffs/S1680.diff",
+      "diff_sha256": "fa44304b2d21c7515cb087d63b6a974fc0f218b3ec66a8e0c01a112c4eaec25d"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "apply",
+  "checks": [],
+  "source_sha256": "0cf3a08ff882d4bb2fd8d46b4cd3f376d1ad17939ccb9640ad402b1edd086b5b",
+  "code_sha256": {
+    "scripts/review_utex_migrated_stocks.py": "e79fdf9beb63b24456dcd4e9bf92cc26d6c2dcdd7f6fbb4083adf8f71e01d5c2",
+    "tests/test_utex_migrated_stocks.py": "04f58d6dc4cf64597abae0b5a7d079fe43180512d3ac99c4fc309553f0143ba6"
+  },
+  "inventory_before_sha256": "b3cd07676477703b1f08992fa3017d0a48b2c5e374429dfe9f26c3108514fd87",
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "applied": {
+    "changed": 3,
+    "pending": 0,
+    "already_applied": 0
+  },
+  "readback": {
+    "changed": 0,
+    "pending": 0,
+    "already_applied": 3
+  },
+  "repeat": {
+    "changed": 0,
+    "pending": 0,
+    "already_applied": 3
+  },
+  "counts": {
+    "new_evidence": 13,
+    "bibliographic_entries_enriched": 3,
+    "recipe_context_notes_corrected": 3,
+    "new_curation_history": 3
+  },
+  "changed_paths": [
+    "data/normalized_yaml/bacterial/Beijerinck_Solution.yaml",
+    "data/normalized_yaml/bacterial/Bold_Trace_Stock.yaml",
+    "data/normalized_yaml/bacterial/Boron_Stock.yaml"
+  ],
+  "inventory_after_sha256": "b586be89bc43723ac5658f38d627bd51d0a6aa42df52088943d2036147f26b6e",
+  "normalized_inventory_unchanged": false
+}

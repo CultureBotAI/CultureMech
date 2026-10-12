@@ -1,0 +1,322 @@
+{
+  "scope": "All exact git-tracked normalized records, before DSMZ 13 data edit; signatures remain concentration-independent, not formulation identity",
+  "records": 15910,
+  "before": {
+    "fingerprinted": 10751,
+    "empty_direct_with_stocks": 111,
+    "errors": 401,
+    "no_valid_ingredients": 4758,
+    "nested_stocks": 14
+  },
+  "after": {
+    "fingerprinted": 10783,
+    "errors": 369,
+    "no_valid_ingredients": 4758
+  },
+  "changed": [
+    {
+      "path": "data/normalized_yaml/algae/Spirulina_Medium.yaml",
+      "id": "CultureMech:000232",
+      "sha256": "a96c3df375c1c181fd525d974411d7c5af9bf624bb9119b783c17c2603d961af",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "5330abd79cca23260822b4567b1c0e59e89acf0ff4acbc66ebd83d388584edc2"
+    },
+    {
+      "path": "data/normalized_yaml/algae/dunaliella.yaml",
+      "id": "CultureMech:000200",
+      "sha256": "cabe8aaf21a59bcbaf1c3f36396bb812487ffc027392cd6141452311704d2c33",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "f468a7e8189f19d9ad490ac603c11111dd34705143923d6206df2755b76dbee4"
+    },
+    {
+      "path": "data/normalized_yaml/algae/n75s_nsw.yaml",
+      "id": "CultureMech:000098",
+      "sha256": "cb134cd566b01ce6361472d1b973f96fe47b015edc34bb33195168f1dd54044e",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "80d217c9c38999f38f4172b4e649d0a333e9bd9851078c0f9555a3afd2fac7d2"
+    },
+    {
+      "path": "data/normalized_yaml/algae/r75s_nsw.yaml",
+      "id": "CultureMech:000119",
+      "sha256": "42442187b0b68a8fb56b2b9e78f56ca9dad670057dbd147c0e28217606d7d2b3",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "80d217c9c38999f38f4172b4e649d0a333e9bd9851078c0f9555a3afd2fac7d2"
+    },
+    {
+      "path": "data/normalized_yaml/algae/spirulina.yaml",
+      "id": "CultureMech:000213",
+      "sha256": "56afc258f6b044d991dea8376de1fe371513005def959533be8acd5540261d9d",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "21ff0b22789386e93046af6e8716f46e4e7e138c525035b20113384dbda3b1b4"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/JCM_J1334_NATRONOARCHAEA_MEDIUM_II.yaml",
+      "id": "CultureMech:015832",
+      "sha256": "c5abc54356ccc9104a28fc250b267a517f3483446efff78abc14da8d213c52bb",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "7d42fc7589ae77787b2d7bc5d1aebc8a3c20265a9db870f6ed6eb81e0af82ac6"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M1150_Natranaeroarchaeum_Medium.yaml",
+      "id": "CultureMech:007674",
+      "sha256": "db1df4848f160fd4a18fc4a79935f7fc3fa817a2bd61c42178586ef06c117d8e",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "af42ab1df29e6ee95d8f70ddfda70f679f0633f4efdfdd3dc69903d9874aebc3"
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M1151_Halalkaliarchaeum_Medium.yaml",
+      "id": "CultureMech:007675",
+      "sha256": "b4606c6b2bf6e25ebd20c47b5b9e66ee02415d18ee61b54c70501d575ca63ae4",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "cdcfccd2628799bdb02e6ef3d1a7854b439d7b8e2448b9295e38b85ab2ed8b88"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/JCM_J276_CASTENHOLZ_MEDIUM.yaml",
+      "id": "CultureMech:002633",
+      "sha256": "295f78b52163ff4a13e22b33c5caeda71d9af6d59cfc98bfdb295019d59d43a5",
+      "old_fingerprint": "4cfedb13afc28ef53f3431fb212cfb141659a37e5d33ebdedadf39f2ef62331f",
+      "old_error": null,
+      "new_fingerprint": "f84c7ef2ee5fecc15766569e67805a4941f46363ff505762cba02b3c0b524417"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M1050_M30.yaml",
+      "id": "CultureMech:007567",
+      "sha256": "6b36dddf6465e371a20c7f2283c83916ebde7b7e4a169af3566102acd49625eb",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "983e2c8a21eb069fd449a43c8700c20547e8b4462f70f4047ef1a7752d2e3fe5"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M1059_Acidic_HB-1_Medium.yaml",
+      "id": "CultureMech:007575",
+      "sha256": "0a03fb37f77914eb83d7dfafde4e2352eade1b5f1a33cb55019d6f43669e349c",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "3ba11ff82a34cee4795d879734147942ed6406462a1f63ffbd427e3416f87e5a"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M1066_Clostridium_Swellfunianum_Medium.yaml",
+      "id": "CultureMech:007583",
+      "sha256": "c58a3dbb0e8bb776583bc6dc6de1abac60a0144f0adce881daad8f8bca84cf9a",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "c415ed0379940fed9f799a8a8e68a2ec52a914bc07079373b1a45d16ba21401b"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M1220_Natronospira_Proteinivora_Medium.yaml",
+      "id": "CultureMech:007748",
+      "sha256": "a45369c9989f2cb914ed79c2d2c4b8987b3babc1caffc53409de93282569c178",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "f2774dd80fb8affa57ce612e6dd4c2a888c23b063dfebd5c275475d61a9a3662"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M1221_Longimonas_Haloalkaliphila_Medium.yaml",
+      "id": "CultureMech:007749",
+      "sha256": "039744e10f9958341b2151d025bcc35a708a73f4c7694034a6c4da2670b9fbcb",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "6aa4cf2d1ce6ebe18baa192d980d194191289057be9f716b910f5346d121309a"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M2366_BSK-Medium.yaml",
+      "id": "CultureMech:008950",
+      "sha256": "4a9be7a5fae3fc883204700360fcc8b9e73bfd2bf1602590739039db877670ba",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "eaa4f3f18c1ad2953f50b7385959ffa192936b8993452fcd1ee7a2d44bf1811b"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M358_PY4SR_Agar.yaml",
+      "id": "CultureMech:009738",
+      "sha256": "a96edc8ab14cbdf046e4085d5d87561524d97fd41b61fad6d18f46c4e8dea5d4",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "8dd2bd645b9fa39ec15564628b25258037b50bdc684a15fa6efe7f7fe6add561"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M935_Microaerophilic_Thermus_Medium.yaml",
+      "id": "CultureMech:010357",
+      "sha256": "bc5dc08b6306f3878ff9a9101295579160679fceaffa6fe1786e1b73083f84d3",
+      "old_fingerprint": "931a8c6cd8a54611efdf05a74660d6ad2808e53e408436b347e893ba0a0cc9f7",
+      "old_error": null,
+      "new_fingerprint": "85935100690e5e4a77afb669d3534d42a0c83868fee6d2b068e7d3dbd33e95fc"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/car_bacillus_medium.yaml",
+      "id": "CultureMech:003345",
+      "sha256": "e86c1ff90e7fc4355bdd281b65409a90ec6e7c75e089c7071beb252b2f4a0cd8",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "b34100536b426a31960da9fdad00cdc1438cb09828e4e73b8cb0172b7d73b902"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/chloracidobacterium_thermophilum_midnight_medium_ctm.yaml",
+      "id": "CultureMech:015911",
+      "sha256": "501240c9425617e9e530d23f718add6fd35458fc2f31c6a3bc02e0aba5e34616",
+      "old_fingerprint": "77ad40641ab251996a9dedee8f52d2644333eb962e9316e5332cbc723700cecf",
+      "old_error": null,
+      "new_fingerprint": "8c74f2e5f70c1d9e1cec556ce0b531f5ed6f9968e9033903346d44981d55e429"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfofrigus_medium.yaml",
+      "id": "CultureMech:002020",
+      "sha256": "3e5edd379ff1a14ba69fe073ddebb95f446bbb785d73510d8f413c7647f35c78",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "f971503bf577c58b1c145bd69bc5c2aab6e841de250c4bbe783e41232ee755de"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfotalea_psychrophila_medium.yaml",
+      "id": "CultureMech:002021",
+      "sha256": "0f26ba946610381463135a50881d8d95e364147d7a07bcd7d68a20275b50ccfe",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "f971503bf577c58b1c145bd69bc5c2aab6e841de250c4bbe783e41232ee755de"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfovigra_adipica.yaml",
+      "id": "CultureMech:006698",
+      "sha256": "b1580e2d9a3540d5c2d21d67366a57d980ee4b2ce930de540b5fa19cde6c9758",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "837d4e9a1326aedae1e6f26496fff6c56d4848d6a278730fec24e94db9321a32"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_12341.yaml",
+      "id": "CultureMech:006689",
+      "sha256": "b8ee7ca232c419672b7a06c5e279c11c0a0de81e271457e5a7ca0fa06c99dbb3",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "f9844e371bf7513f53a5ab8ca3438ab8a8bc56f30024922f19a3085e24e54c6d"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_12342_dsm_12343_and_dsm_12345.yaml",
+      "id": "CultureMech:006690",
+      "sha256": "cc76b42add8db2a10377c85528019de8a92c5359e89fd97b7728fccfb391438b",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "f971503bf577c58b1c145bd69bc5c2aab6e841de250c4bbe783e41232ee755de"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_12343.yaml",
+      "id": "CultureMech:006688",
+      "sha256": "c5e65731767f79bbf1dde41a87071e58d45ad8b9dab3ca66dd18a30dee3aa5dc",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "f971503bf577c58b1c145bd69bc5c2aab6e841de250c4bbe783e41232ee755de"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_12344.yaml",
+      "id": "CultureMech:006691",
+      "sha256": "c11690b73568102ecd09d62fb719f320e072adbe48215057e321fa67665eda03",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "f0f715f2a2b9eb0b4871bcf7157ec8c1248a0e8b1d7517f1a037f1c802b1ec4a"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/half_strength_skim_milk_agar.yaml",
+      "id": "CultureMech:002250",
+      "sha256": "e4ecc6a0343457bb056a06417fcd1496fe5132018e5689d2110ccb623540887b",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "33e4556ede7af8b306faa0e5df865e3a0d39511b41df02466f95cb71e65a1855"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/m9_sng_medium.yaml",
+      "id": "CultureMech:010438",
+      "sha256": "250cc259402cfc6454d35f34240ff492d027b548fee1773ac6f5b238f08d1af4",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "18b11a0133c662bdfb8830fecc5dda6dd8d15491054cf1932eb895056c764c60"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mg50_medium.yaml",
+      "id": "CultureMech:002841",
+      "sha256": "3f7578f031004d05fd27177c56dd667ed287706edd99702d511a94beca827d30",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "1941029d60f34ca582d451188798142bd9abb8cc3f2ac2fc0e58496f1f751f0f"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/microaerophilic_thermus_medium.yaml",
+      "id": "CultureMech:003243",
+      "sha256": "3416deec6e8b09b0debd7b18a114e0471c51b5707a296c60f07ec469fa3b9f05",
+      "old_fingerprint": "931a8c6cd8a54611efdf05a74660d6ad2808e53e408436b347e893ba0a0cc9f7",
+      "old_error": null,
+      "new_fingerprint": "85935100690e5e4a77afb669d3534d42a0c83868fee6d2b068e7d3dbd33e95fc"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_leptospira_medium.yaml",
+      "id": "CultureMech:008991",
+      "sha256": "fca54f7f21f777e216ddcddc19d4352fd840d48dd9553c8c4e05d2eedad37247",
+      "old_fingerprint": "41f6390d434b061e9e011ac3ccd9f22840c5830cdea6fbe746542b0b5b7c2180",
+      "old_error": null,
+      "new_fingerprint": "721380fd6e46b771d494ea7ceece3a392c50e1fb0bb0e55a6deb7deb9c625001"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/n75s_nsw.yaml",
+      "id": "CultureMech:000374",
+      "sha256": "0729c063ba66d9299f6c91b08f5e5f6aa6e8083c774a3b3821f989a5bf58d9b3",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "80d217c9c38999f38f4172b4e649d0a333e9bd9851078c0f9555a3afd2fac7d2"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ph_medium.yaml",
+      "id": "CultureMech:000511",
+      "sha256": "14814451013322e5be98c1902b767dd1cc0ef1d797aa4313ecef23ea075d06ad",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "863e298afbfd6befa6d24969145c868faa5b3e25ba7c3e7ecdfe7ad6d77677ca"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/r75s_nsw.yaml",
+      "id": "CultureMech:000402",
+      "sha256": "8ade083b27360301bc300b3ccccd2a45ae9226fad6e6d0ffd38ad18322c2e682",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "80d217c9c38999f38f4172b4e649d0a333e9bd9851078c0f9555a3afd2fac7d2"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/rs_medium_nutrient_medium_nm_component.yaml",
+      "id": "CultureMech:010435",
+      "sha256": "93211711e4f2891a3e86ff81e27515803735f1c90135826a1cca0743deae67b1",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "f766f386f26560d6b0b984bcdd6d4ebebf2cfebe1a6ec4e7c33e72179090bf93"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/srb_psychrophile_medium.yaml",
+      "id": "CultureMech:006692",
+      "sha256": "5d0ee2dbc9031c5b23da78ce404b0b8eec754273158f95e01ce95d57b9bb3d09",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "f971503bf577c58b1c145bd69bc5c2aab6e841de250c4bbe783e41232ee755de"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/togo_medium_m314.yaml",
+      "id": "CultureMech:009614",
+      "sha256": "bd5ca0c5b48fd0f27e48554a19cb08a57bf3b46ddf2abd67b3c5dcbbd3339448",
+      "old_fingerprint": "b38182eb89d27f6fc854eb92bda4b59365f61a41fc882d904d4b34d1e2f85d90",
+      "old_error": null,
+      "new_fingerprint": "acd242db1512c8ac38f5cf7bb33966fa45a34171442bd91d2d5600976cdb1440"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/xtc_2_medium.yaml",
+      "id": "CultureMech:000773",
+      "sha256": "3b99351e32996a4d0ed90bbd7d899db54b3a585e149352ac44b5a1820ea68658",
+      "old_fingerprint": null,
+      "old_error": "ValueError: Recipe has empty ingredients list",
+      "new_fingerprint": "1a76ef7701343650a3fad529e530b55aa1ad6066bed367b5ed530aa6a3ca289f"
+    }
+  ]
+}

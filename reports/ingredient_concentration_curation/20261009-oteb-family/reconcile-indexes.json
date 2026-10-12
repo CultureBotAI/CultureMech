@@ -1,0 +1,23 @@
+{
+  "terminal": true,
+  "phase": "indexes",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/generate_recipe_indexes.py",
+        "--recipe-dir",
+        "data/normalized_yaml",
+        "--output-dir",
+        "/tmp/ingredient-media-20261007/oteb-index-preview"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-oteb-family/reconcile-indexes-0.log",
+      "log_sha256": "0ac79dd7edc2db2547cd6729c5264e48cd061654faa860ad8ee486cd8eef1f1e"
+    }
+  ],
+  "source_sha256": "b2fe53f9a5f5c2a28ce3af156e7c8d7c95e000e1f150df9ac3799f8a4e454cfe",
+  "plan_sha256": "d5e5b76a6b77434f3c0b79cf2502b3de47ad5eb70305e57430348154c83c4d8e",
+  "applied_files": 5,
+  "unique_records": 4
+}

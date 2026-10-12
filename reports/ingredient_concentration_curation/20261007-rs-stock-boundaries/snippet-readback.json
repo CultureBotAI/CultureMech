@@ -1,0 +1,28 @@
+{
+  "method": "Independent standard-library HTMLParser extracts td/th cells, decodes entities, normalizes within-cell whitespace and joins cells with spaces. No mutator/source parser imported. Checks every evidence snippet and separately located claim excerpt; scope/arithmetic are separately audited.",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/rs_medium_non_nutrient_medium_nnm_component.yaml",
+      "id": "CultureMech:010434",
+      "reference": "https://mediadive.dsmz.de/medium/P4",
+      "source_sha256": "c1b66217611ac37036f1550d0c3ade9bb6b4a9ef733f0547494547e574668a4b",
+      "after_sha256": "f751bf318cda4d4053f650ffb7df842b38d3e94b7cc1f4516dc8562e2d86c941",
+      "new_evidence_snippets_checked": 57,
+      "claim_excerpts_checked": 182,
+      "distinct_excerpts_checked": 34,
+      "all_exact_substrings": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/rs_medium_nutrient_medium_nm_component.yaml",
+      "id": "CultureMech:010435",
+      "reference": "https://mediadive.dsmz.de/medium/P5",
+      "source_sha256": "fe4448ec7332d8e7ec8313b49ffa8e03b0c26ca54522d83fa802a19bbb25f5c7",
+      "after_sha256": "cb5a972f2d1da8e1c0f822b4f7a1f5a90e5b8062ef67b8413ef97e8a9f9b6cba",
+      "new_evidence_snippets_checked": 98,
+      "claim_excerpts_checked": 376,
+      "distinct_excerpts_checked": 71,
+      "all_exact_substrings": true
+    }
+  ],
+  "total_snippets_checked": 155
+}

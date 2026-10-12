@@ -1,0 +1,45 @@
+{
+  "M199": {
+    "unsupported_quantity_slots_removed": 18,
+    "stock_dose_basis_corrections": 2,
+    "stock_nodes_relocated": 13,
+    "quantity_corrections": 2,
+    "stock_stage_concentrations_rebased": 2,
+    "new_quantity_slots": 1,
+    "stock_descriptors_added": 1,
+    "new_evidence": 72,
+    "new_references": 4,
+    "new_curation_history": 1,
+    "old_quantity_slots": 23,
+    "claims": 84,
+    "source_rows": 37
+  },
+  "M206": {
+    "quantity_corrections": 1,
+    "unsupported_quantity_slots_removed": 17,
+    "stock_dose_basis_corrections": 1,
+    "new_quantity_slots": 1,
+    "stock_descriptors_added": 1,
+    "stock_nodes_relocated": 1,
+    "new_evidence": 66,
+    "new_references": 4,
+    "new_curation_history": 1,
+    "old_quantity_slots": 19,
+    "claims": 73,
+    "source_rows": 33
+  },
+  "M207": {
+    "quantity_corrections": 1,
+    "unsupported_quantity_slots_removed": 19,
+    "stock_dose_basis_corrections": 1,
+    "new_quantity_slots": 1,
+    "stock_descriptors_added": 1,
+    "stock_nodes_relocated": 1,
+    "new_evidence": 70,
+    "new_references": 4,
+    "new_curation_history": 1,
+    "old_quantity_slots": 21,
+    "claims": 77,
+    "source_rows": 35
+  }
+}

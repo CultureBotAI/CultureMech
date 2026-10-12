@@ -16,6 +16,33 @@ composition:
     label: aluminium trichloride hexahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4452
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "AlCl3 x 6 H2O",
+                      "compound_id": 677,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "mg",
+                      "g_l": 0.01,
+                      "mmol_l": 0.0414197,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (AlCl3 x
+      6 H2O) in MediaDive solution 4452; locator=$.data.recipe[1] (compound_id=677).
+      Provider explicitly reports g_l=0.01. Arithmetic check: 10 mg * 0.001 g/mg /
+      (1000 ml / 1000 ml per L) = 0.010 g/L, consistent with the reported value at
+      its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:43:53.940998+00:00;
+      response SHA256=3e562b127df820e3a4499fd6902eede2e0e95cac6abade8e31e0c8c570752713.'
 preparation_notes: 'Comment: For strain JCM 14632, incubate with a 5-10% inoculum.
   When toluene is depleted, re-add the toluene solution (normally every 3 to 4 days,
   until enough cell growth is seen).'
@@ -47,6 +74,15 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:46:43.027838+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/4452
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.01"} ->
+    {"unit": "G_PER_L", "value": "0.01"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -55,3 +91,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/4452
+  title: 'MediaDive solution 4452: Trace element solution'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=3e562b127df820e3a4499fd6902eede2e0e95cac6abade8e31e0c8c570752713;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

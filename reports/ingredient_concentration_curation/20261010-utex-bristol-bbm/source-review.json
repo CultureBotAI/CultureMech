@@ -1,0 +1,3166 @@
+{
+  "version": 1,
+  "created_at": "2026-10-10T03:52:13.675590+00:00",
+  "commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+  "source_receipts": [
+    {
+      "path": "/tmp/culturemech-bristol-bbm-20261010/captures.json",
+      "sha256": "209d38832120bd9429d3d878a86b5732fe06e7397730023b71d3a1425d09530b"
+    },
+    {
+      "path": "/tmp/culturemech-bristol-children-20261010/captures.json",
+      "sha256": "c816cf3d4a6a24e7e57c1430d9d0d613d5b51f67c61f2900e79d074d31c1ffef"
+    }
+  ],
+  "sources": {
+    "https://utex.org/products/bristol-medium": {
+      "capture": "/tmp/culturemech-bristol-bbm-20261010/bristol-medium.html",
+      "sha256": "cab4c6e9babeb4249982dcac1b17d61759de48f9bc009b5337537524c3402864",
+      "title": "Bristol Medium | UTEX Culture Collection of Algae",
+      "authors": "UTEX Culture Collection of Algae",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "existing_record_reference",
+      "accessed_at": "2026-10-10T02:59:05.066542+00:00",
+      "publication_year": null,
+      "inspected_snippets": [
+        "total volume to 1 L",
+        "2.94 mM",
+        "0.17 mM",
+        "0.3 mM",
+        "0.43 mM",
+        "1.29 mM"
+      ]
+    },
+    "https://utex.org/products/bold-basal-medium": {
+      "capture": "/tmp/culturemech-bristol-bbm-20261010/bold-basal-medium.html",
+      "sha256": "a86e07c2836dae419eff2dc5bd3969a0b4566630127647347b12062ec61d799d",
+      "title": "Bold Basal Medium | UTEX Culture Collection of Algae",
+      "authors": "UTEX Culture Collection of Algae",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "existing_record_reference",
+      "accessed_at": "2026-10-10T02:59:05.066542+00:00",
+      "publication_year": null,
+      "inspected_snippets": [
+        "total volume to 1L",
+        "2.94 mM",
+        "0.17 mM",
+        "0.3 mM",
+        "0.43 mM",
+        "1.29 mM",
+        "One drop equals approximately 0.05 mL."
+      ]
+    },
+    "https://utex.org/products/bbm-edta-stock-solution": {
+      "capture": "/tmp/culturemech-bristol-bbm-20261010/bbm-edta-stock-solution.html",
+      "sha256": "b4189fe11d6ec28a98b269d7b61e9b714d38b7c09166c99d3496e78b64730bd8",
+      "title": "BBM EDTA Stock Solution Recipe | UTEX Culture Collection of Algae",
+      "authors": "UTEX Culture Collection of Algae",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "existing_record_reference",
+      "accessed_at": "2026-10-10T02:59:05.066542+00:00",
+      "publication_year": null,
+      "inspected_snippets": [
+        "total volume to 1 Liter",
+        "50 grams of EDTA, acid form",
+        "31 grams of KOH"
+      ]
+    },
+    "https://utex.org/products/bbm-iron-stock-solution": {
+      "capture": "/tmp/culturemech-bristol-bbm-20261010/bbm-iron-stock-solution.html",
+      "sha256": "65cbf62a9682de5d5ecf7b1d44d95c0df5f6073e639fd0eed21d0f284c1b1440",
+      "title": "BBM Iron Stock Solution Recipe | UTEX Culture Collection of Algae",
+      "authors": "UTEX Culture Collection of Algae",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "existing_record_reference",
+      "accessed_at": "2026-10-10T02:59:05.066542+00:00",
+      "publication_year": null,
+      "inspected_snippets": [
+        "total volume to 1 Liter",
+        "10 mL of H2SO4",
+        "5 g of FeSO4\u20227H2O"
+      ]
+    },
+    "https://utex.org/products/bbm-boron-stock-solution": {
+      "capture": "/tmp/culturemech-bristol-bbm-20261010/bbm-boron-stock-solution.html",
+      "sha256": "eaa732c45cc24741a10ea40ec2ab27585bb6e675b4e223d499e20b9c2aa059c9",
+      "title": "BBM Boron Stock Solution Recipe | UTEX Culture Collection of Algae",
+      "authors": "UTEX Culture Collection of Algae",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "existing_record_reference",
+      "accessed_at": "2026-10-10T02:59:05.066542+00:00",
+      "publication_year": null,
+      "inspected_snippets": [
+        "total volume to 1 Liter",
+        "11 g of H3BO3"
+      ]
+    },
+    "https://utex.org/products/bbm-bold-trace-stock-solution": {
+      "capture": "/tmp/culturemech-bristol-bbm-20261010/bbm-bold-trace-stock-solution.html",
+      "sha256": "c7945ff70a881648bdba257e6154ed6c63f29767ea94671278587c16055a9aec",
+      "title": "BBM Bold Trace Stock Solution Recipe | UTEX Culture Collection of Algae",
+      "authors": "UTEX Culture Collection of Algae",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "existing_record_reference",
+      "accessed_at": "2026-10-10T02:59:05.066542+00:00",
+      "publication_year": null,
+      "inspected_snippets": [
+        "total volume to 1 L",
+        "10-mL",
+        "8.82 g",
+        "MnCl\u20224H2O",
+        "0.71 g",
+        "1.57 g",
+        "0.49 g"
+      ]
+    },
+    "https://web.biosci.utexas.edu/utex/Media%20PDF/bristol-medium.pdf": {
+      "capture": "/tmp/culturemech-bristol-bbm-20261010/bristol-medium.pdf",
+      "sha256": "16140801197451447a0e93a93207c150244f3906a7da784449422fd1aa1632a3",
+      "source_type": "culture_collection_recipe_pdf",
+      "discovery_mode": "linked_official_recipe",
+      "accessed_at": "2026-10-10T02:59:05.066542+00:00",
+      "publication_year": null,
+      "pages": [
+        {
+          "index": 0,
+          "path": "/tmp/culturemech-bristol-bbm-20261010/bristol-medium-0.png",
+          "sha256": "e6bc0624dc059619ab818a6bea2b1cdcf57a98a53bf1ac1489adbef4be6d94be",
+          "visually_inspected": true
+        }
+      ],
+      "inspected_snippets": []
+    },
+    "https://web.biosci.utexas.edu/utex/Media%20PDF/bold-basal-medium.pdf": {
+      "capture": "/tmp/culturemech-bristol-bbm-20261010/bold-basal-medium.pdf",
+      "sha256": "5f6cc61052d03a5a5571bec451be3a3c65e2d41ac792177f9bc1c8c76ae8e299",
+      "source_type": "culture_collection_recipe_pdf",
+      "discovery_mode": "linked_official_recipe",
+      "accessed_at": "2026-10-10T02:59:05.066542+00:00",
+      "publication_year": null,
+      "pages": [
+        {
+          "index": 0,
+          "path": "/tmp/culturemech-bristol-bbm-20261010/bold-basal-medium-0.png",
+          "sha256": "63cb87a8e1348d0e8e3388cf3c775a836ba4837358a10fa10f22860eea962790",
+          "visually_inspected": true
+        },
+        {
+          "index": 1,
+          "path": "/tmp/culturemech-bristol-bbm-20261010/bold-basal-medium-1.png",
+          "sha256": "5d49107f1588e4d129dab7d45c544fad79c891cf9c010e7d03f2ab22ee6f10fb",
+          "visually_inspected": true
+        },
+        {
+          "index": 2,
+          "path": "/tmp/culturemech-bristol-bbm-20261010/bold-basal-medium-2.png",
+          "sha256": "301ca0f78cc66a6d3dd72c02c0370d80c364777713887d235a781bcabf282d05",
+          "visually_inspected": true
+        }
+      ],
+      "inspected_snippets": []
+    },
+    "https://utex.org/products/botryococcus-medium": {
+      "capture": "/tmp/culturemech-bristol-children-20261010/botryococcus-medium.html",
+      "sha256": "b8ec26560fda1f842db5f89fc3443215184a9b58dcafa66fe2d65d037c72334b",
+      "title": "Botryococcus Medium | UTEX Culture Collection of Algae",
+      "authors": "UTEX Culture Collection of Algae",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "existing_record_reference",
+      "accessed_at": "2026-10-10T03:49:40.301643+00:00",
+      "publication_year": null,
+      "inspected_snippets": [
+        "0.151 mM",
+        "Bring total volume to 1 L with dH2O.",
+        "940 mL",
+        "Add components listed."
+      ]
+    },
+    "https://utex.org/products/proteose-medium": {
+      "capture": "/tmp/culturemech-bristol-children-20261010/proteose-medium.html",
+      "sha256": "4bcbf6a44f22303eec0d721c6854dd50fb55a43f023e78a8a7c6a3ae6f9c2c5a",
+      "title": "Proteose Medium | UTEX Culture Collection of Algae",
+      "authors": "UTEX Culture Collection of Algae",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "existing_record_reference",
+      "accessed_at": "2026-10-10T03:49:40.301643+00:00",
+      "publication_year": null,
+      "inspected_snippets": [
+        "1 g/L",
+        "1 L"
+      ]
+    },
+    "https://utex.org/products/bristol-nacl-medium": {
+      "capture": "/tmp/culturemech-bristol-children-20261010/bristol-nacl-medium.html",
+      "sha256": "e9b7a035a94a73452e47f7e713b7f234549352d22ba4ff74d183a27efe7c0176",
+      "title": "Bristol-NaCl Medium | UTEX Culture Collection of Algae",
+      "authors": "UTEX Culture Collection of Algae",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "existing_record_reference",
+      "accessed_at": "2026-10-10T03:49:40.301643+00:00",
+      "publication_year": null,
+      "inspected_snippets": [
+        "Prepare Bristol Medium through step one.",
+        "0.062 M"
+      ]
+    },
+    "https://web.biosci.utexas.edu/utex/Media%20PDF/botryococcus-medium.pdf": {
+      "capture": "/tmp/culturemech-bristol-children-20261010/botryococcus-medium.pdf",
+      "sha256": "f40bb5789f26bb60b0e6ba4a94e397b417c32996d1a5e6c17a1d955c3383846c",
+      "source_type": "culture_collection_recipe_pdf",
+      "discovery_mode": "linked_official_recipe",
+      "accessed_at": "2026-10-10T03:49:40.301643+00:00",
+      "publication_year": null,
+      "pages": [
+        {
+          "index": 0,
+          "path": "/tmp/culturemech-bristol-children-20261010/botryococcus-medium-0.png",
+          "sha256": "efa0698d9ff5fe6281738bfe1a99c0c8570b693fc99cdcb269eec81a49f64654",
+          "visually_inspected": true
+        }
+      ],
+      "inspected_snippets": []
+    },
+    "https://web.biosci.utexas.edu/utex/Media%20PDF/proteose-medium.pdf": {
+      "capture": "/tmp/culturemech-bristol-children-20261010/proteose-medium.pdf",
+      "sha256": "aa4f2f55c0cb409b285cb9ce1309b5e965d494fe1a8e2f4e8af549efd04b513a",
+      "source_type": "culture_collection_recipe_pdf",
+      "discovery_mode": "linked_official_recipe",
+      "accessed_at": "2026-10-10T03:49:40.301643+00:00",
+      "publication_year": null,
+      "pages": [
+        {
+          "index": 0,
+          "path": "/tmp/culturemech-bristol-children-20261010/proteose-medium-0.png",
+          "sha256": "c79f73ea0769fa8a2e2c652b41c0597dadea5d6e6b70edc5dd2c41c95a062cb7",
+          "visually_inspected": true
+        }
+      ],
+      "inspected_snippets": []
+    },
+    "https://web.biosci.utexas.edu/utex/Media%20PDF/bristol-nacl-medium.pdf": {
+      "capture": "/tmp/culturemech-bristol-children-20261010/bristol-nacl-medium.pdf",
+      "sha256": "645e148e56f151e401bf6a9d6771bc9c43dc15a40357de7fce7143ab1787ec4d",
+      "source_type": "culture_collection_recipe_pdf",
+      "discovery_mode": "linked_official_recipe",
+      "accessed_at": "2026-10-10T03:49:40.301643+00:00",
+      "publication_year": null,
+      "pages": [
+        {
+          "index": 0,
+          "path": "/tmp/culturemech-bristol-children-20261010/bristol-nacl-medium-0.png",
+          "sha256": "6624841e4832542e418117ca0dc0390d0b815719476d63610da24c8705ca8811",
+          "visually_inspected": true
+        }
+      ],
+      "inspected_snippets": []
+    },
+    "doi:10.3390/plants11131669": {
+      "reference": "doi:10.3390/plants11131669",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9269517/fullTextXML",
+      "title": "Effect of 17\u03b2-Estradiol on Growth and Biosynthesis of Microalgae Scenedesmus quadricauda (CPCC-158) and Duckweed Lemna minor (CPCC-490) Grown in Three Different Media",
+      "authors": "Tatiana A. Kozlova; David B. Levin",
+      "year": 2022,
+      "source_type": "journal_article",
+      "discovery_mode": "existing_record_reference; public full-text API after browser retrieval failed",
+      "accessed_on": "2026-10-10",
+      "capture": "/tmp/culturemech-bbm-PMC9269517.xml",
+      "sha256": "3ff76eaa32856926a1815722096aa190382ec6fbfd59aff05346ab5c3d95166f",
+      "version": "PMC9269517.1",
+      "inspected_sections": [
+        "sec2dot2-plants-11-01669",
+        "sec2dot1-plants-11-01669",
+        "sec2dot3-plants-11-01669"
+      ],
+      "inspected_snippets": [
+        "0.25, 0.75, 2.50, 5.0, and 15.0 ng/L",
+        "NH4Cl was added to 4.5 ppm",
+        "250 mL Erlenmeyer flasks",
+        "adjusted to 7"
+      ]
+    }
+  },
+  "records": [
+    {
+      "key": "bristol-medium",
+      "path": "data/normalized_yaml/algae/Bristol_Medium.yaml",
+      "id": "CultureMech:000037",
+      "source_term": "UTEX:bristol-medium",
+      "before_text": "id: CultureMech:000037\nname: bristol_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: Bristol Medium\n  term:\n    id: UTEX:bristol-medium\n    label: Bristol Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for freshwater\n  algae cultivation.\nnotes: UTEX prepares Bristol Medium from six mineral stocks diluted in dH2O and autoclaved.\ningredients:\n- preferred_term: dH2O\n  concentration:\n    value: '1000'\n    unit: ML_PER_L\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n  notes: UTEX starts the 1 L Bristol Medium recipe with approximately 900 mL dH2O.\n- preferred_term: NaNO3\n  concentration:\n    value: '2.94'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:63005\n    label: sodium nitrate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:63005\n    label: sodium nitrate\n  supplier_catalog:\n    supplier_name: Fisher\n    catalog_number: BP360-500\n  notes: UTEX adds 10 mL/L of a 10 g/400 mL dH2O stock, for 2.94 mM final.\n  nutritional_roles:\n  - NITROGEN_SOURCE\n- preferred_term: CaCl2 x 2 H2O\n  concentration:\n    value: '0.17'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: C-3881\n  notes: UTEX adds 10 mL/L of a 1 g/400 mL dH2O stock, for 0.17 mM final.\n- preferred_term: MgSO4 x 7 H2O\n  concentration:\n    value: '0.3'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:31795\n    label: magnesium sulfate heptahydrate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:31795\n    label: magnesium sulfate heptahydrate\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: '230391'\n  notes: UTEX adds 10 mL/L of a 3 g/400 mL dH2O stock, for 0.3 mM final.\n  nutritional_roles:\n  - SULFUR_SOURCE\n  - TRACE_ELEMENT\n- preferred_term: K2HPO4\n  concentration:\n    value: '0.43'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:131527\n    label: dipotassium hydrogen phosphate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:131527\n    label: dipotassium hydrogen phosphate\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: P 3786\n  notes: UTEX adds 10 mL/L of a 3 g/400 mL dH2O stock, for 0.43 mM final.\n  nutritional_roles:\n  - PHOSPHATE_SOURCE\n  physicochemical_roles:\n  - BUFFER\n- preferred_term: KH2PO4\n  concentration:\n    value: '1.29'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:63036\n    label: potassium dihydrogen phosphate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:63036\n    label: potassium dihydrogen phosphate\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: P 0662\n  notes: UTEX adds 10 mL/L of a 7 g/400 mL dH2O stock, for 1.29 mM final.\n  nutritional_roles:\n  - PHOSPHATE_SOURCE\n  physicochemical_roles:\n  - BUFFER\n- preferred_term: NaCl\n  concentration:\n    value: '0.43'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:26710\n    label: sodium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n  supplier_catalog:\n    supplier_name: Fisher\n    catalog_number: S271-500\n  notes: UTEX adds 10 mL/L of a 1 g/400 mL dH2O stock, for 0.43 mM final.\nsolutions: []\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: To approximately 900 mL dH2O, add each Bristol mineral stock while\n    stirring continuously.\n- step_number: 2\n  action: MIX\n  description: Bring the total volume to 1 L with dH2O.\n- step_number: 3\n  action: AUTOCLAVE\n  description: Cover and autoclave the medium.\n- step_number: 4\n  action: STORE\n  description: Store at refrigerator temperature.\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  timestamp: '2026-01-28'\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: bristol-medium, URL: https://utex.org/products/bristol-medium'\n- timestamp: '2026-03-13T06:18:52.988824Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000037'\n- timestamp: '2026-03-17T19:45:03.946761+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Bristol Medium\" to \"bristol_medium\" for consistent\n    matching\n- timestamp: '2026-08-06T00:58:02.502002+00:00'\n  curator: curate_organism_culture_type.py\n  action: SET_ORGANISM_CULTURE_TYPE\n  notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'\n  changes: Set organism_culture_type=isolate (was unset)\n- timestamp: '2026-08-30T00:58:30.648112+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 6 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_algal_blends.py\n  action: LINKED_UTEX_ALGAL_BLEND_CHILDREN\n  changes: Linked UTEX algal child media to prepared-media parents\n  notes: Added or refreshed reciprocal parent-child link for algae/Botryococcus_Medium.yaml.\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_remaining_score50.py\n  action: LINKED_UTEX_SCORE50_ALGAE_CHILDREN\n  changes: Linked score-50 UTEX algae child media to prepared-media parents\n  notes: Added or refreshed reciprocal parent-child link for algae/Proteose_Medium.yaml.\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_remaining_score50.py\n  action: LINKED_UTEX_SCORE50_ALGAE_CHILDREN\n  changes: Linked score-50 UTEX algae child media to prepared-media parents\n  notes: Added or refreshed reciprocal parent-child link for algae/bristol_nacl_medium.yaml.\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_algae_score45_blends_soils.py\n  action: LINKED_SCORE45_ALGAE_CHILDREN\n  changes: Linked score-45 algae child media to prepared-media parents\n  notes: Added or refreshed reciprocal parent-child link for algae/Soil_Extract_Medium.yaml.\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_bristol_bold_score35.py\n  action: RESOLVED_UTEX_BRISTOL_BOLD_SCORE35\n  changes: Grounded UTEX score-35 Bristol/Bold/Erdschreiber components\n  source: https://utex.org/products/bristol-medium\n  notes: UTEX prepares Bristol Medium from six mineral stocks diluted in dH2O and\n    autoclaved.\nreferences:\n- reference: UTEX:bristol-medium\n- reference: https://utex.org/products/bristol-medium\noriginal_name: Bristol Medium\norganism_culture_type: isolate\ntarget_organisms:\n- preferred_term: Chlorella pyrenoidosa\n  term:\n    id: NCBITaxon:3077\n    label: Chlorella vulgaris\n  growth_metrics:\n  - measurement_conditions: Commercial Bristol medium comparator in settled and activated\n      sewage growth study.\n    evidence:\n    - reference: PMID:15092268\n      supports: SUPPORT\n      snippet: Good growth was obtained in both types of wastewater and the algal\n        production was comparable to and even higher than that found in commercial\n        Bristol medium.\n      explanation: Literature evidence supports qualitative growth of Chlorella pyrenoidosa\n        on commercial Bristol medium as a comparator.\n    is_max_attainment: false\nvariant_children:\n- path: data/normalized_yaml/algae/Botryococcus_Medium.yaml\n  relationship: SUPPLEMENTED_VARIANT\n  id: CultureMech:000035\n  name: botryococcus_medium\n  notes: Adds 1 mL/L (NH4)2HPO4 stock to 940 mL prepared Bristol Medium.\n- path: data/normalized_yaml/algae/Proteose_Medium.yaml\n  relationship: SUPPLEMENTED_VARIANT\n  id: CultureMech:000188\n  name: proteose_medium\n  notes: Adds 1 g/L Proteose Peptone to prepared Bristol Medium.\n- path: data/normalized_yaml/algae/Soil_Extract_Medium.yaml\n  relationship: SUPPLEMENTED_VARIANT\n  id: CultureMech:000223\n  name: soil_extract_medium\n  notes: 'Replaces 40 mL per liter of Bristol Medium with Soilwater: GR+ Medium supernatant.'\n- path: data/normalized_yaml/algae/bristol_nacl_medium.yaml\n  relationship: SUPPLEMENTED_VARIANT\n  id: CultureMech:000036\n  name: bristol_nacl_medium\n  notes: Adds 3.6 g/L NaCl to prepared Bristol Medium.\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\n",
+      "before_sha256": "4d00769fe831cf963257aca23c9ebefc013791f4de2c530f7ff53209808cba04",
+      "claims": [
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "dH2O",
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "status": "correct",
+          "reference": "https://utex.org/products/bristol-medium",
+          "snippet": "total volume to 1 L",
+          "locator": "Directions make-up step",
+          "explanation": "ingredients[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "not possible: solvent input volume is not final mixture volume",
+          "basis": "final medium",
+          "limitations": []
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1
+          ],
+          "field": "ingredients[1].concentration",
+          "ingredient": "NaNO3",
+          "old": {
+            "value": "2.94",
+            "unit": "MILLIMOLAR"
+          },
+          "new": {
+            "value": "2.94",
+            "unit": "MILLIMOLAR"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bristol-medium",
+          "snippet": "2.94 mM",
+          "locator": "recipe table, row 1, Final Concentration",
+          "explanation": "ingredients[1].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "none; source-reported value",
+          "basis": "final medium",
+          "limitations": [],
+          "source_component": "NaNO3 (Fisher BP360-500)",
+          "source_stock_input": "10 mL/L",
+          "source_stock_recipe": "10 g/400mL dH2O"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            2
+          ],
+          "field": "ingredients[2].concentration",
+          "ingredient": "CaCl2 x 2 H2O",
+          "old": {
+            "value": "0.17",
+            "unit": "MILLIMOLAR"
+          },
+          "new": {
+            "value": "0.17",
+            "unit": "MILLIMOLAR"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bristol-medium",
+          "snippet": "0.17 mM",
+          "locator": "recipe table, row 2, Final Concentration",
+          "explanation": "ingredients[2].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "none; source-reported value",
+          "basis": "final medium",
+          "limitations": [],
+          "source_component": "CaCl2\u20222H2O (Sigma C-3881)",
+          "source_stock_input": "10 mL/L",
+          "source_stock_recipe": "1 g/400mL dH2O"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            3
+          ],
+          "field": "ingredients[3].concentration",
+          "ingredient": "MgSO4 x 7 H2O",
+          "old": {
+            "value": "0.3",
+            "unit": "MILLIMOLAR"
+          },
+          "new": {
+            "value": "0.3",
+            "unit": "MILLIMOLAR"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bristol-medium",
+          "snippet": "0.3 mM",
+          "locator": "recipe table, row 3, Final Concentration",
+          "explanation": "ingredients[3].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "none; source-reported value",
+          "basis": "final medium",
+          "limitations": [],
+          "source_component": "MgSO4\u20227H2O (Sigma 230391)",
+          "source_stock_input": "10 mL/L",
+          "source_stock_recipe": "3 g/400mL dH2O"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            4
+          ],
+          "field": "ingredients[4].concentration",
+          "ingredient": "K2HPO4",
+          "old": {
+            "value": "0.43",
+            "unit": "MILLIMOLAR"
+          },
+          "new": {
+            "value": "0.43",
+            "unit": "MILLIMOLAR"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bristol-medium",
+          "snippet": "0.43 mM",
+          "locator": "recipe table, row 4, Final Concentration",
+          "explanation": "ingredients[4].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "none; source-reported value",
+          "basis": "final medium",
+          "limitations": [],
+          "source_component": "K2HPO4 (Sigma P 3786)",
+          "source_stock_input": "10 mL/L",
+          "source_stock_recipe": "3 g/400mL dH2O"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            5
+          ],
+          "field": "ingredients[5].concentration",
+          "ingredient": "KH2PO4",
+          "old": {
+            "value": "1.29",
+            "unit": "MILLIMOLAR"
+          },
+          "new": {
+            "value": "1.29",
+            "unit": "MILLIMOLAR"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bristol-medium",
+          "snippet": "1.29 mM",
+          "locator": "recipe table, row 5, Final Concentration",
+          "explanation": "ingredients[5].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "none; source-reported value",
+          "basis": "final medium",
+          "limitations": [],
+          "source_component": "KH2PO4 (Sigma P 0662)",
+          "source_stock_input": "10 mL/L",
+          "source_stock_recipe": "7 g/400mL dH2O"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            6
+          ],
+          "field": "ingredients[6].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "0.43",
+            "unit": "MILLIMOLAR"
+          },
+          "new": {
+            "value": "0.43",
+            "unit": "MILLIMOLAR"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bristol-medium",
+          "snippet": "0.43 mM",
+          "locator": "recipe table, row 6, Final Concentration",
+          "explanation": "ingredients[6].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "none; source-reported value",
+          "basis": "final medium",
+          "limitations": [],
+          "source_component": "NaCl (Fisher S271-500)",
+          "source_stock_input": "10 mL/L",
+          "source_stock_recipe": "1 g/400mL dH2O"
+        }
+      ],
+      "extra_claims": [
+        {
+          "path": "variant_children[3].notes",
+          "old": "Adds 3.6 g/L NaCl to prepared Bristol Medium.",
+          "proposed": "Bristol-NaCl uses this mineral preparation only through step one; it adds 3.6 g NaCl before making the child up to 1 L, not to a litre of completed Bristol Medium.",
+          "status": "correct",
+          "reference": "https://utex.org/products/bristol-nacl-medium",
+          "snippet": "Prepare Bristol Medium through step one.",
+          "locator": "Bristol-NaCl Directions 1-2 and table",
+          "explanation": "Reciprocal stage correction; no parent ingredient amount changed by the child recipe.",
+          "action_taken": "proposed; not yet applied"
+        }
+      ],
+      "operations": [
+        {
+          "kind": "remove",
+          "pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "old_present": true,
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "reference": "https://utex.org/products/bristol-medium",
+          "snippet": "total volume to 1 L",
+          "locator": "Directions make-up step",
+          "reason": "ingredients[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount.",
+          "counts": {
+            "unsupported_quantity_slots_removed": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "variant_children",
+            3,
+            "notes"
+          ],
+          "old_present": true,
+          "old": "Adds 3.6 g/L NaCl to prepared Bristol Medium.",
+          "new": "Bristol-NaCl uses this mineral preparation only through step one; it adds 3.6 g NaCl before making the child up to 1 L, not to a litre of completed Bristol Medium.",
+          "reference": "https://utex.org/products/bristol-nacl-medium",
+          "snippet": "Prepare Bristol Medium through step one.",
+          "locator": "Bristol-NaCl Directions 1-2 and table",
+          "reason": "Keep the reciprocal relationship consistent with the child preparation stage.",
+          "counts": {
+            "child_link_notes_corrected": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            0,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bristol-medium",
+              "supports": "SUPPORT",
+              "snippet": "total volume to 1 L",
+              "explanation": "ingredients[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount. Locator: Directions make-up step."
+            }
+          ],
+          "reference": "https://utex.org/products/bristol-medium",
+          "snippet": "total volume to 1 L",
+          "locator": "ingredients[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount. Locator: Directions make-up step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            1,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bristol-medium",
+              "supports": "SUPPORT",
+              "snippet": "2.94 mM",
+              "explanation": "ingredients[1].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 1, Final Concentration."
+            }
+          ],
+          "reference": "https://utex.org/products/bristol-medium",
+          "snippet": "2.94 mM",
+          "locator": "ingredients[1].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 1, Final Concentration.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            2,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bristol-medium",
+              "supports": "SUPPORT",
+              "snippet": "0.17 mM",
+              "explanation": "ingredients[2].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 2, Final Concentration."
+            }
+          ],
+          "reference": "https://utex.org/products/bristol-medium",
+          "snippet": "0.17 mM",
+          "locator": "ingredients[2].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 2, Final Concentration.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            3,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bristol-medium",
+              "supports": "SUPPORT",
+              "snippet": "0.3 mM",
+              "explanation": "ingredients[3].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 3, Final Concentration."
+            }
+          ],
+          "reference": "https://utex.org/products/bristol-medium",
+          "snippet": "0.3 mM",
+          "locator": "ingredients[3].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 3, Final Concentration.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            4,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bristol-medium",
+              "supports": "SUPPORT",
+              "snippet": "0.43 mM",
+              "explanation": "ingredients[4].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 4, Final Concentration."
+            }
+          ],
+          "reference": "https://utex.org/products/bristol-medium",
+          "snippet": "0.43 mM",
+          "locator": "ingredients[4].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 4, Final Concentration.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            5,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bristol-medium",
+              "supports": "SUPPORT",
+              "snippet": "1.29 mM",
+              "explanation": "ingredients[5].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 5, Final Concentration."
+            }
+          ],
+          "reference": "https://utex.org/products/bristol-medium",
+          "snippet": "1.29 mM",
+          "locator": "ingredients[5].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 5, Final Concentration.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            6,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bristol-medium",
+              "supports": "SUPPORT",
+              "snippet": "0.43 mM",
+              "explanation": "ingredients[6].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 6, Final Concentration."
+            }
+          ],
+          "reference": "https://utex.org/products/bristol-medium",
+          "snippet": "0.43 mM",
+          "locator": "ingredients[6].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 6, Final Concentration.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "variant_children",
+            3,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bristol-nacl-medium",
+              "supports": "SUPPORT",
+              "snippet": "Prepare Bristol Medium through step one.",
+              "explanation": "variant_children[3].notes: the linked Bristol-NaCl child stops Bristol preparation after the first step, adds its salt, then performs final volume adjustment. Locator: Bristol-NaCl Directions 1-2."
+            }
+          ],
+          "reference": "https://utex.org/products/bristol-nacl-medium",
+          "snippet": "Prepare Bristol Medium through step one.",
+          "locator": "variant_children[3].notes: the linked Bristol-NaCl child stops Bristol preparation after the first step, adds its salt, then performs final volume adjustment. Locator: Bristol-NaCl Directions 1-2.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "references",
+            1
+          ],
+          "old_present": true,
+          "old": {
+            "reference": "https://utex.org/products/bristol-medium"
+          },
+          "new": {
+            "reference": "https://utex.org/products/bristol-medium",
+            "title": "Bristol Medium | UTEX Culture Collection of Algae",
+            "authors": "UTEX Culture Collection of Algae",
+            "notes": "source_type=culture_collection_page; discovery_mode=existing_record_reference; accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage are retained; source conflicts are not silently repaired. Recipe publication year is unknown; website/PDF copyright is not used as publication year."
+          },
+          "reference": "https://utex.org/products/bristol-medium",
+          "snippet": "total volume to 1 L",
+          "locator": "source title/author context and inspected recipe or methods",
+          "reason": "Enrich the existing reference with verified provenance.",
+          "counts": {
+            "bibliographic_entries_enriched": 1
+          }
+        },
+        {
+          "kind": "append",
+          "pointer": [
+            "references"
+          ],
+          "old_length": 2,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bristol-nacl-medium",
+              "title": "Bristol-NaCl Medium | UTEX Culture Collection of Algae",
+              "authors": "UTEX Culture Collection of Algae",
+              "notes": "source_type=culture_collection_page; discovery_mode=existing_record_reference; accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage are retained; source conflicts are not silently repaired. Recipe publication year is unknown; website/PDF copyright is not used as publication year."
+            }
+          ],
+          "reference": "https://utex.org/products/bristol-nacl-medium",
+          "snippet": "Prepare Bristol Medium through step one.",
+          "locator": "source title/author context and inspected recipe or methods",
+          "reason": "Add the inspected formulation/relationship sources.",
+          "counts": {
+            "new_references": 1
+          }
+        }
+      ]
+    },
+    {
+      "key": "bold-basal-medium",
+      "path": "data/normalized_yaml/algae/Bold_Basal_Medium.yaml",
+      "id": "CultureMech:000034",
+      "source_term": "UTEX:bold-basal-medium",
+      "before_text": "id: CultureMech:000034\nname: bold_basal_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: Bold Basal Medium\n  term:\n    id: UTEX:bold-basal-medium\n    label: Bold Basal Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for freshwater\n  algae cultivation.\nnotes: UTEX prepares Bold Basal Medium from the six Bristol mineral stocks plus one\n  drop each of BBM EDTA, Iron, Boron, and Bold Trace stocks.\ningredients:\n- preferred_term: dH2O\n  concentration:\n    value: '1000'\n    unit: ML_PER_L\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n  notes: UTEX starts the 1 L Bold Basal Medium recipe with approximately 900 mL dH2O.\n- preferred_term: NaNO3\n  concentration:\n    value: '2.94'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:63005\n    label: sodium nitrate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:63005\n    label: sodium nitrate\n  supplier_catalog:\n    supplier_name: Fisher\n    catalog_number: BP360-500\n  notes: UTEX adds 10 mL/L of a 10 g/400 mL dH2O stock, for 2.94 mM final.\n  nutritional_roles:\n  - NITROGEN_SOURCE\n- preferred_term: CaCl2 x 2 H2O\n  concentration:\n    value: '0.17'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: C-3881\n  notes: UTEX adds 10 mL/L of a 1 g/400 mL dH2O stock, for 0.17 mM final.\n- preferred_term: MgSO4 x 7 H2O\n  concentration:\n    value: '0.3'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:31795\n    label: magnesium sulfate heptahydrate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:31795\n    label: magnesium sulfate heptahydrate\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: '230391'\n  notes: UTEX adds 10 mL/L of a 3 g/400 mL dH2O stock, for 0.3 mM final.\n  nutritional_roles:\n  - SULFUR_SOURCE\n  - TRACE_ELEMENT\n- preferred_term: K2HPO4\n  concentration:\n    value: '0.43'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:131527\n    label: dipotassium hydrogen phosphate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:131527\n    label: dipotassium hydrogen phosphate\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: P 3786\n  notes: UTEX adds 10 mL/L of a 3 g/400 mL dH2O stock, for 0.43 mM final.\n  nutritional_roles:\n  - PHOSPHATE_SOURCE\n  physicochemical_roles:\n  - BUFFER\n- preferred_term: KH2PO4\n  concentration:\n    value: '1.29'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:63036\n    label: potassium dihydrogen phosphate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:63036\n    label: potassium dihydrogen phosphate\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: P 0662\n  notes: UTEX adds 10 mL/L of a 7 g/400 mL dH2O stock, for 1.29 mM final.\n  nutritional_roles:\n  - PHOSPHATE_SOURCE\n  physicochemical_roles:\n  - BUFFER\n- preferred_term: NaCl\n  concentration:\n    value: '0.43'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:26710\n    label: sodium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n  supplier_catalog:\n    supplier_name: Fisher\n    catalog_number: S271-500\n  notes: UTEX adds 10 mL/L of a 1 g/400 mL dH2O stock, for 0.43 mM final.\nsolutions:\n- preferred_term: EDTA Stock\n  concentration:\n    value: '0.05'\n    unit: ML_PER_L\n  composition:\n  - preferred_term: dH2O\n    concentration:\n      value: '1000'\n      unit: ML_PER_L\n    term:\n      id: CHEBI:15377\n      label: water\n    mediaingredientmech_chebi_term:\n      id: CHEBI:15377\n      label: water\n    notes: UTEX brings BBM EDTA Stock Solution to 1 L with dH2O.\n  - preferred_term: EDTA\n    concentration:\n      value: '50'\n      unit: G_PER_L\n    term:\n      id: CHEBI:4735\n      label: EDTA\n    mediaingredientmech_chebi_term:\n      id: CHEBI:4735\n      label: EDTA\n    notes: UTEX lists 50 g EDTA acid form per liter.\n    physicochemical_roles:\n    - CHELATOR\n  - preferred_term: KOH\n    concentration:\n      value: '31'\n      unit: G_PER_L\n    term:\n      id: CHEBI:32035\n      label: potassium hydroxide\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32035\n      label: potassium hydroxide\n    notes: UTEX lists 31 g KOH per liter.\n  notes: UTEX adds one approximately 0.05 mL drop per liter of Bold Basal Medium.\n- preferred_term: Iron Stock\n  concentration:\n    value: '0.05'\n    unit: ML_PER_L\n  composition:\n  - preferred_term: dH2O\n    concentration:\n      value: '1000'\n      unit: ML_PER_L\n    term:\n      id: CHEBI:15377\n      label: water\n    mediaingredientmech_chebi_term:\n      id: CHEBI:15377\n      label: water\n    notes: UTEX brings BBM Iron Stock Solution to 1 L with dH2O.\n  - preferred_term: H2SO4\n    concentration:\n      value: '10'\n      unit: ML_PER_L\n    term:\n      id: CHEBI:26836\n      label: sulfuric acid\n    mediaingredientmech_chebi_term:\n      id: CHEBI:26836\n      label: sulfuric acid\n    notes: UTEX lists 10 mL concentrated H2SO4 per liter.\n  - preferred_term: FeSO4 x 7 H2O\n    concentration:\n      value: '5'\n      unit: G_PER_L\n    term:\n      id: CHEBI:75836\n      label: iron(2+) sulfate heptahydrate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:75836\n      label: iron(2+) sulfate heptahydrate\n    notes: UTEX lists 5 g FeSO4 x 7 H2O per liter.\n    nutritional_roles:\n    - IRON_SOURCE\n  notes: UTEX adds one approximately 0.05 mL drop per liter of Bold Basal Medium.\n- preferred_term: Boron Stock\n  concentration:\n    value: '0.05'\n    unit: ML_PER_L\n  composition:\n  - preferred_term: dH2O\n    concentration:\n      value: '1000'\n      unit: ML_PER_L\n    term:\n      id: CHEBI:15377\n      label: water\n    mediaingredientmech_chebi_term:\n      id: CHEBI:15377\n      label: water\n    notes: UTEX brings BBM Boron Stock Solution to 1 L with dH2O.\n  - preferred_term: H3BO3\n    concentration:\n      value: '11'\n      unit: G_PER_L\n    term:\n      id: CHEBI:33118\n      label: boric acid\n    mediaingredientmech_chebi_term:\n      id: CHEBI:33118\n      label: boric acid\n    notes: UTEX lists 11 g H3BO3 per liter.\n    nutritional_roles:\n    - TRACE_ELEMENT\n  notes: UTEX adds one approximately 0.05 mL drop per liter of Bold Basal Medium.\n- preferred_term: Bold Trace Stock\n  concentration:\n    value: '0.05'\n    unit: ML_PER_L\n  composition:\n  - preferred_term: dH2O\n    concentration:\n      value: '1000'\n      unit: ML_PER_L\n    term:\n      id: CHEBI:15377\n      label: water\n    mediaingredientmech_chebi_term:\n      id: CHEBI:15377\n      label: water\n    notes: UTEX brings BBM Bold Trace Stock Solution to 1 L with dH2O.\n  - preferred_term: H2SO4\n    concentration:\n      value: '10'\n      unit: ML_PER_L\n    term:\n      id: CHEBI:26836\n      label: sulfuric acid\n    mediaingredientmech_chebi_term:\n      id: CHEBI:26836\n      label: sulfuric acid\n    notes: UTEX lists 10 mL concentrated H2SO4 per liter.\n  - preferred_term: ZnSO4 x 7 H2O\n    concentration:\n      value: '8.82'\n      unit: G_PER_L\n    term:\n      id: CHEBI:32312\n      label: zinc sulfate heptahydrate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32312\n      label: zinc sulfate heptahydrate\n    notes: UTEX lists 8.82 g ZnSO4 x 7 H2O per liter.\n    nutritional_roles:\n    - TRACE_ELEMENT\n  - preferred_term: MnCl2 x 4 H2O\n    concentration:\n      value: '1.44'\n      unit: G_PER_L\n    term:\n      id: CHEBI:86368\n      label: manganese(II) chloride tetrahydrate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:86368\n      label: manganese(II) chloride tetrahydrate\n    notes: UTEX lists 1.44 g/L of the manganese chloride tetrahydrate component in\n      the BBM Bold Trace Stock Solution.\n    nutritional_roles:\n    - TRACE_ELEMENT\n  - preferred_term: MoO3\n    concentration:\n      value: '0.71'\n      unit: G_PER_L\n    term:\n      id: CHEBI:30627\n      label: molybdenum trioxide\n    mediaingredientmech_chebi_term:\n      id: CHEBI:30627\n      label: molybdenum trioxide\n    notes: UTEX lists 0.71 g MoO3 per liter.\n    nutritional_roles:\n    - TRACE_ELEMENT\n  - preferred_term: CuSO4 x 5 H2O\n    concentration:\n      value: '1.57'\n      unit: G_PER_L\n    term:\n      id: CHEBI:31440\n      label: copper(II) sulfate pentahydrate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:31440\n      label: copper(II) sulfate pentahydrate\n    notes: UTEX lists 1.57 g CuSO4 x 5 H2O per liter.\n    nutritional_roles:\n    - TRACE_ELEMENT\n  - preferred_term: Co(NO3)2 x 6 H2O\n    concentration:\n      value: '0.49'\n      unit: G_PER_L\n    term:\n      id: CHEBI:86214\n      label: cobalt(II) nitrate hexahydrate\n    mediaingredientmech_chebi_term:\n      id: CHEBI:86214\n      label: cobalt(II) nitrate hexahydrate\n    notes: UTEX lists 0.49 g Co(NO3)2 x 6 H2O per liter.\n    nutritional_roles:\n    - NITROGEN_SOURCE\n    - TRACE_ELEMENT\n  notes: UTEX adds one approximately 0.05 mL drop per liter of Bold Basal Medium.\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: To approximately 900 mL dH2O, add the six Bristol mineral stocks and\n    one drop each of EDTA, Iron, Boron, and Bold Trace stocks.\n- step_number: 2\n  action: MIX\n  description: Bring the total volume to 1 L with dH2O.\n- step_number: 3\n  action: ALIQUOT\n  description: Transfer the medium to a 2 L Erlenmeyer flask and cover.\n- step_number: 4\n  action: AUTOCLAVE\n  description: Autoclave the covered Bold Basal Medium.\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  timestamp: '2026-01-28'\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: bold-basal-medium, URL: https://utex.org/products/bold-basal-medium'\n- timestamp: '2026-03-13T06:18:52.974585Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000034'\n- timestamp: '2026-03-17T19:45:03.934229+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Bold Basal Medium\" to \"bold_basal_medium\" for consistent\n    matching\n- timestamp: '2026-05-09T19:07:13Z'\n  curator: culturemech-agentic-curation\n  action: ADDED_GROWTH_EVIDENCE\n  notes: Added Scenedesmus quadricauda CPCC-158 BBM growth evidence and modeled pH/aeration/estradiol\n    assay conditions as a BBM variant.\n- timestamp: '2026-05-16T09:02:55.861551+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.072242+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-06T00:58:02.497461+00:00'\n  curator: curate_organism_culture_type.py\n  action: SET_ORGANISM_CULTURE_TYPE\n  notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'\n  changes: Set organism_culture_type=isolate (was unset)\n- timestamp: '2026-08-30T00:58:30.632073+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 10 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_bristol_bold_score35.py\n  action: RESOLVED_UTEX_BRISTOL_BOLD_SCORE35\n  changes: Grounded UTEX score-35 Bristol/Bold/Erdschreiber components\n  source: https://utex.org/products/bold-basal-medium\n  notes: UTEX prepares Bold Basal Medium from the six Bristol mineral stocks plus\n    one drop each of BBM EDTA, Iron, Boron, and Bold Trace stocks.\nreferences:\n- reference: UTEX:bold-basal-medium\n- reference: https://utex.org/products/bold-basal-medium\n- reference: PMID:35807621\n  title: Effect of 17\u03b2-Estradiol on Growth and Biosynthesis of Microalgae Scenedesmus\n    quadricauda (CPCC-158) and Duckweed Lemna minor (CPCC-490) Grown in Three Different\n    Media\n  authors: Kozlova, T. A.; Levin, D. B.\n  year: 2022\n  notes: Primary source supporting Scenedesmus quadricauda CPCC-158 cultivation in\n    Bold Basal Medium with study-specific pH, aeration, and estradiol treatments.\n- reference: https://utex.org/products/bbm-edta-stock-solution\n- reference: https://utex.org/products/bbm-iron-stock-solution\n- reference: https://utex.org/products/bbm-boron-stock-solution\n- reference: https://utex.org/products/bbm-bold-trace-stock-solution\noriginal_name: Bold Basal Medium\nvariants:\n- name: bbm_estradiol_exposure_assay\n  description: Bold Basal Medium assay formulation used for 17\u03b2-estradiol exposure\n    tests with Scenedesmus quadricauda CPCC-158.\n  modifications:\n  - Adjust pH to 7.0 before use.\n  - Aerate 250 mL Erlenmeyer flask cultures during the 11-day experiment.\n  - Add 17\u03b2-estradiol at 0.25-15.0 ng/L for exposure treatments; include no-hormone\n    controls.\n  - Maintain Scenedesmus quadricauda stock in BBM modified with NH4Cl at 4.5 ppm.\n  purpose: Experimental hormone-exposure growth assay using BBM as the base medium.\n  evidence:\n  - reference: PMID:35807621\n    supports: SUPPORT\n    snippet: 'The study was conducted using three types of media: Bold Basal Medium\n      (BBM)'\n    explanation: The paper explicitly used BBM as one of three media for the Scenedesmus\n      quadricauda CPCC-158 growth experiment.\norganism_culture_type: isolate\ntarget_organisms:\n- preferred_term: Scenedesmus quadricauda\n  term:\n    id: NCBITaxon:3089\n    label: Scenedesmus quadricauda\n  strain: CPCC-158\n  growth_metrics:\n  - measurement_conditions: BBM culture in aerated 250 mL Erlenmeyer flasks during\n      an 11-day 17\u03b2-estradiol exposure experiment; pH was adjusted to 7.0.\n    evidence:\n    - reference: PMID:35807621\n      supports: SUPPORT\n      snippet: E2 promoted the growth of S. quadricauda and L. minor\n      explanation: The source reports Scenedesmus quadricauda growth responses in\n        BBM-based experimental cultures.\n  evidence:\n  - reference: PMID:35807621\n    supports: SUPPORT\n    snippet: Scenedesmus quadricauda (CPCC-158)\n    explanation: Kozlova and Levin used Scenedesmus quadricauda CPCC-158 in BBM and\n      measured algal cell-density growth over an 11-day experiment.\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\n",
+      "before_sha256": "7e5f4215f3d2caf67c7ae4a47b8a639a7a9fabbd3663b842d51a7b4010e403cc",
+      "claims": [
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "dH2O",
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "status": "correct",
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "total volume to 1L",
+          "locator": "Directions make-up step",
+          "explanation": "ingredients[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "not possible: solvent input volume is not final mixture volume",
+          "basis": "final medium",
+          "limitations": []
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1
+          ],
+          "field": "ingredients[1].concentration",
+          "ingredient": "NaNO3",
+          "old": {
+            "value": "2.94",
+            "unit": "MILLIMOLAR"
+          },
+          "new": {
+            "value": "2.94",
+            "unit": "MILLIMOLAR"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "2.94 mM",
+          "locator": "recipe table, row 1, Final Concentration",
+          "explanation": "ingredients[1].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "none; source-reported value",
+          "basis": "final medium",
+          "limitations": [],
+          "source_component": "NaNO3 (Fisher BP360-500)",
+          "source_stock_input": "10 mL/L",
+          "source_stock_recipe": "10 g/400mL dH2O"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            2
+          ],
+          "field": "ingredients[2].concentration",
+          "ingredient": "CaCl2 x 2 H2O",
+          "old": {
+            "value": "0.17",
+            "unit": "MILLIMOLAR"
+          },
+          "new": {
+            "value": "0.17",
+            "unit": "MILLIMOLAR"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "0.17 mM",
+          "locator": "recipe table, row 2, Final Concentration",
+          "explanation": "ingredients[2].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "none; source-reported value",
+          "basis": "final medium",
+          "limitations": [],
+          "source_component": "CaCl2\u20222H2O (Sigma C-3881)",
+          "source_stock_input": "10 mL/L",
+          "source_stock_recipe": "1 g/400mL dH2O"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            3
+          ],
+          "field": "ingredients[3].concentration",
+          "ingredient": "MgSO4 x 7 H2O",
+          "old": {
+            "value": "0.3",
+            "unit": "MILLIMOLAR"
+          },
+          "new": {
+            "value": "0.3",
+            "unit": "MILLIMOLAR"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "0.3 mM",
+          "locator": "recipe table, row 3, Final Concentration",
+          "explanation": "ingredients[3].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "none; source-reported value",
+          "basis": "final medium",
+          "limitations": [],
+          "source_component": "MgSO4\u20227H2O (Sigma 230391)",
+          "source_stock_input": "10 mL/L",
+          "source_stock_recipe": "3 g/400mL dH2O"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            4
+          ],
+          "field": "ingredients[4].concentration",
+          "ingredient": "K2HPO4",
+          "old": {
+            "value": "0.43",
+            "unit": "MILLIMOLAR"
+          },
+          "new": {
+            "value": "0.43",
+            "unit": "MILLIMOLAR"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "0.43 mM",
+          "locator": "recipe table, row 4, Final Concentration",
+          "explanation": "ingredients[4].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "none; source-reported value",
+          "basis": "final medium",
+          "limitations": [],
+          "source_component": "K2HPO4 (Sigma P 3786)",
+          "source_stock_input": "10 mL/L",
+          "source_stock_recipe": "3 g/400mL dH2O"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            5
+          ],
+          "field": "ingredients[5].concentration",
+          "ingredient": "KH2PO4",
+          "old": {
+            "value": "1.29",
+            "unit": "MILLIMOLAR"
+          },
+          "new": {
+            "value": "1.29",
+            "unit": "MILLIMOLAR"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "1.29 mM",
+          "locator": "recipe table, row 5, Final Concentration",
+          "explanation": "ingredients[5].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "none; source-reported value",
+          "basis": "final medium",
+          "limitations": [],
+          "source_component": "KH2PO4 (Sigma P 0662)",
+          "source_stock_input": "10 mL/L",
+          "source_stock_recipe": "7 g/400mL dH2O"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            6
+          ],
+          "field": "ingredients[6].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "0.43",
+            "unit": "MILLIMOLAR"
+          },
+          "new": {
+            "value": "0.43",
+            "unit": "MILLIMOLAR"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "0.43 mM",
+          "locator": "recipe table, row 6, Final Concentration",
+          "explanation": "ingredients[6].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "none; source-reported value",
+          "basis": "final medium",
+          "limitations": [],
+          "source_component": "NaCl (Fisher S271-500)",
+          "source_stock_input": "10 mL/L",
+          "source_stock_recipe": "1 g/400mL dH2O"
+        },
+        {
+          "pointer": [
+            "solutions",
+            0
+          ],
+          "field": "solutions[0].concentration",
+          "ingredient": "EDTA Stock",
+          "old": {
+            "value": "0.05",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "0.05",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "One drop equals approximately 0.05 mL.",
+          "locator": "Directions step 2 and named stock in rows 7-10",
+          "explanation": "solutions[0].concentration: The source explicitly supplies the approximate drop volume; retain approximation notes and do not claim precise volumetric dosing.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "approximately 0.05 mL per 1 L final medium = approximately 0.05 mL/L",
+          "basis": "final medium",
+          "limitations": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            0
+          ],
+          "field": "solutions[0].composition[0].concentration",
+          "ingredient": "dH2O",
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "status": "correct",
+          "reference": "https://utex.org/products/bbm-edta-stock-solution",
+          "snippet": "total volume to 1 Liter",
+          "locator": "Directions make-up step",
+          "explanation": "solutions[0].composition[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "not possible: solvent input volume is not final mixture volume",
+          "basis": "inline stock final volume",
+          "limitations": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            1
+          ],
+          "field": "solutions[0].composition[1].concentration",
+          "ingredient": "EDTA",
+          "old": {
+            "value": "50",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "50",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bbm-edta-stock-solution",
+          "snippet": "50 grams of EDTA, acid form",
+          "locator": "Directions ingredient addition; separately final-volume step",
+          "explanation": "solutions[0].composition[1].concentration: The stated ingredient input is made up to one litre of stock. Do not reinterpret the parenthetical micromolar value as stock strength. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "50 g / 1 L stock",
+          "basis": "inline stock final volume",
+          "limitations": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            2
+          ],
+          "field": "solutions[0].composition[2].concentration",
+          "ingredient": "KOH",
+          "old": {
+            "value": "31",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "31",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bbm-edta-stock-solution",
+          "snippet": "31 grams of KOH",
+          "locator": "Directions ingredient addition; separately final-volume step",
+          "explanation": "solutions[0].composition[2].concentration: The stated ingredient input is made up to one litre of stock. Do not reinterpret the parenthetical micromolar value as stock strength. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "31 g / 1 L stock",
+          "basis": "inline stock final volume",
+          "limitations": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            1
+          ],
+          "field": "solutions[1].concentration",
+          "ingredient": "Iron Stock",
+          "old": {
+            "value": "0.05",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "0.05",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "One drop equals approximately 0.05 mL.",
+          "locator": "Directions step 2 and named stock in rows 7-10",
+          "explanation": "solutions[1].concentration: The source explicitly supplies the approximate drop volume; retain approximation notes and do not claim precise volumetric dosing.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "approximately 0.05 mL per 1 L final medium = approximately 0.05 mL/L",
+          "basis": "final medium",
+          "limitations": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            0
+          ],
+          "field": "solutions[1].composition[0].concentration",
+          "ingredient": "dH2O",
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "status": "correct",
+          "reference": "https://utex.org/products/bbm-iron-stock-solution",
+          "snippet": "total volume to 1 Liter",
+          "locator": "Directions make-up step",
+          "explanation": "solutions[1].composition[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "not possible: solvent input volume is not final mixture volume",
+          "basis": "inline stock final volume",
+          "limitations": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            1
+          ],
+          "field": "solutions[1].composition[1].concentration",
+          "ingredient": "H2SO4",
+          "old": {
+            "value": "10",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "10",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bbm-iron-stock-solution",
+          "snippet": "10 mL of H2SO4",
+          "locator": "Directions ingredient addition; separately final-volume step",
+          "explanation": "solutions[1].composition[1].concentration: The stated ingredient input is made up to one litre of stock. Do not reinterpret the parenthetical micromolar value as stock strength. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "10 mL / 1 L stock",
+          "basis": "inline stock final volume",
+          "limitations": [
+            "Neither this iron-stock HTML nor its PDF explicitly specifies acid strength; existing concentrated wording needs correction or additional evidence. No density or molarity conversion."
+          ]
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            2
+          ],
+          "field": "solutions[1].composition[2].concentration",
+          "ingredient": "FeSO4 x 7 H2O",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bbm-iron-stock-solution",
+          "snippet": "5 g of FeSO4\u20227H2O",
+          "locator": "Directions ingredient addition; separately final-volume step",
+          "explanation": "solutions[1].composition[2].concentration: The stated ingredient input is made up to one litre of stock. Do not reinterpret the parenthetical micromolar value as stock strength. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "5 g / 1 L stock",
+          "basis": "inline stock final volume",
+          "limitations": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            2
+          ],
+          "field": "solutions[2].concentration",
+          "ingredient": "Boron Stock",
+          "old": {
+            "value": "0.05",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "0.05",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "One drop equals approximately 0.05 mL.",
+          "locator": "Directions step 2 and named stock in rows 7-10",
+          "explanation": "solutions[2].concentration: The source explicitly supplies the approximate drop volume; retain approximation notes and do not claim precise volumetric dosing.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "approximately 0.05 mL per 1 L final medium = approximately 0.05 mL/L",
+          "basis": "final medium",
+          "limitations": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            2,
+            "composition",
+            0
+          ],
+          "field": "solutions[2].composition[0].concentration",
+          "ingredient": "dH2O",
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "status": "correct",
+          "reference": "https://utex.org/products/bbm-boron-stock-solution",
+          "snippet": "total volume to 1 Liter",
+          "locator": "Directions make-up step",
+          "explanation": "solutions[2].composition[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "not possible: solvent input volume is not final mixture volume",
+          "basis": "inline stock final volume",
+          "limitations": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            2,
+            "composition",
+            1
+          ],
+          "field": "solutions[2].composition[1].concentration",
+          "ingredient": "H3BO3",
+          "old": {
+            "value": "11",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "11",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bbm-boron-stock-solution",
+          "snippet": "11 g of H3BO3",
+          "locator": "Directions ingredient addition; separately final-volume step",
+          "explanation": "solutions[2].composition[1].concentration: The stated ingredient input is made up to one litre of stock. Do not reinterpret the parenthetical micromolar value as stock strength. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "11 g / 1 L stock",
+          "basis": "inline stock final volume",
+          "limitations": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            3
+          ],
+          "field": "solutions[3].concentration",
+          "ingredient": "Bold Trace Stock",
+          "old": {
+            "value": "0.05",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "0.05",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "One drop equals approximately 0.05 mL.",
+          "locator": "Directions step 2 and named stock in rows 7-10",
+          "explanation": "solutions[3].concentration: The source explicitly supplies the approximate drop volume; retain approximation notes and do not claim precise volumetric dosing.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "approximately 0.05 mL per 1 L final medium = approximately 0.05 mL/L",
+          "basis": "final medium",
+          "limitations": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            0
+          ],
+          "field": "solutions[3].composition[0].concentration",
+          "ingredient": "dH2O",
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "status": "correct",
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "total volume to 1 L",
+          "locator": "Directions make-up step",
+          "explanation": "solutions[3].composition[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "not possible: solvent input volume is not final mixture volume",
+          "basis": "inline stock final volume",
+          "limitations": []
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            1
+          ],
+          "field": "solutions[3].composition[1].concentration",
+          "ingredient": "H2SO4",
+          "old": {
+            "value": "10",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "10",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "10-mL",
+          "locator": "stock recipe table, row 1, Amount; Directions final-volume step",
+          "explanation": "solutions[3].composition[1].concentration: Use the Amount cell with the explicit one-litre stock preparation. Adjacent concentration columns conflict with that basis and are not substituted. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "10 mL / 1 L stock",
+          "basis": "inline stock final volume",
+          "limitations": [
+            "HTML says final concentration is for stock, yet adjacent concentrations differ from the Amount-per-litre preparation; the PDF shows the same inconsistent columns."
+          ],
+          "source_component": "H2SO4 conc."
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            2
+          ],
+          "field": "solutions[3].composition[2].concentration",
+          "ingredient": "ZnSO4 x 7 H2O",
+          "old": {
+            "value": "8.82",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "8.82",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "8.82 g",
+          "locator": "stock recipe table, row 2, Amount; Directions final-volume step",
+          "explanation": "solutions[3].composition[2].concentration: Use the Amount cell with the explicit one-litre stock preparation. Adjacent concentration columns conflict with that basis and are not substituted. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "8.82 g / 1 L stock",
+          "basis": "inline stock final volume",
+          "limitations": [
+            "HTML says final concentration is for stock, yet adjacent concentrations differ from the Amount-per-litre preparation; the PDF shows the same inconsistent columns."
+          ],
+          "source_component": "ZnSO4\u20227H2O"
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            3
+          ],
+          "field": "solutions[3].composition[3].concentration",
+          "ingredient": "MnCl2 x 4 H2O",
+          "old": {
+            "value": "1.44",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1.44",
+            "unit": "G_PER_L"
+          },
+          "status": "conflict",
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "MnCl\u20224H2O",
+          "locator": "stock recipe table, row 3, Amount; Directions final-volume step",
+          "explanation": "solutions[3].composition[3].concentration: both official HTML and inspected PDF print MnCl with tetrahydrate, not local MnCl2. Leave the existing amount and identity unverified and unchanged; added evidence supports only the source-spelling conflict, not this concentration.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "1.44 g / 1 L stock",
+          "basis": "inline stock final volume",
+          "limitations": [
+            "HTML says final concentration is for stock, yet adjacent concentrations differ from the Amount-per-litre preparation; the PDF shows the same inconsistent columns.",
+            "Both HTML and visually inspected PDF print MnCl with tetrahydrate, not the local MnCl2. Chemical-form correction cannot be silently assumed; leave existing quantity unverified."
+          ],
+          "source_component": "MnCl\u20224H2O"
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            4
+          ],
+          "field": "solutions[3].composition[4].concentration",
+          "ingredient": "MoO3",
+          "old": {
+            "value": "0.71",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.71",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "0.71 g",
+          "locator": "stock recipe table, row 4, Amount; Directions final-volume step",
+          "explanation": "solutions[3].composition[4].concentration: Use the Amount cell with the explicit one-litre stock preparation. Adjacent concentration columns conflict with that basis and are not substituted. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "0.71 g / 1 L stock",
+          "basis": "inline stock final volume",
+          "limitations": [
+            "HTML says final concentration is for stock, yet adjacent concentrations differ from the Amount-per-litre preparation; the PDF shows the same inconsistent columns."
+          ],
+          "source_component": "MoO3"
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            5
+          ],
+          "field": "solutions[3].composition[5].concentration",
+          "ingredient": "CuSO4 x 5 H2O",
+          "old": {
+            "value": "1.57",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1.57",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "1.57 g",
+          "locator": "stock recipe table, row 5, Amount; Directions final-volume step",
+          "explanation": "solutions[3].composition[5].concentration: Use the Amount cell with the explicit one-litre stock preparation. Adjacent concentration columns conflict with that basis and are not substituted. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "1.57 g / 1 L stock",
+          "basis": "inline stock final volume",
+          "limitations": [
+            "HTML says final concentration is for stock, yet adjacent concentrations differ from the Amount-per-litre preparation; the PDF shows the same inconsistent columns."
+          ],
+          "source_component": "CuSO4\u20225H2O"
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            6
+          ],
+          "field": "solutions[3].composition[6].concentration",
+          "ingredient": "Co(NO3)2 x 6 H2O",
+          "old": {
+            "value": "0.49",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.49",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "0.49 g",
+          "locator": "stock recipe table, row 6, Amount; Directions final-volume step",
+          "explanation": "solutions[3].composition[6].concentration: Use the Amount cell with the explicit one-litre stock preparation. Adjacent concentration columns conflict with that basis and are not substituted. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration.",
+          "action_taken": "proposed; not yet applied",
+          "calculation": "0.49 g / 1 L stock",
+          "basis": "inline stock final volume",
+          "limitations": [
+            "HTML says final concentration is for stock, yet adjacent concentrations differ from the Amount-per-litre preparation; the PDF shows the same inconsistent columns."
+          ],
+          "source_component": "Co(NO3)2\u20226H2O"
+        }
+      ],
+      "extra_claims": [
+        {
+          "path": "variants[0].modifications[0]",
+          "old": "Adjust pH to 7.0 before use.",
+          "proposed": "Adjust pH to 7.0 before use.",
+          "status": "evidence_only",
+          "reference": "doi:10.3390/plants11131669",
+          "snippet": "adjusted to 7",
+          "locator": "sec2dot2-plants-11-01669",
+          "explanation": "Applies to assay media before equilibration/use, not the pre-culture pH. The method separately identifies HCl/NaOH stock strength but no fixed titrant volume.",
+          "action_taken": "none; read-only source preview"
+        },
+        {
+          "path": "variants[0].modifications[1]",
+          "old": "Aerate 250 mL Erlenmeyer flask cultures during the 11-day experiment.",
+          "proposed": "Aerate 250 mL Erlenmeyer flask cultures during the 11-day experiment.",
+          "status": "evidence_only",
+          "reference": "doi:10.3390/plants11131669",
+          "snippet": "250 mL Erlenmeyer flasks",
+          "locator": "sec2dot1-plants-11-01669",
+          "explanation": "This is flask capacity, not a verified 250 mL culture aliquot. Algal cultures were aerated during the eleven-day trial; do not infer working volume.",
+          "action_taken": "none; read-only source preview"
+        },
+        {
+          "path": "variants[0].modifications[2]",
+          "old": "Add 17\u03b2-estradiol at 0.25-15.0 ng/L for exposure treatments; include no-hormone controls.",
+          "proposed": "Test separate 17-beta-estradiol treatments at 0.25, 0.75, 2.50, 5.0 and 15.0 ng/L, with a no-hormone control.",
+          "status": "correct",
+          "reference": "doi:10.3390/plants11131669",
+          "snippet": "0.25, 0.75, 2.50, 5.0, and 15.0 ng/L",
+          "locator": "sec2dot3-plants-11-01669",
+          "explanation": "Replace the range-only summary with the explicitly tested levels. The source doses active E2 from a water-soluble preparation whose powder is five percent E2; these are not powder concentrations. No dose is added to the canonical parent medium.",
+          "action_taken": "none; read-only source preview"
+        },
+        {
+          "path": "variants[0].modifications[3]",
+          "old": "Maintain Scenedesmus quadricauda stock in BBM modified with NH4Cl at 4.5 ppm.",
+          "proposed": "Maintain the pre-experiment Scenedesmus quadricauda stock culture in modified BBM containing 4.5 ppm NH4Cl; do not assert this as a universal final assay-medium dose.",
+          "status": "evidence_only",
+          "reference": "doi:10.3390/plants11131669",
+          "snippet": "NH4Cl was added to 4.5 ppm",
+          "locator": "sec2dot1-plants-11-01669",
+          "explanation": "The statement belongs to stock culture maintained before the experiment. The paper does not specify a mass/volume ppm basis in this passage, so no mg/L conversion is proposed.",
+          "action_taken": "none; read-only source preview"
+        }
+      ],
+      "operations": [
+        {
+          "kind": "remove",
+          "pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "old_present": true,
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "total volume to 1L",
+          "locator": "Directions make-up step",
+          "reason": "ingredients[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount.",
+          "counts": {
+            "unsupported_quantity_slots_removed": 1
+          }
+        },
+        {
+          "kind": "remove",
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            0,
+            "concentration"
+          ],
+          "old_present": true,
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "reference": "https://utex.org/products/bbm-edta-stock-solution",
+          "snippet": "total volume to 1 Liter",
+          "locator": "Directions make-up step",
+          "reason": "solutions[0].composition[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount.",
+          "counts": {
+            "unsupported_quantity_slots_removed": 1
+          }
+        },
+        {
+          "kind": "remove",
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            0,
+            "concentration"
+          ],
+          "old_present": true,
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "reference": "https://utex.org/products/bbm-iron-stock-solution",
+          "snippet": "total volume to 1 Liter",
+          "locator": "Directions make-up step",
+          "reason": "solutions[1].composition[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount.",
+          "counts": {
+            "unsupported_quantity_slots_removed": 1
+          }
+        },
+        {
+          "kind": "remove",
+          "pointer": [
+            "solutions",
+            2,
+            "composition",
+            0,
+            "concentration"
+          ],
+          "old_present": true,
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "reference": "https://utex.org/products/bbm-boron-stock-solution",
+          "snippet": "total volume to 1 Liter",
+          "locator": "Directions make-up step",
+          "reason": "solutions[2].composition[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount.",
+          "counts": {
+            "unsupported_quantity_slots_removed": 1
+          }
+        },
+        {
+          "kind": "remove",
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            0,
+            "concentration"
+          ],
+          "old_present": true,
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "total volume to 1 L",
+          "locator": "Directions make-up step",
+          "reason": "solutions[3].composition[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount.",
+          "counts": {
+            "unsupported_quantity_slots_removed": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            3,
+            "notes"
+          ],
+          "old_present": true,
+          "old": "UTEX lists 1.44 g/L of the manganese chloride tetrahydrate component in the BBM Bold Trace Stock Solution.",
+          "new": "UTEX prints MnCl with tetrahydrate in this stock row, without the second chloride. The existing MnCl2 identity and 1.44 g/L amount are retained unverified; no final-medium conversion is made.",
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "MnCl\u20224H2O",
+          "locator": "stock recipe table, row 3, Amount; Directions final-volume step",
+          "reason": "Make the source-form mismatch explicit; do not guess a corrected chemical formula.",
+          "counts": {
+            "ingredient_context_notes_corrected": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            1,
+            "notes"
+          ],
+          "old_present": true,
+          "old": "UTEX lists 10 mL concentrated H2SO4 per liter.",
+          "new": "UTEX adds 10 mL H2SO4 and makes this iron stock up to 1 L. The inspected HTML and PDF do not specify acid strength; no density or molarity conversion is assumed.",
+          "reference": "https://utex.org/products/bbm-iron-stock-solution",
+          "snippet": "10 mL of H2SO4",
+          "locator": "Directions iron stock; BBM PDF page 2",
+          "reason": "Remove unsupported concentrated-acid qualification.",
+          "counts": {
+            "stock_context_notes_corrected": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "variants",
+            0,
+            "modifications",
+            2
+          ],
+          "old_present": true,
+          "old": "Add 17\u03b2-estradiol at 0.25-15.0 ng/L for exposure treatments; include no-hormone controls.",
+          "new": "Test separate 17-beta-estradiol treatments at 0.25, 0.75, 2.50, 5.0 and 15.0 ng/L, with a no-hormone control.",
+          "reference": "doi:10.3390/plants11131669",
+          "snippet": "0.25, 0.75, 2.50, 5.0, and 15.0 ng/L",
+          "locator": "Methods 2.3",
+          "reason": "Preserve the five separate tested levels and no-hormone control, not an unspecified continuous range.",
+          "counts": {
+            "variant_quantity_texts_corrected": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "variants",
+            0,
+            "modifications",
+            3
+          ],
+          "old_present": true,
+          "old": "Maintain Scenedesmus quadricauda stock in BBM modified with NH4Cl at 4.5 ppm.",
+          "new": "Maintain the pre-experiment Scenedesmus quadricauda stock culture in modified BBM containing 4.5 ppm NH4Cl; do not assert this as a universal final assay-medium dose.",
+          "reference": "doi:10.3390/plants11131669",
+          "snippet": "NH4Cl was added to 4.5 ppm",
+          "locator": "Methods 2.1",
+          "reason": "Scope NH4Cl to pre-experiment stock culture; no unsupported ppm conversion.",
+          "counts": {
+            "variant_context_descriptions_corrected": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "variants",
+            0,
+            "description"
+          ],
+          "old_present": true,
+          "old": "Bold Basal Medium assay formulation used for 17\u03b2-estradiol exposure tests with Scenedesmus quadricauda CPCC-158.",
+          "new": "Study-specific BBM stock-culture and estradiol assay conditions. The study cites Stein 1973 for BBM; exact equivalence to this UTEX parent formulation is not established.",
+          "reference": "doi:10.3390/plants11131669",
+          "snippet": "0.25, 0.75, 2.50, 5.0, and 15.0 ng/L",
+          "locator": "Methods 2.1-2.3 and reference 45",
+          "reason": "Keep study-specific formulation scope distinct from the UTEX parent.",
+          "counts": {
+            "variant_context_descriptions_corrected": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            0,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bold-basal-medium",
+              "supports": "SUPPORT",
+              "snippet": "total volume to 1L",
+              "explanation": "ingredients[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount. Locator: Directions make-up step."
+            }
+          ],
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "total volume to 1L",
+          "locator": "ingredients[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount. Locator: Directions make-up step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            1,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bold-basal-medium",
+              "supports": "SUPPORT",
+              "snippet": "2.94 mM",
+              "explanation": "ingredients[1].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 1, Final Concentration."
+            }
+          ],
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "2.94 mM",
+          "locator": "ingredients[1].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 1, Final Concentration.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            2,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bold-basal-medium",
+              "supports": "SUPPORT",
+              "snippet": "0.17 mM",
+              "explanation": "ingredients[2].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 2, Final Concentration."
+            }
+          ],
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "0.17 mM",
+          "locator": "ingredients[2].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 2, Final Concentration.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            3,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bold-basal-medium",
+              "supports": "SUPPORT",
+              "snippet": "0.3 mM",
+              "explanation": "ingredients[3].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 3, Final Concentration."
+            }
+          ],
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "0.3 mM",
+          "locator": "ingredients[3].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 3, Final Concentration.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            4,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bold-basal-medium",
+              "supports": "SUPPORT",
+              "snippet": "0.43 mM",
+              "explanation": "ingredients[4].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 4, Final Concentration."
+            }
+          ],
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "0.43 mM",
+          "locator": "ingredients[4].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 4, Final Concentration.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            5,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bold-basal-medium",
+              "supports": "SUPPORT",
+              "snippet": "1.29 mM",
+              "explanation": "ingredients[5].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 5, Final Concentration."
+            }
+          ],
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "1.29 mM",
+          "locator": "ingredients[5].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 5, Final Concentration.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            6,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bold-basal-medium",
+              "supports": "SUPPORT",
+              "snippet": "0.43 mM",
+              "explanation": "ingredients[6].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 6, Final Concentration."
+            }
+          ],
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "0.43 mM",
+          "locator": "ingredients[6].concentration: Exact final molarity in the named row; stock input is separate and not independently re-expanded. The source table labels this cell Final Concentration; keep the source molarity and hydrate form without importing stock composition as a direct amount. Locator: recipe table, row 6, Final Concentration.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            0,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bbm-edta-stock-solution",
+              "supports": "SUPPORT",
+              "snippet": "total volume to 1 Liter",
+              "explanation": "solutions[0].composition[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount. Locator: Directions make-up step."
+            }
+          ],
+          "reference": "https://utex.org/products/bbm-edta-stock-solution",
+          "snippet": "total volume to 1 Liter",
+          "locator": "solutions[0].composition[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount. Locator: Directions make-up step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            1,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bbm-edta-stock-solution",
+              "supports": "SUPPORT",
+              "snippet": "50 grams of EDTA, acid form",
+              "explanation": "solutions[0].composition[1].concentration: The stated ingredient input is made up to one litre of stock. Do not reinterpret the parenthetical micromolar value as stock strength. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: Directions ingredient addition; separately final-volume step."
+            }
+          ],
+          "reference": "https://utex.org/products/bbm-edta-stock-solution",
+          "snippet": "50 grams of EDTA, acid form",
+          "locator": "solutions[0].composition[1].concentration: The stated ingredient input is made up to one litre of stock. Do not reinterpret the parenthetical micromolar value as stock strength. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: Directions ingredient addition; separately final-volume step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            2,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bbm-edta-stock-solution",
+              "supports": "SUPPORT",
+              "snippet": "31 grams of KOH",
+              "explanation": "solutions[0].composition[2].concentration: The stated ingredient input is made up to one litre of stock. Do not reinterpret the parenthetical micromolar value as stock strength. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: Directions ingredient addition; separately final-volume step."
+            }
+          ],
+          "reference": "https://utex.org/products/bbm-edta-stock-solution",
+          "snippet": "31 grams of KOH",
+          "locator": "solutions[0].composition[2].concentration: The stated ingredient input is made up to one litre of stock. Do not reinterpret the parenthetical micromolar value as stock strength. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: Directions ingredient addition; separately final-volume step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            0,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bbm-iron-stock-solution",
+              "supports": "SUPPORT",
+              "snippet": "total volume to 1 Liter",
+              "explanation": "solutions[1].composition[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount. Locator: Directions make-up step."
+            }
+          ],
+          "reference": "https://utex.org/products/bbm-iron-stock-solution",
+          "snippet": "total volume to 1 Liter",
+          "locator": "solutions[1].composition[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount. Locator: Directions make-up step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            1,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bbm-iron-stock-solution",
+              "supports": "SUPPORT",
+              "snippet": "10 mL of H2SO4",
+              "explanation": "solutions[1].composition[1].concentration: The stated ingredient input is made up to one litre of stock. Do not reinterpret the parenthetical micromolar value as stock strength. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: Directions ingredient addition; separately final-volume step."
+            }
+          ],
+          "reference": "https://utex.org/products/bbm-iron-stock-solution",
+          "snippet": "10 mL of H2SO4",
+          "locator": "solutions[1].composition[1].concentration: The stated ingredient input is made up to one litre of stock. Do not reinterpret the parenthetical micromolar value as stock strength. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: Directions ingredient addition; separately final-volume step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            2,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bbm-iron-stock-solution",
+              "supports": "SUPPORT",
+              "snippet": "5 g of FeSO4\u20227H2O",
+              "explanation": "solutions[1].composition[2].concentration: The stated ingredient input is made up to one litre of stock. Do not reinterpret the parenthetical micromolar value as stock strength. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: Directions ingredient addition; separately final-volume step."
+            }
+          ],
+          "reference": "https://utex.org/products/bbm-iron-stock-solution",
+          "snippet": "5 g of FeSO4\u20227H2O",
+          "locator": "solutions[1].composition[2].concentration: The stated ingredient input is made up to one litre of stock. Do not reinterpret the parenthetical micromolar value as stock strength. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: Directions ingredient addition; separately final-volume step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            2,
+            "composition",
+            0,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bbm-boron-stock-solution",
+              "supports": "SUPPORT",
+              "snippet": "total volume to 1 Liter",
+              "explanation": "solutions[2].composition[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount. Locator: Directions make-up step."
+            }
+          ],
+          "reference": "https://utex.org/products/bbm-boron-stock-solution",
+          "snippet": "total volume to 1 Liter",
+          "locator": "solutions[2].composition[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount. Locator: Directions make-up step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            2,
+            "composition",
+            1,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bbm-boron-stock-solution",
+              "supports": "SUPPORT",
+              "snippet": "11 g of H3BO3",
+              "explanation": "solutions[2].composition[1].concentration: The stated ingredient input is made up to one litre of stock. Do not reinterpret the parenthetical micromolar value as stock strength. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: Directions ingredient addition; separately final-volume step."
+            }
+          ],
+          "reference": "https://utex.org/products/bbm-boron-stock-solution",
+          "snippet": "11 g of H3BO3",
+          "locator": "solutions[2].composition[1].concentration: The stated ingredient input is made up to one litre of stock. Do not reinterpret the parenthetical micromolar value as stock strength. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: Directions ingredient addition; separately final-volume step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            0,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+              "supports": "SUPPORT",
+              "snippet": "total volume to 1 L",
+              "explanation": "solutions[3].composition[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount. Locator: Directions make-up step."
+            }
+          ],
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "total volume to 1 L",
+          "locator": "solutions[3].composition[0].concentration: the source specifies make-up to the final medium or stock volume, not a fixed water input. Remove the unsupported 1000 mL/L assertion while retaining the water node and preparation notes. This is not a replacement numeric amount. Locator: Directions make-up step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            1,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+              "supports": "SUPPORT",
+              "snippet": "10-mL",
+              "explanation": "solutions[3].composition[1].concentration: Use the Amount cell with the explicit one-litre stock preparation. Adjacent concentration columns conflict with that basis and are not substituted. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: stock recipe table, row 1, Amount; Directions final-volume step."
+            }
+          ],
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "10-mL",
+          "locator": "solutions[3].composition[1].concentration: Use the Amount cell with the explicit one-litre stock preparation. Adjacent concentration columns conflict with that basis and are not substituted. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: stock recipe table, row 1, Amount; Directions final-volume step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            2,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+              "supports": "SUPPORT",
+              "snippet": "8.82 g",
+              "explanation": "solutions[3].composition[2].concentration: Use the Amount cell with the explicit one-litre stock preparation. Adjacent concentration columns conflict with that basis and are not substituted. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: stock recipe table, row 2, Amount; Directions final-volume step."
+            }
+          ],
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "8.82 g",
+          "locator": "solutions[3].composition[2].concentration: Use the Amount cell with the explicit one-litre stock preparation. Adjacent concentration columns conflict with that basis and are not substituted. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: stock recipe table, row 2, Amount; Directions final-volume step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            3,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+              "supports": "SUPPORT",
+              "snippet": "MnCl\u20224H2O",
+              "explanation": "solutions[3].composition[3].concentration: both official HTML and inspected PDF print MnCl with tetrahydrate, not local MnCl2. Leave the existing amount and identity unverified and unchanged; added evidence supports only the source-spelling conflict, not this concentration. Locator: stock recipe table, row 3, Amount; Directions final-volume step."
+            }
+          ],
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "MnCl\u20224H2O",
+          "locator": "solutions[3].composition[3].concentration: both official HTML and inspected PDF print MnCl with tetrahydrate, not local MnCl2. Leave the existing amount and identity unverified and unchanged; added evidence supports only the source-spelling conflict, not this concentration. Locator: stock recipe table, row 3, Amount; Directions final-volume step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            4,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+              "supports": "SUPPORT",
+              "snippet": "0.71 g",
+              "explanation": "solutions[3].composition[4].concentration: Use the Amount cell with the explicit one-litre stock preparation. Adjacent concentration columns conflict with that basis and are not substituted. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: stock recipe table, row 4, Amount; Directions final-volume step."
+            }
+          ],
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "0.71 g",
+          "locator": "solutions[3].composition[4].concentration: Use the Amount cell with the explicit one-litre stock preparation. Adjacent concentration columns conflict with that basis and are not substituted. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: stock recipe table, row 4, Amount; Directions final-volume step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            5,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+              "supports": "SUPPORT",
+              "snippet": "1.57 g",
+              "explanation": "solutions[3].composition[5].concentration: Use the Amount cell with the explicit one-litre stock preparation. Adjacent concentration columns conflict with that basis and are not substituted. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: stock recipe table, row 5, Amount; Directions final-volume step."
+            }
+          ],
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "1.57 g",
+          "locator": "solutions[3].composition[5].concentration: Use the Amount cell with the explicit one-litre stock preparation. Adjacent concentration columns conflict with that basis and are not substituted. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: stock recipe table, row 5, Amount; Directions final-volume step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            6,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+              "supports": "SUPPORT",
+              "snippet": "0.49 g",
+              "explanation": "solutions[3].composition[6].concentration: Use the Amount cell with the explicit one-litre stock preparation. Adjacent concentration columns conflict with that basis and are not substituted. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: stock recipe table, row 6, Amount; Directions final-volume step."
+            }
+          ],
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "0.49 g",
+          "locator": "solutions[3].composition[6].concentration: Use the Amount cell with the explicit one-litre stock preparation. Adjacent concentration columns conflict with that basis and are not substituted. The Directions make this inline stock up to one litre. Amount / 1 L is the stock concentration, not the final-medium concentration. Locator: stock recipe table, row 6, Amount; Directions final-volume step.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bold-basal-medium",
+              "supports": "SUPPORT",
+              "snippet": "One drop equals approximately 0.05 mL.",
+              "explanation": "solutions[0].concentration through solutions[3].concentration: Directions name EDTA, Iron, Boron and Bold Trace stocks, each dosed as one approximate 0.05 mL drop per one litre final medium. Preserve approximation; do not infer a precise drop from typical practice. Locator: Directions 2-3 and table rows 7-10."
+            }
+          ],
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "One drop equals approximately 0.05 mL.",
+          "locator": "solutions[0].concentration through solutions[3].concentration: Directions name EDTA, Iron, Boron and Bold Trace stocks, each dosed as one approximate 0.05 mL drop per one litre final medium. Preserve approximation; do not infer a precise drop from typical practice. Locator: Directions 2-3 and table rows 7-10.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "variants",
+            0,
+            "evidence"
+          ],
+          "old_present": true,
+          "old": [
+            {
+              "reference": "PMID:35807621",
+              "supports": "SUPPORT",
+              "snippet": "The study was conducted using three types of media: Bold Basal Medium (BBM)",
+              "explanation": "The paper explicitly used BBM as one of three media for the Scenedesmus quadricauda CPCC-158 growth experiment."
+            }
+          ],
+          "new": [
+            {
+              "reference": "PMID:35807621",
+              "supports": "SUPPORT",
+              "snippet": "The study was conducted using three types of media: Bold Basal Medium (BBM)",
+              "explanation": "The paper explicitly used BBM as one of three media for the Scenedesmus quadricauda CPCC-158 growth experiment."
+            },
+            {
+              "reference": "doi:10.3390/plants11131669",
+              "supports": "SUPPORT",
+              "snippet": "0.25, 0.75, 2.50, 5.0, and 15.0 ng/L",
+              "explanation": "variants[0].modifications[0:4]: the listed E2 levels are discrete active-estradiol concentrations, with a no-hormone control, not chemical-powder concentrations. Separately inspected Methods 2.1 excerpts: \"NH4Cl was added to 4.5 ppm\" (pre-experiment stock culture; unspecified ppm basis) and \"250 mL Erlenmeyer flasks\" (vessel capacity, not culture volume). Methods 2.2 states \"adjusted to 7\" for assay-medium pH. The study cites Stein 1973 for BBM; no exact equivalence to the UTEX parent or universal NH4Cl assay dose is asserted. Locator: Methods 2.1-2.3; reference 45."
+            }
+          ],
+          "reference": "doi:10.3390/plants11131669",
+          "snippet": "0.25, 0.75, 2.50, 5.0, and 15.0 ng/L",
+          "locator": "variants[0].modifications[0:4]: the listed E2 levels are discrete active-estradiol concentrations, with a no-hormone control, not chemical-powder concentrations. Separately inspected Methods 2.1 excerpts: \"NH4Cl was added to 4.5 ppm\" (pre-experiment stock culture; unspecified ppm basis) and \"250 mL Erlenmeyer flasks\" (vessel capacity, not culture volume). Methods 2.2 states \"adjusted to 7\" for assay-medium pH. The study cites Stein 1973 for BBM; no exact equivalence to the UTEX parent or universal NH4Cl assay dose is asserted. Locator: Methods 2.1-2.3; reference 45.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "references",
+            6
+          ],
+          "old_present": true,
+          "old": {
+            "reference": "https://utex.org/products/bbm-bold-trace-stock-solution"
+          },
+          "new": {
+            "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+            "title": "BBM Bold Trace Stock Solution Recipe | UTEX Culture Collection of Algae",
+            "authors": "UTEX Culture Collection of Algae",
+            "notes": "source_type=culture_collection_page; discovery_mode=existing_record_reference; accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage are retained; source conflicts are not silently repaired. Recipe publication year is unknown; website/PDF copyright is not used as publication year."
+          },
+          "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+          "snippet": "total volume to 1 L",
+          "locator": "source title/author context and inspected recipe or methods",
+          "reason": "Enrich the existing reference with verified provenance.",
+          "counts": {
+            "bibliographic_entries_enriched": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "references",
+            5
+          ],
+          "old_present": true,
+          "old": {
+            "reference": "https://utex.org/products/bbm-boron-stock-solution"
+          },
+          "new": {
+            "reference": "https://utex.org/products/bbm-boron-stock-solution",
+            "title": "BBM Boron Stock Solution Recipe | UTEX Culture Collection of Algae",
+            "authors": "UTEX Culture Collection of Algae",
+            "notes": "source_type=culture_collection_page; discovery_mode=existing_record_reference; accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage are retained; source conflicts are not silently repaired. Recipe publication year is unknown; website/PDF copyright is not used as publication year."
+          },
+          "reference": "https://utex.org/products/bbm-boron-stock-solution",
+          "snippet": "total volume to 1 Liter",
+          "locator": "source title/author context and inspected recipe or methods",
+          "reason": "Enrich the existing reference with verified provenance.",
+          "counts": {
+            "bibliographic_entries_enriched": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "references",
+            3
+          ],
+          "old_present": true,
+          "old": {
+            "reference": "https://utex.org/products/bbm-edta-stock-solution"
+          },
+          "new": {
+            "reference": "https://utex.org/products/bbm-edta-stock-solution",
+            "title": "BBM EDTA Stock Solution Recipe | UTEX Culture Collection of Algae",
+            "authors": "UTEX Culture Collection of Algae",
+            "notes": "source_type=culture_collection_page; discovery_mode=existing_record_reference; accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage are retained; source conflicts are not silently repaired. Recipe publication year is unknown; website/PDF copyright is not used as publication year."
+          },
+          "reference": "https://utex.org/products/bbm-edta-stock-solution",
+          "snippet": "total volume to 1 Liter",
+          "locator": "source title/author context and inspected recipe or methods",
+          "reason": "Enrich the existing reference with verified provenance.",
+          "counts": {
+            "bibliographic_entries_enriched": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "references",
+            4
+          ],
+          "old_present": true,
+          "old": {
+            "reference": "https://utex.org/products/bbm-iron-stock-solution"
+          },
+          "new": {
+            "reference": "https://utex.org/products/bbm-iron-stock-solution",
+            "title": "BBM Iron Stock Solution Recipe | UTEX Culture Collection of Algae",
+            "authors": "UTEX Culture Collection of Algae",
+            "notes": "source_type=culture_collection_page; discovery_mode=existing_record_reference; accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage are retained; source conflicts are not silently repaired. Recipe publication year is unknown; website/PDF copyright is not used as publication year."
+          },
+          "reference": "https://utex.org/products/bbm-iron-stock-solution",
+          "snippet": "total volume to 1 Liter",
+          "locator": "source title/author context and inspected recipe or methods",
+          "reason": "Enrich the existing reference with verified provenance.",
+          "counts": {
+            "bibliographic_entries_enriched": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "references",
+            1
+          ],
+          "old_present": true,
+          "old": {
+            "reference": "https://utex.org/products/bold-basal-medium"
+          },
+          "new": {
+            "reference": "https://utex.org/products/bold-basal-medium",
+            "title": "Bold Basal Medium | UTEX Culture Collection of Algae",
+            "authors": "UTEX Culture Collection of Algae",
+            "notes": "source_type=culture_collection_page; discovery_mode=existing_record_reference; accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage are retained; source conflicts are not silently repaired. Recipe publication year is unknown; website/PDF copyright is not used as publication year."
+          },
+          "reference": "https://utex.org/products/bold-basal-medium",
+          "snippet": "total volume to 1L",
+          "locator": "source title/author context and inspected recipe or methods",
+          "reason": "Enrich the existing reference with verified provenance.",
+          "counts": {
+            "bibliographic_entries_enriched": 1
+          }
+        },
+        {
+          "kind": "append",
+          "pointer": [
+            "references"
+          ],
+          "old_length": 7,
+          "new": [
+            {
+              "reference": "doi:10.3390/plants11131669",
+              "title": "Effect of 17\u03b2-Estradiol on Growth and Biosynthesis of Microalgae Scenedesmus quadricauda (CPCC-158) and Duckweed Lemna minor (CPCC-490) Grown in Three Different Media",
+              "authors": "Tatiana A. Kozlova; David B. Levin",
+              "notes": "source_type=journal_article; discovery_mode=existing_record_reference; public full-text API after browser retrieval failed; accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage are retained; source conflicts are not silently repaired. Full methods inspected from Europe PMC XML version PMC9269517.1 after browser retrieval failed. The study cites Stein 1973 for BBM; exact identity with the UTEX parent is unverified.",
+              "year": 2022
+            }
+          ],
+          "reference": "doi:10.3390/plants11131669",
+          "snippet": "0.25, 0.75, 2.50, 5.0, and 15.0 ng/L",
+          "locator": "source title/author context and inspected recipe or methods",
+          "reason": "Add the inspected formulation/relationship sources.",
+          "counts": {
+            "new_references": 1
+          }
+        }
+      ]
+    },
+    {
+      "key": "botryococcus-medium",
+      "path": "data/normalized_yaml/algae/Botryococcus_Medium.yaml",
+      "id": "CultureMech:000035",
+      "source_term": "UTEX:botryococcus-medium",
+      "before_text": "id: CultureMech:000035\nname: botryococcus_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: Botryococcus Medium\n  term:\n    id: UTEX:botryococcus-medium\n    label: Botryococcus Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for freshwater\n  algae cultivation.\nnotes: UTEX prepares Botryococcus Medium by supplementing prepared Bristol Medium\n  with 0.151 mM diammonium hydrogen phosphate stock and bringing the final volume\n  to 1 L with dH2O.\ningredients:\n- preferred_term: (NH4)2HPO4\n  concentration:\n    value: '0.151'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:63051\n    label: diammonium hydrogen phosphate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:63051\n    label: diammonium hydrogen phosphate\n  supplier_catalog:\n    supplier_name: Fisher\n    catalog_number: A686\n  notes: UTEX lists 1 mL/L of a 2 g/100 mL stock, for 0.151 mM final.\n  nutritional_roles:\n  - NITROGEN_SOURCE\n  - PHOSPHATE_SOURCE\n- preferred_term: dH2O\n  concentration:\n    value: '59'\n    unit: ML_PER_L\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n  notes: Added to bring 940 mL Bristol Medium and 1 mL stock to 1 L.\nsolutions:\n- preferred_term: Bristol Medium\n  concentration:\n    value: '940'\n    unit: ML_PER_L\n  culturemech_term:\n    id: CultureMech:000037\n    label: Bristol Medium\n  notes: UTEX lists 940 mL prepared Bristol Medium per 1 L final medium.\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Prepare 940 mL of Bristol Medium.\n- step_number: 2\n  action: DISSOLVE\n  description: Add 1 mL/L (NH4)2HPO4 stock.\n- step_number: 3\n  action: MIX\n  description: Bring the total volume to 1 L with dH2O.\n- step_number: 4\n  action: AUTOCLAVE\n  description: Cover the flask and autoclave to sterilize.\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: botryococcus-medium, URL: https://utex.org/products/botryococcus-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:52.979553Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000035'\n- timestamp: '2026-03-17T19:45:03.938630+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Botryococcus Medium\" to \"botryococcus_medium\" for consistent\n    matching\n- timestamp: '2026-05-16T09:02:55.867642+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.079169+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:30.640980+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 2 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_algal_blends.py\n  action: RESOLVED_UTEX_ALGAL_BLEND_GRAPH\n  changes: Grounded UTEX algal prepared-media and stock-solution components\n  source: https://utex.org/products/botryococcus-medium\n  notes: UTEX prepares Botryococcus Medium by supplementing prepared Bristol Medium\n    with 0.151 mM diammonium hydrogen phosphate stock and bringing the final volume\n    to 1 L with dH2O.\nreferences:\n- reference: UTEX:botryococcus-medium\n- reference: https://utex.org/products/botryococcus-medium\noriginal_name: Botryococcus Medium\nparent_media:\n  path: data/normalized_yaml/algae/Bristol_Medium.yaml\n  relationship: SUPPLEMENTED_VARIANT\n  id: CultureMech:000037\n  name: bristol_medium\n  notes: Adds 1 mL/L (NH4)2HPO4 stock to 940 mL prepared Bristol Medium.\nvariant_relationship: SUPPLEMENTED_VARIANT\nvariant_modifications:\n- Adds 1 mL/L (NH4)2HPO4 stock to 940 mL prepared Bristol Medium.\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\n",
+      "before_sha256": "4c577ead43be926fd3701e1f6990992e2e99109bb6c3fcc9f222ccae7043916a",
+      "claims": [
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "(NH4)2HPO4",
+          "old": {
+            "value": "0.151",
+            "unit": "MILLIMOLAR"
+          },
+          "new": {
+            "value": "0.151",
+            "unit": "MILLIMOLAR"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/botryococcus-medium",
+          "snippet": "0.151 mM",
+          "locator": "recipe table rows 1-2 and Directions 1-3",
+          "explanation": "ingredients[0].concentration: source-reported final phosphate contribution, not stock strength. Table row 2 separately specifies a 2 g/100 mL stock dosed at 1 mL/L. This evidence also supports correcting root notes to distinguish those stages.",
+          "action_taken": "proposed; not yet applied"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1
+          ],
+          "field": "ingredients[1].concentration",
+          "ingredient": "dH2O",
+          "old": {
+            "value": "59",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "status": "correct",
+          "reference": "https://utex.org/products/botryococcus-medium",
+          "snippet": "Bring total volume to 1 L with dH2O.",
+          "locator": "recipe table rows 1-2 and Directions 1-3",
+          "explanation": "ingredients[1].concentration: remove the unsupported fixed water input. Arithmetic 1000 - 940 - 1 = 59 assumes exactly additive solution volumes; the source instead makes up to one litre. Retain its make-up notes; this is not a replacement numeric amount.",
+          "action_taken": "proposed; not yet applied"
+        },
+        {
+          "pointer": [
+            "solutions",
+            0
+          ],
+          "field": "solutions[0].concentration",
+          "ingredient": "Bristol Medium",
+          "old": {
+            "value": "940",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "940",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/botryococcus-medium",
+          "snippet": "940 mL",
+          "locator": "recipe table rows 1-2 and Directions 1-3",
+          "explanation": "solutions[0].concentration: the specified 940 mL prepared Bristol input belongs to one litre final medium, so 940 mL / 1 L = 940 mL/L. Preserve the separately referenced parent formulation and do not assume undiluted parent components in this child.",
+          "action_taken": "proposed; not yet applied"
+        }
+      ],
+      "extra_claims": [],
+      "operations": [
+        {
+          "kind": "remove",
+          "pointer": [
+            "ingredients",
+            1,
+            "concentration"
+          ],
+          "old_present": true,
+          "old": {
+            "value": "59",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "reference": "https://utex.org/products/botryococcus-medium",
+          "snippet": "Bring total volume to 1 L with dH2O.",
+          "locator": "recipe table rows 1-2 and Directions 1-3",
+          "reason": "ingredients[1].concentration: remove the unsupported fixed water input. Arithmetic 1000 - 940 - 1 = 59 assumes exactly additive solution volumes; the source instead makes up to one litre. Retain its make-up notes; this is not a replacement numeric amount.",
+          "counts": {
+            "unsupported_quantity_slots_removed": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "notes"
+          ],
+          "old_present": true,
+          "old": "UTEX prepares Botryococcus Medium by supplementing prepared Bristol Medium with 0.151 mM diammonium hydrogen phosphate stock and bringing the final volume to 1 L with dH2O.",
+          "new": "UTEX adds 1 mL of a 2 g/100 mL diammonium hydrogen phosphate stock to 940 mL prepared Bristol Medium and makes the final volume up to 1 L. The source reports 0.151 mM as the final phosphate contribution, not stock strength.",
+          "reference": "https://utex.org/products/botryococcus-medium",
+          "snippet": "0.151 mM",
+          "locator": "recipe table row 2 and Directions 1-3",
+          "reason": "Correct stock/final concentration wording, preserving the existing final amount.",
+          "counts": {
+            "recipe_context_notes_corrected": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "preparation_steps",
+            1,
+            "action"
+          ],
+          "old_present": true,
+          "old": "DISSOLVE",
+          "new": "MIX",
+          "reference": "https://utex.org/products/botryococcus-medium",
+          "snippet": "Add components listed.",
+          "locator": "Directions 2 and table row 2",
+          "reason": "This step adds a liquid phosphate stock, not a dry salt.",
+          "counts": {
+            "preparation_actions_corrected": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            0,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/botryococcus-medium",
+              "supports": "SUPPORT",
+              "snippet": "0.151 mM",
+              "explanation": "ingredients[0].concentration: source-reported final phosphate contribution, not stock strength. Table row 2 separately specifies a 2 g/100 mL stock dosed at 1 mL/L. This evidence also supports correcting root notes to distinguish those stages. Locator: recipe table rows 1-2 and Directions 1-3."
+            }
+          ],
+          "reference": "https://utex.org/products/botryococcus-medium",
+          "snippet": "0.151 mM",
+          "locator": "ingredients[0].concentration: source-reported final phosphate contribution, not stock strength. Table row 2 separately specifies a 2 g/100 mL stock dosed at 1 mL/L. This evidence also supports correcting root notes to distinguish those stages. Locator: recipe table rows 1-2 and Directions 1-3.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            1,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/botryococcus-medium",
+              "supports": "SUPPORT",
+              "snippet": "Bring total volume to 1 L with dH2O.",
+              "explanation": "ingredients[1].concentration: remove the unsupported fixed water input. Arithmetic 1000 - 940 - 1 = 59 assumes exactly additive solution volumes; the source instead makes up to one litre. Retain its make-up notes; this is not a replacement numeric amount. Locator: recipe table rows 1-2 and Directions 1-3."
+            }
+          ],
+          "reference": "https://utex.org/products/botryococcus-medium",
+          "snippet": "Bring total volume to 1 L with dH2O.",
+          "locator": "ingredients[1].concentration: remove the unsupported fixed water input. Arithmetic 1000 - 940 - 1 = 59 assumes exactly additive solution volumes; the source instead makes up to one litre. Retain its make-up notes; this is not a replacement numeric amount. Locator: recipe table rows 1-2 and Directions 1-3.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/botryococcus-medium",
+              "supports": "SUPPORT",
+              "snippet": "940 mL",
+              "explanation": "solutions[0].concentration: the specified 940 mL prepared Bristol input belongs to one litre final medium, so 940 mL / 1 L = 940 mL/L. Preserve the separately referenced parent formulation and do not assume undiluted parent components in this child. Locator: recipe table rows 1-2 and Directions 1-3."
+            }
+          ],
+          "reference": "https://utex.org/products/botryococcus-medium",
+          "snippet": "940 mL",
+          "locator": "solutions[0].concentration: the specified 940 mL prepared Bristol input belongs to one litre final medium, so 940 mL / 1 L = 940 mL/L. Preserve the separately referenced parent formulation and do not assume undiluted parent components in this child. Locator: recipe table rows 1-2 and Directions 1-3.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "references",
+            1
+          ],
+          "old_present": true,
+          "old": {
+            "reference": "https://utex.org/products/botryococcus-medium"
+          },
+          "new": {
+            "reference": "https://utex.org/products/botryococcus-medium",
+            "title": "Botryococcus Medium | UTEX Culture Collection of Algae",
+            "authors": "UTEX Culture Collection of Algae",
+            "notes": "source_type=culture_collection_page; discovery_mode=existing_record_reference; accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage are retained; source conflicts are not silently repaired. Recipe publication year is unknown; website/PDF copyright is not used as publication year."
+          },
+          "reference": "https://utex.org/products/botryococcus-medium",
+          "snippet": "0.151 mM",
+          "locator": "source title/author context and inspected recipe or methods",
+          "reason": "Enrich the existing reference with verified provenance.",
+          "counts": {
+            "bibliographic_entries_enriched": 1
+          }
+        }
+      ]
+    },
+    {
+      "key": "proteose-medium",
+      "path": "data/normalized_yaml/algae/Proteose_Medium.yaml",
+      "id": "CultureMech:000188",
+      "source_term": "UTEX:proteose-medium",
+      "before_text": "id: CultureMech:000188\nname: proteose_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nph_value: 6.8\nmedia_term:\n  preferred_term: Proteose Medium\n  term:\n    id: UTEX:proteose-medium\n    label: Proteose Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for freshwater\n  algae cultivation.\nnotes: UTEX prepares Proteose Medium by adding 1 g/L Proteose Peptone to prepared\n  Bristol Medium.\ningredients:\n- preferred_term: Proteose Peptone\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  term:\n    id: MICRO:0000180\n    label: Proteose Peptone\n  supplier_catalog:\n    supplier_name: BD\n    catalog_number: '211684'\n  notes: UTEX lists 1 g/L Proteose Peptone per 1 L final medium.\n  nutritional_roles:\n  - NITROGEN_SOURCE\nsolutions:\n- preferred_term: Bristol Medium\n  concentration:\n    value: '1000'\n    unit: ML_PER_L\n  culturemech_term:\n    id: CultureMech:000037\n    label: Bristol Medium\n  notes: UTEX lists 1 L prepared Bristol Medium per 1 L final medium.\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Add Proteose Peptone to prepared Bristol Medium.\n- step_number: 2\n  action: AUTOCLAVE\n  description: Cover and autoclave the medium.\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: proteose-medium, URL: https://utex.org/products/proteose-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:53.497249Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000188'\n- timestamp: '2026-03-17T19:45:04.424570+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Proteose Medium\" to \"proteose_medium\" for consistent\n    matching\n- timestamp: '2026-05-16T09:02:56.095322+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.307056+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:30.939954+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 2 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_remaining_score50.py\n  action: RESOLVED_UTEX_SCORE50_ALGAE_GRAPH\n  changes: Grounded remaining score-50 UTEX algae recipe components\n  source: https://utex.org/products/proteose-medium\n  notes: UTEX prepares Proteose Medium by adding 1 g/L Proteose Peptone to prepared\n    Bristol Medium.\nreferences:\n- reference: UTEX:proteose-medium\n- reference: https://utex.org/products/proteose-medium\noriginal_name: Proteose Medium\nparent_media:\n  path: data/normalized_yaml/algae/Bristol_Medium.yaml\n  relationship: SUPPLEMENTED_VARIANT\n  id: CultureMech:000037\n  name: bristol_medium\n  notes: Adds 1 g/L Proteose Peptone to prepared Bristol Medium.\nvariant_relationship: SUPPLEMENTED_VARIANT\nvariant_modifications:\n- Adds 1 g/L Proteose Peptone to prepared Bristol Medium.\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\n",
+      "before_sha256": "66dfd4315618352a08b7812d6ab9de35c5448efa3e12ec9ebef4150d4bac5895",
+      "claims": [
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "Proteose Peptone",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/proteose-medium",
+          "snippet": "1 g/L",
+          "locator": "recipe table and For 1 L Total heading",
+          "explanation": "ingredients[0].concentration: the source explicitly gives a one-litre batch, one-litre Bristol input and 1 g/L proteose peptone. For the base input, 1 L x 1000 mL/L / 1 L batch = 1000 mL/L. The optional agar preparation is not silently added to this liquid record.",
+          "action_taken": "proposed; not yet applied"
+        },
+        {
+          "pointer": [
+            "solutions",
+            0
+          ],
+          "field": "solutions[0].concentration",
+          "ingredient": "Bristol Medium",
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/proteose-medium",
+          "snippet": "1 L",
+          "locator": "recipe table and For 1 L Total heading",
+          "explanation": "solutions[0].concentration: the source explicitly gives a one-litre batch, one-litre Bristol input and 1 g/L proteose peptone. For the base input, 1 L x 1000 mL/L / 1 L batch = 1000 mL/L. The optional agar preparation is not silently added to this liquid record.",
+          "action_taken": "proposed; not yet applied"
+        }
+      ],
+      "extra_claims": [],
+      "operations": [
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            0,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/proteose-medium",
+              "supports": "SUPPORT",
+              "snippet": "1 g/L",
+              "explanation": "ingredients[0].concentration: the source explicitly gives a one-litre batch, one-litre Bristol input and 1 g/L proteose peptone. For the base input, 1 L x 1000 mL/L / 1 L batch = 1000 mL/L. The optional agar preparation is not silently added to this liquid record. Locator: recipe table and For 1 L Total heading."
+            }
+          ],
+          "reference": "https://utex.org/products/proteose-medium",
+          "snippet": "1 g/L",
+          "locator": "ingredients[0].concentration: the source explicitly gives a one-litre batch, one-litre Bristol input and 1 g/L proteose peptone. For the base input, 1 L x 1000 mL/L / 1 L batch = 1000 mL/L. The optional agar preparation is not silently added to this liquid record. Locator: recipe table and For 1 L Total heading.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/proteose-medium",
+              "supports": "SUPPORT",
+              "snippet": "1 L",
+              "explanation": "solutions[0].concentration: the source explicitly gives a one-litre batch, one-litre Bristol input and 1 g/L proteose peptone. For the base input, 1 L x 1000 mL/L / 1 L batch = 1000 mL/L. The optional agar preparation is not silently added to this liquid record. Locator: recipe table and For 1 L Total heading."
+            }
+          ],
+          "reference": "https://utex.org/products/proteose-medium",
+          "snippet": "1 L",
+          "locator": "solutions[0].concentration: the source explicitly gives a one-litre batch, one-litre Bristol input and 1 g/L proteose peptone. For the base input, 1 L x 1000 mL/L / 1 L batch = 1000 mL/L. The optional agar preparation is not silently added to this liquid record. Locator: recipe table and For 1 L Total heading.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "references",
+            1
+          ],
+          "old_present": true,
+          "old": {
+            "reference": "https://utex.org/products/proteose-medium"
+          },
+          "new": {
+            "reference": "https://utex.org/products/proteose-medium",
+            "title": "Proteose Medium | UTEX Culture Collection of Algae",
+            "authors": "UTEX Culture Collection of Algae",
+            "notes": "source_type=culture_collection_page; discovery_mode=existing_record_reference; accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage are retained; source conflicts are not silently repaired. Recipe publication year is unknown; website/PDF copyright is not used as publication year."
+          },
+          "reference": "https://utex.org/products/proteose-medium",
+          "snippet": "1 g/L",
+          "locator": "source title/author context and inspected recipe or methods",
+          "reason": "Enrich the existing reference with verified provenance.",
+          "counts": {
+            "bibliographic_entries_enriched": 1
+          }
+        }
+      ]
+    },
+    {
+      "key": "bristol-nacl-medium",
+      "path": "data/normalized_yaml/algae/bristol_nacl_medium.yaml",
+      "id": "CultureMech:000036",
+      "source_term": "UTEX:bristol-nacl-medium",
+      "before_text": "id: CultureMech:000036\nname: bristol_nacl_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: Bristol-NaCl Medium\n  term:\n    id: UTEX:bristol-nacl-medium\n    label: Bristol-NaCl Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for saltwater\n  algae cultivation.\nnotes: UTEX prepares Bristol-NaCl Medium by adding 3.6 g/L NaCl to prepared Bristol\n  Medium and bringing the total volume to 1 L.\ningredients:\n- preferred_term: NaCl\n  concentration:\n    value: '0.062'\n    unit: MOLAR\n  term:\n    id: CHEBI:26710\n    label: sodium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n  supplier_catalog:\n    supplier_name: Fisher\n    catalog_number: S271-500\n  notes: UTEX lists 3.6 g/L NaCl, equivalent to 0.062 M.\n  physicochemical_roles:\n  - OSMOTIC_AGENT\nsolutions:\n- preferred_term: Bristol Medium\n  concentration:\n    value: '1000'\n    unit: ML_PER_L\n  culturemech_term:\n    id: CultureMech:000037\n    label: Bristol Medium\n  notes: UTEX lists 1 L prepared Bristol Medium per 1 L final medium.\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Prepare Bristol Medium through step one.\n- step_number: 2\n  action: DISSOLVE\n  description: Add NaCl and bring the total volume to 1 L with dH2O.\n- step_number: 3\n  action: AUTOCLAVE\n  description: Cover and autoclave the medium.\n- step_number: 4\n  action: STORE\n  description: Store at refrigerator temperature.\nsalinity: saltwater\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: bristol-nacl-medium, URL: https://utex.org/products/bristol-nacl-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:52.983755Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000036'\n- timestamp: '2026-03-17T19:45:03.942375+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Bristol-NaCl Medium\" to \"bristol_nacl_medium\" for consistent\n    matching\n- timestamp: '2026-05-16T09:02:56.399466+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.561056+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:31.387479+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 2 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_remaining_score50.py\n  action: RESOLVED_UTEX_SCORE50_ALGAE_GRAPH\n  changes: Grounded remaining score-50 UTEX algae recipe components\n  source: https://utex.org/products/bristol-nacl-medium\n  notes: UTEX prepares Bristol-NaCl Medium by adding 3.6 g/L NaCl to prepared Bristol\n    Medium and bringing the total volume to 1 L.\nreferences:\n- reference: UTEX:bristol-nacl-medium\n- reference: https://utex.org/products/bristol-nacl-medium\noriginal_name: Bristol-NaCl Medium\nparent_media:\n  path: data/normalized_yaml/algae/Bristol_Medium.yaml\n  relationship: SUPPLEMENTED_VARIANT\n  id: CultureMech:000037\n  name: bristol_medium\n  notes: Adds 3.6 g/L NaCl to prepared Bristol Medium.\nvariant_relationship: SUPPLEMENTED_VARIANT\nvariant_modifications:\n- Adds 3.6 g/L NaCl to prepared Bristol Medium.\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\n",
+      "before_sha256": "90b6fe3bd4e9a91861ab5647c5c4ba089e98447f3c8f6c129091ee70e7d79dbc",
+      "claims": [
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "0.062",
+            "unit": "MOLAR"
+          },
+          "new": {
+            "value": "0.062",
+            "unit": "MOLAR"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bristol-nacl-medium",
+          "snippet": "0.062 M",
+          "locator": "Directions 1-2 and recipe table",
+          "explanation": "ingredients[0].concentration: source-reported concentration for the added NaCl row, separately listed as 3.6 g/L. Do not represent this as total NaCl including the Bristol base or independently re-convert rounded molarity. This evidence also supports root notes about adding salt before final make-up.",
+          "action_taken": "proposed; not yet applied"
+        },
+        {
+          "pointer": [
+            "solutions",
+            0
+          ],
+          "field": "solutions[0].concentration",
+          "ingredient": "Bristol Medium",
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "status": "correct",
+          "reference": "https://utex.org/products/bristol-nacl-medium",
+          "snippet": "Prepare Bristol Medium through step one.",
+          "locator": "Directions 1-2 and recipe table",
+          "explanation": "solutions[0].concentration: Directions stop Bristol preparation before its final volume adjustment, add NaCl, then make the child up to one litre. The table one-litre Bristol row defines recipe scale, not an aliquot of completed parent medium. Remove the unsupported working-dose assertion; retain the parent reference with explicit preparation-stage notes. This is not a replacement numeric amount. The same evidence supports solution label/notes and parent/variant descriptions.",
+          "action_taken": "proposed; not yet applied"
+        }
+      ],
+      "extra_claims": [],
+      "operations": [
+        {
+          "kind": "remove",
+          "pointer": [
+            "solutions",
+            0,
+            "concentration"
+          ],
+          "old_present": true,
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "reference": "https://utex.org/products/bristol-nacl-medium",
+          "snippet": "Prepare Bristol Medium through step one.",
+          "locator": "Directions 1-2 and recipe table",
+          "reason": "solutions[0].concentration: Directions stop Bristol preparation before its final volume adjustment, add NaCl, then make the child up to one litre. The table one-litre Bristol row defines recipe scale, not an aliquot of completed parent medium. Remove the unsupported working-dose assertion; retain the parent reference with explicit preparation-stage notes. This is not a replacement numeric amount. The same evidence supports solution label/notes and parent/variant descriptions.",
+          "counts": {
+            "unsupported_quantity_slots_removed": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            0,
+            "preferred_term"
+          ],
+          "old_present": true,
+          "old": "Bristol Medium",
+          "new": "Bristol mineral base (before volume adjustment)",
+          "reference": "https://utex.org/products/bristol-nacl-medium",
+          "snippet": "Prepare Bristol Medium through step one.",
+          "locator": "Directions 1-2; table NaCl amount",
+          "reason": "Preserve the unfinished Bristol preparation stage and final child volume.",
+          "counts": {
+            "stock_labels_corrected": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "solutions",
+            0,
+            "notes"
+          ],
+          "old_present": true,
+          "old": "UTEX lists 1 L prepared Bristol Medium per 1 L final medium.",
+          "new": "Use Bristol mineral preparation through step one at the one-litre recipe scale; add 3.6 g NaCl before making the child up to 1 L. This is not a one-litre aliquot of completed Bristol Medium.",
+          "reference": "https://utex.org/products/bristol-nacl-medium",
+          "snippet": "Prepare Bristol Medium through step one.",
+          "locator": "Directions 1-2; table NaCl amount",
+          "reason": "Preserve the unfinished Bristol preparation stage and final child volume.",
+          "counts": {
+            "stock_context_notes_corrected": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "notes"
+          ],
+          "old_present": true,
+          "old": "UTEX prepares Bristol-NaCl Medium by adding 3.6 g/L NaCl to prepared Bristol Medium and bringing the total volume to 1 L.",
+          "new": "UTEX adds 3.6 g NaCl to the Bristol mineral preparation before final volume adjustment to 1 L, rather than to a one-litre aliquot of finished Bristol Medium.",
+          "reference": "https://utex.org/products/bristol-nacl-medium",
+          "snippet": "Prepare Bristol Medium through step one.",
+          "locator": "Directions 1-2; table NaCl amount",
+          "reason": "Preserve the unfinished Bristol preparation stage and final child volume.",
+          "counts": {
+            "recipe_context_notes_corrected": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "parent_media",
+            "notes"
+          ],
+          "old_present": true,
+          "old": "Adds 3.6 g/L NaCl to prepared Bristol Medium.",
+          "new": "Use Bristol mineral preparation through step one at the one-litre recipe scale; add 3.6 g NaCl before making the child up to 1 L. This is not a one-litre aliquot of completed Bristol Medium.",
+          "reference": "https://utex.org/products/bristol-nacl-medium",
+          "snippet": "Prepare Bristol Medium through step one.",
+          "locator": "Directions 1-2; table NaCl amount",
+          "reason": "Preserve the unfinished Bristol preparation stage and final child volume.",
+          "counts": {
+            "relationship_dose_descriptions_corrected": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "variant_modifications",
+            0
+          ],
+          "old_present": true,
+          "old": "Adds 3.6 g/L NaCl to prepared Bristol Medium.",
+          "new": "Use Bristol mineral preparation through step one at the one-litre recipe scale; add 3.6 g NaCl before making the child up to 1 L. This is not a one-litre aliquot of completed Bristol Medium.",
+          "reference": "https://utex.org/products/bristol-nacl-medium",
+          "snippet": "Prepare Bristol Medium through step one.",
+          "locator": "Directions 1-2; table NaCl amount",
+          "reason": "Preserve the unfinished Bristol preparation stage and final child volume.",
+          "counts": {
+            "relationship_dose_descriptions_corrected": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "ingredients",
+            0,
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bristol-nacl-medium",
+              "supports": "SUPPORT",
+              "snippet": "0.062 M",
+              "explanation": "ingredients[0].concentration: source-reported concentration for the added NaCl row, separately listed as 3.6 g/L. Do not represent this as total NaCl including the Bristol base or independently re-convert rounded molarity. This evidence also supports root notes about adding salt before final make-up. Locator: Directions 1-2 and recipe table."
+            }
+          ],
+          "reference": "https://utex.org/products/bristol-nacl-medium",
+          "snippet": "0.062 M",
+          "locator": "ingredients[0].concentration: source-reported concentration for the added NaCl row, separately listed as 3.6 g/L. Do not represent this as total NaCl including the Bristol base or independently re-convert rounded molarity. This evidence also supports root notes about adding salt before final make-up. Locator: Directions 1-2 and recipe table.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bristol-nacl-medium",
+              "supports": "SUPPORT",
+              "snippet": "Prepare Bristol Medium through step one.",
+              "explanation": "solutions[0].concentration: Directions stop Bristol preparation before its final volume adjustment, add NaCl, then make the child up to one litre. The table one-litre Bristol row defines recipe scale, not an aliquot of completed parent medium. Remove the unsupported working-dose assertion; retain the parent reference with explicit preparation-stage notes. This is not a replacement numeric amount. The same evidence supports solution label/notes and parent/variant descriptions. Locator: Directions 1-2 and recipe table."
+            }
+          ],
+          "reference": "https://utex.org/products/bristol-nacl-medium",
+          "snippet": "Prepare Bristol Medium through step one.",
+          "locator": "solutions[0].concentration: Directions stop Bristol preparation before its final volume adjustment, add NaCl, then make the child up to one litre. The table one-litre Bristol row defines recipe scale, not an aliquot of completed parent medium. Remove the unsupported working-dose assertion; retain the parent reference with explicit preparation-stage notes. This is not a replacement numeric amount. The same evidence supports solution label/notes and parent/variant descriptions. Locator: Directions 1-2 and recipe table.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "parent_media",
+            "evidence"
+          ],
+          "old_present": false,
+          "old": null,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bristol-nacl-medium",
+              "supports": "SUPPORT",
+              "snippet": "Prepare Bristol Medium through step one.",
+              "explanation": "parent_media.notes and variant_modifications[0]: Bristol is used only through its first preparation step; NaCl is added before final make-up to one litre. The parent ID/path identifies that source preparation, not an added litre of completed medium. Locator: Directions 1-2 and recipe table."
+            }
+          ],
+          "reference": "https://utex.org/products/bristol-nacl-medium",
+          "snippet": "Prepare Bristol Medium through step one.",
+          "locator": "parent_media.notes and variant_modifications[0]: Bristol is used only through its first preparation step; NaCl is added before final make-up to one litre. The parent ID/path identifies that source preparation, not an added litre of completed medium. Locator: Directions 1-2 and recipe table.",
+          "reason": "Attach the scoped, inspected support without altering existing evidence.",
+          "counts": {
+            "new_evidence": 1
+          }
+        },
+        {
+          "kind": "set",
+          "pointer": [
+            "references",
+            1
+          ],
+          "old_present": true,
+          "old": {
+            "reference": "https://utex.org/products/bristol-nacl-medium"
+          },
+          "new": {
+            "reference": "https://utex.org/products/bristol-nacl-medium",
+            "title": "Bristol-NaCl Medium | UTEX Culture Collection of Algae",
+            "authors": "UTEX Culture Collection of Algae",
+            "notes": "source_type=culture_collection_page; discovery_mode=existing_record_reference; accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage are retained; source conflicts are not silently repaired. Recipe publication year is unknown; website/PDF copyright is not used as publication year."
+          },
+          "reference": "https://utex.org/products/bristol-nacl-medium",
+          "snippet": "Prepare Bristol Medium through step one.",
+          "locator": "source title/author context and inspected recipe or methods",
+          "reason": "Enrich the existing reference with verified provenance.",
+          "counts": {
+            "bibliographic_entries_enriched": 1
+          }
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "The BBM trace source prints MnCl with tetrahydrate; its intended chemical identity and the existing MnCl2 amount remain unverified. Added node evidence supports only that source-spelling conflict.",
+    "BBM trace concentration columns and stock-page parenthetical micromolar values conflict with explicit stock preparation amounts. Preserve inspected Amount-per-litre stock recipes, not those incompatible columns; no new final-medium conversions.",
+    "The BBM iron stock does not specify acid strength. No density, purity or molarity is assumed.",
+    "The BBM study cites Stein 1973; exact equivalence with the current UTEX parent is unverified. NH4Cl ppm basis and culture working volume remain unspecified; no numerical conversion or aliquot inference.",
+    "Bristol-NaCl uses an unfinished parent preparation; its table one-litre row is not certified as a working dose of completed Bristol. The reference and explicit stage notes are retained without a fabricated dose.",
+    "Optional agar formulations are not silently added to these liquid records. No new taxa-media associations, IDs or growth/role assertions are curated.",
+    "Supplier-catalog identities, generic incubation/light claims and unrelated preexisting organism evidence are not blanket-certified by this ingredient review."
+  ],
+  "structured_claim_rows": 40,
+  "extra_claim_rows": 5,
+  "records_edited": 0,
+  "state": "preview; authoritative records unchanged"
+}

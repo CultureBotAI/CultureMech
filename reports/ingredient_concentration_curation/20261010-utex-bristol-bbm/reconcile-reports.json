@@ -1,0 +1,41 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "reports",
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "reports": [
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/records/bristol-medium.md",
+      "sha256": "1c7af7b63210b9b51517b2d9a68af903e609cec08e403b674f448a349cd8bde5",
+      "structured_claim_rows": 7,
+      "narrative_claim_rows": 1
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/records/bold-basal-medium.md",
+      "sha256": "9693c6aa33ab85f6ff76b540dd535fc1276133d1784c9045141d4eed94d65931",
+      "structured_claim_rows": 26,
+      "narrative_claim_rows": 4
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/records/botryococcus-medium.md",
+      "sha256": "e75b8c17e87cc8c13515facd4e33ebdaf6e892376094fd8194e557573dc2634e",
+      "structured_claim_rows": 3,
+      "narrative_claim_rows": 0
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/records/proteose-medium.md",
+      "sha256": "b2fc2316c3a941ac8c0e633bdd5441957d00c6f9376739515f924ad4cc461205",
+      "structured_claim_rows": 2,
+      "narrative_claim_rows": 0
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/records/bristol-nacl-medium.md",
+      "sha256": "5b73d5fccb5f1a7d15799e0f00b3d642761f7f077f67626b47fc8b26cd713b5f",
+      "structured_claim_rows": 2,
+      "narrative_claim_rows": 0
+    }
+  ],
+  "canonical_coverage_increment": 5,
+  "source_inventory_unchanged": true
+}

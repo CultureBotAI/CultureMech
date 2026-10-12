@@ -1,0 +1,23 @@
+{
+  "terminal": true,
+  "phase": "indexes",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/generate_recipe_indexes.py",
+        "--recipe-dir",
+        "data/normalized_yaml",
+        "--output-dir",
+        "/tmp/ingredient-media-20261007/436-index-preview"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/reconcile-indexes-0.log",
+      "log_sha256": "8ca23b64066fe1622ff0ba072fae207a7316a954afce6ffd8f992b1aba25e241"
+    }
+  ],
+  "source_sha256": "2be09e9249a816360bba52b76c1f3d889e12aae7bfd90d12771f117acb01a0d1",
+  "plan_sha256": "47771aa8b0a5d36a7ae339456df36304c2cdabd7508ec526f8f269106bb14332",
+  "applied_files": 6,
+  "unique_records": 7
+}

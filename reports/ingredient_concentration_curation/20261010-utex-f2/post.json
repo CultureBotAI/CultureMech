@@ -1,0 +1,215 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "post",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/1_F_2_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2/post-000.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/1_F_2_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2/post-001.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/5_F_2_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2/post-002.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/5_F_2_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2/post-003.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/8_ppt_F_2_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2/post-004.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/8_ppt_F_2_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2/post-005.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/F_2_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2/post-006.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/F_2_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2/post-007.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/f_2_nh4_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2/post-008.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/f_2_nh4_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2/post-009.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "--no-cov",
+        "tests/test_utex_f2_concentrations.py",
+        "tests/test_repair_utex_ingredients.py",
+        "tests/test_utex_fetcher_composition.py",
+        "tests/test_formulation_merge.py",
+        "tests/test_followup_report_coverage.py",
+        "tests/test_media_variant_links.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2/post-010.log",
+      "log_sha256": "91c50640d307186b14f4dfb273b6916e51ee28b9123a4ce95ea93e8493401676"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2/post-011.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "plan_sha256": "5cabfb8448aa4a62a2cdc06c0c0f371a767395464b99fd850961c249a67e7b59",
+  "code_sha256": {
+    "scripts/review_utex_f2_concentrations.py": "36d723a6320970ef8712dda3243c92220bedf2a4a9183a32888a339d6296d565",
+    "tests/test_utex_f2_concentrations.py": "b3a84cc6b59b71bc231f5f37365f393a3a4288ddb3ae82c6f0783904921c6fc9"
+  },
+  "inventory_before_sha256": "5fb7aa3854ad7d9a61f4d5b02b53487df4503f3cdcf137eaa516d7d74b5d2f75",
+  "source_checks": [
+    {
+      "url": "https://utex.org/products/f-2-medium",
+      "captures_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/trace-metals-solution",
+      "captures_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/vitamin-b-12",
+      "captures_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/biotin-vitamin-solution",
+      "captures_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/thiamine-vitamin-solution",
+      "captures_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/1-percent-f-2-medium",
+      "captures_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/5-percent-f-2-medium",
+      "captures_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/8-ppt-f-2-medium",
+      "captures_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/f-2-nh4-medium",
+      "captures_unchanged": true
+    },
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:114249",
+      "captures_unchanged": true
+    },
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:17439",
+      "captures_unchanged": true
+    },
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:49105",
+      "captures_unchanged": true
+    },
+    {
+      "url": "https://www.sigmaaldrich.com/US/en/product/sigma/t1270",
+      "mode": "web_tool_inspected_excerpt; not a complete HTTP capture",
+      "automatic_capture_pass": false
+    }
+  ],
+  "manual_pdf_review_pages": 5,
+  "automatic_ocr_or_supplier_capture_pass_asserted": false,
+  "inventory_after_sha256": "5fb7aa3854ad7d9a61f4d5b02b53487df4503f3cdcf137eaa516d7d74b5d2f75",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

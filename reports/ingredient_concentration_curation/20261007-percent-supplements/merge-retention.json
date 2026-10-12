@@ -1,0 +1,123 @@
+{
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/tween_80a_medium.yaml",
+      "id": "CultureMech:001748",
+      "fingerprint": "3c482dae6dcedb2d775f2a71fb297b7fc15fcb0298309a7060f6e6b676e0bf47",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_618_TWEEN_80A_medium.yaml",
+        "data/normalized_yaml/bacterial/tween_80a_medium.yaml"
+      ],
+      "merged_id": "CultureMech:006112",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": false,
+        "preparation_steps": false,
+        "physical_state": true,
+        "ph_range": true,
+        "ph_value": true,
+        "evidence": false,
+        "references": false,
+        "variants": true,
+        "variant_children": false
+      },
+      "all_checked_fields_retained": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_618_TWEEN_80A_medium.yaml",
+      "id": "CultureMech:006112",
+      "fingerprint": "3c482dae6dcedb2d775f2a71fb297b7fc15fcb0298309a7060f6e6b676e0bf47",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_618_TWEEN_80A_medium.yaml",
+        "data/normalized_yaml/bacterial/tween_80a_medium.yaml"
+      ],
+      "merged_id": "CultureMech:006112",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "physical_state": true,
+        "ph_range": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true,
+        "variants": true,
+        "variant_children": true
+      },
+      "all_checked_fields_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+      "id": "CultureMech:002134",
+      "fingerprint": "9888aad5f83e8e3970cdef610fbcbaf84a0c119ecc42b3cb3d93e2437b41fa59",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+        "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml"
+      ],
+      "merged_id": "CultureMech:006900",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": false,
+        "preparation_steps": true,
+        "physical_state": true,
+        "ph_range": true,
+        "ph_value": true,
+        "evidence": false,
+        "references": false,
+        "variants": true,
+        "variant_children": false
+      },
+      "all_checked_fields_retained": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+      "id": "CultureMech:006900",
+      "fingerprint": "9888aad5f83e8e3970cdef610fbcbaf84a0c119ecc42b3cb3d93e2437b41fa59",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+        "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml"
+      ],
+      "merged_id": "CultureMech:006900",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "physical_state": true,
+        "ph_range": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true,
+        "variants": true,
+        "variant_children": true
+      },
+      "all_checked_fields_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine.yaml",
+      "id": "CultureMech:006899",
+      "fingerprint": "c1a4d31b2902d6457a1e19cf974522d82421200b24f10742b4b83c52c0b64d3f",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine.yaml"
+      ],
+      "merged_id": "CultureMech:006899",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "physical_state": true,
+        "ph_range": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true,
+        "variants": true,
+        "variant_children": true,
+        "methylamine_only": true
+      },
+      "all_checked_fields_retained": true
+    }
+  ],
+  "groups": 3,
+  "retained": 3,
+  "all_retained": false,
+  "scope": "Complete ingredient, stock, preparation, state, pH, root evidence and bibliography retention; source variant options and child links must survive in full. Checks the actual corpus groups, not a forced curated-only subset. No generated records are published."
+}

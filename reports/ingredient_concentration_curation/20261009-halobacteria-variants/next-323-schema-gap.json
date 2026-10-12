@@ -1,0 +1,46 @@
+{
+  "terminal": true,
+  "review_complete": false,
+  "records_edited": 0,
+  "all_record_goal_complete": false,
+  "status": "schema_gap",
+  "checked_at": "2026-10-09T14:57:43.307498+00:00",
+  "target": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+  "id": "CultureMech:014736",
+  "source_capture": "reports/ingredient_concentration_curation/20261009-synthrophomonas-family/next-323-captures-approved.json",
+  "source_capture_sha256": "8c802303cf38982bebc07777a71a7d2dab5d4c01d44c0cc1d1c8136d866a39a4",
+  "reference": "https://mediadive.dsmz.de/rest/solution/599",
+  "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647",
+  "snippet": "{\n                \"recipe_order\": 14,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Fatty acid mixture\",\n                \"solution_id\": 6552,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.4,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+  "locator": "$.data.recipe[8]",
+  "source_claim": "A 1.4 ml batch input of solution 6552 into solution 599; not a universal working dose of standalone solution 6552.",
+  "schema_path": "src/culturemech/schema/culturemech.yaml",
+  "schema_sha256": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a",
+  "evidence_contract": ".claude/skills/review-ingredient-concentrations/references/evidence-contract.md",
+  "contract_sha256": "fd883c5a97a662fc469ae4ce3c913d7075dbb30566d14fb91138773ac364a9f8",
+  "schema_observation": "SolutionRecipe allows nested solutions, but neither its root nor SolutionDescriptor has an evidence slot. This record has no existing source_data container. SourceData.origin describes imported source-repository provenance and must not be invented for a curation convenience.",
+  "next_action": "Provide a legitimate schema-level formulation-evidence container, with synchronized generated artifacts, validation/serialization/rendering checks and evidence-contract updates, before asserting this nested stock dose. Do not work around the gap with unrelated component evidence or fabricated import provenance.",
+  "other_three_records_not_blocked_by_this_gap": true,
+  "unchanged_records": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "sha256": "ddf16580d20654367f1df777e76db38e1edb4071d4b0d9dea90b9bc02f612043"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "sha256": "91cdb9a37c2cd48496c6039cbca7912b140c126ebc1f849c1877e52dfcdb212d"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "id": "CultureMech:015061",
+      "sha256": "34935a5129af3ca97dc91ffe288acaaf43aeed561e6f8e75f47513b711668a06"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "sha256": "4a4cd36c2bf3c84cd704ad0aeae7838a4e11859e93db56c19f9474f577b43c67"
+    }
+  ]
+}

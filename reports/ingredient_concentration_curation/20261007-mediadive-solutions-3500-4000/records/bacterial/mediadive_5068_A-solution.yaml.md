@@ -1,0 +1,25 @@
+# Solution Concentration Review: A-solution
+
+- Record: data/normalized_yaml/bacterial/mediadive_5068_A-solution.yaml
+- ID: CultureMech:013983
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `a826fe7103d6245d8ebd8e42802508297d7c8c7cbad92fae9959824aeaa0df40`
+- Proposed/result SHA256: `a826fe7103d6245d8ebd8e42802508297d7c8c7cbad92fae9959824aeaa0df40`
+- Source: https://mediadive.dsmz.de/rest/solution/5068
+- Source SHA256: 43903e3a09cb7bc70781581e4ec15e763c4946f76b0e05a7a473063532da8c06
+- Retrieved: 2026-10-07T09:50:35.306671+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: reviewed; unchanged; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `composition[0].concentration` | (NH4)2SO4 | {"unit": "G_PER_L", "value": "39.6"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/5068 | {<br>                "recipe_order": 1,<br>                "compound": "(NH4)2SO4",<br>                "compound_id": 27,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 39.6,<br>                "unit": "g",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[0] (compound_id=27) | Missing numeric input | unchanged |
+| `composition[1].concentration` | MgSO4 x 7 H2O | {"unit": "G_PER_L", "value": "2.46"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/5068 | {<br>                "recipe_order": 2,<br>                "compound": "MgSO4 x 7 H2O",<br>                "compound_id": 8,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 2.46,<br>                "unit": "g",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[1] (compound_id=8) | Missing numeric input | unchanged |
+| `composition[2].concentration` | FeSO4 x 7 H2O | {"unit": "MG_PER_L", "value": "55.6"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/5068 | {<br>                "recipe_order": 3,<br>                "compound": "FeSO4 x 7 H2O",<br>                "compound_id": 12,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 55.6,<br>                "unit": "mg",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[2] (compound_id=12) | Missing numeric input | unchanged |
+| `composition[3].concentration` | CaCl2 x 2 H2O | {"unit": "G_PER_L", "value": "0.147"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/5068 | {<br>                "recipe_order": 4,<br>                "compound": "CaCl2 x 2 H2O",<br>                "compound_id": 7,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 0.147,<br>                "unit": "g",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[3] (compound_id=7) | Missing numeric input | unchanged |
+| `composition[4].concentration` | NaCl | {"unit": "G_PER_L", "value": "5"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/5068 | {<br>                "recipe_order": 5,<br>                "compound": "NaCl",<br>                "compound_id": 43,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 5,<br>                "unit": "g",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[4] (compound_id=43) | Missing numeric input | unchanged |
+| `ingredients[0].concentration` | See source for composition | {"unit": "VARIABLE", "value": "variable"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Outside direct composition matching; unchanged. | unchanged |

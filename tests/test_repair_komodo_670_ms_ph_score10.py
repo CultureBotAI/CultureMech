@@ -1,6 +1,10 @@
+"""Historical migration behavior, not scientific approval of strain formulations."""
+
 from __future__ import annotations
 
+import hashlib
 import importlib.util
+import json
 import sys
 from pathlib import Path
 
@@ -22,8 +26,19 @@ def _load_script(path: Path, name: str):
 
 
 @pytest.fixture(scope="module")
-def repair_module():
-    return _load_script(SCRIPT, "repair_komodo_670_ms_ph_score10")
+def repair_module(tmp_path_factory):
+    module = _load_script(SCRIPT, "repair_komodo_670_ms_ph_score10")
+    fixture = json.loads((REPO / "tests/fixtures/komodo670_legacy_migration.json").read_text())
+    root = tmp_path_factory.mktemp("legacy-komodo670")
+    # A historical flat-recipe migration must not constrain later source-backed curation.
+    for relative, item in fixture["records"].items():
+        raw = item["text"].encode()
+        assert hashlib.sha256(raw).hexdigest() == item["sha256"]
+        path = root / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(raw)
+    module.NORMALIZED = root
+    return module
 
 
 @pytest.fixture(scope="module")
@@ -65,7 +80,7 @@ def test_parent_lists_all_ph_variant_children(repair_module) -> None:
 
 
 def test_repair_is_idempotent(repair_module) -> None:
-    once = repair_module.plan_repairs()
+    once = repair_module.plan_repairs(repair_module.NORMALIZED)
     twice = {
         path: (
             repair_module.repair_parent(doc)
@@ -78,7 +93,7 @@ def test_repair_is_idempotent(repair_module) -> None:
     assert twice == once
 
 
-def test_plan_repairs_targets_current_records(repair_module) -> None:
+def test_plan_repairs_targets_historical_records(repair_module) -> None:
     expected = {
         repair_module.NORMALIZED
         / repair_module.PARENT: repair_module.repair_parent(
@@ -89,7 +104,7 @@ def test_plan_repairs_targets_current_records(repair_module) -> None:
         path = repair_module.NORMALIZED / child.path
         expected[path] = repair_module.repair_child(child.path, _load_yaml(path))
 
-    assert repair_module.plan_repairs() == expected
+    assert repair_module.plan_repairs(repair_module.NORMALIZED) == expected
 
 
 def test_repair_rejects_wrong_parent_id(repair_module) -> None:
@@ -116,3 +131,11 @@ def test_repair_rejects_ingredient_drift(repair_module) -> None:
 
     with pytest.raises(ValueError, match="ingredient signature drifted"):
         repair_module.repair_child(child.path, doc)
+
+
+def test_legacy_parent_migration_rejects_new_stock_topology(repair_module) -> None:
+    doc = _load_yaml(repair_module.NORMALIZED / repair_module.PARENT)
+    iron = doc["ingredients"].pop()
+    doc["solutions"] = [{"preferred_term": "Iron stock", "composition": [iron]}]
+    with pytest.raises(ValueError, match="ingredient signature drifted"):
+        repair_module.repair_parent(doc)

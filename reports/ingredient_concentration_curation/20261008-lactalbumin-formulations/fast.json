@@ -1,0 +1,28 @@
+{
+  "terminal": true,
+  "phase": "fast",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-fast-0.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "d99a375e68d2bef008b27eae1eaa6da6fc414a7d67046a15a5d32a2661f813d2"
+  },
+  "code_sha256": {
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "tests/test_lactalbumin_formulations.py": "8ac45859ade31ec7f79ee483d604a21304d492308e0b1af0192765b1cd6ea5f4",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/audit.py": "0baeb6dd32f17d485ced736f448745cfcb5285904b8205286f90bcbd4e8aff32",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "0034f2739b0f70b8e7662e9451fa37425d7a1f8437eea38461fe7716c2a6ab8f"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "d99a375e68d2bef008b27eae1eaa6da6fc414a7d67046a15a5d32a2661f813d2"
+  }
+}

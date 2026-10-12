@@ -1,0 +1,153 @@
+{
+  "baseline": {
+    "open_schema_exit": 0,
+    "strict_exit": 0
+  },
+  "full_suite_attempts": {
+    "just_test_exit": 4,
+    "reason": "pytest-cov missing",
+    "without_coverage_exit": 2,
+    "collection_errors": [
+      "dotenv",
+      "rapidfuzz",
+      "pandas",
+      "bs4"
+    ]
+  },
+  "runtime": "isolated Python 3.11, not maintained 3.13 or CI",
+  "completed_checks": {
+    "focused_tests_passed": 398,
+    "strict_validated_records": 15910,
+    "readback_records": 1,
+    "readback_scoped_claims": 12,
+    "readback_new_evidence_entries": 10,
+    "noop_changed_records": 0,
+    "prior_seven_readback_records": 7,
+    "prior_seven_readback_scoped_claims": 105,
+    "merge_name_conflicts": 1247,
+    "merge_fingerprint_issues": 3287,
+    "freshness": {
+      "tracked_total": 6320,
+      "fresh_total": 6491,
+      "only_in_tracked": 3718,
+      "only_in_fresh": 3889,
+      "changed": 1494,
+      "unchanged": 1108
+    },
+    "product_validation_unavailable": "oaklib adapters missing",
+    "reference_validation_unavailable": "linkml-reference-validator executable missing"
+  },
+  "post": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/bacillus_acidocaldarius_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz13-post-schema.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/bacillus_acidocaldarius_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz13-post-strict.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz13-post-strict-full.log"
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz13-post-ids.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/dsmz13-post-products.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/bacillus_acidocaldarius_medium.yaml"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/dsmz13-post-references.log"
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/dsmz13-post-verify-merges.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/dsmz13-post-freshness.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/repair_reviewed_medium_stock_boundaries.py",
+        "--cohort",
+        "dsmz13",
+        "--source-dir",
+        "/tmp/ingredient-media-20261007",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz13-post-readback.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/repair_reviewed_medium_stock_boundaries.py",
+        "--cohort",
+        "dsmz13",
+        "--source-dir",
+        "/tmp/ingredient-media-20261007",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json",
+        "--apply"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz13-post-noop.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/repair_reviewed_medium_stock_boundaries.py",
+        "--source-dir",
+        "/tmp/ingredient-media-20261007",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz13-prior-seven-readback.log"
+    }
+  ]
+}

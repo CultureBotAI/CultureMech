@@ -16,6 +16,33 @@ composition:
     label: iron(2+) sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1699
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "FeSO4 x 7 H2O",
+                      "compound_id": 12,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 30,
+                      "unit": "mg",
+                      "g_l": 4.28571,
+                      "mmol_l": 15.4154,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (FeSO4 x
+      7 H2O) in MediaDive solution 1699; locator=$.data.recipe[0] (compound_id=12).
+      Provider explicitly reports g_l=4.28571. Arithmetic check: 30 mg * 0.001 g/mg
+      / (7 ml / 1000 ml per L) = 4.285714285714285714285714286 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      7. Retrieved 2026-10-07T08:55:37.543415+00:00; response SHA256=09e9e6f3176d11bd4ae1d7b82190d7ec18487dbb42e31e5b731d5a3d83113b15.'
 - preferred_term: H2SO4
   concentration:
     value: '428.57142857142856'
@@ -57,6 +84,15 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:01:17.963098+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/1699
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "4.28571"}
+    -> {"unit": "G_PER_L", "value": "4.28571"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -65,3 +101,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/1699
+  title: 'MediaDive solution 1699: Solution G'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=09e9e6f3176d11bd4ae1d7b82190d7ec18487dbb42e31e5b731d5a3d83113b15;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

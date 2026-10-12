@@ -28,6 +28,32 @@ composition:
     label: sodium dithionite
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6262
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Na2S2O4",
+                      "compound_id": 653,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 50,
+                      "mmol_l": 287.175,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Na2S2O4)
+      in MediaDive solution 6262; locator=$.data.recipe[1] (compound_id=653). Provider
+      explicitly reports g_l=50. Arithmetic check: 0.5 g * 1 g/g / (10 ml / 1000 ml
+      per L) = 5E+1 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 10. Retrieved 2026-10-07T10:01:53.531481+00:00; response SHA256=97dd05a44de032d046734d228e299457f1e6c1a460183ef80173cee4aef4cc1f.'
 - preferred_term: Distilled water
   concentration:
     value: '950.0'
@@ -76,6 +102,15 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T10:04:07.640757+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/6262
+  changes: 'composition[1].concentration: {"unit": "G_PER_L", "value": "50"} -> {"unit":
+    "G_PER_L", "value": "50"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -84,3 +119,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/6262
+  title: 'MediaDive solution 6262: Na-dithionite solution (5% w/v)'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=97dd05a44de032d046734d228e299457f1e6c1a460183ef80173cee4aef4cc1f;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

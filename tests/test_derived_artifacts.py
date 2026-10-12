@@ -36,7 +36,12 @@ def ada():
     return _load("audit_derived_artifacts")
 
 
-def test_the_manifest_matches_a_fresh_computation(ada):
+@pytest.fixture(scope="module")
+def inventory_rows(ada):
+    return ada.inventory()
+
+
+def test_the_manifest_matches_a_fresh_computation(inventory_rows):
     """The manifest is itself a tracked derived artifact, so it needs the same
     guarantee it exists to provide. Refresh with `just audit-derived-artifacts`."""
     manifest = REPO_ROOT / "data" / "import_tracking" / "derived_artifacts.tsv"
@@ -52,7 +57,7 @@ def test_the_manifest_matches_a_fresh_computation(ada):
         fieldnames=["artifact", "kind", "reason", "writes", "mentioned_by", "freshness_checked"],
     )
     w.writeheader()
-    w.writerows(ada.inventory())
+    w.writerows(inventory_rows)
     # Compare row content, not line endings: the script writes with newline="" so
     # csv chooses \r\n, and reading back through read_text() normalises. Splitting
     # sidesteps that without weakening the comparison.
@@ -78,10 +83,10 @@ def test_every_checkable_writer_exists(ada):
         assert (REPO_ROOT / cmd[0]).is_file(), f"{art}: writer {cmd[0]} missing"
 
 
-def test_snapshots_are_never_freshness_checked(ada):
+def test_snapshots_are_never_freshness_checked(ada, inventory_rows):
     """Regenerating a dated snapshot or a migration record would falsify history —
     those files are an accurate account of what ran, stale paths and all."""
-    for row in ada.inventory():
+    for row in inventory_rows:
         if row["kind"] == "SNAPSHOT":
             assert not row["freshness_checked"], f"{row['artifact']} is a snapshot"
             assert row["artifact"] not in ada.CHECKABLE
@@ -107,32 +112,86 @@ def test_snapshot_manifest_is_not_attributed_by_generic_basename(ada, monkeypatc
     path = "reports/ingredient_concentration_review/20261005T175229Z/manifest.tsv"
     monkeypatch.setattr(ada, "tracked_artifacts", lambda: [path])
     monkeypatch.setattr(
-        ada, "find_writers", lambda _: ["scripts/build_media_content_review_manifest.py"]
+        ada, "find_writers", lambda *_: ["scripts/build_media_content_review_manifest.py"]
     )
     row = ada.inventory()[0]
     assert row["kind"] == "SNAPSHOT"
     assert row["writes"] == row["mentioned_by"] == row["freshness_checked"] == ""
 
 
-def test_the_classification_covers_every_tracked_artifact(ada):
-    rows = ada.inventory()
+@pytest.mark.parametrize("basename", ["plan.json", "source-review.json", "manifest.tsv"])
+def test_dated_curation_packets_are_snapshots_without_writer_search(ada, monkeypatch, basename):
+    path = f"reports/ingredient_concentration_curation/20261010-utex-test/{basename}"
+    monkeypatch.setattr(ada, "tracked_artifacts", lambda: [path])
+
+    def unexpected_search(*_):
+        pytest.fail("Historical packets must not be attributed by generic basename")
+
+    monkeypatch.setattr(ada, "find_writers", unexpected_search)
+    row = ada.inventory()[0]
+    assert (row["kind"], row["reason"]) == ("SNAPSHOT", "dated concentration curation")
+    assert row["writes"] == row["mentioned_by"] == row["freshness_checked"] == ""
+
+
+def test_dated_curation_root_receipts_are_snapshots(ada):
+    path = "reports/ingredient_concentration_curation/20261007-diff-audit-after-jcm896.json"
+    assert ada.classify(path, None) == ("SNAPSHOT", "dated concentration curation")
+
+
+@pytest.mark.parametrize("directory", ["current", "20261010", "20261010T175229Z_extra"])
+def test_undated_curation_outputs_are_not_assumed_to_be_snapshots(ada, directory):
+    path = f"reports/ingredient_concentration_curation/{directory}/summary.json"
+    assert ada.classify(path, None) == ("UNKNOWN", "no writer found")
+
+
+def test_writer_search_is_reused_only_within_one_inventory(ada, monkeypatch):
+    paths = ["reports/one/unclassified.json", "reports/two/unclassified.json"]
+    monkeypatch.setattr(ada, "tracked_artifacts", lambda: paths)
+    calls = []
+    monkeypatch.setattr(ada, "find_writers", lambda art, _: calls.append(art) or [])
+    assert len(ada.inventory()) == 2
+    assert calls == paths[:1]
+    assert len(ada.inventory()) == 2
+    assert calls == [paths[0], paths[0]]
+
+
+def test_writer_search_is_literal_and_includes_ignored_sources(ada, monkeypatch, tmp_path):
+    scripts = tmp_path / "scripts"
+    scripts.mkdir()
+    (tmp_path / ".gitignore").write_text("scripts/ignored.py\n")
+    (scripts / "ignored.py").write_text('OUTPUT = "manifest.json"\n')
+    hidden = scripts / ".hidden"
+    hidden.mkdir()
+    (hidden / "writer.py").write_text('OUTPUT = "manifest.json"\n')
+    (scripts / "not_a_match.py").write_text('OUTPUT = "manifestXjson"\n')
+    monkeypatch.setattr(ada, "REPO", tmp_path)
+    assert ada.find_writers("reports/manifest.json") == [
+        "scripts/.hidden/writer.py",
+        "scripts/ignored.py",
+    ]
+    (scripts / "ignored.py").write_text('OUTPUT = "different.json"\n')
+    assert ada.find_writers("reports/manifest.json") == ["scripts/.hidden/writer.py"]
+
+
+def test_the_classification_covers_every_tracked_artifact(ada, inventory_rows):
+    rows = inventory_rows
     assert len(rows) == len(ada.tracked_artifacts())
     assert all(r["kind"] in {"AUTHORITATIVE", "CURRENT_VIEW", "SNAPSHOT", "UNKNOWN"} for r in rows)
 
 
-def test_curator_owned_tombstones_are_not_misclassified_as_generated(ada):
-    row = next(r for r in ada.inventory() if r["artifact"] == "data/culturemech_id_tombstones.tsv")
+def test_curator_owned_tombstones_are_not_misclassified_as_generated(inventory_rows):
+    row = next(r for r in inventory_rows if r["artifact"] == "data/culturemech_id_tombstones.tsv")
     assert row["kind"] == "AUTHORITATIVE"
     assert row["writes"] == ""
     assert "curator-owned" in row["reason"]
 
 
-def test_unknowns_are_reported_not_hidden(ada):
+def test_unknowns_are_reported_not_hidden(inventory_rows):
     """UNKNOWN is the honest state for an unclassified artifact. This asserts the
     inventory still surfaces them — silence would imply coverage that does not
     exist. It is a ceiling, not a target: driving it to 0 by guessing would be
     worse than leaving them listed."""
-    unknown = [r for r in ada.inventory() if r["kind"] == "UNKNOWN"]
+    unknown = [r for r in inventory_rows if r["kind"] == "UNKNOWN"]
     assert len(unknown) <= 55, (
         f"{len(unknown)} unclassified artifacts, above the documented 55. A new "
         "tracked artifact was added without a classification."
@@ -158,39 +217,39 @@ def test_a_corrupted_artifact_is_detected(ada, tmp_path, monkeypatch):
 # --- #204: the tool must not attribute artifacts to itself -----------------
 
 
-def test_the_auditor_is_never_recorded_as_a_writer(ada):
+def test_the_auditor_is_never_recorded_as_a_writer(ada, inventory_rows):
     """`audit_derived_artifacts.py` names every CHECKABLE artifact, so a plain grep
     matched all of them — and sorted first for unparsed_compositions.tsv, making
     the manifest report the auditor as that report's writer. The writer column is
     the evidence for each classification, so circular attribution undermines it."""
-    for row in ada.inventory():
+    for row in inventory_rows:
         assert (
             ada.SELF not in row["mentioned_by"]
         ), f"{row['artifact']} attributes itself to the auditor"
         assert ada.SELF not in row["writes"], f"{row['artifact']} claims the auditor writes it"
 
 
-def test_all_candidate_writers_are_recorded_not_just_the_first(ada):
+def test_all_candidate_writers_are_recorded_not_just_the_first(inventory_rows):
     """Nine artifacts have several. Ambiguity a curator can see beats a confident
     wrong answer."""
-    multi = [r for r in ada.inventory() if ";" in r["mentioned_by"]]
+    multi = [r for r in inventory_rows if ";" in r["mentioned_by"]]
     assert multi, "no multi-writer artifacts recorded; find_writers regressed to first-match"
 
 
-def test_a_checkable_artifact_uses_its_declared_writer(ada):
+def test_a_checkable_artifact_uses_its_declared_writer(ada, inventory_rows):
     """Re-deriving by grep would be guessing at something already stated."""
-    rows = {row["artifact"]: row for row in ada.inventory()}
+    rows = {row["artifact"]: row for row in inventory_rows}
     for art, cmd in ada.CHECKABLE.items():
         row = rows[art]
         assert cmd[0] in row["writes"], f"{art}: declared writer {cmd[0]} not confirmed as a writer"
 
 
-def test_the_regenerating_writer_wins_when_several_touch_an_artifact(ada):
+def test_the_regenerating_writer_wins_when_several_touch_an_artifact(inventory_rows):
     """`culturemech_id_registry.tsv` is written by assign_culturemech_ids (which
     MINTS ids), refresh_id_registry (which rebuilds it) and id_utils. Taking the
     alphabetically first classified it UNKNOWN and lost a correct answer."""
     row = next(
-        (r for r in ada.inventory() if r["artifact"] == "data/culturemech_id_registry.tsv"), None
+        (r for r in inventory_rows if r["artifact"] == "data/culturemech_id_registry.tsv"), None
     )
     if row is None:
         pytest.skip("id registry not tracked")

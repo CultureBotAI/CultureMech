@@ -1,0 +1,578 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "review_complete": false,
+  "source_capture_receipt_sha256": "0dc878756b5ace93b6c8888906fd8c6f3be3c4f29a93e0914f58a910e39a26cf",
+  "normalized_sha256": "3e69263bb0c82e782c51c5a994945630fbf3a3b9f685248e16d7daf3367f05fc",
+  "record_path": "data/normalized_yaml/bacterial/for_dsm_2805.yaml",
+  "record_sha256": "e37fa78eb5c7e921d6d2e56bc5a49308da61d4cc3ecb9a60787f96ea3c628d2a",
+  "record_id": "CultureMech:004855",
+  "rows": [
+    {
+      "name": "Na2SO4",
+      "value": "2.79163",
+      "unit": "G_PER_L",
+      "snippet": "Na2SO4 2.79163 g/l",
+      "field": "ingredients[0].concentration",
+      "old_value": {
+        "value": "2.79163",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "Na-propionate",
+      "value": "1.49551",
+      "unit": "G_PER_L",
+      "snippet": "Na-propionate 1.49551 g/l",
+      "field": "ingredients[1].concentration",
+      "old_value": {
+        "value": "1.49551",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "Na2CO3",
+      "value": "1.49551",
+      "unit": "G_PER_L",
+      "snippet": "Na2CO3 1.49551 g/l",
+      "field": "ingredients[2].concentration",
+      "old_value": {
+        "value": "1.49551",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "D-Glucose",
+      "value": "0.997009",
+      "unit": "G_PER_L",
+      "snippet": "D-Glucose 0.997009 g/l",
+      "field": "ingredients[3].concentration",
+      "old_value": {
+        "value": "0.997009",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "Trypticase peptone",
+      "value": "0.997008",
+      "unit": "G_PER_L",
+      "snippet": "Trypticase peptone 0.997008 g/l",
+      "field": "ingredients[4].concentration",
+      "old_value": {
+        "value": "0.997008",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "KH2PO4",
+      "value": "0.498505",
+      "unit": "G_PER_L",
+      "snippet": "KH2PO4 0.498505 g/l",
+      "field": "ingredients[5].concentration",
+      "old_value": {
+        "value": "0.498505",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "NaCl",
+      "value": "0.398803",
+      "unit": "G_PER_L",
+      "snippet": "NaCl 0.398803 g/l",
+      "field": "ingredients[6].concentration",
+      "old_value": {
+        "value": "0.398803",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "NH4Cl",
+      "value": "0.398803",
+      "unit": "G_PER_L",
+      "snippet": "NH4Cl 0.398803 g/l",
+      "field": "ingredients[7].concentration",
+      "old_value": {
+        "value": "0.398803",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "MgCl2 x 6 H2O",
+      "value": "0.329013",
+      "unit": "G_PER_L",
+      "snippet": "MgCl2 x 6 H2O 0.329013 g/l",
+      "field": "ingredients[8].concentration",
+      "old_value": {
+        "value": "0.329013",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "Na2S x 9 H2O",
+      "value": "0.299103",
+      "unit": "G_PER_L",
+      "snippet": "Na2S x 9 H2O 0.299103 g/l",
+      "field": "ingredients[9].concentration",
+      "old_value": {
+        "value": "0.299103",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "L-Cysteine HCl x H2O",
+      "value": "0.299103",
+      "unit": "G_PER_L",
+      "snippet": "L-Cysteine HCl x H2O 0.299103 g/l",
+      "field": "ingredients[10].concentration",
+      "old_value": {
+        "value": "0.299103",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "CaCl2 x 2 H2O",
+      "value": "0.0498505",
+      "unit": "G_PER_L",
+      "snippet": "CaCl2 x 2 H2O 0.0498505 g/l",
+      "field": "ingredients[11].concentration",
+      "old_value": {
+        "value": "0.0498505",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "HCl",
+      "value": "0.00249252",
+      "unit": "G_PER_L",
+      "snippet": "HCl 0.00249252 g/l",
+      "field": "ingredients[12].concentration",
+      "old_value": {
+        "value": "0.00249252",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "FeCl2 x 4 H2O",
+      "value": "0.00149551",
+      "unit": "G_PER_L",
+      "snippet": "FeCl2 x 4 H2O 0.00149551 g/l",
+      "field": "ingredients[13].concentration",
+      "old_value": {
+        "value": "0.00149551",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "Sodium resazurin",
+      "value": "0.000498505",
+      "unit": "G_PER_L",
+      "snippet": "Sodium resazurin 0.000498505 g/l",
+      "field": "ingredients[14].concentration",
+      "old_value": {
+        "value": "0.000498505",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "NaOH",
+      "value": "0.000498504",
+      "unit": "G_PER_L",
+      "snippet": "NaOH 0.000498504 g/l",
+      "field": "ingredients[15].concentration",
+      "old_value": {
+        "value": "0.000498504",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "Pyridoxine hydrochloride",
+      "value": "0.000299103",
+      "unit": "G_PER_L",
+      "snippet": "Pyridoxine hydrochloride 0.000299103 g/l",
+      "field": "ingredients[16].concentration",
+      "old_value": {
+        "value": "0.000299103",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "Nicotinic acid",
+      "value": "0.000199402",
+      "unit": "G_PER_L",
+      "snippet": "Nicotinic acid 0.000199402 g/l",
+      "field": "ingredients[17].concentration",
+      "old_value": {
+        "value": "0.000199402",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "Thiamine-HCl x 2 H2O",
+      "value": "0.000199402",
+      "unit": "G_PER_L",
+      "snippet": "Thiamine-HCl x 2 H2O 0.000199402 g/l",
+      "field": "ingredients[18].concentration",
+      "old_value": {
+        "value": "0.000199402",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "CoCl2 x 6 H2O",
+      "value": "0.000189432",
+      "unit": "G_PER_L",
+      "snippet": "CoCl2 x 6 H2O 0.000189432 g/l",
+      "field": "ingredients[19].concentration",
+      "old_value": {
+        "value": "0.000189432",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "Calcium pantothenate",
+      "value": "9.97009e-05",
+      "unit": "G_PER_L",
+      "snippet": "Calcium pantothenate 9.97009e-05 g/l",
+      "field": "ingredients[20].concentration",
+      "old_value": {
+        "value": "9.97009e-05",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "Vitamin B12",
+      "value": "9.97009e-05",
+      "unit": "G_PER_L",
+      "snippet": "Vitamin B12 9.97009e-05 g/l",
+      "field": "ingredients[21].concentration",
+      "old_value": {
+        "value": "9.97009e-05",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "MnCl2 x 4 H2O",
+      "value": "9.97009e-05",
+      "unit": "G_PER_L",
+      "snippet": "MnCl2 x 4 H2O 9.97009e-05 g/l",
+      "field": "ingredients[22].concentration",
+      "old_value": {
+        "value": "9.97009e-05",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "p-Aminobenzoic acid",
+      "value": "7.97607e-05",
+      "unit": "G_PER_L",
+      "snippet": "p-Aminobenzoic acid 7.97607e-05 g/l",
+      "field": "ingredients[23].concentration",
+      "old_value": {
+        "value": "7.97607e-05",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "ZnCl2",
+      "value": "6.97906e-05",
+      "unit": "G_PER_L",
+      "snippet": "ZnCl2 6.97906e-05 g/l",
+      "field": "ingredients[24].concentration",
+      "old_value": {
+        "value": "6.97906e-05",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "Na2MoO4 x 2 H2O",
+      "value": "3.58923e-05",
+      "unit": "G_PER_L",
+      "snippet": "Na2MoO4 x 2 H2O 3.58923e-05 g/l",
+      "field": "ingredients[25].concentration",
+      "old_value": {
+        "value": "3.58923e-05",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "NiCl2 x 6 H2O",
+      "value": "2.39282e-05",
+      "unit": "G_PER_L",
+      "snippet": "NiCl2 x 6 H2O 2.39282e-05 g/l",
+      "field": "ingredients[26].concentration",
+      "old_value": {
+        "value": "2.39282e-05",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "D-(+)-biotin",
+      "value": "1.99402e-05",
+      "unit": "G_PER_L",
+      "snippet": "D-(+)-biotin 1.99402e-05 g/l",
+      "field": "ingredients[27].concentration",
+      "old_value": {
+        "value": "1.99402e-05",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "H3BO3",
+      "value": "5.98205e-06",
+      "unit": "G_PER_L",
+      "snippet": "H3BO3 5.98205e-06 g/l",
+      "field": "ingredients[28].concentration",
+      "old_value": {
+        "value": "5.98205e-06",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "Na2WO4 x 2 H2O",
+      "value": "3.98804e-06",
+      "unit": "G_PER_L",
+      "snippet": "Na2WO4 x 2 H2O 3.98804e-06 g/l",
+      "field": "ingredients[29].concentration",
+      "old_value": {
+        "value": "3.98804e-06",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "Na2SeO3 x 5 H2O",
+      "value": "2.99103e-06",
+      "unit": "G_PER_L",
+      "snippet": "Na2SeO3 x 5 H2O 2.99103e-06 g/l",
+      "field": "ingredients[30].concentration",
+      "old_value": {
+        "value": "2.99103e-06",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    },
+    {
+      "name": "CuCl2 x 2 H2O",
+      "value": "1.99402e-06",
+      "unit": "G_PER_L",
+      "snippet": "CuCl2 x 2 H2O 1.99402e-06 g/l",
+      "field": "ingredients[31].concentration",
+      "old_value": {
+        "value": "1.99402e-06",
+        "unit": "G_PER_L"
+      },
+      "source_reference": "https://bacdive.dsmz.de/strain/16667",
+      "locator": "Culture and growth conditions / culture medium table / Composition",
+      "source_scope": "SYNTHROPHOMONAS MEDIUM (DSMZ Medium 212; with strain-specific modifications)",
+      "amount_and_unit_match": true,
+      "has_ingredient_evidence": false,
+      "action_taken": "none; source comparison only"
+    }
+  ],
+  "matching_quantified_rows": 32,
+  "ingredient_nodes_with_evidence": 0,
+  "unquantified_source_rows": [
+    {
+      "name": "Distilled water",
+      "snippet": "Distilled water",
+      "amount": null,
+      "present_in_local_ingredients": false,
+      "action_taken": "none; no zero or inferred dose"
+    }
+  ],
+  "catalogue_scope": {
+    "reference": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-2805",
+    "snippet": "Cultivation conditions: Medium 212 with strain-specific modifications , 35\u00b0C"
+  },
+  "doi_displayed_in_source": "10.13145/bacdive16667.20260601.11",
+  "doi_versioned_pdf_checked": false,
+  "limits": [
+    "Matches provider-reported rates, not independent final-volume calculations.",
+    "No chemical identity, organism-growth or complete preparation certification.",
+    "No guarded proposal or completed per-record concentration review yet."
+  ]
+}

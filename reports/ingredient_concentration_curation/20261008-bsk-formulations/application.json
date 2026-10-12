@@ -1,0 +1,80 @@
+{
+  "terminal": true,
+  "application": {
+    "mode": "apply",
+    "records": 3,
+    "changed": 3,
+    "already_applied": 0,
+    "claims": 139
+  },
+  "readback": {
+    "mode": "verify",
+    "records": 3,
+    "changed": 0,
+    "already_applied": 3,
+    "claims": 139
+  },
+  "no_op_rerun": {
+    "mode": "apply",
+    "records": 3,
+    "changed": 0,
+    "already_applied": 3,
+    "claims": 139
+  },
+  "audit": {
+    "M2410": {
+      "quantity_corrections": 2,
+      "unsupported_quantity_slots_removed": 12,
+      "stock_nodes_relocated": 2,
+      "stock_descriptors_added": 3,
+      "new_quantity_slots": 1,
+      "preparation_steps_added": 8,
+      "preparation_steps_relocated": 0,
+      "new_evidence": 13,
+      "new_references": 1,
+      "new_curation_history": 1,
+      "old_quantity_slots": 14,
+      "claims": 43,
+      "source_rows": 12
+    },
+    "D1829": {
+      "new_quantity_slots": 2,
+      "quantity_corrections": 1,
+      "stock_descriptors_added": 1,
+      "unsupported_quantity_slots_removed": 3,
+      "preparation_steps_added": 3,
+      "preparation_steps_relocated": 1,
+      "new_evidence": 27,
+      "new_references": 2,
+      "new_curation_history": 1,
+      "old_quantity_slots": 13,
+      "claims": 46,
+      "source_rows": 12
+    },
+    "J173": {
+      "stock_descriptors_added": 4,
+      "stock_nodes_relocated": 10,
+      "stock_stage_concentrations_rebased": 10,
+      "new_quantity_slots": 4,
+      "unsupported_quantity_slots_removed": 3,
+      "preparation_steps_added": 4,
+      "preparation_steps_relocated": 1,
+      "new_evidence": 29,
+      "new_references": 2,
+      "new_curation_history": 1,
+      "old_quantity_slots": 13,
+      "claims": 50,
+      "source_rows": 13
+    }
+  },
+  "prior_canonical_reports": {
+    "M2410": [],
+    "D1829": [
+      "reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/bskii_medium_borrelia.yaml.md"
+    ],
+    "J173": [
+      "reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/barbour_sfoenner_kelly_bsk_ii_medium.yaml.md"
+    ]
+  },
+  "reference_validation": "All 74 snippet/title checks pass against five refreshed official sources; all 139 claim excerpts match pinned captures. DSMZ 1829 page image inspected."
+}

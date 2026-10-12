@@ -16,6 +16,32 @@ composition:
     label: ammonium sulfate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4875
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "(NH4)2SO4",
+                      "compound_id": 27,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 100,
+                      "mmol_l": 756.773,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration ((NH4)2SO4)
+      in MediaDive solution 4875; locator=$.data.recipe[0] (compound_id=27). Provider
+      explicitly reports g_l=100. Arithmetic check: 1 g * 1 g/g / (10 ml / 1000 ml
+      per L) = 1E+2 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 10. Retrieved 2026-10-07T09:48:26.884089+00:00; response SHA256=99229d3ced1d9d3c27d25a43c05265d7890f068b5bbcfc89f320be7d3323e038.'
 - preferred_term: K2HPO4
   concentration:
     value: '50'
@@ -28,6 +54,32 @@ composition:
     label: dipotassium hydrogen phosphate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4875
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "K2HPO4",
+                      "compound_id": 10,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 50,
+                      "mmol_l": 287.066,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (K2HPO4)
+      in MediaDive solution 4875; locator=$.data.recipe[1] (compound_id=10). Provider
+      explicitly reports g_l=50. Arithmetic check: 0.5 g * 1 g/g / (10 ml / 1000 ml
+      per L) = 5E+1 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 10. Retrieved 2026-10-07T09:48:26.884089+00:00; response SHA256=99229d3ced1d9d3c27d25a43c05265d7890f068b5bbcfc89f320be7d3323e038.'
 - preferred_term: NaHCO3
   concentration:
     value: '50'
@@ -40,6 +92,32 @@ composition:
     label: sodium hydrogencarbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4875
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "NaHCO3",
+                      "compound_id": 55,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 50,
+                      "mmol_l": 595.188,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (NaHCO3)
+      in MediaDive solution 4875; locator=$.data.recipe[2] (compound_id=55). Provider
+      explicitly reports g_l=50. Arithmetic check: 0.5 g * 1 g/g / (10 ml / 1000 ml
+      per L) = 5E+1 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 10. Retrieved 2026-10-07T09:48:26.884089+00:00; response SHA256=99229d3ced1d9d3c27d25a43c05265d7890f068b5bbcfc89f320be7d3323e038.'
 - preferred_term: HEPES
   concentration:
     value: '1190'
@@ -52,6 +130,33 @@ composition:
     label: 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4875
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "HEPES",
+                      "compound_id": 371,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 11.9,
+                      "unit": "g",
+                      "g_l": 1190,
+                      "mmol_l": 4993.5,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (HEPES)
+      in MediaDive solution 4875; locator=$.data.recipe[4] (compound_id=371). Provider
+      explicitly reports g_l=1190. Arithmetic check: 11.9 g * 1 g/g / (10 ml / 1000
+      ml per L) = 1.19E+3 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 10. Retrieved 2026-10-07T09:48:26.884089+00:00;
+      response SHA256=99229d3ced1d9d3c27d25a43c05265d7890f068b5bbcfc89f320be7d3323e038.'
 preparation_notes: 'Add components to distilled water and bring volume to 1.0 L.
 
   Adjust pH to 7.8.
@@ -81,6 +186,19 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-10-07T09:53:16.572361+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/4875
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "100"} -> {"unit":
+    "G_PER_L", "value": "100"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "50"} -> {"unit": "G_PER_L", "value": "50"} (evidence_only);
+    composition[2].concentration: {"unit": "G_PER_L", "value": "50"} -> {"unit": "G_PER_L",
+    "value": "50"} (evidence_only); composition[3].concentration: {"unit": "G_PER_L",
+    "value": "1190"} -> {"unit": "G_PER_L", "value": "1190"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -89,3 +207,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/4875
+  title: 'MediaDive solution 4875: Main sol. J886'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=99229d3ced1d9d3c27d25a43c05265d7890f068b5bbcfc89f320be7d3323e038;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

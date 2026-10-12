@@ -27,6 +27,16 @@ ingredients:
   notes: UTEX lists 10 g/L Proteose Peptone, BD 211684.
   nutritional_roles:
   - NITROGEN_SOURCE
+  evidence:
+  - reference: https://utex.org/products/trebouxia-medium
+    supports: SUPPORT
+    snippet: 10 g/L
+    explanation: 'Supports ingredients[0].concentration for Proteose Peptone. Retain
+      the numeric value with exact source evidence and any explicitly stated preparation
+      basis. Directly retain the source table value and unit; no mass/molar conversion
+      is performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition
+      table and Directions. Component cell: ''Proteose Peptone(BD 211684)''; amount
+      cell: ''10 g/L''.'
 - preferred_term: Glucose
   concentration:
     value: '0.11'
@@ -41,16 +51,26 @@ ingredients:
     for 0.11 M final.
   nutritional_roles:
   - CARBON_SOURCE
+  evidence:
+  - reference: https://utex.org/products/trebouxia-medium
+    supports: SUPPORT
+    snippet: 0.11 M
+    explanation: 'Supports ingredients[1].concentration for Glucose. Retain the numeric
+      value with exact source evidence and any explicitly stated preparation basis.
+      Directly retain the source table value and unit; no mass/molar conversion is
+      performed. The printed rounded molarity is a source assertion, not an independent
+      certification of molecular weight or supplied chemical identity. Separate basis
+      excerpt: ''For 1 L Total''. Locator: #recipe, composition table and Directions.
+      Component cell: ''Glucose(BACTO-dextrose or Sigma D 9634)''; amount cell: ''20
+      g/L''.'
 solutions:
 - preferred_term: Bristol Medium
-  concentration:
-    value: '825'
-    unit: ML_PER_L
   culturemech_term:
     id: CultureMech:000037
     label: Bristol Medium
-  notes: UTEX lists 825 mL prepared Bristol Medium per liter before using reserved
-    Bristol Medium to bring the final recipe to 1 L.
+  notes: Start with approximately 825 mL prepared Bristol Medium, then use additional
+    reserved Bristol Medium to bring the supplemented recipe to 1 L. The combined
+    initial and makeup dose is not quantified; 825 mL/L is not the total dose.
 - preferred_term: 'Soilwater: GR+ Medium'
   concentration:
     value: '140'
@@ -122,12 +142,99 @@ curation_history:
   source: https://utex.org/products/trebouxia-medium
   notes: 'UTEX prepares Trebouxia Medium by supplementing Bristol Medium with prepared
     Soilwater: GR+ Medium, Proteose Peptone, and glucose before autoclaving.'
+- timestamp: '2026-10-10T21:08:21.569593+00:00'
+  curator: codex
+  action: CURATED_UTEX_ORGANIC_MEDIUM_INPUT_BASES_AND_CONCENTRATION_EVIDENCE
+  notes: Exact source-URL and snippet evidence for input doses, optional agar and
+    retained concentrations. Chemical identity mappings and unrelated growth/role
+    claims are unchanged, not independently certified. No taxa-media association added.
+  source: https://utex.org/products/trebouxia-medium
+  changes: '{"claims": [{"basis_snippet": "For 1 L Total", "calculation": "Directly
+    retain the source table value and unit; no mass/molar conversion is performed.",
+    "component_snippet": "Proteose Peptone(BD 211684)", "decision": "Retain the numeric
+    value with exact source evidence and any explicitly stated preparation basis.",
+    "field": "ingredients[0].concentration", "ingredient": "Proteose Peptone", "locator":
+    "#recipe, composition table and Directions", "old": {"unit": "G_PER_L", "value":
+    "10"}, "proposed": {"unit": "G_PER_L", "value": "10"}, "reference": "https://utex.org/products/trebouxia-medium",
+    "snippet": "10 g/L", "source_amount": "10 g/L", "source_table_column": 2, "source_table_row":
+    3, "status": "evidence_only"}, {"basis_snippet": "For 1 L Total", "calculation":
+    "Directly retain the source table value and unit; no mass/molar conversion is
+    performed. The printed rounded molarity is a source assertion, not an independent
+    certification of molecular weight or supplied chemical identity.", "component_snippet":
+    "Glucose(BACTO-dextrose or Sigma D 9634)", "decision": "Retain the numeric value
+    with exact source evidence and any explicitly stated preparation basis.", "field":
+    "ingredients[1].concentration", "ingredient": "Glucose", "locator": "#recipe,
+    composition table and Directions", "old": {"unit": "MOLAR", "value": "0.11"},
+    "proposed": {"unit": "MOLAR", "value": "0.11"}, "reference": "https://utex.org/products/trebouxia-medium",
+    "snippet": "0.11 M", "source_amount": "20 g/L", "source_table_column": 4, "source_table_row":
+    4, "status": "evidence_only"}, {"basis_snippet": "Transfer approximately 825 mL
+    to a 2-L Erlenmeyer flask.", "calculation": "No final water/carrier fraction can
+    be calculated from an initial portion and unspecified makeup dose.", "decision":
+    "Remove the unsupported final-fraction slot while retaining the source preparation
+    input in notes.", "field": "solutions[0].concentration", "ingredient": "Bristol
+    Medium", "locator": "#recipe, composition table and Directions", "old": {"unit":
+    "ML_PER_L", "value": "825"}, "proposed": null, "proposed_field": "solutions[0].notes",
+    "reference": "https://utex.org/products/trebouxia-medium", "snippet": "Bring total
+    volume to 1 L with the Bristol Medium saved from step 1.", "status": "unsupported"},
+    {"basis_snippet": "For 1 L Total", "calculation": "Directly retain the source
+    table value and unit; no mass/molar conversion is performed.", "component_snippet":
+    "Soilwater: GR+ Medium", "decision": "Retain the numeric value with exact source
+    evidence and any explicitly stated preparation basis.", "field": "solutions[1].concentration",
+    "ingredient": "Soilwater: GR+ Medium", "locator": "#recipe, composition table
+    and Directions", "old": {"unit": "ML_PER_L", "value": "140"}, "proposed": {"unit":
+    "ML_PER_L", "value": "140"}, "reference": "https://utex.org/products/trebouxia-medium",
+    "snippet": "140 mL/L", "source_amount": "140 mL/L", "source_table_column": 2,
+    "source_table_row": 2, "status": "evidence_only"}, {"basis_snippet": "For 1 L
+    Total", "calculation": "Literal source batch dose; no universal final concentration
+    is derived.", "decision": "Preserve as an inline optional formulation, not a liquid-parent
+    ingredient.", "field": "variants[0].modifications", "ingredient": "agar", "locator":
+    "#recipe, Directions, optional agar instruction", "old": null, "proposed": ["After
+    making up the liquid recipe to 1 L with Bristol Medium, add 15 g agar; do not
+    mix."], "reference": "https://utex.org/products/trebouxia-medium", "snippet":
+    "For 1.5% (w/v) agar medium: add 15 g of agar into the flask; do not mix.", "status":
+    "add"}], "counts": {"bibliographic_entries_enriched": 1, "inline_variant_options_added":
+    1, "new_curation_history": 1, "new_evidence": 4, "stock_context_notes_corrected":
+    1, "unsupported_quantity_slots_removed": 1}}'
 references:
 - reference: UTEX:trebouxia-medium
 - reference: https://utex.org/products/trebouxia-medium
+  title: Trebouxia Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established.
 - reference: https://utex.org/products/bristol-medium
 - reference: https://utex.org/products/soilwater-gr-plus-medium
 original_name: Trebouxia Medium
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+evidence:
+- reference: https://utex.org/products/trebouxia-medium
+  supports: SUPPORT
+  snippet: Bring total volume to 1 L with the Bristol Medium saved from step 1.
+  explanation: 'Supports solutions[0].notes for Bristol Medium. Remove the unsupported
+    final-fraction slot while retaining the source preparation input in notes. No
+    final water/carrier fraction can be calculated from an initial portion and unspecified
+    makeup dose. Separate basis excerpt: ''Transfer approximately 825 mL to a 2-L
+    Erlenmeyer flask.''. Locator: #recipe, composition table and Directions. Separate
+    exact excerpt: ''140 mL/L''. Supports solutions[1].concentration for Soilwater:
+    GR+ Medium. Retain the numeric value with exact source evidence and any explicitly
+    stated preparation basis. Directly retain the source table value and unit; no
+    mass/molar conversion is performed. Separate basis excerpt: ''For 1 L Total''.
+    Locator: #recipe, composition table and Directions. Component cell: ''Soilwater:
+    GR+ Medium''; amount cell: ''140 mL/L''.'
+variants:
+- name: Trebouxia Medium with agar
+  relationship: SUPPLEMENTED_VARIANT
+  description: Optional source-listed agar formulation; the parent remains liquid.
+  modifications:
+  - After making up the liquid recipe to 1 L with Bristol Medium, add 15 g agar; do
+    not mix.
+  purpose: Preserve the separately specified solid formulation
+  evidence:
+  - reference: https://utex.org/products/trebouxia-medium
+    supports: SUPPORT
+    snippet: 'For 1.5% (w/v) agar medium: add 15 g of agar into the flask; do not
+      mix.'
+    explanation: Supports variants[0].modifications only. The source labels this the
+      1.5% agar formulation; no new measured final volume after agar addition is claimed.
+      No agar is added to the liquid parent.

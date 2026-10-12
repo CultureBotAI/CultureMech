@@ -1,0 +1,18 @@
+{
+  "full_record_inversion": true,
+  "records": 6,
+  "applied": true,
+  "new_evidence": 30,
+  "new_curation_history": 6,
+  "new_references": 8,
+  "quantity_corrections": 4,
+  "ingredient_context_notes_added": 30,
+  "stock_nodes_relocated": 6,
+  "unsupported_quantity_slots_removed": 6,
+  "new_quantity_slots": 8,
+  "stock_descriptors_added": 6,
+  "recipe_context_notes_corrected": 3,
+  "evidence_scopes_corrected": 10,
+  "preparation_actions_corrected": 1,
+  "preparation_steps_added": 1
+}

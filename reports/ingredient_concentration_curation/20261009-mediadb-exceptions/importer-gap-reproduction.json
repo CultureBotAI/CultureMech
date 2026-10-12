@@ -1,0 +1,54 @@
+{
+  "terminal": true,
+  "defects_reproduced": 3,
+  "records_edited": 0,
+  "null_source_snippet": "(3854,288,71,NULL)",
+  "null_fetched_as": {
+    "compound_id": "71",
+    "concentration": 0.0,
+    "unit": "mM"
+  },
+  "correctly_parsed_compounds": [
+    {
+      "id": "71",
+      "name": "L-Methionine",
+      "kegg_id": "C00073",
+      "bigg_id": "met-L",
+      "chebi_id": "16643",
+      "formula": "C5H11NO2S"
+    },
+    {
+      "id": "16384",
+      "name": "Sodium chloride",
+      "kegg_id": "",
+      "bigg_id": "",
+      "chebi_id": "26710",
+      "formula": "NaCl"
+    }
+  ],
+  "mapped_ingredients": [
+    {
+      "preferred_term": "16643",
+      "notes": "Cross-references: KEGG:C00073, BiGG:met-L"
+    },
+    {
+      "preferred_term": "26710",
+      "concentration": {
+        "value": "17.1",
+        "unit": "MILLIMOLAR"
+      }
+    }
+  ],
+  "synthetic_explicit_zero_import": [
+    {
+      "preferred_term": "26710"
+    }
+  ],
+  "diagnosis": [
+    "Fetcher converts source NULL to zero.",
+    "Importer uses correctly parsed chebi_id as preferred_term instead of name.",
+    "Importer omits synthetic explicit zero by a truthiness check."
+  ],
+  "primary_source_amounts_asserted": false,
+  "all_record_goal_complete": false
+}

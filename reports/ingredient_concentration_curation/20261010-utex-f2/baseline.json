@@ -1,0 +1,20 @@
+{
+  "normalized_inventory_sha256": "431326f33112b1defa9875a78a19b8482a373d989ab4ced9f80f6cb353a14a4c",
+  "previously_edited_records": 5366,
+  "previously_reviewed_records": 11894,
+  "newly_edited_targets": [
+    "data/normalized_yaml/algae/1_F_2_Medium.yaml",
+    "data/normalized_yaml/algae/5_F_2_Medium.yaml",
+    "data/normalized_yaml/algae/8_ppt_F_2_Medium.yaml",
+    "data/normalized_yaml/algae/F_2_Medium.yaml",
+    "data/normalized_yaml/algae/f_2_nh4_medium.yaml"
+  ],
+  "newly_reviewed_targets": [
+    "data/normalized_yaml/algae/1_F_2_Medium.yaml",
+    "data/normalized_yaml/algae/5_F_2_Medium.yaml",
+    "data/normalized_yaml/algae/8_ppt_F_2_Medium.yaml",
+    "data/normalized_yaml/algae/F_2_Medium.yaml",
+    "data/normalized_yaml/algae/f_2_nh4_medium.yaml"
+  ],
+  "report_search_includes_ignored_files": true
+}

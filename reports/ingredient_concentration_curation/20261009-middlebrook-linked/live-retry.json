@@ -1,0 +1,142 @@
+{
+  "terminal": true,
+  "phase": "live",
+  "checks": [],
+  "code_sha256": {
+    "scripts/repair_linked_middlebrook.py": "b6571c6b97979de2b2ee7b16b4c3bc071d17467ef57fa104e5902d8e1a6658f1",
+    "tests/test_linked_middlebrook.py": "e95182859d2d576c3266645dd2abbbfa34314c4ed9d20de0f4c3ea019a2f6034",
+    "reports/ingredient_concentration_curation/20261009-middlebrook-linked/audit.py": "807c71a2ea7076245bb0ee989868f81ce24a673e53f6c7462daaf2f47396a73b"
+  },
+  "plan_sha256": "8d9b1352d5227111048a31411104b8a6c255819111fd4e1153917b29ea74074a",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138"
+  },
+  "transport": "Explicit urllib public GET with no redirects; no silent validator transport fallback. Raw validated captures stored in the official-source cache.",
+  "sources": [
+    {
+      "key": "D645",
+      "metadata": {
+        "version": 1,
+        "url": "https://mediadive.dsmz.de/rest/medium/645",
+        "response_url": "https://mediadive.dsmz.de/rest/medium/645",
+        "http_status": 200,
+        "sha256": "5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318",
+        "accessed_at": "2026-10-09T01:40:11.172863+00:00"
+      },
+      "matches_capture": true
+    },
+    {
+      "key": "D911",
+      "metadata": {
+        "version": 1,
+        "url": "https://mediadive.dsmz.de/rest/medium/911",
+        "response_url": "https://mediadive.dsmz.de/rest/medium/911",
+        "http_status": 200,
+        "sha256": "8bb3cdaa0fb0722aea72b4397af4a5cccb0db867697c97828fc88561cd657b67",
+        "accessed_at": "2026-10-09T01:40:11.746039+00:00"
+      },
+      "matches_capture": true
+    },
+    {
+      "key": "DSMZ645",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+        "http_status": 200,
+        "sha256": "8f4d6801aab892b40a988bba7e499d582097489fae3871d760fbabc22e8e1757",
+        "accessed_at": "2026-10-09T01:40:12.789573+00:00",
+        "pdf_sha256": "e97e19295e3f61a6bcfaae355a2df1e9a4eb444f4b68177ad3b48b351d92932a",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "matches_capture": true
+    },
+    {
+      "key": "DSMZ645a",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645a.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645a.pdf",
+        "http_status": 200,
+        "sha256": "618ad4ef209f7681d6aae33d2be1c444114b748714ea9bdf6f1f5bb10832fcd0",
+        "accessed_at": "2026-10-09T01:40:13.697280+00:00",
+        "pdf_sha256": "3a37150a4a9f1c36727ac53c80fba75e6570653a97f27d243124bc87cb2ef417",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "matches_capture": true
+    },
+    {
+      "key": "DSMZ911",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium911.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium911.pdf",
+        "http_status": 200,
+        "sha256": "8c5ab138ca63ae14d3da037170376b16a3921c6b7e5594502aa32d1767562eef",
+        "accessed_at": "2026-10-09T01:40:14.747123+00:00",
+        "pdf_sha256": "37172359a5df31c53f2af8a9f2ec0889c166061663a0741e8f64f161502b6ed5",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "matches_capture": true
+    },
+    {
+      "key": "K645",
+      "metadata": {
+        "version": 1,
+        "url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645",
+        "response_url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645",
+        "http_status": 200,
+        "sha256": "68ca8e66fc375ef2b6baca45819969ca906207fabedc340250e4ed8e2e9b3ec1",
+        "accessed_at": "2026-10-09T01:40:15.191456+00:00"
+      },
+      "matches_capture": true
+    },
+    {
+      "key": "K645_44338",
+      "metadata": {
+        "version": 1,
+        "url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+        "response_url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44338",
+        "http_status": 200,
+        "sha256": "05de619b2b7c232c3819a2422a9c5755c301d041f16a470c62015001842918c9",
+        "accessed_at": "2026-10-09T01:40:15.794134+00:00"
+      },
+      "matches_capture": true
+    },
+    {
+      "key": "K645_44339",
+      "metadata": {
+        "version": 1,
+        "url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44339",
+        "response_url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645_44339",
+        "http_status": 200,
+        "sha256": "22e90363de4db05ca374ae2b35ca758d090c410e80bc70bac11b09c6625091bd",
+        "accessed_at": "2026-10-09T01:40:16.396933+00:00"
+      },
+      "matches_capture": true
+    }
+  ],
+  "error": "RecipeReferenceError: source_cache: cannot read/write official recipe cache: HTTPError"
+}

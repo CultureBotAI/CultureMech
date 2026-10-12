@@ -1,0 +1,105 @@
+{
+  "terminal": true,
+  "phase": "ledgers",
+  "records_applied": 0,
+  "checks": [],
+  "code_sha256": {
+    "scripts/repair_ruminococcus_albus_family.py": "bd50694b6d094e72ced5c9869da14b889485d99b92f8a826fddfbbe92af5abff",
+    "tests/test_ruminococcus_albus_family.py": "20603276de67540569eb13e065ec796a753b0e2a571a77f15f029914a84daaa0",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/audit.py": "9f73f42bb35238527ec827d020eb2438d0b6b2dbb9e1018c38025ee5f29e269b",
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/repair_mediadive_stock_concentration_evidence.py": "1badfa99205690cf6082d95db7dafbd6d4927b617027bc61fbaaf9dbd597c974",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a"
+  },
+  "plan_sha256": "47771aa8b0a5d36a7ae339456df36304c2cdabd7508ec526f8f269106bb14332",
+  "context_sha256": "45d48a0e66d0504c0bea2655ea38f2a88c4c3034f8f4bd520f6e6848e22d0b55",
+  "inventory_before": "b2fe53f9a5f5c2a28ce3af156e7c8d7c95e000e1f150df9ac3799f8a4e454cfe",
+  "records": [
+    {
+      "key": "K436",
+      "target": "data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/K436.md",
+      "sha256": "723d377e29adbfe75fbcc14a71ab6e0a70e79a8d4ac231976429e6086f6aaab4",
+      "claims": 67,
+      "source_nodes": 19
+    },
+    {
+      "key": "M694",
+      "target": "data/normalized_yaml/bacterial/TOGO_M694_Ruminococcus_Albus_Medium.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/M694.md",
+      "sha256": "0036dff647cfc4fb927c43a7b94e76203854d68a26c92f730968773101eb0ea6",
+      "claims": 85,
+      "source_nodes": 25
+    },
+    {
+      "key": "K3017",
+      "target": "data/normalized_yaml/bacterial/fatty_acid_mixture_medium_436.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/K3017.md",
+      "sha256": "8f7c9864028c629328453a37aba29f05be701d2e26755495335d9f07385187fa",
+      "claims": 15,
+      "source_nodes": 4
+    },
+    {
+      "key": "S882",
+      "target": "data/normalized_yaml/bacterial/mediadive_882_Main_sol_436.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/S882.md",
+      "sha256": "f8dd2abfc936ceaa60943e0f0181a54849867005eac54a5e18376953da8f16ee",
+      "claims": 28,
+      "source_nodes": 11
+    },
+    {
+      "key": "S883",
+      "target": "data/normalized_yaml/bacterial/mediadive_883_Mineral_solution_1.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/S883.md",
+      "sha256": "6f1cb53a99bd2ed88fb5f96db17a736ebc52277b3f7871abe5a5c98e8da3dd77",
+      "claims": 8,
+      "source_nodes": 1
+    },
+    {
+      "key": "S884",
+      "target": "data/normalized_yaml/bacterial/mediadive_884_Mineral_solution_2.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/S884.md",
+      "sha256": "6609449e76bf85759b24e7ac3b59f1b25c793cf8199e852d232745a9f8fab034",
+      "claims": 21,
+      "source_nodes": 5
+    },
+    {
+      "key": "S885",
+      "target": "data/normalized_yaml/bacterial/mediadive_885_Fatty_acid_mixture.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/S885.md",
+      "sha256": "96780684e0b7b4de1cd57ad3c63258e6a92977e7d50dbbf7ee544b4e9392b8a5",
+      "claims": 19,
+      "source_nodes": 4
+    },
+    {
+      "key": "K436_18848",
+      "target": "data/normalized_yaml/bacterial/medium_436_modified_for_dsm_18848.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/K436_18848.md",
+      "sha256": "4ecbe0bf24f7d3ed45fc93242ee9515ba22231b21558256040fd0cb9a62f633e",
+      "claims": 73,
+      "source_nodes": 21
+    },
+    {
+      "key": "D436",
+      "target": "data/normalized_yaml/bacterial/ruminococcus_albus_medium.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/D436.md",
+      "sha256": "f8c2f4ba9de6a312febd5fd810884bdad925b95e9a5fa1a4e27c762d25d10971",
+      "claims": 95,
+      "source_nodes": 21
+    },
+    {
+      "key": "M2636",
+      "target": "data/normalized_yaml/bacterial/ruminococcus_albus_medium_maltose_1g_l_starch_1g_l.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/records/M2636.md",
+      "sha256": "b8feebcf73d0ba13a0f81eeb2a383ab2f4b4042becbecbb8586b52811ccd3cd0",
+      "claims": 96,
+      "source_nodes": 27
+    }
+  ]
+}

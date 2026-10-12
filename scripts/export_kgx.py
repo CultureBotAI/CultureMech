@@ -112,7 +112,8 @@ def _verify(output_dir: Path) -> tuple[int, int]:
                 f"{path} was not written. TSVWriter only creates a file when the "
                 f"matching property list is set in {CONFIG.name}."
             )
-        rows = sum(1 for _ in path.open()) - 1  # discount the header
+        with path.open() as handle:
+            rows = sum(1 for _ in handle) - 1  # discount the header
         if rows <= 0:
             raise SystemExit(f"{path} has a header but no rows.")
         counts.append(rows)

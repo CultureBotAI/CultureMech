@@ -1,0 +1,58 @@
+{
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/methylobacterium_medium.yaml",
+      "status": "checked",
+      "fingerprint": "10493dbd51b4eddfc02d88bc29f97474d394be6fd2f44e0bc70c78ab1a8f479f",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/methylobacterium_medium.yaml"
+      ],
+      "fields": {
+        "ingredients": false,
+        "solutions": true,
+        "variants": true,
+        "preparation_steps": true,
+        "notes": false,
+        "ph_value": true,
+        "evidence": true,
+        "references": false,
+        "curation_history": false
+      },
+      "all_fields_retained": false,
+      "source_scoped_snippets": 16,
+      "retained_scoped_snippets": 16
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml",
+      "status": "checked",
+      "fingerprint": "10493dbd51b4eddfc02d88bc29f97474d394be6fd2f44e0bc70c78ab1a8f479f",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/methylobacterium_medium.yaml"
+      ],
+      "fields": {
+        "ingredients": true,
+        "solutions": true,
+        "variants": true,
+        "preparation_steps": true,
+        "notes": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true,
+        "curation_history": true
+      },
+      "all_fields_retained": true,
+      "source_scoped_snippets": 17,
+      "retained_scoped_snippets": 17
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_223_Main_sol_125.yaml",
+      "status": "outside_medium_scope",
+      "authoritative_record_unchanged": true
+    }
+  ],
+  "all_media_fields_retained": false,
+  "all_media_snippets_retained": true,
+  "scope": "Current full-corpus groups. Scoped literal quote retention is distinct from full ingredient, variant, explanation and history retention. Standalone solutions correctly remain outside medium merging. No generated corpus published."
+}

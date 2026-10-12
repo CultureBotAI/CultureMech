@@ -1,0 +1,33 @@
+{
+  "terminal": true,
+  "production_reference_gate_passed": false,
+  "live_checks": 22,
+  "live_passes": 6,
+  "live_failures": 16,
+  "bibliography_title_checks_passed": 2,
+  "failed_paths": [
+    "ingredients[0].evidence[0].snippet",
+    "solutions[0].composition[0].evidence[0].snippet",
+    "solutions[0].composition[1].evidence[0].snippet",
+    "solutions[0].composition[2].evidence[0].snippet",
+    "solutions[0].composition[3].evidence[0].snippet",
+    "solutions[1].composition[0].evidence[0].snippet",
+    "solutions[1].composition[1].evidence[0].snippet",
+    "solutions[1].composition[2].evidence[0].snippet",
+    "solutions[1].composition[3].evidence[0].snippet",
+    "solutions[1].composition[4].evidence[0].snippet",
+    "solutions[1].composition[5].evidence[0].snippet",
+    "solutions[1].composition[6].evidence[0].snippet",
+    "solutions[1].composition[7].evidence[0].snippet",
+    "solutions[2].composition[0].evidence[0].snippet",
+    "evidence[0].snippet",
+    "variants[0].evidence[0].snippet"
+  ],
+  "all_failed_snippets_found_in_parsed_capture": true,
+  "capture_sha256": "323fe17d640ab0e039a06b4e585d26cc48effda0c03fbe730ca7cfe94abc0eee",
+  "detected_capture_encoding": "windows-1252",
+  "utf8_replacement_characters_if_lossily_decoded": 91,
+  "cause": "The generic reference validator retains HTML tags in table rows; literal rendered-text snippets span those tags. This is not an absent primary-source quantity.",
+  "remaining": "Implement a scoped FGSC protocol adapter with source identity, ordered cells, section boundaries, hidden/ambiguous text rejection, transport encoding provenance and literal unit-preserving matching. Do not add fuzzy matches or a quote allowlist. The current official-source cache assumes UTF-8, but this source capture is detected as Windows-1252 and has no explicit HTML charset; encoding must be handled and tested before routing it through that cache.",
+  "all_record_goal_complete": false
+}

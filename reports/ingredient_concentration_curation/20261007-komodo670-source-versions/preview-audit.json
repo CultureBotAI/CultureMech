@@ -1,0 +1,20 @@
+{
+  "applied": false,
+  "records": 5,
+  "counts": {
+    "new_evidence": 55,
+    "new_curation_history": 5,
+    "new_references": 19,
+    "unsupported_quantity_slots_removed": 22,
+    "new_quantity_slots": 9,
+    "child_links_corrected": 4,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "stock_descriptors_added": 3,
+    "ingredient_nodes_relocated": 1,
+    "stock_stage_concentration_rebases": 1,
+    "unquantified_carrier_nodes_added": 2,
+    "parent_links_corrected": 4
+  }
+}

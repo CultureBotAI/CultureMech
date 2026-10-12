@@ -1,0 +1,63 @@
+{
+  "phase": "focused",
+  "terminal": true,
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "src/culturemech/validation/recipe_references.py",
+        "tests/test_recipe_pdf_references.py",
+        "tests/test_recipe_references.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/recipe-pdf-focused-complete-0.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "src/culturemech/validation/recipe_references.py",
+        "tests/test_recipe_pdf_references.py",
+        "tests/test_recipe_references.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/recipe-pdf-focused-complete-1.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_recipe_pdf_references.py",
+        "tests/test_recipe_references.py",
+        "tests/test_dsmz_albumin_preparations.py",
+        "tests/test_medium_concentration_batch.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/recipe-pdf-focused-complete-2.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c"
+  },
+  "code_sha256": {
+    "src/culturemech/validation/recipe_references.py": "44b92ab4961d192b172593c00e0f71f089fad6595b246011bc05c1d3d7fb0c4a",
+    "tests/test_recipe_pdf_references.py": "bd301e4d081a0ce7bd6d67e0a5fcc43406156eb27cc00ea7855c8d68a84d3166",
+    "tests/test_recipe_references.py": "59d055b9239b03b3794ec5297f23c4b1ecb09e7984b252b4337755b86cf0f7ab",
+    "tests/fixtures/recipe_references/DSMZ104a.json": "ec2600e109a962dd381c566c97c02d9b7873838de29593429c49e88065d7faa5",
+    "tests/fixtures/recipe_references/DSMZ1829.json": "e5746a0a85fbf74cd77490ebde4b427bf59579b622c54c1b113ead1b6ea1dda4",
+    "tests/fixtures/recipe_references/DSMZ261.json": "fd5b361d542572ce82b192e0f6ee26b6cb7a56639b6e48fbca28baea3a83974f",
+    "tests/fixtures/recipe_references/DSMZ403.json": "c8dfabc547468886a01ce5d5806ad87bd56b75cb313cd3d39e94b77f59673e1a",
+    "tests/fixtures/recipe_references/DSMZ605a.json": "a7888642201dd8a30dad78b0ec3af286a0981731ce15d993cca9facc0de5091d",
+    "tests/fixtures/recipe_references/DSMZ751.json": "a0f650c244d940185cc95bc884506ee2b589ac369b4bd29c9cd5797921a6b914"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c"
+  }
+}

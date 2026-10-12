@@ -1,0 +1,9 @@
+{
+  "fingerprint": "559cde7c7c232903751b2b5b9db90b0e7ef74654a7276ebf3b09ad5389653c95",
+  "group_paths": [
+    "data/normalized_yaml/archaea/DSMZ_1399_HALOPHILIC_MEDIUM.yaml"
+  ],
+  "id": "CultureMech:000252",
+  "ingredients_solutions_evidence_references_preserved": true,
+  "new_snippets": 15
+}

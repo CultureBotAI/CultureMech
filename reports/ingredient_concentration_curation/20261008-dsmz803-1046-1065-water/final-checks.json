@@ -1,0 +1,28 @@
+{
+  "terminal": true,
+  "scope": "Final source/hash/report and cumulative-count checks; not a claim that failed publication gates pass.",
+  "live_record_hashes_checked": 9,
+  "supplemental_reports_checked": 9,
+  "report_statuses": {
+    "verified": 45,
+    "correct": 9,
+    "unsupported": 3
+  },
+  "api_captures_checked": 6,
+  "original_pdf_bytes_and_extracted_pages_checked": 3,
+  "mapping_rows_checked": 3,
+  "verified_cumulative_delta": {
+    "water_input_notes_added": 9,
+    "new_curation_history": 9,
+    "quantity_corrections": 9,
+    "new_references": 9,
+    "new_evidence": 18
+  },
+  "main_validation_failures": [
+    "verify-merges",
+    "freshness"
+  ],
+  "citation_validation_passed": false,
+  "all_record_objective_complete": false,
+  "runtime": "Partial locked Python 3.13; not full CI"
+}

@@ -1,0 +1,34 @@
+{
+  "terminal": true,
+  "records_edited": false,
+  "source_rows_checked": 189,
+  "invented_quantity_challenges_rejected": 189,
+  "old_quantity_slots_checked": 164,
+  "combined_source_rows_checked": 435,
+  "combined_old_quantity_slots_checked": 416,
+  "identified_candidates": 14,
+  "new_visual_pages_checked": 6,
+  "volume_conflicts_recomputed": {
+    "D829b": {
+      "reported_final_ml": 1005,
+      "liquid_inputs_ml": 1005.5
+    },
+    "D829c": {
+      "reported_final_ml": 1011,
+      "liquid_inputs_ml": 1011.5
+    },
+    "D829d": {
+      "reported_final_ml": 1020,
+      "liquid_inputs_ml": 1011.5
+    }
+  },
+  "artifact_sha256": {
+    "expanded-review": "3d49da91d43453a89330f892fe38dd7b2f10fe79233f827a6b89605aee933a15",
+    "extended-context": "ef471c66afd7e6bfd16ee8cb3683ccd4978b4b0e5153045a3358538e48a03387",
+    "extended-preflight": "5664565994c9760d7620528d24fc1680df1c84b65339c78b758ddf6ef7af96ff",
+    "companion-context": "bb5e8f221a5df39d00552c7900eb5b9153597c80cfd426ee738ed6e8f1607fd3",
+    "extended-visual-review": "96c25464b1bead4bd254e6389f6899d49a4c5c0897698950bd6ca4b413fb2365",
+    "source-audit": "e269626b87ecd4ed47379f9cf6f0146909807fd54d514db6c7a388aef2d84b4c"
+  },
+  "limitation": "Source-review checks only. No after-YAML builder, writer or applied claims were tested. This is not full-corpus completion."
+}

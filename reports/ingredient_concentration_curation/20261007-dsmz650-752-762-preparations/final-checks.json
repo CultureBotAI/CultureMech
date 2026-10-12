@@ -1,0 +1,113 @@
+{
+  "terminal": true,
+  "checks": [
+    {
+      "name": "test-fast",
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-test-fast.log"
+    },
+    {
+      "name": "final-independent-readback",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/audit.py",
+        "--applied",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/final-readback.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-final-independent-readback.log"
+    },
+    {
+      "name": "final-source-readback",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_dsmz650_752_762_preparations.py",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-final-source-readback.log"
+    },
+    {
+      "name": "black",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_dsmz650_752_762_preparations.py",
+        "tests/test_dsmz650_752_762_preparations.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/audit.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/retention.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-black.log"
+    },
+    {
+      "name": "ruff",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_dsmz650_752_762_preparations.py",
+        "tests/test_dsmz650_752_762_preparations.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/audit.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/retention.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-ruff.log"
+    },
+    {
+      "name": "final-diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-preparations-final-diff-check.log"
+    }
+  ],
+  "test_suites": {
+    "baseline": [
+      {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "264",
+        "time": "134.763",
+        "timestamp": "2026-10-07T21:28:39.828990-07:00",
+        "hostname": "Marcins-MacBook-Pro-2.local"
+      }
+    ],
+    "post": [
+      {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "264",
+        "time": "133.845",
+        "timestamp": "2026-10-07T21:37:05.344887-07:00",
+        "hostname": "Marcins-MacBook-Pro-2.local"
+      }
+    ],
+    "fast": [
+      {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "16",
+        "tests": "7573",
+        "time": "576.343",
+        "timestamp": "2026-10-07T21:32:47.842087-07:00",
+        "hostname": "Marcins-MacBook-Pro-2.local"
+      }
+    ]
+  },
+  "followup_report_contract": "6/6 exact-path hash-linked supplements; every persisted concentration or missing ingredient amount has a row; no duplicate Record lines"
+}

@@ -11,9 +11,76 @@ media_term:
   term:
     id: komodo.medium:3017
     label: Fatty acid mixture (medium 436)
-notes: 'Source: KOMODO ModelSEED | ID: 3017 | DSMZ Medium: 3017 (mediadive.medium:3017)
-  | Aerobic: No | SubMedium: Yes'
-ingredients: []
+notes: |-
+  KOMODO accession 3017 names Fatty acid mixture (medium 436), but its Instructions link points to DSMZ3017. That conflicting DSMZ/MediaDive3017 equivalence is unverified and is withdrawn from the formulation assertion. All four displayed Gram Amounts are null; identities are restored without copying numerical doses from another provider. Keep its legacy MediaRecipe shape and record_kind SOLUTION.
+
+  KOMODO displayed Gram Amounts and nulls are source-specific assertions. Rounded molar columns and aggregated SEED entries are not ingredient evidence. No organism-growth association is inferred.
+ingredients:
+- preferred_term: Isobutyric acid
+  notes: 'Exact displayed Gram Amount precision and nulls; never rounded Mol Amount
+    or combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of
+    medium.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017
+    supports: SUPPORT
+    snippet: Isobutyric acid isobutyric acid SEED-cpd01711### null null
+    explanation: |-
+      ingredients[0].preferred_term: Exact displayed Gram Amount precision and nulls; never rounded Mol Amount or combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[0]; accessed=2026-10-09T06:57:14.196409+00:00; capture SHA256=17a1eb82022fb7b174e9a5b7ceb719eeedca129c932b5a2cb11f1034e50ec99e.
+
+      Additional exact excerpt: Isobutyric acid isobutyric acid SEED-cpd01711### null null
+      ingredients[0].concentration: Exact displayed Gram Amount precision and nulls; never rounded Mol Amount or combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[0]; accessed=2026-10-09T06:57:14.196409+00:00; capture SHA256=17a1eb82022fb7b174e9a5b7ceb719eeedca129c932b5a2cb11f1034e50ec99e.
+
+      Additional exact excerpt: Isobutyric acid isobutyric acid SEED-cpd01711### null null
+      ingredients[0].notes: Exact displayed Gram Amount precision and nulls; never rounded Mol Amount or combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[0]; accessed=2026-10-09T06:57:14.196409+00:00; capture SHA256=17a1eb82022fb7b174e9a5b7ceb719eeedca129c932b5a2cb11f1034e50ec99e.
+- preferred_term: 2-Methylbutyric acid
+  notes: 'Exact displayed Gram Amount precision and nulls; never rounded Mol Amount
+    or combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of
+    medium.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017
+    supports: SUPPORT
+    snippet: 2-Methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# null
+      null
+    explanation: |-
+      ingredients[1].preferred_term: Exact displayed Gram Amount precision and nulls; never rounded Mol Amount or combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[1]; accessed=2026-10-09T06:57:14.196409+00:00; capture SHA256=17a1eb82022fb7b174e9a5b7ceb719eeedca129c932b5a2cb11f1034e50ec99e.
+
+      Additional exact excerpt: 2-Methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# null null
+      ingredients[1].concentration: Exact displayed Gram Amount precision and nulls; never rounded Mol Amount or combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[1]; accessed=2026-10-09T06:57:14.196409+00:00; capture SHA256=17a1eb82022fb7b174e9a5b7ceb719eeedca129c932b5a2cb11f1034e50ec99e.
+
+      Additional exact excerpt: 2-Methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# null null
+      ingredients[1].notes: Exact displayed Gram Amount precision and nulls; never rounded Mol Amount or combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[1]; accessed=2026-10-09T06:57:14.196409+00:00; capture SHA256=17a1eb82022fb7b174e9a5b7ceb719eeedca129c932b5a2cb11f1034e50ec99e.
+- preferred_term: Isovaleric acid
+  notes: 'Exact displayed Gram Amount precision and nulls; never rounded Mol Amount
+    or combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of
+    medium.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017
+    supports: SUPPORT
+    snippet: Isovaleric acid Isovaleric acid SEED-cpd05178### null null
+    explanation: |-
+      ingredients[2].preferred_term: Exact displayed Gram Amount precision and nulls; never rounded Mol Amount or combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[2]; accessed=2026-10-09T06:57:14.196409+00:00; capture SHA256=17a1eb82022fb7b174e9a5b7ceb719eeedca129c932b5a2cb11f1034e50ec99e.
+
+      Additional exact excerpt: Isovaleric acid Isovaleric acid SEED-cpd05178### null null
+      ingredients[2].concentration: Exact displayed Gram Amount precision and nulls; never rounded Mol Amount or combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[2]; accessed=2026-10-09T06:57:14.196409+00:00; capture SHA256=17a1eb82022fb7b174e9a5b7ceb719eeedca129c932b5a2cb11f1034e50ec99e.
+
+      Additional exact excerpt: Isovaleric acid Isovaleric acid SEED-cpd05178### null null
+      ingredients[2].notes: Exact displayed Gram Amount precision and nulls; never rounded Mol Amount or combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[2]; accessed=2026-10-09T06:57:14.196409+00:00; capture SHA256=17a1eb82022fb7b174e9a5b7ceb719eeedca129c932b5a2cb11f1034e50ec99e.
+- preferred_term: Distilled water
+  notes: 'Exact displayed Gram Amount precision and nulls; never rounded Mol Amount
+    or combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of
+    medium.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017
+    supports: SUPPORT
+    snippet: Distilled water H2O SEED-cpd00001### null null
+    explanation: |-
+      ingredients[3].preferred_term: Exact displayed Gram Amount precision and nulls; never rounded Mol Amount or combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[3]; accessed=2026-10-09T06:57:14.196409+00:00; capture SHA256=17a1eb82022fb7b174e9a5b7ceb719eeedca129c932b5a2cb11f1034e50ec99e.
+
+      Additional exact excerpt: Distilled water H2O SEED-cpd00001### null null
+      ingredients[3].concentration: Exact displayed Gram Amount precision and nulls; never rounded Mol Amount or combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[3]; accessed=2026-10-09T06:57:14.196409+00:00; capture SHA256=17a1eb82022fb7b174e9a5b7ceb719eeedca129c932b5a2cb11f1034e50ec99e.
+
+      Additional exact excerpt: Distilled water H2O SEED-cpd00001### null null
+      ingredients[3].notes: Exact displayed Gram Amount precision and nulls; never rounded Mol Amount or combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[3]; accessed=2026-10-09T06:57:14.196409+00:00; capture SHA256=17a1eb82022fb7b174e9a5b7ceb719eeedca129c932b5a2cb11f1034e50ec99e.
 applications:
 - Microbial cultivation
 curation_history:
@@ -30,3 +97,106 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Fatty acid mixture (medium 436)" to "fatty_acid_mixture_medium_436"
     for consistent matching
+- timestamp: '2026-10-09T07:30:35.561516+00:00'
+  curator: codex
+  action: RESTORED_RUMINOCOCCUS_ALBUS_SOURCE_FORMULATIONS_WITH_EVIDENCE
+  notes: Restore exact-source medium436 formulation, preparation stages and input
+    units. Preserve qualified prior rates, source-specific nulls and unresolved original
+    bases. No growth association added.
+  source: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017
+  changes: '[{"old_field": null, "field": "ingredients[0].preferred_term", "old":
+    null, "new": "Isobutyric acid", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017",
+    "snippet": "Isobutyric acid isobutyric acid SEED-cpd01711### null null"}, {"old_field":
+    null, "field": "ingredients[0].concentration", "old": null, "new": null, "status":
+    "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017",
+    "snippet": "Isobutyric acid isobutyric acid SEED-cpd01711### null null"}, {"old_field":
+    null, "field": "ingredients[0].notes", "old": null, "new": "Exact displayed Gram
+    Amount precision and nulls; never rounded Mol Amount or combined SEED metabolites
+    Exact heading: Gram & Mol amounts are per Liter of medium.", "status": "add",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017",
+    "snippet": "Isobutyric acid isobutyric acid SEED-cpd01711### null null"}, {"old_field":
+    null, "field": "ingredients[1].preferred_term", "old": null, "new": "2-Methylbutyric
+    acid", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017",
+    "snippet": "2-Methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# null
+    null"}, {"old_field": null, "field": "ingredients[1].concentration", "old": null,
+    "new": null, "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017",
+    "snippet": "2-Methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# null
+    null"}, {"old_field": null, "field": "ingredients[1].notes", "old": null, "new":
+    "Exact displayed Gram Amount precision and nulls; never rounded Mol Amount or
+    combined SEED metabolites Exact heading: Gram & Mol amounts are per Liter of medium.",
+    "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017",
+    "snippet": "2-Methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# null
+    null"}, {"old_field": null, "field": "ingredients[2].preferred_term", "old": null,
+    "new": "Isovaleric acid", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017",
+    "snippet": "Isovaleric acid Isovaleric acid SEED-cpd05178### null null"}, {"old_field":
+    null, "field": "ingredients[2].concentration", "old": null, "new": null, "status":
+    "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017",
+    "snippet": "Isovaleric acid Isovaleric acid SEED-cpd05178### null null"}, {"old_field":
+    null, "field": "ingredients[2].notes", "old": null, "new": "Exact displayed Gram
+    Amount precision and nulls; never rounded Mol Amount or combined SEED metabolites
+    Exact heading: Gram & Mol amounts are per Liter of medium.", "status": "add",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017",
+    "snippet": "Isovaleric acid Isovaleric acid SEED-cpd05178### null null"}, {"old_field":
+    null, "field": "ingredients[3].preferred_term", "old": null, "new": "Distilled
+    water", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017",
+    "snippet": "Distilled water H2O SEED-cpd00001### null null"}, {"old_field": null,
+    "field": "ingredients[3].concentration", "old": null, "new": null, "status": "add",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017",
+    "snippet": "Distilled water H2O SEED-cpd00001### null null"}, {"old_field": null,
+    "field": "ingredients[3].notes", "old": null, "new": "Exact displayed Gram Amount
+    precision and nulls; never rounded Mol Amount or combined SEED metabolites Exact
+    heading: Gram & Mol amounts are per Liter of medium.", "status": "add", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017",
+    "snippet": "Distilled water H2O SEED-cpd00001### null null"}, {"old_field": "notes",
+    "field": "notes", "old": "Source: KOMODO ModelSEED | ID: 3017 | DSMZ Medium: 3017
+    (mediadive.medium:3017) | Aerobic: No | SubMedium: Yes", "new": "KOMODO accession
+    3017 names Fatty acid mixture (medium 436), but its Instructions link points to
+    DSMZ3017. That conflicting DSMZ/MediaDive3017 equivalence is unverified and is
+    withdrawn from the formulation assertion. All four displayed Gram Amounts are
+    null; identities are restored without copying numerical doses from another provider.
+    Keep its legacy MediaRecipe shape and record_kind SOLUTION.\n\nKOMODO displayed
+    Gram Amounts and nulls are source-specific assertions. Rounded molar columns and
+    aggregated SEED entries are not ingredient evidence. No organism-growth association
+    is inferred.", "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017",
+    "snippet": "Name: Fatty acid mixture (medium 436)"}, {"old_field": "notes", "field":
+    "notes", "old": "Source: KOMODO ModelSEED | ID: 3017 | DSMZ Medium: 3017 (mediadive.medium:3017)
+    | Aerobic: No | SubMedium: Yes", "new": "KOMODO accession 3017 names Fatty acid
+    mixture (medium 436), but its Instructions link points to DSMZ3017. That conflicting
+    DSMZ/MediaDive3017 equivalence is unverified and is withdrawn from the formulation
+    assertion. All four displayed Gram Amounts are null; identities are restored without
+    copying numerical doses from another provider. Keep its legacy MediaRecipe shape
+    and record_kind SOLUTION.\n\nKOMODO displayed Gram Amounts and nulls are source-specific
+    assertions. Rounded molar columns and aggregated SEED entries are not ingredient
+    evidence. No organism-growth association is inferred.", "status": "conflict",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017",
+    "snippet": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium3017.pdf"},
+    {"old_field": null, "field": "notes", "old": null, "new": "KOMODO accession 3017
+    names Fatty acid mixture (medium 436), but its Instructions link points to DSMZ3017.
+    That conflicting DSMZ/MediaDive3017 equivalence is unverified and is withdrawn
+    from the formulation assertion. All four displayed Gram Amounts are null; identities
+    are restored without copying numerical doses from another provider. Keep its legacy
+    MediaRecipe shape and record_kind SOLUTION.\n\nKOMODO displayed Gram Amounts and
+    nulls are source-specific assertions. Rounded molar columns and aggregated SEED
+    entries are not ingredient evidence. No organism-growth association is inferred.",
+    "status": "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}]'
+evidence:
+- reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017
+  supports: SUPPORT
+  snippet: 'Name: Fatty acid mixture (medium 436)'
+  explanation: |-
+    notes: KOMODO accession 3017 names Fatty acid mixture (medium 436), but its Instructions link points to DSMZ3017. That conflicting DSMZ/MediaDive3017 equivalence is unverified and is withdrawn from the formulation assertion. All four displayed Gram Amounts are null; identities are restored without copying numerical doses from another provider. Keep its legacy MediaRecipe shape and record_kind SOLUTION. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T06:57:14.196409+00:00; capture SHA256=17a1eb82022fb7b174e9a5b7ceb719eeedca129c932b5a2cb11f1034e50ec99e.
+
+    Additional exact excerpt: Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium3017.pdf
+    notes: The provider Instructions URL itself conflicts with the medium436 stock name. No independent DSMZ3017 equivalence has been established. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T06:57:14.196409+00:00; capture SHA256=17a1eb82022fb7b174e9a5b7ceb719eeedca129c932b5a2cb11f1034e50ec99e.
+
+    Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+    notes: KOMODO displayed Gram Amounts and nulls are source-specific assertions. Rounded molar columns and aggregated SEED entries are not ingredient evidence. No organism-growth association is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T06:57:14.196409+00:00; capture SHA256=17a1eb82022fb7b174e9a5b7ceb719eeedca129c932b5a2cb11f1034e50ec99e.
+references:
+- reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=3017
+  title: KOMODO - the Known Media Database
+  notes: source_type=web_page; discovery_mode=existing_record_reference; accessed_on=2026-10-09;
+    capture_sha256=17a1eb82022fb7b174e9a5b7ceb719eeedca129c932b5a2cb11f1034e50ec99e.
+    Individual authors and publication year not supplied. Copyright/access years are
+    not publication years. Source-scoped ingredient evidence, not organism-growth
+    evidence.

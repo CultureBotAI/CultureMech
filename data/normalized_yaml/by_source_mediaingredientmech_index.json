@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T05:38:04.241459+00:00",
+  "generated": "2026-10-10T07:59:36.032840+00:00",
   "source": "MediaIngredientMech",
   "count": 10,
   "recipes": {
@@ -43,14 +43,14 @@
     "CultureMech:015444": {
       "name": "DAS Macro Solution",
       "filename": "DAS_Macro_Solution.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 0,
       "id": "CultureMech:015444",
       "source_id": "MediaIngredientMech:UNMAPPED_0081",
       "source": "MediaIngredientMech",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:015445": {
@@ -75,7 +75,6 @@
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:015446": {

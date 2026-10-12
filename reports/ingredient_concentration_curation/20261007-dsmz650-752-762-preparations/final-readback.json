@@ -1,0 +1,21 @@
+{
+  "records": 6,
+  "applied": true,
+  "counts": {
+    "new_evidence": 20,
+    "new_curation_history": 6,
+    "new_references": 0,
+    "quantity_corrections": 6,
+    "evidence_scopes_corrected": 32,
+    "new_quantity_slots": 8,
+    "preparation_actions_corrected": 2,
+    "preparation_descriptions_corrected": 1,
+    "stock_stage_concentrations_rebased": 4,
+    "stock_nodes_relocated": 8,
+    "stock_descriptors_added": 6,
+    "unsupported_quantity_slots_removed": 4
+  },
+  "complete_record_inversion": true,
+  "all_claim_excerpts_match": true,
+  "historical_excerpts_preserved": true
+}

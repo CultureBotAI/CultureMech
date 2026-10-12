@@ -16,6 +16,33 @@ composition:
     label: magnesium sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4843
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "MgSO4 x 7 H2O",
+                      "compound_id": 8,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 12.32,
+                      "unit": "g",
+                      "g_l": 12.32,
+                      "mmol_l": 49.9846,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (MgSO4 x
+      7 H2O) in MediaDive solution 4843; locator=$.data.recipe[1] (compound_id=8).
+      Provider explicitly reports g_l=12.32. Arithmetic check: 12.32 g * 1 g/g / (1000
+      ml / 1000 ml per L) = 12.32 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:48:04.825889+00:00;
+      response SHA256=aa105ef1aef9bdc873b41c0e5085fd2c809a31f5157e2268afae9c788a09572c.'
 - preferred_term: Distilled water
   concentration:
     value: '920'
@@ -75,6 +102,15 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-10-07T09:53:16.572361+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/4843
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "12.32"} ->
+    {"unit": "G_PER_L", "value": "12.32"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -83,3 +119,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/4843
+  title: 'MediaDive solution 4843: Main sol. J860'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=aa105ef1aef9bdc873b41c0e5085fd2c809a31f5157e2268afae9c788a09572c;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

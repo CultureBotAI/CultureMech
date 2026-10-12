@@ -15,20 +15,6 @@ media_term:
     label: SOIL EXTRACT MEDIUM
 notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf'
 ingredients:
-- preferred_term: air-dried garden soil
-  concentration:
-    value: '400'
-    unit: G_PER_L
-- preferred_term: Tap water
-  term:
-    id: CHEBI:15377
-    label: water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -39,14 +25,34 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/12
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "Agar",
+                              "compound_id": 3,
+                              "amount": 15,
+                              "unit": "g",
+                              "g_l": 15,
+                              "mmol_l": 44.5991,
+                              "optional": 0
+                          }
+    explanation: |-
+      Extraction follow-up evidence for ingredients[0].concentration, ingredients[0].notes. The agar concentration is retained and relocated, with its denominator scoped to recovered extract rather than the extraction starting water. The source identifies the preparation-stage denominator for agar. Exact preparation excerpt at $.data.solutions[0].steps[0]: {
+                              "step": "Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize."
+                          }. Retrieved 2026-10-07T10:40:59.089082+00:00; response SHA256=aae1357e31d914ca483bea213eafb7d4a462aa252fc9008b483e42791202bd8b.
+  notes: 15 g per liter of clarified supernatant, not per liter of the starting soil
+    suspension.
 preparation_steps:
 - step_number: 1
+  action: ADD_AGAR
+  description: Add 15.0 g agar per 1000 ml to the clear supernatant solution thus
+    obtained.
+- step_number: 2
   action: ADJUST_PH
-  description: Sterilize 400.0 g of air-dried garden soil (with high content of organic
-    matter) in 1000 ml tap water for one hour at 121°C. Allow it to sediment for a
-    few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per
-    1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0
-    and sterilize.
+  description: Adjust pH to 6.8 - 7.0 and sterilize.
 applications:
 - Microbial cultivation
 curation_history:
@@ -77,6 +83,55 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-07T10:55:41.454416+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/12
+  changes: 'ingredients[0].concentration: {"unit": "G_PER_L", "value": "400"} -> {"unit":
+    "G_PER_L", "value": "400"} (evidence_only); ingredients[2].concentration: {"unit":
+    "G_PER_L", "value": "15"} -> {"unit": "G_PER_L", "value": "15"} (evidence_only)'
+- timestamp: '2026-10-07T12:43:51.923147+00:00'
+  curator: codex
+  action: CORRECTED_EXTRACTION_INPUT_BOUNDARIES
+  notes: Original recipe visually verified. Removed unsupported extract-solids concentration;
+    retained starting mass in notes; corrected initial water volume; reconciled earlier
+    evidence scopes. No dissolved yield, density, or unspecified recovered volume
+    inferred.
+  source: https://mediadive.dsmz.de/rest/medium/12
+  changes: 'solutions[0].composition[0].concentration: {"unit": "G_PER_L", "value":
+    "400"} -> null (correct); solutions[0].composition[0].notes: null -> "Extraction
+    starting material: 400 g in 1000 ml tap water. Solids are separated before the
+    recovered extract is used. The source does not quantify retained solids or dissolved
+    yield; no numeric extract concentration is asserted." (add); solutions[0].composition[1].concentration:
+    {"unit": "G_PER_L", "value": "1000"} -> {"unit": "L", "value": "1"} (correct);
+    solutions[0].composition[1].notes: null -> "Initial extraction-water addition:
+    1000 ml / 1000 ml per L = 1 L, not a mass concentration or a measured recovered
+    volume." (add); ingredients[0].concentration: {"unit": "G_PER_L", "value": "15"}
+    -> {"unit": "G_PER_L", "value": "15"} (verified); ingredients[0].notes: null ->
+    "15 g per liter of clarified supernatant, not per liter of the starting soil suspension."
+    (add); solutions[0].preparation_notes: "Sterilize 400.0 g of air-dried garden
+    soil (with high content of organic matter) in 1000 ml tap water for one hour at
+    121\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge
+    the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution
+    thus obtained. Adjust pH to 6.8 - 7.0 and sterilize." -> "Sterilize 400.0 g of
+    air-dried garden soil (with high content of organic matter) in 1000 ml tap water
+    for one hour at 121\u00b0C. Allow it to sediment for a few hours at room temperature.
+    Centrifuge the supernatant." (correct); solutions[0].notes: null -> "Curator-described
+    extraction stage, not a separately accessioned stock. Composition lists preparation
+    inputs, not retained solutes. Recovered volume and an absolute extract dose are
+    not specified; agar is dosed per liter of clarified supernatant." (add); preparation_steps:
+    [{"action": "ADJUST_PH", "description": "Sterilize 400.0 g of air-dried garden
+    soil (with high content of organic matter) in 1000 ml tap water for one hour at
+    121\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge
+    the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution
+    thus obtained. Adjust pH to 6.8 - 7.0 and sterilize.", "step_number": 1}] -> [{"action":
+    "ADD_AGAR", "description": "Add 15.0 g agar per 1000 ml to the clear supernatant
+    solution thus obtained.", "step_number": 1}, {"action": "ADJUST_PH", "description":
+    "Adjust pH to 6.8 - 7.0 and sterilize.", "step_number": 2}] (correct)'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_12_SOIL_EXTRACT_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -84,3 +139,91 @@ variant_children:
   name: soil_extract_medium
   notes: KOMODO record is an exact source duplicate of DSMZ Medium 12; local ingredient
     and concentration signatures match.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/12
+  title: 'MediaDive medium 12: SOIL EXTRACT MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=aae1357e31d914ca483bea213eafb7d4a462aa252fc9008b483e42791202bd8b;
+    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf;
+    individual authors and publication year not supplied. Provider-declared main-recipe
+    amounts only.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf
+  title: 'DSMZ medium 12: SOIL EXTRACT MEDIUM'
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    source_organization=DSMZ; accessed_on=2026-10-07; locator=page 1, complete recipe;
+    PDF SHA256=1b4394336f7ace4e09c66fc67ed2e745e3c633b725e436d94335b99289243580. Visually
+    verified extraction stage against the exact API preparation text. Individual authors/publication
+    year not established; copyright year is not used as publication year.
+solutions:
+- preferred_term: Clarified soil extract
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf
+  notes: Curator-described extraction stage, not a separately accessioned stock. Composition
+    lists preparation inputs, not retained solutes. Recovered volume and an absolute
+    extract dose are not specified; agar is dosed per liter of clarified supernatant.
+  composition:
+  - preferred_term: air-dried garden soil
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/12
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "air-dried garden soil",
+                                "compound_id": 2083,
+                                "amount": 400,
+                                "unit": "g",
+                                "g_l": 400,
+                                "optional": 0
+                            }
+      explanation: |-
+        Extraction follow-up evidence for solutions[0].composition[0].concentration, solutions[0].composition[0].notes. The former main-medium concentration is withdrawn; the source supports an extraction input amount, not a finished-medium concentration or dissolved yield. The explicit starting mass is retained in notes because the schema has no absolute-mass unit; no extract concentration is invented. Exact preparation excerpt at $.data.solutions[0].steps[0]: {
+                                "step": "Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize."
+                            }. Retrieved 2026-10-07T10:40:59.089082+00:00; response SHA256=aae1357e31d914ca483bea213eafb7d4a462aa252fc9008b483e42791202bd8b.
+    notes: 'Extraction starting material: 400 g in 1000 ml tap water. Solids are separated
+      before the recovered extract is used. The source does not quantify retained
+      solids or dissolved yield; no numeric extract concentration is asserted.'
+  - preferred_term: Tap water
+    term:
+      id: CHEBI:15377
+      label: water
+    concentration:
+      value: '1'
+      unit: L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: 'Initial extraction-water addition: 1000 ml / 1000 ml per L = 1 L, not
+      a mass concentration or a measured recovered volume.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/12
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "Tap water",
+                                "compound_id": 322,
+                                "amount": 1000,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: |-
+        Extraction follow-up evidence for solutions[0].composition[1].concentration, solutions[0].composition[1].notes. Initial extraction-water volume only. 1000 ml / 1000 ml per L = 1 L of initial preparation water; no density or final volume assumed. Distinguish initial water from recovered liquid and any later make-up water. Exact preparation excerpt at $.data.solutions[0].steps[0]: {
+                                "step": "Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize."
+                            }. Retrieved 2026-10-07T10:40:59.089082+00:00; response SHA256=aae1357e31d914ca483bea213eafb7d4a462aa252fc9008b483e42791202bd8b.
+  preparation_notes: Sterilize 400.0 g of air-dried garden soil (with high content
+    of organic matter) in 1000 ml tap water for one hour at 121°C. Allow it to sediment
+    for a few hours at room temperature. Centrifuge the supernatant.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/12
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "step": "Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml tap water for one hour at 121\u00b0C. Allow it to sediment for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0 and sterilize."
+                        }
+  explanation: Extraction-stage evidence for solutions[0].preparation_notes, solutions[0].notes,
+    preparation_steps. Move the exact extraction-stage text ahead of agar addition;
+    preserve all source instructions. Explicit preparation boundary; no invented stock
+    accession or recovered-solute concentration. Separate extraction from agar addition;
+    filtration through cloth/paper is not asserted to be sterile filtration. Source
+    locator=$.data.solutions[0].steps[0]; retrieved 2026-10-07T10:40:59.089082+00:00;
+    SHA256=aae1357e31d914ca483bea213eafb7d4a462aa252fc9008b483e42791202bd8b.

@@ -1,0 +1,41 @@
+{
+  "terminal": true,
+  "transport": "urllib.request",
+  "sources": [
+    {
+      "key": "K1021",
+      "cache_path": "references_cache/official-recipes-v1/d5b085671617ccd74bbd752d314ec64b39a62cd7cc9537aacd81f9c03a4d7915.json",
+      "matches_inspected_capture": true,
+      "metadata": {
+        "version": 1,
+        "url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+        "response_url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
+        "http_status": 200,
+        "sha256": "e4a9e272f0b17354335496c754134b228d36dcba6f41b2288e83e584be6cbd16",
+        "accessed_at": "2026-10-09T00:19:31.890934+00:00",
+        "encoding": "utf-8",
+        "media_type": "text/plain",
+        "http_content_type": null,
+        "transport": "urllib.request"
+      }
+    },
+    {
+      "key": "K1021_16929",
+      "cache_path": "references_cache/official-recipes-v1/2d3e7803875eea6b1c38226a261846de8a546a583b95cd52740380e028c2aa35.json",
+      "matches_inspected_capture": true,
+      "metadata": {
+        "version": 1,
+        "url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+        "response_url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
+        "http_status": 200,
+        "sha256": "2446cf829f82e9aa7720dcbce9cd38805324f329277d7d25a908b41e2d98492b",
+        "accessed_at": "2026-10-09T00:19:32.595175+00:00",
+        "encoding": "utf-8",
+        "media_type": "text/plain",
+        "http_content_type": null,
+        "transport": "urllib.request"
+      }
+    }
+  ],
+  "scope": "Public GET requests only. No records, snippets or reports are uploaded."
+}

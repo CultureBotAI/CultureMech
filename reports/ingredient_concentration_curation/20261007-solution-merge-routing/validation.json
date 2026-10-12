@@ -1,0 +1,130 @@
+{
+  "runtime": "isolated Python 3.11, not maintained Python 3.13 or CI",
+  "terminal": true,
+  "checks": [
+    {
+      "name": "full-tests",
+      "command": [
+        "just",
+        "test"
+      ],
+      "exit_code": 4,
+      "log": "/tmp/ingredient-media-20261007/solution-routing-full-tests.log"
+    },
+    {
+      "name": "focused-tests",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "tests/test_komodo12_extraction_evidence.py",
+        "tests/test_extraction_input_boundaries.py",
+        "tests/test_dsmz13_stock_only.py",
+        "tests/test_fingerprint.py",
+        "tests/test_merge_filenames.py",
+        "tests/test_merged_duplicates.py",
+        "tests/test_reviewed_medium_stock_boundaries.py",
+        "tests/test_dsmz2_stock_boundary.py",
+        "tests/test_medium_concentration_review.py",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_solution_concentration_review.py",
+        "tests/test_solution_concentration_batch.py",
+        "tests/test_mediadive_stock_concentration_evidence.py",
+        "tests/test_jcm_concentration_evidence.py",
+        "tests/test_jcm_m1308_stock_evidence.py",
+        "tests/test_dsmz1399_stock_boundary.py",
+        "tests/test_concentration_review_reports.py",
+        "tests/test_concentration_plausibility.py",
+        "tests/test_record_io.py",
+        "tests/test_merger.py",
+        "tests/test_merge_yaml_freshness.py",
+        "tests/test_jcm896_final_volume.py",
+        "tests/test_jcm1105_stock_boundary.py",
+        "tests/test_dsmz_percent_supplements.py",
+        "tests/test_media_variant_links.py",
+        "tests/test_public_direct_concentrations.py",
+        "tests/test_public_stock_concentrations.py",
+        "tests/test_public_recipe_input_basis.py",
+        "-q",
+        "tests/test_rs_stock_boundaries.py",
+        "tests/test_repair_mediadive_rs_nnm_score30.py",
+        "tests/test_repair_mediadive_rs_nm_score30.py",
+        "tests/test_komodo_concentration_review.py",
+        "tests/test_dsmz111_preparation.py",
+        "tests/test_solution_merge_routing.py",
+        "tests/test_merge_yaml_freshness.py",
+        "--junitxml",
+        "/tmp/ingredient-media-20261007/solution-routing-tests.xml"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/solution-routing-focused-tests.log"
+    },
+    {
+      "name": "routing-and-retention",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-solution-merge-routing/audit.py",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-solution-merge-routing/routing-audit.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/solution-routing-routing-and-retention.log"
+    },
+    {
+      "name": "verify-merges",
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/solution-routing-verify-merges.log"
+    },
+    {
+      "name": "freshness",
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/solution-routing-freshness.log",
+      "artifact": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-solution-merge-routing/merge-freshness.json"
+    },
+    {
+      "name": "scientific-readback",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz111-preparation/audit.py",
+        "--applied",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-solution-merge-routing/scientific-readback.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/solution-routing-scientific-readback.log"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/solution-routing-diff-check.log"
+    }
+  ],
+  "test_suites": [
+    {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "6",
+      "skipped": "0",
+      "tests": "952",
+      "time": "233.079",
+      "timestamp": "2026-10-07T14:57:14.346711-07:00",
+      "hostname": "Marcins-MacBook-Pro-2.local"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Solution Concentration Review: 1M Acetate solution 13.6 g/L
+
+- Record: data/normalized_yaml/bacterial/mediadive_3417_1M_Acetate_solution_13_6_g_L.yaml
+- ID: CultureMech:012553
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `2f7bcb05771b798c848779c576bc17fb8921bb447ef07e2359009f8043bf4c34`
+- Proposed/result SHA256: `285361d7fbfeb818383dc743d55834c42a45b513e1cfe92a82d612befde2e127`
+- Source: https://mediadive.dsmz.de/rest/solution/3417
+- Source SHA256: 77de612fee0a66a0ae1ef650e4177faa0f166d4d2d82d7b36e755cbc914e302a
+- Retrieved: 2026-10-07T09:21:17.581184+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: changed locally; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `composition[0].concentration` | Sodium acetate trihydrate | {"unit": "G_PER_L", "value": "13.6"} | {"unit": "G_PER_L", "value": "13.6"} | evidence_only | https://mediadive.dsmz.de/rest/solution/3417 | {<br>                "recipe_order": 1,<br>                "compound": "Sodium acetate trihydrate",<br>                "compound_id": 1954,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 13.6,<br>                "unit": "g",<br>                "g_l": 13.6,<br>                "mmol_l": 99.9412,<br>                "optional": 0<br>            } | $.data.recipe[0] (compound_id=1954) | Provider explicitly reports g_l=13.6. Arithmetic check: 13.6 g * 1 g/g / (1000 ml / 1000 ml per L) = 13.6 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 1000. | applied |
+| `composition[1].concentration` | Distilled water | {"unit": "PERCENT_V_V", "value": "1000"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/3417 | {<br>                "recipe_order": 2,<br>                "compound": "Distilled water",<br>                "compound_id": 4,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 1000,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[1] (compound_id=4) | Preparation steps may specify make-up volume; manual water review required | unchanged |
+| `ingredients[0].concentration` | See source for composition | {"unit": "VARIABLE", "value": "variable"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Outside direct composition matching; unchanged. | unchanged |

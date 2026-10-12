@@ -1,0 +1,27 @@
+# Medium Concentration Review: ALKALI-REINFORCED CLOSTRIDIAL AGAR
+
+- Record: data/normalized_yaml/bacterial/alkali_reinforced_clostridial_agar.yaml
+- ID: CultureMech:002805
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `64e497cd9800e914b41d9f8d20dc66efd06cdaa35d22ede0eaab586595c30b3d`
+- Proposed/result SHA256: `64e497cd9800e914b41d9f8d20dc66efd06cdaa35d22ede0eaab586595c30b3d`
+- Source: https://mediadive.dsmz.de/rest/medium/J455
+- Source SHA256: 7c7b061be6b33f9e96f5825f6d57712653a01085aebf48784b2946111503e5c5
+- Retrieved: 2026-10-07T14:06:50.080651+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: reviewed; unchanged; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `ingredients[0].concentration` | Reinforced clostridial agar (Sigma) | {"unit": "G_PER_L", "value": "51.0"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J455 | unknown / not asserted | unknown / not asserted | Stock topology requires source-specific review; flattened stock concentrations are not endorsed as main-medium values. | unchanged |
+| `ingredients[1].concentration` | Distilled water | {"unit": "ML_PER_L", "value": "900.0"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J455 | unknown / not asserted | unknown / not asserted | Stock topology requires source-specific review; flattened stock concentrations are not endorsed as main-medium values. | unchanged |
+| `solutions[0].concentration` | 10% Na2CO3 solution | {"unit": "ML_PER_L", "value": "100.0"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J455 | unknown / not asserted | unknown / not asserted | Stock topology requires source-specific review; flattened stock concentrations are not endorsed as main-medium values. | unchanged |
+| `solutions[0].composition[0].concentration` | Na2CO3 | {"unit": "PERCENT_W_V", "value": "10.0"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J455 | unknown / not asserted | unknown / not asserted | Stock topology requires source-specific review; flattened stock concentrations are not endorsed as main-medium values. | unchanged |
+| `variant_children[0]` | alkali_reinforced_clostridial_agar | {"id": "CultureMech:009842", "name": "alkali_reinforced_clostridial_agar", "notes": "TOGO M455 imports the same JCM Medium 455 Alkali-Reinforced Clostridial Agar formulation represented by MediaDive J455.", "path": "data/normalized_yaml/bacterial/TOGO_M455_Alkali-Reinforced_Clostridial_Agar.yaml", "relationship": "SOURCE_DUPLICATE"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Variant formulation/relationship requires its own exact source; parent evidence is not propagated. | unchanged |
+| `source.data.solutions[0].recipe[0]` | Agar | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/J455 | {<br>                        "recipe_order": 1,<br>                        "compound": "Agar",<br>                        "compound_id": 3,<br>                        "attribute": "Sigma, reinforced clostridial",<br>                        "amount": 51,<br>                        "unit": "g",<br>                        "g_l": 56.6667,<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[0] | Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded. | unchanged |
+| `source.data.solutions[0].recipe[1]` | Distilled water | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/J455 | {<br>                        "recipe_order": 2,<br>                        "compound": "Distilled water",<br>                        "compound_id": 4,<br>                        "amount": 900,<br>                        "unit": "ml",<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[1] | Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded. | unchanged |
+| `source.data.solutions[0].steps[0]` | preparation context | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/J455 | {<br>                        "step": "After autoclaving, aseptically add 100 ml of a 10% Na2CO3 solution to the medium. Check final pH to be about 10.0."<br>                    } | $.data.solutions[0].steps[0] | Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose. | unchanged |

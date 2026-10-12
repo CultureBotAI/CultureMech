@@ -1,0 +1,322 @@
+{
+  "terminal": true,
+  "phase": "presentation",
+  "checks": [],
+  "errors": [],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "a55dbe72d9740772e93f5dbb870bc17709d68b4b494cd12f69e5bb02b7c41f23"
+  },
+  "plan_sha256": "496c0f734f231756ee97a80021429802c1af9136472b77798c9f2162ad4b2d4c",
+  "context_sha256": "1d9b09a2915e57c4f212f1de08bb1a5ada6b2a4b8a47b6b6c5d528d00250e84a",
+  "preview_validation_sha256": "e0f27faf288e9d48aa44560169c45b46beae1856782c9a5aca7f3af77ee36eb8",
+  "code_sha256": {
+    "scripts/repair_synthrophomonas_family.py": "ef0dbeed08dfe0177b59bd628aa6b5ab5f828a1f3f2ea70e7298088831a61838",
+    "tests/test_synthrophomonas_family.py": "fc68e870d8cb3a56e73d29e2d6797f7fac8a241f33bdfb117ecf5bbe5f591a2e",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/audit.py": "e21d75bf5b782c9eba2df6e30ced68989d9bfcc2000bf1b9066cdf04e2a47458"
+  },
+  "focused_application_sha256": "d4e3746f6a9aee747fe3795603e79d9c8025d608352ca36ebad2805fdaee62f8",
+  "ignored_files_included": true,
+  "records": [
+    {
+      "key": "K212",
+      "actual_sha256": "df4773a5857a8c9eccb7c618cca58e985f19b30df078f1b5ee6e949dc283a372",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 9
+    },
+    {
+      "key": "B2805",
+      "actual_sha256": "0100ea13338c0250eccfbc024478378d85d0bdb9d240107e4007abafce3d09de",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "data_quality_flags",
+        "id",
+        "incubation_atmosphere",
+        "media_term",
+        "medium_type",
+        "name",
+        "organism_culture_type",
+        "original_name",
+        "parent_media",
+        "ph_value",
+        "physical_state",
+        "preparation_steps",
+        "target_organisms",
+        "temperature_value",
+        "variant_modifications",
+        "variant_relationship"
+      ],
+      "prior_history_spans_preserved": 5
+    },
+    {
+      "key": "S1038",
+      "actual_sha256": "155427bb39f80f2fddc1c611e5f73c324603e8fbcf4856afd1a79fc21c18ddbd",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "S125",
+      "actual_sha256": "75732286a73f3bf0f8226c171876c5eba3e72857be7091942440ff0aca8d9ad8",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 6
+    },
+    {
+      "key": "S1728",
+      "actual_sha256": "30fea6264298fbfe6a049b96a4e6396bc3ebd0173ab0ae2b1108c439e3389a2d",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S446",
+      "actual_sha256": "ea2919b5394e74b2a9629981262b377a25e2b0f33ce5090ce70086872fc1287f",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 9
+    },
+    {
+      "key": "S447",
+      "actual_sha256": "33c05b213dc75be42d5c6813473b36381b534c4598f263518a5983f412e9edd8",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S448",
+      "actual_sha256": "8cb69aa0082669a09b85de9ec8894ee17fe145bc4b55620608adedb64d605fb3",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "S450",
+      "actual_sha256": "4112ce59ef988a6cd46afd31103ba33fe14411071e2c67a61fc4cfd4da68fee5",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S451",
+      "actual_sha256": "d2669350b5d48986f399d9a09473f0a0dd3583c032974eeb695baf3b42544587",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S453",
+      "actual_sha256": "8fddb698da662d43628c658daad802a7242696f2abda6685949a2096516b9d61",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 9
+    },
+    {
+      "key": "S454",
+      "actual_sha256": "4303928b5b7402ce08cdcc8bee5c911f3e81ff7a730789766f98894346cc8a16",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S455",
+      "actual_sha256": "be2d33d45113458c3e51135d8ab22af00543b43c3c650404edcbbb36a928cca8",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S456",
+      "actual_sha256": "363e6c0204e21f4cd9334f04752268deff77ed1157de2ad75dc4370766f936b5",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "S459",
+      "actual_sha256": "54097c40af7631b9511737e38331cecec466537cc027da9f60ef392f6035f46f",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S460",
+      "actual_sha256": "a51175560de3bc12b66ce0520de410c3178108d89eeeb0a076024fb5e717bf91",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7
+    },
+    {
+      "key": "S461",
+      "actual_sha256": "f16e19122920decee97457f45a7677bd86674dca40a90af151ac5c2ae7a4ffdf",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "S595",
+      "actual_sha256": "6d335bc921a8e8a99bae829fda6e81ae023de16a5c19a71b881fb54a9c14e082",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "S608",
+      "actual_sha256": "801f8b158c2bfb41cb311dd649f9805e09df4ad1e1e4612b45af70c4b4a6dac7",
+      "unchanged_root_spans": [
+        "category",
+        "composition",
+        "curation_history",
+        "id",
+        "notes",
+        "preferred_term",
+        "references",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "S777",
+      "actual_sha256": "9153ff2e0d3d0c3a28989b2de6264998a0b09c845f531d6e6b366353e215ebba",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "D212",
+      "actual_sha256": "fa1f1bdc8bab910a1230ded043d4b85d8e3dea2e1da2d9ced1ba7974088e0b8d",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state",
+        "preparation_steps"
+      ],
+      "prior_history_spans_preserved": 8
+    },
+    {
+      "key": "D212a",
+      "actual_sha256": "5f392a28b13b84020e7060183b8faec60bde371ae0947b21e7800f6798b32d9e",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state",
+        "preparation_steps"
+      ],
+      "prior_history_spans_preserved": 8
+    }
+  ],
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "a55dbe72d9740772e93f5dbb870bc17709d68b4b494cd12f69e5bb02b7c41f23"
+  },
+  "all_command_checks_passed": true
+}

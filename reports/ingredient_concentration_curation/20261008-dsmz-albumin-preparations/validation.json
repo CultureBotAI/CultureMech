@@ -1,0 +1,323 @@
+{
+  "terminal": true,
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "applied_records": 4,
+  "source_responses_refreshed": 4,
+  "normalized_count": 15910,
+  "normalized_sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c",
+  "records": {
+    "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml": "f082d7c6a1607d1f9b3d4edc86fbbea6464ca1072644ec2a4bae5f32686190a6",
+    "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml": "a1d63c31c3045012ec21bf7216b5f20713d1897c89c3a536f5ebd3b36d28fc72",
+    "data/normalized_yaml/bacterial/bsk_medium.yaml": "f8122a8f29ae15227cd3130a9e57d5d01a1369b662b6e67ee8c30c1fb0e71ae2",
+    "data/normalized_yaml/bacterial/sc_medium.yaml": "458e98d500f7ea402604afad6ec1503da85104507901e96479b51a429a81372a"
+  },
+  "tests_passed": {
+    "fast": "9300 passed, 16 skipped, 1945 deselected, 2 warnings in 636.26s (0:10:36)",
+    "final-retry": "459 passed, 2 warnings in 44.44s"
+  },
+  "reference_checks": {
+    "K403": {
+      "checks": 35,
+      "passed": 17,
+      "failed": 18,
+      "issues": [
+        "Text part not found as substring: 'Proteose peptone No 2 (DIFCO 0121-01-3)                                        5.0         g'",
+        "Text part not found as substring: 'Proteose tryptone (DIFCO 0123-01)                                              1.0         g'",
+        "Text part not found as substring: 'Proteose yeastolate (TC) (DIFCO 5577-15)                                       1.0         g'",
+        "Text part not found as substring: 'HEPES buffer (acid) (SIGMA H3375)                                              6.0         g'",
+        "Text part not found as substring: 'Na-citrate                                                                     0.7         g'",
+        "Text part not found as substring: 'Glucose (\u03b1-, D+)                                                               3.0         g'",
+        "Text part not found as substring: 'Na-pyruvate                                                                    0.8         g'",
+        "Text part not found as substring: 'N-Acetylglucosamine                                                            0.4         g'",
+        "Text part not found as substring: 'MgCl2 x 6 H2O                                                                  0.3         g'",
+        "Text part not found as substring: 'L-Glutamine                                                                    0.1         g'",
+        "Text part not found as substring: 'Aqua bidest. filter-sterilized                                              900.0         ml'",
+        "Text part not found as substring: 'Stir slowly at 4 - 10\uf0b0C for 3 hours, adjust pH to 7.6 with 5 M NaOH. Filter sterilize.'",
+        "Text part not found as substring: 'Dissolve 14.0 g gelatine in 200 ml bidest. water,'",
+        "Text part not found as substring: 'Dissolve 14.0 g gelatine in 200 ml bidest. water,'",
+        "Text part not found as substring: 'Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143\nml bidest. water,'",
+        "Text part not found as substring: 'Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143\nml bidest. water,'",
+        "Text part not found as substring: 'Rabbit serum, inactivated\n (GIBCO 037-06120M)                                                            86.0        ml'",
+        "Title mismatch for https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf: expected '403. BSK-MEDIUM' but got 'https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf'"
+      ]
+    },
+    "K751": {
+      "checks": 26,
+      "passed": 12,
+      "failed": 14,
+      "issues": [
+        "Text part not found as substring: 'Corn meal agar                                                               17.0          g'",
+        "Text part not found as substring: 'Peptone from soy meal                                                          8.0         g'",
+        "Text part not found as substring: 'K2HPO4                                                                         1.0         g'",
+        "Text part not found as substring: 'KH2PO4                                                                         1.0         g'",
+        "Text part not found as substring: 'MgSO4 x 7 H2O                                                                  0.2         g'",
+        "Text part not found as substring: 'Distilled water                                                           1000.0         ml'",
+        "Text part not found as substring: 'Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml'",
+        "Text part not found as substring: 'Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml'",
+        "Text part not found as substring: '20% bovine serum albumin, fraction V                                         10.0        ml'",
+        "Text part not found as substring: '10% glucose                                                                    5.0       ml'",
+        "Text part not found as substring: '10% cysteine (free base)                                                     10.0        ml'",
+        "Text part not found as substring: 'Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml'",
+        "Text part not found as substring: 'For liquid medium, omit corn meal agar and change the phosphate concentration to\nKH2PO4, 1.5 g and K2HPO4, 0.5 g.'",
+        "Title mismatch for https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf: expected '751. SC MEDIUM' but got 'https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf'"
+      ]
+    },
+    "D403": {
+      "checks": 35,
+      "passed": 17,
+      "failed": 18,
+      "issues": [
+        "Text part not found as substring: 'Proteose peptone No 2 (DIFCO 0121-01-3)                                        5.0         g'",
+        "Text part not found as substring: 'Proteose tryptone (DIFCO 0123-01)                                              1.0         g'",
+        "Text part not found as substring: 'Proteose yeastolate (TC) (DIFCO 5577-15)                                       1.0         g'",
+        "Text part not found as substring: 'HEPES buffer (acid) (SIGMA H3375)                                              6.0         g'",
+        "Text part not found as substring: 'Na-citrate                                                                     0.7         g'",
+        "Text part not found as substring: 'Glucose (\u03b1-, D+)                                                               3.0         g'",
+        "Text part not found as substring: 'Na-pyruvate                                                                    0.8         g'",
+        "Text part not found as substring: 'N-Acetylglucosamine                                                            0.4         g'",
+        "Text part not found as substring: 'MgCl2 x 6 H2O                                                                  0.3         g'",
+        "Text part not found as substring: 'L-Glutamine                                                                    0.1         g'",
+        "Text part not found as substring: 'Aqua bidest. filter-sterilized                                              900.0         ml'",
+        "Text part not found as substring: 'Stir slowly at 4 - 10\uf0b0C for 3 hours, adjust pH to 7.6 with 5 M NaOH. Filter sterilize.'",
+        "Text part not found as substring: 'Dissolve 14.0 g gelatine in 200 ml bidest. water,'",
+        "Text part not found as substring: 'Dissolve 14.0 g gelatine in 200 ml bidest. water,'",
+        "Text part not found as substring: 'Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143\nml bidest. water,'",
+        "Text part not found as substring: 'Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143\nml bidest. water,'",
+        "Text part not found as substring: 'Rabbit serum, inactivated\n (GIBCO 037-06120M)                                                            86.0        ml'",
+        "Title mismatch for https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf: expected '403. BSK-MEDIUM' but got 'https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf'"
+      ]
+    },
+    "D751": {
+      "checks": 26,
+      "passed": 12,
+      "failed": 14,
+      "issues": [
+        "Text part not found as substring: 'Corn meal agar                                                               17.0          g'",
+        "Text part not found as substring: 'Peptone from soy meal                                                          8.0         g'",
+        "Text part not found as substring: 'K2HPO4                                                                         1.0         g'",
+        "Text part not found as substring: 'KH2PO4                                                                         1.0         g'",
+        "Text part not found as substring: 'MgSO4 x 7 H2O                                                                  0.2         g'",
+        "Text part not found as substring: 'Distilled water                                                           1000.0         ml'",
+        "Text part not found as substring: 'Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml'",
+        "Text part not found as substring: 'Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml'",
+        "Text part not found as substring: '20% bovine serum albumin, fraction V                                         10.0        ml'",
+        "Text part not found as substring: '10% glucose                                                                    5.0       ml'",
+        "Text part not found as substring: '10% cysteine (free base)                                                     10.0        ml'",
+        "Text part not found as substring: 'Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml'",
+        "Text part not found as substring: 'For liquid medium, omit corn meal agar and change the phosphate concentration to\nKH2PO4, 1.5 g and K2HPO4, 0.5 g.'",
+        "Title mismatch for https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf: expected '751. SC MEDIUM' but got 'https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf'"
+      ]
+    }
+  },
+  "reference_validation_passed": false,
+  "manual_reference_verification": "All 187 claim snippets literally match their pinned captures; PDF page images were inspected. Automated PDF checks remain failing because the generic URL cache contains PDF bytes, not extracted recipe text.",
+  "failed_gates": [
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/dsmz-albumin-post-2.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/dsmz-albumin-post-5.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/bsk_medium.yaml"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/dsmz-albumin-post-8.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/sc_medium.yaml"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/dsmz-albumin-post-11.log"
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/dsmz-albumin-post-13.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/dsmz-albumin-post-14.log"
+    }
+  ],
+  "merge_verification": {
+    "name_conflicts": 1247,
+    "fingerprint_issues": 3287
+  },
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10777,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8732,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 795,
+    "new_quantity_slots": 349,
+    "unsupported_quantity_slots_removed": 838,
+    "new_evidence": 32948,
+    "new_curation_history": 5371,
+    "new_references": 5624,
+    "stock_stage_concentrations_rebased": 189,
+    "stock_descriptors_added": 228,
+    "quantity_corrections": 1433,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 5,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 88,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 42,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 5,
+    "preparation_steps_relocated": 16,
+    "water_input_notes_added": 9,
+    "inline_variant_options_added": 10,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5167
+  },
+  "followup_unique_records": 11784,
+  "outside_this_followup": 4126,
+  "corpus_checks": {
+    "strict_scanned": 15910,
+    "ids_scanned": 15910,
+    "product_warnings": 91,
+    "product_skipped_no_adapter": 96073,
+    "chemical_groundings_recertified": false
+  },
+  "remaining_queues": {
+    "M142": 71,
+    "identity": 107,
+    "acid_name": 76,
+    "albumin_name": 31
+  },
+  "next_prepared_records": {
+    "keys": [
+      "M2410",
+      "D1829",
+      "J173"
+    ],
+    "source_captures": 5,
+    "state": "Prepared only, no edits or completed-review claims."
+  },
+  "initial_failed_attempts": [
+    {
+      "phase": "receipt-finalization",
+      "observed_exit_code": 1,
+      "terminal": true,
+      "reason": "Finalizer required an encoding key absent from RecipeSourceCache v1 metadata. Verified the cache uses UTF-8 and corrected the finalizer; no source captures or recipe records changed and no validation receipt was written by the failed attempt."
+    },
+    {
+      "phase": "live",
+      "receipt": "live-sandbox-failure.json",
+      "observed_exit_code": 1,
+      "terminal": true,
+      "reason": "Sandbox DNS/network restriction ended the original process before the receipt terminal flag could be set. Approved public-source retry completed as live.json."
+    },
+    {
+      "phase": "final",
+      "receipt": "final.json",
+      "observed_exit_code": 1,
+      "terminal": true,
+      "reason": "Ruff B007 unused loop variable; fixed without output changes. All checks pass in final-retry.json."
+    },
+    {
+      "phase": "indexes-preview",
+      "observed_exit_code": 1,
+      "terminal": true,
+      "reason": "Initial guard rejected expected hierarchy-statistics delta. No index writes occurred. Retry independently regenerated before/after statistics and verified the two relocated HEPES annotations before guarded application."
+    }
+  ],
+  "reports_sha256": {
+    "application.json": "f3d405bc8b4c8ac3f740d4836d0e0a14ba517ca082021132db06bc9f6ece87d3",
+    "applied-audit.json": "235e4663bc59d1a0e242367c493de3009ef1c4910ee31a39b90cdeaafeb8ddef",
+    "baseline.json": "1cd68035a5d139640f4eb8403e5fda970fa14e7110f409a0e287850dd755fa29",
+    "context.json": "5767d9b9bed74466a4f490abe98b1d9735d7b864cfaec8af0d83b29520ee7cdb",
+    "corpus.json": "4b7973be6f785ec3cb7e0a8670e0e273250e5314bd822e1984a4a1a12ce9d971",
+    "cumulative-audit.json": "d1ef0a5b4e3d3e4d3796748ffdf1b5d17ac60ebcad120bc0018afa4ed74f6add",
+    "fast.json": "b5d8a30e52cf2ebd23ff6cccc4c5bc17338e1b2c5287557a0ee531e4d70a45e2",
+    "final.json": "f8b59dce5ba8d8beaace86d84dca368f4dd81ed38f99391471f166f310bd377b",
+    "final-retry.json": "c376a8f3c44fa17a6060d0eec6d09786cff0e4b61b63941b06f6c18464b5296a",
+    "followup-coverage.json": "531e5bc5fb3400cc8d94f2016f7e9aae8859c61dd74b93b9e29a3cc101af4729",
+    "index-refresh-application.json": "3403f3d45840a8cb61a52f9fb9ed51476ce7dc0d89016b9515d0c469a224a056",
+    "index-refresh-plan.json": "950c62b312024fe631ac4465886392557b694eb0021826fa165008a0290415b7",
+    "live.json": "42a070d8cae082698a75684f2f5c5223604309d28ac15ae1fa8ce6123c2264a0",
+    "live-sandbox-failure.json": "cd1c8f5f25b3f0ea5dc75d31a8e15f2e2fd38549d9aec922322f3287ea2cdb14",
+    "merge-retention.json": "d243db6c4c8c6c8b648804e2825ae48ab388bc6e6a7127fd4b5fe0a599e08a3d",
+    "next-bsk-context.json": "afef4e855d33495a1e7f54c7e6b809fe345c26533ad19f00a626328bc60136c3",
+    "next-lb-identity-context.json": "f014ac7ab997b344c4bf6abd829309c67e546b2b43cec7b34820e964533de431",
+    "paired-formulations.json": "8b8f730cc164eb109c39caafeba29aa8a29ca5f2e2b8e901b5c28fc1c4e417b1",
+    "plan.json": "12bc3d3ee40276a75536c510bef5c3cf1cc1998d026ad0b020fbcc3e4daa48a1",
+    "post.json": "b1e2bb59bc5658c35b638aeca7e6e6e39190d4b65be3a66e69a16fbe1e1874bb",
+    "preview-audit.json": "235e4663bc59d1a0e242367c493de3009ef1c4910ee31a39b90cdeaafeb8ddef",
+    "reconciliation.json": "2ed9eb7cfe3db74c950a1b0b05c00ace4043d2de8f8a06c8c56e02e9113ca694",
+    "remaining-queue.json": "61431e8899ac84370534834b6b396eb29ae89aa24cfab6ce095a338db11696e8"
+  },
+  "code_sha256": {
+    "scripts/repair_dsmz_albumin_preparations.py": "9a2169f21912ee9860b70219cae0bf039ff8eeb35f3dc172cfac954490d8dd24",
+    "tests/test_dsmz_albumin_preparations.py": "a8883b20dbbf33782904d077cfa9fe0a613b97e264fd1dda3d9ac2dd89770233",
+    "reports/ingredient_concentration_curation/20261008-dsmz-albumin-preparations/audit.py": "d71d4f122c805b74570a331201a0e74428ba23e22fd24ec5892c0be769f3237b",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "93404b7918e2bf8758851ca5fa94d5bdeb828d703843409867f75de2f4670281"
+  },
+  "commit_push_PR_merge_branch_cleanup": "Not performed; publication workflow remains incomplete.",
+  "runtime": "Existing partial locked Python 3.13 environment; not clean CI. Fast tier and explicit corpus gates run, not the complete test suite."
+}

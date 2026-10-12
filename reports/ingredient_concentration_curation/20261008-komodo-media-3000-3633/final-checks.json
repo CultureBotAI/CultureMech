@@ -1,0 +1,23 @@
+{
+  "terminal": true,
+  "record_hashes_checked": 633,
+  "exact_per_record_reports": 633,
+  "claim_rows_checked": 13521,
+  "api_sources_checked": 534,
+  "original_pdf_bytes_and_extracted_pages_checked": 10,
+  "pdf_1270_page_image_manually_inspected": true,
+  "pdf_1270_image_sha256": "64dea1f7f6294b785512763566fde8897522ca610ea27ea97694a26f6f184b1a",
+  "unapplied_water_input_proposals_checked": 2,
+  "verified_cumulative_delta": {
+    "edited_records": 38,
+    "new_evidence": 264,
+    "new_references": 76,
+    "new_curation_history": 38
+  },
+  "coverage": {
+    "tracked_normalized_records": 15910,
+    "followup_unique_records": 11743,
+    "outside_this_followup": 4167
+  },
+  "scope": "Local source/report/readback check, not scientific completion or a passing publication gate."
+}

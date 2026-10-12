@@ -11,13 +11,37 @@ media_term:
   term:
     id: komodo.medium:752
     label: HALOMONAS PANTELLERIENSE
-notes: 'Source: KOMODO ModelSEED | ID: 752 | DSMZ Medium: 752 (mediadive.medium:752)
-  | Aerobic: No'
+notes: |-
+  Source: KOMODO ModelSEED | ID: 752 | DSMZ Medium: 752 (mediadive.medium:752) | Aerobic: No
+
+  Concentration follow-up: water volumes denote batch inputs, not final volume. Historical source-duplicate links and import annotations are preserved but not revalidated by this correction; linked records may still carry flattened quantities. Only the liquid preparation branch is represented; the source's agar/carbonate alternative is not applied here.
 ingredients:
 - preferred_term: Yeast extract
   concentration:
     value: '10'
     unit: G_PER_L
+  notes: 'Source batch input: 10 g. Retained g/L is the provider''s nominal main-recipe
+    rate (volume field 1000 ml), not a measured final-medium concentration or a stock
+    concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/752
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration (evidence_only), locator=$.data.solutions[0].recipe[0]:
+      Source batch input: 10 g. Retained g/L is the provider''s nominal main-recipe
+      rate (volume field 1000 ml), not a measured final-medium concentration or a
+      stock concentration. Existing chemical mappings are preserved, not independently
+      revalidated. Additional exact excerpt at $.data.solutions[0].volume: 1000 Retrieved
+      2026-10-07T12:18:23.327158+00:00; response SHA256=98785bd99bf229b606d152e629b99cf6856c03be746030e30d1c6bc17e116857.'
 - preferred_term: Na2-citrate
   term:
     id: CHEBI:53258
@@ -28,6 +52,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
     label: sodium citrate
+  notes: 'Source batch input: 3 g. Retained g/L is the provider''s nominal main-recipe
+    rate (volume field 1000 ml), not a measured final-medium concentration or a stock
+    concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/752
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Na2-citrate",
+                              "compound_id": 706,
+                              "amount": 3,
+                              "unit": "g",
+                              "g_l": 3,
+                              "mmol_l": 11.6248,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[1].concentration (evidence_only), locator=$.data.solutions[0].recipe[1]:
+      Source batch input: 3 g. Retained g/L is the provider''s nominal main-recipe
+      rate (volume field 1000 ml), not a measured final-medium concentration or a
+      stock concentration. Existing chemical mappings are preserved, not independently
+      revalidated. Additional exact excerpt at $.data.solutions[0].volume: 1000 Retrieved
+      2026-10-07T12:18:23.327158+00:00; response SHA256=98785bd99bf229b606d152e629b99cf6856c03be746030e30d1c6bc17e116857.'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -38,6 +85,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
     label: potassium chloride
+  notes: 'Source batch input: 2 g. Retained g/L is the provider''s nominal main-recipe
+    rate (volume field 1000 ml), not a measured final-medium concentration or a stock
+    concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/752
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "KCl",
+                              "compound_id": 61,
+                              "amount": 2,
+                              "unit": "g",
+                              "g_l": 2,
+                              "mmol_l": 26.8276,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[2].concentration (evidence_only), locator=$.data.solutions[0].recipe[2]:
+      Source batch input: 2 g. Retained g/L is the provider''s nominal main-recipe
+      rate (volume field 1000 ml), not a measured final-medium concentration or a
+      stock concentration. Existing chemical mappings are preserved, not independently
+      revalidated. Additional exact excerpt at $.data.solutions[0].volume: 1000 Retrieved
+      2026-10-07T12:18:23.327158+00:00; response SHA256=98785bd99bf229b606d152e629b99cf6856c03be746030e30d1c6bc17e116857.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -48,6 +118,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  notes: 'Source batch input: 1 g. Retained g/L is the provider''s nominal main-recipe
+    rate (volume field 1000 ml), not a measured final-medium concentration or a stock
+    concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/752
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "mmol_l": 4.05719,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[3].concentration (evidence_only), locator=$.data.solutions[0].recipe[3]:
+      Source batch input: 1 g. Retained g/L is the provider''s nominal main-recipe
+      rate (volume field 1000 ml), not a measured final-medium concentration or a
+      stock concentration. Existing chemical mappings are preserved, not independently
+      revalidated. Additional exact excerpt at $.data.solutions[0].volume: 1000 Retrieved
+      2026-10-07T12:18:23.327158+00:00; response SHA256=98785bd99bf229b606d152e629b99cf6856c03be746030e30d1c6bc17e116857.'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -58,6 +151,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  notes: 'Source batch input: 100 g. Retained g/L is the provider''s nominal main-recipe
+    rate (volume field 1000 ml), not a measured final-medium concentration or a stock
+    concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/752
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 100,
+                              "unit": "g",
+                              "g_l": 100,
+                              "mmol_l": 1711.16,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[4].concentration (evidence_only), locator=$.data.solutions[0].recipe[4]:
+      Source batch input: 100 g. Retained g/L is the provider''s nominal main-recipe
+      rate (volume field 1000 ml), not a measured final-medium concentration or a
+      stock concentration. Existing chemical mappings are preserved, not independently
+      revalidated. Additional exact excerpt at $.data.solutions[0].volume: 1000 Retrieved
+      2026-10-07T12:18:23.327158+00:00; response SHA256=98785bd99bf229b606d152e629b99cf6856c03be746030e30d1c6bc17e116857.'
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -68,26 +184,58 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
     label: sodium carbonate
-- preferred_term: MnCl2 x 4 H2O
+  notes: 'Source batch input: 3 g. Retained g/L is the provider''s nominal main-recipe
+    rate (volume field 1000 ml), not a measured final-medium concentration or a stock
+    concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/752
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "Na2CO3",
+                              "compound_id": 32,
+                              "amount": 3,
+                              "unit": "g",
+                              "g_l": 3,
+                              "mmol_l": 28.3051,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[5].concentration (evidence_only), locator=$.data.solutions[0].recipe[5]:
+      Source batch input: 3 g. Retained g/L is the provider''s nominal main-recipe
+      rate (volume field 1000 ml), not a measured final-medium concentration or a
+      stock concentration. Existing chemical mappings are preserved, not independently
+      revalidated. Additional exact excerpt at $.data.solutions[0].volume: 1000 Retrieved
+      2026-10-07T12:18:23.327158+00:00; response SHA256=98785bd99bf229b606d152e629b99cf6856c03be746030e30d1c6bc17e116857.'
+- preferred_term: Distilled water
   term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
+    id: mediadive.compound:4
+    label: Distilled water
   concentration:
     value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
+    unit: L
+  notes: 1000 ml distilled-water input per batch, not a measured final-medium volume.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/752
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 9,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[6].concentration (add), locator=$.data.solutions[0].recipe[8]: 1000 ml distilled-water input per batch, not a measured final-medium volume. Convert ml to L by division by 1000. The source table identifies distilled water as compound 4; no final volume or density inferred. Additional exact excerpt at $.data.solutions[0].recipe[8]: {
+                              "recipe_order": 9,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          } Retrieved 2026-10-07T12:18:23.327158+00:00; response SHA256=98785bd99bf229b606d152e629b99cf6856c03be746030e30d1c6bc17e116857.
 applications:
 - Microbial cultivation
 curation_history:
@@ -122,6 +270,36 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-08T03:47:55.453935+00:00'
+  curator: codex
+  action: CORRECTED_KOMODO650_752_762_AMOUNTS_AND_PREPARATION_STAGES
+  notes: Corrected source-explicit amounts and preparation stages. Exact excerpts
+    accompany all changes; retained identity/history and linked records without propagating
+    this formulation. No growth claim added.
+  source: https://mediadive.dsmz.de/rest/medium/752; https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  changes: 'ingredients[0].concentration: {"value": "10", "unit": "G_PER_L"} -> {"value":
+    "10", "unit": "G_PER_L"} (evidence_only); ingredients[1].concentration: {"value":
+    "3", "unit": "G_PER_L"} -> {"value": "3", "unit": "G_PER_L"} (evidence_only);
+    ingredients[2].concentration: {"value": "2", "unit": "G_PER_L"} -> {"value": "2",
+    "unit": "G_PER_L"} (evidence_only); ingredients[3].concentration: {"value": "1",
+    "unit": "G_PER_L"} -> {"value": "1", "unit": "G_PER_L"} (evidence_only); ingredients[4].concentration:
+    {"value": "100", "unit": "G_PER_L"} -> {"value": "100", "unit": "G_PER_L"} (evidence_only);
+    ingredients[5].concentration: {"value": "3", "unit": "G_PER_L"} -> {"value": "3",
+    "unit": "G_PER_L"} (evidence_only); solutions[0].composition[0].concentration:
+    {"value": "1", "unit": "G_PER_L"} -> {"value": "0.36", "unit": "G_PER_L"} (correct_stock_basis);
+    solutions[0].concentration: null -> {"value": "0.001", "unit": "L"} (add); solutions[1].composition[0].concentration:
+    {"value": "1", "unit": "G_PER_L"} -> {"value": "50", "unit": "G_PER_L"} (correct_stock_basis);
+    solutions[1].concentration: null -> {"value": "0.001", "unit": "L"} (add); ingredients[6].concentration:
+    null -> {"value": "1", "unit": "L"} (add); preparation_steps: null -> [{"step_number":
+    1, "action": "MIX", "description": "Liquid medium may be prepared by adding all
+    components together."}] (restore_preparation); notes: "Source: KOMODO ModelSEED
+    | ID: 752 | DSMZ Medium: 752 (mediadive.medium:752) | Aerobic: No" -> "Source:
+    KOMODO ModelSEED | ID: 752 | DSMZ Medium: 752 (mediadive.medium:752) | Aerobic:
+    No\n\nConcentration follow-up: water volumes denote batch inputs, not final volume.
+    Historical source-duplicate links and import annotations are preserved but not
+    revalidated by this correction; linked records may still carry flattened quantities.
+    Only the liquid preparation branch is represented; the source''s agar/carbonate
+    alternative is not applied here." (clarify_scope)'
 parent_media:
   path: data/normalized_yaml/bacterial/halomonas_pantelleriense.yaml
   relationship: SOURCE_DUPLICATE
@@ -133,3 +311,137 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same ingredient and concentration signature; KOMODO record copied from the matching
   DSMZ medium source.
+solutions:
+- preferred_term: MnCl2 x 4 H2O stock
+  composition:
+  - preferred_term: MnCl2 x 4 H2O
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    concentration:
+      value: '0.36'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    notes: Source-explicit stock strength, not final-medium concentration; replaces
+      the flattened 1 g/L encoding of a 1 ml stock dose.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/752
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 7,
+                                "compound": "MnCl2 x 4 H2O",
+                                "compound_id": 36,
+                                "attribute": "0.36g/l",
+                                "amount": 1,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[0].concentration (correct_stock_basis),
+        locator=$.data.solutions[0].recipe[6]: Source-explicit stock strength, not
+        final-medium concentration; replaces the flattened 1 g/L encoding of a 1 ml
+        stock dose. Retrieved 2026-10-07T12:18:23.327158+00:00; response SHA256=98785bd99bf229b606d152e629b99cf6856c03be746030e30d1c6bc17e116857.'
+  concentration:
+    value: '0.001'
+    unit: L
+  notes: 1 ml stock addition per source recipe batch; no final-medium volume, stock
+    carrier amount or final-medium concentration inferred.
+  source: https://mediadive.dsmz.de/rest/medium/752
+- preferred_term: FeSO4 x 7 H2O stock
+  composition:
+  - preferred_term: FeSO4 x 7 H2O
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    concentration:
+      value: '50'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    notes: Source-explicit stock strength, not final-medium concentration; replaces
+      the flattened 1 g/L encoding of a 1 ml stock dose.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/752
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 8,
+                                "compound": "FeSO4 x 7 H2O",
+                                "compound_id": 12,
+                                "attribute": "50g/l",
+                                "amount": 1,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[0].concentration (correct_stock_basis),
+        locator=$.data.solutions[0].recipe[7]: Source-explicit stock strength, not
+        final-medium concentration; replaces the flattened 1 g/L encoding of a 1 ml
+        stock dose. Retrieved 2026-10-07T12:18:23.327158+00:00; response SHA256=98785bd99bf229b606d152e629b99cf6856c03be746030e30d1c6bc17e116857.'
+  concentration:
+    value: '0.001'
+    unit: L
+  notes: 1 ml stock addition per source recipe batch; no final-medium volume, stock
+    carrier amount or final-medium concentration inferred.
+  source: https://mediadive.dsmz.de/rest/medium/752
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Liquid medium may be prepared by adding all components together.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/752
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 7,
+                            "compound": "MnCl2 x 4 H2O",
+                            "compound_id": 36,
+                            "attribute": "0.36g/l",
+                            "amount": 1,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].concentration (add), locator=$.data.solutions[0].recipe[6]: 1 ml / 1000 = 0.001 L absolute stock dose. Supports the stock descriptor name, source, and input-basis note. Chemical constituent retained at its source-explicit stock strength; no dilution calculation. solutions[1].concentration (add), locator=$.data.solutions[0].recipe[7]: 1 ml / 1000 = 0.001 L absolute stock dose. Supports the stock descriptor name, source, and input-basis note. Chemical constituent retained at its source-explicit stock strength; no dilution calculation. Additional exact excerpt: {
+                            "recipe_order": 8,
+                            "compound": "FeSO4 x 7 H2O",
+                            "compound_id": 12,
+                            "attribute": "50g/l",
+                            "amount": 1,
+                            "unit": "ml",
+                            "optional": 0
+                        } preparation_steps (restore_preparation), locator=$.data.solutions[0].steps: Restore the source instructions for this liquid formulation; the agar branch and its carbonate dose are excluded. Additional exact excerpt: [
+                        {
+                            "step": "Liquid medium may be prepared by adding all components together. Agar (2%) medium should be prepared without Na2CO3 and sterilised by autoclaving. Add 20-30 ml of a sterile 10% Na2CO3 solution to the autoclaved medium containing agar so that the final pH is 9.0."
+                        }
+                    ] notes (clarify_scope), locator=$.data.solutions[0].steps: Document the reviewed preparation scope and limitation of unchanged historical duplicate annotations; this does not validate linked formulations. Additional exact excerpt: [
+                        {
+                            "step": "Liquid medium may be prepared by adding all components together. Agar (2%) medium should be prepared without Na2CO3 and sterilised by autoclaving. Add 20-30 ml of a sterile 10% Na2CO3 solution to the autoclaved medium containing agar so that the final pH is 9.0."
+                        }
+                    ] Retrieved 2026-10-07T12:18:23.327158+00:00; response SHA256=98785bd99bf229b606d152e629b99cf6856c03be746030e30d1c6bc17e116857.
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  supports: SUPPORT
+  snippet: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=752'\
+    \ >752</a></TD>\n\t\t\t\t\t<TD>HALOMONAS PANTELLERIENSE</TD>\n\t\t\t\t\t<TD> 9.0</TD>\n\
+    \t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium752.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium752.pdf</a></TD>\n\t\
+    \t\t\t</TR>"
+  explanation: 'Identity only: KOMODO 752 maps to https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium752.pdf.
+    Locator=MediaList row 752. No quantity or growth inference. Retrieved 2026-10-07T13:01:23.350274+00:00;
+    response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/752
+  title: 'MediaDive medium 752: HALOMONAS PANTELLERIENSE'
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-07;
+    response_sha256=98785bd99bf229b606d152e629b99cf6856c03be746030e30d1c6bc17e116857;
+    individual authors and publication year not established. Descriptive dataset title
+    from the response's medium name, not an HTML document title.
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  title: KOMODO - the Known Media Database
+  notes: source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-07;
+    response_sha256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a;
+    individual authors and publication year not established. Document title verified
+    in the captured HTML; mapping supports identity only.

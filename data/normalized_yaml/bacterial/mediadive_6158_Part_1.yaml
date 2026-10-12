@@ -16,6 +16,32 @@ composition:
     label: potassium nitrate
     confidence: 0.7
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6158
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "KNO3",
+                      "compound_id": 191,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.1,
+                      "unit": "g",
+                      "g_l": 0.2,
+                      "mmol_l": 1.97818,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (KNO3) in
+      MediaDive solution 6158; locator=$.data.recipe[1] (compound_id=191). Provider
+      explicitly reports g_l=0.2. Arithmetic check: 0.1 g * 1 g/g / (500 ml / 1000
+      ml per L) = 0.2 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 500. Retrieved 2026-10-07T10:00:45.084697+00:00; response SHA256=9dfaa15b5630800a7d405dbe6f8388304dc3699120113dd3eb49a9ecf8ad65e7.'
 - preferred_term: K2HPO4
   concentration:
     value: '0.02'
@@ -28,6 +54,32 @@ composition:
     label: dipotassium hydrogen phosphate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6158
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "K2HPO4",
+                      "compound_id": 10,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.01,
+                      "unit": "g",
+                      "g_l": 0.02,
+                      "mmol_l": 0.114826,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (K2HPO4)
+      in MediaDive solution 6158; locator=$.data.recipe[2] (compound_id=10). Provider
+      explicitly reports g_l=0.02. Arithmetic check: 0.01 g * 1 g/g / (500 ml / 1000
+      ml per L) = 0.02 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 500. Retrieved 2026-10-07T10:00:45.084697+00:00; response SHA256=9dfaa15b5630800a7d405dbe6f8388304dc3699120113dd3eb49a9ecf8ad65e7.'
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.02'
@@ -40,6 +92,33 @@ composition:
     label: magnesium sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6158
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "MgSO4 x 7 H2O",
+                      "compound_id": 8,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.01,
+                      "unit": "g",
+                      "g_l": 0.02,
+                      "mmol_l": 0.0811438,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (MgSO4 x
+      7 H2O) in MediaDive solution 6158; locator=$.data.recipe[3] (compound_id=8).
+      Provider explicitly reports g_l=0.02. Arithmetic check: 0.01 g * 1 g/g / (500
+      ml / 1000 ml per L) = 0.02 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 500. Retrieved 2026-10-07T10:00:45.084697+00:00;
+      response SHA256=9dfaa15b5630800a7d405dbe6f8388304dc3699120113dd3eb49a9ecf8ad65e7.'
 - preferred_term: Cyanocobalamine
   concentration:
     value: '0.2'
@@ -125,6 +204,18 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '2 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-10-07T10:04:07.640757+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/6158
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.2"} -> {"unit":
+    "G_PER_L", "value": "0.2"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "0.02"} -> {"unit": "G_PER_L", "value": "0.02"} (evidence_only);
+    composition[2].concentration: {"unit": "G_PER_L", "value": "0.02"} -> {"unit":
+    "G_PER_L", "value": "0.02"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -133,3 +224,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/6158
+  title: 'MediaDive solution 6158: Part 1'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=9dfaa15b5630800a7d405dbe6f8388304dc3699120113dd3eb49a9ecf8ad65e7;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

@@ -1,0 +1,188 @@
+{
+  "source_sha256": "781b097801c78303aae8b10e0b792993c35bd4c6eb10772559bc804536113b5a",
+  "files": [
+    {
+      "target": "data/normalized_yaml/bacterial_index.json",
+      "preview": "/tmp/ingredient-media-20261007/bsk-formulations-index-preview/bacterial_index.json",
+      "before_sha256": "f0343b3f93d9935a988afa67a003a1fe96ec1a849dbf1db16784fbc8b2108754",
+      "after_sha256": "a7590ba205beb13d43f84a5743db15beb951a04aaf3d784d88c814676afb7786",
+      "changes": [
+        {
+          "key": "CultureMech:002533",
+          "id": "CultureMech:002533",
+          "changes": {
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "ingredient_count": [
+              13,
+              0
+            ],
+            "solution_count": [
+              null,
+              4
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008994",
+          "id": "CultureMech:008994",
+          "changes": {
+            "ingredient_count": [
+              14,
+              10
+            ],
+            "solution_count": [
+              null,
+              4
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:001256",
+          "id": "CultureMech:001256",
+          "changes": {
+            "ingredient_count": [
+              13,
+              12
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_mediadive_index.json",
+      "preview": "/tmp/ingredient-media-20261007/bsk-formulations-index-preview/by_source_mediadive_index.json",
+      "before_sha256": "4117e6ed8e08e91483d950cd8fab37402d20ad4c7ec43a30f000ed0eb2694436",
+      "after_sha256": "3f606473b473160d50f960a36a1e3047ddc0a2c401be2f3c3833d71c4ba3f310",
+      "changes": [
+        {
+          "key": "CultureMech:002533",
+          "id": "CultureMech:002533",
+          "changes": {
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "ingredient_count": [
+              13,
+              0
+            ],
+            "solution_count": [
+              null,
+              4
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:001256",
+          "id": "CultureMech:001256",
+          "changes": {
+            "ingredient_count": [
+              13,
+              12
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_togo_index.json",
+      "preview": "/tmp/ingredient-media-20261007/bsk-formulations-index-preview/by_source_togo_index.json",
+      "before_sha256": "a019df6d701d2b6742bac59987988bf436e238043a7b13a6c2ecca536313803e",
+      "after_sha256": "687187166ce0b9a3d4c18e83a54bc4c182af64a8eab0f66bbaa4592bdf76e52c",
+      "changes": [
+        {
+          "key": "CultureMech:008994",
+          "id": "CultureMech:008994",
+          "changes": {
+            "ingredient_count": [
+              14,
+              10
+            ],
+            "solution_count": [
+              null,
+              4
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_index.json",
+      "preview": "/tmp/ingredient-media-20261007/bsk-formulations-index-preview/recipe_index.json",
+      "before_sha256": "2ed585163bc27ac1df51d0acf3c2e36365f13e4e4fc526e9582d8601f11123a9",
+      "after_sha256": "32bd6fe3a06a4e05c0018a0f307ab6b5669adaf499df1d021d89e61e16ee526b",
+      "changes": [
+        {
+          "key": "CultureMech:002533",
+          "id": "CultureMech:002533",
+          "changes": {
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "ingredient_count": [
+              13,
+              0
+            ],
+            "solution_count": [
+              null,
+              4
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:008994",
+          "id": "CultureMech:008994",
+          "changes": {
+            "ingredient_count": [
+              14,
+              10
+            ],
+            "solution_count": [
+              null,
+              4
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:001256",
+          "id": "CultureMech:001256",
+          "changes": {
+            "ingredient_count": [
+              13,
+              12
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_statistics.json",
+      "preview": "/tmp/ingredient-media-20261007/bsk-formulations-index-preview/recipe_statistics.json",
+      "before_sha256": "36395ee93eef3a6a531a28539487422c091af8f068ead096d953a8f87621968c",
+      "after_sha256": "07746b246ec6780c26ae58f9663fc16c5bc7d4e0b8fdb708ba3f92b1c9cc1abd",
+      "changes": {
+        "with_hierarchy_enrichment": [
+          1471,
+          1470
+        ]
+      }
+    }
+  ],
+  "only_reviewed_sources_changed": true
+}

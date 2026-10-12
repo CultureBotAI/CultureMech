@@ -14,6 +14,17 @@ composition:
     label: sodium nitrate
   mediaingredientmech_term:
     id: MediaIngredientMech:000388
+  evidence:
+  - reference: https://utex.org/products/macro-component-1-for-j-medium
+    supports: SUPPORT
+    snippet: 67 g/L
+    explanation: 'Supports composition[0].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''NaNO3(Fisher BP360)''. Locator:
+      formulation table row 1; Amount column and volume heading. Separate volume-basis
+      excerpt: ''For 1 L Total''. Direct g/L source amount, or grams per explicit
+      one-liter total; no molecular-weight or working-dilution calculation. Supplier
+      and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
 - preferred_term: Disodium phosphate
   concentration:
     value: '0.67'
@@ -24,6 +35,17 @@ composition:
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  evidence:
+  - reference: https://utex.org/products/macro-component-1-for-j-medium
+    supports: SUPPORT
+    snippet: 0.67 g/L
+    explanation: 'Supports composition[1].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''Na2HPO4(Sigma S5136)''. Locator:
+      formulation table row 2; Amount column and volume heading. Separate volume-basis
+      excerpt: ''For 1 L Total''. Direct g/L source amount, or grams per explicit
+      one-liter total; no molecular-weight or working-dilution calculation. Supplier
+      and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
 - preferred_term: Dipotassium phosphate
   concentration:
     value: '3.8'
@@ -34,6 +56,17 @@ composition:
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  evidence:
+  - reference: https://utex.org/products/macro-component-1-for-j-medium
+    supports: SUPPORT
+    snippet: 3.8 g/L
+    explanation: 'Supports composition[2].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''K2HPO4(Sigma P 3786)''. Locator:
+      formulation table row 3; Amount column and volume heading. Separate volume-basis
+      excerpt: ''For 1 L Total''. Direct g/L source amount, or grams per explicit
+      one-liter total; no molecular-weight or working-dilution calculation. Supplier
+      and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
 - preferred_term: Tricine
   concentration:
     value: '25.0'
@@ -41,33 +74,29 @@ composition:
   term:
     id: CHEBI:46760
     label: tricine
-notes: 'Macro Component 1 for J Medium (UTEX).
-
-  First of two macronutrient stock solutions for J Medium.
-
-  Provides nitrogen and phosphorus sources, plus buffering capacity.
-
-
-  Preparation: Add components to approximately 900 mL deionized water in the order
-
-  listed while stirring continuously. Adjust pH to 8.5-8.8 with NaOH or HCl.
-
-  Bring to 1 L total volume.
-
-
-  Storage: Refrigerator temperature (4°C).
-
-
-  Final stock concentrations: NaNO3 (7.9 mM), Na2HPO4 (0.05 mM),
-
-  K2HPO4 (0.22 mM), Tricine (1.4 mM)
-
-
-  Note: Tricine provides buffering capacity to maintain pH in the alkaline range
-
-  suitable for freshwater algae.
-
-  '
+  evidence:
+  - reference: https://utex.org/products/macro-component-1-for-j-medium
+    supports: SUPPORT
+    snippet: 25 g/L
+    explanation: 'Supports composition[3].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''Tricine(Sigma T-5816-256)''. Locator:
+      formulation table row 4; Amount column and volume heading. Separate volume-basis
+      excerpt: ''For 1 L Total''. Direct g/L source amount, or grams per explicit
+      one-liter total; no molecular-weight or working-dilution calculation. Supplier
+      and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
+notes: "Macro Component 1 for J Medium (UTEX).\nFirst of two macronutrient stock solutions\
+  \ for J Medium.\nProvides nitrogen and phosphorus sources, plus buffering capacity.\n\
+  \nPreparation: Add components in the listed order to approximately 900 mL deionized\
+  \ water while stirring. Adjust pH to 8.5-8.8; the source does not specify a titrating\
+  \ reagent. Make up to a final volume of 1 L. \n\nStorage: Refrigerator temperature;\
+  \ no exact temperature is established by this source.\n\nThe source also prints\
+  \ a Final Concentration column and a stock-solution footnote. Those annotations\
+  \ are retained as a source interpretation issue, not asserted here as independently\
+  \ verified stock molarities. The structured values use the explicit g/L Amount column.\
+  \ No receiving-medium dose or replacement molarity is inferred.\n\nNote: Tricine\
+  \ provides buffering capacity to maintain pH in the alkaline range\nsuitable for\
+  \ freshwater algae.\n"
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0095
@@ -94,8 +123,70 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-10T07:40:20.478855+00:00'
+  curator: codex
+  action: CURATED_UTEX_SEVEN_STOCK_AMOUNTS_FORMS_AND_BOUNDARIES
+  notes: Source-backed amount, supplied-form and preparation-stage review. Numerical
+    mass concentrations retained; unresolved source conflicts explicitly recorded.
+    No taxa-media association added.
+  source: https://utex.org/products/macro-component-1-for-j-medium
+  changes: '{"claims": [{"action_taken": "Added scoped SUPPORT amount evidence; numeric
+    value unchanged", "basis_snippet": "For 1 L Total", "calculation": "Direct g/L
+    source amount, or grams per explicit one-liter total; no molecular-weight or working-dilution
+    calculation.", "field": "composition[0].concentration", "ingredient": "Sodium
+    nitrate", "locator": "formulation table row 1; Amount column and volume heading",
+    "old": {"unit": "G_PER_L", "value": "67.0"}, "proposed": {"unit": "G_PER_L", "value":
+    "67.0"}, "reason": "Exact UTEX amount and volume basis retained; any identity
+    correction is separately evidenced.", "reference": "https://utex.org/products/macro-component-1-for-j-medium",
+    "snippet": "67 g/L", "source_component": "NaNO3(Fisher BP360)", "status": "evidence_only"},
+    {"action_taken": "Added scoped SUPPORT amount evidence; numeric value unchanged",
+    "basis_snippet": "For 1 L Total", "calculation": "Direct g/L source amount, or
+    grams per explicit one-liter total; no molecular-weight or working-dilution calculation.",
+    "field": "composition[1].concentration", "ingredient": "Disodium phosphate", "locator":
+    "formulation table row 2; Amount column and volume heading", "old": {"unit": "G_PER_L",
+    "value": "0.67"}, "proposed": {"unit": "G_PER_L", "value": "0.67"}, "reason":
+    "Exact UTEX amount and volume basis retained; any identity correction is separately
+    evidenced.", "reference": "https://utex.org/products/macro-component-1-for-j-medium",
+    "snippet": "0.67 g/L", "source_component": "Na2HPO4(Sigma S5136)", "status": "evidence_only"},
+    {"action_taken": "Added scoped SUPPORT amount evidence; numeric value unchanged",
+    "basis_snippet": "For 1 L Total", "calculation": "Direct g/L source amount, or
+    grams per explicit one-liter total; no molecular-weight or working-dilution calculation.",
+    "field": "composition[2].concentration", "ingredient": "Dipotassium phosphate",
+    "locator": "formulation table row 3; Amount column and volume heading", "old":
+    {"unit": "G_PER_L", "value": "3.8"}, "proposed": {"unit": "G_PER_L", "value":
+    "3.8"}, "reason": "Exact UTEX amount and volume basis retained; any identity correction
+    is separately evidenced.", "reference": "https://utex.org/products/macro-component-1-for-j-medium",
+    "snippet": "3.8 g/L", "source_component": "K2HPO4(Sigma P 3786)", "status": "evidence_only"},
+    {"action_taken": "Added scoped SUPPORT amount evidence; numeric value unchanged",
+    "basis_snippet": "For 1 L Total", "calculation": "Direct g/L source amount, or
+    grams per explicit one-liter total; no molecular-weight or working-dilution calculation.",
+    "field": "composition[3].concentration", "ingredient": "Tricine", "locator": "formulation
+    table row 4; Amount column and volume heading", "old": {"unit": "G_PER_L", "value":
+    "25.0"}, "proposed": {"unit": "G_PER_L", "value": "25.0"}, "reason": "Exact UTEX
+    amount and volume basis retained; any identity correction is separately evidenced.",
+    "reference": "https://utex.org/products/macro-component-1-for-j-medium", "snippet":
+    "25 g/L", "source_component": "Tricine(Sigma T-5816-256)", "status": "evidence_only"}],
+    "context_notes": "Corrected preparation, storage and stock/receiving concentration
+    wording using root evidence; retained unresolved source discrepancies.", "counts":
+    {"bibliographic_entries_enriched": 1, "new_curation_history": 1, "new_evidence":
+    5, "recipe_context_notes_corrected": 1}, "identity_changes": [], "stock_boundary":
+    "unchanged"}'
 references:
 - reference: https://utex.org/products/macro-component-1-for-j-medium
+  title: Macro Component 1 for J Medium Recipe | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; institution=UTEX Culture Collection of Algae; named authors,
+    publication year and DOI not stated.
 - reference: UTEX:macro-component-1-for-j-medium
 - reference: MediaIngredientMech:UNMAPPED_0095
 category: bacterial
+evidence:
+- reference: https://utex.org/products/macro-component-1-for-j-medium
+  supports: SUPPORT
+  snippet: approximately 900 mL
+  explanation: 'Supports notes: exact preparation volume/stage and storage wording;
+    source concentration annotations are not independently promoted. Separate source
+    excerpts (Directions/table headings/footnote): ''approximately 900 mL''; ''Store
+    at refrigerator temperature.''; ''For 1 L Total''; ''Final concentration listed
+    is for the stock solution.''; ''Adjust the pH 8.5 to 8.8.''; ''total volume to
+    1 Liter'''

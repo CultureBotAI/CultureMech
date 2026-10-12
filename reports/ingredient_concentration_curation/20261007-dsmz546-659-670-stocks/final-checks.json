@@ -1,0 +1,92 @@
+{
+  "terminal": true,
+  "checks": [
+    {
+      "name": "readback-reports",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_dsmz546_659_670_stocks.py",
+        "--verify",
+        "--reports"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-final-readback-reports.log"
+    },
+    {
+      "name": "independent-audit",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz546-659-670-stocks/audit.py",
+        "--applied"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-final-independent-audit.log"
+    },
+    {
+      "name": "report-contract",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_dsmz546_659_670_stocks.py",
+        "-k",
+        "reports_cover"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-final-report-contract.log"
+    },
+    {
+      "name": "black",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_dsmz546_659_670_stocks.py",
+        "tests/test_dsmz546_659_670_stocks.py",
+        "tests/test_repair_komodo_670_ms_ph_score10.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz546-659-670-stocks/audit.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-final-black.log"
+    },
+    {
+      "name": "ruff",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_dsmz546_659_670_stocks.py",
+        "tests/test_dsmz546_659_670_stocks.py",
+        "tests/test_repair_komodo_670_ms_ph_score10.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz546-659-670-stocks/audit.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-final-ruff.log"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-final-diff-check.log"
+    }
+  ],
+  "current_record_hashes": {
+    "data/normalized_yaml/bacterial/KOMODO_546_LC_BROTH_medium.yaml": "7549f9c50bae8e8b40d495fac3706dbf53a67ac48f75a654f2276fe64dedf020",
+    "data/normalized_yaml/bacterial/lc_broth_medium.yaml": "dfc069ac16bce292bf50237703d035237b89273420508fd4d70af5f5a1a7b5d3",
+    "data/normalized_yaml/bacterial/mediadive_1205_Main_sol_546.yaml": "59e033ea0921f7630d882b7437ee25c69a392dbc0ff7589080cdccfe3785dc7f",
+    "data/normalized_yaml/bacterial/KOMODO_659_M17_medium_modified.yaml": "cbba38a6b0577a0c9b14aa8338ed1f503d37a5bd574d51b8242a27fe351f216c",
+    "data/normalized_yaml/bacterial/m17_medium_modified.yaml": "cfccc4de60b4ae401525125fc34e6d0c21f54199e96c5982383827db2829bdef",
+    "data/normalized_yaml/bacterial/mediadive_1390_Main_sol_659.yaml": "64edeed291c8b4b91d586194019658d96449270d5c565c4228628d6103108685",
+    "data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml": "6c1548a90e69425148903f21e9da967e80f5cedda433e95dff2edc8cbeef3f3b",
+    "data/normalized_yaml/bacterial/acidiferrobacter_ms_medium.yaml": "32f07df0d85e4daabd6e343d6b821e41ece7cdfeac010b30f5a9e39c85f59997",
+    "data/normalized_yaml/bacterial/mediadive_1413_Main_sol_670.yaml": "d4d4618e7ec099cc152939b96c2776634a1661bd5ee5c45950c940e58800298d"
+  },
+  "source_capture_hashes_verified": 3
+}

@@ -23,6 +23,33 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3816
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Glucose",
+                      "compound_id": 5,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 4.97512,
+                      "mmol_l": 27.615,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Glucose)
+      in MediaDive solution 3816; locator=$.data.recipe[1] (compound_id=5). Provider
+      explicitly reports g_l=4.97512. Arithmetic check: 5 g * 1 g/g / (1005 ml / 1000
+      ml per L) = 4.975124378109452736318407960 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1005. Retrieved 2026-10-07T09:25:24.541295+00:00;
+      response SHA256=b1dfcb04c94a89a6e666ce5bef623b534122a836f55ad09305e69ce50125dc42.'
 - preferred_term: Phenol red
   concentration:
     value: '4.975124378109453'
@@ -115,6 +142,15 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:30:59.704035+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/3816
+  changes: 'composition[1].concentration: {"unit": "G_PER_L", "value": "4.97512"}
+    -> {"unit": "G_PER_L", "value": "4.97512"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -123,3 +159,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/3816
+  title: 'MediaDive solution 3816: Main sol. J163'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=b1dfcb04c94a89a6e666ce5bef623b534122a836f55ad09305e69ce50125dc42;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

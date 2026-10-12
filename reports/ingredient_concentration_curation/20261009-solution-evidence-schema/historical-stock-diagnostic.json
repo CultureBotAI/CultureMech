@@ -1,0 +1,54 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "tests_modified": false,
+  "all_record_goal_complete": false,
+  "records": [
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_3980_Trace_element_solution.yaml",
+      "id": "CultureMech:013037",
+      "historical_sha256": "9f391de36517abc8115499d4faad3ddbfeb7be87dda0e510720d9e21cf7f95f9",
+      "current_sha256": "9f391de36517abc8115499d4faad3ddbfeb7be87dda0e510720d9e21cf7f95f9",
+      "registered_successor_depth": 0,
+      "current_state_independently_audited": false,
+      "historical_report_test_passed": true
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_3981_Se_W_solution.yaml",
+      "id": "CultureMech:013038",
+      "historical_sha256": "6e873d3407936f3bfc430c879e9a1bb01c21f09e93067e70a5226f22c53e19e9",
+      "current_sha256": "6e873d3407936f3bfc430c879e9a1bb01c21f09e93067e70a5226f22c53e19e9",
+      "registered_successor_depth": 0,
+      "current_state_independently_audited": false,
+      "historical_report_test_passed": true
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_3861_Trace_vitamins.yaml",
+      "id": "CultureMech:012935",
+      "historical_sha256": "331158ab8c7f0f1857f8ecc2645fda25e3b98cf12aa19ef5017c3eb24909fac7",
+      "current_sha256": "331158ab8c7f0f1857f8ecc2645fda25e3b98cf12aa19ef5017c3eb24909fac7",
+      "registered_successor_depth": 0,
+      "current_state_independently_audited": false,
+      "historical_report_test_passed": true
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_595_Trace_element_solution_SL-10.yaml",
+      "id": "CultureMech:014713",
+      "historical_sha256": "c61bf656d9de24b59dddd69e523ef943421f7161eae4a00934846c248128e048",
+      "current_sha256": "6d335bc921a8e8a99bae829fda6e81ae023de16a5c19a71b881fb54a9c14e082",
+      "registered_successor_depth": 1,
+      "current_state_independently_audited": true,
+      "historical_report_test_passed": true
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml",
+      "id": "CultureMech:014721",
+      "historical_sha256": "e7ef9e5a856f6bd66385614f147da42a0968643d4ed5d461b56666175722f643",
+      "current_sha256": "b8b5efd085ffa7d0f4e3da6ccf82c0de49b364082867d531beefa757fa3c5950",
+      "registered_successor_depth": 1,
+      "current_state_independently_audited": true,
+      "historical_report_test_passed": true
+    }
+  ],
+  "later_states": 2
+}

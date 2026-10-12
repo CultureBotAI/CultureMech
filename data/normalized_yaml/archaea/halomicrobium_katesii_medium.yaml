@@ -11,7 +11,10 @@ media_term:
   term:
     id: mediadive.medium:1164
     label: HALOMICROBIUM KATESII MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf'
+notes: |-
+  Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf
+
+  Stock stages and water inputs are explicit. Percentage bases, stock solvents and measured final volume are not supplied by these sources; no downstream dilution or growth claim is inferred. Existing chemical mappings and high_metal/other historical flags are retained but not validated by this concentration repair.
 ingredients:
 - preferred_term: NaHCO3
   term:
@@ -23,6 +26,34 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1164
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "NaHCO3",
+                              "compound_id": 55,
+                              "amount": 0.166,
+                              "unit": "g",
+                              "g_l": 0.166,
+                              "mmol_l": 1.97603,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[0].concentration (evidence_only), locator=$.data.solutions[0].recipe[0]: Source batch input: 0.166 g. Retained 0.166 g/L is the provider's nominal 1000 ml recipe rate, not a measured basal or final-medium concentration after stock additions. Supports the source-input note as well as the retained provider rate. Exact supporting excerpt: {
+                              "recipe_order": 1,
+                              "compound": "NaHCO3",
+                              "compound_id": 55,
+                              "amount": 0.166,
+                              "unit": "g",
+                              "g_l": 0.166,
+                              "mmol_l": 1.97603,
+                              "optional": 0
+                          } Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57. Historical explanation (superseded where preparation scope differs): Concentration evidence for ingredients[0].concentration (NaHCO3) in MediaDive medium 1164; locator=$.data.solutions[0].recipe[0]. Provider explicitly reports g_l=0.166; check: 0.166 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.166 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57.
+  notes: 'Source batch input: 0.166 g. Retained 0.166 g/L is the provider''s nominal
+    1000 ml recipe rate, not a measured basal or final-medium concentration after
+    stock additions.'
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
@@ -33,6 +64,34 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:63004
     label: sodium bromide
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1164
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "NaBr",
+                              "compound_id": 353,
+                              "amount": 0.35,
+                              "unit": "g",
+                              "g_l": 0.35,
+                              "mmol_l": 3.40169,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[1].concentration (evidence_only), locator=$.data.solutions[0].recipe[1]: Source batch input: 0.35 g. Retained 0.35 g/L is the provider's nominal 1000 ml recipe rate, not a measured basal or final-medium concentration after stock additions. Supports the source-input note as well as the retained provider rate. Exact supporting excerpt: {
+                              "recipe_order": 2,
+                              "compound": "NaBr",
+                              "compound_id": 353,
+                              "amount": 0.35,
+                              "unit": "g",
+                              "g_l": 0.35,
+                              "mmol_l": 3.40169,
+                              "optional": 0
+                          } Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57. Historical explanation (superseded where preparation scope differs): Concentration evidence for ingredients[1].concentration (NaBr) in MediaDive medium 1164; locator=$.data.solutions[0].recipe[1]. Provider explicitly reports g_l=0.35; check: 0.35 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.35 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57.
+  notes: 'Source batch input: 0.35 g. Retained 0.35 g/L is the provider''s nominal
+    1000 ml recipe rate, not a measured basal or final-medium concentration after
+    stock additions.'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -43,6 +102,34 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1164
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "CaCl2 x 2 H2O",
+                              "compound_id": 7,
+                              "amount": 0.916,
+                              "unit": "g",
+                              "g_l": 0.916,
+                              "mmol_l": 6.23066,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[2].concentration (evidence_only), locator=$.data.solutions[0].recipe[2]: Source batch input: 0.916 g. Retained 0.916 g/L is the provider's nominal 1000 ml recipe rate, not a measured basal or final-medium concentration after stock additions. Supports the source-input note as well as the retained provider rate. Exact supporting excerpt: {
+                              "recipe_order": 3,
+                              "compound": "CaCl2 x 2 H2O",
+                              "compound_id": 7,
+                              "amount": 0.916,
+                              "unit": "g",
+                              "g_l": 0.916,
+                              "mmol_l": 6.23066,
+                              "optional": 0
+                          } Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57. Historical explanation (superseded where preparation scope differs): Concentration evidence for ingredients[2].concentration (CaCl2 x 2 H2O) in MediaDive medium 1164; locator=$.data.solutions[0].recipe[2]. Provider explicitly reports g_l=0.916; check: 0.916 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.916 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57.
+  notes: 'Source batch input: 0.916 g. Retained 0.916 g/L is the provider''s nominal
+    1000 ml recipe rate, not a measured basal or final-medium concentration after
+    stock additions.'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -53,6 +140,34 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
     label: potassium chloride
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1164
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "KCl",
+                              "compound_id": 61,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "mmol_l": 67.0691,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[3].concentration (evidence_only), locator=$.data.solutions[0].recipe[3]: Source batch input: 5 g. Retained 5 g/L is the provider's nominal 1000 ml recipe rate, not a measured basal or final-medium concentration after stock additions. Supports the source-input note as well as the retained provider rate. Exact supporting excerpt: {
+                              "recipe_order": 4,
+                              "compound": "KCl",
+                              "compound_id": 61,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "mmol_l": 67.0691,
+                              "optional": 0
+                          } Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57. Historical explanation (superseded where preparation scope differs): Concentration evidence for ingredients[3].concentration (KCl) in MediaDive medium 1164; locator=$.data.solutions[0].recipe[3]. Provider explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57.
+  notes: 'Source batch input: 5 g. Retained 5 g/L is the provider''s nominal 1000
+    ml recipe rate, not a measured basal or final-medium concentration after stock
+    additions.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -63,6 +178,34 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1164
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 49.83,
+                              "unit": "g",
+                              "g_l": 49.83,
+                              "mmol_l": 202.17,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[4].concentration (evidence_only), locator=$.data.solutions[0].recipe[4]: Source batch input: 49.83 g. Retained 49.83 g/L is the provider's nominal 1000 ml recipe rate, not a measured basal or final-medium concentration after stock additions. Supports the source-input note as well as the retained provider rate. Exact supporting excerpt: {
+                              "recipe_order": 5,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 49.83,
+                              "unit": "g",
+                              "g_l": 49.83,
+                              "mmol_l": 202.17,
+                              "optional": 0
+                          } Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57. Historical explanation (superseded where preparation scope differs): Concentration evidence for ingredients[4].concentration (MgSO4 x 7 H2O) in MediaDive medium 1164; locator=$.data.solutions[0].recipe[4]. Provider explicitly reports g_l=49.83; check: 49.83 g * 1 g/g / (1000 ml / 1000 ml per L) = 49.83 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57.
+  notes: 'Source batch input: 49.83 g. Retained 49.83 g/L is the provider''s nominal
+    1000 ml recipe rate, not a measured basal or final-medium concentration after
+    stock additions.'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -73,16 +216,34 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
-- preferred_term: FeCl3 x 6 H2O
-  term:
-    id: CHEBI:86254
-    label: iron trichloride hexahydrate
-  concentration:
-    value: '7'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86254
-    label: iron trichloride hexahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1164
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 195,
+                              "unit": "g",
+                              "g_l": 195,
+                              "mmol_l": 3336.76,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[5].concentration (evidence_only), locator=$.data.solutions[0].recipe[5]: Source batch input: 195 g. Retained 195 g/L is the provider's nominal 1000 ml recipe rate, not a measured basal or final-medium concentration after stock additions. Supports the source-input note as well as the retained provider rate. Exact supporting excerpt: {
+                              "recipe_order": 6,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 195,
+                              "unit": "g",
+                              "g_l": 195,
+                              "mmol_l": 3336.76,
+                              "optional": 0
+                          } Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57. Historical explanation (superseded where preparation scope differs): Concentration evidence for ingredients[5].concentration (NaCl) in MediaDive medium 1164; locator=$.data.solutions[0].recipe[5]. Provider explicitly reports g_l=195; check: 195 g * 1 g/g / (1000 ml / 1000 ml per L) = 195 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57.
+  notes: 'Source batch input: 195 g. Retained 195 g/L is the provider''s nominal 1000
+    ml recipe rate, not a measured basal or final-medium concentration after stock
+    additions.'
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -93,14 +254,124 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1164
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 8,
+                              "compound": "Glucose",
+                              "compound_id": 5,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "mmol_l": 5.55062,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[6].concentration (evidence_only), locator=$.data.solutions[0].recipe[7]: Source batch input: 1 g. Retained 1 g/L is the provider's nominal 1000 ml recipe rate, not a measured basal or final-medium concentration after stock additions. Supports the source-input note as well as the retained provider rate. Exact supporting excerpt: {
+                              "recipe_order": 8,
+                              "compound": "Glucose",
+                              "compound_id": 5,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "mmol_l": 5.55062,
+                              "optional": 0
+                          } Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57. Historical explanation (superseded where preparation scope differs): Concentration evidence for ingredients[7].concentration (Glucose) in MediaDive medium 1164; locator=$.data.solutions[0].recipe[7]. Provider explicitly reports g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57.
+  notes: 'Source batch input: 1 g. Retained 1 g/L is the provider''s nominal 1000
+    ml recipe rate, not a measured basal or final-medium concentration after stock
+    additions.'
 - preferred_term: Proteose peptone
   concentration:
     value: '5'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1164
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 9,
+                              "compound": "Proteose peptone",
+                              "compound_id": 208,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[7].concentration (evidence_only), locator=$.data.solutions[0].recipe[8]: Source batch input: 5 g. Retained 5 g/L is the provider's nominal 1000 ml recipe rate, not a measured basal or final-medium concentration after stock additions. Supports the source-input note as well as the retained provider rate. Exact supporting excerpt: {
+                              "recipe_order": 9,
+                              "compound": "Proteose peptone",
+                              "compound_id": 208,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "optional": 0
+                          } Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57. Historical explanation (superseded where preparation scope differs): Concentration evidence for ingredients[8].concentration (Proteose peptone) in MediaDive medium 1164; locator=$.data.solutions[0].recipe[8]. Provider explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57.
+  notes: 'Source batch input: 5 g. Retained 5 g/L is the provider''s nominal 1000
+    ml recipe rate, not a measured basal or final-medium concentration after stock
+    additions.'
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1164
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 10,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[8].concentration (evidence_only), locator=$.data.solutions[0].recipe[9]: Source batch input: 5 g. Retained 5 g/L is the provider's nominal 1000 ml recipe rate, not a measured basal or final-medium concentration after stock additions. Supports the source-input note as well as the retained provider rate. Exact supporting excerpt: {
+                              "recipe_order": 10,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "optional": 0
+                          } Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57. Historical explanation (superseded where preparation scope differs): Concentration evidence for ingredients[9].concentration (Yeast extract) in MediaDive medium 1164; locator=$.data.solutions[0].recipe[9]. Provider explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57.
+  notes: 'Source batch input: 5 g. Retained 5 g/L is the provider''s nominal 1000
+    ml recipe rate, not a measured basal or final-medium concentration after stock
+    additions.'
+- preferred_term: Distilled water
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  concentration:
+    value: '1'
+    unit: L
+  notes: 'Source batch input: 1000 ml distilled water = 1 L. This is not a volume
+    percentage or a measured final-medium volume.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1164
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 11,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[9].concentration (add), locator=$.data.solutions[0].recipe[10]: Source batch input: 1000 ml distilled water = 1 L. This is not a volume percentage or a measured final-medium volume. Calculation: 1000 ml / 1000 ml per L = 1 L. Supports water identity and the input-basis note. Exact supporting excerpt: {
+                              "recipe_order": 11,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          } Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57.
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -135,11 +406,165 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-07T13:32:40.086487+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/1164
+  changes: 'ingredients[0].concentration: {"unit": "G_PER_L", "value": "0.166"} ->
+    {"unit": "G_PER_L", "value": "0.166"} (evidence_only); ingredients[1].concentration:
+    {"unit": "G_PER_L", "value": "0.35"} -> {"unit": "G_PER_L", "value": "0.35"} (evidence_only);
+    ingredients[2].concentration: {"unit": "G_PER_L", "value": "0.916"} -> {"unit":
+    "G_PER_L", "value": "0.916"} (evidence_only); ingredients[3].concentration: {"unit":
+    "G_PER_L", "value": "5"} -> {"unit": "G_PER_L", "value": "5"} (evidence_only);
+    ingredients[4].concentration: {"unit": "G_PER_L", "value": "49.83"} -> {"unit":
+    "G_PER_L", "value": "49.83"} (evidence_only); ingredients[5].concentration: {"unit":
+    "G_PER_L", "value": "195"} -> {"unit": "G_PER_L", "value": "195"} (evidence_only);
+    ingredients[7].concentration: {"unit": "G_PER_L", "value": "1"} -> {"unit": "G_PER_L",
+    "value": "1"} (evidence_only); ingredients[8].concentration: {"unit": "G_PER_L",
+    "value": "5"} -> {"unit": "G_PER_L", "value": "5"} (evidence_only); ingredients[9].concentration:
+    {"unit": "G_PER_L", "value": "5"} -> {"unit": "G_PER_L", "value": "5"} (evidence_only)'
+- timestamp: '2026-10-08T08:51:23.684976+00:00'
+  curator: codex
+  action: CORRECTED_DSMZ1157_1164_STOCK_STAGES_AND_INPUTS
+  notes: Restored stock boundaries, exact source doses and water input. Unspecified
+    percentage bases/drop volume remain unresolved. Preserved prior history and snippets,
+    chemical mappings and unrelated flags; corrected only verified stale link paths.
+    No final-volume, growth or new variant inference.
+  source: https://mediadive.dsmz.de/rest/medium/1164; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf
+  changes: 'ingredients[0].concentration: {"value": "0.166", "unit": "G_PER_L"} ->
+    {"value": "0.166", "unit": "G_PER_L"} (evidence_only); ingredients[1].concentration:
+    {"value": "0.35", "unit": "G_PER_L"} -> {"value": "0.35", "unit": "G_PER_L"} (evidence_only);
+    ingredients[2].concentration: {"value": "0.916", "unit": "G_PER_L"} -> {"value":
+    "0.916", "unit": "G_PER_L"} (evidence_only); ingredients[3].concentration: {"value":
+    "5", "unit": "G_PER_L"} -> {"value": "5", "unit": "G_PER_L"} (evidence_only);
+    ingredients[4].concentration: {"value": "49.83", "unit": "G_PER_L"} -> {"value":
+    "49.83", "unit": "G_PER_L"} (evidence_only); ingredients[5].concentration: {"value":
+    "195", "unit": "G_PER_L"} -> {"value": "195", "unit": "G_PER_L"} (evidence_only);
+    ingredients[6].concentration: {"value": "1", "unit": "G_PER_L"} -> {"value": "1",
+    "unit": "G_PER_L"} (evidence_only); ingredients[7].concentration: {"value": "5",
+    "unit": "G_PER_L"} -> {"value": "5", "unit": "G_PER_L"} (evidence_only); ingredients[8].concentration:
+    {"value": "5", "unit": "G_PER_L"} -> {"value": "5", "unit": "G_PER_L"} (evidence_only);
+    solutions[0].composition[0].notes: {"value": "7", "unit": "G_PER_L"} -> "Source
+    stock label: 0.5%; percentage basis unspecified. The flattened recipe quantity
+    is withdrawn at this stock stage. No mass/volume percentage basis, density, stock
+    solvent or final-medium concentration is inferred." (correct); solutions[0].preferred_term:
+    null -> "FeCl3 x 6 H2O stock" (add); solutions[0].source: null -> "https://mediadive.dsmz.de/rest/medium/1164"
+    (add); solutions[0].notes: null -> "Source batch dose: 7 drops of FeCl3 x 6 H2O
+    stock labelled 0.5%. Drop volume and percentage basis are unspecified. Seven drops
+    is not 7 g/L; no numeric volume, stock strength or final-medium concentration
+    is inferred." (add); ingredients[9].concentration: null -> {"value": "1", "unit":
+    "L"} (add); notes: "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf"
+    -> "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf\n\nStock
+    stages and water inputs are explicit. Percentage bases, stock solvents and measured
+    final volume are not supplied by these sources; no downstream dilution or growth
+    claim is inferred. Existing chemical mappings and high_metal/other historical
+    flags are retained but not validated by this concentration repair." (evidence_only);
+    variant_children[0].path: "data/normalized_yaml/bacterial/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml"
+    -> "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml"
+    (correct)'
 high_metal: true
 variant_children:
-- path: data/normalized_yaml/bacterial/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml
+- path: data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003877
   name: halomicrobium_katesii_medium
   notes: KOMODO record is an exact source duplicate of DSMZ Medium 1164; local ingredient
     and concentration signatures match.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/1164
+  title: 'MediaDive medium 1164: HALOMICROBIUM KATESII MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57;
+    original_recipe=https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf;
+    individual authors and publication year not supplied. Provider-declared main-recipe
+    amounts only.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf
+  title: 1164. HALOMICROBIUM KATESII MEDIUM
+  notes: source_type=culture_collection_protocol; discovery_mode=cross_reference;
+    accessed_on=2026-10-08; response_sha256=f027673164f8c24fe2894a21b3487e26d8f7f48ec18ee14c365c0644790a9c4c;
+    individual authors and publication year not specified; the 2008 PDF copyright
+    notice is not treated as publication year.
+solutions:
+- preferred_term: FeCl3 x 6 H2O stock
+  composition:
+  - preferred_term: FeCl3 x 6 H2O
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    notes: 'Source stock label: 0.5%; percentage basis unspecified. The flattened
+      recipe quantity is withdrawn at this stock stage. No mass/volume percentage
+      basis, density, stock solvent or final-medium concentration is inferred.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1164
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 7,
+                                "compound": "FeCl3 x 6 H2O",
+                                "compound_id": 82,
+                                "attribute": "0.5 %",
+                                "amount": 7,
+                                "unit": "drops",
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[0].notes (correct), locator=$.data.solutions[0].recipe[6]: Source stock label: 0.5%; percentage basis unspecified. The flattened recipe quantity is withdrawn at this stock stage. No mass/volume percentage basis, density, stock solvent or final-medium concentration is inferred. Existing chemical mappings are preserved, not independently validated. Exact supporting excerpt: {
+                                "recipe_order": 7,
+                                "compound": "FeCl3 x 6 H2O",
+                                "compound_id": 82,
+                                "attribute": "0.5 %",
+                                "amount": 7,
+                                "unit": "drops",
+                                "optional": 0
+                            } Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57.
+  source: https://mediadive.dsmz.de/rest/medium/1164
+  notes: 'Source batch dose: 7 drops of FeCl3 x 6 H2O stock labelled 0.5%. Drop volume
+    and percentage basis are unspecified. Seven drops is not 7 g/L; no numeric volume,
+    stock strength or final-medium concentration is inferred.'
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/1164
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 7,
+                            "compound": "FeCl3 x 6 H2O",
+                            "compound_id": 82,
+                            "attribute": "0.5 %",
+                            "amount": 7,
+                            "unit": "drops",
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].preferred_term (add), locator=$.data.solutions[0].recipe[6]: Source batch dose: 7 drops of FeCl3 x 6 H2O stock labelled 0.5%. Drop volume and percentage basis are unspecified. Seven drops is not 7 g/L; no numeric volume, stock strength or final-medium concentration is inferred. Stock descriptor is a curator label, not a new source identifier. Exact supporting excerpt: {
+                            "recipe_order": 7,
+                            "compound": "FeCl3 x 6 H2O",
+                            "compound_id": 82,
+                            "attribute": "0.5 %",
+                            "amount": 7,
+                            "unit": "drops",
+                            "optional": 0
+                        } solutions[0].source (add), locator=$.data.solutions[0].recipe[6]: Source batch dose: 7 drops of FeCl3 x 6 H2O stock labelled 0.5%. Drop volume and percentage basis are unspecified. Seven drops is not 7 g/L; no numeric volume, stock strength or final-medium concentration is inferred. Stock descriptor is a curator label, not a new source identifier. solutions[0].notes (add), locator=$.data.solutions[0].recipe[6]: Source batch dose: 7 drops of FeCl3 x 6 H2O stock labelled 0.5%. Drop volume and percentage basis are unspecified. Seven drops is not 7 g/L; no numeric volume, stock strength or final-medium concentration is inferred. Stock descriptor is a curator label, not a new source identifier. notes (evidence_only), locator=$.data.solutions[0].recipe[6]: Stock stages and water inputs are explicit. Percentage bases, stock solvents and measured final volume are not supplied by these sources; no downstream dilution or growth claim is inferred. Existing chemical mappings and high_metal/other historical flags are retained but not validated by this concentration repair. variant_children[0].path (correct), locator=$.data.medium: Correct stale category path to exact tracked target data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml with unchanged ID CultureMech:003877. Exact API/PDF and KOMODO original-recipe mapping establish source identity; the local path/ID is checked against the paired frozen record, not inferred from the external source. Exact supporting excerpt: {
+                "id": 1164,
+                "name": "HALOMICROBIUM KATESII MEDIUM",
+                "complex_medium": "yes",
+                "min_pH": 7.2,
+                "max_pH": 7.2,
+                "source": "DSMZ",
+                "link": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf"
+            } Retrieved 2026-10-07T13:18:11.845495+00:00; response SHA256=bd84f59693a64df043d621fade48abea68a243a4847c9aaa0fa6c0e719c57f57.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf
+  supports: SUPPORT
+  snippet: FeCl3 x 6 H2O (0.5%) 7 drops
+  explanation: 'Original DSMZ recipe page 1 corroborates solutions[0] stock stage
+    and batch dose, including seven drops and an unspecified 0.5% basis. Additional
+    exact water-row excerpt: Distilled water 1000.000 ml. 1000 ml / 1000 ml per L
+    = 1 L water input, not measured final volume. PDF SHA256=f027673164f8c24fe2894a21b3487e26d8f7f48ec18ee14c365c0644790a9c4c;
+    retrieved 2026-10-08T08:09:10.740472+00:00. Other stock rows are separately quoted
+    from the linked API.'

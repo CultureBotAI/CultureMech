@@ -1,0 +1,308 @@
+{
+  "source_sha256": "2be09e9249a816360bba52b76c1f3d889e12aae7bfd90d12771f117acb01a0d1",
+  "files": [
+    {
+      "target": "data/normalized_yaml/bacterial_index.json",
+      "preview": "/tmp/ingredient-media-20261007/436-index-preview/bacterial_index.json",
+      "before_sha256": "a1beae7cedbef1a2459c088db663a04519b4e7b3e3470d8bd31be495ab8a4ee0",
+      "after_sha256": "2c18bdcfe33dc5137adb62e5f1c9427c729b5008e95374e7e39ca88d09a72d10",
+      "changes": [
+        {
+          "key": "CultureMech:005284",
+          "id": "CultureMech:005284",
+          "changes": {
+            "ingredient_count": [
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:010100",
+          "id": "CultureMech:010100",
+          "changes": {
+            "ingredient_count": [
+              22,
+              10
+            ],
+            "solution_count": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:004796",
+          "id": "CultureMech:004796",
+          "changes": {
+            "ingredient_count": [
+              0,
+              4
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:015242",
+          "id": "CultureMech:015242",
+          "changes": {
+            "ingredient_count": [
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:005283",
+          "id": "CultureMech:005283",
+          "changes": {
+            "ingredient_count": [
+              18,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:001544",
+          "id": "CultureMech:001544",
+          "changes": {
+            "solution_count": [
+              null,
+              3
+            ],
+            "ingredient_count": [
+              18,
+              8
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:009193",
+          "id": "CultureMech:009193",
+          "changes": {
+            "ingredient_count": [
+              24,
+              12
+            ],
+            "solution_count": [
+              2,
+              3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_komodo_index.json",
+      "preview": "/tmp/ingredient-media-20261007/436-index-preview/by_source_komodo_index.json",
+      "before_sha256": "dc8bce7d90b1439f1b527d31447f77422ea1c7bff32373ad6d260e0fced4eaf3",
+      "after_sha256": "2a2e20835e1b4577dfd93c68e84db32f6744c53f9d4b8f2127ade7bd70f1309e",
+      "changes": [
+        {
+          "key": "CultureMech:005284",
+          "id": "CultureMech:005284",
+          "changes": {
+            "ingredient_count": [
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:004796",
+          "id": "CultureMech:004796",
+          "changes": {
+            "ingredient_count": [
+              0,
+              4
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:005283",
+          "id": "CultureMech:005283",
+          "changes": {
+            "ingredient_count": [
+              18,
+              21
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_mediadive-solutions_index.json",
+      "preview": "/tmp/ingredient-media-20261007/436-index-preview/by_source_mediadive-solutions_index.json",
+      "before_sha256": "775001735433cf17fb5cfdf578a30657c4537d9ec6d3bd0469c7d3221632f0cc",
+      "after_sha256": "b916d54c939c4b0450556dd70d0f2301638f62f3141ac54e304803c36534fe7b",
+      "changes": [
+        {
+          "key": "CultureMech:015242",
+          "id": "CultureMech:015242",
+          "changes": {
+            "ingredient_count": [
+              8,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_mediadive_index.json",
+      "preview": "/tmp/ingredient-media-20261007/436-index-preview/by_source_mediadive_index.json",
+      "before_sha256": "650aae0ada3cd9134aac2f4cbe6e4513d395673c809edbb13525290faf59322e",
+      "after_sha256": "15f58435e96bd7a2f6a338c4f2745ae3480bd490b5b08ac9b525683a7585b76a",
+      "changes": [
+        {
+          "key": "CultureMech:001544",
+          "id": "CultureMech:001544",
+          "changes": {
+            "ingredient_count": [
+              18,
+              8
+            ],
+            "solution_count": [
+              null,
+              3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_togo_index.json",
+      "preview": "/tmp/ingredient-media-20261007/436-index-preview/by_source_togo_index.json",
+      "before_sha256": "1c278ec0e835223179224ac2923765e284cc203fa0a68adff128b7aa2d42d52f",
+      "after_sha256": "be07c363234c65dc3dfe9ff17d37eea883486696e863ae0d3648a223b4dd690b",
+      "changes": [
+        {
+          "key": "CultureMech:010100",
+          "id": "CultureMech:010100",
+          "changes": {
+            "ingredient_count": [
+              22,
+              10
+            ],
+            "solution_count": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:009193",
+          "id": "CultureMech:009193",
+          "changes": {
+            "ingredient_count": [
+              24,
+              12
+            ],
+            "solution_count": [
+              2,
+              3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_index.json",
+      "preview": "/tmp/ingredient-media-20261007/436-index-preview/recipe_index.json",
+      "before_sha256": "d5e52a0f4d67c9a40985b2517233d76549acb9d331fd0efecc427882f1783d39",
+      "after_sha256": "6414e10a503590327a1821bbb558f967acb8907083aff41668406e520371f7ab",
+      "changes": [
+        {
+          "key": "CultureMech:005284",
+          "id": "CultureMech:005284",
+          "changes": {
+            "ingredient_count": [
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:010100",
+          "id": "CultureMech:010100",
+          "changes": {
+            "ingredient_count": [
+              22,
+              10
+            ],
+            "solution_count": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:004796",
+          "id": "CultureMech:004796",
+          "changes": {
+            "ingredient_count": [
+              0,
+              4
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:015242",
+          "id": "CultureMech:015242",
+          "changes": {
+            "ingredient_count": [
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:005283",
+          "id": "CultureMech:005283",
+          "changes": {
+            "ingredient_count": [
+              18,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:001544",
+          "id": "CultureMech:001544",
+          "changes": {
+            "ingredient_count": [
+              18,
+              8
+            ],
+            "solution_count": [
+              null,
+              3
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:009193",
+          "id": "CultureMech:009193",
+          "changes": {
+            "ingredient_count": [
+              24,
+              12
+            ],
+            "solution_count": [
+              2,
+              3
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "metadata_changed_ids": [
+    "CultureMech:001544",
+    "CultureMech:004796",
+    "CultureMech:005283",
+    "CultureMech:005284",
+    "CultureMech:009193",
+    "CultureMech:010100",
+    "CultureMech:015242"
+  ]
+}

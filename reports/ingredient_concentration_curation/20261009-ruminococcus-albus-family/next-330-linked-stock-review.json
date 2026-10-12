@@ -1,0 +1,229 @@
+{
+  "terminal": true,
+  "records_edited": false,
+  "new_evidence": 0,
+  "rows": [
+    {
+      "ingredient": "DL--\u03b1--Methyl butyric acid",
+      "proposed_batch_volume": {
+        "value": "0.001",
+        "unit": "L"
+      },
+      "togo_source": {
+        "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M124",
+        "snippet": "{\n          \"component_name\": \"DL--\u03b1--Methyl butyric acid\",\n          \"volume\": 1,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001175\",\n          \"gmo_id\": \"GMO_001175\",\n          \"label\": \"DL-alpha-Methylbutyric acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+        "pointer": [
+          "components",
+          1,
+          "items",
+          0
+        ],
+        "sha256": "8352a9e8761034cee555379a94198a97e2a40806c8f9e861a374e877578b66a9"
+      },
+      "original_source": {
+        "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=133",
+        "snippet": "DL-\u03b1-Methyl butyric acid 1.0 ml",
+        "pointer": [
+          "tables",
+          1,
+          "rows",
+          6
+        ],
+        "sha256": "bdb02ee4f1bb028e319f8d6f1deec6f65e57e73cd0d17faae3e154555236a9c9"
+      },
+      "basis": "VFA-stock input only. No density, volume additivity or receiving-medium concentration inferred."
+    },
+    {
+      "ingredient": "n--Butyric acid",
+      "proposed_batch_volume": {
+        "value": "0.004",
+        "unit": "L"
+      },
+      "togo_source": {
+        "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M124",
+        "snippet": "{\n          \"component_name\": \"n--Butyric acid\",\n          \"volume\": 4,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001178\",\n          \"gmo_id\": \"GMO_001178\",\n          \"label\": \"Butyric acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+        "pointer": [
+          "components",
+          1,
+          "items",
+          1
+        ],
+        "sha256": "8352a9e8761034cee555379a94198a97e2a40806c8f9e861a374e877578b66a9"
+      },
+      "original_source": {
+        "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=133",
+        "snippet": "n-Butyric acid 4.0 ml",
+        "pointer": [
+          "tables",
+          1,
+          "rows",
+          2
+        ],
+        "sha256": "bdb02ee4f1bb028e319f8d6f1deec6f65e57e73cd0d17faae3e154555236a9c9"
+      },
+      "basis": "VFA-stock input only. No density, volume additivity or receiving-medium concentration inferred."
+    },
+    {
+      "ingredient": "Acetic acid",
+      "proposed_batch_volume": {
+        "value": "0.017",
+        "unit": "L"
+      },
+      "togo_source": {
+        "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M124",
+        "snippet": "{\n          \"component_name\": \"Acetic acid\",\n          \"volume\": 17,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001179\",\n          \"gmo_id\": \"GMO_001179\",\n          \"label\": \"Acetic acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+        "pointer": [
+          "components",
+          1,
+          "items",
+          2
+        ],
+        "sha256": "8352a9e8761034cee555379a94198a97e2a40806c8f9e861a374e877578b66a9"
+      },
+      "original_source": {
+        "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=133",
+        "snippet": "Acetic acid 17.0 ml",
+        "pointer": [
+          "tables",
+          1,
+          "rows",
+          0
+        ],
+        "sha256": "bdb02ee4f1bb028e319f8d6f1deec6f65e57e73cd0d17faae3e154555236a9c9"
+      },
+      "basis": "VFA-stock input only. No density, volume additivity or receiving-medium concentration inferred."
+    },
+    {
+      "ingredient": "n--Valeric acid",
+      "proposed_batch_volume": {
+        "value": "0.001",
+        "unit": "L"
+      },
+      "togo_source": {
+        "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M124",
+        "snippet": "{\n          \"component_name\": \"n--Valeric acid\",\n          \"volume\": 1,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001181\",\n          \"gmo_id\": \"GMO_001181\",\n          \"label\": \"Valeric acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+        "pointer": [
+          "components",
+          1,
+          "items",
+          3
+        ],
+        "sha256": "8352a9e8761034cee555379a94198a97e2a40806c8f9e861a374e877578b66a9"
+      },
+      "original_source": {
+        "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=133",
+        "snippet": "n-Valeric acid 1.0 ml",
+        "pointer": [
+          "tables",
+          1,
+          "rows",
+          4
+        ],
+        "sha256": "bdb02ee4f1bb028e319f8d6f1deec6f65e57e73cd0d17faae3e154555236a9c9"
+      },
+      "basis": "VFA-stock input only. No density, volume additivity or receiving-medium concentration inferred."
+    },
+    {
+      "ingredient": "iso--Valeric acid",
+      "proposed_batch_volume": {
+        "value": "0.001",
+        "unit": "L"
+      },
+      "togo_source": {
+        "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M124",
+        "snippet": "{\n          \"component_name\": \"iso--Valeric acid\",\n          \"volume\": 1,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001182\",\n          \"gmo_id\": \"GMO_001182\",\n          \"label\": \"Isovaleric acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+        "pointer": [
+          "components",
+          1,
+          "items",
+          4
+        ],
+        "sha256": "8352a9e8761034cee555379a94198a97e2a40806c8f9e861a374e877578b66a9"
+      },
+      "original_source": {
+        "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=133",
+        "snippet": "iso-Valeric acid 1.0 ml",
+        "pointer": [
+          "tables",
+          1,
+          "rows",
+          5
+        ],
+        "sha256": "bdb02ee4f1bb028e319f8d6f1deec6f65e57e73cd0d17faae3e154555236a9c9"
+      },
+      "basis": "VFA-stock input only. No density, volume additivity or receiving-medium concentration inferred."
+    },
+    {
+      "ingredient": "iso--Butyric acid",
+      "proposed_batch_volume": {
+        "value": "0.001",
+        "unit": "L"
+      },
+      "togo_source": {
+        "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M124",
+        "snippet": "{\n          \"component_name\": \"iso--Butyric acid\",\n          \"volume\": 1,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001184\",\n          \"gmo_id\": \"GMO_001184\",\n          \"label\": \"Isobutyric acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+        "pointer": [
+          "components",
+          1,
+          "items",
+          5
+        ],
+        "sha256": "8352a9e8761034cee555379a94198a97e2a40806c8f9e861a374e877578b66a9"
+      },
+      "original_source": {
+        "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=133",
+        "snippet": "iso-Butyric acid 1.0 ml",
+        "pointer": [
+          "tables",
+          1,
+          "rows",
+          3
+        ],
+        "sha256": "bdb02ee4f1bb028e319f8d6f1deec6f65e57e73cd0d17faae3e154555236a9c9"
+      },
+      "basis": "VFA-stock input only. No density, volume additivity or receiving-medium concentration inferred."
+    },
+    {
+      "ingredient": "Propionic acid",
+      "proposed_batch_volume": {
+        "value": "0.006",
+        "unit": "L"
+      },
+      "togo_source": {
+        "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M124",
+        "snippet": "{\n          \"component_name\": \"Propionic acid\",\n          \"volume\": 6,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001192\",\n          \"gmo_id\": \"GMO_001192\",\n          \"label\": \"Propionic acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+        "pointer": [
+          "components",
+          1,
+          "items",
+          6
+        ],
+        "sha256": "8352a9e8761034cee555379a94198a97e2a40806c8f9e861a374e877578b66a9"
+      },
+      "original_source": {
+        "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=133",
+        "snippet": "Propionic acid 6.0 ml",
+        "pointer": [
+          "tables",
+          1,
+          "rows",
+          1
+        ],
+        "sha256": "bdb02ee4f1bb028e319f8d6f1deec6f65e57e73cd0d17faae3e154555236a9c9"
+      },
+      "basis": "VFA-stock input only. No density, volume additivity or receiving-medium concentration inferred."
+    }
+  ],
+  "link_chain": [
+    "TOGO M1093 explicitly names M124 for a 3.1 ml VFA dose",
+    "TOGO M124 explicitly identifies JCM_M133 and its official recipe URL",
+    "All seven TOGO VFA inputs match the inspected JCM133 VFA subsection"
+  ],
+  "scope": "This resolves the TOGO-linked VFA subsection only; the JCM1029 source-access gap and remaining formulation decisions are still open.",
+  "excluded_jcm133_rows": 24,
+  "receipt_sha256": {
+    "next-330-context-approved": "97e6cfa229556a5251518fafb27c7506242afb62cb7be79ff7ff985dfb4e6c49",
+    "next-330-inspection": "8b67b3a74c49417ce7aae6d3fd5e30cf0df770124227cb2669f6f63fa094302c",
+    "next-330-M124": "5c2f6f2409a8ae6231cd6d85da4ad3899977e216dd5b9084ea8b9d65a02aaeda"
+  }
+}

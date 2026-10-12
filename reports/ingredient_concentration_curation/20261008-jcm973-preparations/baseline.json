@@ -1,0 +1,65 @@
+{
+  "terminal": true,
+  "phase": "baseline",
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "schema-MediaRecipe",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/linkml-validate",
+        "--schema",
+        "src/culturemech/schema/culturemech.yaml",
+        "--target-class",
+        "MediaRecipe",
+        "data/normalized_yaml/archaea/TOGO_M1023_Halorhabdus_Segorensis_Medium.yaml",
+        "data/normalized_yaml/archaea/TOGO_M1024_Halorhabdus_Segorensis_Medium.yaml",
+        "data/normalized_yaml/archaea/halorhabdus_segorensis_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm973-baseline-schema-MediaRecipe.log",
+      "artifact": null
+    },
+    {
+      "name": "schema-SolutionRecipe",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/linkml-validate",
+        "--schema",
+        "src/culturemech/schema/culturemech.yaml",
+        "--target-class",
+        "SolutionRecipe",
+        "data/normalized_yaml/bacterial/mediadive_4996_Main_sol_J973.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm973-baseline-schema-SolutionRecipe.log",
+      "artifact": null
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm973-baseline-strict.log",
+      "artifact": null
+    },
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_jcm973_preparations.py",
+        "tests/test_togo_first_pair_concentrations.py",
+        "tests/test_record_io.py",
+        "tests/test_concentration_plausibility.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm973-baseline-tests.log",
+      "artifact": null
+    }
+  ]
+}

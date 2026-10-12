@@ -23,6 +23,30 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:91258
     label: disodium hydrogenphosphate dihydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/369
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Na2HPO4 x 2 H2O",
+                              "compound_id": 181,
+                              "amount": 4.5,
+                              "unit": "g",
+                              "g_l": 4.5,
+                              "mmol_l": 31.6993,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration (evidence_only), locator=$.data.solutions[0].recipe[0]:
+      Source solution 5604 (Main sol. 369) explicitly reports g_l=4.5. Arithmetic
+      check: 4.5 g; provider volume 1000 ml; computed 4.5 g/L. Additional exact value
+      at $.data.solutions[0].volume (ml): 1000. The numeric value and chemical mappings
+      are preserved. This supports the provider-declared preparation concentration,
+      not an independently measured final volume or downstream dilution. Source retrieved
+      2026-10-07T10:46:03.446673+00:00; response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+      Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27. Secondary
+      ontology mappings and parent/variant relationships were preserved, not validated
+      by this amount evidence.'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -33,6 +57,30 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/369
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "KH2PO4",
+                              "compound_id": 11,
+                              "amount": 1.5,
+                              "unit": "g",
+                              "g_l": 1.5,
+                              "mmol_l": 11.0225,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[1].concentration (evidence_only), locator=$.data.solutions[0].recipe[1]:
+      Source solution 5604 (Main sol. 369) explicitly reports g_l=1.5. Arithmetic
+      check: 1.5 g; provider volume 1000 ml; computed 1.5 g/L. Additional exact value
+      at $.data.solutions[0].volume (ml): 1000. The numeric value and chemical mappings
+      are preserved. This supports the provider-declared preparation concentration,
+      not an independently measured final volume or downstream dilution. Source retrieved
+      2026-10-07T10:46:03.446673+00:00; response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+      Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27. Secondary
+      ontology mappings and parent/variant relationships were preserved, not validated
+      by this amount evidence.'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -43,6 +91,30 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/369
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "NH4Cl",
+                              "compound_id": 42,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "mmol_l": 18.6951,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[2].concentration (evidence_only), locator=$.data.solutions[0].recipe[2]:
+      Source solution 5604 (Main sol. 369) explicitly reports g_l=1. Arithmetic check:
+      1 g; provider volume 1000 ml; computed 1 g/L. Additional exact value at $.data.solutions[0].volume
+      (ml): 1000. The numeric value and chemical mappings are preserved. This supports
+      the provider-declared preparation concentration, not an independently measured
+      final volume or downstream dilution. Source retrieved 2026-10-07T10:46:03.446673+00:00;
+      response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+      Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27. Secondary
+      ontology mappings and parent/variant relationships were preserved, not validated
+      by this amount evidence.'
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -53,6 +125,30 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/369
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "MnSO4 x H2O",
+                              "compound_id": 14,
+                              "amount": 0.01,
+                              "unit": "g",
+                              "g_l": 0.01,
+                              "mmol_l": 0.059166,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[3].concentration (evidence_only), locator=$.data.solutions[0].recipe[3]:
+      Source solution 5604 (Main sol. 369) explicitly reports g_l=0.01. Arithmetic
+      check: 0.01 g; provider volume 1000 ml; computed 0.01 g/L. Additional exact
+      value at $.data.solutions[0].volume (ml): 1000. The numeric value and chemical
+      mappings are preserved. This supports the provider-declared preparation concentration,
+      not an independently measured final volume or downstream dilution. Source retrieved
+      2026-10-07T10:46:03.446673+00:00; response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+      Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27. Secondary
+      ontology mappings and parent/variant relationships were preserved, not validated
+      by this amount evidence.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -63,6 +159,30 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/369
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 0.2,
+                              "unit": "g",
+                              "g_l": 0.2,
+                              "mmol_l": 0.811438,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[4].concentration (evidence_only), locator=$.data.solutions[0].recipe[4]:
+      Source solution 5604 (Main sol. 369) explicitly reports g_l=0.2. Arithmetic
+      check: 0.2 g; provider volume 1000 ml; computed 0.2 g/L. Additional exact value
+      at $.data.solutions[0].volume (ml): 1000. The numeric value and chemical mappings
+      are preserved. This supports the provider-declared preparation concentration,
+      not an independently measured final volume or downstream dilution. Source retrieved
+      2026-10-07T10:46:03.446673+00:00; response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+      Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27. Secondary
+      ontology mappings and parent/variant relationships were preserved, not validated
+      by this amount evidence.'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -73,6 +193,30 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/369
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "CaCl2 x 2 H2O",
+                              "compound_id": 7,
+                              "amount": 0.01,
+                              "unit": "g",
+                              "g_l": 0.01,
+                              "mmol_l": 0.0680203,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[5].concentration (evidence_only), locator=$.data.solutions[0].recipe[5]:
+      Source solution 5604 (Main sol. 369) explicitly reports g_l=0.01. Arithmetic
+      check: 0.01 g; provider volume 1000 ml; computed 0.01 g/L. Additional exact
+      value at $.data.solutions[0].volume (ml): 1000. The numeric value and chemical
+      mappings are preserved. This supports the provider-declared preparation concentration,
+      not an independently measured final volume or downstream dilution. Source retrieved
+      2026-10-07T10:46:03.446673+00:00; response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+      Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27. Secondary
+      ontology mappings and parent/variant relationships were preserved, not validated
+      by this amount evidence.'
 - preferred_term: Ferric ammonium citrate
   term:
     id: CHEBI:31604
@@ -83,6 +227,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31604
     label: ferric ammonium citrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/369
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 7,
+                              "compound": "Ferric ammonium citrate",
+                              "compound_id": 97,
+                              "amount": 5,
+                              "unit": "mg",
+                              "g_l": 0.005,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[6].concentration (evidence_only), locator=$.data.solutions[0].recipe[6]:
+      Source solution 5604 (Main sol. 369) explicitly reports g_l=0.005. Arithmetic
+      check: 5 mg; provider volume 1000 ml; computed 0.005 g/L. Additional exact value
+      at $.data.solutions[0].volume (ml): 1000. The numeric value and chemical mappings
+      are preserved. This supports the provider-declared preparation concentration,
+      not an independently measured final volume or downstream dilution. Source retrieved
+      2026-10-07T10:46:03.446673+00:00; response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+      Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27. Secondary
+      ontology mappings and parent/variant relationships were preserved, not validated
+      by this amount evidence.'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -94,76 +261,58 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: ZnSO4 x 7 H2O
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/369
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 9,
+                              "compound": "Agar",
+                              "compound_id": 3,
+                              "condition": "for solid medium",
+                              "amount": 15,
+                              "unit": "g",
+                              "g_l": 15,
+                              "mmol_l": 44.5991,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[7].concentration (evidence_only), locator=$.data.solutions[0].recipe[8]:
+      Source solution 5604 (Main sol. 369) explicitly reports g_l=15. Arithmetic check:
+      15 g; provider volume 1000 ml; computed 15 g/L. Additional exact value at $.data.solutions[0].volume
+      (ml): 1000. The numeric value and chemical mappings are preserved. This supports
+      the provider-declared preparation concentration, not an independently measured
+      final volume or downstream dilution. The source''s solid-medium condition is
+      preserved and applies to the existing SOLID_AGAR record. Source retrieved 2026-10-07T10:46:03.446673+00:00;
+      response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+      Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27. Secondary
+      ontology mappings and parent/variant relationships were preserved, not validated
+      by this amount evidence.'
+- preferred_term: Distilled water
   term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
+    id: mediadive.compound:4
+    label: Distilled water
   concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:33118
-    label: boric acid
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:53503
-    label: cobalt chloride hexahydrate
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:53503
-    label: cobalt chloride hexahydrate
-- preferred_term: CuCl2 x 2 H2O
-  term:
-    id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: nickel dichloride
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:34887
-    label: nickel dichloride
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
+    value: '1'
+    unit: L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/369
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 10,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[8].concentration (add), locator=$.data.solutions[0].recipe[9]:
+      Explicit 1000 ml water / 1000 ml per L = 1 L in this preparation batch. This
+      is an addition amount, not a claim of final volume, stock strength, or percent
+      basis. Source retrieved 2026-10-07T10:46:03.446673+00:00; response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+      Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27. Secondary
+      ontology mappings and parent/variant relationships were preserved, not validated
+      by this amount evidence.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -202,6 +351,51 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-07T11:35:03.558874+00:00'
+  curator: codex
+  action: RESTORED_REVIEWED_MEDIUM_STOCK_BOUNDARIES
+  notes: Exact source graph, complete ingredient inventory, amounts, and original
+    PDF recipe chain checked. Numeric concentrations and chemical mappings preserved;
+    stock doses and water are explicit batch amounts. No final-medium stock dilution
+    inferred. Parent/variant relationships remain separately unreviewed.
+  source: https://mediadive.dsmz.de/rest/medium/369; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium369.pdf;
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf;
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf
+  changes: '[''ingredients'', 0, ''concentration''] -> ingredients[0].concentration:
+    {''value'': ''4.5'', ''unit'': ''G_PER_L''} -> {''value'': ''4.5'', ''unit'':
+    ''G_PER_L''} (evidence_only); [''ingredients'', 1, ''concentration''] -> ingredients[1].concentration:
+    {''value'': ''1.5'', ''unit'': ''G_PER_L''} -> {''value'': ''1.5'', ''unit'':
+    ''G_PER_L''} (evidence_only); [''ingredients'', 2, ''concentration''] -> ingredients[2].concentration:
+    {''value'': ''1'', ''unit'': ''G_PER_L''} -> {''value'': ''1'', ''unit'': ''G_PER_L''}
+    (evidence_only); [''ingredients'', 3, ''concentration''] -> ingredients[3].concentration:
+    {''value'': ''0.01'', ''unit'': ''G_PER_L''} -> {''value'': ''0.01'', ''unit'':
+    ''G_PER_L''} (evidence_only); [''ingredients'', 4, ''concentration''] -> ingredients[4].concentration:
+    {''value'': ''0.2'', ''unit'': ''G_PER_L''} -> {''value'': ''0.2'', ''unit'':
+    ''G_PER_L''} (evidence_only); [''ingredients'', 5, ''concentration''] -> ingredients[5].concentration:
+    {''value'': ''0.01'', ''unit'': ''G_PER_L''} -> {''value'': ''0.01'', ''unit'':
+    ''G_PER_L''} (evidence_only); [''ingredients'', 6, ''concentration''] -> ingredients[6].concentration:
+    {''value'': ''0.005'', ''unit'': ''G_PER_L''} -> {''value'': ''0.005'', ''unit'':
+    ''G_PER_L''} (evidence_only); [''ingredients'', 7, ''concentration''] -> ingredients[7].concentration:
+    {''value'': ''15'', ''unit'': ''G_PER_L''} -> {''value'': ''15'', ''unit'': ''G_PER_L''}
+    (evidence_only); None -> ingredients[8].concentration: None -> {''value'': ''1'',
+    ''unit'': ''L''} (add); None -> solutions[0].concentration: None -> {''value'':
+    ''0.003'', ''unit'': ''L''} (add); [''ingredients'', 8, ''concentration''] ->
+    solutions[0].composition[0].concentration: {''value'': ''0.1'', ''unit'': ''G_PER_L''}
+    -> {''value'': ''0.1'', ''unit'': ''G_PER_L''} (relocate); [''ingredients'', 9,
+    ''concentration''] -> solutions[0].composition[1].concentration: {''value'': ''0.03'',
+    ''unit'': ''G_PER_L''} -> {''value'': ''0.03'', ''unit'': ''G_PER_L''} (relocate);
+    [''ingredients'', 10, ''concentration''] -> solutions[0].composition[2].concentration:
+    {''value'': ''0.3'', ''unit'': ''G_PER_L''} -> {''value'': ''0.3'', ''unit'':
+    ''G_PER_L''} (relocate); [''ingredients'', 11, ''concentration''] -> solutions[0].composition[3].concentration:
+    {''value'': ''0.2'', ''unit'': ''G_PER_L''} -> {''value'': ''0.2'', ''unit'':
+    ''G_PER_L''} (relocate); [''ingredients'', 12, ''concentration''] -> solutions[0].composition[4].concentration:
+    {''value'': ''0.01'', ''unit'': ''G_PER_L''} -> {''value'': ''0.01'', ''unit'':
+    ''G_PER_L''} (relocate); [''ingredients'', 13, ''concentration''] -> solutions[0].composition[5].concentration:
+    {''value'': ''0.02'', ''unit'': ''G_PER_L''} -> {''value'': ''0.02'', ''unit'':
+    ''G_PER_L''} (relocate); [''ingredients'', 14, ''concentration''] -> solutions[0].composition[6].concentration:
+    {''value'': ''0.03'', ''unit'': ''G_PER_L''} -> {''value'': ''0.03'', ''unit'':
+    ''G_PER_L''} (relocate); None -> solutions[0].composition[7].concentration: None
+    -> {''value'': ''1'', ''unit'': ''L''} (add)'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_369_BACILLUS_TUSCIAE_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
@@ -209,3 +403,341 @@ variant_children:
   name: bacillus_tusciae_medium
   notes: KOMODO record is an exact source duplicate of DSMZ Medium 369; local ingredient
     and concentration signatures match.
+solutions:
+- preferred_term: Trace element solution SL-6
+  term:
+    id: mediadive.solution:25
+    label: Trace element solution SL-6
+  concentration:
+    value: '0.003'
+    unit: L
+  composition:
+  - preferred_term: ZnSO4 x 7 H2O
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/369
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "ZnSO4 x 7 H2O",
+                                "compound_id": 35,
+                                "amount": 0.1,
+                                "unit": "g",
+                                "g_l": 0.1,
+                                "mmol_l": 0.347752,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[0].concentration (relocate), locator=$.data.solutions[1].recipe[0]:
+        Source solution 25 (Trace element solution SL-6) explicitly reports g_l=0.1.
+        Arithmetic check: 0.1 g; provider volume 1000 ml; computed 0.1 g/L. Additional
+        exact value at $.data.solutions[1].volume (ml): 1000. The numeric value and
+        chemical mappings are preserved. This supports the provider-declared preparation
+        concentration, not an independently measured final volume or downstream dilution.
+        Relocated from ingredients[8] into the explicitly linked stock; it is not
+        a direct receiving-medium concentration. Source retrieved 2026-10-07T10:46:03.446673+00:00;
+        response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+        Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27.
+        Secondary ontology mappings and parent/variant relationships were preserved,
+        not validated by this amount evidence.'
+  - preferred_term: MnCl2 x 4 H2O
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/369
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "MnCl2 x 4 H2O",
+                                "compound_id": 36,
+                                "amount": 0.03,
+                                "unit": "g",
+                                "g_l": 0.03,
+                                "mmol_l": 0.151588,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[1].concentration (relocate), locator=$.data.solutions[1].recipe[1]:
+        Source solution 25 (Trace element solution SL-6) explicitly reports g_l=0.03.
+        Arithmetic check: 0.03 g; provider volume 1000 ml; computed 0.03 g/L. Additional
+        exact value at $.data.solutions[1].volume (ml): 1000. The numeric value and
+        chemical mappings are preserved. This supports the provider-declared preparation
+        concentration, not an independently measured final volume or downstream dilution.
+        Relocated from ingredients[9] into the explicitly linked stock; it is not
+        a direct receiving-medium concentration. Source retrieved 2026-10-07T10:46:03.446673+00:00;
+        response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+        Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27.
+        Secondary ontology mappings and parent/variant relationships were preserved,
+        not validated by this amount evidence.'
+  - preferred_term: H3BO3
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    concentration:
+      value: '0.3'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/369
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "H3BO3",
+                                "compound_id": 37,
+                                "amount": 0.3,
+                                "unit": "g",
+                                "g_l": 0.3,
+                                "mmol_l": 4.85123,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[2].concentration (relocate), locator=$.data.solutions[1].recipe[2]:
+        Source solution 25 (Trace element solution SL-6) explicitly reports g_l=0.3.
+        Arithmetic check: 0.3 g; provider volume 1000 ml; computed 0.3 g/L. Additional
+        exact value at $.data.solutions[1].volume (ml): 1000. The numeric value and
+        chemical mappings are preserved. This supports the provider-declared preparation
+        concentration, not an independently measured final volume or downstream dilution.
+        Relocated from ingredients[10] into the explicitly linked stock; it is not
+        a direct receiving-medium concentration. Source retrieved 2026-10-07T10:46:03.446673+00:00;
+        response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+        Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27.
+        Secondary ontology mappings and parent/variant relationships were preserved,
+        not validated by this amount evidence.'
+  - preferred_term: CoCl2 x 6 H2O
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/369
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 4,
+                                "compound": "CoCl2 x 6 H2O",
+                                "compound_id": 38,
+                                "amount": 0.2,
+                                "unit": "g",
+                                "g_l": 0.2,
+                                "mmol_l": 1.54037,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[3].concentration (relocate), locator=$.data.solutions[1].recipe[3]:
+        Source solution 25 (Trace element solution SL-6) explicitly reports g_l=0.2.
+        Arithmetic check: 0.2 g; provider volume 1000 ml; computed 0.2 g/L. Additional
+        exact value at $.data.solutions[1].volume (ml): 1000. The numeric value and
+        chemical mappings are preserved. This supports the provider-declared preparation
+        concentration, not an independently measured final volume or downstream dilution.
+        Relocated from ingredients[11] into the explicitly linked stock; it is not
+        a direct receiving-medium concentration. Source retrieved 2026-10-07T10:46:03.446673+00:00;
+        response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+        Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27.
+        Secondary ontology mappings and parent/variant relationships were preserved,
+        not validated by this amount evidence.'
+  - preferred_term: CuCl2 x 2 H2O
+    term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/369
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 5,
+                                "compound": "CuCl2 x 2 H2O",
+                                "compound_id": 39,
+                                "amount": 0.01,
+                                "unit": "g",
+                                "g_l": 0.01,
+                                "mmol_l": 0.0586569,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[4].concentration (relocate), locator=$.data.solutions[1].recipe[4]:
+        Source solution 25 (Trace element solution SL-6) explicitly reports g_l=0.01.
+        Arithmetic check: 0.01 g; provider volume 1000 ml; computed 0.01 g/L. Additional
+        exact value at $.data.solutions[1].volume (ml): 1000. The numeric value and
+        chemical mappings are preserved. This supports the provider-declared preparation
+        concentration, not an independently measured final volume or downstream dilution.
+        Relocated from ingredients[12] into the explicitly linked stock; it is not
+        a direct receiving-medium concentration. Source retrieved 2026-10-07T10:46:03.446673+00:00;
+        response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+        Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27.
+        Secondary ontology mappings and parent/variant relationships were preserved,
+        not validated by this amount evidence.'
+  - preferred_term: NiCl2 x 6 H2O
+    term:
+      id: CHEBI:34887
+      label: nickel dichloride
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:34887
+      label: nickel dichloride
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/369
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 6,
+                                "compound": "NiCl2 x 6 H2O",
+                                "compound_id": 40,
+                                "amount": 0.02,
+                                "unit": "g",
+                                "g_l": 0.02,
+                                "mmol_l": 0.154322,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[5].concentration (relocate), locator=$.data.solutions[1].recipe[5]:
+        Source solution 25 (Trace element solution SL-6) explicitly reports g_l=0.02.
+        Arithmetic check: 0.02 g; provider volume 1000 ml; computed 0.02 g/L. Additional
+        exact value at $.data.solutions[1].volume (ml): 1000. The numeric value and
+        chemical mappings are preserved. This supports the provider-declared preparation
+        concentration, not an independently measured final volume or downstream dilution.
+        Relocated from ingredients[13] into the explicitly linked stock; it is not
+        a direct receiving-medium concentration. Source retrieved 2026-10-07T10:46:03.446673+00:00;
+        response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+        Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27.
+        Secondary ontology mappings and parent/variant relationships were preserved,
+        not validated by this amount evidence.'
+  - preferred_term: Na2MoO4 x 2 H2O
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/369
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 7,
+                                "compound": "Na2MoO4 x 2 H2O",
+                                "compound_id": 9,
+                                "amount": 0.03,
+                                "unit": "g",
+                                "g_l": 0.03,
+                                "mmol_l": 0.123993,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[6].concentration (relocate), locator=$.data.solutions[1].recipe[6]:
+        Source solution 25 (Trace element solution SL-6) explicitly reports g_l=0.03.
+        Arithmetic check: 0.03 g; provider volume 1000 ml; computed 0.03 g/L. Additional
+        exact value at $.data.solutions[1].volume (ml): 1000. The numeric value and
+        chemical mappings are preserved. This supports the provider-declared preparation
+        concentration, not an independently measured final volume or downstream dilution.
+        Relocated from ingredients[14] into the explicitly linked stock; it is not
+        a direct receiving-medium concentration. Source retrieved 2026-10-07T10:46:03.446673+00:00;
+        response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+        Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27.
+        Secondary ontology mappings and parent/variant relationships were preserved,
+        not validated by this amount evidence.'
+  - preferred_term: Distilled water
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/369
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 8,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 1000,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[7].concentration (add), locator=$.data.solutions[1].recipe[7]:
+        Explicit 1000 ml water / 1000 ml per L = 1 L in this preparation batch. This
+        is an addition amount, not a claim of final volume, stock strength, or percent
+        basis. Source retrieved 2026-10-07T10:46:03.446673+00:00; response SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4.
+        Original DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27.
+        Secondary ontology mappings and parent/variant relationships were preserved,
+        not validated by this amount evidence.'
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/369
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 8,
+                            "solution": "Trace element solution SL-6",
+                            "solution_id": 25,
+                            "amount": 3,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+  explanation: 'solutions[0].concentration (add), locator=$.data.solutions[0].recipe[7]:
+    Explicit 3 ml / 1000 ml per L = 0.003 L per receiving batch. The exact solution_id
+    establishes this stock boundary; no final-volume dilution or dose from another
+    medium is inferred. Source retrieved 2026-10-07T10:46:03.446673+00:00; response
+    SHA256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4. Original
+    DSMZ PDF recipe chain visually cross-checked: 369, 261, 260, 27. Secondary ontology
+    mappings and parent/variant relationships were preserved, not validated by this
+    amount evidence.'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/369
+  title: 'MediaDive medium 369: BACILLUS TUSCIAE MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; response_sha256=277827f77ee3300702186ce005def6082e14461d46fdf7c9315086e0af039dd4;
+    individual authors and publication year not established. PDF copyright is not
+    a publication date.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium369.pdf
+  title: 'DSMZ medium 369: official recipe'
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    source_organization=DSMZ; accessed_on=2026-10-07; response_sha256=cb7da859a785ac99638a2590b988241221a2b035de782e05785182d565c24ade;
+    individual authors and publication year not established. PDF copyright is not
+    a publication date.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf
+  title: 'DSMZ medium 261: official recipe'
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    source_organization=DSMZ; accessed_on=2026-10-07; response_sha256=abea799d50da431e0446e012179e4ef6144c6f239cc8db830e33abafbcf33596;
+    individual authors and publication year not established. PDF copyright is not
+    a publication date.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf
+  title: 'DSMZ medium 260: official recipe'
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    source_organization=DSMZ; accessed_on=2026-10-07; response_sha256=ab78dd71cbd8d2d91832258c3cda9ccde3c6344d87b1ac791892c257691bf291;
+    individual authors and publication year not established. PDF copyright is not
+    a publication date.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf
+  title: 'DSMZ medium 27: official recipe'
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    source_organization=DSMZ; accessed_on=2026-10-07; response_sha256=e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9;
+    individual authors and publication year not established. PDF copyright is not
+    a publication date.

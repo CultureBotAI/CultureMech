@@ -1,0 +1,26 @@
+# Medium Concentration Review: VY MEDIUM
+
+- Record: data/normalized_yaml/bacterial/vy_medium.yaml
+- ID: CultureMech:001704
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `ea26bdccaf8c161e392ff3f6c318b008a0133347a676e98bf721a5c63076755f`
+- Proposed/result SHA256: `ea26bdccaf8c161e392ff3f6c318b008a0133347a676e98bf721a5c63076755f`
+- Source: https://mediadive.dsmz.de/rest/medium/577
+- Source SHA256: eef24994efd756760cfed069d8639e1cc7f56d02f76c44c404d16614275085ed
+- Retrieved: 2026-10-07T12:15:53.083386+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: reviewed; unchanged; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `ingredients[0].concentration` | Distilled water | {"unit": "L", "value": "1.0"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/577 | unknown / not asserted | unknown / not asserted | Main ingredient inventory differs from source (excluding explicitly reported solvent/optional gaps): Veal infusion broth, Veal infusion broth (Difco 0344), Yeast extract, Yeast extract (Difco) | unchanged |
+| `ingredients[1].concentration` | Veal infusion broth (Difco 0344) | {"unit": "G_PER_L", "value": "25.0"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/577 | unknown / not asserted | unknown / not asserted | Main ingredient inventory differs from source (excluding explicitly reported solvent/optional gaps): Veal infusion broth, Veal infusion broth (Difco 0344), Yeast extract, Yeast extract (Difco) | unchanged |
+| `ingredients[2].concentration` | Yeast extract (Difco) | {"unit": "G_PER_L", "value": "5.0"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/577 | unknown / not asserted | unknown / not asserted | Main ingredient inventory differs from source (excluding explicitly reported solvent/optional gaps): Veal infusion broth, Veal infusion broth (Difco 0344), Yeast extract, Yeast extract (Difco) | unchanged |
+| `source.data.solutions[0].recipe[0]` | Veal infusion broth | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/577 | {<br>                        "recipe_order": 1,<br>                        "compound": "Veal infusion broth",<br>                        "compound_id": 579,<br>                        "attribute": "Difco 0344",<br>                        "amount": 25,<br>                        "unit": "g",<br>                        "g_l": 25,<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[0] | Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded. | unchanged |
+| `source.data.solutions[0].recipe[1]` | Yeast extract | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/577 | {<br>                        "recipe_order": 2,<br>                        "compound": "Yeast extract",<br>                        "compound_id": 16,<br>                        "attribute": "Difco",<br>                        "amount": 5,<br>                        "unit": "g",<br>                        "g_l": 5,<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[1] | Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded. | unchanged |
+| `source.data.solutions[0].recipe[2]` | Distilled water | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/577 | {<br>                        "recipe_order": 3,<br>                        "compound": "Distilled water",<br>                        "compound_id": 4,<br>                        "amount": 1000,<br>                        "unit": "ml",<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[2] | Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded. | unchanged |
+| `source.data.solutions[0].steps[0]` | preparation context | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/577 | {<br>                        "step": "Adjust pH to 7.2."<br>                    } | $.data.solutions[0].steps[0] | Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose. | unchanged |

@@ -1,0 +1,63 @@
+{
+  "terminal": true,
+  "phase": "baseline",
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "independent-preview",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/20261008-togo-first-pairs/audit.py",
+        "--out",
+        "reports/ingredient_concentration_curation/20261008-togo-first-pairs/preview-v2-audit.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-baseline-independent-preview.log",
+      "artifact": null
+    },
+    {
+      "name": "schema",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/linkml-validate",
+        "--schema",
+        "src/culturemech/schema/culturemech.yaml",
+        "--target-class",
+        "MediaRecipe",
+        "data/normalized_yaml/archaea/TOGO_M1001_Neutral_Oligotrophic_Haloarchaeal_Medium_NO.3.yaml",
+        "data/normalized_yaml/archaea/TOGO_M1002_Neutral_Oligotrophic_Haloarchaeal_Medium_NO.3.yaml",
+        "data/normalized_yaml/archaea/TOGO_M1023_Halorhabdus_Segorensis_Medium.yaml",
+        "data/normalized_yaml/archaea/TOGO_M1024_Halorhabdus_Segorensis_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-baseline-schema.log",
+      "artifact": null
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-baseline-strict.log",
+      "artifact": null
+    },
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_togo_first_pair_concentrations.py",
+        "tests/test_record_io.py",
+        "tests/test_concentration_plausibility.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/togo-first-pairs-baseline-tests.log",
+      "artifact": null
+    }
+  ]
+}

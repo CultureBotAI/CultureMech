@@ -16,6 +16,33 @@ composition:
     label: ammonium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4335
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "NH4H2PO4",
+                      "compound_id": 413,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.46,
+                      "unit": "g",
+                      "g_l": 0.474716,
+                      "mmol_l": 4.12689,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (NH4H2PO4)
+      in MediaDive solution 4335; locator=$.data.recipe[0] (compound_id=413). Provider
+      explicitly reports g_l=0.474716. Arithmetic check: 0.46 g * 1 g/g / (969 ml
+      / 1000 ml per L) = 0.4747162022703818369453044376 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 969. Retrieved 2026-10-07T09:42:49.876637+00:00;
+      response SHA256=6cf2ef5641264fdef6bf3e63a5ca97ab9b420597cf30aeac502f426cd0a55b4c.'
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.505676'
@@ -28,10 +55,37 @@ composition:
     label: magnesium sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4335
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "MgSO4 x 7 H2O",
+                      "compound_id": 8,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.49,
+                      "unit": "g",
+                      "g_l": 0.505676,
+                      "mmol_l": 2.05162,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (MgSO4 x
+      7 H2O) in MediaDive solution 4335; locator=$.data.recipe[1] (compound_id=8).
+      Provider explicitly reports g_l=0.505676. Arithmetic check: 0.49 g * 1 g/g /
+      (969 ml / 1000 ml per L) = 0.5056759545923632610939112487 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      969. Retrieved 2026-10-07T09:42:49.876637+00:00; response SHA256=6cf2ef5641264fdef6bf3e63a5ca97ab9b420597cf30aeac502f426cd0a55b4c.'
 - preferred_term: Distilled water
   concentration:
-    value: '1000.0000000000001'
-    unit: PERCENT_V_V
+    value: '0.969'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -40,6 +94,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4335
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 969,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Distilled
+      water) in MediaDive solution 4335; locator=$.data.recipe[2] (compound_id=4).
+      Source water addition is 969 ml per prepared batch: 969 / 1000 = 0.969 L. No
+      source preparation step gives a competing make-up instruction. This is a batch
+      dose, not a volume percentage; no final-volume or solvent-density assumption
+      is made. Additional exact excerpt at $.data.volume: "volume": 969. Retrieved
+      2026-10-07T09:42:49.876637+00:00; response SHA256=6cf2ef5641264fdef6bf3e63a5ca97ab9b420597cf30aeac502f426cd0a55b4c.'
 preparation_notes: 'Original volume: 969 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:30.765555Z'
@@ -74,6 +153,18 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-10-07T09:46:43.027838+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/4335
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.474716"}
+    -> {"unit": "G_PER_L", "value": "0.474716"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.505676"} -> {"unit": "G_PER_L", "value": "0.505676"}
+    (evidence_only); composition[2].concentration: {"unit": "PERCENT_V_V", "value":
+    "1000.0000000000001"} -> {"unit": "L", "value": "0.969"} (correct)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -82,3 +173,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/4335
+  title: 'MediaDive solution 4335: Basal solution'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=6cf2ef5641264fdef6bf3e63a5ca97ab9b420597cf30aeac502f426cd0a55b4c;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

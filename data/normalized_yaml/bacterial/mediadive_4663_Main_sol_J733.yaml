@@ -28,6 +28,32 @@ composition:
     label: sodium chloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4663
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "g",
+                      "g_l": 100,
+                      "mmol_l": 1711.16,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (NaCl) in
+      MediaDive solution 4663; locator=$.data.recipe[1] (compound_id=43). Provider
+      explicitly reports g_l=100. Arithmetic check: 100 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 100 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:46:11.269625+00:00; response SHA256=ed9de3763921319a1d937865f1693f1ad8134ee9e13638fe9db16cf929e4e991.'
 curation_history:
 - timestamp: '2026-03-13T06:20:32.367662Z'
   curator: culturemech-id-assigner-v1.0
@@ -56,6 +82,15 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:46:43.027838+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/4663
+  changes: 'composition[1].concentration: {"unit": "G_PER_L", "value": "100"} -> {"unit":
+    "G_PER_L", "value": "100"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -64,3 +99,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/4663
+  title: 'MediaDive solution 4663: Main sol. J733'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=ed9de3763921319a1d937865f1693f1ad8134ee9e13638fe9db16cf929e4e991;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

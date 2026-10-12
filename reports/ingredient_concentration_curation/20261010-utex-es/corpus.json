@@ -1,0 +1,153 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "corpus",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/corpus-000.log",
+      "log_sha256": "e7a48e6e8ed0f78d7fc573bee52fa53a11fd99dd36405642430dd11568deb251"
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/corpus-001.log",
+      "log_sha256": "eb7360e4d6ac289a3c075ae3f26d2a32b53e6b2da8d03073cfda3e697295cbc0"
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/corpus-002.log",
+      "log_sha256": "f1aa6f9d98567175eea012854ad874f5743dc1c9baba240bba2b8e50add32ccc"
+    },
+    {
+      "command": [
+        "just",
+        "check-mim-label-index"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/corpus-003.log",
+      "log_sha256": "df0a76085c51b86963f1b33545ff48e844a4b36789c3efcd16d28885d55d71f7"
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/corpus-004.log",
+      "log_sha256": "09a2922082db841587410042dc33d7d3f72b2601f1d6b6f2b33322471ee47f2c"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/corpus-005.log",
+      "log_sha256": "2940559e5779584205dd516b1130af22a29e218ea5fe42063201b0625ae2828a"
+    }
+  ],
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "plan_sha256": "445e4809c5c8ac1b162ea7a26bd8eaa25a325bcb3b53eae93d2613bb483fe13e",
+  "code_sha256": {
+    "scripts/review_utex_es_concentrations.py": "95f34b1c86b1caf4c7294da5eed917417779f21d78feafda5e11ca2c7a6bd72e",
+    "tests/test_utex_es_concentrations.py": "450cea1d70cc63017a088474fd6ff9caaac4b1a4916f2d0b68d2f0df33c16eb2"
+  },
+  "inventory_before_sha256": "da9766fa2581380e36cf1bef84b6e7fede418c8c70d76e9e5d7bb922e34d7d3b",
+  "source_checks": [
+    {
+      "url": "https://utex.org/products/enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/es-over-10-enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/es-over-2-enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/es-over-4-enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/one-half-enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/two-thirds-enriched-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/enrichment-solution-for-seawater-medium",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/ES-Fe-solution",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/p-ii-metal-solution",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/vitamin-b-12",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/biotin-vitamin-solution",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://utex.org/products/thiamine-vitamin-solution",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:17439",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:49105",
+      "capture_unchanged": true
+    },
+    {
+      "url": "https://www.sigmaaldrich.com/US/en/product/sigma/t1270",
+      "mode": "web_tool_inspected_excerpt; not a complete HTTP capture",
+      "automatic_capture_pass": false
+    },
+    {
+      "url": "https://www.sigmaaldrich.com/US/en/product/sigma/50020",
+      "mode": "manually_inspected_web_tool_page; not a full HTTP capture",
+      "automatic_capture_pass": false
+    },
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:15978",
+      "mode": "manually_inspected_web_tool_page; not a full HTTP capture",
+      "automatic_capture_pass": false
+    }
+  ],
+  "manual_pdf_review_pages": 6,
+  "automatic_supplier_capture_pass_asserted": false,
+  "inventory_after_sha256": "da9766fa2581380e36cf1bef84b6e7fede418c8c70d76e9e5d7bb922e34d7d3b",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

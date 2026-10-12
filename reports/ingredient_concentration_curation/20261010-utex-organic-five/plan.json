@@ -1,0 +1,654 @@
+{
+  "source_sha256": "a6f04f14f656cc1b9c8f7d7d65e0f7a30d7b762c6acb09e629c5fc6a25a6dd80",
+  "records": [
+    {
+      "path": "data/normalized_yaml/algae/Malt_Medium.yaml",
+      "id": "CultureMech:000175",
+      "reference": "https://utex.org/products/malt-medium",
+      "action": "CURATED_UTEX_ORGANIC_MEDIUM_INPUT_BASES_AND_CONCENTRATION_EVIDENCE",
+      "before_text": "id: CultureMech:000175\nname: malt_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: Malt Medium\n  term:\n    id: UTEX:malt-medium\n    label: Malt Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for freshwater\n  algae cultivation.\nnotes: UTEX prepares Malt Medium with 33.6 g malt extract per 500 mL dH2O and autoclaves\n  for no longer than 15 minutes.\ningredients:\n- preferred_term: Malt extract\n  concentration:\n    value: '67.2'\n    unit: G_PER_L\n  term:\n    id: FOODON:03301056\n    label: Malt extract\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: M-0383\n  notes: Converted from 33.6 g/500 mL dH2O in the UTEX recipe.\n  nutritional_roles:\n  - CARBON_SOURCE\n  - NITROGEN_SOURCE\nsolutions: []\npreparation_steps:\n- step_number: 1\n  action: DISSOLVE\n  description: Dissolve 33.6 g malt extract in 500 mL dH2O.\n- step_number: 2\n  action: AUTOCLAVE\n  description: Cover and autoclave for no longer than 15 minutes to avoid caramelizing\n    sugars.\n- step_number: 3\n  action: STORE\n  description: Store at refrigerator temperature.\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: malt-medium, URL: https://utex.org/products/malt-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:53.423657Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000175'\n- timestamp: '2026-03-17T19:45:04.358804+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Malt Medium\" to \"malt_medium\" for consistent matching\n- timestamp: '2026-05-16T09:02:56.026345+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.230970+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:30.848176+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 1 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_remaining_score50.py\n  action: RESOLVED_UTEX_SCORE50_ALGAE_GRAPH\n  changes: Grounded remaining score-50 UTEX algae recipe components\n  source: https://utex.org/products/malt-medium\n  notes: UTEX prepares Malt Medium with 33.6 g malt extract per 500 mL dH2O and autoclaves\n    for no longer than 15 minutes.\nreferences:\n- reference: UTEX:malt-medium\n- reference: https://utex.org/products/malt-medium\noriginal_name: Malt Medium\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\n",
+      "before_sha256": "ec1cd464850a1c7eff6e1c8cb8ecac5919216619d9e829597de3041174ee85cd",
+      "after_text": "id: CultureMech:000175\nname: malt_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: Malt Medium\n  term:\n    id: UTEX:malt-medium\n    label: Malt Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for freshwater\n  algae cultivation.\nnotes: UTEX prepares Malt Medium with 33.6 g malt extract per 500 mL dH2O and autoclaves\n  for no longer than 15 minutes.\ningredients:\n- preferred_term: Malt extract\n  concentration:\n    value: '67.2'\n    unit: G_PER_L\n    per_volume: per liter of starting dH2O before malt extract addition\n  term:\n    id: FOODON:03301056\n    label: Malt extract\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: M-0383\n  notes: The source adds 33.6 g malt extract to 500 mL dH2O. The retained 67.2 g/L\n    denotes mass per liter of starting water, not an independently established final-medium\n    concentration.\n  nutritional_roles:\n  - CARBON_SOURCE\n  - NITROGEN_SOURCE\n  evidence:\n  - reference: https://utex.org/products/malt-medium\n    supports: SUPPORT\n    snippet: 33.6 g/500 mL dH2O\n    explanation: 'Supports ingredients[0].concentration for Malt extract. Retain the\n      numeric value with exact source evidence and any explicitly stated preparation\n      basis. 33.6 g / 0.500 L starting water = 67.2 g per liter of starting water.\n      The heading says 500 mL total but no final makeup instruction is given; final\n      concentration remains unresolved. Separate basis excerpt: ''For 500 mL Total''.\n      Locator: #recipe, composition table and Directions. Component cell: ''Malt extract(Sigma\n      M-0383)''; amount cell: ''33.6 g/500 mL dH2O''.'\nsolutions: []\npreparation_steps:\n- step_number: 1\n  action: DISSOLVE\n  description: Dissolve 33.6 g malt extract in 500 mL dH2O.\n- step_number: 2\n  action: AUTOCLAVE\n  description: Cover and autoclave for no longer than 15 minutes to avoid caramelizing\n    sugars.\n- step_number: 3\n  action: STORE\n  description: Store at refrigerator temperature.\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: malt-medium, URL: https://utex.org/products/malt-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:53.423657Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000175'\n- timestamp: '2026-03-17T19:45:04.358804+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Malt Medium\" to \"malt_medium\" for consistent matching\n- timestamp: '2026-05-16T09:02:56.026345+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.230970+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:30.848176+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 1 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_remaining_score50.py\n  action: RESOLVED_UTEX_SCORE50_ALGAE_GRAPH\n  changes: Grounded remaining score-50 UTEX algae recipe components\n  source: https://utex.org/products/malt-medium\n  notes: UTEX prepares Malt Medium with 33.6 g malt extract per 500 mL dH2O and autoclaves\n    for no longer than 15 minutes.\n- timestamp: '2026-10-10T21:08:21.569593+00:00'\n  curator: codex\n  action: CURATED_UTEX_ORGANIC_MEDIUM_INPUT_BASES_AND_CONCENTRATION_EVIDENCE\n  notes: Exact source-URL and snippet evidence for input doses, optional agar and\n    retained concentrations. Chemical identity mappings and unrelated growth/role\n    claims are unchanged, not independently certified. No taxa-media association added.\n  source: https://utex.org/products/malt-medium\n  changes: '{\"claims\": [{\"basis_snippet\": \"For 500 mL Total\", \"calculation\": \"33.6\n    g / 0.500 L starting water = 67.2 g per liter of starting water. The heading says\n    500 mL total but no final makeup instruction is given; final concentration remains\n    unresolved.\", \"component_snippet\": \"Malt extract(Sigma M-0383)\", \"decision\": \"Retain\n    the numeric value with exact source evidence and any explicitly stated preparation\n    basis.\", \"field\": \"ingredients[0].concentration\", \"ingredient\": \"Malt extract\",\n    \"locator\": \"#recipe, composition table and Directions\", \"old\": {\"unit\": \"G_PER_L\",\n    \"value\": \"67.2\"}, \"proposed\": {\"per_volume\": \"per liter of starting dH2O before\n    malt extract addition\", \"unit\": \"G_PER_L\", \"value\": \"67.2\"}, \"reference\": \"https://utex.org/products/malt-medium\",\n    \"snippet\": \"33.6 g/500 mL dH2O\", \"source_amount\": \"33.6 g/500 mL dH2O\", \"source_table_column\":\n    2, \"source_table_row\": 1, \"status\": \"correct\"}, {\"basis_snippet\": \"For 500 mL\n    Total\", \"calculation\": \"Literal source batch dose; no universal final concentration\n    is derived.\", \"decision\": \"Preserve as an inline optional formulation, not a liquid-parent\n    ingredient.\", \"field\": \"variants[0].modifications\", \"ingredient\": \"agar\", \"locator\":\n    \"#recipe, Directions, optional agar instruction\", \"old\": null, \"proposed\": [\"Add\n    7.5 g agar to the source batch starting with 500 mL dH2O; do not mix. This is\n    an input dose, not a measured final-volume concentration.\"], \"reference\": \"https://utex.org/products/malt-medium\",\n    \"snippet\": \"For 1.5% agar medium add 7.5 g of agar into the flask; do not mix.\",\n    \"status\": \"add\"}], \"counts\": {\"bibliographic_entries_enriched\": 1, \"ingredient_context_notes_corrected\":\n    1, \"ingredient_dose_basis_corrections\": 1, \"inline_variant_options_added\": 1,\n    \"new_curation_history\": 1, \"new_evidence\": 2}}'\nreferences:\n- reference: UTEX:malt-medium\n- reference: https://utex.org/products/malt-medium\n  title: Malt Medium | UTEX Culture Collection of Algae\n  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-10; Named authors, publication year and DOI not established.\noriginal_name: Malt Medium\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\nvariants:\n- name: Malt Medium with agar\n  relationship: SUPPLEMENTED_VARIANT\n  description: Optional source-listed agar formulation; the parent remains liquid.\n  modifications:\n  - Add 7.5 g agar to the source batch starting with 500 mL dH2O; do not mix. This\n    is an input dose, not a measured final-volume concentration.\n  purpose: Preserve the separately specified solid formulation\n  evidence:\n  - reference: https://utex.org/products/malt-medium\n    supports: SUPPORT\n    snippet: For 1.5% agar medium add 7.5 g of agar into the flask; do not mix.\n    explanation: Supports variants[0].modifications only. The source labels this the\n      1.5% agar formulation; no new measured final volume after agar addition is claimed.\n      No agar is added to the liquid parent.\n",
+      "after_sha256": "ccd72158dddffb1f292d7cede17497b34ce47c56f4e12a60b981b3b873a55ff6",
+      "claims": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Malt extract",
+          "old": {
+            "value": "67.2",
+            "unit": "G_PER_L"
+          },
+          "reference": "https://utex.org/products/malt-medium",
+          "status": "correct",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "67.2",
+            "unit": "G_PER_L",
+            "per_volume": "per liter of starting dH2O before malt extract addition"
+          },
+          "snippet": "33.6 g/500 mL dH2O",
+          "basis_snippet": "For 500 mL Total",
+          "component_snippet": "Malt extract(Sigma M-0383)",
+          "source_amount": "33.6 g/500 mL dH2O",
+          "source_table_row": 1,
+          "source_table_column": 2,
+          "calculation": "33.6 g / 0.500 L starting water = 67.2 g per liter of starting water. The heading says 500 mL total but no final makeup instruction is given; final concentration remains unresolved.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        },
+        {
+          "field": "variants[0].modifications",
+          "ingredient": "agar",
+          "old": null,
+          "proposed": [
+            "Add 7.5 g agar to the source batch starting with 500 mL dH2O; do not mix. This is an input dose, not a measured final-volume concentration."
+          ],
+          "status": "add",
+          "reference": "https://utex.org/products/malt-medium",
+          "snippet": "For 1.5% agar medium add 7.5 g of agar into the flask; do not mix.",
+          "basis_snippet": "For 500 mL Total",
+          "locator": "#recipe, Directions, optional agar instruction",
+          "calculation": "Literal source batch dose; no universal final concentration is derived.",
+          "decision": "Preserve as an inline optional formulation, not a liquid-parent ingredient."
+        }
+      ],
+      "existing_claim_rows": 1,
+      "new_claim_rows": 1,
+      "counts": {
+        "ingredient_dose_basis_corrections": 1,
+        "inline_variant_options_added": 1,
+        "ingredient_context_notes_corrected": 1,
+        "new_evidence": 2,
+        "bibliographic_entries_enriched": 1,
+        "new_curation_history": 1
+      }
+    },
+    {
+      "path": "data/normalized_yaml/algae/Euglena_Medium.yaml",
+      "id": "CultureMech:000168",
+      "reference": "https://utex.org/products/euglena-medium",
+      "action": "CURATED_UTEX_ORGANIC_MEDIUM_INPUT_BASES_AND_CONCENTRATION_EVIDENCE",
+      "before_text": "id: CultureMech:000168\nname: euglena_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: Euglena Medium\n  term:\n    id: UTEX:euglena-medium\n    label: Euglena Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for freshwater\n  algae cultivation.\nnotes: UTEX prepares Euglena Medium from dH2O, sodium acetate, beef extract, tryptone,\n  yeast extract, and calcium chloride dihydrate.\ningredients:\n- preferred_term: dH2O\n  concentration:\n    value: '1000'\n    unit: ML_PER_L\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n  notes: UTEX starts the 1 L Euglena Medium recipe with approximately 950 mL dH2O.\n- preferred_term: Sodium acetate\n  concentration:\n    value: '12.2'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:32954\n    label: sodium acetate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32954\n    label: sodium acetate\n  supplier_catalog:\n    supplier_name: Fisher\n    catalog_number: BP 333\n  notes: UTEX lists 1 g/L sodium acetate, for 12.2 mM final.\n  nutritional_roles:\n  - CARBON_SOURCE\n- preferred_term: Beef extract\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  term:\n    id: FOODON:03302088\n    label: beef extract\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: B-4888\n  notes: UTEX lists 1 g/L beef extract.\n  nutritional_roles:\n  - CARBON_SOURCE\n  - NITROGEN_SOURCE\n- preferred_term: Tryptone\n  concentration:\n    value: '2'\n    unit: G_PER_L\n  term:\n    id: MICRO:0000182\n    label: Tryptone\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: T 9410\n  notes: UTEX lists 2 g/L Tryptone.\n  nutritional_roles:\n  - CARBON_SOURCE\n  - NITROGEN_SOURCE\n- preferred_term: Yeast extract\n  concentration:\n    value: '2'\n    unit: G_PER_L\n  term:\n    id: FOODON:03315426\n    label: yeast extract\n  supplier_catalog:\n    supplier_name: Bacto\n    catalog_number: Difco\n  notes: UTEX lists 2 g/L yeast extract.\n  nutritional_roles:\n  - CARBON_SOURCE\n  - NITROGEN_SOURCE\n- preferred_term: CaCl2 x 2 H2O\n  concentration:\n    value: '0.07'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: C-3881\n  notes: UTEX lists 0.01 g/L CaCl2 x 2 H2O, for 0.07 mM final.\nsolutions: []\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: To approximately 950 mL dH2O, add components in the listed order while\n    stirring continuously.\n- step_number: 2\n  action: MIX\n  description: Bring the total volume to 1 L with dH2O.\n- step_number: 3\n  action: AUTOCLAVE\n  description: Cover and autoclave the medium.\n- step_number: 4\n  action: STORE\n  description: Store at refrigerator temperature.\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: euglena-medium, URL: https://utex.org/products/euglena-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:53.385749Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000168'\n- timestamp: '2026-03-17T19:45:04.324574+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Euglena Medium\" to \"euglena_medium\" for consistent\n    matching\n- timestamp: '2026-05-16T09:02:55.995909+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.198139+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:30.800498+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 5 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_simple_score35.py\n  action: RESOLVED_UTEX_SIMPLE_SCORE35\n  changes: Grounded simple UTEX score-35 algal components\n  source: https://utex.org/products/euglena-medium\n  notes: UTEX prepares Euglena Medium from dH2O, sodium acetate, beef extract, tryptone,\n    yeast extract, and calcium chloride dihydrate.\nreferences:\n- reference: UTEX:euglena-medium\n- reference: https://utex.org/products/euglena-medium\noriginal_name: Euglena Medium\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\n",
+      "before_sha256": "a0415c83913f3074dbd5b17616db70c8bfc73784f39cad60da9a3e7779d6db81",
+      "after_text": "id: CultureMech:000168\nname: euglena_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: Euglena Medium\n  term:\n    id: UTEX:euglena-medium\n    label: Euglena Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for freshwater\n  algae cultivation.\nnotes: UTEX prepares Euglena Medium from dH2O, sodium acetate, beef extract, tryptone,\n  yeast extract, and calcium chloride dihydrate.\ningredients:\n- preferred_term: dH2O\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n  notes: Start with approximately 950 mL dH2O, then bring the supplemented medium\n    to 1 L total with additional dH2O. The exact combined water dose is not specified.\n  evidence:\n  - reference: https://utex.org/products/euglena-medium\n    supports: SUPPORT\n    snippet: Bring the total volume to 1 L with dH2O.\n    explanation: 'Supports ingredients[0].notes for dH2O. Remove the unsupported final-fraction\n      slot while retaining the source preparation input in notes. No final water/carrier\n      fraction can be calculated from an initial portion and unspecified makeup dose.\n      Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition table\n      and Directions.'\n- preferred_term: Sodium acetate\n  concentration:\n    value: '12.2'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:32954\n    label: sodium acetate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32954\n    label: sodium acetate\n  supplier_catalog:\n    supplier_name: Fisher\n    catalog_number: BP 333\n  notes: UTEX lists 1 g/L sodium acetate, for 12.2 mM final.\n  nutritional_roles:\n  - CARBON_SOURCE\n  evidence:\n  - reference: https://utex.org/products/euglena-medium\n    supports: SUPPORT\n    snippet: 12.2 mM\n    explanation: 'Supports ingredients[1].concentration for Sodium acetate. Retain\n      the numeric value with exact source evidence and any explicitly stated preparation\n      basis. Directly retain the source table value and unit; no mass/molar conversion\n      is performed. The printed rounded molarity is a source assertion, not an independent\n      certification of molecular weight or supplied chemical identity. Separate basis\n      excerpt: ''For 1 L Total''. Locator: #recipe, composition table and Directions.\n      Component cell: ''Sodium acetate(Fisher BP 333)''; amount cell: ''1 g/L''.'\n- preferred_term: Beef extract\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  term:\n    id: FOODON:03302088\n    label: beef extract\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: B-4888\n  notes: UTEX lists 1 g/L beef extract.\n  nutritional_roles:\n  - CARBON_SOURCE\n  - NITROGEN_SOURCE\n  evidence:\n  - reference: https://utex.org/products/euglena-medium\n    supports: SUPPORT\n    snippet: 1 g/L\n    explanation: 'Supports ingredients[2].concentration for Beef extract. Retain the\n      numeric value with exact source evidence and any explicitly stated preparation\n      basis. Directly retain the source table value and unit; no mass/molar conversion\n      is performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition\n      table and Directions. Component cell: ''Beef extract(Sigma B-4888)''; amount\n      cell: ''1 g/L''.'\n- preferred_term: Tryptone\n  concentration:\n    value: '2'\n    unit: G_PER_L\n  term:\n    id: MICRO:0000182\n    label: Tryptone\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: T 9410\n  notes: UTEX lists 2 g/L Tryptone.\n  nutritional_roles:\n  - CARBON_SOURCE\n  - NITROGEN_SOURCE\n  evidence:\n  - reference: https://utex.org/products/euglena-medium\n    supports: SUPPORT\n    snippet: 2 g/L\n    explanation: 'Supports ingredients[3].concentration for Tryptone. Retain the numeric\n      value with exact source evidence and any explicitly stated preparation basis.\n      Directly retain the source table value and unit; no mass/molar conversion is\n      performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition\n      table and Directions. Component cell: ''Tryptone(Sigma T 9410))''; amount cell:\n      ''2 g/L''.'\n- preferred_term: Yeast extract\n  concentration:\n    value: '2'\n    unit: G_PER_L\n  term:\n    id: FOODON:03315426\n    label: yeast extract\n  supplier_catalog:\n    supplier_name: Bacto\n    catalog_number: Difco\n  notes: UTEX lists 2 g/L yeast extract.\n  nutritional_roles:\n  - CARBON_SOURCE\n  - NITROGEN_SOURCE\n  evidence:\n  - reference: https://utex.org/products/euglena-medium\n    supports: SUPPORT\n    snippet: 2 g/L\n    explanation: 'Supports ingredients[4].concentration for Yeast extract. Retain\n      the numeric value with exact source evidence and any explicitly stated preparation\n      basis. Directly retain the source table value and unit; no mass/molar conversion\n      is performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition\n      table and Directions. Component cell: ''Yeast extract(Bacto, Difco)''; amount\n      cell: ''2 g/L''.'\n- preferred_term: CaCl2 x 2 H2O\n  concentration:\n    value: '0.07'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: C-3881\n  notes: UTEX lists 0.01 g/L CaCl2 x 2 H2O, for 0.07 mM final.\n  evidence:\n  - reference: https://utex.org/products/euglena-medium\n    supports: SUPPORT\n    snippet: 0.07 mM\n    explanation: 'Supports ingredients[5].concentration for CaCl2 x 2 H2O. Retain\n      the numeric value with exact source evidence and any explicitly stated preparation\n      basis. Directly retain the source table value and unit; no mass/molar conversion\n      is performed. The printed rounded molarity is a source assertion, not an independent\n      certification of molecular weight or supplied chemical identity. Separate basis\n      excerpt: ''For 1 L Total''. Locator: #recipe, composition table and Directions.\n      Component cell: ''CaCl2\u20222H2O(Sigma C-3881)''; amount cell: ''0.01 g/L''.'\nsolutions: []\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: To approximately 950 mL dH2O, add components in the listed order while\n    stirring continuously.\n- step_number: 2\n  action: MIX\n  description: Bring the total volume to 1 L with dH2O.\n- step_number: 3\n  action: AUTOCLAVE\n  description: Cover and autoclave the medium.\n- step_number: 4\n  action: STORE\n  description: Store at refrigerator temperature.\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: euglena-medium, URL: https://utex.org/products/euglena-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:53.385749Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000168'\n- timestamp: '2026-03-17T19:45:04.324574+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Euglena Medium\" to \"euglena_medium\" for consistent\n    matching\n- timestamp: '2026-05-16T09:02:55.995909+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.198139+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:30.800498+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 5 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_simple_score35.py\n  action: RESOLVED_UTEX_SIMPLE_SCORE35\n  changes: Grounded simple UTEX score-35 algal components\n  source: https://utex.org/products/euglena-medium\n  notes: UTEX prepares Euglena Medium from dH2O, sodium acetate, beef extract, tryptone,\n    yeast extract, and calcium chloride dihydrate.\n- timestamp: '2026-10-10T21:08:21.569593+00:00'\n  curator: codex\n  action: CURATED_UTEX_ORGANIC_MEDIUM_INPUT_BASES_AND_CONCENTRATION_EVIDENCE\n  notes: Exact source-URL and snippet evidence for input doses, optional agar and\n    retained concentrations. Chemical identity mappings and unrelated growth/role\n    claims are unchanged, not independently certified. No taxa-media association added.\n  source: https://utex.org/products/euglena-medium\n  changes: '{\"claims\": [{\"basis_snippet\": \"For 1 L Total\", \"calculation\": \"No final\n    water/carrier fraction can be calculated from an initial portion and unspecified\n    makeup dose.\", \"decision\": \"Remove the unsupported final-fraction slot while retaining\n    the source preparation input in notes.\", \"field\": \"ingredients[0].concentration\",\n    \"ingredient\": \"dH2O\", \"locator\": \"#recipe, composition table and Directions\",\n    \"old\": {\"unit\": \"ML_PER_L\", \"value\": \"1000\"}, \"proposed\": null, \"proposed_field\":\n    \"ingredients[0].notes\", \"reference\": \"https://utex.org/products/euglena-medium\",\n    \"snippet\": \"Bring the total volume to 1 L with dH2O.\", \"status\": \"unsupported\"},\n    {\"basis_snippet\": \"For 1 L Total\", \"calculation\": \"Directly retain the source\n    table value and unit; no mass/molar conversion is performed. The printed rounded\n    molarity is a source assertion, not an independent certification of molecular\n    weight or supplied chemical identity.\", \"component_snippet\": \"Sodium acetate(Fisher\n    BP 333)\", \"decision\": \"Retain the numeric value with exact source evidence and\n    any explicitly stated preparation basis.\", \"field\": \"ingredients[1].concentration\",\n    \"ingredient\": \"Sodium acetate\", \"locator\": \"#recipe, composition table and Directions\",\n    \"old\": {\"unit\": \"MILLIMOLAR\", \"value\": \"12.2\"}, \"proposed\": {\"unit\": \"MILLIMOLAR\",\n    \"value\": \"12.2\"}, \"reference\": \"https://utex.org/products/euglena-medium\", \"snippet\":\n    \"12.2 mM\", \"source_amount\": \"1 g/L\", \"source_table_column\": 4, \"source_table_row\":\n    1, \"status\": \"evidence_only\"}, {\"basis_snippet\": \"For 1 L Total\", \"calculation\":\n    \"Directly retain the source table value and unit; no mass/molar conversion is\n    performed.\", \"component_snippet\": \"Beef extract(Sigma B-4888)\", \"decision\": \"Retain\n    the numeric value with exact source evidence and any explicitly stated preparation\n    basis.\", \"field\": \"ingredients[2].concentration\", \"ingredient\": \"Beef extract\",\n    \"locator\": \"#recipe, composition table and Directions\", \"old\": {\"unit\": \"G_PER_L\",\n    \"value\": \"1\"}, \"proposed\": {\"unit\": \"G_PER_L\", \"value\": \"1\"}, \"reference\": \"https://utex.org/products/euglena-medium\",\n    \"snippet\": \"1 g/L\", \"source_amount\": \"1 g/L\", \"source_table_column\": 2, \"source_table_row\":\n    2, \"status\": \"evidence_only\"}, {\"basis_snippet\": \"For 1 L Total\", \"calculation\":\n    \"Directly retain the source table value and unit; no mass/molar conversion is\n    performed.\", \"component_snippet\": \"Tryptone(Sigma T 9410))\", \"decision\": \"Retain\n    the numeric value with exact source evidence and any explicitly stated preparation\n    basis.\", \"field\": \"ingredients[3].concentration\", \"ingredient\": \"Tryptone\", \"locator\":\n    \"#recipe, composition table and Directions\", \"old\": {\"unit\": \"G_PER_L\", \"value\":\n    \"2\"}, \"proposed\": {\"unit\": \"G_PER_L\", \"value\": \"2\"}, \"reference\": \"https://utex.org/products/euglena-medium\",\n    \"snippet\": \"2 g/L\", \"source_amount\": \"2 g/L\", \"source_table_column\": 2, \"source_table_row\":\n    3, \"status\": \"evidence_only\"}, {\"basis_snippet\": \"For 1 L Total\", \"calculation\":\n    \"Directly retain the source table value and unit; no mass/molar conversion is\n    performed.\", \"component_snippet\": \"Yeast extract(Bacto, Difco)\", \"decision\": \"Retain\n    the numeric value with exact source evidence and any explicitly stated preparation\n    basis.\", \"field\": \"ingredients[4].concentration\", \"ingredient\": \"Yeast extract\",\n    \"locator\": \"#recipe, composition table and Directions\", \"old\": {\"unit\": \"G_PER_L\",\n    \"value\": \"2\"}, \"proposed\": {\"unit\": \"G_PER_L\", \"value\": \"2\"}, \"reference\": \"https://utex.org/products/euglena-medium\",\n    \"snippet\": \"2 g/L\", \"source_amount\": \"2 g/L\", \"source_table_column\": 2, \"source_table_row\":\n    4, \"status\": \"evidence_only\"}, {\"basis_snippet\": \"For 1 L Total\", \"calculation\":\n    \"Directly retain the source table value and unit; no mass/molar conversion is\n    performed. The printed rounded molarity is a source assertion, not an independent\n    certification of molecular weight or supplied chemical identity.\", \"component_snippet\":\n    \"CaCl2\\u20222H2O(Sigma C-3881)\", \"decision\": \"Retain the numeric value with exact\n    source evidence and any explicitly stated preparation basis.\", \"field\": \"ingredients[5].concentration\",\n    \"ingredient\": \"CaCl2 x 2 H2O\", \"locator\": \"#recipe, composition table and Directions\",\n    \"old\": {\"unit\": \"MILLIMOLAR\", \"value\": \"0.07\"}, \"proposed\": {\"unit\": \"MILLIMOLAR\",\n    \"value\": \"0.07\"}, \"reference\": \"https://utex.org/products/euglena-medium\", \"snippet\":\n    \"0.07 mM\", \"source_amount\": \"0.01 g/L\", \"source_table_column\": 4, \"source_table_row\":\n    5, \"status\": \"evidence_only\"}, {\"basis_snippet\": \"For 1 L Total\", \"calculation\":\n    \"Literal source batch dose; no universal final concentration is derived.\", \"decision\":\n    \"Preserve as an inline optional formulation, not a liquid-parent ingredient.\",\n    \"field\": \"variants[0].modifications\", \"ingredient\": \"agar\", \"locator\": \"#recipe,\n    Directions, optional agar instruction\", \"old\": null, \"proposed\": [\"After making\n    up the liquid recipe to 1 L, add 15 g agar; do not mix.\"], \"reference\": \"https://utex.org/products/euglena-medium\",\n    \"snippet\": \"For 1.5% agar medium add 15 g of agar into the flask; do not mix.\",\n    \"status\": \"add\"}], \"counts\": {\"bibliographic_entries_enriched\": 1, \"ingredient_context_notes_corrected\":\n    1, \"inline_variant_options_added\": 1, \"new_curation_history\": 1, \"new_evidence\":\n    7, \"unsupported_quantity_slots_removed\": 1}}'\nreferences:\n- reference: UTEX:euglena-medium\n- reference: https://utex.org/products/euglena-medium\n  title: Euglena Medium | UTEX Culture Collection of Algae\n  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-10; Named authors, publication year and DOI not established.\noriginal_name: Euglena Medium\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\nvariants:\n- name: Euglena Medium with agar\n  relationship: SUPPLEMENTED_VARIANT\n  description: Optional source-listed agar formulation; the parent remains liquid.\n  modifications:\n  - After making up the liquid recipe to 1 L, add 15 g agar; do not mix.\n  purpose: Preserve the separately specified solid formulation\n  evidence:\n  - reference: https://utex.org/products/euglena-medium\n    supports: SUPPORT\n    snippet: For 1.5% agar medium add 15 g of agar into the flask; do not mix.\n    explanation: Supports variants[0].modifications only. The source labels this the\n      1.5% agar formulation; no new measured final volume after agar addition is claimed.\n      No agar is added to the liquid parent.\n",
+      "after_sha256": "6039deb632108f0a728d85ef06dc94a497bac35c59828425c719d0a0f5e48d05",
+      "claims": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "dH2O",
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "reference": "https://utex.org/products/euglena-medium",
+          "status": "unsupported",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": null,
+          "proposed_field": "ingredients[0].notes",
+          "snippet": "Bring the total volume to 1 L with dH2O.",
+          "basis_snippet": "For 1 L Total",
+          "calculation": "No final water/carrier fraction can be calculated from an initial portion and unspecified makeup dose.",
+          "decision": "Remove the unsupported final-fraction slot while retaining the source preparation input in notes."
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Sodium acetate",
+          "old": {
+            "value": "12.2",
+            "unit": "MILLIMOLAR"
+          },
+          "reference": "https://utex.org/products/euglena-medium",
+          "status": "evidence_only",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "12.2",
+            "unit": "MILLIMOLAR"
+          },
+          "snippet": "12.2 mM",
+          "basis_snippet": "For 1 L Total",
+          "component_snippet": "Sodium acetate(Fisher BP 333)",
+          "source_amount": "1 g/L",
+          "source_table_row": 1,
+          "source_table_column": 4,
+          "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed. The printed rounded molarity is a source assertion, not an independent certification of molecular weight or supplied chemical identity.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "Beef extract",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "reference": "https://utex.org/products/euglena-medium",
+          "status": "evidence_only",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "snippet": "1 g/L",
+          "basis_snippet": "For 1 L Total",
+          "component_snippet": "Beef extract(Sigma B-4888)",
+          "source_amount": "1 g/L",
+          "source_table_row": 2,
+          "source_table_column": 2,
+          "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "Tryptone",
+          "old": {
+            "value": "2",
+            "unit": "G_PER_L"
+          },
+          "reference": "https://utex.org/products/euglena-medium",
+          "status": "evidence_only",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "2",
+            "unit": "G_PER_L"
+          },
+          "snippet": "2 g/L",
+          "basis_snippet": "For 1 L Total",
+          "component_snippet": "Tryptone(Sigma T 9410))",
+          "source_amount": "2 g/L",
+          "source_table_row": 3,
+          "source_table_column": 2,
+          "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        },
+        {
+          "field": "ingredients[4].concentration",
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "2",
+            "unit": "G_PER_L"
+          },
+          "reference": "https://utex.org/products/euglena-medium",
+          "status": "evidence_only",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "2",
+            "unit": "G_PER_L"
+          },
+          "snippet": "2 g/L",
+          "basis_snippet": "For 1 L Total",
+          "component_snippet": "Yeast extract(Bacto, Difco)",
+          "source_amount": "2 g/L",
+          "source_table_row": 4,
+          "source_table_column": 2,
+          "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        },
+        {
+          "field": "ingredients[5].concentration",
+          "ingredient": "CaCl2 x 2 H2O",
+          "old": {
+            "value": "0.07",
+            "unit": "MILLIMOLAR"
+          },
+          "reference": "https://utex.org/products/euglena-medium",
+          "status": "evidence_only",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "0.07",
+            "unit": "MILLIMOLAR"
+          },
+          "snippet": "0.07 mM",
+          "basis_snippet": "For 1 L Total",
+          "component_snippet": "CaCl2\u20222H2O(Sigma C-3881)",
+          "source_amount": "0.01 g/L",
+          "source_table_row": 5,
+          "source_table_column": 4,
+          "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed. The printed rounded molarity is a source assertion, not an independent certification of molecular weight or supplied chemical identity.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        },
+        {
+          "field": "variants[0].modifications",
+          "ingredient": "agar",
+          "old": null,
+          "proposed": [
+            "After making up the liquid recipe to 1 L, add 15 g agar; do not mix."
+          ],
+          "status": "add",
+          "reference": "https://utex.org/products/euglena-medium",
+          "snippet": "For 1.5% agar medium add 15 g of agar into the flask; do not mix.",
+          "basis_snippet": "For 1 L Total",
+          "locator": "#recipe, Directions, optional agar instruction",
+          "calculation": "Literal source batch dose; no universal final concentration is derived.",
+          "decision": "Preserve as an inline optional formulation, not a liquid-parent ingredient."
+        }
+      ],
+      "existing_claim_rows": 6,
+      "new_claim_rows": 1,
+      "counts": {
+        "unsupported_quantity_slots_removed": 1,
+        "inline_variant_options_added": 1,
+        "ingredient_context_notes_corrected": 1,
+        "new_evidence": 7,
+        "bibliographic_entries_enriched": 1,
+        "new_curation_history": 1
+      }
+    },
+    {
+      "path": "data/normalized_yaml/algae/Polytomella_Medium.yaml",
+      "id": "CultureMech:000186",
+      "reference": "https://utex.org/products/polytomella-medium",
+      "action": "CURATED_UTEX_ORGANIC_MEDIUM_INPUT_BASES_AND_CONCENTRATION_EVIDENCE",
+      "before_text": "id: CultureMech:000186\nname: polytomella_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: Polytomella Medium\n  term:\n    id: UTEX:polytomella-medium\n    label: Polytomella Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for freshwater\n  algae cultivation.\nnotes: UTEX prepares Polytomella Medium from dH2O, yeast extract, tryptone, and sodium\n  acetate.\ningredients:\n- preferred_term: dH2O\n  concentration:\n    value: '1000'\n    unit: ML_PER_L\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n  notes: UTEX starts the 1 L Polytomella Medium recipe with approximately 950 mL dH2O.\n- preferred_term: Yeast extract\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  term:\n    id: FOODON:03315426\n    label: Yeast extract\n  notes: UTEX lists 1 g/L Yeast extract, Bacto/Difco.\n  nutritional_roles:\n  - NITROGEN_SOURCE\n- preferred_term: Tryptone\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  term:\n    id: MICRO:0000182\n    label: Tryptone\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: T 9410\n  notes: UTEX lists 1 g/L Tryptone, Sigma T 9410.\n  nutritional_roles:\n  - NITROGEN_SOURCE\n- preferred_term: Sodium acetate\n  concentration:\n    value: '24.4'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:32954\n    label: sodium acetate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32954\n    label: sodium acetate\n  supplier_catalog:\n    supplier_name: Fisher\n    catalog_number: BP 333\n  notes: UTEX lists 2 g/L Sodium acetate, for 24.4 mM final.\n  nutritional_roles:\n  - CARBON_SOURCE\nsolutions: []\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: To approximately 950 mL dH2O, add each component in the order specified\n    while stirring continuously.\n- step_number: 2\n  action: MIX\n  description: Bring the total volume to 1 L with dH2O.\n- step_number: 3\n  action: AUTOCLAVE\n  description: Cover and autoclave the medium.\n- step_number: 4\n  action: STORE\n  description: Store at refrigerator temperature.\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: polytomella-medium, URL: https://utex.org/products/polytomella-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:53.487970Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000186'\n- timestamp: '2026-03-17T19:45:04.415841+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Polytomella Medium\" to \"polytomella_medium\" for consistent\n    matching\n- timestamp: '2026-05-16T09:02:56.086257+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.296518+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:30.926608+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 3 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_organic_score35.py\n  action: RESOLVED_UTEX_ORGANIC_SCORE35\n  changes: Grounded UTEX score-35 organic and Volvox components\n  source: https://utex.org/products/polytomella-medium\n  notes: UTEX prepares Polytomella Medium from dH2O, yeast extract, tryptone, and\n    sodium acetate.\nreferences:\n- reference: UTEX:polytomella-medium\n- reference: https://utex.org/products/polytomella-medium\noriginal_name: Polytomella Medium\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\n",
+      "before_sha256": "675df02f1e1d671655287d9de0ebc4de067cc1cb72def9685e6d84bff4299819",
+      "after_text": "id: CultureMech:000186\nname: polytomella_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: Polytomella Medium\n  term:\n    id: UTEX:polytomella-medium\n    label: Polytomella Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for freshwater\n  algae cultivation.\nnotes: UTEX prepares Polytomella Medium from dH2O, yeast extract, tryptone, and sodium\n  acetate.\ningredients:\n- preferred_term: dH2O\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n  notes: Start with approximately 950 mL dH2O, then bring the supplemented medium\n    to 1 L total with additional dH2O. The exact combined water dose is not specified.\n  evidence:\n  - reference: https://utex.org/products/polytomella-medium\n    supports: SUPPORT\n    snippet: Bring total volume to 1 L with dH2O.\n    explanation: 'Supports ingredients[0].notes for dH2O. Remove the unsupported final-fraction\n      slot while retaining the source preparation input in notes. No final water/carrier\n      fraction can be calculated from an initial portion and unspecified makeup dose.\n      Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition table\n      and Directions.'\n- preferred_term: Yeast extract\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  term:\n    id: FOODON:03315426\n    label: Yeast extract\n  notes: UTEX lists 1 g/L Yeast extract, Bacto/Difco.\n  nutritional_roles:\n  - NITROGEN_SOURCE\n  evidence:\n  - reference: https://utex.org/products/polytomella-medium\n    supports: SUPPORT\n    snippet: 1 g/L\n    explanation: 'Supports ingredients[1].concentration for Yeast extract. Retain\n      the numeric value with exact source evidence and any explicitly stated preparation\n      basis. Directly retain the source table value and unit; no mass/molar conversion\n      is performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition\n      table and Directions. Component cell: ''Yeast extract(Bacto, Difco)''; amount\n      cell: ''1 g/L''.'\n- preferred_term: Tryptone\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  term:\n    id: MICRO:0000182\n    label: Tryptone\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: T 9410\n  notes: UTEX lists 1 g/L Tryptone, Sigma T 9410.\n  nutritional_roles:\n  - NITROGEN_SOURCE\n  evidence:\n  - reference: https://utex.org/products/polytomella-medium\n    supports: SUPPORT\n    snippet: 1 g/L\n    explanation: 'Supports ingredients[2].concentration for Tryptone. Retain the numeric\n      value with exact source evidence and any explicitly stated preparation basis.\n      Directly retain the source table value and unit; no mass/molar conversion is\n      performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition\n      table and Directions. Component cell: ''Tryptone(Sigma T 9410)''; amount cell:\n      ''1 g/L''.'\n- preferred_term: Sodium acetate\n  concentration:\n    value: '24.4'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:32954\n    label: sodium acetate\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32954\n    label: sodium acetate\n  supplier_catalog:\n    supplier_name: Fisher\n    catalog_number: BP 333\n  notes: UTEX lists 2 g/L Sodium acetate, for 24.4 mM final.\n  nutritional_roles:\n  - CARBON_SOURCE\n  evidence:\n  - reference: https://utex.org/products/polytomella-medium\n    supports: SUPPORT\n    snippet: 24.4 mM\n    explanation: 'Supports ingredients[3].concentration for Sodium acetate. Retain\n      the numeric value with exact source evidence and any explicitly stated preparation\n      basis. Directly retain the source table value and unit; no mass/molar conversion\n      is performed. The printed rounded molarity is a source assertion, not an independent\n      certification of molecular weight or supplied chemical identity. Separate basis\n      excerpt: ''For 1 L Total''. Locator: #recipe, composition table and Directions.\n      Component cell: ''Sodium acetate(Fisher BP 333)''; amount cell: ''2 g/L''.'\nsolutions: []\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: To approximately 950 mL dH2O, add each component in the order specified\n    while stirring continuously.\n- step_number: 2\n  action: MIX\n  description: Bring the total volume to 1 L with dH2O.\n- step_number: 3\n  action: AUTOCLAVE\n  description: Cover and autoclave the medium.\n- step_number: 4\n  action: STORE\n  description: Store at refrigerator temperature.\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: polytomella-medium, URL: https://utex.org/products/polytomella-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:53.487970Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000186'\n- timestamp: '2026-03-17T19:45:04.415841+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Polytomella Medium\" to \"polytomella_medium\" for consistent\n    matching\n- timestamp: '2026-05-16T09:02:56.086257+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.296518+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:30.926608+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 3 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_organic_score35.py\n  action: RESOLVED_UTEX_ORGANIC_SCORE35\n  changes: Grounded UTEX score-35 organic and Volvox components\n  source: https://utex.org/products/polytomella-medium\n  notes: UTEX prepares Polytomella Medium from dH2O, yeast extract, tryptone, and\n    sodium acetate.\n- timestamp: '2026-10-10T21:08:21.569593+00:00'\n  curator: codex\n  action: CURATED_UTEX_ORGANIC_MEDIUM_INPUT_BASES_AND_CONCENTRATION_EVIDENCE\n  notes: Exact source-URL and snippet evidence for input doses, optional agar and\n    retained concentrations. Chemical identity mappings and unrelated growth/role\n    claims are unchanged, not independently certified. No taxa-media association added.\n  source: https://utex.org/products/polytomella-medium\n  changes: '{\"claims\": [{\"basis_snippet\": \"For 1 L Total\", \"calculation\": \"No final\n    water/carrier fraction can be calculated from an initial portion and unspecified\n    makeup dose.\", \"decision\": \"Remove the unsupported final-fraction slot while retaining\n    the source preparation input in notes.\", \"field\": \"ingredients[0].concentration\",\n    \"ingredient\": \"dH2O\", \"locator\": \"#recipe, composition table and Directions\",\n    \"old\": {\"unit\": \"ML_PER_L\", \"value\": \"1000\"}, \"proposed\": null, \"proposed_field\":\n    \"ingredients[0].notes\", \"reference\": \"https://utex.org/products/polytomella-medium\",\n    \"snippet\": \"Bring total volume to 1 L with dH2O.\", \"status\": \"unsupported\"}, {\"basis_snippet\":\n    \"For 1 L Total\", \"calculation\": \"Directly retain the source table value and unit;\n    no mass/molar conversion is performed.\", \"component_snippet\": \"Yeast extract(Bacto,\n    Difco)\", \"decision\": \"Retain the numeric value with exact source evidence and\n    any explicitly stated preparation basis.\", \"field\": \"ingredients[1].concentration\",\n    \"ingredient\": \"Yeast extract\", \"locator\": \"#recipe, composition table and Directions\",\n    \"old\": {\"unit\": \"G_PER_L\", \"value\": \"1\"}, \"proposed\": {\"unit\": \"G_PER_L\", \"value\":\n    \"1\"}, \"reference\": \"https://utex.org/products/polytomella-medium\", \"snippet\":\n    \"1 g/L\", \"source_amount\": \"1 g/L\", \"source_table_column\": 2, \"source_table_row\":\n    1, \"status\": \"evidence_only\"}, {\"basis_snippet\": \"For 1 L Total\", \"calculation\":\n    \"Directly retain the source table value and unit; no mass/molar conversion is\n    performed.\", \"component_snippet\": \"Tryptone(Sigma T 9410)\", \"decision\": \"Retain\n    the numeric value with exact source evidence and any explicitly stated preparation\n    basis.\", \"field\": \"ingredients[2].concentration\", \"ingredient\": \"Tryptone\", \"locator\":\n    \"#recipe, composition table and Directions\", \"old\": {\"unit\": \"G_PER_L\", \"value\":\n    \"1\"}, \"proposed\": {\"unit\": \"G_PER_L\", \"value\": \"1\"}, \"reference\": \"https://utex.org/products/polytomella-medium\",\n    \"snippet\": \"1 g/L\", \"source_amount\": \"1 g/L\", \"source_table_column\": 2, \"source_table_row\":\n    2, \"status\": \"evidence_only\"}, {\"basis_snippet\": \"For 1 L Total\", \"calculation\":\n    \"Directly retain the source table value and unit; no mass/molar conversion is\n    performed. The printed rounded molarity is a source assertion, not an independent\n    certification of molecular weight or supplied chemical identity.\", \"component_snippet\":\n    \"Sodium acetate(Fisher BP 333)\", \"decision\": \"Retain the numeric value with exact\n    source evidence and any explicitly stated preparation basis.\", \"field\": \"ingredients[3].concentration\",\n    \"ingredient\": \"Sodium acetate\", \"locator\": \"#recipe, composition table and Directions\",\n    \"old\": {\"unit\": \"MILLIMOLAR\", \"value\": \"24.4\"}, \"proposed\": {\"unit\": \"MILLIMOLAR\",\n    \"value\": \"24.4\"}, \"reference\": \"https://utex.org/products/polytomella-medium\",\n    \"snippet\": \"24.4 mM\", \"source_amount\": \"2 g/L\", \"source_table_column\": 4, \"source_table_row\":\n    3, \"status\": \"evidence_only\"}, {\"basis_snippet\": \"For 1 L Total\", \"calculation\":\n    \"Literal source batch dose; no universal final concentration is derived.\", \"decision\":\n    \"Preserve as an inline optional formulation, not a liquid-parent ingredient.\",\n    \"field\": \"variants[0].modifications\", \"ingredient\": \"agar\", \"locator\": \"#recipe,\n    Directions, optional agar instruction\", \"old\": null, \"proposed\": [\"After making\n    up the liquid recipe to 1 L, add 15 g agar; do not mix.\"], \"reference\": \"https://utex.org/products/polytomella-medium\",\n    \"snippet\": \"For 1.5% agar medium add 15 grams of agar into the flask; do not mix.\",\n    \"status\": \"add\"}], \"counts\": {\"bibliographic_entries_enriched\": 1, \"ingredient_context_notes_corrected\":\n    1, \"inline_variant_options_added\": 1, \"new_curation_history\": 1, \"new_evidence\":\n    5, \"unsupported_quantity_slots_removed\": 1}}'\nreferences:\n- reference: UTEX:polytomella-medium\n- reference: https://utex.org/products/polytomella-medium\n  title: Polytomella Medium | UTEX Culture Collection of Algae\n  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-10; Named authors, publication year and DOI not established.\noriginal_name: Polytomella Medium\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\nvariants:\n- name: Polytomella Medium with agar\n  relationship: SUPPLEMENTED_VARIANT\n  description: Optional source-listed agar formulation; the parent remains liquid.\n  modifications:\n  - After making up the liquid recipe to 1 L, add 15 g agar; do not mix.\n  purpose: Preserve the separately specified solid formulation\n  evidence:\n  - reference: https://utex.org/products/polytomella-medium\n    supports: SUPPORT\n    snippet: For 1.5% agar medium add 15 grams of agar into the flask; do not mix.\n    explanation: Supports variants[0].modifications only. The source labels this the\n      1.5% agar formulation; no new measured final volume after agar addition is claimed.\n      No agar is added to the liquid parent.\n",
+      "after_sha256": "cd5850bc7d73a9623af6cda491368aaa6a0c823f0d8c44322e465a739436234a",
+      "claims": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "dH2O",
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "reference": "https://utex.org/products/polytomella-medium",
+          "status": "unsupported",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": null,
+          "proposed_field": "ingredients[0].notes",
+          "snippet": "Bring total volume to 1 L with dH2O.",
+          "basis_snippet": "For 1 L Total",
+          "calculation": "No final water/carrier fraction can be calculated from an initial portion and unspecified makeup dose.",
+          "decision": "Remove the unsupported final-fraction slot while retaining the source preparation input in notes."
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "reference": "https://utex.org/products/polytomella-medium",
+          "status": "evidence_only",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "snippet": "1 g/L",
+          "basis_snippet": "For 1 L Total",
+          "component_snippet": "Yeast extract(Bacto, Difco)",
+          "source_amount": "1 g/L",
+          "source_table_row": 1,
+          "source_table_column": 2,
+          "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "Tryptone",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "reference": "https://utex.org/products/polytomella-medium",
+          "status": "evidence_only",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "snippet": "1 g/L",
+          "basis_snippet": "For 1 L Total",
+          "component_snippet": "Tryptone(Sigma T 9410)",
+          "source_amount": "1 g/L",
+          "source_table_row": 2,
+          "source_table_column": 2,
+          "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "Sodium acetate",
+          "old": {
+            "value": "24.4",
+            "unit": "MILLIMOLAR"
+          },
+          "reference": "https://utex.org/products/polytomella-medium",
+          "status": "evidence_only",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "24.4",
+            "unit": "MILLIMOLAR"
+          },
+          "snippet": "24.4 mM",
+          "basis_snippet": "For 1 L Total",
+          "component_snippet": "Sodium acetate(Fisher BP 333)",
+          "source_amount": "2 g/L",
+          "source_table_row": 3,
+          "source_table_column": 4,
+          "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed. The printed rounded molarity is a source assertion, not an independent certification of molecular weight or supplied chemical identity.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        },
+        {
+          "field": "variants[0].modifications",
+          "ingredient": "agar",
+          "old": null,
+          "proposed": [
+            "After making up the liquid recipe to 1 L, add 15 g agar; do not mix."
+          ],
+          "status": "add",
+          "reference": "https://utex.org/products/polytomella-medium",
+          "snippet": "For 1.5% agar medium add 15 grams of agar into the flask; do not mix.",
+          "basis_snippet": "For 1 L Total",
+          "locator": "#recipe, Directions, optional agar instruction",
+          "calculation": "Literal source batch dose; no universal final concentration is derived.",
+          "decision": "Preserve as an inline optional formulation, not a liquid-parent ingredient."
+        }
+      ],
+      "existing_claim_rows": 4,
+      "new_claim_rows": 1,
+      "counts": {
+        "unsupported_quantity_slots_removed": 1,
+        "inline_variant_options_added": 1,
+        "ingredient_context_notes_corrected": 1,
+        "new_evidence": 5,
+        "bibliographic_entries_enriched": 1,
+        "new_curation_history": 1
+      }
+    },
+    {
+      "path": "data/normalized_yaml/algae/Ochromonas_Medium.yaml",
+      "id": "CultureMech:000184",
+      "reference": "https://utex.org/products/ochromonas-medium",
+      "action": "CURATED_UTEX_ORGANIC_MEDIUM_INPUT_BASES_AND_CONCENTRATION_EVIDENCE",
+      "before_text": "id: CultureMech:000184\nname: ochromonas_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: Ochromonas Medium\n  term:\n    id: UTEX:ochromonas-medium\n    label: Ochromonas Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for freshwater\n  algae cultivation.\nnotes: UTEX prepares Ochromonas Medium from dH2O, glucose, tryptone, yeast extract,\n  and Liver extract infusion.\ningredients:\n- preferred_term: dH2O\n  concentration:\n    value: '1000'\n    unit: ML_PER_L\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n  notes: UTEX starts the 1 L Ochromonas Medium recipe with approximately 900 mL dH2O.\n- preferred_term: Glucose\n  concentration:\n    value: '5.6'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:17234\n    label: glucose\n  mediaingredientmech_chebi_term:\n    id: CHEBI:17234\n    label: glucose\n  notes: UTEX lists 1 g/L Glucose, with BACTO-dextrose or Sigma D 9634 as the source\n    for 5.6 mM final.\n  nutritional_roles:\n  - CARBON_SOURCE\n- preferred_term: Tryptone\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  term:\n    id: MICRO:0000182\n    label: Tryptone\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: T 9410\n  notes: UTEX lists 1 g/L Tryptone, Sigma T 9410.\n  nutritional_roles:\n  - NITROGEN_SOURCE\n- preferred_term: Yeast extract\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  term:\n    id: FOODON:03315426\n    label: Yeast extract\n  notes: UTEX lists 1 g/L Yeast extract, Bacto/Difco.\n  nutritional_roles:\n  - NITROGEN_SOURCE\nsolutions:\n- preferred_term: Liver extract infusion\n  concentration:\n    value: '40'\n    unit: ML_PER_L\n  composition:\n  - preferred_term: dH2O\n    concentration:\n      value: '1000'\n      unit: ML_PER_L\n    term:\n      id: CHEBI:15377\n      label: water\n    mediaingredientmech_chebi_term:\n      id: CHEBI:15377\n      label: water\n    notes: UTEX brings the Liver Extract Infusion stock to 50 mL with dH2O.\n  - preferred_term: Liver extract\n    concentration:\n      value: '50'\n      unit: G_PER_L\n    term:\n      id: MICRO:0001363\n      label: Liver extract\n    supplier_catalog:\n      supplier_name: Difco Bacto\n      catalog_number: '0133'\n    notes: Converted from 2.5 g Liver extract per 50 mL in the UTEX Liver Extract\n      Infusion Component Recipe.\n    nutritional_roles:\n    - NITROGEN_SOURCE\n  notes: UTEX adds 40 mL Liver extract infusion per liter of Ochromonas Medium.\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: To approximately 900 mL dH2O, add each component in the order specified\n    while stirring continuously.\n- step_number: 2\n  action: MIX\n  description: Bring the total volume to 1 L with dH2O.\n- step_number: 3\n  action: AUTOCLAVE\n  description: Autoclave the medium.\n- step_number: 4\n  action: STORE\n  description: Store at refrigerator temperature.\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: ochromonas-medium, URL: https://utex.org/products/ochromonas-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:53.476157Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000184'\n- timestamp: '2026-03-17T19:45:04.405515+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Ochromonas Medium\" to \"ochromonas_medium\" for consistent\n    matching\n- timestamp: '2026-05-16T09:02:56.074408+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.284017+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:30.911664+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 4 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_organic_score35.py\n  action: RESOLVED_UTEX_ORGANIC_SCORE35\n  changes: Grounded UTEX score-35 organic and Volvox components\n  source: https://utex.org/products/ochromonas-medium\n  notes: UTEX prepares Ochromonas Medium from dH2O, glucose, tryptone, yeast extract,\n    and Liver extract infusion.\nreferences:\n- reference: UTEX:ochromonas-medium\n- reference: https://utex.org/products/ochromonas-medium\n- reference: https://utex.org/products/liver-extract-infusion\noriginal_name: Ochromonas Medium\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\n",
+      "before_sha256": "f3c8faa3384ce5e50bcdc4e6d96313c2b4139dee81c3be528d418bea9b893697",
+      "after_text": "id: CultureMech:000184\nname: ochromonas_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: Ochromonas Medium\n  term:\n    id: UTEX:ochromonas-medium\n    label: Ochromonas Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for freshwater\n  algae cultivation.\nnotes: UTEX prepares Ochromonas Medium from dH2O, glucose, tryptone, yeast extract,\n  and Liver extract infusion.\ningredients:\n- preferred_term: dH2O\n  term:\n    id: CHEBI:15377\n    label: water\n  mediaingredientmech_chebi_term:\n    id: CHEBI:15377\n    label: water\n  notes: Start with approximately 900 mL dH2O, then bring the supplemented medium\n    to 1 L total with additional dH2O. The exact combined water dose is not specified.\n  evidence:\n  - reference: https://utex.org/products/ochromonas-medium\n    supports: SUPPORT\n    snippet: Bring total volume to 1 L with dH2O.\n    explanation: 'Supports ingredients[0].notes for dH2O. Remove the unsupported final-fraction\n      slot while retaining the source preparation input in notes. No final water/carrier\n      fraction can be calculated from an initial portion and unspecified makeup dose.\n      Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition table\n      and Directions.'\n- preferred_term: Glucose\n  concentration:\n    value: '5.6'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:17234\n    label: glucose\n  mediaingredientmech_chebi_term:\n    id: CHEBI:17234\n    label: glucose\n  notes: UTEX lists 1 g/L Glucose, with BACTO-dextrose or Sigma D 9634 as the source\n    for 5.6 mM final.\n  nutritional_roles:\n  - CARBON_SOURCE\n  evidence:\n  - reference: https://utex.org/products/ochromonas-medium\n    supports: SUPPORT\n    snippet: 5.6 mM\n    explanation: 'Supports ingredients[1].concentration for Glucose. Retain the numeric\n      value with exact source evidence and any explicitly stated preparation basis.\n      Directly retain the source table value and unit; no mass/molar conversion is\n      performed. The printed rounded molarity is a source assertion, not an independent\n      certification of molecular weight or supplied chemical identity. Separate basis\n      excerpt: ''For 1 L Total''. Locator: #recipe, composition table and Directions.\n      Component cell: ''Glucose(BACTO-dextrose or Sigma D 9634)''; amount cell: ''1\n      g/L''.'\n- preferred_term: Tryptone\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  term:\n    id: MICRO:0000182\n    label: Tryptone\n  supplier_catalog:\n    supplier_name: Sigma\n    catalog_number: T 9410\n  notes: UTEX lists 1 g/L Tryptone, Sigma T 9410.\n  nutritional_roles:\n  - NITROGEN_SOURCE\n  evidence:\n  - reference: https://utex.org/products/ochromonas-medium\n    supports: SUPPORT\n    snippet: 1 g/L\n    explanation: 'Supports ingredients[2].concentration for Tryptone. Retain the numeric\n      value with exact source evidence and any explicitly stated preparation basis.\n      Directly retain the source table value and unit; no mass/molar conversion is\n      performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition\n      table and Directions. Component cell: ''Tryptone (Sigma T 9410)''; amount cell:\n      ''1 g/L''.'\n- preferred_term: Yeast extract\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  term:\n    id: FOODON:03315426\n    label: Yeast extract\n  notes: UTEX lists 1 g/L Yeast extract, Bacto/Difco.\n  nutritional_roles:\n  - NITROGEN_SOURCE\n  evidence:\n  - reference: https://utex.org/products/ochromonas-medium\n    supports: SUPPORT\n    snippet: 1 g/L\n    explanation: 'Supports ingredients[3].concentration for Yeast extract. Retain\n      the numeric value with exact source evidence and any explicitly stated preparation\n      basis. Directly retain the source table value and unit; no mass/molar conversion\n      is performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition\n      table and Directions. Component cell: ''Yeast extract(Bacto, Difco)''; amount\n      cell: ''1 g/L''.'\nsolutions:\n- preferred_term: Liver extract infusion\n  concentration:\n    value: '40'\n    unit: ML_PER_L\n  composition:\n  - preferred_term: dH2O\n    term:\n      id: CHEBI:15377\n      label: water\n    mediaingredientmech_chebi_term:\n      id: CHEBI:15377\n      label: water\n    notes: Start with approximately 40 mL dH2O and bring the liver-extract preparation\n      to 50 mL total with additional dH2O before heating and filtration. The exact\n      combined water dose is not specified.\n    evidence:\n    - reference: https://utex.org/products/liver-extract-infusion\n      supports: SUPPORT\n      snippet: Bring the total volume to 50 mL with dH2O.\n      explanation: 'Supports solutions[0].composition[0].notes for dH2O. Remove the\n        unsupported final-fraction slot while retaining the source preparation input\n        in notes. No final water/carrier fraction can be calculated from an initial\n        portion and unspecified makeup dose. Separate basis excerpt: ''For 50 mL Total''.\n        Locator: #recipe, composition table and Directions.'\n  - preferred_term: Liver extract\n    concentration:\n      value: '50'\n      unit: G_PER_L\n      per_volume: per liter of prepared stock before heating and filtration\n    term:\n      id: MICRO:0001363\n      label: Liver extract\n    supplier_catalog:\n      supplier_name: Difco Bacto\n      catalog_number: '0133'\n    notes: Use 2.5 g liver extract in 50 mL total stock before heating and filtration,\n      equivalent to a 50 g/L preparation input. The recovered filtrate concentration\n      is not measured by this recipe.\n    nutritional_roles:\n    - NITROGEN_SOURCE\n    evidence:\n    - reference: https://utex.org/products/liver-extract-infusion\n      supports: SUPPORT\n      snippet: 2.5 g/50 mL\n      explanation: 'Supports solutions[0].composition[1].concentration for Liver extract.\n        Retain the numeric value with exact source evidence and any explicitly stated\n        preparation basis. 2.5 g / 0.050 L prepared stock = 50 g/L before heating\n        and filtration. No recovery or filtrate concentration is inferred. Separate\n        basis excerpt: ''For 50 mL Total''. Locator: #recipe, composition table and\n        Directions. Component cell: ''Liver extract(Difco Bacto 0133)''; amount cell:\n        ''2.5 g/50 mL''.'\n  notes: UTEX adds 40 mL Liver extract infusion per liter of Ochromonas Medium. Prepare\n    the stock to 50 mL, heat in a 50 C water bath for approximately 1 hour, then in\n    an 80 C water bath for 3-5 minutes, and filter. Its 50 g/L component amount is\n    a pre-filtration preparation input.\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: To approximately 900 mL dH2O, add each component in the order specified\n    while stirring continuously.\n- step_number: 2\n  action: MIX\n  description: Bring the total volume to 1 L with dH2O.\n- step_number: 3\n  action: AUTOCLAVE\n  description: Autoclave the medium.\n- step_number: 4\n  action: STORE\n  description: Store at refrigerator temperature.\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: ochromonas-medium, URL: https://utex.org/products/ochromonas-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:53.476157Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000184'\n- timestamp: '2026-03-17T19:45:04.405515+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Ochromonas Medium\" to \"ochromonas_medium\" for consistent\n    matching\n- timestamp: '2026-05-16T09:02:56.074408+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.284017+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:30.911664+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 4 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_organic_score35.py\n  action: RESOLVED_UTEX_ORGANIC_SCORE35\n  changes: Grounded UTEX score-35 organic and Volvox components\n  source: https://utex.org/products/ochromonas-medium\n  notes: UTEX prepares Ochromonas Medium from dH2O, glucose, tryptone, yeast extract,\n    and Liver extract infusion.\n- timestamp: '2026-10-10T21:08:21.569593+00:00'\n  curator: codex\n  action: CURATED_UTEX_ORGANIC_MEDIUM_INPUT_BASES_AND_CONCENTRATION_EVIDENCE\n  notes: Exact source-URL and snippet evidence for input doses, optional agar and\n    retained concentrations. Chemical identity mappings and unrelated growth/role\n    claims are unchanged, not independently certified. No taxa-media association added.\n  source: https://utex.org/products/ochromonas-medium\n  changes: '{\"claims\": [{\"basis_snippet\": \"For 1 L Total\", \"calculation\": \"No final\n    water/carrier fraction can be calculated from an initial portion and unspecified\n    makeup dose.\", \"decision\": \"Remove the unsupported final-fraction slot while retaining\n    the source preparation input in notes.\", \"field\": \"ingredients[0].concentration\",\n    \"ingredient\": \"dH2O\", \"locator\": \"#recipe, composition table and Directions\",\n    \"old\": {\"unit\": \"ML_PER_L\", \"value\": \"1000\"}, \"proposed\": null, \"proposed_field\":\n    \"ingredients[0].notes\", \"reference\": \"https://utex.org/products/ochromonas-medium\",\n    \"snippet\": \"Bring total volume to 1 L with dH2O.\", \"status\": \"unsupported\"}, {\"basis_snippet\":\n    \"For 1 L Total\", \"calculation\": \"Directly retain the source table value and unit;\n    no mass/molar conversion is performed. The printed rounded molarity is a source\n    assertion, not an independent certification of molecular weight or supplied chemical\n    identity.\", \"component_snippet\": \"Glucose(BACTO-dextrose or Sigma D 9634)\", \"decision\":\n    \"Retain the numeric value with exact source evidence and any explicitly stated\n    preparation basis.\", \"field\": \"ingredients[1].concentration\", \"ingredient\": \"Glucose\",\n    \"locator\": \"#recipe, composition table and Directions\", \"old\": {\"unit\": \"MILLIMOLAR\",\n    \"value\": \"5.6\"}, \"proposed\": {\"unit\": \"MILLIMOLAR\", \"value\": \"5.6\"}, \"reference\":\n    \"https://utex.org/products/ochromonas-medium\", \"snippet\": \"5.6 mM\", \"source_amount\":\n    \"1 g/L\", \"source_table_column\": 4, \"source_table_row\": 1, \"status\": \"evidence_only\"},\n    {\"basis_snippet\": \"For 1 L Total\", \"calculation\": \"Directly retain the source\n    table value and unit; no mass/molar conversion is performed.\", \"component_snippet\":\n    \"Tryptone (Sigma T 9410)\", \"decision\": \"Retain the numeric value with exact source\n    evidence and any explicitly stated preparation basis.\", \"field\": \"ingredients[2].concentration\",\n    \"ingredient\": \"Tryptone\", \"locator\": \"#recipe, composition table and Directions\",\n    \"old\": {\"unit\": \"G_PER_L\", \"value\": \"1\"}, \"proposed\": {\"unit\": \"G_PER_L\", \"value\":\n    \"1\"}, \"reference\": \"https://utex.org/products/ochromonas-medium\", \"snippet\": \"1\n    g/L\", \"source_amount\": \"1 g/L\", \"source_table_column\": 2, \"source_table_row\":\n    2, \"status\": \"evidence_only\"}, {\"basis_snippet\": \"For 1 L Total\", \"calculation\":\n    \"Directly retain the source table value and unit; no mass/molar conversion is\n    performed.\", \"component_snippet\": \"Yeast extract(Bacto, Difco)\", \"decision\": \"Retain\n    the numeric value with exact source evidence and any explicitly stated preparation\n    basis.\", \"field\": \"ingredients[3].concentration\", \"ingredient\": \"Yeast extract\",\n    \"locator\": \"#recipe, composition table and Directions\", \"old\": {\"unit\": \"G_PER_L\",\n    \"value\": \"1\"}, \"proposed\": {\"unit\": \"G_PER_L\", \"value\": \"1\"}, \"reference\": \"https://utex.org/products/ochromonas-medium\",\n    \"snippet\": \"1 g/L\", \"source_amount\": \"1 g/L\", \"source_table_column\": 2, \"source_table_row\":\n    3, \"status\": \"evidence_only\"}, {\"basis_snippet\": \"For 1 L Total\", \"calculation\":\n    \"Directly retain the source table value and unit; no mass/molar conversion is\n    performed.\", \"component_snippet\": \"Liver extract infusion\", \"decision\": \"Retain\n    the numeric value with exact source evidence and any explicitly stated preparation\n    basis.\", \"field\": \"solutions[0].concentration\", \"ingredient\": \"Liver extract infusion\",\n    \"locator\": \"#recipe, composition table and Directions\", \"old\": {\"unit\": \"ML_PER_L\",\n    \"value\": \"40\"}, \"proposed\": {\"unit\": \"ML_PER_L\", \"value\": \"40\"}, \"reference\":\n    \"https://utex.org/products/ochromonas-medium\", \"snippet\": \"40 mL/L\", \"source_amount\":\n    \"40 mL/L\", \"source_table_column\": 2, \"source_table_row\": 4, \"status\": \"evidence_only\"},\n    {\"basis_snippet\": \"For 50 mL Total\", \"calculation\": \"No final water/carrier fraction\n    can be calculated from an initial portion and unspecified makeup dose.\", \"decision\":\n    \"Remove the unsupported final-fraction slot while retaining the source preparation\n    input in notes.\", \"field\": \"solutions[0].composition[0].concentration\", \"ingredient\":\n    \"dH2O\", \"locator\": \"#recipe, composition table and Directions\", \"old\": {\"unit\":\n    \"ML_PER_L\", \"value\": \"1000\"}, \"proposed\": null, \"proposed_field\": \"solutions[0].composition[0].notes\",\n    \"reference\": \"https://utex.org/products/liver-extract-infusion\", \"snippet\": \"Bring\n    the total volume to 50 mL with dH2O.\", \"status\": \"unsupported\"}, {\"basis_snippet\":\n    \"For 50 mL Total\", \"calculation\": \"2.5 g / 0.050 L prepared stock = 50 g/L before\n    heating and filtration. No recovery or filtrate concentration is inferred.\", \"component_snippet\":\n    \"Liver extract(Difco Bacto 0133)\", \"decision\": \"Retain the numeric value with\n    exact source evidence and any explicitly stated preparation basis.\", \"field\":\n    \"solutions[0].composition[1].concentration\", \"ingredient\": \"Liver extract\", \"locator\":\n    \"#recipe, composition table and Directions\", \"old\": {\"unit\": \"G_PER_L\", \"value\":\n    \"50\"}, \"proposed\": {\"per_volume\": \"per liter of prepared stock before heating\n    and filtration\", \"unit\": \"G_PER_L\", \"value\": \"50\"}, \"reference\": \"https://utex.org/products/liver-extract-infusion\",\n    \"snippet\": \"2.5 g/50 mL\", \"source_amount\": \"2.5 g/50 mL\", \"source_table_column\":\n    2, \"source_table_row\": 1, \"status\": \"correct\"}], \"counts\": {\"bibliographic_entries_enriched\":\n    2, \"ingredient_context_notes_corrected\": 3, \"ingredient_dose_basis_corrections\":\n    1, \"new_curation_history\": 1, \"new_evidence\": 8, \"stock_context_notes_corrected\":\n    1, \"unsupported_quantity_slots_removed\": 2}}'\nreferences:\n- reference: UTEX:ochromonas-medium\n- reference: https://utex.org/products/ochromonas-medium\n  title: Ochromonas Medium | UTEX Culture Collection of Algae\n  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-10; Named authors, publication year and DOI not established.\n- reference: https://utex.org/products/liver-extract-infusion\n  title: Liver Extract Infusion Component Recipe | UTEX Culture Collection of Algae\n  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-10; Named authors, publication year and DOI not established.\noriginal_name: Ochromonas Medium\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\nevidence:\n- reference: https://utex.org/products/ochromonas-medium\n  supports: SUPPORT\n  snippet: 40 mL/L\n  explanation: 'Supports solutions[0].concentration for Liver extract infusion. Retain\n    the numeric value with exact source evidence and any explicitly stated preparation\n    basis. Directly retain the source table value and unit; no mass/molar conversion\n    is performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition\n    table and Directions. Component cell: ''Liver extract infusion''; amount cell:\n    ''40 mL/L''.'\n- reference: https://utex.org/products/liver-extract-infusion\n  supports: SUPPORT\n  snippet: Cover the flask, and place it into a 50 \u00b0C water bath for approximately\n    1 hour.\n  explanation: 'Supports solutions[0].notes and the preparation-stage qualification\n    of solutions[0].composition[1].concentration; no measured filtrate strength is\n    asserted. Separate exact excerpt: ''Transfer the flask into an 80 \u00b0C water bath\n    for 3-5 minutes.''. Supports solutions[0].notes and the preparation-stage qualification\n    of solutions[0].composition[1].concentration; no measured filtrate strength is\n    asserted. Separate exact excerpt: ''Filter extract.''. Supports solutions[0].notes\n    and the preparation-stage qualification of solutions[0].composition[1].concentration;\n    no measured filtrate strength is asserted.'\n",
+      "after_sha256": "5390b664cd836f885ebe751b9d7e32c26df1b7b28d62737250d6651dfee17b95",
+      "claims": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "dH2O",
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "reference": "https://utex.org/products/ochromonas-medium",
+          "status": "unsupported",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": null,
+          "proposed_field": "ingredients[0].notes",
+          "snippet": "Bring total volume to 1 L with dH2O.",
+          "basis_snippet": "For 1 L Total",
+          "calculation": "No final water/carrier fraction can be calculated from an initial portion and unspecified makeup dose.",
+          "decision": "Remove the unsupported final-fraction slot while retaining the source preparation input in notes."
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Glucose",
+          "old": {
+            "value": "5.6",
+            "unit": "MILLIMOLAR"
+          },
+          "reference": "https://utex.org/products/ochromonas-medium",
+          "status": "evidence_only",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "5.6",
+            "unit": "MILLIMOLAR"
+          },
+          "snippet": "5.6 mM",
+          "basis_snippet": "For 1 L Total",
+          "component_snippet": "Glucose(BACTO-dextrose or Sigma D 9634)",
+          "source_amount": "1 g/L",
+          "source_table_row": 1,
+          "source_table_column": 4,
+          "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed. The printed rounded molarity is a source assertion, not an independent certification of molecular weight or supplied chemical identity.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "Tryptone",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "reference": "https://utex.org/products/ochromonas-medium",
+          "status": "evidence_only",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "snippet": "1 g/L",
+          "basis_snippet": "For 1 L Total",
+          "component_snippet": "Tryptone (Sigma T 9410)",
+          "source_amount": "1 g/L",
+          "source_table_row": 2,
+          "source_table_column": 2,
+          "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "reference": "https://utex.org/products/ochromonas-medium",
+          "status": "evidence_only",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "snippet": "1 g/L",
+          "basis_snippet": "For 1 L Total",
+          "component_snippet": "Yeast extract(Bacto, Difco)",
+          "source_amount": "1 g/L",
+          "source_table_row": 3,
+          "source_table_column": 2,
+          "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        },
+        {
+          "field": "solutions[0].concentration",
+          "ingredient": "Liver extract infusion",
+          "old": {
+            "value": "40",
+            "unit": "ML_PER_L"
+          },
+          "reference": "https://utex.org/products/ochromonas-medium",
+          "status": "evidence_only",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "40",
+            "unit": "ML_PER_L"
+          },
+          "snippet": "40 mL/L",
+          "basis_snippet": "For 1 L Total",
+          "component_snippet": "Liver extract infusion",
+          "source_amount": "40 mL/L",
+          "source_table_row": 4,
+          "source_table_column": 2,
+          "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        },
+        {
+          "field": "solutions[0].composition[0].concentration",
+          "ingredient": "dH2O",
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "reference": "https://utex.org/products/liver-extract-infusion",
+          "status": "unsupported",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": null,
+          "proposed_field": "solutions[0].composition[0].notes",
+          "snippet": "Bring the total volume to 50 mL with dH2O.",
+          "basis_snippet": "For 50 mL Total",
+          "calculation": "No final water/carrier fraction can be calculated from an initial portion and unspecified makeup dose.",
+          "decision": "Remove the unsupported final-fraction slot while retaining the source preparation input in notes."
+        },
+        {
+          "field": "solutions[0].composition[1].concentration",
+          "ingredient": "Liver extract",
+          "old": {
+            "value": "50",
+            "unit": "G_PER_L"
+          },
+          "reference": "https://utex.org/products/liver-extract-infusion",
+          "status": "correct",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "50",
+            "unit": "G_PER_L",
+            "per_volume": "per liter of prepared stock before heating and filtration"
+          },
+          "snippet": "2.5 g/50 mL",
+          "basis_snippet": "For 50 mL Total",
+          "component_snippet": "Liver extract(Difco Bacto 0133)",
+          "source_amount": "2.5 g/50 mL",
+          "source_table_row": 1,
+          "source_table_column": 2,
+          "calculation": "2.5 g / 0.050 L prepared stock = 50 g/L before heating and filtration. No recovery or filtrate concentration is inferred.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        }
+      ],
+      "existing_claim_rows": 7,
+      "new_claim_rows": 0,
+      "counts": {
+        "unsupported_quantity_slots_removed": 2,
+        "ingredient_dose_basis_corrections": 1,
+        "ingredient_context_notes_corrected": 3,
+        "stock_context_notes_corrected": 1,
+        "new_evidence": 8,
+        "bibliographic_entries_enriched": 2,
+        "new_curation_history": 1
+      }
+    },
+    {
+      "path": "data/normalized_yaml/algae/Trebouxia_Medium.yaml",
+      "id": "CultureMech:000234",
+      "reference": "https://utex.org/products/trebouxia-medium",
+      "action": "CURATED_UTEX_ORGANIC_MEDIUM_INPUT_BASES_AND_CONCENTRATION_EVIDENCE",
+      "before_text": "id: CultureMech:000234\nname: trebouxia_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: Trebouxia Medium\n  term:\n    id: UTEX:trebouxia-medium\n    label: Trebouxia Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for freshwater\n  algae cultivation.\nnotes: 'UTEX prepares Trebouxia Medium by supplementing Bristol Medium with prepared\n  Soilwater: GR+ Medium, Proteose Peptone, and glucose before autoclaving.'\ningredients:\n- preferred_term: Proteose Peptone\n  concentration:\n    value: '10'\n    unit: G_PER_L\n  term:\n    id: MICRO:0000180\n    label: Proteose Peptone\n  supplier_catalog:\n    supplier_name: BD\n    catalog_number: '211684'\n  notes: UTEX lists 10 g/L Proteose Peptone, BD 211684.\n  nutritional_roles:\n  - NITROGEN_SOURCE\n- preferred_term: Glucose\n  concentration:\n    value: '0.11'\n    unit: MOLAR\n  term:\n    id: CHEBI:17234\n    label: glucose\n  mediaingredientmech_chebi_term:\n    id: CHEBI:17234\n    label: glucose\n  notes: UTEX lists 20 g/L Glucose, with BACTO-dextrose or Sigma D 9634 as the source\n    for 0.11 M final.\n  nutritional_roles:\n  - CARBON_SOURCE\nsolutions:\n- preferred_term: Bristol Medium\n  concentration:\n    value: '825'\n    unit: ML_PER_L\n  culturemech_term:\n    id: CultureMech:000037\n    label: Bristol Medium\n  notes: UTEX lists 825 mL prepared Bristol Medium per liter before using reserved\n    Bristol Medium to bring the final recipe to 1 L.\n- preferred_term: 'Soilwater: GR+ Medium'\n  concentration:\n    value: '140'\n    unit: ML_PER_L\n  culturemech_term:\n    id: CultureMech:000225\n    label: 'Soilwater: GR+ Medium'\n  notes: 'UTEX lists 140 mL prepared Soilwater: GR+ Medium per liter.'\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Prepare 1 L of Bristol Medium, transfer approximately 825 mL to a 2\n    L Erlenmeyer flask, and save the remaining Bristol Medium.\n- step_number: 2\n  action: MIX\n  description: To the approximately 825 mL Bristol Medium, add the listed components\n    in order while stirring continuously.\n- step_number: 3\n  action: MIX\n  description: Bring the total volume to 1 L with the reserved Bristol Medium.\n- step_number: 4\n  action: AUTOCLAVE\n  description: Cover and autoclave the medium.\n- step_number: 5\n  action: STORE\n  description: Store at refrigerator temperature.\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: trebouxia-medium, URL: https://utex.org/products/trebouxia-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:53.663553Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000234'\n- timestamp: '2026-03-17T19:45:04.573294+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Trebouxia Medium\" to \"trebouxia_medium\" for consistent\n    matching\n- timestamp: '2026-05-16T09:02:56.152033+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.369068+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:31.034673+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 4 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_organic_score35.py\n  action: RESOLVED_UTEX_ORGANIC_SCORE35\n  changes: Grounded UTEX score-35 organic and Volvox components\n  source: https://utex.org/products/trebouxia-medium\n  notes: 'UTEX prepares Trebouxia Medium by supplementing Bristol Medium with prepared\n    Soilwater: GR+ Medium, Proteose Peptone, and glucose before autoclaving.'\nreferences:\n- reference: UTEX:trebouxia-medium\n- reference: https://utex.org/products/trebouxia-medium\n- reference: https://utex.org/products/bristol-medium\n- reference: https://utex.org/products/soilwater-gr-plus-medium\noriginal_name: Trebouxia Medium\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\n",
+      "before_sha256": "428d227f59192ed58fb087ee1586587197bffdc21f1190b5143be5bcdf42effa",
+      "after_text": "id: CultureMech:000234\nname: trebouxia_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: Trebouxia Medium\n  term:\n    id: UTEX:trebouxia-medium\n    label: Trebouxia Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for freshwater\n  algae cultivation.\nnotes: 'UTEX prepares Trebouxia Medium by supplementing Bristol Medium with prepared\n  Soilwater: GR+ Medium, Proteose Peptone, and glucose before autoclaving.'\ningredients:\n- preferred_term: Proteose Peptone\n  concentration:\n    value: '10'\n    unit: G_PER_L\n  term:\n    id: MICRO:0000180\n    label: Proteose Peptone\n  supplier_catalog:\n    supplier_name: BD\n    catalog_number: '211684'\n  notes: UTEX lists 10 g/L Proteose Peptone, BD 211684.\n  nutritional_roles:\n  - NITROGEN_SOURCE\n  evidence:\n  - reference: https://utex.org/products/trebouxia-medium\n    supports: SUPPORT\n    snippet: 10 g/L\n    explanation: 'Supports ingredients[0].concentration for Proteose Peptone. Retain\n      the numeric value with exact source evidence and any explicitly stated preparation\n      basis. Directly retain the source table value and unit; no mass/molar conversion\n      is performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition\n      table and Directions. Component cell: ''Proteose Peptone(BD 211684)''; amount\n      cell: ''10 g/L''.'\n- preferred_term: Glucose\n  concentration:\n    value: '0.11'\n    unit: MOLAR\n  term:\n    id: CHEBI:17234\n    label: glucose\n  mediaingredientmech_chebi_term:\n    id: CHEBI:17234\n    label: glucose\n  notes: UTEX lists 20 g/L Glucose, with BACTO-dextrose or Sigma D 9634 as the source\n    for 0.11 M final.\n  nutritional_roles:\n  - CARBON_SOURCE\n  evidence:\n  - reference: https://utex.org/products/trebouxia-medium\n    supports: SUPPORT\n    snippet: 0.11 M\n    explanation: 'Supports ingredients[1].concentration for Glucose. Retain the numeric\n      value with exact source evidence and any explicitly stated preparation basis.\n      Directly retain the source table value and unit; no mass/molar conversion is\n      performed. The printed rounded molarity is a source assertion, not an independent\n      certification of molecular weight or supplied chemical identity. Separate basis\n      excerpt: ''For 1 L Total''. Locator: #recipe, composition table and Directions.\n      Component cell: ''Glucose(BACTO-dextrose or Sigma D 9634)''; amount cell: ''20\n      g/L''.'\nsolutions:\n- preferred_term: Bristol Medium\n  culturemech_term:\n    id: CultureMech:000037\n    label: Bristol Medium\n  notes: Start with approximately 825 mL prepared Bristol Medium, then use additional\n    reserved Bristol Medium to bring the supplemented recipe to 1 L. The combined\n    initial and makeup dose is not quantified; 825 mL/L is not the total dose.\n- preferred_term: 'Soilwater: GR+ Medium'\n  concentration:\n    value: '140'\n    unit: ML_PER_L\n  culturemech_term:\n    id: CultureMech:000225\n    label: 'Soilwater: GR+ Medium'\n  notes: 'UTEX lists 140 mL prepared Soilwater: GR+ Medium per liter.'\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Prepare 1 L of Bristol Medium, transfer approximately 825 mL to a 2\n    L Erlenmeyer flask, and save the remaining Bristol Medium.\n- step_number: 2\n  action: MIX\n  description: To the approximately 825 mL Bristol Medium, add the listed components\n    in order while stirring continuously.\n- step_number: 3\n  action: MIX\n  description: Bring the total volume to 1 L with the reserved Bristol Medium.\n- step_number: 4\n  action: AUTOCLAVE\n  description: Cover and autoclave the medium.\n- step_number: 5\n  action: STORE\n  description: Store at refrigerator temperature.\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: trebouxia-medium, URL: https://utex.org/products/trebouxia-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:53.663553Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000234'\n- timestamp: '2026-03-17T19:45:04.573294+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Trebouxia Medium\" to \"trebouxia_medium\" for consistent\n    matching\n- timestamp: '2026-05-16T09:02:56.152033+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.369068+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:31.034673+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 4 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_organic_score35.py\n  action: RESOLVED_UTEX_ORGANIC_SCORE35\n  changes: Grounded UTEX score-35 organic and Volvox components\n  source: https://utex.org/products/trebouxia-medium\n  notes: 'UTEX prepares Trebouxia Medium by supplementing Bristol Medium with prepared\n    Soilwater: GR+ Medium, Proteose Peptone, and glucose before autoclaving.'\n- timestamp: '2026-10-10T21:08:21.569593+00:00'\n  curator: codex\n  action: CURATED_UTEX_ORGANIC_MEDIUM_INPUT_BASES_AND_CONCENTRATION_EVIDENCE\n  notes: Exact source-URL and snippet evidence for input doses, optional agar and\n    retained concentrations. Chemical identity mappings and unrelated growth/role\n    claims are unchanged, not independently certified. No taxa-media association added.\n  source: https://utex.org/products/trebouxia-medium\n  changes: '{\"claims\": [{\"basis_snippet\": \"For 1 L Total\", \"calculation\": \"Directly\n    retain the source table value and unit; no mass/molar conversion is performed.\",\n    \"component_snippet\": \"Proteose Peptone(BD 211684)\", \"decision\": \"Retain the numeric\n    value with exact source evidence and any explicitly stated preparation basis.\",\n    \"field\": \"ingredients[0].concentration\", \"ingredient\": \"Proteose Peptone\", \"locator\":\n    \"#recipe, composition table and Directions\", \"old\": {\"unit\": \"G_PER_L\", \"value\":\n    \"10\"}, \"proposed\": {\"unit\": \"G_PER_L\", \"value\": \"10\"}, \"reference\": \"https://utex.org/products/trebouxia-medium\",\n    \"snippet\": \"10 g/L\", \"source_amount\": \"10 g/L\", \"source_table_column\": 2, \"source_table_row\":\n    3, \"status\": \"evidence_only\"}, {\"basis_snippet\": \"For 1 L Total\", \"calculation\":\n    \"Directly retain the source table value and unit; no mass/molar conversion is\n    performed. The printed rounded molarity is a source assertion, not an independent\n    certification of molecular weight or supplied chemical identity.\", \"component_snippet\":\n    \"Glucose(BACTO-dextrose or Sigma D 9634)\", \"decision\": \"Retain the numeric value\n    with exact source evidence and any explicitly stated preparation basis.\", \"field\":\n    \"ingredients[1].concentration\", \"ingredient\": \"Glucose\", \"locator\": \"#recipe,\n    composition table and Directions\", \"old\": {\"unit\": \"MOLAR\", \"value\": \"0.11\"},\n    \"proposed\": {\"unit\": \"MOLAR\", \"value\": \"0.11\"}, \"reference\": \"https://utex.org/products/trebouxia-medium\",\n    \"snippet\": \"0.11 M\", \"source_amount\": \"20 g/L\", \"source_table_column\": 4, \"source_table_row\":\n    4, \"status\": \"evidence_only\"}, {\"basis_snippet\": \"Transfer approximately 825 mL\n    to a 2-L Erlenmeyer flask.\", \"calculation\": \"No final water/carrier fraction can\n    be calculated from an initial portion and unspecified makeup dose.\", \"decision\":\n    \"Remove the unsupported final-fraction slot while retaining the source preparation\n    input in notes.\", \"field\": \"solutions[0].concentration\", \"ingredient\": \"Bristol\n    Medium\", \"locator\": \"#recipe, composition table and Directions\", \"old\": {\"unit\":\n    \"ML_PER_L\", \"value\": \"825\"}, \"proposed\": null, \"proposed_field\": \"solutions[0].notes\",\n    \"reference\": \"https://utex.org/products/trebouxia-medium\", \"snippet\": \"Bring total\n    volume to 1 L with the Bristol Medium saved from step 1.\", \"status\": \"unsupported\"},\n    {\"basis_snippet\": \"For 1 L Total\", \"calculation\": \"Directly retain the source\n    table value and unit; no mass/molar conversion is performed.\", \"component_snippet\":\n    \"Soilwater: GR+ Medium\", \"decision\": \"Retain the numeric value with exact source\n    evidence and any explicitly stated preparation basis.\", \"field\": \"solutions[1].concentration\",\n    \"ingredient\": \"Soilwater: GR+ Medium\", \"locator\": \"#recipe, composition table\n    and Directions\", \"old\": {\"unit\": \"ML_PER_L\", \"value\": \"140\"}, \"proposed\": {\"unit\":\n    \"ML_PER_L\", \"value\": \"140\"}, \"reference\": \"https://utex.org/products/trebouxia-medium\",\n    \"snippet\": \"140 mL/L\", \"source_amount\": \"140 mL/L\", \"source_table_column\": 2,\n    \"source_table_row\": 2, \"status\": \"evidence_only\"}, {\"basis_snippet\": \"For 1 L\n    Total\", \"calculation\": \"Literal source batch dose; no universal final concentration\n    is derived.\", \"decision\": \"Preserve as an inline optional formulation, not a liquid-parent\n    ingredient.\", \"field\": \"variants[0].modifications\", \"ingredient\": \"agar\", \"locator\":\n    \"#recipe, Directions, optional agar instruction\", \"old\": null, \"proposed\": [\"After\n    making up the liquid recipe to 1 L with Bristol Medium, add 15 g agar; do not\n    mix.\"], \"reference\": \"https://utex.org/products/trebouxia-medium\", \"snippet\":\n    \"For 1.5% (w/v) agar medium: add 15 g of agar into the flask; do not mix.\", \"status\":\n    \"add\"}], \"counts\": {\"bibliographic_entries_enriched\": 1, \"inline_variant_options_added\":\n    1, \"new_curation_history\": 1, \"new_evidence\": 4, \"stock_context_notes_corrected\":\n    1, \"unsupported_quantity_slots_removed\": 1}}'\nreferences:\n- reference: UTEX:trebouxia-medium\n- reference: https://utex.org/products/trebouxia-medium\n  title: Trebouxia Medium | UTEX Culture Collection of Algae\n  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-10; Named authors, publication year and DOI not established.\n- reference: https://utex.org/products/bristol-medium\n- reference: https://utex.org/products/soilwater-gr-plus-medium\noriginal_name: Trebouxia Medium\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\nevidence:\n- reference: https://utex.org/products/trebouxia-medium\n  supports: SUPPORT\n  snippet: Bring total volume to 1 L with the Bristol Medium saved from step 1.\n  explanation: 'Supports solutions[0].notes for Bristol Medium. Remove the unsupported\n    final-fraction slot while retaining the source preparation input in notes. No\n    final water/carrier fraction can be calculated from an initial portion and unspecified\n    makeup dose. Separate basis excerpt: ''Transfer approximately 825 mL to a 2-L\n    Erlenmeyer flask.''. Locator: #recipe, composition table and Directions. Separate\n    exact excerpt: ''140 mL/L''. Supports solutions[1].concentration for Soilwater:\n    GR+ Medium. Retain the numeric value with exact source evidence and any explicitly\n    stated preparation basis. Directly retain the source table value and unit; no\n    mass/molar conversion is performed. Separate basis excerpt: ''For 1 L Total''.\n    Locator: #recipe, composition table and Directions. Component cell: ''Soilwater:\n    GR+ Medium''; amount cell: ''140 mL/L''.'\nvariants:\n- name: Trebouxia Medium with agar\n  relationship: SUPPLEMENTED_VARIANT\n  description: Optional source-listed agar formulation; the parent remains liquid.\n  modifications:\n  - After making up the liquid recipe to 1 L with Bristol Medium, add 15 g agar; do\n    not mix.\n  purpose: Preserve the separately specified solid formulation\n  evidence:\n  - reference: https://utex.org/products/trebouxia-medium\n    supports: SUPPORT\n    snippet: 'For 1.5% (w/v) agar medium: add 15 g of agar into the flask; do not\n      mix.'\n    explanation: Supports variants[0].modifications only. The source labels this the\n      1.5% agar formulation; no new measured final volume after agar addition is claimed.\n      No agar is added to the liquid parent.\n",
+      "after_sha256": "b5d933b4953f956ce390dbebe1991f5e8d4c96032a6a8dfdf2fda2bdc7083efe",
+      "claims": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Proteose Peptone",
+          "old": {
+            "value": "10",
+            "unit": "G_PER_L"
+          },
+          "reference": "https://utex.org/products/trebouxia-medium",
+          "status": "evidence_only",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "10",
+            "unit": "G_PER_L"
+          },
+          "snippet": "10 g/L",
+          "basis_snippet": "For 1 L Total",
+          "component_snippet": "Proteose Peptone(BD 211684)",
+          "source_amount": "10 g/L",
+          "source_table_row": 3,
+          "source_table_column": 2,
+          "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Glucose",
+          "old": {
+            "value": "0.11",
+            "unit": "MOLAR"
+          },
+          "reference": "https://utex.org/products/trebouxia-medium",
+          "status": "evidence_only",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "0.11",
+            "unit": "MOLAR"
+          },
+          "snippet": "0.11 M",
+          "basis_snippet": "For 1 L Total",
+          "component_snippet": "Glucose(BACTO-dextrose or Sigma D 9634)",
+          "source_amount": "20 g/L",
+          "source_table_row": 4,
+          "source_table_column": 4,
+          "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed. The printed rounded molarity is a source assertion, not an independent certification of molecular weight or supplied chemical identity.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        },
+        {
+          "field": "solutions[0].concentration",
+          "ingredient": "Bristol Medium",
+          "old": {
+            "value": "825",
+            "unit": "ML_PER_L"
+          },
+          "reference": "https://utex.org/products/trebouxia-medium",
+          "status": "unsupported",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": null,
+          "proposed_field": "solutions[0].notes",
+          "snippet": "Bring total volume to 1 L with the Bristol Medium saved from step 1.",
+          "basis_snippet": "Transfer approximately 825 mL to a 2-L Erlenmeyer flask.",
+          "calculation": "No final water/carrier fraction can be calculated from an initial portion and unspecified makeup dose.",
+          "decision": "Remove the unsupported final-fraction slot while retaining the source preparation input in notes."
+        },
+        {
+          "field": "solutions[1].concentration",
+          "ingredient": "Soilwater: GR+ Medium",
+          "old": {
+            "value": "140",
+            "unit": "ML_PER_L"
+          },
+          "reference": "https://utex.org/products/trebouxia-medium",
+          "status": "evidence_only",
+          "locator": "#recipe, composition table and Directions",
+          "proposed": {
+            "value": "140",
+            "unit": "ML_PER_L"
+          },
+          "snippet": "140 mL/L",
+          "basis_snippet": "For 1 L Total",
+          "component_snippet": "Soilwater: GR+ Medium",
+          "source_amount": "140 mL/L",
+          "source_table_row": 2,
+          "source_table_column": 2,
+          "calculation": "Directly retain the source table value and unit; no mass/molar conversion is performed.",
+          "decision": "Retain the numeric value with exact source evidence and any explicitly stated preparation basis."
+        },
+        {
+          "field": "variants[0].modifications",
+          "ingredient": "agar",
+          "old": null,
+          "proposed": [
+            "After making up the liquid recipe to 1 L with Bristol Medium, add 15 g agar; do not mix."
+          ],
+          "status": "add",
+          "reference": "https://utex.org/products/trebouxia-medium",
+          "snippet": "For 1.5% (w/v) agar medium: add 15 g of agar into the flask; do not mix.",
+          "basis_snippet": "For 1 L Total",
+          "locator": "#recipe, Directions, optional agar instruction",
+          "calculation": "Literal source batch dose; no universal final concentration is derived.",
+          "decision": "Preserve as an inline optional formulation, not a liquid-parent ingredient."
+        }
+      ],
+      "existing_claim_rows": 4,
+      "new_claim_rows": 1,
+      "counts": {
+        "unsupported_quantity_slots_removed": 1,
+        "inline_variant_options_added": 1,
+        "stock_context_notes_corrected": 1,
+        "new_evidence": 4,
+        "bibliographic_entries_enriched": 1,
+        "new_curation_history": 1
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T05:32:25.550310+00:00",
+  "generated": "2026-10-10T23:14:04.584382+00:00",
   "category": "algae",
   "count": 254,
   "recipes": {
@@ -53,7 +53,7 @@
     "CultureMech:000005": {
       "name": "1_2_soil_seawater_medium",
       "filename": "1_2_soil_seawater_medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 3,
       "id": "CultureMech:000005",
       "source_id": "UTEX:one-half-soil-plus-seawater-medium",
       "source": "unknown",
@@ -75,7 +75,7 @@
     "CultureMech:000007": {
       "name": "1_3_soil_seawater_medium",
       "filename": "1_3_soil_seawater_medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 3,
       "id": "CultureMech:000007",
       "source_id": "UTEX:one-third-soil-plus-seawater-medium",
       "source": "unknown",
@@ -98,7 +98,7 @@
     "CultureMech:000009": {
       "name": "1_4_soil_seawater_medium",
       "filename": "1_4_soil_seawater_medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 3,
       "id": "CultureMech:000009",
       "source_id": "UTEX:one-fourth-soil-plus-seawater-medium",
       "source": "unknown",
@@ -120,7 +120,7 @@
     "CultureMech:000011": {
       "name": "1_5_soil_seawater_medium",
       "filename": "1_5_soil_seawater_medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 3,
       "id": "CultureMech:000011",
       "source_id": "UTEX:one-fifth-soil-plus-seawater-medium",
       "source": "unknown",
@@ -582,7 +582,7 @@
       "id": "CultureMech:000163",
       "source_id": "UTEX:es-over-10-enriched-seawater-medium",
       "source": "unknown",
-      "solution_count": 6,
+      "solution_count": 1,
       "categories": [
         "algae"
       ]
@@ -594,7 +594,7 @@
       "id": "CultureMech:000164",
       "source_id": "UTEX:es-over-2-enriched-seawater-medium",
       "source": "unknown",
-      "solution_count": 6,
+      "solution_count": 1,
       "categories": [
         "algae"
       ]
@@ -606,7 +606,7 @@
       "id": "CultureMech:000165",
       "source_id": "UTEX:es-over-4-enriched-seawater-medium",
       "source": "unknown",
-      "solution_count": 6,
+      "solution_count": 1,
       "categories": [
         "algae"
       ]
@@ -618,7 +618,7 @@
       "id": "CultureMech:000166",
       "source_id": "UTEX:enriched-seawater-medium",
       "source": "unknown",
-      "solution_count": 6,
+      "solution_count": 1,
       "categories": [
         "algae"
       ]
@@ -2521,7 +2521,7 @@
     "CultureMech:000221": {
       "name": "soil_seawater_medium",
       "filename": "soil_seawater_medium.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 2,
       "id": "CultureMech:000221",
       "source_id": "UTEX:soil-plus-seawater-medium",
       "source": "unknown",

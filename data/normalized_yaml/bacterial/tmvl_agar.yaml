@@ -23,6 +23,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J633
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Glucose",
+                              "compound_id": 5,
+                              "amount": 20,
+                              "unit": "g",
+                              "g_l": 19.802,
+                              "mmol_l": 109.913,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[0].concentration (Glucose)
+      in MediaDive medium J633; locator=$.data.solutions[0].recipe[0]. Provider explicitly
+      reports g_l=19.802; check: 20 g * 1 g/g / (1010 ml / 1000 ml per L) = 19.80198019801980198019801980
+      g/L. This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1010. Retrieved 2026-10-07T14:37:28.726964+00:00;
+      response SHA256=07d2fdba087f90c6d69da9e34c8e478d0deb185dca8535a8701e79419c52ad1e.'
 - preferred_term: Trypticase peptone
   concentration:
     value: '9.90099'
@@ -45,6 +68,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J633
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 4.9505,
+                              "mmol_l": 84.7107,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[4].concentration (NaCl) in
+      MediaDive medium J633; locator=$.data.solutions[0].recipe[4]. Provider explicitly
+      reports g_l=4.9505; check: 5 g * 1 g/g / (1010 ml / 1000 ml per L) = 4.950495049504950495049504950
+      g/L. This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1010. Retrieved 2026-10-07T14:37:28.726964+00:00;
+      response SHA256=07d2fdba087f90c6d69da9e34c8e478d0deb185dca8535a8701e79419c52ad1e.'
 - preferred_term: Hemin
   term:
     id: CHEBI:50385
@@ -65,6 +111,28 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J633
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 7,
+                              "compound": "L-Cysteine HCl x H2O",
+                              "compound_id": 770,
+                              "amount": 0.3,
+                              "unit": "g",
+                              "g_l": 0.29703,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[6].concentration (L-Cysteine
+      HCl x H2O) in MediaDive medium J633; locator=$.data.solutions[0].recipe[6].
+      Provider explicitly reports g_l=0.29703; check: 0.3 g * 1 g/g / (1010 ml / 1000
+      ml per L) = 0.2970297029702970297029702970 g/L. This supports the provider-declared
+      main-recipe concentration, not an independently measured final volume, a stock
+      composition, or a downstream assay dilution. Water alone does not establish
+      final volume. Exact source ingredient labels/forms are matched; secondary ontology
+      mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume
+      (ml): 1010. Retrieved 2026-10-07T14:37:28.726964+00:00; response SHA256=07d2fdba087f90c6d69da9e34c8e478d0deb185dca8535a8701e79419c52ad1e.'
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -75,6 +143,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
     label: polysorbate 80
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J633
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 8,
+                              "compound": "Tween 80",
+                              "compound_id": 22,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 0.990099,
+                              "mmol_l": 0.756471,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[7].concentration (Tween 80)
+      in MediaDive medium J633; locator=$.data.solutions[0].recipe[7]. Provider explicitly
+      reports g_l=0.990099; check: 1 g * 1 g/g / (1010 ml / 1000 ml per L) = 0.9900990099009900990099009901
+      g/L. This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1010. Retrieved 2026-10-07T14:37:28.726964+00:00;
+      response SHA256=07d2fdba087f90c6d69da9e34c8e478d0deb185dca8535a8701e79419c52ad1e.'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -85,6 +176,29 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J633
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 9,
+                              "compound": "Agar",
+                              "compound_id": 3,
+                              "amount": 15,
+                              "unit": "g",
+                              "g_l": 14.8515,
+                              "mmol_l": 44.1575,
+                              "optional": 0
+                          }
+    explanation: 'Concentration evidence for ingredients[8].concentration (Agar) in
+      MediaDive medium J633; locator=$.data.solutions[0].recipe[8]. Provider explicitly
+      reports g_l=14.8515; check: 15 g * 1 g/g / (1010 ml / 1000 ml per L) = 14.85148514851485148514851485
+      g/L. This supports the provider-declared main-recipe concentration, not an independently
+      measured final volume, a stock composition, or a downstream assay dilution.
+      Water alone does not establish final volume. Exact source ingredient labels/forms
+      are matched; secondary ontology mappings are not validated by this evidence.
+      Additional exact value at $.data.solutions[0].volume (ml): 1010. Retrieved 2026-10-07T14:37:28.726964+00:00;
+      response SHA256=07d2fdba087f90c6d69da9e34c8e478d0deb185dca8535a8701e79419c52ad1e.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -114,3 +228,28 @@ curation_history:
   notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-07T14:52:40.011908+00:00'
+  curator: codex
+  action: CURATED_MEDIUM_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Exact medium/source membership, ingredient inventory/forms, physical-state
+    conditions, literal snippets, and arithmetic checked. Stock boundaries, source-only
+    rows, preparation context, and variants remain explicit follow-up tasks; secondary
+    chemical mappings unchanged.
+  source: https://mediadive.dsmz.de/rest/medium/J633
+  changes: 'ingredients[0].concentration: {"unit": "G_PER_L", "value": "19.802"} ->
+    {"unit": "G_PER_L", "value": "19.802"} (evidence_only); ingredients[4].concentration:
+    {"unit": "G_PER_L", "value": "4.9505"} -> {"unit": "G_PER_L", "value": "4.9505"}
+    (evidence_only); ingredients[6].concentration: {"unit": "G_PER_L", "value": "0.29703"}
+    -> {"unit": "G_PER_L", "value": "0.29703"} (evidence_only); ingredients[7].concentration:
+    {"unit": "G_PER_L", "value": "0.990099"} -> {"unit": "G_PER_L", "value": "0.990099"}
+    (evidence_only); ingredients[8].concentration: {"unit": "G_PER_L", "value": "14.8515"}
+    -> {"unit": "G_PER_L", "value": "14.8515"} (evidence_only)'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/J633
+  title: 'MediaDive medium J633: TMVL AGAR'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; locator=$.data.solutions[0]; response_sha256=07d2fdba087f90c6d69da9e34c8e478d0deb185dca8535a8701e79419c52ad1e;
+    original_recipe=https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=633; individual
+    authors and publication year not supplied. Provider-declared main-recipe amounts
+    only. Original recipe collection=JCM; GRMD accession=633; DSMZ is the MediaDive
+    dataset provider, not the original recipe collection.

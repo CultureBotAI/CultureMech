@@ -1,0 +1,4283 @@
+{
+  "terminal": true,
+  "scope_sha256": "842b1a9a35fa31adfdcb6ecccb39c33b3ad591e69d13e092456f8b61411093c9",
+  "normalized_sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c",
+  "checks": [
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 1399. HALOPHILIC MEDIUM'; official source title is '1399. HALOPHILIC MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/archaea/DSMZ_1399_HALOPHILIC_MEDIUM.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+      "supporting_text": "FeCl3 x 6 H2O (0.5%) 7 drops",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "FeCl3 x 6 H2O (0.5%) 7 drops",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[1].snippet",
+      "record": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "sulfur (10 g)-sterilized by steaming for 3 h on each of \nthree successive days",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "sulfur (10 g)-sterilized by steaming for 3 h on each of \nthree successive days",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/archaea/KOMODO_265_THERMOFILUM_PENDENS_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "Distilled water 1000.00 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Distilled water 1000.00 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[12].evidence[0].snippet",
+      "record": "data/normalized_yaml/archaea/KOMODO_265_THERMOFILUM_PENDENS_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/archaea/KOMODO_265_THERMOFILUM_PENDENS_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "sucrose (20 ml of 10% \nw/v solution)-filter-sterilized",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "sucrose (20 ml of 10% \nw/v solution)-filter-sterilized",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/archaea/KOMODO_265_THERMOFILUM_PENDENS_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "Na2S x 9 H2O (10 ml of 3% w/v \nsolution)-autoclaved under nitrogen atmosphere.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Na2S x 9 H2O (10 ml of 3% w/v \nsolution)-autoclaved under nitrogen atmosphere.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[3].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/archaea/KOMODO_265_THERMOFILUM_PENDENS_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "Polar lipid fraction prepared from \n Thermoproteus tenax (DSM 2078) \n or from any other archaebacterium, \n aqueous suspension 6 - 12.00 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Polar lipid fraction prepared from \n Thermoproteus tenax (DSM 2078) \n or from any other archaebacterium, \n aqueous suspension 6 - 12.00 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[4].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/archaea/KOMODO_265_THERMOFILUM_PENDENS_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[0].snippet",
+      "record": "data/normalized_yaml/archaea/KOMODO_265_THERMOFILUM_PENDENS_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 265. THERMOFILUM PENDENS MEDIUM'; official source title is '265. THERMOFILUM PENDENS MEDIUM'",
+      "match_result": null,
+      "path": "references[0].title",
+      "record": "data/normalized_yaml/archaea/KOMODO_265_THERMOFILUM_PENDENS_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+      "supporting_text": "FeCl3 x 6 H2O (0.5%) 7 drops",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "FeCl3 x 6 H2O (0.5%) 7 drops",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[1].snippet",
+      "record": "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "sulfur (10 g)-sterilized by steaming for 3 h on each of \nthree successive days",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "sulfur (10 g)-sterilized by steaming for 3 h on each of \nthree successive days",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/archaea/thermofilum_pendens_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 265. THERMOFILUM PENDENS MEDIUM'; official source title is '265. THERMOFILUM PENDENS MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/archaea/thermofilum_pendens_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "Distilled water 1000.00 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Distilled water 1000.00 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[12].evidence[0].snippet",
+      "record": "data/normalized_yaml/archaea/thermofilum_pendens_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/archaea/thermofilum_pendens_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "sucrose (20 ml of 10% \nw/v solution)-filter-sterilized",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "sucrose (20 ml of 10% \nw/v solution)-filter-sterilized",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/archaea/thermofilum_pendens_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "Na2S x 9 H2O (10 ml of 3% w/v \nsolution)-autoclaved under nitrogen atmosphere.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Na2S x 9 H2O (10 ml of 3% w/v \nsolution)-autoclaved under nitrogen atmosphere.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[3].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/archaea/thermofilum_pendens_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "Polar lipid fraction prepared from \n Thermoproteus tenax (DSM 2078) \n or from any other archaebacterium, \n aqueous suspension 6 - 12.00 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Polar lipid fraction prepared from \n Thermoproteus tenax (DSM 2078) \n or from any other archaebacterium, \n aqueous suspension 6 - 12.00 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[4].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/archaea/thermofilum_pendens_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[0].snippet",
+      "record": "data/normalized_yaml/archaea/thermofilum_pendens_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf",
+      "supporting_text": "Tap water 1000.0 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Tap water 1000.0 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[2].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_1046_ANOXYBACILLUS_AMYLOLYTICUS_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[2].title",
+      "record": "data/normalized_yaml/bacterial/KOMODO_1046_ANOXYBACILLUS_AMYLOLYTICUS_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf",
+      "supporting_text": "Sea water 1000.0 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Sea water 1000.0 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[5].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_1065_M1-NOCARDIOPSIS_ARABIA_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[2].title",
+      "record": "data/normalized_yaml/bacterial/KOMODO_1065_M1-NOCARDIOPSIS_ARABIA_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 111. BEIJERINCKIA MEDIUM'; official source title is '111. BEIJERINCKIA MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/KOMODO_111_BEIJERINCKIA_MEDIUM.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+      "supporting_text": "Riboflavin (0.2 mg/ml) filter-sterilized 5.0 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Riboflavin (0.2 mg/ml) filter-sterilized 5.0 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ Medium 125: METHYLOBACTERIUM MEDIUM'; official source title is '125. METHYLOBACTERIUM MEDIUM'",
+      "match_result": null,
+      "path": "references[2].title",
+      "record": "data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 12: SOIL EXTRACT MEDIUM'; official source title is '12. SOIL EXTRACT MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/KOMODO_12_SOIL_EXTRACT_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Proteose peptone No 2 (DIFCO 0121-01-3)                                        5.0         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Proteose peptone No 2 (DIFCO 0121-01-3)                                        5.0         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Proteose tryptone (DIFCO 0123-01)                                              1.0         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Proteose tryptone (DIFCO 0123-01)                                              1.0         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[1].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Proteose yeastolate (TC) (DIFCO 5577-15)                                       1.0         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Proteose yeastolate (TC) (DIFCO 5577-15)                                       1.0         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[2].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "HEPES buffer (acid) (SIGMA H3375)                                              6.0         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "HEPES buffer (acid) (SIGMA H3375)                                              6.0         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[3].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Na-citrate                                                                     0.7         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Na-citrate                                                                     0.7         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[4].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Glucose (\u03b1-, D+)                                                               3.0         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Glucose (\u03b1-, D+)                                                               3.0         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[5].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Na-pyruvate                                                                    0.8         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Na-pyruvate                                                                    0.8         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[6].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "N-Acetylglucosamine                                                            0.4         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "N-Acetylglucosamine                                                            0.4         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[7].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "MgCl2 x 6 H2O                                                                  0.3         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "MgCl2 x 6 H2O                                                                  0.3         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[8].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "L-Glutamine                                                                    0.1         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "L-Glutamine                                                                    0.1         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[9].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Aqua bidest. filter-sterilized                                              900.0         ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Aqua bidest. filter-sterilized                                              900.0         ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[10].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Stir slowly at 4 - 10\uf0b0C for 3 hours, adjust pH to 7.6 with 5 M NaOH. Filter sterilize.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Stir slowly at 4 - 10\uf0b0C for 3 hours, adjust pH to 7.6 with 5 M NaOH. Filter sterilize.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].solutions[1].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Dissolve 14.0 g gelatine in 200 ml bidest. water,",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Dissolve 14.0 g gelatine in 200 ml bidest. water,",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Dissolve 14.0 g gelatine in 200 ml bidest. water,",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Dissolve 14.0 g gelatine in 200 ml bidest. water,",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[1].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143\nml bidest. water,",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143\nml bidest. water,",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143\nml bidest. water,",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143\nml bidest. water,",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[1].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Rabbit serum, inactivated\n (GIBCO 037-06120M)                                                            86.0        ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Rabbit serum, inactivated\n (GIBCO 037-06120M)                                                            86.0        ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/KOMODO_403_BSK-MEDIUM.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+      "supporting_text": "Tap water 1000.0 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Tap water 1000.0 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[6].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_467_OTTOW_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 467. OTTOW MEDIUM'; official source title is '467. OTTOW MEDIUM'",
+      "match_result": null,
+      "path": "references[2].title",
+      "record": "data/normalized_yaml/bacterial/KOMODO_467_OTTOW_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+      "supporting_text": "Catalase and MgSO4 are sterilized separately by filtration.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Catalase and MgSO4 are sterilized separately by filtration.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_469_YM-CATALASE_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 469. YM-CATALASE MEDIUM'; official source title is '469. YM-CATALASE MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/KOMODO_469_YM-CATALASE_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf",
+      "supporting_text": "Sodium resazurin (0.1% w/v) 0.50 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Sodium resazurin (0.1% w/v) 0.50 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "supporting_text": "For solid media add 15.0 g agar. Dissolve ingredients and adjust the pH to 7.2. Sterilize by autoclaving. After sterilization add sterile Tween 80 to a final concentration of 1.0%.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "For solid media add 15.0 g agar. Dissolve ingredients and adjust the pH to 7.2. Sterilize by autoclaving. After sterilization add sterile Tween 80 to a final concentration of 1.0%.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_618_TWEEN_80A_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "supporting_text": "Casitone (Difco) 5.0 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Casitone (Difco) 5.0 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_618_TWEEN_80A_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "supporting_text": "Yeast extract (Difco) 3.0 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Yeast extract (Difco) 3.0 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[1].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_618_TWEEN_80A_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "supporting_text": "MgSO4 x 7 H2O 2.0 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "MgSO4 x 7 H2O 2.0 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[2].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_618_TWEEN_80A_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "supporting_text": "For solid media add 15.0 g agar.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "For solid media add 15.0 g agar.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[3].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_618_TWEEN_80A_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "supporting_text": "Distilled water 1000.0 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Distilled water 1000.0 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[4].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_618_TWEEN_80A_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "supporting_text": "For solid media add 15.0 g agar. Dissolve ingredients and adjust the pH to 7.2. Sterilize by autoclaving. After sterilization add sterile Tween 80 to a final concentration of 1.0%.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "For solid media add 15.0 g agar. Dissolve ingredients and adjust the pH to 7.2. Sterilize by autoclaving. After sterilization add sterile Tween 80 to a final concentration of 1.0%.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_618_TWEEN_80A_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 618: TWEEN 80A MEDIUM'; official source title is '618. TWEEN 80A MEDIUM'",
+      "match_result": null,
+      "path": "references[0].title",
+      "record": "data/normalized_yaml/bacterial/KOMODO_618_TWEEN_80A_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[4].title",
+      "record": "data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "Corn meal agar                                                               17.0          g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Corn meal agar                                                               17.0          g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "Peptone from soy meal                                                          8.0         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Peptone from soy meal                                                          8.0         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[1].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "K2HPO4                                                                         1.0         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "K2HPO4                                                                         1.0         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[2].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "KH2PO4                                                                         1.0         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "KH2PO4                                                                         1.0         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[3].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "MgSO4 x 7 H2O                                                                  0.2         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "MgSO4 x 7 H2O                                                                  0.2         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[4].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "Distilled water                                                           1000.0         ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Distilled water                                                           1000.0         ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[5].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].solutions[0].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "20% bovine serum albumin, fraction V                                         10.0        ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "20% bovine serum albumin, fraction V                                         10.0        ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "10% glucose                                                                    5.0       ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "10% glucose                                                                    5.0       ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "10% cysteine (free base)                                                     10.0        ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "10% cysteine (free base)                                                     10.0        ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[3].composition[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "For liquid medium, omit corn meal agar and change the phosphate concentration to\nKH2PO4, 1.5 g and K2HPO4, 0.5 g.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "For liquid medium, omit corn meal agar and change the phosphate concentration to\nKH2PO4, 1.5 g and K2HPO4, 0.5 g.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "variants[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf",
+      "supporting_text": "Tap water 1000.00 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Tap water 1000.00 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[8].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_803_SPHAEROTILUS-LEPTOTHRIX_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[2].title",
+      "record": "data/normalized_yaml/bacterial/KOMODO_803_SPHAEROTILUS-LEPTOTHRIX_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "KH2PO4 2.000 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "KH2PO4 2.000 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "(NH4)2SO4 2.000 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "(NH4)2SO4 2.000 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[1].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "MgSO4 x 7 H2O 0.125 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "MgSO4 x 7 H2O 0.125 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[2].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "NaCl 0.500 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "NaCl 0.500 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[3].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "FeSO4 x 7 H2O 0.002 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "FeSO4 x 7 H2O 0.002 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[4].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "Distilled water 1000.000 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Distilled water 1000.000 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[5].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%).",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%).",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "variants[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%).",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%).",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "variants[1].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%).",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%).",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 956: MEDIUM FOR DSM 14457 AND 14458'; official source title is '956. MEDIUM FOR DSM 14457 AND 14458'",
+      "match_result": null,
+      "path": "references[0].title",
+      "record": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf",
+      "supporting_text": "Tap water 1000.0 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Tap water 1000.0 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[2].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/anoxybacillus_amylolyticus_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/anoxybacillus_amylolyticus_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium13.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 13: official recipe'; official source title is '13. BACILLUS ACIDOCALDARIUS MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/bacillus_acidocaldarius_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 2. BACILLUS PASTEURII MEDIUM'; official source title is '2. BACILLUS PASTEURII MEDIUM'",
+      "match_result": null,
+      "path": "references[2].title",
+      "record": "data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 1. NUTRIENT AGAR'; official source title is '1. NUTRIENT AGAR'",
+      "match_result": null,
+      "path": "references[3].title",
+      "record": "data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 260: official recipe'; official source title is '260. BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/bacillus_schlegelii_heterotrophic_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 27: official recipe'; official source title is '27. RHODOSPIRILLACEAE MEDIUM (modified)'",
+      "match_result": null,
+      "path": "references[2].title",
+      "record": "data/normalized_yaml/bacterial/bacillus_schlegelii_heterotrophic_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium369.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 369: official recipe'; official source title is '369. BACILLUS TUSCIAE MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 261: official recipe'; official source title is '261. MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF'",
+      "match_result": null,
+      "path": "references[2].title",
+      "record": "data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 260: official recipe'; official source title is '260. BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM'",
+      "match_result": null,
+      "path": "references[3].title",
+      "record": "data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 27: official recipe'; official source title is '27. RHODOSPIRILLACEAE MEDIUM (modified)'",
+      "match_result": null,
+      "path": "references[4].title",
+      "record": "data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 111. BEIJERINCKIA MEDIUM'; official source title is '111. BEIJERINCKIA MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/beijerinckia_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Proteose peptone No 2 (DIFCO 0121-01-3)                                        5.0         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Proteose peptone No 2 (DIFCO 0121-01-3)                                        5.0         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Proteose tryptone (DIFCO 0123-01)                                              1.0         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Proteose tryptone (DIFCO 0123-01)                                              1.0         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[1].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Proteose yeastolate (TC) (DIFCO 5577-15)                                       1.0         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Proteose yeastolate (TC) (DIFCO 5577-15)                                       1.0         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[2].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "HEPES buffer (acid) (SIGMA H3375)                                              6.0         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "HEPES buffer (acid) (SIGMA H3375)                                              6.0         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[3].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Na-citrate                                                                     0.7         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Na-citrate                                                                     0.7         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[4].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Glucose (\u03b1-, D+)                                                               3.0         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Glucose (\u03b1-, D+)                                                               3.0         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[5].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Na-pyruvate                                                                    0.8         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Na-pyruvate                                                                    0.8         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[6].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "N-Acetylglucosamine                                                            0.4         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "N-Acetylglucosamine                                                            0.4         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[7].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "MgCl2 x 6 H2O                                                                  0.3         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "MgCl2 x 6 H2O                                                                  0.3         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[8].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "L-Glutamine                                                                    0.1         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "L-Glutamine                                                                    0.1         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[9].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Aqua bidest. filter-sterilized                                              900.0         ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Aqua bidest. filter-sterilized                                              900.0         ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[10].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Stir slowly at 4 - 10\uf0b0C for 3 hours, adjust pH to 7.6 with 5 M NaOH. Filter sterilize.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Stir slowly at 4 - 10\uf0b0C for 3 hours, adjust pH to 7.6 with 5 M NaOH. Filter sterilize.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].solutions[1].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Dissolve 14.0 g gelatine in 200 ml bidest. water,",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Dissolve 14.0 g gelatine in 200 ml bidest. water,",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Dissolve 14.0 g gelatine in 200 ml bidest. water,",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Dissolve 14.0 g gelatine in 200 ml bidest. water,",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[1].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143\nml bidest. water,",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143\nml bidest. water,",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143\nml bidest. water,",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) in 143\nml bidest. water,",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[1].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "Rabbit serum, inactivated\n (GIBCO 037-06120M)                                                            86.0        ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Rabbit serum, inactivated\n (GIBCO 037-06120M)                                                            86.0        ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/bsk_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 657: COW MANURE AGAR'; official source title is '657. COW MANURE AGAR'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/cow_manure_agar.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+      "supporting_text": "For DSM 9463: Adjust  pH  to 3.5  with 1 N H2SO4  prior to  autoclaving  and omit  FeSO4 x\n7 H2O from the medium. Before use, add 5.00 g/l of powdered sulfur sterilized by steaming\nin a boiling water bath for 3 hours on each of 3 successive days.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "For DSM 9463: Adjust  pH  to 3.5  with 1 N H2SO4  prior to  autoclaving  and omit  FeSO4 x\n7 H2O from the medium. Before use, add 5.00 g/l of powdered sulfur sterilized by steaming\nin a boiling water bath for 3 hours on each of 3 successive days.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/for_dsm_9463.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+      "supporting_text": "For DSM 9463: Adjust  pH  to 3.5  with 1 N H2SO4  prior to  autoclaving  and omit  FeSO4 x\n7 H2O from the medium. Before use, add 5.00 g/l of powdered sulfur sterilized by steaming\nin a boiling water bath for 3 hours on each of 3 successive days.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "For DSM 9463: Adjust  pH  to 3.5  with 1 N H2SO4  prior to  autoclaving  and omit  FeSO4 x\n7 H2O from the medium. Before use, add 5.00 g/l of powdered sulfur sterilized by steaming\nin a boiling water bath for 3 hours on each of 3 successive days.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "variants[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/for_dsm_9463.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[2].title",
+      "record": "data/normalized_yaml/bacterial/for_dsm_9463.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+      "supporting_text": "For DSM 9466: Adjust  pH  to 3.0  with 1 N H2SO4  prior  to autoclaving and  omit  FeSO4 x\n7 H2O from the medium. Before use, add 5.00 g/l of powdered sulfur sterilized by steaming\nin a boiling water bath for 3 hours on each of 3 successive days and 0.20 g/l of yeast\nextract (from a sterile stock solution).",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "For DSM 9466: Adjust  pH  to 3.0  with 1 N H2SO4  prior  to autoclaving and  omit  FeSO4 x\n7 H2O from the medium. Before use, add 5.00 g/l of powdered sulfur sterilized by steaming\nin a boiling water bath for 3 hours on each of 3 successive days and 0.20 g/l of yeast\nextract (from a sterile stock solution).",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/for_dsm_9466.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+      "supporting_text": "For DSM 9466: Adjust  pH  to 3.0  with 1 N H2SO4  prior  to autoclaving and  omit  FeSO4 x\n7 H2O from the medium. Before use, add 5.00 g/l of powdered sulfur sterilized by steaming\nin a boiling water bath for 3 hours on each of 3 successive days and 0.20 g/l of yeast\nextract (from a sterile stock solution).",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "For DSM 9466: Adjust  pH  to 3.0  with 1 N H2SO4  prior  to autoclaving and  omit  FeSO4 x\n7 H2O from the medium. Before use, add 5.00 g/l of powdered sulfur sterilized by steaming\nin a boiling water bath for 3 hours on each of 3 successive days and 0.20 g/l of yeast\nextract (from a sterile stock solution).",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "variants[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/for_dsm_9466.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[2].title",
+      "record": "data/normalized_yaml/bacterial/for_dsm_9466.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+      "supporting_text": "For DSM 9467: Adjust  pH to 3.0  with 1 N H2SO4  prior to autoclaving   and  omit  FeSO4 x\n7 H2O from the medium. Before use, add 2.00 g/l D-glucose and 0.1 g/l yeast extract from\nfilter-sterilized stock solutions.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "For DSM 9467: Adjust  pH to 3.0  with 1 N H2SO4  prior to autoclaving   and  omit  FeSO4 x\n7 H2O from the medium. Before use, add 2.00 g/l D-glucose and 0.1 g/l yeast extract from\nfilter-sterilized stock solutions.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/for_dsm_9467.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+      "supporting_text": "For DSM 9467: Adjust  pH to 3.0  with 1 N H2SO4  prior to autoclaving   and  omit  FeSO4 x\n7 H2O from the medium. Before use, add 2.00 g/l D-glucose and 0.1 g/l yeast extract from\nfilter-sterilized stock solutions.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "For DSM 9467: Adjust  pH to 3.0  with 1 N H2SO4  prior to autoclaving   and  omit  FeSO4 x\n7 H2O from the medium. Before use, add 2.00 g/l D-glucose and 0.1 g/l yeast extract from\nfilter-sterilized stock solutions.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "variants[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/for_dsm_9467.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[2].title",
+      "record": "data/normalized_yaml/bacterial/for_dsm_9467.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+      "supporting_text": "For DSM 9468: Adjust pH to 1.6 with 4 N H2SO4 prior to autoclaving.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "For DSM 9468: Adjust pH to 1.6 with 4 N H2SO4 prior to autoclaving.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "variants[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/for_dsm_9468.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[2].title",
+      "record": "data/normalized_yaml/bacterial/for_dsm_9468.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium452.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 452: official recipe'; official source title is '452. GLUCOSE MEDIUM (NAKAYAMA)'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/glucose_medium_nakayama.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/lacrimispora_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf",
+      "supporting_text": "Sodium resazurin (0.1% w/v) 0.50 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Sodium resazurin (0.1% w/v) 0.50 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/lacrimispora_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium79.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 79: official recipe'; official source title is '79. LEUCOTHRIX MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/leucothrix_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf",
+      "supporting_text": "Sea water 1000.0 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Sea water 1000.0 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[5].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/m1_nocardiopsis_arabia_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/m1_nocardiopsis_arabia_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf",
+      "supporting_text": "Tap water 1000.00 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Tap water 1000.00 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "composition[8].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/mediadive_1634_Main_sol_803.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/mediadive_1634_Main_sol_803.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 111. BEIJERINCKIA MEDIUM'; official source title is '111. BEIJERINCKIA MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/mediadive_190_Main_sol_111.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf",
+      "supporting_text": "Tap water 1000.0 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Tap water 1000.0 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "composition[2].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/mediadive_2114_Main_sol_1046.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/mediadive_2114_Main_sol_1046.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf",
+      "supporting_text": "Sea water 1000.0 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Sea water 1000.0 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "composition[5].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/mediadive_2155_Main_sol_1065.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/mediadive_2155_Main_sol_1065.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ Medium 125: METHYLOBACTERIUM MEDIUM'; official source title is '125. METHYLOBACTERIUM MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/mediadive_223_Main_sol_125.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/mediadive_2323_Main_sol_1157.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+      "supporting_text": "Riboflavin (0.2 mg/ml) filter-sterilized 5.0 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Riboflavin (0.2 mg/ml) filter-sterilized 5.0 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "source_data.evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/mediadive_2323_Main_sol_1157.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+      "supporting_text": "FeCl3 x 6 H2O (0.5%) 7 drops",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "FeCl3 x 6 H2O (0.5%) 7 drops",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "source_data.evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 1399. HALOPHILIC MEDIUM'; official source title is '1399. HALOPHILIC MEDIUM'",
+      "match_result": null,
+      "path": "references[2].title",
+      "record": "data/normalized_yaml/bacterial/mediadive_2838_Total_Salts.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "sulfur (10 g)-sterilized by steaming for 3 h on each of \nthree successive days",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "sulfur (10 g)-sterilized by steaming for 3 h on each of \nthree successive days",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/mediadive_531_Main_sol_265.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 265. THERMOFILUM PENDENS MEDIUM'; official source title is '265. THERMOFILUM PENDENS MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/mediadive_531_Main_sol_265.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "Distilled water 1000.00 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Distilled water 1000.00 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[12].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/mediadive_531_Main_sol_265.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/mediadive_531_Main_sol_265.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "sucrose (20 ml of 10% \nw/v solution)-filter-sterilized",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "sucrose (20 ml of 10% \nw/v solution)-filter-sterilized",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/mediadive_531_Main_sol_265.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "Na2S x 9 H2O (10 ml of 3% w/v \nsolution)-autoclaved under nitrogen atmosphere.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Na2S x 9 H2O (10 ml of 3% w/v \nsolution)-autoclaved under nitrogen atmosphere.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[3].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/mediadive_531_Main_sol_265.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "Polar lipid fraction prepared from \n Thermoproteus tenax (DSM 2078) \n or from any other archaebacterium, \n aqueous suspension 6 - 12.00 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Polar lipid fraction prepared from \n Thermoproteus tenax (DSM 2078) \n or from any other archaebacterium, \n aqueous suspension 6 - 12.00 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[4].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/mediadive_531_Main_sol_265.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+      "supporting_text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Yeast extract (20 \nml of 10% w/v solution)-boiled for few minutes, not autoclaved",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "source_data.evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/mediadive_531_Main_sol_265.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+      "supporting_text": "Tap water 1000.0 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Tap water 1000.0 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "composition[6].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/mediadive_959_Main_sol_467.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 467. OTTOW MEDIUM'; official source title is '467. OTTOW MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/mediadive_959_Main_sol_467.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 469. YM-CATALASE MEDIUM'; official source title is '469. YM-CATALASE MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/mediadive_961_Main_sol_469.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+      "supporting_text": "Catalase and MgSO4 are sterilized separately by filtration.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Catalase and MgSO4 are sterilized separately by filtration.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "source_data.evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/mediadive_961_Main_sol_469.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/mediadive_995_Main_sol_489.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf",
+      "supporting_text": "Sodium resazurin (0.1% w/v) 0.50 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Sodium resazurin (0.1% w/v) 0.50 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "source_data.evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/mediadive_995_Main_sol_489.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 261: official recipe'; official source title is '261. MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/medium_for_chemolithotrophic_growth_of_bacillus_schlegelii.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 260: official recipe'; official source title is '260. BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM'",
+      "match_result": null,
+      "path": "references[2].title",
+      "record": "data/normalized_yaml/bacterial/medium_for_chemolithotrophic_growth_of_bacillus_schlegelii.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 27: official recipe'; official source title is '27. RHODOSPIRILLACEAE MEDIUM (modified)'",
+      "match_result": null,
+      "path": "references[3].title",
+      "record": "data/normalized_yaml/bacterial/medium_for_chemolithotrophic_growth_of_bacillus_schlegelii.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 956: MEDIUM FOR DSM 14457 AND 14458'; official source title is '956. MEDIUM FOR DSM 14457 AND 14458'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "KH2PO4 2.000 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "KH2PO4 2.000 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "(NH4)2SO4 2.000 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "(NH4)2SO4 2.000 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[1].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "MgSO4 x 7 H2O 0.125 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "MgSO4 x 7 H2O 0.125 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[2].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "NaCl 0.500 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "NaCl 0.500 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[3].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "FeSO4 x 7 H2O 0.002 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "FeSO4 x 7 H2O 0.002 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[4].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "Distilled water 1000.000 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Distilled water 1000.000 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[5].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%).",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%).",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "variants[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%).",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%).",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "variants[1].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%).",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%).",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%).",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%).",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "KH2PO4 2.000 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "KH2PO4 2.000 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "(NH4)2SO4 2.000 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "(NH4)2SO4 2.000 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[1].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "MgSO4 x 7 H2O 0.125 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "MgSO4 x 7 H2O 0.125 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[2].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "NaCl 0.500 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "NaCl 0.500 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[3].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "FeSO4 x 7 H2O 0.002 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "FeSO4 x 7 H2O 0.002 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[4].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "Distilled water 1000.000 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Distilled water 1000.000 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[5].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%).",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%) or methylamine (to a final concentration of 0.3%).",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 956: MEDIUM FOR DSM 14457 AND 14458'; official source title is '956. MEDIUM FOR DSM 14457 AND 14458'",
+      "match_result": null,
+      "path": "references[0].title",
+      "record": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ Medium 125: METHYLOBACTERIUM MEDIUM'; official source title is '125. METHYLOBACTERIUM MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/methylobacterium_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+      "supporting_text": "Tap water 1000.0 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Tap water 1000.0 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[6].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/ottow_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 467. OTTOW MEDIUM'; official source title is '467. OTTOW MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/ottow_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/pyem_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+      "supporting_text": "Riboflavin (0.2 mg/ml) filter-sterilized 5.0 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Riboflavin (0.2 mg/ml) filter-sterilized 5.0 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/pyem_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium98.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 98: official recipe'; official source title is '98. RHIZOBIUM MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/rhizobium_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "Corn meal agar                                                               17.0          g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Corn meal agar                                                               17.0          g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "Peptone from soy meal                                                          8.0         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Peptone from soy meal                                                          8.0         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[1].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "K2HPO4                                                                         1.0         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "K2HPO4                                                                         1.0         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[2].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "KH2PO4                                                                         1.0         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "KH2PO4                                                                         1.0         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[3].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "MgSO4 x 7 H2O                                                                  0.2         g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "MgSO4 x 7 H2O                                                                  0.2         g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[4].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "Distilled water                                                           1000.0         ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Distilled water                                                           1000.0         ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[5].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].solutions[0].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "20% bovine serum albumin, fraction V                                         10.0        ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "20% bovine serum albumin, fraction V                                         10.0        ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[1].composition[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "10% glucose                                                                    5.0       ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "10% glucose                                                                    5.0       ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[2].composition[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "10% cysteine (free base)                                                     10.0        ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "10% cysteine (free base)                                                     10.0        ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[3].composition[0].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "For liquid medium, omit corn meal agar and change the phosphate concentration to\nKH2PO4, 1.5 g and K2HPO4, 0.5 g.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "For liquid medium, omit corn meal agar and change the phosphate concentration to\nKH2PO4, 1.5 g and K2HPO4, 0.5 g.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "variants[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 12: SOIL EXTRACT MEDIUM'; official source title is '12. SOIL EXTRACT MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/soil_extract_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf",
+      "supporting_text": "Tap water 1000.00 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Tap water 1000.00 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[8].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/sphaerotilus_leptothrix_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf",
+      "supporting_text": "",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/sphaerotilus_leptothrix_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "supporting_text": "For solid media add 15.0 g agar. Dissolve ingredients and adjust the pH to 7.2. Sterilize by autoclaving. After sterilization add sterile Tween 80 to a final concentration of 1.0%.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "For solid media add 15.0 g agar. Dissolve ingredients and adjust the pH to 7.2. Sterilize by autoclaving. After sterilization add sterile Tween 80 to a final concentration of 1.0%.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "ingredients[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/tween_80a_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 618: TWEEN 80A MEDIUM'; official source title is '618. TWEEN 80A MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/tween_80a_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "supporting_text": "Casitone (Difco) 5.0 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Casitone (Difco) 5.0 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[0].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/tween_80a_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "supporting_text": "Yeast extract (Difco) 3.0 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Yeast extract (Difco) 3.0 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[1].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/tween_80a_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "supporting_text": "MgSO4 x 7 H2O 2.0 g",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "MgSO4 x 7 H2O 2.0 g",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[2].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/tween_80a_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "supporting_text": "For solid media add 15.0 g agar.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "For solid media add 15.0 g agar.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[3].evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/tween_80a_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "supporting_text": "Distilled water 1000.0 ml",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Distilled water 1000.0 ml",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "solutions[0].composition[4].evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/tween_80a_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+      "supporting_text": "For solid media add 15.0 g agar. Dissolve ingredients and adjust the pH to 7.2. Sterilize by autoclaving. After sterilization add sterile Tween 80 to a final concentration of 1.0%.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "For solid media add 15.0 g agar. Dissolve ingredients and adjust the pH to 7.2. Sterilize by autoclaving. After sterilization add sterile Tween 80 to a final concentration of 1.0%.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[0].snippet",
+      "record": "data/normalized_yaml/bacterial/tween_80a_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ 469. YM-CATALASE MEDIUM'; official source title is '469. YM-CATALASE MEDIUM'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/bacterial/ym_catalase_medium.yaml",
+      "kind": "title"
+    },
+    {
+      "is_valid": true,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+      "supporting_text": "Catalase and MgSO4 are sterilized separately by filtration.",
+      "severity": "INFO",
+      "message": "Official recipe literal reference check passed",
+      "match_result": {
+        "found": true,
+        "similarity_score": 1.0,
+        "matched_text": "Catalase and MgSO4 are sterilized separately by filtration.",
+        "match_location": null,
+        "error_message": null,
+        "suggested_fix": null,
+        "best_match": null
+      },
+      "path": "evidence[1].snippet",
+      "record": "data/normalized_yaml/bacterial/ym_catalase_medium.yaml",
+      "kind": "snippet"
+    },
+    {
+      "is_valid": false,
+      "reference_id": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium129.pdf",
+      "supporting_text": "",
+      "severity": "ERROR",
+      "message": "title_mismatch: expected 'DSMZ medium 129: official recipe'; official source title is '129. POTATO DEXTROSE AGAR'",
+      "match_result": null,
+      "path": "references[1].title",
+      "record": "data/normalized_yaml/fungal/potato_dextrose_agar.yaml",
+      "kind": "title"
+    }
+  ],
+  "sources": {
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf": {
+      "title": "1399. HALOPHILIC MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf",
+        "http_status": 200,
+        "sha256": "2963aad2443640140a0f16db0fa9cf1cf3d3287b6592cb15f2173e7272980ddc",
+        "accessed_at": "2026-10-08T22:44:43.877067+00:00",
+        "pdf_sha256": "c76a8a1d8c4e5da897b13caa810918454efc9258b0b78a433aa14032c3ed8d3e",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/4facf8806c0bda2b7e1ff30a9260f10bd61b8dcda9c786f1aecb768851e76b9d.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf": {
+      "title": "1164. HALOMICROBIUM KATESII MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1164.pdf",
+        "http_status": 200,
+        "sha256": "9f238eb83a24c4fb8556aea4362cb049a900208af01d166801aaf0929b096bfd",
+        "accessed_at": "2026-10-08T22:44:44.183261+00:00",
+        "pdf_sha256": "f027673164f8c24fe2894a21b3487e26d8f7f48ec18ee14c365c0644790a9c4c",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/72061d848abb20f5671c0eb363837d97b9e3d58dc71991f1fd238c41fe47e2c7.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf": {
+      "title": "265. THERMOFILUM PENDENS MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium265.pdf",
+        "http_status": 200,
+        "sha256": "53e482cbf53896ce91d7bf57a1c112219043ba312cb8a1a7865dfca13a5b0ca6",
+        "accessed_at": "2026-10-08T22:44:44.522143+00:00",
+        "pdf_sha256": "904a0973cffadca97f2da8c6b8cd2a89f5f842d53bdb98212d27aa86741ab173",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/24a20d69e974b662311db7729699a6818478fbb48725880c7da4a88032214242.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf": {
+      "title": "1046. ANOXYBACILLUS AMYLOLYTICUS MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf",
+        "http_status": 200,
+        "sha256": "35f98d2a8fb27ec3894b8045b10f8c39cb209d43a3cf4b4c908c949d021802ac",
+        "accessed_at": "2026-10-08T22:44:44.825700+00:00",
+        "pdf_sha256": "1534392d6488ebf9c255814809118f31965cef3d2bfab1e2c7ca534350eef6fb",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/15eb369d9966efd52b317266dd2cb4344c43614bca32bd651ab904dad5cf6124.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf": {
+      "title": "1065. M1-NOCARDIOPSIS ARABIA MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1065.pdf",
+        "http_status": 200,
+        "sha256": "09f597d1bacb9937e0a854f00d6f8fd8ba1ca31d325df46fd72df728bf192063",
+        "accessed_at": "2026-10-08T22:44:45.119403+00:00",
+        "pdf_sha256": "d927ffe37287e5d88f2baedc5df27a83ca0ef55e4209acf40aff0ff92b8c81e5",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/43e370dc7e16d33a070ddfa718bb3c1b441bfa975696bacf19db0664391c9471.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf": {
+      "title": "111. BEIJERINCKIA MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf",
+        "http_status": 200,
+        "sha256": "2d44e067af44c226040c8f0940de6277895466cd2873daafbbf61150a0671ae0",
+        "accessed_at": "2026-10-08T22:44:45.425741+00:00",
+        "pdf_sha256": "0d5b2157ff931d8a898043364f6eceac7b58391b019feb8178247235195208d8",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/ab8ee92d76b6f2402b6b4795c4f7c8cd75a74f496c7a58dd10626c029c72a254.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf": {
+      "title": "1157. PYEM MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf",
+        "http_status": 200,
+        "sha256": "f4027b13c80040a1507d7acf0b9a47d965459cfadd1ffa67bd19fc682ca709ce",
+        "accessed_at": "2026-10-08T22:44:45.727080+00:00",
+        "pdf_sha256": "5751821c9e6eeb6cba6e6d6dfcc64e8d5e268f6dfcc16b41e92f60d133e9e212",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/21113decdccbe8099d07767e63eb526395de7c7f8da7341daf8ac055ffa3150f.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf": {
+      "title": "125. METHYLOBACTERIUM MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+        "http_status": 200,
+        "sha256": "7cc42bdcbea29168f3ee89a5afbabf42e68a3c298e2cc3a4af121d903f7386c4",
+        "accessed_at": "2026-10-08T22:44:46.037268+00:00",
+        "pdf_sha256": "e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/c94bff3b11cf0a9e1affb783f90a97be97e7320095924b2c18d17274fe943d69.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf": {
+      "title": "12. SOIL EXTRACT MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf",
+        "http_status": 200,
+        "sha256": "80dd4d55dc6938cb97c9579e30a7c2452e5e5271e67ef7aa0fd5d00c6bd1232d",
+        "accessed_at": "2026-10-08T22:44:46.341444+00:00",
+        "pdf_sha256": "1b4394336f7ace4e09c66fc67ed2e745e3c633b725e436d94335b99289243580",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/24e21b5374d9dd16903423a622acc2aa112dfe69b8ffe57d0b71a42d7fb5061d.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf": {
+      "title": "403. BSK-MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf",
+        "http_status": 200,
+        "sha256": "1caa39771ff3d82823f7ec48cb1af48cff9ef36845d8324226725467d328d143",
+        "accessed_at": "2026-10-08T22:44:46.840296+00:00",
+        "pdf_sha256": "8053bfa9ef5ee989f52bc670e76bf85544eeae2142917643c06d99b629a222ef",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/b7d9d34bf3d8036e3752c74a62cf14b5a273fb1871f7ec1fea4a8a6f61552f9b.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf": {
+      "title": "467. OTTOW MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+        "http_status": 200,
+        "sha256": "6b786f2ede7bfc29eb39e8003a6561f0049ea42f3ecfa87cf29a270baedb9e63",
+        "accessed_at": "2026-10-08T22:44:47.137776+00:00",
+        "pdf_sha256": "31ad0e734637e5aa1086a814056ce5e3baecd59847eaedf24db0e91ccc89e8f6",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/1f9b0c89520049f7a0a2c0f54743b443655106f824db4c51b0650ee3e7a5a0f3.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf": {
+      "title": "469. YM-CATALASE MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+        "http_status": 200,
+        "sha256": "35bc4c04851489e382d7d69f4589dbb324478a4b84c46c9e89d5481fe3226429",
+        "accessed_at": "2026-10-08T22:44:47.490646+00:00",
+        "pdf_sha256": "a7da4f0650bedfcb0c353fe9ae83fd885641a14ed6565b62a6655db099855531",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/3fbfe09dea228a187eb94de6b026db7966d97c720b38ad3a0b9e4533fcd69980.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf": {
+      "title": "489: LACRIMISPORA MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf",
+        "http_status": 200,
+        "sha256": "717acfe72db2bd9ec81e9ad5364391974143383ba1656b00d2ce2ad2f16f2704",
+        "accessed_at": "2026-10-08T22:44:48.418144+00:00",
+        "pdf_sha256": "87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/2a5134da110b96a7351d40e99d372867df3f231dc2ea06176f513acb375da037.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf": {
+      "title": "618. TWEEN 80A MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium618.pdf",
+        "http_status": 200,
+        "sha256": "e2e1b12a95b9343cb95683db400b11c733a3cbb6fd7016da0193cbcec1b110b9",
+        "accessed_at": "2026-10-08T22:44:48.896999+00:00",
+        "pdf_sha256": "cd503969dc2f910a9b50c270952adf4c00eaffb09762b02a50e60c23555d8f20",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/8f8ce15fd4d596cc24c334c150da3fcb1417aba51002940e94c1c21d50e3e567.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf": {
+      "title": "670: ACIDIFERROBACTER (MS) MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+        "http_status": 200,
+        "sha256": "1b31684f2edf986ac8c89e75bb3ba61b0d305cfe3c12fed10e05fe9e80ca6a17",
+        "accessed_at": "2026-10-08T22:44:49.817142+00:00",
+        "pdf_sha256": "e21dbc3f7c16cf301001aaa5ca4ca7aa57fb486cbccba0995c46e094946917ab",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/d41661756b13ed36ad4fd87b03297d1f0b285a831883de3fbf09de4719c6d74f.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf": {
+      "title": "751. SC MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+        "http_status": 200,
+        "sha256": "4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3",
+        "accessed_at": "2026-10-08T22:44:50.305592+00:00",
+        "pdf_sha256": "721e0310d250ea6eab5d453f063b9452b48b8368ad53fa9384cb54434d2e59fb",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/351798d3ff56b23f73aec00afecd0a6f1f25297f1546f01674232ea7994d4e75.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf": {
+      "title": "803. SPHAEROTILUS-LEPTOTHRIX MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf",
+        "http_status": 200,
+        "sha256": "c17cb298008c8e380a4170c7a4d64fb384426bd7cadac52b7144eddbd7f1e68c",
+        "accessed_at": "2026-10-08T22:44:50.603647+00:00",
+        "pdf_sha256": "63d3059acf4e173e703ee111f90b63b44126ee03a15cd3fa1b28c4e565a88afe",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/acadf6b7cf1bb33cf8573b396b4e9fbfa1d4111ace1936cc76a84b018944c258.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf": {
+      "title": "956. MEDIUM FOR DSM 14457 AND 14458",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+        "http_status": 200,
+        "sha256": "46f47ed20f7136c62ed77cd94a6ca521236ce7483986fc81ca76129887834b0a",
+        "accessed_at": "2026-10-08T22:44:50.909334+00:00",
+        "pdf_sha256": "156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/f776332468ed2e4088bb63bbe28588236de3cd3ce51e1cba3832e3eb73fc745a.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium13.pdf": {
+      "title": "13. BACILLUS ACIDOCALDARIUS MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium13.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium13.pdf",
+        "http_status": 200,
+        "sha256": "75cf6a48ac25fa6be32f96f9e8e55f888d0bd7d744452b639737101bd15302eb",
+        "accessed_at": "2026-10-08T22:44:51.232199+00:00",
+        "pdf_sha256": "5de6bdfb00d6a166c335f5df44f780408884678ecc130a5474eb7a5d80c59c95",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/145fbcc5542626b05c0ce9ab992fbed5671c8ca0bbd833e850e3160dfc022939.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf": {
+      "title": "2. BACILLUS PASTEURII MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf",
+        "http_status": 200,
+        "sha256": "f4927e608b91bac7a10f6575d0f5c318b40eb083cd88a0e80284d12ab9fc73fb",
+        "accessed_at": "2026-10-08T22:44:51.525790+00:00",
+        "pdf_sha256": "2216960d2564bff726b3b45c9f4a3e5d84d5a549cff3bb548c74a118de1e56c9",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/8fe1dbd51926462d5a34f4e9510659323dc2fc74d4f5cb3272ead6535ed7d041.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf": {
+      "title": "1. NUTRIENT AGAR",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+        "http_status": 200,
+        "sha256": "d9cbb12ce2d550b0953c9e4239215d81bf5f4f61642552edb7a3d591c44959a0",
+        "accessed_at": "2026-10-08T22:44:51.830745+00:00",
+        "pdf_sha256": "95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/d2fcffd72e4c3da06155c1f3b8e69edd4783d7c3404fb80d15aebf541dffbf9e.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf": {
+      "title": "260. BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium260.pdf",
+        "http_status": 200,
+        "sha256": "076eea22a114607e65b219be50fff913152035f9fcd3a366891fb186c053513d",
+        "accessed_at": "2026-10-08T22:44:52.137947+00:00",
+        "pdf_sha256": "ab78dd71cbd8d2d91832258c3cda9ccde3c6344d87b1ac791892c257691bf291",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/8a5212db87456ae0e34260cf0e98f88830594b96fc89cee30e833d742fa45773.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf": {
+      "title": "27. RHODOSPIRILLACEAE MEDIUM (modified)",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "http_status": 200,
+        "sha256": "fd5165d5e219288a724889bb95060ff67cc1098b3f1da1b3f08dd3542d62b6d0",
+        "accessed_at": "2026-10-08T22:44:52.468373+00:00",
+        "pdf_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "pdf_pages": 2,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/724dd5780506f426497ced04f84d1fd2bf1ad05d680716f86ed706cea8761310.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium369.pdf": {
+      "title": "369. BACILLUS TUSCIAE MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium369.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium369.pdf",
+        "http_status": 200,
+        "sha256": "2dff57e0a4b973fc88b3fe481a9d45be50d1494d303788333e1b0254a2b041f9",
+        "accessed_at": "2026-10-08T22:44:52.767437+00:00",
+        "pdf_sha256": "cb7da859a785ac99638a2590b988241221a2b035de782e05785182d565c24ade",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/3dad8c1a047ec33ff450d8421b9534be9c9d573ea366dc086c384a66ce8a20c7.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf": {
+      "title": "261. MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf",
+        "http_status": 200,
+        "sha256": "da2157407b4dd0a17deeef1b75d8f209b58792e660b53113d8e0a9cc02457c0a",
+        "accessed_at": "2026-10-08T22:44:53.062184+00:00",
+        "pdf_sha256": "abea799d50da431e0446e012179e4ef6144c6f239cc8db830e33abafbcf33596",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/65ff6b2b3aacff1e51fc142f89fd72e67a58579c93a06602cd7ad0802aeb33c4.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf": {
+      "title": "657. COW MANURE AGAR",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf",
+        "http_status": 200,
+        "sha256": "50f333483881d3653cbd5c426f7698ebc74d80bcf0bd0ce4517df62bfebfde5c",
+        "accessed_at": "2026-10-08T22:44:53.371825+00:00",
+        "pdf_sha256": "eb788e7b0ce8da48e2699a178dac7fdc2f6b0a49742fb69e3e7595b8c1624930",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/42a84c9df8860af5135ad91fb1eef75d60b222b7077a9eaf7125af6c3f9ff993.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium452.pdf": {
+      "title": "452. GLUCOSE MEDIUM (NAKAYAMA)",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium452.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium452.pdf",
+        "http_status": 200,
+        "sha256": "79eba3787b074ad97710f07297182a5d7fe14bd974a4fba569fb97afe6d97bbe",
+        "accessed_at": "2026-10-08T22:44:53.723914+00:00",
+        "pdf_sha256": "e0cc3cb64fcf765793ff9064a8de060201aa4a3f020881546f58094216f6426e",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/0faadbb84273288c39297742954c12338b31e9e8209a0d01b78f652251af0074.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium79.pdf": {
+      "title": "79. LEUCOTHRIX MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium79.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium79.pdf",
+        "http_status": 200,
+        "sha256": "b72e19831bbc1a834a54f6e32bf0bf60398fbad0e7a8c3703e769da2f8e0a157",
+        "accessed_at": "2026-10-08T22:44:54.039345+00:00",
+        "pdf_sha256": "fa30638235b7c7bbe3ebf995ae0ad6cff524802e887d2750d5ce520a41f13984",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/f72c49447c6d066b5393f3829117b6e0436301a89aff7ba8332d9ffb0904ad12.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium98.pdf": {
+      "title": "98. RHIZOBIUM MEDIUM",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium98.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium98.pdf",
+        "http_status": 200,
+        "sha256": "4a1a9b0d5e9389bdde12115b733d0649612872017d38f5269fb3534f0e56dad4",
+        "accessed_at": "2026-10-08T22:44:54.398692+00:00",
+        "pdf_sha256": "ed72f0832f306618c096dd2458e9d07cfd0799b58240476727b5a4984d6551ed",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/d26a57afe276747201975a39f9fad4671d31e7fbf86c0611e0e7017eab7b445d.json"
+    },
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium129.pdf": {
+      "title": "129. POTATO DEXTROSE AGAR",
+      "metadata": {
+        "version": 2,
+        "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium129.pdf",
+        "response_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium129.pdf",
+        "http_status": 200,
+        "sha256": "f20fb3a7767ed276db99b10dd698ce8bf823fcf4043616e57c0cb3e527538414",
+        "accessed_at": "2026-10-08T22:44:54.745733+00:00",
+        "pdf_sha256": "0cc96a482ddf12da286edde02e76d510b4d92ff9e9e42eb3133a6f440b442fff",
+        "pdf_pages": 1,
+        "media_type": "application/pdf",
+        "encoding": "utf-8",
+        "extraction": {
+          "library": "pypdf",
+          "version": "6.16.1",
+          "mode": "layout"
+        }
+      },
+      "cache": "references_cache/official-recipes-v1/a98ecda9368558260901e684d3ea26e4d01ef5dea6f41c1352373c012aa6a7b3.json"
+    }
+  },
+  "full_reference_validation": false,
+  "counts": {
+    "checked_claims": 220,
+    "passed": 179,
+    "failed": 41,
+    "attempted_sources": 30,
+    "source_errors": 0
+  }
+}

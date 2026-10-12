@@ -18,14 +18,29 @@ ingredients:
     id: CHEBI:46756
     label: HEPES
   concentration:
-    value: '75'
+    value: '5.13699'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:46756
     label: HEPES
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896
+    supports: SUPPORT
+    snippet: HEPES 3.0 g
+    explanation: 'Correction of ingredients[0].concentration (HEPES): source batch
+      amount 3.0 g / (584 ml / 1000 ml per L) = 5.13699 g/L. Normalized arithmetic
+      is rounded to six significant digits for storage, not increased experimental
+      precision; original stated inputs are retained in the exact quotes. No mass/volume
+      conversion or density is assumed. Locator=ingredient table, row 1. Additional
+      exact final-volume quote: "fill up to 584 ml with distilled water"; locator=preparation
+      following the ingredient table. Final volume 584 ml = 0.584 L. The imported
+      40 ml denominator counts serum alone and is not the final volume. Original JCM
+      896 recipe; accessed 2026-10-07; capture SHA256=c6e814a8bff1580ddd42179b7d401a204ae19469786fdafd140408d1522f03c8.
+      HTML entities decoded and display whitespace normalized; inline chemical digits
+      preserved. Existing ontology mappings and growth claims are not validated here.'
 - preferred_term: Trisodium citrate x 2 H2O
   concentration:
-    value: '8.75'
+    value: '0.599315'
     unit: G_PER_L
   term:
     id: CHEBI:53258
@@ -33,71 +48,226 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
     label: sodium citrate
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896
+    supports: SUPPORT
+    snippet: Trisodium citrate·2H2O 0.35 g
+    explanation: 'Correction of ingredients[1].concentration (Trisodium citrate·2H2O):
+      source batch amount 0.35 g / (584 ml / 1000 ml per L) = 0.599315 g/L. Normalized
+      arithmetic is rounded to six significant digits for storage, not increased experimental
+      precision; original stated inputs are retained in the exact quotes. No mass/volume
+      conversion or density is assumed. Locator=ingredient table, row 2. Additional
+      exact final-volume quote: "fill up to 584 ml with distilled water"; locator=preparation
+      following the ingredient table. Final volume 584 ml = 0.584 L. The imported
+      40 ml denominator counts serum alone and is not the final volume. Original JCM
+      896 recipe; accessed 2026-10-07; capture SHA256=c6e814a8bff1580ddd42179b7d401a204ae19469786fdafd140408d1522f03c8.
+      HTML entities decoded and display whitespace normalized; inline chemical digits
+      preserved. Existing ontology mappings and growth claims are not validated here.'
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
     label: glucose
   concentration:
-    value: '62.5'
+    value: '4.28082'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896
+    supports: SUPPORT
+    snippet: Glucose 2.5 g
+    explanation: 'Correction of ingredients[2].concentration (Glucose): source batch
+      amount 2.5 g / (584 ml / 1000 ml per L) = 4.28082 g/L. Normalized arithmetic
+      is rounded to six significant digits for storage, not increased experimental
+      precision; original stated inputs are retained in the exact quotes. No mass/volume
+      conversion or density is assumed. Locator=ingredient table, row 3. Additional
+      exact final-volume quote: "fill up to 584 ml with distilled water"; locator=preparation
+      following the ingredient table. Final volume 584 ml = 0.584 L. The imported
+      40 ml denominator counts serum alone and is not the final volume. Original JCM
+      896 recipe; accessed 2026-10-07; capture SHA256=c6e814a8bff1580ddd42179b7d401a204ae19469786fdafd140408d1522f03c8.
+      HTML entities decoded and display whitespace normalized; inline chemical digits
+      preserved. Existing ontology mappings and growth claims are not validated here.'
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
     label: sodium pyruvate
   concentration:
-    value: '10'
+    value: '0.684932'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
     label: sodium pyruvate
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896
+    supports: SUPPORT
+    snippet: Sodium pyruvate 0.4 g
+    explanation: 'Correction of ingredients[3].concentration (Sodium pyruvate): source
+      batch amount 0.4 g / (584 ml / 1000 ml per L) = 0.684932 g/L. Normalized arithmetic
+      is rounded to six significant digits for storage, not increased experimental
+      precision; original stated inputs are retained in the exact quotes. No mass/volume
+      conversion or density is assumed. Locator=ingredient table, row 4. Additional
+      exact final-volume quote: "fill up to 584 ml with distilled water"; locator=preparation
+      following the ingredient table. Final volume 584 ml = 0.584 L. The imported
+      40 ml denominator counts serum alone and is not the final volume. Original JCM
+      896 recipe; accessed 2026-10-07; capture SHA256=c6e814a8bff1580ddd42179b7d401a204ae19469786fdafd140408d1522f03c8.
+      HTML entities decoded and display whitespace normalized; inline chemical digits
+      preserved. Existing ontology mappings and growth claims are not validated here.'
 - preferred_term: N-Acetyl-D-glucosamine
   term:
     id: CHEBI:506227
     label: N-acetyl-D-glucosamine
   concentration:
-    value: '5'
+    value: '0.342466'
     unit: G_PER_L
   mediaingredientmech_term:
     id: MediaIngredientMech:000994
     label: N-Acetyl-D-glucosamine
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896
+    supports: SUPPORT
+    snippet: N-Acetyl-D-glucosamine 0.2 g
+    explanation: 'Correction of ingredients[4].concentration (N-Acetyl-D-glucosamine):
+      source batch amount 0.2 g / (584 ml / 1000 ml per L) = 0.342466 g/L. Normalized
+      arithmetic is rounded to six significant digits for storage, not increased experimental
+      precision; original stated inputs are retained in the exact quotes. No mass/volume
+      conversion or density is assumed. Locator=ingredient table, row 5. Additional
+      exact final-volume quote: "fill up to 584 ml with distilled water"; locator=preparation
+      following the ingredient table. Final volume 584 ml = 0.584 L. The imported
+      40 ml denominator counts serum alone and is not the final volume. Original JCM
+      896 recipe; accessed 2026-10-07; capture SHA256=c6e814a8bff1580ddd42179b7d401a204ae19469786fdafd140408d1522f03c8.
+      HTML entities decoded and display whitespace normalized; inline chemical digits
+      preserved. Existing ontology mappings and growth claims are not validated here.'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
   concentration:
-    value: '27.5'
+    value: '1.88356'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896
+    supports: SUPPORT
+    snippet: NaHCO3 1.1 g
+    explanation: 'Correction of ingredients[5].concentration (NaHCO3): source batch
+      amount 1.1 g / (584 ml / 1000 ml per L) = 1.88356 g/L. Normalized arithmetic
+      is rounded to six significant digits for storage, not increased experimental
+      precision; original stated inputs are retained in the exact quotes. No mass/volume
+      conversion or density is assumed. Locator=ingredient table, row 6. Additional
+      exact final-volume quote: "fill up to 584 ml with distilled water"; locator=preparation
+      following the ingredient table. Final volume 584 ml = 0.584 L. The imported
+      40 ml denominator counts serum alone and is not the final volume. Original JCM
+      896 recipe; accessed 2026-10-07; capture SHA256=c6e814a8bff1580ddd42179b7d401a204ae19469786fdafd140408d1522f03c8.
+      HTML entities decoded and display whitespace normalized; inline chemical digits
+      preserved. Existing ontology mappings and growth claims are not validated here.'
 - preferred_term: MEM alpha Modification
   concentration:
-    value: '130'
+    value: '8.90411'
     unit: G_PER_L
-- preferred_term: Yeast extract
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896
+    supports: SUPPORT
+    snippet: MEM alpha Modification (BioWest) 5.2 g
+    explanation: 'Correction of ingredients[6].concentration (MEM alpha Modification
+      (BioWest)): source batch amount 5.2 g / (584 ml / 1000 ml per L) = 8.90411 g/L.
+      Normalized arithmetic is rounded to six significant digits for storage, not
+      increased experimental precision; original stated inputs are retained in the
+      exact quotes. No mass/volume conversion or density is assumed. Locator=ingredient
+      table, row 7. Additional exact final-volume quote: "fill up to 584 ml with distilled
+      water"; locator=preparation following the ingredient table. Final volume 584
+      ml = 0.584 L. The imported 40 ml denominator counts serum alone and is not the
+      final volume. Original JCM 896 recipe; accessed 2026-10-07; capture SHA256=c6e814a8bff1580ddd42179b7d401a204ae19469786fdafd140408d1522f03c8.
+      HTML entities decoded and display whitespace normalized; inline chemical digits
+      preserved. Existing ontology mappings and growth claims are not validated here.'
+- preferred_term: TC Yeastolate (BD-Difco)
   concentration:
-    value: '25'
+    value: '1.71233'
     unit: G_PER_L
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896
+    supports: SUPPORT
+    snippet: TC Yeastolate (BD-Difco) 1.0 g
+    explanation: 'Correction of ingredients[7].concentration (TC Yeastolate (BD-Difco)):
+      source batch amount 1.0 g / (584 ml / 1000 ml per L) = 1.71233 g/L. Normalized
+      arithmetic is rounded to six significant digits for storage, not increased experimental
+      precision; original stated inputs are retained in the exact quotes. No mass/volume
+      conversion or density is assumed. Locator=ingredient table, row 8. Additional
+      exact final-volume quote: "fill up to 584 ml with distilled water"; locator=preparation
+      following the ingredient table. Final volume 584 ml = 0.584 L. The imported
+      40 ml denominator counts serum alone and is not the final volume. Original JCM
+      896 recipe; accessed 2026-10-07; capture SHA256=c6e814a8bff1580ddd42179b7d401a204ae19469786fdafd140408d1522f03c8.
+      HTML entities decoded and display whitespace normalized; inline chemical digits
+      preserved. Existing ontology mappings and growth claims are not validated here.
+      Also corrects ingredients[7].preferred_term from generic Yeast extract to the
+      source-specified TC Yeastolate (BD-Difco) product; no ontology equivalence is
+      inferred.'
 - preferred_term: Probumin Universal Grade
   concentration:
-    value: '625'
+    value: '42.8082'
     unit: G_PER_L
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896
+    supports: SUPPORT
+    snippet: Probumin Universal Grade (Millipore) 25.0 g
+    explanation: 'Correction of ingredients[8].concentration (Probumin Universal Grade
+      (Millipore)): source batch amount 25.0 g / (584 ml / 1000 ml per L) = 42.8082
+      g/L. Normalized arithmetic is rounded to six significant digits for storage,
+      not increased experimental precision; original stated inputs are retained in
+      the exact quotes. No mass/volume conversion or density is assumed. Locator=ingredient
+      table, row 9. Additional exact final-volume quote: "fill up to 584 ml with distilled
+      water"; locator=preparation following the ingredient table. Final volume 584
+      ml = 0.584 L. The imported 40 ml denominator counts serum alone and is not the
+      final volume. Original JCM 896 recipe; accessed 2026-10-07; capture SHA256=c6e814a8bff1580ddd42179b7d401a204ae19469786fdafd140408d1522f03c8.
+      HTML entities decoded and display whitespace normalized; inline chemical digits
+      preserved. Existing ontology mappings and growth claims are not validated here.'
 - preferred_term: Neopeptone
   concentration:
-    value: '62.5'
+    value: '4.28082'
     unit: G_PER_L
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896
+    supports: SUPPORT
+    snippet: Neopeptone (BD-Difco) 2.5 g
+    explanation: 'Correction of ingredients[9].concentration (Neopeptone (BD-Difco)):
+      source batch amount 2.5 g / (584 ml / 1000 ml per L) = 4.28082 g/L. Normalized
+      arithmetic is rounded to six significant digits for storage, not increased experimental
+      precision; original stated inputs are retained in the exact quotes. No mass/volume
+      conversion or density is assumed. Locator=ingredient table, row 10. Additional
+      exact final-volume quote: "fill up to 584 ml with distilled water"; locator=preparation
+      following the ingredient table. Final volume 584 ml = 0.584 L. The imported
+      40 ml denominator counts serum alone and is not the final volume. Original JCM
+      896 recipe; accessed 2026-10-07; capture SHA256=c6e814a8bff1580ddd42179b7d401a204ae19469786fdafd140408d1522f03c8.
+      HTML entities decoded and display whitespace normalized; inline chemical digits
+      preserved. Existing ontology mappings and growth claims are not validated here.'
 - preferred_term: Rabbit serum
   concentration:
-    value: '40'
-    unit: G_PER_L
+    value: '68.4932'
+    unit: ML_PER_L
+  evidence:
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896
+    supports: SUPPORT
+    snippet: Rabbit serum sterile non-hemolyzed young (Pel-Freez code No. 31125) 40.0
+      ml
+    explanation: 'Correction of ingredients[10].concentration (Rabbit serum sterile
+      non-hemolyzed young (Pel-Freez code No. 31125)): source batch amount 40.0 ml
+      / (584 ml / 1000 ml per L) = 68.4932 ml/L. Normalized arithmetic is rounded
+      to six significant digits for storage, not increased experimental precision;
+      original stated inputs are retained in the exact quotes. No mass/volume conversion
+      or density is assumed. Locator=ingredient table, row 11. Additional exact final-volume
+      quote: "fill up to 584 ml with distilled water"; locator=preparation following
+      the ingredient table. Final volume 584 ml = 0.584 L. The imported 40 ml denominator
+      counts serum alone and is not the final volume. Original JCM 896 recipe; accessed
+      2026-10-07; capture SHA256=c6e814a8bff1580ddd42179b7d401a204ae19469786fdafd140408d1522f03c8.
+      HTML entities decoded and display whitespace normalized; inline chemical digits
+      preserved. Existing ontology mappings and growth claims are not validated here.'
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
   description: Adjust pH to 7.2 with NaOH, fill up to 584 ml with distilled water
-    and filter-sterilize with 0.22 ï¿½m PES filter.
+    and filter-sterilize with 0.22 µm PES filter.
 applications:
 - Microbial cultivation
 curation_history:
@@ -128,3 +298,50 @@ curation_history:
   notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-07T15:13:46.927243+00:00'
+  curator: codex
+  action: CORRECTED_JCM896_ORIGINAL_RECIPE_FINAL_VOLUME
+  notes: Corrected ten mass concentrations using the original 584 ml final volume;
+    corrected serum to ml/L without density inference, restored TC Yeastolate product
+    name and filtration symbol. Each change has original-recipe evidence; prior history,
+    IDs and unrelated ontology/pH/growth fields are preserved.
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896
+  changes: 'ingredients[0].concentration: {"unit": "G_PER_L", "value": "75"} -> {"unit":
+    "G_PER_L", "value": "5.13699"}; ingredients[1].concentration: {"unit": "G_PER_L",
+    "value": "8.75"} -> {"unit": "G_PER_L", "value": "0.599315"}; ingredients[2].concentration:
+    {"unit": "G_PER_L", "value": "62.5"} -> {"unit": "G_PER_L", "value": "4.28082"};
+    ingredients[3].concentration: {"unit": "G_PER_L", "value": "10"} -> {"unit": "G_PER_L",
+    "value": "0.684932"}; ingredients[4].concentration: {"unit": "G_PER_L", "value":
+    "5"} -> {"unit": "G_PER_L", "value": "0.342466"}; ingredients[5].concentration:
+    {"unit": "G_PER_L", "value": "27.5"} -> {"unit": "G_PER_L", "value": "1.88356"};
+    ingredients[6].concentration: {"unit": "G_PER_L", "value": "130"} -> {"unit":
+    "G_PER_L", "value": "8.90411"}; ingredients[7].preferred_term: "Yeast extract"
+    -> "TC Yeastolate (BD-Difco)"; ingredients[7].concentration: {"unit": "G_PER_L",
+    "value": "25"} -> {"unit": "G_PER_L", "value": "1.71233"}; ingredients[8].concentration:
+    {"unit": "G_PER_L", "value": "625"} -> {"unit": "G_PER_L", "value": "42.8082"};
+    ingredients[9].concentration: {"unit": "G_PER_L", "value": "62.5"} -> {"unit":
+    "G_PER_L", "value": "4.28082"}; ingredients[10].concentration: {"unit": "G_PER_L",
+    "value": "40"} -> {"unit": "ML_PER_L", "value": "68.4932"}; preparation_steps[0].description:
+    "Adjust pH to 7.2 with NaOH, fill up to 584 ml with distilled water and filter-sterilize
+    with 0.22 \u00ef\u00bf\u00bdm PES filter." -> "Adjust pH to 7.2 with NaOH, fill
+    up to 584 ml with distilled water and filter-sterilize with 0.22 \u00b5m PES filter."'
+evidence:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896
+  supports: SUPPORT
+  snippet: Adjust pH to 7.2 with NaOH, fill up to 584 ml with distilled water and
+    filter-sterilize with 0.22 µm PES filter.
+  explanation: 'Corrects preparation_steps[0].description: restores the original micrometer
+    symbol in the filtration pore size; pH, final volume, and FILTER_STERILIZE action
+    are unchanged. Additional exact final-volume quote: "fill up to 584 ml with distilled
+    water"; locator=preparation following the ingredient table. Final volume 584 ml
+    = 0.584 L. The imported 40 ml denominator counts serum alone and is not the final
+    volume. Original JCM 896 recipe; accessed 2026-10-07; capture SHA256=c6e814a8bff1580ddd42179b7d401a204ae19469786fdafd140408d1522f03c8.
+    HTML entities decoded and display whitespace normalized; inline chemical digits
+    preserved. Existing ontology mappings and growth claims are not validated here.'
+references:
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896
+  title: 'JCM 896: MODIFIED BSK MEDIUM'
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    source_organization=JCM; accessed_on=2026-10-07; capture_sha256=c6e814a8bff1580ddd42179b7d401a204ae19469786fdafd140408d1522f03c8;
+    locator=ingredient table and following preparation. Individual authors and recipe
+    publication year are not supplied; website copyright year is not publication evidence.

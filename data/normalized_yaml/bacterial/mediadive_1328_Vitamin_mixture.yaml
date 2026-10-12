@@ -16,6 +16,33 @@ composition:
     label: biotin
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1328
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Biotin",
+                      "compound_id": 46,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.2,
+                      "unit": "mg",
+                      "g_l": 0.0002,
+                      "mmol_l": 0.000818632,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Biotin)
+      in MediaDive solution 1328; locator=$.data.recipe[0] (compound_id=46). Provider
+      explicitly reports g_l=0.0002. Arithmetic check: 0.2 mg * 0.001 g/mg / (1000
+      ml / 1000 ml per L) = 0.0002 g/L, consistent with the reported value at its
+      precision. Evidence supports the provider-declared concentration within this
+      solution, not a concentration in a receiving medium or an independently measured
+      final volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:51:31.697902+00:00;
+      response SHA256=77d7bfb9eecefb8a5e10fc5a6bcc937685bb30e252995b5aba2a6a287b8ad770.'
 - preferred_term: Calcium pantothenate
   concentration:
     value: '0.04'
@@ -28,6 +55,33 @@ composition:
     label: Calcium pantothenate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1328
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Calcium pantothenate",
+                      "compound_id": 518,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "mg",
+                      "g_l": 0.04,
+                      "mmol_l": 0.0839396,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Calcium
+      pantothenate) in MediaDive solution 1328; locator=$.data.recipe[1] (compound_id=518).
+      Provider explicitly reports g_l=0.04. Arithmetic check: 40 mg * 0.001 g/mg /
+      (1000 ml / 1000 ml per L) = 0.040 g/L, consistent with the reported value at
+      its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:51:31.697902+00:00;
+      response SHA256=77d7bfb9eecefb8a5e10fc5a6bcc937685bb30e252995b5aba2a6a287b8ad770.'
 - preferred_term: Folic acid
   concentration:
     value: '0.0002'
@@ -40,6 +94,33 @@ composition:
     label: folic acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1328
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Folic acid",
+                      "compound_id": 138,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.2,
+                      "unit": "mg",
+                      "g_l": 0.0002,
+                      "mmol_l": 0.000453104,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Folic acid)
+      in MediaDive solution 1328; locator=$.data.recipe[2] (compound_id=138). Provider
+      explicitly reports g_l=0.0002. Arithmetic check: 0.2 mg * 0.001 g/mg / (1000
+      ml / 1000 ml per L) = 0.0002 g/L, consistent with the reported value at its
+      precision. Evidence supports the provider-declared concentration within this
+      solution, not a concentration in a receiving medium or an independently measured
+      final volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:51:31.697902+00:00;
+      response SHA256=77d7bfb9eecefb8a5e10fc5a6bcc937685bb30e252995b5aba2a6a287b8ad770.'
 - preferred_term: Inositol
   concentration:
     value: '0.2'
@@ -52,6 +133,33 @@ composition:
     label: myo-inositol
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1328
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Inositol",
+                      "compound_id": 451,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 200,
+                      "unit": "mg",
+                      "g_l": 0.2,
+                      "mmol_l": 1.11012,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (Inositol)
+      in MediaDive solution 1328; locator=$.data.recipe[3] (compound_id=451). Provider
+      explicitly reports g_l=0.2. Arithmetic check: 200 mg * 0.001 g/mg / (1000 ml
+      / 1000 ml per L) = 0.200 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:51:31.697902+00:00;
+      response SHA256=77d7bfb9eecefb8a5e10fc5a6bcc937685bb30e252995b5aba2a6a287b8ad770.'
 - preferred_term: Niacin
   concentration:
     value: '0.04'
@@ -64,6 +172,33 @@ composition:
     label: nicotinic acid
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1328
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "Niacin",
+                      "compound_id": 610,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "mg",
+                      "g_l": 0.04,
+                      "mmol_l": 0.324913,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (Niacin)
+      in MediaDive solution 1328; locator=$.data.recipe[4] (compound_id=610). Provider
+      explicitly reports g_l=0.04. Arithmetic check: 40 mg * 0.001 g/mg / (1000 ml
+      / 1000 ml per L) = 0.040 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:51:31.697902+00:00;
+      response SHA256=77d7bfb9eecefb8a5e10fc5a6bcc937685bb30e252995b5aba2a6a287b8ad770.'
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '0.02'
@@ -76,6 +211,33 @@ composition:
     label: 4-aminobenzoic acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1328
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "p-Aminobenzoic acid",
+                      "compound_id": 47,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 20,
+                      "unit": "mg",
+                      "g_l": 0.02,
+                      "mmol_l": 0.145836,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (p-Aminobenzoic
+      acid) in MediaDive solution 1328; locator=$.data.recipe[5] (compound_id=47).
+      Provider explicitly reports g_l=0.02. Arithmetic check: 20 mg * 0.001 g/mg /
+      (1000 ml / 1000 ml per L) = 0.020 g/L, consistent with the reported value at
+      its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:51:31.697902+00:00;
+      response SHA256=77d7bfb9eecefb8a5e10fc5a6bcc937685bb30e252995b5aba2a6a287b8ad770.'
 - preferred_term: Pyridoxine hydrochloride
   concentration:
     value: '0.04'
@@ -88,6 +250,33 @@ composition:
     label: pyridoxine hydrochloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1328
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "Pyridoxine hydrochloride",
+                      "compound_id": 519,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "mg",
+                      "g_l": 0.04,
+                      "mmol_l": 0.194515,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[6].concentration (Pyridoxine
+      hydrochloride) in MediaDive solution 1328; locator=$.data.recipe[6] (compound_id=519).
+      Provider explicitly reports g_l=0.04. Arithmetic check: 40 mg * 0.001 g/mg /
+      (1000 ml / 1000 ml per L) = 0.040 g/L, consistent with the reported value at
+      its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:51:31.697902+00:00;
+      response SHA256=77d7bfb9eecefb8a5e10fc5a6bcc937685bb30e252995b5aba2a6a287b8ad770.'
 - preferred_term: Riboflavin
   concentration:
     value: '0.04'
@@ -100,6 +289,33 @@ composition:
     label: riboflavin
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1328
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 8,
+                      "compound": "Riboflavin",
+                      "compound_id": 136,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 40,
+                      "unit": "mg",
+                      "g_l": 0.04,
+                      "mmol_l": 0.10627,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[7].concentration (Riboflavin)
+      in MediaDive solution 1328; locator=$.data.recipe[7] (compound_id=136). Provider
+      explicitly reports g_l=0.04. Arithmetic check: 40 mg * 0.001 g/mg / (1000 ml
+      / 1000 ml per L) = 0.040 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:51:31.697902+00:00;
+      response SHA256=77d7bfb9eecefb8a5e10fc5a6bcc937685bb30e252995b5aba2a6a287b8ad770.'
 - preferred_term: Thiamine-HCl x 2 H2O
   concentration:
     value: '0.02'
@@ -112,6 +328,33 @@ composition:
     label: thiamine hydrochloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1328
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 9,
+                      "compound": "Thiamine-HCl x 2 H2O",
+                      "compound_id": 77,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 20,
+                      "unit": "mg",
+                      "g_l": 0.02,
+                      "mmol_l": 0.0535761,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[8].concentration (Thiamine-HCl
+      x 2 H2O) in MediaDive solution 1328; locator=$.data.recipe[8] (compound_id=77).
+      Provider explicitly reports g_l=0.02. Arithmetic check: 20 mg * 0.001 g/mg /
+      (1000 ml / 1000 ml per L) = 0.020 g/L, consistent with the reported value at
+      its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:51:31.697902+00:00;
+      response SHA256=77d7bfb9eecefb8a5e10fc5a6bcc937685bb30e252995b5aba2a6a287b8ad770.'
 - preferred_term: Choline
   concentration:
     value: '0.1'
@@ -124,6 +367,33 @@ composition:
     label: choline
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1328
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 10,
+                      "compound": "Choline",
+                      "compound_id": 611,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "mg",
+                      "g_l": 0.1,
+                      "mmol_l": 0.95996,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[9].concentration (Choline)
+      in MediaDive solution 1328; locator=$.data.recipe[9] (compound_id=611). Provider
+      explicitly reports g_l=0.1. Arithmetic check: 100 mg * 0.001 g/mg / (1000 ml
+      / 1000 ml per L) = 0.100 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:51:31.697902+00:00;
+      response SHA256=77d7bfb9eecefb8a5e10fc5a6bcc937685bb30e252995b5aba2a6a287b8ad770.'
 - preferred_term: Vitamin B12
   concentration:
     value: 2e-06
@@ -136,10 +406,37 @@ composition:
     label: vitamin B12
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1328
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 11,
+                      "compound": "Vitamin B12",
+                      "compound_id": 18,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "\u00b5g",
+                      "g_l": 2.0e-6,
+                      "mmol_l": 1.47558e-6,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[10].concentration (Vitamin
+      B12) in MediaDive solution 1328; locator=$.data.recipe[10] (compound_id=18).
+      Provider explicitly reports g_l=2e-06. Arithmetic check: 2 µg * 0.000001 g/µg
+      / (1000 ml / 1000 ml per L) = 0.000002 g/L, consistent with the reported value
+      at its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:51:31.697902+00:00;
+      response SHA256=77d7bfb9eecefb8a5e10fc5a6bcc937685bb30e252995b5aba2a6a287b8ad770.'
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
-    unit: PERCENT_V_V
+    value: '1'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -148,6 +445,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1328
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 12,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1000,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[11].concentration (Distilled
+      water) in MediaDive solution 1328; locator=$.data.recipe[11] (compound_id=4).
+      Source water addition is 1000 ml per prepared batch: 1000 / 1000 = 1 L. No source
+      preparation step gives a competing make-up instruction. This is a batch dose,
+      not a volume percentage; no final-volume or solvent-density assumption is made.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:51:31.697902+00:00;
+      response SHA256=77d7bfb9eecefb8a5e10fc5a6bcc937685bb30e252995b5aba2a6a287b8ad770.'
 curation_history:
 - timestamp: '2026-03-13T06:20:15.685511Z'
   curator: culturemech-id-assigner-v1.0
@@ -181,6 +503,31 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T08:52:28.993811+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/1328
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.0002"} ->
+    {"unit": "G_PER_L", "value": "0.0002"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.04"} -> {"unit": "G_PER_L", "value": "0.04"} (evidence_only);
+    composition[2].concentration: {"unit": "G_PER_L", "value": "0.0002"} -> {"unit":
+    "G_PER_L", "value": "0.0002"} (evidence_only); composition[3].concentration: {"unit":
+    "G_PER_L", "value": "0.2"} -> {"unit": "G_PER_L", "value": "0.2"} (evidence_only);
+    composition[4].concentration: {"unit": "G_PER_L", "value": "0.04"} -> {"unit":
+    "G_PER_L", "value": "0.04"} (evidence_only); composition[5].concentration: {"unit":
+    "G_PER_L", "value": "0.02"} -> {"unit": "G_PER_L", "value": "0.02"} (evidence_only);
+    composition[6].concentration: {"unit": "G_PER_L", "value": "0.04"} -> {"unit":
+    "G_PER_L", "value": "0.04"} (evidence_only); composition[7].concentration: {"unit":
+    "G_PER_L", "value": "0.04"} -> {"unit": "G_PER_L", "value": "0.04"} (evidence_only);
+    composition[8].concentration: {"unit": "G_PER_L", "value": "0.02"} -> {"unit":
+    "G_PER_L", "value": "0.02"} (evidence_only); composition[9].concentration: {"unit":
+    "G_PER_L", "value": "0.1"} -> {"unit": "G_PER_L", "value": "0.1"} (evidence_only);
+    composition[10].concentration: {"unit": "G_PER_L", "value": "2e-06"} -> {"unit":
+    "G_PER_L", "value": "2e-06"} (evidence_only); composition[11].concentration: {"unit":
+    "PERCENT_V_V", "value": "1000"} -> {"unit": "L", "value": "1"} (correct)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -189,3 +536,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/1328
+  title: 'MediaDive solution 1328: Vitamin mixture'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=77d7bfb9eecefb8a5e10fc5a6bcc937685bb30e252995b5aba2a6a287b8ad770;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

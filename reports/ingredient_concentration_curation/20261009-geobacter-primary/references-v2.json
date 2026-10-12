@@ -1,0 +1,847 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "references",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_416_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-000.log",
+      "log_sha256": "6fa73fcf306a7ffe628700b4d9b63c009e827974619f520d54733d013f26c8bc"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_417_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-001.log",
+      "log_sha256": "1071fba572d8055f096883ea0a0168c268345e535c0db180c6293b3e4356652f"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_418_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-002.log",
+      "log_sha256": "9f6e8ad7a2029c87a69e4e8d81083b2156458d8721dcd76996045974fb0cd705"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_419_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-003.log",
+      "log_sha256": "fccf6be86f40b2921d23ecb0a3974f2e8d259852715b4f09ca0d7531451d486e"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_420_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-004.log",
+      "log_sha256": "e863a48684b6fe69977fdb9a963650973b74737e47e24225ab175035330146fd"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_421_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-005.log",
+      "log_sha256": "09a2f1cb07985aaa111f2bf4c36bcadd538884a58c2197c8756e9f0d389b0bc7"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_422_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-006.log",
+      "log_sha256": "9c53e6a39750aba608ff25c22ad5c9941cb80456b62f41bb3472a995985f74dd"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_423_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-007.log",
+      "log_sha256": "f6932d99f4e1656354e4b6aa49ec230e756d19b20368651e038c3e41c4f0deac"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_424_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-008.log",
+      "log_sha256": "1bfa85d684bab3205e0e102bffe37c022c8d9d70d54e68c0968da437aeb84518"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_425_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-009.log",
+      "log_sha256": "3d340ff3d0308a0516f74fb7ea479439980a3d025d7176cd5338fcd3fbb484a2"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_426_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-010.log",
+      "log_sha256": "4b30be93f7ba4f5a26ef2fdc4b8831913ade9691692b9e5bb1f76242320e27f0"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_427_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-011.log",
+      "log_sha256": "fc0c6a2da9f3358b19df9ae4ec3a6107d8a89dc066e99976f06c34de532f09ff"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_428_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-012.log",
+      "log_sha256": "6d7783c22bbb67799728e10f1ea1997fe18660940cef3d93c25579a7d3191241"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_429_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-013.log",
+      "log_sha256": "61d1ac29f373645f5b4dca0140e47c6f5d86fbf3a277a2bb29129f9222f270dc"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-014.log",
+      "log_sha256": "f1b40a188e93465b542c39ac7cc970bcf92320680e1793f66f8ab70349276f7c"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_431_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-015.log",
+      "log_sha256": "cc5710933f66278c92e2f03e352995e51b253d05dcd2e3ba24f7f30611daa4d9"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_432_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-016.log",
+      "log_sha256": "89b07f94871565773f4529f3621ae3ea80e50218dedb3a8cb1b5773a7a28d58e"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_433_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-017.log",
+      "log_sha256": "a603bd26da2c69803251ce673339f2b0a4acb7a090bf645546f759f2ae6c578e"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_434_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-018.log",
+      "log_sha256": "4e5c06d8d0b4761c99035fb0257a51fc16f717ac15217b83803a7990dc681e39"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_435_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-019.log",
+      "log_sha256": "6c7479ed1b5a617bb50a509e0687e9470399889f40c01aa8f9dc52b080a1017e"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_436_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-020.log",
+      "log_sha256": "e9f04117f6347363893ab9993a68acc144db9a7dfb3b81d1f6694278a401898a"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_437_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-021.log",
+      "log_sha256": "458a1d4152474bbd51c9e82be8c5015dcc510ac022ba2497d2bdb81d32908d5f"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_438_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-022.log",
+      "log_sha256": "a59d02d19628b4b7891c3d4a902b3d6d3cfce77e225eec85b25d76525686c55d"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_439_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-023.log",
+      "log_sha256": "e183f6eec46ca9a3d86457742e62fd71d818011e98c12461f5bc1ef182566031"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_440_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-024.log",
+      "log_sha256": "a87f2489bc8d6c1e375b738809ecb2c3e1a877311c74f9e9595db9f4a9b3d9c0"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_441_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-025.log",
+      "log_sha256": "fca784e1dab705dac9947ce5b6e65ce87a6deeec1be92745564e16a05ee77fa6"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_442_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-026.log",
+      "log_sha256": "0e0cbaa852a7a282784b6cf1b47af524f4c829c3c70072b6fb319fb5a23a5b08"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_443_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-027.log",
+      "log_sha256": "346103ece185d03c8b9872c95c64aab2c59fc80b880342a1ac0b1b34a12d5cae"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_444_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-028.log",
+      "log_sha256": "5c357029e5f24434dd227d36da0d7044ddd41b51f8fd6b9f4ce34f5834fb4cfd"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_445_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-029.log",
+      "log_sha256": "737141526b173afc136d6c379ddd8c59d803bd4ab920c508fe94eaba427ced1b"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_446_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-030.log",
+      "log_sha256": "69c17bedd678b71d145ed7e329c8e68278df3689f95e3f61ba71b4482ccf89ee"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_447_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-031.log",
+      "log_sha256": "cef5f1a83c590866d70cdf6c9568757e148bb4ef549c03c79aaa70d8fb9b9d69"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_448_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-032.log",
+      "log_sha256": "fb8f0467367b426c22e3b717aa45faf320058b69bbab8a964f535ae24b5e5784"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_449_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-033.log",
+      "log_sha256": "5c06281b883278b49af6d07dbb0a6dd9b5aaa613367ad046ce0031c0081c32e8"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_450_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-034.log",
+      "log_sha256": "6c1843f1adea9ef154b94ee54c0bbe30e1b5cf0fad85064d43ef81ba53e0265d"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_451_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-035.log",
+      "log_sha256": "1ecfbca07375ac69abeba2c10c38bec66fcc4c195e2bcce658f3bd7581c3d6ec"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_452_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-036.log",
+      "log_sha256": "8d4b1a2d0f1dee0baa5153d4372bbec4493b7defc61ec40684335ae5faa8cfdf"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_453_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-037.log",
+      "log_sha256": "ae077757008078e2fa5ec4460ac58b872dd7e5e4b8ef18d69cba8a361f1b48be"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_454_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-038.log",
+      "log_sha256": "2ec81c5f456a951a1e0aab9046185d93500d72d4c9ae21797dd4f71ae528bbc0"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_455_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-039.log",
+      "log_sha256": "393dd4d18fb0c2189d7f3ec33b2a260faaa5a1dba81a1dd9b9701255ea9e774b"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_456_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-040.log",
+      "log_sha256": "c326e88d0aeff5322d92ced114ff5652cc72ada4234dc1f804aa13a44a125641"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_457_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-041.log",
+      "log_sha256": "752a1ea5ec1df8b98aa2d42388d1d2795fb424a07ddfc52324ea9a7c8cf10f81"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_458_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-042.log",
+      "log_sha256": "acc309894dfb0ead5fa2fcf601054adac8d9a6bdf0c72e31da0d950dd2010699"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_459_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-043.log",
+      "log_sha256": "3ceaaad195f401cd25eaeb0a208c8f4a845fbe7272f1cbe25112792b5b2f0826"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-044.log",
+      "log_sha256": "5a8c816d0558b68c26c8b9e0a7c23ef2e87a69c5e9ae98c0daae23648822b724"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_461_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-045.log",
+      "log_sha256": "932f4f51c9f7c46e2c440dafa8f3d0863d77fe2183349273d204690ebf371028"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_462_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-046.log",
+      "log_sha256": "057314769df3544c1da7f447566a304f140fc141aa9898bfe97e109040bcaeae"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_463_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-047.log",
+      "log_sha256": "ea70a69ff7aa4f682854968cfcdfaee3c48e894e5b334deb9e7d15fc25af39d1"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_464_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-048.log",
+      "log_sha256": "eb5d8a99e80e520bb4536e278480699dfc125636d2e7304bbd2d913e7f225b04"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_465_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-049.log",
+      "log_sha256": "e646f2efdadd96abe00226123a89f683e7e036e3ad9c00431a01877cf1f215d2"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_466_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-050.log",
+      "log_sha256": "0484bba9a44f86c4b8fc3ce46c0aee29e9407ec3c59671eb3f9d73dd6b84992c"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_467_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-051.log",
+      "log_sha256": "32391c3140d7d899d381800c22fd9dc0558dbd445a5016c008395e2dc30e75bf"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_468_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-052.log",
+      "log_sha256": "f773199187b2555a7fb88178fb9ade6ab7d0b7f3742d5252a9d8a8c0a20a1634"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_469_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-053.log",
+      "log_sha256": "f74a498be0e357dbaa98b0b61ea38003d515031e7a5bd9d89f2a78a0183c1f58"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_470_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-054.log",
+      "log_sha256": "4fa1c6a9998c3b34d24d2055fe6b078bfb047fe7ae70f6245c6eb52a0667dd9d"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_471_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/geobacter-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-geobacter-primary/references-v2-055.log",
+      "log_sha256": "b3fc0e44928319ee086f1df703b77ae179197f2a7aa538a806cac11acc17dfd9"
+    }
+  ],
+  "plan_sha256": "e8f76ac0b17af3d742891096a8fe511ea74535f44922141a79693a696a22a4b0",
+  "code_sha256": {
+    "scripts/review_geobacter_primary_concentrations.py": "41ce3e12abba3fcce2b4e4cab96435dd1da0daaf0bf520301e4903c97d1369c0",
+    "tests/test_geobacter_primary_concentrations.py": "593ca4f403f67bdd7b7f7265b1498159c3ee6408a09a8ca7da8e341170fce45c"
+  },
+  "inventory_before_sha256": "bcec0dd6e2c94b3a58bf69511cb219c2f192c6402ccbcc74dac14f6301834750",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "variant_identity_pairs": [
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_416_Defined_freshwater_medium_CoSO4.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_417_Defined_freshwater_medium_CoSO4.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_416_Defined_freshwater_medium_CoSO4.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_423_Defined_freshwater_medium_CoSO4.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_416_Defined_freshwater_medium_CoSO4.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_424_Defined_freshwater_medium_CoSO4.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_419_Defined_freshwater_medium_CoSO4.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_421_Defined_freshwater_medium_CoSO4.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_435_Defined_freshwater_medium_CoSO4.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_434_Defined_freshwater_medium_CoSO4.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_444_Defined_freshwater_medium_CoCl2.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_447_Defined_freshwater_medium_CoCl2.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_444_Defined_freshwater_medium_CoCl2.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_451_Defined_freshwater_medium_CoCl2.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_444_Defined_freshwater_medium_CoCl2.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_455_Defined_freshwater_medium_CoCl2.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_446_Defined_freshwater_medium_CoCl2.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_448_Defined_freshwater_medium_CoCl2.yaml"
+    ],
+    [
+      "data/normalized_yaml/bacterial/MEDIADB_463_Defined_freshwater_medium_CoCl2.yaml",
+      "data/normalized_yaml/bacterial/MEDIADB_457_Defined_freshwater_medium_CoCl2.yaml"
+    ]
+  ],
+  "pinned_scan_captures_and_reviewed_transcriptions_checked": true,
+  "automated_ocr_verification_asserted": false,
+  "production_reference_gate_passed": false,
+  "inventory_after_sha256": "bcec0dd6e2c94b3a58bf69511cb219c2f192c6402ccbcc74dac14f6301834750",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

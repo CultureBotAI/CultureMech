@@ -1,0 +1,86 @@
+{
+  "terminal": true,
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "schema-J261",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/jcm_medium_no_261.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-baseline-schema-J261.log"
+    },
+    {
+      "name": "strict-J261",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/jcm_medium_no_261.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-baseline-strict-J261.log"
+    },
+    {
+      "name": "schema-M253",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/togo_medium_m253.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-baseline-schema-M253.log"
+    },
+    {
+      "name": "strict-M253",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/bacterial/togo_medium_m253.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-baseline-strict-M253.log"
+    },
+    {
+      "name": "schema-J151",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/JCM_J151_PYROCOCCUS_MEDIUM.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-baseline-schema-J151.log"
+    },
+    {
+      "name": "strict-J151",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/JCM_J151_PYROCOCCUS_MEDIUM.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-baseline-strict-J151.log"
+    },
+    {
+      "name": "schema-M142",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-baseline-schema-M142.log"
+    },
+    {
+      "name": "strict-M142",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/j261-baseline-strict-M142.log"
+    }
+  ]
+}

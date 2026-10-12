@@ -15,16 +15,23 @@ notes: UTEX prepares Polytomella Medium from dH2O, yeast extract, tryptone, and 
   acetate.
 ingredients:
 - preferred_term: dH2O
-  concentration:
-    value: '1000'
-    unit: ML_PER_L
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-  notes: UTEX starts the 1 L Polytomella Medium recipe with approximately 950 mL dH2O.
+  notes: Start with approximately 950 mL dH2O, then bring the supplemented medium
+    to 1 L total with additional dH2O. The exact combined water dose is not specified.
+  evidence:
+  - reference: https://utex.org/products/polytomella-medium
+    supports: SUPPORT
+    snippet: Bring total volume to 1 L with dH2O.
+    explanation: 'Supports ingredients[0].notes for dH2O. Remove the unsupported final-fraction
+      slot while retaining the source preparation input in notes. No final water/carrier
+      fraction can be calculated from an initial portion and unspecified makeup dose.
+      Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition table
+      and Directions.'
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -35,6 +42,16 @@ ingredients:
   notes: UTEX lists 1 g/L Yeast extract, Bacto/Difco.
   nutritional_roles:
   - NITROGEN_SOURCE
+  evidence:
+  - reference: https://utex.org/products/polytomella-medium
+    supports: SUPPORT
+    snippet: 1 g/L
+    explanation: 'Supports ingredients[1].concentration for Yeast extract. Retain
+      the numeric value with exact source evidence and any explicitly stated preparation
+      basis. Directly retain the source table value and unit; no mass/molar conversion
+      is performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition
+      table and Directions. Component cell: ''Yeast extract(Bacto, Difco)''; amount
+      cell: ''1 g/L''.'
 - preferred_term: Tryptone
   concentration:
     value: '1'
@@ -48,6 +65,16 @@ ingredients:
   notes: UTEX lists 1 g/L Tryptone, Sigma T 9410.
   nutritional_roles:
   - NITROGEN_SOURCE
+  evidence:
+  - reference: https://utex.org/products/polytomella-medium
+    supports: SUPPORT
+    snippet: 1 g/L
+    explanation: 'Supports ingredients[2].concentration for Tryptone. Retain the numeric
+      value with exact source evidence and any explicitly stated preparation basis.
+      Directly retain the source table value and unit; no mass/molar conversion is
+      performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition
+      table and Directions. Component cell: ''Tryptone(Sigma T 9410)''; amount cell:
+      ''1 g/L''.'
 - preferred_term: Sodium acetate
   concentration:
     value: '24.4'
@@ -64,6 +91,17 @@ ingredients:
   notes: UTEX lists 2 g/L Sodium acetate, for 24.4 mM final.
   nutritional_roles:
   - CARBON_SOURCE
+  evidence:
+  - reference: https://utex.org/products/polytomella-medium
+    supports: SUPPORT
+    snippet: 24.4 mM
+    explanation: 'Supports ingredients[3].concentration for Sodium acetate. Retain
+      the numeric value with exact source evidence and any explicitly stated preparation
+      basis. Directly retain the source table value and unit; no mass/molar conversion
+      is performed. The printed rounded molarity is a source assertion, not an independent
+      certification of molecular weight or supplied chemical identity. Separate basis
+      excerpt: ''For 1 L Total''. Locator: #recipe, composition table and Directions.
+      Component cell: ''Sodium acetate(Fisher BP 333)''; amount cell: ''2 g/L''.'
 solutions: []
 preparation_steps:
 - step_number: 1
@@ -124,10 +162,78 @@ curation_history:
   source: https://utex.org/products/polytomella-medium
   notes: UTEX prepares Polytomella Medium from dH2O, yeast extract, tryptone, and
     sodium acetate.
+- timestamp: '2026-10-10T21:08:21.569593+00:00'
+  curator: codex
+  action: CURATED_UTEX_ORGANIC_MEDIUM_INPUT_BASES_AND_CONCENTRATION_EVIDENCE
+  notes: Exact source-URL and snippet evidence for input doses, optional agar and
+    retained concentrations. Chemical identity mappings and unrelated growth/role
+    claims are unchanged, not independently certified. No taxa-media association added.
+  source: https://utex.org/products/polytomella-medium
+  changes: '{"claims": [{"basis_snippet": "For 1 L Total", "calculation": "No final
+    water/carrier fraction can be calculated from an initial portion and unspecified
+    makeup dose.", "decision": "Remove the unsupported final-fraction slot while retaining
+    the source preparation input in notes.", "field": "ingredients[0].concentration",
+    "ingredient": "dH2O", "locator": "#recipe, composition table and Directions",
+    "old": {"unit": "ML_PER_L", "value": "1000"}, "proposed": null, "proposed_field":
+    "ingredients[0].notes", "reference": "https://utex.org/products/polytomella-medium",
+    "snippet": "Bring total volume to 1 L with dH2O.", "status": "unsupported"}, {"basis_snippet":
+    "For 1 L Total", "calculation": "Directly retain the source table value and unit;
+    no mass/molar conversion is performed.", "component_snippet": "Yeast extract(Bacto,
+    Difco)", "decision": "Retain the numeric value with exact source evidence and
+    any explicitly stated preparation basis.", "field": "ingredients[1].concentration",
+    "ingredient": "Yeast extract", "locator": "#recipe, composition table and Directions",
+    "old": {"unit": "G_PER_L", "value": "1"}, "proposed": {"unit": "G_PER_L", "value":
+    "1"}, "reference": "https://utex.org/products/polytomella-medium", "snippet":
+    "1 g/L", "source_amount": "1 g/L", "source_table_column": 2, "source_table_row":
+    1, "status": "evidence_only"}, {"basis_snippet": "For 1 L Total", "calculation":
+    "Directly retain the source table value and unit; no mass/molar conversion is
+    performed.", "component_snippet": "Tryptone(Sigma T 9410)", "decision": "Retain
+    the numeric value with exact source evidence and any explicitly stated preparation
+    basis.", "field": "ingredients[2].concentration", "ingredient": "Tryptone", "locator":
+    "#recipe, composition table and Directions", "old": {"unit": "G_PER_L", "value":
+    "1"}, "proposed": {"unit": "G_PER_L", "value": "1"}, "reference": "https://utex.org/products/polytomella-medium",
+    "snippet": "1 g/L", "source_amount": "1 g/L", "source_table_column": 2, "source_table_row":
+    2, "status": "evidence_only"}, {"basis_snippet": "For 1 L Total", "calculation":
+    "Directly retain the source table value and unit; no mass/molar conversion is
+    performed. The printed rounded molarity is a source assertion, not an independent
+    certification of molecular weight or supplied chemical identity.", "component_snippet":
+    "Sodium acetate(Fisher BP 333)", "decision": "Retain the numeric value with exact
+    source evidence and any explicitly stated preparation basis.", "field": "ingredients[3].concentration",
+    "ingredient": "Sodium acetate", "locator": "#recipe, composition table and Directions",
+    "old": {"unit": "MILLIMOLAR", "value": "24.4"}, "proposed": {"unit": "MILLIMOLAR",
+    "value": "24.4"}, "reference": "https://utex.org/products/polytomella-medium",
+    "snippet": "24.4 mM", "source_amount": "2 g/L", "source_table_column": 4, "source_table_row":
+    3, "status": "evidence_only"}, {"basis_snippet": "For 1 L Total", "calculation":
+    "Literal source batch dose; no universal final concentration is derived.", "decision":
+    "Preserve as an inline optional formulation, not a liquid-parent ingredient.",
+    "field": "variants[0].modifications", "ingredient": "agar", "locator": "#recipe,
+    Directions, optional agar instruction", "old": null, "proposed": ["After making
+    up the liquid recipe to 1 L, add 15 g agar; do not mix."], "reference": "https://utex.org/products/polytomella-medium",
+    "snippet": "For 1.5% agar medium add 15 grams of agar into the flask; do not mix.",
+    "status": "add"}], "counts": {"bibliographic_entries_enriched": 1, "ingredient_context_notes_corrected":
+    1, "inline_variant_options_added": 1, "new_curation_history": 1, "new_evidence":
+    5, "unsupported_quantity_slots_removed": 1}}'
 references:
 - reference: UTEX:polytomella-medium
 - reference: https://utex.org/products/polytomella-medium
+  title: Polytomella Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established.
 original_name: Polytomella Medium
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+variants:
+- name: Polytomella Medium with agar
+  relationship: SUPPLEMENTED_VARIANT
+  description: Optional source-listed agar formulation; the parent remains liquid.
+  modifications:
+  - After making up the liquid recipe to 1 L, add 15 g agar; do not mix.
+  purpose: Preserve the separately specified solid formulation
+  evidence:
+  - reference: https://utex.org/products/polytomella-medium
+    supports: SUPPORT
+    snippet: For 1.5% agar medium add 15 grams of agar into the flask; do not mix.
+    explanation: Supports variants[0].modifications only. The source labels this the
+      1.5% agar formulation; no new measured final volume after agar addition is claimed.
+      No agar is added to the liquid parent.

@@ -1,0 +1,91 @@
+{
+  "terminal": true,
+  "runtime": "Isolated Python 3.11, not full project environment or CI",
+  "first_test_attempt": {
+    "exit_code": 1,
+    "log": "/tmp/ingredient-media-20261007/dsmz265-preapply.log",
+    "result": "23 passed, 1 failed, 1 deselected; test referenced the wrong historical solution cohort. No normalized record was written."
+  },
+  "checks": [
+    {
+      "name": "independent-preflight",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "reports/ingredient_concentration_curation/20261007-dsmz265-preparations/audit.py",
+        "--out",
+        "reports/ingredient_concentration_curation/20261007-dsmz265-preparations/preflight.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz265-baseline-independent-preflight.log"
+    },
+    {
+      "name": "dsmz-schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/thermofilum_pendens_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz265-baseline-dsmz-schema.log"
+    },
+    {
+      "name": "komodo-schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/KOMODO_265_THERMOFILUM_PENDENS_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz265-baseline-komodo-schema.log"
+    },
+    {
+      "name": "solution-schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_531_Main_sol_265.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz265-baseline-solution-schema.log"
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz265-baseline-strict.log"
+    },
+    {
+      "name": "tests",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_dsmz265_preparations.py",
+        "-k",
+        "not applied_records",
+        "--junitxml",
+        "/tmp/ingredient-media-20261007/dsmz265-preapply-retry.xml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz265-baseline-tests.log"
+    }
+  ],
+  "tests": [
+    {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "24",
+      "time": "96.428",
+      "timestamp": "2026-10-07T16:20:50.452848-07:00",
+      "hostname": "Marcins-MacBook-Pro-2.local"
+    }
+  ]
+}

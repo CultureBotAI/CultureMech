@@ -1,0 +1,167 @@
+{
+  "terminal": true,
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "schema-J985",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/methanomethylovorans_uponensis_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-post-schema-J985.log"
+    },
+    {
+      "name": "strict-J985",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/methanomethylovorans_uponensis_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-post-strict-J985.log"
+    },
+    {
+      "name": "schema-J265",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/methanogenium_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-post-schema-J265.log"
+    },
+    {
+      "name": "strict-J265",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/methanogenium_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-post-strict-J265.log"
+    },
+    {
+      "name": "schema-M257",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/archaea/TOGO_M257_Methanogenium_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-post-schema-M257.log"
+    },
+    {
+      "name": "strict-M257",
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/archaea/TOGO_M257_Methanogenium_Medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-post-strict-M257.log"
+    },
+    {
+      "name": "readback",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_methanogen_stock_boundaries.py",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-post-readback.log"
+    },
+    {
+      "name": "noop",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_methanogen_stock_boundaries.py",
+        "--apply"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-post-noop.log"
+    },
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_methanogen_stock_boundaries.py",
+        "tests/test_record_io.py",
+        "tests/test_concentration_plausibility.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-post-tests.log"
+    },
+    {
+      "name": "strict-corpus",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-post-strict-corpus.log"
+    },
+    {
+      "name": "ids",
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-post-ids.log"
+    },
+    {
+      "name": "fast",
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-post-fast.log"
+    },
+    {
+      "name": "products",
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-post-products.log"
+    },
+    {
+      "name": "verify-merges",
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-post-verify-merges.log"
+    },
+    {
+      "name": "freshness",
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-post-freshness.log"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/methanogen-boundaries-post-diff-check.log"
+    }
+  ]
+}

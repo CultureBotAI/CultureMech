@@ -1,0 +1,55 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "reports",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "reports": [
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-utex-chev/records/one-half-chev-diatom-medium.md",
+      "sha256": "92c88edb3b943015827b359d902e333e59d974f32667a57291079cdad8d383f1",
+      "claim_rows": 4
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-utex-chev/records/one-third-chev-diatom-medium.md",
+      "sha256": "3f38c1c046c89d4ef5e61d4495139d0dcc4ca090710722267df09ace013c02b4",
+      "claim_rows": 4
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-utex-chev/records/one-fifth-chev-diatom-medium.md",
+      "sha256": "95093dc0f3028d24f4b53a3781c464d40f245f0f7c58a28fcc9ad73c2d472131",
+      "claim_rows": 4
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-utex-chev/records/2x-chev-diatom-medium.md",
+      "sha256": "c01f2f4a2fb6322f4acad8d6e9665e285d93d55bd53a89df5645c9209ebc3083",
+      "claim_rows": 4
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-utex-chev/records/two-thirds-chev-diatom-medium.md",
+      "sha256": "c074d9434d0b8d1b9fc13bc4580d4764afb5cf46257eef53bade912bfb7ea0f6",
+      "claim_rows": 4
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-utex-chev/records/chev-diatom-medium.md",
+      "sha256": "e8317c340705b88eab41d0918554ac3f68cff086187d31854ad2536cea2b8df8",
+      "claim_rows": 4
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-utex-chev/records/modified-2x-chev-medium.md",
+      "sha256": "068cb36dd622d508df2c380bd54037911f8ffbd32142ed1555f2093c54050e84",
+      "claim_rows": 2
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-utex-chev/records/modified-chev-medium.md",
+      "sha256": "fc61abd8ab8afa4e98d669d2e13802828c9ac3e3a7198aba18ce62ef7c8897f7",
+      "claim_rows": 4
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-utex-chev/records/modified-2x-chev-plus-soil-medium.md",
+      "sha256": "59d30c8b7937da913c5faf723d70ff05881e41a18c3e624358111a5ac710f813",
+      "claim_rows": 4
+    }
+  ],
+  "source_inventory_unchanged": true
+}

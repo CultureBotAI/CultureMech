@@ -23,6 +23,33 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3806
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Glucose",
+                      "compound_id": 5,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 4.94071,
+                      "mmol_l": 27.424,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Glucose)
+      in MediaDive solution 3806; locator=$.data.recipe[1] (compound_id=5). Provider
+      explicitly reports g_l=4.94071. Arithmetic check: 5 g * 1 g/g / (1012 ml / 1000
+      ml per L) = 4.940711462450592885375494071 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1012. Retrieved 2026-10-07T09:25:17.519017+00:00;
+      response SHA256=035b37b60375a522aeb33fb6226c25d8ad9858a514a955f23ea80ff6e0d84610.'
 - preferred_term: Yeast extract
   concentration:
     value: '0.0988142'
@@ -60,6 +87,33 @@ composition:
     label: 2-stearoylglycerol
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3806
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Glycerol monostearate",
+                      "compound_id": 1657,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.5,
+                      "unit": "g",
+                      "g_l": 0.494071,
+                      "mmol_l": 1.37795,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (Glycerol
+      monostearate) in MediaDive solution 3806; locator=$.data.recipe[5] (compound_id=1657).
+      Provider explicitly reports g_l=0.494071. Arithmetic check: 0.5 g * 1 g/g /
+      (1012 ml / 1000 ml per L) = 0.4940711462450592885375494071 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      1012. Retrieved 2026-10-07T09:25:17.519017+00:00; response SHA256=035b37b60375a522aeb33fb6226c25d8ad9858a514a955f23ea80ff6e0d84610.'
 - preferred_term: Tween 60
   concentration:
     value: '0.49407114624505927'
@@ -91,6 +145,33 @@ composition:
     label: agar
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3806
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 9,
+                      "compound": "Agar",
+                      "compound_id": 3,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 12,
+                      "unit": "g",
+                      "g_l": 11.8577,
+                      "mmol_l": 35.2562,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[8].concentration (Agar) in
+      MediaDive solution 3806; locator=$.data.recipe[8] (compound_id=3). Provider
+      explicitly reports g_l=11.8577. Arithmetic check: 12 g * 1 g/g / (1012 ml /
+      1000 ml per L) = 11.85770750988142292490118577 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1012. Retrieved 2026-10-07T09:25:17.519017+00:00;
+      response SHA256=035b37b60375a522aeb33fb6226c25d8ad9858a514a955f23ea80ff6e0d84610.'
 - preferred_term: Distilled water
   concentration:
     value: '988.1422924901185'
@@ -151,6 +232,18 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '4 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:30:59.704035+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/3806
+  changes: 'composition[1].concentration: {"unit": "G_PER_L", "value": "4.94071"}
+    -> {"unit": "G_PER_L", "value": "4.94071"} (evidence_only); composition[5].concentration:
+    {"unit": "G_PER_L", "value": "0.494071"} -> {"unit": "G_PER_L", "value": "0.494071"}
+    (evidence_only); composition[8].concentration: {"unit": "G_PER_L", "value": "11.8577"}
+    -> {"unit": "G_PER_L", "value": "11.8577"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -159,3 +252,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/3806
+  title: 'MediaDive solution 3806: Main sol. J153'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=035b37b60375a522aeb33fb6226c25d8ad9858a514a955f23ea80ff6e0d84610;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

@@ -1,0 +1,1151 @@
+{
+  "terminal": true,
+  "state": "Read-only current relationship inventory, not source verification or permission to merge.",
+  "graph_uses_documented_id_fallbacks": true,
+  "normalized_count": 15910,
+  "normalized_sha256": "48c3b9d310293ee12ee7655e555076f7787b0d9f52a88ff0a2f9d27ab98710b9",
+  "ignored_inclusive_inventory": true,
+  "candidate_count": 46,
+  "family_count": 34,
+  "external_neighbor_count": 1,
+  "identity_error_count": 4,
+  "repaired_cohort_identity_errors": 0,
+  "families": [
+    {
+      "candidate_count": 2,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/archaea/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml",
+          "id": "CultureMech:004186",
+          "name": "methanomicrobium_mobile_medium",
+          "source_term": "komodo.medium:161",
+          "sha256": "2c7dc11649f555073d34c606056658238d667cfdd1e74a60a4a3a876826f60af",
+          "is_candidate": true,
+          "ingredient_count": 40,
+          "inline_stock_count": 0
+        },
+        {
+          "path": "data/normalized_yaml/archaea/methanofollis_medium.yaml",
+          "id": "CultureMech:001100",
+          "name": "methanofollis_medium",
+          "source_term": "mediadive.medium:161",
+          "sha256": "dccd460e87ffeccbc9d7e844177910cd7266081ec7febce3f5aa619539f454f3",
+          "is_candidate": true,
+          "ingredient_count": 40,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [
+        {
+          "path": "data/normalized_yaml/archaea/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml",
+          "field": "variant_children[0]",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/methanofollis_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:001100",
+            "name": "methanofollis_medium",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          },
+          "resolved_path": "data/normalized_yaml/archaea/methanofollis_medium.yaml",
+          "exact_path_matches": false
+        },
+        {
+          "path": "data/normalized_yaml/archaea/methanofollis_medium.yaml",
+          "field": "parent_media",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:004186",
+            "name": "methanomicrobium_mobile_medium"
+          },
+          "resolved_path": "data/normalized_yaml/archaea/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml",
+          "exact_path_matches": false
+        }
+      ],
+      "identity_errors": [
+        {
+          "path": "data/normalized_yaml/archaea/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml",
+          "field": "variant_children[0]",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/methanofollis_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:001100",
+            "name": "methanofollis_medium",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          },
+          "error": "missing exact path",
+          "id_resolves_to": "data/normalized_yaml/archaea/methanofollis_medium.yaml"
+        },
+        {
+          "path": "data/normalized_yaml/archaea/methanofollis_medium.yaml",
+          "field": "parent_media",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:004186",
+            "name": "methanomicrobium_mobile_medium"
+          },
+          "error": "missing exact path",
+          "id_resolves_to": "data/normalized_yaml/archaea/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml"
+        }
+      ]
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/archaea/TOGO_M3148_Methanobacterium_Medium.yaml",
+          "id": "CultureMech:009612",
+          "name": "methanobacterium_medium",
+          "source_term": "TOGO:M3148",
+          "sha256": "b73bcf425d8a5b529d4c1c824702a7e95d98dead81662b48f97ba5406f03b76e",
+          "is_candidate": true,
+          "ingredient_count": 37,
+          "inline_stock_count": 2
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 1,
+      "records": [
+        {
+          "path": "data/normalized_yaml/archaea/methanobacterium_medium_iv.yaml",
+          "id": "CultureMech:003219",
+          "name": "methanobacterium_medium_iv",
+          "source_term": "mediadive.medium:J872",
+          "sha256": "ac5c5f5c211ecdc11aaaf301f4beac0701b004ddcc50f542d8eb2ca94d503a96",
+          "is_candidate": true,
+          "ingredient_count": 29,
+          "inline_stock_count": 0
+        },
+        {
+          "path": "data/normalized_yaml/archaea/methanobacterium_medium_vi.yaml",
+          "id": "CultureMech:002222",
+          "name": "methanobacterium_medium_vi",
+          "source_term": "mediadive.medium:J1038",
+          "sha256": "c8d8f26c98618e1b5ee23c8feccc5da79c3cd817ab0b9956153f0cc60ad7c54a",
+          "is_candidate": false,
+          "ingredient_count": 29,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [
+        {
+          "path": "data/normalized_yaml/archaea/methanobacterium_medium_iv.yaml",
+          "field": "variant_children[0]",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/methanobacterium_medium_vi.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:002222",
+            "name": "methanobacterium_medium_vi",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          },
+          "resolved_path": "data/normalized_yaml/archaea/methanobacterium_medium_vi.yaml",
+          "exact_path_matches": false
+        },
+        {
+          "path": "data/normalized_yaml/archaea/methanobacterium_medium_vi.yaml",
+          "field": "parent_media",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/methanobacterium_medium_iv.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:003219",
+            "name": "methanobacterium_medium_iv"
+          },
+          "resolved_path": "data/normalized_yaml/archaea/methanobacterium_medium_iv.yaml",
+          "exact_path_matches": false
+        }
+      ],
+      "identity_errors": [
+        {
+          "path": "data/normalized_yaml/archaea/methanobacterium_medium_iv.yaml",
+          "field": "variant_children[0]",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/methanobacterium_medium_vi.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:002222",
+            "name": "methanobacterium_medium_vi",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          },
+          "error": "missing exact path",
+          "id_resolves_to": "data/normalized_yaml/archaea/methanobacterium_medium_vi.yaml"
+        },
+        {
+          "path": "data/normalized_yaml/archaea/methanobacterium_medium_vi.yaml",
+          "field": "parent_media",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/methanobacterium_medium_iv.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:003219",
+            "name": "methanobacterium_medium_iv"
+          },
+          "error": "missing exact path",
+          "id_resolves_to": "data/normalized_yaml/archaea/methanobacterium_medium_iv.yaml"
+        }
+      ]
+    },
+    {
+      "candidate_count": 3,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml",
+          "id": "CultureMech:004003",
+          "name": "oteb_medium",
+          "source_term": "komodo.medium:1245",
+          "sha256": "084c4278a2be6e87e42ac14164797c3933ff07172c521fa3b4a1f379408f0f47",
+          "is_candidate": true,
+          "ingredient_count": 28,
+          "inline_stock_count": 0
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/medium_1245_modified_for_dsm_18691.yaml",
+          "id": "CultureMech:004002",
+          "name": "medium_1245_modified_for_dsm_18691",
+          "source_term": "komodo.medium:1245_18691",
+          "sha256": "a66deefdddb224dd4892a1b28bb32e8a02a5389803327f5cda8c232d2ecfe719",
+          "is_candidate": true,
+          "ingredient_count": 28,
+          "inline_stock_count": 0
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/oteb_medium.yaml",
+          "id": "CultureMech:000704",
+          "name": "oteb_medium",
+          "source_term": "mediadive.medium:1245",
+          "sha256": "7f9ffe427263a09cfd556c6784d98d47cca0d446510225536c0052381b5e5e8a",
+          "is_candidate": true,
+          "ingredient_count": 28,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml",
+          "field": "parent_media",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/oteb_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:000704",
+            "name": "oteb_medium",
+            "notes": "KOMODO record explicitly cites DSMZ Medium 1245; one unlinked DSMZ parent record exists and the local physical state, pH, ingredient, and concentration signatures match exactly."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/oteb_medium.yaml",
+          "exact_path_matches": true
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml",
+          "field": "variant_children[0]",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/medium_1245_modified_for_dsm_18691.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:004002",
+            "name": "medium_1245_modified_for_dsm_18691",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/medium_1245_modified_for_dsm_18691.yaml",
+          "exact_path_matches": true
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/medium_1245_modified_for_dsm_18691.yaml",
+          "field": "parent_media",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:004003",
+            "name": "oteb_medium"
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml",
+          "exact_path_matches": true
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/oteb_medium.yaml",
+          "field": "variant_children[0]",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:004003",
+            "name": "oteb_medium",
+            "notes": "KOMODO record is an exact source duplicate of DSMZ Medium 1245; local ingredient and concentration signatures match."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml",
+          "exact_path_matches": true
+        }
+      ],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 2,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_212_SYNTHROPHOMONAS_medium.yaml",
+          "id": "CultureMech:004403",
+          "name": "synthrophomonas_medium",
+          "source_term": "komodo.medium:212",
+          "sha256": "d47308a1fb57269eba5f2bc77cb711542efe88b8c09804eace4ff2f2709989de",
+          "is_candidate": true,
+          "ingredient_count": 44,
+          "inline_stock_count": 2
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml",
+          "id": "CultureMech:001311",
+          "name": "treponema_rectale_medium",
+          "source_term": "mediadive.medium:212a",
+          "sha256": "3f3632a84e21eaa02c993c12e565b1d2a02f1c69d5395efa4fbbd736480ce442",
+          "is_candidate": true,
+          "ingredient_count": 44,
+          "inline_stock_count": 2
+        }
+      ],
+      "references": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_212_SYNTHROPHOMONAS_medium.yaml",
+          "field": "variant_children[0]",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:001311",
+            "name": "treponema_rectale_medium",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml",
+          "exact_path_matches": true
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml",
+          "field": "parent_media",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/KOMODO_212_SYNTHROPHOMONAS_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:004403",
+            "name": "synthrophomonas_medium"
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/KOMODO_212_SYNTHROPHOMONAS_medium.yaml",
+          "exact_path_matches": true
+        }
+      ],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+          "id": "CultureMech:005014",
+          "name": "treponema_saccharophilum_medium",
+          "source_term": "komodo.medium:323",
+          "sha256": "ddf16580d20654367f1df777e76db38e1edb4071d4b0d9dea90b9bc02f612043",
+          "is_candidate": true,
+          "ingredient_count": 21,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 2,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_328_PYG_medium_WITH_VOLATILE_FATTY_ACIDS.yaml",
+          "id": "CultureMech:005021",
+          "name": "pyg_medium_with_volatile_fatty_acids",
+          "source_term": "komodo.medium:328",
+          "sha256": "ed1bf67b3970acaffb1ccdb66c6dd817ddfaddef72e9167ac8459da7886f8dd3",
+          "is_candidate": true,
+          "ingredient_count": 24,
+          "inline_stock_count": 0
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/pyg_medium_with_volatile_fatty_acids.yaml",
+          "id": "CultureMech:001428",
+          "name": "pyg_medium_with_volatile_fatty_acids",
+          "source_term": "mediadive.medium:328",
+          "sha256": "08fc6716f898fc75dc56f96ec233fa1c2d7acad3e99b375b7e246df7af59253c",
+          "is_candidate": true,
+          "ingredient_count": 24,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_328_PYG_medium_WITH_VOLATILE_FATTY_ACIDS.yaml",
+          "field": "parent_media",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/pyg_medium_with_volatile_fatty_acids.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:001428",
+            "name": "pyg_medium_with_volatile_fatty_acids",
+            "notes": "KOMODO record explicitly cites DSMZ Medium 328; one unlinked DSMZ parent record exists and the local physical state, pH, ingredient, and concentration signatures match exactly."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/pyg_medium_with_volatile_fatty_acids.yaml",
+          "exact_path_matches": true
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/pyg_medium_with_volatile_fatty_acids.yaml",
+          "field": "variant_children[0]",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/KOMODO_328_PYG_medium_WITH_VOLATILE_FATTY_ACIDS.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:005021",
+            "name": "pyg_medium_with_volatile_fatty_acids",
+            "notes": "KOMODO record is an exact source duplicate of DSMZ Medium 328; local ingredient and concentration signatures match."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/KOMODO_328_PYG_medium_WITH_VOLATILE_FATTY_ACIDS.yaml",
+          "exact_path_matches": true
+        }
+      ],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 3,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_330_RUMEN_BACTERIA_medium.yaml",
+          "id": "CultureMech:005024",
+          "name": "rumen_bacteria_medium",
+          "source_term": "komodo.medium:330",
+          "sha256": "639be170cd1bd2d892dfd4fe8c7933427932e6328c4b2b21ff704b3fc8794f3b",
+          "is_candidate": true,
+          "ingredient_count": 28,
+          "inline_stock_count": 0
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/medium_330_modified_for_dsm_17630.yaml",
+          "id": "CultureMech:005023",
+          "name": "medium_330_modified_for_dsm_17630",
+          "source_term": "komodo.medium:330_17630",
+          "sha256": "17505e0c5a4e2eab99ca8030b2e1064c5fb6e936dd332bb88c93172e30162509",
+          "is_candidate": true,
+          "ingredient_count": 28,
+          "inline_stock_count": 0
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/rumen_bacteria_medium.yaml",
+          "id": "CultureMech:001429",
+          "name": "rumen_bacteria_medium",
+          "source_term": "mediadive.medium:330",
+          "sha256": "5e1309be37d2d1c3a84633124f282b67b14628426411771c28fd2ac906f76509",
+          "is_candidate": true,
+          "ingredient_count": 28,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_330_RUMEN_BACTERIA_medium.yaml",
+          "field": "parent_media",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/rumen_bacteria_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:001429",
+            "name": "rumen_bacteria_medium",
+            "notes": "KOMODO record explicitly cites DSMZ Medium 330; one unlinked DSMZ parent record exists and the local physical state, pH, ingredient, and concentration signatures match exactly."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/rumen_bacteria_medium.yaml",
+          "exact_path_matches": true
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_330_RUMEN_BACTERIA_medium.yaml",
+          "field": "variant_children[0]",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/medium_330_modified_for_dsm_17630.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:005023",
+            "name": "medium_330_modified_for_dsm_17630",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/medium_330_modified_for_dsm_17630.yaml",
+          "exact_path_matches": true
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/medium_330_modified_for_dsm_17630.yaml",
+          "field": "parent_media",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/KOMODO_330_RUMEN_BACTERIA_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:005024",
+            "name": "rumen_bacteria_medium"
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/KOMODO_330_RUMEN_BACTERIA_medium.yaml",
+          "exact_path_matches": true
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/rumen_bacteria_medium.yaml",
+          "field": "variant_children[0]",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/KOMODO_330_RUMEN_BACTERIA_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:005024",
+            "name": "rumen_bacteria_medium",
+            "notes": "KOMODO record is an exact source duplicate of DSMZ Medium 330; local ingredient and concentration signatures match."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/KOMODO_330_RUMEN_BACTERIA_medium.yaml",
+          "exact_path_matches": true
+        }
+      ],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 3,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml",
+          "id": "CultureMech:005284",
+          "name": "ruminococcus_albus_medium",
+          "source_term": "komodo.medium:436",
+          "sha256": "986ef1c3a524648c14550c565aa8b701cbd95affbd30757a0cb094b11226fc6f",
+          "is_candidate": true,
+          "ingredient_count": 18,
+          "inline_stock_count": 0
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/medium_436_modified_for_dsm_18848.yaml",
+          "id": "CultureMech:005283",
+          "name": "medium_436_modified_for_dsm_18848",
+          "source_term": "komodo.medium:436_18848",
+          "sha256": "2ac2aaa94a86e282cdb24d1b9d575d4f27f164e1095f9277197f4926e48b92ed",
+          "is_candidate": true,
+          "ingredient_count": 18,
+          "inline_stock_count": 0
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/ruminococcus_albus_medium.yaml",
+          "id": "CultureMech:001544",
+          "name": "ruminococcus_albus_medium",
+          "source_term": "mediadive.medium:436",
+          "sha256": "4b52e2ebc0380247a790cc09ecfcd39dac93e082b04935ab89be36b7a96c3ad4",
+          "is_candidate": true,
+          "ingredient_count": 18,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml",
+          "field": "parent_media",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/ruminococcus_albus_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:001544",
+            "name": "ruminococcus_albus_medium",
+            "notes": "KOMODO record states DSMZ Medium 436 provenance and exactly matches the single same-category DSMZ parent signature."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/ruminococcus_albus_medium.yaml",
+          "exact_path_matches": true
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml",
+          "field": "variant_children[0]",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/medium_436_modified_for_dsm_18848.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:005283",
+            "name": "medium_436_modified_for_dsm_18848",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/medium_436_modified_for_dsm_18848.yaml",
+          "exact_path_matches": true
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/medium_436_modified_for_dsm_18848.yaml",
+          "field": "parent_media",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:005284",
+            "name": "ruminococcus_albus_medium"
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml",
+          "exact_path_matches": true
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/ruminococcus_albus_medium.yaml",
+          "field": "variant_children[0]",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:005284",
+            "name": "ruminococcus_albus_medium",
+            "notes": "Same ingredient and concentration signature; KOMODO record copied from the matching DSMZ medium source."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml",
+          "exact_path_matches": true
+        }
+      ],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 2,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_704_BUTYRIVIBRIO_SP._medium.yaml",
+          "id": "CultureMech:006335",
+          "name": "butyrivibrio_sp_medium",
+          "source_term": "komodo.medium:704",
+          "sha256": "17b62f5306b7da48de88999760748978b2c7a6fb2355218eba5aaa29b21fd4a4",
+          "is_candidate": true,
+          "ingredient_count": 28,
+          "inline_stock_count": 0
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/butyrivibrio_sp_medium.yaml",
+          "id": "CultureMech:001843",
+          "name": "butyrivibrio_sp_medium",
+          "source_term": "mediadive.medium:704",
+          "sha256": "d1978e435cf435fd3a63891252fb5eb83b846b5ccf5857d0f142684ed8cee076",
+          "is_candidate": true,
+          "ingredient_count": 28,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_704_BUTYRIVIBRIO_SP._medium.yaml",
+          "field": "parent_media",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/butyrivibrio_sp_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:001843",
+            "name": "butyrivibrio_sp_medium",
+            "notes": "KOMODO record states DSMZ Medium 704 provenance and exactly matches the single same-category DSMZ parent signature."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/butyrivibrio_sp_medium.yaml",
+          "exact_path_matches": true
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/butyrivibrio_sp_medium.yaml",
+          "field": "variant_children[0]",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/KOMODO_704_BUTYRIVIBRIO_SP._medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006335",
+            "name": "butyrivibrio_sp_medium",
+            "notes": "Same ingredient and concentration signature; KOMODO record copied from the matching DSMZ medium source."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/KOMODO_704_BUTYRIVIBRIO_SP._medium.yaml",
+          "exact_path_matches": true
+        }
+      ],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 2,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_719_ANAEROFILUM_medium.yaml",
+          "id": "CultureMech:006361",
+          "name": "anaerofilum_medium",
+          "source_term": "komodo.medium:719",
+          "sha256": "e2e54bf5159a521e56c5c186cc58a62a930f0503597a07808623f09b7bd87241",
+          "is_candidate": true,
+          "ingredient_count": 30,
+          "inline_stock_count": 0
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/anaerofilum_medium.yaml",
+          "id": "CultureMech:001857",
+          "name": "anaerofilum_medium",
+          "source_term": "mediadive.medium:719",
+          "sha256": "038468d842f0847bb150ae789c30462b691642f4fb08e576fc8d54a0c40e12f2",
+          "is_candidate": true,
+          "ingredient_count": 30,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_719_ANAEROFILUM_medium.yaml",
+          "field": "parent_media",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/anaerofilum_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:001857",
+            "name": "anaerofilum_medium",
+            "notes": "KOMODO record states DSMZ Medium 719 provenance and exactly matches the single same-category DSMZ parent signature."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/anaerofilum_medium.yaml",
+          "exact_path_matches": true
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/anaerofilum_medium.yaml",
+          "field": "variant_children[0]",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/KOMODO_719_ANAEROFILUM_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006361",
+            "name": "anaerofilum_medium",
+            "notes": "Same ingredient and concentration signature; KOMODO record copied from the matching DSMZ medium source."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/KOMODO_719_ANAEROFILUM_medium.yaml",
+          "exact_path_matches": true
+        }
+      ],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 2,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_909_TREPONEMA_DENTICOLA_medium.yaml",
+          "id": "CultureMech:006781",
+          "name": "treponema_denticola_medium",
+          "source_term": "komodo.medium:909",
+          "sha256": "d0deabe507cb25d4b310e6b0463a95847025aa23ca1433888302e2668afdc4b4",
+          "is_candidate": true,
+          "ingredient_count": 23,
+          "inline_stock_count": 0
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/treponema_denticola_medium.yaml",
+          "id": "CultureMech:002077",
+          "name": "treponema_denticola_medium",
+          "source_term": "mediadive.medium:909",
+          "sha256": "ba1cba889c049f82fb8947bac818e30292423735417ed306f1c4a6308fbddb04",
+          "is_candidate": true,
+          "ingredient_count": 23,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [
+        {
+          "path": "data/normalized_yaml/bacterial/KOMODO_909_TREPONEMA_DENTICOLA_medium.yaml",
+          "field": "parent_media",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/treponema_denticola_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:002077",
+            "name": "treponema_denticola_medium",
+            "notes": "KOMODO record states DSMZ Medium 909 provenance and exactly matches the single same-category DSMZ parent signature."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/treponema_denticola_medium.yaml",
+          "exact_path_matches": true
+        },
+        {
+          "path": "data/normalized_yaml/bacterial/treponema_denticola_medium.yaml",
+          "field": "variant_children[0]",
+          "reference": {
+            "path": "data/normalized_yaml/bacterial/KOMODO_909_TREPONEMA_DENTICOLA_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006781",
+            "name": "treponema_denticola_medium",
+            "notes": "Same ingredient and concentration signature; KOMODO record copied from the matching DSMZ medium source."
+          },
+          "resolved_path": "data/normalized_yaml/bacterial/KOMODO_909_TREPONEMA_DENTICOLA_medium.yaml",
+          "exact_path_matches": true
+        }
+      ],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml",
+          "id": "CultureMech:007333",
+          "name": "defined_freshwater_medium_coso4",
+          "source_term": "MEDIADB:430",
+          "sha256": "e4e01988ca7fce6e67d7a49bd5130b115bca758094780933654474c82270ad1e",
+          "is_candidate": true,
+          "ingredient_count": 31,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml",
+          "id": "CultureMech:007366",
+          "name": "defined_freshwater_medium_cocl2",
+          "source_term": "MEDIADB:460",
+          "sha256": "805313c96e4306399509f670f738663e296f8aef1f0da8c4c1893f4061731f52",
+          "is_candidate": true,
+          "ingredient_count": 31,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/TOGO_M135_Modified_NOS_Medium.yaml",
+          "id": "CultureMech:007897",
+          "name": "modified_nos_medium",
+          "source_term": "TOGO:M135",
+          "sha256": "91db2299c5939106f818bc3f93be621c9c54a1fe925a3b33eadc097d283ef219",
+          "is_candidate": true,
+          "ingredient_count": 21,
+          "inline_stock_count": 3
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/TOGO_M2577_Modified_NOS_Medium.yaml",
+          "id": "CultureMech:009146",
+          "name": "modified_nos_medium",
+          "source_term": "TOGO:M2577",
+          "sha256": "a7baea9a461b3ec2ea0e94b7877f63f084dbf0561df6012240a3d99ed3a9e989",
+          "is_candidate": true,
+          "ingredient_count": 22,
+          "inline_stock_count": 2
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/TOGO_M694_Ruminococcus_Albus_Medium.yaml",
+          "id": "CultureMech:010100",
+          "name": "ruminococcus_albus_medium",
+          "source_term": "TOGO:M694",
+          "sha256": "3528dc5e20a0e4c10cb7c6033ebf97a55dbe3aa57d713a81ff361388ac7aa3ee",
+          "is_candidate": true,
+          "ingredient_count": 22,
+          "inline_stock_count": 2
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+          "id": "CultureMech:000921",
+          "name": "alternative_rumen_bacteria_medium",
+          "source_term": "mediadive.medium:1455",
+          "sha256": "9720d8e519944cc2afe44f6cd3eb851636239965ca76fe3260da6a2a50d551b2",
+          "is_candidate": true,
+          "ingredient_count": 39,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/am5_medium_elusimicrobium_medium.yaml",
+          "id": "CultureMech:001186",
+          "name": "am5_medium_elusimicrobium_medium",
+          "source_term": "mediadive.medium:1705",
+          "sha256": "0c326c1fa9ed73714af73a711534760bd40e081fe09c7e33ed770f66cdbe04a9",
+          "is_candidate": true,
+          "ingredient_count": 46,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/chopped_meat_medium_for_fretibacterium_sp.yaml",
+          "id": "CultureMech:001929",
+          "name": "chopped_meat_medium_for_fretibacterium_sp",
+          "source_term": "mediadive.medium:78c",
+          "sha256": "9a8a8952827e5c1b9035fbb90e9dcfd5224ec5b18f852e5ec3acbf1b91463ec5",
+          "is_candidate": true,
+          "ingredient_count": 30,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/endomicrobium_proavitum_rsa_medium.yaml",
+          "id": "CultureMech:002234",
+          "name": "endomicrobium_proavitum_rsa_medium",
+          "source_term": "mediadive.medium:J1051",
+          "sha256": "84e00a87d771858a882611ac35915bfed4399f19a5f7ec265342bfbbb1766db0",
+          "is_candidate": true,
+          "ingredient_count": 35,
+          "inline_stock_count": 1
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/fibrobacter_medium.yaml",
+          "id": "CultureMech:009139",
+          "name": "fibrobacter_medium",
+          "source_term": "TOGO:M2570",
+          "sha256": "43bd6405de05855c5041bd3edc49beea297e631e2b8452a367a633fb20bf000e",
+          "is_candidate": true,
+          "ingredient_count": 44,
+          "inline_stock_count": 3
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/mcn_medium_whitman.yaml",
+          "id": "CultureMech:007380",
+          "name": "mcn_medium_whitman",
+          "source_term": "MEDIADB:473",
+          "sha256": "0500beea9c3c4d73310b0bc85796763a8f04b174dc411764e540ced69d1fae53",
+          "is_candidate": true,
+          "ingredient_count": 27,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/mcna_medium_lupa.yaml",
+          "id": "CultureMech:007381",
+          "name": "mcna_medium_lupa",
+          "source_term": "MEDIADB:474",
+          "sha256": "747d86ed2993c2ceedcfcaa453a2a81d7ac7b182ef14dc8609df317f840e17d9",
+          "is_candidate": true,
+          "ingredient_count": 28,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/medium_909_modified_for_dsm_14222.yaml",
+          "id": "CultureMech:006780",
+          "name": "medium_909_modified_for_dsm_14222",
+          "source_term": "komodo.medium:909_14222",
+          "sha256": "54ef3cbc63c57ec17113f6c4c3ff75f672b2d5b3837040796ebaeead1c2a75c4",
+          "is_candidate": true,
+          "ingredient_count": 23,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/methanobacterum_medium_ix.yaml",
+          "id": "CultureMech:002320",
+          "name": "methanobacterum_medium_ix",
+          "source_term": "mediadive.medium:J1147",
+          "sha256": "ecb979e0bf20e0ed06c22aa1d65fa800e1984445de46ea7e54a459c56fca8a87",
+          "is_candidate": true,
+          "ingredient_count": 32,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/modified_nos_medium.yaml",
+          "id": "CultureMech:002503",
+          "name": "modified_nos_medium",
+          "source_term": "mediadive.medium:J144",
+          "sha256": "2d6b035cfd0ffa25d7eb6323c3679ca7a4b53893ba86c9256d7cfba30feb7efd",
+          "is_candidate": true,
+          "ingredient_count": 18,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/omiz_pat_medium_modified.yaml",
+          "id": "CultureMech:000962",
+          "name": "omiz_pat_medium_modified",
+          "source_term": "mediadive.medium:1494",
+          "sha256": "f745b85dbb1969b9fcaec9dc6a2cf5be79de7f9d37116a179cdf4cf1ced5b945",
+          "is_candidate": true,
+          "ingredient_count": 98,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/ruminococcus_albus_medium_maltose_1g_l_starch_1g_l.yaml",
+          "id": "CultureMech:009193",
+          "name": "ruminococcus_albus_medium_maltose_1g_l_starch_1g_l",
+          "source_term": "TOGO:M2636",
+          "sha256": "66d1b5a4067762c484e6c08882b28f56a7bca3738c4cab6da2238c50458f7848",
+          "is_candidate": true,
+          "ingredient_count": 24,
+          "inline_stock_count": 2
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/td3_medium.yaml",
+          "id": "CultureMech:002753",
+          "name": "td3_medium",
+          "source_term": "mediadive.medium:J397",
+          "sha256": "23e496b61c11cd8d434b21f6c9eedece50470b3cbc31da93faacbf5053747b08",
+          "is_candidate": true,
+          "ingredient_count": 38,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/thermodesulfobacterium_hydrogenophilum_medium.yaml",
+          "id": "CultureMech:002659",
+          "name": "thermodesulfobacterium_hydrogenophilum_medium",
+          "source_term": "mediadive.medium:J301",
+          "sha256": "07c9ab063b6979db82a08d01e59c22d82693ffd869c171331c05b8df7a2423ee",
+          "is_candidate": true,
+          "ingredient_count": 39,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/togo_medium_m1470.yaml",
+          "id": "CultureMech:008013",
+          "name": "togo_medium_m1470",
+          "source_term": "TOGO:M1470",
+          "sha256": "a88b09f42e3deaa437a406d1597a102f8cce3a84d96d48e2b6813b01748d9859",
+          "is_candidate": true,
+          "ingredient_count": 48,
+          "inline_stock_count": 5
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/togo_medium_m1833.yaml",
+          "id": "CultureMech:008406",
+          "name": "togo_medium_m1833",
+          "source_term": "TOGO:M1833",
+          "sha256": "9b73a2a1a3d019d481db0d936562e19dfef1a8e579f966e0b08ca14b86916a6b",
+          "is_candidate": true,
+          "ingredient_count": 47,
+          "inline_stock_count": 3
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    },
+    {
+      "candidate_count": 1,
+      "external_count": 0,
+      "records": [
+        {
+          "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+          "id": "CultureMech:001425",
+          "name": "treponema_saccharophilum_medium",
+          "source_term": "mediadive.medium:323",
+          "sha256": "4a4cd36c2bf3c84cd704ad0aeae7838a4e11859e93db56c19f9474f577b43c67",
+          "is_candidate": true,
+          "ingredient_count": 20,
+          "inline_stock_count": 0
+        }
+      ],
+      "references": [],
+      "identity_errors": []
+    }
+  ]
+}

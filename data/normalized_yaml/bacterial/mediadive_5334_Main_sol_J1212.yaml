@@ -19,6 +19,33 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5334
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.5,
+                      "unit": "g",
+                      "g_l": 2.45098,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Yeast extract)
+      in MediaDive solution 5334; locator=$.data.recipe[3] (compound_id=16). Provider
+      explicitly reports g_l=2.45098. Arithmetic check: 2.5 g * 1 g/g / (1020 ml /
+      1000 ml per L) = 2.450980392156862745098039216 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1020. Retrieved 2026-10-07T09:53:44.962790+00:00;
+      response SHA256=cdf34c7fc0a26f6170b3227f5c9d70ca688a77a69c4e655531b3bd98716c9fcc.'
 - preferred_term: Casitone
   concentration:
     value: '9.80392'
@@ -38,6 +65,33 @@ composition:
     label: sodium hydrogencarbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5334
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "NaHCO3",
+                      "compound_id": 55,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 6,
+                      "unit": "g",
+                      "g_l": 5.88235,
+                      "mmol_l": 70.0222,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (NaHCO3)
+      in MediaDive solution 5334; locator=$.data.recipe[5] (compound_id=55). Provider
+      explicitly reports g_l=5.88235. Arithmetic check: 6 g * 1 g/g / (1020 ml / 1000
+      ml per L) = 5.882352941176470588235294118 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1020. Retrieved 2026-10-07T09:53:44.962790+00:00;
+      response SHA256=cdf34c7fc0a26f6170b3227f5c9d70ca688a77a69c4e655531b3bd98716c9fcc.'
 - preferred_term: L-Cysteine HCl x H2O
   concentration:
     value: '0.980392'
@@ -50,6 +104,33 @@ composition:
     label: L-cysteine hydrochloride hydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5334
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "L-Cysteine HCl x H2O",
+                      "compound_id": 770,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 0.980392,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (L-Cysteine
+      HCl x H2O) in MediaDive solution 5334; locator=$.data.recipe[6] (compound_id=770).
+      Provider explicitly reports g_l=0.980392. Arithmetic check: 1 g * 1 g/g / (1020
+      ml / 1000 ml per L) = 0.9803921568627450980392156863 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1020. Retrieved 2026-10-07T09:53:44.962790+00:00;
+      response SHA256=cdf34c7fc0a26f6170b3227f5c9d70ca688a77a69c4e655531b3bd98716c9fcc.'
 - preferred_term: Resazurin
   concentration:
     value: '0.000980392'
@@ -62,6 +143,33 @@ composition:
     label: Resazurin
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5334
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 8,
+                      "compound": "Resazurin",
+                      "compound_id": 25,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "mg",
+                      "g_l": 0.000980392,
+                      "mmol_l": 0.00427764,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (Resazurin)
+      in MediaDive solution 5334; locator=$.data.recipe[7] (compound_id=25). Provider
+      explicitly reports g_l=0.000980392. Arithmetic check: 1 mg * 0.001 g/mg / (1020
+      ml / 1000 ml per L) = 0.0009803921568627450980392156863 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      1020. Retrieved 2026-10-07T09:53:44.962790+00:00; response SHA256=cdf34c7fc0a26f6170b3227f5c9d70ca688a77a69c4e655531b3bd98716c9fcc.'
 - preferred_term: Distilled water
   concentration:
     value: '637.2549019607843'
@@ -131,6 +239,20 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5334
+  changes: 'composition[1].concentration: {"unit": "G_PER_L", "value": "2.45098"}
+    -> {"unit": "G_PER_L", "value": "2.45098"} (evidence_only); composition[3].concentration:
+    {"unit": "G_PER_L", "value": "5.88235"} -> {"unit": "G_PER_L", "value": "5.88235"}
+    (evidence_only); composition[4].concentration: {"unit": "G_PER_L", "value": "0.980392"}
+    -> {"unit": "G_PER_L", "value": "0.980392"} (evidence_only); composition[5].concentration:
+    {"unit": "G_PER_L", "value": "0.000980392"} -> {"unit": "G_PER_L", "value": "0.000980392"}
+    (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -139,3 +261,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5334
+  title: 'MediaDive solution 5334: Main sol. J1212'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=cdf34c7fc0a26f6170b3227f5c9d70ca688a77a69c4e655531b3bd98716c9fcc;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

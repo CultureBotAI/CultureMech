@@ -1,0 +1,143 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "apply",
+  "checks": [],
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "plan_sha256": "e0abd4b637b8f43560cf53841c81f5e00ff9295650df42441c664d2e5df44c03",
+  "source_sha256": "be25f211f867b7b2eee3328e117ecc83149c477dbf03983de88c86f7bfce7a3b",
+  "code_sha256": {
+    "scripts/review_utex_bristol_bbm.py": "31358f8b8babead53b1016480bb545868b1e077b17314193bd3bf1bd6878aa38",
+    "tests/test_utex_bristol_bbm.py": "eeee4384586b397431394d0cf15aefdba9709ebffa28ac46b5087a22932d8d27"
+  },
+  "inventory_before_sha256": "3a9d681a1bef73f7948f0579e8622a491bf2b3888b7206bae677b65400f2e7b0",
+  "source_checks": [
+    {
+      "reference": "https://utex.org/products/bristol-medium",
+      "hash_matched": true,
+      "snippets_matched": 6,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/bold-basal-medium",
+      "hash_matched": true,
+      "snippets_matched": 7,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/bbm-edta-stock-solution",
+      "hash_matched": true,
+      "snippets_matched": 3,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/bbm-iron-stock-solution",
+      "hash_matched": true,
+      "snippets_matched": 3,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/bbm-boron-stock-solution",
+      "hash_matched": true,
+      "snippets_matched": 2,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+      "hash_matched": true,
+      "snippets_matched": 7,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://web.biosci.utexas.edu/utex/Media%20PDF/bristol-medium.pdf",
+      "hash_matched": true,
+      "snippets_matched": 0,
+      "pdf_pages_previously_visually_inspected": 1,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://web.biosci.utexas.edu/utex/Media%20PDF/bold-basal-medium.pdf",
+      "hash_matched": true,
+      "snippets_matched": 0,
+      "pdf_pages_previously_visually_inspected": 3,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/botryococcus-medium",
+      "hash_matched": true,
+      "snippets_matched": 4,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/proteose-medium",
+      "hash_matched": true,
+      "snippets_matched": 2,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/bristol-nacl-medium",
+      "hash_matched": true,
+      "snippets_matched": 2,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://web.biosci.utexas.edu/utex/Media%20PDF/botryococcus-medium.pdf",
+      "hash_matched": true,
+      "snippets_matched": 0,
+      "pdf_pages_previously_visually_inspected": 1,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://web.biosci.utexas.edu/utex/Media%20PDF/proteose-medium.pdf",
+      "hash_matched": true,
+      "snippets_matched": 0,
+      "pdf_pages_previously_visually_inspected": 1,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://web.biosci.utexas.edu/utex/Media%20PDF/bristol-nacl-medium.pdf",
+      "hash_matched": true,
+      "snippets_matched": 0,
+      "pdf_pages_previously_visually_inspected": 1,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "doi:10.3390/plants11131669",
+      "hash_matched": true,
+      "snippets_matched": 4,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    }
+  ],
+  "application": {
+    "changed": 5,
+    "already_applied": 0
+  },
+  "readback": {
+    "changed": 0,
+    "already_applied": 5
+  },
+  "repeat_noop": {
+    "changed": 0,
+    "already_applied": 5
+  },
+  "inventory_after_sha256": "be8cf9562c14ac1ab986d2df248c242b8f47db726278b34831044efce989b9f7",
+  "changed_paths": [
+    "data/normalized_yaml/algae/Bold_Basal_Medium.yaml",
+    "data/normalized_yaml/algae/Botryococcus_Medium.yaml",
+    "data/normalized_yaml/algae/Bristol_Medium.yaml",
+    "data/normalized_yaml/algae/Proteose_Medium.yaml",
+    "data/normalized_yaml/algae/bristol_nacl_medium.yaml"
+  ],
+  "only_intended_records_changed": true
+}

@@ -1,0 +1,144 @@
+{
+  "terminal": true,
+  "local_applied_record_checks_passed": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "normalized_count": 15910,
+  "normalized_inventory_sha256": "05eafc9984ddb3e4defacd096eb7eecd7608453252a5c28e8f7bbad7e2faa525",
+  "counts": {
+    "stock_nodes_relocated": 842,
+    "new_quantity_slots": 379,
+    "unsupported_quantity_slots_removed": 915,
+    "new_evidence": 36709,
+    "new_curation_history": 5540,
+    "new_references": 5923,
+    "stock_stage_concentrations_rebased": 203,
+    "stock_descriptors_added": 247,
+    "quantity_corrections": 1483,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 28,
+    "recipe_context_notes_corrected": 30,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 91,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 9,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 10,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 3,
+    "child_links_corrected": 7,
+    "unsupported_primary_identities_removed": 4,
+    "ingredient_evidence_explanations_extended": 3,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 16,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "unquantified_ingredient_nodes_added": 2,
+    "ingredient_labels_corrected": 23,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 4,
+    "supplement_nodes_moved_to_variants": 4,
+    "copied_ingredient_nodes_removed": 15,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "supplied_hydrate_identities_corrected": 31,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 2,
+    "unsupported_secondary_identities_removed": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5303
+  },
+  "followup_unique_records": 11831,
+  "outside_this_followup": 4079,
+  "new_batch": {
+    "records": 12,
+    "evidence_entries": 84,
+    "references": 24,
+    "history_events": 12,
+    "chemical_form_corrections": 36,
+    "numeric_concentration_changes": 0,
+    "taxa_media_associations": 0
+  },
+  "receipts_sha256": {
+    "preview-retest": "a420947334c6621a5a1d085e084af1b131ba4ce2ec430c08c77d7e4118a23ee1",
+    "apply": "2c1555710dab096249649a4b17a47bee31dbd10dcdeff629907227e58ae7ae32",
+    "reconcile-reports": "9ee587b786a50042271630e8b3ce7f685712b5bc31306ecd58d8f12ccf600bf4",
+    "reconcile-cumulative": "d7de89dceb8c2e1b37d92f37bb8462f4e617a1f57fb9204e975b0bf55eb0ca04",
+    "reconcile-indexes": "123a3513c83a87d199bafdf3faab26e5c8ec5d545908bf182abf06777cba4491",
+    "reconcile-retention": "519c5a5858108f875f8d2292a496005f39bca1f24f35c06ec2593386b53577b6",
+    "post": "640d05d35cd1fb176435df93d137a84cb90eed99c7c28c4f0a2598b812d68687",
+    "references": "4d19f388a65aa9dc1bbefb4d2afea2854ed778485ce5f8ab31a20c1384ef349d",
+    "corpus": "24e859a95d526c3344e3b85d9f25ef843ad25d8b3286664085d12ded1e2ce2d5",
+    "fast": "1bbbcfa7ce940bc4abb206bcfbe40ea6024b4809f5c55c2e9435793faa95d20f"
+  },
+  "production_reference_checks": {
+    "failed_snippet": 84,
+    "passed_title": 12,
+    "failed_title": 12
+  },
+  "production_reference_gate_passed": false,
+  "reference_limitations": [
+    "2010 DOI fetch returned only the abstract (24 snippet failures).",
+    "1982 scan snippets are unavailable to the HTML validator (60 failures).",
+    "Generic PMC URL title contains a site suffix (12 title mismatches).",
+    "Full 2010 HTML and 1982 scan were separately inspected; automated failures are not waived."
+  ],
+  "corpus_commands": [
+    {
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "returncode": 1
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness"
+      ],
+      "returncode": 1
+    }
+  ],
+  "fast_test_summary": "13799 passed, 16 skipped, 3498 deselected, 2 warnings in 1645.58s (0:27:25)",
+  "fast_tier_passed": true,
+  "full_test_suite_pass_asserted": false
+}

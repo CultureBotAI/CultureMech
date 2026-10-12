@@ -11,6 +11,33 @@ composition:
   term:
     id: mediadive.compound:71
     label: Tryptone
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/805
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Tryptone",
+                      "compound_id": 71,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 25,
+                      "unit": "g",
+                      "g_l": 23.3645,
+                      "mmol_l": 328.707,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Tryptone)
+      in MediaDive solution 805; locator=$.data.recipe[0] (compound_id=71). Provider
+      explicitly reports g_l=23.3645. Arithmetic check: 25 g * 1 g/g / (1070 ml /
+      1000 ml per L) = 23.36448598130841121495327103 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1070. Retrieved 2026-10-07T08:46:41.139938+00:00;
+      response SHA256=87ba38041fe75f88da035d2cd82b58d958feca605fac380712df0a9c7fda063f.'
 - preferred_term: Yeast extract
   concentration:
     value: '7.00935'
@@ -18,6 +45,33 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/805
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 7.5,
+                      "unit": "g",
+                      "g_l": 7.00935,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Yeast extract)
+      in MediaDive solution 805; locator=$.data.recipe[1] (compound_id=16). Provider
+      explicitly reports g_l=7.00935. Arithmetic check: 7.5 g * 1 g/g / (1070 ml /
+      1000 ml per L) = 7.009345794392523364485981308 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1070. Retrieved 2026-10-07T08:46:41.139938+00:00;
+      response SHA256=87ba38041fe75f88da035d2cd82b58d958feca605fac380712df0a9c7fda063f.'
 - preferred_term: Tris-HCl
   concentration:
     value: '18.69158878504673'
@@ -138,6 +192,17 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T08:52:28.993811+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/805
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "23.3645"}
+    -> {"unit": "G_PER_L", "value": "23.3645"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "7.00935"} -> {"unit": "G_PER_L", "value": "7.00935"}
+    (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -146,3 +211,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/805
+  title: 'MediaDive solution 805: Main sol. 394'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=87ba38041fe75f88da035d2cd82b58d958feca605fac380712df0a9c7fda063f;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

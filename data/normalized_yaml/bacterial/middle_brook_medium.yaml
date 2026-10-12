@@ -8,153 +8,112 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1000.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component [Merged 2 duplicates: 900.0, 100.0]'
+    value: '0.9'
+    unit: L
+  notes: |-
+    Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component [Merged 2 duplicates: 900.0, 100.0]
+
+    Source amount: 900 ml; scope: main preparation input. Volume-only input/dose, not a final-volume marker; 900 ml = 0.9 L. Earlier merged-quantity text is retained only as historical provenance; the separated source stages supersede it.
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Distilled water",
+                "volume": 900,
+                "unit": "ml",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001001"
+    explanation: |-
+      ingredients[0].concentration: Source amount: 900 ml; scope: main preparation input. Volume-only input/dose, not a final-volume marker; 900 ml = 0.9 L. Earlier merged-quantity text is retained only as historical provenance; the separated source stages supersede it. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[0]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+
+      Additional exact excerpt: {
+                "component_name": "Distilled water",
+                "volume": 900,
+                "unit": "ml",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001001"
+      ingredients[0].notes: Source amount: 900 ml; scope: main preparation input. Volume-only input/dose, not a final-volume marker; 900 ml = 0.9 L. Earlier merged-quantity text is retained only as historical provenance; the separated source stages supersede it. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[0]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
 - preferred_term: Glycerol
   concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+    value: '0.005'
+    unit: L
+  notes: |-
+    Role: Carbon source; Properties: Defined component, Organic compound, Simple component
+
+    Source amount: 5 ml; scope: main preparation input. Volume-only input/dose, not a final-volume marker; 5 ml = 0.005 L.
   term:
     id: CHEBI:17754
     label: glycerol
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
     label: glycerol
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Glycerol",
+                "volume": 5,
+                "unit": "ml",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001083"
+    explanation: |-
+      ingredients[1].concentration: Source amount: 5 ml; scope: main preparation input. Volume-only input/dose, not a final-volume marker; 5 ml = 0.005 L. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[1]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+
+      Additional exact excerpt: {
+                "component_name": "Glycerol",
+                "volume": 5,
+                "unit": "ml",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001083"
+      ingredients[1].notes: Source amount: 5 ml; scope: main preparation input. Volume-only input/dose, not a final-volume marker; 5 ml = 0.005 L. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[1]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
 - preferred_term: Bacto Middlebrook 7H10 agar (Difco 262710)
-  concentration:
-    value: '19'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Complex component'
-- preferred_term: Bacto Middlebrook OADC enrichment
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: NaCl
-  concentration:
-    value: '0.85'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Dextrose
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:17634
-    label: D-glucose
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17634
-    label: D-glucose
-- preferred_term: Tryptone
-  term:
-    id: MICRO:0000182
-    label: tryptone
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: yeast extract
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
-- preferred_term: Oleic acid
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
-  term:
-    id: CHEBI:16196
-    label: oleic acid
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16196
-    label: oleic acid
-- preferred_term: Catalase (beef)
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component'
+  notes: |-
+    Properties: Defined component, Complex component
+
+    Source amount: 19 g; scope: main preparation input. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+  evidence:
+  - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328
+    supports: SUPPORT
+    snippet: |-
+      {
+                "component_name": "Bacto Middlebrook 7H10 agar (Difco 262710)",
+                "volume": 19,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001588"
+    explanation: |-
+      ingredients[2].concentration: Source amount: 19 g; scope: main preparation input. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[2]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+
+      Additional exact excerpt: {
+                "component_name": "Bacto Middlebrook 7H10 agar (Difco 262710)",
+                "volume": 19,
+                "unit": "g",
+                "gmo": "http://purl.jp/bio/10/gmo/GMO_001588"
+      ingredients[2].notes: Source amount: 19 g; scope: main preparation input. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[2]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
 media_term:
   preferred_term: TOGO Medium M2328
   term:
     id: TOGO:M2328
     label: Middle Brook Medium
-notes: 'Source: https://togomedium.org/medium/M2328
-
+notes: |-
+  Source: https://togomedium.org/medium/M2328
   Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
 
-
+  Superseded historical provenance (not a current formulation claim):
   Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
   Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
   Catalog: Multiple (L3522 Sigma, 244520 BD)
-
   Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
   Accessed: 2026-03-28
 
+  Constituent composition researched from product specification.
 
-  Constituent composition researched from product specification.'
+  False LB constituent expansion is withdrawn. Source-specific amounts and preparation boundaries supersede flattened concentrations. Existing chemical annotations and earlier history are preserved, not recertified; no organism-growth association is added.
+
+  Source preparation context (main preparation): Sterilize for 15min by 121C cool to 50 - 55° C. Add 100 ml Middlebrook OADC enrichment (Becton Dickinson 212240) under aseptic conditions and mix thoroughly.
 applications:
 - Microbial cultivation
 curation_history:
@@ -195,3 +154,446 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-10-09T00:43:54.768901+00:00'
+  curator: codex
+  action: RESTORED_MIDDLEBROOK_INGREDIENT_AND_STOCK_SCOPES_WITH_EVIDENCE
+  notes: Restore albumin and separate basal inputs, commercial-base detail and ADC/OADC
+    stock amounts/doses. Correct volume/mass confusion; retain unsupported mass/percent
+    bases and source-version conflicts explicitly. Preserve IDs and all prior history.
+  source: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328
+  changes: '[{"old_field": "ingredients[0].concentration", "field": "ingredients[0].concentration",
+    "old": {"value": "1000.0", "unit": "G_PER_L"}, "new": {"value": "0.9", "unit":
+    "L"}, "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\":
+    900,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\""},
+    {"old_field": "ingredients[0].notes", "field": "ingredients[0].notes", "old":
+    "Role: Solvating media; Properties: Defined component, Inorganic compound, Simple
+    component [Merged 2 duplicates: 900.0, 100.0]", "new": "Role: Solvating media;
+    Properties: Defined component, Inorganic compound, Simple component [Merged 2
+    duplicates: 900.0, 100.0]\n\nSource amount: 900 ml; scope: main preparation input.
+    Volume-only input/dose, not a final-volume marker; 900 ml = 0.9 L. Earlier merged-quantity
+    text is retained only as historical provenance; the separated source stages supersede
+    it.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\":
+    900,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\""},
+    {"old_field": "ingredients[1].concentration", "field": "ingredients[1].concentration",
+    "old": {"value": "5", "unit": "G_PER_L"}, "new": {"value": "0.005", "unit": "L"},
+    "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"Glycerol\",\n          \"volume\":
+    5,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001083\""},
+    {"old_field": "ingredients[1].notes", "field": "ingredients[1].notes", "old":
+    "Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component", "new": "Role: Carbon source; Properties: Defined component, Organic
+    compound, Simple component\n\nSource amount: 5 ml; scope: main preparation input.
+    Volume-only input/dose, not a final-volume marker; 5 ml = 0.005 L.", "status":
+    "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"Glycerol\",\n          \"volume\":
+    5,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001083\""},
+    {"old_field": "ingredients[2].concentration", "field": "ingredients[2].concentration",
+    "old": {"value": "19", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328", "snippet":
+    "{\n          \"component_name\": \"Bacto Middlebrook 7H10 agar (Difco 262710)\",\n          \"volume\":
+    19,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001588\""},
+    {"old_field": "ingredients[2].notes", "field": "ingredients[2].notes", "old":
+    "Properties: Defined component, Complex component", "new": "Properties: Defined
+    component, Complex component\n\nSource amount: 19 g; scope: main preparation input.
+    This table does not give an explicit final-volume denominator. Preserve the exact
+    mass here; no g/L conversion is asserted. The schema has no mass-only concentration
+    unit.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"Bacto Middlebrook 7H10 agar (Difco
+    262710)\",\n          \"volume\": 19,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001588\""}, {"old_field": "ingredients[3].concentration",
+    "field": "solutions[0].concentration", "old": {"value": "100", "unit": "G_PER_L"},
+    "new": {"value": "0.1", "unit": "L"}, "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"Bacto Middlebrook OADC enrichment\",\n          \"volume\":
+    100,\n          \"unit\": \"ml\""}, {"old_field": "ingredients[3].notes", "field":
+    "solutions[0].notes", "old": null, "new": "Source amount: 100 ml; scope: main
+    preparation input. Volume-only input/dose, not a final-volume marker; 100 ml =
+    0.1 L. Inline enrichment composition is separate from its dose and from finished-medium
+    concentrations.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"Bacto Middlebrook OADC enrichment\",\n          \"volume\":
+    100,\n          \"unit\": \"ml\""}, {"old_field": "ingredients[3].name", "field":
+    "solutions[0].name", "old": null, "new": "Bacto Middlebrook OADC enrichment",
+    "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"Bacto Middlebrook OADC enrichment\",\n          \"volume\":
+    100,\n          \"unit\": \"ml\""}, {"old_field": "ingredients[0].concentration",
+    "field": "solutions[0].composition[0].concentration", "old": {"value": "1000.0",
+    "unit": "G_PER_L"}, "new": {"value": "0.1", "unit": "L"}, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\":
+    100,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\""},
+    {"old_field": "ingredients[0].notes", "field": "solutions[0].composition[0].notes",
+    "old": "Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component [Merged 2 duplicates: 900.0, 100.0]", "new": "Role: Solvating
+    media; Properties: Defined component, Inorganic compound, Simple component [Merged
+    2 duplicates: 900.0, 100.0]\n\nSource amount: 100 ml; scope: Bacto Middlebrook
+    OADC enrichment stock preparation. Volume-only input/dose, not a final-volume
+    marker; 100 ml = 0.1 L. Earlier merged-quantity text is retained only as historical
+    provenance; the separated source stages supersede it.", "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328", "snippet":
+    "{\n          \"component_name\": \"Distilled water\",\n          \"volume\":
+    100,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\""},
+    {"old_field": "ingredients[4].concentration", "field": "solutions[0].composition[1].concentration",
+    "old": {"value": "0.85", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"NaCl\",\n          \"volume\":
+    0.85,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\""},
+    {"old_field": "ingredients[4].notes", "field": "solutions[0].composition[1].notes",
+    "old": "Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component", "new": "Role: Mineral source; Properties: Simple component,
+    Inorganic compound, Defined component\n\nSource amount: 0.85 g; scope: Bacto Middlebrook
+    OADC enrichment stock preparation. This table does not give an explicit final-volume
+    denominator. Preserve the exact mass here; no g/L conversion is asserted. The
+    schema has no mass-only concentration unit.", "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328", "snippet":
+    "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 0.85,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\""}, {"old_field":
+    "ingredients[5].concentration", "field": "solutions[0].composition[2].concentration",
+    "old": {"value": "2", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328", "snippet":
+    "{\n          \"component_name\": \"Dextrose\",\n          \"volume\": 2,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001010\""}, {"old_field":
+    "ingredients[5].notes", "field": "solutions[0].composition[2].notes", "old": "Role:
+    Carbon source; Properties: Organic compound, Simple component, Defined component",
+    "new": "Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component\n\nSource amount: 2 g; scope: Bacto Middlebrook OADC enrichment stock
+    preparation. This table does not give an explicit final-volume denominator. Preserve
+    the exact mass here; no g/L conversion is asserted. The schema has no mass-only
+    concentration unit.", "status": "correct", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"Dextrose\",\n          \"volume\":
+    2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001010\""},
+    {"old_field": null, "field": "solutions[0].composition[3].concentration", "old":
+    null, "new": null, "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"Albumin fraction V, bovine\",\n          \"volume\":
+    5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\""},
+    {"old_field": null, "field": "solutions[0].composition[3].notes", "old": null,
+    "new": "Source amount: 5 g; scope: Bacto Middlebrook OADC enrichment stock preparation.
+    This table does not give an explicit final-volume denominator. Preserve the exact
+    mass here; no g/L conversion is asserted. The schema has no mass-only concentration
+    unit.", "status": "add", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"Albumin fraction V, bovine\",\n          \"volume\":
+    5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\""},
+    {"old_field": "ingredients[9].concentration", "field": "solutions[0].composition[4].concentration",
+    "old": {"value": "0.05", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"Oleic acid\",\n          \"volume\":
+    0.05,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001937\""},
+    {"old_field": "ingredients[9].notes", "field": "solutions[0].composition[4].notes",
+    "old": "Role: Carbon source; Properties: Defined component, Organic compound,
+    Simple component", "new": "Role: Carbon source; Properties: Defined component,
+    Organic compound, Simple component\n\nSource amount: 0.05 g; scope: Bacto Middlebrook
+    OADC enrichment stock preparation. This table does not give an explicit final-volume
+    denominator. Preserve the exact mass here; no g/L conversion is asserted. The
+    schema has no mass-only concentration unit.", "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328", "snippet":
+    "{\n          \"component_name\": \"Oleic acid\",\n          \"volume\": 0.05,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001937\""}, {"old_field":
+    "ingredients[10].concentration", "field": "solutions[0].composition[5].concentration",
+    "old": {"value": "4", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328", "snippet":
+    "{\n          \"component_name\": \"Catalase (beef)\",\n          \"volume\":
+    4,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001938\""},
+    {"old_field": "ingredients[10].notes", "field": "solutions[0].composition[5].notes",
+    "old": "Properties: Defined component, Simple component", "new": "Properties:
+    Defined component, Simple component\n\nSource amount: 4 mg; scope: Bacto Middlebrook
+    OADC enrichment stock preparation. This table does not give an explicit final-volume
+    denominator. Preserve the exact mass here; no g/L conversion is asserted. The
+    schema has no mass-only concentration unit.", "status": "correct", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328", "snippet":
+    "{\n          \"component_name\": \"Catalase (beef)\",\n          \"volume\":
+    4,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001938\""},
+    {"old_field": "notes", "field": "notes", "old": "Source: https://togomedium.org/medium/M2328\nOriginal
+    URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf\n\nCommercial
+    Product: LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers
+    (Difco, Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.",
+    "new": "Source: https://togomedium.org/medium/M2328\nOriginal URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nFalse
+    LB constituent expansion is withdrawn. Source-specific amounts and preparation
+    boundaries supersede flattened concentrations. Existing chemical annotations and
+    earlier history are preserved, not recertified; no organism-growth association
+    is added.\n\nSource preparation context (main preparation): Sterilize for 15min
+    by 121C cool to 50 - 55\u00b0 C. Add 100 ml Middlebrook OADC enrichment (Becton
+    Dickinson 212240) under aseptic conditions and mix thoroughly.", "status": "evidence_only",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "\"Sterilize for 15min by 121C cool to 50 - 55\u00b0 C. Add 100 ml
+    Middlebrook OADC enrichment (Becton Dickinson 212240) under aseptic conditions
+    and mix thoroughly.\""}, {"old_field": "ingredients[6].concentration", "field":
+    "notes", "old": {"value": "10.0", "unit": "G_PER_L"}, "new": "Source: https://togomedium.org/medium/M2328\nOriginal
+    URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nFalse
+    LB constituent expansion is withdrawn. Source-specific amounts and preparation
+    boundaries supersede flattened concentrations. Existing chemical annotations and
+    earlier history are preserved, not recertified; no organism-growth association
+    is added.\n\nSource preparation context (main preparation): Sterilize for 15min
+    by 121C cool to 50 - 55\u00b0 C. Add 100 ml Middlebrook OADC enrichment (Becton
+    Dickinson 212240) under aseptic conditions and mix thoroughly.", "status": "remove_unsupported",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"Albumin fraction V, bovine\",\n          \"volume\":
+    5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\""},
+    {"old_field": "ingredients[7].concentration", "field": "notes", "old": {"value":
+    "5.0", "unit": "G_PER_L"}, "new": "Source: https://togomedium.org/medium/M2328\nOriginal
+    URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nFalse
+    LB constituent expansion is withdrawn. Source-specific amounts and preparation
+    boundaries supersede flattened concentrations. Existing chemical annotations and
+    earlier history are preserved, not recertified; no organism-growth association
+    is added.\n\nSource preparation context (main preparation): Sterilize for 15min
+    by 121C cool to 50 - 55\u00b0 C. Add 100 ml Middlebrook OADC enrichment (Becton
+    Dickinson 212240) under aseptic conditions and mix thoroughly.", "status": "remove_unsupported",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"Albumin fraction V, bovine\",\n          \"volume\":
+    5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\""},
+    {"old_field": "ingredients[8].concentration", "field": "notes", "old": {"value":
+    "10.0", "unit": "G_PER_L"}, "new": "Source: https://togomedium.org/medium/M2328\nOriginal
+    URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nFalse
+    LB constituent expansion is withdrawn. Source-specific amounts and preparation
+    boundaries supersede flattened concentrations. Existing chemical annotations and
+    earlier history are preserved, not recertified; no organism-growth association
+    is added.\n\nSource preparation context (main preparation): Sterilize for 15min
+    by 121C cool to 50 - 55\u00b0 C. Add 100 ml Middlebrook OADC enrichment (Becton
+    Dickinson 212240) under aseptic conditions and mix thoroughly.", "status": "remove_unsupported",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328",
+    "snippet": "{\n          \"component_name\": \"Albumin fraction V, bovine\",\n          \"volume\":
+    5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001520\""}]'
+solutions:
+- preferred_term: Bacto Middlebrook OADC enrichment
+  concentration:
+    value: '0.1'
+    unit: L
+  composition:
+  - preferred_term: Distilled water
+    concentration:
+      value: '0.1'
+      unit: L
+    notes: |-
+      Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component [Merged 2 duplicates: 900.0, 100.0]
+
+      Source amount: 100 ml; scope: Bacto Middlebrook OADC enrichment stock preparation. Volume-only input/dose, not a final-volume marker; 100 ml = 0.1 L. Earlier merged-quantity text is retained only as historical provenance; the separated source stages supersede it.
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Distilled water",
+                  "volume": 100,
+                  "unit": "ml",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001001"
+      explanation: |-
+        solutions[0].composition[0].concentration: Source amount: 100 ml; scope: Bacto Middlebrook OADC enrichment stock preparation. Volume-only input/dose, not a final-volume marker; 100 ml = 0.1 L. Earlier merged-quantity text is retained only as historical provenance; the separated source stages supersede it. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[0]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+
+        Additional exact excerpt: {
+                  "component_name": "Distilled water",
+                  "volume": 100,
+                  "unit": "ml",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001001"
+        solutions[0].composition[0].notes: Source amount: 100 ml; scope: Bacto Middlebrook OADC enrichment stock preparation. Volume-only input/dose, not a final-volume marker; 100 ml = 0.1 L. Earlier merged-quantity text is retained only as historical provenance; the separated source stages supersede it. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[0]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+  - preferred_term: NaCl
+    notes: |-
+      Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component
+
+      Source amount: 0.85 g; scope: Bacto Middlebrook OADC enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "NaCl",
+                  "volume": 0.85,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001004"
+      explanation: |-
+        solutions[0].composition[1].concentration: Source amount: 0.85 g; scope: Bacto Middlebrook OADC enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[1]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+
+        Additional exact excerpt: {
+                  "component_name": "NaCl",
+                  "volume": 0.85,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001004"
+        solutions[0].composition[1].notes: Source amount: 0.85 g; scope: Bacto Middlebrook OADC enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[1]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+  - preferred_term: Dextrose
+    notes: |-
+      Role: Carbon source; Properties: Organic compound, Simple component, Defined component
+
+      Source amount: 2 g; scope: Bacto Middlebrook OADC enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    term:
+      id: CHEBI:17634
+      label: D-glucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17634
+      label: D-glucose
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Dextrose",
+                  "volume": 2,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001010"
+      explanation: |-
+        solutions[0].composition[2].concentration: Source amount: 2 g; scope: Bacto Middlebrook OADC enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[2]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+
+        Additional exact excerpt: {
+                  "component_name": "Dextrose",
+                  "volume": 2,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001010"
+        solutions[0].composition[2].notes: Source amount: 2 g; scope: Bacto Middlebrook OADC enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[2]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+  - preferred_term: Albumin fraction V, bovine
+    notes: 'Source amount: 5 g; scope: Bacto Middlebrook OADC enrichment stock preparation.
+      This table does not give an explicit final-volume denominator. Preserve the
+      exact mass here; no g/L conversion is asserted. The schema has no mass-only
+      concentration unit.'
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Albumin fraction V, bovine",
+                  "volume": 5,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001520"
+      explanation: |-
+        solutions[0].composition[3].concentration: Source amount: 5 g; scope: Bacto Middlebrook OADC enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[3]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+
+        Additional exact excerpt: {
+                  "component_name": "Albumin fraction V, bovine",
+                  "volume": 5,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001520"
+        solutions[0].composition[3].notes: Source amount: 5 g; scope: Bacto Middlebrook OADC enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[3]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+  - preferred_term: Oleic acid
+    notes: |-
+      Role: Carbon source; Properties: Defined component, Organic compound, Simple component
+
+      Source amount: 0.05 g; scope: Bacto Middlebrook OADC enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    term:
+      id: CHEBI:16196
+      label: oleic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16196
+      label: oleic acid
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Oleic acid",
+                  "volume": 0.05,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001937"
+      explanation: |-
+        solutions[0].composition[4].concentration: Source amount: 0.05 g; scope: Bacto Middlebrook OADC enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[4]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+
+        Additional exact excerpt: {
+                  "component_name": "Oleic acid",
+                  "volume": 0.05,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001937"
+        solutions[0].composition[4].notes: Source amount: 0.05 g; scope: Bacto Middlebrook OADC enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[4]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+  - preferred_term: Catalase (beef)
+    notes: |-
+      Properties: Defined component, Simple component
+
+      Source amount: 4 mg; scope: Bacto Middlebrook OADC enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit.
+    evidence:
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Catalase (beef)",
+                  "volume": 4,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001938"
+      explanation: |-
+        solutions[0].composition[5].concentration: Source amount: 4 mg; scope: Bacto Middlebrook OADC enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[5]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+
+        Additional exact excerpt: {
+                  "component_name": "Catalase (beef)",
+                  "volume": 4,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001938"
+        solutions[0].composition[5].notes: Source amount: 4 mg; scope: Bacto Middlebrook OADC enrichment stock preparation. This table does not give an explicit final-volume denominator. Preserve the exact mass here; no g/L conversion is asserted. The schema has no mass-only concentration unit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[5]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+  name: Bacto Middlebrook OADC enrichment
+  notes: 'Source amount: 100 ml; scope: main preparation input. Volume-only input/dose,
+    not a final-volume marker; 100 ml = 0.1 L. Inline enrichment composition is separate
+    from its dose and from finished-medium concentrations.'
+evidence:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328
+  supports: SUPPORT
+  snippet: |-
+    {
+              "component_name": "Bacto Middlebrook OADC enrichment",
+              "volume": 100,
+              "unit": "ml"
+  explanation: |-
+    solutions[0].concentration: Source amount: 100 ml; scope: main preparation input. Volume-only input/dose, not a final-volume marker; 100 ml = 0.1 L. Inline enrichment composition is separate from its dose and from finished-medium concentrations. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[3]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+
+    Additional exact excerpt: {
+              "component_name": "Bacto Middlebrook OADC enrichment",
+              "volume": 100,
+              "unit": "ml"
+    solutions[0].notes: Source amount: 100 ml; scope: main preparation input. Volume-only input/dose, not a final-volume marker; 100 ml = 0.1 L. Inline enrichment composition is separate from its dose and from finished-medium concentrations. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[3]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+
+    Additional exact excerpt: {
+              "component_name": "Bacto Middlebrook OADC enrichment",
+              "volume": 100,
+              "unit": "ml"
+    solutions[0].name: Source amount: 100 ml; scope: main preparation input. Volume-only input/dose, not a final-volume marker; 100 ml = 0.1 L. Inline enrichment composition is separate from its dose and from finished-medium concentrations. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[0].items[3]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+
+    Additional exact excerpt: "Sterilize for 15min by 121C cool to 50 - 55° C. Add 100 ml Middlebrook OADC enrichment (Becton Dickinson 212240) under aseptic conditions and mix thoroughly."
+    notes: Source preparation context (main preparation): Sterilize for 15min by 121C cool to 50 - 55° C. Add 100 ml Middlebrook OADC enrichment (Becton Dickinson 212240) under aseptic conditions and mix thoroughly. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=comments[0].comment; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+
+    Additional exact excerpt: {
+              "component_name": "Albumin fraction V, bovine",
+              "volume": 5,
+              "unit": "g",
+              "gmo": "http://purl.jp/bio/10/gmo/GMO_001520"
+    notes: Restore the source's albumin entry and remove this falsely substituted LB constituent and concentration; the complete source formulation contains no LB preparation. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[3]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+
+    Additional exact excerpt: {
+              "component_name": "Albumin fraction V, bovine",
+              "volume": 5,
+              "unit": "g",
+              "gmo": "http://purl.jp/bio/10/gmo/GMO_001520"
+    notes: Restore the source's albumin entry and remove this falsely substituted LB constituent and concentration; the complete source formulation contains no LB preparation. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[3]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+
+    Additional exact excerpt: {
+              "component_name": "Albumin fraction V, bovine",
+              "volume": 5,
+              "unit": "g",
+              "gmo": "http://purl.jp/bio/10/gmo/GMO_001520"
+    notes: Restore the source's albumin entry and remove this falsely substituted LB constituent and concentration; the complete source formulation contains no LB preparation. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=components[1].items[3]; accessed=2026-10-09T00:07:48.408059+00:00; capture SHA256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+references:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2328
+  title: Middle Brook Medium
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-09;
+    accession=M2328; capture_sha256=f73a2ef156c1994d0364db0d4f2723b36af119e90e5df53909cf9fe0535f4d3c.
+    Authors and publication year are not supplied; access/copyright years are not
+    publication years. Formulation evidence, not newly curated growth evidence.

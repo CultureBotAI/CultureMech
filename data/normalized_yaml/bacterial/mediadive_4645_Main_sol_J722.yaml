@@ -42,6 +42,33 @@ composition:
     label: sodium chloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4645
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 3,
+                      "unit": "g",
+                      "g_l": 2.9703,
+                      "mmol_l": 50.8264,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (NaCl) in
+      MediaDive solution 4645; locator=$.data.recipe[3] (compound_id=43). Provider
+      explicitly reports g_l=2.9703. Arithmetic check: 3 g * 1 g/g / (1010 ml / 1000
+      ml per L) = 2.970297029702970297029702970 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1010. Retrieved 2026-10-07T09:45:59.194962+00:00;
+      response SHA256=8299944e63c8d8c7fa21bad7d0f1ce79b16b70882115a8fa4065aed865053647.'
 - preferred_term: Distilled water
   concentration:
     value: '990.09900990099'
@@ -92,6 +119,15 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:46:43.027838+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/4645
+  changes: 'composition[3].concentration: {"unit": "G_PER_L", "value": "2.9703"} ->
+    {"unit": "G_PER_L", "value": "2.9703"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -100,3 +136,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/4645
+  title: 'MediaDive solution 4645: Main sol. J722'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=8299944e63c8d8c7fa21bad7d0f1ce79b16b70882115a8fa4065aed865053647;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

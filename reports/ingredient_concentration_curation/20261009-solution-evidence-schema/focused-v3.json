@@ -1,0 +1,73 @@
+{
+  "terminal": true,
+  "phase": "focused-v3",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_solution_formulation_evidence.py",
+        "tests/test_dataclasses_current.py",
+        "tests/test_generated_json_schema.py",
+        "tests/test_recipe_references.py",
+        "tests/test_solution_merge_routing.py",
+        "tests/test_claude_skills.py",
+        "tests/test_schema_docs_command.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-solution-evidence-schema/focused-v3-0.log",
+      "log_sha256": "f5cbc7d907370c0c3508919104d65768517f592de4225271e4597d27f7f3526e"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_claude_skills.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-solution-evidence-schema/focused-v3-1.log",
+      "log_sha256": "8a7c17b5b12285533879f984303142a06cf1cd885f375f9cc77aa0abad40ed75"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+        ".claude/skills/review-ingredient-concentrations"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-solution-evidence-schema/focused-v3-2.log",
+      "log_sha256": "db349825903d66adffea3ecf1bd8e1803043e8a71cf1a051235dabc5371f5bb0"
+    }
+  ],
+  "errors": [],
+  "records_edited": 0,
+  "all_record_goal_complete": false,
+  "normalized_before": "82e954649cedc505c58a3630b18afc0ddb4d9d30f77b75693172a95010987d00",
+  "ignored_files_included": true,
+  "code_before": {
+    "src/culturemech/schema/culturemech.yaml": "cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6",
+    "src/culturemech/schema/culturemech_dataclasses.py": "30f368b93e5b15f5a44bfc705cec348437b031c35eb4b68b0da18db6ad4a0208",
+    "src/culturemech/schema/culturemech.schema.json": "0c6fd2908979dfbf77d1abaff09069e838998858720ec24314319a64d121f78f",
+    ".claude/skills/review-ingredient-concentrations/references/evidence-contract.md": "5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1",
+    "tests/test_dataclasses_current.py": "7ada0eaa4c8814e70e487fd62af677a9553be497c5ca480af2093d426fb37841",
+    "project.justfile": "c9168d3ac18b7290b0030398365b6ce6db425576a7f0001afdcf75d80e5c9ae8",
+    "tests/test_solution_formulation_evidence.py": "f5a7a7b458be5f2ccf2e7cb58ad9570a3ec2e7a575615600ee88defd9872c774",
+    "tests/test_schema_docs_command.py": "73ac7389c08603bd7880df1d792e7604d8fdcbe1f0ff9806864da56f18f10bd6",
+    "tests/fixtures/recipe_references/solution599.json": "ffe160f060239805d87d48a3010ef85e0e6827f95547ea1f4ae8e77fbc59dc00"
+  },
+  "normalized_after": "82e954649cedc505c58a3630b18afc0ddb4d9d30f77b75693172a95010987d00",
+  "code_after": {
+    "src/culturemech/schema/culturemech.yaml": "cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6",
+    "src/culturemech/schema/culturemech_dataclasses.py": "30f368b93e5b15f5a44bfc705cec348437b031c35eb4b68b0da18db6ad4a0208",
+    "src/culturemech/schema/culturemech.schema.json": "0c6fd2908979dfbf77d1abaff09069e838998858720ec24314319a64d121f78f",
+    ".claude/skills/review-ingredient-concentrations/references/evidence-contract.md": "5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1",
+    "tests/test_dataclasses_current.py": "7ada0eaa4c8814e70e487fd62af677a9553be497c5ca480af2093d426fb37841",
+    "project.justfile": "c9168d3ac18b7290b0030398365b6ce6db425576a7f0001afdcf75d80e5c9ae8",
+    "tests/test_solution_formulation_evidence.py": "f5a7a7b458be5f2ccf2e7cb58ad9570a3ec2e7a575615600ee88defd9872c774",
+    "tests/test_schema_docs_command.py": "73ac7389c08603bd7880df1d792e7604d8fdcbe1f0ff9806864da56f18f10bd6",
+    "tests/fixtures/recipe_references/solution599.json": "ffe160f060239805d87d48a3010ef85e0e6827f95547ea1f4ae8e77fbc59dc00"
+  }
+}

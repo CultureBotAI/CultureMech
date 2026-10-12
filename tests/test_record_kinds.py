@@ -9,6 +9,7 @@ The prioritizer's documented "category == solutions" hard filter therefore never
 fired, and 4,772 solutions (31% of the committed report) were ranked as candidate
 media for deep research.
 """
+
 from __future__ import annotations
 
 import importlib.util
@@ -38,33 +39,40 @@ def rk():
 # --- the rule itself ------------------------------------------------------
 
 
-@pytest.mark.parametrize("tid", [
-    "mediadive.solution:1000",
-    "MediaIngredientMech:0001",
-])
+@pytest.mark.parametrize(
+    "tid",
+    [
+        "mediadive.solution:1000",
+        "MediaIngredientMech:0001",
+    ],
+)
 def test_solution_term_prefixes_are_detected(rk, tid):
     assert rk.is_solution_record({"term": {"id": tid}}) is True
 
 
-@pytest.mark.parametrize("doc", [
-    {"term": {"id": "mediadive.medium:123"}},
-    {"term": {"id": "DSM:1"}},
-    {"term": {}},
-    {"term": None},
-    {"term": "not-a-dict"},
-    {},
-    None,
-    "garbage",
-])
+@pytest.mark.parametrize(
+    "doc",
+    [
+        {"term": {"id": "mediadive.medium:123"}},
+        {"term": {"id": "DSM:1"}},
+        {"term": {}},
+        {"term": None},
+        {"term": "not-a-dict"},
+        {},
+        None,
+        "garbage",
+    ],
+)
 def test_non_solutions_are_not_detected(rk, doc):
     assert rk.is_solution_record(doc) is False
 
 
 def test_category_bacterial_does_not_make_it_a_medium(rk):
     """The exact shape that defeated the old filter."""
-    assert rk.is_solution_record(
-        {"category": "bacterial", "term": {"id": "mediadive.solution:1000"}}
-    ) is True
+    assert (
+        rk.is_solution_record({"category": "bacterial", "term": {"id": "mediadive.solution:1000"}})
+        is True
+    )
 
 
 def test_schema_has_no_solutions_category(rk):
@@ -109,13 +117,14 @@ def test_validate_strict_routing_agrees_with_the_shared_rule(rk):
 # --- the corpus-level property --------------------------------------------
 
 
-def test_prioritizer_ranks_no_solution_records():
+def test_prioritizer_ranks_no_solution_records(monkeypatch, corpus_yaml_loader):
     """End-to-end: the ranking must contain zero stock solutions.
 
     Before the fix this was 4,772 of 15,496 entries.
     """
     rk_mod = _load("record_kinds")
     pdrc = _load("prioritize_deep_research_candidates")
+    monkeypatch.setattr(pdrc, "load_yaml", corpus_yaml_loader)
 
     entries = pdrc.collect_records(set())
     assert entries, "expected a non-empty ranking"

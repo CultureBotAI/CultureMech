@@ -1,0 +1,102 @@
+{
+  "terminal": true,
+  "phase": "presentation-applied",
+  "checks": [],
+  "plan_sha256": "dc2a0e96231feac52125245dc55f41d3deb937970a06d151fba10d2fd63d7a4a",
+  "records": [
+    {
+      "path": "data/normalized_yaml/archaea/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml",
+      "actual_sha256": "17690510cc1d91151b68f7cf5b79158b3ef07b5ff8389c7c07e393e979db70f7",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state"
+      ],
+      "prior_history_spans_preserved": 10,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/archaea/methanofollis_medium.yaml",
+      "actual_sha256": "e4930e4ceaf68ffbea48767e64811a882c358cb77fb8c5d2dbd866568e23179f",
+      "unchanged_root_spans": [
+        "applications",
+        "category",
+        "composition_type",
+        "id",
+        "media_term",
+        "medium_type",
+        "name",
+        "original_name",
+        "ph_value",
+        "physical_state",
+        "preparation_steps"
+      ],
+      "prior_history_spans_preserved": 10,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_209_Fatty_acid_mixture.yaml",
+      "actual_sha256": "54b71f4e04abc9a9f0f95c37b0172b65e614e2bfbd8362dc73905c5f1c2684c2",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 7,
+      "prior_evidence_entries_preserved": 0,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_241_Modified_Wolin_s_mineral_solution.yaml",
+      "actual_sha256": "3ad6e16dcff1f675260d599c644e49992fa8d76623e0889caaba21fd1e22bfab",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 9,
+      "prior_evidence_entries_preserved": 15,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_277_Main_sol_161.yaml",
+      "actual_sha256": "e86734d13af7f6d5c3892fa7b27b69558a366aadf2fd0de2b570d67d74309c2d",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "preparation_notes",
+        "term"
+      ],
+      "prior_history_spans_preserved": 10,
+      "prior_evidence_entries_preserved": 6,
+      "exact_preview_readback": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml",
+      "actual_sha256": "b8b5efd085ffa7d0f4e3da6ccf82c0de49b364082867d531beefa757fa3c5950",
+      "unchanged_root_spans": [
+        "category",
+        "id",
+        "preferred_term",
+        "term"
+      ],
+      "prior_history_spans_preserved": 8,
+      "prior_evidence_entries_preserved": 11,
+      "exact_preview_readback": true
+    }
+  ]
+}

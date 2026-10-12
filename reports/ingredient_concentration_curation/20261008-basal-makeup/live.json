@@ -1,0 +1,3395 @@
+{
+  "terminal": true,
+  "phase": "live",
+  "checks": [],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "636ead57e987b08ed47046ac5d4a0485c8c821953f80b009a6f1a3fd5f8a8d11"
+  },
+  "sources": [
+    {
+      "key": "M809",
+      "url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M809",
+      "sha256": "127b83bb25ad53c8a643ac723245f22857f2917e9da1571b1f12b1386a478216",
+      "accessed_at": "2026-10-08T17:48:05.666010+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "JCM779",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=779",
+      "sha256": "839f4955a74001e505d79b399aa2f028430abcc1f2186f2e333408e12468b7c3",
+      "accessed_at": "2026-10-08T17:48:06.242458+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "M823",
+      "url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+      "sha256": "c77916a37358bc9f8117cc85e146cde6ba93c0d8a22df2823476a6fd64d622b8",
+      "accessed_at": "2026-10-08T17:48:06.548008+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "JCM791",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+      "sha256": "237ed61b269986724eec98f6f54df75d7650d6df4fe81c469d49d75a5d2d1839",
+      "accessed_at": "2026-10-08T17:48:06.890443+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "M853",
+      "url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+      "sha256": "369bd19dd98ef74787ee23c2ae4deeb504b7320a3584f23f4cb2713034c69c80",
+      "accessed_at": "2026-10-08T17:48:07.200953+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "JCM818",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=818",
+      "sha256": "d8cc81883e423ab47b98821940ee5ab11bf1fe6c485fdd8f9a613319808f3de1",
+      "accessed_at": "2026-10-08T17:48:07.541097+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "M975",
+      "url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M975",
+      "sha256": "acee03e8e3eaba253689dd77286fc1fd14aaeb8d83fd272689527b586c796c72",
+      "accessed_at": "2026-10-08T17:48:07.841661+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "JCM929",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=929",
+      "sha256": "0f60390e8e6e04beed80933186f0cfc8decd8141db697b16e68276a5e81c3140",
+      "accessed_at": "2026-10-08T17:48:08.185137+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "M142",
+      "url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+      "sha256": "610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33",
+      "accessed_at": "2026-10-08T17:48:08.497301+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "M190",
+      "url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+      "sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+      "accessed_at": "2026-10-08T17:48:08.693025+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "JCM151",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+      "sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+      "accessed_at": "2026-10-08T17:48:09.037499+00:00",
+      "matches_inspected_capture": true
+    },
+    {
+      "key": "JCM197",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+      "sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+      "accessed_at": "2026-10-08T17:48:09.390119+00:00",
+      "matches_inspected_capture": true
+    }
+  ],
+  "records": {
+    "M809": {
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M809",
+          "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=779",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M809",
+          "supporting_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 8.8,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 8.8,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=779",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M809",
+          "supporting_text": "{\n          \"component_name\": \"Yeast extract\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Yeast extract\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=779",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M809",
+          "supporting_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 75,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 75,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=779",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M809",
+          "supporting_text": "{\n          \"component_name\": \"KCl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KCl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=779",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M809",
+          "supporting_text": "{\n          \"component_name\": \"Trypticase peptone (BD-BBL)\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001097\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Trypticase peptone (BD-BBL)\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001097\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=779",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M809",
+          "supporting_text": "{\n          \"component_name\": \"NaOH\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001300\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NaOH\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001300\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=779",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[6].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M809",
+          "supporting_text": "{\n          \"component_name\": \"N2\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"N2\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=779",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[7].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+          "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+          "supporting_text": "{\n          \"component_name\": \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001025\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001025\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+          "supporting_text": "{\n          \"component_name\": \"p--Aminobenzoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001026\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"p--Aminobenzoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001026\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+          "supporting_text": "{\n          \"component_name\": \"Thiamine\u30fbHCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001027\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Thiamine\u30fbHCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001027\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+          "supporting_text": "{\n          \"component_name\": \"Calcium pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001028\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Calcium pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001028\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+          "supporting_text": "{\n          \"component_name\": \"Pyridoxine\u30fbHCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001029\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Pyridoxine\u30fbHCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001029\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+          "supporting_text": "{\n          \"component_name\": \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001033\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001033\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+          "supporting_text": "{\n          \"component_name\": \"Vitamin B12\",\n          \"volume\": 0.1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001034\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Vitamin B12\",\n          \"volume\": 0.1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001034\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+          "supporting_text": "{\n          \"component_name\": \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001037\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001037\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+          "supporting_text": "{\n          \"component_name\": \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001038\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001038\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+          "supporting_text": "{\n          \"component_name\": \"Lipoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001699\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Lipoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001699\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"Na2MoO4\u30fb2H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Na2MoO4\u30fb2H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"FeSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001016\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"FeSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001016\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"ZnSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001023\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"ZnSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001023\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"CuSO4\u30fb5H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001039\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"CuSO4\u30fb5H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001039\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"CoSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001050\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"CoSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001050\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"Nitrilotriacetic acid\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001053\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Nitrilotriacetic acid\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001053\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"MnSO4\u30fbxH2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001065\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"MnSO4\u30fbxH2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001065\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"AlK(SO4)2\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001088\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"AlK(SO4)2\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001088\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[12].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M809",
+          "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 25,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 25,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M809",
+          "supporting_text": "{\n          \"component_name\": \"Sodium thioglycolate\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001132\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Sodium thioglycolate\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001132\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M809",
+          "supporting_text": "{\n          \"component_name\": \"Sodium ascorbate\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001225\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Sodium ascorbate\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001225\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M809",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L. Adjust pH 8.0 with NaOH. Autoclave under a N2 atmosphere. After cooling, add anaerobically the following solutions (autoclaved or *filter--sterilized):",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L. Adjust pH 8.0 with NaOH. Autoclave under a N2 atmosphere. After cooling, add anaerobically the following solutions (autoclaved or *filter--sterilized):",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=779",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+          "supporting_text": "Trace vitamins:",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Trace vitamins:",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[2].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"KOH solution\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001903\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KOH solution\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001903\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[3].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[4].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M809",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=779",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[2].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[3].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[4].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[5].title"
+        }
+      ],
+      "reference_issues": []
+    },
+    "M823": {
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+          "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+          "supporting_text": "{\n          \"component_name\": \"Yeast extract\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Yeast extract\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+          "supporting_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 150,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 150,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+          "supporting_text": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 0.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 0.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+          "supporting_text": "{\n          \"component_name\": \"KH2PO4\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001006\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KH2PO4\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001006\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+          "supporting_text": "{\n          \"component_name\": \"NH4Cl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001008\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NH4Cl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001008\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+          "supporting_text": "{\n          \"component_name\": \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001012\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001012\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[6].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+          "supporting_text": "{\n          \"component_name\": \"MgCl2\u30fb6H2O\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001013\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"MgCl2\u30fb6H2O\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001013\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[7].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+          "supporting_text": "{\n          \"component_name\": \"KCl\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KCl\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[8].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+          "supporting_text": "{\n          \"component_name\": \"L--Cysteine\u30fbHCl\u30fbH2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001205\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"L--Cysteine\u30fbHCl\u30fbH2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001205\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[9].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+          "supporting_text": "{\n          \"component_name\": \"KOH\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001903\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KOH\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001903\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[10].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+          "supporting_text": "{\n          \"component_name\": \"Carbon dioxide gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002260\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Carbon dioxide gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002260\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[11].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+          "supporting_text": "{\n          \"component_name\": \"Nitrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Nitrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[12].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[12].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"Na2MoO4\u30fb2H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Na2MoO4\u30fb2H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"FeSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001016\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"FeSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001016\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"ZnSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001023\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"ZnSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001023\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"CuSO4\u30fb5H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001039\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"CuSO4\u30fb5H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001039\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"CoSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001050\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"CoSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001050\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"Nitrilotriacetic acid\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001053\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Nitrilotriacetic acid\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001053\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"MnSO4\u30fbxH2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001065\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"MnSO4\u30fbxH2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001065\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"AlK(SO4)2\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001088\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"AlK(SO4)2\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001088\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[12].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+          "supporting_text": "{\n          \"component_name\": \"1 M Glucose solution\",\n          \"volume\": 20,\n          \"unit\": \"ml\",\n          \"conc_value\": 1,\n          \"conc_unit\": \"M\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001465\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"1 M Glucose solution\",\n          \"volume\": 20,\n          \"unit\": \"ml\",\n          \"conc_value\": 1,\n          \"conc_unit\": \"M\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001465\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L. Adjust pH to 7.0 with KOH, distribute the medium into culture vessels (e.g., 5 ml of the medium in the Hungate tubes) under a N2--CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per literthe following solutions from anaerobic stocks (autoclaved or*filter--sterilized):",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L. Adjust pH to 7.0 with KOH, distribute the medium into culture vessels (e.g., 5 ml of the medium in the Hungate tubes) under a N2--CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per literthe following solutions from anaerobic stocks (autoclaved or*filter--sterilized):",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"KOH solution\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001903\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KOH solution\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001903\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[2].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[3].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=818",
+          "supporting_text": "Use JCM Medium No. 791 with 5.0 g/L MgSO4\u00b77H2O instead of CaCl2\u00b72H2O. Adjust pH to 7.5.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Use JCM Medium No. 791 with 5.0 g/L MgSO4\u00b77H2O instead of CaCl2\u00b72H2O. Adjust pH to 7.5.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "variant_children[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M823",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[2].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[3].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=818",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[4].title"
+        }
+      ],
+      "reference_issues": []
+    },
+    "M853": {
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+          "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+          "supporting_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 5,\n          \"unit\": \"g/L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 5,\n          \"unit\": \"g/L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=818",
+          "supporting_text": "Use JCM Medium No. 791 with 5.0 g/L MgSO4\u00b77H2O instead of CaCl2\u00b72H2O. Adjust pH to 7.5.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Use JCM Medium No. 791 with 5.0 g/L MgSO4\u00b77H2O instead of CaCl2\u00b72H2O. Adjust pH to 7.5.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[1].evidence[2].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+          "supporting_text": "{\n          \"component_name\": \"Yeast extract\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Yeast extract\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+          "supporting_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 150,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 150,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+          "supporting_text": "{\n          \"component_name\": \"KH2PO4\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001006\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KH2PO4\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001006\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+          "supporting_text": "{\n          \"component_name\": \"NH4Cl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001008\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NH4Cl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001008\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+          "supporting_text": "{\n          \"component_name\": \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001012\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001012\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[6].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+          "supporting_text": "{\n          \"component_name\": \"MgCl2\u30fb6H2O\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001013\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"MgCl2\u30fb6H2O\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001013\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[7].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+          "supporting_text": "{\n          \"component_name\": \"KCl\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KCl\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[8].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+          "supporting_text": "{\n          \"component_name\": \"L--Cysteine\u30fbHCl\u30fbH2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001205\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"L--Cysteine\u30fbHCl\u30fbH2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001205\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[9].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+          "supporting_text": "{\n          \"component_name\": \"KOH\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001903\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KOH\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001903\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[10].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+          "supporting_text": "{\n          \"component_name\": \"Carbon dioxide gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002260\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Carbon dioxide gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002260\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[11].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+          "supporting_text": "{\n          \"component_name\": \"Nitrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Nitrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[12].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[12].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"Na2MoO4\u30fb2H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Na2MoO4\u30fb2H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"FeSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001016\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"FeSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001016\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"ZnSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001023\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"ZnSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001023\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"CuSO4\u30fb5H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001039\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"CuSO4\u30fb5H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001039\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"CoSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001050\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"CoSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001050\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"Nitrilotriacetic acid\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001053\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Nitrilotriacetic acid\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001053\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"MnSO4\u30fbxH2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001065\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"MnSO4\u30fbxH2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001065\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"AlK(SO4)2\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001088\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"AlK(SO4)2\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001088\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[12].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+          "supporting_text": "{\n          \"component_name\": \"1 M Glucose solution\",\n          \"volume\": 20,\n          \"unit\": \"ml\",\n          \"conc_value\": 1,\n          \"conc_unit\": \"M\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001465\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"1 M Glucose solution\",\n          \"volume\": 20,\n          \"unit\": \"ml\",\n          \"conc_value\": 1,\n          \"conc_unit\": \"M\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001465\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[2].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L. Adjust pH to 7.0 with KOH, distribute the medium into culture vessels (e.g., 5 ml of the medium in the Hungate tubes) under a N2--CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per literthe following solutions from anaerobic stocks (autoclaved or*filter--sterilized):",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L. Adjust pH to 7.0 with KOH, distribute the medium into culture vessels (e.g., 5 ml of the medium in the Hungate tubes) under a N2--CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per literthe following solutions from anaerobic stocks (autoclaved or*filter--sterilized):",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"KOH solution\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001903\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KOH solution\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001903\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[2].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[3].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=818",
+          "supporting_text": "Use JCM Medium No. 791 with 5.0 g/L MgSO4\u00b77H2O instead of CaCl2\u00b72H2O. Adjust pH to 7.5.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Use JCM Medium No. 791 with 5.0 g/L MgSO4\u00b77H2O instead of CaCl2\u00b72H2O. Adjust pH to 7.5.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[4].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=818",
+          "supporting_text": "Use JCM Medium No. 791 with 5.0 g/L MgSO4\u00b77H2O instead of CaCl2\u00b72H2O. Adjust pH to 7.5.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Use JCM Medium No. 791 with 5.0 g/L MgSO4\u00b77H2O instead of CaCl2\u00b72H2O. Adjust pH to 7.5.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "parent_media.evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M853",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=791",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=818",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[2].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[3].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[4].title"
+        }
+      ],
+      "reference_issues": []
+    },
+    "M975": {
+      "reference_checks": [
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M975",
+          "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=929",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M975",
+          "supporting_text": "{\n          \"component_name\": \"Yeast extract\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Yeast extract\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=929",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[1].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M975",
+          "supporting_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 200,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 200,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=929",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[2].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M975",
+          "supporting_text": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=929",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[3].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M975",
+          "supporting_text": "{\n          \"component_name\": \"KH2PO4\",\n          \"volume\": 0.3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001006\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KH2PO4\",\n          \"volume\": 0.3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001006\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=929",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[4].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M975",
+          "supporting_text": "{\n          \"component_name\": \"NH4Cl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001008\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NH4Cl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001008\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=929",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[5].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M975",
+          "supporting_text": "{\n          \"component_name\": \"K2HPO4\",\n          \"volume\": 0.3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001009\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"K2HPO4\",\n          \"volume\": 0.3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001009\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=929",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[6].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M975",
+          "supporting_text": "{\n          \"component_name\": \"KCl\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KCl\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=929",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[7].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M975",
+          "supporting_text": "{\n          \"component_name\": \"KNO3\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001056\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KNO3\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001056\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=929",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[8].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M975",
+          "supporting_text": "{\n          \"component_name\": \"Carbon dioxide gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002260\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Carbon dioxide gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002260\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=929",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[9].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M975",
+          "supporting_text": "{\n          \"component_name\": \"N2\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"N2\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=929",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].composition[10].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"MgSO4\u30fb7H2O\",\n          \"volume\": 3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[1].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[2].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"CaCl2\u30fb2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[3].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"Na2MoO4\u30fb2H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Na2MoO4\u30fb2H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[4].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[5].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"FeSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001016\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"FeSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001016\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[6].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"ZnSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001023\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"ZnSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001023\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[7].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"CuSO4\u30fb5H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001039\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"CuSO4\u30fb5H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001039\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[8].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"CoSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001050\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"CoSO4\u30fb7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001050\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[9].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"Nitrilotriacetic acid\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001053\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"Nitrilotriacetic acid\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001053\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[10].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"MnSO4\u30fbxH2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001065\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"MnSO4\u30fbxH2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001065\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[11].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"AlK(SO4)2\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001088\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"AlK(SO4)2\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001088\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[0].composition[12].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M975",
+          "supporting_text": "{\n          \"component_name\": \"KOH\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"M\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001903\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KOH\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"M\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001903\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=929",
+          "supporting_text": "Adjust pH to 8.3 with 10 M KOH.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Adjust pH to 8.3 with 10 M KOH.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[0].solutions[1].composition[0].evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M975",
+          "supporting_text": "{\n          \"component_name\": \"1 M Glucose solution\",\n          \"volume\": 20,\n          \"unit\": \"ml\",\n          \"conc_value\": 1,\n          \"conc_unit\": \"M\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001465\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"1 M Glucose solution\",\n          \"volume\": 20,\n          \"unit\": \"ml\",\n          \"conc_value\": 1,\n          \"conc_unit\": \"M\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001465\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "solutions[3].composition[0].evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M975",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L. Adjust pH to 8.3 with 10 M KOH. Bring to a boil and cool down under a N2 gas stream.Then, distribute the medium into culture vessels (e.g., 5 ml of the mediumin the Hungate tubes) under a N2--CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave at 110C for 20 min. Aseptically and anaerobically add the following solutions (autoclaved or *filter--sterilized) into the medium (per liter):",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L. Adjust pH to 8.3 with 10 M KOH. Bring to a boil and cool down under a N2 gas stream.Then, distribute the medium into culture vessels (e.g., 5 ml of the mediumin the Hungate tubes) under a N2--CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave at 110C for 20 min. Aseptically and anaerobically add the following solutions (autoclaved or *filter--sterilized) into the medium (per liter):",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[0].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=929",
+          "supporting_text": "Add components to distilled water and bring volume to 1.0 L.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Add components to distilled water and bring volume to 1.0 L.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[1].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "{\n          \"component_name\": \"KOH solution\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001903\"",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "{\n          \"component_name\": \"KOH solution\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001903\"",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[2].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": {
+            "found": true,
+            "similarity_score": 1.0,
+            "matched_text": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.",
+            "match_location": null,
+            "error_message": null,
+            "suggested_fix": null,
+            "best_match": null
+          },
+          "path": "evidence[3].snippet"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M975",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[0].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=929",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[1].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[2].title"
+        },
+        {
+          "is_valid": true,
+          "reference_id": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+          "supporting_text": "",
+          "severity": "INFO",
+          "message": "Official recipe literal reference check passed",
+          "match_result": null,
+          "path": "references[3].title"
+        }
+      ],
+      "reference_issues": []
+    }
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "636ead57e987b08ed47046ac5d4a0485c8c821953f80b009a6f1a3fd5f8a8d11"
+  }
+}

@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-10-07T00:39:13
+# Generation date: 2026-10-11T01:57:23
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -460,6 +460,7 @@ class SolutionRecipe(YAMLRoot):
     data_quality_flags: Optional[Union[str, list[str]]] = empty_list()
     sources: Optional[Union[Union[dict, "SourceReference"], list[Union[dict, "SourceReference"]]]] = empty_list()
     notes: Optional[str] = None
+    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.id):
@@ -525,6 +526,8 @@ class SolutionRecipe(YAMLRoot):
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
+
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
         super().__post_init__(**kwargs)
 
@@ -4257,6 +4260,9 @@ slots.solutionRecipe__sources = Slot(uri=CULTUREMECH.sources, name="solutionReci
 
 slots.solutionRecipe__notes = Slot(uri=CULTUREMECH.notes, name="solutionRecipe__notes", curie=CULTUREMECH.curie('notes'),
                    model_uri=CULTUREMECH.solutionRecipe__notes, domain=None, range=Optional[str])
+
+slots.solutionRecipe__evidence = Slot(uri=CULTUREMECH.evidence, name="solutionRecipe__evidence", curie=CULTUREMECH.curie('evidence'),
+                   model_uri=CULTUREMECH.solutionRecipe__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
 
 slots.recipeSynonym__name = Slot(uri=CULTUREMECH.name, name="recipeSynonym__name", curie=CULTUREMECH.curie('name'),
                    model_uri=CULTUREMECH.recipeSynonym__name, domain=None, range=str)

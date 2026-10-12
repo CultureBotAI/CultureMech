@@ -1,0 +1,174 @@
+{
+  "scope": "Triage only; no proposed or applied edit, not complete source reviews.",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_170_Main_sol_98.yaml",
+      "id": "CultureMech:011162",
+      "solution_id": 170,
+      "before_sha256": "f6a5a6fb5e0da835dba059b526591dd739d6ed46e4e2f77a3d9167ab5505ef12",
+      "withheld_reasons": [
+        "nested/local or source stock rows need their own preparation review"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_236_Main_sol_137.yaml",
+      "id": "CultureMech:011748",
+      "solution_id": 236,
+      "before_sha256": "b7bc8bd9f85bcc0c163a11c76e1956cb5ef65aedb4c9cdcd0b734b3916d75c6e",
+      "withheld_reasons": [
+        "nested/local or source stock rows need their own preparation review"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2609_Main_sol_1306.yaml",
+      "id": "CultureMech:011944",
+      "solution_id": 2609,
+      "before_sha256": "8d9b155246ede17d7287a50ab206b9e874a51990f24d99fe8cfc3352dbf062c9",
+      "withheld_reasons": [
+        "nested/local or source stock rows need their own preparation review"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3262_Main_sol_1573.yaml",
+      "id": "CultureMech:012442",
+      "solution_id": 3262,
+      "before_sha256": "349493b15a8b1b0b6262a815a03d0233d65e8775fab758038e40e05d3913af38",
+      "withheld_reasons": [
+        "nested/local or source stock rows need their own preparation review"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_3740_Solution_A.yaml",
+      "id": "CultureMech:012819",
+      "solution_id": 3740,
+      "before_sha256": "46167489b412d80e6fd34a04be6e3812ec026f5c79542f5b82ea2465d9467ff1",
+      "withheld_reasons": [
+        "local preparation differs from the exact source instruction"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4138_Main_sol_J407.yaml",
+      "id": "CultureMech:013174",
+      "solution_id": 4138,
+      "before_sha256": "70ff2abe1491d68b224fa4edf16e1f796b5021b24f66fb95a5e9eea21a85484d",
+      "withheld_reasons": [
+        "nested/local or source stock rows need their own preparation review"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4173_Main_sol_J432.yaml",
+      "id": "CultureMech:013202",
+      "solution_id": 4173,
+      "before_sha256": "5d9cdcc12b89c95503194f442e9b9f2a7faaf61e96278eed4c96bd1b459082cd",
+      "withheld_reasons": [
+        "nested/local or source stock rows need their own preparation review",
+        "local preparation differs from the exact source instruction"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4214_Main_sol_J466.yaml",
+      "id": "CultureMech:013238",
+      "solution_id": 4214,
+      "before_sha256": "0284a42c93cb49fa527b120acdfb39056ac3a3d04a248e2a91f0bfa3a4686ed8",
+      "withheld_reasons": [
+        "local preparation differs from the exact source instruction"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4306_Main_sol_J518.yaml",
+      "id": "CultureMech:013314",
+      "solution_id": 4306,
+      "before_sha256": "ada4bbdc9baaa1e5654af535444703a6d83c0f2ef33c14bd872a1873ec23e9c4",
+      "withheld_reasons": [
+        "local preparation differs from the exact source instruction"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4507_Main_sol_J633.yaml",
+      "id": "CultureMech:013479",
+      "solution_id": 4507,
+      "before_sha256": "4c3850e3d22916d1145bf5aef90ccfefb3987b83c101c389cd79da82eb73d221",
+      "withheld_reasons": [
+        "local preparation differs from the exact source instruction"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4534_Main_sol_J648.yaml",
+      "id": "CultureMech:013500",
+      "solution_id": 4534,
+      "before_sha256": "2b40a222ac27b3355b0239d564c3c44657ffde703e2f404145b48798a970e410",
+      "withheld_reasons": [
+        "nested/local or source stock rows need their own preparation review",
+        "local preparation differs from the exact source instruction"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4535_Main_sol_J649.yaml",
+      "id": "CultureMech:013501",
+      "solution_id": 4535,
+      "before_sha256": "cd3f69ecf99ce5c8c30cc7a932334ed66bc78a159850b763b5b42be19c25738b",
+      "withheld_reasons": [
+        "local preparation differs from the exact source instruction"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4544_Main_sol_J657.yaml",
+      "id": "CultureMech:013511",
+      "solution_id": 4544,
+      "before_sha256": "70a11c5d47420fc76fdcbed08e595e111f63f1ce714d008a8698edc1ddf6f58f",
+      "withheld_reasons": [
+        "nested/local or source stock rows need their own preparation review",
+        "local preparation differs from the exact source instruction"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4545_Main_sol_J658.yaml",
+      "id": "CultureMech:013512",
+      "solution_id": 4545,
+      "before_sha256": "b6dd600796ae3623fb63fa179ed2b6e5e5c6ccd2f908216ba3cd52e277041333",
+      "withheld_reasons": [
+        "nested/local or source stock rows need their own preparation review",
+        "local preparation differs from the exact source instruction"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4829_Main_sol_J854.yaml",
+      "id": "CultureMech:013768",
+      "solution_id": 4829,
+      "before_sha256": "7c0436156369471b1044ca477ef27fe4b9cf6f0f525e5c15fdd654a2a7b245cc",
+      "withheld_reasons": [
+        "nested/local or source stock rows need their own preparation review",
+        "local preparation differs from the exact source instruction"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_4973_Main_sol_J951.yaml",
+      "id": "CultureMech:013896",
+      "solution_id": 4973,
+      "before_sha256": "5804fce1aa1b71756999d30fa7cc9374df5909c30b205d044008ad9f3a0d03c0",
+      "withheld_reasons": [
+        "nested/local or source stock rows need their own preparation review",
+        "local preparation differs from the exact source instruction"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_5451_Main_sol_J1297.yaml",
+      "id": "CultureMech:014356",
+      "solution_id": 5451,
+      "before_sha256": "5f1cb6767a1662d612f8194ab91b9107540663463cfb955d42d564157dbc3eac",
+      "withheld_reasons": [
+        "nested/local or source stock rows need their own preparation review",
+        "local preparation differs from the exact source instruction"
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_5856_neutralized_Na2S_x_9_H2O_solution_10_w_v.yaml",
+      "id": "CultureMech:014673",
+      "solution_id": 5856,
+      "before_sha256": "3be39fc70b7c812820cfb7dea55c66c4777af7605deaecf0516398aebadd5927",
+      "withheld_reasons": [
+        "local preparation differs from the exact source instruction"
+      ]
+    }
+  ]
+}

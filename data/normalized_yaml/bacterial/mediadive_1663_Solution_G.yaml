@@ -13,8 +13,8 @@ composition:
     label: Trypticase
 - preferred_term: Distilled water
   concentration:
-    value: '1000.0'
-    unit: PERCENT_V_V
+    value: '0.005'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -23,6 +23,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1663
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Distilled
+      water) in MediaDive solution 1663; locator=$.data.recipe[1] (compound_id=4).
+      Source water addition is 5 ml per prepared batch: 5 / 1000 = 0.005 L. No source
+      preparation step gives a competing make-up instruction. This is a batch dose,
+      not a volume percentage; no final-volume or solvent-density assumption is made.
+      Additional exact excerpt at $.data.volume: "volume": 5. Retrieved 2026-10-07T08:55:13.009596+00:00;
+      response SHA256=56d08a5df82fde1f064df163fe4a3c09a8b5f5d154913a3e7579289a5e943c26.'
 preparation_notes: 'Original volume: 5 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:17.642978Z'
@@ -59,6 +84,15 @@ curation_history:
     MICRO:0000175 (remove_chebi_term). Reviewed identities: https://github.com/CultureBotAI/MediaIngredientMech/tree/24562493919391df4468a4285b7c997960cc8868.
     Publication resolver: MIM label index 9f09e4fb97fb0e6cbbd6f25baca40b36512adb88.
     MediaDive source IDs and concentrations preserved.'
+- timestamp: '2026-10-07T09:01:17.963098+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/1663
+  changes: 'composition[1].concentration: {"unit": "PERCENT_V_V", "value": "1000.0"}
+    -> {"unit": "L", "value": "0.005"} (correct)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -67,3 +101,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/1663
+  title: 'MediaDive solution 1663: Solution G'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=56d08a5df82fde1f064df163fe4a3c09a8b5f5d154913a3e7579289a5e943c26;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

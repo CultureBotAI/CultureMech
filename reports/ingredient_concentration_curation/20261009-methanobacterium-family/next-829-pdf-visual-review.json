@@ -1,0 +1,40 @@
+{
+  "terminal": true,
+  "records_edited": false,
+  "context_sha256": "30cc0440abce94df797ecea5b5d501d1f76c94aab07f50ba734cfe748561bedf",
+  "page_images": [
+    {
+      "source": "DSMZ829a",
+      "page": 1,
+      "pdf_sha256": "0d8ca5cd0d4b7b3eb3a1f8a97f8c371e6638b9515184bbdd9c3e722fdebcd916",
+      "image": "/tmp/ingredient-media-20261007/next829-pages/DSMZ829a-1.jpg",
+      "image_sha256": "2f0024a1f82e24729f63ddbfc5ec0e50946db789761ca941fd647cc4f795172f",
+      "inspection": "Distinct salt/thiosulfate formulation, with no explicit final-volume heading. Main recipe has 0.50 ml resazurin 0.1% w/v and 20 ml neutralized sulfide 3% w/v. Sulfide preparation lists 3 g nonahydrate plus 100 ml water and dropwise 2 M sulfuric acid to pH about 7; the vessel size 250 ml is not final solution volume."
+    },
+    {
+      "source": "DSMZ829",
+      "page": 1,
+      "pdf_sha256": "73b87bbb602b5d40fa5a442a74b8a227fc26774281d333b7718a15317fd1cb27",
+      "image": "/tmp/ingredient-media-20261007/next829-pages/DSMZ829-1.jpg",
+      "image_sha256": "6d6c63bd596571dcfbd347e672014541b51214f22b7bb63f669b03062ee4559f",
+      "inspection": "Final volume 1005 ml and pH 6.0 are printed explicitly. Main-table inputs and growth-factor masses match extraction. Growth factors are grams, not milliliters. DSM 16661/21157 omit the entire growth-factor stock and use 2 bar after inoculation. The base uses 1 bar and 110 C for 20 minutes; do not confuse stock pH 9 with medium pH 6."
+    },
+    {
+      "source": "DSMZ829",
+      "page": 2,
+      "pdf_sha256": "73b87bbb602b5d40fa5a442a74b8a227fc26774281d333b7718a15317fd1cb27",
+      "image": "/tmp/ingredient-media-20261007/next829-pages/DSMZ829-2.jpg",
+      "image_sha256": "fdba9e38d630dce51e2e7cc929ec542887772fc57ae7436644ae1fed6859e0ea",
+      "inspection": "SL-10 explicitly makes up to 1000 ml; 25% HCl has no percentage basis. Selenium/tungsten and seven-vitamin tables list water inputs, not explicit final stock volumes. Dithionite heading states 5% w/v; NaOH is 0.50 ml of 1 N, not 0.50 g. Water is 9.50 ml. Growth-factor NaOH is titrated to pH 9 without an amount."
+    },
+    {
+      "source": "DSMZ829",
+      "page": 3,
+      "pdf_sha256": "73b87bbb602b5d40fa5a442a74b8a227fc26774281d333b7718a15317fd1cb27",
+      "image": "/tmp/ingredient-media-20261007/next829-pages/DSMZ829-3.jpg",
+      "image_sha256": "b268ec7400d99b0fea0c08865f5e3e3e65a41ed07cd1187c689511db1675ffb5",
+      "inspection": "Continues dithionite preparation from page 2: dark/cool storage and small freshly prepared amounts because it decomposes rapidly. No additional ingredient rows or final-volume statement."
+    }
+  ],
+  "bibliographic_limits": "The 2025 and 2022 footer years are copyright years, not independently verified publication dates. No authors are inferred."
+}

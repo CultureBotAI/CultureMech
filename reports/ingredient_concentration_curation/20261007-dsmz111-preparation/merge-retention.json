@@ -1,0 +1,81 @@
+{
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/beijerinckia_medium.yaml",
+      "status": "checked",
+      "fingerprint": "41452513a06151fedc395115746a2cf50b80981ddd08fecac334e9594275f3e5",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_111_BEIJERINCKIA_MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/beijerinckia_medium.yaml"
+      ],
+      "merged_id": "CultureMech:003822",
+      "field_retention": {
+        "ingredients": false,
+        "composition": true,
+        "solutions": false,
+        "preparation_steps": true,
+        "preparation_notes": true,
+        "notes": false,
+        "ph_value": true,
+        "physical_state": true,
+        "source_data": true,
+        "evidence": false,
+        "references": false,
+        "curation_history": false
+      },
+      "all_checked_fields_retained": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_111_BEIJERINCKIA_MEDIUM.yaml",
+      "status": "checked",
+      "fingerprint": "41452513a06151fedc395115746a2cf50b80981ddd08fecac334e9594275f3e5",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_111_BEIJERINCKIA_MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/beijerinckia_medium.yaml"
+      ],
+      "merged_id": "CultureMech:003822",
+      "field_retention": {
+        "ingredients": true,
+        "composition": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "preparation_notes": true,
+        "notes": true,
+        "ph_value": true,
+        "physical_state": true,
+        "source_data": true,
+        "evidence": true,
+        "references": true,
+        "curation_history": true
+      },
+      "all_checked_fields_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_190_Main_sol_111.yaml",
+      "status": "checked",
+      "fingerprint": "e3ee3b20bd45561206c94dbb9439fc2f3a1d8545d4b09ad6ae26ba4a1b763949",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/mediadive_190_Main_sol_111.yaml"
+      ],
+      "merged_id": "CultureMech:011325",
+      "field_retention": {
+        "ingredients": true,
+        "composition": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "preparation_notes": true,
+        "notes": true,
+        "ph_value": true,
+        "physical_state": true,
+        "source_data": true,
+        "evidence": true,
+        "references": true,
+        "curation_history": true
+      },
+      "all_checked_fields_retained": true
+    }
+  ],
+  "all_retained": false,
+  "retained": 2,
+  "scope": "Actual current corpus groups, not a forced merge of the selected inputs. Exact ingredient/stock/preparation equality; root provenance may add but not discard entries. Excluded inputs are not a pass. No generated merge published."
+}

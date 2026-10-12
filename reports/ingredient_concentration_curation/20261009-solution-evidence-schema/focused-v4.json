@@ -1,0 +1,127 @@
+{
+  "terminal": true,
+  "phase": "focused-v4",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_solution_formulation_evidence.py",
+        "tests/test_dataclasses_current.py",
+        "tests/test_generated_json_schema.py",
+        "tests/test_recipe_references.py",
+        "tests/test_solution_merge_routing.py",
+        "tests/test_claude_skills.py",
+        "tests/test_schema_docs_command.py",
+        "tests/test_komodo_concentration_review.py",
+        "tests/test_komodo_concentration_final_batch.py",
+        "tests/test_komodo_concentration_sixth_batch.py",
+        "tests/test_mediadive_stock_concentration_evidence.py",
+        "tests/test_repair_komodo_829_desulfurobacterium_ph_score10.py",
+        "tests/test_markdown_links.py",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_solution_concentration_review.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-solution-evidence-schema/focused-v4-0.log",
+      "log_sha256": "6f78643f103b976045583be1dd2db37f292eb7b1eda9ea1d9ed2f85d1ceebb63"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_claude_skills.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-solution-evidence-schema/focused-v4-1.log",
+      "log_sha256": "8a7c17b5b12285533879f984303142a06cf1cd885f375f9cc77aa0abad40ed75"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+        ".claude/skills/review-ingredient-concentrations"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-solution-evidence-schema/focused-v4-2.log",
+      "log_sha256": "db349825903d66adffea3ecf1bd8e1803043e8a71cf1a051235dabc5371f5bb0"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "tests/test_dataclasses_current.py",
+        "tests/test_solution_formulation_evidence.py",
+        "tests/test_schema_docs_command.py",
+        "tests/test_komodo_concentration_review.py",
+        "tests/test_komodo_concentration_final_batch.py",
+        "tests/test_komodo_concentration_sixth_batch.py",
+        "tests/test_mediadive_stock_concentration_evidence.py",
+        "tests/test_repair_komodo_829_desulfurobacterium_ph_score10.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-solution-evidence-schema/focused-v4-3.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "tests/test_dataclasses_current.py",
+        "tests/test_solution_formulation_evidence.py",
+        "tests/test_schema_docs_command.py",
+        "tests/test_komodo_concentration_review.py",
+        "tests/test_komodo_concentration_final_batch.py",
+        "tests/test_komodo_concentration_sixth_batch.py",
+        "tests/test_mediadive_stock_concentration_evidence.py",
+        "tests/test_repair_komodo_829_desulfurobacterium_ph_score10.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-solution-evidence-schema/focused-v4-4.log",
+      "log_sha256": "6a479b5c82191f225899d5e11b6acd828479dbe0a41fbaea811c4de9326eb022"
+    }
+  ],
+  "errors": [],
+  "records_edited": 0,
+  "all_record_goal_complete": false,
+  "normalized_before": "82e954649cedc505c58a3630b18afc0ddb4d9d30f77b75693172a95010987d00",
+  "ignored_files_included": true,
+  "code_before": {
+    "src/culturemech/schema/culturemech.yaml": "cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6",
+    "src/culturemech/schema/culturemech_dataclasses.py": "30f368b93e5b15f5a44bfc705cec348437b031c35eb4b68b0da18db6ad4a0208",
+    "src/culturemech/schema/culturemech.schema.json": "0c6fd2908979dfbf77d1abaff09069e838998858720ec24314319a64d121f78f",
+    ".claude/skills/review-ingredient-concentrations/references/evidence-contract.md": "5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1",
+    "tests/test_dataclasses_current.py": "7ada0eaa4c8814e70e487fd62af677a9553be497c5ca480af2093d426fb37841",
+    "project.justfile": "4cef62965ed7dec05b11f6bf769c486aa0e91bfa43ead057fc297229834a121e",
+    "tests/test_solution_formulation_evidence.py": "f5a7a7b458be5f2ccf2e7cb58ad9570a3ec2e7a575615600ee88defd9872c774",
+    "tests/test_schema_docs_command.py": "c506aff9029bd2dda3b4f6ae5c9c5732993a247e60a132ee46d43be1f970c0f6",
+    "tests/fixtures/recipe_references/solution599.json": "ffe160f060239805d87d48a3010ef85e0e6827f95547ea1f4ae8e77fbc59dc00",
+    "tests/test_komodo_concentration_review.py": "70c18eb3b5a2ea9bec9f7e221baaba9a994a19e9dc4cd7efa4d0189f7be4ff32",
+    "tests/test_komodo_concentration_final_batch.py": "edbd0ce3b9f2872a9abf50a6378b98303a2315d4c44c17b3b25e06aa1940b9bc",
+    "tests/test_komodo_concentration_sixth_batch.py": "3b63069de49c3b530b86230cfdb2aed444288d6e81d164eb48f85529b796c49a",
+    "tests/test_mediadive_stock_concentration_evidence.py": "7b6bf06ac62c72a9362620189ea82ca0929b8050fa0df56a724c928357560cc4",
+    "tests/test_repair_komodo_829_desulfurobacterium_ph_score10.py": "77b115bd36e2ae76ed181ef216388608e8e2087cf47494d6ab841da0061e2eef",
+    "docs/media_growth_review_goal_prompt.md": "2b63a89dbcb7490a2530bf2c0c6dc69bc418fabbacf60a7a70f211cc6157f003"
+  },
+  "normalized_after": "82e954649cedc505c58a3630b18afc0ddb4d9d30f77b75693172a95010987d00",
+  "code_after": {
+    "src/culturemech/schema/culturemech.yaml": "cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6",
+    "src/culturemech/schema/culturemech_dataclasses.py": "30f368b93e5b15f5a44bfc705cec348437b031c35eb4b68b0da18db6ad4a0208",
+    "src/culturemech/schema/culturemech.schema.json": "0c6fd2908979dfbf77d1abaff09069e838998858720ec24314319a64d121f78f",
+    ".claude/skills/review-ingredient-concentrations/references/evidence-contract.md": "5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1",
+    "tests/test_dataclasses_current.py": "7ada0eaa4c8814e70e487fd62af677a9553be497c5ca480af2093d426fb37841",
+    "project.justfile": "4cef62965ed7dec05b11f6bf769c486aa0e91bfa43ead057fc297229834a121e",
+    "tests/test_solution_formulation_evidence.py": "f5a7a7b458be5f2ccf2e7cb58ad9570a3ec2e7a575615600ee88defd9872c774",
+    "tests/test_schema_docs_command.py": "c506aff9029bd2dda3b4f6ae5c9c5732993a247e60a132ee46d43be1f970c0f6",
+    "tests/fixtures/recipe_references/solution599.json": "ffe160f060239805d87d48a3010ef85e0e6827f95547ea1f4ae8e77fbc59dc00",
+    "tests/test_komodo_concentration_review.py": "70c18eb3b5a2ea9bec9f7e221baaba9a994a19e9dc4cd7efa4d0189f7be4ff32",
+    "tests/test_komodo_concentration_final_batch.py": "edbd0ce3b9f2872a9abf50a6378b98303a2315d4c44c17b3b25e06aa1940b9bc",
+    "tests/test_komodo_concentration_sixth_batch.py": "3b63069de49c3b530b86230cfdb2aed444288d6e81d164eb48f85529b796c49a",
+    "tests/test_mediadive_stock_concentration_evidence.py": "7b6bf06ac62c72a9362620189ea82ca0929b8050fa0df56a724c928357560cc4",
+    "tests/test_repair_komodo_829_desulfurobacterium_ph_score10.py": "77b115bd36e2ae76ed181ef216388608e8e2087cf47494d6ab841da0061e2eef",
+    "docs/media_growth_review_goal_prompt.md": "2b63a89dbcb7490a2530bf2c0c6dc69bc418fabbacf60a7a70f211cc6157f003"
+  }
+}

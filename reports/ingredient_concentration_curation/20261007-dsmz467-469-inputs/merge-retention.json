@@ -1,0 +1,111 @@
+{
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/ottow_medium.yaml",
+      "status": "checked",
+      "fingerprint": "8bb74c75fae1e91fabd4d4d8351191a7eb26c90637fb9614a64e370dba75e2b1",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_467_OTTOW_medium.yaml",
+        "data/normalized_yaml/bacterial/TOGO_M2316_Ottow_Medium.yaml",
+        "data/normalized_yaml/bacterial/ottow_medium.yaml"
+      ],
+      "fields": {
+        "ingredients": false,
+        "solutions": true,
+        "variants": true,
+        "preparation_steps": false,
+        "notes": false,
+        "ph_value": true,
+        "evidence": true,
+        "references": false,
+        "curation_history": false
+      },
+      "all_fields_retained": false,
+      "source_scoped_snippets": 8,
+      "retained_scoped_snippets": 8
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_467_OTTOW_medium.yaml",
+      "status": "checked",
+      "fingerprint": "8bb74c75fae1e91fabd4d4d8351191a7eb26c90637fb9614a64e370dba75e2b1",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_467_OTTOW_medium.yaml",
+        "data/normalized_yaml/bacterial/TOGO_M2316_Ottow_Medium.yaml",
+        "data/normalized_yaml/bacterial/ottow_medium.yaml"
+      ],
+      "fields": {
+        "ingredients": true,
+        "solutions": true,
+        "variants": true,
+        "preparation_steps": true,
+        "notes": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true,
+        "curation_history": true
+      },
+      "all_fields_retained": true,
+      "source_scoped_snippets": 9,
+      "retained_scoped_snippets": 9
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_959_Main_sol_467.yaml",
+      "status": "outside_medium_scope",
+      "authoritative_record_unchanged": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ym_catalase_medium.yaml",
+      "status": "checked",
+      "fingerprint": "a207e23f8f6bfa8f0d601f760d04e3ab3a00af6393af04177373827534d22a77",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_469_YM-CATALASE_medium.yaml",
+        "data/normalized_yaml/bacterial/ym_catalase_medium.yaml"
+      ],
+      "fields": {
+        "ingredients": false,
+        "solutions": false,
+        "variants": true,
+        "preparation_steps": true,
+        "notes": false,
+        "ph_value": true,
+        "evidence": false,
+        "references": false,
+        "curation_history": false
+      },
+      "all_fields_retained": false,
+      "source_scoped_snippets": 11,
+      "retained_scoped_snippets": 11
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_469_YM-CATALASE_medium.yaml",
+      "status": "checked",
+      "fingerprint": "a207e23f8f6bfa8f0d601f760d04e3ab3a00af6393af04177373827534d22a77",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_469_YM-CATALASE_medium.yaml",
+        "data/normalized_yaml/bacterial/ym_catalase_medium.yaml"
+      ],
+      "fields": {
+        "ingredients": true,
+        "solutions": true,
+        "variants": true,
+        "preparation_steps": true,
+        "notes": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true,
+        "curation_history": true
+      },
+      "all_fields_retained": true,
+      "source_scoped_snippets": 12,
+      "retained_scoped_snippets": 12
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_961_Main_sol_469.yaml",
+      "status": "outside_medium_scope",
+      "authoritative_record_unchanged": true
+    }
+  ],
+  "all_media_fields_retained": false,
+  "all_media_snippets_retained": true,
+  "scope": "Current full-corpus groups. Scoped literal quote retention is distinct from full ingredient, variant, explanation and history retention. Standalone solutions correctly remain outside medium merging. No generated corpus published."
+}

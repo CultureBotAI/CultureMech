@@ -1,0 +1,45 @@
+{
+  "terminal": true,
+  "phase": "fast",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/fast-0.log",
+      "log_sha256": "3d37274b428d1483bbb18b0c95c6e82be8fe515225b1306a94a094911253e412"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "2be09e9249a816360bba52b76c1f3d889e12aae7bfd90d12771f117acb01a0d1"
+  },
+  "code_sha256": {
+    "scripts/repair_ruminococcus_albus_family.py": "25db938745f061004f02434bb6a0b1705cc3ddf2946ae59a2aa25ece12ede393",
+    "tests/test_ruminococcus_albus_family.py": "4d798d631ec050acb0a7a50ccbf80383d884d54fbea9d7886d3e432e904cc97b",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/audit.py": "54318bf5e16502264775acba6805631a6cd8ed58b9db0f6ebb9b66c84679068b",
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/repair_mediadive_stock_concentration_evidence.py": "1badfa99205690cf6082d95db7dafbd6d4927b617027bc61fbaaf9dbd597c974",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a",
+    "tests/test_medium_concentration_batch.py": "2ee4f198ce68c6e59eb6e3f7aca0d2bb3a062bfe8f7746e09c4ee898d9bf59ab",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "897e4551f0963f32b1d090dd2a42ce9cb1b4876b74bcdc18e98d59a503138a34",
+    "tests/conftest.py": "f43cf452431b950a079fcee0a3c7e978067039fba749c956da1c94510c33b68b",
+    "scripts/validate_media_variant_links.py": "d18ef71320a0c50abe085e151d0d0d4d963007d1e1c9afbefab97581a983e31e"
+  },
+  "plan_sha256": "47771aa8b0a5d36a7ae339456df36304c2cdabd7508ec526f8f269106bb14332",
+  "context_sha256": "45d48a0e66d0504c0bea2655ea38f2a88c4c3034f8f4bd520f6e6848e22d0b55",
+  "preview_validation_sha256": "a9f49f317be4f051f9f874d162c815d9923efb4e770f16d6fb67b03a8c021654",
+  "current_focused_sha256": "43465ff2ecf6fbb830ada1fabe4b67dd4b4ddbf160d91d3de5470a58fbf40b48",
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "2be09e9249a816360bba52b76c1f3d889e12aae7bfd90d12771f117acb01a0d1"
+  }
+}

@@ -1,0 +1,49 @@
+# KOMODO Concentration Review: BACILLUS THERMANTARCTICUS medium
+
+- Record: data/normalized_yaml/bacterial/KOMODO_675_BACILLUS_THERMANTARCTICUS_medium.yaml
+- ID: CultureMech:006271
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `7dca8eccec3b725a1b5f8ca13e1df16246c3d1a26b6cb9151522f00d48040349`
+- Proposed/result SHA256: `7dca8eccec3b725a1b5f8ca13e1df16246c3d1a26b6cb9151522f00d48040349`
+- Source: https://mediadive.dsmz.de/rest/medium/675
+- Source SHA256: 731589616c8a992664a6290b18db5dfb4bde2c843df1b7a0cf8bef7065f7632e
+- Retrieved: 2026-10-07T12:17:23.420492+00:00
+- Source type: official DSMZ dataset; discovery: verified KOMODO cross-reference; authors/year not supplied.
+- State: reviewed; unchanged; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Exact mapping identities and source-access status were checked. Amount quotations and arithmetic were checked for accepted claims only; unresolved records were not endorsed. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `ingredients[0].concentration` | Yeast extract | {"unit": "G_PER_L", "value": "6"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/675 | Soil extract is prepared by sieving air dried garden soil through a coarse sieve and autoclaving 400 g with 960 ml of distilled water at 121°C for one hour. After the mixture is cool and settled, the supernatant is carefully decanted, filtered through paper, autoclaved in 200 ml quantities, and stored at room temperature until cleared by sedimentation. | $.data.solutions[0].steps[1].step | Manual source review withheld support: The recipe uses 500 ml prepared soil extract, locally encoded as 500 G_PER_L. Its 400 g soil and 960 ml extraction-water inputs are not retained-solute concentrations. Reconstruct the extraction and receiving dose without assuming extraction yield or a final-volume basis. | unchanged |
+| `ingredients[1].concentration` | NaCl | {"unit": "G_PER_L", "value": "3"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/675 | Soil extract is prepared by sieving air dried garden soil through a coarse sieve and autoclaving 400 g with 960 ml of distilled water at 121°C for one hour. After the mixture is cool and settled, the supernatant is carefully decanted, filtered through paper, autoclaved in 200 ml quantities, and stored at room temperature until cleared by sedimentation. | $.data.solutions[0].steps[1].step | Manual source review withheld support: The recipe uses 500 ml prepared soil extract, locally encoded as 500 G_PER_L. Its 400 g soil and 960 ml extraction-water inputs are not retained-solute concentrations. Reconstruct the extraction and receiving dose without assuming extraction yield or a final-volume basis. | unchanged |
+| `ingredients[2].concentration` | Soil extract | {"unit": "G_PER_L", "value": "500"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/675 | Soil extract is prepared by sieving air dried garden soil through a coarse sieve and autoclaving 400 g with 960 ml of distilled water at 121°C for one hour. After the mixture is cool and settled, the supernatant is carefully decanted, filtered through paper, autoclaved in 200 ml quantities, and stored at room temperature until cleared by sedimentation. | $.data.solutions[0].steps[1].step | Manual source review withheld support: The recipe uses 500 ml prepared soil extract, locally encoded as 500 G_PER_L. Its 400 g soil and 960 ml extraction-water inputs are not retained-solute concentrations. Reconstruct the extraction and receiving dose without assuming extraction yield or a final-volume basis. | unchanged |
+| `parent_media` | bacillus_thermantarcticus_medium | {"id": "CultureMech:001815", "name": "bacillus_thermantarcticus_medium", "notes": "KOMODO record states DSMZ Medium 675 provenance and exactly matches the single same-category DSMZ parent signature.", "path": "data/normalized_yaml/bacterial/bacillus_thermantarcticus_medium.yaml", "relationship": "SOURCE_DUPLICATE"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Variant formulation/relationship requires its own exact source; parent evidence is not propagated. | unchanged |
+| `source.data.solutions[0].recipe[0]` | Yeast extract | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/675 | {<br>                        "recipe_order": 1,<br>                        "compound": "Yeast extract",<br>                        "compound_id": 16,<br>                        "amount": 6,<br>                        "unit": "g",<br>                        "g_l": 6,<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[0] | Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded. | unchanged |
+| `source.data.solutions[0].recipe[1]` | NaCl | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/675 | {<br>                        "recipe_order": 2,<br>                        "compound": "NaCl",<br>                        "compound_id": 43,<br>                        "amount": 3,<br>                        "unit": "g",<br>                        "g_l": 3,<br>                        "mmol_l": 51.3347,<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[1] | Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded. | unchanged |
+| `source.data.solutions[0].recipe[2]` | Soil extract | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/675 | {<br>                        "recipe_order": 3,<br>                        "compound": "Soil extract",<br>                        "compound_id": 180,<br>                        "attribute": "",<br>                        "amount": 500,<br>                        "unit": "ml",<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[2] | Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded. | unchanged |
+| `source.data.solutions[0].recipe[3]` | Distilled water | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/675 | {<br>                        "recipe_order": 4,<br>                        "compound": "Distilled water",<br>                        "compound_id": 4,<br>                        "amount": 500,<br>                        "unit": "ml",<br>                        "optional": 0<br>                    } | $.data.solutions[0].recipe[3] | Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded. | unchanged |
+| `source.data.solutions[0].steps[0]` | preparation context | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/675 | {<br>                        "step": "Adjust pH between 5.6 - 5.8."<br>                    } | $.data.solutions[0].steps[0] | Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose. | unchanged |
+| `source.data.solutions[0].steps[1]` | preparation context | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/675 | {<br>                        "step": "Soil extract is prepared by sieving air dried garden soil through a coarse sieve and autoclaving 400 g with 960 ml of distilled water at 121\u00b0C for one hour. After the mixture is cool and settled, the supernatant is carefully decanted, filtered through paper, autoclaved in 200 ml quantities, and stored at room temperature until cleared by sedimentation."<br>                    } | $.data.solutions[0].steps[1] | Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose. | unchanged |
+
+## Source Mapping
+
+KOMODO accession `675`; original recipe: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium675.pdf.
+
+Mapping source: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; SHA256 `d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a`; retrieved 2026-10-07T13:01:23.350274+00:00. Exact captured row:
+
+```html
+<TR>
+					<TD width="50"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=675' >675</a></TD>
+					<TD>BACILLUS THERMANTARCTICUS medium</TD>
+					<TD> 5.6 - 5.8</TD>
+					<TD>true</TD>
+					<TD>false</TD>
+					<TD>false</TD>
+<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium675.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium675.pdf</a></TD>
+				</TR>
+```
+
+This is identity evidence only. A variant's link to a base recipe does not support the variant's quantities. The complete claim table above includes unchanged and unresolved results; a report is not scientific completion.

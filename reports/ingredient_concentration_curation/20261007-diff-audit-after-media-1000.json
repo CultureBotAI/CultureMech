@@ -1,0 +1,12 @@
+{
+  "stock_nodes_relocated": 62,
+  "new_quantity_slots": 32,
+  "unsupported_quantity_slots_removed": 2,
+  "new_evidence": 25675,
+  "new_curation_history": 4423,
+  "new_references": 4445,
+  "quantity_corrections": 1145,
+  "preparation_steps_relocated": 6,
+  "preparation_actions_corrected": 1,
+  "edited_records": 4421
+}

@@ -10,281 +10,165 @@ media_term:
   term:
     id: mediadive.medium:645
     label: MIDDLEBROOK MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+notes: |-
+  Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
 
-
+  Superseded historical provenance (not a current formulation claim):
   Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
   Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
   Catalog: Multiple (L3522 Sigma, 244520 BD)
-
   Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
   Accessed: 2026-03-28
 
+  Constituent composition researched from product specification.
 
-  Constituent composition researched from product specification.'
+  Source-specific ingredient identities, quantity bases and preparation routes supersede the copied flattened amounts. Historical events are preserved. Chemical groundings are not comprehensively recertified; no taxa-media association is added.
 ingredients:
 - preferred_term: Bacto Middlebrook 7H10 agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '20.9945'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
+  notes: 'Source batch amount: 19 g. Retain this mass in notes; no independently verified
+    final-volume denominator supports a finished-medium g/L conversion. The source
+    API g_l=20.9945 has its own normalization context and is not adopted as a finished-medium
+    rate. Source material qualifier: Difco 262710.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/645
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Bacto Middlebrook 7H10 agar",
+                              "compound_id": 635,
+                              "attribute": "Difco 262710",
+                              "amount": 19,
+                              "unit": "g",
+                              "g_l": 20.9945,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[0].concentration: Source batch amount: 19 g. Retain this mass in notes; no independently verified final-volume denominator supports a finished-medium g/L conversion. The source API g_l=20.9945 has its own normalization context and is not adopted as a finished-medium rate. Source material qualifier: Difco 262710. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[0]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 1,
+                              "compound": "Bacto Middlebrook 7H10 agar",
+                              "compound_id": 635,
+                              "attribute": "Difco 262710",
+                              "amount": 19,
+                              "unit": "g",
+                              "g_l": 20.9945,
+                              "optional": 0
+                          }
+      ingredients[0].notes: Source batch amount: 19 g. Retain this mass in notes; no independently verified final-volume denominator supports a finished-medium g/L conversion. The source API g_l=20.9945 has its own normalization context and is not adopted as a finished-medium rate. Source material qualifier: Difco 262710. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[0]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 1,
+                              "compound": "Bacto Middlebrook 7H10 agar",
+                              "compound_id": 635,
+                              "attribute": "Difco 262710",
+                              "amount": 19,
+                              "unit": "g",
+                              "g_l": 20.9945,
+                              "optional": 0
+                          }
+      ingredients[0].term: Commercial 7H10 mixture is not chemically identical to pure agar; withdraw the copied pure-agar grounding. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[0]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 1,
+                              "compound": "Bacto Middlebrook 7H10 agar",
+                              "compound_id": 635,
+                              "attribute": "Difco 262710",
+                              "amount": 19,
+                              "unit": "g",
+                              "g_l": 20.9945,
+                              "optional": 0
+                          }
+      ingredients[0].mediaingredientmech_chebi_term: Commercial 7H10 mixture is not chemically identical to pure agar; withdraw the copied pure-agar grounding. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[0]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+    supports: SUPPORT
+    snippet: Bacto Middlebrook 7H10 agar (Difco 262710)                               19.000          g
+    explanation: 'ingredients[0].notes: Source batch amount: 19 g. Retain this mass
+      in notes; no independently verified final-volume denominator supports a finished-medium
+      g/L conversion. The source API g_l=20.9945 has its own normalization context
+      and is not adopted as a finished-medium rate. Source material qualifier: Difco
+      262710. No unstated density, final volume, percent basis or chemical identifier
+      is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:53.271442+00:00;
+      capture SHA256=8f4d6801aab892b40a988bba7e499d582097489fae3871d760fbabc22e8e1757.'
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
     label: glycerol
   concentration:
-    value: '5'
-    unit: G_PER_L
+    value: '0.005'
+    unit: L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
     label: glycerol
-- preferred_term: (NH4)2SO4
-  term:
-    id: CHEBI:62946
-    label: ammonium sulfate
+  notes: 'Source batch input: 5 ml = 0.005 L; not a final-volume marker or a mass
+    concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/645
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Glycerol",
+                              "compound_id": 72,
+                              "amount": 5,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[1].concentration: Source batch input: 5 ml = 0.005 L; not a final-volume marker or a mass concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[1]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 2,
+                              "compound": "Glycerol",
+                              "compound_id": 72,
+                              "amount": 5,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+      ingredients[1].notes: Source batch input: 5 ml = 0.005 L; not a final-volume marker or a mass concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[1]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+    supports: SUPPORT
+    snippet: Glycerol                                                                   5.000        ml
+    explanation: 'ingredients[1].notes: Source batch input: 5 ml = 0.005 L; not a
+      final-volume marker or a mass concentration. No unstated density, final volume,
+      percent basis or chemical identifier is inferred. Locator=original recipe table/text;
+      accessed=2026-10-09T00:07:53.271442+00:00; capture SHA256=8f4d6801aab892b40a988bba7e499d582097489fae3871d760fbabc22e8e1757.'
+- preferred_term: Distilled water
   concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-- preferred_term: Na2HPO4
-  term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-- preferred_term: Sodium citrate
-  term:
-    id: CHEBI:53258
-    label: sodium citrate
-  concentration:
-    value: '0.4'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:53258
-    label: sodium citrate
-- preferred_term: MgSO4
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  concentration:
-    value: '0.025'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: CaCl2
-  term:
-    id: CHEBI:3312
-    label: calcium dichloride
-  concentration:
-    value: '0.0005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:3312
-    label: calcium dichloride
-- preferred_term: ZnSO4
-  term:
-    id: CHEBI:35176
-    label: zinc sulfate
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:35176
-    label: zinc sulfate
-- preferred_term: CuSO4
-  term:
-    id: CHEBI:23414
-    label: copper(II) sulfate
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:23414
-    label: copper(II) sulfate
-- preferred_term: L-Glutamic acid
-  term:
-    id: CHEBI:16015
-    label: L-glutamic acid
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16015
-    label: L-glutamic acid
-- preferred_term: Ferric ammonium citrate
-  term:
-    id: CHEBI:31604
-    label: ferric ammonium citrate
-  concentration:
-    value: '0.04'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31604
-    label: ferric ammonium citrate
-- preferred_term: Pyridoxine
-  term:
-    id: CHEBI:16709
-    label: pyridoxine
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16709
-    label: pyridoxine
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: biotin
-  concentration:
-    value: '0.0005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15956
-    label: biotin
-- preferred_term: Malachite green
-  term:
-    id: CHEBI:72449
-    label: malachite green
-  concentration:
-    value: '0.00025'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:72449
-    label: malachite green
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Oleic acid
-  term:
-    id: CHEBI:16196
-    label: oleic acid
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16196
-    label: oleic acid
-- preferred_term: Tryptone
-  term:
-    id: MICRO:0000182
-    label: tryptone
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: yeast extract
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
-- preferred_term: Dextrose
-  term:
-    id: CHEBI:17634
-    label: D-glucose
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17634
-    label: D-glucose
-- preferred_term: Catalase
-  concentration:
-    value: '0.04'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '8.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
+    value: '0.9'
+    unit: L
+  notes: 'Source batch input: 900 ml = 0.9 L; not a final-volume marker or a mass
+    concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/645
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 900,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[2].concentration: Source batch input: 900 ml = 0.9 L; not a final-volume marker or a mass concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[2]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 3,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 900,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+      ingredients[2].notes: Source batch input: 900 ml = 0.9 L; not a final-volume marker or a mass concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[2]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
 preparation_steps:
 - step_number: 1
   action: HEAT
   description: Sterilize for 15 min by 121°C cool to 50 - 55°C. Add 100 ml Middlebrook
     OADC enrichment (Becton Dickinson 212240) under aseptic conditions and mix thoroughly.
-- step_number: 2
-  action: MIX
-  description: 'If you can´t order the commercial media then prepare the media in
-    this way:'
-- step_number: 3
-  action: HEAT
-  description: Final pH at 25°C 6.6 ± 0.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -319,12 +203,1709 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
-parent_media:
-  path: data/normalized_yaml/bacterial/KOMODO_645a_HEMIN_medium_FOR_MYCOBACTERIUM.yaml
-  relationship: SOURCE_DUPLICATE
+- timestamp: '2026-10-09T01:29:53.718683+00:00'
+  curator: codex
+  action: RESTORED_LINKED_MIDDLEBROOK_FORMULATIONS_AND_VARIANT_SCOPES_WITH_EVIDENCE
+  notes: Restore source-specific Middlebrook ingredients, distinguish commercial/alternative/base/OADC
+    scopes, retain uncertainty and repair reciprocal family links without changing
+    permanent IDs.
+  source: https://mediadive.dsmz.de/rest/medium/645
+  changes: '[{"old_field": "ingredients[0].concentration", "field": "ingredients[0].concentration",
+    "old": {"value": "20.9945", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/645", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Bacto Middlebrook 7H10 agar\",\n                        \"compound_id\":
+    635,\n                        \"attribute\": \"Difco 262710\",\n                        \"amount\":
+    19,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    20.9945,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[0].notes", "field": "ingredients[0].notes", "old": null, "new": "Source
+    batch amount: 19 g. Retain this mass in notes; no independently verified final-volume
+    denominator supports a finished-medium g/L conversion. The source API g_l=20.9945
+    has its own normalization context and is not adopted as a finished-medium rate.
+    Source material qualifier: Difco 262710.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Bacto Middlebrook 7H10 agar\",\n                        \"compound_id\": 635,\n                        \"attribute\":
+    \"Difco 262710\",\n                        \"amount\": 19,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 20.9945,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[0].notes",
+    "old": null, "new": "Source batch amount: 19 g. Retain this mass in notes; no
+    independently verified final-volume denominator supports a finished-medium g/L
+    conversion. The source API g_l=20.9945 has its own normalization context and is
+    not adopted as a finished-medium rate. Source material qualifier: Difco 262710.",
+    "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "Bacto Middlebrook 7H10 agar (Difco 262710)                               19.000          g"},
+    {"old_field": "ingredients[0].term", "field": "ingredients[0].term", "old": {"id":
+    "CHEBI:2509", "label": "agar"}, "new": null, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/645", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Bacto Middlebrook 7H10 agar\",\n                        \"compound_id\":
+    635,\n                        \"attribute\": \"Difco 262710\",\n                        \"amount\":
+    19,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    20.9945,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[0].mediaingredientmech_chebi_term", "field": "ingredients[0].mediaingredientmech_chebi_term",
+    "old": {"id": "CHEBI:2509", "label": "agar"}, "new": null, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/645", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Bacto Middlebrook 7H10 agar\",\n                        \"compound_id\":
+    635,\n                        \"attribute\": \"Difco 262710\",\n                        \"amount\":
+    19,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    20.9945,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[1].concentration", "field": "ingredients[1].concentration", "old":
+    {"value": "5", "unit": "G_PER_L"}, "new": {"value": "0.005", "unit": "L"}, "status":
+    "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645", "snippet":
+    "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Glycerol\",\n                        \"compound_id\": 72,\n                        \"amount\":
+    5,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[1].notes", "field": "ingredients[1].notes",
+    "old": null, "new": "Source batch input: 5 ml = 0.005 L; not a final-volume marker
+    or a mass concentration.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Glycerol\",\n                        \"compound_id\": 72,\n                        \"amount\":
+    5,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[1].notes",
+    "old": null, "new": "Source batch input: 5 ml = 0.005 L; not a final-volume marker
+    or a mass concentration.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "Glycerol                                                                   5.000        ml"},
+    {"old_field": null, "field": "ingredients[2].concentration", "old": null, "new":
+    {"value": "0.9", "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    900,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[2].notes",
+    "old": null, "new": "Source batch input: 900 ml = 0.9 L; not a final-volume marker
+    or a mass concentration.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    900,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].concentration",
+    "old": null, "new": {"value": "0.1", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/645", "snippet": "\"Sterilize for 15 min
+    by 121\\u00b0C cool to 50 - 55\\u00b0C. Add 100 ml Middlebrook OADC enrichment
+    (Becton Dickinson 212240) under aseptic conditions and mix thoroughly.\""}, {"old_field":
+    null, "field": "solutions[0].notes", "old": null, "new": "100 ml = 0.1 L OADC
+    addition after sterilization and cooling, separate from its stock composition.
+    Do not autoclave this later addition or infer a finished-medium denominator.",
+    "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/645", "snippet":
+    "\"Sterilize for 15 min by 121\\u00b0C cool to 50 - 55\\u00b0C. Add 100 ml Middlebrook
+    OADC enrichment (Becton Dickinson 212240) under aseptic conditions and mix thoroughly.\""},
+    {"old_field": null, "field": "solutions[0].name", "old": null, "new": "Bacto Middlebrook
+    OADC enrichment", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "\"Sterilize for 15 min by 121\\u00b0C cool to 50 - 55\\u00b0C. Add
+    100 ml Middlebrook OADC enrichment (Becton Dickinson 212240) under aseptic conditions
+    and mix thoroughly.\""}, {"old_field": "ingredients[16].concentration", "field":
+    "solutions[0].composition[0].concentration", "old": {"value": "0.5", "unit": "G_PER_L"},
+    "new": {"value": "0.5", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/645", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Oleic acid\",\n                        \"compound_id\":
+    638,\n                        \"amount\": 0.05,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    1.76991,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[16].notes", "field": "solutions[0].composition[0].notes", "old":
+    null, "new": "OADC stock input: 0.05 g; API stock g_l=0.5 in its 100 ml encoding.
+    This is a provider-reported stock rate, not a finished-medium concentration or
+    independently measured final stock volume.", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/645", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Oleic acid\",\n                        \"compound_id\":
+    638,\n                        \"amount\": 0.05,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    1.76991,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].composition[0].notes", "old": null, "new": "OADC
+    stock input: 0.05 g; API stock g_l=0.5 in its 100 ml encoding. This is a provider-reported
+    stock rate, not a finished-medium concentration or independently measured final
+    stock volume.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "Oleic acid                                                                 0.050         g"},
+    {"old_field": null, "field": "solutions[0].composition[1].concentration", "old":
+    null, "new": {"value": "50", "unit": "G_PER_L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/645", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Bovine albumin\",\n                        \"compound_id\":
+    1681,\n                        \"condition\": \"\",\n                        \"attribute\":
+    \"albumin fraction V\",\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 50,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].composition[1].notes",
+    "old": null, "new": "OADC stock input: 5 g; API stock g_l=50 in its 100 ml encoding.
+    This is a provider-reported stock rate, not a finished-medium concentration or
+    independently measured final stock volume. Source material qualifier: albumin
+    fraction V.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Bovine albumin\",\n                        \"compound_id\": 1681,\n                        \"condition\":
+    \"\",\n                        \"attribute\": \"albumin fraction V\",\n                        \"amount\":
+    5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    50,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].composition[1].notes", "old": null, "new": "OADC
+    stock input: 5 g; API stock g_l=50 in its 100 ml encoding. This is a provider-reported
+    stock rate, not a finished-medium concentration or independently measured final
+    stock volume. Source material qualifier: albumin fraction V.", "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "Albumin fraction V, bovine                                                 5.000         g"},
+    {"old_field": "ingredients[20].concentration", "field": "solutions[0].composition[2].concentration",
+    "old": {"value": "20", "unit": "G_PER_L"}, "new": {"value": "20", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Dextrose\",\n                        \"compound_id\": 60,\n                        \"amount\":
+    2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    20,\n                        \"mmol_l\": 100.923,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[20].notes", "field": "solutions[0].composition[2].notes",
+    "old": null, "new": "OADC stock input: 2 g; API stock g_l=20 in its 100 ml encoding.
+    This is a provider-reported stock rate, not a finished-medium concentration or
+    independently measured final stock volume.", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/645", "snippet": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Dextrose\",\n                        \"compound_id\":
+    60,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 20,\n                        \"mmol_l\":
+    100.923,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].composition[2].notes", "old": null, "new": "OADC
+    stock input: 2 g; API stock g_l=20 in its 100 ml encoding. This is a provider-reported
+    stock rate, not a finished-medium concentration or independently measured final
+    stock volume.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "Dextrose                                                                   2.000         g"},
+    {"old_field": "ingredients[21].concentration", "field": "solutions[0].composition[3].concentration",
+    "old": {"value": "0.04", "unit": "G_PER_L"}, "new": {"value": "0.04", "unit":
+    "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Catalase\",\n                        \"compound_id\": 270,\n                        \"attribute\":
+    \"beef\",\n                        \"amount\": 4,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.04,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[21].notes", "field": "solutions[0].composition[3].notes",
+    "old": null, "new": "OADC stock input: 4 mg; API stock g_l=0.04 in its 100 ml
+    encoding. This is a provider-reported stock rate, not a finished-medium concentration
+    or independently measured final stock volume. Source material qualifier: beef.",
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Catalase\",\n                        \"compound_id\": 270,\n                        \"attribute\":
+    \"beef\",\n                        \"amount\": 4,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.04,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].composition[3].notes",
+    "old": null, "new": "OADC stock input: 4 mg; API stock g_l=0.04 in its 100 ml
+    encoding. This is a provider-reported stock rate, not a finished-medium concentration
+    or independently measured final stock volume. Source material qualifier: beef.",
+    "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "Catalase (beef)                                                            4.000       mg"},
+    {"old_field": "ingredients[22].concentration", "field": "solutions[0].composition[4].concentration",
+    "old": {"value": "8.5", "unit": "G_PER_L"}, "new": {"value": "8.5", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\":
+    0.85,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    8.5,\n                        \"mmol_l\": 145.448,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[22].notes", "field": "solutions[0].composition[4].notes",
+    "old": null, "new": "OADC stock input: 0.85 g; API stock g_l=8.5 in its 100 ml
+    encoding. This is a provider-reported stock rate, not a finished-medium concentration
+    or independently measured final stock volume.", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/645", "snippet": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 0.85,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 8.5,\n                        \"mmol_l\":
+    145.448,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[0].composition[4].notes", "old": null, "new": "OADC
+    stock input: 0.85 g; API stock g_l=8.5 in its 100 ml encoding. This is a provider-reported
+    stock rate, not a finished-medium concentration or independently measured final
+    stock volume.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "NaCl                                                                       0.850         g"},
+    {"old_field": null, "field": "solutions[0].composition[5].concentration", "old":
+    null, "new": {"value": "0.1", "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    100,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].composition[5].notes",
+    "old": null, "new": "Source batch input: 100 ml = 0.1 L; not a final-volume marker
+    or a mass concentration.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    100,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "preparation_steps", "field": "preparation_steps",
+    "old": [{"step_number": 1, "action": "HEAT", "description": "Sterilize for 15
+    min by 121\u00b0C cool to 50 - 55\u00b0C. Add 100 ml Middlebrook OADC enrichment
+    (Becton Dickinson 212240) under aseptic conditions and mix thoroughly."}, {"step_number":
+    2, "action": "MIX", "description": "If you can\u00b4t order the commercial media
+    then prepare the media in this way:"}, {"step_number": 3, "action": "HEAT", "description":
+    "Final pH at 25\u00b0C 6.6 \u00b1 0.2."}], "new": [{"step_number": 1, "action":
+    "HEAT", "description": "Sterilize for 15 min by 121\u00b0C cool to 50 - 55\u00b0C.
+    Add 100 ml Middlebrook OADC enrichment (Becton Dickinson 212240) under aseptic
+    conditions and mix thoroughly."}], "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "\"Sterilize for 15 min by 121\\u00b0C cool to 50 - 55\\u00b0C. Add
+    100 ml Middlebrook OADC enrichment (Becton Dickinson 212240) under aseptic conditions
+    and mix thoroughly.\""}, {"old_field": "ingredients[2].concentration", "field":
+    "variants[0].modifications", "old": {"value": "0.5", "unit": "G_PER_L"}, "new":
+    ["Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: KH2PO4 1.5 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Na2HPO4
+    1.5 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Sodium citrate 0.4
+    g; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: MgSO4 0.025 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: ZnSO4 1 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: CuSO4 1 mg; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: L-Glutamic acid 0.5 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Pyridoxine 1 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Malachite
+    green 0.25 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Agar 15 g; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Distilled water 1000 ml; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "The alternative table lists 1000 ml water, not the commercial
+    route''s 900 ml. Do not sum those water inputs or assert measured final volume.
+    Its final pH at 25 C is 6.6 +/- 0.2; no titrant or titration dose is specified."],
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.5,\n                        \"mmol_l\": 3.78387,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[3].concentration", "field":
+    "variants[0].modifications", "old": {"value": "1.5", "unit": "G_PER_L"}, "new":
+    ["Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: KH2PO4 1.5 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Na2HPO4
+    1.5 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Sodium citrate 0.4
+    g; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: MgSO4 0.025 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: ZnSO4 1 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: CuSO4 1 mg; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: L-Glutamic acid 0.5 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Pyridoxine 1 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Malachite
+    green 0.25 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Agar 15 g; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Distilled water 1000 ml; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "The alternative table lists 1000 ml water, not the commercial
+    route''s 900 ml. Do not sum those water inputs or assert measured final volume.
+    Its final pH at 25 C is 6.6 +/- 0.2; no titrant or titration dose is specified."],
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\":
+    1.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1.5,\n                        \"mmol_l\": 11.0225,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[4].concentration", "field":
+    "variants[0].modifications", "old": {"value": "1.5", "unit": "G_PER_L"}, "new":
+    ["Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: KH2PO4 1.5 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Na2HPO4
+    1.5 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Sodium citrate 0.4
+    g; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: MgSO4 0.025 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: ZnSO4 1 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: CuSO4 1 mg; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: L-Glutamic acid 0.5 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Pyridoxine 1 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Malachite
+    green 0.25 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Agar 15 g; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Distilled water 1000 ml; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "The alternative table lists 1000 ml water, not the commercial
+    route''s 900 ml. Do not sum those water inputs or assert measured final volume.
+    Its final pH at 25 C is 6.6 +/- 0.2; no titrant or titration dose is specified."],
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Na2HPO4\",\n                        \"compound_id\": 233,\n                        \"amount\":
+    1.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1.5,\n                        \"mmol_l\": 10.5664,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[5].concentration", "field":
+    "variants[0].modifications", "old": {"value": "0.4", "unit": "G_PER_L"}, "new":
+    ["Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: KH2PO4 1.5 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Na2HPO4
+    1.5 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Sodium citrate 0.4
+    g; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: MgSO4 0.025 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: ZnSO4 1 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: CuSO4 1 mg; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: L-Glutamic acid 0.5 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Pyridoxine 1 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Malachite
+    green 0.25 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Agar 15 g; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Distilled water 1000 ml; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "The alternative table lists 1000 ml water, not the commercial
+    route''s 900 ml. Do not sum those water inputs or assert measured final volume.
+    Its final pH at 25 C is 6.6 +/- 0.2; no titrant or titration dose is specified."],
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Sodium citrate\",\n                        \"compound_id\": 792,\n                        \"amount\":
+    0.4,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.4,\n                        \"mmol_l\": 1.54997,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[6].concentration", "field":
+    "variants[0].modifications", "old": {"value": "0.025", "unit": "G_PER_L"}, "new":
+    ["Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: KH2PO4 1.5 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Na2HPO4
+    1.5 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Sodium citrate 0.4
+    g; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: MgSO4 0.025 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: ZnSO4 1 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: CuSO4 1 mg; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: L-Glutamic acid 0.5 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Pyridoxine 1 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Malachite
+    green 0.25 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Agar 15 g; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Distilled water 1000 ml; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "The alternative table lists 1000 ml water, not the commercial
+    route''s 900 ml. Do not sum those water inputs or assert measured final volume.
+    Its final pH at 25 C is 6.6 +/- 0.2; no titrant or titration dose is specified."],
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"MgSO4\",\n                        \"compound_id\": 325,\n                        \"amount\":
+    0.025,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.025,\n                        \"mmol_l\": 0.207693,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[7].concentration", "field":
+    "variants[0].modifications", "old": {"value": "0.0005", "unit": "G_PER_L"}, "new":
+    ["Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: KH2PO4 1.5 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Na2HPO4
+    1.5 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Sodium citrate 0.4
+    g; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: MgSO4 0.025 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: ZnSO4 1 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: CuSO4 1 mg; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: L-Glutamic acid 0.5 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Pyridoxine 1 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Malachite
+    green 0.25 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Agar 15 g; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Distilled water 1000 ml; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "The alternative table lists 1000 ml water, not the commercial
+    route''s 900 ml. Do not sum those water inputs or assert measured final volume.
+    Its final pH at 25 C is 6.6 +/- 0.2; no titrant or titration dose is specified."],
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"CaCl2\",\n                        \"compound_id\": 81,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.0005,\n                        \"mmol_l\": 0.00450532,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[8].concentration", "field":
+    "variants[0].modifications", "old": {"value": "0.001", "unit": "G_PER_L"}, "new":
+    ["Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: KH2PO4 1.5 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Na2HPO4
+    1.5 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Sodium citrate 0.4
+    g; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: MgSO4 0.025 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: ZnSO4 1 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: CuSO4 1 mg; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: L-Glutamic acid 0.5 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Pyridoxine 1 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Malachite
+    green 0.25 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Agar 15 g; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Distilled water 1000 ml; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "The alternative table lists 1000 ml water, not the commercial
+    route''s 900 ml. Do not sum those water inputs or assert measured final volume.
+    Its final pH at 25 C is 6.6 +/- 0.2; no titrant or titration dose is specified."],
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"ZnSO4\",\n                        \"compound_id\": 441,\n                        \"amount\":
+    1,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.001,\n                        \"mmol_l\": 0.00619579,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[9].concentration", "field":
+    "variants[0].modifications", "old": {"value": "0.001", "unit": "G_PER_L"}, "new":
+    ["Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: KH2PO4 1.5 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Na2HPO4
+    1.5 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Sodium citrate 0.4
+    g; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: MgSO4 0.025 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: ZnSO4 1 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: CuSO4 1 mg; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: L-Glutamic acid 0.5 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Pyridoxine 1 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Malachite
+    green 0.25 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Agar 15 g; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Distilled water 1000 ml; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "The alternative table lists 1000 ml water, not the commercial
+    route''s 900 ml. Do not sum those water inputs or assert measured final volume.
+    Its final pH at 25 C is 6.6 +/- 0.2; no titrant or titration dose is specified."],
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"CuSO4\",\n                        \"compound_id\": 636,\n                        \"amount\":
+    1,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.001,\n                        \"mmol_l\": 0.00626527,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[10].concentration", "field":
+    "variants[0].modifications", "old": {"value": "0.5", "unit": "G_PER_L"}, "new":
+    ["Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: KH2PO4 1.5 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Na2HPO4
+    1.5 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Sodium citrate 0.4
+    g; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: MgSO4 0.025 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: ZnSO4 1 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: CuSO4 1 mg; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: L-Glutamic acid 0.5 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Pyridoxine 1 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Malachite
+    green 0.25 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Agar 15 g; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Distilled water 1000 ml; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "The alternative table lists 1000 ml water, not the commercial
+    route''s 900 ml. Do not sum those water inputs or assert measured final volume.
+    Its final pH at 25 C is 6.6 +/- 0.2; no titrant or titration dose is specified."],
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"L-Glutamic acid\",\n                        \"compound_id\": 374,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.5,\n                        \"mmol_l\": 3.39836,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[11].concentration", "field":
+    "variants[0].modifications", "old": {"value": "0.04", "unit": "G_PER_L"}, "new":
+    ["Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: KH2PO4 1.5 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Na2HPO4
+    1.5 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Sodium citrate 0.4
+    g; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: MgSO4 0.025 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: ZnSO4 1 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: CuSO4 1 mg; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: L-Glutamic acid 0.5 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Pyridoxine 1 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Malachite
+    green 0.25 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Agar 15 g; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Distilled water 1000 ml; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "The alternative table lists 1000 ml water, not the commercial
+    route''s 900 ml. Do not sum those water inputs or assert measured final volume.
+    Its final pH at 25 C is 6.6 +/- 0.2; no titrant or titration dose is specified."],
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Ferric ammonium citrate\",\n                        \"compound_id\": 97,\n                        \"amount\":
+    0.04,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.04,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[12].concentration", "field": "variants[0].modifications", "old":
+    {"value": "0.001", "unit": "G_PER_L"}, "new": ["Alternative preparation input:
+    (NH4)2SO4 0.5 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: KH2PO4 1.5 g; not
+    an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Na2HPO4 1.5 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Sodium citrate 0.4 g; not an additional input
+    to the commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: MgSO4 0.025 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: CaCl2
+    0.5 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: ZnSO4 1 mg; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: CuSO4 1 mg; not an additional input
+    to the commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: L-Glutamic acid 0.5 g; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: Ferric ammonium citrate 0.04 g; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: Pyridoxine 1 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Biotin
+    0.5 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Malachite green 0.25
+    mg; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Agar 15 g; not an additional input
+    to the commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: Distilled water 1000 ml; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "The alternative table
+    lists 1000 ml water, not the commercial route''s 900 ml. Do not sum those water
+    inputs or assert measured final volume. Its final pH at 25 C is 6.6 +/- 0.2; no
+    titrant or titration dose is specified."], "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"Pyridoxine\",\n                        \"compound_id\": 637,\n                        \"amount\":
+    1,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.001,\n                        \"mmol_l\": 0.00591086,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[13].concentration", "field":
+    "variants[0].modifications", "old": {"value": "0.0005", "unit": "G_PER_L"}, "new":
+    ["Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: KH2PO4 1.5 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Na2HPO4
+    1.5 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Sodium citrate 0.4
+    g; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: MgSO4 0.025 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: ZnSO4 1 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: CuSO4 1 mg; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: L-Glutamic acid 0.5 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Pyridoxine 1 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Malachite
+    green 0.25 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Agar 15 g; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Distilled water 1000 ml; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "The alternative table lists 1000 ml water, not the commercial
+    route''s 900 ml. Do not sum those water inputs or assert measured final volume.
+    Its final pH at 25 C is 6.6 +/- 0.2; no titrant or titration dose is specified."],
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 12,\n                        \"compound\":
+    \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.0005,\n                        \"mmol_l\": 0.00204658,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[14].concentration", "field":
+    "variants[0].modifications", "old": {"value": "0.00025", "unit": "G_PER_L"}, "new":
+    ["Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: KH2PO4 1.5 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Na2HPO4
+    1.5 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Sodium citrate 0.4
+    g; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: MgSO4 0.025 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: ZnSO4 1 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: CuSO4 1 mg; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: L-Glutamic acid 0.5 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Pyridoxine 1 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Malachite
+    green 0.25 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Agar 15 g; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Distilled water 1000 ml; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "The alternative table lists 1000 ml water, not the commercial
+    route''s 900 ml. Do not sum those water inputs or assert measured final volume.
+    Its final pH at 25 C is 6.6 +/- 0.2; no titrant or titration dose is specified."],
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 13,\n                        \"compound\":
+    \"Malachite green\",\n                        \"compound_id\": 407,\n                        \"amount\":
+    0.25,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.00025,\n                        \"mmol_l\": 0.000685119,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[15].concentration", "field":
+    "variants[0].modifications", "old": {"value": "15", "unit": "G_PER_L"}, "new":
+    ["Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: KH2PO4 1.5 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Na2HPO4
+    1.5 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Sodium citrate 0.4
+    g; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: MgSO4 0.025 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: ZnSO4 1 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: CuSO4 1 mg; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: L-Glutamic acid 0.5 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Pyridoxine 1 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Malachite
+    green 0.25 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Agar 15 g; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Distilled water 1000 ml; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "The alternative table lists 1000 ml water, not the commercial
+    route''s 900 ml. Do not sum those water inputs or assert measured final volume.
+    Its final pH at 25 C is 6.6 +/- 0.2; no titrant or titration dose is specified."],
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 14,\n                        \"compound\":
+    \"Agar\",\n                        \"compound_id\": 3,\n                        \"attribute\":
+    \"Bacto \",\n                        \"amount\": 15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\":
+    44.5991,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "variants[0].modifications", "old": null, "new": ["Alternative
+    preparation input: (NH4)2SO4 0.5 g; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: KH2PO4 1.5 g; not an additional input to the commercial preparation. No
+    final-medium concentration is inferred.", "Alternative preparation input: Na2HPO4
+    1.5 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Sodium citrate 0.4
+    g; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: MgSO4 0.025 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: ZnSO4 1 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: CuSO4 1 mg; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: L-Glutamic acid 0.5 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Pyridoxine 1 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "Alternative preparation input: Malachite
+    green 0.25 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Agar 15 g; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Distilled water 1000 ml; not an
+    additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "The alternative table lists 1000 ml water, not the commercial
+    route''s 900 ml. Do not sum those water inputs or assert measured final volume.
+    Its final pH at 25 C is 6.6 +/- 0.2; no titrant or titration dose is specified."],
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 15,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "variants[0].modifications",
+    "old": null, "new": ["Alternative preparation input: (NH4)2SO4 0.5 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: KH2PO4 1.5 g; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: Na2HPO4 1.5 g; not an additional input to the commercial preparation. No
+    final-medium concentration is inferred.", "Alternative preparation input: Sodium
+    citrate 0.4 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: MgSO4 0.025 g; not
+    an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: CaCl2 0.5 mg; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: ZnSO4 1 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: CuSO4 1 mg; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: L-Glutamic acid 0.5
+    g; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Ferric ammonium citrate 0.04 g;
+    not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "Alternative preparation input: Pyridoxine 1 mg; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.",
+    "Alternative preparation input: Biotin 0.5 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "Alternative
+    preparation input: Malachite green 0.25 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.", "Alternative preparation
+    input: Agar 15 g; not an additional input to the commercial preparation. No final-medium
+    concentration is inferred.", "Alternative preparation input: Distilled water 1000
+    ml; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "The alternative table lists 1000 ml water, not the commercial
+    route''s 900 ml. Do not sum those water inputs or assert measured final volume.
+    Its final pH at 25 C is 6.6 +/- 0.2; no titrant or titration dose is specified."],
+    "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "\"Final pH at 25\\u00b0C 6.6 \\u00b1 0.2.\""}, {"old_field": "ingredients",
+    "field": "variants[0].description", "old": [{"preferred_term": "Bacto Middlebrook
+    7H10 agar", "term": {"id": "CHEBI:2509", "label": "agar"}, "concentration": {"value":
+    "20.9945", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:2509",
+    "label": "agar"}}, {"preferred_term": "Glycerol", "term": {"id": "CHEBI:17754",
+    "label": "glycerol"}, "concentration": {"value": "5", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:17754", "label": "glycerol"}}, {"preferred_term": "(NH4)2SO4", "term":
+    {"id": "CHEBI:62946", "label": "ammonium sulfate"}, "concentration": {"value":
+    "0.5", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:62946",
+    "label": "ammonium sulfate"}}, {"preferred_term": "KH2PO4", "term": {"id": "CHEBI:63036",
+    "label": "potassium dihydrogen phosphate"}, "concentration": {"value": "1.5",
+    "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:63036", "label":
+    "potassium dihydrogen phosphate"}}, {"preferred_term": "Na2HPO4", "term": {"id":
+    "CHEBI:34683", "label": "disodium hydrogenphosphate"}, "concentration": {"value":
+    "1.5", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:34683",
+    "label": "disodium hydrogenphosphate"}}, {"preferred_term": "Sodium citrate",
+    "term": {"id": "CHEBI:53258", "label": "sodium citrate"}, "concentration": {"value":
+    "0.4", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:53258",
+    "label": "sodium citrate"}}, {"preferred_term": "MgSO4", "term": {"id": "CHEBI:32599",
+    "label": "magnesium sulfate"}, "concentration": {"value": "0.025", "unit": "G_PER_L"},
+    "mediaingredientmech_chebi_term": {"id": "CHEBI:32599", "label": "magnesium sulfate"}},
+    {"preferred_term": "CaCl2", "term": {"id": "CHEBI:3312", "label": "calcium dichloride"},
+    "concentration": {"value": "0.0005", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:3312", "label": "calcium dichloride"}}, {"preferred_term": "ZnSO4",
+    "term": {"id": "CHEBI:35176", "label": "zinc sulfate"}, "concentration": {"value":
+    "0.001", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:35176",
+    "label": "zinc sulfate"}}, {"preferred_term": "CuSO4", "term": {"id": "CHEBI:23414",
+    "label": "copper(II) sulfate"}, "concentration": {"value": "0.001", "unit": "G_PER_L"},
+    "mediaingredientmech_chebi_term": {"id": "CHEBI:23414", "label": "copper(II) sulfate"}},
+    {"preferred_term": "L-Glutamic acid", "term": {"id": "CHEBI:16015", "label": "L-glutamic
+    acid"}, "concentration": {"value": "0.5", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:16015", "label": "L-glutamic acid"}}, {"preferred_term": "Ferric
+    ammonium citrate", "term": {"id": "CHEBI:31604", "label": "ferric ammonium citrate"},
+    "concentration": {"value": "0.04", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:31604", "label": "ferric ammonium citrate"}}, {"preferred_term":
+    "Pyridoxine", "term": {"id": "CHEBI:16709", "label": "pyridoxine"}, "concentration":
+    {"value": "0.001", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id":
+    "CHEBI:16709", "label": "pyridoxine"}}, {"preferred_term": "Biotin", "term": {"id":
+    "CHEBI:15956", "label": "biotin"}, "concentration": {"value": "0.0005", "unit":
+    "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:15956", "label": "biotin"}},
+    {"preferred_term": "Malachite green", "term": {"id": "CHEBI:72449", "label": "malachite
+    green"}, "concentration": {"value": "0.00025", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:72449", "label": "malachite green"}}, {"preferred_term": "Agar",
+    "term": {"id": "CHEBI:2509", "label": "agar"}, "concentration": {"value": "15",
+    "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:2509", "label":
+    "agar"}}, {"preferred_term": "Oleic acid", "term": {"id": "CHEBI:16196", "label":
+    "oleic acid"}, "concentration": {"value": "0.5", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:16196", "label": "oleic acid"}}, {"preferred_term": "Tryptone",
+    "term": {"id": "MICRO:0000182", "label": "tryptone"}, "concentration": {"value":
+    "10.0", "unit": "G_PER_L"}, "supplier_catalog": {"supplier_name": "Multiple suppliers
+    (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)", "catalog_number":
+    "Multiple (L3522 Sigma, 244520 BD)", "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"},
+    "notes": "Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product",
+    "synonyms": [{"synonym_text": "pancreatic digest of casein", "synonym_type": "EXACT"},
+    {"synonym_text": "casein peptone", "synonym_type": "EXACT"}]}, {"preferred_term":
+    "Yeast extract", "term": {"id": "FOODON:03315426", "label": "yeast extract"},
+    "concentration": {"value": "5.0", "unit": "G_PER_L"}, "supplier_catalog": {"supplier_name":
+    "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+    "catalog_number": "Multiple (L3522 Sigma, 244520 BD)", "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"},
+    "notes": "Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
+    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation)
+    commercial product"}, {"preferred_term": "Sodium chloride", "term": {"id": "CHEBI:26710",
+    "label": "sodium chloride"}, "concentration": {"value": "10.0", "unit": "G_PER_L"},
+    "supplier_catalog": {"supplier_name": "Multiple suppliers (Difco, Sigma, etc.)
+    LB Medium (Luria-Bertani, Miller formulation)", "catalog_number": "Multiple (L3522
+    Sigma, 244520 BD)", "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"},
+    "notes": "Maintains osmotic equilibrium (Miller formulation); Constituent of LB
+    Medium (Luria-Bertani, Miller formulation) commercial product", "synonyms": [{"synonym_text":
+    "NaCl", "synonym_type": "EXACT"}, {"synonym_text": "table salt", "synonym_type":
+    "EXACT"}]}, {"preferred_term": "Dextrose", "term": {"id": "CHEBI:17634", "label":
+    "D-glucose"}, "concentration": {"value": "20", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:17634", "label": "D-glucose"}}, {"preferred_term": "Catalase", "concentration":
+    {"value": "0.04", "unit": "G_PER_L"}}, {"preferred_term": "NaCl", "term": {"id":
+    "CHEBI:26710", "label": "sodium chloride"}, "concentration": {"value": "8.5",
+    "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:26710", "label":
+    "sodium chloride"}}], "new": "Use only when the commercial medium is unavailable.
+    This is an alternative preparation, not simultaneous inputs to the commercial
+    route; final-volume equivalence is unresolved.", "status": "correct", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf", "snippet":
+    "If you can\u00b4t order the commercial media then prepare the media in this way:\n\nBacto
+    Middlebrook 7H10 agar:\n (NH4)2SO4                                                                  0.500         g\n
+    KH2PO4                                                                     1.500         g\n
+    Na2HPO4                                                                    1.500         g\n
+    Na-citrate                                                                 0.400         g\n
+    MgSO4                                                                      0.025         g\n
+    CaCl2                                                                      0.500       mg\n
+    ZnSO4                                                                      1.000       mg\n
+    CuSO4                                                                      1.000       mg\n
+    L-Glutamic acid                                                            0.500         g\n
+    Ferric ammonium citrate                                                    0.040         g\n
+    Pyridoxine                                                                 1.000       mg\n
+    Biotin                                                                     0.500       mg\n
+    Malachite green                                                            0.250       mg\n
+    Bacto agar                                                               15.000          g\n
+    Distilled water                                                       1000.000          ml\n\nFinal
+    pH at 25\uf0b0C 6.6 \u00b1 0.2."}, {"old_field": "ingredients[17].concentration",
+    "field": "notes", "old": {"value": "10.0", "unit": "G_PER_L"}, "new": "Source:
+    DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nSource-specific
+    ingredient identities, quantity bases and preparation routes supersede the copied
+    flattened amounts. Historical events are preserved. Chemical groundings are not
+    comprehensively recertified; no taxa-media association is added.", "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/645", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Bovine albumin\",\n                        \"compound_id\":
+    1681,\n                        \"condition\": \"\",\n                        \"attribute\":
+    \"albumin fraction V\",\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 50,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[18].concentration", "field":
+    "notes", "old": {"value": "5.0", "unit": "G_PER_L"}, "new": "Source: DSMZ | Link:
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nSource-specific
+    ingredient identities, quantity bases and preparation routes supersede the copied
+    flattened amounts. Historical events are preserved. Chemical groundings are not
+    comprehensively recertified; no taxa-media association is added.", "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/645", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Bovine albumin\",\n                        \"compound_id\":
+    1681,\n                        \"condition\": \"\",\n                        \"attribute\":
+    \"albumin fraction V\",\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 50,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[19].concentration", "field":
+    "notes", "old": {"value": "10.0", "unit": "G_PER_L"}, "new": "Source: DSMZ | Link:
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nSource-specific
+    ingredient identities, quantity bases and preparation routes supersede the copied
+    flattened amounts. Historical events are preserved. Chemical groundings are not
+    comprehensively recertified; no taxa-media association is added.", "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/645", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Bovine albumin\",\n                        \"compound_id\":
+    1681,\n                        \"condition\": \"\",\n                        \"attribute\":
+    \"albumin fraction V\",\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 50,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "variant_children[0].relationship",
+    "old": null, "new": "DERIVED_FROM", "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645",
+    "snippet": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf"},
+    {"old_field": null, "field": "variant_children[1].relationship", "old": null,
+    "new": "UNCERTAIN", "status": "correct", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645a.pdf",
+    "snippet": "Middlebrook 7H10 (Difco 0627) with OADC Enrichment (Difco 0722) with
+    60 micromoles\nhemin. Hemin must be solubilized with 1N NAOH."}, {"old_field":
+    "parent_media", "field": "parent_media", "old": {"path": "data/normalized_yaml/bacterial/KOMODO_645a_HEMIN_medium_FOR_MYCOBACTERIUM.yaml",
+    "relationship": "SOURCE_DUPLICATE", "id": "CultureMech:006191", "name": "hemin_medium_for_mycobacterium"},
+    "new": null, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Bovine albumin\",\n                        \"compound_id\": 1681,\n                        \"condition\":
+    \"\",\n                        \"attribute\": \"albumin fraction V\",\n                        \"amount\":
+    5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    50,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "variant_relationship", "field": "variant_relationship", "old": "SOURCE_DUPLICATE",
+    "new": null, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Bovine albumin\",\n                        \"compound_id\": 1681,\n                        \"condition\":
+    \"\",\n                        \"attribute\": \"albumin fraction V\",\n                        \"amount\":
+    5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    50,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "variant_modifications", "field": "variant_modifications", "old": ["Same ingredient
+    and concentration signature; review as possible duplicate source record."], "new":
+    null, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Bovine albumin\",\n                        \"compound_id\": 1681,\n                        \"condition\":
+    \"\",\n                        \"attribute\": \"albumin fraction V\",\n                        \"amount\":
+    5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    50,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "variant_children", "field": "variant_children", "old": null, "new": [{"path":
+    "data/normalized_yaml/bacterial/middelbrook_medium.yaml", "id": "CultureMech:006190",
+    "name": "middelbrook_medium", "relationship": "DERIVED_FROM", "notes": "The source
+    Instructions explicitly link the DSMZ recipe. Different quantity normalization
+    contexts remain unresolved; the prior copied signature does not prove an exact
+    duplicate.", "evidence": [{"reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645",
+    "supports": "SUPPORT", "snippet": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "explanation": "variant_children[0].relationship: The source Instructions explicitly
+    link the DSMZ recipe. Different quantity normalization contexts remain unresolved;
+    the prior copied signature does not prove an exact duplicate. No unstated density,
+    final volume, percent basis or chemical identifier is inferred. Locator=original
+    recipe table/text; accessed=2026-10-09T00:07:47.755436+00:00; capture SHA256=68ca8e66fc375ef2b6baca45819969ca906207fabedc340250e4ed8e2e9b3ec1."}]},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_645a_HEMIN_medium_FOR_MYCOBACTERIUM.yaml",
+    "id": "CultureMech:006191", "name": "hemin_medium_for_mycobacterium", "relationship":
+    "UNCERTAIN", "notes": "Candidate 7H10/OADC family relationship only: hemin, historical
+    product identifiers and unresolved preparation differences preclude an exact-duplicate
+    or parent-plus-only-hemin assertion.", "evidence": [{"reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645a.pdf",
+    "supports": "SUPPORT", "snippet": "Middlebrook 7H10 (Difco 0627) with OADC Enrichment
+    (Difco 0722) with 60 micromoles\nhemin. Hemin must be solubilized with 1N NAOH.",
+    "explanation": "variant_children[1].relationship: Candidate 7H10/OADC family relationship
+    only: hemin, historical product identifiers and unresolved preparation differences
+    preclude an exact-duplicate or parent-plus-only-hemin assertion. No unstated density,
+    final volume, percent basis or chemical identifier is inferred. Locator=original
+    recipe table/text; accessed=2026-10-09T00:07:53.472939+00:00; capture SHA256=618ad4ef209f7681d6aae33d2be1c444114b748714ea9bdf6f1f5bb10832fcd0."}]}],
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/645",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Bovine albumin\",\n                        \"compound_id\": 1681,\n                        \"condition\":
+    \"\",\n                        \"attribute\": \"albumin fraction V\",\n                        \"amount\":
+    5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    50,\n                        \"optional\": 0\n                    }"}]'
+solutions:
+- preferred_term: Bacto Middlebrook OADC enrichment
+  concentration:
+    value: '0.1'
+    unit: L
+  name: Bacto Middlebrook OADC enrichment
+  composition:
+  - preferred_term: Oleic acid
+    term:
+      id: CHEBI:16196
+      label: oleic acid
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16196
+      label: oleic acid
+    notes: 'OADC stock input: 0.05 g; API stock g_l=0.5 in its 100 ml encoding. This
+      is a provider-reported stock rate, not a finished-medium concentration or independently
+      measured final stock volume.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/645
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "Oleic acid",
+                                "compound_id": 638,
+                                "amount": 0.05,
+                                "unit": "g",
+                                "g_l": 0.5,
+                                "mmol_l": 1.76991,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[0].concentration: OADC stock input: 0.05 g; API stock g_l=0.5 in its 100 ml encoding. This is a provider-reported stock rate, not a finished-medium concentration or independently measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[0]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+        Additional exact excerpt: {
+                                "recipe_order": 1,
+                                "compound": "Oleic acid",
+                                "compound_id": 638,
+                                "amount": 0.05,
+                                "unit": "g",
+                                "g_l": 0.5,
+                                "mmol_l": 1.76991,
+                                "optional": 0
+                            }
+        solutions[0].composition[0].notes: OADC stock input: 0.05 g; API stock g_l=0.5 in its 100 ml encoding. This is a provider-reported stock rate, not a finished-medium concentration or independently measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[0]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: Oleic acid                                                                 0.050         g
+      explanation: 'solutions[0].composition[0].notes: OADC stock input: 0.05 g; API
+        stock g_l=0.5 in its 100 ml encoding. This is a provider-reported stock rate,
+        not a finished-medium concentration or independently measured final stock
+        volume. No unstated density, final volume, percent basis or chemical identifier
+        is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:53.271442+00:00;
+        capture SHA256=8f4d6801aab892b40a988bba7e499d582097489fae3871d760fbabc22e8e1757.'
+  - preferred_term: Bovine albumin
+    concentration:
+      value: '50'
+      unit: G_PER_L
+    notes: 'OADC stock input: 5 g; API stock g_l=50 in its 100 ml encoding. This is
+      a provider-reported stock rate, not a finished-medium concentration or independently
+      measured final stock volume. Source material qualifier: albumin fraction V.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/645
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "Bovine albumin",
+                                "compound_id": 1681,
+                                "condition": "",
+                                "attribute": "albumin fraction V",
+                                "amount": 5,
+                                "unit": "g",
+                                "g_l": 50,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[1].concentration: OADC stock input: 5 g; API stock g_l=50 in its 100 ml encoding. This is a provider-reported stock rate, not a finished-medium concentration or independently measured final stock volume. Source material qualifier: albumin fraction V. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[1]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+        Additional exact excerpt: {
+                                "recipe_order": 2,
+                                "compound": "Bovine albumin",
+                                "compound_id": 1681,
+                                "condition": "",
+                                "attribute": "albumin fraction V",
+                                "amount": 5,
+                                "unit": "g",
+                                "g_l": 50,
+                                "optional": 0
+                            }
+        solutions[0].composition[1].notes: OADC stock input: 5 g; API stock g_l=50 in its 100 ml encoding. This is a provider-reported stock rate, not a finished-medium concentration or independently measured final stock volume. Source material qualifier: albumin fraction V. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[1]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: Albumin fraction V, bovine                                                 5.000         g
+      explanation: 'solutions[0].composition[1].notes: OADC stock input: 5 g; API
+        stock g_l=50 in its 100 ml encoding. This is a provider-reported stock rate,
+        not a finished-medium concentration or independently measured final stock
+        volume. Source material qualifier: albumin fraction V. No unstated density,
+        final volume, percent basis or chemical identifier is inferred. Locator=original
+        recipe table/text; accessed=2026-10-09T00:07:53.271442+00:00; capture SHA256=8f4d6801aab892b40a988bba7e499d582097489fae3871d760fbabc22e8e1757.'
+  - preferred_term: Dextrose
+    term:
+      id: CHEBI:17634
+      label: D-glucose
+    concentration:
+      value: '20'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17634
+      label: D-glucose
+    notes: 'OADC stock input: 2 g; API stock g_l=20 in its 100 ml encoding. This is
+      a provider-reported stock rate, not a finished-medium concentration or independently
+      measured final stock volume.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/645
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "Dextrose",
+                                "compound_id": 60,
+                                "amount": 2,
+                                "unit": "g",
+                                "g_l": 20,
+                                "mmol_l": 100.923,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[2].concentration: OADC stock input: 2 g; API stock g_l=20 in its 100 ml encoding. This is a provider-reported stock rate, not a finished-medium concentration or independently measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[2]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+        Additional exact excerpt: {
+                                "recipe_order": 3,
+                                "compound": "Dextrose",
+                                "compound_id": 60,
+                                "amount": 2,
+                                "unit": "g",
+                                "g_l": 20,
+                                "mmol_l": 100.923,
+                                "optional": 0
+                            }
+        solutions[0].composition[2].notes: OADC stock input: 2 g; API stock g_l=20 in its 100 ml encoding. This is a provider-reported stock rate, not a finished-medium concentration or independently measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[2]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: Dextrose                                                                   2.000         g
+      explanation: 'solutions[0].composition[2].notes: OADC stock input: 2 g; API
+        stock g_l=20 in its 100 ml encoding. This is a provider-reported stock rate,
+        not a finished-medium concentration or independently measured final stock
+        volume. No unstated density, final volume, percent basis or chemical identifier
+        is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:53.271442+00:00;
+        capture SHA256=8f4d6801aab892b40a988bba7e499d582097489fae3871d760fbabc22e8e1757.'
+  - preferred_term: Catalase
+    concentration:
+      value: '0.04'
+      unit: G_PER_L
+    notes: 'OADC stock input: 4 mg; API stock g_l=0.04 in its 100 ml encoding. This
+      is a provider-reported stock rate, not a finished-medium concentration or independently
+      measured final stock volume. Source material qualifier: beef.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/645
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 4,
+                                "compound": "Catalase",
+                                "compound_id": 270,
+                                "attribute": "beef",
+                                "amount": 4,
+                                "unit": "mg",
+                                "g_l": 0.04,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[3].concentration: OADC stock input: 4 mg; API stock g_l=0.04 in its 100 ml encoding. This is a provider-reported stock rate, not a finished-medium concentration or independently measured final stock volume. Source material qualifier: beef. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[3]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+        Additional exact excerpt: {
+                                "recipe_order": 4,
+                                "compound": "Catalase",
+                                "compound_id": 270,
+                                "attribute": "beef",
+                                "amount": 4,
+                                "unit": "mg",
+                                "g_l": 0.04,
+                                "optional": 0
+                            }
+        solutions[0].composition[3].notes: OADC stock input: 4 mg; API stock g_l=0.04 in its 100 ml encoding. This is a provider-reported stock rate, not a finished-medium concentration or independently measured final stock volume. Source material qualifier: beef. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[3]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: Catalase (beef)                                                            4.000       mg
+      explanation: 'solutions[0].composition[3].notes: OADC stock input: 4 mg; API
+        stock g_l=0.04 in its 100 ml encoding. This is a provider-reported stock rate,
+        not a finished-medium concentration or independently measured final stock
+        volume. Source material qualifier: beef. No unstated density, final volume,
+        percent basis or chemical identifier is inferred. Locator=original recipe
+        table/text; accessed=2026-10-09T00:07:53.271442+00:00; capture SHA256=8f4d6801aab892b40a988bba7e499d582097489fae3871d760fbabc22e8e1757.'
+  - preferred_term: NaCl
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    concentration:
+      value: '8.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+    notes: 'OADC stock input: 0.85 g; API stock g_l=8.5 in its 100 ml encoding. This
+      is a provider-reported stock rate, not a finished-medium concentration or independently
+      measured final stock volume.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/645
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 5,
+                                "compound": "NaCl",
+                                "compound_id": 43,
+                                "amount": 0.85,
+                                "unit": "g",
+                                "g_l": 8.5,
+                                "mmol_l": 145.448,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[4].concentration: OADC stock input: 0.85 g; API stock g_l=8.5 in its 100 ml encoding. This is a provider-reported stock rate, not a finished-medium concentration or independently measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[4]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+        Additional exact excerpt: {
+                                "recipe_order": 5,
+                                "compound": "NaCl",
+                                "compound_id": 43,
+                                "amount": 0.85,
+                                "unit": "g",
+                                "g_l": 8.5,
+                                "mmol_l": 145.448,
+                                "optional": 0
+                            }
+        solutions[0].composition[4].notes: OADC stock input: 0.85 g; API stock g_l=8.5 in its 100 ml encoding. This is a provider-reported stock rate, not a finished-medium concentration or independently measured final stock volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[4]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: NaCl                                                                       0.850         g
+      explanation: 'solutions[0].composition[4].notes: OADC stock input: 0.85 g; API
+        stock g_l=8.5 in its 100 ml encoding. This is a provider-reported stock rate,
+        not a finished-medium concentration or independently measured final stock
+        volume. No unstated density, final volume, percent basis or chemical identifier
+        is inferred. Locator=original recipe table/text; accessed=2026-10-09T00:07:53.271442+00:00;
+        capture SHA256=8f4d6801aab892b40a988bba7e499d582097489fae3871d760fbabc22e8e1757.'
+  - preferred_term: Distilled water
+    concentration:
+      value: '0.1'
+      unit: L
+    notes: 'Source batch input: 100 ml = 0.1 L; not a final-volume marker or a mass
+      concentration.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/645
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 6,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 100,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[5].concentration: Source batch input: 100 ml = 0.1 L; not a final-volume marker or a mass concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[5]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+        Additional exact excerpt: {
+                                "recipe_order": 6,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 100,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+        solutions[0].composition[5].notes: Source batch input: 100 ml = 0.1 L; not a final-volume marker or a mass concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[5]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+  notes: 100 ml = 0.1 L OADC addition after sterilization and cooling, separate from
+    its stock composition. Do not autoclave this later addition or infer a finished-medium
+    denominator.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/645
+  supports: SUPPORT
+  snippet: '"Sterilize for 15 min by 121\u00b0C cool to 50 - 55\u00b0C. Add 100 ml
+    Middlebrook OADC enrichment (Becton Dickinson 212240) under aseptic conditions
+    and mix thoroughly."'
+  explanation: |-
+    solutions[0].concentration: 100 ml = 0.1 L OADC addition after sterilization and cooling, separate from its stock composition. Do not autoclave this later addition or infer a finished-medium denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+    Additional exact excerpt: "Sterilize for 15 min by 121\u00b0C cool to 50 - 55\u00b0C. Add 100 ml Middlebrook OADC enrichment (Becton Dickinson 212240) under aseptic conditions and mix thoroughly."
+    solutions[0].notes: 100 ml = 0.1 L OADC addition after sterilization and cooling, separate from its stock composition. Do not autoclave this later addition or infer a finished-medium denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+    Additional exact excerpt: "Sterilize for 15 min by 121\u00b0C cool to 50 - 55\u00b0C. Add 100 ml Middlebrook OADC enrichment (Becton Dickinson 212240) under aseptic conditions and mix thoroughly."
+    solutions[0].name: 100 ml = 0.1 L OADC addition after sterilization and cooling, separate from its stock composition. Do not autoclave this later addition or infer a finished-medium denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+    Additional exact excerpt: "Sterilize for 15 min by 121\u00b0C cool to 50 - 55\u00b0C. Add 100 ml Middlebrook OADC enrichment (Becton Dickinson 212240) under aseptic conditions and mix thoroughly."
+    preparation_steps: Retain explicit sterilization/cooling and later OADC addition; pH and section headings are not heat/mix operations. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+    Additional exact excerpt: {
+                            "recipe_order": 2,
+                            "compound": "Bovine albumin",
+                            "compound_id": 1681,
+                            "condition": "",
+                            "attribute": "albumin fraction V",
+                            "amount": 5,
+                            "unit": "g",
+                            "g_l": 50,
+                            "optional": 0
+                        }
+    notes: Restore source-listed albumin instead of the false LB constituent expansion. Genuine casein digest and NaCl entries are retained separately. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[1]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+    Additional exact excerpt: {
+                            "recipe_order": 2,
+                            "compound": "Bovine albumin",
+                            "compound_id": 1681,
+                            "condition": "",
+                            "attribute": "albumin fraction V",
+                            "amount": 5,
+                            "unit": "g",
+                            "g_l": 50,
+                            "optional": 0
+                        }
+    notes: Restore source-listed albumin instead of the false LB constituent expansion. Genuine casein digest and NaCl entries are retained separately. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[1]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+    Additional exact excerpt: {
+                            "recipe_order": 2,
+                            "compound": "Bovine albumin",
+                            "compound_id": 1681,
+                            "condition": "",
+                            "attribute": "albumin fraction V",
+                            "amount": 5,
+                            "unit": "g",
+                            "g_l": 50,
+                            "optional": 0
+                        }
+    notes: Restore source-listed albumin instead of the false LB constituent expansion. Genuine casein digest and NaCl entries are retained separately. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[1]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+    Additional exact excerpt: {
+                            "recipe_order": 2,
+                            "compound": "Bovine albumin",
+                            "compound_id": 1681,
+                            "condition": "",
+                            "attribute": "albumin fraction V",
+                            "amount": 5,
+                            "unit": "g",
+                            "g_l": 50,
+                            "optional": 0
+                        }
+    parent_media: Replace the copied exact-duplicate topology with reciprocal source-qualified family links; retain the previous links in history and preserve permanent IDs. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[1]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+    Additional exact excerpt: {
+                            "recipe_order": 2,
+                            "compound": "Bovine albumin",
+                            "compound_id": 1681,
+                            "condition": "",
+                            "attribute": "albumin fraction V",
+                            "amount": 5,
+                            "unit": "g",
+                            "g_l": 50,
+                            "optional": 0
+                        }
+    variant_relationship: Replace the copied exact-duplicate topology with reciprocal source-qualified family links; retain the previous links in history and preserve permanent IDs. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[1]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+    Additional exact excerpt: {
+                            "recipe_order": 2,
+                            "compound": "Bovine albumin",
+                            "compound_id": 1681,
+                            "condition": "",
+                            "attribute": "albumin fraction V",
+                            "amount": 5,
+                            "unit": "g",
+                            "g_l": 50,
+                            "optional": 0
+                        }
+    variant_modifications: Replace the copied exact-duplicate topology with reciprocal source-qualified family links; retain the previous links in history and preserve permanent IDs. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[1]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+    Additional exact excerpt: {
+                            "recipe_order": 2,
+                            "compound": "Bovine albumin",
+                            "compound_id": 1681,
+                            "condition": "",
+                            "attribute": "albumin fraction V",
+                            "amount": 5,
+                            "unit": "g",
+                            "g_l": 50,
+                            "optional": 0
+                        }
+    variant_children: Replace the copied exact-duplicate topology with reciprocal source-qualified family links; retain the previous links in history and preserve permanent IDs. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[2].recipe[1]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+variants:
+- name: From-scratch alternative to commercial 7H10
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  description: Use only when the commercial medium is unavailable. This is an alternative
+    preparation, not simultaneous inputs to the commercial route; final-volume equivalence
+    is unresolved.
+  modifications:
+  - 'Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.'
+  - 'Alternative preparation input: KH2PO4 1.5 g; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.'
+  - 'Alternative preparation input: Na2HPO4 1.5 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.'
+  - 'Alternative preparation input: Sodium citrate 0.4 g; not an additional input
+    to the commercial preparation. No final-medium concentration is inferred.'
+  - 'Alternative preparation input: MgSO4 0.025 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.'
+  - 'Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.'
+  - 'Alternative preparation input: ZnSO4 1 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.'
+  - 'Alternative preparation input: CuSO4 1 mg; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.'
+  - 'Alternative preparation input: L-Glutamic acid 0.5 g; not an additional input
+    to the commercial preparation. No final-medium concentration is inferred.'
+  - 'Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional
+    input to the commercial preparation. No final-medium concentration is inferred.'
+  - 'Alternative preparation input: Pyridoxine 1 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.'
+  - 'Alternative preparation input: Biotin 0.5 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.'
+  - 'Alternative preparation input: Malachite green 0.25 mg; not an additional input
+    to the commercial preparation. No final-medium concentration is inferred.'
+  - 'Alternative preparation input: Agar 15 g; not an additional input to the commercial
+    preparation. No final-medium concentration is inferred.'
+  - 'Alternative preparation input: Distilled water 1000 ml; not an additional input
+    to the commercial preparation. No final-medium concentration is inferred.'
+  - The alternative table lists 1000 ml water, not the commercial route's 900 ml.
+    Do not sum those water inputs or assert measured final volume. Its final pH at
+    25 C is 6.6 +/- 0.2; no titrant or titration dose is specified.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/645
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "(NH4)2SO4",
+                              "compound_id": 27,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.5,
+                              "mmol_l": 3.78387,
+                              "optional": 0
+                          }
+    explanation: |-
+      variants[0].modifications: Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the commercial preparation. No final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[0]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 2,
+                              "compound": "KH2PO4",
+                              "compound_id": 11,
+                              "amount": 1.5,
+                              "unit": "g",
+                              "g_l": 1.5,
+                              "mmol_l": 11.0225,
+                              "optional": 0
+                          }
+      variants[0].modifications: Alternative preparation input: KH2PO4 1.5 g; not an additional input to the commercial preparation. No final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[1]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 3,
+                              "compound": "Na2HPO4",
+                              "compound_id": 233,
+                              "amount": 1.5,
+                              "unit": "g",
+                              "g_l": 1.5,
+                              "mmol_l": 10.5664,
+                              "optional": 0
+                          }
+      variants[0].modifications: Alternative preparation input: Na2HPO4 1.5 g; not an additional input to the commercial preparation. No final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[2]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 4,
+                              "compound": "Sodium citrate",
+                              "compound_id": 792,
+                              "amount": 0.4,
+                              "unit": "g",
+                              "g_l": 0.4,
+                              "mmol_l": 1.54997,
+                              "optional": 0
+                          }
+      variants[0].modifications: Alternative preparation input: Sodium citrate 0.4 g; not an additional input to the commercial preparation. No final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[3]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 5,
+                              "compound": "MgSO4",
+                              "compound_id": 325,
+                              "amount": 0.025,
+                              "unit": "g",
+                              "g_l": 0.025,
+                              "mmol_l": 0.207693,
+                              "optional": 0
+                          }
+      variants[0].modifications: Alternative preparation input: MgSO4 0.025 g; not an additional input to the commercial preparation. No final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[4]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 6,
+                              "compound": "CaCl2",
+                              "compound_id": 81,
+                              "amount": 0.5,
+                              "unit": "mg",
+                              "g_l": 0.0005,
+                              "mmol_l": 0.00450532,
+                              "optional": 0
+                          }
+      variants[0].modifications: Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial preparation. No final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[5]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 7,
+                              "compound": "ZnSO4",
+                              "compound_id": 441,
+                              "amount": 1,
+                              "unit": "mg",
+                              "g_l": 0.001,
+                              "mmol_l": 0.00619579,
+                              "optional": 0
+                          }
+      variants[0].modifications: Alternative preparation input: ZnSO4 1 mg; not an additional input to the commercial preparation. No final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[6]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 8,
+                              "compound": "CuSO4",
+                              "compound_id": 636,
+                              "amount": 1,
+                              "unit": "mg",
+                              "g_l": 0.001,
+                              "mmol_l": 0.00626527,
+                              "optional": 0
+                          }
+      variants[0].modifications: Alternative preparation input: CuSO4 1 mg; not an additional input to the commercial preparation. No final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[7]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 9,
+                              "compound": "L-Glutamic acid",
+                              "compound_id": 374,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.5,
+                              "mmol_l": 3.39836,
+                              "optional": 0
+                          }
+      variants[0].modifications: Alternative preparation input: L-Glutamic acid 0.5 g; not an additional input to the commercial preparation. No final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[8]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 10,
+                              "compound": "Ferric ammonium citrate",
+                              "compound_id": 97,
+                              "amount": 0.04,
+                              "unit": "g",
+                              "g_l": 0.04,
+                              "optional": 0
+                          }
+      variants[0].modifications: Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional input to the commercial preparation. No final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[9]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 11,
+                              "compound": "Pyridoxine",
+                              "compound_id": 637,
+                              "amount": 1,
+                              "unit": "mg",
+                              "g_l": 0.001,
+                              "mmol_l": 0.00591086,
+                              "optional": 0
+                          }
+      variants[0].modifications: Alternative preparation input: Pyridoxine 1 mg; not an additional input to the commercial preparation. No final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[10]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 12,
+                              "compound": "Biotin",
+                              "compound_id": 46,
+                              "amount": 0.5,
+                              "unit": "mg",
+                              "g_l": 0.0005,
+                              "mmol_l": 0.00204658,
+                              "optional": 0
+                          }
+      variants[0].modifications: Alternative preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation. No final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[11]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 13,
+                              "compound": "Malachite green",
+                              "compound_id": 407,
+                              "amount": 0.25,
+                              "unit": "mg",
+                              "g_l": 0.00025,
+                              "mmol_l": 0.000685119,
+                              "optional": 0
+                          }
+      variants[0].modifications: Alternative preparation input: Malachite green 0.25 mg; not an additional input to the commercial preparation. No final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[12]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 14,
+                              "compound": "Agar",
+                              "compound_id": 3,
+                              "attribute": "Bacto ",
+                              "amount": 15,
+                              "unit": "g",
+                              "g_l": 15,
+                              "mmol_l": 44.5991,
+                              "optional": 0
+                          }
+      variants[0].modifications: Alternative preparation input: Agar 15 g; not an additional input to the commercial preparation. No final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[13]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: {
+                              "recipe_order": 15,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+      variants[0].modifications: Alternative preparation input: Distilled water 1000 ml; not an additional input to the commercial preparation. No final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[14]; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+
+      Additional exact excerpt: "Final pH at 25\u00b0C 6.6 \u00b1 0.2."
+      variants[0].modifications: Preserve pH at the alternative-table scope, not a heating instruction. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].steps[0].step; accessed=2026-10-09T00:07:51.968862+00:00; capture SHA256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+    supports: SUPPORT
+    snippet: |-
+      If you can´t order the commercial media then prepare the media in this way:
+
+      Bacto Middlebrook 7H10 agar:
+       (NH4)2SO4                                                                  0.500         g
+       KH2PO4                                                                     1.500         g
+       Na2HPO4                                                                    1.500         g
+       Na-citrate                                                                 0.400         g
+       MgSO4                                                                      0.025         g
+       CaCl2                                                                      0.500       mg
+       ZnSO4                                                                      1.000       mg
+       CuSO4                                                                      1.000       mg
+       L-Glutamic acid                                                            0.500         g
+       Ferric ammonium citrate                                                    0.040         g
+       Pyridoxine                                                                 1.000       mg
+       Biotin                                                                     0.500       mg
+       Malachite green                                                            0.250       mg
+       Bacto agar                                                               15.000          g
+       Distilled water                                                       1000.000          ml
+
+      Final pH at 25C 6.6 ± 0.2.
+    explanation: 'variants[0].description: Archive the displaced flattened ingredient
+      nodes, including chemical annotations, in append-only history. Only the conditional
+      alternative carries these basal inputs; its table does not establish final-volume
+      equivalence to the commercial route. No unstated density, final volume, percent
+      basis or chemical identifier is inferred. Locator=original recipe table/text;
+      accessed=2026-10-09T00:07:53.271442+00:00; capture SHA256=8f4d6801aab892b40a988bba7e499d582097489fae3871d760fbabc22e8e1757.'
+variant_children:
+- path: data/normalized_yaml/bacterial/middelbrook_medium.yaml
+  id: CultureMech:006190
+  name: middelbrook_medium
+  relationship: DERIVED_FROM
+  notes: The source Instructions explicitly link the DSMZ recipe. Different quantity
+    normalization contexts remain unresolved; the prior copied signature does not
+    prove an exact duplicate.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645
+    supports: SUPPORT
+    snippet: 'Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf'
+    explanation: 'variant_children[0].relationship: The source Instructions explicitly
+      link the DSMZ recipe. Different quantity normalization contexts remain unresolved;
+      the prior copied signature does not prove an exact duplicate. No unstated density,
+      final volume, percent basis or chemical identifier is inferred. Locator=original
+      recipe table/text; accessed=2026-10-09T00:07:47.755436+00:00; capture SHA256=68ca8e66fc375ef2b6baca45819969ca906207fabedc340250e4ed8e2e9b3ec1.'
+- path: data/normalized_yaml/bacterial/KOMODO_645a_HEMIN_medium_FOR_MYCOBACTERIUM.yaml
   id: CultureMech:006191
   name: hemin_medium_for_mycobacterium
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+  relationship: UNCERTAIN
+  notes: 'Candidate 7H10/OADC family relationship only: hemin, historical product
+    identifiers and unresolved preparation differences preclude an exact-duplicate
+    or parent-plus-only-hemin assertion.'
+  evidence:
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645a.pdf
+    supports: SUPPORT
+    snippet: |-
+      Middlebrook 7H10 (Difco 0627) with OADC Enrichment (Difco 0722) with 60 micromoles
+      hemin. Hemin must be solubilized with 1N NAOH.
+    explanation: 'variant_children[1].relationship: Candidate 7H10/OADC family relationship
+      only: hemin, historical product identifiers and unresolved preparation differences
+      preclude an exact-duplicate or parent-plus-only-hemin assertion. No unstated
+      density, final volume, percent basis or chemical identifier is inferred. Locator=original
+      recipe table/text; accessed=2026-10-09T00:07:53.472939+00:00; capture SHA256=618ad4ef209f7681d6aae33d2be1c444114b748714ea9bdf6f1f5bb10832fcd0.'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/645
+  title: MIDDLEBROOK MEDIUM
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-09;
+    accession=D645; capture_sha256=5d209fb06ff092aec86241b9d51276f02a45bf1203e441c5cc042f5e4c1ce318.
+    Authors and publication year are not supplied; copyright/access years are not
+    publication years.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+  title: 645. MIDDLEBROOK MEDIUM
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    accession=DSMZ645; capture_sha256=8f4d6801aab892b40a988bba7e499d582097489fae3871d760fbabc22e8e1757.
+    Authors and publication year are not supplied; copyright/access years are not
+    publication years.
+- reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=645
+  title: KOMODO - the Known Media Database
+  notes: source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    accession=K645; capture_sha256=68ca8e66fc375ef2b6baca45819969ca906207fabedc340250e4ed8e2e9b3ec1.
+    Authors and publication year are not supplied; copyright/access years are not
+    publication years.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645a.pdf
+  title: 645a. HEMIN MEDIUM FOR MYCOBACTERIUM
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    accession=DSMZ645a; capture_sha256=618ad4ef209f7681d6aae33d2be1c444114b748714ea9bdf6f1f5bb10832fcd0.
+    Authors and publication year are not supplied; copyright/access years are not
+    publication years.

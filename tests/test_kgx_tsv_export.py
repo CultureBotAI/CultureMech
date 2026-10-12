@@ -255,6 +255,35 @@ def test_a_record_with_no_id_is_refused_rather_than_name_keyed():
 # --- the koza path, end to end -------------------------------------------
 
 
+@pytest.mark.parametrize("empty", [False, True])
+def test_verification_closes_readers_on_success_and_empty_output(tmp_path, monkeypatch, empty):
+    import export_kgx
+
+    for kind in ("nodes", "edges"):
+        (tmp_path / f"culturemech_{kind}.tsv").write_text("id\n" if empty else "id\none\ntwo\n")
+    original_open = Path.open
+    opened = []
+
+    def tracked_open(path, *args, **kwargs):
+        handle = original_open(path, *args, **kwargs)
+        if path.parent == tmp_path:
+            opened.append(handle)
+        return handle
+
+    monkeypatch.setattr(Path, "open", tracked_open)
+    try:
+        if empty:
+            with pytest.raises(SystemExit, match="header but no rows"):
+                export_kgx._verify(tmp_path)
+        else:
+            assert export_kgx._verify(tmp_path) == (2, 2)
+        assert len(opened) == (1 if empty else 2)
+        assert all(handle.closed for handle in opened)
+    finally:
+        for handle in opened:
+            handle.close()
+
+
 @pytest.fixture
 def exported(tmp_path: Path) -> tuple[list[dict], list[dict]]:
     """Run the real koza runner over fixture records; return (nodes, edges)."""

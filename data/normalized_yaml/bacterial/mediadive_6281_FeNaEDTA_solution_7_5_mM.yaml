@@ -11,6 +11,33 @@ composition:
   term:
     id: mediadive.compound:1230
     label: FeNa-EDTA
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/6281
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "FeNa-EDTA",
+                      "compound_id": 1230,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2753,
+                      "unit": "mg",
+                      "g_l": 2.753,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (FeNa-EDTA)
+      in MediaDive solution 6281; locator=$.data.recipe[0] (compound_id=1230). Provider
+      explicitly reports g_l=2.753. Arithmetic check: 2753 mg * 0.001 g/mg / (1000
+      ml / 1000 ml per L) = 2.753 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T10:01:58.226597+00:00;
+      response SHA256=659e14b74954cf589a79562f7773ea4e4ca0cfb2912431212e02105466cb8b0f.'
 - preferred_term: Double distilled water
   concentration:
     value: '1000'
@@ -57,6 +84,15 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T10:04:07.640757+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/6281
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "2.753"} ->
+    {"unit": "G_PER_L", "value": "2.753"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -65,3 +101,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/6281
+  title: 'MediaDive solution 6281: FeNaEDTA solution (7.5 mM)'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=659e14b74954cf589a79562f7773ea4e4ca0cfb2912431212e02105466cb8b0f;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

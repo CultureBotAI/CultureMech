@@ -11,21 +11,7 @@ media_term:
   term:
     id: mediadive.medium:323
     label: TREPONEMA SACCHAROPHILUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf
-
-
-  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
-  Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
-  Catalog: Multiple (L3522 Sigma, 244520 BD)
-
-  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf'
 ingredients:
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -37,6 +23,28 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  notes: Retain the exact provider-reported concentration in the matching main formulation,
+    with its explicit source amount and 1002 ml volume basis. Existing chemical mappings
+    are preserved, not independently recertified.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/323
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "CaCl2 x 2 H2O",
+                              "compound_id": 7,
+                              "amount": 0.12,
+                              "unit": "g",
+                              "g_l": 0.11976,
+                              "mmol_l": 0.814614,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration: Retain the exact provider-reported
+      concentration in the matching main formulation, with its explicit source amount
+      and 1002 ml volume basis. Existing chemical mappings are preserved, not independently
+      recertified. Locator=[''data'', ''solutions'', 0, ''recipe'', 0]; accessed=2026-10-07T10:45:25.553943+00:00;
+      source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -47,6 +55,28 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  notes: Retain the exact provider-reported concentration in the matching main formulation,
+    with its explicit source amount and 1002 ml volume basis. Existing chemical mappings
+    are preserved, not independently recertified.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/323
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 0.19,
+                              "unit": "g",
+                              "g_l": 0.189621,
+                              "mmol_l": 0.769327,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[1].concentration: Retain the exact provider-reported
+      concentration in the matching main formulation, with its explicit source amount
+      and 1002 ml volume basis. Existing chemical mappings are preserved, not independently
+      recertified. Locator=[''data'', ''solutions'', 0, ''recipe'', 1]; accessed=2026-10-07T10:45:25.553943+00:00;
+      source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -57,6 +87,28 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  notes: Retain the exact provider-reported concentration in the matching main formulation,
+    with its explicit source amount and 1002 ml volume basis. Existing chemical mappings
+    are preserved, not independently recertified.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/323
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "KH2PO4",
+                              "compound_id": 11,
+                              "amount": 0.45,
+                              "unit": "g",
+                              "g_l": 0.449102,
+                              "mmol_l": 3.30016,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[2].concentration: Retain the exact provider-reported
+      concentration in the matching main formulation, with its explicit source amount
+      and 1002 ml volume basis. Existing chemical mappings are preserved, not independently
+      recertified. Locator=[''data'', ''solutions'', 0, ''recipe'', 2]; accessed=2026-10-07T10:45:25.553943+00:00;
+      source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -67,6 +119,28 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  notes: Retain the exact provider-reported concentration in the matching main formulation,
+    with its explicit source amount and 1002 ml volume basis. Existing chemical mappings
+    are preserved, not independently recertified.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/323
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "K2HPO4",
+                              "compound_id": 10,
+                              "amount": 0.45,
+                              "unit": "g",
+                              "g_l": 0.449102,
+                              "mmol_l": 2.57844,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[3].concentration: Retain the exact provider-reported
+      concentration in the matching main formulation, with its explicit source amount
+      and 1002 ml volume basis. Existing chemical mappings are preserved, not independently
+      recertified. Locator=[''data'', ''solutions'', 0, ''recipe'', 3]; accessed=2026-10-07T10:45:25.553943+00:00;
+      source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -77,6 +151,28 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  notes: Retain the exact provider-reported concentration in the matching main formulation,
+    with its explicit source amount and 1002 ml volume basis. Existing chemical mappings
+    are preserved, not independently recertified.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/323
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 0.9,
+                              "unit": "g",
+                              "g_l": 0.898204,
+                              "mmol_l": 15.3697,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[4].concentration: Retain the exact provider-reported
+      concentration in the matching main formulation, with its explicit source amount
+      and 1002 ml volume basis. Existing chemical mappings are preserved, not independently
+      recertified. Locator=[''data'', ''solutions'', 0, ''recipe'', 4]; accessed=2026-10-07T10:45:25.553943+00:00;
+      source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.'
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -87,21 +183,137 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
     label: ammonium sulfate
+  notes: Retain the exact provider-reported concentration in the matching main formulation,
+    with its explicit source amount and 1002 ml volume basis. Existing chemical mappings
+    are preserved, not independently recertified.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/323
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "(NH4)2SO4",
+                              "compound_id": 27,
+                              "amount": 0.9,
+                              "unit": "g",
+                              "g_l": 0.898204,
+                              "mmol_l": 6.79736,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[5].concentration: Retain the exact provider-reported
+      concentration in the matching main formulation, with its explicit source amount
+      and 1002 ml volume basis. Existing chemical mappings are preserved, not independently
+      recertified. Locator=[''data'', ''solutions'', 0, ''recipe'', 5]; accessed=2026-10-07T10:45:25.553943+00:00;
+      source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.'
 - preferred_term: Yeast extract
   concentration:
     value: '1.99601'
     unit: G_PER_L
+  notes: Retain the exact provider-reported concentration in the matching main formulation,
+    with its explicit source amount and 1002 ml volume basis. Existing chemical mappings
+    are preserved, not independently recertified.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/323
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 7,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "attribute": "OXOID",
+                              "amount": 2,
+                              "unit": "g",
+                              "g_l": 1.99601,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[6].concentration: Retain the exact provider-reported
+      concentration in the matching main formulation, with its explicit source amount
+      and 1002 ml volume basis. Existing chemical mappings are preserved, not independently
+      recertified. Locator=[''data'', ''solutions'', 0, ''recipe'', 6]; accessed=2026-10-07T10:45:25.553943+00:00;
+      source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.'
 - preferred_term: Trypticase peptone
   concentration:
     value: '1.99601'
     unit: G_PER_L
+  notes: Retain the exact provider-reported concentration in the matching main formulation,
+    with its explicit source amount and 1002 ml volume basis. Existing chemical mappings
+    are preserved, not independently recertified.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/323
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 8,
+                              "compound": "Trypticase peptone",
+                              "compound_id": 124,
+                              "attribute": "BD BBL",
+                              "amount": 2,
+                              "unit": "g",
+                              "g_l": 1.99601,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[7].concentration: Retain the exact provider-reported
+      concentration in the matching main formulation, with its explicit source amount
+      and 1002 ml volume basis. Existing chemical mappings are preserved, not independently
+      recertified. Locator=[''data'', ''solutions'', 0, ''recipe'', 7]; accessed=2026-10-07T10:45:25.553943+00:00;
+      source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000499002'
     unit: G_PER_L
-  term:
-    id: CHEBI:8806
-    label: Resazurin
+  notes: 'Retain the exact provider-reported concentration in the matching main formulation,
+    with its explicit source amount and 1002 ml volume basis. Existing chemical mappings
+    are preserved, not independently recertified. The original''s 0.1% w/v reagent
+    is 1 g/L: 1 g/L * 0.0005 L / 1.002 L = 0.000499001996 g/L, consistent with the
+    existing rounded value. Do not double-count an extra reagent dose.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/323
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 15,
+                              "compound": "Sodium resazurin",
+                              "compound_id": 1852,
+                              "attribute": "0.1% w/v",
+                              "amount": 0.5,
+                              "unit": "ml",
+                              "g_l": 0.000499002,
+                              "mmol_l": 0.00198671,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[8].concentration: Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified. The original's 0.1% w/v reagent is 1 g/L: 1 g/L * 0.0005 L / 1.002 L = 0.000499001996 g/L, consistent with the existing rounded value. Do not double-count an extra reagent dose. Locator=['data', 'solutions', 0, 'recipe', 9]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+
+      Additional exact excerpt at ['data', 'solutions', 0, 'recipe', 9]:
+      {
+                              "recipe_order": 15,
+                              "compound": "Sodium resazurin",
+                              "compound_id": 1852,
+                              "attribute": "0.1% w/v",
+                              "amount": 0.5,
+                              "unit": "ml",
+                              "g_l": 0.000499002,
+                              "mmol_l": 0.00198671,
+                              "optional": 0
+                          }
+      ingredients[8].term: Withdraw sodium-free CHEBI:8806 (local formula C12H7NO4) from sodium-resazurin input. Preserve the source name and mass rate; no replacement term is invented. MIM publication identity remains unresolved. Locator=['data', 'solutions', 0, 'recipe', 9]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf
+    supports: SUPPORT
+    snippet: Sodium resazurin (0.1% w/v)                                        0.50        ml
+    explanation: |-
+      ingredients[8].concentration: Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified. The original's 0.1% w/v reagent is 1 g/L: 1 g/L * 0.0005 L / 1.002 L = 0.000499001996 g/L, consistent with the existing rounded value. Do not double-count an extra reagent dose. Locator=page 1, main table; accessed=2026-10-09T11:32:24.475381+00:00; source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.
+
+      Additional exact excerpt at page 1, final-volume heading:
+      Final volume: 1002 ml
+      ingredients[8].concentration: Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified. The original's 0.1% w/v reagent is 1 g/L: 1 g/L * 0.0005 L / 1.002 L = 0.000499001996 g/L, consistent with the existing rounded value. Do not double-count an extra reagent dose. Locator=page 1, final-volume heading; accessed=2026-10-09T11:32:24.475381+00:00; source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.
+
+      Additional exact excerpt at page 1, main table:
+      Sodium resazurin (0.1% w/v)                                        0.50        ml
+      ingredients[8].term: Withdraw sodium-free CHEBI:8806 (local formula C12H7NO4) from sodium-resazurin input. Preserve the source name and mass rate; no replacement term is invented. MIM publication identity remains unresolved. Locator=page 1, main table; accessed=2026-10-09T11:32:24.475381+00:00; source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.
+
+      Additional exact excerpt at page 1, final-volume heading:
+      Final volume: 1002 ml
+      ingredients[8].term: Withdraw sodium-free CHEBI:8806 (local formula C12H7NO4) from sodium-resazurin input. Preserve the source name and mass rate; no replacement term is invented. MIM publication identity remains unresolved. Locator=page 1, final-volume heading; accessed=2026-10-09T11:32:24.475381+00:00; source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -112,6 +324,28 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
+  notes: Retain the exact provider-reported concentration in the matching main formulation,
+    with its explicit source amount and 1002 ml volume basis. Existing chemical mappings
+    are preserved, not independently recertified.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/323
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 16,
+                              "compound": "L-Cysteine HCl x H2O",
+                              "compound_id": 770,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 0.998004,
+                              "mmol_l": 5.68223,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[9].concentration: Retain the exact provider-reported
+      concentration in the matching main formulation, with its explicit source amount
+      and 1002 ml volume basis. Existing chemical mappings are preserved, not independently
+      recertified. Locator=[''data'', ''solutions'', 0, ''recipe'', 10]; accessed=2026-10-07T10:45:25.553943+00:00;
+      source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.'
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -122,6 +356,28 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
     label: sodium carbonate
+  notes: Retain the exact provider-reported concentration in the matching main formulation,
+    with its explicit source amount and 1002 ml volume basis. Existing chemical mappings
+    are preserved, not independently recertified.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/323
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 17,
+                              "compound": "Na2CO3",
+                              "compound_id": 32,
+                              "amount": 2.5,
+                              "unit": "g",
+                              "g_l": 2.49501,
+                              "mmol_l": 23.5405,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[10].concentration: Retain the exact provider-reported
+      concentration in the matching main formulation, with its explicit source amount
+      and 1002 ml volume basis. Existing chemical mappings are preserved, not independently
+      recertified. Locator=[''data'', ''solutions'', 0, ''recipe'', 11]; accessed=2026-10-07T10:45:25.553943+00:00;
+      source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.'
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -132,6 +388,28 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
     label: D-glucose
+  notes: Retain the exact provider-reported concentration in the matching main formulation,
+    with its explicit source amount and 1002 ml volume basis. Existing chemical mappings
+    are preserved, not independently recertified.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/323
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 18,
+                              "compound": "D-Glucose",
+                              "compound_id": 211,
+                              "amount": 2,
+                              "unit": "g",
+                              "g_l": 1.99601,
+                              "mmol_l": 11.0791,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[11].concentration: Retain the exact provider-reported
+      concentration in the matching main formulation, with its explicit source amount
+      and 1002 ml volume basis. Existing chemical mappings are preserved, not independently
+      recertified. Locator=[''data'', ''solutions'', 0, ''recipe'', 12]; accessed=2026-10-07T10:45:25.553943+00:00;
+      source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -139,103 +417,61 @@ ingredients:
   concentration:
     value: '11.976'
     unit: G_PER_L
-  notes: ' (for solid medium)'
+  notes: |2-
+     (for solid medium)
+
+    Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified. Retain the existing solid selection and conditional table-derived 11.976 g/L with the separate procedure's 12.00 g/L discrepancy disclosed. Do not average these bases or change the recipe to liquid.
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: n-Butyric acid
-  term:
-    id: CHEBI:30772
-    label: butyric acid
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/323
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 19,
+                              "compound": "Agar",
+                              "compound_id": 3,
+                              "condition": "for solid medium",
+                              "attribute": "BD Bacto",
+                              "amount": 12,
+                              "unit": "g",
+                              "g_l": 11.976,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[12].concentration: Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified. Retain the existing solid selection and conditional table-derived 11.976 g/L with the separate procedure's 12.00 g/L discrepancy disclosed. Do not average these bases or change the recipe to liquid. Locator=['data', 'solutions', 0, 'recipe', 13]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+
+      Additional exact excerpt at ['data', 'solutions', 0, 'steps', 1]:
+      {
+                              "step": "For solid medium add 12.00 g/l agar (BD Bacto)."
+                          }
+      ingredients[12].concentration: Retain the exact provider-reported concentration in the matching main formulation, with its explicit source amount and 1002 ml volume basis. Existing chemical mappings are preserved, not independently recertified. Retain the existing solid selection and conditional table-derived 11.976 g/L with the separate procedure's 12.00 g/L discrepancy disclosed. Do not average these bases or change the recipe to liquid. Locator=['data', 'solutions', 0, 'steps', 1]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+- preferred_term: Distilled water
   concentration:
-    value: '5.8'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30772
-    label: butyric acid
-- preferred_term: iso-Butyric acid
-  term:
-    id: CHEBI:16135
-    label: isobutyric acid
-  concentration:
-    value: '275.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16135
-    label: isobutyric acid
-- preferred_term: Tryptone
-  term:
-    id: MICRO:0000182
-    label: tryptone
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: yeast extract
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
-- preferred_term: n-Valeric acid
-  term:
-    id: CHEBI:17418
-    label: valeric acid
-  concentration:
-    value: '131.46'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17418
-    label: valeric acid
-- preferred_term: iso-Valeric acid
-  term:
-    id: CHEBI:28484
-    label: isovaleric acid
-  concentration:
-    value: '130.34'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000378
-    label: iso-Valeric acid
+    value: '998.003992015968'
+    unit: ML_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/323
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 20,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[13].concentration: 1000 ml / 1.002 L = 998.003992015968
+      ml/L; explicit volume basis, not percent. Locator=[''data'', ''solutions'',
+      0, ''recipe'', 14]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf
+    supports: SUPPORT
+    snippet: 'Final volume: 1002 ml'
+    explanation: 'ingredients[13].concentration: 1000 ml / 1.002 L = 998.003992015968
+      ml/L; explicit volume basis, not percent. Locator=page 1 header; accessed=2026-10-09T11:32:24.475381+00:00;
+      source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.'
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -250,7 +486,7 @@ preparation_steps:
   action: MIX
   description: For solid medium add 12.00 g/l agar (BD Bacto).
 - step_number: 3
-  action: HEAT
+  action: STORE
   description: Store fatty acid mixture at -20°C.
 applications:
 - Microbial cultivation
@@ -286,3 +522,1423 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-09T17:38:33.880426+00:00'
+  curator: codex
+  action: RESTORED_MEDIUM323_SOURCE_SPECIFIC_INGREDIENTS
+  notes: 'Source-specific ingredient quantities, stock stages, identities and preparation
+    were reviewed against pinned official captures. Each changed formulation claim
+    has a persistent source URL and exact evidence snippet. Earlier evidence, IDs
+    and history are preserved. The source-linked medium relationship is uncertain,
+    not an exact duplicate or proven direction of derivation. Remaining limitations:
+    MIM sodium-resazurin publication identity remains unresolved; Conditional agar
+    table rate 11.976 g/L differs from procedural 12.00 g/L; retained as a disclosed
+    source conflict'
+  source: https://mediadive.dsmz.de/rest/medium/323
+  changes: '{"field_changes": [{"field": "ingredients[0].notes", "old": null, "new":
+    "Retain the exact provider-reported concentration in the matching main formulation,
+    with its explicit source amount and 1002 ml volume basis. Existing chemical mappings
+    are preserved, not independently recertified."}, {"field": "ingredients[1].notes",
+    "old": null, "new": "Retain the exact provider-reported concentration in the matching
+    main formulation, with its explicit source amount and 1002 ml volume basis. Existing
+    chemical mappings are preserved, not independently recertified."}, {"field": "ingredients[2].notes",
+    "old": null, "new": "Retain the exact provider-reported concentration in the matching
+    main formulation, with its explicit source amount and 1002 ml volume basis. Existing
+    chemical mappings are preserved, not independently recertified."}, {"field": "ingredients[3].notes",
+    "old": null, "new": "Retain the exact provider-reported concentration in the matching
+    main formulation, with its explicit source amount and 1002 ml volume basis. Existing
+    chemical mappings are preserved, not independently recertified."}, {"field": "ingredients[4].notes",
+    "old": null, "new": "Retain the exact provider-reported concentration in the matching
+    main formulation, with its explicit source amount and 1002 ml volume basis. Existing
+    chemical mappings are preserved, not independently recertified."}, {"field": "ingredients[5].notes",
+    "old": null, "new": "Retain the exact provider-reported concentration in the matching
+    main formulation, with its explicit source amount and 1002 ml volume basis. Existing
+    chemical mappings are preserved, not independently recertified."}, {"field": "ingredients[6].notes",
+    "old": null, "new": "Retain the exact provider-reported concentration in the matching
+    main formulation, with its explicit source amount and 1002 ml volume basis. Existing
+    chemical mappings are preserved, not independently recertified."}, {"field": "ingredients[7].notes",
+    "old": null, "new": "Retain the exact provider-reported concentration in the matching
+    main formulation, with its explicit source amount and 1002 ml volume basis. Existing
+    chemical mappings are preserved, not independently recertified."}, {"field": "ingredients[8].notes",
+    "old": null, "new": "Retain the exact provider-reported concentration in the matching
+    main formulation, with its explicit source amount and 1002 ml volume basis. Existing
+    chemical mappings are preserved, not independently recertified. The original''s
+    0.1% w/v reagent is 1 g/L: 1 g/L * 0.0005 L / 1.002 L = 0.000499001996 g/L, consistent
+    with the existing rounded value. Do not double-count an extra reagent dose."},
+    {"field": "ingredients[8].term", "old": {"id": "CHEBI:8806", "label": "Resazurin"},
+    "new": null}, {"field": "ingredients[9].notes", "old": null, "new": "Retain the
+    exact provider-reported concentration in the matching main formulation, with its
+    explicit source amount and 1002 ml volume basis. Existing chemical mappings are
+    preserved, not independently recertified."}, {"field": "ingredients[10].notes",
+    "old": null, "new": "Retain the exact provider-reported concentration in the matching
+    main formulation, with its explicit source amount and 1002 ml volume basis. Existing
+    chemical mappings are preserved, not independently recertified."}, {"field": "ingredients[11].notes",
+    "old": null, "new": "Retain the exact provider-reported concentration in the matching
+    main formulation, with its explicit source amount and 1002 ml volume basis. Existing
+    chemical mappings are preserved, not independently recertified."}, {"field": "ingredients[12].notes",
+    "old": " (for solid medium)", "new": " (for solid medium)\n\nRetain the exact
+    provider-reported concentration in the matching main formulation, with its explicit
+    source amount and 1002 ml volume basis. Existing chemical mappings are preserved,
+    not independently recertified. Retain the existing solid selection and conditional
+    table-derived 11.976 g/L with the separate procedure''s 12.00 g/L discrepancy
+    disclosed. Do not average these bases or change the recipe to liquid."}, {"field":
+    "ingredients[13].concentration.unit", "old": "G_PER_L", "new": "ML_PER_L"}, {"field":
+    "ingredients[13].concentration.value", "old": "5.8", "new": "998.003992015968"},
+    {"field": "ingredients[13].mediaingredientmech_chebi_term", "old": {"id": "CHEBI:30772",
+    "label": "butyric acid"}, "new": null}, {"field": "ingredients[13].preferred_term",
+    "old": "n-Butyric acid", "new": "Distilled water"}, {"field": "ingredients[13].term",
+    "old": {"id": "CHEBI:30772", "label": "butyric acid"}, "new": null}, {"field":
+    "ingredients[14]", "old": {"preferred_term": "iso-Butyric acid", "term": {"id":
+    "CHEBI:16135", "label": "isobutyric acid"}, "concentration": {"value": "275.5",
+    "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:16135", "label":
+    "isobutyric acid"}}, "new": null}, {"field": "ingredients[15]", "old": {"preferred_term":
+    "Tryptone", "term": {"id": "MICRO:0000182", "label": "tryptone"}, "concentration":
+    {"value": "10.0", "unit": "G_PER_L"}, "supplier_catalog": {"supplier_name": "Multiple
+    suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+    "catalog_number": "Multiple (L3522 Sigma, 244520 BD)", "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"},
+    "notes": "Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product",
+    "synonyms": [{"synonym_text": "pancreatic digest of casein", "synonym_type": "EXACT"},
+    {"synonym_text": "casein peptone", "synonym_type": "EXACT"}]}, "new": null}, {"field":
+    "ingredients[16]", "old": {"preferred_term": "Yeast extract", "term": {"id": "FOODON:03315426",
+    "label": "yeast extract"}, "concentration": {"value": "5.0", "unit": "G_PER_L"},
+    "supplier_catalog": {"supplier_name": "Multiple suppliers (Difco, Sigma, etc.)
+    LB Medium (Luria-Bertani, Miller formulation)", "catalog_number": "Multiple (L3522
+    Sigma, 244520 BD)", "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"},
+    "notes": "Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
+    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation)
+    commercial product"}, "new": null}, {"field": "ingredients[17]", "old": {"preferred_term":
+    "Sodium chloride", "term": {"id": "CHEBI:26710", "label": "sodium chloride"},
+    "concentration": {"value": "10.0", "unit": "G_PER_L"}, "supplier_catalog": {"supplier_name":
+    "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+    "catalog_number": "Multiple (L3522 Sigma, 244520 BD)", "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"},
+    "notes": "Maintains osmotic equilibrium (Miller formulation); Constituent of LB
+    Medium (Luria-Bertani, Miller formulation) commercial product", "synonyms": [{"synonym_text":
+    "NaCl", "synonym_type": "EXACT"}, {"synonym_text": "table salt", "synonym_type":
+    "EXACT"}]}, "new": null}, {"field": "ingredients[18]", "old": {"preferred_term":
+    "n-Valeric acid", "term": {"id": "CHEBI:17418", "label": "valeric acid"}, "concentration":
+    {"value": "131.46", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id":
+    "CHEBI:17418", "label": "valeric acid"}}, "new": null}, {"field": "ingredients[19]",
+    "old": {"preferred_term": "iso-Valeric acid", "term": {"id": "CHEBI:28484", "label":
+    "isovaleric acid"}, "concentration": {"value": "130.34", "unit": "G_PER_L"}, "mediaingredientmech_term":
+    {"id": "MediaIngredientMech:000378", "label": "iso-Valeric acid"}}, "new": null},
+    {"field": "notes", "old": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf\n\nCommercial
+    Product: LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers
+    (Difco, Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.",
+    "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"},
+    {"field": "preparation_steps[2].action", "old": "HEAT", "new": "STORE"}, {"field":
+    "solutions", "old": null, "new": [{"preferred_term": "Fatty acid mixture", "culturemech_term":
+    {"id": "CultureMech:015061", "label": "Fatty acid mixture"}, "concentration":
+    {"value": "0.0014", "unit": "L"}, "composition": [{"preferred_term": "n-Butyric
+    acid", "term": {"id": "CHEBI:30772", "label": "butyric acid"}, "concentration":
+    {"value": "0.0058", "unit": "L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:30772",
+    "label": "butyric acid"}, "notes": "The source gives a stock input in ml, not
+    g/L. Convert the exact batch input to liters and move it into solution6552 composition.
+    Do not invent a final fraction, liquid density or receiving-medium rate.", "evidence":
+    [{"reference": "https://mediadive.dsmz.de/rest/medium/323", "supports": "SUPPORT",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"n-Butyric acid\",\n                        \"compound_id\": 376,\n                        \"amount\":
+    5.8,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "explanation": "solutions[0].composition[0].concentration:
+    The source gives a stock input in ml, not g/L. Convert the exact batch input to
+    liters and move it into solution6552 composition. Do not invent a final fraction,
+    liquid density or receiving-medium rate. Locator=[''data'', ''solutions'', 1,
+    ''recipe'', 0]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.\n\nAdditional
+    exact excerpt at [''data'', ''solutions'', 0, ''recipe'', 8]:\n{\n                        \"recipe_order\":
+    14,\n                        \"solution\": \"Fatty acid mixture\",\n                        \"solution_id\":
+    6552,\n                        \"amount\": 1.4,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }\nsolutions[0].composition[0].concentration:
+    The source gives a stock input in ml, not g/L. Convert the exact batch input to
+    liters and move it into solution6552 composition. Do not invent a final fraction,
+    liquid density or receiving-medium rate. Locator=[''data'', ''solutions'', 0,
+    ''recipe'', 8]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2."}]},
+    {"preferred_term": "iso-Butyric acid", "term": {"id": "CHEBI:16135", "label":
+    "isobutyric acid"}, "concentration": {"value": "275.5", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:16135", "label": "isobutyric acid"}, "notes": "This provider-reported
+    g/L value belongs inside solution6552, not the receiving medium. Move the exact
+    ingredient and its existing chemical links into the stock composition, retaining
+    the source-qualified rate. No density is inferred.", "evidence": [{"reference":
+    "https://mediadive.dsmz.de/rest/medium/323", "supports": "SUPPORT", "snippet":
+    "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"iso-Butyric acid\",\n                        \"compound_id\": 377,\n                        \"amount\":
+    5.8,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    275.5,\n                        \"mmol_l\": 3126.77,\n                        \"optional\":
+    0\n                    }", "explanation": "solutions[0].composition[1].concentration:
+    This provider-reported g/L value belongs inside solution6552, not the receiving
+    medium. Move the exact ingredient and its existing chemical links into the stock
+    composition, retaining the source-qualified rate. No density is inferred. Locator=[''data'',
+    ''solutions'', 1, ''recipe'', 1]; accessed=2026-10-07T10:45:25.553943+00:00; source
+    SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.\n\nAdditional
+    exact excerpt at [''data'', ''solutions'', 0, ''recipe'', 8]:\n{\n                        \"recipe_order\":
+    14,\n                        \"solution\": \"Fatty acid mixture\",\n                        \"solution_id\":
+    6552,\n                        \"amount\": 1.4,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }\nsolutions[0].composition[1].concentration:
+    This provider-reported g/L value belongs inside solution6552, not the receiving
+    medium. Move the exact ingredient and its existing chemical links into the stock
+    composition, retaining the source-qualified rate. No density is inferred. Locator=[''data'',
+    ''solutions'', 0, ''recipe'', 8]; accessed=2026-10-07T10:45:25.553943+00:00; source
+    SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2."}]},
+    {"preferred_term": "DL-2-Methylbutyric acid", "concentration": {"value": "0.0028",
+    "unit": "L"}, "evidence": [{"reference": "https://mediadive.dsmz.de/rest/medium/323",
+    "supports": "SUPPORT", "snippet": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"DL-2-Methylbutyric acid\",\n                        \"compound_id\":
+    223,\n                        \"amount\": 2.8,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "explanation":
+    "solutions[0].composition[2].concentration: 2.8 ml / 1000 = 0.0028 L stock batch
+    input; no unverified ontology ID. Locator=[''data'', ''solutions'', 1, ''recipe'',
+    2]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2."}]},
+    {"preferred_term": "n-Valeric acid", "term": {"id": "CHEBI:17418", "label": "valeric
+    acid"}, "concentration": {"value": "131.46", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:17418", "label": "valeric acid"}, "notes": "This provider-reported
+    g/L value belongs inside solution6552, not the receiving medium. Move the exact
+    ingredient and its existing chemical links into the stock composition, retaining
+    the source-qualified rate. No density is inferred.", "evidence": [{"reference":
+    "https://mediadive.dsmz.de/rest/medium/323", "supports": "SUPPORT", "snippet":
+    "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"n-Valeric acid\",\n                        \"compound_id\": 288,\n                        \"amount\":
+    2.8,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    131.46,\n                        \"mmol_l\": 1287.18,\n                        \"optional\":
+    0\n                    }", "explanation": "solutions[0].composition[3].concentration:
+    This provider-reported g/L value belongs inside solution6552, not the receiving
+    medium. Move the exact ingredient and its existing chemical links into the stock
+    composition, retaining the source-qualified rate. No density is inferred. Locator=[''data'',
+    ''solutions'', 1, ''recipe'', 3]; accessed=2026-10-07T10:45:25.553943+00:00; source
+    SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.\n\nAdditional
+    exact excerpt at [''data'', ''solutions'', 0, ''recipe'', 8]:\n{\n                        \"recipe_order\":
+    14,\n                        \"solution\": \"Fatty acid mixture\",\n                        \"solution_id\":
+    6552,\n                        \"amount\": 1.4,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }\nsolutions[0].composition[3].concentration:
+    This provider-reported g/L value belongs inside solution6552, not the receiving
+    medium. Move the exact ingredient and its existing chemical links into the stock
+    composition, retaining the source-qualified rate. No density is inferred. Locator=[''data'',
+    ''solutions'', 0, ''recipe'', 8]; accessed=2026-10-07T10:45:25.553943+00:00; source
+    SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2."}]},
+    {"preferred_term": "iso-Valeric acid", "term": {"id": "CHEBI:28484", "label":
+    "isovaleric acid"}, "concentration": {"value": "130.34", "unit": "G_PER_L"}, "mediaingredientmech_term":
+    {"id": "MediaIngredientMech:000378", "label": "iso-Valeric acid"}, "notes": "This
+    provider-reported g/L value belongs inside solution6552, not the receiving medium.
+    Move the exact ingredient and its existing chemical links into the stock composition,
+    retaining the source-qualified rate. No density is inferred.", "evidence": [{"reference":
+    "https://mediadive.dsmz.de/rest/medium/323", "supports": "SUPPORT", "snippet":
+    "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"iso-Valeric acid\",\n                        \"compound_id\": 378,\n                        \"amount\":
+    2.8,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    130.34,\n                        \"mmol_l\": 1276.22,\n                        \"optional\":
+    0\n                    }", "explanation": "solutions[0].composition[4].concentration:
+    This provider-reported g/L value belongs inside solution6552, not the receiving
+    medium. Move the exact ingredient and its existing chemical links into the stock
+    composition, retaining the source-qualified rate. No density is inferred. Locator=[''data'',
+    ''solutions'', 1, ''recipe'', 4]; accessed=2026-10-07T10:45:25.553943+00:00; source
+    SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.\n\nAdditional
+    exact excerpt at [''data'', ''solutions'', 0, ''recipe'', 8]:\n{\n                        \"recipe_order\":
+    14,\n                        \"solution\": \"Fatty acid mixture\",\n                        \"solution_id\":
+    6552,\n                        \"amount\": 1.4,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }\nsolutions[0].composition[4].concentration:
+    This provider-reported g/L value belongs inside solution6552, not the receiving
+    medium. Move the exact ingredient and its existing chemical links into the stock
+    composition, retaining the source-qualified rate. No density is inferred. Locator=[''data'',
+    ''solutions'', 0, ''recipe'', 8]; accessed=2026-10-07T10:45:25.553943+00:00; source
+    SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2."}]}],
+    "preparation_notes": "Store fatty acid mixture at -20 degrees C."}]}, {"field":
+    "variant_children", "old": null, "new": [{"id": "CultureMech:005014", "name":
+    "treponema_saccharophilum_medium", "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+    "relationship": "UNCERTAIN", "notes": "Candidate cross-source relationship only:
+    KOMODO323 links to DSMZ323 instructions, but its own compound table has NaHCO3
+    rather than Na2CO3, different rates and unquantified fatty-acid inputs. Neither
+    exact duplication nor a historical direction of derivation is established. DSMZ
+    is the catalog reference, not authority to overwrite the distinct KOMODO formulation;
+    do not merge these records as identical.", "evidence": [{"reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323",
+    "supports": "SUPPORT", "snippet": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+    "explanation": "Candidate cross-source relationship only: KOMODO323 links to DSMZ323
+    instructions, but its own compound table has NaHCO3 rather than Na2CO3, different
+    rates and unquantified fatty-acid inputs. Neither exact duplication nor a historical
+    direction of derivation is established. DSMZ is the catalog reference, not authority
+    to overwrite the distinct KOMODO formulation; do not merge these records as identical.
+    Locator=medium features, Instructions; accessed=2026-10-09T11:32:22.156087+00:00;
+    source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+    Supports the candidate link, not equivalence."}]}]}], "evidence_and_bibliography_changes":
+    ["evidence", "ingredients[0].evidence", "ingredients[1].evidence", "ingredients[2].evidence",
+    "ingredients[3].evidence", "ingredients[4].evidence", "ingredients[5].evidence",
+    "ingredients[6].evidence", "ingredients[7].evidence", "ingredients[8].evidence",
+    "ingredients[9].evidence", "ingredients[10].evidence", "ingredients[11].evidence",
+    "ingredients[12].evidence", "ingredients[13].evidence", "references"], "full_semantic_delta_sha256":
+    "38d3bb9f9822de31cb29ada7a9aa774b4a603d6ee59e25261f393e9a74d50901", "source_capture_sha256":
+    "8c802303cf38982bebc07777a71a7d2dab5d4c01d44c0cc1d1c8136d866a39a4", "old_evidence_preserved":
+    true}'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/323
+  title: TREPONEMA SACCHAROPHILUM MEDIUM
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-07;
+    capture_sha256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+    Individual authors and publication year unknown; copyright/access years are not
+    publication years.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf
+  title: '323: TREPONEMA SACCHAROPHILUM MEDIUM'
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    capture_sha256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.
+    Individual authors and publication year unknown; copyright/access years are not
+    publication years.
+- reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+  title: KOMODO - the Known Media Database
+  notes: source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    capture_sha256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+    Individual authors and publication year unknown; copyright/access years are not
+    publication years.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/323
+  supports: SUPPORT
+  snippet: |-
+    [
+                {
+                    "id": 599,
+                    "name": "Main sol. 323",
+                    "volume": 1002,
+                    "recipe": [
+                        {
+                            "recipe_order": 1,
+                            "compound": "CaCl2 x 2 H2O",
+                            "compound_id": 7,
+                            "amount": 0.12,
+                            "unit": "g",
+                            "g_l": 0.11976,
+                            "mmol_l": 0.814614,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 2,
+                            "compound": "MgSO4 x 7 H2O",
+                            "compound_id": 8,
+                            "amount": 0.19,
+                            "unit": "g",
+                            "g_l": 0.189621,
+                            "mmol_l": 0.769327,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 3,
+                            "compound": "KH2PO4",
+                            "compound_id": 11,
+                            "amount": 0.45,
+                            "unit": "g",
+                            "g_l": 0.449102,
+                            "mmol_l": 3.30016,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 4,
+                            "compound": "K2HPO4",
+                            "compound_id": 10,
+                            "amount": 0.45,
+                            "unit": "g",
+                            "g_l": 0.449102,
+                            "mmol_l": 2.57844,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 5,
+                            "compound": "NaCl",
+                            "compound_id": 43,
+                            "amount": 0.9,
+                            "unit": "g",
+                            "g_l": 0.898204,
+                            "mmol_l": 15.3697,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 6,
+                            "compound": "(NH4)2SO4",
+                            "compound_id": 27,
+                            "amount": 0.9,
+                            "unit": "g",
+                            "g_l": 0.898204,
+                            "mmol_l": 6.79736,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 7,
+                            "compound": "Yeast extract",
+                            "compound_id": 16,
+                            "attribute": "OXOID",
+                            "amount": 2,
+                            "unit": "g",
+                            "g_l": 1.99601,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 8,
+                            "compound": "Trypticase peptone",
+                            "compound_id": 124,
+                            "attribute": "BD BBL",
+                            "amount": 2,
+                            "unit": "g",
+                            "g_l": 1.99601,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 14,
+                            "solution": "Fatty acid mixture",
+                            "solution_id": 6552,
+                            "amount": 1.4,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 15,
+                            "compound": "Sodium resazurin",
+                            "compound_id": 1852,
+                            "attribute": "0.1% w/v",
+                            "amount": 0.5,
+                            "unit": "ml",
+                            "g_l": 0.000499002,
+                            "mmol_l": 0.00198671,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 16,
+                            "compound": "L-Cysteine HCl x H2O",
+                            "compound_id": 770,
+                            "amount": 1,
+                            "unit": "g",
+                            "g_l": 0.998004,
+                            "mmol_l": 5.68223,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 17,
+                            "compound": "Na2CO3",
+                            "compound_id": 32,
+                            "amount": 2.5,
+                            "unit": "g",
+                            "g_l": 2.49501,
+                            "mmol_l": 23.5405,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 18,
+                            "compound": "D-Glucose",
+                            "compound_id": 211,
+                            "amount": 2,
+                            "unit": "g",
+                            "g_l": 1.99601,
+                            "mmol_l": 11.0791,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 19,
+                            "compound": "Agar",
+                            "compound_id": 3,
+                            "condition": "for solid medium",
+                            "attribute": "BD Bacto",
+                            "amount": 12,
+                            "unit": "g",
+                            "g_l": 11.976,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 20,
+                            "compound": "Distilled water",
+                            "compound_id": 4,
+                            "amount": 1000,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "step": "Dissolve ingredients (except cysteine, carbonate and glucose), adjust pH to 7.0 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the cysteine and carbonate, then equilibrate the medium with the CO2 gas to pH 7.0. Distribute medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Thereafter, add glucose from an anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust pH of complete medium to 7.0, if necessary."
+                        },
+                        {
+                            "step": "For solid medium add 12.00 g/l agar (BD Bacto)."
+                        }
+                    ],
+                    "equipment": {
+                        "8": "Autoclave",
+                        "830": "Hungate tubes",
+                        "1886": "Filter",
+                        "4270": "Gassing station"
+                    }
+                },
+                {
+                    "id": 6552,
+                    "name": "Fatty acid mixture",
+                    "volume": 20,
+                    "recipe": [
+                        {
+                            "recipe_order": 2,
+                            "compound": "n-Butyric acid",
+                            "compound_id": 376,
+                            "amount": 5.8,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 3,
+                            "compound": "iso-Butyric acid",
+                            "compound_id": 377,
+                            "amount": 5.8,
+                            "unit": "ml",
+                            "g_l": 275.5,
+                            "mmol_l": 3126.77,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 4,
+                            "compound": "DL-2-Methylbutyric acid",
+                            "compound_id": 223,
+                            "amount": 2.8,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 5,
+                            "compound": "n-Valeric acid",
+                            "compound_id": 288,
+                            "amount": 2.8,
+                            "unit": "ml",
+                            "g_l": 131.46,
+                            "mmol_l": 1287.18,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 6,
+                            "compound": "iso-Valeric acid",
+                            "compound_id": 378,
+                            "amount": 2.8,
+                            "unit": "ml",
+                            "g_l": 130.34,
+                            "mmol_l": 1276.22,
+                            "optional": 0
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "step": "Store fatty acid mixture at -20\u00b0C."
+                        }
+                    ]
+                }
+            ]
+  explanation: |-
+    ingredients[15]: The complete exact formulation does not contain this appended LB product. Remove this identified product node and its LB-only notes/catalog context. Preserve the distinct, source-backed yeast-extract, peptone and sodium-chloride entries. Preserve historical events and document the removal on root evidence. This path identifies the removed historical node, not a current ingredient. Locator=['data', 'solutions']; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+
+    Additional exact excerpt at ['data', 'solutions']:
+    [
+                {
+                    "id": 599,
+                    "name": "Main sol. 323",
+                    "volume": 1002,
+                    "recipe": [
+                        {
+                            "recipe_order": 1,
+                            "compound": "CaCl2 x 2 H2O",
+                            "compound_id": 7,
+                            "amount": 0.12,
+                            "unit": "g",
+                            "g_l": 0.11976,
+                            "mmol_l": 0.814614,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 2,
+                            "compound": "MgSO4 x 7 H2O",
+                            "compound_id": 8,
+                            "amount": 0.19,
+                            "unit": "g",
+                            "g_l": 0.189621,
+                            "mmol_l": 0.769327,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 3,
+                            "compound": "KH2PO4",
+                            "compound_id": 11,
+                            "amount": 0.45,
+                            "unit": "g",
+                            "g_l": 0.449102,
+                            "mmol_l": 3.30016,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 4,
+                            "compound": "K2HPO4",
+                            "compound_id": 10,
+                            "amount": 0.45,
+                            "unit": "g",
+                            "g_l": 0.449102,
+                            "mmol_l": 2.57844,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 5,
+                            "compound": "NaCl",
+                            "compound_id": 43,
+                            "amount": 0.9,
+                            "unit": "g",
+                            "g_l": 0.898204,
+                            "mmol_l": 15.3697,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 6,
+                            "compound": "(NH4)2SO4",
+                            "compound_id": 27,
+                            "amount": 0.9,
+                            "unit": "g",
+                            "g_l": 0.898204,
+                            "mmol_l": 6.79736,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 7,
+                            "compound": "Yeast extract",
+                            "compound_id": 16,
+                            "attribute": "OXOID",
+                            "amount": 2,
+                            "unit": "g",
+                            "g_l": 1.99601,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 8,
+                            "compound": "Trypticase peptone",
+                            "compound_id": 124,
+                            "attribute": "BD BBL",
+                            "amount": 2,
+                            "unit": "g",
+                            "g_l": 1.99601,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 14,
+                            "solution": "Fatty acid mixture",
+                            "solution_id": 6552,
+                            "amount": 1.4,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 15,
+                            "compound": "Sodium resazurin",
+                            "compound_id": 1852,
+                            "attribute": "0.1% w/v",
+                            "amount": 0.5,
+                            "unit": "ml",
+                            "g_l": 0.000499002,
+                            "mmol_l": 0.00198671,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 16,
+                            "compound": "L-Cysteine HCl x H2O",
+                            "compound_id": 770,
+                            "amount": 1,
+                            "unit": "g",
+                            "g_l": 0.998004,
+                            "mmol_l": 5.68223,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 17,
+                            "compound": "Na2CO3",
+                            "compound_id": 32,
+                            "amount": 2.5,
+                            "unit": "g",
+                            "g_l": 2.49501,
+                            "mmol_l": 23.5405,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 18,
+                            "compound": "D-Glucose",
+                            "compound_id": 211,
+                            "amount": 2,
+                            "unit": "g",
+                            "g_l": 1.99601,
+                            "mmol_l": 11.0791,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 19,
+                            "compound": "Agar",
+                            "compound_id": 3,
+                            "condition": "for solid medium",
+                            "attribute": "BD Bacto",
+                            "amount": 12,
+                            "unit": "g",
+                            "g_l": 11.976,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 20,
+                            "compound": "Distilled water",
+                            "compound_id": 4,
+                            "amount": 1000,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "step": "Dissolve ingredients (except cysteine, carbonate and glucose), adjust pH to 7.0 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the cysteine and carbonate, then equilibrate the medium with the CO2 gas to pH 7.0. Distribute medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Thereafter, add glucose from an anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust pH of complete medium to 7.0, if necessary."
+                        },
+                        {
+                            "step": "For solid medium add 12.00 g/l agar (BD Bacto)."
+                        }
+                    ],
+                    "equipment": {
+                        "8": "Autoclave",
+                        "830": "Hungate tubes",
+                        "1886": "Filter",
+                        "4270": "Gassing station"
+                    }
+                },
+                {
+                    "id": 6552,
+                    "name": "Fatty acid mixture",
+                    "volume": 20,
+                    "recipe": [
+                        {
+                            "recipe_order": 2,
+                            "compound": "n-Butyric acid",
+                            "compound_id": 376,
+                            "amount": 5.8,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 3,
+                            "compound": "iso-Butyric acid",
+                            "compound_id": 377,
+                            "amount": 5.8,
+                            "unit": "ml",
+                            "g_l": 275.5,
+                            "mmol_l": 3126.77,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 4,
+                            "compound": "DL-2-Methylbutyric acid",
+                            "compound_id": 223,
+                            "amount": 2.8,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 5,
+                            "compound": "n-Valeric acid",
+                            "compound_id": 288,
+                            "amount": 2.8,
+                            "unit": "ml",
+                            "g_l": 131.46,
+                            "mmol_l": 1287.18,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 6,
+                            "compound": "iso-Valeric acid",
+                            "compound_id": 378,
+                            "amount": 2.8,
+                            "unit": "ml",
+                            "g_l": 130.34,
+                            "mmol_l": 1276.22,
+                            "optional": 0
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "step": "Store fatty acid mixture at -20\u00b0C."
+                        }
+                    ]
+                }
+            ]
+    ingredients[16]: The complete exact formulation does not contain this appended LB product. Remove this identified product node and its LB-only notes/catalog context. Preserve the distinct, source-backed yeast-extract, peptone and sodium-chloride entries. Preserve historical events and document the removal on root evidence. This path identifies the removed historical node, not a current ingredient. Locator=['data', 'solutions']; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+
+    Additional exact excerpt at ['data', 'solutions']:
+    [
+                {
+                    "id": 599,
+                    "name": "Main sol. 323",
+                    "volume": 1002,
+                    "recipe": [
+                        {
+                            "recipe_order": 1,
+                            "compound": "CaCl2 x 2 H2O",
+                            "compound_id": 7,
+                            "amount": 0.12,
+                            "unit": "g",
+                            "g_l": 0.11976,
+                            "mmol_l": 0.814614,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 2,
+                            "compound": "MgSO4 x 7 H2O",
+                            "compound_id": 8,
+                            "amount": 0.19,
+                            "unit": "g",
+                            "g_l": 0.189621,
+                            "mmol_l": 0.769327,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 3,
+                            "compound": "KH2PO4",
+                            "compound_id": 11,
+                            "amount": 0.45,
+                            "unit": "g",
+                            "g_l": 0.449102,
+                            "mmol_l": 3.30016,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 4,
+                            "compound": "K2HPO4",
+                            "compound_id": 10,
+                            "amount": 0.45,
+                            "unit": "g",
+                            "g_l": 0.449102,
+                            "mmol_l": 2.57844,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 5,
+                            "compound": "NaCl",
+                            "compound_id": 43,
+                            "amount": 0.9,
+                            "unit": "g",
+                            "g_l": 0.898204,
+                            "mmol_l": 15.3697,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 6,
+                            "compound": "(NH4)2SO4",
+                            "compound_id": 27,
+                            "amount": 0.9,
+                            "unit": "g",
+                            "g_l": 0.898204,
+                            "mmol_l": 6.79736,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 7,
+                            "compound": "Yeast extract",
+                            "compound_id": 16,
+                            "attribute": "OXOID",
+                            "amount": 2,
+                            "unit": "g",
+                            "g_l": 1.99601,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 8,
+                            "compound": "Trypticase peptone",
+                            "compound_id": 124,
+                            "attribute": "BD BBL",
+                            "amount": 2,
+                            "unit": "g",
+                            "g_l": 1.99601,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 14,
+                            "solution": "Fatty acid mixture",
+                            "solution_id": 6552,
+                            "amount": 1.4,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 15,
+                            "compound": "Sodium resazurin",
+                            "compound_id": 1852,
+                            "attribute": "0.1% w/v",
+                            "amount": 0.5,
+                            "unit": "ml",
+                            "g_l": 0.000499002,
+                            "mmol_l": 0.00198671,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 16,
+                            "compound": "L-Cysteine HCl x H2O",
+                            "compound_id": 770,
+                            "amount": 1,
+                            "unit": "g",
+                            "g_l": 0.998004,
+                            "mmol_l": 5.68223,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 17,
+                            "compound": "Na2CO3",
+                            "compound_id": 32,
+                            "amount": 2.5,
+                            "unit": "g",
+                            "g_l": 2.49501,
+                            "mmol_l": 23.5405,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 18,
+                            "compound": "D-Glucose",
+                            "compound_id": 211,
+                            "amount": 2,
+                            "unit": "g",
+                            "g_l": 1.99601,
+                            "mmol_l": 11.0791,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 19,
+                            "compound": "Agar",
+                            "compound_id": 3,
+                            "condition": "for solid medium",
+                            "attribute": "BD Bacto",
+                            "amount": 12,
+                            "unit": "g",
+                            "g_l": 11.976,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 20,
+                            "compound": "Distilled water",
+                            "compound_id": 4,
+                            "amount": 1000,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "step": "Dissolve ingredients (except cysteine, carbonate and glucose), adjust pH to 7.0 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the cysteine and carbonate, then equilibrate the medium with the CO2 gas to pH 7.0. Distribute medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Thereafter, add glucose from an anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust pH of complete medium to 7.0, if necessary."
+                        },
+                        {
+                            "step": "For solid medium add 12.00 g/l agar (BD Bacto)."
+                        }
+                    ],
+                    "equipment": {
+                        "8": "Autoclave",
+                        "830": "Hungate tubes",
+                        "1886": "Filter",
+                        "4270": "Gassing station"
+                    }
+                },
+                {
+                    "id": 6552,
+                    "name": "Fatty acid mixture",
+                    "volume": 20,
+                    "recipe": [
+                        {
+                            "recipe_order": 2,
+                            "compound": "n-Butyric acid",
+                            "compound_id": 376,
+                            "amount": 5.8,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 3,
+                            "compound": "iso-Butyric acid",
+                            "compound_id": 377,
+                            "amount": 5.8,
+                            "unit": "ml",
+                            "g_l": 275.5,
+                            "mmol_l": 3126.77,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 4,
+                            "compound": "DL-2-Methylbutyric acid",
+                            "compound_id": 223,
+                            "amount": 2.8,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 5,
+                            "compound": "n-Valeric acid",
+                            "compound_id": 288,
+                            "amount": 2.8,
+                            "unit": "ml",
+                            "g_l": 131.46,
+                            "mmol_l": 1287.18,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 6,
+                            "compound": "iso-Valeric acid",
+                            "compound_id": 378,
+                            "amount": 2.8,
+                            "unit": "ml",
+                            "g_l": 130.34,
+                            "mmol_l": 1276.22,
+                            "optional": 0
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "step": "Store fatty acid mixture at -20\u00b0C."
+                        }
+                    ]
+                }
+            ]
+    ingredients[17]: The complete exact formulation does not contain this appended LB product. Remove this identified product node and its LB-only notes/catalog context. Preserve the distinct, source-backed yeast-extract, peptone and sodium-chloride entries. Preserve historical events and document the removal on root evidence. This path identifies the removed historical node, not a current ingredient. Locator=['data', 'solutions']; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+
+    Additional exact excerpt at ['data', 'solutions']:
+    [
+                {
+                    "id": 599,
+                    "name": "Main sol. 323",
+                    "volume": 1002,
+                    "recipe": [
+                        {
+                            "recipe_order": 1,
+                            "compound": "CaCl2 x 2 H2O",
+                            "compound_id": 7,
+                            "amount": 0.12,
+                            "unit": "g",
+                            "g_l": 0.11976,
+                            "mmol_l": 0.814614,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 2,
+                            "compound": "MgSO4 x 7 H2O",
+                            "compound_id": 8,
+                            "amount": 0.19,
+                            "unit": "g",
+                            "g_l": 0.189621,
+                            "mmol_l": 0.769327,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 3,
+                            "compound": "KH2PO4",
+                            "compound_id": 11,
+                            "amount": 0.45,
+                            "unit": "g",
+                            "g_l": 0.449102,
+                            "mmol_l": 3.30016,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 4,
+                            "compound": "K2HPO4",
+                            "compound_id": 10,
+                            "amount": 0.45,
+                            "unit": "g",
+                            "g_l": 0.449102,
+                            "mmol_l": 2.57844,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 5,
+                            "compound": "NaCl",
+                            "compound_id": 43,
+                            "amount": 0.9,
+                            "unit": "g",
+                            "g_l": 0.898204,
+                            "mmol_l": 15.3697,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 6,
+                            "compound": "(NH4)2SO4",
+                            "compound_id": 27,
+                            "amount": 0.9,
+                            "unit": "g",
+                            "g_l": 0.898204,
+                            "mmol_l": 6.79736,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 7,
+                            "compound": "Yeast extract",
+                            "compound_id": 16,
+                            "attribute": "OXOID",
+                            "amount": 2,
+                            "unit": "g",
+                            "g_l": 1.99601,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 8,
+                            "compound": "Trypticase peptone",
+                            "compound_id": 124,
+                            "attribute": "BD BBL",
+                            "amount": 2,
+                            "unit": "g",
+                            "g_l": 1.99601,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 14,
+                            "solution": "Fatty acid mixture",
+                            "solution_id": 6552,
+                            "amount": 1.4,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 15,
+                            "compound": "Sodium resazurin",
+                            "compound_id": 1852,
+                            "attribute": "0.1% w/v",
+                            "amount": 0.5,
+                            "unit": "ml",
+                            "g_l": 0.000499002,
+                            "mmol_l": 0.00198671,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 16,
+                            "compound": "L-Cysteine HCl x H2O",
+                            "compound_id": 770,
+                            "amount": 1,
+                            "unit": "g",
+                            "g_l": 0.998004,
+                            "mmol_l": 5.68223,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 17,
+                            "compound": "Na2CO3",
+                            "compound_id": 32,
+                            "amount": 2.5,
+                            "unit": "g",
+                            "g_l": 2.49501,
+                            "mmol_l": 23.5405,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 18,
+                            "compound": "D-Glucose",
+                            "compound_id": 211,
+                            "amount": 2,
+                            "unit": "g",
+                            "g_l": 1.99601,
+                            "mmol_l": 11.0791,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 19,
+                            "compound": "Agar",
+                            "compound_id": 3,
+                            "condition": "for solid medium",
+                            "attribute": "BD Bacto",
+                            "amount": 12,
+                            "unit": "g",
+                            "g_l": 11.976,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 20,
+                            "compound": "Distilled water",
+                            "compound_id": 4,
+                            "amount": 1000,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "step": "Dissolve ingredients (except cysteine, carbonate and glucose), adjust pH to 7.0 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the cysteine and carbonate, then equilibrate the medium with the CO2 gas to pH 7.0. Distribute medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Thereafter, add glucose from an anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust pH of complete medium to 7.0, if necessary."
+                        },
+                        {
+                            "step": "For solid medium add 12.00 g/l agar (BD Bacto)."
+                        }
+                    ],
+                    "equipment": {
+                        "8": "Autoclave",
+                        "830": "Hungate tubes",
+                        "1886": "Filter",
+                        "4270": "Gassing station"
+                    }
+                },
+                {
+                    "id": 6552,
+                    "name": "Fatty acid mixture",
+                    "volume": 20,
+                    "recipe": [
+                        {
+                            "recipe_order": 2,
+                            "compound": "n-Butyric acid",
+                            "compound_id": 376,
+                            "amount": 5.8,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 3,
+                            "compound": "iso-Butyric acid",
+                            "compound_id": 377,
+                            "amount": 5.8,
+                            "unit": "ml",
+                            "g_l": 275.5,
+                            "mmol_l": 3126.77,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 4,
+                            "compound": "DL-2-Methylbutyric acid",
+                            "compound_id": 223,
+                            "amount": 2.8,
+                            "unit": "ml",
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 5,
+                            "compound": "n-Valeric acid",
+                            "compound_id": 288,
+                            "amount": 2.8,
+                            "unit": "ml",
+                            "g_l": 131.46,
+                            "mmol_l": 1287.18,
+                            "optional": 0
+                        },
+                        {
+                            "recipe_order": 6,
+                            "compound": "iso-Valeric acid",
+                            "compound_id": 378,
+                            "amount": 2.8,
+                            "unit": "ml",
+                            "g_l": 130.34,
+                            "mmol_l": 1276.22,
+                            "optional": 0
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "step": "Store fatty acid mixture at -20\u00b0C."
+                        }
+                    ]
+                }
+            ]
+    notes: Remove unrelated appended LB product notes and the three LB-only nodes; preserve the genuine source yeast extract, peptone and NaCl entries. Old values and provenance remain in append-only history and the pinned review. Locator=['data', 'solutions']; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+
+    Additional exact excerpt at ['data', 'solutions', 0, 'recipe', 8]:
+    {
+                            "recipe_order": 14,
+                            "solution": "Fatty acid mixture",
+                            "solution_id": 6552,
+                            "amount": 1.4,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[0].concentration: 1.4 ml / 1000 = 0.0014 L exact batch dose of solution6552; root formulation evidence. Locator=['data', 'solutions', 0, 'recipe', 8]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf
+  supports: SUPPORT
+  snippet: Store fatty acid mixture at -20°C.
+  explanation: 'preparation_steps[2].action; solutions[0].preparation_notes: Storage
+    at -20 degrees C is not heating; preserve the source-described preparation stage.
+    Locator=page 1, fatty acid stock storage; accessed=2026-10-09T11:32:24.475381+00:00;
+    source SHA256=cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca.'
+solutions:
+- preferred_term: Fatty acid mixture
+  culturemech_term:
+    id: CultureMech:015061
+    label: Fatty acid mixture
+  concentration:
+    value: '0.0014'
+    unit: L
+  composition:
+  - preferred_term: n-Butyric acid
+    term:
+      id: CHEBI:30772
+      label: butyric acid
+    concentration:
+      value: '0.0058'
+      unit: L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30772
+      label: butyric acid
+    notes: The source gives a stock input in ml, not g/L. Convert the exact batch
+      input to liters and move it into solution6552 composition. Do not invent a final
+      fraction, liquid density or receiving-medium rate.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/323
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "n-Butyric acid",
+                                "compound_id": 376,
+                                "amount": 5.8,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[0].concentration: The source gives a stock input in ml, not g/L. Convert the exact batch input to liters and move it into solution6552 composition. Do not invent a final fraction, liquid density or receiving-medium rate. Locator=['data', 'solutions', 1, 'recipe', 0]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+
+        Additional exact excerpt at ['data', 'solutions', 0, 'recipe', 8]:
+        {
+                                "recipe_order": 14,
+                                "solution": "Fatty acid mixture",
+                                "solution_id": 6552,
+                                "amount": 1.4,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+        solutions[0].composition[0].concentration: The source gives a stock input in ml, not g/L. Convert the exact batch input to liters and move it into solution6552 composition. Do not invent a final fraction, liquid density or receiving-medium rate. Locator=['data', 'solutions', 0, 'recipe', 8]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+  - preferred_term: iso-Butyric acid
+    term:
+      id: CHEBI:16135
+      label: isobutyric acid
+    concentration:
+      value: '275.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16135
+      label: isobutyric acid
+    notes: This provider-reported g/L value belongs inside solution6552, not the receiving
+      medium. Move the exact ingredient and its existing chemical links into the stock
+      composition, retaining the source-qualified rate. No density is inferred.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/323
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "iso-Butyric acid",
+                                "compound_id": 377,
+                                "amount": 5.8,
+                                "unit": "ml",
+                                "g_l": 275.5,
+                                "mmol_l": 3126.77,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[1].concentration: This provider-reported g/L value belongs inside solution6552, not the receiving medium. Move the exact ingredient and its existing chemical links into the stock composition, retaining the source-qualified rate. No density is inferred. Locator=['data', 'solutions', 1, 'recipe', 1]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+
+        Additional exact excerpt at ['data', 'solutions', 0, 'recipe', 8]:
+        {
+                                "recipe_order": 14,
+                                "solution": "Fatty acid mixture",
+                                "solution_id": 6552,
+                                "amount": 1.4,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+        solutions[0].composition[1].concentration: This provider-reported g/L value belongs inside solution6552, not the receiving medium. Move the exact ingredient and its existing chemical links into the stock composition, retaining the source-qualified rate. No density is inferred. Locator=['data', 'solutions', 0, 'recipe', 8]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+  - preferred_term: DL-2-Methylbutyric acid
+    concentration:
+      value: '0.0028'
+      unit: L
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/323
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 4,
+                                "compound": "DL-2-Methylbutyric acid",
+                                "compound_id": 223,
+                                "amount": 2.8,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[2].concentration: 2.8 ml / 1000 = 0.0028
+        L stock batch input; no unverified ontology ID. Locator=[''data'', ''solutions'',
+        1, ''recipe'', 2]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.'
+  - preferred_term: n-Valeric acid
+    term:
+      id: CHEBI:17418
+      label: valeric acid
+    concentration:
+      value: '131.46'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17418
+      label: valeric acid
+    notes: This provider-reported g/L value belongs inside solution6552, not the receiving
+      medium. Move the exact ingredient and its existing chemical links into the stock
+      composition, retaining the source-qualified rate. No density is inferred.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/323
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 5,
+                                "compound": "n-Valeric acid",
+                                "compound_id": 288,
+                                "amount": 2.8,
+                                "unit": "ml",
+                                "g_l": 131.46,
+                                "mmol_l": 1287.18,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[3].concentration: This provider-reported g/L value belongs inside solution6552, not the receiving medium. Move the exact ingredient and its existing chemical links into the stock composition, retaining the source-qualified rate. No density is inferred. Locator=['data', 'solutions', 1, 'recipe', 3]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+
+        Additional exact excerpt at ['data', 'solutions', 0, 'recipe', 8]:
+        {
+                                "recipe_order": 14,
+                                "solution": "Fatty acid mixture",
+                                "solution_id": 6552,
+                                "amount": 1.4,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+        solutions[0].composition[3].concentration: This provider-reported g/L value belongs inside solution6552, not the receiving medium. Move the exact ingredient and its existing chemical links into the stock composition, retaining the source-qualified rate. No density is inferred. Locator=['data', 'solutions', 0, 'recipe', 8]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+  - preferred_term: iso-Valeric acid
+    term:
+      id: CHEBI:28484
+      label: isovaleric acid
+    concentration:
+      value: '130.34'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000378
+      label: iso-Valeric acid
+    notes: This provider-reported g/L value belongs inside solution6552, not the receiving
+      medium. Move the exact ingredient and its existing chemical links into the stock
+      composition, retaining the source-qualified rate. No density is inferred.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/323
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 6,
+                                "compound": "iso-Valeric acid",
+                                "compound_id": 378,
+                                "amount": 2.8,
+                                "unit": "ml",
+                                "g_l": 130.34,
+                                "mmol_l": 1276.22,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[4].concentration: This provider-reported g/L value belongs inside solution6552, not the receiving medium. Move the exact ingredient and its existing chemical links into the stock composition, retaining the source-qualified rate. No density is inferred. Locator=['data', 'solutions', 1, 'recipe', 4]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+
+        Additional exact excerpt at ['data', 'solutions', 0, 'recipe', 8]:
+        {
+                                "recipe_order": 14,
+                                "solution": "Fatty acid mixture",
+                                "solution_id": 6552,
+                                "amount": 1.4,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+        solutions[0].composition[4].concentration: This provider-reported g/L value belongs inside solution6552, not the receiving medium. Move the exact ingredient and its existing chemical links into the stock composition, retaining the source-qualified rate. No density is inferred. Locator=['data', 'solutions', 0, 'recipe', 8]; accessed=2026-10-07T10:45:25.553943+00:00; source SHA256=c5a7b94d28519d3c4b61ae2a8cc918ef3dbe035cac683f5a006cf403b8601cd2.
+  preparation_notes: Store fatty acid mixture at -20 degrees C.
+variant_children:
+- id: CultureMech:005014
+  name: treponema_saccharophilum_medium
+  path: data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml
+  relationship: UNCERTAIN
+  notes: 'Candidate cross-source relationship only: KOMODO323 links to DSMZ323 instructions,
+    but its own compound table has NaHCO3 rather than Na2CO3, different rates and
+    unquantified fatty-acid inputs. Neither exact duplication nor a historical direction
+    of derivation is established. DSMZ is the catalog reference, not authority to
+    overwrite the distinct KOMODO formulation; do not merge these records as identical.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=323
+    supports: SUPPORT
+    snippet: 'Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf'
+    explanation: 'Candidate cross-source relationship only: KOMODO323 links to DSMZ323
+      instructions, but its own compound table has NaHCO3 rather than Na2CO3, different
+      rates and unquantified fatty-acid inputs. Neither exact duplication nor a historical
+      direction of derivation is established. DSMZ is the catalog reference, not authority
+      to overwrite the distinct KOMODO formulation; do not merge these records as
+      identical. Locator=medium features, Instructions; accessed=2026-10-09T11:32:22.156087+00:00;
+      source SHA256=cd2dec12b7819b7b91119a2e18559ede4a741b7e78f255766f58e040a4ec82c8.
+      Supports the candidate link, not equivalence.'

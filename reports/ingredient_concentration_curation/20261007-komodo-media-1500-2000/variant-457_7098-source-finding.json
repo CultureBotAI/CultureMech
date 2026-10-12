@@ -1,0 +1,545 @@
+{
+  "path": "data/normalized_yaml/bacterial/medium_457_modified_for_dsm_7098.yaml",
+  "id": "CultureMech:005418",
+  "before_sha256": "8d4060744be0d5d25e052154caeb346fe83efe677a60a3c6e9492ea214cfbeb9",
+  "reference": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=457_7098",
+  "source_type": "dataset",
+  "discovery_mode": "catalog_page",
+  "captured_at": "2026-10-07T23:57:06.585043+00:00",
+  "http_status": 200,
+  "sha256": "8d5ce2a6e2f574ca4a7728fb224f98b58bd03b9a4af68ef43c5ac6e23551b2a1",
+  "source_html": "<html>\n\t<head>\n\t\t<title>KOMODO - the Known Media Database</title>\n\t\t<script language=\"javascript\" src=\"../komodo.js\"></script>\n\t</head>\n\t<body bgcolor=\"white\" onload=\"documetLoad();\" id=\"komodo\">\n\t<script>\n\t   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n\t   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n\t   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n\t   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\n\t   ga('create', 'UA-8577140-3', 'auto');\n\t   ga('send', 'pageview');\n\t</script>\n\t\t<form action=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed\" enctype=\"text/plain\" method=\"get\" ID=\"KomodoTomcatServerSideUtilitiesModelSeed\" >\n\t\t\t<table bgcolor=\"#3265ce\" width=\"100%\" height=6% border=\"3\" BORDERCOLOR=\"#3265ce\">\n\t\t\t<tr>\n\t\t\t\t<td width=4% rowspan=3 align=center >\n\t\t\t\t<A href=\"/komodo/default.htm\"><img src=\"/Dragon-Komodo.jpg\" alt=\"Komodo Logo\" width=\"100\" height=\"100\"  valign=top></A></td>\n\t\t\t\t<td width=30% valign=bottom align=left><font color=white face=\"arial\" size=\"6\">KOMODO -- the Known Media Database</font></td>\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td width=40% face=\"arial\" valign=top><font color=white face=\"arial\"  size=\"4\">A platform for recommending microbial media</font></td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td valign=bottom align=left>\n\t\t\t\t\t<A href=\"/komodo/default.htm\"><font color=\"white\" face=\"arial\" size=\"3\">Home</a>\n\t\t\t\t\t&nbsp;&nbsp;<a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?OrganismMedia\"><font color=\"white\" face=\"arial\" size=\"3\">Organisms Media</font></a>\n\t\t\t\t\t&nbsp;&nbsp;<a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"><font color=\"white\" face=\"arial\" size=\"3\">Media List</font></a>\n\t\t\t\t\t&nbsp;&nbsp;<a href=\"/komodo/growrec.htm\"><font color=\"white\" face=\"arial\" size=\"3\">GrowRec</font></a>\n\t\t\t\t\t&nbsp;&nbsp;<a href=\"/komodo/acknowledgement.htm\"><font color=\"white\" face=\"arial\" size=\"3\">Acknowledgement</font></a>\n\t\t\t\t\t&nbsp;&nbsp;<a href=\"/komodo/contact.htm\"><font color=\"white\" face=\"arial\" size=\"3\">Contact Us</font></a>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t</table>\n <p align='left' >\n\t\t\t<font size=\"6\"  color=\"#3265ce\"><b>Medium:&nbsp;MEDIUM 457 MODIFIED FOR DSM 7098</b></font><br><br>\n\t\t<font face=\"arial\">\n\t\t\t<br><br><font size=\"5\" >Medium features</font><br><br>\t\t\t<TABLE id=\"Table0\" cellSpacing=\"3\" cellPadding=\"3\"  border=\"0\" bgcolor=\"white\">\n\t\t\t\t<TR><TD valign=\"top\" align=\"left\"><b>ID:</b></TD><TD>457_7098</TD></TR>\n\t\t\t\t<TR><TD valign=\"top\" align=\"left\"><b>Name:</b></TD><TD>MEDIUM 457 MODIFIED FOR DSM 7098</TD></TR>\n\t\t\t\t<TR><TD valign=\"top\" align=\"left\"><b>PH Info:</b></TD><TD>null</TD></TR>\n\t\t\t\t<TR><TD valign=\"top\" align=\"left\"><b>Is Complex:</b></TD><TD>false</TD></TR>\n\t\t\t\t<TR><TD valign=\"top\" align=\"left\"><b>Is Aerobic:</b></TD><TD>false</TD></TR>\n\t\t\t\t<TR><TD valign=\"top\" align=\"left\"><b>Is SubMedium:</b></TD><TD>false</TD></TR>\n\t\t\t\t<TR><TD valign=\"top\" align=\"left\"><b>Remarks:</b></TD><TD></TD></TR>\n\t\t\t\t<TR><TD valign=\"top\" align=\"left\"><b>Instructions:</b></TD><TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium457.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium457.pdf</a></TD></TR>\n\t\t\t</TABLE>\n\t\t\t<br><br><font size=\"5\" >Metabolites list </font><br><br>\t\t\tCompounds in the medium listed by their compound names. Gram & Mol amounts are per Liter of medium. Trace metabolites & gases usually do not have amounts<br><br>\t\t\t<TABLE id=\"Table0\" cellSpacing=\"3\" cellPadding=\"3\"  border=\"0\" bgcolor=\"white\">\n\t\t\t\t<TR>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\"><b>Name</TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\"><b>Semi unique name</b></TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\"><b>Unique Name</b></TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\"><b>Gram Amount</b></TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\"><b>Mol Amount</b></TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>Na2HPO4</TD>\n\t\t\t\t\t<TD>sodium phosphate monobasique</TD>\n\t\t\t\t\t<TD>SEED-cpd00009#cpd00971##</TD>\n\t\t\t\t\t<TD>2.42</TD>\n\t\t\t\t\t<TD>0.02</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>H2O</TD>\n\t\t\t\t\t<TD>H2O</TD>\n\t\t\t\t\t<TD>SEED-cpd00001###</TD>\n\t\t\t\t\t<TD>null</TD>\n\t\t\t\t\t<TD>null</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>pentachlorophenol</TD>\n\t\t\t\t\t<TD>pentachlorophenol</TD>\n\t\t\t\t\t<TD>SEED-cpd01685###</TD>\n\t\t\t\t\t<TD>0.07</TD>\n\t\t\t\t\t<TD>0.00</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>ZnSO4 x 7 H2O</TD>\n\t\t\t\t\t<TD>ZnSO4</TD>\n\t\t\t\t\t<TD>SEED-cpd00034#cpd00048##</TD>\n\t\t\t\t\t<TD>9.90E-5</TD>\n\t\t\t\t\t<TD>3.44E-7</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>NaOH</TD>\n\t\t\t\t\t<TD>Sodium hydroxide</TD>\n\t\t\t\t\t<TD>SEED-cpd09244###</TD>\n\t\t\t\t\t<TD>null</TD>\n\t\t\t\t\t<TD>null</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>KH2PO4</TD>\n\t\t\t\t\t<TD>Potassium dihydrogen phosphate</TD>\n\t\t\t\t\t<TD>SEED-cpd00009#cpd00205##</TD>\n\t\t\t\t\t<TD>1.50</TD>\n\t\t\t\t\t<TD>0.01</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>CoCl2 x 6 H2O</TD>\n\t\t\t\t\t<TD>CoCl2</TD>\n\t\t\t\t\t<TD>SEED-cpd00099#cpd00149##</TD>\n\t\t\t\t\t<TD>1.98E-4</TD>\n\t\t\t\t\t<TD>8.32E-7</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>CuCl2 x 2 H2O</TD>\n\t\t\t\t\t<TD>CuCl2</TD>\n\t\t\t\t\t<TD>SEED-cpd00058#cpd00099##</TD>\n\t\t\t\t\t<TD>9.90E-6</TD>\n\t\t\t\t\t<TD>5.85E-8</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>Glucose</TD>\n\t\t\t\t\t<TD>D-Glucose</TD>\n\t\t\t\t\t<TD>SEED-cpd00027###</TD>\n\t\t\t\t\t<TD>0.30</TD>\n\t\t\t\t\t<TD>0.00</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>EDTA</TD>\n\t\t\t\t\t<TD>EDTA</TD>\n\t\t\t\t\t<TD>SEED-cpd00240###</TD>\n\t\t\t\t\t<TD>4.95E-3</TD>\n\t\t\t\t\t<TD>1.71E-5</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>FeSO4 x 7 H2O</TD>\n\t\t\t\t\t<TD>Iron sulfate</TD>\n\t\t\t\t\t<TD>SEED-cpd00048#cpd10515##</TD>\n\t\t\t\t\t<TD>1.98E-3</TD>\n\t\t\t\t\t<TD>7.10E-6</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>MgSO4 x 7 H2O</TD>\n\t\t\t\t\t<TD>Magnesium sulfate</TD>\n\t\t\t\t\t<TD>SEED-cpd00048#cpd00254##</TD>\n\t\t\t\t\t<TD>0.20</TD>\n\t\t\t\t\t<TD>0.00</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>glycerol</TD>\n\t\t\t\t\t<TD>Glycerol</TD>\n\t\t\t\t\t<TD>SEED-cpd00100###</TD>\n\t\t\t\t\t<TD>0.30</TD>\n\t\t\t\t\t<TD>0.00</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>CaCl2 x 2 H2O</TD>\n\t\t\t\t\t<TD>Calcium chloride </TD>\n\t\t\t\t\t<TD>SEED-cpd00063#cpd00099##</TD>\n\t\t\t\t\t<TD>0.05</TD>\n\t\t\t\t\t<TD>0.00</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>MnCl2 x 4 H2O</TD>\n\t\t\t\t\t<TD>MnCl2</TD>\n\t\t\t\t\t<TD>SEED-cpd00030#cpd00099##</TD>\n\t\t\t\t\t<TD>2.97E-5</TD>\n\t\t\t\t\t<TD>1.50E-7</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>NiCl2 x 6 H2O</TD>\n\t\t\t\t\t<TD>NiCl2</TD>\n\t\t\t\t\t<TD>SEED-cpd00099#cpd00244##</TD>\n\t\t\t\t\t<TD>1.98E-5</TD>\n\t\t\t\t\t<TD>8.32E-8</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>H3BO3</TD>\n\t\t\t\t\t<TD>Boric acid</TD>\n\t\t\t\t\t<TD>SEED-cpd09225###</TD>\n\t\t\t\t\t<TD>2.97E-4</TD>\n\t\t\t\t\t<TD>4.79E-6</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>Na2MoO4 x 2 H2O</TD>\n\t\t\t\t\t<TD>Na2MoO4</TD>\n\t\t\t\t\t<TD>SEED-cpd00971#cpd11145##</TD>\n\t\t\t\t\t<TD>2.97E-5</TD>\n\t\t\t\t\t<TD>1.23E-7</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>Na-succinate</TD>\n\t\t\t\t\t<TD>Na-succinate</TD>\n\t\t\t\t\t<TD>SEED-cpd00036#cpd00971##</TD>\n\t\t\t\t\t<TD>0.30</TD>\n\t\t\t\t\t<TD>0.00</TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>(NH4)2SO4</TD>\n\t\t\t\t\t<TD>Ammonium sulfate</TD>\n\t\t\t\t\t<TD>SEED-cpd00013#cpd00048##</TD>\n\t\t\t\t\t<TD>0.50</TD>\n\t\t\t\t\t<TD>0.00</TD>\n\t\t\t\t</TR>\n\t\t\t\t</TABLE>\n\t\t\t<br><br><font size=\"5\" >Seed Metabolites list </font><br><br>\t\t\tAll SEED compounds in the medium, listed with molar concentrations (mol/L).  Some SEED compounds appear in multiple\n\t\t\tcompound names in the 'metabolite list' -- here, they are combined for final molar concentrations.\n<br><br>\t\t\t<TABLE id=\"Table0\" cellSpacing=\"3\" cellPadding=\"3\"  border=\"0\" bgcolor=\"white\">\n\t\t\t\t<TR>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\"><b>Seed ID</TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\"><b>Name</b></TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\"><b>Mol Concentration</b></TD>\n\t\t\t\t</TR>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd09244</TD>\n\t\t\t\t\t<TD>Sodium hydroxide</TD>\n\t\t\t\t\t<TD>0.0</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd09225</TD>\n\t\t\t\t\t<TD>Boric acid</TD>\n\t\t\t\t\t<TD>4.790801660811242E-6</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd11145</TD>\n\t\t\t\t\t<TD>Sodium molybdate</TD>\n\t\t\t\t\t<TD>1.2258757860928477E-7</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00205</TD>\n\t\t\t\t\t<TD>K+</TD>\n\t\t\t\t\t<TD>0.011147781444811147</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00009</TD>\n\t\t\t\t\t<TD>Phosphate</TD>\n\t\t\t\t\t<TD>0.0281607503473352</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00048</TD>\n\t\t\t\t\t<TD>Sulfate</TD>\n\t\t\t\t\t<TD>0.004559352323061764</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00971</TD>\n\t\t\t\t\t<TD>Na+</TD>\n\t\t\t\t\t<TD>0.03618445636150029</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00058</TD>\n\t\t\t\t\t<TD>Cu2+</TD>\n\t\t\t\t\t<TD>5.8481926160720025E-8</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00036</TD>\n\t\t\t\t\t<TD>Succinate</TD>\n\t\t\t\t\t<TD>0.002158273381294964</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00149</TD>\n\t\t\t\t\t<TD>Co2+</TD>\n\t\t\t\t\t<TD>8.323657081975538E-7</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00027</TD>\n\t\t\t\t\t<TD>D-Glucose</TD>\n\t\t\t\t\t<TD>0.0016666666666666666</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00099</TD>\n\t\t\t\t\t<TD>Cl-</TD>\n\t\t\t\t\t<TD>6.790082110253752E-4</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd01685</TD>\n\t\t\t\t\t<TD>PCP</TD>\n\t\t\t\t\t<TD>2.509505703422053E-4</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00244</TD>\n\t\t\t\t\t<TD>Ni2+</TD>\n\t\t\t\t\t<TD>8.323657081975537E-8</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00013</TD>\n\t\t\t\t\t<TD>NH3</TD>\n\t\t\t\t\t<TD>0.007500750075007501</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00001</TD>\n\t\t\t\t\t<TD>H2O</TD>\n\t\t\t\t\t<TD>1.0</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00034</TD>\n\t\t\t\t\t<TD>Zn2+</TD>\n\t\t\t\t\t<TD>3.437247040100643E-7</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00254</TD>\n\t\t\t\t\t<TD>Mg</TD>\n\t\t\t\t\t<TD>8.015373486346813E-4</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00100</TD>\n\t\t\t\t\t<TD>Glycerol</TD>\n\t\t\t\t\t<TD>0.003260869565217391</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00240</TD>\n\t\t\t\t\t<TD>EDTA</TD>\n\t\t\t\t\t<TD>1.7129740655726472E-5</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00063</TD>\n\t\t\t\t\t<TD>Ca2+</TD>\n\t\t\t\t\t<TD>3.383797026319173E-4</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd00030</TD>\n\t\t\t\t\t<TD>Mn2+</TD>\n\t\t\t\t\t<TD>1.5031867559225557E-7</TD>\n\t\t\t\t<TR>\n\t\t\t\t\t<TD>cpd10515</TD>\n\t\t\t\t\t<TD>Fe2+</TD>\n\t\t\t\t\t<TD>7.096212219322631E-6</TD>\n\t\t\t\t</TABLE>\n\t\t\t</form>\n\t\t\t<table width=\"100%\" ID=\"Table2\"><tr><td bgcolor=black height=\"1\"></td></tr></table>\n\t\t\t<p align=\"right\">\n\t\t\t\tIf you encounter problems please send their details to raphy.zarecki@gmail.com\n\t\t\t</p>\n\t\t</body>\n</html>\n\n",
+  "current_record": {
+    "id": "CultureMech:005418",
+    "name": "medium_457_modified_for_dsm_7098",
+    "original_name": "MEDIUM 457 MODIFIED FOR DSM 7098",
+    "category": "bacterial",
+    "medium_type": "COMPLEX",
+    "composition_type": "UNDEFINED",
+    "physical_state": "SOLID_AGAR",
+    "media_term": {
+      "preferred_term": "KOMODO Medium 457_7098",
+      "term": {
+        "id": "komodo.medium:457_7098",
+        "label": "MEDIUM 457 MODIFIED FOR DSM 7098"
+      }
+    },
+    "notes": "Source: KOMODO ModelSEED | ID: 457_7098 | DSMZ Medium: 457 (mediadive.medium:457) | Aerobic: No\n\nCommercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)\nSupplier: Multiple suppliers (BD, Sigma, Neogen)\nCatalog: Multiple (22092 Sigma, 211825 BD)\nSource: https://en.wikipedia.org/wiki/Tryptic_soy_broth\nAccessed: 2026-03-28\n\nConstituent composition researched from product specification.",
+    "ingredients": [
+      {
+        "preferred_term": "Na2HPO4",
+        "term": {
+          "id": "CHEBI:34683",
+          "label": "disodium hydrogenphosphate"
+        },
+        "concentration": {
+          "value": "2.44",
+          "unit": "G_PER_L"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:34683",
+          "label": "disodium hydrogenphosphate"
+        }
+      },
+      {
+        "preferred_term": "KH2PO4",
+        "term": {
+          "id": "CHEBI:63036",
+          "label": "potassium dihydrogen phosphate"
+        },
+        "concentration": {
+          "value": "1.52",
+          "unit": "G_PER_L"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:63036",
+          "label": "potassium dihydrogen phosphate"
+        }
+      },
+      {
+        "preferred_term": "(NH4)2SO4",
+        "term": {
+          "id": "CHEBI:62946",
+          "label": "ammonium sulfate"
+        },
+        "concentration": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:62946",
+          "label": "ammonium sulfate"
+        }
+      },
+      {
+        "preferred_term": "MgSO4 x 7 H2O",
+        "term": {
+          "id": "CHEBI:31795",
+          "label": "magnesium sulfate heptahydrate"
+        },
+        "concentration": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:31795",
+          "label": "magnesium sulfate heptahydrate"
+        }
+      },
+      {
+        "preferred_term": "CaCl2 x 2 H2O",
+        "term": {
+          "id": "CHEBI:86158",
+          "label": "calcium chloride dihydrate"
+        },
+        "concentration": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:86158",
+          "label": "calcium chloride dihydrate"
+        }
+      },
+      {
+        "preferred_term": "Dibenzofuran",
+        "concentration": {
+          "value": "8.4",
+          "unit": "G_PER_L"
+        },
+        "term": {
+          "id": "CHEBI:28145",
+          "label": "dibenzofuran"
+        }
+      },
+      {
+        "preferred_term": "Dimethyl sulfoxide",
+        "term": {
+          "id": "CHEBI:28262",
+          "label": "dimethyl sulfoxide"
+        },
+        "concentration": {
+          "value": "1000",
+          "unit": "G_PER_L"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:28262",
+          "label": "dimethyl sulfoxide"
+        }
+      },
+      {
+        "preferred_term": "Peptone",
+        "concentration": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "preferred_term": "Meat extract",
+        "concentration": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "preferred_term": "Agar",
+        "term": {
+          "id": "CHEBI:2509",
+          "label": "agar"
+        },
+        "concentration": {
+          "value": "50.0",
+          "unit": "G_PER_L"
+        },
+        "notes": " (for solid medium) [Merged 3 duplicates: 15.0, 15.0, 20.0]",
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:2509",
+          "label": "agar"
+        }
+      },
+      {
+        "preferred_term": "Casein peptone",
+        "concentration": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "preferred_term": "Soy peptone",
+        "concentration": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "preferred_term": "NaCl",
+        "term": {
+          "id": "CHEBI:26710",
+          "label": "sodium chloride"
+        },
+        "concentration": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:26710",
+          "label": "sodium chloride"
+        }
+      },
+      {
+        "preferred_term": "Pancreatic digest of casein",
+        "term": {
+          "id": "MICRO:0000182",
+          "label": "tryptone"
+        },
+        "concentration": {
+          "value": "17.0",
+          "unit": "G_PER_L"
+        },
+        "supplier_catalog": {
+          "supplier_name": "Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)",
+          "catalog_number": "Multiple (22092 Sigma, 211825 BD)",
+          "product_url": "https://en.wikipedia.org/wiki/Tryptic_soy_broth"
+        },
+        "notes": "Pancreatic enzymatic digest of casein providing amino acids and peptides; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product",
+        "synonyms": [
+          {
+            "synonym_text": "tryptone",
+            "synonym_type": "EXACT"
+          },
+          {
+            "synonym_text": "casein peptone",
+            "synonym_type": "EXACT"
+          },
+          {
+            "synonym_text": "Bacto Tryptone",
+            "synonym_type": "EXACT"
+          }
+        ]
+      },
+      {
+        "preferred_term": "Peptic digest of soybean meal",
+        "term": {
+          "id": "FOODON:03315720",
+          "label": "vegetable protein, hydrolyzed"
+        },
+        "concentration": {
+          "value": "3.0",
+          "unit": "G_PER_L"
+        },
+        "supplier_catalog": {
+          "supplier_name": "Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)",
+          "catalog_number": "Multiple (22092 Sigma, 211825 BD)",
+          "product_url": "https://en.wikipedia.org/wiki/Tryptic_soy_broth"
+        },
+        "notes": "Peptic digest of soybean meal providing additional peptides and carbohydrates; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product",
+        "synonyms": [
+          {
+            "synonym_text": "soytone",
+            "synonym_type": "EXACT"
+          },
+          {
+            "synonym_text": "soy peptone",
+            "synonym_type": "EXACT"
+          },
+          {
+            "synonym_text": "Bacto Soytone",
+            "synonym_type": "EXACT"
+          }
+        ]
+      },
+      {
+        "preferred_term": "Glucose",
+        "term": {
+          "id": "CHEBI:17234",
+          "label": "glucose"
+        },
+        "concentration": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "supplier_catalog": {
+          "supplier_name": "Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)",
+          "catalog_number": "Multiple (22092 Sigma, 211825 BD)",
+          "product_url": "https://en.wikipedia.org/wiki/Tryptic_soy_broth"
+        },
+        "notes": "Carbon/energy source; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product",
+        "synonyms": [
+          {
+            "synonym_text": "dextrose",
+            "synonym_type": "EXACT"
+          },
+          {
+            "synonym_text": "D-glucose",
+            "synonym_type": "EXACT"
+          }
+        ]
+      },
+      {
+        "preferred_term": "Sodium chloride",
+        "term": {
+          "id": "CHEBI:26710",
+          "label": "sodium chloride"
+        },
+        "concentration": {
+          "value": "5.0",
+          "unit": "G_PER_L"
+        },
+        "supplier_catalog": {
+          "supplier_name": "Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)",
+          "catalog_number": "Multiple (22092 Sigma, 211825 BD)",
+          "product_url": "https://en.wikipedia.org/wiki/Tryptic_soy_broth"
+        },
+        "notes": "Maintains osmotic equilibrium; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product",
+        "synonyms": [
+          {
+            "synonym_text": "NaCl",
+            "synonym_type": "EXACT"
+          },
+          {
+            "synonym_text": "table salt",
+            "synonym_type": "EXACT"
+          }
+        ]
+      },
+      {
+        "preferred_term": "Dipotassium phosphate",
+        "term": {
+          "id": "CHEBI:131527",
+          "label": "dipotassium hydrogen phosphate"
+        },
+        "concentration": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "supplier_catalog": {
+          "supplier_name": "Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)",
+          "catalog_number": "Multiple (22092 Sigma, 211825 BD)",
+          "product_url": "https://en.wikipedia.org/wiki/Tryptic_soy_broth"
+        },
+        "notes": "pH buffer; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product",
+        "synonyms": [
+          {
+            "synonym_text": "K2HPO4",
+            "synonym_type": "EXACT"
+          },
+          {
+            "synonym_text": "potassium phosphate dibasic",
+            "synonym_type": "EXACT"
+          },
+          {
+            "synonym_text": "dipotassium hydrogen phosphate",
+            "synonym_type": "EXACT"
+          }
+        ]
+      },
+      {
+        "preferred_term": "Agar",
+        "term": {
+          "id": "CHEBI:2509",
+          "label": "agar"
+        },
+        "concentration": {
+          "value": "15.0",
+          "unit": "G_PER_L"
+        },
+        "supplier_catalog": {
+          "supplier_name": "Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)",
+          "catalog_number": "Multiple (22092 Sigma, 211825 BD)",
+          "product_url": "https://en.wikipedia.org/wiki/Tryptic_soy_broth"
+        },
+        "notes": "Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product"
+      },
+      {
+        "preferred_term": "EDTA",
+        "term": {
+          "id": "CHEBI:4735",
+          "label": "ethylenediaminetetraacetic acid"
+        },
+        "concentration": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:4735",
+          "label": "ethylenediaminetetraacetic acid"
+        }
+      },
+      {
+        "preferred_term": "FeSO4 x 7 H2O",
+        "term": {
+          "id": "CHEBI:75836",
+          "label": "iron(2+) sulfate heptahydrate"
+        },
+        "concentration": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:75836",
+          "label": "iron(2+) sulfate heptahydrate"
+        }
+      },
+      {
+        "preferred_term": "ZnSO4 x 7 H2O",
+        "term": {
+          "id": "CHEBI:32312",
+          "label": "zinc sulfate heptahydrate"
+        },
+        "concentration": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:32312",
+          "label": "zinc sulfate heptahydrate"
+        }
+      },
+      {
+        "preferred_term": "MnCl2 x 4 H2O",
+        "term": {
+          "id": "CHEBI:86368",
+          "label": "manganese(II) chloride tetrahydrate"
+        },
+        "concentration": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:86368",
+          "label": "manganese(II) chloride tetrahydrate"
+        }
+      },
+      {
+        "preferred_term": "H3BO3",
+        "term": {
+          "id": "CHEBI:33118",
+          "label": "boric acid"
+        },
+        "concentration": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:33118",
+          "label": "boric acid"
+        }
+      },
+      {
+        "preferred_term": "CoCl2 x 6 H2O",
+        "term": {
+          "id": "CHEBI:53503",
+          "label": "cobalt chloride hexahydrate"
+        },
+        "concentration": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:53503",
+          "label": "cobalt chloride hexahydrate"
+        }
+      },
+      {
+        "preferred_term": "CuCl2 x 2 H2O",
+        "term": {
+          "id": "CHEBI:86318",
+          "label": "copper(II) chloride dihydrate"
+        },
+        "concentration": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:86318",
+          "label": "copper(II) chloride dihydrate"
+        }
+      },
+      {
+        "preferred_term": "NiCl2 x 6 H2O",
+        "term": {
+          "id": "CHEBI:34887",
+          "label": "nickel dichloride"
+        },
+        "concentration": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:34887",
+          "label": "nickel dichloride"
+        }
+      },
+      {
+        "preferred_term": "Na2MoO4 x 2 H2O",
+        "term": {
+          "id": "CHEBI:75213",
+          "label": "sodium molybdate dihydrate"
+        },
+        "concentration": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:75213",
+          "label": "sodium molybdate dihydrate"
+        }
+      }
+    ],
+    "applications": [
+      "Microbial cultivation"
+    ],
+    "curation_history": [
+      {
+        "timestamp": "2026-01-27T01:15:02.fZ",
+        "curator": "komodo-web-import",
+        "action": "Imported from KOMODO web table",
+        "notes": "Source: KOMODO, ID: 457_7098"
+      },
+      {
+        "timestamp": "2026-02-03T11:19:15.801439",
+        "curator": "dsmz-resolver-v1.0",
+        "action": "Enriched with DSMZ composition",
+        "notes": "Copied ingredients from DSMZ Medium 457"
+      },
+      {
+        "timestamp": "2026-03-13T03:09:33.992505Z",
+        "curator": "data-quality-cleanup-v1.0",
+        "action": "Data quality fixes",
+        "notes": "Merged 2 duplicate ingredient(s)"
+      },
+      {
+        "timestamp": "2026-03-13T06:19:32.687336Z",
+        "curator": "culturemech-id-assigner-v1.0",
+        "action": "Assigned CultureMech ID",
+        "notes": "Assigned stable identifier: CultureMech:005418"
+      },
+      {
+        "timestamp": "2026-03-17T06:30:44.000000Z",
+        "curator": "mediaingredientmech-enrichment-v1.0",
+        "action": "Added MediaIngredientMech links",
+        "notes": "Linked ingredients to MediaIngredientMech identifiers"
+      },
+      {
+        "timestamp": "2026-03-17T19:45:48.716102+00:00",
+        "curator": "normalize_media_names_to_snake_case.py",
+        "action": "NAME_NORMALIZED",
+        "notes": "Normalized name from \"MEDIUM 457 MODIFIED FOR DSM 7098\" to \"medium_457_modified_for_dsm_7098\" for consistent matching"
+      },
+      {
+        "timestamp": "2026-06-05T07:41:21.198899+00:00",
+        "curator": "mim-legacy-to-chebi-migration-v1.0",
+        "action": "Refreshed legacy MediaIngredientMech links to CHEBI keying",
+        "notes": "Replaced 17 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term (id-safe: ingredient's own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN id scheme."
+      },
+      {
+        "timestamp": "2026-06-10T07:47:03.475824+00:00",
+        "curator": "primary-term-label-canonicalization-v1.0",
+        "action": "Canonicalized primary term label to OBO canonical (OAK)",
+        "notes": "3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi."
+      }
+    ]
+  },
+  "action": "unresolved_no_edit",
+  "finding": "Exact variant page is accessible and provides its own per-liter Gram Amount table. It lists pentachlorophenol and trace ingredients, whereas the local record was overwritten with base dibenzofuran/DMSO inputs plus unrelated commercial-medium expansions. Matching salt names cannot establish the complete formulation or authorize copying rounded source values. Reconstruct the exact variant from its own page and original DSMZ recipe with explicit stock/volume and source-version checks; no source absence or base-to-variant equivalence is asserted."
+}

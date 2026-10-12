@@ -42,8 +42,8 @@ composition:
     match_type: manual_curated
 - preferred_term: Distilled water
   concentration:
-    value: '700.0'
-    unit: PERCENT_V_V
+    value: '0.07'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -52,6 +52,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4571
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 70,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (Distilled
+      water) in MediaDive solution 4571; locator=$.data.recipe[3] (compound_id=4).
+      Source water addition is 70 ml per prepared batch: 70 / 1000 = 0.07 L. No source
+      preparation step gives a competing make-up instruction. This is a batch dose,
+      not a volume percentage; no final-volume or solvent-density assumption is made.
+      Additional exact excerpt at $.data.volume: "volume": 100. Retrieved 2026-10-07T09:45:11.208311+00:00;
+      response SHA256=8a97b1bda6ed964e80d6f32a6878b84f7ee8232349da185f804000d450c886e0.'
 preparation_notes: 'Original volume: 100 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:31.879637Z'
@@ -86,6 +111,15 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:46:43.027838+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/4571
+  changes: 'composition[3].concentration: {"unit": "PERCENT_V_V", "value": "700.0"}
+    -> {"unit": "L", "value": "0.07"} (correct)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -94,3 +128,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/4571
+  title: 'MediaDive solution 4571: Fatty acid mixture'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=8a97b1bda6ed964e80d6f32a6878b84f7ee8232349da185f804000d450c886e0;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

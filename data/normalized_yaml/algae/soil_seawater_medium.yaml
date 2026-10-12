@@ -15,45 +15,49 @@ notes: UTEX prepares this 30 ppt marine soil medium by steaming Green House Soil
   Pasteurized Seawater.
 ingredients:
 - preferred_term: Green House Soil
-  concentration:
-    value: variable
-    unit: VARIABLE
-  notes: UTEX lists 1 tsp Green House Soil per 200 mL seawater.
+  notes: The source fixes the soil dose at 1 tsp/200 mL of Seawater for its 200 mL
+    recipe. Teaspoon size and soil density are not established; no mass or standardized
+    volume conversion is asserted.
+  evidence:
+  - reference: https://utex.org/products/soil-plus-seawater-medium
+    supports: SUPPORT
+    snippet: 1 tsp/200 mL of Seawater
+    explanation: 'Supports ingredients[0].notes and associated ingredient/preparation
+      notes. Original field: ingredients[0].concentration.  The source specifies a
+      fixed teaspoon dose, not a variable quantity. Remove the misleading VARIABLE
+      concentration and retain the exact dose in notes and evidence; teaspoon size
+      and soil density are not established. Calculation: No numerical conversion applied.
+      Separate basis excerpt: ''For 200 mL Total''. Locator: Formulation table row
+      position 1; Directions total-volume heading.'
 - preferred_term: Pasteurized Seawater
-  concentration:
-    value: '1000'
-    unit: ML_PER_L
   term:
     id: ENVO:00002149
     label: sea water
-  notes: Converted from 200 mL Pasteurized Seawater per 200 mL final medium.
+  notes: Use 200 mL Pasteurized Seawater before soil and optional carbonate addition.
+    This is a batch input, not an independently established per-final-liter fraction.
   physicochemical_roles:
   - OSMOTIC_AGENT
-- preferred_term: CaCO3
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  term:
-    id: CHEBI:3311
-    label: calcium carbonate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:3311
-    label: calcium carbonate
-  supplier_catalog:
-    supplier_name: Fisher
-    catalog_number: C 64
-  notes: Optional in the UTEX Soil+Seawater Medium recipe; converted from 1 mg/200
-    mL.
-  physicochemical_roles:
-  - BUFFER
+  evidence:
+  - reference: https://utex.org/products/soil-plus-seawater-medium
+    supports: SUPPORT
+    snippet: 200 mL
+    explanation: 'Supports ingredients[1].notes and associated ingredient/preparation
+      notes. Original field: ingredients[1].concentration.  Remove the unsupported
+      per-final-liter seawater fraction; preserve the 200 mL carrier input before
+      adding soil and optional carbonate. Calculation: No numerical conversion applied.
+      Separate basis excerpt: ''For 200 mL Total''. Locator: Formulation table row
+      position 2; Directions total-volume heading.'
 solutions: []
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Combine Green House Soil and Pasteurized Seawater.
+  description: Combine Green House Soil and Pasteurized Seawater; add calcium carbonate
+    only for the optional supplemented formulation.
 - step_number: 2
   action: HEAT
-  description: Cover and steam for two consecutive days for 3 hours on each day.
+  description: Cover the medium container and steam for two consecutive days, three
+    hours on each day. Raise temperature gradually to approximately 95 C in 15 minutes,
+    then just over 98 C for the three-hour duration. Cool gradually at room temperature.
 - step_number: 3
   action: STORE
   description: Refrigerate for at least 24 hours, then bring to room temperature before
@@ -133,9 +137,73 @@ curation_history:
   action: LINKED_UTEX_CHEV_SOIL_VARIANTS
   changes: Linked UTEX score-35 CHEV and Soil+Seawater child media
   notes: Added or refreshed reciprocal parent-child link for algae/1_5_soil_seawater_medium.yaml.
+- timestamp: '2026-10-10T08:24:09.034201+00:00'
+  curator: codex
+  action: CURATED_UTEX_SOIL_SEAWATER_INPUT_AMOUNTS_AND_OPTIONAL_CARBONATE
+  notes: Source-backed input amounts, optional carbonate and preparation details.
+    No taxa-media association added; no fixed teaspoon conversion or inferred final
+    volume.
+  source: https://utex.org/products/soil-plus-seawater-medium
+  changes: '{"additional_findings": [{"decision": "Preserve the source heat ramp and
+    gradual cooling when completing the abbreviated preparation instructions; do not
+    invent pressure/autoclave temperature.", "field": "preparation_steps", "reference":
+    "https://utex.org/products/soil-plus-seawater-medium", "snippets": ["Cover the
+    medium container and steam for 2 consecutive days, 3 hours on each day.", "Pasteurization
+    is a gradual rising of temperature to approximately 95 \u00b0C in 15 minutes.",
+    "Then increased just over 98 \u00b0C for the 3 hour duration.", "Cooling occurs
+    gradually at room temperature."]}], "claims": [{"action_taken": "Remove the unsupported
+    structured concentration; preserve the literal input in notes and evidence.",
+    "basis_snippet": "For 200 mL Total", "calculation": "No numerical conversion applied",
+    "decision": "The source specifies a fixed teaspoon dose, not a variable quantity.
+    Remove the misleading VARIABLE concentration and retain the exact dose in notes
+    and evidence; teaspoon size and soil density are not established.", "field": "ingredients[0].concentration",
+    "ingredient": "Green House Soil", "locator": "Formulation table row position 1;
+    Directions total-volume heading", "old": {"unit": "VARIABLE", "value": "variable"},
+    "old_term": null, "proposed": null, "proposed_field": "ingredients[0].notes",
+    "reference": "https://utex.org/products/soil-plus-seawater-medium", "snippet":
+    "1 tsp/200 mL of Seawater", "status": "schema_gap"}, {"action_taken": "Relocate
+    the optional carbonate dose from mandatory composition to a source-supported inline
+    variant.", "basis_snippet": "For 200 mL Total", "calculation": "No new concentration
+    inferred; the source-literal amount belongs only to the optional formulation.",
+    "decision": "Move optional calcium carbonate out of mandatory parent composition
+    into an evidence-backed inline variant. Preserve the literal 1 mg recipe dose,
+    supplier/identity provenance and printed rounded 0.05 mM as a source annotation;
+    do not assert universal carbonate addition.", "field": "ingredients[2].concentration",
+    "ingredient": "CaCO3", "locator": "Formulation table row position 3; Directions
+    total-volume heading", "old": {"unit": "G_PER_L", "value": "0.005"}, "old_term":
+    {"id": "CHEBI:3311", "label": "calcium carbonate"}, "proposed": ["Optionally add
+    1 mg calcium carbonate (Fisher C 64) to the source 200 mL recipe before steaming."],
+    "proposed_field": "variants[0].modifications", "reference": "https://utex.org/products/soil-plus-seawater-medium",
+    "snippet": "1 mg/200 mL of Seawater", "status": "correct"}, {"action_taken": "Remove
+    the unsupported structured concentration; preserve the literal input in notes
+    and evidence.", "basis_snippet": "For 200 mL Total", "calculation": "No numerical
+    conversion applied", "decision": "Remove the unsupported per-final-liter seawater
+    fraction; preserve the 200 mL carrier input before adding soil and optional carbonate.",
+    "field": "ingredients[1].concentration", "ingredient": "Pasteurized Seawater",
+    "locator": "Formulation table row position 2; Directions total-volume heading",
+    "old": {"unit": "ML_PER_L", "value": "1000"}, "old_term": {"id": "ENVO:00002149",
+    "label": "sea water"}, "proposed": null, "proposed_field": "ingredients[1].notes",
+    "reference": "https://utex.org/products/soil-plus-seawater-medium", "snippet":
+    "200 mL", "status": "unsupported"}], "counts": {"bibliographic_entries_enriched":
+    1, "child_link_notes_corrected": 1, "ingredient_context_notes_corrected": 2, "inline_variant_options_added":
+    1, "new_curation_history": 1, "new_evidence": 5, "new_references": 1, "preparation_descriptions_corrected":
+    2, "supplement_nodes_moved_to_variants": 1, "unsupported_quantity_slots_removed":
+    2}, "removed_optional_ingredient": {"concentration": {"unit": "G_PER_L", "value":
+    "0.005"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:3311", "label": "calcium
+    carbonate"}, "notes": "Optional in the UTEX Soil+Seawater Medium recipe; converted
+    from 1 mg/200 mL.", "physicochemical_roles": ["BUFFER"], "preferred_term": "CaCO3",
+    "supplier_catalog": {"catalog_number": "C 64", "supplier_name": "Fisher"}, "term":
+    {"id": "CHEBI:3311", "label": "calcium carbonate"}}}'
 references:
 - reference: UTEX:soil-plus-seawater-medium
 - reference: https://utex.org/products/soil-plus-seawater-medium
+  title: Soil+Seawater Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established.
+- reference: https://utex.org/products/one-third-soil-plus-seawater-medium
+  title: 1/3 Soil+Seawater Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Named authors, publication year and DOI not established.
 original_name: Soil + Seawater Medium
 data_quality_flags:
 - has_ontology_mappings
@@ -150,7 +218,8 @@ variant_children:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:000007
   name: 1_3_soil_seawater_medium
-  notes: Dilutes the seawater phase 1:2 with dH2O for 10 ppt salinity.
+  notes: Uses 67 mL Pasteurized Seawater and 133 mL dH2O per 200 mL liquid-input recipe;
+    the 1:2 description is approximate.
 - path: data/normalized_yaml/algae/1_4_soil_seawater_medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:000009
@@ -166,3 +235,52 @@ variant_children:
   id: CultureMech:000019
   name: 5_3_soil_seawater_agar_medium
   notes: Adds 15 g/L natural sea-salt and 15 g/L agar to prepared Soil+Seawater Medium.
+variants:
+- name: Soil+Seawater Medium with optional calcium carbonate
+  relationship: SUPPLEMENTED_VARIANT
+  description: Source-listed optional calcium carbonate supplement.
+  modifications:
+  - Optionally add 1 mg calcium carbonate (Fisher C 64) to the source 200 mL recipe
+    before steaming.
+  purpose: Preserve the explicitly optional carbonate formulation
+  evidence:
+  - reference: https://utex.org/products/soil-plus-seawater-medium
+    supports: SUPPORT
+    snippet: 1 mg/200 mL of Seawater
+    explanation: 'Supports variants[0].modifications and removal of the mandatory
+      carbonate node at old ingredients[2]. Separate source component excerpt: ''CaCO3
+      (optional) (Fisher C 64)''. Separate printed concentration excerpt: ''0.05 mM'';
+      the printed molarity is a source annotation for the optional formulation, not
+      a universal parent concentration. Move optional calcium carbonate out of mandatory
+      parent composition into an evidence-backed inline variant. Preserve the literal
+      1 mg recipe dose, supplier/identity provenance and printed rounded 0.05 mM as
+      a source annotation; do not assert universal carbonate addition. Calculation:
+      No new concentration inferred; the source-literal amount belongs only to the
+      optional formulation.. Separate basis excerpt: ''For 200 mL Total''. Locator:
+      Formulation table row position 3; Directions total-volume heading.'
+evidence:
+- reference: https://utex.org/products/soil-plus-seawater-medium
+  supports: SUPPORT
+  snippet: CaCO3 (optional) (Fisher C 64)
+  explanation: 'Supports preparation_steps[0].description: carbonate is optional,
+    not a mandatory parent ingredient. Separate exact excerpt: ''Cover the medium
+    container and steam for 2 consecutive days, 3 hours on each day.''. Supports preparation_steps:
+    Preserve the source heat ramp and gradual cooling when completing the abbreviated
+    preparation instructions; do not invent pressure/autoclave temperature. Separate
+    exact excerpt: ''Pasteurization is a gradual rising of temperature to approximately
+    95 °C in 15 minutes.''. Supports preparation_steps: Preserve the source heat ramp
+    and gradual cooling when completing the abbreviated preparation instructions;
+    do not invent pressure/autoclave temperature. Separate exact excerpt: ''Then increased
+    just over 98 °C for the 3 hour duration.''. Supports preparation_steps: Preserve
+    the source heat ramp and gradual cooling when completing the abbreviated preparation
+    instructions; do not invent pressure/autoclave temperature. Separate exact excerpt:
+    ''Cooling occurs gradually at room temperature.''. Supports preparation_steps:
+    Preserve the source heat ramp and gradual cooling when completing the abbreviated
+    preparation instructions; do not invent pressure/autoclave temperature.'
+- reference: https://utex.org/products/one-third-soil-plus-seawater-medium
+  supports: SUPPORT
+  snippet: 67 mL
+  explanation: 'Supports variant_children[1].notes for CultureMech:000007 only. Separate
+    heading excerpt: "For 200 mL Total". Separate exact excerpt: ''133 mL''. Supports
+    variant_children[1].notes for CultureMech:000007 only. Separate heading excerpt:
+    "For 200 mL Total".'

@@ -1,0 +1,160 @@
+{
+  "terminal": true,
+  "local_applied_record_checks_passed": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "normalized_count": 15910,
+  "normalized_inventory_sha256": "bcec0dd6e2c94b3a58bf69511cb219c2f192c6402ccbcc74dac14f6301834750",
+  "counts": {
+    "stock_nodes_relocated": 842,
+    "new_quantity_slots": 379,
+    "unsupported_quantity_slots_removed": 915,
+    "new_evidence": 37059,
+    "new_curation_history": 5596,
+    "new_references": 5997,
+    "stock_stage_concentrations_rebased": 203,
+    "stock_descriptors_added": 247,
+    "quantity_corrections": 1721,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 28,
+    "recipe_context_notes_corrected": 30,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 91,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 65,
+    "preparation_descriptions_corrected": 60,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 10,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 3,
+    "child_links_corrected": 7,
+    "unsupported_primary_identities_removed": 4,
+    "ingredient_evidence_explanations_extended": 3,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 16,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "unquantified_ingredient_nodes_added": 2,
+    "ingredient_labels_corrected": 41,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 4,
+    "supplement_nodes_moved_to_variants": 4,
+    "supplied_hydrate_identities_corrected": 87,
+    "copied_ingredient_nodes_removed": 15,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 2,
+    "unsupported_secondary_identities_removed": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5357
+  },
+  "followup_unique_records": 11885,
+  "outside_this_followup": 4025,
+  "new_batch": {
+    "new_evidence": 350,
+    "new_references": 74,
+    "new_curation_history": 56,
+    "preparation_actions_corrected": 56,
+    "preparation_descriptions_corrected": 56,
+    "quantity_corrections": 238,
+    "supplied_hydrate_identities_corrected": 56,
+    "ingredient_labels_corrected": 18,
+    "records": 56,
+    "ingredient_claim_rows": 1628,
+    "identity_only_endpoint_corrections": 4,
+    "taxa_media_associations": 0
+  },
+  "receipts_sha256": {
+    "preview-retest-v2": "de4a59fa824091d20168fc6ce79148b44f2736a456c97bc7c31f4d56e4d66d8d",
+    "apply-v2": "78d62a3a58f9aac7e405be49b483ac41082f664d73cb057a1380bdba6400780b",
+    "source-and-grounding-v2": "206209b1f0cfe42ce9eb8a207d4c24265745497509ffc679fe006e0bc51e4cec",
+    "reconcile-baseline": "153d2aaf7ab6f2aed919460678ae2461f5815596ef2397c3425e52223edeb926",
+    "reconcile-reports": "346474dec99d657d3a90f18847ef0c7c3e690f2d863d767a414482a60743cd48",
+    "reconcile-cumulative": "c710948f41c6d33195bd6104408b600deffd30aa30d35efae50b39228ee91927",
+    "reconcile-indexes": "e5304cc9a20f50aa7a43c6e1140b605f20dedafb1600931332c60898b02a5cf1",
+    "reconcile-retention": "29bf9eff4d28f493edd0984f33a5df9726f98bb69e4605385f238d2e56ef80b0",
+    "post-v2": "f9f0b9ed058ce8a43dcefba03987908562125504d7ae1f1a957c49958205ff86",
+    "references-v2": "5cd29980167623eaa961352a57e15f698d51f9922ff36135e579955e05884e7c",
+    "corpus-v2": "099a36b6857b5b021ae2e11d8d30f88812a0994ac31bf5546a243fad86437303",
+    "fast-v2": "39aa4745187ed0fd086bfdc9705cda363180a99eaf6964fe9da15872d8f21fb3"
+  },
+  "batch_quantity_claim_dispositions": {
+    "unsupported": 1218,
+    "conflict": 138,
+    "correct": 238,
+    "evidence_only": 34
+  },
+  "production_reference_checks": {
+    "failed_snippet": 350,
+    "passed_title": 58,
+    "failed_title": 20,
+    "passed_snippet": 60
+  },
+  "production_reference_gate_passed": false,
+  "reference_limitations": [
+    "332 new 1993 DOI snippets failed because the production fetch returned no article content.",
+    "18 new 1988 snippets and 18 PMC titles failed against a browser-check page.",
+    "Two historical MediaDB SQL-export title checks still fail; 60 historical database snippets pass.",
+    "Primary-source snippets were inspected on pinned page scans; automated OCR verification is not asserted.",
+    "Actual production reference outcomes and retrieval errors remain in the per-record logs; failures are not waived.",
+    "Earlier MediaDB evidence remains database provenance and is not certified as original-article quantity evidence."
+  ],
+  "corpus_commands": [
+    {
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "returncode": 1
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness"
+      ],
+      "returncode": 1
+    }
+  ],
+  "fast_test_summary": "14604 passed, 16 skipped, 3498 deselected, 2 warnings in 1825.29s (0:30:25)",
+  "fast_tier_passed": true,
+  "full_test_suite_pass_asserted": false
+}

@@ -1,0 +1,88 @@
+{
+  "terminal": true,
+  "publication_ready": false,
+  "record_sha256": "b2e4c8ae5f0ec6756471724d2280bce9385e9928b686cc8e74f4ee7f946961b6",
+  "normalized_source_sha256": "9c03de4651798e86e3efab9985b8960c97364f96f48721fd953cdc482d241df4",
+  "only_reviewed_source_changed": true,
+  "refreshed_indexes_verified": 3,
+  "canonical_record_reports": 1,
+  "standalone_solution_excluded_from_medium_merging": true,
+  "code_sha256": {
+    "scripts/repair_fecl2_stock_concentration.py": "2b0143753510d12b2a65fd4a84b34f7492ef077cbe017ef99665d77f41af6c6e",
+    "tests/test_fecl2_stock_concentration.py": "359016512c4437a52590baf38f57036f8f1c72a2a1b790ab38b75be86a2f6d3e",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-fecl2-stock/audit.py": "40a63ea8bbfc07e03b64dea17ce588babfe81bf446a7cf33ddb6604836b8b669",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "3da77bcf6ddf8ec7177747d3483cf6b6c588c3e7bfc971792824c2cdebda998e"
+  },
+  "counts": {
+    "stock_stage_concentrations_rebased": 1,
+    "new_quantity_slots": 1,
+    "stock_nodes_relocated": 1,
+    "stock_descriptors_added": 1,
+    "new_evidence": 3,
+    "new_references": 1,
+    "new_curation_history": 1,
+    "evidence_scopes_corrected": 2
+  },
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_fecl2_stock_concentration.py",
+        "tests/test_fecl2_stock_concentration.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-fecl2-stock/audit.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/fecl2-final-0.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_fecl2_stock_concentration.py",
+        "tests/test_fecl2_stock_concentration.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-fecl2-stock/audit.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/fecl2-final-1.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/fecl2-final-2.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_fecl2_stock_concentration.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/fecl2-final-3.log"
+    }
+  ],
+  "reference_validation_exit_code": 1,
+  "literal_capture_matches": 5,
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10777,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8732,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "failed_broad_gates": [
+    "verify-merges",
+    "freshness"
+  ]
+}

@@ -16,10 +16,36 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/85
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Glucose",
+                      "compound_id": 5,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 18,
+                      "unit": "g",
+                      "g_l": 360,
+                      "mmol_l": 1998.22,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Glucose)
+      in MediaDive solution 85; locator=$.data.recipe[0] (compound_id=5). Provider
+      explicitly reports g_l=360. Arithmetic check: 18 g * 1 g/g / (50 ml / 1000 ml
+      per L) = 3.6E+2 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 50. Retrieved 2026-10-07T08:20:08.536695+00:00; response SHA256=1427fae57ae2187580545774511bf5865af8ae5c804a50581d12d3b437a44c3e.'
 - preferred_term: Distilled water
   concentration:
-    value: '1000.0'
-    unit: PERCENT_V_V
+    value: '0.05'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -28,6 +54,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/85
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 50,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Distilled
+      water) in MediaDive solution 85; locator=$.data.recipe[1] (compound_id=4). Source
+      water addition is 50 ml per prepared batch: 50 / 1000 = 0.05 L. No source preparation
+      step gives a competing make-up instruction. This is a batch dose, not a volume
+      percentage; no final-volume or solvent-density assumption is made. Additional
+      exact excerpt at $.data.volume: "volume": 50. Retrieved 2026-10-07T08:20:08.536695+00:00;
+      response SHA256=1427fae57ae2187580545774511bf5865af8ae5c804a50581d12d3b437a44c3e.'
 preparation_notes: 'Original volume: 50 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:41.370725Z'
@@ -62,6 +113,16 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T08:27:51.574555+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/85
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "360"} -> {"unit":
+    "G_PER_L", "value": "360"} (evidence_only); composition[1].concentration: {"unit":
+    "PERCENT_V_V", "value": "1000.0"} -> {"unit": "L", "value": "0.05"} (correct)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -70,3 +131,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/85
+  title: 'MediaDive solution 85: Solution C'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=1427fae57ae2187580545774511bf5865af8ae5c804a50581d12d3b437a44c3e;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

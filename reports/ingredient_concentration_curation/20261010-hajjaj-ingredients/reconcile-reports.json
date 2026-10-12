@@ -1,0 +1,111 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "reports",
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "reports": [
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/328.md",
+      "sha256": "46f4db195668c9423f2cf54538c36e78ffc9386aefd3220a9be5300d180303a2",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/324.md",
+      "sha256": "39adc72e218ad15f723c735f98d12da78838217e17de97a9e0d0b68bcdff0a0a",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/329.md",
+      "sha256": "6d130770d117936ea73ce59725e0943a90d535ebf99b054257bb6efe9221a77b",
+      "structured_claim_rows": 13
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/327.md",
+      "sha256": "bb9f0c6019ac3d6ec17a34f598301ff3f7789c8f903d9efb366d199eb334d078",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/334.md",
+      "sha256": "70bf4e5eb2cd276663e84164478c5f22590d4d488b891f8f18747e180f93a7cd",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/341.md",
+      "sha256": "94814e1b74af4ff356b5c39e883f689960cec0874716a06d9d087c320e1e7b54",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/340.md",
+      "sha256": "84b1523dfac2b199d983c12977e958e426ef81d46e0953ab310687e050378e5f",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/339.md",
+      "sha256": "f9bb4491afeb3a284a4ac441e90e791adc4312c0e027bf5e1f0624ee0ae87a78",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/342.md",
+      "sha256": "24ec4dc965273efb921576f36ddced0b755ccdecb6863c91bd2f766b5faa378a",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/318.md",
+      "sha256": "8ccee9dc9daa458527d2dba24729be41a42b12d532bc4a929e51b4ee72620b04",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/332.md",
+      "sha256": "40065de63e91c11d1397ee4e71b7e3830c59b864ff32cc0796146f2707c6b2fb",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/338.md",
+      "sha256": "c80ca7fd0190dd142f4e7740b4bffc152747aaf386c9c2b8728371313feaedcf",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/336.md",
+      "sha256": "2003c5e38939e6202812b96b41995db4fd732be0a5390da1f480d8b1e338ad1a",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/333.md",
+      "sha256": "fa2de0b32c4732b776f7ce454c1fc86723a7ad857670d2a8f4a8d3c89c5339b1",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/335.md",
+      "sha256": "ccb1c0fd171dab455d1c8ae3a3793f24635fc0a2711e66d719f3d507de11d905",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/337.md",
+      "sha256": "9e44303b06ee5746ac381140183bc5e7039db20777f4e964970c0b9d0f1e5554",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/326.md",
+      "sha256": "0edfeea22007a7d03da1e3e546fb4d212aac5d508170176a2ae1a1f396c48892",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/325.md",
+      "sha256": "2769cdf292eec49fc8dd5ea28585914a5fbb5e4e290d31e878dbee705b3b634c",
+      "structured_claim_rows": 12
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/331.md",
+      "sha256": "2033fdf56fe7738e25d3bdfc1e8931cc5f7dbb40b0da88649b8b668b20dfc529",
+      "structured_claim_rows": 13
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-hajjaj-ingredients/records/330.md",
+      "sha256": "0ba2ed6b6570726e460a946f843d582c8ae1f95520a4b796cd302b60bbb231ee",
+      "structured_claim_rows": 13
+    }
+  ],
+  "canonical_coverage_increment": 20,
+  "source_inventory_unchanged": true
+}

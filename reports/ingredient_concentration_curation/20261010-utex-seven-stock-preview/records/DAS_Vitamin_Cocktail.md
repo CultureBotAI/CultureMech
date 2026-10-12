@@ -1,0 +1,26 @@
+# UTEX Stock Source Triage
+
+- Record: data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml
+- ID: CultureMech:015445
+- Reviewed commit: f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f
+- Record SHA256: f32d5d9b26f17279871214fbf46cdb08de779c8661b2d09011c59e5cd14ec4bf
+- State: preview; no authoritative edits applied
+
+Source: [DAS Vitamin Cocktail](https://utex.org/products/das-vitamin-cocktail). HTTP-200 capture pinned in the source ledger; unknown bibliographic fields are not invented.
+
+| Claim / ingredient | Existing amount | Status | Source and decision |
+| --- | --- | --- | --- |
+| composition[0].concentration / Tricine (pH 8) | {"value": "9.0", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/das-vitamin-cocktail", "snippet": "0.9 g/100 mL", "basis_snippet": "For 100 mL Total", "source_component": "Tricine(adjust to pH 8)(Sigma T 5816-256)", "locator": "formulation table row 1; Amount column and volume heading", "calculation": "0.9 g / 0.1 L = 9.0 g/L; explicit total volume. Supplied-form holds remain independent of arithmetic.", "reason": "The current mass amount and named supplied form match this source row; add scoped evidence after full review.", "action_taken": "none; read-only source triage"} |
+| composition[1].concentration / Thiamine (Vitamin B1) | {"value": "0.67", "unit": "G_PER_L"} | unsupported | {"reference": "https://utex.org/products/das-vitamin-cocktail", "snippet": "0.067 g/100 mL", "basis_snippet": "For 100 mL Total", "source_component": "Thiamine(Sigma T 1270)", "locator": "formulation table row 2; Amount column and volume heading", "calculation": "0.067 g / 0.1 L = 0.67 g/L; explicit total volume. Supplied-form holds remain independent of arithmetic.", "reason": "Source names thiamine and Sigma T1270 without an explicit supplied salt in the recipe; current cation grounding requires exact product/form verification.", "action_taken": "none; read-only source triage"} |
+| composition[2].concentration / Biotin | {"value": "0.01", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/das-vitamin-cocktail", "snippet": "0.001 g/100 mL", "basis_snippet": "For 100 mL Total", "source_component": "Biotin(Sigma B 4639)", "locator": "formulation table row 3; Amount column and volume heading", "calculation": "0.001 g / 0.1 L = 0.01 g/L; explicit total volume. Supplied-form holds remain independent of arithmetic.", "reason": "The current mass amount and named supplied form match this source row; add scoped evidence after full review.", "action_taken": "none; read-only source triage"} |
+| composition[3].concentration / Vitamin B12 (Cobalamin) | {"value": "0.008", "unit": "G_PER_L"} | evidence_only | {"reference": "https://utex.org/products/das-vitamin-cocktail", "snippet": "0.0008 g/100 mL", "basis_snippet": "For 100 mL Total", "source_component": "Vitamin B12(add after autoclaving)(Sigma V 6629)", "locator": "formulation table row 4; Amount column and volume heading", "calculation": "0.0008 g / 0.1 L = 0.008 g/L; explicit total volume. Supplied-form holds remain independent of arithmetic.", "reason": "The current mass amount and named supplied form match this source row; add scoped evidence after full review.", "action_taken": "none; read-only source triage"} |
+| composition[4].concentration / Pantothenate (Pantothenic acid) | {"value": "0.02", "unit": "G_PER_L"} | unsupported | {"reference": "https://utex.org/products/das-vitamin-cocktail", "snippet": "0.002 g/100 mL", "basis_snippet": "For 100 mL Total", "source_component": "Pantothenate(Sigma P 2250)", "locator": "formulation table row 5; Amount column and volume heading", "calculation": "0.002 g / 0.1 L = 0.02 g/L; explicit total volume. Supplied-form holds remain independent of arithmetic.", "reason": "Source names pantothenate and Sigma P2250; current pantothenic-acid grounding requires exact supplied-form verification.", "action_taken": "none; read-only source triage"} |
+| composition[5].concentration / PABA (Para-aminobenzoic acid) | {"value": "0.04", "unit": "G_PER_L"} | conflict | {"reference": "https://utex.org/products/das-vitamin-cocktail", "snippet": "0.004 g/100 mL", "basis_snippet": "For 100 mL Total", "source_component": "PABA(p-aminobenzoic acid)(Sigma A 1174)", "locator": "formulation table row 6; Amount column and volume heading", "calculation": "0.004 g / 0.1 L = 0.04 g/L; explicit total volume. Supplied-form holds remain independent of arithmetic.", "reason": "Source explicitly specifies p-aminobenzoic acid, whereas the record assigns 4-aminobenzoate. Same numeric mass amount does not resolve the acid/base identity mismatch.", "action_taken": "none; read-only source triage"} |
+
+## Remaining Work
+
+- The directions specify 0.45 micrometer filtration, while the B12 table row says add after autoclaving; preserve and investigate this source inconsistency instead of selecting one silently.
+- The page distinguishes stock molarities from final DAS concentrations. Only explicit mass-per-100-mL arithmetic is checked here.
+- Freezer storage is stated, but -20 C and particular pH titrants are not established by the inspected recipe.
+
+Identity/role/growth/classification claims are not generally certified by this concentration triage. The baseline checks are in the batch validation receipt. No canonical follow-up coverage increment is counted.

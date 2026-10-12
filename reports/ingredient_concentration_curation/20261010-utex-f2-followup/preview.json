@@ -1,0 +1,186 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "preview",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/F_2_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/preview-000.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/F_2_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/preview-001.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-f2-followup/f-2-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/preview-002.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-f2-followup/f-2-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/preview-003.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/f_2_nh4_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/preview-004.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/f_2_nh4_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/preview-005.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-f2-followup/f-2-nh4-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/preview-006.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-f2-followup/f-2-nh4-medium.preview.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/preview-007.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "--no-cov",
+        "tests/test_utex_f2_followup.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/preview-008.log",
+      "log_sha256": "f553567894acc1fa7491b3c76acedab2d0819b5e4531a844f78a9fd2d33e9a2f"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/review_utex_f2_followup.py",
+        "tests/test_utex_f2_followup.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/preview-009.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "--line-length",
+        "100",
+        "scripts/review_utex_f2_followup.py",
+        "tests/test_utex_f2_followup.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/preview-010.log",
+      "log_sha256": "b9cf511501d306d2bd8355ccb165c8ddc0a6fdd62d7c72c4a7b1795cf8934c8c"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/preview-011.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "plan_sha256": "2e9259ca340aaf5f4fb28a2ef280390470d2e5da3e37c968e8a0dfed7d87f74c",
+  "source_sha256": "2da2c7f0d0df2c65aa9e0980e757c3ff2bfdbf08290c28da22e3563bcff2e2b2",
+  "code_sha256": {
+    "scripts/review_utex_f2_followup.py": "fc4b034678735a1d3abcbd68a0d5e5966d2a23bb942ac9a8d4c6acfb2d5b2b86",
+    "tests/test_utex_f2_followup.py": "a68b820821a7f236168c7eb874a81e44c8550cd5746e0ca8e8630f0caf32af58"
+  },
+  "inventory_before_sha256": "da9766fa2581380e36cf1bef84b6e7fede418c8c70d76e9e5d7bb922e34d7d3b",
+  "source_checks": [
+    {
+      "reference": "doi:10.1016/j.biortech.2017.04.008",
+      "capture_available": true,
+      "automatic_reference_pass_asserted": false
+    },
+    {
+      "reference": "DOI:10.1007/s10126-021-10037-4",
+      "capture_available": true,
+      "automatic_reference_pass_asserted": false
+    },
+    {
+      "reference": "DOI:10.1104/pp.18.00453",
+      "capture_available": false,
+      "automatic_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10126-021-10037-4/MediaObjects/10126_2021_10037_MOESM1_ESM.pdf",
+      "capture_available": true,
+      "automatic_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/f-2-nh4-medium",
+      "capture_available": true,
+      "automatic_reference_pass_asserted": false
+    }
+  ],
+  "table_rows_and_unit_headings_matched": true,
+  "inventory_after_sha256": "da9766fa2581380e36cf1bef84b6e7fede418c8c70d76e9e5d7bb922e34d7d3b",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

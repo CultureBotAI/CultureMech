@@ -1,0 +1,43 @@
+# Medium Concentration Review: MJ-N BASAL MEDIUM
+
+- Record: data/normalized_yaml/bacterial/mj_n_basal_medium.yaml
+- ID: CultureMech:002733
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `a109e85e8bb4ff10abd1a4ea0bbb39681f54328e99d55fca588f79d86b11ba74`
+- Proposed/result SHA256: `a109e85e8bb4ff10abd1a4ea0bbb39681f54328e99d55fca588f79d86b11ba74`
+- Source: https://mediadive.dsmz.de/rest/medium/J374
+- Source SHA256: 8d2acd77cb821076a1597f9c1e0b0a6da5832482f1a010e40093923acac9b2ff
+- Retrieved: 2026-10-07T14:05:41.851543+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: reviewed; unchanged; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `ingredients[0].concentration` | NH4Cl | {"unit": "G_PER_L", "value": "0.24975"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[1].concentration` | NaHCO3 | {"unit": "G_PER_L", "value": "1.4985"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[2].concentration` | Na2S2O3 x 5 H2O | {"unit": "G_PER_L", "value": "1.4985"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[3].concentration` | NaCl | {"unit": "G_PER_L", "value": "29.703"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[4].concentration` | K2HPO4 | {"unit": "G_PER_L", "value": "0.138614"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[5].concentration` | CaCl2 x 2 H2O | {"unit": "G_PER_L", "value": "0.138614"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[6].concentration` | MgSO4 x 7 H2O | {"unit": "G_PER_L", "value": "3.36634"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[7].concentration` | MgCl2 x 6 H2O | {"unit": "G_PER_L", "value": "4.13861"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[8].concentration` | KCl | {"unit": "G_PER_L", "value": "0.326733"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[9].concentration` | NiCl2 x 6 H2O | {"unit": "G_PER_L", "value": "0.00049505"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[10].concentration` | Na2SeO3 x 5 H2O | {"unit": "G_PER_L", "value": "0.00049505"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[11].concentration` | Fe(NH4)2(SO4)2 x 6 H2O | {"unit": "G_PER_L", "value": "0.00990099"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[12].concentration` | Biotin | {"unit": "G_PER_L", "value": "0.002"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[13].concentration` | Folic acid | {"unit": "G_PER_L", "value": "0.002"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[14].concentration` | Pyridoxine hydrochloride | {"unit": "G_PER_L", "value": "0.01"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[15].concentration` | Thiamine HCl | {"unit": "G_PER_L", "value": "0.005"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[16].concentration` | Riboflavin | {"unit": "G_PER_L", "value": "0.005"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[17].concentration` | Nicotinic acid | {"unit": "G_PER_L", "value": "0.005"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[18].concentration` | Calcium pantothenate | {"unit": "G_PER_L", "value": "0.005"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[19].concentration` | Vitamin B12 | {"unit": "G_PER_L", "value": "0.0001"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[20].concentration` | p-Aminobenzoic acid | {"unit": "G_PER_L", "value": "0.005"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `ingredients[21].concentration` | Lipoic acid | {"unit": "G_PER_L", "value": "0.005"} | unknown / not asserted | conflict | https://mediadive.dsmz.de/rest/medium/J374 | unknown / not asserted | unknown / not asserted | Missing source ingredient/preparation inventory. | unchanged |
+| `parent_media` | mj_basal_medium | {"id": "CultureMech:002716", "name": "mj_basal_medium", "path": "data/normalized_yaml/bacterial/mj_basal_medium.yaml", "relationship": "SOURCE_DUPLICATE"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Variant formulation/relationship requires its own exact source; parent evidence is not propagated. | unchanged |
+| `source.data.solutions[0].steps[0]` | preparation context | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/medium/J374 | {<br>                        "step": "Use Medium No. 356 supplemented with 2.0 g/L NaNO3. Replace the gas phase with a N2-CO2 (80:20) gas mixture and pressurize to 150 kPa."<br>                    } | $.data.solutions[0].steps[0] | Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose. | unchanged |

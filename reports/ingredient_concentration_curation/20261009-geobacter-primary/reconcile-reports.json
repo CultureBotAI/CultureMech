@@ -1,0 +1,346 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "reports",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "reports": [
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/416.md",
+      "sha256": "4517b1bce4ffcd9204a07c340348b12ee2320a7ea9c1537b7eda8bf23d94afb1",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/417.md",
+      "sha256": "a91ac3d52ab6b91068fd8bf74d3c6f81df36eba2421a44452ab6b3a30b32bc9f",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/418.md",
+      "sha256": "7a8d781439876bd4dc646e152d0a0a0cd82609bdbf1db25b80db4c2d41aa3fe2",
+      "claim_rows": 30,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/419.md",
+      "sha256": "f281054d9a6bdc412a785bb65e1b6094f8748ba55a71e92cb2b24306ae3f28d0",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/420.md",
+      "sha256": "2d0133cf3c241e3a3ff10ce996a49e17bcc1105a995a07be1219d07d4954d6a2",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/421.md",
+      "sha256": "aa9c61fc595350291ab413697505cecbcf120fcbbc01cbae8ed9b216f4ec68b9",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/422.md",
+      "sha256": "74828a892072f0cb8033159c93fd011dd26e6e1b39a15f76c5f565445a210ad4",
+      "claim_rows": 30,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/423.md",
+      "sha256": "3801f43b936d7628f0a40561ed46ea44f1012fb27a7207c636d7edcd421e8039",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/424.md",
+      "sha256": "9e4072c32cf5e5ef60507006b0546eb495f9554bf9dbabe01a4b474c4a986c32",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/425.md",
+      "sha256": "5bb389e03a07a5c7a3172abe579c0180ef94cab644a36adc0609d5cf802a32f0",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/426.md",
+      "sha256": "3f195837f03ff786014cb9bf7a0328ebf89ac96db4cd838069e4f64a9f724bfd",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/427.md",
+      "sha256": "4d64d04d6e0147a069790c767206b0b9c40ea3db0e031c3d5cae6bae1157e3b6",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/428.md",
+      "sha256": "bc8f5a54d917d091fae2e590bb3b3cc5bf442c051a204e2322408ac72e5a7acb",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/429.md",
+      "sha256": "bdaf9362c49472d8a6bebfd389e28ee1280ce294df52ff8d3f43702d8d48d7a2",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/records/430.md",
+      "sha256": "b2660ac47e4c240e3b17e427f745367848d22da9cb4ddf85625ba8947e146cbd",
+      "claim_rows": 29,
+      "appended_to_existing": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/431.md",
+      "sha256": "cd65f101299cff943b010384fea29736bfe30318f66b6d34a90c311c2c76715e",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/432.md",
+      "sha256": "f9a97e716688a645ebbdafc131deb72f496769600f46e79d63dfcb889500e998",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/433.md",
+      "sha256": "1ef23b9621ff50d09839913a6457f428ffa6c0ff6070a176b18d58ebdbea60af",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/434.md",
+      "sha256": "33413ce0f2e2a5987b80a3101284b12db7aa35c39693487cc38e2628a119ee16",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/435.md",
+      "sha256": "1c99d8b2abc894d45219a4fa8ab0a320ccfcc9ed9bd19b1b7ff75f0149232b18",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/436.md",
+      "sha256": "0215c4a72e2e532fb079e640bd97f924fc4a4914507d893a7484eeb82ff6a73d",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/437.md",
+      "sha256": "1df4eab53c9cdd2da157c56a1846c398e931d866abbad7d616ed48bd7887c43b",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/438.md",
+      "sha256": "f7fbbee46c7cc4268f8aeb07e6ee0ab73cb51b04f2072bf1c233173804702bf0",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/439.md",
+      "sha256": "26b1ad09f5dfea300e2b3e82ccdab3579e04bd6b2d4235707db695e11fea97da",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/440.md",
+      "sha256": "136f819b0329333fdf0a969d235998330bde20d833c49da27bd7e5f2524f4d5e",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/441.md",
+      "sha256": "068c2c6fc7be94f69f47ee74ba71778ec43cb988a7461dacdd47cf72d2dc22c4",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/442.md",
+      "sha256": "c167534892b4031c209dc84876f46a891627412d9e3aafafaeea8455299d4cb4",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/443.md",
+      "sha256": "a9a1584c62e8f6c5ece7ac927fb54267ab98fecc3d67ac7cb99ad33dddfd59e7",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/444.md",
+      "sha256": "33ce4d05580e04f15cb0664cbfa332a7b168c6a6355ac7a1606fe66963ed0915",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/445.md",
+      "sha256": "0a475839a51cb39d2a51396596bea9b885539886ef9cf9aee6af0e8bd4783dff",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/446.md",
+      "sha256": "242903e83fb2e2b3fafba81ff986225deeb7bc8783a7b222b1c31623d79082bc",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/447.md",
+      "sha256": "d7e33aab05f796e4112d0e80e501a51cd0d7b48e3f2aeb52864099cd7d0676de",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/448.md",
+      "sha256": "895b423c37417ef6d798e76d11617ad016bc9be62d891ba956863f00d40ab528",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/449.md",
+      "sha256": "fb2660898cf5f331f3be8a5a82d18160033b81b6c44a82c44fc2db18742727ec",
+      "claim_rows": 30,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/450.md",
+      "sha256": "ff0cd82ebc63b8dd5397e338ca63c4f19df8a4f8acd072ef2987f6dc2910d734",
+      "claim_rows": 30,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/451.md",
+      "sha256": "a2a8a18fbf3f76e88926e09bb9c81559932ff0c025295afb9a955b592baad6bc",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/452.md",
+      "sha256": "fc90d0c18cc2e54d559bb99b7933e11790e86dcd7fe27bd879ffcbc8d576e7d3",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/453.md",
+      "sha256": "99ba57b33f58f17d2a17a7579d014d6830e3a3d5ef217e3b541da18f0c14c81a",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/454.md",
+      "sha256": "d935f44bde1afdfb195699cc6e2edaea264273d24050a5794cabc4a426a5b863",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/455.md",
+      "sha256": "87ac435075cfdcf5e626fd861e761dfd74a5dd4f8ef195027591f01b5bdfeca4",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/456.md",
+      "sha256": "7989cddb23e6959bc01553f6d8666bd8b4fa6b599db81a3e6fd2b84737cbebf0",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/457.md",
+      "sha256": "34723b058a5c74cf253184cdffd14fc30fe0bd8e57a78368125a771731ebafe0",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/458.md",
+      "sha256": "5a0e7301b23508e54b9c788168cdce30196075fe43a25ecbbd03812727e1c190",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/459.md",
+      "sha256": "cfc3b08a0b7cd41f51a625341829047cf7b485cd206e7fcc9b1afa9efbab0576",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/records/460.md",
+      "sha256": "cedef2a61b3ea99174fba466ae53296781cc8eb57ef9b6802c017b00754fb735",
+      "claim_rows": 29,
+      "appended_to_existing": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/461.md",
+      "sha256": "84ef246ed5df78a8d74606792b87597074b0e7fbb0b96fbc2015543400a45574",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/462.md",
+      "sha256": "410e2cd106c5d641da5c18c21166075fd38cb72287cf05cd9b5af08725b83242",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/463.md",
+      "sha256": "c944fa2c96c1688caf80242aa86dd6d641f05fea4f10959ae65421f2524bc6a6",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/464.md",
+      "sha256": "e8fe5a2a4cb977c09f58c750e3a1f2b76eb9589dfd70c00af98d7e9f39e61d3c",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/465.md",
+      "sha256": "b1ec83ab090c5e994056e89d92fc7e68489ce030ae9f0a5dde7052dded00ab44",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/466.md",
+      "sha256": "c28013be87ab3dea35bf32dbc797fa4f5ea6de52cd945530d211bf2921d82b95",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/467.md",
+      "sha256": "d31de815d819e6cadf99ba106b4e076e197532a68ab3e09ba1529e24d308ef40",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/468.md",
+      "sha256": "e9ce5174b829ff06c655cd1f93e523f83821622e2755387c94a4ed4b8320db96",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/469.md",
+      "sha256": "6a8511bc44af67422e02c41e588c8d6bffa34b8ca83b030837492c8f648ad6ff",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/470.md",
+      "sha256": "ae69310d2f5fc6c8d812aa35ac1b804283aae09138f527b0d777db6c1b15ebbf",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-geobacter-primary/records/471.md",
+      "sha256": "48cb031f80f720b3e59d7ceec694984dd6755c44cbf8a7060362fd856245d242",
+      "claim_rows": 29,
+      "appended_to_existing": false
+    }
+  ],
+  "source_inventory_unchanged": true
+}

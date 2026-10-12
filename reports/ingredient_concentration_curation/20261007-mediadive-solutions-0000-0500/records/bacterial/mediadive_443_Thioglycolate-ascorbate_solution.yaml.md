@@ -1,0 +1,23 @@
+# Solution Concentration Review: Thioglycolate-ascorbate solution
+
+- Record: data/normalized_yaml/bacterial/mediadive_443_Thioglycolate-ascorbate_solution.yaml
+- ID: CultureMech:013420
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `55edc9a984fc9e5728b46f9a948bd5626734c77a8ff4864de1a1fd21e25ba10b`
+- Proposed/result SHA256: `53cead9cbb62f905b17e09da0a8889dfb9d4ffa4aaa1489c5dc95d50b6fc740d`
+- Source: https://mediadive.dsmz.de/rest/solution/443
+- Source SHA256: 29836faf4dc0bff1373054d11541a8720946504c1c7b7ac22044eb3bb3a18941
+- Retrieved: 2026-10-07T08:23:31.546019+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: changed locally; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `composition[0].concentration` | Na-thioglycolate | {"unit": "G_PER_L", "value": "20"} | {"unit": "G_PER_L", "value": "20"} | evidence_only | https://mediadive.dsmz.de/rest/solution/443 | {<br>                "recipe_order": 1,<br>                "compound": "Na-thioglycolate",<br>                "compound_id": 30,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 0.5,<br>                "unit": "g",<br>                "g_l": 20,<br>                "mmol_l": 175.286,<br>                "optional": 0<br>            } | $.data.recipe[0] (compound_id=30) | Provider explicitly reports g_l=20. Arithmetic check: 0.5 g * 1 g/g / (25 ml / 1000 ml per L) = 2E+1 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 25. | applied |
+| `composition[1].concentration` | Na-ascorbate | {"unit": "G_PER_L", "value": "20"} | {"unit": "G_PER_L", "value": "20"} | evidence_only | https://mediadive.dsmz.de/rest/solution/443 | {<br>                "recipe_order": 2,<br>                "compound": "Na-ascorbate",<br>                "compound_id": 311,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 0.5,<br>                "unit": "g",<br>                "g_l": 20,<br>                "mmol_l": 100.956,<br>                "optional": 0<br>            } | $.data.recipe[1] (compound_id=311) | Provider explicitly reports g_l=20. Arithmetic check: 0.5 g * 1 g/g / (25 ml / 1000 ml per L) = 2E+1 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 25. | applied |
+| `composition[2].concentration` | Distilled water | {"unit": "PERCENT_V_V", "value": "1000.0"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/443 | {<br>                "recipe_order": 3,<br>                "compound": "Distilled water",<br>                "compound_id": 4,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 25,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[2] (compound_id=4) | Preparation steps may specify make-up volume; manual water review required | unchanged |
+| `ingredients[0].concentration` | See source for composition | {"unit": "VARIABLE", "value": "variable"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Outside direct composition matching; unchanged. | unchanged |

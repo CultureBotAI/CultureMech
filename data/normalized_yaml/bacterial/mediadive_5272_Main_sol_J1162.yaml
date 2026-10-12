@@ -16,6 +16,33 @@ composition:
     label: ammonium sulfate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5272
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "(NH4)2SO4",
+                      "compound_id": 27,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.2,
+                      "unit": "g",
+                      "g_l": 0.190295,
+                      "mmol_l": 1.4401,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration ((NH4)2SO4)
+      in MediaDive solution 5272; locator=$.data.recipe[0] (compound_id=27). Provider
+      explicitly reports g_l=0.190295. Arithmetic check: 0.2 g * 1 g/g / (1051 ml
+      / 1000 ml per L) = 0.1902949571836346336822074215 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1051. Retrieved 2026-10-07T09:52:59.992467+00:00;
+      response SHA256=6bbb592eb953023e95208d8db33570f7a8fd3bee79de51f4df1a05cbcea337e5.'
 - preferred_term: KH2PO4
   concentration:
     value: '2.85442'
@@ -28,6 +55,33 @@ composition:
     label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5272
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 3,
+                      "unit": "g",
+                      "g_l": 2.85442,
+                      "mmol_l": 20.9752,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (KH2PO4)
+      in MediaDive solution 5272; locator=$.data.recipe[1] (compound_id=11). Provider
+      explicitly reports g_l=2.85442. Arithmetic check: 3 g * 1 g/g / (1051 ml / 1000
+      ml per L) = 2.854424357754519505233111323 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1051. Retrieved 2026-10-07T09:52:59.992467+00:00;
+      response SHA256=6bbb592eb953023e95208d8db33570f7a8fd3bee79de51f4df1a05cbcea337e5.'
 - preferred_term: Na2S2O3 x 5 H2O
   concentration:
     value: '2.37869'
@@ -40,6 +94,33 @@ composition:
     label: sodium thiosulfate pentahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5272
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Na2S2O3 x 5 H2O",
+                      "compound_id": 65,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.5,
+                      "unit": "g",
+                      "g_l": 2.37869,
+                      "mmol_l": 9.58429,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Na2S2O3
+      x 5 H2O) in MediaDive solution 5272; locator=$.data.recipe[3] (compound_id=65).
+      Provider explicitly reports g_l=2.37869. Arithmetic check: 2.5 g * 1 g/g / (1051
+      ml / 1000 ml per L) = 2.378686964795432921027592769 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1051. Retrieved 2026-10-07T09:52:59.992467+00:00;
+      response SHA256=6bbb592eb953023e95208d8db33570f7a8fd3bee79de51f4df1a05cbcea337e5.'
 - preferred_term: Distilled water
   concentration:
     value: '951.4747859181731'
@@ -149,6 +230,18 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5272
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.190295"}
+    -> {"unit": "G_PER_L", "value": "0.190295"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "2.85442"} -> {"unit": "G_PER_L", "value": "2.85442"}
+    (evidence_only); composition[2].concentration: {"unit": "G_PER_L", "value": "2.37869"}
+    -> {"unit": "G_PER_L", "value": "2.37869"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -157,3 +250,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5272
+  title: 'MediaDive solution 5272: Main sol. J1162'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=6bbb592eb953023e95208d8db33570f7a8fd3bee79de51f4df1a05cbcea337e5;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

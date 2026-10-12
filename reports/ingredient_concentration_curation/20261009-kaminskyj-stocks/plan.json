@@ -1,0 +1,600 @@
+{
+  "version": 1,
+  "action": "RESTORED_KAMINSKYJ_PRIMARY_RECIPE_STOCK_BOUNDARIES",
+  "source_sha256": "e4930dbee08d6d2885bade2cdd65cca6a2abe518efd164d8ab923050712a57e3",
+  "created_at": "2026-10-09T19:28:03.825189+00:00",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml",
+      "id": "CultureMech:007206",
+      "target_class": "MediaRecipe",
+      "action": "RESTORED_KAMINSKYJ_PRIMARY_RECIPE_STOCK_BOUNDARIES",
+      "before_sha256": "2eb1d7896cc9c9d60d73d1bc64246966f1d377e15ee79ee8abf6684fefbb310e",
+      "after_sha256": "af2310d93f75c8b1c1a56a5cb85ab266cd993a539c11da2deca487d423c6445c",
+      "before_text": "id: CultureMech:007206\nname: kaminskyj_minimal_medium\noriginal_name: Kaminskyj Minimal Medium\ncategory: bacterial\nmedium_type: DEFINED\ncomposition_type: DEFINED\nphysical_state: LIQUID\ningredients:\n- preferred_term: Sodium nitrate\n  term:\n    id: CHEBI:63005\n    label: sodium nitrate\n  concentration:\n    value: '1411.9'\n    unit: MILLIMOLAR\n  mediaingredientmech_chebi_term:\n    id: CHEBI:63005\n    label: sodium nitrate\n- preferred_term: Sodium EDTA\n  concentration:\n    value: '0.1315'\n    unit: MILLIMOLAR\n- preferred_term: D-Glucose\n  term:\n    id: CHEBI:17634\n    label: D-glucose\n  concentration:\n    value: '55.51'\n    unit: MILLIMOLAR\n  notes: 'Cross-references: KEGG:glc_D'\n  mediaingredientmech_chebi_term:\n    id: CHEBI:17634\n    label: D-glucose\n- preferred_term: Cobalt chloride\n  concentration:\n    value: '0.007145'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:35696\n    label: cobalt dichloride\n- preferred_term: Ferrous sulfate\n  concentration:\n    value: '0.01798'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:75832\n    label: iron(2+) sulfate (anhydrous)\n- preferred_term: Sodium molybdate\n  concentration:\n    value: '0.006199'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:75215\n    label: sodium molybdate (anhydrous)\n- preferred_term: Cupric sulfate\n  concentration:\n    value: '0.006408'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:23414\n    label: copper(II) sulfate\n- preferred_term: Manganese chloride\n  concentration:\n    value: '0.02526'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:63041\n    label: manganese(II) chloride\n- preferred_term: Boric acid\n  term:\n    id: CHEBI:33118\n    label: boric acid\n  concentration:\n    value: '0.1779'\n    unit: MILLIMOLAR\n  mediaingredientmech_chebi_term:\n    id: CHEBI:33118\n    label: boric acid\n- preferred_term: Thiamine\n  term:\n    id: CHEBI:18385\n    label: thiamine(1+)\n  concentration:\n    value: '0.03769'\n    unit: MILLIMOLAR\n  notes: 'Cross-references: KEGG:thm'\n  mediaingredientmech_term:\n    id: MediaIngredientMech:000898\n    label: Thiamine\n- preferred_term: Magnesium sulfate\n  term:\n    id: CHEBI:32599\n    label: magnesium sulfate\n  concentration:\n    value: '42.2'\n    unit: MILLIMOLAR\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32599\n    label: magnesium sulfate\n- preferred_term: Potassium chloride\n  concentration:\n    value: '139.5'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:32588\n    label: potassium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32588\n    label: potassium chloride\n- preferred_term: Zinc sulfate\n  term:\n    id: CHEBI:35176\n    label: zinc sulfate\n  concentration:\n    value: '0.07651'\n    unit: MILLIMOLAR\n  mediaingredientmech_chebi_term:\n    id: CHEBI:35176\n    label: zinc sulfate\n- preferred_term: Potassium dihydrogen phosphate\n  concentration:\n    value: '223.4'\n    unit: MILLIMOLAR\n  term:\n    id: CHEBI:63036\n    label: potassium dihydrogen phosphate\npreparation_steps:\n- step_number: 1\n  action: DISSOLVE\n  description: Dissolve all ingredients in distilled water to specified concentrations\n- step_number: 2\n  action: ADJUST_PH\n  description: Adjust pH if specified in original formulation\n- step_number: 3\n  action: FILTER_STERILIZE\n  description: Sterilize by filtration (0.22 \u03bcm) to preserve heat-sensitive components\ncuration_history:\n- timestamp: '2026-01-27T07:21:45.401642Z'\n  curator: mediadb-import\n  action: Imported from MediaDB\n  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 308, Reference:\n    Mazumdar et al. (2014) PLOS One'\n- timestamp: '2026-01-28T19:48:30.155979Z'\n  curator: chebi-enrichment\n  action: Added CHEBI ontology terms to ingredients\n  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings\n- timestamp: '2026-03-13T06:19:46.867583Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:007206'\n- timestamp: '2026-03-17T06:30:29.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:46:05.050088+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Kaminskyj Minimal Medium\" to \"kaminskyj_minimal_medium\"\n    for consistent matching\n- timestamp: '2026-06-05T07:41:10.337033+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\nmedia_term:\n  preferred_term: MediaDB Medium 308\n  term:\n    id: MEDIADB:308\n    label: Kaminskyj Minimal Medium\nnotes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)\n  Reference: https://mediadb.systemsbiology.net/'\napplications:\n- Cultivation of genome-sequenced organisms\n- Metabolic modeling\n- Systems biology research\nhigh_metal: true\n",
+      "after_text": "id: CultureMech:007206\nname: kaminskyj_minimal_medium\noriginal_name: Kaminskyj Minimal Medium\ncategory: bacterial\nmedium_type: DEFINED\ncomposition_type: DEFINED\nphysical_state: LIQUID\ningredients:\n- preferred_term: D-Glucose\n  term:\n    id: CHEBI:17634\n    label: D-glucose\n  concentration:\n    value: '10'\n    unit: G_PER_L\n  notes: 'Cross-references: KEGG:glc_D'\n  mediaingredientmech_chebi_term:\n    id: CHEBI:17634\n    label: D-glucose\n  evidence:\n  - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n    supports: SUPPORT\n    snippet: D-glucose 10 g\n    explanation: '[\"ingredients\", 0].concentration and supplied form, locator: Minimal\n      Medium (MM), row 1. Separate volume excerpt after that table: ''Make to 1 liter\n      with distilled water.'' Calculation: 10 g / 1 L = 10 g/L of final medium. No\n      molecular-weight conversion. Hydrate alternatives are not combined. Source:\n      doi:10.4148/1941-4765.1175; accessed 2026-10-09.'\n- preferred_term: Distilled water\n  term:\n    id: CHEBI:15377\n    label: water\n  notes: Make the complete medium up to 1 L. This is a final volume, not a fixed 1\n    L water addition; the water makeup amount is not quantified.\n  evidence:\n  - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n    supports: SUPPORT\n    snippet: Make to 1 liter with distilled water.\n    explanation: 'ingredients[1]: MM preparation paragraph; final-volume makeup. Source:\n      doi:10.4148/1941-4765.1175; accessed 2026-10-09.'\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Combine 10 g D-glucose, 50 mL 20X nitrate stock, 1 mL trace stock and\n    1 mL 1% thiamine solution for one litre of MM. Add nutritional supplements only\n    if required by the strain.\n- step_number: 2\n  action: ADJUST_PH\n  description: Adjust to pH 6.5 using 1 M sodium hydroxide. The amount required is\n    not specified.\n- step_number: 3\n  action: MIX\n  description: Make up to a final volume of 1 L with distilled water.\n- step_number: 4\n  action: AUTOCLAVE\n  description: Autoclave. The source does not specify temperature or duration for\n    this step.\ncuration_history:\n- timestamp: '2026-01-27T07:21:45.401642Z'\n  curator: mediadb-import\n  action: Imported from MediaDB\n  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 308, Reference:\n    Mazumdar et al. (2014) PLOS One'\n- timestamp: '2026-01-28T19:48:30.155979Z'\n  curator: chebi-enrichment\n  action: Added CHEBI ontology terms to ingredients\n  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings\n- timestamp: '2026-03-13T06:19:46.867583Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:007206'\n- timestamp: '2026-03-17T06:30:29.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:46:05.050088+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Kaminskyj Minimal Medium\" to \"kaminskyj_minimal_medium\"\n    for consistent matching\n- timestamp: '2026-06-05T07:41:10.337033+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n- timestamp: '2026-10-09T19:28:03.825189+00:00'\n  curator: codex\n  action: RESTORED_KAMINSKYJ_PRIMARY_RECIPE_STOCK_BOUNDARIES\n  notes: Restored source stock boundaries, doses and seven hydrate forms. Na4EDTA\n    is tetrasodium EDTA without an inferred hydrate or ID. Added water makeup and\n    unquantified KOH/NaOH titration contexts (NaOH stock is 1 M). Source pH and autoclaving\n    replace generic filtration. Preserved optional agar and anhydrous magnesium sulfate\n    as variants. Every ingredient, dose and preparation change has primary-protocol\n    evidence. Thiamine percentage basis and supplied form are unspecified; no fixed\n    mass/molar strength. NaOH and KOH titration amounts are not quantified; water\n    makeup is not a fixed input dose. Tetrasodium EDTA has no exact packaged MIM resolution;\n    no hydrate or ontology ID inferred. Optional auxotroph supplements are strain-dependent\n    and are not added to the base recipe. Existing bacterial filing, high_metal flag\n    and generic applications are retained but not validated by this ingredient correction;\n    the protocol concerns Aspergillus nidulans. No new taxa-media associations. No\n    source-version merge with Hill's different formulation.\n  source: doi:10.4148/1941-4765.1175\n  changes: 'ingredients[2] -> [\"ingredients\", 0]: {\"value\": \"55.51\", \"unit\": \"MILLIMOLAR\"}\n    -> {\"value\": \"10\", \"unit\": \"G_PER_L\"}; ingredients[0] -> [\"solutions\", 0, \"composition\",\n    0]: {\"value\": \"1411.9\", \"unit\": \"MILLIMOLAR\"} -> {\"value\": \"120\", \"unit\": \"G_PER_L\"};\n    ingredients[11] -> [\"solutions\", 0, \"composition\", 1]: {\"value\": \"139.5\", \"unit\":\n    \"MILLIMOLAR\"} -> {\"value\": \"10.4\", \"unit\": \"G_PER_L\"}; ingredients[10] -> [\"solutions\",\n    0, \"composition\", 2]: {\"value\": \"42.2\", \"unit\": \"MILLIMOLAR\"} -> {\"value\": \"10.4\",\n    \"unit\": \"G_PER_L\"}; ingredients[13] -> [\"solutions\", 0, \"composition\", 3]: {\"value\":\n    \"223.4\", \"unit\": \"MILLIMOLAR\"} -> {\"value\": \"30.4\", \"unit\": \"G_PER_L\"}; ingredients[12]\n    -> [\"solutions\", 1, \"composition\", 0]: {\"value\": \"0.07651\", \"unit\": \"MILLIMOLAR\"}\n    -> {\"value\": \"22\", \"unit\": \"G_PER_L\"}; ingredients[8] -> [\"solutions\", 1, \"composition\",\n    1]: {\"value\": \"0.1779\", \"unit\": \"MILLIMOLAR\"} -> {\"value\": \"11\", \"unit\": \"G_PER_L\"};\n    ingredients[7] -> [\"solutions\", 1, \"composition\", 2]: {\"value\": \"0.02526\", \"unit\":\n    \"MILLIMOLAR\"} -> {\"value\": \"5\", \"unit\": \"G_PER_L\"}; ingredients[4] -> [\"solutions\",\n    1, \"composition\", 3]: {\"value\": \"0.01798\", \"unit\": \"MILLIMOLAR\"} -> {\"value\":\n    \"5\", \"unit\": \"G_PER_L\"}; ingredients[3] -> [\"solutions\", 1, \"composition\", 4]:\n    {\"value\": \"0.007145\", \"unit\": \"MILLIMOLAR\"} -> {\"value\": \"1.7\", \"unit\": \"G_PER_L\"};\n    ingredients[6] -> [\"solutions\", 1, \"composition\", 5]: {\"value\": \"0.006408\", \"unit\":\n    \"MILLIMOLAR\"} -> {\"value\": \"1.6\", \"unit\": \"G_PER_L\"}; ingredients[5] -> [\"solutions\",\n    1, \"composition\", 6]: {\"value\": \"0.006199\", \"unit\": \"MILLIMOLAR\"} -> {\"value\":\n    \"1.5\", \"unit\": \"G_PER_L\"}; ingredients[1] -> [\"solutions\", 1, \"composition\", 7]:\n    {\"value\": \"0.1315\", \"unit\": \"MILLIMOLAR\"} -> {\"value\": \"50\", \"unit\": \"G_PER_L\"};\n    ingredients[9] -> [\"solutions\", 2, \"composition\", 0]: {\"value\": \"0.03769\", \"unit\":\n    \"MILLIMOLAR\"} -> null'\nmedia_term:\n  preferred_term: MediaDB Medium 308\n  term:\n    id: MEDIADB:308\n    label: Kaminskyj Minimal Medium\nnotes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)\n  Reference: https://mediadb.systemsbiology.net/'\napplications:\n- Cultivation of genome-sequenced organisms\n- Metabolic modeling\n- Systems biology research\nhigh_metal: true\nsolutions:\n- preferred_term: 20 X Nitrate salts\n  source: https://www.fgsc.net/fgn48/Kaminskyj.htm\n  concentration:\n    value: '50'\n    unit: ML_PER_L\n  composition:\n  - preferred_term: Sodium nitrate\n    term:\n      id: CHEBI:63005\n      label: sodium nitrate\n    concentration:\n      value: '120'\n      unit: G_PER_L\n    mediaingredientmech_chebi_term:\n      id: CHEBI:63005\n      label: sodium nitrate\n    evidence:\n    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n      supports: SUPPORT\n      snippet: NaNO 3 120 g\n      explanation: '[\"solutions\", 0, \"composition\", 0].concentration and supplied\n        form, locator: 20 X Nitrate salts, row 1. Separate volume excerpt after that\n        table: ''Add distilled water to 1 liter.'' Calculation: 120 g / 1 L = 120\n        g/L of this stock, not final medium. No molecular-weight conversion. Hydrate\n        alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed\n        2026-10-09.'\n  - preferred_term: Potassium chloride\n    concentration:\n      value: '10.4'\n      unit: G_PER_L\n    term:\n      id: CHEBI:32588\n      label: potassium chloride\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32588\n      label: potassium chloride\n    evidence:\n    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n      supports: SUPPORT\n      snippet: KCl 10.4 g\n      explanation: '[\"solutions\", 0, \"composition\", 1].concentration and supplied\n        form, locator: 20 X Nitrate salts, row 2. Separate volume excerpt after that\n        table: ''Add distilled water to 1 liter.'' Calculation: 10.4 g / 1 L = 10.4\n        g/L of this stock, not final medium. No molecular-weight conversion. Hydrate\n        alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed\n        2026-10-09.'\n  - preferred_term: Magnesium sulfate heptahydrate\n    term:\n      id: CHEBI:31795\n      label: magnesium sulfate heptahydrate\n    concentration:\n      value: '10.4'\n      unit: G_PER_L\n    mediaingredientmech_chebi_term:\n      id: CHEBI:31795\n      label: magnesium sulfate heptahydrate\n    evidence:\n    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n      supports: SUPPORT\n      snippet: MgSO 4 \u00b77H 2 O 10.4 g (5.2 g if anhydrous)\n      explanation: '[\"solutions\", 0, \"composition\", 2].concentration and supplied\n        form, locator: 20 X Nitrate salts, row 3. Separate volume excerpt after that\n        table: ''Add distilled water to 1 liter.'' Calculation: 10.4 g / 1 L = 10.4\n        g/L of this stock, not final medium. No molecular-weight conversion. Hydrate\n        alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed\n        2026-10-09.'\n  - preferred_term: Potassium dihydrogen phosphate\n    concentration:\n      value: '30.4'\n      unit: G_PER_L\n    term:\n      id: CHEBI:63036\n      label: potassium dihydrogen phosphate\n    evidence:\n    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n      supports: SUPPORT\n      snippet: KH 2 PO 4 30.4 g\n      explanation: '[\"solutions\", 0, \"composition\", 3].concentration and supplied\n        form, locator: 20 X Nitrate salts, row 4. Separate volume excerpt after that\n        table: ''Add distilled water to 1 liter.'' Calculation: 30.4 g / 1 L = 30.4\n        g/L of this stock, not final medium. No molecular-weight conversion. Hydrate\n        alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed\n        2026-10-09.'\n  preparation_notes: Prepare the four salts to a final volume of 1 L with distilled\n    water. Autoclave and store at 4 C. Add 50 mL of this stock per final litre of\n    MM. The anhydrous magnesium sulfate option is recorded separately as a variant.\n- preferred_term: 1000 X Trace elements\n  source: https://www.fgsc.net/fgn48/Kaminskyj.htm\n  concentration:\n    value: '1'\n    unit: ML_PER_L\n  composition:\n  - preferred_term: Zinc sulfate heptahydrate\n    term:\n      id: CHEBI:32312\n      label: zinc sulfate heptahydrate\n    concentration:\n      value: '22'\n      unit: G_PER_L\n    mediaingredientmech_chebi_term:\n      id: CHEBI:32312\n      label: zinc sulfate heptahydrate\n    evidence:\n    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n      supports: SUPPORT\n      snippet: ZnSO 4 \u00b77 H 2 O 2.2 g\n      explanation: '[\"solutions\", 1, \"composition\", 0].concentration and supplied\n        form, locator: 1000 X Trace elements, row 2. Separate volume excerpt after\n        that table: ''Adjust volume to 100 ml with distilled water.'' Calculation:\n        2.2 g / 0.100 L = 22 g/L of this stock, not final medium. No molecular-weight\n        conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175;\n        accessed 2026-10-09.'\n  - preferred_term: Boric acid\n    term:\n      id: CHEBI:33118\n      label: boric acid\n    concentration:\n      value: '11'\n      unit: G_PER_L\n    mediaingredientmech_chebi_term:\n      id: CHEBI:33118\n      label: boric acid\n    evidence:\n    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n      supports: SUPPORT\n      snippet: H3BO 3 1.1 g\n      explanation: '[\"solutions\", 1, \"composition\", 1].concentration and supplied\n        form, locator: 1000 X Trace elements, row 3. Separate volume excerpt after\n        that table: ''Adjust volume to 100 ml with distilled water.'' Calculation:\n        1.1 g / 0.100 L = 11 g/L of this stock, not final medium. No molecular-weight\n        conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175;\n        accessed 2026-10-09.'\n  - preferred_term: Manganese chloride tetrahydrate\n    concentration:\n      value: '5'\n      unit: G_PER_L\n    term:\n      id: CHEBI:86368\n      label: manganese(II) chloride tetrahydrate\n    evidence:\n    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n      supports: SUPPORT\n      snippet: MnCl 2 \u00b74 H 2 O 0.5 g\n      explanation: '[\"solutions\", 1, \"composition\", 2].concentration and supplied\n        form, locator: 1000 X Trace elements, row 4. Separate volume excerpt after\n        that table: ''Adjust volume to 100 ml with distilled water.'' Calculation:\n        0.5 g / 0.100 L = 5 g/L of this stock, not final medium. No molecular-weight\n        conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175;\n        accessed 2026-10-09.'\n  - preferred_term: Ferrous sulfate heptahydrate\n    concentration:\n      value: '5'\n      unit: G_PER_L\n    term:\n      id: CHEBI:75836\n      label: iron(2+) sulfate heptahydrate\n    evidence:\n    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n      supports: SUPPORT\n      snippet: FeSO 4 \u00b77 H 2 O 0.5 g\n      explanation: '[\"solutions\", 1, \"composition\", 3].concentration and supplied\n        form, locator: 1000 X Trace elements, row 5. Separate volume excerpt after\n        that table: ''Adjust volume to 100 ml with distilled water.'' Calculation:\n        0.5 g / 0.100 L = 5 g/L of this stock, not final medium. No molecular-weight\n        conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175;\n        accessed 2026-10-09.'\n  - preferred_term: Cobalt chloride hexahydrate\n    concentration:\n      value: '1.7'\n      unit: G_PER_L\n    term:\n      id: CHEBI:53503\n      label: cobalt chloride hexahydrate\n    evidence:\n    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n      supports: SUPPORT\n      snippet: CoCl 2 \u00b76 H 2 O 0.17 g\n      explanation: '[\"solutions\", 1, \"composition\", 4].concentration and supplied\n        form, locator: 1000 X Trace elements, row 6. Separate volume excerpt after\n        that table: ''Adjust volume to 100 ml with distilled water.'' Calculation:\n        0.17 g / 0.100 L = 1.7 g/L of this stock, not final medium. No molecular-weight\n        conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175;\n        accessed 2026-10-09.'\n  - preferred_term: Cupric sulfate pentahydrate\n    concentration:\n      value: '1.6'\n      unit: G_PER_L\n    term:\n      id: CHEBI:31440\n      label: copper(II) sulfate pentahydrate\n    evidence:\n    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n      supports: SUPPORT\n      snippet: CuSO 4 \u00b75 H 2 O 0.16 g\n      explanation: '[\"solutions\", 1, \"composition\", 5].concentration and supplied\n        form, locator: 1000 X Trace elements, row 7. Separate volume excerpt after\n        that table: ''Adjust volume to 100 ml with distilled water.'' Calculation:\n        0.16 g / 0.100 L = 1.6 g/L of this stock, not final medium. No molecular-weight\n        conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175;\n        accessed 2026-10-09.'\n  - preferred_term: Sodium molybdate dihydrate\n    concentration:\n      value: '1.5'\n      unit: G_PER_L\n    term:\n      id: CHEBI:75213\n      label: sodium molybdate dihydrate\n    evidence:\n    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n      supports: SUPPORT\n      snippet: Na 2 MoO 4 \u00b72 H 2 O 0.15 g\n      explanation: '[\"solutions\", 1, \"composition\", 6].concentration and supplied\n        form, locator: 1000 X Trace elements, row 8. Separate volume excerpt after\n        that table: ''Adjust volume to 100 ml with distilled water.'' Calculation:\n        0.15 g / 0.100 L = 1.5 g/L of this stock, not final medium. No molecular-weight\n        conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175;\n        accessed 2026-10-09.'\n  - preferred_term: Tetrasodium EDTA\n    concentration:\n      value: '50'\n      unit: G_PER_L\n    evidence:\n    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n      supports: SUPPORT\n      snippet: Na 4 EDTA 5 g\n      explanation: '[\"solutions\", 1, \"composition\", 7].concentration and supplied\n        form, locator: 1000 X Trace elements, row 9. Separate volume excerpt after\n        that table: ''Adjust volume to 100 ml with distilled water.'' Calculation:\n        5 g / 0.100 L = 50 g/L of this stock, not final medium. No molecular-weight\n        conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175;\n        accessed 2026-10-09.'\n  - preferred_term: Potassium hydroxide\n    term:\n      id: CHEBI:32035\n      label: potassium hydroxide\n    notes: Adjust the trace stock to pH 6.5 after cooling to 60 C. KOH amount and\n      reagent concentration are unspecified.\n    evidence:\n    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n      supports: SUPPORT\n      snippet: Adjust pH to 6.5 with KOH.\n      explanation: 'solutions[1].composition[8]: trace-stock preparation; titration\n        only, not a fixed KOH dose. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09.'\n  preparation_notes: Start with 60 mL distilled water. Add the eight listed salts\n    in source order. Boil; cool to 60 C; adjust to pH 6.5 with KOH. Cool to room temperature,\n    then make up to 100 mL with distilled water. Resuspend the precipitate before\n    use. Add 1 mL of this stock per final litre of MM. Stock concentrations use the\n    100 mL final volume, not the 60 mL initial water.\n- preferred_term: Thiamine solution (1%)\n  source: https://www.fgsc.net/fgn48/Kaminskyj.htm\n  concentration:\n    value: '1'\n    unit: ML_PER_L\n  composition:\n  - preferred_term: Thiamine\n    term:\n      id: CHEBI:18385\n      label: thiamine(1+)\n    notes: 'Cross-references: KEGG:thm Source specifies a ''1%'' thiamine solution\n      but does not define the percentage basis or supplied chemical form. Its 1 mL/L\n      addition is known; stock mass/molar strength and final thiamine molarity remain\n      unresolved. The former 0.03769 mM assertion is withdrawn. Existing identity\n      links are retained, not certified as the supplied form.'\n    mediaingredientmech_term:\n      id: MediaIngredientMech:000898\n      label: Thiamine\n    evidence:\n    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n      supports: SUPPORT\n      snippet: 1% thiamine 1 ml\n      explanation: '[\"solutions\", 2, \"composition\", 0]: MM thiamine-solution row.\n        Source specifies a ''1%'' thiamine solution but does not define the percentage\n        basis or supplied chemical form. Its 1 mL/L addition is known; stock mass/molar\n        strength and final thiamine molarity remain unresolved. The former 0.03769\n        mM assertion is withdrawn. Existing identity links are retained, not certified\n        as the supplied form. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09.'\n  notes: Source specifies a '1%' thiamine solution but does not define the percentage\n    basis or supplied chemical form. Its 1 mL/L addition is known; stock mass/molar\n    strength and final thiamine molarity remain unresolved. The former 0.03769 mM\n    assertion is withdrawn. Existing identity links are retained, not certified as\n    the supplied form.\n- preferred_term: Sodium hydroxide solution (1 M)\n  source: https://www.fgsc.net/fgn48/Kaminskyj.htm\n  composition:\n  - preferred_term: Sodium hydroxide\n    term:\n      id: CHEBI:32145\n      label: sodium hydroxide\n    concentration:\n      value: '1'\n      unit: MOLAR\n    evidence:\n    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n      supports: SUPPORT\n      snippet: Adjust pH to 6.5 with 1M NaOH.\n      explanation: 'solutions[3].composition[0].concentration: 1 M titrant strength\n        from MM preparation, not its final-medium concentration. No fixed stock addition\n        volume is given. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09.'\n  notes: Add as needed to adjust MM to pH 6.5. Stock strength is 1 M; addition volume\n    and final-medium NaOH amount are unspecified.\nph_value: 6.5\nevidence:\n- reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n  supports: SUPPORT\n  snippet: 20X nitrate salts (see below) 50 ml\n  explanation: 'solutions[0].concentration: 50 mL nitrate stock / 1 L final MM = 50\n    mL/L. Other exact MM table excerpts: ''Trace elements (see below) 1 ml'' and ''1%\n    thiamine 1 ml'', supporting solutions[1] and [2] at 1 mL/L each. Separate MM preparation\n    paragraph: ''Add nutritional supplements if necessary. Adjust pH to 6.5 with 1M\n    NaOH. Make to 1 liter with distilled water. For solid medium add 18 g agar. Autoclave.''\n    This supports ph_value=6.5, solutions[3] as an unquantified 1 M NaOH titrant,\n    water makeup and preparation_steps including autoclaving, not the former 0.22\n    um filtration. No autoclave temperature or duration is specified. Optional supplements\n    and solid-medium agar are not unconditional base ingredients. Nitrate preparation\n    excerpt: ''Add distilled water to 1 liter. Autoclave. Store at 4oC.'' Trace preparation\n    excerpt: ''Add the compounds in order. Boil. Cool to 60oC. Adjust pH to 6.5 with\n    KOH. Cool to room temperature. Adjust volume to 100 ml with distilled water. With\n    storage this forms a purple solution with a rusty brown precipitate that should\n    be resuspended before use.'' The trace table''s separate ''distilled water 60\n    ml'' is initial water, not the final stock volume. These excerpts support solutions[0:2].preparation_notes.\n    Withdraw imported stock/final-medium mixing; do not convert through inferred molecular\n    weights or substitute the CM vitamin solution or Hill formulation. Source: doi:10.4148/1941-4765.1175;\n    accessed 2026-10-09.'\nvariants:\n- name: Anhydrous magnesium sulfate option\n  relationship: SUBSTITUTED_COMPONENT_VARIANT\n  modifications:\n  - In the 20X nitrate stock, replace 10.4 g magnesium sulfate heptahydrate per 1\n    L stock with 5.2 g anhydrous magnesium sulfate per 1 L stock. Keep the stock addition\n    at 50 mL/L final medium.\n  evidence:\n  - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n    supports: SUPPORT\n    snippet: MgSO 4 \u00b77H 2 O 10.4 g (5.2 g if anhydrous)\n    explanation: 'variants[0]: nitrate-stock magnesium row, source-explicit alternative,\n      not an extra ingredient. Separate volume excerpt: ''Add distilled water to 1\n      liter.'' Thus 5.2 g / 1 L = 5.2 g/L anhydrous salt in stock; 5.2 * 0.050 = 0.26\n      g/L final medium. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09.'\n- name: Solid minimal medium\n  relationship: PHYSICAL_STATE_VARIANT\n  modifications:\n  - Add 18 g agar to the one-litre MM preparation for solid medium; retain the source's\n    autoclaving step.\n  evidence:\n  - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n    supports: SUPPORT\n    snippet: For solid medium add 18 g agar.\n    explanation: 'variants[1]: MM preparation, not CM (which instead specifies 15\n      g). Separate excerpt: ''Make to 1 liter with distilled water.'' Source states\n      18 g per one-litre preparation; no separate post-agar final volume is invented.\n      Base remains LIQUID. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09.'\nreferences:\n- reference: https://www.fgsc.net/fgn48/Kaminskyj.htm\n  title: Fundamentals of growth, storage, genetics and microscopy of Aspergillus nidulans\n  authors: Susan G. W. Kaminskyj\n  year: 2001\n  notes: source_type=journal_protocol_web_page; discovery_mode=database_original_source_link;\n    accessed_on=2026-10-09; DOI=doi:10.4148/1941-4765.1175; protocol_html_sha256=323fe17d640ab0e039a06b4e585d26cc48effda0c03fbe730ca7cfe94abc0eee;\n    publisher_metadata_url=https://journals.newprairiepress.org/fgr/article/id/1112/;\n    publisher_html_sha256=f6d7f0f5136d9d4ffcb0aa5fac52441ec769f339e989e9ebdb2ac287994a711a.\n    Recipe quotations were inspected in the FGSC protocol HTML; publisher metadata\n    establishes title, author, year and DOI. PDF not inspected.\n- reference: doi:10.4148/1941-4765.1175\n  title: Fundamentals of growth, storage, genetics and microscopy of Aspergillus nidulans\n  authors: Susan G. W. Kaminskyj\n  year: 2001\n  notes: source_type=journal_article; discovery_mode=database_original_source_link;\n    accessed_on=2026-10-09; DOI=doi:10.4148/1941-4765.1175; protocol_html_sha256=323fe17d640ab0e039a06b4e585d26cc48effda0c03fbe730ca7cfe94abc0eee;\n    publisher_metadata_url=https://journals.newprairiepress.org/fgr/article/id/1112/;\n    publisher_html_sha256=f6d7f0f5136d9d4ffcb0aa5fac52441ec769f339e989e9ebdb2ac287994a711a.\n    Recipe quotations were inspected in the FGSC protocol HTML; publisher metadata\n    establishes title, author, year and DOI. PDF not inspected.\n",
+      "claims": [
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "old_pointer": [
+            "ingredients",
+            2
+          ],
+          "ingredient": "D-Glucose",
+          "old": {
+            "value": "55.51",
+            "unit": "MILLIMOLAR"
+          },
+          "proposed": {
+            "value": "10",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "D-glucose 10 g",
+            "explanation": "[\"ingredients\", 0].concentration and supplied form, locator: Minimal Medium (MM), row 1. Separate volume excerpt after that table: 'Make to 1 liter with distilled water.' Calculation: 10 g / 1 L = 10 g/L of final medium. No molecular-weight conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            0
+          ],
+          "old_pointer": [
+            "ingredients",
+            0
+          ],
+          "ingredient": "Sodium nitrate",
+          "old": {
+            "value": "1411.9",
+            "unit": "MILLIMOLAR"
+          },
+          "proposed": {
+            "value": "120",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "NaNO 3 120 g",
+            "explanation": "[\"solutions\", 0, \"composition\", 0].concentration and supplied form, locator: 20 X Nitrate salts, row 1. Separate volume excerpt after that table: 'Add distilled water to 1 liter.' Calculation: 120 g / 1 L = 120 g/L of this stock, not final medium. No molecular-weight conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            1
+          ],
+          "old_pointer": [
+            "ingredients",
+            11
+          ],
+          "ingredient": "Potassium chloride",
+          "old": {
+            "value": "139.5",
+            "unit": "MILLIMOLAR"
+          },
+          "proposed": {
+            "value": "10.4",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "KCl 10.4 g",
+            "explanation": "[\"solutions\", 0, \"composition\", 1].concentration and supplied form, locator: 20 X Nitrate salts, row 2. Separate volume excerpt after that table: 'Add distilled water to 1 liter.' Calculation: 10.4 g / 1 L = 10.4 g/L of this stock, not final medium. No molecular-weight conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            2
+          ],
+          "old_pointer": [
+            "ingredients",
+            10
+          ],
+          "ingredient": "Magnesium sulfate heptahydrate",
+          "old": {
+            "value": "42.2",
+            "unit": "MILLIMOLAR"
+          },
+          "proposed": {
+            "value": "10.4",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "MgSO 4 \u00b77H 2 O 10.4 g (5.2 g if anhydrous)",
+            "explanation": "[\"solutions\", 0, \"composition\", 2].concentration and supplied form, locator: 20 X Nitrate salts, row 3. Separate volume excerpt after that table: 'Add distilled water to 1 liter.' Calculation: 10.4 g / 1 L = 10.4 g/L of this stock, not final medium. No molecular-weight conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            3
+          ],
+          "old_pointer": [
+            "ingredients",
+            13
+          ],
+          "ingredient": "Potassium dihydrogen phosphate",
+          "old": {
+            "value": "223.4",
+            "unit": "MILLIMOLAR"
+          },
+          "proposed": {
+            "value": "30.4",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "KH 2 PO 4 30.4 g",
+            "explanation": "[\"solutions\", 0, \"composition\", 3].concentration and supplied form, locator: 20 X Nitrate salts, row 4. Separate volume excerpt after that table: 'Add distilled water to 1 liter.' Calculation: 30.4 g / 1 L = 30.4 g/L of this stock, not final medium. No molecular-weight conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            0
+          ],
+          "old_pointer": [
+            "ingredients",
+            12
+          ],
+          "ingredient": "Zinc sulfate heptahydrate",
+          "old": {
+            "value": "0.07651",
+            "unit": "MILLIMOLAR"
+          },
+          "proposed": {
+            "value": "22",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "ZnSO 4 \u00b77 H 2 O 2.2 g",
+            "explanation": "[\"solutions\", 1, \"composition\", 0].concentration and supplied form, locator: 1000 X Trace elements, row 2. Separate volume excerpt after that table: 'Adjust volume to 100 ml with distilled water.' Calculation: 2.2 g / 0.100 L = 22 g/L of this stock, not final medium. No molecular-weight conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            1
+          ],
+          "old_pointer": [
+            "ingredients",
+            8
+          ],
+          "ingredient": "Boric acid",
+          "old": {
+            "value": "0.1779",
+            "unit": "MILLIMOLAR"
+          },
+          "proposed": {
+            "value": "11",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "H3BO 3 1.1 g",
+            "explanation": "[\"solutions\", 1, \"composition\", 1].concentration and supplied form, locator: 1000 X Trace elements, row 3. Separate volume excerpt after that table: 'Adjust volume to 100 ml with distilled water.' Calculation: 1.1 g / 0.100 L = 11 g/L of this stock, not final medium. No molecular-weight conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            2
+          ],
+          "old_pointer": [
+            "ingredients",
+            7
+          ],
+          "ingredient": "Manganese chloride tetrahydrate",
+          "old": {
+            "value": "0.02526",
+            "unit": "MILLIMOLAR"
+          },
+          "proposed": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "MnCl 2 \u00b74 H 2 O 0.5 g",
+            "explanation": "[\"solutions\", 1, \"composition\", 2].concentration and supplied form, locator: 1000 X Trace elements, row 4. Separate volume excerpt after that table: 'Adjust volume to 100 ml with distilled water.' Calculation: 0.5 g / 0.100 L = 5 g/L of this stock, not final medium. No molecular-weight conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            3
+          ],
+          "old_pointer": [
+            "ingredients",
+            4
+          ],
+          "ingredient": "Ferrous sulfate heptahydrate",
+          "old": {
+            "value": "0.01798",
+            "unit": "MILLIMOLAR"
+          },
+          "proposed": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "FeSO 4 \u00b77 H 2 O 0.5 g",
+            "explanation": "[\"solutions\", 1, \"composition\", 3].concentration and supplied form, locator: 1000 X Trace elements, row 5. Separate volume excerpt after that table: 'Adjust volume to 100 ml with distilled water.' Calculation: 0.5 g / 0.100 L = 5 g/L of this stock, not final medium. No molecular-weight conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            4
+          ],
+          "old_pointer": [
+            "ingredients",
+            3
+          ],
+          "ingredient": "Cobalt chloride hexahydrate",
+          "old": {
+            "value": "0.007145",
+            "unit": "MILLIMOLAR"
+          },
+          "proposed": {
+            "value": "1.7",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "CoCl 2 \u00b76 H 2 O 0.17 g",
+            "explanation": "[\"solutions\", 1, \"composition\", 4].concentration and supplied form, locator: 1000 X Trace elements, row 6. Separate volume excerpt after that table: 'Adjust volume to 100 ml with distilled water.' Calculation: 0.17 g / 0.100 L = 1.7 g/L of this stock, not final medium. No molecular-weight conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            5
+          ],
+          "old_pointer": [
+            "ingredients",
+            6
+          ],
+          "ingredient": "Cupric sulfate pentahydrate",
+          "old": {
+            "value": "0.006408",
+            "unit": "MILLIMOLAR"
+          },
+          "proposed": {
+            "value": "1.6",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "CuSO 4 \u00b75 H 2 O 0.16 g",
+            "explanation": "[\"solutions\", 1, \"composition\", 5].concentration and supplied form, locator: 1000 X Trace elements, row 7. Separate volume excerpt after that table: 'Adjust volume to 100 ml with distilled water.' Calculation: 0.16 g / 0.100 L = 1.6 g/L of this stock, not final medium. No molecular-weight conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            6
+          ],
+          "old_pointer": [
+            "ingredients",
+            5
+          ],
+          "ingredient": "Sodium molybdate dihydrate",
+          "old": {
+            "value": "0.006199",
+            "unit": "MILLIMOLAR"
+          },
+          "proposed": {
+            "value": "1.5",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "Na 2 MoO 4 \u00b72 H 2 O 0.15 g",
+            "explanation": "[\"solutions\", 1, \"composition\", 6].concentration and supplied form, locator: 1000 X Trace elements, row 8. Separate volume excerpt after that table: 'Adjust volume to 100 ml with distilled water.' Calculation: 0.15 g / 0.100 L = 1.5 g/L of this stock, not final medium. No molecular-weight conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            7
+          ],
+          "old_pointer": [
+            "ingredients",
+            1
+          ],
+          "ingredient": "Tetrasodium EDTA",
+          "old": {
+            "value": "0.1315",
+            "unit": "MILLIMOLAR"
+          },
+          "proposed": {
+            "value": "50",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "Na 4 EDTA 5 g",
+            "explanation": "[\"solutions\", 1, \"composition\", 7].concentration and supplied form, locator: 1000 X Trace elements, row 9. Separate volume excerpt after that table: 'Adjust volume to 100 ml with distilled water.' Calculation: 5 g / 0.100 L = 50 g/L of this stock, not final medium. No molecular-weight conversion. Hydrate alternatives are not combined. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            2,
+            "composition",
+            0
+          ],
+          "old_pointer": [
+            "ingredients",
+            9
+          ],
+          "ingredient": "Thiamine",
+          "old": {
+            "value": "0.03769",
+            "unit": "MILLIMOLAR"
+          },
+          "proposed": null,
+          "status": "correct",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "1% thiamine 1 ml",
+            "explanation": "[\"solutions\", 2, \"composition\", 0]: MM thiamine-solution row. Source specifies a '1%' thiamine solution but does not define the percentage basis or supplied chemical form. Its 1 mL/L addition is known; stock mass/molar strength and final thiamine molarity remain unresolved. The former 0.03769 mM assertion is withdrawn. Existing identity links are retained, not certified as the supplied form. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1
+          ],
+          "ingredient": "Distilled water",
+          "old": null,
+          "proposed": null,
+          "status": "not_quantified",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "Make to 1 liter with distilled water.",
+            "explanation": "ingredients[1]: MM preparation paragraph; final-volume makeup. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "composition",
+            8
+          ],
+          "ingredient": "Potassium hydroxide",
+          "old": null,
+          "proposed": null,
+          "status": "not_quantified",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "Adjust pH to 6.5 with KOH.",
+            "explanation": "solutions[1].composition[8]: trace-stock preparation; titration only, not a fixed KOH dose. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "composition",
+            0
+          ],
+          "ingredient": "Sodium hydroxide",
+          "old": null,
+          "proposed": {
+            "value": "1",
+            "unit": "MOLAR"
+          },
+          "status": "add",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "Adjust pH to 6.5 with 1M NaOH.",
+            "explanation": "solutions[3].composition[0].concentration: 1 M titrant strength from MM preparation, not its final-medium concentration. No fixed stock addition volume is given. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "concentration"
+          ],
+          "ingredient": "20 X Nitrate salts",
+          "old": null,
+          "proposed": {
+            "value": "50",
+            "unit": "ML_PER_L"
+          },
+          "status": "add",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "20X nitrate salts (see below) 50 ml",
+            "explanation": "solutions[0].concentration: 50 mL nitrate stock / 1 L final MM = 50 mL/L. Other exact MM table excerpts: 'Trace elements (see below) 1 ml' and '1% thiamine 1 ml', supporting solutions[1] and [2] at 1 mL/L each. Separate MM preparation paragraph: 'Add nutritional supplements if necessary. Adjust pH to 6.5 with 1M NaOH. Make to 1 liter with distilled water. For solid medium add 18 g agar. Autoclave.' This supports ph_value=6.5, solutions[3] as an unquantified 1 M NaOH titrant, water makeup and preparation_steps including autoclaving, not the former 0.22 um filtration. No autoclave temperature or duration is specified. Optional supplements and solid-medium agar are not unconditional base ingredients. Nitrate preparation excerpt: 'Add distilled water to 1 liter. Autoclave. Store at 4oC.' Trace preparation excerpt: 'Add the compounds in order. Boil. Cool to 60oC. Adjust pH to 6.5 with KOH. Cool to room temperature. Adjust volume to 100 ml with distilled water. With storage this forms a purple solution with a rusty brown precipitate that should be resuspended before use.' The trace table's separate 'distilled water 60 ml' is initial water, not the final stock volume. These excerpts support solutions[0:2].preparation_notes. Withdraw imported stock/final-medium mixing; do not convert through inferred molecular weights or substitute the CM vitamin solution or Hill formulation. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            1,
+            "concentration"
+          ],
+          "ingredient": "1000 X Trace elements",
+          "old": null,
+          "proposed": {
+            "value": "1",
+            "unit": "ML_PER_L"
+          },
+          "status": "add",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "20X nitrate salts (see below) 50 ml",
+            "explanation": "solutions[0].concentration: 50 mL nitrate stock / 1 L final MM = 50 mL/L. Other exact MM table excerpts: 'Trace elements (see below) 1 ml' and '1% thiamine 1 ml', supporting solutions[1] and [2] at 1 mL/L each. Separate MM preparation paragraph: 'Add nutritional supplements if necessary. Adjust pH to 6.5 with 1M NaOH. Make to 1 liter with distilled water. For solid medium add 18 g agar. Autoclave.' This supports ph_value=6.5, solutions[3] as an unquantified 1 M NaOH titrant, water makeup and preparation_steps including autoclaving, not the former 0.22 um filtration. No autoclave temperature or duration is specified. Optional supplements and solid-medium agar are not unconditional base ingredients. Nitrate preparation excerpt: 'Add distilled water to 1 liter. Autoclave. Store at 4oC.' Trace preparation excerpt: 'Add the compounds in order. Boil. Cool to 60oC. Adjust pH to 6.5 with KOH. Cool to room temperature. Adjust volume to 100 ml with distilled water. With storage this forms a purple solution with a rusty brown precipitate that should be resuspended before use.' The trace table's separate 'distilled water 60 ml' is initial water, not the final stock volume. These excerpts support solutions[0:2].preparation_notes. Withdraw imported stock/final-medium mixing; do not convert through inferred molecular weights or substitute the CM vitamin solution or Hill formulation. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            2,
+            "concentration"
+          ],
+          "ingredient": "Thiamine solution (1%)",
+          "old": null,
+          "proposed": {
+            "value": "1",
+            "unit": "ML_PER_L"
+          },
+          "status": "add",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "20X nitrate salts (see below) 50 ml",
+            "explanation": "solutions[0].concentration: 50 mL nitrate stock / 1 L final MM = 50 mL/L. Other exact MM table excerpts: 'Trace elements (see below) 1 ml' and '1% thiamine 1 ml', supporting solutions[1] and [2] at 1 mL/L each. Separate MM preparation paragraph: 'Add nutritional supplements if necessary. Adjust pH to 6.5 with 1M NaOH. Make to 1 liter with distilled water. For solid medium add 18 g agar. Autoclave.' This supports ph_value=6.5, solutions[3] as an unquantified 1 M NaOH titrant, water makeup and preparation_steps including autoclaving, not the former 0.22 um filtration. No autoclave temperature or duration is specified. Optional supplements and solid-medium agar are not unconditional base ingredients. Nitrate preparation excerpt: 'Add distilled water to 1 liter. Autoclave. Store at 4oC.' Trace preparation excerpt: 'Add the compounds in order. Boil. Cool to 60oC. Adjust pH to 6.5 with KOH. Cool to room temperature. Adjust volume to 100 ml with distilled water. With storage this forms a purple solution with a rusty brown precipitate that should be resuspended before use.' The trace table's separate 'distilled water 60 ml' is initial water, not the final stock volume. These excerpts support solutions[0:2].preparation_notes. Withdraw imported stock/final-medium mixing; do not convert through inferred molecular weights or substitute the CM vitamin solution or Hill formulation. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "solutions",
+            3,
+            "concentration"
+          ],
+          "ingredient": "Sodium hydroxide solution (1 M)",
+          "old": null,
+          "proposed": null,
+          "status": "not_quantified",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "20X nitrate salts (see below) 50 ml",
+            "explanation": "solutions[0].concentration: 50 mL nitrate stock / 1 L final MM = 50 mL/L. Other exact MM table excerpts: 'Trace elements (see below) 1 ml' and '1% thiamine 1 ml', supporting solutions[1] and [2] at 1 mL/L each. Separate MM preparation paragraph: 'Add nutritional supplements if necessary. Adjust pH to 6.5 with 1M NaOH. Make to 1 liter with distilled water. For solid medium add 18 g agar. Autoclave.' This supports ph_value=6.5, solutions[3] as an unquantified 1 M NaOH titrant, water makeup and preparation_steps including autoclaving, not the former 0.22 um filtration. No autoclave temperature or duration is specified. Optional supplements and solid-medium agar are not unconditional base ingredients. Nitrate preparation excerpt: 'Add distilled water to 1 liter. Autoclave. Store at 4oC.' Trace preparation excerpt: 'Add the compounds in order. Boil. Cool to 60oC. Adjust pH to 6.5 with KOH. Cool to room temperature. Adjust volume to 100 ml with distilled water. With storage this forms a purple solution with a rusty brown precipitate that should be resuspended before use.' The trace table's separate 'distilled water 60 ml' is initial water, not the final stock volume. These excerpts support solutions[0:2].preparation_notes. Withdraw imported stock/final-medium mixing; do not convert through inferred molecular weights or substitute the CM vitamin solution or Hill formulation. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "variants",
+            0
+          ],
+          "ingredient": "Anhydrous magnesium sulfate option",
+          "old": null,
+          "proposed": [
+            "In the 20X nitrate stock, replace 10.4 g magnesium sulfate heptahydrate per 1 L stock with 5.2 g anhydrous magnesium sulfate per 1 L stock. Keep the stock addition at 50 mL/L final medium."
+          ],
+          "status": "add",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "MgSO 4 \u00b77H 2 O 10.4 g (5.2 g if anhydrous)",
+            "explanation": "variants[0]: nitrate-stock magnesium row, source-explicit alternative, not an extra ingredient. Separate volume excerpt: 'Add distilled water to 1 liter.' Thus 5.2 g / 1 L = 5.2 g/L anhydrous salt in stock; 5.2 * 0.050 = 0.26 g/L final medium. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        },
+        {
+          "pointer": [
+            "variants",
+            1
+          ],
+          "ingredient": "Solid minimal medium",
+          "old": null,
+          "proposed": [
+            "Add 18 g agar to the one-litre MM preparation for solid medium; retain the source's autoclaving step."
+          ],
+          "status": "add",
+          "evidence": {
+            "reference": "https://www.fgsc.net/fgn48/Kaminskyj.htm",
+            "supports": "SUPPORT",
+            "snippet": "For solid medium add 18 g agar.",
+            "explanation": "variants[1]: MM preparation, not CM (which instead specifies 15 g). Separate excerpt: 'Make to 1 liter with distilled water.' Source states 18 g per one-litre preparation; no separate post-agar final volume is invented. Base remains LIQUID. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09."
+          }
+        }
+      ],
+      "unresolved": [
+        "Thiamine percentage basis and supplied form are unspecified; no fixed mass/molar strength.",
+        "NaOH and KOH titration amounts are not quantified; water makeup is not a fixed input dose.",
+        "Tetrasodium EDTA has no exact packaged MIM resolution; no hydrate or ontology ID inferred.",
+        "Optional auxotroph supplements are strain-dependent and are not added to the base recipe.",
+        "Existing bacterial filing, high_metal flag and generic applications are retained but not validated by this ingredient correction; the protocol concerns Aspergillus nidulans.",
+        "No new taxa-media associations. No source-version merge with Hill's different formulation."
+      ],
+      "counts": {
+        "new_evidence": 20,
+        "new_references": 2,
+        "new_curation_history": 1,
+        "stock_nodes_relocated": 13,
+        "quantity_corrections": 13,
+        "unsupported_quantity_slots_removed": 1,
+        "new_quantity_slots": 4,
+        "stock_descriptors_added": 4,
+        "inline_variant_options_added": 2,
+        "supplied_hydrate_identities_corrected": 7,
+        "ingredient_labels_corrected": 8,
+        "water_input_nodes_added": 1,
+        "unquantified_ingredient_nodes_added": 1,
+        "preparation_records_restored": 1
+      }
+    }
+  ],
+  "commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f"
+}

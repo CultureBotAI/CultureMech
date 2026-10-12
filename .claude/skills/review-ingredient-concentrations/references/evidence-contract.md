@@ -34,7 +34,7 @@ without inventing a DOI, PURL, quote, or publication date.
 | --- | --- |
 | Ingredient amount | `IngredientDescriptor.concentration`: string `value`, `ConcentrationUnitEnum` `unit`, optional consistent `per_volume`. Applies to `ingredients[]`, stock `composition[]`, and nested compositions. |
 | Evidence for that ingredient amount | The ingredient's `evidence[]`: `reference`, `supports: SUPPORT`, `snippet`, `explanation`. Explicitly scope the explanation to concentration, not just ingredient role. |
-| Stock addition amount within a `MediaRecipe` | `solutions[...].concentration`, with evidence in the enclosing recipe's `evidence[]` and the full solution/field path in `explanation`. |
+| Stock addition amount within a `MediaRecipe` or standalone `SolutionRecipe` | `solutions[...].concentration`, with evidence in the enclosing root recipe's `evidence[]` and the full solution/field path and preparation stage in `explanation`. |
 | Inline variant formulation | Evidence on the matching `variants[].evidence[]`, with the exact modification identified. Do not alter the parent's ingredient amount. |
 | Bibliographic metadata | Root `references[]`: `reference`, `title`, `authors` (string), `year` (integer), and `notes`. |
 | Discovery/source context | `references[].notes`: `source_type=...; discovery_mode=...; accessed_on=YYYY-MM-DD`, plus version/locator where useful. |
@@ -49,12 +49,16 @@ supported field and ingredient.
 
 `ConcentrationValue` has no `evidence`, `doi`, `purl`, or `snippet` slot.
 `SolutionDescriptor` has no `evidence` slot. Do not add either. A standalone
-`SolutionRecipe` has ingredient-level evidence on `composition[]`, but no root
-`evidence` slot. For a stock-addition claim in that record, an existing,
-appropriate `source_data.evidence[]` container may carry scoped evidence;
-preserve its required `origin` and provenance meaning. If there is no appropriate
-container, report `schema_gap` instead of fabricating one. Never infer a universal
-stock working dose from how one receiving medium uses it.
+`SolutionRecipe` has ingredient-level evidence on `composition[]` and optional
+root `evidence[]` for formulation, nested stock additions and preparation claims.
+For any nested stock dose, use the enclosing root's evidence and identify the
+full path (for example `solutions[0].solutions[1].concentration`) and stage.
+Do not attach that claim to an unrelated ingredient. Preserve any existing,
+appropriate `source_data.evidence[]` and its import-provenance meaning; do not
+fabricate `source_data.origin` to hold new curation evidence. If the current
+schema cannot faithfully represent a claim, report `schema_gap` instead of
+inventing a slot. Never infer a universal stock working dose from how one
+receiving medium uses it.
 
 Each `evidence[]` list uses `reference` as its identifier. Reuse/extend an entry
 for the same reference without erasing its earlier claims. When one source

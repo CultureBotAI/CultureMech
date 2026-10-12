@@ -1,0 +1,53 @@
+{
+  "terminal": true,
+  "phase": "corpus",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-middlebrook-linked/strict-errors.tsv"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/corpus-0.log",
+      "log_sha256": "4645579faf8ca8e7dd675ee6a7c24bd4053cb03480c919c3e9381c9249710192"
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/corpus-1.log",
+      "log_sha256": "eb7360e4d6ac289a3c075ae3f26d2a32b53e6b2da8d03073cfda3e697295cbc0"
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-middlebrook-linked/corpus-2.log",
+      "log_sha256": "822a4cd92a2720573e9b6102e1d2a63103b0b358db8912942905eaed91b609e9"
+    }
+  ],
+  "code_sha256": {
+    "scripts/repair_linked_middlebrook.py": "b6571c6b97979de2b2ee7b16b4c3bc071d17467ef57fa104e5902d8e1a6658f1",
+    "tests/test_linked_middlebrook.py": "e95182859d2d576c3266645dd2abbbfa34314c4ed9d20de0f4c3ea019a2f6034",
+    "reports/ingredient_concentration_curation/20261009-middlebrook-linked/audit.py": "807c71a2ea7076245bb0ee989868f81ce24a673e53f6c7462daaf2f47396a73b"
+  },
+  "plan_sha256": "8d9b1352d5227111048a31411104b8a6c255819111fd4e1153917b29ea74074a",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "586888cea49e962e3fe4ccbe021599c5c21ee5f15e4aae265f5bdfe305ce8bb0"
+  },
+  "strict_scanned": 15910,
+  "global_variant_findings": [],
+  "cohort_variant_findings": [],
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "586888cea49e962e3fe4ccbe021599c5c21ee5f15e4aae265f5bdfe305ce8bb0"
+  }
+}

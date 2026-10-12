@@ -1,0 +1,78 @@
+{
+  "terminal": true,
+  "phase": "retention",
+  "checks": [],
+  "source_sha256": "2be09e9249a816360bba52b76c1f3d889e12aae7bfd90d12771f117acb01a0d1",
+  "plan_sha256": "47771aa8b0a5d36a7ae339456df36304c2cdabd7508ec526f8f269106bb14332",
+  "input_records": 15910,
+  "grouped_records": 10785,
+  "output_groups": 10779,
+  "routing": {
+    "total_processed": 15910,
+    "excluded_solutions": 4785,
+    "skipped_no_fingerprint": 2,
+    "skipped_error": 338,
+    "successfully_fingerprinted": 10785,
+    "reasons": {
+      "other_error": 338,
+      "no_valid_ingredients": 2
+    }
+  },
+  "targets": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M694_Ruminococcus_Albus_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M694_Ruminococcus_Albus_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/fatty_acid_mixture_medium_436.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/fatty_acid_mixture_medium_436.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_436_modified_for_dsm_18848.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_436_modified_for_dsm_18848.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ruminococcus_albus_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/ruminococcus_albus_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ruminococcus_albus_medium_maltose_1g_l_starch_1g_l.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/ruminococcus_albus_medium_maltose_1g_l_starch_1g_l.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    }
+  ],
+  "excluded_solution_paths": [
+    "data/normalized_yaml/bacterial/mediadive_882_Main_sol_436.yaml",
+    "data/normalized_yaml/bacterial/mediadive_883_Mineral_solution_1.yaml",
+    "data/normalized_yaml/bacterial/mediadive_884_Mineral_solution_2.yaml",
+    "data/normalized_yaml/bacterial/mediadive_885_Fatty_acid_mixture.yaml"
+  ],
+  "derived_yaml_written": false
+}

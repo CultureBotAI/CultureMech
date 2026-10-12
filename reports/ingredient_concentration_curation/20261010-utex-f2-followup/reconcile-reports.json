@@ -1,0 +1,25 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "reports",
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "reports": [
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-utex-f2/records/f-2-medium.md",
+      "before_sha256": "16186c8062c324599b54e3579250cc0132c9460ab7c4b6d8a660d07117560a8f",
+      "sha256": "d4bbd7112c6de30ae8fc8fc0eefb77d0ad1590e86e06fe7b6863d6f4deb79922",
+      "successor_claim_rows": 5,
+      "previous_report": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/previous-reports/f-2-medium.txt"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261010-utex-f2/records/f-2-nh4-medium.md",
+      "before_sha256": "c2250bf73dc042aa87372cf158c1efacf5e3b25e698764255cff4915e848f742",
+      "sha256": "6cabfc91b7ab7b9ed3b452497f8ccff0b17ce667d341284753725129dace6ef2",
+      "successor_claim_rows": 2,
+      "previous_report": "reports/ingredient_concentration_curation/20261010-utex-f2-followup/previous-reports/f-2-nh4-medium.txt"
+    }
+  ],
+  "canonical_coverage_increment": 0,
+  "source_inventory_unchanged": true
+}

@@ -16,6 +16,33 @@ composition:
     label: vitamin B12
     confidence: 0.9
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5351
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Vitamin B12",
+                      "compound_id": 18,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 20,
+                      "unit": "mg",
+                      "g_l": 0.02,
+                      "mmol_l": 0.0147558,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Vitamin
+      B12) in MediaDive solution 5351; locator=$.data.recipe[1] (compound_id=18).
+      Provider explicitly reports g_l=0.02. Arithmetic check: 20 mg * 0.001 g/mg /
+      (1000 ml / 1000 ml per L) = 0.020 g/L, consistent with the reported value at
+      its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:53:56.673283+00:00;
+      response SHA256=70d00c4b432f06f04380fd8041c16b5f84dc757357f551a97e5c3482d6ae6aed.'
 - preferred_term: L-Ascorbic acid
   concentration:
     value: '0.005'
@@ -28,6 +55,33 @@ composition:
     label: L-ascorbic acid
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5351
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "L-Ascorbic acid",
+                      "compound_id": 701,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "mg",
+                      "g_l": 0.005,
+                      "mmol_l": 0.0283897,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (L-Ascorbic
+      acid) in MediaDive solution 5351; locator=$.data.recipe[2] (compound_id=701).
+      Provider explicitly reports g_l=0.005. Arithmetic check: 5 mg * 0.001 g/mg /
+      (1000 ml / 1000 ml per L) = 0.005 g/L, consistent with the reported value at
+      its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:53:56.673283+00:00;
+      response SHA256=70d00c4b432f06f04380fd8041c16b5f84dc757357f551a97e5c3482d6ae6aed.'
 - preferred_term: Nicotinamide
   concentration:
     value: '0.005'
@@ -40,6 +94,33 @@ composition:
     label: nicotinamide
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5351
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Nicotinamide",
+                      "compound_id": 337,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "mg",
+                      "g_l": 0.005,
+                      "mmol_l": 0.0409433,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Nicotinamide)
+      in MediaDive solution 5351; locator=$.data.recipe[3] (compound_id=337). Provider
+      explicitly reports g_l=0.005. Arithmetic check: 5 mg * 0.001 g/mg / (1000 ml
+      / 1000 ml per L) = 0.005 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:53:56.673283+00:00;
+      response SHA256=70d00c4b432f06f04380fd8041c16b5f84dc757357f551a97e5c3482d6ae6aed.'
 curation_history:
 - timestamp: '2026-03-13T06:20:36.681755Z'
   curator: culturemech-id-assigner-v1.0
@@ -73,6 +154,18 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5351
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.02"} ->
+    {"unit": "G_PER_L", "value": "0.02"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.005"} -> {"unit": "G_PER_L", "value": "0.005"}
+    (evidence_only); composition[2].concentration: {"unit": "G_PER_L", "value": "0.005"}
+    -> {"unit": "G_PER_L", "value": "0.005"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -81,3 +174,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5351
+  title: 'MediaDive solution 5351: Vitamin solution'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=70d00c4b432f06f04380fd8041c16b5f84dc757357f551a97e5c3482d6ae6aed;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

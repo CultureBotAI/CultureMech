@@ -1,0 +1,73 @@
+{
+  "terminal": true,
+  "phase": "focused",
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_allisonella_acids.py",
+        "tests/test_allisonella_acids.py",
+        "reports/ingredient_concentration_curation/20261009-allisonella-acids/audit.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-allisonella-acids/focused-0.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_allisonella_acids.py",
+        "tests/test_allisonella_acids.py",
+        "reports/ingredient_concentration_curation/20261009-allisonella-acids/audit.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-allisonella-acids/focused-1.log",
+      "log_sha256": "45a468fa6205768496f23f1716ebb7575e9b723449d2099b88bf2afef60b721f"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_allisonella_acids.py",
+        "tests/test_lactalbumin_formulations.py",
+        "tests/test_recipe_references.py",
+        "tests/test_recipe_pdf_references.py",
+        "tests/test_recipe_komodo_references.py",
+        "tests/test_recipe_nbrc_references.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-allisonella-acids/focused-2.log",
+      "log_sha256": "cc7acd9ddbdfc181459bb95a261bd1c886e9dafbe541ad2320928de9520dfc14"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-allisonella-acids/focused-3.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "code_sha256": {
+    "scripts/repair_allisonella_acids.py": "afc95c9898218db0962b967e8a3189663e1a15ae393e9ef09faa87fbc145f390",
+    "tests/test_allisonella_acids.py": "e8ff482a4a799b5d7bde7bbdf1a7b0bc26e48b761e5f4c35377f00033bb1d5d4",
+    "reports/ingredient_concentration_curation/20261009-allisonella-acids/audit.py": "3d9dd9ae97cf62179e59e1f08506889747b22ce24c30d8336f5cf74596557f80"
+  },
+  "plan_sha256": "c42cb613f1e5e24c2383349e4869862808f7aebce7ab75463be77af2f0d3af18",
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "586888cea49e962e3fe4ccbe021599c5c21ee5f15e4aae265f5bdfe305ce8bb0"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "586888cea49e962e3fe4ccbe021599c5c21ee5f15e4aae265f5bdfe305ce8bb0"
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "terminal": true,
+  "passed": true,
+  "records": [
+    {
+      "key": "328",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_ethanol_12_5g_msg.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "324",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_12_5g_msg.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "329",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_20g_lactose_12_5g_msg.yaml",
+      "database_rows_rechecked": 13,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 3
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "327",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glycerol_12_5g_msg.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "334",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_11g_ammonium_acetate.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "341",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_arginine.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "340",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_glycine.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "339",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_histidine.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "342",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_isoleucine.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "318",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_msg.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "332",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_13_7g_diammonium_tartrate.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "338",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_18g_msg.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "336",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4_5g_urea.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "333",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4g_ammonium_nitrate.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "335",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4g_sodium_nitrate.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "337",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_7g_msg.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "326",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_lactose_12_5g_msg.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "325",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_70g_glucose_12_5g_msg.yaml",
+      "database_rows_rechecked": 12,
+      "source_links": [
+        "/defined_media/sources/",
+        "/defined_media/sources/121/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 10,
+        "correct": 2
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "331",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_20g_ethanol_12_5g_msg.yaml",
+      "database_rows_rechecked": 13,
+      "source_links": [
+        "/defined_media/sources/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 13
+      },
+      "inverse_operation_check_passed": true
+    },
+    {
+      "key": "330",
+      "path": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_20g_glycerol_12_5g_msg.yaml",
+      "database_rows_rechecked": 13,
+      "source_links": [
+        "/defined_media/sources/"
+      ],
+      "molybdate_compound_link_rechecked": true,
+      "quantity_statuses": {
+        "unsupported": 13
+      },
+      "inverse_operation_check_passed": true
+    }
+  ],
+  "records_edited": 0,
+  "plan_sha256": "44b46346ba0b4dca764d101d6b6590ab0971f5a69be711877ad7ccf0a560c44a",
+  "source_sha256": "c17680f0b36bb27d61ee30662964506f810580e4203ecdacc517ff3f0c1a4b5b",
+  "raw_primary_article_capture_asserted": false,
+  "automated_live_reference_pass_asserted": false
+}

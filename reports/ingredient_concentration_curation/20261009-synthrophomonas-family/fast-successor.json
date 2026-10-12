@@ -1,0 +1,27 @@
+{
+  "terminal": true,
+  "phase": "fast",
+  "records_applied": 0,
+  "checks": [
+    {
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "returncode": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/fast-successor-0.log",
+      "log_sha256": "97ace2bf98bf175172eb4047cf8aea954b93d8b20c53da7e3cbea74802d0c978"
+    }
+  ],
+  "errors": [],
+  "code_sha256": {
+    "scripts/repair_synthrophomonas_family.py": "87e5d43c1f0cec789174882c419f7bca58831029bb9a1febe0e81222c2f7ec31",
+    "tests/test_synthrophomonas_family.py": "7ce9eb207f9b027c1380ff827e11a6799bb4459086e61fcd63e66fe3a1888b21",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/audit.py": "e21d75bf5b782c9eba2df6e30ced68989d9bfcc2000bf1b9066cdf04e2a47458"
+  },
+  "plan_sha256": "496c0f734f231756ee97a80021429802c1af9136472b77798c9f2162ad4b2d4c",
+  "context_sha256": "1d9b09a2915e57c4f212f1de08bb1a5ada6b2a4b8a47b6b6c5d528d00250e84a",
+  "inventory_before": "3e69263bb0c82e782c51c5a994945630fbf3a3b9f685248e16d7daf3367f05fc",
+  "ignored_files_included": true,
+  "all_checks_passed": true
+}

@@ -1,0 +1,24 @@
+# Solution Concentration Review: Solution 2
+
+- Record: data/normalized_yaml/bacterial/mediadive_2180_Solution_2.yaml
+- ID: CultureMech:011571
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `3082b673350c0c71de72c8d57fc2dd718561858b3767f972521b16e0e9706d06`
+- Proposed/result SHA256: `3082b673350c0c71de72c8d57fc2dd718561858b3767f972521b16e0e9706d06`
+- Source: https://mediadive.dsmz.de/rest/solution/2180
+- Source SHA256: 03a6fab81c4d610cf5424e08bec295b490a565e1b2769fafab91d4acfa77a9a1
+- Retrieved: 2026-10-07T09:09:49.532530+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: reviewed; unchanged; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `composition[0].concentration` | Horse serum | {"unit": "PERCENT_V_V", "value": "935.0"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/2180 | {<br>                "recipe_order": 1,<br>                "compound": "Horse serum",<br>                "compound_id": 146,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": "inactivated",<br>                "amount": 18.7,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[0] (compound_id=146) | Source attribute may encode stock strength, material grade, or preparation context; not discarded. | unchanged |
+| `composition[1].concentration` | Yeast extract | {"unit": "G_PER_L", "value": "0.234"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/2180 | {<br>                "recipe_order": 2,<br>                "compound": "Yeast extract",<br>                "compound_id": 16,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": "25%, autoclaved",<br>                "amount": 0.936,<br>                "unit": "ml",<br>                "g_l": 0.234,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[1] (compound_id=16) | Source attribute may encode stock strength, material grade, or preparation context; not discarded. | unchanged |
+| `composition[2].concentration` | Fish-Sperm DNA | {"unit": "PERCENT_V_V", "value": "9.35"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/2180 | {<br>                "recipe_order": 3,<br>                "compound": "Fish-Sperm DNA",<br>                "compound_id": 976,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": "filter-sterilized",<br>                "amount": 0.187,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[2] (compound_id=976) | Source attribute may encode stock strength, material grade, or preparation context; not discarded. | unchanged |
+| `composition[3].concentration` | Distilled water | {"unit": "PERCENT_V_V", "value": "9.35"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/2180 | {<br>                "recipe_order": 4,<br>                "compound": "Distilled water",<br>                "compound_id": 4,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 0.187,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[3] (compound_id=4) | Preparation steps may specify make-up volume; manual water review required | unchanged |
+| `ingredients[0].concentration` | See source for composition | {"unit": "VARIABLE", "value": "variable"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Outside direct composition matching; unchanged. | unchanged |

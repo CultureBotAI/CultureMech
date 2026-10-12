@@ -80,7 +80,8 @@ def _dataclasses_module():
     return module
 
 
-def test_every_schema_slot_reaches_the_dataclasses() -> None:
+@pytest.mark.parametrize("class_name", ["MediaRecipe", "SolutionRecipe"])
+def test_every_schema_slot_reaches_the_dataclasses(class_name: str) -> None:
     """Catches drift even if pythongen itself is unavailable in this env.
 
     Narrower than the full text comparison above, but it runs everywhere. Reads
@@ -89,10 +90,10 @@ def test_every_schema_slot_reaches_the_dataclasses() -> None:
     reports false drift on them.
     """
     schema = yaml.safe_load(SCHEMA.read_text())
-    declared = set(schema["classes"]["MediaRecipe"]["attributes"])
-    generated = {f.name for f in dataclasses.fields(_dataclasses_module().MediaRecipe)}
+    declared = set(schema["classes"][class_name]["attributes"])
+    generated = {f.name for f in dataclasses.fields(getattr(_dataclasses_module(), class_name))}
     missing = sorted(declared - generated)
-    assert not missing, f"{STALE_HINT}: MediaRecipe slots absent: {missing}"
+    assert not missing, f"{STALE_HINT}: {class_name} slots absent: {missing}"
 
 
 def test_every_schema_enum_reaches_the_dataclasses() -> None:

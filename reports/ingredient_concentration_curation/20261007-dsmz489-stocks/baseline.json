@@ -1,0 +1,77 @@
+{
+  "terminal": true,
+  "runtime": "Isolated Python 3.11; cached Python 3.13 explicitly identified. Not maintained-project CI.",
+  "checks": [
+    {
+      "name": "tests",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_dsmz489_stocks.py",
+        "tests/test_medium_concentration_review.py",
+        "tests/test_solution_concentration_review.py",
+        "--junitxml",
+        "/tmp/ingredient-media-20261007/dsmz489-baseline-tests.xml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-baseline-tests.log"
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-baseline-strict.log"
+    },
+    {
+      "name": "dsmz-schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/lacrimispora_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-baseline-dsmz-schema.log"
+    },
+    {
+      "name": "komodo-schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-baseline-komodo-schema.log"
+    },
+    {
+      "name": "solution-schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_995_Main_sol_489.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz489-baseline-solution-schema.log"
+    }
+  ],
+  "test_suites": {
+    "tests": [
+      {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "184",
+        "time": "12.924",
+        "timestamp": "2026-10-07T18:13:01.257491-07:00",
+        "hostname": "Marcins-MacBook-Pro-2.local"
+      }
+    ]
+  }
+}

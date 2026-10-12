@@ -1,0 +1,16 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "retention",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "group_paths": [
+    "data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml"
+  ],
+  "errors": [],
+  "schema_errors": [],
+  "derived_yaml_written": false,
+  "input_records": 15910,
+  "output_groups": 10781,
+  "source_inventory_unchanged": true
+}

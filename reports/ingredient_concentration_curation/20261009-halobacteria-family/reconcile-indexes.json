@@ -1,0 +1,25 @@
+{
+  "terminal": true,
+  "phase": "indexes",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/generate_recipe_indexes.py",
+        "--recipe-dir",
+        "data/normalized_yaml",
+        "--output-dir",
+        "/tmp/ingredient-media-20261007/jcm168-index-preview"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-halobacteria-family/reconcile-indexes-0.log",
+      "log_sha256": "e090f2c68ac0a3691d6526137f8cff88d8a0209418169490898f366ae0175687"
+    }
+  ],
+  "errors": [],
+  "source_sha256": "4c2df727dbf13031b4473181f389ab53b3fa59f048abbec823a314bba3a5bd94",
+  "plan_sha256": "53bccdac789d6ff3e8cbb3df230fa241d0da39b21ed2acc5b11fd2367b7036be",
+  "ignored_files_included": true,
+  "applied_files": 3,
+  "unique_records": 2
+}

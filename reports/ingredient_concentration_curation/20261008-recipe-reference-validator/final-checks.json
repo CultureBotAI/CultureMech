@@ -1,0 +1,136 @@
+{
+  "terminal": true,
+  "publication_ready": false,
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "src/culturemech/validation/recipe_references.py",
+        "scripts/validate_recipe_references.py",
+        "scripts/validate_strict.py",
+        "tests/test_recipe_references.py",
+        "tests/test_recipe_excerpt_repair.py",
+        "tests/test_medium_concentration_batch.py",
+        "reports/ingredient_concentration_curation/20261008-recipe-reference-validator/repair_excerpts.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/reference-final-ruff.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "src/culturemech/validation/recipe_references.py",
+        "scripts/validate_recipe_references.py",
+        "tests/test_recipe_references.py",
+        "tests/test_recipe_excerpt_repair.py",
+        "tests/test_medium_concentration_batch.py",
+        "reports/ingredient_concentration_curation/20261008-recipe-reference-validator/repair_excerpts.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/reference-final-black.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/reference-final-diff.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_recipe_references.py",
+        "tests/test_recipe_excerpt_repair.py",
+        "tests/test_record_target_class.py",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_m142_nested_traces.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/reference-final-focused.log"
+    }
+  ],
+  "normalized_after_sha256": "20a465aaa26a04df33252f3174924bc43dffd7758acc691cdaf8c13e85aa03bd",
+  "only_two_excerpt_records_changed": true,
+  "records": {
+    "data/normalized_yaml/bacterial/TOGO_M933_MMJYP2_For_AC55.yaml": "994bafcf34fadc41d5a5afe2d02229f15529c3315f838e488dcdff1845e5f5a4",
+    "data/normalized_yaml/bacterial/TOGO_M1390_MMJ_KT2_Medium.yaml": "3911de1cf3df267bf719e757a472ac311213a0ab9f915348d71c0232b244a7da"
+  },
+  "canonical_reports": {
+    "data/normalized_yaml/bacterial/TOGO_M933_MMJYP2_For_AC55.yaml": "reports/ingredient_concentration_curation/20261008-m142-nested-traces/records/M933.md",
+    "data/normalized_yaml/bacterial/TOGO_M1390_MMJ_KT2_Medium.yaml": "reports/ingredient_concentration_curation/20261008-m142-nested-traces/records/M1390.md"
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 585,
+    "new_quantity_slots": 247,
+    "unsupported_quantity_slots_removed": 419,
+    "new_evidence": 31168,
+    "new_curation_history": 5338,
+    "new_references": 5496,
+    "stock_stage_concentrations_rebased": 137,
+    "stock_descriptors_added": 181,
+    "quantity_corrections": 1404,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 264,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 5,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 77,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 7,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 14,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "stock_dose_basis_corrections": 55,
+    "child_links_corrected": 5,
+    "preparation_steps_relocated": 9,
+    "water_input_notes_added": 9,
+    "inline_variant_options_added": 8,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 5,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "variant_links_added": 2,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5134
+  },
+  "code_sha256": {
+    "src/culturemech/validation/recipe_references.py": "1d156b6c20606671ef65d9a4263f94a34a669d6a09c210edb5af60264e57d9ef",
+    "scripts/validate_recipe_references.py": "087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b",
+    "scripts/validate_strict.py": "d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68",
+    "tests/test_recipe_references.py": "59d055b9239b03b3794ec5297f23c4b1ecb09e7984b252b4337755b86cf0f7ab",
+    "tests/test_recipe_excerpt_repair.py": "39f8b3e0522f8ffb3a6d588da134497d32662922be03cfdf00e148a21d6de882",
+    "tests/test_medium_concentration_batch.py": "e676ee0ce82e676388db9248e3038094ba8e45260fcc5add1da1a4242d4a6ed9",
+    "reports/ingredient_concentration_curation/20261008-recipe-reference-validator/repair_excerpts.py": "39bd2998435662d21140e741e3644e52ee915c3ec26aafb374237d8ca63c93f4",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "0c3655febff9b6a8604374cc3ce9f43e7465edbe86275c7ba10a06b16d422d1c"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "terminal": true,
+  "publication_ready": false,
+  "records": {
+    "data/normalized_yaml/archaea/JCM_J151_PYROCOCCUS_MEDIUM.yaml": "63166481e75d72e9ce3347dbf0c69f41161cfe6b8a4f9dca1b86ebfb0f99de06",
+    "data/normalized_yaml/archaea/desulfurococcus_amylolyticus_medium.yaml": "c8c4b6e2c64a893a85182cfc495c15def12935a053c45fb6ed8d9efa9dae46fe",
+    "data/normalized_yaml/bacterial/jcm_medium_no_197.yaml": "3acdd51e573c77b1df6ecc6a7313bd04950e9cd5efce1260c97a729f0d11a3e1",
+    "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml": "79927889e0fb559eb94db11d6d6c019f212df8168b6e780862a747318b97e96b",
+    "data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml": "5d4cf1d8c967ba57f9ecc15143ebbe65a2d8d6f7b0944cf21e59388d04285331",
+    "data/normalized_yaml/bacterial/togo_medium_m190.yaml": "b1924e7eb436d56c5bd4826f07cafff130341054acfd808fb1c9e5bca914e3fa"
+  },
+  "normalized_source_sha256": "8569699adb42e2fe6cb80997535456aecf4ebb9822f7fa34267574fe5a5234fb",
+  "only_reviewed_sources_changed": true,
+  "refreshed_indexes_and_statistics_verified": 6,
+  "canonical_record_reports": {
+    "data/normalized_yaml/archaea/JCM_J151_PYROCOCCUS_MEDIUM.yaml": [
+      "reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/archaea/JCM_J151_PYROCOCCUS_MEDIUM.yaml.md"
+    ],
+    "data/normalized_yaml/archaea/desulfurococcus_amylolyticus_medium.yaml": [
+      "reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/archaea/desulfurococcus_amylolyticus_medium.yaml.md"
+    ],
+    "data/normalized_yaml/bacterial/jcm_medium_no_197.yaml": [
+      "reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/jcm_medium_no_197.yaml.md"
+    ],
+    "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml": [
+      "reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/records/M142.md"
+    ],
+    "data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml": [
+      "reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/records/M180.md"
+    ],
+    "data/normalized_yaml/bacterial/togo_medium_m190.yaml": [
+      "reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/records/M190.md"
+    ]
+  },
+  "code_sha256": {
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "tests/test_jcm_stock_preparations.py": "d98c41906c3c36f67dc8acdb8508cac7385e9cb3b183319093c3bceed44f55ff",
+    "reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/audit.py": "99774926e8687cd68014645306928b830edb5865e1ce4e9ba644509834e4232c",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "9ac57a2fce0bec229b4cf67527aba5d867125ec2e366ebfe45bab2ad01d84dd9"
+  },
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_jcm_stock_preparations.py",
+        "scripts/repair_methanogen_stock_boundaries.py",
+        "tests/test_jcm_stock_preparations.py",
+        "reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-stock-final-0.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_jcm_stock_preparations.py",
+        "scripts/repair_methanogen_stock_boundaries.py",
+        "tests/test_jcm_stock_preparations.py",
+        "reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-stock-final-1.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-stock-final-2.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_jcm_stock_preparations.py",
+        "tests/test_methanogen_stock_boundaries.py",
+        "tests/test_recipe_indexes.py",
+        "tests/test_media_content_review_manifest.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/jcm-stock-final-3.log"
+    }
+  ],
+  "failed_broad_gates": [
+    "verify-merges",
+    "freshness"
+  ],
+  "reference_validation_exit_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "literal_capture_matches": 217,
+  "installed_snippet_matches": 213,
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10777,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8732,
+    "changed": 2045,
+    "unchanged": 0
+  }
+}

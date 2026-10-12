@@ -16,6 +16,33 @@ composition:
     label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/723
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.68,
+                      "unit": "g",
+                      "g_l": 0.674603,
+                      "mmol_l": 4.95722,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (KH2PO4)
+      in MediaDive solution 723; locator=$.data.recipe[0] (compound_id=11). Provider
+      explicitly reports g_l=0.674603. Arithmetic check: 0.68 g * 1 g/g / (1008 ml
+      / 1000 ml per L) = 0.6746031746031746031746031746 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1008. Retrieved 2026-10-07T08:46:11.340432+00:00;
+      response SHA256=e3c37fd9c6e26254ae40630237cfc05f799a45e37330a44c521dd40f5818ceba.'
 - preferred_term: NaNO3
   concentration:
     value: '0.119048'
@@ -27,6 +54,33 @@ composition:
     id: CHEBI:63005
     label: sodium nitrate
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/723
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "NaNO3",
+                      "compound_id": 187,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.12,
+                      "unit": "g",
+                      "g_l": 0.119048,
+                      "mmol_l": 1.40064,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (NaNO3)
+      in MediaDive solution 723; locator=$.data.recipe[1] (compound_id=187). Provider
+      explicitly reports g_l=0.119048. Arithmetic check: 0.12 g * 1 g/g / (1008 ml
+      / 1000 ml per L) = 0.1190476190476190476190476190 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1008. Retrieved 2026-10-07T08:46:11.340432+00:00;
+      response SHA256=e3c37fd9c6e26254ae40630237cfc05f799a45e37330a44c521dd40f5818ceba.'
 - preferred_term: L(+)-Tartaric acid
   concentration:
     value: '0.367063'
@@ -39,6 +93,33 @@ composition:
     label: L-tartaric acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/723
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "L(+)-Tartaric acid",
+                      "compound_id": 419,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.37,
+                      "unit": "g",
+                      "g_l": 0.367063,
+                      "mmol_l": 2.44562,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (L(+)-Tartaric
+      acid) in MediaDive solution 723; locator=$.data.recipe[2] (compound_id=419).
+      Provider explicitly reports g_l=0.367063. Arithmetic check: 0.37 g * 1 g/g /
+      (1008 ml / 1000 ml per L) = 0.3670634920634920634920634921 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      1008. Retrieved 2026-10-07T08:46:11.340432+00:00; response SHA256=e3c37fd9c6e26254ae40630237cfc05f799a45e37330a44c521dd40f5818ceba.'
 - preferred_term: Succinic acid
   concentration:
     value: '0.367063'
@@ -51,6 +132,33 @@ composition:
     label: succinic acid
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/723
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Succinic acid",
+                      "compound_id": 83,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.37,
+                      "unit": "g",
+                      "g_l": 0.367063,
+                      "mmol_l": 3.10834,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[3].concentration (Succinic
+      acid) in MediaDive solution 723; locator=$.data.recipe[3] (compound_id=83).
+      Provider explicitly reports g_l=0.367063. Arithmetic check: 0.37 g * 1 g/g /
+      (1008 ml / 1000 ml per L) = 0.3670634920634920634920634921 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      1008. Retrieved 2026-10-07T08:46:11.340432+00:00; response SHA256=e3c37fd9c6e26254ae40630237cfc05f799a45e37330a44c521dd40f5818ceba.'
 - preferred_term: Na-acetate
   concentration:
     value: '0.0496032'
@@ -63,6 +171,33 @@ composition:
     label: sodium acetate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/723
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "Na-acetate",
+                      "compound_id": 23,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.05,
+                      "unit": "g",
+                      "g_l": 0.0496032,
+                      "mmol_l": 0.604668,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (Na-acetate)
+      in MediaDive solution 723; locator=$.data.recipe[4] (compound_id=23). Provider
+      explicitly reports g_l=0.0496032. Arithmetic check: 0.05 g * 1 g/g / (1008 ml
+      / 1000 ml per L) = 0.04960317460317460317460317460 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1008. Retrieved 2026-10-07T08:46:11.340432+00:00;
+      response SHA256=e3c37fd9c6e26254ae40630237cfc05f799a45e37330a44c521dd40f5818ceba.'
 - preferred_term: Yeast extract
   concentration:
     value: '0.0992064'
@@ -107,6 +242,33 @@ composition:
     label: sodium thioglycolate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/723
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 11,
+                      "compound": "Na-thioglycolate",
+                      "compound_id": 30,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.05,
+                      "unit": "g",
+                      "g_l": 0.0496032,
+                      "mmol_l": 0.434738,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[8].concentration (Na-thioglycolate)
+      in MediaDive solution 723; locator=$.data.recipe[10] (compound_id=30). Provider
+      explicitly reports g_l=0.0496032. Arithmetic check: 0.05 g * 1 g/g / (1008 ml
+      / 1000 ml per L) = 0.04960317460317460317460317460 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1008. Retrieved 2026-10-07T08:46:11.340432+00:00;
+      response SHA256=e3c37fd9c6e26254ae40630237cfc05f799a45e37330a44c521dd40f5818ceba.'
 - preferred_term: Distilled water
   concentration:
     value: '992.063492063492'
@@ -184,6 +346,23 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T08:52:28.993811+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/723
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.674603"}
+    -> {"unit": "G_PER_L", "value": "0.674603"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.119048"} -> {"unit": "G_PER_L", "value": "0.119048"}
+    (evidence_only); composition[2].concentration: {"unit": "G_PER_L", "value": "0.367063"}
+    -> {"unit": "G_PER_L", "value": "0.367063"} (evidence_only); composition[3].concentration:
+    {"unit": "G_PER_L", "value": "0.367063"} -> {"unit": "G_PER_L", "value": "0.367063"}
+    (evidence_only); composition[4].concentration: {"unit": "G_PER_L", "value": "0.0496032"}
+    -> {"unit": "G_PER_L", "value": "0.0496032"} (evidence_only); composition[8].concentration:
+    {"unit": "G_PER_L", "value": "0.0496032"} -> {"unit": "G_PER_L", "value": "0.0496032"}
+    (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -192,3 +371,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/723
+  title: 'MediaDive solution 723: Main sol. 380'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=e3c37fd9c6e26254ae40630237cfc05f799a45e37330a44c521dd40f5818ceba;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

@@ -16,6 +16,32 @@ composition:
     label: sodium hydroxide
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4914
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "NaOH",
+                      "compound_id": 256,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.4,
+                      "unit": "g",
+                      "g_l": 0.4,
+                      "mmol_l": 10.0007,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (NaOH) in
+      MediaDive solution 4914; locator=$.data.recipe[0] (compound_id=256). Provider
+      explicitly reports g_l=0.4. Arithmetic check: 0.4 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 0.4 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:48:52.974804+00:00; response SHA256=ca20eef677290d945371c46e94446d51a8679bba970a852825cb104c7c6cc28e.'
 - preferred_term: Na2WO4 x 2 H2O
   concentration:
     value: '0.007'
@@ -28,6 +54,33 @@ composition:
     label: sodium tungstate dihydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4914
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Na2WO4 x 2 H2O",
+                      "compound_id": 249,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 7,
+                      "unit": "mg",
+                      "g_l": 0.007,
+                      "mmol_l": 0.0212218,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Na2WO4
+      x 2 H2O) in MediaDive solution 4914; locator=$.data.recipe[1] (compound_id=249).
+      Provider explicitly reports g_l=0.007. Arithmetic check: 7 mg * 0.001 g/mg /
+      (1000 ml / 1000 ml per L) = 0.007 g/L, consistent with the reported value at
+      its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:48:52.974804+00:00;
+      response SHA256=ca20eef677290d945371c46e94446d51a8679bba970a852825cb104c7c6cc28e.'
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -71,6 +124,16 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:53:16.572361+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/4914
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.4"} -> {"unit":
+    "G_PER_L", "value": "0.4"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "0.007"} -> {"unit": "G_PER_L", "value": "0.007"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -79,3 +142,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/4914
+  title: 'MediaDive solution 4914: Tungstate solution'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=ca20eef677290d945371c46e94446d51a8679bba970a852825cb104c7c6cc28e;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

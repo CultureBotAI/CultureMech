@@ -1,0 +1,12 @@
+{
+  "records": 500,
+  "proposed_changed": 409,
+  "failed": 0,
+  "schema_blocked": 0,
+  "claims": {
+    "unsupported": 2135,
+    "evidence_only": 2086,
+    "conflict": 82,
+    "correct": 114
+  }
+}

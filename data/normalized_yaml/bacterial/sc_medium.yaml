@@ -11,158 +11,239 @@ media_term:
   term:
     id: mediadive.medium:751
     label: SC MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+notes: |-
+  Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
 
-
+  Superseded historical provenance (not a current formulation claim):
   Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
   Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
   Catalog: Multiple (L3522 Sigma, 244520 BD)
-
   Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
   Accessed: 2026-03-28
 
+  Constituent composition researched from product specification.
 
-  Constituent composition researched from product specification.'
+  The LB constituent expansion is withdrawn: the exact DSMZ formulation specifies bovine serum albumin instead. Source batch, stock and receiving-medium scopes are separate; chemical groundings and growth claims are not recertified.
 ingredients:
 - preferred_term: Corn meal agar
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '17'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+  notes: 'Source batch input: 17 g. Final-medium volume is not established; withdraw
+    the unsupported final g/L assertion without replacing it with an assumed one-liter
+    value.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/751
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Corn meal agar",
+                              "compound_id": 702,
+                              "amount": 17,
+                              "unit": "g",
+                              "g_l": 17,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration: Source batch input: 17 g. Final-medium
+      volume is not established; withdraw the unsupported final g/L assertion without
+      replacing it with an assumed one-liter value. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[0];
+      accessed=2026-10-08T21:53:36.903161+00:00; capture SHA256=501b00b176714192767a69a152943f7ba57088645f5f3e7eba91baccefc15ea9.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+    supports: SUPPORT
+    snippet: Corn meal agar                                                               17.0          g
+    explanation: 'ingredients[0].notes: Original corroborates this preparation''s
+      batch input, not a measured final volume. PDF page 1; layout extraction and
+      page image inspected. No final-medium volume, percentage basis, density or chemical
+      grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00;
+      capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.'
 - preferred_term: Soy peptone
-  concentration:
-    value: '8'
-    unit: G_PER_L
+  notes: 'Source batch input: 8 g. Final-medium volume is not established; withdraw
+    the unsupported final g/L assertion without replacing it with an assumed one-liter
+    value.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/751
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Soy peptone",
+                              "compound_id": 75,
+                              "amount": 8,
+                              "unit": "g",
+                              "g_l": 8,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[1].concentration: Source batch input: 8 g. Final-medium
+      volume is not established; withdraw the unsupported final g/L assertion without
+      replacing it with an assumed one-liter value. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[1];
+      accessed=2026-10-08T21:53:36.903161+00:00; capture SHA256=501b00b176714192767a69a152943f7ba57088645f5f3e7eba91baccefc15ea9.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+    supports: SUPPORT
+    snippet: Peptone from soy meal                                                          8.0         g
+    explanation: 'ingredients[1].notes: Original corroborates this preparation''s
+      batch input, not a measured final volume. PDF page 1; layout extraction and
+      page image inspected. No final-medium volume, percentage basis, density or chemical
+      grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00;
+      capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  concentration:
-    value: '1'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  notes: 'Source batch input: 1 g. Final-medium volume is not established; withdraw
+    the unsupported final g/L assertion without replacing it with an assumed one-liter
+    value.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/751
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "K2HPO4",
+                              "compound_id": 10,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "mmol_l": 5.74132,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[2].concentration: Source batch input: 1 g. Final-medium
+      volume is not established; withdraw the unsupported final g/L assertion without
+      replacing it with an assumed one-liter value. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[2];
+      accessed=2026-10-08T21:53:36.903161+00:00; capture SHA256=501b00b176714192767a69a152943f7ba57088645f5f3e7eba91baccefc15ea9.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+    supports: SUPPORT
+    snippet: K2HPO4                                                                         1.0         g
+    explanation: 'ingredients[2].notes: Original corroborates this preparation''s
+      batch input, not a measured final volume. PDF page 1; layout extraction and
+      page image inspected. No final-medium volume, percentage basis, density or chemical
+      grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00;
+      capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-  concentration:
-    value: '1'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  notes: 'Source batch input: 1 g. Final-medium volume is not established; withdraw
+    the unsupported final g/L assertion without replacing it with an assumed one-liter
+    value.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/751
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "KH2PO4",
+                              "compound_id": 11,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "mmol_l": 7.34835,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[3].concentration: Source batch input: 1 g. Final-medium
+      volume is not established; withdraw the unsupported final g/L assertion without
+      replacing it with an assumed one-liter value. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[3];
+      accessed=2026-10-08T21:53:36.903161+00:00; capture SHA256=501b00b176714192767a69a152943f7ba57088645f5f3e7eba91baccefc15ea9.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+    supports: SUPPORT
+    snippet: KH2PO4                                                                         1.0         g
+    explanation: 'ingredients[3].notes: Original corroborates this preparation''s
+      batch input, not a measured final volume. PDF page 1; layout extraction and
+      page image inspected. No final-medium volume, percentage basis, density or chemical
+      grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00;
+      capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-- preferred_term: Hemin
-  term:
-    id: CHEBI:50385
-    label: hemin
-  concentration:
-    value: '0.015'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:50385
-    label: hemin
-- preferred_term: Tryptone
-  term:
-    id: MICRO:0000182
-    label: tryptone
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: yeast extract
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: glucose
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17234
-    label: glucose
-- preferred_term: Cysteine
-  term:
-    id: CHEBI:15356
-    label: cysteine
+  notes: 'Source batch input: 0.2 g. Final-medium volume is not established; withdraw
+    the unsupported final g/L assertion without replacing it with an assumed one-liter
+    value.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/751
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 0.2,
+                              "unit": "g",
+                              "g_l": 0.2,
+                              "mmol_l": 0.811438,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[4].concentration: Source batch input: 0.2 g. Final-medium
+      volume is not established; withdraw the unsupported final g/L assertion without
+      replacing it with an assumed one-liter value. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[4];
+      accessed=2026-10-08T21:53:36.903161+00:00; capture SHA256=501b00b176714192767a69a152943f7ba57088645f5f3e7eba91baccefc15ea9.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+    supports: SUPPORT
+    snippet: MgSO4 x 7 H2O                                                                  0.2         g
+    explanation: 'ingredients[4].notes: Original corroborates this preparation''s
+      batch input, not a measured final volume. PDF page 1; layout extraction and
+      page image inspected. No final-medium volume, percentage basis, density or chemical
+      grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00;
+      capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.'
+- preferred_term: Distilled water
   concentration:
     value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15356
-    label: cysteine
+    unit: L
+  notes: 'Source water batch input: 1000 ml / 1000 = 1 L in this preparation only,
+    not a measured final volume.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/751
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 7,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[5].concentration: Source water batch input: 1000 ml
+      / 1000 = 1 L in this preparation only, not a measured final volume. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[6];
+      accessed=2026-10-08T21:53:36.903161+00:00; capture SHA256=501b00b176714192767a69a152943f7ba57088645f5f3e7eba91baccefc15ea9.'
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+    supports: SUPPORT
+    snippet: Distilled water                                                           1000.0         ml
+    explanation: 'ingredients[5].concentration: Original corroborates this preparation''s
+      batch input, not a measured final volume. PDF page 1; layout extraction and
+      page image inspected. No final-medium volume, percentage basis, density or chemical
+      grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00;
+      capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.'
 preparation_steps:
 - step_number: 1
-  action: AUTOCLAVE
-  description: 'Adjust pH to 6.6. Autoclave, cool to 50°C and add the following filter-sterilized
-    components:'
+  action: ADJUST_PH
+  description: Adjust the basal medium to pH 6.6 before autoclaving.
 - step_number: 2
-  action: MIX
-  description: For liquid medium, omit corn meal agar and change the phosphate concentration
-    to KH2PO4, 1.5 g and K2HPO4, 0.5 g.
+  action: AUTOCLAVE
+  description: Autoclave the basal medium, including the hemin input; the source gives
+    no fixed cycle temperature or duration.
+- step_number: 3
+  action: COOL
+  description: Cool to 50 C, then add the separately filter-sterilized albumin, glucose
+    and cysteine stocks.
 applications:
 - Microbial cultivation
 curation_history:
@@ -192,6 +273,247 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-08T22:13:10.504331+00:00'
+  curator: codex
+  action: RESTORED_DSMZ_ALBUMIN_PREPARATIONS_AND_CONCENTRATION_SCOPES_WITH_EVIDENCE
+  notes: Restore source-specific albumin, withdraw false LB inputs, separate preparation
+    doses and stock compositions, and attach exact evidence for changed claims. Preserve
+    IDs, unrelated groundings and earlier history. Unknown percentage bases and final-medium
+    volume remain unknown.
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+  changes: '[{"old_field": "ingredients[0].concentration", "field": "ingredients[0].concentration",
+    "old": {"value": "17", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/751", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Corn meal agar\",\n                        \"compound_id\":
+    702,\n                        \"amount\": 17,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 17,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[0].notes",
+    "old": null, "new": "Source batch input: 17 g. Final-medium volume is not established;
+    withdraw the unsupported final g/L assertion without replacing it with an assumed
+    one-liter value.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "Corn meal agar                                                               17.0          g"},
+    {"old_field": "ingredients[1].concentration", "field": "ingredients[1].concentration",
+    "old": {"value": "8", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/751", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Soy peptone\",\n                        \"compound_id\":
+    75,\n                        \"amount\": 8,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 8,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[1].notes",
+    "old": null, "new": "Source batch input: 8 g. Final-medium volume is not established;
+    withdraw the unsupported final g/L assertion without replacing it with an assumed
+    one-liter value.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "Peptone from soy meal                                                          8.0         g"},
+    {"old_field": "ingredients[2].concentration", "field": "ingredients[2].concentration",
+    "old": {"value": "1", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/751", "snippet": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\":
+    10,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\":
+    5.74132,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[2].notes", "old": null, "new": "Source batch input:
+    1 g. Final-medium volume is not established; withdraw the unsupported final g/L
+    assertion without replacing it with an assumed one-liter value.", "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "K2HPO4                                                                         1.0         g"},
+    {"old_field": "ingredients[3].concentration", "field": "ingredients[3].concentration",
+    "old": {"value": "1", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/751", "snippet": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\":
+    7.34835,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[3].notes", "old": null, "new": "Source batch input:
+    1 g. Final-medium volume is not established; withdraw the unsupported final g/L
+    assertion without replacing it with an assumed one-liter value.", "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "KH2PO4                                                                         1.0         g"},
+    {"old_field": "ingredients[4].concentration", "field": "ingredients[4].concentration",
+    "old": {"value": "0.2", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/751", "snippet": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    0.811438,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[4].notes", "old": null, "new": "Source batch input:
+    0.2 g. Final-medium volume is not established; withdraw the unsupported final
+    g/L assertion without replacing it with an assumed one-liter value.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "MgSO4 x 7 H2O                                                                  0.2         g"},
+    {"old_field": null, "field": "ingredients[5].concentration", "old": null, "new":
+    {"value": "1", "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/751",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[5].concentration",
+    "old": null, "new": {"value": "1", "unit": "L"}, "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf", "snippet":
+    "Distilled water                                                           1000.0         ml"},
+    {"old_field": null, "field": "solutions[0].concentration", "old": null, "new":
+    {"value": "0.015", "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/751",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Hemin\",\n                        \"compound_id\": 704,\n                        \"attribute\":
+    \"0.1% in 0.05N NaOH\",\n                        \"amount\": 15,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.015,\n                        \"mmol_l\":
+    0.0230097,\n                        \"optional\": 0\n                    }"},
+    {"old_field": null, "field": "solutions[0].concentration", "old": null, "new":
+    {"value": "0.015", "unit": "L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml"},
+    {"old_field": "ingredients[5].concentration", "field": "solutions[0].composition[0].concentration",
+    "old": {"value": "0.015", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/751", "snippet": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Hemin\",\n                        \"compound_id\":
+    704,\n                        \"attribute\": \"0.1% in 0.05N NaOH\",\n                        \"amount\":
+    15,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.015,\n                        \"mmol_l\": 0.0230097,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].composition[0].notes",
+    "old": null, "new": "Stock label: 0.1% in 0.05N NaOH. Percentage basis is unspecified;
+    no numeric stock strength or final-medium concentration is asserted.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml"},
+    {"old_field": null, "field": "solutions[0].solutions[0].notes", "old": null, "new":
+    "Hemin-stock solvent only; fixed solvent dose and percentage basis are not supplied.",
+    "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml"},
+    {"old_field": null, "field": "solutions[0].solutions[0].composition[0].notes",
+    "old": null, "new": "Source solvent strength 0.05 N; normality is not converted
+    to molarity.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml"},
+    {"old_field": null, "field": "solutions[1].concentration", "old": null, "new":
+    {"value": "0.01", "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/751",
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"condition\":
+    \"fraction V\",\n                        \"attribute\": \"20%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    2,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].concentration", "old": null, "new": {"value": "0.01",
+    "unit": "L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "20% bovine serum albumin, fraction V                                         10.0        ml"},
+    {"old_field": null, "field": "solutions[1].composition[0].notes", "old": null,
+    "new": "Stock label: 20%. Percentage basis is unspecified; no numeric stock strength
+    or final-medium concentration is asserted. Bovine serum albumin is fraction V,
+    not LB broth.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/751",
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Bovine serum albumin\",\n                        \"compound_id\": 705,\n                        \"condition\":
+    \"fraction V\",\n                        \"attribute\": \"20%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    2,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].composition[0].notes", "old": null, "new": "Stock
+    label: 20%. Percentage basis is unspecified; no numeric stock strength or final-medium
+    concentration is asserted. Bovine serum albumin is fraction V, not LB broth.",
+    "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "20% bovine serum albumin, fraction V                                         10.0        ml"},
+    {"old_field": null, "field": "solutions[1].preparation_notes", "old": null, "new":
+    "Filter-sterilize this stock separately; add after the basal medium has been autoclaved
+    and cooled to 50 C. No filter pore size is given.", "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "Adjust pH to 6.6. Autoclave, cool to 50\uf0b0C and add the following
+    filter-sterilized\ncomponents:"}, {"old_field": null, "field": "solutions[2].concentration",
+    "old": null, "new": {"value": "0.005", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/751", "snippet": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\":
+    5,\n                        \"attribute\": \"10%\",\n                        \"amount\":
+    5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.5,\n                        \"mmol_l\": 2.77531,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[2].concentration",
+    "old": null, "new": {"value": "0.005", "unit": "L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "10% glucose                                                                    5.0       ml"},
+    {"old_field": "ingredients[9].concentration", "field": "solutions[2].composition[0].concentration",
+    "old": {"value": "0.5", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/751", "snippet": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\":
+    5,\n                        \"attribute\": \"10%\",\n                        \"amount\":
+    5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.5,\n                        \"mmol_l\": 2.77531,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[2].composition[0].notes",
+    "old": null, "new": "Stock label: 10%. Percentage basis is unspecified; no numeric
+    stock strength or final-medium concentration is asserted.", "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "10% glucose                                                                    5.0       ml"},
+    {"old_field": null, "field": "solutions[2].preparation_notes", "old": null, "new":
+    "Filter-sterilize this stock separately; add after the basal medium has been autoclaved
+    and cooled to 50 C. No filter pore size is given.", "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "Adjust pH to 6.6. Autoclave, cool to 50\uf0b0C and add the following
+    filter-sterilized\ncomponents:"}, {"old_field": null, "field": "solutions[3].concentration",
+    "old": null, "new": {"value": "0.01", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/751", "snippet": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Cysteine\",\n                        \"compound_id\":
+    492,\n                        \"attribute\": \"free base, 10%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    1,\n                        \"mmol_l\": 8.25355,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[3].concentration",
+    "old": null, "new": {"value": "0.01", "unit": "L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "10% cysteine (free base)                                                     10.0        ml"},
+    {"old_field": "ingredients[10].concentration", "field": "solutions[3].composition[0].concentration",
+    "old": {"value": "1", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/751", "snippet": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Cysteine\",\n                        \"compound_id\":
+    492,\n                        \"attribute\": \"free base, 10%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    1,\n                        \"mmol_l\": 8.25355,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[3].composition[0].notes",
+    "old": null, "new": "Stock label: free base, 10%. Percentage basis is unspecified;
+    no numeric stock strength or final-medium concentration is asserted.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "10% cysteine (free base)                                                     10.0        ml"},
+    {"old_field": null, "field": "solutions[3].preparation_notes", "old": null, "new":
+    "Filter-sterilize this stock separately; add after the basal medium has been autoclaved
+    and cooled to 50 C. No filter pore size is given.", "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "Adjust pH to 6.6. Autoclave, cool to 50\uf0b0C and add the following
+    filter-sterilized\ncomponents:"}, {"old_field": null, "field": "preparation_steps",
+    "old": null, "new": [{"step_number": 1, "action": "ADJUST_PH", "description":
+    "Adjust the basal medium to pH 6.6 before autoclaving."}, {"step_number": 2, "action":
+    "AUTOCLAVE", "description": "Autoclave the basal medium, including the hemin input;
+    the source gives no fixed cycle temperature or duration."}, {"step_number": 3,
+    "action": "COOL", "description": "Cool to 50 C, then add the separately filter-sterilized
+    albumin, glucose and cysteine stocks."}], "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf", "snippet":
+    "Adjust pH to 6.6. Autoclave, cool to 50\uf0b0C and add the following filter-sterilized\ncomponents:"},
+    {"old_field": null, "field": "ph_value", "old": null, "new": 6.6, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "Adjust pH to 6.6. Autoclave, cool to 50\uf0b0C and add the following
+    filter-sterilized\ncomponents:"}, {"old_field": null, "field": "variants[0].modifications",
+    "old": null, "new": ["Omit corn meal agar.", "Use KH2PO4 1.5 g per batch instead
+    of 1 g.", "Use K2HPO4 0.5 g per batch instead of 1 g."], "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "For liquid medium, omit corn meal agar and change the phosphate concentration
+    to\nKH2PO4, 1.5 g and K2HPO4, 0.5 g."}, {"old_field": "ingredients[6].concentration",
+    "field": "notes", "old": {"value": "10.0", "unit": "G_PER_L"}, "new": "Source:
+    DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    LB constituent expansion is withdrawn: the exact DSMZ formulation specifies bovine
+    serum albumin instead. Source batch, stock and receiving-medium scopes are separate;
+    chemical groundings and growth claims are not recertified.", "status": "remove_unsupported",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "20% bovine serum albumin, fraction V                                         10.0        ml"},
+    {"old_field": "ingredients[7].concentration", "field": "notes", "old": {"value":
+    "5.0", "unit": "G_PER_L"}, "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    LB constituent expansion is withdrawn: the exact DSMZ formulation specifies bovine
+    serum albumin instead. Source batch, stock and receiving-medium scopes are separate;
+    chemical groundings and growth claims are not recertified.", "status": "remove_unsupported",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "20% bovine serum albumin, fraction V                                         10.0        ml"},
+    {"old_field": "ingredients[8].concentration", "field": "notes", "old": {"value":
+    "10.0", "unit": "G_PER_L"}, "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    LB constituent expansion is withdrawn: the exact DSMZ formulation specifies bovine
+    serum albumin instead. Source batch, stock and receiving-medium scopes are separate;
+    chemical groundings and growth claims are not recertified.", "status": "remove_unsupported",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "20% bovine serum albumin, fraction V                                         10.0        ml"}]'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -199,3 +521,335 @@ variant_children:
   name: sc_medium
   notes: Same ingredient and concentration signature; KOMODO record copied from the
     matching DSMZ medium source.
+solutions:
+- preferred_term: Hemin stock
+  composition:
+  - preferred_term: Hemin
+    term:
+      id: CHEBI:50385
+      label: hemin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:50385
+      label: hemin
+    notes: 'Stock label: 0.1% in 0.05N NaOH. Percentage basis is unspecified; no numeric
+      stock strength or final-medium concentration is asserted.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/751
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 6,
+                                "compound": "Hemin",
+                                "compound_id": 704,
+                                "attribute": "0.1% in 0.05N NaOH",
+                                "amount": 15,
+                                "unit": "ml",
+                                "g_l": 0.015,
+                                "mmol_l": 0.0230097,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[0].concentration: Stock label: 0.1% in
+        0.05N NaOH. Percentage basis is unspecified; no numeric stock strength or
+        final-medium concentration is asserted. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[5];
+        accessed=2026-10-08T21:53:36.903161+00:00; capture SHA256=501b00b176714192767a69a152943f7ba57088645f5f3e7eba91baccefc15ea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+      supports: SUPPORT
+      snippet: Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml
+      explanation: 'solutions[0].composition[0].notes: Original corroborates this
+        preparation''s batch input, not a measured final volume. PDF page 1; layout
+        extraction and page image inspected. No final-medium volume, percentage basis,
+        density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00;
+        capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.'
+  concentration:
+    value: '0.015'
+    unit: L
+  notes: 'Source batch dose: 15 ml / 1000 = 0.015 L per receiving batch, not g/L or
+    a per-liter dose. Source product/stock qualifier: 0.1% in 0.05N NaOH.'
+  solutions:
+  - preferred_term: NaOH solution (0.05 N)
+    composition:
+    - preferred_term: NaOH
+      notes: Source solvent strength 0.05 N; normality is not converted to molarity.
+      evidence:
+      - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+        supports: SUPPORT
+        snippet: Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml
+        explanation: 'solutions[0].solutions[0].composition[0].notes: Retain the explicit
+          normality in notes without inventing a schema unit. PDF page 1; layout extraction
+          and page image inspected. No final-medium volume, percentage basis, density
+          or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00;
+          capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.'
+    notes: Hemin-stock solvent only; fixed solvent dose and percentage basis are not
+      supplied.
+- preferred_term: Bovine serum albumin stock
+  composition:
+  - preferred_term: Bovine serum albumin
+    notes: 'Stock label: 20%. Percentage basis is unspecified; no numeric stock strength
+      or final-medium concentration is asserted. Bovine serum albumin is fraction
+      V, not LB broth.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/751
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 8,
+                                "compound": "Bovine serum albumin",
+                                "compound_id": 705,
+                                "condition": "fraction V",
+                                "attribute": "20%",
+                                "amount": 10,
+                                "unit": "ml",
+                                "g_l": 2,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[0].notes: Stock label: 20%. Percentage
+        basis is unspecified; no numeric stock strength or final-medium concentration
+        is asserted. Bovine serum albumin is fraction V, not LB broth. No final-medium
+        volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[7];
+        accessed=2026-10-08T21:53:36.903161+00:00; capture SHA256=501b00b176714192767a69a152943f7ba57088645f5f3e7eba91baccefc15ea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+      supports: SUPPORT
+      snippet: 20% bovine serum albumin, fraction V                                         10.0        ml
+      explanation: 'solutions[1].composition[0].notes: Original corroborates this
+        preparation''s batch input, not a measured final volume. PDF page 1; layout
+        extraction and page image inspected. No final-medium volume, percentage basis,
+        density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00;
+        capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.'
+  concentration:
+    value: '0.01'
+    unit: L
+  notes: 'Source batch dose: 10 ml / 1000 = 0.01 L per receiving batch, not g/L or
+    a per-liter dose. Source product/stock qualifier: 20%.'
+  preparation_notes: Filter-sterilize this stock separately; add after the basal medium
+    has been autoclaved and cooled to 50 C. No filter pore size is given.
+- preferred_term: Glucose stock
+  composition:
+  - preferred_term: Glucose
+    term:
+      id: CHEBI:17234
+      label: glucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17234
+      label: glucose
+    notes: 'Stock label: 10%. Percentage basis is unspecified; no numeric stock strength
+      or final-medium concentration is asserted.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/751
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 9,
+                                "compound": "Glucose",
+                                "compound_id": 5,
+                                "attribute": "10%",
+                                "amount": 5,
+                                "unit": "ml",
+                                "g_l": 0.5,
+                                "mmol_l": 2.77531,
+                                "optional": 0
+                            }
+      explanation: 'solutions[2].composition[0].concentration: Stock label: 10%. Percentage
+        basis is unspecified; no numeric stock strength or final-medium concentration
+        is asserted. No final-medium volume, percentage basis, density or chemical
+        grounding is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-08T21:53:36.903161+00:00;
+        capture SHA256=501b00b176714192767a69a152943f7ba57088645f5f3e7eba91baccefc15ea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+      supports: SUPPORT
+      snippet: 10% glucose                                                                    5.0       ml
+      explanation: 'solutions[2].composition[0].notes: Original corroborates this
+        preparation''s batch input, not a measured final volume. PDF page 1; layout
+        extraction and page image inspected. No final-medium volume, percentage basis,
+        density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00;
+        capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.'
+  concentration:
+    value: '0.005'
+    unit: L
+  notes: 'Source batch dose: 5 ml / 1000 = 0.005 L per receiving batch, not g/L or
+    a per-liter dose. Source product/stock qualifier: 10%.'
+  preparation_notes: Filter-sterilize this stock separately; add after the basal medium
+    has been autoclaved and cooled to 50 C. No filter pore size is given.
+- preferred_term: Cysteine stock
+  composition:
+  - preferred_term: Cysteine
+    term:
+      id: CHEBI:15356
+      label: cysteine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15356
+      label: cysteine
+    notes: 'Stock label: free base, 10%. Percentage basis is unspecified; no numeric
+      stock strength or final-medium concentration is asserted.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/751
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 10,
+                                "compound": "Cysteine",
+                                "compound_id": 492,
+                                "attribute": "free base, 10%",
+                                "amount": 10,
+                                "unit": "ml",
+                                "g_l": 1,
+                                "mmol_l": 8.25355,
+                                "optional": 0
+                            }
+      explanation: 'solutions[3].composition[0].concentration: Stock label: free base,
+        10%. Percentage basis is unspecified; no numeric stock strength or final-medium
+        concentration is asserted. No final-medium volume, percentage basis, density
+        or chemical grounding is inferred. Locator=data.solutions[0].recipe[9]; accessed=2026-10-08T21:53:36.903161+00:00;
+        capture SHA256=501b00b176714192767a69a152943f7ba57088645f5f3e7eba91baccefc15ea9.'
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+      supports: SUPPORT
+      snippet: 10% cysteine (free base)                                                     10.0        ml
+      explanation: 'solutions[3].composition[0].notes: Original corroborates this
+        preparation''s batch input, not a measured final volume. PDF page 1; layout
+        extraction and page image inspected. No final-medium volume, percentage basis,
+        density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00;
+        capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.'
+  concentration:
+    value: '0.01'
+    unit: L
+  notes: 'Source batch dose: 10 ml / 1000 = 0.01 L per receiving batch, not g/L or
+    a per-liter dose. Source product/stock qualifier: free base, 10%.'
+  preparation_notes: Filter-sterilize this stock separately; add after the basal medium
+    has been autoclaved and cooled to 50 C. No filter pore size is given.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/751
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 6,
+                            "compound": "Hemin",
+                            "compound_id": 704,
+                            "attribute": "0.1% in 0.05N NaOH",
+                            "amount": 15,
+                            "unit": "ml",
+                            "g_l": 0.015,
+                            "mmol_l": 0.0230097,
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].concentration: Source batch dose: 15 ml / 1000 = 0.015 L per receiving batch, not g/L or a per-liter dose. Source product/stock qualifier: 0.1% in 0.05N NaOH. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[5]; accessed=2026-10-08T21:53:36.903161+00:00; capture SHA256=501b00b176714192767a69a152943f7ba57088645f5f3e7eba91baccefc15ea9.
+
+    Additional exact excerpt: {
+                            "recipe_order": 8,
+                            "compound": "Bovine serum albumin",
+                            "compound_id": 705,
+                            "condition": "fraction V",
+                            "attribute": "20%",
+                            "amount": 10,
+                            "unit": "ml",
+                            "g_l": 2,
+                            "optional": 0
+                        }
+    solutions[1].concentration: Source batch dose: 10 ml / 1000 = 0.01 L per receiving batch, not g/L or a per-liter dose. Source product/stock qualifier: 20%. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-08T21:53:36.903161+00:00; capture SHA256=501b00b176714192767a69a152943f7ba57088645f5f3e7eba91baccefc15ea9.
+
+    Additional exact excerpt: {
+                            "recipe_order": 9,
+                            "compound": "Glucose",
+                            "compound_id": 5,
+                            "attribute": "10%",
+                            "amount": 5,
+                            "unit": "ml",
+                            "g_l": 0.5,
+                            "mmol_l": 2.77531,
+                            "optional": 0
+                        }
+    solutions[2].concentration: Source batch dose: 5 ml / 1000 = 0.005 L per receiving batch, not g/L or a per-liter dose. Source product/stock qualifier: 10%. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-08T21:53:36.903161+00:00; capture SHA256=501b00b176714192767a69a152943f7ba57088645f5f3e7eba91baccefc15ea9.
+
+    Additional exact excerpt: {
+                            "recipe_order": 10,
+                            "compound": "Cysteine",
+                            "compound_id": 492,
+                            "attribute": "free base, 10%",
+                            "amount": 10,
+                            "unit": "ml",
+                            "g_l": 1,
+                            "mmol_l": 8.25355,
+                            "optional": 0
+                        }
+    solutions[3].concentration: Source batch dose: 10 ml / 1000 = 0.01 L per receiving batch, not g/L or a per-liter dose. Source product/stock qualifier: free base, 10%. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[9]; accessed=2026-10-08T21:53:36.903161+00:00; capture SHA256=501b00b176714192767a69a152943f7ba57088645f5f3e7eba91baccefc15ea9.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+  supports: SUPPORT
+  snippet: Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml
+  explanation: |-
+    solutions[0].concentration: Original corroborates this preparation's batch input, not a measured final volume. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00; capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.
+
+    Additional exact excerpt: Hemin (0.1% in 0.05N NaOH)                                                   15.0        ml
+    solutions[0].solutions[0].notes: Solvent belongs only to the hemin stock, not to the medium as a separate dose. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00; capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.
+
+    Additional exact excerpt: 20% bovine serum albumin, fraction V                                         10.0        ml
+    solutions[1].concentration: Original corroborates this preparation's batch input, not a measured final volume. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00; capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.
+
+    Additional exact excerpt: Adjust pH to 6.6. Autoclave, cool to 50C and add the following filter-sterilized
+    components:
+    solutions[1].preparation_notes: Applies to the following albumin, glucose and cysteine rows only, not hemin. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00; capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.
+
+    Additional exact excerpt: 10% glucose                                                                    5.0       ml
+    solutions[2].concentration: Original corroborates this preparation's batch input, not a measured final volume. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00; capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.
+
+    Additional exact excerpt: Adjust pH to 6.6. Autoclave, cool to 50C and add the following filter-sterilized
+    components:
+    solutions[2].preparation_notes: Applies to the following albumin, glucose and cysteine rows only, not hemin. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00; capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.
+
+    Additional exact excerpt: 10% cysteine (free base)                                                     10.0        ml
+    solutions[3].concentration: Original corroborates this preparation's batch input, not a measured final volume. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00; capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.
+
+    Additional exact excerpt: Adjust pH to 6.6. Autoclave, cool to 50C and add the following filter-sterilized
+    components:
+    solutions[3].preparation_notes: Applies to the following albumin, glucose and cysteine rows only, not hemin. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00; capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.
+
+    Additional exact excerpt: Adjust pH to 6.6. Autoclave, cool to 50C and add the following filter-sterilized
+    components:
+    preparation_steps: Source boundary precedes recipe_order 8, the albumin row. Do not autoclave the three subsequent stocks or filter hemin by analogy. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00; capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.
+
+    Additional exact excerpt: Adjust pH to 6.6. Autoclave, cool to 50C and add the following filter-sterilized
+    components:
+    ph_value: Retain source pH 6.6 for the basal medium before autoclaving. PDF page 1; layout extraction and page image inspected. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00; capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.
+
+    Additional exact excerpt: 20% bovine serum albumin, fraction V                                         10.0        ml
+    notes: Remove this false LB constituent and its concentration; restore the source-specific albumin preparation without importing LB groundings. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00; capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.
+
+    Additional exact excerpt: 20% bovine serum albumin, fraction V                                         10.0        ml
+    notes: Remove this false LB constituent and its concentration; restore the source-specific albumin preparation without importing LB groundings. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00; capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.
+
+    Additional exact excerpt: 20% bovine serum albumin, fraction V                                         10.0        ml
+    notes: Remove this false LB constituent and its concentration; restore the source-specific albumin preparation without importing LB groundings. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00; capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.
+variants:
+- name: Liquid SC medium
+  relationship: PHYSICAL_STATE_VARIANT
+  description: DSMZ 751 liquid formulation with altered phosphate batch inputs; not
+    a sequential change to the agar base recipe.
+  modifications:
+  - Omit corn meal agar.
+  - Use KH2PO4 1.5 g per batch instead of 1 g.
+  - Use K2HPO4 0.5 g per batch instead of 1 g.
+  purpose: Liquid medium
+  evidence:
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+    supports: SUPPORT
+    snippet: |-
+      For liquid medium, omit corn meal agar and change the phosphate concentration to
+      KH2PO4, 1.5 g and K2HPO4, 0.5 g.
+    explanation: 'variants[0].modifications: All three modifications belong together.
+      Grams per batch are not assumed grams per final liter. PDF page 1; layout extraction
+      and page image inspected. No final-medium volume, percentage basis, density
+      or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00;
+      capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/751
+  title: SC MEDIUM
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    capture_sha256=501b00b176714192767a69a152943f7ba57088645f5f3e7eba91baccefc15ea9.
+    Authors and publication year are not supplied. The PDF copyright year is not treated
+    as publication year. Provider stock g_l values are attributed at stock scope only,
+    not independent final-volume measurements.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+  title: 751. SC MEDIUM
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-08; capture_sha256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.
+    Authors and publication year are not supplied. The PDF copyright year is not treated
+    as publication year. Provider stock g_l values are attributed at stock scope only,
+    not independent final-volume measurements.

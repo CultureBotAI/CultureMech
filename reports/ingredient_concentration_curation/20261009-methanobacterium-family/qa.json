@@ -1,0 +1,455 @@
+{
+  "terminal": true,
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "scripts/repair_methanobacterium_family.py",
+        "tests/test_methanobacterium_family.py",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-0.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "scripts/repair_methanobacterium_family.py",
+        "tests/test_methanobacterium_family.py",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/audit.py",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-1.log",
+      "log_sha256": "26a5fd9505f2b5608a20c4fed4b4c4795e0783d03b72ade02a6af34dae8ad086"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-2.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "scripts/repair_methanobacterium_family.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-3.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "tests/test_methanobacterium_family.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-4.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/audit.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-5.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-6.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/README.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-7.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/adversarial-review.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-8.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/issue-source-conflicts.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-9.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/next-work.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-10.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/D119.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-11.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/D119a.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-12.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/D119b.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-13.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/D119c.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-14.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/K119.1.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-15.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/K119.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-16.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/K119_11975.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-17.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/K119_11977.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-18.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/K119_11978.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-19.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/K119_11979.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-20.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/K119_11995.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-21.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/K119_1224.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-22.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/K119_15163.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-23.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/K119_3468.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-24.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/K119_4855.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-25.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/K119_6216.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-26.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/K119_7057.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-27.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/K119_7256.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-28.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "--check",
+        "/dev/null",
+        "reports/ingredient_concentration_curation/20261009-methanobacterium-family/applied-records/K119_9575.md"
+      ],
+      "exit_code": 1,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-29.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-30.log",
+      "log_sha256": "850cece5e4a99ce8724fda7e1b39ee983447691f25b8705a0db7ca5f689380e5"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_komodo670_source_versions.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "reports/ingredient_concentration_curation/20261009-methanobacterium-family/qa-31.log",
+      "log_sha256": "b594c0deb19de5344f0d8794d1b851f723b607d59f3d19f07149929840980843"
+    }
+  ],
+  "code_sha256": {
+    "scripts/repair_methanobacterium_family.py": "87a3dec56047f5aeaa394a7c65788ee86c297ab086d142c0597e82983ac1f90f",
+    "tests/test_methanobacterium_family.py": "b402ee4ba9088302faa60da467b2ed06bcab302601174722a33f66436267382e",
+    "reports/ingredient_concentration_curation/20261009-methanobacterium-family/audit.py": "31c3125ed89f27f37c516b13d71636fa3b5ac9ce4ee50820ab0f130e10c0c383",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "6c7a5aa3fc0cd3e30e48b3b589d4dca02be3f346743592fbcc27e0f510c9d2a4"
+  },
+  "cumulative_accounting_rechecked": true
+}

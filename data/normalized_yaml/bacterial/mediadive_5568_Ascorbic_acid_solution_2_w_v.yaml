@@ -16,6 +16,33 @@ composition:
     label: ascorbic acid
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5568
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Ascorbic acid",
+                      "compound_id": 112,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "g",
+                      "g_l": 20,
+                      "mmol_l": 113.559,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Ascorbic
+      acid) in MediaDive solution 5568; locator=$.data.recipe[0] (compound_id=112).
+      Provider explicitly reports g_l=20. Arithmetic check: 1 g * 1 g/g / (50 ml /
+      1000 ml per L) = 2E+1 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 50. Retrieved 2026-10-07T09:56:06.901704+00:00;
+      response SHA256=7d6748553d93f9fd46e3282b36d4342996b02f4b1df54705d87de9571051e9eb.'
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -61,6 +88,15 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5568
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "20"} -> {"unit":
+    "G_PER_L", "value": "20"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -69,3 +105,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5568
+  title: 'MediaDive solution 5568: Ascorbic acid solution 2%(w/v)'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=7d6748553d93f9fd46e3282b36d4342996b02f4b1df54705d87de9571051e9eb;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

@@ -11,17 +11,71 @@ media_term:
   term:
     id: komodo.medium:1157
     label: PYEM medium
-notes: 'Source: KOMODO ModelSEED | ID: 1157 | DSMZ Medium: 1157 (mediadive.medium:1157)
-  | Aerobic: No'
+notes: |-
+  Source: KOMODO ModelSEED | ID: 1157 | DSMZ Medium: 1157 (mediadive.medium:1157) | Aerobic: No
+
+  Stock stages and water inputs are explicit. Percentage bases, stock solvents and measured final volume are not supplied by these sources; no downstream dilution or growth claim is inferred. Existing chemical mappings and high_metal/other historical flags are retained but not validated by this concentration repair.
 ingredients:
 - preferred_term: Peptone
   concentration:
     value: '2'
     unit: G_PER_L
+  notes: 'Source batch input: 2 g. Retained 2 g/L is the provider''s nominal 1000
+    ml recipe rate, not a measured basal or final-medium concentration after stock
+    additions.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1157
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Peptone",
+                              "compound_id": 1,
+                              "amount": 2,
+                              "unit": "g",
+                              "g_l": 2,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[0].concentration (evidence_only), locator=$.data.solutions[0].recipe[0]: Source batch input: 2 g. Retained 2 g/L is the provider's nominal 1000 ml recipe rate, not a measured basal or final-medium concentration after stock additions. Supports the source-input note as well as the retained provider rate. Exact supporting excerpt: {
+                              "recipe_order": 1,
+                              "compound": "Peptone",
+                              "compound_id": 1,
+                              "amount": 2,
+                              "unit": "g",
+                              "g_l": 2,
+                              "optional": 0
+                          } Retrieved 2026-10-07T13:18:05.220599+00:00; response SHA256=a9e4ae716b09f410794095b881cdf9ac286771a8941c8a774395185ee62ded06.
 - preferred_term: Yeast extract
   concentration:
     value: '2'
     unit: G_PER_L
+  notes: 'Source batch input: 2 g. Retained 2 g/L is the provider''s nominal 1000
+    ml recipe rate, not a measured basal or final-medium concentration after stock
+    additions.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1157
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 2,
+                              "unit": "g",
+                              "g_l": 2,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[1].concentration (evidence_only), locator=$.data.solutions[0].recipe[1]: Source batch input: 2 g. Retained 2 g/L is the provider's nominal 1000 ml recipe rate, not a measured basal or final-medium concentration after stock additions. Supports the source-input note as well as the retained provider rate. Exact supporting excerpt: {
+                              "recipe_order": 2,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 2,
+                              "unit": "g",
+                              "g_l": 2,
+                              "optional": 0
+                          } Retrieved 2026-10-07T13:18:05.220599+00:00; response SHA256=a9e4ae716b09f410794095b881cdf9ac286771a8941c8a774395185ee62ded06.
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -32,46 +86,64 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
-- preferred_term: Riboflavin
+  notes: 'Source batch input: 0.5 g. Retained 0.5 g/L is the provider''s nominal 1000
+    ml recipe rate, not a measured basal or final-medium concentration after stock
+    additions.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1157
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "NH4Cl",
+                              "compound_id": 42,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.5,
+                              "mmol_l": 9.34754,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[2].concentration (evidence_only), locator=$.data.solutions[0].recipe[2]: Source batch input: 0.5 g. Retained 0.5 g/L is the provider's nominal 1000 ml recipe rate, not a measured basal or final-medium concentration after stock additions. Supports the source-input note as well as the retained provider rate. Exact supporting excerpt: {
+                              "recipe_order": 3,
+                              "compound": "NH4Cl",
+                              "compound_id": 42,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.5,
+                              "mmol_l": 9.34754,
+                              "optional": 0
+                          } Retrieved 2026-10-07T13:18:05.220599+00:00; response SHA256=a9e4ae716b09f410794095b881cdf9ac286771a8941c8a774395185ee62ded06.
+- preferred_term: Distilled water
   term:
-    id: CHEBI:17015
-    label: riboflavin
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17015
-    label: riboflavin
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: glucose
+    id: mediadive.compound:4
+    label: Distilled water
   concentration:
     value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17234
-    label: glucose
-- preferred_term: MgSO4
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: CaCl2
-  term:
-    id: CHEBI:3312
-    label: calcium dichloride
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:3312
-    label: calcium dichloride
+    unit: L
+  notes: 'Source batch input: 1000 ml distilled water = 1 L. This is not a volume
+    percentage or a measured final-medium volume.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1157
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[3].concentration (add), locator=$.data.solutions[0].recipe[3]: Source batch input: 1000 ml distilled water = 1 L. This is not a volume percentage or a measured final-medium volume. Calculation: 1000 ml / 1000 ml per L = 1 L. Supports water identity and the input-basis note. Exact supporting excerpt: {
+                              "recipe_order": 4,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          } Retrieved 2026-10-07T13:18:05.220599+00:00; response SHA256=a9e4ae716b09f410794095b881cdf9ac286771a8941c8a774395185ee62ded06.
 applications:
 - Microbial cultivation
 curation_history:
@@ -105,6 +177,66 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-08T08:51:23.684976+00:00'
+  curator: codex
+  action: CORRECTED_DSMZ1157_1164_STOCK_STAGES_AND_INPUTS
+  notes: Restored stock boundaries, exact source doses and water input. Unspecified
+    percentage bases/drop volume remain unresolved. Preserved prior history and snippets,
+    chemical mappings and unrelated flags; corrected only verified stale link paths.
+    No final-volume, growth or new variant inference.
+  source: https://mediadive.dsmz.de/rest/medium/1157; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf;
+    https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  changes: 'ingredients[0].concentration: {"value": "2", "unit": "G_PER_L"} -> {"value":
+    "2", "unit": "G_PER_L"} (evidence_only); ingredients[1].concentration: {"value":
+    "2", "unit": "G_PER_L"} -> {"value": "2", "unit": "G_PER_L"} (evidence_only);
+    ingredients[2].concentration: {"value": "0.5", "unit": "G_PER_L"} -> {"value":
+    "0.5", "unit": "G_PER_L"} (evidence_only); solutions[0].composition[0].concentration:
+    {"value": "5", "unit": "G_PER_L"} -> {"value": "0.2", "unit": "MG_PER_ML"} (correct);
+    solutions[0].preferred_term: null -> "Riboflavin stock" (add); solutions[0].source:
+    null -> "https://mediadive.dsmz.de/rest/medium/1157" (add); solutions[0].concentration:
+    null -> {"value": "0.005", "unit": "L"} (add); solutions[0].notes: null -> "Source
+    batch dose: 5 ml stock / 1000 ml per L = 0.005 L. This is an input volume, not
+    a dose per liter of measured final medium." (add); solutions[0].preparation_notes:
+    null -> "Filter-sterilized stock; add after autoclaving and cooling the base.
+    No temperature, duration, pore size or solvent specified." (add); solutions[1].composition[0].notes:
+    {"value": "1", "unit": "G_PER_L"} -> "Source stock label: 50%; percentage basis
+    unspecified. The flattened recipe quantity is withdrawn at this stock stage. No
+    mass/volume percentage basis, density, stock solvent or final-medium concentration
+    is inferred." (correct); solutions[1].preferred_term: null -> "Glucose stock"
+    (add); solutions[1].source: null -> "https://mediadive.dsmz.de/rest/medium/1157"
+    (add); solutions[1].concentration: null -> {"value": "0.002", "unit": "L"} (add);
+    solutions[1].notes: null -> "Source batch dose: 2 ml stock / 1000 ml per L = 0.002
+    L. This is an input volume, not a dose per liter of measured final medium." (add);
+    solutions[1].preparation_notes: null -> "Autoclaved stock; add after autoclaving
+    and cooling the base. No temperature, duration, pore size or solvent specified."
+    (add); solutions[2].composition[0].notes: {"value": "0.2", "unit": "G_PER_L"}
+    -> "Source stock label: 20%; percentage basis unspecified. The flattened recipe
+    quantity is withdrawn at this stock stage. No mass/volume percentage basis, density,
+    stock solvent or final-medium concentration is inferred." (correct); solutions[2].preferred_term:
+    null -> "MgSO4 stock" (add); solutions[2].source: null -> "https://mediadive.dsmz.de/rest/medium/1157"
+    (add); solutions[2].concentration: null -> {"value": "0.001", "unit": "L"} (add);
+    solutions[2].notes: null -> "Source batch dose: 1 ml stock / 1000 ml per L = 0.001
+    L. This is an input volume, not a dose per liter of measured final medium." (add);
+    solutions[2].preparation_notes: null -> "Autoclaved stock; add after autoclaving
+    and cooling the base. No temperature, duration, pore size or solvent specified."
+    (add); solutions[3].composition[0].notes: {"value": "0.1", "unit": "G_PER_L"}
+    -> "Source stock label: 10%; percentage basis unspecified. The flattened recipe
+    quantity is withdrawn at this stock stage. No mass/volume percentage basis, density,
+    stock solvent or final-medium concentration is inferred." (correct); solutions[3].preferred_term:
+    null -> "CaCl2 stock" (add); solutions[3].source: null -> "https://mediadive.dsmz.de/rest/medium/1157"
+    (add); solutions[3].concentration: null -> {"value": "0.001", "unit": "L"} (add);
+    solutions[3].notes: null -> "Source batch dose: 1 ml stock / 1000 ml per L = 0.001
+    L. This is an input volume, not a dose per liter of measured final medium." (add);
+    solutions[3].preparation_notes: null -> "Autoclaved stock; add after autoclaving
+    and cooling the base. No temperature, duration, pore size or solvent specified."
+    (add); ingredients[3].concentration: null -> {"value": "1", "unit": "L"} (add);
+    notes: "Source: KOMODO ModelSEED | ID: 1157 | DSMZ Medium: 1157 (mediadive.medium:1157)
+    | Aerobic: No" -> "Source: KOMODO ModelSEED | ID: 1157 | DSMZ Medium: 1157 (mediadive.medium:1157)
+    | Aerobic: No\n\nStock stages and water inputs are explicit. Percentage bases,
+    stock solvents and measured final volume are not supplied by these sources; no
+    downstream dilution or growth claim is inferred. Existing chemical mappings and
+    high_metal/other historical flags are retained but not validated by this concentration
+    repair." (evidence_only)'
 parent_media:
   path: data/normalized_yaml/bacterial/pyem_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -117,3 +249,294 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - KOMODO record is an exact source duplicate of DSMZ Medium 1157; local ingredient
   and concentration signatures match.
+solutions:
+- preferred_term: Riboflavin stock
+  composition:
+  - preferred_term: Riboflavin
+    term:
+      id: CHEBI:17015
+      label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: riboflavin
+    concentration:
+      value: '0.2'
+      unit: MG_PER_ML
+    notes: 'Source-explicit riboflavin stock strength: 0.2 mg/ml. The source''s 5
+      ml is a stock addition volume, not 5 g/L or 5% v/v. No final-medium concentration
+      is inferred.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1157
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 5,
+                                "compound": "Riboflavin",
+                                "compound_id": 136,
+                                "attribute": "0.2 mg/ml, filter-sterilized",
+                                "amount": 5,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[0].concentration (correct), locator=$.data.solutions[0].recipe[4]: Source-explicit riboflavin stock strength: 0.2 mg/ml. The source's 5 ml is a stock addition volume, not 5 g/L or 5% v/v. No final-medium concentration is inferred. Existing chemical mappings are preserved, not independently validated. Exact supporting excerpt: {
+                                "recipe_order": 5,
+                                "compound": "Riboflavin",
+                                "compound_id": 136,
+                                "attribute": "0.2 mg/ml, filter-sterilized",
+                                "amount": 5,
+                                "unit": "ml",
+                                "optional": 0
+                            } Retrieved 2026-10-07T13:18:05.220599+00:00; response SHA256=a9e4ae716b09f410794095b881cdf9ac286771a8941c8a774395185ee62ded06.
+  source: https://mediadive.dsmz.de/rest/medium/1157
+  concentration:
+    value: '0.005'
+    unit: L
+  notes: 'Source batch dose: 5 ml stock / 1000 ml per L = 0.005 L. This is an input
+    volume, not a dose per liter of measured final medium.'
+  preparation_notes: Filter-sterilized stock; add after autoclaving and cooling the
+    base. No temperature, duration, pore size or solvent specified.
+- preferred_term: Glucose stock
+  composition:
+  - preferred_term: Glucose
+    term:
+      id: CHEBI:17234
+      label: glucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17234
+      label: glucose
+    notes: 'Source stock label: 50%; percentage basis unspecified. The flattened recipe
+      quantity is withdrawn at this stock stage. No mass/volume percentage basis,
+      density, stock solvent or final-medium concentration is inferred.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1157
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 6,
+                                "compound": "Glucose",
+                                "compound_id": 5,
+                                "attribute": "autoclaved, 50%",
+                                "amount": 2,
+                                "unit": "ml",
+                                "g_l": 1,
+                                "mmol_l": 5.55062,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[1].composition[0].notes (correct), locator=$.data.solutions[0].recipe[5]: Source stock label: 50%; percentage basis unspecified. The flattened recipe quantity is withdrawn at this stock stage. No mass/volume percentage basis, density, stock solvent or final-medium concentration is inferred. Existing chemical mappings are preserved, not independently validated. Exact supporting excerpt: {
+                                "recipe_order": 6,
+                                "compound": "Glucose",
+                                "compound_id": 5,
+                                "attribute": "autoclaved, 50%",
+                                "amount": 2,
+                                "unit": "ml",
+                                "g_l": 1,
+                                "mmol_l": 5.55062,
+                                "optional": 0
+                            } Retrieved 2026-10-07T13:18:05.220599+00:00; response SHA256=a9e4ae716b09f410794095b881cdf9ac286771a8941c8a774395185ee62ded06.
+  source: https://mediadive.dsmz.de/rest/medium/1157
+  concentration:
+    value: '0.002'
+    unit: L
+  notes: 'Source batch dose: 2 ml stock / 1000 ml per L = 0.002 L. This is an input
+    volume, not a dose per liter of measured final medium.'
+  preparation_notes: Autoclaved stock; add after autoclaving and cooling the base.
+    No temperature, duration, pore size or solvent specified.
+- preferred_term: MgSO4 stock
+  composition:
+  - preferred_term: MgSO4
+    term:
+      id: CHEBI:32599
+      label: magnesium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32599
+      label: magnesium sulfate
+    notes: 'Source stock label: 20%; percentage basis unspecified. The flattened recipe
+      quantity is withdrawn at this stock stage. No mass/volume percentage basis,
+      density, stock solvent or final-medium concentration is inferred.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1157
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 7,
+                                "compound": "MgSO4",
+                                "compound_id": 325,
+                                "attribute": "autoclaved, 20%",
+                                "amount": 1,
+                                "unit": "ml",
+                                "g_l": 0.2,
+                                "mmol_l": 1.66154,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[2].composition[0].notes (correct), locator=$.data.solutions[0].recipe[6]: Source stock label: 20%; percentage basis unspecified. The flattened recipe quantity is withdrawn at this stock stage. No mass/volume percentage basis, density, stock solvent or final-medium concentration is inferred. Existing chemical mappings are preserved, not independently validated. Exact supporting excerpt: {
+                                "recipe_order": 7,
+                                "compound": "MgSO4",
+                                "compound_id": 325,
+                                "attribute": "autoclaved, 20%",
+                                "amount": 1,
+                                "unit": "ml",
+                                "g_l": 0.2,
+                                "mmol_l": 1.66154,
+                                "optional": 0
+                            } Retrieved 2026-10-07T13:18:05.220599+00:00; response SHA256=a9e4ae716b09f410794095b881cdf9ac286771a8941c8a774395185ee62ded06.
+  source: https://mediadive.dsmz.de/rest/medium/1157
+  concentration:
+    value: '0.001'
+    unit: L
+  notes: 'Source batch dose: 1 ml stock / 1000 ml per L = 0.001 L. This is an input
+    volume, not a dose per liter of measured final medium.'
+  preparation_notes: Autoclaved stock; add after autoclaving and cooling the base.
+    No temperature, duration, pore size or solvent specified.
+- preferred_term: CaCl2 stock
+  composition:
+  - preferred_term: CaCl2
+    term:
+      id: CHEBI:3312
+      label: calcium dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:3312
+      label: calcium dichloride
+    notes: 'Source stock label: 10%; percentage basis unspecified. The flattened recipe
+      quantity is withdrawn at this stock stage. No mass/volume percentage basis,
+      density, stock solvent or final-medium concentration is inferred.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1157
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 8,
+                                "compound": "CaCl2",
+                                "compound_id": 81,
+                                "attribute": "autoclaved, 10%",
+                                "amount": 1,
+                                "unit": "ml",
+                                "g_l": 0.1,
+                                "mmol_l": 0.901063,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[3].composition[0].notes (correct), locator=$.data.solutions[0].recipe[7]: Source stock label: 10%; percentage basis unspecified. The flattened recipe quantity is withdrawn at this stock stage. No mass/volume percentage basis, density, stock solvent or final-medium concentration is inferred. Existing chemical mappings are preserved, not independently validated. Exact supporting excerpt: {
+                                "recipe_order": 8,
+                                "compound": "CaCl2",
+                                "compound_id": 81,
+                                "attribute": "autoclaved, 10%",
+                                "amount": 1,
+                                "unit": "ml",
+                                "g_l": 0.1,
+                                "mmol_l": 0.901063,
+                                "optional": 0
+                            } Retrieved 2026-10-07T13:18:05.220599+00:00; response SHA256=a9e4ae716b09f410794095b881cdf9ac286771a8941c8a774395185ee62ded06.
+  source: https://mediadive.dsmz.de/rest/medium/1157
+  concentration:
+    value: '0.001'
+    unit: L
+  notes: 'Source batch dose: 1 ml stock / 1000 ml per L = 0.001 L. This is an input
+    volume, not a dose per liter of measured final medium.'
+  preparation_notes: Autoclaved stock; add after autoclaving and cooling the base.
+    No temperature, duration, pore size or solvent specified.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/1157
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 5,
+                            "compound": "Riboflavin",
+                            "compound_id": 136,
+                            "attribute": "0.2 mg/ml, filter-sterilized",
+                            "amount": 5,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].preferred_term (add), locator=$.data.solutions[0].recipe[4]: Source batch dose: 5 ml stock / 1000 ml per L = 0.005 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. Exact supporting excerpt: {
+                            "recipe_order": 5,
+                            "compound": "Riboflavin",
+                            "compound_id": 136,
+                            "attribute": "0.2 mg/ml, filter-sterilized",
+                            "amount": 5,
+                            "unit": "ml",
+                            "optional": 0
+                        } solutions[0].source (add), locator=$.data.solutions[0].recipe[4]: Source batch dose: 5 ml stock / 1000 ml per L = 0.005 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. solutions[0].concentration (add), locator=$.data.solutions[0].recipe[4]: Source batch dose: 5 ml stock / 1000 ml per L = 0.005 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. solutions[0].notes (add), locator=$.data.solutions[0].recipe[4]: Source batch dose: 5 ml stock / 1000 ml per L = 0.005 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. solutions[0].preparation_notes (add), locator=$.data.solutions[0].recipe[4]: Source batch dose: 5 ml stock / 1000 ml per L = 0.005 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. Additional exact preparation excerpt at $.data.solutions[0].steps[0]: {
+                            "recipe_order": 5,
+                            "step": "After autoclaving and cooling add: "
+                        } solutions[1].preferred_term (add), locator=$.data.solutions[0].recipe[5]: Source batch dose: 2 ml stock / 1000 ml per L = 0.002 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. Exact supporting excerpt: {
+                            "recipe_order": 6,
+                            "compound": "Glucose",
+                            "compound_id": 5,
+                            "attribute": "autoclaved, 50%",
+                            "amount": 2,
+                            "unit": "ml",
+                            "g_l": 1,
+                            "mmol_l": 5.55062,
+                            "optional": 0
+                        } solutions[1].source (add), locator=$.data.solutions[0].recipe[5]: Source batch dose: 2 ml stock / 1000 ml per L = 0.002 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. solutions[1].concentration (add), locator=$.data.solutions[0].recipe[5]: Source batch dose: 2 ml stock / 1000 ml per L = 0.002 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. solutions[1].notes (add), locator=$.data.solutions[0].recipe[5]: Source batch dose: 2 ml stock / 1000 ml per L = 0.002 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. solutions[1].preparation_notes (add), locator=$.data.solutions[0].recipe[5]: Source batch dose: 2 ml stock / 1000 ml per L = 0.002 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. Additional exact preparation excerpt at $.data.solutions[0].steps[0]: {
+                            "recipe_order": 5,
+                            "step": "After autoclaving and cooling add: "
+                        } solutions[2].preferred_term (add), locator=$.data.solutions[0].recipe[6]: Source batch dose: 1 ml stock / 1000 ml per L = 0.001 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. Exact supporting excerpt: {
+                            "recipe_order": 7,
+                            "compound": "MgSO4",
+                            "compound_id": 325,
+                            "attribute": "autoclaved, 20%",
+                            "amount": 1,
+                            "unit": "ml",
+                            "g_l": 0.2,
+                            "mmol_l": 1.66154,
+                            "optional": 0
+                        } solutions[2].source (add), locator=$.data.solutions[0].recipe[6]: Source batch dose: 1 ml stock / 1000 ml per L = 0.001 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. solutions[2].concentration (add), locator=$.data.solutions[0].recipe[6]: Source batch dose: 1 ml stock / 1000 ml per L = 0.001 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. solutions[2].notes (add), locator=$.data.solutions[0].recipe[6]: Source batch dose: 1 ml stock / 1000 ml per L = 0.001 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. solutions[2].preparation_notes (add), locator=$.data.solutions[0].recipe[6]: Source batch dose: 1 ml stock / 1000 ml per L = 0.001 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. Additional exact preparation excerpt at $.data.solutions[0].steps[0]: {
+                            "recipe_order": 5,
+                            "step": "After autoclaving and cooling add: "
+                        } solutions[3].preferred_term (add), locator=$.data.solutions[0].recipe[7]: Source batch dose: 1 ml stock / 1000 ml per L = 0.001 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. Exact supporting excerpt: {
+                            "recipe_order": 8,
+                            "compound": "CaCl2",
+                            "compound_id": 81,
+                            "attribute": "autoclaved, 10%",
+                            "amount": 1,
+                            "unit": "ml",
+                            "g_l": 0.1,
+                            "mmol_l": 0.901063,
+                            "optional": 0
+                        } solutions[3].source (add), locator=$.data.solutions[0].recipe[7]: Source batch dose: 1 ml stock / 1000 ml per L = 0.001 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. solutions[3].concentration (add), locator=$.data.solutions[0].recipe[7]: Source batch dose: 1 ml stock / 1000 ml per L = 0.001 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. solutions[3].notes (add), locator=$.data.solutions[0].recipe[7]: Source batch dose: 1 ml stock / 1000 ml per L = 0.001 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. solutions[3].preparation_notes (add), locator=$.data.solutions[0].recipe[7]: Source batch dose: 1 ml stock / 1000 ml per L = 0.001 L. This is an input volume, not a dose per liter of measured final medium. Stock descriptor is a curator label, not a new source identifier. Additional exact preparation excerpt at $.data.solutions[0].steps[0]: {
+                            "recipe_order": 5,
+                            "step": "After autoclaving and cooling add: "
+                        } notes (evidence_only), locator=$.data.solutions[0].recipe[4]: Stock stages and water inputs are explicit. Percentage bases, stock solvents and measured final volume are not supplied by these sources; no downstream dilution or growth claim is inferred. Existing chemical mappings and high_metal/other historical flags are retained but not validated by this concentration repair. Retrieved 2026-10-07T13:18:05.220599+00:00; response SHA256=a9e4ae716b09f410794095b881cdf9ac286771a8941c8a774395185ee62ded06.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf
+  supports: SUPPORT
+  snippet: Riboflavin (0.2 mg/ml) filter-sterilized 5.0 ml
+  explanation: 'Original DSMZ recipe page 1 corroborates solutions[0] stock stage
+    and batch dose, including 0.2 mg/ml riboflavin strength. Additional exact water-row
+    excerpt: Distilled water 1000.0 ml. 1000 ml / 1000 ml per L = 1 L water input,
+    not measured final volume. PDF SHA256=5751821c9e6eeb6cba6e6d6dfcc64e8d5e268f6dfcc16b41e92f60d133e9e212;
+    retrieved 2026-10-08T08:09:08.375684+00:00. Other stock rows are separately quoted
+    from the linked API.'
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  supports: SUPPORT
+  snippet: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1157'\
+    \ >1157</a></TD>\n\t\t\t\t\t<TD>PYEM medium</TD>\n\t\t\t\t\t<TD> 7.0</TD>\n\t\t\
+    \t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a\
+    \ href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf</a></TD>\n\
+    \t\t\t\t</TR>"
+  explanation: 'Identity only: KOMODO 1157 maps to https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf;
+    locator=MediaList row 1157. No quantity or growth claim follows from this mapping.
+    Retrieved 2026-10-07T13:01:23.350274+00:00; SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/1157
+  title: PYEM MEDIUM
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-07;
+    response_sha256=a9e4ae716b09f410794095b881cdf9ac286771a8941c8a774395185ee62ded06;
+    individual authors and publication year not specified; the 2008 PDF copyright
+    notice is not treated as publication year.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1157.pdf
+  title: 1157. PYEM MEDIUM
+  notes: source_type=culture_collection_protocol; discovery_mode=cross_reference;
+    accessed_on=2026-10-08; response_sha256=5751821c9e6eeb6cba6e6d6dfcc64e8d5e268f6dfcc16b41e92f60d133e9e212;
+    individual authors and publication year not specified; the 2008 PDF copyright
+    notice is not treated as publication year.
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  title: KOMODO - the Known Media Database
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-07;
+    response_sha256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a;
+    individual authors and publication year not specified; the 2008 PDF copyright
+    notice is not treated as publication year.

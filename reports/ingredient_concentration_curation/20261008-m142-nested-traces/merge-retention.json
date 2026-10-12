@@ -1,0 +1,76 @@
+{
+  "terminal": true,
+  "input_records": 15910,
+  "output_groups": 10777,
+  "routing": {
+    "total_processed": 15910,
+    "excluded_solutions": 4785,
+    "skipped_no_fingerprint": 2,
+    "skipped_error": 340,
+    "successfully_fingerprinted": 10783,
+    "reasons": {
+      "other_error": 340,
+      "no_valid_ingredients": 2
+    }
+  },
+  "targets": [
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M1106_Thiobacillus_Prosperus_FO1_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M1106_Thiobacillus_Prosperus_FO1_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M1124_Acetomicrobium_Faecale_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M1124_Acetomicrobium_Faecale_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M1153_Thiobacillus_Prosperus_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M1153_Thiobacillus_Prosperus_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M1378_HNN_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M1378_HNN_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M1389_MMJF_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M1389_MMJF_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M1390_MMJ_KT2_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M1390_MMJ_KT2_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M933_MMJYP2_For_AC55.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M933_MMJYP2_For_AC55.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    }
+  ],
+  "source_sha256": "4beb45130000546e286245f6bf5b82973c28a38ef2ede3c09716b81d749765de",
+  "derived_yaml_written": false
+}

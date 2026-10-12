@@ -13,17 +13,65 @@ ingredients:
   term:
     id: CHEBI:32035
     label: potassium hydroxide
-- preferred_term: Potassium dibasic phosphate
+  evidence:
+  - reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC220425/
+    supports: SUPPORT
+    snippet: 0.075 M KOH
+    explanation: 'ingredients[0].concentration (Potassium hydroxide) in MEDIADB:15.
+      Locator: Printed page 1433, right column, Materials and Methods / Media and
+      growth conditions. Rodriguez-Moya et al. (2010) Methods cites this article as
+      M63 reference 48. Five base ingredients are taken from that explicit recipe
+      cross-reference. The 2010 article overrides the carbon condition, salt and pH-adjustment
+      reagent. Do not import the 1982 carbon amount, organism-specific supplements,
+      growth conditions or genetic experiments into the 2010 media. Calculation: 0.075
+      mol/L * 1000 mmol/mol = 75 mM. Numerical value and MILLIMOLAR unit retained.
+      Chemical identity retained. No mass/molecular-weight conversion. KOH here is
+      a quantified base-recipe input, not the additional pH-adjustment dose. Manual
+      visual inspection of printed pages 1433 and 1434; formula subscripts flattened
+      to ordinary digits, typographic whitespace normalized. The PDF endpoint returned
+      HTML, not a PDF; no PDF text extraction claimed. Inspected 2026-10-09.'
+- preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '100.0'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  evidence:
+  - reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC220425/
+    supports: SUPPORT
+    snippet: 0.1 M KH2PO4
+    explanation: 'ingredients[1].concentration (Potassium dihydrogen phosphate) in
+      MEDIADB:15. Locator: Printed page 1433, right column, Materials and Methods
+      / Media and growth conditions. Rodriguez-Moya et al. (2010) Methods cites this
+      article as M63 reference 48. Five base ingredients are taken from that explicit
+      recipe cross-reference. The 2010 article overrides the carbon condition, salt
+      and pH-adjustment reagent. Do not import the 1982 carbon amount, organism-specific
+      supplements, growth conditions or genetic experiments into the 2010 media. Calculation:
+      0.1 mol/L * 1000 mmol/mol = 100 mM. Numerical value and MILLIMOLAR unit retained.
+      Corrected Potassium dibasic phosphate (CHEBI:131527) to Potassium dihydrogen
+      phosphate (CHEBI:63036) to match the printed chemical form. No mass/molecular-weight
+      conversion. KOH here is a quantified base-recipe input, not the additional pH-adjustment
+      dose. Manual visual inspection of printed pages 1433 and 1434; formula subscripts
+      flattened to ordinary digits, typographic whitespace normalized. The PDF endpoint
+      returned HTML, not a PDF; no PDF text extraction claimed. Inspected 2026-10-09.'
 - preferred_term: 5-Hydroxyectoine
   concentration:
     value: '20.0'
     unit: MILLIMOLAR
+  evidence:
+  - reference: doi:10.1186/1471-2180-10-256
+    supports: SUPPORT
+    snippet: 20 mM glucose, 20 mM ectoine, or 20 mM hydroxyectoine
+    explanation: 'ingredients[2].concentration (5-Hydroxyectoine) in MEDIADB:15, modified
+      M63 with hydroxyectoine and 2.5 M NaCl. Locator: Figure 1 caption; PMC element
+      F1, panels A-D. The hydroxyectoine condition reports 20 mM, equivalent to the
+      existing 20.0 MILLIMOLAR, with no mass or volume conversion. Each named carbon
+      source is a separate condition, not a mixture of all three. This verifies the
+      amount for the source''s carbon-source name, not the record''s pre-existing
+      stereochemical/positional naming or ontology mapping. Inspected at https://pmc.ncbi.nlm.nih.gov/articles/PMC2964678/
+      on 2026-10-09. Other base-medium amounts and growth performance are not established
+      by this evidence.'
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -34,23 +82,71 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
-- preferred_term: Magnesium sulfate
+  evidence:
+  - reference: doi:10.1186/1471-2180-10-256
+    supports: SUPPORT
+    snippet: 0.6 (A), 0.75 (B), 1.5 (C) and 2.5 (D) M NaCl.
+    explanation: 'ingredients[3].concentration (Sodium chloride) in MEDIADB:15, modified
+      M63 with hydroxyectoine and 2.5 M NaCl. Locator: Figure 1 caption; PMC element
+      F1, panels A-D. Panel D is 2.5 M NaCl; 2.5 mol/L * 1000 mmol/mol = 2500.0 mmol/L
+      (MILLIMOLAR). Methods separately states: ''The osmotic strength of M63 was increased
+      by the addition of a 0.6 to 2.5 M final concentration of NaCl.'' This is final-medium
+      concentration, not a stock dose. Inspected at https://pmc.ncbi.nlm.nih.gov/articles/PMC2964678/
+      on 2026-10-09. Other base-medium amounts and growth performance are not established
+      by this evidence.'
+- preferred_term: Magnesium sulfate heptahydrate
   term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.16'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: Ferrous sulfate
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  evidence:
+  - reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC220425/
+    supports: SUPPORT
+    snippet: 0.16 mM MgSO4 · 7H2O
+    explanation: 'ingredients[4].concentration (Magnesium sulfate heptahydrate) in
+      MEDIADB:15. Locator: Printed page 1433, right column, Materials and Methods
+      / Media and growth conditions. Rodriguez-Moya et al. (2010) Methods cites this
+      article as M63 reference 48. Five base ingredients are taken from that explicit
+      recipe cross-reference. The 2010 article overrides the carbon condition, salt
+      and pH-adjustment reagent. Do not import the 1982 carbon amount, organism-specific
+      supplements, growth conditions or genetic experiments into the 2010 media. Calculation:
+      0.16 mM is directly reported; no conversion. Numerical value and MILLIMOLAR
+      unit retained. Corrected Magnesium sulfate (CHEBI:32599) to Magnesium sulfate
+      heptahydrate (CHEBI:31795) to match the printed chemical form. No mass/molecular-weight
+      conversion. KOH here is a quantified base-recipe input, not the additional pH-adjustment
+      dose. Manual visual inspection of printed pages 1433 and 1434; formula subscripts
+      flattened to ordinary digits, typographic whitespace normalized. The PDF endpoint
+      returned HTML, not a PDF; no PDF text extraction claimed. Inspected 2026-10-09.'
+- preferred_term: Ferrous sulfate heptahydrate
   concentration:
     value: '0.0018'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:75832
-    label: iron(2+) sulfate (anhydrous)
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  evidence:
+  - reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC220425/
+    supports: SUPPORT
+    snippet: 1.8 μM FeSO4 · 7H2O
+    explanation: 'ingredients[5].concentration (Ferrous sulfate heptahydrate) in MEDIADB:15.
+      Locator: Printed page 1433, right column, Materials and Methods / Media and
+      growth conditions. Rodriguez-Moya et al. (2010) Methods cites this article as
+      M63 reference 48. Five base ingredients are taken from that explicit recipe
+      cross-reference. The 2010 article overrides the carbon condition, salt and pH-adjustment
+      reagent. Do not import the 1982 carbon amount, organism-specific supplements,
+      growth conditions or genetic experiments into the 2010 media. Calculation: 1.8
+      micromol/L / 1000 micromol/mmol = 0.0018 mM. Numerical value and MILLIMOLAR
+      unit retained. Corrected Ferrous sulfate (CHEBI:75832) to Ferrous sulfate heptahydrate
+      (CHEBI:75836) to match the printed chemical form. No mass/molecular-weight conversion.
+      KOH here is a quantified base-recipe input, not the additional pH-adjustment
+      dose. Manual visual inspection of printed pages 1433 and 1434; formula subscripts
+      flattened to ordinary digits, typographic whitespace normalized. The PDF endpoint
+      returned HTML, not a PDF; no PDF text extraction claimed. Inspected 2026-10-09.'
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -61,6 +157,23 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
     label: ammonium sulfate
+  evidence:
+  - reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC220425/
+    supports: SUPPORT
+    snippet: 0.015 M (NH4)2SO4
+    explanation: 'ingredients[6].concentration (Ammonium sulfate) in MEDIADB:15. Locator:
+      Printed page 1433, right column, Materials and Methods / Media and growth conditions.
+      Rodriguez-Moya et al. (2010) Methods cites this article as M63 reference 48.
+      Five base ingredients are taken from that explicit recipe cross-reference. The
+      2010 article overrides the carbon condition, salt and pH-adjustment reagent.
+      Do not import the 1982 carbon amount, organism-specific supplements, growth
+      conditions or genetic experiments into the 2010 media. Calculation: 0.015 mol/L
+      * 1000 mmol/mol = 15 mM. Numerical value and MILLIMOLAR unit retained. Chemical
+      identity retained. No mass/molecular-weight conversion. KOH here is a quantified
+      base-recipe input, not the additional pH-adjustment dose. Manual visual inspection
+      of printed pages 1433 and 1434; formula subscripts flattened to ordinary digits,
+      typographic whitespace normalized. The PDF endpoint returned HTML, not a PDF;
+      no PDF text extraction claimed. Inspected 2026-10-09.'
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -96,6 +209,28 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-09T21:06:17.385933+00:00'
+  curator: codex
+  action: CURATED_M63_PRIMARY_AMOUNTS_AND_CHEMICAL_FORMS
+  notes: Added primary-source concentration snippets and corrected phosphate/sulfate
+    chemical forms using the explicitly cited M63 definition. Five base-medium amounts
+    and three chemical forms follow the 1982 M63 definition explicitly cited as reference
+    48 by the 2010 Methods. This cross-reference inference is distinct from the carbon
+    and salt concentrations directly reported in 2010. KOH at 75 mM is a base-recipe
+    input, not a quantified pH-adjustment dose. No fixed titration dose is inferred
+    from the separate 2010 pH 7.2 adjustment. Existing D-glucose stereochemistry and
+    hydroxyectoine positional naming are preserved, not independently certified by
+    the amount evidence. No quantity, preparation, classification, growth association
+    or variant-link changes. These records are not certified as complete primary-source
+    formulations.
+  source: doi:10.1186/1471-2180-10-256
+  changes: '{"chemical_forms_corrected": [{"new": "Potassium dihydrogen phosphate",
+    "old": "Potassium dibasic phosphate"}, {"new": "Magnesium sulfate heptahydrate",
+    "old": "Magnesium sulfate"}, {"new": "Ferrous sulfate heptahydrate", "old": "Ferrous
+    sulfate"}], "evidence_added_to": ["ingredients[0].concentration", "ingredients[1].concentration",
+    "ingredients[2].concentration", "ingredients[3].concentration", "ingredients[4].concentration",
+    "ingredients[5].concentration", "ingredients[6].concentration"], "quantity_changes":
+    0}'
 media_term:
   preferred_term: MediaDB Medium 15
   term:
@@ -116,3 +251,34 @@ parent_media:
 variant_relationship: SALINITY_VARIANT
 variant_modifications:
 - Name suggests salt/salinity change; verify concentration delta against source.
+references:
+- reference: doi:10.1186/1471-2180-10-256
+  title: Involvement of EupR, a response regulator of the NarL/FixJ family, in the
+    control of the uptake of the compatible solutes ectoines by the halophilic bacterium
+    Chromohalobacter salexigens
+  authors: Javier Rodríguez-Moya; Montserrat Argandoña; Mercedes Reina-Bueno; Joaquín
+    J Nieto; Fernando Iglesias-Guerra; Mohamed Jebbar; Carmen Vargas
+  year: 2010
+  notes: source_type=journal_article; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    MediaDB original-article lead, PMID:20942908; inspected full text=https://pmc.ncbi.nlm.nih.gov/articles/PMC2964678/;
+    locator=Figure 1 caption and Methods / Bacterial strains, plasmids and growth
+    conditions; raw_html_sha256=e20c2446581d88af76ccae9b37fa4d8252bedd8659e7032073652aa9fee6725b.
+    Supports the carbon source and NaCl concentrations; the five base-medium inputs
+    follow its explicit reference 48.
+- reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC220425/
+  title: A third L-proline permease in Salmonella typhimurium which functions in media
+    of elevated osmotic strength
+  authors: L N Csonka
+  year: 1982
+  notes: source_type=journal_article; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    doi:10.1128/jb.151.3.1433-1443.1982; locator=Printed page 1433, right column,
+    Materials and Methods / Media and growth conditions; inspected scan=https://cdn.ncbi.nlm.nih.gov/pmc/blobs/04ea/220425/442ea1a9a792/jbacter00256-0375.png;
+    image_sha256=9b8c0a0050877d193f8919e54198df121f4c75479bbae6072882b92e0ed2d18b.
+    Rodriguez-Moya et al. (2010) Methods cites this article as M63 reference 48. Five
+    base ingredients are taken from that explicit recipe cross-reference. The 2010
+    article overrides the carbon condition, salt and pH-adjustment reagent. Do not
+    import the 1982 carbon amount, organism-specific supplements, growth conditions
+    or genetic experiments into the 2010 media. Manual visual inspection of printed
+    pages 1433 and 1434; formula subscripts flattened to ordinary digits, typographic
+    whitespace normalized. The PDF endpoint returned HTML, not a PDF; no PDF text
+    extraction claimed.

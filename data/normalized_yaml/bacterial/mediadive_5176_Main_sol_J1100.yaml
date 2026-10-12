@@ -16,6 +16,33 @@ composition:
     label: 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5176
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "HEPES",
+                      "compound_id": 371,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.4,
+                      "unit": "g",
+                      "g_l": 85.7143,
+                      "mmol_l": 359.676,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (HEPES)
+      in MediaDive solution 5176; locator=$.data.recipe[4] (compound_id=371). Provider
+      explicitly reports g_l=85.7143. Arithmetic check: 2.4 g * 1 g/g / (28 ml / 1000
+      ml per L) = 85.71428571428571428571428571 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 28. Retrieved 2026-10-07T09:51:48.962838+00:00;
+      response SHA256=928b094fb636818525e474b0244a99c5d258a3876f117adebfb31ad2d7e04119.'
 preparation_notes: 'CTM medium basis:
 
   Mix all ingredients in 1.0 L medium bottle. Add distilled water close to 1.0 L.
@@ -49,6 +76,15 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-10-07T09:53:16.572361+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5176
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "85.7143"}
+    -> {"unit": "G_PER_L", "value": "85.7143"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -57,3 +93,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5176
+  title: 'MediaDive solution 5176: Main sol. J1100'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=928b094fb636818525e474b0244a99c5d258a3876f117adebfb31ad2d7e04119;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

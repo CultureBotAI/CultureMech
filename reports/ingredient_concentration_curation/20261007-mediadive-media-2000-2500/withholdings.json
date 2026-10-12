@@ -1,0 +1,458 @@
+[
+  {
+    "id": "CultureMech:002562",
+    "medium_id": "J19",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J19",
+    "source_sha256": "191443b84f87f9081fe1309ab0df28fe3dc12d6bae7e74fd02e6f4e800899a76",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "to final concentration of 1.0% and 0.05%, respectively.",
+    "reason": "Ascorbate and cysteine additions occur only in preparation prose. The 1001 ml table describes an incomplete base, not the supplemented medium."
+  },
+  {
+    "id": "CultureMech:002667",
+    "medium_id": "J30",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J30",
+    "source_sha256": "527b99b49c7101df21682f9a8dc43e097536e4e96f6b8ccf7b2532273d56d895",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Strain off the pieces of potatoes through a fine sieve.",
+    "reason": "The 1000 ml table volume is extraction input water. Recovered volume or final makeup after boiling and sieving is not specified; do not endorse downstream g/L from that input alone."
+  },
+  {
+    "id": "CultureMech:003258",
+    "medium_id": "J90",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J90",
+    "source_sha256": "1ab6939c956f00736ef27de78df018d3183479299581d26642eb6c5c84eb918c",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Aseptically add sterile Na2S2O3 solution to the medium.",
+    "reason": "Preparation adds a separately prepared solution, but the table does not establish whether its solvent is included in the stated water volume. Reconcile stock composition, working dose and complete-medium volume before supporting main-medium concentrations; do not assume a percentage basis or infer a stock dose."
+  },
+  {
+    "id": "CultureMech:003339",
+    "medium_id": "J98",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J98",
+    "source_sha256": "14fb9c22ecb0468ac62e2777b2c08e777d75a409fff3659b4906e096fb201988",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Separately sterilize Na2CO3 solution by filtration",
+    "reason": "Preparation adds a separately prepared solution, but the table does not establish whether its solvent is included in the stated water volume. Reconcile stock composition, working dose and complete-medium volume before supporting main-medium concentrations; do not assume a percentage basis or infer a stock dose."
+  },
+  {
+    "id": "CultureMech:002302",
+    "medium_id": "J112",
+    "fields": [
+      "ingredients[9].concentration"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J112",
+    "source_sha256": "9c2fe7f4e00a63d17554a5b89690e478867d8835bf474537fb4207b725dcf76f",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      9,
+      "compound"
+    ],
+    "snippet": "Cellobiose or Cellulose MN 300",
+    "reason": "This row specifies alternative substrates, not one unconditional ingredient. Preserve the existing value pending explicit variant representation; other unambiguous rows may receive support."
+  },
+  {
+    "id": "CultureMech:002388",
+    "medium_id": "J121",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J121",
+    "source_sha256": "5e79038642fb272b2bacf3a33c39b053f5d37d8bfebc0fc9293a542513833b81",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Separately sterilize a solution of sodium benzoate by filtration",
+    "reason": "Preparation adds a separately prepared solution, but the table does not establish whether its solvent is included in the stated water volume. Reconcile stock composition, working dose and complete-medium volume before supporting main-medium concentrations; do not assume a percentage basis or infer a stock dose."
+  },
+  {
+    "id": "CultureMech:002505",
+    "medium_id": "J146",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J146",
+    "source_sha256": "0b79f164529fa6e907e82614efbbdd115ed5937c0fff6e5290c8087b76de3f22",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Add inactivated sterile rabbit serum to give final concentration in each tube of 5%.",
+    "reason": "Rabbit serum and thiamine pyrophosphate are added after dispensing but omitted from the ingredient table. The table's 1000 ml base does not establish complete-medium concentrations."
+  },
+  {
+    "id": "CultureMech:002541",
+    "medium_id": "J180",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J180",
+    "source_sha256": "f91e8220452c9c643d4c2936bdd53f3d0dda1ea1b375666cc70168613087124c",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Separately autoclave yeast extract and glucose as 10% solutions",
+    "reason": "Preparation adds a separately prepared solution, but the table does not establish whether its solvent is included in the stated water volume. Reconcile stock composition, working dose and complete-medium volume before supporting main-medium concentrations; do not assume a percentage basis or infer a stock dose."
+  },
+  {
+    "id": "CultureMech:002543",
+    "medium_id": "J182",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J182",
+    "source_sha256": "6e1fb01d2893d46b45b3b856dcc144460993f86455f3ebb87143544053ebd89e",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "add 100 ml of a sterile 10% NaHCO3 solution to the medium.",
+    "reason": "The table has 900 ml water and omits the later bicarbonate stock. Base-volume g/L cannot support the supplemented recipe; stock percentage basis remains unspecified."
+  },
+  {
+    "id": "CultureMech:002558",
+    "medium_id": "J196",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J196",
+    "source_sha256": "22ad3a57da0ace2b23a35557948b8c658b8acc58297002d825dc20bd01609522",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Autoclave yeast extract and starch as 10% solutions",
+    "reason": "Preparation adds a separately prepared solution, but the table does not establish whether its solvent is included in the stated water volume. Reconcile stock composition, working dose and complete-medium volume before supporting main-medium concentrations; do not assume a percentage basis or infer a stock dose."
+  },
+  {
+    "id": "CultureMech:002622",
+    "medium_id": "J264",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J264",
+    "source_sha256": "54cd1152485c8b2de5bd46cda5cdaf14f0624f32067e499fb42ec492e7a510ca",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Aseptically add 1 ml of erythromycin solution",
+    "reason": "The erythromycin/ethanol stock is absent from the ingredient table. The 1000 ml table alone does not establish the complete recipe or its denominator."
+  },
+  {
+    "id": "CultureMech:002624",
+    "medium_id": "J267",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J267",
+    "source_sha256": "4ea031a685a6910a5828d3bc51d2479036ef2ecdf1c32d499e12cf1c2200cbe1",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Separately autoclave sodium thioglycolate as 10% solution",
+    "reason": "Preparation adds a separately prepared solution, but the table does not establish whether its solvent is included in the stated water volume. Reconcile stock composition, working dose and complete-medium volume before supporting main-medium concentrations; do not assume a percentage basis or infer a stock dose."
+  },
+  {
+    "id": "CultureMech:002641",
+    "medium_id": "J283",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J283",
+    "source_sha256": "4195a8c6ca8fe27f1f7adc3ac328244c182a0750100e3c1ad1f5bc7b667973ad",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "add yeast extract as an autoclaved 10% solution.",
+    "reason": "Preparation adds a separately prepared solution, but the table does not establish whether its solvent is included in the stated water volume. Reconcile stock composition, working dose and complete-medium volume before supporting main-medium concentrations; do not assume a percentage basis or infer a stock dose."
+  },
+  {
+    "id": "CultureMech:002644",
+    "medium_id": "J287",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J287",
+    "source_sha256": "d082ecea0a57fdd027f126b47a4b213bac015a76b37a2800a63c607bd4684685",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Neutralize Na2S x 9H2O as a 5% solution",
+    "reason": "Preparation adds a separately prepared solution, but the table does not establish whether its solvent is included in the stated water volume. Reconcile stock composition, working dose and complete-medium volume before supporting main-medium concentrations; do not assume a percentage basis or infer a stock dose."
+  },
+  {
+    "id": "CultureMech:002652",
+    "medium_id": "J295",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J295",
+    "source_sha256": "d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Separately sterilize 50 ml of 10% cellobiose solution",
+    "reason": "The 950 ml base table omits the later 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning complete-medium concentrations."
+  },
+  {
+    "id": "CultureMech:002656",
+    "medium_id": "J299",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J299",
+    "source_sha256": "89da2def43255014635e400f89413d98350604ad9fd913cd46ee3fd5afe90214",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Separately autoclave Na2S x 9H2O and L-cystine as 5% and 12% solutions",
+    "reason": "Preparation adds a separately prepared solution, but the table does not establish whether its solvent is included in the stated water volume. Reconcile stock composition, working dose and complete-medium volume before supporting main-medium concentrations; do not assume a percentage basis or infer a stock dose."
+  },
+  {
+    "id": "CultureMech:002676",
+    "medium_id": "J318",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J318",
+    "source_sha256": "008988ae9c96edadaf1cbe97c31df0810e6ca20a96b068d2dc64ee9f26689a0d",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Autoclave NaCl and Na2CO3 solutions separately",
+    "reason": "Preparation adds a separately prepared solution, but the table does not establish whether its solvent is included in the stated water volume. Reconcile stock composition, working dose and complete-medium volume before supporting main-medium concentrations; do not assume a percentage basis or infer a stock dose."
+  },
+  {
+    "id": "CultureMech:002692",
+    "medium_id": "J333",
+    "fields": [
+      "ingredients[0].concentration"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J333",
+    "source_sha256": "942b7b2abc79cbd3c713bb49340dce19d9267ce2ba8db31a75fc2de80751ce66",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Mash and squeeze through a muslin bag.",
+    "reason": "Potato mass is an extraction input, not retained solids in the recovered medium. The explicit later makeup supports sucrose and agar amounts but not potato recovery or yield."
+  },
+  {
+    "id": "CultureMech:015401",
+    "medium_id": "J375",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J375",
+    "source_sha256": "f963ff276bfacf7b967de3766e69bb0da7a34d83d7ce4db77d8650050b4db1df",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Prior to inoculation, add the sterile Na2S solution to the medium",
+    "reason": "Preparation adds a separately prepared solution, but the table does not establish whether its solvent is included in the stated water volume. Reconcile stock composition, working dose and complete-medium volume before supporting main-medium concentrations; do not assume a percentage basis or infer a stock dose."
+  },
+  {
+    "id": "CultureMech:002746",
+    "medium_id": "J389",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J389",
+    "source_sha256": "764d6bf6b4e72d3d766b5a2708c1612717ca244a72faaa1663b363ff237df627",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "sodium thioglycolate and ascorbic acid in 10 ml distilled water",
+    "reason": "Preparation introduces two separate 10 ml water portions after mixing the other ingredients. Whether they are included in the table's 1000 ml water is unresolved; do not silently select 1000 or 1020 ml."
+  },
+  {
+    "id": "CultureMech:002808",
+    "medium_id": "J459",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J459",
+    "source_sha256": "0e7fc88c6f0fc50222300a64918c6abd93e858d83d677813afbc402919bc3865",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Autoclave glucose solution separately.",
+    "reason": "Preparation adds a separately prepared solution, but the table does not establish whether its solvent is included in the stated water volume. Reconcile stock composition, working dose and complete-medium volume before supporting main-medium concentrations; do not assume a percentage basis or infer a stock dose."
+  },
+  {
+    "id": "CultureMech:002810",
+    "medium_id": "J461",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J461",
+    "source_sha256": "bf59d4ab53a55a09dee2f3401fcb0fd5f3aec2549d11d9325beb1f6330bb50ba",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Add water to the filtrate to a final volume of 1.0 L",
+    "reason": "The API uses 1025 ml extraction inputs as its denominator, whereas the source makes filtrate to 1 L before nutrients. Restore extraction and supplement stages before correcting g/L; do not endorse the input-volume calculation."
+  },
+  {
+    "id": "CultureMech:002839",
+    "medium_id": "J489",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J489",
+    "source_sha256": "c29284bc0dcaef0ecaf86a8ec1a474e528b1a3856ae57287bedacfecb03ec8d0",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "After cooling, add 10% urea solution",
+    "reason": "Preparation adds a separately prepared solution, but the table does not establish whether its solvent is included in the stated water volume. Reconcile stock composition, working dose and complete-medium volume before supporting main-medium concentrations; do not assume a percentage basis or infer a stock dose."
+  },
+  {
+    "id": "CultureMech:002852",
+    "medium_id": "J500",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/J500",
+    "source_sha256": "1eb9e6cdc0bd5391392d5c5e66c7e592300dc78dd1667b80276e51d1737bbe87",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "add Na2S x 9H2O (as a 5% solution)",
+    "reason": "Preparation adds a separately prepared solution, but the table does not establish whether its solvent is included in the stated water volume. Reconcile stock composition, working dose and complete-medium volume before supporting main-medium concentrations; do not assume a percentage basis or infer a stock dose."
+  }
+]

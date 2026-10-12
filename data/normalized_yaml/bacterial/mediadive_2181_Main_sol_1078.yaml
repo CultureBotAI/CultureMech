@@ -11,6 +11,33 @@ composition:
   term:
     id: mediadive.compound:965
     label: Bacto brain heart infusion
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/2181
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Bacto brain heart infusion",
+                      "compound_id": 965,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.82,
+                      "unit": "g",
+                      "g_l": 5.09317,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Bacto brain
+      heart infusion) in MediaDive solution 2181; locator=$.data.recipe[0] (compound_id=965).
+      Provider explicitly reports g_l=5.09317. Arithmetic check: 0.82 g * 1 g/g /
+      (161 ml / 1000 ml per L) = 5.093167701863354037267080745 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      161. Retrieved 2026-10-07T09:09:50.320119+00:00; response SHA256=91a69603ca59a9aa67af08dfb5122aef8c2e046598c9a4a1f7b6a3377d861f0a.'
 - preferred_term: PPLO broth
   concentration:
     value: '5.40373'
@@ -112,6 +139,15 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:15:06.636792+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/2181
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "5.09317"}
+    -> {"unit": "G_PER_L", "value": "5.09317"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -120,3 +156,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/2181
+  title: 'MediaDive solution 2181: Main sol. 1078'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=91a69603ca59a9aa67af08dfb5122aef8c2e046598c9a4a1f7b6a3377d861f0a;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

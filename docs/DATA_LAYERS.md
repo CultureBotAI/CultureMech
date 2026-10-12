@@ -430,19 +430,21 @@ just validate-refs normalized_yaml/bacterial/LB_Broth.yaml
 
 ## Layer 4: Merged YAML (`merge_yaml/`)
 
-**Purpose**: Deduplicated recipes with identical ingredient sets consolidated into canonical records.
+**Purpose**: Lossless consolidation of compatible encoded formulations into canonical records.
 
 **Characteristics**:
-- **Ingredient set matching** - Recipes with the same chemicals are merged (regardless of amounts)
-- **Fingerprint-based** - SHA256 hash of sorted ingredient CHEBI IDs + names
+- **Formulation matching** - Quantities, stock references, preparation, conditions and notes must agree
+- **Separate candidate matching** - Ingredient-set hashes identify potential duplicates or variants, not permission to merge
 - **Synonym tracking** - All alternate names preserved with provenance
 - **Cross-category merging** - Recipes merged across categories
-- **Provenance preservation** - All source recipe IDs tracked
-- **Concentration-independent** - Matches ignore concentration, pH, temperature differences
+- **Provenance preservation** - Source filename stems are tracked via `merged_from`; scoped evidence, references and curation events are retained
+- **No inferred equivalence** - No automatic unit conversion, stock expansion or hydrate equivalence
 
-**Important**: This layer identifies recipes with the **same base formulation** (same chemicals), not identical recipes. Recipes merged here may differ in concentrations, pH, preparation methods, and other parameters. This is useful for identifying that "LB Medium" exists across multiple databases even with slight formulation variations.
-
-This layer reduces redundancy and provides a cleaner view of unique media formulations.
+**Important**: Matching identical encoded assertions does not scientifically verify
+them. Different amounts, stocks or preparation stages remain separate recipes.
+Conservative comparison also keeps records separate when free-text notes or
+scalar provenance disagree. Such candidates require source-backed identity or
+variant review, not automatic averaging or selection of one source's quantities.
 
 ### Structure
 
@@ -460,41 +462,28 @@ Note: Unlike normalized_yaml, merge_yaml uses a single flat directory since reci
 
 ### Merging Algorithm
 
-Recipes are matched using ingredient fingerprints:
+1. Route standalone solutions outside medium merging and report unprocessable inputs.
+2. Group media with `RecipeMatcher.group_formulations`: scientific fields must
+   match as encoded, including direct and nested stock quantities, reference-only
+   stock identities, notes, conditions and preparation. List order is preserved
+   because evidence may cite indices and preparation steps are ordered.
+3. Select the canonical name with the existing frequency/source-priority rules.
+4. Union evidence at each corresponding node without changing its snippets or
+   mixing ingredient and stock stages. Retain root references, sources and events.
+5. Preserve synonyms/categories and track contributing source files.
 
-1. **Extract identifiers** - CHEBI IDs (preferred) or normalized ingredient names
-2. **Generate fingerprint** - SHA256 hash of sorted ingredient set
-3. **Group duplicates** - Recipes with identical fingerprints
-4. **Select canonical** - Most common name (with source priority tie-breaking)
-5. **Build synonyms** - Track all non-canonical names with provenance
-6. **Merge categories** - Combine all original categories into multivalued field
+`RecipeMatcher.group_recipes` and `find_duplicates` retain the broader,
+concentration-independent candidate search. Their results must not be passed
+directly to the merger without formulation review; incompatible direct merges
+raise an error, even if a candidate fingerprint is supplied.
 
-**What IS considered in matching**:
-- ✅ Chemical identity (CHEBI IDs or ingredient names)
-- ✅ Presence/absence of each ingredient
-- ✅ Solution compositions (ingredients within stock solutions)
+The stored `merge_fingerprint` keeps its existing schema meaning: an
+order-independent, concentration-independent ingredient-set hash. Distinct
+formulations can share it. The stricter formulation hash is used for grouping
+and filename disambiguation and is recorded in the generated merge event.
 
-**What is NOT considered in matching**:
-- ❌ Ingredient concentrations (10 g/L vs 20 g/L = same)
-- ❌ pH values
-- ❌ Temperature settings
-- ❌ Preparation steps
-- ❌ Physical state (liquid vs solid agar)
-- ❌ Medium type (complex vs defined)
-- ❌ Other metadata fields
-
-**Fingerprint generation details**:
-- Includes both direct ingredients and solution compositions
-- Order-independent (sorted before hashing)
-- Concentration-independent (only ingredient identity matters)
-- Hydration notation normalized (MgSO4·7H2O → MgSO4)
-
-**Example**: These recipes would merge:
-- "LB Medium (5 g/L NaCl, pH 7.0, liquid)"
-- "LB Broth (10 g/L NaCl, pH 7.5, solid agar)"
-- "Luria-Bertani (8 g/L NaCl, pH 6.8, liquid)"
-
-All have the same ingredients (Tryptone, Yeast Extract, NaCl) so they match.
+For example, otherwise similar recipes with 5 versus 10 g/L NaCl or different pH
+values are **not** automatically merged. A common name is not identity evidence.
 
 ### Merging Recipes
 
@@ -517,7 +506,7 @@ just count-unique-recipes
 
 ### Example Merged Recipe
 
-`merge_yaml/merged/LB_Medium.yaml`:
+Illustrative structure only, not a verified recipe or current corpus output:
 ```yaml
 name: LB medium                    # Canonical (most common)
 original_name: LB medium
@@ -532,12 +521,10 @@ ingredients:
   - preferred_term: Tryptone
     concentration: {value: '10', unit: G_PER_L}
     term: {id: CHEBI:36316, label: tryptone}
-    notes: 'Concentration may vary across sources (8-12 g/L)'
 
   - preferred_term: NaCl
     concentration: {value: '10', unit: G_PER_L}
     term: {id: CHEBI:26710, label: sodium chloride}
-    notes: 'Concentration varies: 5-10 g/L depending on source'
 
 # NEW: Synonym tracking
 synonyms:
@@ -573,7 +560,7 @@ curation_history:
 
 ### Merge Statistics
 
-`merge_yaml/merge_stats.json`:
+Historical illustrative `merge_yaml/merge_stats.json` (not current counts):
 ```json
 {
   "timestamp": "2026-02-03T08:00:00Z",
@@ -602,12 +589,13 @@ Merged recipes undergo verification:
 just verify-merges
 ```
 
-**Verification checks**:
-1. **Schema validity** - All recipes validate against LinkML schema
-2. **No duplicate names** - Canonical names are unique
-3. **Completeness** - All input recipes accounted for
-4. **Fingerprint consistency** - Stored fingerprints match recomputed
-5. **Synonym completeness** - Multi-source merges have synonyms
+The legacy verifier checks YAML readability, duplicate names, input accounting,
+ingredient-set fingerprints and synonym structure. Its YAML check is **not**
+closed-schema validation, and shared names can be legitimate distinct
+formulations. Use closed-schema validation and source-to-output claim retention
+checks as well. `just audit-merge-freshness` regenerates into a temporary directory
+and detects drift without overwriting tracked derived YAML. Old stored merges
+must not be treated as repaired merely because the merger code changed.
 6. **Category tracking** - All original categories preserved
 
 ---

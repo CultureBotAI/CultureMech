@@ -11,6 +11,32 @@ composition:
   term:
     id: mediadive.compound:2087
     label: Corn meal
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/318
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Corn meal",
+                      "compound_id": 2087,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 50,
+                      "unit": "g",
+                      "g_l": 50,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Corn meal)
+      in MediaDive solution 318; locator=$.data.recipe[0] (compound_id=2087). Provider
+      explicitly reports g_l=50. Arithmetic check: 50 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 50 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:22:34.887966+00:00; response SHA256=e2fac4fdb6332e6c4eb2d57a8e9b83e845d24499e132e7744428fe9dabed67c3.'
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -35,6 +61,32 @@ composition:
     label: agar
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/318
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Agar",
+                      "compound_id": 3,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 10,
+                      "unit": "g",
+                      "g_l": 10,
+                      "mmol_l": 29.7327,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Agar) in
+      MediaDive solution 318; locator=$.data.recipe[2] (compound_id=3). Provider explicitly
+      reports g_l=10. Arithmetic check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) =
+      10 g/L, consistent with the reported value at its precision. Evidence supports
+      the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:22:34.887966+00:00; response SHA256=e2fac4fdb6332e6c4eb2d57a8e9b83e845d24499e132e7744428fe9dabed67c3.'
 preparation_notes: Blend 50.0 g corn meal in 800 ml of distilled water. Leave overnight
   in the refrigerator. Heat at 60°C for one hour. Filter and make up volume to 1 l.
   Add 10.0 g agar and heat to dissolve, then autoclave at 121°C for 15 minutes. pH
@@ -72,6 +124,16 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T08:27:51.574555+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/318
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "50"} -> {"unit":
+    "G_PER_L", "value": "50"} (evidence_only); composition[2].concentration: {"unit":
+    "G_PER_L", "value": "10"} -> {"unit": "G_PER_L", "value": "10"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -80,3 +142,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/318
+  title: 'MediaDive solution 318: Main sol. 191'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=e2fac4fdb6332e6c4eb2d57a8e9b83e845d24499e132e7744428fe9dabed67c3;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

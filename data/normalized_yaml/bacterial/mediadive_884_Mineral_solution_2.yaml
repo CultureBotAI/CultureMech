@@ -16,6 +16,430 @@ composition:
     label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
+  notes: 'Provider-declared stock concentration only; not an independently measured
+    final volume or a resolved original percentage basis Source input: 0.6 % at data.recipe[0].'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/884
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.6,
+                      "unit": "%",
+                      "g_l": 6,
+                      "mmol_l": 44.0901,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[0].preferred_term: Provider-declared stock concentration only; not an independently measured final volume or a resolved original percentage basis Source input: 0.6 % at data.recipe[0]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[0]; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+
+      Additional exact excerpt: {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.6,
+                      "unit": "%",
+                      "g_l": 6,
+                      "mmol_l": 44.0901,
+                      "optional": 0
+                  }
+      composition[0].concentration: Provider-declared stock concentration only; not an independently measured final volume or a resolved original percentage basis Source input: 0.6 % at data.recipe[0]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[0]; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+
+      Additional exact excerpt: {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.6,
+                      "unit": "%",
+                      "g_l": 6,
+                      "mmol_l": 44.0901,
+                      "optional": 0
+                  }
+      composition[0].notes: Provider-declared stock concentration only; not an independently measured final volume or a resolved original percentage basis Source input: 0.6 % at data.recipe[0]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[0]; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.6,
+                      "unit": "%",
+                      "g_l": 6,
+                      "mmol_l": 44.0901,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "(NH4)2SO4",
+                      "compound_id": 27,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "%",
+                      "g_l": 20,
+                      "mmol_l": 151.355,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.2,
+                      "unit": "%",
+                      "g_l": 12,
+                      "mmol_l": 205.339,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "MgSO4 x 7 H2O",
+                      "compound_id": 8,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.25,
+                      "unit": "%",
+                      "g_l": 2.5,
+                      "mmol_l": 10.143,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "CaCl2 x 7 H2O",
+                      "compound_id": 479,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.16,
+                      "unit": "%",
+                      "g_l": 1.6,
+                      "mmol_l": 14.4166,
+                      "optional": 0
+                  }
+              ]
+      ingredients: Every exact recipe row is represented in composition. Remove the false placeholder and only its incomplete-composition flag; unresolved scientific bases remain explicit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.6,
+                      "unit": "%",
+                      "g_l": 6,
+                      "mmol_l": 44.0901,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "(NH4)2SO4",
+                      "compound_id": 27,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "%",
+                      "g_l": 20,
+                      "mmol_l": 151.355,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.2,
+                      "unit": "%",
+                      "g_l": 12,
+                      "mmol_l": 205.339,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "MgSO4 x 7 H2O",
+                      "compound_id": 8,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.25,
+                      "unit": "%",
+                      "g_l": 2.5,
+                      "mmol_l": 10.143,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "CaCl2 x 7 H2O",
+                      "compound_id": 479,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.16,
+                      "unit": "%",
+                      "g_l": 1.6,
+                      "mmol_l": 14.4166,
+                      "optional": 0
+                  }
+              ]
+      data_quality_flags: Every exact recipe row is represented in composition. Remove the false placeholder and only its incomplete-composition flag; unresolved scientific bases remain explicit. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.6,
+                      "unit": "%",
+                      "g_l": 6,
+                      "mmol_l": 44.0901,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "(NH4)2SO4",
+                      "compound_id": 27,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "%",
+                      "g_l": 20,
+                      "mmol_l": 151.355,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.2,
+                      "unit": "%",
+                      "g_l": 12,
+                      "mmol_l": 205.339,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "MgSO4 x 7 H2O",
+                      "compound_id": 8,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.25,
+                      "unit": "%",
+                      "g_l": 2.5,
+                      "mmol_l": 10.143,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "CaCl2 x 7 H2O",
+                      "compound_id": 479,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.16,
+                      "unit": "%",
+                      "g_l": 1.6,
+                      "mmol_l": 14.4166,
+                      "optional": 0
+                  }
+              ]
+      notes: Complete source rows determine the reconstructed formulation. Archive the prior flattened nodes, unsupported LB additions and stock links in append-only history. Unrelated annotations are preserved, not recertified. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.6,
+                      "unit": "%",
+                      "g_l": 6,
+                      "mmol_l": 44.0901,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "(NH4)2SO4",
+                      "compound_id": 27,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "%",
+                      "g_l": 20,
+                      "mmol_l": 151.355,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.2,
+                      "unit": "%",
+                      "g_l": 12,
+                      "mmol_l": 205.339,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "MgSO4 x 7 H2O",
+                      "compound_id": 8,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.25,
+                      "unit": "%",
+                      "g_l": 2.5,
+                      "mmol_l": 10.143,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "CaCl2 x 7 H2O",
+                      "compound_id": 479,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.16,
+                      "unit": "%",
+                      "g_l": 1.6,
+                      "mmol_l": 14.4166,
+                      "optional": 0
+                  }
+              ]
+      notes: Complete source rows determine the reconstructed formulation. Archive the prior flattened nodes, unsupported LB additions and stock links in append-only history. Unrelated annotations are preserved, not recertified. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.6,
+                      "unit": "%",
+                      "g_l": 6,
+                      "mmol_l": 44.0901,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "(NH4)2SO4",
+                      "compound_id": 27,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "%",
+                      "g_l": 20,
+                      "mmol_l": 151.355,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 3,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.2,
+                      "unit": "%",
+                      "g_l": 12,
+                      "mmol_l": 205.339,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 4,
+                      "compound": "MgSO4 x 7 H2O",
+                      "compound_id": 8,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.25,
+                      "unit": "%",
+                      "g_l": 2.5,
+                      "mmol_l": 10.143,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 5,
+                      "compound": "CaCl2 x 7 H2O",
+                      "compound_id": 479,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.16,
+                      "unit": "%",
+                      "g_l": 1.6,
+                      "mmol_l": 14.4166,
+                      "optional": 0
+                  }
+              ]
+      notes: This old amount belongs to an unsupported LB addition, placeholder, or relocated source stage. Archive it without retaining a false concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
 - preferred_term: (NH4)2SO4
   concentration:
     value: '20'
@@ -28,6 +452,60 @@ composition:
     label: ammonium sulfate
     confidence: 1.0
     match_type: exact_match
+  notes: 'Provider-declared stock concentration only; not an independently measured
+    final volume or a resolved original percentage basis Source input: 2 % at data.recipe[1].'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/884
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "(NH4)2SO4",
+                      "compound_id": 27,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "%",
+                      "g_l": 20,
+                      "mmol_l": 151.355,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[1].preferred_term: Provider-declared stock concentration only; not an independently measured final volume or a resolved original percentage basis Source input: 2 % at data.recipe[1]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[1]; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+
+      Additional exact excerpt: {
+                      "recipe_order": 2,
+                      "compound": "(NH4)2SO4",
+                      "compound_id": 27,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "%",
+                      "g_l": 20,
+                      "mmol_l": 151.355,
+                      "optional": 0
+                  }
+      composition[1].concentration: Provider-declared stock concentration only; not an independently measured final volume or a resolved original percentage basis Source input: 2 % at data.recipe[1]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[1]; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+
+      Additional exact excerpt: {
+                      "recipe_order": 2,
+                      "compound": "(NH4)2SO4",
+                      "compound_id": 27,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "%",
+                      "g_l": 20,
+                      "mmol_l": 151.355,
+                      "optional": 0
+                  }
+      composition[1].notes: Provider-declared stock concentration only; not an independently measured final volume or a resolved original percentage basis Source input: 2 % at data.recipe[1]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[1]; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
 - preferred_term: NaCl
   concentration:
     value: '12'
@@ -40,6 +518,60 @@ composition:
     label: sodium chloride
     confidence: 1.0
     match_type: exact_match
+  notes: 'Provider-declared stock concentration only; not an independently measured
+    final volume or a resolved original percentage basis Source input: 1.2 % at data.recipe[2].'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/884
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.2,
+                      "unit": "%",
+                      "g_l": 12,
+                      "mmol_l": 205.339,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[2].preferred_term: Provider-declared stock concentration only; not an independently measured final volume or a resolved original percentage basis Source input: 1.2 % at data.recipe[2]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[2]; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+
+      Additional exact excerpt: {
+                      "recipe_order": 3,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.2,
+                      "unit": "%",
+                      "g_l": 12,
+                      "mmol_l": 205.339,
+                      "optional": 0
+                  }
+      composition[2].concentration: Provider-declared stock concentration only; not an independently measured final volume or a resolved original percentage basis Source input: 1.2 % at data.recipe[2]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[2]; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+
+      Additional exact excerpt: {
+                      "recipe_order": 3,
+                      "compound": "NaCl",
+                      "compound_id": 43,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.2,
+                      "unit": "%",
+                      "g_l": 12,
+                      "mmol_l": 205.339,
+                      "optional": 0
+                  }
+      composition[2].notes: Provider-declared stock concentration only; not an independently measured final volume or a resolved original percentage basis Source input: 1.2 % at data.recipe[2]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[2]; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '2.5'
@@ -52,6 +584,60 @@ composition:
     label: magnesium sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  notes: 'Provider-declared stock concentration only; not an independently measured
+    final volume or a resolved original percentage basis Source input: 0.25 % at data.recipe[3].'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/884
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "MgSO4 x 7 H2O",
+                      "compound_id": 8,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.25,
+                      "unit": "%",
+                      "g_l": 2.5,
+                      "mmol_l": 10.143,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[3].preferred_term: Provider-declared stock concentration only; not an independently measured final volume or a resolved original percentage basis Source input: 0.25 % at data.recipe[3]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[3]; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+
+      Additional exact excerpt: {
+                      "recipe_order": 4,
+                      "compound": "MgSO4 x 7 H2O",
+                      "compound_id": 8,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.25,
+                      "unit": "%",
+                      "g_l": 2.5,
+                      "mmol_l": 10.143,
+                      "optional": 0
+                  }
+      composition[3].concentration: Provider-declared stock concentration only; not an independently measured final volume or a resolved original percentage basis Source input: 0.25 % at data.recipe[3]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[3]; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+
+      Additional exact excerpt: {
+                      "recipe_order": 4,
+                      "compound": "MgSO4 x 7 H2O",
+                      "compound_id": 8,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.25,
+                      "unit": "%",
+                      "g_l": 2.5,
+                      "mmol_l": 10.143,
+                      "optional": 0
+                  }
+      composition[3].notes: Provider-declared stock concentration only; not an independently measured final volume or a resolved original percentage basis Source input: 0.25 % at data.recipe[3]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[3]; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
 - preferred_term: CaCl2 x 7 H2O
   concentration:
     value: '1.6'
@@ -64,6 +650,78 @@ composition:
     label: calcium dichloride
     confidence: 0.7
     match_type: corpus_consensus
+  notes: |-
+    Provider-declared stock concentration only; not an independently measured final volume or a resolved original percentage basis Source input: 0.16 % at data.recipe[4].
+
+    Retain the literal seven-water source label. Other sources use dihydrate or hexahydrate labels; no chemical-form equivalence or molecular weight is inferred. Existing generic calcium-chloride annotation is not hydrate-specific evidence.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/884
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "CaCl2 x 7 H2O",
+                      "compound_id": 479,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.16,
+                      "unit": "%",
+                      "g_l": 1.6,
+                      "mmol_l": 14.4166,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[4].preferred_term: Provider-declared stock concentration only; not an independently measured final volume or a resolved original percentage basis Source input: 0.16 % at data.recipe[4]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[4]; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+
+      Additional exact excerpt: {
+                      "recipe_order": 5,
+                      "compound": "CaCl2 x 7 H2O",
+                      "compound_id": 479,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.16,
+                      "unit": "%",
+                      "g_l": 1.6,
+                      "mmol_l": 14.4166,
+                      "optional": 0
+                  }
+      composition[4].concentration: Provider-declared stock concentration only; not an independently measured final volume or a resolved original percentage basis Source input: 0.16 % at data.recipe[4]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[4]; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+
+      Additional exact excerpt: {
+                      "recipe_order": 5,
+                      "compound": "CaCl2 x 7 H2O",
+                      "compound_id": 479,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.16,
+                      "unit": "%",
+                      "g_l": 1.6,
+                      "mmol_l": 14.4166,
+                      "optional": 0
+                  }
+      composition[4].notes: Provider-declared stock concentration only; not an independently measured final volume or a resolved original percentage basis Source input: 0.16 % at data.recipe[4]. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[4]; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+
+      Additional exact excerpt: {
+                      "recipe_order": 5,
+                      "compound": "CaCl2 x 7 H2O",
+                      "compound_id": 479,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.16,
+                      "unit": "%",
+                      "g_l": 1.6,
+                      "mmol_l": 14.4166,
+                      "optional": 0
+                  }
+      composition[4].notes: Retain the literal seven-water source label. Other sources use dihydrate or hexahydrate labels; no chemical-form equivalence or molecular weight is inferred. Existing generic calcium-chloride annotation is not hydrate-specific evidence. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[4]; accessed=2026-10-09T06:57:17.721690+00:00; capture SHA256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
 preparation_notes: 'Original volume: 100 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:41.465146Z'
@@ -98,11 +756,329 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-10-09T07:30:35.561516+00:00'
+  curator: codex
+  action: RESTORED_RUMINOCOCCUS_ALBUS_SOURCE_FORMULATIONS_WITH_EVIDENCE
+  notes: Restore exact-source medium436 formulation, preparation stages and input
+    units. Preserve qualified prior rates, source-specific nulls and unresolved original
+    bases. No growth association added.
+  source: https://mediadive.dsmz.de/rest/solution/884
+  changes: '[{"old_field": "composition[0].preferred_term", "field": "composition[0].preferred_term",
+    "old": "KH2PO4", "new": "KH2PO4", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/884",
+    "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\":
+    \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.6,\n                \"unit\":
+    \"%\",\n                \"g_l\": 6,\n                \"mmol_l\": 44.0901,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[0].concentration", "field": "composition[0].concentration",
+    "old": {"value": "6", "unit": "G_PER_L"}, "new": {"value": "6", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/884",
+    "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\":
+    \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.6,\n                \"unit\":
+    \"%\",\n                \"g_l\": 6,\n                \"mmol_l\": 44.0901,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[0].notes", "field": "composition[0].notes",
+    "old": null, "new": "Provider-declared stock concentration only; not an independently
+    measured final volume or a resolved original percentage basis Source input: 0.6
+    % at data.recipe[0].", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/884",
+    "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\":
+    \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.6,\n                \"unit\":
+    \"%\",\n                \"g_l\": 6,\n                \"mmol_l\": 44.0901,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].preferred_term", "field": "composition[1].preferred_term",
+    "old": "(NH4)2SO4", "new": "(NH4)2SO4", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/884",
+    "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"%\",\n                \"g_l\": 20,\n                \"mmol_l\": 151.355,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].concentration", "field": "composition[1].concentration",
+    "old": {"value": "20", "unit": "G_PER_L"}, "new": {"value": "20", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/884",
+    "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"%\",\n                \"g_l\": 20,\n                \"mmol_l\": 151.355,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].notes", "field": "composition[1].notes",
+    "old": null, "new": "Provider-declared stock concentration only; not an independently
+    measured final volume or a resolved original percentage basis Source input: 2
+    % at data.recipe[1].", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/884",
+    "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"%\",\n                \"g_l\": 20,\n                \"mmol_l\": 151.355,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[2].preferred_term", "field": "composition[2].preferred_term",
+    "old": "NaCl", "new": "NaCl", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/884",
+    "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\":
+    \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.2,\n                \"unit\":
+    \"%\",\n                \"g_l\": 12,\n                \"mmol_l\": 205.339,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[2].concentration", "field": "composition[2].concentration",
+    "old": {"value": "12", "unit": "G_PER_L"}, "new": {"value": "12", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/884",
+    "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\":
+    \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.2,\n                \"unit\":
+    \"%\",\n                \"g_l\": 12,\n                \"mmol_l\": 205.339,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[2].notes", "field": "composition[2].notes",
+    "old": null, "new": "Provider-declared stock concentration only; not an independently
+    measured final volume or a resolved original percentage basis Source input: 1.2
+    % at data.recipe[2].", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/884",
+    "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\":
+    \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.2,\n                \"unit\":
+    \"%\",\n                \"g_l\": 12,\n                \"mmol_l\": 205.339,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[3].preferred_term", "field": "composition[3].preferred_term",
+    "old": "MgSO4 x 7 H2O", "new": "MgSO4 x 7 H2O", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/solution/884", "snippet": "{\n                \"recipe_order\":
+    4,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\":
+    8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.25,\n                \"unit\":
+    \"%\",\n                \"g_l\": 2.5,\n                \"mmol_l\": 10.143,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[3].concentration", "field": "composition[3].concentration",
+    "old": {"value": "2.5", "unit": "G_PER_L"}, "new": {"value": "2.5", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/884",
+    "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\":
+    \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.25,\n                \"unit\":
+    \"%\",\n                \"g_l\": 2.5,\n                \"mmol_l\": 10.143,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[3].notes", "field": "composition[3].notes",
+    "old": null, "new": "Provider-declared stock concentration only; not an independently
+    measured final volume or a resolved original percentage basis Source input: 0.25
+    % at data.recipe[3].", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/884",
+    "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\":
+    \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.25,\n                \"unit\":
+    \"%\",\n                \"g_l\": 2.5,\n                \"mmol_l\": 10.143,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[4].preferred_term", "field": "composition[4].preferred_term",
+    "old": "CaCl2 x 7 H2O", "new": "CaCl2 x 7 H2O", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/solution/884", "snippet": "{\n                \"recipe_order\":
+    5,\n                \"compound\": \"CaCl2 x 7 H2O\",\n                \"compound_id\":
+    479,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.16,\n                \"unit\":
+    \"%\",\n                \"g_l\": 1.6,\n                \"mmol_l\": 14.4166,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[4].concentration", "field": "composition[4].concentration",
+    "old": {"value": "1.6", "unit": "G_PER_L"}, "new": {"value": "1.6", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/884",
+    "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\":
+    \"CaCl2 x 7 H2O\",\n                \"compound_id\": 479,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.16,\n                \"unit\":
+    \"%\",\n                \"g_l\": 1.6,\n                \"mmol_l\": 14.4166,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[4].notes", "field": "composition[4].notes",
+    "old": null, "new": "Provider-declared stock concentration only; not an independently
+    measured final volume or a resolved original percentage basis Source input: 0.16
+    % at data.recipe[4].\n\nRetain the literal seven-water source label. Other sources
+    use dihydrate or hexahydrate labels; no chemical-form equivalence or molecular
+    weight is inferred. Existing generic calcium-chloride annotation is not hydrate-specific
+    evidence.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/884",
+    "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\":
+    \"CaCl2 x 7 H2O\",\n                \"compound_id\": 479,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.16,\n                \"unit\":
+    \"%\",\n                \"g_l\": 1.6,\n                \"mmol_l\": 14.4166,\n                \"optional\":
+    0\n            }"}, {"old_field": null, "field": "composition[4].notes", "old":
+    null, "new": "Provider-declared stock concentration only; not an independently
+    measured final volume or a resolved original percentage basis Source input: 0.16
+    % at data.recipe[4].\n\nRetain the literal seven-water source label. Other sources
+    use dihydrate or hexahydrate labels; no chemical-form equivalence or molecular
+    weight is inferred. Existing generic calcium-chloride annotation is not hydrate-specific
+    evidence.", "status": "conflict", "reference": "https://mediadive.dsmz.de/rest/solution/884",
+    "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\":
+    \"CaCl2 x 7 H2O\",\n                \"compound_id\": 479,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.16,\n                \"unit\":
+    \"%\",\n                \"g_l\": 1.6,\n                \"mmol_l\": 14.4166,\n                \"optional\":
+    0\n            }"}, {"old_field": "ingredients", "field": "ingredients", "old":
+    [{"preferred_term": "See source for composition", "concentration": {"value": "variable",
+    "unit": "VARIABLE"}}], "new": null, "status": "remove_unsupported", "reference":
+    "https://mediadive.dsmz.de/rest/solution/884", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\":
+    11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.6,\n                \"unit\":
+    \"%\",\n                \"g_l\": 6,\n                \"mmol_l\": 44.0901,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"%\",\n                \"g_l\": 20,\n                \"mmol_l\": 151.355,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.2,\n                \"unit\":
+    \"%\",\n                \"g_l\": 12,\n                \"mmol_l\": 205.339,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.25,\n                \"unit\":
+    \"%\",\n                \"g_l\": 2.5,\n                \"mmol_l\": 10.143,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"CaCl2 x 7 H2O\",\n                \"compound_id\": 479,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.16,\n                \"unit\":
+    \"%\",\n                \"g_l\": 1.6,\n                \"mmol_l\": 14.4166,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "data_quality_flags", "field": "data_quality_flags",
+    "old": ["incomplete_composition"], "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/solution/884", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\":
+    11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.6,\n                \"unit\":
+    \"%\",\n                \"g_l\": 6,\n                \"mmol_l\": 44.0901,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"%\",\n                \"g_l\": 20,\n                \"mmol_l\": 151.355,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.2,\n                \"unit\":
+    \"%\",\n                \"g_l\": 12,\n                \"mmol_l\": 205.339,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.25,\n                \"unit\":
+    \"%\",\n                \"g_l\": 2.5,\n                \"mmol_l\": 10.143,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"CaCl2 x 7 H2O\",\n                \"compound_id\": 479,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.16,\n                \"unit\":
+    \"%\",\n                \"g_l\": 1.6,\n                \"mmol_l\": 14.4166,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "ingredients", "field": "notes",
+    "old": [{"preferred_term": "See source for composition", "concentration": {"value":
+    "variable", "unit": "VARIABLE"}}], "new": "Complete source rows determine the
+    reconstructed formulation. Archive the prior flattened nodes, unsupported LB additions
+    and stock links in append-only history. Unrelated annotations are preserved, not
+    recertified.\n\nComplete source rows determine the reconstructed formulation.
+    Archive the prior flattened nodes, unsupported LB additions and stock links in
+    append-only history. Unrelated annotations are preserved, not recertified.", "status":
+    "evidence_only", "reference": "https://mediadive.dsmz.de/rest/solution/884", "snippet":
+    "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.6,\n                \"unit\":
+    \"%\",\n                \"g_l\": 6,\n                \"mmol_l\": 44.0901,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"%\",\n                \"g_l\": 20,\n                \"mmol_l\": 151.355,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.2,\n                \"unit\":
+    \"%\",\n                \"g_l\": 12,\n                \"mmol_l\": 205.339,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.25,\n                \"unit\":
+    \"%\",\n                \"g_l\": 2.5,\n                \"mmol_l\": 10.143,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"CaCl2 x 7 H2O\",\n                \"compound_id\": 479,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.16,\n                \"unit\":
+    \"%\",\n                \"g_l\": 1.6,\n                \"mmol_l\": 14.4166,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "composition", "field": "notes",
+    "old": [{"preferred_term": "KH2PO4", "concentration": {"value": "6", "unit": "G_PER_L"},
+    "term": {"id": "mediadive.compound:11", "label": "KH2PO4"}, "chebi_term": {"id":
+    "CHEBI:63036", "label": "potassium dihydrogen phosphate", "confidence": 0.7, "match_type":
+    "corpus_consensus"}}, {"preferred_term": "(NH4)2SO4", "concentration": {"value":
+    "20", "unit": "G_PER_L"}, "term": {"id": "mediadive.compound:27", "label": "(NH4)2SO4"},
+    "chebi_term": {"id": "CHEBI:62946", "label": "ammonium sulfate", "confidence":
+    1.0, "match_type": "exact_match"}}, {"preferred_term": "NaCl", "concentration":
+    {"value": "12", "unit": "G_PER_L"}, "term": {"id": "mediadive.compound:43", "label":
+    "NaCl"}, "chebi_term": {"id": "CHEBI:26710", "label": "sodium chloride", "confidence":
+    1.0, "match_type": "exact_match"}}, {"preferred_term": "MgSO4 x 7 H2O", "concentration":
+    {"value": "2.5", "unit": "G_PER_L"}, "term": {"id": "mediadive.compound:8", "label":
+    "MgSO4 x 7 H2O"}, "chebi_term": {"id": "CHEBI:31795", "label": "magnesium sulfate
+    heptahydrate", "confidence": 0.7, "match_type": "corpus_consensus"}}, {"preferred_term":
+    "CaCl2 x 7 H2O", "concentration": {"value": "1.6", "unit": "G_PER_L"}, "term":
+    {"id": "mediadive.compound:479", "label": "CaCl2 x 7 H2O"}, "chebi_term": {"id":
+    "CHEBI:3312", "label": "calcium dichloride", "confidence": 0.7, "match_type":
+    "corpus_consensus"}}], "new": "Complete source rows determine the reconstructed
+    formulation. Archive the prior flattened nodes, unsupported LB additions and stock
+    links in append-only history. Unrelated annotations are preserved, not recertified.\n\nComplete
+    source rows determine the reconstructed formulation. Archive the prior flattened
+    nodes, unsupported LB additions and stock links in append-only history. Unrelated
+    annotations are preserved, not recertified.", "status": "evidence_only", "reference":
+    "https://mediadive.dsmz.de/rest/solution/884", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\":
+    11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.6,\n                \"unit\":
+    \"%\",\n                \"g_l\": 6,\n                \"mmol_l\": 44.0901,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"%\",\n                \"g_l\": 20,\n                \"mmol_l\": 151.355,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.2,\n                \"unit\":
+    \"%\",\n                \"g_l\": 12,\n                \"mmol_l\": 205.339,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.25,\n                \"unit\":
+    \"%\",\n                \"g_l\": 2.5,\n                \"mmol_l\": 10.143,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"CaCl2 x 7 H2O\",\n                \"compound_id\": 479,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.16,\n                \"unit\":
+    \"%\",\n                \"g_l\": 1.6,\n                \"mmol_l\": 14.4166,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "ingredients[0].concentration", "field":
+    "notes", "old": {"value": "variable", "unit": "VARIABLE"}, "new": "Complete source
+    rows determine the reconstructed formulation. Archive the prior flattened nodes,
+    unsupported LB additions and stock links in append-only history. Unrelated annotations
+    are preserved, not recertified.\n\nComplete source rows determine the reconstructed
+    formulation. Archive the prior flattened nodes, unsupported LB additions and stock
+    links in append-only history. Unrelated annotations are preserved, not recertified.",
+    "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/solution/884",
+    "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.6,\n                \"unit\":
+    \"%\",\n                \"g_l\": 6,\n                \"mmol_l\": 44.0901,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"%\",\n                \"g_l\": 20,\n                \"mmol_l\": 151.355,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.2,\n                \"unit\":
+    \"%\",\n                \"g_l\": 12,\n                \"mmol_l\": 205.339,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.25,\n                \"unit\":
+    \"%\",\n                \"g_l\": 2.5,\n                \"mmol_l\": 10.143,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"CaCl2 x 7 H2O\",\n                \"compound_id\": 479,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.16,\n                \"unit\":
+    \"%\",\n                \"g_l\": 1.6,\n                \"mmol_l\": 14.4166,\n                \"optional\":
+    0\n            }\n        ]"}]'
 category: bacterial
+notes: |-
+  Complete source rows determine the reconstructed formulation. Archive the prior flattened nodes, unsupported LB additions and stock links in append-only history. Unrelated annotations are preserved, not recertified.
+
+  Complete source rows determine the reconstructed formulation. Archive the prior flattened nodes, unsupported LB additions and stock links in append-only history. Unrelated annotations are preserved, not recertified.
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/884
+  title: Mineral solution 2
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-09;
+    capture_sha256=810bb750396963ccc80677ade7c8935e1705f3dd1358f724da875046130f00fb.
+    Individual authors and publication year not supplied. Copyright/access years are
+    not publication years. Source-scoped ingredient evidence, not organism-growth
+    evidence.

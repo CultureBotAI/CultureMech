@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import hashlib
 import importlib.util
+import json
 import sys
 from pathlib import Path
 
@@ -21,9 +23,27 @@ def _load_script(path: Path, name: str):
     return module
 
 
-@pytest.fixture(scope="module")
-def repair_module():
-    return _load_script(SCRIPT, "repair_komodo_829_desulfurobacterium_ph_score10")
+@pytest.fixture
+def repair_module(tmp_path, monkeypatch):
+    module = _load_script(SCRIPT, "repair_komodo_829_desulfurobacterium_ph_score10")
+    folder = REPO / "reports/ingredient_concentration_curation/20261009-desulfurobacterium-family"
+    raw = (folder / "plan-v2.json").read_bytes()
+    receipt = json.loads((folder / "apply.json").read_text())
+    assert receipt["terminal"] and receipt["plan_sha256"] == hashlib.sha256(raw).hexdigest()
+    wanted = {module.PARENT_ID, *(child.record_id for child in module.CHILDREN)}
+    records = [r for r in json.loads(raw)["records"] if r["id"] in wanted]
+    assert len(records) == len(wanted) == 3
+    # Exercise the historical mutator on its reviewed baseline, never undo the
+    # later source-specific curation to satisfy this older composition guard.
+    for item in records:
+        before = item["before_text"].encode()
+        assert hashlib.sha256(before).hexdigest() == item["before_sha256"]
+        relative = Path(item["path"]).relative_to("data/normalized_yaml")
+        target = tmp_path / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(before)
+    monkeypatch.setattr(module, "NORMALIZED", tmp_path)
+    return module
 
 
 @pytest.fixture(scope="module")
@@ -63,7 +83,7 @@ def test_parent_preserves_other_children(repair_module) -> None:
 
 
 def test_repair_is_idempotent(repair_module) -> None:
-    once = repair_module.plan_repairs()
+    once = repair_module.plan_repairs(repair_module.NORMALIZED)
     twice = {
         path: (
             repair_module.repair_parent(doc)
@@ -85,7 +105,7 @@ def test_repair_is_idempotent(repair_module) -> None:
         assert repair_module.dump_record(twice[path]) == repair_module.dump_record(once[path])
 
 
-def test_plan_repairs_targets_current_records(repair_module) -> None:
+def test_plan_repairs_targets_reviewed_baseline(repair_module) -> None:
     expected = {
         repair_module.NORMALIZED
         / repair_module.PARENT: repair_module.repair_parent(
@@ -98,7 +118,31 @@ def test_plan_repairs_targets_current_records(repair_module) -> None:
             child,
         )
 
-    assert repair_module.plan_repairs() == expected
+    assert repair_module.plan_repairs(repair_module.NORMALIZED) == expected
+
+
+def test_legacy_plan_refuses_source_curated_current_corpus(repair_module) -> None:
+    with pytest.raises(ValueError, match="composition signature drifted"):
+        repair_module.plan_repairs(REPO / "data/normalized_yaml")
+
+
+@pytest.mark.parametrize("key", ["parent", "child0", "child1"])
+def test_legacy_repair_refuses_source_curated_current_records(repair_module, key) -> None:
+    if key == "parent":
+        path = repair_module.PARENT
+        repair = repair_module.repair_parent
+    else:
+        child = repair_module.CHILDREN[int(key[-1])]
+        path = child.path
+
+        def repair(doc):
+            return repair_module.repair_child(doc, child)
+
+    current = REPO / "data/normalized_yaml" / path
+    before = current.read_bytes()
+    with pytest.raises(ValueError, match="composition signature drifted"):
+        repair(yaml.safe_load(before))
+    assert current.read_bytes() == before
 
 
 def test_repair_rejects_wrong_parent_id(repair_module) -> None:

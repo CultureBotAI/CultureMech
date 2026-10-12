@@ -1,0 +1,599 @@
+{
+  "terminal": true,
+  "local_applied_record_checks_passed": true,
+  "scheduled_validation_runs_terminal": true,
+  "all_validation_gates_passed": false,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "normalized_count": 15910,
+  "normalized_inventory_sha256": "ebf8b59e00cc0cb250352e5c1e69f87288d18bc942db165c2d5673c1b33656f5",
+  "counts": {
+    "new_evidence": 37914,
+    "new_curation_history": 5643,
+    "bibliographic_entries_enriched": 73,
+    "quantity_corrections": 1788,
+    "ingredient_context_notes_corrected": 399,
+    "new_references": 6194,
+    "unsupported_quantity_slots_removed": 968,
+    "ingredient_labels_corrected": 202,
+    "ingredient_identities_corrected": 110,
+    "preparation_descriptions_corrected": 61,
+    "variant_context_descriptions_corrected": 2,
+    "variant_quantity_texts_corrected": 2,
+    "stock_context_notes_corrected": 10,
+    "preparation_actions_corrected": 67,
+    "recipe_context_notes_corrected": 32,
+    "child_link_notes_corrected": 2,
+    "stock_nodes_relocated": 862,
+    "stock_dose_basis_corrections": 148,
+    "unsupported_primary_identities_removed": 8,
+    "unsupported_secondary_identities_removed": 5,
+    "relationship_dose_descriptions_corrected": 13,
+    "variant_evidence_explanations_extended": 1,
+    "variant_evidence_snippets_added": 1,
+    "stock_labels_corrected": 1,
+    "root_evidence_explanations_corrected": 1,
+    "corrected_evidence_snippets": 3,
+    "new_quantity_slots": 379,
+    "stock_stage_concentrations_rebased": 203,
+    "stock_descriptors_added": 247,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 28,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 91,
+    "evidence_scopes_corrected": 172,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 10,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 3,
+    "child_links_corrected": 7,
+    "ingredient_evidence_explanations_extended": 3,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 16,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "unquantified_ingredient_nodes_added": 2,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 4,
+    "supplement_nodes_moved_to_variants": 4,
+    "supplied_hydrate_identities_corrected": 87,
+    "copied_ingredient_nodes_removed": 15,
+    "unsupported_ingredient_identity_slots_removed": 57,
+    "ingredient_mim_links_corrected": 54,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5402
+  },
+  "followup_unique_records": 11930,
+  "outside_this_followup": 3980,
+  "new_batch": {
+    "new_curation_history": 20,
+    "new_references": 150,
+    "new_evidence": 535,
+    "ingredient_context_notes_corrected": 243,
+    "unsupported_ingredient_identity_slots_removed": 57,
+    "ingredient_labels_corrected": 137,
+    "quantity_corrections": 37,
+    "ingredient_mim_links_corrected": 54,
+    "ingredient_identities_corrected": 90,
+    "records": 20,
+    "structured_claim_rows": 243,
+    "newly_edited_records": 20,
+    "canonical_coverage_increment": 20,
+    "unresolved_amount_claims": 206,
+    "taxa_media_associations": 0
+  },
+  "test_summaries": {
+    "preview": [
+      "254 passed in 51.53s"
+    ],
+    "post": [
+      "382 passed in 89.56s (0:01:29)"
+    ]
+  },
+  "production_reference_checks": {
+    "passed_snippet": 316,
+    "failed_snippet": 219,
+    "failed_title": 20,
+    "passed_title": 130
+  },
+  "production_reference_results": [
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_ethanol_12_5g_msg.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '20' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '12.5' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by\n            <i>Aspergillus terreus</i>\n            in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_12_5g_msg.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '20' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '12.5' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_20g_lactose_12_5g_msg.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '20' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '20' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '12.5' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glycerol_12_5g_msg.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '20' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '12.5' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_11g_ammonium_acetate.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '45' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_arginine.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '45' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '12.5' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_glycine.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '45' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '12.5' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_histidine.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '45' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '12.5' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_isoleucine.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '45' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '12.5' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_msg.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '45' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '12.5' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_13_7g_diammonium_tartrate.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '45' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '13.7' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_18g_msg.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '45' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '18' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4_5g_urea.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '45' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '4.5' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4g_ammonium_nitrate.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '45' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '4' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4g_sodium_nitrate.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '45' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '4' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_7g_msg.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '45' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '7' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_lactose_12_5g_msg.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '45' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '12.5' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_70g_glucose_12_5g_msg.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '70' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '11 mg' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'FeSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '5 g' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CaCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MnSO4 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'MgSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'ZnSO4 \u00b7 7H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: 'CuCl2 \u00b7 2H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '(NH4)6Mo7O24 \u00b7 4H2O' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Text part not found as substring: '12.5' (note: only abstract available for doi:10.1128/AEM.67.6.2596-2602.2001, full text may contain this excerpt)",
+        "Title mismatch for doi:10.1128/AEM.67.6.2596-2602.2001: expected 'Lovastatin Biosynthesis by Aspergillus terreus in a Chemically Defined Medium' but got 'Lovastatin Biosynthesis by <i>Aspergillus terreus</i> in a Chemically Defined Medium'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_20g_ethanol_12_5g_msg.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '(NH4)6Mo7O24'",
+        "Title mismatch for https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz: expected 'media_database.07Oct2015.sql' but got 'https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz'"
+      ]
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_20g_glycerol_12_5g_msg.yaml",
+      "returncode": 1,
+      "per_claim_results_available": true,
+      "valid": false,
+      "issues": [
+        "Text part not found as substring: '(NH4)6Mo7O24'",
+        "Title mismatch for https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz: expected 'media_database.07Oct2015.sql' but got 'https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz'"
+      ]
+    }
+  ],
+  "production_reference_gate_passed": false,
+  "reference_limitations": [
+    "An aborted command without JSON supplies no per-claim validation results.",
+    "Manual source inspection and capture matching are not automatic live-reference passes.",
+    "A literal numeric substring match alone does not verify ingredient, experimental row, unit or basis."
+  ],
+  "remaining_source_issues": [
+    "The 180 retained mineral molarities in article-linked records remain upstream database assertions; water-input basis is not assumed to be final solution volume.",
+    "The two unlinked sibling records retain all 26 database molarities. Their primary-paper association and remaining chemical forms are unresolved, not borrowed from the linked family.",
+    "Copper and sodium-glutamate hydrate identifiers remain unassigned after withdrawal of unverified non-hydrate grounding. Isoleucine stereochemistry is unspecified, not inferred.",
+    "Heptamolybdate has no replacement identifier; the conflicting packaged MIM synonym is not used and the immutable index is unchanged.",
+    "The source's Table 2 glutamic-acid equivalents are not the weighed sodium-glutamate hydrate; record 318 retains the batch-text/Figure 3 glucose discrepancy in evidence.",
+    "Paper and ontology verification is manual; no raw primary-article capture or successful automated DOI full-text verification is asserted.",
+    "Existing preparation, classification, application and organism/role claims are preserved and not certified by this ingredient curation. No IDs, category paths, growth claims or taxa-media associations are added."
+  ],
+  "corpus_commands": [
+    {
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "check-mim-label-index"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "returncode": 1
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness"
+      ],
+      "returncode": 1
+    }
+  ],
+  "fast_tier_pending": false,
+  "fast_tier_passed": true,
+  "fast_test_summary": "15409 passed, 16 skipped, 3498 deselected, 2 warnings in 2070.50s (0:34:30)",
+  "full_test_suite_pass_asserted": false,
+  "code_sha256": {
+    "scripts/review_hajjaj_ingredients.py": "f18bf9c504cdd8de32660605fe4bd41125a968b6d9e3f02122a8cf21be4b3185",
+    "tests/test_hajjaj_ingredients.py": "6f5912d6722dbc2353d7b1af907470d81971e991de28d6551b50c9184fa4adfc"
+  },
+  "audit_registry_sha256": "763b8d938680d646b04a840fdcd0685ee54ce47f922aa4b87c9743b86f57843f",
+  "receipts_sha256": {
+    "preview": "c536187bee6f95ab6f8736ffd1706d6afeaa23c3f98333e4c99deb3ab3370080",
+    "apply": "7334006e2365433c0ee59657d71934aaa6e75eb9dae68fd1235cb9982e94479c",
+    "source-recheck": "5876233a29f3cae750cf9031b8b9daf1ac38f0f3eef9b8f0489c1cdd81b2e18c",
+    "reconcile-baseline": "0bec17cc49034542700ca6337f92a9ef3ef28244b372b78d90220e454656a22f",
+    "reconcile-reports": "89b464f33256099c76c506a39ba99d04e669010468389f5c3358d265a10f6335",
+    "reconcile-cumulative": "54f6983513bd152f2b5c87841cd06498e018ab079fbe94f2138f1b4e0339f932",
+    "reconcile-indexes": "7bb44b2e5fa2f748fca62288be99123561e287b8e6c31565dab5d7544a7f7c9e",
+    "reconcile-retention": "308ee65caef5170358ce00bf55e5832af840f6cf80affbe19aa65ca53cb49273",
+    "post": "31ad1071a478cc0b914b5bb926a0bf80e6ac2bcf9b6e979bcfa5c07456cd761b",
+    "references": "ca5d1d1dab5a569ea8e0454625a52675994bfa8e7d167bef4007c0bb5af8af00",
+    "references-live": "53fd078812545280fba54d1073a8ee1a9f7c19b729da5681088759f72cbc2275",
+    "corpus": "67070c5883c36cb3392b3686470c74d50ad105acc53130379e4f012b5f42d64b",
+    "fast": "65c398ccc162ad4e945486469c95c7dcbefda1d15b50081373ff09a3511a342c"
+  }
+}

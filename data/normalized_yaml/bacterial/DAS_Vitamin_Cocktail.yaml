@@ -16,16 +16,52 @@ composition:
   mediaingredientmech_chebi_term:
     id: CHEBI:46760
     label: tricine
-- preferred_term: Thiamine (Vitamin B1)
+  evidence:
+  - reference: https://utex.org/products/das-vitamin-cocktail
+    supports: SUPPORT
+    snippet: 0.9 g/100 mL
+    explanation: 'Supports composition[0].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''Tricine(adjust to pH 8)(Sigma T
+      5816-256)''. Locator: formulation table row 1; Amount column and volume heading.
+      Separate volume-basis excerpt: ''For 100 mL Total''. 0.9 g / 0.1 L = 9.0 g/L;
+      explicit total volume. Supplier and ontology evidence, when attached, establish
+      the supplied form separately; no replacement molarity or receiving-medium dose
+      is inferred.'
+- preferred_term: Thiamine hydrochloride
   concentration:
     value: '0.67'
     unit: G_PER_L
   term:
-    id: CHEBI:18385
-    label: thiamine(1+)
+    id: CHEBI:49105
+    label: thiamine hydrochloride
   mediaingredientmech_chebi_term:
-    id: CHEBI:18385
-    label: thiamine(1+)
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  evidence:
+  - reference: https://utex.org/products/das-vitamin-cocktail
+    supports: SUPPORT
+    snippet: 0.067 g/100 mL
+    explanation: 'Supports composition[1].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''Thiamine(Sigma T 1270)''. Locator:
+      formulation table row 2; Amount column and volume heading. Separate volume-basis
+      excerpt: ''For 100 mL Total''. 0.067 g / 0.1 L = 0.67 g/L; explicit total volume.
+      Supplier and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
+  - reference: https://www.sigmaaldrich.com/CA/en/product/sigma/t1270
+    supports: SUPPORT
+    snippet: Thiamine hydrochloride
+    explanation: 'Supports composition[1].term and supplied-form label/MIM-link correction
+      from CHEBI:18385 to CHEBI:49105. Exact UTEX-listed supplier product, identity
+      only. Formula and InChIKey agree with CHEBI:49105. Locator: Product T1270 heading;
+      CAS 67-03-8 and InChIKey DPJRMOMPQZCRJU-UHFFFAOYSA-M separately inspected. The
+      g/L amount is unchanged and sourced separately to UTEX.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:49105
+    supports: SUPPORT
+    snippet: C12H17N4OS.Cl.HCl
+    explanation: 'Supports composition[1].term and supplied-form label/MIM-link correction
+      from CHEBI:18385 to CHEBI:49105. chemical identity only; not a recipe amount
+      Locator: Formula field. The g/L amount is unchanged and sourced separately to
+      UTEX.'
 - preferred_term: Biotin
   concentration:
     value: '0.01'
@@ -36,6 +72,16 @@ composition:
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
     label: biotin
+  evidence:
+  - reference: https://utex.org/products/das-vitamin-cocktail
+    supports: SUPPORT
+    snippet: 0.001 g/100 mL
+    explanation: 'Supports composition[2].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''Biotin(Sigma B 4639)''. Locator:
+      formulation table row 3; Amount column and volume heading. Separate volume-basis
+      excerpt: ''For 100 mL Total''. 0.001 g / 0.1 L = 0.01 g/L; explicit total volume.
+      Supplier and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
 - preferred_term: Vitamin B12 (Cobalamin)
   concentration:
     value: '0.008'
@@ -43,63 +89,101 @@ composition:
   term:
     id: CHEBI:176843
     label: vitamin B12
-  notes: Add after autoclaving
+  notes: Source table says "add after autoclaving", but the preparation directions
+    specify filtration without an autoclaving step. Sterilization sequence remains
+    unresolved.
   mediaingredientmech_chebi_term:
     id: CHEBI:176843
     label: vitamin B12
-- preferred_term: Pantothenate (Pantothenic acid)
+  evidence:
+  - reference: https://utex.org/products/das-vitamin-cocktail
+    supports: SUPPORT
+    snippet: 0.0008 g/100 mL
+    explanation: 'Supports composition[3].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''Vitamin B12(add after autoclaving)(Sigma
+      V 6629)''. Locator: formulation table row 4; Amount column and volume heading.
+      Separate volume-basis excerpt: ''For 100 mL Total''. 0.0008 g / 0.1 L = 0.008
+      g/L; explicit total volume. Supplier and ontology evidence, when attached, establish
+      the supplied form separately; no replacement molarity or receiving-medium dose
+      is inferred. Also supports composition[3].notes: the separate table note "add
+      after autoclaving" conflicts with the Directions phrase "0.45 µm Millipore filter";
+      no missing heat-treatment step is invented.'
+- preferred_term: Calcium D-(+)-pantothenate
   concentration:
     value: '0.02'
     unit: G_PER_L
   term:
-    id: CHEBI:7916
-    label: pantothenic acid
+    id: CHEBI:31345
+    label: Calcium pantothenate
   mediaingredientmech_chebi_term:
-    id: CHEBI:7916
-    label: pantothenic acid
-- preferred_term: PABA (Para-aminobenzoic acid)
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  evidence:
+  - reference: https://utex.org/products/das-vitamin-cocktail
+    supports: SUPPORT
+    snippet: 0.002 g/100 mL
+    explanation: 'Supports composition[4].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''Pantothenate(Sigma P 2250)''. Locator:
+      formulation table row 5; Amount column and volume heading. Separate volume-basis
+      excerpt: ''For 100 mL Total''. 0.002 g / 0.1 L = 0.02 g/L; explicit total volume.
+      Supplier and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
+  - reference: https://www.sigmaaldrich.com/US/en/sds/SIGMA/P2250
+    supports: SUPPORT
+    snippet: D-Pantothenic acid hemicalcium salt
+    explanation: 'Supports composition[4].term and supplied-form label/MIM-link correction
+      from CHEBI:7916 to CHEBI:31345. Exact UTEX-listed supplier product, identity
+      only. CAS 137-08-6 matches CHEBI:31345; hemicalcium and two-ligand calcium formula
+      units describe the same material, not a mass conversion. Locator: Section 1.1,
+      page 1; formula and CAS in section 3.1, page 2. The g/L amount is unchanged
+      and sourced separately to UTEX.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:31345
+    supports: SUPPORT
+    snippet: 2C9H16NO5.Ca
+    explanation: 'Supports composition[4].term and supplied-form label/MIM-link correction
+      from CHEBI:7916 to CHEBI:31345. chemical identity only; not a recipe amount
+      Locator: Formula field. The g/L amount is unchanged and sourced separately to
+      UTEX.'
+- preferred_term: 4-aminobenzoic acid
   concentration:
     value: '0.04'
     unit: G_PER_L
   term:
-    id: CHEBI:17836
-    label: 4-aminobenzoate
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
   mediaingredientmech_chebi_term:
-    id: CHEBI:17836
-    label: 4-aminobenzoate
-notes: 'DAS Vitamin Cocktail for Dasycladales Seawater Medium.
-
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  evidence:
+  - reference: https://utex.org/products/das-vitamin-cocktail
+    supports: SUPPORT
+    snippet: 0.004 g/100 mL
+    explanation: 'Supports composition[5].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''PABA(p-aminobenzoic acid)(Sigma
+      A 1174)''. Locator: formulation table row 6; Amount column and volume heading.
+      Separate volume-basis excerpt: ''For 100 mL Total''. 0.004 g / 0.1 L = 0.04
+      g/L; explicit total volume. Supplier and ontology evidence, when attached, establish
+      the supplied form separately; no replacement molarity or receiving-medium dose
+      is inferred.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:30753
+    supports: SUPPORT
+    snippet: C7H7NO2
+    explanation: 'Supports composition[5].term and supplied-form label/MIM-link correction
+      from CHEBI:17836 to CHEBI:30753. Neutral para-aminobenzoic acid supplied in
+      the recipe, not its deprotonated conjugate base. Locator: Formula and conjugate-acid
+      relationship to CHEBI:17836. The g/L amount is unchanged and sourced separately
+      to UTEX.'
+notes: |
+  DAS Vitamin Cocktail for Dasycladales Seawater Medium.
   Provides essential vitamins for marine algae culture.
 
+  Preparation: Add Tricine to approximately 85 mL deionized water while stirring. Adjust pH to 8.0; the source does not specify a titrating reagent. Add the remaining components in the listed order, make up to 100 mL, and filter through a 0.45 um Millipore filter.
 
-  Preparation: Add Tricine to approximately 85 mL deionized water while stirring
+  Unresolved preparation conflict: the Vitamin B12 table row says to add after autoclaving, while the directions specify filtration and do not identify an autoclaving step. This record does not resolve that contradiction or invent a heat-treatment sequence.
 
-  continuously. Adjust pH to 8.0 with NaOH or HCl. Add remaining vitamin components
+  Storage: In darkness at freezer temperature; the source does not specify -20 C.
 
-  sequentially: thiamine, biotin, pantothenate, PABA. Bring to 100 mL total volume.
-
-
-  IMPORTANT: Add Vitamin B12 AFTER autoclaving (heat-sensitive).
-
-
-  Sterilization: Filter sterilize through 0.45 µm Millipore filter.
-
-  DO NOT AUTOCLAVE (vitamins are heat-sensitive).
-
-
-  Storage: Freezer temperature (-20°C) in darkness.
-
-
-  Final stock concentrations: Thiamine (2.0 mM), Biotin (0.041 mM),
-
-  Vitamin B12 (0.0059 mM), Pantothenate (0.091 mM), PABA (0.291 mM)
-
-
-  Final concentrations in medium: Thiamine (0.99 µM), Biotin (0.02 µM),
-
-  Vitamin B12 (0.0029 µM), Pantothenate (0.046 µM), PABA (0.15 µM)
-
-  '
+  Concentrations are retained as supplied-product g/L from the stated 100 mL preparation. The printed stock and receiving-DAS molarity columns are not independently verified here; the supplied calcium pantothenate must not be treated as free pantothenic acid. No receiving-medium dose is inferred.
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0045
@@ -130,8 +214,130 @@ curation_history:
   notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-10T07:40:20.478855+00:00'
+  curator: codex
+  action: CURATED_UTEX_SEVEN_STOCK_AMOUNTS_FORMS_AND_BOUNDARIES
+  notes: Source-backed amount, supplied-form and preparation-stage review. Numerical
+    mass concentrations retained; unresolved source conflicts explicitly recorded.
+    No taxa-media association added.
+  source: https://utex.org/products/das-vitamin-cocktail
+  changes: '{"claims": [{"action_taken": "Added scoped SUPPORT amount evidence; numeric
+    value unchanged", "basis_snippet": "For 100 mL Total", "calculation": "0.9 g /
+    0.1 L = 9.0 g/L; explicit total volume.", "field": "composition[0].concentration",
+    "ingredient": "Tricine (pH 8)", "locator": "formulation table row 1; Amount column
+    and volume heading", "old": {"unit": "G_PER_L", "value": "9.0"}, "proposed": {"unit":
+    "G_PER_L", "value": "9.0"}, "reason": "Exact UTEX amount and volume basis retained;
+    any identity correction is separately evidenced.", "reference": "https://utex.org/products/das-vitamin-cocktail",
+    "snippet": "0.9 g/100 mL", "source_component": "Tricine(adjust to pH 8)(Sigma
+    T 5816-256)", "status": "evidence_only"}, {"action_taken": "Added scoped SUPPORT
+    amount evidence; numeric value unchanged", "basis_snippet": "For 100 mL Total",
+    "calculation": "0.067 g / 0.1 L = 0.67 g/L; explicit total volume.", "field":
+    "composition[1].concentration", "ingredient": "Thiamine (Vitamin B1)", "locator":
+    "formulation table row 2; Amount column and volume heading", "old": {"unit": "G_PER_L",
+    "value": "0.67"}, "proposed": {"unit": "G_PER_L", "value": "0.67"}, "reason":
+    "Exact UTEX amount and volume basis retained; any identity correction is separately
+    evidenced.", "reference": "https://utex.org/products/das-vitamin-cocktail", "snippet":
+    "0.067 g/100 mL", "source_component": "Thiamine(Sigma T 1270)", "status": "evidence_only"},
+    {"action_taken": "Added scoped SUPPORT amount evidence; numeric value unchanged",
+    "basis_snippet": "For 100 mL Total", "calculation": "0.001 g / 0.1 L = 0.01 g/L;
+    explicit total volume.", "field": "composition[2].concentration", "ingredient":
+    "Biotin", "locator": "formulation table row 3; Amount column and volume heading",
+    "old": {"unit": "G_PER_L", "value": "0.01"}, "proposed": {"unit": "G_PER_L", "value":
+    "0.01"}, "reason": "Exact UTEX amount and volume basis retained; any identity
+    correction is separately evidenced.", "reference": "https://utex.org/products/das-vitamin-cocktail",
+    "snippet": "0.001 g/100 mL", "source_component": "Biotin(Sigma B 4639)", "status":
+    "evidence_only"}, {"action_taken": "Added scoped SUPPORT amount evidence; numeric
+    value unchanged", "basis_snippet": "For 100 mL Total", "calculation": "0.0008
+    g / 0.1 L = 0.008 g/L; explicit total volume.", "field": "composition[3].concentration",
+    "ingredient": "Vitamin B12 (Cobalamin)", "locator": "formulation table row 4;
+    Amount column and volume heading", "old": {"unit": "G_PER_L", "value": "0.008"},
+    "proposed": {"unit": "G_PER_L", "value": "0.008"}, "reason": "Exact UTEX amount
+    and volume basis retained; any identity correction is separately evidenced.",
+    "reference": "https://utex.org/products/das-vitamin-cocktail", "snippet": "0.0008
+    g/100 mL", "source_component": "Vitamin B12(add after autoclaving)(Sigma V 6629)",
+    "status": "evidence_only"}, {"action_taken": "Added scoped SUPPORT amount evidence;
+    numeric value unchanged", "basis_snippet": "For 100 mL Total", "calculation":
+    "0.002 g / 0.1 L = 0.02 g/L; explicit total volume.", "field": "composition[4].concentration",
+    "ingredient": "Pantothenate (Pantothenic acid)", "locator": "formulation table
+    row 5; Amount column and volume heading", "old": {"unit": "G_PER_L", "value":
+    "0.02"}, "proposed": {"unit": "G_PER_L", "value": "0.02"}, "reason": "Exact UTEX
+    amount and volume basis retained; any identity correction is separately evidenced.",
+    "reference": "https://utex.org/products/das-vitamin-cocktail", "snippet": "0.002
+    g/100 mL", "source_component": "Pantothenate(Sigma P 2250)", "status": "evidence_only"},
+    {"action_taken": "Added scoped SUPPORT amount evidence; numeric value unchanged",
+    "basis_snippet": "For 100 mL Total", "calculation": "0.004 g / 0.1 L = 0.04 g/L;
+    explicit total volume.", "field": "composition[5].concentration", "ingredient":
+    "PABA (Para-aminobenzoic acid)", "locator": "formulation table row 6; Amount column
+    and volume heading", "old": {"unit": "G_PER_L", "value": "0.04"}, "proposed":
+    {"unit": "G_PER_L", "value": "0.04"}, "reason": "Exact UTEX amount and volume
+    basis retained; any identity correction is separately evidenced.", "reference":
+    "https://utex.org/products/das-vitamin-cocktail", "snippet": "0.004 g/100 mL",
+    "source_component": "PABA(p-aminobenzoic acid)(Sigma A 1174)", "status": "evidence_only"}],
+    "context_notes": "Corrected preparation, storage and stock/receiving concentration
+    wording using root evidence; retained unresolved source discrepancies.", "counts":
+    {"bibliographic_entries_enriched": 1, "ingredient_context_notes_corrected": 1,
+    "ingredient_identities_corrected": 3, "ingredient_labels_corrected": 3, "ingredient_mim_links_corrected":
+    3, "new_curation_history": 1, "new_evidence": 12, "new_references": 5, "recipe_context_notes_corrected":
+    1}, "identity_changes": [{"field": "composition[1]", "matching_mim_link_corrected":
+    true, "new_label": "Thiamine hydrochloride", "new_term_id": "CHEBI:49105", "old_label":
+    "Thiamine (Vitamin B1)", "old_term": {"id": "CHEBI:18385", "label": "thiamine(1+)"},
+    "sources": [{"locator": "Product T1270 heading; CAS 67-03-8 and InChIKey DPJRMOMPQZCRJU-UHFFFAOYSA-M
+    separately inspected", "reference": "https://www.sigmaaldrich.com/CA/en/product/sigma/t1270",
+    "snippet": "Thiamine hydrochloride"}, {"locator": "Formula field", "reference":
+    "https://www.ebi.ac.uk/chebi/CHEBI:49105", "snippet": "C12H17N4OS.Cl.HCl"}]},
+    {"field": "composition[4]", "matching_mim_link_corrected": true, "new_label":
+    "Calcium D-(+)-pantothenate", "new_term_id": "CHEBI:31345", "old_label": "Pantothenate
+    (Pantothenic acid)", "old_term": {"id": "CHEBI:7916", "label": "pantothenic acid"},
+    "sources": [{"locator": "Section 1.1, page 1; formula and CAS in section 3.1,
+    page 2", "reference": "https://www.sigmaaldrich.com/US/en/sds/SIGMA/P2250", "snippet":
+    "D-Pantothenic acid hemicalcium salt"}, {"locator": "Formula field", "reference":
+    "https://www.ebi.ac.uk/chebi/CHEBI:31345", "snippet": "2C9H16NO5.Ca"}]}, {"field":
+    "composition[5]", "matching_mim_link_corrected": true, "new_label": "4-aminobenzoic
+    acid", "new_term_id": "CHEBI:30753", "old_label": "PABA (Para-aminobenzoic acid)",
+    "old_term": {"id": "CHEBI:17836", "label": "4-aminobenzoate"}, "sources": [{"locator":
+    "Formula and conjugate-acid relationship to CHEBI:17836", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:30753",
+    "snippet": "C7H7NO2"}]}], "stock_boundary": "unchanged"}'
 references:
 - reference: https://utex.org/products/das-vitamin-cocktail
+  title: DAS Vitamin Cocktail | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; institution=UTEX Culture Collection of Algae; named authors,
+    publication year and DOI not stated.
 - reference: UTEX:das-vitamin-cocktail
 - reference: MediaIngredientMech:UNMAPPED_0045
+- reference: https://www.sigmaaldrich.com/CA/en/product/sigma/t1270
+  title: Thiamine hydrochloride
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Chemical identity evidence only; no recipe amount is inferred. Product T1270 heading;
+    CAS 67-03-8 and InChIKey DPJRMOMPQZCRJU-UHFFFAOYSA-M separately inspected. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:49105
+  title: thiamine hydrochloride (CHEBI:49105)
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Chemical identity evidence only; no recipe amount is inferred. Formula field. '
+- reference: https://www.sigmaaldrich.com/US/en/sds/SIGMA/P2250
+  title: Sigma P2250 Safety Data Sheet
+  notes: source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Chemical identity evidence only; no recipe amount is inferred. Section 1.1, page
+    1; formula and CAS in section 3.1, page 2. Primary PDF text inspected with web
+    tool. Screenshot retrieval returned 404; no rendered-page inspection asserted.
+    Product-page retries and local capture timed out.
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:31345
+  title: Calcium pantothenate (CHEBI:31345)
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Chemical identity evidence only; no recipe amount is inferred. Formula field. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:30753
+  title: 4-aminobenzoic acid (CHEBI:30753)
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Chemical identity evidence only; no recipe amount is inferred. Formula and conjugate-acid
+    relationship to CHEBI:17836. '
 category: bacterial
+evidence:
+- reference: https://utex.org/products/das-vitamin-cocktail
+  supports: SUPPORT
+  snippet: approximately 85 mL
+  explanation: 'Supports the preparation, storage and concentration-stage corrections
+    in notes; sterilization contradiction is unresolved. Separate source excerpts
+    (Directions/table headings/footnote): ''approximately 85 mL''; ''Adjust the pH
+    to 8.0.''; ''Bring total volume to 100 mL''; ''0.45 µm Millipore filter''; ''add
+    after autoclaving''; ''freezer temperature''; ''Stock Solution Concentration'';
+    ''Final Concentration in DAS'''

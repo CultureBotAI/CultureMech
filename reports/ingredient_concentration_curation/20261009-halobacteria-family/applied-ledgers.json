@@ -1,0 +1,51 @@
+{
+  "records": [
+    {
+      "key": "M1064",
+      "target": "data/normalized_yaml/archaea/TOGO_M1064_Modified_Halobacteria_Medium-2.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/M1064.md",
+      "sha256": "8b5f5d4ddf28dea804c89f0e690708c4e57a663d9da2a2f9af5111d87669759d",
+      "claims": 42,
+      "changed": true
+    },
+    {
+      "key": "J1007",
+      "target": "data/normalized_yaml/archaea/modified_halobacteria_medium_2.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/J1007.md",
+      "sha256": "2453618acae977ef7bc71ffdf760fc2b9ec4e6512d6c8eb044b1bbc87587a394",
+      "claims": 35,
+      "changed": true
+    },
+    {
+      "key": "J168",
+      "target": "data/normalized_yaml/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/J168.md",
+      "sha256": "2971b498556f25b71aca8f58dc887852a50e55c728c4d0952ad319947671b832",
+      "claims": 27,
+      "changed": true
+    },
+    {
+      "key": "M159",
+      "target": "data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/M159.md",
+      "sha256": "ece713050e6052cc12f4995fb0990a45e69975baa9744f414b06f48a46974e1d",
+      "claims": 32,
+      "changed": true
+    },
+    {
+      "key": "M160",
+      "target": "data/normalized_yaml/archaea/TOGO_M160_Halobacteria_Medium.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/M160.md",
+      "sha256": "71469499327e940b2cf504edcaf48c0df335e15c4b3e0889b94aea115a0f4b92",
+      "claims": 35,
+      "changed": true
+    }
+  ],
+  "canonical_reports": {
+    "data/normalized_yaml/archaea/TOGO_M1064_Modified_Halobacteria_Medium-2.yaml": "reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/M1064.md",
+    "data/normalized_yaml/archaea/modified_halobacteria_medium_2.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/records/archaea/modified_halobacteria_medium_2.yaml.md",
+    "data/normalized_yaml/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml.md",
+    "data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml": "reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/M159.md",
+    "data/normalized_yaml/archaea/TOGO_M160_Halobacteria_Medium.yaml": "reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/M160.md"
+  }
+}

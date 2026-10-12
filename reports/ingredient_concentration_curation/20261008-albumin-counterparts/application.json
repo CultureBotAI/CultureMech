@@ -1,0 +1,85 @@
+{
+  "audit": {
+    "M194": {
+      "quantity_corrections": 1,
+      "unsupported_quantity_slots_removed": 11,
+      "ingredient_context_notes_added": 1,
+      "stock_dose_basis_corrections": 2,
+      "stock_descriptors_added": 1,
+      "stock_nodes_relocated": 3,
+      "preparation_steps_added": 5,
+      "new_evidence": 11,
+      "new_references": 1,
+      "new_curation_history": 1,
+      "old_quantity_slots": 14,
+      "claims": 24,
+      "source_rows": 12
+    },
+    "M213": {
+      "quantity_corrections": 1,
+      "unsupported_quantity_slots_removed": 8,
+      "stock_nodes_relocated": 3,
+      "stock_dose_basis_corrections": 3,
+      "unquantified_carrier_nodes_added": 5,
+      "new_quantity_slots": 1,
+      "stock_descriptors_added": 2,
+      "preparation_steps_added": 2,
+      "new_evidence": 24,
+      "new_references": 2,
+      "new_curation_history": 1,
+      "old_quantity_slots": 12,
+      "claims": 44,
+      "source_rows": 10
+    },
+    "M244": {
+      "quantity_corrections": 1,
+      "unsupported_quantity_slots_removed": 17,
+      "stock_descriptors_added": 3,
+      "stock_nodes_relocated": 2,
+      "new_quantity_slots": 2,
+      "preparation_steps_added": 7,
+      "unsupported_flags_removed": 1,
+      "new_evidence": 34,
+      "new_references": 2,
+      "new_curation_history": 1,
+      "old_quantity_slots": 18,
+      "claims": 58,
+      "source_rows": 16
+    },
+    "J252": {
+      "unsupported_quantity_slots_removed": 16,
+      "new_quantity_slots": 3,
+      "stock_descriptors_added": 3,
+      "stock_nodes_relocated": 2,
+      "preparation_steps_added": 6,
+      "new_evidence": 32,
+      "new_references": 2,
+      "new_curation_history": 1,
+      "old_quantity_slots": 16,
+      "claims": 54,
+      "source_rows": 15
+    }
+  },
+  "terminal": true,
+  "application": {
+    "mode": "apply",
+    "records": 4,
+    "changed": 4,
+    "already_applied": 0,
+    "claims": 180
+  },
+  "verification": {
+    "mode": "verify",
+    "records": 4,
+    "changed": 0,
+    "already_applied": 4,
+    "claims": 180
+  },
+  "no_op_rerun": {
+    "mode": "apply",
+    "records": 4,
+    "changed": 0,
+    "already_applied": 4,
+    "claims": 180
+  }
+}

@@ -28,6 +28,33 @@ composition:
     label: sodium sulfide nonahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5833
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Na2S x 9 H2O",
+                      "compound_id": 54,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 100,
+                      "mmol_l": 416.351,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Na2S x
+      9 H2O) in MediaDive solution 5833; locator=$.data.recipe[1] (compound_id=54).
+      Provider explicitly reports g_l=100. Arithmetic check: 5 g * 1 g/g / (50 ml
+      / 1000 ml per L) = 1E+2 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 50. Retrieved 2026-10-07T09:58:35.579469+00:00;
+      response SHA256=a7c2aabc40279a404af0229857fc7f4edec97eec3242e6cb11a0490b556100ff.'
 preparation_notes: 'To 50 ml of boiled and cooled distilled or deionized H2O add 5
   g of Na2S x 9 H2O. Adjust pH to 10 with 3N NaOH and store under N2 in a serum bottle
   sealed with a butyl rubber stopper.
@@ -62,6 +89,15 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5833
+  changes: 'composition[1].concentration: {"unit": "G_PER_L", "value": "100"} -> {"unit":
+    "G_PER_L", "value": "100"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -70,3 +106,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5833
+  title: 'MediaDive solution 5833: Na2S Solution'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=a7c2aabc40279a404af0229857fc7f4edec97eec3242e6cb11a0490b556100ff;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

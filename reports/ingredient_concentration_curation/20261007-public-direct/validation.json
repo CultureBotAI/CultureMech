@@ -1,0 +1,282 @@
+{
+  "runtime": "isolated Python 3.11, not maintained Python 3.13 or CI; no environment changes",
+  "baseline_strict": {
+    "command": [
+      "just",
+      "validate-strict"
+    ],
+    "session": 53427,
+    "exit_code": 0,
+    "files": 15910,
+    "errors": 0,
+    "note": "Completed before apply; observed terminal output in agent session."
+  },
+  "baseline": [
+    {
+      "name": "schema-P3",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/king_b.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/public-direct-baseline-schema-P3.log"
+    },
+    {
+      "name": "schema-P6",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mta10.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/public-direct-baseline-schema-P6.log"
+    }
+  ],
+  "post": [
+    {
+      "name": "apply",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/review_public_direct_concentrations.py",
+        "--source-dir",
+        "/tmp/ingredient-media-20261007",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-public-direct/plan.json",
+        "--apply",
+        "--reports",
+        "reports/ingredient_concentration_curation/20261007-public-direct"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-apply.log"
+    },
+    {
+      "name": "readback",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/review_public_direct_concentrations.py",
+        "--source-dir",
+        "/tmp/ingredient-media-20261007",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-public-direct/plan.json",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-readback.log"
+    },
+    {
+      "name": "noop",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/review_public_direct_concentrations.py",
+        "--source-dir",
+        "/tmp/ingredient-media-20261007",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-public-direct/plan.json",
+        "--apply"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-noop.log"
+    },
+    {
+      "name": "independent-diff",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "reports/ingredient_concentration_curation/20261007-public-direct/audit.py",
+        "--out",
+        "reports/ingredient_concentration_curation/20261007-public-direct/diff-audit.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-independent-diff.log"
+    },
+    {
+      "name": "tests",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "tests/test_komodo12_extraction_evidence.py",
+        "tests/test_extraction_input_boundaries.py",
+        "tests/test_dsmz13_stock_only.py",
+        "tests/test_fingerprint.py",
+        "tests/test_merge_filenames.py",
+        "tests/test_merged_duplicates.py",
+        "tests/test_reviewed_medium_stock_boundaries.py",
+        "tests/test_dsmz2_stock_boundary.py",
+        "tests/test_medium_concentration_review.py",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_solution_concentration_review.py",
+        "tests/test_solution_concentration_batch.py",
+        "tests/test_mediadive_stock_concentration_evidence.py",
+        "tests/test_jcm_concentration_evidence.py",
+        "tests/test_jcm_m1308_stock_evidence.py",
+        "tests/test_dsmz1399_stock_boundary.py",
+        "tests/test_concentration_review_reports.py",
+        "tests/test_concentration_plausibility.py",
+        "tests/test_record_io.py",
+        "tests/test_merger.py",
+        "tests/test_merge_yaml_freshness.py",
+        "tests/test_jcm896_final_volume.py",
+        "tests/test_jcm1105_stock_boundary.py",
+        "tests/test_dsmz_percent_supplements.py",
+        "tests/test_media_variant_links.py",
+        "tests/test_public_direct_concentrations.py",
+        "-q"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-tests.log"
+    },
+    {
+      "name": "schema-P3",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/king_b.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-schema-P3.log"
+    },
+    {
+      "name": "schema-P6",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mta10.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-schema-P6.log"
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-strict.log"
+    },
+    {
+      "name": "ids",
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-ids.log"
+    },
+    {
+      "name": "products",
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-products.log"
+    },
+    {
+      "name": "references-P3",
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/king_b.yaml"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-references-P3.log"
+    },
+    {
+      "name": "references-P6",
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/mta10.yaml"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-references-P6.log"
+    },
+    {
+      "name": "semantic-diff",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-semantic-diff.log",
+      "artifact": "reports/ingredient_concentration_curation/20261007-diff-audit-after-public-direct.json"
+    },
+    {
+      "name": "coverage",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "reports/ingredient_concentration_curation/summarize_followup_coverage.py",
+        "--out",
+        "reports/ingredient_concentration_curation/20261007-followup-coverage-after-public-direct.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-extraction-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo12-extraction/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm896-final-volume/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm1105-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-percent-supplements/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-direct/plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-coverage.log"
+    },
+    {
+      "name": "retention",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "reports/ingredient_concentration_curation/20261007-public-direct/audit.py",
+        "--retention",
+        "--out",
+        "reports/ingredient_concentration_curation/20261007-public-direct/merge-retention.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-retention.log"
+    },
+    {
+      "name": "verify-merges",
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-verify-merges.log"
+    },
+    {
+      "name": "freshness",
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-freshness.log",
+      "artifact": "reports/ingredient_concentration_curation/20261007-public-direct/merge-freshness.json"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/public-direct-post-diff-check.log"
+    }
+  ]
+}

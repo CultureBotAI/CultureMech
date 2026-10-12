@@ -11,8 +11,10 @@ media_term:
   term:
     id: komodo.medium:489
     label: CLOSTRIDIUM AEROTOLERANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 489 | DSMZ Medium: 489 (mediadive.medium:489)
-  | Aerobic: Yes'
+notes: |-
+  Source: KOMODO ModelSEED | ID: 489 | DSMZ Medium: 489 (mediadive.medium:489) | Aerobic: Yes
+
+  Preparation scope: cysteine and sulfide are added after sterilization from sterile anoxic stocks prepared under 100% N2. Their 0.15 g batch inputs do not establish stock strengths or addition volumes. Resazurin is a 0.1% w/v stock added at 0.50 ml per batch. Water is a 1000 ml input; final-medium volume and final concentrations are not inferred. Historical annotations, including any aerobic flag, are not verified incubation or growth evidence; the source establishes anoxic preparation. Chemical mappings and variant links are retained, not independently revalidated.
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -24,6 +26,28 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  notes: 'Source batch input: 0.22 g. Retained 0.22 g/L is the provider''s nominal
+    1000 ml recipe rate, not a measured basal or final-medium concentration after
+    stock additions.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/489
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "K2HPO4",
+                              "compound_id": 10,
+                              "amount": 0.22,
+                              "unit": "g",
+                              "g_l": 0.22,
+                              "mmol_l": 1.26309,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration (evidence_only), locator=$.data.solutions[0].recipe[0]:
+      Source batch input: 0.22 g. Retained 0.22 g/L is the provider''s nominal 1000
+      ml recipe rate, not a measured basal or final-medium concentration after stock
+      additions. Retrieved 2026-10-07T12:14:32.355571+00:00; response SHA256=5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3.
+      Chemical mappings are not independently validated.'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -34,6 +58,28 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  notes: 'Source batch input: 0.22 g. Retained 0.22 g/L is the provider''s nominal
+    1000 ml recipe rate, not a measured basal or final-medium concentration after
+    stock additions.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/489
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "KH2PO4",
+                              "compound_id": 11,
+                              "amount": 0.22,
+                              "unit": "g",
+                              "g_l": 0.22,
+                              "mmol_l": 1.61664,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[1].concentration (evidence_only), locator=$.data.solutions[0].recipe[1]:
+      Source batch input: 0.22 g. Retained 0.22 g/L is the provider''s nominal 1000
+      ml recipe rate, not a measured basal or final-medium concentration after stock
+      additions. Retrieved 2026-10-07T12:14:32.355571+00:00; response SHA256=5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3.
+      Chemical mappings are not independently validated.'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -44,6 +90,28 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  notes: 'Source batch input: 0.45 g. Retained 0.45 g/L is the provider''s nominal
+    1000 ml recipe rate, not a measured basal or final-medium concentration after
+    stock additions.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/489
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 0.45,
+                              "unit": "g",
+                              "g_l": 0.45,
+                              "mmol_l": 7.70021,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[2].concentration (evidence_only), locator=$.data.solutions[0].recipe[2]:
+      Source batch input: 0.45 g. Retained 0.45 g/L is the provider''s nominal 1000
+      ml recipe rate, not a measured basal or final-medium concentration after stock
+      additions. Retrieved 2026-10-07T12:14:32.355571+00:00; response SHA256=5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3.
+      Chemical mappings are not independently validated.'
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -54,6 +122,28 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
     label: ammonium sulfate
+  notes: 'Source batch input: 0.45 g. Retained 0.45 g/L is the provider''s nominal
+    1000 ml recipe rate, not a measured basal or final-medium concentration after
+    stock additions.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/489
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "(NH4)2SO4",
+                              "compound_id": 27,
+                              "amount": 0.45,
+                              "unit": "g",
+                              "g_l": 0.45,
+                              "mmol_l": 3.40548,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[3].concentration (evidence_only), locator=$.data.solutions[0].recipe[3]:
+      Source batch input: 0.45 g. Retained 0.45 g/L is the provider''s nominal 1000
+      ml recipe rate, not a measured basal or final-medium concentration after stock
+      additions. Retrieved 2026-10-07T12:14:32.355571+00:00; response SHA256=5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3.
+      Chemical mappings are not independently validated.'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -64,6 +154,28 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  notes: 'Source batch input: 0.06 g. Retained 0.06 g/L is the provider''s nominal
+    1000 ml recipe rate, not a measured basal or final-medium concentration after
+    stock additions.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/489
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "CaCl2 x 2 H2O",
+                              "compound_id": 7,
+                              "amount": 0.06,
+                              "unit": "g",
+                              "g_l": 0.06,
+                              "mmol_l": 0.408122,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[4].concentration (evidence_only), locator=$.data.solutions[0].recipe[4]:
+      Source batch input: 0.06 g. Retained 0.06 g/L is the provider''s nominal 1000
+      ml recipe rate, not a measured basal or final-medium concentration after stock
+      additions. Retrieved 2026-10-07T12:14:32.355571+00:00; response SHA256=5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3.
+      Chemical mappings are not independently validated.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -74,10 +186,53 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  notes: 'Source batch input: 0.09 g. Retained 0.09 g/L is the provider''s nominal
+    1000 ml recipe rate, not a measured basal or final-medium concentration after
+    stock additions.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/489
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 0.09,
+                              "unit": "g",
+                              "g_l": 0.09,
+                              "mmol_l": 0.365147,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[5].concentration (evidence_only), locator=$.data.solutions[0].recipe[5]:
+      Source batch input: 0.09 g. Retained 0.09 g/L is the provider''s nominal 1000
+      ml recipe rate, not a measured basal or final-medium concentration after stock
+      additions. Retrieved 2026-10-07T12:14:32.355571+00:00; response SHA256=5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3.
+      Chemical mappings are not independently validated.'
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
+  notes: 'Source batch input: 5 g. Retained 5 g/L is the provider''s nominal 1000
+    ml recipe rate, not a measured basal or final-medium concentration after stock
+    additions.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/489
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 7,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[6].concentration (evidence_only), locator=$.data.solutions[0].recipe[6]:
+      Source batch input: 5 g. Retained 5 g/L is the provider''s nominal 1000 ml recipe
+      rate, not a measured basal or final-medium concentration after stock additions.
+      Retrieved 2026-10-07T12:14:32.355571+00:00; response SHA256=5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3.
+      Chemical mappings are not independently validated.'
 - preferred_term: Xylan
   term:
     id: CHEBI:37166
@@ -88,33 +243,53 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:37166
     label: xylan
-- preferred_term: Sodium resazurin
-  concentration:
-    value: '0.0005'
-    unit: G_PER_L
+  notes: 'Source batch input: 5 g. Retained 5 g/L is the provider''s nominal 1000
+    ml recipe rate, not a measured basal or final-medium concentration after stock
+    additions.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/489
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 8,
+                              "compound": "Xylan",
+                              "compound_id": 508,
+                              "amount": 5,
+                              "unit": "g",
+                              "g_l": 5,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[7].concentration (evidence_only), locator=$.data.solutions[0].recipe[7]:
+      Source batch input: 5 g. Retained 5 g/L is the provider''s nominal 1000 ml recipe
+      rate, not a measured basal or final-medium concentration after stock additions.
+      Retrieved 2026-10-07T12:14:32.355571+00:00; response SHA256=5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3.
+      Chemical mappings are not independently validated.'
+- preferred_term: Distilled water
   term:
-    id: CHEBI:8806
-    label: Resazurin
-- preferred_term: L-Cysteine HCl x H2O
-  term:
-    id: CHEBI:91248
-    label: L-cysteine hydrochloride hydrate
+    id: mediadive.compound:4
+    label: Distilled water
   concentration:
-    value: '0.15'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:91248
-    label: L-cysteine hydrochloride hydrate
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-  concentration:
-    value: '0.15'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
+    value: '1'
+    unit: L
+  notes: 1000 ml distilled-water input per source batch, not a volume percentage or
+    measured final medium volume.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/489
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 12,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[8].concentration (add), locator=$.data.solutions[0].recipe[11]:
+      1000 ml / 1000 ml per L = 1 L input; supports the water identity and input-basis
+      note, not final volume. Retrieved 2026-10-07T12:14:32.355571+00:00; response
+      SHA256=5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3. Chemical
+      mappings are not independently validated.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -149,6 +324,75 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-08T01:10:18.404748+00:00'
+  curator: codex
+  action: CORRECTED_DSMZ489_STOCK_BOUNDARIES_AND_WATER_INPUT
+  notes: Restored explicit resazurin stock strength/dose and separate post-sterilization
+    reducing stocks. Corrected/restored water input. Preserved history, exact previous
+    snippets, mappings and variants; no unknown stock strength, solvent, final volume
+    or growth association inferred.
+  source: https://mediadive.dsmz.de/rest/medium/489; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf;
+    https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  changes: 'ingredients[0].concentration: {"value": "0.22", "unit": "G_PER_L"} ->
+    {"value": "0.22", "unit": "G_PER_L"} (evidence_only); ingredients[1].concentration:
+    {"value": "0.22", "unit": "G_PER_L"} -> {"value": "0.22", "unit": "G_PER_L"} (evidence_only);
+    ingredients[2].concentration: {"value": "0.45", "unit": "G_PER_L"} -> {"value":
+    "0.45", "unit": "G_PER_L"} (evidence_only); ingredients[3].concentration: {"value":
+    "0.45", "unit": "G_PER_L"} -> {"value": "0.45", "unit": "G_PER_L"} (evidence_only);
+    ingredients[4].concentration: {"value": "0.06", "unit": "G_PER_L"} -> {"value":
+    "0.06", "unit": "G_PER_L"} (evidence_only); ingredients[5].concentration: {"value":
+    "0.09", "unit": "G_PER_L"} -> {"value": "0.09", "unit": "G_PER_L"} (evidence_only);
+    ingredients[6].concentration: {"value": "5", "unit": "G_PER_L"} -> {"value": "5",
+    "unit": "G_PER_L"} (evidence_only); ingredients[7].concentration: {"value": "5",
+    "unit": "G_PER_L"} -> {"value": "5", "unit": "G_PER_L"} (evidence_only); solutions[0].composition[0].concentration:
+    {"value": "0.0005", "unit": "G_PER_L"} -> {"value": "0.1", "unit": "PERCENT_W_V"}
+    (correct_stage); solutions[0].preferred_term: null -> "Sodium resazurin stock
+    (0.1% w/v)" (restore_stock); solutions[0].source: null -> "https://mediadive.dsmz.de/rest/medium/489"
+    (restore_stock); solutions[0].notes: null -> "0.50 ml stock input per source recipe
+    batch, not per liter of measured final medium. No solvent identity is inferred."
+    (restore_stock); solutions[0].concentration: null -> {"value": "0.0005", "unit":
+    "L"} (restore_stock); solutions[1].composition[0].notes: {"value": "0.15", "unit":
+    "G_PER_L"} -> "Source batch requirement: 0.15 g supplied from a sterile anoxic
+    stock prepared under 100% N2, added after sterilization. Stock strength, final
+    stock volume, solvent identity and numeric stock dose are unspecified; the former
+    0.15 g/L flattened rate is withdrawn at this preparation stage." (withdraw); solutions[1].preferred_term:
+    null -> "L-Cysteine HCl x H2O sterile anoxic stock" (restore_stock); solutions[1].source:
+    null -> "https://mediadive.dsmz.de/rest/medium/489" (restore_stock); solutions[1].notes:
+    null -> "Source batch requirement: 0.15 g supplied from a sterile anoxic stock
+    prepared under 100% N2, added after sterilization. Stock strength, final stock
+    volume, solvent identity and numeric stock dose are unspecified; the former 0.15
+    g/L flattened rate is withdrawn at this preparation stage." (restore_stock); solutions[1].preparation_notes:
+    null -> "After sterilization add cysteine and sulfide from sterile anoxic stock
+    solutions prepared under 100% N2 gas." (restore_stock); solutions[2].composition[0].notes:
+    {"value": "0.15", "unit": "G_PER_L"} -> "Source batch requirement: 0.15 g supplied
+    from a sterile anoxic stock prepared under 100% N2, added after sterilization.
+    Stock strength, final stock volume, solvent identity and numeric stock dose are
+    unspecified; the former 0.15 g/L flattened rate is withdrawn at this preparation
+    stage." (withdraw); solutions[2].preferred_term: null -> "Na2S x 9 H2O sterile
+    anoxic stock" (restore_stock); solutions[2].source: null -> "https://mediadive.dsmz.de/rest/medium/489"
+    (restore_stock); solutions[2].notes: null -> "Source batch requirement: 0.15 g
+    supplied from a sterile anoxic stock prepared under 100% N2, added after sterilization.
+    Stock strength, final stock volume, solvent identity and numeric stock dose are
+    unspecified; the former 0.15 g/L flattened rate is withdrawn at this preparation
+    stage." (restore_stock); solutions[2].preparation_notes: null -> "After sterilization
+    add cysteine and sulfide from sterile anoxic stock solutions prepared under 100%
+    N2 gas." (restore_stock); ingredients[8].concentration: null -> {"value": "1",
+    "unit": "L"} (add); notes: "Source: KOMODO ModelSEED | ID: 489 | DSMZ Medium:
+    489 (mediadive.medium:489) | Aerobic: Yes" -> "Source: KOMODO ModelSEED | ID:
+    489 | DSMZ Medium: 489 (mediadive.medium:489) | Aerobic: Yes\n\nPreparation scope:
+    cysteine and sulfide are added after sterilization from sterile anoxic stocks
+    prepared under 100% N2. Their 0.15 g batch inputs do not establish stock strengths
+    or addition volumes. Resazurin is a 0.1% w/v stock added at 0.50 ml per batch.
+    Water is a 1000 ml input; final-medium volume and final concentrations are not
+    inferred. Historical annotations, including any aerobic flag, are not verified
+    incubation or growth evidence; the source establishes anoxic preparation. Chemical
+    mappings and variant links are retained, not independently revalidated." (correct_scope);
+    preparation_steps: null -> [{"step_number": 1, "action": "DISSOLVE", "description":
+    "Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium
+    to the boil, then cool to room temperature under 100% N2 gas. Dispense under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After
+    sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas."}] (restore_preparation)'
 variant_children:
 - path: data/normalized_yaml/bacterial/lacrimispora_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -156,3 +400,199 @@ variant_children:
   name: lacrimispora_medium
   notes: Same ingredient and concentration signature; review as possible duplicate
     source record.
+solutions:
+- preferred_term: Sodium resazurin stock (0.1% w/v)
+  composition:
+  - preferred_term: Sodium resazurin
+    term:
+      id: CHEBI:8806
+      label: Resazurin
+    concentration:
+      value: '0.1'
+      unit: PERCENT_W_V
+    notes: Source-explicit 0.1% w/v stock strength. The former 0.0005 g/L recipe rate
+      is not the stock concentration. Existing resazurin ontology mapping is retained,
+      not independently validated as the sodium salt.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/489
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 9,
+                                "compound": "Sodium resazurin",
+                                "compound_id": 1852,
+                                "attribute": "0.1% w/v",
+                                "amount": 0.5,
+                                "unit": "ml",
+                                "g_l": 0.0005,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[0].concentration (correct_stage), locator=$.data.solutions[0].recipe[8]: Source-explicit 0.1% w/v stock strength. The former 0.0005 g/L recipe rate is not the stock concentration. Existing resazurin ontology mapping is retained, not independently validated as the sodium salt. Additional exact preparation excerpt: {
+                                "step": "Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas."
+                            } Retrieved 2026-10-07T12:14:32.355571+00:00; response SHA256=5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3. Chemical mappings are not independently validated.
+  source: https://mediadive.dsmz.de/rest/medium/489
+  notes: 0.50 ml stock input per source recipe batch, not per liter of measured final
+    medium. No solvent identity is inferred.
+  concentration:
+    value: '0.0005'
+    unit: L
+- preferred_term: L-Cysteine HCl x H2O sterile anoxic stock
+  composition:
+  - preferred_term: L-Cysteine HCl x H2O
+    term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91248
+      label: L-cysteine hydrochloride hydrate
+    notes: 'Source batch requirement: 0.15 g supplied from a sterile anoxic stock
+      prepared under 100% N2, added after sterilization. Stock strength, final stock
+      volume, solvent identity and numeric stock dose are unspecified; the former
+      0.15 g/L flattened rate is withdrawn at this preparation stage.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/489
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 10,
+                                "compound": "L-Cysteine HCl x H2O",
+                                "compound_id": 770,
+                                "amount": 0.15,
+                                "unit": "g",
+                                "g_l": 0.15,
+                                "mmol_l": 0.854039,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[1].composition[0].notes (withdraw), locator=$.data.solutions[0].recipe[9]: Source batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under 100% N2, added after sterilization. Stock strength, final stock volume, solvent identity and numeric stock dose are unspecified; the former 0.15 g/L flattened rate is withdrawn at this preparation stage. Additional exact preparation excerpt: {
+                                "step": "Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas."
+                            } Retrieved 2026-10-07T12:14:32.355571+00:00; response SHA256=5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3. Chemical mappings are not independently validated.
+  source: https://mediadive.dsmz.de/rest/medium/489
+  notes: 'Source batch requirement: 0.15 g supplied from a sterile anoxic stock prepared
+    under 100% N2, added after sterilization. Stock strength, final stock volume,
+    solvent identity and numeric stock dose are unspecified; the former 0.15 g/L flattened
+    rate is withdrawn at this preparation stage.'
+  preparation_notes: After sterilization add cysteine and sulfide from sterile anoxic
+    stock solutions prepared under 100% N2 gas.
+- preferred_term: Na2S x 9 H2O sterile anoxic stock
+  composition:
+  - preferred_term: Na2S x 9 H2O
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    notes: 'Source batch requirement: 0.15 g supplied from a sterile anoxic stock
+      prepared under 100% N2, added after sterilization. Stock strength, final stock
+      volume, solvent identity and numeric stock dose are unspecified; the former
+      0.15 g/L flattened rate is withdrawn at this preparation stage.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/489
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 11,
+                                "compound": "Na2S x 9 H2O",
+                                "compound_id": 54,
+                                "amount": 0.15,
+                                "unit": "g",
+                                "g_l": 0.15,
+                                "mmol_l": 0.624526,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[2].composition[0].notes (withdraw), locator=$.data.solutions[0].recipe[10]: Source batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under 100% N2, added after sterilization. Stock strength, final stock volume, solvent identity and numeric stock dose are unspecified; the former 0.15 g/L flattened rate is withdrawn at this preparation stage. Additional exact preparation excerpt: {
+                                "step": "Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas."
+                            } Retrieved 2026-10-07T12:14:32.355571+00:00; response SHA256=5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3. Chemical mappings are not independently validated.
+  source: https://mediadive.dsmz.de/rest/medium/489
+  notes: 'Source batch requirement: 0.15 g supplied from a sterile anoxic stock prepared
+    under 100% N2, added after sterilization. Stock strength, final stock volume,
+    solvent identity and numeric stock dose are unspecified; the former 0.15 g/L flattened
+    rate is withdrawn at this preparation stage.'
+  preparation_notes: After sterilization add cysteine and sulfide from sterile anoxic
+    stock solutions prepared under 100% N2 gas.
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0,
+    bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After sterilization add cysteine and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/489
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 9,
+                            "compound": "Sodium resazurin",
+                            "compound_id": 1852,
+                            "attribute": "0.1% w/v",
+                            "amount": 0.5,
+                            "unit": "ml",
+                            "g_l": 0.0005,
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].preferred_term (restore_stock), locator=$.data.solutions[0].recipe[8]: 0.50 ml stock input per source recipe batch, not per liter of measured final medium. No solvent identity is inferred. 0.50 ml / 1000 ml per L = 0.0005 L batch dose. solutions[0].source (restore_stock), locator=$.data.solutions[0].recipe[8]: 0.50 ml stock input per source recipe batch, not per liter of measured final medium. No solvent identity is inferred. 0.50 ml / 1000 ml per L = 0.0005 L batch dose. solutions[0].notes (restore_stock), locator=$.data.solutions[0].recipe[8]: 0.50 ml stock input per source recipe batch, not per liter of measured final medium. No solvent identity is inferred. 0.50 ml / 1000 ml per L = 0.0005 L batch dose. solutions[0].concentration (restore_stock), locator=$.data.solutions[0].recipe[8]: 0.50 ml stock input per source recipe batch, not per liter of measured final medium. No solvent identity is inferred. 0.50 ml / 1000 ml per L = 0.0005 L batch dose. solutions[1].preferred_term (restore_stock), locator=$.data.solutions[0].steps[0]: Source batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under 100% N2, added after sterilization. Stock strength, final stock volume, solvent identity and numeric stock dose are unspecified; the former 0.15 g/L flattened rate is withdrawn at this preparation stage. Source input mass is quoted separately on the ingredient. Descriptor is a curator label, not a new identifier. Additional exact excerpt: {
+                            "step": "Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas."
+                        } solutions[1].source (restore_stock), locator=$.data.solutions[0].steps[0]: Source batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under 100% N2, added after sterilization. Stock strength, final stock volume, solvent identity and numeric stock dose are unspecified; the former 0.15 g/L flattened rate is withdrawn at this preparation stage. Source input mass is quoted separately on the ingredient. Descriptor is a curator label, not a new identifier. Additional exact excerpt: {
+                            "step": "Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas."
+                        } solutions[1].notes (restore_stock), locator=$.data.solutions[0].steps[0]: Source batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under 100% N2, added after sterilization. Stock strength, final stock volume, solvent identity and numeric stock dose are unspecified; the former 0.15 g/L flattened rate is withdrawn at this preparation stage. Source input mass is quoted separately on the ingredient. Descriptor is a curator label, not a new identifier. Additional exact excerpt: {
+                            "step": "Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas."
+                        } solutions[1].preparation_notes (restore_stock), locator=$.data.solutions[0].steps[0]: Source batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under 100% N2, added after sterilization. Stock strength, final stock volume, solvent identity and numeric stock dose are unspecified; the former 0.15 g/L flattened rate is withdrawn at this preparation stage. Source input mass is quoted separately on the ingredient. Descriptor is a curator label, not a new identifier. Additional exact excerpt: {
+                            "step": "Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas."
+                        } solutions[2].preferred_term (restore_stock), locator=$.data.solutions[0].steps[0]: Source batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under 100% N2, added after sterilization. Stock strength, final stock volume, solvent identity and numeric stock dose are unspecified; the former 0.15 g/L flattened rate is withdrawn at this preparation stage. Source input mass is quoted separately on the ingredient. Descriptor is a curator label, not a new identifier. Additional exact excerpt: {
+                            "step": "Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas."
+                        } solutions[2].source (restore_stock), locator=$.data.solutions[0].steps[0]: Source batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under 100% N2, added after sterilization. Stock strength, final stock volume, solvent identity and numeric stock dose are unspecified; the former 0.15 g/L flattened rate is withdrawn at this preparation stage. Source input mass is quoted separately on the ingredient. Descriptor is a curator label, not a new identifier. Additional exact excerpt: {
+                            "step": "Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas."
+                        } solutions[2].notes (restore_stock), locator=$.data.solutions[0].steps[0]: Source batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under 100% N2, added after sterilization. Stock strength, final stock volume, solvent identity and numeric stock dose are unspecified; the former 0.15 g/L flattened rate is withdrawn at this preparation stage. Source input mass is quoted separately on the ingredient. Descriptor is a curator label, not a new identifier. Additional exact excerpt: {
+                            "step": "Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas."
+                        } solutions[2].preparation_notes (restore_stock), locator=$.data.solutions[0].steps[0]: Source batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under 100% N2, added after sterilization. Stock strength, final stock volume, solvent identity and numeric stock dose are unspecified; the former 0.15 g/L flattened rate is withdrawn at this preparation stage. Source input mass is quoted separately on the ingredient. Descriptor is a curator label, not a new identifier. Additional exact excerpt: {
+                            "step": "Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas."
+                        } notes (correct_scope), locator=$.data.solutions[0].steps[0]: Preparation context; ingredient-row excerpts separately support quantities. Historical aerobic annotation is retained as import provenance, not endorsed as preparation or growth evidence. Additional exact excerpt: {
+                            "step": "Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas."
+                        } preparation_steps (restore_preparation), locator=$.data.solutions[0].steps[0]: Verbatim source preparation; action names opening instruction. No temperature, duration, filter pore size or incubation atmosphere added. Additional exact excerpt: {
+                            "step": "Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas."
+                        } Retrieved 2026-10-07T12:14:32.355571+00:00; response SHA256=5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3. Chemical mappings are not independently validated.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf
+  supports: SUPPORT
+  snippet: Sodium resazurin (0.1% w/v) 0.50 ml
+  explanation: 'Original recipe page 1 confirms solutions[0] stock strength and batch
+    dose. Additional exact water-row excerpt: Distilled water 1000.00 ml. Input water
+    does not establish final volume. PDF SHA256=87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba;
+    retrieved 2026-10-08T00:04:12.779628+00:00. Preparation and reducer-mass claims
+    are separately supported by the API excerpts.'
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  supports: SUPPORT
+  snippet: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=489'\
+    \ >489</a></TD>\n\t\t\t\t\t<TD>CLOSTRIDIUM AEROTOLERANS medium</TD>\n\t\t\t\t\t\
+    <TD> 7.0</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf</a></TD>\n\t\
+    \t\t\t</TR>"
+  explanation: 'Identity only: KOMODO 489 maps to https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf;
+    locator=MediaList row 489. Historical medium name retained. No concentration or
+    growth claim follows from the mapping. Retrieved 2026-10-07T13:01:23.350274+00:00;
+    SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/489
+  title: 'MediaDive medium 489: LACRIMISPORA MEDIUM'
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-07;
+    response_sha256=5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3;
+    individual authors and publication year not established; PDF copyright year is
+    not a publication year.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf
+  title: '489: LACRIMISPORA MEDIUM'
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-08;
+    response_sha256=87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba;
+    individual authors and publication year not established; PDF copyright year is
+    not a publication year.
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  title: 'KOMODO media list: original-recipe mappings'
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-07;
+    response_sha256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a;
+    individual authors and publication year not established; PDF copyright year is
+    not a publication year.

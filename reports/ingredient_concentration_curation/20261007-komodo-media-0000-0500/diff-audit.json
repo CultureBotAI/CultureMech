@@ -1,0 +1,13 @@
+{
+  "records": 500,
+  "changed": 25,
+  "concentration_evidence": 137,
+  "mapping_evidence": 25,
+  "new_evidence": 162,
+  "new_references": 50,
+  "new_curation_history": 25,
+  "only_provenance_appended": true,
+  "unsupported_claims_unchanged": true,
+  "quantities_and_formulation_unchanged": true,
+  "stage": "applied"
+}

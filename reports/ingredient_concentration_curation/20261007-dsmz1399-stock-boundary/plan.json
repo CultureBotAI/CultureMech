@@ -1,0 +1,650 @@
+{
+  "version": 1,
+  "action": "RESTORED_DSMZ1399_STOCK_BOUNDARY_AND_DROP_DOSE",
+  "source_hashes": {
+    "https://mediadive.dsmz.de/rest/medium/1399": "692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85",
+    "https://mediadive.dsmz.de/rest/solution/2838": "69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09",
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf": "c76a8a1d8c4e5da897b13caa810918454efc9258b0b78a433aa14032c3ed8d3e"
+  },
+  "commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+  "created_at": "2026-10-07T10:22:32.742479+00:00",
+  "records": [
+    {
+      "path": "data/normalized_yaml/archaea/DSMZ_1399_HALOPHILIC_MEDIUM.yaml",
+      "id": "CultureMech:000252",
+      "before_sha256": "fd3f20aadf89a81037ca0aa3b83c0791da7f930c27aa55b694a74a75db2911d5",
+      "before_text": "id: CultureMech:000252\nname: halophilic_medium\noriginal_name: HALOPHILIC MEDIUM\ncategory: archaea\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: SOLID_AGAR\nph_value: 7.0\nmedia_term:\n  preferred_term: DSMZ Medium 1399\n  term:\n    id: mediadive.medium:1399\n    label: HALOPHILIC MEDIUM\nnotes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf'\ningredients:\n- preferred_term: Proteose peptone no. 3\n  concentration:\n    value: '5'\n    unit: G_PER_L\n- preferred_term: Yeast extract\n  concentration:\n    value: '5'\n    unit: G_PER_L\n- preferred_term: Glucose\n  term:\n    id: CHEBI:17234\n    label: glucose\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:17234\n    label: glucose\n- preferred_term: Agar\n  term:\n    id: CHEBI:2509\n    label: agar\n  concentration:\n    value: '20'\n    unit: G_PER_L\n  notes: ' (for solid medium)'\n  mediaingredientmech_chebi_term:\n    id: CHEBI:2509\n    label: agar\n- preferred_term: NaCl\n  term:\n    id: CHEBI:26710\n    label: sodium chloride\n  concentration:\n    value: '234'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n- preferred_term: MgCl2 x 6 H2O\n  term:\n    id: CHEBI:86345\n    label: magnesium dichloride hexahydrate\n  concentration:\n    value: '42'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:86345\n    label: magnesium dichloride hexahydrate\n- preferred_term: MgSO4 x 7 H2O\n  term:\n    id: CHEBI:31795\n    label: magnesium sulfate heptahydrate\n  concentration:\n    value: '60'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:31795\n    label: magnesium sulfate heptahydrate\n- preferred_term: CaCl2 x 2 H2O\n  term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n- preferred_term: KCl\n  term:\n    id: CHEBI:32588\n    label: potassium chloride\n  concentration:\n    value: '6'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32588\n    label: potassium chloride\n- preferred_term: NaBr\n  term:\n    id: CHEBI:63004\n    label: sodium bromide\n  concentration:\n    value: '0.7'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:63004\n    label: sodium bromide\n- preferred_term: NaHCO3\n  term:\n    id: CHEBI:32139\n    label: sodium hydrogencarbonate\n  concentration:\n    value: '0.2'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:32139\n    label: sodium hydrogencarbonate\n- preferred_term: FeCl3 x 6 H2O\n  term:\n    id: CHEBI:86254\n    label: iron trichloride hexahydrate\n  concentration:\n    value: '9'\n    unit: G_PER_L\n  mediaingredientmech_chebi_term:\n    id: CHEBI:86254\n    label: iron trichloride hexahydrate\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Make up to 1000.0 ml. Adjust to pH 7.0 and sterilize by autoclaving.\n    The medium may be solidified by adding 20.0 g/l agar.\napplications:\n- Microbial cultivation\ncuration_history:\n- timestamp: '2026-01-26T17:53:14.311815Z'\n  curator: mediadive-import\n  action: Imported from MediaDive\n  notes: 'Source: DSMZ, ID: 1399'\n- timestamp: '2026-03-13T06:18:53.785679Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000252'\n- timestamp: '2026-03-17T17:06:12.000000Z'\n  curator: mediaingredientmech-enrichment-v1.0\n  action: Added MediaIngredientMech links\n  notes: Linked ingredients to MediaIngredientMech identifiers\n- timestamp: '2026-03-17T19:45:04.693978+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"HALOPHILIC MEDIUM\" to \"halophilic_medium\" for consistent\n    matching\n- timestamp: '2026-05-16T09:02:57.171288+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: category->lowercase=1\n- timestamp: '2026-06-05T07:40:14.409593+00:00'\n  curator: mim-legacy-to-chebi-migration-v1.0\n  action: Refreshed legacy MediaIngredientMech links to CHEBI keying\n  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term\n    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN\n    id scheme.'\n- timestamp: '2026-06-10T07:46:42.141111+00:00'\n  curator: primary-term-label-canonicalization-v1.0\n  action: Canonicalized primary term label to OBO canonical (OAK)\n  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.\nhigh_metal: true\n",
+      "after_sha256": "90d9cb52a972d7e7bbac78adfcb2500bdebeabf25c196faebac76b78e27e2bca",
+      "claims": [
+        {
+          "old_pointer": [
+            "ingredients",
+            0
+          ],
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "Proteose peptone no. 3",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1399",
+          "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Proteose peptone no. 3\",\n                        \"compound_id\": 316,\n                        \"attribute\": \"Difco\",\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[0].recipe[0]",
+          "explanation": "Concentration/formulation evidence for ingredients[0].concentration (Proteose peptone no. 3); locator=$.data.solutions[0].recipe[0]. The source manufacturer/grade attribute Difco is retained in notes. Existing 5 g/L is explicitly reported. 5 g / (1000 ml / 1000 ml per L) = 5 g/L. Exact final-volume instruction in $.data.solutions[0].steps[0].step: Make up to 1000.0 ml. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85. Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf; the PDF copyright year is not asserted as publication year."
+        },
+        {
+          "old_pointer": [
+            "ingredients",
+            1
+          ],
+          "pointer": [
+            "ingredients",
+            1
+          ],
+          "field": "ingredients[1].concentration",
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1399",
+          "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[0].recipe[1]",
+          "explanation": "Concentration/formulation evidence for ingredients[1].concentration (Yeast extract); locator=$.data.solutions[0].recipe[1]. Existing 5 g/L is explicitly reported. 5 g / (1000 ml / 1000 ml per L) = 5 g/L. Exact final-volume instruction in $.data.solutions[0].steps[0].step: Make up to 1000.0 ml. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85. Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf; the PDF copyright year is not asserted as publication year."
+        },
+        {
+          "old_pointer": [
+            "ingredients",
+            2
+          ],
+          "pointer": [
+            "ingredients",
+            2
+          ],
+          "field": "ingredients[2].concentration",
+          "ingredient": "Glucose",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1399",
+          "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 5.55062,\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[0].recipe[2]",
+          "explanation": "Concentration/formulation evidence for ingredients[2].concentration (Glucose); locator=$.data.solutions[0].recipe[2]. Existing 1 g/L is explicitly reported. 1 g / (1000 ml / 1000 ml per L) = 1 g/L. Exact final-volume instruction in $.data.solutions[0].steps[0].step: Make up to 1000.0 ml. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85. Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf; the PDF copyright year is not asserted as publication year."
+        },
+        {
+          "old_pointer": [
+            "ingredients",
+            3
+          ],
+          "pointer": [
+            "ingredients",
+            3
+          ],
+          "field": "ingredients[3].concentration",
+          "ingredient": "Agar",
+          "old": {
+            "value": "20",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "20",
+            "unit": "G_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1399",
+          "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\": \"for solid medium\",\n                        \"amount\": 20,\n                        \"unit\": \"g\",\n                        \"g_l\": 20,\n                        \"mmol_l\": 59.4654,\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[0].recipe[5]",
+          "explanation": "Concentration/formulation evidence for ingredients[3].concentration (Agar); locator=$.data.solutions[0].recipe[5]. Applies to this record's SOLID_AGAR formulation; optional solidification is not asserted for liquid medium. Existing 20 g/L is explicitly reported. 20 g / (1000 ml / 1000 ml per L) = 20 g/L. Exact final-volume instruction in $.data.solutions[0].steps[0].step: Make up to 1000.0 ml. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85. Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf; the PDF copyright year is not asserted as publication year."
+        },
+        {
+          "old_pointer": [
+            "ingredients",
+            4
+          ],
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            0
+          ],
+          "field": "solutions[0].composition[0].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "234",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "234",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1399",
+          "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 234,\n                        \"unit\": \"g\",\n                        \"g_l\": 234,\n                        \"mmol_l\": 4004.11,\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[1].recipe[0]",
+          "explanation": "Concentration/formulation evidence for solutions[0].composition[0].concentration (NaCl); locator=$.data.solutions[1].recipe[0]. Moved from ingredients[4] into stock 2838, explicitly linked in the receiving recipe. The unchanged 234 g/L value is the provider-declared stock concentration: 234 g / (1000 ml / 1000 ml per L) = 234 g/L. Additional exact stock excerpt at $.data.solutions[1].volume: \"volume\": 1000. This is not the concentration after adding 666 ml stock to the medium; no dilution is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85. Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf; the PDF copyright year is not asserted as publication year."
+        },
+        {
+          "old_pointer": [
+            "ingredients",
+            5
+          ],
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            1
+          ],
+          "field": "solutions[0].composition[1].concentration",
+          "ingredient": "MgCl2 x 6 H2O",
+          "old": {
+            "value": "42",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "42",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1399",
+          "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 42,\n                        \"unit\": \"g\",\n                        \"g_l\": 42,\n                        \"mmol_l\": 206.588,\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[1].recipe[1]",
+          "explanation": "Concentration/formulation evidence for solutions[0].composition[1].concentration (MgCl2 x 6 H2O); locator=$.data.solutions[1].recipe[1]. Moved from ingredients[5] into stock 2838, explicitly linked in the receiving recipe. The unchanged 42 g/L value is the provider-declared stock concentration: 42 g / (1000 ml / 1000 ml per L) = 42 g/L. Additional exact stock excerpt at $.data.solutions[1].volume: \"volume\": 1000. This is not the concentration after adding 666 ml stock to the medium; no dilution is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85. Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf; the PDF copyright year is not asserted as publication year."
+        },
+        {
+          "old_pointer": [
+            "ingredients",
+            6
+          ],
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            2
+          ],
+          "field": "solutions[0].composition[2].concentration",
+          "ingredient": "MgSO4 x 7 H2O",
+          "old": {
+            "value": "60",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "60",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1399",
+          "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 60,\n                        \"unit\": \"g\",\n                        \"g_l\": 60,\n                        \"mmol_l\": 243.431,\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[1].recipe[2]",
+          "explanation": "Concentration/formulation evidence for solutions[0].composition[2].concentration (MgSO4 x 7 H2O); locator=$.data.solutions[1].recipe[2]. Moved from ingredients[6] into stock 2838, explicitly linked in the receiving recipe. The unchanged 60 g/L value is the provider-declared stock concentration: 60 g / (1000 ml / 1000 ml per L) = 60 g/L. Additional exact stock excerpt at $.data.solutions[1].volume: \"volume\": 1000. This is not the concentration after adding 666 ml stock to the medium; no dilution is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85. Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf; the PDF copyright year is not asserted as publication year."
+        },
+        {
+          "old_pointer": [
+            "ingredients",
+            7
+          ],
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            3
+          ],
+          "field": "solutions[0].composition[3].concentration",
+          "ingredient": "CaCl2 x 2 H2O",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1399",
+          "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 6.80203,\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[1].recipe[3]",
+          "explanation": "Concentration/formulation evidence for solutions[0].composition[3].concentration (CaCl2 x 2 H2O); locator=$.data.solutions[1].recipe[3]. Moved from ingredients[7] into stock 2838, explicitly linked in the receiving recipe. The unchanged 1 g/L value is the provider-declared stock concentration: 1 g / (1000 ml / 1000 ml per L) = 1 g/L. Additional exact stock excerpt at $.data.solutions[1].volume: \"volume\": 1000. This is not the concentration after adding 666 ml stock to the medium; no dilution is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85. Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf; the PDF copyright year is not asserted as publication year."
+        },
+        {
+          "old_pointer": [
+            "ingredients",
+            8
+          ],
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            4
+          ],
+          "field": "solutions[0].composition[4].concentration",
+          "ingredient": "KCl",
+          "old": {
+            "value": "6",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "6",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1399",
+          "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 6,\n                        \"unit\": \"g\",\n                        \"g_l\": 6,\n                        \"mmol_l\": 80.4829,\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[1].recipe[4]",
+          "explanation": "Concentration/formulation evidence for solutions[0].composition[4].concentration (KCl); locator=$.data.solutions[1].recipe[4]. Moved from ingredients[8] into stock 2838, explicitly linked in the receiving recipe. The unchanged 6 g/L value is the provider-declared stock concentration: 6 g / (1000 ml / 1000 ml per L) = 6 g/L. Additional exact stock excerpt at $.data.solutions[1].volume: \"volume\": 1000. This is not the concentration after adding 666 ml stock to the medium; no dilution is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85. Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf; the PDF copyright year is not asserted as publication year."
+        },
+        {
+          "old_pointer": [
+            "ingredients",
+            9
+          ],
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            5
+          ],
+          "field": "solutions[0].composition[5].concentration",
+          "ingredient": "NaBr",
+          "old": {
+            "value": "0.7",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.7",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1399",
+          "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"NaBr\",\n                        \"compound_id\": 353,\n                        \"amount\": 0.7,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.7,\n                        \"mmol_l\": 6.80338,\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[1].recipe[5]",
+          "explanation": "Concentration/formulation evidence for solutions[0].composition[5].concentration (NaBr); locator=$.data.solutions[1].recipe[5]. Moved from ingredients[9] into stock 2838, explicitly linked in the receiving recipe. The unchanged 0.7 g/L value is the provider-declared stock concentration: 0.7 g / (1000 ml / 1000 ml per L) = 0.7 g/L. Additional exact stock excerpt at $.data.solutions[1].volume: \"volume\": 1000. This is not the concentration after adding 666 ml stock to the medium; no dilution is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85. Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf; the PDF copyright year is not asserted as publication year."
+        },
+        {
+          "old_pointer": [
+            "ingredients",
+            10
+          ],
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            6
+          ],
+          "field": "solutions[0].composition[6].concentration",
+          "ingredient": "NaHCO3",
+          "old": {
+            "value": "0.2",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.2",
+            "unit": "G_PER_L"
+          },
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1399",
+          "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 2.38075,\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[1].recipe[6]",
+          "explanation": "Concentration/formulation evidence for solutions[0].composition[6].concentration (NaHCO3); locator=$.data.solutions[1].recipe[6]. Moved from ingredients[10] into stock 2838, explicitly linked in the receiving recipe. The unchanged 0.2 g/L value is the provider-declared stock concentration: 0.2 g / (1000 ml / 1000 ml per L) = 0.2 g/L. Additional exact stock excerpt at $.data.solutions[1].volume: \"volume\": 1000. This is not the concentration after adding 666 ml stock to the medium; no dilution is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85. Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf; the PDF copyright year is not asserted as publication year."
+        },
+        {
+          "old_pointer": [
+            "ingredients",
+            11
+          ],
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            7
+          ],
+          "field": "solutions[0].composition[7].concentration",
+          "ingredient": "FeCl3 x 6 H2O",
+          "old": {
+            "value": "9",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1399",
+          "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"FeCl3 x 6 H2O\",\n                        \"compound_id\": 82,\n                        \"attribute\": \"0,5 %\",\n                        \"amount\": 9,\n                        \"unit\": \"drops\",\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[1].recipe[7]",
+          "explanation": "Concentration/formulation evidence for solutions[0].composition[7].concentration (FeCl3 x 6 H2O); locator=$.data.solutions[1].recipe[7]. Moved into the exact stock and removed unsupported 9 g/L. The source dose is retained in notes, not VARIABLE or a guessed conversion. Source dose: 9 drops of FeCl3 x 6 H2O solution (source attribute: 0,5 %) per prepared Total Salts stock batch. Percentage basis and drop volume are unspecified; no g/L, molarity, or mL conversion is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85. Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf; the PDF copyright year is not asserted as publication year."
+        },
+        {
+          "old_pointer": null,
+          "pointer": [
+            "ingredients",
+            4
+          ],
+          "field": "ingredients[4].concentration",
+          "ingredient": "Distilled water",
+          "old": null,
+          "new": {
+            "value": "0.333",
+            "unit": "L"
+          },
+          "status": "add",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1399",
+          "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 333,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[0].recipe[4]",
+          "explanation": "Concentration/formulation evidence for ingredients[4].concentration (Distilled water); locator=$.data.solutions[0].recipe[4]. Explicit 333 ml water addition / 1000 = 0.333 L per batch at this preparation stage. Not a percentage or receiving-medium concentration; the main recipe's separate make-up instruction is retained. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85. Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf; the PDF copyright year is not asserted as publication year."
+        },
+        {
+          "old_pointer": null,
+          "pointer": [
+            "solutions",
+            0,
+            "composition",
+            8
+          ],
+          "field": "solutions[0].composition[8].concentration",
+          "ingredient": "Distilled water",
+          "old": null,
+          "new": {
+            "value": "1",
+            "unit": "L"
+          },
+          "status": "add",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1399",
+          "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[1].recipe[8]",
+          "explanation": "Concentration/formulation evidence for solutions[0].composition[8].concentration (Distilled water); locator=$.data.solutions[1].recipe[8]. Explicit 1000 ml water addition / 1000 = 1 L per batch at this preparation stage. Not a percentage or receiving-medium concentration; the main recipe's separate make-up instruction is retained. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85. Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf; the PDF copyright year is not asserted as publication year."
+        },
+        {
+          "old_pointer": null,
+          "pointer": [
+            "solutions",
+            0
+          ],
+          "field": "solutions[0].concentration",
+          "ingredient": "Total Salts",
+          "old": null,
+          "new": {
+            "value": "0.666",
+            "unit": "L"
+          },
+          "status": "add",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1399",
+          "snippet": "{\n                        \"recipe_order\": 4,\n                        \"solution\": \"Total Salts\",\n                        \"solution_id\": 2838,\n                        \"amount\": 666,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[0].recipe[3]",
+          "explanation": "Concentration/formulation evidence for solutions[0].concentration (Total Salts); locator=$.data.solutions[0].recipe[3]. 666 ml / 1000 = 0.666 L of stock 2838 per receiving batch. This dose establishes the stock boundary; salt entries in solutions[0].composition belong to this stock, not direct ingredients. The separate main-medium make-up instruction is retained; this is not an assumed per-liter dose. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85. Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf; the PDF copyright year is not asserted as publication year."
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_2838_Total_Salts.yaml",
+      "id": "CultureMech:012117",
+      "before_sha256": "d8bd7590843678515ad808708d60fa995e0b8ec789a3b1f2c34ea8b6edfe27da",
+      "before_text": "id: CultureMech:012117\npreferred_term: Total Salts\nterm:\n  id: mediadive.solution:2838\n  label: Total Salts\ncomposition:\n- preferred_term: NaCl\n  concentration:\n    value: '234'\n    unit: G_PER_L\n  term:\n    id: mediadive.compound:43\n    label: NaCl\n  chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n    confidence: 1.0\n    match_type: exact_match\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/solution/2838\n    supports: SUPPORT\n    snippet: |-\n      {\n                      \"recipe_order\": 1,\n                      \"compound\": \"NaCl\",\n                      \"compound_id\": 43,\n                      \"solution\": null,\n                      \"solution_id\": null,\n                      \"condition\": null,\n                      \"attribute\": null,\n                      \"amount\": 234,\n                      \"unit\": \"g\",\n                      \"g_l\": 234,\n                      \"mmol_l\": 4004.11,\n                      \"optional\": 0\n                  }\n    explanation: 'Concentration evidence for composition[0].concentration (NaCl) in\n      MediaDive solution 2838; locator=$.data.recipe[0] (compound_id=43). Provider\n      explicitly reports g_l=234. Arithmetic check: 234 g * 1 g/g / (1000 ml / 1000\n      ml per L) = 234 g/L, consistent with the reported value at its precision. Evidence\n      supports the provider-declared concentration within this solution, not a concentration\n      in a receiving medium or an independently measured final volume. Water addition\n      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:\n      \"volume\": 1000. Retrieved 2026-10-07T09:16:08.266546+00:00; response SHA256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09.'\n- preferred_term: MgCl2 x 6 H2O\n  concentration:\n    value: '42'\n    unit: G_PER_L\n  term:\n    id: mediadive.compound:79\n    label: MgCl2 x 6 H2O\n  chebi_term:\n    id: CHEBI:86345\n    label: magnesium dichloride hexahydrate\n    match_type: corpus_consensus\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/solution/2838\n    supports: SUPPORT\n    snippet: |-\n      {\n                      \"recipe_order\": 2,\n                      \"compound\": \"MgCl2 x 6 H2O\",\n                      \"compound_id\": 79,\n                      \"solution\": null,\n                      \"solution_id\": null,\n                      \"condition\": null,\n                      \"attribute\": null,\n                      \"amount\": 42,\n                      \"unit\": \"g\",\n                      \"g_l\": 42,\n                      \"mmol_l\": 206.588,\n                      \"optional\": 0\n                  }\n    explanation: 'Concentration evidence for composition[1].concentration (MgCl2 x\n      6 H2O) in MediaDive solution 2838; locator=$.data.recipe[1] (compound_id=79).\n      Provider explicitly reports g_l=42. Arithmetic check: 42 g * 1 g/g / (1000 ml\n      / 1000 ml per L) = 42 g/L, consistent with the reported value at its precision.\n      Evidence supports the provider-declared concentration within this solution,\n      not a concentration in a receiving medium or an independently measured final\n      volume. Water addition alone is not used to infer a final volume. Additional\n      exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:16:08.266546+00:00;\n      response SHA256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09.'\n- preferred_term: MgSO4 x 7 H2O\n  concentration:\n    value: '60'\n    unit: G_PER_L\n  term:\n    id: mediadive.compound:8\n    label: MgSO4 x 7 H2O\n  chebi_term:\n    id: CHEBI:31795\n    label: magnesium sulfate heptahydrate\n    confidence: 0.7\n    match_type: corpus_consensus\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/solution/2838\n    supports: SUPPORT\n    snippet: |-\n      {\n                      \"recipe_order\": 3,\n                      \"compound\": \"MgSO4 x 7 H2O\",\n                      \"compound_id\": 8,\n                      \"solution\": null,\n                      \"solution_id\": null,\n                      \"condition\": null,\n                      \"attribute\": null,\n                      \"amount\": 60,\n                      \"unit\": \"g\",\n                      \"g_l\": 60,\n                      \"mmol_l\": 243.431,\n                      \"optional\": 0\n                  }\n    explanation: 'Concentration evidence for composition[2].concentration (MgSO4 x\n      7 H2O) in MediaDive solution 2838; locator=$.data.recipe[2] (compound_id=8).\n      Provider explicitly reports g_l=60. Arithmetic check: 60 g * 1 g/g / (1000 ml\n      / 1000 ml per L) = 60 g/L, consistent with the reported value at its precision.\n      Evidence supports the provider-declared concentration within this solution,\n      not a concentration in a receiving medium or an independently measured final\n      volume. Water addition alone is not used to infer a final volume. Additional\n      exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:16:08.266546+00:00;\n      response SHA256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09.'\n- preferred_term: CaCl2 x 2 H2O\n  concentration:\n    value: '1'\n    unit: G_PER_L\n  term:\n    id: mediadive.compound:7\n    label: CaCl2 x 2 H2O\n  chebi_term:\n    id: CHEBI:86158\n    label: calcium chloride dihydrate\n    confidence: 0.7\n    match_type: corpus_consensus\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/solution/2838\n    supports: SUPPORT\n    snippet: |-\n      {\n                      \"recipe_order\": 4,\n                      \"compound\": \"CaCl2 x 2 H2O\",\n                      \"compound_id\": 7,\n                      \"solution\": null,\n                      \"solution_id\": null,\n                      \"condition\": null,\n                      \"attribute\": null,\n                      \"amount\": 1,\n                      \"unit\": \"g\",\n                      \"g_l\": 1,\n                      \"mmol_l\": 6.80203,\n                      \"optional\": 0\n                  }\n    explanation: 'Concentration evidence for composition[3].concentration (CaCl2 x\n      2 H2O) in MediaDive solution 2838; locator=$.data.recipe[3] (compound_id=7).\n      Provider explicitly reports g_l=1. Arithmetic check: 1 g * 1 g/g / (1000 ml\n      / 1000 ml per L) = 1 g/L, consistent with the reported value at its precision.\n      Evidence supports the provider-declared concentration within this solution,\n      not a concentration in a receiving medium or an independently measured final\n      volume. Water addition alone is not used to infer a final volume. Additional\n      exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:16:08.266546+00:00;\n      response SHA256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09.'\n- preferred_term: KCl\n  concentration:\n    value: '6'\n    unit: G_PER_L\n  term:\n    id: mediadive.compound:61\n    label: KCl\n  chebi_term:\n    id: CHEBI:32588\n    label: potassium chloride\n    confidence: 1.0\n    match_type: exact_match\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/solution/2838\n    supports: SUPPORT\n    snippet: |-\n      {\n                      \"recipe_order\": 5,\n                      \"compound\": \"KCl\",\n                      \"compound_id\": 61,\n                      \"solution\": null,\n                      \"solution_id\": null,\n                      \"condition\": null,\n                      \"attribute\": null,\n                      \"amount\": 6,\n                      \"unit\": \"g\",\n                      \"g_l\": 6,\n                      \"mmol_l\": 80.4829,\n                      \"optional\": 0\n                  }\n    explanation: 'Concentration evidence for composition[4].concentration (KCl) in\n      MediaDive solution 2838; locator=$.data.recipe[4] (compound_id=61). Provider\n      explicitly reports g_l=6. Arithmetic check: 6 g * 1 g/g / (1000 ml / 1000 ml\n      per L) = 6 g/L, consistent with the reported value at its precision. Evidence\n      supports the provider-declared concentration within this solution, not a concentration\n      in a receiving medium or an independently measured final volume. Water addition\n      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:\n      \"volume\": 1000. Retrieved 2026-10-07T09:16:08.266546+00:00; response SHA256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09.'\n- preferred_term: NaBr\n  concentration:\n    value: '0.7'\n    unit: G_PER_L\n  term:\n    id: mediadive.compound:353\n    label: NaBr\n  chebi_term:\n    id: CHEBI:63004\n    label: sodium bromide\n    confidence: 0.7\n    match_type: corpus_consensus\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/solution/2838\n    supports: SUPPORT\n    snippet: |-\n      {\n                      \"recipe_order\": 6,\n                      \"compound\": \"NaBr\",\n                      \"compound_id\": 353,\n                      \"solution\": null,\n                      \"solution_id\": null,\n                      \"condition\": null,\n                      \"attribute\": null,\n                      \"amount\": 0.7,\n                      \"unit\": \"g\",\n                      \"g_l\": 0.7,\n                      \"mmol_l\": 6.80338,\n                      \"optional\": 0\n                  }\n    explanation: 'Concentration evidence for composition[5].concentration (NaBr) in\n      MediaDive solution 2838; locator=$.data.recipe[5] (compound_id=353). Provider\n      explicitly reports g_l=0.7. Arithmetic check: 0.7 g * 1 g/g / (1000 ml / 1000\n      ml per L) = 0.7 g/L, consistent with the reported value at its precision. Evidence\n      supports the provider-declared concentration within this solution, not a concentration\n      in a receiving medium or an independently measured final volume. Water addition\n      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:\n      \"volume\": 1000. Retrieved 2026-10-07T09:16:08.266546+00:00; response SHA256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09.'\n- preferred_term: NaHCO3\n  concentration:\n    value: '0.2'\n    unit: G_PER_L\n  term:\n    id: mediadive.compound:55\n    label: NaHCO3\n  chebi_term:\n    id: CHEBI:32139\n    label: sodium hydrogencarbonate\n    confidence: 1.0\n    match_type: exact_match\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/solution/2838\n    supports: SUPPORT\n    snippet: |-\n      {\n                      \"recipe_order\": 7,\n                      \"compound\": \"NaHCO3\",\n                      \"compound_id\": 55,\n                      \"solution\": null,\n                      \"solution_id\": null,\n                      \"condition\": null,\n                      \"attribute\": null,\n                      \"amount\": 0.2,\n                      \"unit\": \"g\",\n                      \"g_l\": 0.2,\n                      \"mmol_l\": 2.38075,\n                      \"optional\": 0\n                  }\n    explanation: 'Concentration evidence for composition[6].concentration (NaHCO3)\n      in MediaDive solution 2838; locator=$.data.recipe[6] (compound_id=55). Provider\n      explicitly reports g_l=0.2. Arithmetic check: 0.2 g * 1 g/g / (1000 ml / 1000\n      ml per L) = 0.2 g/L, consistent with the reported value at its precision. Evidence\n      supports the provider-declared concentration within this solution, not a concentration\n      in a receiving medium or an independently measured final volume. Water addition\n      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:\n      \"volume\": 1000. Retrieved 2026-10-07T09:16:08.266546+00:00; response SHA256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09.'\n- preferred_term: FeCl3 x 6 H2O\n  concentration:\n    value: '9'\n    unit: VARIABLE\n  term:\n    id: mediadive.compound:82\n    label: FeCl3 x 6 H2O\n  chebi_term:\n    id: CHEBI:86254\n    label: iron trichloride hexahydrate\n    confidence: 0.7\n    match_type: corpus_consensus\n- preferred_term: Distilled water\n  concentration:\n    value: '1'\n    unit: L\n  term:\n    id: mediadive.compound:4\n    label: Distilled water\n  chebi_term:\n    id: CHEBI:15377\n    label: water\n    confidence: 0.7\n    match_type: corpus_consensus\n  evidence:\n  - reference: https://mediadive.dsmz.de/rest/solution/2838\n    supports: SUPPORT\n    snippet: |-\n      {\n                      \"recipe_order\": 9,\n                      \"compound\": \"Distilled water\",\n                      \"compound_id\": 4,\n                      \"solution\": null,\n                      \"solution_id\": null,\n                      \"condition\": null,\n                      \"attribute\": null,\n                      \"amount\": 1000,\n                      \"unit\": \"ml\",\n                      \"g_l\": null,\n                      \"mmol_l\": null,\n                      \"optional\": 0\n                  }\n    explanation: 'Concentration evidence for composition[8].concentration (Distilled\n      water) in MediaDive solution 2838; locator=$.data.recipe[8] (compound_id=4).\n      Source water addition is 1000 ml per prepared batch: 1000 / 1000 = 1 L. No source\n      preparation step gives a competing make-up instruction. This is a batch dose,\n      not a volume percentage; no final-volume or solvent-density assumption is made.\n      Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:16:08.266546+00:00;\n      response SHA256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09.'\ncuration_history:\n- timestamp: '2026-03-13T06:20:23.973756Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:012117'\n- curator: schema-defaulter-v1.0\n  action: Applied schema defaults and normalizations\n  notes: Added placeholder ingredients for missing composition\n  timestamp: '2026-03-14T00:00:00+00:00'\n- timestamp: '2026-03-14T21:09:27.666355'\n  curator: quality-tagger-v1.0\n  action: Added data quality flag\n  notes: Marked as incomplete_composition due to placeholder ingredients\n- timestamp: '2026-04-04T17:50:01.806936'\n  curator: categorize_unknown_media\n  action: CATEGORIZED\n  changes: 'Set category to ''bacterial'' (was: MISSING)'\n  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting\n    to bacterial'\n- timestamp: '2026-05-16T09:03:50.948035+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1\n- timestamp: '2026-06-10T06:38:24.111181+00:00'\n  curator: kg-fallback-consensus-v1.0\n  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus\n  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient\n    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).\n- timestamp: '2026-06-10T06:47:03.569614+00:00'\n  curator: kg-fallback-oak-ols-v1.0\n  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)\n  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority\n    disambiguation, or mixture de-ground.'\n- timestamp: '2026-06-10T06:56:12.082073+00:00'\n  curator: kg-fallback-llm-curation-v1.0\n  action: LLM-curated low-confidence chebi_term (G25 Phase 3)\n  notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded\n    as a mixture, or confirmed correct.'\n- timestamp: '2026-10-07T09:21:52.094915+00:00'\n  curator: codex\n  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE\n  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,\n    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium\n    concentration inferred.\n  source: https://mediadive.dsmz.de/rest/solution/2838\n  changes: 'composition[0].concentration: {\"unit\": \"G_PER_L\", \"value\": \"234\"} -> {\"unit\":\n    \"G_PER_L\", \"value\": \"234\"} (evidence_only); composition[1].concentration: {\"unit\":\n    \"G_PER_L\", \"value\": \"42\"} -> {\"unit\": \"G_PER_L\", \"value\": \"42\"} (evidence_only);\n    composition[2].concentration: {\"unit\": \"G_PER_L\", \"value\": \"60\"} -> {\"unit\": \"G_PER_L\",\n    \"value\": \"60\"} (evidence_only); composition[3].concentration: {\"unit\": \"G_PER_L\",\n    \"value\": \"1\"} -> {\"unit\": \"G_PER_L\", \"value\": \"1\"} (evidence_only); composition[4].concentration:\n    {\"unit\": \"G_PER_L\", \"value\": \"6\"} -> {\"unit\": \"G_PER_L\", \"value\": \"6\"} (evidence_only);\n    composition[5].concentration: {\"unit\": \"G_PER_L\", \"value\": \"0.7\"} -> {\"unit\":\n    \"G_PER_L\", \"value\": \"0.7\"} (evidence_only); composition[6].concentration: {\"unit\":\n    \"G_PER_L\", \"value\": \"0.2\"} -> {\"unit\": \"G_PER_L\", \"value\": \"0.2\"} (evidence_only);\n    composition[8].concentration: {\"unit\": \"PERCENT_V_V\", \"value\": \"1000\"} -> {\"unit\":\n    \"L\", \"value\": \"1\"} (correct)'\ningredients:\n- preferred_term: See source for composition\n  concentration:\n    value: variable\n    unit: VARIABLE\ndata_quality_flags:\n- incomplete_composition\ncategory: bacterial\nreferences:\n- reference: https://mediadive.dsmz.de/rest/solution/2838\n  title: 'MediaDive solution 2838: Total Salts'\n  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;\n    source_organization=DSMZ; locator=$.data; response_sha256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09;\n    individual authors and publication year not supplied. Provider-declared solution\n    amounts, not receiving-medium concentrations.\n",
+      "after_sha256": "9c8bf38adc102d98625e42260c4901b35800fdd9c84768a866a8c82671af885c",
+      "claims": [
+        {
+          "old_pointer": [
+            "composition",
+            0
+          ],
+          "pointer": [
+            "composition",
+            0
+          ],
+          "field": "composition[0].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "234",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "234",
+            "unit": "G_PER_L"
+          },
+          "status": "verified",
+          "reference": "https://mediadive.dsmz.de/rest/solution/2838",
+          "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 234,\n                \"unit\": \"g\",\n                \"g_l\": 234,\n                \"mmol_l\": 4004.11,\n                \"optional\": 0\n            }",
+          "locator": "$.data.recipe[0]",
+          "explanation": "Concentration evidence for composition[0].concentration (NaCl) in MediaDive solution 2838; locator=$.data.recipe[0] (compound_id=43). Provider explicitly reports g_l=234. Arithmetic check: 234 g * 1 g/g / (1000 ml / 1000 ml per L) = 234 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:16:08.266546+00:00; response SHA256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09."
+        },
+        {
+          "old_pointer": [
+            "composition",
+            1
+          ],
+          "pointer": [
+            "composition",
+            1
+          ],
+          "field": "composition[1].concentration",
+          "ingredient": "MgCl2 x 6 H2O",
+          "old": {
+            "value": "42",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "42",
+            "unit": "G_PER_L"
+          },
+          "status": "verified",
+          "reference": "https://mediadive.dsmz.de/rest/solution/2838",
+          "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"MgCl2 x 6 H2O\",\n                \"compound_id\": 79,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 42,\n                \"unit\": \"g\",\n                \"g_l\": 42,\n                \"mmol_l\": 206.588,\n                \"optional\": 0\n            }",
+          "locator": "$.data.recipe[1]",
+          "explanation": "Concentration evidence for composition[1].concentration (MgCl2 x 6 H2O) in MediaDive solution 2838; locator=$.data.recipe[1] (compound_id=79). Provider explicitly reports g_l=42. Arithmetic check: 42 g * 1 g/g / (1000 ml / 1000 ml per L) = 42 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:16:08.266546+00:00; response SHA256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09."
+        },
+        {
+          "old_pointer": [
+            "composition",
+            2
+          ],
+          "pointer": [
+            "composition",
+            2
+          ],
+          "field": "composition[2].concentration",
+          "ingredient": "MgSO4 x 7 H2O",
+          "old": {
+            "value": "60",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "60",
+            "unit": "G_PER_L"
+          },
+          "status": "verified",
+          "reference": "https://mediadive.dsmz.de/rest/solution/2838",
+          "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 60,\n                \"unit\": \"g\",\n                \"g_l\": 60,\n                \"mmol_l\": 243.431,\n                \"optional\": 0\n            }",
+          "locator": "$.data.recipe[2]",
+          "explanation": "Concentration evidence for composition[2].concentration (MgSO4 x 7 H2O) in MediaDive solution 2838; locator=$.data.recipe[2] (compound_id=8). Provider explicitly reports g_l=60. Arithmetic check: 60 g * 1 g/g / (1000 ml / 1000 ml per L) = 60 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:16:08.266546+00:00; response SHA256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09."
+        },
+        {
+          "old_pointer": [
+            "composition",
+            3
+          ],
+          "pointer": [
+            "composition",
+            3
+          ],
+          "field": "composition[3].concentration",
+          "ingredient": "CaCl2 x 2 H2O",
+          "old": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "G_PER_L"
+          },
+          "status": "verified",
+          "reference": "https://mediadive.dsmz.de/rest/solution/2838",
+          "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 1,\n                \"mmol_l\": 6.80203,\n                \"optional\": 0\n            }",
+          "locator": "$.data.recipe[3]",
+          "explanation": "Concentration evidence for composition[3].concentration (CaCl2 x 2 H2O) in MediaDive solution 2838; locator=$.data.recipe[3] (compound_id=7). Provider explicitly reports g_l=1. Arithmetic check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:16:08.266546+00:00; response SHA256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09."
+        },
+        {
+          "old_pointer": [
+            "composition",
+            4
+          ],
+          "pointer": [
+            "composition",
+            4
+          ],
+          "field": "composition[4].concentration",
+          "ingredient": "KCl",
+          "old": {
+            "value": "6",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "6",
+            "unit": "G_PER_L"
+          },
+          "status": "verified",
+          "reference": "https://mediadive.dsmz.de/rest/solution/2838",
+          "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"KCl\",\n                \"compound_id\": 61,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 6,\n                \"unit\": \"g\",\n                \"g_l\": 6,\n                \"mmol_l\": 80.4829,\n                \"optional\": 0\n            }",
+          "locator": "$.data.recipe[4]",
+          "explanation": "Concentration evidence for composition[4].concentration (KCl) in MediaDive solution 2838; locator=$.data.recipe[4] (compound_id=61). Provider explicitly reports g_l=6. Arithmetic check: 6 g * 1 g/g / (1000 ml / 1000 ml per L) = 6 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:16:08.266546+00:00; response SHA256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09."
+        },
+        {
+          "old_pointer": [
+            "composition",
+            5
+          ],
+          "pointer": [
+            "composition",
+            5
+          ],
+          "field": "composition[5].concentration",
+          "ingredient": "NaBr",
+          "old": {
+            "value": "0.7",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.7",
+            "unit": "G_PER_L"
+          },
+          "status": "verified",
+          "reference": "https://mediadive.dsmz.de/rest/solution/2838",
+          "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"NaBr\",\n                \"compound_id\": 353,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.7,\n                \"unit\": \"g\",\n                \"g_l\": 0.7,\n                \"mmol_l\": 6.80338,\n                \"optional\": 0\n            }",
+          "locator": "$.data.recipe[5]",
+          "explanation": "Concentration evidence for composition[5].concentration (NaBr) in MediaDive solution 2838; locator=$.data.recipe[5] (compound_id=353). Provider explicitly reports g_l=0.7. Arithmetic check: 0.7 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.7 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:16:08.266546+00:00; response SHA256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09."
+        },
+        {
+          "old_pointer": [
+            "composition",
+            6
+          ],
+          "pointer": [
+            "composition",
+            6
+          ],
+          "field": "composition[6].concentration",
+          "ingredient": "NaHCO3",
+          "old": {
+            "value": "0.2",
+            "unit": "G_PER_L"
+          },
+          "new": {
+            "value": "0.2",
+            "unit": "G_PER_L"
+          },
+          "status": "verified",
+          "reference": "https://mediadive.dsmz.de/rest/solution/2838",
+          "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\": \"NaHCO3\",\n                \"compound_id\": 55,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.2,\n                \"unit\": \"g\",\n                \"g_l\": 0.2,\n                \"mmol_l\": 2.38075,\n                \"optional\": 0\n            }",
+          "locator": "$.data.recipe[6]",
+          "explanation": "Concentration evidence for composition[6].concentration (NaHCO3) in MediaDive solution 2838; locator=$.data.recipe[6] (compound_id=55). Provider explicitly reports g_l=0.2. Arithmetic check: 0.2 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.2 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:16:08.266546+00:00; response SHA256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09."
+        },
+        {
+          "old_pointer": [
+            "composition",
+            7
+          ],
+          "pointer": [
+            "composition",
+            7
+          ],
+          "field": "composition[7].concentration",
+          "ingredient": "FeCl3 x 6 H2O",
+          "old": {
+            "value": "9",
+            "unit": "VARIABLE"
+          },
+          "new": null,
+          "status": "correct",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1399",
+          "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"FeCl3 x 6 H2O\",\n                        \"compound_id\": 82,\n                        \"attribute\": \"0,5 %\",\n                        \"amount\": 9,\n                        \"unit\": \"drops\",\n                        \"optional\": 0\n                    }",
+          "locator": "$.data.solutions[1].recipe[7]",
+          "explanation": "Concentration/formulation evidence for composition[7].concentration (FeCl3 x 6 H2O); locator=$.data.solutions[1].recipe[7]. Removed ambiguous 9 VARIABLE; preserved exact source drop dose and strength attribute in notes. Source dose: 9 drops of FeCl3 x 6 H2O solution (source attribute: 0,5 %) per prepared Total Salts stock batch. Percentage basis and drop volume are unspecified; no g/L, molarity, or mL conversion is asserted. Retrieved 2026-10-07; response SHA256=692c728d98d3ba582110c22429da51aaa29ff7d6ea11d9fd8fe8a42c2a978e85. Original DSMZ 1399 PDF was visually checked: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1399.pdf; the PDF copyright year is not asserted as publication year."
+        },
+        {
+          "old_pointer": [
+            "composition",
+            8
+          ],
+          "pointer": [
+            "composition",
+            8
+          ],
+          "field": "composition[8].concentration",
+          "ingredient": "Distilled water",
+          "old": {
+            "value": "1",
+            "unit": "L"
+          },
+          "new": {
+            "value": "1",
+            "unit": "L"
+          },
+          "status": "verified",
+          "reference": "https://mediadive.dsmz.de/rest/solution/2838",
+          "snippet": "{\n                \"recipe_order\": 9,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "locator": "$.data.recipe[8]",
+          "explanation": "Concentration evidence for composition[8].concentration (Distilled water) in MediaDive solution 2838; locator=$.data.recipe[8] (compound_id=4). Source water addition is 1000 ml per prepared batch: 1000 / 1000 = 1 L. No source preparation step gives a competing make-up instruction. This is a batch dose, not a volume percentage; no final-volume or solvent-density assumption is made. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:16:08.266546+00:00; response SHA256=69a4694739caeb37e043ee8e7e63b187a9f4b9b66514a07707bc56e471f10a09."
+        },
+        {
+          "old_pointer": [
+            "ingredients",
+            0
+          ],
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "See source for composition",
+          "old": {
+            "value": "variable",
+            "unit": "VARIABLE"
+          },
+          "new": {
+            "value": "variable",
+            "unit": "VARIABLE"
+          },
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Legacy placeholder retained, not promoted to a concentration claim."
+        }
+      ]
+    }
+  ]
+}

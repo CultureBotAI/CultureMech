@@ -1,0 +1,893 @@
+{
+  "created_at": "2026-10-11T02:43:27.765962+00:00",
+  "reviewed_commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+  "source_review_sha256": "65836e07a8c09979df9d1c05812b3be9d966e79188ed3418b2b3b741eb445694",
+  "sources": [
+    {
+      "reference": "https://utex.org/products/volvocacean-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/volvocacean-medium.html",
+      "sha256": "6a0e418107e8796a002e43356850232d77df7cde9e005fe73df27511da8f29db",
+      "accessed_at": "2026-10-10T21:04:07.848534+00:00",
+      "title": "Volvocacean Medium | UTEX Culture Collection of Algae",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "existing_record_reference"
+    },
+    {
+      "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/bg-11-1-plus-0-point-36-percent-nacl-medium.html",
+      "sha256": "d61ca5180d12faac0db9e872835da75dc209358ad1ba39e1ef41ea51e8adb825",
+      "accessed_at": "2026-10-10T21:04:16.067007+00:00",
+      "title": "BG-11-1 + 0.36% NaCl Medium | UTEX Culture Collection of Algae",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "existing_record_reference"
+    },
+    {
+      "reference": "https://utex.org/products/bg-11-plus-1-percent-nacl-medium",
+      "capture": "/tmp/utex-remaining-source-captures-20261010/bg-11-plus-1-percent-nacl-medium.html",
+      "sha256": "aad88a80dbabfdfc5ac38395d2aefa37c7a604ce84d5ff3e31329eb2e3a19761",
+      "accessed_at": "2026-10-10T21:04:17.538387+00:00",
+      "title": "BG-11 + 1% NaCl Medium | UTEX Culture Collection of Algae",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "existing_record_reference"
+    }
+  ],
+  "records": [
+    {
+      "path": "data/normalized_yaml/algae/Volvocacean_Medium.yaml",
+      "id": "CultureMech:000236",
+      "action": "CURATED_UTEX_VOLVOCACEAN_BG11_CONCENTRATION_EVIDENCE",
+      "before_text": "id: CultureMech:000236\nname: volvocacean_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: Volvocacean Medium\n  term:\n    id: UTEX:volvocacean-medium\n    label: Volvocacean Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for freshwater\n  algae cultivation.\nnotes: UTEX prepares Volvocacean Medium by combining 800 mL prepared Waris Medium\n  with 200 mL prepared Euglena Medium.\ningredients: []\nsolutions:\n- preferred_term: Waris Medium\n  concentration:\n    value: '800'\n    unit: ML_PER_L\n  culturemech_term:\n    id: CultureMech:000242\n    label: Waris Medium\n  notes: UTEX lists 800 mL prepared Waris Medium per 1 L final medium.\n- preferred_term: Euglena Medium\n  concentration:\n    value: '200'\n    unit: ML_PER_L\n  culturemech_term:\n    id: CultureMech:000168\n    label: Euglena Medium\n  notes: UTEX lists 200 mL prepared Euglena Medium per 1 L final medium.\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Prepare Waris Medium and Euglena Medium.\n- step_number: 2\n  action: MIX\n  description: Combine the prepared component media.\n- step_number: 3\n  action: STORE\n  description: Store at refrigerator temperature.\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: volvocacean-medium, URL: https://utex.org/products/volvocacean-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:53.673450Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000236'\n- timestamp: '2026-03-17T19:45:04.581941+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Volvocacean Medium\" to \"volvocacean_medium\" for consistent\n    matching\n- timestamp: '2026-05-16T09:02:56.156372+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.374698+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:31.041123+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 2 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_remaining_score50.py\n  action: RESOLVED_UTEX_SCORE50_ALGAE_GRAPH\n  changes: Grounded remaining score-50 UTEX algae recipe components\n  source: https://utex.org/products/volvocacean-medium\n  notes: UTEX prepares Volvocacean Medium by combining 800 mL prepared Waris Medium\n    with 200 mL prepared Euglena Medium.\nreferences:\n- reference: UTEX:volvocacean-medium\n- reference: https://utex.org/products/volvocacean-medium\noriginal_name: Volvocacean Medium\nparent_media:\n  path: data/normalized_yaml/algae/Waris_Medium.yaml\n  relationship: SUPPLEMENTED_VARIANT\n  id: CultureMech:000242\n  name: waris_medium\n  notes: Blends 800 mL Waris Medium with 200 mL Euglena Medium per liter.\nvariant_relationship: SUPPLEMENTED_VARIANT\nvariant_modifications:\n- Blends 800 mL Waris Medium with 200 mL Euglena Medium per liter.\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\n",
+      "after_text": "id: CultureMech:000236\nname: volvocacean_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: Volvocacean Medium\n  term:\n    id: UTEX:volvocacean-medium\n    label: Volvocacean Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for freshwater\n  algae cultivation.\nnotes: UTEX combines 800 mL Waris Medium prepared without pH adjustment with 200 mL\n  Euglena Medium per liter of liquid blend.\ningredients: []\nsolutions:\n- preferred_term: Waris Medium\n  concentration:\n    value: '800'\n    unit: ML_PER_L\n  culturemech_term:\n    id: CultureMech:000242\n    label: Waris Medium\n  notes: Waris is prepared without pH adjustment; 800 mL is used in the stated 1 L\n    liquid blend.\n- preferred_term: Euglena Medium\n  concentration:\n    value: '200'\n    unit: ML_PER_L\n  culturemech_term:\n    id: CultureMech:000168\n    label: Euglena Medium\n  notes: UTEX lists 200 mL prepared Euglena Medium per 1 L final medium.\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Prepare 1 L Waris Medium without pH adjustment and prepare 200 mL Euglena\n    Medium.\n- step_number: 2\n  action: MIX\n  description: Discard 200 mL of the Waris preparation. Combine the remaining 800\n    mL with the prepared 200 mL Euglena in a 2 L Erlenmeyer flask.\n- step_number: 3\n  action: AUTOCLAVE\n  description: Cover the flask and autoclave the combined medium.\n- step_number: 4\n  action: STORE\n  description: Store at refrigerator temperature.\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: volvocacean-medium, URL: https://utex.org/products/volvocacean-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:53.673450Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000236'\n- timestamp: '2026-03-17T19:45:04.581941+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"Volvocacean Medium\" to \"volvocacean_medium\" for consistent\n    matching\n- timestamp: '2026-05-16T09:02:56.156372+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.374698+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:31.041123+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 2 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-06T00:00:00-07:00'\n  curator: repair_utex_remaining_score50.py\n  action: RESOLVED_UTEX_SCORE50_ALGAE_GRAPH\n  changes: Grounded remaining score-50 UTEX algae recipe components\n  source: https://utex.org/products/volvocacean-medium\n  notes: UTEX prepares Volvocacean Medium by combining 800 mL prepared Waris Medium\n    with 200 mL prepared Euglena Medium.\n- timestamp: '2026-10-11T02:43:27.765962+00:00'\n  curator: codex\n  action: CURATED_UTEX_VOLVOCACEAN_BG11_CONCENTRATION_EVIDENCE\n  notes: Retained the source-supported 800/200 mL liquid blend, added concentration\n    evidence, restored the unadjusted-pH Waris preparation and autoclaving, and recorded\n    the optional 10.0 g agar addition separately. Linked parent compositions and unrelated\n    growth claims were not certified. No taxa-media associations added.\n  source: https://utex.org/products/volvocacean-medium\n  changes: '{\"counts\": {\"bibliographic_entries_enriched\": 1, \"new_curation_history\":\n    1, \"new_evidence\": 2, \"optional_variants_added\": 1, \"parent_context_notes_corrected\":\n    1, \"preparation_sequences_corrected\": 1, \"recipe_context_notes_corrected\": 1,\n    \"stock_context_notes_corrected\": 1, \"variant_descriptions_corrected\": 1}, \"fields\":\n    [{\"after_present\": true, \"before_present\": true, \"counter\": \"stock_context_notes_corrected\",\n    \"new\": \"Waris is prepared without pH adjustment; 800 mL is used in the stated\n    1 L liquid blend.\", \"old\": \"UTEX lists 800 mL prepared Waris Medium per 1 L final\n    medium.\", \"pointer\": [\"solutions\", 0, \"notes\"]}, {\"after_present\": true, \"before_present\":\n    true, \"counter\": \"recipe_context_notes_corrected\", \"new\": \"UTEX combines 800 mL\n    Waris Medium prepared without pH adjustment with 200 mL Euglena Medium per liter\n    of liquid blend.\", \"old\": \"UTEX prepares Volvocacean Medium by combining 800 mL\n    prepared Waris Medium with 200 mL prepared Euglena Medium.\", \"pointer\": [\"notes\"]},\n    {\"after_present\": true, \"before_present\": true, \"counter\": \"parent_context_notes_corrected\",\n    \"new\": \"Combines 800 mL Waris Medium prepared without pH adjustment with 200 mL\n    Euglena Medium per liter of liquid blend.\", \"old\": \"Blends 800 mL Waris Medium\n    with 200 mL Euglena Medium per liter.\", \"pointer\": [\"parent_media\", \"notes\"]},\n    {\"after_present\": true, \"before_present\": true, \"counter\": \"variant_descriptions_corrected\",\n    \"new\": [\"Combines 800 mL Waris Medium prepared without pH adjustment with 200\n    mL Euglena Medium per liter of liquid blend.\"], \"old\": [\"Blends 800 mL Waris Medium\n    with 200 mL Euglena Medium per liter.\"], \"pointer\": [\"variant_modifications\"]},\n    {\"after_present\": true, \"before_present\": true, \"counter\": \"preparation_sequences_corrected\",\n    \"new\": [{\"action\": \"MIX\", \"description\": \"Prepare 1 L Waris Medium without pH\n    adjustment and prepare 200 mL Euglena Medium.\", \"step_number\": 1}, {\"action\":\n    \"MIX\", \"description\": \"Discard 200 mL of the Waris preparation. Combine the remaining\n    800 mL with the prepared 200 mL Euglena in a 2 L Erlenmeyer flask.\", \"step_number\":\n    2}, {\"action\": \"AUTOCLAVE\", \"description\": \"Cover the flask and autoclave the\n    combined medium.\", \"step_number\": 3}, {\"action\": \"STORE\", \"description\": \"Store\n    at refrigerator temperature.\", \"step_number\": 4}], \"old\": [{\"action\": \"MIX\", \"description\":\n    \"Prepare Waris Medium and Euglena Medium.\", \"step_number\": 1}, {\"action\": \"MIX\",\n    \"description\": \"Combine the prepared component media.\", \"step_number\": 2}, {\"action\":\n    \"STORE\", \"description\": \"Store at refrigerator temperature.\", \"step_number\": 3}],\n    \"pointer\": [\"preparation_steps\"]}, {\"after_present\": true, \"before_present\": false,\n    \"counter\": \"new_evidence\", \"new\": [{\"explanation\": \"Concentration claims solutions[0].concentration\n    (Waris, 800 mL/L) and solutions[1].concentration (Euglena, 200 mL/L), also variant_modifications[0]\n    and parent_media.notes. Table rows 1 and 2 give \\\"800 mL\\\" and \\\"200 mL\\\"; the\n    Directions heading is \\\"For 1 L Total\\\". Arithmetic: 800 + 200 = 1000 mL of liquid\n    blend. Directions 1 qualifies the Waris preparation with \\\"but do not adjust the\n    pH.\\\". Directions 3-4 discard 200 mL Waris before combining the rest with Euglena\n    in a 2 L flask; Directions 5 states \\\"Cover and autoclave.\\\". No final pH, sterilization\n    temperature/time, or linked parent composition is inferred.\", \"reference\": \"https://utex.org/products/volvocacean-medium\",\n    \"snippet\": \"800 mL\", \"supports\": \"SUPPORT\"}], \"old\": null, \"pointer\": [\"evidence\"]},\n    {\"after_present\": true, \"before_present\": false, \"counter\": \"optional_variants_added\",\n    \"new\": [{\"description\": \"Source-described agar alternative to the liquid blend.\",\n    \"evidence\": [{\"explanation\": \"variants[0].modifications[0]: Directions 4 optional\n    agar instruction specifies \\\"10.0 grams\\\" and \\\"do not mix.\\\"; Directions 5 specifies\n    \\\"Cover and autoclave.\\\". The amount is added after the stated 1 L liquid blend,\n    not asserted as a measured final-volume concentration.\", \"reference\": \"https://utex.org/products/volvocacean-medium\",\n    \"snippet\": \"10.0 grams\", \"supports\": \"SUPPORT\"}], \"modifications\": [\"After combining\n    the 800 mL Waris and 200 mL Euglena portions, add 10.0 g agar to the flask without\n    stirring; then cover and autoclave.\"], \"name\": \"Optional agar formulation\", \"relationship\":\n    \"PHYSICAL_STATE_VARIANT\"}], \"old\": null, \"pointer\": [\"variants\"]}, {\"after_present\":\n    true, \"before_present\": true, \"counter\": \"bibliographic_entries_enriched\", \"new\":\n    {\"notes\": \"source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-10; locator=#recipe, composition table and Directions; authors,\n    publication year and DOI not established.\", \"reference\": \"https://utex.org/products/volvocacean-medium\",\n    \"title\": \"Volvocacean Medium | UTEX Culture Collection of Algae\"}, \"old\": {\"reference\":\n    \"https://utex.org/products/volvocacean-medium\"}, \"pointer\": [\"references\", 1]}]}'\nreferences:\n- reference: UTEX:volvocacean-medium\n- reference: https://utex.org/products/volvocacean-medium\n  title: Volvocacean Medium | UTEX Culture Collection of Algae\n  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-10; locator=#recipe, composition table and Directions; authors,\n    publication year and DOI not established.\noriginal_name: Volvocacean Medium\nparent_media:\n  path: data/normalized_yaml/algae/Waris_Medium.yaml\n  relationship: SUPPLEMENTED_VARIANT\n  id: CultureMech:000242\n  name: waris_medium\n  notes: Combines 800 mL Waris Medium prepared without pH adjustment with 200 mL Euglena\n    Medium per liter of liquid blend.\nvariant_relationship: SUPPLEMENTED_VARIANT\nvariant_modifications:\n- Combines 800 mL Waris Medium prepared without pH adjustment with 200 mL Euglena\n  Medium per liter of liquid blend.\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\nevidence:\n- reference: https://utex.org/products/volvocacean-medium\n  supports: SUPPORT\n  snippet: 800 mL\n  explanation: 'Concentration claims solutions[0].concentration (Waris, 800 mL/L)\n    and solutions[1].concentration (Euglena, 200 mL/L), also variant_modifications[0]\n    and parent_media.notes. Table rows 1 and 2 give \"800 mL\" and \"200 mL\"; the Directions\n    heading is \"For 1 L Total\". Arithmetic: 800 + 200 = 1000 mL of liquid blend. Directions\n    1 qualifies the Waris preparation with \"but do not adjust the pH.\". Directions\n    3-4 discard 200 mL Waris before combining the rest with Euglena in a 2 L flask;\n    Directions 5 states \"Cover and autoclave.\". No final pH, sterilization temperature/time,\n    or linked parent composition is inferred.'\nvariants:\n- name: Optional agar formulation\n  relationship: PHYSICAL_STATE_VARIANT\n  description: Source-described agar alternative to the liquid blend.\n  modifications:\n  - After combining the 800 mL Waris and 200 mL Euglena portions, add 10.0 g agar\n    to the flask without stirring; then cover and autoclave.\n  evidence:\n  - reference: https://utex.org/products/volvocacean-medium\n    supports: SUPPORT\n    snippet: 10.0 grams\n    explanation: 'variants[0].modifications[0]: Directions 4 optional agar instruction\n      specifies \"10.0 grams\" and \"do not mix.\"; Directions 5 specifies \"Cover and\n      autoclave.\". The amount is added after the stated 1 L liquid blend, not asserted\n      as a measured final-volume concentration.'\n",
+      "before_sha256": "da64183ae931e08745daf8a9e228f734859d9c26970dffe53616790dfe4c92c8",
+      "after_sha256": "b0a4159590a114e5f0a3ef38ae5998b0d480879e164b23d4c4fb5638c9261fab",
+      "changes": [
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "notes"
+          ],
+          "before_present": true,
+          "old": "UTEX lists 800 mL prepared Waris Medium per 1 L final medium.",
+          "after_present": true,
+          "new": "Waris is prepared without pH adjustment; 800 mL is used in the stated 1 L liquid blend.",
+          "counter": "stock_context_notes_corrected"
+        },
+        {
+          "pointer": [
+            "notes"
+          ],
+          "before_present": true,
+          "old": "UTEX prepares Volvocacean Medium by combining 800 mL prepared Waris Medium with 200 mL prepared Euglena Medium.",
+          "after_present": true,
+          "new": "UTEX combines 800 mL Waris Medium prepared without pH adjustment with 200 mL Euglena Medium per liter of liquid blend.",
+          "counter": "recipe_context_notes_corrected"
+        },
+        {
+          "pointer": [
+            "parent_media",
+            "notes"
+          ],
+          "before_present": true,
+          "old": "Blends 800 mL Waris Medium with 200 mL Euglena Medium per liter.",
+          "after_present": true,
+          "new": "Combines 800 mL Waris Medium prepared without pH adjustment with 200 mL Euglena Medium per liter of liquid blend.",
+          "counter": "parent_context_notes_corrected"
+        },
+        {
+          "pointer": [
+            "variant_modifications"
+          ],
+          "before_present": true,
+          "old": [
+            "Blends 800 mL Waris Medium with 200 mL Euglena Medium per liter."
+          ],
+          "after_present": true,
+          "new": [
+            "Combines 800 mL Waris Medium prepared without pH adjustment with 200 mL Euglena Medium per liter of liquid blend."
+          ],
+          "counter": "variant_descriptions_corrected"
+        },
+        {
+          "pointer": [
+            "preparation_steps"
+          ],
+          "before_present": true,
+          "old": [
+            {
+              "step_number": 1,
+              "action": "MIX",
+              "description": "Prepare Waris Medium and Euglena Medium."
+            },
+            {
+              "step_number": 2,
+              "action": "MIX",
+              "description": "Combine the prepared component media."
+            },
+            {
+              "step_number": 3,
+              "action": "STORE",
+              "description": "Store at refrigerator temperature."
+            }
+          ],
+          "after_present": true,
+          "new": [
+            {
+              "step_number": 1,
+              "action": "MIX",
+              "description": "Prepare 1 L Waris Medium without pH adjustment and prepare 200 mL Euglena Medium."
+            },
+            {
+              "step_number": 2,
+              "action": "MIX",
+              "description": "Discard 200 mL of the Waris preparation. Combine the remaining 800 mL with the prepared 200 mL Euglena in a 2 L Erlenmeyer flask."
+            },
+            {
+              "step_number": 3,
+              "action": "AUTOCLAVE",
+              "description": "Cover the flask and autoclave the combined medium."
+            },
+            {
+              "step_number": 4,
+              "action": "STORE",
+              "description": "Store at refrigerator temperature."
+            }
+          ],
+          "counter": "preparation_sequences_corrected"
+        },
+        {
+          "pointer": [
+            "evidence"
+          ],
+          "before_present": false,
+          "old": null,
+          "after_present": true,
+          "new": [
+            {
+              "reference": "https://utex.org/products/volvocacean-medium",
+              "supports": "SUPPORT",
+              "snippet": "800 mL",
+              "explanation": "Concentration claims solutions[0].concentration (Waris, 800 mL/L) and solutions[1].concentration (Euglena, 200 mL/L), also variant_modifications[0] and parent_media.notes. Table rows 1 and 2 give \"800 mL\" and \"200 mL\"; the Directions heading is \"For 1 L Total\". Arithmetic: 800 + 200 = 1000 mL of liquid blend. Directions 1 qualifies the Waris preparation with \"but do not adjust the pH.\". Directions 3-4 discard 200 mL Waris before combining the rest with Euglena in a 2 L flask; Directions 5 states \"Cover and autoclave.\". No final pH, sterilization temperature/time, or linked parent composition is inferred."
+            }
+          ],
+          "counter": "new_evidence"
+        },
+        {
+          "pointer": [
+            "variants"
+          ],
+          "before_present": false,
+          "old": null,
+          "after_present": true,
+          "new": [
+            {
+              "name": "Optional agar formulation",
+              "relationship": "PHYSICAL_STATE_VARIANT",
+              "description": "Source-described agar alternative to the liquid blend.",
+              "modifications": [
+                "After combining the 800 mL Waris and 200 mL Euglena portions, add 10.0 g agar to the flask without stirring; then cover and autoclave."
+              ],
+              "evidence": [
+                {
+                  "reference": "https://utex.org/products/volvocacean-medium",
+                  "supports": "SUPPORT",
+                  "snippet": "10.0 grams",
+                  "explanation": "variants[0].modifications[0]: Directions 4 optional agar instruction specifies \"10.0 grams\" and \"do not mix.\"; Directions 5 specifies \"Cover and autoclave.\". The amount is added after the stated 1 L liquid blend, not asserted as a measured final-volume concentration."
+                }
+              ]
+            }
+          ],
+          "counter": "optional_variants_added"
+        },
+        {
+          "pointer": [
+            "references",
+            1
+          ],
+          "before_present": true,
+          "old": {
+            "reference": "https://utex.org/products/volvocacean-medium"
+          },
+          "after_present": true,
+          "new": {
+            "reference": "https://utex.org/products/volvocacean-medium",
+            "title": "Volvocacean Medium | UTEX Culture Collection of Algae",
+            "notes": "source_type=culture_collection_page; discovery_mode=existing_record_reference; accessed_on=2026-10-10; locator=#recipe, composition table and Directions; authors, publication year and DOI not established."
+          },
+          "counter": "bibliographic_entries_enriched"
+        }
+      ],
+      "counts": {
+        "stock_context_notes_corrected": 1,
+        "recipe_context_notes_corrected": 1,
+        "parent_context_notes_corrected": 1,
+        "variant_descriptions_corrected": 1,
+        "preparation_sequences_corrected": 1,
+        "new_evidence": 2,
+        "optional_variants_added": 1,
+        "bibliographic_entries_enriched": 1,
+        "new_curation_history": 1
+      },
+      "claims": [
+        {
+          "field": "solutions[0].concentration",
+          "ingredient": "Waris Medium",
+          "old": {
+            "value": "800",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "800",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/volvocacean-medium",
+          "snippet": "800 mL",
+          "locator": "#recipe: component table and Directions",
+          "calculation": "800 mL / source-stated 1 L liquid blend = 800 mL/L; no stock-composition conversion.",
+          "action_taken": "Proposed; not yet applied."
+        },
+        {
+          "field": "solutions[1].concentration",
+          "ingredient": "Euglena Medium",
+          "old": {
+            "value": "200",
+            "unit": "ML_PER_L"
+          },
+          "new": {
+            "value": "200",
+            "unit": "ML_PER_L"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/volvocacean-medium",
+          "snippet": "200 mL",
+          "locator": "#recipe: component table and Directions",
+          "calculation": "200 mL / source-stated 1 L liquid blend = 200 mL/L; no stock-composition conversion.",
+          "action_taken": "Proposed; not yet applied."
+        },
+        {
+          "field": "variant_modifications[0]; parent_media.notes",
+          "ingredient": "prepared-medium blend",
+          "old": "Blends 800 mL Waris Medium with 200 mL Euglena Medium per liter.",
+          "new": "Combines 800 mL Waris Medium prepared without pH adjustment with 200 mL Euglena Medium per liter of liquid blend.",
+          "status": "correct",
+          "reference": "https://utex.org/products/volvocacean-medium",
+          "snippet": "800 mL",
+          "locator": "#recipe: component table and Directions",
+          "calculation": "800 mL Waris + 200 mL Euglena forms the specified 1 L liquid blend; Waris pH is not adjusted.",
+          "action_taken": "Proposed; not yet applied."
+        },
+        {
+          "field": "preparation_steps",
+          "ingredient": "Waris preparation and sterilization",
+          "old": [
+            {
+              "step_number": 1,
+              "action": "MIX",
+              "description": "Prepare Waris Medium and Euglena Medium."
+            },
+            {
+              "step_number": 2,
+              "action": "MIX",
+              "description": "Combine the prepared component media."
+            },
+            {
+              "step_number": 3,
+              "action": "STORE",
+              "description": "Store at refrigerator temperature."
+            }
+          ],
+          "new": [
+            {
+              "step_number": 1,
+              "action": "MIX",
+              "description": "Prepare 1 L Waris Medium without pH adjustment and prepare 200 mL Euglena Medium."
+            },
+            {
+              "step_number": 2,
+              "action": "MIX",
+              "description": "Discard 200 mL of the Waris preparation. Combine the remaining 800 mL with the prepared 200 mL Euglena in a 2 L Erlenmeyer flask."
+            },
+            {
+              "step_number": 3,
+              "action": "AUTOCLAVE",
+              "description": "Cover the flask and autoclave the combined medium."
+            },
+            {
+              "step_number": 4,
+              "action": "STORE",
+              "description": "Store at refrigerator temperature."
+            }
+          ],
+          "status": "correct",
+          "reference": "https://utex.org/products/volvocacean-medium",
+          "snippet": "but do not adjust the pH.",
+          "locator": "#recipe: component table and Directions",
+          "calculation": "Source-specific pH omission and autoclaving restored; no numeric pH or autoclave setting inferred.",
+          "action_taken": "Proposed; not yet applied."
+        },
+        {
+          "field": "variants[0].modifications[0]",
+          "ingredient": "optional agar",
+          "old": null,
+          "new": "After combining the 800 mL Waris and 200 mL Euglena portions, add 10.0 g agar to the flask without stirring; then cover and autoclave.",
+          "status": "add",
+          "reference": "https://utex.org/products/volvocacean-medium",
+          "snippet": "10.0 grams",
+          "locator": "#recipe: component table and Directions",
+          "calculation": "Literal 10.0 g batch addition; no final-volume concentration or density conversion.",
+          "action_taken": "Proposed; not yet applied."
+        }
+      ],
+      "unresolved": [
+        "Linked Waris and Euglena compositions, final pH, autoclave temperature/time and unrelated growth/culture conditions were not newly verified."
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/bg_11_0_36_nacl_medium.yaml",
+      "id": "CultureMech:000026",
+      "action": "CURATED_UTEX_VOLVOCACEAN_BG11_CONCENTRATION_EVIDENCE",
+      "before_text": "id: CultureMech:000026\nname: bg_11_0_36_nacl_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: BG-11 + 0.36% NaCl Medium\n  term:\n    id: UTEX:bg-11-1-plus-0-point-36-percent-nacl-medium\n    label: BG-11 + 0.36% NaCl Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for saltwater\n  algae cultivation.\ningredients:\n- preferred_term: NaCl\n  concentration:\n    value: '0.062'\n    unit: MOLAR\n  term:\n    id: CHEBI:26710\n    label: sodium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n  supplier_catalog:\n    supplier_name: Fisher\n    catalog_number: S271-500\n  notes: UTEX lists 3.6 g/L NaCl, equivalent to 0.062 M.\n  physicochemical_roles:\n  - OSMOTIC_AGENT\nsolutions:\n- preferred_term: BG-11 Medium\n  concentration:\n    value: '1000'\n    unit: ML_PER_L\n  culturemech_term:\n    id: CultureMech:000029\n    label: BG-11 Medium\n  notes: UTEX lists 1 L prepared BG-11 Medium per 1 L final medium.\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Prepare BG-11 Medium through its first mixing step.\n- step_number: 2\n  action: DISSOLVE\n  description: Add 3.6 g/L NaCl and bring the total volume to 1 L with dH2O.\n- step_number: 3\n  action: AUTOCLAVE\n  description: Cover and autoclave the medium.\n- step_number: 4\n  action: STORE\n  description: Store at refrigerator temperature.\nnotes: UTEX prepares this BG-11 variant by supplementing the base with 3.6 g/L NaCl.\nsalinity: saltwater\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: bg-11-1-plus-0-point-36-percent-nacl-medium, URL: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:52.925275Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000026'\n- timestamp: '2026-03-17T19:45:03.892623+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"BG-11 + 0.36% NaCl Medium\" to \"bg_11_0_36_nacl_medium\"\n    for consistent matching\n- timestamp: '2026-05-16T09:02:56.365797+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.527548+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:31.282794+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 2 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-05T00:00:00-07:00'\n  curator: repair_utex_bg11_spirulina.py\n  action: RESOLVED_UTEX_BG11_SPIRULINA_GRAPH\n  changes: Grounded UTEX Spirulina/BG-11 stock and parent-medium components\n  source: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium\n  notes: UTEX prepares this BG-11 variant by supplementing the base with 3.6 g/L NaCl.\nreferences:\n- reference: UTEX:bg-11-1-plus-0-point-36-percent-nacl-medium\n- reference: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium\noriginal_name: BG-11 + 0.36% NaCl Medium\nparent_media:\n  path: data/normalized_yaml/algae/bg_11_medium.yaml\n  relationship: SUPPLEMENTED_VARIANT\n  id: CultureMech:000029\n  name: bg_11_medium\n  notes: Adds 3.6 g/L NaCl to prepared BG-11 Medium.\nvariant_relationship: SUPPLEMENTED_VARIANT\nvariant_modifications:\n- Adds 3.6 g/L NaCl to prepared BG-11 Medium.\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\n",
+      "after_text": "id: CultureMech:000026\nname: bg_11_0_36_nacl_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: BG-11 + 0.36% NaCl Medium\n  term:\n    id: UTEX:bg-11-1-plus-0-point-36-percent-nacl-medium\n    label: BG-11 + 0.36% NaCl Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for saltwater\n  algae cultivation.\ningredients:\n- preferred_term: NaCl\n  concentration:\n    value: '0.062'\n    unit: MOLAR\n  term:\n    id: CHEBI:26710\n    label: sodium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n  supplier_catalog:\n    supplier_name: Fisher\n    catalog_number: S271-500\n  notes: UTEX separately prints 3.6 g/L and 0.062 M NaCl. Molarity is retained as\n    a source assertion, not an exact calculated equivalence.\n  physicochemical_roles:\n  - OSMOTIC_AGENT\n  evidence:\n  - reference: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium\n    supports: SUPPORT\n    snippet: 0.062 M\n    explanation: 'ingredients[0].concentration: component 2, Final Concentration column\n      reports \"0.062 M\". Its Amount column separately reports \"3.6 g/L\"; the liquid\n      procedure makes up to a final 1 L. No new mass-to-molar conversion is asserted.'\nsolutions:\n- preferred_term: BG-11 Medium\n  culturemech_term:\n    id: CultureMech:000029\n    label: BG-11 Medium\n  notes: Recipe base, not a measured 1000 mL/L prepared-medium input. UTEX labels\n    BG-11 as 1 L in the table but stops its preparation after step one; NaCl is added\n    before liquid-medium makeup to a final 1 L. No fixed prepared-base dose is established.\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Prepare BG-11 Medium through its first mixing step.\n- step_number: 2\n  action: DISSOLVE\n  description: Add 3.6 g/L NaCl and bring the total volume to 1 L with dH2O.\n- step_number: 3\n  action: AUTOCLAVE\n  description: Cover and autoclave the medium.\n- step_number: 4\n  action: STORE\n  description: Store at refrigerator temperature.\nnotes: UTEX prepares this BG-11 variant by supplementing the base with 3.6 g/L NaCl.\n  The source title says BG-11-1, whereas the linked base/table says BG-11. This naming\n  discrepancy remains unresolved; no nitrogen omission, identity change or merger\n  is inferred.\nsalinity: saltwater\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: bg-11-1-plus-0-point-36-percent-nacl-medium, URL: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:52.925275Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000026'\n- timestamp: '2026-03-17T19:45:03.892623+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"BG-11 + 0.36% NaCl Medium\" to \"bg_11_0_36_nacl_medium\"\n    for consistent matching\n- timestamp: '2026-05-16T09:02:56.365797+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.527548+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:31.282794+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 2 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-05T00:00:00-07:00'\n  curator: repair_utex_bg11_spirulina.py\n  action: RESOLVED_UTEX_BG11_SPIRULINA_GRAPH\n  changes: Grounded UTEX Spirulina/BG-11 stock and parent-medium components\n  source: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium\n  notes: UTEX prepares this BG-11 variant by supplementing the base with 3.6 g/L NaCl.\n- timestamp: '2026-10-11T02:43:27.765962+00:00'\n  curator: codex\n  action: CURATED_UTEX_VOLVOCACEAN_BG11_CONCENTRATION_EVIDENCE\n  notes: Retained source-printed NaCl molarity with evidence; removed the unsupported\n    prepared-BG-11 dose, clarified salt addition before volume makeup, and recorded\n    the optional agar procedure separately. The thiosulfate dose remains unresolved.\n    The BG-11-1/BG-11 source naming discrepancy is retained without inferring nitrogen\n    omission. No taxa-media associations added.\n  source: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium\n  changes: '{\"counts\": {\"bibliographic_entries_enriched\": 1, \"ingredient_context_notes_corrected\":\n    1, \"new_curation_history\": 1, \"new_evidence\": 3, \"optional_variants_added\": 1,\n    \"parent_context_notes_corrected\": 1, \"source_conflict_notes_added\": 1, \"stock_context_notes_corrected\":\n    1, \"unsupported_quantity_slots_removed\": 1, \"variant_descriptions_corrected\":\n    1}, \"fields\": [{\"after_present\": true, \"before_present\": true, \"counter\": \"ingredient_context_notes_corrected\",\n    \"new\": \"UTEX separately prints 3.6 g/L and 0.062 M NaCl. Molarity is retained\n    as a source assertion, not an exact calculated equivalence.\", \"old\": \"UTEX lists\n    3.6 g/L NaCl, equivalent to 0.062 M.\", \"pointer\": [\"ingredients\", 0, \"notes\"]},\n    {\"after_present\": true, \"before_present\": false, \"counter\": \"new_evidence\", \"new\":\n    [{\"explanation\": \"ingredients[0].concentration: component 2, Final Concentration\n    column reports \\\"0.062 M\\\". Its Amount column separately reports \\\"3.6 g/L\\\";\n    the liquid procedure makes up to a final 1 L. No new mass-to-molar conversion\n    is asserted.\", \"reference\": \"https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium\",\n    \"snippet\": \"0.062 M\", \"supports\": \"SUPPORT\"}], \"old\": null, \"pointer\": [\"ingredients\",\n    0, \"evidence\"]}, {\"after_present\": false, \"before_present\": true, \"counter\": \"unsupported_quantity_slots_removed\",\n    \"new\": null, \"old\": {\"unit\": \"ML_PER_L\", \"value\": \"1000\"}, \"pointer\": [\"solutions\",\n    0, \"concentration\"]}, {\"after_present\": true, \"before_present\": true, \"counter\":\n    \"stock_context_notes_corrected\", \"new\": \"Recipe base, not a measured 1000 mL/L\n    prepared-medium input. UTEX labels BG-11 as 1 L in the table but stops its preparation\n    after step one; NaCl is added before liquid-medium makeup to a final 1 L. No fixed\n    prepared-base dose is established.\", \"old\": \"UTEX lists 1 L prepared BG-11 Medium\n    per 1 L final medium.\", \"pointer\": [\"solutions\", 0, \"notes\"]}, {\"after_present\":\n    true, \"before_present\": true, \"counter\": \"parent_context_notes_corrected\", \"new\":\n    \"Adds 3.6 g/L NaCl after BG-11 preparation step one, before making the liquid\n    medium up to a final 1 L.\", \"old\": \"Adds 3.6 g/L NaCl to prepared BG-11 Medium.\",\n    \"pointer\": [\"parent_media\", \"notes\"]}, {\"after_present\": true, \"before_present\":\n    true, \"counter\": \"variant_descriptions_corrected\", \"new\": [\"Adds 3.6 g/L NaCl\n    after BG-11 preparation step one, before making the liquid medium up to a final\n    1 L.\"], \"old\": [\"Adds 3.6 g/L NaCl to prepared BG-11 Medium.\"], \"pointer\": [\"variant_modifications\"]},\n    {\"after_present\": true, \"before_present\": true, \"counter\": \"source_conflict_notes_added\",\n    \"new\": \"UTEX prepares this BG-11 variant by supplementing the base with 3.6 g/L\n    NaCl. The source title says BG-11-1, whereas the linked base/table says BG-11.\n    This naming discrepancy remains unresolved; no nitrogen omission, identity change\n    or merger is inferred.\", \"old\": \"UTEX prepares this BG-11 variant by supplementing\n    the base with 3.6 g/L NaCl.\", \"pointer\": [\"notes\"]}, {\"after_present\": true, \"before_present\":\n    false, \"counter\": \"new_evidence\", \"new\": [{\"explanation\": \"solutions[0] is a recipe-base\n    reference, not a measured prepared-medium fraction. Liquid Directions 1 says \\\"through\n    step one.\\\"; Directions 2 adds NaCl before making up to 1 L. The table labels\n    BG-11 as 1 L but does not establish a separate 1000 mL/L input. variant_modifications[0]\n    and parent_media.notes retain the component-2 amount \\\"3.6 g/L\\\" with the preparation\n    boundary. No replacement dose or stock composition is inferred.\", \"reference\":\n    \"https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium\", \"snippet\":\n    \"through step one.\", \"supports\": \"SUPPORT\"}], \"old\": null, \"pointer\": [\"evidence\"]},\n    {\"after_present\": true, \"before_present\": false, \"counter\": \"optional_variants_added\",\n    \"new\": [{\"description\": \"Source-described two-portion preparation; sodium-thiosulfate\n    dose remains unresolved.\", \"evidence\": [{\"explanation\": \"variants[0].modifications:\n    Agar Directions 2-3 specify two portions involving \\\"500 mL\\\"; the separate agar\n    amount is \\\"15 g\\\". Directions 4-8 describe separate autoclaving, cooling to \\\"45-50\\\"\n    degrees C, addition of sterile \\\"Sodium Thiosulfate\\\", combination, cooling and\n    refrigeration. The whole agar subsection was inspected and contains no local thiosulfate\n    amount. The 15 g is a batch addition; final volume after sterile supplement is\n    not measured here.\", \"reference\": \"https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium\",\n    \"snippet\": \"15 g\", \"supports\": \"SUPPORT\"}], \"modifications\": [\"For the agar alternative,\n    perform BG-11 preparation step one, add the formulation-specific NaCl, and make\n    this portion up to 500 mL with dH2O.\", \"In another container, add 15 g agar to\n    500 mL dH2O. Autoclave both preparations separately, then cool them to 45-50 degrees\n    C in a water bath.\", \"Mix sterile sodium thiosulfate into the agar preparation\n    before combining both portions. The salt-variant page does not specify a thiosulfate\n    dose; no amount is inferred from the linked base recipe. Mix promptly, allow to\n    cool and refrigerate.\"], \"name\": \"Optional agar formulation\", \"relationship\":\n    \"PHYSICAL_STATE_VARIANT\"}], \"old\": null, \"pointer\": [\"variants\"]}, {\"after_present\":\n    true, \"before_present\": true, \"counter\": \"bibliographic_entries_enriched\", \"new\":\n    {\"notes\": \"source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-10; locator=#recipe, composition table and Directions; authors,\n    publication year and DOI not established.\", \"reference\": \"https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium\",\n    \"title\": \"BG-11-1 + 0.36% NaCl Medium | UTEX Culture Collection of Algae\"}, \"old\":\n    {\"reference\": \"https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium\"},\n    \"pointer\": [\"references\", 1]}]}'\nreferences:\n- reference: UTEX:bg-11-1-plus-0-point-36-percent-nacl-medium\n- reference: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium\n  title: BG-11-1 + 0.36% NaCl Medium | UTEX Culture Collection of Algae\n  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-10; locator=#recipe, composition table and Directions; authors,\n    publication year and DOI not established.\noriginal_name: BG-11 + 0.36% NaCl Medium\nparent_media:\n  path: data/normalized_yaml/algae/bg_11_medium.yaml\n  relationship: SUPPLEMENTED_VARIANT\n  id: CultureMech:000029\n  name: bg_11_medium\n  notes: Adds 3.6 g/L NaCl after BG-11 preparation step one, before making the liquid\n    medium up to a final 1 L.\nvariant_relationship: SUPPLEMENTED_VARIANT\nvariant_modifications:\n- Adds 3.6 g/L NaCl after BG-11 preparation step one, before making the liquid medium\n  up to a final 1 L.\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\nevidence:\n- reference: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium\n  supports: SUPPORT\n  snippet: through step one.\n  explanation: solutions[0] is a recipe-base reference, not a measured prepared-medium\n    fraction. Liquid Directions 1 says \"through step one.\"; Directions 2 adds NaCl\n    before making up to 1 L. The table labels BG-11 as 1 L but does not establish\n    a separate 1000 mL/L input. variant_modifications[0] and parent_media.notes retain\n    the component-2 amount \"3.6 g/L\" with the preparation boundary. No replacement\n    dose or stock composition is inferred.\nvariants:\n- name: Optional agar formulation\n  relationship: PHYSICAL_STATE_VARIANT\n  description: Source-described two-portion preparation; sodium-thiosulfate dose remains\n    unresolved.\n  modifications:\n  - For the agar alternative, perform BG-11 preparation step one, add the formulation-specific\n    NaCl, and make this portion up to 500 mL with dH2O.\n  - In another container, add 15 g agar to 500 mL dH2O. Autoclave both preparations\n    separately, then cool them to 45-50 degrees C in a water bath.\n  - Mix sterile sodium thiosulfate into the agar preparation before combining both\n    portions. The salt-variant page does not specify a thiosulfate dose; no amount\n    is inferred from the linked base recipe. Mix promptly, allow to cool and refrigerate.\n  evidence:\n  - reference: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium\n    supports: SUPPORT\n    snippet: 15 g\n    explanation: 'variants[0].modifications: Agar Directions 2-3 specify two portions\n      involving \"500 mL\"; the separate agar amount is \"15 g\". Directions 4-8 describe\n      separate autoclaving, cooling to \"45-50\" degrees C, addition of sterile \"Sodium\n      Thiosulfate\", combination, cooling and refrigeration. The whole agar subsection\n      was inspected and contains no local thiosulfate amount. The 15 g is a batch\n      addition; final volume after sterile supplement is not measured here.'\n",
+      "before_sha256": "b28b8b5c1c6185a8d8c2f41174cca216f60f76663db4c77cd40efb5f86c10df3",
+      "after_sha256": "28d5909ae33d9433ef191e63d871bc967d53ad9a652c5a6fa2d96de9be7eae6d",
+      "changes": [
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "notes"
+          ],
+          "before_present": true,
+          "old": "UTEX lists 3.6 g/L NaCl, equivalent to 0.062 M.",
+          "after_present": true,
+          "new": "UTEX separately prints 3.6 g/L and 0.062 M NaCl. Molarity is retained as a source assertion, not an exact calculated equivalence.",
+          "counter": "ingredient_context_notes_corrected"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "evidence"
+          ],
+          "before_present": false,
+          "old": null,
+          "after_present": true,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+              "supports": "SUPPORT",
+              "snippet": "0.062 M",
+              "explanation": "ingredients[0].concentration: component 2, Final Concentration column reports \"0.062 M\". Its Amount column separately reports \"3.6 g/L\"; the liquid procedure makes up to a final 1 L. No new mass-to-molar conversion is asserted."
+            }
+          ],
+          "counter": "new_evidence"
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "concentration"
+          ],
+          "before_present": true,
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "after_present": false,
+          "new": null,
+          "counter": "unsupported_quantity_slots_removed"
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "notes"
+          ],
+          "before_present": true,
+          "old": "UTEX lists 1 L prepared BG-11 Medium per 1 L final medium.",
+          "after_present": true,
+          "new": "Recipe base, not a measured 1000 mL/L prepared-medium input. UTEX labels BG-11 as 1 L in the table but stops its preparation after step one; NaCl is added before liquid-medium makeup to a final 1 L. No fixed prepared-base dose is established.",
+          "counter": "stock_context_notes_corrected"
+        },
+        {
+          "pointer": [
+            "parent_media",
+            "notes"
+          ],
+          "before_present": true,
+          "old": "Adds 3.6 g/L NaCl to prepared BG-11 Medium.",
+          "after_present": true,
+          "new": "Adds 3.6 g/L NaCl after BG-11 preparation step one, before making the liquid medium up to a final 1 L.",
+          "counter": "parent_context_notes_corrected"
+        },
+        {
+          "pointer": [
+            "variant_modifications"
+          ],
+          "before_present": true,
+          "old": [
+            "Adds 3.6 g/L NaCl to prepared BG-11 Medium."
+          ],
+          "after_present": true,
+          "new": [
+            "Adds 3.6 g/L NaCl after BG-11 preparation step one, before making the liquid medium up to a final 1 L."
+          ],
+          "counter": "variant_descriptions_corrected"
+        },
+        {
+          "pointer": [
+            "notes"
+          ],
+          "before_present": true,
+          "old": "UTEX prepares this BG-11 variant by supplementing the base with 3.6 g/L NaCl.",
+          "after_present": true,
+          "new": "UTEX prepares this BG-11 variant by supplementing the base with 3.6 g/L NaCl. The source title says BG-11-1, whereas the linked base/table says BG-11. This naming discrepancy remains unresolved; no nitrogen omission, identity change or merger is inferred.",
+          "counter": "source_conflict_notes_added"
+        },
+        {
+          "pointer": [
+            "evidence"
+          ],
+          "before_present": false,
+          "old": null,
+          "after_present": true,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+              "supports": "SUPPORT",
+              "snippet": "through step one.",
+              "explanation": "solutions[0] is a recipe-base reference, not a measured prepared-medium fraction. Liquid Directions 1 says \"through step one.\"; Directions 2 adds NaCl before making up to 1 L. The table labels BG-11 as 1 L but does not establish a separate 1000 mL/L input. variant_modifications[0] and parent_media.notes retain the component-2 amount \"3.6 g/L\" with the preparation boundary. No replacement dose or stock composition is inferred."
+            }
+          ],
+          "counter": "new_evidence"
+        },
+        {
+          "pointer": [
+            "variants"
+          ],
+          "before_present": false,
+          "old": null,
+          "after_present": true,
+          "new": [
+            {
+              "name": "Optional agar formulation",
+              "relationship": "PHYSICAL_STATE_VARIANT",
+              "description": "Source-described two-portion preparation; sodium-thiosulfate dose remains unresolved.",
+              "modifications": [
+                "For the agar alternative, perform BG-11 preparation step one, add the formulation-specific NaCl, and make this portion up to 500 mL with dH2O.",
+                "In another container, add 15 g agar to 500 mL dH2O. Autoclave both preparations separately, then cool them to 45-50 degrees C in a water bath.",
+                "Mix sterile sodium thiosulfate into the agar preparation before combining both portions. The salt-variant page does not specify a thiosulfate dose; no amount is inferred from the linked base recipe. Mix promptly, allow to cool and refrigerate."
+              ],
+              "evidence": [
+                {
+                  "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+                  "supports": "SUPPORT",
+                  "snippet": "15 g",
+                  "explanation": "variants[0].modifications: Agar Directions 2-3 specify two portions involving \"500 mL\"; the separate agar amount is \"15 g\". Directions 4-8 describe separate autoclaving, cooling to \"45-50\" degrees C, addition of sterile \"Sodium Thiosulfate\", combination, cooling and refrigeration. The whole agar subsection was inspected and contains no local thiosulfate amount. The 15 g is a batch addition; final volume after sterile supplement is not measured here."
+                }
+              ]
+            }
+          ],
+          "counter": "optional_variants_added"
+        },
+        {
+          "pointer": [
+            "references",
+            1
+          ],
+          "before_present": true,
+          "old": {
+            "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium"
+          },
+          "after_present": true,
+          "new": {
+            "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+            "title": "BG-11-1 + 0.36% NaCl Medium | UTEX Culture Collection of Algae",
+            "notes": "source_type=culture_collection_page; discovery_mode=existing_record_reference; accessed_on=2026-10-10; locator=#recipe, composition table and Directions; authors, publication year and DOI not established."
+          },
+          "counter": "bibliographic_entries_enriched"
+        }
+      ],
+      "counts": {
+        "ingredient_context_notes_corrected": 1,
+        "new_evidence": 3,
+        "unsupported_quantity_slots_removed": 1,
+        "stock_context_notes_corrected": 1,
+        "parent_context_notes_corrected": 1,
+        "variant_descriptions_corrected": 1,
+        "source_conflict_notes_added": 1,
+        "optional_variants_added": 1,
+        "bibliographic_entries_enriched": 1,
+        "new_curation_history": 1
+      },
+      "claims": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "0.062",
+            "unit": "MOLAR"
+          },
+          "new": {
+            "value": "0.062",
+            "unit": "MOLAR"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+          "snippet": "0.062 M",
+          "locator": "#recipe: component table and Directions",
+          "calculation": "Retain the printed molarity; source separately states 3.6 g/L. No exact equivalence calculated.",
+          "action_taken": "Proposed; not yet applied."
+        },
+        {
+          "field": "solutions[0].concentration",
+          "ingredient": "BG-11 recipe base",
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "status": "correct",
+          "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+          "snippet": "through step one.",
+          "locator": "#recipe: component table and Directions",
+          "calculation": "Remove an unsupported carrier dose; preserve the base link and table/procedure distinction without inventing a replacement.",
+          "action_taken": "Proposed; not yet applied."
+        },
+        {
+          "field": "variant_modifications[0]; parent_media.notes",
+          "ingredient": "NaCl supplement",
+          "old": "Adds 3.6 g/L NaCl to prepared BG-11 Medium.",
+          "new": "Adds 3.6 g/L NaCl after BG-11 preparation step one, before making the liquid medium up to a final 1 L.",
+          "status": "correct",
+          "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+          "snippet": "3.6 g/L",
+          "locator": "#recipe: component table and Directions",
+          "calculation": "Source-stated mass per liter of liquid medium; no inherited stock-dose expansion.",
+          "action_taken": "Proposed; not yet applied."
+        },
+        {
+          "field": "variants[0].modifications[0:2]",
+          "ingredient": "optional agar and two portions",
+          "old": null,
+          "new": [
+            "For the agar alternative, perform BG-11 preparation step one, add the formulation-specific NaCl, and make this portion up to 500 mL with dH2O.",
+            "In another container, add 15 g agar to 500 mL dH2O. Autoclave both preparations separately, then cool them to 45-50 degrees C in a water bath."
+          ],
+          "status": "add",
+          "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+          "snippet": "15 g",
+          "locator": "#recipe: component table and Directions",
+          "calculation": "Keep literal batch quantities and procedure; do not calculate a final-volume agar concentration.",
+          "action_taken": "Proposed; not yet applied."
+        },
+        {
+          "field": "variants[0].modifications[2]",
+          "ingredient": "sterile sodium thiosulfate",
+          "old": null,
+          "new": "Mix sterile sodium thiosulfate into the agar preparation before combining both portions. The salt-variant page does not specify a thiosulfate dose; no amount is inferred from the linked base recipe. Mix promptly, allow to cool and refrigerate.",
+          "status": "unsupported",
+          "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+          "snippet": "Sodium Thiosulfate",
+          "locator": "#recipe: component table and Directions",
+          "calculation": "Document required addition and missing local dose. No numeric concentration added; linked-base dose not imported.",
+          "action_taken": "Proposed; not yet applied."
+        }
+      ],
+      "unresolved": [
+        "The salt-variant page gives no local sodium-thiosulfate dose; formulation-specific inheritance from the linked BG-11 recipe remains unresolved.",
+        "Existing chemical/supplier mappings, salinity, roles and growth/culture-condition claims were not independently certified.",
+        "BG-11-1 in the source title differs from BG-11 in the linked base/table; no rename, nitrogen omission or merge is inferred."
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/bg_11_1_nacl_medium.yaml",
+      "id": "CultureMech:000027",
+      "action": "CURATED_UTEX_VOLVOCACEAN_BG11_CONCENTRATION_EVIDENCE",
+      "before_text": "id: CultureMech:000027\nname: bg_11_1_nacl_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: BG-11 + 1% NaCl Medium\n  term:\n    id: UTEX:bg-11-plus-1-percent-nacl-medium\n    label: BG-11 + 1% NaCl Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for saltwater\n  algae cultivation.\ningredients:\n- preferred_term: NaCl\n  concentration:\n    value: '0.17'\n    unit: MOLAR\n  term:\n    id: CHEBI:26710\n    label: sodium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n  supplier_catalog:\n    supplier_name: Fisher\n    catalog_number: S271-500\n  notes: UTEX lists 10 g/L NaCl, equivalent to 0.17 M.\n  physicochemical_roles:\n  - OSMOTIC_AGENT\nsolutions:\n- preferred_term: BG-11 Medium\n  concentration:\n    value: '1000'\n    unit: ML_PER_L\n  culturemech_term:\n    id: CultureMech:000029\n    label: BG-11 Medium\n  notes: UTEX lists 1 L prepared BG-11 Medium per 1 L final medium.\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Prepare BG-11 Medium through its first mixing step.\n- step_number: 2\n  action: DISSOLVE\n  description: Add 10 g/L NaCl and bring the total volume to 1 L with dH2O.\n- step_number: 3\n  action: AUTOCLAVE\n  description: Cover and autoclave the medium.\n- step_number: 4\n  action: STORE\n  description: Store at refrigerator temperature.\nnotes: UTEX prepares this BG-11 variant by supplementing the base with 10 g/L NaCl.\nsalinity: saltwater\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: bg-11-plus-1-percent-nacl-medium, URL: https://utex.org/products/bg-11-plus-1-percent-nacl-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:52.930808Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000027'\n- timestamp: '2026-03-17T19:45:03.897099+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"BG-11 + 1% NaCl Medium\" to \"bg_11_1_nacl_medium\" for\n    consistent matching\n- timestamp: '2026-05-16T09:02:56.370827+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.533420+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:31.292090+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 2 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-05T00:00:00-07:00'\n  curator: repair_utex_bg11_spirulina.py\n  action: RESOLVED_UTEX_BG11_SPIRULINA_GRAPH\n  changes: Grounded UTEX Spirulina/BG-11 stock and parent-medium components\n  source: https://utex.org/products/bg-11-plus-1-percent-nacl-medium\n  notes: UTEX prepares this BG-11 variant by supplementing the base with 10 g/L NaCl.\nreferences:\n- reference: UTEX:bg-11-plus-1-percent-nacl-medium\n- reference: https://utex.org/products/bg-11-plus-1-percent-nacl-medium\noriginal_name: BG-11 + 1% NaCl Medium\nparent_media:\n  path: data/normalized_yaml/algae/bg_11_medium.yaml\n  relationship: SUPPLEMENTED_VARIANT\n  id: CultureMech:000029\n  name: bg_11_medium\n  notes: Adds 10 g/L NaCl to prepared BG-11 Medium.\nvariant_relationship: SUPPLEMENTED_VARIANT\nvariant_modifications:\n- Adds 10 g/L NaCl to prepared BG-11 Medium.\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\n",
+      "after_text": "id: CultureMech:000027\nname: bg_11_1_nacl_medium\ncategory: algae\nmedium_type: COMPLEX\ncomposition_type: UNDEFINED\nphysical_state: LIQUID\nmedia_term:\n  preferred_term: BG-11 + 1% NaCl Medium\n  term:\n    id: UTEX:bg-11-plus-1-percent-nacl-medium\n    label: BG-11 + 1% NaCl Medium\ndescription: Algae culture medium from UTEX Culture Collection. Suitable for saltwater\n  algae cultivation.\ningredients:\n- preferred_term: NaCl\n  concentration:\n    value: '0.17'\n    unit: MOLAR\n  term:\n    id: CHEBI:26710\n    label: sodium chloride\n  mediaingredientmech_chebi_term:\n    id: CHEBI:26710\n    label: sodium chloride\n  supplier_catalog:\n    supplier_name: Fisher\n    catalog_number: S271-500\n  notes: UTEX separately prints 10 g/L and 0.17 M NaCl. Molarity is retained as a\n    source assertion, not an exact calculated equivalence.\n  physicochemical_roles:\n  - OSMOTIC_AGENT\n  evidence:\n  - reference: https://utex.org/products/bg-11-plus-1-percent-nacl-medium\n    supports: SUPPORT\n    snippet: 0.17 M\n    explanation: 'ingredients[0].concentration: component 2, Final Concentration column\n      reports \"0.17 M\". Its Amount column separately reports \"10 g/L\"; the liquid\n      procedure makes up to a final 1 L. No new mass-to-molar conversion is asserted.'\nsolutions:\n- preferred_term: BG-11 Medium\n  culturemech_term:\n    id: CultureMech:000029\n    label: BG-11 Medium\n  notes: Recipe base, not a measured 1000 mL/L prepared-medium input. UTEX labels\n    BG-11 as 1 L in the table but stops its preparation after step one; NaCl is added\n    before liquid-medium makeup to a final 1 L. No fixed prepared-base dose is established.\npreparation_steps:\n- step_number: 1\n  action: MIX\n  description: Prepare BG-11 Medium through its first mixing step.\n- step_number: 2\n  action: DISSOLVE\n  description: Add 10 g/L NaCl and bring the total volume to 1 L with dH2O.\n- step_number: 3\n  action: AUTOCLAVE\n  description: Cover and autoclave the medium.\n- step_number: 4\n  action: STORE\n  description: Store at refrigerator temperature.\nnotes: UTEX prepares this BG-11 variant by supplementing the base with 10 g/L NaCl.\nsalinity: saltwater\nlight_intensity: Varies by species; typically 50-100 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\nlight_cycle: Varies by species; commonly 12:12 or 16:8 light:dark\ntemperature_range: 15-30\u00b0C depending on species\napplications:\n- Algae cultivation\n- Phytoplankton culture\n- Microalgae research\ncuration_history:\n- curator: utex-import\n  action: Imported from UTEX Culture Collection\n  notes: 'Source ID: bg-11-plus-1-percent-nacl-medium, URL: https://utex.org/products/bg-11-plus-1-percent-nacl-medium'\n  timestamp: '2026-01-28T00:00:00+00:00'\n- timestamp: '2026-03-13T06:18:52.930808Z'\n  curator: culturemech-id-assigner-v1.0\n  action: Assigned CultureMech ID\n  notes: 'Assigned stable identifier: CultureMech:000027'\n- timestamp: '2026-03-17T19:45:03.897099+00:00'\n  curator: normalize_media_names_to_snake_case.py\n  action: NAME_NORMALIZED\n  notes: Normalized name from \"BG-11 + 1% NaCl Medium\" to \"bg_11_1_nacl_medium\" for\n    consistent matching\n- timestamp: '2026-05-16T09:02:56.370827+00:00'\n  curator: migrate_legacy_fields.py\n  action: MIGRATED_LEGACY_FIELDS\n  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;\n    category->lowercase=1\n- timestamp: '2026-05-16T09:11:01.533420+00:00'\n  curator: migrate_preparation_steps.py\n  action: MIGRATED_PREPARATION_STEPS\n  notes: instruction->action+description for 9 step(s)\n- timestamp: '2026-08-30T00:58:31.292090+00:00'\n  curator: repair_utex_ingredients.py\n  action: REPAIRED_UTEX_COMPOSITION\n  notes: 'Restored 2 ingredient name(s) and amount(s) from a re-fetched UTEX capture.\n    The original fetcher read fixed column positions, so the row ordinal was stored\n    as the ingredient name, the component name as the amount, and the Amount column\n    was never read; concentration was then filled in as G_PER_L regardless. Source:\n    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'\n- timestamp: '2026-09-05T00:00:00-07:00'\n  curator: repair_utex_bg11_spirulina.py\n  action: RESOLVED_UTEX_BG11_SPIRULINA_GRAPH\n  changes: Grounded UTEX Spirulina/BG-11 stock and parent-medium components\n  source: https://utex.org/products/bg-11-plus-1-percent-nacl-medium\n  notes: UTEX prepares this BG-11 variant by supplementing the base with 10 g/L NaCl.\n- timestamp: '2026-10-11T02:43:27.765962+00:00'\n  curator: codex\n  action: CURATED_UTEX_VOLVOCACEAN_BG11_CONCENTRATION_EVIDENCE\n  notes: Retained source-printed NaCl molarity with evidence; removed the unsupported\n    prepared-BG-11 dose, clarified salt addition before volume makeup, and recorded\n    the optional agar procedure separately. The thiosulfate dose remains unresolved.\n    No taxa-media associations added.\n  source: https://utex.org/products/bg-11-plus-1-percent-nacl-medium\n  changes: '{\"counts\": {\"bibliographic_entries_enriched\": 1, \"ingredient_context_notes_corrected\":\n    1, \"new_curation_history\": 1, \"new_evidence\": 3, \"optional_variants_added\": 1,\n    \"parent_context_notes_corrected\": 1, \"stock_context_notes_corrected\": 1, \"unsupported_quantity_slots_removed\":\n    1, \"variant_descriptions_corrected\": 1}, \"fields\": [{\"after_present\": true, \"before_present\":\n    true, \"counter\": \"ingredient_context_notes_corrected\", \"new\": \"UTEX separately\n    prints 10 g/L and 0.17 M NaCl. Molarity is retained as a source assertion, not\n    an exact calculated equivalence.\", \"old\": \"UTEX lists 10 g/L NaCl, equivalent\n    to 0.17 M.\", \"pointer\": [\"ingredients\", 0, \"notes\"]}, {\"after_present\": true,\n    \"before_present\": false, \"counter\": \"new_evidence\", \"new\": [{\"explanation\": \"ingredients[0].concentration:\n    component 2, Final Concentration column reports \\\"0.17 M\\\". Its Amount column\n    separately reports \\\"10 g/L\\\"; the liquid procedure makes up to a final 1 L. No\n    new mass-to-molar conversion is asserted.\", \"reference\": \"https://utex.org/products/bg-11-plus-1-percent-nacl-medium\",\n    \"snippet\": \"0.17 M\", \"supports\": \"SUPPORT\"}], \"old\": null, \"pointer\": [\"ingredients\",\n    0, \"evidence\"]}, {\"after_present\": false, \"before_present\": true, \"counter\": \"unsupported_quantity_slots_removed\",\n    \"new\": null, \"old\": {\"unit\": \"ML_PER_L\", \"value\": \"1000\"}, \"pointer\": [\"solutions\",\n    0, \"concentration\"]}, {\"after_present\": true, \"before_present\": true, \"counter\":\n    \"stock_context_notes_corrected\", \"new\": \"Recipe base, not a measured 1000 mL/L\n    prepared-medium input. UTEX labels BG-11 as 1 L in the table but stops its preparation\n    after step one; NaCl is added before liquid-medium makeup to a final 1 L. No fixed\n    prepared-base dose is established.\", \"old\": \"UTEX lists 1 L prepared BG-11 Medium\n    per 1 L final medium.\", \"pointer\": [\"solutions\", 0, \"notes\"]}, {\"after_present\":\n    true, \"before_present\": true, \"counter\": \"parent_context_notes_corrected\", \"new\":\n    \"Adds 10 g/L NaCl after BG-11 preparation step one, before making the liquid medium\n    up to a final 1 L.\", \"old\": \"Adds 10 g/L NaCl to prepared BG-11 Medium.\", \"pointer\":\n    [\"parent_media\", \"notes\"]}, {\"after_present\": true, \"before_present\": true, \"counter\":\n    \"variant_descriptions_corrected\", \"new\": [\"Adds 10 g/L NaCl after BG-11 preparation\n    step one, before making the liquid medium up to a final 1 L.\"], \"old\": [\"Adds\n    10 g/L NaCl to prepared BG-11 Medium.\"], \"pointer\": [\"variant_modifications\"]},\n    {\"after_present\": true, \"before_present\": false, \"counter\": \"new_evidence\", \"new\":\n    [{\"explanation\": \"solutions[0] is a recipe-base reference, not a measured prepared-medium\n    fraction. Liquid Directions 1 says \\\"through step one.\\\"; Directions 2 adds NaCl\n    before making up to 1 L. The table labels BG-11 as 1 L but does not establish\n    a separate 1000 mL/L input. variant_modifications[0] and parent_media.notes retain\n    the component-2 amount \\\"10 g/L\\\" with the preparation boundary. No replacement\n    dose or stock composition is inferred.\", \"reference\": \"https://utex.org/products/bg-11-plus-1-percent-nacl-medium\",\n    \"snippet\": \"through step one.\", \"supports\": \"SUPPORT\"}], \"old\": null, \"pointer\":\n    [\"evidence\"]}, {\"after_present\": true, \"before_present\": false, \"counter\": \"optional_variants_added\",\n    \"new\": [{\"description\": \"Source-described two-portion preparation; sodium-thiosulfate\n    dose remains unresolved.\", \"evidence\": [{\"explanation\": \"variants[0].modifications:\n    Agar Directions 2-3 specify two portions involving \\\"500 mL\\\"; the separate agar\n    amount is \\\"15 g\\\". Directions 4-8 describe separate autoclaving, cooling to \\\"45-50\\\"\n    degrees C, addition of sterile \\\"Sodium Thiosulfate\\\", combination, cooling and\n    refrigeration. The whole agar subsection was inspected and contains no local thiosulfate\n    amount. The 15 g is a batch addition; final volume after sterile supplement is\n    not measured here.\", \"reference\": \"https://utex.org/products/bg-11-plus-1-percent-nacl-medium\",\n    \"snippet\": \"15 g\", \"supports\": \"SUPPORT\"}], \"modifications\": [\"For the agar alternative,\n    perform BG-11 preparation step one, add the formulation-specific NaCl, and make\n    this portion up to 500 mL with dH2O.\", \"In another container, add 15 g agar to\n    500 mL dH2O. Autoclave both preparations separately, then cool them to 45-50 degrees\n    C in a water bath.\", \"Mix sterile sodium thiosulfate into the agar preparation\n    before combining both portions. The salt-variant page does not specify a thiosulfate\n    dose; no amount is inferred from the linked base recipe. Mix promptly, allow to\n    cool and refrigerate.\"], \"name\": \"Optional agar formulation\", \"relationship\":\n    \"PHYSICAL_STATE_VARIANT\"}], \"old\": null, \"pointer\": [\"variants\"]}, {\"after_present\":\n    true, \"before_present\": true, \"counter\": \"bibliographic_entries_enriched\", \"new\":\n    {\"notes\": \"source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-10; locator=#recipe, composition table and Directions; authors,\n    publication year and DOI not established.\", \"reference\": \"https://utex.org/products/bg-11-plus-1-percent-nacl-medium\",\n    \"title\": \"BG-11 + 1% NaCl Medium | UTEX Culture Collection of Algae\"}, \"old\":\n    {\"reference\": \"https://utex.org/products/bg-11-plus-1-percent-nacl-medium\"}, \"pointer\":\n    [\"references\", 1]}]}'\nreferences:\n- reference: UTEX:bg-11-plus-1-percent-nacl-medium\n- reference: https://utex.org/products/bg-11-plus-1-percent-nacl-medium\n  title: BG-11 + 1% NaCl Medium | UTEX Culture Collection of Algae\n  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;\n    accessed_on=2026-10-10; locator=#recipe, composition table and Directions; authors,\n    publication year and DOI not established.\noriginal_name: BG-11 + 1% NaCl Medium\nparent_media:\n  path: data/normalized_yaml/algae/bg_11_medium.yaml\n  relationship: SUPPLEMENTED_VARIANT\n  id: CultureMech:000029\n  name: bg_11_medium\n  notes: Adds 10 g/L NaCl after BG-11 preparation step one, before making the liquid\n    medium up to a final 1 L.\nvariant_relationship: SUPPLEMENTED_VARIANT\nvariant_modifications:\n- Adds 10 g/L NaCl after BG-11 preparation step one, before making the liquid medium\n  up to a final 1 L.\ndata_quality_flags:\n- has_ontology_mappings\n- ingredients_curated\nevidence:\n- reference: https://utex.org/products/bg-11-plus-1-percent-nacl-medium\n  supports: SUPPORT\n  snippet: through step one.\n  explanation: solutions[0] is a recipe-base reference, not a measured prepared-medium\n    fraction. Liquid Directions 1 says \"through step one.\"; Directions 2 adds NaCl\n    before making up to 1 L. The table labels BG-11 as 1 L but does not establish\n    a separate 1000 mL/L input. variant_modifications[0] and parent_media.notes retain\n    the component-2 amount \"10 g/L\" with the preparation boundary. No replacement\n    dose or stock composition is inferred.\nvariants:\n- name: Optional agar formulation\n  relationship: PHYSICAL_STATE_VARIANT\n  description: Source-described two-portion preparation; sodium-thiosulfate dose remains\n    unresolved.\n  modifications:\n  - For the agar alternative, perform BG-11 preparation step one, add the formulation-specific\n    NaCl, and make this portion up to 500 mL with dH2O.\n  - In another container, add 15 g agar to 500 mL dH2O. Autoclave both preparations\n    separately, then cool them to 45-50 degrees C in a water bath.\n  - Mix sterile sodium thiosulfate into the agar preparation before combining both\n    portions. The salt-variant page does not specify a thiosulfate dose; no amount\n    is inferred from the linked base recipe. Mix promptly, allow to cool and refrigerate.\n  evidence:\n  - reference: https://utex.org/products/bg-11-plus-1-percent-nacl-medium\n    supports: SUPPORT\n    snippet: 15 g\n    explanation: 'variants[0].modifications: Agar Directions 2-3 specify two portions\n      involving \"500 mL\"; the separate agar amount is \"15 g\". Directions 4-8 describe\n      separate autoclaving, cooling to \"45-50\" degrees C, addition of sterile \"Sodium\n      Thiosulfate\", combination, cooling and refrigeration. The whole agar subsection\n      was inspected and contains no local thiosulfate amount. The 15 g is a batch\n      addition; final volume after sterile supplement is not measured here.'\n",
+      "before_sha256": "0c82591e36d6236f05a94e7a723990f9974d46667e5dfe528bb5fa79518caeff",
+      "after_sha256": "1376c84c05ddf5b79822c8f7b073c7a168fad109d5b45c047c7f690a502955f8",
+      "changes": [
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "notes"
+          ],
+          "before_present": true,
+          "old": "UTEX lists 10 g/L NaCl, equivalent to 0.17 M.",
+          "after_present": true,
+          "new": "UTEX separately prints 10 g/L and 0.17 M NaCl. Molarity is retained as a source assertion, not an exact calculated equivalence.",
+          "counter": "ingredient_context_notes_corrected"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "evidence"
+          ],
+          "before_present": false,
+          "old": null,
+          "after_present": true,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bg-11-plus-1-percent-nacl-medium",
+              "supports": "SUPPORT",
+              "snippet": "0.17 M",
+              "explanation": "ingredients[0].concentration: component 2, Final Concentration column reports \"0.17 M\". Its Amount column separately reports \"10 g/L\"; the liquid procedure makes up to a final 1 L. No new mass-to-molar conversion is asserted."
+            }
+          ],
+          "counter": "new_evidence"
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "concentration"
+          ],
+          "before_present": true,
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "after_present": false,
+          "new": null,
+          "counter": "unsupported_quantity_slots_removed"
+        },
+        {
+          "pointer": [
+            "solutions",
+            0,
+            "notes"
+          ],
+          "before_present": true,
+          "old": "UTEX lists 1 L prepared BG-11 Medium per 1 L final medium.",
+          "after_present": true,
+          "new": "Recipe base, not a measured 1000 mL/L prepared-medium input. UTEX labels BG-11 as 1 L in the table but stops its preparation after step one; NaCl is added before liquid-medium makeup to a final 1 L. No fixed prepared-base dose is established.",
+          "counter": "stock_context_notes_corrected"
+        },
+        {
+          "pointer": [
+            "parent_media",
+            "notes"
+          ],
+          "before_present": true,
+          "old": "Adds 10 g/L NaCl to prepared BG-11 Medium.",
+          "after_present": true,
+          "new": "Adds 10 g/L NaCl after BG-11 preparation step one, before making the liquid medium up to a final 1 L.",
+          "counter": "parent_context_notes_corrected"
+        },
+        {
+          "pointer": [
+            "variant_modifications"
+          ],
+          "before_present": true,
+          "old": [
+            "Adds 10 g/L NaCl to prepared BG-11 Medium."
+          ],
+          "after_present": true,
+          "new": [
+            "Adds 10 g/L NaCl after BG-11 preparation step one, before making the liquid medium up to a final 1 L."
+          ],
+          "counter": "variant_descriptions_corrected"
+        },
+        {
+          "pointer": [
+            "evidence"
+          ],
+          "before_present": false,
+          "old": null,
+          "after_present": true,
+          "new": [
+            {
+              "reference": "https://utex.org/products/bg-11-plus-1-percent-nacl-medium",
+              "supports": "SUPPORT",
+              "snippet": "through step one.",
+              "explanation": "solutions[0] is a recipe-base reference, not a measured prepared-medium fraction. Liquid Directions 1 says \"through step one.\"; Directions 2 adds NaCl before making up to 1 L. The table labels BG-11 as 1 L but does not establish a separate 1000 mL/L input. variant_modifications[0] and parent_media.notes retain the component-2 amount \"10 g/L\" with the preparation boundary. No replacement dose or stock composition is inferred."
+            }
+          ],
+          "counter": "new_evidence"
+        },
+        {
+          "pointer": [
+            "variants"
+          ],
+          "before_present": false,
+          "old": null,
+          "after_present": true,
+          "new": [
+            {
+              "name": "Optional agar formulation",
+              "relationship": "PHYSICAL_STATE_VARIANT",
+              "description": "Source-described two-portion preparation; sodium-thiosulfate dose remains unresolved.",
+              "modifications": [
+                "For the agar alternative, perform BG-11 preparation step one, add the formulation-specific NaCl, and make this portion up to 500 mL with dH2O.",
+                "In another container, add 15 g agar to 500 mL dH2O. Autoclave both preparations separately, then cool them to 45-50 degrees C in a water bath.",
+                "Mix sterile sodium thiosulfate into the agar preparation before combining both portions. The salt-variant page does not specify a thiosulfate dose; no amount is inferred from the linked base recipe. Mix promptly, allow to cool and refrigerate."
+              ],
+              "evidence": [
+                {
+                  "reference": "https://utex.org/products/bg-11-plus-1-percent-nacl-medium",
+                  "supports": "SUPPORT",
+                  "snippet": "15 g",
+                  "explanation": "variants[0].modifications: Agar Directions 2-3 specify two portions involving \"500 mL\"; the separate agar amount is \"15 g\". Directions 4-8 describe separate autoclaving, cooling to \"45-50\" degrees C, addition of sterile \"Sodium Thiosulfate\", combination, cooling and refrigeration. The whole agar subsection was inspected and contains no local thiosulfate amount. The 15 g is a batch addition; final volume after sterile supplement is not measured here."
+                }
+              ]
+            }
+          ],
+          "counter": "optional_variants_added"
+        },
+        {
+          "pointer": [
+            "references",
+            1
+          ],
+          "before_present": true,
+          "old": {
+            "reference": "https://utex.org/products/bg-11-plus-1-percent-nacl-medium"
+          },
+          "after_present": true,
+          "new": {
+            "reference": "https://utex.org/products/bg-11-plus-1-percent-nacl-medium",
+            "title": "BG-11 + 1% NaCl Medium | UTEX Culture Collection of Algae",
+            "notes": "source_type=culture_collection_page; discovery_mode=existing_record_reference; accessed_on=2026-10-10; locator=#recipe, composition table and Directions; authors, publication year and DOI not established."
+          },
+          "counter": "bibliographic_entries_enriched"
+        }
+      ],
+      "counts": {
+        "ingredient_context_notes_corrected": 1,
+        "new_evidence": 3,
+        "unsupported_quantity_slots_removed": 1,
+        "stock_context_notes_corrected": 1,
+        "parent_context_notes_corrected": 1,
+        "variant_descriptions_corrected": 1,
+        "optional_variants_added": 1,
+        "bibliographic_entries_enriched": 1,
+        "new_curation_history": 1
+      },
+      "claims": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "0.17",
+            "unit": "MOLAR"
+          },
+          "new": {
+            "value": "0.17",
+            "unit": "MOLAR"
+          },
+          "status": "evidence_only",
+          "reference": "https://utex.org/products/bg-11-plus-1-percent-nacl-medium",
+          "snippet": "0.17 M",
+          "locator": "#recipe: component table and Directions",
+          "calculation": "Retain the printed molarity; source separately states 10 g/L. No exact equivalence calculated.",
+          "action_taken": "Proposed; not yet applied."
+        },
+        {
+          "field": "solutions[0].concentration",
+          "ingredient": "BG-11 recipe base",
+          "old": {
+            "value": "1000",
+            "unit": "ML_PER_L"
+          },
+          "new": null,
+          "status": "correct",
+          "reference": "https://utex.org/products/bg-11-plus-1-percent-nacl-medium",
+          "snippet": "through step one.",
+          "locator": "#recipe: component table and Directions",
+          "calculation": "Remove an unsupported carrier dose; preserve the base link and table/procedure distinction without inventing a replacement.",
+          "action_taken": "Proposed; not yet applied."
+        },
+        {
+          "field": "variant_modifications[0]; parent_media.notes",
+          "ingredient": "NaCl supplement",
+          "old": "Adds 10 g/L NaCl to prepared BG-11 Medium.",
+          "new": "Adds 10 g/L NaCl after BG-11 preparation step one, before making the liquid medium up to a final 1 L.",
+          "status": "correct",
+          "reference": "https://utex.org/products/bg-11-plus-1-percent-nacl-medium",
+          "snippet": "10 g/L",
+          "locator": "#recipe: component table and Directions",
+          "calculation": "Source-stated mass per liter of liquid medium; no inherited stock-dose expansion.",
+          "action_taken": "Proposed; not yet applied."
+        },
+        {
+          "field": "variants[0].modifications[0:2]",
+          "ingredient": "optional agar and two portions",
+          "old": null,
+          "new": [
+            "For the agar alternative, perform BG-11 preparation step one, add the formulation-specific NaCl, and make this portion up to 500 mL with dH2O.",
+            "In another container, add 15 g agar to 500 mL dH2O. Autoclave both preparations separately, then cool them to 45-50 degrees C in a water bath."
+          ],
+          "status": "add",
+          "reference": "https://utex.org/products/bg-11-plus-1-percent-nacl-medium",
+          "snippet": "15 g",
+          "locator": "#recipe: component table and Directions",
+          "calculation": "Keep literal batch quantities and procedure; do not calculate a final-volume agar concentration.",
+          "action_taken": "Proposed; not yet applied."
+        },
+        {
+          "field": "variants[0].modifications[2]",
+          "ingredient": "sterile sodium thiosulfate",
+          "old": null,
+          "new": "Mix sterile sodium thiosulfate into the agar preparation before combining both portions. The salt-variant page does not specify a thiosulfate dose; no amount is inferred from the linked base recipe. Mix promptly, allow to cool and refrigerate.",
+          "status": "unsupported",
+          "reference": "https://utex.org/products/bg-11-plus-1-percent-nacl-medium",
+          "snippet": "Sodium Thiosulfate",
+          "locator": "#recipe: component table and Directions",
+          "calculation": "Document required addition and missing local dose. No numeric concentration added; linked-base dose not imported.",
+          "action_taken": "Proposed; not yet applied."
+        }
+      ],
+      "unresolved": [
+        "The salt-variant page gives no local sodium-thiosulfate dose; formulation-specific inheritance from the linked BG-11 recipe remains unresolved.",
+        "Existing chemical/supplier mappings, salinity, roles and growth/culture-condition claims were not independently certified."
+      ]
+    }
+  ],
+  "baseline_checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/Volvocacean_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-volvocacean-bg11/baseline-v2-00.log",
+      "sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/Volvocacean_Medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-volvocacean-bg11/baseline-v2-01.log",
+      "sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/bg_11_0_36_nacl_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-volvocacean-bg11/baseline-v2-02.log",
+      "sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/bg_11_0_36_nacl_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-volvocacean-bg11/baseline-v2-03.log",
+      "sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/bg_11_1_nacl_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-volvocacean-bg11/baseline-v2-04.log",
+      "sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/bg_11_1_nacl_medium.yaml"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-volvocacean-bg11/baseline-v2-05.log",
+      "sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    }
+  ]
+}

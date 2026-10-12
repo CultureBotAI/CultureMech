@@ -1,0 +1,42 @@
+{
+  "terminal": true,
+  "source_sha256": "0e1b0d61826c6c729ca46bd7adb32945695a509d8578fe651f380b9eef3778c7",
+  "input_records": 15910,
+  "output_groups": 10777,
+  "targets": [
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M244_Sulfophobococcus_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/TOGO_M244_Sulfophobococcus_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/archaea/sulfophobococcus_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/archaea/sulfophobococcus_medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M194_BSK_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M194_BSK_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M213_SC_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/TOGO_M213_SC_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    }
+  ],
+  "derived_yaml_written": false,
+  "scope": "Full corpus routing; only the four repaired outputs recertified."
+}

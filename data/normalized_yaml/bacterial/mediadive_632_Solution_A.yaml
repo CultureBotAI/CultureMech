@@ -11,6 +11,33 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/632
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Yeast extract",
+                      "compound_id": 16,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2.24215,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Yeast extract)
+      in MediaDive solution 632; locator=$.data.recipe[2] (compound_id=16). Provider
+      explicitly reports g_l=2.24215. Arithmetic check: 2 g * 1 g/g / (892 ml / 1000
+      ml per L) = 2.242152466367713004484304933 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 892. Retrieved 2026-10-07T08:25:25.140400+00:00;
+      response SHA256=23438f024e55a1a7df74f73f8bccadf7a1665bd4b66a8422e63ba2cafc94471a.'
 - preferred_term: Crotonic acid
   concentration:
     value: '5.60538'
@@ -23,6 +50,33 @@ composition:
     label: crotonic acid
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/632
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "Crotonic acid",
+                      "compound_id": 255,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "g",
+                      "g_l": 5.60538,
+                      "mmol_l": 65.1107,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Crotonic
+      acid) in MediaDive solution 632; locator=$.data.recipe[3] (compound_id=255).
+      Provider explicitly reports g_l=5.60538. Arithmetic check: 5 g * 1 g/g / (892
+      ml / 1000 ml per L) = 5.605381165919282511210762332 g/L, consistent with the
+      reported value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 892. Retrieved 2026-10-07T08:25:25.140400+00:00;
+      response SHA256=23438f024e55a1a7df74f73f8bccadf7a1665bd4b66a8422e63ba2cafc94471a.'
 - preferred_term: Resazurin
   concentration:
     value: '0.00112108'
@@ -35,6 +89,33 @@ composition:
     label: Resazurin
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/632
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Resazurin",
+                      "compound_id": 25,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "mg",
+                      "g_l": 0.00112108,
+                      "mmol_l": 0.00489147,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Resazurin)
+      in MediaDive solution 632; locator=$.data.recipe[5] (compound_id=25). Provider
+      explicitly reports g_l=0.00112108. Arithmetic check: 1 mg * 0.001 g/mg / (892
+      ml / 1000 ml per L) = 0.001121076233183856502242152466 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      892. Retrieved 2026-10-07T08:25:25.140400+00:00; response SHA256=23438f024e55a1a7df74f73f8bccadf7a1665bd4b66a8422e63ba2cafc94471a.'
 - preferred_term: Distilled water
   concentration:
     value: '941.7040358744393'
@@ -84,6 +165,18 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T08:27:51.574555+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/632
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "2.24215"}
+    -> {"unit": "G_PER_L", "value": "2.24215"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "5.60538"} -> {"unit": "G_PER_L", "value": "5.60538"}
+    (evidence_only); composition[2].concentration: {"unit": "G_PER_L", "value": "0.00112108"}
+    -> {"unit": "G_PER_L", "value": "0.00112108"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -92,3 +185,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/632
+  title: 'MediaDive solution 632: Solution A'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=23438f024e55a1a7df74f73f8bccadf7a1665bd4b66a8422e63ba2cafc94471a;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

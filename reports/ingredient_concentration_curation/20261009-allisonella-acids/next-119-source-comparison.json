@@ -1,0 +1,622 @@
+{
+  "terminal": true,
+  "state": "Exact source-table comparison, not proof of an exact medium duplicate or source-version equivalence.",
+  "baseline_source": "K119",
+  "context_sha256": "db28859fc6fde46c49576874f3697f1fe44dec82751da923d2aef04f84cd4573",
+  "sources": {
+    "K119": {
+      "row_count": 32,
+      "unchanged_rows": 32,
+      "added_rows": [],
+      "removed_rows": [],
+      "changed_rows": [],
+      "source_metadata_text": "Medium: METHANOBACTERIUM medium\nID: 119\nName: METHANOBACTERIUM medium\nPH Info: 7.5, NaOH\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=119"
+    },
+    "K119.1": {
+      "row_count": 43,
+      "unchanged_rows": 13,
+      "added_rows": [
+        [
+          "D-Ca-pantothenate",
+          "D-Ca-pantothenate",
+          "SEED-cpd00063#cpd00644##",
+          "4.90E-5",
+          "1.90E-7"
+        ],
+        [
+          "Lipoic acid",
+          "Lipoic acid",
+          "SEED-cpd00541###",
+          "4.90E-5",
+          "2.39E-7"
+        ],
+        [
+          "Nicotinic acid",
+          "Niacin",
+          "SEED-cpd00218###",
+          "4.90E-5",
+          "4.01E-7"
+        ],
+        [
+          "Riboflavin",
+          "Riboflavin",
+          "SEED-cpd00220###",
+          "4.90E-5",
+          "1.30E-7"
+        ],
+        [
+          "Vitamin B12",
+          "Coenzyme B12",
+          "SEED-cpd00166###",
+          "9.79E-7",
+          "6.20E-10"
+        ],
+        [
+          "Folic acid",
+          "Folic acid",
+          "SEED-cpd00393###",
+          "1.96E-5",
+          "4.46E-8"
+        ],
+        [
+          "Thiamine-HCl x 2 H2O",
+          "Thiamine-HCl",
+          "SEED-cpd00099#cpd00305##",
+          "4.90E-5",
+          "1.46E-7"
+        ],
+        [
+          "Pyridoxine HCl",
+          "Pyridoxine HCl",
+          "SEED-cpd00099#cpd00263##",
+          "9.79E-5",
+          "4.80E-7"
+        ],
+        [
+          "p-Aminobenzoic acid",
+          "p Aminobenzoic acid (PABA)",
+          "SEED-cpd00443###",
+          "4.90E-5",
+          "3.60E-7"
+        ],
+        [
+          "rumen fluid",
+          "Rumen fluid",
+          "rich-rumen#",
+          "48.97",
+          "0.05"
+        ],
+        [
+          "Biotin",
+          "Biotin",
+          "SEED-cpd00104###",
+          "1.96E-5",
+          "8.06E-8"
+        ],
+        [
+          "Trypticase Peptone",
+          "trypticase peptone",
+          "rich-peptone#",
+          "1.96",
+          "null"
+        ]
+      ],
+      "removed_rows": [
+        [
+          "sludge from an anaerobic digester",
+          "Sludge fluid",
+          "rich-rumen#",
+          "49.46",
+          "0.05"
+        ]
+      ],
+      "changed_rows": [
+        {
+          "base": [
+            "NaHCO3",
+            "sodium bicarbonate",
+            "SEED-cpd00242#cpd00971#cpd09249#",
+            "3.96",
+            "0.05"
+          ],
+          "variant": [
+            "NaHCO3",
+            "sodium bicarbonate",
+            "SEED-cpd00242#cpd00971#cpd09249#",
+            "3.92",
+            "0.05"
+          ]
+        },
+        {
+          "base": [
+            "CoCl2 x 6 H2O",
+            "CoCl2",
+            "SEED-cpd00099#cpd00149##",
+            "1.87E-4",
+            "7.88E-7"
+          ],
+          "variant": [
+            "CoCl2 x 6 H2O",
+            "CoCl2",
+            "SEED-cpd00099#cpd00149##",
+            "1.86E-4",
+            "7.80E-7"
+          ]
+        },
+        {
+          "base": [
+            "CuCl2 x 2 H2O",
+            "CuCl2",
+            "SEED-cpd00058#cpd00099##",
+            "1.97E-6",
+            "1.17E-8"
+          ],
+          "variant": [
+            "CuCl2 x 2 H2O",
+            "CuCl2",
+            "SEED-cpd00058#cpd00099##",
+            "1.95E-6",
+            "1.15E-8"
+          ]
+        },
+        {
+          "base": [
+            "FeCl2 x 4 H2O",
+            "Iron chloride",
+            "SEED-cpd00099#cpd10516##",
+            "1.48E-3",
+            "7.45E-6"
+          ],
+          "variant": [
+            "FeCl2 x 4 H2O",
+            "Iron chloride",
+            "SEED-cpd00099#cpd10516##",
+            "1.47E-3",
+            "7.38E-6"
+          ]
+        },
+        {
+          "base": [
+            "MgSO4 x 7 H2O",
+            "Magnesium sulfate",
+            "SEED-cpd00048#cpd00254##",
+            "0.40",
+            "0.00"
+          ],
+          "variant": [
+            "MgSO4 x 7 H2O",
+            "Magnesium sulfate",
+            "SEED-cpd00048#cpd00254##",
+            "0.39",
+            "0.00"
+          ]
+        },
+        {
+          "base": [
+            "HCl",
+            "HCl",
+            "SEED-cpd00099###",
+            "6.65E-4",
+            "1.90E-5"
+          ],
+          "variant": [
+            "HCl",
+            "HCl",
+            "SEED-cpd00099###",
+            "6.58E-4",
+            "1.88E-5"
+          ]
+        },
+        {
+          "base": [
+            "ZnCl2",
+            "ZnCl2",
+            "SEED-cpd00034#cpd00099##",
+            "6.91E-5",
+            "5.12E-7"
+          ],
+          "variant": [
+            "ZnCl2",
+            "ZnCl2",
+            "SEED-cpd00034#cpd00099##",
+            "6.84E-5",
+            "5.07E-7"
+          ]
+        },
+        {
+          "base": [
+            "MnCl2 x 4 H2O",
+            "MnCl2",
+            "SEED-cpd00030#cpd00099##",
+            "9.87E-5",
+            "4.99E-7"
+          ],
+          "variant": [
+            "MnCl2 x 4 H2O",
+            "MnCl2",
+            "SEED-cpd00030#cpd00099##",
+            "9.77E-5",
+            "4.94E-7"
+          ]
+        },
+        {
+          "base": [
+            "Yeast extract",
+            "Yeast extract",
+            "rich-peptone#",
+            "1.19",
+            "null"
+          ],
+          "variant": [
+            "Yeast extract",
+            "Yeast extract",
+            "rich-peptone#",
+            "0.98",
+            "null"
+          ]
+        },
+        {
+          "base": [
+            "Na2MoO4 x 2 H2O",
+            "Na2MoO4",
+            "SEED-cpd00971#cpd11145##",
+            "3.55E-5",
+            "1.47E-7"
+          ],
+          "variant": [
+            "Na2MoO4 x 2 H2O",
+            "Na2MoO4",
+            "SEED-cpd00971#cpd11145##",
+            "3.52E-5",
+            "1.45E-7"
+          ]
+        },
+        {
+          "base": [
+            "Na-formate",
+            "Na-formate",
+            "SEED-cpd00047#cpd00971##",
+            "1.98",
+            "0.03"
+          ],
+          "variant": [
+            "Na-formate",
+            "Na-formate",
+            "SEED-cpd00047#cpd00971##",
+            "1.96",
+            "0.03"
+          ]
+        },
+        {
+          "base": [
+            "Resazurin",
+            "Resazurin",
+            "SEED-cpd08053###",
+            "9.89E-4",
+            "4.32E-6"
+          ],
+          "variant": [
+            "Resazurin",
+            "Resazurin",
+            "SEED-cpd08053###",
+            "9.79E-4",
+            "4.28E-6"
+          ]
+        },
+        {
+          "base": [
+            "FeSO4 x 7 H2O",
+            "Iron sulfate",
+            "SEED-cpd00048#cpd10515##",
+            "1.98E-3",
+            "7.09E-6"
+          ],
+          "variant": [
+            "FeSO4 x 7 H2O",
+            "Iron sulfate",
+            "SEED-cpd00048#cpd10515##",
+            "1.96E-3",
+            "7.02E-6"
+          ]
+        },
+        {
+          "base": [
+            "NH4Cl",
+            "Ammonium chloride",
+            "SEED-cpd00013#cpd00099##",
+            "0.40",
+            "0.01"
+          ],
+          "variant": [
+            "NH4Cl",
+            "Ammonium chloride",
+            "SEED-cpd00013#cpd00099##",
+            "0.39",
+            "0.01"
+          ]
+        },
+        {
+          "base": [
+            "Na-acetate",
+            "Na-acetate",
+            "SEED-cpd00029#cpd00971##",
+            "0.99",
+            "0.01"
+          ],
+          "variant": [
+            "Na-acetate",
+            "Na-acetate",
+            "SEED-cpd00029#cpd00971##",
+            "0.98",
+            "0.01"
+          ]
+        },
+        {
+          "base": [
+            "NiCl2 x 6 H2O",
+            "NiCl2",
+            "SEED-cpd00099#cpd00244##",
+            "2.37E-5",
+            "9.95E-8"
+          ],
+          "variant": [
+            "NiCl2 x 6 H2O",
+            "NiCl2",
+            "SEED-cpd00099#cpd00244##",
+            "2.34E-5",
+            "9.86E-8"
+          ]
+        },
+        {
+          "base": [
+            "H3BO3",
+            "Boric acid",
+            "SEED-cpd09225###",
+            "5.92E-6",
+            "9.55E-8"
+          ],
+          "variant": [
+            "H3BO3",
+            "Boric acid",
+            "SEED-cpd09225###",
+            "5.86E-6",
+            "9.45E-8"
+          ]
+        },
+        {
+          "base": [
+            "NaCl",
+            "NaCl",
+            "SEED-cpd00099#cpd00971##",
+            "0.40",
+            "0.01"
+          ],
+          "variant": [
+            "NaCl",
+            "NaCl",
+            "SEED-cpd00099#cpd00971##",
+            "0.39",
+            "0.01"
+          ]
+        }
+      ],
+      "source_metadata_text": "Medium: For DSM 16632 and DSM 16643\nID: 119.1\nName: For DSM 16632 and DSM 16643\nPH Info: 7.5, NaOH\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=119.1"
+    },
+    "K119_11975": {
+      "row_count": 32,
+      "unchanged_rows": 31,
+      "added_rows": [],
+      "removed_rows": [],
+      "changed_rows": [
+        {
+          "base": [
+            "NH4Cl",
+            "Ammonium chloride",
+            "SEED-cpd00013#cpd00099##",
+            "0.40",
+            "0.01"
+          ],
+          "variant": [
+            "NH4Cl",
+            "Ammonium chloride",
+            "SEED-cpd00013#cpd00099##",
+            "10.40",
+            "0.20"
+          ]
+        }
+      ],
+      "source_metadata_text": "Medium: MEDIUM 119 MODIFIED FOR DSM 11975\nID: 119_11975\nName: MEDIUM 119 MODIFIED FOR DSM 11975\nPH Info: null\nIs Complex: true\nIs Aerobic: false\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=119_11975"
+    },
+    "K119_11977": {
+      "row_count": 32,
+      "unchanged_rows": 31,
+      "added_rows": [],
+      "removed_rows": [],
+      "changed_rows": [
+        {
+          "base": [
+            "NH4Cl",
+            "Ammonium chloride",
+            "SEED-cpd00013#cpd00099##",
+            "0.40",
+            "0.01"
+          ],
+          "variant": [
+            "NH4Cl",
+            "Ammonium chloride",
+            "SEED-cpd00013#cpd00099##",
+            "10.40",
+            "0.20"
+          ]
+        }
+      ],
+      "source_metadata_text": "Medium: MEDIUM 119 MODIFIED FOR DSM 11977\nID: 119_11977\nName: MEDIUM 119 MODIFIED FOR DSM 11977\nPH Info: null\nIs Complex: true\nIs Aerobic: false\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=119_11977"
+    },
+    "K119_11978": {
+      "row_count": 32,
+      "unchanged_rows": 32,
+      "added_rows": [],
+      "removed_rows": [],
+      "changed_rows": [],
+      "source_metadata_text": "Medium: MEDIUM 119 MODIFIED FOR DSM 11978\nID: 119_11978\nName: MEDIUM 119 MODIFIED FOR DSM 11978\nPH Info: null\nIs Complex: true\nIs Aerobic: false\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=119_11978"
+    },
+    "K119_11979": {
+      "row_count": 32,
+      "unchanged_rows": 32,
+      "added_rows": [],
+      "removed_rows": [],
+      "changed_rows": [],
+      "source_metadata_text": "Medium: MEDIUM 119 MODIFIED FOR DSM 11979\nID: 119_11979\nName: MEDIUM 119 MODIFIED FOR DSM 11979\nPH Info: null\nIs Complex: true\nIs Aerobic: false\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=119_11979"
+    },
+    "K119_11995": {
+      "row_count": 32,
+      "unchanged_rows": 32,
+      "added_rows": [],
+      "removed_rows": [],
+      "changed_rows": [],
+      "source_metadata_text": "Medium: MEDIUM 119 MODIFIED FOR DSM 11995\nID: 119_11995\nName: MEDIUM 119 MODIFIED FOR DSM 11995\nPH Info: null\nIs Complex: true\nIs Aerobic: false\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=119_11995"
+    },
+    "K119_1224": {
+      "row_count": 32,
+      "unchanged_rows": 32,
+      "added_rows": [],
+      "removed_rows": [],
+      "changed_rows": [],
+      "source_metadata_text": "Medium: MEDIUM 119 MODIFIED FOR DSM 1224\nID: 119_1224\nName: MEDIUM 119 MODIFIED FOR DSM 1224\nPH Info: 7.0\nIs Complex: true\nIs Aerobic: false\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=119_1224"
+    },
+    "K119_15163": {
+      "row_count": 32,
+      "unchanged_rows": 32,
+      "added_rows": [],
+      "removed_rows": [],
+      "changed_rows": [],
+      "source_metadata_text": "Medium: MEDIUM 119 MODIFIED FOR DSM 15163\nID: 119_15163\nName: MEDIUM 119 MODIFIED FOR DSM 15163\nPH Info: 6.0\nIs Complex: true\nIs Aerobic: false\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=119_15163"
+    },
+    "K119_3468": {
+      "row_count": 34,
+      "unchanged_rows": 32,
+      "added_rows": [
+        [
+          "methanol",
+          "Methanol",
+          "SEED-cpd00116###",
+          "5.00",
+          "0.16"
+        ],
+        [
+          "N2",
+          "N2",
+          "SEED-cpd00528###",
+          "null",
+          "null"
+        ]
+      ],
+      "removed_rows": [],
+      "changed_rows": [],
+      "source_metadata_text": "Medium: MEDIUM 119 MODIFIED FOR DSM 3468\nID: 119_3468\nName: MEDIUM 119 MODIFIED FOR DSM 3468\nPH Info: null\nIs Complex: true\nIs Aerobic: false\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=119_3468"
+    },
+    "K119_4855": {
+      "row_count": 34,
+      "unchanged_rows": 32,
+      "added_rows": [
+        [
+          "cysteine",
+          "L-Cysteine",
+          "SEED-cpd00084###",
+          "0.30",
+          "0.00"
+        ],
+        [
+          "Na2S",
+          "Sodium sulfide hydrate",
+          "SEED-cpd00239#cpd00971##",
+          "0.30",
+          "0.00"
+        ]
+      ],
+      "removed_rows": [],
+      "changed_rows": [],
+      "source_metadata_text": "Medium: MEDIUM 119 MODIFIED FOR DSM 4855\nID: 119_4855\nName: MEDIUM 119 MODIFIED FOR DSM 4855\nPH Info: null\nIs Complex: true\nIs Aerobic: false\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=119_4855"
+    },
+    "K119_6216": {
+      "row_count": 32,
+      "unchanged_rows": 31,
+      "added_rows": [],
+      "removed_rows": [],
+      "changed_rows": [
+        {
+          "base": [
+            "Na-acetate",
+            "Na-acetate",
+            "SEED-cpd00029#cpd00971##",
+            "0.99",
+            "0.01"
+          ],
+          "variant": [
+            "Na-acetate",
+            "Na-acetate",
+            "SEED-cpd00029#cpd00971##",
+            "3.99",
+            "0.05"
+          ]
+        }
+      ],
+      "source_metadata_text": "Medium: MEDIUM 119 MODIFIED FOR DSM 6216\nID: 119_6216\nName: MEDIUM 119 MODIFIED FOR DSM 6216\nPH Info: null\nIs Complex: true\nIs Aerobic: false\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=119_6216"
+    },
+    "K119_7057": {
+      "row_count": 33,
+      "unchanged_rows": 32,
+      "added_rows": [
+        [
+          "Na2SO4",
+          "Sodium sulfate",
+          "SEED-cpd00048#cpd00971#cpd09400#",
+          "2.00",
+          "0.01"
+        ]
+      ],
+      "removed_rows": [],
+      "changed_rows": [],
+      "source_metadata_text": "Medium: MEDIUM 119 MODIFIED FOR DSM 7057\nID: 119_7057\nName: MEDIUM 119 MODIFIED FOR DSM 7057\nPH Info: null\nIs Complex: true\nIs Aerobic: false\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=119_7057"
+    },
+    "K119_7256": {
+      "row_count": 33,
+      "unchanged_rows": 32,
+      "added_rows": [
+        [
+          "rumen fluid",
+          "Rumen fluid",
+          "rich-rumen#",
+          "200.00",
+          "null"
+        ]
+      ],
+      "removed_rows": [],
+      "changed_rows": [],
+      "source_metadata_text": "Medium: MEDIUM 119 MODIFIED FOR DSM 7256\nID: 119_7256\nName: MEDIUM 119 MODIFIED FOR DSM 7256\nPH Info: null\nIs Complex: true\nIs Aerobic: false\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=119_7256"
+    },
+    "K119_9575": {
+      "row_count": 32,
+      "unchanged_rows": 32,
+      "added_rows": [],
+      "removed_rows": [],
+      "changed_rows": [],
+      "source_metadata_text": "Medium: MEDIUM 119 MODIFIED FOR DSM 9575\nID: 119_9575\nName: MEDIUM 119 MODIFIED FOR DSM 9575\nPH Info: null\nIs Complex: true\nIs Aerobic: false\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=119_9575"
+    }
+  }
+}

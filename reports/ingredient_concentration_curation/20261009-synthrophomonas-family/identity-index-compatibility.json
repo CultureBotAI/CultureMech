@@ -1,0 +1,30 @@
+{
+  "historical_identity_review_sha256": "2f6d107a2c1042092e4402085f5941f969e5aa2a601f4a77b79747c93d5cc6b2",
+  "historical_index_sha256": "a36cd4683feb89e2fc2a1721dc15008d1e10c12044e89a36c27b6621a8aaf262",
+  "current_metadata": {
+    "byte_count": 824387,
+    "consumer_contract_version": 1,
+    "data_row_count": 9077,
+    "header": ["label", "match_type", "identifier", "preferred_term", "ontology_id", "mapping_status", "ambiguity"],
+    "repository": "https://github.com/CultureBotAI/MediaIngredientMech",
+    "sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5",
+    "source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9",
+    "source_path": "docs/data/label_index.csv"
+  },
+  "current_resolution": {
+    "query_label": "NiCl2 x 6 H2O",
+    "identifier": "CHEBI:53542",
+    "ontology_id": "CHEBI:53542",
+    "mim_preferred_term": "NiCl2 x 6 H2O",
+    "matched_label": "NiCl2 x 6 H2O",
+    "match_type": "preferred_term",
+    "mapping_status": "REJECTED",
+    "ambiguity": "unique",
+    "resolution_source": "mim_exact",
+    "local_identifier": null,
+    "source_compound_id": null,
+    "reason": "trusted MIM label-index answer"
+  },
+  "assessment": "The refreshed pin retains the exact nickel hexahydrate candidate, identifier and REJECTED status. Ambiguity changes from resolved:owned to unique. The existing source-backed withdrawal of generic CHEBI:34887 remains conservative; no replacement identifier, concentration conversion or new identity assertion is authorized. Historical notes explicitly identify the original index hash and remain reproducible without rewriting that review or its receipts.",
+  "issue": "https://github.com/CultureBotAI/CultureMech/issues/584"
+}

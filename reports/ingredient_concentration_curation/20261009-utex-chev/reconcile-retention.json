@@ -1,0 +1,95 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "retention",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "records": [
+    {
+      "path": "data/normalized_yaml/algae/1_2_CHEV_Diatom_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/1_2_CHEV_Diatom_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/1_3_CHEV_Diatom_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/1_3_CHEV_Diatom_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/1_5_CHEV_Diatom_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/1_5_CHEV_Diatom_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/2X_CHEV_Diatom_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/2X_CHEV_Diatom_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/2_3_CHEV_Diatom_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/2_3_CHEV_Diatom_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/CHEV_Diatom_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/CHEV_Diatom_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/Modified_2X_CHEV_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/Modified_2X_CHEV_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/Modified_CHEV_Medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/Modified_CHEV_Medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    },
+    {
+      "path": "data/normalized_yaml/algae/modified_2x_chev_soil_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/algae/modified_2x_chev_soil_medium.yaml"
+      ],
+      "errors": [],
+      "schema_errors": [],
+      "relationship_ids_and_paths_resolve": true
+    }
+  ],
+  "distinct_cohort_groups": 9,
+  "derived_yaml_written": false,
+  "input_records": 15910,
+  "output_groups": 10781,
+  "source_inventory_unchanged": true
+}

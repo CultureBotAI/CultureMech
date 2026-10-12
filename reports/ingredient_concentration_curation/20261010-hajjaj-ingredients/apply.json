@@ -1,0 +1,249 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "apply",
+  "checks": [],
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "plan_sha256": "44b46346ba0b4dca764d101d6b6590ab0971f5a69be711877ad7ccf0a560c44a",
+  "source_sha256": "c17680f0b36bb27d61ee30662964506f810580e4203ecdacc517ff3f0c1a4b5b",
+  "code_sha256": {
+    "scripts/review_hajjaj_ingredients.py": "f18bf9c504cdd8de32660605fe4bd41125a968b6d9e3f02122a8cf21be4b3185",
+    "tests/test_hajjaj_ingredients.py": "6f5912d6722dbc2353d7b1af907470d81971e991de28d6551b50c9184fa4adfc"
+  },
+  "inventory_before_sha256": "be8cf9562c14ac1ab986d2df248c242b8f47db726278b34831044efce989b9f7",
+  "source_checks": [
+    {
+      "reference": "doi:10.1128/AEM.67.6.2596-2602.2001",
+      "capture_hash_and_snippets_matched": false,
+      "inspection_mode": "manual publisher full-text reading; no downloaded capture",
+      "manual_web_reinspection_this_turn": true,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://www.ebi.ac.uk/chebi/CHEBI:91249",
+      "capture_hash_and_snippets_matched": false,
+      "inspection_mode": "manual official ChEBI page reading; no raw capture",
+      "manual_web_reinspection_this_turn": true,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official SQL export",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://www.ebi.ac.uk/chebi/CHEBI:75836",
+      "capture_hash_and_snippets_matched": false,
+      "inspection_mode": "manual web-tool inspection; no raw capture",
+      "manual_web_reinspection_this_turn": true,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://www.ebi.ac.uk/chebi/CHEBI:86358",
+      "capture_hash_and_snippets_matched": false,
+      "inspection_mode": "manual web-tool inspection; no raw capture",
+      "manual_web_reinspection_this_turn": true,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://www.ebi.ac.uk/chebi/CHEBI:32312",
+      "capture_hash_and_snippets_matched": false,
+      "inspection_mode": "manual web-tool inspection; no raw capture",
+      "manual_web_reinspection_this_turn": true,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://www.ebi.ac.uk/chebi/CHEBI:31795",
+      "capture_hash_and_snippets_matched": false,
+      "inspection_mode": "manual web-tool inspection; no raw capture",
+      "manual_web_reinspection_this_turn": true,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://www.ebi.ac.uk/chebi/CHEBI:86158",
+      "capture_hash_and_snippets_matched": false,
+      "inspection_mode": "manual web-tool inspection; no raw capture",
+      "manual_web_reinspection_this_turn": true,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/328/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/324/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/329/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/327/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/334/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/341/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/340/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/339/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/342/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/318/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/332/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/338/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/336/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/333/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/335/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/337/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/326/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/325/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/331/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://mediadb.systemsbiology.net/defined_media/media/330/",
+      "capture_hash_and_snippets_matched": true,
+      "inspection_mode": "hash-pinned official recipe HTML table",
+      "manual_web_reinspection_this_turn": false,
+      "automatic_live_reference_pass_asserted": false
+    }
+  ],
+  "application": {
+    "changed": 20,
+    "already_applied": 0
+  },
+  "readback": {
+    "changed": 0,
+    "already_applied": 20
+  },
+  "repeat_noop": {
+    "changed": 0,
+    "already_applied": 20
+  },
+  "inventory_after_sha256": "ebf8b59e00cc0cb250352e5c1e69f87288d18bc942db165c2d5673c1b33656f5",
+  "changed_paths": [
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_ethanol_12_5g_msg.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_12_5g_msg.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_20g_ethanol_12_5g_msg.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_20g_glycerol_12_5g_msg.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glucose_20g_lactose_12_5g_msg.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_20g_glycerol_12_5g_msg.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_11g_ammonium_acetate.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_arginine.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_glycine.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_histidine.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_isoleucine.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_12_5g_msg.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_13_7g_diammonium_tartrate.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_18g_msg.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4_5g_urea.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4g_ammonium_nitrate.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_4g_sodium_nitrate.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_glucose_7g_msg.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_45g_lactose_12_5g_msg.yaml",
+    "data/normalized_yaml/bacterial/chemically_defined_fermentation_medium_70g_glucose_12_5g_msg.yaml"
+  ],
+  "only_intended_records_changed": true
+}

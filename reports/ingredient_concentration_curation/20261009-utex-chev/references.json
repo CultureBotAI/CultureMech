@@ -1,0 +1,280 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "references",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/algae/1_2_CHEV_Diatom_Medium.yaml",
+        "--cache-dir",
+        "/tmp/utex-chev-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/references-000.log",
+      "log_sha256": "35ea020e458b5eb8dbb09f54866ee9a62b33152c39b8c4ec68ba93420cb46dd8"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/algae/1_3_CHEV_Diatom_Medium.yaml",
+        "--cache-dir",
+        "/tmp/utex-chev-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/references-001.log",
+      "log_sha256": "ea23e772d7fa5662937720a7e5fbb83a89c622c367289b32b81b96de3ce7c6c2"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/algae/1_5_CHEV_Diatom_Medium.yaml",
+        "--cache-dir",
+        "/tmp/utex-chev-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/references-002.log",
+      "log_sha256": "297adee594c89a34c1510a0e9d0813d1a7924550896cf55407aa216a9abbc2ab"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/algae/2X_CHEV_Diatom_Medium.yaml",
+        "--cache-dir",
+        "/tmp/utex-chev-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/references-003.log",
+      "log_sha256": "3c834f6d3f0f0a32351c969a8992d391b8166cbbe98af1bd927f89aeb3e3df48"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/algae/2_3_CHEV_Diatom_Medium.yaml",
+        "--cache-dir",
+        "/tmp/utex-chev-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/references-004.log",
+      "log_sha256": "169b0c99c86fa5442b6993d9e5be8bdd38a89bd9883f18ee24341ee5767f08a6"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/algae/CHEV_Diatom_Medium.yaml",
+        "--cache-dir",
+        "/tmp/utex-chev-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/references-005.log",
+      "log_sha256": "95b273111d32fb8d1ef0c95a4e9a2d7b61246bf87a6fbde862baf1abeccd560f"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/algae/Modified_2X_CHEV_Medium.yaml",
+        "--cache-dir",
+        "/tmp/utex-chev-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/references-006.log",
+      "log_sha256": "f1bdc9701eb9066d80e9f75b63813d50794911e0c40cb87eea12af9aad9f8721"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/algae/Modified_CHEV_Medium.yaml",
+        "--cache-dir",
+        "/tmp/utex-chev-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/references-007.log",
+      "log_sha256": "43c6a8659938c93c7096c38c5e253bcfc6fbd9d3bf1d618e88cdfffa7fefa85e"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/algae/modified_2x_chev_soil_medium.yaml",
+        "--cache-dir",
+        "/tmp/utex-chev-reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-utex-chev/references-008.log",
+      "log_sha256": "e562aacfd961f9b04558aa412727b06cd9fcb651a5718d29a4850eeda76a5614"
+    }
+  ],
+  "plan_sha256": "aec9a1ab3f6e913c9566a6fde4d4922a79753d0aba4839445524a97f66370836",
+  "code_sha256": {
+    "scripts/review_utex_chev_concentrations.py": "7b0c7ae44039bea8830a5255f9869f16e3e1155b15d16abad64e628740f5c8c8",
+    "tests/test_utex_chev_concentrations.py": "22ec37aec2d64709728a7c5b82cf9e8cbeea85778fab2ce57dbe5783eb1e4518"
+  },
+  "inventory_before_sha256": "431326f33112b1defa9875a78a19b8482a373d989ab4ced9f80f6cb353a14a4c",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "source_checks": [
+    {
+      "key": "one-half-chev-diatom-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "CR1 Soil",
+          "url": "https://utex.org/products/cr1-soil"
+        },
+        {
+          "label": "Pasteurized Seawater",
+          "url": "https://utex.org/products/pasteurized-seawater"
+        }
+      ]
+    },
+    {
+      "key": "one-third-chev-diatom-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "CR1 Soil",
+          "url": "https://utex.org/products/cr1-soil"
+        },
+        {
+          "label": "Pasteurized Seawater",
+          "url": "https://utex.org/products/pasteurized-seawater"
+        }
+      ]
+    },
+    {
+      "key": "one-fifth-chev-diatom-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "CR1 Soil",
+          "url": "https://utex.org/products/cr1-soil"
+        },
+        {
+          "label": "Pasteurized Seawater",
+          "url": "https://utex.org/products/pasteurized-seawater"
+        }
+      ]
+    },
+    {
+      "key": "2x-chev-diatom-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "CR1 Soil",
+          "url": "https://utex.org/products/cr1-soil"
+        },
+        {
+          "label": "Pasteurized Seawater",
+          "url": "https://utex.org/products/pasteurized-seawater"
+        }
+      ]
+    },
+    {
+      "key": "two-thirds-chev-diatom-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "CR1 Soil",
+          "url": "https://utex.org/products/cr1-soil"
+        },
+        {
+          "label": "Pasteurized Seawater",
+          "url": "https://utex.org/products/pasteurized-seawater"
+        }
+      ]
+    },
+    {
+      "key": "chev-diatom-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "CR1 Soil",
+          "url": "https://utex.org/products/cr1-soil"
+        },
+        {
+          "label": "Pasteurized Seawater",
+          "url": "https://utex.org/products/pasteurized-seawater"
+        }
+      ]
+    },
+    {
+      "key": "modified-2x-chev-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "F/2 Medium",
+          "url": "https://utex.org/products/f-2-medium"
+        }
+      ]
+    },
+    {
+      "key": "modified-chev-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "CR1 Soil",
+          "url": "https://utex.org/products/cr1-soil"
+        },
+        {
+          "label": "F/2 Medium",
+          "url": "https://utex.org/products/f-2-medium"
+        }
+      ]
+    },
+    {
+      "key": "modified-2x-chev-plus-soil-medium",
+      "captures_unchanged": true,
+      "table_exact": true,
+      "component_links": [
+        {
+          "label": "CR1 Soil",
+          "url": "https://utex.org/products/cr1-soil"
+        },
+        {
+          "label": "F/2 Medium",
+          "url": "https://utex.org/products/f-2-medium"
+        }
+      ]
+    }
+  ],
+  "manual_pdf_review_pages": 9,
+  "automated_ocr_verification_asserted": false,
+  "production_reference_gate_passed": false,
+  "inventory_after_sha256": "431326f33112b1defa9875a78a19b8482a373d989ab4ced9f80f6cb353a14a4c",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

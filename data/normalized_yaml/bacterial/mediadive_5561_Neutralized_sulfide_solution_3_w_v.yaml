@@ -28,6 +28,33 @@ composition:
     label: sodium sulfide nonahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5561
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Na2S x 9 H2O",
+                      "compound_id": 54,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 3,
+                      "unit": "g",
+                      "g_l": 30,
+                      "mmol_l": 124.905,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Na2S x
+      9 H2O) in MediaDive solution 5561; locator=$.data.recipe[1] (compound_id=54).
+      Provider explicitly reports g_l=30. Arithmetic check: 3 g * 1 g/g / (100 ml
+      / 1000 ml per L) = 3E+1 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 100. Retrieved 2026-10-07T09:56:02.207914+00:00;
+      response SHA256=a275312a720fc486ff3cd402cff888564c1b61b0ef37f0cf5228e9510b528574.'
 preparation_notes: 'The sulfide solution is prepared in a 250 ml screw-capped bottle
   with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with
   nitrogen gas, closed and autoclaved for 15 min. at 121°C. After cooling to room
@@ -68,6 +95,15 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5561
+  changes: 'composition[1].concentration: {"unit": "G_PER_L", "value": "30"} -> {"unit":
+    "G_PER_L", "value": "30"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -76,3 +112,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5561
+  title: 'MediaDive solution 5561: Neutralized sulfide solution 3%(w/v)'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=a275312a720fc486ff3cd402cff888564c1b61b0ef37f0cf5228e9510b528574;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

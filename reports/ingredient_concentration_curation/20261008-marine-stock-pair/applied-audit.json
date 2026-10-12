@@ -1,0 +1,29 @@
+{
+  "M208": {
+    "quantity_corrections": 1,
+    "unsupported_quantity_slots_removed": 27,
+    "stock_dose_basis_corrections": 2,
+    "new_quantity_slots": 2,
+    "stock_nodes_relocated": 14,
+    "new_evidence": 88,
+    "new_references": 4,
+    "new_curation_history": 1,
+    "old_quantity_slots": 30,
+    "claims": 98,
+    "source_rows": 45
+  },
+  "M209": {
+    "quantity_corrections": 1,
+    "unsupported_quantity_slots_removed": 27,
+    "stock_dose_basis_corrections": 3,
+    "new_quantity_slots": 3,
+    "stock_nodes_relocated": 9,
+    "stock_descriptors_added": 1,
+    "new_evidence": 111,
+    "new_references": 6,
+    "new_curation_history": 1,
+    "old_quantity_slots": 31,
+    "claims": 126,
+    "source_rows": 57
+  }
+}

@@ -15,9 +15,6 @@ notes: UTEX prepares F/2 + NH4 Medium by dispensing prepared F/2 Medium into 175
   portions and adding a pinch of NH4MgPO4 to each flask.
 ingredients:
 - preferred_term: NH4MgPO4
-  concentration:
-    value: pinch per 175 mL flask
-    unit: VARIABLE
   term:
     id: CHEBI:149425
     label: ammonium magnesium phosphate
@@ -27,19 +24,31 @@ ingredients:
   supplier_catalog:
     supplier_name: Sigma
     catalog_number: '529354'
-  notes: UTEX adds a pinch of NH4MgPO4 to each 175 mL flask.
+  notes: Add a pinch of NH4MgPO4 to each 175 mL aliquot of prepared F/2 in a 250 mL
+    flask. Pinch mass and final concentration are not quantified.
   nutritional_roles:
   - NITROGEN_SOURCE
   - PHOSPHATE_SOURCE
+  evidence:
+  - reference: https://utex.org/products/f-2-nh4-medium
+    supports: SUPPORT
+    snippet: add a pinch of NH4MgPO4 to each flask.
+    explanation: 'Claim: ingredients[0].concentration. Source-explicit nonnumeric
+      dose; no mass or final concentration is supplied. Remove the pseudo-concentration
+      and preserve the pinch as a preparation note. Locator: Directions step 3, interpreted
+      with step 2; source version is the hash-pinned HTML capture. Evidence supports
+      removing the numeric/pseudo-concentration and retaining the preparation note,
+      not a replacement numeric amount. '
 solutions:
 - preferred_term: F/2 Medium
   concentration:
-    value: '1000'
-    unit: ML_PER_L
+    value: '0.175'
+    unit: L
   culturemech_term:
     id: CultureMech:000170
     label: F/2 Medium
-  notes: UTEX starts from prepared F/2 Medium.
+  notes: Use 175 mL prepared F/2 per 250 mL flask before adding the unquantified supplement.
+    The 0.175 L value is an absolute aliquot volume, not a per-liter concentration.
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -48,7 +57,7 @@ preparation_steps:
   action: ALIQUOT
   description: Dispense 175 mL into 250 mL flasks.
 - step_number: 3
-  action: DISSOLVE
+  action: MIX
   description: Add a pinch of NH4MgPO4 to each flask.
 salinity: saltwater
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
@@ -96,19 +105,118 @@ curation_history:
   source: https://utex.org/products/f-2-nh4-medium
   notes: UTEX prepares F/2 + NH4 Medium by dispensing prepared F/2 Medium into 175
     mL portions and adding a pinch of NH4MgPO4 to each flask.
+- timestamp: '2026-10-10T00:39:00.252028+00:00'
+  curator: codex
+  action: CURATED_UTEX_F2_INGREDIENT_AND_STOCK_STAGE_EVIDENCE
+  notes: Trace-metal source mass/molarity discrepancy remains unresolved; only mass-column
+    stock amounts are supported. The parent and 1% HTML/PDF seawater salinity versions
+    differ; neither is silently substituted for the other. The 5% source lists vitamin
+    doses but omits a later vitamin-addition step; no missing procedure is invented.
+    Narrative literature variants and existing organism/growth claims are unchanged
+    and not certified by UTEX sources. No numeric amount is invented for makeup/carrier
+    water, seawater or the NH4MgPO4 pinch.
+  source: https://utex.org/products/f-2-nh4-medium
+  changes: '[{"new": null, "old": {"unit": "VARIABLE", "value": "pinch per 175 mL
+    flask"}, "pointer": ["ingredients", 0, "concentration"], "remove": true}, {"new":
+    "Add a pinch of NH4MgPO4 to each 175 mL aliquot of prepared F/2 in a 250 mL flask.
+    Pinch mass and final concentration are not quantified.", "old": "UTEX adds a pinch
+    of NH4MgPO4 to each 175 mL flask.", "pointer": ["ingredients", 0, "notes"], "remove":
+    false}, {"new": {"unit": "L", "value": "0.175"}, "old": {"unit": "ML_PER_L", "value":
+    "1000"}, "pointer": ["solutions", 0, "concentration"], "remove": false}, {"new":
+    "Use 175 mL prepared F/2 per 250 mL flask before adding the unquantified supplement.
+    The 0.175 L value is an absolute aliquot volume, not a per-liter concentration.",
+    "old": "UTEX starts from prepared F/2 Medium.", "pointer": ["solutions", 0, "notes"],
+    "remove": false}, {"new": "MIX", "old": "DISSOLVE", "pointer": ["preparation_steps",
+    2, "action"], "remove": false}]'
+- timestamp: '2026-10-10T02:50:18.663542+00:00'
+  curator: codex
+  action: CURATED_F2_VARIANT_FORMULATION_AND_NH4_RELATIONSHIP_EVIDENCE
+  notes: 'The selenite correction reports Table S1 only: 0.001 micromolar = 1 nanomolar.
+    Main methods remain inaccessible, so possible main-text/table disagreement and
+    the existing UTEX LB2658 strain claim are not resolved. The Table S1 recipe and
+    Matsui artificial-seawater variant are not equivalent to canonical UTEX natural-seawater
+    F/2; no parent ingredient or stock concentration changes. The Tetraselmis evidence
+    is abstract-level only. Phosphorus repletion is a separate experimental condition,
+    not an added ingredient in the nitrogen-replete variant. The NH4MgPO4 pinch remains
+    unquantified; 250 mL is flask capacity, not final medium volume. Earlier UTEX
+    stock molarity, salinity-version, chemical catalog and missing vitamin-step issues
+    remain open. Existing organism/growth claims and earlier curation history are
+    unchanged. Matsui methods were manually inspected, not captured as a complete
+    HTTP download; current browser-check failures and production reference outcomes
+    are reported separately.'
+  source: https://utex.org/products/f-2-nh4-medium
+  changes: '[{"counts": {"relationship_dose_descriptions_corrected": 1}, "kind": "set",
+    "locator": "Directions steps 2-3", "new": "Adds a pinch of NH4MgPO4 to each 175
+    mL aliquot of prepared F/2 Medium in a 250 mL flask.", "old": "Adds a pinch of
+    NH4MgPO4 to each 175 mL flask of prepared F/2 Medium.", "old_present": true, "pointer":
+    ["parent_media", "notes"], "reason": "Distinguish medium aliquot from vessel capacity;
+    the pinch is not a numeric amount.", "reference": "https://utex.org/products/f-2-nh4-medium",
+    "snippet": "Dispense 175 mL into 250 mL flasks."}, {"counts": {"relationship_dose_descriptions_corrected":
+    1}, "kind": "set", "locator": "Directions steps 2-3", "new": "Adds a pinch of
+    NH4MgPO4 to each 175 mL aliquot of prepared F/2 Medium in a 250 mL flask.", "old":
+    "Adds a pinch of NH4MgPO4 to each 175 mL flask of prepared F/2 Medium.", "old_present":
+    true, "pointer": ["variant_modifications", 0], "reason": "Distinguish medium aliquot
+    from vessel capacity; the pinch is not a numeric amount.", "reference": "https://utex.org/products/f-2-nh4-medium",
+    "snippet": "Dispense 175 mL into 250 mL flasks."}, {"counts": {"corrected_evidence_snippets":
+    1}, "kind": "set", "locator": "Directions step 3", "new": "add a pinch of NH4MgPO4
+    to each flask.", "old": "add a pinch of NH 4 MgPO 4 to each flask.", "old_present":
+    true, "pointer": ["ingredients", 0, "evidence", 0, "snippet"], "reason": "Join
+    HTML subscripts within the chemical formula; preserve the same unquantified-dose
+    claim.", "reference": "https://utex.org/products/f-2-nh4-medium", "snippet": "add
+    a pinch of NH4MgPO4 to each flask."}, {"counts": {"root_evidence_explanations_corrected":
+    1}, "kind": "set", "locator": "Directions steps 2-3", "new": "Claim: solutions[0].concentration.
+    Absolute F/2 input per flask: 175 mL / 1000 = 0.175 L. Neither 250 mL vessel capacity
+    nor the table preparation amount of 1 L is a final-volume denominator. Locator:
+    Directions step 2; source version is the hash-pinned HTML capture.  Preparation
+    only: preparation_steps[2].action records addition using MIX rather than asserting
+    dissolution. Locator: Directions step 3; the source does not state that the solid
+    dissolves. Additional exact excerpt: \"add a pinch of NH4MgPO4 to each flask.\".
+    Relationship claims: parent_media.notes and variant_modifications[0] describe
+    this same 175 mL aliquot in a 250 mL flask, not a 175 mL-capacity flask. The supplement
+    quantity remains unquantified.", "old": "Claim: solutions[0].concentration. Absolute
+    F/2 input per flask: 175 mL / 1000 = 0.175 L. Neither 250 mL vessel capacity nor
+    the table preparation amount of 1 L is a final-volume denominator. Locator: Directions
+    step 2; source version is the hash-pinned HTML capture.  Preparation only: preparation_steps[2].action
+    records addition using MIX rather than asserting dissolution. Locator: Directions
+    step 3; the source does not state that the solid dissolves. Additional exact excerpt:
+    \"add a pinch of NH 4 MgPO 4 to each flask.\".", "old_present": true, "pointer":
+    ["evidence", 0, "explanation"], "reason": "Correct formula rendering and link
+    both relationship descriptions to the existing aliquot evidence.", "reference":
+    "https://utex.org/products/f-2-nh4-medium", "snippet": "Dispense 175 mL into 250
+    mL flasks."}]'
 references:
 - reference: UTEX:f-2-nh4-medium
 - reference: https://utex.org/products/f-2-nh4-medium
+  title: F/2 +NH4 Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; named authors and publication year not established; capture_sha256=2b6c085ec38f99fea0e7e4072450a86711d80fba479e97770a1669725c3bf313;
+    UTEX pages support only their own formulation/stage; chemical pages support identity
+    only.
 original_name: F/2 + NH4 Medium
 parent_media:
   path: data/normalized_yaml/algae/F_2_Medium.yaml
   relationship: SUPPLEMENTED_VARIANT
   id: CultureMech:000170
   name: f_2_medium
-  notes: Adds a pinch of NH4MgPO4 to each 175 mL flask of prepared F/2 Medium.
+  notes: Adds a pinch of NH4MgPO4 to each 175 mL aliquot of prepared F/2 Medium in
+    a 250 mL flask.
 variant_relationship: SUPPLEMENTED_VARIANT
 variant_modifications:
-- Adds a pinch of NH4MgPO4 to each 175 mL flask of prepared F/2 Medium.
+- Adds a pinch of NH4MgPO4 to each 175 mL aliquot of prepared F/2 Medium in a 250
+  mL flask.
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+evidence:
+- reference: https://utex.org/products/f-2-nh4-medium
+  supports: SUPPORT
+  snippet: Dispense 175 mL into 250 mL flasks.
+  explanation: 'Claim: solutions[0].concentration. Absolute F/2 input per flask: 175
+    mL / 1000 = 0.175 L. Neither 250 mL vessel capacity nor the table preparation
+    amount of 1 L is a final-volume denominator. Locator: Directions step 2; source
+    version is the hash-pinned HTML capture.  Preparation only: preparation_steps[2].action
+    records addition using MIX rather than asserting dissolution. Locator: Directions
+    step 3; the source does not state that the solid dissolves. Additional exact excerpt:
+    "add a pinch of NH4MgPO4 to each flask.". Relationship claims: parent_media.notes
+    and variant_modifications[0] describe this same 175 mL aliquot in a 250 mL flask,
+    not a 175 mL-capacity flask. The supplement quantity remains unquantified.'

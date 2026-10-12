@@ -8,6 +8,7 @@ Speed is the easy part. These mostly pin CORRECTNESS, because a fast resolver th
 returns the wrong record is worse than a slow one — and the tier ranking exists
 because 2,291 record `name:` values are shared (#151).
 """
+
 from __future__ import annotations
 
 import importlib.util
@@ -82,8 +83,11 @@ def test_the_id_tier_outranks_the_filename_tier(rm):
 def test_the_id_index_covers_the_corpus(rm, media_records):
     idx = rm._id_index()
     assert len(idx) > 15_000, f"id index has only {len(idx)} entries"
-    missing = [str(d["id"]) for _, d in media_records[:300]
-               if d.get("id") and rm._normal_key(str(d["id"])) not in idx]
+    missing = [
+        str(d["id"])
+        for _, d in media_records[:300]
+        if d.get("id") and rm._normal_key(str(d["id"])) not in idx
+    ]
     assert not missing, f"records absent from the registry index: {missing[:5]}"
 
 
@@ -92,8 +96,7 @@ def test_a_stale_registry_entry_does_not_become_a_wrong_answer(rm, tmp_path, mon
     record move and a refresh. A stale hit must fall through to the scan rather
     than return a path that no longer exists."""
     rm.reset_resolution_caches()
-    monkeypatch.setattr(rm, "_ID_INDEX",
-                        {"culturemech:000001": tmp_path / "gone.yaml"})
+    monkeypatch.setattr(rm, "_ID_INDEX", {"culturemech:000001": tmp_path / "gone.yaml"})
     with pytest.raises((FileNotFoundError, ValueError)):
         rm.resolve_media_file("CultureMech:000001__definitely_absent")
     rm.reset_resolution_caches()
@@ -119,19 +122,30 @@ def test_repeated_resolution_does_not_rescan_the_corpus(rm, media_records):
     """
     targets = [str(d["id"]) for _, d in media_records[:40] if d.get("id")][:30]
     assert len(targets) >= 20, "not enough ids sampled"
-    rm.resolve_media_file(targets[0])          # pay index construction once
+    rm.resolve_media_file(targets[0])  # pay index construction once
     start = time.perf_counter()
     for t in targets:
         rm.resolve_media_file(t)
     per_call = (time.perf_counter() - start) / len(targets)
-    assert per_call < 0.05, (
-        f"{per_call*1000:.0f} ms/resolution — the per-call corpus scan is back")
+    assert per_call < 0.05, f"{per_call*1000:.0f} ms/resolution — the per-call corpus scan is back"
 
 
 # --- #208: the cached file list must not resurrect deleted records ----------
 
 
-def test_resolution_never_returns_a_path_that_does_not_exist(rm, tmp_path):
+@pytest.fixture
+def isolated_media_dir(rm, tmp_path, monkeypatch):
+    directory = tmp_path / "normalized_yaml"
+    (directory / "bacterial").mkdir(parents=True)
+    monkeypatch.setattr(rm, "MEDIA_DIR", directory)
+    rm.reset_resolution_caches()
+    try:
+        yield directory
+    finally:
+        rm.reset_resolution_caches()
+
+
+def test_resolution_never_returns_a_path_that_does_not_exist(rm, isolated_media_dir):
     """`_media_files()` is cached, so it can name records that have since been
     deleted. A fresh glob could not, which is why the pre-index version needed no
     existence check in the scan tier — the cache introduced the hazard.
@@ -140,7 +154,8 @@ def test_resolution_never_returns_a_path_that_does_not_exist(rm, tmp_path):
     FileNotFoundError from further away than the resolution that caused it.
     """
     rm.reset_resolution_caches()
-    victim = sorted(rm.MEDIA_DIR.glob("bacterial/*.yaml"))[0]
+    victim = isolated_media_dir / "bacterial" / "zz_test_deleted_record.yaml"
+    victim.write_text("id: CultureMech:999998\nname: zz_test_deleted_record\n")
     backup = victim.read_text()
     rm._filename_index()
     rm._media_files()
@@ -152,13 +167,14 @@ def test_resolution_never_returns_a_path_that_does_not_exist(rm, tmp_path):
             return  # refusing is also correct
         assert resolved.exists(), (
             f"resolved to {resolved}, which no longer exists — the cached file "
-            "list resurrected a deleted record")
+            "list resurrected a deleted record"
+        )
     finally:
         victim.write_text(backup)
         rm.reset_resolution_caches()
 
 
-def test_reset_makes_a_newly_created_record_visible(rm):
+def test_reset_makes_a_newly_created_record_visible(rm, isolated_media_dir):
     """The other direction. A record created after the cache warms is invisible
     until reset — inherent to caching, and why curation scripts that mutate the
     corpus mid-run must call reset_resolution_caches()."""

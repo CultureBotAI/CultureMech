@@ -1,0 +1,204 @@
+{
+  "records": [
+    {
+      "key": "K212",
+      "target": "data/normalized_yaml/bacterial/KOMODO_212_SYNTHROPHOMONAS_medium.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/K212.md",
+      "sha256": "2dd596357555bc7cf5e6258fdba591c8e6826ca97cb806c2065e57b2df95e1b0",
+      "claims": 136,
+      "changed": true
+    },
+    {
+      "key": "B2805",
+      "target": "data/normalized_yaml/bacterial/for_dsm_2805.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/B2805.md",
+      "sha256": "26aa81c9fa95ac70a926e69e58509e1bc845c20b3f13c0c56a7f2b0595281b87",
+      "claims": 104,
+      "changed": true
+    },
+    {
+      "key": "S1038",
+      "target": "data/normalized_yaml/bacterial/mediadive_1038_Seven_vitamins_solution.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S1038.md",
+      "sha256": "1192de6b46e9a17055c4fba5f83767bf2e39cf118b6669d296db8b13a5145670",
+      "claims": 14,
+      "changed": true
+    },
+    {
+      "key": "S125",
+      "target": "data/normalized_yaml/bacterial/mediadive_125_Vitamin_K1_solution.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S125.md",
+      "sha256": "c0f7b63e8290abb5689019cc3e2ec44c69f59c138f2ae31dd04c78fd3d639ff5",
+      "claims": 11,
+      "changed": true
+    },
+    {
+      "key": "S1728",
+      "target": "data/normalized_yaml/bacterial/mediadive_1728_Sugar_mix.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S1728.md",
+      "sha256": "fada561151548f499952c303b6be22c7d116b424517d04a265e9642b14438a0e",
+      "claims": 12,
+      "changed": true
+    },
+    {
+      "key": "S446",
+      "target": "data/normalized_yaml/bacterial/mediadive_446_Solution_A.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S446.md",
+      "sha256": "3631686261ee67160a9f10f9bdf4a2a82089d45f9c310f336ac25220e38aab9b",
+      "claims": 30,
+      "changed": true
+    },
+    {
+      "key": "S447",
+      "target": "data/normalized_yaml/bacterial/mediadive_447_Solution_B.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S447.md",
+      "sha256": "d03cb975769d72e1242b1d1196aa04e4598d8a91d4b3589c7ba4bf6dfdfd5a2b",
+      "claims": 8,
+      "changed": true
+    },
+    {
+      "key": "S448",
+      "target": "data/normalized_yaml/bacterial/mediadive_448_Solution_C.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S448.md",
+      "sha256": "d262886368579aed8a9cf460463a563514234f9428fec67d5a128be276b90fbb",
+      "claims": 8,
+      "changed": true
+    },
+    {
+      "key": "S450",
+      "target": "data/normalized_yaml/bacterial/mediadive_450_Solution_E.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S450.md",
+      "sha256": "8e810e93f2bc9104329bfc577fad82eb910394268f3c37bdd4a75beb64682e9f",
+      "claims": 8,
+      "changed": true
+    },
+    {
+      "key": "S451",
+      "target": "data/normalized_yaml/bacterial/mediadive_451_Solution_F.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S451.md",
+      "sha256": "45cd170d28bc8dd1ab94a0a6acaf218289edf50883912f7b63d9da130ea8d1a2",
+      "claims": 8,
+      "changed": true
+    },
+    {
+      "key": "S453",
+      "target": "data/normalized_yaml/bacterial/mediadive_453_Solution_A.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S453.md",
+      "sha256": "eac54609321150fb2da85792ca33ee5714a9017ada5991c379bba9b1652a510e",
+      "claims": 38,
+      "changed": true
+    },
+    {
+      "key": "S454",
+      "target": "data/normalized_yaml/bacterial/mediadive_454_Solution_B.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S454.md",
+      "sha256": "36304049affff6378674b8ff5c5c87f1eda80d5d372adabe13e7532906b8f5fc",
+      "claims": 8,
+      "changed": true
+    },
+    {
+      "key": "S455",
+      "target": "data/normalized_yaml/bacterial/mediadive_455_Solution_C.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S455.md",
+      "sha256": "f1aa06f43dc6df5e38dc38eac61637ff9832c04710602ff79e6fe79f41c9a846",
+      "claims": 10,
+      "changed": true
+    },
+    {
+      "key": "S456",
+      "target": "data/normalized_yaml/bacterial/mediadive_456_Solution_D.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S456.md",
+      "sha256": "b3bbf59c5e74a19a3c4d2f454b152df20000581b3eecab439e5b5474f5deffa1",
+      "claims": 8,
+      "changed": true
+    },
+    {
+      "key": "S459",
+      "target": "data/normalized_yaml/bacterial/mediadive_459_Solution_G.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S459.md",
+      "sha256": "62f0325d77c4e2a71ad68ba6e821f17975d2581ef6609fd1110f330e28d4d68f",
+      "claims": 8,
+      "changed": true
+    },
+    {
+      "key": "S460",
+      "target": "data/normalized_yaml/bacterial/mediadive_460_Solution_H.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S460.md",
+      "sha256": "d3fecdb1e70cb1e810b309218aa0eea13de11c14a28014715a7a564fc662ff0a",
+      "claims": 8,
+      "changed": true
+    },
+    {
+      "key": "S461",
+      "target": "data/normalized_yaml/bacterial/mediadive_461_Solution_I.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S461.md",
+      "sha256": "c7f35cadc4e800dd8bc617b206dfeb3eee565bd33c917997f29927215d50ead0",
+      "claims": 10,
+      "changed": true
+    },
+    {
+      "key": "S595",
+      "target": "data/normalized_yaml/bacterial/mediadive_595_Trace_element_solution_SL-10.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S595.md",
+      "sha256": "32d47c5797df30da5a85d3b027d70cb73c51e16c892e8c38093f7cfb9a24864b",
+      "claims": 20,
+      "changed": true
+    },
+    {
+      "key": "S608",
+      "target": "data/normalized_yaml/bacterial/mediadive_608_Volatile_fatty_acid_mixture.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S608.md",
+      "sha256": "93f9700cf08995f361cf16e4e0e53661d4973e68ac32f30c919819d109452d6c",
+      "claims": 7,
+      "changed": false
+    },
+    {
+      "key": "S777",
+      "target": "data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S777.md",
+      "sha256": "3960c9febd1df25319e8032d64c3c0702db2d60edeab1e9375074c5d9aeb1f25",
+      "claims": 10,
+      "changed": true
+    },
+    {
+      "key": "D212",
+      "target": "data/normalized_yaml/bacterial/synthrophomonas_medium.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/D212.md",
+      "sha256": "88d2b63f6358fa495ecc1b385a7faeb1a750b632e2e0c62685ebe5802ff9a227",
+      "claims": 167,
+      "changed": true
+    },
+    {
+      "key": "D212a",
+      "target": "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml",
+      "report": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/D212a.md",
+      "sha256": "adaeb35358b2d900cce962636578526cd0323ffe12fa9bb504e93363de996a99",
+      "claims": 254,
+      "changed": true
+    }
+  ],
+  "canonical_reports": {
+    "data/normalized_yaml/bacterial/KOMODO_212_SYNTHROPHOMONAS_medium.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/KOMODO_212_SYNTHROPHOMONAS_medium.yaml.md",
+    "data/normalized_yaml/bacterial/for_dsm_2805.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/for_dsm_2805.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_1038_Seven_vitamins_solution.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_1038_Seven_vitamins_solution.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_125_Vitamin_K1_solution.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_125_Vitamin_K1_solution.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_1728_Sugar_mix.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-1000-1500/records/bacterial/mediadive_1728_Sugar_mix.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_446_Solution_A.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_446_Solution_A.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_447_Solution_B.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_447_Solution_B.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_448_Solution_C.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_448_Solution_C.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_450_Solution_E.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_450_Solution_E.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_451_Solution_F.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_451_Solution_F.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_453_Solution_A.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_453_Solution_A.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_454_Solution_B.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_454_Solution_B.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_455_Solution_C.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_455_Solution_C.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_456_Solution_D.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_456_Solution_D.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_459_Solution_G.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_459_Solution_G.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_460_Solution_H.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_460_Solution_H.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_461_Solution_I.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_461_Solution_I.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_595_Trace_element_solution_SL-10.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-stocks/mediadive_595_Trace_element_solution_SL-10.md",
+    "data/normalized_yaml/bacterial/mediadive_608_Volatile_fatty_acid_mixture.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_608_Volatile_fatty_acid_mixture.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_777_Selenite-tungstate_solution.yaml.md",
+    "data/normalized_yaml/bacterial/synthrophomonas_medium.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/synthrophomonas_medium.yaml.md",
+    "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/treponema_rectale_medium.yaml.md"
+  }
+}

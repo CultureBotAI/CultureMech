@@ -1,0 +1,14 @@
+{
+  "stock_nodes_relocated": 66,
+  "new_quantity_slots": 33,
+  "unsupported_quantity_slots_removed": 4,
+  "new_evidence": 25680,
+  "new_curation_history": 4425,
+  "new_references": 4447,
+  "quantity_corrections": 1147,
+  "preparation_steps_relocated": 6,
+  "preparation_actions_corrected": 1,
+  "evidence_scopes_corrected": 3,
+  "extraction_preparations_restructured": 2,
+  "edited_records": 4421
+}

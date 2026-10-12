@@ -1,0 +1,267 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "post",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/Bristol_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/post-000.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/Bristol_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/post-001.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/Bold_Basal_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/post-002.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/Bold_Basal_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/post-003.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/Botryococcus_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/post-004.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/Botryococcus_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/post-005.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/Proteose_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/post-006.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/Proteose_Medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/post-007.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/algae/bristol_nacl_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/post-008.log",
+      "log_sha256": "7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050"
+    },
+    {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/normalized_yaml/algae/bristol_nacl_medium.yaml"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/post-009.log",
+      "log_sha256": "43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "--no-cov",
+        "tests/test_utex_bristol_bbm.py",
+        "tests/test_utex_f2_followup.py",
+        "tests/test_utex_f2_concentrations.py",
+        "tests/test_utex_es_concentrations.py",
+        "tests/test_formulation_merge.py",
+        "tests/test_followup_report_coverage.py",
+        "tests/test_media_variant_links.py"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/post-010.log",
+      "log_sha256": "bb2d5359e5614ef3f1f169abead6164d9fe37ca8b91a92d7f47d2ea7d72bbfb4"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/post-011.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "plan_sha256": "e0abd4b637b8f43560cf53841c81f5e00ff9295650df42441c664d2e5df44c03",
+  "source_sha256": "be25f211f867b7b2eee3328e117ecc83149c477dbf03983de88c86f7bfce7a3b",
+  "code_sha256": {
+    "scripts/review_utex_bristol_bbm.py": "31358f8b8babead53b1016480bb545868b1e077b17314193bd3bf1bd6878aa38",
+    "tests/test_utex_bristol_bbm.py": "eeee4384586b397431394d0cf15aefdba9709ebffa28ac46b5087a22932d8d27"
+  },
+  "inventory_before_sha256": "be8cf9562c14ac1ab986d2df248c242b8f47db726278b34831044efce989b9f7",
+  "source_checks": [
+    {
+      "reference": "https://utex.org/products/bristol-medium",
+      "hash_matched": true,
+      "snippets_matched": 6,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/bold-basal-medium",
+      "hash_matched": true,
+      "snippets_matched": 7,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/bbm-edta-stock-solution",
+      "hash_matched": true,
+      "snippets_matched": 3,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/bbm-iron-stock-solution",
+      "hash_matched": true,
+      "snippets_matched": 3,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/bbm-boron-stock-solution",
+      "hash_matched": true,
+      "snippets_matched": 2,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/bbm-bold-trace-stock-solution",
+      "hash_matched": true,
+      "snippets_matched": 7,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://web.biosci.utexas.edu/utex/Media%20PDF/bristol-medium.pdf",
+      "hash_matched": true,
+      "snippets_matched": 0,
+      "pdf_pages_previously_visually_inspected": 1,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://web.biosci.utexas.edu/utex/Media%20PDF/bold-basal-medium.pdf",
+      "hash_matched": true,
+      "snippets_matched": 0,
+      "pdf_pages_previously_visually_inspected": 3,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/botryococcus-medium",
+      "hash_matched": true,
+      "snippets_matched": 4,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/proteose-medium",
+      "hash_matched": true,
+      "snippets_matched": 2,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://utex.org/products/bristol-nacl-medium",
+      "hash_matched": true,
+      "snippets_matched": 2,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://web.biosci.utexas.edu/utex/Media%20PDF/botryococcus-medium.pdf",
+      "hash_matched": true,
+      "snippets_matched": 0,
+      "pdf_pages_previously_visually_inspected": 1,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://web.biosci.utexas.edu/utex/Media%20PDF/proteose-medium.pdf",
+      "hash_matched": true,
+      "snippets_matched": 0,
+      "pdf_pages_previously_visually_inspected": 1,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "https://web.biosci.utexas.edu/utex/Media%20PDF/bristol-nacl-medium.pdf",
+      "hash_matched": true,
+      "snippets_matched": 0,
+      "pdf_pages_previously_visually_inspected": 1,
+      "automatic_live_reference_pass_asserted": false
+    },
+    {
+      "reference": "doi:10.3390/plants11131669",
+      "hash_matched": true,
+      "snippets_matched": 4,
+      "pdf_pages_previously_visually_inspected": 0,
+      "automatic_live_reference_pass_asserted": false
+    }
+  ],
+  "inventory_after_sha256": "be8cf9562c14ac1ab986d2df248c242b8f47db726278b34831044efce989b9f7",
+  "changed_paths": [],
+  "only_intended_records_changed": true
+}

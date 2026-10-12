@@ -1,0 +1,434 @@
+[
+  {
+    "id": "CultureMech:005987",
+    "medium_id": "546",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/546",
+    "source_sha256": "3880d23c7675675d8ebac12c440db993819fbc5faf23c4a052d31474c6da181e",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Sterilize at 121°C for 15 min. Cool to 50°C and add 5 ml 1 M CaCl2 x 2 H2O and 5 ml 1 M MgSO4 x 7 H2O as sterile solutions.",
+    "reason": "The 990 ml basal water and two post-autoclave 5 ml 1 M salt stocks are flattened into direct ingredients. Reconstruct the stock additions and preparation stages before endorsing complete-medium amounts; stock molarity does not verify the imported mass concentrations."
+  },
+  {
+    "id": "CultureMech:006053",
+    "medium_id": "582",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/582",
+    "source_sha256": "31f2b2c713e28b748dd847ae26f5a52fac186abd27616218f9eb9ed5b67fcbe7",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "NaHCO3 is added from a sterilized stock solution when the medium has cooled. Agar is added at a concentration of 20 g/l for solid media.",
+    "reason": "The late bicarbonate stock has no recorded strength or dose, and the local record has no corresponding preparation stage. Resolve the stock boundary and basal versus complete-medium scope first. The local liquid state does not authorize the separate agar alternative."
+  },
+  {
+    "id": "CultureMech:006067",
+    "medium_id": "588",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/588",
+    "source_sha256": "1b2c81fe03bfdb3766fd3e945ffe9007d01edd45303c9bbfb82e1669ebc468c2",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Prepare salts (in 850 ml distilled water, do not adjust the pH), glucose (50 ml of a 10% solution), and PIPES (100 ml of 400 mM solution, 12.096 g/100 ml), separately under nitrogen using normal anaerobic techniques. Add glucose and PIPES using anaerobic techniques.",
+    "reason": "The preparation specifies 850 ml basal water, 50 ml glucose solution with an unqualified 10% basis, and a separate 100 ml PIPES preparation. Local direct ingredients flatten these stages; the API's single volume and water row cannot independently prove final-volume concentrations."
+  },
+  {
+    "id": "CultureMech:006075",
+    "medium_id": "593",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/593",
+    "source_sha256": "8740ef227f4afc896558da1efec81b061ef315e531cc5a96eb9056b30dc89227",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "NaHCO3 is added from a sterilized stock solution when the medium has cooled. Agar is added at a concentration of 15.0 g/l for solid media.",
+    "reason": "Late bicarbonate-stock preparation is not represented locally and lacks stock strength and dose. Resolve that boundary before endorsing the flattened formulation. The explicit 15 g/l agar instruction agrees with the local solid state but does not resolve bicarbonate."
+  },
+  {
+    "id": "CultureMech:006106",
+    "medium_id": "615",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/615",
+    "source_sha256": "d74a2f3660d4d3dcf36dd07be8c171dc407a9b506296889d94fcd0ead45fdad6",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      9
+    ],
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"attribute\": \"0.1% w/v in 0.1 N H2SO4\",\n                        \"amount\": 4,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.00398406,\n                        \"mmol_l\": 0.0143304,\n                        \"optional\": 0\n                    }",
+    "reason": "The source specifies an acidified iron stock and a resazurin stock, while the local record contains only flattened constituents. Its declared 1004 ml volume differs from the sum of 1000 ml water, 4 ml iron stock and 0.5 ml indicator. Establish stock boundaries and the intended volume basis, without treating liquid-input addition as a measured final volume."
+  },
+  {
+    "id": "CultureMech:006115",
+    "medium_id": "620",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/620",
+    "source_sha256": "1f063fe21456c04e7a448ee3bfd14ca43e3e33db209ebebd1c4e078f89d45263",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      7
+    ],
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Methanol\",\n                        \"compound_id\": 226,\n                        \"attribute\": \"filter-sterilized\",\n                        \"amount\": 2,\n                        \"unit\": \"%\",\n                        \"g_l\": 20,\n                        \"mmol_l\": 624.181,\n                        \"optional\": 0\n                    }",
+    "reason": "Methanol is specified as 2% without a mass/volume basis, and separately filter-sterilized glucose and methanol are not represented as preparation stages. The local 20 G_PER_L methanol is not established by this source; reconcile supplement and denominator scope before endorsing the complete formulation."
+  },
+  {
+    "id": "CultureMech:006129",
+    "medium_id": "623",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/623",
+    "source_sha256": "d09cff9b995237b5a12f00779d114bab5cc02d66cb3b1dbf03b305d1d5a1c976",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Prepare the medium under 100% N2 and adjust final pH to 6.5. The medium, containing sulphur, is sterilized by steaming on three consecutive days for 3 h. Reduce the medium with a sterile Na2S stock solution to give a final concentration of 0.5 g/l.",
+    "reason": "The preparation requires a late Na2S addition to 0.5 g/l, but the local ingredient list does not contain that addition. Reconstruct the sulfur steaming and subsequent sulfide reduction stages without inventing sulfide stock strength or dose."
+  },
+  {
+    "id": "CultureMech:006146",
+    "medium_id": "631",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/631",
+    "source_sha256": "e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "The ethanol and acetic acid are sterilized separately by filtration (use filter resistant to these solvents), and added aseptically to the sterile medium. Acetobacter europaeus will not grow on plates containing 1-2% agar, and a double layer system has to be used. A layer of growth medium containing 0.5% agar (about 35 ml) is poured into a plate and allowed to solidify. A thin layer (5-10 ml) of the growth medium containing 1% agar is then poured on top. Carefully streak the plates, which are best incubated in closed containers (e.g. plastic boxes) at 30°C.",
+    "reason": "Acetic acid and ethanol are separately filtered volume inputs, but both are imported as G_PER_L. Preserve the liquid formulation and repair those inputs/preparation before asserting complete-medium quantities; the two-layer agar procedure is a separate solid formulation, not the current liquid record."
+  },
+  {
+    "id": "CultureMech:006195",
+    "medium_id": "648",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/648",
+    "source_sha256": "e6cac93f5c07185a4c6bdd3c6062944fd03736ca28220417f71d9c590fe5239d",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Dissolve DIFCO Marine Broth powder and resazurin, bring the medium to a boil, then cool to room temperature under 80% N2 and 20% CO2 gas atmosphere. Dispense the medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Complete the medium by adding glucose, cysteine, and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. The pH of the complete medium should be around 6.6.",
+    "reason": "Glucose, cysteine, sulfide and carbonate are supplied from separately prepared anoxic stocks under specified gas atmospheres. The local flat record omits these boundaries. Resolve preparation-stage and stock-dose scope before supporting the flattened complete-medium amounts."
+  },
+  {
+    "id": "CultureMech:006227",
+    "medium_id": "650",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/650",
+    "source_sha256": "fdbfb5a84dab70fc5ca5fb99ad20cfbc3f471adfbe90612cb18834a0c7805dc8",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Boil under nitrogen gas and autoclave at 121°C for 15 min. Add 20 mM pyruvate after autoclaving.",
+    "reason": "Pyruvate is already present locally at 1.741 G_PER_L, but the source specifies a post-autoclave 20 mM addition. Verify the exact chemical form and use the source molar basis; do not endorse the imported mass conversion or confuse basal and supplemented preparation stages."
+  },
+  {
+    "id": "CultureMech:006236",
+    "medium_id": "659",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/659",
+    "source_sha256": "f6116997f0606a4728aa444cc87cd65f7550c895d0cefa49b0717dcaf4c819f3",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "After autoclaving add a lactose solution (sterilized by filtration) up to a concentration of 8.0 g/l, and 1.2 ml 1M CaCl2 x 2 H2O. Adjust pH to 7.15 ± 0.05.",
+    "reason": "The source specifies lactose to 8 g/l and a 1.2 ml 1 M calcium stock after autoclaving. The local calcium value is incorrectly represented as 1.2 G_PER_L and the stock boundary is missing. Resolve it without inventing a lactose stock dose or final volume."
+  },
+  {
+    "id": "CultureMech:006265",
+    "medium_id": "670",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/670",
+    "source_sha256": "23f5c91e96d81184193035a7012bc161c02613344bf8246951d4558a63fa6f97",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Dissolve ingredients except ferrous sulfate and adjust pH to 2.2 with 4 N H2SO4. Sterilize medium by autoclaving for 15 min at 121°C. Before use, add  FeSO4 x 7 H2O from a 40% (w/v) stock solution prepared with 0.2 N H2SO4 and filter-sterilized under 100% N2 gas atmosphere.",
+    "reason": "The 50 ml 40% w/v ferrous-sulfate stock in 0.2 N sulfuric acid is added to the autoclaved basal preparation. The local direct-ingredient representation loses the acidified stock and its separate preparation. Reconcile this boundary before approving main-medium scope; pH-variant children remain separate targets."
+  },
+  {
+    "id": "CultureMech:006269",
+    "medium_id": "673",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/673",
+    "source_sha256": "f9ac85d56271c462168625b9dbcca63e543c3d9533d3cc3c7dc86ebf1fcdf33e",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled for a few minutes not autoclaved; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive days; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere.",
+    "reason": "The table and preparation disagree on sulfur (5 g versus 10 g) and yeast extract (1 g versus 20 ml of 10% w/v), and the late 10 ml 3% w/v sulfide stock is absent locally. Original-recipe reconciliation is required; the flat source table is not one internally consistent complete formulation."
+  },
+  {
+    "id": "CultureMech:006271",
+    "medium_id": "675",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/675",
+    "source_sha256": "731589616c8a992664a6290b18db5dfb4bde2c843df1b7a0cf8bef7065f7632e",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "Soil extract is prepared by sieving air dried garden soil through a coarse sieve and autoclaving 400 g with 960 ml of distilled water at 121°C for one hour. After the mixture is cool and settled, the supernatant is carefully decanted, filtered through paper, autoclaved in 200 ml quantities, and stored at room temperature until cleared by sedimentation.",
+    "reason": "The recipe uses 500 ml prepared soil extract, locally encoded as 500 G_PER_L. Its 400 g soil and 960 ml extraction-water inputs are not retained-solute concentrations. Reconstruct the extraction and receiving dose without assuming extraction yield or a final-volume basis."
+  },
+  {
+    "id": "CultureMech:006273",
+    "medium_id": "677",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/677",
+    "source_sha256": "3a467ff032dfc783acf6dfd42e0f97c046523a3f952fd63475ee9f4211187f1e",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Dissolve ingredients except glucose, cysteine and sulfide. Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, then dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of the complete medium to 7.0 - 7.2, if necessary.",
+    "reason": "The source excludes glucose, cysteine and sulfide from the autoclaved basal medium and adds them from separate anoxic stocks. The local flat recipe omits those preparation boundaries and has no doses or stock strengths. Resolve them before supporting complete-medium scope."
+  },
+  {
+    "id": "CultureMech:006312",
+    "medium_id": "694",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/694",
+    "source_sha256": "4efd8ba68dd5e959f4e8c0f720c90f2c1ae0f78ce3a502e3498326f380d15f39",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      3
+    ],
+    "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"attribute\": \"100 mM\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.246476,\n                        \"mmol_l\": 1,\n                        \"optional\": 0\n                    }",
+    "reason": "Magnesium is a 10 ml 100 mM stock, thiamine has an unqualified percent basis, and n-octane is supplied by evaporation. The local flat quantities do not represent those contexts. Resolve them without inferring a fixed octane dose or endorsing an unsupported percentage conversion."
+  },
+  {
+    "id": "CultureMech:006313",
+    "medium_id": "695",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/695",
+    "source_sha256": "f01b8d7fa6b47ef25662f6c463594b84e3a08e58be1321123e8f3a1786e2c7a7",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      4
+    ],
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Fe(III) citrate\",\n                        \"compound_id\": 45,\n                        \"attribute\": \"5%\",\n                        \"amount\": 2,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.408257,\n                        \"optional\": 0\n                    }",
+    "reason": "The 2 ml Fe(III)-citrate stock has an unqualified 5% strength, and 700 ml artificial seawater is encoded locally as G_PER_L. Resolve stock composition, seawater input and denominator scope; the recipe also contains 300 ml water and does not establish an independently measured final volume."
+  },
+  {
+    "id": "CultureMech:006314",
+    "medium_id": "696",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/696",
+    "source_sha256": "ff0f26ee002cbaf95ebf27bfedc28a25e7ade48bc1f447206323cade4d565ae9",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "After sterilization add 5% bovine serum.",
+    "reason": "Bovine serum is already present locally at 50 G_PER_L, but the source gives a post-sterilization 5% addition without a percentage basis. Resolve the serum unit and preparation stage before endorsing concentrations of the supplemented medium."
+  },
+  {
+    "id": "CultureMech:006402",
+    "medium_id": "750",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/750",
+    "source_sha256": "8a5b7610f85281a247896acade2110a822dae82330fecafd6b0d5ae4d60edef1",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      1,
+      "step"
+    ],
+    "snippet": "After sterilisation, cool to 50°C and add 10 ml methanol.",
+    "reason": "The source adds 10 ml methanol after sterilization to a recipe containing 1000 ml water. The local 7.92 G_PER_L depends on density and denominator assumptions not established here. Reconcile the late volume input and preparation stage before supporting complete-medium scope."
+  },
+  {
+    "id": "CultureMech:006404",
+    "medium_id": "752",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/752",
+    "source_sha256": "98785bd99bf229b606d152e629b99cf6856c03be746030e30d1c6bc17e116857",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "recipe",
+      6
+    ],
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"attribute\": \"0.36g/l\",\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+    "reason": "The current record is liquid, so the separate agar/carbonate alternative is not grounds for a liquid-state conflict. However, 1 ml manganese and iron stocks (0.36 g/l and 50 g/l) are both encoded locally as 1 G_PER_L without stock boundaries. Resolve those dose errors before supporting the complete liquid formulation."
+  },
+  {
+    "id": "CultureMech:006417",
+    "medium_id": "762",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/762",
+    "source_sha256": "567565cf771331bb6f4fb7fb0954797839ef64a178309f5a5f73b3625492dae1",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Prepare the medium without Na2CO3 and NaHCO3 in 900 ml distilled water and autoclave. Prepare the Na2CO3 and NaHCO3 in 100 ml water, sterilise separately and add to the cooled medium. Final pH 9.5-10.0.",
+    "reason": "The source prepares the base in 900 ml water and the carbonate/bicarbonate portion separately in 100 ml water. Local direct ingredients omit this stock/preparation boundary. Preserve source input volumes, not an assumed measured final litre."
+  },
+  {
+    "id": "CultureMech:006480",
+    "medium_id": "781",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/781",
+    "source_sha256": "a9c00d2ef1c7709934dd1eb95818e52b54162b769705d580109c8261171fc839",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Dung extract: Boil an average sized piece of horse dung (fresh or frozen) for two hours in 150 ml water using a water bath; filter and use immediately. Sterilize at 121°C for 15 min.",
+    "reason": "The receiving recipe adds 100 ml prepared extract, locally encoded as 100 G_PER_L. The 150 ml extraction water and unquantified starting material describe a separate preparation, not a final-medium concentration or known extraction yield. Reconstruct that preparation and dose first."
+  },
+  {
+    "id": "CultureMech:006486",
+    "medium_id": "785",
+    "fields": [
+      "*"
+    ],
+    "reference": "https://mediadive.dsmz.de/rest/medium/785",
+    "source_sha256": "7fbf3234859f250901597edbfbcacd9318f2e60ce53cd6c40771eba8c02d9b57",
+    "source_pointer": [
+      "data",
+      "solutions",
+      0,
+      "steps",
+      0,
+      "step"
+    ],
+    "snippet": "Note: sterilize dissolved sodium carbonate and sodium chloride separately and mix with the other sterile components.",
+    "reason": "Sodium carbonate and sodium chloride are dissolved and sterilized separately before mixing with other sterile components. The local record omits those preparations and their volume allocation. Resolve stock/preparation boundaries and the optional agar branch before supporting complete-medium scope."
+  }
+]

@@ -15,16 +15,23 @@ notes: UTEX prepares Euglena Medium from dH2O, sodium acetate, beef extract, try
   yeast extract, and calcium chloride dihydrate.
 ingredients:
 - preferred_term: dH2O
-  concentration:
-    value: '1000'
-    unit: ML_PER_L
   term:
     id: CHEBI:15377
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: water
-  notes: UTEX starts the 1 L Euglena Medium recipe with approximately 950 mL dH2O.
+  notes: Start with approximately 950 mL dH2O, then bring the supplemented medium
+    to 1 L total with additional dH2O. The exact combined water dose is not specified.
+  evidence:
+  - reference: https://utex.org/products/euglena-medium
+    supports: SUPPORT
+    snippet: Bring the total volume to 1 L with dH2O.
+    explanation: 'Supports ingredients[0].notes for dH2O. Remove the unsupported final-fraction
+      slot while retaining the source preparation input in notes. No final water/carrier
+      fraction can be calculated from an initial portion and unspecified makeup dose.
+      Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition table
+      and Directions.'
 - preferred_term: Sodium acetate
   concentration:
     value: '12.2'
@@ -41,6 +48,17 @@ ingredients:
   notes: UTEX lists 1 g/L sodium acetate, for 12.2 mM final.
   nutritional_roles:
   - CARBON_SOURCE
+  evidence:
+  - reference: https://utex.org/products/euglena-medium
+    supports: SUPPORT
+    snippet: 12.2 mM
+    explanation: 'Supports ingredients[1].concentration for Sodium acetate. Retain
+      the numeric value with exact source evidence and any explicitly stated preparation
+      basis. Directly retain the source table value and unit; no mass/molar conversion
+      is performed. The printed rounded molarity is a source assertion, not an independent
+      certification of molecular weight or supplied chemical identity. Separate basis
+      excerpt: ''For 1 L Total''. Locator: #recipe, composition table and Directions.
+      Component cell: ''Sodium acetate(Fisher BP 333)''; amount cell: ''1 g/L''.'
 - preferred_term: Beef extract
   concentration:
     value: '1'
@@ -55,6 +73,16 @@ ingredients:
   nutritional_roles:
   - CARBON_SOURCE
   - NITROGEN_SOURCE
+  evidence:
+  - reference: https://utex.org/products/euglena-medium
+    supports: SUPPORT
+    snippet: 1 g/L
+    explanation: 'Supports ingredients[2].concentration for Beef extract. Retain the
+      numeric value with exact source evidence and any explicitly stated preparation
+      basis. Directly retain the source table value and unit; no mass/molar conversion
+      is performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition
+      table and Directions. Component cell: ''Beef extract(Sigma B-4888)''; amount
+      cell: ''1 g/L''.'
 - preferred_term: Tryptone
   concentration:
     value: '2'
@@ -69,6 +97,16 @@ ingredients:
   nutritional_roles:
   - CARBON_SOURCE
   - NITROGEN_SOURCE
+  evidence:
+  - reference: https://utex.org/products/euglena-medium
+    supports: SUPPORT
+    snippet: 2 g/L
+    explanation: 'Supports ingredients[3].concentration for Tryptone. Retain the numeric
+      value with exact source evidence and any explicitly stated preparation basis.
+      Directly retain the source table value and unit; no mass/molar conversion is
+      performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition
+      table and Directions. Component cell: ''Tryptone(Sigma T 9410))''; amount cell:
+      ''2 g/L''.'
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -83,6 +121,16 @@ ingredients:
   nutritional_roles:
   - CARBON_SOURCE
   - NITROGEN_SOURCE
+  evidence:
+  - reference: https://utex.org/products/euglena-medium
+    supports: SUPPORT
+    snippet: 2 g/L
+    explanation: 'Supports ingredients[4].concentration for Yeast extract. Retain
+      the numeric value with exact source evidence and any explicitly stated preparation
+      basis. Directly retain the source table value and unit; no mass/molar conversion
+      is performed. Separate basis excerpt: ''For 1 L Total''. Locator: #recipe, composition
+      table and Directions. Component cell: ''Yeast extract(Bacto, Difco)''; amount
+      cell: ''2 g/L''.'
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.07'
@@ -97,6 +145,17 @@ ingredients:
     supplier_name: Sigma
     catalog_number: C-3881
   notes: UTEX lists 0.01 g/L CaCl2 x 2 H2O, for 0.07 mM final.
+  evidence:
+  - reference: https://utex.org/products/euglena-medium
+    supports: SUPPORT
+    snippet: 0.07 mM
+    explanation: 'Supports ingredients[5].concentration for CaCl2 x 2 H2O. Retain
+      the numeric value with exact source evidence and any explicitly stated preparation
+      basis. Directly retain the source table value and unit; no mass/molar conversion
+      is performed. The printed rounded molarity is a source assertion, not an independent
+      certification of molecular weight or supplied chemical identity. Separate basis
+      excerpt: ''For 1 L Total''. Locator: #recipe, composition table and Directions.
+      Component cell: ''CaCl2•2H2O(Sigma C-3881)''; amount cell: ''0.01 g/L''.'
 solutions: []
 preparation_steps:
 - step_number: 1
@@ -157,10 +216,96 @@ curation_history:
   source: https://utex.org/products/euglena-medium
   notes: UTEX prepares Euglena Medium from dH2O, sodium acetate, beef extract, tryptone,
     yeast extract, and calcium chloride dihydrate.
+- timestamp: '2026-10-10T21:08:21.569593+00:00'
+  curator: codex
+  action: CURATED_UTEX_ORGANIC_MEDIUM_INPUT_BASES_AND_CONCENTRATION_EVIDENCE
+  notes: Exact source-URL and snippet evidence for input doses, optional agar and
+    retained concentrations. Chemical identity mappings and unrelated growth/role
+    claims are unchanged, not independently certified. No taxa-media association added.
+  source: https://utex.org/products/euglena-medium
+  changes: '{"claims": [{"basis_snippet": "For 1 L Total", "calculation": "No final
+    water/carrier fraction can be calculated from an initial portion and unspecified
+    makeup dose.", "decision": "Remove the unsupported final-fraction slot while retaining
+    the source preparation input in notes.", "field": "ingredients[0].concentration",
+    "ingredient": "dH2O", "locator": "#recipe, composition table and Directions",
+    "old": {"unit": "ML_PER_L", "value": "1000"}, "proposed": null, "proposed_field":
+    "ingredients[0].notes", "reference": "https://utex.org/products/euglena-medium",
+    "snippet": "Bring the total volume to 1 L with dH2O.", "status": "unsupported"},
+    {"basis_snippet": "For 1 L Total", "calculation": "Directly retain the source
+    table value and unit; no mass/molar conversion is performed. The printed rounded
+    molarity is a source assertion, not an independent certification of molecular
+    weight or supplied chemical identity.", "component_snippet": "Sodium acetate(Fisher
+    BP 333)", "decision": "Retain the numeric value with exact source evidence and
+    any explicitly stated preparation basis.", "field": "ingredients[1].concentration",
+    "ingredient": "Sodium acetate", "locator": "#recipe, composition table and Directions",
+    "old": {"unit": "MILLIMOLAR", "value": "12.2"}, "proposed": {"unit": "MILLIMOLAR",
+    "value": "12.2"}, "reference": "https://utex.org/products/euglena-medium", "snippet":
+    "12.2 mM", "source_amount": "1 g/L", "source_table_column": 4, "source_table_row":
+    1, "status": "evidence_only"}, {"basis_snippet": "For 1 L Total", "calculation":
+    "Directly retain the source table value and unit; no mass/molar conversion is
+    performed.", "component_snippet": "Beef extract(Sigma B-4888)", "decision": "Retain
+    the numeric value with exact source evidence and any explicitly stated preparation
+    basis.", "field": "ingredients[2].concentration", "ingredient": "Beef extract",
+    "locator": "#recipe, composition table and Directions", "old": {"unit": "G_PER_L",
+    "value": "1"}, "proposed": {"unit": "G_PER_L", "value": "1"}, "reference": "https://utex.org/products/euglena-medium",
+    "snippet": "1 g/L", "source_amount": "1 g/L", "source_table_column": 2, "source_table_row":
+    2, "status": "evidence_only"}, {"basis_snippet": "For 1 L Total", "calculation":
+    "Directly retain the source table value and unit; no mass/molar conversion is
+    performed.", "component_snippet": "Tryptone(Sigma T 9410))", "decision": "Retain
+    the numeric value with exact source evidence and any explicitly stated preparation
+    basis.", "field": "ingredients[3].concentration", "ingredient": "Tryptone", "locator":
+    "#recipe, composition table and Directions", "old": {"unit": "G_PER_L", "value":
+    "2"}, "proposed": {"unit": "G_PER_L", "value": "2"}, "reference": "https://utex.org/products/euglena-medium",
+    "snippet": "2 g/L", "source_amount": "2 g/L", "source_table_column": 2, "source_table_row":
+    3, "status": "evidence_only"}, {"basis_snippet": "For 1 L Total", "calculation":
+    "Directly retain the source table value and unit; no mass/molar conversion is
+    performed.", "component_snippet": "Yeast extract(Bacto, Difco)", "decision": "Retain
+    the numeric value with exact source evidence and any explicitly stated preparation
+    basis.", "field": "ingredients[4].concentration", "ingredient": "Yeast extract",
+    "locator": "#recipe, composition table and Directions", "old": {"unit": "G_PER_L",
+    "value": "2"}, "proposed": {"unit": "G_PER_L", "value": "2"}, "reference": "https://utex.org/products/euglena-medium",
+    "snippet": "2 g/L", "source_amount": "2 g/L", "source_table_column": 2, "source_table_row":
+    4, "status": "evidence_only"}, {"basis_snippet": "For 1 L Total", "calculation":
+    "Directly retain the source table value and unit; no mass/molar conversion is
+    performed. The printed rounded molarity is a source assertion, not an independent
+    certification of molecular weight or supplied chemical identity.", "component_snippet":
+    "CaCl2\u20222H2O(Sigma C-3881)", "decision": "Retain the numeric value with exact
+    source evidence and any explicitly stated preparation basis.", "field": "ingredients[5].concentration",
+    "ingredient": "CaCl2 x 2 H2O", "locator": "#recipe, composition table and Directions",
+    "old": {"unit": "MILLIMOLAR", "value": "0.07"}, "proposed": {"unit": "MILLIMOLAR",
+    "value": "0.07"}, "reference": "https://utex.org/products/euglena-medium", "snippet":
+    "0.07 mM", "source_amount": "0.01 g/L", "source_table_column": 4, "source_table_row":
+    5, "status": "evidence_only"}, {"basis_snippet": "For 1 L Total", "calculation":
+    "Literal source batch dose; no universal final concentration is derived.", "decision":
+    "Preserve as an inline optional formulation, not a liquid-parent ingredient.",
+    "field": "variants[0].modifications", "ingredient": "agar", "locator": "#recipe,
+    Directions, optional agar instruction", "old": null, "proposed": ["After making
+    up the liquid recipe to 1 L, add 15 g agar; do not mix."], "reference": "https://utex.org/products/euglena-medium",
+    "snippet": "For 1.5% agar medium add 15 g of agar into the flask; do not mix.",
+    "status": "add"}], "counts": {"bibliographic_entries_enriched": 1, "ingredient_context_notes_corrected":
+    1, "inline_variant_options_added": 1, "new_curation_history": 1, "new_evidence":
+    7, "unsupported_quantity_slots_removed": 1}}'
 references:
 - reference: UTEX:euglena-medium
 - reference: https://utex.org/products/euglena-medium
+  title: Euglena Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; Named authors, publication year and DOI not established.
 original_name: Euglena Medium
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+variants:
+- name: Euglena Medium with agar
+  relationship: SUPPLEMENTED_VARIANT
+  description: Optional source-listed agar formulation; the parent remains liquid.
+  modifications:
+  - After making up the liquid recipe to 1 L, add 15 g agar; do not mix.
+  purpose: Preserve the separately specified solid formulation
+  evidence:
+  - reference: https://utex.org/products/euglena-medium
+    supports: SUPPORT
+    snippet: For 1.5% agar medium add 15 g of agar into the flask; do not mix.
+    explanation: Supports variants[0].modifications only. The source labels this the
+      1.5% agar formulation; no new measured final volume after agar addition is claimed.
+      No agar is added to the liquid parent.

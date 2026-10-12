@@ -16,6 +16,32 @@ composition:
     label: potassium hydroxide
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5229
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "KOH",
+                      "compound_id": 126,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.28,
+                      "unit": "g",
+                      "g_l": 11.2,
+                      "mmol_l": 199.622,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (KOH) in
+      MediaDive solution 5229; locator=$.data.recipe[0] (compound_id=126). Provider
+      explicitly reports g_l=11.2. Arithmetic check: 0.28 g * 1 g/g / (25 ml / 1000
+      ml per L) = 11.2 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 25. Retrieved 2026-10-07T09:52:28.437498+00:00; response SHA256=926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585.'
 - preferred_term: Ethanol
   concentration:
     value: '1000.0'
@@ -40,6 +66,32 @@ composition:
     label: hemin
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5229
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Hemin",
+                      "compound_id": 704,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.1,
+                      "unit": "g",
+                      "g_l": 4,
+                      "mmol_l": 6.13591,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Hemin)
+      in MediaDive solution 5229; locator=$.data.recipe[2] (compound_id=704). Provider
+      explicitly reports g_l=4. Arithmetic check: 0.1 g * 1 g/g / (25 ml / 1000 ml
+      per L) = 4 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 25. Retrieved 2026-10-07T09:52:28.437498+00:00; response SHA256=926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585.'
 preparation_notes: 'Adjust volume to 100 ml with distilled water.
 
 
@@ -72,6 +124,16 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:53:16.572361+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5229
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "11.2"} ->
+    {"unit": "G_PER_L", "value": "11.2"} (evidence_only); composition[2].concentration:
+    {"unit": "G_PER_L", "value": "4"} -> {"unit": "G_PER_L", "value": "4"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -80,3 +142,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5229
+  title: 'MediaDive solution 5229: Hemin solution'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

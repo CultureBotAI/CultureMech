@@ -16,6 +16,32 @@ composition:
     label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4518
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.45,
+                      "unit": "g",
+                      "g_l": 4.5,
+                      "mmol_l": 33.0673,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (KH2PO4)
+      in MediaDive solution 4518; locator=$.data.recipe[0] (compound_id=11). Provider
+      explicitly reports g_l=4.5. Arithmetic check: 0.45 g * 1 g/g / (100 ml / 1000
+      ml per L) = 4.5 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 100. Retrieved 2026-10-07T09:44:34.216564+00:00; response SHA256=5b7f1b64eb3f454ea2bd1ed700bef25de3b48d7faac0027f7ccbf6b8494af241.'
 - preferred_term: K2HPO4
   concentration:
     value: '4.5'
@@ -28,10 +54,36 @@ composition:
     label: dipotassium hydrogen phosphate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4518
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "K2HPO4",
+                      "compound_id": 10,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.45,
+                      "unit": "g",
+                      "g_l": 4.5,
+                      "mmol_l": 25.8359,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (K2HPO4)
+      in MediaDive solution 4518; locator=$.data.recipe[1] (compound_id=10). Provider
+      explicitly reports g_l=4.5. Arithmetic check: 0.45 g * 1 g/g / (100 ml / 1000
+      ml per L) = 4.5 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 100. Retrieved 2026-10-07T09:44:34.216564+00:00; response SHA256=5b7f1b64eb3f454ea2bd1ed700bef25de3b48d7faac0027f7ccbf6b8494af241.'
 - preferred_term: Distilled water
   concentration:
-    value: '1000.0'
-    unit: PERCENT_V_V
+    value: '0.1'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -40,6 +92,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4518
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 100,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Distilled
+      water) in MediaDive solution 4518; locator=$.data.recipe[2] (compound_id=4).
+      Source water addition is 100 ml per prepared batch: 100 / 1000 = 0.1 L. No source
+      preparation step gives a competing make-up instruction. This is a batch dose,
+      not a volume percentage; no final-volume or solvent-density assumption is made.
+      Additional exact excerpt at $.data.volume: "volume": 100. Retrieved 2026-10-07T09:44:34.216564+00:00;
+      response SHA256=5b7f1b64eb3f454ea2bd1ed700bef25de3b48d7faac0027f7ccbf6b8494af241.'
 preparation_notes: 'Original volume: 100 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:31.583990Z'
@@ -69,6 +146,18 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:46:43.027838+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/4518
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "4.5"} -> {"unit":
+    "G_PER_L", "value": "4.5"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "4.5"} -> {"unit": "G_PER_L", "value": "4.5"} (evidence_only);
+    composition[2].concentration: {"unit": "PERCENT_V_V", "value": "1000.0"} -> {"unit":
+    "L", "value": "0.1"} (correct)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -77,3 +166,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/4518
+  title: 'MediaDive solution 4518: Solution B'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=5b7f1b64eb3f454ea2bd1ed700bef25de3b48d7faac0027f7ccbf6b8494af241;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

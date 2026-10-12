@@ -1,0 +1,49 @@
+{
+  "terminal": true,
+  "phase": "baseline",
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "schema-MediaRecipe",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/linkml-validate",
+        "--schema",
+        "src/culturemech/schema/culturemech.yaml",
+        "--target-class",
+        "MediaRecipe",
+        "data/normalized_yaml/bacterial/KOMODO_1157_PYEM_medium.yaml",
+        "data/normalized_yaml/bacterial/pyem_medium.yaml",
+        "data/normalized_yaml/archaea/KOMODO_1164_HALOMICROBIUM_KATESII_medium.yaml",
+        "data/normalized_yaml/archaea/halomicrobium_katesii_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-baseline-schema-MediaRecipe.log",
+      "artifact": null
+    },
+    {
+      "name": "schema-SolutionRecipe",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/linkml-validate",
+        "--schema",
+        "src/culturemech/schema/culturemech.yaml",
+        "--target-class",
+        "SolutionRecipe",
+        "data/normalized_yaml/bacterial/mediadive_2323_Main_sol_1157.yaml",
+        "data/normalized_yaml/bacterial/mediadive_2333_Main_sol_1164.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-baseline-schema-SolutionRecipe.log",
+      "artifact": null
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/stocks-1157-baseline-strict.log",
+      "artifact": null
+    }
+  ]
+}

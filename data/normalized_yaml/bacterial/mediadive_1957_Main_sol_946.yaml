@@ -16,6 +16,33 @@ composition:
     label: ammonium chloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1957
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "NH4Cl",
+                      "compound_id": 42,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.33,
+                      "unit": "g",
+                      "g_l": 0.326409,
+                      "mmol_l": 6.10225,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (NH4Cl)
+      in MediaDive solution 1957; locator=$.data.recipe[1] (compound_id=42). Provider
+      explicitly reports g_l=0.326409. Arithmetic check: 0.33 g * 1 g/g / (1011 ml
+      / 1000 ml per L) = 0.3264094955489614243323442136 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1011. Retrieved 2026-10-07T08:58:05.255152+00:00;
+      response SHA256=66354aa9aa46b088deee89fd0d596332fd3eaa33c43f5e5e2d53200ccf32eb7d.'
 - preferred_term: KH2PO4
   concentration:
     value: '0.326409'
@@ -28,6 +55,33 @@ composition:
     label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1957
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.33,
+                      "unit": "g",
+                      "g_l": 0.326409,
+                      "mmol_l": 2.39857,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (KH2PO4)
+      in MediaDive solution 1957; locator=$.data.recipe[2] (compound_id=11). Provider
+      explicitly reports g_l=0.326409. Arithmetic check: 0.33 g * 1 g/g / (1011 ml
+      / 1000 ml per L) = 0.3264094955489614243323442136 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1011. Retrieved 2026-10-07T08:58:05.255152+00:00;
+      response SHA256=66354aa9aa46b088deee89fd0d596332fd3eaa33c43f5e5e2d53200ccf32eb7d.'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.00049456'
@@ -64,6 +118,33 @@ composition:
     label: sodium carbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1957
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1.5,
+                      "unit": "g",
+                      "g_l": 1.48368,
+                      "mmol_l": 13.9986,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[4].concentration (Na2CO3)
+      in MediaDive solution 1957; locator=$.data.recipe[6] (compound_id=32). Provider
+      explicitly reports g_l=1.48368. Arithmetic check: 1.5 g * 1 g/g / (1011 ml /
+      1000 ml per L) = 1.483679525222551928783382789 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1011. Retrieved 2026-10-07T08:58:05.255152+00:00;
+      response SHA256=66354aa9aa46b088deee89fd0d596332fd3eaa33c43f5e5e2d53200ccf32eb7d.'
 - preferred_term: Na-formate
   concentration:
     value: '2.96736'
@@ -76,6 +157,33 @@ composition:
     label: sodium formate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1957
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 8,
+                      "compound": "Na-formate",
+                      "compound_id": 144,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 3,
+                      "unit": "g",
+                      "g_l": 2.96736,
+                      "mmol_l": 43.633,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (Na-formate)
+      in MediaDive solution 1957; locator=$.data.recipe[7] (compound_id=144). Provider
+      explicitly reports g_l=2.96736. Arithmetic check: 3 g * 1 g/g / (1011 ml / 1000
+      ml per L) = 2.967359050445103857566765579 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1011. Retrieved 2026-10-07T08:58:05.255152+00:00;
+      response SHA256=66354aa9aa46b088deee89fd0d596332fd3eaa33c43f5e5e2d53200ccf32eb7d.'
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.593472'
@@ -88,6 +196,33 @@ composition:
     label: sodium sulfide nonahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1957
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 10,
+                      "compound": "Na2S x 9 H2O",
+                      "compound_id": 54,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.6,
+                      "unit": "g",
+                      "g_l": 0.593472,
+                      "mmol_l": 2.47093,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[6].concentration (Na2S x
+      9 H2O) in MediaDive solution 1957; locator=$.data.recipe[9] (compound_id=54).
+      Provider explicitly reports g_l=0.593472. Arithmetic check: 0.6 g * 1 g/g /
+      (1011 ml / 1000 ml per L) = 0.5934718100890207715133531157 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      1011. Retrieved 2026-10-07T08:58:05.255152+00:00; response SHA256=66354aa9aa46b088deee89fd0d596332fd3eaa33c43f5e5e2d53200ccf32eb7d.'
 - preferred_term: Distilled water
   concentration:
     value: '494.5598417408507'
@@ -141,6 +276,21 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 6 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:01:17.963098+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/1957
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "0.326409"}
+    -> {"unit": "G_PER_L", "value": "0.326409"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.326409"} -> {"unit": "G_PER_L", "value": "0.326409"}
+    (evidence_only); composition[4].concentration: {"unit": "G_PER_L", "value": "1.48368"}
+    -> {"unit": "G_PER_L", "value": "1.48368"} (evidence_only); composition[5].concentration:
+    {"unit": "G_PER_L", "value": "2.96736"} -> {"unit": "G_PER_L", "value": "2.96736"}
+    (evidence_only); composition[6].concentration: {"unit": "G_PER_L", "value": "0.593472"}
+    -> {"unit": "G_PER_L", "value": "0.593472"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -149,3 +299,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/1957
+  title: 'MediaDive solution 1957: Main sol. 946'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=66354aa9aa46b088deee89fd0d596332fd3eaa33c43f5e5e2d53200ccf32eb7d;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

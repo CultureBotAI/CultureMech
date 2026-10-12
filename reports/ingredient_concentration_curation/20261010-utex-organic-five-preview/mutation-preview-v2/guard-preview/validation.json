@@ -1,0 +1,83 @@
+{
+  "terminal": true,
+  "passed": true,
+  "created_at": "2026-10-10T21:35:26.443658+00:00",
+  "state": "uninstalled guard preview; application exercised only in temporary fixture repositories",
+  "plan_sha256": "00d8048ac77c967cbf9ec399260533b91f4854972403e50c330efc1dcb64f0b9",
+  "source_sha256": {
+    "scripts/review_utex_organic_five.py": "1d8b19217c58b1402b2fb229f26f1d5adbc50d7356d878a315950696d9fe4d58",
+    "tests/test_utex_organic_five.py": "a6e7f3e3fa32377183a9f38fdf0c3fae7316d9c55e98b53a10ad641649c67aca"
+  },
+  "patch_sha256": "66f2aba78b4d7e9cbda516caf9210ff4ca9e895006d7ef80c645afea47858ec1",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "--no-cov",
+        "-o",
+        "addopts=",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-organic-five-preview/mutation-preview-v2/guard-preview/test_utex_organic_five.py"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-organic-five-preview/mutation-preview-v2/guard-preview/check-00.log",
+      "log_sha256": "6a2c9f1d9ab4192f9bf0537f8aa1f988699595aba5c5e0e0741c977ee350eed2"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "--config",
+        "pyproject.toml",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-organic-five-preview/mutation-preview-v2/guard-preview/review_utex_organic_five.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-organic-five-preview/mutation-preview-v2/guard-preview/test_utex_organic_five.py"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-organic-five-preview/mutation-preview-v2/guard-preview/check-01.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--config",
+        "pyproject.toml",
+        "--check",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-organic-five-preview/mutation-preview-v2/guard-preview/review_utex_organic_five.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-organic-five-preview/mutation-preview-v2/guard-preview/test_utex_organic_five.py"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-organic-five-preview/mutation-preview-v2/guard-preview/check-02.log",
+      "log_sha256": "b9cf511501d306d2bd8355ccb165c8ddc0a6fdd62d7c72c4a7b1795cf8934c8c"
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-organic-five-preview/mutation-preview-v2/guard-preview/guard.patch"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-organic-five-preview/mutation-preview-v2/guard-preview/check-03.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-organic-five-preview/mutation-preview-v2/guard-preview/review_utex_organic_five.py",
+        "--dry-run"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-organic-five-preview/mutation-preview-v2/guard-preview/check-04.log",
+      "log_sha256": "a3a2bcfa47b5e27c75e5a154848fd281d006fc5094566424421a820a7cf23396"
+    }
+  ],
+  "authoritative_records_edited": 0,
+  "actual_schema_dry_run": {
+    "changed": 0,
+    "pending": 5,
+    "already_applied": 0
+  },
+  "limitation": "The cumulative audit registry, actual application and post-edit/publication checks remain outstanding."
+}

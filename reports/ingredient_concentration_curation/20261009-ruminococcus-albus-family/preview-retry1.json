@@ -1,0 +1,18 @@
+{
+  "terminal": true,
+  "created_at": "2026-10-09T07:30:53.137035+00:00",
+  "command": [
+    "/tmp/culturemech-goal-py313-20261007/bin/python",
+    "scripts/repair_ruminococcus_albus_family.py",
+    "--dry-run"
+  ],
+  "returncode": 0,
+  "normalized_count": 15910,
+  "normalized_sha256": "b2fe53f9a5f5c2a28ce3af156e7c8d7c95e000e1f150df9ac3799f8a4e454cfe",
+  "normalized_unchanged": true,
+  "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/preview-retry1.log",
+  "log_sha256": "eb5bd6ef1cbf440dc583cabbad11418acc0cf5baf6f4afafbe337bfa8c29decb",
+  "builder_sha256": "bd50694b6d094e72ced5c9869da14b889485d99b92f8a826fddfbbe92af5abff",
+  "application_enabled": false,
+  "plan_sha256": "47771aa8b0a5d36a7ae339456df36304c2cdabd7508ec526f8f269106bb14332"
+}

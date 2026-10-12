@@ -1,0 +1,41 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phases": [
+    {
+      "phase": "reports",
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/postflight-reports.log"
+    },
+    {
+      "phase": "cumulative",
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/postflight-cumulative.log"
+    },
+    {
+      "phase": "indexes",
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/postflight-indexes.log"
+    },
+    {
+      "phase": "retention",
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/postflight-retention.log"
+    },
+    {
+      "phase": "post",
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/postflight-post.log"
+    },
+    {
+      "phase": "corpus",
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/postflight-corpus.log"
+    },
+    {
+      "phase": "fast",
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-es/postflight-fast.log"
+    }
+  ]
+}

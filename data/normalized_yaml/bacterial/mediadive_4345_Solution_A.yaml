@@ -16,6 +16,33 @@ composition:
     label: sodium sulfate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4345
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "Na2SO4",
+                      "compound_id": 110,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2.8,
+                      "unit": "g",
+                      "g_l": 3.49127,
+                      "mmol_l": 24.5795,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Na2SO4)
+      in MediaDive solution 4345; locator=$.data.recipe[4] (compound_id=110). Provider
+      explicitly reports g_l=3.49127. Arithmetic check: 2.8 g * 1 g/g / (802 ml /
+      1000 ml per L) = 3.491271820448877805486284289 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 802. Retrieved 2026-10-07T09:42:56.163563+00:00;
+      response SHA256=ce43377bfa7afa7b1fd283d405fd428f60b250e0baf0076dfaff596e5615a277.'
 - preferred_term: Resazurin
   concentration:
     value: '0.00124688'
@@ -28,6 +55,33 @@ composition:
     label: Resazurin
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/4345
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Resazurin",
+                      "compound_id": 25,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 1,
+                      "unit": "mg",
+                      "g_l": 0.00124688,
+                      "mmol_l": 0.00544039,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Resazurin)
+      in MediaDive solution 4345; locator=$.data.recipe[5] (compound_id=25). Provider
+      explicitly reports g_l=0.00124688. Arithmetic check: 1 mg * 0.001 g/mg / (802
+      ml / 1000 ml per L) = 0.001246882793017456359102244389 g/L, consistent with
+      the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      802. Retrieved 2026-10-07T09:42:56.163563+00:00; response SHA256=ce43377bfa7afa7b1fd283d405fd428f60b250e0baf0076dfaff596e5615a277.'
 - preferred_term: Distilled water
   concentration:
     value: '928.927680798005'
@@ -75,6 +129,17 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:46:43.027838+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/4345
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "3.49127"}
+    -> {"unit": "G_PER_L", "value": "3.49127"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.00124688"} -> {"unit": "G_PER_L", "value": "0.00124688"}
+    (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -83,3 +148,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/4345
+  title: 'MediaDive solution 4345: Solution A'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=ce43377bfa7afa7b1fd283d405fd428f60b250e0baf0076dfaff596e5615a277;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

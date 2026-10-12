@@ -1,0 +1,219 @@
+{
+  "terminal": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "normalized_count": 15910,
+  "normalized_sha256": "3e69263bb0c82e782c51c5a994945630fbf3a3b9f685248e16d7daf3367f05fc",
+  "only_reviewed_records_changed": true,
+  "applied_records": 6,
+  "independent_audit_totals": {
+    "source_nodes": 147,
+    "old_quantity_slots": 130,
+    "claims": 433,
+    "new_evidence": 118,
+    "new_references": 6,
+    "new_curation_history": 6
+  },
+  "tests_passed": {
+    "focused-v2": "530 passed, 2 warnings in 117.70s (0:01:57)",
+    "fast": "12699 passed, 16 skipped, 2243 deselected, 2 warnings in 1789.03s (0:29:49)",
+    "qa": "106 passed in 115.12s (0:01:55)"
+  },
+  "reference_checks": {
+    "passed": 159,
+    "failed": 0,
+    "mode": "offline hash-checked official captures",
+    "fresh_refresh_passed": false
+  },
+  "remaining_failed_gates": [
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/post-18.log",
+      "log_sha256": "09a2922082db841587410042dc33d7d3f72b2601f1d6b6f2b33322471ee47f2c"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "reports/ingredient_concentration_curation/20261009-methanofollis-family/post-19.log",
+      "log_sha256": "bde558425e7a15841bf347566a4f52196cb5773cc1cba9a8d0e812c63e370971"
+    }
+  ],
+  "merge_verification": {
+    "name_conflicts": 1247,
+    "fingerprint_issues": 3287
+  },
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10781,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8736,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "corpus_checks": {
+    "strict_scanned": 15910,
+    "ids_passed": true,
+    "product_warnings": 91,
+    "product_skipped_no_adapter": 96004,
+    "cohort_variant_findings": 0,
+    "global_variant_findings": 0,
+    "chemical_groundings_recertified": false
+  },
+  "runtime_merge_retention": {
+    "cohort_medium_shaped_records": 2,
+    "standalone_solutions_excluded": 4,
+    "routing": {
+      "total_processed": 15910,
+      "excluded_solutions": 4785,
+      "skipped_no_fingerprint": 2,
+      "skipped_error": 336,
+      "successfully_fingerprinted": 10787,
+      "reasons": {
+        "other_error": 336,
+        "no_valid_ingredients": 2
+      }
+    },
+    "groups": 10781
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 825,
+    "new_quantity_slots": 364,
+    "unsupported_quantity_slots_removed": 869,
+    "new_evidence": 35769,
+    "new_curation_history": 5472,
+    "new_references": 5816,
+    "stock_stage_concentrations_rebased": 199,
+    "stock_descriptors_added": 241,
+    "quantity_corrections": 1455,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 88,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 7,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 14,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5258
+  },
+  "followup_unique_records": 11802,
+  "outside_this_followup": 4108,
+  "remaining_queues": {
+    "identity": 33,
+    "M142_separate": 71
+  },
+  "remaining_inventory": {
+    "family_count": 28,
+    "external_neighbor_count": 1,
+    "identity_error_count": 2,
+    "title_candidate_entries": 4859,
+    "title_candidate_paths": 4857
+  },
+  "taxa_media_associations_added": 0,
+  "environment_limit": "Existing partial locked Python 3.13 environment, not clean CI or full-suite certification",
+  "receipt_sha256": {
+    "apply": "acfafc9995d9ef292a0d601df939eb582f7ca163ec48e0cdc0ca6bd319279b92",
+    "audit": "8082d8540a7c3174d1967aa0d27a4b9e5d43fac943d8ac88d50741484d4a1c71",
+    "corpus": "4667f47d33a7231cc44a75cdebdb4df2198cc1d15c6a56cb1fdb50bf4c7168fd",
+    "cumulative-audit": "741e51ca682e19ac8e6e4cec9084778694d7f0147e078ceaab7f5a420c31262b",
+    "fast": "7717f51cf090d3eb00bc6569f0f6a45c42e8c4f0f272c22812d9ceaa28d74f71",
+    "focused": "f2d8583d9ec6529916cd8dca4cde58b27e2e88b346b71280409ea81541af0495",
+    "focused-v2": "3dc7ca64aba5ed622c198801f8c55535a671b245e1de7b8e93c79d5388e505c9",
+    "followup-coverage": "abd4b256279b65d47b51737e5335548fc1000dac31d4bf852949000be8513d9f",
+    "index-refresh-plan": "b97a5cb7dc5ba6ec52f18e54354307face6e3968dd86802d03da4f3ece57ec41",
+    "ledgers": "ca014412bda3b49fd96df965b60e84c3c983f01a1b45954bb212977e1af86d43",
+    "next-lb-identity-context": "a04d00578b9759780c8fc6b79a5fd26b01a14a3bcdbe57b0246b2b3e1bfcaac0",
+    "plan": "dc2a0e96231feac52125245dc55f41d3deb937970a06d151fba10d2fd63d7a4a",
+    "post": "b1729a5905a708f195615598cf9a9312b50fafd1409cb60dea362ff01a5b799a",
+    "presentation": "47aa3cb4c5371b88734f4e2eba6f40f9c49abbb9a68a2fd839db1fe782145d6d",
+    "presentation-applied": "c11e62fed37c45c6a4b65f48db01edf9d7df6c929c28e60b96e222b5802f5ce6",
+    "preview-rechecked": "bbbf268f88f7a31cd0dee3cb6f0b9c9a39a2738ac36e44499b14f793b137dcca",
+    "qa": "97f037226c37a183c34f856b67c3d93d3396bd2208b06e45aff33c856212e6bb",
+    "reconcile-indexes": "857c010f955d5b0c52af7534e559347c1ec6314966ff03b63be7ac4cad5e864a",
+    "reconcile-reports": "f58a2e1a99e687b8256f25a9de74188ca5a48d2cd6b24d1aac45bb5a80f2ccc6",
+    "reconcile-retention": "b8eca4563f99f65e42dce1bb55a78e086a61c5a620077f9e695d1da5fbb973ad",
+    "references": "6e82a2223c5ee9895a66ce2b9d2928321cd945a79a9d4976cd94034b90714c9d",
+    "remaining-inventory": "39e4ff70b21b9f345b9f3a852a5aa8b0829725962b66bbfe4983fc0be2dc07ba",
+    "remaining-queue": "6a1832e0120b13eae7c35e102f87d9372026e53c73e92a17f9af93ddb14f7250",
+    "schema": "63552496c7f5b27c6886a8a6b90651ad878c18cf9bdc8a475ec5446cbcb285a5",
+    "validation-preview": "e9c0f0d3dc5f49528e395fc3a88ea2f1eef2aacd3a0853584baa246e378058ab"
+  },
+  "code_sha256": {
+    "scripts/repair_methanofollis_family.py": "197c33dd0b0f2057faf29f891473668e31156690a5abe25171d6ed6afc62b7f3",
+    "tests/test_methanofollis_family.py": "967d2e55a423d2fccdc3ea213a28628f9a690d4b77078ec7ebab89dee74e81a0",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-methanofollis-family/audit.py": "8d75f631a9d4d12b7cf8f932e70834817c6bb7efc7e077f092b78d3a460fa82e",
+    "scripts/repair_rumen_bacteria_family.py": "d3c23bf4b7141ffcc038f596fc7cad69c19372a5ecedaee21dbf6d99950fdf36",
+    "scripts/repair_oteb_family.py": "90aa83324ff1b28708921a00c409f50b4c4bd12eb15f09ae8feb0e1010916795",
+    "scripts/repair_methanogen_stock_boundaries.py": "8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba",
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "scripts/repair_jcm_stock_preparations.py": "7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a",
+    "scripts/repair_mediadive_stock_concentration_evidence.py": "1badfa99205690cf6082d95db7dafbd6d4927b617027bc61fbaaf9dbd597c974",
+    "scripts/review_medium_concentration_evidence.py": "ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a",
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "src/culturemech/validation/write_validated.py": "8e1e2185231caecbe3dc99908c783cd83340b1e93fa9115ff1445d4b3820897e",
+    "src/culturemech/schema/culturemech.yaml": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a",
+    "tests/test_medium_concentration_batch.py": "acf85f32c20c3b46f6c94123617981c72cf785d624776fe8055bf80531d4b8b7",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "c74216c6738ce5077fadcc0d53ebec6decb7e6f34130f210efb8e43906407a09",
+    "tests/conftest.py": "f43cf452431b950a079fcee0a3c7e978067039fba749c956da1c94510c33b68b",
+    "scripts/validate_media_variant_links.py": "d18ef71320a0c50abe085e151d0d0d4d963007d1e1c9afbefab97581a983e31e"
+  },
+  "canonical_report_sha256": {
+    "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/archaea/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml.md": "76a6afc53ebd5d815d4d3b9494924db4b34013578ad8b79b5ffee96b09321a8c",
+    "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/archaea/methanofollis_medium.yaml.md": "d35663e62a0c4680794fa4024e5d63c12275cb362d9a822acd407bb779977340",
+    "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_209_Fatty_acid_mixture.yaml.md": "b4e0fea739e2ae4d66a2d517fcf24b4e3f0368c3b8747e6b778669f438bc752f",
+    "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_241_Modified_Wolin_s_mineral_solution.yaml.md": "85711deb9d1cb52d632f21b8cd3493537940ca22b7dc3ac0fec860b073302109",
+    "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0000-0500/records/bacterial/mediadive_277_Main_sol_161.yaml.md": "3998c4904411521dcf3e08bef1c29b8a8fa6b3a606ae2fcc000a55a5f5cd9870",
+    "reports/ingredient_concentration_curation/20261007-mediadive-stocks/mediadive_5980_Wolin_s_vitamin_solution_10x.md": "f2fe262502bc7b014e102df78f0d05196f15c28c02908757d89ab110de98be56"
+  },
+  "applied_ledger_sha256": {
+    "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/D161.md": "a1acec42c8876c97a60a6f82214baf9c710b61f7739222d4f826a32fada77610",
+    "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/K161.md": "ae9d82e9b5f7da211c6f143341c3bf5c63f5b252cc15a7fb7e7997cc31ebfa22",
+    "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/S209.md": "c0820965f2231fb4577b30037f73099305083f5ddee16cf28d2a362890088ec5",
+    "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/S241.md": "6ceaa54e2d6ef3105595dbcbd410fb652e6756d3d817d3494066b124659f30fa",
+    "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/S277.md": "4ddd19a5bcdf0c8fc60d2000f2a4a6bb5fc61970b39a40f832b651e137311841",
+    "reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/S5980.md": "c73b7cc5dca7e8446e5dcac3c02cecbf25ba80fc42e07f36bae71d94199e5167"
+  }
+}

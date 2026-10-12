@@ -1,0 +1,79 @@
+{
+  "terminal": true,
+  "all_record_goal_complete": false,
+  "normalized_inventory": {
+    "count": 15910,
+    "sha256": "d0d0451157b8ed78867e41503fd02bc9afa0f80d11758d67a3f60e9daee6b138"
+  },
+  "normalized_edits": 0,
+  "new_evidence_entries": 0,
+  "recipe_and_evidence_bytes_unchanged": true,
+  "tests_passed": {
+    "focused": "523 passed, 2 warnings in 39.43s",
+    "fast": "9913 passed, 16 skipped, 1945 deselected, 2 warnings in 682.89s (0:11:22)"
+  },
+  "reference_checks": {
+    "total": 240,
+    "passed": 240
+  },
+  "cli_commands_passed": 13,
+  "refreshed_identical_sources": 15,
+  "NBRC_matcher_issue": "Locally resolved for the inspected 1219 catalogue table; original failed receipt retained.",
+  "scope_inventory": {
+    "record_count": 196,
+    "reference_entries": 199,
+    "unique_urls": 188,
+    "snippet_entries": 1,
+    "title_entries": 1
+  },
+  "scope_limit": "Other NBRC URLs are inventoried, not source-verified by this batch. Literal occurrence checks do not establish concentration arithmetic or scientific entailment.",
+  "cumulative_edited_records": 5187,
+  "cumulative_evidence_entries": 33319,
+  "followup_unique_records": 11798,
+  "outside_this_followup": 4112,
+  "unchanged_corpus_validation": {
+    "receipt": "reports/ingredient_concentration_curation/20261009-middlebrook-stages/validation.json",
+    "sha256": "57e2f6484f812e2bd484b215813ae31c44a43f31880f44768e429241a137866c",
+    "corpus_checks": {
+      "strict_scanned": 15910,
+      "ids_passed": true,
+      "product_warnings": 91,
+      "product_skipped_no_adapter": 96053,
+      "chemical_groundings_recertified": false
+    },
+    "merge_verification": {
+      "name_conflicts": 1247,
+      "fingerprint_issues": 3287
+    },
+    "freshness": {
+      "tracked_total": 6320,
+      "fresh_total": 10777,
+      "only_in_tracked": 4275,
+      "only_in_fresh": 8732,
+      "changed": 2045,
+      "unchanged": 0
+    }
+  },
+  "next_linked_records": 11,
+  "next_source_rows": 233,
+  "next_records_applied": false,
+  "next_identical_refreshed_sources": 14,
+  "next_existing_reciprocal_links": 9,
+  "next_refresh_sha256": "3af9cc25ba027aa44bfbde2e0c237fa59444fd716ca06388cbefb1251681fe16",
+  "next_neighbors_sha256": "cbdda62668ede0c0f75c385680b4cd2b13081987d9c09872c14050a9f2553534",
+  "code_sha256": {
+    "src/culturemech/validation/recipe_references.py": "1ef57389727347c242f45a85a9ed8908803423bc10307f53a888dac67ce06b67",
+    "tests/test_recipe_nbrc_references.py": "bd7a993f246eb1482f4181c49a2d3501731c4cca2cbb8369a36afb9576ba4019"
+  },
+  "fixture_sha256": "c5982f395bd18ae3fef00123e20b37137edf18417e36c6550ea299ff6f31cd2c",
+  "reports_sha256": {
+    "fixture.json": "b341a2c57983601b9467a4058c36a161359b9a8fa2ae257c95556772c9d5fec9",
+    "focused.json": "5f2a62bd712d13ed28d49134a93d4e6177be934eb35b95146e3fc91c33843bc7",
+    "live.json": "8d58810a5f91b8be1cf02be948eb45885c3b99dfad4da9595bb14ce834128466",
+    "fast.json": "87e9e5cb6daa73baca8331ea301e3d17123d60d4c7fb91152e0a5eaf29012afd"
+  },
+  "next_context_sha256": "de800cece2575a52bf0a6016c0e356d44d5459b653c3063e4945994dc63a98e6",
+  "scope_inventory_sha256": "e8660dee597d02fcd1d925f4401db0cb3952241fd4509124dc74c67a637ecff1",
+  "runtime": "Existing partial locked Python 3.13 environment; not clean CI or complete-suite validation.",
+  "publication": "No commit, push, public issue, PR, merge or branch deletion. Earlier outbound-payload approval remains unresolved."
+}

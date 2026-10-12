@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T05:37:51.012029+00:00",
+  "generated": "2026-10-10T06:09:12.628448+00:00",
   "category": "fungal",
   "count": 126,
   "recipes": {
@@ -832,10 +832,11 @@
     "CultureMech:010445": {
       "name": "potato_dextrose_agar",
       "filename": "potato_dextrose_agar.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 2,
       "id": "CultureMech:010445",
       "source_id": "mediadive.medium:129",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "fungal"
       ]
@@ -1297,7 +1298,7 @@
     "CultureMech:010555": {
       "name": "yeast_mineral_medium_10_g_l_glucose",
       "filename": "yeast_mineral_medium_10_g_l_glucose.yaml",
-      "ingredient_count": 21,
+      "ingredient_count": 22,
       "id": "CultureMech:010555",
       "source_id": "MEDIADB:397",
       "source": "unknown",
@@ -1308,7 +1309,7 @@
     "CultureMech:010557": {
       "name": "yeast_mineral_medium_25_g_l_glucose",
       "filename": "yeast_mineral_medium_25_g_l_glucose.yaml",
-      "ingredient_count": 21,
+      "ingredient_count": 22,
       "id": "CultureMech:010557",
       "source_id": "MEDIADB:399",
       "source": "unknown",
@@ -1319,7 +1320,7 @@
     "CultureMech:010556": {
       "name": "yeast_mineral_medium_7_5_g_l_ethanol",
       "filename": "yeast_mineral_medium_7_5_g_l_ethanol.yaml",
-      "ingredient_count": 21,
+      "ingredient_count": 22,
       "id": "CultureMech:010556",
       "source_id": "MEDIADB:398",
       "source": "unknown",
@@ -1330,7 +1331,7 @@
     "CultureMech:010558": {
       "name": "yeast_mineral_medium_7_9_g_l_ethanol",
       "filename": "yeast_mineral_medium_7_9_g_l_ethanol.yaml",
-      "ingredient_count": 21,
+      "ingredient_count": 22,
       "id": "CultureMech:010558",
       "source_id": "MEDIADB:400",
       "source": "unknown",

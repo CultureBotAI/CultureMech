@@ -16,6 +16,32 @@ composition:
     label: sodium carbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/3795
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 6,
+                      "unit": "g",
+                      "g_l": 60,
+                      "mmol_l": 566.102,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Na2CO3)
+      in MediaDive solution 3795; locator=$.data.recipe[0] (compound_id=32). Provider
+      explicitly reports g_l=60. Arithmetic check: 6 g * 1 g/g / (100 ml / 1000 ml
+      per L) = 6E+1 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 100. Retrieved 2026-10-07T09:25:08.919891+00:00; response SHA256=a99569c798bee4d40492b535cc5f6092d4eaed36fc99733004519d1802cd8a2c.'
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -62,6 +88,15 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:30:59.704035+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/3795
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "60"} -> {"unit":
+    "G_PER_L", "value": "60"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -70,3 +105,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/3795
+  title: 'MediaDive solution 3795: Solution B'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=a99569c798bee4d40492b535cc5f6092d4eaed36fc99733004519d1802cd8a2c;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

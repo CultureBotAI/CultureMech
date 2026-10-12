@@ -11,6 +11,32 @@ composition:
   term:
     id: mediadive.compound:423
     label: Sea Salt
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1801
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Sea Salt",
+                      "compound_id": 423,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 32,
+                      "unit": "g",
+                      "g_l": 32,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Sea Salt)
+      in MediaDive solution 1801; locator=$.data.recipe[0] (compound_id=423). Provider
+      explicitly reports g_l=32. Arithmetic check: 32 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 32 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T08:56:31.696118+00:00; response SHA256=d1269f65c0917a49e9c707b4f2032533a4e059139a2353fd7e43e37b0a28bbbc.'
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -57,6 +83,15 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-10-07T09:01:17.963098+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/1801
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "32"} -> {"unit":
+    "G_PER_L", "value": "32"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -65,3 +100,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/1801
+  title: 'MediaDive solution 1801: Seawater'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=d1269f65c0917a49e9c707b4f2032533a4e059139a2353fd7e43e37b0a28bbbc;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

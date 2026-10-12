@@ -1,0 +1,235 @@
+{
+  "terminal": true,
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "normalized_count": 15910,
+  "normalized_sha256": "d99a375e68d2bef008b27eae1eaa6da6fc414a7d67046a15a5d32a2661f813d2",
+  "only_reviewed_records_changed": true,
+  "applied_records": 4,
+  "independent_audit_totals": {
+    "new_evidence": 77,
+    "new_references": 9,
+    "new_curation_history": 4,
+    "old_quantity_slots": 49,
+    "claims": 201,
+    "source_rows": 50
+  },
+  "records": {
+    "data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml": "e26a9ef01a8fe3130730db9ca330b9c97494cfbada9bbec5866c17a1dd6ebc28",
+    "data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml": "502a85a5c5678cdd36283dceba01b3eca4699373969f7dbd2d332d9aa77da7c0",
+    "data/normalized_yaml/bacterial/mitsuhashi_maramorosch_m_m_medium.yaml": "2f2c4e1dce171a2698312300893e404b0b37020e227871a42801afe20241d6cf",
+    "data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml": "a22d765a5e483f6ee7e0e7485c89c34608dcdf950b5175c97dd5cf05c25a090d"
+  },
+  "tests_passed": {
+    "fast": "9541 passed, 16 skipped, 1945 deselected, 2 warnings in 782.97s (0:13:02)",
+    "focused": "344 passed, 2 warnings in 96.47s (0:01:36)",
+    "preapply-focused": "344 passed, 2 warnings in 42.35s"
+  },
+  "test_scope": "Hydrolysate tests predate the subsequent KOMODO parser repair; current parser checks have separate sibling receipts.",
+  "historical_reference_checks": {
+    "live": {
+      "passed": 49,
+      "failed": 37
+    },
+    "applied-live": {
+      "passed": 55,
+      "failed": 31
+    }
+  },
+  "historical_failed_gates": [
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-2.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-5.log"
+    },
+    {
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-11.log"
+    },
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-13.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-14.log"
+    }
+  ],
+  "current_reference_checks_passed": {
+    "K1021": 21,
+    "K1021_16929": 22,
+    "M2287": 13,
+    "D1021": 30
+  },
+  "current_reference_validation_passed": true,
+  "current_reference_receipt": "reports/ingredient_concentration_curation/20261008-komodo-reference-validation/cached.json",
+  "current_reference_receipt_sha256": "685b991429ce9e8bdfe24b63ce81a977647319f557d5d3b9adad639590fe9505",
+  "reference_fetch_limit": "The requests refresh received HTTP 403; the separately recorded urllib public GETs returned HTTP 200 and byte-identical sources. Four cached CLI checks pass. This does not claim the requests transport is repaired.",
+  "remaining_failed_gates": [
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-13.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/lactalbumin-formulations-post-14.log"
+    }
+  ],
+  "merge_verification": {
+    "name_conflicts": 1247,
+    "fingerprint_issues": 3287
+  },
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10777,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8732,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "corpus_checks": {
+    "strict_scanned": 15910,
+    "ids_scanned": 15910,
+    "product_warnings": 91,
+    "product_skipped_no_adapter": 96066,
+    "chemical_groundings_recertified": false
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 825,
+    "new_quantity_slots": 364,
+    "unsupported_quantity_slots_removed": 869,
+    "new_evidence": 33094,
+    "new_curation_history": 5378,
+    "new_references": 5638,
+    "stock_stage_concentrations_rebased": 199,
+    "stock_descriptors_added": 241,
+    "quantity_corrections": 1455,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 88,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 7,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 14,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5174
+  },
+  "followup_unique_records": 11786,
+  "outside_this_followup": 4124,
+  "remaining_queues": {
+    "M142": 71,
+    "identity": 100,
+    "methylbutyrate_name": 76,
+    "albumin_name": 24
+  },
+  "next_prepared_records": {
+    "records": 24,
+    "source_captures": 28,
+    "state": "Unchanged candidates; source preparation is not completed record review or applied curation."
+  },
+  "reports_sha256": {
+    "application.json": "f3a9576eb79b44a75e1b3dc1567312e65639259073fc5ee611343aa7adf6b7f1",
+    "applied-audit.json": "eaa1b1ca52853977bdd2234f2ec55b82a930d3d8e3eeafc711c5bad187a6d485",
+    "applied-live.json": "abc0477b95c35205519d70ccf39d32185e8c9bc8205f1e67ad9ce86dadc734e8",
+    "baseline.json": "a5c751919e33d87cab14ef0a5f2f7ac0703f509d8b574b5c5ee65d6de67a758b",
+    "context.json": "b9afaadd95d0d21b285ebbde79b8a685f6fc18f6ecfb51b9cd2e86b2dcf8d8f2",
+    "corpus.json": "16bca7e464eb781bf752b0a5d10cf5b4c5cea087a6d996d382effbc0a09f9b19",
+    "cumulative-audit.json": "ae7890eba61795d65acc45482d15cc2b55a6ac4a7373880f418e10678ac6ee26",
+    "fast.json": "476feb9e7d3b2d03ec6cc03f27d6419a27990880c5982d0a314c16c143587ee1",
+    "focused.json": "cc13f65d934b0b122f26372c1e8bb0f37c6c9a86929963ff4dc2c7653dc0831b",
+    "followup-coverage.json": "883f7607a64b195e731daecb8685999eeaca3096bba57ae5425ad31163c67f06",
+    "index-refresh-application.json": "419bba32fdc47ab3269843b9373a118e686099eed513f3540fb92d2cc5181e88",
+    "index-refresh-plan.json": "fb8ea53d3cb10efd7e2e4ae0b966e19314b6a44004928372ca4ea2669f9dab01",
+    "komodo-parser-diagnostic.json": "43e3d29d38110ea6b6aad11864b8c6da2fd5ad509c1cf7116e7f41f8788f2f69",
+    "live.json": "e8696681e98a6609493e8b2693a2a49096ea826bb57a9cdd28833a83223e7f12",
+    "merge-retention.json": "26a02bbbcebcb68ed37c53e20b2bd931bab4924e5d6c458b074387c5e3aecf42",
+    "next-lb-identity-context.json": "422c6de66ab5040ee1e91f1a3c7cd2c7d16686c1d1ac8556957047fde8431607",
+    "next-middlebrook-context.json": "03ef07e099102f6c4d1e929092aac521fa5cac2c5d529da294e381129d9f744b",
+    "plan.json": "01711c7839a6e175b55b0237d48db7e74f3cc13f11b960213837bbbc19408462",
+    "post.json": "f8dbf6a828a217a39612e1eb39ec4697cfada94ea1b5defba05ffcafaa369147",
+    "preapply-focused.json": "20c489df79cda113e480598bda53bd116400efaca4baccd43a8b784d41a9fb25",
+    "preview-audit.json": "eaa1b1ca52853977bdd2234f2ec55b82a930d3d8e3eeafc711c5bad187a6d485",
+    "reconciliation.json": "0611b77192c16f4a70a23917f49ae1e2792af47a2300a0e10bd8af2d1455cf26",
+    "remaining-queue.json": "6a1832e0120b13eae7c35e102f87d9372026e53c73e92a17f9af93ddb14f7250"
+  },
+  "code_sha256": {
+    "scripts/repair_lactalbumin_formulations.py": "3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769",
+    "tests/test_lactalbumin_formulations.py": "8ac45859ade31ec7f79ee483d604a21304d492308e0b1af0192765b1cd6ea5f4",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261008-lactalbumin-formulations/audit.py": "0baeb6dd32f17d485ced736f448745cfcb5285904b8205286f90bcbd4e8aff32",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "0034f2739b0f70b8e7662e9451fa37425d7a1f8437eea38461fe7716c2a6ab8f"
+  },
+  "runtime": "Existing partial locked Python 3.13 environment, not clean CI or the complete test suite.",
+  "publication": "No commit, push, issue submission, PR, merge or branch cleanup in this batch."
+}

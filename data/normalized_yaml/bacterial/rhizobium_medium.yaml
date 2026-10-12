@@ -17,6 +17,29 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/98
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 1,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration (evidence_only), locator=$.data.solutions[0].recipe[0]:
+      Source solution 170 (Main sol. 98) explicitly reports g_l=1. Arithmetic check:
+      1 g; provider volume 1000 ml; computed 1 g/L. Additional exact value at $.data.solutions[0].volume
+      (ml): 1000. The numeric value and chemical mappings are preserved. This supports
+      the provider-declared preparation concentration, not an independently measured
+      final volume or downstream dilution. Source retrieved 2026-10-07T10:42:06.770473+00:00;
+      response SHA256=9d0482c9b11252410d75c9a8043f79f52e705096c474ac4e59d08d64597a87d3.
+      Original DSMZ PDF recipe chain visually cross-checked: 98. Secondary ontology
+      mappings and parent/variant relationships were preserved, not validated by this
+      amount evidence.'
 - preferred_term: Mannitol
   term:
     id: CHEBI:29864
@@ -27,6 +50,30 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:29864
     label: mannitol
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/98
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Mannitol",
+                              "compound_id": 6,
+                              "amount": 10,
+                              "unit": "g",
+                              "g_l": 10,
+                              "mmol_l": 54.8938,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[1].concentration (evidence_only), locator=$.data.solutions[0].recipe[1]:
+      Source solution 170 (Main sol. 98) explicitly reports g_l=10. Arithmetic check:
+      10 g; provider volume 1000 ml; computed 10 g/L. Additional exact value at $.data.solutions[0].volume
+      (ml): 1000. The numeric value and chemical mappings are preserved. This supports
+      the provider-declared preparation concentration, not an independently measured
+      final volume or downstream dilution. Source retrieved 2026-10-07T10:42:06.770473+00:00;
+      response SHA256=9d0482c9b11252410d75c9a8043f79f52e705096c474ac4e59d08d64597a87d3.
+      Original DSMZ PDF recipe chain visually cross-checked: 98. Secondary ontology
+      mappings and parent/variant relationships were preserved, not validated by this
+      amount evidence.'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -37,28 +84,60 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: air-dried garden soil
-  concentration:
-    value: '400'
-    unit: G_PER_L
-- preferred_term: Na2CO3
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/98
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "Agar",
+                              "compound_id": 3,
+                              "amount": 15,
+                              "unit": "g",
+                              "g_l": 15,
+                              "mmol_l": 44.5991,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[2].concentration (evidence_only), locator=$.data.solutions[0].recipe[2]:
+      Source solution 170 (Main sol. 98) explicitly reports g_l=15. Arithmetic check:
+      15 g; provider volume 1000 ml; computed 15 g/L. Additional exact value at $.data.solutions[0].volume
+      (ml): 1000. The numeric value and chemical mappings are preserved. This supports
+      the provider-declared preparation concentration, not an independently measured
+      final volume or downstream dilution. Source retrieved 2026-10-07T10:42:06.770473+00:00;
+      response SHA256=9d0482c9b11252410d75c9a8043f79f52e705096c474ac4e59d08d64597a87d3.
+      Original DSMZ PDF recipe chain visually cross-checked: 98. Secondary ontology
+      mappings and parent/variant relationships were preserved, not validated by this
+      amount evidence.'
+- preferred_term: Distilled water
   term:
-    id: CHEBI:29377
-    label: sodium carbonate
+    id: mediadive.compound:4
+    label: Distilled water
   concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:29377
-    label: sodium carbonate
+    value: '0.8'
+    unit: L
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/98
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 800,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: 'ingredients[3].concentration (add), locator=$.data.solutions[0].recipe[4]:
+      Explicit 800 ml water / 1000 ml per L = 0.8 L in this preparation batch. This
+      is an addition amount, not a claim of final volume, stock strength, or percent
+      basis. Source retrieved 2026-10-07T10:42:06.770473+00:00; response SHA256=9d0482c9b11252410d75c9a8043f79f52e705096c474ac4e59d08d64597a87d3.
+      Original DSMZ PDF recipe chain visually cross-checked: 98. Secondary ontology
+      mappings and parent/variant relationships were preserved, not validated by this
+      amount evidence.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
   description: Adjust pH to 7.0.
-- step_number: 2
-  action: AUTOCLAVE
-  description: Autoclave soil suspension for one hour at 121°C. To obtain a clear
-    supernatant allow to settle and centrifuge. Adjust pH to 7.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -89,6 +168,33 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-07T11:35:03.558874+00:00'
+  curator: codex
+  action: RESTORED_REVIEWED_MEDIUM_STOCK_BOUNDARIES
+  notes: Exact source graph, complete ingredient inventory, amounts, and original
+    PDF recipe chain checked. Numeric concentrations and chemical mappings preserved;
+    stock doses and water are explicit batch amounts. No final-medium stock dilution
+    inferred. Parent/variant relationships remain separately unreviewed.
+  source: https://mediadive.dsmz.de/rest/medium/98; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium98.pdf
+  changes: '[''ingredients'', 0, ''concentration''] -> ingredients[0].concentration:
+    {''value'': ''1'', ''unit'': ''G_PER_L''} -> {''value'': ''1'', ''unit'': ''G_PER_L''}
+    (evidence_only); [''ingredients'', 1, ''concentration''] -> ingredients[1].concentration:
+    {''value'': ''10'', ''unit'': ''G_PER_L''} -> {''value'': ''10'', ''unit'': ''G_PER_L''}
+    (evidence_only); [''ingredients'', 2, ''concentration''] -> ingredients[2].concentration:
+    {''value'': ''15'', ''unit'': ''G_PER_L''} -> {''value'': ''15'', ''unit'': ''G_PER_L''}
+    (evidence_only); None -> ingredients[3].concentration: None -> {''value'': ''0.8'',
+    ''unit'': ''L''} (add); None -> solutions[0].concentration: None -> {''value'':
+    ''0.2'', ''unit'': ''L''} (add); [''ingredients'', 3, ''concentration''] -> solutions[0].composition[0].concentration:
+    {''value'': ''400'', ''unit'': ''G_PER_L''} -> {''value'': ''400'', ''unit'':
+    ''G_PER_L''} (relocate); [''ingredients'', 4, ''concentration''] -> solutions[0].composition[1].concentration:
+    {''value'': ''1'', ''unit'': ''G_PER_L''} -> {''value'': ''1'', ''unit'': ''G_PER_L''}
+    (relocate); None -> solutions[0].composition[2].concentration: None -> {''value'':
+    ''0.2'', ''unit'': ''L''} (add); preparation_steps[1:2] -> solutions[0].preparation_notes:
+    [{''step_number'': 2, ''action'': ''AUTOCLAVE'', ''description'': ''Autoclave
+    soil suspension for one hour at 121°C. To obtain a clear supernatant allow to
+    settle and centrifuge. Adjust pH to 7.2.''}] -> Autoclave soil suspension for
+    one hour at 121°C. To obtain a clear supernatant allow to settle and centrifuge.
+    Adjust pH to 7.2. (correct_stage)'
 kg_microbe_match: mediadive.medium:98
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_98_RHIZOBIUM_medium.yaml
@@ -97,3 +203,141 @@ variant_children:
   name: rhizobium_medium
   notes: Same ingredient and concentration signature; KOMODO record copied from the
     matching DSMZ medium source.
+solutions:
+- preferred_term: Soil extract
+  term:
+    id: mediadive.solution:5555
+    label: Soil extract
+  concentration:
+    value: '0.2'
+    unit: L
+  composition:
+  - preferred_term: air-dried garden soil
+    concentration:
+      value: '400'
+      unit: G_PER_L
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/98
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "air-dried garden soil",
+                                "compound_id": 2083,
+                                "attribute": "",
+                                "amount": 80,
+                                "unit": "g",
+                                "g_l": 400,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[0].concentration (relocate), locator=$.data.solutions[1].recipe[0]:
+        Source solution 5555 (Soil extract) explicitly reports g_l=400. Arithmetic
+        check: 80 g; provider volume 200 ml; computed 4.0E+2 g/L. Additional exact
+        value at $.data.solutions[1].volume (ml): 200. The numeric value and chemical
+        mappings are preserved. This supports the provider-declared preparation concentration,
+        not an independently measured final volume or downstream dilution. Relocated
+        from ingredients[3] into the explicitly linked stock; it is not a direct receiving-medium
+        concentration. This is the input loading for extract preparation, not a measured
+        dissolved concentration after sieving/settling/centrifugation; the exact extraction
+        instructions are preserved in preparation_notes. Source retrieved 2026-10-07T10:42:06.770473+00:00;
+        response SHA256=9d0482c9b11252410d75c9a8043f79f52e705096c474ac4e59d08d64597a87d3.
+        Original DSMZ PDF recipe chain visually cross-checked: 98. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+  - preferred_term: Na2CO3
+    term:
+      id: CHEBI:29377
+      label: sodium carbonate
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:29377
+      label: sodium carbonate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/98
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "Na2CO3",
+                                "compound_id": 32,
+                                "amount": 0.2,
+                                "unit": "g",
+                                "g_l": 1,
+                                "mmol_l": 9.43503,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[1].concentration (relocate), locator=$.data.solutions[1].recipe[1]:
+        Source solution 5555 (Soil extract) explicitly reports g_l=1. Arithmetic check:
+        0.2 g; provider volume 200 ml; computed 1 g/L. Additional exact value at $.data.solutions[1].volume
+        (ml): 200. The numeric value and chemical mappings are preserved. This supports
+        the provider-declared preparation concentration, not an independently measured
+        final volume or downstream dilution. Relocated from ingredients[4] into the
+        explicitly linked stock; it is not a direct receiving-medium concentration.
+        This is the input loading for extract preparation, not a measured dissolved
+        concentration after sieving/settling/centrifugation; the exact extraction
+        instructions are preserved in preparation_notes. Source retrieved 2026-10-07T10:42:06.770473+00:00;
+        response SHA256=9d0482c9b11252410d75c9a8043f79f52e705096c474ac4e59d08d64597a87d3.
+        Original DSMZ PDF recipe chain visually cross-checked: 98. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+  - preferred_term: Distilled water
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+    concentration:
+      value: '0.2'
+      unit: L
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/98
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 200,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[2].concentration (add), locator=$.data.solutions[1].recipe[2]:
+        Explicit 200 ml water / 1000 ml per L = 0.2 L in this preparation batch. This
+        is an addition amount, not a claim of final volume, stock strength, or percent
+        basis. Source retrieved 2026-10-07T10:42:06.770473+00:00; response SHA256=9d0482c9b11252410d75c9a8043f79f52e705096c474ac4e59d08d64597a87d3.
+        Original DSMZ PDF recipe chain visually cross-checked: 98. Secondary ontology
+        mappings and parent/variant relationships were preserved, not validated by
+        this amount evidence.'
+  preparation_notes: Autoclave soil suspension for one hour at 121°C. To obtain a
+    clear supernatant allow to settle and centrifuge. Adjust pH to 7.2.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/98
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 5,
+                            "solution": "Soil extract",
+                            "solution_id": 5555,
+                            "amount": 200,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].concentration (add), locator=$.data.solutions[0].recipe[3]: Explicit 200 ml / 1000 ml per L = 0.2 L per receiving batch. The exact solution_id establishes this stock boundary; no final-volume dilution or dose from another medium is inferred. solutions[0].preparation_notes (correct_stage), locator=$.data.solutions[1].steps: Move the exact texts from preparation_steps[1:2] into this stock's preparation stage. The receiving recipe's own remaining steps are unchanged; no new procedure is inferred. Additional exact excerpt: [
+                        {
+                            "step": "Autoclave soil suspension for one hour at 121\u00b0C. To obtain a clear supernatant allow to settle and centrifuge. Adjust pH to 7.2."
+                        }
+                    ] Source retrieved 2026-10-07T10:42:06.770473+00:00; response SHA256=9d0482c9b11252410d75c9a8043f79f52e705096c474ac4e59d08d64597a87d3. Original DSMZ PDF recipe chain visually cross-checked: 98. Secondary ontology mappings and parent/variant relationships were preserved, not validated by this amount evidence.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/98
+  title: 'MediaDive medium 98: RHIZOBIUM MEDIUM'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=DSMZ;
+    accessed_on=2026-10-07; response_sha256=9d0482c9b11252410d75c9a8043f79f52e705096c474ac4e59d08d64597a87d3;
+    individual authors and publication year not established. PDF copyright is not
+    a publication date.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium98.pdf
+  title: 'DSMZ medium 98: official recipe'
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    source_organization=DSMZ; accessed_on=2026-10-07; response_sha256=ed72f0832f306618c096dd2458e9d07cfd0799b58240476727b5a4984d6551ed;
+    individual authors and publication year not established. PDF copyright is not
+    a publication date.

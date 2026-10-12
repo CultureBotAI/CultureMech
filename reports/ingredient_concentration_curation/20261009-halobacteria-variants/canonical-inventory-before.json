@@ -1,0 +1,56 @@
+{
+  "data/normalized_yaml/archaea/modified_halobacteria_medium_3.yaml": [
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/records/archaea/modified_halobacteria_medium_3.yaml.md",
+      "sha256": "a02891f3e42793757e304f6a1b3ac94c74eb6dbed26272d57584d1a5a0af05f1"
+    }
+  ],
+  "data/normalized_yaml/archaea/modified_halobacteria_medium.yaml": [
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/records/archaea/modified_halobacteria_medium.yaml.md",
+      "sha256": "98502df9fcbfa3b5eceb1f2a2def5913d7bd520c3951c2c3102012c15ca9c389"
+    }
+  ],
+  "data/normalized_yaml/archaea/halobacteria_medium_with_15_nacl.yaml": [
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/records/archaea/halobacteria_medium_with_15_nacl.yaml.md",
+      "sha256": "74b8e9d295584904372be648cc661d2b7c2b7fb51dde711a772bec8ceb7316de"
+    }
+  ],
+  "data/normalized_yaml/bacterial/JCM_J377_LENTIBACILLUS_MEDIUM.yaml": [
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/JCM_J377_LENTIBACILLUS_MEDIUM.yaml.md",
+      "sha256": "c7b29f9c2909e34b24476defee51bbd286f54b5580c81dbfbabb7dfc32e0188f"
+    }
+  ],
+  "data/normalized_yaml/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml": [
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/archaea/JCM_J168_HALOBACTERIA_MEDIUM.yaml.md",
+      "sha256": "bd93f26ec38b5536a185bd1c7cd1ae46d8b1489055bbd39d017816d2b4835a98"
+    }
+  ],
+  "data/normalized_yaml/archaea/TOGO_M160_Halobacteria_Medium.yaml": [
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/M160.md",
+      "sha256": "71469499327e940b2cf504edcaf48c0df335e15c4b3e0889b94aea115a0f4b92"
+    }
+  ],
+  "data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml": [
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-halobacteria-family/applied-records/M159.md",
+      "sha256": "ece713050e6052cc12f4995fb0990a45e69975baa9744f414b06f48a46974e1d"
+    }
+  ],
+  "data/normalized_yaml/bacterial/mediadive_3823_Main_sol_J168.yaml": [
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-mediadive-solutions-2500-3000/records/bacterial/mediadive_3823_Main_sol_J168.yaml.md",
+      "sha256": "3ea39058c8d68f072e448d9b86b9db8d57f801af4a8f9e8157764f86ed171084"
+    }
+  ],
+  "data/normalized_yaml/archaea/halobacteria_medium_ph_8_0.yaml": [
+    {
+      "path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/records/archaea/halobacteria_medium_ph_8_0.yaml.md",
+      "sha256": "cb2d7df04007ffae3d0a8cfb3bea2b577b1e057f5184b3215edf758d66605a4b"
+    }
+  ]
+}

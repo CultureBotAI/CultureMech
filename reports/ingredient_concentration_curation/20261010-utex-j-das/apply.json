@@ -1,0 +1,65 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "apply",
+  "created_at": "2026-10-10T20:38:36.751473+00:00",
+  "checks": [],
+  "source_sha256": "6a367592593e5ecab4525f4f1f7434ef152d5c36792929db65684e3730d687db",
+  "code_sha256": {
+    "scripts/review_utex_j_das.py": "bd9ba1b295547e3505faf59dc2146bfb14bbcef851bed3f8ece12dd0c3c04c30",
+    "tests/test_utex_j_das.py": "57cbd467d2439bd7280e8b268f91d59ab6d5a660d6859281e8445b8875b08a69"
+  },
+  "consumer_code_sha256": {
+    "src/culturemech/export/kgx_export.py": "1ca00e48621068494343ebcaa3410a22985d8a78250f937a37c5c56a9d78c1a0",
+    "src/culturemech/templates/_partials/ingredients.html.j2": "7b3843f7c8f9448485b873401ac5b29df2b8e5aa0c1135c10fd78ba61c11e166",
+    "src/culturemech/templates/_partials/solutions.html.j2": "c8b4bf3017cd60198fee137a64b7bbcb31811bd9078a0e5f95d97967f6fa8e1a",
+    "src/culturemech/templates/media.html.j2": "97775968ce698dfd4aa6a854495513844ce033f09be5f9d0f48e683a62962b48",
+    "src/culturemech/render_media_pages.py": "e6e32a5a5cfa3d0f5d05013c8d5cfcaf16ae3cdee4f8c334b356120e2382a98c",
+    "src/culturemech/templates/_partials/quantity.html.j2": "955c41b45f4dd51952bd5e0f673705c8a4e2d51a4d6b5ea092628620934f8849",
+    "tests/test_concentration_volume_basis.py": "c8e29afce138d3079b5891a6f2e53937fd42279f65115a5f181d6eda10e2dad6"
+  },
+  "inventory_before_sha256": "74f8c648647a6a9e6f343f32a93f5ae96aafc1f2889ff43debf3971369a4efc8",
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "applied": {
+    "changed": 2,
+    "pending": 0,
+    "already_applied": 0
+  },
+  "readback": {
+    "changed": 0,
+    "pending": 0,
+    "already_applied": 2
+  },
+  "repeat": {
+    "changed": 0,
+    "pending": 0,
+    "already_applied": 2
+  },
+  "counts": {
+    "unsupported_quantity_slots_removed": 7,
+    "inline_variant_options_added": 1,
+    "new_evidence": 50,
+    "ingredient_context_notes_corrected": 38,
+    "bibliographic_entries_enriched": 8,
+    "new_curation_history": 2,
+    "recipe_context_notes_corrected": 2,
+    "ingredient_dose_basis_corrections": 1,
+    "stock_dose_basis_corrections": 5,
+    "unsupported_primary_identities_removed": 1,
+    "unsupported_secondary_identities_removed": 1,
+    "stock_nodes_relocated": 2,
+    "new_quantity_slots": 2,
+    "ingredient_identities_corrected": 2,
+    "ingredient_mim_links_corrected": 2,
+    "stock_context_notes_corrected": 3,
+    "ingredient_labels_corrected": 4,
+    "new_references": 7
+  },
+  "changed_paths": [
+    "data/normalized_yaml/algae/Dasycladales_Seawater_Medium.yaml",
+    "data/normalized_yaml/algae/J_Medium.yaml"
+  ],
+  "inventory_after_sha256": "0a2927457b03118fbbc7e2a070e15dd5f2be63a0596c14f33adec609c4a77f08",
+  "normalized_inventory_unchanged": false
+}

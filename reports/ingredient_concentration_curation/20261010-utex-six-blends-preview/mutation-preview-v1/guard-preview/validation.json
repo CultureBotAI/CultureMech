@@ -1,0 +1,83 @@
+{
+  "terminal": true,
+  "passed": true,
+  "created_at": "2026-10-10T21:37:57.590313+00:00",
+  "state": "uninstalled guard preview; application exercised only in temporary fixture repositories",
+  "plan_sha256": "fa277fdced63a14095a72b2f0d24a182239c71a7adca1b2a4b125b36e772c60e",
+  "source_sha256": {
+    "scripts/review_utex_six_blends.py": "e25ea38d771a89942452b7a1228c58cd0464d580c9fb9a03e575760fbba58436",
+    "tests/test_utex_six_blends.py": "008e7d2a8eb94f1ab25649799e12b336e3adb02bc8afa20b928e7f56b0f72243"
+  },
+  "patch_sha256": "7f95d1c4953960cde9f0fb7a1625e36175ae32b6189806e5cb6ebdec008428c9",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "--no-cov",
+        "-o",
+        "addopts=",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/guard-preview/test_utex_six_blends.py"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/guard-preview/check-00.log",
+      "log_sha256": "2b9f6135c2ea67cd938b1d256ffa8b92774228cc12def28bf4631c0728685954"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "--config",
+        "pyproject.toml",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/guard-preview/review_utex_six_blends.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/guard-preview/test_utex_six_blends.py"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/guard-preview/check-01.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--config",
+        "pyproject.toml",
+        "--check",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/guard-preview/review_utex_six_blends.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/guard-preview/test_utex_six_blends.py"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/guard-preview/check-02.log",
+      "log_sha256": "b9cf511501d306d2bd8355ccb165c8ddc0a6fdd62d7c72c4a7b1795cf8934c8c"
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/guard-preview/guard.patch"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/guard-preview/check-03.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/guard-preview/review_utex_six_blends.py",
+        "--dry-run"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-six-blends-preview/mutation-preview-v1/guard-preview/check-04.log",
+      "log_sha256": "0c4a0238df8a22ac53d8e314492216dddcdff7a264efb738667925a55915c200"
+    }
+  ],
+  "authoritative_records_edited": 0,
+  "actual_schema_dry_run": {
+    "changed": 0,
+    "pending": 6,
+    "already_applied": 0
+  },
+  "limitation": "The cumulative audit registry, actual application and post-edit/publication checks remain outstanding."
+}

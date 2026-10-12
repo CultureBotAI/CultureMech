@@ -1,0 +1,44 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phases": [
+    {
+      "phase": "reports",
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/postflight-reports.log"
+    },
+    {
+      "phase": "cumulative",
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/postflight-cumulative.log"
+    },
+    {
+      "phase": "indexes",
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/postflight-indexes.log"
+    },
+    {
+      "phase": "retention",
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/postflight-retention.log"
+    },
+    {
+      "phase": "post",
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/postflight-post.log"
+    },
+    {
+      "phase": "references",
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/postflight-references.log"
+    },
+    {
+      "phase": "corpus",
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-bristol-bbm/postflight-corpus.log"
+    }
+  ],
+  "fast_tier_pending": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false
+}

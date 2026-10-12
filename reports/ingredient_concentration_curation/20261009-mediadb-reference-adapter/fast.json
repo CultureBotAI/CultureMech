@@ -1,0 +1,33 @@
+{
+  "terminal": true,
+  "phase": "fast",
+  "checks": [
+    {
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "returncode": 2,
+      "required": true,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-reference-adapter/fast-00.log",
+      "log_sha256": "254a605f1da1e0f9842e89cfe3f0b8958cbd75b1f6af580d61418329a1e34af0"
+    }
+  ],
+  "records_edited": 0,
+  "evidence_entries_added": 0,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "started_at": "2026-10-09T20:12:21.913919+00:00",
+  "normalized_count": 15910,
+  "inventory_before_sha256": "19c45017d3210c6bc2c2fde0ec7a2f2c4a4498191af394cb351249b3299f6a05",
+  "code_before_sha256": "46b126e977fb6effcfdf42143ece8bb3bb322b7f7da8a6f86fb9e985cbae23cf",
+  "adapter_sha256": "5722241611643c7562d4104db5ef03a76dc65802c73461590bbdb4eb282ded06",
+  "tests_sha256": "5e12bd2e7365df4c6cd4fd40712c96cae6508ed1cc53029861cc5abb40f1dca3",
+  "helper_sha256": "d382e751b588fbc1543cf634dbd4b910b217c92a3f15737e676747ed0c269db9",
+  "passed": false,
+  "error": "AssertionError: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-mediadb-reference-adapter/fast-00.log",
+  "inventory_after_sha256": "19c45017d3210c6bc2c2fde0ec7a2f2c4a4498191af394cb351249b3299f6a05",
+  "normalized_inventory_unchanged": true,
+  "code_unchanged_during_checks": true,
+  "finished_at": "2026-10-09T20:16:19.708984+00:00"
+}

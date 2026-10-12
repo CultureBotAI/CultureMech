@@ -1,0 +1,109 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "retention",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_0_6_m_nacl.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_0_6_m_nacl.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_0_75_m_nacl.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_0_75_m_nacl.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_1_5_m_nacl.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_1_5_m_nacl.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_2_5_m_nacl.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_2_5_m_nacl.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_0_6_m_nacl.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_0_6_m_nacl.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_0_75_m_nacl.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_0_75_m_nacl.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_1_5_m_nacl.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_1_5_m_nacl.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_2_5_m_nacl.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_2_5_m_nacl.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_hydroxyectoine_and_0_6_m_nacl.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_hydroxyectoine_and_0_6_m_nacl.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_hydroxyectoine_and_0_75_m_nacl.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_hydroxyectoine_and_0_75_m_nacl.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_hydroxyectoine_and_1_5_m_nacl.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_hydroxyectoine_and_1_5_m_nacl.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_m63_medium_with_hydroxyectoine_and_2_5_m_nacl.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_m63_medium_with_hydroxyectoine_and_2_5_m_nacl.yaml"
+      ],
+      "errors": [],
+      "schema_errors": []
+    }
+  ],
+  "derived_yaml_written": false,
+  "input_records": 15910,
+  "output_groups": 10781,
+  "source_inventory_unchanged": true
+}

@@ -1,0 +1,4230 @@
+{
+  "terminal": true,
+  "records_edited": false,
+  "state": "Old quantity-field inventory with explicit source candidates, not approved transformations or a guarded proposal.",
+  "context_sha256": "6d9d7e2c9207c8f8cc0b00f4c8d629b164496165784d024e684bcae20e80ebeb",
+  "inspection_sha256": "a9061f0c1610393c9a78338952fb31acac5f16d0c769cfd37fea010007d8ab29",
+  "normalized_sha256": "48c3b9d310293ee12ee7655e555076f7787b0d9f52a88ff0a2f9d27ab98710b9",
+  "records": [
+    {
+      "key": "K1245",
+      "path": "data/normalized_yaml/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml",
+      "id": "CultureMech:004003",
+      "before_sha256": "084c4278a2be6e87e42ac14164797c3933ff07172c521fa3b4a1f379408f0f47",
+      "quantity_fields": [
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "ingredient": "Proteose peptone no. 2",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                3
+              ],
+              "row": [
+                "Proteose Peptone no. 2",
+                "Proteose Peptone",
+                "rich-peptone#",
+                "4.98",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Proteose Peptone no. 2 Proteose Peptone rich-peptone# 4.98 null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1,
+            "concentration"
+          ],
+          "ingredient": "Heart Infusion Broth",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                8
+              ],
+              "row": [
+                "Heart Infusion Broth",
+                "Heart Infusion Broth",
+                "rich-meat#",
+                "4.98",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Heart Infusion Broth Heart Infusion Broth rich-meat# 4.98 null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            2,
+            "concentration"
+          ],
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                6
+              ],
+              "row": [
+                "Yeast Extract",
+                "Yeast extract",
+                "rich-peptone#",
+                "4.98",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Yeast Extract Yeast extract rich-peptone# 4.98 null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            3,
+            "concentration"
+          ],
+          "ingredient": "Potassium Phosphate",
+          "old": {
+            "value": "2",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                25
+              ],
+              "row": [
+                "Potassium Phosphate, dibasic",
+                "Potassium Phosphate",
+                "SEED-cpd00009#cpd00205##",
+                "1.99",
+                "0.01"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Potassium Phosphate, dibasic Potassium Phosphate SEED-cpd00009#cpd00205## 1.99 0.01",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            4,
+            "concentration"
+          ],
+          "ingredient": "Sodium Chloride",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                15
+              ],
+              "row": [
+                "Sodium Chloride",
+                "Sodium chloride",
+                "SEED-cpd00099#cpd00971##",
+                "4.98",
+                "0.09"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Sodium Chloride Sodium chloride SEED-cpd00099#cpd00971## 4.98 0.09",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            5,
+            "concentration"
+          ],
+          "ingredient": "Magnesium sulfate",
+          "old": {
+            "value": "0.1",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                4
+              ],
+              "row": [
+                "Magnesium Sulfate",
+                "Magnesium sulfate",
+                "SEED-cpd00048#cpd00254##",
+                "0.10",
+                "0.00"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Magnesium Sulfate Magnesium sulfate SEED-cpd00048#cpd00254## 0.10 0.00",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            6,
+            "concentration"
+          ],
+          "ingredient": "Acetic acid",
+          "old": {
+            "value": "1.6",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                10
+              ],
+              "row": [
+                "Acetic Acid",
+                "Acetic acid",
+                "SEED-cpd00029###",
+                "null",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Acetic Acid Acetic acid SEED-cpd00029### null null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            7,
+            "concentration"
+          ],
+          "ingredient": "Propionic acid",
+          "old": {
+            "value": "0.6",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                13
+              ],
+              "row": [
+                "Propionic Acid",
+                "Propionic acid",
+                "SEED-cpd00141###",
+                "null",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Propionic Acid Propionic acid SEED-cpd00141### null null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            8,
+            "concentration"
+          ],
+          "ingredient": "n-Butyric acid",
+          "old": {
+            "value": "0.4",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                14
+              ],
+              "row": [
+                "N-Butyric Acid",
+                "n-Butyric acid",
+                "SEED-cpd00211###",
+                "null",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "N-Butyric Acid n-Butyric acid SEED-cpd00211### null null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            9,
+            "concentration"
+          ],
+          "ingredient": "n-Valeric acid",
+          "old": {
+            "value": "0.1",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                17
+              ],
+              "row": [
+                "N-Valeric Acid",
+                "n-Valeric acid",
+                "SEED-cpd00597###",
+                "null",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "N-Valeric Acid n-Valeric acid SEED-cpd00597### null null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            10,
+            "concentration"
+          ],
+          "ingredient": "Isovaleric acid",
+          "old": {
+            "value": "0.1",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                23
+              ],
+              "row": [
+                "Isovaleric Acid",
+                "Isovaleric acid",
+                "SEED-cpd05178###",
+                "null",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Isovaleric Acid Isovaleric acid SEED-cpd05178### null null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            11,
+            "concentration"
+          ],
+          "ingredient": "Isobutyric acid",
+          "old": {
+            "value": "0.1",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                0
+              ],
+              "row": [
+                "Isobutyric Acid",
+                "isobutyric acid",
+                "SEED-cpd01711###",
+                "null",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Isobutyric Acid isobutyric acid SEED-cpd01711### null null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            12,
+            "concentration"
+          ],
+          "ingredient": "Tryptone",
+          "old": {
+            "value": "10.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            13,
+            "concentration"
+          ],
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "5.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            14,
+            "concentration"
+          ],
+          "ingredient": "Sodium chloride",
+          "old": {
+            "value": "10.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            15,
+            "concentration"
+          ],
+          "ingredient": "Vitamin K1",
+          "old": {
+            "value": "0.001",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                18
+              ],
+              "row": [
+                "Vitamin K1",
+                "Vitamin K1",
+                "SEED-cpd01401###",
+                "null",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Vitamin K1 Vitamin K1 SEED-cpd01401### null null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            16,
+            "concentration"
+          ],
+          "ingredient": "L-Cysteine",
+          "old": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                12
+              ],
+              "row": [
+                "L-Cysteine",
+                "L-Cysteine",
+                "SEED-cpd00084###",
+                "0.50",
+                "0.00"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "L-Cysteine L-Cysteine SEED-cpd00084### 0.50 0.00",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            17,
+            "concentration"
+          ],
+          "ingredient": "Fetal bovine serum",
+          "old": {
+            "value": "100",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "source-specific serum identity; do not treat calf and fetal serum as equivalents",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                7
+              ],
+              "row": [
+                "Calf Serum",
+                "Calf serum",
+                "rich-serum#",
+                "99.70",
+                "0.10"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Calf Serum Calf serum rich-serum# 99.70 0.10",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            18,
+            "concentration"
+          ],
+          "ingredient": "Glucose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                5
+              ],
+              "row": [
+                "Glucose",
+                "D-Glucose",
+                "SEED-cpd00027###",
+                "0.80",
+                "0.00"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Glucose D-Glucose SEED-cpd00027### 0.80 0.00",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            19,
+            "concentration"
+          ],
+          "ingredient": "Fructose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                21
+              ],
+              "row": [
+                "Fructose",
+                "D-Fructose",
+                "SEED-cpd00082###",
+                "0.80",
+                "0.00"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Fructose D-Fructose SEED-cpd00082### 0.80 0.00",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            20,
+            "concentration"
+          ],
+          "ingredient": "Sucrose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                2
+              ],
+              "row": [
+                "Sucrose",
+                "Sucrose",
+                "SEED-cpd00076###",
+                "0.80",
+                "0.00"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Sucrose Sucrose SEED-cpd00076### 0.80 0.00",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            21,
+            "concentration"
+          ],
+          "ingredient": "Maltose",
+          "old": {
+            "value": "8.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                20
+              ],
+              "row": [
+                "Maltose",
+                "Maltose",
+                "SEED-cpd00179###",
+                "1.60",
+                "0.00"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Maltose Maltose SEED-cpd00179### 1.60 0.00",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            22,
+            "concentration"
+          ],
+          "ingredient": "Ribose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                11
+              ],
+              "row": [
+                "Ribose",
+                "Ribose",
+                "SEED-cpd05267###",
+                "0.80",
+                "0.01"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Ribose Ribose SEED-cpd05267### 0.80 0.01",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            23,
+            "concentration"
+          ],
+          "ingredient": "Xylose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                22
+              ],
+              "row": [
+                "Xylose",
+                "xylose",
+                "SEED-cpd00154###",
+                "0.80",
+                "0.01"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Xylose xylose SEED-cpd00154### 0.80 0.01",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            24,
+            "concentration"
+          ],
+          "ingredient": "Pectin",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                19
+              ],
+              "row": [
+                "Pectin",
+                "Pectin",
+                "SEED-cpd11601###",
+                "0.80",
+                "0.00"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Pectin Pectin SEED-cpd11601### 0.80 0.00",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            25,
+            "concentration"
+          ],
+          "ingredient": "Starch",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                16
+              ],
+              "row": [
+                "Starch",
+                "Starch",
+                "SEED-cpd11657###",
+                "0.80",
+                "0.00"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Starch Starch SEED-cpd11657### 0.80 0.00",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            26,
+            "concentration"
+          ],
+          "ingredient": "Sodium pyruvate",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                26
+              ],
+              "row": [
+                "Sodium Pyruvate",
+                "Sodium pyruvate",
+                "SEED-cpd00020#cpd00971##",
+                "0.80",
+                "0.01"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Sodium Pyruvate Sodium pyruvate SEED-cpd00020#cpd00971## 0.80 0.01",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            27,
+            "concentration"
+          ],
+          "ingredient": "Thiamine pyrophosphate",
+          "old": {
+            "value": "0.00075",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                9
+              ],
+              "row": [
+                "Thiamine Pyrophosphate",
+                "Thiamine-HCl",
+                "SEED-cpd00099#cpd00305##",
+                "7.48E-5",
+                "2.49E-7"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245",
+              "snippet": "Thiamine Pyrophosphate Thiamine-HCl SEED-cpd00099#cpd00305## 7.48E-5 2.49E-7",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        }
+      ],
+      "source_rows": 27,
+      "existing_history_events": 9
+    },
+    {
+      "key": "S2474",
+      "path": "data/normalized_yaml/bacterial/mediadive_2474_Main_sol_1245.yaml",
+      "id": "CultureMech:011840",
+      "before_sha256": "e5aea81a0bf5c3733535428e34e3f76ef0c194b96b380753eeecb5d7bbfff98d",
+      "quantity_fields": [
+        {
+          "pointer": [
+            "composition",
+            0,
+            "concentration"
+          ],
+          "ingredient": "Proteose peptone no. 2",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [
+            {
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "supports": "SUPPORT",
+              "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Proteose peptone no. 2\",\n                \"compound_id\": 458,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "explanation": "Concentration evidence for composition[0].concentration (Proteose peptone no. 2) in MediaDive solution 2474; locator=$.data.recipe[0] (compound_id=458). Provider explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:12:56.777902+00:00; response SHA256=965e02ea3dbb41667699cb23bfffa807fd755f41c1db183e1f407a11d74c968f."
+            }
+          ],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                0
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 1,
+                "compound": "Proteose peptone no. 2",
+                "compound_id": 458,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 5,
+                "unit": "g",
+                "g_l": 5,
+                "mmol_l": null,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Proteose peptone no. 2\",\n                \"compound_id\": 458,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            1,
+            "concentration"
+          ],
+          "ingredient": "Heart Infusion Broth",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [
+            {
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "supports": "SUPPORT",
+              "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Heart Infusion Broth\",\n                \"compound_id\": 1104,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "explanation": "Concentration evidence for composition[1].concentration (Heart Infusion Broth) in MediaDive solution 2474; locator=$.data.recipe[1] (compound_id=1104). Provider explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:12:56.777902+00:00; response SHA256=965e02ea3dbb41667699cb23bfffa807fd755f41c1db183e1f407a11d74c968f."
+            }
+          ],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                1
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 2,
+                "compound": "Heart Infusion Broth",
+                "compound_id": 1104,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 5,
+                "unit": "g",
+                "g_l": 5,
+                "mmol_l": null,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Heart Infusion Broth\",\n                \"compound_id\": 1104,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            2,
+            "concentration"
+          ],
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [
+            {
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "supports": "SUPPORT",
+              "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "explanation": "Concentration evidence for composition[2].concentration (Yeast extract) in MediaDive solution 2474; locator=$.data.recipe[2] (compound_id=16). Provider explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:12:56.777902+00:00; response SHA256=965e02ea3dbb41667699cb23bfffa807fd755f41c1db183e1f407a11d74c968f."
+            }
+          ],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                2
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 3,
+                "compound": "Yeast extract",
+                "compound_id": 16,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 5,
+                "unit": "g",
+                "g_l": 5,
+                "mmol_l": null,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            3,
+            "concentration"
+          ],
+          "ingredient": "Potassium Phosphate",
+          "old": {
+            "value": "2",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                3
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 4,
+                "compound": "Potassium Phosphate",
+                "compound_id": 928,
+                "solution": null,
+                "solution_id": null,
+                "condition": "dibasic",
+                "attribute": null,
+                "amount": 2,
+                "unit": "g",
+                "g_l": 2,
+                "mmol_l": 14.6967,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Potassium Phosphate\",\n                \"compound_id\": 928,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": \"dibasic\",\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": 14.6967,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            4,
+            "concentration"
+          ],
+          "ingredient": "Sodium Chloride",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [
+            {
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "supports": "SUPPORT",
+              "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"Sodium Chloride\",\n                \"compound_id\": 1105,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 85.5578,\n                \"optional\": 0\n            }",
+              "explanation": "Concentration evidence for composition[4].concentration (Sodium Chloride) in MediaDive solution 2474; locator=$.data.recipe[4] (compound_id=1105). Provider explicitly reports g_l=5. Arithmetic check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:12:56.777902+00:00; response SHA256=965e02ea3dbb41667699cb23bfffa807fd755f41c1db183e1f407a11d74c968f."
+            }
+          ],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                4
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 5,
+                "compound": "Sodium Chloride",
+                "compound_id": 1105,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 5,
+                "unit": "g",
+                "g_l": 5,
+                "mmol_l": 85.5578,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"Sodium Chloride\",\n                \"compound_id\": 1105,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 85.5578,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            5,
+            "concentration"
+          ],
+          "ingredient": "Magnesium sulfate",
+          "old": {
+            "value": "0.1",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [
+            {
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "supports": "SUPPORT",
+              "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"Magnesium sulfate\",\n                \"compound_id\": 793,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.830772,\n                \"optional\": 0\n            }",
+              "explanation": "Concentration evidence for composition[5].concentration (Magnesium sulfate) in MediaDive solution 2474; locator=$.data.recipe[5] (compound_id=793). Provider explicitly reports g_l=0.1. Arithmetic check: 0.1 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.1 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:12:56.777902+00:00; response SHA256=965e02ea3dbb41667699cb23bfffa807fd755f41c1db183e1f407a11d74c968f."
+            }
+          ],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                5
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 6,
+                "compound": "Magnesium sulfate",
+                "compound_id": 793,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 0.1,
+                "unit": "g",
+                "g_l": 0.1,
+                "mmol_l": 0.830772,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"Magnesium sulfate\",\n                \"compound_id\": 793,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.830772,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            6,
+            "concentration"
+          ],
+          "ingredient": "Acetic acid",
+          "old": {
+            "value": "1.6",
+            "unit": "PERCENT_V_V"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                6
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 7,
+                "compound": "Acetic acid",
+                "compound_id": 380,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 1.6,
+                "unit": "ml",
+                "g_l": null,
+                "mmol_l": null,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\": \"Acetic acid\",\n                \"compound_id\": 380,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.6,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            7,
+            "concentration"
+          ],
+          "ingredient": "Propionic acid",
+          "old": {
+            "value": "0.6",
+            "unit": "PERCENT_V_V"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                7
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 8,
+                "compound": "Propionic acid",
+                "compound_id": 381,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 0.6,
+                "unit": "ml",
+                "g_l": null,
+                "mmol_l": null,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 8,\n                \"compound\": \"Propionic acid\",\n                \"compound_id\": 381,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.6,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            8,
+            "concentration"
+          ],
+          "ingredient": "n-Butyric acid",
+          "old": {
+            "value": "0.4",
+            "unit": "PERCENT_V_V"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                8
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 9,
+                "compound": "n-Butyric acid",
+                "compound_id": 376,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 0.4,
+                "unit": "ml",
+                "g_l": null,
+                "mmol_l": null,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 9,\n                \"compound\": \"n-Butyric acid\",\n                \"compound_id\": 376,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            9,
+            "concentration"
+          ],
+          "ingredient": "n-Valeric acid",
+          "old": {
+            "value": "0.1",
+            "unit": "PERCENT_V_V"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                9
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 10,
+                "compound": "n-Valeric acid",
+                "compound_id": 288,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 0.1,
+                "unit": "ml",
+                "g_l": null,
+                "mmol_l": null,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 10,\n                \"compound\": \"n-Valeric acid\",\n                \"compound_id\": 288,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            10,
+            "concentration"
+          ],
+          "ingredient": "Isovaleric acid",
+          "old": {
+            "value": "0.1",
+            "unit": "PERCENT_V_V"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                10
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 11,
+                "compound": "Isovaleric acid",
+                "compound_id": 225,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 0.1,
+                "unit": "ml",
+                "g_l": null,
+                "mmol_l": null,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 11,\n                \"compound\": \"Isovaleric acid\",\n                \"compound_id\": 225,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            11,
+            "concentration"
+          ],
+          "ingredient": "Isobutyric acid",
+          "old": {
+            "value": "0.1",
+            "unit": "PERCENT_V_V"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                11
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 12,
+                "compound": "Isobutyric acid",
+                "compound_id": 222,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 0.1,
+                "unit": "ml",
+                "g_l": null,
+                "mmol_l": null,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 12,\n                \"compound\": \"Isobutyric acid\",\n                \"compound_id\": 222,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            12,
+            "concentration"
+          ],
+          "ingredient": "2-Methylbutyric acid",
+          "old": {
+            "value": "0.1",
+            "unit": "PERCENT_V_V"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                12
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 13,
+                "compound": "2-Methylbutyric acid",
+                "compound_id": 480,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 0.1,
+                "unit": "ml",
+                "g_l": null,
+                "mmol_l": null,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 13,\n                \"compound\": \"2-Methylbutyric acid\",\n                \"compound_id\": 480,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            13,
+            "concentration"
+          ],
+          "ingredient": "Vitamin K1",
+          "old": {
+            "value": "0.001",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                13
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 14,
+                "compound": "Vitamin K1",
+                "compound_id": 150,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": "1% soln",
+                "amount": 0.1,
+                "unit": "ml",
+                "g_l": 0.001,
+                "mmol_l": 0.00221877,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 14,\n                \"compound\": \"Vitamin K1\",\n                \"compound_id\": 150,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"1% soln\",\n                \"amount\": 0.1,\n                \"unit\": \"ml\",\n                \"g_l\": 0.001,\n                \"mmol_l\": 0.00221877,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            14,
+            "concentration"
+          ],
+          "ingredient": "L-Cysteine",
+          "old": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [
+            {
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "supports": "SUPPORT",
+              "snippet": "{\n                \"recipe_order\": 15,\n                \"compound\": \"L-Cysteine\",\n                \"compound_id\": 671,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 0.5,\n                \"mmol_l\": 4.12677,\n                \"optional\": 0\n            }",
+              "explanation": "Concentration evidence for composition[14].concentration (L-Cysteine) in MediaDive solution 2474; locator=$.data.recipe[14] (compound_id=671). Provider explicitly reports g_l=0.5. Arithmetic check: 0.5 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.5 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:12:56.777902+00:00; response SHA256=965e02ea3dbb41667699cb23bfffa807fd755f41c1db183e1f407a11d74c968f."
+            }
+          ],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                14
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 15,
+                "compound": "L-Cysteine",
+                "compound_id": 671,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 0.5,
+                "unit": "g",
+                "g_l": 0.5,
+                "mmol_l": 4.12677,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 15,\n                \"compound\": \"L-Cysteine\",\n                \"compound_id\": 671,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 0.5,\n                \"mmol_l\": 4.12677,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            15,
+            "concentration"
+          ],
+          "ingredient": "Fetal bovine serum",
+          "old": {
+            "value": "100",
+            "unit": "PERCENT_V_V"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                15
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 16,
+                "compound": "Fetal bovine serum",
+                "compound_id": 954,
+                "solution": null,
+                "solution_id": null,
+                "condition": "inactivated",
+                "attribute": null,
+                "amount": 100,
+                "unit": "ml",
+                "g_l": null,
+                "mmol_l": null,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 16,\n                \"compound\": \"Fetal bovine serum\",\n                \"compound_id\": 954,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": \"inactivated\",\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            16,
+            "concentration"
+          ],
+          "ingredient": "Distilled water",
+          "old": {
+            "value": "800",
+            "unit": "PERCENT_V_V"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                17
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 18,
+                "compound": "Distilled water",
+                "compound_id": 4,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 800,
+                "unit": "ml",
+                "g_l": null,
+                "mmol_l": null,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/2474",
+              "snippet": "{\n                \"recipe_order\": 18,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 800,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "ingredient": "See source for composition",
+          "old": {
+            "value": "variable",
+            "unit": "VARIABLE"
+          },
+          "old_evidence": [],
+          "mapping_status": "placeholder; source composition exists; no quantitative source claim",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        }
+      ],
+      "source_rows": 18,
+      "existing_history_events": 9
+    },
+    {
+      "key": "K1245_18691",
+      "path": "data/normalized_yaml/bacterial/medium_1245_modified_for_dsm_18691.yaml",
+      "id": "CultureMech:004002",
+      "before_sha256": "a66deefdddb224dd4892a1b28bb32e8a02a5389803327f5cda8c232d2ecfe719",
+      "quantity_fields": [
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "ingredient": "Proteose peptone no. 2",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                3
+              ],
+              "row": [
+                "Proteose Peptone no. 2",
+                "Proteose Peptone",
+                "rich-peptone#",
+                "4.98",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Proteose Peptone no. 2 Proteose Peptone rich-peptone# 4.98 null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1,
+            "concentration"
+          ],
+          "ingredient": "Heart Infusion Broth",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                8
+              ],
+              "row": [
+                "Heart Infusion Broth",
+                "Heart Infusion Broth",
+                "rich-meat#",
+                "4.98",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Heart Infusion Broth Heart Infusion Broth rich-meat# 4.98 null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            2,
+            "concentration"
+          ],
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                6
+              ],
+              "row": [
+                "Yeast Extract",
+                "Yeast extract",
+                "rich-peptone#",
+                "4.98",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Yeast Extract Yeast extract rich-peptone# 4.98 null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            3,
+            "concentration"
+          ],
+          "ingredient": "Potassium Phosphate",
+          "old": {
+            "value": "2",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                26
+              ],
+              "row": [
+                "Potassium Phosphate, dibasic",
+                "Potassium Phosphate",
+                "SEED-cpd00009#cpd00205##",
+                "1.99",
+                "0.01"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Potassium Phosphate, dibasic Potassium Phosphate SEED-cpd00009#cpd00205## 1.99 0.01",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            4,
+            "concentration"
+          ],
+          "ingredient": "Sodium Chloride",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                15
+              ],
+              "row": [
+                "Sodium Chloride",
+                "Sodium chloride",
+                "SEED-cpd00099#cpd00971##",
+                "4.98",
+                "0.09"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Sodium Chloride Sodium chloride SEED-cpd00099#cpd00971## 4.98 0.09",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            5,
+            "concentration"
+          ],
+          "ingredient": "Magnesium sulfate",
+          "old": {
+            "value": "0.1",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                4
+              ],
+              "row": [
+                "Magnesium Sulfate",
+                "Magnesium sulfate",
+                "SEED-cpd00048#cpd00254##",
+                "0.10",
+                "0.00"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Magnesium Sulfate Magnesium sulfate SEED-cpd00048#cpd00254## 0.10 0.00",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            6,
+            "concentration"
+          ],
+          "ingredient": "Acetic acid",
+          "old": {
+            "value": "1.6",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                10
+              ],
+              "row": [
+                "Acetic Acid",
+                "Acetic acid",
+                "SEED-cpd00029###",
+                "null",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Acetic Acid Acetic acid SEED-cpd00029### null null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            7,
+            "concentration"
+          ],
+          "ingredient": "Propionic acid",
+          "old": {
+            "value": "0.6",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                13
+              ],
+              "row": [
+                "Propionic Acid",
+                "Propionic acid",
+                "SEED-cpd00141###",
+                "null",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Propionic Acid Propionic acid SEED-cpd00141### null null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            8,
+            "concentration"
+          ],
+          "ingredient": "n-Butyric acid",
+          "old": {
+            "value": "0.4",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                14
+              ],
+              "row": [
+                "N-Butyric Acid",
+                "n-Butyric acid",
+                "SEED-cpd00211###",
+                "null",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "N-Butyric Acid n-Butyric acid SEED-cpd00211### null null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            9,
+            "concentration"
+          ],
+          "ingredient": "n-Valeric acid",
+          "old": {
+            "value": "0.1",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                17
+              ],
+              "row": [
+                "N-Valeric Acid",
+                "n-Valeric acid",
+                "SEED-cpd00597###",
+                "null",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "N-Valeric Acid n-Valeric acid SEED-cpd00597### null null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            10,
+            "concentration"
+          ],
+          "ingredient": "Isovaleric acid",
+          "old": {
+            "value": "0.1",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                24
+              ],
+              "row": [
+                "Isovaleric Acid",
+                "Isovaleric acid",
+                "SEED-cpd05178###",
+                "null",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Isovaleric Acid Isovaleric acid SEED-cpd05178### null null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            11,
+            "concentration"
+          ],
+          "ingredient": "Isobutyric acid",
+          "old": {
+            "value": "0.1",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                0
+              ],
+              "row": [
+                "Isobutyric Acid",
+                "isobutyric acid",
+                "SEED-cpd01711###",
+                "null",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Isobutyric Acid isobutyric acid SEED-cpd01711### null null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            12,
+            "concentration"
+          ],
+          "ingredient": "Tryptone",
+          "old": {
+            "value": "10.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            13,
+            "concentration"
+          ],
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "5.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            14,
+            "concentration"
+          ],
+          "ingredient": "Sodium chloride",
+          "old": {
+            "value": "10.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            15,
+            "concentration"
+          ],
+          "ingredient": "Vitamin K1",
+          "old": {
+            "value": "0.001",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                18
+              ],
+              "row": [
+                "Vitamin K1",
+                "Vitamin K1",
+                "SEED-cpd01401###",
+                "null",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Vitamin K1 Vitamin K1 SEED-cpd01401### null null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            16,
+            "concentration"
+          ],
+          "ingredient": "L-Cysteine",
+          "old": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                12
+              ],
+              "row": [
+                "L-Cysteine",
+                "L-Cysteine",
+                "SEED-cpd00084###",
+                "0.50",
+                "0.00"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "L-Cysteine L-Cysteine SEED-cpd00084### 0.50 0.00",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            17,
+            "concentration"
+          ],
+          "ingredient": "Fetal bovine serum",
+          "old": {
+            "value": "100",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "source-specific serum identity; do not treat calf and fetal serum as equivalents",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                23
+              ],
+              "row": [
+                "fetal bovine serum",
+                "Fetal Bovine Serum (heat inactivated)",
+                "rich-serum#",
+                "100.00",
+                "null"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "fetal bovine serum Fetal Bovine Serum (heat inactivated) rich-serum# 100.00 null",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            18,
+            "concentration"
+          ],
+          "ingredient": "Glucose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                5
+              ],
+              "row": [
+                "Glucose",
+                "D-Glucose",
+                "SEED-cpd00027###",
+                "0.80",
+                "0.00"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Glucose D-Glucose SEED-cpd00027### 0.80 0.00",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            19,
+            "concentration"
+          ],
+          "ingredient": "Fructose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                21
+              ],
+              "row": [
+                "Fructose",
+                "D-Fructose",
+                "SEED-cpd00082###",
+                "0.80",
+                "0.00"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Fructose D-Fructose SEED-cpd00082### 0.80 0.00",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            20,
+            "concentration"
+          ],
+          "ingredient": "Sucrose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                2
+              ],
+              "row": [
+                "Sucrose",
+                "Sucrose",
+                "SEED-cpd00076###",
+                "0.80",
+                "0.00"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Sucrose Sucrose SEED-cpd00076### 0.80 0.00",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            21,
+            "concentration"
+          ],
+          "ingredient": "Maltose",
+          "old": {
+            "value": "8.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                20
+              ],
+              "row": [
+                "Maltose",
+                "Maltose",
+                "SEED-cpd00179###",
+                "1.60",
+                "0.00"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Maltose Maltose SEED-cpd00179### 1.60 0.00",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            22,
+            "concentration"
+          ],
+          "ingredient": "Ribose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                11
+              ],
+              "row": [
+                "Ribose",
+                "Ribose",
+                "SEED-cpd05267###",
+                "0.80",
+                "0.01"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Ribose Ribose SEED-cpd05267### 0.80 0.01",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            23,
+            "concentration"
+          ],
+          "ingredient": "Xylose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                22
+              ],
+              "row": [
+                "Xylose",
+                "xylose",
+                "SEED-cpd00154###",
+                "0.80",
+                "0.01"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Xylose xylose SEED-cpd00154### 0.80 0.01",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            24,
+            "concentration"
+          ],
+          "ingredient": "Pectin",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                19
+              ],
+              "row": [
+                "Pectin",
+                "Pectin",
+                "SEED-cpd11601###",
+                "0.80",
+                "0.00"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Pectin Pectin SEED-cpd11601### 0.80 0.00",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            25,
+            "concentration"
+          ],
+          "ingredient": "Starch",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                16
+              ],
+              "row": [
+                "Starch",
+                "Starch",
+                "SEED-cpd11657###",
+                "0.80",
+                "0.00"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Starch Starch SEED-cpd11657### 0.80 0.00",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            26,
+            "concentration"
+          ],
+          "ingredient": "Sodium pyruvate",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                27
+              ],
+              "row": [
+                "Sodium Pyruvate",
+                "Sodium pyruvate",
+                "SEED-cpd00020#cpd00971##",
+                "0.80",
+                "0.01"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Sodium Pyruvate Sodium pyruvate SEED-cpd00020#cpd00971## 0.80 0.01",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            27,
+            "concentration"
+          ],
+          "ingredient": "Thiamine pyrophosphate",
+          "old": {
+            "value": "0.00075",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "Metabolites list",
+                9
+              ],
+              "row": [
+                "Thiamine Pyrophosphate",
+                "Thiamine-HCl",
+                "SEED-cpd00099#cpd00305##",
+                "7.48E-5",
+                "2.49E-7"
+              ],
+              "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1245_18691",
+              "snippet": "Thiamine Pyrophosphate Thiamine-HCl SEED-cpd00099#cpd00305## 7.48E-5 2.49E-7",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        }
+      ],
+      "source_rows": 28,
+      "existing_history_events": 8
+    },
+    {
+      "key": "D1245",
+      "path": "data/normalized_yaml/bacterial/oteb_medium.yaml",
+      "id": "CultureMech:000704",
+      "before_sha256": "7f9ffe427263a09cfd556c6784d98d47cca0d446510225536c0052381b5e5e8a",
+      "quantity_fields": [
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "ingredient": "Proteose peptone no. 2",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                0,
+                "recipe",
+                0
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 1,
+                "compound": "Proteose peptone no. 2",
+                "compound_id": 458,
+                "amount": 5,
+                "unit": "g",
+                "g_l": 5,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Proteose peptone no. 2\",\n                        \"compound_id\": 458,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1,
+            "concentration"
+          ],
+          "ingredient": "Heart Infusion Broth",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                0,
+                "recipe",
+                1
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 2,
+                "compound": "Heart Infusion Broth",
+                "compound_id": 1104,
+                "amount": 5,
+                "unit": "g",
+                "g_l": 5,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Heart Infusion Broth\",\n                        \"compound_id\": 1104,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            2,
+            "concentration"
+          ],
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                0,
+                "recipe",
+                2
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 3,
+                "compound": "Yeast extract",
+                "compound_id": 16,
+                "amount": 5,
+                "unit": "g",
+                "g_l": 5,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            3,
+            "concentration"
+          ],
+          "ingredient": "Potassium Phosphate",
+          "old": {
+            "value": "2",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                0,
+                "recipe",
+                3
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 4,
+                "compound": "Potassium Phosphate",
+                "compound_id": 928,
+                "condition": "dibasic",
+                "amount": 2,
+                "unit": "g",
+                "g_l": 2,
+                "mmol_l": 14.6967,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Potassium Phosphate\",\n                        \"compound_id\": 928,\n                        \"condition\": \"dibasic\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\": 14.6967,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            4,
+            "concentration"
+          ],
+          "ingredient": "Sodium Chloride",
+          "old": {
+            "value": "5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                0,
+                "recipe",
+                4
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 5,
+                "compound": "Sodium Chloride",
+                "compound_id": 1105,
+                "amount": 5,
+                "unit": "g",
+                "g_l": 5,
+                "mmol_l": 85.5578,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Sodium Chloride\",\n                        \"compound_id\": 1105,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 85.5578,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            5,
+            "concentration"
+          ],
+          "ingredient": "Magnesium sulfate",
+          "old": {
+            "value": "0.1",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                0,
+                "recipe",
+                5
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 6,
+                "compound": "Magnesium sulfate",
+                "compound_id": 793,
+                "amount": 0.1,
+                "unit": "g",
+                "g_l": 0.1,
+                "mmol_l": 0.830772,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Magnesium sulfate\",\n                        \"compound_id\": 793,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.830772,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            6,
+            "concentration"
+          ],
+          "ingredient": "Acetic acid",
+          "old": {
+            "value": "1.6",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                0,
+                "recipe",
+                6
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 7,
+                "compound": "Acetic acid",
+                "compound_id": 380,
+                "amount": 1.6,
+                "unit": "ml",
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Acetic acid\",\n                        \"compound_id\": 380,\n                        \"amount\": 1.6,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            7,
+            "concentration"
+          ],
+          "ingredient": "Propionic acid",
+          "old": {
+            "value": "0.6",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                0,
+                "recipe",
+                7
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 8,
+                "compound": "Propionic acid",
+                "compound_id": 381,
+                "amount": 0.6,
+                "unit": "ml",
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Propionic acid\",\n                        \"compound_id\": 381,\n                        \"amount\": 0.6,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            8,
+            "concentration"
+          ],
+          "ingredient": "n-Butyric acid",
+          "old": {
+            "value": "0.4",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                0,
+                "recipe",
+                8
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 9,
+                "compound": "n-Butyric acid",
+                "compound_id": 376,
+                "amount": 0.4,
+                "unit": "ml",
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"n-Butyric acid\",\n                        \"compound_id\": 376,\n                        \"amount\": 0.4,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            9,
+            "concentration"
+          ],
+          "ingredient": "n-Valeric acid",
+          "old": {
+            "value": "0.1",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                0,
+                "recipe",
+                9
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 10,
+                "compound": "n-Valeric acid",
+                "compound_id": 288,
+                "amount": 0.1,
+                "unit": "ml",
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"n-Valeric acid\",\n                        \"compound_id\": 288,\n                        \"amount\": 0.1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            10,
+            "concentration"
+          ],
+          "ingredient": "Isovaleric acid",
+          "old": {
+            "value": "0.1",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                0,
+                "recipe",
+                10
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 11,
+                "compound": "Isovaleric acid",
+                "compound_id": 225,
+                "amount": 0.1,
+                "unit": "ml",
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Isovaleric acid\",\n                        \"compound_id\": 225,\n                        \"amount\": 0.1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            11,
+            "concentration"
+          ],
+          "ingredient": "Isobutyric acid",
+          "old": {
+            "value": "0.1",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                0,
+                "recipe",
+                11
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 12,
+                "compound": "Isobutyric acid",
+                "compound_id": 222,
+                "amount": 0.1,
+                "unit": "ml",
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Isobutyric acid\",\n                        \"compound_id\": 222,\n                        \"amount\": 0.1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            12,
+            "concentration"
+          ],
+          "ingredient": "Tryptone",
+          "old": {
+            "value": "10.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            13,
+            "concentration"
+          ],
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "5.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            14,
+            "concentration"
+          ],
+          "ingredient": "Sodium chloride",
+          "old": {
+            "value": "10.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "supplier-tagged LB expansion absent from exact recipe; distinguish source yeast/salt before proposing removal",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            15,
+            "concentration"
+          ],
+          "ingredient": "Vitamin K1",
+          "old": {
+            "value": "0.001",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                0,
+                "recipe",
+                13
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 14,
+                "compound": "Vitamin K1",
+                "compound_id": 150,
+                "attribute": "1% soln",
+                "amount": 0.1,
+                "unit": "ml",
+                "g_l": 0.001,
+                "mmol_l": 0.00221877,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Vitamin K1\",\n                        \"compound_id\": 150,\n                        \"attribute\": \"1% soln\",\n                        \"amount\": 0.1,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00221877,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            16,
+            "concentration"
+          ],
+          "ingredient": "L-Cysteine",
+          "old": {
+            "value": "0.5",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                0,
+                "recipe",
+                14
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 15,
+                "compound": "L-Cysteine",
+                "compound_id": 671,
+                "amount": 0.5,
+                "unit": "g",
+                "g_l": 0.5,
+                "mmol_l": 4.12677,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"L-Cysteine\",\n                        \"compound_id\": 671,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 4.12677,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            17,
+            "concentration"
+          ],
+          "ingredient": "Fetal bovine serum",
+          "old": {
+            "value": "100",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                0,
+                "recipe",
+                15
+              ],
+              "stage_id": 2474,
+              "row": {
+                "recipe_order": 16,
+                "compound": "Fetal bovine serum",
+                "compound_id": 954,
+                "condition": "inactivated",
+                "amount": 100,
+                "unit": "ml",
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Fetal bovine serum\",\n                        \"compound_id\": 954,\n                        \"condition\": \"inactivated\",\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            18,
+            "concentration"
+          ],
+          "ingredient": "Glucose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                1,
+                "recipe",
+                0
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 1,
+                "compound": "Glucose",
+                "compound_id": 5,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 44.405,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 44.405,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            19,
+            "concentration"
+          ],
+          "ingredient": "Fructose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                1,
+                "recipe",
+                1
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 2,
+                "compound": "Fructose",
+                "compound_id": 98,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 44.405,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Fructose\",\n                        \"compound_id\": 98,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 44.405,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            20,
+            "concentration"
+          ],
+          "ingredient": "Sucrose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                1,
+                "recipe",
+                2
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 3,
+                "compound": "Sucrose",
+                "compound_id": 108,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 23.3713,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Sucrose\",\n                        \"compound_id\": 108,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 23.3713,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            21,
+            "concentration"
+          ],
+          "ingredient": "Maltose",
+          "old": {
+            "value": "8.0",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "one old collapsed field maps to two literal source rows; total unresolved",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                1,
+                "recipe",
+                3
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 4,
+                "compound": "Maltose",
+                "compound_id": 171,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 23.3713,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Maltose\",\n                        \"compound_id\": 171,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 23.3713,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            },
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                1,
+                "recipe",
+                4
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 5,
+                "compound": "Maltose",
+                "compound_id": 171,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 23.3713,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Maltose\",\n                        \"compound_id\": 171,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 23.3713,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            22,
+            "concentration"
+          ],
+          "ingredient": "Ribose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                1,
+                "recipe",
+                5
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 6,
+                "compound": "Ribose",
+                "compound_id": 168,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 53.2872,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Ribose\",\n                        \"compound_id\": 168,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 53.2872,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            23,
+            "concentration"
+          ],
+          "ingredient": "Xylose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                1,
+                "recipe",
+                6
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 7,
+                "compound": "Xylose",
+                "compound_id": 1107,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 53.2872,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Xylose\",\n                        \"compound_id\": 1107,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 53.2872,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            24,
+            "concentration"
+          ],
+          "ingredient": "Pectin",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                1,
+                "recipe",
+                7
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 8,
+                "compound": "Pectin",
+                "compound_id": 1108,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 41.2074,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Pectin\",\n                        \"compound_id\": 1108,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 41.2074,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            25,
+            "concentration"
+          ],
+          "ingredient": "Starch",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                1,
+                "recipe",
+                8
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 9,
+                "compound": "Starch",
+                "compound_id": 199,
+                "attribute": "soluble",
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Starch\",\n                        \"compound_id\": 199,\n                        \"attribute\": \"soluble\",\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            26,
+            "concentration"
+          ],
+          "ingredient": "Sodium pyruvate",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                1,
+                "recipe",
+                9
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 10,
+                "compound": "Sodium pyruvate",
+                "compound_id": 438,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 72.7008,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Sodium pyruvate\",\n                        \"compound_id\": 438,\n                        \"amount\": 8,\n                        \"unit\": \"g\",\n                        \"g_l\": 8,\n                        \"mmol_l\": 72.7008,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            27,
+            "concentration"
+          ],
+          "ingredient": "Thiamine pyrophosphate",
+          "old": {
+            "value": "0.00075",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "solutions",
+                1,
+                "recipe",
+                10
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 11,
+                "compound": "Thiamine pyrophosphate",
+                "compound_id": 778,
+                "amount": 750,
+                "unit": "\u00b5g",
+                "g_l": 0.00075,
+                "mmol_l": 0.00162772,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/medium/1245",
+              "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Thiamine pyrophosphate\",\n                        \"compound_id\": 778,\n                        \"amount\": 750,\n                        \"unit\": \"\\u00b5g\",\n                        \"g_l\": 0.00075,\n                        \"mmol_l\": 0.00162772,\n                        \"optional\": 0\n                    }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        }
+      ],
+      "source_rows": 30,
+      "existing_history_events": 8
+    },
+    {
+      "key": "K6000",
+      "path": "data/normalized_yaml/bacterial/sugar_stock_solution_medium_1245.yaml",
+      "id": "CultureMech:006082",
+      "before_sha256": "3024b892745fb14562eb55cd1a16bca6cb6b87938bf0c47fd9b4ac9e6ce8ed47",
+      "quantity_fields": [],
+      "source_rows": 11,
+      "existing_history_events": 3
+    },
+    {
+      "key": "S5688",
+      "path": "data/normalized_yaml/bacterial/mediadive_5688_Sugar_Stock_Solution.yaml",
+      "id": "CultureMech:014553",
+      "before_sha256": "8e481c2ae00c6ed25839d0e145939fc627c462ad184d759bfcb60e22573ab12d",
+      "quantity_fields": [
+        {
+          "pointer": [
+            "composition",
+            0,
+            "concentration"
+          ],
+          "ingredient": "Glucose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [
+            {
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "supports": "SUPPORT",
+              "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Glucose\",\n                \"compound_id\": 5,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 44.405,\n                \"optional\": 0\n            }",
+              "explanation": "Concentration evidence for composition[0].concentration (Glucose) in MediaDive solution 5688; locator=$.data.recipe[0] (compound_id=5). Provider explicitly reports g_l=8. Arithmetic check: 8 g * 1 g/g / (1000 ml / 1000 ml per L) = 8 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:57:22.744985+00:00; response SHA256=2c318327c05d9c02fcd04f1d14e52fa2c4d4d0e71f54f74ebc9d63049c49ce9d."
+            }
+          ],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                0
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 1,
+                "compound": "Glucose",
+                "compound_id": 5,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 44.405,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Glucose\",\n                \"compound_id\": 5,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 44.405,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            1,
+            "concentration"
+          ],
+          "ingredient": "Fructose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [
+            {
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "supports": "SUPPORT",
+              "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Fructose\",\n                \"compound_id\": 98,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 44.405,\n                \"optional\": 0\n            }",
+              "explanation": "Concentration evidence for composition[1].concentration (Fructose) in MediaDive solution 5688; locator=$.data.recipe[1] (compound_id=98). Provider explicitly reports g_l=8. Arithmetic check: 8 g * 1 g/g / (1000 ml / 1000 ml per L) = 8 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:57:22.744985+00:00; response SHA256=2c318327c05d9c02fcd04f1d14e52fa2c4d4d0e71f54f74ebc9d63049c49ce9d."
+            }
+          ],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                1
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 2,
+                "compound": "Fructose",
+                "compound_id": 98,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 44.405,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Fructose\",\n                \"compound_id\": 98,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 44.405,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            2,
+            "concentration"
+          ],
+          "ingredient": "Sucrose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [
+            {
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "supports": "SUPPORT",
+              "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Sucrose\",\n                \"compound_id\": 108,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 23.3713,\n                \"optional\": 0\n            }",
+              "explanation": "Concentration evidence for composition[2].concentration (Sucrose) in MediaDive solution 5688; locator=$.data.recipe[2] (compound_id=108). Provider explicitly reports g_l=8. Arithmetic check: 8 g * 1 g/g / (1000 ml / 1000 ml per L) = 8 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:57:22.744985+00:00; response SHA256=2c318327c05d9c02fcd04f1d14e52fa2c4d4d0e71f54f74ebc9d63049c49ce9d."
+            }
+          ],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                2
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 3,
+                "compound": "Sucrose",
+                "compound_id": 108,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 23.3713,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Sucrose\",\n                \"compound_id\": 108,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 23.3713,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            3,
+            "concentration"
+          ],
+          "ingredient": "Maltose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "separate literal maltose row; source duplication unresolved; not a total",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                3
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 4,
+                "compound": "Maltose",
+                "compound_id": 171,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 23.3713,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Maltose\",\n                \"compound_id\": 171,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 23.3713,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            4,
+            "concentration"
+          ],
+          "ingredient": "Maltose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "separate literal maltose row; source duplication unresolved; not a total",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                4
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 5,
+                "compound": "Maltose",
+                "compound_id": 171,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 23.3713,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"Maltose\",\n                \"compound_id\": 171,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 23.3713,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            5,
+            "concentration"
+          ],
+          "ingredient": "Ribose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [
+            {
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "supports": "SUPPORT",
+              "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"Ribose\",\n                \"compound_id\": 168,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 53.2872,\n                \"optional\": 0\n            }",
+              "explanation": "Concentration evidence for composition[5].concentration (Ribose) in MediaDive solution 5688; locator=$.data.recipe[5] (compound_id=168). Provider explicitly reports g_l=8. Arithmetic check: 8 g * 1 g/g / (1000 ml / 1000 ml per L) = 8 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:57:22.744985+00:00; response SHA256=2c318327c05d9c02fcd04f1d14e52fa2c4d4d0e71f54f74ebc9d63049c49ce9d."
+            }
+          ],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                5
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 6,
+                "compound": "Ribose",
+                "compound_id": 168,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 53.2872,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"Ribose\",\n                \"compound_id\": 168,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 53.2872,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            6,
+            "concentration"
+          ],
+          "ingredient": "Xylose",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [
+            {
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "supports": "SUPPORT",
+              "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\": \"Xylose\",\n                \"compound_id\": 1107,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 53.2872,\n                \"optional\": 0\n            }",
+              "explanation": "Concentration evidence for composition[6].concentration (Xylose) in MediaDive solution 5688; locator=$.data.recipe[6] (compound_id=1107). Provider explicitly reports g_l=8. Arithmetic check: 8 g * 1 g/g / (1000 ml / 1000 ml per L) = 8 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:57:22.744985+00:00; response SHA256=2c318327c05d9c02fcd04f1d14e52fa2c4d4d0e71f54f74ebc9d63049c49ce9d."
+            }
+          ],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                6
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 7,
+                "compound": "Xylose",
+                "compound_id": 1107,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 53.2872,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\": \"Xylose\",\n                \"compound_id\": 1107,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 53.2872,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            7,
+            "concentration"
+          ],
+          "ingredient": "Pectin",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [
+            {
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "supports": "SUPPORT",
+              "snippet": "{\n                \"recipe_order\": 8,\n                \"compound\": \"Pectin\",\n                \"compound_id\": 1108,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 41.2074,\n                \"optional\": 0\n            }",
+              "explanation": "Concentration evidence for composition[7].concentration (Pectin) in MediaDive solution 5688; locator=$.data.recipe[7] (compound_id=1108). Provider explicitly reports g_l=8. Arithmetic check: 8 g * 1 g/g / (1000 ml / 1000 ml per L) = 8 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:57:22.744985+00:00; response SHA256=2c318327c05d9c02fcd04f1d14e52fa2c4d4d0e71f54f74ebc9d63049c49ce9d."
+            }
+          ],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                7
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 8,
+                "compound": "Pectin",
+                "compound_id": 1108,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 41.2074,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "snippet": "{\n                \"recipe_order\": 8,\n                \"compound\": \"Pectin\",\n                \"compound_id\": 1108,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 41.2074,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            8,
+            "concentration"
+          ],
+          "ingredient": "Starch",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                8
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 9,
+                "compound": "Starch",
+                "compound_id": 199,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": "soluble",
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": null,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "snippet": "{\n                \"recipe_order\": 9,\n                \"compound\": \"Starch\",\n                \"compound_id\": 199,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"soluble\",\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            9,
+            "concentration"
+          ],
+          "ingredient": "Sodium pyruvate",
+          "old": {
+            "value": "8",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [
+            {
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "supports": "SUPPORT",
+              "snippet": "{\n                \"recipe_order\": 10,\n                \"compound\": \"Sodium pyruvate\",\n                \"compound_id\": 438,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 72.7008,\n                \"optional\": 0\n            }",
+              "explanation": "Concentration evidence for composition[9].concentration (Sodium pyruvate) in MediaDive solution 5688; locator=$.data.recipe[9] (compound_id=438). Provider explicitly reports g_l=8. Arithmetic check: 8 g * 1 g/g / (1000 ml / 1000 ml per L) = 8 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:57:22.744985+00:00; response SHA256=2c318327c05d9c02fcd04f1d14e52fa2c4d4d0e71f54f74ebc9d63049c49ce9d."
+            }
+          ],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                9
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 10,
+                "compound": "Sodium pyruvate",
+                "compound_id": 438,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 8,
+                "unit": "g",
+                "g_l": 8,
+                "mmol_l": 72.7008,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "snippet": "{\n                \"recipe_order\": 10,\n                \"compound\": \"Sodium pyruvate\",\n                \"compound_id\": 438,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8,\n                \"unit\": \"g\",\n                \"g_l\": 8,\n                \"mmol_l\": 72.7008,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            10,
+            "concentration"
+          ],
+          "ingredient": "Thiamine pyrophosphate",
+          "old": {
+            "value": "0.00075",
+            "unit": "G_PER_L"
+          },
+          "old_evidence": [
+            {
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "supports": "SUPPORT",
+              "snippet": "{\n                \"recipe_order\": 11,\n                \"compound\": \"Thiamine pyrophosphate\",\n                \"compound_id\": 778,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 750,\n                \"unit\": \"\\u00b5g\",\n                \"g_l\": 0.00075,\n                \"mmol_l\": 0.00162772,\n                \"optional\": 0\n            }",
+              "explanation": "Concentration evidence for composition[10].concentration (Thiamine pyrophosphate) in MediaDive solution 5688; locator=$.data.recipe[10] (compound_id=778). Provider explicitly reports g_l=0.00075. Arithmetic check: 750 \u00b5g * 0.000001 g/\u00b5g / (1000 ml / 1000 ml per L) = 0.000750 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:57:22.744985+00:00; response SHA256=2c318327c05d9c02fcd04f1d14e52fa2c4d4d0e71f54f74ebc9d63049c49ce9d."
+            }
+          ],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                10
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 11,
+                "compound": "Thiamine pyrophosphate",
+                "compound_id": 778,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 750,
+                "unit": "\u00b5g",
+                "g_l": 0.00075,
+                "mmol_l": 0.00162772,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "snippet": "{\n                \"recipe_order\": 11,\n                \"compound\": \"Thiamine pyrophosphate\",\n                \"compound_id\": 778,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 750,\n                \"unit\": \"\\u00b5g\",\n                \"g_l\": 0.00075,\n                \"mmol_l\": 0.00162772,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "composition",
+            11,
+            "concentration"
+          ],
+          "ingredient": "Distilled water",
+          "old": {
+            "value": "1",
+            "unit": "L"
+          },
+          "old_evidence": [
+            {
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "supports": "SUPPORT",
+              "snippet": "{\n                \"recipe_order\": 12,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "explanation": "Concentration evidence for composition[11].concentration (Distilled water) in MediaDive solution 5688; locator=$.data.recipe[11] (compound_id=4). Source water addition is 1000 ml per prepared batch: 1000 / 1000 = 1 L. No source preparation step gives a competing make-up instruction. This is a batch dose, not a volume percentage; no final-volume or solvent-density assumption is made. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T09:57:22.744985+00:00; response SHA256=2c318327c05d9c02fcd04f1d14e52fa2c4d4d0e71f54f74ebc9d63049c49ce9d."
+            }
+          ],
+          "mapping_status": "exact source label candidate; scope and conversion still require review",
+          "source_candidates": [
+            {
+              "pointer": [
+                "data",
+                "recipe",
+                11
+              ],
+              "stage_id": 5688,
+              "row": {
+                "recipe_order": 12,
+                "compound": "Distilled water",
+                "compound_id": 4,
+                "solution": null,
+                "solution_id": null,
+                "condition": null,
+                "attribute": null,
+                "amount": 1000,
+                "unit": "ml",
+                "g_l": null,
+                "mmol_l": null,
+                "optional": 0
+              },
+              "reference": "https://mediadive.dsmz.de/rest/solution/5688",
+              "snippet": "{\n                \"recipe_order\": 12,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+              "scientific_review_status": "pending"
+            }
+          ],
+          "action": "none; review inventory only"
+        },
+        {
+          "pointer": [
+            "ingredients",
+            0,
+            "concentration"
+          ],
+          "ingredient": "See source for composition",
+          "old": {
+            "value": "variable",
+            "unit": "VARIABLE"
+          },
+          "old_evidence": [],
+          "mapping_status": "placeholder; source composition exists; no quantitative source claim",
+          "source_candidates": [],
+          "action": "none; review inventory only"
+        }
+      ],
+      "source_rows": 12,
+      "existing_history_events": 8
+    }
+  ],
+  "quantity_field_count": 115,
+  "source_row_count": 126,
+  "existing_provenance_preserved": true
+}

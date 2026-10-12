@@ -1,0 +1,100 @@
+{
+  "sources": [
+    {
+      "medium_id": "460",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium460.pdf",
+      "http_status": 200,
+      "accessed_at": "2026-10-08T00:04:04.290753+00:00",
+      "pdf_sha256": "5b9dab91f76dc6116613f4ca9aebf73125134c39e3ab76900335c599af7eb5e1",
+      "pages": 1,
+      "extracted_text": " \n\u00a9 2007 DSMZ GmbH - All rights reserved \n460. NITROGEN-FREE MEDIUM FOR PSEUDOMONAS STUTZERI \n \n \n K2HPO4 0.5 g \n MgSO4 x 7 H2O 0.2 g \n NaCl 0.1 g \n Yeast extract 0.2 g \n FeCl3 x 6 H2O 15.0 mg \n DL-Na-malate 6.6 g \n Distilled water 1000.0 ml \n \nAdjust pH to 7.0. \n ",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "cross_reference",
+      "note": "Page 1 original-recipe cross-check; copyright year is not claimed as publication year. The amount evidence uses independently hash-pinned API rows; PDF water input is not proof of measured final volume."
+    },
+    {
+      "medium_id": "464",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium464.pdf",
+      "http_status": 200,
+      "accessed_at": "2026-10-08T00:04:05.498246+00:00",
+      "pdf_sha256": "e8334fa3c25fbfa019079dc0c55bd6b73291eb32313f283190c401b1fb91f131",
+      "pages": 1,
+      "extracted_text": " \n\u00a9 2007 DSMZ GmbH - All rights reserved \n464. PLATE COUNT AGAR \n \n \n Tryptone 5.0 g \n Yeast extract 2.5 g \n Dextrose 1.0 g \n Agar 15.0 g \n Distilled water 1000.0 ml \n \nAdjust pH to 7.0. \n ",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "cross_reference",
+      "note": "Page 1 original-recipe cross-check; copyright year is not claimed as publication year. The amount evidence uses independently hash-pinned API rows; PDF water input is not proof of measured final volume."
+    },
+    {
+      "medium_id": "467",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf",
+      "http_status": 200,
+      "accessed_at": "2026-10-08T00:04:06.707317+00:00",
+      "pdf_sha256": "31ad0e734637e5aa1086a814056ce5e3baecd59847eaedf24db0e91ccc89e8f6",
+      "pages": 1,
+      "extracted_text": " \n\u00a9 2007 DSMZ GmbH - All rights reserved \n467. OTTOW MEDIUM \n \n \n Glucose 1.0 g \n Peptone 7.5 g \n Meat extract 5.0 g \n Yeast extract 2.5 g \n Casamino acids 2.5 g \n NaCl 5.0 g \n Tap water 1000.0 ml \n \nAdjust pH to 8.5. ",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "cross_reference",
+      "note": "Page 1 original-recipe cross-check; copyright year is not claimed as publication year. The amount evidence uses independently hash-pinned API rows; PDF water input is not proof of measured final volume."
+    },
+    {
+      "medium_id": "468",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium468.pdf",
+      "http_status": 200,
+      "accessed_at": "2026-10-08T00:04:07.914325+00:00",
+      "pdf_sha256": "ac0f19aeeabdada654310865eb058c29ecdc77443bdf542fa037427f62e903e4",
+      "pages": 1,
+      "extracted_text": " \n\u00a9 2007 DSMZ GmbH - All rights reserved \n468. EXIGUOBACTERIUM MEDIUM \n \n \n Nutrient broth No. 2 (Oxoid) 25.0 g \n Yeast extract 3.0 g \n Glucose 5.0 g \n Distilled water 1000.0 ml \n \nAdjust pH to 8.0. \n ",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "cross_reference",
+      "note": "Page 1 original-recipe cross-check; copyright year is not claimed as publication year. The amount evidence uses independently hash-pinned API rows; PDF water input is not proof of measured final volume."
+    },
+    {
+      "medium_id": "469",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf",
+      "http_status": 200,
+      "accessed_at": "2026-10-08T00:04:09.122492+00:00",
+      "pdf_sha256": "a7da4f0650bedfcb0c353fe9ae83fd885641a14ed6565b62a6655db099855531",
+      "pages": 1,
+      "extracted_text": " \n\u00a9 2007 DSMZ GmbH - All rights reserved \n469. YM-CATALASE MEDIUM \n \n \n Yeast extract 5.0 g \n Malt extract 5.0 g \n K2HPO4 5.7 g \n MgSO4 x 7 H2O 0.2 g \n NH4H2PO4 1.2 g \n Catalase (Sigma C-10) 60.0 mg \n Distilled water 1000.0 ml \n \nAdjust pH to 7.0. Catalase and MgSO4 are sterilized separately by filtration. ",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "cross_reference",
+      "note": "Page 1 original-recipe cross-check; copyright year is not claimed as publication year. The amount evidence uses independently hash-pinned API rows; PDF water input is not proof of measured final volume."
+    },
+    {
+      "medium_id": "472",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium472.pdf",
+      "http_status": 200,
+      "accessed_at": "2026-10-08T00:04:10.331601+00:00",
+      "pdf_sha256": "577881c83e0f180734f85c739406d3471a99eb0b417edd7968f91ab4cd777f49",
+      "pages": 1,
+      "extracted_text": " \n\u00a9 2007 DSMZ GmbH - All rights reserved \n472. PITYROSPORUM MEDIUM \n \n \n Malt extract 40.0 g \n Ox-bile (desiccated) 20.0 g \n Tween 40 10.0 g \n Glycerol mono-oleate (techn.) 2.5 g \n Agar 15.0 g \n Distilled water 1000.0 ml \n ",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "cross_reference",
+      "note": "Page 1 original-recipe cross-check; copyright year is not claimed as publication year. The amount evidence uses independently hash-pinned API rows; PDF water input is not proof of measured final volume."
+    },
+    {
+      "medium_id": "489",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf",
+      "http_status": 200,
+      "accessed_at": "2026-10-08T00:04:12.779628+00:00",
+      "pdf_sha256": "87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba",
+      "pages": 1,
+      "extracted_text": "489: LACRIMISPORA MEDIUM\nK2HPO4 0.22 g\nKH2PO4 0.22 g\nNaCl 0.45 g\n(NH4)2SO4 0.45 g\nCaCl2 x 2 H2O 0.06 g\nMgSO4 x 7 H2O 0.09 g\nYeast extract 5.00 g\nXylan 5.00 g\nSodium resazurin (0.1% w/v) 0.50 ml\nL-Cysteine HCl x H2O 0.15 g\nNa2S x 9 H2O 0.15 g\nDistilled water 1000.00 ml\nDissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the\nboil, then cool to room temperature under 100% N2 gas. Dispense under same gas\natmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After\nsterilization add cysteine and sulfide from sterile anoxic stock solutions prepared under\n100% N2 gas.\n\u00a9 2022 DSMZ - All rights reserved Page 1 of 1",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "cross_reference",
+      "note": "Page 1 original-recipe cross-check; copyright year is not claimed as publication year. The amount evidence uses independently hash-pinned API rows; PDF water input is not proof of measured final volume."
+    },
+    {
+      "medium_id": "513",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium513.pdf",
+      "http_status": 200,
+      "accessed_at": "2026-10-08T00:04:13.986606+00:00",
+      "pdf_sha256": "6686a105a3948be702dd4ca39325845c943439286b550653e7adbd825b89646a",
+      "pages": 1,
+      "extracted_text": " \n\u00a9 2007 DSMZ GmbH - All rights reserved \n513. PP-MEDIUM \n \n \n Polypeptone 10.0 g \n Yeast extract 2.0 g \n MgSO4 x 7 H2O 1.0 g \n Agar 15.0 g \n Distilled water 1000.0 ml \n \npH of medium should be 7.0. \n ",
+      "source_type": "culture_collection_page",
+      "discovery_mode": "cross_reference",
+      "note": "Page 1 original-recipe cross-check; copyright year is not claimed as publication year. The amount evidence uses independently hash-pinned API rows; PDF water input is not proof of measured final volume."
+    }
+  ]
+}

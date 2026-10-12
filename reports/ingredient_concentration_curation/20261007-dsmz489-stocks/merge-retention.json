@@ -1,0 +1,58 @@
+{
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/lacrimispora_medium.yaml",
+      "status": "checked",
+      "fingerprint": "0dd356baea8805d1ef732e77a75eb1f24cdf553bbd5a597d6eb8f02530dfcf95",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml",
+        "data/normalized_yaml/bacterial/lacrimispora_medium.yaml"
+      ],
+      "fields": {
+        "ingredients": false,
+        "solutions": true,
+        "variants": true,
+        "preparation_steps": true,
+        "notes": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true,
+        "curation_history": true
+      },
+      "all_fields_retained": false,
+      "source_scoped_snippets": 14,
+      "retained_scoped_snippets": 14
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml",
+      "status": "checked",
+      "fingerprint": "0dd356baea8805d1ef732e77a75eb1f24cdf553bbd5a597d6eb8f02530dfcf95",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml",
+        "data/normalized_yaml/bacterial/lacrimispora_medium.yaml"
+      ],
+      "fields": {
+        "ingredients": true,
+        "solutions": false,
+        "variants": true,
+        "preparation_steps": false,
+        "notes": false,
+        "ph_value": true,
+        "evidence": false,
+        "references": false,
+        "curation_history": false
+      },
+      "all_fields_retained": false,
+      "source_scoped_snippets": 15,
+      "retained_scoped_snippets": 14
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_995_Main_sol_489.yaml",
+      "status": "outside_medium_scope",
+      "authoritative_record_unchanged": true
+    }
+  ],
+  "all_media_fields_retained": false,
+  "all_media_snippets_retained": false,
+  "scope": "Current full-corpus groups. Scoped literal quote retention is distinct from full ingredient, variant, explanation and history retention. Standalone solutions correctly remain outside medium merging. No generated corpus published."
+}

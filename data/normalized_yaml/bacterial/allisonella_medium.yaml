@@ -11,240 +11,693 @@ media_term:
   term:
     id: mediadive.medium:1006
     label: ALLISONELLA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+notes: |-
+  Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
 
-
+  Superseded historical provenance (not a current formulation claim):
   Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
   Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
   Catalog: Multiple (L3522 Sigma, 244520 BD)
-
   Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
   Accessed: 2026-03-28
 
+  Constituent composition researched from product specification.
 
-  Constituent composition researched from product specification.'
+  The original recipe adds carbonate, fatty-acid stock and cysteine after cooling under CO2, then dispenses and autoclaves. The API main volume of 1004 ml is a provider encoding, not evidence of measured final volume or verified density conversions.
+
+  Source-specific ingredient identities and quantity scopes supersede copied flattened amounts. Unknown gas amounts, densities and final volumes remain unknown. Other existing chemical annotations and all prior history are preserved, not recertified. No taxa-media association is added.
 ingredients:
 - preferred_term: DL-Histidine
   term:
     id: CHEBI:27570
     label: histidine
-  concentration:
-    value: '7.76892'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:27570
     label: histidine
+  notes: 'Source batch input: 7.8 g. Preserve the exact mass in notes; API g_l=7.76892
+    uses the provider''s main-volume encoding and is not an independently verified
+    final-medium concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1006
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "DL-Histidine",
+                              "compound_id": 916,
+                              "amount": 7.8,
+                              "unit": "g",
+                              "g_l": 7.76892,
+                              "mmol_l": 50.072,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[0].concentration: Source batch input: 7.8 g. Preserve the exact mass in notes; API g_l=7.76892 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[0]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 1,
+                              "compound": "DL-Histidine",
+                              "compound_id": 916,
+                              "amount": 7.8,
+                              "unit": "g",
+                              "g_l": 7.76892,
+                              "mmol_l": 50.072,
+                              "optional": 0
+                          }
+      ingredients[0].notes: Source batch input: 7.8 g. Preserve the exact mass in notes; API g_l=7.76892 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[0]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 1,
+                              "compound": "DL-Histidine",
+                              "compound_id": 916,
+                              "amount": 7.8,
+                              "unit": "g",
+                              "g_l": 7.76892,
+                              "mmol_l": 50.072,
+                              "optional": 0
+                          }
+      ingredients[0].preferred_term: Source batch input: 7.8 g. Preserve the exact mass in notes; API g_l=7.76892 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[0]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+    supports: SUPPORT
+    snippet: DL-Histidine                                                       7.80         g
+    explanation: 'ingredients[0].notes: Source batch input: 7.8 g. Preserve the exact
+      mass in notes; API g_l=7.76892 uses the provider''s main-volume encoding and
+      is not an independently verified final-medium concentration. No unstated density,
+      final volume, percent basis or chemical identifier is inferred. Locator=original
+      recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00; capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
 - preferred_term: Yeast extract
-  concentration:
-    value: '3.98406'
-    unit: G_PER_L
+  notes: 'Source batch input: 4 g. Preserve the exact mass in notes; API g_l=3.98406
+    uses the provider''s main-volume encoding and is not an independently verified
+    final-medium concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1006
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 4,
+                              "unit": "g",
+                              "g_l": 3.98406,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[1].concentration: Source batch input: 4 g. Preserve the exact mass in notes; API g_l=3.98406 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[1]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 2,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 4,
+                              "unit": "g",
+                              "g_l": 3.98406,
+                              "optional": 0
+                          }
+      ingredients[1].notes: Source batch input: 4 g. Preserve the exact mass in notes; API g_l=3.98406 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[1]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 2,
+                              "compound": "Yeast extract",
+                              "compound_id": 16,
+                              "amount": 4,
+                              "unit": "g",
+                              "g_l": 3.98406,
+                              "optional": 0
+                          }
+      ingredients[1].preferred_term: Source batch input: 4 g. Preserve the exact mass in notes; API g_l=3.98406 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[1]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+    supports: SUPPORT
+    snippet: Yeast extract                                                      4.00         g
+    explanation: 'ingredients[1].notes: Source batch input: 4 g. Preserve the exact
+      mass in notes; API g_l=3.98406 uses the provider''s main-volume encoding and
+      is not an independently verified final-medium concentration. No unstated density,
+      final volume, percent basis or chemical identifier is inferred. Locator=original
+      recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00; capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
 - preferred_term: Trypticase peptone
-  concentration:
-    value: '0.996016'
-    unit: G_PER_L
+  notes: 'Source batch input: 1 g. Preserve the exact mass in notes; API g_l=0.996016
+    uses the provider''s main-volume encoding and is not an independently verified
+    final-medium concentration. Source material qualifier: BD BBL.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1006
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "Trypticase peptone",
+                              "compound_id": 124,
+                              "attribute": "BD BBL",
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 0.996016,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[2].concentration: Source batch input: 1 g. Preserve the exact mass in notes; API g_l=0.996016 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. Source material qualifier: BD BBL. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[2]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 3,
+                              "compound": "Trypticase peptone",
+                              "compound_id": 124,
+                              "attribute": "BD BBL",
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 0.996016,
+                              "optional": 0
+                          }
+      ingredients[2].notes: Source batch input: 1 g. Preserve the exact mass in notes; API g_l=0.996016 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. Source material qualifier: BD BBL. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[2]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 3,
+                              "compound": "Trypticase peptone",
+                              "compound_id": 124,
+                              "attribute": "BD BBL",
+                              "amount": 1,
+                              "unit": "g",
+                              "g_l": 0.996016,
+                              "optional": 0
+                          }
+      ingredients[2].preferred_term: Source batch input: 1 g. Preserve the exact mass in notes; API g_l=0.996016 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. Source material qualifier: BD BBL. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[2]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+    supports: SUPPORT
+    snippet: Trypticase peptone (BD BBL)                                        1.00         g
+    explanation: 'ingredients[2].notes: Source batch input: 1 g. Preserve the exact
+      mass in notes; API g_l=0.996016 uses the provider''s main-volume encoding and
+      is not an independently verified final-medium concentration. Source material
+      qualifier: BD BBL. No unstated density, final volume, percent basis or chemical
+      identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00;
+      capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  concentration:
-    value: '0.288845'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  notes: 'Source batch input: 0.29 g. Preserve the exact mass in notes; API g_l=0.288845
+    uses the provider''s main-volume encoding and is not an independently verified
+    final-medium concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1006
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "K2HPO4",
+                              "compound_id": 10,
+                              "amount": 0.29,
+                              "unit": "g",
+                              "g_l": 0.288845,
+                              "mmol_l": 1.65835,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[3].concentration: Source batch input: 0.29 g. Preserve the exact mass in notes; API g_l=0.288845 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[3]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 4,
+                              "compound": "K2HPO4",
+                              "compound_id": 10,
+                              "amount": 0.29,
+                              "unit": "g",
+                              "g_l": 0.288845,
+                              "mmol_l": 1.65835,
+                              "optional": 0
+                          }
+      ingredients[3].notes: Source batch input: 0.29 g. Preserve the exact mass in notes; API g_l=0.288845 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[3]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 4,
+                              "compound": "K2HPO4",
+                              "compound_id": 10,
+                              "amount": 0.29,
+                              "unit": "g",
+                              "g_l": 0.288845,
+                              "mmol_l": 1.65835,
+                              "optional": 0
+                          }
+      ingredients[3].preferred_term: Source batch input: 0.29 g. Preserve the exact mass in notes; API g_l=0.288845 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[3]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+    supports: SUPPORT
+    snippet: K2HPO4                                                             0.29         g
+    explanation: 'ingredients[3].notes: Source batch input: 0.29 g. Preserve the exact
+      mass in notes; API g_l=0.288845 uses the provider''s main-volume encoding and
+      is not an independently verified final-medium concentration. No unstated density,
+      final volume, percent basis or chemical identifier is inferred. Locator=original
+      recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00; capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-  concentration:
-    value: '0.288845'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  notes: 'Source batch input: 0.29 g. Preserve the exact mass in notes; API g_l=0.288845
+    uses the provider''s main-volume encoding and is not an independently verified
+    final-medium concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1006
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "KH2PO4",
+                              "compound_id": 11,
+                              "amount": 0.29,
+                              "unit": "g",
+                              "g_l": 0.288845,
+                              "mmol_l": 2.12253,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[4].concentration: Source batch input: 0.29 g. Preserve the exact mass in notes; API g_l=0.288845 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[4]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 5,
+                              "compound": "KH2PO4",
+                              "compound_id": 11,
+                              "amount": 0.29,
+                              "unit": "g",
+                              "g_l": 0.288845,
+                              "mmol_l": 2.12253,
+                              "optional": 0
+                          }
+      ingredients[4].notes: Source batch input: 0.29 g. Preserve the exact mass in notes; API g_l=0.288845 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[4]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 5,
+                              "compound": "KH2PO4",
+                              "compound_id": 11,
+                              "amount": 0.29,
+                              "unit": "g",
+                              "g_l": 0.288845,
+                              "mmol_l": 2.12253,
+                              "optional": 0
+                          }
+      ingredients[4].preferred_term: Source batch input: 0.29 g. Preserve the exact mass in notes; API g_l=0.288845 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[4]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+    supports: SUPPORT
+    snippet: KH2PO4                                                             0.29         g
+    explanation: 'ingredients[4].notes: Source batch input: 0.29 g. Preserve the exact
+      mass in notes; API g_l=0.288845 uses the provider''s main-volume encoding and
+      is not an independently verified final-medium concentration. No unstated density,
+      final volume, percent basis or chemical identifier is inferred. Locator=original
+      recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00; capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  concentration:
-    value: '0.478088'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
     label: ammonium sulfate
+  notes: 'Source batch input: 0.48 g. Preserve the exact mass in notes; API g_l=0.478088
+    uses the provider''s main-volume encoding and is not an independently verified
+    final-medium concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1006
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "(NH4)2SO4",
+                              "compound_id": 27,
+                              "amount": 0.48,
+                              "unit": "g",
+                              "g_l": 0.478088,
+                              "mmol_l": 3.61804,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[5].concentration: Source batch input: 0.48 g. Preserve the exact mass in notes; API g_l=0.478088 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[5]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 6,
+                              "compound": "(NH4)2SO4",
+                              "compound_id": 27,
+                              "amount": 0.48,
+                              "unit": "g",
+                              "g_l": 0.478088,
+                              "mmol_l": 3.61804,
+                              "optional": 0
+                          }
+      ingredients[5].notes: Source batch input: 0.48 g. Preserve the exact mass in notes; API g_l=0.478088 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[5]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 6,
+                              "compound": "(NH4)2SO4",
+                              "compound_id": 27,
+                              "amount": 0.48,
+                              "unit": "g",
+                              "g_l": 0.478088,
+                              "mmol_l": 3.61804,
+                              "optional": 0
+                          }
+      ingredients[5].preferred_term: Source batch input: 0.48 g. Preserve the exact mass in notes; API g_l=0.478088 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[5]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+    supports: SUPPORT
+    snippet: (NH4)2SO4                                                          0.48         g
+    explanation: 'ingredients[5].notes: Source batch input: 0.48 g. Preserve the exact
+      mass in notes; API g_l=0.478088 uses the provider''s main-volume encoding and
+      is not an independently verified final-medium concentration. No unstated density,
+      final volume, percent basis or chemical identifier is inferred. Locator=original
+      recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00; capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: sodium chloride
-  concentration:
-    value: '0.478088'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  notes: 'Source batch input: 0.48 g. Preserve the exact mass in notes; API g_l=0.478088
+    uses the provider''s main-volume encoding and is not an independently verified
+    final-medium concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1006
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 7,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 0.48,
+                              "unit": "g",
+                              "g_l": 0.478088,
+                              "mmol_l": 8.18083,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[6].concentration: Source batch input: 0.48 g. Preserve the exact mass in notes; API g_l=0.478088 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[6]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 7,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 0.48,
+                              "unit": "g",
+                              "g_l": 0.478088,
+                              "mmol_l": 8.18083,
+                              "optional": 0
+                          }
+      ingredients[6].notes: Source batch input: 0.48 g. Preserve the exact mass in notes; API g_l=0.478088 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[6]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 7,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 0.48,
+                              "unit": "g",
+                              "g_l": 0.478088,
+                              "mmol_l": 8.18083,
+                              "optional": 0
+                          }
+      ingredients[6].preferred_term: Source batch input: 0.48 g. Preserve the exact mass in notes; API g_l=0.478088 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[6]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+    supports: SUPPORT
+    snippet: NaCl                                                               0.48         g
+    explanation: 'ingredients[6].notes: Source batch input: 0.48 g. Preserve the exact
+      mass in notes; API g_l=0.478088 uses the provider''s main-volume encoding and
+      is not an independently verified final-medium concentration. No unstated density,
+      final volume, percent basis or chemical identifier is inferred. Locator=original
+      recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00; capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  concentration:
-    value: '0.0996016'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  notes: 'Source batch input: 0.1 g. Preserve the exact mass in notes; API g_l=0.0996016
+    uses the provider''s main-volume encoding and is not an independently verified
+    final-medium concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1006
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 8,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 0.1,
+                              "unit": "g",
+                              "g_l": 0.0996016,
+                              "mmol_l": 0.404103,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[7].concentration: Source batch input: 0.1 g. Preserve the exact mass in notes; API g_l=0.0996016 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 8,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 0.1,
+                              "unit": "g",
+                              "g_l": 0.0996016,
+                              "mmol_l": 0.404103,
+                              "optional": 0
+                          }
+      ingredients[7].notes: Source batch input: 0.1 g. Preserve the exact mass in notes; API g_l=0.0996016 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 8,
+                              "compound": "MgSO4 x 7 H2O",
+                              "compound_id": 8,
+                              "amount": 0.1,
+                              "unit": "g",
+                              "g_l": 0.0996016,
+                              "mmol_l": 0.404103,
+                              "optional": 0
+                          }
+      ingredients[7].preferred_term: Source batch input: 0.1 g. Preserve the exact mass in notes; API g_l=0.0996016 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+    supports: SUPPORT
+    snippet: MgSO4 x 7 H2O                                                      0.10         g
+    explanation: 'ingredients[7].notes: Source batch input: 0.1 g. Preserve the exact
+      mass in notes; API g_l=0.0996016 uses the provider''s main-volume encoding and
+      is not an independently verified final-medium concentration. No unstated density,
+      final volume, percent basis or chemical identifier is inferred. Locator=original
+      recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00; capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  concentration:
-    value: '0.063745'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-- preferred_term: Sodium resazurin
-  concentration:
-    value: '0.000498008'
-    unit: G_PER_L
-  term:
-    id: CHEBI:8806
-    label: Resazurin
+  notes: 'Source batch input: 64 mg. Preserve the exact mass in notes; API g_l=0.063745
+    uses the provider''s main-volume encoding and is not an independently verified
+    final-medium concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1006
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 9,
+                              "compound": "CaCl2 x 2 H2O",
+                              "compound_id": 7,
+                              "amount": 64,
+                              "unit": "mg",
+                              "g_l": 0.063745,
+                              "mmol_l": 0.433595,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[8].concentration: Source batch input: 64 mg. Preserve the exact mass in notes; API g_l=0.063745 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 9,
+                              "compound": "CaCl2 x 2 H2O",
+                              "compound_id": 7,
+                              "amount": 64,
+                              "unit": "mg",
+                              "g_l": 0.063745,
+                              "mmol_l": 0.433595,
+                              "optional": 0
+                          }
+      ingredients[8].notes: Source batch input: 64 mg. Preserve the exact mass in notes; API g_l=0.063745 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 9,
+                              "compound": "CaCl2 x 2 H2O",
+                              "compound_id": 7,
+                              "amount": 64,
+                              "unit": "mg",
+                              "g_l": 0.063745,
+                              "mmol_l": 0.433595,
+                              "optional": 0
+                          }
+      ingredients[8].preferred_term: Source batch input: 64 mg. Preserve the exact mass in notes; API g_l=0.063745 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+    supports: SUPPORT
+    snippet: CaCl2 x 2 H2O                                                    64.00        mg
+    explanation: 'ingredients[8].notes: Source batch input: 64 mg. Preserve the exact
+      mass in notes; API g_l=0.063745 uses the provider''s main-volume encoding and
+      is not an independently verified final-medium concentration. No unstated density,
+      final volume, percent basis or chemical identifier is inferred. Locator=original
+      recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00; capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
     label: sodium carbonate
-  concentration:
-    value: '3.98406'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
     label: sodium carbonate
+  notes: 'Source batch input: 4 g. Preserve the exact mass in notes; API g_l=3.98406
+    uses the provider''s main-volume encoding and is not an independently verified
+    final-medium concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1006
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 11,
+                              "compound": "Na2CO3",
+                              "compound_id": 32,
+                              "amount": 4,
+                              "unit": "g",
+                              "g_l": 3.98406,
+                              "mmol_l": 37.5898,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[9].concentration: Source batch input: 4 g. Preserve the exact mass in notes; API g_l=3.98406 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[10]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 11,
+                              "compound": "Na2CO3",
+                              "compound_id": 32,
+                              "amount": 4,
+                              "unit": "g",
+                              "g_l": 3.98406,
+                              "mmol_l": 37.5898,
+                              "optional": 0
+                          }
+      ingredients[9].notes: Source batch input: 4 g. Preserve the exact mass in notes; API g_l=3.98406 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[10]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 11,
+                              "compound": "Na2CO3",
+                              "compound_id": 32,
+                              "amount": 4,
+                              "unit": "g",
+                              "g_l": 3.98406,
+                              "mmol_l": 37.5898,
+                              "optional": 0
+                          }
+      ingredients[9].preferred_term: Source batch input: 4 g. Preserve the exact mass in notes; API g_l=3.98406 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[10]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+    supports: SUPPORT
+    snippet: Na2CO3                                                             4.00         g
+    explanation: 'ingredients[9].notes: Source batch input: 4 g. Preserve the exact
+      mass in notes; API g_l=3.98406 uses the provider''s main-volume encoding and
+      is not an independently verified final-medium concentration. No unstated density,
+      final volume, percent basis or chemical identifier is inferred. Locator=original
+      recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00; capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
-  concentration:
-    value: '0.498008'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
-- preferred_term: Acetic acid
-  term:
-    id: CHEBI:15366
-    label: acetic acid
+  notes: 'Source batch input: 0.5 g. Preserve the exact mass in notes; API g_l=0.498008
+    uses the provider''s main-volume encoding and is not an independently verified
+    final-medium concentration.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1006
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 13,
+                              "compound": "L-Cysteine HCl x H2O",
+                              "compound_id": 770,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.498008,
+                              "mmol_l": 2.83545,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[10].concentration: Source batch input: 0.5 g. Preserve the exact mass in notes; API g_l=0.498008 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[12]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 13,
+                              "compound": "L-Cysteine HCl x H2O",
+                              "compound_id": 770,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.498008,
+                              "mmol_l": 2.83545,
+                              "optional": 0
+                          }
+      ingredients[10].notes: Source batch input: 0.5 g. Preserve the exact mass in notes; API g_l=0.498008 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[12]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 13,
+                              "compound": "L-Cysteine HCl x H2O",
+                              "compound_id": 770,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.498008,
+                              "mmol_l": 2.83545,
+                              "optional": 0
+                          }
+      ingredients[10].preferred_term: Source batch input: 0.5 g. Preserve the exact mass in notes; API g_l=0.498008 uses the provider's main-volume encoding and is not an independently verified final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[12]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+    supports: SUPPORT
+    snippet: L-Cysteine HCl x H2O                                               0.50         g
+    explanation: 'ingredients[10].notes: Source batch input: 0.5 g. Preserve the exact
+      mass in notes; API g_l=0.498008 uses the provider''s main-volume encoding and
+      is not an independently verified final-medium concentration. No unstated density,
+      final volume, percent basis or chemical identifier is inferred. Locator=original
+      recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00; capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
+- preferred_term: Distilled water
   concentration:
-    value: '573.182'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15366
-    label: acetic acid
-- preferred_term: Propionic acid
-  term:
-    id: CHEBI:30768
-    label: propionic acid
-  concentration:
-    value: '192.145'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30768
-    label: propionic acid
-- preferred_term: Butyric acid
-  term:
-    id: CHEBI:30772
-    label: butyric acid
-  concentration:
-    value: '129'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30772
-    label: butyric acid
-- preferred_term: n-Valeric acid
-  term:
-    id: CHEBI:17418
-    label: valeric acid
-  concentration:
-    value: '30.2827'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17418
-    label: valeric acid
-- preferred_term: iso-Butyric acid
-  term:
-    id: CHEBI:16135
-    label: isobutyric acid
-  concentration:
-    value: '30.6375'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16135
-    label: isobutyric acid
-- preferred_term: Tryptone
-  term:
-    id: MICRO:0000182
-    label: tryptone
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: yeast extract
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
-    catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
-- preferred_term: iso-Valeric acid
-  term:
-    id: CHEBI:28484
-    label: isovaleric acid
-  concentration:
-    value: '30.0247'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000378
-    label: iso-Valeric acid
+    value: '1'
+    unit: L
+  notes: 'Source input: 1000 ml = 1 L distilled water, not a measured final-volume
+    denominator after the other additions.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/1006
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 14,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[11].concentration: Source input: 1000 ml = 1 L distilled water, not a measured final-volume denominator after the other additions. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[13]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 14,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+      ingredients[11].notes: Source input: 1000 ml = 1 L distilled water, not a measured final-volume denominator after the other additions. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[13]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+      Additional exact excerpt: {
+                              "recipe_order": 14,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+      ingredients[11].preferred_term: Source input: 1000 ml = 1 L distilled water, not a measured final-volume denominator after the other additions. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[13]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+    supports: SUPPORT
+    snippet: Distilled water                                               1000.00          ml
+    explanation: 'ingredients[11].notes: Source input: 1000 ml = 1 L distilled water,
+      not a measured final-volume denominator after the other additions. No unstated
+      density, final volume, percent basis or chemical identifier is inferred. Locator=original
+      recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00; capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -287,9 +740,1411 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-09T02:20:31.460987+00:00'
+  curator: codex
+  action: RESTORED_ALLISONELLA_ACID_IDENTITIES_AND_STOCK_SCOPES_WITH_EVIDENCE
+  notes: Restore source-specific Allisonella ingredients and the acid/resazurin stock
+    boundaries; retain unquantified amounts, chemical-form limits and source conflicts,
+    and correct the reciprocal family relationship without changing permanent IDs.
+  source: https://mediadive.dsmz.de/rest/medium/1006
+  changes: '[{"old_field": "ingredients[0].concentration", "field": "ingredients[0].concentration",
+    "old": {"value": "7.76892", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"DL-Histidine\",\n                        \"compound_id\":
+    916,\n                        \"amount\": 7.8,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 7.76892,\n                        \"mmol_l\":
+    50.072,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[0].notes", "field": "ingredients[0].notes", "old": null, "new": "Source
+    batch input: 7.8 g. Preserve the exact mass in notes; API g_l=7.76892 uses the
+    provider''s main-volume encoding and is not an independently verified final-medium
+    concentration.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"DL-Histidine\",\n                        \"compound_id\": 916,\n                        \"amount\":
+    7.8,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    7.76892,\n                        \"mmol_l\": 50.072,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[0].preferred_term", "field":
+    "ingredients[0].preferred_term", "old": "DL-Histidine", "new": "DL-Histidine",
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"DL-Histidine\",\n                        \"compound_id\": 916,\n                        \"amount\":
+    7.8,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    7.76892,\n                        \"mmol_l\": 50.072,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[0].notes",
+    "old": null, "new": "Source batch input: 7.8 g. Preserve the exact mass in notes;
+    API g_l=7.76892 uses the provider''s main-volume encoding and is not an independently
+    verified final-medium concentration.", "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf", "snippet":
+    "DL-Histidine                                                       7.80         g"},
+    {"old_field": "ingredients[1].concentration", "field": "ingredients[1].concentration",
+    "old": {"value": "3.98406", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3.98406,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[1].notes", "field": "ingredients[1].notes",
+    "old": null, "new": "Source batch input: 4 g. Preserve the exact mass in notes;
+    API g_l=3.98406 uses the provider''s main-volume encoding and is not an independently
+    verified final-medium concentration.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\":
+    4,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    3.98406,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[1].preferred_term", "field": "ingredients[1].preferred_term", "old":
+    "Yeast extract", "new": "Yeast extract", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\":
+    4,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    3.98406,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[1].notes", "old": null, "new": "Source batch input:
+    4 g. Preserve the exact mass in notes; API g_l=3.98406 uses the provider''s main-volume
+    encoding and is not an independently verified final-medium concentration.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "Yeast extract                                                      4.00         g"},
+    {"old_field": "ingredients[2].concentration", "field": "ingredients[2].concentration",
+    "old": {"value": "0.996016", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Trypticase peptone\",\n                        \"compound_id\":
+    124,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\":
+    1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.996016,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[2].notes", "field": "ingredients[2].notes", "old": null, "new": "Source
+    batch input: 1 g. Preserve the exact mass in notes; API g_l=0.996016 uses the
+    provider''s main-volume encoding and is not an independently verified final-medium
+    concentration. Source material qualifier: BD BBL.", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Trypticase peptone\",\n                        \"compound_id\":
+    124,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\":
+    1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.996016,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[2].preferred_term", "field": "ingredients[2].preferred_term", "old":
+    "Trypticase peptone", "new": "Trypticase peptone", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Trypticase peptone\",\n                        \"compound_id\":
+    124,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\":
+    1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.996016,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[2].notes", "old": null, "new": "Source batch input:
+    1 g. Preserve the exact mass in notes; API g_l=0.996016 uses the provider''s main-volume
+    encoding and is not an independently verified final-medium concentration. Source
+    material qualifier: BD BBL.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "Trypticase peptone (BD BBL)                                        1.00         g"},
+    {"old_field": "ingredients[3].concentration", "field": "ingredients[3].concentration",
+    "old": {"value": "0.288845", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\":
+    10,\n                        \"amount\": 0.29,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.288845,\n                        \"mmol_l\":
+    1.65835,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[3].notes", "field": "ingredients[3].notes", "old": null, "new": "Source
+    batch input: 0.29 g. Preserve the exact mass in notes; API g_l=0.288845 uses the
+    provider''s main-volume encoding and is not an independently verified final-medium
+    concentration.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\":
+    0.29,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.288845,\n                        \"mmol_l\": 1.65835,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[3].preferred_term", "field":
+    "ingredients[3].preferred_term", "old": "K2HPO4", "new": "K2HPO4", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\":
+    10,\n                        \"amount\": 0.29,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.288845,\n                        \"mmol_l\":
+    1.65835,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[3].notes", "old": null, "new": "Source batch input:
+    0.29 g. Preserve the exact mass in notes; API g_l=0.288845 uses the provider''s
+    main-volume encoding and is not an independently verified final-medium concentration.",
+    "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "K2HPO4                                                             0.29         g"},
+    {"old_field": "ingredients[4].concentration", "field": "ingredients[4].concentration",
+    "old": {"value": "0.288845", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.29,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.288845,\n                        \"mmol_l\":
+    2.12253,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[4].notes", "field": "ingredients[4].notes", "old": null, "new": "Source
+    batch input: 0.29 g. Preserve the exact mass in notes; API g_l=0.288845 uses the
+    provider''s main-volume encoding and is not an independently verified final-medium
+    concentration.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\":
+    0.29,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.288845,\n                        \"mmol_l\": 2.12253,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[4].preferred_term", "field":
+    "ingredients[4].preferred_term", "old": "KH2PO4", "new": "KH2PO4", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.29,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.288845,\n                        \"mmol_l\":
+    2.12253,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[4].notes", "old": null, "new": "Source batch input:
+    0.29 g. Preserve the exact mass in notes; API g_l=0.288845 uses the provider''s
+    main-volume encoding and is not an independently verified final-medium concentration.",
+    "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "KH2PO4                                                             0.29         g"},
+    {"old_field": "ingredients[5].concentration", "field": "ingredients[5].concentration",
+    "old": {"value": "0.478088", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\":
+    27,\n                        \"amount\": 0.48,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.478088,\n                        \"mmol_l\":
+    3.61804,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[5].notes", "field": "ingredients[5].notes", "old": null, "new": "Source
+    batch input: 0.48 g. Preserve the exact mass in notes; API g_l=0.478088 uses the
+    provider''s main-volume encoding and is not an independently verified final-medium
+    concentration.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\":
+    0.48,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.478088,\n                        \"mmol_l\": 3.61804,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[5].preferred_term", "field":
+    "ingredients[5].preferred_term", "old": "(NH4)2SO4", "new": "(NH4)2SO4", "status":
+    "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet":
+    "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\":
+    0.48,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.478088,\n                        \"mmol_l\": 3.61804,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[5].notes",
+    "old": null, "new": "Source batch input: 0.48 g. Preserve the exact mass in notes;
+    API g_l=0.478088 uses the provider''s main-volume encoding and is not an independently
+    verified final-medium concentration.", "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf", "snippet":
+    "(NH4)2SO4                                                          0.48         g"},
+    {"old_field": "ingredients[6].concentration", "field": "ingredients[6].concentration",
+    "old": {"value": "0.478088", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 0.48,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.478088,\n                        \"mmol_l\":
+    8.18083,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[6].notes", "field": "ingredients[6].notes", "old": null, "new": "Source
+    batch input: 0.48 g. Preserve the exact mass in notes; API g_l=0.478088 uses the
+    provider''s main-volume encoding and is not an independently verified final-medium
+    concentration.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\":
+    0.48,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.478088,\n                        \"mmol_l\": 8.18083,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[6].preferred_term", "field":
+    "ingredients[6].preferred_term", "old": "NaCl", "new": "NaCl", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 0.48,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.478088,\n                        \"mmol_l\":
+    8.18083,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[6].notes", "old": null, "new": "Source batch input:
+    0.48 g. Preserve the exact mass in notes; API g_l=0.478088 uses the provider''s
+    main-volume encoding and is not an independently verified final-medium concentration.",
+    "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "NaCl                                                               0.48         g"},
+    {"old_field": "ingredients[7].concentration", "field": "ingredients[7].concentration",
+    "old": {"value": "0.0996016", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.0996016,\n                        \"mmol_l\":
+    0.404103,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[7].notes", "field": "ingredients[7].notes", "old": null, "new": "Source
+    batch input: 0.1 g. Preserve the exact mass in notes; API g_l=0.0996016 uses the
+    provider''s main-volume encoding and is not an independently verified final-medium
+    concentration.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\":
+    0.1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.0996016,\n                        \"mmol_l\": 0.404103,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[7].preferred_term", "field":
+    "ingredients[7].preferred_term", "old": "MgSO4 x 7 H2O", "new": "MgSO4 x 7 H2O",
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\":
+    0.1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.0996016,\n                        \"mmol_l\": 0.404103,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[7].notes",
+    "old": null, "new": "Source batch input: 0.1 g. Preserve the exact mass in notes;
+    API g_l=0.0996016 uses the provider''s main-volume encoding and is not an independently
+    verified final-medium concentration.", "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf", "snippet":
+    "MgSO4 x 7 H2O                                                      0.10         g"},
+    {"old_field": "ingredients[8].concentration", "field": "ingredients[8].concentration",
+    "old": {"value": "0.063745", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 64,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.063745,\n                        \"mmol_l\":
+    0.433595,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[8].notes", "field": "ingredients[8].notes", "old": null, "new": "Source
+    batch input: 64 mg. Preserve the exact mass in notes; API g_l=0.063745 uses the
+    provider''s main-volume encoding and is not an independently verified final-medium
+    concentration.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\":
+    64,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.063745,\n                        \"mmol_l\": 0.433595,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[8].preferred_term", "field":
+    "ingredients[8].preferred_term", "old": "CaCl2 x 2 H2O", "new": "CaCl2 x 2 H2O",
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\":
+    64,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.063745,\n                        \"mmol_l\": 0.433595,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[8].notes",
+    "old": null, "new": "Source batch input: 64 mg. Preserve the exact mass in notes;
+    API g_l=0.063745 uses the provider''s main-volume encoding and is not an independently
+    verified final-medium concentration.", "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf", "snippet":
+    "CaCl2 x 2 H2O                                                    64.00        mg"},
+    {"old_field": null, "field": "solutions[0].concentration", "old": null, "new":
+    {"value": "0.0005", "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.000498008,\n                        \"mmol_l\":
+    0.00198275,\n                        \"optional\": 0\n                    }"},
+    {"old_field": null, "field": "solutions[0].notes", "old": null, "new": "Source
+    addition: 0.50 ml = 0.0005 L of 0.1% w/v sodium resazurin stock, not a mass or
+    final-medium concentration.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.000498008,\n                        \"mmol_l\":
+    0.00198275,\n                        \"optional\": 0\n                    }"},
+    {"old_field": null, "field": "solutions[0].preferred_term", "old": null, "new":
+    "Sodium resazurin (0.1% w/v)", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.000498008,\n                        \"mmol_l\":
+    0.00198275,\n                        \"optional\": 0\n                    }"},
+    {"old_field": null, "field": "solutions[0].name", "old": null, "new": "Sodium
+    resazurin (0.1% w/v)", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.000498008,\n                        \"mmol_l\":
+    0.00198275,\n                        \"optional\": 0\n                    }"},
+    {"old_field": "ingredients[9].concentration", "field": "solutions[0].composition[0].concentration",
+    "old": {"value": "0.000498008", "unit": "G_PER_L"}, "new": {"value": "0.1", "unit":
+    "PERCENT_W_V"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.000498008,\n                        \"mmol_l\":
+    0.00198275,\n                        \"optional\": 0\n                    }"},
+    {"old_field": "ingredients[9].notes", "field": "solutions[0].composition[0].notes",
+    "old": null, "new": "The explicitly stated 0.1% w/v belongs to the sodium resazurin
+    stock. Its 0.50 ml receiving-medium dose is stored separately; no final-medium
+    concentration is inferred.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.000498008,\n                        \"mmol_l\":
+    0.00198275,\n                        \"optional\": 0\n                    }"},
+    {"old_field": "ingredients[9].preferred_term", "field": "solutions[0].composition[0].preferred_term",
+    "old": "Sodium resazurin", "new": "Sodium resazurin", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000498008,\n                        \"mmol_l\": 0.00198275,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].composition[0].concentration",
+    "old": null, "new": {"value": "0.1", "unit": "PERCENT_W_V"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "Sodium resazurin (0.1% w/v)                                        0.50        ml"},
+    {"old_field": null, "field": "solutions[0].concentration", "old": null, "new":
+    {"value": "0.0005", "unit": "L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "Sodium resazurin (0.1% w/v)                                        0.50        ml"},
+    {"old_field": "ingredients[10].concentration", "field": "ingredients[9].concentration",
+    "old": {"value": "3.98406", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"amount\": 4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3.98406,\n                        \"mmol_l\":
+    37.5898,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[10].notes", "field": "ingredients[9].notes", "old": null, "new":
+    "Source batch input: 4 g. Preserve the exact mass in notes; API g_l=3.98406 uses
+    the provider''s main-volume encoding and is not an independently verified final-medium
+    concentration.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\":
+    4,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    3.98406,\n                        \"mmol_l\": 37.5898,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[10].preferred_term", "field":
+    "ingredients[9].preferred_term", "old": "Na2CO3", "new": "Na2CO3", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"amount\": 4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3.98406,\n                        \"mmol_l\":
+    37.5898,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[9].notes", "old": null, "new": "Source batch input:
+    4 g. Preserve the exact mass in notes; API g_l=3.98406 uses the provider''s main-volume
+    encoding and is not an independently verified final-medium concentration.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "Na2CO3                                                             4.00         g"},
+    {"old_field": null, "field": "solutions[1].concentration", "old": null, "new":
+    {"value": "0.0031", "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 12,\n                        \"solution\":
+    \"Volatile fatty acid mixture\",\n                        \"solution_id\": 608,\n                        \"amount\":
+    3.1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[1].notes",
+    "old": null, "new": "Source addition: 3.10 ml = 0.0031 L fatty-acid mixture. The
+    nested acid volumes prepare that stock; they are not added individually in those
+    volumes to the receiving medium.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 12,\n                        \"solution\":
+    \"Volatile fatty acid mixture\",\n                        \"solution_id\": 608,\n                        \"amount\":
+    3.1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[1].preferred_term",
+    "old": null, "new": "Volatile fatty acid mixture", "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    12,\n                        \"solution\": \"Volatile fatty acid mixture\",\n                        \"solution_id\":
+    608,\n                        \"amount\": 3.1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].name", "old": null, "new": "Volatile fatty acid mixture",
+    "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet":
+    "{\n                        \"recipe_order\": 12,\n                        \"solution\":
+    \"Volatile fatty acid mixture\",\n                        \"solution_id\": 608,\n                        \"amount\":
+    3.1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[12].concentration", "field":
+    "solutions[1].composition[0].concentration", "old": {"value": "573.182", "unit":
+    "G_PER_L"}, "new": {"value": "0.5485", "unit": "L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Acetic acid\",\n                        \"compound_id\":
+    380,\n                        \"amount\": 548.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 573.182,\n                        \"mmol_l\":
+    9545.09,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[12].notes", "field": "solutions[1].composition[0].notes", "old":
+    null, "new": "Stock preparation input: 548.5 ml = 0.5485 L. This is a liquid input
+    volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields
+    are not adopted because their density and conversion basis are not independently
+    established by the original recipe.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Acetic acid\",\n                        \"compound_id\": 380,\n                        \"amount\":
+    548.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    573.182,\n                        \"mmol_l\": 9545.09,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[12].preferred_term", "field":
+    "solutions[1].composition[0].preferred_term", "old": "Acetic acid", "new": "Acetic
+    acid", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Acetic acid\",\n                        \"compound_id\": 380,\n                        \"amount\":
+    548.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    573.182,\n                        \"mmol_l\": 9545.09,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[1].composition[0].concentration",
+    "old": null, "new": {"value": "0.5485", "unit": "L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "Acetic acid                                                     548.50         ml"},
+    {"old_field": "ingredients[13].concentration", "field": "solutions[1].composition[1].concentration",
+    "old": {"value": "192.145", "unit": "G_PER_L"}, "new": {"value": "0.1935", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Propionic acid\",\n                        \"compound_id\": 381,\n                        \"amount\":
+    193.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    192.145,\n                        \"mmol_l\": 2593.76,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[13].notes", "field": "solutions[1].composition[1].notes",
+    "old": null, "new": "Stock preparation input: 193.5 ml = 0.1935 L. This is a liquid
+    input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l
+    fields are not adopted because their density and conversion basis are not independently
+    established by the original recipe.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Propionic acid\",\n                        \"compound_id\": 381,\n                        \"amount\":
+    193.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    192.145,\n                        \"mmol_l\": 2593.76,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[13].preferred_term", "field":
+    "solutions[1].composition[1].preferred_term", "old": "Propionic acid", "new":
+    "Propionic acid", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Propionic acid\",\n                        \"compound_id\": 381,\n                        \"amount\":
+    193.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    192.145,\n                        \"mmol_l\": 2593.76,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[1].composition[1].concentration",
+    "old": null, "new": {"value": "0.1935", "unit": "L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "Propionic acid                                                  193.50         ml"},
+    {"old_field": "ingredients[14].concentration", "field": "solutions[1].composition[2].concentration",
+    "old": {"value": "129", "unit": "G_PER_L"}, "new": {"value": "0.129", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Butyric acid\",\n                        \"compound_id\": 314,\n                        \"amount\":
+    129,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[14].notes", "field": "solutions[1].composition[2].notes",
+    "old": null, "new": "Stock preparation input: 129 ml = 0.129 L. This is a liquid
+    input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l
+    fields are not adopted because their density and conversion basis are not independently
+    established by the original recipe.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Butyric acid\",\n                        \"compound_id\": 314,\n                        \"amount\":
+    129,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[14].preferred_term", "field":
+    "solutions[1].composition[2].preferred_term", "old": "Butyric acid", "new": "Butyric
+    acid", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Butyric acid\",\n                        \"compound_id\": 314,\n                        \"amount\":
+    129,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[1].composition[2].concentration",
+    "old": null, "new": {"value": "0.129", "unit": "L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "Butyric acid                                                    129.00         ml"},
+    {"old_field": "ingredients[15].concentration", "field": "solutions[1].composition[3].concentration",
+    "old": {"value": "30.2827", "unit": "G_PER_L"}, "new": {"value": "0.03225", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"n-Valeric acid\",\n                        \"compound_id\": 288,\n                        \"amount\":
+    32.25,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    30.2827,\n                        \"mmol_l\": 296.512,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[15].notes", "field": "solutions[1].composition[3].notes",
+    "old": null, "new": "Stock preparation input: 32.25 ml = 0.03225 L. This is a
+    liquid input volume, not grams or a finished-medium concentration. Source API
+    g_l/mmol_l fields are not adopted because their density and conversion basis are
+    not independently established by the original recipe.", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"n-Valeric acid\",\n                        \"compound_id\":
+    288,\n                        \"amount\": 32.25,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 30.2827,\n                        \"mmol_l\":
+    296.512,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[15].preferred_term", "field": "solutions[1].composition[3].preferred_term",
+    "old": "n-Valeric acid", "new": "n-Valeric acid", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"n-Valeric acid\",\n                        \"compound_id\":
+    288,\n                        \"amount\": 32.25,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 30.2827,\n                        \"mmol_l\":
+    296.512,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].composition[3].concentration", "old": null, "new":
+    {"value": "0.03225", "unit": "L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "n-Valeric acid                                                   32.25         ml"},
+    {"old_field": "ingredients[16].concentration", "field": "solutions[1].composition[4].concentration",
+    "old": {"value": "30.6375", "unit": "G_PER_L"}, "new": {"value": "0.03225", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"iso-Butyric acid\",\n                        \"compound_id\": 377,\n                        \"amount\":
+    32.25,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    30.6375,\n                        \"mmol_l\": 347.719,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[16].notes", "field": "solutions[1].composition[4].notes",
+    "old": null, "new": "Stock preparation input: 32.25 ml = 0.03225 L. This is a
+    liquid input volume, not grams or a finished-medium concentration. Source API
+    g_l/mmol_l fields are not adopted because their density and conversion basis are
+    not independently established by the original recipe.", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"iso-Butyric acid\",\n                        \"compound_id\":
+    377,\n                        \"amount\": 32.25,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 30.6375,\n                        \"mmol_l\":
+    347.719,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[16].preferred_term", "field": "solutions[1].composition[4].preferred_term",
+    "old": "iso-Butyric acid", "new": "iso-Butyric acid", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"iso-Butyric acid\",\n                        \"compound_id\":
+    377,\n                        \"amount\": 32.25,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 30.6375,\n                        \"mmol_l\":
+    347.719,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].composition[4].concentration", "old": null, "new":
+    {"value": "0.03225", "unit": "L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "iso-Butyric acid                                                 32.25         ml"},
+    {"old_field": null, "field": "solutions[1].composition[5].concentration", "old":
+    null, "new": {"value": "0.03225", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"DL-2-Methylbutyric acid\",\n                        \"compound_id\":
+    223,\n                        \"amount\": 32.25,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].composition[5].notes", "old": null, "new": "Stock
+    preparation input: 32.25 ml = 0.03225 L. This is a liquid input volume, not grams
+    or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted
+    because their density and conversion basis are not independently established by
+    the original recipe.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"DL-2-Methylbutyric acid\",\n                        \"compound_id\": 223,\n                        \"amount\":
+    32.25,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[1].composition[5].preferred_term",
+    "old": null, "new": "DL-2-Methylbutyric acid", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"DL-2-Methylbutyric acid\",\n                        \"compound_id\": 223,\n                        \"amount\":
+    32.25,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[1].composition[5].concentration",
+    "old": null, "new": {"value": "0.03225", "unit": "L"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "DL-2-Methylbutyric acid                                          32.25         ml"},
+    {"old_field": "ingredients[20].concentration", "field": "solutions[1].composition[6].concentration",
+    "old": {"value": "30.0247", "unit": "G_PER_L"}, "new": {"value": "0.03225", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"iso-Valeric acid\",\n                        \"compound_id\": 378,\n                        \"amount\":
+    32.25,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    30.0247,\n                        \"mmol_l\": 293.986,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[20].notes", "field": "solutions[1].composition[6].notes",
+    "old": null, "new": "Stock preparation input: 32.25 ml = 0.03225 L. This is a
+    liquid input volume, not grams or a finished-medium concentration. Source API
+    g_l/mmol_l fields are not adopted because their density and conversion basis are
+    not independently established by the original recipe.", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"iso-Valeric acid\",\n                        \"compound_id\":
+    378,\n                        \"amount\": 32.25,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 30.0247,\n                        \"mmol_l\":
+    293.986,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[20].preferred_term", "field": "solutions[1].composition[6].preferred_term",
+    "old": "iso-Valeric acid", "new": "iso-Valeric acid", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"iso-Valeric acid\",\n                        \"compound_id\":
+    378,\n                        \"amount\": 32.25,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 30.0247,\n                        \"mmol_l\":
+    293.986,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].composition[6].concentration", "old": null, "new":
+    {"value": "0.03225", "unit": "L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "iso-Valeric acid                                                 32.25         ml"},
+    {"old_field": null, "field": "solutions[1].concentration", "old": null, "new":
+    {"value": "0.0031", "unit": "L"}, "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "Volatile fatty acid mixture                                        3.10        ml"},
+    {"old_field": "ingredients[11].concentration", "field": "ingredients[10].concentration",
+    "old": {"value": "0.498008", "unit": "G_PER_L"}, "new": null, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\":
+    770,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.498008,\n                        \"mmol_l\":
+    2.83545,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[11].notes", "field": "ingredients[10].notes", "old": null, "new":
+    "Source batch input: 0.5 g. Preserve the exact mass in notes; API g_l=0.498008
+    uses the provider''s main-volume encoding and is not an independently verified
+    final-medium concentration.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 13,\n                        \"compound\":
+    \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.498008,\n                        \"mmol_l\": 2.83545,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[11].preferred_term", "field":
+    "ingredients[10].preferred_term", "old": "L-Cysteine HCl x H2O", "new": "L-Cysteine
+    HCl x H2O", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 13,\n                        \"compound\":
+    \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.498008,\n                        \"mmol_l\": 2.83545,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[10].notes",
+    "old": null, "new": "Source batch input: 0.5 g. Preserve the exact mass in notes;
+    API g_l=0.498008 uses the provider''s main-volume encoding and is not an independently
+    verified final-medium concentration.", "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf", "snippet":
+    "L-Cysteine HCl x H2O                                               0.50         g"},
+    {"old_field": null, "field": "ingredients[11].concentration", "old": null, "new":
+    {"value": "1", "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 14,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[11].notes",
+    "old": null, "new": "Source input: 1000 ml = 1 L distilled water, not a measured
+    final-volume denominator after the other additions.", "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[11].preferred_term", "old": null, "new": "Distilled
+    water", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 14,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[11].notes",
+    "old": null, "new": "Source input: 1000 ml = 1 L distilled water, not a measured
+    final-volume denominator after the other additions.", "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "Distilled water                                               1000.00          ml"},
+    {"old_field": "preparation_steps", "field": "preparation_steps", "old": [{"step_number":
+    1, "action": "AUTOCLAVE", "description": "Dissolve ingredients (except carbonate,
+    fatty acid mixture and cysteine), bring medium to the boil, then cool to room
+    temperature under 100% CO2 gas atmosphere. Add solid carbonate, fatty acid mixture
+    and cysteine and adjust pH to 6.0. Dispense medium under 100% CO2 gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. Adjust pH of complete
+    medium to 6.0, if necessary."}], "new": [{"step_number": 1, "action": "AUTOCLAVE",
+    "description": "Dissolve ingredients (except carbonate, fatty acid mixture and
+    cysteine), bring medium to the boil, then cool to room temperature under 100%
+    CO2 gas atmosphere. Add solid carbonate, fatty acid mixture and cysteine and adjust
+    pH to 6.0. Dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Adjust pH of complete medium to 6.0, if necessary."}],
+    "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "\"Dissolve ingredients (except carbonate, fatty acid mixture and cysteine),
+    bring medium to the boil, then cool to room temperature under 100% CO2 gas atmosphere.
+    Add solid carbonate, fatty acid mixture and cysteine and adjust pH to 6.0. Dispense
+    medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. Adjust pH of complete medium to 6.0, if necessary.\""}, {"old_field":
+    null, "field": "notes", "old": null, "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    original recipe adds carbonate, fatty-acid stock and cysteine after cooling under
+    CO2, then dispenses and autoclaves. The API main volume of 1004 ml is a provider
+    encoding, not evidence of measured final volume or verified density conversions.\n\nSource-specific
+    ingredient identities and quantity scopes supersede copied flattened amounts.
+    Unknown gas amounts, densities and final volumes remain unknown. Other existing
+    chemical annotations and all prior history are preserved, not recertified. No
+    taxa-media association is added.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "snippet": "Dissolve ingredients (except carbonate, fatty acid mixture and cysteine),
+    bring medium to\nthe boil, then cool to room temperature under 100% CO2 gas atmosphere.
+    Add solid\ncarbonate, fatty acid mixture and cysteine and adjust pH to 6.0. Dispense
+    medium under\n100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave.\nAdjust pH of complete medium to 6.0, if necessary."}, {"old_field":
+    "ingredients[17].concentration", "field": "notes", "old": {"value": "10.0", "unit":
+    "G_PER_L"}, "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    original recipe adds carbonate, fatty-acid stock and cysteine after cooling under
+    CO2, then dispenses and autoclaves. The API main volume of 1004 ml is a provider
+    encoding, not evidence of measured final volume or verified density conversions.\n\nSource-specific
+    ingredient identities and quantity scopes supersede copied flattened amounts.
+    Unknown gas amounts, densities and final volumes remain unknown. Other existing
+    chemical annotations and all prior history are preserved, not recertified. No
+    taxa-media association is added.", "status": "remove_unsupported", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"DL-2-Methylbutyric acid\",\n                        \"compound_id\":
+    223,\n                        \"amount\": 32.25,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[18].concentration", "field": "notes", "old": {"value": "5.0", "unit":
+    "G_PER_L"}, "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    original recipe adds carbonate, fatty-acid stock and cysteine after cooling under
+    CO2, then dispenses and autoclaves. The API main volume of 1004 ml is a provider
+    encoding, not evidence of measured final volume or verified density conversions.\n\nSource-specific
+    ingredient identities and quantity scopes supersede copied flattened amounts.
+    Unknown gas amounts, densities and final volumes remain unknown. Other existing
+    chemical annotations and all prior history are preserved, not recertified. No
+    taxa-media association is added.", "status": "remove_unsupported", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"DL-2-Methylbutyric acid\",\n                        \"compound_id\":
+    223,\n                        \"amount\": 32.25,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[19].concentration", "field": "notes", "old": {"value": "10.0", "unit":
+    "G_PER_L"}, "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    original recipe adds carbonate, fatty-acid stock and cysteine after cooling under
+    CO2, then dispenses and autoclaves. The API main volume of 1004 ml is a provider
+    encoding, not evidence of measured final volume or verified density conversions.\n\nSource-specific
+    ingredient identities and quantity scopes supersede copied flattened amounts.
+    Unknown gas amounts, densities and final volumes remain unknown. Other existing
+    chemical annotations and all prior history are preserved, not recertified. No
+    taxa-media association is added.", "status": "remove_unsupported", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1006", "snippet": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"DL-2-Methylbutyric acid\",\n                        \"compound_id\":
+    223,\n                        \"amount\": 32.25,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "variant_children", "field": "variant_children", "old": [{"path": "data/normalized_yaml/bacterial/KOMODO_1006_ALLISONELLA_medium.yaml",
+    "relationship": "SOURCE_DUPLICATE", "id": "CultureMech:003506", "name": "allisonella_medium",
+    "notes": "Same source medium number and matching ingredient/concentration signature."}],
+    "new": [{"path": "data/normalized_yaml/bacterial/KOMODO_1006_ALLISONELLA_medium.yaml",
+    "relationship": "DERIVED_FROM", "id": "CultureMech:003506", "name": "allisonella_medium",
+    "notes": "KOMODO explicitly links DSMZ 1006, but its ingredient forms, nulls and
+    reported rates are source-specific. The copied earlier concentration signature
+    does not prove an exact duplicate; source derivation does not add a growth association.",
+    "evidence": [{"reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+    "supports": "SUPPORT", "snippet": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf",
+    "explanation": "variant_children: KOMODO explicitly links DSMZ 1006, but its ingredient
+    forms, nulls and reported rates are source-specific. The copied earlier concentration
+    signature does not prove an exact duplicate; source derivation does not add a
+    growth association. No unstated density, final volume, percent basis or chemical
+    identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T01:48:14.608032+00:00;
+    capture SHA256=a589509cce9d95acc1437091b62ab3d764268e261e8bdec15fb5b1b8ab4a6fa7."}]}],
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006",
+    "snippet": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf"},
+    {"old_field": "notes", "field": "notes", "old": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf\n\nCommercial
+    Product: LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers
+    (Difco, Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.",
+    "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf\n\nSuperseded
+    historical provenance (not a current formulation claim):\nCommercial Product:
+    LB Medium (Luria-Bertani, Miller formulation)\nSupplier: Multiple suppliers (Difco,
+    Sigma, etc.)\nCatalog: Multiple (L3522 Sigma, 244520 BD)\nSource: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\nAccessed:
+    2026-03-28\n\nConstituent composition researched from product specification.\n\nThe
+    original recipe adds carbonate, fatty-acid stock and cysteine after cooling under
+    CO2, then dispenses and autoclaves. The API main volume of 1004 ml is a provider
+    encoding, not evidence of measured final volume or verified density conversions.\n\nSource-specific
+    ingredient identities and quantity scopes supersede copied flattened amounts.
+    Unknown gas amounts, densities and final volumes remain unknown. Other existing
+    chemical annotations and all prior history are preserved, not recertified. No
+    taxa-media association is added.", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/medium/1006",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"DL-2-Methylbutyric acid\",\n                        \"compound_id\": 223,\n                        \"amount\":
+    32.25,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}]'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1006_ALLISONELLA_medium.yaml
-  relationship: SOURCE_DUPLICATE
+  relationship: DERIVED_FROM
   id: CultureMech:003506
   name: allisonella_medium
-  notes: Same source medium number and matching ingredient/concentration signature.
+  notes: KOMODO explicitly links DSMZ 1006, but its ingredient forms, nulls and reported
+    rates are source-specific. The copied earlier concentration signature does not
+    prove an exact duplicate; source derivation does not add a growth association.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006
+    supports: SUPPORT
+    snippet: 'Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf'
+    explanation: 'variant_children: KOMODO explicitly links DSMZ 1006, but its ingredient
+      forms, nulls and reported rates are source-specific. The copied earlier concentration
+      signature does not prove an exact duplicate; source derivation does not add
+      a growth association. No unstated density, final volume, percent basis or chemical
+      identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T01:48:14.608032+00:00;
+      capture SHA256=a589509cce9d95acc1437091b62ab3d764268e261e8bdec15fb5b1b8ab4a6fa7.'
+solutions:
+- preferred_term: Sodium resazurin (0.1% w/v)
+  concentration:
+    value: '0.0005'
+    unit: L
+  name: Sodium resazurin (0.1% w/v)
+  composition:
+  - preferred_term: Sodium resazurin
+    concentration:
+      value: '0.1'
+      unit: PERCENT_W_V
+    term:
+      id: CHEBI:8806
+      label: Resazurin
+    notes: The explicitly stated 0.1% w/v belongs to the sodium resazurin stock. Its
+      0.50 ml receiving-medium dose is stored separately; no final-medium concentration
+      is inferred.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1006
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 10,
+                                "compound": "Sodium resazurin",
+                                "compound_id": 1852,
+                                "attribute": "0.1% w/v",
+                                "amount": 0.5,
+                                "unit": "ml",
+                                "g_l": 0.000498008,
+                                "mmol_l": 0.00198275,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[0].concentration: The explicitly stated 0.1% w/v belongs to the sodium resazurin stock. Its 0.50 ml receiving-medium dose is stored separately; no final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[9]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+        Additional exact excerpt: {
+                                "recipe_order": 10,
+                                "compound": "Sodium resazurin",
+                                "compound_id": 1852,
+                                "attribute": "0.1% w/v",
+                                "amount": 0.5,
+                                "unit": "ml",
+                                "g_l": 0.000498008,
+                                "mmol_l": 0.00198275,
+                                "optional": 0
+                            }
+        solutions[0].composition[0].notes: The explicitly stated 0.1% w/v belongs to the sodium resazurin stock. Its 0.50 ml receiving-medium dose is stored separately; no final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[9]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+        Additional exact excerpt: {
+                                "recipe_order": 10,
+                                "compound": "Sodium resazurin",
+                                "compound_id": 1852,
+                                "attribute": "0.1% w/v",
+                                "amount": 0.5,
+                                "unit": "ml",
+                                "g_l": 0.000498008,
+                                "mmol_l": 0.00198275,
+                                "optional": 0
+                            }
+        solutions[0].composition[0].preferred_term: The explicitly stated 0.1% w/v belongs to the sodium resazurin stock. Its 0.50 ml receiving-medium dose is stored separately; no final-medium concentration is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[9]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+      supports: SUPPORT
+      snippet: Sodium resazurin (0.1% w/v)                                        0.50        ml
+      explanation: 'solutions[0].composition[0].concentration: Original PDF corroborates
+        the stock strength and separate addition volume. No unstated density, final
+        volume, percent basis or chemical identifier is inferred. Locator=original
+        recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00; capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
+  notes: 'Source addition: 0.50 ml = 0.0005 L of 0.1% w/v sodium resazurin stock,
+    not a mass or final-medium concentration.'
+- preferred_term: Volatile fatty acid mixture
+  concentration:
+    value: '0.0031'
+    unit: L
+  name: Volatile fatty acid mixture
+  composition:
+  - preferred_term: Acetic acid
+    term:
+      id: CHEBI:15366
+      label: acetic acid
+    concentration:
+      value: '0.5485'
+      unit: L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15366
+      label: acetic acid
+    notes: 'Stock preparation input: 548.5 ml = 0.5485 L. This is a liquid input volume,
+      not grams or a finished-medium concentration. Source API g_l/mmol_l fields are
+      not adopted because their density and conversion basis are not independently
+      established by the original recipe.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1006
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "Acetic acid",
+                                "compound_id": 380,
+                                "amount": 548.5,
+                                "unit": "ml",
+                                "g_l": 573.182,
+                                "mmol_l": 9545.09,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[1].composition[0].concentration: Stock preparation input: 548.5 ml = 0.5485 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[0]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+        Additional exact excerpt: {
+                                "recipe_order": 1,
+                                "compound": "Acetic acid",
+                                "compound_id": 380,
+                                "amount": 548.5,
+                                "unit": "ml",
+                                "g_l": 573.182,
+                                "mmol_l": 9545.09,
+                                "optional": 0
+                            }
+        solutions[1].composition[0].notes: Stock preparation input: 548.5 ml = 0.5485 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[0]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+        Additional exact excerpt: {
+                                "recipe_order": 1,
+                                "compound": "Acetic acid",
+                                "compound_id": 380,
+                                "amount": 548.5,
+                                "unit": "ml",
+                                "g_l": 573.182,
+                                "mmol_l": 9545.09,
+                                "optional": 0
+                            }
+        solutions[1].composition[0].preferred_term: Stock preparation input: 548.5 ml = 0.5485 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[0]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+      supports: SUPPORT
+      snippet: Acetic acid                                                     548.50         ml
+      explanation: 'solutions[1].composition[0].concentration: The original fatty-acid
+        stock table explicitly uses ml, not g/L; no final-volume or density conversion
+        is inferred. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00;
+        capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
+  - preferred_term: Propionic acid
+    term:
+      id: CHEBI:30768
+      label: propionic acid
+    concentration:
+      value: '0.1935'
+      unit: L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30768
+      label: propionic acid
+    notes: 'Stock preparation input: 193.5 ml = 0.1935 L. This is a liquid input volume,
+      not grams or a finished-medium concentration. Source API g_l/mmol_l fields are
+      not adopted because their density and conversion basis are not independently
+      established by the original recipe.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1006
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "Propionic acid",
+                                "compound_id": 381,
+                                "amount": 193.5,
+                                "unit": "ml",
+                                "g_l": 192.145,
+                                "mmol_l": 2593.76,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[1].composition[1].concentration: Stock preparation input: 193.5 ml = 0.1935 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[1]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+        Additional exact excerpt: {
+                                "recipe_order": 2,
+                                "compound": "Propionic acid",
+                                "compound_id": 381,
+                                "amount": 193.5,
+                                "unit": "ml",
+                                "g_l": 192.145,
+                                "mmol_l": 2593.76,
+                                "optional": 0
+                            }
+        solutions[1].composition[1].notes: Stock preparation input: 193.5 ml = 0.1935 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[1]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+        Additional exact excerpt: {
+                                "recipe_order": 2,
+                                "compound": "Propionic acid",
+                                "compound_id": 381,
+                                "amount": 193.5,
+                                "unit": "ml",
+                                "g_l": 192.145,
+                                "mmol_l": 2593.76,
+                                "optional": 0
+                            }
+        solutions[1].composition[1].preferred_term: Stock preparation input: 193.5 ml = 0.1935 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[1]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+      supports: SUPPORT
+      snippet: Propionic acid                                                  193.50         ml
+      explanation: 'solutions[1].composition[1].concentration: The original fatty-acid
+        stock table explicitly uses ml, not g/L; no final-volume or density conversion
+        is inferred. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00;
+        capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
+  - preferred_term: Butyric acid
+    term:
+      id: CHEBI:30772
+      label: butyric acid
+    concentration:
+      value: '0.129'
+      unit: L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30772
+      label: butyric acid
+    notes: 'Stock preparation input: 129 ml = 0.129 L. This is a liquid input volume,
+      not grams or a finished-medium concentration. Source API g_l/mmol_l fields are
+      not adopted because their density and conversion basis are not independently
+      established by the original recipe.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1006
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "Butyric acid",
+                                "compound_id": 314,
+                                "amount": 129,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[1].composition[2].concentration: Stock preparation input: 129 ml = 0.129 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[2]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+        Additional exact excerpt: {
+                                "recipe_order": 3,
+                                "compound": "Butyric acid",
+                                "compound_id": 314,
+                                "amount": 129,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+        solutions[1].composition[2].notes: Stock preparation input: 129 ml = 0.129 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[2]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+        Additional exact excerpt: {
+                                "recipe_order": 3,
+                                "compound": "Butyric acid",
+                                "compound_id": 314,
+                                "amount": 129,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+        solutions[1].composition[2].preferred_term: Stock preparation input: 129 ml = 0.129 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[2]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+      supports: SUPPORT
+      snippet: Butyric acid                                                    129.00         ml
+      explanation: 'solutions[1].composition[2].concentration: The original fatty-acid
+        stock table explicitly uses ml, not g/L; no final-volume or density conversion
+        is inferred. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00;
+        capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
+  - preferred_term: n-Valeric acid
+    term:
+      id: CHEBI:17418
+      label: valeric acid
+    concentration:
+      value: '0.03225'
+      unit: L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17418
+      label: valeric acid
+    notes: 'Stock preparation input: 32.25 ml = 0.03225 L. This is a liquid input
+      volume, not grams or a finished-medium concentration. Source API g_l/mmol_l
+      fields are not adopted because their density and conversion basis are not independently
+      established by the original recipe.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1006
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 4,
+                                "compound": "n-Valeric acid",
+                                "compound_id": 288,
+                                "amount": 32.25,
+                                "unit": "ml",
+                                "g_l": 30.2827,
+                                "mmol_l": 296.512,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[1].composition[3].concentration: Stock preparation input: 32.25 ml = 0.03225 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[3]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+        Additional exact excerpt: {
+                                "recipe_order": 4,
+                                "compound": "n-Valeric acid",
+                                "compound_id": 288,
+                                "amount": 32.25,
+                                "unit": "ml",
+                                "g_l": 30.2827,
+                                "mmol_l": 296.512,
+                                "optional": 0
+                            }
+        solutions[1].composition[3].notes: Stock preparation input: 32.25 ml = 0.03225 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[3]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+        Additional exact excerpt: {
+                                "recipe_order": 4,
+                                "compound": "n-Valeric acid",
+                                "compound_id": 288,
+                                "amount": 32.25,
+                                "unit": "ml",
+                                "g_l": 30.2827,
+                                "mmol_l": 296.512,
+                                "optional": 0
+                            }
+        solutions[1].composition[3].preferred_term: Stock preparation input: 32.25 ml = 0.03225 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[3]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+      supports: SUPPORT
+      snippet: n-Valeric acid                                                   32.25         ml
+      explanation: 'solutions[1].composition[3].concentration: The original fatty-acid
+        stock table explicitly uses ml, not g/L; no final-volume or density conversion
+        is inferred. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00;
+        capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
+  - preferred_term: iso-Butyric acid
+    term:
+      id: CHEBI:16135
+      label: isobutyric acid
+    concentration:
+      value: '0.03225'
+      unit: L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16135
+      label: isobutyric acid
+    notes: 'Stock preparation input: 32.25 ml = 0.03225 L. This is a liquid input
+      volume, not grams or a finished-medium concentration. Source API g_l/mmol_l
+      fields are not adopted because their density and conversion basis are not independently
+      established by the original recipe.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1006
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 5,
+                                "compound": "iso-Butyric acid",
+                                "compound_id": 377,
+                                "amount": 32.25,
+                                "unit": "ml",
+                                "g_l": 30.6375,
+                                "mmol_l": 347.719,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[1].composition[4].concentration: Stock preparation input: 32.25 ml = 0.03225 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[4]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+        Additional exact excerpt: {
+                                "recipe_order": 5,
+                                "compound": "iso-Butyric acid",
+                                "compound_id": 377,
+                                "amount": 32.25,
+                                "unit": "ml",
+                                "g_l": 30.6375,
+                                "mmol_l": 347.719,
+                                "optional": 0
+                            }
+        solutions[1].composition[4].notes: Stock preparation input: 32.25 ml = 0.03225 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[4]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+        Additional exact excerpt: {
+                                "recipe_order": 5,
+                                "compound": "iso-Butyric acid",
+                                "compound_id": 377,
+                                "amount": 32.25,
+                                "unit": "ml",
+                                "g_l": 30.6375,
+                                "mmol_l": 347.719,
+                                "optional": 0
+                            }
+        solutions[1].composition[4].preferred_term: Stock preparation input: 32.25 ml = 0.03225 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[4]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+      supports: SUPPORT
+      snippet: iso-Butyric acid                                                 32.25         ml
+      explanation: 'solutions[1].composition[4].concentration: The original fatty-acid
+        stock table explicitly uses ml, not g/L; no final-volume or density conversion
+        is inferred. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00;
+        capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
+  - preferred_term: DL-2-Methylbutyric acid
+    concentration:
+      value: '0.03225'
+      unit: L
+    notes: 'Stock preparation input: 32.25 ml = 0.03225 L. This is a liquid input
+      volume, not grams or a finished-medium concentration. Source API g_l/mmol_l
+      fields are not adopted because their density and conversion basis are not independently
+      established by the original recipe.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1006
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 6,
+                                "compound": "DL-2-Methylbutyric acid",
+                                "compound_id": 223,
+                                "amount": 32.25,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[1].composition[5].concentration: Stock preparation input: 32.25 ml = 0.03225 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[5]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+        Additional exact excerpt: {
+                                "recipe_order": 6,
+                                "compound": "DL-2-Methylbutyric acid",
+                                "compound_id": 223,
+                                "amount": 32.25,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+        solutions[1].composition[5].notes: Stock preparation input: 32.25 ml = 0.03225 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[5]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+        Additional exact excerpt: {
+                                "recipe_order": 6,
+                                "compound": "DL-2-Methylbutyric acid",
+                                "compound_id": 223,
+                                "amount": 32.25,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+        solutions[1].composition[5].preferred_term: Stock preparation input: 32.25 ml = 0.03225 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[5]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+      supports: SUPPORT
+      snippet: DL-2-Methylbutyric acid                                          32.25         ml
+      explanation: 'solutions[1].composition[5].concentration: The original fatty-acid
+        stock table explicitly uses ml, not g/L; no final-volume or density conversion
+        is inferred. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00;
+        capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
+  - preferred_term: iso-Valeric acid
+    term:
+      id: CHEBI:28484
+      label: isovaleric acid
+    concentration:
+      value: '0.03225'
+      unit: L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000378
+      label: iso-Valeric acid
+    notes: 'Stock preparation input: 32.25 ml = 0.03225 L. This is a liquid input
+      volume, not grams or a finished-medium concentration. Source API g_l/mmol_l
+      fields are not adopted because their density and conversion basis are not independently
+      established by the original recipe.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/1006
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 7,
+                                "compound": "iso-Valeric acid",
+                                "compound_id": 378,
+                                "amount": 32.25,
+                                "unit": "ml",
+                                "g_l": 30.0247,
+                                "mmol_l": 293.986,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[1].composition[6].concentration: Stock preparation input: 32.25 ml = 0.03225 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[6]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+        Additional exact excerpt: {
+                                "recipe_order": 7,
+                                "compound": "iso-Valeric acid",
+                                "compound_id": 378,
+                                "amount": 32.25,
+                                "unit": "ml",
+                                "g_l": 30.0247,
+                                "mmol_l": 293.986,
+                                "optional": 0
+                            }
+        solutions[1].composition[6].notes: Stock preparation input: 32.25 ml = 0.03225 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[6]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+        Additional exact excerpt: {
+                                "recipe_order": 7,
+                                "compound": "iso-Valeric acid",
+                                "compound_id": 378,
+                                "amount": 32.25,
+                                "unit": "ml",
+                                "g_l": 30.0247,
+                                "mmol_l": 293.986,
+                                "optional": 0
+                            }
+        solutions[1].composition[6].preferred_term: Stock preparation input: 32.25 ml = 0.03225 L. This is a liquid input volume, not grams or a finished-medium concentration. Source API g_l/mmol_l fields are not adopted because their density and conversion basis are not independently established by the original recipe. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[6]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+      supports: SUPPORT
+      snippet: iso-Valeric acid                                                 32.25         ml
+      explanation: 'solutions[1].composition[6].concentration: The original fatty-acid
+        stock table explicitly uses ml, not g/L; no final-volume or density conversion
+        is inferred. No unstated density, final volume, percent basis or chemical
+        identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00;
+        capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.'
+  notes: 'Source addition: 3.10 ml = 0.0031 L fatty-acid mixture. The nested acid
+    volumes prepare that stock; they are not added individually in those volumes to
+    the receiving medium.'
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/1006
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 10,
+                            "compound": "Sodium resazurin",
+                            "compound_id": 1852,
+                            "attribute": "0.1% w/v",
+                            "amount": 0.5,
+                            "unit": "ml",
+                            "g_l": 0.000498008,
+                            "mmol_l": 0.00198275,
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].concentration: Source addition: 0.50 ml = 0.0005 L of 0.1% w/v sodium resazurin stock, not a mass or final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[9]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+    Additional exact excerpt: {
+                            "recipe_order": 10,
+                            "compound": "Sodium resazurin",
+                            "compound_id": 1852,
+                            "attribute": "0.1% w/v",
+                            "amount": 0.5,
+                            "unit": "ml",
+                            "g_l": 0.000498008,
+                            "mmol_l": 0.00198275,
+                            "optional": 0
+                        }
+    solutions[0].notes: Source addition: 0.50 ml = 0.0005 L of 0.1% w/v sodium resazurin stock, not a mass or final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[9]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+    Additional exact excerpt: {
+                            "recipe_order": 10,
+                            "compound": "Sodium resazurin",
+                            "compound_id": 1852,
+                            "attribute": "0.1% w/v",
+                            "amount": 0.5,
+                            "unit": "ml",
+                            "g_l": 0.000498008,
+                            "mmol_l": 0.00198275,
+                            "optional": 0
+                        }
+    solutions[0].preferred_term: Source addition: 0.50 ml = 0.0005 L of 0.1% w/v sodium resazurin stock, not a mass or final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[9]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+    Additional exact excerpt: {
+                            "recipe_order": 10,
+                            "compound": "Sodium resazurin",
+                            "compound_id": 1852,
+                            "attribute": "0.1% w/v",
+                            "amount": 0.5,
+                            "unit": "ml",
+                            "g_l": 0.000498008,
+                            "mmol_l": 0.00198275,
+                            "optional": 0
+                        }
+    solutions[0].name: Source addition: 0.50 ml = 0.0005 L of 0.1% w/v sodium resazurin stock, not a mass or final-medium concentration. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[9]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+    Additional exact excerpt: {
+                            "recipe_order": 12,
+                            "solution": "Volatile fatty acid mixture",
+                            "solution_id": 608,
+                            "amount": 3.1,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[1].concentration: Source addition: 3.10 ml = 0.0031 L fatty-acid mixture. The nested acid volumes prepare that stock; they are not added individually in those volumes to the receiving medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[11]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+    Additional exact excerpt: {
+                            "recipe_order": 12,
+                            "solution": "Volatile fatty acid mixture",
+                            "solution_id": 608,
+                            "amount": 3.1,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[1].notes: Source addition: 3.10 ml = 0.0031 L fatty-acid mixture. The nested acid volumes prepare that stock; they are not added individually in those volumes to the receiving medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[11]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+    Additional exact excerpt: {
+                            "recipe_order": 12,
+                            "solution": "Volatile fatty acid mixture",
+                            "solution_id": 608,
+                            "amount": 3.1,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[1].preferred_term: Source addition: 3.10 ml = 0.0031 L fatty-acid mixture. The nested acid volumes prepare that stock; they are not added individually in those volumes to the receiving medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[11]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+    Additional exact excerpt: {
+                            "recipe_order": 12,
+                            "solution": "Volatile fatty acid mixture",
+                            "solution_id": 608,
+                            "amount": 3.1,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[1].name: Source addition: 3.10 ml = 0.0031 L fatty-acid mixture. The nested acid volumes prepare that stock; they are not added individually in those volumes to the receiving medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[11]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+    Additional exact excerpt: "Dissolve ingredients (except carbonate, fatty acid mixture and cysteine), bring medium to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add solid carbonate, fatty acid mixture and cysteine and adjust pH to 6.0. Dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Adjust pH of complete medium to 6.0, if necessary."
+    preparation_steps: Retain the source preparation order and pH adjustment; no unstated titrant or gas dose is added. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+    Additional exact excerpt: {
+                            "recipe_order": 6,
+                            "compound": "DL-2-Methylbutyric acid",
+                            "compound_id": 223,
+                            "amount": 32.25,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    notes: Restore source-listed DL-2-methylbutyric acid instead of the false supplier-tagged LB expansion. Preserve genuine yeast extract, Trypticase and NaCl separately. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[5]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+    Additional exact excerpt: {
+                            "recipe_order": 6,
+                            "compound": "DL-2-Methylbutyric acid",
+                            "compound_id": 223,
+                            "amount": 32.25,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    notes: Restore source-listed DL-2-methylbutyric acid instead of the false supplier-tagged LB expansion. Preserve genuine yeast extract, Trypticase and NaCl separately. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[5]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+    Additional exact excerpt: {
+                            "recipe_order": 6,
+                            "compound": "DL-2-Methylbutyric acid",
+                            "compound_id": 223,
+                            "amount": 32.25,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    notes: Restore source-listed DL-2-methylbutyric acid instead of the false supplier-tagged LB expansion. Preserve genuine yeast extract, Trypticase and NaCl separately. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[5]; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+
+    Additional exact excerpt: {
+                            "recipe_order": 6,
+                            "compound": "DL-2-Methylbutyric acid",
+                            "compound_id": 223,
+                            "amount": 32.25,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    notes: Source-specific ingredient identities and quantity scopes supersede copied flattened amounts. Unknown gas amounts, densities and final volumes remain unknown. Other existing chemical annotations and all prior history are preserved, not recertified. No taxa-media association is added. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T01:48:14.082412+00:00; capture SHA256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+  supports: SUPPORT
+  snippet: Sodium resazurin (0.1% w/v)                                        0.50        ml
+  explanation: |-
+    solutions[0].concentration: Original source corroborates the addition dose, independently of the stock composition. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00; capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.
+
+    Additional exact excerpt: Volatile fatty acid mixture                                        3.10        ml
+    solutions[1].concentration: Original source corroborates the addition dose, independently of the stock composition. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00; capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.
+
+    Additional exact excerpt: Dissolve ingredients (except carbonate, fatty acid mixture and cysteine), bring medium to
+    the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add solid
+    carbonate, fatty acid mixture and cysteine and adjust pH to 6.0. Dispense medium under
+    100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Adjust pH of complete medium to 6.0, if necessary.
+    notes: The original recipe adds carbonate, fatty-acid stock and cysteine after cooling under CO2, then dispenses and autoclaves. The API main volume of 1004 ml is a provider encoding, not evidence of measured final volume or verified density conversions. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T01:48:16.318753+00:00; capture SHA256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/1006
+  title: ALLISONELLA MEDIUM
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-09;
+    capture_sha256=e50433d297dd2634146821ee10e55f5146cfeb37e0827e8367d8484fc418b26f.
+    Authors and publication year are not supplied; copyright/access years are not
+    publication years.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1006.pdf
+  title: '1006: ALLISONELLA MEDIUM'
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    capture_sha256=49cf2b7bcf99912a841a517872f72586d3937c3163106d2c186bf8dcc0a52f31.
+    Authors and publication year are not supplied; copyright/access years are not
+    publication years.
+- reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1006
+  title: KOMODO - the Known Media Database
+  notes: source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    capture_sha256=a589509cce9d95acc1437091b62ab3d764268e261e8bdec15fb5b1b8ab4a6fa7.
+    Authors and publication year are not supplied; copyright/access years are not
+    publication years.

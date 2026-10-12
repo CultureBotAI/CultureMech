@@ -1,0 +1,21 @@
+{
+  "path": "data/normalized_yaml/bacterial/virgibacillus_merv_medium.yaml",
+  "id": "CultureMech:002283",
+  "fingerprint": "b40eb274e384f07efef5361636897f0f7c7a285e41a528fd6c4b561ea657a69e",
+  "group_paths": [
+    "data/normalized_yaml/bacterial/virgibacillus_merv_medium.yaml"
+  ],
+  "merged_id": "CultureMech:002283",
+  "field_retention": {
+    "ingredients": true,
+    "solutions": true,
+    "preparation_steps": true,
+    "physical_state": true,
+    "ph_range": true,
+    "ph_value": true,
+    "evidence": true,
+    "references": true
+  },
+  "all_checked_fields_retained": true,
+  "scope": "Complete ingredient/evidence, stock, preparation, physical-state and pH equality; all original root evidence and bibliography retained, allowing additional unique sources. This one group's result does not resolve the global merger defects."
+}

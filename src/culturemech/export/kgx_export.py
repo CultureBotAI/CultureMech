@@ -175,11 +175,8 @@ def transform(
             yield edge
 
     # NEW: Edge Type 2: Medium → Solution (has_solution_component)
-    for solution in record.get("solutions", []):
-        target, minted = nested_solution_target(solution)
-        if not target:
-            continue
-        edge = medium_to_solution_edge(medium_id, solution, target)
+    for parent_id, solution, target, minted in _walk_solutions(record, medium_id):
+        edge = medium_to_solution_edge(parent_id, solution, target)
         if edge:
             yield edge
 
@@ -421,9 +418,8 @@ def nodes(record: dict[str, Any]) -> Iterator[dict[str, Any]]:
             )
         )
 
-    for solution in record.get("solutions", []) or []:
-        target, minted = nested_solution_target(solution)
-        if target and minted:
+    for _parent_id, solution, target, minted in _walk_solutions(record, medium_id):
+        if minted:
             yield asdict(
                 Node(
                     id=target,
@@ -584,6 +580,8 @@ def solution_to_ingredient_edge(
             {"qualifier_type_id": "biolink:role", "qualifier_value": ", ".join(roles)}
         )
 
+    pubs, _ = _format_evidence(ingredient.get("evidence"))
+
     return _make_association(
         subject=solution_id,
         predicate=HAS_PART,  # biolink:has_part
@@ -591,6 +589,7 @@ def solution_to_ingredient_edge(
         qualifiers=qualifiers if qualifiers else None,
         value=value,
         unit=unit,
+        publications=pubs if pubs else None,
     )
 
 
@@ -946,7 +945,7 @@ def _index_records_under(root: str) -> dict[str, str]:
     return index
 
 
-def _solution_fingerprint(solution: dict) -> str:
+def _solution_fingerprint(solution: dict, ancestors: frozenset[int] = frozenset()) -> str:
     """Eight hex digits over the name and the composition as written.
 
     Two nested solutions with one name and different reagents are different
@@ -956,24 +955,52 @@ def _solution_fingerprint(solution: dict) -> str:
     across MIM pins; it does move when a grounding in the record is repaired,
     which is acceptable for a node that has no permanent identifier.
     """
-    rows = sorted(
-        (
+    if id(solution) in ancestors:
+        raise ValueError("Cyclic inline solution composition")
+    ancestors = ancestors | {id(solution)}
+    rows = []
+    for row in solution.get("composition") or []:
+        if not isinstance(row, dict):
+            continue
+        quantity = row.get("concentration") or {}
+        identity = (
             str(
                 (row.get("term") or {}).get("id")
                 or (row.get("chebi_term") or {}).get("id")
                 or row.get("preferred_term")
             ),
-            str((row.get("concentration") or {}).get("value")),
-            str((row.get("concentration") or {}).get("unit")),
+            str(quantity.get("value")),
+            str(quantity.get("unit")),
         )
-        for row in (solution.get("composition") or [])
-        if isinstance(row, dict)
-    )
-    payload = repr((str(solution.get("preferred_term") or ""), rows)).encode()
+        basis = quantity.get("per_volume")
+        if basis and str(basis).strip():
+            identity += (str(basis),)
+        rows.append(identity)
+    rows.sort()
+    children = []
+    for child in solution.get("solutions") or []:
+        target, _minted = nested_solution_target(child, ancestors=ancestors)
+        if target:
+            dose = child.get("concentration") or {}
+            children.append(
+                (
+                    target,
+                    str(dose.get("value")),
+                    str(dose.get("unit")),
+                    str(dose.get("per_volume") or ""),
+                )
+            )
+    # Preserve legacy IDs for flat, unqualified compositions.
+    content = (str(solution.get("preferred_term") or ""), rows)
+    if children:
+        content += (sorted(children),)
+    payload = repr(content).encode()
     return hashlib.sha1(payload).hexdigest()[:8]
 
 
-def nested_solution_target(solution: dict) -> tuple[str | None, bool]:
+def nested_solution_target(
+    solution: dict, *, ancestors: frozenset[int] = frozenset()
+) -> tuple[str | None, bool]:
     """The node a medium's nested solution points at, and whether we mint it.
 
     In order:
@@ -997,7 +1024,17 @@ def nested_solution_target(solution: dict) -> tuple[str | None, bool]:
     tid = term.get("id") if isinstance(term, dict) else None
     if isinstance(tid, str) and tid in _solution_record_index():
         return _solution_record_index()[tid], False
-    return f"{_create_solution_id(str(name))}_{_solution_fingerprint(solution)}", True
+    return f"{_create_solution_id(str(name))}_{_solution_fingerprint(solution, ancestors)}", True
+
+
+def _walk_solutions(record: dict, parent_id: str) -> Iterator[tuple[str, dict, str, bool]]:
+    """Visit inline stock subgraphs, stopping at independently exported references."""
+    for solution in record.get("solutions") or []:
+        target, minted = nested_solution_target(solution)
+        if target:
+            yield parent_id, solution, target, minted
+            if minted:
+                yield from _walk_solutions(solution, target)
 
 
 def _create_solution_id(solution_name: str) -> str:
@@ -1021,6 +1058,12 @@ def _quantity(concentration: Any) -> tuple[list[dict], str | None, str | None]:
     if not (val and unit):
         return [], None, None
     qualifier = {"qualifier_type_id": "biolink:concentration", "qualifier_value": f"{val} {unit}"}
+    basis = concentration.get("per_volume")
+    if basis and str(basis).strip():
+        qualifier["qualifier_value"] += f" ({basis})"
+        # The arithmetic pair cannot carry a carrier/preparation-stage basis.
+        # Preserve the qualified dose as text, never as a bare final concentration.
+        return [qualifier], None, None
     # The typed pair is for arithmetic, so it carries only a value that parses as
     # a number: 3,598 corpus rows say `variable`, `-`, or prose such as
     # `0.01 g per vessel`, and MediaDive's column is numeric. Those rows keep the

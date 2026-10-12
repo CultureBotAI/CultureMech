@@ -1,0 +1,66 @@
+{
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/rs_medium_non_nutrient_medium_nnm_component.yaml",
+      "fingerprint": "29ee2de8fe4fc7d185709fa5269fb79ecf84b47fd0874eb45239954d57076f51",
+      "fingerprint_change": {
+        "before": "535c1c41b450bde2715bd616295d5dbbbf8a68a2355a9475fd6a3bd5954392e5",
+        "after": "29ee2de8fe4fc7d185709fa5269fb79ecf84b47fd0874eb45239954d57076f51",
+        "added_identifiers": [
+          "purified water",
+          "water"
+        ],
+        "removed_identifiers": []
+      },
+      "group_paths": [
+        "data/normalized_yaml/bacterial/rs_medium_non_nutrient_medium_nnm_component.yaml"
+      ],
+      "merged_id": "CultureMech:010434",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "physical_state": true,
+        "ph_range": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true,
+        "notes": true,
+        "curation_history": true
+      },
+      "all_checked_fields_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/rs_medium_nutrient_medium_nm_component.yaml",
+      "fingerprint": "c00d7e322251642a1bfa8e9996414b31dc952785b98a3630867ae387c536fe78",
+      "fingerprint_change": {
+        "before": "f766f386f26560d6b0b984bcdd6d4ebebf2cfebe1a6ec4e7c33e72179090bf93",
+        "after": "c00d7e322251642a1bfa8e9996414b31dc952785b98a3630867ae387c536fe78",
+        "added_identifiers": [
+          "purified water"
+        ],
+        "removed_identifiers": []
+      },
+      "group_paths": [
+        "data/normalized_yaml/bacterial/rs_medium_nutrient_medium_nm_component.yaml"
+      ],
+      "merged_id": "CultureMech:010435",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "physical_state": true,
+        "ph_range": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true,
+        "notes": true,
+        "curation_history": true
+      },
+      "all_checked_fields_retained": true
+    }
+  ],
+  "retained": 2,
+  "all_retained": true,
+  "scope": "Actual complete corpus groups, including water membership changes. No generated merge published."
+}

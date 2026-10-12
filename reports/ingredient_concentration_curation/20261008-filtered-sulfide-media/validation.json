@@ -1,0 +1,160 @@
+{
+  "terminal": true,
+  "publication_ready": false,
+  "all_record_goal_complete": false,
+  "applied_records": 3,
+  "source_responses_refreshed": 8,
+  "normalized_count": 15910,
+  "normalized_sha256": "0b76046a6e6048f25dc0838a40f4a6bf9cdf378a37b6da629178193a939af6a9",
+  "records": {
+    "data/normalized_yaml/bacterial/togo_medium_m199.yaml": "ebb7b7434349d3daf3512c7dc5ee1ccdada95967101118102100e360dc6aedbb",
+    "data/normalized_yaml/archaea/TOGO_M206_Archaeoglobus_Fulgidus_Medium.yaml": "c7216acdbc134aa8a586f720b32e610653adc7c860b4092422398673805e05d9",
+    "data/normalized_yaml/archaea/TOGO_M207_Archaeoglobus_Profundus_Medium.yaml": "f226763b828f94578958cf5c0747acb9ed82ac5be9527a98af965c1b7c91a917"
+  },
+  "reference_checks": {
+    "M199": {
+      "checks": 76,
+      "all_valid": true,
+      "issues": []
+    },
+    "M206": {
+      "checks": 70,
+      "all_valid": true,
+      "issues": []
+    },
+    "M207": {
+      "checks": 74,
+      "all_valid": true,
+      "issues": []
+    }
+  },
+  "tests_passed": {
+    "fast": "8538 passed, 16 skipped, 1945 deselected, 2 warnings in 583.25s (0:09:43)",
+    "final": "581 passed, 2 warnings in 168.44s (0:02:48)"
+  },
+  "failed_global_gates": [
+    {
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/filtered-post-9.log"
+    },
+    {
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/filtered-post-10.log"
+    }
+  ],
+  "merge_verification": {
+    "name_conflicts": 1247,
+    "fingerprint_issues": 3287
+  },
+  "freshness": {
+    "tracked_total": 6320,
+    "fresh_total": 10777,
+    "only_in_tracked": 4275,
+    "only_in_fresh": 8732,
+    "changed": 2045,
+    "unchanged": 0
+  },
+  "cumulative_audit": {
+    "stock_nodes_relocated": 631,
+    "new_quantity_slots": 271,
+    "unsupported_quantity_slots_removed": 514,
+    "new_evidence": 31738,
+    "new_curation_history": 5349,
+    "new_references": 5552,
+    "stock_stage_concentrations_rebased": 139,
+    "stock_descriptors_added": 184,
+    "quantity_corrections": 1413,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 264,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 5,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 77,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 7,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 14,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "stock_dose_basis_corrections": 89,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "child_links_corrected": 5,
+    "preparation_steps_relocated": 9,
+    "water_input_notes_added": 9,
+    "inline_variant_options_added": 8,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5145
+  },
+  "followup_unique_records": 11772,
+  "outside_this_followup": 4138,
+  "remaining_M142_queue": 80,
+  "reports": {
+    "application.json": "fef9da85b12a0689fdb14231e63c4d310f5b2323b91011be006b49f8658aa8ea",
+    "applied-audit.json": "5c0eeac51b71dddd6adb61dfe0d57e2dc9f3dfb7ad10fbb857d15d2600eb6c51",
+    "baseline.json": "e88ad56c8f1e3fa4f91733c83ad6f543c94727108be2eddd1bf7a016c43ca667",
+    "context.json": "9ef2e61a0c079c15a0cc2577004711a46a8d425872737561c8e333a2655490d4",
+    "corpus.json": "a9c038c08d8d4f171e5796b36c7f96ae9ece7f5ab01516ea418cda4bf433adce",
+    "cumulative-audit.json": "0e5c1444ba22ec777d5ace2df0d365f3d956bf9de28bb6196a1f77509c999794",
+    "fast.json": "c3aab2d3f5eefe0e3417c5a7184e173362aaccef83afcc231bb391aea6d33a40",
+    "final.json": "f8545e031d5f3644c6bf065cee801e25ed8782e7028fd6345a2a45dacfd5f7db",
+    "followup-coverage.json": "de0906a0803d338c877ac55ca862b4c3cb01c4fae5ecc870fe9f82c653761162",
+    "index-refresh-application.json": "3df9c2e0c082e755c833c5af3157fb8c93ee8a2535c931824586bd2455d0c602",
+    "index-refresh-plan.json": "8c352ae5c2ac13009a702963d64a8c75ab05e6bff49b0141ac183ff8280cfae6",
+    "live.json": "ae30e0557592c60ed261aee59a66a9086142895dc3957b9f60482186055dc67c",
+    "merge-retention.json": "c3fcdcce71282592c899fa7840cd66030eed91bb25d2ee28fb8614512480c513",
+    "next-marine-pair-context.json": "03204b85c0510e83182322363d7722b7a492f333ed3d3f1e13b8c3f9d6c034c1",
+    "plan.json": "27684cc675c15a542792e5e77420c8bd9b28b361461ea481a29066b2a6a89fed",
+    "post.json": "1997a000b005086a1d2f7c4c84743d34d0a14015cefcf9ca47c33226688f8f01",
+    "preview-audit.json": "5c0eeac51b71dddd6adb61dfe0d57e2dc9f3dfb7ad10fbb857d15d2600eb6c51",
+    "reconciliation.json": "01ee60f924dec143395f0405d2899ba6a0d843eb041da582a89ff85f412f072b",
+    "remaining-queue.json": "df27ff4434b4d363bf2f8e16fa96fd50e7ddb66e69b23f126418fdb4cde44ffd"
+  },
+  "code_sha256": {
+    "scripts/repair_filtered_sulfide_media.py": "f5a65fd87c49cf1929b69d31aa4536754a4559959c90022fa37af5176259babd",
+    "tests/test_filtered_sulfide_media.py": "7c27283ea9ff23425b3faa7d9f53922cfe30fe02e6d4304f9b3b415524c67e64",
+    "reports/ingredient_concentration_curation/20261008-filtered-sulfide-media/audit.py": "cc77220c6b6e3b838f5b35b29070f32864fee338fc24c05f2d9423510240363b",
+    "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py": "fd98c85754a43c7cccbafda966671fa16f0799adfd3f3b3accb57db319ed1cca"
+  },
+  "commit_push_PR_merge_branch_cleanup": "Not performed; requested publication workflow remains incomplete.",
+  "runtime": "Existing partial locked Python 3.13 environment; not clean CI. Full test suite not rerun for this localized data repair.",
+  "corpus_checks": {
+    "strict_explicit_root_scanned": 15910,
+    "ids_scanned": 15910,
+    "product_warnings": 91,
+    "product_skipped_no_adapter": 96087,
+    "ingredient_groundings_recertified": false
+  }
+}

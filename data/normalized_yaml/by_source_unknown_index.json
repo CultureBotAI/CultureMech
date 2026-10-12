@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T05:38:04.313346+00:00",
+  "generated": "2026-10-10T23:14:57.847931+00:00",
   "source": "unknown",
   "count": 1240,
   "recipes": {
@@ -57,7 +57,7 @@
     "CultureMech:000005": {
       "name": "1_2_soil_seawater_medium",
       "filename": "1_2_soil_seawater_medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 3,
       "id": "CultureMech:000005",
       "source_id": "UTEX:one-half-soil-plus-seawater-medium",
       "source": "unknown",
@@ -81,7 +81,7 @@
     "CultureMech:000007": {
       "name": "1_3_soil_seawater_medium",
       "filename": "1_3_soil_seawater_medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 3,
       "id": "CultureMech:000007",
       "source_id": "UTEX:one-third-soil-plus-seawater-medium",
       "source": "unknown",
@@ -106,7 +106,7 @@
     "CultureMech:000009": {
       "name": "1_4_soil_seawater_medium",
       "filename": "1_4_soil_seawater_medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 3,
       "id": "CultureMech:000009",
       "source_id": "UTEX:one-fourth-soil-plus-seawater-medium",
       "source": "unknown",
@@ -130,7 +130,7 @@
     "CultureMech:000011": {
       "name": "1_5_soil_seawater_medium",
       "filename": "1_5_soil_seawater_medium.yaml",
-      "ingredient_count": 4,
+      "ingredient_count": 3,
       "id": "CultureMech:000011",
       "source_id": "UTEX:one-fifth-soil-plus-seawater-medium",
       "source": "unknown",
@@ -632,7 +632,7 @@
       "id": "CultureMech:000163",
       "source_id": "UTEX:es-over-10-enriched-seawater-medium",
       "source": "unknown",
-      "solution_count": 6,
+      "solution_count": 1,
       "categories": [
         "algae"
       ],
@@ -645,7 +645,7 @@
       "id": "CultureMech:000164",
       "source_id": "UTEX:es-over-2-enriched-seawater-medium",
       "source": "unknown",
-      "solution_count": 6,
+      "solution_count": 1,
       "categories": [
         "algae"
       ],
@@ -658,7 +658,7 @@
       "id": "CultureMech:000165",
       "source_id": "UTEX:es-over-4-enriched-seawater-medium",
       "source": "unknown",
-      "solution_count": 6,
+      "solution_count": 1,
       "categories": [
         "algae"
       ],
@@ -671,7 +671,7 @@
       "id": "CultureMech:000166",
       "source_id": "UTEX:enriched-seawater-medium",
       "source": "unknown",
-      "solution_count": 6,
+      "solution_count": 1,
       "categories": [
         "algae"
       ],
@@ -2752,7 +2752,7 @@
     "CultureMech:000221": {
       "name": "soil_seawater_medium",
       "filename": "soil_seawater_medium.yaml",
-      "ingredient_count": 3,
+      "ingredient_count": 2,
       "id": "CultureMech:000221",
       "source_id": "UTEX:soil-plus-seawater-medium",
       "source": "unknown",
@@ -3907,7 +3907,7 @@
     "CultureMech:007333": {
       "name": "defined_freshwater_medium_coso4",
       "filename": "MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml",
-      "ingredient_count": 31,
+      "ingredient_count": 29,
       "id": "CultureMech:007333",
       "source_id": "MEDIADB:430",
       "source": "unknown",
@@ -4267,7 +4267,7 @@
     "CultureMech:007366": {
       "name": "defined_freshwater_medium_cocl2",
       "filename": "MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml",
-      "ingredient_count": 31,
+      "ingredient_count": 29,
       "id": "CultureMech:007366",
       "source_id": "MEDIADB:460",
       "source": "unknown",
@@ -6994,14 +6994,14 @@
     "CultureMech:007206": {
       "name": "kaminskyj_minimal_medium",
       "filename": "kaminskyj_minimal_medium.yaml",
-      "ingredient_count": 14,
+      "ingredient_count": 2,
       "id": "CultureMech:007206",
       "source_id": "MEDIADB:308",
       "source": "unknown",
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:007221": {
@@ -8233,7 +8233,7 @@
     "CultureMech:007380": {
       "name": "mcn_medium_whitman",
       "filename": "mcn_medium_whitman.yaml",
-      "ingredient_count": 27,
+      "ingredient_count": 26,
       "id": "CultureMech:007380",
       "source_id": "MEDIADB:473",
       "source": "unknown",
@@ -8246,7 +8246,7 @@
     "CultureMech:007381": {
       "name": "mcna_medium_lupa",
       "filename": "mcna_medium_lupa.yaml",
-      "ingredient_count": 28,
+      "ingredient_count": 27,
       "id": "CultureMech:007381",
       "source_id": "MEDIADB:474",
       "source": "unknown",
@@ -10601,7 +10601,7 @@
     "CultureMech:010555": {
       "name": "yeast_mineral_medium_10_g_l_glucose",
       "filename": "yeast_mineral_medium_10_g_l_glucose.yaml",
-      "ingredient_count": 21,
+      "ingredient_count": 22,
       "id": "CultureMech:010555",
       "source_id": "MEDIADB:397",
       "source": "unknown",
@@ -10613,7 +10613,7 @@
     "CultureMech:010557": {
       "name": "yeast_mineral_medium_25_g_l_glucose",
       "filename": "yeast_mineral_medium_25_g_l_glucose.yaml",
-      "ingredient_count": 21,
+      "ingredient_count": 22,
       "id": "CultureMech:010557",
       "source_id": "MEDIADB:399",
       "source": "unknown",
@@ -10625,7 +10625,7 @@
     "CultureMech:010556": {
       "name": "yeast_mineral_medium_7_5_g_l_ethanol",
       "filename": "yeast_mineral_medium_7_5_g_l_ethanol.yaml",
-      "ingredient_count": 21,
+      "ingredient_count": 22,
       "id": "CultureMech:010556",
       "source_id": "MEDIADB:398",
       "source": "unknown",
@@ -10637,7 +10637,7 @@
     "CultureMech:010558": {
       "name": "yeast_mineral_medium_7_9_g_l_ethanol",
       "filename": "yeast_mineral_medium_7_9_g_l_ethanol.yaml",
-      "ingredient_count": 21,
+      "ingredient_count": 22,
       "id": "CultureMech:010558",
       "source_id": "MEDIADB:400",
       "source": "unknown",

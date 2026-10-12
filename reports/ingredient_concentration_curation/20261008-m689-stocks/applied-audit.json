@@ -1,0 +1,14 @@
+{
+  "M689": {
+    "quantity_corrections": 1,
+    "unsupported_quantity_slots_removed": 6,
+    "stock_dose_basis_corrections": 4,
+    "new_quantity_slots": 6,
+    "new_evidence": 50,
+    "new_references": 8,
+    "new_curation_history": 1,
+    "old_quantity_slots": 11,
+    "claims": 66,
+    "source_rows": 47
+  }
+}

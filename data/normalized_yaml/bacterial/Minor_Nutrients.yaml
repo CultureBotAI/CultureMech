@@ -15,6 +15,17 @@ composition:
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
     label: boric acid
+  evidence:
+  - reference: https://utex.org/products/minor-nutrients
+    supports: SUPPORT
+    snippet: 0.248 g/L
+    explanation: 'Supports composition[0].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''H3BO3(Baker 0084)''. Locator: formulation
+      table row 1; Amount column and volume heading. Separate volume-basis excerpt:
+      ''For 1 L Total''. Direct g/L source amount, or grams per explicit one-liter
+      total; no molecular-weight or working-dilution calculation. Supplier and ontology
+      evidence, when attached, establish the supplied form separately; no replacement
+      molarity or receiving-medium dose is inferred.'
 - preferred_term: Manganese sulfate monohydrate
   concentration:
     value: '0.184'
@@ -24,6 +35,17 @@ composition:
     label: manganese(II) sulfate monohydrate
   mediaingredientmech_term:
     id: MediaIngredientMech:001118
+  evidence:
+  - reference: https://utex.org/products/minor-nutrients
+    supports: SUPPORT
+    snippet: 0.184 g/L
+    explanation: 'Supports composition[1].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''MnSO4•H2O(Sigma M8179)''. Locator:
+      formulation table row 2; Amount column and volume heading. Separate volume-basis
+      excerpt: ''For 1 L Total''. Direct g/L source amount, or grams per explicit
+      one-liter total; no molecular-weight or working-dilution calculation. Supplier
+      and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.023'
@@ -31,6 +53,17 @@ composition:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  evidence:
+  - reference: https://utex.org/products/minor-nutrients
+    supports: SUPPORT
+    snippet: 0.023 g/L
+    explanation: 'Supports composition[2].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''ZnSO4•7H2O(Sigma Z 0251)''. Locator:
+      formulation table row 3; Amount column and volume heading. Separate volume-basis
+      excerpt: ''For 1 L Total''. Direct g/L source amount, or grams per explicit
+      one-liter total; no molecular-weight or working-dilution calculation. Supplier
+      and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
 - preferred_term: Ammonium molybdate tetrahydrate
   concentration:
     value: '0.007'
@@ -40,6 +73,17 @@ composition:
     label: hexaammonium heptamolybdate tetrahydrate
   mediaingredientmech_term:
     id: MediaIngredientMech:001110
+  evidence:
+  - reference: https://utex.org/products/minor-nutrients
+    supports: SUPPORT
+    snippet: 0.007 g/L
+    explanation: 'Supports composition[3].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''(NH4)6Mo7O24•4H2O(Mallinckrodt
+      3420)''. Locator: formulation table row 4; Amount column and volume heading.
+      Separate volume-basis excerpt: ''For 1 L Total''. Direct g/L source amount,
+      or grams per explicit one-liter total; no molecular-weight or working-dilution
+      calculation. Supplier and ontology evidence, when attached, establish the supplied
+      form separately; no replacement molarity or receiving-medium dose is inferred.'
 - preferred_term: Cobalt nitrate hexahydrate
   concentration:
     value: '0.012'
@@ -49,6 +93,17 @@ composition:
     label: cobalt dinitrate hexahydrate
   mediaingredientmech_term:
     id: MediaIngredientMech:001111
+  evidence:
+  - reference: https://utex.org/products/minor-nutrients
+    supports: SUPPORT
+    snippet: 0.012 g/L
+    explanation: 'Supports composition[4].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''Co(NO3)2•6H2O(ACROS 10026-22-9)''.
+      Locator: formulation table row 5; Amount column and volume heading. Separate
+      volume-basis excerpt: ''For 1 L Total''. Direct g/L source amount, or grams
+      per explicit one-liter total; no molecular-weight or working-dilution calculation.
+      Supplier and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
 - preferred_term: Potassium bromide
   concentration:
     value: '0.015'
@@ -59,65 +114,147 @@ composition:
   mediaingredientmech_chebi_term:
     id: CHEBI:32030
     label: potassium bromide
-- preferred_term: Nickel ammonium sulfate hexahydrate
+  evidence:
+  - reference: https://utex.org/products/minor-nutrients
+    supports: SUPPORT
+    snippet: 0.015 g/L
+    explanation: 'Supports composition[5].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''KBr(Sigma 449962)''. Locator: formulation
+      table row 6; Amount column and volume heading. Separate volume-basis excerpt:
+      ''For 1 L Total''. Direct g/L source amount, or grams per explicit one-liter
+      total; no molecular-weight or working-dilution calculation. Supplier and ontology
+      evidence, when attached, establish the supplied form separately; no replacement
+      molarity or receiving-medium dose is inferred.'
+- preferred_term: ammonium nickel(II) sulfate hexahydrate
   concentration:
     value: '0.016'
     unit: G_PER_L
   term:
-    id: CHEBI:86151
-    label: ammonium nickel sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001120
-- preferred_term: Vanadyl sulfate dihydrate
+    id: CHEBI:86149
+    label: ammonium nickel sulfate hexahydrate
+  evidence:
+  - reference: https://utex.org/products/minor-nutrients
+    supports: SUPPORT
+    snippet: 0.016 g/L
+    explanation: 'Supports composition[6].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''NiSO4(NH4)SO4•6H2O(Sigma 574988)''.
+      Locator: formulation table row 7; Amount column and volume heading. Separate
+      volume-basis excerpt: ''For 1 L Total''. Direct g/L source amount, or grams
+      per explicit one-liter total; no molecular-weight or working-dilution calculation.
+      Supplier and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred. The component
+      is selected by the exact listed Sigma 574988 product; UTEX prints an incomplete
+      ammonium formula, retained as a source discrepancy in composition[6].notes.
+      No formula-corrected molarity is calculated.'
+  - reference: https://www.sigmaaldrich.com/RU/en/product/aldrich/574988
+    supports: SUPPORT
+    snippet: Ammonium nickel(II) sulfate hexahydrate
+    explanation: 'Supports composition[6].term and supplied-form label/MIM-link correction
+      from CHEBI:86151 to CHEBI:86149. Supplier identifies (NH4)2Ni(SO4)2.6H2O, CAS
+      7785-20-8, InChIKey ZZPAXHDZFDUTLY-UHFFFAOYSA-L. UTEX omits the second ammonium
+      count in its printed formula. Preserve that discrepancy while grounding the
+      named product. Locator: Product 574988 heading; linear formula, CAS and InChIKey
+      fields separately inspected. The g/L amount is unchanged and sourced separately
+      to UTEX.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:86149
+    supports: SUPPORT
+    snippet: 6H2O.2H4N.Ni.2O4S
+    explanation: 'Supports composition[6].term and supplied-form label/MIM-link correction
+      from CHEBI:86151 to CHEBI:86149. Exact supplied hydrate identity only; not the
+      stock amount. Locator: Formula field; CAS and InChIKey fields separately inspected.
+      The g/L amount is unchanged and sourced separately to UTEX.'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86149
+    label: ammonium nickel sulfate hexahydrate
+  notes: UTEX prints NiSO4(NH4)SO4.6H2O, omitting the second ammonium count. The exact
+    listed supplier product 574988 identifies ammonium nickel sulfate hexahydrate;
+    the supplier and ChEBI agree on (NH4)2Ni(SO4)2.6H2O. The printed-source discrepancy
+    is retained; the 0.016 g/L amount is unchanged.
+- preferred_term: vanadyl sulfate dihydrate
   concentration:
     value: '0.0016'
     unit: G_PER_L
   term:
-    id: CHEBI:33146
-    label: vanadyl sulfate
+    id: CHEBI:87009
+    label: vanadyl sulfate dihydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:33146
-    label: vanadyl sulfate
-- preferred_term: Aluminum potassium sulfate
+    id: CHEBI:87009
+    label: vanadyl sulfate dihydrate
+  evidence:
+  - reference: https://utex.org/products/minor-nutrients
+    supports: SUPPORT
+    snippet: 0.0016 g/L
+    explanation: 'Supports composition[7].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''VOSO4•2H2O(Sigma 204862)''. Locator:
+      formulation table row 8; Amount column and volume heading. Separate volume-basis
+      excerpt: ''For 1 L Total''. Direct g/L source amount, or grams per explicit
+      one-liter total; no molecular-weight or working-dilution calculation. Supplier
+      and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:87009
+    supports: SUPPORT
+    snippet: 2H2O.O4S.OV
+    explanation: 'Supports composition[7].term and supplied-form label/MIM-link correction
+      from CHEBI:33146 to CHEBI:87009. chemical identity only; not a recipe amount
+      Locator: Formula field. The g/L amount is unchanged and sourced separately to
+      UTEX.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:33146
+    supports: SUPPORT
+    snippet: O4S.OV
+    explanation: 'Supports composition[7].term and supplied-form label/MIM-link correction
+      from CHEBI:33146 to CHEBI:87009. chemical identity only; not a recipe amount
+      Locator: Formula field. The g/L amount is unchanged and sourced separately to
+      UTEX.'
+- preferred_term: potassium aluminium sulfate dodecahydrate
   concentration:
     value: '0.0376'
     unit: G_PER_L
   term:
-    id: CHEBI:86463
-    label: potassium aluminium sulfate
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:86463
-    label: potassium aluminium sulfate
-notes: 'Minor Nutrients solution for Snow Algae Medium and related cold-adapted algae
-  culture.
-
-  Provides comprehensive micronutrient mixture including trace metals for psychrophilic
-  algae.
-
-
-  Preparation: Add components to approximately 950 mL deionized water in the order
-
-  listed while stirring continuously. Bring to 1 L total volume.
-
-
-  Storage: Refrigerator temperature (4°C).
-
-
-  Final stock concentrations: H3BO3 (1.01 mM), MnSO4·H2O (1.01 mM),
-
-  ZnSO4·7H2O (0.08 mM), (NH4)6Mo7O24·4H2O (0.01 mM), Co(NO3)2·6H2O (0.04 mM),
-
-  KBr (0.13 mM), NiSO4(NH4)SO4·6H2O (0.09 mM), VOSO4·2H2O (0.01 mM),
-
-  Al2(SO4)3·K2SO4·24H2O (0.04 mM)
-
-
-  Note: This formulation includes a broader range of trace elements including Ni,
-  V, and Al
-
-  which may be beneficial for cold-adapted algae species.
-
-  '
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+  evidence:
+  - reference: https://utex.org/products/minor-nutrients
+    supports: SUPPORT
+    snippet: 0.0376 g/L
+    explanation: 'Supports composition[8].concentration for the supplied ingredient
+      in this stock preparation only. Component: ''Al2(SO4)3•K2SO4•24H2O''. Locator:
+      formulation table row 9; Amount column and volume heading. Separate volume-basis
+      excerpt: ''For 1 L Total''. Direct g/L source amount, or grams per explicit
+      one-liter total; no molecular-weight or working-dilution calculation. Supplier
+      and ontology evidence, when attached, establish the supplied form separately;
+      no replacement molarity or receiving-medium dose is inferred. The printed Al2(SO4)3.K2SO4.24H2O
+      is two formula units of AlK(SO4)2.12H2O. This chemical identity normalization
+      does not multiply or divide the mass amount.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:86465
+    supports: SUPPORT
+    snippet: Al.12H2O.K.2O4S
+    explanation: 'Supports composition[8].term and supplied-form label/MIM-link correction
+      from CHEBI:86463 to CHEBI:86465. chemical identity only; not a recipe amount
+      Locator: Formula field. The g/L amount is unchanged and sourced separately to
+      UTEX.'
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:86463
+    supports: SUPPORT
+    snippet: Al.K.2O4S
+    explanation: 'Supports composition[8].term and supplied-form label/MIM-link correction
+      from CHEBI:86463 to CHEBI:86465. chemical identity only; not a recipe amount
+      Locator: Formula field. The g/L amount is unchanged and sourced separately to
+      UTEX.'
+notes: "Minor Nutrients solution for Snow Algae Medium and related cold-adapted algae\
+  \ culture.\nProvides comprehensive micronutrient mixture including trace metals\
+  \ for psychrophilic algae.\n\nPreparation: Add components in the listed order to\
+  \ approximately 950 mL deionized water while stirring. The source labels this as\
+  \ a 1 L total preparation and reports g/L amounts; it does not separately state\
+  \ a makeup step. \n\nStorage: Refrigerator temperature; no exact temperature is\
+  \ established by this source.\n\nThe source also prints a Final Concentration column\
+  \ and a stock-solution footnote. Those annotations are retained as a source interpretation\
+  \ issue, not asserted here as independently verified stock molarities. The structured\
+  \ values use the explicit g/L Amount column. No receiving-medium dose or replacement\
+  \ molarity is inferred.\n\nNote: This formulation includes a broader range of trace\
+  \ elements including Ni, V, and Al\nwhich may be beneficial for cold-adapted algae\
+  \ species.\n"
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0099
@@ -144,8 +281,161 @@ curation_history:
   notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-10T07:40:20.478855+00:00'
+  curator: codex
+  action: CURATED_UTEX_SEVEN_STOCK_AMOUNTS_FORMS_AND_BOUNDARIES
+  notes: Source-backed amount, supplied-form and preparation-stage review. Numerical
+    mass concentrations retained; unresolved source conflicts explicitly recorded.
+    No taxa-media association added.
+  source: https://utex.org/products/minor-nutrients
+  changes: '{"claims": [{"action_taken": "Added scoped SUPPORT amount evidence; numeric
+    value unchanged", "basis_snippet": "For 1 L Total", "calculation": "Direct g/L
+    source amount, or grams per explicit one-liter total; no molecular-weight or working-dilution
+    calculation.", "field": "composition[0].concentration", "ingredient": "Boric acid",
+    "locator": "formulation table row 1; Amount column and volume heading", "old":
+    {"unit": "G_PER_L", "value": "0.248"}, "proposed": {"unit": "G_PER_L", "value":
+    "0.248"}, "reason": "Exact UTEX amount and volume basis retained; any identity
+    correction is separately evidenced.", "reference": "https://utex.org/products/minor-nutrients",
+    "snippet": "0.248 g/L", "source_component": "H3BO3(Baker 0084)", "status": "evidence_only"},
+    {"action_taken": "Added scoped SUPPORT amount evidence; numeric value unchanged",
+    "basis_snippet": "For 1 L Total", "calculation": "Direct g/L source amount, or
+    grams per explicit one-liter total; no molecular-weight or working-dilution calculation.",
+    "field": "composition[1].concentration", "ingredient": "Manganese sulfate monohydrate",
+    "locator": "formulation table row 2; Amount column and volume heading", "old":
+    {"unit": "G_PER_L", "value": "0.184"}, "proposed": {"unit": "G_PER_L", "value":
+    "0.184"}, "reason": "Exact UTEX amount and volume basis retained; any identity
+    correction is separately evidenced.", "reference": "https://utex.org/products/minor-nutrients",
+    "snippet": "0.184 g/L", "source_component": "MnSO4\u2022H2O(Sigma M8179)", "status":
+    "evidence_only"}, {"action_taken": "Added scoped SUPPORT amount evidence; numeric
+    value unchanged", "basis_snippet": "For 1 L Total", "calculation": "Direct g/L
+    source amount, or grams per explicit one-liter total; no molecular-weight or working-dilution
+    calculation.", "field": "composition[2].concentration", "ingredient": "Zinc sulfate
+    heptahydrate", "locator": "formulation table row 3; Amount column and volume heading",
+    "old": {"unit": "G_PER_L", "value": "0.023"}, "proposed": {"unit": "G_PER_L",
+    "value": "0.023"}, "reason": "Exact UTEX amount and volume basis retained; any
+    identity correction is separately evidenced.", "reference": "https://utex.org/products/minor-nutrients",
+    "snippet": "0.023 g/L", "source_component": "ZnSO4\u20227H2O(Sigma Z 0251)", "status":
+    "evidence_only"}, {"action_taken": "Added scoped SUPPORT amount evidence; numeric
+    value unchanged", "basis_snippet": "For 1 L Total", "calculation": "Direct g/L
+    source amount, or grams per explicit one-liter total; no molecular-weight or working-dilution
+    calculation.", "field": "composition[3].concentration", "ingredient": "Ammonium
+    molybdate tetrahydrate", "locator": "formulation table row 4; Amount column and
+    volume heading", "old": {"unit": "G_PER_L", "value": "0.007"}, "proposed": {"unit":
+    "G_PER_L", "value": "0.007"}, "reason": "Exact UTEX amount and volume basis retained;
+    any identity correction is separately evidenced.", "reference": "https://utex.org/products/minor-nutrients",
+    "snippet": "0.007 g/L", "source_component": "(NH4)6Mo7O24\u20224H2O(Mallinckrodt
+    3420)", "status": "evidence_only"}, {"action_taken": "Added scoped SUPPORT amount
+    evidence; numeric value unchanged", "basis_snippet": "For 1 L Total", "calculation":
+    "Direct g/L source amount, or grams per explicit one-liter total; no molecular-weight
+    or working-dilution calculation.", "field": "composition[4].concentration", "ingredient":
+    "Cobalt nitrate hexahydrate", "locator": "formulation table row 5; Amount column
+    and volume heading", "old": {"unit": "G_PER_L", "value": "0.012"}, "proposed":
+    {"unit": "G_PER_L", "value": "0.012"}, "reason": "Exact UTEX amount and volume
+    basis retained; any identity correction is separately evidenced.", "reference":
+    "https://utex.org/products/minor-nutrients", "snippet": "0.012 g/L", "source_component":
+    "Co(NO3)2\u20226H2O(ACROS 10026-22-9)", "status": "evidence_only"}, {"action_taken":
+    "Added scoped SUPPORT amount evidence; numeric value unchanged", "basis_snippet":
+    "For 1 L Total", "calculation": "Direct g/L source amount, or grams per explicit
+    one-liter total; no molecular-weight or working-dilution calculation.", "field":
+    "composition[5].concentration", "ingredient": "Potassium bromide", "locator":
+    "formulation table row 6; Amount column and volume heading", "old": {"unit": "G_PER_L",
+    "value": "0.015"}, "proposed": {"unit": "G_PER_L", "value": "0.015"}, "reason":
+    "Exact UTEX amount and volume basis retained; any identity correction is separately
+    evidenced.", "reference": "https://utex.org/products/minor-nutrients", "snippet":
+    "0.015 g/L", "source_component": "KBr(Sigma 449962)", "status": "evidence_only"},
+    {"action_taken": "Added scoped SUPPORT amount evidence; numeric value unchanged",
+    "basis_snippet": "For 1 L Total", "calculation": "Direct g/L source amount, or
+    grams per explicit one-liter total; no molecular-weight or working-dilution calculation.",
+    "field": "composition[6].concentration", "ingredient": "Nickel ammonium sulfate
+    hexahydrate", "locator": "formulation table row 7; Amount column and volume heading",
+    "old": {"unit": "G_PER_L", "value": "0.016"}, "proposed": {"unit": "G_PER_L",
+    "value": "0.016"}, "reason": "Exact UTEX amount and volume basis retained; any
+    identity correction is separately evidenced.", "reference": "https://utex.org/products/minor-nutrients",
+    "snippet": "0.016 g/L", "source_component": "NiSO4(NH4)SO4\u20226H2O(Sigma 574988)",
+    "status": "evidence_only"}, {"action_taken": "Added scoped SUPPORT amount evidence;
+    numeric value unchanged", "basis_snippet": "For 1 L Total", "calculation": "Direct
+    g/L source amount, or grams per explicit one-liter total; no molecular-weight
+    or working-dilution calculation.", "field": "composition[7].concentration", "ingredient":
+    "Vanadyl sulfate dihydrate", "locator": "formulation table row 8; Amount column
+    and volume heading", "old": {"unit": "G_PER_L", "value": "0.0016"}, "proposed":
+    {"unit": "G_PER_L", "value": "0.0016"}, "reason": "Exact UTEX amount and volume
+    basis retained; any identity correction is separately evidenced.", "reference":
+    "https://utex.org/products/minor-nutrients", "snippet": "0.0016 g/L", "source_component":
+    "VOSO4\u20222H2O(Sigma 204862)", "status": "evidence_only"}, {"action_taken":
+    "Added scoped SUPPORT amount evidence; numeric value unchanged", "basis_snippet":
+    "For 1 L Total", "calculation": "Direct g/L source amount, or grams per explicit
+    one-liter total; no molecular-weight or working-dilution calculation.", "field":
+    "composition[8].concentration", "ingredient": "Aluminum potassium sulfate", "locator":
+    "formulation table row 9; Amount column and volume heading", "old": {"unit": "G_PER_L",
+    "value": "0.0376"}, "proposed": {"unit": "G_PER_L", "value": "0.0376"}, "reason":
+    "Exact UTEX amount and volume basis retained; any identity correction is separately
+    evidenced.", "reference": "https://utex.org/products/minor-nutrients", "snippet":
+    "0.0376 g/L", "source_component": "Al2(SO4)3\u2022K2SO4\u202224H2O", "status":
+    "evidence_only"}], "context_notes": "Corrected preparation, storage and stock/receiving
+    concentration wording using root evidence; retained unresolved source discrepancies.",
+    "counts": {"bibliographic_entries_enriched": 1, "ingredient_context_notes_added":
+    1, "ingredient_identities_corrected": 3, "ingredient_labels_corrected": 3, "ingredient_mim_links_corrected":
+    3, "new_curation_history": 1, "new_evidence": 16, "new_references": 6, "recipe_context_notes_corrected":
+    1}, "identity_changes": [{"field": "composition[6]", "matching_mim_link_corrected":
+    true, "new_label": "ammonium nickel(II) sulfate hexahydrate", "new_term_id": "CHEBI:86149",
+    "old_label": "Nickel ammonium sulfate hexahydrate", "old_term": {"id": "CHEBI:86151",
+    "label": "ammonium nickel sulfate"}, "sources": [{"locator": "Product 574988 heading;
+    linear formula, CAS and InChIKey fields separately inspected", "reference": "https://www.sigmaaldrich.com/RU/en/product/aldrich/574988",
+    "snippet": "Ammonium nickel(II) sulfate hexahydrate"}, {"locator": "Formula field;
+    CAS and InChIKey fields separately inspected", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:86149",
+    "snippet": "6H2O.2H4N.Ni.2O4S"}]}, {"field": "composition[7]", "matching_mim_link_corrected":
+    true, "new_label": "vanadyl sulfate dihydrate", "new_term_id": "CHEBI:87009",
+    "old_label": "Vanadyl sulfate dihydrate", "old_term": {"id": "CHEBI:33146", "label":
+    "vanadyl sulfate"}, "sources": [{"locator": "Formula field", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:87009",
+    "snippet": "2H2O.O4S.OV"}, {"locator": "Formula field", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:33146",
+    "snippet": "O4S.OV"}]}, {"field": "composition[8]", "matching_mim_link_corrected":
+    true, "new_label": "potassium aluminium sulfate dodecahydrate", "new_term_id":
+    "CHEBI:86465", "old_label": "Aluminum potassium sulfate", "old_term": {"id": "CHEBI:86463",
+    "label": "potassium aluminium sulfate"}, "sources": [{"locator": "Formula field",
+    "reference": "https://www.ebi.ac.uk/chebi/CHEBI:86465", "snippet": "Al.12H2O.K.2O4S"},
+    {"locator": "Formula field", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:86463",
+    "snippet": "Al.K.2O4S"}]}], "stock_boundary": "unchanged"}'
 references:
 - reference: https://utex.org/products/minor-nutrients
+  title: Minor Nutrients | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; institution=UTEX Culture Collection of Algae; named authors,
+    publication year and DOI not stated.
 - reference: UTEX:minor-nutrients
 - reference: MediaIngredientMech:UNMAPPED_0099
+- reference: https://www.sigmaaldrich.com/RU/en/product/aldrich/574988
+  title: Ammonium nickel(II) sulfate hexahydrate
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Chemical identity evidence only; no recipe amount is inferred. Product 574988
+    heading; linear formula, CAS and InChIKey fields separately inspected. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:86149
+  title: ammonium nickel sulfate hexahydrate (CHEBI:86149)
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Chemical identity evidence only; no recipe amount is inferred. Formula field;
+    CAS and InChIKey fields separately inspected. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:87009
+  title: vanadyl sulfate dihydrate (CHEBI:87009)
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Chemical identity evidence only; no recipe amount is inferred. Formula field. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:33146
+  title: vanadyl sulfate (CHEBI:33146)
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Chemical identity evidence only; no recipe amount is inferred. Formula field. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:86465
+  title: potassium aluminium sulfate dodecahydrate (CHEBI:86465)
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Chemical identity evidence only; no recipe amount is inferred. Formula field. '
+- reference: https://www.ebi.ac.uk/chebi/CHEBI:86463
+  title: potassium aluminium sulfate (CHEBI:86463)
+  notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
+    Chemical identity evidence only; no recipe amount is inferred. Formula field. '
 category: bacterial
+evidence:
+- reference: https://utex.org/products/minor-nutrients
+  supports: SUPPORT
+  snippet: approximately 950 mL
+  explanation: 'Supports notes: exact preparation volume/stage and storage wording;
+    source concentration annotations are not independently promoted. Separate source
+    excerpts (Directions/table headings/footnote): ''approximately 950 mL''; ''Store
+    at refrigerator temperature.''; ''For 1 L Total''; ''Final concentration listed
+    is for the stock solution.'''

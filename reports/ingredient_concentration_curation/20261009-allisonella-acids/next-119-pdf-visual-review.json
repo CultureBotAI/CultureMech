@@ -1,0 +1,127 @@
+{
+  "terminal": true,
+  "scope": "Manual visual inspection of all nine original PDF pages; not completed record curation or proof of every recipe claim.",
+  "rendering": "pypdf split original binary into single pages; sips JPEG rendering; images inspected with view_image.",
+  "page_images": [
+    {
+      "source": "DSMZ119b",
+      "page": 1,
+      "pdf_sha256": "d29e276094a2375eb962757fe2760a21ea33a648db9d13b30b3c2b16d710345d",
+      "image": "/tmp/ingredient-media-20261007/next119-pages/DSMZ119b-1.jpg",
+      "image_sha256": "180d78544739b706e7bc16623eb1ff1426ab2a7b7278710d3992a7c5312343db"
+    },
+    {
+      "source": "DSMZ119b",
+      "page": 2,
+      "pdf_sha256": "d29e276094a2375eb962757fe2760a21ea33a648db9d13b30b3c2b16d710345d",
+      "image": "/tmp/ingredient-media-20261007/next119-pages/DSMZ119b-2.jpg",
+      "image_sha256": "707ecc97d6d0c68fdd1598fb73fafeee16dbcde3ea6cacb6bd030a5ed25305bf"
+    },
+    {
+      "source": "DSMZ119",
+      "page": 1,
+      "pdf_sha256": "65295918764de4ed5b73ce773ab4057a7183ecf8bfd7fff0d02393d901b41a2a",
+      "image": "/tmp/ingredient-media-20261007/next119-pages/DSMZ119-1.jpg",
+      "image_sha256": "bd4d7dcd18bdd1a7932a4b96aae3d92bd1ef6c60cc9fdd00a66e820f51f1d3d8"
+    },
+    {
+      "source": "DSMZ119",
+      "page": 2,
+      "pdf_sha256": "65295918764de4ed5b73ce773ab4057a7183ecf8bfd7fff0d02393d901b41a2a",
+      "image": "/tmp/ingredient-media-20261007/next119-pages/DSMZ119-2.jpg",
+      "image_sha256": "807eea3b3ddc65b1ff7aa46f7d4da2b78079bc8526a51cb46a97069865c6488a"
+    },
+    {
+      "source": "DSMZ119",
+      "page": 3,
+      "pdf_sha256": "65295918764de4ed5b73ce773ab4057a7183ecf8bfd7fff0d02393d901b41a2a",
+      "image": "/tmp/ingredient-media-20261007/next119-pages/DSMZ119-3.jpg",
+      "image_sha256": "8d9d84a50ef76b0e5d3943c680e136175bfdd876fa972c5a59da8efbc35f3a43"
+    },
+    {
+      "source": "DSMZ119c",
+      "page": 1,
+      "pdf_sha256": "1242cb11d7a94b3255f54fef5f19897a7550b8ae708638bdcef59a8b7f8c6d3b",
+      "image": "/tmp/ingredient-media-20261007/next119-pages/DSMZ119c-1.jpg",
+      "image_sha256": "4a46c7291771f30b69e8e900919b860c750cd624c8ef27e6ecba7fd34b9c263c"
+    },
+    {
+      "source": "DSMZ119c",
+      "page": 2,
+      "pdf_sha256": "1242cb11d7a94b3255f54fef5f19897a7550b8ae708638bdcef59a8b7f8c6d3b",
+      "image": "/tmp/ingredient-media-20261007/next119-pages/DSMZ119c-2.jpg",
+      "image_sha256": "ce8327b4c8ec07ae80741f8b7b7cb8c882fd6b49d81eb160e7f0dad68f32ea2f"
+    },
+    {
+      "source": "DSMZ119a",
+      "page": 1,
+      "pdf_sha256": "0bb0c238a57443296206937fbb30f79af88f1602c90b24e65e5275a6d9a20722",
+      "image": "/tmp/ingredient-media-20261007/next119-pages/DSMZ119a-1.jpg",
+      "image_sha256": "3a744f6fec4a48b7934aaaca984155e700e171c264e6eb93a1909c1aee946daf"
+    },
+    {
+      "source": "DSMZ119a",
+      "page": 2,
+      "pdf_sha256": "0bb0c238a57443296206937fbb30f79af88f1602c90b24e65e5275a6d9a20722",
+      "image": "/tmp/ingredient-media-20261007/next119-pages/DSMZ119a-2.jpg",
+      "image_sha256": "672647580268f133dcf4e62087b17b443b53262147e131bb03eb76ef00bed36a"
+    }
+  ],
+  "findings": [
+    {
+      "source": "DSMZ119",
+      "pages": [
+        1
+      ],
+      "observation": "The first page explicitly displays Final volume: 1003 ml. This supplies a source denominator for this base formulation only."
+    },
+    {
+      "source": "DSMZ119",
+      "pages": [
+        1,
+        2
+      ],
+      "observation": "Strain instructions distinguish DSM 16643 (vitamin/DTT/coenzyme M supplementation and omission of sulfide/cysteine) from DSM 16632 (replace sludge with rumen fluid plus Trypticase and Wolin vitamins). Do not conflate the two into a single current DSMZ variant."
+    },
+    {
+      "source": "DSMZ119",
+      "pages": [
+        2
+      ],
+      "observation": "DSM 6216: Na-acetate increased to 3.00 g/l. DSM 15163: 0.3 g DL-dithiothreitol, omit sodium sulfide, final pH 6.0. These differ from captured KOMODO rows."
+    },
+    {
+      "source": "DSMZ119",
+      "pages": [
+        2,
+        3
+      ],
+      "observation": "Fatty-acid inputs are ml, including DL-2-methylbutyric acid 27.00 ml; titrate stock with concentrated NaOH. SL-10 explicitly makes up to 1000.00 ml. Ferrous sulfate stock is 1.00 g in 1000.00 ml 0.1 N sulfuric acid and should be freshly prepared."
+    },
+    {
+      "source": "DSMZ119a",
+      "pages": [
+        1,
+        2
+      ],
+      "observation": "200.00 ml clarified rumen fluid, 780.00 ml water, 4.00 g bicarbonate, distinct rumen preparation; no displayed final-volume statement. SL-10 make-up and liquid fatty-acid units visible."
+    },
+    {
+      "source": "DSMZ119b",
+      "pages": [
+        1,
+        2
+      ],
+      "observation": "Includes 1.00 ml selenite-tungstate solution, 10.00 ml methanol (15% v/v), 1.00 g bicarbonate, 940.00 ml input water and final pH check 7.6. SL-10 table spans both pages; all rows are visible."
+    },
+    {
+      "source": "DSMZ119c",
+      "pages": [
+        1,
+        2
+      ],
+      "observation": "0.50 g bicarbonate, 930.00 ml input water, 100% N2 preparation, and pH 6.8-7.0. No displayed measured final-volume statement. Stock tables retain their separate scopes."
+    }
+  ],
+  "records_edited": false
+}

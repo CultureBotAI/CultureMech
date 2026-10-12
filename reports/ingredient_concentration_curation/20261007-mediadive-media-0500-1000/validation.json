@@ -1,0 +1,262 @@
+{
+  "runtime": "isolated Python 3.11, not maintained Python 3.13 or CI",
+  "completed_checks": {
+    "focused_tests_passed": 406,
+    "post_report_tests_passed": 3,
+    "strict_validated_records": 15910,
+    "readback_record_hashes": 500,
+    "readback_new_literal_snippets": 653,
+    "noop_changed_records": 0,
+    "prior_medium_literal_snippets": 907,
+    "prior_medium_scope_caveat": "DSMZ 12 extraction input has an unresolved over-scoped interpretation despite exact hash/snippet read-back.",
+    "retention": {
+      "checked_records": 117,
+      "unique_groups": 117,
+      "accepted_claims": 653,
+      "retained_claims": 140,
+      "records_with_evidence_loss": 92,
+      "records_with_missing_reference": 87
+    },
+    "merge_name_conflicts": 1247,
+    "merge_fingerprint_issues": 3287,
+    "freshness": {
+      "tracked_total": 6320,
+      "fresh_total": 6491,
+      "only_in_tracked": 3718,
+      "only_in_fresh": 3889,
+      "changed": 1513,
+      "unchanged": 1089
+    },
+    "cumulative_edited_records": 4421,
+    "cumulative_new_evidence_entries": 25675,
+    "unique_followup_records": 5779,
+    "outside_followup_reports": 10131,
+    "changed_python_ruff_and_black": "passed for reviewer, reviewer tests, and parameterized retention helper",
+    "local_report_links_checked": 57,
+    "product_validation_unavailable": "oaklib adapters missing",
+    "reference_validation_unavailable": "linkml-reference-validator executable missing",
+    "overall_goal_complete": false
+  },
+  "baseline": {
+    "strict_exit": 0,
+    "strict_files": 15910,
+    "representative_open_schema_exit": 0
+  },
+  "source_fetch": {
+    "selected": 500,
+    "fetched": 500,
+    "cached": 0,
+    "failed": 0,
+    "processed": 500,
+    "complete": true,
+    "failures": []
+  },
+  "independent_preflight": {
+    "records": 500,
+    "changed": 117,
+    "evidence_entries": 653,
+    "only_provenance_appended": true
+  },
+  "prior_full_suite": "DSMZ 13 attempt unavailable: pytest-cov missing; no-coverage retry had four missing dependency modules. Not rerun here.",
+  "post": [
+    {
+      "name": "tests",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "tests/test_dsmz13_stock_only.py",
+        "tests/test_fingerprint.py",
+        "tests/test_merge_filenames.py",
+        "tests/test_merged_duplicates.py",
+        "tests/test_reviewed_medium_stock_boundaries.py",
+        "tests/test_dsmz2_stock_boundary.py",
+        "tests/test_medium_concentration_review.py",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_solution_concentration_review.py",
+        "tests/test_solution_concentration_batch.py",
+        "tests/test_mediadive_stock_concentration_evidence.py",
+        "tests/test_jcm_concentration_evidence.py",
+        "tests/test_jcm_m1308_stock_evidence.py",
+        "tests/test_dsmz1399_stock_boundary.py",
+        "tests/test_concentration_review_reports.py",
+        "tests/test_concentration_plausibility.py",
+        "tests/test_record_io.py",
+        "tests/test_merger.py",
+        "tests/test_merge_yaml_freshness.py",
+        "-q"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/media-1000-tests.log"
+    },
+    {
+      "name": "schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/exiguobacterium_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/media-1000-schema.log"
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/media-1000-strict.log"
+    },
+    {
+      "name": "ids",
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/media-1000-ids.log"
+    },
+    {
+      "name": "products",
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/media-1000-products.log"
+    },
+    {
+      "name": "references",
+      "command": [
+        "just",
+        "validate-references",
+        "data/normalized_yaml/bacterial/exiguobacterium_medium.yaml"
+      ],
+      "exit_code": 2,
+      "log": "/tmp/ingredient-media-20261007/media-1000-references.log"
+    },
+    {
+      "name": "readback",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/review_medium_concentration_evidence.py",
+        "--cache",
+        "/tmp/ingredient-media-20261007/sources",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/media-1000-readback.log"
+    },
+    {
+      "name": "noop",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/review_medium_concentration_evidence.py",
+        "--cache",
+        "/tmp/ingredient-media-20261007/sources",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json",
+        "--apply"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/media-1000-noop.log"
+    },
+    {
+      "name": "prior-medium-readback",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "scripts/review_medium_concentration_evidence.py",
+        "--cache",
+        "/tmp/ingredient-media-20261007/sources",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/plan.json",
+        "--verify",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/media-1000-prior-medium-readback.log"
+    },
+    {
+      "name": "semantic-diff",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/media-1000-semantic-diff.log",
+      "artifact": "reports/ingredient_concentration_curation/20261007-diff-audit-after-media-1000.json"
+    },
+    {
+      "name": "coverage",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "reports/ingredient_concentration_curation/summarize_followup_coverage.py",
+        "--out",
+        "reports/ingredient_concentration_curation/20261007-followup-coverage-after-media-1000.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/media-1000-coverage.log"
+    },
+    {
+      "name": "retention",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/check_merge_retention.py",
+        "--plan",
+        "reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json",
+        "--out",
+        "reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/merge-retention.json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/media-1000-retention.log"
+    },
+    {
+      "name": "verify-merges",
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/media-1000-verify-merges.log"
+    },
+    {
+      "name": "freshness",
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/media-1000-freshness.log",
+      "artifact": "reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/merge-freshness.json"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/media-1000-diff-check.log"
+    }
+  ]
+}

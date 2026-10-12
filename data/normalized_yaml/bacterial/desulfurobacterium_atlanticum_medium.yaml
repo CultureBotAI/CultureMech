@@ -11,105 +11,532 @@ media_term:
   term:
     id: mediadive.medium:829a
     label: DESULFUROBACTERIUM ATLANTICUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf'
+notes: |-
+  Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf
+
+  The inspected original 829a has no final-volume heading. Its 1020.5 ml listed liquid-input sum and the API's 1020 ml volume do not establish a measured denominator. The stock's 250 ml bottle is equipment, not final volume.
+
+  Full exact-source recipe and stock/preparation tables were inspected. Reconstructed nodes retain explicit source scope; complete prior ingredient/stock assertions, including copied LB mappings and stage conflations, are archived in append-only history. A title alone is not the basis for removal. Unchanged annotations are preserved, not recertified; no new organism-growth association is added.
 ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: sodium chloride
-  concentration:
-    value: '29.4118'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
+  notes: 'Source batch input: 30 g. No explicit final-volume/makeup statement was
+    found for this stage in the inspected original. Retain the mass in notes; API
+    volume/g_l and water input are not an independently verified denominator.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/829a
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 1,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 30,
+                              "unit": "g",
+                              "g_l": 29.4118,
+                              "mmol_l": 503.281,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[0].preferred_term: Source batch input: 30 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[0]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 1,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 30,
+                              "unit": "g",
+                              "g_l": 29.4118,
+                              "mmol_l": 503.281,
+                              "optional": 0
+                          }
+      ingredients[0].concentration: Source batch input: 30 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[0]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 1,
+                              "compound": "NaCl",
+                              "compound_id": 43,
+                              "amount": 30,
+                              "unit": "g",
+                              "g_l": 29.4118,
+                              "mmol_l": 503.281,
+                              "optional": 0
+                          }
+      ingredients[0].notes: Source batch input: 30 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[0]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf
+    supports: SUPPORT
+    snippet: NaCl                                                              30.00          g
+    explanation: 'ingredients[0].notes: Source batch input: 30 g. No explicit final-volume/makeup
+      statement was found for this stage in the inspected original. Retain the mass
+      in notes; API volume/g_l and water input are not an independently verified denominator.
+      No unstated density, final volume, percent basis or chemical identifier is inferred.
+      Locator=original recipe table/text; accessed=2026-10-09T03:35:42.753262+00:00;
+      capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  concentration:
-    value: '2.94118'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  notes: 'Source batch input: 3 g. No explicit final-volume/makeup statement was found
+    for this stage in the inspected original. Retain the mass in notes; API volume/g_l
+    and water input are not an independently verified denominator.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/829a
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 2,
+                              "compound": "MgCl2 x 6 H2O",
+                              "compound_id": 79,
+                              "amount": 3,
+                              "unit": "g",
+                              "g_l": 2.94118,
+                              "mmol_l": 14.467,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[1].preferred_term: Source batch input: 3 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[1]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 2,
+                              "compound": "MgCl2 x 6 H2O",
+                              "compound_id": 79,
+                              "amount": 3,
+                              "unit": "g",
+                              "g_l": 2.94118,
+                              "mmol_l": 14.467,
+                              "optional": 0
+                          }
+      ingredients[1].concentration: Source batch input: 3 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[1]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 2,
+                              "compound": "MgCl2 x 6 H2O",
+                              "compound_id": 79,
+                              "amount": 3,
+                              "unit": "g",
+                              "g_l": 2.94118,
+                              "mmol_l": 14.467,
+                              "optional": 0
+                          }
+      ingredients[1].notes: Source batch input: 3 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[1]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf
+    supports: SUPPORT
+    snippet: MgCl2 x 6 H2O                                                       3.00         g
+    explanation: 'ingredients[1].notes: Source batch input: 3 g. No explicit final-volume/makeup
+      statement was found for this stage in the inspected original. Retain the mass
+      in notes; API volume/g_l and water input are not an independently verified denominator.
+      No unstated density, final volume, percent basis or chemical identifier is inferred.
+      Locator=original recipe table/text; accessed=2026-10-09T03:35:42.753262+00:00;
+      capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  concentration:
-    value: '0.147059'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  notes: 'Source batch input: 0.15 g. No explicit final-volume/makeup statement was
+    found for this stage in the inspected original. Retain the mass in notes; API
+    volume/g_l and water input are not an independently verified denominator.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/829a
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "CaCl2 x 2 H2O",
+                              "compound_id": 7,
+                              "amount": 0.15,
+                              "unit": "g",
+                              "g_l": 0.147059,
+                              "mmol_l": 1.0003,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[2].preferred_term: Source batch input: 0.15 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[2]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 3,
+                              "compound": "CaCl2 x 2 H2O",
+                              "compound_id": 7,
+                              "amount": 0.15,
+                              "unit": "g",
+                              "g_l": 0.147059,
+                              "mmol_l": 1.0003,
+                              "optional": 0
+                          }
+      ingredients[2].concentration: Source batch input: 0.15 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[2]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 3,
+                              "compound": "CaCl2 x 2 H2O",
+                              "compound_id": 7,
+                              "amount": 0.15,
+                              "unit": "g",
+                              "g_l": 0.147059,
+                              "mmol_l": 1.0003,
+                              "optional": 0
+                          }
+      ingredients[2].notes: Source batch input: 0.15 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[2]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf
+    supports: SUPPORT
+    snippet: CaCl2 x 2 H2O                                                       0.15         g
+    explanation: 'ingredients[2].notes: Source batch input: 0.15 g. No explicit final-volume/makeup
+      statement was found for this stage in the inspected original. Retain the mass
+      in notes; API volume/g_l and water input are not an independently verified denominator.
+      No unstated density, final volume, percent basis or chemical identifier is inferred.
+      Locator=original recipe table/text; accessed=2026-10-09T03:35:42.753262+00:00;
+      capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
     label: potassium chloride
-  concentration:
-    value: '0.490196'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
     label: potassium chloride
+  notes: 'Source batch input: 0.5 g. No explicit final-volume/makeup statement was
+    found for this stage in the inspected original. Retain the mass in notes; API
+    volume/g_l and water input are not an independently verified denominator.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/829a
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 4,
+                              "compound": "KCl",
+                              "compound_id": 61,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.490196,
+                              "mmol_l": 6.5754,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[3].preferred_term: Source batch input: 0.5 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[3]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 4,
+                              "compound": "KCl",
+                              "compound_id": 61,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.490196,
+                              "mmol_l": 6.5754,
+                              "optional": 0
+                          }
+      ingredients[3].concentration: Source batch input: 0.5 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[3]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 4,
+                              "compound": "KCl",
+                              "compound_id": 61,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.490196,
+                              "mmol_l": 6.5754,
+                              "optional": 0
+                          }
+      ingredients[3].notes: Source batch input: 0.5 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[3]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf
+    supports: SUPPORT
+    snippet: KCl                                                                 0.50         g
+    explanation: 'ingredients[3].notes: Source batch input: 0.5 g. No explicit final-volume/makeup
+      statement was found for this stage in the inspected original. Retain the mass
+      in notes; API volume/g_l and water input are not an independently verified denominator.
+      No unstated density, final volume, percent basis or chemical identifier is inferred.
+      Locator=original recipe table/text; accessed=2026-10-09T03:35:42.753262+00:00;
+      capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  concentration:
-    value: '0.490196'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
+  notes: 'Source batch input: 0.5 g. No explicit final-volume/makeup statement was
+    found for this stage in the inspected original. Retain the mass in notes; API
+    volume/g_l and water input are not an independently verified denominator.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/829a
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 5,
+                              "compound": "NH4Cl",
+                              "compound_id": 42,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.490196,
+                              "mmol_l": 9.16426,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[4].preferred_term: Source batch input: 0.5 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[4]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 5,
+                              "compound": "NH4Cl",
+                              "compound_id": 42,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.490196,
+                              "mmol_l": 9.16426,
+                              "optional": 0
+                          }
+      ingredients[4].concentration: Source batch input: 0.5 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[4]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 5,
+                              "compound": "NH4Cl",
+                              "compound_id": 42,
+                              "amount": 0.5,
+                              "unit": "g",
+                              "g_l": 0.490196,
+                              "mmol_l": 9.16426,
+                              "optional": 0
+                          }
+      ingredients[4].notes: Source batch input: 0.5 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[4]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf
+    supports: SUPPORT
+    snippet: NH4Cl                                                               0.50         g
+    explanation: 'ingredients[4].notes: Source batch input: 0.5 g. No explicit final-volume/makeup
+      statement was found for this stage in the inspected original. Retain the mass
+      in notes; API volume/g_l and water input are not an independently verified denominator.
+      No unstated density, final volume, percent basis or chemical identifier is inferred.
+      Locator=original recipe table/text; accessed=2026-10-09T03:35:42.753262+00:00;
+      capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.'
 - preferred_term: MES [2-(N-morpholino) ethane sulfonic acid]
-  concentration:
-    value: '1.91176'
-    unit: G_PER_L
   term:
     id: CHEBI:39005
     label: 2-(N-morpholino)ethanesulfonic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:39005
     label: 2-(N-morpholino)ethanesulfonic acid
+  notes: 'Source batch input: 1.95 g. No explicit final-volume/makeup statement was
+    found for this stage in the inspected original. Retain the mass in notes; API
+    volume/g_l and water input are not an independently verified denominator.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/829a
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 6,
+                              "compound": "MES [2-(N-morpholino) ethane sulfonic acid]",
+                              "compound_id": 766,
+                              "amount": 1.95,
+                              "unit": "g",
+                              "g_l": 1.91176,
+                              "mmol_l": 9.79187,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[5].preferred_term: Source batch input: 1.95 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[5]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 6,
+                              "compound": "MES [2-(N-morpholino) ethane sulfonic acid]",
+                              "compound_id": 766,
+                              "amount": 1.95,
+                              "unit": "g",
+                              "g_l": 1.91176,
+                              "mmol_l": 9.79187,
+                              "optional": 0
+                          }
+      ingredients[5].concentration: Source batch input: 1.95 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[5]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 6,
+                              "compound": "MES [2-(N-morpholino) ethane sulfonic acid]",
+                              "compound_id": 766,
+                              "amount": 1.95,
+                              "unit": "g",
+                              "g_l": 1.91176,
+                              "mmol_l": 9.79187,
+                              "optional": 0
+                          }
+      ingredients[5].notes: Source batch input: 1.95 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[5]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf
+    supports: SUPPORT
+    snippet: MES [2-(N-morpholino) ethane sulfonic acid]                         1.95         g
+    explanation: 'ingredients[5].notes: Source batch input: 1.95 g. No explicit final-volume/makeup
+      statement was found for this stage in the inspected original. Retain the mass
+      in notes; API volume/g_l and water input are not an independently verified denominator.
+      No unstated density, final volume, percent basis or chemical identifier is inferred.
+      Locator=original recipe table/text; accessed=2026-10-09T03:35:42.753262+00:00;
+      capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-  concentration:
-    value: '0.196078'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-- preferred_term: Sodium resazurin
-  concentration:
-    value: '0.000490196'
-    unit: G_PER_L
-  term:
-    id: CHEBI:8806
-    label: Resazurin
+  notes: 'Source batch input: 0.2 g. No explicit final-volume/makeup statement was
+    found for this stage in the inspected original. Retain the mass in notes; API
+    volume/g_l and water input are not an independently verified denominator.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/829a
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 7,
+                              "compound": "KH2PO4",
+                              "compound_id": 11,
+                              "amount": 0.2,
+                              "unit": "g",
+                              "g_l": 0.196078,
+                              "mmol_l": 1.44085,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[6].preferred_term: Source batch input: 0.2 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[6]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 7,
+                              "compound": "KH2PO4",
+                              "compound_id": 11,
+                              "amount": 0.2,
+                              "unit": "g",
+                              "g_l": 0.196078,
+                              "mmol_l": 1.44085,
+                              "optional": 0
+                          }
+      ingredients[6].concentration: Source batch input: 0.2 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[6]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 7,
+                              "compound": "KH2PO4",
+                              "compound_id": 11,
+                              "amount": 0.2,
+                              "unit": "g",
+                              "g_l": 0.196078,
+                              "mmol_l": 1.44085,
+                              "optional": 0
+                          }
+      ingredients[6].notes: Source batch input: 0.2 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[6]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf
+    supports: SUPPORT
+    snippet: KH2PO4                                                              0.20         g
+    explanation: 'ingredients[6].notes: Source batch input: 0.2 g. No explicit final-volume/makeup
+      statement was found for this stage in the inspected original. Retain the mass
+      in notes; API volume/g_l and water input are not an independently verified denominator.
+      No unstated density, final volume, percent basis or chemical identifier is inferred.
+      Locator=original recipe table/text; accessed=2026-10-09T03:35:42.753262+00:00;
+      capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.'
 - preferred_term: Na2S2O3 x 5 H2O
   term:
     id: CHEBI:32150
     label: sodium thiosulfate pentahydrate
-  concentration:
-    value: '2.45098'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32150
     label: sodium thiosulfate pentahydrate
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
+  notes: 'Source batch input: 2.5 g. No explicit final-volume/makeup statement was
+    found for this stage in the inspected original. Retain the mass in notes; API
+    volume/g_l and water input are not an independently verified denominator.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/829a
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 9,
+                              "compound": "Na2S2O3 x 5 H2O",
+                              "compound_id": 65,
+                              "amount": 2.5,
+                              "unit": "g",
+                              "g_l": 2.45098,
+                              "mmol_l": 9.87558,
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[7].preferred_term: Source batch input: 2.5 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 9,
+                              "compound": "Na2S2O3 x 5 H2O",
+                              "compound_id": 65,
+                              "amount": 2.5,
+                              "unit": "g",
+                              "g_l": 2.45098,
+                              "mmol_l": 9.87558,
+                              "optional": 0
+                          }
+      ingredients[7].concentration: Source batch input: 2.5 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 9,
+                              "compound": "Na2S2O3 x 5 H2O",
+                              "compound_id": 65,
+                              "amount": 2.5,
+                              "unit": "g",
+                              "g_l": 2.45098,
+                              "mmol_l": 9.87558,
+                              "optional": 0
+                          }
+      ingredients[7].notes: Source batch input: 2.5 g. No explicit final-volume/makeup statement was found for this stage in the inspected original. Retain the mass in notes; API volume/g_l and water input are not an independently verified denominator. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[8]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf
+    supports: SUPPORT
+    snippet: Na2S2O3 x 5 H2O                                                     2.50         g
+    explanation: 'ingredients[7].notes: Source batch input: 2.5 g. No explicit final-volume/makeup
+      statement was found for this stage in the inspected original. Retain the mass
+      in notes; API volume/g_l and water input are not an independently verified denominator.
+      No unstated density, final volume, percent basis or chemical identifier is inferred.
+      Locator=original recipe table/text; accessed=2026-10-09T03:35:42.753262+00:00;
+      capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.'
+- preferred_term: Distilled water
   concentration:
-    value: '30'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
+    value: '1'
+    unit: L
+  notes: Preparation input 1000 ml / 1000 = 1 L, not mass, volume percent or measured
+    final volume.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/829a
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 11,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+    explanation: |-
+      ingredients[8].preferred_term: Preparation input 1000 ml / 1000 = 1 L, not mass, volume percent or measured final volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[10]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 11,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+      ingredients[8].concentration: Preparation input 1000 ml / 1000 = 1 L, not mass, volume percent or measured final volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[10]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+      Additional exact excerpt: {
+                              "recipe_order": 11,
+                              "compound": "Distilled water",
+                              "compound_id": 4,
+                              "amount": 1000,
+                              "unit": "ml",
+                              "optional": 0
+                          }
+      ingredients[8].notes: Preparation input 1000 ml / 1000 = 1 L, not mass, volume percent or measured final volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[10]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf
+    supports: SUPPORT
+    snippet: Distilled water                                                1000.00          ml
+    explanation: 'ingredients[8].notes: Preparation input 1000 ml / 1000 = 1 L, not
+      mass, volume percent or measured final volume. No unstated density, final volume,
+      percent basis or chemical identifier is inferred. Locator=original recipe table/text;
+      accessed=2026-10-09T03:35:42.753262+00:00; capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.'
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -124,13 +551,6 @@ preparation_steps:
   action: MIX
   description: After inoculation pressurize cultivation vessels to   2 bar overpressure
     using sterile 80% H2 and 20% CO2 gas mixture.
-- step_number: 3
-  action: AUTOCLAVE
-  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
-    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
-    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
-    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
-    a syringe without opening the bottle.
 applications:
 - Microbial cultivation
 curation_history:
@@ -165,3 +585,966 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-09T04:52:49.323535+00:00'
+  curator: codex
+  action: RESTORED_MEDIUM_829_SOURCE_FORMULATIONS_AND_STOCK_SCOPES_WITH_EVIDENCE
+  notes: Restore exact-source medium-829 formulations and stock boundaries, preserve
+    provider rates/nulls and source conflicts, repair quantity units and family scope,
+    and retain prior evidence/history. Each scientific change is linked to an inspected
+    source excerpt; no growth association inferred.
+  source: https://mediadive.dsmz.de/rest/medium/829a
+  changes: '[{"old_field": "ingredients[0].preferred_term", "field": "ingredients[0].preferred_term",
+    "old": "NaCl", "new": "NaCl", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\":
+    30,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    29.4118,\n                        \"mmol_l\": 503.281,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[0].concentration", "field":
+    "ingredients[0].concentration", "old": {"value": "29.4118", "unit": "G_PER_L"},
+    "new": null, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\":
+    30,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    29.4118,\n                        \"mmol_l\": 503.281,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[0].notes", "field": "ingredients[0].notes",
+    "old": null, "new": "Source batch input: 30 g. No explicit final-volume/makeup
+    statement was found for this stage in the inspected original. Retain the mass
+    in notes; API volume/g_l and water input are not an independently verified denominator.",
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\":
+    30,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    29.4118,\n                        \"mmol_l\": 503.281,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[0].notes",
+    "old": null, "new": "Source batch input: 30 g. No explicit final-volume/makeup
+    statement was found for this stage in the inspected original. Retain the mass
+    in notes; API volume/g_l and water input are not an independently verified denominator.",
+    "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf",
+    "snippet": "NaCl                                                              30.00          g"},
+    {"old_field": "ingredients[1].preferred_term", "field": "ingredients[1].preferred_term",
+    "old": "MgCl2 x 6 H2O", "new": "MgCl2 x 6 H2O", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.94118,\n                        \"mmol_l\":
+    14.467,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[1].concentration", "field": "ingredients[1].concentration", "old":
+    {"value": "2.94118", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.94118,\n                        \"mmol_l\":
+    14.467,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[1].notes", "field": "ingredients[1].notes", "old": null, "new": "Source
+    batch input: 3 g. No explicit final-volume/makeup statement was found for this
+    stage in the inspected original. Retain the mass in notes; API volume/g_l and
+    water input are not an independently verified denominator.", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.94118,\n                        \"mmol_l\":
+    14.467,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[1].notes", "old": null, "new": "Source batch input:
+    3 g. No explicit final-volume/makeup statement was found for this stage in the
+    inspected original. Retain the mass in notes; API volume/g_l and water input are
+    not an independently verified denominator.", "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf", "snippet":
+    "MgCl2 x 6 H2O                                                       3.00         g"},
+    {"old_field": "ingredients[2].preferred_term", "field": "ingredients[2].preferred_term",
+    "old": "CaCl2 x 2 H2O", "new": "CaCl2 x 2 H2O", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.147059,\n                        \"mmol_l\":
+    1.0003,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[2].concentration", "field": "ingredients[2].concentration", "old":
+    {"value": "0.147059", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.147059,\n                        \"mmol_l\":
+    1.0003,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[2].notes", "field": "ingredients[2].notes", "old": null, "new": "Source
+    batch input: 0.15 g. No explicit final-volume/makeup statement was found for this
+    stage in the inspected original. Retain the mass in notes; API volume/g_l and
+    water input are not an independently verified denominator.", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.147059,\n                        \"mmol_l\":
+    1.0003,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[2].notes", "old": null, "new": "Source batch input:
+    0.15 g. No explicit final-volume/makeup statement was found for this stage in
+    the inspected original. Retain the mass in notes; API volume/g_l and water input
+    are not an independently verified denominator.", "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf", "snippet":
+    "CaCl2 x 2 H2O                                                       0.15         g"},
+    {"old_field": "ingredients[3].preferred_term", "field": "ingredients[3].preferred_term",
+    "old": "KCl", "new": "KCl", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.490196,\n                        \"mmol_l\": 6.5754,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[3].concentration", "field":
+    "ingredients[3].concentration", "old": {"value": "0.490196", "unit": "G_PER_L"},
+    "new": null, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.490196,\n                        \"mmol_l\": 6.5754,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[3].notes", "field": "ingredients[3].notes",
+    "old": null, "new": "Source batch input: 0.5 g. No explicit final-volume/makeup
+    statement was found for this stage in the inspected original. Retain the mass
+    in notes; API volume/g_l and water input are not an independently verified denominator.",
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.490196,\n                        \"mmol_l\": 6.5754,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[3].notes",
+    "old": null, "new": "Source batch input: 0.5 g. No explicit final-volume/makeup
+    statement was found for this stage in the inspected original. Retain the mass
+    in notes; API volume/g_l and water input are not an independently verified denominator.",
+    "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf",
+    "snippet": "KCl                                                                 0.50         g"},
+    {"old_field": "ingredients[4].preferred_term", "field": "ingredients[4].preferred_term",
+    "old": "NH4Cl", "new": "NH4Cl", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.490196,\n                        \"mmol_l\": 9.16426,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[4].concentration", "field":
+    "ingredients[4].concentration", "old": {"value": "0.490196", "unit": "G_PER_L"},
+    "new": null, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.490196,\n                        \"mmol_l\": 9.16426,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[4].notes", "field": "ingredients[4].notes",
+    "old": null, "new": "Source batch input: 0.5 g. No explicit final-volume/makeup
+    statement was found for this stage in the inspected original. Retain the mass
+    in notes; API volume/g_l and water input are not an independently verified denominator.",
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.490196,\n                        \"mmol_l\": 9.16426,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[4].notes",
+    "old": null, "new": "Source batch input: 0.5 g. No explicit final-volume/makeup
+    statement was found for this stage in the inspected original. Retain the mass
+    in notes; API volume/g_l and water input are not an independently verified denominator.",
+    "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf",
+    "snippet": "NH4Cl                                                               0.50         g"},
+    {"old_field": "ingredients[5].preferred_term", "field": "ingredients[5].preferred_term",
+    "old": "MES [2-(N-morpholino) ethane sulfonic acid]", "new": "MES [2-(N-morpholino)
+    ethane sulfonic acid]", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"MES [2-(N-morpholino) ethane sulfonic acid]\",\n                        \"compound_id\":
+    766,\n                        \"amount\": 1.95,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.91176,\n                        \"mmol_l\":
+    9.79187,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[5].concentration", "field": "ingredients[5].concentration", "old":
+    {"value": "1.91176", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"MES [2-(N-morpholino) ethane sulfonic
+    acid]\",\n                        \"compound_id\": 766,\n                        \"amount\":
+    1.95,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1.91176,\n                        \"mmol_l\": 9.79187,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[5].notes", "field": "ingredients[5].notes",
+    "old": null, "new": "Source batch input: 1.95 g. No explicit final-volume/makeup
+    statement was found for this stage in the inspected original. Retain the mass
+    in notes; API volume/g_l and water input are not an independently verified denominator.",
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"MES [2-(N-morpholino) ethane sulfonic acid]\",\n                        \"compound_id\":
+    766,\n                        \"amount\": 1.95,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.91176,\n                        \"mmol_l\":
+    9.79187,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[5].notes", "old": null, "new": "Source batch input:
+    1.95 g. No explicit final-volume/makeup statement was found for this stage in
+    the inspected original. Retain the mass in notes; API volume/g_l and water input
+    are not an independently verified denominator.", "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf", "snippet":
+    "MES [2-(N-morpholino) ethane sulfonic acid]                         1.95         g"},
+    {"old_field": "ingredients[6].preferred_term", "field": "ingredients[6].preferred_term",
+    "old": "KH2PO4", "new": "KH2PO4", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\":
+    0.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.196078,\n                        \"mmol_l\": 1.44085,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[6].concentration", "field":
+    "ingredients[6].concentration", "old": {"value": "0.196078", "unit": "G_PER_L"},
+    "new": null, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\":
+    0.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.196078,\n                        \"mmol_l\": 1.44085,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[6].notes", "field": "ingredients[6].notes",
+    "old": null, "new": "Source batch input: 0.2 g. No explicit final-volume/makeup
+    statement was found for this stage in the inspected original. Retain the mass
+    in notes; API volume/g_l and water input are not an independently verified denominator.",
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\":
+    0.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.196078,\n                        \"mmol_l\": 1.44085,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[6].notes",
+    "old": null, "new": "Source batch input: 0.2 g. No explicit final-volume/makeup
+    statement was found for this stage in the inspected original. Retain the mass
+    in notes; API volume/g_l and water input are not an independently verified denominator.",
+    "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf",
+    "snippet": "KH2PO4                                                              0.20         g"},
+    {"old_field": null, "field": "solutions[0].preferred_term", "old": null, "new":
+    "Sodium resazurin (0.1% w/v)", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.000490196,\n                        \"mmol_l\":
+    0.00195165,\n                        \"optional\": 0\n                    }"},
+    {"old_field": null, "field": "solutions[0].concentration", "old": null, "new":
+    {"value": "0.0005", "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.000490196,\n                        \"mmol_l\":
+    0.00195165,\n                        \"optional\": 0\n                    }"},
+    {"old_field": null, "field": "solutions[0].notes", "old": null, "new": "Receiving-batch
+    addition 0.5 ml / 1000 = 0.0005 L of prepared stock, not g/L or an inferred ml/L
+    rate. Stock strength and preparation remain separate.", "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000490196,\n                        \"mmol_l\": 0.00195165,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].name",
+    "old": null, "new": "Sodium resazurin (0.1% w/v)", "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000490196,\n                        \"mmol_l\": 0.00195165,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].notes",
+    "old": null, "new": "Receiving-batch addition 0.5 ml / 1000 = 0.0005 L of prepared
+    stock, not g/L or an inferred ml/L rate. Stock strength and preparation remain
+    separate.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf",
+    "snippet": "Sodium resazurin (0.1% w/v)                                         0.50        ml"},
+    {"old_field": "ingredients[7].preferred_term", "field": "solutions[0].composition[0].preferred_term",
+    "old": "Sodium resazurin", "new": "Sodium resazurin", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000490196,\n                        \"mmol_l\": 0.00195165,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[7].concentration", "field":
+    "solutions[0].composition[0].concentration", "old": {"value": "0.000490196", "unit":
+    "G_PER_L"}, "new": {"value": "0.1", "unit": "PERCENT_W_V"}, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000490196,\n                        \"mmol_l\": 0.00195165,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[7].notes", "field": "solutions[0].composition[0].notes",
+    "old": null, "new": "Explicit 0.1% w/v indicator stock, not the concentration
+    in receiving medium. Keep its separate 0.50 ml dose. Copied annotations do not
+    establish this exact salt, hydrate or stereochemical form; archive them without
+    inventing replacement identifiers.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.000490196,\n                        \"mmol_l\":
+    0.00195165,\n                        \"optional\": 0\n                    }"},
+    {"old_field": "ingredients[7].term", "field": "solutions[0].composition[0].term",
+    "old": {"id": "CHEBI:8806", "label": "Resazurin"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000490196,\n                        \"mmol_l\": 0.00195165,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].composition[0].notes",
+    "old": null, "new": "Explicit 0.1% w/v indicator stock, not the concentration
+    in receiving medium. Keep its separate 0.50 ml dose. Copied annotations do not
+    establish this exact salt, hydrate or stereochemical form; archive them without
+    inventing replacement identifiers.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf",
+    "snippet": "Sodium resazurin (0.1% w/v)                                         0.50        ml"},
+    {"old_field": "ingredients[8].preferred_term", "field": "ingredients[7].preferred_term",
+    "old": "Na2S2O3 x 5 H2O", "new": "Na2S2O3 x 5 H2O", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2S2O3 x 5 H2O\",\n                        \"compound_id\":
+    65,\n                        \"amount\": 2.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.45098,\n                        \"mmol_l\":
+    9.87558,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[8].concentration", "field": "ingredients[7].concentration", "old":
+    {"value": "2.45098", "unit": "G_PER_L"}, "new": null, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2S2O3 x 5 H2O\",\n                        \"compound_id\":
+    65,\n                        \"amount\": 2.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.45098,\n                        \"mmol_l\":
+    9.87558,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[8].notes", "field": "ingredients[7].notes", "old": null, "new": "Source
+    batch input: 2.5 g. No explicit final-volume/makeup statement was found for this
+    stage in the inspected original. Retain the mass in notes; API volume/g_l and
+    water input are not an independently verified denominator.", "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2S2O3 x 5 H2O\",\n                        \"compound_id\":
+    65,\n                        \"amount\": 2.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.45098,\n                        \"mmol_l\":
+    9.87558,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[7].notes", "old": null, "new": "Source batch input:
+    2.5 g. No explicit final-volume/makeup statement was found for this stage in the
+    inspected original. Retain the mass in notes; API volume/g_l and water input are
+    not an independently verified denominator.", "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf", "snippet":
+    "Na2S2O3 x 5 H2O                                                     2.50         g"},
+    {"old_field": null, "field": "solutions[1].preferred_term", "old": null, "new":
+    "Neutralized sulfide solution 3% (w/v)", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"solution\":
+    \"Neutralized sulfide solution 3% (w/v)\",\n                        \"solution_id\":
+    34,\n                        \"amount\": 20,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].concentration", "old": null, "new": {"value": "0.02",
+    "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"solution\":
+    \"Neutralized sulfide solution 3% (w/v)\",\n                        \"solution_id\":
+    34,\n                        \"amount\": 20,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].notes", "old": null, "new": "Receiving-batch addition
+    20 ml / 1000 = 0.02 L of prepared stock, not g/L or an inferred ml/L rate. Stock
+    strength and preparation remain separate.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"solution\":
+    \"Neutralized sulfide solution 3% (w/v)\",\n                        \"solution_id\":
+    34,\n                        \"amount\": 20,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].name", "old": null, "new": "Neutralized sulfide solution
+    3% (w/v)", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 10,\n                        \"solution\":
+    \"Neutralized sulfide solution 3% (w/v)\",\n                        \"solution_id\":
+    34,\n                        \"amount\": 20,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].notes", "old": null, "new": "Receiving-batch addition
+    20 ml / 1000 = 0.02 L of prepared stock, not g/L or an inferred ml/L rate. Stock
+    strength and preparation remain separate.", "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf", "snippet":
+    "Neutralized sulfide solution 3% (w/v)                             20.00         ml"},
+    {"old_field": "ingredients[9].preferred_term", "field": "solutions[1].composition[0].preferred_term",
+    "old": "Na2S x 9 H2O", "new": "Na2S x 9 H2O", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[9].concentration", "field": "solutions[1].composition[0].concentration",
+    "old": {"value": "30", "unit": "G_PER_L"}, "new": {"value": "3", "unit": "PERCENT_W_V"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\":
+    3,\n                        \"unit\": \"g\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[9].notes", "field": "solutions[1].composition[0].notes",
+    "old": null, "new": "Source stock heading explicitly states 3% w/v. Preserve its
+    3 g batch input, carrier/water recipe and receiving dose separately; the strength
+    is not inferred from water volume.", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\":
+    3,\n                        \"unit\": \"g\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[1].composition[0].notes",
+    "old": null, "new": "Source stock heading explicitly states 3% w/v. Preserve its
+    3 g batch input, carrier/water recipe and receiving dose separately; the strength
+    is not inferred from water volume.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf",
+    "snippet": "Na2S x 9 H2O                                                        3.00         g"},
+    {"old_field": null, "field": "solutions[1].composition[0].concentration", "old":
+    null, "new": {"value": "3", "unit": "PERCENT_W_V"}, "status": "evidence_only",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf",
+    "snippet": "Neutralized sulfide solution 3% (w/v)"}, {"old_field": null, "field":
+    "solutions[1].composition[1].preferred_term", "old": null, "new": "Distilled water",
+    "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/829a", "snippet":
+    "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    100,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[1].composition[1].concentration",
+    "old": null, "new": {"value": "0.1", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 100,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].composition[1].notes", "old": null, "new": "Preparation
+    input 100 ml / 1000 = 0.1 L, not mass, volume percent or measured final volume.",
+    "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/829a", "snippet":
+    "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    100,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[1].composition[1].notes",
+    "old": null, "new": "Preparation input 100 ml / 1000 = 0.1 L, not mass, volume
+    percent or measured final volume.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf",
+    "snippet": "Distilled water                                                  100.00         ml"},
+    {"old_field": null, "field": "solutions[1].preparation_notes", "old": null, "new":
+    "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl
+    rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas,
+    closed and autoclaved for 15 min. at 121\u00b0C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "\"The sulfide solution is prepared in a 250 ml screw-capped bottle
+    with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with
+    nitrogen gas, closed and autoclaved for 15 min. at 121\\u00b0C. After cooling
+    to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4
+    drop-wise with a syringe without opening the bottle.\""}, {"old_field": null,
+    "field": "solutions[1].composition[2].preferred_term", "old": null, "new": "H2SO4",
+    "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/829a", "snippet":
+    "\"The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl
+    rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas,
+    closed and autoclaved for 15 min. at 121\\u00b0C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle.\""}, {"old_field": null, "field": "solutions[1].composition[2].concentration",
+    "old": null, "new": null, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "\"The sulfide solution is prepared in a 250 ml screw-capped bottle
+    with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with
+    nitrogen gas, closed and autoclaved for 15 min. at 121\\u00b0C. After cooling
+    to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4
+    drop-wise with a syringe without opening the bottle.\""}, {"old_field": null,
+    "field": "solutions[1].composition[2].notes", "old": null, "new": "Add sterile
+    2 M sulfuric-acid carrier dropwise to stock pH about 7.0. Carrier strength is
+    explicit but its addition volume is unquantified; no final stock sulfuric-acid
+    concentration is asserted.", "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "\"The sulfide solution is prepared in a 250 ml screw-capped bottle
+    with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with
+    nitrogen gas, closed and autoclaved for 15 min. at 121\\u00b0C. After cooling
+    to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4
+    drop-wise with a syringe without opening the bottle.\""}, {"old_field": null,
+    "field": "ingredients[8].preferred_term", "old": null, "new": "Distilled water",
+    "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/829a", "snippet":
+    "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "ingredients[8].concentration",
+    "old": null, "new": {"value": "1", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[8].notes", "old": null, "new": "Preparation input
+    1000 ml / 1000 = 1 L, not mass, volume percent or measured final volume.", "status":
+    "add", "reference": "https://mediadive.dsmz.de/rest/medium/829a", "snippet": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[8].notes", "old": null, "new": "Preparation input
+    1000 ml / 1000 = 1 L, not mass, volume percent or measured final volume.", "status":
+    "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf",
+    "snippet": "Distilled water                                                1000.00          ml"},
+    {"old_field": "preparation_steps", "field": "preparation_steps", "old": [{"step_number":
+    1, "action": "AUTOCLAVE", "description": "Dissolve ingredients (except thiosulfate
+    and sodium sulfide), adjust pH to 6.0, boil medium for 1 min, then cool to room
+    temperature under 80% H2 and 20% CO2 gas atmosphere. Dispense under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclave.
+    Add sodium thiosulfate from an anoxic stock solution prepared under 100% N2 gas
+    and sterilized by filtration. Reduce medium with a sterile, neutralized solution
+    of sodium sulfide prepared under 100% N2 gas . Adjust pH of complete medium to
+    6.0, if necessary."}, {"step_number": 2, "action": "MIX", "description": "After
+    inoculation pressurize cultivation vessels to   2 bar overpressure using sterile
+    80% H2 and 20% CO2 gas mixture."}, {"step_number": 3, "action": "AUTOCLAVE", "description":
+    "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl
+    rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas,
+    closed and autoclaved for 15 min. at 121\u00b0C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle."}], "new": [{"step_number": 1, "action":
+    "AUTOCLAVE", "description": "Dissolve ingredients (except thiosulfate and sodium
+    sulfide), adjust pH to 6.0, boil medium for 1 min, then cool to room temperature
+    under 80% H2 and 20% CO2 gas atmosphere. Dispense under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclave.
+    Add sodium thiosulfate from an anoxic stock solution prepared under 100% N2 gas
+    and sterilized by filtration. Reduce medium with a sterile, neutralized solution
+    of sodium sulfide prepared under 100% N2 gas . Adjust pH of complete medium to
+    6.0, if necessary."}, {"step_number": 2, "action": "MIX", "description": "After
+    inoculation pressurize cultivation vessels to   2 bar overpressure using sterile
+    80% H2 and 20% CO2 gas mixture."}], "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "\"Dissolve ingredients (except thiosulfate and sodium sulfide), adjust
+    pH to 6.0, boil medium for 1 min, then cool to room temperature under 80% H2 and
+    20% CO2 gas atmosphere. Dispense under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials to 30% of their volume and autoclave. Add sodium thiosulfate
+    from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration.
+    Reduce medium with a sterile, neutralized solution of sodium sulfide prepared
+    under 100% N2 gas . Adjust pH of complete medium to 6.0, if necessary.\""}, {"old_field":
+    "preparation_steps", "field": "preparation_steps", "old": [{"step_number": 1,
+    "action": "AUTOCLAVE", "description": "Dissolve ingredients (except thiosulfate
+    and sodium sulfide), adjust pH to 6.0, boil medium for 1 min, then cool to room
+    temperature under 80% H2 and 20% CO2 gas atmosphere. Dispense under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclave.
+    Add sodium thiosulfate from an anoxic stock solution prepared under 100% N2 gas
+    and sterilized by filtration. Reduce medium with a sterile, neutralized solution
+    of sodium sulfide prepared under 100% N2 gas . Adjust pH of complete medium to
+    6.0, if necessary."}, {"step_number": 2, "action": "MIX", "description": "After
+    inoculation pressurize cultivation vessels to   2 bar overpressure using sterile
+    80% H2 and 20% CO2 gas mixture."}, {"step_number": 3, "action": "AUTOCLAVE", "description":
+    "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl
+    rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas,
+    closed and autoclaved for 15 min. at 121\u00b0C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle."}], "new": [{"step_number": 1, "action":
+    "AUTOCLAVE", "description": "Dissolve ingredients (except thiosulfate and sodium
+    sulfide), adjust pH to 6.0, boil medium for 1 min, then cool to room temperature
+    under 80% H2 and 20% CO2 gas atmosphere. Dispense under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclave.
+    Add sodium thiosulfate from an anoxic stock solution prepared under 100% N2 gas
+    and sterilized by filtration. Reduce medium with a sterile, neutralized solution
+    of sodium sulfide prepared under 100% N2 gas . Adjust pH of complete medium to
+    6.0, if necessary."}, {"step_number": 2, "action": "MIX", "description": "After
+    inoculation pressurize cultivation vessels to   2 bar overpressure using sterile
+    80% H2 and 20% CO2 gas mixture."}], "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/829a",
+    "snippet": "\"After inoculation pressurize cultivation vessels to   2 bar overpressure
+    using sterile 80% H2 and 20% CO2 gas mixture.\""}, {"old_field": null, "field":
+    "notes", "old": null, "new": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf\n\nThe
+    inspected original 829a has no final-volume heading. Its 1020.5 ml listed liquid-input
+    sum and the API''s 1020 ml volume do not establish a measured denominator. The
+    stock''s 250 ml bottle is equipment, not final volume.\n\nFull exact-source recipe
+    and stock/preparation tables were inspected. Reconstructed nodes retain explicit
+    source scope; complete prior ingredient/stock assertions, including copied LB
+    mappings and stage conflations, are archived in append-only history. A title alone
+    is not the basis for removal. Unchanged annotations are preserved, not recertified;
+    no new organism-growth association is added.", "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf", "snippet":
+    "The sulfide solution is prepared in a 250 ml screw-capped bottle"}, {"old_field":
+    "variant_children", "field": "variant_children", "old": null, "new": [{"id": "CultureMech:006565",
+    "path": "data/normalized_yaml/bacterial/KOMODO_829a_DESULFUROBACTERIUM_ATLANTICUM_MEDIUM.yaml",
+    "name": "desulfurobacterium_atlanticum_medium", "relationship": "DERIVED_FROM",
+    "notes": "The provider explicitly links this DSMZ accession. DERIVED_FROM denotes
+    source derivation, not identical concentrations, stock scopes or biological growth
+    evidence; retain source-specific formulation differences.", "evidence": [{"reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=829a",
+    "supports": "SUPPORT", "snippet": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf",
+    "explanation": "variant_children: The provider explicitly links this DSMZ accession.
+    DERIVED_FROM denotes source derivation, not identical concentrations, stock scopes
+    or biological growth evidence; retain source-specific formulation differences.
+    No unstated density, final volume, percent basis or chemical identifier is inferred.
+    Locator=original recipe table/text; accessed=2026-10-09T03:35:39.916643+00:00;
+    capture SHA256=bdb2cdad8d7d0c89dbad5d1cf909200177a2476d13796ab6ea4322972f8e4a9b."}]}],
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=829a",
+    "snippet": "Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf"},
+    {"old_field": "ingredients", "field": "notes", "old": [{"preferred_term": "NaCl",
+    "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "concentration": {"value":
+    "29.4118", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:26710",
+    "label": "sodium chloride"}}, {"preferred_term": "MgCl2 x 6 H2O", "term": {"id":
+    "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "concentration":
+    {"value": "2.94118", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id":
+    "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}}, {"preferred_term":
+    "CaCl2 x 2 H2O", "term": {"id": "CHEBI:86158", "label": "calcium chloride dihydrate"},
+    "concentration": {"value": "0.147059", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:86158", "label": "calcium chloride dihydrate"}}, {"preferred_term":
+    "KCl", "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "concentration":
+    {"value": "0.490196", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id":
+    "CHEBI:32588", "label": "potassium chloride"}}, {"preferred_term": "NH4Cl", "term":
+    {"id": "CHEBI:31206", "label": "ammonium chloride"}, "concentration": {"value":
+    "0.490196", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:31206",
+    "label": "ammonium chloride"}}, {"preferred_term": "MES [2-(N-morpholino) ethane
+    sulfonic acid]", "concentration": {"value": "1.91176", "unit": "G_PER_L"}, "term":
+    {"id": "CHEBI:39005", "label": "2-(N-morpholino)ethanesulfonic acid"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:39005", "label": "2-(N-morpholino)ethanesulfonic acid"}}, {"preferred_term":
+    "KH2PO4", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"},
+    "concentration": {"value": "0.196078", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"}}, {"preferred_term":
+    "Sodium resazurin", "concentration": {"value": "0.000490196", "unit": "G_PER_L"},
+    "term": {"id": "CHEBI:8806", "label": "Resazurin"}}, {"preferred_term": "Na2S2O3
+    x 5 H2O", "term": {"id": "CHEBI:32150", "label": "sodium thiosulfate pentahydrate"},
+    "concentration": {"value": "2.45098", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:32150", "label": "sodium thiosulfate pentahydrate"}}, {"preferred_term":
+    "Na2S x 9 H2O", "term": {"id": "CHEBI:76209", "label": "sodium sulfide nonahydrate"},
+    "concentration": {"value": "30", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:76209", "label": "sodium sulfide nonahydrate"}}], "new": "Source:
+    DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf\n\nThe
+    inspected original 829a has no final-volume heading. Its 1020.5 ml listed liquid-input
+    sum and the API''s 1020 ml volume do not establish a measured denominator. The
+    stock''s 250 ml bottle is equipment, not final volume.\n\nFull exact-source recipe
+    and stock/preparation tables were inspected. Reconstructed nodes retain explicit
+    source scope; complete prior ingredient/stock assertions, including copied LB
+    mappings and stage conflations, are archived in append-only history. A title alone
+    is not the basis for removal. Unchanged annotations are preserved, not recertified;
+    no new organism-growth association is added.", "status": "evidence_only", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf", "snippet":
+    "829a: DESULFUROBACTERIUM ATLANTICUM MEDIUM\n\n\n   NaCl                                                              30.00          g\n   MgCl2
+    x 6 H2O                                                       3.00         g\n   CaCl2
+    x 2 H2O                                                       0.15         g\n   KCl                                                                 0.50         g\n   NH4Cl                                                               0.50         g\n   MES
+    [2-(N-morpholino) ethane sulfonic acid]                         1.95         g\n   KH2PO4                                                              0.20         g\n   Sodium
+    resazurin (0.1% w/v)                                         0.50        ml\n   Na2S2O3
+    x 5 H2O                                                     2.50         g\n   Neutralized
+    sulfide solution 3% (w/v)                             20.00         ml\n   Distilled
+    water                                                1000.00          ml"}]'
+solutions:
+- preferred_term: Sodium resazurin (0.1% w/v)
+  name: Sodium resazurin (0.1% w/v)
+  composition:
+  - preferred_term: Sodium resazurin
+    concentration:
+      value: '0.1'
+      unit: PERCENT_W_V
+    notes: Explicit 0.1% w/v indicator stock, not the concentration in receiving medium.
+      Keep its separate 0.50 ml dose. Copied annotations do not establish this exact
+      salt, hydrate or stereochemical form; archive them without inventing replacement
+      identifiers.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/829a
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 8,
+                                "compound": "Sodium resazurin",
+                                "compound_id": 1852,
+                                "attribute": "0.1% w/v",
+                                "amount": 0.5,
+                                "unit": "ml",
+                                "g_l": 0.000490196,
+                                "mmol_l": 0.00195165,
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[0].composition[0].preferred_term: Explicit 0.1% w/v indicator stock, not the concentration in receiving medium. Keep its separate 0.50 ml dose. Copied annotations do not establish this exact salt, hydrate or stereochemical form; archive them without inventing replacement identifiers. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+        Additional exact excerpt: {
+                                "recipe_order": 8,
+                                "compound": "Sodium resazurin",
+                                "compound_id": 1852,
+                                "attribute": "0.1% w/v",
+                                "amount": 0.5,
+                                "unit": "ml",
+                                "g_l": 0.000490196,
+                                "mmol_l": 0.00195165,
+                                "optional": 0
+                            }
+        solutions[0].composition[0].concentration: Explicit 0.1% w/v indicator stock, not the concentration in receiving medium. Keep its separate 0.50 ml dose. Copied annotations do not establish this exact salt, hydrate or stereochemical form; archive them without inventing replacement identifiers. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+        Additional exact excerpt: {
+                                "recipe_order": 8,
+                                "compound": "Sodium resazurin",
+                                "compound_id": 1852,
+                                "attribute": "0.1% w/v",
+                                "amount": 0.5,
+                                "unit": "ml",
+                                "g_l": 0.000490196,
+                                "mmol_l": 0.00195165,
+                                "optional": 0
+                            }
+        solutions[0].composition[0].notes: Explicit 0.1% w/v indicator stock, not the concentration in receiving medium. Keep its separate 0.50 ml dose. Copied annotations do not establish this exact salt, hydrate or stereochemical form; archive them without inventing replacement identifiers. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+        Additional exact excerpt: {
+                                "recipe_order": 8,
+                                "compound": "Sodium resazurin",
+                                "compound_id": 1852,
+                                "attribute": "0.1% w/v",
+                                "amount": 0.5,
+                                "unit": "ml",
+                                "g_l": 0.000490196,
+                                "mmol_l": 0.00195165,
+                                "optional": 0
+                            }
+        solutions[0].composition[0].term: Explicit 0.1% w/v indicator stock, not the concentration in receiving medium. Keep its separate 0.50 ml dose. Copied annotations do not establish this exact salt, hydrate or stereochemical form; archive them without inventing replacement identifiers. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf
+      supports: SUPPORT
+      snippet: Sodium resazurin (0.1% w/v)                                         0.50        ml
+      explanation: 'solutions[0].composition[0].notes: Original row gives separate
+        indicator strength and dose. No unstated density, final volume, percent basis
+        or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T03:35:42.753262+00:00;
+        capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.'
+  concentration:
+    value: '0.0005'
+    unit: L
+  notes: Receiving-batch addition 0.5 ml / 1000 = 0.0005 L of prepared stock, not
+    g/L or an inferred ml/L rate. Stock strength and preparation remain separate.
+- preferred_term: Neutralized sulfide solution 3% (w/v)
+  name: Neutralized sulfide solution 3% (w/v)
+  composition:
+  - preferred_term: Na2S x 9 H2O
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    concentration:
+      value: '3'
+      unit: PERCENT_W_V
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    notes: Source stock heading explicitly states 3% w/v. Preserve its 3 g batch input,
+      carrier/water recipe and receiving dose separately; the strength is not inferred
+      from water volume.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/829a
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "Na2S x 9 H2O",
+                                "compound_id": 54,
+                                "amount": 3,
+                                "unit": "g",
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[1].composition[0].preferred_term: Source stock heading explicitly states 3% w/v. Preserve its 3 g batch input, carrier/water recipe and receiving dose separately; the strength is not inferred from water volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[0]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+        Additional exact excerpt: {
+                                "recipe_order": 1,
+                                "compound": "Na2S x 9 H2O",
+                                "compound_id": 54,
+                                "amount": 3,
+                                "unit": "g",
+                                "optional": 0
+                            }
+        solutions[1].composition[0].concentration: Source stock heading explicitly states 3% w/v. Preserve its 3 g batch input, carrier/water recipe and receiving dose separately; the strength is not inferred from water volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[0]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+        Additional exact excerpt: {
+                                "recipe_order": 1,
+                                "compound": "Na2S x 9 H2O",
+                                "compound_id": 54,
+                                "amount": 3,
+                                "unit": "g",
+                                "optional": 0
+                            }
+        solutions[1].composition[0].notes: Source stock heading explicitly states 3% w/v. Preserve its 3 g batch input, carrier/water recipe and receiving dose separately; the strength is not inferred from water volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[0]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf
+      supports: SUPPORT
+      snippet: Na2S x 9 H2O                                                        3.00         g
+      explanation: |-
+        solutions[1].composition[0].notes: Source stock heading explicitly states 3% w/v. Preserve its 3 g batch input, carrier/water recipe and receiving dose separately; the strength is not inferred from water volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T03:35:42.753262+00:00; capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.
+
+        Additional exact excerpt: Neutralized sulfide solution 3% (w/v)
+        solutions[1].composition[0].concentration: Source stock heading explicitly states 3% w/v. Preserve its 3 g batch input, carrier/water recipe and receiving dose separately; the strength is not inferred from water volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T03:35:42.753262+00:00; capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.
+  - preferred_term: Distilled water
+    concentration:
+      value: '0.1'
+      unit: L
+    notes: Preparation input 100 ml / 1000 = 0.1 L, not mass, volume percent or measured
+      final volume.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/829a
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 100,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: |-
+        solutions[1].composition[1].preferred_term: Preparation input 100 ml / 1000 = 0.1 L, not mass, volume percent or measured final volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[1]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+        Additional exact excerpt: {
+                                "recipe_order": 2,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 100,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+        solutions[1].composition[1].concentration: Preparation input 100 ml / 1000 = 0.1 L, not mass, volume percent or measured final volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[1]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+        Additional exact excerpt: {
+                                "recipe_order": 2,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 100,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+        solutions[1].composition[1].notes: Preparation input 100 ml / 1000 = 0.1 L, not mass, volume percent or measured final volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].recipe[1]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf
+      supports: SUPPORT
+      snippet: Distilled water                                                  100.00         ml
+      explanation: 'solutions[1].composition[1].notes: Preparation input 100 ml /
+        1000 = 0.1 L, not mass, volume percent or measured final volume. No unstated
+        density, final volume, percent basis or chemical identifier is inferred. Locator=original
+        recipe table/text; accessed=2026-10-09T03:35:42.753262+00:00; capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.'
+  - preferred_term: H2SO4
+    notes: Add sterile 2 M sulfuric-acid carrier dropwise to stock pH about 7.0. Carrier
+      strength is explicit but its addition volume is unquantified; no final stock
+      sulfuric-acid concentration is asserted.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/829a
+      supports: SUPPORT
+      snippet: '"The sulfide solution is prepared in a 250 ml screw-capped bottle
+        with a butyl rubber septum and a magnetic stirrer. The solution is bubbled
+        with nitrogen gas, closed and autoclaved for 15 min. at 121\u00b0C. After
+        cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile
+        2 M H2SO4 drop-wise with a syringe without opening the bottle."'
+      explanation: |-
+        solutions[1].composition[2].preferred_term: Add sterile 2 M sulfuric-acid carrier dropwise to stock pH about 7.0. Carrier strength is explicit but its addition volume is unquantified; no final stock sulfuric-acid concentration is asserted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].steps[0].step; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+        Additional exact excerpt: "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min. at 121\u00b0C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the bottle."
+        solutions[1].composition[2].concentration: Add sterile 2 M sulfuric-acid carrier dropwise to stock pH about 7.0. Carrier strength is explicit but its addition volume is unquantified; no final stock sulfuric-acid concentration is asserted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].steps[0].step; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+        Additional exact excerpt: "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min. at 121\u00b0C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the bottle."
+        solutions[1].composition[2].notes: Add sterile 2 M sulfuric-acid carrier dropwise to stock pH about 7.0. Carrier strength is explicit but its addition volume is unquantified; no final stock sulfuric-acid concentration is asserted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].steps[0].step; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+  concentration:
+    value: '0.02'
+    unit: L
+  notes: Receiving-batch addition 20 ml / 1000 = 0.02 L of prepared stock, not g/L
+    or an inferred ml/L rate. Stock strength and preparation remain separate.
+  preparation_notes: The sulfide solution is prepared in a 250 ml screw-capped bottle
+    with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with
+    nitrogen gas, closed and autoclaved for 15 min. at 121°C. After cooling to room
+    temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise
+    with a syringe without opening the bottle.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/829a
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 8,
+                            "compound": "Sodium resazurin",
+                            "compound_id": 1852,
+                            "attribute": "0.1% w/v",
+                            "amount": 0.5,
+                            "unit": "ml",
+                            "g_l": 0.000490196,
+                            "mmol_l": 0.00195165,
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].preferred_term: Receiving-batch addition 0.5 ml / 1000 = 0.0005 L of prepared stock, not g/L or an inferred ml/L rate. Stock strength and preparation remain separate. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+    Additional exact excerpt: {
+                            "recipe_order": 8,
+                            "compound": "Sodium resazurin",
+                            "compound_id": 1852,
+                            "attribute": "0.1% w/v",
+                            "amount": 0.5,
+                            "unit": "ml",
+                            "g_l": 0.000490196,
+                            "mmol_l": 0.00195165,
+                            "optional": 0
+                        }
+    solutions[0].concentration: Receiving-batch addition 0.5 ml / 1000 = 0.0005 L of prepared stock, not g/L or an inferred ml/L rate. Stock strength and preparation remain separate. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+    Additional exact excerpt: {
+                            "recipe_order": 8,
+                            "compound": "Sodium resazurin",
+                            "compound_id": 1852,
+                            "attribute": "0.1% w/v",
+                            "amount": 0.5,
+                            "unit": "ml",
+                            "g_l": 0.000490196,
+                            "mmol_l": 0.00195165,
+                            "optional": 0
+                        }
+    solutions[0].notes: Receiving-batch addition 0.5 ml / 1000 = 0.0005 L of prepared stock, not g/L or an inferred ml/L rate. Stock strength and preparation remain separate. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+    Additional exact excerpt: {
+                            "recipe_order": 8,
+                            "compound": "Sodium resazurin",
+                            "compound_id": 1852,
+                            "attribute": "0.1% w/v",
+                            "amount": 0.5,
+                            "unit": "ml",
+                            "g_l": 0.000490196,
+                            "mmol_l": 0.00195165,
+                            "optional": 0
+                        }
+    solutions[0].name: Receiving-batch addition 0.5 ml / 1000 = 0.0005 L of prepared stock, not g/L or an inferred ml/L rate. Stock strength and preparation remain separate. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[7]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+    Additional exact excerpt: {
+                            "recipe_order": 10,
+                            "solution": "Neutralized sulfide solution 3% (w/v)",
+                            "solution_id": 34,
+                            "amount": 20,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[1].preferred_term: Receiving-batch addition 20 ml / 1000 = 0.02 L of prepared stock, not g/L or an inferred ml/L rate. Stock strength and preparation remain separate. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[9]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+    Additional exact excerpt: {
+                            "recipe_order": 10,
+                            "solution": "Neutralized sulfide solution 3% (w/v)",
+                            "solution_id": 34,
+                            "amount": 20,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[1].concentration: Receiving-batch addition 20 ml / 1000 = 0.02 L of prepared stock, not g/L or an inferred ml/L rate. Stock strength and preparation remain separate. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[9]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+    Additional exact excerpt: {
+                            "recipe_order": 10,
+                            "solution": "Neutralized sulfide solution 3% (w/v)",
+                            "solution_id": 34,
+                            "amount": 20,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[1].notes: Receiving-batch addition 20 ml / 1000 = 0.02 L of prepared stock, not g/L or an inferred ml/L rate. Stock strength and preparation remain separate. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[9]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+    Additional exact excerpt: {
+                            "recipe_order": 10,
+                            "solution": "Neutralized sulfide solution 3% (w/v)",
+                            "solution_id": 34,
+                            "amount": 20,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[1].name: Receiving-batch addition 20 ml / 1000 = 0.02 L of prepared stock, not g/L or an inferred ml/L rate. Stock strength and preparation remain separate. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].recipe[9]; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+    Additional exact excerpt: "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min. at 121\u00b0C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the bottle."
+    solutions[1].preparation_notes: Keep this complete instruction on the named stock, not at receiving-medium root. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[1].steps[0].step; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+    Additional exact excerpt: "Dissolve ingredients (except thiosulfate and sodium sulfide), adjust pH to 6.0, boil medium for 1 min, then cool to room temperature under 80% H2 and 20% CO2 gas atmosphere. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclave. Add sodium thiosulfate from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration. Reduce medium with a sterile, neutralized solution of sodium sulfide prepared under 100% N2 gas . Adjust pH of complete medium to 6.0, if necessary."
+    preparation_steps: Only main-recipe instructions remain at root; stock instructions are preserved on their exact stock descriptors. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+
+    Additional exact excerpt: "After inoculation pressurize cultivation vessels to   2 bar overpressure using sterile 80% H2 and 20% CO2 gas mixture."
+    preparation_steps: Only main-recipe instructions remain at root; stock instructions are preserved on their exact stock descriptors. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.solutions[0].steps[1].step; accessed=2026-10-09T03:35:40.606911+00:00; capture SHA256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf
+  supports: SUPPORT
+  snippet: Sodium resazurin (0.1% w/v)                                         0.50        ml
+  explanation: |-
+    solutions[0].notes: Receiving-batch addition 0.5 ml / 1000 = 0.0005 L of prepared stock, not g/L or an inferred ml/L rate. Stock strength and preparation remain separate. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T03:35:42.753262+00:00; capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.
+
+    Additional exact excerpt: Neutralized sulfide solution 3% (w/v)                             20.00         ml
+    solutions[1].notes: Receiving-batch addition 20 ml / 1000 = 0.02 L of prepared stock, not g/L or an inferred ml/L rate. Stock strength and preparation remain separate. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T03:35:42.753262+00:00; capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.
+
+    Additional exact excerpt: The sulfide solution is prepared in a 250 ml screw-capped bottle
+    notes: The inspected original 829a has no final-volume heading. Its 1020.5 ml listed liquid-input sum and the API's 1020 ml volume do not establish a measured denominator. The stock's 250 ml bottle is equipment, not final volume. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T03:35:42.753262+00:00; capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.
+
+    Additional exact excerpt: 829a: DESULFUROBACTERIUM ATLANTICUM MEDIUM
+
+
+       NaCl                                                              30.00          g
+       MgCl2 x 6 H2O                                                       3.00         g
+       CaCl2 x 2 H2O                                                       0.15         g
+       KCl                                                                 0.50         g
+       NH4Cl                                                               0.50         g
+       MES [2-(N-morpholino) ethane sulfonic acid]                         1.95         g
+       KH2PO4                                                              0.20         g
+       Sodium resazurin (0.1% w/v)                                         0.50        ml
+       Na2S2O3 x 5 H2O                                                     2.50         g
+       Neutralized sulfide solution 3% (w/v)                             20.00         ml
+       Distilled water                                                1000.00          ml
+    notes: Full exact-source recipe and stock/preparation tables were inspected. Reconstructed nodes retain explicit source scope; complete prior ingredient/stock assertions, including copied LB mappings and stage conflations, are archived in append-only history. A title alone is not the basis for removal. Unchanged annotations are preserved, not recertified; no new organism-growth association is added. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T03:35:42.753262+00:00; capture SHA256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.
+variant_children:
+- id: CultureMech:006565
+  path: data/normalized_yaml/bacterial/KOMODO_829a_DESULFUROBACTERIUM_ATLANTICUM_MEDIUM.yaml
+  name: desulfurobacterium_atlanticum_medium
+  relationship: DERIVED_FROM
+  notes: The provider explicitly links this DSMZ accession. DERIVED_FROM denotes source
+    derivation, not identical concentrations, stock scopes or biological growth evidence;
+    retain source-specific formulation differences.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=829a
+    supports: SUPPORT
+    snippet: 'Instructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf'
+    explanation: 'variant_children: The provider explicitly links this DSMZ accession.
+      DERIVED_FROM denotes source derivation, not identical concentrations, stock
+      scopes or biological growth evidence; retain source-specific formulation differences.
+      No unstated density, final volume, percent basis or chemical identifier is inferred.
+      Locator=original recipe table/text; accessed=2026-10-09T03:35:39.916643+00:00;
+      capture SHA256=bdb2cdad8d7d0c89dbad5d1cf909200177a2476d13796ab6ea4322972f8e4a9b.'
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/829a
+  title: DESULFUROBACTERIUM ATLANTICUM MEDIUM
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-09;
+    capture_sha256=95ac081f625179c7f4050116614231f59c0da85ea1b9717006694c0473a22ac4.
+    Individual authors and publication year not supplied; copyright/access year is
+    not publication year. Source-scoped recipe evidence, not growth evidence.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf
+  title: '829a: DESULFUROBACTERIUM ATLANTICUM MEDIUM'
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    capture_sha256=c1ead9cc5fb268ff10474224e02f7bdc5088979e70358261392e7205e5475216.
+    Individual authors and publication year not supplied; copyright/access year is
+    not publication year. Source-scoped recipe evidence, not growth evidence.
+- reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=829a
+  title: KOMODO - the Known Media Database
+  notes: source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    capture_sha256=bdb2cdad8d7d0c89dbad5d1cf909200177a2476d13796ab6ea4322972f8e4a9b.
+    Individual authors and publication year not supplied; copyright/access year is
+    not publication year. Source-scoped recipe evidence, not growth evidence.

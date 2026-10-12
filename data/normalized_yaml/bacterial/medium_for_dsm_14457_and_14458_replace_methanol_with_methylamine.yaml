@@ -14,78 +14,30 @@ media_term:
 notes: 'Source: KOMODO ModelSEED | ID: 956_replace_Methanol_with_Methylamine | DSMZ
   Medium: 956 (mediadive.medium:956) | Aerobic: No'
 ingredients:
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-- preferred_term: (NH4)2SO4
-  term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  concentration:
-    value: '0.125'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
-- preferred_term: Methanol
-  term:
-    id: CHEBI:17790
-    label: methanol
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: ' (alternative)'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17790
-    label: methanol
 - preferred_term: Methylamine
   term:
     id: CHEBI:16830
     label: methylamine
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: ' (alternative)'
+  notes: After sterilisation add sterile Methylamine to the source-stated final concentration
+    of 0.3%. The percentage basis, supplement dose volume, and final receiving volume
+    are unspecified. No mass concentration, density, or percent unit is inferred.
+    This source-specific variant selects methylamine and excludes methanol.
   mediaingredientmech_chebi_term:
     id: CHEBI:16830
     label: methylamine
+  evidence:
+  - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
+    supports: SUPPORT
+    snippet: pH 7.2. To the sterilised medium add sterile methanol (to a final concentration
+      of 0.5%) or methylamine (to a final concentration of 0.3%).
+    explanation: Removes the unsupported g/L encoding, relocates the supplement to
+      ingredients[0], and preserves the source percent in ingredients[0].notes. The
+      percentage basis, supplement dose volume, and final receiving volume are unspecified.
+      No mass concentration, density, or percent unit is inferred. Original DSMZ 956,
+      PDF page 1; capture SHA256=156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39;
+      accessed_on=2026-10-07. Display whitespace normalized; source quantities and
+      chemical forms checked visually. Ontology annotations are preserved where their
+      ingredient remains, not independently re-grounded.
 applications:
 - Microbial cultivation
 curation_history:
@@ -121,3 +73,272 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-07T16:26:13.553900+00:00'
+  curator: codex
+  action: CORRECTED_DSMZ618_956_BATCH_INPUTS_AND_PERCENT_ALTERNATIVES
+  notes: Original PDF, preparation and exact source accession verified. Restored batch-input
+    scope; withdrew unsupported final mass concentrations and preserved source amounts/percentages
+    without guessing bases or final volume. Existing source-specific methylamine record
+    reused. Prior history, IDs and unrelated metadata preserved; source-specific removed
+    nodes remain explicit in this change event.
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
+  changes: 'ingredients[0].concentration -> solutions[0].composition[0].concentration:
+    {"unit": "G_PER_L", "value": "2"} -> null (remove_unsupported); ingredients[1].concentration
+    -> solutions[0].composition[1].concentration: {"unit": "G_PER_L", "value": "2"}
+    -> null (remove_unsupported); ingredients[2].concentration -> solutions[0].composition[2].concentration:
+    {"unit": "G_PER_L", "value": "0.125"} -> null (remove_unsupported); ingredients[3].concentration
+    -> solutions[0].composition[3].concentration: {"unit": "G_PER_L", "value": "0.5"}
+    -> null (remove_unsupported); ingredients[4].concentration -> solutions[0].composition[4].concentration:
+    {"unit": "G_PER_L", "value": "0.002"} -> null (remove_unsupported); None -> solutions[0].composition[5]:
+    null -> {"concentration": {"unit": "L", "value": "1"}, "notes": "Starting-water
+    batch amount: 1000 ml / 1000 ml per L = 1 L. Not a final-volume make-up instruction
+    or a mass concentration.", "preferred_term": "Distilled water", "term": {"id":
+    "mediadive.compound:4", "label": "Distilled water"}} (add); None -> solutions[0].preparation_notes:
+    null -> "pH 7.2. Prepare and sterilise the base before adding the selected supplement;
+    the source does not specify a sterilisation method, temperature, or duration."
+    (add_stage); ingredients[6].concentration -> ingredients[0].concentration: {"unit":
+    "G_PER_L", "value": "3"} -> null (remove_unsupported); ingredients[5] -> ingredients:
+    {"concentration": {"unit": "G_PER_L", "value": "5"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:17790", "label": "methanol"}, "notes": " (alternative)", "preferred_term":
+    "Methanol", "term": {"id": "CHEBI:17790", "label": "methanol"}} -> null (remove_alternative);
+    None -> parent_media: null -> {"id": "CultureMech:002134", "name": "medium_for_dsm_14457_and_14458",
+    "notes": "Selects the methylamine option of DSMZ 956''s common base; excludes
+    methanol. Percentage basis is unspecified. The parent describes both exclusive
+    options, not a methanol-plus-methylamine mixture.", "path": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+    "relationship": "SUPPLEMENTED_VARIANT"} (add_variant_link); None -> preparation_steps:
+    null -> [{"action": "MIX", "description": "pH 7.2. After sterilising the base,
+    add sterile methylamine to a final concentration of 0.3% (percentage basis unspecified).
+    Do not add methanol in this variant.", "step_number": 1}] (add_stage)'
+solutions:
+- preferred_term: DSMZ 956 base preparation
+  source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
+  notes: Curator-described preparation stage, not a separately accessioned stock.
+    Composition records source batch inputs. The 1000 ml water is an input, not an
+    explicit prepared-base or final-medium volume; no absolute base dose is inferred.
+  composition:
+  - preferred_term: KH2PO4
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    notes: 'Source batch input: 2.000 g; KH2PO4 2.000 g The recipe starts with 1000
+      ml distilled water before supplementation. No prepared-base or final-medium
+      mass concentration is asserted.'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
+      supports: SUPPORT
+      snippet: KH2PO4 2.000 g
+      explanation: 'Relocates ingredients[0] to solutions[0].composition[0] and withdraws
+        its g/L encoding. solutions[0].composition[0].notes preserves the original
+        batch amount. The former final-medium concentration is withdrawn. The starting
+        water and subsequent percent supplement do not establish the final volume;
+        the source batch mass is preserved in notes, not converted to g/L. Additional
+        exact source water row: Distilled water 1000.000 ml. Agar is retained for
+        the existing solid record only; Difco product attributes are retained in the
+        corresponding source notes. Original DSMZ 956, PDF page 1; capture SHA256=156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39;
+        accessed_on=2026-10-07. Display whitespace normalized; source quantities and
+        chemical forms checked visually. Ontology annotations are preserved where
+        their ingredient remains, not independently re-grounded.'
+  - preferred_term: (NH4)2SO4
+    term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+    notes: 'Source batch input: 2.000 g; (NH4)2SO4 2.000 g The recipe starts with
+      1000 ml distilled water before supplementation. No prepared-base or final-medium
+      mass concentration is asserted.'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
+      supports: SUPPORT
+      snippet: (NH4)2SO4 2.000 g
+      explanation: 'Relocates ingredients[1] to solutions[0].composition[1] and withdraws
+        its g/L encoding. solutions[0].composition[1].notes preserves the original
+        batch amount. The former final-medium concentration is withdrawn. The starting
+        water and subsequent percent supplement do not establish the final volume;
+        the source batch mass is preserved in notes, not converted to g/L. Additional
+        exact source water row: Distilled water 1000.000 ml. Agar is retained for
+        the existing solid record only; Difco product attributes are retained in the
+        corresponding source notes. Original DSMZ 956, PDF page 1; capture SHA256=156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39;
+        accessed_on=2026-10-07. Display whitespace normalized; source quantities and
+        chemical forms checked visually. Ontology annotations are preserved where
+        their ingredient remains, not independently re-grounded.'
+  - preferred_term: MgSO4 x 7 H2O
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    notes: 'Source batch input: 0.125 g; MgSO4 x 7 H2O 0.125 g The recipe starts with
+      1000 ml distilled water before supplementation. No prepared-base or final-medium
+      mass concentration is asserted.'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
+      supports: SUPPORT
+      snippet: MgSO4 x 7 H2O 0.125 g
+      explanation: 'Relocates ingredients[2] to solutions[0].composition[2] and withdraws
+        its g/L encoding. solutions[0].composition[2].notes preserves the original
+        batch amount. The former final-medium concentration is withdrawn. The starting
+        water and subsequent percent supplement do not establish the final volume;
+        the source batch mass is preserved in notes, not converted to g/L. Additional
+        exact source water row: Distilled water 1000.000 ml. Agar is retained for
+        the existing solid record only; Difco product attributes are retained in the
+        corresponding source notes. Original DSMZ 956, PDF page 1; capture SHA256=156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39;
+        accessed_on=2026-10-07. Display whitespace normalized; source quantities and
+        chemical forms checked visually. Ontology annotations are preserved where
+        their ingredient remains, not independently re-grounded.'
+  - preferred_term: NaCl
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+    notes: 'Source batch input: 0.500 g; NaCl 0.500 g The recipe starts with 1000
+      ml distilled water before supplementation. No prepared-base or final-medium
+      mass concentration is asserted.'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
+      supports: SUPPORT
+      snippet: NaCl 0.500 g
+      explanation: 'Relocates ingredients[3] to solutions[0].composition[3] and withdraws
+        its g/L encoding. solutions[0].composition[3].notes preserves the original
+        batch amount. The former final-medium concentration is withdrawn. The starting
+        water and subsequent percent supplement do not establish the final volume;
+        the source batch mass is preserved in notes, not converted to g/L. Additional
+        exact source water row: Distilled water 1000.000 ml. Agar is retained for
+        the existing solid record only; Difco product attributes are retained in the
+        corresponding source notes. Original DSMZ 956, PDF page 1; capture SHA256=156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39;
+        accessed_on=2026-10-07. Display whitespace normalized; source quantities and
+        chemical forms checked visually. Ontology annotations are preserved where
+        their ingredient remains, not independently re-grounded.'
+  - preferred_term: FeSO4 x 7 H2O
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    notes: 'Source batch input: 0.002 g; FeSO4 x 7 H2O 0.002 g The recipe starts with
+      1000 ml distilled water before supplementation. No prepared-base or final-medium
+      mass concentration is asserted.'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
+      supports: SUPPORT
+      snippet: FeSO4 x 7 H2O 0.002 g
+      explanation: 'Relocates ingredients[4] to solutions[0].composition[4] and withdraws
+        its g/L encoding. solutions[0].composition[4].notes preserves the original
+        batch amount. The former final-medium concentration is withdrawn. The starting
+        water and subsequent percent supplement do not establish the final volume;
+        the source batch mass is preserved in notes, not converted to g/L. Additional
+        exact source water row: Distilled water 1000.000 ml. Agar is retained for
+        the existing solid record only; Difco product attributes are retained in the
+        corresponding source notes. Original DSMZ 956, PDF page 1; capture SHA256=156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39;
+        accessed_on=2026-10-07. Display whitespace normalized; source quantities and
+        chemical forms checked visually. Ontology annotations are preserved where
+        their ingredient remains, not independently re-grounded.'
+  - preferred_term: Distilled water
+    term:
+      id: mediadive.compound:4
+      label: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+    notes: 'Starting-water batch amount: 1000 ml / 1000 ml per L = 1 L. Not a final-volume
+      make-up instruction or a mass concentration.'
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
+      supports: SUPPORT
+      snippet: Distilled water 1000.000 ml
+      explanation: Adds the source's omitted starting-water input at solutions[0].composition[5].
+        The volume is a batch input only; the dataset identifies distilled water as
+        compound 4. Original DSMZ 956, PDF page 1; capture SHA256=156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39;
+        accessed_on=2026-10-07. Display whitespace normalized; source quantities and
+        chemical forms checked visually. Ontology annotations are preserved where
+        their ingredient remains, not independently re-grounded.
+  preparation_notes: pH 7.2. Prepare and sterilise the base before adding the selected
+    supplement; the source does not specify a sterilisation method, temperature, or
+    duration.
+parent_media:
+  path: data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml
+  id: CultureMech:002134
+  name: medium_for_dsm_14457_and_14458
+  relationship: SUPPLEMENTED_VARIANT
+  notes: Selects the methylamine option of DSMZ 956's common base; excludes methanol.
+    Percentage basis is unspecified. The parent describes both exclusive options,
+    not a methanol-plus-methylamine mixture.
+variant_relationship: SUPPLEMENTED_VARIANT
+variant_modifications:
+- Select the methylamine alternative (source final concentration 0.3%, basis unspecified);
+  do not add methanol.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.2. After sterilising the base, add sterile methylamine to a final
+    concentration of 0.3% (percentage basis unspecified). Do not add methanol in this
+    variant.
+evidence:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
+  supports: SUPPORT
+  snippet: pH 7.2. To the sterilised medium add sterile methanol (to a final concentration
+    of 0.5%) or methylamine (to a final concentration of 0.3%).
+  explanation: 'Separates the pre-supplement base in solutions[0]; its name is a curator
+    stage description, not a new source accession. Composition holds input masses
+    in notes and the explicit water input. Neither base concentration nor recovered/final
+    volume is asserted. Curator-described preparation stage, not a separately accessioned
+    stock. Composition records source batch inputs. The 1000 ml water is an input,
+    not an explicit prepared-base or final-medium volume; no absolute base dose is
+    inferred. Original DSMZ 956, PDF page 1; capture SHA256=156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39;
+    accessed_on=2026-10-07. Display whitespace normalized; source quantities and chemical
+    forms checked visually. Ontology annotations are preserved where their ingredient
+    remains, not independently re-grounded. Links the existing methylamine-specific
+    ID to the shared-base family, with variant_relationship and variant_modifications
+    describing the selected option. The original recipe states the alternative; the
+    separately verified KOMODO accession selects it. No new record or ID is created.
+    Original DSMZ 956, PDF page 1; capture SHA256=156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39;
+    accessed_on=2026-10-07. Display whitespace normalized; source quantities and chemical
+    forms checked visually. Ontology annotations are preserved where their ingredient
+    remains, not independently re-grounded. Adds the source preparation context; no
+    unreported sterilisation parameters are inferred. The KOMODO methylamine accession
+    selects that branch where applicable. Original DSMZ 956, PDF page 1; capture SHA256=156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39;
+    accessed_on=2026-10-07. Display whitespace normalized; source quantities and chemical
+    forms checked visually. Ontology annotations are preserved where their ingredient
+    remains, not independently re-grounded. Fields: solutions[0].preparation_notes,
+    parent_media, preparation_steps'
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  supports: SUPPORT
+  snippet: 956_replace_Methanol_with_Methylamine MEDIUM FOR DSM 14457 AND 14458_replace_Methanol_with_Methylamine
+    7.2 false false false http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
+  explanation: Exact source-identity linkage for media_term and this recipe's ingredients,
+    solutions, preparation and variant selection. KOMODO accession 956_replace_Methanol_with_Methylamine
+    links the original DSMZ 956 PDF; quantities come from that inspected PDF, not
+    another curated record. Capture SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a;
+    accessed_on=2026-10-07; locator=HTML table row with exact first cell 956_replace_Methanol_with_Methylamine.
+    Visible cell whitespace normalized. No phenotype is inferred from table flags.
+    The exact KOMODO source accession explicitly replaces methanol with methylamine.
+    Remove methanol from this branch; the original DSMZ recipe independently states
+    the supplements are alternatives. No methanol or co-supplementation is retained.
+    The removed node, including its historical ontology annotations, is preserved
+    in the append-only change event. Original DSMZ 956, PDF page 1; capture SHA256=156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39;
+    accessed_on=2026-10-07. Display whitespace normalized; source quantities and chemical
+    forms checked visually. Ontology annotations are preserved where their ingredient
+    remains, not independently re-grounded.
+references:
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
+  title: 'DSMZ 956: MEDIUM FOR DSM 14457 AND 14458'
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    source_organization=DSMZ; accessed_on=2026-10-07; capture_sha256=156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39;
+    locator=complete one-page ingredient table and preparation. Individual authors
+    and recipe publication year not supplied; the 2007 copyright notice is not treated
+    as a publication year. Percent basis and final volume are not specified.
+- reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  title: KOMODO - the Known Media Database
+  notes: source_type=dataset; discovery_mode=existing_record_reference; source_organization=KOMODO;
+    accessed_on=2026-10-07; capture_sha256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a;
+    locator=exact accession 956_replace_Methanol_with_Methylamine. Individual authors
+    and publication year not established. Supports original-recipe linkage and named
+    variant, not numeric concentrations.

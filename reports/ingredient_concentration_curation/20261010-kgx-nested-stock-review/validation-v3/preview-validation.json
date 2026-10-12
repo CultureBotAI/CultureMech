@@ -1,0 +1,142 @@
+{
+  "terminal": true,
+  "passed": true,
+  "state": "unapplied isolated preview",
+  "created_at": "2026-10-10T21:16:02.639960+00:00",
+  "baseline_sha256": "1ca00e48621068494343ebcaa3410a22985d8a78250f937a37c5c56a9d78c1a0",
+  "proposed_sha256": "eacbc2e7b363488cc1ed96e91737f54244dc1a2425dfa05c77ba89d0a5cd10e0",
+  "test_sha256": "f5f02d923202fffe7420e93711b74415bb5dce34231ed20b5e21441526892cda",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "/tmp/culturemech-kgx-nested-preview-20261010/test_kgx_nested_stocks.py",
+        "-q",
+        "--no-cov",
+        "-o",
+        "addopts="
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "log": "reports/ingredient_concentration_curation/20261010-kgx-nested-stock-review/validation-v3/check-00.log",
+      "log_sha256": "6bfda560398e11c44929187262244230b845fb841f508a6c62221037ba6b2bb5"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-c",
+        "import importlib.util, sys\nimport culturemech.export\nname = 'culturemech.export.kgx_export'\nspec = importlib.util.spec_from_file_location(name, sys.argv[1])\nmodule = importlib.util.module_from_spec(spec)\nsys.modules[name] = module\nspec.loader.exec_module(module)\nsetattr(culturemech.export, 'kgx_export', module)\nimport pytest\nraise SystemExit(pytest.main(sys.argv[2:]))\n",
+        "/tmp/culturemech-kgx-nested-preview-20261010/kgx_export.py",
+        "/tmp/culturemech-kgx-nested-preview-20261010/test_kgx_nested_stocks.py",
+        "-q",
+        "--no-cov",
+        "-o",
+        "addopts="
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-kgx-nested-stock-review/validation-v3/check-01.log",
+      "log_sha256": "903265f9e53e1874b112a1dc50922cff4664c885c1c46f3b7893848dee20a16a"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-c",
+        "import importlib.util, sys\nimport culturemech.export\nname = 'culturemech.export.kgx_export'\nspec = importlib.util.spec_from_file_location(name, sys.argv[1])\nmodule = importlib.util.module_from_spec(spec)\nsys.modules[name] = module\nspec.loader.exec_module(module)\nsetattr(culturemech.export, 'kgx_export', module)\nimport pytest\nraise SystemExit(pytest.main(sys.argv[2:]))\n",
+        "/tmp/culturemech-kgx-nested-preview-20261010/kgx_export.py",
+        "tests/test_kgx_export.py",
+        "tests/test_kgx_node_ids.py",
+        "tests/test_kgx_solution_composition.py",
+        "tests/test_concentration_volume_basis.py",
+        "tests/test_kgx_tsv_export.py",
+        "-q",
+        "--no-cov",
+        "-o",
+        "addopts="
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-kgx-nested-stock-review/validation-v3/check-02.log",
+      "log_sha256": "6bf72370c41c1fe608fa1ddc1454c18d98ac882b5bdabb9a679169a72afdfc72"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "--config",
+        "pyproject.toml",
+        "/tmp/culturemech-kgx-nested-preview-20261010/kgx_export.py",
+        "/tmp/culturemech-kgx-nested-preview-20261010/test_kgx_nested_stocks.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-kgx-nested-stock-review/validation-v3/check-03.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "--config",
+        "pyproject.toml",
+        "/tmp/culturemech-kgx-nested-preview-20261010/kgx_export.py",
+        "/tmp/culturemech-kgx-nested-preview-20261010/test_kgx_nested_stocks.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-kgx-nested-stock-review/validation-v3/check-04.log",
+      "log_sha256": "b9cf511501d306d2bd8355ccb165c8ddc0a6fdd62d7c72c4a7b1795cf8934c8c"
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-kgx-nested-stock-review/validation-v3/fix.patch"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-kgx-nested-stock-review/validation-v3/check-05.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "authoritative_records_edited": 0,
+  "repository_code_edited": false,
+  "actual_DAS_record": {
+    "path": "data/normalized_yaml/algae/Dasycladales_Seawater_Medium.yaml",
+    "sha256": "486f9b7756441b3d0b3033f46cf60db2133b6df56d611bf4fa49d5c97f8dfb9c",
+    "baseline": {
+      "parent": "CultureMech:solution_DAS_Macro_Solution_6f41c369",
+      "nested_stocks": [
+        "CultureMech:solution_NaNO3_0.70_M_stock_5098b86c",
+        "CultureMech:solution_Na2HPO4_x_7_H2O_0.02_M_stock_b3258770"
+      ],
+      "nested_edges": 0,
+      "nested_nodes": 0,
+      "nested_doses": []
+    },
+    "proposed": {
+      "parent": "CultureMech:solution_DAS_Macro_Solution_cb14a659",
+      "nested_stocks": [
+        "CultureMech:solution_NaNO3_0.70_M_stock_5098b86c",
+        "CultureMech:solution_Na2HPO4_x_7_H2O_0.02_M_stock_b3258770"
+      ],
+      "nested_edges": 2,
+      "nested_nodes": 2,
+      "nested_doses": [
+        [
+          "25",
+          "PERCENT_V_V"
+        ],
+        [
+          "75",
+          "PERCENT_V_V"
+        ]
+      ]
+    }
+  },
+  "patch_sha256": "5efc24e151db71cb9f1104c9cfe4ddf23f0c450d7da3bbb5834dc1745a31f3e2",
+  "limitation": "No installed-code/full-suite or Koza TSV pass for this isolated proposal; snippet export remains an existing unsupported surface."
+}

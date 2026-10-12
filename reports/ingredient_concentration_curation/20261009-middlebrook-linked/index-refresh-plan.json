@@ -1,0 +1,404 @@
+{
+  "source_sha256": "586888cea49e962e3fe4ccbe021599c5c21ee5f15e4aae265f5bdfe305ce8bb0",
+  "files": [
+    {
+      "target": "data/normalized_yaml/bacterial_index.json",
+      "preview": "/tmp/ingredient-media-20261007/linked-middlebrook-index-preview/bacterial_index.json",
+      "before_sha256": "25a598c22cc1f5f575e5953288af39680f2d009e1d077658769ad647bc4c8c68",
+      "after_sha256": "d2f6466b8e85823b99703162cab09b3f3aa1247fd9be50c44e4634edde35989d",
+      "changes": [
+        {
+          "key": "CultureMech:006191",
+          "id": "CultureMech:006191",
+          "changes": {
+            "ingredient_count": [
+              23,
+              22
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006786",
+          "id": "CultureMech:006786",
+          "changes": {
+            "ingredient_count": [
+              20,
+              19
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006185",
+          "id": "CultureMech:006185",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006186",
+          "id": "CultureMech:006186",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006187",
+          "id": "CultureMech:006187",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006188",
+          "id": "CultureMech:006188",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006189",
+          "id": "CultureMech:006189",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006785",
+          "id": "CultureMech:006785",
+          "changes": {
+            "ingredient_count": [
+              20,
+              19
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006190",
+          "id": "CultureMech:006190",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:002079",
+          "id": "CultureMech:002079",
+          "changes": {
+            "solution_count": [
+              null,
+              2
+            ],
+            "ingredient_count": [
+              20,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:001782",
+          "id": "CultureMech:001782",
+          "changes": {
+            "solution_count": [
+              null,
+              1
+            ],
+            "ingredient_count": [
+              23,
+              3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_komodo_index.json",
+      "preview": "/tmp/ingredient-media-20261007/linked-middlebrook-index-preview/by_source_komodo_index.json",
+      "before_sha256": "3c53c62416bd8770ec4a2f214670e48787c917a6facd434ef2c92fd0446a8660",
+      "after_sha256": "ec199cd12f448b7beb6db343170e056573847fa3cbe506acd534d1e8dcbbe0fd",
+      "changes": [
+        {
+          "key": "CultureMech:006191",
+          "id": "CultureMech:006191",
+          "changes": {
+            "ingredient_count": [
+              23,
+              22
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006786",
+          "id": "CultureMech:006786",
+          "changes": {
+            "ingredient_count": [
+              20,
+              19
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006185",
+          "id": "CultureMech:006185",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006186",
+          "id": "CultureMech:006186",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006187",
+          "id": "CultureMech:006187",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006188",
+          "id": "CultureMech:006188",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006189",
+          "id": "CultureMech:006189",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006785",
+          "id": "CultureMech:006785",
+          "changes": {
+            "ingredient_count": [
+              20,
+              19
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006190",
+          "id": "CultureMech:006190",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_mediadive_index.json",
+      "preview": "/tmp/ingredient-media-20261007/linked-middlebrook-index-preview/by_source_mediadive_index.json",
+      "before_sha256": "2876b722a166c082b6d58232e14dfd04c9ab995deddcabccc2562429b90902a4",
+      "after_sha256": "f1a11a6f658ce5edf4038754dcc1b1e02bd62ec545fab024e11d9951c3163a80",
+      "changes": [
+        {
+          "key": "CultureMech:002079",
+          "id": "CultureMech:002079",
+          "changes": {
+            "ingredient_count": [
+              20,
+              2
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:001782",
+          "id": "CultureMech:001782",
+          "changes": {
+            "ingredient_count": [
+              23,
+              3
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_index.json",
+      "preview": "/tmp/ingredient-media-20261007/linked-middlebrook-index-preview/recipe_index.json",
+      "before_sha256": "14dcd2842679d9fee7f7e50f5bfb0d8a486492ff8d26cbd8f0abd8d52154ccad",
+      "after_sha256": "6b97f942443ae0d0e16b8b7e6c650a6e1159c660ddd3aa2b13b500bbf1af9299",
+      "changes": [
+        {
+          "key": "CultureMech:006191",
+          "id": "CultureMech:006191",
+          "changes": {
+            "ingredient_count": [
+              23,
+              22
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006786",
+          "id": "CultureMech:006786",
+          "changes": {
+            "ingredient_count": [
+              20,
+              19
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006185",
+          "id": "CultureMech:006185",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006186",
+          "id": "CultureMech:006186",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006187",
+          "id": "CultureMech:006187",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006188",
+          "id": "CultureMech:006188",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006189",
+          "id": "CultureMech:006189",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006785",
+          "id": "CultureMech:006785",
+          "changes": {
+            "ingredient_count": [
+              20,
+              19
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006190",
+          "id": "CultureMech:006190",
+          "changes": {
+            "ingredient_count": [
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:002079",
+          "id": "CultureMech:002079",
+          "changes": {
+            "ingredient_count": [
+              20,
+              2
+            ],
+            "solution_count": [
+              null,
+              2
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:001782",
+          "id": "CultureMech:001782",
+          "changes": {
+            "ingredient_count": [
+              23,
+              3
+            ],
+            "solution_count": [
+              null,
+              1
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "metadata_changed_ids": [
+    "CultureMech:001782",
+    "CultureMech:002079",
+    "CultureMech:006185",
+    "CultureMech:006186",
+    "CultureMech:006187",
+    "CultureMech:006188",
+    "CultureMech:006189",
+    "CultureMech:006190",
+    "CultureMech:006191",
+    "CultureMech:006785",
+    "CultureMech:006786"
+  ]
+}

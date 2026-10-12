@@ -23,6 +23,33 @@ composition:
     label: sodium formate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5404
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Sodium formate",
+                      "compound_id": 437,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.2,
+                      "unit": "g",
+                      "g_l": 0.2,
+                      "mmol_l": 2.94087,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[1].concentration (Sodium
+      formate) in MediaDive solution 5404; locator=$.data.recipe[1] (compound_id=437).
+      Provider explicitly reports g_l=0.2. Arithmetic check: 0.2 g * 1 g/g / (1000
+      ml / 1000 ml per L) = 0.2 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:54:35.480115+00:00;
+      response SHA256=d8dd98a4b62d93b2cad86a5b781f8623da88b764cf1f5d1cf0ab63ff59a6299e.'
 - preferred_term: Sodium acetate
   concentration:
     value: '0.2'
@@ -35,6 +62,33 @@ composition:
     label: sodium acetate
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5404
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "Sodium acetate",
+                      "compound_id": 731,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.2,
+                      "unit": "g",
+                      "g_l": 0.2,
+                      "mmol_l": 2.43813,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[2].concentration (Sodium
+      acetate) in MediaDive solution 5404; locator=$.data.recipe[2] (compound_id=731).
+      Provider explicitly reports g_l=0.2. Arithmetic check: 0.2 g * 1 g/g / (1000
+      ml / 1000 ml per L) = 0.2 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:54:35.480115+00:00;
+      response SHA256=d8dd98a4b62d93b2cad86a5b781f8623da88b764cf1f5d1cf0ab63ff59a6299e.'
 - preferred_term: Bacto peptone
   concentration:
     value: '0.25'
@@ -66,6 +120,33 @@ composition:
     label: sodium pyruvate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5404
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Sodium pyruvate",
+                      "compound_id": 438,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.2,
+                      "unit": "g",
+                      "g_l": 0.2,
+                      "mmol_l": 1.81752,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[5].concentration (Sodium
+      pyruvate) in MediaDive solution 5404; locator=$.data.recipe[5] (compound_id=438).
+      Provider explicitly reports g_l=0.2. Arithmetic check: 0.2 g * 1 g/g / (1000
+      ml / 1000 ml per L) = 0.2 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:54:35.480115+00:00;
+      response SHA256=d8dd98a4b62d93b2cad86a5b781f8623da88b764cf1f5d1cf0ab63ff59a6299e.'
 - preferred_term: Disodium succinate x 6 H2O
   concentration:
     value: '0.2'
@@ -78,6 +159,33 @@ composition:
     label: sodium succinate hexahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5404
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "Disodium succinate x 6 H2O",
+                      "compound_id": 2042,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.2,
+                      "unit": "g",
+                      "g_l": 0.2,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[6].concentration (Disodium
+      succinate x 6 H2O) in MediaDive solution 5404; locator=$.data.recipe[6] (compound_id=2042).
+      Provider explicitly reports g_l=0.2. Arithmetic check: 0.2 g * 1 g/g / (1000
+      ml / 1000 ml per L) = 0.2 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:54:35.480115+00:00;
+      response SHA256=d8dd98a4b62d93b2cad86a5b781f8623da88b764cf1f5d1cf0ab63ff59a6299e.'
 - preferred_term: DL-Malic acid
   concentration:
     value: '0.2'
@@ -90,6 +198,33 @@ composition:
     label: malic acid
     confidence: 0.9
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5404
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 8,
+                      "compound": "DL-Malic acid",
+                      "compound_id": 880,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.2,
+                      "unit": "g",
+                      "g_l": 0.2,
+                      "mmol_l": 1.49154,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[7].concentration (DL-Malic
+      acid) in MediaDive solution 5404; locator=$.data.recipe[7] (compound_id=880).
+      Provider explicitly reports g_l=0.2. Arithmetic check: 0.2 g * 1 g/g / (1000
+      ml / 1000 ml per L) = 0.2 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:54:35.480115+00:00;
+      response SHA256=d8dd98a4b62d93b2cad86a5b781f8623da88b764cf1f5d1cf0ab63ff59a6299e.'
 - preferred_term: Fumaric acid
   concentration:
     value: '0.2'
@@ -102,6 +237,33 @@ composition:
     label: fumaric acid
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5404
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 9,
+                      "compound": "Fumaric acid",
+                      "compound_id": 264,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.2,
+                      "unit": "g",
+                      "g_l": 0.2,
+                      "mmol_l": 1.7231,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[8].concentration (Fumaric
+      acid) in MediaDive solution 5404; locator=$.data.recipe[8] (compound_id=264).
+      Provider explicitly reports g_l=0.2. Arithmetic check: 0.2 g * 1 g/g / (1000
+      ml / 1000 ml per L) = 0.2 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:54:35.480115+00:00;
+      response SHA256=d8dd98a4b62d93b2cad86a5b781f8623da88b764cf1f5d1cf0ab63ff59a6299e.'
 - preferred_term: Trisodium citrate x 2 H2O
   concentration:
     value: '0.2'
@@ -114,6 +276,33 @@ composition:
     label: sodium citrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5404
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 10,
+                      "compound": "Trisodium citrate x 2 H2O",
+                      "compound_id": 1249,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.2,
+                      "unit": "g",
+                      "g_l": 0.2,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[9].concentration (Trisodium
+      citrate x 2 H2O) in MediaDive solution 5404; locator=$.data.recipe[9] (compound_id=1249).
+      Provider explicitly reports g_l=0.2. Arithmetic check: 0.2 g * 1 g/g / (1000
+      ml / 1000 ml per L) = 0.2 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:54:35.480115+00:00;
+      response SHA256=d8dd98a4b62d93b2cad86a5b781f8623da88b764cf1f5d1cf0ab63ff59a6299e.'
 - preferred_term: KCl
   concentration:
     value: '5.4'
@@ -126,6 +315,32 @@ composition:
     label: potassium chloride
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5404
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 11,
+                      "compound": "KCl",
+                      "compound_id": 61,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5.4,
+                      "unit": "g",
+                      "g_l": 5.4,
+                      "mmol_l": 72.4346,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[10].concentration (KCl) in
+      MediaDive solution 5404; locator=$.data.recipe[10] (compound_id=61). Provider
+      explicitly reports g_l=5.4. Arithmetic check: 5.4 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 5.4 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:54:35.480115+00:00; response SHA256=d8dd98a4b62d93b2cad86a5b781f8623da88b764cf1f5d1cf0ab63ff59a6299e.'
 - preferred_term: K2HPO4
   concentration:
     value: '0.3'
@@ -138,6 +353,32 @@ composition:
     label: dipotassium hydrogen phosphate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5404
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 12,
+                      "compound": "K2HPO4",
+                      "compound_id": 10,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.3,
+                      "unit": "g",
+                      "g_l": 0.3,
+                      "mmol_l": 1.7224,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[11].concentration (K2HPO4)
+      in MediaDive solution 5404; locator=$.data.recipe[11] (compound_id=10). Provider
+      explicitly reports g_l=0.3. Arithmetic check: 0.3 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 0.3 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:54:35.480115+00:00; response SHA256=d8dd98a4b62d93b2cad86a5b781f8623da88b764cf1f5d1cf0ab63ff59a6299e.'
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.29'
@@ -150,6 +391,33 @@ composition:
     label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5404
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 13,
+                      "compound": "CaCl2 x 2 H2O",
+                      "compound_id": 7,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.29,
+                      "unit": "g",
+                      "g_l": 0.29,
+                      "mmol_l": 1.97259,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[12].concentration (CaCl2
+      x 2 H2O) in MediaDive solution 5404; locator=$.data.recipe[12] (compound_id=7).
+      Provider explicitly reports g_l=0.29. Arithmetic check: 0.29 g * 1 g/g / (1000
+      ml / 1000 ml per L) = 0.29 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:54:35.480115+00:00;
+      response SHA256=d8dd98a4b62d93b2cad86a5b781f8623da88b764cf1f5d1cf0ab63ff59a6299e.'
 - preferred_term: NaNO3
   concentration:
     value: '0.27'
@@ -161,6 +429,32 @@ composition:
     id: CHEBI:63005
     label: sodium nitrate
     match_type: manual_curated
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5404
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 14,
+                      "compound": "NaNO3",
+                      "compound_id": 187,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.27,
+                      "unit": "g",
+                      "g_l": 0.27,
+                      "mmol_l": 3.17666,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[13].concentration (NaNO3)
+      in MediaDive solution 5404; locator=$.data.recipe[13] (compound_id=187). Provider
+      explicitly reports g_l=0.27. Arithmetic check: 0.27 g * 1 g/g / (1000 ml / 1000
+      ml per L) = 0.27 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:54:35.480115+00:00; response SHA256=d8dd98a4b62d93b2cad86a5b781f8623da88b764cf1f5d1cf0ab63ff59a6299e.'
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '0.1'
@@ -172,6 +466,33 @@ composition:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5404
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 15,
+                      "compound": "MgCl2 x 6 H2O",
+                      "compound_id": 79,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.1,
+                      "unit": "g",
+                      "g_l": 0.1,
+                      "mmol_l": 0.491877,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[14].concentration (MgCl2
+      x 6 H2O) in MediaDive solution 5404; locator=$.data.recipe[14] (compound_id=79).
+      Provider explicitly reports g_l=0.1. Arithmetic check: 0.1 g * 1 g/g / (1000
+      ml / 1000 ml per L) = 0.1 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T09:54:35.480115+00:00;
+      response SHA256=d8dd98a4b62d93b2cad86a5b781f8623da88b764cf1f5d1cf0ab63ff59a6299e.'
 - preferred_term: Na2CO3
   concentration:
     value: '9'
@@ -184,6 +505,32 @@ composition:
     label: sodium carbonate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5404
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 16,
+                      "compound": "Na2CO3",
+                      "compound_id": 32,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 9,
+                      "unit": "g",
+                      "g_l": 9,
+                      "mmol_l": 84.9153,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[15].concentration (Na2CO3)
+      in MediaDive solution 5404; locator=$.data.recipe[15] (compound_id=32). Provider
+      explicitly reports g_l=9. Arithmetic check: 9 g * 1 g/g / (1000 ml / 1000 ml
+      per L) = 9 g/L, consistent with the reported value at its precision. Evidence
+      supports the provider-declared concentration within this solution, not a concentration
+      in a receiving medium or an independently measured final volume. Water addition
+      alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:
+      "volume": 1000. Retrieved 2026-10-07T09:54:35.480115+00:00; response SHA256=d8dd98a4b62d93b2cad86a5b781f8623da88b764cf1f5d1cf0ab63ff59a6299e.'
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -236,6 +583,33 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '3 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5404
+  changes: 'composition[1].concentration: {"unit": "G_PER_L", "value": "0.2"} -> {"unit":
+    "G_PER_L", "value": "0.2"} (evidence_only); composition[2].concentration: {"unit":
+    "G_PER_L", "value": "0.2"} -> {"unit": "G_PER_L", "value": "0.2"} (evidence_only);
+    composition[5].concentration: {"unit": "G_PER_L", "value": "0.2"} -> {"unit":
+    "G_PER_L", "value": "0.2"} (evidence_only); composition[6].concentration: {"unit":
+    "G_PER_L", "value": "0.2"} -> {"unit": "G_PER_L", "value": "0.2"} (evidence_only);
+    composition[7].concentration: {"unit": "G_PER_L", "value": "0.2"} -> {"unit":
+    "G_PER_L", "value": "0.2"} (evidence_only); composition[8].concentration: {"unit":
+    "G_PER_L", "value": "0.2"} -> {"unit": "G_PER_L", "value": "0.2"} (evidence_only);
+    composition[9].concentration: {"unit": "G_PER_L", "value": "0.2"} -> {"unit":
+    "G_PER_L", "value": "0.2"} (evidence_only); composition[10].concentration: {"unit":
+    "G_PER_L", "value": "5.4"} -> {"unit": "G_PER_L", "value": "5.4"} (evidence_only);
+    composition[11].concentration: {"unit": "G_PER_L", "value": "0.3"} -> {"unit":
+    "G_PER_L", "value": "0.3"} (evidence_only); composition[12].concentration: {"unit":
+    "G_PER_L", "value": "0.29"} -> {"unit": "G_PER_L", "value": "0.29"} (evidence_only);
+    composition[13].concentration: {"unit": "G_PER_L", "value": "0.27"} -> {"unit":
+    "G_PER_L", "value": "0.27"} (evidence_only); composition[14].concentration: {"unit":
+    "G_PER_L", "value": "0.1"} -> {"unit": "G_PER_L", "value": "0.1"} (evidence_only);
+    composition[15].concentration: {"unit": "G_PER_L", "value": "9"} -> {"unit": "G_PER_L",
+    "value": "9"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -244,3 +618,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5404
+  title: 'MediaDive solution 5404: Main sol. J1264'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=d8dd98a4b62d93b2cad86a5b781f8623da88b764cf1f5d1cf0ab63ff59a6299e;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

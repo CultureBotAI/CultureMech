@@ -1,0 +1,281 @@
+{
+  "terminal": true,
+  "phase": "post",
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "apply",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_dsmz803_1046_1065_water.py",
+        "--apply",
+        "--reports"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-apply.log",
+      "artifact": null
+    },
+    {
+      "name": "readback",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_dsmz803_1046_1065_water.py",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-readback.log",
+      "artifact": null
+    },
+    {
+      "name": "noop",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_dsmz803_1046_1065_water.py",
+        "--apply"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-noop.log",
+      "artifact": null
+    },
+    {
+      "name": "independent-diff",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/20261008-dsmz803-1046-1065-water/audit.py",
+        "--applied",
+        "--out",
+        "reports/ingredient_concentration_curation/20261008-dsmz803-1046-1065-water/diff-audit.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-independent-diff.log",
+      "artifact": null
+    },
+    {
+      "name": "schema-MediaRecipe",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/linkml-validate",
+        "--schema",
+        "src/culturemech/schema/culturemech.yaml",
+        "--target-class",
+        "MediaRecipe",
+        "data/normalized_yaml/bacterial/KOMODO_803_SPHAEROTILUS-LEPTOTHRIX_medium.yaml",
+        "data/normalized_yaml/bacterial/sphaerotilus_leptothrix_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_1046_ANOXYBACILLUS_AMYLOLYTICUS_medium.yaml",
+        "data/normalized_yaml/bacterial/anoxybacillus_amylolyticus_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_1065_M1-NOCARDIOPSIS_ARABIA_medium.yaml",
+        "data/normalized_yaml/bacterial/m1_nocardiopsis_arabia_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-schema-MediaRecipe.log",
+      "artifact": null
+    },
+    {
+      "name": "schema-SolutionRecipe",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/linkml-validate",
+        "--schema",
+        "src/culturemech/schema/culturemech.yaml",
+        "--target-class",
+        "SolutionRecipe",
+        "data/normalized_yaml/bacterial/mediadive_1634_Main_sol_803.yaml",
+        "data/normalized_yaml/bacterial/mediadive_2114_Main_sol_1046.yaml",
+        "data/normalized_yaml/bacterial/mediadive_2155_Main_sol_1065.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-schema-SolutionRecipe.log",
+      "artifact": null
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-strict.log",
+      "artifact": null
+    },
+    {
+      "name": "ids",
+      "command": [
+        "just",
+        "assign-ids-check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-ids.log",
+      "artifact": null
+    },
+    {
+      "name": "variant-links",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_media_variant_links.py",
+        "--reports-dir",
+        "reports/ingredient_concentration_curation/20261008-dsmz803-1046-1065-water/variant-links"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-variant-links.log",
+      "artifact": null
+    },
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_dsmz803_1046_1065_water.py",
+        "tests/test_komodo_concentration_sixth_batch.py",
+        "tests/test_medium_concentration_batch.py",
+        "tests/test_solution_concentration_batch.py",
+        "tests/test_record_io.py",
+        "tests/test_concentration_plausibility.py",
+        "--junitxml",
+        "/tmp/ingredient-media-20261007/water-803-post-tests.xml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-tests.log",
+      "artifact": null
+    },
+    {
+      "name": "cumulative-diff",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-cumulative-diff.log",
+      "artifact": "reports/ingredient_concentration_curation/20261008-diff-audit-after-water-803.json"
+    },
+    {
+      "name": "coverage",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "reports/ingredient_concentration_curation/summarize_followup_coverage.py",
+        "--out",
+        "reports/ingredient_concentration_curation/20261008-followup-coverage-after-water-803.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-medium-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz13-stock-only/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-extraction-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo12-extraction/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm896-final-volume/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-jcm1105-stock-boundary/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-percent-supplements/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-direct/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-public-input-basis/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-rs-stock-boundaries/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz111-preparation/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz265-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz467-469-inputs/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph7/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-solutions-water-ph-adjustments/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo650-752-762-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz650-752-762-preparations/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-dsmz546-659-670-stocks/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261007-komodo670-source-versions/plan.json",
+        "--followup-plan",
+        "reports/ingredient_concentration_curation/20261008-dsmz803-1046-1065-water/plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-coverage.log",
+      "artifact": null
+    },
+    {
+      "name": "fast",
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-fast.log",
+      "artifact": null
+    },
+    {
+      "name": "products",
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-products.log",
+      "artifact": null
+    },
+    {
+      "name": "verify-merges",
+      "command": [
+        "just",
+        "verify-merges"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-verify-merges.log",
+      "artifact": null
+    },
+    {
+      "name": "freshness",
+      "command": [
+        "just",
+        "audit-merge-freshness",
+        "--json"
+      ],
+      "exit_code": 1,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-freshness.log",
+      "artifact": "reports/ingredient_concentration_curation/20261008-dsmz803-1046-1065-water/merge-freshness.json"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/water-803-post-diff-check.log",
+      "artifact": null
+    }
+  ],
+  "test_suites": {
+    "tests": [
+      {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "107",
+        "time": "139.159",
+        "timestamp": "2026-10-08T00:27:51.003702-07:00",
+        "hostname": "Marcins-MacBook-Pro-2.local"
+      }
+    ]
+  }
+}

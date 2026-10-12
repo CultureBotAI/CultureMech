@@ -1,0 +1,11 @@
+{
+  "terminal": true,
+  "passed": true,
+  "phase": "reports",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "report": "reports/ingredient_concentration_curation/20261009-kaminskyj-stocks/records/308.md",
+  "report_sha256": "feee92e5aa92505b26dd99f58ca59f40dd92731031e9d1ed06b196f2a27c82e2",
+  "claim_rows": 23,
+  "source_inventory_unchanged": true
+}

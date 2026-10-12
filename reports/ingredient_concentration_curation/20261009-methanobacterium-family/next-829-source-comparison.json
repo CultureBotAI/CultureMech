@@ -1,0 +1,1244 @@
+{
+  "terminal": true,
+  "state": "Exact source-table comparison, not proof of an exact medium duplicate or source-version equivalence.",
+  "baseline_source": "K829",
+  "context_sha256": "30cc0440abce94df797ecea5b5d501d1f76c94aab07f50ba734cfe748561bedf",
+  "sources": {
+    "K829": {
+      "row_count": 36,
+      "unchanged_rows": 36,
+      "added_rows": [],
+      "removed_rows": [],
+      "changed_rows": [],
+      "source_metadata_text": "Medium: DESULFUROBACTERIUM MEDIUM\nID: 829\nName: DESULFUROBACTERIUM MEDIUM\nPH Info: 6.0\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=829"
+    },
+    "K829a": {
+      "row_count": 13,
+      "unchanged_rows": 3,
+      "added_rows": [
+        [
+          "Na2S x 9 H2O",
+          "Sodium sulfide hydrate",
+          "SEED-cpd00239#cpd00971##",
+          "0.50",
+          "0.00"
+        ],
+        [
+          "Na2S2O3 x 5 H2O",
+          "Sodium thiosulphate",
+          "SEED-cpd00268#cpd00971##",
+          "2.50",
+          "0.01"
+        ],
+        [
+          "MgCl2 x 6 H2O",
+          "Magnesium chloride",
+          "SEED-cpd00099#cpd00254#cpd04877#",
+          "3.00",
+          "0.01"
+        ],
+        [
+          "CaCl2 x 2 H2O",
+          "Calcium chloride",
+          "SEED-cpd00063#cpd00099##",
+          "0.15",
+          "0.00"
+        ],
+        [
+          "KCl",
+          "KCl",
+          "SEED-cpd00099#cpd00205##",
+          "0.50",
+          "0.01"
+        ],
+        [
+          "NaCl",
+          "NaCl",
+          "SEED-cpd00099#cpd00971##",
+          "30.00",
+          "0.52"
+        ]
+      ],
+      "removed_rows": [
+        [
+          "NaHCO3",
+          "sodium bicarbonate",
+          "SEED-cpd00242#cpd00971#cpd09249#",
+          "1.00",
+          "0.01"
+        ],
+        [
+          "D(+)-Biotin",
+          "D(+)-Biotin",
+          "SEED-cpd00104###",
+          "1.99E-5",
+          "8.20E-8"
+        ],
+        [
+          "2-methylbutyric acid",
+          "2-methylbutyric acid",
+          "2-methylbutyric acid#",
+          "4.98E-3",
+          "4.88E-5"
+        ],
+        [
+          "Calcium pantothenate",
+          "Calcium pantothenate",
+          "SEED-cpd00063#cpd00644##",
+          "9.96E-5",
+          "3.86E-7"
+        ],
+        [
+          "isobutyric acid",
+          "isobutyric acid",
+          "SEED-cpd01711###",
+          "4.98E-3",
+          "5.72E-5"
+        ],
+        [
+          "Caproic acid",
+          "Caproic acid",
+          "SEED-cpd01113###",
+          "1.99E-3",
+          "1.73E-5"
+        ],
+        [
+          "3-methylbutyric acid",
+          "3-methylbutyric acid",
+          "3-methylbutyric acid#",
+          "4.98E-3",
+          "4.88E-5"
+        ],
+        [
+          "Nicotinic acid",
+          "Niacin",
+          "SEED-cpd00218###",
+          "1.99E-4",
+          "1.63E-6"
+        ],
+        [
+          "NaOH",
+          "Sodium hydroxide",
+          "SEED-cpd09244###",
+          "null",
+          "null"
+        ],
+        [
+          "CoCl2 x 6 H2O",
+          "CoCl2",
+          "SEED-cpd00099#cpd00149##",
+          "1.89E-4",
+          "7.93E-7"
+        ],
+        [
+          "CuCl2 x 2 H2O",
+          "CuCl2",
+          "SEED-cpd00058#cpd00099##",
+          "1.99E-6",
+          "1.17E-8"
+        ],
+        [
+          "Vitamin B12",
+          "Coenzyme B12",
+          "SEED-cpd00166###",
+          "9.96E-5",
+          "6.31E-8"
+        ],
+        [
+          "FeCl2 x 4 H2O",
+          "Iron chloride",
+          "SEED-cpd00099#cpd10516##",
+          "1.49E-3",
+          "7.50E-6"
+        ],
+        [
+          "Thiamine-HCl x 2 H2O",
+          "Thiamine-HCl",
+          "SEED-cpd00099#cpd00305##",
+          "1.99E-4",
+          "5.92E-7"
+        ],
+        [
+          "HCl",
+          "HCl",
+          "SEED-cpd00099###",
+          "6.69E-4",
+          "1.91E-5"
+        ],
+        [
+          "ZnCl2",
+          "ZnCl2",
+          "SEED-cpd00034#cpd00099##",
+          "6.95E-5",
+          "5.15E-7"
+        ],
+        [
+          "MnCl2 x 4 H2O",
+          "MnCl2",
+          "SEED-cpd00030#cpd00099##",
+          "9.94E-5",
+          "5.03E-7"
+        ],
+        [
+          "Pyridoxine HCl",
+          "Pyridoxine HCl",
+          "SEED-cpd00099#cpd00263##",
+          "2.99E-4",
+          "1.46E-6"
+        ],
+        [
+          "Na2MoO4 x 2 H2O",
+          "Na2MoO4",
+          "SEED-cpd00971#cpd11145##",
+          "3.58E-5",
+          "1.48E-7"
+        ],
+        [
+          "p-Aminobenzoic acid",
+          "p Aminobenzoic acid (PABA)",
+          "SEED-cpd00443###",
+          "7.97E-5",
+          "5.86E-7"
+        ],
+        [
+          "Sulfur",
+          "Sulfur",
+          "SEED-cpd00074###",
+          "9.96",
+          "0.31"
+        ],
+        [
+          "Na2WO4 x 2 H2O",
+          "Na2WO4",
+          "SEED-cpd00971#cpd15574##",
+          "3.98E-6",
+          "2.70E-8"
+        ],
+        [
+          "Na2SeO3 x 5 H2O",
+          "Sodium selenite",
+          "SEED-cpd00971#cpd03387##",
+          "2.99E-6",
+          "1.12E-8"
+        ],
+        [
+          "Valeric acid",
+          "Valeric acid",
+          "SEED-cpd00597###",
+          "4.98E-3",
+          "4.93E-5"
+        ],
+        [
+          "Sea salt",
+          "Sea salt",
+          "rich-seawater#",
+          "29.88",
+          "null"
+        ],
+        [
+          "NiCl2 x 6 H2O",
+          "NiCl2",
+          "SEED-cpd00099#cpd00244##",
+          "2.38E-5",
+          "1.00E-7"
+        ],
+        [
+          "Na2-dithionite",
+          "Na2-dithionite",
+          "dithionite#",
+          "0.02",
+          "0.00"
+        ],
+        [
+          "H3BO3",
+          "Boric acid",
+          "SEED-cpd09225###",
+          "5.96E-6",
+          "9.61E-8"
+        ],
+        [
+          "Succinic acid",
+          "Succinic acid",
+          "SEED-cpd00036###",
+          "5.98E-3",
+          "5.15E-5"
+        ]
+      ],
+      "changed_rows": [
+        {
+          "base": [
+            "KH2PO4",
+            "Potassium dihydrogen phosphate",
+            "SEED-cpd00009#cpd00205##",
+            "0.35",
+            "0.00"
+          ],
+          "variant": [
+            "KH2PO4",
+            "Potassium dihydrogen phosphate",
+            "SEED-cpd00009#cpd00205##",
+            "0.20",
+            "0.00"
+          ]
+        },
+        {
+          "base": [
+            "NH4Cl",
+            "Ammonium chloride",
+            "SEED-cpd00013#cpd00099##",
+            "1.00",
+            "0.02"
+          ],
+          "variant": [
+            "NH4Cl",
+            "Ammonium chloride",
+            "SEED-cpd00013#cpd00099##",
+            "0.50",
+            "0.01"
+          ]
+        },
+        {
+          "base": [
+            "Resazurin",
+            "Resazurin",
+            "SEED-cpd08053###",
+            "4.98E-4",
+            "2.17E-6"
+          ],
+          "variant": [
+            "Resazurin",
+            "Resazurin",
+            "SEED-cpd08053###",
+            "5.00E-4",
+            "2.18E-6"
+          ]
+        },
+        {
+          "base": [
+            "MES",
+            "MES(2-N-Morpholino Ethane Sulfonic acid)",
+            "MES#",
+            "1.94",
+            "0.01"
+          ],
+          "variant": [
+            "MES",
+            "MES(2-N-Morpholino Ethane Sulfonic acid)",
+            "MES#",
+            "1.95",
+            "0.01"
+          ]
+        }
+      ],
+      "source_metadata_text": "Medium: DESULFUROBACTERIUM ATLANTICUM MEDIUM\nID: 829a\nName: DESULFUROBACTERIUM ATLANTICUM MEDIUM\nPH Info: 6.0\nIs Complex: false\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=829a"
+    },
+    "K829.1": {
+      "row_count": 36,
+      "unchanged_rows": 35,
+      "added_rows": [
+        [
+          "Yeast extract",
+          "Yeast extract",
+          "rich-peptone#",
+          "0.50",
+          "null"
+        ]
+      ],
+      "removed_rows": [
+        [
+          "Sulfur",
+          "Sulfur",
+          "SEED-cpd00074###",
+          "9.96",
+          "0.31"
+        ]
+      ],
+      "changed_rows": [],
+      "source_metadata_text": "Medium: For DSM 14290\nID: 829.1\nName: For DSM 14290\nPH Info: 6.5\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=829.1"
+    },
+    "K829.2": {
+      "row_count": 37,
+      "unchanged_rows": 7,
+      "added_rows": [
+        [
+          "D-Ca-pantothenate",
+          "D-Ca-pantothenate",
+          "SEED-cpd00063#cpd00644##",
+          "5.00E-6",
+          "1.94E-8"
+        ],
+        [
+          "Lipoic acid",
+          "Lipoic acid",
+          "SEED-cpd00541###",
+          "5.00E-6",
+          "2.44E-8"
+        ],
+        [
+          "Na2S x 9 H2O",
+          "Sodium sulfide hydrate",
+          "SEED-cpd00239#cpd00971##",
+          "0.50",
+          "0.00"
+        ],
+        [
+          "Riboflavin",
+          "Riboflavin",
+          "SEED-cpd00220###",
+          "5.00E-6",
+          "1.33E-8"
+        ],
+        [
+          "CoSO4 x 7 H2O",
+          "CoSO4",
+          "SEED-cpd00048#cpd00149##",
+          "1.80E-4",
+          "6.38E-7"
+        ],
+        [
+          "MgSO4 x 7 H2O",
+          "Magnesium sulfate",
+          "SEED-cpd00048#cpd00254##",
+          "3.00E-3",
+          "1.21E-5"
+        ],
+        [
+          "Folic acid",
+          "Folic acid",
+          "SEED-cpd00393###",
+          "2.00E-6",
+          "4.56E-9"
+        ],
+        [
+          "MnSO4 x H2O",
+          "MnSO4",
+          "SEED-cpd00030#cpd00048##",
+          "5.00E-4",
+          "2.96E-6"
+        ],
+        [
+          "CuSO4 x 5 H2O",
+          "CuSO4",
+          "SEED-cpd00048#cpd00058##",
+          "1.00E-5",
+          "4.00E-8"
+        ],
+        [
+          "Nitrilotriacetic acid",
+          "Nitrilotriacetic acid",
+          "SEED-cpd10393###",
+          "1.50E-3",
+          "7.98E-6"
+        ],
+        [
+          "KOH",
+          "KOH",
+          "SEED-cpd00001#cpd00205##",
+          "null",
+          "null"
+        ],
+        [
+          "ZnSO4 x 7 H2O",
+          "ZnSO4",
+          "SEED-cpd00034#cpd00048##",
+          "1.80E-4",
+          "6.25E-7"
+        ],
+        [
+          "Biotin",
+          "Biotin",
+          "SEED-cpd00104###",
+          "2.00E-6",
+          "8.23E-9"
+        ],
+        [
+          "FeSO4 x 7 H2O",
+          "Iron sulfate",
+          "SEED-cpd00048#cpd10515##",
+          "1.00E-4",
+          "3.58E-7"
+        ],
+        [
+          "CaCl2 x 2 H2O",
+          "Calcium chloride",
+          "SEED-cpd00063#cpd00099##",
+          "1.00E-4",
+          "6.84E-7"
+        ],
+        [
+          "NaCl",
+          "NaCl",
+          "SEED-cpd00099#cpd00971##",
+          "1.00E-3",
+          "1.72E-5"
+        ],
+        [
+          "KAl(SO4)2 x 12 H2O",
+          "potassium alum",
+          "alum#",
+          "2.00E-5",
+          "4.20E-8"
+        ]
+      ],
+      "removed_rows": [
+        [
+          "D(+)-Biotin",
+          "D(+)-Biotin",
+          "SEED-cpd00104###",
+          "1.99E-5",
+          "8.20E-8"
+        ],
+        [
+          "2-methylbutyric acid",
+          "2-methylbutyric acid",
+          "2-methylbutyric acid#",
+          "4.98E-3",
+          "4.88E-5"
+        ],
+        [
+          "Calcium pantothenate",
+          "Calcium pantothenate",
+          "SEED-cpd00063#cpd00644##",
+          "9.96E-5",
+          "3.86E-7"
+        ],
+        [
+          "isobutyric acid",
+          "isobutyric acid",
+          "SEED-cpd01711###",
+          "4.98E-3",
+          "5.72E-5"
+        ],
+        [
+          "Caproic acid",
+          "Caproic acid",
+          "SEED-cpd01113###",
+          "1.99E-3",
+          "1.73E-5"
+        ],
+        [
+          "3-methylbutyric acid",
+          "3-methylbutyric acid",
+          "3-methylbutyric acid#",
+          "4.98E-3",
+          "4.88E-5"
+        ],
+        [
+          "NaOH",
+          "Sodium hydroxide",
+          "SEED-cpd09244###",
+          "null",
+          "null"
+        ],
+        [
+          "CoCl2 x 6 H2O",
+          "CoCl2",
+          "SEED-cpd00099#cpd00149##",
+          "1.89E-4",
+          "7.93E-7"
+        ],
+        [
+          "CuCl2 x 2 H2O",
+          "CuCl2",
+          "SEED-cpd00058#cpd00099##",
+          "1.99E-6",
+          "1.17E-8"
+        ],
+        [
+          "FeCl2 x 4 H2O",
+          "Iron chloride",
+          "SEED-cpd00099#cpd10516##",
+          "1.49E-3",
+          "7.50E-6"
+        ],
+        [
+          "HCl",
+          "HCl",
+          "SEED-cpd00099###",
+          "6.69E-4",
+          "1.91E-5"
+        ],
+        [
+          "ZnCl2",
+          "ZnCl2",
+          "SEED-cpd00034#cpd00099##",
+          "6.95E-5",
+          "5.15E-7"
+        ],
+        [
+          "MnCl2 x 4 H2O",
+          "MnCl2",
+          "SEED-cpd00030#cpd00099##",
+          "9.94E-5",
+          "5.03E-7"
+        ],
+        [
+          "Na2WO4 x 2 H2O",
+          "Na2WO4",
+          "SEED-cpd00971#cpd15574##",
+          "3.98E-6",
+          "2.70E-8"
+        ],
+        [
+          "Valeric acid",
+          "Valeric acid",
+          "SEED-cpd00597###",
+          "4.98E-3",
+          "4.93E-5"
+        ],
+        [
+          "Succinic acid",
+          "Succinic acid",
+          "SEED-cpd00036###",
+          "5.98E-3",
+          "5.15E-5"
+        ]
+      ],
+      "changed_rows": [
+        {
+          "base": [
+            "Nicotinic acid",
+            "Niacin",
+            "SEED-cpd00218###",
+            "1.99E-4",
+            "1.63E-6"
+          ],
+          "variant": [
+            "Nicotinic acid",
+            "Niacin",
+            "SEED-cpd00218###",
+            "5.00E-6",
+            "4.10E-8"
+          ]
+        },
+        {
+          "base": [
+            "Vitamin B12",
+            "Coenzyme B12",
+            "SEED-cpd00166###",
+            "9.96E-5",
+            "6.31E-8"
+          ],
+          "variant": [
+            "Vitamin B12",
+            "Coenzyme B12",
+            "SEED-cpd00166###",
+            "1.00E-7",
+            "6.33E-11"
+          ]
+        },
+        {
+          "base": [
+            "Thiamine-HCl x 2 H2O",
+            "Thiamine-HCl",
+            "SEED-cpd00099#cpd00305##",
+            "1.99E-4",
+            "5.92E-7"
+          ],
+          "variant": [
+            "Thiamine-HCl x 2 H2O",
+            "Thiamine-HCl",
+            "SEED-cpd00099#cpd00305##",
+            "5.00E-6",
+            "1.49E-8"
+          ]
+        },
+        {
+          "base": [
+            "Pyridoxine HCl",
+            "Pyridoxine HCl",
+            "SEED-cpd00099#cpd00263##",
+            "2.99E-4",
+            "1.46E-6"
+          ],
+          "variant": [
+            "Pyridoxine HCl",
+            "Pyridoxine HCl",
+            "SEED-cpd00099#cpd00263##",
+            "1.00E-5",
+            "4.90E-8"
+          ]
+        },
+        {
+          "base": [
+            "Na2MoO4 x 2 H2O",
+            "Na2MoO4",
+            "SEED-cpd00971#cpd11145##",
+            "3.58E-5",
+            "1.48E-7"
+          ],
+          "variant": [
+            "Na2MoO4 x 2 H2O",
+            "Na2MoO4",
+            "SEED-cpd00971#cpd11145##",
+            "1.00E-5",
+            "4.13E-8"
+          ]
+        },
+        {
+          "base": [
+            "Resazurin",
+            "Resazurin",
+            "SEED-cpd08053###",
+            "4.98E-4",
+            "2.17E-6"
+          ],
+          "variant": [
+            "Resazurin",
+            "Resazurin",
+            "SEED-cpd08053###",
+            "5.00E-4",
+            "2.18E-6"
+          ]
+        },
+        {
+          "base": [
+            "p-Aminobenzoic acid",
+            "p Aminobenzoic acid (PABA)",
+            "SEED-cpd00443###",
+            "7.97E-5",
+            "5.86E-7"
+          ],
+          "variant": [
+            "p-Aminobenzoic acid",
+            "p Aminobenzoic acid (PABA)",
+            "SEED-cpd00443###",
+            "5.00E-6",
+            "3.68E-8"
+          ]
+        },
+        {
+          "base": [
+            "Sulfur",
+            "Sulfur",
+            "SEED-cpd00074###",
+            "9.96",
+            "0.31"
+          ],
+          "variant": [
+            "Sulfur",
+            "Sulfur",
+            "SEED-cpd00074###",
+            "10.00",
+            "0.31"
+          ]
+        },
+        {
+          "base": [
+            "Na2SeO3 x 5 H2O",
+            "Sodium selenite",
+            "SEED-cpd00971#cpd03387##",
+            "2.99E-6",
+            "1.12E-8"
+          ],
+          "variant": [
+            "Na2SeO3 x 5 H2O",
+            "Sodium selenite",
+            "SEED-cpd00971#cpd03387##",
+            "3.00E-7",
+            "1.13E-9"
+          ]
+        },
+        {
+          "base": [
+            "Sea salt",
+            "Sea salt",
+            "rich-seawater#",
+            "29.88",
+            "null"
+          ],
+          "variant": [
+            "Sea salt",
+            "Sea salt",
+            "rich-seawater#",
+            "30.00",
+            "null"
+          ]
+        },
+        {
+          "base": [
+            "NiCl2 x 6 H2O",
+            "NiCl2",
+            "SEED-cpd00099#cpd00244##",
+            "2.38E-5",
+            "1.00E-7"
+          ],
+          "variant": [
+            "NiCl2 x 6 H2O",
+            "NiCl2",
+            "SEED-cpd00099#cpd00244##",
+            "3.00E-5",
+            "1.26E-7"
+          ]
+        },
+        {
+          "base": [
+            "H3BO3",
+            "Boric acid",
+            "SEED-cpd09225###",
+            "5.96E-6",
+            "9.61E-8"
+          ],
+          "variant": [
+            "H3BO3",
+            "Boric acid",
+            "SEED-cpd09225###",
+            "1.00E-5",
+            "1.61E-7"
+          ]
+        },
+        {
+          "base": [
+            "MES",
+            "MES(2-N-Morpholino Ethane Sulfonic acid)",
+            "MES#",
+            "1.94",
+            "0.01"
+          ],
+          "variant": [
+            "MES",
+            "MES(2-N-Morpholino Ethane Sulfonic acid)",
+            "MES#",
+            "1.95",
+            "0.01"
+          ]
+        }
+      ],
+      "source_metadata_text": "Medium: For DSM 15218, DSM 15521, DSM 15522, DSM 16304\nID: 829.2\nName: For DSM 15218, DSM 15521, DSM 15522, DSM 16304\nPH Info: 6.0 - 6.5\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=829.2"
+    },
+    "K829.3": {
+      "row_count": 30,
+      "unchanged_rows": 7,
+      "added_rows": [],
+      "removed_rows": [
+        [
+          "2-methylbutyric acid",
+          "2-methylbutyric acid",
+          "2-methylbutyric acid#",
+          "4.98E-3",
+          "4.88E-5"
+        ],
+        [
+          "isobutyric acid",
+          "isobutyric acid",
+          "SEED-cpd01711###",
+          "4.98E-3",
+          "5.72E-5"
+        ],
+        [
+          "Caproic acid",
+          "Caproic acid",
+          "SEED-cpd01113###",
+          "1.99E-3",
+          "1.73E-5"
+        ],
+        [
+          "3-methylbutyric acid",
+          "3-methylbutyric acid",
+          "3-methylbutyric acid#",
+          "4.98E-3",
+          "4.88E-5"
+        ],
+        [
+          "Valeric acid",
+          "Valeric acid",
+          "SEED-cpd00597###",
+          "4.98E-3",
+          "4.93E-5"
+        ],
+        [
+          "Succinic acid",
+          "Succinic acid",
+          "SEED-cpd00036###",
+          "5.98E-3",
+          "5.15E-5"
+        ]
+      ],
+      "changed_rows": [
+        {
+          "base": [
+            "D(+)-Biotin",
+            "D(+)-Biotin",
+            "SEED-cpd00104###",
+            "1.99E-5",
+            "8.20E-8"
+          ],
+          "variant": [
+            "D(+)-Biotin",
+            "D(+)-Biotin",
+            "SEED-cpd00104###",
+            "2.00E-5",
+            "8.23E-8"
+          ]
+        },
+        {
+          "base": [
+            "Calcium pantothenate",
+            "Calcium pantothenate",
+            "SEED-cpd00063#cpd00644##",
+            "9.96E-5",
+            "3.86E-7"
+          ],
+          "variant": [
+            "Calcium pantothenate",
+            "Calcium pantothenate",
+            "SEED-cpd00063#cpd00644##",
+            "1.00E-4",
+            "3.88E-7"
+          ]
+        },
+        {
+          "base": [
+            "Nicotinic acid",
+            "Niacin",
+            "SEED-cpd00218###",
+            "1.99E-4",
+            "1.63E-6"
+          ],
+          "variant": [
+            "Nicotinic acid",
+            "Niacin",
+            "SEED-cpd00218###",
+            "2.00E-4",
+            "1.64E-6"
+          ]
+        },
+        {
+          "base": [
+            "NaOH",
+            "Sodium hydroxide",
+            "SEED-cpd09244###",
+            "null",
+            "null"
+          ],
+          "variant": [
+            "NaOH",
+            "Sodium hydroxide",
+            "SEED-cpd09244###",
+            "5.00E-4",
+            "2.78E-5"
+          ]
+        },
+        {
+          "base": [
+            "CoCl2 x 6 H2O",
+            "CoCl2",
+            "SEED-cpd00099#cpd00149##",
+            "1.89E-4",
+            "7.93E-7"
+          ],
+          "variant": [
+            "CoCl2 x 6 H2O",
+            "CoCl2",
+            "SEED-cpd00099#cpd00149##",
+            "1.90E-4",
+            "7.97E-7"
+          ]
+        },
+        {
+          "base": [
+            "CuCl2 x 2 H2O",
+            "CuCl2",
+            "SEED-cpd00058#cpd00099##",
+            "1.99E-6",
+            "1.17E-8"
+          ],
+          "variant": [
+            "CuCl2 x 2 H2O",
+            "CuCl2",
+            "SEED-cpd00058#cpd00099##",
+            "2.00E-6",
+            "1.18E-8"
+          ]
+        },
+        {
+          "base": [
+            "Vitamin B12",
+            "Coenzyme B12",
+            "SEED-cpd00166###",
+            "9.96E-5",
+            "6.31E-8"
+          ],
+          "variant": [
+            "Vitamin B12",
+            "Coenzyme B12",
+            "SEED-cpd00166###",
+            "1.00E-4",
+            "6.33E-8"
+          ]
+        },
+        {
+          "base": [
+            "FeCl2 x 4 H2O",
+            "Iron chloride",
+            "SEED-cpd00099#cpd10516##",
+            "1.49E-3",
+            "7.50E-6"
+          ],
+          "variant": [
+            "FeCl2 x 4 H2O",
+            "Iron chloride",
+            "SEED-cpd00099#cpd10516##",
+            "1.50E-3",
+            "7.53E-6"
+          ]
+        },
+        {
+          "base": [
+            "Thiamine-HCl x 2 H2O",
+            "Thiamine-HCl",
+            "SEED-cpd00099#cpd00305##",
+            "1.99E-4",
+            "5.92E-7"
+          ],
+          "variant": [
+            "Thiamine-HCl x 2 H2O",
+            "Thiamine-HCl",
+            "SEED-cpd00099#cpd00305##",
+            "2.00E-4",
+            "5.95E-7"
+          ]
+        },
+        {
+          "base": [
+            "HCl",
+            "HCl",
+            "SEED-cpd00099###",
+            "6.69E-4",
+            "1.91E-5"
+          ],
+          "variant": [
+            "HCl",
+            "HCl",
+            "SEED-cpd00099###",
+            "6.72E-4",
+            "1.92E-5"
+          ]
+        },
+        {
+          "base": [
+            "ZnCl2",
+            "ZnCl2",
+            "SEED-cpd00034#cpd00099##",
+            "6.95E-5",
+            "5.15E-7"
+          ],
+          "variant": [
+            "ZnCl2",
+            "ZnCl2",
+            "SEED-cpd00034#cpd00099##",
+            "6.98E-5",
+            "5.17E-7"
+          ]
+        },
+        {
+          "base": [
+            "MnCl2 x 4 H2O",
+            "MnCl2",
+            "SEED-cpd00030#cpd00099##",
+            "9.94E-5",
+            "5.03E-7"
+          ],
+          "variant": [
+            "MnCl2 x 4 H2O",
+            "MnCl2",
+            "SEED-cpd00030#cpd00099##",
+            "9.98E-5",
+            "5.05E-7"
+          ]
+        },
+        {
+          "base": [
+            "Pyridoxine HCl",
+            "Pyridoxine HCl",
+            "SEED-cpd00099#cpd00263##",
+            "2.99E-4",
+            "1.46E-6"
+          ],
+          "variant": [
+            "Pyridoxine HCl",
+            "Pyridoxine HCl",
+            "SEED-cpd00099#cpd00263##",
+            "3.00E-4",
+            "1.47E-6"
+          ]
+        },
+        {
+          "base": [
+            "Na2MoO4 x 2 H2O",
+            "Na2MoO4",
+            "SEED-cpd00971#cpd11145##",
+            "3.58E-5",
+            "1.48E-7"
+          ],
+          "variant": [
+            "Na2MoO4 x 2 H2O",
+            "Na2MoO4",
+            "SEED-cpd00971#cpd11145##",
+            "3.59E-5",
+            "1.48E-7"
+          ]
+        },
+        {
+          "base": [
+            "Resazurin",
+            "Resazurin",
+            "SEED-cpd08053###",
+            "4.98E-4",
+            "2.17E-6"
+          ],
+          "variant": [
+            "Resazurin",
+            "Resazurin",
+            "SEED-cpd08053###",
+            "5.00E-4",
+            "2.18E-6"
+          ]
+        },
+        {
+          "base": [
+            "p-Aminobenzoic acid",
+            "p Aminobenzoic acid (PABA)",
+            "SEED-cpd00443###",
+            "7.97E-5",
+            "5.86E-7"
+          ],
+          "variant": [
+            "p-Aminobenzoic acid",
+            "p Aminobenzoic acid (PABA)",
+            "SEED-cpd00443###",
+            "8.00E-5",
+            "5.88E-7"
+          ]
+        },
+        {
+          "base": [
+            "Sulfur",
+            "Sulfur",
+            "SEED-cpd00074###",
+            "9.96",
+            "0.31"
+          ],
+          "variant": [
+            "Sulfur",
+            "Sulfur",
+            "SEED-cpd00074###",
+            "10.00",
+            "0.31"
+          ]
+        },
+        {
+          "base": [
+            "Na2WO4 x 2 H2O",
+            "Na2WO4",
+            "SEED-cpd00971#cpd15574##",
+            "3.98E-6",
+            "2.70E-8"
+          ],
+          "variant": [
+            "Na2WO4 x 2 H2O",
+            "Na2WO4",
+            "SEED-cpd00971#cpd15574##",
+            "4.00E-6",
+            "2.72E-8"
+          ]
+        },
+        {
+          "base": [
+            "Na2SeO3 x 5 H2O",
+            "Sodium selenite",
+            "SEED-cpd00971#cpd03387##",
+            "2.99E-6",
+            "1.12E-8"
+          ],
+          "variant": [
+            "Na2SeO3 x 5 H2O",
+            "Sodium selenite",
+            "SEED-cpd00971#cpd03387##",
+            "3.00E-6",
+            "1.13E-8"
+          ]
+        },
+        {
+          "base": [
+            "Sea salt",
+            "Sea salt",
+            "rich-seawater#",
+            "29.88",
+            "null"
+          ],
+          "variant": [
+            "Sea salt",
+            "Sea salt",
+            "rich-seawater#",
+            "30.00",
+            "null"
+          ]
+        },
+        {
+          "base": [
+            "NiCl2 x 6 H2O",
+            "NiCl2",
+            "SEED-cpd00099#cpd00244##",
+            "2.38E-5",
+            "1.00E-7"
+          ],
+          "variant": [
+            "NiCl2 x 6 H2O",
+            "NiCl2",
+            "SEED-cpd00099#cpd00244##",
+            "2.39E-5",
+            "1.01E-7"
+          ]
+        },
+        {
+          "base": [
+            "H3BO3",
+            "Boric acid",
+            "SEED-cpd09225###",
+            "5.96E-6",
+            "9.61E-8"
+          ],
+          "variant": [
+            "H3BO3",
+            "Boric acid",
+            "SEED-cpd09225###",
+            "5.99E-6",
+            "9.65E-8"
+          ]
+        },
+        {
+          "base": [
+            "MES",
+            "MES(2-N-Morpholino Ethane Sulfonic acid)",
+            "MES#",
+            "1.94",
+            "0.01"
+          ],
+          "variant": [
+            "MES",
+            "MES(2-N-Morpholino Ethane Sulfonic acid)",
+            "MES#",
+            "1.95",
+            "0.01"
+          ]
+        }
+      ],
+      "source_metadata_text": "Medium: For DSM 21157\nID: 829.3\nName: For DSM 21157\nPH Info: 6.0\nIs Complex: true\nIs Aerobic: true\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=829.3"
+    },
+    "K829_16661": {
+      "row_count": 36,
+      "unchanged_rows": 36,
+      "added_rows": [],
+      "removed_rows": [],
+      "changed_rows": [],
+      "source_metadata_text": "Medium: MEDIUM 829 MODIFIED FOR DSM 16661\nID: 829_16661\nName: MEDIUM 829 MODIFIED FOR DSM 16661\nPH Info: null\nIs Complex: true\nIs Aerobic: false\nIs SubMedium: false\nRemarks: \nInstructions: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf\n",
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=829_16661"
+    }
+  }
+}

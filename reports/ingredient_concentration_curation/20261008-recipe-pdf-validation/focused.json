@@ -1,0 +1,52 @@
+{
+  "phase": "focused",
+  "terminal": true,
+  "checks": [
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "src/culturemech/validation/recipe_references.py",
+        "tests/test_recipe_pdf_references.py",
+        "tests/test_recipe_references.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/recipe-pdf-focused-0.log"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "src/culturemech/validation/recipe_references.py",
+        "tests/test_recipe_pdf_references.py",
+        "tests/test_recipe_references.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/recipe-pdf-focused-1.log"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_recipe_pdf_references.py",
+        "tests/test_recipe_references.py",
+        "tests/test_dsmz_albumin_preparations.py",
+        "tests/test_medium_concentration_batch.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/recipe-pdf-focused-2.log"
+    }
+  ],
+  "inventory_before": {
+    "count": 15910,
+    "sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c"
+  },
+  "inventory_after": {
+    "count": 15910,
+    "sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c"
+  }
+}

@@ -6,8 +6,8 @@ term:
 composition:
 - preferred_term: Vitamin K1
   concentration:
-    value: '5.0'
-    unit: PERCENT_V_V
+    value: '0.0001'
+    unit: L
   term:
     id: mediadive.compound:150
     label: Vitamin K1
@@ -16,10 +16,225 @@ composition:
     label: phylloquinone
     confidence: 1.0
     match_type: exact_match
+  notes: 'Use the stated liquid input in liters. Do not infer density, percentage
+    basis, final volume, or pure-solute concentration from this dose. Source input:
+    0.1 ml; stage=Vitamin K1 solution.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/125
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Vitamin K1",
+                      "compound_id": 150,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[0].preferred_term: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. Source input: 0.1 ml; stage=Vitamin K1 solution. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[0]; accessed=2026-10-09T10:04:21.760049+00:00; capture SHA256=605a4f24c7c95bb650c17abfb1878d5e3c1fd0944c60093f96678c402a93156d.
+
+      Additional exact excerpt: {
+                      "recipe_order": 1,
+                      "compound": "Vitamin K1",
+                      "compound_id": 150,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[0].concentration: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. Source input: 0.1 ml; stage=Vitamin K1 solution. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[0]; accessed=2026-10-09T10:04:21.760049+00:00; capture SHA256=605a4f24c7c95bb650c17abfb1878d5e3c1fd0944c60093f96678c402a93156d.
+
+      Additional exact excerpt: {
+                      "recipe_order": 1,
+                      "compound": "Vitamin K1",
+                      "compound_id": 150,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+      composition[0].notes: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. Source input: 0.1 ml; stage=Vitamin K1 solution. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[0]; accessed=2026-10-09T10:04:21.760049+00:00; capture SHA256=605a4f24c7c95bb650c17abfb1878d5e3c1fd0944c60093f96678c402a93156d.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Vitamin K1",
+                      "compound_id": 150,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Ethanol",
+                      "compound_id": 201,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "95 %",
+                      "amount": 20,
+                      "unit": "ml",
+                      "g_l": 950,
+                      "mmol_l": 20620.8,
+                      "optional": 0
+                  }
+              ]
+      ingredients: Every exact source row is represented in composition. Remove only the false composition placeholder and its incomplete-composition flag; this is not chemical-identity or measured-volume certification. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T10:04:21.760049+00:00; capture SHA256=605a4f24c7c95bb650c17abfb1878d5e3c1fd0944c60093f96678c402a93156d.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Vitamin K1",
+                      "compound_id": 150,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Ethanol",
+                      "compound_id": 201,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "95 %",
+                      "amount": 20,
+                      "unit": "ml",
+                      "g_l": 950,
+                      "mmol_l": 20620.8,
+                      "optional": 0
+                  }
+              ]
+      data_quality_flags: Every exact source row is represented in composition. Remove only the false composition placeholder and its incomplete-composition flag; this is not chemical-identity or measured-volume certification. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe; accessed=2026-10-09T10:04:21.760049+00:00; capture SHA256=605a4f24c7c95bb650c17abfb1878d5e3c1fd0944c60093f96678c402a93156d.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Vitamin K1",
+                      "compound_id": 150,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Ethanol",
+                      "compound_id": 201,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "95 %",
+                      "amount": 20,
+                      "unit": "ml",
+                      "g_l": 950,
+                      "mmol_l": 20620.8,
+                      "optional": 0
+                  }
+              ]
+      notes: Archive the previous formulation nodes in append-only history. The inspected complete source defines this reconstruction, including removal of false LB expansion, placeholders and flattened stock quantities. Prior evidence content is preserved; same-reference explanations may be extended, never replaced. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T10:04:21.760049+00:00; capture SHA256=605a4f24c7c95bb650c17abfb1878d5e3c1fd0944c60093f96678c402a93156d.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Vitamin K1",
+                      "compound_id": 150,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Ethanol",
+                      "compound_id": 201,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "95 %",
+                      "amount": 20,
+                      "unit": "ml",
+                      "g_l": 950,
+                      "mmol_l": 20620.8,
+                      "optional": 0
+                  }
+              ]
+      notes: Archive the previous formulation nodes in append-only history. The inspected complete source defines this reconstruction, including removal of false LB expansion, placeholders and flattened stock quantities. Prior evidence content is preserved; same-reference explanations may be extended, never replaced. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T10:04:21.760049+00:00; capture SHA256=605a4f24c7c95bb650c17abfb1878d5e3c1fd0944c60093f96678c402a93156d.
+
+      Additional exact excerpt: [
+                  {
+                      "recipe_order": 1,
+                      "compound": "Vitamin K1",
+                      "compound_id": 150,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.1,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  },
+                  {
+                      "recipe_order": 2,
+                      "compound": "Ethanol",
+                      "compound_id": 201,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "95 %",
+                      "amount": 20,
+                      "unit": "ml",
+                      "g_l": 950,
+                      "mmol_l": 20620.8,
+                      "optional": 0
+                  }
+              ]
+      notes: The complete source does not support this old copied ingredient, placeholder or flattened stock amount in the current formulation. Preserve its exact prior value in history. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T10:04:21.760049+00:00; capture SHA256=605a4f24c7c95bb650c17abfb1878d5e3c1fd0944c60093f96678c402a93156d.
 - preferred_term: Ethanol
   concentration:
-    value: '950'
-    unit: G_PER_L
+    value: '0.02'
+    unit: L
   term:
     id: mediadive.compound:201
     label: Ethanol
@@ -28,6 +243,61 @@ composition:
     label: ethanol
     confidence: 0.9
     match_type: corpus_consensus
+  notes: 'Use the stated liquid input in liters. Do not infer density, percentage
+    basis, final volume, or pure-solute concentration from this dose. Preserve the
+    source attribute separately: 95 %. Source input: 20 ml; stage=Vitamin K1 solution.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/125
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "Ethanol",
+                      "compound_id": 201,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "95 %",
+                      "amount": 20,
+                      "unit": "ml",
+                      "g_l": 950,
+                      "mmol_l": 20620.8,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[1].preferred_term: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. Preserve the source attribute separately: 95 %. Source input: 20 ml; stage=Vitamin K1 solution. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[1]; accessed=2026-10-09T10:04:21.760049+00:00; capture SHA256=605a4f24c7c95bb650c17abfb1878d5e3c1fd0944c60093f96678c402a93156d.
+
+      Additional exact excerpt: {
+                      "recipe_order": 2,
+                      "compound": "Ethanol",
+                      "compound_id": 201,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "95 %",
+                      "amount": 20,
+                      "unit": "ml",
+                      "g_l": 950,
+                      "mmol_l": 20620.8,
+                      "optional": 0
+                  }
+      composition[1].concentration: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. Preserve the source attribute separately: 95 %. Source input: 20 ml; stage=Vitamin K1 solution. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[1]; accessed=2026-10-09T10:04:21.760049+00:00; capture SHA256=605a4f24c7c95bb650c17abfb1878d5e3c1fd0944c60093f96678c402a93156d.
+
+      Additional exact excerpt: {
+                      "recipe_order": 2,
+                      "compound": "Ethanol",
+                      "compound_id": 201,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "95 %",
+                      "amount": 20,
+                      "unit": "ml",
+                      "g_l": 950,
+                      "mmol_l": 20620.8,
+                      "optional": 0
+                  }
+      composition[1].notes: Use the stated liquid input in liters. Do not infer density, percentage basis, final volume, or pure-solute concentration from this dose. Preserve the source attribute separately: 95 %. Source input: 20 ml; stage=Vitamin K1 solution. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=data.recipe[1]; accessed=2026-10-09T10:04:21.760049+00:00; capture SHA256=605a4f24c7c95bb650c17abfb1878d5e3c1fd0944c60093f96678c402a93156d.
 preparation_notes: 'Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter
   sterilize. Store refrigerated in a brown bottle.
 
@@ -61,11 +331,166 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-10-09T11:24:57.076143+00:00'
+  curator: codex
+  action: RESTORED_SYNTHROPHOMONAS_SOURCE_FORMULATIONS_WITH_EVIDENCE
+  notes: Restore source-specific medium212 formulations, stock-stage inputs and literal
+    quantity evidence. Preserve old evidence content and history. Same-reference explanations
+    are append-only; no final-volume, density, percent-basis or growth assertion is
+    inferred.
+  source: https://mediadive.dsmz.de/rest/solution/125
+  changes: '[{"old_field": "composition[0].preferred_term", "field": "composition[0].preferred_term",
+    "old": "Vitamin K1", "new": "Vitamin K1", "status": "evidence_only", "reference":
+    "https://mediadive.dsmz.de/rest/solution/125", "snippet": "{\n                \"recipe_order\":
+    1,\n                \"compound\": \"Vitamin K1\",\n                \"compound_id\":
+    150,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[0].concentration", "field": "composition[0].concentration",
+    "old": {"value": "5.0", "unit": "PERCENT_V_V"}, "new": {"value": "0.0001", "unit":
+    "L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/125",
+    "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Vitamin K1\",\n                \"compound_id\": 150,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[0].notes", "field": "composition[0].notes",
+    "old": null, "new": "Use the stated liquid input in liters. Do not infer density,
+    percentage basis, final volume, or pure-solute concentration from this dose. Source
+    input: 0.1 ml; stage=Vitamin K1 solution.", "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/solution/125", "snippet": "{\n                \"recipe_order\":
+    1,\n                \"compound\": \"Vitamin K1\",\n                \"compound_id\":
+    150,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].preferred_term", "field": "composition[1].preferred_term",
+    "old": "Ethanol", "new": "Ethanol", "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/solution/125",
+    "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Ethanol\",\n                \"compound_id\": 201,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"95 %\",\n                \"amount\": 20,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 950,\n                \"mmol_l\": 20620.8,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].concentration", "field": "composition[1].concentration",
+    "old": {"value": "950", "unit": "G_PER_L"}, "new": {"value": "0.02", "unit": "L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/125",
+    "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Ethanol\",\n                \"compound_id\": 201,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"95 %\",\n                \"amount\": 20,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 950,\n                \"mmol_l\": 20620.8,\n                \"optional\":
+    0\n            }"}, {"old_field": "composition[1].notes", "field": "composition[1].notes",
+    "old": null, "new": "Use the stated liquid input in liters. Do not infer density,
+    percentage basis, final volume, or pure-solute concentration from this dose. Preserve
+    the source attribute separately: 95 %. Source input: 20 ml; stage=Vitamin K1 solution.",
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/solution/125",
+    "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Ethanol\",\n                \"compound_id\": 201,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"95 %\",\n                \"amount\": 20,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 950,\n                \"mmol_l\": 20620.8,\n                \"optional\":
+    0\n            }"}, {"old_field": "ingredients", "field": "ingredients", "old":
+    [{"preferred_term": "See source for composition", "concentration": {"value": "variable",
+    "unit": "VARIABLE"}}], "new": null, "status": "remove_unsupported", "reference":
+    "https://mediadive.dsmz.de/rest/solution/125", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"Vitamin K1\",\n                \"compound_id\":
+    150,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Ethanol\",\n                \"compound_id\": 201,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"95 %\",\n                \"amount\": 20,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 950,\n                \"mmol_l\": 20620.8,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "data_quality_flags", "field": "data_quality_flags",
+    "old": ["incomplete_composition"], "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/solution/125", "snippet": "[\n            {\n                \"recipe_order\":
+    1,\n                \"compound\": \"Vitamin K1\",\n                \"compound_id\":
+    150,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Ethanol\",\n                \"compound_id\": 201,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"95 %\",\n                \"amount\": 20,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 950,\n                \"mmol_l\": 20620.8,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "ingredients", "field": "notes",
+    "old": [{"preferred_term": "See source for composition", "concentration": {"value":
+    "variable", "unit": "VARIABLE"}}], "new": "Archive the previous formulation nodes
+    in append-only history. The inspected complete source defines this reconstruction,
+    including removal of false LB expansion, placeholders and flattened stock quantities.
+    Prior evidence content is preserved; same-reference explanations may be extended,
+    never replaced.\n\nArchive the previous formulation nodes in append-only history.
+    The inspected complete source defines this reconstruction, including removal of
+    false LB expansion, placeholders and flattened stock quantities. Prior evidence
+    content is preserved; same-reference explanations may be extended, never replaced.",
+    "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/solution/125",
+    "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Vitamin K1\",\n                \"compound_id\": 150,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Ethanol\",\n                \"compound_id\": 201,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"95 %\",\n                \"amount\": 20,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 950,\n                \"mmol_l\": 20620.8,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "composition", "field": "notes",
+    "old": [{"preferred_term": "Vitamin K1", "concentration": {"value": "5.0", "unit":
+    "PERCENT_V_V"}, "term": {"id": "mediadive.compound:150", "label": "Vitamin K1"},
+    "chebi_term": {"id": "CHEBI:18067", "label": "phylloquinone", "confidence": 1.0,
+    "match_type": "exact_match"}}, {"preferred_term": "Ethanol", "concentration":
+    {"value": "950", "unit": "G_PER_L"}, "term": {"id": "mediadive.compound:201",
+    "label": "Ethanol"}, "chebi_term": {"id": "CHEBI:16236", "label": "ethanol", "confidence":
+    0.9, "match_type": "corpus_consensus"}}], "new": "Archive the previous formulation
+    nodes in append-only history. The inspected complete source defines this reconstruction,
+    including removal of false LB expansion, placeholders and flattened stock quantities.
+    Prior evidence content is preserved; same-reference explanations may be extended,
+    never replaced.\n\nArchive the previous formulation nodes in append-only history.
+    The inspected complete source defines this reconstruction, including removal of
+    false LB expansion, placeholders and flattened stock quantities. Prior evidence
+    content is preserved; same-reference explanations may be extended, never replaced.",
+    "status": "evidence_only", "reference": "https://mediadive.dsmz.de/rest/solution/125",
+    "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Vitamin K1\",\n                \"compound_id\": 150,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Ethanol\",\n                \"compound_id\": 201,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"95 %\",\n                \"amount\": 20,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 950,\n                \"mmol_l\": 20620.8,\n                \"optional\":
+    0\n            }\n        ]"}, {"old_field": "ingredients[0].concentration", "field":
+    "notes", "old": {"value": "variable", "unit": "VARIABLE"}, "new": "Archive the
+    previous formulation nodes in append-only history. The inspected complete source
+    defines this reconstruction, including removal of false LB expansion, placeholders
+    and flattened stock quantities. Prior evidence content is preserved; same-reference
+    explanations may be extended, never replaced.\n\nArchive the previous formulation
+    nodes in append-only history. The inspected complete source defines this reconstruction,
+    including removal of false LB expansion, placeholders and flattened stock quantities.
+    Prior evidence content is preserved; same-reference explanations may be extended,
+    never replaced.", "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/solution/125",
+    "snippet": "[\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Vitamin K1\",\n                \"compound_id\": 150,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Ethanol\",\n                \"compound_id\": 201,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"95 %\",\n                \"amount\": 20,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 950,\n                \"mmol_l\": 20620.8,\n                \"optional\":
+    0\n            }\n        ]"}]'
 category: bacterial
+notes: |-
+  Archive the previous formulation nodes in append-only history. The inspected complete source defines this reconstruction, including removal of false LB expansion, placeholders and flattened stock quantities. Prior evidence content is preserved; same-reference explanations may be extended, never replaced.
+
+  Archive the previous formulation nodes in append-only history. The inspected complete source defines this reconstruction, including removal of false LB expansion, placeholders and flattened stock quantities. Prior evidence content is preserved; same-reference explanations may be extended, never replaced.
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/125
+  title: Vitamin K1 solution
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-09;
+    capture_sha256=605a4f24c7c95bb650c17abfb1878d5e3c1fd0944c60093f96678c402a93156d.
+    Individual authors and publication year not supplied; copyright/access years are
+    not publication years. Source-scoped formulation evidence, not organism-growth
+    evidence.

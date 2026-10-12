@@ -17,278 +17,218 @@ ingredients:
   term:
     id: CHEBI:30769
     label: citric acid
-  concentration:
-    value: '0.00495049'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30769
     label: citric acid
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.990099'
-    unit: G_PER_L
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: Bacto peptone
-  concentration:
-    value: '4.9505'
-    unit: G_PER_L
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: Sulfur
-  term:
-    id: CHEBI:26833
-    label: sulfur atom
-  concentration:
-    value: '29.703'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26833
-    label: sulfur atom
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-  concentration:
-    value: '0.49505'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-  notes: Copied from referenced JCM Medium 151
+  notes: |-
+    Copied from referenced JCM Medium 151
+
+    Source batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J151
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 3,
+                              "compound": "Citric acid",
+                              "compound_id": 348,
+                              "amount": 5,
+                              "unit": "mg",
+                              "g_l": 0.00495049,
+                              "mmol_l": 0.0257677,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[0].concentration: Source batch input: 5 mg. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[2];
+      accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+  - reference: https://mediadive.dsmz.de/rest/medium/J261
+    supports: SUPPORT
+    snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+      peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+    explanation: 'ingredients[0].notes: This unchanged constituent belongs to the
+      explicitly referenced base formulation, at its stated preparation stage, not
+      an additive copy of the whole parent medium. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+      accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+    supports: SUPPORT
+    snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+      peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+    explanation: 'ingredients[0].notes: Original JCM261 corroborates the explicit
+      variant instruction. This unchanged constituent belongs to the explicitly referenced
+      base formulation, at its stated preparation stage, not an additive copy of the
+      whole parent medium. No final-medium volume, percentage basis, density or chemical
+      grounding is inferred. Locator=original recipe text; accessed=2026-10-08T14:03:00.788987+00:00;
+      capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
     label: Resazurin
-  concentration:
-    value: '0.000990099'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:8806
     label: Resazurin
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
+  notes: |-
+    Copied from referenced JCM Medium 151
+
+    Source batch input: 1 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J151
+    supports: SUPPORT
+    snippet: |-
+      {
+                              "recipe_order": 8,
+                              "compound": "Resazurin",
+                              "compound_id": 25,
+                              "amount": 1,
+                              "unit": "mg",
+                              "g_l": 0.000990099,
+                              "mmol_l": 0.00431999,
+                              "optional": 0
+                          }
+    explanation: 'ingredients[1].concentration: Source batch input: 1 mg. Final preparation
+      volume is not independently established; the unsupported g/L assertion is withdrawn,
+      not replaced by an assumed one-liter concentration. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[7];
+      accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+  - reference: https://mediadive.dsmz.de/rest/medium/J261
+    supports: SUPPORT
+    snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+      peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+    explanation: 'ingredients[1].notes: This unchanged constituent belongs to the
+      explicitly referenced base formulation, at its stated preparation stage, not
+      an additive copy of the whole parent medium. No final-medium volume, percentage
+      basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+      accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+    supports: SUPPORT
+    snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+      peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+    explanation: 'ingredients[1].notes: Original JCM261 corroborates the explicit
+      variant instruction. This unchanged constituent belongs to the explicitly referenced
+      base formulation, at its stated preparation stage, not an additive copy of the
+      whole parent medium. No final-medium volume, percentage basis, density or chemical
+      grounding is inferred. Locator=original recipe text; accessed=2026-10-08T14:03:00.788987+00:00;
+      capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+- preferred_term: Yeast extract
   concentration:
-    value: '14.85'
+    value: '2'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 13.85, 1.0] | Copied from JCM Medium 151'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
+  notes: |-
+    Copied from referenced JCM Medium 151
+
+    Explicit final variant concentration; replaces the parent's amount, not added on top of it. No inferred final-volume arithmetic.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J261
+    supports: SUPPORT
+    snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+      peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+    explanation: 'ingredients[2].concentration: Explicit final variant concentration;
+      replaces the parent''s amount, not added on top of it. No inferred final-volume
+      arithmetic. No final-medium volume, percentage basis, density or chemical grounding
+      is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T14:02:59.384167+00:00;
+      capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+    supports: SUPPORT
+    snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+      peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+    explanation: 'ingredients[2].concentration: Original JCM261 corroborates the explicit
+      variant instruction. Explicit final variant concentration; replaces the parent''s
+      amount, not added on top of it. No inferred final-volume arithmetic. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+- preferred_term: Bacto peptone
   concentration:
-    value: '6.5'
+    value: '2'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 3.5, 3.0] | Copied from JCM Medium 151'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
+  notes: |-
+    Copied from referenced JCM Medium 151
+
+    Explicit final variant concentration; replaces the parent's amount, not added on top of it. No inferred final-volume arithmetic.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J261
+    supports: SUPPORT
+    snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+      peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+    explanation: 'ingredients[3].concentration: Explicit final variant concentration;
+      replaces the parent''s amount, not added on top of it. No inferred final-volume
+      arithmetic. No final-medium volume, percentage basis, density or chemical grounding
+      is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T14:02:59.384167+00:00;
+      capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+    supports: SUPPORT
+    snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+      peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+    explanation: 'ingredients[3].concentration: Original JCM261 corroborates the explicit
+      variant instruction. Explicit final variant concentration; replaces the parent''s
+      amount, not added on top of it. No inferred final-volume arithmetic. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+- preferred_term: Na2S2O3 x 5H2O
   concentration:
-    value: '2.75'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  concentration:
-    value: '0.325'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: NaBr
-  term:
-    id: CHEBI:63004
-    label: sodium bromide
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63004
-    label: sodium bromide
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  concentration:
-    value: '0.025'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.015, 0.01] | Copied from JCM Medium 151'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:33118
-    label: boric acid
-- preferred_term: SrCl2 x 6 H2O
-  term:
-    id: CHEBI:36385
-    label: strontium dichloride hexahydrate
-  concentration:
-    value: '0.0075'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:36385
-    label: strontium dichloride hexahydrate
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: KI
-  term:
-    id: CHEBI:8346
-    label: potassium iodide
-  concentration:
-    value: 5e-05
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000232
-    label: KI
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: CaCl2
-  term:
-    id: CHEBI:3312
-    label: calcium dichloride
-  concentration:
-    value: '0.75'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:3312
-    label: calcium dichloride
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
-  term:
-    id: CHEBI:86149
-    label: ammonium nickel sulfate hexahydrate
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86149
-    label: ammonium nickel sulfate hexahydrate
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: Nitrilotriacetic acid
-  term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: MnSO4 x n H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: Copied from referenced JCM Medium 151
-  term:
-    id: CHEBI:86360
-    label: manganese(II) sulfate
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: CoSO4 x 7 H2O
-  term:
-    id: CHEBI:91244
-    label: cobalt(2+) sulfate heptahydrate
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:91244
-    label: cobalt(2+) sulfate heptahydrate
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: CuSO4 x 5 H2O
-  term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: AlK(SO4)2
-  term:
-    id: CHEBI:86463
-    label: potassium aluminium sulfate
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86463
-    label: potassium aluminium sulfate
-  notes: Copied from referenced JCM Medium 151
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-  notes: Copied from referenced JCM Medium 151
+  notes: Explicit final variant concentration; replaces the parent's amount, not added
+    on top of it. No inferred final-volume arithmetic.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J261
+    supports: SUPPORT
+    snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+      peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+    explanation: 'ingredients[4].concentration: Explicit final variant concentration;
+      replaces the parent''s amount, not added on top of it. No inferred final-volume
+      arithmetic. No final-medium volume, percentage basis, density or chemical grounding
+      is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T14:02:59.384167+00:00;
+      capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+    supports: SUPPORT
+    snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+      peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+    explanation: 'ingredients[4].concentration: Original JCM261 corroborates the explicit
+      variant instruction. Explicit final variant concentration; replaces the parent''s
+      amount, not added on top of it. No inferred final-volume arithmetic. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+- preferred_term: H2SO4
+  notes: Inherited preparation reagent; no fixed dose specified. Receiving-medium
+    pH is overridden to 7.0.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J151
+    supports: SUPPORT
+    snippet: Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to 6.5
+      with H2SO4. Sterilize by filtration under a N2 atmosphere.
+    explanation: 'ingredients[5].notes: Retain the inherited titrant/atmosphere without
+      a numeric amount; parent pH 6.5 is overridden, not inherited. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+      accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+- preferred_term: N2
+  notes: Inherited preparation reagent; no fixed dose specified. Receiving-medium
+    pH is overridden to 7.0.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J151
+    supports: SUPPORT
+    snippet: Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to 6.5
+      with H2SO4. Sterilize by filtration under a N2 atmosphere.
+    explanation: 'ingredients[6].notes: Retain the inherited titrant/atmosphere without
+      a numeric amount; parent pH 6.5 is overridden, not inherited. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+      accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
   description: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
     peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+- step_number: 2
+  action: FILTER
+  description: Apply the base-medium filtration under N2, with sulfur omitted and
+    sodium sulfide prepared separately. The variant overrides receiving-medium pH
+    to 7.0.
+- step_number: 3
+  action: MIX
+  description: Before inoculation, add the separately prepared sterile sodium sulfide
+    solution. Apply the variant's pH 7.0 override. No sulfur preparation or addition
+    is performed.
 applications:
 - Microbial cultivation
 curation_history:
@@ -329,14 +269,1860 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-08T14:34:18.972918+00:00'
+  curator: codex
+  action: RESTORED_JCM261_VARIANT_FORMULATION_WITH_EVIDENCE
+  notes: Source-defined variant overrides and reciprocal links restored. Parent formulations
+    and prior history preserved. Batch amounts and stock composition are not final-medium
+    concentrations. Unknown percentage basis/dose remains unresolved; chemical annotations
+    preserved, not recertified.
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+  changes: '[{"old_field": "parent_media", "field": "parent_media", "old": {"path":
+    "data/normalized_yaml/bacterial/JCM_J151_PYROCOCCUS_MEDIUM.yaml", "relationship":
+    "SOURCE_DUPLICATE", "id": "CultureMech:002510", "name": "pyrococcus_medium"},
+    "new": {"path": "data/normalized_yaml/archaea/JCM_J151_PYROCOCCUS_MEDIUM.yaml",
+    "relationship": "DERIVED_FROM", "id": "CultureMech:002510", "name": "pyrococcus_medium",
+    "notes": "Source-defined composite variant: final yeast extract/peptone overrides,
+    thiosulfate addition, sulfur omission and pH 7.0. DERIVED_FROM covers the combined
+    modifications; this is not a SOURCE_DUPLICATE. Earlier duplicate-candidate notes
+    are superseded.", "evidence": [{"reference": "https://mediadive.dsmz.de/rest/medium/J261",
+    "supports": "SUPPORT", "snippet": "Use Medium No. 151 with 2.0 g/L (final) yeast
+    extract, 2.0 g/L (final) peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur.
+    Adjust pH to 7.0.", "explanation": "parent_media: Correct exact tracked parent/child
+    identity and classify the explicit combined variant; preserve the parent''s formulation.
+    No final-medium volume, percentage basis, density or chemical grounding is inferred.
+    Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T14:02:59.384167+00:00;
+    capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558."},
+    {"reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261", "supports":
+    "SUPPORT", "snippet": "Use Medium No. 151 with 2.0 g/L (final) yeast extract,
+    2.0 g/L (final) peptone and 1.0 g/L Na2S2O3\u00b75H2O, and omit sulfur. Adjust
+    pH to 7.0.", "explanation": "parent_media: Original JCM261 corroborates the explicit
+    variant instruction. Correct exact tracked parent/child identity and classify
+    the explicit combined variant; preserve the parent''s formulation. No final-medium
+    volume, percentage basis, density or chemical grounding is inferred. Locator=original
+    recipe text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d."}]},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J261",
+    "snippet": "Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+    peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0."}, {"old_field":
+    "variant_relationship", "field": "variant_relationship", "old": "SOURCE_DUPLICATE",
+    "new": "DERIVED_FROM", "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J261",
+    "snippet": "Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+    peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0."}, {"old_field":
+    "variant_modifications", "field": "variant_modifications", "old": ["Same ingredient
+    and concentration signature; review as possible duplicate source record."], "new":
+    ["Set final yeast extract to 2.0 g/L, replacing the parent amount.", "Set final
+    peptone to 2.0 g/L, replacing the parent amount.", "Add sodium thiosulfate pentahydrate
+    at 1.0 g/L.", "Omit elemental sulfur and its preparation/addition steps.", "Adjust
+    receiving-medium pH to 7.0 instead of 6.5."], "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J261", "snippet": "Use Medium No. 151 with
+    2.0 g/L (final) yeast extract, 2.0 g/L (final) peptone and 1.0 g/L Na2S2O3 x 5H2O,
+    and omit sulfur. Adjust pH to 7.0."}, {"old_field": null, "field": "solutions[0].concentration",
+    "old": null, "new": {"value": "1", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Salt base solution\",\n                        \"solution_id\":
+    3803,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[6].concentration", "field": "solutions[0].composition[0].concentration",
+    "old": {"value": "14.85", "unit": "G_PER_L"}, "new": {"value": "13.85", "unit":
+    "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J151",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\":
+    13.85,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    13.85,\n                        \"mmol_l\": 236.995,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[7].concentration", "field":
+    "solutions[0].composition[1].concentration", "old": {"value": "6.5", "unit": "G_PER_L"},
+    "new": {"value": "3.5", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 3.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3.5,\n                        \"mmol_l\":
+    14.2002,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[8].concentration", "field": "solutions[0].composition[2].concentration",
+    "old": {"value": "2.75", "unit": "G_PER_L"}, "new": {"value": "2.75", "unit":
+    "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J151",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\":
+    2.75,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2.75,\n                        \"mmol_l\": 13.5266,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[9].concentration", "field":
+    "solutions[0].composition[3].concentration", "old": {"value": "0.325", "unit":
+    "G_PER_L"}, "new": {"value": "0.325", "unit": "G_PER_L"}, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"KCl\",\n                        \"compound_id\":
+    61,\n                        \"amount\": 0.325,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.325,\n                        \"mmol_l\":
+    4.35949,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[10].concentration", "field": "solutions[0].composition[4].concentration",
+    "old": {"value": "0.05", "unit": "G_PER_L"}, "new": {"value": "0.05", "unit":
+    "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J151",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"NaBr\",\n                        \"compound_id\": 353,\n                        \"amount\":
+    0.05,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.485956,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[11].concentration", "field":
+    "solutions[0].composition[5].concentration", "old": {"value": "0.025", "unit":
+    "G_PER_L"}, "new": {"value": "0.015", "unit": "G_PER_L"}, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 15,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.015,\n                        \"mmol_l\":
+    0.242561,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[12].concentration", "field": "solutions[0].composition[6].concentration",
+    "old": {"value": "0.0075", "unit": "G_PER_L"}, "new": {"value": "0.0075", "unit":
+    "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J151",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"SrCl2 x 6 H2O\",\n                        \"compound_id\": 176,\n                        \"amount\":
+    7.5,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.0075,\n                        \"mmol_l\": 0.0281302,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[13].concentration", "field":
+    "solutions[0].composition[7].concentration", "old": {"value": "5e-05", "unit":
+    "G_PER_L"}, "new": {"value": "0.00005", "unit": "G_PER_L"}, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"KI\",\n                        \"compound_id\":
+    354,\n                        \"amount\": 0.05,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 5.0e-5,\n                        \"mmol_l\":
+    0.000192793,\n                        \"optional\": 0\n                    }"},
+    {"old_field": "ingredients[14].concentration", "field": "solutions[0].composition[8].concentration",
+    "old": {"value": "0.75", "unit": "G_PER_L"}, "new": {"value": "0.75", "unit":
+    "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J151",
+    "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"CaCl2\",\n                        \"compound_id\": 81,\n                        \"amount\":
+    0.75,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.75,\n                        \"mmol_l\": 6.75797,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[15].concentration", "field":
+    "solutions[0].composition[9].concentration", "old": {"value": "0.5", "unit": "G_PER_L"},
+    "new": {"value": "0.5", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    3.67415,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[16].concentration", "field": "solutions[0].composition[10].concentration",
+    "old": {"value": "0.002", "unit": "G_PER_L"}, "new": {"value": "0.002", "unit":
+    "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J151",
+    "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"(NH4)2Ni(SO4)2 x 6 H2O\",\n                        \"compound_id\": 739,\n                        \"amount\":
+    2,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.002,\n                        \"mmol_l\": 0.00506346,\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[0].composition[11].concentration",
+    "old": null, "new": {"value": "1", "unit": "L"}, "status": "add", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "solutions[1].concentration", "old": null, "new": {"value": "0.01",
+    "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/J151",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"solution\":
+    \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[17].concentration", "field":
+    "solutions[1].composition[0].concentration", "old": {"value": "1.5", "unit": "G_PER_L"},
+    "new": {"value": "1.5", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Nitrilotriacetic acid\",\n                        \"compound_id\":
+    189,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\":
+    7.84765,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[7].concentration", "field": "solutions[1].composition[1].concentration",
+    "old": {"value": "6.5", "unit": "G_PER_L"}, "new": {"value": "3", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J151",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\":
+    3,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    3,\n                        \"mmol_l\": 12.1716,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[18].concentration", "field":
+    "solutions[1].composition[2].concentration", "old": {"value": "0.5", "unit": "G_PER_L"},
+    "new": {"value": "0.5", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"MnSO4 x n H2O\",\n                        \"compound_id\":
+    1000,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[6].concentration", "field":
+    "solutions[1].composition[3].concentration", "old": {"value": "14.85", "unit":
+    "G_PER_L"}, "new": {"value": "1", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\":
+    17.1116,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[19].concentration", "field": "solutions[1].composition[4].concentration",
+    "old": {"value": "0.1", "unit": "G_PER_L"}, "new": {"value": "0.1", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J151",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\":
+    0.1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.1,\n                        \"mmol_l\": 0.359693,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[20].concentration", "field":
+    "solutions[1].composition[5].concentration", "old": {"value": "0.1", "unit": "G_PER_L"},
+    "new": {"value": "0.1", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CoSO4 x 7 H2O\",\n                        \"compound_id\":
+    198,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.645178,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[21].concentration", "field": "solutions[1].composition[6].concentration",
+    "old": {"value": "0.1", "unit": "G_PER_L"}, "new": {"value": "0.1", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J151",
+    "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\":
+    0.1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.1,\n                        \"mmol_l\": 0.680203,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[22].concentration", "field":
+    "solutions[1].composition[7].concentration", "old": {"value": "0.1", "unit": "G_PER_L"},
+    "new": {"value": "0.1", "unit": "G_PER_L"}, "status": "correct", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\":
+    35,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.347752,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    "ingredients[23].concentration", "field": "solutions[1].composition[8].concentration",
+    "old": {"value": "0.01", "unit": "G_PER_L"}, "new": {"value": "0.01", "unit":
+    "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J151",
+    "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"CuSO4 x 5 H2O\",\n                        \"compound_id\": 121,\n                        \"amount\":
+    0.01,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.01,\n                        \"mmol_l\": 0.0400503,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[24].concentration", "field":
+    "solutions[1].composition[9].concentration", "old": {"value": "0.01", "unit":
+    "G_PER_L"}, "new": {"value": "0.01", "unit": "G_PER_L"}, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"AlK(SO4)2\",\n                        \"compound_id\":
+    1015,\n                        \"amount\": 0.01,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\":
+    0.0387289,\n                        \"optional\": 0\n                    }"},
+    {"old_field": "ingredients[11].concentration", "field": "solutions[1].composition[10].concentration",
+    "old": {"value": "0.025", "unit": "G_PER_L"}, "new": {"value": "0.01", "unit":
+    "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J151",
+    "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\":
+    0.01,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.01,\n                        \"mmol_l\": 0.161708,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[25].concentration", "field":
+    "solutions[1].composition[11].concentration", "old": {"value": "0.01", "unit":
+    "G_PER_L"}, "new": {"value": "0.01", "unit": "G_PER_L"}, "status": "correct",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 0.01,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\":
+    0.0413309,\n                        \"optional\": 0\n                    }"},
+    {"old_field": null, "field": "solutions[1].composition[12].concentration", "old":
+    null, "new": {"value": "1", "unit": "L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/J151",
+    "snippet": "{\n                        \"recipe_order\": 13,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, {"old_field": null, "field": "solutions[1].preparation_notes",
+    "old": null, "new": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH solution. Then proceed to add minerals. Adjust final pH to 7.0.", "status":
+    "add", "reference": "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "Dissolve
+    nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0."}, {"old_field": null, "field": "solutions[1].composition[13].notes",
+    "old": null, "new": "Source-explicit stock pH adjustment; no fixed dose.", "status":
+    "add", "reference": "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "Dissolve
+    nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0."}, {"old_field": "ingredients[0].concentration",
+    "field": "ingredients[0].concentration", "old": {"value": "0.00495049", "unit":
+    "G_PER_L"}, "new": null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J151",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Citric acid\",\n                        \"compound_id\": 348,\n                        \"amount\":
+    5,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.00495049,\n                        \"mmol_l\": 0.0257677,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[5].concentration", "field":
+    "ingredients[1].concentration", "old": {"value": "0.000990099", "unit": "G_PER_L"},
+    "new": null, "status": "remove_unsupported", "reference": "https://mediadive.dsmz.de/rest/medium/J151",
+    "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"amount\":
+    1,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.000990099,\n                        \"mmol_l\": 0.00431999,\n                        \"optional\":
+    0\n                    }"}, {"old_field": "ingredients[1].concentration", "field":
+    "ingredients[2].concentration", "old": {"value": "0.990099", "unit": "G_PER_L"},
+    "new": {"value": "2", "unit": "G_PER_L"}, "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J261",
+    "snippet": "Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+    peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0."}, {"old_field":
+    "ingredients[2].concentration", "field": "ingredients[3].concentration", "old":
+    {"value": "4.9505", "unit": "G_PER_L"}, "new": {"value": "2", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J261",
+    "snippet": "Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+    peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0."}, {"old_field":
+    null, "field": "ingredients[4].concentration", "old": null, "new": {"value": "1",
+    "unit": "G_PER_L"}, "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/J261",
+    "snippet": "Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+    peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0."}, {"old_field":
+    null, "field": "solutions[2].preparation_notes", "old": null, "new": "Neutralize
+    Na2S x 9H2O as a 5% solution, and autoclave under a N2 atmosphere.", "status":
+    "add", "reference": "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "Neutralize
+    Na2S x 9H2O as a 5% solution, and autoclave under a N2 atmosphere."}, {"old_field":
+    "ingredients[4].concentration", "field": "solutions[2].composition[0].concentration",
+    "old": {"value": "0.49505", "unit": "G_PER_L"}, "new": null, "status": "remove_unsupported",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.49505,\n                        \"mmol_l\":
+    2.06114,\n                        \"optional\": 0\n                    }"}, {"old_field":
+    null, "field": "ingredients[5].notes", "old": null, "new": "Inherited preparation
+    reagent; no fixed dose specified. Receiving-medium pH is overridden to 7.0.",
+    "status": "add", "reference": "https://mediadive.dsmz.de/rest/medium/J151", "snippet":
+    "Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to 6.5 with H2SO4.
+    Sterilize by filtration under a N2 atmosphere."}, {"old_field": null, "field":
+    "ingredients[6].notes", "old": null, "new": "Inherited preparation reagent; no
+    fixed dose specified. Receiving-medium pH is overridden to 7.0.", "status": "add",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J151", "snippet": "Mix ingredients,
+    except sulfur and Na2S x 9H2O, and adjust pH to 6.5 with H2SO4. Sterilize by filtration
+    under a N2 atmosphere."}, {"old_field": "ingredients[3].concentration", "field":
+    "variant_modifications", "old": {"value": "29.703", "unit": "G_PER_L"}, "new":
+    ["Set final yeast extract to 2.0 g/L, replacing the parent amount.", "Set final
+    peptone to 2.0 g/L, replacing the parent amount.", "Add sodium thiosulfate pentahydrate
+    at 1.0 g/L.", "Omit elemental sulfur and its preparation/addition steps.", "Adjust
+    receiving-medium pH to 7.0 instead of 6.5."], "status": "remove_omitted", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J261", "snippet": "Use Medium No. 151 with
+    2.0 g/L (final) yeast extract, 2.0 g/L (final) peptone and 1.0 g/L Na2S2O3 x 5H2O,
+    and omit sulfur. Adjust pH to 7.0."}, {"old_field": "preparation_steps", "field":
+    "preparation_steps", "old": [{"step_number": 1, "action": "ADJUST_PH", "description":
+    "Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final) peptone
+    and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0."}], "new": [{"step_number":
+    1, "action": "ADJUST_PH", "description": "Use Medium No. 151 with 2.0 g/L (final)
+    yeast extract, 2.0 g/L (final) peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur.
+    Adjust pH to 7.0."}, {"step_number": 2, "action": "FILTER", "description": "Apply
+    the base-medium filtration under N2, with sulfur omitted and sodium sulfide prepared
+    separately. The variant overrides receiving-medium pH to 7.0."}, {"step_number":
+    3, "action": "MIX", "description": "Before inoculation, add the separately prepared
+    sterile sodium sulfide solution. Apply the variant''s pH 7.0 override. No sulfur
+    preparation or addition is performed."}], "status": "correct", "reference": "https://mediadive.dsmz.de/rest/medium/J151",
+    "snippet": "Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to 6.5
+    with H2SO4. Sterilize by filtration under a N2 atmosphere. Steam sulfur for 3
+    hr on each of 3 successive days. Neutralize Na2S x 9H2O as a 5% solution, and
+    autoclave under a N2 atmosphere. Aseptically and anaerobically add sterile sulfur
+    to the medium. Prior to inoculation, add the sterile Na2S x 9H2O solution, and
+    readjust pH to 6.5, if necessary."}, {"omitted_node": {"preferred_term": "Sulfur",
+    "term": {"id": "CHEBI:26833", "label": "sulfur atom"}, "concentration": {"value":
+    "29.703", "unit": "G_PER_L"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:26833",
+    "label": "sulfur atom"}, "notes": "Copied from referenced JCM Medium 151"}, "reason":
+    "Source explicitly says omit sulfur; archived here, not active composition.",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261", "snippet":
+    "and omit sulfur."}]'
 data_quality_flags:
 - resolved_reference
 parent_media:
-  path: data/normalized_yaml/bacterial/JCM_J151_PYROCOCCUS_MEDIUM.yaml
-  relationship: SOURCE_DUPLICATE
+  path: data/normalized_yaml/archaea/JCM_J151_PYROCOCCUS_MEDIUM.yaml
+  relationship: DERIVED_FROM
   id: CultureMech:002510
   name: pyrococcus_medium
-variant_relationship: SOURCE_DUPLICATE
+  notes: 'Source-defined composite variant: final yeast extract/peptone overrides,
+    thiosulfate addition, sulfur omission and pH 7.0. DERIVED_FROM covers the combined
+    modifications; this is not a SOURCE_DUPLICATE. Earlier duplicate-candidate notes
+    are superseded.'
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/medium/J261
+    supports: SUPPORT
+    snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+      peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+    explanation: 'parent_media: Correct exact tracked parent/child identity and classify
+      the explicit combined variant; preserve the parent''s formulation. No final-medium
+      volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+      accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+    supports: SUPPORT
+    snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+      peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+    explanation: 'parent_media: Original JCM261 corroborates the explicit variant
+      instruction. Correct exact tracked parent/child identity and classify the explicit
+      combined variant; preserve the parent''s formulation. No final-medium volume,
+      percentage basis, density or chemical grounding is inferred. Locator=original
+      recipe text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+variant_relationship: DERIVED_FROM
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+- Set final yeast extract to 2.0 g/L, replacing the parent amount.
+- Set final peptone to 2.0 g/L, replacing the parent amount.
+- Add sodium thiosulfate pentahydrate at 1.0 g/L.
+- Omit elemental sulfur and its preparation/addition steps.
+- Adjust receiving-medium pH to 7.0 instead of 6.5.
+solutions:
+- preferred_term: Salt base solution
+  composition:
+  - preferred_term: NaCl
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    concentration:
+      value: '13.85'
+      unit: G_PER_L
+    notes: |2-
+       [Merged 2 duplicates: 13.85, 1.0] | Copied from JCM Medium 151
+
+      Source stock batch input: 13.85 g. Retain provider-declared stock g_l=13.85 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "NaCl",
+                                "compound_id": 43,
+                                "amount": 13.85,
+                                "unit": "g",
+                                "g_l": 13.85,
+                                "mmol_l": 236.995,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[0].concentration: Source stock batch
+        input: 13.85 g. Retain provider-declared stock g_l=13.85 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[0];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[0].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[0].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: MgSO4 x 7 H2O
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    concentration:
+      value: '3.5'
+      unit: G_PER_L
+    notes: |2-
+       [Merged 2 duplicates: 3.5, 3.0] | Copied from JCM Medium 151
+
+      Source stock batch input: 3.5 g. Retain provider-declared stock g_l=3.5 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "MgSO4 x 7 H2O",
+                                "compound_id": 8,
+                                "amount": 3.5,
+                                "unit": "g",
+                                "g_l": 3.5,
+                                "mmol_l": 14.2002,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[1].concentration: Source stock batch
+        input: 3.5 g. Retain provider-declared stock g_l=3.5 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[1];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[1].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[1].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: MgCl2 x 6 H2O
+    term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    concentration:
+      value: '2.75'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86345
+      label: magnesium dichloride hexahydrate
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 2.75 g. Retain provider-declared stock g_l=2.75 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "MgCl2 x 6 H2O",
+                                "compound_id": 79,
+                                "amount": 2.75,
+                                "unit": "g",
+                                "g_l": 2.75,
+                                "mmol_l": 13.5266,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[2].concentration: Source stock batch
+        input: 2.75 g. Retain provider-declared stock g_l=2.75 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[2];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[2].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[2].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: KCl
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    concentration:
+      value: '0.325'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 0.325 g. Retain provider-declared stock g_l=0.325 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 4,
+                                "compound": "KCl",
+                                "compound_id": 61,
+                                "amount": 0.325,
+                                "unit": "g",
+                                "g_l": 0.325,
+                                "mmol_l": 4.35949,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[3].concentration: Source stock batch
+        input: 0.325 g. Retain provider-declared stock g_l=0.325 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[3];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[3].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[3].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: NaBr
+    term:
+      id: CHEBI:63004
+      label: sodium bromide
+    concentration:
+      value: '0.05'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63004
+      label: sodium bromide
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 0.05 g. Retain provider-declared stock g_l=0.05 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 5,
+                                "compound": "NaBr",
+                                "compound_id": 353,
+                                "amount": 0.05,
+                                "unit": "g",
+                                "g_l": 0.05,
+                                "mmol_l": 0.485956,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[4].concentration: Source stock batch
+        input: 0.05 g. Retain provider-declared stock g_l=0.05 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[4];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[4].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[4].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: H3BO3
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    concentration:
+      value: '0.015'
+      unit: G_PER_L
+    notes: |2-
+       [Merged 2 duplicates: 0.015, 0.01] | Copied from JCM Medium 151
+
+      Source stock batch input: 15 mg. Retain provider-declared stock g_l=0.015 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 6,
+                                "compound": "H3BO3",
+                                "compound_id": 37,
+                                "amount": 15,
+                                "unit": "mg",
+                                "g_l": 0.015,
+                                "mmol_l": 0.242561,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[5].concentration: Source stock batch
+        input: 15 mg. Retain provider-declared stock g_l=0.015 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[5];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[5].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[5].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: SrCl2 x 6 H2O
+    term:
+      id: CHEBI:36385
+      label: strontium dichloride hexahydrate
+    concentration:
+      value: '0.0075'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:36385
+      label: strontium dichloride hexahydrate
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 7.5 mg. Retain provider-declared stock g_l=0.0075 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 7,
+                                "compound": "SrCl2 x 6 H2O",
+                                "compound_id": 176,
+                                "amount": 7.5,
+                                "unit": "mg",
+                                "g_l": 0.0075,
+                                "mmol_l": 0.0281302,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[6].concentration: Source stock batch
+        input: 7.5 mg. Retain provider-declared stock g_l=0.0075 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[6];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[6].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[6].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: KI
+    term:
+      id: CHEBI:8346
+      label: potassium iodide
+    concentration:
+      value: '0.00005'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000232
+      label: KI
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 0.05 mg. Retain provider-declared stock g_l=5e-05 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 8,
+                                "compound": "KI",
+                                "compound_id": 354,
+                                "amount": 0.05,
+                                "unit": "mg",
+                                "g_l": 5.0e-5,
+                                "mmol_l": 0.000192793,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[7].concentration: Source stock batch
+        input: 0.05 mg. Retain provider-declared stock g_l=5e-05 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[7];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[7].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[7].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: CaCl2
+    term:
+      id: CHEBI:3312
+      label: calcium dichloride
+    concentration:
+      value: '0.75'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:3312
+      label: calcium dichloride
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 0.75 g. Retain provider-declared stock g_l=0.75 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 9,
+                                "compound": "CaCl2",
+                                "compound_id": 81,
+                                "amount": 0.75,
+                                "unit": "g",
+                                "g_l": 0.75,
+                                "mmol_l": 6.75797,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[8].concentration: Source stock batch
+        input: 0.75 g. Retain provider-declared stock g_l=0.75 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[8];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[8].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[8].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: KH2PO4
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 0.5 g. Retain provider-declared stock g_l=0.5 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 10,
+                                "compound": "KH2PO4",
+                                "compound_id": 11,
+                                "amount": 0.5,
+                                "unit": "g",
+                                "g_l": 0.5,
+                                "mmol_l": 3.67415,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[9].concentration: Source stock batch
+        input: 0.5 g. Retain provider-declared stock g_l=0.5 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[9];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[9].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[9].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
+    term:
+      id: CHEBI:86149
+      label: ammonium nickel sulfate hexahydrate
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86149
+      label: ammonium nickel sulfate hexahydrate
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 2 mg. Retain provider-declared stock g_l=0.002 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 11,
+                                "compound": "(NH4)2Ni(SO4)2 x 6 H2O",
+                                "compound_id": 739,
+                                "amount": 2,
+                                "unit": "mg",
+                                "g_l": 0.002,
+                                "mmol_l": 0.00506346,
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[10].concentration: Source stock batch
+        input: 2 mg. Retain provider-declared stock g_l=0.002 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[10];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[10].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[10].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+    notes: 'Source water batch input: 1000 ml = 1 L. This is not a measured final
+      volume. Prior duplicate-collapse notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 12,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 1000,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[0].composition[11].concentration: Source water batch
+        input: 1000 ml = 1 L. This is not a measured final volume. Prior duplicate-collapse
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[1].recipe[11];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[11].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[0].composition[11].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  concentration:
+    value: '1'
+    unit: L
+  term:
+    id: mediadive.solution:3803
+    label: Salt base solution
+  notes: 'Source stock addition: 1000 ml = 1 L per receiving batch, not grams per
+    liter or a dose per final liter.'
+- preferred_term: Trace minerals
+  composition:
+  - preferred_term: Nitrilotriacetic acid
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 1.5 g. Retain provider-declared stock g_l=1.5 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 1,
+                                "compound": "Nitrilotriacetic acid",
+                                "compound_id": 189,
+                                "amount": 1.5,
+                                "unit": "g",
+                                "g_l": 1.5,
+                                "mmol_l": 7.84765,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[0].concentration: Source stock batch
+        input: 1.5 g. Retain provider-declared stock g_l=1.5 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[0];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[0].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[0].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: MgSO4 x 7 H2O
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    concentration:
+      value: '3'
+      unit: G_PER_L
+    notes: |2-
+       [Merged 2 duplicates: 3.5, 3.0] | Copied from JCM Medium 151
+
+      Source stock batch input: 3 g. Retain provider-declared stock g_l=3 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 2,
+                                "compound": "MgSO4 x 7 H2O",
+                                "compound_id": 8,
+                                "amount": 3,
+                                "unit": "g",
+                                "g_l": 3,
+                                "mmol_l": 12.1716,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[1].concentration: Source stock batch
+        input: 3 g. Retain provider-declared stock g_l=3 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[1];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[1].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[1].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: MnSO4 x n H2O
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 0.5 g. Retain provider-declared stock g_l=0.5 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 3,
+                                "compound": "MnSO4 x n H2O",
+                                "compound_id": 1000,
+                                "amount": 0.5,
+                                "unit": "g",
+                                "g_l": 0.5,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[2].concentration: Source stock batch
+        input: 0.5 g. Retain provider-declared stock g_l=0.5 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[2];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[2].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[2].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: NaCl
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    notes: |2-
+       [Merged 2 duplicates: 13.85, 1.0] | Copied from JCM Medium 151
+
+      Source stock batch input: 1 g. Retain provider-declared stock g_l=1 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 4,
+                                "compound": "NaCl",
+                                "compound_id": 43,
+                                "amount": 1,
+                                "unit": "g",
+                                "g_l": 1,
+                                "mmol_l": 17.1116,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[3].concentration: Source stock batch
+        input: 1 g. Retain provider-declared stock g_l=1 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[3];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[3].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[3].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: FeSO4 x 7 H2O
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 0.1 g. Retain provider-declared stock g_l=0.1 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 5,
+                                "compound": "FeSO4 x 7 H2O",
+                                "compound_id": 12,
+                                "amount": 0.1,
+                                "unit": "g",
+                                "g_l": 0.1,
+                                "mmol_l": 0.359693,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[4].concentration: Source stock batch
+        input: 0.1 g. Retain provider-declared stock g_l=0.1 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[4];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[4].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[4].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: CoSO4 x 7 H2O
+    term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 0.1 g. Retain provider-declared stock g_l=0.1 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 6,
+                                "compound": "CoSO4 x 7 H2O",
+                                "compound_id": 198,
+                                "amount": 0.1,
+                                "unit": "g",
+                                "g_l": 0.1,
+                                "mmol_l": 0.645178,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[5].concentration: Source stock batch
+        input: 0.1 g. Retain provider-declared stock g_l=0.1 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[5];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[5].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[5].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: CaCl2 x 2 H2O
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 0.1 g. Retain provider-declared stock g_l=0.1 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 7,
+                                "compound": "CaCl2 x 2 H2O",
+                                "compound_id": 7,
+                                "amount": 0.1,
+                                "unit": "g",
+                                "g_l": 0.1,
+                                "mmol_l": 0.680203,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[6].concentration: Source stock batch
+        input: 0.1 g. Retain provider-declared stock g_l=0.1 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[6];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[6].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[6].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: ZnSO4 x 7 H2O
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 0.1 g. Retain provider-declared stock g_l=0.1 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 8,
+                                "compound": "ZnSO4 x 7 H2O",
+                                "compound_id": 35,
+                                "amount": 0.1,
+                                "unit": "g",
+                                "g_l": 0.1,
+                                "mmol_l": 0.347752,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[7].concentration: Source stock batch
+        input: 0.1 g. Retain provider-declared stock g_l=0.1 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[7];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[7].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[7].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: CuSO4 x 5 H2O
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 0.01 g. Retain provider-declared stock g_l=0.01 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 9,
+                                "compound": "CuSO4 x 5 H2O",
+                                "compound_id": 121,
+                                "amount": 0.01,
+                                "unit": "g",
+                                "g_l": 0.01,
+                                "mmol_l": 0.0400503,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[8].concentration: Source stock batch
+        input: 0.01 g. Retain provider-declared stock g_l=0.01 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[8];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[8].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[8].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: AlK(SO4)2
+    term:
+      id: CHEBI:86463
+      label: potassium aluminium sulfate
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86463
+      label: potassium aluminium sulfate
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 0.01 g. Retain provider-declared stock g_l=0.01 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 10,
+                                "compound": "AlK(SO4)2",
+                                "compound_id": 1015,
+                                "amount": 0.01,
+                                "unit": "g",
+                                "g_l": 0.01,
+                                "mmol_l": 0.0387289,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[9].concentration: Source stock batch
+        input: 0.01 g. Retain provider-declared stock g_l=0.01 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[9];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[9].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[9].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: H3BO3
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    notes: |2-
+       [Merged 2 duplicates: 0.015, 0.01] | Copied from JCM Medium 151
+
+      Source stock batch input: 0.01 g. Retain provider-declared stock g_l=0.01 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 11,
+                                "compound": "H3BO3",
+                                "compound_id": 37,
+                                "amount": 0.01,
+                                "unit": "g",
+                                "g_l": 0.01,
+                                "mmol_l": 0.161708,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[10].concentration: Source stock batch
+        input: 0.01 g. Retain provider-declared stock g_l=0.01 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[10];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[10].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[10].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: Na2MoO4 x 2 H2O
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source stock batch input: 0.01 g. Retain provider-declared stock g_l=0.01 only, not a final-medium concentration or an independently verified final stock volume. Prior duplicate-merge notes describe the superseded flattened record.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 12,
+                                "compound": "Na2MoO4 x 2 H2O",
+                                "compound_id": 9,
+                                "amount": 0.01,
+                                "unit": "g",
+                                "g_l": 0.01,
+                                "mmol_l": 0.0413309,
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[11].concentration: Source stock batch
+        input: 0.01 g. Retain provider-declared stock g_l=0.01 only, not a final-medium
+        concentration or an independently verified final stock volume. Prior duplicate-merge
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[11];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[11].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[11].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+    notes: 'Source water batch input: 1000 ml = 1 L. This is not a measured final
+      volume. Prior duplicate-collapse notes describe the superseded flattened record.'
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 13,
+                                "compound": "Distilled water",
+                                "compound_id": 4,
+                                "amount": 1000,
+                                "unit": "ml",
+                                "optional": 0
+                            }
+      explanation: 'solutions[1].composition[12].concentration: Source water batch
+        input: 1000 ml = 1 L. This is not a measured final volume. Prior duplicate-collapse
+        notes describe the superseded flattened record. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].recipe[12];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[12].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[1].composition[12].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  - preferred_term: KOH solution
+    notes: Source-explicit stock pH adjustment; no fixed dose.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+        Then proceed to add minerals. Adjust final pH to 7.0.
+      explanation: 'solutions[1].composition[13].notes: KOH is used only to adjust
+        the trace-stock pH; no fixed quantity given. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=data.solutions[2].steps[0].step;
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+  concentration:
+    value: '0.01'
+    unit: L
+  term:
+    id: mediadive.solution:3804
+    label: Trace minerals
+  notes: 'Source stock addition: 10 ml = 0.01 L per receiving batch, not grams per
+    liter or a dose per final liter.'
+  preparation_notes: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH
+    solution. Then proceed to add minerals. Adjust final pH to 7.0.
+- preferred_term: Sodium sulfide separately prepared solution
+  composition:
+  - preferred_term: Na2S x 9 H2O
+    term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:76209
+      label: sodium sulfide nonahydrate
+    notes: |-
+      Copied from referenced JCM Medium 151
+
+      Source batch input: 0.5 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. This is the contribution specified for the receiving medium batch, not the mass for preparing an unspecified volume of stock.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/medium/J151
+      supports: SUPPORT
+      snippet: |-
+        {
+                                "recipe_order": 7,
+                                "compound": "Na2S x 9 H2O",
+                                "compound_id": 54,
+                                "amount": 0.5,
+                                "unit": "g",
+                                "g_l": 0.49505,
+                                "mmol_l": 2.06114,
+                                "optional": 0
+                            }
+      explanation: 'solutions[2].composition[0].concentration: Source batch input:
+        0.5 g. Final preparation volume is not independently established; the unsupported
+        g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.
+        This is the contribution specified for the receiving medium batch, not the
+        mass for preparing an unspecified volume of stock. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[6];
+        accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.'
+    - reference: https://mediadive.dsmz.de/rest/medium/J261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[2].composition[0].notes: This unchanged constituent
+        belongs to the explicitly referenced base formulation, at its stated preparation
+        stage, not an additive copy of the whole parent medium. No final-medium volume,
+        percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step;
+        accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.'
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+      supports: SUPPORT
+      snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+        peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+      explanation: 'solutions[2].composition[0].notes: Original JCM261 corroborates
+        the explicit variant instruction. This unchanged constituent belongs to the
+        explicitly referenced base formulation, at its stated preparation stage, not
+        an additive copy of the whole parent medium. No final-medium volume, percentage
+        basis, density or chemical grounding is inferred. Locator=original recipe
+        text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.'
+  preparation_notes: Neutralize Na2S x 9H2O as a 5% solution, and autoclave under
+    a N2 atmosphere.
+  notes: The source's 5% label has no specified percentage basis or stock addition
+    volume. Neither is inferred. Composition notes describe the receiving-batch contribution,
+    not an unspecified stock-batch recipe.
+evidence:
+- reference: https://mediadive.dsmz.de/rest/medium/J261
+  supports: SUPPORT
+  snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+    peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+  explanation: |-
+    variant_relationship: Composite formulation variant, not an exact duplicate. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.
+
+    Additional exact excerpt: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final) peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+    variant_modifications: The final concentrations replace parent quantities and sulfur is excluded; no additive parent copy is retained. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.
+
+    Additional exact excerpt: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final) peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+    solutions[0].notes: Retain the referenced base stock as its own preparation; its batch dose is not a final concentration. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.
+
+    Additional exact excerpt: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final) peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+    solutions[1].notes: Retain the referenced base stock as its own preparation; its batch dose is not a final concentration. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.
+
+    Additional exact excerpt: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final) peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+    variant_modifications: Remove the copied elemental-sulfur node, including its quantity, from active composition. Full old node is archived in this curation event, not erased from history. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.
+
+    Additional exact excerpt: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final) peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+    preparation_steps: Explicit sulfur omission and receiving-medium pH override control the effective preparation; inherited conflicting text is retained only in cited context. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.
+
+    Additional exact excerpt: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final) peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+    ph_value: Explicit variant final pH, not inherited pH 6.5. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T14:02:59.384167+00:00; capture SHA256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+  supports: SUPPORT
+  snippet: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+    peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+  explanation: |-
+    variant_relationship: Original JCM261 corroborates the explicit variant instruction. Composite formulation variant, not an exact duplicate. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.
+
+    Additional exact excerpt: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final) peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+    variant_modifications: Original JCM261 corroborates the explicit variant instruction. The final concentrations replace parent quantities and sulfur is excluded; no additive parent copy is retained. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.
+
+    Additional exact excerpt: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final) peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+    solutions[0].notes: Original JCM261 corroborates the explicit variant instruction. Retain the referenced base stock as its own preparation; its batch dose is not a final concentration. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.
+
+    Additional exact excerpt: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final) peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+    solutions[1].notes: Original JCM261 corroborates the explicit variant instruction. Retain the referenced base stock as its own preparation; its batch dose is not a final concentration. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.
+
+    Additional exact excerpt: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final) peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+    variant_modifications: Original JCM261 corroborates the explicit variant instruction. Remove the copied elemental-sulfur node, including its quantity, from active composition. Full old node is archived in this curation event, not erased from history. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.
+
+    Additional exact excerpt: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final) peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+    preparation_steps: Original JCM261 corroborates the explicit variant instruction. Explicit sulfur omission and receiving-medium pH override control the effective preparation; inherited conflicting text is retained only in cited context. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.
+
+    Additional exact excerpt: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final) peptone and 1.0 g/L Na2S2O3·5H2O, and omit sulfur. Adjust pH to 7.0.
+    ph_value: Original JCM261 corroborates the explicit variant instruction. Explicit variant final pH, not inherited pH 6.5. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T14:03:00.788987+00:00; capture SHA256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.
+- reference: https://mediadive.dsmz.de/rest/medium/J151
+  supports: SUPPORT
+  snippet: |-
+    {
+                            "recipe_order": 1,
+                            "solution": "Salt base solution",
+                            "solution_id": 3803,
+                            "amount": 1000,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+  explanation: |-
+    solutions[0].concentration: Source stock addition: 1000 ml = 1 L per receiving batch, not grams per liter or a dose per final liter. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[0]; accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.
+
+    Additional exact excerpt: {
+                            "recipe_order": 2,
+                            "solution": "Trace minerals",
+                            "solution_id": 3804,
+                            "amount": 10,
+                            "unit": "ml",
+                            "optional": 0
+                        }
+    solutions[1].concentration: Source stock addition: 10 ml = 0.01 L per receiving batch, not grams per liter or a dose per final liter. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].recipe[1]; accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.
+
+    Additional exact excerpt: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to add minerals. Adjust final pH to 7.0.
+    solutions[1].preparation_notes: Trace-stock-only preparation; its pH instructions do not reset the receiving-medium variant pH. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[2].steps[0].step; accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.
+
+    Additional exact excerpt: Neutralize Na2S x 9H2O as a 5% solution, and autoclave under a N2 atmosphere.
+    solutions[2].preparation_notes: The source's 5% label has no specified percentage basis or stock addition volume. Neither is inferred. Composition notes describe the receiving-batch contribution, not an unspecified stock-batch recipe. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.
+
+    Additional exact excerpt: Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to 6.5 with H2SO4. Sterilize by filtration under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Neutralize Na2S x 9H2O as a 5% solution, and autoclave under a N2 atmosphere. Aseptically and anaerobically add sterile sulfur to the medium. Prior to inoculation, add the sterile Na2S x 9H2O solution, and readjust pH to 6.5, if necessary.
+    preparation_steps: Effective procedure is a curator synthesis of the inherited preparation and explicit variant overrides, not a verbatim quotation. Parent sulfur steps and receiving-medium pH 6.5 are superseded. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=data.solutions[0].steps[0].step; accessed=2026-10-08T13:22:42.640663+00:00; capture SHA256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.
+references:
+- reference: https://mediadive.dsmz.de/rest/medium/J261
+  title: JCM MEDIUM No. 261
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-08;
+    capture_sha256=976a7183a60a978dcab0be755793652e5a85b547875573c55098508079902558.
+    Authors and publication year not supplied; access/copyright year is not publication
+    year. Formulation evidence only, not growth evidence.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-08;
+    capture_sha256=2f64b31105f997668cbc06f195426434ae928ac75f0f79d322b2b9ee16be5e7d.
+    Authors and publication year not supplied; access/copyright year is not publication
+    year. Formulation evidence only, not growth evidence.
+- reference: https://mediadive.dsmz.de/rest/medium/J151
+  title: PYROCOCCUS MEDIUM
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-08;
+    capture_sha256=8fc4db6cee38e7f0c06ade4814419e938eb92733efd235fe9a946c03576d536b.
+    Authors and publication year not supplied; access/copyright year is not publication
+    year. Formulation evidence only, not growth evidence.

@@ -1,0 +1,17 @@
+{
+  "records": 3,
+  "applied": true,
+  "counts": {
+    "new_curation_history": 3,
+    "new_references": 6,
+    "new_evidence": 29,
+    "quantity_corrections": 2,
+    "preparation_records_restored": 3,
+    "new_quantity_slots": 5,
+    "stock_concentrations_rebased": 2,
+    "ingredients_relocated": 4,
+    "unsupported_quantity_slots_removed": 2
+  },
+  "complete_record_inversion": true,
+  "all_claim_excerpts_match": true
+}

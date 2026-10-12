@@ -1,0 +1,153 @@
+{
+  "terminal": true,
+  "phase": "reports",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py"
+      ],
+      "exit_code": 0,
+      "log": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/reconcile-reports-0.log",
+      "log_sha256": "476dd8333cc4669ce0eaaf6f22804720a856ac81661fb8ac6d7a25e969929ad0"
+    }
+  ],
+  "source_sha256": "2be09e9249a816360bba52b76c1f3d889e12aae7bfd90d12771f117acb01a0d1",
+  "plan_sha256": "47771aa8b0a5d36a7ae339456df36304c2cdabd7508ec526f8f269106bb14332",
+  "normalized_count": 15910,
+  "canonical_reports": {
+    "data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml.md",
+    "data/normalized_yaml/bacterial/TOGO_M694_Ruminococcus_Albus_Medium.yaml": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/applied-records/M694.md",
+    "data/normalized_yaml/bacterial/fatty_acid_mixture_medium_436.yaml": "reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/fatty_acid_mixture_medium_436.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_882_Main_sol_436.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_882_Main_sol_436.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_883_Mineral_solution_1.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_883_Mineral_solution_1.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_884_Mineral_solution_2.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_884_Mineral_solution_2.yaml.md",
+    "data/normalized_yaml/bacterial/mediadive_885_Fatty_acid_mixture.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_885_Fatty_acid_mixture.yaml.md",
+    "data/normalized_yaml/bacterial/medium_436_modified_for_dsm_18848.yaml": "reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/medium_436_modified_for_dsm_18848.yaml.md",
+    "data/normalized_yaml/bacterial/ruminococcus_albus_medium.yaml": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/ruminococcus_albus_medium.yaml.md",
+    "data/normalized_yaml/bacterial/ruminococcus_albus_medium_maltose_1g_l_starch_1g_l.yaml": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/applied-records/M2636.md"
+  },
+  "updated_canonical_reports": [
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml.md",
+      "before_sha256": "f10a168363ae4bfacc44cd209722dca30a42f961500bbab0f4f11d54809bf3d4",
+      "after_sha256": "5f01f84212c3474902d465b22ee0dfa73040086aab76e37b1f6cf3a4c5d5fd1d"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/applied-records/M694.md",
+      "before_sha256": null,
+      "after_sha256": "12576baafaa429bcc8ddc87d6d2e3555be1d2bc01cf6d64839e8fff5267d27b3",
+      "new_canonical": true
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/fatty_acid_mixture_medium_436.yaml.md",
+      "before_sha256": "121696635303010eb7831c480846d77d3895ecf3d159be07059e7f7519bbd6ca",
+      "after_sha256": "70b2a3108e729ffebd7e4ecec0804abc434dc8c1f66cf00fdd84a4384fcd3b3a"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_882_Main_sol_436.yaml.md",
+      "before_sha256": "958358c9add171351b1b2ca690b7ef2f249d223fff273c4e339a77d7a22f130c",
+      "after_sha256": "6a151af7c7065da2e40cd3a9e6c79e04f3e2808a636ea7012c89b7f11af8f952"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_883_Mineral_solution_1.yaml.md",
+      "before_sha256": "163f7cb51f7aa71bad2f722a54b457ff59ad68eeeb76f63621da976958909f5b",
+      "after_sha256": "49141013a1a7a6c42083f154ee63545aad49a3463c10e1805fd3d2c315debd90"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_884_Mineral_solution_2.yaml.md",
+      "before_sha256": "c1c38eb36a40dff735a48be2a1727b84cf4f89abd6c81ab9bb7d21267e714c84",
+      "after_sha256": "5a9fe33003062a412eb4becf126b912f00c52bb523a784f63ce3145b55a78601"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_885_Fatty_acid_mixture.yaml.md",
+      "before_sha256": "8850129c0793fcd1f5ff35bd132cbbfdf2709107e282a5c971ffafa8935d56a3",
+      "after_sha256": "1da2154700a5ce69ac25a8d4c414e9e475b7f2c55c0b8325ce9222f1e7040930"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/medium_436_modified_for_dsm_18848.yaml.md",
+      "before_sha256": "9de15149a6dd338ece1ea35d34043f73c98cfbd7b34df805864e7fd190359e26",
+      "after_sha256": "391e70f33790e3ebb4f04f9b3e8588630629692f2743e76a2fa7fb90b8c99365"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/ruminococcus_albus_medium.yaml.md",
+      "before_sha256": "6c2dd328dc3850e906537c2178cd15ffbfe9d1c0ca497e975c3454c3a23e3a99",
+      "after_sha256": "1b66c4c3a14b525c78517aa747b7fd6b0a7cac4e58c603f1366a41cae4b92d13"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-ruminococcus-albus-family/applied-records/M2636.md",
+      "before_sha256": null,
+      "after_sha256": "2ca0314d86ace9b756fce4583f386d451ee8402c14b846d0b53b5373a5946996",
+      "new_canonical": true
+    }
+  ],
+  "cumulative_audit": {
+    "stock_nodes_relocated": 825,
+    "new_quantity_slots": 364,
+    "unsupported_quantity_slots_removed": 869,
+    "new_evidence": 35437,
+    "new_curation_history": 5453,
+    "new_references": 5795,
+    "stock_stage_concentrations_rebased": 199,
+    "stock_descriptors_added": 241,
+    "quantity_corrections": 1455,
+    "stock_dose_basis_corrections": 128,
+    "copied_ingredient_nodes_replaced_by_reference": 37,
+    "ingredient_context_notes_added": 268,
+    "water_input_nodes_added": 27,
+    "recipe_context_notes_corrected": 26,
+    "parent_links_corrected": 7,
+    "source_amount_conflicts_repaired": 3,
+    "unquantified_carrier_nodes_added": 88,
+    "evidence_scopes_corrected": 172,
+    "ingredient_context_notes_corrected": 9,
+    "preparation_actions_corrected": 8,
+    "preparation_descriptions_corrected": 4,
+    "preparation_steps_added": 69,
+    "batch_mass_notes_unverified_concentrations": 48,
+    "duplicate_stock_nodes_removed": 1,
+    "variant_links_added": 8,
+    "explicit_medium_rates_verified": 3,
+    "unsupported_flags_removed": 1,
+    "child_links_corrected": 7,
+    "preparation_steps_relocated": 18,
+    "inline_variant_options_added": 14,
+    "water_input_notes_added": 9,
+    "extraction_preparations_added": 1,
+    "base_preparations_added": 9,
+    "preparation_records_restored": 3,
+    "supplement_nodes_moved_to_variants": 4,
+    "corrected_evidence_snippets": 2,
+    "stock_context_notes_corrected": 8,
+    "extraction_preparations_restructured": 2,
+    "source_version_alternatives_added": 4,
+    "copied_ingredient_nodes_removed": 3,
+    "composition_classifications_corrected": 2,
+    "final_quantity_slots_added": 1,
+    "explicitly_omitted_ingredient_nodes": 1,
+    "ingredient_source_attributions_corrected": 1,
+    "bibliographic_entries_enriched": 1,
+    "excluded_alternative_nodes_removed": 1,
+    "ingredient_labels_corrected": 1,
+    "preparation_text_encodings_corrected": 1,
+    "unquantified_solvent_nodes_added": 1,
+    "ingredient_doses_relocated_to_stock": 1,
+    "identity_conflicts_retained_unquantified": 2,
+    "unquantified_makeup_nodes_added": 1,
+    "stock_preparation_notes_added": 1,
+    "edited_records": 5245
+  },
+  "followup_unique_records": 11801,
+  "outside_this_followup": 4109,
+  "remaining_identity_candidates": {
+    "methylbutyrate_name": 38
+  },
+  "resolved_identity_candidates": [
+    "data/normalized_yaml/bacterial/KOMODO_436_RUMINOCOCCUS_ALBUS_medium.yaml",
+    "data/normalized_yaml/bacterial/TOGO_M694_Ruminococcus_Albus_Medium.yaml",
+    "data/normalized_yaml/bacterial/medium_436_modified_for_dsm_18848.yaml",
+    "data/normalized_yaml/bacterial/ruminococcus_albus_medium.yaml",
+    "data/normalized_yaml/bacterial/ruminococcus_albus_medium_maltose_1g_l_starch_1g_l.yaml"
+  ],
+  "separate_m142_queue": 71
+}

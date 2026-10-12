@@ -1,0 +1,109 @@
+{
+  "terminal": true,
+  "runtime": "Isolated Python 3.11; cached Python 3.13 where explicitly stated. Not full maintained-project environment or CI.",
+  "checks": [
+    {
+      "name": "tests",
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/DleVAxB6zgVSdlf6TbzHJ/bin/python3",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_dsmz467_469_inputs.py",
+        "tests/test_medium_concentration_review.py",
+        "tests/test_solution_concentration_review.py",
+        "-k",
+        "not applied_records",
+        "--junitxml",
+        "/tmp/ingredient-media-20261007/dsmz467-469-baseline-tests.xml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz467-469-baseline-tests.log"
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz467-469-baseline-strict.log"
+    },
+    {
+      "name": "467-dsmz-schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/ottow_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz467-469-baseline-467-dsmz-schema.log"
+    },
+    {
+      "name": "467-komodo-schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/KOMODO_467_OTTOW_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz467-469-baseline-467-komodo-schema.log"
+    },
+    {
+      "name": "467-solution-schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_959_Main_sol_467.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz467-469-baseline-467-solution-schema.log"
+    },
+    {
+      "name": "469-dsmz-schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/ym_catalase_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz467-469-baseline-469-dsmz-schema.log"
+    },
+    {
+      "name": "469-komodo-schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/KOMODO_469_YM-CATALASE_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz467-469-baseline-469-komodo-schema.log"
+    },
+    {
+      "name": "469-solution-schema",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_961_Main_sol_469.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz467-469-baseline-469-solution-schema.log"
+    }
+  ],
+  "test_suites": {
+    "tests": [
+      {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "194",
+        "time": "27.306",
+        "timestamp": "2026-10-07T17:36:28.674681-07:00",
+        "hostname": "Marcins-MacBook-Pro-2.local"
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "terminal": true,
+  "applied": true,
+  "records": [
+    {
+      "path": "data/normalized_yaml/archaea/methanomethylovorans_uponensis_medium.yaml",
+      "counts": {
+        "unsupported_quantity_slots_removed": 10,
+        "batch_mass_notes_unverified_concentrations": 7,
+        "stock_nodes_relocated": 25,
+        "new_quantity_slots": 13,
+        "water_input_nodes_added": 5,
+        "stock_stage_concentrations_rebased": 1,
+        "stock_descriptors_added": 8,
+        "new_evidence": 40,
+        "preparation_actions_corrected": 1,
+        "new_references": 3,
+        "new_curation_history": 1
+      }
+    },
+    {
+      "path": "data/normalized_yaml/archaea/methanogenium_medium.yaml",
+      "counts": {
+        "unsupported_quantity_slots_removed": 15,
+        "batch_mass_notes_unverified_concentrations": 13,
+        "stock_nodes_relocated": 27,
+        "new_quantity_slots": 8,
+        "water_input_nodes_added": 3,
+        "stock_stage_concentrations_rebased": 3,
+        "stock_descriptors_added": 5,
+        "new_evidence": 45,
+        "preparation_steps_relocated": 1,
+        "unquantified_carrier_nodes_added": 1,
+        "new_references": 1,
+        "new_curation_history": 1
+      }
+    },
+    {
+      "path": "data/normalized_yaml/archaea/TOGO_M257_Methanogenium_Medium.yaml",
+      "counts": {
+        "quantity_corrections": 1,
+        "stock_nodes_relocated": 3,
+        "unsupported_quantity_slots_removed": 16,
+        "batch_mass_notes_unverified_concentrations": 16,
+        "stock_dose_basis_corrections": 5,
+        "new_evidence": 18,
+        "preparation_steps_added": 1,
+        "new_references": 1,
+        "new_curation_history": 1
+      }
+    }
+  ],
+  "counts": {
+    "unsupported_quantity_slots_removed": 41,
+    "batch_mass_notes_unverified_concentrations": 36,
+    "stock_nodes_relocated": 55,
+    "new_quantity_slots": 21,
+    "water_input_nodes_added": 8,
+    "stock_stage_concentrations_rebased": 4,
+    "stock_descriptors_added": 13,
+    "new_evidence": 103,
+    "preparation_actions_corrected": 1,
+    "new_references": 5,
+    "new_curation_history": 3,
+    "preparation_steps_relocated": 1,
+    "unquantified_carrier_nodes_added": 1,
+    "quantity_corrections": 1,
+    "stock_dose_basis_corrections": 5,
+    "preparation_steps_added": 1
+  }
+}

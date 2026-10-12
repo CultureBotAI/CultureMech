@@ -1,5 +1,6 @@
 """Required checks must report on every PR and its actual merge queue candidate."""
 
+import subprocess
 from copy import deepcopy
 from pathlib import Path
 
@@ -89,3 +90,23 @@ def test_changed_python_uses_the_complete_merge_group_base():
     assert quality["env"]["GITHUB_EVENT_BEFORE"] == (
         "${{ github.event.merge_group.base_sha || github.event.before }}"
     )
+
+
+def test_full_ci_uses_runner_capacity_without_relaxing_its_timeout():
+    job = _load("tests.yaml")["jobs"]["corpus-and-integration"]
+    assert job["runs-on"] == "ubuntu-latest"
+    assert job["timeout-minutes"] == 40
+    step = next(s for s in job["steps"] if s.get("name") == "Run full suite with coverage floor")
+    assert step["run"] == "just test 4"
+
+
+@pytest.mark.parametrize("workers", [None, "4"])
+def test_full_recipe_keeps_all_tests_coverage_and_worker_guards(workers):
+    command = ["just", "--dry-run", "test"]
+    if workers:
+        command.append(workers)
+    result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, check=True)
+    assert (
+        f'uv run --extra dev pytest tests/ -v -n "{workers or "2"}" '
+        "--dist=loadfile --max-worker-restart=0"
+    ) in result.stdout + result.stderr

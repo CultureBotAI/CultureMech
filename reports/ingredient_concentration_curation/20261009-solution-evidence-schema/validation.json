@@ -1,0 +1,205 @@
+{
+  "terminal": true,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "records_edited": 0,
+  "new_ingredient_evidence_entries": 0,
+  "schema_gap_fixed_locally": true,
+  "schema_semantic_change": {
+    "SolutionRecipe.evidence": {
+      "description": "Evidence for solution-level formulation, nested stock additions and preparation claims. Ingredient concentration evidence belongs on the relevant composition entry. Scope each claim to its exact field path and preparation stage in the evidence explanation.",
+      "range": "EvidenceItem",
+      "multivalued": true,
+      "recommended": false,
+      "inlined_as_list": true
+    }
+  },
+  "generated_python_other_ast_unchanged": true,
+  "generated_json_other_fields_unchanged": true,
+  "focused_tests_passed": 830,
+  "strict_records_scanned": 15910,
+  "generated_documentation_files": 341,
+  "generated_docs_ignored": true,
+  "source_smoke_checks_passed": 11,
+  "normalized_sha256": "82e954649cedc505c58a3630b18afc0ddb4d9d30f77b75693172a95010987d00",
+  "ignored_files_included": true,
+  "upstream_refreshed": false,
+  "full_suite_exit_code": 1,
+  "full_suite_summary": "25 failed, 16405 passed, 19 skipped, 2 warnings in 2967.28s (0:49:27)",
+  "full_suite_coverage_collection": false,
+  "full_suite_failed_nodes": [
+    "tests/test_komodo_concentration_final_batch.py::test_exact_cohort_and_persisted_claims",
+    "tests/test_komodo_concentration_review.py::test_applied_komodo_batch_hashes_reports_and_scoped_evidence[0500-1000-24-141]",
+    "tests/test_komodo_concentration_review.py::test_applied_komodo_batch_hashes_reports_and_scoped_evidence[1000-1500-46-264]",
+    "tests/test_komodo_concentration_sixth_batch.py::test_all_500_exact_paths_have_applied_results_and_source_scoped_evidence",
+    "tests/test_markdown_links.py::test_relative_markdown_links_resolve_case_sensitively[docs/schema/ChemicalEntityTerm.md]",
+    "tests/test_markdown_links.py::test_relative_markdown_links_resolve_case_sensitively[docs/schema/CofactorDescriptor.md]",
+    "tests/test_markdown_links.py::test_relative_markdown_links_resolve_case_sensitively[docs/schema/EnvironmentTerm.md]",
+    "tests/test_markdown_links.py::test_relative_markdown_links_resolve_case_sensitively[docs/schema/IngredientDescriptor.md]",
+    "tests/test_markdown_links.py::test_relative_markdown_links_resolve_case_sensitively[docs/schema/MediaDatabaseTerm.md]",
+    "tests/test_markdown_links.py::test_relative_markdown_links_resolve_case_sensitively[docs/schema/MediaTypeDescriptor.md]",
+    "tests/test_markdown_links.py::test_relative_markdown_links_resolve_case_sensitively[docs/schema/OrganismDescriptor.md]",
+    "tests/test_markdown_links.py::test_relative_markdown_links_resolve_case_sensitively[docs/schema/OrganismTerm.md]",
+    "tests/test_markdown_links.py::test_relative_markdown_links_resolve_case_sensitively[docs/schema/PerturbationContext.md]",
+    "tests/test_markdown_links.py::test_relative_markdown_links_resolve_case_sensitively[docs/schema/SolutionDescriptor.md]",
+    "tests/test_markdown_links.py::test_relative_markdown_links_resolve_case_sensitively[docs/schema/SolutionRecipe.md]",
+    "tests/test_markdown_links.py::test_relative_markdown_links_resolve_case_sensitively[docs/schema/SourceEnvironmentDescriptor.md]",
+    "tests/test_markdown_links.py::test_relative_markdown_links_resolve_case_sensitively[docs/schema/index.md]",
+    "tests/test_mediadive_stock_concentration_evidence.py::test_applied_stock_data_and_complete_per_record_report[595-CultureMech:014713-mediadive_595_Trace_element_solution_SL-10.yaml-db9ee9381cce911a78c16d9b8c00946eff42b3c8a46858be606d6836e4b7152d-5dd4cef59e15c0ab7d35e8a89039c7f7133ff8cd08ab6c414cf52d5e48c9aeab]",
+    "tests/test_mediadive_stock_concentration_evidence.py::test_applied_stock_data_and_complete_per_record_report[5980-CultureMech:014721-mediadive_5980_Wolin_s_vitamin_solution_10x.yaml-8e54f1cdede5cc6eb56616ee7bf066af8ec0dc48e4c7cf3abc14fe30e50e36ab-2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c]",
+    "tests/test_name_term_elements.py::test_no_grounding_lacks_an_element_its_name_demands",
+    "tests/test_repair_komodo_829_desulfurobacterium_ph_score10.py::test_variants_exit_review_ranking",
+    "tests/test_repair_komodo_829_desulfurobacterium_ph_score10.py::test_parent_preserves_other_children",
+    "tests/test_repair_komodo_829_desulfurobacterium_ph_score10.py::test_repair_is_idempotent",
+    "tests/test_repair_komodo_829_desulfurobacterium_ph_score10.py::test_plan_repairs_targets_current_records",
+    "tests/test_repair_komodo_829_desulfurobacterium_ph_score10.py::test_repair_rejects_child_composition_drift"
+  ],
+  "full_suite_failures_not_waived": true,
+  "new_medium323_old_quantity_dispositions": 43,
+  "medium323_old_quantities_accounted_for": 62,
+  "remaining_grounding_records": [
+    "data/normalized_yaml/archaea/methanofollis_medium.yaml",
+    "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml",
+    "data/normalized_yaml/bacterial/synthrophomonas_medium.yaml"
+  ],
+  "receipts": {
+    "baseline": "a54cda733e093e2d656678829cb416edd51e1d1b0c8e3fef9946fe4ca29a7cde",
+    "generate-v2": "baa50d87bca2e4147ba8f8cfd9a6cb98bea33726ef50455efe83f0364aea8748",
+    "focused-v3": "2e33da294537d4ff42751c1cef09d19ad97faf83f1952c378d2e5f50988e9c1a",
+    "corpus": "d23761b67a143516c6259971742e6f492cbc9fcc742780a0dc1ee072011f3b8c",
+    "full": "e1aa585c9a4db42ed1e9b97044be294202da9b9d5b5bddd504970dee8d633be8",
+    "docs-separated": "0cde0004a7d944711f48d0eba793c16ad7869f6f8861c03d18d370e21f3d5fb8",
+    "focused-v4": "81a3a4a00a44afe183f23a9d6c4d588d5f7656952f5a53d0a19009c322691074",
+    "generate": "2065e0f60dc16042949e5e9ad3da5678206beed33ebfedd532781d2a2e4b50ae",
+    "docs-repaired": "6eedf73bf6fb3e342e4c7507ae4c29728095c135aa65f0fd9b3da53cd33d969d",
+    "s599-production-smoke": "cf5b0621b231967a18128ccdd7106111bf57ef7ead5c9bf02eafb09f81d643bd",
+    "placement-candidates": "70bcf2e9d934ac85fb165d31717b9d74e50d55e59ee51e50765f883cae65b060",
+    "stock-quantity-projection": "e3f1fe4a90038850621950fa86f6c2eb962c5aa394cb68284c1ad47b34a11acc",
+    "historical-komodo-diagnostic": "e5c78270d797919f0d0af5056b1d1ff57e7e07fec8e0b8a6f98c521b278b7172",
+    "historical-stock-diagnostic": "664d6e314a4cf3281dcc840fc1c7588c99669eed5687e8856a24c59c00dfcb1a",
+    "remaining-quantity-projection": "782f94bbf6265365962aa61b0f20edda4647dabaf33abdf10e8ebf40f8f068f2",
+    "docs-imports-probe": "0be3b46ad04db522c0d34c5db2bb9cdbe12616c51f4a2d2b73023f43ccb61479",
+    "docs-separated-probe": "62fe56df12516e27b0aa907f4b9f566c1be4eb94fb66dae3291283af30934ab6",
+    "history-candidate-tests": "0eb17149a2cbce9c7b957527195eb9f09bf955188cd0a6d413ddb764da394783",
+    "docs-candidate-tests": "39576bef47c5796428cd8307207e9885206af4d07a7f4ccf7a9d81738040ad71",
+    "legacy829-candidate-tests": "bc316d7ed2ea066e00f74084d1691faf77f5cf2ca1f13bd633243540ed4bb5af",
+    "legacy829-candidate-tests-v2": "b20604d11829feab8586013db42d1d291dd74c5ab23d1cba7acf921bf2e0ab3c",
+    "resazurin-grounding-diagnostic": "b0e83400d2d5543035953bf609f3eac5e66b8e9f284365e889a8ff4c2770976d"
+  },
+  "code_sha256": {
+    "src/culturemech/schema/culturemech.yaml": "cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6",
+    "src/culturemech/schema/culturemech_dataclasses.py": "30f368b93e5b15f5a44bfc705cec348437b031c35eb4b68b0da18db6ad4a0208",
+    "src/culturemech/schema/culturemech.schema.json": "0c6fd2908979dfbf77d1abaff09069e838998858720ec24314319a64d121f78f",
+    ".claude/skills/review-ingredient-concentrations/references/evidence-contract.md": "5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1",
+    "tests/test_dataclasses_current.py": "7ada0eaa4c8814e70e487fd62af677a9553be497c5ca480af2093d426fb37841",
+    "project.justfile": "4cef62965ed7dec05b11f6bf769c486aa0e91bfa43ead057fc297229834a121e",
+    "tests/test_solution_formulation_evidence.py": "f5a7a7b458be5f2ccf2e7cb58ad9570a3ec2e7a575615600ee88defd9872c774",
+    "tests/test_schema_docs_command.py": "c506aff9029bd2dda3b4f6ae5c9c5732993a247e60a132ee46d43be1f970c0f6",
+    "tests/fixtures/recipe_references/solution599.json": "ffe160f060239805d87d48a3010ef85e0e6827f95547ea1f4ae8e77fbc59dc00",
+    "tests/test_komodo_concentration_review.py": "70c18eb3b5a2ea9bec9f7e221baaba9a994a19e9dc4cd7efa4d0189f7be4ff32",
+    "tests/test_komodo_concentration_final_batch.py": "edbd0ce3b9f2872a9abf50a6378b98303a2315d4c44c17b3b25e06aa1940b9bc",
+    "tests/test_komodo_concentration_sixth_batch.py": "3b63069de49c3b530b86230cfdb2aed444288d6e81d164eb48f85529b796c49a",
+    "tests/test_mediadive_stock_concentration_evidence.py": "7b6bf06ac62c72a9362620189ea82ca0929b8050fa0df56a724c928357560cc4",
+    "tests/test_repair_komodo_829_desulfurobacterium_ph_score10.py": "77b115bd36e2ae76ed181ef216388608e8e2087cf47494d6ab841da0061e2eef",
+    "docs/media_growth_review_goal_prompt.md": "2b63a89dbcb7490a2530bf2c0c6dc69bc418fabbacf60a7a70f211cc6157f003"
+  },
+  "documents": {
+    "reports/ingredient_concentration_curation/README.md": "fc43256efbed15fa7877c54e4cae66ee36c30b5c3ed00e97776e54dfdab5f305",
+    "reports/ingredient_concentration_curation/20261009-solution-evidence-schema/adversarial-review.md": "7f411776841a67f1e2a3f50ea01658502dd8c443b1c9c0add08de53373ba2d65",
+    "reports/ingredient_concentration_curation/20261009-solution-evidence-schema/README.md": "6ed230962a8b80e0ba6db69752fbb8cd6344c9eed416bb379c3bff12db0fdb33"
+  },
+  "whitespace_checks": [
+    {
+      "path": "reports/ingredient_concentration_curation/README.md",
+      "scope": "whole_file",
+      "exit_code": 1
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-solution-evidence-schema/adversarial-review.md",
+      "scope": "whole_file",
+      "exit_code": 1
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261009-solution-evidence-schema/README.md",
+      "scope": "whole_file",
+      "exit_code": 1
+    },
+    {
+      "path": "src/culturemech/schema/culturemech.yaml",
+      "scope": "captured_baseline_delta",
+      "exit_code": 1
+    },
+    {
+      "path": "src/culturemech/schema/culturemech_dataclasses.py",
+      "scope": "captured_baseline_delta",
+      "exit_code": 1
+    },
+    {
+      "path": "src/culturemech/schema/culturemech.schema.json",
+      "scope": "captured_baseline_delta",
+      "exit_code": 1
+    },
+    {
+      "path": ".claude/skills/review-ingredient-concentrations/references/evidence-contract.md",
+      "scope": "captured_baseline_delta",
+      "exit_code": 1
+    },
+    {
+      "path": "tests/test_dataclasses_current.py",
+      "scope": "captured_baseline_delta",
+      "exit_code": 1
+    },
+    {
+      "path": "project.justfile",
+      "scope": "whole_file",
+      "exit_code": 1
+    },
+    {
+      "path": "tests/test_solution_formulation_evidence.py",
+      "scope": "whole_file",
+      "exit_code": 1
+    },
+    {
+      "path": "tests/test_schema_docs_command.py",
+      "scope": "whole_file",
+      "exit_code": 1
+    },
+    {
+      "path": "tests/fixtures/recipe_references/solution599.json",
+      "scope": "whole_file",
+      "exit_code": 1
+    },
+    {
+      "path": "tests/test_komodo_concentration_review.py",
+      "scope": "whole_file",
+      "exit_code": 1
+    },
+    {
+      "path": "tests/test_komodo_concentration_final_batch.py",
+      "scope": "whole_file",
+      "exit_code": 1
+    },
+    {
+      "path": "tests/test_komodo_concentration_sixth_batch.py",
+      "scope": "whole_file",
+      "exit_code": 1
+    },
+    {
+      "path": "tests/test_mediadive_stock_concentration_evidence.py",
+      "scope": "whole_file",
+      "exit_code": 1
+    },
+    {
+      "path": "tests/test_repair_komodo_829_desulfurobacterium_ph_score10.py",
+      "scope": "whole_file",
+      "exit_code": 1
+    },
+    {
+      "path": "docs/media_growth_review_goal_prompt.md",
+      "scope": "whole_file",
+      "exit_code": 1
+    }
+  ],
+  "initial_finalization_failure": "The first finalizer compared the whole generated JSON Schema against an empty file and rejected a blank line at EOF. The captured pre-edit baseline has that same EOF. Final verification checks actual baseline-to-current deltas for all baseline files, including generated Python and JSON, without changing generator output or ignoring newly introduced whitespace errors.",
+  "remaining": "All-record ingredient review, medium323 guarded proposals and source/identity decisions, global merge/freshness gates, and full-suite failures not covered by the passing targeted rerun remain open. The original full run is retained as failed, not replaced by targeted green results. No recipe quantities were applied in this schema checkpoint."
+}

@@ -1,0 +1,127 @@
+{
+  "terminal": true,
+  "phase": "baseline",
+  "runtime": "Partial locked Python 3.13; not full CI",
+  "checks": [
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "tests/test_dsmz546_659_670_stocks.py",
+        "tests/test_repair_komodo_670_ms_ph_score10.py",
+        "tests/test_dsmz650_752_762_preparations.py",
+        "tests/test_medium_concentration_review.py",
+        "tests/test_solution_concentration_review.py",
+        "tests/test_solution_merge_routing.py",
+        "tests/test_record_io.py",
+        "--junitxml=/tmp/ingredient-media-20261007/dsmz-stock-stages-baseline-tests.xml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-baseline-tests.log"
+    },
+    {
+      "name": "schema-546-komodo",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/KOMODO_546_LC_BROTH_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-baseline-schema-546-komodo.log"
+    },
+    {
+      "name": "schema-546-medium",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/lc_broth_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-baseline-schema-546-medium.log"
+    },
+    {
+      "name": "schema-546-solution",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_1205_Main_sol_546.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-baseline-schema-546-solution.log"
+    },
+    {
+      "name": "schema-659-komodo",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/KOMODO_659_M17_medium_modified.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-baseline-schema-659-komodo.log"
+    },
+    {
+      "name": "schema-659-medium",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/m17_medium_modified.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-baseline-schema-659-medium.log"
+    },
+    {
+      "name": "schema-659-solution",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_1390_Main_sol_659.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-baseline-schema-659-solution.log"
+    },
+    {
+      "name": "schema-670-komodo",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-baseline-schema-670-komodo.log"
+    },
+    {
+      "name": "schema-670-medium",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/acidiferrobacter_ms_medium.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-baseline-schema-670-medium.log"
+    },
+    {
+      "name": "schema-670-solution",
+      "command": [
+        "just",
+        "validate-schema",
+        "data/normalized_yaml/bacterial/mediadive_1413_Main_sol_670.yaml"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-baseline-schema-670-solution.log"
+    },
+    {
+      "name": "strict",
+      "command": [
+        "just",
+        "validate-strict"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/dsmz-stock-stages-baseline-strict.log"
+    }
+  ]
+}

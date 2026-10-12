@@ -16,6 +16,33 @@ composition:
     label: sodium sulfide nonahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/5710
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "Na2S x 9 H2O",
+                      "compound_id": 54,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.75,
+                      "unit": "g",
+                      "g_l": 7.5,
+                      "mmol_l": 31.2263,
+                      "optional": 0
+                  }
+    explanation: 'Concentration evidence for composition[0].concentration (Na2S x
+      9 H2O) in MediaDive solution 5710; locator=$.data.recipe[0] (compound_id=54).
+      Provider explicitly reports g_l=7.5. Arithmetic check: 0.75 g * 1 g/g / (100
+      ml / 1000 ml per L) = 7.5 g/L, consistent with the reported value at its precision.
+      Evidence supports the provider-declared concentration within this solution,
+      not a concentration in a receiving medium or an independently measured final
+      volume. Water addition alone is not used to infer a final volume. Additional
+      exact excerpt at $.data.volume: "volume": 100. Retrieved 2026-10-07T09:57:35.210909+00:00;
+      response SHA256=c10ce8854950b1c6d266a126a2ef74e16ea57a3ec82c35f3e4ae3bc72106fcb9.'
 - preferred_term: Water
   concentration:
     value: '1000.0'
@@ -61,6 +88,15 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-10-07T09:59:54.456952+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/5710
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "7.5"} -> {"unit":
+    "G_PER_L", "value": "7.5"} (evidence_only)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -69,3 +105,10 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/5710
+  title: 'MediaDive solution 5710: Solution 3 Na2S x 9H2O'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=c10ce8854950b1c6d266a126a2ef74e16ea57a3ec82c35f3e4ae3bc72106fcb9;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.

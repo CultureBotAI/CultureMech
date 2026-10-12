@@ -25,18 +25,25 @@ ingredients:
   supplier_catalog:
     supplier_name: Fisher
     catalog_number: S271-500
-  notes: UTEX lists 3.6 g/L NaCl, equivalent to 0.062 M.
+  notes: UTEX separately prints 3.6 g/L and 0.062 M NaCl. Molarity is retained as
+    a source assertion, not an exact calculated equivalence.
   physicochemical_roles:
   - OSMOTIC_AGENT
+  evidence:
+  - reference: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium
+    supports: SUPPORT
+    snippet: 0.062 M
+    explanation: 'ingredients[0].concentration: component 2, Final Concentration column
+      reports "0.062 M". Its Amount column separately reports "3.6 g/L"; the liquid
+      procedure makes up to a final 1 L. No new mass-to-molar conversion is asserted.'
 solutions:
 - preferred_term: BG-11 Medium
-  concentration:
-    value: '1000'
-    unit: ML_PER_L
   culturemech_term:
     id: CultureMech:000029
     label: BG-11 Medium
-  notes: UTEX lists 1 L prepared BG-11 Medium per 1 L final medium.
+  notes: Recipe base, not a measured 1000 mL/L prepared-medium input. UTEX labels
+    BG-11 as 1 L in the table but stops its preparation after step one; NaCl is added
+    before liquid-medium makeup to a final 1 L. No fixed prepared-base dose is established.
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -51,6 +58,9 @@ preparation_steps:
   action: STORE
   description: Store at refrigerator temperature.
 notes: UTEX prepares this BG-11 variant by supplementing the base with 3.6 g/L NaCl.
+  The source title says BG-11-1, whereas the linked base/table says BG-11. This naming
+  discrepancy remains unresolved; no nitrogen omission, identity change or merger
+  is inferred.
 salinity: saltwater
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
@@ -96,19 +106,135 @@ curation_history:
   changes: Grounded UTEX Spirulina/BG-11 stock and parent-medium components
   source: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium
   notes: UTEX prepares this BG-11 variant by supplementing the base with 3.6 g/L NaCl.
+- timestamp: '2026-10-11T02:43:27.765962+00:00'
+  curator: codex
+  action: CURATED_UTEX_VOLVOCACEAN_BG11_CONCENTRATION_EVIDENCE
+  notes: Retained source-printed NaCl molarity with evidence; removed the unsupported
+    prepared-BG-11 dose, clarified salt addition before volume makeup, and recorded
+    the optional agar procedure separately. The thiosulfate dose remains unresolved.
+    The BG-11-1/BG-11 source naming discrepancy is retained without inferring nitrogen
+    omission. No taxa-media associations added.
+  source: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium
+  changes: '{"counts": {"bibliographic_entries_enriched": 1, "ingredient_context_notes_corrected":
+    1, "new_curation_history": 1, "new_evidence": 3, "optional_variants_added": 1,
+    "parent_context_notes_corrected": 1, "source_conflict_notes_added": 1, "stock_context_notes_corrected":
+    1, "unsupported_quantity_slots_removed": 1, "variant_descriptions_corrected":
+    1}, "fields": [{"after_present": true, "before_present": true, "counter": "ingredient_context_notes_corrected",
+    "new": "UTEX separately prints 3.6 g/L and 0.062 M NaCl. Molarity is retained
+    as a source assertion, not an exact calculated equivalence.", "old": "UTEX lists
+    3.6 g/L NaCl, equivalent to 0.062 M.", "pointer": ["ingredients", 0, "notes"]},
+    {"after_present": true, "before_present": false, "counter": "new_evidence", "new":
+    [{"explanation": "ingredients[0].concentration: component 2, Final Concentration
+    column reports \"0.062 M\". Its Amount column separately reports \"3.6 g/L\";
+    the liquid procedure makes up to a final 1 L. No new mass-to-molar conversion
+    is asserted.", "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+    "snippet": "0.062 M", "supports": "SUPPORT"}], "old": null, "pointer": ["ingredients",
+    0, "evidence"]}, {"after_present": false, "before_present": true, "counter": "unsupported_quantity_slots_removed",
+    "new": null, "old": {"unit": "ML_PER_L", "value": "1000"}, "pointer": ["solutions",
+    0, "concentration"]}, {"after_present": true, "before_present": true, "counter":
+    "stock_context_notes_corrected", "new": "Recipe base, not a measured 1000 mL/L
+    prepared-medium input. UTEX labels BG-11 as 1 L in the table but stops its preparation
+    after step one; NaCl is added before liquid-medium makeup to a final 1 L. No fixed
+    prepared-base dose is established.", "old": "UTEX lists 1 L prepared BG-11 Medium
+    per 1 L final medium.", "pointer": ["solutions", 0, "notes"]}, {"after_present":
+    true, "before_present": true, "counter": "parent_context_notes_corrected", "new":
+    "Adds 3.6 g/L NaCl after BG-11 preparation step one, before making the liquid
+    medium up to a final 1 L.", "old": "Adds 3.6 g/L NaCl to prepared BG-11 Medium.",
+    "pointer": ["parent_media", "notes"]}, {"after_present": true, "before_present":
+    true, "counter": "variant_descriptions_corrected", "new": ["Adds 3.6 g/L NaCl
+    after BG-11 preparation step one, before making the liquid medium up to a final
+    1 L."], "old": ["Adds 3.6 g/L NaCl to prepared BG-11 Medium."], "pointer": ["variant_modifications"]},
+    {"after_present": true, "before_present": true, "counter": "source_conflict_notes_added",
+    "new": "UTEX prepares this BG-11 variant by supplementing the base with 3.6 g/L
+    NaCl. The source title says BG-11-1, whereas the linked base/table says BG-11.
+    This naming discrepancy remains unresolved; no nitrogen omission, identity change
+    or merger is inferred.", "old": "UTEX prepares this BG-11 variant by supplementing
+    the base with 3.6 g/L NaCl.", "pointer": ["notes"]}, {"after_present": true, "before_present":
+    false, "counter": "new_evidence", "new": [{"explanation": "solutions[0] is a recipe-base
+    reference, not a measured prepared-medium fraction. Liquid Directions 1 says \"through
+    step one.\"; Directions 2 adds NaCl before making up to 1 L. The table labels
+    BG-11 as 1 L but does not establish a separate 1000 mL/L input. variant_modifications[0]
+    and parent_media.notes retain the component-2 amount \"3.6 g/L\" with the preparation
+    boundary. No replacement dose or stock composition is inferred.", "reference":
+    "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium", "snippet":
+    "through step one.", "supports": "SUPPORT"}], "old": null, "pointer": ["evidence"]},
+    {"after_present": true, "before_present": false, "counter": "optional_variants_added",
+    "new": [{"description": "Source-described two-portion preparation; sodium-thiosulfate
+    dose remains unresolved.", "evidence": [{"explanation": "variants[0].modifications:
+    Agar Directions 2-3 specify two portions involving \"500 mL\"; the separate agar
+    amount is \"15 g\". Directions 4-8 describe separate autoclaving, cooling to \"45-50\"
+    degrees C, addition of sterile \"Sodium Thiosulfate\", combination, cooling and
+    refrigeration. The whole agar subsection was inspected and contains no local thiosulfate
+    amount. The 15 g is a batch addition; final volume after sterile supplement is
+    not measured here.", "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+    "snippet": "15 g", "supports": "SUPPORT"}], "modifications": ["For the agar alternative,
+    perform BG-11 preparation step one, add the formulation-specific NaCl, and make
+    this portion up to 500 mL with dH2O.", "In another container, add 15 g agar to
+    500 mL dH2O. Autoclave both preparations separately, then cool them to 45-50 degrees
+    C in a water bath.", "Mix sterile sodium thiosulfate into the agar preparation
+    before combining both portions. The salt-variant page does not specify a thiosulfate
+    dose; no amount is inferred from the linked base recipe. Mix promptly, allow to
+    cool and refrigerate."], "name": "Optional agar formulation", "relationship":
+    "PHYSICAL_STATE_VARIANT"}], "old": null, "pointer": ["variants"]}, {"after_present":
+    true, "before_present": true, "counter": "bibliographic_entries_enriched", "new":
+    {"notes": "source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; locator=#recipe, composition table and Directions; authors,
+    publication year and DOI not established.", "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+    "title": "BG-11-1 + 0.36% NaCl Medium | UTEX Culture Collection of Algae"}, "old":
+    {"reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium"},
+    "pointer": ["references", 1]}]}'
 references:
 - reference: UTEX:bg-11-1-plus-0-point-36-percent-nacl-medium
 - reference: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium
+  title: BG-11-1 + 0.36% NaCl Medium | UTEX Culture Collection of Algae
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-10; locator=#recipe, composition table and Directions; authors,
+    publication year and DOI not established.
 original_name: BG-11 + 0.36% NaCl Medium
 parent_media:
   path: data/normalized_yaml/algae/bg_11_medium.yaml
   relationship: SUPPLEMENTED_VARIANT
   id: CultureMech:000029
   name: bg_11_medium
-  notes: Adds 3.6 g/L NaCl to prepared BG-11 Medium.
+  notes: Adds 3.6 g/L NaCl after BG-11 preparation step one, before making the liquid
+    medium up to a final 1 L.
 variant_relationship: SUPPLEMENTED_VARIANT
 variant_modifications:
-- Adds 3.6 g/L NaCl to prepared BG-11 Medium.
+- Adds 3.6 g/L NaCl after BG-11 preparation step one, before making the liquid medium
+  up to a final 1 L.
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
+evidence:
+- reference: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium
+  supports: SUPPORT
+  snippet: through step one.
+  explanation: solutions[0] is a recipe-base reference, not a measured prepared-medium
+    fraction. Liquid Directions 1 says "through step one."; Directions 2 adds NaCl
+    before making up to 1 L. The table labels BG-11 as 1 L but does not establish
+    a separate 1000 mL/L input. variant_modifications[0] and parent_media.notes retain
+    the component-2 amount "3.6 g/L" with the preparation boundary. No replacement
+    dose or stock composition is inferred.
+variants:
+- name: Optional agar formulation
+  relationship: PHYSICAL_STATE_VARIANT
+  description: Source-described two-portion preparation; sodium-thiosulfate dose remains
+    unresolved.
+  modifications:
+  - For the agar alternative, perform BG-11 preparation step one, add the formulation-specific
+    NaCl, and make this portion up to 500 mL with dH2O.
+  - In another container, add 15 g agar to 500 mL dH2O. Autoclave both preparations
+    separately, then cool them to 45-50 degrees C in a water bath.
+  - Mix sterile sodium thiosulfate into the agar preparation before combining both
+    portions. The salt-variant page does not specify a thiosulfate dose; no amount
+    is inferred from the linked base recipe. Mix promptly, allow to cool and refrigerate.
+  evidence:
+  - reference: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium
+    supports: SUPPORT
+    snippet: 15 g
+    explanation: 'variants[0].modifications: Agar Directions 2-3 specify two portions
+      involving "500 mL"; the separate agar amount is "15 g". Directions 4-8 describe
+      separate autoclaving, cooling to "45-50" degrees C, addition of sterile "Sodium
+      Thiosulfate", combination, cooling and refrigeration. The whole agar subsection
+      was inspected and contains no local thiosulfate amount. The 15 g is a batch
+      addition; final volume after sterile supplement is not measured here.'

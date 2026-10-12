@@ -11,9 +11,234 @@ media_term:
   term:
     id: komodo.medium:6000
     label: Sugar Stock Solution (medium 1245)
-notes: 'Source: KOMODO ModelSEED | ID: 6000 | DSMZ Medium: 6000 (mediadive.medium:6000)
-  | Aerobic: No | SubMedium: Yes'
-ingredients: []
+notes: KOMODO source accession 6000 is explicitly named Sugar Stock Solution (medium
+  1245). The old automatically constructed DSMZ/MediaDive6000 equivalence is unverified
+  and is archived, not asserted. Keep this standalone stock's existing MediaRecipe
+  schema shape and record_kind SOLUTION; no receiving-medium dose is inferred.
+ingredients:
+- preferred_term: Xylose
+  concentration:
+    value: '8.00'
+    unit: G_PER_L
+  notes: 'Keep the exact displayed Gram Amount and precision under the provider''s
+    per-liter heading. It is a provider assertion, not an independent final-volume
+    measurement. Mol Amount and combined SEED rows are not substitutes for this field.
+    Exact per-liter heading: Gram & Mol amounts are per Liter of medium.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000
+    supports: SUPPORT
+    snippet: Xylose xylose SEED-cpd00154### 8.00 0.05
+    explanation: |-
+      ingredients[0].preferred_term: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[0]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Xylose xylose SEED-cpd00154### 8.00 0.05
+      ingredients[0].concentration: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[0]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Xylose xylose SEED-cpd00154### 8.00 0.05
+      ingredients[0].notes: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[0]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+- preferred_term: Distilled Water
+  notes: 'The exact Gram Amount is null. Remove a copied numeric assertion if present;
+    retain the named ingredient without a fixed concentration. Do not infer zero,
+    density, or a quantity from the molar aggregation. Exact per-liter heading: Gram
+    & Mol amounts are per Liter of medium.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000
+    supports: SUPPORT
+    snippet: Distilled Water H2O SEED-cpd00001### null null
+    explanation: |-
+      ingredients[1].preferred_term: The exact Gram Amount is null. Remove a copied numeric assertion if present; retain the named ingredient without a fixed concentration. Do not infer zero, density, or a quantity from the molar aggregation. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[1]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Distilled Water H2O SEED-cpd00001### null null
+      ingredients[1].concentration: The exact Gram Amount is null. Remove a copied numeric assertion if present; retain the named ingredient without a fixed concentration. Do not infer zero, density, or a quantity from the molar aggregation. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[1]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Distilled Water H2O SEED-cpd00001### null null
+      ingredients[1].notes: The exact Gram Amount is null. Remove a copied numeric assertion if present; retain the named ingredient without a fixed concentration. Do not infer zero, density, or a quantity from the molar aggregation. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[1]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+- preferred_term: Thiamine Pyrophosphate
+  concentration:
+    value: '7.50E-4'
+    unit: G_PER_L
+  notes: 'Keep the exact displayed Gram Amount and precision under the provider''s
+    per-liter heading. It is a provider assertion, not an independent final-volume
+    measurement. Mol Amount and combined SEED rows are not substitutes for this field.
+    Exact per-liter heading: Gram & Mol amounts are per Liter of medium. The row''s
+    name says thiamine pyrophosphate but its semi-unique name says Thiamine-HCl. Retain
+    that explicit provider identity conflict in notes; do not use the alias or a copied
+    chloride annotation to establish chemical form or molecular weight.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000
+    supports: SUPPORT
+    snippet: Thiamine Pyrophosphate Thiamine-HCl SEED-cpd00099#cpd00305## 7.50E-4
+      2.50E-6
+    explanation: |-
+      ingredients[2].preferred_term: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. The row's name says thiamine pyrophosphate but its semi-unique name says Thiamine-HCl. Retain that explicit provider identity conflict in notes; do not use the alias or a copied chloride annotation to establish chemical form or molecular weight. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[2]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Thiamine Pyrophosphate Thiamine-HCl SEED-cpd00099#cpd00305## 7.50E-4 2.50E-6
+      ingredients[2].concentration: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. The row's name says thiamine pyrophosphate but its semi-unique name says Thiamine-HCl. Retain that explicit provider identity conflict in notes; do not use the alias or a copied chloride annotation to establish chemical form or molecular weight. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[2]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Thiamine Pyrophosphate Thiamine-HCl SEED-cpd00099#cpd00305## 7.50E-4 2.50E-6
+      ingredients[2].notes: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. The row's name says thiamine pyrophosphate but its semi-unique name says Thiamine-HCl. Retain that explicit provider identity conflict in notes; do not use the alias or a copied chloride annotation to establish chemical form or molecular weight. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[2]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+- preferred_term: Sucrose
+  concentration:
+    value: '8.00'
+    unit: G_PER_L
+  notes: 'Keep the exact displayed Gram Amount and precision under the provider''s
+    per-liter heading. It is a provider assertion, not an independent final-volume
+    measurement. Mol Amount and combined SEED rows are not substitutes for this field.
+    Exact per-liter heading: Gram & Mol amounts are per Liter of medium.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000
+    supports: SUPPORT
+    snippet: Sucrose Sucrose SEED-cpd00076### 8.00 0.02
+    explanation: |-
+      ingredients[3].preferred_term: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[3]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Sucrose Sucrose SEED-cpd00076### 8.00 0.02
+      ingredients[3].concentration: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[3]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Sucrose Sucrose SEED-cpd00076### 8.00 0.02
+      ingredients[3].notes: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[3]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+- preferred_term: Ribose
+  concentration:
+    value: '8.00'
+    unit: G_PER_L
+  notes: 'Keep the exact displayed Gram Amount and precision under the provider''s
+    per-liter heading. It is a provider assertion, not an independent final-volume
+    measurement. Mol Amount and combined SEED rows are not substitutes for this field.
+    Exact per-liter heading: Gram & Mol amounts are per Liter of medium.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000
+    supports: SUPPORT
+    snippet: Ribose Ribose SEED-cpd05267### 8.00 0.05
+    explanation: |-
+      ingredients[4].preferred_term: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[4]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Ribose Ribose SEED-cpd05267### 8.00 0.05
+      ingredients[4].concentration: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[4]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Ribose Ribose SEED-cpd05267### 8.00 0.05
+      ingredients[4].notes: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[4]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+- preferred_term: Starch
+  concentration:
+    value: '8.00'
+    unit: G_PER_L
+  notes: 'Keep the exact displayed Gram Amount and precision under the provider''s
+    per-liter heading. It is a provider assertion, not an independent final-volume
+    measurement. Mol Amount and combined SEED rows are not substitutes for this field.
+    Exact per-liter heading: Gram & Mol amounts are per Liter of medium.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000
+    supports: SUPPORT
+    snippet: Starch Starch SEED-cpd11657### 8.00 0.01
+    explanation: |-
+      ingredients[5].preferred_term: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[5]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Starch Starch SEED-cpd11657### 8.00 0.01
+      ingredients[5].concentration: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[5]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Starch Starch SEED-cpd11657### 8.00 0.01
+      ingredients[5].notes: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[5]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+- preferred_term: Pectin
+  concentration:
+    value: '8.00'
+    unit: G_PER_L
+  notes: 'Keep the exact displayed Gram Amount and precision under the provider''s
+    per-liter heading. It is a provider assertion, not an independent final-volume
+    measurement. Mol Amount and combined SEED rows are not substitutes for this field.
+    Exact per-liter heading: Gram & Mol amounts are per Liter of medium.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000
+    supports: SUPPORT
+    snippet: Pectin Pectin SEED-cpd11601### 8.00 0.01
+    explanation: |-
+      ingredients[6].preferred_term: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[6]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Pectin Pectin SEED-cpd11601### 8.00 0.01
+      ingredients[6].concentration: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[6]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Pectin Pectin SEED-cpd11601### 8.00 0.01
+      ingredients[6].notes: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[6]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+- preferred_term: Glucose
+  concentration:
+    value: '8.00'
+    unit: G_PER_L
+  notes: 'Keep the exact displayed Gram Amount and precision under the provider''s
+    per-liter heading. It is a provider assertion, not an independent final-volume
+    measurement. Mol Amount and combined SEED rows are not substitutes for this field.
+    Exact per-liter heading: Gram & Mol amounts are per Liter of medium.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000
+    supports: SUPPORT
+    snippet: Glucose D-Glucose SEED-cpd00027### 8.00 0.04
+    explanation: |-
+      ingredients[7].preferred_term: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[7]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Glucose D-Glucose SEED-cpd00027### 8.00 0.04
+      ingredients[7].concentration: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[7]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Glucose D-Glucose SEED-cpd00027### 8.00 0.04
+      ingredients[7].notes: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[7]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+- preferred_term: Maltose
+  concentration:
+    value: '16.00'
+    unit: G_PER_L
+  notes: 'Keep the exact displayed Gram Amount and precision under the provider''s
+    per-liter heading. It is a provider assertion, not an independent final-volume
+    measurement. Mol Amount and combined SEED rows are not substitutes for this field.
+    Exact per-liter heading: Gram & Mol amounts are per Liter of medium. This displayed
+    rate is source-specific. It does not decide whether the original''s two separate
+    8 g rows are intentional or duplicated.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000
+    supports: SUPPORT
+    snippet: Maltose Maltose SEED-cpd00179### 16.00 0.05
+    explanation: |-
+      ingredients[8].preferred_term: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. This displayed rate is source-specific. It does not decide whether the original's two separate 8 g rows are intentional or duplicated. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[8]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Maltose Maltose SEED-cpd00179### 16.00 0.05
+      ingredients[8].concentration: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. This displayed rate is source-specific. It does not decide whether the original's two separate 8 g rows are intentional or duplicated. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[8]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Maltose Maltose SEED-cpd00179### 16.00 0.05
+      ingredients[8].notes: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. This displayed rate is source-specific. It does not decide whether the original's two separate 8 g rows are intentional or duplicated. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[8]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+- preferred_term: Sodium Pyruvate
+  concentration:
+    value: '8.00'
+    unit: G_PER_L
+  notes: 'Keep the exact displayed Gram Amount and precision under the provider''s
+    per-liter heading. It is a provider assertion, not an independent final-volume
+    measurement. Mol Amount and combined SEED rows are not substitutes for this field.
+    Exact per-liter heading: Gram & Mol amounts are per Liter of medium.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000
+    supports: SUPPORT
+    snippet: Sodium Pyruvate Sodium pyruvate SEED-cpd00020#cpd00971## 8.00 0.07
+    explanation: |-
+      ingredients[9].preferred_term: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[9]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Sodium Pyruvate Sodium pyruvate SEED-cpd00020#cpd00971## 8.00 0.07
+      ingredients[9].concentration: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[9]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Sodium Pyruvate Sodium pyruvate SEED-cpd00020#cpd00971## 8.00 0.07
+      ingredients[9].notes: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[9]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+- preferred_term: Fructose
+  concentration:
+    value: '8.00'
+    unit: G_PER_L
+  notes: 'Keep the exact displayed Gram Amount and precision under the provider''s
+    per-liter heading. It is a provider assertion, not an independent final-volume
+    measurement. Mol Amount and combined SEED rows are not substitutes for this field.
+    Exact per-liter heading: Gram & Mol amounts are per Liter of medium.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000
+    supports: SUPPORT
+    snippet: Fructose D-Fructose SEED-cpd00082### 8.00 0.04
+    explanation: |-
+      ingredients[10].preferred_term: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[10]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Fructose D-Fructose SEED-cpd00082### 8.00 0.04
+      ingredients[10].concentration: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[10]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+      Additional exact excerpt: Fructose D-Fructose SEED-cpd00082### 8.00 0.04
+      ingredients[10].notes: Keep the exact displayed Gram Amount and precision under the provider's per-liter heading. It is a provider assertion, not an independent final-volume measurement. Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts are per Liter of medium. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=Metabolites list[10]; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
 applications:
 - Microbial cultivation
 curation_history:
@@ -30,3 +255,185 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Sugar Stock Solution (medium 1245)" to "sugar_stock_solution_medium_1245"
     for consistent matching
+- timestamp: '2026-10-09T06:18:47.388455+00:00'
+  curator: codex
+  action: RESTORED_OTEB_SOURCE_FORMULATIONS_AND_STOCK_SCOPES_WITH_EVIDENCE
+  notes: Restore exact-source OTEB formulation and stock scopes, preserve provider
+    rates/nulls and original source conflicts, correct input units and family links,
+    and retain prior evidence/history. No biological growth association added.
+  source: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000
+  changes: '[{"old_field": null, "field": "ingredients[0].preferred_term", "old":
+    null, "new": "Xylose", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Xylose xylose SEED-cpd00154### 8.00 0.05"}, {"old_field": null, "field":
+    "ingredients[0].concentration", "old": null, "new": {"value": "8.00", "unit":
+    "G_PER_L"}, "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Xylose xylose SEED-cpd00154### 8.00 0.05"}, {"old_field": null, "field":
+    "ingredients[0].notes", "old": null, "new": "Keep the exact displayed Gram Amount
+    and precision under the provider''s per-liter heading. It is a provider assertion,
+    not an independent final-volume measurement. Mol Amount and combined SEED rows
+    are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts
+    are per Liter of medium.", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Xylose xylose SEED-cpd00154### 8.00 0.05"}, {"old_field": null, "field":
+    "ingredients[1].preferred_term", "old": null, "new": "Distilled Water", "status":
+    "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Distilled Water H2O SEED-cpd00001### null null"}, {"old_field": null,
+    "field": "ingredients[1].concentration", "old": null, "new": null, "status": "add",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Distilled Water H2O SEED-cpd00001### null null"}, {"old_field": null,
+    "field": "ingredients[1].notes", "old": null, "new": "The exact Gram Amount is
+    null. Remove a copied numeric assertion if present; retain the named ingredient
+    without a fixed concentration. Do not infer zero, density, or a quantity from
+    the molar aggregation. Exact per-liter heading: Gram & Mol amounts are per Liter
+    of medium.", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Distilled Water H2O SEED-cpd00001### null null"}, {"old_field": null,
+    "field": "ingredients[2].preferred_term", "old": null, "new": "Thiamine Pyrophosphate",
+    "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Thiamine Pyrophosphate Thiamine-HCl SEED-cpd00099#cpd00305## 7.50E-4
+    2.50E-6"}, {"old_field": null, "field": "ingredients[2].concentration", "old":
+    null, "new": {"value": "7.50E-4", "unit": "G_PER_L"}, "status": "add", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Thiamine Pyrophosphate Thiamine-HCl SEED-cpd00099#cpd00305## 7.50E-4
+    2.50E-6"}, {"old_field": null, "field": "ingredients[2].notes", "old": null, "new":
+    "Keep the exact displayed Gram Amount and precision under the provider''s per-liter
+    heading. It is a provider assertion, not an independent final-volume measurement.
+    Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter
+    heading: Gram & Mol amounts are per Liter of medium. The row''s name says thiamine
+    pyrophosphate but its semi-unique name says Thiamine-HCl. Retain that explicit
+    provider identity conflict in notes; do not use the alias or a copied chloride
+    annotation to establish chemical form or molecular weight.", "status": "add",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Thiamine Pyrophosphate Thiamine-HCl SEED-cpd00099#cpd00305## 7.50E-4
+    2.50E-6"}, {"old_field": null, "field": "ingredients[3].preferred_term", "old":
+    null, "new": "Sucrose", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Sucrose Sucrose SEED-cpd00076### 8.00 0.02"}, {"old_field": null,
+    "field": "ingredients[3].concentration", "old": null, "new": {"value": "8.00",
+    "unit": "G_PER_L"}, "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Sucrose Sucrose SEED-cpd00076### 8.00 0.02"}, {"old_field": null,
+    "field": "ingredients[3].notes", "old": null, "new": "Keep the exact displayed
+    Gram Amount and precision under the provider''s per-liter heading. It is a provider
+    assertion, not an independent final-volume measurement. Mol Amount and combined
+    SEED rows are not substitutes for this field. Exact per-liter heading: Gram &
+    Mol amounts are per Liter of medium.", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Sucrose Sucrose SEED-cpd00076### 8.00 0.02"}, {"old_field": null,
+    "field": "ingredients[4].preferred_term", "old": null, "new": "Ribose", "status":
+    "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Ribose Ribose SEED-cpd05267### 8.00 0.05"}, {"old_field": null, "field":
+    "ingredients[4].concentration", "old": null, "new": {"value": "8.00", "unit":
+    "G_PER_L"}, "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Ribose Ribose SEED-cpd05267### 8.00 0.05"}, {"old_field": null, "field":
+    "ingredients[4].notes", "old": null, "new": "Keep the exact displayed Gram Amount
+    and precision under the provider''s per-liter heading. It is a provider assertion,
+    not an independent final-volume measurement. Mol Amount and combined SEED rows
+    are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts
+    are per Liter of medium.", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Ribose Ribose SEED-cpd05267### 8.00 0.05"}, {"old_field": null, "field":
+    "ingredients[5].preferred_term", "old": null, "new": "Starch", "status": "add",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Starch Starch SEED-cpd11657### 8.00 0.01"}, {"old_field": null, "field":
+    "ingredients[5].concentration", "old": null, "new": {"value": "8.00", "unit":
+    "G_PER_L"}, "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Starch Starch SEED-cpd11657### 8.00 0.01"}, {"old_field": null, "field":
+    "ingredients[5].notes", "old": null, "new": "Keep the exact displayed Gram Amount
+    and precision under the provider''s per-liter heading. It is a provider assertion,
+    not an independent final-volume measurement. Mol Amount and combined SEED rows
+    are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts
+    are per Liter of medium.", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Starch Starch SEED-cpd11657### 8.00 0.01"}, {"old_field": null, "field":
+    "ingredients[6].preferred_term", "old": null, "new": "Pectin", "status": "add",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Pectin Pectin SEED-cpd11601### 8.00 0.01"}, {"old_field": null, "field":
+    "ingredients[6].concentration", "old": null, "new": {"value": "8.00", "unit":
+    "G_PER_L"}, "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Pectin Pectin SEED-cpd11601### 8.00 0.01"}, {"old_field": null, "field":
+    "ingredients[6].notes", "old": null, "new": "Keep the exact displayed Gram Amount
+    and precision under the provider''s per-liter heading. It is a provider assertion,
+    not an independent final-volume measurement. Mol Amount and combined SEED rows
+    are not substitutes for this field. Exact per-liter heading: Gram & Mol amounts
+    are per Liter of medium.", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Pectin Pectin SEED-cpd11601### 8.00 0.01"}, {"old_field": null, "field":
+    "ingredients[7].preferred_term", "old": null, "new": "Glucose", "status": "add",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Glucose D-Glucose SEED-cpd00027### 8.00 0.04"}, {"old_field": null,
+    "field": "ingredients[7].concentration", "old": null, "new": {"value": "8.00",
+    "unit": "G_PER_L"}, "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Glucose D-Glucose SEED-cpd00027### 8.00 0.04"}, {"old_field": null,
+    "field": "ingredients[7].notes", "old": null, "new": "Keep the exact displayed
+    Gram Amount and precision under the provider''s per-liter heading. It is a provider
+    assertion, not an independent final-volume measurement. Mol Amount and combined
+    SEED rows are not substitutes for this field. Exact per-liter heading: Gram &
+    Mol amounts are per Liter of medium.", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Glucose D-Glucose SEED-cpd00027### 8.00 0.04"}, {"old_field": null,
+    "field": "ingredients[8].preferred_term", "old": null, "new": "Maltose", "status":
+    "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Maltose Maltose SEED-cpd00179### 16.00 0.05"}, {"old_field": null,
+    "field": "ingredients[8].concentration", "old": null, "new": {"value": "16.00",
+    "unit": "G_PER_L"}, "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Maltose Maltose SEED-cpd00179### 16.00 0.05"}, {"old_field": null,
+    "field": "ingredients[8].notes", "old": null, "new": "Keep the exact displayed
+    Gram Amount and precision under the provider''s per-liter heading. It is a provider
+    assertion, not an independent final-volume measurement. Mol Amount and combined
+    SEED rows are not substitutes for this field. Exact per-liter heading: Gram &
+    Mol amounts are per Liter of medium. This displayed rate is source-specific. It
+    does not decide whether the original''s two separate 8 g rows are intentional
+    or duplicated.", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Maltose Maltose SEED-cpd00179### 16.00 0.05"}, {"old_field": null,
+    "field": "ingredients[9].preferred_term", "old": null, "new": "Sodium Pyruvate",
+    "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Sodium Pyruvate Sodium pyruvate SEED-cpd00020#cpd00971## 8.00 0.07"},
+    {"old_field": null, "field": "ingredients[9].concentration", "old": null, "new":
+    {"value": "8.00", "unit": "G_PER_L"}, "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Sodium Pyruvate Sodium pyruvate SEED-cpd00020#cpd00971## 8.00 0.07"},
+    {"old_field": null, "field": "ingredients[9].notes", "old": null, "new": "Keep
+    the exact displayed Gram Amount and precision under the provider''s per-liter
+    heading. It is a provider assertion, not an independent final-volume measurement.
+    Mol Amount and combined SEED rows are not substitutes for this field. Exact per-liter
+    heading: Gram & Mol amounts are per Liter of medium.", "status": "add", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Sodium Pyruvate Sodium pyruvate SEED-cpd00020#cpd00971## 8.00 0.07"},
+    {"old_field": null, "field": "ingredients[10].preferred_term", "old": null, "new":
+    "Fructose", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Fructose D-Fructose SEED-cpd00082### 8.00 0.04"}, {"old_field": null,
+    "field": "ingredients[10].concentration", "old": null, "new": {"value": "8.00",
+    "unit": "G_PER_L"}, "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Fructose D-Fructose SEED-cpd00082### 8.00 0.04"}, {"old_field": null,
+    "field": "ingredients[10].notes", "old": null, "new": "Keep the exact displayed
+    Gram Amount and precision under the provider''s per-liter heading. It is a provider
+    assertion, not an independent final-volume measurement. Mol Amount and combined
+    SEED rows are not substitutes for this field. Exact per-liter heading: Gram &
+    Mol amounts are per Liter of medium.", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Fructose D-Fructose SEED-cpd00082### 8.00 0.04"}, {"old_field": null,
+    "field": "notes", "old": null, "new": "KOMODO source accession 6000 is explicitly
+    named Sugar Stock Solution (medium 1245). The old automatically constructed DSMZ/MediaDive6000
+    equivalence is unverified and is archived, not asserted. Keep this standalone
+    stock''s existing MediaRecipe schema shape and record_kind SOLUTION; no receiving-medium
+    dose is inferred.", "status": "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "PH Info: null"}, {"old_field": "notes", "field": "notes", "old": "Source:
+    KOMODO ModelSEED | ID: 6000 | DSMZ Medium: 6000 (mediadive.medium:6000) | Aerobic:
+    No | SubMedium: Yes", "new": "KOMODO source accession 6000 is explicitly named
+    Sugar Stock Solution (medium 1245). The old automatically constructed DSMZ/MediaDive6000
+    equivalence is unverified and is archived, not asserted. Keep this standalone
+    stock''s existing MediaRecipe schema shape and record_kind SOLUTION; no receiving-medium
+    dose is inferred.", "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Name: Sugar Stock Solution (medium 1245)"}, {"old_field": "record_kind",
+    "field": "record_kind", "old": "SOLUTION", "new": "SOLUTION", "status": "verified",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000",
+    "snippet": "Is SubMedium: true"}]'
+evidence:
+- reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000
+  supports: SUPPORT
+  snippet: 'PH Info: null'
+  explanation: |-
+    notes: Preserve the exact KOMODO Gram Amounts and nulls as source-specific assertions. No provider molar aggregation or copied DSMZ formulation replaces these rows. pH metadata is retained without inferring a missing value. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+    Additional exact excerpt: Name: Sugar Stock Solution (medium 1245)
+    notes: KOMODO source accession 6000 is explicitly named Sugar Stock Solution (medium 1245). The old automatically constructed DSMZ/MediaDive6000 equivalence is unverified and is archived, not asserted. Keep this standalone stock's existing MediaRecipe schema shape and record_kind SOLUTION; no receiving-medium dose is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+
+    Additional exact excerpt: Is SubMedium: true
+    record_kind: Retain the already established solution kind; provider SubMedium is true. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T05:34:34.419040+00:00; capture SHA256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+references:
+- reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6000
+  title: KOMODO - the Known Media Database
+  notes: source_type=web_page; discovery_mode=existing_record_reference; accessed_on=2026-10-09;
+    capture_sha256=968fb11b8005cfbc49730986e82167d49d252f19ffcae3070fb61ef175267aba.
+    Individual authors and publication year not supplied; copyright/access year is
+    not publication year. Source-scoped recipe evidence, not organism growth evidence.

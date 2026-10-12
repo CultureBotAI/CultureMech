@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-07",
+  "runtime": "isolated Python 3.11; not maintained Python 3.13/CI",
+  "source_fetch": {"selected": 500, "fetched": 500, "failed": 0, "complete": true},
+  "apply": {"changed": 160, "already_applied": 0},
+  "verify": {"checked_record_hashes": 500, "verified_new_snippets": 907},
+  "rerun": {"changed": 0, "already_applied": 160},
+  "tests": {
+    "exit_code": 0,
+    "passed": 257,
+    "command": "python -m pytest -o addopts='' tests/test_medium_concentration_review.py tests/test_medium_concentration_batch.py tests/test_solution_concentration_review.py tests/test_solution_concentration_batch.py tests/test_mediadive_stock_concentration_evidence.py tests/test_jcm_concentration_evidence.py tests/test_jcm_m1308_stock_evidence.py tests/test_dsmz1399_stock_boundary.py tests/test_concentration_review_reports.py tests/test_concentration_plausibility.py tests/test_record_io.py tests/test_merger.py tests/test_merge_yaml_freshness.py -q"
+  },
+  "baseline_strict": {"command": "just validate-strict", "exit_code": 0, "files": 15910, "errors": 0},
+  "post_strict": {"command": "just validate-strict", "exit_code": 0, "files": 15910, "errors": 0},
+  "open_schema": {"command": "just validate-schema data/normalized_yaml/bacterial/azotobacter_medium.yaml", "baseline_exit_code": 0, "post_exit_code": 0},
+  "ids": {"command": "just assign-ids-check", "exit_code": 0, "files": 15910, "highest": "CultureMech:015915"},
+  "merge_retention": {"exit_code": 1, "checked_records": 160, "unique_groups": 151, "accepted_claims": 907, "retained_claims": 230, "records_with_evidence_loss": 119, "records_with_missing_reference": 112, "snapshot": "merge-retention.json"},
+  "verify_merges": {"command": "just verify-merges", "exit_code": 1, "name_conflicts": 1247, "fingerprint_issues": 3286},
+  "merge_freshness": {"command": "just audit-merge-freshness --json", "exit_code": 1, "tracked_total": 6320, "fresh_total": 6461, "only_in_tracked": 3723, "only_in_fresh": 3864, "changed": 1487, "unchanged": 1110},
+  "lint": {"ruff_exit_code": 0, "black_check_exit_code": 0, "files": 7},
+  "git_diff_check": {"exit_code": 0},
+  "products": {"command": "just validate-products", "exit_code": 2, "unavailable": "oaklib is not installed; ontology adapters could not load"},
+  "references": {"command": "just validate-references data/normalized_yaml/bacterial/azotobacter_medium.yaml", "exit_code": 2, "unavailable": "linkml-reference-validator executable could not be spawned"},
+  "independent_diff": "../20261007-diff-audit-after-media-0500.json",
+  "coverage": "../20261007-followup-coverage-after-media-0500.json"
+}

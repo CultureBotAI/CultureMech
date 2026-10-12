@@ -1,0 +1,1897 @@
+{
+  "checked_records": 86,
+  "unique_groups": 81,
+  "accepted_claims": 551,
+  "retained_claims": 446,
+  "records_with_evidence_loss": 20,
+  "records_with_missing_reference": 19,
+  "matcher_statistics": {
+    "total_processed": 15910,
+    "skipped_no_fingerprint": 4758,
+    "skipped_error": 369,
+    "successfully_fingerprinted": 6491,
+    "reasons": {
+      "other_error": 340,
+      "no_valid_ingredients": 4758,
+      "no_ingredients_field": 29
+    }
+  },
+  "records": [
+    {
+      "path": "data/normalized_yaml/fungal/tryptone_yeast_extract_medium_modified.yaml",
+      "id": "CultureMech:010460",
+      "fingerprint": "8bf16da58ad59480ed584a18bb7af1dc39a37e65773c066ab7633eaa69002f3d",
+      "group_paths": [
+        "data/normalized_yaml/algae/lb.yaml",
+        "data/normalized_yaml/bacterial/2_x_yt_medium.yaml",
+        "data/normalized_yaml/bacterial/TOGO_M2314_LB_medium.yaml",
+        "data/normalized_yaml/bacterial/TOGO_M3196_LB_medium.yaml",
+        "data/normalized_yaml/bacterial/TOGO_M3227_LB_broth.yaml",
+        "data/normalized_yaml/bacterial/lb.yaml",
+        "data/normalized_yaml/bacterial/lb_0_1x.yaml",
+        "data/normalized_yaml/bacterial/lb_agar.yaml",
+        "data/normalized_yaml/bacterial/lb_broth.yaml",
+        "data/normalized_yaml/bacterial/lb_broth_medium.yaml",
+        "data/normalized_yaml/bacterial/lb_highsalt.yaml",
+        "data/normalized_yaml/bacterial/lb_luria_bertani_medium_lennox.yaml",
+        "data/normalized_yaml/bacterial/lb_medium_difco.yaml",
+        "data/normalized_yaml/bacterial/lb_medium_lennox.yaml",
+        "data/normalized_yaml/bacterial/lb_miller.yaml",
+        "data/normalized_yaml/bacterial/lb_with_addition_of_1_wt_vol_nacl.yaml",
+        "data/normalized_yaml/fungal/tryptone_yeast_extract_medium.yaml",
+        "data/normalized_yaml/fungal/tryptone_yeast_extract_medium_modified.yaml"
+      ],
+      "merged_id": "CultureMech:008901",
+      "accepted_claims": 3,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Tryptone",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1725",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1725",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "NaCl",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1725",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/haloarcula_algeriensis_medium.yaml",
+      "id": "CultureMech:000916",
+      "fingerprint": "f384fbe6b03dafe7f27cb107ee24f914ed0fc0738a9e5be6fc680815c277260a",
+      "group_paths": [
+        "data/normalized_yaml/archaea/haloarcula_algeriensis_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000916",
+      "accepted_claims": 10,
+      "retained_claims": 10,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/haloarcula_medium_nt.yaml",
+      "id": "CultureMech:001026",
+      "fingerprint": "30b48b98b4cbfb14771aaedee40e25db36db0bd6e5961e5a350a20611cefda07",
+      "group_paths": [
+        "data/normalized_yaml/archaea/haloarcula_medium_nt.yaml",
+        "data/normalized_yaml/bacterial/yeast_extract_broth_containing_2_5_nacl.yaml"
+      ],
+      "merged_id": "CultureMech:008996",
+      "accepted_claims": 5,
+      "retained_claims": 5,
+      "reference_retained": false,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halococcus_medium_ntye.yaml",
+      "id": "CultureMech:001027",
+      "fingerprint": "87e2f9ce051a1db76654e4c1cf0f422546f25944384c328155ce29352fefa307",
+      "group_paths": [
+        "data/normalized_yaml/archaea/halococcus_medium_ntye.yaml"
+      ],
+      "merged_id": "CultureMech:001027",
+      "accepted_claims": 4,
+      "retained_claims": 4,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/haloferax_medium_rs75.yaml",
+      "id": "CultureMech:000949",
+      "fingerprint": "103838b58b1b7f510df17d0a293384e95a3fc4394f33be4905081cff92046ff9",
+      "group_paths": [
+        "data/normalized_yaml/archaea/haloferax_medium_rs75.yaml"
+      ],
+      "merged_id": "CultureMech:000949",
+      "accepted_claims": 11,
+      "retained_claims": 11,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halolamina_medium_nom_3.yaml",
+      "id": "CultureMech:001005",
+      "fingerprint": "3128ffebc0639bc22340897482f8a8f9c8d93577589172b31805696e3946c212",
+      "group_paths": [
+        "data/normalized_yaml/archaea/halolamina_medium_nom_3.yaml"
+      ],
+      "merged_id": "CultureMech:001005",
+      "accepted_claims": 13,
+      "retained_claims": 13,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halopiger_medium_sg.yaml",
+      "id": "CultureMech:000991",
+      "fingerprint": "e06f1647335e132c196cb5360b87b546bfde17bcd3728dc15df235a7205c42f8",
+      "group_paths": [
+        "data/normalized_yaml/archaea/halopiger_medium_sg.yaml"
+      ],
+      "merged_id": "CultureMech:000991",
+      "accepted_claims": 5,
+      "retained_claims": 5,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halorhabdus_segorensis_s21_medium.yaml",
+      "id": "CultureMech:000934",
+      "fingerprint": "88c289ec8378d059816bd02ab8caab73d52cf979d424727c63b700762a42fc3f",
+      "group_paths": [
+        "data/normalized_yaml/archaea/halorhabdus_segorensis_s21_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000934",
+      "accepted_claims": 6,
+      "retained_claims": 6,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/archaea/halorubrum_medium.yaml",
+      "id": "CultureMech:000873",
+      "fingerprint": "1508fd38aa57b7be0ea7f5781dcbb721d048157241836db777b67909d8d33f42",
+      "group_paths": [
+        "data/normalized_yaml/archaea/halorubrum_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000873",
+      "accepted_claims": 9,
+      "retained_claims": 9,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/specialized/modified_bacto_marine_broth_difco_2216.yaml",
+      "id": "CultureMech:015341",
+      "fingerprint": "d0a8f83567ee2fa8e8c82657cfe7fb04f13bf4b773dc0d7b820c4508f3dd0944",
+      "group_paths": [
+        "data/normalized_yaml/archaea/marine_thermococcus_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_1173_MODIFIED_medium_514.yaml",
+        "data/normalized_yaml/bacterial/dsm_2476_dsm_5473_dsm_5474_dsm_9503_dsm_10343_dsm_10394_dsm_10395_dsm_11113_dsm_11836_dsm_12593_dsm_12819_dsm_12820_dsm_12597_dsm_12767_dsm_14981_dsm_15226_dsm_16538_dsm_17994_dsm_17882.yaml",
+        "data/normalized_yaml/bacterial/modified_medium_514.yaml",
+        "data/normalized_yaml/specialized/bacto_marine_broth_difco_2216.yaml",
+        "data/normalized_yaml/specialized/marine_thermococcus_medium.yaml",
+        "data/normalized_yaml/specialized/modified_bacto_marine_broth_difco_2216.yaml"
+      ],
+      "merged_id": "CultureMech:003893",
+      "accepted_claims": 13,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "Fe(III) citrate",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1517",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "NaCl",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1517",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[5].concentration",
+          "ingredient": "Na2SO4",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1517",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[6].concentration",
+          "ingredient": "CaCl2",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1517",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[7].concentration",
+          "ingredient": "KCl",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1517",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[8].concentration",
+          "ingredient": "NaHCO3",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1517",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[9].concentration",
+          "ingredient": "KBr",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1517",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[10].concentration",
+          "ingredient": "SrCl2",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1517",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[11].concentration",
+          "ingredient": "H3BO3",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1517",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[12].concentration",
+          "ingredient": "Na-silicate",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1517",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[13].concentration",
+          "ingredient": "NaF",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1517",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[14].concentration",
+          "ingredient": "(NH4)NO3",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1517",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[15].concentration",
+          "ingredient": "Na2HPO4",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1517",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/1_10_r2a_medium.yaml",
+      "id": "CultureMech:001052",
+      "fingerprint": "4804452e9f68ca5e7c9e0f5171d35b2ab3c2e1280f6695fbc0f67ac430965fd1",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/1_10_r2a_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_1153_R3_A_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_1320_HALF_STRENGTH_R2A_MEDIUM_IN_75_SEAWATER.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_919_LIMNOBACTER_medium.yaml",
+        "data/normalized_yaml/bacterial/double_concentrated_830_0_06_sodium_pyruvate.yaml",
+        "data/normalized_yaml/bacterial/half_strength_r2a.yaml",
+        "data/normalized_yaml/bacterial/half_strength_r2a_medium_in_75_seawater.yaml",
+        "data/normalized_yaml/bacterial/limnobacter_medium.yaml",
+        "data/normalized_yaml/bacterial/r2a_medium.yaml",
+        "data/normalized_yaml/bacterial/r3_a_medium.yaml",
+        "data/normalized_yaml/bacterial/reactivation_with_liquid_medium_830.yaml"
+      ],
+      "merged_id": "CultureMech:003863",
+      "accepted_claims": 7,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1578",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "Casamino acids",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1578",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "Glucose",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1578",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[5].concentration",
+          "ingredient": "Na-pyruvate",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1578",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[6].concentration",
+          "ingredient": "K2HPO4",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1578",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[7].concentration",
+          "ingredient": "MgSO4 x 7 H2O",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1578",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[8].concentration",
+          "ingredient": "Agar",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1578",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/half_strength_r2a.yaml",
+      "id": "CultureMech:000960",
+      "fingerprint": "4804452e9f68ca5e7c9e0f5171d35b2ab3c2e1280f6695fbc0f67ac430965fd1",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/1_10_r2a_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_1153_R3_A_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_1320_HALF_STRENGTH_R2A_MEDIUM_IN_75_SEAWATER.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_919_LIMNOBACTER_medium.yaml",
+        "data/normalized_yaml/bacterial/double_concentrated_830_0_06_sodium_pyruvate.yaml",
+        "data/normalized_yaml/bacterial/half_strength_r2a.yaml",
+        "data/normalized_yaml/bacterial/half_strength_r2a_medium_in_75_seawater.yaml",
+        "data/normalized_yaml/bacterial/limnobacter_medium.yaml",
+        "data/normalized_yaml/bacterial/r2a_medium.yaml",
+        "data/normalized_yaml/bacterial/r3_a_medium.yaml",
+        "data/normalized_yaml/bacterial/reactivation_with_liquid_medium_830.yaml"
+      ],
+      "merged_id": "CultureMech:003863",
+      "accepted_claims": 7,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1492",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "Casamino acids",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1492",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "Glucose",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1492",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[5].concentration",
+          "ingredient": "Na-pyruvate",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1492",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[6].concentration",
+          "ingredient": "K2HPO4",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1492",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[7].concentration",
+          "ingredient": "MgSO4 x 7 H2O",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1492",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[8].concentration",
+          "ingredient": "Agar",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1492",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/28_mh_medium.yaml",
+      "id": "CultureMech:000926",
+      "fingerprint": "b14fb93a09558bf784acaa8ffdb75380a5593a80a73dc76aeecddb81e55c2dce",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/28_mh_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000926",
+      "accepted_claims": 8,
+      "retained_claims": 8,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/half_concentrated_lb_luria_bertani_medium.yaml",
+      "id": "CultureMech:001104",
+      "fingerprint": "3cb7028f083ead8f828a09615b3852eeb6d919453659873c5dde37bff08442b5",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/2yt_medium.yaml",
+        "data/normalized_yaml/bacterial/half_concentrated_lb_luria_bertani_medium.yaml",
+        "data/normalized_yaml/bacterial/lb_agar_medium.yaml",
+        "data/normalized_yaml/bacterial/lb_luria_bertani_agar.yaml",
+        "data/normalized_yaml/bacterial/lb_luria_bertani_agar_with_5_nacl.yaml",
+        "data/normalized_yaml/bacterial/lb_luria_bertani_agar_with_5_nacl_ph_9_0.yaml",
+        "data/normalized_yaml/bacterial/lb_luria_bertani_medium.yaml"
+      ],
+      "merged_id": "CultureMech:009664",
+      "accepted_claims": 4,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Tryptone",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1623",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1623",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "NaCl",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1623",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "Agar",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1623",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml",
+      "id": "CultureMech:001166",
+      "fingerprint": "7cfec1a8c5650fb80fa2a17181071866f63e721f1c038fa03491762857077e0d",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/573c_medium.yaml",
+        "data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001166",
+      "accepted_claims": 5,
+      "retained_claims": 0,
+      "reference_retained": true,
+      "failures": [
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "(NH4)2SO4",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1684",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "KH2PO4",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1684",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "Glucose",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1684",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[4].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1684",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[5].concentration",
+          "ingredient": "Tryptone",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1684",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DSMZ_1452_AQUISALIMONAS_MEDIUM.yaml",
+      "id": "CultureMech:000918",
+      "fingerprint": "c82060d402c6efa95e9395e3ca56337bb251e9c5495513541e047110bc45172b",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/DSMZ_1452_AQUISALIMONAS_MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_1302_YIM_medium_10_NaCl.yaml",
+        "data/normalized_yaml/bacterial/t5_medium.yaml",
+        "data/normalized_yaml/bacterial/yim_medium_10_nacl.yaml"
+      ],
+      "merged_id": "CultureMech:004057",
+      "accepted_claims": 6,
+      "retained_claims": 6,
+      "reference_retained": false,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/t5_medium.yaml",
+      "id": "CultureMech:000933",
+      "fingerprint": "c82060d402c6efa95e9395e3ca56337bb251e9c5495513541e047110bc45172b",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/DSMZ_1452_AQUISALIMONAS_MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_1302_YIM_medium_10_NaCl.yaml",
+        "data/normalized_yaml/bacterial/t5_medium.yaml",
+        "data/normalized_yaml/bacterial/yim_medium_10_nacl.yaml"
+      ],
+      "merged_id": "CultureMech:004057",
+      "accepted_claims": 6,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Tryptone",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1467",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1467",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "Glucose",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1467",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "NaCl",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1467",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[4].concentration",
+          "ingredient": "CaCO3",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1467",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[5].concentration",
+          "ingredient": "Agar",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1467",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DSMZ_1572_HMD-MEDIUM.yaml",
+      "id": "CultureMech:001049",
+      "fingerprint": "8a755fbc7e646dda1a20b64ece0dee3f681165f55ed80bbd4aeb3843e6969b82",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/DSMZ_1572_HMD-MEDIUM.yaml"
+      ],
+      "merged_id": "CultureMech:001049",
+      "accepted_claims": 7,
+      "retained_claims": 7,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DSMZ_1595_CM_MEDIUM.yaml",
+      "id": "CultureMech:001073",
+      "fingerprint": "0dbb31be8c4ae64ddb46069fb3d791e2a3c8d8bae69304205e9100046c57b97a",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/DSMZ_1595_CM_MEDIUM.yaml"
+      ],
+      "merged_id": "CultureMech:001073",
+      "accepted_claims": 6,
+      "retained_claims": 6,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/DSMZ_1658_AIDINGIMONAS_MEDIUM.yaml",
+      "id": "CultureMech:001140",
+      "fingerprint": "67431cad27b7a56b48b139b9a90ea471d1fb008fa1574a395a897a8585b415b4",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/DSMZ_1658_AIDINGIMONAS_MEDIUM.yaml"
+      ],
+      "merged_id": "CultureMech:001140",
+      "accepted_claims": 3,
+      "retained_claims": 3,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/gluconacetobacter_medium.yaml",
+      "id": "CultureMech:000894",
+      "fingerprint": "d2ffb88157313cd2611b568184ff5d2933043a3029aa16d8e78c5c03233183cc",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/JCM_J890_ACETOBACTER_EUROPAEUS_MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/gluconacetobacter_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000894",
+      "accepted_claims": 4,
+      "retained_claims": 0,
+      "reference_retained": true,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1430",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Peptone",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1430",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "Glucose",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1430",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[5].concentration",
+          "ingredient": "Agar",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1430",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/acetobacter_musti_medium.yaml",
+      "id": "CultureMech:001084",
+      "fingerprint": "6a102f2691f01edf1c5f601010c632e32e487eaa6781f6ab50ec8553666af2ae",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_1044_GLUCONACETOBACTER_RHAETICUS_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_850_ALTERNATIVE_ACETOBACTER_INTERMEDIUS_medium.yaml",
+        "data/normalized_yaml/bacterial/acetobacter_musti_medium.yaml",
+        "data/normalized_yaml/bacterial/alternative_acetobacter_intermedius_medium.yaml",
+        "data/normalized_yaml/bacterial/gluconacetobacter_rhaeticus_medium.yaml",
+        "data/normalized_yaml/bacterial/gy_medium.yaml",
+        "data/normalized_yaml/bacterial/yed_acetobacter_medium.yaml"
+      ],
+      "merged_id": "CultureMech:003603",
+      "accepted_claims": 3,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1603",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Glucose",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1603",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "Agar",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1603",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/gy_medium.yaml",
+      "id": "CultureMech:001021",
+      "fingerprint": "6a102f2691f01edf1c5f601010c632e32e487eaa6781f6ab50ec8553666af2ae",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_1044_GLUCONACETOBACTER_RHAETICUS_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_850_ALTERNATIVE_ACETOBACTER_INTERMEDIUS_medium.yaml",
+        "data/normalized_yaml/bacterial/acetobacter_musti_medium.yaml",
+        "data/normalized_yaml/bacterial/alternative_acetobacter_intermedius_medium.yaml",
+        "data/normalized_yaml/bacterial/gluconacetobacter_rhaeticus_medium.yaml",
+        "data/normalized_yaml/bacterial/gy_medium.yaml",
+        "data/normalized_yaml/bacterial/yed_acetobacter_medium.yaml"
+      ],
+      "merged_id": "CultureMech:003603",
+      "accepted_claims": 3,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Glucose",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1543",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1543",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "Agar",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1543",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/yed_acetobacter_medium.yaml",
+      "id": "CultureMech:000888",
+      "fingerprint": "6a102f2691f01edf1c5f601010c632e32e487eaa6781f6ab50ec8553666af2ae",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_1044_GLUCONACETOBACTER_RHAETICUS_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_850_ALTERNATIVE_ACETOBACTER_INTERMEDIUS_medium.yaml",
+        "data/normalized_yaml/bacterial/acetobacter_musti_medium.yaml",
+        "data/normalized_yaml/bacterial/alternative_acetobacter_intermedius_medium.yaml",
+        "data/normalized_yaml/bacterial/gluconacetobacter_rhaeticus_medium.yaml",
+        "data/normalized_yaml/bacterial/gy_medium.yaml",
+        "data/normalized_yaml/bacterial/yed_acetobacter_medium.yaml"
+      ],
+      "merged_id": "CultureMech:003603",
+      "accepted_claims": 3,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Glucose",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1424",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1424",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "Agar",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1424",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_yma_medium_hambi.yaml",
+      "id": "CultureMech:001023",
+      "fingerprint": "ae93483df7beae26797c8d02723c9549c67e7e9ad26879bf91b48cd22c12dcee",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_1334_MODIFIED_YMA_medium.yaml",
+        "data/normalized_yaml/bacterial/modified_yma_medium.yaml",
+        "data/normalized_yaml/bacterial/modified_yma_medium_hambi.yaml"
+      ],
+      "merged_id": "CultureMech:004097",
+      "accepted_claims": 5,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "K2HPO4 x 3 H2O",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1545",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "MgSO4 x 7 H2O",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1545",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "Mannitol",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1545",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1545",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[4].concentration",
+          "ingredient": "Agar",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1545",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/lentibacillus_medium.yaml",
+      "id": "CultureMech:000912",
+      "fingerprint": "f26c4523edb66cfb46df88c4238fab75c8be0c52d008dd142c4a6c1c9c80fced",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_1449_LENTIBACILLUS_medium.yaml",
+        "data/normalized_yaml/bacterial/lentibacillus_medium.yaml"
+      ],
+      "merged_id": "CultureMech:004163",
+      "accepted_claims": 8,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "NaCl",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1449",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Casamino acids",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1449",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1449",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "Glutamic acid",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1449",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[4].concentration",
+          "ingredient": "Trisodium citrate",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1449",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[5].concentration",
+          "ingredient": "MgSO4 x 7 H2O",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1449",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[6].concentration",
+          "ingredient": "FeCl2 x 4 H2O",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1449",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[7].concentration",
+          "ingredient": "MnCl2 x 4 H2O",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1449",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/stappia_quadratibracata_medium_28m_7.yaml",
+      "id": "CultureMech:001214",
+      "fingerprint": "e650a705856a5678e63db754c376d529883c17d8d918de1e4955f054b6c6d973",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_364_PYEA_medium.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_423_XENORHABDUS_medium.yaml",
+        "data/normalized_yaml/bacterial/pyea_medium.yaml",
+        "data/normalized_yaml/bacterial/stappia_quadratibracata_medium_28m_7.yaml",
+        "data/normalized_yaml/bacterial/xenorhabdus_medium.yaml"
+      ],
+      "merged_id": "CultureMech:005248",
+      "accepted_claims": 4,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1737",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Peptone",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1737",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "NaCl",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1737",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "Agar",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1737",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/pgy_medium.yaml",
+      "id": "CultureMech:000964",
+      "fingerprint": "3d490a95212926ceccf1d4e02c07ff100ef35e6cbd59f2721f40cc84221dbc93",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_464_PLATE_COUNT_AGAR.yaml",
+        "data/normalized_yaml/bacterial/KOMODO_464a_REACTIVATION_WITH_LIQUID_medium_464.yaml",
+        "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_11199.yaml",
+        "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_15726.yaml",
+        "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_15727.yaml",
+        "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_15891.yaml",
+        "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_17107.yaml",
+        "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_1986.yaml",
+        "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_2114.yaml",
+        "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_2117.yaml",
+        "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_22870.yaml",
+        "data/normalized_yaml/bacterial/medium_464_modified_for_dsm_6824.yaml",
+        "data/normalized_yaml/bacterial/pgy_medium.yaml",
+        "data/normalized_yaml/bacterial/plate_count_agar.yaml",
+        "data/normalized_yaml/bacterial/reactivation_with_liquid_medium_464.yaml"
+      ],
+      "merged_id": "CultureMech:005520",
+      "accepted_claims": 4,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Tryptone",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1496",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1496",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "D-Glucose",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1496",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "Agar",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1496",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/nbrc702_medium.yaml",
+      "id": "CultureMech:000932",
+      "fingerprint": "88df04c26263b01464406dfed709fdab81b5158b8c1784610776b9a20a7237c8",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_513_PP-MEDIUM.yaml",
+        "data/normalized_yaml/bacterial/jcm_medium_no_323.yaml",
+        "data/normalized_yaml/bacterial/nbrc702_medium.yaml",
+        "data/normalized_yaml/bacterial/pp_medium.yaml"
+      ],
+      "merged_id": "CultureMech:005714",
+      "accepted_claims": 4,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Polypeptone",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1466",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "MgSO4 x 7 H2O",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1466",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1466",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "Agar",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1466",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml",
+      "id": "CultureMech:000993",
+      "fingerprint": "4058dbbcc8f3517ea40757f99211edd4e289b9abbd6c477b9f84660a84a6415a",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml",
+        "data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml",
+        "data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml",
+        "data/normalized_yaml/bacterial/ae_broth.yaml"
+      ],
+      "merged_id": "CultureMech:006146",
+      "accepted_claims": 3,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1522",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Peptone",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1522",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "Glucose",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1522",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml",
+      "id": "CultureMech:001170",
+      "fingerprint": "e3e11e4ef2e224ce5cff82a46a9fd6f6ea19cbb0c4d910304a1164dde758e381",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/acidibacter_medium.yaml",
+        "data/normalized_yaml/bacterial/actinobacteria_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001170",
+      "accepted_claims": 8,
+      "retained_claims": 0,
+      "reference_retained": true,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "KH2PO4",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1688",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Na2SO4",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1688",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "(NH4)2SO4",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1688",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "MgSO4 x 7 H2O",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1688",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[4].concentration",
+          "ingredient": "Ca(NO3)2 x 4 H2O",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1688",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[5].concentration",
+          "ingredient": "KCl",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1688",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[6].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1688",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[7].concentration",
+          "ingredient": "Glucose",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1688",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/aidingimonas_medium.yaml",
+      "id": "CultureMech:001030",
+      "fingerprint": "57f46a707e8a79e090fc8598600a9873afa173dda3ac7b2f321d01617c3dfd50",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/aidingimonas_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001030",
+      "accepted_claims": 2,
+      "retained_claims": 2,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/alifodinibius_medium_tsa_mod.yaml",
+      "id": "CultureMech:001024",
+      "fingerprint": "c200db79d3bf6ba5934dad964b26080910a3f26f71c0eff66d2a598f222f6d1a",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/alifodinibius_medium_tsa_mod.yaml"
+      ],
+      "merged_id": "CultureMech:001024",
+      "accepted_claims": 1,
+      "retained_claims": 1,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml",
+      "id": "CultureMech:001056",
+      "fingerprint": "4017cc786f4ae36cd745e5bf2a26ac14bed488007321dd8d6ffdbfddd44e713d",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001056",
+      "accepted_claims": 10,
+      "retained_claims": 10,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/amb_medium_for_racemicystis_spp.yaml",
+      "id": "CultureMech:001095",
+      "fingerprint": "beafc710683341637c8a697bd938a3dd75b38d2daccd3f9209f6453b7c66f6a8",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/amb_medium_for_racemicystis_spp.yaml"
+      ],
+      "merged_id": "CultureMech:001095",
+      "accepted_claims": 4,
+      "retained_claims": 4,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/antibiotic_medium_1.yaml",
+      "id": "CultureMech:001010",
+      "fingerprint": "a88ec2ab4b1c32685affc17e1d1ea773027c6d26a1cf593be1f272faa7c1553f",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/antibiotic_medium_1.yaml"
+      ],
+      "merged_id": "CultureMech:001010",
+      "accepted_claims": 6,
+      "retained_claims": 6,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/arcobacter_anaerophilus_medium.yaml",
+      "id": "CultureMech:000992",
+      "fingerprint": "7280aa7bc8438b63935b966093f731ded0ddee2a1cef4e197a6efefb954e4f47",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/arcobacter_anaerophilus_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000992",
+      "accepted_claims": 11,
+      "retained_claims": 11,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+      "id": "CultureMech:000950",
+      "fingerprint": "3bc1c1c501cb85c09f98e414589b3afba08f6ac65b414823b690a7c743659fed",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml"
+      ],
+      "merged_id": "CultureMech:000950",
+      "accepted_claims": 9,
+      "retained_claims": 9,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/beijerinckia_medium_lmg_18.yaml",
+      "id": "CultureMech:001213",
+      "fingerprint": "bcb39bb41beb6fe95a71e4bc4a8a68032ecce54c0e4bafaea737561fefe48ba3",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/beijerinckia_medium_lmg_18.yaml"
+      ],
+      "merged_id": "CultureMech:001213",
+      "accepted_claims": 10,
+      "retained_claims": 10,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bha_medium.yaml",
+      "id": "CultureMech:001018",
+      "fingerprint": "51b48e9511143082d093903cd266cc95816f6d9bdee09c196cf48fadf4e14cff",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/bha_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001018",
+      "accepted_claims": 8,
+      "retained_claims": 8,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bm7_medium.yaml",
+      "id": "CultureMech:001033",
+      "fingerprint": "91d43aeaaa74fcda55ed630a46d42a03cf4bd4ef269396a4880aa2ceca4df944",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/bm7_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001033",
+      "accepted_claims": 4,
+      "retained_claims": 4,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/cm_medium.yaml",
+      "id": "CultureMech:000974",
+      "fingerprint": "1222fbae65bc5b84a54549459cfd6fc1e16a6aa99fa6fea5060ebfc28a2e1348",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/cm_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000974",
+      "accepted_claims": 7,
+      "retained_claims": 7,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/cmka_medium_haloactinomyces_medium.yaml",
+      "id": "CultureMech:001184",
+      "fingerprint": "c8487420ef78068910165be03c4f95d976d41e95ead2a5640bac42ef5972158a",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/cmka_medium_haloactinomyces_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001184",
+      "accepted_claims": 11,
+      "retained_claims": 11,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/diluted_tryptone_soya_broth_tsb_1_10.yaml",
+      "id": "CultureMech:001194",
+      "fingerprint": "77fcbbbb0eb57c1b31bc162ed7291a6255002212afe267e2c94ba78cd12e7fdf",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/diluted_tryptone_soya_broth_tsb.yaml",
+        "data/normalized_yaml/bacterial/diluted_tryptone_soya_broth_tsb_1_10.yaml",
+        "data/normalized_yaml/bacterial/tryptone_soya_broth_tsb.yaml"
+      ],
+      "merged_id": "CultureMech:001677",
+      "accepted_claims": 5,
+      "retained_claims": 0,
+      "reference_retained": false,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Casein peptone",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1716",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Soy peptone",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1716",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "D(+)-Glucose",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1716",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "NaCl",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1716",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[4].concentration",
+          "ingredient": "K2HPO4",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1716",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/fard_medium.yaml",
+      "id": "CultureMech:001208",
+      "fingerprint": "e942039dd77aba9792410925ca18ec19e5f3669a022e15ca2b716b2490dd1cba",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/fard_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001208",
+      "accepted_claims": 6,
+      "retained_claims": 6,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/flour_medium.yaml",
+      "id": "CultureMech:001094",
+      "fingerprint": "8a882fea45200630d502b48416d1f13c86679e1aa4714eb5f984c5be67d26fb7",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/flour_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001094",
+      "accepted_claims": 3,
+      "retained_claims": 3,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/gilliamella_medium.yaml",
+      "id": "CultureMech:001136",
+      "fingerprint": "385c9bf44085983f59311870b2fe5f41d4db11d6bda4ffeb4bc816496c37fcd6",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/gilliamella_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001136",
+      "accepted_claims": 7,
+      "retained_claims": 7,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/glucose_minerals_salts_medium.yaml",
+      "id": "CultureMech:000924",
+      "fingerprint": "b83b51490a48db2740cf57cc0b4bdea4fecbad1d87611280a03d13769ba507b7",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/glucose_minerals_salts_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000924",
+      "accepted_claims": 8,
+      "retained_claims": 8,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/gw3_medium.yaml",
+      "id": "CultureMech:000967",
+      "fingerprint": "60953d083c687303535b6e854a89e78989f0121b5873ee7a312495c72c163a31",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/gw3_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000967",
+      "accepted_claims": 8,
+      "retained_claims": 8,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/hallobellus_ruber_medium.yaml",
+      "id": "CultureMech:000990",
+      "fingerprint": "3912af4bb63ac1914a70a4b72bfe8b90283e9e7ecb5449d1ffa68a52cccfe291",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/hallobellus_ruber_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000990",
+      "accepted_claims": 11,
+      "retained_claims": 11,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/haloactinomyces_halophilus_medium.yaml",
+      "id": "CultureMech:000257",
+      "fingerprint": "2b8d373c1ce9a9601690053238f8fbab9ed8a770fbb47d41d7162c832903310e",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/haloactinomyces_halophilus_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000257",
+      "accepted_claims": 10,
+      "retained_claims": 10,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/halomonas_medium_for_strain_ma_c.yaml",
+      "id": "CultureMech:000891",
+      "fingerprint": "7470f1f9f640b8eec7bdb038de0446cfbc88b12ea90fbd9f2b4538d646c0421b",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/halomonas_medium_for_strain_ma_c.yaml"
+      ],
+      "merged_id": "CultureMech:000891",
+      "accepted_claims": 7,
+      "retained_claims": 7,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/high_magnesium_medium.yaml",
+      "id": "CultureMech:000977",
+      "fingerprint": "5c54cd563e6fb773af7bea029d721193250d1c0f9b9143ca41d7a759d3bc0102",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/high_magnesium_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000977",
+      "accepted_claims": 6,
+      "retained_claims": 6,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/m408_medium.yaml",
+      "id": "CultureMech:001107",
+      "fingerprint": "af26d36c954b797cf6ca7a658479f85b3ece8ba636a796990e0b39dd884e9dc7",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/m408_medium.yaml",
+        "data/normalized_yaml/fungal/yeast_extract_manitol_medium_yem.yaml"
+      ],
+      "merged_id": "CultureMech:010457",
+      "accepted_claims": 6,
+      "retained_claims": 6,
+      "reference_retained": false,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/fungal/yeast_extract_manitol_medium_yem.yaml",
+      "id": "CultureMech:010457",
+      "fingerprint": "af26d36c954b797cf6ca7a658479f85b3ece8ba636a796990e0b39dd884e9dc7",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/m408_medium.yaml",
+        "data/normalized_yaml/fungal/yeast_extract_manitol_medium_yem.yaml"
+      ],
+      "merged_id": "CultureMech:010457",
+      "accepted_claims": 6,
+      "retained_claims": 0,
+      "reference_retained": true,
+      "failures": [
+        {
+          "field": "ingredients[0].concentration",
+          "ingredient": "Yeast extract",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1626",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[1].concentration",
+          "ingredient": "Mannitol",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1626",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[2].concentration",
+          "ingredient": "K2HPO4",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1626",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[3].concentration",
+          "ingredient": "MgSO4 x 7 H2O",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1626",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[4].concentration",
+          "ingredient": "NaCl",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1626",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        },
+        {
+          "field": "ingredients[5].concentration",
+          "ingredient": "Agar",
+          "reference": "https://mediadive.dsmz.de/rest/medium/1626",
+          "reason": "Exact amount/ingredient-scoped evidence not retained"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mag_modified_arabinose_gluconate_medium.yaml",
+      "id": "CultureMech:001150",
+      "fingerprint": "f0580cc0c143ceeeff3c58899e8cf1b3330438ec3e5cad9d773534b0d990d603",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/mag_modified_arabinose_gluconate_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001150",
+      "accepted_claims": 9,
+      "retained_claims": 9,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_d_20_6_nacl.yaml",
+      "id": "CultureMech:001013",
+      "fingerprint": "8b6f5da40d906e38d456a9a874247542db43ea3273f0846581775e9a574cebe8",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_d_20_6_nacl.yaml"
+      ],
+      "merged_id": "CultureMech:001013",
+      "accepted_claims": 7,
+      "retained_claims": 7,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_s_for_rhizorhabdus.yaml",
+      "id": "CultureMech:001072",
+      "fingerprint": "08d945c614c92becd1bf6f245691d299ff0638c5ee3756301e8710575eac02b2",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/medium_s_for_rhizorhabdus.yaml"
+      ],
+      "merged_id": "CultureMech:001072",
+      "accepted_claims": 6,
+      "retained_claims": 6,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/methylotrophes_medium.yaml",
+      "id": "CultureMech:000897",
+      "fingerprint": "da7235f20aa3217c400b470c5f861ee804c05944c437954c492accb8c4f2f2ce",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/methylotrophes_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000897",
+      "accepted_claims": 7,
+      "retained_claims": 7,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/microvirga_floculatus_medium.yaml",
+      "id": "CultureMech:001031",
+      "fingerprint": "fca08faa78204b470cd0c80bd5ecf5b44fa54aafeff865ada71d44294062a7d2",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/microvirga_floculatus_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001031",
+      "accepted_claims": 4,
+      "retained_claims": 4,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/microvirga_medium_hv12.yaml",
+      "id": "CultureMech:001025",
+      "fingerprint": "b084f1b5e60ae03456be6b33a1225f7066b00cc9ea120b9902172679bf9b4f22",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/microvirga_medium_hv12.yaml"
+      ],
+      "merged_id": "CultureMech:001025",
+      "accepted_claims": 4,
+      "retained_claims": 4,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/minimal_media_containing_methanol.yaml",
+      "id": "CultureMech:001108",
+      "fingerprint": "b6fe5a729c5e90bbf5b92b8b181f955e2c03c16c66b1479128797a613cd253e4",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/minimal_media_containing_methanol.yaml"
+      ],
+      "merged_id": "CultureMech:001108",
+      "accepted_claims": 14,
+      "retained_claims": 14,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_medium_514_for_halomonas_sp.yaml",
+      "id": "CultureMech:000982",
+      "fingerprint": "9b58d3e936faf17b948dff8836b1fc01d4f0aee1fba402964112bd6f6fbc682c",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_medium_514_for_halomonas_sp.yaml"
+      ],
+      "merged_id": "CultureMech:000982",
+      "accepted_claims": 2,
+      "retained_claims": 2,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_thermus_medium.yaml",
+      "id": "CultureMech:001038",
+      "fingerprint": "a4210d2ec412b073c3163964ac9aa0f7160fde6b2fc9ff12b771b9972e95c4f4",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_thermus_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001038",
+      "accepted_claims": 3,
+      "retained_claims": 3,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_tryptone_soy_broth_agar.yaml",
+      "id": "CultureMech:001008",
+      "fingerprint": "2028ef048b99ec205dc4f459fb800d652baac0406ec05c66d64f63e3cdd1aa6e",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/modified_tryptone_soy_broth_agar.yaml"
+      ],
+      "merged_id": "CultureMech:001008",
+      "accepted_claims": 7,
+      "retained_claims": 7,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/msv_medium_for_tetracoccus_cechii.yaml",
+      "id": "CultureMech:001063",
+      "fingerprint": "72757f396a3166adccaac351b377267bc0acee2aabe9c703e096f0e522db16fe",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/msv_medium_for_tetracoccus_cechii.yaml"
+      ],
+      "merged_id": "CultureMech:001063",
+      "accepted_claims": 9,
+      "retained_claims": 9,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mueller_hinton.yaml",
+      "id": "CultureMech:001190",
+      "fingerprint": "eb1fdde4ed66dc00c6a88ba6b1399d341702b320e5f24202b59447a7826b4617",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/mueller_hinton.yaml"
+      ],
+      "merged_id": "CultureMech:001190",
+      "accepted_claims": 3,
+      "retained_claims": 3,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/paracraurococcus_medium.yaml",
+      "id": "CultureMech:001139",
+      "fingerprint": "d49772d2dd4423962e4e4304d97dc315da4ccf3fc4228e41c6a971c42abb2d7e",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/paracraurococcus_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001139",
+      "accepted_claims": 11,
+      "retained_claims": 11,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/paracraurococcus_medium_bennet.yaml",
+      "id": "CultureMech:001116",
+      "fingerprint": "3863a4711cc5ec55fa276c3f16dd7e937cfc40ff058ca7587cc52f344b9c7bd4",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/paracraurococcus_medium_bennet.yaml"
+      ],
+      "merged_id": "CultureMech:001116",
+      "accepted_claims": 5,
+      "retained_claims": 5,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/rh_medium.yaml",
+      "id": "CultureMech:001134",
+      "fingerprint": "242778c53c5be37b4f3196def29a801782d14b83e76063015eb548da0151797c",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/rh_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001134",
+      "accepted_claims": 12,
+      "retained_claims": 12,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/salinivibrio_sharmensis_medium.yaml",
+      "id": "CultureMech:000927",
+      "fingerprint": "c81ce21bd226f9a3ec4831d6be9c768c8a5164a3fc1f662b07da9a0dffe6a7a1",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/salinivibrio_sharmensis_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000927",
+      "accepted_claims": 6,
+      "retained_claims": 6,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/schaedler_broth_roth_5772.yaml",
+      "id": "CultureMech:001153",
+      "fingerprint": "d792077bf3ba71dd1259badbbddf26b10715382371b8927111f19a04e3beb3d9",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/schaedler_broth_roth_5772.yaml"
+      ],
+      "merged_id": "CultureMech:001153",
+      "accepted_claims": 10,
+      "retained_claims": 10,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/sea_water_luria_bertani_medium.yaml",
+      "id": "CultureMech:001039",
+      "fingerprint": "5a60ecab4e83dcd1c648b76c4d3900543c2fc1b2bf61f491cbc62d1b84d29c98",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/sea_water_luria_bertani_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001039",
+      "accepted_claims": 3,
+      "retained_claims": 3,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/simplicispira_medium_pyg.yaml",
+      "id": "CultureMech:001088",
+      "fingerprint": "c974a0dcf791dc45cbf5988e83c34ec14e6ea7f606ff635431e3d09c25205e4f",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/simplicispira_medium_pyg.yaml"
+      ],
+      "merged_id": "CultureMech:001088",
+      "accepted_claims": 1,
+      "retained_claims": 1,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/sphingobacterium_medium.yaml",
+      "id": "CultureMech:001019",
+      "fingerprint": "775b9543e67c64c2f4f47f398baf5c6b1e94455556ecedecc6263debc573194b",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/sphingobacterium_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001019",
+      "accepted_claims": 5,
+      "retained_claims": 5,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/sulfuriferula_multivorans_medium.yaml",
+      "id": "CultureMech:001060",
+      "fingerprint": "8b148f68fc355ac61121b6b14205511a1effb42fddab60315cc564c169a939d8",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/sulfuriferula_multivorans_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001060",
+      "accepted_claims": 8,
+      "retained_claims": 8,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/t5_medium_modified.yaml",
+      "id": "CultureMech:001201",
+      "fingerprint": "c0e1a37516729c4bfeae97a03e46029adfab3f962fe4716002189b5aa64ee543",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/t5_medium_modified.yaml"
+      ],
+      "merged_id": "CultureMech:001201",
+      "accepted_claims": 3,
+      "retained_claims": 3,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/thermorudis_medium_cfh2.yaml",
+      "id": "CultureMech:001174",
+      "fingerprint": "4d80e4e7fa7646b738b4deac38ffda572f90b2b5a933567e30c9919e63e0b5ed",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/thermorudis_medium_cfh2.yaml"
+      ],
+      "merged_id": "CultureMech:001174",
+      "accepted_claims": 8,
+      "retained_claims": 8,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/trebonia_medium.yaml",
+      "id": "CultureMech:001178",
+      "fingerprint": "e938de4e29e98483cda63362a37f49f4cb5eea5b281a25ab3647bbda6b70649e",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/trebonia_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001178",
+      "accepted_claims": 9,
+      "retained_claims": 9,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/tryptic_soy_broth_medium_sigma_t8907_1kg.yaml",
+      "id": "CultureMech:001098",
+      "fingerprint": "bfbc175193abad0df639ffda7c7f1d677c0a941e722ae29597848d6687aaccc6",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/tryptic_soy_broth_medium_sigma_t8907_1kg.yaml"
+      ],
+      "merged_id": "CultureMech:001098",
+      "accepted_claims": 3,
+      "retained_claims": 3,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/tryptone_starch_medium.yaml",
+      "id": "CultureMech:001035",
+      "fingerprint": "c7975d6bc84ea781e8aacd856b84fadad88bd3b06b48308e5597974e55fb0ea1",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/tryptone_starch_medium.yaml"
+      ],
+      "merged_id": "CultureMech:001035",
+      "accepted_claims": 5,
+      "retained_claims": 5,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ye_10_ca_medium.yaml",
+      "id": "CultureMech:000929",
+      "fingerprint": "a69d321209110100d23b1b8ab9e9f95d294eacdcd099fe73adf5b4dfd5d6df3b",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/ye_10_ca_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000929",
+      "accepted_claims": 3,
+      "retained_claims": 3,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/yma_modified.yaml",
+      "id": "CultureMech:001185",
+      "fingerprint": "7c036b10ef8dc6a61a58969887ede3f794fef5fdf6e351c029f907eead739ad1",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/yma_modified.yaml"
+      ],
+      "merged_id": "CultureMech:001185",
+      "accepted_claims": 7,
+      "retained_claims": 7,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/zymomonas_mobilis_medium.yaml",
+      "id": "CultureMech:000908",
+      "fingerprint": "93ee95434b127139fe3e132e1138246bc2b003ca977dc012ad6c4a4bc39c7978",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/zymomonas_mobilis_medium.yaml"
+      ],
+      "merged_id": "CultureMech:000908",
+      "accepted_claims": 6,
+      "retained_claims": 6,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/fungal/tryptone_yeast_extract_glucose_medium_tyg.yaml",
+      "id": "CultureMech:010455",
+      "fingerprint": "8b3682962eb7f69187ccf62949ad949c312cec5e5333e72810c80b1b2bc1c241",
+      "group_paths": [
+        "data/normalized_yaml/fungal/tryptone_yeast_extract_glucose_medium_tyg.yaml"
+      ],
+      "merged_id": "CultureMech:010455",
+      "accepted_claims": 14,
+      "retained_claims": 14,
+      "reference_retained": true,
+      "failures": []
+    },
+    {
+      "path": "data/normalized_yaml/fungal/yeast_nitrogen_base_glucose_ynbg.yaml",
+      "id": "CultureMech:010458",
+      "fingerprint": "291d4fc6d8dcae4a56977837f4a6a72d9c00c354e9ffd253a498b64ede672fc0",
+      "group_paths": [
+        "data/normalized_yaml/fungal/yeast_nitrogen_base_glucose_ynbg.yaml"
+      ],
+      "merged_id": "CultureMech:010458",
+      "accepted_claims": 4,
+      "retained_claims": 4,
+      "reference_retained": true,
+      "failures": []
+    }
+  ]
+}

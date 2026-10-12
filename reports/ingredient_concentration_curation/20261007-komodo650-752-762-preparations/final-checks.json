@@ -1,0 +1,85 @@
+{
+  "terminal": true,
+  "checks": [
+    {
+      "name": "test-fast",
+      "command": [
+        "just",
+        "test-fast"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo-preparations-test-fast.log"
+    },
+    {
+      "name": "final-independent-readback",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-komodo650-752-762-preparations/audit.py",
+        "--applied",
+        "--out",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261007-komodo650-752-762-preparations/final-readback.json"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo-preparations-final-independent-readback.log"
+    },
+    {
+      "name": "final-source-readback",
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/repair_komodo650_752_762_preparations.py",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo-preparations-final-source-readback.log"
+    },
+    {
+      "name": "final-diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/ingredient-media-20261007/komodo-preparations-final-diff-check.log"
+    }
+  ],
+  "test_suites": {
+    "baseline": [
+      {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "77",
+        "time": "116.950",
+        "timestamp": "2026-10-07T20:49:46.827833-07:00",
+        "hostname": "Marcins-MacBook-Pro-2.local"
+      }
+    ],
+    "post": [
+      {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "275",
+        "time": "116.970",
+        "timestamp": "2026-10-07T20:54:41.120115-07:00",
+        "hostname": "Marcins-MacBook-Pro-2.local"
+      }
+    ],
+    "fast": [
+      {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "16",
+        "tests": "7530",
+        "time": "526.810",
+        "timestamp": "2026-10-07T21:10:39.988903-07:00",
+        "hostname": "Marcins-MacBook-Pro-2.local"
+      }
+    ]
+  },
+  "followup_report_contract": "3/3 exact-path hash-linked supplements; no duplicate Record lines"
+}

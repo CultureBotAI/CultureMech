@@ -5,117 +5,272 @@ category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
-ph_value: 9.0
 media_term:
   preferred_term: KOMODO Medium 2027
   term:
     id: komodo.medium:2027
     label: Solution of growth-stimulating factors (medium 829)
-notes: KOMODO Medium 2027 is the Growth-stimulating factors stock from DSMZ Medium
-  829. DSMZ Medium 829 defines the stock with 5.00 g each of Isobutyric acid, Valeric
-  acid, 2-Methylbutyric acid, and 3-Methylbutyric acid, 2.00 g Caproic acid, 6.00
-  g Succinic acid, and 1000.00 ml Distilled water, adjusted to pH 9.0 with NaOH and
-  autoclaved under 100% N2 gas. MediaDive imports the same stock as mediadive.solution:1680.
+notes: |-
+  KOMODO Medium 2027 is the Growth-stimulating factors stock from DSMZ Medium 829. DSMZ Medium 829 defines the stock with 5.00 g each of Isobutyric acid, Valeric acid, 2-Methylbutyric acid, and 3-Methylbutyric acid, 2.00 g Caproic acid, 6.00 g Succinic acid, and 1000.00 ml Distilled water, adjusted to pH 9.0 with NaOH and autoclaved under 100% N2 gas. MediaDive imports the same stock as mediadive.solution:1680.
+
+  The six acid rates are provider-reported by KOMODO2027, not explicit g/L statements in original DSMZ829. The original growth-factor table gives batch masses and 1000 ml water without an explicit final stock volume. Keep the original preparation separate from a claim that its physical denominator was verified.
+
+  Original stock preparation: six separately listed acid masses plus 1000 ml water, adjusted to pH 9.0 with unquantified NaOH and autoclaved under 100% N2. The exact KOMODO table leaves water and NaOH rates null; neither is replaced by a typical rate.
+
+  Full exact-source recipe and stock/preparation tables were inspected. Reconstructed nodes retain explicit source scope; complete prior ingredient/stock assertions, including copied LB mappings and stage conflations, are archived in append-only history. A title alone is not the basis for removal. Unchanged annotations are preserved, not recertified; no new organism-growth association is added.
 ingredients:
-- preferred_term: Isobutyric acid
-  concentration:
-    value: '5.00'
-    unit: G_PER_L
-  source: DSMZ Medium 829 Growth-stimulating factors
-  notes: DSMZ Medium 829 Growth-stimulating factors lists 5.00 g/L Isobutyric acid.
-  term:
-    id: CHEBI:16135
-    label: isobutyric acid
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16135
-    label: isobutyric acid
 - preferred_term: Valeric acid
   concentration:
     value: '5.00'
     unit: G_PER_L
-  source: DSMZ Medium 829 Growth-stimulating factors
-  notes: DSMZ Medium 829 Growth-stimulating factors lists 5.00 g/L Valeric acid.
   term:
     id: CHEBI:17418
     label: valeric acid
   mediaingredientmech_chebi_term:
     id: CHEBI:17418
     label: valeric acid
-- preferred_term: 2-Methylbutyric acid
+  notes: 'Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving
+    displayed precision. This is a source-reported rate or null, not an inferred stock
+    dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates
+    are not adopted.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027
+    supports: SUPPORT
+    snippet: Valeric acid Valeric acid SEED-cpd00597### 5.00 0.05
+    explanation: |-
+      ingredients[0].preferred_term: Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[1]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Valeric acid Valeric acid SEED-cpd00597### 5.00 0.05
+      ingredients[0].concentration: Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[1]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Valeric acid Valeric acid SEED-cpd00597### 5.00 0.05
+      ingredients[0].notes: Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[1]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Valeric acid Valeric acid SEED-cpd00597### 5.00 0.05
+      ingredients[0].source: KOMODO's table, not an explicit original DSMZ g/L statement, supports this provider rate or null. Original batch quantities remain separately documented. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[1]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[0].concentration: Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+- preferred_term: 2-methylbutyric acid
   concentration:
     value: '5.00'
     unit: G_PER_L
-  source: DSMZ Medium 829 Growth-stimulating factors
-  notes: DSMZ Medium 829 Growth-stimulating factors lists 5.00 g/L 2-Methylbutyric
-    acid.
   term:
     id: CHEBI:37070
     label: 2-methylbutyric acid
   mediaingredientmech_chebi_term:
     id: CHEBI:37070
     label: 2-methylbutyric acid
-- preferred_term: 3-Methylbutyric acid
+  notes: 'Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving
+    displayed precision. This is a source-reported rate or null, not an inferred stock
+    dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates
+    are not adopted.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027
+    supports: SUPPORT
+    snippet: 2-methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# 5.00
+      0.05
+    explanation: |-
+      ingredients[1].preferred_term: Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[2]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: 2-methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# 5.00 0.05
+      ingredients[1].concentration: Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[2]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: 2-methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# 5.00 0.05
+      ingredients[1].notes: Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[2]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: 2-methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# 5.00 0.05
+      ingredients[1].source: KOMODO's table, not an explicit original DSMZ g/L statement, supports this provider rate or null. Original batch quantities remain separately documented. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[2]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[1].concentration: Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+- preferred_term: H2O
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: Exact-accession provider standalone submedium Gram Amount is null; no fixed
+    amount is asserted. This is a source-reported rate or null, not an inferred stock
+    dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates
+    are not adopted.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027
+    supports: SUPPORT
+    snippet: H2O H2O SEED-cpd00001### null null
+    explanation: |-
+      ingredients[2].preferred_term: Exact-accession provider standalone submedium Gram Amount is null; no fixed amount is asserted. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[3]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: H2O H2O SEED-cpd00001### null null
+      ingredients[2].concentration: Exact-accession provider standalone submedium Gram Amount is null; no fixed amount is asserted. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[3]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: H2O H2O SEED-cpd00001### null null
+      ingredients[2].notes: Exact-accession provider standalone submedium Gram Amount is null; no fixed amount is asserted. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[3]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: H2O H2O SEED-cpd00001### null null
+      ingredients[2].source: KOMODO's table, not an explicit original DSMZ g/L statement, supports this provider rate or null. Original batch quantities remain separately documented. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[3]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[2].concentration: Exact-accession provider standalone submedium Gram Amount is null; no fixed amount is asserted. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+- preferred_term: isobutyric acid
   concentration:
     value: '5.00'
     unit: G_PER_L
-  source: DSMZ Medium 829 Growth-stimulating factors
-  notes: DSMZ Medium 829 Growth-stimulating factors lists 5.00 g/L 3-Methylbutyric
-    acid.
   term:
-    id: CHEBI:28484
-    label: isovaleric acid
+    id: CHEBI:16135
+    label: isobutyric acid
   mediaingredientmech_chebi_term:
-    id: CHEBI:28484
-    label: isovaleric acid
+    id: CHEBI:16135
+    label: isobutyric acid
+  notes: 'Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving
+    displayed precision. This is a source-reported rate or null, not an inferred stock
+    dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates
+    are not adopted.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027
+    supports: SUPPORT
+    snippet: isobutyric acid isobutyric acid SEED-cpd01711### 5.00 0.06
+    explanation: |-
+      ingredients[3].preferred_term: Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[4]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: isobutyric acid isobutyric acid SEED-cpd01711### 5.00 0.06
+      ingredients[3].concentration: Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[4]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: isobutyric acid isobutyric acid SEED-cpd01711### 5.00 0.06
+      ingredients[3].notes: Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[4]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: isobutyric acid isobutyric acid SEED-cpd01711### 5.00 0.06
+      ingredients[3].source: KOMODO's table, not an explicit original DSMZ g/L statement, supports this provider rate or null. Original batch quantities remain separately documented. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[4]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[3].concentration: Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
 - preferred_term: Caproic acid
   concentration:
     value: '2.00'
     unit: G_PER_L
-  source: DSMZ Medium 829 Growth-stimulating factors
-  notes: DSMZ Medium 829 Growth-stimulating factors lists 2.00 g/L Caproic acid.
   term:
     id: CHEBI:30776
     label: hexanoic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:30776
     label: hexanoic acid
+  notes: 'Exact-accession provider standalone submedium Gram Amount: 2.00 g/L, preserving
+    displayed precision. This is a source-reported rate or null, not an inferred stock
+    dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates
+    are not adopted.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027
+    supports: SUPPORT
+    snippet: Caproic acid Caproic acid SEED-cpd01113### 2.00 0.02
+    explanation: |-
+      ingredients[4].preferred_term: Exact-accession provider standalone submedium Gram Amount: 2.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[5]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Caproic acid Caproic acid SEED-cpd01113### 2.00 0.02
+      ingredients[4].concentration: Exact-accession provider standalone submedium Gram Amount: 2.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[5]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Caproic acid Caproic acid SEED-cpd01113### 2.00 0.02
+      ingredients[4].notes: Exact-accession provider standalone submedium Gram Amount: 2.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[5]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Caproic acid Caproic acid SEED-cpd01113### 2.00 0.02
+      ingredients[4].source: KOMODO's table, not an explicit original DSMZ g/L statement, supports this provider rate or null. Original batch quantities remain separately documented. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[5]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[4].concentration: Exact-accession provider standalone submedium Gram Amount: 2.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+- preferred_term: 3-methylbutyric acid
+  concentration:
+    value: '5.00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:28484
+    label: isovaleric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28484
+    label: isovaleric acid
+  notes: 'Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving
+    displayed precision. This is a source-reported rate or null, not an inferred stock
+    dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates
+    are not adopted.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027
+    supports: SUPPORT
+    snippet: 3-methylbutyric acid 3-methylbutyric acid 3-methylbutyric acid# 5.00
+      0.05
+    explanation: |-
+      ingredients[5].preferred_term: Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[6]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: 3-methylbutyric acid 3-methylbutyric acid 3-methylbutyric acid# 5.00 0.05
+      ingredients[5].concentration: Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[6]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: 3-methylbutyric acid 3-methylbutyric acid 3-methylbutyric acid# 5.00 0.05
+      ingredients[5].notes: Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[6]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: 3-methylbutyric acid 3-methylbutyric acid 3-methylbutyric acid# 5.00 0.05
+      ingredients[5].source: KOMODO's table, not an explicit original DSMZ g/L statement, supports this provider rate or null. Original batch quantities remain separately documented. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[6]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[5].concentration: Exact-accession provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: Exact-accession provider standalone submedium Gram Amount is null; no fixed
+    amount is asserted. This is a source-reported rate or null, not an inferred stock
+    dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates
+    are not adopted.
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027
+    supports: SUPPORT
+    snippet: NaOH Sodium hydroxide SEED-cpd09244### null null
+    explanation: |-
+      ingredients[6].preferred_term: Exact-accession provider standalone submedium Gram Amount is null; no fixed amount is asserted. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[7]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: NaOH Sodium hydroxide SEED-cpd09244### null null
+      ingredients[6].concentration: Exact-accession provider standalone submedium Gram Amount is null; no fixed amount is asserted. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[7]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: NaOH Sodium hydroxide SEED-cpd09244### null null
+      ingredients[6].notes: Exact-accession provider standalone submedium Gram Amount is null; no fixed amount is asserted. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[7]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: NaOH Sodium hydroxide SEED-cpd09244### null null
+      ingredients[6].source: KOMODO's table, not an explicit original DSMZ g/L statement, supports this provider rate or null. Original batch quantities remain separately documented. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[7]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[6].concentration: Exact-accession provider standalone submedium Gram Amount is null; no fixed amount is asserted. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
 - preferred_term: Succinic acid
   concentration:
     value: '6.00'
     unit: G_PER_L
-  source: DSMZ Medium 829 Growth-stimulating factors
-  notes: DSMZ Medium 829 Growth-stimulating factors lists 6.00 g/L Succinic acid.
   term:
     id: CHEBI:15741
     label: succinic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:15741
     label: succinic acid
-- preferred_term: Distilled water
-  concentration:
-    value: '1000.00'
-    unit: ML_PER_L
-  source: DSMZ Medium 829 Growth-stimulating factors
-  notes: DSMZ Medium 829 Growth-stimulating factors lists 1000.00 ml/L Distilled water.
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: NaOH
-  concentration:
-    value: variable
-    unit: VARIABLE
-  source: DSMZ Medium 829 Growth-stimulating factors
-  notes: DSMZ Medium 829 Growth-stimulating factors adjusts the stock to pH 9 with
-    NaOH; the exact amount is variable.
-  term:
-    id: CHEBI:32145
-    label: sodium hydroxide
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+  notes: 'Exact-accession provider standalone submedium Gram Amount: 6.00 g/L, preserving
+    displayed precision. This is a source-reported rate or null, not an inferred stock
+    dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates
+    are not adopted.'
+  evidence:
+  - reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027
+    supports: SUPPORT
+    snippet: Succinic acid Succinic acid SEED-cpd00036### 6.00 0.05
+    explanation: |-
+      ingredients[7].preferred_term: Exact-accession provider standalone submedium Gram Amount: 6.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[8]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Succinic acid Succinic acid SEED-cpd00036### 6.00 0.05
+      ingredients[7].concentration: Exact-accession provider standalone submedium Gram Amount: 6.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[8]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Succinic acid Succinic acid SEED-cpd00036### 6.00 0.05
+      ingredients[7].notes: Exact-accession provider standalone submedium Gram Amount: 6.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[8]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Succinic acid Succinic acid SEED-cpd00036### 6.00 0.05
+      ingredients[7].source: KOMODO's table, not an explicit original DSMZ g/L statement, supports this provider rate or null. Original batch quantities remain separately documented. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=recipe_table[8]; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+      Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+      ingredients[7].concentration: Exact-accession provider standalone submedium Gram Amount: 6.00 g/L, preserving displayed precision. This is a source-reported rate or null, not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -169,6 +324,289 @@ curation_history:
     acid, 2-Methylbutyric acid, and 3-Methylbutyric acid, 2.00 g Caproic acid, 6.00
     g Succinic acid, and 1000.00 ml Distilled water, adjusted to pH 9.0 with NaOH
     and autoclaved under 100% N2 gas. MediaDive imports the same stock as mediadive.solution:1680.
+- timestamp: '2026-10-09T04:52:49.323535+00:00'
+  curator: codex
+  action: RESTORED_MEDIUM_829_SOURCE_FORMULATIONS_AND_STOCK_SCOPES_WITH_EVIDENCE
+  notes: Restore exact-source medium-829 formulations and stock boundaries, preserve
+    provider rates/nulls and source conflicts, repair quantity units and family scope,
+    and retain prior evidence/history. Each scientific change is linked to an inspected
+    source excerpt; no growth association inferred.
+  source: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027
+  changes: '[{"old_field": "ingredients[1].preferred_term", "field": "ingredients[0].preferred_term",
+    "old": "Valeric acid", "new": "Valeric acid", "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Valeric acid Valeric acid SEED-cpd00597### 5.00 0.05"}, {"old_field":
+    "ingredients[1].concentration", "field": "ingredients[0].concentration", "old":
+    {"value": "5.00", "unit": "G_PER_L"}, "new": {"value": "5.00", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Valeric acid Valeric acid SEED-cpd00597### 5.00 0.05"}, {"old_field":
+    "ingredients[1].notes", "field": "ingredients[0].notes", "old": "DSMZ Medium 829
+    Growth-stimulating factors lists 5.00 g/L Valeric acid.", "new": "Exact-accession
+    provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision.
+    This is a source-reported rate or null, not an inferred stock dose or a normalization
+    from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted.",
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Valeric acid Valeric acid SEED-cpd00597### 5.00 0.05"}, {"old_field":
+    "ingredients[1].source", "field": "ingredients[0].source", "old": "DSMZ Medium
+    829 Growth-stimulating factors", "new": null, "status": "remove_unsupported",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Valeric acid Valeric acid SEED-cpd00597### 5.00 0.05"}, {"old_field":
+    null, "field": "ingredients[0].concentration", "old": null, "new": {"value": "5.00",
+    "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[2].preferred_term",
+    "field": "ingredients[1].preferred_term", "old": "2-Methylbutyric acid", "new":
+    "2-methylbutyric acid", "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "2-methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# 5.00
+    0.05"}, {"old_field": "ingredients[2].concentration", "field": "ingredients[1].concentration",
+    "old": {"value": "5.00", "unit": "G_PER_L"}, "new": {"value": "5.00", "unit":
+    "G_PER_L"}, "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "2-methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# 5.00
+    0.05"}, {"old_field": "ingredients[2].notes", "field": "ingredients[1].notes",
+    "old": "DSMZ Medium 829 Growth-stimulating factors lists 5.00 g/L 2-Methylbutyric
+    acid.", "new": "Exact-accession provider standalone submedium Gram Amount: 5.00
+    g/L, preserving displayed precision. This is a source-reported rate or null, not
+    an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount
+    and SEED aggregates are not adopted.", "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "2-methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# 5.00
+    0.05"}, {"old_field": "ingredients[2].source", "field": "ingredients[1].source",
+    "old": "DSMZ Medium 829 Growth-stimulating factors", "new": null, "status": "remove_unsupported",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "2-methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# 5.00
+    0.05"}, {"old_field": null, "field": "ingredients[1].concentration", "old": null,
+    "new": {"value": "5.00", "unit": "G_PER_L"}, "status": "evidence_only", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[6].preferred_term",
+    "field": "ingredients[2].preferred_term", "old": "Distilled water", "new": "H2O",
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "H2O H2O SEED-cpd00001### null null"}, {"old_field": "ingredients[6].concentration",
+    "field": "ingredients[2].concentration", "old": {"value": "1000.00", "unit": "ML_PER_L"},
+    "new": null, "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "H2O H2O SEED-cpd00001### null null"}, {"old_field": "ingredients[6].notes",
+    "field": "ingredients[2].notes", "old": "DSMZ Medium 829 Growth-stimulating factors
+    lists 1000.00 ml/L Distilled water.", "new": "Exact-accession provider standalone
+    submedium Gram Amount is null; no fixed amount is asserted. This is a source-reported
+    rate or null, not an inferred stock dose or a normalization from the linked DSMZ
+    recipe. Mol Amount and SEED aggregates are not adopted.", "status": "correct",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "H2O H2O SEED-cpd00001### null null"}, {"old_field": "ingredients[6].source",
+    "field": "ingredients[2].source", "old": "DSMZ Medium 829 Growth-stimulating factors",
+    "new": null, "status": "remove_unsupported", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "H2O H2O SEED-cpd00001### null null"}, {"old_field": null, "field":
+    "ingredients[2].concentration", "old": null, "new": null, "status": "evidence_only",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[0].preferred_term",
+    "field": "ingredients[3].preferred_term", "old": "Isobutyric acid", "new": "isobutyric
+    acid", "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "isobutyric acid isobutyric acid SEED-cpd01711### 5.00 0.06"}, {"old_field":
+    "ingredients[0].concentration", "field": "ingredients[3].concentration", "old":
+    {"value": "5.00", "unit": "G_PER_L"}, "new": {"value": "5.00", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "isobutyric acid isobutyric acid SEED-cpd01711### 5.00 0.06"}, {"old_field":
+    "ingredients[0].notes", "field": "ingredients[3].notes", "old": "DSMZ Medium 829
+    Growth-stimulating factors lists 5.00 g/L Isobutyric acid.", "new": "Exact-accession
+    provider standalone submedium Gram Amount: 5.00 g/L, preserving displayed precision.
+    This is a source-reported rate or null, not an inferred stock dose or a normalization
+    from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted.",
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "isobutyric acid isobutyric acid SEED-cpd01711### 5.00 0.06"}, {"old_field":
+    "ingredients[0].source", "field": "ingredients[3].source", "old": "DSMZ Medium
+    829 Growth-stimulating factors", "new": null, "status": "remove_unsupported",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "isobutyric acid isobutyric acid SEED-cpd01711### 5.00 0.06"}, {"old_field":
+    null, "field": "ingredients[3].concentration", "old": null, "new": {"value": "5.00",
+    "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[4].preferred_term",
+    "field": "ingredients[4].preferred_term", "old": "Caproic acid", "new": "Caproic
+    acid", "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Caproic acid Caproic acid SEED-cpd01113### 2.00 0.02"}, {"old_field":
+    "ingredients[4].concentration", "field": "ingredients[4].concentration", "old":
+    {"value": "2.00", "unit": "G_PER_L"}, "new": {"value": "2.00", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Caproic acid Caproic acid SEED-cpd01113### 2.00 0.02"}, {"old_field":
+    "ingredients[4].notes", "field": "ingredients[4].notes", "old": "DSMZ Medium 829
+    Growth-stimulating factors lists 2.00 g/L Caproic acid.", "new": "Exact-accession
+    provider standalone submedium Gram Amount: 2.00 g/L, preserving displayed precision.
+    This is a source-reported rate or null, not an inferred stock dose or a normalization
+    from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted.",
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Caproic acid Caproic acid SEED-cpd01113### 2.00 0.02"}, {"old_field":
+    "ingredients[4].source", "field": "ingredients[4].source", "old": "DSMZ Medium
+    829 Growth-stimulating factors", "new": null, "status": "remove_unsupported",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Caproic acid Caproic acid SEED-cpd01113### 2.00 0.02"}, {"old_field":
+    null, "field": "ingredients[4].concentration", "old": null, "new": {"value": "2.00",
+    "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[3].preferred_term",
+    "field": "ingredients[5].preferred_term", "old": "3-Methylbutyric acid", "new":
+    "3-methylbutyric acid", "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "3-methylbutyric acid 3-methylbutyric acid 3-methylbutyric acid# 5.00
+    0.05"}, {"old_field": "ingredients[3].concentration", "field": "ingredients[5].concentration",
+    "old": {"value": "5.00", "unit": "G_PER_L"}, "new": {"value": "5.00", "unit":
+    "G_PER_L"}, "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "3-methylbutyric acid 3-methylbutyric acid 3-methylbutyric acid# 5.00
+    0.05"}, {"old_field": "ingredients[3].notes", "field": "ingredients[5].notes",
+    "old": "DSMZ Medium 829 Growth-stimulating factors lists 5.00 g/L 3-Methylbutyric
+    acid.", "new": "Exact-accession provider standalone submedium Gram Amount: 5.00
+    g/L, preserving displayed precision. This is a source-reported rate or null, not
+    an inferred stock dose or a normalization from the linked DSMZ recipe. Mol Amount
+    and SEED aggregates are not adopted.", "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "3-methylbutyric acid 3-methylbutyric acid 3-methylbutyric acid# 5.00
+    0.05"}, {"old_field": "ingredients[3].source", "field": "ingredients[5].source",
+    "old": "DSMZ Medium 829 Growth-stimulating factors", "new": null, "status": "remove_unsupported",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "3-methylbutyric acid 3-methylbutyric acid 3-methylbutyric acid# 5.00
+    0.05"}, {"old_field": null, "field": "ingredients[5].concentration", "old": null,
+    "new": {"value": "5.00", "unit": "G_PER_L"}, "status": "evidence_only", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[7].preferred_term",
+    "field": "ingredients[6].preferred_term", "old": "NaOH", "new": "NaOH", "status":
+    "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "NaOH Sodium hydroxide SEED-cpd09244### null null"}, {"old_field":
+    "ingredients[7].concentration", "field": "ingredients[6].concentration", "old":
+    {"value": "variable", "unit": "VARIABLE"}, "new": null, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "NaOH Sodium hydroxide SEED-cpd09244### null null"}, {"old_field":
+    "ingredients[7].notes", "field": "ingredients[6].notes", "old": "DSMZ Medium 829
+    Growth-stimulating factors adjusts the stock to pH 9 with NaOH; the exact amount
+    is variable.", "new": "Exact-accession provider standalone submedium Gram Amount
+    is null; no fixed amount is asserted. This is a source-reported rate or null,
+    not an inferred stock dose or a normalization from the linked DSMZ recipe. Mol
+    Amount and SEED aggregates are not adopted.", "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "NaOH Sodium hydroxide SEED-cpd09244### null null"}, {"old_field":
+    "ingredients[7].source", "field": "ingredients[6].source", "old": "DSMZ Medium
+    829 Growth-stimulating factors", "new": null, "status": "remove_unsupported",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "NaOH Sodium hydroxide SEED-cpd09244### null null"}, {"old_field":
+    null, "field": "ingredients[6].concentration", "old": null, "new": null, "status":
+    "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ingredients[5].preferred_term",
+    "field": "ingredients[7].preferred_term", "old": "Succinic acid", "new": "Succinic
+    acid", "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Succinic acid Succinic acid SEED-cpd00036### 6.00 0.05"}, {"old_field":
+    "ingredients[5].concentration", "field": "ingredients[7].concentration", "old":
+    {"value": "6.00", "unit": "G_PER_L"}, "new": {"value": "6.00", "unit": "G_PER_L"},
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Succinic acid Succinic acid SEED-cpd00036### 6.00 0.05"}, {"old_field":
+    "ingredients[5].notes", "field": "ingredients[7].notes", "old": "DSMZ Medium 829
+    Growth-stimulating factors lists 6.00 g/L Succinic acid.", "new": "Exact-accession
+    provider standalone submedium Gram Amount: 6.00 g/L, preserving displayed precision.
+    This is a source-reported rate or null, not an inferred stock dose or a normalization
+    from the linked DSMZ recipe. Mol Amount and SEED aggregates are not adopted.",
+    "status": "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Succinic acid Succinic acid SEED-cpd00036### 6.00 0.05"}, {"old_field":
+    "ingredients[5].source", "field": "ingredients[7].source", "old": "DSMZ Medium
+    829 Growth-stimulating factors", "new": null, "status": "remove_unsupported",
+    "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Succinic acid Succinic acid SEED-cpd00036### 6.00 0.05"}, {"old_field":
+    null, "field": "ingredients[7].concentration", "old": null, "new": {"value": "6.00",
+    "unit": "G_PER_L"}, "status": "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": "ph_value",
+    "field": "ph_value", "old": 9.0, "new": 9.0, "status": "correct", "reference":
+    "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "PH Info: 9.0, NaOH"}, {"old_field": "record_kind", "field": "record_kind",
+    "old": null, "new": "SOLUTION", "status": "add", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Is SubMedium: true"}, {"old_field": null, "field": "notes", "old":
+    null, "new": "KOMODO Medium 2027 is the Growth-stimulating factors stock from
+    DSMZ Medium 829. DSMZ Medium 829 defines the stock with 5.00 g each of Isobutyric
+    acid, Valeric acid, 2-Methylbutyric acid, and 3-Methylbutyric acid, 2.00 g Caproic
+    acid, 6.00 g Succinic acid, and 1000.00 ml Distilled water, adjusted to pH 9.0
+    with NaOH and autoclaved under 100% N2 gas. MediaDive imports the same stock as
+    mediadive.solution:1680.\n\nThe six acid rates are provider-reported by KOMODO2027,
+    not explicit g/L statements in original DSMZ829. The original growth-factor table
+    gives batch masses and 1000 ml water without an explicit final stock volume. Keep
+    the original preparation separate from a claim that its physical denominator was
+    verified.\n\nOriginal stock preparation: six separately listed acid masses plus
+    1000 ml water, adjusted to pH 9.0 with unquantified NaOH and autoclaved under
+    100% N2. The exact KOMODO table leaves water and NaOH rates null; neither is replaced
+    by a typical rate.\n\nFull exact-source recipe and stock/preparation tables were
+    inspected. Reconstructed nodes retain explicit source scope; complete prior ingredient/stock
+    assertions, including copied LB mappings and stage conflations, are archived in
+    append-only history. A title alone is not the basis for removal. Unchanged annotations
+    are preserved, not recertified; no new organism-growth association is added.",
+    "status": "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Gram & Mol amounts are per Liter of medium."}, {"old_field": null,
+    "field": "notes", "old": null, "new": "KOMODO Medium 2027 is the Growth-stimulating
+    factors stock from DSMZ Medium 829. DSMZ Medium 829 defines the stock with 5.00
+    g each of Isobutyric acid, Valeric acid, 2-Methylbutyric acid, and 3-Methylbutyric
+    acid, 2.00 g Caproic acid, 6.00 g Succinic acid, and 1000.00 ml Distilled water,
+    adjusted to pH 9.0 with NaOH and autoclaved under 100% N2 gas. MediaDive imports
+    the same stock as mediadive.solution:1680.\n\nThe six acid rates are provider-reported
+    by KOMODO2027, not explicit g/L statements in original DSMZ829. The original growth-factor
+    table gives batch masses and 1000 ml water without an explicit final stock volume.
+    Keep the original preparation separate from a claim that its physical denominator
+    was verified.\n\nOriginal stock preparation: six separately listed acid masses
+    plus 1000 ml water, adjusted to pH 9.0 with unquantified NaOH and autoclaved under
+    100% N2. The exact KOMODO table leaves water and NaOH rates null; neither is replaced
+    by a typical rate.\n\nFull exact-source recipe and stock/preparation tables were
+    inspected. Reconstructed nodes retain explicit source scope; complete prior ingredient/stock
+    assertions, including copied LB mappings and stage conflations, are archived in
+    append-only history. A title alone is not the basis for removal. Unchanged annotations
+    are preserved, not recertified; no new organism-growth association is added.",
+    "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf",
+    "snippet": "Dissolve ingredients, adjust pH to 9.0 with NaOH, then autoclave under
+    100% N2 gas."}, {"old_field": "ingredients", "field": "notes", "old": [{"preferred_term":
+    "Isobutyric acid", "concentration": {"value": "5.00", "unit": "G_PER_L"}, "source":
+    "DSMZ Medium 829 Growth-stimulating factors", "notes": "DSMZ Medium 829 Growth-stimulating
+    factors lists 5.00 g/L Isobutyric acid.", "term": {"id": "CHEBI:16135", "label":
+    "isobutyric acid"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:16135", "label":
+    "isobutyric acid"}}, {"preferred_term": "Valeric acid", "concentration": {"value":
+    "5.00", "unit": "G_PER_L"}, "source": "DSMZ Medium 829 Growth-stimulating factors",
+    "notes": "DSMZ Medium 829 Growth-stimulating factors lists 5.00 g/L Valeric acid.",
+    "term": {"id": "CHEBI:17418", "label": "valeric acid"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:17418", "label": "valeric acid"}}, {"preferred_term": "2-Methylbutyric
+    acid", "concentration": {"value": "5.00", "unit": "G_PER_L"}, "source": "DSMZ
+    Medium 829 Growth-stimulating factors", "notes": "DSMZ Medium 829 Growth-stimulating
+    factors lists 5.00 g/L 2-Methylbutyric acid.", "term": {"id": "CHEBI:37070", "label":
+    "2-methylbutyric acid"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:37070",
+    "label": "2-methylbutyric acid"}}, {"preferred_term": "3-Methylbutyric acid",
+    "concentration": {"value": "5.00", "unit": "G_PER_L"}, "source": "DSMZ Medium
+    829 Growth-stimulating factors", "notes": "DSMZ Medium 829 Growth-stimulating
+    factors lists 5.00 g/L 3-Methylbutyric acid.", "term": {"id": "CHEBI:28484", "label":
+    "isovaleric acid"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:28484", "label":
+    "isovaleric acid"}}, {"preferred_term": "Caproic acid", "concentration": {"value":
+    "2.00", "unit": "G_PER_L"}, "source": "DSMZ Medium 829 Growth-stimulating factors",
+    "notes": "DSMZ Medium 829 Growth-stimulating factors lists 2.00 g/L Caproic acid.",
+    "term": {"id": "CHEBI:30776", "label": "hexanoic acid"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:30776", "label": "hexanoic acid"}}, {"preferred_term": "Succinic
+    acid", "concentration": {"value": "6.00", "unit": "G_PER_L"}, "source": "DSMZ
+    Medium 829 Growth-stimulating factors", "notes": "DSMZ Medium 829 Growth-stimulating
+    factors lists 6.00 g/L Succinic acid.", "term": {"id": "CHEBI:15741", "label":
+    "succinic acid"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:15741", "label":
+    "succinic acid"}}, {"preferred_term": "Distilled water", "concentration": {"value":
+    "1000.00", "unit": "ML_PER_L"}, "source": "DSMZ Medium 829 Growth-stimulating
+    factors", "notes": "DSMZ Medium 829 Growth-stimulating factors lists 1000.00 ml/L
+    Distilled water.", "term": {"id": "CHEBI:15377", "label": "water"}, "mediaingredientmech_chebi_term":
+    {"id": "CHEBI:15377", "label": "water"}}, {"preferred_term": "NaOH", "concentration":
+    {"value": "variable", "unit": "VARIABLE"}, "source": "DSMZ Medium 829 Growth-stimulating
+    factors", "notes": "DSMZ Medium 829 Growth-stimulating factors adjusts the stock
+    to pH 9 with NaOH; the exact amount is variable.", "term": {"id": "CHEBI:32145",
+    "label": "sodium hydroxide"}, "mediaingredientmech_chebi_term": {"id": "CHEBI:32145",
+    "label": "sodium hydroxide"}}], "new": "KOMODO Medium 2027 is the Growth-stimulating
+    factors stock from DSMZ Medium 829. DSMZ Medium 829 defines the stock with 5.00
+    g each of Isobutyric acid, Valeric acid, 2-Methylbutyric acid, and 3-Methylbutyric
+    acid, 2.00 g Caproic acid, 6.00 g Succinic acid, and 1000.00 ml Distilled water,
+    adjusted to pH 9.0 with NaOH and autoclaved under 100% N2 gas. MediaDive imports
+    the same stock as mediadive.solution:1680.\n\nThe six acid rates are provider-reported
+    by KOMODO2027, not explicit g/L statements in original DSMZ829. The original growth-factor
+    table gives batch masses and 1000 ml water without an explicit final stock volume.
+    Keep the original preparation separate from a claim that its physical denominator
+    was verified.\n\nOriginal stock preparation: six separately listed acid masses
+    plus 1000 ml water, adjusted to pH 9.0 with unquantified NaOH and autoclaved under
+    100% N2. The exact KOMODO table leaves water and NaOH rates null; neither is replaced
+    by a typical rate.\n\nFull exact-source recipe and stock/preparation tables were
+    inspected. Reconstructed nodes retain explicit source scope; complete prior ingredient/stock
+    assertions, including copied LB mappings and stage conflations, are archived in
+    append-only history. A title alone is not the basis for removal. Unchanged annotations
+    are preserved, not recertified; no new organism-growth association is added.",
+    "status": "evidence_only", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027",
+    "snippet": "Name Semi unique name Unique Name Gram Amount Mol Amount\nValeric
+    acid Valeric acid SEED-cpd00597### 5.00 0.05\n2-methylbutyric acid 2-methylbutyric
+    acid 2-methylbutyric acid# 5.00 0.05\nH2O H2O SEED-cpd00001### null null\nisobutyric
+    acid isobutyric acid SEED-cpd01711### 5.00 0.06\nCaproic acid Caproic acid SEED-cpd01113###
+    2.00 0.02\n3-methylbutyric acid 3-methylbutyric acid 3-methylbutyric acid# 5.00
+    0.05\nNaOH Sodium hydroxide SEED-cpd09244### null null\nSuccinic acid Succinic
+    acid SEED-cpd00036### 6.00 0.05"}]'
 sterilization:
   method: AUTOCLAVE
 data_quality_flags:
@@ -176,4 +614,50 @@ data_quality_flags:
 - ingredients_curated
 references:
 - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf
+  title: '829: DESULFUROBACTERIUM MEDIUM'
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    capture_sha256=8441671f114af61c997ae71ee4bf7c9e200d1fdf45764fe120e6a0709b35df80.
+    Individual authors and publication year not supplied; copyright/access year is
+    not publication year. Source-scoped recipe evidence, not growth evidence.
 - reference: https://mediadive.dsmz.de/medium/829
+- reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027
+  title: KOMODO - the Known Media Database
+  notes: source_type=web_page; discovery_mode=existing_record_reference; accessed_on=2026-10-09;
+    capture_sha256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+    Individual authors and publication year not supplied; copyright/access year is
+    not publication year. Source-scoped recipe evidence, not growth evidence.
+ph_value: 9.0
+evidence:
+- reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2027
+  supports: SUPPORT
+  snippet: 'PH Info: 9.0, NaOH'
+  explanation: |-
+    ph_value: Retain this exact accession's explicit pH; do not conflate another medium or stock pH. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+    Additional exact excerpt: Is SubMedium: true
+    record_kind: Explicit provider submedium assertion identifies a standalone stock, while its existing MediaRecipe schema shape and permanent identifier are preserved. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+    Additional exact excerpt: Gram & Mol amounts are per Liter of medium.
+    notes: The six acid rates are provider-reported by KOMODO2027, not explicit g/L statements in original DSMZ829. The original growth-factor table gives batch masses and 1000 ml water without an explicit final stock volume. Keep the original preparation separate from a claim that its physical denominator was verified. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+
+    Additional exact excerpt: Name Semi unique name Unique Name Gram Amount Mol Amount
+    Valeric acid Valeric acid SEED-cpd00597### 5.00 0.05
+    2-methylbutyric acid 2-methylbutyric acid 2-methylbutyric acid# 5.00 0.05
+    H2O H2O SEED-cpd00001### null null
+    isobutyric acid isobutyric acid SEED-cpd01711### 5.00 0.06
+    Caproic acid Caproic acid SEED-cpd01113### 2.00 0.02
+    3-methylbutyric acid 3-methylbutyric acid 3-methylbutyric acid# 5.00 0.05
+    NaOH Sodium hydroxide SEED-cpd09244### null null
+    Succinic acid Succinic acid SEED-cpd00036### 6.00 0.05
+    notes: Full exact-source recipe and stock/preparation tables were inspected. Reconstructed nodes retain explicit source scope; complete prior ingredient/stock assertions, including copied LB mappings and stage conflations, are archived in append-only history. A title alone is not the basis for removal. Unchanged annotations are preserved, not recertified; no new organism-growth association is added. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T04:05:06.628604+00:00; capture SHA256=e63b7c4684803d00c79526ea63be9eb09697c9789b6d9582aa243840efbbe631.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf
+  supports: SUPPORT
+  snippet: Dissolve ingredients, adjust pH to 9.0 with NaOH, then autoclave under
+    100% N2 gas.
+  explanation: 'notes: Original stock preparation: six separately listed acid masses
+    plus 1000 ml water, adjusted to pH 9.0 with unquantified NaOH and autoclaved under
+    100% N2. The exact KOMODO table leaves water and NaOH rates null; neither is replaced
+    by a typical rate. No unstated density, final volume, percent basis or chemical
+    identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T03:35:49.362734+00:00;
+    capture SHA256=8441671f114af61c997ae71ee4bf7c9e200d1fdf45764fe120e6a0709b35df80.'
+record_kind: SOLUTION

@@ -1,0 +1,225 @@
+{
+  "terminal": true,
+  "phase": "references",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/song_cdm.yaml",
+        "--cache-dir",
+        "/tmp/ingredient-media-20261009-mediadb/reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-reference-adapter/references-v2-00.log",
+      "log_sha256": "95988294435ec76d2da7ce3ec8de82730ba60db93cb62ab583b0e25a93c48de9"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/song_optimal_cdm.yaml",
+        "--cache-dir",
+        "/tmp/ingredient-media-20261009-mediadb/reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-reference-adapter/references-v2-01.log",
+      "log_sha256": "e7724ef7a2eddc53971041007788691fb69eb81140aa086021cff7228e2dc4d1"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml",
+        "--cache-dir",
+        "/tmp/ingredient-media-20261009-mediadb/reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-reference-adapter/references-v2-02.log",
+      "log_sha256": "e3ec5775e2ddc190d07ae9a87f32b9f2ce5ee63aeeecf670b79e72351d872e6c"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml",
+        "--cache-dir",
+        "/tmp/ingredient-media-20261009-mediadb/reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-reference-adapter/references-v2-03.log",
+      "log_sha256": "6ee4ff0323fe31655bc500a26a269fdee843d74a52c9be717f4bdc3abc6db023"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/mcn_medium_whitman.yaml",
+        "--cache-dir",
+        "/tmp/ingredient-media-20261009-mediadb/reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-reference-adapter/references-v2-04.log",
+      "log_sha256": "680e5ec0aae0d470e87b7a7a951cf87ff61b776527fc544c230f7cdf661edf2f"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "scripts/validate_recipe_references.py",
+        "data/normalized_yaml/bacterial/mcna_medium_lupa.yaml",
+        "--cache-dir",
+        "/tmp/ingredient-media-20261009-mediadb/reference-cache",
+        "--json"
+      ],
+      "returncode": 1,
+      "required": false,
+      "log": "reports/ingredient_concentration_curation/20261009-mediadb-reference-adapter/references-v2-05.log",
+      "log_sha256": "136517d6fd10ca8e99d3f34b7df777f1e40b2dc691445172c7b80b8c5c55a5d5"
+    }
+  ],
+  "records_edited": 0,
+  "evidence_entries_added": 0,
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "started_at": "2026-10-09T20:18:04.918450+00:00",
+  "normalized_count": 15910,
+  "inventory_before_sha256": "19c45017d3210c6bc2c2fde0ec7a2f2c4a4498191af394cb351249b3299f6a05",
+  "code_before_sha256": "82f9ce3057063e7493274c335c6b5f6c39d4eccd639d5d60117fcc3ff5d0f64d",
+  "adapter_sha256": "79923b9ef4c9662b67d907fccb9fa24aeab1a9e805face7d3e1e86132a9860a0",
+  "tests_sha256": "de4c2b6e7d7ceb0ce0b5c96b7648141c7ad89d70983a107cc540f4e867fb0343",
+  "helper_sha256": "ae1872eed9c419b978084f1e709c43200d708b4a29072bf15f64c3f5f2bda6f4",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/song_cdm.yaml",
+      "sha256": "80b4d03e9507c90d3e785bcb52c48a433eb33fd11804d7b627d70538512a1731",
+      "checks": 19,
+      "official_checks_passed": 18,
+      "snippet_checks_passed": 17,
+      "remaining_failures": [
+        {
+          "is_valid": false,
+          "reference_id": "https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz",
+          "supporting_text": "",
+          "severity": "ERROR",
+          "message": "Title mismatch for https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz: expected 'MediaDB SQL database export, 7 October 2015' but got 'https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz'",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "production_gate_passed": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/song_optimal_cdm.yaml",
+      "sha256": "fc5a0c573f0966d875b31694cae1ee71a5f848b235beaaef4530a3d97a05f872",
+      "checks": 26,
+      "official_checks_passed": 25,
+      "snippet_checks_passed": 24,
+      "remaining_failures": [
+        {
+          "is_valid": false,
+          "reference_id": "https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz",
+          "supporting_text": "",
+          "severity": "ERROR",
+          "message": "Title mismatch for https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz: expected 'MediaDB SQL database export, 7 October 2015' but got 'https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz'",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "production_gate_passed": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml",
+      "sha256": "7c4595c64c6a2d8eff997578584b50d4b8a3a0f4c27f5afd43aa28a32b9dbf58",
+      "checks": 32,
+      "official_checks_passed": 31,
+      "snippet_checks_passed": 30,
+      "remaining_failures": [
+        {
+          "is_valid": false,
+          "reference_id": "https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz",
+          "supporting_text": "",
+          "severity": "ERROR",
+          "message": "Title mismatch for https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz: expected 'MediaDB SQL database export, 7 October 2015' but got 'https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz'",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "production_gate_passed": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml",
+      "sha256": "5aad348ce284d9f506b4171727eae164d3c5a3676720ce2b843df071b9b98e45",
+      "checks": 32,
+      "official_checks_passed": 31,
+      "snippet_checks_passed": 30,
+      "remaining_failures": [
+        {
+          "is_valid": false,
+          "reference_id": "https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz",
+          "supporting_text": "",
+          "severity": "ERROR",
+          "message": "Title mismatch for https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz: expected 'MediaDB SQL database export, 7 October 2015' but got 'https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz'",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "production_gate_passed": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mcn_medium_whitman.yaml",
+      "sha256": "2f9dbd12a4aa9d04b3803fd0e0067d48f8bf0ed539311d881dcbef1bb318c28a",
+      "checks": 29,
+      "official_checks_passed": 28,
+      "snippet_checks_passed": 27,
+      "remaining_failures": [
+        {
+          "is_valid": false,
+          "reference_id": "https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz",
+          "supporting_text": "",
+          "severity": "ERROR",
+          "message": "Title mismatch for https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz: expected 'MediaDB SQL database export, 7 October 2015' but got 'https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz'",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "production_gate_passed": false
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mcna_medium_lupa.yaml",
+      "sha256": "16237a1b027cae4ddd003919c705212374b93dce1d6649518089ec538d042bd9",
+      "checks": 30,
+      "official_checks_passed": 29,
+      "snippet_checks_passed": 28,
+      "remaining_failures": [
+        {
+          "is_valid": false,
+          "reference_id": "https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz",
+          "supporting_text": "",
+          "severity": "ERROR",
+          "message": "Title mismatch for https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz: expected 'MediaDB SQL database export, 7 October 2015' but got 'https://mediadb.systemsbiology.net/static/defined_media/downloads/media_database.07Oct2015.sql.gz'",
+          "match_result": null,
+          "path": "references[1].title"
+        }
+      ],
+      "production_gate_passed": false
+    }
+  ],
+  "production_reference_gate_passed": false,
+  "snippet_checks_passed": 156,
+  "no_failures_waived": true,
+  "passed": true,
+  "inventory_after_sha256": "19c45017d3210c6bc2c2fde0ec7a2f2c4a4498191af394cb351249b3299f6a05",
+  "normalized_inventory_unchanged": true,
+  "code_unchanged_during_checks": true,
+  "finished_at": "2026-10-09T20:18:23.355913+00:00"
+}

@@ -1,0 +1,109 @@
+{
+  "terminal": true,
+  "passed": true,
+  "state": "uninstalled parser preview",
+  "created_at": "2026-10-10T21:53:44.693881+00:00",
+  "baseline_sha256": "79923b9ef4c9662b67d907fccb9fa24aeab1a9e805face7d3e1e86132a9860a0",
+  "proposed_sha256": "960e8a37a9a88fc54eeb43775465b7ac03cbfe2cdee99a2afbfe16f429ff2483",
+  "test_sha256": "c28eb53301864a035413e553f861a833ca2aca3cb5b1d773a59ef118a0eceda0",
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/test_recipe_utex_references.py",
+        "-q",
+        "--no-cov",
+        "-o",
+        "addopts="
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/check-00.log",
+      "log_sha256": "fde32db87639aa9a52ae73ba54cfd3dcac754abab467d6f4671d13d9deddd755"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-c",
+        "import importlib.util, sys\nimport culturemech.validation\nname = 'culturemech.validation.recipe_references'\nspec = importlib.util.spec_from_file_location(name, sys.argv[1])\nmodule = importlib.util.module_from_spec(spec)\nsys.modules[name] = module\nspec.loader.exec_module(module)\nsetattr(culturemech.validation, 'recipe_references', module)\nimport pytest\nraise SystemExit(pytest.main(sys.argv[2:]))\n",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/recipe_references.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/test_recipe_utex_references.py",
+        "-q",
+        "--no-cov",
+        "-o",
+        "addopts="
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/check-01.log",
+      "log_sha256": "4d2098f3dab0ec3df27004ac527448755602b4dbc99b702a01e5016627d30c3d"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-c",
+        "import importlib.util, sys\nimport culturemech.validation\nname = 'culturemech.validation.recipe_references'\nspec = importlib.util.spec_from_file_location(name, sys.argv[1])\nmodule = importlib.util.module_from_spec(spec)\nsys.modules[name] = module\nspec.loader.exec_module(module)\nsetattr(culturemech.validation, 'recipe_references', module)\nimport pytest\nraise SystemExit(pytest.main(sys.argv[2:]))\n",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/recipe_references.py",
+        "tests/test_recipe_references.py",
+        "tests/test_recipe_komodo_references.py",
+        "tests/test_recipe_nbrc_references.py",
+        "tests/test_recipe_pdf_references.py",
+        "tests/test_recipe_mediadb_references.py",
+        "-q",
+        "--no-cov",
+        "-o",
+        "addopts="
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/check-02.log",
+      "log_sha256": "22792f61c0f49261069056b1382fd18933b8329dc5671c3bf724d34ad1b26975"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "--config",
+        "pyproject.toml",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/recipe_references.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/test_recipe_utex_references.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/check-03.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "--config",
+        "pyproject.toml",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/recipe_references.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/test_recipe_utex_references.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/check-04.log",
+      "log_sha256": "b9cf511501d306d2bd8355ccb165c8ddc0a6fdd62d7c72c4a7b1795cf8934c8c"
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/fix.patch"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-utex-reference-parser-preview/check-05.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "records_edited": 0,
+  "installed_code_edited": false,
+  "patch_sha256": "50cd3d3a819f5630ffe463296c8ebdf6bcb53a9a2e51d4c801488596879146ec",
+  "limitations": "The five extraction-generated quote corrections and source-capture/live checks remain outstanding. This patch is not installed and is not covered by the running full suite."
+}

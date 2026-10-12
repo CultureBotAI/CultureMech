@@ -4,18 +4,6 @@ term:
   id: mediadive.solution:190
   label: Main sol. 111
 composition:
-- preferred_term: Glucose
-  concentration:
-    value: '10.5263'
-    unit: G_PER_L
-  term:
-    id: mediadive.compound:5
-    label: Glucose
-  chebi_term:
-    id: CHEBI:17234
-    label: glucose
-    confidence: 0.9
-    match_type: manual_curated
 - preferred_term: K2HPO4
   concentration:
     value: '0.842105'
@@ -28,6 +16,33 @@ composition:
     label: dipotassium hydrogen phosphate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/190
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "K2HPO4",
+                      "compound_id": 10,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.8,
+                      "unit": "g",
+                      "g_l": 0.842105,
+                      "mmol_l": 4.83479,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[0].concentration (evidence_only), locator=$.data.recipe[1]: Retain the provider-declared basal rate with its batch input and preparation-stage limitation; reindex the evidence scope. Source batch input: 0.8 g. The retained 0.842105 g/L is the provider-declared rate normalized to its 950 ml main-preparation field, not an independently verified concentration after adding the separately prepared glucose. No final volume is inferred. Additional exact preparation excerpt at $.data.steps[0]: {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O) and mix after cooling."
+                  } Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9. Original DSMZ 111 PDF inspected separately. Chemical mappings are unchanged, not independently validated. Historical explanation (superseded where its stage/scope differs): Concentration evidence for composition[1].concentration (K2HPO4) in MediaDive solution 190; locator=$.data.recipe[1] (compound_id=10). Provider explicitly reports g_l=0.842105. Arithmetic check: 0.8 g * 1 g/g / (950 ml / 1000 ml per L) = 0.8421052631578947368421052632 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 950. Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9.
+  notes: 'Source batch input: 0.8 g. The retained 0.842105 g/L is the provider-declared
+    rate normalized to its 950 ml main-preparation field, not an independently verified
+    concentration after adding the separately prepared glucose. No final volume is
+    inferred.'
 - preferred_term: KH2PO4
   concentration:
     value: '0.210526'
@@ -40,6 +55,33 @@ composition:
     label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/190
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "KH2PO4",
+                      "compound_id": 11,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.2,
+                      "unit": "g",
+                      "g_l": 0.210526,
+                      "mmol_l": 1.54701,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[1].concentration (evidence_only), locator=$.data.recipe[2]: Retain the provider-declared basal rate with its batch input and preparation-stage limitation; reindex the evidence scope. Source batch input: 0.2 g. The retained 0.210526 g/L is the provider-declared rate normalized to its 950 ml main-preparation field, not an independently verified concentration after adding the separately prepared glucose. No final volume is inferred. Additional exact preparation excerpt at $.data.steps[0]: {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O) and mix after cooling."
+                  } Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9. Original DSMZ 111 PDF inspected separately. Chemical mappings are unchanged, not independently validated. Historical explanation (superseded where its stage/scope differs): Concentration evidence for composition[2].concentration (KH2PO4) in MediaDive solution 190; locator=$.data.recipe[2] (compound_id=11). Provider explicitly reports g_l=0.210526. Arithmetic check: 0.2 g * 1 g/g / (950 ml / 1000 ml per L) = 0.2105263157894736842105263158 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 950. Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9.
+  notes: 'Source batch input: 0.2 g. The retained 0.210526 g/L is the provider-declared
+    rate normalized to its 950 ml main-preparation field, not an independently verified
+    concentration after adding the separately prepared glucose. No final volume is
+    inferred.'
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.105263'
@@ -52,6 +94,33 @@ composition:
     label: magnesium sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/190
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "MgSO4 x 7 H2O",
+                      "compound_id": 8,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.1,
+                      "unit": "g",
+                      "g_l": 0.105263,
+                      "mmol_l": 0.427073,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[2].concentration (evidence_only), locator=$.data.recipe[3]: Retain the provider-declared basal rate with its batch input and preparation-stage limitation; reindex the evidence scope. Source batch input: 0.1 g. The retained 0.105263 g/L is the provider-declared rate normalized to its 950 ml main-preparation field, not an independently verified concentration after adding the separately prepared glucose. No final volume is inferred. Additional exact preparation excerpt at $.data.steps[0]: {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O) and mix after cooling."
+                  } Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9. Original DSMZ 111 PDF inspected separately. Chemical mappings are unchanged, not independently validated. Historical explanation (superseded where its stage/scope differs): Concentration evidence for composition[3].concentration (MgSO4 x 7 H2O) in MediaDive solution 190; locator=$.data.recipe[3] (compound_id=8). Provider explicitly reports g_l=0.105263. Arithmetic check: 0.1 g * 1 g/g / (950 ml / 1000 ml per L) = 0.1052631578947368421052631579 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 950. Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9.
+  notes: 'Source batch input: 0.1 g. The retained 0.105263 g/L is the provider-declared
+    rate normalized to its 950 ml main-preparation field, not an independently verified
+    concentration after adding the separately prepared glucose. No final volume is
+    inferred.'
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '0.0210526'
@@ -64,6 +133,33 @@ composition:
     label: iron(2+) sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/190
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "FeSO4 x 7 H2O",
+                      "compound_id": 12,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 20,
+                      "unit": "mg",
+                      "g_l": 0.0210526,
+                      "mmol_l": 0.0757248,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[3].concentration (evidence_only), locator=$.data.recipe[4]: Retain the provider-declared basal rate with its batch input and preparation-stage limitation; reindex the evidence scope. Source batch input: 20 mg. The retained 0.0210526 g/L is the provider-declared rate normalized to its 950 ml main-preparation field, not an independently verified concentration after adding the separately prepared glucose. No final volume is inferred. Additional exact preparation excerpt at $.data.steps[0]: {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O) and mix after cooling."
+                  } Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9. Original DSMZ 111 PDF inspected separately. Chemical mappings are unchanged, not independently validated. Historical explanation (superseded where its stage/scope differs): Concentration evidence for composition[4].concentration (FeSO4 x 7 H2O) in MediaDive solution 190; locator=$.data.recipe[4] (compound_id=12). Provider explicitly reports g_l=0.0210526. Arithmetic check: 20 mg * 0.001 g/mg / (950 ml / 1000 ml per L) = 0.02105263157894736842105263158 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 950. Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9.
+  notes: 'Source batch input: 20 mg. The retained 0.0210526 g/L is the provider-declared
+    rate normalized to its 950 ml main-preparation field, not an independently verified
+    concentration after adding the separately prepared glucose. No final volume is
+    inferred.'
 - preferred_term: MnSO4 x 6 H2O
   concentration:
     value: '0.00210526'
@@ -76,6 +172,33 @@ composition:
     label: manganese(II) sulfate hexahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/190
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "MnSO4 x 6 H2O",
+                      "compound_id": 216,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "mg",
+                      "g_l": 0.00210526,
+                      "mmol_l": 0.00812551,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[4].concentration (evidence_only), locator=$.data.recipe[5]: Retain the provider-declared basal rate with its batch input and preparation-stage limitation; reindex the evidence scope. Source batch input: 2 mg. The retained 0.00210526 g/L is the provider-declared rate normalized to its 950 ml main-preparation field, not an independently verified concentration after adding the separately prepared glucose. No final volume is inferred. Additional exact preparation excerpt at $.data.steps[0]: {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O) and mix after cooling."
+                  } Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9. Original DSMZ 111 PDF inspected separately. Chemical mappings are unchanged, not independently validated. Historical explanation (superseded where its stage/scope differs): Concentration evidence for composition[5].concentration (MnSO4 x 6 H2O) in MediaDive solution 190; locator=$.data.recipe[5] (compound_id=216). Provider explicitly reports g_l=0.00210526. Arithmetic check: 2 mg * 0.001 g/mg / (950 ml / 1000 ml per L) = 0.002105263157894736842105263158 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 950. Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9.
+  notes: 'Source batch input: 2 mg. The retained 0.00210526 g/L is the provider-declared
+    rate normalized to its 950 ml main-preparation field, not an independently verified
+    concentration after adding the separately prepared glucose. No final volume is
+    inferred.'
 - preferred_term: ZnSO4 x 6 H2O
   concentration:
     value: '0.00526316'
@@ -88,6 +211,33 @@ composition:
     label: zinc sulfate hexahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/190
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 7,
+                      "compound": "ZnSO4 x 6 H2O",
+                      "compound_id": 217,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "mg",
+                      "g_l": 0.00526316,
+                      "mmol_l": 0.0195256,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[5].concentration (evidence_only), locator=$.data.recipe[6]: Retain the provider-declared basal rate with its batch input and preparation-stage limitation; reindex the evidence scope. Source batch input: 5 mg. The retained 0.00526316 g/L is the provider-declared rate normalized to its 950 ml main-preparation field, not an independently verified concentration after adding the separately prepared glucose. No final volume is inferred. Additional exact preparation excerpt at $.data.steps[0]: {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O) and mix after cooling."
+                  } Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9. Original DSMZ 111 PDF inspected separately. Chemical mappings are unchanged, not independently validated. Historical explanation (superseded where its stage/scope differs): Concentration evidence for composition[6].concentration (ZnSO4 x 6 H2O) in MediaDive solution 190; locator=$.data.recipe[6] (compound_id=217). Provider explicitly reports g_l=0.00526316. Arithmetic check: 5 mg * 0.001 g/mg / (950 ml / 1000 ml per L) = 0.005263157894736842105263157895 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 950. Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9.
+  notes: 'Source batch input: 5 mg. The retained 0.00526316 g/L is the provider-declared
+    rate normalized to its 950 ml main-preparation field, not an independently verified
+    concentration after adding the separately prepared glucose. No final volume is
+    inferred.'
 - preferred_term: CuSO4 x 6 H2O
   concentration:
     value: '0.00421053'
@@ -100,6 +250,33 @@ composition:
     label: copper(II) sulfate hexahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/190
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 8,
+                      "compound": "CuSO4 x 6 H2O",
+                      "compound_id": 218,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 4,
+                      "unit": "mg",
+                      "g_l": 0.00421053,
+                      "mmol_l": 0.0157285,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[6].concentration (evidence_only), locator=$.data.recipe[7]: Retain the provider-declared basal rate with its batch input and preparation-stage limitation; reindex the evidence scope. Source batch input: 4 mg. The retained 0.00421053 g/L is the provider-declared rate normalized to its 950 ml main-preparation field, not an independently verified concentration after adding the separately prepared glucose. No final volume is inferred. Additional exact preparation excerpt at $.data.steps[0]: {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O) and mix after cooling."
+                  } Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9. Original DSMZ 111 PDF inspected separately. Chemical mappings are unchanged, not independently validated. Historical explanation (superseded where its stage/scope differs): Concentration evidence for composition[7].concentration (CuSO4 x 6 H2O) in MediaDive solution 190; locator=$.data.recipe[7] (compound_id=218). Provider explicitly reports g_l=0.00421053. Arithmetic check: 4 mg * 0.001 g/mg / (950 ml / 1000 ml per L) = 0.004210526315789473684210526316 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 950. Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9.
+  notes: 'Source batch input: 4 mg. The retained 0.00421053 g/L is the provider-declared
+    rate normalized to its 950 ml main-preparation field, not an independently verified
+    concentration after adding the separately prepared glucose. No final volume is
+    inferred.'
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.00526316'
@@ -112,6 +289,33 @@ composition:
     label: sodium molybdate dihydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/190
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 9,
+                      "compound": "Na2MoO4 x 2 H2O",
+                      "compound_id": 9,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 5,
+                      "unit": "mg",
+                      "g_l": 0.00526316,
+                      "mmol_l": 0.0217531,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[7].concentration (evidence_only), locator=$.data.recipe[8]: Retain the provider-declared basal rate with its batch input and preparation-stage limitation; reindex the evidence scope. Source batch input: 5 mg. The retained 0.00526316 g/L is the provider-declared rate normalized to its 950 ml main-preparation field, not an independently verified concentration after adding the separately prepared glucose. No final volume is inferred. Additional exact preparation excerpt at $.data.steps[0]: {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O) and mix after cooling."
+                  } Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9. Original DSMZ 111 PDF inspected separately. Chemical mappings are unchanged, not independently validated. Historical explanation (superseded where its stage/scope differs): Concentration evidence for composition[8].concentration (Na2MoO4 x 2 H2O) in MediaDive solution 190; locator=$.data.recipe[8] (compound_id=9). Provider explicitly reports g_l=0.00526316. Arithmetic check: 5 mg * 0.001 g/mg / (950 ml / 1000 ml per L) = 0.005263157894736842105263157895 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 950. Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9.
+  notes: 'Source batch input: 5 mg. The retained 0.00526316 g/L is the provider-declared
+    rate normalized to its 950 ml main-preparation field, not an independently verified
+    concentration after adding the separately prepared glucose. No final volume is
+    inferred.'
 - preferred_term: Agar
   concentration:
     value: '15.7895'
@@ -124,10 +328,37 @@ composition:
     label: agar
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/190
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 10,
+                      "compound": "Agar",
+                      "compound_id": 3,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 15,
+                      "unit": "g",
+                      "g_l": 15.7895,
+                      "mmol_l": 46.9464,
+                      "optional": 0
+                  }
+    explanation: |-
+      composition[8].concentration (evidence_only), locator=$.data.recipe[9]: Retain the provider-declared basal rate with its batch input and preparation-stage limitation; reindex the evidence scope. Source batch input: 15 g. The retained 15.7895 g/L is the provider-declared rate normalized to its 950 ml main-preparation field, not an independently verified concentration after adding the separately prepared glucose. No final volume is inferred. Additional exact preparation excerpt at $.data.steps[0]: {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O) and mix after cooling."
+                  } Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9. Original DSMZ 111 PDF inspected separately. Chemical mappings are unchanged, not independently validated. Historical explanation (superseded where its stage/scope differs): Concentration evidence for composition[9].concentration (Agar) in MediaDive solution 190; locator=$.data.recipe[9] (compound_id=3). Provider explicitly reports g_l=15.7895. Arithmetic check: 15 g * 1 g/g / (950 ml / 1000 ml per L) = 15.78947368421052631578947368 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 950. Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9.
+  notes: 'Source batch input: 15 g. The retained 15.7895 g/L is the provider-declared
+    rate normalized to its 950 ml main-preparation field, not an independently verified
+    concentration after adding the separately prepared glucose. No final volume is
+    inferred.'
 - preferred_term: Distilled water
   concentration:
-    value: '1000.0'
-    unit: PERCENT_V_V
+    value: '0.95'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -136,6 +367,31 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  notes: 950 ml distilled-water input per basal batch, not a final-volume makeup instruction.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/190
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 11,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 950,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'composition[9].concentration (correct), locator=$.data.recipe[10]:
+      950 ml / 1000 ml per L = 0.95 L water input per prepared batch; no percentage
+      or final volume inferred. Supports the water label and input-basis note too.
+      Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9.
+      Original DSMZ 111 PDF inspected separately. Chemical mappings are unchanged,
+      not independently validated.'
 preparation_notes: 'Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml
   H2O) and mix after cooling.
 
@@ -179,6 +435,71 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-10-07T08:27:51.574555+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/190
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "10.5263"}
+    -> {"unit": "G_PER_L", "value": "10.5263"} (evidence_only); composition[1].concentration:
+    {"unit": "G_PER_L", "value": "0.842105"} -> {"unit": "G_PER_L", "value": "0.842105"}
+    (evidence_only); composition[2].concentration: {"unit": "G_PER_L", "value": "0.210526"}
+    -> {"unit": "G_PER_L", "value": "0.210526"} (evidence_only); composition[3].concentration:
+    {"unit": "G_PER_L", "value": "0.105263"} -> {"unit": "G_PER_L", "value": "0.105263"}
+    (evidence_only); composition[4].concentration: {"unit": "G_PER_L", "value": "0.0210526"}
+    -> {"unit": "G_PER_L", "value": "0.0210526"} (evidence_only); composition[5].concentration:
+    {"unit": "G_PER_L", "value": "0.00210526"} -> {"unit": "G_PER_L", "value": "0.00210526"}
+    (evidence_only); composition[6].concentration: {"unit": "G_PER_L", "value": "0.00526316"}
+    -> {"unit": "G_PER_L", "value": "0.00526316"} (evidence_only); composition[7].concentration:
+    {"unit": "G_PER_L", "value": "0.00421053"} -> {"unit": "G_PER_L", "value": "0.00421053"}
+    (evidence_only); composition[8].concentration: {"unit": "G_PER_L", "value": "0.00526316"}
+    -> {"unit": "G_PER_L", "value": "0.00526316"} (evidence_only); composition[9].concentration:
+    {"unit": "G_PER_L", "value": "15.7895"} -> {"unit": "G_PER_L", "value": "15.7895"}
+    (evidence_only)'
+- timestamp: '2026-10-07T21:37:12.543274+00:00'
+  curator: codex
+  action: RESTORED_DSMZ111_GLUCOSE_STOCK_AND_INPUT_BASES
+  notes: Restored separate glucose preparation, withdrew its wrongly staged 10.5263
+    g/L slot, and distinguished water inputs from final volumes. Preserved all previous
+    history, source snippets, identifiers, mappings and variant links. Basal provider
+    rates remain explicitly scoped; no growth association added.
+  source: https://mediadive.dsmz.de/rest/solution/190; https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf
+  changes: 'solutions[0].composition[0].notes: {"value": "10.5263", "unit": "G_PER_L"}
+    -> "Source batch input: 10 g glucose in 50 ml H2O, sterilized separately and mixed
+    after cooling. The former 10.5263 g/L divides by the unrelated 950 ml basal-water
+    input and is withdrawn. No 200 g/L stock strength or 10 g/L final-medium concentration
+    is asserted: neither final volume is specified." (withdraw); composition[0].concentration:
+    {"value": "0.842105", "unit": "G_PER_L"} -> {"value": "0.842105", "unit": "G_PER_L"}
+    (evidence_only); composition[1].concentration: {"value": "0.210526", "unit": "G_PER_L"}
+    -> {"value": "0.210526", "unit": "G_PER_L"} (evidence_only); composition[2].concentration:
+    {"value": "0.105263", "unit": "G_PER_L"} -> {"value": "0.105263", "unit": "G_PER_L"}
+    (evidence_only); composition[3].concentration: {"value": "0.0210526", "unit":
+    "G_PER_L"} -> {"value": "0.0210526", "unit": "G_PER_L"} (evidence_only); composition[4].concentration:
+    {"value": "0.00210526", "unit": "G_PER_L"} -> {"value": "0.00210526", "unit":
+    "G_PER_L"} (evidence_only); composition[5].concentration: {"value": "0.00526316",
+    "unit": "G_PER_L"} -> {"value": "0.00526316", "unit": "G_PER_L"} (evidence_only);
+    composition[6].concentration: {"value": "0.00421053", "unit": "G_PER_L"} -> {"value":
+    "0.00421053", "unit": "G_PER_L"} (evidence_only); composition[7].concentration:
+    {"value": "0.00526316", "unit": "G_PER_L"} -> {"value": "0.00526316", "unit":
+    "G_PER_L"} (evidence_only); composition[8].concentration: {"value": "15.7895",
+    "unit": "G_PER_L"} -> {"value": "15.7895", "unit": "G_PER_L"} (evidence_only);
+    composition[9].concentration: {"value": "1000.0", "unit": "PERCENT_V_V"} -> {"value":
+    "0.95", "unit": "L"} (correct); solutions[0].composition[1].concentration: null
+    -> {"value": "0.05", "unit": "L"} (add); notes: null -> "Preparation scope: basal
+    input is 950 ml distilled water plus the listed salts and agar; glucose (10 g
+    in 50 ml H2O) is sterilized separately and mixed after cooling. The retained basal
+    g/L values are provider-reported normalizations, not final-medium concentrations.
+    The two water inputs do not establish a measured 1 L final volume. Historical
+    import annotations and ontology mappings are retained, not revalidated." (correct_scope);
+    solutions[0].preferred_term: null -> "Separately sterilized glucose preparation"
+    (restore_stock); solutions[0].preparation_notes: null -> "Sterilize glucose separately
+    (10 g in 50 ml H2O) and mix after cooling." (restore_stock); solutions[0].notes:
+    null -> "Mix the separately prepared glucose with the cooled basal preparation.
+    The 50 ml is water input, not a measured stock volume or a per-liter dose; no
+    numeric stock addition concentration is asserted." (restore_stock); solutions[0].source:
+    null -> "https://mediadive.dsmz.de/rest/solution/190" (restore_stock)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -187,3 +508,114 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/190
+  title: 'MediaDive solution 190: Main sol. 111'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.
+- reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf
+  title: DSMZ 111. BEIJERINCKIA MEDIUM
+  notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
+    accessed_on=2026-10-07; individual authors and publication year not established;
+    PDF copyright year is not a publication date. Original one-page recipe inspected;
+    table and separate-glucose instruction agree with the captured API.
+solutions:
+- preferred_term: Separately sterilized glucose preparation
+  composition:
+  - preferred_term: Glucose
+    term:
+      id: mediadive.compound:5
+      label: Glucose
+    chebi_term:
+      id: CHEBI:17234
+      label: glucose
+      confidence: 0.9
+      match_type: manual_curated
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/solution/190
+      supports: SUPPORT
+      snippet: |-
+        {
+                        "recipe_order": 1,
+                        "compound": "Glucose",
+                        "compound_id": 5,
+                        "solution": null,
+                        "solution_id": null,
+                        "condition": null,
+                        "attribute": null,
+                        "amount": 10,
+                        "unit": "g",
+                        "g_l": 10.5263,
+                        "mmol_l": 58.4276,
+                        "optional": 0
+                    }
+      explanation: |-
+        solutions[0].composition[0].notes (withdraw), locator=$.data.recipe[0]: Withdraw the table-derived glucose rate and retain the supported mass at its separate preparation stage. Source batch input: 10 g glucose in 50 ml H2O, sterilized separately and mixed after cooling. The former 10.5263 g/L divides by the unrelated 950 ml basal-water input and is withdrawn. No 200 g/L stock strength or 10 g/L final-medium concentration is asserted: neither final volume is specified. Additional exact preparation excerpt at $.data.steps[0]: {
+                        "recipe_order": null,
+                        "step": "Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O) and mix after cooling."
+                    } Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9. Original DSMZ 111 PDF inspected separately. Chemical mappings are unchanged, not independently validated. Historical explanation (superseded where its stage/scope differs): Concentration evidence for composition[0].concentration (Glucose) in MediaDive solution 190; locator=$.data.recipe[0] (compound_id=5). Provider explicitly reports g_l=10.5263. Arithmetic check: 10 g * 1 g/g / (950 ml / 1000 ml per L) = 10.52631578947368421052631579 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: "volume": 950. Retrieved 2026-10-07T08:21:09.248615+00:00; response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9.
+    notes: 'Source batch input: 10 g glucose in 50 ml H2O, sterilized separately and
+      mixed after cooling. The former 10.5263 g/L divides by the unrelated 950 ml
+      basal-water input and is withdrawn. No 200 g/L stock strength or 10 g/L final-medium
+      concentration is asserted: neither final volume is specified.'
+  - preferred_term: Water
+    concentration:
+      value: '0.05'
+      unit: L
+    notes: 50 ml H2O input for the separately sterilized glucose; water purity and
+      final stock volume are not specified.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/solution/190
+      supports: SUPPORT
+      snippet: |-
+        {
+                        "recipe_order": null,
+                        "step": "Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O) and mix after cooling."
+                    }
+      explanation: 'solutions[0].composition[1].concentration (add), locator=$.data.steps[0]:
+        50 ml / 1000 ml per L = 0.05 L water input, not 0.05 L of final stock or a
+        50 ml/L dose. H2O does not establish distilled-water purity. Retrieved 2026-10-07T08:21:09.248615+00:00;
+        response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9.
+        Original DSMZ 111 PDF inspected separately. Chemical mappings are unchanged,
+        not independently validated.'
+  preparation_notes: Sterilize glucose separately (10 g in 50 ml H2O) and mix after
+    cooling.
+  notes: Mix the separately prepared glucose with the cooled basal preparation. The
+    50 ml is water input, not a measured stock volume or a per-liter dose; no numeric
+    stock addition concentration is asserted.
+  source: https://mediadive.dsmz.de/rest/solution/190
+source_data:
+  origin: MediaDive
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/190
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": null,
+                      "step": "Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O) and mix after cooling."
+                  }
+    explanation: 'notes (correct_scope), locator=$.data.steps[0]: Preparation-stage
+      qualification for the parent record; water input amount is independently quoted
+      on its ingredient. solutions[0].preferred_term (restore_stock), locator=$.data.steps[0]:
+      Source-explicit separate glucose preparation; its name is a curator label, not
+      a new source accession. No numeric stock dose, sterilization method, temperature
+      or final volume is inferred. solutions[0].preparation_notes (restore_stock),
+      locator=$.data.steps[0]: Source-explicit separate glucose preparation; its name
+      is a curator label, not a new source accession. No numeric stock dose, sterilization
+      method, temperature or final volume is inferred. solutions[0].notes (restore_stock),
+      locator=$.data.steps[0]: Source-explicit separate glucose preparation; its name
+      is a curator label, not a new source accession. No numeric stock dose, sterilization
+      method, temperature or final volume is inferred. solutions[0].source (restore_stock),
+      locator=$.data.steps[0]: Source-explicit separate glucose preparation; its name
+      is a curator label, not a new source accession. No numeric stock dose, sterilization
+      method, temperature or final volume is inferred. Retrieved 2026-10-07T08:21:09.248615+00:00;
+      response SHA256=37e247b4ac27dd60eddd8185e4ff45fb86dd4bf7d4c0406bb20203df7a79f3c9.
+      Original DSMZ 111 PDF inspected separately. Chemical mappings are unchanged,
+      not independently validated.'
+notes: 'Preparation scope: basal input is 950 ml distilled water plus the listed salts
+  and agar; glucose (10 g in 50 ml H2O) is sterilized separately and mixed after cooling.
+  The retained basal g/L values are provider-reported normalizations, not final-medium
+  concentrations. The two water inputs do not establish a measured 1 L final volume.
+  Historical import annotations and ontology mappings are retained, not revalidated.'

@@ -1,0 +1,115 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "review_complete": false,
+  "all_record_goal_complete": false,
+  "normalized_sha256": "a55dbe72d9740772e93f5dbb870bc17709d68b4b494cd12f69e5bb02b7c41f23",
+  "ignored_files_included": true,
+  "capture_receipt_sha256": "8c802303cf38982bebc07777a71a7d2dab5d4c01d44c0cc1d1c8136d866a39a4",
+  "source_inspection_sha256": "d00a0ca36b752589b8ebfbe2cd21554a8294892b1abb14899ef1cef9020eaa15",
+  "identity_inspection_sha256": "0c0a09b33fdab7b7f92a8929e499e1c4f827110bcfad90f88925166322c6d083",
+  "schema_sha256": "461478d900fdee29a52c3d14656bcf369443bfdd0f4a534aa9d385f25df1cf8a",
+  "unchanged_records": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "before_sha256": "ddf16580d20654367f1df777e76db38e1edb4071d4b0d9dea90b9bc02f612043"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "before_sha256": "91cdb9a37c2cd48496c6039cbca7912b140c126ebc1f849c1877e52dfcdb212d"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "id": "CultureMech:015061",
+      "before_sha256": "34935a5129af3ca97dc91ffe288acaaf43aeed561e6f8e75f47513b711668a06"
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "before_sha256": "4a4cd36c2bf3c84cd704ad0aeae7838a4e11859e93db56c19f9474f577b43c67"
+    }
+  ],
+  "decisions": [
+    {
+      "topic": "resazurin_amount",
+      "records": [
+        "CultureMech:001425",
+        "CultureMech:014736"
+      ],
+      "status": "evidence_only",
+      "existing": {
+        "value": "0.000499002",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.000499002",
+        "unit": "G_PER_L"
+      },
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+      "snippet": "Sodium resazurin (0.1% w/v)                                        0.50        ml",
+      "additional_exact_excerpt": "Final volume: 1002 ml",
+      "locator": "PDF page 1, main recipe table and final-volume heading",
+      "calculation": "0.1% w/v = 1 g/L stock. 1 g/L * 0.0005 L / 1.002 L = 0.0004990019960079840319361277445 g/L; six-significant-digit rounding matches 0.000499002 g/L.",
+      "provider_reference": "https://mediadive.dsmz.de/rest/solution/599",
+      "provider_snippet": "{\n                \"recipe_order\": 15,\n                \"compound\": \"Sodium resazurin\",\n                \"compound_id\": 1852,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\": 0.5,\n                \"unit\": \"ml\",\n                \"g_l\": 0.000499002,\n                \"mmol_l\": 0.00198671,\n                \"optional\": 0\n            }",
+      "decision": "Retain this supported final solute rate, adding exact stock-strength, dose and final-volume evidence. Do not label it a numerical error or double-count an added stock descriptor. KOMODO has its own reported rate and must remain separately scoped."
+    },
+    {
+      "topic": "water_unit",
+      "record": "CultureMech:014736",
+      "pointer": [
+        "composition",
+        13,
+        "concentration"
+      ],
+      "status": "correct",
+      "existing": {
+        "value": "998.003992015968",
+        "unit": "PERCENT_V_V"
+      },
+      "proposed": {
+        "value": "998.003992015968",
+        "unit": "ML_PER_L"
+      },
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+      "snippet": "Distilled water                                                1000.00         ml",
+      "additional_exact_excerpt": "Final volume: 1002 ml",
+      "calculation": "1000 ml water input / 1.002 L stated final volume = 998.0039920159680638722554890 ml/L. The existing number is not percent v/v.",
+      "decision": "Minimal unit correction is supported by the matching original's explicit final-volume statement. Link that statement and the exact source/API water row; do not infer the denominator from summed liquid inputs."
+    },
+    {
+      "topic": "fatty_acid_provider_rates",
+      "record": "CultureMech:015061",
+      "status": "mixed",
+      "reference": "https://mediadive.dsmz.de/rest/solution/6552",
+      "snippet": "[\n            {\n                \"recipe_order\": 2,\n                \"compound\": \"n-Butyric acid\",\n                \"compound_id\": 376,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5.8,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\": \"iso-Butyric acid\",\n                \"compound_id\": 377,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5.8,\n                \"unit\": \"ml\",\n                \"g_l\": 275.5,\n                \"mmol_l\": 3126.77,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\": \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\": \"n-Valeric acid\",\n                \"compound_id\": 288,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\": \"ml\",\n                \"g_l\": 131.46,\n                \"mmol_l\": 1287.18,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\": \"iso-Valeric acid\",\n                \"compound_id\": 378,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\": \"ml\",\n                \"g_l\": 130.34,\n                \"mmol_l\": 1276.22,\n                \"optional\": 0\n            }\n        ]",
+      "decision": "The three existing g/L entries are explicitly provider-reported, not errors merely because inputs were liquid. Preserve their source-qualified meaning. The 290/140 percent entries are unsupported; exact 5.8/2.8 ml batch doses are available, but new final percentages require an independently supported final-volume basis. Do not infer density or discard valid provider facts."
+    },
+    {
+      "topic": "storage_action",
+      "record": "CultureMech:001425",
+      "pointer": [
+        "preparation_steps",
+        2,
+        "action"
+      ],
+      "status": "correct",
+      "existing": "HEAT",
+      "proposed": "STORE",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+      "snippet": "Store fatty acid mixture at -20\u00b0C.",
+      "decision": "The instruction is storage of the fatty-acid stock, not heating the medium. STORE is an existing schema enum; retain the exact temperature and stock scope."
+    },
+    {
+      "topic": "conditional_agar_and_physical_state",
+      "status": "conflict",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+      "snippet": "For solid medium add 12.00 g/l agar (BD Bacto).",
+      "additional_exact_excerpt": "Agar (BD Bacto), for solid medium                                 12.00          g",
+      "decision": "The original table and procedure give different concentration bases for conditional agar. Do not average, invent a numerical range, or force agar into all formulations. PhysicalStateEnum is required and has no unknown member, so omission is not schema-valid and assigning LIQUID from absence alone is not justified. Decide the represented preparation/variant explicitly before a full proposal."
+    }
+  ],
+  "remaining": "A guarded four-record proposal, complete per-claim source projection and independent review are still required. Preserve all nine existing evidence entries and exact source formulations. The earlier resazurin-as-wrong-quantity suggestion is superseded by the complete dilution check here; the earlier source-inspection receipt remains immutable."
+}

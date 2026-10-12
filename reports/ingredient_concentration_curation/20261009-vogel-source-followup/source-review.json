@@ -1,0 +1,93 @@
+{
+  "scope": "Read-only source follow-up, not a canonical all-claim review or application plan",
+  "records_edited": 0,
+  "evidence_entries_added": 0,
+  "canonical_reports_added": 0,
+  "all_record_goal_complete": false,
+  "record": {
+    "path": "data/normalized_yaml/bacterial/vogels_medium_n.yaml",
+    "id": "CultureMech:007187",
+    "source_term": "MEDIADB:287",
+    "sha256": "1ec89dfa0795e8886a28c0daa7815a33261df2bf8bfcc6d7eb23d785ced39d9f",
+    "reviewed_commit": "f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f",
+    "current_claims": [
+      {"path": "ingredients[0].concentration", "name": "Orthophosphate", "value": "2600.0", "unit": "MILLIMOLAR"},
+      {"path": "ingredients[1].concentration", "name": "Sulfate", "value": "104.1", "unit": "MILLIMOLAR"},
+      {"path": "ingredients[2].concentration", "name": "Sucrose", "value": "29.21", "unit": "MILLIMOLAR"},
+      {"path": "ingredients[3].concentration", "name": "Biotin", "value": "0.00103", "unit": "MILLIMOLAR"},
+      {"path": "ingredients[4].concentration", "name": "Citrate", "value": "660.0", "unit": "MILLIMOLAR"},
+      {"path": "ingredients[5].concentration", "name": "Potassium", "value": "6390.0", "unit": "MILLIMOLAR"},
+      {"path": "ingredients[6].concentration", "name": "Nitrate", "value": "1610.0", "unit": "MILLIMOLAR"},
+      {"path": "ingredients[7].concentration", "name": "Magnesium", "value": "411.44", "unit": "MILLIMOLAR"},
+      {"path": "ingredients[8].concentration", "name": "Cl-", "value": "141.03", "unit": "MILLIMOLAR"},
+      {"path": "ingredients[9].concentration", "name": "Sodium", "value": "2170.0", "unit": "MILLIMOLAR"},
+      {"path": "ingredients[10].concentration", "name": "NH4+", "value": "5540.0", "unit": "MILLIMOLAR"},
+      {"path": "ingredients[11].concentration", "name": "Fe2+", "value": "0.01791", "unit": "MILLIMOLAR"}
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.fgsc.net/fgn/nn4/4laycock.pdf",
+      "title": "Stanford Neurospora Methods",
+      "authors": "N. Murray and D. Perkins",
+      "year": null,
+      "year_note": "1963 appears in bibliographic leads; the inspected scan pages do not themselves establish the issue year.",
+      "source_type": "scanned_journal_protocol",
+      "discovery_mode": "manual_web_search_from_database_source_hold",
+      "accessed_on": "2026-10-09",
+      "sha256": "c352c673a04a16c4d6a13cbc55d54093aac6bfddfed26a7d39066544e4f5ea3f",
+      "visual_pages_inspected_one_based": [2, 3, 5, 6],
+      "renderer": "pypdfium2 5.14.0, scale=2, isolated /tmp installation",
+      "snippets": [
+        {"locator": "PDF page 5, printed page 24, section 12, stock table", "text": "KH2PO4, anhydrous 250 grams"},
+        {"locator": "PDF page 5, printed page 24, paragraph following stock table", "text": "For use, this medium is diluted 50-fold with distilled water."},
+        {"locator": "PDF page 3, section 3, carbon source", "text": "1% sucrose"}
+      ],
+      "transcription_note": "Formula subscripts are represented inline; the printed line break within 50-fold is joined without deleting its hyphen.",
+      "source_caveat": "The source labels these notebook methods informational and not for citation in publication. It reproduces Vogel's 1956 directions with permission; it is not the linked 1964 article.",
+      "finding": "The source distinguishes a concentrated salts preparation, its fiftyfold dilution, a nested trace stock and a separate biotin stock. Salt mass cannot be assigned directly to an elemental-ion amount. Carbon-source variants also require separate treatment.",
+      "application_approved": false
+    },
+    {
+      "url": "https://www.fgsc.net/methods/stanford.html",
+      "title": "Stanford Neurospora Methods",
+      "authors": "N. Murray and D. Perkins",
+      "year": null,
+      "source_type": "protocol_web_page",
+      "discovery_mode": "cross_reference",
+      "accessed_on": "2026-10-09",
+      "sha256": "9d37c96c0681b1e6d7caad19e61339c23ce4bfb06f92d8a97fcfab6230d3622d",
+      "finding": "HTML is not a verbatim scan transcription: it adds an alternative citrate hydrate and its crossing-medium phosphate table differs from the original scan. Inspect original page images before quantitative reuse. The crossing medium is separate from Medium N.",
+      "application_approved": false
+    },
+    {
+      "url": "https://www.fgsc.net/methods/vogels.html",
+      "title": "Vogels",
+      "authors": null,
+      "year": null,
+      "source_type": "protocol_web_page",
+      "discovery_mode": "manual_web_search",
+      "accessed_on": "2026-10-09",
+      "sha256": "5e516f07a9d0770abf0f7f9a14f4a9f989c52524a249b7bfd83f0effaa0fda52",
+      "finding": "This page specifies a 15 g sucrose formulation and an optional solid form; do not silently substitute it for the database recipe or other source versions.",
+      "application_approved": false
+    }
+  ],
+  "linked_original_article": {
+    "url": "https://www.jstor.org/stable/2459146",
+    "doi_metadata_lead": "10.1086/282338",
+    "publisher_url": "https://www.journals.uchicago.edu/doi/abs/10.1086/282338",
+    "title": "Distribution of Lysine Pathways Among Fungi: Evolutionary Implications",
+    "authors": "Henry J. Vogel",
+    "year": 1964,
+    "access_result": "JSTOR supplied no recipe text; publisher open returned HTTP 403. Search metadata identified the DOI, but the article methods were not inspected.",
+    "concentration_evidence": false
+  },
+  "disposition": "Retain the primary-source hold. Do not apply the evidence-only draft or divide all existing values by a guessed common factor. Resolve the 1964 formulation, compound-versus-ion accounting, nested stock boundaries, missing constituents, molecular forms and carbon-source variant first.",
+  "additional_lead": {
+    "scope": "Five Kazan glucose variants, MEDIADB:123-127",
+    "search_result": "An institutional publication list and author CV identify the 1995 article; a 1993 thesis title is a further lead. No recipe methods or defensible replacement for 1000 mM thiamine were read.",
+    "original_url": "https://www.sciencedirect.com/science/article/pii/0032959295850082",
+    "application_approved": false
+  }
+}

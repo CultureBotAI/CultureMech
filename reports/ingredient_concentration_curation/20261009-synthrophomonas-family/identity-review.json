@@ -1,0 +1,159 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "context_sha256": "1d9b09a2915e57c4f212f1de08bb1a5ada6b2a4b8a47b6b6c5d528d00250e84a",
+  "first_preview_sha256": "83fdebb5c629773b4b0ec2c5b810a66dc226602ab0df9aed0728eba35a14276d",
+  "mim_metadata": {
+    "byte_count": 922191,
+    "consumer_contract_version": 1,
+    "data_row_count": 9876,
+    "header": [
+      "label",
+      "match_type",
+      "identifier",
+      "preferred_term",
+      "ontology_id",
+      "mapping_status",
+      "ambiguity"
+    ],
+    "repository": "https://github.com/CultureBotAI/MediaIngredientMech",
+    "sha256": "a36cd4683feb89e2fc2a1721dc15008d1e10c12044e89a36c27b6621a8aaf262",
+    "source_commit": "9f09e4fb97fb0e6cbbd6f25baca40b36512adb88",
+    "source_path": "docs/data/label_index.csv"
+  },
+  "mim_resolution": {
+    "query_label": "NiCl2 x 6 H2O",
+    "identifier": "CHEBI:53542",
+    "ontology_id": "CHEBI:53542",
+    "mim_preferred_term": "NiCl2 x 6 H2O",
+    "matched_label": "NiCl2 x 6 H2O",
+    "match_type": "preferred_term",
+    "mapping_status": "REJECTED",
+    "ambiguity": "resolved:owned",
+    "resolution_source": "mim_exact",
+    "local_identifier": null,
+    "source_compound_id": null,
+    "reason": "trusted MIM label-index answer"
+  },
+  "issues": [
+    {
+      "key": "K212",
+      "path": "data/normalized_yaml/bacterial/KOMODO_212_SYNTHROPHOMONAS_medium.yaml",
+      "id": "CultureMech:004403",
+      "old_pointer": [
+        "ingredients",
+        20
+      ],
+      "old_fields": {
+        "term": {
+          "id": "CHEBI:34887",
+          "label": "nickel dichloride"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:34887",
+          "label": "nickel dichloride"
+        }
+      },
+      "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=212",
+      "snippet": "NiCl2 x 6 H2O NiCl2 SEED-cpd00099#cpd00244## 2.38E-5 1.00E-7",
+      "source_row_id": 26,
+      "decision": "Withdraw only the generic CHEBI:34887 assertions. Keep the source-explicit hexahydrate label and quantity, and the verified upstream compound:40 accession where already present. Do not substitute the MIM REJECTED candidate, infer an anhydrous equivalent, or change mass rates using molecular weight."
+    },
+    {
+      "key": "B2805",
+      "path": "data/normalized_yaml/bacterial/for_dsm_2805.yaml",
+      "id": "CultureMech:004855",
+      "old_pointer": [
+        "ingredients",
+        26
+      ],
+      "old_fields": {
+        "term": {
+          "id": "CHEBI:34887",
+          "label": "nickel dichloride"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:34887",
+          "label": "nickel dichloride"
+        }
+      },
+      "reference": "https://bacdive.dsmz.de/strain/16667",
+      "snippet": "NiCl2 x 6 H2O 2.39282e-05 g/l",
+      "source_row_id": 58,
+      "decision": "Withdraw only the generic CHEBI:34887 assertions. Keep the source-explicit hexahydrate label and quantity, and the verified upstream compound:40 accession where already present. Do not substitute the MIM REJECTED candidate, infer an anhydrous equivalent, or change mass rates using molecular weight."
+    },
+    {
+      "key": "S595",
+      "path": "data/normalized_yaml/bacterial/mediadive_595_Trace_element_solution_SL-10.yaml",
+      "id": "CultureMech:014713",
+      "old_pointer": [
+        "composition",
+        7
+      ],
+      "old_fields": {
+        "chebi_term": {
+          "id": "CHEBI:34887",
+          "label": "nickel dichloride",
+          "confidence": 0.7,
+          "match_type": "corpus_consensus"
+        }
+      },
+      "reference": "https://mediadive.dsmz.de/rest/solution/595",
+      "snippet": "{\n                \"recipe_order\": 8,\n                \"compound\": \"NiCl2 x 6 H2O\",\n                \"compound_id\": 40,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 24,\n                \"unit\": \"mg\",\n                \"g_l\": 0.024,\n                \"mmol_l\": 0.185187,\n                \"optional\": 0\n            }",
+      "source_row_id": 127,
+      "decision": "Withdraw only the generic CHEBI:34887 assertions. Keep the source-explicit hexahydrate label and quantity, and the verified upstream compound:40 accession where already present. Do not substitute the MIM REJECTED candidate, infer an anhydrous equivalent, or change mass rates using molecular weight."
+    },
+    {
+      "key": "D212",
+      "path": "data/normalized_yaml/bacterial/synthrophomonas_medium.yaml",
+      "id": "CultureMech:001310",
+      "old_pointer": [
+        "ingredients",
+        18
+      ],
+      "old_fields": {
+        "term": {
+          "id": "CHEBI:34887",
+          "label": "nickel dichloride"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:34887",
+          "label": "nickel dichloride"
+        }
+      },
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium212.pdf",
+      "snippet": "NiCl2 x 6 H2O                                                  24.00        mg",
+      "source_row_id": 182,
+      "decision": "Withdraw only the generic CHEBI:34887 assertions. Keep the source-explicit hexahydrate label and quantity, and the verified upstream compound:40 accession where already present. Do not substitute the MIM REJECTED candidate, infer an anhydrous equivalent, or change mass rates using molecular weight."
+    },
+    {
+      "key": "D212a",
+      "path": "data/normalized_yaml/bacterial/treponema_rectale_medium.yaml",
+      "id": "CultureMech:001311",
+      "old_pointer": [
+        "ingredients",
+        20
+      ],
+      "old_fields": {
+        "term": {
+          "id": "CHEBI:34887",
+          "label": "nickel dichloride"
+        },
+        "mediaingredientmech_chebi_term": {
+          "id": "CHEBI:34887",
+          "label": "nickel dichloride"
+        }
+      },
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium212a.pdf",
+      "snippet": "NiCl2 x 6 H2O                                                    24.00        mg",
+      "source_row_id": 241,
+      "decision": "Withdraw only the generic CHEBI:34887 assertions. Keep the source-explicit hexahydrate label and quantity, and the verified upstream compound:40 accession where already present. Do not substitute the MIM REJECTED candidate, infer an anhydrous equivalent, or change mass rates using molecular weight."
+    }
+  ],
+  "application_blocked_until_resolved": true,
+  "all_record_goal_complete": false,
+  "limits": [
+    "This is an identity-mapping disposition, not a correction to the supported quantity.",
+    "No replacement CHEBI ID is asserted. Rebuild and audit a successor preview before applying."
+  ]
+}

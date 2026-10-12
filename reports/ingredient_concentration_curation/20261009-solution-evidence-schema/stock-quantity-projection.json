@@ -1,0 +1,1890 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "all_record_goal_complete": false,
+  "state": "source_projection_only_not_a_guarded_apply_plan",
+  "apply_ready": false,
+  "capture_receipt_sha256": "8c802303cf38982bebc07777a71a7d2dab5d4c01d44c0cc1d1c8136d866a39a4",
+  "pdf_reinspected": true,
+  "pdf_sha256": "a9612ce4a0d0ab3cb0b8ec6924aa5076f1988dc4bc059a773dceb6898e2dceb7",
+  "page_image_sha256": "d5ace6d27b4b36d948a916a971af308640b9fecdbf291677efecdaf9e1f2fd3a",
+  "four_record_scope_preserved": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "id": "CultureMech:005014",
+      "before_sha256": "ddf16580d20654367f1df777e76db38e1edb4071d4b0d9dea90b9bc02f612043",
+      "quantities": [
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "CaCl2 x 2 H2O",
+          "old": {
+            "value": "0.11976",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1
+          ],
+          "field": "ingredients[1].concentration",
+          "ingredient": "MgSO4 x 7 H2O",
+          "old": {
+            "value": "0.189621",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            2
+          ],
+          "field": "ingredients[2].concentration",
+          "ingredient": "KH2PO4",
+          "old": {
+            "value": "0.449102",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            3
+          ],
+          "field": "ingredients[3].concentration",
+          "ingredient": "K2HPO4",
+          "old": {
+            "value": "0.449102",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            4
+          ],
+          "field": "ingredients[4].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "0.898204",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            5
+          ],
+          "field": "ingredients[5].concentration",
+          "ingredient": "(NH4)2SO4",
+          "old": {
+            "value": "0.898204",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            6
+          ],
+          "field": "ingredients[6].concentration",
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "1.99601",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            7
+          ],
+          "field": "ingredients[7].concentration",
+          "ingredient": "Trypticase peptone",
+          "old": {
+            "value": "1.99601",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            8
+          ],
+          "field": "ingredients[8].concentration",
+          "ingredient": "Sodium resazurin",
+          "old": {
+            "value": "0.000499002",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            9
+          ],
+          "field": "ingredients[9].concentration",
+          "ingredient": "L-Cysteine HCl x H2O",
+          "old": {
+            "value": "0.998004",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            10
+          ],
+          "field": "ingredients[10].concentration",
+          "ingredient": "Na2CO3",
+          "old": {
+            "value": "2.49501",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            11
+          ],
+          "field": "ingredients[11].concentration",
+          "ingredient": "D-Glucose",
+          "old": {
+            "value": "1.99601",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            12
+          ],
+          "field": "ingredients[12].concentration",
+          "ingredient": "Agar",
+          "old": {
+            "value": "11.976",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            13
+          ],
+          "field": "ingredients[13].concentration",
+          "ingredient": "n-Butyric acid",
+          "old": {
+            "value": "5.8",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            14
+          ],
+          "field": "ingredients[14].concentration",
+          "ingredient": "iso-Butyric acid",
+          "old": {
+            "value": "275.5",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            15
+          ],
+          "field": "ingredients[15].concentration",
+          "ingredient": "Tryptone",
+          "old": {
+            "value": "10.0",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            16
+          ],
+          "field": "ingredients[16].concentration",
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "5.0",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            17
+          ],
+          "field": "ingredients[17].concentration",
+          "ingredient": "Sodium chloride",
+          "old": {
+            "value": "10.0",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            18
+          ],
+          "field": "ingredients[18].concentration",
+          "ingredient": "n-Valeric acid",
+          "old": {
+            "value": "131.46",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            19
+          ],
+          "field": "ingredients[19].concentration",
+          "ingredient": "iso-Valeric acid",
+          "old": {
+            "value": "130.34",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            20
+          ],
+          "field": "ingredients[20].concentration",
+          "ingredient": "KOH",
+          "old": {
+            "value": "variable",
+            "unit": "VARIABLE"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "before_sha256": "91cdb9a37c2cd48496c6039cbca7912b140c126ebc1f849c1877e52dfcdb212d",
+      "quantities": [
+        {
+          "pointer": [
+            "composition",
+            0
+          ],
+          "field": "composition[0].concentration",
+          "ingredient": "CaCl2 x 2 H2O",
+          "old": {
+            "value": "0.11976",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            1
+          ],
+          "field": "composition[1].concentration",
+          "ingredient": "MgSO4 x 7 H2O",
+          "old": {
+            "value": "0.189621",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            2
+          ],
+          "field": "composition[2].concentration",
+          "ingredient": "KH2PO4",
+          "old": {
+            "value": "0.449102",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            3
+          ],
+          "field": "composition[3].concentration",
+          "ingredient": "K2HPO4",
+          "old": {
+            "value": "0.449102",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            4
+          ],
+          "field": "composition[4].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "0.898204",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            5
+          ],
+          "field": "composition[5].concentration",
+          "ingredient": "(NH4)2SO4",
+          "old": {
+            "value": "0.898204",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            6
+          ],
+          "field": "composition[6].concentration",
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "1.99601",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            7
+          ],
+          "field": "composition[7].concentration",
+          "ingredient": "Trypticase peptone",
+          "old": {
+            "value": "1.99601",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            8
+          ],
+          "field": "composition[8].concentration",
+          "ingredient": "Sodium resazurin",
+          "old": {
+            "value": "0.000499002",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            9
+          ],
+          "field": "composition[9].concentration",
+          "ingredient": "L-Cysteine HCl x H2O",
+          "old": {
+            "value": "0.998004",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            10
+          ],
+          "field": "composition[10].concentration",
+          "ingredient": "Na2CO3",
+          "old": {
+            "value": "2.49501",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            11
+          ],
+          "field": "composition[11].concentration",
+          "ingredient": "D-Glucose",
+          "old": {
+            "value": "1.99601",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            12
+          ],
+          "field": "composition[12].concentration",
+          "ingredient": "Agar",
+          "old": {
+            "value": "11.976",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            13
+          ],
+          "field": "composition[13].concentration",
+          "ingredient": "Distilled water",
+          "old": {
+            "value": "998.003992015968",
+            "unit": "PERCENT_V_V"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "See source for composition",
+          "old": {
+            "value": "variable",
+            "unit": "VARIABLE"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "id": "CultureMech:015061",
+      "before_sha256": "34935a5129af3ca97dc91ffe288acaaf43aeed561e6f8e75f47513b711668a06",
+      "quantities": [
+        {
+          "pointer": [
+            "composition",
+            0
+          ],
+          "field": "composition[0].concentration",
+          "ingredient": "n-Butyric acid",
+          "old": {
+            "value": "290.0",
+            "unit": "PERCENT_V_V"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            1
+          ],
+          "field": "composition[1].concentration",
+          "ingredient": "iso-Butyric acid",
+          "old": {
+            "value": "275.5",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            2
+          ],
+          "field": "composition[2].concentration",
+          "ingredient": "DL-2-Methylbutyric acid",
+          "old": {
+            "value": "140.0",
+            "unit": "PERCENT_V_V"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            3
+          ],
+          "field": "composition[3].concentration",
+          "ingredient": "n-Valeric acid",
+          "old": {
+            "value": "131.46",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "composition",
+            4
+          ],
+          "field": "composition[4].concentration",
+          "ingredient": "iso-Valeric acid",
+          "old": {
+            "value": "130.34",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "See source for composition",
+          "old": {
+            "value": "variable",
+            "unit": "VARIABLE"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "id": "CultureMech:001425",
+      "before_sha256": "4a4cd36c2bf3c84cd704ad0aeae7838a4e11859e93db56c19f9474f577b43c67",
+      "quantities": [
+        {
+          "pointer": [
+            "ingredients",
+            0
+          ],
+          "field": "ingredients[0].concentration",
+          "ingredient": "CaCl2 x 2 H2O",
+          "old": {
+            "value": "0.11976",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            1
+          ],
+          "field": "ingredients[1].concentration",
+          "ingredient": "MgSO4 x 7 H2O",
+          "old": {
+            "value": "0.189621",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            2
+          ],
+          "field": "ingredients[2].concentration",
+          "ingredient": "KH2PO4",
+          "old": {
+            "value": "0.449102",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            3
+          ],
+          "field": "ingredients[3].concentration",
+          "ingredient": "K2HPO4",
+          "old": {
+            "value": "0.449102",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            4
+          ],
+          "field": "ingredients[4].concentration",
+          "ingredient": "NaCl",
+          "old": {
+            "value": "0.898204",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            5
+          ],
+          "field": "ingredients[5].concentration",
+          "ingredient": "(NH4)2SO4",
+          "old": {
+            "value": "0.898204",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            6
+          ],
+          "field": "ingredients[6].concentration",
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "1.99601",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            7
+          ],
+          "field": "ingredients[7].concentration",
+          "ingredient": "Trypticase peptone",
+          "old": {
+            "value": "1.99601",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            8
+          ],
+          "field": "ingredients[8].concentration",
+          "ingredient": "Sodium resazurin",
+          "old": {
+            "value": "0.000499002",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            9
+          ],
+          "field": "ingredients[9].concentration",
+          "ingredient": "L-Cysteine HCl x H2O",
+          "old": {
+            "value": "0.998004",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            10
+          ],
+          "field": "ingredients[10].concentration",
+          "ingredient": "Na2CO3",
+          "old": {
+            "value": "2.49501",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            11
+          ],
+          "field": "ingredients[11].concentration",
+          "ingredient": "D-Glucose",
+          "old": {
+            "value": "1.99601",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            12
+          ],
+          "field": "ingredients[12].concentration",
+          "ingredient": "Agar",
+          "old": {
+            "value": "11.976",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            13
+          ],
+          "field": "ingredients[13].concentration",
+          "ingredient": "n-Butyric acid",
+          "old": {
+            "value": "5.8",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            14
+          ],
+          "field": "ingredients[14].concentration",
+          "ingredient": "iso-Butyric acid",
+          "old": {
+            "value": "275.5",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            15
+          ],
+          "field": "ingredients[15].concentration",
+          "ingredient": "Tryptone",
+          "old": {
+            "value": "10.0",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            16
+          ],
+          "field": "ingredients[16].concentration",
+          "ingredient": "Yeast extract",
+          "old": {
+            "value": "5.0",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            17
+          ],
+          "field": "ingredients[17].concentration",
+          "ingredient": "Sodium chloride",
+          "old": {
+            "value": "10.0",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            18
+          ],
+          "field": "ingredients[18].concentration",
+          "ingredient": "n-Valeric acid",
+          "old": {
+            "value": "131.46",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        },
+        {
+          "pointer": [
+            "ingredients",
+            19
+          ],
+          "field": "ingredients[19].concentration",
+          "ingredient": "iso-Valeric acid",
+          "old": {
+            "value": "130.34",
+            "unit": "G_PER_L"
+          },
+          "new": null,
+          "status": "unsupported",
+          "reference": null,
+          "snippet": null,
+          "locator": null,
+          "explanation": "Outside direct composition matching; unchanged."
+        }
+      ]
+    }
+  ],
+  "stock_quantity_proposals": [
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "pointer": [
+        "composition",
+        0,
+        "concentration"
+      ],
+      "ingredient": "CaCl2 x 2 H2O",
+      "old": {
+        "value": "0.11976",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.11976",
+        "unit": "G_PER_L"
+      },
+      "status": "verified",
+      "explanation": "Retain source-reported g_l=0.11976 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/599",
+          "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.12,\n                \"unit\": \"g\",\n                \"g_l\": 0.11976,\n                \"mmol_l\": 0.814614,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            0
+          ],
+          "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 1,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "pointer": [
+        "composition",
+        1,
+        "concentration"
+      ],
+      "ingredient": "MgSO4 x 7 H2O",
+      "old": {
+        "value": "0.189621",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.189621",
+        "unit": "G_PER_L"
+      },
+      "status": "verified",
+      "explanation": "Retain source-reported g_l=0.189621 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/599",
+          "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.19,\n                \"unit\": \"g\",\n                \"g_l\": 0.189621,\n                \"mmol_l\": 0.769327,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            1
+          ],
+          "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 1,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "pointer": [
+        "composition",
+        2,
+        "concentration"
+      ],
+      "ingredient": "KH2PO4",
+      "old": {
+        "value": "0.449102",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.449102",
+        "unit": "G_PER_L"
+      },
+      "status": "verified",
+      "explanation": "Retain source-reported g_l=0.449102 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/599",
+          "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.45,\n                \"unit\": \"g\",\n                \"g_l\": 0.449102,\n                \"mmol_l\": 3.30016,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            2
+          ],
+          "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 1,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "pointer": [
+        "composition",
+        3,
+        "concentration"
+      ],
+      "ingredient": "K2HPO4",
+      "old": {
+        "value": "0.449102",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.449102",
+        "unit": "G_PER_L"
+      },
+      "status": "verified",
+      "explanation": "Retain source-reported g_l=0.449102 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/599",
+          "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"K2HPO4\",\n                \"compound_id\": 10,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.45,\n                \"unit\": \"g\",\n                \"g_l\": 0.449102,\n                \"mmol_l\": 2.57844,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            3
+          ],
+          "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 1,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "pointer": [
+        "composition",
+        4,
+        "concentration"
+      ],
+      "ingredient": "NaCl",
+      "old": {
+        "value": "0.898204",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.898204",
+        "unit": "G_PER_L"
+      },
+      "status": "verified",
+      "explanation": "Retain source-reported g_l=0.898204 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/599",
+          "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.9,\n                \"unit\": \"g\",\n                \"g_l\": 0.898204,\n                \"mmol_l\": 15.3697,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            4
+          ],
+          "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 1,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "pointer": [
+        "composition",
+        5,
+        "concentration"
+      ],
+      "ingredient": "(NH4)2SO4",
+      "old": {
+        "value": "0.898204",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.898204",
+        "unit": "G_PER_L"
+      },
+      "status": "verified",
+      "explanation": "Retain source-reported g_l=0.898204 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/599",
+          "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.9,\n                \"unit\": \"g\",\n                \"g_l\": 0.898204,\n                \"mmol_l\": 6.79736,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            5
+          ],
+          "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 1,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "pointer": [
+        "composition",
+        6,
+        "concentration"
+      ],
+      "ingredient": "Yeast extract",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "explanation": "Retain source-reported g_l=1.99601 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/599",
+          "snippet": "{\n                \"recipe_order\": 7,\n                \"compound\": \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"OXOID\",\n                \"amount\": 2,\n                \"unit\": \"g\",\n                \"g_l\": 1.99601,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            6
+          ],
+          "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 0,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "pointer": [
+        "composition",
+        7,
+        "concentration"
+      ],
+      "ingredient": "Trypticase peptone",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "explanation": "Retain source-reported g_l=1.99601 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/599",
+          "snippet": "{\n                \"recipe_order\": 8,\n                \"compound\": \"Trypticase peptone\",\n                \"compound_id\": 124,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"BD BBL\",\n                \"amount\": 2,\n                \"unit\": \"g\",\n                \"g_l\": 1.99601,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            7
+          ],
+          "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 0,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "pointer": [
+        "composition",
+        8,
+        "concentration"
+      ],
+      "ingredient": "Sodium resazurin",
+      "old": {
+        "value": "0.000499002",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.000499002",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "explanation": "Retain source-reported g_l=0.000499002 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred. The original corroborates 0.1% w/v = 1 g/L reagent; 1 g/L * 0.0005 L / 1.002 L = 0.0004990019960079840319361277445 g/L. Keep the supported solute rate; do not add a second dose for the same resazurin input.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/599",
+          "snippet": "{\n                \"recipe_order\": 15,\n                \"compound\": \"Sodium resazurin\",\n                \"compound_id\": 1852,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"0.1% w/v\",\n                \"amount\": 0.5,\n                \"unit\": \"ml\",\n                \"g_l\": 0.000499002,\n                \"mmol_l\": 0.00198671,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            9
+          ],
+          "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647"
+        },
+        {
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+          "snippet": "Sodium resazurin (0.1% w/v)                                        0.50        ml",
+          "locator": "page 1, main table",
+          "source_sha256": "cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca"
+        },
+        {
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+          "snippet": "Final volume: 1002 ml",
+          "locator": "page 1, final-volume heading",
+          "source_sha256": "cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 0,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "pointer": [
+        "composition",
+        9,
+        "concentration"
+      ],
+      "ingredient": "L-Cysteine HCl x H2O",
+      "old": {
+        "value": "0.998004",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "0.998004",
+        "unit": "G_PER_L"
+      },
+      "status": "verified",
+      "explanation": "Retain source-reported g_l=0.998004 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/599",
+          "snippet": "{\n                \"recipe_order\": 16,\n                \"compound\": \"L-Cysteine HCl x H2O\",\n                \"compound_id\": 770,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 0.998004,\n                \"mmol_l\": 5.68223,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            10
+          ],
+          "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 1,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "pointer": [
+        "composition",
+        10,
+        "concentration"
+      ],
+      "ingredient": "Na2CO3",
+      "old": {
+        "value": "2.49501",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "2.49501",
+        "unit": "G_PER_L"
+      },
+      "status": "verified",
+      "explanation": "Retain source-reported g_l=2.49501 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/599",
+          "snippet": "{\n                \"recipe_order\": 17,\n                \"compound\": \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.5,\n                \"unit\": \"g\",\n                \"g_l\": 2.49501,\n                \"mmol_l\": 23.5405,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            11
+          ],
+          "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 1,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "pointer": [
+        "composition",
+        11,
+        "concentration"
+      ],
+      "ingredient": "D-Glucose",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      },
+      "status": "verified",
+      "explanation": "Retain source-reported g_l=1.99601 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/599",
+          "snippet": "{\n                \"recipe_order\": 18,\n                \"compound\": \"D-Glucose\",\n                \"compound_id\": 211,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"g\",\n                \"g_l\": 1.99601,\n                \"mmol_l\": 11.0791,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            12
+          ],
+          "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 1,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "pointer": [
+        "composition",
+        12,
+        "concentration"
+      ],
+      "ingredient": "Agar",
+      "old": {
+        "value": "11.976",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "11.976",
+        "unit": "G_PER_L"
+      },
+      "status": "conflict",
+      "explanation": "Retain source-reported g_l=11.976 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred. The source table gives 12 g in 1002 ml (11.976 g/L after provider rounding), while the procedure gives 12.00 g/l. Retain the existing conditional table-derived rate pending the final scoped proposal; do not average or apply it to liquid formulations.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/599",
+          "snippet": "{\n                \"recipe_order\": 19,\n                \"compound\": \"Agar\",\n                \"compound_id\": 3,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": \"for solid medium\",\n                \"attribute\": \"BD Bacto\",\n                \"amount\": 12,\n                \"unit\": \"g\",\n                \"g_l\": 11.976,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            13
+          ],
+          "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647"
+        },
+        {
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+          "snippet": "Agar (BD Bacto), for solid medium                                 12.00          g",
+          "locator": "page 1, main table",
+          "source_sha256": "cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca"
+        },
+        {
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+          "snippet": "2. For solid medium add 12.00 g/l agar (BD Bacto).",
+          "locator": "page 1, step 2",
+          "source_sha256": "cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 0,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "pointer": [
+        "composition",
+        13,
+        "concentration"
+      ],
+      "ingredient": "Distilled water",
+      "old": {
+        "value": "998.003992015968",
+        "unit": "PERCENT_V_V"
+      },
+      "proposed": {
+        "value": "998.003992015968",
+        "unit": "ML_PER_L"
+      },
+      "status": "correct",
+      "explanation": "1000 ml input / 1.002 L explicitly stated final volume = 998.0039920159680638722554890 ml/L, matching the stored number at its precision. Correct the unit only; do not infer the denominator by summing liquid inputs.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/599",
+          "snippet": "{\n                \"recipe_order\": 20,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            14
+          ],
+          "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647"
+        },
+        {
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+          "snippet": "Distilled water                                                1000.00         ml",
+          "locator": "page 1, main table",
+          "source_sha256": "cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca"
+        },
+        {
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+          "snippet": "Final volume: 1002 ml",
+          "locator": "page 1, final-volume heading",
+          "source_sha256": "cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 0,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "id": "CultureMech:014736",
+      "pointer": [
+        "solutions",
+        0,
+        "concentration"
+      ],
+      "ingredient": "Fatty acid mixture",
+      "old": null,
+      "proposed": {
+        "value": "0.0014",
+        "unit": "L"
+      },
+      "status": "add",
+      "explanation": "1.4 ml / 1000 ml per L = 0.0014 L batch addition to solution599. Evidence belongs on the enclosing solution recipe's root evidence list, not an ingredient or a universal working concentration on solution6552.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/599",
+          "snippet": "{\n                \"recipe_order\": 14,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Fatty acid mixture\",\n                \"solution_id\": 6552,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.4,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            8
+          ],
+          "source_sha256": "4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647"
+        },
+        {
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+          "snippet": "Fatty acid mixture                                                 1.40        ml",
+          "locator": "page 1, main table",
+          "source_sha256": "cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 0
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "id": "CultureMech:015061",
+      "pointer": [
+        "composition",
+        0,
+        "concentration"
+      ],
+      "ingredient": "n-Butyric acid",
+      "old": {
+        "value": "290.0",
+        "unit": "PERCENT_V_V"
+      },
+      "proposed": {
+        "value": "0.0058",
+        "unit": "L"
+      },
+      "status": "correct",
+      "explanation": "Exact stock batch input 5.8 ml / 1000 ml per L = 0.0058 L. Replaces the unsupported percent assertion with a batch dose, not a final volume fraction or receiving-medium concentration. No density or final-volume assumption.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/6552",
+          "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"n-Butyric acid\",\n                \"compound_id\": 376,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5.8,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            0
+          ],
+          "source_sha256": "16e43ae978af63fcb268a259960d5ddf66fc9643929ee8ccf33952b0a6c0392e"
+        },
+        {
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+          "snippet": "n-Butyric acid                                                     5.80        ml",
+          "locator": "page 1, Fatty acid mixture table",
+          "source_sha256": "cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 0,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "id": "CultureMech:015061",
+      "pointer": [
+        "composition",
+        1,
+        "concentration"
+      ],
+      "ingredient": "iso-Butyric acid",
+      "old": {
+        "value": "275.5",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "275.5",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "explanation": "Retain source-reported g_l=275.5 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/6552",
+          "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"iso-Butyric acid\",\n                \"compound_id\": 377,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5.8,\n                \"unit\": \"ml\",\n                \"g_l\": 275.5,\n                \"mmol_l\": 3126.77,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            1
+          ],
+          "source_sha256": "16e43ae978af63fcb268a259960d5ddf66fc9643929ee8ccf33952b0a6c0392e"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 0,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "id": "CultureMech:015061",
+      "pointer": [
+        "composition",
+        2,
+        "concentration"
+      ],
+      "ingredient": "DL-2-Methylbutyric acid",
+      "old": {
+        "value": "140.0",
+        "unit": "PERCENT_V_V"
+      },
+      "proposed": {
+        "value": "0.0028",
+        "unit": "L"
+      },
+      "status": "correct",
+      "explanation": "Exact stock batch input 2.8 ml / 1000 ml per L = 0.0028 L. Replaces the unsupported percent assertion with a batch dose, not a final volume fraction or receiving-medium concentration. No density or final-volume assumption.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/6552",
+          "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"DL-2-Methylbutyric acid\",\n                \"compound_id\": 223,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            2
+          ],
+          "source_sha256": "16e43ae978af63fcb268a259960d5ddf66fc9643929ee8ccf33952b0a6c0392e"
+        },
+        {
+          "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf",
+          "snippet": "DL-2-Methylbutyric acid                                            2.80        ml",
+          "locator": "page 1, Fatty acid mixture table",
+          "source_sha256": "cc4ffe328060eadf4a992f8024f1beb6b1f6238f7d836c7552783b0f9b29fdca"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 0,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "id": "CultureMech:015061",
+      "pointer": [
+        "composition",
+        3,
+        "concentration"
+      ],
+      "ingredient": "n-Valeric acid",
+      "old": {
+        "value": "131.46",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "131.46",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "explanation": "Retain source-reported g_l=131.46 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/6552",
+          "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"n-Valeric acid\",\n                \"compound_id\": 288,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\": \"ml\",\n                \"g_l\": 131.46,\n                \"mmol_l\": 1287.18,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            3
+          ],
+          "source_sha256": "16e43ae978af63fcb268a259960d5ddf66fc9643929ee8ccf33952b0a6c0392e"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 0,
+      "ontology_identity_recertified": false
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "id": "CultureMech:015061",
+      "pointer": [
+        "composition",
+        4,
+        "concentration"
+      ],
+      "ingredient": "iso-Valeric acid",
+      "old": {
+        "value": "130.34",
+        "unit": "G_PER_L"
+      },
+      "proposed": {
+        "value": "130.34",
+        "unit": "G_PER_L"
+      },
+      "status": "evidence_only",
+      "explanation": "Retain source-reported g_l=130.34 within this specific stock preparation. This is not a universal working dose or a concentration in a receiving medium; no new mass-from-liquid conversion is inferred.",
+      "evidence": [
+        {
+          "reference": "https://mediadive.dsmz.de/rest/solution/6552",
+          "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"iso-Valeric acid\",\n                \"compound_id\": 378,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.8,\n                \"unit\": \"ml\",\n                \"g_l\": 130.34,\n                \"mmol_l\": 1276.22,\n                \"optional\": 0\n            }",
+          "locator": [
+            "data",
+            "recipe",
+            4
+          ],
+          "source_sha256": "16e43ae978af63fcb268a259960d5ddf66fc9643929ee8ccf33952b0a6c0392e"
+        }
+      ],
+      "prior_evidence_entries_to_preserve": 0,
+      "ontology_identity_recertified": false
+    }
+  ],
+  "remaining": "Construct the guarded full-record proposal including exact bibliography correction, placeholder/flag dispositions, ingredient notes and append-only history. Reconcile all prior evidence. Complete the separate DSMZ/KOMODO medium source projections, stock boundaries, unrelated LB entries and source/physical-state conflicts; do not copy DSMZ into KOMODO. No record is marked fully reviewed or applied by this projection."
+}

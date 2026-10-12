@@ -1,0 +1,72 @@
+{
+  "terminal": true,
+  "passed": true,
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-c",
+        "pyproject.toml",
+        "--rootdir=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/guard-draft-v1",
+        "--confcutdir=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/guard-draft-v1",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/guard-draft-v1/test_yeast_mineral_ingredients.py",
+        "-q",
+        "--no-cov"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/guard-draft-v1/check-00.log",
+      "log_sha256": "438a5ef75a10f0b69e4c4504e7c673492e33409f65305abae9f9a8a55fd85ff6"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/ruff",
+        "check",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/guard-draft-v1/review_yeast_mineral_ingredients.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/guard-draft-v1/test_yeast_mineral_ingredients.py"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/guard-draft-v1/check-01.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "command": [
+        "/Users/marcin/.cache/uv/archive-v0/Jqj-edn_Uev4vj_1gRqS1/bin/black",
+        "--check",
+        "--line-length",
+        "100",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/guard-draft-v1/review_yeast_mineral_ingredients.py",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/guard-draft-v1/test_yeast_mineral_ingredients.py"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/guard-draft-v1/check-02.log",
+      "log_sha256": "b9cf511501d306d2bd8355ccb165c8ddc0a6fdd62d7c72c4a7b1795cf8934c8c"
+    },
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/guard-draft-v1/review_yeast_mineral_ingredients.py",
+        "--root",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech",
+        "--dry-run"
+      ],
+      "returncode": 0,
+      "log": "reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/guard-draft-v1/check-03.log",
+      "log_sha256": "0f077abe9967844649ca34ad73bbfc9e92457403d25e717ac97646e1380d172a"
+    }
+  ],
+  "source_sha256": "f8fc139c6c37261eed3e543224ea652ac81bc4701374b3c872bd119970d2a1b9",
+  "plan_sha256": "413ab653a133f8b37d2d89b1f2f39fff23baab998bbdf05f78ae0c80fab06560",
+  "code_sha256": {
+    "reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/guard-draft-v1/review_yeast_mineral_ingredients.py": "bf84d352506b2382f35c8c14475a82251325a930ce12286a5ab44a7432eeace8",
+    "reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/guard-draft-v1/test_yeast_mineral_ingredients.py": "03097d7e9f9f9aee1cf0986c18febef441c39f6dac1d0a39b92b848883d0b978"
+  },
+  "normalized_before_sha256": "ebf8b59e00cc0cb250352e5c1e69f87288d18bc942db165c2d5673c1b33656f5",
+  "authoritative_records_edited": 0,
+  "all_record_goal_complete": false,
+  "installation_and_application_pending": true,
+  "normalized_inventory_unchanged": true,
+  "normalized_after_sha256": "ebf8b59e00cc0cb250352e5c1e69f87288d18bc942db165c2d5673c1b33656f5",
+  "code_unchanged": true
+}

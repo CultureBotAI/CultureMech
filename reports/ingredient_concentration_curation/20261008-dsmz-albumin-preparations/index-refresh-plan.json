@@ -1,0 +1,243 @@
+{
+  "source_sha256": "97b156240849be7bf096a61d00d7a683ff9c8de8922db8585e5e8128ba7eb36c",
+  "files": [
+    {
+      "target": "data/normalized_yaml/bacterial_index.json",
+      "preview": "/tmp/ingredient-media-20261007/dsmz-albumin-index-preview/bacterial_index.json",
+      "before_sha256": "3b3a9c3245b359e66a263e29192bb607e49be20acd62b1bdb75ce6acdfaab01c",
+      "after_sha256": "f0343b3f93d9935a988afa67a003a1fe96ec1a849dbf1db16784fbc8b2108754",
+      "changes": [
+        {
+          "key": "CultureMech:005218",
+          "id": "CultureMech:005218",
+          "changes": {
+            "solution_count": [
+              null,
+              4
+            ],
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "ingredient_count": [
+              18,
+              0
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006403",
+          "id": "CultureMech:006403",
+          "changes": {
+            "solution_count": [
+              null,
+              4
+            ],
+            "ingredient_count": [
+              11,
+              6
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:001513",
+          "id": "CultureMech:001513",
+          "changes": {
+            "solution_count": [
+              null,
+              4
+            ],
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "ingredient_count": [
+              17,
+              0
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:001884",
+          "id": "CultureMech:001884",
+          "changes": {
+            "solution_count": [
+              null,
+              4
+            ],
+            "ingredient_count": [
+              11,
+              6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_komodo_index.json",
+      "preview": "/tmp/ingredient-media-20261007/dsmz-albumin-index-preview/by_source_komodo_index.json",
+      "before_sha256": "b53d569651eaa8c23b3154fa5a659731b4b9214bd9f05d196d37828adc3d49f2",
+      "after_sha256": "3f2763eec721c9375df285b1cc2102a3770a7baec588b9f0581091592b1895a8",
+      "changes": [
+        {
+          "key": "CultureMech:005218",
+          "id": "CultureMech:005218",
+          "changes": {
+            "solution_count": [
+              null,
+              4
+            ],
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "ingredient_count": [
+              18,
+              0
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006403",
+          "id": "CultureMech:006403",
+          "changes": {
+            "solution_count": [
+              null,
+              4
+            ],
+            "ingredient_count": [
+              11,
+              6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/by_source_mediadive_index.json",
+      "preview": "/tmp/ingredient-media-20261007/dsmz-albumin-index-preview/by_source_mediadive_index.json",
+      "before_sha256": "cc5ad8c9e3901f89322798ce54d2680a8468fb2e1372ca1a203650b1a70a96b2",
+      "after_sha256": "4117e6ed8e08e91483d950cd8fab37402d20ad4c7ec43a30f000ed0eb2694436",
+      "changes": [
+        {
+          "key": "CultureMech:001513",
+          "id": "CultureMech:001513",
+          "changes": {
+            "solution_count": [
+              null,
+              4
+            ],
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "ingredient_count": [
+              17,
+              0
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:001884",
+          "id": "CultureMech:001884",
+          "changes": {
+            "solution_count": [
+              null,
+              4
+            ],
+            "ingredient_count": [
+              11,
+              6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_index.json",
+      "preview": "/tmp/ingredient-media-20261007/dsmz-albumin-index-preview/recipe_index.json",
+      "before_sha256": "d9a2b86fbddf25847e570ee8fbcaeace0ed4f2672de68abac7c7898276b251a8",
+      "after_sha256": "2ed585163bc27ac1df51d0acf3c2e36365f13e4e4fc526e9582d8601f11123a9",
+      "changes": [
+        {
+          "key": "CultureMech:005218",
+          "id": "CultureMech:005218",
+          "changes": {
+            "solution_count": [
+              null,
+              4
+            ],
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "ingredient_count": [
+              18,
+              0
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:006403",
+          "id": "CultureMech:006403",
+          "changes": {
+            "solution_count": [
+              null,
+              4
+            ],
+            "ingredient_count": [
+              11,
+              6
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:001513",
+          "id": "CultureMech:001513",
+          "changes": {
+            "solution_count": [
+              null,
+              4
+            ],
+            "has_hierarchy_enrichment": [
+              true,
+              null
+            ],
+            "ingredient_count": [
+              17,
+              0
+            ]
+          }
+        },
+        {
+          "key": "CultureMech:001884",
+          "id": "CultureMech:001884",
+          "changes": {
+            "solution_count": [
+              null,
+              4
+            ],
+            "ingredient_count": [
+              11,
+              6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "data/normalized_yaml/recipe_statistics.json",
+      "preview": "/tmp/ingredient-media-20261007/dsmz-albumin-index-preview/recipe_statistics.json",
+      "before_sha256": "4ab1363614fac6d94990e41df2bddfcc4e99b9d7819d1c40afa6812065072370",
+      "after_sha256": "36395ee93eef3a6a531a28539487422c091af8f068ead096d953a8f87621968c",
+      "changes": {
+        "with_hierarchy_enrichment": [
+          1473,
+          1471
+        ]
+      },
+      "reason": "Two preserved legacy HEPES annotations moved from root ingredients to stock compositions; the generator counts root-level hierarchy only."
+    }
+  ],
+  "only_reviewed_sources_changed": true
+}

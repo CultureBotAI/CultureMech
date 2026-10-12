@@ -1,0 +1,34 @@
+{
+  "terminal": true,
+  "source_sha256": "781b097801c78303aae8b10e0b792993c35bd4c6eb10772559bc804536113b5a",
+  "input_records": 15910,
+  "output_groups": 10777,
+  "targets": [
+    {
+      "path": "data/normalized_yaml/bacterial/barbour_sfoenner_kelly_bsk_ii_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/barbour_sfoenner_kelly_bsk_ii_medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bsk_ii_medium.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/bsk_ii_medium.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bskii_medium_borrelia.yaml",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/bskii_medium_borrelia.yaml"
+      ],
+      "errors": [],
+      "schema_valid": true
+    }
+  ],
+  "derived_yaml_written": false,
+  "scope": "Full-corpus routing; only these three repaired outputs recertified."
+}

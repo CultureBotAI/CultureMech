@@ -1,0 +1,193 @@
+{
+  "terminal": true,
+  "records_edited": false,
+  "context_sha256": "30cc0440abce94df797ecea5b5d501d1f76c94aab07f50ba734cfe748561bedf",
+  "strength_and_context_excerpts": [
+    {
+      "source": "DSMZ829",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf",
+      "snippet": "Na-dithionite solution (5% w/v)",
+      "locator": "PDF pages 1 and 2, stock labels",
+      "explanation": "The explicit stock heading supports 5% w/v; the separate 0.50 g recipe row alone does not. Pair this heading with ingredient-row evidence and keep the 1 ml receiving dose separate."
+    },
+    {
+      "source": "DSMZ829a",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf",
+      "snippet": "Neutralized sulfide solution 3% (w/v)",
+      "locator": "PDF page 1, stock heading",
+      "explanation": "The explicit stock heading supports 3% w/v. Pair with the nonahydrate ingredient row; do not infer the percentage solely from water input."
+    },
+    {
+      "source": "DSMZ829",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf",
+      "snippet": "Sodium resazurin (0.1% w/v) 0.50 ml",
+      "locator": "PDF page 1, main recipe",
+      "explanation": "Indicator stock strength and receiving batch input are separate quantities."
+    },
+    {
+      "source": "DSMZ829a",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf",
+      "snippet": "Sodium resazurin (0.1% w/v) 0.50 ml",
+      "locator": "PDF page 1, main recipe",
+      "explanation": "Indicator stock strength and receiving batch input are separate quantities."
+    },
+    {
+      "source": "DSMZ829",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf",
+      "snippet": "Omit growth-stimulating factors",
+      "locator": "PDF page 1, DSM 16661 and DSM 21157 instruction",
+      "explanation": "Conditional strain recipe, not the default base and not permission to overwrite a conflicting KOMODO table."
+    },
+    {
+      "source": "DSMZ829a",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf",
+      "snippet": "2 M H2SO4",
+      "locator": "PDF page 1, neutralized-sulfide preparation",
+      "explanation": "Unquantified titration reagent stock strength; no fixed acid receiving amount."
+    }
+  ],
+  "liquid_input_totals": [
+    {
+      "source": "D829",
+      "listed_liquid_input_sum_ml": "1005.5",
+      "input_rows": [
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            4
+          ],
+          "label": "Trace element solution SL-10",
+          "snippet": "{\n                        \"recipe_order\": 5,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "reference": "https://mediadive.dsmz.de/rest/medium/829"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            5
+          ],
+          "label": "Selenite-tungstate solution",
+          "snippet": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "reference": "https://mediadive.dsmz.de/rest/medium/829"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            6
+          ],
+          "label": "Sodium resazurin",
+          "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000497512,\n                        \"mmol_l\": 0.00198078,\n                        \"optional\": 0\n                    }",
+          "reference": "https://mediadive.dsmz.de/rest/medium/829"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            9
+          ],
+          "label": "Seven vitamins solution",
+          "snippet": "{\n                        \"recipe_order\": 10,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "reference": "https://mediadive.dsmz.de/rest/medium/829"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            10
+          ],
+          "label": "Growth-stimulating factors",
+          "snippet": "{\n                        \"recipe_order\": 11,\n                        \"solution\": \"Growth-stimulating factors\",\n                        \"solution_id\": 1680,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "reference": "https://mediadive.dsmz.de/rest/medium/829"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            11
+          ],
+          "label": "Na-dithionite solution (5% w/v)",
+          "snippet": "{\n                        \"recipe_order\": 12,\n                        \"solution\": \"Na-dithionite solution (5% w/v)\",\n                        \"solution_id\": 6262,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "reference": "https://mediadive.dsmz.de/rest/medium/829"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            12
+          ],
+          "label": "Distilled water",
+          "snippet": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "reference": "https://mediadive.dsmz.de/rest/medium/829"
+        }
+      ],
+      "interpretation": "Sum of listed liquid inputs only; not a measured or explicitly made-up final volume, and not a denominator to substitute into ingredient concentrations."
+    },
+    {
+      "source": "D829a",
+      "listed_liquid_input_sum_ml": "1020.5",
+      "input_rows": [
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            7
+          ],
+          "label": "Sodium resazurin",
+          "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000490196,\n                        \"mmol_l\": 0.00195165,\n                        \"optional\": 0\n                    }",
+          "reference": "https://mediadive.dsmz.de/rest/medium/829a"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            9
+          ],
+          "label": "Neutralized sulfide solution 3% (w/v)",
+          "snippet": "{\n                        \"recipe_order\": 10,\n                        \"solution\": \"Neutralized sulfide solution 3% (w/v)\",\n                        \"solution_id\": 34,\n                        \"amount\": 20,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "reference": "https://mediadive.dsmz.de/rest/medium/829a"
+        },
+        {
+          "pointer": [
+            "data",
+            "solutions",
+            0,
+            "recipe",
+            10
+          ],
+          "label": "Distilled water",
+          "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+          "reference": "https://mediadive.dsmz.de/rest/medium/829a"
+        }
+      ],
+      "interpretation": "Sum of listed liquid inputs only; not a measured or explicitly made-up final volume, and not a denominator to substitute into ingredient concentrations."
+    }
+  ],
+  "explicit_final_volume_conflict": {
+    "source": "DSMZ829",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf",
+    "snippet": "Final volume: 1005 ml",
+    "locator": "PDF page 1 heading",
+    "explanation": "Use only as the original's explicitly reported denominator and retain the discrepancy with 1005.5 ml summed liquid inputs. Do not claim independently measured volume or silently substitute the input sum. If publishing a physically reconciled final concentration is required, leave that stronger claim unresolved pending source clarification."
+  },
+  "next_action": "Add these separately located exact excerpts and conflict explanations to the future YAML evidence and guarded claim ledger; do not splice them into an invented single quotation."
+}

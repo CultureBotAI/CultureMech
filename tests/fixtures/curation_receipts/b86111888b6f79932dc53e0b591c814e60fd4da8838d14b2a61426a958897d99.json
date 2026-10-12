@@ -1,0 +1,9 @@
+{
+  "sha256": "b86111888b6f79932dc53e0b591c814e60fd4da8838d14b2a61426a958897d99",
+  "source_paths": [
+    "reports/ingredient_concentration_curation/20261009-halobacteria-variants/preview-check-16.log",
+    "reports/ingredient_concentration_curation/20261009-halobacteria-variants/preview-check-21.log",
+    "reports/ingredient_concentration_curation/20261009-halobacteria-variants/preview-check-7.log"
+  ],
+  "payload_base64": "UmVmZXJlbmNlIGNoZWNrczogMzY7IGlzc3VlczogMAo="
+}

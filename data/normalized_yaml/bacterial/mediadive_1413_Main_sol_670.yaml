@@ -16,6 +16,42 @@ composition:
     label: ammonium sulfate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1413
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 1,
+                      "compound": "(NH4)2SO4",
+                      "compound_id": 27,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 2,
+                      "unit": "g",
+                      "g_l": 2,
+                      "mmol_l": 15.1355,
+                      "optional": 0
+                  }
+    explanation: 'composition[0].concentration (evidence_only), locator=$.data.recipe[0]:
+      Source batch input: 2 g. Retained g/L is the provider-declared nominal main-recipe
+      rate (volume field 1000 ml), not a separately prepared base or stock concentration,
+      or an independently measured final-volume concentration. Additional exact excerpt
+      at $.data.volume: 1000 Retrieved 2026-10-07T08:52:31.921795+00:00; response
+      SHA256=5c97ac52d8482a8f76d31dce289eb5345282a66adba06ba6fd75a58e676cc044. Historical
+      explanation (retained with preparation scope clarified): Concentration evidence
+      for composition[0].concentration ((NH4)2SO4) in MediaDive solution 1413; locator=$.data.recipe[0]
+      (compound_id=27). Provider explicitly reports g_l=2. Arithmetic check: 2 g *
+      1 g/g / (1000 ml / 1000 ml per L) = 2 g/L, consistent with the reported value
+      at its precision. Evidence supports the provider-declared concentration within
+      this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:52:31.921795+00:00;
+      response SHA256=5c97ac52d8482a8f76d31dce289eb5345282a66adba06ba6fd75a58e676cc044.'
+  notes: 'Source batch input: 2 g. Retained g/L is the provider-declared nominal main-recipe
+    rate (volume field 1000 ml), not a separately prepared base or stock concentration,
+    or an independently measured final-volume concentration.'
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.25'
@@ -28,6 +64,42 @@ composition:
     label: magnesium sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1413
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 2,
+                      "compound": "MgSO4 x 7 H2O",
+                      "compound_id": 8,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.25,
+                      "unit": "g",
+                      "g_l": 0.25,
+                      "mmol_l": 1.0143,
+                      "optional": 0
+                  }
+    explanation: 'composition[1].concentration (evidence_only), locator=$.data.recipe[1]:
+      Source batch input: 0.25 g. Retained g/L is the provider-declared nominal main-recipe
+      rate (volume field 1000 ml), not a separately prepared base or stock concentration,
+      or an independently measured final-volume concentration. Additional exact excerpt
+      at $.data.volume: 1000 Retrieved 2026-10-07T08:52:31.921795+00:00; response
+      SHA256=5c97ac52d8482a8f76d31dce289eb5345282a66adba06ba6fd75a58e676cc044. Historical
+      explanation (retained with preparation scope clarified): Concentration evidence
+      for composition[1].concentration (MgSO4 x 7 H2O) in MediaDive solution 1413;
+      locator=$.data.recipe[1] (compound_id=8). Provider explicitly reports g_l=0.25.
+      Arithmetic check: 0.25 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.25 g/L, consistent
+      with the reported value at its precision. Evidence supports the provider-declared
+      concentration within this solution, not a concentration in a receiving medium
+      or an independently measured final volume. Water addition alone is not used
+      to infer a final volume. Additional exact excerpt at $.data.volume: "volume":
+      1000. Retrieved 2026-10-07T08:52:31.921795+00:00; response SHA256=5c97ac52d8482a8f76d31dce289eb5345282a66adba06ba6fd75a58e676cc044.'
+  notes: 'Source batch input: 0.25 g. Retained g/L is the provider-declared nominal
+    main-recipe rate (volume field 1000 ml), not a separately prepared base or stock
+    concentration, or an independently measured final-volume concentration.'
 - preferred_term: K2HPO4
   concentration:
     value: '0.1'
@@ -40,6 +112,42 @@ composition:
     label: dipotassium hydrogen phosphate
     confidence: 1.0
     match_type: exact_match
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1413
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 3,
+                      "compound": "K2HPO4",
+                      "compound_id": 10,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.1,
+                      "unit": "g",
+                      "g_l": 0.1,
+                      "mmol_l": 0.574132,
+                      "optional": 0
+                  }
+    explanation: 'composition[2].concentration (evidence_only), locator=$.data.recipe[2]:
+      Source batch input: 0.1 g. Retained g/L is the provider-declared nominal main-recipe
+      rate (volume field 1000 ml), not a separately prepared base or stock concentration,
+      or an independently measured final-volume concentration. Additional exact excerpt
+      at $.data.volume: 1000 Retrieved 2026-10-07T08:52:31.921795+00:00; response
+      SHA256=5c97ac52d8482a8f76d31dce289eb5345282a66adba06ba6fd75a58e676cc044. Historical
+      explanation (retained with preparation scope clarified): Concentration evidence
+      for composition[2].concentration (K2HPO4) in MediaDive solution 1413; locator=$.data.recipe[2]
+      (compound_id=10). Provider explicitly reports g_l=0.1. Arithmetic check: 0.1
+      g * 1 g/g / (1000 ml / 1000 ml per L) = 0.1 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:52:31.921795+00:00;
+      response SHA256=5c97ac52d8482a8f76d31dce289eb5345282a66adba06ba6fd75a58e676cc044.'
+  notes: 'Source batch input: 0.1 g. Retained g/L is the provider-declared nominal
+    main-recipe rate (volume field 1000 ml), not a separately prepared base or stock
+    concentration, or an independently measured final-volume concentration.'
 - preferred_term: KCl
   concentration:
     value: '0.1'
@@ -52,22 +160,46 @@ composition:
     label: potassium chloride
     confidence: 1.0
     match_type: exact_match
-- preferred_term: FeSO4 x 7 H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  term:
-    id: mediadive.compound:12
-    label: FeSO4 x 7 H2O
-  chebi_term:
-    id: CHEBI:75836
-    label: iron(2+) sulfate heptahydrate
-    confidence: 0.7
-    match_type: corpus_consensus
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1413
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 4,
+                      "compound": "KCl",
+                      "compound_id": 61,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 0.1,
+                      "unit": "g",
+                      "g_l": 0.1,
+                      "mmol_l": 1.34138,
+                      "optional": 0
+                  }
+    explanation: 'composition[3].concentration (evidence_only), locator=$.data.recipe[3]:
+      Source batch input: 0.1 g. Retained g/L is the provider-declared nominal main-recipe
+      rate (volume field 1000 ml), not a separately prepared base or stock concentration,
+      or an independently measured final-volume concentration. Additional exact excerpt
+      at $.data.volume: 1000 Retrieved 2026-10-07T08:52:31.921795+00:00; response
+      SHA256=5c97ac52d8482a8f76d31dce289eb5345282a66adba06ba6fd75a58e676cc044. Historical
+      explanation (retained with preparation scope clarified): Concentration evidence
+      for composition[3].concentration (KCl) in MediaDive solution 1413; locator=$.data.recipe[3]
+      (compound_id=61). Provider explicitly reports g_l=0.1. Arithmetic check: 0.1
+      g * 1 g/g / (1000 ml / 1000 ml per L) = 0.1 g/L, consistent with the reported
+      value at its precision. Evidence supports the provider-declared concentration
+      within this solution, not a concentration in a receiving medium or an independently
+      measured final volume. Water addition alone is not used to infer a final volume.
+      Additional exact excerpt at $.data.volume: "volume": 1000. Retrieved 2026-10-07T08:52:31.921795+00:00;
+      response SHA256=5c97ac52d8482a8f76d31dce289eb5345282a66adba06ba6fd75a58e676cc044.'
+  notes: 'Source batch input: 0.1 g. Retained g/L is the provider-declared nominal
+    main-recipe rate (volume field 1000 ml), not a separately prepared base or stock
+    concentration, or an independently measured final-volume concentration.'
 - preferred_term: Distilled water
   concentration:
-    value: '950'
-    unit: PERCENT_V_V
+    value: '0.95'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -76,6 +208,47 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  notes: Distilled-water input to the base per recipe batch, not final medium volume
+    or stock carrier volume.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1413
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 6,
+                      "compound": "Distilled water",
+                      "compound_id": 4,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": null,
+                      "amount": 950,
+                      "unit": "ml",
+                      "g_l": null,
+                      "mmol_l": null,
+                      "optional": 0
+                  }
+    explanation: 'composition[4].concentration (correct), locator=$.data.recipe[5]:
+      Distilled-water input to the base per recipe batch, not final medium volume
+      or stock carrier volume. Convert 950 ml / 1000 = 0.95 L; no density assumption.
+      Retrieved 2026-10-07T08:52:31.921795+00:00; response SHA256=5c97ac52d8482a8f76d31dce289eb5345282a66adba06ba6fd75a58e676cc044.'
+- preferred_term: H2SO4
+  notes: Use 4 N H2SO4 to adjust the base to pH 2.2 before autoclaving; addition amount
+    is not quantified. Normality is retained as text, not converted to an unsupported
+    concentration unit. This is not the 0.2 N iron-stock carrier.
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1413
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": null,
+                      "step": "Dissolve ingredients except ferrous sulfate and adjust pH to 2.2 with 4 N H2SO4. Sterilize medium by autoclaving for 15 min at 121\u00b0C. Before use, add  FeSO4 x 7 H2O from a 40% (w/v) stock solution prepared with 0.2 N H2SO4 and filter-sterilized under 100% N2 gas atmosphere."
+                  }
+    explanation: 'composition[5].notes (not_quantified), locator=$.data.steps[0]:
+      Use 4 N H2SO4 to adjust the base to pH 2.2 before autoclaving; addition amount
+      is not quantified. Normality is retained as text, not converted to an unsupported
+      concentration unit. This is not the 0.2 N iron-stock carrier. Retrieved 2026-10-07T08:52:31.921795+00:00;
+      response SHA256=5c97ac52d8482a8f76d31dce289eb5345282a66adba06ba6fd75a58e676cc044.'
 preparation_notes: 'Dissolve ingredients except ferrous sulfate and adjust pH to 2.2
   with 4 N H2SO4. Sterilize medium by autoclaving for 15 min at 121°C. Before use,
   add  FeSO4 x 7 H2O from a 40% (w/v) stock solution prepared with 0.2 N H2SO4 and
@@ -115,6 +288,48 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-10-07T09:01:17.963098+00:00'
+  curator: codex
+  action: CURATED_SOLUTION_CONCENTRATION_SOURCE_EVIDENCE
+  notes: Source review decision captured at plan timestamp. Exact source IDs, labels,
+    snippets, and arithmetic checked. Unsupported rows retained; no receiving-medium
+    concentration inferred.
+  source: https://mediadive.dsmz.de/rest/solution/1413
+  changes: 'composition[0].concentration: {"unit": "G_PER_L", "value": "2"} -> {"unit":
+    "G_PER_L", "value": "2"} (evidence_only); composition[1].concentration: {"unit":
+    "G_PER_L", "value": "0.25"} -> {"unit": "G_PER_L", "value": "0.25"} (evidence_only);
+    composition[2].concentration: {"unit": "G_PER_L", "value": "0.1"} -> {"unit":
+    "G_PER_L", "value": "0.1"} (evidence_only); composition[3].concentration: {"unit":
+    "G_PER_L", "value": "0.1"} -> {"unit": "G_PER_L", "value": "0.1"} (evidence_only)'
+- timestamp: '2026-10-08T04:59:45.451604+00:00'
+  curator: codex
+  action: CORRECTED_DSMZ546_659_670_STOCK_STAGES
+  notes: Restored source-explicit stock strengths/doses and base-water inputs; prior
+    excerpts, history and mappings preserved. No strain-variant or growth curation
+    is claimed.
+  source: https://mediadive.dsmz.de/rest/solution/1413
+  changes: 'composition[0].concentration: {"value": "2", "unit": "G_PER_L"} -> {"value":
+    "2", "unit": "G_PER_L"} (evidence_only); composition[1].concentration: {"value":
+    "0.25", "unit": "G_PER_L"} -> {"value": "0.25", "unit": "G_PER_L"} (evidence_only);
+    composition[2].concentration: {"value": "0.1", "unit": "G_PER_L"} -> {"value":
+    "0.1", "unit": "G_PER_L"} (evidence_only); composition[3].concentration: {"value":
+    "0.1", "unit": "G_PER_L"} -> {"value": "0.1", "unit": "G_PER_L"} (evidence_only);
+    composition[4].concentration: {"value": "950", "unit": "PERCENT_V_V"} -> {"value":
+    "0.95", "unit": "L"} (correct); solutions[0].composition[0].concentration: {"value":
+    "20", "unit": "G_PER_L"} -> {"value": "40", "unit": "PERCENT_W_V"} (correct_stock_basis);
+    solutions[0].concentration: null -> {"value": "0.05", "unit": "L"} (add); solutions[0].composition[1].notes:
+    null -> "Stock carrier is 0.2 N H2SO4; carrier amount is unspecified. Normality
+    is retained as source text because no NORMAL unit exists in the concentration
+    enum. This is distinct from the 4 N reagent used to adjust base pH." (schema_gap);
+    composition[5].notes: null -> "Use 4 N H2SO4 to adjust the base to pH 2.2 before
+    autoclaving; addition amount is not quantified. Normality is retained as text,
+    not converted to an unsupported concentration unit. This is not the 0.2 N iron-stock
+    carrier." (not_quantified); notes: null -> "Stock follow-up: quantities distinguish
+    base-water inputs, stock strengths and batch doses; no measured final volume or
+    new growth claim is inferred. Existing chemical mappings and variant links are
+    retained, not independently validated. Note: Incubate statically without shaking.
+    This correction covers the base formulation only; strain-specific alternatives
+    require separate review." (clarify_scope)'
 ingredients:
 - preferred_term: See source for composition
   concentration:
@@ -123,3 +338,123 @@ ingredients:
 data_quality_flags:
 - incomplete_composition
 category: bacterial
+references:
+- reference: https://mediadive.dsmz.de/rest/solution/1413
+  title: 'MediaDive solution 1413: Main sol. 670'
+  notes: source_type=dataset; discovery_mode=existing_record_reference; accessed_on=2026-10-07;
+    source_organization=DSMZ; locator=$.data; response_sha256=5c97ac52d8482a8f76d31dce289eb5345282a66adba06ba6fd75a58e676cc044;
+    individual authors and publication year not supplied. Provider-declared solution
+    amounts, not receiving-medium concentrations.
+solutions:
+- preferred_term: FeSO4 x 7 H2O stock
+  composition:
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '40'
+      unit: PERCENT_W_V
+    term:
+      id: mediadive.compound:12
+      label: FeSO4 x 7 H2O
+    chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+      confidence: 0.7
+      match_type: corpus_consensus
+    notes: Source-explicit stock strength, not a final-medium concentration. The former
+      flattened value is replaced at the stock stage; no molecular-weight or density
+      conversion is inferred.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/solution/1413
+      supports: SUPPORT
+      snippet: |-
+        {
+                        "recipe_order": 5,
+                        "compound": "FeSO4 x 7 H2O",
+                        "compound_id": 12,
+                        "solution": null,
+                        "solution_id": null,
+                        "condition": null,
+                        "attribute": "40% w/v in 0.2 N H2SO4",
+                        "amount": 50,
+                        "unit": "ml",
+                        "g_l": 20,
+                        "mmol_l": 71.9386,
+                        "optional": 0
+                    }
+      explanation: |-
+        solutions[0].composition[0].concentration (correct_stock_basis), locator=$.data.recipe[4]: Source-explicit stock strength, not a final-medium concentration. The former flattened value is replaced at the stock stage; no molecular-weight or density conversion is inferred. Additional exact excerpt at $.data.steps[0]: {
+                        "recipe_order": null,
+                        "step": "Dissolve ingredients except ferrous sulfate and adjust pH to 2.2 with 4 N H2SO4. Sterilize medium by autoclaving for 15 min at 121\u00b0C. Before use, add  FeSO4 x 7 H2O from a 40% (w/v) stock solution prepared with 0.2 N H2SO4 and filter-sterilized under 100% N2 gas atmosphere."
+                    } Retrieved 2026-10-07T08:52:31.921795+00:00; response SHA256=5c97ac52d8482a8f76d31dce289eb5345282a66adba06ba6fd75a58e676cc044.
+  - preferred_term: H2SO4
+    notes: Stock carrier is 0.2 N H2SO4; carrier amount is unspecified. Normality
+      is retained as source text because no NORMAL unit exists in the concentration
+      enum. This is distinct from the 4 N reagent used to adjust base pH.
+    evidence:
+    - reference: https://mediadive.dsmz.de/rest/solution/1413
+      supports: SUPPORT
+      snippet: |-
+        {
+                        "recipe_order": 5,
+                        "compound": "FeSO4 x 7 H2O",
+                        "compound_id": 12,
+                        "solution": null,
+                        "solution_id": null,
+                        "condition": null,
+                        "attribute": "40% w/v in 0.2 N H2SO4",
+                        "amount": 50,
+                        "unit": "ml",
+                        "g_l": 20,
+                        "mmol_l": 71.9386,
+                        "optional": 0
+                    }
+      explanation: |-
+        solutions[0].composition[1].notes (schema_gap), locator=$.data.recipe[4]: Stock carrier is 0.2 N H2SO4; carrier amount is unspecified. Normality is retained as source text because no NORMAL unit exists in the concentration enum. This is distinct from the 4 N reagent used to adjust base pH. Additional exact excerpt at $.data.steps[0]: {
+                        "recipe_order": null,
+                        "step": "Dissolve ingredients except ferrous sulfate and adjust pH to 2.2 with 4 N H2SO4. Sterilize medium by autoclaving for 15 min at 121\u00b0C. Before use, add  FeSO4 x 7 H2O from a 40% (w/v) stock solution prepared with 0.2 N H2SO4 and filter-sterilized under 100% N2 gas atmosphere."
+                    } Retrieved 2026-10-07T08:52:31.921795+00:00; response SHA256=5c97ac52d8482a8f76d31dce289eb5345282a66adba06ba6fd75a58e676cc044.
+  concentration:
+    value: '0.05'
+    unit: L
+  source: https://mediadive.dsmz.de/rest/solution/1413
+  notes: 50 ml stock addition per recipe batch, not per liter of an inferred final
+    medium. Carrier amount and final-medium concentration are not inferred.
+source_data:
+  origin: MediaDive
+  evidence:
+  - reference: https://mediadive.dsmz.de/rest/solution/1413
+    supports: SUPPORT
+    snippet: |-
+      {
+                      "recipe_order": 5,
+                      "compound": "FeSO4 x 7 H2O",
+                      "compound_id": 12,
+                      "solution": null,
+                      "solution_id": null,
+                      "condition": null,
+                      "attribute": "40% w/v in 0.2 N H2SO4",
+                      "amount": 50,
+                      "unit": "ml",
+                      "g_l": 20,
+                      "mmol_l": 71.9386,
+                      "optional": 0
+                  }
+    explanation: |-
+      solutions[0].concentration (add), locator=$.data.recipe[4]: 50 ml stock addition per recipe batch, not per liter of an inferred final medium. Carrier amount and final-medium concentration are not inferred. Convert ml / 1000 = 0.05 L. Descriptor is a curator label, not a new accession. Additional exact excerpt at $.data.steps[0]: {
+                      "recipe_order": null,
+                      "step": "Dissolve ingredients except ferrous sulfate and adjust pH to 2.2 with 4 N H2SO4. Sterilize medium by autoclaving for 15 min at 121\u00b0C. Before use, add  FeSO4 x 7 H2O from a 40% (w/v) stock solution prepared with 0.2 N H2SO4 and filter-sterilized under 100% N2 gas atmosphere."
+                  } notes (clarify_scope), locator=$.data.steps: Document preparation scope and source limitations; retain the complete static-incubation instruction for 670. Additional exact excerpt: [
+                  {
+                      "recipe_order": null,
+                      "step": "Dissolve ingredients except ferrous sulfate and adjust pH to 2.2 with 4 N H2SO4. Sterilize medium by autoclaving for 15 min at 121\u00b0C. Before use, add  FeSO4 x 7 H2O from a 40% (w/v) stock solution prepared with 0.2 N H2SO4 and filter-sterilized under 100% N2 gas atmosphere."
+                  },
+                  {
+                      "recipe_order": null,
+                      "step": "Note: Incubate statically without shaking."
+                  }
+              ] Retrieved 2026-10-07T08:52:31.921795+00:00; response SHA256=5c97ac52d8482a8f76d31dce289eb5345282a66adba06ba6fd75a58e676cc044.
+notes: 'Stock follow-up: quantities distinguish base-water inputs, stock strengths
+  and batch doses; no measured final volume or new growth claim is inferred. Existing
+  chemical mappings and variant links are retained, not independently validated. Note:
+  Incubate statically without shaking. This correction covers the base formulation
+  only; strain-specific alternatives require separate review.'

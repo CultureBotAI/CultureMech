@@ -1,0 +1,63 @@
+{
+  "terminal": true,
+  "records": [
+    {
+      "record": "data/normalized_yaml/bacterial/song_cdm.yaml",
+      "counts": {
+        "snippet_failed": 17,
+        "title_passed": 1,
+        "title_failed": 1
+      }
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/song_optimal_cdm.yaml",
+      "counts": {
+        "snippet_failed": 24,
+        "title_passed": 1,
+        "title_failed": 1
+      }
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml",
+      "counts": {
+        "snippet_failed": 30,
+        "title_passed": 1,
+        "title_failed": 1
+      }
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml",
+      "counts": {
+        "snippet_failed": 30,
+        "title_passed": 1,
+        "title_failed": 1
+      }
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mcn_medium_whitman.yaml",
+      "counts": {
+        "snippet_failed": 27,
+        "title_passed": 1,
+        "title_failed": 1
+      }
+    },
+    {
+      "record": "data/normalized_yaml/bacterial/mcna_medium_lupa.yaml",
+      "counts": {
+        "snippet_failed": 28,
+        "title_passed": 1,
+        "title_failed": 1
+      }
+    }
+  ],
+  "counts": {
+    "snippet_failed": 156,
+    "title_passed": 6,
+    "title_failed": 6
+  },
+  "parsed_source_rows": 152,
+  "diagnosis": "Generic URL fallback matches raw HTML; separate table cells interrupt rendered ingredient/amount quotes. The gzip export also lacks a recognized document title.",
+  "production_reference_gate_passed": false,
+  "manual_source_checks_passed": true,
+  "no_validation_results_waived": true
+}

@@ -1,7 +1,13 @@
+"""Historical submedium migration guards, with audited later source corrections."""
+
 from __future__ import annotations
 
+import copy
+import hashlib
 import importlib.util
+import json
 import sys
+from collections import defaultdict
 from pathlib import Path
 
 import pytest
@@ -29,6 +35,20 @@ def repair_module():
 @pytest.fixture(scope="module")
 def scorer_module():
     return _load_script(SCORER, "score_review_need_for_komodo_dsmz_submedia")
+
+
+@pytest.fixture(scope="module")
+def source_followups():
+    audit = _load_script(
+        REPO
+        / "reports/ingredient_concentration_curation/20261007-dsmz1399-stock-boundary/audit_diff.py",
+        "submedia_followup_audit",
+    )
+    records = defaultdict(list)
+    for plan_path in audit.review_plans():
+        for item in json.loads(plan_path.read_text())["records"]:
+            records[item["path"]].append(item)
+    return audit, records
 
 
 def _ingredient(name: str, value: str, unit: str) -> dict:
@@ -217,14 +237,61 @@ def test_repair_rejects_final_ingredient_drift(repair_module) -> None:
 
 def test_target_records_match_komodo_dsmz_submedia_repair_contract(
     repair_module,
+    source_followups,
 ) -> None:
+    audit, followups = source_followups
     for target in repair_module.TARGETS:
         path = repair_module.NORMALIZED / target.path
-        doc = yaml.safe_load(path.read_text(encoding="utf-8"))
+        raw = path.read_bytes()
+        doc = yaml.safe_load(raw)
 
         assert doc["id"] == target.expected_id
         assert repair_module._source_term_id(doc) == target.expected_media_term
+        # A source-backed successor must pass its independent audit before the
+        # historical migration contract is checked against the reviewed baseline.
+        chain = followups[str(path.relative_to(REPO))]
+        if chain:
+            doc = audit.invert_chain(raw, chain)
+            assert doc["id"] == target.expected_id
+            assert repair_module._source_term_id(doc) == target.expected_media_term
         assert repair_module._ingredient_signature(doc["ingredients"]) in (
             target.imported_signature,
             target.final_signature,
         )
+
+
+@pytest.mark.parametrize("mutation", ["water_quantity", "snippet", "history"])
+def test_current_growth_factor_contract_rejects_rehashed_unreviewed_changes(
+    source_followups, mutation
+):
+    audit, followups = source_followups
+    path = "data/normalized_yaml/bacterial/solution_of_growth_stimulating_factors_medium_829.yaml"
+    chain = copy.deepcopy(followups[path])
+    assert chain
+    raw = (REPO / path).read_bytes()
+    terminal = next(r for r in chain if r["after_sha256"] == hashlib.sha256(raw).hexdigest())
+    doc = yaml.safe_load(raw)
+    if mutation == "water_quantity":
+        water = next(n for n in doc["ingredients"] if n["preferred_term"] == "H2O")
+        assert "concentration" not in water
+        water["concentration"] = {"value": "999", "unit": "G_PER_L"}
+    elif mutation == "snippet":
+        doc["ingredients"][0]["evidence"][-1]["snippet"] = "Unverified test quotation"
+    else:
+        doc["curation_history"][0]["notes"] = "Rewritten prior history"
+    raw = yaml.safe_dump(doc).encode()
+    terminal["after_text"] = raw.decode()
+    terminal["after_sha256"] = hashlib.sha256(raw).hexdigest()
+    with pytest.raises(AssertionError):
+        audit.invert_chain(raw, chain)
+
+
+def test_legacy_writer_does_not_overwrite_source_curated_growth_factors(repair_module):
+    target = repair_module.TARGET_BY_PATH[
+        "bacterial/solution_of_growth_stimulating_factors_medium_829.yaml"
+    ]
+    doc = yaml.safe_load((repair_module.NORMALIZED / target.path).read_bytes())
+    before = copy.deepcopy(doc)
+    with pytest.raises(ValueError, match="lacks concentration"):
+        repair_module.repair_record(doc, target)
+    assert doc == before

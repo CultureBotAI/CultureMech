@@ -1,0 +1,60 @@
+{
+  "terminal": true,
+  "scope": "Official MediaDB table literal matching and validation, not recipe application",
+  "all_record_goal_complete": false,
+  "publication_ready": false,
+  "production_reference_gate_passed": false,
+  "records_edited": 0,
+  "evidence_entries_added": 0,
+  "taxa_media_associations_added": 0,
+  "canonical_reports_added": 0,
+  "normalized_count": 15910,
+  "normalized_inventory_sha256": "19c45017d3210c6bc2c2fde0ec7a2f2c4a4498191af394cb351249b3299f6a05",
+  "captures_checked": 469,
+  "table_rows_checked": 7758,
+  "captured_source_literal_checks_passed": 8696,
+  "actual_record_snippet_checks_passed": 156,
+  "actual_record_title_checks_passed": 6,
+  "remaining_export_title_failures": 6,
+  "test_summaries": {
+    "regression": "686 passed, 2 warnings in 39.54s",
+    "fast": "13403 passed, 16 skipped, 3498 deselected, 2 warnings in 1660.09s (0:27:40)"
+  },
+  "fast_tier_passed": true,
+  "fast_recorder_succeeded": false,
+  "fast_recorder_error": "BrokenPipeError: [Errno 32] Broken pipe",
+  "fast_test_command_returncode": 0,
+  "fast_result_reconciliation": "The original receipt and error are preserved. The command exit code 0, complete pytest summary, log SHA-256, current full Python code inventory and normalized inventory were independently verified after both processes exited. The wrapper failed while printing DONE after saving the command result; this is not a pytest failure or a waived test failure.",
+  "full_suite_pass_asserted": false,
+  "adversarial_findings": [
+    {
+      "id": "MEDIADB-REFERENCE-001",
+      "status": "fixed",
+      "finding": "A recipe inside an inert HTML template could supply accepted evidence.",
+      "fix": "Reject inert/fallback ancestors and nonliteral table markup.",
+      "new_regression_cases": 38,
+      "initial_fast_run": "Deliberately interrupted before applying the fix; not a pass."
+    }
+  ],
+  "current_files_sha256": {
+    "src/culturemech/validation/recipe_references.py": "79923b9ef4c9662b67d907fccb9fa24aeab1a9e805face7d3e1e86132a9860a0",
+    "tests/test_recipe_mediadb_references.py": "de4c2b6e7d7ceb0ce0b5c96b7648141c7ad89d70983a107cc540f4e867fb0343",
+    "tests/fixtures/recipe_references/MEDIADB288.html": "2557f1fae23acf61e96b349fab4c1edc792cc8a5e7d2a6079df837d77ce9957b",
+    "tests/fixtures/recipe_references/MEDIADB288.provenance.json": "8dff0ff4d210384f194d27c67550dfb79e12f4fb1191f1b4352e1db3f0e19a4c",
+    "docs/validation-improvements.md": "f474e10a5855fcb24c48b1b7b787616b61dc672cd128b96abe1c521894541760"
+  },
+  "receipts_sha256": {
+    "sources-v2.json": "e9723fb973d7b0e8bfeb91245b4352e70e906ffa1a8f00b06c9c1c427b87ac37",
+    "references-v2.json": "c17f878bd496dc20501c4bcb2b440cc58a785a16dc42e646fa4d3becf21c9ec3",
+    "regression-v2.json": "774dba7456b89cb2542c4dae9dc06c5acf40a3cd3c72feb22050120d48caacbc",
+    "fast-v2.json": "fdf20772eb1f0730510b44daa1ef55f3edefc0d7235df90973793f89e2f8b34b"
+  },
+  "known_remaining": [
+    "Six SQL-export reference title failures are not waived.",
+    "The separate Kaminskyj FGSC table-reference failures remain unresolved.",
+    "MediaDB primary-source holds remain; database text matching is not scientific approval.",
+    "MediaDB ingestion NULL/name/zero defects remain for a subsequent scoped repair.",
+    "Existing global merge/freshness failures and incomplete all-record coverage remain.",
+    "No GitHub operation was performed."
+  ]
+}

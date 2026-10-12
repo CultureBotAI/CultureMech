@@ -6,127 +6,16 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.0
-ingredients:
-- preferred_term: Casamino acids (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium;
-    TOGO M1212 adjusts the prepared medium to pH 8.0.
-  nutritional_roles:
-  - NITROGEN_SOURCE
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium;
-    TOGO M1212 adjusts the prepared medium to pH 8.0.
-  nutritional_roles:
-  - NITROGEN_SOURCE
-- preferred_term: Sodium glutamate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium;
-    TOGO M1212 adjusts the prepared medium to pH 8.0.
-  term:
-    id: CHEBI:64220
-    label: monosodium glutamate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:64220
-    label: monosodium glutamate
-  nutritional_roles:
-  - NITROGEN_SOURCE
-- preferred_term: Trisodium citrate
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium;
-    TOGO M1212 adjusts the prepared medium to pH 8.0.
-  term:
-    id: CHEBI:53258
-    label: sodium citrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:53258
-    label: sodium citrate
-  physicochemical_roles:
-  - BUFFER
-- preferred_term: MgSO4 x 7 H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium;
-    TOGO M1212 adjusts the prepared medium to pH 8.0.
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  nutritional_roles:
-  - TRACE_ELEMENT
-- preferred_term: KCl
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium;
-    TOGO M1212 adjusts the prepared medium to pH 8.0.
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: NaCl
-  concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium;
-    TOGO M1212 adjusts the prepared medium to pH 8.0.
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-  physicochemical_roles:
-  - OSMOTIC_AGENT
-- preferred_term: FeCl2 x 4 H2O
-  concentration:
-    value: '0.036'
-    unit: G_PER_L
-  notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium;
-    TOGO M1212 adjusts the prepared medium to pH 8.0.
-  term:
-    id: CHEBI:86249
-    label: iron dichloride tetrahydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86249
-    label: iron dichloride tetrahydrate
-  nutritional_roles:
-  - IRON_SOURCE
-  - TRACE_ELEMENT
-- preferred_term: MnCl2 x 4 H2O
-  concentration:
-    value: '0.00036'
-    unit: G_PER_L
-  notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium;
-    TOGO M1212 adjusts the prepared medium to pH 8.0.
-  term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-  nutritional_roles:
-  - TRACE_ELEMENT
+ingredients: []
 media_term:
   preferred_term: TOGO Medium M1212
   term:
     id: TOGO:M1212
     label: Halobacteria Medium (pH 8.0)
-notes: TOGO M1212 prepares Halobacteria Medium from TOGO M159/JCM Medium 168 and adjusts
-  the complete medium to pH 8.0.
+notes: |-
+  TOGO M1212 prepares Halobacteria Medium from TOGO M159/JCM Medium 168 and adjusts the complete medium to pH 8.0.
+
+  These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. The original JCM1132 is unavailable; this record is supported by its own TOGO M1212 source and the explicitly referenced M159/J168 base.
 applications:
 - Microbial cultivation
 curation_history:
@@ -162,23 +51,61 @@ curation_history:
   source: https://togomedium.org/medium/M1212; https://togomedium.org/medium/M159
   notes: TOGO M1212 prepares Halobacteria Medium from TOGO M159/JCM Medium 168 and
     adjusts the complete medium to pH 8.0.
+- timestamp: '2026-10-09T14:23:51.976655+00:00'
+  curator: codex
+  action: CURATED_HALOBACTERIA_VARIANT_CONCENTRATIONS_AND_PREPARATION_STAGES
+  notes: Source-specific ingredient and variant review. Every change has an exact
+    PURL-backed excerpt. Prepared-base quantities, unquantified water/titrant, source
+    limitations, chemical identities and prior history are preserved; no taxa-media
+    assertions are added.
+  source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168; https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159;
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1212
+  changes: |-
+    solutions[0].composition[0].notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0. -> TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+    5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.; solutions[0].composition[1].notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0. -> TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+    5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.; solutions[0].composition[2].notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0. -> TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+    1.0 g in the source preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.; solutions[0].composition[3].notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0. -> TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+    3.0 g in the source preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.; solutions[0].composition[4].notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0. -> TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+    20.0 g in the source preparation brought to 1.0 L gives 20 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.; solutions[0].composition[5].notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0. -> TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+    2.0 g in the source preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.; solutions[0].composition[6].notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0. -> TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+    200.0 g in the source preparation brought to 1.0 L gives 200 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.; solutions[0].composition[7].notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0. -> TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+    36.0 mg in the source preparation brought to 1.0 L gives 0.036 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing g/L value is correct: convert mg to g by dividing by 1000, then divide by the explicit 1 L prepared-base volume. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.; solutions[0].composition[8].notes: TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0. -> TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+    0.36 mg in the source preparation brought to 1.0 L gives 0.00036 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing g/L value is correct: convert mg to g by dividing by 1000, then divide by the explicit 1 L prepared-base volume. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.; solutions[0].composition[9].notes: None -> Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.; solutions[0].composition[9].preferred_term: None -> distilled water; solutions[0].preferred_term: None -> Halobacteria medium (M159); solutions[0].name: None -> Halobacteria medium (M159); solutions[0].concentration: None -> {'value': '1', 'unit': 'L'}; solutions[0].notes: None -> These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.; solutions[0].preparation_notes: None -> Add components to distilled water and bring volume to 1.0 L.
+    Adjust pH to 7.0-7.2.
+    For preparation of solid medium, add 20.0 g/L agar.; solutions[0].composition: [{'preferred_term': 'Casamino acids (BD-Difco)', 'concentration': {'value': '5', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'nutritional_roles': ['NITROGEN_SOURCE']}, {'preferred_term': 'Yeast extract (BD-Difco)', 'concentration': {'value': '5', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'nutritional_roles': ['NITROGEN_SOURCE']}, {'preferred_term': 'Sodium glutamate', 'concentration': {'value': '1', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'term': {'id': 'CHEBI:64220', 'label': 'monosodium glutamate'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:64220', 'label': 'monosodium glutamate'}, 'nutritional_roles': ['NITROGEN_SOURCE']}, {'preferred_term': 'Trisodium citrate', 'concentration': {'value': '3', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'term': {'id': 'CHEBI:53258', 'label': 'sodium citrate'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:53258', 'label': 'sodium citrate'}, 'physicochemical_roles': ['BUFFER']}, {'preferred_term': 'MgSO4 x 7 H2O', 'concentration': {'value': '20', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'term': {'id': 'CHEBI:31795', 'label': 'magnesium sulfate heptahydrate'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:31795', 'label': 'magnesium sulfate heptahydrate'}, 'nutritional_roles': ['TRACE_ELEMENT']}, {'preferred_term': 'KCl', 'concentration': {'value': '2', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'term': {'id': 'CHEBI:32588', 'label': 'potassium chloride'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:32588', 'label': 'potassium chloride'}}, {'preferred_term': 'NaCl', 'concentration': {'value': '200', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'term': {'id': 'CHEBI:26710', 'label': 'sodium chloride'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:26710', 'label': 'sodium chloride'}, 'physicochemical_roles': ['OSMOTIC_AGENT']}, {'preferred_term': 'FeCl2 x 4 H2O', 'concentration': {'value': '0.036', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'term': {'id': 'CHEBI:86249', 'label': 'iron dichloride tetrahydrate'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:86249', 'label': 'iron dichloride tetrahydrate'}, 'nutritional_roles': ['IRON_SOURCE', 'TRACE_ELEMENT']}, {'preferred_term': 'MnCl2 x 4 H2O', 'concentration': {'value': '0.00036', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'term': {'id': 'CHEBI:86368', 'label': 'manganese(II) chloride tetrahydrate'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:86368', 'label': 'manganese(II) chloride tetrahydrate'}, 'nutritional_roles': ['TRACE_ELEMENT']}] -> [{'preferred_term': 'Casamino acids (BD-Difco)', 'concentration': {'value': '5', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.\n\n5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.', 'nutritional_roles': ['NITROGEN_SOURCE'], 'evidence': [{'reference': 'https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168', 'supports': 'SUPPORT', 'snippet': 'Casamino acids (BD-Difco) 5.0 g', 'explanation': 'solutions[0].composition[0].concentration: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.\n\nAdditional exact excerpt: Casamino acids (BD-Difco) 5.0 g\nsolutions[0].composition[0].notes: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.'}, {'reference': 'https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159', 'supports': 'SUPPORT', 'snippet': '{\n          "component_name": "Casamino acids (BD-Difco)",\n          "volume": 5,\n          "unit": "g",\n          "gmo": "http://purl.jp/bio/10/gmo/GMO_001705",\n          "gmo_id": "GMO_001705",\n          "label": "Bacto &trade; Casamino acids",\n          "properties": [\n            {\n              "id": "GMO_000047",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000047",\n              "label": "Undefined component"\n            }\n          ],\n          "roles": []\n        }', 'explanation': 'solutions[0].composition[0].concentration: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00; source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'}]}, {'preferred_term': 'Yeast extract (BD-Difco)', 'concentration': {'value': '5', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.\n\n5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.', 'nutritional_roles': ['NITROGEN_SOURCE'], 'evidence': [{'reference': 'https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168', 'supports': 'SUPPORT', 'snippet': 'Yeast extract (BD-Difco) 5.0 g', 'explanation': 'solutions[0].composition[1].concentration: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.\n\nAdditional exact excerpt: Yeast extract (BD-Difco) 5.0 g\nsolutions[0].composition[1].notes: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.'}, {'reference': 'https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159', 'supports': 'SUPPORT', 'snippet': '{\n          "component_name": "Yeast extract (BD-Difco)",\n          "volume": 5,\n          "unit": "g",\n          "gmo": "http://purl.jp/bio/10/gmo/GMO_001018",\n          "gmo_id": "GMO_001018",\n          "label": "Bacto &trade; Yeast extract",\n          "properties": [\n            {\n              "id": "GMO_000047",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000047",\n              "label": "Undefined component"\n            }\n          ],\n          "roles": []\n        }', 'explanation': 'solutions[0].composition[1].concentration: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00; source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'}]}, {'preferred_term': 'Sodium glutamate', 'concentration': {'value': '1', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.\n\n1.0 g in the source preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.', 'term': {'id': 'CHEBI:64220', 'label': 'monosodium glutamate'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:64220', 'label': 'monosodium glutamate'}, 'nutritional_roles': ['NITROGEN_SOURCE'], 'evidence': [{'reference': 'https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168', 'supports': 'SUPPORT', 'snippet': 'Sodium glutamate 1.0 g', 'explanation': 'solutions[0].composition[2].concentration: 1.0 g in the source preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.\n\nAdditional exact excerpt: Sodium glutamate 1.0 g\nsolutions[0].composition[2].notes: 1.0 g in the source preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.'}, {'reference': 'https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159', 'supports': 'SUPPORT', 'snippet': '{\n          "component_name": "Sodium glutamate",\n          "volume": 1,\n          "unit": "g",\n          "gmo": "http://purl.jp/bio/10/gmo/GMO_001094",\n          "gmo_id": "GMO_001094",\n          "label": "Sodium glutamate",\n          "properties": [\n            {\n              "id": "GMO_000046",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000046",\n              "label": "Defined component"\n            },\n            {\n              "id": "GMO_000041",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000041",\n              "label": "Organic compound"\n            },\n            {\n              "id": "GMO_000049",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000049",\n              "label": "Simple component"\n            }\n          ],\n          "roles": [\n            {\n              "id": "GMO_000062",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000062",\n              "label": "Nitrogen source"\n            }\n          ]\n        }', 'explanation': 'solutions[0].composition[2].concentration: 1.0 g in the source preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00; source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'}]}, {'preferred_term': 'Trisodium citrate', 'concentration': {'value': '3', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.\n\n3.0 g in the source preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.', 'term': {'id': 'CHEBI:53258', 'label': 'sodium citrate'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:53258', 'label': 'sodium citrate'}, 'physicochemical_roles': ['BUFFER'], 'evidence': [{'reference': 'https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168', 'supports': 'SUPPORT', 'snippet': 'Trisodium citrate 3.0 g', 'explanation': 'solutions[0].composition[3].concentration: 3.0 g in the source preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.\n\nAdditional exact excerpt: Trisodium citrate 3.0 g\nsolutions[0].composition[3].notes: 3.0 g in the source preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.'}, {'reference': 'https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159', 'supports': 'SUPPORT', 'snippet': '{\n          "component_name": "Trisodium citrate",\n          "volume": 3,\n          "unit": "g",\n          "gmo": "http://purl.jp/bio/10/gmo/GMO_001160",\n          "gmo_id": "GMO_001160",\n          "label": "Trisodium citrate",\n          "properties": [\n            {\n              "id": "GMO_000046",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000046",\n              "label": "Defined component"\n            },\n            {\n              "id": "GMO_000041",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000041",\n              "label": "Organic compound"\n            },\n            {\n              "id": "GMO_000049",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000049",\n              "label": "Simple component"\n            }\n          ],\n          "roles": [\n            {\n              "id": "GMO_000038",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000038",\n              "label": "Buffer"\n            }\n          ]\n        }', 'explanation': 'solutions[0].composition[3].concentration: 3.0 g in the source preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00; source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'}]}, {'preferred_term': 'MgSO4 x 7 H2O', 'concentration': {'value': '20', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.\n\n20.0 g in the source preparation brought to 1.0 L gives 20 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.', 'term': {'id': 'CHEBI:31795', 'label': 'magnesium sulfate heptahydrate'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:31795', 'label': 'magnesium sulfate heptahydrate'}, 'nutritional_roles': ['TRACE_ELEMENT'], 'evidence': [{'reference': 'https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168', 'supports': 'SUPPORT', 'snippet': 'MgSO4·7H2O 20.0 g', 'explanation': 'solutions[0].composition[4].concentration: 20.0 g in the source preparation brought to 1.0 L gives 20 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.\n\nAdditional exact excerpt: MgSO4·7H2O 20.0 g\nsolutions[0].composition[4].notes: 20.0 g in the source preparation brought to 1.0 L gives 20 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.'}, {'reference': 'https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159', 'supports': 'SUPPORT', 'snippet': '{\n          "component_name": "MgSO4・7H2O",\n          "volume": 20,\n          "unit": "g",\n          "gmo": "http://purl.jp/bio/10/gmo/GMO_001002",\n          "gmo_id": "GMO_001002",\n          "label": "Magnesium sulfate heptahydrate",\n          "properties": [\n            {\n              "id": "GMO_000040",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000040",\n              "label": "Inorganic compound"\n            },\n            {\n              "id": "GMO_000049",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000049",\n              "label": "Simple component"\n            },\n            {\n              "id": "GMO_000046",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000046",\n              "label": "Defined component"\n            }\n          ],\n          "roles": [\n            {\n              "id": "GMO_000078",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000078",\n              "label": "Mineral source"\n            }\n          ]\n        }', 'explanation': 'solutions[0].composition[4].concentration: 20.0 g in the source preparation brought to 1.0 L gives 20 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00; source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'}]}, {'preferred_term': 'KCl', 'concentration': {'value': '2', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.\n\n2.0 g in the source preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.', 'term': {'id': 'CHEBI:32588', 'label': 'potassium chloride'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:32588', 'label': 'potassium chloride'}, 'evidence': [{'reference': 'https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168', 'supports': 'SUPPORT', 'snippet': 'KCl 2.0 g', 'explanation': 'solutions[0].composition[5].concentration: 2.0 g in the source preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.\n\nAdditional exact excerpt: KCl 2.0 g\nsolutions[0].composition[5].notes: 2.0 g in the source preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.'}, {'reference': 'https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159', 'supports': 'SUPPORT', 'snippet': '{\n          "component_name": "KCl",\n          "volume": 2,\n          "unit": "g",\n          "gmo": "http://purl.jp/bio/10/gmo/GMO_001017",\n          "gmo_id": "GMO_001017",\n          "label": "Potassium chloride",\n          "properties": [\n            {\n              "id": "GMO_000049",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000049",\n              "label": "Simple component"\n            },\n            {\n              "id": "GMO_000040",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000040",\n              "label": "Inorganic compound"\n            },\n            {\n              "id": "GMO_000046",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000046",\n              "label": "Defined component"\n            }\n          ],\n          "roles": [\n            {\n              "id": "GMO_000078",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000078",\n              "label": "Mineral source"\n            }\n          ]\n        }', 'explanation': 'solutions[0].composition[5].concentration: 2.0 g in the source preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00; source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'}]}, {'preferred_term': 'NaCl', 'concentration': {'value': '200', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.\n\n200.0 g in the source preparation brought to 1.0 L gives 200 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.', 'term': {'id': 'CHEBI:26710', 'label': 'sodium chloride'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:26710', 'label': 'sodium chloride'}, 'physicochemical_roles': ['OSMOTIC_AGENT'], 'evidence': [{'reference': 'https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168', 'supports': 'SUPPORT', 'snippet': 'NaCl 200.0 g', 'explanation': 'solutions[0].composition[6].concentration: 200.0 g in the source preparation brought to 1.0 L gives 200 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.\n\nAdditional exact excerpt: NaCl 200.0 g\nsolutions[0].composition[6].notes: 200.0 g in the source preparation brought to 1.0 L gives 200 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.'}, {'reference': 'https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159', 'supports': 'SUPPORT', 'snippet': '{\n          "component_name": "NaCl",\n          "volume": 200,\n          "unit": "g",\n          "gmo": "http://purl.jp/bio/10/gmo/GMO_001004",\n          "gmo_id": "GMO_001004",\n          "label": "Sodium chloride",\n          "properties": [\n            {\n              "id": "GMO_000049",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000049",\n              "label": "Simple component"\n            },\n            {\n              "id": "GMO_000046",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000046",\n              "label": "Defined component"\n            },\n            {\n              "id": "GMO_000040",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000040",\n              "label": "Inorganic compound"\n            }\n          ],\n          "roles": [\n            {\n              "id": "GMO_000078",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000078",\n              "label": "Mineral source"\n            }\n          ]\n        }', 'explanation': 'solutions[0].composition[6].concentration: 200.0 g in the source preparation brought to 1.0 L gives 200 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00; source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'}]}, {'preferred_term': 'FeCl2 x 4 H2O', 'concentration': {'value': '0.036', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.\n\n36.0 mg in the source preparation brought to 1.0 L gives 0.036 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing g/L value is correct: convert mg to g by dividing by 1000, then divide by the explicit 1 L prepared-base volume. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.', 'term': {'id': 'CHEBI:86249', 'label': 'iron dichloride tetrahydrate'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:86249', 'label': 'iron dichloride tetrahydrate'}, 'nutritional_roles': ['IRON_SOURCE', 'TRACE_ELEMENT'], 'evidence': [{'reference': 'https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168', 'supports': 'SUPPORT', 'snippet': 'FeCl2·4H2O 36.0 mg', 'explanation': 'solutions[0].composition[7].concentration: 36.0 mg in the source preparation brought to 1.0 L gives 0.036 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing g/L value is correct: convert mg to g by dividing by 1000, then divide by the explicit 1 L prepared-base volume. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.\n\nAdditional exact excerpt: FeCl2·4H2O 36.0 mg\nsolutions[0].composition[7].notes: 36.0 mg in the source preparation brought to 1.0 L gives 0.036 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing g/L value is correct: convert mg to g by dividing by 1000, then divide by the explicit 1 L prepared-base volume. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.'}, {'reference': 'https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159', 'supports': 'SUPPORT', 'snippet': '{\n          "component_name": "FeCl2・4H2O",\n          "volume": 36,\n          "unit": "mg",\n          "gmo": "http://purl.jp/bio/10/gmo/GMO_001548",\n          "gmo_id": "GMO_001548",\n          "label": "Iron(II) chloride tetrahydrate",\n          "properties": [\n            {\n              "id": "GMO_000046",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000046",\n              "label": "Defined component"\n            },\n            {\n              "id": "GMO_000040",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000040",\n              "label": "Inorganic compound"\n            },\n            {\n              "id": "GMO_000049",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000049",\n              "label": "Simple component"\n            }\n          ],\n          "roles": [\n            {\n              "id": "GMO_000078",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000078",\n              "label": "Mineral source"\n            }\n          ]\n        }', 'explanation': 'solutions[0].composition[7].concentration: 36.0 mg in the source preparation brought to 1.0 L gives 0.036 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing g/L value is correct: convert mg to g by dividing by 1000, then divide by the explicit 1 L prepared-base volume. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00; source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'}]}, {'preferred_term': 'MnCl2 x 4 H2O', 'concentration': {'value': '0.00036', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.\n\n0.36 mg in the source preparation brought to 1.0 L gives 0.00036 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing g/L value is correct: convert mg to g by dividing by 1000, then divide by the explicit 1 L prepared-base volume. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.', 'term': {'id': 'CHEBI:86368', 'label': 'manganese(II) chloride tetrahydrate'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:86368', 'label': 'manganese(II) chloride tetrahydrate'}, 'nutritional_roles': ['TRACE_ELEMENT'], 'evidence': [{'reference': 'https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168', 'supports': 'SUPPORT', 'snippet': 'MnCl2·4H2O 0.36 mg', 'explanation': 'solutions[0].composition[8].concentration: 0.36 mg in the source preparation brought to 1.0 L gives 0.00036 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing g/L value is correct: convert mg to g by dividing by 1000, then divide by the explicit 1 L prepared-base volume. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.\n\nAdditional exact excerpt: MnCl2·4H2O 0.36 mg\nsolutions[0].composition[8].notes: 0.36 mg in the source preparation brought to 1.0 L gives 0.00036 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing g/L value is correct: convert mg to g by dividing by 1000, then divide by the explicit 1 L prepared-base volume. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.'}, {'reference': 'https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159', 'supports': 'SUPPORT', 'snippet': '{\n          "component_name": "MnCl2・4H2O",\n          "volume": 0.36,\n          "unit": "mg",\n          "gmo": "http://purl.jp/bio/10/gmo/GMO_001020",\n          "gmo_id": "GMO_001020",\n          "label": "Manganese chloride tetrahydrate",\n          "properties": [\n            {\n              "id": "GMO_000049",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000049",\n              "label": "Simple component"\n            },\n            {\n              "id": "GMO_000040",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000040",\n              "label": "Inorganic compound"\n            },\n            {\n              "id": "GMO_000046",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000046",\n              "label": "Defined component"\n            }\n          ],\n          "roles": [\n            {\n              "id": "GMO_000078",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000078",\n              "label": "Mineral source"\n            }\n          ]\n        }', 'explanation': 'solutions[0].composition[8].concentration: 0.36 mg in the source preparation brought to 1.0 L gives 0.00036 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing g/L value is correct: convert mg to g by dividing by 1000, then divide by the explicit 1 L prepared-base volume. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00; source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'}]}, {'preferred_term': 'distilled water', 'notes': 'Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.', 'evidence': [{'reference': 'https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168', 'supports': 'SUPPORT', 'snippet': 'Add components to distilled water and bring volume to 1.0 L.', 'explanation': 'solutions[0].composition[9].concentration: Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.\n\nAdditional exact excerpt: Add components to distilled water and bring volume to 1.0 L.\nsolutions[0].composition[9].notes: Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.\n\nAdditional exact excerpt: Add components to distilled water and bring volume to 1.0 L.\nsolutions[0].composition[9].preferred_term: Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.'}, {'reference': 'https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159', 'supports': 'SUPPORT', 'snippet': '{\n          "component_name": "distilled water",\n          "volume": 1,\n          "unit": "L",\n          "gmo": "http://purl.jp/bio/10/gmo/GMO_001001",\n          "gmo_id": "GMO_001001",\n          "label": "Distilled water",\n          "properties": [\n            {\n              "id": "GMO_000046",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000046",\n              "label": "Defined component"\n            },\n            {\n              "id": "GMO_000040",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000040",\n              "label": "Inorganic compound"\n            },\n            {\n              "id": "GMO_000049",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000049",\n              "label": "Simple component"\n            }\n          ],\n          "roles": [\n            {\n              "id": "GMO_000044",\n              "uri": "http://purl.jp/bio/10/gmo/GMO_000044",\n              "label": "Solvating media"\n            }\n          ]\n        }', 'explanation': 'solutions[0].composition[9].concentration: Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00; source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'}]}]; ingredients: [{'preferred_term': 'Casamino acids (BD-Difco)', 'concentration': {'value': '5', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'nutritional_roles': ['NITROGEN_SOURCE']}, {'preferred_term': 'Yeast extract (BD-Difco)', 'concentration': {'value': '5', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'nutritional_roles': ['NITROGEN_SOURCE']}, {'preferred_term': 'Sodium glutamate', 'concentration': {'value': '1', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'term': {'id': 'CHEBI:64220', 'label': 'monosodium glutamate'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:64220', 'label': 'monosodium glutamate'}, 'nutritional_roles': ['NITROGEN_SOURCE']}, {'preferred_term': 'Trisodium citrate', 'concentration': {'value': '3', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'term': {'id': 'CHEBI:53258', 'label': 'sodium citrate'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:53258', 'label': 'sodium citrate'}, 'physicochemical_roles': ['BUFFER']}, {'preferred_term': 'MgSO4 x 7 H2O', 'concentration': {'value': '20', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'term': {'id': 'CHEBI:31795', 'label': 'magnesium sulfate heptahydrate'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:31795', 'label': 'magnesium sulfate heptahydrate'}, 'nutritional_roles': ['TRACE_ELEMENT']}, {'preferred_term': 'KCl', 'concentration': {'value': '2', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'term': {'id': 'CHEBI:32588', 'label': 'potassium chloride'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:32588', 'label': 'potassium chloride'}}, {'preferred_term': 'NaCl', 'concentration': {'value': '200', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'term': {'id': 'CHEBI:26710', 'label': 'sodium chloride'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:26710', 'label': 'sodium chloride'}, 'physicochemical_roles': ['OSMOTIC_AGENT']}, {'preferred_term': 'FeCl2 x 4 H2O', 'concentration': {'value': '0.036', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'term': {'id': 'CHEBI:86249', 'label': 'iron dichloride tetrahydrate'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:86249', 'label': 'iron dichloride tetrahydrate'}, 'nutritional_roles': ['IRON_SOURCE', 'TRACE_ELEMENT']}, {'preferred_term': 'MnCl2 x 4 H2O', 'concentration': {'value': '0.00036', 'unit': 'G_PER_L'}, 'notes': 'TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.', 'term': {'id': 'CHEBI:86368', 'label': 'manganese(II) chloride tetrahydrate'}, 'mediaingredientmech_chebi_term': {'id': 'CHEBI:86368', 'label': 'manganese(II) chloride tetrahydrate'}, 'nutritional_roles': ['TRACE_ELEMENT']}] -> []; preparation_steps: [{'step_number': 1, 'action': 'DISSOLVE', 'description': 'Dissolve the Halobacteria Medium components in distilled water and bring the volume to 1 L.'}, {'step_number': 2, 'action': 'ADJUST_PH', 'description': 'Adjust the complete medium to pH 8.0.'}] -> [{'step_number': 1, 'action': 'ADJUST_PH', 'description': 'Adjust pH to 8.0.'}]; notes: TOGO M1212 prepares Halobacteria Medium from TOGO M159/JCM Medium 168 and adjusts the complete medium to pH 8.0. -> TOGO M1212 prepares Halobacteria Medium from TOGO M159/JCM Medium 168 and adjusts the complete medium to pH 8.0.
+
+    These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. The original JCM1132 is unavailable; this record is supported by its own TOGO M1212 source and the explicitly referenced M159/J168 base.; parent_media: {'path': 'data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml', 'relationship': 'PH_VARIANT', 'id': 'CultureMech:008151', 'name': 'halobacteria_medium', 'notes': 'Adjusts TOGO M159 Halobacteria Medium to pH 8.0.'} -> {'path': 'data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml', 'relationship': 'PH_VARIANT', 'id': 'CultureMech:008151', 'name': 'halobacteria_medium', 'notes': 'These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.'}; variant_modifications: ['Adjusts TOGO M159 Halobacteria Medium to pH 8.0.'] -> ['These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.']; parent_media: {'path': 'data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml', 'relationship': 'PH_VARIANT', 'id': 'CultureMech:008151', 'name': 'halobacteria_medium', 'notes': 'Adjusts TOGO M159 Halobacteria Medium to pH 8.0.'} -> {'path': 'data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml', 'relationship': 'PH_VARIANT', 'id': 'CultureMech:008151', 'name': 'halobacteria_medium', 'notes': 'These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.'}
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve the Halobacteria Medium components in distilled water and
-    bring the volume to 1 L.
-- step_number: 2
   action: ADJUST_PH
-  description: Adjust the complete medium to pH 8.0.
+  description: Adjust pH to 8.0.
 parent_media:
   path: data/normalized_yaml/archaea/TOGO_M159_Halobacteria_Medium.yaml
   relationship: PH_VARIANT
   id: CultureMech:008151
   name: halobacteria_medium
-  notes: Adjusts TOGO M159 Halobacteria Medium to pH 8.0.
+  notes: These concentrations describe the prepared J168/M159 base, not an asserted
+    post-titration final-medium concentration. The recipe uses 1 L of prepared base
+    and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume
+    are unspecified; do not infer a carbonate reagent, zero dose, or final-medium
+    dilution factor. Existing chemical mappings and roles are preserved, not independently
+    recertified.
 variant_relationship: PH_VARIANT
 variant_modifications:
-- Adjusts TOGO M159 Halobacteria Medium to pH 8.0.
+- These concentrations describe the prepared J168/M159 base, not an asserted post-titration
+  final-medium concentration. The recipe uses 1 L of prepared base and then adjusts
+  pH to 8.0. The titrant identity, dose and resulting final volume are unspecified;
+  do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing
+  chemical mappings and roles are preserved, not independently recertified.
 data_quality_flags:
 - ingredients_curated
 - has_ontology_mappings
@@ -186,3 +113,823 @@ data_quality_flags:
 references:
 - reference: https://togomedium.org/medium/M1212
 - reference: https://togomedium.org/medium/M159
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+  title: Medium data
+  notes: source_type=culture_collection_page; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    accession=J168; response_sha256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+    Authors/year are not supplied; no publication year or DOI is invented.
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159
+  title: Halobacteria Medium
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    accession=M159; response_sha256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.
+    Authors/year are not supplied; no publication year or DOI is invented.
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1212
+  title: Halobacteria Medium (pH 8.0)
+  notes: source_type=dataset; discovery_mode=cross_reference; accessed_on=2026-10-09;
+    accession=M1212; response_sha256=7ad86e619dec1d424011096d3f79b2698a5f8eadb748ff6fd4c2c307ca8c1084.
+    Authors/year are not supplied; no publication year or DOI is invented.
+solutions:
+- preferred_term: Halobacteria medium (M159)
+  name: Halobacteria medium (M159)
+  composition:
+  - preferred_term: Casamino acids (BD-Difco)
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    notes: |-
+      TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+      5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.
+    nutritional_roles:
+    - NITROGEN_SOURCE
+    evidence:
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+      supports: SUPPORT
+      snippet: Casamino acids (BD-Difco) 5.0 g
+      explanation: |-
+        solutions[0].composition[0].concentration: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+        Additional exact excerpt: Casamino acids (BD-Difco) 5.0 g
+        solutions[0].composition[0].notes: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Casamino acids (BD-Difco)",
+                  "volume": 5,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001705",
+                  "gmo_id": "GMO_001705",
+                  "label": "Bacto &trade; Casamino acids",
+                  "properties": [
+                    {
+                      "id": "GMO_000047",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000047",
+                      "label": "Undefined component"
+                    }
+                  ],
+                  "roles": []
+                }
+      explanation: 'solutions[0].composition[0].concentration: 5.0 g in the source
+        preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt:
+        "Add components to distilled water and bring volume to 1.0 L.". These concentrations
+        describe the prepared J168/M159 base, not an asserted post-titration final-medium
+        concentration. The recipe uses 1 L of prepared base and then adjusts pH to
+        8.0. The titrant identity, dose and resulting final volume are unspecified;
+        do not infer a carbonate reagent, zero dose, or final-medium dilution factor.
+        Existing chemical mappings and roles are preserved, not independently recertified.
+        Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00;
+        source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'
+  - preferred_term: Yeast extract (BD-Difco)
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    notes: |-
+      TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+      5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.
+    nutritional_roles:
+    - NITROGEN_SOURCE
+    evidence:
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+      supports: SUPPORT
+      snippet: Yeast extract (BD-Difco) 5.0 g
+      explanation: |-
+        solutions[0].composition[1].concentration: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+        Additional exact excerpt: Yeast extract (BD-Difco) 5.0 g
+        solutions[0].composition[1].notes: 5.0 g in the source preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Yeast extract (BD-Difco)",
+                  "volume": 5,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001018",
+                  "gmo_id": "GMO_001018",
+                  "label": "Bacto &trade; Yeast extract",
+                  "properties": [
+                    {
+                      "id": "GMO_000047",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000047",
+                      "label": "Undefined component"
+                    }
+                  ],
+                  "roles": []
+                }
+      explanation: 'solutions[0].composition[1].concentration: 5.0 g in the source
+        preparation brought to 1.0 L gives 5 G_PER_L. Separate exact volume excerpt:
+        "Add components to distilled water and bring volume to 1.0 L.". These concentrations
+        describe the prepared J168/M159 base, not an asserted post-titration final-medium
+        concentration. The recipe uses 1 L of prepared base and then adjusts pH to
+        8.0. The titrant identity, dose and resulting final volume are unspecified;
+        do not infer a carbonate reagent, zero dose, or final-medium dilution factor.
+        Existing chemical mappings and roles are preserved, not independently recertified.
+        Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00;
+        source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'
+  - preferred_term: Sodium glutamate
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    notes: |-
+      TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+      1.0 g in the source preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.
+    term:
+      id: CHEBI:64220
+      label: monosodium glutamate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:64220
+      label: monosodium glutamate
+    nutritional_roles:
+    - NITROGEN_SOURCE
+    evidence:
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+      supports: SUPPORT
+      snippet: Sodium glutamate 1.0 g
+      explanation: |-
+        solutions[0].composition[2].concentration: 1.0 g in the source preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+        Additional exact excerpt: Sodium glutamate 1.0 g
+        solutions[0].composition[2].notes: 1.0 g in the source preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Sodium glutamate",
+                  "volume": 1,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001094",
+                  "gmo_id": "GMO_001094",
+                  "label": "Sodium glutamate",
+                  "properties": [
+                    {
+                      "id": "GMO_000046",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                      "label": "Defined component"
+                    },
+                    {
+                      "id": "GMO_000041",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000041",
+                      "label": "Organic compound"
+                    },
+                    {
+                      "id": "GMO_000049",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                      "label": "Simple component"
+                    }
+                  ],
+                  "roles": [
+                    {
+                      "id": "GMO_000062",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000062",
+                      "label": "Nitrogen source"
+                    }
+                  ]
+                }
+      explanation: 'solutions[0].composition[2].concentration: 1.0 g in the source
+        preparation brought to 1.0 L gives 1 G_PER_L. Separate exact volume excerpt:
+        "Add components to distilled water and bring volume to 1.0 L.". These concentrations
+        describe the prepared J168/M159 base, not an asserted post-titration final-medium
+        concentration. The recipe uses 1 L of prepared base and then adjusts pH to
+        8.0. The titrant identity, dose and resulting final volume are unspecified;
+        do not infer a carbonate reagent, zero dose, or final-medium dilution factor.
+        Existing chemical mappings and roles are preserved, not independently recertified.
+        Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00;
+        source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'
+  - preferred_term: Trisodium citrate
+    concentration:
+      value: '3'
+      unit: G_PER_L
+    notes: |-
+      TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+      3.0 g in the source preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.
+    term:
+      id: CHEBI:53258
+      label: sodium citrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53258
+      label: sodium citrate
+    physicochemical_roles:
+    - BUFFER
+    evidence:
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+      supports: SUPPORT
+      snippet: Trisodium citrate 3.0 g
+      explanation: |-
+        solutions[0].composition[3].concentration: 3.0 g in the source preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+        Additional exact excerpt: Trisodium citrate 3.0 g
+        solutions[0].composition[3].notes: 3.0 g in the source preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "Trisodium citrate",
+                  "volume": 3,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001160",
+                  "gmo_id": "GMO_001160",
+                  "label": "Trisodium citrate",
+                  "properties": [
+                    {
+                      "id": "GMO_000046",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                      "label": "Defined component"
+                    },
+                    {
+                      "id": "GMO_000041",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000041",
+                      "label": "Organic compound"
+                    },
+                    {
+                      "id": "GMO_000049",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                      "label": "Simple component"
+                    }
+                  ],
+                  "roles": [
+                    {
+                      "id": "GMO_000038",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000038",
+                      "label": "Buffer"
+                    }
+                  ]
+                }
+      explanation: 'solutions[0].composition[3].concentration: 3.0 g in the source
+        preparation brought to 1.0 L gives 3 G_PER_L. Separate exact volume excerpt:
+        "Add components to distilled water and bring volume to 1.0 L.". These concentrations
+        describe the prepared J168/M159 base, not an asserted post-titration final-medium
+        concentration. The recipe uses 1 L of prepared base and then adjusts pH to
+        8.0. The titrant identity, dose and resulting final volume are unspecified;
+        do not infer a carbonate reagent, zero dose, or final-medium dilution factor.
+        Existing chemical mappings and roles are preserved, not independently recertified.
+        Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00;
+        source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '20'
+      unit: G_PER_L
+    notes: |-
+      TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+      20.0 g in the source preparation brought to 1.0 L gives 20 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+    evidence:
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+      supports: SUPPORT
+      snippet: MgSO4·7H2O 20.0 g
+      explanation: |-
+        solutions[0].composition[4].concentration: 20.0 g in the source preparation brought to 1.0 L gives 20 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+        Additional exact excerpt: MgSO4·7H2O 20.0 g
+        solutions[0].composition[4].notes: 20.0 g in the source preparation brought to 1.0 L gives 20 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "MgSO4・7H2O",
+                  "volume": 20,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001002",
+                  "gmo_id": "GMO_001002",
+                  "label": "Magnesium sulfate heptahydrate",
+                  "properties": [
+                    {
+                      "id": "GMO_000040",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                      "label": "Inorganic compound"
+                    },
+                    {
+                      "id": "GMO_000049",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                      "label": "Simple component"
+                    },
+                    {
+                      "id": "GMO_000046",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                      "label": "Defined component"
+                    }
+                  ],
+                  "roles": [
+                    {
+                      "id": "GMO_000078",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000078",
+                      "label": "Mineral source"
+                    }
+                  ]
+                }
+      explanation: 'solutions[0].composition[4].concentration: 20.0 g in the source
+        preparation brought to 1.0 L gives 20 G_PER_L. Separate exact volume excerpt:
+        "Add components to distilled water and bring volume to 1.0 L.". These concentrations
+        describe the prepared J168/M159 base, not an asserted post-titration final-medium
+        concentration. The recipe uses 1 L of prepared base and then adjusts pH to
+        8.0. The titrant identity, dose and resulting final volume are unspecified;
+        do not infer a carbonate reagent, zero dose, or final-medium dilution factor.
+        Existing chemical mappings and roles are preserved, not independently recertified.
+        Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00;
+        source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'
+  - preferred_term: KCl
+    concentration:
+      value: '2'
+      unit: G_PER_L
+    notes: |-
+      TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+      2.0 g in the source preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+    evidence:
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+      supports: SUPPORT
+      snippet: KCl 2.0 g
+      explanation: |-
+        solutions[0].composition[5].concentration: 2.0 g in the source preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+        Additional exact excerpt: KCl 2.0 g
+        solutions[0].composition[5].notes: 2.0 g in the source preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "KCl",
+                  "volume": 2,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001017",
+                  "gmo_id": "GMO_001017",
+                  "label": "Potassium chloride",
+                  "properties": [
+                    {
+                      "id": "GMO_000049",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                      "label": "Simple component"
+                    },
+                    {
+                      "id": "GMO_000040",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                      "label": "Inorganic compound"
+                    },
+                    {
+                      "id": "GMO_000046",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                      "label": "Defined component"
+                    }
+                  ],
+                  "roles": [
+                    {
+                      "id": "GMO_000078",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000078",
+                      "label": "Mineral source"
+                    }
+                  ]
+                }
+      explanation: 'solutions[0].composition[5].concentration: 2.0 g in the source
+        preparation brought to 1.0 L gives 2 G_PER_L. Separate exact volume excerpt:
+        "Add components to distilled water and bring volume to 1.0 L.". These concentrations
+        describe the prepared J168/M159 base, not an asserted post-titration final-medium
+        concentration. The recipe uses 1 L of prepared base and then adjusts pH to
+        8.0. The titrant identity, dose and resulting final volume are unspecified;
+        do not infer a carbonate reagent, zero dose, or final-medium dilution factor.
+        Existing chemical mappings and roles are preserved, not independently recertified.
+        Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00;
+        source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'
+  - preferred_term: NaCl
+    concentration:
+      value: '200'
+      unit: G_PER_L
+    notes: |-
+      TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+      200.0 g in the source preparation brought to 1.0 L gives 200 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+    physicochemical_roles:
+    - OSMOTIC_AGENT
+    evidence:
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+      supports: SUPPORT
+      snippet: NaCl 200.0 g
+      explanation: |-
+        solutions[0].composition[6].concentration: 200.0 g in the source preparation brought to 1.0 L gives 200 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+        Additional exact excerpt: NaCl 200.0 g
+        solutions[0].composition[6].notes: 200.0 g in the source preparation brought to 1.0 L gives 200 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "NaCl",
+                  "volume": 200,
+                  "unit": "g",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001004",
+                  "gmo_id": "GMO_001004",
+                  "label": "Sodium chloride",
+                  "properties": [
+                    {
+                      "id": "GMO_000049",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                      "label": "Simple component"
+                    },
+                    {
+                      "id": "GMO_000046",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                      "label": "Defined component"
+                    },
+                    {
+                      "id": "GMO_000040",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                      "label": "Inorganic compound"
+                    }
+                  ],
+                  "roles": [
+                    {
+                      "id": "GMO_000078",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000078",
+                      "label": "Mineral source"
+                    }
+                  ]
+                }
+      explanation: 'solutions[0].composition[6].concentration: 200.0 g in the source
+        preparation brought to 1.0 L gives 200 G_PER_L. Separate exact volume excerpt:
+        "Add components to distilled water and bring volume to 1.0 L.". These concentrations
+        describe the prepared J168/M159 base, not an asserted post-titration final-medium
+        concentration. The recipe uses 1 L of prepared base and then adjusts pH to
+        8.0. The titrant identity, dose and resulting final volume are unspecified;
+        do not infer a carbonate reagent, zero dose, or final-medium dilution factor.
+        Existing chemical mappings and roles are preserved, not independently recertified.
+        Exact captured recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00;
+        source SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'
+  - preferred_term: FeCl2 x 4 H2O
+    concentration:
+      value: '0.036'
+      unit: G_PER_L
+    notes: |-
+      TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+      36.0 mg in the source preparation brought to 1.0 L gives 0.036 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing g/L value is correct: convert mg to g by dividing by 1000, then divide by the explicit 1 L prepared-base volume. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.
+    term:
+      id: CHEBI:86249
+      label: iron dichloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86249
+      label: iron dichloride tetrahydrate
+    nutritional_roles:
+    - IRON_SOURCE
+    - TRACE_ELEMENT
+    evidence:
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+      supports: SUPPORT
+      snippet: FeCl2·4H2O 36.0 mg
+      explanation: |-
+        solutions[0].composition[7].concentration: 36.0 mg in the source preparation brought to 1.0 L gives 0.036 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing g/L value is correct: convert mg to g by dividing by 1000, then divide by the explicit 1 L prepared-base volume. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+        Additional exact excerpt: FeCl2·4H2O 36.0 mg
+        solutions[0].composition[7].notes: 36.0 mg in the source preparation brought to 1.0 L gives 0.036 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing g/L value is correct: convert mg to g by dividing by 1000, then divide by the explicit 1 L prepared-base volume. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "FeCl2・4H2O",
+                  "volume": 36,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001548",
+                  "gmo_id": "GMO_001548",
+                  "label": "Iron(II) chloride tetrahydrate",
+                  "properties": [
+                    {
+                      "id": "GMO_000046",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                      "label": "Defined component"
+                    },
+                    {
+                      "id": "GMO_000040",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                      "label": "Inorganic compound"
+                    },
+                    {
+                      "id": "GMO_000049",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                      "label": "Simple component"
+                    }
+                  ],
+                  "roles": [
+                    {
+                      "id": "GMO_000078",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000078",
+                      "label": "Mineral source"
+                    }
+                  ]
+                }
+      explanation: 'solutions[0].composition[7].concentration: 36.0 mg in the source
+        preparation brought to 1.0 L gives 0.036 G_PER_L. Separate exact volume excerpt:
+        "Add components to distilled water and bring volume to 1.0 L.". Existing g/L
+        value is correct: convert mg to g by dividing by 1000, then divide by the
+        explicit 1 L prepared-base volume. These concentrations describe the prepared
+        J168/M159 base, not an asserted post-titration final-medium concentration.
+        The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant
+        identity, dose and resulting final volume are unspecified; do not infer a
+        carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical
+        mappings and roles are preserved, not independently recertified. Exact captured
+        recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00; source
+        SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.00036'
+      unit: G_PER_L
+    notes: |-
+      TOGO M159 and JCM Medium 168 list this component for Halobacteria Medium; TOGO M1212 adjusts the prepared medium to pH 8.0.
+
+      0.36 mg in the source preparation brought to 1.0 L gives 0.00036 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing g/L value is correct: convert mg to g by dividing by 1000, then divide by the explicit 1 L prepared-base volume. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified.
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    nutritional_roles:
+    - TRACE_ELEMENT
+    evidence:
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+      supports: SUPPORT
+      snippet: MnCl2·4H2O 0.36 mg
+      explanation: |-
+        solutions[0].composition[8].concentration: 0.36 mg in the source preparation brought to 1.0 L gives 0.00036 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing g/L value is correct: convert mg to g by dividing by 1000, then divide by the explicit 1 L prepared-base volume. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+        Additional exact excerpt: MnCl2·4H2O 0.36 mg
+        solutions[0].composition[8].notes: 0.36 mg in the source preparation brought to 1.0 L gives 0.00036 G_PER_L. Separate exact volume excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing g/L value is correct: convert mg to g by dividing by 1000, then divide by the explicit 1 L prepared-base volume. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "MnCl2・4H2O",
+                  "volume": 0.36,
+                  "unit": "mg",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001020",
+                  "gmo_id": "GMO_001020",
+                  "label": "Manganese chloride tetrahydrate",
+                  "properties": [
+                    {
+                      "id": "GMO_000049",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                      "label": "Simple component"
+                    },
+                    {
+                      "id": "GMO_000040",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                      "label": "Inorganic compound"
+                    },
+                    {
+                      "id": "GMO_000046",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                      "label": "Defined component"
+                    }
+                  ],
+                  "roles": [
+                    {
+                      "id": "GMO_000078",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000078",
+                      "label": "Mineral source"
+                    }
+                  ]
+                }
+      explanation: 'solutions[0].composition[8].concentration: 0.36 mg in the source
+        preparation brought to 1.0 L gives 0.00036 G_PER_L. Separate exact volume
+        excerpt: "Add components to distilled water and bring volume to 1.0 L.". Existing
+        g/L value is correct: convert mg to g by dividing by 1000, then divide by
+        the explicit 1 L prepared-base volume. These concentrations describe the prepared
+        J168/M159 base, not an asserted post-titration final-medium concentration.
+        The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant
+        identity, dose and resulting final volume are unspecified; do not infer a
+        carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical
+        mappings and roles are preserved, not independently recertified. Exact captured
+        recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00; source
+        SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'
+  - preferred_term: distilled water
+    notes: Water makes the preparation up to 1.0 L. Its separate input volume and
+      mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported.
+      These concentrations describe the prepared J168/M159 base, not an asserted post-titration
+      final-medium concentration. The recipe uses 1 L of prepared base and then adjusts
+      pH to 8.0. The titrant identity, dose and resulting final volume are unspecified;
+      do not infer a carbonate reagent, zero dose, or final-medium dilution factor.
+      Existing chemical mappings and roles are preserved, not independently recertified.
+    evidence:
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+      supports: SUPPORT
+      snippet: Add components to distilled water and bring volume to 1.0 L.
+      explanation: |-
+        solutions[0].composition[9].concentration: Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+        Additional exact excerpt: Add components to distilled water and bring volume to 1.0 L.
+        solutions[0].composition[9].notes: Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+
+        Additional exact excerpt: Add components to distilled water and bring volume to 1.0 L.
+        solutions[0].composition[9].preferred_term: Water makes the preparation up to 1.0 L. Its separate input volume and mass are unspecified; neither 1 g/L nor a fixed 1 L water dose is supported. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.
+    - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M159
+      supports: SUPPORT
+      snippet: |-
+        {
+                  "component_name": "distilled water",
+                  "volume": 1,
+                  "unit": "L",
+                  "gmo": "http://purl.jp/bio/10/gmo/GMO_001001",
+                  "gmo_id": "GMO_001001",
+                  "label": "Distilled water",
+                  "properties": [
+                    {
+                      "id": "GMO_000046",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+                      "label": "Defined component"
+                    },
+                    {
+                      "id": "GMO_000040",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+                      "label": "Inorganic compound"
+                    },
+                    {
+                      "id": "GMO_000049",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+                      "label": "Simple component"
+                    }
+                  ],
+                  "roles": [
+                    {
+                      "id": "GMO_000044",
+                      "uri": "http://purl.jp/bio/10/gmo/GMO_000044",
+                      "label": "Solvating media"
+                    }
+                  ]
+                }
+      explanation: 'solutions[0].composition[9].concentration: Water makes the preparation
+        up to 1.0 L. Its separate input volume and mass are unspecified; neither 1
+        g/L nor a fixed 1 L water dose is supported. These concentrations describe
+        the prepared J168/M159 base, not an asserted post-titration final-medium concentration.
+        The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant
+        identity, dose and resulting final volume are unspecified; do not infer a
+        carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical
+        mappings and roles are preserved, not independently recertified. Exact captured
+        recipe row/instruction; accessed=2026-10-09T12:44:04.113481+00:00; source
+        SHA256=cb8ca1ce5e81a6f12f6951a6175f0531bdeb51492d0fffa0fce61d81c404e739.'
+  concentration:
+    value: '1'
+    unit: L
+  notes: These concentrations describe the prepared J168/M159 base, not an asserted
+    post-titration final-medium concentration. The recipe uses 1 L of prepared base
+    and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume
+    are unspecified; do not infer a carbonate reagent, zero dose, or final-medium
+    dilution factor. Existing chemical mappings and roles are preserved, not independently
+    recertified.
+  preparation_notes: |-
+    Add components to distilled water and bring volume to 1.0 L.
+    Adjust pH to 7.0-7.2.
+    For preparation of solid medium, add 20.0 g/L agar.
+evidence:
+- reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1212
+  supports: SUPPORT
+  snippet: |-
+    {
+              "component_name": "Halobacteria medium (see Medium [M159])",
+              "volume": 1,
+              "unit": "L",
+              "reference_media_id": "M159",
+              "properties": [],
+              "roles": []
+            }
+  explanation: |-
+    solutions[0].preferred_term: These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:31.428702+00:00; source SHA256=7ad86e619dec1d424011096d3f79b2698a5f8eadb748ff6fd4c2c307ca8c1084.
+
+    Additional exact excerpt: {
+              "component_name": "Halobacteria medium (see Medium [M159])",
+              "volume": 1,
+              "unit": "L",
+              "reference_media_id": "M159",
+              "properties": [],
+              "roles": []
+            }
+    solutions[0].name: These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:31.428702+00:00; source SHA256=7ad86e619dec1d424011096d3f79b2698a5f8eadb748ff6fd4c2c307ca8c1084.
+
+    Additional exact excerpt: {
+              "component_name": "Halobacteria medium (see Medium [M159])",
+              "volume": 1,
+              "unit": "L",
+              "reference_media_id": "M159",
+              "properties": [],
+              "roles": []
+            }
+    solutions[0].concentration: These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:31.428702+00:00; source SHA256=7ad86e619dec1d424011096d3f79b2698a5f8eadb748ff6fd4c2c307ca8c1084.
+
+    Additional exact excerpt: {
+              "component_name": "Halobacteria medium (see Medium [M159])",
+              "volume": 1,
+              "unit": "L",
+              "reference_media_id": "M159",
+              "properties": [],
+              "roles": []
+            }
+    solutions[0].notes: These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:31.428702+00:00; source SHA256=7ad86e619dec1d424011096d3f79b2698a5f8eadb748ff6fd4c2c307ca8c1084.
+
+    Additional exact excerpt: {
+              "component_name": "Halobacteria medium (see Medium [M159])",
+              "volume": 1,
+              "unit": "L",
+              "reference_media_id": "M159",
+              "properties": [],
+              "roles": []
+            }
+    solutions[0].composition: Relocate existing base constituents with their original mappings and roles into the prepared-base stage. These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:31.428702+00:00; source SHA256=7ad86e619dec1d424011096d3f79b2698a5f8eadb748ff6fd4c2c307ca8c1084.
+
+    Additional exact excerpt: {
+              "component_name": "Halobacteria medium (see Medium [M159])",
+              "volume": 1,
+              "unit": "L",
+              "reference_media_id": "M159",
+              "properties": [],
+              "roles": []
+            }
+    ingredients: Remove flattened direct ingredients after their evidence-backed relocation; do not double-count the base. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:31.428702+00:00; source SHA256=7ad86e619dec1d424011096d3f79b2698a5f8eadb748ff6fd4c2c307ca8c1084.
+
+    Additional exact excerpt: {
+          "paragraph_index": 2,
+          "comment": "Adjust pH to 8.0."
+        }
+    preparation_steps: Keep only the final adjustment at medium scope. Base make-up, its pH 7.0-7.2 and conditional agar preparation belong inside the prepared base, not after the pH-8 adjustment. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:31.428702+00:00; source SHA256=7ad86e619dec1d424011096d3f79b2698a5f8eadb748ff6fd4c2c307ca8c1084.
+
+    Additional exact excerpt: {
+          "paragraph_index": 2,
+          "comment": "Adjust pH to 8.0."
+        }
+    ph_value: Final source-explicit pH target; do not infer titrant identity or volume. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:31.428702+00:00; source SHA256=7ad86e619dec1d424011096d3f79b2698a5f8eadb748ff6fd4c2c307ca8c1084.
+
+    Additional exact excerpt: {
+              "component_name": "Halobacteria medium (see Medium [M159])",
+              "volume": 1,
+              "unit": "L",
+              "reference_media_id": "M159",
+              "properties": [],
+              "roles": []
+            }
+    notes: These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. The original JCM1132 is unavailable; this record is supported by its own TOGO M1212 source and the explicitly referenced M159/J168 base. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:31.428702+00:00; source SHA256=7ad86e619dec1d424011096d3f79b2698a5f8eadb748ff6fd4c2c307ca8c1084.
+
+    Additional exact excerpt: {
+              "component_name": "Halobacteria medium (see Medium [M159])",
+              "volume": 1,
+              "unit": "L",
+              "reference_media_id": "M159",
+              "properties": [],
+              "roles": []
+            }
+    parent_media: These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:31.428702+00:00; source SHA256=7ad86e619dec1d424011096d3f79b2698a5f8eadb748ff6fd4c2c307ca8c1084.
+
+    Additional exact excerpt: {
+              "component_name": "Halobacteria medium (see Medium [M159])",
+              "volume": 1,
+              "unit": "L",
+              "reference_media_id": "M159",
+              "properties": [],
+              "roles": []
+            }
+    variant_relationship: These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:31.428702+00:00; source SHA256=7ad86e619dec1d424011096d3f79b2698a5f8eadb748ff6fd4c2c307ca8c1084.
+
+    Additional exact excerpt: {
+              "component_name": "Halobacteria medium (see Medium [M159])",
+              "volume": 1,
+              "unit": "L",
+              "reference_media_id": "M159",
+              "properties": [],
+              "roles": []
+            }
+    variant_modifications: These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:31.428702+00:00; source SHA256=7ad86e619dec1d424011096d3f79b2698a5f8eadb748ff6fd4c2c307ca8c1084.
+
+    Additional exact excerpt: {
+          "paragraph_index": 2,
+          "comment": "Adjust pH to 8.0."
+        }
+    parent_media: These concentrations describe the prepared J168/M159 base, not an asserted post-titration final-medium concentration. The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity, dose and resulting final volume are unspecified; do not infer a carbonate reagent, zero dose, or final-medium dilution factor. Existing chemical mappings and roles are preserved, not independently recertified. Exact captured recipe row/instruction; accessed=2026-10-09T13:07:31.428702+00:00; source SHA256=7ad86e619dec1d424011096d3f79b2698a5f8eadb748ff6fd4c2c307ca8c1084.
+- reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=168
+  supports: SUPPORT
+  snippet: Add components to distilled water and bring volume to 1.0 L.
+  explanation: 'solutions[0].preparation_notes: These concentrations describe the
+    prepared J168/M159 base, not an asserted post-titration final-medium concentration.
+    The recipe uses 1 L of prepared base and then adjusts pH to 8.0. The titrant identity,
+    dose and resulting final volume are unspecified; do not infer a carbonate reagent,
+    zero dose, or final-medium dilution factor. Existing chemical mappings and roles
+    are preserved, not independently recertified. Separate preparation excerpts: "Adjust
+    pH to 7.0-7.2."; "For preparation of solid medium, add 20.0 g/L agar.". Exact
+    captured recipe row/instruction; accessed=2026-10-09T12:44:06.144190+00:00; source
+    SHA256=d10b7b1b2e03121103a60f5db9f8e07bc2a1fe84304acbe8c91fe9cadb64bf58.'

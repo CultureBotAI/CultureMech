@@ -1,0 +1,29 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "tests_modified_in_repo": false,
+  "all_record_goal_complete": false,
+  "checks": [
+    {
+      "command": [
+        "/tmp/culturemech-goal-py313-20261007/bin/python",
+        "-m",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "/tmp/ingredient-media-20261007/schema-history-candidate/tests/test_repair_komodo_829_desulfurobacterium_ph_score10.py"
+      ],
+      "exit_code": 0,
+      "log": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/ingredient_concentration_curation/20261009-solution-evidence-schema/legacy829-candidate-tests-v2.log",
+      "log_sha256": "7574f4fcbfe9bea424288c7f66d47cd4a1d3ffaea0c73c1c0cf74c797a3c403f"
+    }
+  ],
+  "errors": [],
+  "candidate_sha256": {
+    "/tmp/ingredient-media-20261007/schema-history-candidate/tests/test_repair_komodo_829_desulfurobacterium_ph_score10.py": "0caf0c54d422ee94d0ef7cec3d04eede4d43d20fa317eeb14add64cc2ac1eb21"
+  },
+  "original_sha256": {
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/tests/test_repair_komodo_829_desulfurobacterium_ph_score10.py": "daa7a98fb478e1bb07e77ed013e8e250a1f3a21f7d23f606bd855de3cd1d41eb"
+  }
+}

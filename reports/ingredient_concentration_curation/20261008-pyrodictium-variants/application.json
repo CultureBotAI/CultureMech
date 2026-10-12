@@ -1,0 +1,67 @@
+{
+  "audit": {
+    "M196": {
+      "unsupported_quantity_slots_removed": 7,
+      "stock_dose_basis_corrections": 3,
+      "new_quantity_slots": 2,
+      "duplicate_stock_nodes_removed": 1,
+      "variant_links_added": 2,
+      "new_evidence": 42,
+      "new_references": 6,
+      "new_curation_history": 1,
+      "old_quantity_slots": 11,
+      "claims": 60,
+      "source_rows": 38
+    },
+    "M197": {
+      "unsupported_quantity_slots_removed": 6,
+      "explicit_medium_rates_verified": 1,
+      "quantity_corrections": 0,
+      "stock_dose_basis_corrections": 3,
+      "new_quantity_slots": 2,
+      "variant_links_added": 1,
+      "new_evidence": 43,
+      "new_references": 5,
+      "new_curation_history": 1,
+      "old_quantity_slots": 10,
+      "claims": 61,
+      "source_rows": 36
+    },
+    "M198": {
+      "unsupported_quantity_slots_removed": 6,
+      "explicit_medium_rates_verified": 2,
+      "quantity_corrections": 1,
+      "stock_dose_basis_corrections": 3,
+      "new_quantity_slots": 2,
+      "variant_links_added": 1,
+      "new_evidence": 45,
+      "new_references": 5,
+      "new_curation_history": 1,
+      "old_quantity_slots": 11,
+      "claims": 63,
+      "source_rows": 37
+    }
+  },
+  "terminal": true,
+  "application": {
+    "mode": "apply",
+    "records": 3,
+    "changed": 3,
+    "already_applied": 0,
+    "claims": 184
+  },
+  "verification": {
+    "mode": "verify",
+    "records": 3,
+    "changed": 0,
+    "already_applied": 3,
+    "claims": 184
+  },
+  "no_op_rerun": {
+    "mode": "apply",
+    "records": 3,
+    "changed": 0,
+    "already_applied": 3,
+    "claims": 184
+  }
+}

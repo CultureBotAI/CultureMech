@@ -1,0 +1,69 @@
+{
+  "definition": "Exact equality for complete ingredients/stocks/preparation/physical-state/pH structures, including ingredient evidence. Root evidence and bibliography may add unique-reference entries but must retain every source entry completely unchanged. This is not formulation-aware merging for other groups.",
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_12_SOIL_EXTRACT_medium.yaml",
+      "id": "CultureMech:004048",
+      "fingerprint": "f0b7050edfa4bb9fb94b01ee5d1bb8a367c177f1cb7709f1514302b28f1209ec",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_12_SOIL_EXTRACT_medium.yaml",
+        "data/normalized_yaml/bacterial/soil_extract_medium.yaml"
+      ],
+      "merged_id": "CultureMech:004048",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "physical_state": true,
+        "ph_range": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true
+      },
+      "all_checked_fields_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/soil_extract_medium.yaml",
+      "id": "CultureMech:000762",
+      "fingerprint": "f0b7050edfa4bb9fb94b01ee5d1bb8a367c177f1cb7709f1514302b28f1209ec",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/KOMODO_12_SOIL_EXTRACT_medium.yaml",
+        "data/normalized_yaml/bacterial/soil_extract_medium.yaml"
+      ],
+      "merged_id": "CultureMech:004048",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "physical_state": true,
+        "ph_range": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true
+      },
+      "all_checked_fields_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/cow_manure_agar.yaml",
+      "id": "CultureMech:001794",
+      "fingerprint": "4d38254d4646c7dafe2a38aa06a9187c268d7d355df08c4b7ca6986747af1469",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/cow_manure_agar.yaml"
+      ],
+      "merged_id": "CultureMech:001794",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "physical_state": true,
+        "ph_range": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true
+      },
+      "all_checked_fields_retained": true
+    }
+  ],
+  "retained": 3,
+  "all_retained": true
+}

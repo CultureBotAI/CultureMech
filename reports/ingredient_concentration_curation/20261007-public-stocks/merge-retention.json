@@ -1,0 +1,45 @@
+{
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/taiyang_medium_no_9_prototype.yaml",
+      "fingerprint": "f44d6509f0cc4038347972aa73104cdf08dfe15218ea16fd5b168b245d982350",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/taiyang_medium_no_9_prototype.yaml"
+      ],
+      "merged_id": "CultureMech:010432",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "physical_state": true,
+        "ph_range": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true
+      },
+      "all_checked_fields_retained": true
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/m9_sng_medium.yaml",
+      "fingerprint": "18b11a0133c662bdfb8830fecc5dda6dd8d15491054cf1932eb895056c764c60",
+      "group_paths": [
+        "data/normalized_yaml/bacterial/m9_sng_medium.yaml"
+      ],
+      "merged_id": "CultureMech:010438",
+      "field_retention": {
+        "ingredients": true,
+        "solutions": true,
+        "preparation_steps": true,
+        "physical_state": true,
+        "ph_range": true,
+        "ph_value": true,
+        "evidence": true,
+        "references": true
+      },
+      "all_checked_fields_retained": true
+    }
+  ],
+  "retained": 2,
+  "all_retained": true,
+  "scope": "Actual complete corpus groups. No generated merge published."
+}

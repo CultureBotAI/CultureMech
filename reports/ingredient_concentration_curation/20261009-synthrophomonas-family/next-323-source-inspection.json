@@ -1,0 +1,1320 @@
+{
+  "terminal": true,
+  "records_edited": 0,
+  "review_complete": false,
+  "all_record_goal_complete": false,
+  "capture_receipt_sha256": "8c802303cf38982bebc07777a71a7d2dab5d4c01d44c0cc1d1c8136d866a39a4",
+  "normalized_sha256": "3e69263bb0c82e782c51c5a994945630fbf3a3b9f685248e16d7daf3367f05fc",
+  "manual_visual_review": {
+    "image": "/tmp/ingredient-media-20261007/next323-DSMZ323-1.png",
+    "image_sha256": "d5ace6d27b4b36d948a916a971af308640b9fecdbf291677efecdaf9e1f2fd3a",
+    "pdf_sha256": "a9612ce4a0d0ab3cb0b8ec6924aa5076f1988dc4bc059a773dceb6898e2dceb7",
+    "pages_inspected": [
+      1
+    ],
+    "amount_columns_and_units_checked": true
+  },
+  "pdf_rows": [
+    {
+      "stage": "main formulation",
+      "label": "CaCl2 x 2 H2O",
+      "amount": "0.12",
+      "unit": "g",
+      "page": 1,
+      "extracted_line": 7,
+      "snippet": "CaCl2 x 2 H2O                                                      0.12          g",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "main formulation",
+      "label": "MgSO4 x 7 H2O",
+      "amount": "0.19",
+      "unit": "g",
+      "page": 1,
+      "extracted_line": 8,
+      "snippet": "MgSO4 x 7 H2O                                                      0.19          g",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "main formulation",
+      "label": "KH2PO4",
+      "amount": "0.45",
+      "unit": "g",
+      "page": 1,
+      "extracted_line": 9,
+      "snippet": "KH2PO4                                                             0.45          g",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "main formulation",
+      "label": "K2HPO4",
+      "amount": "0.45",
+      "unit": "g",
+      "page": 1,
+      "extracted_line": 10,
+      "snippet": "K2HPO4                                                             0.45          g",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "main formulation",
+      "label": "NaCl",
+      "amount": "0.90",
+      "unit": "g",
+      "page": 1,
+      "extracted_line": 11,
+      "snippet": "NaCl                                                               0.90          g",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "main formulation",
+      "label": "(NH4)2SO4",
+      "amount": "0.90",
+      "unit": "g",
+      "page": 1,
+      "extracted_line": 12,
+      "snippet": "(NH4)2SO4                                                          0.90          g",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "main formulation",
+      "label": "Yeast extract (OXOID)",
+      "amount": "2.00",
+      "unit": "g",
+      "page": 1,
+      "extracted_line": 13,
+      "snippet": "Yeast extract (OXOID)                                              2.00          g",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "main formulation",
+      "label": "Trypticase peptone (BD BBL)",
+      "amount": "2.00",
+      "unit": "g",
+      "page": 1,
+      "extracted_line": 14,
+      "snippet": "Trypticase peptone (BD BBL)                                        2.00          g",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "main formulation",
+      "label": "Fatty acid mixture",
+      "amount": "1.40",
+      "unit": "ml",
+      "page": 1,
+      "extracted_line": 15,
+      "snippet": "Fatty acid mixture                                                 1.40        ml",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "main formulation",
+      "label": "Sodium resazurin (0.1% w/v)",
+      "amount": "0.50",
+      "unit": "ml",
+      "page": 1,
+      "extracted_line": 16,
+      "snippet": "Sodium resazurin (0.1% w/v)                                        0.50        ml",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "main formulation",
+      "label": "L-Cysteine HCl x H2O",
+      "amount": "1.00",
+      "unit": "g",
+      "page": 1,
+      "extracted_line": 17,
+      "snippet": "L-Cysteine HCl x H2O                                               1.00          g",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "main formulation",
+      "label": "Na2CO3",
+      "amount": "2.50",
+      "unit": "g",
+      "page": 1,
+      "extracted_line": 18,
+      "snippet": "Na2CO3                                                             2.50          g",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "main formulation",
+      "label": "D-Glucose",
+      "amount": "2.00",
+      "unit": "g",
+      "page": 1,
+      "extracted_line": 19,
+      "snippet": "D-Glucose                                                          2.00          g",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "main formulation",
+      "label": "Agar (BD Bacto), for solid medium",
+      "amount": "12.00",
+      "unit": "g",
+      "page": 1,
+      "extracted_line": 20,
+      "snippet": "Agar (BD Bacto), for solid medium                                 12.00          g",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "main formulation",
+      "label": "Distilled water",
+      "amount": "1000.00",
+      "unit": "ml",
+      "page": 1,
+      "extracted_line": 21,
+      "snippet": "Distilled water                                                1000.00         ml",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "Fatty acid mixture",
+      "label": "n-Butyric acid",
+      "amount": "5.80",
+      "unit": "ml",
+      "page": 1,
+      "extracted_line": 35,
+      "snippet": "n-Butyric acid                                                     5.80        ml",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "Fatty acid mixture",
+      "label": "iso-Butyric acid",
+      "amount": "5.80",
+      "unit": "ml",
+      "page": 1,
+      "extracted_line": 36,
+      "snippet": "iso-Butyric acid                                                   5.80        ml",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "Fatty acid mixture",
+      "label": "DL-2-Methylbutyric acid",
+      "amount": "2.80",
+      "unit": "ml",
+      "page": 1,
+      "extracted_line": 37,
+      "snippet": "DL-2-Methylbutyric acid                                            2.80        ml",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "Fatty acid mixture",
+      "label": "n-Valeric acid",
+      "amount": "2.80",
+      "unit": "ml",
+      "page": 1,
+      "extracted_line": 38,
+      "snippet": "n-Valeric acid                                                     2.80        ml",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    },
+    {
+      "stage": "Fatty acid mixture",
+      "label": "iso-Valeric acid",
+      "amount": "2.80",
+      "unit": "ml",
+      "page": 1,
+      "extracted_line": 39,
+      "snippet": "iso-Valeric acid                                                   2.80        ml",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf"
+    }
+  ],
+  "komodo_rows": [
+    [
+      "NaHCO3",
+      "sodium bicarbonate",
+      "SEED-cpd00242#cpd00971#cpd09249#",
+      "5.67",
+      "0.07"
+    ],
+    [
+      "iso-Valeric acid",
+      "iso-Valeric acid",
+      "SEED-cpd05178###",
+      "null",
+      "null"
+    ],
+    [
+      "DL-2-Methylbutyric acid",
+      "DL-2-Methylbutyric acid",
+      "2-Methylbutyric acid#",
+      "null",
+      "null"
+    ],
+    [
+      "H2O",
+      "H2O",
+      "SEED-cpd00001###",
+      "null",
+      "null"
+    ],
+    [
+      "KOH",
+      "KOH",
+      "SEED-cpd00001#cpd00205##",
+      "null",
+      "null"
+    ],
+    [
+      "Cysteine-HCl x H2O",
+      "Cysteine-HCl",
+      "SEED-cpd00084#cpd00099##",
+      "1.13",
+      "0.01"
+    ],
+    [
+      "Yeast extract (Oxoid)",
+      "Yeast extract",
+      "rich-peptone#",
+      "2.27",
+      "null"
+    ],
+    [
+      "CO2",
+      "CO2",
+      "SEED-cpd00011###",
+      "null",
+      "null"
+    ],
+    [
+      "Distilled water",
+      "H2O",
+      "SEED-cpd00001###",
+      "null",
+      "null"
+    ],
+    [
+      "K2HPO4",
+      "di Potassium hydrogen phosphate",
+      "SEED-cpd00009#cpd00205##",
+      "0.51",
+      "0.00"
+    ],
+    [
+      "KH2PO4",
+      "Potassium dihydrogen phosphate",
+      "SEED-cpd00009#cpd00205##",
+      "0.51",
+      "0.00"
+    ],
+    [
+      "Glucose",
+      "D-Glucose",
+      "SEED-cpd00027###",
+      "2.27",
+      "0.01"
+    ],
+    [
+      "iso-Butyric acid",
+      "iso-Butyric acid",
+      "SEED-cpd01711###",
+      "null",
+      "null"
+    ],
+    [
+      "n-Valeric acid",
+      "n-Valeric acid",
+      "SEED-cpd00597###",
+      "null",
+      "null"
+    ],
+    [
+      "MgSO4 x 7 H2O",
+      "Magnesium sulfate",
+      "SEED-cpd00048#cpd00254##",
+      "0.22",
+      "0.00"
+    ],
+    [
+      "CaCl2 x 2 H2O",
+      "Calcium chloride",
+      "SEED-cpd00063#cpd00099##",
+      "0.13",
+      "0.00"
+    ],
+    [
+      "n-Butyric acid",
+      "n-Butyric acid",
+      "SEED-cpd00211###",
+      "null",
+      "null"
+    ],
+    [
+      "Resazurin",
+      "Resazurin",
+      "SEED-cpd08053###",
+      "1.13E-3",
+      "4.95E-6"
+    ],
+    [
+      "NaCl",
+      "NaCl",
+      "SEED-cpd00099#cpd00971##",
+      "1.02",
+      "0.02"
+    ],
+    [
+      "Trypticase (BBL)",
+      "Trypticase",
+      "rich-peptone#",
+      "2.27",
+      "null"
+    ],
+    [
+      "(NH4)2SO4",
+      "Ammonium sulfate",
+      "SEED-cpd00013#cpd00048##",
+      "1.02",
+      "0.01"
+    ]
+  ],
+  "komodo_null_count": 9,
+  "parent_stock_comparisons": [
+    {
+      "stock": "S599",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "rows": 15
+    },
+    {
+      "stock": "S6552",
+      "name_matches": true,
+      "recipe_nonnull_fields_match": true,
+      "rows": 5
+    }
+  ],
+  "prior_quantities": [
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        0,
+        "concentration"
+      ],
+      "label": "CaCl2 x 2 H2O",
+      "old": {
+        "value": "0.11976",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        1,
+        "concentration"
+      ],
+      "label": "MgSO4 x 7 H2O",
+      "old": {
+        "value": "0.189621",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        2,
+        "concentration"
+      ],
+      "label": "KH2PO4",
+      "old": {
+        "value": "0.449102",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        3,
+        "concentration"
+      ],
+      "label": "K2HPO4",
+      "old": {
+        "value": "0.449102",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        4,
+        "concentration"
+      ],
+      "label": "NaCl",
+      "old": {
+        "value": "0.898204",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        5,
+        "concentration"
+      ],
+      "label": "(NH4)2SO4",
+      "old": {
+        "value": "0.898204",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        6,
+        "concentration"
+      ],
+      "label": "Yeast extract",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        7,
+        "concentration"
+      ],
+      "label": "Trypticase peptone",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        8,
+        "concentration"
+      ],
+      "label": "Sodium resazurin",
+      "old": {
+        "value": "0.000499002",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        9,
+        "concentration"
+      ],
+      "label": "L-Cysteine HCl x H2O",
+      "old": {
+        "value": "0.998004",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        10,
+        "concentration"
+      ],
+      "label": "Na2CO3",
+      "old": {
+        "value": "2.49501",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        11,
+        "concentration"
+      ],
+      "label": "D-Glucose",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        12,
+        "concentration"
+      ],
+      "label": "Agar",
+      "old": {
+        "value": "11.976",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        13,
+        "concentration"
+      ],
+      "label": "n-Butyric acid",
+      "old": {
+        "value": "5.8",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        14,
+        "concentration"
+      ],
+      "label": "iso-Butyric acid",
+      "old": {
+        "value": "275.5",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        15,
+        "concentration"
+      ],
+      "label": "Tryptone",
+      "old": {
+        "value": "10.0",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        16,
+        "concentration"
+      ],
+      "label": "Yeast extract",
+      "old": {
+        "value": "5.0",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        17,
+        "concentration"
+      ],
+      "label": "Sodium chloride",
+      "old": {
+        "value": "10.0",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        18,
+        "concentration"
+      ],
+      "label": "n-Valeric acid",
+      "old": {
+        "value": "131.46",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        19,
+        "concentration"
+      ],
+      "label": "iso-Valeric acid",
+      "old": {
+        "value": "130.34",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_323_TREPONEMA_SACCHAROPHILUM_medium.yaml",
+      "pointer": [
+        "ingredients",
+        20,
+        "concentration"
+      ],
+      "label": "KOH",
+      "old": {
+        "value": "variable",
+        "unit": "VARIABLE"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "ingredients",
+        0,
+        "concentration"
+      ],
+      "label": "See source for composition",
+      "old": {
+        "value": "variable",
+        "unit": "VARIABLE"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        0,
+        "concentration"
+      ],
+      "label": "CaCl2 x 2 H2O",
+      "old": {
+        "value": "0.11976",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        1,
+        "concentration"
+      ],
+      "label": "MgSO4 x 7 H2O",
+      "old": {
+        "value": "0.189621",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        2,
+        "concentration"
+      ],
+      "label": "KH2PO4",
+      "old": {
+        "value": "0.449102",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        3,
+        "concentration"
+      ],
+      "label": "K2HPO4",
+      "old": {
+        "value": "0.449102",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        4,
+        "concentration"
+      ],
+      "label": "NaCl",
+      "old": {
+        "value": "0.898204",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        5,
+        "concentration"
+      ],
+      "label": "(NH4)2SO4",
+      "old": {
+        "value": "0.898204",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        6,
+        "concentration"
+      ],
+      "label": "Yeast extract",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        7,
+        "concentration"
+      ],
+      "label": "Trypticase peptone",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        8,
+        "concentration"
+      ],
+      "label": "Sodium resazurin",
+      "old": {
+        "value": "0.000499002",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        9,
+        "concentration"
+      ],
+      "label": "L-Cysteine HCl x H2O",
+      "old": {
+        "value": "0.998004",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        10,
+        "concentration"
+      ],
+      "label": "Na2CO3",
+      "old": {
+        "value": "2.49501",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        11,
+        "concentration"
+      ],
+      "label": "D-Glucose",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        12,
+        "concentration"
+      ],
+      "label": "Agar",
+      "old": {
+        "value": "11.976",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        13,
+        "concentration"
+      ],
+      "label": "Distilled water",
+      "old": {
+        "value": "998.003992015968",
+        "unit": "PERCENT_V_V"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "pointer": [
+        "ingredients",
+        0,
+        "concentration"
+      ],
+      "label": "See source for composition",
+      "old": {
+        "value": "variable",
+        "unit": "VARIABLE"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "pointer": [
+        "composition",
+        0,
+        "concentration"
+      ],
+      "label": "n-Butyric acid",
+      "old": {
+        "value": "290.0",
+        "unit": "PERCENT_V_V"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "pointer": [
+        "composition",
+        1,
+        "concentration"
+      ],
+      "label": "iso-Butyric acid",
+      "old": {
+        "value": "275.5",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "pointer": [
+        "composition",
+        2,
+        "concentration"
+      ],
+      "label": "DL-2-Methylbutyric acid",
+      "old": {
+        "value": "140.0",
+        "unit": "PERCENT_V_V"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "pointer": [
+        "composition",
+        3,
+        "concentration"
+      ],
+      "label": "n-Valeric acid",
+      "old": {
+        "value": "131.46",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_6552_Fatty_acid_mixture.yaml",
+      "pointer": [
+        "composition",
+        4,
+        "concentration"
+      ],
+      "label": "iso-Valeric acid",
+      "old": {
+        "value": "130.34",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        0,
+        "concentration"
+      ],
+      "label": "CaCl2 x 2 H2O",
+      "old": {
+        "value": "0.11976",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        1,
+        "concentration"
+      ],
+      "label": "MgSO4 x 7 H2O",
+      "old": {
+        "value": "0.189621",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        2,
+        "concentration"
+      ],
+      "label": "KH2PO4",
+      "old": {
+        "value": "0.449102",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        3,
+        "concentration"
+      ],
+      "label": "K2HPO4",
+      "old": {
+        "value": "0.449102",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        4,
+        "concentration"
+      ],
+      "label": "NaCl",
+      "old": {
+        "value": "0.898204",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        5,
+        "concentration"
+      ],
+      "label": "(NH4)2SO4",
+      "old": {
+        "value": "0.898204",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        6,
+        "concentration"
+      ],
+      "label": "Yeast extract",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        7,
+        "concentration"
+      ],
+      "label": "Trypticase peptone",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        8,
+        "concentration"
+      ],
+      "label": "Sodium resazurin",
+      "old": {
+        "value": "0.000499002",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        9,
+        "concentration"
+      ],
+      "label": "L-Cysteine HCl x H2O",
+      "old": {
+        "value": "0.998004",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        10,
+        "concentration"
+      ],
+      "label": "Na2CO3",
+      "old": {
+        "value": "2.49501",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        11,
+        "concentration"
+      ],
+      "label": "D-Glucose",
+      "old": {
+        "value": "1.99601",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        12,
+        "concentration"
+      ],
+      "label": "Agar",
+      "old": {
+        "value": "11.976",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        13,
+        "concentration"
+      ],
+      "label": "n-Butyric acid",
+      "old": {
+        "value": "5.8",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        14,
+        "concentration"
+      ],
+      "label": "iso-Butyric acid",
+      "old": {
+        "value": "275.5",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        15,
+        "concentration"
+      ],
+      "label": "Tryptone",
+      "old": {
+        "value": "10.0",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        16,
+        "concentration"
+      ],
+      "label": "Yeast extract",
+      "old": {
+        "value": "5.0",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        17,
+        "concentration"
+      ],
+      "label": "Sodium chloride",
+      "old": {
+        "value": "10.0",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        18,
+        "concentration"
+      ],
+      "label": "n-Valeric acid",
+      "old": {
+        "value": "131.46",
+        "unit": "G_PER_L"
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/treponema_saccharophilum_medium.yaml",
+      "pointer": [
+        "ingredients",
+        19,
+        "concentration"
+      ],
+      "label": "iso-Valeric acid",
+      "old": {
+        "value": "130.34",
+        "unit": "G_PER_L"
+      }
+    }
+  ],
+  "prior_evidence_to_preserve": [
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        0
+      ],
+      "evidence": {
+        "reference": "https://mediadive.dsmz.de/rest/solution/599",
+        "supports": "SUPPORT",
+        "snippet": "{\n                \"recipe_order\": 1,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.12,\n                \"unit\": \"g\",\n                \"g_l\": 0.11976,\n                \"mmol_l\": 0.814614,\n                \"optional\": 0\n            }",
+        "explanation": "Concentration evidence for composition[0].concentration (CaCl2 x 2 H2O) in MediaDive solution 599; locator=$.data.recipe[0] (compound_id=7). Provider explicitly reports g_l=0.11976. Arithmetic check: 0.12 g * 1 g/g / (1002 ml / 1000 ml per L) = 0.1197604790419161676646706587 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1002. Retrieved 2026-10-07T08:25:03.840787+00:00; response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647."
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        1
+      ],
+      "evidence": {
+        "reference": "https://mediadive.dsmz.de/rest/solution/599",
+        "supports": "SUPPORT",
+        "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.19,\n                \"unit\": \"g\",\n                \"g_l\": 0.189621,\n                \"mmol_l\": 0.769327,\n                \"optional\": 0\n            }",
+        "explanation": "Concentration evidence for composition[1].concentration (MgSO4 x 7 H2O) in MediaDive solution 599; locator=$.data.recipe[1] (compound_id=8). Provider explicitly reports g_l=0.189621. Arithmetic check: 0.19 g * 1 g/g / (1002 ml / 1000 ml per L) = 0.1896207584830339321357285429 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1002. Retrieved 2026-10-07T08:25:03.840787+00:00; response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647."
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        2
+      ],
+      "evidence": {
+        "reference": "https://mediadive.dsmz.de/rest/solution/599",
+        "supports": "SUPPORT",
+        "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.45,\n                \"unit\": \"g\",\n                \"g_l\": 0.449102,\n                \"mmol_l\": 3.30016,\n                \"optional\": 0\n            }",
+        "explanation": "Concentration evidence for composition[2].concentration (KH2PO4) in MediaDive solution 599; locator=$.data.recipe[2] (compound_id=11). Provider explicitly reports g_l=0.449102. Arithmetic check: 0.45 g * 1 g/g / (1002 ml / 1000 ml per L) = 0.4491017964071856287425149701 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1002. Retrieved 2026-10-07T08:25:03.840787+00:00; response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647."
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        3
+      ],
+      "evidence": {
+        "reference": "https://mediadive.dsmz.de/rest/solution/599",
+        "supports": "SUPPORT",
+        "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"K2HPO4\",\n                \"compound_id\": 10,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.45,\n                \"unit\": \"g\",\n                \"g_l\": 0.449102,\n                \"mmol_l\": 2.57844,\n                \"optional\": 0\n            }",
+        "explanation": "Concentration evidence for composition[3].concentration (K2HPO4) in MediaDive solution 599; locator=$.data.recipe[3] (compound_id=10). Provider explicitly reports g_l=0.449102. Arithmetic check: 0.45 g * 1 g/g / (1002 ml / 1000 ml per L) = 0.4491017964071856287425149701 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1002. Retrieved 2026-10-07T08:25:03.840787+00:00; response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647."
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        4
+      ],
+      "evidence": {
+        "reference": "https://mediadive.dsmz.de/rest/solution/599",
+        "supports": "SUPPORT",
+        "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.9,\n                \"unit\": \"g\",\n                \"g_l\": 0.898204,\n                \"mmol_l\": 15.3697,\n                \"optional\": 0\n            }",
+        "explanation": "Concentration evidence for composition[4].concentration (NaCl) in MediaDive solution 599; locator=$.data.recipe[4] (compound_id=43). Provider explicitly reports g_l=0.898204. Arithmetic check: 0.9 g * 1 g/g / (1002 ml / 1000 ml per L) = 0.8982035928143712574850299401 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1002. Retrieved 2026-10-07T08:25:03.840787+00:00; response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647."
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        5
+      ],
+      "evidence": {
+        "reference": "https://mediadive.dsmz.de/rest/solution/599",
+        "supports": "SUPPORT",
+        "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.9,\n                \"unit\": \"g\",\n                \"g_l\": 0.898204,\n                \"mmol_l\": 6.79736,\n                \"optional\": 0\n            }",
+        "explanation": "Concentration evidence for composition[5].concentration ((NH4)2SO4) in MediaDive solution 599; locator=$.data.recipe[5] (compound_id=27). Provider explicitly reports g_l=0.898204. Arithmetic check: 0.9 g * 1 g/g / (1002 ml / 1000 ml per L) = 0.8982035928143712574850299401 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1002. Retrieved 2026-10-07T08:25:03.840787+00:00; response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647."
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        9
+      ],
+      "evidence": {
+        "reference": "https://mediadive.dsmz.de/rest/solution/599",
+        "supports": "SUPPORT",
+        "snippet": "{\n                \"recipe_order\": 16,\n                \"compound\": \"L-Cysteine HCl x H2O\",\n                \"compound_id\": 770,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 0.998004,\n                \"mmol_l\": 5.68223,\n                \"optional\": 0\n            }",
+        "explanation": "Concentration evidence for composition[9].concentration (L-Cysteine HCl x H2O) in MediaDive solution 599; locator=$.data.recipe[10] (compound_id=770). Provider explicitly reports g_l=0.998004. Arithmetic check: 1 g * 1 g/g / (1002 ml / 1000 ml per L) = 0.9980039920159680638722554890 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1002. Retrieved 2026-10-07T08:25:03.840787+00:00; response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647."
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        10
+      ],
+      "evidence": {
+        "reference": "https://mediadive.dsmz.de/rest/solution/599",
+        "supports": "SUPPORT",
+        "snippet": "{\n                \"recipe_order\": 17,\n                \"compound\": \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.5,\n                \"unit\": \"g\",\n                \"g_l\": 2.49501,\n                \"mmol_l\": 23.5405,\n                \"optional\": 0\n            }",
+        "explanation": "Concentration evidence for composition[10].concentration (Na2CO3) in MediaDive solution 599; locator=$.data.recipe[11] (compound_id=32). Provider explicitly reports g_l=2.49501. Arithmetic check: 2.5 g * 1 g/g / (1002 ml / 1000 ml per L) = 2.495009980039920159680638723 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1002. Retrieved 2026-10-07T08:25:03.840787+00:00; response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647."
+      }
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mediadive_599_Main_sol_323.yaml",
+      "pointer": [
+        "composition",
+        11
+      ],
+      "evidence": {
+        "reference": "https://mediadive.dsmz.de/rest/solution/599",
+        "supports": "SUPPORT",
+        "snippet": "{\n                \"recipe_order\": 18,\n                \"compound\": \"D-Glucose\",\n                \"compound_id\": 211,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"g\",\n                \"g_l\": 1.99601,\n                \"mmol_l\": 11.0791,\n                \"optional\": 0\n            }",
+        "explanation": "Concentration evidence for composition[11].concentration (D-Glucose) in MediaDive solution 599; locator=$.data.recipe[12] (compound_id=211). Provider explicitly reports g_l=1.99601. Arithmetic check: 2 g * 1 g/g / (1002 ml / 1000 ml per L) = 1.996007984031936127744510978 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1002. Retrieved 2026-10-07T08:25:03.840787+00:00; response SHA256=4e6358cf0566e7d9967f01e01d4c517f84d8728cf51a15cb61f56feae2b40647."
+      }
+    }
+  ],
+  "decisions_needed": [
+    "Original main final volume is explicitly 1002 ml, while listed liquid inputs sum to 1001.90 ml. Do not replace the declared denominator by additive liquid volume.",
+    "Eleven unconditional original main g quantities can be divided by 1.002 L; resazurin reagent and fatty-acid stock are liquid doses, not inferred pure-solute masses.",
+    "Agar is conditional. Table gives 12.00 g per nominal 1002 ml (11.9760479 g/L), while the separate solid-medium instruction says 12.00 g/l. Preserve and adjudicate that small source discrepancy rather than silently choosing or averaging.",
+    "KOMODO has 21 rows including nine nulls, NaHCO3 rather than Na2CO3, and no agar row. Restore this provider's own formulation; do not copy the original DSMZ table over it.",
+    "Keep the five 5.8/5.8/2.8/2.8/2.8 ml fatty-acid inputs as batch doses; their sum is not independent proof of final volume or density.",
+    "S599 has nine literal prior evidence entries to preserve, omitted stock input 6552, a false placeholder and an unsupported 998.003992015968 percent water value.",
+    "S6552 has implausible 290/140 percent quantities and mass rates derived from liquids. Source-supported batch volume inputs are available for explicit correction.",
+    "Review the ungrounded physical-state consequence of removing copied agar and the Glucose/D-Glucose mapping before constructing a guarded proposal."
+  ]
+}

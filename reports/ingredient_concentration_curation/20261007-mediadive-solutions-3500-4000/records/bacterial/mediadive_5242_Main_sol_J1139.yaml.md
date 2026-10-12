@@ -1,0 +1,24 @@
+# Solution Concentration Review: Main sol. J1139
+
+- Record: data/normalized_yaml/bacterial/mediadive_5242_Main_sol_J1139.yaml
+- ID: CultureMech:014154
+- Reviewed commit: `f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f`
+- Before SHA256: `ac29a75012968984920bea5bab99872b6618611acd2db99a3f0044942742d1d8`
+- Proposed/result SHA256: `ac29a75012968984920bea5bab99872b6618611acd2db99a3f0044942742d1d8`
+- Source: https://mediadive.dsmz.de/rest/solution/5242
+- Source SHA256: a670f0bd85ecc7cd9db5d289450bec1b87f8acafe0b30694d4e738749ded6f27
+- Retrieved: 2026-10-07T09:52:37.969112+00:00
+- Source type: official DSMZ dataset; discovery: existing record source ID; authors/year not supplied.
+- State: reviewed; unchanged; unresolved claims remain unchanged.
+- Baseline schema errors: 0; proposed schema errors: 0.
+- Operational failure: none
+
+Source response, exact IDs/labels, arithmetic, and literal snippets were checked by the maintained guarded reviewer. This is not a claim of manual inspection of every source sentence or automated reference-validator success. Preparation-dependent quantities and unrepresented stocks remain open. Schema validity is not scientific proof.
+
+| Field | Ingredient | Old | Proposed | Status | DOI/PURL | Exact snippet | Locator | Calculation / decision | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `composition[0].concentration` | Tryptone | {"unit": "PERCENT_V_V", "value": "14.749262536873156"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/5242 | {<br>                "recipe_order": 3,<br>                "compound": "Tryptone",<br>                "compound_id": 71,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": "autoclaved, 10%",<br>                "amount": 15,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[2] (compound_id=71) | Source attribute may encode stock strength, material grade, or preparation context; not discarded. | unchanged |
+| `composition[1].concentration` | Yeast extract | {"unit": "PERCENT_V_V", "value": "1.966568338249754"} | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/5242 | {<br>                "recipe_order": 4,<br>                "compound": "Yeast extract",<br>                "compound_id": 16,<br>                "solution": null,<br>                "solution_id": null,<br>                "condition": null,<br>                "attribute": "autoclaved",<br>                "amount": 2,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[3] (compound_id=16) | Source attribute may encode stock strength, material grade, or preparation context; not discarded. | unchanged |
+| `ingredients[0].concentration` | See source for composition | {"unit": "VARIABLE", "value": "variable"} | unknown / not asserted | unsupported | unknown / not asserted | unknown / not asserted | unknown / not asserted | Outside direct composition matching; unchanged. | unchanged |
+| `source.recipe[0]` | Basic mineral salt medium 1 | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/5242 | {<br>                "recipe_order": 1,<br>                "compound": null,<br>                "compound_id": null,<br>                "solution": "Basic mineral salt medium 1",<br>                "solution_id": 5243,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 500,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[0] | Source-only ingredient or nested stock addition; needs structural curation, not a direct-ingredient substitution. | unchanged |
+| `source.recipe[1]` | Basal medium 2 | unknown / not asserted | unknown / not asserted | unsupported | https://mediadive.dsmz.de/rest/solution/5242 | {<br>                "recipe_order": 2,<br>                "compound": null,<br>                "compound_id": null,<br>                "solution": "Basal medium 2",<br>                "solution_id": 5244,<br>                "condition": null,<br>                "attribute": null,<br>                "amount": 500,<br>                "unit": "ml",<br>                "g_l": null,<br>                "mmol_l": null,<br>                "optional": 0<br>            } | $.data.recipe[1] | Source-only ingredient or nested stock addition; needs structural curation, not a direct-ingredient substitution. | unchanged |
