@@ -5,6 +5,7 @@ import hashlib
 import importlib.util
 import json
 import subprocess
+from dataclasses import replace
 from pathlib import Path
 
 import pytest
@@ -77,6 +78,34 @@ def test_rebuild_matches_frozen_successor(key):
     )
     assert repair.runner.render(row["before_text"], actual).decode() == row["after_text"]
     assert claims == row["claims"] and lineage == row["lineage"]
+
+
+def test_unreviewed_mim_index_bytes_are_rejected(tmp_path, monkeypatch):
+    relative = "src/culturemech/data/mediaingredientmech/label_index.csv"
+    path = tmp_path / relative
+    path.parent.mkdir(parents=True)
+    path.write_bytes((repair.ROOT / relative).read_bytes() + b"\n")
+    monkeypatch.setattr(repair, "ROOT", tmp_path)
+    with pytest.raises(ValueError, match="MIM drift"):
+        repair.frozen()
+
+
+def test_mim_compatibility_assessment_hash_is_mandatory(monkeypatch):
+    monkeypatch.setattr(repair, "INDEX_COMPATIBILITY_SHA", "0" * 64)
+    with pytest.raises(ValueError, match="MIM compatibility drift"):
+        repair.frozen()
+
+
+def test_mim_compatibility_verifies_every_reviewed_lookup(monkeypatch):
+    original = repair.MIMLabelIndex.resolve_label
+
+    def changed(index, label):
+        decision = original(index, label)
+        return replace(decision, identifier="CHEBI:123") if label == "water" else decision
+
+    monkeypatch.setattr(repair.MIMLabelIndex, "resolve_label", changed)
+    with pytest.raises(ValueError, match="MIM resolution drift"):
+        repair.frozen()
 
 
 QUANTITIES = [

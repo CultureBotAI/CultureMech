@@ -101,6 +101,19 @@ def corpus_yaml_loader(corpus):
 
 
 @pytest.fixture
+def no_reference_cache_reads(monkeypatch):
+    """Independent audits must consume published inputs, not ignored raw caches."""
+    original_open = Path.open
+
+    def guarded_open(path, *args, **kwargs):
+        if "references_cache" in path.parts:
+            pytest.fail(f"Ignored source cache read: {path.name}")
+        return original_open(path, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "open", guarded_open)
+
+
+@pytest.fixture
 def no_workstation_receipt_reads(monkeypatch):
     """Make historical absolute-path dependencies fail on their original workstation too."""
     folder = REPO_ROOT / "reports/ingredient_concentration_curation"

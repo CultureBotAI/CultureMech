@@ -9,8 +9,9 @@ from pathlib import Path
 
 import review_solution_concentration_evidence as runner
 from bs4 import BeautifulSoup
+from curation_identity_fixtures import read_mim_capture
+from curation_source_fixtures import read_pdf_capture
 
-from culturemech.ingredients.mim_label_index import get_default_mim_label_index, resolve_ingredient
 from culturemech.validation.recipe_references import literal_match, parse_recipe, recipe_source
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -73,7 +74,7 @@ def sources():
         assert meta["http_status"] == 200 and meta["url"] == meta["response_url"]
         datetime.fromisoformat(meta["accessed_at"])
         if meta.get("pdf_path"):
-            assert runner.sha((ROOT / meta["pdf_path"]).read_bytes()) == meta["pdf_sha256"]
+            assert runner.sha(read_pdf_capture(meta)) == meta["pdf_sha256"]
         parsed[key] = parse_recipe(recipe_source(meta["url"]), raw, meta)
     return captures, parsed
 
@@ -461,14 +462,14 @@ def check(before, after, item):
                     .replace("this pinned draft", "the pinned review")
                 )
     key = item["key"]
-    assert get_default_mim_label_index().metadata["sha256"] == MIM_SHA
+    index = read_mim_capture(MIM_SHA)
     if key in {"K323", "D323", "S599"}:
         pointer = (
             ["ingredients", 9]
             if key == "K323"
             else ["composition" if key == "S599" else "ingredients", 8]
         )
-        decision = resolve_ingredient(runner.get_node(after, pointer))
+        decision = index.resolve(runner.get_node(after, pointer))
         assert decision.identifier == ("CHEBI:91248" if key == "K323" else "CHEBI:8806")
         assert decision.resolution_source == "mim_exact"
     if key == "K323":

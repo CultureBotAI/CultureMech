@@ -7,6 +7,7 @@ import argparse
 import copy
 import datetime
 import json
+from dataclasses import asdict
 from decimal import Decimal
 from pathlib import Path
 
@@ -15,6 +16,7 @@ from curation_receipt_fixtures import read_receipt_capture
 from review_medium_concentration_evidence import json_excerpt
 
 from culturemech.curate.curation_event import record_curation_event
+from culturemech.ingredients.mim_label_index import MIMLabelIndex
 from culturemech.validation.recipe_references import parse_recipe, recipe_source
 
 runner, ROOT = shared.runner, shared.ROOT
@@ -58,6 +60,7 @@ ALIASES = {
     "MnCl2 x 4 H2O": "MnCl2\u00b74H2O",
     "MnCl2\u30fb4H2O": "MnCl2\u00b74H2O",
 }
+INDEX_COMPATIBILITY_SHA = "0a45a7870293a758f0cd2b55c68e6e117dee91a1b6a45515f882b18af075c4c0"
 
 
 def frozen():
@@ -76,10 +79,28 @@ def frozen():
         "Incomplete source review",
     )
     index = ROOT / "src/culturemech/data/mediaingredientmech/label_index.csv"
-    runner.require(
-        runner.sha(index.read_bytes()) == inspected["mim_metadata"]["sha256"],
-        "MIM drift",
-    )
+    index_raw = index.read_bytes()
+    if runner.sha(index_raw) != inspected["mim_metadata"]["sha256"]:
+        raw = (HERE / "identity-index-compatibility.json").read_bytes()
+        runner.require(runner.sha(raw) == INDEX_COMPATIBILITY_SHA, "MIM compatibility drift")
+        successor = json.loads(raw)
+        runner.require(
+            successor["historical_inspection_sha256"] == INSPECTION_SHA
+            and successor["historical_index_sha256"] == inspected["mim_metadata"]["sha256"]
+            and runner.sha(index_raw) == successor["current_metadata"]["sha256"],
+            "MIM drift",
+        )
+        current = MIMLabelIndex.from_csv_bytes(
+            index_raw, metadata=successor["current_metadata"], verify_metadata=True
+        )
+        runner.require(
+            [
+                asdict(current.resolve_label(row["query_label"]))
+                for row in inspected["identity_lookups"]
+            ]
+            == successor["current_resolutions"],
+            "MIM resolution drift",
+        )
     for key, item in context["sources"].items():
         raw, meta = item["raw"], item["metadata"]
         runner.require(

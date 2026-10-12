@@ -152,3 +152,23 @@ compare parsed data and output source spans against the Python safe parser for
 large frozen records, multiline text, Unicode, aliases and scalar types, and
 verify rejection of Python object tags. No loader is globally monkeypatched in
 the application or full-suite environment. Runtime limits remain unchanged.
+
+### Independent Audit Dependency Closure
+
+The cancelled `27baf7d899` CI log also exposed an ignored PDF read through the
+KOMODO successor-chain audit. A clean checkout at `a9fe45da12` reproduced it.
+Issue 585 covers this and the same dependency in the resazurin identity audit.
+Those readers now use the exact PDF fixture resolver; one additional PDF is
+needed. Their historical MIM assertions replay against the original CSV and
+metadata capture, with both whole-capture and CSV digest checks. This snapshot
+is not substituted for the current ingredient resolver or called current
+evidence. The resazurin historical builder uses the same original pin.
+
+Issue 584 also covers a second live-index guard in the Halobacteria family.
+All 24 inspected lookups were compared with the refreshed index: identities,
+chemical forms and statuses are unchanged; only Casamino acids ambiguity
+changes from resolved:owned to unique. A separate pinned assessment verifies
+every current answer. Unknown bytes, altered assessments and semantic drift
+remain failures. The first Syntrophomonas compatibility fix alone was not
+sufficient. The expanded tests prohibit ignored-cache reads, alongside the
+existing prohibition on workstation-only receipt reads.

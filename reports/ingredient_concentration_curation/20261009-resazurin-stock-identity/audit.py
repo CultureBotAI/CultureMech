@@ -7,8 +7,9 @@ from datetime import datetime
 from pathlib import Path
 
 import review_solution_concentration_evidence as runner
+from curation_identity_fixtures import read_mim_capture
+from curation_source_fixtures import read_pdf_capture
 
-from culturemech.ingredients.mim_label_index import get_default_mim_label_index, resolve_ingredient
 from culturemech.validation.recipe_references import literal_match, parse_recipe, recipe_source
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -40,11 +41,7 @@ def source_for(spec):
     meta = source["metadata"]
     assert meta["http_status"] == 200 and meta["response_url"] == meta["url"]
     assert runner.sha(source["raw"].encode()) == meta["sha256"] == spec["source_sha256"]
-    assert (
-        runner.sha((ROOT / meta["pdf_path"]).read_bytes())
-        == meta["pdf_sha256"]
-        == spec["source_pdf_sha256"]
-    )
+    assert runner.sha(read_pdf_capture(meta)) == meta["pdf_sha256"] == spec["source_pdf_sha256"]
     content = parse_recipe(recipe_source(meta["url"]), source["raw"], meta).content
     assert literal_match(spec["snippet"], content), "Source does not contain the exact excerpt"
     return source
@@ -92,13 +89,13 @@ def check(before, after, item):
         spec["source_pdf_sha256"],
     ):
         assert required in extension, f"Missing identity disposition: {required}"
-    assert get_default_mim_label_index().metadata["sha256"] == MIM_SHA
+    index = read_mim_capture(MIM_SHA)
     for node in (old, new):
-        decision = resolve_ingredient(node)
+        decision = index.resolve(node)
         assert decision.identifier == "CHEBI:8806"
         assert decision.resolution_source == "mim_exact"
     assert item["publication_identity_resolved"] is False
-    assert item["resolver_after"] == asdict(resolve_ingredient(new))
+    assert item["resolver_after"] == asdict(index.resolve(new))
     assert item["claims"] == [
         {
             "field": field,

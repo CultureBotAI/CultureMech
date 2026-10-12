@@ -14,8 +14,8 @@
     },
     {
       "path": "data/import_tracking/derived_artifacts.tsv",
-      "bytes": 208289,
-      "sha256": "2bce81fb4166e7c4b2a1f71ca8efc709a302dd2cc77b68773e851df42ee8d781"
+      "bytes": 208436,
+      "sha256": "5878ae0a2869959f810e23d3502e91cad60ad43d4d7a3e7fb1f14322fa741a7d"
     },
     {
       "path": "data/normalized_yaml/algae/1_2_CHEV_Diatom_Medium.yaml",
@@ -93523,6 +93523,11 @@
       "sha256": "f6e504f3d7e2ce9a681aca3a9cffe33875b590282d2dc95902c9c7c4bbdafa10"
     },
     {
+      "path": "reports/ingredient_concentration_curation/20261009-halobacteria-family/identity-index-compatibility.json",
+      "sha256": "0a45a7870293a758f0cd2b55c68e6e117dee91a1b6a45515f882b18af075c4c0",
+      "bytes": 12248
+    },
+    {
       "path": "reports/ingredient_concentration_curation/20261009-halobacteria-family/index-refresh-plan.json",
       "bytes": 2862,
       "sha256": "f0830784bb891ca84ab12d06d2972aa406f3a6cc8128e0ebbea717e559340cec"
@@ -94499,8 +94504,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-medium323/audit.py",
-      "bytes": 22563,
-      "sha256": "8f3955ca9da2d0f2f95f71db1b797f2117ebfc0c447c9e05e682336f8063c215"
+      "bytes": 22519,
+      "sha256": "f114adb24b9199e86417f390157acf2a91b635210722d4fd08d2c7dbd3e7e379"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-medium323/plan-v2.json",
@@ -95979,8 +95984,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/audit.py",
-      "bytes": 5607,
-      "sha256": "34bfff226e6aec3f00e7a4c54bbf4118695c7bd0c1553efcc0ec6c607c111393"
+      "bytes": 5526,
+      "sha256": "35592aa1026ebf206dfccdc7116f24032c2ad8799073228fcb0151a7856484eb"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-resazurin-stock-identity/corpus.json",
@@ -99479,8 +99484,13 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/README.md",
-      "bytes": 9659,
-      "sha256": "667a339d0597adae587d804eb915940f0358ef8b32d569783df8df5cd2bb2419"
+      "bytes": 10898,
+      "sha256": "d812d4fbe8123f9e1d82300e11df4287b3dc4c636454374e23db47a2bd75c813"
+    },
+    {
+      "path": "reports/ingredient_concentration_curation/20261011-publication-review/prepare_pdf_fixtures.py",
+      "sha256": "8f18031521285eec17895338d44929a6cd977abe18cc627abadb03c8939d1acf",
+      "bytes": 2796
     },
     {
       "path": "reports/ingredient_concentration_curation/README.md",
@@ -99501,6 +99511,11 @@
       "path": "scripts/audit_derived_artifacts.py",
       "sha256": "56e52081a846ee994784ec224018061f6d88571f6e55c75ea376d6358477468b",
       "bytes": 15687
+    },
+    {
+      "path": "scripts/curation_identity_fixtures.py",
+      "sha256": "b70a01bd6375b974675b27fe744c3caf1c27ea0b380f487e87842bb48517ae1f",
+      "bytes": 1464
     },
     {
       "path": "scripts/curation_receipt_fixtures.py",
@@ -99779,8 +99794,8 @@
     },
     {
       "path": "scripts/repair_resazurin_stock_identity.py",
-      "bytes": 7389,
-      "sha256": "30cc133bf2a0da789fdc541d0a131bbb09d269127934bfce350f0d58c2a595fb"
+      "bytes": 7395,
+      "sha256": "ef13999bcfbe14dc7e68ae9d28bcac5f88b4613357651fa43cc0396dd3037607"
     },
     {
       "path": "scripts/repair_reviewed_medium_stock_boundaries.py",
@@ -99844,8 +99859,8 @@
     },
     {
       "path": "scripts/review_halobacteria_ingredient_family.py",
-      "bytes": 24421,
-      "sha256": "f0bf1e478708cc6fc10c704d703af99e3a33d69299e05b3a7715f0b375c541c8"
+      "bytes": 25508,
+      "sha256": "d6616c82052bb9cc49a64ddc9c64e973af543afd322fd14142484aebb70a6e56"
     },
     {
       "path": "scripts/review_halobacteria_variant_concentrations.py",
@@ -100039,8 +100054,18 @@
     },
     {
       "path": "tests/conftest.py",
-      "sha256": "8bbe6f076ae9294e6e827484506bc080f730e26563fb0e42c7f6128a550a1cb8",
-      "bytes": 8349
+      "sha256": "14f69fcee3e85f1c47e66d958104440553b58f96add1bc2094e175a85ebeca40",
+      "bytes": 8787
+    },
+    {
+      "path": "tests/fixtures/curation_mim/README.md",
+      "sha256": "2ae7925131a0a87b9c2214017339bda2783d14f75ce0b3cabd4fe32c53f216b3",
+      "bytes": 415
+    },
+    {
+      "path": "tests/fixtures/curation_mim/a36cd4683feb89e2fc2a1721dc15008d1e10c12044e89a36c27b6621a8aaf262.json",
+      "sha256": "491958135a662b7d6bb7935784964449e77d90ea61d6a94130b00c41e050d65a",
+      "bytes": 1230154
     },
     {
       "path": "tests/fixtures/curation_pdfs/0bb0c238a57443296206937fbb30f79af88f1602c90b24e65e5275a6d9a20722.json",
@@ -100121,6 +100146,11 @@
       "path": "tests/fixtures/curation_pdfs/README.md",
       "bytes": 728,
       "sha256": "8e693dc10f835ae120b0648bb5525a0851de67126d689458feb68f2f990686cb"
+    },
+    {
+      "path": "tests/fixtures/curation_pdfs/a9612ce4a0d0ab3cb0b8ec6924aa5076f1988dc4bc059a773dceb6898e2dceb7.json",
+      "sha256": "6bf011e255588274c5fd306e38cb237ce24d805877e5f52680a679fcb6de0dfe",
+      "bytes": 113233
     },
     {
       "path": "tests/fixtures/curation_pdfs/b418dfff6502a47f1ae30498518488079a7360c03b5a355fc1d4973bc9557f98.json",
@@ -100373,6 +100403,11 @@
       "sha256": "c8e29afce138d3079b5891a6f2e53937fd42279f65115a5f181d6eda10e2dad6"
     },
     {
+      "path": "tests/test_curation_identity_fixtures.py",
+      "sha256": "ac83744e1c5a5297d68cab49ef8020dbca850702bb3c840e8364a2cf8cdc4b35",
+      "bytes": 2200
+    },
+    {
       "path": "tests/test_curation_receipt_fixtures.py",
       "sha256": "e1093d8ad90f95e328405e648e71bf5ce09ff78768e7cd2af12ccb4f36902db0",
       "bytes": 2764
@@ -100519,8 +100554,8 @@
     },
     {
       "path": "tests/test_halobacteria_ingredient_family.py",
-      "bytes": 9743,
-      "sha256": "72ffeae8eae30f1b573f8d86db2c3d3391e56d4eedbd6c951b93e38d483c7ae7"
+      "bytes": 10874,
+      "sha256": "2b86717271aea938288a4a50b2149a16c4106129ae3beaae36c398edadef8563"
     },
     {
       "path": "tests/test_halobacteria_variant_concentrations.py",
@@ -100664,8 +100699,8 @@
     },
     {
       "path": "tests/test_medium323_ingredients.py",
-      "bytes": 10398,
-      "sha256": "fc94b28c2edeffda2c00f6ddaf8f88183b22bb2646d5ff1e68861d7e3fe662be"
+      "bytes": 10464,
+      "sha256": "781726c8ede5e5f9687b65402b90dc06ccaa1e403e637c07bc53090d1da78a02"
     },
     {
       "path": "tests/test_medium_concentration_batch.py",
@@ -100794,8 +100829,8 @@
     },
     {
       "path": "tests/test_resazurin_stock_identity.py",
-      "bytes": 4939,
-      "sha256": "9dd67e689e3b365be7d6b8fafde1ed357e47323f74a665e1615a69d51ca53fa3"
+      "bytes": 5005,
+      "sha256": "5a61af9a2d753eb2d01b460082e320acf048c1719bd6b5eab4dc019b5110b809"
     },
     {
       "path": "tests/test_researched_manifest.py",
@@ -102045,5 +102080,5 @@
     "reports/ingredient_concentration_curation/20261011-publication-review/publication-manifest.json"
   ],
   "dependency_closure_parent_commit": "0c73c10a86577581ffa858b3e21c89fde50dd009",
-  "followup_parent_commit": "79f977f64c7049a50648734ece185a1dfd400a04"
+  "followup_parent_commit": "a9fe45da121e3fbf8f54e11edb5dc6b2563e1def"
 }

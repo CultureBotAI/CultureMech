@@ -7,6 +7,8 @@ import subprocess
 import pytest
 import repair_medium323_ingredients as repair
 
+pytestmark = pytest.mark.usefixtures("no_reference_cache_reads")
+
 
 @pytest.fixture
 def plan():

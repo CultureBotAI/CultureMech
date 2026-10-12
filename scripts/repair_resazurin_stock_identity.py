@@ -9,9 +9,9 @@ from dataclasses import asdict
 from pathlib import Path
 
 import review_solution_concentration_evidence as runner
+from curation_identity_fixtures import read_mim_capture
 
 from culturemech.curate.curation_event import now_iso, record_curation_event
-from culturemech.ingredients.mim_label_index import resolve_ingredient
 from culturemech.validation.write_validated import validate_recipe
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -92,7 +92,7 @@ def preview(root=ROOT):
             "before_sha256": runner.sha(raw),
             "after_sha256": runner.sha(rendered),
             "publication_identity_resolved": False,
-            "resolver_after": asdict(resolve_ingredient(node)),
+            "resolver_after": asdict(read_mim_capture(audit.MIM_SHA).resolve(node)),
             "claims": [
                 {
                     "field": field,
