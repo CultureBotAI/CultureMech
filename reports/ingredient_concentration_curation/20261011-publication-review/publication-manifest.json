@@ -93769,8 +93769,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/audit.py",
-      "bytes": 14490,
-      "sha256": "b28f5c75785bf8b3d7bb70c195dfeec961f14fa2852612d1dad77ab0ddd6b271"
+      "bytes": 14479,
+      "sha256": "1f8b370cb71f827406b5e044e7070204dd3934a0177e9f61918eac762f20cc55"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261009-halobacteria-variants/canonical-inventory-before.json",
@@ -99474,8 +99474,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/README.md",
-      "bytes": 7195,
-      "sha256": "dcbfd7a46d8ff1c78aabf40fda1b4e6c9f6cd2ed72b943c829ccd3a7fcac95cd"
+      "bytes": 8152,
+      "sha256": "877045f0eabfb822762126324afa545893f8a1b5b7c58018b57e4ffaf3db8b03"
     },
     {
       "path": "reports/ingredient_concentration_curation/README.md",
@@ -99496,6 +99496,11 @@
       "path": "scripts/audit_derived_artifacts.py",
       "sha256": "56e52081a846ee994784ec224018061f6d88571f6e55c75ea376d6358477468b",
       "bytes": 15687
+    },
+    {
+      "path": "scripts/curation_receipt_fixtures.py",
+      "sha256": "6f6ce62adf166d404146c104b92a620173c9f0db693482d2e1c1441627c69329",
+      "bytes": 2051
     },
     {
       "path": "scripts/curation_source_fixtures.py",
@@ -99834,13 +99839,13 @@
     },
     {
       "path": "scripts/review_halobacteria_ingredient_family.py",
-      "bytes": 24362,
-      "sha256": "fe9cb9d40d95c4676a46893ad9e474f1311d0d10505440b334e0ca16871dbffe"
+      "bytes": 24421,
+      "sha256": "f0bf1e478708cc6fc10c704d703af99e3a33d69299e05b3a7715f0b375c541c8"
     },
     {
       "path": "scripts/review_halobacteria_variant_concentrations.py",
-      "bytes": 33178,
-      "sha256": "4db3b15b9680b6d691144fb7d45623f5b20396eb99635788546e9f5c3dcd75c3"
+      "bytes": 33237,
+      "sha256": "85cb441f790d43757d4d946092a7e7d90def757aba6475546cd328bb6d957f27"
     },
     {
       "path": "scripts/review_komodo_concentration_evidence.py",
@@ -100029,8 +100034,8 @@
     },
     {
       "path": "tests/conftest.py",
-      "sha256": "0f202e00f2f831a9fc225aee844c7bcf66a98ee075e3f1cf2d393f68fc6d67bf",
-      "bytes": 7266
+      "sha256": "8bbe6f076ae9294e6e827484506bc080f730e26563fb0e42c7f6128a550a1cb8",
+      "bytes": 8349
     },
     {
       "path": "tests/fixtures/curation_pdfs/0bb0c238a57443296206937fbb30f79af88f1602c90b24e65e5275a6d9a20722.json",
@@ -100136,6 +100141,106 @@
       "path": "tests/fixtures/curation_pdfs/efc94c3d15d0a3946a81d30bba6095ccaa6a2163ca130135c24e7db6bc03794e.json",
       "bytes": 116935,
       "sha256": "cc2b650a5b03dfdeb3d7a482125a17a07c66b1d0b60ab8c134758f9c059dbfc1"
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/2e04d5aaa8ba763f06ad194ce72928ecc5861a1abffc91d73cc8db10ed2d9e54.json",
+      "sha256": "b133cf8f813d716c519b890475bf3be12af9ae7b4518b0be70a34a197e0bb156",
+      "bytes": 375
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/39232371a062f492f227e55fd047ca240a3c05508f96def908fd6ee73010fef7.json",
+      "sha256": "cfbd803059d2591c099b5d3eda212c8fb34cae43616a58d0546e611a990da7e8",
+      "bytes": 2527
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/43b01ee458aac2168073f20cfc366018ba5998c47a2df47f89c9af94d5644952.json",
+      "sha256": "163b8cb38edc4e38d572bbbaadc2b18d6b3ef48e94022a9030fdfe99f522f460",
+      "bytes": 276
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a.json",
+      "sha256": "4f7fe291d99171be39494031838584a88b2943ec0e8eb83c91a39d7b5dc0f40a",
+      "bytes": 4842
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/45a468fa6205768496f23f1716ebb7575e9b723449d2099b88bf2afef60b721f.json",
+      "sha256": "e8c9ab01acd668081d7d36924f03a13775847eedd31ca9f463f6861ecf33c035",
+      "bytes": 406
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/58d1a242ad53e9aa7c8e6d644e329a95fb602742fac11b47c0aa16679fd4e0a7.json",
+      "sha256": "28956117425f1bfacecaa583ed967ca0eea2d91a4c63994937467c1cc6e1eda0",
+      "bytes": 375
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/72c5c97ae67675757610ae2421b1996e29f97c86ee5f66053e8692b0190a3ee0.json",
+      "sha256": "622f95b1ab433c7001c4fc3ca92c0a91862558348abe021548a2bc6badafa864",
+      "bytes": 273
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050.json",
+      "sha256": "ceb1a96e7c1ac0319ffa71f804e440c1c886e2d56615a37e2d524a1643257bb0",
+      "bytes": 4264
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18.json",
+      "sha256": "5fcb543c27a5a5edd9f1bbb2bcec2a56c4448847953cc8de632c6ce16fad089a",
+      "bytes": 358
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/87dad140dc0dd90d7ae29a5cd470bee23ea387875a3701fff98a2b3abe7de629.json",
+      "sha256": "b40978181de236aef4e1d1dfe30f4cf7cff151c6676e15984eb73d8177976d42",
+      "bytes": 276
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/947f28e5a5fb031300aa394b31d72ed3080797b0eaa8e3272c8052d0ae6a9475.json",
+      "sha256": "f4321e06b3c17f4625fc6c12a7f2f4df26ab7b7a8cbce29a1c315db944454b6c",
+      "bytes": 470
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/README.md",
+      "sha256": "32a5bae5e34b016f6f62630b920c5ce27f633f85e50a578d077756a70bd59e92",
+      "bytes": 577
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/a59df3ddb4524c743c0b5673458d135c64025cbd81b5eeed87092b22093e2897.json",
+      "sha256": "6fa6370dd81adfa89d12bcc1ce3a9981df5e0a32e54e73b2e568a13276f9eb72",
+      "bytes": 273
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/ab8f4f36a4dbbc200d03d225ed9af2b0e7056b0fd224253188cad9054bc0abf2.json",
+      "sha256": "f40d45f5fd6bc8fc2de00055b81133e3d13e8cbce8293903403b0d224b4a6908",
+      "bytes": 457
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/b86111888b6f79932dc53e0b591c814e60fd4da8838d14b2a61426a958897d99.json",
+      "sha256": "a62fc58f3ce3056560bb5129921401c9a9e3882386d3ed5461b7399767a42ca9",
+      "bytes": 477
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/c4572b81569b60ad1ee036894b1b57ded671a34c11ba73ca267c71c54fb5bcc1.json",
+      "sha256": "366020dc18d4bd73d30684ce3e1163fc089342ff4813e96e9b47d2fdb54745e2",
+      "bytes": 375
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/ce2012b4eb4eebf1cd906e0002bc12177019ddf63892305b16e837220ad71be1.json",
+      "sha256": "d9b7fef7238b49e7770b6ca066ecc39c19db97768d57b6e6cf43696723ce1b83",
+      "bytes": 276
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/db7940ad1f734439a411f2cb45d02ec8cb52df12bdb98fe0ff508a0a8bd06853.json",
+      "sha256": "60b522e6fbecca8f16f7c2dad4d7b14421302fa256de20ab3cbbd975d5c79db5",
+      "bytes": 478
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.json",
+      "sha256": "197cc75eb106db43fbee0538c1c178f48d635e3163a8000a170279609796630b",
+      "bytes": 232
+    },
+    {
+      "path": "tests/fixtures/curation_receipts/fa6942448a09eb652be42eb4419e6eeafc2e352467490332187bb748557cfd7a.json",
+      "sha256": "e57d7aaa0b85f1cfc8ab23c15eb633d223e8cb011ca9e187702294e7bc6fc69f",
+      "bytes": 13329
     },
     {
       "path": "tests/fixtures/komodo670_legacy_migration.json",
@@ -100261,6 +100366,11 @@
       "path": "tests/test_concentration_volume_basis.py",
       "bytes": 6423,
       "sha256": "c8e29afce138d3079b5891a6f2e53937fd42279f65115a5f181d6eda10e2dad6"
+    },
+    {
+      "path": "tests/test_curation_receipt_fixtures.py",
+      "sha256": "e1093d8ad90f95e328405e648e71bf5ce09ff78768e7cd2af12ccb4f36902db0",
+      "bytes": 2764
     },
     {
       "path": "tests/test_curation_source_fixtures.py",
@@ -100399,13 +100509,13 @@
     },
     {
       "path": "tests/test_halobacteria_ingredient_family.py",
-      "bytes": 9673,
-      "sha256": "e0d64940a45d8d2646b5576252f2bfcdabea41c27016967e3a657cd7f642da4b"
+      "bytes": 9743,
+      "sha256": "72ffeae8eae30f1b573f8d86db2c3d3391e56d4eedbd6c951b93e38d483c7ae7"
     },
     {
       "path": "tests/test_halobacteria_variant_concentrations.py",
-      "bytes": 12012,
-      "sha256": "d12f45a79561eeebd4f8078f9e236f8436699839ae836649274844ce2a4c395f"
+      "bytes": 12071,
+      "sha256": "80b4eff624960d2e2fe83619f71129050d6c4be53e56332cfab1881a3d0abe2e"
     },
     {
       "path": "tests/test_j261_variant.py",
@@ -101925,5 +102035,5 @@
     "reports/ingredient_concentration_curation/20261011-publication-review/publication-manifest.json"
   ],
   "dependency_closure_parent_commit": "0c73c10a86577581ffa858b3e21c89fde50dd009",
-  "followup_parent_commit": "998b09ec7f0ab41c5d02a27e47e4fc0bbd80a9ab"
+  "followup_parent_commit": "27baf7d8995d54c226b30a273bff2a403a99db96"
 }

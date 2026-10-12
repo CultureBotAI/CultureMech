@@ -11,7 +11,7 @@ import pytest
 import review_halobacteria_variant_concentrations as review
 import yaml
 
-pytestmark = pytest.mark.corpus
+pytestmark = [pytest.mark.corpus, pytest.mark.usefixtures("no_workstation_receipt_reads")]
 SPEC = importlib.util.spec_from_file_location(
     "halobacteria_variant_audit", review.HERE / "audit.py"
 )

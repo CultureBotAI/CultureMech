@@ -113,3 +113,19 @@ their captures and check provenance, digest and expected text. Changed bytes,
 stricter limits, reader changes, cache bounds and the large-input bypass have
 explicit tests. A two-load benchmark returned identical output in 8.8 seconds
 cold and 0.7 seconds warm. A new complete run is required at the successor head.
+
+### Portable Historical Receipts
+
+Issue 583 records an additional dependency missed by same-workstation clean
+checkouts: Halobacteria guards opened historical absolute log and validation
+paths. Nineteen digest-addressed fixtures preserve the exact bytes for 111
+receipt references. The resolver checks the registered repository-relative
+source name, original digest, strict encoding and symlink boundaries, and never
+falls back to the historical workstation path. Frozen receipts are unchanged.
+
+All 526 focused receipt and Halobacteria tests pass with historical workstation
+reads explicitly forbidden, including deterministic replay, independent
+projection, tamper rejection, concurrent edits and guarded no-op application.
+The full CI gate is still pending. The latest fast tier separately exposed
+issue 584: main refreshed the MIM index in PR 537 while this PR was under review.
+That compatibility finding is not repaired by portable receipt fixtures.

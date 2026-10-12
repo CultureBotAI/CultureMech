@@ -8,6 +8,7 @@ from pathlib import Path
 
 import yaml
 from bs4 import BeautifulSoup
+from curation_receipt_fixtures import read_receipt_capture
 
 from culturemech.validation.recipe_references import parse_recipe, recipe_source
 
@@ -176,10 +177,8 @@ def check(row, *, applied=False, current_text=None):
     if key in PARENTS:
         assert after["ingredients"] == before["ingredients"]
         assert after["ph_range"] == before["ph_range"]
-        prior = Path(spec["prior_concentration_validation"])
-        assert (
-            hashlib.sha256(prior.read_bytes()).hexdigest()
-            == spec["prior_concentration_validation_sha256"]
+        read_receipt_capture(
+            spec["prior_concentration_validation"], spec["prior_concentration_validation_sha256"]
         )
     else:
         old_field = "composition" if key == "S3823" else "ingredients"

@@ -11,6 +11,7 @@ from decimal import Decimal
 from pathlib import Path
 
 import repair_methanogen_stock_boundaries as shared
+from curation_receipt_fixtures import read_receipt_capture
 from review_medium_concentration_evidence import json_excerpt
 
 from culturemech.curate.curation_event import record_curation_event
@@ -694,13 +695,11 @@ def process(root, plan_path, mode="preview"):
             "Unreviewed plan",
         )
         for check in gate["checks"]:
-            log = Path(check["log"])
-            runner.require(
-                check["exit_code"] == 0
-                and not log.is_symlink()
-                and runner.sha(log.read_bytes()) == check["log_sha256"],
-                "Validation log drift",
-            )
+            runner.require(check["exit_code"] == 0, "Validation log drift")
+            try:
+                read_receipt_capture(check["log"], check["log_sha256"])
+            except ValueError as error:
+                raise ValueError("Validation log drift") from error
     context = frozen()
     for row in context["records"]:
         path = root / row["path"]

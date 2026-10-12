@@ -15,6 +15,7 @@ them as read-only** — mutating one would leak into every later test.
 
 from __future__ import annotations
 
+import json
 import sys
 from pathlib import Path
 from typing import Any
@@ -97,6 +98,30 @@ def corpus_yaml_loader(corpus):
     """Read-only lookup for scripts whose corpus-level tests inject a YAML reader."""
     by_path = dict(corpus)
     return by_path.get
+
+
+@pytest.fixture
+def no_workstation_receipt_reads(monkeypatch):
+    """Make historical absolute-path dependencies fail on their original workstation too."""
+    folder = REPO_ROOT / "reports/ingredient_concentration_curation"
+    forbidden = set()
+    for cohort in ("20261009-halobacteria-family", "20261009-halobacteria-variants"):
+        gate = json.loads((folder / cohort / "validation-preview.json").read_text())
+        forbidden.update(Path(row["log"]).resolve() for row in gate["checks"])
+    context = json.loads((folder / "20261009-halobacteria-variants/context.json").read_text())
+    forbidden.update(
+        Path(row["prior_concentration_validation"]).resolve()
+        for row in context["records"]
+        if "prior_concentration_validation" in row
+    )
+    original_open = Path.open
+
+    def guarded_open(path, *args, **kwargs):
+        if path.resolve() in forbidden:
+            pytest.fail(f"Historical workstation receipt read: {path.name}")
+        return original_open(path, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "open", guarded_open)
 
 
 @pytest.fixture(scope="session")

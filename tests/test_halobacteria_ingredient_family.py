@@ -11,6 +11,8 @@ import pytest
 import review_halobacteria_ingredient_family as repair
 import yaml
 
+pytestmark = pytest.mark.usefixtures("no_workstation_receipt_reads")
+
 SPEC = importlib.util.spec_from_file_location("halobacteria_audit", repair.HERE / "audit.py")
 audit = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(audit)
