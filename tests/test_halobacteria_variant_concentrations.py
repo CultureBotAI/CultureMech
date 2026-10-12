@@ -34,11 +34,19 @@ def check(item):
 
 def damage(key, mutate):
     item = row(key)
-    doc = yaml.safe_load(item["after_text"])
+    doc = review.runner.load_yaml(item["after_text"])
     mutate(doc)
-    item["after_text"] = yaml.safe_dump(doc, sort_keys=False)
+    # Rehashed forgeries exercise semantics, not production formatting.
+    item["after_text"] = json.dumps(doc, ensure_ascii=False)
     item["after_sha256"] = hashlib.sha256(item["after_text"].encode()).hexdigest()
     return item
+
+
+@pytest.mark.parametrize("key", ITEMS)
+def test_forgery_serialization_accepts_every_unchanged_record(key):
+    item = damage(key, lambda doc: None)
+    assert review.runner.load_yaml(item["after_text"]) == yaml.safe_load(ITEMS[key]["after_text"])
+    assert check(item) == check(row(key))
 
 
 @pytest.mark.parametrize("key", ITEMS)
@@ -246,8 +254,13 @@ def fixture_repo(tmp_path, monkeypatch):
 
     def builder(before, key, timestamp):
         item = ITEMS[key]
-        assert before == yaml.safe_load(item["before_text"]) and timestamp == PLAN["created_at"]
-        return copy.deepcopy((yaml.safe_load(item["after_text"]), item["claims"], item["lineage"]))
+        assert (
+            before == review.runner.load_yaml(item["before_text"])
+            and timestamp == PLAN["created_at"]
+        )
+        return copy.deepcopy(
+            (review.runner.load_yaml(item["after_text"]), item["claims"], item["lineage"])
+        )
 
     monkeypatch.setattr(review, "build", builder)
     plan = tmp_path / "plan.json"

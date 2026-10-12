@@ -172,3 +172,32 @@ every current answer. Unknown bytes, altered assessments and semantic drift
 remain failures. The first Syntrophomonas compatibility fix alone was not
 sufficient. The expanded tests prohibit ignored-cache reads, alongside the
 existing prohibition on workstation-only receipt reads.
+
+### Mutation Test Serialization
+
+At `1e02daa498`, eight required checks passed, but full-suite job
+`114654067248` exceeded its 40-minute limit and ended cancelled after 45m1s.
+The fast tier passed 15,766 tests with 23 skips. The full-job log was unavailable
+through both the job endpoint and the run archive; its check annotation confirms
+the timeout. Issue 576 remains open. A non-fast diagnostic with coverage runs
+separately against an unchanged clean checkout, not as a claimed full pass.
+
+Profiling a Methanofollis quantity mutation attributes 0.66 of 1.18 call seconds
+to rendering a forged document. A Halobacteria mutation attributes 0.40 of 0.51
+seconds to its parsing/formatting helper. Six affected test modules now use the
+existing JSON-as-YAML forgery pattern, retaining digest recomputation, every
+mutation, independent source validation and real guarded-write tests. The two
+Halobacteria mutation helpers and mock builders use the existing safe runtime
+loader. A profiled late-edit guard spent 3.21 of 6.84 call seconds in the mock
+builder's repeated Python YAML parses. Production writers, scientific assertions
+and fixture data do not change.
+
+Positive controls exercise every valid record through the same serialization
+and independent audit. They caught S608's byte-exact no-op contract: the helper
+preserves original bytes when the document is unchanged, and a dedicated test
+still rejects a formatting-only rewrite of S608. No audit guard was relaxed.
+The four-family regression run passes all 1,603 tests, including guarded
+application/readback/no-op cases; the artifact inventory has 31 passing tests.
+The two Halobacteria modules pass all 534 tests after the mock-builder change;
+their guarded apply/readback/no-op calls take 3.05 and 9.03 seconds locally.
+The full CI, coverage, call-budget and merge-queue requirements remain unchanged.

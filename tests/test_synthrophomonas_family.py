@@ -24,9 +24,33 @@ DOCS = {
 
 
 def rewritten(item, after):
-    item["after_text"] = repair.runner.render(item["before_text"], after).decode()
+    # Forgery checks need valid YAML, not repeated production formatting.
+    # A retained record still has a byte-exact no-op contract.
+    item["after_text"] = (
+        item["before_text"]
+        if after == DOCS[item["key"]][0]
+        else json.dumps(after, ensure_ascii=False)
+    )
     item["after_sha256"] = repair.runner.sha(item["after_text"].encode())
     return item
+
+
+@pytest.mark.parametrize("key", ITEMS)
+def test_forgery_serialization_accepts_every_unchanged_record(key):
+    before, after = copy.deepcopy(DOCS[key])
+    item = rewritten(copy.deepcopy(ITEMS[key]), after)
+    assert repair.runner.load_yaml(item["after_text"]) == after
+    assert audit.check(before, after, item)["source_nodes"] == len(item["lineage"])
+
+
+def test_retained_record_still_rejects_formatting_only_changes():
+    before, after = copy.deepcopy(DOCS["S608"])
+    item = copy.deepcopy(ITEMS["S608"])
+    item["after_text"] = json.dumps(after, ensure_ascii=False)
+    item["after_sha256"] = repair.runner.sha(item["after_text"].encode())
+    assert repair.runner.load_yaml(item["after_text"]) == before == after
+    with pytest.raises(AssertionError):
+        audit.check(before, after, item)
 
 
 @pytest.mark.parametrize("key", ITEMS)

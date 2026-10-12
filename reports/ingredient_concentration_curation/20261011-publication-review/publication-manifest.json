@@ -99484,8 +99484,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/README.md",
-      "bytes": 10898,
-      "sha256": "d812d4fbe8123f9e1d82300e11df4287b3dc4c636454374e23db47a2bd75c813"
+      "bytes": 12762,
+      "sha256": "1690e5ab1a06b98b49e2dd3790df91bcc6971ad92649e7ebc419e79460e11254"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/prepare_pdf_fixtures.py",
@@ -100554,13 +100554,13 @@
     },
     {
       "path": "tests/test_halobacteria_ingredient_family.py",
-      "bytes": 10874,
-      "sha256": "2b86717271aea938288a4a50b2149a16c4106129ae3beaae36c398edadef8563"
+      "bytes": 11320,
+      "sha256": "06b3282a1fb278982603c90728c48bd9b42eb4d013e9e875d757e5ca5c030551"
     },
     {
       "path": "tests/test_halobacteria_variant_concentrations.py",
-      "bytes": 12071,
-      "sha256": "80b4eff624960d2e2fe83619f71129050d6c4be53e56332cfab1881a3d0abe2e"
+      "bytes": 12518,
+      "sha256": "6b21e4761cc66d5f2b52e9105d0930c8e70a1798a7254501533638919c83dd9a"
     },
     {
       "path": "tests/test_j261_variant.py",
@@ -100724,8 +100724,8 @@
     },
     {
       "path": "tests/test_methanofollis_family.py",
-      "bytes": 13880,
-      "sha256": "967d2e55a423d2fccdc3ea213a28628f9a690d4b77078ec7ebab89dee74e81a0"
+      "bytes": 14410,
+      "sha256": "d024217bbdd8e0994c482477a42485c4799c0b945d1483f2c6bbd3928793fd88"
     },
     {
       "path": "tests/test_methanogen_merge_retention.py",
@@ -100854,13 +100854,13 @@
     },
     {
       "path": "tests/test_rumen_bacteria_family.py",
-      "bytes": 13909,
-      "sha256": "4fabfda109e7a4105722e156ff591eb8e8b8b0144ddf3898f9539de75677cb6a"
+      "bytes": 14439,
+      "sha256": "8ab8ce75d16917f637bf46a9496aae8e8d75e00203182d0bf2440f6868291092"
     },
     {
       "path": "tests/test_ruminococcus_albus_family.py",
-      "bytes": 10878,
-      "sha256": "4d798d631ec050acb0a7a50ccbf80383d884d54fbea9d7886d3e432e904cc97b"
+      "bytes": 11408,
+      "sha256": "9ca4f5854a571ac7decb2724d3f39e533c181e8c026e3615ad840873bfcb19d7"
     },
     {
       "path": "tests/test_schema_docs_command.py",
@@ -100899,8 +100899,8 @@
     },
     {
       "path": "tests/test_synthrophomonas_family.py",
-      "bytes": 16266,
-      "sha256": "95349e10cba0662149acfbd8ae4dd26fccb359e30374ccbbe876a4c38bdaf64f"
+      "bytes": 17278,
+      "sha256": "dc13e0d07a502ac5b01ed29ac9f9593743ce3be0e8bf4e6d0839484fe2bb8377"
     },
     {
       "path": "tests/test_togo_first_pair_concentrations.py",
@@ -102080,5 +102080,5 @@
     "reports/ingredient_concentration_curation/20261011-publication-review/publication-manifest.json"
   ],
   "dependency_closure_parent_commit": "0c73c10a86577581ffa858b3e21c89fde50dd009",
-  "followup_parent_commit": "a9fe45da121e3fbf8f54e11edb5dc6b2563e1def"
+  "followup_parent_commit": "1e02daa498645948c38dce2ba59f4ed735faa72c"
 }

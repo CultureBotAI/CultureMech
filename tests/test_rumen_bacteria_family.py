@@ -35,10 +35,21 @@ def test_each_source_node_rejects_invented_amount_even_after_rehash(key, path):
     item = copy.deepcopy(ITEMS[key])
     before, after = copy.deepcopy(DOCS[key])
     audit.get(after, path)["concentration"] = {"value": "876543", "unit": "G_PER_L"}
-    item["after_text"] = repair.runner.render(item["before_text"], after).decode()
+    # Forgery checks need valid YAML, not repeated production formatting.
+    item["after_text"] = json.dumps(after, ensure_ascii=False)
     item["after_sha256"] = repair.runner.sha(item["after_text"].encode())
     with pytest.raises(AssertionError):
         audit.check(before, after, item)
+
+
+@pytest.mark.parametrize("key", ITEMS)
+def test_forgery_serialization_accepts_every_unchanged_record(key):
+    item = copy.deepcopy(ITEMS[key])
+    before, after = copy.deepcopy(DOCS[key])
+    item["after_text"] = json.dumps(after, ensure_ascii=False)
+    item["after_sha256"] = repair.runner.sha(item["after_text"].encode())
+    assert repair.runner.load_yaml(item["after_text"]) == after
+    assert audit.check(before, after, item)["source_nodes"] == len(item["lineage"])
 
 
 @pytest.mark.parametrize("key", ITEMS)
