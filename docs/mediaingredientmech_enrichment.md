@@ -14,10 +14,9 @@ The packaged files are:
 - `src/culturemech/data/mediaingredientmech/label_index.csv`
 - `src/culturemech/data/mediaingredientmech/label_index.metadata.json`
 
-The current pin is MIM commit
-`9f09e4fb97fb0e6cbbd6f25baca40b36512adb88`: 9,876 data rows, 922,191
-bytes, SHA-256
-`a36cd4683feb89e2fc2a1721dc15008d1e10c12044e89a36c27b6621a8aaf262`.
+The current pin (MIM commit, row count, byte count and SHA-256) is recorded in
+`label_index.metadata.json`, which `scripts/refresh_mim_label_index.py` rewrites
+on every bump; this page does not copy those values, so it cannot go stale (#538).
 Metadata also fixes the repository, source path, seven-column header, row count,
 and consumer-contract version. There is no moving-branch lookup in a normal
 build.
