@@ -51,12 +51,18 @@ CORPUS_TEST_FILES = {
     "test_sssom_generation.py",
 }
 INTEGRATION_TEST_FILES = {"test_kg_microbe_integration.py"}
+MAX_TEST_ID_BYTES = 4096
 
 
 def pytest_collection_modifyitems(items) -> None:
     """Assign every test to exactly one documented execution tier."""
     corpus_source_cache: dict[Path, bool] = {}
     for item in items:
+        if len(item.nodeid.encode("utf-8")) > MAX_TEST_ID_BYTES:
+            raise pytest.UsageError(
+                f"Test ID exceeds {MAX_TEST_ID_BYTES} UTF-8 bytes in {item.path.name}; "
+                "use explicit pytest.param(..., id=...) names, not payload contents."
+            )
         if item.path not in corpus_source_cache:
             corpus_source_cache[item.path] = any(
                 token in item.path.read_text(errors="replace")

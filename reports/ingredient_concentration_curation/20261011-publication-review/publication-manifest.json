@@ -99494,8 +99494,8 @@
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/README.md",
-      "bytes": 19890,
-      "sha256": "8e71be7b31eb98d915475d069d833f0a6048f7c43a9ee0be3895df33773e8cc1"
+      "bytes": 21698,
+      "sha256": "a54bf7e9eaee583e45dc0237d263cb19798e0ab85f34b20afcdf9c2778304e50"
     },
     {
       "path": "reports/ingredient_concentration_curation/20261011-publication-review/prepare_pdf_fixtures.py",
@@ -100069,8 +100069,8 @@
     },
     {
       "path": "tests/conftest.py",
-      "sha256": "8ed75c396f430b6a5c00b2989ebd0d3971dc8df71463c3aed54fc85bc0a531f6",
-      "bytes": 10773
+      "sha256": "e925f488086bef7819f1e93a2de912ba939bab3f52f24efb92ba0c599aca2f61",
+      "bytes": 11089
     },
     {
       "path": "tests/fixtures/curation_mim/README.md",
@@ -100829,8 +100829,8 @@
     },
     {
       "path": "tests/test_recipe_pdf_references.py",
-      "bytes": 16945,
-      "sha256": "1866813b57865ebfd936832043a13a3eca5ee034d78454b468105621fc9f6576"
+      "bytes": 17272,
+      "sha256": "fab6aaad93ab789311786456d11be1475e62034404472ea0ceec7abef36e561f"
     },
     {
       "path": "tests/test_recipe_references.py",
@@ -100904,8 +100904,8 @@
     },
     {
       "path": "tests/test_slow_test_budget.py",
-      "sha256": "73b53e81d53894129c088ed1a06773297ff7901d1b1ac40274ccb018a3d8555e",
-      "bytes": 8375
+      "sha256": "f595700c7b2a0c7ee28314584c62bcc9ddedf91e36760055ebd3f8a1ee04b117",
+      "bytes": 10445
     },
     {
       "path": "tests/test_solution_concentration_batch.py",
@@ -102125,5 +102125,5 @@
     "reports/ingredient_concentration_curation/20261011-publication-review/publication-manifest.json"
   ],
   "dependency_closure_parent_commit": "0c73c10a86577581ffa858b3e21c89fde50dd009",
-  "followup_parent_commit": "f449360d65e47cf3639c2ef2d374293e864547fe"
+  "followup_parent_commit": "9665e7d077c60acbd6b979d0306b8657f21d606a"
 }

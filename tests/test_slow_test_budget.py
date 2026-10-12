@@ -1,4 +1,4 @@
-"""Parallel execution must retain complete timing and coverage measurements."""
+"""Test diagnostics stay bounded; parallel timing and coverage stay complete."""
 
 import importlib.util
 import os
@@ -21,6 +21,57 @@ def guard():
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
+
+
+@pytest.mark.parametrize("char,count", [("x", 4096), ("\u00e9", 2048)])
+def test_collection_accepts_ids_at_the_byte_limit(guard, char, count):
+    markers = []
+    item = SimpleNamespace(
+        nodeid=char * count,
+        path=Path(__file__),
+        get_closest_marker=lambda name: None,
+        fixturenames=(),
+        add_marker=markers.append,
+    )
+    guard.pytest_collection_modifyitems([item])
+    assert len(markers) == 1
+
+
+@pytest.mark.parametrize("char,count", [("x", 4097), ("\u00e9", 2049)])
+def test_collection_rejects_long_ids_without_echoing_them(guard, char, count):
+    item = SimpleNamespace(nodeid=char * count, path=Path("oversized.py"))
+    with pytest.raises(pytest.UsageError, match="exceeds 4096 UTF-8 bytes") as error:
+        guard.pytest_collection_modifyitems([item])
+    assert len(str(error.value)) < 200
+    assert char * 100 not in str(error.value)
+
+
+@pytest.mark.parametrize("compact", [False, True])
+def test_real_collection_requires_compact_ids_but_keeps_large_payloads(tmp_path, compact):
+    (tmp_path / "pytest.ini").write_text("[pytest]\nmarkers =\n    fast: isolated\n")
+    (tmp_path / "conftest.py").write_text(CONTRACT.read_text())
+    payload = 'pytest.param(b"x" * 5000, id="oversized-payload")' if compact else 'b"x" * 5000'
+    (tmp_path / "test_payload.py").write_text(
+        f'import pytest\n@pytest.mark.parametrize("payload", [{payload}])\n'
+        "def test_payload(payload):\n    assert len(payload) == 5000\n"
+    )
+    env = {
+        key: value
+        for key, value in os.environ.items()
+        if not key.startswith(("PYTEST_", "COV_CORE_", "COVERAGE_")) and key != "PYTHONPATH"
+    }
+    result = subprocess.run(
+        [sys.executable, "-m", "pytest", "-q", "--no-cov"],
+        cwd=tmp_path,
+        env=env,
+        capture_output=True,
+        text=True,
+        timeout=60,
+    )
+    output = result.stdout + result.stderr
+    assert result.returncode == (0 if compact else 4)
+    assert ("1 passed" if compact else "Test ID exceeds 4096 UTF-8 bytes") in output
+    assert len(output) < 4096
 
 
 def session(*, parallel=False, worker=False):

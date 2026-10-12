@@ -315,3 +315,31 @@ with all 1,295 call receipts reconciled across four workers. This includes the
 negative timing-receipt and combined-coverage subprocess controls, both large
 concentration cohorts, artifact checks and workflow contracts. Full required
 CI remains the merge prerequisite; local cohort timing is not a CI guarantee.
+
+### Bounded Diagnostic IDs
+
+The exact `9665e7d077` clean checkout passes all 19,470 collected cases locally:
+19,445 passed, 25 skipped, 12 third-party warnings in 667.41s, with 33.63%
+coverage and 19,456 call timings reconciled across four workers. The 120-second
+call gate passes. This diagnostic uses a separate macOS environment with Koza,
+the existing ontology cache, and the documented UMAP/LLVM exclusions; it does
+not substitute for Linux CI. Its tracked and untracked checkout stays clean.
+
+Issue 590 identifies a concrete logging defect: the oversized PDF-response
+parameter has no explicit ID, so pytest incorporates its entire payload into
+the node ID. The clean verbose log contains two lines totaling 10,486,000 bytes;
+the longest is 5,243,010 bytes. Every other line is at most 333 bytes. GitHub's
+[runner issue 1031](https://github.com/actions/runner/issues/1031) documents
+severe slowdown from long log lines. This is a plausible explanation for the
+CI/local discrepancy, not a claimed CI pass or proven sole cause.
+
+All eight PDF bad-response cases now have compact explicit IDs. AST comparison
+confirms identical payloads, options, expected errors, function arguments and
+test body. The oversized payload and rejection/cache assertions are unchanged.
+Collection rejects IDs exceeding 4,096 UTF-8 bytes with a bounded message that
+does not echo the payload. Six controls cover ASCII and multibyte boundaries,
+real rejection before execution, and successful execution of a large payload
+when its ID is compact. The focused four-worker run passes 116 tests, with
+matching timing receipts and a maximum output line of 202 bytes. Whole local
+collection passes all 19,817 cases, including 341 additional local Markdown
+cases. No test selection, scientific assertion or existing gate is relaxed.

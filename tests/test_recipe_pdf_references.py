@@ -237,14 +237,20 @@ def test_pdf_symlink_cache_rejected(config, refresh):
 @pytest.mark.parametrize(
     "payload,options,error",
     [
-        (b"%PDF-1.4 broken", {}, "source_format"),
-        (b"<html>maintenance</html>", {}, "source_format"),
-        (b"%PDF-1.4", {"media_type": "text/html"}, "source_format"),
-        (b"%PDF-1.4", {"media_type": ""}, "source_format"),
-        (b"%PDF-1.4", {"status": 302}, "source_access"),
-        (b"%PDF-1.4", {"status": 404}, "source_access"),
-        (b"%PDF-1.4", {"url": "https://example.org/other.pdf"}, "source_access"),
-        (b"x" * (rr.MAX_RESPONSE_BYTES + 1), {}, "source_format"),
+        pytest.param(b"%PDF-1.4 broken", {}, "source_format", id="broken-pdf"),
+        pytest.param(b"<html>maintenance</html>", {}, "source_format", id="html-body"),
+        pytest.param(
+            b"%PDF-1.4", {"media_type": "text/html"}, "source_format", id="html-content-type"
+        ),
+        pytest.param(b"%PDF-1.4", {"media_type": ""}, "source_format", id="missing-content-type"),
+        pytest.param(b"%PDF-1.4", {"status": 302}, "source_access", id="redirect-status"),
+        pytest.param(b"%PDF-1.4", {"status": 404}, "source_access", id="not-found"),
+        pytest.param(
+            b"%PDF-1.4", {"url": "https://example.org/other.pdf"}, "source_access", id="changed-url"
+        ),
+        pytest.param(
+            b"x" * (rr.MAX_RESPONSE_BYTES + 1), {}, "source_format", id="oversized-response"
+        ),
     ],
 )
 def test_pdf_bad_responses_fail_and_are_not_cached(config, payload, options, error):
