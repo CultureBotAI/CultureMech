@@ -18,6 +18,7 @@ from culturemech.ingredients.mim_label_index import (
     MIMLabelIndex,
     ResolutionSource,
     get_default_mim_label_index,
+    label_hydrate_count,
 )
 
 pytestmark = pytest.mark.fast
@@ -166,6 +167,137 @@ def test_merged_tombstone_resolves_only_when_a_live_record_holds_the_identifier(
 
     with pytest.raises(LabelIndexError, match="not held by a live MAPPED row"):
         MIMLabelIndex.from_csv_text(_csv(_row("Legacy", "CHEBI:1", mapping_status="REJECTED")))
+
+
+@pytest.mark.parametrize(
+    ("label", "count"),
+    [
+        ("MgSO4·7H2O", 7),
+        ("MgSO4 x 7 H2O", 7),
+        ("MgSO4x7H2O", 7),
+        ("MgSO4 x H2O", 1),
+        ("MgSO4 . H2O", 1),
+        ("Na2MoO4.H2O", 1),
+        ("Na2MoO4xH2O", 1),
+        ("NiCl2・H2O", 1),
+        ("CoCl2 x 6 H2O (0.1% w/v)", 6),
+        ("Cystein-HCl x 2 H2O (5% (w/v))", 2),
+        ("Na2SO4·10H₂O", 10),
+        ("magnesium sulfate heptahydrate", 7),
+        ("L-Cysteine hydrochloride monohydrate", 1),
+        ("calcium sulfate hemihydrate", 0.5),
+        ("anhydrous sodium acetate", 0),
+        ("sodium sulfate, anhydrous", 0),
+        ("MnSO4・xH2O", None),
+        ("MgSO4 x n H2O", None),
+        ("L-cysteine hydrochloride hydrate", None),
+        ("CaCl22H2O", None),
+        ("NaH2PO4", None),
+        ("H2O", None),
+        ("Magnesium sulfate", None),
+        ("MgSO4 heptahydrate x 1 H2O", None),
+    ],
+)
+def test_label_hydrate_count_reads_only_explicit_hydrate_statements(label, count):
+    assert label_hydrate_count(label) == count
+
+
+def _tombstone_index(*rows: dict[str, str]) -> MIMLabelIndex:
+    return MIMLabelIndex.from_csv_text(
+        _csv(
+            *rows,
+            _row("MgSO4 x 7 H2O", "CHEBI:31795"),
+            _row(
+                "magnesium sulfate heptahydrate",
+                "CHEBI:31795",
+                match_type="ontology_label",
+                preferred_term="MgSO4 x 7 H2O",
+            ),
+        )
+    )
+
+
+def test_tombstone_redirect_to_a_different_hydrate_fails_closed():
+    # MIM 6643131b tombstones monohydrate spellings onto the heptahydrate (#579).
+    index = _tombstone_index(
+        _row(
+            "MgSO4 x H2O",
+            "CHEBI:31795",
+            match_type="synonym",
+            preferred_term="MgSO4·7H2O",
+            mapping_status="REJECTED",
+        )
+    )
+    unresolved = index.resolve_label("MgSO4 x H2O")
+    assert unresolved.identifier is None
+    assert unresolved.resolution_source is ResolutionSource.AMBIGUOUS
+    assert "1 H2O" in unresolved.reason and "7 H2O" in unresolved.reason
+
+    fallback = index.resolve_label("MgSO4 x H2O", local_identifier="CHEBI:86378")
+    assert fallback.identifier == "CHEBI:86378"
+    assert fallback.resolution_source is ResolutionSource.AMBIGUOUS_LOCAL_FALLBACK
+    assert index.semantic_answers()["mgso4 x h2o"][:2] == (None, "hydrate_conflict")
+
+
+def test_tombstone_with_matching_or_unstated_hydrate_still_redirects():
+    index = _tombstone_index(
+        _row("MgSO4.7H2O", "CHEBI:31795", match_type="synonym", mapping_status="REJECTED"),
+        _row("Epsom salt", "CHEBI:31795", match_type="synonym", mapping_status="REJECTED"),
+        _row("MgSO4 x n H2O", "CHEBI:31795", match_type="synonym", mapping_status="REJECTED"),
+    )
+    for label in ("MgSO4.7H2O", "Epsom salt", "MgSO4 x n H2O"):
+        decision = index.resolve_label(label)
+        assert decision.identifier == "CHEBI:31795", label
+        assert decision.resolution_source is ResolutionSource.MIM_EXACT
+
+
+def test_tombstone_target_hydrate_comes_from_the_identity_ontology_label():
+    # The tombstone's preferred_term names a misnamed MIM record; the identity's
+    # ontology label still says heptahydrate, so a heptahydrate label is fine.
+    index = _tombstone_index(
+        _row(
+            "MgSO4x7H2O",
+            "CHEBI:31795",
+            match_type="synonym",
+            preferred_term="MgSO4·H2O",
+            mapping_status="REJECTED",
+        )
+    )
+    assert index.resolve_label("MgSO4x7H2O").identifier == "CHEBI:31795"
+
+
+def test_tombstone_falls_back_to_preferred_term_without_an_ontology_label():
+    index = MIMLabelIndex.from_csv_text(
+        _csv(
+            _row(
+                "anhydrous sodium acetate",
+                "CHEBI:32138",
+                match_type="synonym",
+                preferred_term="Sodium acetate·3H2O",
+                mapping_status="REJECTED",
+            ),
+            _row("Sodium acetate·3H2O", "CHEBI:32138"),
+        )
+    )
+    decision = index.resolve_label("anhydrous sodium acetate")
+    assert decision.identifier is None
+    assert decision.resolution_source is ResolutionSource.AMBIGUOUS
+
+
+def test_mapped_rows_are_not_second_guessed_by_the_hydrate_guard():
+    # A MAPPED row is MIM's curated answer; only merge tombstones are checked.
+    index = _tombstone_index(
+        _row("MgSO4 x H2O", "CHEBI:31795", match_type="synonym", preferred_term="MgSO4 x 7 H2O")
+    )
+    assert index.resolve_label("MgSO4 x H2O").identifier == "CHEBI:31795"
+
+
+@pytest.mark.parametrize("label", ["MgSO4 x H2O", "MgSO4 . H2O", "Na2MoO4.H2O", "Na2MoO4xH2O"])
+def test_packaged_index_refuses_known_cross_hydrate_tombstones(label: str):
+    # Regressions reported in #537 and filed upstream as MediaIngredientMech#811.
+    decision = get_default_mim_label_index().resolve_label(label)
+    assert decision.identifier is None
+    assert decision.resolution_source is ResolutionSource.AMBIGUOUS
 
 
 def test_invalid_retirement_is_authoritatively_unmapped():

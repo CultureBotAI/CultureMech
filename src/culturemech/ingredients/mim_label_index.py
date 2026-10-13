@@ -11,6 +11,10 @@ only weaker normalization collapses whitespace, ASCII hyphen, and underscore;
 digits and chemical punctuation are preserved.  A weak collision is accepted
 only when every matching MIM label group independently yields the same safe
 answer.
+
+A merge tombstone (``REJECTED`` row) redirects its label to a live identity.
+When the label and that identity state different hydrate counts, the redirect
+fails closed instead of publishing the wrong hydrate (#579).
 """
 
 from __future__ import annotations
@@ -65,6 +69,33 @@ _INDEX_NAME = "label_index.csv"
 _METADATA_NAME = "label_index.metadata.json"
 _FULL_SHA = re.compile(r"[0-9a-f]{40}\Z")
 _WEAK_SEPARATORS = re.compile(r"[\s\-_]+")
+_SUBSCRIPT_DIGITS = str.maketrans("₀₁₂₃₄₅₆₇₈₉", "0123456789")
+_HYDRATE_PREFIXES = {
+    "hemi": 0.5,
+    "mono": 1,
+    "sesqui": 1.5,
+    "di": 2,
+    "tri": 3,
+    "tetra": 4,
+    "penta": 5,
+    "hexa": 6,
+    "hepta": 7,
+    "octa": 8,
+    "nona": 9,
+    "deca": 10,
+    "dodeca": 12,
+}
+_HYDRATE_WORD = re.compile(
+    r"\b(" + "|".join(sorted(_HYDRATE_PREFIXES, key=len, reverse=True)) + r")hydrate\b",
+    re.IGNORECASE,
+)
+_ANHYDROUS_WORD = re.compile(r"\banhydrous\b", re.IGNORECASE)
+# A formula hydrate: a separator (dot, middle dot, "x", ...) then an optional
+# count, then H2O.  "x" or "n" as the count means a variable hydrate.
+_HYDRATE_FORMULA = re.compile(
+    r"\S\s*(?:[·・•∙⋅*.]|\s[x×]\s|[x×])\s*(?P<count>\d+(?:\.\d+)?|[nx])?\s*H2O(?![a-z0-9])",
+    re.IGNORECASE,
+)
 
 
 class LabelIndexError(ValueError):
@@ -126,6 +157,31 @@ def strong_label_key(value: str) -> str:
     return unicodedata.normalize("NFC", value).strip().casefold()
 
 
+def label_hydrate_count(label: str) -> float | None:
+    """Return the hydrate count a label states explicitly, or ``None``.
+
+    ``None`` covers labels that state no hydrate, a variable hydrate
+    (``xH2O``, ``n H2O``, bare "hydrate"), or contradictory counts.  Anhydrous
+    labels return ``0``.
+    """
+
+    text = unicodedata.normalize("NFKC", label).translate(_SUBSCRIPT_DIGITS)
+    counts: set[float] = set()
+    for match in _HYDRATE_WORD.finditer(text):
+        counts.add(float(_HYDRATE_PREFIXES[match.group(1).casefold()]))
+    if _ANHYDROUS_WORD.search(text):
+        counts.add(0.0)
+    for match in _HYDRATE_FORMULA.finditer(text):
+        count = match.group("count")
+        if count is None:
+            counts.add(1.0)
+        elif count.casefold() in {"n", "x"}:
+            return None
+        else:
+            counts.add(float(count))
+    return counts.pop() if len(counts) == 1 else None
+
+
 def weak_label_key(value: str) -> str:
     """Weak key that preserves formula punctuation and all hydration digits."""
 
@@ -167,6 +223,7 @@ class MIMLabelIndex:
         self._live_identifiers = frozenset(
             row.identifier for row in rows if row.mapping_status == "MAPPED"
         )
+        self._identity_hydrates = _identity_hydrate_counts(rows)
 
     @classmethod
     def from_csv_bytes(
@@ -327,7 +384,15 @@ class MIMLabelIndex:
                 "MIM explicitly leaves this label unmapped; local grounding suppressed",
             )
 
-        if len(groups) == 1 and states[0][0] == "undecided":
+        if len(groups) == 1 and states[0][0] == "hydrate_conflict":
+            conflict = self._tombstone_hydrate_conflict(representative)
+            assert conflict is not None  # the state is derived from the same check
+            label_count, target_count = conflict
+            reason = (
+                f"MIM merge tombstone redirects a label stating {_format_hydrate(label_count)} "
+                f"to an identity stating {_format_hydrate(target_count)}"
+            )
+        elif len(groups) == 1 and states[0][0] == "undecided":
             # Name the status only when it is the whole answer; across several
             # weak-matched groups the conflict between them is the reason (#522).
             reason = f"MIM curation of this label is unfinished ({representative.mapping_status})"
@@ -375,8 +440,50 @@ class MIMLabelIndex:
         if first.identifier.startswith("UNMAPPED_"):
             return "unmapped", first
         if first.identifier in self._live_identifiers:
+            if self._tombstone_hydrate_conflict(first):
+                return "hydrate_conflict", first
             return "mapped", first
         return "ambiguous", first  # constructor validation makes this defensive only
+
+    def _tombstone_hydrate_conflict(self, row: LabelIndexRow) -> tuple[float, float] | None:
+        """Label and target hydrate counts when a tombstone crosses hydrates."""
+
+        label_count = label_hydrate_count(row.label)
+        if label_count is None:
+            return None
+        if row.identifier in self._identity_hydrates:
+            target_count = self._identity_hydrates[row.identifier]
+        else:
+            target_count = label_hydrate_count(row.preferred_term)
+        if target_count is None or target_count == label_count:
+            return None
+        return label_count, target_count
+
+
+def _identity_hydrate_counts(rows: Sequence[LabelIndexRow]) -> dict[str, float | None]:
+    """Hydrate count each identity's own ontology label states.
+
+    MIM preferred terms name curation records, and several records can share
+    one identity under differently hydrated names; the ontology label describes
+    the identity itself.  Disagreeing ontology labels map to ``None``.
+    """
+
+    counts: dict[str, set[float | None]] = defaultdict(set)
+    for row in rows:
+        if (
+            row.match_type == "ontology_label"
+            and row.mapping_status == "MAPPED"
+            and row.identifier == row.ontology_id
+        ):
+            counts[row.identifier].add(label_hydrate_count(row.label))
+    return {
+        identifier: next(iter(values)) if len(values) == 1 else None
+        for identifier, values in counts.items()
+    }
+
+
+def _format_hydrate(count: float) -> str:
+    return f"{count:g} H2O"
 
 
 def _mim_decision(
