@@ -84,16 +84,27 @@ _HYDRATE_PREFIXES = {
     "nona": 9,
     "deca": 10,
     "dodeca": 12,
+    "hemipenta": 2.5,
+    "hemihepta": 3.5,
+    "octadeca": 18,
 }
+# "hydrat" also accepts the German spelling ("Dihydrat").
 _HYDRATE_WORD = re.compile(
-    r"\b(" + "|".join(sorted(_HYDRATE_PREFIXES, key=len, reverse=True)) + r")hydrate\b",
+    r"\b(" + "|".join(sorted(_HYDRATE_PREFIXES, key=len, reverse=True)) + r")hydrate?\b",
     re.IGNORECASE,
 )
 _ANHYDROUS_WORD = re.compile(r"\banhydrous\b", re.IGNORECASE)
-# A formula hydrate: a separator (dot, middle dot, "x", ...) then an optional
-# count, then H2O.  "x" or "n" as the count means a variable hydrate.
+# A formula hydrate: a separator, an optional count, then H2O.  "x" or "n" as
+# the count means a variable hydrate.  A middle dot is unambiguous after any
+# token; ".", "*", "x", or a hyphen or space before a digit count must follow a
+# formula token ("dist. H2O", "Borax H2O" and "pH 7.0 H2O" are not hydrates).
+# The lookahead makes matches overlap, so a second hydrate statement is seen
+# and can contradict the first.
 _HYDRATE_FORMULA = re.compile(
-    r"\S\s*(?:[·・•∙⋅*.]|\s[x×]\s|[x×])\s*(?P<count>\d+(?:\.\d+)?|[nx])?\s*H2O(?![a-z0-9])",
+    r"(?=(?:\S\s*[·・•∙⋅]"
+    r"|(?<![A-Za-z0-9])(?P<formula>(?-i:[A-Z])[A-Za-z0-9()\[\]]*?)"
+    r"\s*(?:[*.]|\s[x×]\s|[x×]|-(?=\d)|\s+(?=\d)))"
+    r"\s*(?P<count>\d+(?:\.\d+)?|[nx])?\s*H2O(?![a-z0-9]))",
     re.IGNORECASE,
 )
 
@@ -172,6 +183,9 @@ def label_hydrate_count(label: str) -> float | None:
     if _ANHYDROUS_WORD.search(text):
         counts.add(0.0)
     for match in _HYDRATE_FORMULA.finditer(text):
+        formula = match.group("formula")
+        if formula is not None and not _is_formula_token(formula):
+            continue
         count = match.group("count")
         if count is None:
             counts.add(1.0)
@@ -180,6 +194,12 @@ def label_hydrate_count(label: str) -> float | None:
         else:
             counts.add(float(count))
     return counts.pop() if len(counts) == 1 else None
+
+
+def _is_formula_token(token: str) -> bool:
+    """A chemical formula has a digit or two element capitals ("NaCl", "MgSO4")."""
+
+    return any(char.isdigit() for char in token) or sum(char.isupper() for char in token) >= 2
 
 
 def weak_label_key(value: str) -> str:
@@ -384,14 +404,21 @@ class MIMLabelIndex:
                 "MIM explicitly leaves this label unmapped; local grounding suppressed",
             )
 
+        keep_local = bool(local_identifier)
         if len(groups) == 1 and states[0][0] == "hydrate_conflict":
             conflict = self._tombstone_hydrate_conflict(representative)
-            assert conflict is not None  # the state is derived from the same check
+            if conflict is None:
+                raise LabelIndexError(f"hydrate conflict state without a conflict: {query_label!r}")
             label_count, target_count = conflict
             reason = (
                 f"MIM merge tombstone redirects a label stating {_format_hydrate(label_count)} "
                 f"to an identity stating {_format_hydrate(target_count)}"
             )
+            # A local term is kept only when its identity states the label's
+            # hydrate; otherwise it is just another wrong hydrate (#592).
+            if keep_local and self._identity_hydrates.get(local_identifier) != label_count:
+                keep_local = False
+                reason += f"; local identity does not state {_format_hydrate(label_count)}"
         elif len(groups) == 1 and states[0][0] == "undecided":
             # Name the status only when it is the whole answer; across several
             # weak-matched groups the conflict between them is the reason (#522).
@@ -400,7 +427,7 @@ class MIMLabelIndex:
             reason = "MIM label is chemically ambiguous"
         else:
             reason = "weak normalization reaches incompatible MIM label groups"
-        if local_identifier:
+        if keep_local:
             decision = _local_decision(
                 query_label,
                 local_identifier,
@@ -451,39 +478,43 @@ class MIMLabelIndex:
         label_count = label_hydrate_count(row.label)
         if label_count is None:
             return None
-        if row.identifier in self._identity_hydrates:
-            target_count = self._identity_hydrates[row.identifier]
-        else:
-            target_count = label_hydrate_count(row.preferred_term)
+        target_count = self._identity_hydrates.get(row.identifier)
         if target_count is None or target_count == label_count:
             return None
         return label_count, target_count
 
 
-def _identity_hydrate_counts(rows: Sequence[LabelIndexRow]) -> dict[str, float | None]:
-    """Hydrate count each identity's own ontology label states.
+def _identity_hydrate_counts(rows: Sequence[LabelIndexRow]) -> dict[str, float]:
+    """Hydrate count each identity states, for identities that state exactly one.
 
+    The identity's own ontology labels (any mapping status) decide when they
+    state a count.  Otherwise the preferred terms of its MAPPED records decide.
     MIM preferred terms name curation records, and several records can share
-    one identity under differently hydrated names; the ontology label describes
-    the identity itself.  Disagreeing ontology labels map to ``None``.
+    one identity under differently hydrated names, so they rank second.  Labels
+    stating no count are ignored; disagreeing counts give no entry.
     """
 
-    counts: dict[str, set[float | None]] = defaultdict(set)
+    ontology: dict[str, set[float]] = defaultdict(set)
+    preferred: dict[str, set[float]] = defaultdict(set)
     for row in rows:
-        if (
-            row.match_type == "ontology_label"
-            and row.mapping_status == "MAPPED"
-            and row.identifier == row.ontology_id
-        ):
-            counts[row.identifier].add(label_hydrate_count(row.label))
-    return {
-        identifier: next(iter(values)) if len(values) == 1 else None
-        for identifier, values in counts.items()
-    }
+        if row.match_type == "ontology_label" and row.identifier == row.ontology_id:
+            count = label_hydrate_count(row.label)
+            if count is not None:
+                ontology[row.identifier].add(count)
+        if row.mapping_status == "MAPPED":
+            count = label_hydrate_count(row.preferred_term)
+            if count is not None:
+                preferred[row.identifier].add(count)
+    counts: dict[str, float] = {}
+    for identifier in ontology.keys() | preferred.keys():
+        stated = ontology.get(identifier) or preferred[identifier]
+        if len(stated) == 1:
+            counts[identifier] = next(iter(stated))
+    return counts
 
 
 def _format_hydrate(count: float) -> str:
-    return f"{count:g} H2O"
+    return "anhydrous" if count == 0 else f"{count:g} H2O"
 
 
 def _mim_decision(
