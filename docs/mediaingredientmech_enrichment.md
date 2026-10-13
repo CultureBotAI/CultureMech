@@ -50,6 +50,17 @@ Resolution order is:
 6. Follow a `REJECTED` merge tombstone only when a live `MAPPED` row holds its
    identifier. `UNMAPPED_NNNN` is the valid invalid-retirement exception; a
    dangling ontology or registry identifier makes the artifact invalid.
+7. Refuse a `REJECTED` redirect whose label states a different explicit
+   hydrate count from its target identity (#579). An identity's count comes
+   from its own `ontology_label` rows when they state one, otherwise from the
+   preferred terms of its `MAPPED` records; MIM preferred terms name curation
+   records and can differ in hydration under one identity, so they rank
+   second, and disagreeing counts give no count. Variable hydrates (`xH2O`,
+   `n H2O`, bare "hydrate") and labels without a hydrate statement are not
+   checked. A local fallback is kept only when its identity states the
+   label's hydrate count; otherwise the label fails closed (#592). `MAPPED`
+   rows, including a `MAPPED` first row ahead of a tombstone in the same
+   label group, are MIM's curated answer and are not checked.
 
 There is no fuzzy matching. In particular, hydrate counts and formula
 punctuation are never discarded: an anhydrous ingredient and its hydrate are
