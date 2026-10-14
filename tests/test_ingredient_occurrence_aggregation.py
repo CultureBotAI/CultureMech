@@ -290,7 +290,12 @@ def test_a_reference_is_skipped_only_when_its_record_is_in_the_same_scan(
     ]
 
 
+UNMAPPED_STOCK_REAGENT = "CultureMech test-only nested reagent 604 order"
+
+
 def test_inline_stocks_sort_in_document_order(occurrence_module, tmp_path):
+    """The table and both summaries list ``solutions/2`` before ``solutions/10``."""
+
     corpus = tmp_path / "corpus"
     _write(
         corpus,
@@ -301,28 +306,221 @@ def test_inline_stocks_sort_in_document_order(occurrence_module, tmp_path):
             "physical_state": "LIQUID",
             "ingredients": [{"preferred_term": "EDTA"}],
             "solutions": [
-                {"preferred_term": f"Stock {index}", "composition": [{"preferred_term": "Biotin"}]}
+                {
+                    "preferred_term": f"Stock {index}",
+                    "composition": [
+                        {"preferred_term": "Biotin"},
+                        {"preferred_term": UNMAPPED_STOCK_REAGENT},
+                    ],
+                }
                 for index in range(11)
+            ],
+        },
+    )
+
+    result = occurrence_module.scan_ingredient_occurrences(corpus)
+    expected = [f"solutions/{index}/composition" for index in range(11)]
+
+    assert [row.component_field for row in result.occurrences] == ["ingredients"] + [
+        field for field in expected for _ in range(2)
+    ]
+    mapped = _mapped_entry(occurrence_module.build_mapped_output(result.occurrences), "Biotin")
+    assert [row["component_field"] for row in mapped["recipe_occurrences"]] == expected
+    unmapped = _unmapped_entry(
+        occurrence_module.build_unmapped_output(result.occurrences), UNMAPPED_STOCK_REAGENT
+    )
+    assert [row["component_field"] for row in unmapped["recipe_occurrences"]] == expected
+
+
+def test_reference_rules_cover_local_links_fallback_and_nested_stocks(occurrence_module, tmp_path):
+    """Which nested solutions count as references, and what lies below one.
+
+    A ``culturemech_term`` may name a medium as well as a solution record.  A
+    local link naming no scanned record falls back to the ``term.id``; with
+    neither, the stock is inline.  Nothing below a reference is expanded,
+    including inline stocks nested in its copy.
+    """
+
+    corpus = tmp_path / "corpus"
+    _write(
+        corpus,
+        "bacterial/shared_stock.yaml",
+        {
+            "id": "CultureMech:000007",
+            "preferred_term": "Shared stock",
+            "term": {"id": "mediadive.solution:7"},
+            "composition": [{"preferred_term": "Biotin"}],
+        },
+    )
+    _write(
+        corpus,
+        "bacterial/base_medium.yaml",
+        {
+            "id": "CultureMech:000008",
+            "name": "base_medium",
+            "physical_state": "LIQUID",
+            "ingredients": [{"preferred_term": "PABA"}],
+        },
+    )
+    _write(
+        corpus,
+        "bacterial/media.yaml",
+        {
+            "id": "CultureMech:000001",
+            "name": "references",
+            "physical_state": "LIQUID",
+            "ingredients": [{"preferred_term": "EDTA"}],
+            "solutions": [
+                {
+                    "preferred_term": "Base medium",
+                    "culturemech_term": {"id": "CultureMech:000008"},
+                    "composition": [{"preferred_term": "LINK TO A MEDIUM MUST NOT EXPAND"}],
+                },
+                {
+                    "preferred_term": "Shared stock",
+                    "culturemech_term": {"id": "CultureMech:999999"},
+                    "term": {"id": "mediadive.solution:7"},
+                    "composition": [{"preferred_term": "STALE LINK MUST FALL BACK"}],
+                },
+                {
+                    "preferred_term": "Stock with a stale link",
+                    "culturemech_term": {"id": "CultureMech:999999"},
+                    "composition": [{"preferred_term": "Nicotinic acid"}],
+                },
+                {
+                    "preferred_term": "Shared stock with a nested copy",
+                    "term": {"id": "mediadive.solution:7"},
+                    "composition": [{"preferred_term": "Biotin"}],
+                    "solutions": [
+                        {
+                            "preferred_term": "Inner stock",
+                            "composition": [
+                                {"preferred_term": "BELOW A REFERENCE MUST NOT EXPAND"}
+                            ],
+                        }
+                    ],
+                },
             ],
         },
     )
 
     rows = _rows(occurrence_module.scan_ingredient_occurrences(corpus))
 
-    assert [row["component_field"] for row in rows] == ["ingredients"] + [
-        f"solutions/{index}/composition" for index in range(11)
+    assert [
+        (row["component_field"], _ingredient_label(row))
+        for row in rows
+        if row["recipe_id"] == "CultureMech:000001"
+    ] == [
+        ("ingredients", "EDTA"),
+        ("solutions/2/composition", "Nicotinic acid"),
     ]
 
 
-def test_solution_record_rule_matches_the_kgx_solution_index(occurrence_module):
+def test_a_nested_composition_that_is_not_a_list_is_an_error(
+    occurrence_module, tmp_path, monkeypatch
+):
+    """The scanner's own guard, behind the closed schema that rejects this first."""
+
+    corpus = tmp_path / "corpus"
+    _write(
+        corpus,
+        "bacterial/media.yaml",
+        {
+            "id": "CultureMech:000001",
+            "name": "malformed_stock",
+            "physical_state": "LIQUID",
+            "ingredients": [{"preferred_term": "EDTA"}],
+            "solutions": [{"preferred_term": "Malformed stock", "composition": "Biotin"}],
+        },
+    )
+    monkeypatch.setattr(occurrence_module, "_schema_errors", lambda instance, source_path: [])
+
+    result = occurrence_module.scan_ingredient_occurrences(corpus)
+
+    assert [(error.category, error.path) for error in result.errors] == [
+        ("invalid_component_collection", "/solutions/0/composition")
+    ]
+    assert [row.component_field for row in result.occurrences] == ["ingredients"]
+
+
+def test_nested_expansion_matches_the_kgx_walk(occurrence_module, tmp_path, monkeypatch):
+    """The scan expands exactly the inline stocks for which KGX mints a node."""
+
+    from culturemech.export import kgx_export
+
+    corpus = tmp_path / "corpus"
+    _write(
+        corpus,
+        "bacterial/shared_stock.yaml",
+        {
+            "id": "CultureMech:000007",
+            "preferred_term": "Shared stock",
+            "term": {"id": "mediadive.solution:7"},
+            "composition": [{"preferred_term": "Biotin"}],
+        },
+    )
+    medium = {
+        "id": "CultureMech:000001",
+        "name": "parity",
+        "physical_state": "LIQUID",
+        "ingredients": [{"preferred_term": "EDTA"}],
+        "solutions": [
+            {
+                "preferred_term": "Inline stock",
+                "composition": [{"preferred_term": "Proteose peptone no. 2"}],
+                "solutions": [
+                    {
+                        "preferred_term": "Inner stock",
+                        "composition": [{"preferred_term": "Lipoic acid"}],
+                    },
+                    {
+                        "preferred_term": "Shared stock",
+                        "term": {"id": "mediadive.solution:7"},
+                        "composition": [{"preferred_term": "Biotin"}],
+                    },
+                ],
+            },
+            {
+                "preferred_term": "Local link",
+                "culturemech_term": {"id": "CultureMech:000007"},
+                "composition": [{"preferred_term": "Biotin"}],
+            },
+            {
+                "preferred_term": "Stock with no record",
+                "term": {"id": "mediadive.solution:999"},
+                "composition": [{"preferred_term": "Nicotinic acid"}],
+            },
+        ],
+    }
+    _write(corpus, "bacterial/media.yaml", medium)
+    monkeypatch.setenv(kgx_export.RECORDS_DIR_ENV, str(corpus))
+
+    def labels(solution: dict[str, Any]) -> list[str]:
+        return [row["preferred_term"] for row in solution.get("composition") or []]
+
+    kgx = sorted(
+        label
+        for _parent, solution, _target, minted in kgx_export._walk_solutions(medium, medium["id"])
+        if minted
+        for label in labels(solution)
+    )
+    scanned = sorted(
+        row.preferred_term
+        for row in occurrence_module.scan_ingredient_occurrences(corpus).occurrences
+        if row.recipe_id == medium["id"] and "/" in row.component_field
+    )
+
+    assert scanned == kgx == ["Lipoic acid", "Nicotinic acid", "Proteose peptone no. 2"]
+
+
+def test_solution_record_rule_matches_the_kgx_solution_index():
     """The scan treats a record as a standalone stock exactly when KGX indexes it."""
 
     from record_kinds import SOLUTION_TERM_PREFIXES
 
-    from culturemech.export.kgx_export import _SOLUTION_TERM_PREFIXES, PREFIX
+    from culturemech.export.kgx_export import _SOLUTION_TERM_PREFIXES
 
     assert SOLUTION_TERM_PREFIXES == _SOLUTION_TERM_PREFIXES
-    assert occurrence_module._LOCAL_RECORD_PREFIX == f"{PREFIX}:"
 
 
 def test_recipe_preferred_term_precedes_legacy_media_name(occurrence_module):

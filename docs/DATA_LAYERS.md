@@ -87,17 +87,25 @@ The traversal follows root schema shape: MediaRecipe-shaped records contribute
 The two fields are not concatenated, and solution placeholder `ingredients` are
 not counted. The `composition` of a stock written inline in a record's
 `solutions[]`, at any depth, is counted for that record, because it exists
-nowhere else (#604). A nested solution that references a standalone solution
-record in the same scan is not expanded; that record contributes its own
-`composition` once. This is direct containment, distinct from any transitive
+nowhere else (#604). A nested solution that references another record in the
+same scan, through a `culturemech_term` or a `term.id` that a standalone
+solution record carries, is not expanded; that record contributes its own
+components once. This is direct containment, distinct from any transitive
 recipe-to-solution expansion (#312). An inline copy's content beyond its
-referenced record is not counted (#606).
+referenced record is not counted (#607, #609).
 
 Every occurrence carries `(recipe_id, component_field, component_index)` as its
 stable coordinate. An inline stock's `component_field` is its path, such as
 `solutions/0/composition`. `recipe_id` is the root `CultureMech:NNNNNN` identifier;
 recipe labels are display metadata only. `source_path` is a POSIX path relative
 to the selected input root, so custom scans do not embed worktree locations.
+
+`concentration_value` and `concentration_unit` are relative to the row's own
+container: the medium for a MediaRecipe's root `ingredients`, the stock for a
+solution record's `composition` and for an inline stock's rows (#611).
+`component_field` and `record_class` tell them apart. The summaries'
+`concentration_info` lists an ingredient's distinct values from every
+container without saying which (#616).
 `occurrence_count` is the number of complete rows and `distinct_recipe_count`
 is the number of unique stable recipe IDs, so neither count can be clipped by
 an examples limit.

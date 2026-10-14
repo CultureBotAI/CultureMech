@@ -21,7 +21,7 @@ import os
 import stat
 import tempfile
 from collections import Counter, defaultdict
-from collections.abc import Callable, Mapping, Sequence
+from collections.abc import Callable, Container, Mapping, Sequence
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, TextIO, cast
@@ -294,9 +294,6 @@ def _occurrence_from_descriptor(
     )
 
 
-_LOCAL_RECORD_PREFIX = "CultureMech:"
-
-
 def _field_order(component_field: str) -> tuple[tuple[int, int | str], ...]:
     """Order ``component_field`` paths by position rather than character by character."""
 
@@ -305,26 +302,30 @@ def _field_order(component_field: str) -> tuple[tuple[int, int | str], ...]:
     )
 
 
-def _referenced_record(solution: Mapping[str, Any], solution_records: Mapping[str, str]) -> str:
-    """The record an inline solution names, or ``""`` when it names none.
+def _references_scanned_record(
+    solution: Mapping[str, Any],
+    scanned_records: Container[str],
+    solution_records: Container[str],
+) -> bool:
+    """Whether an inline solution names a record that is part of the same scan.
 
     Same precedence as ``kgx_export.nested_solution_target``: a
-    ``culturemech_term`` naming a CultureMech record, then a ``term.id`` that a
-    standalone solution record carries.
+    ``culturemech_term`` naming a record, then a ``term.id`` that a standalone
+    solution record carries. A ``culturemech_term`` naming no record in the scan
+    falls back to the ``term.id``, so a stale local link cannot count a scanned
+    stock's components a second time.
     """
     local = solution.get("culturemech_term")
-    if isinstance(local, Mapping):
-        local_id = str(local.get("id", ""))
-        if local_id.startswith(_LOCAL_RECORD_PREFIX):
-            return local_id
+    if isinstance(local, Mapping) and str(local.get("id", "")) in scanned_records:
+        return True
     term = solution.get("term")
     term_id = term.get("id") if isinstance(term, Mapping) else None
-    return solution_records.get(term_id, "") if isinstance(term_id, str) else ""
+    return isinstance(term_id, str) and term_id in solution_records
 
 
 def _inline_solution_compositions(
     owner: Mapping[str, Any],
-    counted_elsewhere: Callable[[Mapping[str, Any]], bool],
+    is_reference: Callable[[Mapping[str, Any]], bool],
     prefix: str = "",
 ) -> list[tuple[str, Any]]:
     """``(component_field, composition)`` for every inline stock nested in ``owner``.
@@ -335,22 +336,24 @@ def _inline_solution_compositions(
     are direct occurrences of it, kept apart from root ingredients by a
     path-shaped ``component_field`` such as ``solutions/0/composition``.
 
-    Walking stops at a reference whose record contributes its own rows to the same
-    output: expanding it would count that record's components once per medium
-    (#312). Content an inline copy carries beyond its referenced record is not
-    counted; #606 tracks those divergent references.
+    Walking stops at a reference to a record in the same scan, which contributes
+    its own components there: expanding the reference would count them once per
+    medium (#312). Content an inline copy carries beyond its referenced record is
+    not counted; #607 and #609 track those copies. An inline stock with an empty
+    ``preferred_term`` is still counted, although the KGX export cannot mint a
+    node for it.
     """
     found: list[tuple[str, Any]] = []
     solutions = owner.get("solutions")
     if not isinstance(solutions, list):
         return found
     for index, solution in enumerate(solutions):
-        if not isinstance(solution, Mapping) or counted_elsewhere(solution):
+        if not isinstance(solution, Mapping) or is_reference(solution):
             continue
         path = f"{prefix}solutions/{index}"
         if "composition" in solution:
             found.append((f"{path}/composition", solution.get("composition")))
-        found.extend(_inline_solution_compositions(solution, counted_elsewhere, f"{path}/"))
+        found.extend(_inline_solution_compositions(solution, is_reference, f"{path}/"))
     return found
 
 
@@ -366,9 +369,9 @@ def scan_ingredient_occurrences(
     complete.
 
     Root components are collected while the files are read. Inline stocks are
-    collected afterwards, once the scan knows every record it emits rows for:
-    a nested reference is skipped only when its record is one of them, whatever
-    directory the scan starts from.
+    collected afterwards, once the scan knows every record it covers: a nested
+    reference is skipped only when its record is one of them, wherever the
+    referenced file sits below the input directory.
     """
 
     root = Path(input_dir)
@@ -388,10 +391,11 @@ def scan_ingredient_occurrences(
     errors: list[AggregationError] = []
     seen_keys: dict[tuple[str, str, int], str] = {}
     seen_recipe_ids: dict[str, str] = {}
-    # Standalone solution ``term.id`` -> record id, and every record that emitted
-    # rows: built from this scan's own parsed records, not from a second index.
-    solution_records: dict[str, str] = {}
-    counted_records: set[str] = set()
+    # Every record whose components this scan collects, and the standalone
+    # solution ``term.id`` values among them: built from the parsed records
+    # themselves, not from a second index of the files.
+    scanned_records: set[str] = set()
+    solution_records: set[str] = set()
     pending: list[tuple[dict[str, str], Mapping[str, Any]]] = []
 
     def emit(context: Mapping[str, str], component_field: str, components: Sequence[Any]) -> None:
@@ -577,17 +581,17 @@ def scan_ingredient_occurrences(
             "record_class": record_class,
         }
         emit(context, component_field, components)
-        counted_records.add(recipe_id)
+        scanned_records.add(recipe_id)
         if record_class == "SolutionRecipe":
-            solution_records[instance["term"]["id"]] = recipe_id
+            solution_records.add(instance["term"]["id"])
         if instance.get("solutions"):
             pending.append((context, instance))
 
-    def counted_elsewhere(solution: Mapping[str, Any]) -> bool:
-        return _referenced_record(solution, solution_records) in counted_records
+    def is_reference(solution: Mapping[str, Any]) -> bool:
+        return _references_scanned_record(solution, scanned_records, solution_records)
 
     for context, owner in pending:
-        for nested_field, nested in _inline_solution_compositions(owner, counted_elsewhere):
+        for nested_field, nested in _inline_solution_compositions(owner, is_reference):
             if not isinstance(nested, list):
                 errors.append(
                     _error(
