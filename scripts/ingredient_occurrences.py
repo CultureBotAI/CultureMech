@@ -3,8 +3,8 @@
 The source corpus has two root record contracts.  MediaRecipe-shaped records
 own ``ingredients``; SolutionRecipe-shaped records own ``composition``.  This
 module selects exactly one of those fields, adds the ``composition`` of every
-inline-only stock nested in the record's ``solutions[]`` (CultureMech#604;
-references to standalone solution records are not expanded, #312), records
+inline stock nested in the record's ``solutions[]`` (#604; a reference to a
+standalone solution record in the same scan is not expanded, #312), records
 every direct descriptor with stable coordinates, and resolves its identity
 through the pinned MediaIngredientMech label index introduced by #260.
 
@@ -31,8 +31,6 @@ from linkml.validator.report import Severity
 from record_kinds import has_solution_shape
 from validate_strict import _get_validator, classify, infer_target_class
 
-from culturemech.export.kgx_export import PREFIX as CULTUREMECH_PREFIX
-from culturemech.export.kgx_export import _index_records_under
 from culturemech.ingredients.mim_label_index import (
     GroundingDecision,
     ResolutionSource,
@@ -128,6 +126,12 @@ class IngredientOccurrence:
         """Stable occurrence coordinate within the CultureMech corpus."""
 
         return self.recipe_id, self.component_field, self.component_index
+
+    @property
+    def sort_key(self) -> tuple[Any, ...]:
+        """``key`` in document order, so ``solutions/2`` sorts before ``solutions/10``."""
+
+        return self.recipe_id, _field_order(self.component_field), self.component_index
 
     @property
     def is_resolved(self) -> bool:
@@ -290,46 +294,63 @@ def _occurrence_from_descriptor(
     )
 
 
-def _references_solution_record(solution: Mapping[str, Any], records: Mapping[str, str]) -> bool:
-    """Whether an inline solution points at a standalone solution record.
+_LOCAL_RECORD_PREFIX = "CultureMech:"
+
+
+def _field_order(component_field: str) -> tuple[tuple[int, int | str], ...]:
+    """Order ``component_field`` paths by position rather than character by character."""
+
+    return tuple(
+        (0, int(part)) if part.isdigit() else (1, part) for part in component_field.split("/")
+    )
+
+
+def _referenced_record(solution: Mapping[str, Any], solution_records: Mapping[str, str]) -> str:
+    """The record an inline solution names, or ``""`` when it names none.
 
     Same precedence as ``kgx_export.nested_solution_target``: a
-    ``culturemech_term`` naming a record, or a ``term.id`` that a standalone
-    solution record carries. That record contributes its own ``composition``
-    rows, so expanding the reference would count it once per medium (#312).
+    ``culturemech_term`` naming a CultureMech record, then a ``term.id`` that a
+    standalone solution record carries.
     """
     local = solution.get("culturemech_term")
-    if isinstance(local, Mapping) and str(local.get("id", "")).startswith(f"{CULTUREMECH_PREFIX}:"):
-        return True
+    if isinstance(local, Mapping):
+        local_id = str(local.get("id", ""))
+        if local_id.startswith(_LOCAL_RECORD_PREFIX):
+            return local_id
     term = solution.get("term")
     term_id = term.get("id") if isinstance(term, Mapping) else None
-    return isinstance(term_id, str) and term_id in records
+    return solution_records.get(term_id, "") if isinstance(term_id, str) else ""
 
 
 def _inline_solution_compositions(
-    owner: Mapping[str, Any], records: Mapping[str, str], prefix: str = ""
+    owner: Mapping[str, Any],
+    counted_elsewhere: Callable[[Mapping[str, Any]], bool],
+    prefix: str = "",
 ) -> list[tuple[str, Any]]:
-    """``(component_field, composition)`` for every inline-only nested solution.
+    """``(component_field, composition)`` for every inline stock nested in ``owner``.
 
     A recipe's ``solutions[]`` may hold stocks that exist nowhere else; #577 moved
-    2,175 ingredients of 360 media into them, and until CultureMech#604 none of
-    those reached the occurrence table. They belong to this recipe alone, so
-    their components are direct occurrences of it, kept apart from root
-    ingredients by a path-shaped ``component_field`` such as
-    ``solutions/0/composition``. Walking stops at references to standalone
-    records, exactly where the KGX export stops minting.
+    2,175 ingredients of 360 media into them, and until #604 none of those reached
+    the occurrence table. They belong to this recipe alone, so their components
+    are direct occurrences of it, kept apart from root ingredients by a
+    path-shaped ``component_field`` such as ``solutions/0/composition``.
+
+    Walking stops at a reference whose record contributes its own rows to the same
+    output: expanding it would count that record's components once per medium
+    (#312). Content an inline copy carries beyond its referenced record is not
+    counted; #606 tracks those divergent references.
     """
     found: list[tuple[str, Any]] = []
     solutions = owner.get("solutions")
     if not isinstance(solutions, list):
         return found
     for index, solution in enumerate(solutions):
-        if not isinstance(solution, Mapping) or _references_solution_record(solution, records):
+        if not isinstance(solution, Mapping) or counted_elsewhere(solution):
             continue
         path = f"{prefix}solutions/{index}"
         if "composition" in solution:
             found.append((f"{path}/composition", solution.get("composition")))
-        found.extend(_inline_solution_compositions(solution, records, f"{path}/"))
+        found.extend(_inline_solution_compositions(solution, counted_elsewhere, f"{path}/"))
     return found
 
 
@@ -343,6 +364,11 @@ def scan_ingredient_occurrences(
     by ``validate_strict.py``.  Any error makes the scan unsuitable for
     publication, but all files are still visited so the error report is
     complete.
+
+    Root components are collected while the files are read. Inline stocks are
+    collected afterwards, once the scan knows every record it emits rows for:
+    a nested reference is skipped only when its record is one of them, whatever
+    directory the scan starts from.
     """
 
     root = Path(input_dir)
@@ -362,7 +388,59 @@ def scan_ingredient_occurrences(
     errors: list[AggregationError] = []
     seen_keys: dict[tuple[str, str, int], str] = {}
     seen_recipe_ids: dict[str, str] = {}
-    solution_records = _index_records_under(root.as_posix())
+    # Standalone solution ``term.id`` -> record id, and every record that emitted
+    # rows: built from this scan's own parsed records, not from a second index.
+    solution_records: dict[str, str] = {}
+    counted_records: set[str] = set()
+    pending: list[tuple[dict[str, str], Mapping[str, Any]]] = []
+
+    def emit(context: Mapping[str, str], component_field: str, components: Sequence[Any]) -> None:
+        source_path = context["source_path"]
+        for index, descriptor in enumerate(components):
+            descriptor_path = f"/{component_field}/{index}"
+            if not isinstance(descriptor, Mapping):
+                errors.append(
+                    _error(
+                        source_path,
+                        "invalid_component",
+                        "ingredient descriptor must be a mapping",
+                        path=descriptor_path,
+                    )
+                )
+                continue
+            try:
+                occurrence = _occurrence_from_descriptor(
+                    **context,
+                    component_field=component_field,
+                    component_index=index,
+                    descriptor=descriptor,
+                    resolver=resolver,
+                )
+            except Exception as exc:  # noqa: BLE001 - report instead of silently skipping
+                errors.append(
+                    _error(
+                        source_path,
+                        "resolver_error",
+                        str(exc),
+                        path=descriptor_path,
+                        detail=type(exc).__name__,
+                    )
+                )
+                continue
+            previous_path = seen_keys.get(occurrence.key)
+            if previous_path is not None:
+                errors.append(
+                    _error(
+                        source_path,
+                        "duplicate_occurrence_key",
+                        "stable occurrence coordinate also appears in " + previous_path,
+                        path=descriptor_path,
+                        detail="|".join(map(str, occurrence.key)),
+                    )
+                )
+                continue
+            seen_keys[occurrence.key] = source_path
+            occurrences.append(occurrence)
 
     files = sorted(root.rglob("*.yaml"), key=lambda item: item.as_posix())
     if not files:
@@ -490,79 +568,39 @@ def scan_ingredient_occurrences(
             continue
 
         recipe_category = _cell(instance.get("category") or "UNKNOWN").upper()
-        collections = [(component_field, components)]
-        for nested_field, nested in _inline_solution_compositions(instance, solution_records):
+        context = {
+            "recipe_id": recipe_id,
+            "recipe_label": recipe_label,
+            "recipe_label_source": recipe_label_source,
+            "recipe_category": recipe_category,
+            "source_path": source_path,
+            "record_class": record_class,
+        }
+        emit(context, component_field, components)
+        counted_records.add(recipe_id)
+        if record_class == "SolutionRecipe":
+            solution_records[instance["term"]["id"]] = recipe_id
+        if instance.get("solutions"):
+            pending.append((context, instance))
+
+    def counted_elsewhere(solution: Mapping[str, Any]) -> bool:
+        return _referenced_record(solution, solution_records) in counted_records
+
+    for context, owner in pending:
+        for nested_field, nested in _inline_solution_compositions(owner, counted_elsewhere):
             if not isinstance(nested, list):
                 errors.append(
                     _error(
-                        source_path,
+                        context["source_path"],
                         "invalid_component_collection",
                         f"{nested_field} must be a list",
                         path=f"/{nested_field}",
                     )
                 )
                 continue
-            collections.append((nested_field, nested))
-        for component_field, components in collections:
-            for index, descriptor in enumerate(components):
-                descriptor_path = f"/{component_field}/{index}"
-                if not isinstance(descriptor, Mapping):
-                    errors.append(
-                        _error(
-                            source_path,
-                            "invalid_component",
-                            "ingredient descriptor must be a mapping",
-                            path=descriptor_path,
-                        )
-                    )
-                    continue
-                try:
-                    occurrence = _occurrence_from_descriptor(
-                        recipe_id=recipe_id,
-                        recipe_label=recipe_label,
-                        recipe_label_source=recipe_label_source,
-                        recipe_category=recipe_category,
-                        source_path=source_path,
-                        record_class=record_class,
-                        component_field=component_field,
-                        component_index=index,
-                        descriptor=descriptor,
-                        resolver=resolver,
-                    )
-                except Exception as exc:  # noqa: BLE001 - report instead of silently skipping
-                    errors.append(
-                        _error(
-                            source_path,
-                            "resolver_error",
-                            str(exc),
-                            path=descriptor_path,
-                            detail=type(exc).__name__,
-                        )
-                    )
-                    continue
-                previous_path = seen_keys.get(occurrence.key)
-                if previous_path is not None:
-                    errors.append(
-                        _error(
-                            source_path,
-                            "duplicate_occurrence_key",
-                            "stable occurrence coordinate also appears in " + previous_path,
-                            path=descriptor_path,
-                            detail="|".join(map(str, occurrence.key)),
-                        )
-                    )
-                    continue
-                seen_keys[occurrence.key] = source_path
-                occurrences.append(occurrence)
+            emit(context, nested_field, nested)
 
-    occurrences.sort(
-        key=lambda row: (
-            row.recipe_id,
-            row.component_field,
-            row.component_index,
-            row.source_path,
-        )
-    )
+    occurrences.sort(key=lambda row: row.sort_key + (row.source_path,))
     errors.sort(
         key=lambda row: (
             row.file,
@@ -941,7 +979,7 @@ def build_mapped_output(
     entries: list[dict[str, Any]] = []
     included_rows: list[IngredientOccurrence] = []
     for identifier, group in groups.items():
-        rows = sorted(group, key=lambda row: row.key + (row.source_path,))
+        rows = sorted(group, key=lambda row: row.sort_key + (row.source_path,))
         if len(rows) < min_occurrences:
             continue
         included_rows.extend(rows)
@@ -1025,7 +1063,7 @@ def build_unmapped_output(
     entries: list[dict[str, Any]] = []
     included_rows: list[IngredientOccurrence] = []
     for key, group in groups.items():
-        rows = sorted(group, key=lambda row: row.key + (row.source_path,))
+        rows = sorted(group, key=lambda row: row.sort_key + (row.source_path,))
         if len(rows) < min_occurrences:
             continue
         included_rows.extend(rows)

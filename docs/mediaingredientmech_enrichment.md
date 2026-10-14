@@ -127,8 +127,11 @@ Occurrence extraction follows the root record's schema shape:
 
 The fields are alternatives, not lists to concatenate. A solution's legacy
 `ingredients: [{preferred_term: See source for composition}]` stub is therefore
-not an occurrence, and nested `solutions[].composition` is not expanded once
-per referencing medium. The pipeline records direct containment only.
+not an occurrence. The `composition` of a stock written inline in a record's
+`solutions[]` counts for that record, under a path-shaped `component_field`
+such as `solutions/0/composition` (#604). A nested solution that references a
+standalone solution record in the same scan is not expanded once per
+referencing medium (#312). The pipeline records direct containment only.
 
 Every occurrence carries the stable coordinate
 `(recipe_id, component_field, component_index)`, where `recipe_id` is the root

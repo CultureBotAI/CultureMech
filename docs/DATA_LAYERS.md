@@ -84,12 +84,18 @@ MIM identity snapshot into five generated files under `output/`:
 
 The traversal follows root schema shape: MediaRecipe-shaped records contribute
 `ingredients`, while SolutionRecipe-shaped records contribute `composition`.
-The two fields are not concatenated, solution placeholder `ingredients` are not
-counted, and nested `solutions[].composition` is not expanded. This is direct
-root containment, distinct from any transitive recipe-to-solution expansion.
+The two fields are not concatenated, and solution placeholder `ingredients` are
+not counted. The `composition` of a stock written inline in a record's
+`solutions[]`, at any depth, is counted for that record, because it exists
+nowhere else (#604). A nested solution that references a standalone solution
+record in the same scan is not expanded; that record contributes its own
+`composition` once. This is direct containment, distinct from any transitive
+recipe-to-solution expansion (#312). An inline copy's content beyond its
+referenced record is not counted (#606).
 
 Every occurrence carries `(recipe_id, component_field, component_index)` as its
-stable coordinate. `recipe_id` is the root `CultureMech:NNNNNN` identifier;
+stable coordinate. An inline stock's `component_field` is its path, such as
+`solutions/0/composition`. `recipe_id` is the root `CultureMech:NNNNNN` identifier;
 recipe labels are display metadata only. `source_path` is a POSIX path relative
 to the selected input root, so custom scans do not embed worktree locations.
 `occurrence_count` is the number of complete rows and `distinct_recipe_count`

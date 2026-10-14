@@ -123,9 +123,13 @@ classes:
         required: true
         description: Input-root-relative POSIX path to the source YAML
       component_field:
-        range: ComponentFieldEnum
+        range: string
         required: true
-        description: Root field traversed according to the record's schema shape
+        pattern: "^(ingredients|composition|(solutions/[0-9]+/)+composition)$"
+        description: >-
+          Root field selected by the record's schema shape (`ingredients` or
+          `composition`), or the path of an inline stock's composition such as
+          `solutions/0/composition` (#604)
       component_index:
         range: integer
         required: true
@@ -212,14 +216,6 @@ classes:
         description: Percentage of all mapped ingredients from this ontology
 
 enums:
-  ComponentFieldEnum:
-    description: Root component field selected by recipe schema shape
-    permissible_values:
-      ingredients:
-        description: Direct components of a MediaRecipe-shaped root record
-      composition:
-        description: Direct components of a SolutionRecipe-shaped root record
-
   ResolutionSourceEnum:
     description: Structured outcome class returned by the shared MIM resolver
     permissible_values:
