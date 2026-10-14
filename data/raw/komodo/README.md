@@ -8,7 +8,7 @@
 
 ## Overview
 
-KOMODO is a standardized media database developed by DSMZ (Leibniz Institute) containing 3,335 media formulations with standardized molar concentrations integrated with the SEED compound database.
+KOMODO (Known Media Database) is a standardized media database built by Oberhardt et al. (2015) from the media recipes of the Leibniz Institute DSMZ collection. It contains 3,335 media formulations with standardized molar concentrations, integrated with the SEED compound database.
 
 ### Key Features
 
