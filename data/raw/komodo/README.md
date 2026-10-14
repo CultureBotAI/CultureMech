@@ -20,11 +20,12 @@ KOMODO is a standardized media database developed by DSMZ (Leibniz Institute) co
 
 ### Reference
 
-**Publication**: Zarecki et al. (2015)
-**Title**: "A novel nutritional predictor links microbial fastidiousness with lowered ubiquity, growth rate, and cooperativeness"
-**Journal**: Nature Communications
-**DOI**: https://doi.org/10.1038/ncomms7859
-**URL**: https://www.nature.com/articles/s41467-019-08888-8
+**Publication**: Oberhardt et al. (2015)
+**Title**: "Harnessing the landscape of microbial culture media to predict new organism–media pairings"
+**Journal**: Nature Communications 6, 8493
+**DOI**: https://doi.org/10.1038/ncomms9493
+**URL**: https://www.nature.com/articles/ncomms9493
+**PMC**: PMC4633754 (PMID 26460590)
 
 ---
 
