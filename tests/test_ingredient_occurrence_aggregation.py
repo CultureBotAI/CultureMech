@@ -117,8 +117,11 @@ def test_structural_shape_selects_one_direct_component_field(occurrence_module, 
     The curated solution is intentionally MediaRecipe-shaped.  Routing it via
     ``is_solution_record`` would select its absent composition and drop the real
     ingredient.  Conversely, a true SolutionRecipe must ignore its legacy
-    ``ingredients`` placeholder.  Nested in-recipe solution composition is not a
-    direct root containment and therefore is never expanded here.
+    ``ingredients`` placeholder.  An inline-only stock in ``solutions[]`` belongs
+    to its recipe alone, so its composition, and that of stocks nested inside
+    it, are direct occurrences under a path-shaped ``component_field``
+    (CultureMech#604).  A nested reference to a standalone solution record is
+    not expanded: that record contributes its own composition once (#312).
     """
 
     corpus = tmp_path / "corpus"
@@ -132,9 +135,25 @@ def test_structural_shape_selects_one_direct_component_field(occurrence_module, 
             "ingredients": [{"preferred_term": "EDTA"}],
             "solutions": [
                 {
-                    "preferred_term": "Nested stock",
-                    "composition": [{"preferred_term": "NESTED MUST NOT EXPAND"}],
-                }
+                    "preferred_term": "Inline stock",
+                    "composition": [{"preferred_term": "Proteose peptone no. 2"}],
+                    "solutions": [
+                        {
+                            "preferred_term": "Inner stock",
+                            "composition": [{"preferred_term": "Lipoic acid"}],
+                        }
+                    ],
+                },
+                {
+                    "preferred_term": "Shared stock",
+                    "term": {"id": "mediadive.solution:3"},
+                    "composition": [{"preferred_term": "REFERENCE MUST NOT EXPAND"}],
+                },
+                {
+                    "preferred_term": "Local reference",
+                    "culturemech_term": {"id": "CultureMech:000002"},
+                    "composition": [{"preferred_term": "LOCAL REFERENCE MUST NOT EXPAND"}],
+                },
             ],
         },
     )
@@ -176,6 +195,8 @@ def test_structural_shape_selects_one_direct_component_field(occurrence_module, 
 
     assert [(row["recipe_id"], row["component_field"], _ingredient_label(row)) for row in rows] == [
         ("CultureMech:000001", "ingredients", "EDTA"),
+        ("CultureMech:000001", "solutions/0/composition", "Proteose peptone no. 2"),
+        ("CultureMech:000001", "solutions/0/solutions/0/composition", "Lipoic acid"),
         ("CultureMech:000002", "composition", "Biotin"),
         ("CultureMech:000003", "composition", "Nicotinic acid"),
         ("CultureMech:000004", "ingredients", "PABA"),

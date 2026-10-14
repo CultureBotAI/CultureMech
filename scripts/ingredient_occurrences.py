@@ -2,9 +2,11 @@
 
 The source corpus has two root record contracts.  MediaRecipe-shaped records
 own ``ingredients``; SolutionRecipe-shaped records own ``composition``.  This
-module selects exactly one of those fields, records every direct descriptor
-with stable coordinates, and resolves its identity through the pinned
-MediaIngredientMech label index introduced by #260.
+module selects exactly one of those fields, adds the ``composition`` of every
+inline-only stock nested in the record's ``solutions[]`` (CultureMech#604;
+references to standalone solution records are not expanded, #312), records
+every direct descriptor with stable coordinates, and resolves its identity
+through the pinned MediaIngredientMech label index introduced by #260.
 
 The TSV occurrence artifact is canonical.  The mapped and unmapped YAML files
 are deterministic compatibility views derived from the same in-memory rows.
@@ -29,6 +31,8 @@ from linkml.validator.report import Severity
 from record_kinds import has_solution_shape
 from validate_strict import _get_validator, classify, infer_target_class
 
+from culturemech.export.kgx_export import PREFIX as CULTUREMECH_PREFIX
+from culturemech.export.kgx_export import _index_records_under
 from culturemech.ingredients.mim_label_index import (
     GroundingDecision,
     ResolutionSource,
@@ -286,6 +290,49 @@ def _occurrence_from_descriptor(
     )
 
 
+def _references_solution_record(solution: Mapping[str, Any], records: Mapping[str, str]) -> bool:
+    """Whether an inline solution points at a standalone solution record.
+
+    Same precedence as ``kgx_export.nested_solution_target``: a
+    ``culturemech_term`` naming a record, or a ``term.id`` that a standalone
+    solution record carries. That record contributes its own ``composition``
+    rows, so expanding the reference would count it once per medium (#312).
+    """
+    local = solution.get("culturemech_term")
+    if isinstance(local, Mapping) and str(local.get("id", "")).startswith(f"{CULTUREMECH_PREFIX}:"):
+        return True
+    term = solution.get("term")
+    term_id = term.get("id") if isinstance(term, Mapping) else None
+    return isinstance(term_id, str) and term_id in records
+
+
+def _inline_solution_compositions(
+    owner: Mapping[str, Any], records: Mapping[str, str], prefix: str = ""
+) -> list[tuple[str, Any]]:
+    """``(component_field, composition)`` for every inline-only nested solution.
+
+    A recipe's ``solutions[]`` may hold stocks that exist nowhere else; #577 moved
+    2,175 ingredients of 360 media into them, and until CultureMech#604 none of
+    those reached the occurrence table. They belong to this recipe alone, so
+    their components are direct occurrences of it, kept apart from root
+    ingredients by a path-shaped ``component_field`` such as
+    ``solutions/0/composition``. Walking stops at references to standalone
+    records, exactly where the KGX export stops minting.
+    """
+    found: list[tuple[str, Any]] = []
+    solutions = owner.get("solutions")
+    if not isinstance(solutions, list):
+        return found
+    for index, solution in enumerate(solutions):
+        if not isinstance(solution, Mapping) or _references_solution_record(solution, records):
+            continue
+        path = f"{prefix}solutions/{index}"
+        if "composition" in solution:
+            found.append((f"{path}/composition", solution.get("composition")))
+        found.extend(_inline_solution_compositions(solution, records, f"{path}/"))
+    return found
+
+
 def scan_ingredient_occurrences(
     input_dir: str | Path,
     resolver: Resolver = resolve_ingredient,
@@ -315,6 +362,7 @@ def scan_ingredient_occurrences(
     errors: list[AggregationError] = []
     seen_keys: dict[tuple[str, str, int], str] = {}
     seen_recipe_ids: dict[str, str] = {}
+    solution_records = _index_records_under(root.as_posix())
 
     files = sorted(root.rglob("*.yaml"), key=lambda item: item.as_posix())
     if not files:
@@ -442,56 +490,70 @@ def scan_ingredient_occurrences(
             continue
 
         recipe_category = _cell(instance.get("category") or "UNKNOWN").upper()
-        for index, descriptor in enumerate(components):
-            descriptor_path = f"/{component_field}/{index}"
-            if not isinstance(descriptor, Mapping):
+        collections = [(component_field, components)]
+        for nested_field, nested in _inline_solution_compositions(instance, solution_records):
+            if not isinstance(nested, list):
                 errors.append(
                     _error(
                         source_path,
-                        "invalid_component",
-                        "ingredient descriptor must be a mapping",
-                        path=descriptor_path,
+                        "invalid_component_collection",
+                        f"{nested_field} must be a list",
+                        path=f"/{nested_field}",
                     )
                 )
                 continue
-            try:
-                occurrence = _occurrence_from_descriptor(
-                    recipe_id=recipe_id,
-                    recipe_label=recipe_label,
-                    recipe_label_source=recipe_label_source,
-                    recipe_category=recipe_category,
-                    source_path=source_path,
-                    record_class=record_class,
-                    component_field=component_field,
-                    component_index=index,
-                    descriptor=descriptor,
-                    resolver=resolver,
-                )
-            except Exception as exc:  # noqa: BLE001 - report instead of silently skipping
-                errors.append(
-                    _error(
-                        source_path,
-                        "resolver_error",
-                        str(exc),
-                        path=descriptor_path,
-                        detail=type(exc).__name__,
+            collections.append((nested_field, nested))
+        for component_field, components in collections:
+            for index, descriptor in enumerate(components):
+                descriptor_path = f"/{component_field}/{index}"
+                if not isinstance(descriptor, Mapping):
+                    errors.append(
+                        _error(
+                            source_path,
+                            "invalid_component",
+                            "ingredient descriptor must be a mapping",
+                            path=descriptor_path,
+                        )
                     )
-                )
-                continue
-            previous_path = seen_keys.get(occurrence.key)
-            if previous_path is not None:
-                errors.append(
-                    _error(
-                        source_path,
-                        "duplicate_occurrence_key",
-                        "stable occurrence coordinate also appears in " + previous_path,
-                        path=descriptor_path,
-                        detail="|".join(map(str, occurrence.key)),
+                    continue
+                try:
+                    occurrence = _occurrence_from_descriptor(
+                        recipe_id=recipe_id,
+                        recipe_label=recipe_label,
+                        recipe_label_source=recipe_label_source,
+                        recipe_category=recipe_category,
+                        source_path=source_path,
+                        record_class=record_class,
+                        component_field=component_field,
+                        component_index=index,
+                        descriptor=descriptor,
+                        resolver=resolver,
                     )
-                )
-                continue
-            seen_keys[occurrence.key] = source_path
-            occurrences.append(occurrence)
+                except Exception as exc:  # noqa: BLE001 - report instead of silently skipping
+                    errors.append(
+                        _error(
+                            source_path,
+                            "resolver_error",
+                            str(exc),
+                            path=descriptor_path,
+                            detail=type(exc).__name__,
+                        )
+                    )
+                    continue
+                previous_path = seen_keys.get(occurrence.key)
+                if previous_path is not None:
+                    errors.append(
+                        _error(
+                            source_path,
+                            "duplicate_occurrence_key",
+                            "stable occurrence coordinate also appears in " + previous_path,
+                            path=descriptor_path,
+                            detail="|".join(map(str, occurrence.key)),
+                        )
+                    )
+                    continue
+                seen_keys[occurrence.key] = source_path
+                occurrences.append(occurrence)
 
     occurrences.sort(
         key=lambda row: (
