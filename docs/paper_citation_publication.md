@@ -24,6 +24,17 @@ source hashes, unresolved findings, and historical validation results.
   of unscoped parent/linked-child assertions. Variant-specific evidence remains
   in YAML; complete variant-target KGX export is not claimed.
 - Black formatting of the new title-validation tests was corrected.
+- #626: frozen concentration hashes did not include ten later citation
+  successors, and the website test assumed a historical correction was the last
+  event. Register the exact successors with independent structural checks;
+  retain all original source receipts and audits. The one DOI/PMC consolidation
+  is explicitly bounded to its verified alias. Mutation tests reject changed
+  amounts, identities, history, citations, and missing evidence/provenance.
+- #627: the legacy culture-type inference treated variant-only organisms and
+  named strains as evidence for a parent pure culture. Exclude variant-only
+  targets and defer evidence-bearing parent targets to curator review; do not
+  stamp unsupported culture types to satisfy a recurrence test. The citation
+  skill now documents this distinction. No recipe data changed in these fixes.
 
 ## Remaining Limits
 
@@ -39,6 +50,8 @@ source hashes, unresolved findings, and historical validation results.
   per-PR gate under the existing workflow policy.
 
 Focused post-fix validation passed 96 tests; Ruff, Black, and the skill checker
-passed. Required GitHub checks and the merge queue remain authoritative for
+passed. A further 34 focused successor/scope/website tests passed (the full-corpus
+recurrence check runs in the integration suite). The initial integration run
+identified #626 and #627; it was not bypassed. Required GitHub checks and the merge queue remain authoritative for
 integration. Literature discovery and historical recipe reconciliation are
 unfinished; this PR must not be described as corpus-wide scientific approval.

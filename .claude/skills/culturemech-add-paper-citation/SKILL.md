@@ -154,6 +154,12 @@ assessment, snippet, and locator in the paper's `references[].notes` instead
 of a positive target-organism entry. A consortium's growth does not establish
 that each member grows alone.
 
+Review `organism_culture_type` separately: a named strain does not establish
+pure/axenic culture, and variant-only targets do not classify the parent.
+Set `isolate` or `community` only with support for that distinction; otherwise
+leave the recommended field unset and preserve the uncertainty in evidence.
+Do not use the legacy name-only backfill to infer it from paper-backed entries.
+
 For variant-only growth, set `scoped_to_variant` to the exact inline variant
 name, or attach the organism to the matching full child record. Never upgrade
 that evidence into parent-medium growth. Preserve strain and condition scope;

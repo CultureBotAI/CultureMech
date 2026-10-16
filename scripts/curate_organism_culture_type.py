@@ -16,8 +16,10 @@ targeting an unnamed consortium/enrichment is a community. So a record whose
 target_organisms are specific named strains/species is `isolate`; only a
 consortium/community/enrichment descriptor is `community`.
 
-This pass sets `isolate` on records whose targets are specific strains and carry
-no community/consortium signal. A record with such a signal is **left for a
+This legacy backfill sets `isolate` on name-only parent targets that carry
+no community/consortium signal. Evidence-bearing targets need a curator to
+distinguish a named strain from a demonstrated pure culture; variant-only
+targets cannot classify the parent medium. A record with a community signal is **left for a
 curator**, not guessed — the enum's `community` value should be a read assertion,
 not an inference from a keyword. (As of #142 no such record exists among the 40,
 so every one is set to `isolate`; the guard is for future imports.)
@@ -99,7 +101,14 @@ def classify(doc: dict[str, Any]) -> tuple[str | None, str]:
         return None, "no target_organisms"
     if doc.get("organism_culture_type"):
         return None, "already set"
-    names = organism_names(doc)
+    parent_targets = [
+        org
+        for org in doc["target_organisms"]
+        if not isinstance(org, dict) or not org.get("scoped_to_variant")
+    ]
+    if not parent_targets:
+        return None, "variant-only targets do not classify the parent medium"
+    names = organism_names({"target_organisms": parent_targets})
     blob = " ".join(names) + " " + str(doc.get("name", ""))
     if COMMUNITY_SIGNAL.search(blob):
         return None, "community/consortium signal — leave for a curator"
@@ -108,6 +117,8 @@ def classify(doc: dict[str, Any]) -> tuple[str | None, str]:
         # Entries present but none carry a name — `isolate` would be a guess about
         # a record we cannot actually read. Leave it for a curator.
         return None, "target_organisms present but no organism name — leave for a curator"
+    if any(isinstance(org, dict) and org.get("evidence") for org in parent_targets):
+        return None, "evidence-bearing parent targets need culture-type review by a curator"
     return "isolate", f"{n} specific strain(s) named; no community signal"
 
 
@@ -179,25 +190,31 @@ def apply_value(path: Path, doc: dict[str, Any], value: str) -> bool:
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument("--normalized-dir", type=Path, default=NORMALIZED)
-    ap.add_argument("--apply", action="store_true",
-                    help="Write the inferred value. Default is report-only.")
+    ap.add_argument(
+        "--apply", action="store_true", help="Write the inferred value. Default is report-only."
+    )
     args = ap.parse_args(argv)
 
     to_set, community = scan(args.normalized_dir)
 
-    print(f"{len(to_set)} record(s) with target_organisms but no organism_culture_type "
-          f"are inferable as `isolate`:")
+    print(
+        f"{len(to_set)} record(s) with target_organisms but no organism_culture_type "
+        f"are inferable as `isolate`:"
+    )
     for path, _doc, value in to_set[:60]:
         print(f"  {str(path.relative_to(args.normalized_dir))[:56]:58s} -> {value}")
     if len(to_set) > 60:
         print(f"  ... and {len(to_set) - 60} more")
 
     if community:
-        print(f"\n{len(community)} record(s) carry a community/consortium signal and are "
-              f"LEFT for a curator (not guessed):")
+        print(
+            f"\n{len(community)} record(s) carry a community/consortium signal and are "
+            f"LEFT for a curator (not guessed):"
+        )
         for path, names in community:
             print(f"  {str(path.relative_to(args.normalized_dir))[:56]:58s} {names}")
 

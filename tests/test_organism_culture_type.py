@@ -6,6 +6,7 @@ records: 39 to `isolate` (specific strains named), and one syntrophic co-culture
 left for a curator. These tests pin the inference and guard against a fresh import
 reintroducing the gap.
 """
+
 from __future__ import annotations
 
 import importlib.util
@@ -40,40 +41,94 @@ def test_specific_strains_are_isolate(oct):
 def test_multiple_named_strains_are_still_isolate(oct):
     """The enum is `Pure culture of one or more specific strains` — count is not
     the axis. Seven named gut strains is an isolate medium, not a community."""
-    doc = {"target_organisms": [{"preferred_term": n} for n in
-                                ["Bacteroides ureolyticus", "Prevotella bivia",
-                                 "Fusobacterium nucleatum"]]}
+    doc = {
+        "target_organisms": [
+            {"preferred_term": n}
+            for n in ["Bacteroides ureolyticus", "Prevotella bivia", "Fusobacterium nucleatum"]
+        ]
+    }
     assert oct.classify(doc)[0] == "isolate"
 
 
-@pytest.mark.parametrize("name", [
-    "medium_for_co_culture_of_strain_jt",      # underscore — the #142 slip
-    "medium for co-culture of strain jt",       # hyphen
-    "medium for co culture of strain jt",       # space
-    "cocultivation medium",                     # closed-up (cocultur)
-])
+@pytest.mark.parametrize(
+    "name",
+    [
+        "medium_for_co_culture_of_strain_jt",  # underscore — the #142 slip
+        "medium for co-culture of strain jt",  # hyphen
+        "medium for co culture of strain jt",  # space
+        "cocultivation medium",  # closed-up (cocultur)
+    ],
+)
 def test_coculture_is_left_for_a_curator(oct, name):
     """A co-culture is a community case; the separator between `co` and `culture`
     must not decide whether it is caught (it did in #142). None of these may be
     auto-set to isolate."""
-    doc = {"name": name, "target_organisms": [{"preferred_term": "Pelotomaculum sp."},
-                                              {"preferred_term": "Methanospirillum hungatei"}]}
+    doc = {
+        "name": name,
+        "target_organisms": [
+            {"preferred_term": "Pelotomaculum sp."},
+            {"preferred_term": "Methanospirillum hungatei"},
+        ],
+    }
     value, reason = oct.classify(doc)
     assert value is None
     assert reason.startswith("community")
 
 
-@pytest.mark.parametrize("signal", ["consortium", "microbial community",
-                                     "activated sludge", "rumen fluid", "microbiome"])
+@pytest.mark.parametrize(
+    "signal", ["consortium", "microbial community", "activated sludge", "rumen fluid", "microbiome"]
+)
 def test_community_signals_are_left_for_a_curator(oct, signal):
     doc = {"name": f"{signal} medium", "target_organisms": [{"preferred_term": "mixed"}]}
     assert oct.classify(doc)[0] is None
 
 
 def test_already_set_and_no_organisms_are_skipped(oct):
-    assert oct.classify({"target_organisms": [{"preferred_term": "E. coli"}],
-                         "organism_culture_type": "isolate"})[0] is None
+    assert (
+        oct.classify(
+            {
+                "target_organisms": [{"preferred_term": "E. coli"}],
+                "organism_culture_type": "isolate",
+            }
+        )[0]
+        is None
+    )
     assert oct.classify({"name": "no organisms here"})[0] is None
+
+
+def test_variant_only_targets_do_not_classify_parent(oct):
+    doc = {
+        "target_organisms": [
+            {"preferred_term": "Escherichia coli", "scoped_to_variant": "supplemented study medium"}
+        ]
+    }
+    value, reason = oct.classify(doc)
+    assert value is None and "variant-only" in reason
+
+
+def test_variant_target_does_not_change_legacy_parent_classification(oct):
+    doc = {
+        "target_organisms": [
+            {"preferred_term": "Escherichia coli"},
+            {"preferred_term": "mixed culture", "scoped_to_variant": "consortium assay"},
+        ]
+    }
+    assert oct.classify(doc)[0] == "isolate"
+
+
+@pytest.mark.parametrize("snippet", ["Cultured strain UTEX 2523", "Pure culture reported"])
+def test_evidence_bearing_target_requires_curator_not_keyword_inference(oct, snippet):
+    doc = {
+        "target_organisms": [
+            {
+                "preferred_term": "Pleodorina japonica",
+                "strain": "UTEX 2523",
+                "evidence": [{"snippet": snippet}],
+            }
+        ]
+    }
+    value, reason = oct.classify(doc)
+    assert value is None and "culture-type review" in reason
 
 
 def test_nameless_organism_entries_are_left_for_a_curator(oct):
@@ -85,9 +140,12 @@ def test_nameless_organism_entries_are_left_for_a_curator(oct):
 
 
 def test_slot_is_placed_before_target_organisms(oct):
-    doc = {"name": "x", "category": "bacterial",
-           "target_organisms": [{"preferred_term": "E. coli"}],
-           "ingredients": []}
+    doc = {
+        "name": "x",
+        "category": "bacterial",
+        "target_organisms": [{"preferred_term": "E. coli"}],
+        "ingredients": [],
+    }
     out = oct._set_before(doc, "organism_culture_type", "isolate", before="target_organisms")
     keys = list(out.keys())
     assert keys.index("organism_culture_type") == keys.index("target_organisms") - 1
@@ -105,4 +163,5 @@ def test_no_inferable_record_is_left_unset(oct, corpus):
     assert pending == [], (
         "records name target_organisms (specific strains) but lack "
         f"organism_culture_type: {[str(p) for p, _d, _v in pending]}. "
-        "Run `just curate-organism-culture-type --apply`.")
+        "Run `just curate-organism-culture-type --apply`."
+    )
