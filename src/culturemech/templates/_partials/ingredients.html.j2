@@ -37,6 +37,7 @@
         {%- if ing.supplier_catalog.catalog_number %} {{ ing.supplier_catalog.catalog_number }}{% endif %}
       </div>
     {% endif %}
+    {{ cross_mech_ingredient_links(ing) }}
   </td>
   <td class="right">
     {{ quantity(ing.concentration) }}

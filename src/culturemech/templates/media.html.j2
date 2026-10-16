@@ -14,30 +14,45 @@
 <body>
 <a class="skip-link" href="#main-content">Skip to record content</a>
 
-<nav class="breadcrumb" aria-label="Record navigation">
+{% set app_base = (browser_href or '../app/browser.html') | replace('browser.html', '') %}
+<nav class="breadcrumb site-nav" aria-label="Record navigation">
+  <a href="{{ app_base }}index.html">Home</a> &middot;
   <a href="{{ browser_href }}">Browse media</a> &middot;
-  <a href="https://culturebotai.github.io/mechs/">All Mech projects</a> &middot;
-  <a href="{{ index_href }}">CultureMech</a> &rsaquo;
+  <a href="{{ app_base }}text_map.html">Text Map</a> &middot;
+  <a href="{{ app_base }}umap.html">Media PaCMAP</a> &middot;
+  <a href="{{ app_base }}umap_graph.html">Media Graph</a> &middot;
+  <a href="{{ app_base }}ingredient_umap.html">Ingredient PaCMAP</a> &middot;
+  <a href="{{ app_base }}schema.html">Schema</a> &middot;
+  <a href="{{ index_href }}">Media Index</a> &middot;
+  <a href="https://culturebotai.github.io/mechs/">All Mech projects</a> &rsaquo;
   <span>{{ medium.id }}</span>
 </nav>
 
 <header>
-  <h1>{{ medium.name or medium.preferred_term }}</h1>
-  <div class="meta">
-    <span class="curie">{{ medium.id }}</span>
-    {% if medium.category %}
-      <span class="badge">{{ medium.category }}</span>
-    {% endif %}
-    {% if medium.medium_type %}
-      <span class="badge">{{ medium.medium_type }}</span>
-    {% endif %}
-    {% if medium.physical_state %}
-      <span class="badge">{{ medium.physical_state }}</span>
-    {% endif %}
+  <div class="header-top">
+    <div>
+      <h1>{{ medium.name or medium.preferred_term }}</h1>
+      <div class="meta">
+        <span class="curie">{{ medium.id }}</span>
+        {% if medium.category %}
+          <span class="badge">{{ medium.category }}</span>
+        {% endif %}
+        {% if medium.medium_type %}
+          <span class="badge">{{ medium.medium_type }}</span>
+        {% endif %}
+        {% if medium.physical_state %}
+          <span class="badge">{{ medium.physical_state }}</span>
+        {% endif %}
+      </div>
+      {% if medium.original_name and medium.original_name != medium.name %}
+        <div class="muted">Original name: <em>{{ medium.original_name }}</em></div>
+      {% endif %}
+    </div>
+    <form class="record-search" action="{{ browser_href or '../app/browser.html' }}" method="get" role="search">
+      <input type="search" name="q" placeholder="Search media, ingredients, organisms..." aria-label="Search CultureMech media">
+      <button type="submit">Search</button>
+    </form>
   </div>
-  {% if medium.original_name and medium.original_name != medium.name %}
-    <div class="muted">Original name: <em>{{ medium.original_name }}</em></div>
-  {% endif %}
 </header>
 
 <main id="main-content">
@@ -59,8 +74,11 @@
 </main>
 <footer>
   <small class="muted">
-    Generated from
-    <code>{{ source_path }}</code>
+    Generated from <code>{{ source_path }}</code> &middot;
+    <a href="{{ app_base }}schema.html">LinkML Schema</a> &middot;
+    <a href="{{ app_base }}recipes.json">JSON</a> / <a href="{{ app_base }}recipes.tsv">TSV</a> &middot;
+    <a href="https://github.com/CultureBotAI/CultureMech">GitHub</a> &middot;
+    BSD-3-Clause
   </small>
 </footer>
 
