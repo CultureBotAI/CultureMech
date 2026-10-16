@@ -233,12 +233,16 @@ class BrowserExporter:
                 writer = csv.writer(f, delimiter="\t")
                 writer.writerow(columns)
                 for row in browser_data:
-                    writer.writerow([
-                        "; ".join(str(x) for x in row.get(col, []))
-                        if isinstance(row.get(col), list)
-                        else ("" if row.get(col) is None else str(row.get(col)))
-                        for col in columns
-                    ])
+                    writer.writerow(
+                        [
+                            (
+                                "; ".join(str(x) for x in row.get(col, []))
+                                if isinstance(row.get(col), list)
+                                else ("" if row.get(col) is None else str(row.get(col)))
+                            )
+                            for col in columns
+                        ]
+                    )
 
         print(f"✓ Exported {len(browser_data)} recipes to {output_path}")
 

@@ -215,7 +215,7 @@ def cross_mech_ingredient_links(ing: dict | None) -> Markup:
         return Markup("")
     name = str(ing.get("preferred_term") or "").strip()
     term_id = str((ing.get("term") or {}).get("id") or "").strip()
-    if any(c in name for c in '<>"\'') or any(c in term_id for c in '<>"\''):
+    if any(c in name for c in "<>\"'") or any(c in term_id for c in "<>\"'"):
         return Markup("")
     query_text = name or term_id
     if not query_text:
@@ -235,19 +235,19 @@ def cross_mech_medium_links(medium: dict | None) -> Markup:
     if not isinstance(medium, dict):
         return Markup("")
     mname = str(medium.get("name") or medium.get("preferred_term") or "").strip()
-    if not mname or any(c in mname for c in '<>"\''):
+    if not mname or any(c in mname for c in "<>\"'"):
         return Markup("")
     orgs = medium.get("target_organisms") or []
     first_org = ""
     if isinstance(orgs, list) and orgs and isinstance(orgs[0], dict):
         cand = str(orgs[0].get("preferred_term") or "").strip()
-        if cand and not any(c in cand for c in '<>"\''):
+        if cand and not any(c in cand for c in "<>\"'"):
             first_org = cand
     ings = medium.get("ingredients") or medium.get("composition") or []
     first_ing = ""
     if isinstance(ings, list) and ings and isinstance(ings[0], dict):
         cand = str(ings[0].get("preferred_term") or "").strip()
-        if cand and not any(c in cand for c in '<>"\''):
+        if cand and not any(c in cand for c in "<>\"'"):
             first_ing = cand
     q_med = quote(mname, safe="")
     q_ing = quote(first_ing or mname, safe="")

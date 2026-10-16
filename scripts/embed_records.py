@@ -78,14 +78,11 @@ def extract_record(yaml_path: Path) -> dict[str, Any] | None:
     record_id = str(data.get("id") or yaml_path.stem).strip()
     snake_name = str(data.get("name") or yaml_path.stem).strip()
     media_term = data.get("media_term") if isinstance(data.get("media_term"), dict) else {}
-    display_name = (
-        str(data.get("original_name") or media_term.get("preferred_term") or snake_name)
-        .strip()
-    )
+    display_name = str(
+        data.get("original_name") or media_term.get("preferred_term") or snake_name
+    ).strip()
     category = str(data.get("category") or yaml_path.parent.name or "unknown").lower()
-    medium_type = str(
-        data.get("medium_type") or data.get("composition_type") or "unknown"
-    ).lower()
+    medium_type = str(data.get("medium_type") or data.get("composition_type") or "unknown").lower()
     physical_state = str(data.get("physical_state") or "unknown").lower()
     source_db = _infer_source_db(data)
 
@@ -113,7 +110,7 @@ def extract_record(yaml_path: Path) -> dict[str, Any] | None:
             solutions.append(pt)
 
     organisms: list[str] = []
-    for org in (data.get("target_organisms") or data.get("organisms") or []):
+    for org in data.get("target_organisms") or data.get("organisms") or []:
         if isinstance(org, dict):
             pt = str(org.get("preferred_term") or org.get("scientific_name") or "").strip()
             if pt:
@@ -122,9 +119,7 @@ def extract_record(yaml_path: Path) -> dict[str, Any] | None:
             organisms.append(org.strip())
 
     applications = [
-        str(app).strip()
-        for app in (data.get("applications") or [])
-        if str(app).strip()
+        str(app).strip() for app in (data.get("applications") or []) if str(app).strip()
     ]
     description = str(data.get("description") or "").strip()
     notes = str(data.get("notes") or "").strip()
@@ -223,7 +218,7 @@ def embed_records(
                 old_ids = old["ids"].tolist()
                 old_hashes = old["text_hashes"].tolist()
                 old_embs = old["embeddings"]
-                for rid, rhash, vec in zip(old_ids, old_hashes, old_embs):
+                for rid, rhash, vec in zip(old_ids, old_hashes, old_embs, strict=False):
                     cached_vecs[(str(rid), str(rhash))] = vec
         except Exception:
             cached_vecs = {}

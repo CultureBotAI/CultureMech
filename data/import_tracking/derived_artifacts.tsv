@@ -11,6 +11,7 @@ data/curation/atcc_crossref_candidates.json	UNKNOWN	no writer found
 data/curation/multi_db_crossref_candidates.json	UNKNOWN	writer purity unestablished (multi_database_crossref.py)		src/culturemech/enrich/multi_database_crossref.py	
 data/curation/organism_candidates.json	UNKNOWN	writer purity unestablished (curation_validator.py)		src/culturemech/curate/curation_validator.py; src/culturemech/curate/organism_extractor.py; src/culturemech/enrich/backfill_pipeline.py	
 data/curation/organism_review.csv	UNKNOWN	writer purity unestablished (curation_validator.py)		src/culturemech/curate/curation_validator.py	
+data/embeddings/corpus_map.json	UNKNOWN	writer purity unestablished (embed_map.py)		scripts/embed_map.py	
 data/import_tracking/communitymech_imports.json	UNKNOWN	writer purity unestablished (import_from_communitymech.py)	scripts/import_from_communitymech.py	scripts/import_from_communitymech.py; scripts/update_communitymech_links.py	
 data/import_tracking/derived_artifacts.tsv	UNKNOWN	no writer found			
 data/import_tracking/mediadive_composition_ids.json	CURRENT_VIEW	triage_missing_compositions.py	scripts/triage_missing_compositions.py	scripts/triage_missing_compositions.py	

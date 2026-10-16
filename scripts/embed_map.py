@@ -42,7 +42,7 @@ def _pacmap_2d(vectors: np.ndarray, random_state: int = 42) -> np.ndarray:
             MN_ratio=0.5,
             FP_ratio=2.0,
             random_state=random_state,
-             apply_pca=vectors.shape[1] > 100,
+            apply_pca=vectors.shape[1] > 100,
         )
         coords = reducer.fit_transform(vectors)
         return np.asarray(coords, dtype=np.float32)

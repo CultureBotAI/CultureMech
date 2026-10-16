@@ -40,8 +40,10 @@ def render_schema_html(schema_path: Path = SCHEMA_PATH, out_path: Path = DEFAULT
                 continue
             rng = _esc(slot_def.get("range") or "string")
             mult = "list" if slot_def.get("multivalued") else "single"
-            req = "required" if slot_def.get("required") else (
-                "recommended" if slot_def.get("recommended") else "optional"
+            req = (
+                "required"
+                if slot_def.get("required")
+                else ("recommended" if slot_def.get("recommended") else "optional")
             )
             sdesc = _esc((slot_def.get("description") or "").strip())
             rows.append(
@@ -54,14 +56,14 @@ def render_schema_html(schema_path: Path = SCHEMA_PATH, out_path: Path = DEFAULT
                 f"</tr>"
             )
         table_html = (
-            "<table class=\"schema-table\">"
+            '<table class="schema-table">'
             "<thead><tr><th>Attribute</th><th>Range</th><th>Cardinality</th><th>Status</th><th>Description</th></tr></thead>"
             f"<tbody>{''.join(rows)}</tbody></table>"
             if rows
-            else "<p class=\"muted\">No inline attributes.</p>"
+            else '<p class="muted">No inline attributes.</p>'
         )
         class_cards.append(
-            f"<section class=\"schema-card\" data-kind=\"class\" data-name=\"{_esc(cls_name.lower())}\">"
+            f'<section class="schema-card" data-kind="class" data-name="{_esc(cls_name.lower())}">'
             f"<h3><code>{_esc(cls_name)}</code></h3>"
             f"<p>{cls_desc}</p>"
             f"{table_html}"
@@ -83,14 +85,14 @@ def render_schema_html(schema_path: Path = SCHEMA_PATH, out_path: Path = DEFAULT
                 f"<tr><td><code>{_esc(pv_name)}</code></td><td><code>{meaning}</code></td><td>{pdesc}</td></tr>"
             )
         table_html = (
-            "<table class=\"schema-table\">"
+            '<table class="schema-table">'
             "<thead><tr><th>Permissible Value</th><th>Meaning / Term</th><th>Description</th></tr></thead>"
             f"<tbody>{''.join(rows)}</tbody></table>"
             if rows
-            else "<p class=\"muted\">No permissible values listed.</p>"
+            else '<p class="muted">No permissible values listed.</p>'
         )
         enum_cards.append(
-            f"<section class=\"schema-card\" data-kind=\"enum\" data-name=\"{_esc(enum_name.lower())}\">"
+            f'<section class="schema-card" data-kind="enum" data-name="{_esc(enum_name.lower())}">'
             f"<h3><code>{_esc(enum_name)}</code></h3>"
             f"<p>{edesc}</p>"
             f"{table_html}"
