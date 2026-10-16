@@ -11,7 +11,7 @@ The canonical artifact is a complete direct-occurrence TSV. The mapped and
 unmapped YAML files are deterministic summaries of that same row population,
 not independent scans.
 
-## Direct-root traversal
+## Direct traversal
 
 The extractor selects exactly one component field from each normalized root
 record according to its schema shape:
@@ -21,9 +21,15 @@ record according to its schema shape:
 
 These fields are alternatives. They are never concatenated. Consequently,
 `See source for composition` entries retained in a SolutionRecipe's legacy
-`ingredients` field are not ingredients, and nested
-`solutions[].composition` entries are not expanded once per referencing
-medium. The artifact represents direct root containment only.
+`ingredients` field are not ingredients.
+
+A stock written inline in a record's `solutions[]` also contributes its
+`composition`, at any depth, because it belongs to that record alone (#604).
+A nested solution that references another record in the same scan, through a
+`culturemech_term` or a `term.id` that a standalone solution record carries, is
+not expanded once per referencing medium; that record contributes its own
+components. Content an inline copy carries beyond its referenced record is not
+counted (#607, #609). The artifact represents direct containment only.
 
 Each occurrence is identified by the stable tuple:
 
@@ -32,10 +38,19 @@ Each occurrence is identified by the stable tuple:
 ```
 
 `recipe_id` is the root `CultureMech:NNNNNN` identifier. `component_field` is
-`ingredients` or `composition`, and `component_index` is zero-based. Recipe
-labels are display metadata; duplicate labels never merge distinct recipes.
+`ingredients`, `composition`, or an inline stock's path such as
+`solutions/0/composition` or `solutions/0/solutions/1/composition`, and
+`component_index` is zero-based. Recipe labels are display metadata; duplicate
+labels never merge distinct recipes.
 `source_path` is a POSIX path relative to `--input-dir`, keeping custom corpus
 scans portable and byte-identical across worktrees.
+
+`concentration_value` and `concentration_unit` are relative to the row's own
+container: the medium for a MediaRecipe's root `ingredients`, the stock for a
+solution record's `composition` and for an inline stock's rows (#611).
+`component_field` and `record_class` tell them apart. The summaries'
+`concentration_info` lists an ingredient's distinct values from every
+container without saying which (#616).
 
 For display, the extractor uses a root `preferred_term` when present and falls
 back to `name` only for MediaRecipe-shaped legacy records. It never falls back

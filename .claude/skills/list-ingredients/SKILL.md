@@ -61,7 +61,9 @@ are CSV-quoted, so `wc -l`, `grep`, `cut`, and `awk` can misread rows.
 - Blank or whitespace-only labels are kept as
   `blank:<recipe_id>:<field>:<index>` rows.
 - The list counts direct `ingredients` (media) or `composition` (solutions)
-  entries only; ingredients inside referenced stock solutions are not expanded.
+  entries, plus the `composition` of stocks written inline in a record's
+  `solutions[]` (#604). Ingredients inside referenced stock solutions are not
+  expanded; the referenced record counts them once.
 - The list is never filtered by `--min-occurrences`. Its row count equals
   `total_mapped_count + total_unmapped_count` from the YAML views at the default
   `min_occurrences=1`.
