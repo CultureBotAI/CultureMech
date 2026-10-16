@@ -50,8 +50,10 @@ source hashes, unresolved findings, and historical validation results.
   per-PR gate under the existing workflow policy.
 
 Focused post-fix validation passed 96 tests; Ruff, Black, and the skill checker
-passed. A further 34 focused successor/scope/website tests passed (the full-corpus
-recurrence check runs in the integration suite). The initial integration run
-identified #626 and #627; it was not bypassed. Required GitHub checks and the merge queue remain authoritative for
+passed. A further 143 successor/scope/website tests passed, including the full-corpus
+recurrence check. The initial integration run identified #626 and #627; it was
+not bypassed. A subsequent run passed 19,599 tests and exposed the new receipt's
+missing derived-artifact index entry, which was regenerated with the maintained
+auditor. Required GitHub checks and the merge queue remain authoritative for
 integration. Literature discovery and historical recipe reconciliation are
 unfinished; this PR must not be described as corpus-wide scientific approval.
