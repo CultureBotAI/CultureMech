@@ -72,6 +72,7 @@ jobs:
         working-directory: CultureMech
         run: |
           uv run python scripts/build_map_record_links.py
+          uv run python -m culturemech.schema_page
           uv run python -m culturemech.export.browser_export \
             --input data/normalized_yaml \
             --output app/data.js
@@ -130,6 +131,7 @@ jobs:
           #   /pages/        -> per-record media pages (browser links ../pages/<page>)
           #   /dashboard/    -> QC dashboard
           cp CultureMech/index.html site/index.html
+          cp CultureMech/404.html site/404.html
           cp -r CultureMech/app site/app
           cp -r CultureMech/pages site/pages
           if [ -d CultureMech/dashboard ]; then

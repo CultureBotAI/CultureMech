@@ -2854,3 +2854,14 @@ gen-ingredient-umap-force-reload embeddings_path=kg_microbe_embeddings:
         --force-reload
     echo ""
     echo "✓ Ingredient UMAP regenerated: app/ingredient_umap.html"
+
+# Encode CultureMech merged media records into data/embeddings/records.npz (BAAI/bge-small-en-v1.5)
+[group('Visualization')]
+embed:
+    python3 scripts/embed_records.py
+
+# Project CultureMech record text embeddings (PaCMAP + PCA) and render app/text_map.html
+[group('Visualization')]
+embed-map:
+    python3 scripts/embed_map.py
+

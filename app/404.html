@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found — CultureMech</title>
+  <style>
+    :root {
+      --pastel-a: #FFE0B5;
+      --pastel-b: #CDEBC5;
+      --accent: #4B9E5F;
+      --ink: #1a1a1a;
+      --muted: #555;
+      --card: #ffffff;
+      --line: rgba(0,0,0,.12);
+    }
+    :root[data-theme="dark"] {
+      --pastel-a: #24331d;
+      --pastel-b: #12160f;
+      --accent: #6cc47f;
+      --ink: #eaf0e6;
+      --muted: #9db09a;
+      --card: #1c2118;
+      --line: #2e3a2c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--pastel-b);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--pastel-a), var(--pastel-b));
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 1px solid var(--line);
+    }
+    .wrap {
+      max-width: 680px;
+      margin: 2.5rem auto;
+      padding: 2rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      text-align: center;
+    }
+    .search-form {
+      display: flex;
+      gap: 0.5rem;
+      margin: 1.25rem auto;
+      max-width: 520px;
+    }
+    .search-form input {
+      flex: 1;
+      padding: 0.65rem 1rem;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--card);
+      color: var(--ink);
+      font-size: 0.95rem;
+    }
+    .search-form button, .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      border: none;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>404 — Recipe or Page Not Found</h1>
+    <p>The requested CultureMech URL could not be found.</p>
+  </header>
+  <main class="wrap">
+    <p>Search the CultureMech catalog by medium name, CultureMech ID, ingredient, or organism:</p>
+    <form class="search-form" id="recoveryForm" action="browser.html" method="get" role="search">
+      <input type="search" id="recoveryInput" name="q" placeholder="Search CultureMech recipes..." aria-label="Search CultureMech recipes">
+      <button type="submit">Search Catalog</button>
+    </form>
+    <div class="nav-links">
+      <a class="btn" href="index.html">CultureMech Home</a>
+      <a class="btn" href="browser.html">Browse All Recipes</a>
+      <a class="btn" href="text_map.html">Text Embedding Map</a>
+      <a class="btn" href="schema.html">LinkML Schema</a>
+    </div>
+  </main>
+  <script>
+    (function() {
+      try {
+        var path = window.location.pathname || '';
+        var slug = path.split('/').filter(Boolean).pop() || '';
+        slug = slug.replace(/\.html$/i, '').replace(/[_-]+/g, ' ').trim();
+        if (slug && slug.toLowerCase() !== '404') {
+          document.getElementById('recoveryInput').value = slug;
+        }
+      } catch (_e) {}
+    })();
+  </script>
+  <script src="theme-toggle.js"></script>
+</body>
+</html>

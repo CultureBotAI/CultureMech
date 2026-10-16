@@ -97,6 +97,13 @@
     background:linear-gradient(90deg,#FFE0B5,#CDEBC5);border-radius:16px 16px 0 0;
   }
 
+  .hero-search{max-width:580px;margin:1.25rem auto 0;display:flex;gap:.5rem}
+  .hero-search input{flex:1;padding:.65rem 1rem;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:.95rem}
+  .hero-search input:focus{outline:2px solid var(--accent);border-color:var(--accent)}
+  .hero-search button{padding:.65rem 1.25rem;border-radius:999px;border:none;background:var(--accent);color:#fff;font-weight:600;cursor:pointer}
+  .hero-nav{margin-top:1rem;display:flex;justify-content:center;flex-wrap:wrap;gap:.5rem}
+  .hero-nav a{color:var(--ink);text-decoration:none;font-size:.85rem;font-weight:600;padding:.35rem .8rem;border-radius:999px;background:rgba(255,255,255,.55);border:1px solid var(--line)}
+  :root[data-theme="dark"] .hero-nav a{background:rgba(255,255,255,.08)}
   @media (prefers-reduced-motion: reduce){
     *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;
       transition-duration:.01ms!important;scroll-behavior:auto!important;}
@@ -115,6 +122,20 @@
       <!-- END GENERATED CORPUS STATS -->
       <div class="stat"><b>512-D</b><span>v3 embeddings</span></div>
     </div>
+    <form class="hero-search" action="browser.html" method="get" role="search">
+      <input type="search" name="q" placeholder="Search media recipes, ingredients, target organisms, or IDs..." aria-label="Search CultureMech recipes">
+      <button type="submit">Search</button>
+    </form>
+    <nav class="hero-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="browser.html">Browse Recipes</a>
+      <a href="text_map.html">Text Map</a>
+      <a href="umap.html">Media PaCMAP</a>
+      <a href="umap_graph.html">Media Graph</a>
+      <a href="ingredient_umap.html">Ingredient PaCMAP</a>
+      <a href="schema.html">Schema</a>
+      <a href="https://culturebotai.github.io/mechs/">All Mech projects &nearr;</a>
+    </nav>
   </header>
   <main class="wrap">
     <div class="cards">
@@ -124,9 +145,14 @@
         <p>Faceted search across every media recipe — filter by category, medium type, physical state, target organism, and key ingredients.</p>
       </div>
       <div class="card">
-        <div class="actions"><a class="btn" href="umap.html#umap-derived">Derived &rarr;</a><a class="btn" href="umap.html#umap-direct">Direct &rarr;</a><a class="btn" href="umap_graph.html">Graph layout &rarr;</a></div>
+        <div class="actions"><a class="btn" href="text_map.html">Text Map &rarr;</a><a class="btn" href="umap.html#umap-derived">Derived &rarr;</a><a class="btn" href="umap.html#umap-direct">Direct &rarr;</a><a class="btn" href="umap_graph.html">Graph layout &rarr;</a><a class="btn" href="ingredient_umap.html">Ingredients &rarr;</a></div>
         <h2>Embedding browser</h2>
-        <p>Interactive PaCMAP of media similarity from KG-Microbe deepwalk embeddings — derived (aggregated from ingredient embeddings) and direct (the medium's own graph-node embedding).</p>
+        <p>Interactive 2D maps of media similarity — dense text embeddings (<code>BAAI/bge-small-en-v1.5</code>) plus KG-Microbe deepwalk embeddings (derived, direct, and ingredient-level).</p>
+      </div>
+      <div class="card">
+        <div class="actions"><a class="btn" href="schema.html">LinkML Schema &rarr;</a><a class="btn" href="recipes.json" download="culturemech_recipes.json">JSON &darr;</a><a class="btn" href="recipes.tsv" download="culturemech_recipes.tsv">TSV &darr;</a></div>
+        <h2>Schema &amp; Downloads</h2>
+        <p>Browse the LinkML data model (classes, slots, and controlled vocabularies) or download the complete normalized recipe catalog as JSON or TSV.</p>
       </div>
       <div class="card">
         <div class="actions"><a class="btn" href="https://github.com/CultureBotAI/CultureMech">View on GitHub &rarr;</a></div>
@@ -136,12 +162,12 @@
     </div>
   </main>
   <footer>
-    <p><a href="https://culturebotai.github.io/mechs/">All Mech projects</a></p>
+    <p><a href="https://culturebotai.github.io/mechs/">All Mech projects</a> &middot; <a href="schema.html">LinkML Schema</a> &middot; <a href="recipes.json" download="culturemech_recipes.json">Download JSON</a> &middot; <a href="recipes.tsv" download="culturemech_recipes.tsv">Download TSV</a></p>
     <div class="fam"><strong>KG-Microbe Mechs:</strong>
       <span aria-current="page">CultureMech</span>&middot;<a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a>&middot;<a href="https://culturebotai.github.io/CommunityMech/">CommunityMech</a>&middot;<a href="https://culturebotai.github.io/TraitMech/">TraitMech</a>&middot;<a href="https://culturebotai.github.io/proteintraitsmech/">ProteinTraitsMech</a>
     </div>
     <div class="fam">
-      <a href="https://github.com/Knowledge-Graph-Hub/kg-microbe">kg-microbe</a>&middot;<a href="https://bioportal.bioontology.org/ontologies/METPO">METPO</a>
+      <a href="https://github.com/Knowledge-Graph-Hub/kg-microbe">kg-microbe</a>&middot;<a href="https://bioportal.bioontology.org/ontologies/METPO">METPO</a>&middot;<a href="https://github.com/CultureBotAI/CultureMech">GitHub (CultureBotAI/CultureMech)</a>&middot;<span>Schema: <code>https://w3id.org/culturebotai/culturemech</code> (v0.1.0, BSD-3-Clause)</span>
     </div>
   </footer>
   <script src="theme-toggle.js"></script>

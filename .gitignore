@@ -65,6 +65,8 @@ pages/composition-frame.html
 pages/composition-frame.js
 pages/composition-frame.css
 app/data.js
+app/recipes.json
+app/recipes.tsv
 app/map-record-links.json
 
 # Legacy per-category page output (renderer no longer writes here; the
@@ -144,6 +146,7 @@ data/normalized_yaml/**/.DS_Store
 data/processed/
 dismech/
 data/embeddings/*.tsv.gz
+data/embeddings/*.npz
 
 # KG-Microbe data files (too large for GitHub)
 data/kgm/merged-kg_edges.tsv

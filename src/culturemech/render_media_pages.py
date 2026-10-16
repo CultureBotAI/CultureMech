@@ -37,9 +37,13 @@ from culturemech.record_links import normalized_records
 # Make the shared kg_microbe_browser package importable. PYTHONPATH may
 # already provide it; sibling-dir fallback covers default `python -m` runs.
 # parents[2] is CultureMech repo root; sibling is culturebotai-claw.
-CLAW_SRC = Path(__file__).resolve().parents[2].parent / "culturebotai-claw" / "src"
-if CLAW_SRC.is_dir():
-    sys.path.insert(0, str(CLAW_SRC))
+for _claw_candidate in (
+    Path(__file__).resolve().parents[2].parent / "culturebotai-claw" / "src",
+    Path(__file__).resolve().parents[4] / "KG-Hub" / "KG-Microbe" / "culturebotai-claw" / "src",
+):
+    if _claw_candidate.is_dir():
+        sys.path.insert(0, str(_claw_candidate))
+        break
 
 try:
     from kg_microbe_browser import build_ingredient_composition_graph
@@ -205,6 +209,59 @@ def safe_mermaid(value: str) -> Markup:
     return Markup('<pre class="mermaid">\n') + escape(s) + Markup("\n</pre>")
 
 
+def cross_mech_ingredient_links(ing: dict | None) -> Markup:
+    """Return cross-Mech links for an ingredient entry."""
+    if not isinstance(ing, dict):
+        return Markup("")
+    name = str(ing.get("preferred_term") or "").strip()
+    term_id = str((ing.get("term") or {}).get("id") or "").strip()
+    if any(c in name for c in "<>\"'") or any(c in term_id for c in "<>\"'"):
+        return Markup("")
+    query_text = name or term_id
+    if not query_text:
+        return Markup("")
+    q = quote(query_text, safe="")
+    mim_url = f"https://culturebotai.github.io/MediaIngredientMech/?q={q}"
+    cmm_url = f"https://culturebotai.github.io/CMMMech/pages/chemicals.html?q={q}"
+    return Markup(
+        '<div class="cross-mech small muted">Cross-Mech: '
+        '<a href="{}" rel="noreferrer">MediaIngredientMech</a> &middot; '
+        '<a href="{}" rel="noreferrer">CMMMech</a></div>'
+    ).format(mim_url, cmm_url)
+
+
+def cross_mech_medium_links(medium: dict | None) -> Markup:
+    """Return cross-Mech suite links for a medium record."""
+    if not isinstance(medium, dict):
+        return Markup("")
+    mname = str(medium.get("name") or medium.get("preferred_term") or "").strip()
+    if not mname or any(c in mname for c in "<>\"'"):
+        return Markup("")
+    orgs = medium.get("target_organisms") or []
+    first_org = ""
+    if isinstance(orgs, list) and orgs and isinstance(orgs[0], dict):
+        cand = str(orgs[0].get("preferred_term") or "").strip()
+        if cand and not any(c in cand for c in "<>\"'"):
+            first_org = cand
+    ings = medium.get("ingredients") or medium.get("composition") or []
+    first_ing = ""
+    if isinstance(ings, list) and ings and isinstance(ings[0], dict):
+        cand = str(ings[0].get("preferred_term") or "").strip()
+        if cand and not any(c in cand for c in "<>\"'"):
+            first_ing = cand
+    q_med = quote(mname, safe="")
+    q_ing = quote(first_ing or mname, safe="")
+    q_org = quote(first_org or mname, safe="")
+    return Markup(
+        '<a href="https://culturebotai.github.io/MediaIngredientMech/?q={}" rel="noreferrer">MediaIngredientMech</a> &middot; '
+        '<a href="https://culturebotai.github.io/CommunityMech/browser.html?q={}" rel="noreferrer">CommunityMech</a> &middot; '
+        '<a href="https://culturebotai.github.io/TaxonMech/#q={}" rel="noreferrer">TaxonMech</a> &middot; '
+        '<a href="https://culturebotai.github.io/TraitMech/?q={}" rel="noreferrer">TraitMech</a> &middot; '
+        '<a href="https://culturebotai.github.io/HabitatMech/?q={}" rel="noreferrer">HabitatMech</a> &middot; '
+        '<a href="https://culturebotai.github.io/CMMMech/pages/chemicals.html?q={}" rel="noreferrer">CMMMech</a>'
+    ).format(q_ing, q_med, q_org, q_org, q_med, q_ing)
+
+
 def make_env(templates_dir: Path = TEMPLATES_DIR) -> Environment:
     env = Environment(
         loader=FileSystemLoader(str(templates_dir)),
@@ -214,6 +271,8 @@ def make_env(templates_dir: Path = TEMPLATES_DIR) -> Environment:
     )
     env.globals["curie_to_url"] = curie_to_url
     env.globals["chebi_structure"] = chebi_structure
+    env.globals["cross_mech_ingredient_links"] = cross_mech_ingredient_links
+    env.globals["cross_mech_medium_links"] = cross_mech_medium_links
     env.filters["safe_mermaid"] = safe_mermaid
     env.filters["identifier_link"] = identifier_link
     env.filters["linked_text"] = linked_text
