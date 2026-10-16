@@ -113,6 +113,14 @@ curation_history:
   notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T23:14:34.949513+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:7525405
 media_term:
   preferred_term: MediaDB Medium 164
   term:
@@ -124,3 +132,38 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:7525405
+  title: The cellular concentration of the sigma S subunit of RNA polymerase in Escherichia
+    coli is controlled at the levels of transcription, translation, and protein stability.
+  authors: Lange R; Hengge-Aronis R
+  year: 1994
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:164;
+    discovery_sourceID=58; source_url=https://doi.org/10.1101/gad.8.13.1600; alternate_identifier=doi:10.1101/gad.8.13.1600;
+    Historical MediaDB metadata retained for comparison: title="The cellular concentration
+    of the ?s subunit of rna polymerase in escherichia coli is controlled at the levels
+    of transcription, translation, and protein stability"; first_author="Lange"; year=1993.
+    Verified PMID/DOI identity is distinct from unresolved historical metadata differences.
+    raw=references_cache/papers/PMID_7525405.xml; markdown=references_cache/papers/PMID_7525405.md;
+    PubMed abstract, temporal regulation; exact excerpt="When cells are grown in minimal
+    glucose medium". Reported organism=Escherichia coli (E. coli); canonical scientific
+    name=Escherichia coli; NCBITaxon:562; actual rank=species; taxonomy_match=exact_species_not_strain;
+    role=experimental species; exact local formulation unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=Escherichia coli MC4100; canonical scientific name=Escherichia
+    coli str. K-12 substr. MC4100; NCBITaxon:1403831; actual rank=no rank; taxonomy_match=canonical_name_match_secondary_strain_lead;
+    role=MediaDB strain lead, not named in abstract. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1403831&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Complex medium, minimal-glucose medium, osmotic changes and starvation are separate
+    contexts. The abstract does not validate the complete native M9 recipe. Citation
+    year 1994 follows PubMed; MediaDB''s historical 1993 and corrupted sigma-symbol
+    title remain an explicit discrepancy. Publisher access returned HTTP 403, so no
+    publisher-date reconciliation is claimed. Local comparison: Eight native entries
+    include 5.6 mM glucose and thiamine; these concentrations and complete formulation
+    remain unverified. Inventory covers inspected medium-relevant passages, not the
+    whole paper or bibliography. Correction/retraction coverage is limited to inspected
+    metadata; bounded taxonomy misses do not prove absence. Original ingredients,
+    amounts, preparation, history and links are preserved, not newly certified. No
+    new native growth assertion, resolved variant or concentration evidence.'

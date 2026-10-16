@@ -181,6 +181,14 @@ curation_history:
   notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T16:46:27.131287+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography, archived primary-source/Markdown provenance,
+    exact excerpts and qualified scientific-name/NCBI mappings. Preserved formulation,
+    assay and metadata limits. Existing recipe fields and history unchanged; no new
+    native growth, concentration evidence or resolved variant.
+  source: PMID:16802172
 media_term:
   preferred_term: MediaDB Medium 223
   term:
@@ -192,3 +200,48 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:16802172
+  title: Effects of N-starvation and C-source on Bradyrhizobium japonicum exopolysaccharide
+    production and composition, and bacterial infectivity to soybean roots.
+  authors: Quelas JI; López-García SL; Casabuono A; Althabegoiti MJ; Mongiardini EJ;
+    Pérez-Giménez J; Couto A; Lodeiro AR
+  year: 2006
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=PubMed_abstract_and_publisher_abstract_preview;
+    alternate_identifier=doi:10.1007/s00203-006-0127-3; owner=MEDIADB:223; discovery_sourceID=81;
+    source_url=https://pubmed.ncbi.nlm.nih.gov/16802172/; raw_abstract=references_cache/papers/PMID_16802172.xml;
+    source_markdown=references_cache/papers/PMID_16802172.md. PubMed abstract; exact
+    excerpt="B. japonicum USDA 110". PubMed abstract; exact excerpt="DeltaP22". PubMed
+    abstract; exact excerpt="mannitol or malate". PubMed abstract; exact excerpt="soybean".
+    The two fifteen-component Gotz owners differ in mannitol versus (S)-malate and
+    both list ammonium sulfate. Abstract and publisher preview distinguish nitrogen-starved
+    and nitrogen-sufficient conditions but do not identify which local nitrogen level
+    matches each assay. No nitrogen-free recipe or exact variant is inferred. EPS
+    composition ratios and plant infectivity are not ingredient amounts or bacterial
+    growth metrics. Reported organism=Bradyrhizobium japonicum USDA 110; canonical
+    scientific name=Bradyrhizobium diazoefficiens USDA 110; NCBITaxon:224911; actual
+    rank=strain; taxonomy_match=verified historical-synonym strain match; role=experimental
+    strain now labeled Bradyrhizobium diazoefficiens USDA 110 by the retrieved NCBI
+    node. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=224911&retmode=xml.
+    Reported organism=Bradyrhizobium japonicum USDA 110-derived DeltaP22; canonical
+    scientific name=Bradyrhizobium diazoefficiens; NCBITaxon:1355477; actual rank=species;
+    taxonomy_match=parent_rank_only; role=distinct experimental mutant; species parent
+    Bradyrhizobium diazoefficiens verified, not an exact DeltaP22 match. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1355477&retmode=xml.
+    Reported organism=soybean; canonical scientific name=Glycine max; NCBITaxon:3847;
+    actual rank=species; taxonomy_match=verified common-name species match; role=Glycine
+    max plant host, not a culture-medium growth target. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=3847&retmode=xml.
+    Publisher archive=references_cache/papers/primary_html/pmid-16802172-20261013.html;
+    publisher_markdown=references_cache/papers/primary_html/pmid-16802172-20261013.md.
+    This is an abstract/subscription preview, not full methods. Taxonomy archive=references_cache/papers/taxonomy/soil-metabolism-studies-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/soil-metabolism-studies-20261013.md.
+    Additional taxonomy archive=references_cache/papers/taxonomy/soil-metabolism-additional-20261013.xml;
+    additional_taxonomy_markdown=references_cache/papers/taxonomy/soil-metabolism-additional-20261013.md.
+    Bounded lookup misses do not prove taxon absence. Organism inventory covers inspected
+    medium-relevant passages, not an exhaustive full-paper inventory. Images and supplements
+    have not been verified. Correction/retraction coverage is limited to inspected
+    publication metadata. Existing related-media candidates were checked without asserting
+    exact formulation equivalence. All prior ingredients, quantities, preparation
+    and history remain unchanged and uncertified by this citation. No new native growth
+    assertion, concentration evidence or resolved variant.

@@ -175,6 +175,14 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T16:00:31.974764+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography, archived abstract/Markdown provenance,
+    exact excerpts and qualified scientific-name/NCBI mappings. Preserved formulation,
+    assay and metadata limits. Existing recipe fields and history unchanged; no new
+    native growth, concentration evidence or resolved variant.
+  source: PMID:17234153
 media_term:
   preferred_term: MediaDB Medium 383
   term:
@@ -186,3 +194,41 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:17234153
+  title: A role for mrgA, a DPS family protein, in the internal transport of Fe in
+    the cyanobacterium Synechocystis sp. PCC6803.
+  authors: Shcolnick S; Shaked Y; Keren N
+  year: 2007
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=PubMed_abstract_only; alternate_identifier=doi:10.1016/j.bbabio.2006.11.015;
+    owner=MEDIADB:383; discovery_sourceID=135; source_url=https://pubmed.ncbi.nlm.nih.gov/17234153/;
+    raw_abstract=references_cache/papers/PMID_17234153.xml; source_markdown=references_cache/papers/PMID_17234153.md.
+    PubMed abstract; exact excerpt="Synechocystis sp. PCC6803". PubMed abstract; exact
+    excerpt="Fe replete to Fe depleted medium". The three imported owners are distinct:
+    YBG11 with 0.006 mM iron chloride, YBG11 omitting iron chloride, and BG11 with
+    0.015 mM iron dicitrate. The third also differs in phosphate, nitrate, chelator,
+    buffer, silicate and other amounts; it is not merely a one-ingredient iron-dose
+    variant. These are local record comparisons, not quantities certified by the abstract.
+    Exact study-to-formulation assignment remains unresolved. Reported organism=Synechocystis
+    sp. PCC6803; canonical scientific name=Synechocystis sp. PCC 6803; NCBITaxon:1148;
+    actual rank=species; taxonomy_match=verified species node; role=study organism;
+    the NCBI node has species rank despite its strain-like label. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1148&retmode=xml.
+    Reported organism=Synechocystis sp. PCC6803 mrgA disruption mutant (slr1894; DeltamrgA);
+    canonical scientific name=Synechocystis sp. PCC 6803; NCBITaxon:1148; actual rank=species;
+    taxonomy_match=parent_rank_only; role=experimental mutant distinguished from wild
+    type; exact derivative node unresolved in bounded lookup. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1148&retmode=xml.
+    Intracellular iron quotas and chlorophyll fluorescence are not medium doses; the
+    qualitative growth-rate decrease is not a scalar growth metric. Use the 2007 print
+    year for this bibliography; PubMed records electronic publication in 2006, consistent
+    with the historical recipe name. Taxonomy archive=references_cache/papers/taxonomy/cyanobacterial-studies-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/cyanobacterial-studies-20261013.md.
+    Bounded lookup misses do not prove taxon absence. Organism inventory is limited
+    to inspected abstract passages, not the inaccessible full paper. Correction/retraction
+    coverage is limited to inspected publication metadata. Existing related-media
+    candidates were checked without asserting exact formulation equivalence. All prior
+    ingredients, quantities, preparation and history remain unchanged and uncertified
+    by this citation. No new native growth assertion, concentration evidence or resolved
+    variant.'

@@ -181,6 +181,14 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 2 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-10-13T05:14:23.464836+00:00'
+  curator: codex
+  action: CURATED_PAPER_VARIANT_EVIDENCE
+  notes: Added verified paper citation, source-defined inline variant and variant-scoped
+    strain growth evidence. Preserved parent amounts, ingredient grounding, preparation,
+    prior history and existing full-record variant links. Archived primary sources
+    and Markdown; no publication or normalized growth metric.
+  source: doi:10.1186/1475-2859-8-29
 media_term:
   preferred_term: MediaDB Medium 34
   term:
@@ -192,3 +200,106 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1186/1475-2859-8-29
+  title: Genome, secretome and glucose transport highlight unique features of the
+    protein production host Pichia pastoris.
+  authors: Mattanovich D; Graf A; Stadlmann J; Dragosits M; Redl A; Maurer M; Kleinheinz
+    M; Sauer M; Altmann F; Gasser B
+  year: 2009
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    source 11, Medium 34; PMID:19490607; PMCID:PMC2702363; accessed_on=2026-10-13.
+    Title, authors, year and DOI were verified against archived PubMed XML and publisher/PMC
+    metadata; no PubMed correction/retraction notice was present. Inspected main article
+    Strain and Experimental secretome analysis sections, and the complete additional-file-3
+    workbook. Raw HTML/Markdown: references_cache/papers/primary_html/mattanovich-2009-pmc.{html,md};
+    raw supplement and cell-addressed Markdown: references_cache/papers/supplements/mattanovich-2009-s3.{xls,md};
+    abstract XML/Markdown: references_cache/papers/PMID_19490607.{xml,md}. The supplement
+    distinguishes batch (A2:A11) from chemostat (A13:A22) formulations sharing trace
+    stock (A24:A33). Batch cell A3 ends with an unlabeled ''1.8 g''; this dangling
+    text is not assigned to an invented ingredient. The parent''s sulfate molarity
+    cannot be certified from the sulfuric-acid volume/range without a verified density;
+    chemical hydrates, acid/base forms and preparation also need separate parent review.
+    The glucose chemostat formulation is represented in the named inline variant,
+    not substituted for the parent. The bacterial category is a retained, known mismatch
+    to this fungal strain, not an endorsed classification. Reported scientific name=Pichia
+    pastoris; strain=DSMZ 70382 (=CBS704 in the paper). taxonomy_match=exact_strain;
+    NCBITaxon:638632; canonical_label=Komagataella pastoris DSMZ 70382; rank=strain
+    in NCBI Taxonomy XML retrieved 2026-10-13; source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=638632.
+    NCBI lists Pichia pastoris DSMZ 70382 as a synonym; species ancestor=Komagataella
+    pastoris, NCBITaxon:4922. Organism curation is limited to the source strain and
+    chemostat passages. Other genomic comparator taxa, mutant-selection YP media and
+    outside citations are not growth evidence for this record. KGX publication remains
+    withheld because scoped_to_variant is not honored by the current exporter.'
+variants:
+- name: Mattanovich 2009 glucose chemostat formulation
+  description: Source-defined glucose chemostat formulation, distinct from the imported
+    glycerol batch medium. All recipe quantities retain supplement source units and
+    stock/final boundaries; not a certification of the parent's concentrations, ingredient
+    grounding or preparation.
+  modifications:
+  - Replace the batch parent's glycerol (433.27 mM) with glucose monohydrate at the
+    source's 50.0 g per liter of chemostat medium.
+  - Use 0.9 g/L citric acid, 1.7 g/L KCl and 4.35 g/L (NH4)2HPO4, replacing the parent's
+    molar citrate, KCl and ammonium-phosphate entries; preserve the source's chemical
+    forms and mass basis.
+  - Use 0.01 g/L CaCl2 dihydrate and 0.65 g/L MgSO4 heptahydrate rather than inheriting
+    the parent's batch amounts and anhydrous/unspecified forms.
+  - Add 1 mL of 0.2 g/L biotin stock per liter of chemostat medium instead of inheriting
+    the parent's direct biotin molarity.
+  - Replace the parent's nine flattened trace/acid entries (sulfate, boric acid, sodium
+    molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric sulfate,
+    zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per liter of
+    chemostat medium. Do not retain both the flattened ingredients and this stock
+    dose.
+  - 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08 g NaI,
+    3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2, 20.0
+    g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are stock
+    amounts, not final-medium amounts; no acid density or molar conversion is inferred.'
+  - Set initial medium pH to 5.0 using 25% HCl as stated in the supplement; its percentage
+    basis and a fixed titrant volume are not specified. The chemostat pH was controlled
+    at 5.0 with 25% ammonium hydroxide. The inspected source does not establish the
+    parent's generic final-medium filter-sterilization procedure, so that procedure
+    is not inherited as verified study preparation.
+  purpose: Glucose-limited chemostat cultivation for experimental secretome analysis.
+  evidence:
+  - reference: doi:10.1186/1475-2859-8-29
+    supports: SUPPORT
+    snippet: 50.0g glucose · H2O
+    explanation: 'Locator: additional file 3, sheet ''Fermentation data and Analysis'',
+      A13:A33; source=https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1475-2859-8-29/MediaObjects/12934_2009_349_MOESM3_ESM.xls.
+      A13: ''Chemostat medium contained per Liter''; A14: ''50.0g glucose · H2O'';
+      A15: ''0.9g citric acid''; A16: ''1.7 g KCl''; A17: ''4.35 g (NH4)2HPO4''; A18:
+      ''0.01 g CaCl2 · 2H2O''; A19: ''0.65 g MgSO4 · 7H2O''; A20: ''1 mL of Biotin
+      (0.2 g L-1)''; A21: ''1.6 mL of trace salts stock solution. ''; A22: ''pH set
+      to 5.0 using 25% HCl''; A24: ''Trace salts stock solution contained per Liter'';
+      A25: ''6.0 g CuSO4 · 5H2O''; A26: ''0.08 g NaI''; A27: ''3.0 g MnSO4 ·H2O'';
+      A28: ''0.2g Na2MoO4 · 2H2O''; A29: ''0.02 g H3BO3''; A30: ''0.5 g CoCl2''; A31:
+      ''20.0 g ZnCl2''; A32: ''5.0 g FeSO4 · 7H2O''; A33: ''5 mL H2SO4 (95-98% w/w)''.
+      The heading in A13 establishes the per-liter chemostat-medium basis, A24 establishes
+      the separate per-liter stock basis. Quotes are individual literal cell values,
+      not a spliced sentence. No molecular weights, acid density, stock dilution results
+      or unreported preparation steps are inferred.'
+target_organisms:
+- preferred_term: Pichia pastoris
+  term:
+    id: NCBITaxon:638632
+    label: Komagataella pastoris DSMZ 70382
+  strain: DSMZ 70382
+  scoped_to_variant: Mattanovich 2009 glucose chemostat formulation
+  evidence:
+  - reference: doi:10.1186/1475-2859-8-29
+    supports: SUPPORT
+    snippet: P. pastoris DSMZ 70382 was grown in fully aerobic chemostat cultures
+      on minimal medium with glucose as carbon source
+    explanation: 'Locator: Material and methods, Strain and Experimental secretome
+      analysis, together with additional file 3 A13:A40. Growth belongs to the glucose
+      chemostat variant, not the glycerol batch parent. Supplement A38 reports 25
+      C, A39 pH 5.0 and A36 oxygen control above 20%; these are study conditions,
+      not optima. The database''s 0.2/h growth value is not imported. A40''s dilution-rate/flow
+      wording is not converted into a growth metric. Reported scientific name=Pichia
+      pastoris; strain=DSMZ 70382 (=CBS704 in the paper). taxonomy_match=exact_strain;
+      NCBITaxon:638632; canonical_label=Komagataella pastoris DSMZ 70382; rank=strain
+      in NCBI Taxonomy XML retrieved 2026-10-13; source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=638632.
+      NCBI lists Pichia pastoris DSMZ 70382 as a synonym; species ancestor=Komagataella
+      pastoris, NCBITaxon:4922.'

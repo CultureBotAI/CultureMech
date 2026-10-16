@@ -158,6 +158,15 @@ curation_history:
   notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T11:16:53.227257+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_AND_SOURCE_SCOPE
+  notes: Added two verified paper citations with raw/Markdown archives and organism
+    taxonomy assessments; 1 source-described variants and 1 variant-only growth entries.
+    Preserved all parent ingredients, preparation and prior history. Full base formulation
+    remains unresolved; no parent amount certification or unqualified parent growth.
+    No generated publication.
+  source: doi:10.1128/JB.182.11.3088-3096.2000; doi:10.1007/BF00167910
 media_term:
   preferred_term: MediaDB Medium 283
   term:
@@ -169,3 +178,178 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1128/JB.182.11.3088-3096.2000
+  title: 'Quantitative determination of metabolic fluxes during coutilization of two
+    carbon sources: comparative analyses with Corynebacterium glutamicum during growth
+    on acetate and/or glucose.'
+  authors: Wendisch VF; de Graaf AA; Sahm H; Eikmanns BJ
+  year: 2000
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=95, medID=283; SQL joins are discovery
+    provenance, not growth evidence. PubMed title, authors, year and DOI/PMID identity
+    checked. No correction/retraction notice occurs in the inspected PubMed entry;
+    not an exhaustive notice audit. The historical Mazumdar import event remains database
+    provenance. PMID:10809686; PMC94493; source_access=Full public PMC HTML and inspected
+    Figure 1; raw_abstract=references_cache/papers/PMID_10809686.xml; abstract_markdown=references_cache/papers/PMID_10809686.md.
+    Full paper archives=references_cache/papers/primary_html/wendisch-2000-pmc.html
+    and .md; Figure 1 image/Markdown=references_cache/papers/primary_images/wendisch-2000-figure1.jpg
+    and .md. This is a source-described CgC assay variant, not certification of all
+    imported parent amounts. The Eikmanns 1991 base protocol is available only as
+    abstract/metadata; its full base composition and preparation remain unresolved.
+    The paper''s sodium acetate is not silently equated with an unspecified acetate
+    counterion or hydration state. Keep reported mass doses and Table 2 nominal molar
+    headings separate; no conversion or correction of the parent''s minerals, vitamins,
+    carbon amounts or filter step is made. Materials/Methods specify 99% atom enrichment,
+    whereas the flux-quantitation paragraph uses 99.9% glucose in its inoculum correction;
+    that discrepancy is unresolved. Table 2''s isotope-labeled assay and unlabeled-control
+    agreement are represented separately from Figure 1''s 35 mM glucose/120 mM acetate
+    mixture. Figure 1 caption; exact excerpt=''Growth of C. glutamicum WT on mineral
+    medium with 35 mM glucose and 120 mM acetate.''. Figure 1 is recorded as a concentration
+    variant on MEDIADB:284 only. Its extra WT growth scope remains in variant evidence/notes
+    because the current organism identifier cannot represent both inline scopes as
+    independent target entries. Reported organism=Corynebacterium glutamicum ATCC
+    13032 (WT); scientific name/canonical mapping=Corynebacterium glutamicum ATCC
+    13032; NCBITaxon:196627; actual rank=strain; taxonomy_match=exact strain; role=wild
+    type used in the Table 2 labeled-carbon assays. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=196627&retmode=xml.
+    Reported organism=Corynebacterium glutamicum WT-delta-AB (source WTΔAB); scientific
+    name/canonical mapping=Corynebacterium glutamicum ATCC 13032; NCBITaxon:196627;
+    actual rank=strain; taxonomy_match=parent_rank_only; role=paper-explicit ATCC
+    13032 double-deletion background, not an exact mutant taxon. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=196627&retmode=xml.
+    Results, Construction and analysis of a glyoxylate cycle-deficient strain; exact
+    excerpt=''WTΔAB was not able to grow on acetate as a sole carbon source''. This
+    mutant also grows on glucose and the mixture in separate comparison assays. Those
+    outcomes and rates are not transferred to the WT Table 2 cultures. Reported organism=Corynebacterium
+    glutamicum LE4, ALB1 and ASK1; scientific name/canonical mapping=Corynebacterium
+    glutamicum; NCBITaxon:1718; actual rank=species; taxonomy_match=parent_rank_only;
+    role=Discussion strains from earlier studies; exact strain nodes not established
+    by bounded alias queries. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1718&retmode=xml.
+    Discussion, anaplerotic flux comparison; exact excerpt=''C. glutamicum strain
+    LE4''. Discussion, mutant comparison; exact excerpt=''malate synthase-deficient
+    strain ALB1 and the isocitrate lyase-deficient strain ASK1''. Reported organism=Escherichia
+    coli; scientific name/canonical mapping=Escherichia coli; NCBITaxon:562; actual
+    rank=species; taxonomy_match=exact species; role=Introduction/Discussion comparison
+    only, not a CgC target. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml.
+    Introduction; exact excerpt=''diauxic growth of Escherichia coli on glucose plus
+    lactose''. Reported organism=Leuconostoc oenos; scientific name/canonical mapping=Oenococcus
+    oeni; NCBITaxon:1247; actual rank=species; taxonomy_match=exact synonym; role=Introduction
+    comparison only, not a CgC target. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1247&retmode=xml.
+    Introduction, background comparison; exact excerpt=''Leuconostoc oenos cometabolizes
+    glucose with citrate or fructose''. Taxonomy archives=references_cache/papers/taxonomy/nmm-cgc-20261013.*
+    and nmm-cgc-additional-20261013.*. Failed name queries are not proof that no alternate-name
+    taxon exists. Organism inventory is bounded to inspected relevant passages, not
+    all cited titles. LB/optional kanamycin are preculture conditions; the 50 mM NaCl/50
+    mM Tris-HCl pH 6.3 mixture is a wash buffer, not CgC composition or culture pH.
+    Leucine was not supplemented; biomass amino-acid requirements and intracellular
+    pool concentrations are not medium doses. Current KGX does not honor scoped_to_variant;
+    these claims must not be published as unqualified parent-medium growth edges. '
+- reference: doi:10.1007/BF00167910
+  title: Amplification of three threonine biosynthesis genes in Corynebacterium glutamicum
+    and its influence on carbon flux in different strains.
+  authors: Eikmanns BJ; Metzger M; Reinscheid D; Kircher M; Sahm H
+  year: 1991
+  notes: 'source_type=journal_article; discovery_mode=cited_base_protocol; accessed_on=2026-10-13;
+    MediaDB sourceID=95, medID=283; SQL joins are discovery provenance, not growth
+    evidence. PubMed title, authors, year and DOI/PMID identity checked. No correction/retraction
+    notice occurs in the inspected PubMed entry; not an exhaustive notice audit. The
+    historical Mazumdar import event remains database provenance. PMID:1369320; source_access=PubMed
+    abstract and publisher subscription preview; raw_abstract=references_cache/papers/PMID_1369320.xml;
+    abstract_markdown=references_cache/papers/PMID_1369320.md. Wendisch Methods and
+    reference 11 identify this source for CgC. Only abstract and publisher subscription
+    preview were inspected; no full CgC base formula is verified. Publisher abstract/metadata
+    archives=references_cache/papers/primary_html/eikmanns-1991-publisher-abstract.html
+    and .md. Bibliographic conflict: Wendisch reference 11 gives volume 102, pages
+    93-98 and omits Kircher; publisher/PubMed support volume 34, pages 617-622 and
+    the five-author list used here. Abstract; exact excerpt=''Corynebacterium glutamicum
+    ATCC 13,032''. Reported organism=Corynebacterium glutamicum ATCC 13,032; scientific
+    name/canonical mapping=Corynebacterium glutamicum ATCC 13032; NCBITaxon:196627;
+    actual rank=strain; taxonomy_match=exact strain designation; role=base-paper genetic/production
+    experiments, not new evidence for the WT study variants. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=196627&retmode=xml.
+    Reported organism=Corynebacterium glutamicum DM 368-3 and DG 52-5; scientific
+    name/canonical mapping=Corynebacterium glutamicum; NCBITaxon:1718; actual rank=species;
+    taxonomy_match=parent_rank_only; role=distinct production/genetic backgrounds;
+    exact strain matches unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1718&retmode=xml.
+    Abstract; separate exact excerpt=''C. glutamicum DM 368-3''; separate exact excerpt=''C.
+    glutamicum DG 52-5''. Reported organism=Escherichia coli; scientific name/canonical
+    mapping=Escherichia coli; NCBITaxon:562; actual rank=species; taxonomy_match=exact
+    species; role=shuttle-vector host context, not CgC growth evidence. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml.
+    Abstract; exact excerpt=''Escherichia coli/C. glutamicum shuttle vector pEK0''.
+    Taxonomy archives=references_cache/papers/taxonomy/nmm-cgc-20261013.* and nmm-cgc-background-20261013.*.
+    No threonine production, isotope enrichment, growth phenotype or formulation is
+    transferred between these strains and Wendisch''s WT.'
+variants:
+- name: Wendisch 2000 CgC with sodium [1-13C]acetate
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  description: 'This is a source-described CgC assay variant, not certification of
+    all imported parent amounts. The Eikmanns 1991 base protocol is available only
+    as abstract/metadata; its full base composition and preparation remain unresolved.
+    The paper''s sodium acetate is not silently equated with an unspecified acetate
+    counterion or hydration state. Keep reported mass doses and Table 2 nominal molar
+    headings separate; no conversion or correction of the parent''s minerals, vitamins,
+    carbon amounts or filter step is made. Materials/Methods specify 99% atom enrichment,
+    whereas the flux-quantitation paragraph uses 99.9% glucose in its inoculum correction;
+    that discrepancy is unresolved. '
+  modifications:
+  - Use sodium [1-13C]acetate at the Methods dose of 10 g/L; Table 2 reports nominal
+    120 mM acetate. The parent acetate descriptor has no isotope specification and
+    reports 120 mM.
+  purpose: The paper's 13C-labeling and metabolic-flux experiment
+  evidence:
+  - reference: doi:10.1128/JB.182.11.3088-3096.2000
+    supports: SUPPORT
+    snippet: sodium [1- 13 C]acetate (99% atom enrichment) (10 g/liter)
+    explanation: 'Supports this variant''s explicitly labeled carbon source, source
+      mass dose and isotope substitution. Table 2, carbon-source headings in order;
+      exact excerpt=''120 mM acetate 120 mM acetate + 55 mM glucose 110 mM glucose''.
+      Table 2 column order is acetate, mixed acetate/glucose, glucose. Headers are
+      reported nominal values, not curator conversions. This is a source-described
+      CgC assay variant, not certification of all imported parent amounts. The Eikmanns
+      1991 base protocol is available only as abstract/metadata; its full base composition
+      and preparation remain unresolved. The paper''s sodium acetate is not silently
+      equated with an unspecified acetate counterion or hydration state. Keep reported
+      mass doses and Table 2 nominal molar headings separate; no conversion or correction
+      of the parent''s minerals, vitamins, carbon amounts or filter step is made.
+      Materials/Methods specify 99% atom enrichment, whereas the flux-quantitation
+      paragraph uses 99.9% glucose in its inoculum correction; that discrepancy is
+      unresolved. '
+target_organisms:
+- preferred_term: Corynebacterium glutamicum
+  strain: ATCC 13032
+  term:
+    id: NCBITaxon:196627
+    label: Corynebacterium glutamicum ATCC 13032
+  scoped_to_variant: Wendisch 2000 CgC with sodium [1-13C]acetate
+  evidence:
+  - reference: doi:10.1128/JB.182.11.3088-3096.2000
+    supports: SUPPORT
+    snippet: The growth characteristics of the three cultures are summarized in Table
+      2
+    explanation: Reported organism=Corynebacterium glutamicum ATCC 13032 (WT); scientific
+      name/canonical mapping=Corynebacterium glutamicum ATCC 13032; NCBITaxon:196627;
+      actual rank=strain; taxonomy_match=exact strain; role=wild type used in the
+      Table 2 labeled-carbon assays. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=196627&retmode=xml.
+      Methods, Microorganisms and cultivation conditions; exact excerpt='The wild-type
+      (WT) strain of C. glutamicum ATCC 13032'. Table 2, carbon-source headings in
+      order; exact excerpt='120 mM acetate 120 mM acetate + 55 mM glucose 110 mM glucose'.
+      Table 2, growth-rate row in the same column order; exact excerpt='Growth rate
+      (h −1 ) 0.28 0.36 0.32'. The positive Table 2 growth-rate cells support qualitative
+      growth on each corresponding source-described labeled variant; quantitative
+      metrics are not imported. Methods specify 60-mL cultures in 500-mL baffled flasks,
+      30 C, 140 rpm. These are experimental settings, not optima or universal requirements.
+      Table 2 footnote a; exact excerpt='These data coincided with values obtained
+      from at least three independent cultures with unlabeled substrates.'. Unlabeled-control
+      agreement does not erase isotope scope or certify all local base amounts. This
+      is a source-described CgC assay variant, not certification of all imported parent
+      amounts. The Eikmanns 1991 base protocol is available only as abstract/metadata;
+      its full base composition and preparation remain unresolved. The paper's sodium
+      acetate is not silently equated with an unspecified acetate counterion or hydration
+      state. Keep reported mass doses and Table 2 nominal molar headings separate;
+      no conversion or correction of the parent's minerals, vitamins, carbon amounts
+      or filter step is made. Materials/Methods specify 99% atom enrichment, whereas
+      the flux-quantitation paragraph uses 99.9% glucose in its inoculum correction;
+      that discrepancy is unresolved. Current KGX does not honor scoped_to_variant;
+      these claims must not be published as unqualified parent-medium growth edges.
+      Taxonomy archive=references_cache/papers/taxonomy/nmm-cgc-20261013.xml and .md.

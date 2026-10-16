@@ -18,7 +18,7 @@ ingredients:
     id: CHEBI:17634
     label: D-glucose
   evidence:
-  - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+  - reference: doi:10.4148/1941-4765.1175
     supports: SUPPORT
     snippet: D-glucose 10 g
     explanation: '["ingredients", 0].concentration and supplied form, locator: Minimal
@@ -33,7 +33,7 @@ ingredients:
   notes: Make the complete medium up to 1 L. This is a final volume, not a fixed 1
     L water addition; the water makeup amount is not quantified.
   evidence:
-  - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+  - reference: doi:10.4148/1941-4765.1175
     supports: SUPPORT
     snippet: Make to 1 liter with distilled water.
     explanation: 'ingredients[1]: MM preparation paragraph; final-volume makeup. Source:
@@ -124,6 +124,13 @@ curation_history:
     {"value": "0.1315", "unit": "MILLIMOLAR"} -> {"value": "50", "unit": "G_PER_L"};
     ingredients[9] -> ["solutions", 2, "composition", 0]: {"value": "0.03769", "unit":
     "MILLIMOLAR"} -> null'
+- timestamp: '2026-10-13T03:27:07.729550+00:00'
+  curator: codex
+  action: CURATED_PAPER_ORGANISM_EVIDENCE
+  notes: Archived primary protocol and NCBI taxonomy; consolidated verified DOI/URL
+    citation aliases; added one species-level MM germination association with auxotroph
+    limitation. Preserved concentrations, preparation, variants and prior history.
+  source: doi:10.4148/1941-4765.1175
 media_term:
   preferred_term: MediaDB Medium 308
   term:
@@ -154,7 +161,7 @@ solutions:
       id: CHEBI:63005
       label: sodium nitrate
     evidence:
-    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+    - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: NaNO 3 120 g
       explanation: '["solutions", 0, "composition", 0].concentration and supplied
@@ -174,7 +181,7 @@ solutions:
       id: CHEBI:32588
       label: potassium chloride
     evidence:
-    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+    - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: KCl 10.4 g
       explanation: '["solutions", 0, "composition", 1].concentration and supplied
@@ -194,7 +201,7 @@ solutions:
       id: CHEBI:31795
       label: magnesium sulfate heptahydrate
     evidence:
-    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+    - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: MgSO 4 ·7H 2 O 10.4 g (5.2 g if anhydrous)
       explanation: '["solutions", 0, "composition", 2].concentration and supplied
@@ -211,7 +218,7 @@ solutions:
       id: CHEBI:63036
       label: potassium dihydrogen phosphate
     evidence:
-    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+    - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: KH 2 PO 4 30.4 g
       explanation: '["solutions", 0, "composition", 3].concentration and supplied
@@ -240,7 +247,7 @@ solutions:
       id: CHEBI:32312
       label: zinc sulfate heptahydrate
     evidence:
-    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+    - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: ZnSO 4 ·7 H 2 O 2.2 g
       explanation: '["solutions", 1, "composition", 0].concentration and supplied
@@ -260,7 +267,7 @@ solutions:
       id: CHEBI:33118
       label: boric acid
     evidence:
-    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+    - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: H3BO 3 1.1 g
       explanation: '["solutions", 1, "composition", 1].concentration and supplied
@@ -277,7 +284,7 @@ solutions:
       id: CHEBI:86368
       label: manganese(II) chloride tetrahydrate
     evidence:
-    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+    - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: MnCl 2 ·4 H 2 O 0.5 g
       explanation: '["solutions", 1, "composition", 2].concentration and supplied
@@ -294,7 +301,7 @@ solutions:
       id: CHEBI:75836
       label: iron(2+) sulfate heptahydrate
     evidence:
-    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+    - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: FeSO 4 ·7 H 2 O 0.5 g
       explanation: '["solutions", 1, "composition", 3].concentration and supplied
@@ -311,7 +318,7 @@ solutions:
       id: CHEBI:53503
       label: cobalt chloride hexahydrate
     evidence:
-    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+    - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: CoCl 2 ·6 H 2 O 0.17 g
       explanation: '["solutions", 1, "composition", 4].concentration and supplied
@@ -328,7 +335,7 @@ solutions:
       id: CHEBI:31440
       label: copper(II) sulfate pentahydrate
     evidence:
-    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+    - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: CuSO 4 ·5 H 2 O 0.16 g
       explanation: '["solutions", 1, "composition", 5].concentration and supplied
@@ -345,7 +352,7 @@ solutions:
       id: CHEBI:75213
       label: sodium molybdate dihydrate
     evidence:
-    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+    - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: Na 2 MoO 4 ·2 H 2 O 0.15 g
       explanation: '["solutions", 1, "composition", 6].concentration and supplied
@@ -359,7 +366,7 @@ solutions:
       value: '50'
       unit: G_PER_L
     evidence:
-    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+    - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: Na 4 EDTA 5 g
       explanation: '["solutions", 1, "composition", 7].concentration and supplied
@@ -375,7 +382,7 @@ solutions:
     notes: Adjust the trace stock to pH 6.5 after cooling to 60 C. KOH amount and
       reagent concentration are unspecified.
     evidence:
-    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+    - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: Adjust pH to 6.5 with KOH.
       explanation: 'solutions[1].composition[8]: trace-stock preparation; titration
@@ -404,7 +411,7 @@ solutions:
       id: MediaIngredientMech:000898
       label: Thiamine
     evidence:
-    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+    - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: 1% thiamine 1 ml
       explanation: '["solutions", 2, "composition", 0]: MM thiamine-solution row.
@@ -429,7 +436,7 @@ solutions:
       value: '1'
       unit: MOLAR
     evidence:
-    - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+    - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: Adjust pH to 6.5 with 1M NaOH.
       explanation: 'solutions[3].composition[0].concentration: 1 M titrant strength
@@ -439,7 +446,7 @@ solutions:
     and final-medium NaOH amount are unspecified.
 ph_value: 6.5
 evidence:
-- reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+- reference: doi:10.4148/1941-4765.1175
   supports: SUPPORT
   snippet: 20X nitrate salts (see below) 50 ml
   explanation: 'solutions[0].concentration: 50 mL nitrate stock / 1 L final MM = 50
@@ -468,7 +475,7 @@ variants:
     L stock with 5.2 g anhydrous magnesium sulfate per 1 L stock. Keep the stock addition
     at 50 mL/L final medium.
   evidence:
-  - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+  - reference: doi:10.4148/1941-4765.1175
     supports: SUPPORT
     snippet: MgSO 4 ·7H 2 O 10.4 g (5.2 g if anhydrous)
     explanation: 'variants[0]: nitrate-stock magnesium row, source-explicit alternative,
@@ -481,7 +488,7 @@ variants:
   - Add 18 g agar to the one-litre MM preparation for solid medium; retain the source's
     autoclaving step.
   evidence:
-  - reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
+  - reference: doi:10.4148/1941-4765.1175
     supports: SUPPORT
     snippet: For solid medium add 18 g agar.
     explanation: 'variants[1]: MM preparation, not CM (which instead specifies 15
@@ -489,23 +496,45 @@ variants:
       18 g per one-litre preparation; no separate post-agar final volume is invented.
       Base remains LIQUID. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09.'
 references:
-- reference: https://www.fgsc.net/fgn48/Kaminskyj.htm
-  title: Fundamentals of growth, storage, genetics and microscopy of Aspergillus nidulans
-  authors: Susan G. W. Kaminskyj
-  year: 2001
-  notes: source_type=journal_protocol_web_page; discovery_mode=database_original_source_link;
-    accessed_on=2026-10-09; DOI=doi:10.4148/1941-4765.1175; protocol_html_sha256=323fe17d640ab0e039a06b4e585d26cc48effda0c03fbe730ca7cfe94abc0eee;
-    publisher_metadata_url=https://journals.newprairiepress.org/fgr/article/id/1112/;
-    publisher_html_sha256=f6d7f0f5136d9d4ffcb0aa5fac52441ec769f339e989e9ebdb2ac287994a711a.
-    Recipe quotations were inspected in the FGSC protocol HTML; publisher metadata
-    establishes title, author, year and DOI. PDF not inspected.
 - reference: doi:10.4148/1941-4765.1175
   title: Fundamentals of growth, storage, genetics and microscopy of Aspergillus nidulans
   authors: Susan G. W. Kaminskyj
   year: 2001
-  notes: source_type=journal_article; discovery_mode=database_original_source_link;
+  notes: 'source_type=journal_article; discovery_mode=database_original_source_link;
     accessed_on=2026-10-09; DOI=doi:10.4148/1941-4765.1175; protocol_html_sha256=323fe17d640ab0e039a06b4e585d26cc48effda0c03fbe730ca7cfe94abc0eee;
     publisher_metadata_url=https://journals.newprairiepress.org/fgr/article/id/1112/;
     publisher_html_sha256=f6d7f0f5136d9d4ffcb0aa5fac52441ec769f339e989e9ebdb2ac287994a711a.
     Recipe quotations were inspected in the FGSC protocol HTML; publisher metadata
-    establishes title, author, year and DOI. PDF not inspected.
+    establishes title, author, year and DOI. PDF not inspected. Citation aliases consolidated
+    on 2026-10-13 after publisher DOI/title/author/year verification; full_text_source=https://www.fgsc.net/fgn48/Kaminskyj.htm;
+    source_type_of_inspected_text=journal_protocol_web_page; discovery_mode=existing_citation_followup;
+    organism_inventory_scope=MM/conidial germination paragraph, not all assays in
+    the article. The protocol''s nomenclature spelling Emericella nidulellus is retained
+    here as reported, not asserted as a separate organism; NCBI lists Emericella nidulans
+    and Aspergillus nidulellus as synonyms of Aspergillus nidulans (NCBITaxon:162425,
+    species). No separate MM growth claim for FGSC A28, which is pictured in the 5YEG
+    discussion. Raw source: references_cache/papers/primary_html/kaminskyj-2001-protocol-html5-v2.html;
+    Markdown: references_cache/papers/primary_html/kaminskyj-2001-protocol-html5-v2.md.
+    The pre-existing bacterial category and high_metal flag were not reviewed in this
+    citation task.'
+target_organisms:
+- preferred_term: Aspergillus nidulans
+  term:
+    id: NCBITaxon:162425
+    label: Aspergillus nidulans
+  evidence:
+  - reference: doi:10.4148/1941-4765.1175
+    supports: SUPPORT
+    snippet: A. nidulans conidia germinate in defined (MM)
+    explanation: 'Locator: Growth and storage of Aspergillus nidulans conidia, opening
+      sentence, read together with the Minimal Medium (MM) recipe. Supports conidial
+      germination of Aspergillus nidulans on MM; it does not assert that every strain
+      grows on unsupplemented MM. The same sentence requires appropriate nutritional
+      supplements for auxotrophic strains. No strain or quantitative growth metric
+      is inferred. The local glucose, nitrate/trace/thiamine stock additions, pH and
+      preparation match the inspected MM protocol; thiamine percentage basis remains
+      unspecified. Optional agar and anhydrous magnesium sulfate remain the existing
+      variants; CM, 5YEG and unspecified auxotroph supplements are not substituted
+      for the base. taxonomy_match=exact_species; scientific_name=Aspergillus nidulans;
+      NCBITaxon:162425; rank=species; lookup_on=2026-10-13; taxonomy_source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=162425;
+      verified by archived NCBI Taxonomy XML, not a strain-level mapping.'

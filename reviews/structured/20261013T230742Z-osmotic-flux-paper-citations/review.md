@@ -1,0 +1,2402 @@
+# Osmotic and flux citations with formulation limitations
+
+- Review: 20261013T230742Z-osmotic-flux-paper-citations
+- Repository: culturebotai/CultureMech
+- Started UTC: 2026-10-13T22:28:31Z
+- Finished UTC: 2026-10-13T23:07:42Z
+- Reviewer: codex (self_review)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Nine bibliography additions to eight owners from nine archived abstracts; 81 ingredients preserved. No new native growth, concentration or resolved variant claims. Targeted checks passed; merge failures retained.
+
+## Scope And Provenance
+
+Eight normalized MediaDB study owners.
+
+Selection: Verified primary publication identities and maintained SQL source joins.
+Coverage: full; 8 reviewed / 8 in the declared population.
+Source: working_tree at Git base 41d4d390123c0d8320cd53e994470c88a1b86d8c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007022 | data/normalized_yaml/bacterial/m63.yaml | maintained | m63 |
+| CultureMech:007036 | data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml | maintained | m9_medium_kolisnychenko_et_al |
+| CultureMech:007037 | data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml | maintained | m9_medium_fischer_et_al |
+| CultureMech:007054 | data/normalized_yaml/bacterial/m63_jebbar.yaml | maintained | m63_jebbar |
+| CultureMech:007058 | data/normalized_yaml/bacterial/mm_causey.yaml | maintained | mm_causey |
+| CultureMech:007059 | data/normalized_yaml/bacterial/m9_purvis.yaml | maintained | m9_purvis |
+| CultureMech:007177 | data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml | maintained | ecoli_bl21_medium_park_et_al |
+| CultureMech:007021 | data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml | maintained | glucose_minimal_media_zhao_zhu |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| just validate data/normalized_yaml/bacterial/m63.yaml | passed | True | CultureMech:007022 | Actual result retained; merge failures are not waived. |
+| just validate-strict data/normalized_yaml/bacterial/m63.yaml | passed | True | CultureMech:007022 | Actual result retained; merge failures are not waived. |
+| just validate data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml | passed | True | CultureMech:007036 | Actual result retained; merge failures are not waived. |
+| just validate-strict data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml | passed | True | CultureMech:007036 | Actual result retained; merge failures are not waived. |
+| just validate data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml | passed | True | CultureMech:007037 | Actual result retained; merge failures are not waived. |
+| just validate-strict data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml | passed | True | CultureMech:007037 | Actual result retained; merge failures are not waived. |
+| just validate data/normalized_yaml/bacterial/m63_jebbar.yaml | passed | True | CultureMech:007054 | Actual result retained; merge failures are not waived. |
+| just validate-strict data/normalized_yaml/bacterial/m63_jebbar.yaml | passed | True | CultureMech:007054 | Actual result retained; merge failures are not waived. |
+| just validate data/normalized_yaml/bacterial/mm_causey.yaml | passed | True | CultureMech:007058 | Actual result retained; merge failures are not waived. |
+| just validate-strict data/normalized_yaml/bacterial/mm_causey.yaml | passed | True | CultureMech:007058 | Actual result retained; merge failures are not waived. |
+| just validate data/normalized_yaml/bacterial/m9_purvis.yaml | passed | True | CultureMech:007059 | Actual result retained; merge failures are not waived. |
+| just validate-strict data/normalized_yaml/bacterial/m9_purvis.yaml | passed | True | CultureMech:007059 | Actual result retained; merge failures are not waived. |
+| just validate data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml | passed | True | CultureMech:007177 | Actual result retained; merge failures are not waived. |
+| just validate-strict data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml | passed | True | CultureMech:007177 | Actual result retained; merge failures are not waived. |
+| just validate data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml | passed | True | CultureMech:007021 | Actual result retained; merge failures are not waived. |
+| just validate-strict data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml | passed | True | CultureMech:007021 | Actual result retained; merge failures are not waived. |
+| just validate data/normalized_yaml/bacterial/m63.yaml | passed | True | CultureMech:007022 | Actual result retained; merge failures are not waived. |
+| just validate-strict data/normalized_yaml/bacterial/m63.yaml | passed | True | CultureMech:007022 | Actual result retained; merge failures are not waived. |
+| just validate data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml | passed | True | CultureMech:007036 | Actual result retained; merge failures are not waived. |
+| just validate-strict data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml | passed | True | CultureMech:007036 | Actual result retained; merge failures are not waived. |
+| just validate data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml | passed | True | CultureMech:007037 | Actual result retained; merge failures are not waived. |
+| just validate-strict data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml | passed | True | CultureMech:007037 | Actual result retained; merge failures are not waived. |
+| just validate data/normalized_yaml/bacterial/m63_jebbar.yaml | passed | True | CultureMech:007054 | Actual result retained; merge failures are not waived. |
+| just validate-strict data/normalized_yaml/bacterial/m63_jebbar.yaml | passed | True | CultureMech:007054 | Actual result retained; merge failures are not waived. |
+| just validate data/normalized_yaml/bacterial/mm_causey.yaml | passed | True | CultureMech:007058 | Actual result retained; merge failures are not waived. |
+| just validate-strict data/normalized_yaml/bacterial/mm_causey.yaml | passed | True | CultureMech:007058 | Actual result retained; merge failures are not waived. |
+| just validate data/normalized_yaml/bacterial/m9_purvis.yaml | passed | True | CultureMech:007059 | Actual result retained; merge failures are not waived. |
+| just validate-strict data/normalized_yaml/bacterial/m9_purvis.yaml | passed | True | CultureMech:007059 | Actual result retained; merge failures are not waived. |
+| just validate data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml | passed | True | CultureMech:007177 | Actual result retained; merge failures are not waived. |
+| just validate-strict data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml | passed | True | CultureMech:007177 | Actual result retained; merge failures are not waived. |
+| just validate data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml | passed | True | CultureMech:007021 | Actual result retained; merge failures are not waived. |
+| just validate-strict data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml | passed | True | CultureMech:007021 | Actual result retained; merge failures are not waived. |
+| just verify-merges | failed | True | CultureMech:007022, CultureMech:007036, CultureMech:007037, CultureMech:007054, CultureMech:007058, CultureMech:007059, CultureMech:007177, CultureMech:007021 | Actual result retained; merge failures are not waived. |
+| just audit-merge-freshness | failed | True | CultureMech:007022, CultureMech:007036, CultureMech:007037, CultureMech:007054, CultureMech:007058, CultureMech:007059, CultureMech:007177, CultureMech:007021 | Actual result retained; merge failures are not waived. |
+| /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py | passed | True | CultureMech:007022, CultureMech:007036, CultureMech:007037, CultureMech:007054, CultureMech:007058, CultureMech:007059, CultureMech:007177, CultureMech:007021 | Actual result retained; merge failures are not waived. |
+| git diff --check | passed | True | CultureMech:007022, CultureMech:007036, CultureMech:007037, CultureMech:007054, CultureMech:007058, CultureMech:007059, CultureMech:007177, CultureMech:007021 | Actual result retained; merge failures are not waived. |
+| /tmp/culturemech-parallel-env-20261012/bin/python /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/paper_citation_curation/20261013-osmotic-flux-citations/curate.py --apply | passed | True | CultureMech:007022, CultureMech:007036, CultureMech:007037, CultureMech:007054, CultureMech:007058, CultureMech:007059, CultureMech:007177, CultureMech:007021 | Actual result retained; merge failures are not waived. |
+
+## Scientific And Domain Assessments
+
+### Publication identity and provenance
+
+evidence: supported. Targets: CultureMech:007022.
+
+Verified identity, excerpts and archive links; disputed metadata qualified.
+
+### Source-to-local-formulation comparison
+
+evidence: concern. Targets: CultureMech:007022.
+
+Keep carbon/nitrogen-free negative growth, minimal-medium growth, high-osmotic cultures and uptake assays distinct. Transport kinetics and inhibitor concentrations are not recipe concentrations. The abstract does not identify M63, its complete formula or K-10; no positive parent-growth inference from the negative result. Local comparison: Six native entries include 10 mM glucose, 75 mM sodium hydroxide and 100 mM sodium dihydrogen phosphate; the nearby thiamine M63 owner differs in glucose and supplementation. Neither is newly certified by this abstract. 
+
+### Scientific names, ranks and study roles
+
+evidence: supported. Targets: CultureMech:007022.
+
+Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank species; exact_species_not_strain; experimental species; local formulation unresolved. Enterobacteriaceae: Enterobacteriaceae, NCBITaxon:543, actual rank family; exact_family; background citation to prior osmoprotection work, not all-family growth. Escherichia coli K-10: Escherichia coli, NCBITaxon:562, actual rank species; parent_rank_only; secondary MediaDB strain lead; exact strain not verified. No new growth assertions.
+
+### Mutation and export boundary
+
+evidence: supported. Targets: CultureMech:007022.
+
+References and one history event per owner added; prior values and original bytes preserved; no publication.
+
+### Publication identity and provenance
+
+evidence: supported. Targets: CultureMech:007036.
+
+Verified identity, excerpts and archive links; disputed metadata qualified.
+
+### Source-to-local-formulation comparison
+
+evidence: concern. Targets: CultureMech:007036.
+
+The abstract reports reduced-genome growth on minimal medium, without the complete M9 formula or named experimental strains. Cryptic prophages are unnamed background entities, not taxonomically resolved medium targets. PubMed raw AuthorList supplies Plunkett G 3rd; the cached simplified author display omitted the suffix, which is retained in this citation. Local comparison: Seven native entries include 22.2024 mM glucose, 47.7434 mM dibasic sodium phosphate and 18.6947 mM ammonium chloride. Ingredient-set matches to other M9 records have different concentrations; no merge or cross-owner evidence transfer. 
+
+### Scientific names, ranks and study roles
+
+evidence: supported. Targets: CultureMech:007036.
+
+Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank species; exact_species_not_strain; experimental species; local formulation unresolved. human: Homo sapiens, NCBITaxon:9606, actual rank species; exact_species; Homo sapiens genome-sequencing background only. Escherichia coli MG1655: Escherichia coli str. K-12 substr. MG1655, NCBITaxon:511145, actual rank no rank; canonical_name_match_secondary_strain_lead; MediaDB lead not named in inspected abstract. Escherichia coli MDS12: Escherichia coli, NCBITaxon:562, actual rank species; parent_rank_only; MediaDB reduced-genome strain lead; exact node unresolved. No new growth assertions.
+
+### Mutation and export boundary
+
+evidence: supported. Targets: CultureMech:007036.
+
+References and one history event per owner added; prior values and original bytes preserved; no publication.
+
+### Publication identity and provenance
+
+evidence: supported. Targets: CultureMech:007037.
+
+Verified identity, excerpts and archive links; disputed metadata qualified.
+
+### Source-to-local-formulation comparison
+
+evidence: concern. Targets: CultureMech:007037.
+
+Isotope-labelled glucose experiments, environmental modifications and knockout backgrounds are separate contexts. The abstract supplies no complete M9 salts/trace formula or named strain-to-assay map; a shared M9 name does not establish equivalence to other local M9 recipes. Local comparison: Fourteen native entries include 16.6518 mM glucose, 52.9727 mM dibasic sodium phosphate, 14.9558 mM ammonium chloride, thiamine and trace components. Hydrate/salt identities and the generic preparation text are not verified by this abstract. 
+
+### Scientific names, ranks and study roles
+
+evidence: supported. Targets: CultureMech:007037.
+
+Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank species; exact_species_not_strain; experimental species; local formulation unresolved. Escherichia coli MG1655: Escherichia coli str. K-12 substr. MG1655, NCBITaxon:511145, actual rank no rank; canonical_name_match_secondary_strain_lead; MediaDB strain lead, not confirmed by abstract. Escherichia coli W3110: Escherichia coli str. K-12 substr. W3110, NCBITaxon:316407, actual rank no rank; canonical_name_match_secondary_strain_lead; MediaDB strain lead, not confirmed by abstract. Escherichia coli JM101: Escherichia coli, NCBITaxon:562, actual rank species; parent_rank_only; secondary strain/mutant lead; exact clone unresolved. Escherichia coli K-10_Zwf-: Escherichia coli, NCBITaxon:562, actual rank species; parent_rank_only; secondary strain/mutant lead; exact clone unresolved. Escherichia coli K-10_PfkA-: Escherichia coli, NCBITaxon:562, actual rank species; parent_rank_only; secondary strain/mutant lead; exact clone unresolved. Escherichia coli JM101_PykAF-: Escherichia coli, NCBITaxon:562, actual rank species; parent_rank_only; secondary strain/mutant lead; exact clone unresolved. Escherichia coli W3110_Pgi-: Escherichia coli str. K-12 substr. W3110, NCBITaxon:316407, actual rank no rank; parent_rank_only; secondary mutant lead; verified parent label is not exact mutant identity. Escherichia coli MG1655_SdhA-_Mdh-: Escherichia coli str. K-12 substr. MG1655, NCBITaxon:511145, actual rank no rank; parent_rank_only; secondary mutant lead; verified parent label is not exact mutant identity. Escherichia coli K-12_Mae-_Pck-: Escherichia coli K-12, NCBITaxon:83333, actual rank strain; parent_rank_only; secondary mutant lead; verified parent label is not exact mutant identity. Escherichia coli K-12_FumA-: Escherichia coli K-12, NCBITaxon:83333, actual rank strain; parent_rank_only; secondary mutant lead; verified parent label is not exact mutant identity. No new growth assertions.
+
+### Mutation and export boundary
+
+evidence: supported. Targets: CultureMech:007037.
+
+References and one history event per owner added; prior values and original bytes preserved; no publication.
+
+### Publication identity and provenance
+
+evidence: supported. Targets: CultureMech:007054.
+
+Verified identity, excerpts and archive links; disputed metadata qualified.
+
+### Source-to-local-formulation comparison
+
+evidence: concern. Targets: CultureMech:007054.
+
+The broader canonical-name lookup resolves the earlier short-alias MC4100 miss. Unnamed moderately halophilic bacteria are background; no specific organism or exact taxonomy identity is supplied. Ectoine is exogenously supplied in the study; the abstract does not identify its assay base as the local M63 formula, the added amount or osmotic-solute composition. Keep ectoine-supplemented growth and uptake/accumulation assays separate from the unsupplemented native recipe. Local comparison: Six native entries include 22 mM glycerol, 75 mM potassium hydroxide and 100 mM dipotassium phosphate, without ectoine. This differs from the Perroud M63 beyond carbon source alone; source/local phosphate identity needs methods-level reconciliation. 
+
+### Scientific names, ranks and study roles
+
+evidence: supported. Targets: CultureMech:007054.
+
+Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank species; exact_species_not_strain; experimental species; local formulation unresolved. Escherichia coli MC4100: Escherichia coli str. K-12 substr. MC4100, NCBITaxon:1403831, actual rank no rank; canonical_name_match_secondary_strain_lead; MediaDB strain lead, not named in abstract. No new growth assertions.
+
+### Mutation and export boundary
+
+evidence: supported. Targets: CultureMech:007054.
+
+References and one history event per owner added; prior values and original bytes preserved; no publication.
+
+### Publication identity and provenance
+
+evidence: supported. Targets: CultureMech:007058.
+
+Verified identity, excerpts and archive links; disputed metadata qualified.
+
+### Source-to-local-formulation comparison
+
+evidence: concern. Targets: CultureMech:007058.
+
+TC36 carries the reported deletions and is distinct from W3110; its product and flux phenotypes cannot be assigned to the parent. The reported 333 mM glucose experiment differs from the native 111 mM glucose entry. Mineral-salts-medium wording does not establish the rest of the local formula or identify which base/feeding context produced that comparison. Retain the glucose discrepancy as formulation-unresolved, not a certified threefold-glucose variant or canonical amount correction. Local comparison: Thirteen native entries include 111 mM glucose, thiamine and generically named ammonium phosphate. These chemical forms and all preparation steps remain unverified; no amount or canonical chemical identity was changed. 
+
+### Scientific names, ranks and study roles
+
+evidence: supported. Targets: CultureMech:007058.
+
+Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank species; exact_species_not_strain; experimental species; local formulation unresolved. Escherichia coli W3110: Escherichia coli str. K-12 substr. W3110, NCBITaxon:316407, actual rank no rank; canonical_name_match; named engineered-strain parent, not TC36 itself. Escherichia coli TC36: Escherichia coli str. K-12 substr. W3110, NCBITaxon:316407, actual rank no rank; parent_rank_only; W3110-derived experimental strain; exact TC36 node unresolved. No new growth assertions.
+
+### Mutation and export boundary
+
+evidence: supported. Targets: CultureMech:007058.
+
+References and one history event per owner added; prior values and original bytes preserved; no publication.
+
+### Publication identity and provenance
+
+evidence: supported. Targets: CultureMech:007059.
+
+Verified identity, excerpts and archive links; disputed metadata qualified.
+
+### Source-to-local-formulation comparison
+
+evidence: concern. Targets: CultureMech:007059.
+
+Trehalose overproduction is genetic biosynthesis, not evidence for trehalose supplementation. The abstract names M9-2% glucose but leaves percent basis, complete salts and stress-agent amounts/chemical forms unspecified. Separate elevated-temperature experiments from hexose, inorganic-salt, pyruvate, xylose and ethanol stress contexts; do not combine them into one variant or infer temperature optima. Local comparison: Seven native entries include 111 mM glucose. The reported 2% condition is not independently converted without its concentration basis; no salt amount, stressor addition or trehalose ingredient is inferred. 
+
+### Scientific names, ranks and study roles
+
+evidence: supported. Targets: CultureMech:007059.
+
+Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank species; exact_species_not_strain; experimental species; local formulation unresolved. Escherichia coli W3110: Escherichia coli str. K-12 substr. W3110, NCBITaxon:316407, actual rank no rank; canonical_name_match_secondary_strain_lead; MediaDB strain lead not named in abstract. No new growth assertions.
+
+### Mutation and export boundary
+
+evidence: supported. Targets: CultureMech:007059.
+
+References and one history event per owner added; prior values and original bytes preserved; no publication.
+
+### Publication identity and provenance
+
+evidence: supported. Targets: CultureMech:007177.
+
+Verified identity, excerpts and archive links; disputed metadata qualified.
+
+### Source-to-local-formulation comparison
+
+evidence: concern. Targets: CultureMech:007177.
+
+NCBI lists Gluconobacter suboxydans as a synonym of Gluconobacter oxydans. Keep batch and fed-batch outcomes separate: the abstract does not provide the basal recipe, feed composition, antibiotics or strain-specific conditions. Local comparison: Fourteen native entries include 27.753 mM beta-D-glucose, citrate, ferric dicitrate, trace salts and generically named ammonium phosphate. The abstract cannot establish whether this is the batch basal medium, fed-batch medium or feed. 
+
+### Scientific names, ranks and study roles
+
+evidence: supported. Targets: CultureMech:007177.
+
+Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank species; exact_species_not_strain; experimental species; local formulation unresolved. Escherichia coli BL21/pACDdsA: Escherichia coli BL21, NCBITaxon:511693, actual rank strain; parent_rank_only; experimental recombinant; BL21 node does not identify its plasmid-bearing clone. Gluconobacter suboxydans: Gluconobacter oxydans, NCBITaxon:442, actual rank species; verified_synonym; ddsA gene donor, not a demonstrated medium-growth target. Escherichia coli KO229: Escherichia coli, NCBITaxon:562, actual rank species; parent_rank_only; secondary MediaDB lead; exact node and experimental role unresolved. Escherichia coli BL21[pACYC184]: Escherichia coli BL21, NCBITaxon:511693, actual rank strain; parent_rank_only; secondary control-strain lead; exact clone not verified. No new growth assertions.
+
+### Mutation and export boundary
+
+evidence: supported. Targets: CultureMech:007177.
+
+References and one history event per owner added; prior values and original bytes preserved; no publication.
+
+### Publication identity and provenance
+
+evidence: supported. Targets: CultureMech:007021.
+
+Verified identity, excerpts and archive links; disputed metadata qualified.
+
+### Source-to-local-formulation comparison
+
+evidence: concern. Targets: CultureMech:007021.
+
+The primary abstract distinguishes pflA-, pflB-, pflC- and pflD- mutants, their parent, and alternative carbon-source experiments; these unnamed strain backgrounds map only to the verified species above. Do not assign the same lactate outcome to all mutants or inherit the glucose recipe into gluconate, pyruvate, fructose or glycerol experiments. Historical MediaDB first_author=Zhao conflicts with both PubMed and the publisher's Zhu J; the verified PMID/title identify the same paper. Publisher online date 12 December 2003 and April 2004 issue explain the year convention used here. Local comparison: Fourteen native entries include 55.506 mM beta-D-glucose and mixed sodium/potassium phosphate salts. The full formula, chemical forms, pH, preparation and assay-specific substitutions are not given in the abstract; no variant is assigned.  The primary abstract distinguishes pykF, ppc, pflA, pta and adhE mutants under microaerobic conditions; these unnamed strain backgrounds map only to the verified species above. It does not identify the complete salts/trace recipe or permit a common growth/flux outcome for every mutant. Historical MediaDB title spelling condiion and lower-case first_author=zhu differ from verified PubMed metadata; this is not a separate paper. Local comparison: The same fourteen-entry MED132 owner also receives the distinct 2004 Zhu citation. Source identity and mutant contexts remain separate; neither abstract proves complete formulation equivalence or warrants combining assay results. 
+
+### Scientific names, ranks and study roles
+
+evidence: supported. Targets: CultureMech:007021.
+
+Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank species; exact_species_not_strain; experimental species; local formulation unresolved. Escherichia coli BW25113: Escherichia coli BW25113, NCBITaxon:679895, actual rank no rank; canonical_name_match_secondary_strain_lead; MediaDB parent-strain lead, not named in abstract. Escherichia coli BW25113_pflB-: Escherichia coli BW25113, NCBITaxon:679895, actual rank no rank; parent_rank_only; secondary mutant lead; parent node is not exact mutant identity. Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank species; exact_species_not_strain; experimental species; local formulation unresolved. Escherichia coli BW25113: Escherichia coli BW25113, NCBITaxon:679895, actual rank no rank; canonical_name_match_secondary_strain_lead; MediaDB parent-strain lead, not named in abstract. Escherichia coli BW25113_ppc-: Escherichia coli BW25113, NCBITaxon:679895, actual rank no rank; parent_rank_only; secondary mutant lead; parent node is not exact mutant identity. Escherichia coli BW25113_pflA-: Escherichia coli BW25113, NCBITaxon:679895, actual rank no rank; parent_rank_only; secondary mutant lead; parent node is not exact mutant identity. Escherichia coli BW25113_pta-: Escherichia coli BW25113, NCBITaxon:679895, actual rank no rank; parent_rank_only; secondary mutant lead; parent node is not exact mutant identity. Escherichia coli BW25113_adhE-: Escherichia coli BW25113, NCBITaxon:679895, actual rank no rank; parent_rank_only; secondary mutant lead; parent node is not exact mutant identity. Escherichia coli BW25113_pykF-: Escherichia coli BW25113, NCBITaxon:679895, actual rank no rank; parent_rank_only; secondary mutant lead; parent node is not exact mutant identity. No new growth assertions.
+
+### Mutation and export boundary
+
+evidence: supported. Targets: CultureMech:007021.
+
+References and one history event per owner added; prior values and original bytes preserved; no publication.
+
+## Findings
+
+### formulation-41: Exact local-formulation assignment unresolved: source 41
+
+major / open / confirmed; issue key: osmotic-flux-citations-formulation-41.
+
+Keep carbon/nitrogen-free negative growth, minimal-medium growth, high-osmotic cultures and uptake assays distinct. Transport kinetics and inhibitor concentrations are not recipe concentrations. The abstract does not identify M63, its complete formula or K-10; no positive parent-growth inference from the negative result. Local comparison: Six native entries include 10 mM glucose, 75 mM sodium hydroxide and 100 mM sodium dihydrogen phosphate; the nearby thiamine M63 owner differs in glucose and supplementation. Neither is newly certified by this abstract. 
+
+### formulation-48: Exact local-formulation assignment unresolved: source 48
+
+major / open / confirmed; issue key: osmotic-flux-citations-formulation-48.
+
+The abstract reports reduced-genome growth on minimal medium, without the complete M9 formula or named experimental strains. Cryptic prophages are unnamed background entities, not taxonomically resolved medium targets. PubMed raw AuthorList supplies Plunkett G 3rd; the cached simplified author display omitted the suffix, which is retained in this citation. Local comparison: Seven native entries include 22.2024 mM glucose, 47.7434 mM dibasic sodium phosphate and 18.6947 mM ammonium chloride. Ingredient-set matches to other M9 records have different concentrations; no merge or cross-owner evidence transfer. 
+
+### formulation-49: Exact local-formulation assignment unresolved: source 49
+
+major / open / confirmed; issue key: osmotic-flux-citations-formulation-49.
+
+Isotope-labelled glucose experiments, environmental modifications and knockout backgrounds are separate contexts. The abstract supplies no complete M9 salts/trace formula or named strain-to-assay map; a shared M9 name does not establish equivalence to other local M9 recipes. Local comparison: Fourteen native entries include 16.6518 mM glucose, 52.9727 mM dibasic sodium phosphate, 14.9558 mM ammonium chloride, thiamine and trace components. Hydrate/salt identities and the generic preparation text are not verified by this abstract. 
+
+### formulation-57: Exact local-formulation assignment unresolved: source 57
+
+major / open / confirmed; issue key: osmotic-flux-citations-formulation-57.
+
+The broader canonical-name lookup resolves the earlier short-alias MC4100 miss. Unnamed moderately halophilic bacteria are background; no specific organism or exact taxonomy identity is supplied. Ectoine is exogenously supplied in the study; the abstract does not identify its assay base as the local M63 formula, the added amount or osmotic-solute composition. Keep ectoine-supplemented growth and uptake/accumulation assays separate from the unsupplemented native recipe. Local comparison: Six native entries include 22 mM glycerol, 75 mM potassium hydroxide and 100 mM dipotassium phosphate, without ectoine. This differs from the Perroud M63 beyond carbon source alone; source/local phosphate identity needs methods-level reconciliation. 
+
+### formulation-61: Exact local-formulation assignment unresolved: source 61
+
+major / open / confirmed; issue key: osmotic-flux-citations-formulation-61.
+
+TC36 carries the reported deletions and is distinct from W3110; its product and flux phenotypes cannot be assigned to the parent. The reported 333 mM glucose experiment differs from the native 111 mM glucose entry. Mineral-salts-medium wording does not establish the rest of the local formula or identify which base/feeding context produced that comparison. Retain the glucose discrepancy as formulation-unresolved, not a certified threefold-glucose variant or canonical amount correction. Local comparison: Thirteen native entries include 111 mM glucose, thiamine and generically named ammonium phosphate. These chemical forms and all preparation steps remain unverified; no amount or canonical chemical identity was changed. 
+
+### formulation-62: Exact local-formulation assignment unresolved: source 62
+
+major / open / confirmed; issue key: osmotic-flux-citations-formulation-62.
+
+Trehalose overproduction is genetic biosynthesis, not evidence for trehalose supplementation. The abstract names M9-2% glucose but leaves percent basis, complete salts and stress-agent amounts/chemical forms unspecified. Separate elevated-temperature experiments from hexose, inorganic-salt, pyruvate, xylose and ethanol stress contexts; do not combine them into one variant or infer temperature optima. Local comparison: Seven native entries include 111 mM glucose. The reported 2% condition is not independently converted without its concentration basis; no salt amount, stressor addition or trehalose ingredient is inferred. 
+
+### formulation-70: Exact local-formulation assignment unresolved: source 70
+
+major / open / confirmed; issue key: osmotic-flux-citations-formulation-70.
+
+NCBI lists Gluconobacter suboxydans as a synonym of Gluconobacter oxydans. Keep batch and fed-batch outcomes separate: the abstract does not provide the basal recipe, feed composition, antibiotics or strain-specific conditions. Local comparison: Fourteen native entries include 27.753 mM beta-D-glucose, citrate, ferric dicitrate, trace salts and generically named ammonium phosphate. The abstract cannot establish whether this is the batch basal medium, fed-batch medium or feed. 
+
+### formulation-39: Exact local-formulation assignment unresolved: source 39
+
+major / open / confirmed; issue key: osmotic-flux-citations-formulation-39.
+
+The primary abstract distinguishes pflA-, pflB-, pflC- and pflD- mutants, their parent, and alternative carbon-source experiments; these unnamed strain backgrounds map only to the verified species above. Do not assign the same lactate outcome to all mutants or inherit the glucose recipe into gluconate, pyruvate, fructose or glycerol experiments. Historical MediaDB first_author=Zhao conflicts with both PubMed and the publisher's Zhu J; the verified PMID/title identify the same paper. Publisher online date 12 December 2003 and April 2004 issue explain the year convention used here. Local comparison: Fourteen native entries include 55.506 mM beta-D-glucose and mixed sodium/potassium phosphate salts. The full formula, chemical forms, pH, preparation and assay-specific substitutions are not given in the abstract; no variant is assigned. 
+
+### formulation-40: Exact local-formulation assignment unresolved: source 40
+
+major / open / confirmed; issue key: osmotic-flux-citations-formulation-40.
+
+The primary abstract distinguishes pykF, ppc, pflA, pta and adhE mutants under microaerobic conditions; these unnamed strain backgrounds map only to the verified species above. It does not identify the complete salts/trace recipe or permit a common growth/flux outcome for every mutant. Historical MediaDB title spelling condiion and lower-case first_author=zhu differ from verified PubMed metadata; this is not a separate paper. Local comparison: The same fourteen-entry MED132 owner also receives the distinct 2004 Zhu citation. Source identity and mutant contexts remain separate; neither abstract proves complete formulation equivalence or warrants combining assay results. 
+
+## Recommended Actions And Acceptance Checks
+
+### resolve-formulation-41
+
+Exact local-formulation assignment unresolved: source 41
+
+- Reconcile complete source recipe, assay scope and local chemical identities before variant, growth or amount assertions.
+
+### resolve-formulation-48
+
+Exact local-formulation assignment unresolved: source 48
+
+- Reconcile complete source recipe, assay scope and local chemical identities before variant, growth or amount assertions.
+
+### resolve-formulation-49
+
+Exact local-formulation assignment unresolved: source 49
+
+- Reconcile complete source recipe, assay scope and local chemical identities before variant, growth or amount assertions.
+
+### resolve-formulation-57
+
+Exact local-formulation assignment unresolved: source 57
+
+- Reconcile complete source recipe, assay scope and local chemical identities before variant, growth or amount assertions.
+
+### resolve-formulation-61
+
+Exact local-formulation assignment unresolved: source 61
+
+- Reconcile complete source recipe, assay scope and local chemical identities before variant, growth or amount assertions.
+
+### resolve-formulation-62
+
+Exact local-formulation assignment unresolved: source 62
+
+- Reconcile complete source recipe, assay scope and local chemical identities before variant, growth or amount assertions.
+
+### resolve-formulation-70
+
+Exact local-formulation assignment unresolved: source 70
+
+- Reconcile complete source recipe, assay scope and local chemical identities before variant, growth or amount assertions.
+
+### resolve-formulation-39
+
+Exact local-formulation assignment unresolved: source 39
+
+- Reconcile complete source recipe, assay scope and local chemical identities before variant, growth or amount assertions.
+
+### resolve-formulation-40
+
+Exact local-formulation assignment unresolved: source 40
+
+- Reconcile complete source recipe, assay scope and local chemical identities before variant, growth or amount assertions.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| paper-41 | PMID:3881395; references_cache/papers/PMID_3881395.xml; archived_PubMed_abstract | supports | Verified publication identity and abstract; not complete recipe approval. |
+| paper-48 | PMID:11932248; references_cache/papers/PMID_11932248.xml; archived_PubMed_abstract | supports | Verified publication identity and abstract; not complete recipe approval. |
+| paper-49 | PMID:12603321; references_cache/papers/PMID_12603321.xml; archived_PubMed_abstract | supports | Verified publication identity and abstract; not complete recipe approval. |
+| paper-57 | PMID:1629159; references_cache/papers/PMID_1629159.xml; archived_PubMed_abstract | supports | Verified publication identity and abstract; not complete recipe approval. |
+| paper-61 | PMID:12556564; references_cache/papers/PMID_12556564.xml; archived_PubMed_abstract | supports | Verified publication identity and abstract; not complete recipe approval. |
+| paper-62 | PMID:16000787; references_cache/papers/PMID_16000787.xml; archived_PubMed_abstract | supports | Verified publication identity and abstract; not complete recipe approval. |
+| paper-70 | PMID:15459799; references_cache/papers/PMID_15459799.xml; archived_PubMed_abstract | supports | Verified publication identity and abstract; not complete recipe approval. |
+| paper-39 | PMID:14673546; references_cache/papers/PMID_14673546.xml; archived_PubMed_abstract_and_publisher_abstract_metadata | supports | Verified publication identity and abstract; not complete recipe approval. |
+| publisher-39 | PMID:14673546; references_cache/papers/primary_html/expression-next-source-39-20261013.html; Publisher abstract and publication dates | supports | Online date in 2003 and issue date in 2004 distinguish dating conventions. |
+| paper-40 | PMID:15781419; references_cache/papers/PMID_15781419.xml; archived_PubMed_abstract | supports | Verified publication identity and abstract; not complete recipe approval. |
+| taxonomy-0 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy; references_cache/papers/taxonomy/osmotic-flux-20261013.xml; ScientificName, Rank, synonyms and lineage | supports | Verified actual ranks and qualified parent-only mappings, not cultivation evidence. |
+| claims | Guarded curation receipt; reports/paper_citation_curation/20261013-osmotic-flux-citations/claim-plan.json; claim-plan.json | context_only | Nine registered quotes, ten taxonomy nodes and qualified owner decisions. |
+| archives | Guarded curation receipt; reports/paper_citation_curation/20261013-osmotic-flux-citations/source-preparation.json; source-preparation.json | context_only | Nine cited papers with raw source and Markdown archives. |
+| readback | Guarded curation receipt; reports/paper_citation_curation/20261013-osmotic-flux-citations/final-readback.json; final-readback.json | context_only | Only eight intended normalized owners changed; prior bytes recovered. |
+| excerpts | Guarded curation receipt; reports/paper_citation_curation/20261013-osmotic-flux-citations/evidence-readback.json; evidence-readback.json | context_only | Nine excerpt occurrences checked against primary archives. |
+| applied | Guarded curation receipt; reports/paper_citation_curation/20261013-osmotic-flux-citations/applied.json; applied.json | context_only | Nine citations, eight history events, 81 original ingredients preserved. |
+| comparison | Guarded curation receipt; reports/paper_citation_curation/20261013-osmotic-flux-citations/comparison.json; comparison.json | context_only | Ignored-inclusive alias and formulation search; similarity is not identity. |
+| baseline-00 | reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-00.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-00.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| baseline-01 | reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-01.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-01.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| baseline-02 | reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-02.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-02.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| baseline-03 | reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-03.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-03.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| baseline-04 | reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-04.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-04.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| baseline-05 | reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-05.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-05.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| baseline-06 | reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-06.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-06.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| baseline-07 | reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-07.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-07.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| baseline-08 | reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-08.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-08.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| baseline-09 | reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-09.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-09.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| baseline-10 | reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-10.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-10.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| baseline-11 | reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-11.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-11.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| baseline-12 | reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-12.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-12.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| baseline-13 | reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-13.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-13.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| baseline-14 | reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-14.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-14.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| baseline-15 | reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-15.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-15.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| post-00 | reports/paper_citation_curation/20261013-osmotic-flux-citations/post-00.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/post-00.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| post-01 | reports/paper_citation_curation/20261013-osmotic-flux-citations/post-01.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/post-01.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| post-02 | reports/paper_citation_curation/20261013-osmotic-flux-citations/post-02.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/post-02.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| post-03 | reports/paper_citation_curation/20261013-osmotic-flux-citations/post-03.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/post-03.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| post-04 | reports/paper_citation_curation/20261013-osmotic-flux-citations/post-04.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/post-04.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| post-05 | reports/paper_citation_curation/20261013-osmotic-flux-citations/post-05.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/post-05.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| post-06 | reports/paper_citation_curation/20261013-osmotic-flux-citations/post-06.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/post-06.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| post-07 | reports/paper_citation_curation/20261013-osmotic-flux-citations/post-07.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/post-07.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| post-08 | reports/paper_citation_curation/20261013-osmotic-flux-citations/post-08.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/post-08.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| post-09 | reports/paper_citation_curation/20261013-osmotic-flux-citations/post-09.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/post-09.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| post-10 | reports/paper_citation_curation/20261013-osmotic-flux-citations/post-10.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/post-10.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| post-11 | reports/paper_citation_curation/20261013-osmotic-flux-citations/post-11.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/post-11.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| post-12 | reports/paper_citation_curation/20261013-osmotic-flux-citations/post-12.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/post-12.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| post-13 | reports/paper_citation_curation/20261013-osmotic-flux-citations/post-13.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/post-13.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| post-14 | reports/paper_citation_curation/20261013-osmotic-flux-citations/post-14.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/post-14.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| post-15 | reports/paper_citation_curation/20261013-osmotic-flux-citations/post-15.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/post-15.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| merge-00 | reports/paper_citation_curation/20261013-osmotic-flux-citations/merge-00.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/merge-00.log; Terminal command output | context_only | Exit code 1; not scientific certification. |
+| merge-01 | reports/paper_citation_curation/20261013-osmotic-flux-citations/merge-01.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/merge-01.log; Terminal command output | context_only | Exit code 1; not scientific certification. |
+| extra-00 | reports/paper_citation_curation/20261013-osmotic-flux-citations/extra-00.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/extra-00.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| extra-01 | reports/paper_citation_curation/20261013-osmotic-flux-citations/extra-01.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/extra-01.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+| extra-02 | reports/paper_citation_curation/20261013-osmotic-flux-citations/extra-02.log; reports/paper_citation_curation/20261013-osmotic-flux-citations/extra-02.log; Terminal command output | context_only | Exit code 0; not scientific certification. |
+
+## Limits And Additional Notes
+
+- Partial self-review, not independent review or complete record approval.
+- Nine papers have abstract-only scientific access, plus publisher abstract/metadata for one. PMC front-only captures are not full text.
+- Actual NCBI ranks, parent-only mappings, imported strain leads and experimental roles remain distinct.
+- Ectoine addition, glucose conditions, stress assays, knockout backgrounds and batch/fed-batch contexts are kept separate.
+- Merge diagnostics retain actual failures; equal counts cannot establish row-level equivalence.
+- No generated or GitHub publication. Remaining candidates and access gaps leave the broader citation goal incomplete.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261013T230742Z-osmotic-flux-paper-citations
+kind: batch
+repository: culturebotai/CultureMech
+title: Osmotic and flux citations with formulation limitations
+started_at: '2026-10-13T22:28:31Z'
+finished_at: '2026-10-13T23:07:42Z'
+reviewer:
+  identity: codex
+  kind: agent
+  independence: self_review
+  independence_basis: Curator-performed assessment, not independent adversarial review.
+skill: culturemech-add-paper-citation
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Nine bibliography additions to eight owners from nine archived abstracts;
+  81 ingredients preserved. No new native growth, concentration or resolved variant
+  claims. Targeted checks passed; merge failures retained.
+source:
+  git_revision: 41d4d390123c0d8320cd53e994470c88a1b86d8c
+  state: working_tree
+  inputs:
+  - path: data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml
+    sha256: 2b92765837f872be8217fe649049d530328e4a3682651e9b6a8b9ee8da05d2e1
+    role: target
+  - path: data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml
+    sha256: def1b8c02d9d0f98eb61761ca030a67ed7fcae07741b2f8cc61850021a6fae90
+    role: target
+  - path: data/normalized_yaml/bacterial/m63.yaml
+    sha256: 60fec57c49e2b68043cfb78cbffec8787b6158746448192e0c20cf39b9f50809
+    role: target
+  - path: data/normalized_yaml/bacterial/m63_jebbar.yaml
+    sha256: 6a04c18970e292279cf018571eafe5c5577f8ccbff9ff1893949eb0ec9da6796
+    role: target
+  - path: data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml
+    sha256: bd6a4312b2b06ddf2b0a5faee97fb4452183063c678be2387a867cd4525ee1a1
+    role: target
+  - path: data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml
+    sha256: ff82a29ca57636abc991bd81c4c2757c7c978ff9d47890a6faf056902941e085
+    role: target
+  - path: data/normalized_yaml/bacterial/m9_purvis.yaml
+    sha256: 3cb8994ac0b1ccaba64cf58c4d46f5f4191c792b036537080955678152705642
+    role: target
+  - path: data/normalized_yaml/bacterial/mm_causey.yaml
+    sha256: fc67de0c74bfeec91da9ddb533caddc9e78184ce79454089c35d903f745c9f6f
+    role: target
+  - path: src/culturemech/export/kgx_export.py
+    sha256: eacbc2e7b363488cc1ed96e91737f54244dc1a2425dfa05c77ba89d0a5cd10e0
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: Eight normalized MediaDB study owners.
+  selection: Verified primary publication identities and maintained SQL source joins.
+  coverage: full
+  population_size: 8
+  reviewed_target_ids:
+  - CultureMech:007022
+  - CultureMech:007036
+  - CultureMech:007037
+  - CultureMech:007054
+  - CultureMech:007058
+  - CultureMech:007059
+  - CultureMech:007177
+  - CultureMech:007021
+  exclusions:
+  - target: Complete recipe approval and generated publication
+    reason: Formulation and import discrepancies remain unresolved.
+targets:
+- target_id: CultureMech:007022
+  path: data/normalized_yaml/bacterial/m63.yaml
+  label: m63
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m63.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007036
+  path: data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml
+  label: m9_medium_kolisnychenko_et_al
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007037
+  path: data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml
+  label: m9_medium_fischer_et_al
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007054
+  path: data/normalized_yaml/bacterial/m63_jebbar.yaml
+  label: m63_jebbar
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m63_jebbar.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007058
+  path: data/normalized_yaml/bacterial/mm_causey.yaml
+  label: mm_causey
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mm_causey.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007059
+  path: data/normalized_yaml/bacterial/m9_purvis.yaml
+  label: m9_purvis
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_purvis.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007177
+  path: data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml
+  label: ecoli_bl21_medium_park_et_al
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007021
+  path: data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml
+  label: glucose_minimal_media_zhao_zhu
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml
+    role: authoritative normalized recipe
+checks:
+- check_id: baseline-00
+  name: just validate data/normalized_yaml/bacterial/m63.yaml
+  command: just validate data/normalized_yaml/bacterial/m63.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007022
+  evidence_ids:
+  - baseline-00
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-01
+  name: just validate-strict data/normalized_yaml/bacterial/m63.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m63.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007022
+  evidence_ids:
+  - baseline-01
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-02
+  name: just validate data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007036
+  evidence_ids:
+  - baseline-02
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-03
+  name: just validate-strict data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007036
+  evidence_ids:
+  - baseline-03
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-04
+  name: just validate data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007037
+  evidence_ids:
+  - baseline-04
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-05
+  name: just validate-strict data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007037
+  evidence_ids:
+  - baseline-05
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-06
+  name: just validate data/normalized_yaml/bacterial/m63_jebbar.yaml
+  command: just validate data/normalized_yaml/bacterial/m63_jebbar.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007054
+  evidence_ids:
+  - baseline-06
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-07
+  name: just validate-strict data/normalized_yaml/bacterial/m63_jebbar.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m63_jebbar.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007054
+  evidence_ids:
+  - baseline-07
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-08
+  name: just validate data/normalized_yaml/bacterial/mm_causey.yaml
+  command: just validate data/normalized_yaml/bacterial/mm_causey.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007058
+  evidence_ids:
+  - baseline-08
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-09
+  name: just validate-strict data/normalized_yaml/bacterial/mm_causey.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/mm_causey.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007058
+  evidence_ids:
+  - baseline-09
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-10
+  name: just validate data/normalized_yaml/bacterial/m9_purvis.yaml
+  command: just validate data/normalized_yaml/bacterial/m9_purvis.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007059
+  evidence_ids:
+  - baseline-10
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-11
+  name: just validate-strict data/normalized_yaml/bacterial/m9_purvis.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m9_purvis.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007059
+  evidence_ids:
+  - baseline-11
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-12
+  name: just validate data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007177
+  evidence_ids:
+  - baseline-12
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-13
+  name: just validate-strict data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007177
+  evidence_ids:
+  - baseline-13
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-14
+  name: just validate data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml
+  command: just validate data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007021
+  evidence_ids:
+  - baseline-14
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-15
+  name: just validate-strict data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007021
+  evidence_ids:
+  - baseline-15
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-00
+  name: just validate data/normalized_yaml/bacterial/m63.yaml
+  command: just validate data/normalized_yaml/bacterial/m63.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007022
+  evidence_ids:
+  - post-00
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-01
+  name: just validate-strict data/normalized_yaml/bacterial/m63.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m63.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007022
+  evidence_ids:
+  - post-01
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-02
+  name: just validate data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007036
+  evidence_ids:
+  - post-02
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-03
+  name: just validate-strict data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007036
+  evidence_ids:
+  - post-03
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-04
+  name: just validate data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007037
+  evidence_ids:
+  - post-04
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-05
+  name: just validate-strict data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007037
+  evidence_ids:
+  - post-05
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-06
+  name: just validate data/normalized_yaml/bacterial/m63_jebbar.yaml
+  command: just validate data/normalized_yaml/bacterial/m63_jebbar.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007054
+  evidence_ids:
+  - post-06
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-07
+  name: just validate-strict data/normalized_yaml/bacterial/m63_jebbar.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m63_jebbar.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007054
+  evidence_ids:
+  - post-07
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-08
+  name: just validate data/normalized_yaml/bacterial/mm_causey.yaml
+  command: just validate data/normalized_yaml/bacterial/mm_causey.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007058
+  evidence_ids:
+  - post-08
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-09
+  name: just validate-strict data/normalized_yaml/bacterial/mm_causey.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/mm_causey.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007058
+  evidence_ids:
+  - post-09
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-10
+  name: just validate data/normalized_yaml/bacterial/m9_purvis.yaml
+  command: just validate data/normalized_yaml/bacterial/m9_purvis.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007059
+  evidence_ids:
+  - post-10
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-11
+  name: just validate-strict data/normalized_yaml/bacterial/m9_purvis.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m9_purvis.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007059
+  evidence_ids:
+  - post-11
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-12
+  name: just validate data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007177
+  evidence_ids:
+  - post-12
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-13
+  name: just validate-strict data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007177
+  evidence_ids:
+  - post-13
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-14
+  name: just validate data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml
+  command: just validate data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007021
+  evidence_ids:
+  - post-14
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-15
+  name: just validate-strict data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007021
+  evidence_ids:
+  - post-15
+  summary: Actual result retained; merge failures are not waived.
+- check_id: merge-00
+  name: just verify-merges
+  command: just verify-merges
+  status: failed
+  required: true
+  exit_code: 1
+  target_ids:
+  - CultureMech:007022
+  - CultureMech:007036
+  - CultureMech:007037
+  - CultureMech:007054
+  - CultureMech:007058
+  - CultureMech:007059
+  - CultureMech:007177
+  - CultureMech:007021
+  evidence_ids:
+  - merge-00
+  summary: Actual result retained; merge failures are not waived.
+- check_id: merge-01
+  name: just audit-merge-freshness
+  command: just audit-merge-freshness
+  status: failed
+  required: true
+  exit_code: 1
+  target_ids:
+  - CultureMech:007022
+  - CultureMech:007036
+  - CultureMech:007037
+  - CultureMech:007054
+  - CultureMech:007058
+  - CultureMech:007059
+  - CultureMech:007177
+  - CultureMech:007021
+  evidence_ids:
+  - merge-01
+  summary: Actual result retained; merge failures are not waived.
+- check_id: extra-00
+  name: /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py
+  command: /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007022
+  - CultureMech:007036
+  - CultureMech:007037
+  - CultureMech:007054
+  - CultureMech:007058
+  - CultureMech:007059
+  - CultureMech:007177
+  - CultureMech:007021
+  evidence_ids:
+  - extra-00
+  summary: Actual result retained; merge failures are not waived.
+- check_id: extra-01
+  name: git diff --check
+  command: git diff --check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007022
+  - CultureMech:007036
+  - CultureMech:007037
+  - CultureMech:007054
+  - CultureMech:007058
+  - CultureMech:007059
+  - CultureMech:007177
+  - CultureMech:007021
+  evidence_ids:
+  - extra-01
+  summary: Actual result retained; merge failures are not waived.
+- check_id: extra-02
+  name: /tmp/culturemech-parallel-env-20261012/bin/python /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/paper_citation_curation/20261013-osmotic-flux-citations/curate.py
+    --apply
+  command: /tmp/culturemech-parallel-env-20261012/bin/python /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/paper_citation_curation/20261013-osmotic-flux-citations/curate.py
+    --apply
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007022
+  - CultureMech:007036
+  - CultureMech:007037
+  - CultureMech:007054
+  - CultureMech:007058
+  - CultureMech:007059
+  - CultureMech:007177
+  - CultureMech:007021
+  evidence_ids:
+  - extra-02
+  summary: Actual result retained; merge failures are not waived.
+evidence:
+- evidence_id: paper-41
+  kind: primary_source
+  reference: PMID:3881395
+  locator: references_cache/papers/PMID_3881395.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: c99e908da2e65faa98c24aa7cac33cd8e1a5c13541a79cc29403049ddeddfec2
+- evidence_id: paper-48
+  kind: primary_source
+  reference: PMID:11932248
+  locator: references_cache/papers/PMID_11932248.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: bc7c45b2972d666d23f648dd99b4e1206664c376dcddabf4e07a300f72bc9a5a
+- evidence_id: paper-49
+  kind: primary_source
+  reference: PMID:12603321
+  locator: references_cache/papers/PMID_12603321.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: 86b130c3353c6728bfd6120052f3755a32195cfb3e4b69bd0d5704cbbc0af8af
+- evidence_id: paper-57
+  kind: primary_source
+  reference: PMID:1629159
+  locator: references_cache/papers/PMID_1629159.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: 714fd5283df948f24fdc22ae9d3b9fda7fc9ffeaf5ef49107f9749c1d1207841
+- evidence_id: paper-61
+  kind: primary_source
+  reference: PMID:12556564
+  locator: references_cache/papers/PMID_12556564.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: 0b7faa9613dc55737e1ee82d1fef364a9f0299efcaf481161bf4bf9d89bb5568
+- evidence_id: paper-62
+  kind: primary_source
+  reference: PMID:16000787
+  locator: references_cache/papers/PMID_16000787.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: d8da823748328bc25458d612ebeb499f11645683feeefea31ad76722e67afdf1
+- evidence_id: paper-70
+  kind: primary_source
+  reference: PMID:15459799
+  locator: references_cache/papers/PMID_15459799.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: 057bbe7e35157383e366f1ad79630352afef0823aee9711e794d61caa84b7743
+- evidence_id: paper-39
+  kind: primary_source
+  reference: PMID:14673546
+  locator: references_cache/papers/PMID_14673546.xml; archived_PubMed_abstract_and_publisher_abstract_metadata
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: 5e4b423625fd2d01e8b232a08d5a91db40dd4d8db27459dbbe2efa021a24c3a6
+- evidence_id: publisher-39
+  kind: primary_source
+  reference: PMID:14673546
+  locator: references_cache/papers/primary_html/expression-next-source-39-20261013.html;
+    Publisher abstract and publication dates
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Online date in 2003 and issue date in 2004 distinguish dating conventions.
+  support: supports
+  snapshot_sha256: ae1a0ba5504a597212d4b6d4d1a3628a7e4d464503675c075b2b8ac0fb43df97
+- evidence_id: paper-40
+  kind: primary_source
+  reference: PMID:15781419
+  locator: references_cache/papers/PMID_15781419.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: b936369acbd325d69598e3f4cb01b45b301d967660a650cda6a58002acea7d5b
+- evidence_id: taxonomy-0
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy
+  locator: references_cache/papers/taxonomy/osmotic-flux-20261013.xml; ScientificName,
+    Rank, synonyms and lineage
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Verified actual ranks and qualified parent-only mappings, not cultivation
+    evidence.
+  support: supports
+  snapshot_sha256: a753574a5d7254c2bd19dec08deef00f7080381e0658bc5ccd1193e7e3963964
+- evidence_id: claims
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/claim-plan.json;
+    claim-plan.json
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Nine registered quotes, ten taxonomy nodes and qualified owner decisions.
+  support: context_only
+  snapshot_sha256: 8572a6a1f9f0d61179944c78e9a81a17be587a6c87a7713f9502208f8b5857e1
+- evidence_id: archives
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/source-preparation.json;
+    source-preparation.json
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Nine cited papers with raw source and Markdown archives.
+  support: context_only
+  snapshot_sha256: 84c34db6fe449f76c7d22d3e1984c7554a6963563fb1b5c517aa978d1c1e0512
+- evidence_id: readback
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/final-readback.json;
+    final-readback.json
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Only eight intended normalized owners changed; prior bytes recovered.
+  support: context_only
+  snapshot_sha256: e3a651e5826542499a56b3219fb4fa5cfbfcbb462125d462c6e29d0002cfa078
+- evidence_id: excerpts
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/evidence-readback.json;
+    evidence-readback.json
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Nine excerpt occurrences checked against primary archives.
+  support: context_only
+  snapshot_sha256: cf20f9bd7241ef33d4489b13d4004fd44fc44c3c9a92937965c8acb81eff20cd
+- evidence_id: applied
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/applied.json;
+    applied.json
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Nine citations, eight history events, 81 original ingredients preserved.
+  support: context_only
+  snapshot_sha256: 6ba202142996bd23b3bf8ce1591644e4190cf270e31bb5c388477aba7f8bee6b
+- evidence_id: comparison
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/comparison.json;
+    comparison.json
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Ignored-inclusive alias and formulation search; similarity is not identity.
+  support: context_only
+  snapshot_sha256: a1dc47475ed014b0dc305d2be70555e30be43400281a89f1eb52e632382d6fbe
+- evidence_id: baseline-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-00.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-00.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-01.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-01.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-02.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-02.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-03.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-03.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-04.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-04.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-05.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-05.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-06.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-06.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-07.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-07.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-08.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-08.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-09.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-09.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-10
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-10.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-10.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-11
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-11.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-11.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-12
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-12.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-12.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-13
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-13.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-13.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-14
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-14.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-14.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-15
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-15.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/baseline-15.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-00.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-00.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-01.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-01.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-02.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-02.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-03.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-03.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-04.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-04.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-05.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-05.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-06.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-06.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-07.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-07.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-08.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-08.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-09.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-09.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-10
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-10.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-10.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-11
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-11.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-11.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-12
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-12.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-12.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-13
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-13.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-13.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-14
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-14.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-14.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: d795cd0f45d74ecbb50c5710adb49b2df66105da344aa71db38645c49a310c0d
+- evidence_id: post-15
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-15.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/post-15.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: merge-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/merge-00.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/merge-00.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 1; not scientific certification.
+  support: context_only
+  snapshot_sha256: 09a2922082db841587410042dc33d7d3f72b2601f1d6b6f2b33322471ee47f2c
+- evidence_id: merge-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/merge-01.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/merge-01.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 1; not scientific certification.
+  support: context_only
+  snapshot_sha256: 5def17803ec38bb291e67794c4f6d05d534bec4876345167d0ed1d04da75cdd7
+- evidence_id: extra-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/extra-00.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/extra-00.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 441bdd6ab36f5b87c9edccf771321e1c5f6c11f43bec7799e6e98cd4d756c24c
+- evidence_id: extra-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/extra-01.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/extra-01.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+- evidence_id: extra-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-osmotic-flux-citations/extra-02.log
+  locator: reports/paper_citation_curation/20261013-osmotic-flux-citations/extra-02.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:07:42Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 1cfd91361e1a5319f92c5ae7aa094ff7b5e462a226b5030a80abb7bbba51a1a2
+assessments:
+- assessment_id: citation-007022
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007022
+  evidence_ids:
+  - paper-41
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007022
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007022
+  evidence_ids:
+  - paper-41
+  - claims
+  - comparison
+  summary: 'Keep carbon/nitrogen-free negative growth, minimal-medium growth, high-osmotic
+    cultures and uptake assays distinct. Transport kinetics and inhibitor concentrations
+    are not recipe concentrations. The abstract does not identify M63, its complete
+    formula or K-10; no positive parent-growth inference from the negative result.
+    Local comparison: Six native entries include 10 mM glucose, 75 mM sodium hydroxide
+    and 100 mM sodium dihydrogen phosphate; the nearby thiamine M63 owner differs
+    in glucose and supplementation. Neither is newly certified by this abstract. '
+- assessment_id: organism-007022
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007022
+  evidence_ids:
+  - paper-41
+  - taxonomy-0
+  summary: 'Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank
+    species; exact_species_not_strain; experimental species; local formulation unresolved.
+    Enterobacteriaceae: Enterobacteriaceae, NCBITaxon:543, actual rank family; exact_family;
+    background citation to prior osmoprotection work, not all-family growth. Escherichia
+    coli K-10: Escherichia coli, NCBITaxon:562, actual rank species; parent_rank_only;
+    secondary MediaDB strain lead; exact strain not verified. No new growth assertions.'
+- assessment_id: preservation-007022
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007022
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007036
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007036
+  evidence_ids:
+  - paper-48
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007036
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007036
+  evidence_ids:
+  - paper-48
+  - claims
+  - comparison
+  summary: 'The abstract reports reduced-genome growth on minimal medium, without
+    the complete M9 formula or named experimental strains. Cryptic prophages are unnamed
+    background entities, not taxonomically resolved medium targets. PubMed raw AuthorList
+    supplies Plunkett G 3rd; the cached simplified author display omitted the suffix,
+    which is retained in this citation. Local comparison: Seven native entries include
+    22.2024 mM glucose, 47.7434 mM dibasic sodium phosphate and 18.6947 mM ammonium
+    chloride. Ingredient-set matches to other M9 records have different concentrations;
+    no merge or cross-owner evidence transfer. '
+- assessment_id: organism-007036
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007036
+  evidence_ids:
+  - paper-48
+  - taxonomy-0
+  summary: 'Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank
+    species; exact_species_not_strain; experimental species; local formulation unresolved.
+    human: Homo sapiens, NCBITaxon:9606, actual rank species; exact_species; Homo
+    sapiens genome-sequencing background only. Escherichia coli MG1655: Escherichia
+    coli str. K-12 substr. MG1655, NCBITaxon:511145, actual rank no rank; canonical_name_match_secondary_strain_lead;
+    MediaDB lead not named in inspected abstract. Escherichia coli MDS12: Escherichia
+    coli, NCBITaxon:562, actual rank species; parent_rank_only; MediaDB reduced-genome
+    strain lead; exact node unresolved. No new growth assertions.'
+- assessment_id: preservation-007036
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007036
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007037
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007037
+  evidence_ids:
+  - paper-49
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007037
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007037
+  evidence_ids:
+  - paper-49
+  - claims
+  - comparison
+  summary: 'Isotope-labelled glucose experiments, environmental modifications and
+    knockout backgrounds are separate contexts. The abstract supplies no complete
+    M9 salts/trace formula or named strain-to-assay map; a shared M9 name does not
+    establish equivalence to other local M9 recipes. Local comparison: Fourteen native
+    entries include 16.6518 mM glucose, 52.9727 mM dibasic sodium phosphate, 14.9558
+    mM ammonium chloride, thiamine and trace components. Hydrate/salt identities and
+    the generic preparation text are not verified by this abstract. '
+- assessment_id: organism-007037
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007037
+  evidence_ids:
+  - paper-49
+  - taxonomy-0
+  summary: 'Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank
+    species; exact_species_not_strain; experimental species; local formulation unresolved.
+    Escherichia coli MG1655: Escherichia coli str. K-12 substr. MG1655, NCBITaxon:511145,
+    actual rank no rank; canonical_name_match_secondary_strain_lead; MediaDB strain
+    lead, not confirmed by abstract. Escherichia coli W3110: Escherichia coli str.
+    K-12 substr. W3110, NCBITaxon:316407, actual rank no rank; canonical_name_match_secondary_strain_lead;
+    MediaDB strain lead, not confirmed by abstract. Escherichia coli JM101: Escherichia
+    coli, NCBITaxon:562, actual rank species; parent_rank_only; secondary strain/mutant
+    lead; exact clone unresolved. Escherichia coli K-10_Zwf-: Escherichia coli, NCBITaxon:562,
+    actual rank species; parent_rank_only; secondary strain/mutant lead; exact clone
+    unresolved. Escherichia coli K-10_PfkA-: Escherichia coli, NCBITaxon:562, actual
+    rank species; parent_rank_only; secondary strain/mutant lead; exact clone unresolved.
+    Escherichia coli JM101_PykAF-: Escherichia coli, NCBITaxon:562, actual rank species;
+    parent_rank_only; secondary strain/mutant lead; exact clone unresolved. Escherichia
+    coli W3110_Pgi-: Escherichia coli str. K-12 substr. W3110, NCBITaxon:316407, actual
+    rank no rank; parent_rank_only; secondary mutant lead; verified parent label is
+    not exact mutant identity. Escherichia coli MG1655_SdhA-_Mdh-: Escherichia coli
+    str. K-12 substr. MG1655, NCBITaxon:511145, actual rank no rank; parent_rank_only;
+    secondary mutant lead; verified parent label is not exact mutant identity. Escherichia
+    coli K-12_Mae-_Pck-: Escherichia coli K-12, NCBITaxon:83333, actual rank strain;
+    parent_rank_only; secondary mutant lead; verified parent label is not exact mutant
+    identity. Escherichia coli K-12_FumA-: Escherichia coli K-12, NCBITaxon:83333,
+    actual rank strain; parent_rank_only; secondary mutant lead; verified parent label
+    is not exact mutant identity. No new growth assertions.'
+- assessment_id: preservation-007037
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007037
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007054
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007054
+  evidence_ids:
+  - paper-57
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007054
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007054
+  evidence_ids:
+  - paper-57
+  - claims
+  - comparison
+  summary: 'The broader canonical-name lookup resolves the earlier short-alias MC4100
+    miss. Unnamed moderately halophilic bacteria are background; no specific organism
+    or exact taxonomy identity is supplied. Ectoine is exogenously supplied in the
+    study; the abstract does not identify its assay base as the local M63 formula,
+    the added amount or osmotic-solute composition. Keep ectoine-supplemented growth
+    and uptake/accumulation assays separate from the unsupplemented native recipe.
+    Local comparison: Six native entries include 22 mM glycerol, 75 mM potassium hydroxide
+    and 100 mM dipotassium phosphate, without ectoine. This differs from the Perroud
+    M63 beyond carbon source alone; source/local phosphate identity needs methods-level
+    reconciliation. '
+- assessment_id: organism-007054
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007054
+  evidence_ids:
+  - paper-57
+  - taxonomy-0
+  summary: 'Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank
+    species; exact_species_not_strain; experimental species; local formulation unresolved.
+    Escherichia coli MC4100: Escherichia coli str. K-12 substr. MC4100, NCBITaxon:1403831,
+    actual rank no rank; canonical_name_match_secondary_strain_lead; MediaDB strain
+    lead, not named in abstract. No new growth assertions.'
+- assessment_id: preservation-007054
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007054
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007058
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007058
+  evidence_ids:
+  - paper-61
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007058
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007058
+  evidence_ids:
+  - paper-61
+  - claims
+  - comparison
+  summary: 'TC36 carries the reported deletions and is distinct from W3110; its product
+    and flux phenotypes cannot be assigned to the parent. The reported 333 mM glucose
+    experiment differs from the native 111 mM glucose entry. Mineral-salts-medium
+    wording does not establish the rest of the local formula or identify which base/feeding
+    context produced that comparison. Retain the glucose discrepancy as formulation-unresolved,
+    not a certified threefold-glucose variant or canonical amount correction. Local
+    comparison: Thirteen native entries include 111 mM glucose, thiamine and generically
+    named ammonium phosphate. These chemical forms and all preparation steps remain
+    unverified; no amount or canonical chemical identity was changed. '
+- assessment_id: organism-007058
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007058
+  evidence_ids:
+  - paper-61
+  - taxonomy-0
+  summary: 'Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank
+    species; exact_species_not_strain; experimental species; local formulation unresolved.
+    Escherichia coli W3110: Escherichia coli str. K-12 substr. W3110, NCBITaxon:316407,
+    actual rank no rank; canonical_name_match; named engineered-strain parent, not
+    TC36 itself. Escherichia coli TC36: Escherichia coli str. K-12 substr. W3110,
+    NCBITaxon:316407, actual rank no rank; parent_rank_only; W3110-derived experimental
+    strain; exact TC36 node unresolved. No new growth assertions.'
+- assessment_id: preservation-007058
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007058
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007059
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007059
+  evidence_ids:
+  - paper-62
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007059
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007059
+  evidence_ids:
+  - paper-62
+  - claims
+  - comparison
+  summary: 'Trehalose overproduction is genetic biosynthesis, not evidence for trehalose
+    supplementation. The abstract names M9-2% glucose but leaves percent basis, complete
+    salts and stress-agent amounts/chemical forms unspecified. Separate elevated-temperature
+    experiments from hexose, inorganic-salt, pyruvate, xylose and ethanol stress contexts;
+    do not combine them into one variant or infer temperature optima. Local comparison:
+    Seven native entries include 111 mM glucose. The reported 2% condition is not
+    independently converted without its concentration basis; no salt amount, stressor
+    addition or trehalose ingredient is inferred. '
+- assessment_id: organism-007059
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007059
+  evidence_ids:
+  - paper-62
+  - taxonomy-0
+  summary: 'Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank
+    species; exact_species_not_strain; experimental species; local formulation unresolved.
+    Escherichia coli W3110: Escherichia coli str. K-12 substr. W3110, NCBITaxon:316407,
+    actual rank no rank; canonical_name_match_secondary_strain_lead; MediaDB strain
+    lead not named in abstract. No new growth assertions.'
+- assessment_id: preservation-007059
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007059
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007177
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007177
+  evidence_ids:
+  - paper-70
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007177
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007177
+  evidence_ids:
+  - paper-70
+  - claims
+  - comparison
+  summary: 'NCBI lists Gluconobacter suboxydans as a synonym of Gluconobacter oxydans.
+    Keep batch and fed-batch outcomes separate: the abstract does not provide the
+    basal recipe, feed composition, antibiotics or strain-specific conditions. Local
+    comparison: Fourteen native entries include 27.753 mM beta-D-glucose, citrate,
+    ferric dicitrate, trace salts and generically named ammonium phosphate. The abstract
+    cannot establish whether this is the batch basal medium, fed-batch medium or feed. '
+- assessment_id: organism-007177
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007177
+  evidence_ids:
+  - paper-70
+  - taxonomy-0
+  summary: 'Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank
+    species; exact_species_not_strain; experimental species; local formulation unresolved.
+    Escherichia coli BL21/pACDdsA: Escherichia coli BL21, NCBITaxon:511693, actual
+    rank strain; parent_rank_only; experimental recombinant; BL21 node does not identify
+    its plasmid-bearing clone. Gluconobacter suboxydans: Gluconobacter oxydans, NCBITaxon:442,
+    actual rank species; verified_synonym; ddsA gene donor, not a demonstrated medium-growth
+    target. Escherichia coli KO229: Escherichia coli, NCBITaxon:562, actual rank species;
+    parent_rank_only; secondary MediaDB lead; exact node and experimental role unresolved.
+    Escherichia coli BL21[pACYC184]: Escherichia coli BL21, NCBITaxon:511693, actual
+    rank strain; parent_rank_only; secondary control-strain lead; exact clone not
+    verified. No new growth assertions.'
+- assessment_id: preservation-007177
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007177
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007021
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007021
+  evidence_ids:
+  - paper-39
+  - publisher-39
+  - paper-40
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007021
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007021
+  evidence_ids:
+  - paper-39
+  - publisher-39
+  - paper-40
+  - claims
+  - comparison
+  summary: 'The primary abstract distinguishes pflA-, pflB-, pflC- and pflD- mutants,
+    their parent, and alternative carbon-source experiments; these unnamed strain
+    backgrounds map only to the verified species above. Do not assign the same lactate
+    outcome to all mutants or inherit the glucose recipe into gluconate, pyruvate,
+    fructose or glycerol experiments. Historical MediaDB first_author=Zhao conflicts
+    with both PubMed and the publisher''s Zhu J; the verified PMID/title identify
+    the same paper. Publisher online date 12 December 2003 and April 2004 issue explain
+    the year convention used here. Local comparison: Fourteen native entries include
+    55.506 mM beta-D-glucose and mixed sodium/potassium phosphate salts. The full
+    formula, chemical forms, pH, preparation and assay-specific substitutions are
+    not given in the abstract; no variant is assigned.  The primary abstract distinguishes
+    pykF, ppc, pflA, pta and adhE mutants under microaerobic conditions; these unnamed
+    strain backgrounds map only to the verified species above. It does not identify
+    the complete salts/trace recipe or permit a common growth/flux outcome for every
+    mutant. Historical MediaDB title spelling condiion and lower-case first_author=zhu
+    differ from verified PubMed metadata; this is not a separate paper. Local comparison:
+    The same fourteen-entry MED132 owner also receives the distinct 2004 Zhu citation.
+    Source identity and mutant contexts remain separate; neither abstract proves complete
+    formulation equivalence or warrants combining assay results. '
+- assessment_id: organism-007021
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007021
+  evidence_ids:
+  - paper-39
+  - publisher-39
+  - paper-40
+  - taxonomy-0
+  summary: 'Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank
+    species; exact_species_not_strain; experimental species; local formulation unresolved.
+    Escherichia coli BW25113: Escherichia coli BW25113, NCBITaxon:679895, actual rank
+    no rank; canonical_name_match_secondary_strain_lead; MediaDB parent-strain lead,
+    not named in abstract. Escherichia coli BW25113_pflB-: Escherichia coli BW25113,
+    NCBITaxon:679895, actual rank no rank; parent_rank_only; secondary mutant lead;
+    parent node is not exact mutant identity. Escherichia coli (E. coli): Escherichia
+    coli, NCBITaxon:562, actual rank species; exact_species_not_strain; experimental
+    species; local formulation unresolved. Escherichia coli BW25113: Escherichia coli
+    BW25113, NCBITaxon:679895, actual rank no rank; canonical_name_match_secondary_strain_lead;
+    MediaDB parent-strain lead, not named in abstract. Escherichia coli BW25113_ppc-:
+    Escherichia coli BW25113, NCBITaxon:679895, actual rank no rank; parent_rank_only;
+    secondary mutant lead; parent node is not exact mutant identity. Escherichia coli
+    BW25113_pflA-: Escherichia coli BW25113, NCBITaxon:679895, actual rank no rank;
+    parent_rank_only; secondary mutant lead; parent node is not exact mutant identity.
+    Escherichia coli BW25113_pta-: Escherichia coli BW25113, NCBITaxon:679895, actual
+    rank no rank; parent_rank_only; secondary mutant lead; parent node is not exact
+    mutant identity. Escherichia coli BW25113_adhE-: Escherichia coli BW25113, NCBITaxon:679895,
+    actual rank no rank; parent_rank_only; secondary mutant lead; parent node is not
+    exact mutant identity. Escherichia coli BW25113_pykF-: Escherichia coli BW25113,
+    NCBITaxon:679895, actual rank no rank; parent_rank_only; secondary mutant lead;
+    parent node is not exact mutant identity. No new growth assertions.'
+- assessment_id: preservation-007021
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007021
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+findings:
+- finding_id: formulation-41
+  issue_key: osmotic-flux-citations-formulation-41
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 41'
+  target_ids:
+  - CultureMech:007022
+  field_paths:
+  - ingredients
+  - references
+  description: 'Keep carbon/nitrogen-free negative growth, minimal-medium growth,
+    high-osmotic cultures and uptake assays distinct. Transport kinetics and inhibitor
+    concentrations are not recipe concentrations. The abstract does not identify M63,
+    its complete formula or K-10; no positive parent-growth inference from the negative
+    result. Local comparison: Six native entries include 10 mM glucose, 75 mM sodium
+    hydroxide and 100 mM sodium dihydrogen phosphate; the nearby thiamine M63 owner
+    differs in glucose and supplementation. Neither is newly certified by this abstract. '
+  evidence_ids:
+  - paper-41
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m63.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-48
+  issue_key: osmotic-flux-citations-formulation-48
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 48'
+  target_ids:
+  - CultureMech:007036
+  field_paths:
+  - ingredients
+  - references
+  description: 'The abstract reports reduced-genome growth on minimal medium, without
+    the complete M9 formula or named experimental strains. Cryptic prophages are unnamed
+    background entities, not taxonomically resolved medium targets. PubMed raw AuthorList
+    supplies Plunkett G 3rd; the cached simplified author display omitted the suffix,
+    which is retained in this citation. Local comparison: Seven native entries include
+    22.2024 mM glucose, 47.7434 mM dibasic sodium phosphate and 18.6947 mM ammonium
+    chloride. Ingredient-set matches to other M9 records have different concentrations;
+    no merge or cross-owner evidence transfer. '
+  evidence_ids:
+  - paper-48
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-49
+  issue_key: osmotic-flux-citations-formulation-49
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 49'
+  target_ids:
+  - CultureMech:007037
+  field_paths:
+  - ingredients
+  - references
+  description: 'Isotope-labelled glucose experiments, environmental modifications
+    and knockout backgrounds are separate contexts. The abstract supplies no complete
+    M9 salts/trace formula or named strain-to-assay map; a shared M9 name does not
+    establish equivalence to other local M9 recipes. Local comparison: Fourteen native
+    entries include 16.6518 mM glucose, 52.9727 mM dibasic sodium phosphate, 14.9558
+    mM ammonium chloride, thiamine and trace components. Hydrate/salt identities and
+    the generic preparation text are not verified by this abstract. '
+  evidence_ids:
+  - paper-49
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-57
+  issue_key: osmotic-flux-citations-formulation-57
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 57'
+  target_ids:
+  - CultureMech:007054
+  field_paths:
+  - ingredients
+  - references
+  description: 'The broader canonical-name lookup resolves the earlier short-alias
+    MC4100 miss. Unnamed moderately halophilic bacteria are background; no specific
+    organism or exact taxonomy identity is supplied. Ectoine is exogenously supplied
+    in the study; the abstract does not identify its assay base as the local M63 formula,
+    the added amount or osmotic-solute composition. Keep ectoine-supplemented growth
+    and uptake/accumulation assays separate from the unsupplemented native recipe.
+    Local comparison: Six native entries include 22 mM glycerol, 75 mM potassium hydroxide
+    and 100 mM dipotassium phosphate, without ectoine. This differs from the Perroud
+    M63 beyond carbon source alone; source/local phosphate identity needs methods-level
+    reconciliation. '
+  evidence_ids:
+  - paper-57
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m63_jebbar.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-61
+  issue_key: osmotic-flux-citations-formulation-61
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 61'
+  target_ids:
+  - CultureMech:007058
+  field_paths:
+  - ingredients
+  - references
+  description: 'TC36 carries the reported deletions and is distinct from W3110; its
+    product and flux phenotypes cannot be assigned to the parent. The reported 333
+    mM glucose experiment differs from the native 111 mM glucose entry. Mineral-salts-medium
+    wording does not establish the rest of the local formula or identify which base/feeding
+    context produced that comparison. Retain the glucose discrepancy as formulation-unresolved,
+    not a certified threefold-glucose variant or canonical amount correction. Local
+    comparison: Thirteen native entries include 111 mM glucose, thiamine and generically
+    named ammonium phosphate. These chemical forms and all preparation steps remain
+    unverified; no amount or canonical chemical identity was changed. '
+  evidence_ids:
+  - paper-61
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mm_causey.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-62
+  issue_key: osmotic-flux-citations-formulation-62
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 62'
+  target_ids:
+  - CultureMech:007059
+  field_paths:
+  - ingredients
+  - references
+  description: 'Trehalose overproduction is genetic biosynthesis, not evidence for
+    trehalose supplementation. The abstract names M9-2% glucose but leaves percent
+    basis, complete salts and stress-agent amounts/chemical forms unspecified. Separate
+    elevated-temperature experiments from hexose, inorganic-salt, pyruvate, xylose
+    and ethanol stress contexts; do not combine them into one variant or infer temperature
+    optima. Local comparison: Seven native entries include 111 mM glucose. The reported
+    2% condition is not independently converted without its concentration basis; no
+    salt amount, stressor addition or trehalose ingredient is inferred. '
+  evidence_ids:
+  - paper-62
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_purvis.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-70
+  issue_key: osmotic-flux-citations-formulation-70
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 70'
+  target_ids:
+  - CultureMech:007177
+  field_paths:
+  - ingredients
+  - references
+  description: 'NCBI lists Gluconobacter suboxydans as a synonym of Gluconobacter
+    oxydans. Keep batch and fed-batch outcomes separate: the abstract does not provide
+    the basal recipe, feed composition, antibiotics or strain-specific conditions.
+    Local comparison: Fourteen native entries include 27.753 mM beta-D-glucose, citrate,
+    ferric dicitrate, trace salts and generically named ammonium phosphate. The abstract
+    cannot establish whether this is the batch basal medium, fed-batch medium or feed. '
+  evidence_ids:
+  - paper-70
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-39
+  issue_key: osmotic-flux-citations-formulation-39
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 39'
+  target_ids:
+  - CultureMech:007021
+  field_paths:
+  - ingredients
+  - references
+  description: 'The primary abstract distinguishes pflA-, pflB-, pflC- and pflD- mutants,
+    their parent, and alternative carbon-source experiments; these unnamed strain
+    backgrounds map only to the verified species above. Do not assign the same lactate
+    outcome to all mutants or inherit the glucose recipe into gluconate, pyruvate,
+    fructose or glycerol experiments. Historical MediaDB first_author=Zhao conflicts
+    with both PubMed and the publisher''s Zhu J; the verified PMID/title identify
+    the same paper. Publisher online date 12 December 2003 and April 2004 issue explain
+    the year convention used here. Local comparison: Fourteen native entries include
+    55.506 mM beta-D-glucose and mixed sodium/potassium phosphate salts. The full
+    formula, chemical forms, pH, preparation and assay-specific substitutions are
+    not given in the abstract; no variant is assigned. '
+  evidence_ids:
+  - paper-39
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-40
+  issue_key: osmotic-flux-citations-formulation-40
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 40'
+  target_ids:
+  - CultureMech:007021
+  field_paths:
+  - ingredients
+  - references
+  description: 'The primary abstract distinguishes pykF, ppc, pflA, pta and adhE mutants
+    under microaerobic conditions; these unnamed strain backgrounds map only to the
+    verified species above. It does not identify the complete salts/trace recipe or
+    permit a common growth/flux outcome for every mutant. Historical MediaDB title
+    spelling condiion and lower-case first_author=zhu differ from verified PubMed
+    metadata; this is not a separate paper. Local comparison: The same fourteen-entry
+    MED132 owner also receives the distinct 2004 Zhu citation. Source identity and
+    mutant contexts remain separate; neither abstract proves complete formulation
+    equivalence or warrants combining assay results. '
+  evidence_ids:
+  - paper-40
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml
+    role: authoritative normalized recipe
+actions:
+- action_id: resolve-formulation-41
+  description: 'Exact local-formulation assignment unresolved: source 41'
+  finding_ids:
+  - formulation-41
+  target_ids:
+  - CultureMech:007022
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m63.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-48
+  description: 'Exact local-formulation assignment unresolved: source 48'
+  finding_ids:
+  - formulation-48
+  target_ids:
+  - CultureMech:007036
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_medium_kolisnychenko_et_al.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-49
+  description: 'Exact local-formulation assignment unresolved: source 49'
+  finding_ids:
+  - formulation-49
+  target_ids:
+  - CultureMech:007037
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_medium_fischer_et_al.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-57
+  description: 'Exact local-formulation assignment unresolved: source 57'
+  finding_ids:
+  - formulation-57
+  target_ids:
+  - CultureMech:007054
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m63_jebbar.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-61
+  description: 'Exact local-formulation assignment unresolved: source 61'
+  finding_ids:
+  - formulation-61
+  target_ids:
+  - CultureMech:007058
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mm_causey.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-62
+  description: 'Exact local-formulation assignment unresolved: source 62'
+  finding_ids:
+  - formulation-62
+  target_ids:
+  - CultureMech:007059
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_purvis.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-70
+  description: 'Exact local-formulation assignment unresolved: source 70'
+  finding_ids:
+  - formulation-70
+  target_ids:
+  - CultureMech:007177
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/ecoli_bl21_medium_park_et_al.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-39
+  description: 'Exact local-formulation assignment unresolved: source 39'
+  finding_ids:
+  - formulation-39
+  target_ids:
+  - CultureMech:007021
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-40
+  description: 'Exact local-formulation assignment unresolved: source 40'
+  finding_ids:
+  - formulation-40
+  target_ids:
+  - CultureMech:007021
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+limitations:
+- Partial self-review, not independent review or complete record approval.
+- Nine papers have abstract-only scientific access, plus publisher abstract/metadata
+  for one. PMC front-only captures are not full text.
+- Actual NCBI ranks, parent-only mappings, imported strain leads and experimental
+  roles remain distinct.
+- Ectoine addition, glucose conditions, stress assays, knockout backgrounds and batch/fed-batch
+  contexts are kept separate.
+- Merge diagnostics retain actual failures; equal counts cannot establish row-level
+  equivalence.
+- No generated or GitHub publication. Remaining candidates and access gaps leave the
+  broader citation goal incomplete.
+```

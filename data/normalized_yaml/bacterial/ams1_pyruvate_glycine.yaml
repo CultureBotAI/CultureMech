@@ -238,6 +238,21 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T04:02:52.501088+00:00'
+  curator: codex
+  action: CURATED_PAPER_VARIANT_EVIDENCE
+  notes: Archived and verified primary paper and NCBI strain taxonomy; added one bibliography
+    entry, one study-specific inline variant and one variant-scoped HTCC1062 growth
+    association. Preserved parent concentrations, preparation and all prior history;
+    no KGX export.
+  source: doi:10.1038/ismej.2012.122
+- timestamp: '2026-10-13T04:14:08.076272+00:00'
+  curator: codex
+  action: QUALIFIED_HISTORICAL_PAPER_EVIDENCE
+  notes: Added the archived 2014 HMP-requirement and thiamin-contamination follow-up;
+    qualified the historical 2013 variant and growth interpretation. No parent amount,
+    variant amount, taxon, or growth association added or changed.
+  source: doi:10.1038/ismej.2014.61
 media_term:
   preferred_term: MediaDB Medium 475
   term:
@@ -250,3 +265,141 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+references:
+- reference: doi:10.1038/ismej.2012.122
+  title: Nutrient requirements for growth of the extreme oligotroph 'Candidatus Pelagibacter
+    ubique' HTCC1062 on a defined medium.
+  authors: Carini P; Steindler L; Beszteri S; Giovannoni SJ
+  year: 2013
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    MediaDB source 149; PMID:23096402; PMCID:PMC3578571; accessed_on=2026-10-13; issue_year=2013;
+    online_publication=2012-10-25. Inspected PMC full text, Materials and methods
+    and Tables 1-3; no PubMed correction/retraction notice was present in the archived
+    record. Raw HTML and Markdown: references_cache/papers/primary_html/carini-2013-pmc.{html,md};
+    raw PubMed XML and abstract Markdown: references_cache/papers/PMID_23096402.{xml,md}.
+    Recipe comparison found vitamin, amount, hydrate and preparation differences;
+    these are scoped to ''Carini 2013 AMS1 glycine substitution assay'', with the
+    parent retained. Organism inventory scope=the inspected medium methods and Table
+    3, not every background mention in the article. Reported scientific name=Candidatus
+    Pelagibacter ubique; strain=HTCC1062; taxonomy_match=exact_strain; NCBITaxon:335992;
+    canonical_label=Candidatus Pelagibacter ubique HTCC1062; rank=strain in NCBI Taxonomy
+    XML retrieved 2026-10-13; source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=335992.
+    The XML species ancestor is Candidatus Pelagibacter communis (NCBITaxon:198252);
+    the strain match preserves the paper''s historical name. MediaDB also connects
+    HTCC7211 to this source; the inspected paper identifies HTCC1062, so no HTCC7211
+    association is imported. Other substitution tests and negative controls in Tables
+    2-3 are not growth evidence for this glycine/serine record. Linked external supplements
+    were not inspected. KGX export is withheld because its current organism edge builder
+    does not honor scoped_to_variant.'
+- reference: doi:10.1038/ismej.2014.61
+  title: Discovery of a SAR11 growth requirement for thiamin's pyrimidine precursor
+    and its distribution in the Sargasso Sea.
+  authors: Carini P; Campbell EO; Morré J; Sañudo-Wilhelmy SA; Thrash JC; Bennett
+    SE; Temperton B; Begley T; Giovannoni SJ
+  year: 2014
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference_followup;
+    PMID:24781899; PMCID:PMC4817611; accessed_on=2026-10-13; inspected_version=PMC
+    full text. Locator: Abstract and Discussion (thiamin-stock contamination). Exact
+    excerpt: ''Contaminating HMP was detected in the thiamin stock solution''. This
+    qualifies the existing 2013 study variant, not a formal retraction or a new positive
+    parent-medium growth assertion. The same strain, Candidatus Pelagibacter ubique
+    HTCC1062, maps exactly to NCBITaxon:335992, canonical label Candidatus Pelagibacter
+    ubique HTCC1062, rank=strain, verified in archived NCBI Taxonomy XML on 2026-10-13;
+    source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=335992. The
+    2014 cultivation methods use oxaloacetate rather than this record''s pyruvate,
+    no routine vitamin mixture, and dark incubation; HMP/thiamin/precursor additions
+    vary by treatment. Those assays are not silently assigned to this parent or combined
+    into one new resolved variant. Only the HTCC1062 vitamin-dependence and contamination
+    passages are curated here; HMP-exudation cultures and background taxa are outside
+    this scoped organism inventory. Raw HTML/Markdown: references_cache/papers/primary_html/carini-2014-pmc.{html,md};
+    PubMed XML/abstract Markdown: references_cache/papers/PMID_24781899.{xml,md}.
+    Historical 2013 assay formulation, not evidence that thiamin substitutes for HMP:
+    Carini et al. 2014 (doi:10.1038/ismej.2014.61) found an HMP requirement and HMP
+    contamination in their thiamin stock. Trace HMP in the 2013 batches was not quantified
+    by the inspected 2013 paper; do not interpret nominal absence of added HMP as
+    HMP-independent growth.'
+variants:
+- name: Carini 2013 AMS1 glycine substitution assay
+  description: 'Published AMS1 formulation used in the glycine substitution experiment,
+    glycine positive-control condition. This is not an assertion that the imported
+    MediaDB parent matches the paper. Composite concentration, vitamin, chemical-form
+    and preparation changes; methionine and serine stereochemistry is not specified
+    in the inspected methods. Historical 2013 assay formulation, not evidence that
+    thiamin substitutes for HMP: Carini et al. 2014 (doi:10.1038/ismej.2014.61) found
+    an HMP requirement and HMP contamination in their thiamin stock. Trace HMP in
+    the 2013 batches was not quantified by the inspected 2013 paper; do not interpret
+    nominal absence of added HMP as HMP-independent growth.'
+  modifications:
+  - Use 50 micromolar pyruvate instead of the parent's 1.0 mM, and 10 micromolar methionine
+    instead of 0.05 mM DL-methionine; the paper does not specify methionine stereochemistry.
+  - Use 25 micromolar glycine instead of the parent's 0.05 mM Glycine; this is the
+    Table 3 assay, not a titration maximum or a universal optimum.
+  - Use magnesium sulfate heptahydrate at 2.8 mM rather than the parent's magnesium
+    sulfate at 28.0 mM. Other unchanged Table 1 base-salt and macronutrient molar
+    amounts remain as reported there.
+  - Use calcium chloride dihydrate, manganese chloride tetrahydrate, zinc sulfate
+    heptahydrate, cobalt chloride hexahydrate, sodium molybdate dihydrate and nickel
+    chloride hexahydrate as specified in Table 1; retain their Table 1 molar amounts
+    rather than infer mass equivalents from the local anhydrous or unspecified forms.
+  - Use iron(III) chloride at 1 micromolar in this assay instead of the parent's 117
+    nM; Table 1 specifies the hexahydrate and its basal 117 nM is overridden by the
+    assay methods.
+  - 'Replace the imported biotin/HMP vitamin selection with the complete Table 1 vitamin
+    mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12
+    700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid 60 nM. Do not substitute
+    HMP for B1 using this 2013 paper.'
+  - 'Follow the paper''s AMS1 preparation: autoclave the inorganic medium, establish
+    the bicarbonate buffer by filtered CO2 then air sparging, and add vitamins and
+    organics afterward; this differs from the imported all-ingredient filter-sterilization
+    instruction. The reported resulting pH is 7.5-7.7, not an independently optimized
+    value.'
+  purpose: Published glycine-substitution comparison for strain HTCC1062.
+  evidence:
+  - reference: doi:10.1038/ismej.2012.122
+    supports: SUPPORT
+    snippet: pyruvate (50 μℳ), methionine (10 μℳ), FeCl 3 (1 μℳ) and vitamins.
+    explanation: 'Locator: Materials and methods, Glycine substitution experiments,
+      with Table 1 (Compound / Final concentration) and Media preparation. Supports
+      only this inline variant''s modifications, never replacement of the parent''s
+      ingredients. The immediately preceding methods phrase is ''at a concentration
+      of 25 μℳ''. Table 1 row: ''CaCl 2 ·2H 2 O 10 mℳ''; Table 1 row: ''MgSO 4 ·7H
+      2 O 2.8 mℳ''; Table 1 row: ''FeCl 3 ·6H 2 O 117 nℳ''; Table 1 row: ''MnCl 2
+      ·4H 2 O 9 nℳ''; Table 1 row: ''ZnSO 4 ·7H 2 O 800 pM''; Table 1 row: ''CoCl
+      2 ·6H 2 O 500 pM''; Table 1 row: ''Na 2 MoO 4 ·2H 2 O 300 pM''; Table 1 row:
+      ''NiCl 2 ·6H 2 O 1 nℳ''; Table 1 row: ''B 1 6 μℳ''; Table 1 row: ''B 3 800 nℳ'';
+      Table 1 row: ''B 5 425 nℳ''; Table 1 row: ''B 6 500 nℳ''; Table 1 row: ''B 7
+      4 nℳ''; Table 1 row: ''B 9 4 nℳ''; Table 1 row: ''B 12 700 pM''; Table 1 row:
+      ''Myo-inositol 6 μℳ''; Table 1 row: ''4-Aminobenzoic acid 60 nℳ''. The B-number
+      names are retained as published; no molecular-weight conversion, unreported
+      salt identity or stock dilution was inferred. Amounts are final assay concentrations.
+      The paper''s Table 1 excludes the reduced-sulfur, glycine and pyruvate additions,
+      which the assay methods supply. Media preparation separately places vitamins/organics
+      after autoclaving and sparging.'
+target_organisms:
+- preferred_term: Candidatus Pelagibacter ubique
+  term:
+    id: NCBITaxon:335992
+    label: Candidatus Pelagibacter ubique HTCC1062
+  strain: HTCC1062
+  scoped_to_variant: Carini 2013 AMS1 glycine substitution assay
+  evidence:
+  - reference: doi:10.1038/ismej.2012.122
+    supports: SUPPORT
+    snippet: Glycine (positive control) 10.2±0.28 0.38±0.01
+    explanation: 'Locator: Table 3, glycine row, read with the Glycine substitution
+      experiments and Organism source sections. The positive cell yield supports cultivation
+      only on the named study variant; no growth claim is added to the imported parent.
+      The assay used 25 micromolar glycine or serine, 50 micromolar pyruvate, 10 micromolar
+      methionine, 1 micromolar FeCl3 and Table 1 vitamins. Cultivation details report
+      20 C, shaking and a 12-hour light/dark cycle. No growth metric is normalized
+      from the table and no optimality is inferred. Reported scientific name=Candidatus
+      Pelagibacter ubique; strain=HTCC1062; taxonomy_match=exact_strain; NCBITaxon:335992;
+      canonical_label=Candidatus Pelagibacter ubique HTCC1062; rank=strain in NCBI
+      Taxonomy XML retrieved 2026-10-13; source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=335992.
+      The XML species ancestor is Candidatus Pelagibacter communis (NCBITaxon:198252);
+      the strain match preserves the paper''s historical name. Historical 2013 assay
+      formulation, not evidence that thiamin substitutes for HMP: Carini et al. 2014
+      (doi:10.1038/ismej.2014.61) found an HMP requirement and HMP contamination in
+      their thiamin stock. Trace HMP in the 2013 batches was not quantified by the
+      inspected 2013 paper; do not interpret nominal absence of added HMP as HMP-independent
+      growth.'

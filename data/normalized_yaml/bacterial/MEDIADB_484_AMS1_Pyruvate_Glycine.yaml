@@ -232,6 +232,14 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T07:52:05.010763+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_AND_SCOPED_VARIANT
+  notes: Added three verified paper citations with archived sources, one evidence-backed
+    alternate-P assay variant and one HTCC7211 association scoped only to it. Recorded
+    HTCC1062 negative/ambiguous results and taxonomy inventory. Preserved all parent
+    amounts, preparation and prior history; no KGX export.
+  source: doi:10.1038/ncomms5346
 media_term:
   preferred_term: MediaDB Medium 484
   term:
@@ -244,3 +252,186 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+references:
+- reference: doi:10.1038/ncomms5346
+  title: Methane production by phosphate-starved SAR11 chemoheterotrophic marine bacteria.
+  authors: Carini P; White AE; Campbell EO; Giovannoni SJ
+  year: 2014
+  notes: 'source_type=journal_article; accessed_on=2026-10-13; discovery_mode=MediaDB_source_cross_reference;
+    MediaDB sourceID=151; medID=484. The source SQL title/year/PMID and exact medium
+    ID/name were verified; its growth rows are discovery provenance, not growth evidence.
+    The old import event''s generic Mazumdar et al. citation is retained as historical
+    provenance; the specific study source is Carini et al. 2014. No relevant correction/retraction
+    notice occurs in the archived PubMed entries. PMID:25000228. Main paper HTML/Markdown=references_cache/papers/primary_html/carini-2014-methane-publisher.{html,md};
+    PDF/Markdown=references_cache/papers/primary_pdf/carini-2014-methane.{pdf,md};
+    supplement PDF/Markdown=references_cache/papers/primary_pdf/carini-2014-methane-supplement.{pdf,md};
+    PubMed abstract=references_cache/papers/PMID_25000228.md. Formulation scope=Figures
+    1-2 alternate-P utilization, Methods p.5; not the 10 micromolar MPn methane experiment
+    or microarray assays. Supplementary Tables 1-5 concern gene expression and add
+    no recipe formulation here. Parent ingredients and generic preparation are retained,
+    not certified. Variant-only growth is not published because the current KGX exporter
+    does not preserve scoped_to_variant. The paper does not specify D/L stereochemistry
+    for this phosphorus substrate; do not certify the parent''s stereoisomer. Organism
+    inventory is limited to the inspected main-paper abstract, Introduction, Results,
+    Methods and figure captions, excluding its bibliography and generic community/class
+    descriptions. Experimental Pelagibacterales sp. strain HTCC7211 maps to Candidatus
+    Pelagibacter sp. HTCC7211, NCBITaxon:439493, actual rank=species, taxonomy_match=exact_named_taxon;
+    retain strain=HTCC7211. Experimental ''Candidatus Pelagibacter ubique'' strain
+    HTCC1062 maps to Candidatus Pelagibacter ubique HTCC1062, NCBITaxon:335992, rank=strain,
+    taxonomy_match=exact_strain. Results p.2 excerpt=''Strain HTCC1062 grew on P i
+    and did not use added DOP''. The five organic-P treatments did not exceed the
+    no-added-Pi control; increased yield with phosphite had unresolved trace-phosphate,
+    abiotic-oxidation or enzymatic explanations. The latter is not certified as phosphite
+    utilization, and no positive HTCC1062 association is added here. Methods p.6 microarray-probe
+    mention HTCC1002 maps to Candidatus Pelagibacter ubique HTCC1002, NCBITaxon:314261,
+    rank=strain; probe design only, not cultivation in these assays. Introduction
+    p.2 background mentions, with exact name excerpts and verified taxonomy: ''Nitrosopumilus
+    maritimus SCM1'' -> NCBITaxon:436308 (same canonical name, strain); ''Trichodesmium
+    erythraeum IMS101'' -> NCBITaxon:203124 (same canonical name, strain); ''Escherichia
+    coli'' -> NCBITaxon:562 (same name, species); ''Pseudomonas'' -> NCBITaxon:286
+    (same name, genus); ''Trichodesmium'' -> NCBITaxon:1205 (same name, genus); ''Vibrionales''
+    -> NCBITaxon:135623 (same name, order); ''Rhodobacterales'' -> NCBITaxon:204455
+    (same name, order); ''Pelagibacterales'' / SAR11 -> NCBITaxon:54526 (canonical
+    Candidatus Pelagibacterales, order; NCBI equivalent/included names checked). These
+    contextual taxa have no new growth edges; genus/order mentions are not expanded
+    into species. Taxonomy lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=338192,204455,203124,198252,135623,54526,1205,286,439493,436308,314261,335992,562&retmode=xml;
+    archived XML=references_cache/papers/taxonomy/carini-phosphorus-20261013.xml. '
+- reference: doi:10.1038/ismej.2012.122
+  title: Nutrient requirements for growth of the extreme oligotroph 'Candidatus Pelagibacter
+    ubique' HTCC1062 on a defined medium.
+  authors: Carini P; Steindler L; Beszteri S; Giovannoni SJ
+  year: 2013
+  notes: 'source_type=journal_article; discovery_mode=cited_base_recipe_reference_39;
+    PMID:23096402; accessed_on=2026-10-13; issue_year=2013, online_year=2012. Full
+    article/Markdown=references_cache/papers/primary_html/carini-2013-pmc.{html,md};
+    PubMed abstract=references_cache/papers/PMID_23096402.md. Inspected Media preparation
+    and Table 1, including final-concentration heading and footnote. Supplies AMS1
+    inorganic base and preparation, overridden by the main study''s explicit nutrient
+    additions and omission of added phosphate. Its own glycine-substitution assay
+    doses and HTCC1062 outcomes are not assigned to this later variant. Named base-study
+    organism Candidatus Pelagibacter ubique HTCC1062, NCBITaxon:335992, rank=strain;
+    historical species name Candidatus Pelagibacter ubique is an NCBI synonym of Candidatus
+    Pelagibacter communis, NCBITaxon:198252, rank=species. Taxonomy lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=338192,204455,203124,198252,135623,54526,1205,286,439493,436308,314261,335992,562&retmode=xml;
+    archived XML=references_cache/papers/taxonomy/carini-phosphorus-20261013.xml. '
+- reference: doi:10.1038/ismej.2014.61
+  title: Discovery of a SAR11 growth requirement for thiamin's pyrimidine precursor
+    and its distribution in the Sargasso Sea.
+  authors: Carini P; Campbell EO; Morré J; Sañudo-Wilhelmy SA; Thrash JC; Bennett
+    SE; Temperton B; Begley T; Giovannoni SJ
+  year: 2014
+  notes: 'source_type=journal_article; discovery_mode=qualifying_primary_study_cited_by_main_paper;
+    PMID:24781899; accessed_on=2026-10-13. Full article/Markdown=references_cache/papers/primary_html/carini-2014-pmc.{html,md};
+    PubMed abstract=references_cache/papers/PMID_24781899.md. Scope is the Discussion''s
+    thiamin-stock qualification, not its distinct cultivation protocol. Exact excerpt=''Contaminating
+    HMP was detected in the thiamin stock solution that was added to thiamin-amended
+    treatments.''. Experimental Candidatus Pelagibacter ubique HTCC1062 maps to NCBITaxon:335992,
+    canonical label unchanged, rank=strain. This source qualifies nominal thiamin-only
+    interpretations; it does not measure HMP contamination of the methane paper''s
+    stocks or establish an HTCC7211 HMP requirement. No HMP amount, additional variant
+    ingredient or growth association is inferred. Organism inventory is bounded to
+    this inspected qualification and its study organism. Taxonomy lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=338192,204455,203124,198252,135623,54526,1205,286,439493,436308,314261,335992,562&retmode=xml;
+    archived XML=references_cache/papers/taxonomy/carini-phosphorus-20261013.xml. '
+variants:
+- name: Carini 2014 AMS1 phosphoserine utilization assay
+  description: AMS1 alternate-phosphorus utilization experiment in Carini et al. 2014
+    Figures 1-2, reconciled against this imported formulation. Composite differences;
+    no single relationship enum selected. Parent preserved.
+  modifications:
+  - 'Relative to this imported parent: pyruvate 100 micromolar (parent 1 millimolar);
+    glycine 5 micromolar (parent 50 micromolar); methionine 5 micromolar (parent DL-methionine
+    50 micromolar). The paper does not resolve methionine stereochemistry.'
+  - FeCl3 1 micromolar (parent 117 nanomolar). The AMS1 base source specifies FeCl3.6H2O,
+    but its 117 nanomolar dose is overridden by the main assay.
+  - 'Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6
+    500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar, myo-inositol
+    6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only biotin 4 nanomolar
+    and thiamine 60 micromolar.'
+  - AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent magnesium sulfate
+    28 millimolar. Source hydrate forms also specify CaCl2.2H2O, MnCl2.4H2O, ZnSO4.7H2O,
+    CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding parent forms are anhydrous
+    or unspecified. Retain Table 1 molar doses for these unchanged-dose salts, without
+    mass conversion.
+  - 'No phosphate is added to the alternate-P assay base; omit the phosphate of original
+    AMS1 Table 1. This is not a claim of zero residual phosphate: the Figure 2 inoculum
+    was previously grown on phosphate.'
+  - 'Added phosphoserine: 1.0 micromolar final, numerically equal to the parent''s
+    0.001 millimolar. This supports the assay, not the complete parent recipe. The
+    paper does not specify D/L stereochemistry for this phosphorus substrate; do not
+    certify the parent''s stereoisomer.'
+  - Base preparation follows Carini 2013 Media preparation (inorganic AMS1 autoclaved,
+    then carbon-dioxide and air sparging; vitamins and organics added afterward),
+    rather than the parent's generic dissolve-all/filter-all steps. Reported base
+    pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.
+  purpose: Test HTCC7211 utilization of phosphoserine as an alternate phosphorus source.
+  evidence:
+  - reference: doi:10.1038/ncomms5346
+    supports: SUPPORT
+    snippet: pyruvate (100 μM), glycine (5 μM), methionine (5 μM), FeCl 3 (1 μM)
+    explanation: 'Assay-specific amendments, Methods p.5 Organism source/Cultivation
+      details, Figures 1-2. Independently located exact excerpt (vitamins, Organism
+      source): ''B 1 : 6 μM; B 3 : 800 nM; B 5 : 425 nM; B 6 : 500 nM; B 7 : 4 nM;
+      B 9 : 4 nM; B 12 : 700 pM; Myo-inositol: 6 μM; 4-aminobenzoate: 60 nM''. Exact
+      substrate excerpt (Cultivation details): ''1.0 μM phosphoserine''. Exact final-basis
+      excerpt (Figure 2 caption): ''Each alternate phosphorus compound was supplied
+      at a final concentration of 1.0 μM.''. Exact omission excerpt (Organism source):
+      ''without added P i''. Exact inoculum excerpt (Figure 2): ''Cell inoculum was
+      previously grown on P i .''. These are separate contiguous excerpts, normalized
+      for whitespace only; chemistry is not repaired. Conversion outside quotations:
+      1 millimolar = 1000 micromolar; 0.001 millimolar = 1 micromolar; 0.05 millimolar
+      = 50 micromolar; 0.06 millimolar = 60 micromolar; 0.000117 millimolar = 117
+      nanomolar. The 2014 microarray protocol''s 1 millimolar pyruvate/50 micromolar
+      glycine/50 micromolar methionine is not this alternate-P assay. The paper does
+      not specify D/L stereochemistry for this phosphorus substrate; do not certify
+      the parent''s stereoisomer.'
+  - reference: doi:10.1038/ismej.2012.122
+    supports: SUPPORT
+    snippet: MgSO 4 ·7H 2 O 2.8 mℳ
+    explanation: 'Cited base source, Table 1 heading=''Compound Final concentration'';
+      separate exact table rows: ''NaCl 481 mℳ''; ''MgCl 2 ·6H 2 O 27 mℳ''; ''CaCl
+      2 ·2H 2 O 10 mℳ''; ''KCl 9 mℳ''; ''NaHCO 3 6 mℳ''; ''MgSO 4 ·7H 2 O 2.8 mℳ'';
+      ''''; ''(NH 4 ) 2 SO 4 400 μℳ''; ''NaH 2 PO 4 (pH 7.5) 50 μℳ''; ''''; ''FeCl
+      3 ·6H 2 O 117 nℳ''; ''MnCl 2 ·4H 2 O 9 nℳ''; ''ZnSO 4 ·7H 2 O 800 pM''; ''CoCl
+      2 ·6H 2 O 500 pM''; ''Na 2 MoO 4 ·2H 2 O 300 pM''; ''Na 2 SeO 3 1 nℳ''; ''NiCl
+      2 ·6H 2 O 1 nℳ''; ''''; ''B 1 6 μℳ''; ''B 3 800 nℳ''; ''B 5 425 nℳ''; ''B 6
+      500 nℳ''; ''B 7 4 nℳ''; ''B 9 4 nℳ''; ''B 12 700 pM''; ''Myo-inositol 6 μℳ'';
+      ''4-Aminobenzoic acid 60 nℳ''. Table uses the script-M molarity glyph; m-script-M
+      is millimolar, not a mass unit. The main 2014 assay overrides phosphate, FeCl3
+      and organic amendments; do not inherit the base phosphate or base Fe dose. Separate
+      exact preparation passage (Media preparation): ''Media preparation Artificial
+      seawater medium AMS1 ( Table 1 ) was derived from the artificial seawater medium
+      AMP1 ( Moore et al. , 2007 ). Organic buffers (for example, HEPES and EDTA)
+      were excluded to avoid potential toxic effects ( Zigler et al. , 1985 ) and
+      the possibility that they might be used as substrates for growth ( Nörtemann,
+      1992 ). After autoclaving, AMS1 was sparged with 0.1 μm-filtered CO 2 for 5
+      h followed by sparging with air for 10 h to establish a bicarbonate-based buffer
+      system ( Connon and Giovannoni, 2002 ). All vitamins and organics were added
+      after autoclaving and sparging. The pH of the resulting AMS1 typically ranged
+      from 7.5 to 7.7. ''. No parent amount or preparation step is changed or newly
+      certified; this evidence is attached to the named study variant only.'
+target_organisms:
+- preferred_term: Candidatus Pelagibacter sp. HTCC7211
+  strain: HTCC7211
+  term:
+    id: NCBITaxon:439493
+    label: Candidatus Pelagibacter sp. HTCC7211
+  scoped_to_variant: Carini 2014 AMS1 phosphoserine utilization assay
+  evidence:
+  - reference: doi:10.1038/ncomms5346
+    supports: SUPPORT
+    snippet: Diauxic growth of Pelagibacterales sp . str. HTCC7211 on alternate phosphorus
+      sources.
+    explanation: 'Figure 2 caption and corresponding phosphoserine series, supported
+      by Results p.2 and Methods p.5, establish growth only for this named alternate-P
+      assay variant. Paper-reported name=Pelagibacterales sp. str. HTCC7211; verified
+      current scientific_name=Candidatus Pelagibacter sp. HTCC7211; taxonomy_match=exact_named_taxon;
+      NCBI rank=species despite the strain designation. No parent-medium growth or
+      other strain''s growth is inferred. No growth-rate/yield numbers are digitized
+      from figures or transferred from separate assays. Exact conditions excerpt (Methods,
+      Cultivation details): ''Cultures were incubated at 20 °C with shaking at 60
+      r.p.m. under a 12-h light:12-h dark cycle.''. Separate exact light excerpt:
+      ''Light levels during the day were held at 140–180 μmol photons m −2 s −1 .''.
+      Conditions describe the assay, not organism optima. Taxonomy lookup_on=2026-10-13;
+      https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=338192,204455,203124,198252,135623,54526,1205,286,439493,436308,314261,335992,562&retmode=xml;
+      archived XML=references_cache/papers/taxonomy/carini-phosphorus-20261013.xml. '

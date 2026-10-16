@@ -53,6 +53,180 @@ notes: TOGO M2252 reports a liquid artificial seawater base with 10 mM thiosulfa
 references:
 - reference: https://togomedium.org/medium/M2252
 - reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC1392968/
+  title: Evidence for autotrophy via the reverse tricarboxylic acid cycle in the marine
+    magnetotactic coccus strain MC-1.
+  authors: Williams TJ; Zhang CL; Scott JH; Bazylinski DA
+  year: 2006
+  notes: source_type=journal_article; discovery_mode=existing_source_identity_followup;
+    accessed_on=2026-10-14; source_access=PubMed_abstract_and_selected_primary_full_HTML_methods;
+    doi=10.1128/AEM.72.2.1322-1329.2006; pmid=16461683; pmcid=PMC1392968; raw=references_cache/papers/PMID_16461683.xml;
+    markdown=references_cache/papers/PMID_16461683.md; full_raw=references_cache/papers/primary_html/frontier-mc1-2006-20261014.html;
+    full_markdown=references_cache/papers/primary_html/frontier-mc1-2006-20261014.md;  Materials
+    and methods / Bacteria and growth conditions, radiolabel assay; exact excerpt="semisolid
+    medium". Materials and methods / Bacteria and growth conditions, separate assays;
+    exact excerpt="grown in liquid medium". Reported organism/group=marine magnetotactic
+    coccus strain MC-1; canonical scientific name=Magnetococcus marinus MC-1; NCBITaxon:156889;
+    actual rank=strain; taxonomy_match=historical_strain_identity_supported_by_2013_species_description;
+    role=primary study organism. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=156889&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/bibliographic-url-leads-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/bibliographic-url-leads-20261014.md.
+    Reported organism/group=Chlorobaculum tepidum; canonical scientific name=Chlorobaculum
+    tepidum; NCBITaxon:1097; actual rank=species; taxonomy_match=exact_species; role=separate
+    comparator culture, not growth on the MC-1 owner. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1097&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/citation-frontier-additional-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/citation-frontier-additional-20261014.md.
+    Reported organism/group=Rhodospirillum rubrum; canonical scientific name=Rhodospirillum
+    rubrum; NCBITaxon:1085; actual rank=species; taxonomy_match=exact_species; role=separate
+    comparator culture, not growth on the MC-1 owner. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1085&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/citation-frontier-additional-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/citation-frontier-additional-20261014.md.
+    The inspected methods distinguish semisolid radiolabel experiments from liquid
+    enzyme/lipid/isotope experiments. The local three-entry record collapses the base
+    into 'Artificial seawater'; the paper additionally names mineral elixir, ammonium,
+    resazurin, bicarbonate, phosphate, cysteine, vitamins and iron. The base and stock
+    formulas depend on references 6 and 21. Their primary abstracts are now archived
+    and assessed in separate citations PMID:15338111 and PMID:9251816 below, but complete
+    base and stock formulas remain unverified. Apparent omissions may be shorthand
+    versus actual differences, so no exact variant or complete local recipe is certified.
+    Historical unnamed MC-1 is identified by the separately archived 2013 species
+    description PMID:22581902. Inventory covers the abstract and named growth-condition
+    subsection, not every assay or bibliography organism. Correction/retraction coverage
+    is limited to inspected publication metadata and identified notices, not an exhaustive
+    audit. No new native growth assertion, concentration evidence or resolved variant.
+    Prior ingredients, preparation, evidence, links and history are preserved, not
+    newly certified.
+- reference: PMID:22581902
+  title: Magnetococcus marinus gen. nov., sp. nov., a marine, magnetotactic bacterium
+    that represents a novel lineage (Magnetococcaceae fam. nov., Magnetococcales ord.
+    nov.) at the base of the Alphaproteobacteria.
+  authors: Bazylinski DA; Williams TJ; Lefèvre CT; Berg RJ; Zhang CL; Bowser SS; Dean
+    AJ; Beveridge TJ
+  year: 2013
+  notes: source_type=journal_article; discovery_mode=existing_source_identity_followup;
+    accessed_on=2026-10-14; source_access=PubMed_abstract_not_full_text; doi=10.1099/ijs.0.038927-0;
+    pmid=22581902; raw=references_cache/papers/PMID_22581902.xml; markdown=references_cache/papers/PMID_22581902.md;  PubMed
+    abstract, type-strain identification; exact excerpt="ATCC BAA-1437(T)". PubMed
+    abstract, type-strain identification; exact excerpt="JCM 17883(T)". Reported organism/group=Magnetococcus
+    marinus MC-1(T); canonical scientific name=Magnetococcus marinus MC-1; NCBITaxon:156889;
+    actual rank=strain; taxonomy_match=verified_type_strain_lineage; role=identity
+    reconciliation for historical MC-1, not new exact-recipe growth. Lookup_on=2026-10-14;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=156889&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/bibliographic-url-leads-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/bibliographic-url-leads-20261014.md.
+    Reported organism/group=Magnetococcus marinus; canonical scientific name=Magnetococcus
+    marinus; NCBITaxon:1124597; actual rank=species; taxonomy_match=exact_species;
+    role=species described. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1124597&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/bibliographic-url-leads-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/bibliographic-url-leads-20261014.md.
+    Reported organism/group=Magnetococcus; canonical scientific name=Magnetococcus;
+    NCBITaxon:162171; actual rank=genus; taxonomy_match=exact_named_group; role=taxonomic
+    placement discussed, not a group-wide growth assertion. Lookup_on=2026-10-14;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=162171&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/citation-frontier-additional-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/citation-frontier-additional-20261014.md.
+    Reported organism/group=Magnetococcaceae; canonical scientific name=Magnetococcaceae;
+    NCBITaxon:1191479; actual rank=family; taxonomy_match=exact_named_group; role=taxonomic
+    placement discussed, not a group-wide growth assertion. Lookup_on=2026-10-14;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1191479&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/citation-frontier-additional-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/citation-frontier-additional-20261014.md.
+    Reported organism/group=Magnetococcales; canonical scientific name=Magnetococcales;
+    NCBITaxon:1191478; actual rank=order; taxonomy_match=exact_named_group; role=taxonomic
+    placement discussed, not a group-wide growth assertion. Lookup_on=2026-10-14;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1191478&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/citation-frontier-additional-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/citation-frontier-additional-20261014.md.
+    Reported organism/group=Alphaproteobacteria; canonical scientific name=Alphaproteobacteria;
+    NCBITaxon:28211; actual rank=class; taxonomy_match=exact_named_group; role=taxonomic
+    placement discussed, not a group-wide growth assertion. Lookup_on=2026-10-14;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=28211&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/citation-frontier-additional-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/citation-frontier-additional-20261014.md.
+    Citation role=historical_organism_identity. The abstract explicitly assigns MC-1
+    and the two collection accessions to Magnetococcus marinus. Current NCBI lineage
+    is retained separately from the paper's provisional Alphaproteobacteria placement.
+    This identity paper does not establish the exact local base, stock composition
+    or a new medium variant. Correction/retraction coverage is limited to inspected
+    publication metadata and identified notices, not an exhaustive audit. No new native
+    growth assertion, concentration evidence or resolved variant. Prior ingredients,
+    preparation, evidence, links and history are preserved, not newly certified.
+- reference: PMID:15338111
+  title: Chemolithoautotrophy in the marine, magnetotactic bacterial strains MV-1
+    and MV-2.
+  authors: Bazylinski DA; Dean AJ; Williams TJ; Long LK; Middleton SL; Dubbels BL
+  year: 2004
+  notes: source_type=journal_article; discovery_mode=archived_primary_source_chain;
+    accessed_on=2026-10-14; pmid=15338111; doi=10.1007/s00203-004-0716-y; source_access=PubMed_abstract_not_full_text;
+    raw=references_cache/papers/PMID_15338111.xml; markdown=references_cache/papers/PMID_15338111.md;
+    metadata_raw=references_cache/papers/PMID_15338111.xml; PubMed abstract, study
+    strains; exact excerpt="MV-1 and MV-2". PubMed abstract, negative result; exact
+    excerpt="Neither grew microaerobically with tetrathionate". Reported organism/group=marine
+    magnetotactic strain MV-1; canonical scientific name=Magnetovibrio blakemorei;
+    NCBITaxon:28181; actual rank=species; taxonomy_match=type_material_species_mapping_not_exact_strain_node;
+    role=base-paper study strain; NCBI type material and PMID:22984137 identify Magnetovibrio
+    blakemorei. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=28181&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.md.
+    Reported organism/group=marine magnetotactic strain MV-2; canonical scientific
+    name=Bacteria; NCBITaxon:2; actual rank=domain; taxonomy_match=parent_rank_only;
+    role=base-paper study strain; no exact taxon or defensible finer rank established
+    by bounded name searches; Bacteria is a domain, not a species identity. Lookup_on=2026-10-14;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.md.
+    Reported organism/group=Magnetospirillum magnetotacticum; canonical scientific
+    name=Paramagnetospirillum magnetotacticum; NCBITaxon:188; actual rank=species;
+    taxonomy_match=verified_species_synonym; role=cbbM comparator mention; not the
+    MC-1 strain or proof of growth on this recipe. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=188&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.md.
+    Citation role=cited_base_source, Williams 2006 PMID:16461683 reference 6. The
+    abstract separates sulfur-based autotrophy, formate growth and negative substrate
+    results under different electron-acceptor conditions; these are not pooled into
+    one recipe. The abstract does not enumerate inherited base/stock ingredients,
+    final volume, preparation or complete formula. Its MV-1/MV-2 results are not MC-1
+    growth, and neither positive nor negative results are transferred to this local
+    owner. Existing aggregated Artificial seawater may hide components; the exact
+    relationship remains formulation-unresolved with no resolved variant. Correction/retraction
+    coverage is limited to inspected metadata and identified notices, not exhaustive.
+    No new native growth, concentration evidence, quantitative metric or resolved
+    variant. All previous recipe fields, evidence, links and history preserved. Organism
+    inventory is restricted to the inspected passages, not a full-paper review.
+- reference: PMID:9251816
+  title: Magneto-aerotaxis in marine coccoid bacteria.
+  authors: Frankel RB; Bazylinski DA; Johnson MS; Taylor BL
+  year: 1997
+  notes: source_type=journal_article; discovery_mode=archived_primary_source_chain;
+    accessed_on=2026-10-14; pmid=9251816; doi=10.1016/S0006-3495(97)78132-3; source_access=PubMed_abstract_not_full_text;
+    raw=references_cache/papers/PMID_9251816.xml; markdown=references_cache/papers/PMID_9251816.md;
+    metadata_raw=references_cache/papers/PMID_9251816.xml; pmcid=PMC1180996; PubMed
+    abstract, study culture; exact excerpt="designated strain MC-1". PubMed abstract,
+    comparator spelling retained; exact excerpt="Magnetospirillum megnetotacticum".
+    Reported organism/group=marine magnetotactic coccus strain MC-1; canonical scientific
+    name=Magnetococcus marinus MC-1; NCBITaxon:156889; actual rank=strain; taxonomy_match=historical_strain_identity_supported_by_PMID_22581902;
+    role=study strain, not proof that the local abbreviated recipe matches the paper.
+    Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=156889&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.md.
+    Reported organism/group=Magnetospirillum megnetotacticum (PubMed spelling); canonical
+    scientific name=Magnetospirillum; NCBITaxon:13134; actual rank=genus; taxonomy_match=parent_rank_only;
+    role=comparator; reported genus only, not a confirmed current species or lineage
+    assignment. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=13134&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.md.
+    The comparator spelling likely refers to historical Magnetospirillum magnetotacticum,
+    now Paramagnetospirillum magnetotacticum (NCBITaxon:188, species), but that is
+    a qualified spelling interpretation rather than a source-verified exact mapping.
+    No MS-1 strain is inferred. Citation role=cited_base_source, Williams 2006 PMID:16461683
+    reference 21. The inspected abstract describes aerotaxis in a capillary oxygen
+    gradient, not a complete base or stock formulation. Migration and preferred oxygen
+    position are not a growth rate or optimum cultivation claim. The full-text PMC
+    route still returned a browser challenge; no bypass attempted. No source formula
+    is inherited and no exact variant is assigned. Correction/retraction coverage
+    is limited to inspected metadata and identified notices, not exhaustive. No new
+    native growth, concentration evidence, quantitative metric or resolved variant.
+    All previous recipe fields, evidence, links and history preserved. Organism inventory
+    is restricted to the inspected passages, not a full-paper review.
 applications:
 - Microbial cultivation
 curation_history:
@@ -99,6 +273,24 @@ curation_history:
   notes: Corrected Artificial seawater from TOGO's imported 1 g/L row to a 1000.0
     ml/L base, grounded thiosulfate and O2, added the 25 C static O2-gradient incubation
     condition, and retained Artificial seawater as intentionally unmapped.
+- timestamp: '2026-10-14T01:06:41.461765+00:00'
+  curator: codex
+  action: CURATED_PAPER_CITATIONS_AND_PROVENANCE
+  notes: Added or enriched verified paper citations and source archive/Markdown links;
+    recorded bounded formulation and organism assessments, corrected alias/correction
+    dispositions, and consolidated only verified duplicate bibliography entries. Preserved
+    prior recipe fields, evidence, links and history. No new growth, concentration
+    or resolved-variant claim. Whitchurch review is non-operational identity only.
+  source: PMID:22581902; https://pmc.ncbi.nlm.nih.gov/articles/PMC1392968/
+- timestamp: '2026-10-14T01:58:59.601709+00:00'
+  curator: codex
+  action: ADDED_SOURCE_CHAIN_PAPER_CITATIONS
+  notes: Added verified paper/correction citations with archived sources and Markdown;
+    assessed source-specific scientific names, actual NCBI ranks and unresolved recipe
+    boundaries. Updated older source-access notes only where new evidence resolved
+    access. Preserved all existing recipe fields, evidence, links and history. No
+    new growth association, concentration evidence, amount change or resolved variant.
+  source: PMID:15338111; PMID:9251816
 data_quality_flags:
 - has_ontology_mappings
 - has_unmapped_ingredients

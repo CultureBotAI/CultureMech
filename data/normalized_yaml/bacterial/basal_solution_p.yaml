@@ -83,6 +83,14 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T23:14:34.949513+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:14273649
 media_term:
   preferred_term: MediaDB Medium 137
   term:
@@ -95,3 +103,46 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+references:
+- reference: PMID:14273649
+  title: PROTEIN AND NUCLEIC ACID SYNTHESIS IN TWO MUTANTS OF ESCHERICHIA COLI WITH
+    TEMPERATURE-SENSITIVE AMINOACYL RIBONUCLEIC ACID SYNTHETASES.
+  authors: EIDLIC L; NEIDHARDT FC
+  year: 1965
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:137;
+    discovery_sourceID=43; source_url=https://doi.org/10.1128/jb.89.3.706-711.1965;
+    alternate_identifier=doi:10.1128/jb.89.3.706-711.1965; alternate_identifier=PMC277525;
+    Historical MediaDB metadata retained for comparison: title="Protein and nucleic
+    acid synthesis in two mutants of eschericia coli with temperature-sensitive aminoacyl
+    ribonucleic acid synthetases"; first_author="Eidlic"; year=1965. Verified PMID/DOI
+    identity is distinct from unresolved historical metadata differences. raw=references_cache/papers/PMID_14273649.xml;
+    markdown=references_cache/papers/PMID_14273649.md; PubMed abstract, mutant phenotype;
+    exact excerpt="grow almost normally at 30 C and fail to grow at 37 C". Reported
+    organism=Escherichia coli (E. coli); canonical scientific name=Escherichia coli;
+    NCBITaxon:562; actual rank=species; taxonomy_match=exact_species_not_strain; role=experimental
+    species; exact local formulation unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=Escherichia coli I-9; canonical scientific name=Escherichia
+    coli; NCBITaxon:562; actual rank=species; taxonomy_match=parent_rank_only; role=temperature-sensitive
+    stringent-control mutant; exact strain node unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=Escherichia coli IV-4; canonical scientific name=Escherichia
+    coli; NCBITaxon:562; actual rank=species; taxonomy_match=parent_rank_only; role=temperature-sensitive
+    relaxed-control mutant; exact strain node unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=Escherichia coli K-10; canonical scientific name=Escherichia
+    coli; NCBITaxon:562; actual rank=species; taxonomy_match=parent_rank_only; role=MediaDB
+    parent-strain lead not established by abstract. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    The two mutants, their parents, permissive/negative-growth temperatures and cell-free
+    synthetase assays are separate contexts. The five-entry basal solution is not
+    automatically a complete growth medium; the abstract does not establish its supplements
+    or nitrogen source. Local comparison: Five native entries contain glucose and
+    salts but no explicit nitrogen source; basal formulation is not certified as complete
+    medium. Inventory covers inspected medium-relevant passages, not the whole paper
+    or bibliography. Correction/retraction coverage is limited to inspected metadata;
+    bounded taxonomy misses do not prove absence. Original ingredients, amounts, preparation,
+    history and links are preserved, not newly certified. No new native growth assertion,
+    resolved variant or concentration evidence.'

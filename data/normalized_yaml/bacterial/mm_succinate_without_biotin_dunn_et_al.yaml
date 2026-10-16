@@ -110,6 +110,15 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:151's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T12:00:49.302978+00:00'
+  curator: codex
+  action: ADDED_ABSTRACT_BACKED_PAPER_CITATIONS
+  notes: Added 1 verified citations with raw abstract/Markdown archives, qualified
+    organism taxonomy and explicit source-access limits. Preserved all ingredients,
+    preparation and prior history. No resolved variant, positive growth association,
+    quantitative metric or parent concentration certification; complete formulation
+    remains unresolved.
+  source: doi:10.1128/jb.178.20.5960-5970.1996
 media_term:
   preferred_term: MediaDB Medium 151
   term:
@@ -121,3 +130,62 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1128/jb.178.20.5960-5970.1996
+  title: 'Pyruvate carboxylase from Rhizobium etli: mutant characterization, nucleotide
+    sequence, and physiological role.'
+  authors: Dunn MF; Encarnación S; Araíza G; Vargas MC; Dávalos A; Peralta H; Mora
+    Y; Mora J
+  year: 1996
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=50, medID=151; source_access=abstract_only.
+    SQL joins establish discovery provenance, not primary cultivation evidence. Title,
+    authors, year and DOI/PMID identity verified from raw PubMed XML. No correction/retraction
+    notice in the inspected entry; not an exhaustive notice audit. PMID:8830693; PMC178453;
+    raw_abstract=references_cache/papers/PMID_8830693.xml; abstract_markdown=references_cache/papers/PMID_8830693.md.
+    Additional public abstract HTML/Markdown=references_cache/papers/primary_html/dunn-1996-pmc-abstract.*;
+    this is not a full-body transcription. This owner retains 30 mM succinate without
+    a biotin ingredient. The abstract reports serial-subculture effects but does not
+    certify every local base component or identify the exact imported assay. Reported
+    organism=Rhizobium etli; scientific name/canonical mapping=Rhizobium etli; NCBITaxon:29449;
+    actual rank=species; taxonomy_match=exact species; role=abstract experimental
+    species; parent and pyc mutant strains are not named in this abstract. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=29449&retmode=xml.
+    Reported organism=Rhizobium tropici; scientific name/canonical mapping=Martinezella
+    tropici; NCBITaxon:398; actual rank=species; taxonomy_match=exact species synonym;
+    role=abstract comparative experimental species, currently Martinezella tropici;
+    not R. etli. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=398&retmode=xml.
+    Reported organism=Rhizobium etli pyc::Tn5-mob mutant; scientific name/canonical
+    mapping=Rhizobium etli; NCBITaxon:29449; actual rank=species; taxonomy_match=parent_rank_only;
+    role=species parent only; no exact mutant taxonomy or growth scope inferred. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=29449&retmode=xml.
+    Reported organism=Rhizobium tropici pyc::Tn5-mob mutant; scientific name/canonical
+    mapping=Martinezella tropici; NCBITaxon:398; actual rank=species; taxonomy_match=parent_rank_only;
+    role=current Martinezella tropici species parent only; not an exact mutant node.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=398&retmode=xml.
+    Abstract; exact excerpt=''mutants were selected for their inability to grow''.
+    The negative result concerns pyruvate as sole carbon source, not all carbon sources
+    or a failure of every parent strain. Abstract; exact excerpt=''minimal medium
+    containing 30 mM succinate''. Abstract; exact excerpt=''Supplementation of the
+    medium with biotin prevented the growth decrease of the parent but not the mutant
+    strain''. Abstract; exact excerpt=''The R. tropici pyc mutant grew normally in
+    subcultures regardless of biotin supplementation.''. A subculture-dependent growth
+    decrease is not equivalent to no growth. Keep species, parent/mutant status and
+    biotin treatments separate. Reported organism=Rhizobium etli CE3 and 12-53 (MediaDB
+    labels only); scientific name/canonical mapping=Rhizobium etli; NCBITaxon:29449;
+    actual rank=species; taxonomy_match=parent_rank_only; role=discovery labels not
+    named in the inspected Dunn abstract; exact strain identity and assignment unresolved.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=29449&retmode=xml.
+    An exact CE3 taxonomy node was not established by the bounded CE3/CE 3 queries;
+    this is not an exhaustive absence claim. NCBITaxon:347834 is Rhizobium etli CFN
+    42, actual rank=strain, but is not assumed identical to CE3. Mutant identity and
+    phenotype are not inherited from a parent taxon. The abstract cites Encarnacion
+    1995 for succinate physiology; it does not establish that paper as the complete
+    protocol for this exact owner. No cited-background paper is automatically attached
+    as exact formulation evidence.Only abstract-level scientific content was inspected;
+    complete methods, tables, ingredient chemical forms, doses, pH and preparation
+    remain unresolved. All imported ingredients and generic preparation are preserved,
+    not newly certified. No resolved inline variant, positive target organism, quantitative
+    growth metric or parent concentration evidence is added. Organism inventory is
+    bounded to the inspected abstract, not the complete paper. Taxonomy raw/Markdown
+    archives=references_cache/papers/taxonomy/rhizobium-20261013.* and rhizobium-background-20261013.*. '

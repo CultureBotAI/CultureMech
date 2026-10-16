@@ -139,6 +139,14 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-14T00:09:58.559887+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added or enriched bibliographic metadata, archived source/Markdown links,
+    title/group excerpts and qualified NCBI taxonomy notes. Non-operational identity
+    review only; no experimental, formulation, variant, growth or concentration curation.
+    Preserved all original recipe fields, history and reference identifiers.
+  source: PMID:15242462
 media_term:
   preferred_term: MediaDB Medium 380
   term:
@@ -150,3 +158,33 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:15242462
+  title: Manipulating the pyruvate dehydrogenase bypass of a multi-vitamin auxotrophic
+    yeast Torulopsis glabrata enhanced pyruvate production.
+  authors: Liu LM; Li Y; Li HZ; Chen J
+  year: 2004
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-14; source_access=archived_PubMed_abstract; review_scope=Bibliographic
+    title and taxonomic identity only; archived abstract is not approval of any experiment
+    or formulation.; owner=MEDIADB:380; discovery_sourceID=125; source_url=https://doi.org/10.1111/j.1472-765X.2004.01563.x;
+    alternate_identifier=doi:10.1111/j.1472-765X.2004.01563.x; raw=references_cache/papers/PMID_15242462.xml;
+    markdown=references_cache/papers/PMID_15242462.md; Bibliographic title; exact
+    excerpt="Torulopsis glabrata". Reported organism/group=Torulopsis glabrata; canonical
+    scientific name=Nakaseomyces glabratus; NCBITaxon:5478; actual rank=species; taxonomy_match=exact_species_synonym;
+    role=bibliographic-title mention only; no strain, formulation, growth or experimental-outcome
+    assertion. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5478&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/growth-next-nonoperational-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/growth-next-nonoperational-20261013.md.
+    NCBI retains Torulopsis glabrata as a synonym of Nakaseomyces glabratus; this
+    does not verify industrial strain labels. Review is limited to publication identity,
+    title-level organism mentions and taxonomy. Abstract content is archived but not
+    used here to assert experimental findings. This is not an exhaustive abstract
+    or whole-paper organism inventory. The pinned MediaDB source-to-owner join establishes
+    a historical bibliographic lead only, not exact recipe equivalence. Formulation
+    identity, study-specific differences and variant destination remain unassessed
+    in this non-operational citation task. No cultivation conditions, optimization,
+    virulence, growth associations or ingredient amounts are extracted or curated.
+    Correction/retraction coverage is limited to archived metadata. Original ingredients,
+    amounts, preparation, history, evidence and links are preserved, not newly certified.
+    No new native growth assertion, resolved variant or concentration evidence.

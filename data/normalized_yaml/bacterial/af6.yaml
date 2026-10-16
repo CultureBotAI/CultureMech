@@ -300,6 +300,19 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-14T08:24:01.926688+00:00'
+  curator: codex
+  action: ADDED_AF6_PAPER_CITATIONS
+  notes: Added four archived primary-paper citations with bounded organism inventories
+    and verified taxonomy. AF6-family relevance is not exact validation of the encoded
+    NBRC formulation. NIES AF6/AF6/2 differences, non-axenic culture, alternative-medium
+    observations and a collection reidentification remain explicitly qualified. No
+    concentration, organism-growth, resolved variant, parent-child link or export
+    changes.
+  source: doi:10.1093/gbe/evz104; doi:10.3389/fmicb.2019.01351; doi:10.60369/microresys.25.1_21;
+    doi:10.1186/s12915-021-01087-0
+  changes: Four bibliography entries; 41 source-reported organism observations in
+    citation notes; one append-only history event.
 solutions:
 - preferred_term: P IV Metals solution*
   composition: []
@@ -314,3 +327,251 @@ variant_children:
   name: af6_ph4_0
   notes: Same ingredient and concentration signature; review as possible duplicate
     source record.
+references:
+- reference: doi:10.1093/gbe/evz104
+  title: The Parallel Molecular Adaptations to the Antarctic Cold Environment in Two
+    Psychrophilic Green Algae.
+  authors: Zhang Z; Qu C; Yao R; Nie Y; Xu C; Miao J; Zhong B
+  year: 2019
+  notes: 'source_type=journal_article; discovery_mode=primary_source_followup; accessed_on=2026-10-14;
+    alternate_identifiers=PMID:31106822, PMCID:PMC6628873. Scope: AF6-family bibliography
+    and source-reported observations; formulation_unresolved. The paper does not validate
+    the currently encoded NBRC-derived ingredient amounts, flattened P IV stock, water
+    total or solid state. No native target-organism entry, resolved inline variant,
+    concentration claim or growth metric is added. Locator=Materials and Methods /
+    Algal Species and Culture; exact excerpt A="The algae C. sp. ICE-L and T. socialis
+    were separately cultured in Provasoli seawater"; separately located excerpt B="and
+    AF-6 medium". The source''s paired ordering assigns AF6 to Tetrabaena socialis,
+    not to ICE-L. It cites Provasoli and Pintner (1960) and Kato (1982), whose historical
+    base formulation has not been resolved. NIES strain provenance alone does not
+    establish use of a particular current NIES or NBRC AF6 formulation. The cold-tolerance
+    control is not an AF6 growth observation. Organism inventory is bounded to the
+    cited passages/AF6 rows, not the whole paper. Tetrabaena socialis (reported strain=NIES-691;
+    medium=AF-6; role=study cultivation; exact local formulation unresolved; NCBITaxon:47790=Tetrabaena
+    socialis; rank=species; taxonomy_match=exact_name; locator=Materials and Methods
+    / Algal Species and Culture). Chlamydomonas sp. ICE-L (reported strain=ICE-L;
+    medium=Provasoli seawater; role=different medium; not AF6 growth; NCBITaxon:309537=Chlamydomonas
+    sp. ICE-L; rank=species; taxonomy_match=exact_name; locator=Materials and Methods
+    / Algal Species and Culture). Chlamydomonas reinhardtii (reported strain=not stated;
+    medium=not assigned to AF6; role=cold-tolerance control only; NCBITaxon:3055=Chlamydomonas
+    reinhardtii; rank=species; taxonomy_match=exact_name; locator=Cold Tolerance Assay).
+    Taxonomy lookup=NCBI Taxonomy, 2026-10-14; URLs use https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=<numeric_taxon_id>.
+    Actual ranks are retained; a species match does not independently authenticate
+    the reported strain. Primary source=https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6628873/fullTextXML;
+    original=references_cache/papers/primary_xml/antarctic-2019-polytomella-volvox-followup-20261014.xml;
+    markdown=references_cache/papers/primary_xml/antarctic-2019-polytomella-volvox-followup-20261014.md.
+    Taxonomy original=references_cache/papers/taxonomy/af6-citation-20261014.xml;
+    taxonomy markdown=references_cache/papers/taxonomy/af6-citation-20261014.md.'
+- reference: doi:10.3389/fmicb.2019.01351
+  title: Evolutionary Analysis of Unicellular Species in Chlamydomonadales Through
+    Chloroplast Genome Comparison With the Colonial Volvocine Algae.
+  authors: Hu Y; Xing W; Song H; Zhu H; Liu G; Hu Z
+  year: 2019
+  notes: 'source_type=journal_article; discovery_mode=primary_source_followup; accessed_on=2026-10-14;
+    alternate_identifiers=PMID:31275275, PMCID:PMC6591512. Scope: AF6-family bibliography
+    and source-reported observations; formulation_unresolved. The paper does not validate
+    the currently encoded NBRC-derived ingredient amounts, flattened P IV stock, water
+    total or solid state. No native target-organism entry, resolved inline variant,
+    concentration claim or growth metric is added. Locator=Materials and Methods /
+    Sampling, Culture Conditions, DNA Extraction, and Species Identification; exact
+    excerpt="The strains were grown in a conical flask containing artificial freshwater-6
+    (AF-6)". The same paragraph names the six isolates listed below. AF6 is attributed
+    to Kato (1982), without a complete formula or a pH-4 variant designation. The
+    authors retained Volvulina compacta for FACHB-2337 based on morphology despite
+    its reported phylogenetic placement near V. pringsheimii; the paper''s identification
+    is retained, not independently revised. Other species used for sequence comparisons
+    are not cultured-isolate claims. Organism inventory is bounded to the cited passages/AF6
+    rows, not the whole paper. Colemanosphaera charkowiensis (reported strain=FACHB-2326;
+    medium=artificial freshwater-6 (AF-6); role=study cultivation; exact local formulation
+    unresolved; NCBITaxon:51706=Colemanosphaera charkowiensis; rank=species; taxonomy_match=exact_name;
+    locator=Materials and Methods / Sampling, Culture Conditions, DNA Extraction,
+    and Species Identification). Volvulina compacta (reported strain=FACHB-2337; medium=artificial
+    freshwater-6 (AF-6); role=study cultivation; exact local formulation unresolved;
+    NCBITaxon:51721=Volvulina compacta; rank=species; taxonomy_match=exact_name; locator=Materials
+    and Methods / Sampling, Culture Conditions, DNA Extraction, and Species Identification).
+    Pandorina colemaniae (reported strain=FACHB-2361; medium=artificial freshwater-6
+    (AF-6); role=study cultivation; exact local formulation unresolved; NCBITaxon:47786=Pandorina
+    colemaniae; rank=species; taxonomy_match=exact_name; locator=Materials and Methods
+    / Sampling, Culture Conditions, DNA Extraction, and Species Identification). Pandorina
+    morum (reported strain=FACHB-2362; medium=artificial freshwater-6 (AF-6); role=study
+    cultivation; exact local formulation unresolved; NCBITaxon:33099=Pandorina morum;
+    rank=species; taxonomy_match=exact_name; locator=Materials and Methods / Sampling,
+    Culture Conditions, DNA Extraction, and Species Identification). Colemanosphaera
+    angeleri (reported strain=FACHB-2363; medium=artificial freshwater-6 (AF-6); role=study
+    cultivation; exact local formulation unresolved; NCBITaxon:1454018=Colemanosphaera
+    angeleri; rank=species; taxonomy_match=exact_name; locator=Materials and Methods
+    / Sampling, Culture Conditions, DNA Extraction, and Species Identification). Yamagishiella
+    unicocca (reported strain=FACHB-2364; medium=artificial freshwater-6 (AF-6); role=study
+    cultivation; exact local formulation unresolved; NCBITaxon:51707=Yamagishiella
+    unicocca; rank=species; taxonomy_match=exact_name; locator=Materials and Methods
+    / Sampling, Culture Conditions, DNA Extraction, and Species Identification). Taxonomy
+    lookup=NCBI Taxonomy, 2026-10-14; URLs use https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=<numeric_taxon_id>.
+    Actual ranks are retained; a species match does not independently authenticate
+    the reported strain. Primary source=https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6591512/fullTextXML;
+    original=references_cache/papers/primary_xml/volvocine-2019-gr-plus-followup-20261014.xml;
+    markdown=references_cache/papers/primary_xml/volvocine-2019-gr-plus-followup-20261014.md.
+    Taxonomy original=references_cache/papers/taxonomy/af6-citation-20261014.xml;
+    taxonomy markdown=references_cache/papers/taxonomy/af6-citation-20261014.md.'
+- reference: doi:10.60369/microresys.25.1_21
+  title: Community composition of bacteria co-cultivated with microalgae in non-axenic
+    algal cultures
+  authors: Hiroyuki Ueda; Shigeto Otsuka; Keishi Senoo
+  year: 2009
+  notes: 'source_type=journal_article; discovery_mode=primary_source_followup; accessed_on=2026-10-14;
+    PMID not established. Scope: AF6-family bibliography and source-reported observations;
+    formulation_unresolved. The paper does not validate the currently encoded NBRC-derived
+    ingredient amounts, flattened P IV stock, water total or solid state. No native
+    target-organism entry, resolved inline variant, concentration claim or growth
+    metric is added. Locator=printed page 21, cultivation paragraph (PDF page 1);
+    exact excerpt="V. aureus NIES-864 was cultivated in AF-6". Only Volvox aureus
+    NIES-864 is assigned AF6; the other two algae use C medium. AF6 is attributed
+    to Kato (1982); recipe equivalence to NBRC964 is not demonstrated. Non-axenic
+    culture does not establish independent growth of associated bacteria. Table 1
+    closest-species sequence matches are not species identifications or pure-culture
+    growth. The original PDF and publisher confirm 2009 publication; 2025 is J-STAGE
+    availability, not publication year. Chlorella saccharophila is an NCBI synonym
+    of Chloroidium saccharophilum. For reported Ulothrix variabilis NIES-329, the
+    collection now records Klebsormidium sp. following DNA reidentification; taxonomy_match=parent_rank_only
+    to Klebsormidium, not an Ulothrix synonym or verified species identity. Collection
+    source=https://mcc.nbrp.jp/strainList.do?strainNumber=NIES-329; original=references_cache/papers/primary_xml/nies-329-gr-plus-followup-20261014.html;
+    markdown=references_cache/papers/primary_xml/nies-329-gr-plus-followup-20261014.md.
+    Organism inventory is bounded to the cited passages/AF6 rows, not the whole paper.
+    Volvox aureus (reported strain=NIES-864; medium=AF-6; role=non-axenic study cultivation;
+    exact local formulation unresolved; NCBITaxon:47287=Volvox aureus; rank=species;
+    taxonomy_match=exact_name; locator=printed page 21, cultivation paragraph (PDF
+    page 1)). Chlorella saccharophila (reported strain=NIES-640; medium=C medium;
+    role=different medium; not AF6 growth; NCBITaxon:3082=Chloroidium saccharophilum;
+    rank=species; taxonomy_match=documented_synonym; locator=printed page 21, cultivation
+    paragraph (PDF page 1)). Ulothrix variabilis (reported strain=NIES-329; medium=C
+    medium; role=different medium; collection reidentification to Klebsormidium sp.;
+    NCBITaxon:3174=Klebsormidium; rank=genus; taxonomy_match=parent_rank_only; locator=printed
+    page 21, cultivation paragraph (PDF page 1)). Taxonomy lookup=NCBI Taxonomy, 2026-10-14;
+    URLs use https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=<numeric_taxon_id>.
+    Actual ranks are retained; a species match does not independently authenticate
+    the reported strain. Primary source=https://www.jsmrs.jp/journal/No25_1/No25_1_21.pdf;
+    original=references_cache/papers/primary_pdf/algal-bacteria-2009-gr-plus-followup-20261014.pdf;
+    markdown=references_cache/papers/primary_pdf/algal-bacteria-2009-gr-plus-followup-20261014.md.
+    Taxonomy original=references_cache/papers/taxonomy/af6-citation-20261014.xml;
+    taxonomy markdown=references_cache/papers/taxonomy/af6-citation-20261014.md.'
+- reference: doi:10.1186/s12915-021-01087-0
+  title: Phylotranscriptomics points to multiple independent origins of multicellularity
+    and cellular differentiation in the volvocine algae.
+  authors: Lindsey CR; Rosenzweig F; Herron MD
+  year: 2021
+  notes: 'source_type=journal_article; discovery_mode=primary_source_followup; accessed_on=2026-10-14;
+    alternate_identifiers=PMID:34465312, PMCID:PMC8408923. Scope: AF6-family bibliography
+    and source-reported observations; formulation_unresolved. The paper does not validate
+    the currently encoded NBRC-derived ingredient amounts, flattened P IV stock, water
+    total or solid state. No native target-organism entry, resolved inline variant,
+    concentration claim or growth metric is added. Locator=Additional File 1, Table
+    S3; exact caption excerpt A="Medium used to culture each sequenced strain."; separate
+    excerpt B="were prepared according to media recipes supplied by NIES.". The caption
+    applies NIES recipes to AF-6 and AF-6/2; 28 rows use AF-6 and Volvox africanus
+    NIES-863 uses AF-6/2. Current NIES documentation defines AF-6/2 as AF-6 diluted
+    with distilled water to one-half. Its AF6 footnotes omit CaCO3 and use P IV metals
+    and MES; the NIES P IV footnote replaces ZnCl2 with zinc sulfate heptahydrate.
+    NBRC964 retains CaCO3 and has optional agar. The local record also has unresolved
+    imported units and flattened stock ingredients. These are supported collection-formulation
+    differences, not proof of the paper''s complete historical formulation. Variant
+    accounting remains in these notes pending reconciliation of the malformed base
+    and historical recipe; do not equate NIES AF6/AF6/2 with NBRC964 or its pH-4 child.
+    Collection sources=https://mcc.nbrp.jp/02medium.html#af6_2 and https://mcc.nbrp.jp/medium/ja/af6.pdf;
+    originals/Markdown=references_cache/papers/primary_xml/nies-media-volvocine-tap-20261014.{html,md}
+    and references_cache/papers/primary_pdf/nies-af6-gr-plus-followup-20261014.{pdf,md}.
+    Supplement original=references_cache/papers/primary_supplements/volvocine-2021-supplement1-20261014.docx;
+    supplement markdown=references_cache/papers/primary_supplements/volvocine-2021-supplement1-20261014.md.
+    Organism inventory is bounded to the cited passages/AF6 rows, not the whole paper.
+    Basichlamys sacculifera (reported strain=NIES-566; medium=AF-6; role=study cultivation
+    on NIES medium; exact local variant unresolved; NCBITaxon:47779=Basichlamys sacculifera;
+    rank=species; taxonomy_match=exact_name; locator=Additional File 1, Table S3,
+    OOXML row 4). Colemanosphaera charkowiensis (reported strain=NIES-3383; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:51706=Colemanosphaera
+    charkowiensis; rank=species; taxonomy_match=exact_name; locator=Additional File
+    1, Table S3, OOXML row 5). Eudorina cylindrica (reported strain=NIES-722; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:51698=Eudorina
+    cylindrica; rank=species; taxonomy_match=exact_name; locator=Additional File 1,
+    Table S3, OOXML row 11). Eudorina elegans (reported strain=NIES-717; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:47282=Eudorina
+    elegans; rank=species; taxonomy_match=exact_name; locator=Additional File 1, Table
+    S3, OOXML row 15). Eudorina minodii (reported strain=NIES-856; medium=AF-6; role=study
+    cultivation on NIES medium; exact local variant unresolved; NCBITaxon:135198=Eudorina
+    minodii; rank=species; taxonomy_match=exact_name; locator=Additional File 1, Table
+    S3, OOXML row 19). Eudorina peripheralis (reported strain=NIES-725; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:332502=Eudorina
+    peripheralis; rank=species; taxonomy_match=exact_name; locator=Additional File
+    1, Table S3, OOXML row 20). Eudorina unicocca (reported strain=SAG 24-1c; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:47783=Eudorina
+    unicocca; rank=species; taxonomy_match=exact_name; locator=Additional File 1,
+    Table S3, OOXML row 21). Gonium octonarium (reported strain=NIES-851; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:47785=Gonium
+    octonarium; rank=species; taxonomy_match=exact_name; locator=Additional File 1,
+    Table S3, OOXML row 23). Gonium quadratum (reported strain=NIES-653; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:51700=Gonium
+    quadratum; rank=species; taxonomy_match=exact_name; locator=Additional File 1,
+    Table S3, OOXML row 24). Pandorina colemaniae (reported strain=NIES-572; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:47786=Pandorina
+    colemaniae; rank=species; taxonomy_match=exact_name; locator=Additional File 1,
+    Table S3, OOXML row 26). Pandorina morum (reported strain=NIES-890; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:33099=Pandorina
+    morum; rank=species; taxonomy_match=exact_name; locator=Additional File 1, Table
+    S3, OOXML row 27). Pleodorina indica (reported strain=NIES-736; medium=AF-6; role=study
+    cultivation on NIES medium; exact local variant unresolved; NCBITaxon:51710=Pleodorina
+    indica; rank=species; taxonomy_match=exact_name; locator=Additional File 1, Table
+    S3, OOXML row 29). Pleodorina starrii (reported strain=NIES-1362; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:330485=Pleodorina
+    starrii; rank=species; taxonomy_match=exact_name; locator=Additional File 1, Table
+    S3, OOXML row 31). Pleodorina starrii (reported strain=NIES-1363; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:330485=Pleodorina
+    starrii; rank=species; taxonomy_match=exact_name; locator=Additional File 1, Table
+    S3, OOXML row 32). Pleodorina thompsonii (reported strain=NIES-4126; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:330484=Pleodorina
+    thompsonii; rank=species; taxonomy_match=exact_name; locator=Additional File 1,
+    Table S3, OOXML row 33). Vitreochlamys aulata (reported strain=NIES-878; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:140671=Vitreochlamys
+    aulata; rank=species; taxonomy_match=exact_name; locator=Additional File 1, Table
+    S3, OOXML row 34). Vitreochlamys aulata (reported strain=SAG 80.81; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:140671=Vitreochlamys
+    aulata; rank=species; taxonomy_match=exact_name; locator=Additional File 1, Table
+    S3, OOXML row 35). Vitreochlamys nekrassovii (reported strain=SAG 11-10; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:140673=Vitreochlamys
+    nekrassovii; rank=species; taxonomy_match=exact_name; locator=Additional File
+    1, Table S3, OOXML row 36). Vitreochlamys ordinata (reported strain=NIES-882;
+    medium=AF-6; role=study cultivation on NIES medium; exact local variant unresolved;
+    NCBITaxon:78182=Vitreochlamys ordinata; rank=species; taxonomy_match=exact_name;
+    locator=Additional File 1, Table S3, OOXML row 37). Volvox africanus (reported
+    strain=NIES-863; medium=AF-6/2; role=study cultivation on NIES medium; exact local
+    variant unresolved; NCBITaxon:51714=Volvox africanus; rank=species; taxonomy_match=exact_name;
+    locator=Additional File 1, Table S3, OOXML row 38). Volvox barberi (reported strain=NIES-730;
+    medium=AF-6; role=study cultivation on NIES medium; exact local variant unresolved;
+    NCBITaxon:51715=Volvox barberi; rank=species; taxonomy_match=exact_name; locator=Additional
+    File 1, Table S3, OOXML row 40). Volvox dissipatrix (reported strain=NIES-4128;
+    medium=AF-6; role=study cultivation on NIES medium; exact local variant unresolved;
+    NCBITaxon:47288=Volvox dissipatrix; rank=species; taxonomy_match=exact_name; locator=Additional
+    File 1, Table S3, OOXML row 44). Volvox ferrisii (reported strain=NIES-3986; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:1075618=Volvox
+    ferrisii; rank=species; taxonomy_match=exact_name; locator=Additional File 1,
+    Table S3, OOXML row 45). Volvox globator (reported strain=SAG 199.80; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:51718=Volvox
+    globator; rank=species; taxonomy_match=exact_name; locator=Additional File 1,
+    Table S3, OOXML row 47). Volvox obversus (reported strain=NIES-868; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:47289=Volvox
+    obversus; rank=species; taxonomy_match=exact_name; locator=Additional File 1,
+    Table S3, OOXML row 49). Volvox ovalis (reported strain=NIES-2569; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:904358=Volvox
+    ovalis; rank=species; taxonomy_match=exact_name; locator=Additional File 1, Table
+    S3, OOXML row 50). Volvox powersii (reported strain=NIES-4127; medium=AF-6; role=study
+    cultivation on NIES medium; exact local variant unresolved; NCBITaxon:47290=Volvox
+    powersii; rank=species; taxonomy_match=exact_name; locator=Additional File 1,
+    Table S3, OOXML row 51). Volvox tertius (reported strain=NIES-544; medium=AF-6;
+    role=study cultivation on NIES medium; exact local variant unresolved; NCBITaxon:47292=Volvox
+    tertius; rank=species; taxonomy_match=exact_name; locator=Additional File 1, Table
+    S3, OOXML row 52). Volvulina steinii (reported strain=SAG 90-1; medium=AF-6; role=study
+    cultivation on NIES medium; exact local variant unresolved; NCBITaxon:51722=Volvulina
+    steinii; rank=species; taxonomy_match=exact_name; locator=Additional File 1, Table
+    S3, OOXML row 56). Taxonomy lookup=NCBI Taxonomy, 2026-10-14; URLs use https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=<numeric_taxon_id>.
+    Actual ranks are retained; a species match does not independently authenticate
+    the reported strain. Primary source=https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8408923/fullTextXML;
+    original=references_cache/papers/primary_xml/volvocine-2021-polytomella-volvox-followup-20261014.xml;
+    markdown=references_cache/papers/primary_xml/volvocine-2021-polytomella-volvox-followup-20261014.md.
+    Taxonomy original=references_cache/papers/taxonomy/af6-citation-20261014.xml;
+    taxonomy markdown=references_cache/papers/taxonomy/af6-citation-20261014.md.'

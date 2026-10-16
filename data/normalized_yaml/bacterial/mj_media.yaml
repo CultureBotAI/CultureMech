@@ -182,6 +182,14 @@ curation_history:
   notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T23:14:34.949513+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:16345748
 media_term:
   preferred_term: MediaDB Medium 153
   term:
@@ -193,3 +201,38 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:16345748
+  title: Chemically Defined Minimal Medium for Growth of the Anaerobic Cellulolytic
+    Thermophile Clostridium thermocellum.
+  authors: Johnson EA; Madia A; Demain AL
+  year: 1981
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:153;
+    discovery_sourceID=52; source_url=https://doi.org/10.1128/aem.41.4.1060-1062.1981;
+    alternate_identifier=doi:10.1128/aem.41.4.1060-1062.1981; alternate_identifier=PMC243859;
+    Historical MediaDB metadata retained for comparison: title="Chemically defined
+    minimal medium for growth of the anaerobic celluloytic thermophile clostridium
+    thermocellum"; first_author="Johnson"; year=1981. Verified PMID/DOI identity is
+    distinct from unresolved historical metadata differences. raw=references_cache/papers/PMID_16345748.xml;
+    markdown=references_cache/papers/PMID_16345748.md; PubMed abstract, second sentence;
+    exact excerpt="The growth factors required are biotin, pyridoxamine, vitamin B(12),
+    and p-aminobenzoic acid.". Reported organism=Clostridium thermocellum; canonical
+    scientific name=Acetivibrio thermocellus; NCBITaxon:1515; actual rank=species;
+    taxonomy_match=exact_species_synonym; role=study species; canonical name Acetivibrio
+    thermocellus. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1515&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=Clostridium thermocellum ATCC 27405; canonical scientific name=Acetivibrio
+    thermocellus ATCC 27405; NCBITaxon:203119; actual rank=strain; taxonomy_match=canonical_name_match_secondary_strain_lead;
+    role=MediaDB strain lead not named in short abstract. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=203119&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    The four named growth factors support their reported role, not the full fifteen-entry
+    recipe, exact salt forms, amounts or preparation. Preserve pyridoxamine separately
+    from native pyridoxamine hydrochloride and p-aminobenzoic acid separately from
+    the native anion identity. Local comparison: Fifteen native entries include cellobiose,
+    urea, MOPS and vitamins; the short abstract does not establish their amounts,
+    salt forms or preparation. Inventory covers inspected medium-relevant passages,
+    not the whole paper or bibliography. Correction/retraction coverage is limited
+    to inspected metadata; bounded taxonomy misses do not prove absence. Original
+    ingredients, amounts, preparation, history and links are preserved, not newly
+    certified. No new native growth assertion, resolved variant or concentration evidence.'

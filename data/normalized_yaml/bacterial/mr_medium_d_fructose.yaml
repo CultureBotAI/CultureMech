@@ -133,6 +133,23 @@ curation_history:
   notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T17:38:49.917565+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography, raw/Markdown source provenance, exact
+    excerpts and qualified scientific-name/NCBI mappings. Preserved recipe, assay
+    and taxonomy conflicts. Existing fields, variant links and history unchanged;
+    no new native growth, concentration evidence or resolved variant.
+  source: PMID:21711532
+- timestamp: '2026-10-14T01:06:41.461765+00:00'
+  curator: codex
+  action: CURATED_PAPER_CITATIONS_AND_PROVENANCE
+  notes: Added or enriched verified paper citations and source archive/Markdown links;
+    recorded bounded formulation and organism assessments, corrected alias/correction
+    dispositions, and consolidated only verified duplicate bibliography entries. Preserved
+    prior recipe fields, evidence, links and history. No new growth, concentration
+    or resolved-variant claim. Whitchurch review is non-operational identity only.
+  source: doi:10.1007/BF02074874
 media_term:
   preferred_term: MediaDB Medium 320
   term:
@@ -144,3 +161,75 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:21711532
+  title: Genome-scale reconstruction and in silico analysis of the Ralstonia eutropha
+    H16 for polyhydroxyalkanoate synthesis, lithoautotrophic growth, and 2-methyl
+    citric acid production.
+  authors: Park JM; Kim TY; Lee SY
+  year: 2011
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=deposited_full_XML_selected_methods_and_model_passages;
+    owner=MEDIADB:320; discovery_sourceID=140; source_url=https://doi.org/10.1186/1752-0509-5-101;
+    alternate_identifier=doi:10.1186/1752-0509-5-101; alternate_identifier=PMC3154180;
+    raw=references_cache/papers/PMID_21711532.xml; markdown=references_cache/papers/PMID_21711532.md;
+    full_raw=references_cache/papers/primary_xml/pmc3154180-20261013.xml; full_markdown=references_cache/papers/primary_xml/pmc3154180-20261013.md;
+    Methods/Fermentation, formula boundary; exact excerpt="The MR medium contains
+    per liter". Methods/Fermentation, distinct nitrogen condition; exact excerpt="For
+    nitrogen-limited cultivation". Formulation_unresolved: The 12-component MR and
+    13-component nitrogen-limited MR owners require reconciliation of ammonium-phosphate
+    identity, magnesium-sulfate hydration, citrate acid/anion, sodium-phosphate mass
+    basis and inherited trace stock. The explicit nitrogen replacement defines a study
+    difference, but exact local-parent assignment remains unresolved; do not correct
+    molar amounts from an unverified molecular form. Selected full-XML methods and
+    results inspected, not linked supplements/images. Base reference 13 is Lee and
+    Lee 1996 doi:10.1007/BF02074874; its newly archived publisher abstract/preview
+    does not enumerate trace stock. KOH titration, antifoam and analytical GC/HPLC
+    reagents cannot be conflated with final base ingredients. Reported organism=Ralstonia
+    eutropha H16 (KCTC 22469); canonical scientific name=Cupriavidus necator H16;
+    NCBITaxon:381666; actual rank=strain; taxonomy_match=verified_H16_synonym; role=physical
+    D-fructose study; modeled gas feeding/anaerobic scenarios kept separate. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=381666&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    KCTC 22469 is the reported culture accession, not an independently verified NCBI
+    synonym. Bounded lookup misses do not prove taxon absence. Organism inventory
+    covers inspected medium-relevant passages, not the entire paper. Images and supplements
+    have not been verified. Correction/retraction coverage is limited to inspected
+    publication metadata. Related-media candidates were searched without asserting
+    exact formulation equivalence. All prior ingredients, quantities, preparation,
+    variant links and history remain unchanged and uncertified by this citation. No
+    new native growth assertion, concentration evidence or resolved variant.'
+- reference: doi:10.1007/BF02074874
+  title: Enhanced production of poly(3-hydroxybutyrate) by filamentation-suppressed
+    recombinantEscherichia coli in a defined medium
+  authors: Lee, Young; Lee, Sang Yup
+  year: 1996
+  notes: source_type=journal_article; discovery_mode=cited_base_protocol_or_notice;
+    accessed_on=2026-10-14; source_access=publisher_abstract_preview; doi=10.1007/BF02074874;
+    raw=references_cache/papers/primary_html/lee-1996-mr-base-20261013.html; markdown=references_cache/papers/primary_html/lee-1996-mr-base-20261013.md;
+    Source-link proof=reports/paper_citation_curation/20261014-citation-frontier-resolution/prepared-sources.json#source_owner_links/lee.  Publisher
+    abstract, strain identities; exact excerpt="XL1-Blue". Publisher abstract, PHA
+    gene source; exact excerpt="Alcaligenes eutrophus". Reported organism/group=Escherichia
+    coli XL1-Blue carrying pSYL105 or pSYL107; canonical scientific name=Escherichia
+    coli; NCBITaxon:562; actual rank=species; taxonomy_match=parent_rank_only; role=two
+    distinct recombinant derivatives; exact strain/derivative nodes unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/ecoli-species-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/ecoli-species-20261013.md.
+    Reported organism/group=Alcaligenes eutrophus; canonical scientific name=Cupriavidus
+    necator; NCBITaxon:106590; actual rank=species; taxonomy_match=verified_species_synonym;
+    role=gene source, not proof that the donor grew in these E. coli assays. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=106590&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    Citation role=cited_MR_base_protocol, from Park 2011 reference 13. Publisher title
+    joins 'recombinantEscherichia'; deposited title is retained with this formatting
+    caveat. The abstract does not enumerate the full MR/trace-stock recipe. Its recombinant
+    E. coli fed-batch outcomes do not establish Cupriavidus necator H16 growth on
+    the current fructose or nitrogen-limited owner. Existing ammonium-phosphate, hydrate,
+    citrate and trace-stock discrepancies remain unresolved. Correction/retraction
+    coverage is limited to inspected publication metadata and identified notices,
+    not an exhaustive audit. No new native growth assertion, concentration evidence
+    or resolved variant. Prior ingredients, preparation, evidence, links and history
+    are preserved, not newly certified.

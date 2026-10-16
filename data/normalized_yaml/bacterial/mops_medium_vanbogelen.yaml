@@ -142,6 +142,14 @@ curation_history:
   notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T23:14:34.949513+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:3539918
 media_term:
   preferred_term: MediaDB Medium 166
   term:
@@ -153,3 +161,38 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:3539918
+  title: Differential induction of heat shock, SOS, and oxidation stress regulons
+    and accumulation of nucleotides in Escherichia coli.
+  authors: VanBogelen RA; Kelley PM; Neidhardt FC
+  year: 1987
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:166;
+    discovery_sourceID=60; source_url=https://doi.org/10.1128/jb.169.1.26-32.1987;
+    alternate_identifier=doi:10.1128/jb.169.1.26-32.1987; alternate_identifier=PMC211729;
+    Historical MediaDB metadata retained for comparison: title="Differential induction
+    of heat shock, sos, and oxidation stress regulations and accumulation of nucleotides
+    in escherichia coli"; first_author="Vanbogelen"; year=1987. Verified PMID/DOI
+    identity is distinct from unresolved historical metadata differences. raw=references_cache/papers/PMID_3539918.xml;
+    markdown=references_cache/papers/PMID_3539918.md; PubMed abstract, stress comparison;
+    exact excerpt="heat and ethanol initiated solely a heat shock response". Reported
+    organism=Escherichia coli (E. coli); canonical scientific name=Escherichia coli;
+    NCBITaxon:562; actual rank=species; taxonomy_match=exact_species_not_strain; role=experimental
+    species; exact local formulation unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=Escherichia coli W3110; canonical scientific name=Escherichia
+    coli str. K-12 substr. W3110; NCBITaxon:316407; actual rank=no rank; taxonomy_match=canonical_name_match_secondary_strain_lead;
+    role=MediaDB strain lead, not named in abstract. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=316407&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Heat, ethanol, oxidants, antibiotic treatments and amino-acid restriction are
+    separate assays, not components to combine into one medium. The native eleven-entry
+    base and treatment doses are not specified in the abstract. Historic title wording
+    ''regulations'' differs from PubMed''s ''regulons''; identity is supported by
+    the verified PMID/DOI and authors. Local comparison: Eleven native entries include
+    glucose, thiamine, MOPS and tricine; no stress-treatment ingredient is inferred.
+    Inventory covers inspected medium-relevant passages, not the whole paper or bibliography.
+    Correction/retraction coverage is limited to inspected metadata; bounded taxonomy
+    misses do not prove absence. Original ingredients, amounts, preparation, history
+    and links are preserved, not newly certified. No new native growth assertion,
+    resolved variant or concentration evidence.'

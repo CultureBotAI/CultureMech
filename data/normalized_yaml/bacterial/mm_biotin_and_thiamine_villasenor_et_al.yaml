@@ -118,6 +118,15 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:171's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T06:01:28.154114+00:00'
+  curator: codex
+  action: CURATED_PAPER_VARIANT_EVIDENCE
+  notes: Added verified paper citation, source-defined MM variant and 7 strain-specific
+    growth observations. Preserved parent ingredients, preparation and history. Exact
+    CFN42 taxonomy and qualified parent-rank mappings for derivatives; negative and
+    mention-only results remain notes. Primary sources and Markdown archived; no export
+    or quantitative growth metric.
+  source: doi:10.1186/1471-2180-11-66
 media_term:
   preferred_term: MediaDB Medium 171
   term:
@@ -129,3 +138,259 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1186/1471-2180-11-66
+  title: Housekeeping genes essential for pantothenate biosynthesis are plasmid-encoded
+    in Rhizobium etli and Rhizobium leguminosarum.
+  authors: Villaseñor T; Brom S; Dávalos A; Lozano L; Romero D; Los Santos AG
+  year: 2011
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    MediaDB source 64, medium 171 (MM) or 172 (MMP); PMID:21463532; PMCID:PMC3082293;
+    accessed_on=2026-10-13. Bibliography verified against publisher and PubMed; no
+    notice in the archived PubMed XML. Primary HTML/Markdown: references_cache/papers/primary_html/villasenor-2011-publisher.{html,md};
+    Table 1 HTML/Markdown: villasenor-2011-table1.{html,md}; Figures 1 and 3 are archived
+    original JPEGs in the same directory and were visually inspected; PubMed XML/abstract
+    Markdown: references_cache/papers/PMID_21463532.{xml,md}. Scope: methods formulation
+    and MM/MMP growth, Figures 1/3, relevant results and Table 1. Phylogenetic comparator
+    taxa in Table 2 and cited-paper organisms are not a whole-paper organism inventory
+    or growth evidence here. The parent vitamin molar amounts and generic filtration
+    are not verified as the published recipe; source units, hydrates and preparation
+    are recorded in the variant without rewriting the parent. Negative observations
+    remain notes, never positive target_organisms: Rhizobium etli ReTV1 and ReTV2
+    failed on MM without pantothenate (Results, Functional characterization: ''were
+    unable to grow in minimal medium (MM) lacking calcium pantothenate''); Rhizobium
+    etli ReTV1-5 failed to grow without pantothenate (''no growth occurred in the
+    absence of pantothenate''); Rhizobium etli ReTV2-7, carrying pTV7, did not regain
+    growth on MM (''was unable to complement the pantothenate auxotrophy of the panB
+    mutant''). Rhizobium etli CFNX186 failed in MM in Figure 3a, but showed partial
+    rescue in MMP in Figure 3b; do not merge those outcomes. All these engineered
+    derivatives use scientific_name=Rhizobium etli; taxonomy_match=parent_rank_only;
+    parent_name=Rhizobium etli; parent_id=NCBITaxon:29449; parent_rank=species. Exact
+    engineered-derivative taxon not established by the bounded All Names search. The
+    CFN42 strain ID is not assigned to this derivative. term is omitted so the parent
+    taxon is not represented as this organism identity. lookup_on=2026-10-13; source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=347834;
+    archived NCBI XML lineage. The source has CFNX183-4 and CFN186-24 typographical
+    variants in prose; Table 1 and Figure 3 establish CFNX186-4 and CFNX186-24. An
+    unnamed Rhizobium etli CFN42 katG derivative is discussed from a prior paper;
+    parent_rank_only Rhizobium etli, NCBITaxon:29449, species, with no new growth
+    assertion here. Mention-only Table 1 organisms: reported Rhizobium etli CIAT 652
+    = NCBITaxon:491916, canonical Rhizobium etli CIAT 652, strain, exact_strain; reported
+    Rhizobium etli IE4771 = NCBITaxon:1432050, canonical Rhizobium etli bv. mimosae
+    str. IE4771, strain, exact_strain via equivalent name; reported Rhizobium etli
+    CIAT 894 maps by the archived name to NCBITaxon:2020312, canonical Rhizobium sp.
+    CIAT894, NCBI rank species (not strain); retain the historical species wording
+    separately. Reported Rhizobium etli Kim5 remains parent_rank_only Rhizobium, NCBITaxon:379,
+    genus, because no exact match was established by the bounded search and its current
+    species was not verified. Escherichia coli DH5alpha (DH5α in Table 1) = NCBITaxon:668369,
+    canonical Escherichia coli DH5[alpha], strain, synonym match; recombinant-plasmid
+    host only. Escherichia coli S17-1 is the conjugation donor, parent_rank_only Escherichia
+    coli, NCBITaxon:562, species, because the exact strain match remains unresolved.
+    Table 1 gives the DH5alpha role as "Host for recombinant plasmids"; the methods
+    donor excerpt is ''Donors ( E. coli strain S17-1) and recipients ( R. etli CFN42
+    wild type and mutant strains)''. These organisms were not assigned positive MM/MMP
+    growth from their table presence or genomic comparison. Additional taxonomy source=https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2020312,1432050,668369,491916&retmode=xml;
+    lookup_on=2026-10-13; raw XML and bounded searches in references_cache/papers/taxonomy/villasenor-2011-*.
+    The current KGX exporter loses inline variant scope; no affected export or page
+    publication is performed.'
+variants:
+- name: Villasenor 2011 MM reported formulation
+  description: Published MM formulation and staged preparation, distinct from the
+    unverified imported vitamin molarities and generic preparation. Retains exact
+    source units and chemical forms.
+  modifications:
+  - Use the reported 10 micrograms/mL biotin and 10 micrograms/mL thiamine, rather
+    than certifying the parent's 0.00409316 mM biotin and 0.033243 mM thiamine as
+    equivalent. Salt form and molecular-weight conversions are not inferred.
+  - Specify 1.49 mM CaCl2 dihydrate and 0.0184 mM FeCl3 hexahydrate; the parent instead
+    labels calcium chloride anhydrous and does not specify the iron salt hydrate.
+    Equal molar numbers do not establish identical supplied chemical forms.
+  - Retain the reported 10 mM succinate, 10 mM NH4Cl, 1.26 mM K2HPO4 and 0.83 mM MgSO4;
+    do not infer an unreported succinate counterion or MgSO4 hydrate.
+  - Adjust the succinate/NH4Cl/phosphate/MgSO4 base to pH 6.8 and sterilize it, then
+    add the separately filter-sterilized iron salt and vitamins and separately autoclaved
+    CaCl2. Do not inherit the parent's generic whole-medium 0.22-micrometer filtration;
+    the paper specifies neither the base sterilization method nor filter pore size.
+  - No calcium pantothenate is added in MM; the separate MMP formulation contains
+    that supplement.
+  purpose: Reported pantothenate biosynthesis and complementation growth assays.
+  evidence:
+  - reference: doi:10.1186/1471-2180-11-66
+    supports: SUPPORT
+    snippet: 10 μg ml -1 biotin and 10 μg ml -1 thiamine (both filter sterilized)
+    explanation: 'Locator: Methods, Bacterial strains and culture conditions. Separately
+      checked exact excerpts (HTML subscript boundaries rendered as spaces): succinate=''10
+      mM succinate as carbon source''; ammonium=''10 mM NH 4 Cl as nitrogen source'';
+      phosphate=''1.26 mM K 2 HPO 4''; magnesium=''0.83 mM MgSO 4''; iron=''0.0184
+      mM FeCl 3 6H 2 O (filter sterilized)''; calcium=''1.49 mM CaCl 2 2H 2 O (autoclaved
+      separately)''; ph=''was adjusted to pH 6.8 and sterilized.''; final_basis=''After
+      sterilization the following components were added to the final concentration
+      indicated''; pantothenate=''MMP contains the same components plus 1 μM calcium
+      pantothenate.''. Values are final-medium concentrations, not stock recipes.
+      No mass-to-molar conversion is performed; MMP 1 micromolar = 0.001 mM is the
+      only unit scaling. Methods, Bacterial strains and culture conditions: 30 C;
+      PY preculture, washing and a 24-hour MM depletion passage before the 15-hour
+      MM/MMP assay. Methods give OD600 while figures label OD620; only qualitative
+      growth is asserted, with no normalized growth metric. Antibiotic concentrations
+      are listed generally but not assigned to individual plotted assays, so no antibiotic
+      addition or antibiotic-free claim is inferred. '
+target_organisms:
+- preferred_term: Rhizobium etli CFN42
+  strain: CFN42
+  scoped_to_variant: Villasenor 2011 MM reported formulation
+  evidence:
+  - reference: doi:10.1186/1471-2180-11-66
+    supports: SUPPORT
+    snippet: Growth of the R. etli CFN42 wild-type strain
+    explanation: 'Locator: Figure 1a and Figure 3a, positive CFN42 curves and captions.
+      Table 1 identifies CFN42 as wild type. Growth is supported only for the reported
+      MM inline variant, not the imported parent recipe. Methods, Bacterial strains
+      and culture conditions: 30 C; PY preculture, washing and a 24-hour MM depletion
+      passage before the 15-hour MM/MMP assay. Methods give OD600 while figures label
+      OD620; only qualitative growth is asserted, with no normalized growth metric.
+      Antibiotic concentrations are listed generally but not assigned to individual
+      plotted assays, so no antibiotic addition or antibiotic-free claim is inferred.
+      scientific_name=Rhizobium etli; reported_strain=CFN42; taxonomy_match=exact_strain;
+      NCBITaxon:347834; canonical_label=Rhizobium etli CFN 42; rank=strain. lookup_on=2026-10-13;
+      source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=347834; archived
+      NCBI XML lineage.'
+  term:
+    id: NCBITaxon:347834
+    label: Rhizobium etli CFN 42
+- preferred_term: Rhizobium etli ReTV1-4
+  strain: ReTV1-4
+  scoped_to_variant: Villasenor 2011 MM reported formulation
+  evidence:
+  - reference: doi:10.1186/1471-2180-11-66
+    supports: SUPPORT
+    snippet: The panC mutant ReTV1 complemented with the panCB genes (ReTV1-4) recovered
+      wild type growth in MM.
+    explanation: 'Locator: Results, Functional characterization of plasmid p42f encoded
+      panCB genes. Table 1 identifies ReTV1-4 as CFN42 panC::pTV1 complemented with
+      pTV4. Growth is supported only for the reported MM inline variant, not the imported
+      parent recipe. Methods, Bacterial strains and culture conditions: 30 C; PY preculture,
+      washing and a 24-hour MM depletion passage before the 15-hour MM/MMP assay.
+      Methods give OD600 while figures label OD620; only qualitative growth is asserted,
+      with no normalized growth metric. Antibiotic concentrations are listed generally
+      but not assigned to individual plotted assays, so no antibiotic addition or
+      antibiotic-free claim is inferred. scientific_name=Rhizobium etli; taxonomy_match=parent_rank_only;
+      parent_name=Rhizobium etli; parent_id=NCBITaxon:29449; parent_rank=species.
+      Exact engineered-derivative taxon not established by the bounded All Names search.
+      The CFN42 strain ID is not assigned to this derivative. term is omitted so the
+      parent taxon is not represented as this organism identity. lookup_on=2026-10-13;
+      source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=347834; archived
+      NCBI XML lineage.'
+- preferred_term: Rhizobium etli ReTV2-4
+  strain: ReTV2-4
+  scoped_to_variant: Villasenor 2011 MM reported formulation
+  evidence:
+  - reference: doi:10.1186/1471-2180-11-66
+    supports: SUPPORT
+    snippet: wild type growth of panB mutant ReTV2 was recovered by complementation
+    explanation: 'Locator: Results, Functional characterization; the sentence ends
+      with strains ReTV2-4 and ReTV2-6 respectively. Table 1 identifies ReTV2-4 as
+      CFN42 panB::pTV2 complemented with pTV4. Growth is supported only for the reported
+      MM inline variant, not the imported parent recipe. Methods, Bacterial strains
+      and culture conditions: 30 C; PY preculture, washing and a 24-hour MM depletion
+      passage before the 15-hour MM/MMP assay. Methods give OD600 while figures label
+      OD620; only qualitative growth is asserted, with no normalized growth metric.
+      Antibiotic concentrations are listed generally but not assigned to individual
+      plotted assays, so no antibiotic addition or antibiotic-free claim is inferred.
+      scientific_name=Rhizobium etli; taxonomy_match=parent_rank_only; parent_name=Rhizobium
+      etli; parent_id=NCBITaxon:29449; parent_rank=species. Exact engineered-derivative
+      taxon not established by the bounded All Names search. The CFN42 strain ID is
+      not assigned to this derivative. term is omitted so the parent taxon is not
+      represented as this organism identity. lookup_on=2026-10-13; source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=347834;
+      archived NCBI XML lineage.'
+- preferred_term: Rhizobium etli ReTV2-6
+  strain: ReTV2-6
+  scoped_to_variant: Villasenor 2011 MM reported formulation
+  evidence:
+  - reference: doi:10.1186/1471-2180-11-66
+    supports: SUPPORT
+    snippet: wild type growth of panB mutant ReTV2 was recovered by complementation
+    explanation: 'Locator: Results, Functional characterization; the sentence ends
+      with strains ReTV2-4 and ReTV2-6 respectively. Table 1 identifies ReTV2-6 as
+      CFN42 panB::pTV2 complemented with pTV6. Growth is supported only for the reported
+      MM inline variant, not the imported parent recipe. Methods, Bacterial strains
+      and culture conditions: 30 C; PY preculture, washing and a 24-hour MM depletion
+      passage before the 15-hour MM/MMP assay. Methods give OD600 while figures label
+      OD620; only qualitative growth is asserted, with no normalized growth metric.
+      Antibiotic concentrations are listed generally but not assigned to individual
+      plotted assays, so no antibiotic addition or antibiotic-free claim is inferred.
+      scientific_name=Rhizobium etli; taxonomy_match=parent_rank_only; parent_name=Rhizobium
+      etli; parent_id=NCBITaxon:29449; parent_rank=species. Exact engineered-derivative
+      taxon not established by the bounded All Names search. The CFN42 strain ID is
+      not assigned to this derivative. term is omitted so the parent taxon is not
+      represented as this organism identity. lookup_on=2026-10-13; source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=347834;
+      archived NCBI XML lineage.'
+- preferred_term: Rhizobium etli ReTV3
+  strain: ReTV3
+  scoped_to_variant: Villasenor 2011 MM reported formulation
+  evidence:
+  - reference: doi:10.1186/1471-2180-11-66
+    supports: SUPPORT
+    snippet: was able to grow in MM without exogenous arginine at the same rate as
+      parental strain CFN42
+    explanation: 'Locator: Results, The panCB genes do not fully complement..., final
+      argE paragraph; authors explicitly report data not shown. Table 1 identifies
+      ReTV3 as CFN42 argE::pTV3. Growth is supported only for the reported MM inline
+      variant, not the imported parent recipe. Methods, Bacterial strains and culture
+      conditions: 30 C; PY preculture, washing and a 24-hour MM depletion passage
+      before the 15-hour MM/MMP assay. Methods give OD600 while figures label OD620;
+      only qualitative growth is asserted, with no normalized growth metric. Antibiotic
+      concentrations are listed generally but not assigned to individual plotted assays,
+      so no antibiotic addition or antibiotic-free claim is inferred. scientific_name=Rhizobium
+      etli; taxonomy_match=parent_rank_only; parent_name=Rhizobium etli; parent_id=NCBITaxon:29449;
+      parent_rank=species. Exact engineered-derivative taxon not established by the
+      bounded All Names search. The CFN42 strain ID is not assigned to this derivative.
+      term is omitted so the parent taxon is not represented as this organism identity.
+      lookup_on=2026-10-13; source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=347834;
+      archived NCBI XML lineage.'
+- preferred_term: Rhizobium etli CFNX186-4
+  strain: CFNX186-4
+  scoped_to_variant: Villasenor 2011 MM reported formulation
+  evidence:
+  - reference: doi:10.1186/1471-2180-11-66
+    supports: SUPPORT
+    snippet: The growth of the transconjugant (CFNX186-4) after 15 hours of culture
+      in MM was only 50% that of the WT strain
+    explanation: 'Locator: Results, The panCB genes do not fully complement... and
+      Figure 3a; partial growth, not wild-type recovery. Table 1 identifies CFNX186-4
+      as the p42f-cured derivative complemented with pTV4. Growth is supported only
+      for the reported MM inline variant, not the imported parent recipe. Methods,
+      Bacterial strains and culture conditions: 30 C; PY preculture, washing and a
+      24-hour MM depletion passage before the 15-hour MM/MMP assay. Methods give OD600
+      while figures label OD620; only qualitative growth is asserted, with no normalized
+      growth metric. Antibiotic concentrations are listed generally but not assigned
+      to individual plotted assays, so no antibiotic addition or antibiotic-free claim
+      is inferred. scientific_name=Rhizobium etli; taxonomy_match=parent_rank_only;
+      parent_name=Rhizobium etli; parent_id=NCBITaxon:29449; parent_rank=species.
+      Exact engineered-derivative taxon not established by the bounded All Names search.
+      The CFN42 strain ID is not assigned to this derivative. term is omitted so the
+      parent taxon is not represented as this organism identity. lookup_on=2026-10-13;
+      source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=347834; archived
+      NCBI XML lineage.'
+- preferred_term: Rhizobium etli CFNX186-24
+  strain: CFNX186-24
+  scoped_to_variant: Villasenor 2011 MM reported formulation
+  evidence:
+  - reference: doi:10.1186/1471-2180-11-66
+    supports: SUPPORT
+    snippet: pCos24 was introduced into CFNX186 and the resulting transconjugant (CFNX186-24)
+      grown in MM.
+    explanation: 'Locator: Results, The panCB genes do not fully complement... and
+      Figure 3a; partial growth, not wild-type recovery. Table 1 identifies CFNX186-24
+      as the p42f-cured derivative complemented with pCos24. Growth is supported only
+      for the reported MM inline variant, not the imported parent recipe. Methods,
+      Bacterial strains and culture conditions: 30 C; PY preculture, washing and a
+      24-hour MM depletion passage before the 15-hour MM/MMP assay. Methods give OD600
+      while figures label OD620; only qualitative growth is asserted, with no normalized
+      growth metric. Antibiotic concentrations are listed generally but not assigned
+      to individual plotted assays, so no antibiotic addition or antibiotic-free claim
+      is inferred. scientific_name=Rhizobium etli; taxonomy_match=parent_rank_only;
+      parent_name=Rhizobium etli; parent_id=NCBITaxon:29449; parent_rank=species.
+      Exact engineered-derivative taxon not established by the bounded All Names search.
+      The CFN42 strain ID is not assigned to this derivative. term is omitted so the
+      parent taxon is not represented as this organism identity. lookup_on=2026-10-13;
+      source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=347834; archived
+      NCBI XML lineage.'

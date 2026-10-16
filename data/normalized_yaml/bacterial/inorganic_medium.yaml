@@ -153,6 +153,14 @@ curation_history:
   notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T17:38:49.917565+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography, raw/Markdown source provenance, exact
+    excerpts and qualified scientific-name/NCBI mappings. Preserved recipe, assay
+    and taxonomy conflicts. Existing fields, variant links and history unchanged;
+    no new native growth, concentration evidence or resolved variant.
+  source: PMID:11271424
 media_term:
   preferred_term: MediaDB Medium 226
   term:
@@ -171,3 +179,42 @@ variant_children:
   name: fex5_medium
   notes: Ferrous sulfate increased from 0.05 mM to 0.25 mM while the inorganic medium
     base remains unchanged.
+references:
+- reference: PMID:11271424
+  title: Nitrate respiratory metabolism in an obligately autotrophic hydrogen-oxidizing
+    bacterium, Hydrogenobacter thermophilus TK-6.
+  authors: Suzuki M; Cui ZJ; Ishii M; Igarashi Y
+  year: 2001
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=PubMed_abstract_and_publisher_subscription_preview;
+    owner=MEDIADB:226; discovery_sourceID=83; source_url=https://doi.org/10.1007/s002030000230;
+    alternate_identifier=doi:10.1007/s002030000230; raw=references_cache/papers/PMID_11271424.xml;
+    markdown=references_cache/papers/PMID_11271424.md; PubMed Abstract, respiratory
+    conditions; exact excerpt="grow anaerobically on nitrate as an electron acceptor".
+    PubMed Abstract, comparator protein; exact excerpt="nitrite reductase from Pseudomonas
+    aeruginosa". Formulation_unresolved: The inorganic/Fex5 owners already have reciprocal
+    parent/child CONCENTRATION_VARIANT links and differ in ferrous-sulfate amount.
+    Preserve those links. Abstract nitrate/H2 anaerobic experiments cannot be assigned
+    to local 13-ingredient recipes that do not specify nitrate or gas composition;
+    no gas amount or missing nutrient is invented. Abstract does not enumerate the
+    two recipes or certify the iron difference. Existing variant relationship is retained,
+    not newly scientifically endorsed. Reported organism=Hydrogenobacter thermophilus
+    TK-6; canonical scientific name=Hydrogenobacter thermophilus TK-6; NCBITaxon:608538;
+    actual rank=strain; taxonomy_match=exact_strain; role=study strain; nitrate/H2
+    assay not assigned to these owners. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=608538&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    Reported organism=Pseudomonas aeruginosa; canonical scientific name=Pseudomonas
+    aeruginosa; NCBITaxon:287; actual rank=species; taxonomy_match=species_name; role=comparator
+    protein/antibody, not a cultivation target. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=287&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    Publisher HTML is an abstract/subscription preview, not full methods. Existing
+    reciprocal inorganic/Fex5 links are unchanged, not newly certified. Bounded lookup
+    misses do not prove taxon absence. Organism inventory covers inspected medium-relevant
+    passages, not the entire paper. Images and supplements have not been verified.
+    Correction/retraction coverage is limited to inspected publication metadata. Related-media
+    candidates were searched without asserting exact formulation equivalence. All
+    prior ingredients, quantities, preparation, variant links and history remain unchanged
+    and uncertified by this citation. No new native growth assertion, concentration
+    evidence or resolved variant.'

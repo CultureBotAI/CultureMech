@@ -103,6 +103,14 @@ curation_history:
   notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T22:34:41.350925+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:11932248
 media_term:
   preferred_term: MediaDB Medium 146
   term:
@@ -114,3 +122,43 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:11932248
+  title: Engineering a reduced Escherichia coli genome.
+  authors: Kolisnychenko V; Plunkett G 3rd; Herring CD; Fehér T; Pósfai J; Blattner
+    FR; Pósfai G
+  year: 2002
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:146;
+    discovery_sourceID=48; source_url=https://doi.org/10.1101/gr.217202; alternate_identifier=doi:10.1101/gr.217202;
+    alternate_identifier=PMC187512; raw=references_cache/papers/PMID_11932248.xml;
+    markdown=references_cache/papers/PMID_11932248.md; PubMed abstract, minimal-medium
+    growth sentence; exact excerpt="growth rate on minimal medium". Reported organism=Escherichia
+    coli (E. coli); canonical scientific name=Escherichia coli; NCBITaxon:562; actual
+    rank=species; taxonomy_match=exact_species_not_strain; role=experimental species;
+    local formulation unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=human; canonical scientific name=Homo sapiens; NCBITaxon:9606;
+    actual rank=species; taxonomy_match=exact_species; role=Homo sapiens genome-sequencing
+    background only. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=9606&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli MG1655; canonical scientific name=Escherichia
+    coli str. K-12 substr. MG1655; NCBITaxon:511145; actual rank=no rank; taxonomy_match=canonical_name_match_secondary_strain_lead;
+    role=MediaDB lead not named in inspected abstract. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=511145&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli MDS12; canonical scientific name=Escherichia
+    coli; NCBITaxon:562; actual rank=species; taxonomy_match=parent_rank_only; role=MediaDB
+    reduced-genome strain lead; exact node unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    The abstract reports reduced-genome growth on minimal medium, without the complete
+    M9 formula or named experimental strains. Cryptic prophages are unnamed background
+    entities, not taxonomically resolved medium targets. PubMed raw AuthorList supplies
+    Plunkett G 3rd; the cached simplified author display omitted the suffix, which
+    is retained in this citation. Local comparison: Seven native entries include 22.2024
+    mM glucose, 47.7434 mM dibasic sodium phosphate and 18.6947 mM ammonium chloride.
+    Ingredient-set matches to other M9 records have different concentrations; no merge
+    or cross-owner evidence transfer. Inventory covers inspected medium-relevant passages,
+    not the whole paper or bibliography. Correction/retraction coverage is limited
+    to inspected metadata; bounded taxonomy misses do not prove absence. Original
+    ingredients, amounts, preparation, history and links are preserved, not newly
+    certified. No new native growth assertion, resolved variant or concentration evidence.'

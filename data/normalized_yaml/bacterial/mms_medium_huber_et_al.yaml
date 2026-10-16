@@ -241,6 +241,14 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:144's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T20:04:31.598558+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, source/Markdown archives, short excerpts and
+    qualified scientific-name/NCBI taxonomy notes. Preserved all recipe values, evidence,
+    history and variant links. Formulation and historical identity limitations remain
+    explicit; no new growth or concentration claim.
+  source: doi:10.1007/bf00409880
 media_term:
   preferred_term: MediaDB Medium 144
   term:
@@ -252,3 +260,44 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1007/bf00409880
+  title: Thermotoga maritima sp. nov. represents a new genus of unique extremely thermophilic
+    eubacteria growing up to 90°C
+  authors: Huber, Robert; Langworthy, Thomas A.; König, Helmut; Thomm, Michael; Woese,
+    Carl R.; Sleytr, Uwe B.; Stetter, Karl O.
+  year: 1986
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=publisher_abstract_or_summary_preview; owner=MEDIADB:144;
+    discovery_sourceID=46; source_url=https://doi.org/10.1007/bf00409880; raw=references_cache/papers/primary_html/source-46-publisher-20261013.html;
+    markdown=references_cache/papers/primary_html/source-46-publisher-20261013.md;
+    Abstract: isolate description; exact excerpt="Isolate MSB8 is described as Thermotoga
+    maritima". Abstract: isolate description; exact excerpt="new genus Thermotoga".
+    Reported organism=Thermotoga maritima MSB8; canonical scientific name=Thermotoga
+    maritima MSB8; NCBITaxon:243274; actual rank=strain; taxonomy_match=verified_named_strain;
+    role=isolate explicitly described. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=243274&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    Reported organism=Thermotoga maritima; canonical scientific name=Thermotoga maritima;
+    NCBITaxon:2336; actual rank=species; taxonomy_match=verified_species_parent; role=species
+    description. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2336&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    Reported organism=Thermotoga; canonical scientific name=Thermotoga; NCBITaxon:2335;
+    actual rank=genus; taxonomy_match=verified_genus; role=genus description. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2335&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    The abstract identifies MSB8, not a complete quantitative MMS recipe. The MediaDB
+    join is bibliography provenance, not certification of the local ingredient identities,
+    preparation, or amounts. Publisher title and author characters are used where
+    Crossref has replacement characters; this is a metadata encoding disposition.
+    Local magnesium chloride is already linked to a hexahydrate term. Owner=CultureMech:007034;
+    MediaDB medium=144; inspected local ingredient entries=22. No new resolved inline/full
+    variant is assigned while the study-to-local-formulation mapping remains unresolved.
+    Inventory covers the selected medium-relevant identity passages, not every organism
+    in the full paper. Correction/retraction coverage is limited to inspected publication
+    metadata. Bounded lookup misses do not prove absence. All original ingredients,
+    amounts, preparation, evidence, history and variant links are preserved; none
+    is newly certified. No new native growth assertion, concentration evidence or
+    resolved variant.'

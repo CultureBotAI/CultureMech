@@ -100,6 +100,14 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T08:37:27.779824+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_FORMULATION_LIMITS
+  notes: Added verified paper bibliography and archived source/Markdown links. Recorded
+    exact formulation discrepancies or abstract-only limitations and verified ADP1
+    taxonomy in citation notes. Preserved parent ingredients, preparation and prior
+    history; no resolved variant or growth association asserted.
+  source: PMID:11208784
 media_term:
   preferred_term: MediaDB Medium 27
   term:
@@ -111,3 +119,35 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:11208784
+  title: Effects exerted by transcriptional regulator PcaU from Acinetobacter sp.
+    strain ADP1.
+  authors: Trautwein G; Gerischer U
+  year: 2001
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=7; medID=27. Publication identity was
+    verified against archived PubMed metadata and the exact MediaDB source/medium
+    joins. Database growth rows are discovery provenance, not independently verified
+    growth evidence. The generic Mazumdar et al. import citation remains historical
+    database provenance, not the specific experimental source. No correction/retraction
+    notice appears in the inspected PubMed entry; this is not an exhaustive notice
+    audit. doi:10.1128/JB.183.3.873-881.2001; PMC94953. PubMed XML/abstract=references_cache/papers/PMID_11208784.{xml,md};
+    PMC abstract-only XML/Markdown=references_cache/papers/primary_xml/trautwein-2001-pmc.xml
+    and trautwein-2001-pmc.v2.md. Access_scope=abstract_only. Exact Abstract organism
+    excerpt='Protocatechuate degradation is accomplished in a multistep inducible
+    catabolic pathway in Acinetobacter sp. strain ADP1.'. Reported name Acinetobacter
+    sp. strain ADP1 matches the NCBI synonym Acinetobacter sp. ADP1. Scientific name=Acinetobacter
+    baylyi ADP1; NCBITaxon:62977; canonical label=Acinetobacter baylyi ADP1; rank=strain;
+    taxonomy_match=exact_ADP1_node. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. The abstract concerns PcaU-dependent transcription
+    and induction; it does not enumerate this record's formulation or establish a
+    strain-specific growth result on it. Its inducer-response threshold is not the
+    bulk concentration of protocatechuate in this medium. Formulation_match=unresolved;
+    variant_disposition=deferred_in_citation_notes. Exact ingredient identities, amounts,
+    preparation and source-specific derivative strains await full-text verification.
+    No concentrations, growth metrics, temperature, variants or target organisms are
+    added from database-only observations. Organism inventory is limited to the abstract's
+    ADP1 mention, not the inaccessible full paper.

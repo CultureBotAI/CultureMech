@@ -124,6 +124,14 @@ curation_history:
   notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T20:04:31.598558+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, source/Markdown archives, short excerpts and
+    qualified scientific-name/NCBI taxonomy notes. Preserved all recipe values, evidence,
+    history and variant links. Formulation and historical identity limitations remain
+    explicit; no new growth or concentration claim.
+  source: doi:10.1111/j.1745-4581.2004.tb00062.x
 media_term:
   preferred_term: MediaDB Medium 248
   term:
@@ -147,3 +155,41 @@ variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
 - Zinc sulfate concentration increased from 23.3019 mM to 116.51 mM; all other parsed
   ingredient concentrations match the parent.
+references:
+- reference: doi:10.1111/j.1745-4581.2004.tb00062.x
+  title: INFLUENCE OF OXIDATION‐REDUCTION REDUCTANTS ON SALMONELLA TYPHIMURIUM GROWTH
+    RATES AFTER INITIAL pH ADJUSTMENT AND ZINC COMPOUND ADDITION
+  authors: S.Y. PARK; C.L. WOODWARD; S.G. BIRKHOLD; L.F. KUBENA; D.J. NISBET; S.C.
+    RICKE
+  year: 2004
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=publisher_deposited_Crossref_abstract; owner=MEDIADB:248;
+    discovery_sourceID=85; source_url=https://doi.org/10.1111/j.1745-4581.2004.tb00062.x;
+    raw=references_cache/papers/crossref/primary-source-85-20261013.json; markdown=references_cache/papers/crossref/primary-source-85-20261013.md;
+    Abstract: organism and medium identity; exact excerpt="S. typhimurium poultry
+    isolate". Abstract: organism and medium identity; exact excerpt="M9 minimal medium".
+    Reported organism=Salmonella typhimurium, unnamed poultry isolate; canonical scientific
+    name=Salmonella enterica subsp. enterica serovar Typhimurium; NCBITaxon:90371;
+    actual rank=no rank; taxonomy_match=verified_synonym_at_serovar_node_not_exact_isolate;
+    role=study organism. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=90371&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    Reported organism=parent of reported S. typhimurium isolate; canonical scientific
+    name=Salmonella enterica; NCBITaxon:28901; actual rank=species; taxonomy_match=parent_rank_only;
+    role=species parent, not isolate identity. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=28901&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    The abstract and MediaDB source join establish bibliography relevance, not equivalence
+    of each local formulation. M9 and a separate rich-medium context must not be conflated.
+    Full methods were not accessible; individual recipe assignments remain unresolved.
+    Historical title differs in capitalization/hyphen typography only. No cultivation
+    parameters, stress-tolerance or performance claims are imported. Owner=CultureMech:007145;
+    MediaDB medium=248; inspected local ingredient entries=9. Existing parent link
+    CultureMech:007144 is preserved, not newly certified by the abstract. No new resolved
+    inline/full variant is assigned while the study-to-local-formulation mapping remains
+    unresolved. Inventory covers the selected medium-relevant identity passages, not
+    every organism in the full paper. Correction/retraction coverage is limited to
+    inspected publication metadata. Bounded lookup misses do not prove absence. All
+    original ingredients, amounts, preparation, evidence, history and variant links
+    are preserved; none is newly certified. No new native growth assertion, concentration
+    evidence or resolved variant.'

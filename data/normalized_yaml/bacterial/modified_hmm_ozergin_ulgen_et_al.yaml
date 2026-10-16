@@ -183,6 +183,15 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:257's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T14:29:43.219181+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography with archived primary abstract and Markdown,
+    exact abstract excerpts, scientific names and qualified taxonomy. Kept OCR/body
+    observations provisional and recipe differences unresolved; preserved all amounts,
+    links, preparation and history. No new native growth, concentration evidence or
+    resolved variant.
+  source: doi:10.1002/(SICI)1097-4660(1998110)73:3<243::AID-JCTB957>3.0.CO;2-5
 media_term:
   preferred_term: MediaDB Medium 257
   term:
@@ -195,3 +204,38 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+references:
+- reference: doi:10.1002/(SICI)1097-4660(1998110)73:3<243::AID-JCTB957>3.0.CO;2-5
+  title: Oxygen transfer and uptake in Streptomyces coelicolor A3(2) culture in a
+    batch bioreactor
+  authors: Kutlu Ozergin-Ulgen; Ferda Mavituna
+  year: 1998
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; owner=MEDIADB:257; discovery_sourceID=89; source_access=author_institution_abstract_only.
+    Author-institution abstract; exact excerpt='Streptomyces coelicolor A3(2)'. Author-institution
+    abstract; exact excerpt='defined and complex media'. Reported organism=Streptomyces
+    coelicolor A3(2); canonical scientific name=Streptomyces coelicolor A3(2); NCBITaxon:100226;
+    actual rank=strain; taxonomy_match=exact strain; role=named abstract study strain;
+    exact Modified HMM recipe remains unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=100226&retmode=xml.
+    This unlinked imported Modified HMM owner differs from the local Hobbs series,
+    including glucose, zinc sulfate and lack of a Propenoate entry; these are local
+    comparisons, not verified study modifications. The abstract distinguishes defined
+    and complex media but neither names nor enumerates the exact imported Modified
+    HMM. No resolved HMM variant or new parent link is inferred. Oxygen transfer,
+    oxygen uptake and maintenance demand are not growth rates or ingredient concentrations
+    and are not attached as metrics. Print issue and Crossref date are November 1998;
+    the publisher labels first online publication 26 March 1999. The bibliography
+    uses the print year, retaining both dates. Crossref lacks a title space at inStreptomyces;
+    publisher and author-institution title separate those words. Author-institution
+    first-author rendering differs from Kutlu Ozergin-Ulgen in publisher/Crossref;
+    source versions retained. The author-institution page repeats its abstract with
+    minor typography differences; raw HTML and Markdown preserve both copies. raw_abstract=references_cache/papers/primary_html/ozergin-ulgen-1998-institution-abstract.html;
+    source_markdown=references_cache/papers/primary_html/ozergin-ulgen-1998-institution-abstract.md;
+    metadata=references_cache/papers/crossref/ozergin-ulgen-1998.json. PMID was not
+    resolved by bounded lookup, not established absent. Correction/retraction coverage
+    is limited to inspected metadata, not an exhaustive audit. All original ingredients,
+    amounts, preparation, links and history preserved, not newly certified. No new
+    concentration evidence, native growth association, quantitative metric or resolved
+    variant. Organism inventory is limited to inspected medium-relevant passages;
+    source-extraction uncertainty is retained. Taxonomy archives=references_cache/papers/taxonomy/hodgson-streptomyces-20261013.*
+    and hobbs-streptomyces-genus-20261013.*.

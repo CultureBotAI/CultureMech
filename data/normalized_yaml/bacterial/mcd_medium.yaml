@@ -447,6 +447,14 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 2 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-10-13T13:47:14.449687+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper citation with archived primary abstract and Markdown,
+    exact excerpts, qualified organism taxonomy and unresolved formulation details.
+    Preserved all amounts, existing links, preparation and history; no new growth,
+    concentration evidence or resolved variant.
+  source: doi:10.1111/j.1365-2672.1995.tb03131.x
 media_term:
   preferred_term: MediaDB Medium 407
   term:
@@ -458,3 +466,45 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1111/j.1365-2672.1995.tb03131.x
+  title: Rational development of a simple synthetic medium for the sustained growth
+    of Lactococcus lactis
+  authors: M. Cocaign‐Bousquet; C. Garrigues; L. Novak; N.D. Lindley; P. Loublere
+  year: 1995
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; owner=MEDIADB:407; discovery_sourceID=129; source_access=publisher_deposited_Crossref_abstract_only.
+    Publication identity verified against the historical source title/year/first author
+    and primary metadata. The imported MCD owner contains 46 ingredients; the abstract
+    does not provide its full composition or label. Historical MediaDB organism joins
+    are discovery leads, not independently verified native cultivation assertions.
+    Publisher-deposited Crossref abstract; exact excerpt=''NCDO 2118''. Reported organism=Lactococcus
+    lactis subsp. lactis NCDO 2118; canonical scientific name=Lactococcus lactis subsp.
+    lactis NCDO 2118; NCBITaxon:1117941; actual rank=strain; taxonomy_match=exact
+    strain; role=vegetable-origin study strain; distinguish omission screening from
+    sustained minimal growth. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1117941&retmode=xml.
+    Publisher-deposited Crossref abstract; exact excerpt=''IL 1403''. Reported organism=Lactococcus
+    lactis subsp. lactis IL 1403; canonical scientific name=Lactococcus lactis subsp.
+    lactis Il1403; NCBITaxon:272623; actual rank=strain; taxonomy_match=exact strain;
+    role=dairy-origin study strain; current NCBI label uses Il1403. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=272623&retmode=xml.
+    Publisher-deposited Crossref abstract; exact excerpt=''using the single omission
+    technique''. Publisher-deposited Crossref abstract; exact excerpt=''partly dependent
+    upon the medium composition''. Single-omission prototrophy is not evidence for
+    indefinite amino-acid-free cultivation. Sustained minimal growth of NCDO 2118
+    required six amino acids; IL 1403 required three additional amino acids in that
+    study. The nitrogen atmosphere comparison is not a universal cultivation requirement.
+    Publisher-deposited Crossref abstract; exact excerpt=''removal of ammonium salt''.
+    This is an omission experiment, not authorization to delete ammonium from the
+    parent. No exact MS formulation or resolved variant is inferred. Author spelling
+    remains disputed: publisher/Crossref Loublere versus Loubiere in the later Nordkvist
+    bibliography; the entry retains the publisher-deposited spelling rather than silently
+    correcting it. PMID not resolved by bounded lookup, not established absent. Raw
+    publisher deposit=references_cache/papers/primary_abstracts/cocaign-bousquet-1995-crossref.json;
+    source_markdown=references_cache/papers/primary_abstracts/cocaign-bousquet-1995-crossref.md.
+    All original ingredients, amounts, preparation and parent/child links preserved,
+    not newly certified by this abstract. No new positive native growth association,
+    quantitative metric or resolved variant. Organism inventory is limited to the
+    inspected abstract''s medium-relevant passages. Taxonomy alone does not prove
+    cultivation. Taxonomy archives=references_cache/papers/taxonomy/holland-fang-cocaign-20261013.*
+    and fang-w23-20261013.*.'

@@ -67,9 +67,64 @@ curation_history:
   source: CCAP:JM; https://www.ccap.ac.uk/wp-content/uploads/MR_JM.pdf
   notes: Copied the CCAP source identity from references and the original ccap-import
     event into the structured sources slot recognized by review scoring.
+- timestamp: '2026-10-14T03:31:53.109378+00:00'
+  curator: codex
+  action: ADDED_EMAMI_2015_CITATION_AND_STUDY_VARIANTS
+  notes: Added archived paper metadata, exact cultivation excerpts and assay-specific
+    scientific names with verified NCBI name/rank mappings. Stored supported acid
+    or f/2 supplement differences as bounded inline variants where applicable; HCl
+    dose is unquantified, other study concentrations are directly reported and not
+    converted. Complete study formulas remain unresolved. Preserved all existing ingredients,
+    stocks, concentrations, physical state, evidence and links. No new native growth
+    assertion, record merge or publication.
+  source: doi:10.1038/srep10036; PMID:25963242
 references:
 - reference: CCAP:JM
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_JM.pdf
+- reference: doi:10.1038/srep10036
+  title: 'Proteomic-based biotyping reveals hidden diversity within a microalgae culture
+    collection: An example using Dunaliella.'
+  authors: Emami K; Hack E; Nelson A; Brain CM; Lyne FM; Mesbahi E; Day JG; Caldwell
+    GS
+  year: 2015
+  notes: 'source_type=journal_article; discovery_mode=catalog_page; discovery_context=CCAP
+    19/18 bibliography followed by full-text methods inspection; accessed_on=2026-10-14;
+    PMID:25963242; PMCID:PMC4650328; source_url=https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4650328/fullTextXML;
+    raw_archive=references_cache/papers/primary_xml/ccap-19-18-PMC4650328-20261014.xml;
+    markdown_archive=references_cache/papers/primary_xml/ccap-19-18-PMC4650328-20261014.md;
+    access_scope=full JATS article, Table 1 and bounded cultivation assays. Publication
+    identity, eight authors and 2015 year verified against archived PubMed XML and
+    JATS; publisher article also inspected. Archived PubMed notice list is empty;
+    not a claim of exhaustive notice discovery. locator=Methods / Microalgae and cyanobacteria
+    strains and culture conditions; exact excerpt="Chlorella vulgaris was cultured
+    in 250 mL Erlenmeyer flasks using Jaworski’s medium made with sterilised deionised
+    water."; Reported scientific name=Chlorella vulgaris; strain=CCAP 211/63; canonical
+    scientific name=Chlorella vulgaris; NCBITaxon:3077; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3077; scope=Jaworski''s
+    medium with sterilised deionised water. Only the Jaworski organism passage is
+    inventoried for this owner. The paper does not restate the entire recipe, so exact
+    equivalence to the local stock/ingredient encoding is unresolved. No explicit
+    ingredient modification is supported for a new variant. The flask culture and
+    OD context is not evidence for the optional agar formulation; physical-state equivalence
+    is not assigned. AJS is a separate acidified constituent-medium mixture and is
+    not this study''s Chlorella formulation. The exact full-name strain query returned
+    no result, but NCBITaxon:3077 includes the alternative label Chlorella sp. CCAP
+    211/63; this authority-level name context does not independently reidentify the
+    experimental culture. Taxonomy checked against NCBI ESearch/EFetch archived 2026-10-14
+    at references_cache/papers/taxonomy/emami-2015-20261014.xml and references_cache/papers/taxonomy/emami-2015-strains-20261014.xml.
+    Table 1 gives names assigned by depositors; the study questions the reliability
+    of those historical species assignments. Name/rank matching is not independent
+    biological reidentification of a culture. Species-level mappings do not prove
+    an exact strain taxon. This is a medium-use citation and bounded study formulation,
+    not certification of every amount, stock, chemical form, preparation step or condition
+    in the canonical import. Current CCAP sources distinguish stock batches from additions
+    to final medium; flattened local entries cannot be treated as the paper''s measured
+    final concentrations. The current JM/f2 PDFs are revision 002, reviewed 29 May
+    2026, not proof of the exact 2015 formulation; the inspected AJS PDF gives no
+    comparable revision date. Parent amounts and physical state remain unchanged.
+    No new target_organisms or growth metrics are added: exact full-formula equivalence
+    is unresolved, strain/assay scopes must not be collapsed, and the current KGX
+    growth exporter ignores scoped_to_variant. No affected growth edge is exported.'
 ingredients:
 - preferred_term: Na EDTA
   term:

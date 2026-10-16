@@ -103,6 +103,14 @@ curation_history:
   notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T19:06:34.475226+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, archived source/Markdown provenance, short excerpts
+    and qualified scientific-name/NCBI mapping notes. Preserved all existing recipe
+    values, evidence, history and variant links. Exact formulation and study-strain/assay
+    assignments remain qualified; no new native growth or concentration claim.
+  source: PMID:21296962
 media_term:
   preferred_term: MediaDB Medium 39
   term:
@@ -114,3 +122,96 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:21296962
+  title: An experimentally validated genome-scale metabolic reconstruction of Klebsiella
+    pneumoniae MGH 78578, iYL1228.
+  authors: Liao YC; Huang TW; Chen FC; Charusanti P; Hong JS; Chang HY; Tsai SF; Palsson
+    BO; Hsiung CA
+  year: 2011
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract_and_PMC_HTML_selected_identity_and_assay_passages;
+    owner=MEDIADB:39; discovery_sourceID=17; source_url=https://doi.org/10.1128/JB.01218-10;
+    alternate_identifier=doi:10.1128/JB.01218-10; alternate_identifier=PMC3067640;
+    raw=references_cache/papers/PMID_21296962.xml; markdown=references_cache/papers/PMID_21296962.md;
+    full_raw=references_cache/papers/primary_html/pmid-21296962-20261013.html; full_markdown=references_cache/papers/primary_html/pmid-21296962-20261013.md;
+    Abstract: study identity; exact excerpt="strain MGH 78578". Abstract: model role;
+    exact excerpt="in silico platform". Reported organism=Klebsiella pneumoniae MGH
+    78578 / ATCC 700721; canonical scientific name=Klebsiella pneumoniae subsp. pneumoniae
+    MGH 78578; NCBITaxon:272620; actual rank=strain; taxonomy_match=verified strain
+    synonym; role=named study organism; no native cultivation assertion added. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=272620&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-study-candidates-20261013.md.
+    Reported organism=Klebsiella pneumoniae; canonical scientific name=Klebsiella
+    pneumoniae; NCBITaxon:573; actual rank=species; taxonomy_match=exact species name;
+    role=general study/background name; not every strain. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=573&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-study-candidates-20261013.md.
+    Reported organism=Escherichia coli K-12 MG1655; canonical scientific name=Escherichia
+    coli str. K-12 substr. MG1655; NCBITaxon:511145; actual rank=no rank; taxonomy_match=verified
+    named comparator; role=genome/model and comparative-data role, not this record''s
+    growth target. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=511145&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-study-candidates-20261013.md.
+    Reported organism=Escherichia coli K-12; canonical scientific name=Escherichia
+    coli K-12; NCBITaxon:83333; actual rank=strain; taxonomy_match=exact reported
+    K-12 name; role=background network model. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=83333&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-study-candidates-20261013.md.
+    Reported organism=Salmonella enterica serovar Typhimurium LT2; canonical scientific
+    name=Salmonella enterica subsp. enterica serovar Typhimurium str. LT2; NCBITaxon:99287;
+    actual rank=strain; taxonomy_match=verified strain synonym; role=comparison organism,
+    not a new medium association. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=99287&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-comparator-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-comparator-candidates-20261013.md.
+    Reported organism=Salmonella spp.; separately, the paper''s SLT2 spelling; canonical
+    scientific name=Salmonella; NCBITaxon:590; actual rank=genus; taxonomy_match=parent_rank_only
+    for unresolved SLT2; genus-level match for spp.; role=background/comparator mentions;
+    SLT2 not silently equated to LT2. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=590&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-comparator-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-comparator-candidates-20261013.md.
+    Reported organism=Staphylococcus aureus; canonical scientific name=Staphylococcus
+    aureus; NCBITaxon:1280; actual rank=species; taxonomy_match=exact species name;
+    role=background model example. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1280&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-additional-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-additional-candidates-20261013.md.
+    Reported organism=historical Klebsiella pneumoniae KP342; canonical scientific
+    name=Klebsiella; NCBITaxon:570; actual rank=genus; taxonomy_match=parent_rank_only;
+    role=genome-comparison mention; exact modern strain identity remains qualified.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=570&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-study-candidates-20261013.md.
+    Reported organism=candidate for historical KP342: Klebsiella pneumoniae 342; canonical
+    scientific name=Klebsiella variicola 342; NCBITaxon:507522; actual rank=strain;
+    taxonomy_match=candidate_only; role=current node has a 342 synonym but no verified
+    KP342 synonym in this lookup. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=507522&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-comparator-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-comparator-candidates-20261013.md.
+    Reported organism=Yersinia pestis 91001; canonical scientific name=Yersinia pestis;
+    NCBITaxon:632; actual rank=species; taxonomy_match=parent_rank_only; role=model-only
+    comparator; exact strain identity not independently established here. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=632&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-comparator-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-comparator-candidates-20261013.md.
+    Reported organism=candidate for Yersinia pestis 91001; canonical scientific name=Yersinia
+    pestis biovar Microtus str. 91001; NCBITaxon:229193; actual rank=strain; taxonomy_match=candidate_only;
+    role=current 91001 strain node; not a growth claim. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=229193&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-comparator-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-comparator-candidates-20261013.md.
+    The study combines computational models, physical observations, separate assay
+    contexts and an adapted derivative. These must not be collapsed into one parent-medium
+    claim. M9 is a study-relevant name, but full quantitative formulation reconciliation
+    with this local owner is not approved. No experimental optimization, cultivation
+    parameters or numerical performance results are imported. The existing high-density
+    Escherichia coli expression variant on a different M9 owner is not this study''s
+    variant. No new resolved variant or growth edge is assigned. Taxon identity supports
+    attribution only; comparator/background mentions do not establish cultivation
+    in this recipe. The historical owner-to-paper join is retained as discovery provenance,
+    not proof of exact formulation equivalence. Inventory covers selected medium-relevant
+    passages, not the entire paper. Taxonomy candidates, parental matches and study
+    roles are qualified, not cultivation evidence. Correction/retraction coverage
+    is limited to inspected publication metadata. Bounded lookup misses do not prove
+    absence. All original ingredients, amounts, evidence, history, preparation and
+    variant links are preserved; none is newly certified. No new native growth assertion,
+    concentration evidence or resolved variant.'

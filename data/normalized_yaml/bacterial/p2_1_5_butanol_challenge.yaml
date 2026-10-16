@@ -150,6 +150,14 @@ curation_history:
   notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T23:14:34.949513+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:16347502
 media_term:
   preferred_term: MediaDB Medium 91
   term:
@@ -172,3 +180,43 @@ variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
 - 1-Butanol increased from 98.4633 mM to 147.695 mM while the P2 challenge medium
   base remains unchanged.
+references:
+- reference: PMID:16347502
+  title: Effect of Butanol Challenge and Temperature on Lipid Composition and Membrane
+    Fluidity of Butanol-Tolerant Clostridium acetobutylicum.
+  authors: Baer SH; Blaschek HP; Smith TL
+  year: 1987
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:91;
+    discovery_sourceID=22; source_url=https://doi.org/10.1128/aem.53.12.2854-2861.1987;
+    alternate_identifier=doi:10.1128/aem.53.12.2854-2861.1987; alternate_identifier=PMC204212;
+    raw=references_cache/papers/PMID_16347502.xml; markdown=references_cache/papers/PMID_16347502.md;
+    PubMed abstract, first sentence; exact excerpt="butanol challenge (0, 1.0, 1.5%
+    [vol/vol])". Reported organism=Clostridium acetobutylicum; canonical scientific
+    name=Clostridium acetobutylicum; NCBITaxon:1488; actual rank=species; taxonomy_match=exact_species;
+    role=study species; strain-specific results remain separate. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1488&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=Clostridium acetobutylicum ATCC 824; canonical scientific name=Clostridium
+    acetobutylicum ATCC 824; NCBITaxon:272562; actual rank=strain; taxonomy_match=exact_strain;
+    role=experimental strain, not interchangeable with SA-2. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=272562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=Clostridium acetobutylicum SA-2; canonical scientific name=Clostridium
+    acetobutylicum; NCBITaxon:1488; actual rank=species; taxonomy_match=parent_rank_only;
+    role=butanol-tolerant experimental mutant; exact strain node unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1488&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    The three challenge conditions, growth temperatures and two strains are separate
+    contexts. The abstract names a chemically defined medium but does not supply the
+    full P2 formula. Existing linked challenge variants are reused as bibliography
+    owners, not duplicated or newly certified. Volume-percent challenge levels do
+    not independently validate the imported millimolar amounts or their conversion
+    basis. Local comparison: Twelve native entries include 147.695 mM butanol; the
+    existing parent is CultureMech:007438. This citation belongs on the child as well,
+    without depending on the parent''s bibliography. Inventory covers inspected medium-relevant
+    passages, not the whole paper or bibliography. Correction/retraction coverage
+    is limited to inspected metadata; bounded taxonomy misses do not prove absence.
+    Original ingredients, amounts, preparation, history and links are preserved, not
+    newly certified. No new native growth assertion, resolved variant or concentration
+    evidence.'

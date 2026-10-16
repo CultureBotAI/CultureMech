@@ -133,6 +133,14 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-10-13T19:06:34.475226+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, archived source/Markdown provenance, short excerpts
+    and qualified scientific-name/NCBI mapping notes. Preserved all existing recipe
+    values, evidence, history and variant links. Exact formulation and study-strain/assay
+    assignments remain qualified; no new native growth or concentration claim.
+  source: PMID:2647149
 media_term:
   preferred_term: MediaDB Medium 84
   term:
@@ -144,3 +152,56 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:2647149
+  title: Purification and properties of two succinic semialdehyde dehydrogenases from
+    Klebsiella pneumoniae.
+  authors: Sanchez M; Fernández J; Martin M; Gibello A; Garrido-Pertierra A
+  year: 1989
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract_only; owner=MEDIADB:84;
+    discovery_sourceID=19; source_url=https://doi.org/10.1016/s0304-4165(89)80038-8;
+    alternate_identifier=doi:10.1016/s0304-4165(89)80038-8; raw=references_cache/papers/PMID_2647149.xml;
+    markdown=references_cache/papers/PMID_2647149.md; Abstract: organism identity;
+    exact excerpt="Klebsiella pneumoniae M5a1". Abstract: named substrate, not complete
+    recipe; exact excerpt="3-hydroxyphenylacetic acid". Abstract: distinct derivative;
+    exact excerpt="defective mutant". Reported organism=historical Klebsiella pneumoniae
+    M5a1 and the unnamed defective derivative; canonical scientific name=Klebsiella;
+    NCBITaxon:570; actual rank=genus; taxonomy_match=parent_rank_only; role=study
+    organism/derivative; species and exact strain history unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=570&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-study-candidates-20261013.md.
+    Reported organism=lookup candidate for reported M5a1: Klebsiella sp. M5a1; canonical
+    scientific name=Klebsiella sp. M5a1; NCBITaxon:2759708; actual rank=species; taxonomy_match=candidate_only;
+    role=matching designation is not proof of the historical study strain; actual
+    rank is species. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2759708&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-additional-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-additional-candidates-20261013.md.
+    Reported organism=lookup candidate for reported M5a1: Klebsiella sp. M5al; canonical
+    scientific name=Klebsiella sp. M5al; NCBITaxon:1934254; actual rank=species; taxonomy_match=candidate_only;
+    role=letter-l designation must not be conflated with digit-one M5a1. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1934254&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-additional-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-additional-candidates-20261013.md.
+    Reported organism=lookup candidate for reported M5a1: Klebsiella michiganensis
+    M5al, synonym Klebsiella oxytoca M5al; canonical scientific name=Klebsiella michiganensis
+    M5al; NCBITaxon:290336; actual rank=strain; taxonomy_match=candidate_only; role=verified
+    current node and synonym, not verified identity of the 1989 isolate. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=290336&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-additional-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-additional-candidates-20261013.md.
+    The abstract concerns distinct enzyme forms and an unnamed mutant; it does not
+    supply the complete PJC formulation or establish exact assignments for all five
+    imported owners. Historical source joins establish bibliographic relevance, not
+    verified strain-specific growth. No enzyme-activity condition is transferred into
+    a cultivation recipe. The current PJC series includes chemical-name conflicts
+    that require owning-source review; no ingredient correction or resolved variant
+    is inferred from abbreviations or media names. The historical owner-to-paper join
+    is retained as discovery provenance, not proof of exact formulation equivalence.
+    Inventory covers selected medium-relevant passages, not the entire paper. Taxonomy
+    candidates, parental matches and study roles are qualified, not cultivation evidence.
+    Correction/retraction coverage is limited to inspected publication metadata. Bounded
+    lookup misses do not prove absence. All original ingredients, amounts, evidence,
+    history, preparation and variant links are preserved; none is newly certified.
+    No new native growth assertion, concentration evidence or resolved variant.'

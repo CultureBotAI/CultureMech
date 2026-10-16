@@ -104,6 +104,14 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-10-13T23:14:34.949513+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:11416161
 media_term:
   preferred_term: MediaDB Medium 278
   term:
@@ -115,3 +123,57 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:11416161
+  title: Adenosine diphosphate sugar pyrophosphatase prevents glycogen biosynthesis
+    in Escherichia coli.
+  authors: Moreno-Bruna B; Baroja-Fernández E; Muñoz FJ; Bastarrica-Berasategui A;
+    Zandueta-Criado A; Rodriguez-López M; Lasa I; Akazawa T; Pozueta-Romero J
+  year: 2001
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:278;
+    discovery_sourceID=71; source_url=https://doi.org/10.1073/pnas.131214098; alternate_identifier=doi:10.1073/pnas.131214098;
+    alternate_identifier=PMC35479; Historical MediaDB metadata retained for comparison:
+    title="Adenosine diphosphate sugar pyrophosphatase escherichia coli"; first_author="Moreno-bruna";
+    year=2001. Verified PMID/DOI identity is distinct from unresolved historical metadata
+    differences. raw=references_cache/papers/PMID_11416161.xml; markdown=references_cache/papers/PMID_11416161.md;
+    PubMed abstract, phenotype comparison; exact excerpt="No pleiotropic changes in
+    the bacterial growth occurred in both the aspP-overexpressing and aspP-deficient
+    strains.". Reported organism=Escherichia coli (E. coli); canonical scientific
+    name=Escherichia coli; NCBITaxon:562; actual rank=species; taxonomy_match=exact_species_not_strain;
+    role=experimental species; exact local formulation unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=Escherichia coli BL21(DE3); canonical scientific name=Escherichia
+    coli BL21(DE3); NCBITaxon:469008; actual rank=strain; taxonomy_match=canonical_name_match_secondary_strain_lead;
+    role=MediaDB host lead, not named in abstract. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=469008&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=Escherichia coli BL21[pET-ASPP]; canonical scientific name=Escherichia
+    coli BL21; NCBITaxon:511693; actual rank=strain; taxonomy_match=parent_rank_only;
+    role=MediaDB clone lead; BL21 parent verified but exact engineered clone unresolved.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=511693&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/growth-regulation-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/growth-regulation-20261013.md.
+    Reported organism=Escherichia coli BL21[pET-28b(+)]; canonical scientific name=Escherichia
+    coli BL21; NCBITaxon:511693; actual rank=strain; taxonomy_match=parent_rank_only;
+    role=MediaDB clone lead; BL21 parent verified but exact engineered clone unresolved.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=511693&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/growth-regulation-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/growth-regulation-20261013.md.
+    Reported organism=Escherichia coli BL21_aspP-; canonical scientific name=Escherichia
+    coli BL21; NCBITaxon:511693; actual rank=strain; taxonomy_match=parent_rank_only;
+    role=MediaDB clone lead; BL21 parent verified but exact engineered clone unresolved.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=511693&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/growth-regulation-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/growth-regulation-20261013.md.
+    Wild-type, aspP-deficient, aspP-overexpressing and vector backgrounds remain distinct.
+    The abstract links glycogen phenotype with culture glucose, but does not validate
+    the native beta-D-glucose identity, concentration or full M9 formula. No enzyme-assay
+    concentrations are imported into the culture recipe. Local comparison: Seven native
+    entries include 50 mM beta-D-glucose and doubled nominal phosphate values relative
+    to some other M9 imports; similarity is not identity or permission to merge. Inventory
+    covers inspected medium-relevant passages, not the whole paper or bibliography.
+    Correction/retraction coverage is limited to inspected metadata; bounded taxonomy
+    misses do not prove absence. Original ingredients, amounts, preparation, history
+    and links are preserved, not newly certified. No new native growth assertion,
+    resolved variant or concentration evidence.'

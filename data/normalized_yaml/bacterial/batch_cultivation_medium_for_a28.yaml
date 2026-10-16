@@ -154,6 +154,14 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T15:16:39.365769+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography with archived primary source and Markdown,
+    exact excerpts, scientific names and qualified NCBI taxonomy. Preserved recipe
+    differences and access/formulation limits; all prior quantities, links, preparation
+    and history unchanged. No new native growth or resolved variant.
+  source: PMID:12892473
 media_term:
   preferred_term: MediaDB Medium 346
   term:
@@ -165,3 +173,43 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:12892473
+  title: Metabolic control analysis of xylose catabolism in Aspergillus.
+  authors: Prathumpai W; Gabelgaard JB; Wanchanthuek P; van de Vondervoort PJ; de
+    Groot MJ; McIntyre M; Nielsen J
+  year: 2003
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=PubMed_abstract_only; alternate_identifier=doi:10.1021/bp034020r.
+    owner=MEDIADB:346; discovery_sourceID=117; source_url=https://pubmed.ncbi.nlm.nih.gov/12892473/;
+    raw_abstract=references_cache/papers/PMID_12892473.xml; source_markdown=references_cache/papers/PMID_12892473.md.
+    PubMed abstract; exact excerpt="Aspergillus niger". PubMed abstract; exact excerpt="Aspergillus
+    nidulans". PubMed abstract; exact excerpt="media containing xylose". PubMed abstract;
+    exact excerpt="intracellular xylitol concentration". This owner is linked by historical
+    MediaDB to Aspergillus nidulans A28, not to every strain in the abstract. The
+    two local xylose recipes share ten components; A28 additionally contains 4-aminobenzoate
+    and biotin. These imported differences are not newly certified paper requirements.
+    Reported organism=Aspergillus nidulans; canonical scientific name=Aspergillus
+    nidulans; NCBITaxon:162425; actual rank=species; taxonomy_match=exact species;
+    role=two study strains; abstract does not name TA1/A28. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=162425&retmode=xml.
+    Reported organism=Aspergillus nidulans A28 (historical MediaDB label); canonical
+    scientific name=Aspergillus nidulans; NCBITaxon:162425; actual rank=species; taxonomy_match=parent_rank_only;
+    role=species parent only; exact strain node unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=162425&retmode=xml.
+    Reported organism=Aspergillus niger; canonical scientific name=Aspergillus niger;
+    NCBITaxon:5061; actual rank=species; taxonomy_match=exact species; role=two other
+    study strains, not an automatic association to this A. nidulans recipe. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061&retmode=xml.
+    Reported organism=Aspergillus niger NW324 and NW 296; canonical scientific name=Aspergillus
+    niger; NCBITaxon:5061; actual rank=species; taxonomy_match=parent_rank_only; role=abstract-named
+    study strains; exact nodes unresolved in bounded lookup. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061&retmode=xml.
+    The reported intracellular xylitol measurement is not an ingredient dose, and
+    pathway flux control is not growth rate. Taxonomy archives=references_cache/papers/taxonomy/fungal-studies-20261013.*
+    and lu-sfm-additional-20261013.*. Bounded taxonomy lookup failures are not proof
+    of taxon absence. Organism inventory covers inspected medium-relevant passages,
+    not inaccessible full text. Correction/retraction coverage is limited to inspected
+    publication metadata. All prior recipe fields and history preserved, not newly
+    certified. No new ingredient-concentration evidence, resolved variant, native
+    growth association or quantitative metric. '

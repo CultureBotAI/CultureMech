@@ -101,6 +101,14 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-10-13T22:34:41.350925+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:3881395
 media_term:
   preferred_term: MediaDB Medium 133
   term:
@@ -113,3 +121,40 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+references:
+- reference: PMID:3881395
+  title: 'Glycine betaine transport in Escherichia coli: osmotic modulation.'
+  authors: Perroud B; Le Rudulier D
+  year: 1985
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:133;
+    discovery_sourceID=41; source_url=https://doi.org/10.1128/jb.161.1.393-401.1985;
+    alternate_identifier=doi:10.1128/jb.161.1.393-401.1985; alternate_identifier=PMC214884;
+    raw=references_cache/papers/PMID_3881395.xml; markdown=references_cache/papers/PMID_3881395.md;
+    PubMed abstract, negative-growth sentence; exact excerpt="In a nitrogen- and carbon-free
+    medium, glycine betaine did not support the growth of E. coli". Reported organism=Escherichia
+    coli (E. coli); canonical scientific name=Escherichia coli; NCBITaxon:562; actual
+    rank=species; taxonomy_match=exact_species_not_strain; role=experimental species;
+    local formulation unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Enterobacteriaceae; canonical scientific name=Enterobacteriaceae;
+    NCBITaxon:543; actual rank=family; taxonomy_match=exact_family; role=background
+    citation to prior osmoprotection work, not all-family growth. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=543&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli K-10; canonical scientific name=Escherichia
+    coli; NCBITaxon:562; actual rank=species; taxonomy_match=parent_rank_only; role=secondary
+    MediaDB strain lead; exact strain not verified. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Keep carbon/nitrogen-free negative growth, minimal-medium growth, high-osmotic
+    cultures and uptake assays distinct. Transport kinetics and inhibitor concentrations
+    are not recipe concentrations. The abstract does not identify M63, its complete
+    formula or K-10; no positive parent-growth inference from the negative result.
+    Local comparison: Six native entries include 10 mM glucose, 75 mM sodium hydroxide
+    and 100 mM sodium dihydrogen phosphate; the nearby thiamine M63 owner differs
+    in glucose and supplementation. Neither is newly certified by this abstract. Inventory
+    covers inspected medium-relevant passages, not the whole paper or bibliography.
+    Correction/retraction coverage is limited to inspected metadata; bounded taxonomy
+    misses do not prove absence. Original ingredients, amounts, preparation, history
+    and links are preserved, not newly certified. No new native growth assertion,
+    resolved variant or concentration evidence.'

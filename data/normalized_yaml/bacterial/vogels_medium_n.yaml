@@ -191,6 +191,14 @@ curation_history:
   notes: Grounded all 12 mM components from MediaDB Medium 287, added the MediaDB
     pH 5.8 and 25 C growth conditions, and curated the Neurospora crassa OR74A organism-medium
     relationship.
+- timestamp: '2026-10-14T00:09:58.559887+00:00'
+  curator: codex
+  action: ENRICHED_PAPER_CITATION
+  notes: Added or enriched bibliographic metadata, archived source/Markdown links,
+    title/group excerpts and qualified NCBI taxonomy notes. Non-operational identity
+    review only; no experimental, formulation, variant, growth or concentration curation.
+    Preserved all original recipe fields, history and reference identifiers.
+  source: doi:10.1086/282338
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Neurospora crassa OR74A
@@ -227,6 +235,71 @@ references:
 - reference: https://mediadb.systemsbiology.net/defined_media/growthdata/605/
 - reference: https://mediadb.systemsbiology.net/defined_media/organisms/141/
 - reference: http://www.jstor.org/stable/2459146
+  title: 'Distribution of Lysine Pathways Among Fungi: Evolutionary Implications'
+  authors: Henry J. Vogel
+  year: 1964
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-14; source_access=publisher_abstract_browser_text_capture_not_original_HTML_or_full_text;
+    review_scope=Publisher abstract organism inventory and bibliographic identity;
+    no formulation or growth approval.; owner=MEDIADB:287; discovery_sourceID=98;
+    source_url=https://doi.org/10.1086/282338; alternate_identifier=doi:10.1086/282338;
+    Historical MediaDB metadata retained for comparison: title="Distribution of lysine
+    pathways amoung fungi: evolutionary implications"; first_author="Vogel"; year=1964.
+    Publication identity is separate from historical spelling and dating differences.
+    raw=references_cache/papers/primary_browser/growth-regulation-vogel-1964-20261013.web.txt;
+    markdown=references_cache/papers/primary_browser/growth-regulation-vogel-1964-20261013.md;
+    crossref_raw=references_cache/papers/primary_json/osmotic-future-source-98-20261013.json;
+    crossref_markdown=references_cache/papers/primary_json/osmotic-future-source-98-20261013.md;
+    Publisher abstract, first paragraph; exact excerpt="basidiomycetes, ascomycetes,
+    and phycomycetes". Publisher abstract, third paragraph; exact excerpt="euglenids".
+    Reported organism/group=fungi; canonical scientific name=Fungi; NCBITaxon:4751;
+    actual rank=kingdom; taxonomy_match=broad_group_context_not_all_members; role=title
+    and abstract group, not a growth association. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=4751&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/bibliographic-groups-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/bibliographic-groups-20261013.md.
+    Reported organism/group=basidiomycetes; canonical scientific name=Basidiomycota;
+    NCBITaxon:5204; actual rank=phylum; taxonomy_match=verified_common_name_actual_rank_phylum;
+    role=abstract group, not individually identified representatives. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5204&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/bibliographic-groups-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/bibliographic-groups-20261013.md.
+    Reported organism/group=ascomycetes; canonical scientific name=Fungi; NCBITaxon:4751;
+    actual rank=kingdom; taxonomy_match=parent_rank_only; role=historical collective
+    label; exact historical circumscription not verified; Fungi is a broad parent,
+    not its identity. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=4751&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/bibliographic-groups-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/bibliographic-groups-20261013.md.
+    Reported organism/group=phycomycetes; canonical scientific name=Eukaryota; NCBITaxon:2759;
+    actual rank=domain; taxonomy_match=parent_rank_only; role=historical collective
+    label unresolved as a modern taxon; Eukaryota is only a broad parent context.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2759&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/bibliographic-groups-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/bibliographic-groups-20261013.md.
+    Reported organism/group=euglenids; canonical scientific name=Euglenida; NCBITaxon:3035;
+    actual rank=clade; taxonomy_match=verified_common_name_actual_rank_clade; role=comparative
+    abstract mention, not a medium association. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=3035&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/bibliographic-groups-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/bibliographic-groups-20261013.md.
+    Reported organism/group=Neurospora crassa OR74A; canonical scientific name=Neurospora
+    crassa; NCBITaxon:5141; actual rank=species; taxonomy_match=parent_rank_only_secondary_import_lead;
+    role=MediaDB organism lead only; species verified, exact strain and primary-paper
+    occurrence not established. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5141&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/bibliographic-groups-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/bibliographic-groups-20261013.md.
+    The abstract''s hypothetical animal-like precursor and plant-kingdom evolutionary
+    language do not identify experimental taxa; those descriptive phrases remain unresolved
+    without invented binomials. No individually named representative or exact local
+    Vogel N formulation is established by the abstract. Historical ''amoung'' title
+    spelling is retained as source metadata. The existing JSTOR bibliography entry
+    is enriched, not duplicated; its original reference URL and all other entries
+    remain intact. The pinned MediaDB source-to-owner join establishes a historical
+    bibliographic lead only, not exact recipe equivalence. Formulation identity, study-specific
+    differences and variant destination remain unassessed in this non-operational
+    citation task. No cultivation conditions, optimization, virulence, growth associations
+    or ingredient amounts are extracted or curated. Correction/retraction coverage
+    is limited to archived metadata. Original ingredients, amounts, preparation, history,
+    evidence and links are preserved, not newly certified. No new native growth assertion,
+    resolved variant or concentration evidence.'
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated

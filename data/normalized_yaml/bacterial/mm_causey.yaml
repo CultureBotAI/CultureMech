@@ -145,6 +145,14 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:167's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T22:34:41.350925+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:12556564
 media_term:
   preferred_term: MediaDB Medium 167
   term:
@@ -156,3 +164,43 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:12556564
+  title: 'Engineering the metabolism of Escherichia coli W3110 for the conversion
+    of sugar to redox-neutral and oxidized products: homoacetate production.'
+  authors: Causey TB; Zhou S; Shanmugam KT; Ingram LO
+  year: 2003
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:167;
+    discovery_sourceID=61; source_url=https://doi.org/10.1073/pnas.0337684100; alternate_identifier=doi:10.1073/pnas.0337684100;
+    alternate_identifier=PMC298686; raw=references_cache/papers/PMID_12556564.xml;
+    markdown=references_cache/papers/PMID_12556564.md; PubMed abstract, TC36 conversion
+    sentence; exact excerpt="The resulting strain (TC36) converted 333 mM glucose
+    into 572 mM acetate". Reported organism=Escherichia coli (E. coli); canonical
+    scientific name=Escherichia coli; NCBITaxon:562; actual rank=species; taxonomy_match=exact_species_not_strain;
+    role=experimental species; local formulation unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli W3110; canonical scientific name=Escherichia
+    coli str. K-12 substr. W3110; NCBITaxon:316407; actual rank=no rank; taxonomy_match=canonical_name_match;
+    role=named engineered-strain parent, not TC36 itself. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=316407&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli TC36; canonical scientific name=Escherichia
+    coli str. K-12 substr. W3110; NCBITaxon:316407; actual rank=no rank; taxonomy_match=parent_rank_only;
+    role=W3110-derived experimental strain; exact TC36 node unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=316407&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    TC36 carries the reported deletions and is distinct from W3110; its product and
+    flux phenotypes cannot be assigned to the parent. The reported 333 mM glucose
+    experiment differs from the native 111 mM glucose entry. Mineral-salts-medium
+    wording does not establish the rest of the local formula or identify which base/feeding
+    context produced that comparison. Retain the glucose discrepancy as formulation-unresolved,
+    not a certified threefold-glucose variant or canonical amount correction. Local
+    comparison: Thirteen native entries include 111 mM glucose, thiamine and generically
+    named ammonium phosphate. These chemical forms and all preparation steps remain
+    unverified; no amount or canonical chemical identity was changed. Inventory covers
+    inspected medium-relevant passages, not the whole paper or bibliography. Correction/retraction
+    coverage is limited to inspected metadata; bounded taxonomy misses do not prove
+    absence. Original ingredients, amounts, preparation, history and links are preserved,
+    not newly certified. No new native growth assertion, resolved variant or concentration
+    evidence.'

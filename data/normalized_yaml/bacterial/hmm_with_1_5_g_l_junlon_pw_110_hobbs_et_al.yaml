@@ -188,6 +188,15 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:255's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T14:29:43.219181+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography with archived primary abstract and Markdown,
+    exact abstract excerpts, scientific names and qualified taxonomy. Kept OCR/body
+    observations provisional and recipe differences unresolved; preserved all amounts,
+    links, preparation and history. No new native growth, concentration evidence or
+    resolved variant.
+  source: doi:10.1007/BF00258408
 media_term:
   preferred_term: MediaDB Medium 255
   term:
@@ -212,3 +221,41 @@ variant_modifications:
 - Junlon PW 110 dose changes from 1 g/L parent to 1.5 g/L child; parsed Propenoate
   concentration changes from 13.8773 mM to 20.816 mM while all other parsed ingredient
   concentrations match the parent.
+references:
+- reference: doi:10.1007/BF00258408
+  title: Dispersed growth of Streptomyces in liquid culture
+  authors: Glyn Hobbs; Catherine M. Frazer; David C J Gardner; John A. Cullum; Stephen
+    G. Oliver
+  year: 1989
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; owner=MEDIADB:255; discovery_sourceID=88; source_access=author_institution_abstract_only.
+    This owner is an existing CONCENTRATION_VARIANT child of CultureMech:007152. The
+    imported Junlon PW 110 dose label and parsed Propenoate molarity are not newly
+    certified. Each child receives its own citation; existing links remain unchanged.
+    Author-institution abstract; exact excerpt='Streptomyces'. Author-institution
+    abstract; exact excerpt='Junlon-containing media'. Author-institution abstract;
+    exact excerpt='defined growth medium'. Author-institution abstract; exact excerpt='polyanions
+    such as agar, Carbopol and Junlon'. Reported organism=Streptomyces; canonical
+    scientific name=Streptomyces; NCBITaxon:1883; actual rank=genus; taxonomy_match=exact
+    reported genus; role=genus-only abstract mention; not a genus-wide cultivation
+    assertion. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1883&retmode=xml.
+    The historical source join names Streptomyces coelicolor J802, but that strain
+    is not established by this abstract. Reported organism=Streptomyces coelicolor
+    J802 (historical source join only); canonical scientific name=Streptomyces coelicolor
+    A3(2); NCBITaxon:100226; actual rank=strain; taxonomy_match=parent_rank_only;
+    role=candidate A3(2) parent from separate Hodgson provenance; not a Hobbs abstract
+    strain identification. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=100226&retmode=xml.
+    The abstract does not enumerate the four HMM recipes or Junlon PW 110 doses. Polymer
+    identity is not established by monomer Propenoate molarity. Optical-density measurement,
+    dispersed growth, biomass and actinorhodin output are distinct study observations;
+    no quantitative metric is inferred. An existing citation mention in the separate
+    mannitol-soya-flour record does not make that solid complex formulation identical
+    to these defined liquid HMM owners. raw_abstract=references_cache/papers/primary_html/hobbs-1989-manchester-abstract.html;
+    source_markdown=references_cache/papers/primary_html/hobbs-1989-manchester-abstract.md.
+    PMID was not resolved by bounded lookup, not established absent. Correction/retraction
+    coverage is limited to inspected metadata, not an exhaustive audit. All original
+    ingredients, amounts, preparation, links and history preserved, not newly certified.
+    No new concentration evidence, native growth association, quantitative metric
+    or resolved variant. Organism inventory is limited to inspected medium-relevant
+    passages; source-extraction uncertainty is retained. Taxonomy archives=references_cache/papers/taxonomy/hodgson-streptomyces-20261013.*
+    and hobbs-streptomyces-genus-20261013.*.

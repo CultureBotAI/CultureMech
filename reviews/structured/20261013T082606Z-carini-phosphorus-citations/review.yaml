@@ -1,0 +1,1953 @@
+schema_version: 1.0.0
+review_id: 20261013T082606Z-carini-phosphorus-citations
+kind: batch
+repository: culturebotai/CultureMech
+title: Carini alternate-phosphorus citations and scoped assay variants
+started_at: '2026-10-13T07:40:05Z'
+finished_at: '2026-10-13T08:26:06Z'
+reviewer:
+  identity: codex
+  kind: agent
+  independence: self_review
+  independence_basis: The curator performed this evidence review; no independent reviewer
+    is claimed.
+skill: culturemech-add-paper-citation
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: 18 paper-record citations, six assay variants and six variant-scoped HTCC7211
+  associations. Three papers and the main supplement are archived with Markdown. All
+  120 parent ingredient entries preserved. Per-record checks and focused tests pass
+  after source-cache preparation; global merge diagnostics remain separate. Parent
+  evidence and export-scope findings remain open.
+source:
+  git_revision: 41d4d390123c0d8320cd53e994470c88a1b86d8c
+  state: working_tree
+  inputs:
+  - path: data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+    sha256: da931f52a98d91ce90d5e81fd7ab5c68b0429278aa54f5631a5cf0cc87ea2ffd
+    role: target
+  - path: data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+    sha256: ea2b2acbd4c5d5549d930245ba0cb2c545bf53554228ba94b4464bef3b84aa0b
+    role: target
+  - path: data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+    sha256: aac6fa08f14b416af16cb2cf810830d7446581c01639b826baa15928b1eb621f
+    role: target
+  - path: data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+    sha256: f04fe7a26b3483185ef244d7a24c15ed72fe462bbd7a5024daac020d36822798
+    role: target
+  - path: data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+    sha256: 829718162c5f7f6129504c441c77d2afc3a8803a9cdba98256be669fac12f785
+    role: target
+  - path: data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+    sha256: 6f4f90d434df33b85f84ad80f13ee35921c3dd1be9ded5bc88696af1ef730969
+    role: target
+  - path: src/culturemech/export/kgx_export.py
+    sha256: eacbc2e7b363488cc1ed96e91737f54244dc1a2425dfa05c77ba89d0a5cd10e0
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: Six exact MediaDB source 151 owners, medium IDs 479-484; bibliography,
+    study variant differences, taxonomy and growth scope.
+  selection: All six owners in the verified source 151 joins, not a corpus-wide sample
+    or certification.
+  coverage: full
+  population_size: 6
+  reviewed_target_ids:
+  - CultureMech:007386
+  - CultureMech:007388
+  - CultureMech:007389
+  - CultureMech:007390
+  - CultureMech:007391
+  - CultureMech:007392
+  exclusions:
+  - target: Other recipes, full parent concentration certification and generated graph
+      publication
+    reason: Outside this bounded pass; goal remains active.
+targets:
+- target_id: CultureMech:007386
+  path: data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  label: AMS1 (Pyruvate+Glycine) + Thiamin + Phosphite
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007388
+  path: data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  label: AMS1 (Pyruvate+Glycine) + Thiamin + Glucose 6-Phosphate
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007389
+  path: data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  label: AMS1 (Pyruvate+Glycine) + Thiamin + Ribose 5-Phosphate
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007390
+  path: data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  label: AMS1 (Pyruvate+Glycine) + Thiamin + Methylphosphonic acid
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007391
+  path: data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  label: AMS1 (Pyruvate+Glycine) + Thiamin + 2-aminoethylphosphonic acid
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007392
+  path: data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  label: AMS1 (Pyruvate+Glycine) + Thiamin + Phosphoserine
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+checks:
+- check_id: baseline-00
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007386
+  evidence_ids:
+  - baseline-00
+- check_id: baseline-01
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007386
+  evidence_ids:
+  - baseline-01
+- check_id: baseline-02
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007388
+  evidence_ids:
+  - baseline-02
+- check_id: baseline-03
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007388
+  evidence_ids:
+  - baseline-03
+- check_id: baseline-04
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007389
+  evidence_ids:
+  - baseline-04
+- check_id: baseline-05
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007389
+  evidence_ids:
+  - baseline-05
+- check_id: baseline-06
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007390
+  evidence_ids:
+  - baseline-06
+- check_id: baseline-07
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007390
+  evidence_ids:
+  - baseline-07
+- check_id: baseline-08
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007391
+  evidence_ids:
+  - baseline-08
+- check_id: baseline-09
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007391
+  evidence_ids:
+  - baseline-09
+- check_id: baseline-10
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007392
+  evidence_ids:
+  - baseline-10
+- check_id: baseline-11
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007392
+  evidence_ids:
+  - baseline-11
+- check_id: post-00
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  status: failed
+  required: false
+  exit_code: 2
+  summary: Initial sandbox attempt; reference fetch failed on Crossref DNS. Superseded
+    by post-cached checks, retained as attempt history.
+  target_ids:
+  - CultureMech:007386
+  evidence_ids:
+  - post-00
+- check_id: post-01
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: false
+  exit_code: 0
+  summary: Initial sandbox attempt; reference fetch failed on Crossref DNS. Superseded
+    by post-cached checks, retained as attempt history.
+  target_ids:
+  - CultureMech:007386
+  evidence_ids:
+  - post-01
+- check_id: post-02
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  status: failed
+  required: false
+  exit_code: 2
+  summary: Initial sandbox attempt; reference fetch failed on Crossref DNS. Superseded
+    by post-cached checks, retained as attempt history.
+  target_ids:
+  - CultureMech:007388
+  evidence_ids:
+  - post-02
+- check_id: post-03
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: false
+  exit_code: 0
+  summary: Initial sandbox attempt; reference fetch failed on Crossref DNS. Superseded
+    by post-cached checks, retained as attempt history.
+  target_ids:
+  - CultureMech:007388
+  evidence_ids:
+  - post-03
+- check_id: post-04
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  status: failed
+  required: false
+  exit_code: 2
+  summary: Initial sandbox attempt; reference fetch failed on Crossref DNS. Superseded
+    by post-cached checks, retained as attempt history.
+  target_ids:
+  - CultureMech:007389
+  evidence_ids:
+  - post-04
+- check_id: post-05
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: false
+  exit_code: 0
+  summary: Initial sandbox attempt; reference fetch failed on Crossref DNS. Superseded
+    by post-cached checks, retained as attempt history.
+  target_ids:
+  - CultureMech:007389
+  evidence_ids:
+  - post-05
+- check_id: post-06
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  status: failed
+  required: false
+  exit_code: 2
+  summary: Initial sandbox attempt; reference fetch failed on Crossref DNS. Superseded
+    by post-cached checks, retained as attempt history.
+  target_ids:
+  - CultureMech:007390
+  evidence_ids:
+  - post-06
+- check_id: post-07
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: false
+  exit_code: 0
+  summary: Initial sandbox attempt; reference fetch failed on Crossref DNS. Superseded
+    by post-cached checks, retained as attempt history.
+  target_ids:
+  - CultureMech:007390
+  evidence_ids:
+  - post-07
+- check_id: post-08
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  status: failed
+  required: false
+  exit_code: 2
+  summary: Initial sandbox attempt; reference fetch failed on Crossref DNS. Superseded
+    by post-cached checks, retained as attempt history.
+  target_ids:
+  - CultureMech:007391
+  evidence_ids:
+  - post-08
+- check_id: post-09
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: false
+  exit_code: 0
+  summary: Initial sandbox attempt; reference fetch failed on Crossref DNS. Superseded
+    by post-cached checks, retained as attempt history.
+  target_ids:
+  - CultureMech:007391
+  evidence_ids:
+  - post-09
+- check_id: post-10
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  status: failed
+  required: false
+  exit_code: 2
+  summary: Initial sandbox attempt; reference fetch failed on Crossref DNS. Superseded
+    by post-cached checks, retained as attempt history.
+  target_ids:
+  - CultureMech:007392
+  evidence_ids:
+  - post-10
+- check_id: post-11
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: false
+  exit_code: 0
+  summary: Initial sandbox attempt; reference fetch failed on Crossref DNS. Superseded
+    by post-cached checks, retained as attempt history.
+  target_ids:
+  - CultureMech:007392
+  evidence_ids:
+  - post-11
+- check_id: post-network-00
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  status: failed
+  required: false
+  exit_code: 1
+  summary: Network-enabled attempt resolved identity but had metadata-only main-paper
+    cache. Superseded by post-cached checks.
+  target_ids:
+  - CultureMech:007386
+  evidence_ids:
+  - post-network-00
+- check_id: post-network-01
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: false
+  exit_code: 0
+  summary: Network-enabled attempt resolved identity but had metadata-only main-paper
+    cache. Superseded by post-cached checks.
+  target_ids:
+  - CultureMech:007386
+  evidence_ids:
+  - post-network-01
+- check_id: post-network-02
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  status: failed
+  required: false
+  exit_code: 1
+  summary: Network-enabled attempt resolved identity but had metadata-only main-paper
+    cache. Superseded by post-cached checks.
+  target_ids:
+  - CultureMech:007388
+  evidence_ids:
+  - post-network-02
+- check_id: post-network-03
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: false
+  exit_code: 0
+  summary: Network-enabled attempt resolved identity but had metadata-only main-paper
+    cache. Superseded by post-cached checks.
+  target_ids:
+  - CultureMech:007388
+  evidence_ids:
+  - post-network-03
+- check_id: post-network-04
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  status: failed
+  required: false
+  exit_code: 1
+  summary: Network-enabled attempt resolved identity but had metadata-only main-paper
+    cache. Superseded by post-cached checks.
+  target_ids:
+  - CultureMech:007389
+  evidence_ids:
+  - post-network-04
+- check_id: post-network-05
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: false
+  exit_code: 0
+  summary: Network-enabled attempt resolved identity but had metadata-only main-paper
+    cache. Superseded by post-cached checks.
+  target_ids:
+  - CultureMech:007389
+  evidence_ids:
+  - post-network-05
+- check_id: post-network-06
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  status: failed
+  required: false
+  exit_code: 1
+  summary: Network-enabled attempt resolved identity but had metadata-only main-paper
+    cache. Superseded by post-cached checks.
+  target_ids:
+  - CultureMech:007390
+  evidence_ids:
+  - post-network-06
+- check_id: post-network-07
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: false
+  exit_code: 0
+  summary: Network-enabled attempt resolved identity but had metadata-only main-paper
+    cache. Superseded by post-cached checks.
+  target_ids:
+  - CultureMech:007390
+  evidence_ids:
+  - post-network-07
+- check_id: post-network-08
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  status: failed
+  required: false
+  exit_code: 1
+  summary: Network-enabled attempt resolved identity but had metadata-only main-paper
+    cache. Superseded by post-cached checks.
+  target_ids:
+  - CultureMech:007391
+  evidence_ids:
+  - post-network-08
+- check_id: post-network-09
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: false
+  exit_code: 0
+  summary: Network-enabled attempt resolved identity but had metadata-only main-paper
+    cache. Superseded by post-cached checks.
+  target_ids:
+  - CultureMech:007391
+  evidence_ids:
+  - post-network-09
+- check_id: post-network-10
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  status: failed
+  required: false
+  exit_code: 1
+  summary: Network-enabled attempt resolved identity but had metadata-only main-paper
+    cache. Superseded by post-cached checks.
+  target_ids:
+  - CultureMech:007392
+  evidence_ids:
+  - post-network-10
+- check_id: post-network-11
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: false
+  exit_code: 0
+  summary: Network-enabled attempt resolved identity but had metadata-only main-paper
+    cache. Superseded by post-cached checks.
+  target_ids:
+  - CultureMech:007392
+  evidence_ids:
+  - post-network-11
+- check_id: post-cached-00
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007386
+  evidence_ids:
+  - post-cached-00
+- check_id: post-cached-01
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007386
+  evidence_ids:
+  - post-cached-01
+- check_id: post-cached-02
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007388
+  evidence_ids:
+  - post-cached-02
+- check_id: post-cached-03
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007388
+  evidence_ids:
+  - post-cached-03
+- check_id: post-cached-04
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007389
+  evidence_ids:
+  - post-cached-04
+- check_id: post-cached-05
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007389
+  evidence_ids:
+  - post-cached-05
+- check_id: post-cached-06
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007390
+  evidence_ids:
+  - post-cached-06
+- check_id: post-cached-07
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007390
+  evidence_ids:
+  - post-cached-07
+- check_id: post-cached-08
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007391
+  evidence_ids:
+  - post-cached-08
+- check_id: post-cached-09
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007391
+  evidence_ids:
+  - post-cached-09
+- check_id: post-cached-10
+  name: just validate data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  command: just validate data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007392
+  evidence_ids:
+  - post-cached-10
+- check_id: post-cached-11
+  name: just validate-strict data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007392
+  evidence_ids:
+  - post-cached-11
+- check_id: merge-00
+  name: just verify-merges
+  command: just verify-merges
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Global merge diagnostic; existing corpus problems are not silently repaired
+    or treated as a successful gate. No checkout outputs replaced.
+  target_ids:
+  - CultureMech:007386
+  - CultureMech:007388
+  - CultureMech:007389
+  - CultureMech:007390
+  - CultureMech:007391
+  - CultureMech:007392
+  evidence_ids:
+  - merge-00
+- check_id: merge-01
+  name: just audit-merge-freshness --json
+  command: just audit-merge-freshness --json
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Global merge diagnostic; existing corpus problems are not silently repaired
+    or treated as a successful gate. No checkout outputs replaced.
+  target_ids:
+  - CultureMech:007386
+  - CultureMech:007388
+  - CultureMech:007389
+  - CultureMech:007390
+  - CultureMech:007391
+  - CultureMech:007392
+  evidence_ids:
+  - merge-01
+- check_id: extra-00
+  name: /tmp/culturemech-parallel-env-20261012/bin/python -m pytest --no-cov -q tests/test_claude_skills.py
+    tests/test_skill_frontmatter.py tests/test_fetch_pubmed_abstracts.py tests/test_record_io.py
+    tests/test_media_variant_links.py tests/test_record_review_contract.py
+  command: /tmp/culturemech-parallel-env-20261012/bin/python -m pytest --no-cov -q
+    tests/test_claude_skills.py tests/test_skill_frontmatter.py tests/test_fetch_pubmed_abstracts.py
+    tests/test_record_io.py tests/test_media_variant_links.py tests/test_record_review_contract.py
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007386
+  - CultureMech:007388
+  - CultureMech:007389
+  - CultureMech:007390
+  - CultureMech:007391
+  - CultureMech:007392
+  evidence_ids:
+  - extra-00
+- check_id: extra-01
+  name: /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py
+  command: /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007386
+  - CultureMech:007388
+  - CultureMech:007389
+  - CultureMech:007390
+  - CultureMech:007391
+  - CultureMech:007392
+  evidence_ids:
+  - extra-01
+- check_id: extra-02
+  name: git diff --check
+  command: git diff --check
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual command result.
+  target_ids:
+  - CultureMech:007386
+  - CultureMech:007388
+  - CultureMech:007389
+  - CultureMech:007390
+  - CultureMech:007391
+  - CultureMech:007392
+  evidence_ids:
+  - extra-02
+evidence:
+- evidence_id: main-paper
+  kind: primary_source
+  reference: doi:10.1038/ncomms5346
+  locator: Results; Figures 1-2; Methods/Organism source and Cultivation details;
+    reference 39
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Exact primary HTML excerpts support six alternate-P assays and HTCC7211
+    growth. Organic amendments, full vitamin mixture, FeCl3, phosphorus dose/final
+    basis and conditions are assay-specific. HTCC1062 negative/ambiguous responses
+    are not positive growth associations.
+  support: supports
+  snapshot_sha256: 77a02db2ae2ef804a077275afa82cb91dcb07a472553178bfa112126d287965d
+- evidence_id: main-pdf
+  kind: primary_source
+  reference: doi:10.1038/ncomms5346
+  locator: PDF pages 2, 3, 5; visually inspected source pages
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Figures and methods corroborate HTCC7211 outcomes, micromolar units and
+    separate assay contexts. Figure 1 prints Glucose-5P, whereas Methods, Results
+    and Figure 2 identify glucose 6-phosphate; the discrepancy is retained.
+  support: supports
+  snapshot_sha256: f20160ac5dc3840b1fb757178b876f0bd41f34fe6cb2be1aec2928d28dbf667e
+- evidence_id: base-paper
+  kind: primary_source
+  reference: doi:10.1038/ismej.2012.122
+  locator: Media preparation; Table 1 heading, rows and footnote
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Cited AMS1 base specifies inorganic salts, hydrate forms, 2.8 millimolar
+    magnesium sulfate heptahydrate, vitamin mixture and preparation. The later assay
+    overrides phosphate, iron and organic amendments. Parent amounts are not corrected
+    or certified by inheritance.
+  support: supports
+  snapshot_sha256: 9e0ca0cdc0fc0c3a6a3d5e38328903cda00d8a227711cf511b2fabeb6b12a9b9
+- evidence_id: hmp-paper
+  kind: primary_source
+  reference: doi:10.1038/ismej.2014.61
+  locator: 'Discussion: thiamin stock contamination paragraph'
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: The separate HTCC1062 study found HMP contamination in its thiamin stocks.
+    It qualifies interpretation of nominal thiamin-only media, but is not a measurement
+    of the methane study's stock contamination or an HTCC7211 growth requirement.
+  support: context_only
+  snapshot_sha256: 5f4a13fba8d5682ffe44c5b21b237bb5fe98a552e522ef224eb52a5681691c16
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=338192,204455,203124,198252,135623,54526,1205,286,439493,436308,314261,335992,562&retmode=xml
+  locator: Taxon ScientificName, Rank, OtherNames and LineageEx
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Thirteen taxon nodes inspected. HTCC7211 maps to NCBITaxon:439493, Candidatus
+    Pelagibacter sp. HTCC7211, actual species rank. HTCC1062 and HTCC1002 have strain-rank
+    nodes. Background taxa are retained as mentions, not growth edges.
+  support: supports
+  snapshot_sha256: 8714b24ec5305d1a381bd3c1b0f65bcb7d0ed60668a0eab85aa646c9ff7ac7e2
+- evidence_id: source-links
+  kind: database
+  reference: MediaDB SQL 07Oct2015
+  locator: sources sourceID 151; media_names and growth_data for media 479-484; frozen
+    joins in preflight.json
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Exact medium IDs/names and source title/year/PMID identify the Carini 2014
+    source. Historical Mazumdar import notes are preserved, not mistaken for the specific
+    experimental paper.
+  support: supports
+  snapshot_sha256: e2c60258e2389d4ad383695eb3e01429a67eac90807fe14d02a6728777d35b5c
+- evidence_id: readback
+  kind: record_content
+  reference: Guarded corpus readback
+  locator: All six records and full corpus hash comparison
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: 18 citations, six variants, six variant-scoped associations; no parent
+    growth assertions. All 120 parent ingredient instances and prior content/history
+    preserved, including original bytes after removing inserted blocks. All 15,910
+    hashes match the previous checkpoint plus these six edits.
+  support: context_only
+  snapshot_sha256: 34052cbcd5c50c2c37153c665430d677ab034ed5a47b13e836e8d6188e8d0b29
+- evidence_id: preflight
+  kind: record_content
+  reference: Frozen complete owners
+  locator: records[].record, original_text and source_relationship_rows
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: All six current owners fully inspected before edits. Imported organic doses,
+    thiamine, iron, magnesium sulfate, hydrate forms and generic preparation differ
+    from the specific primary-source assay.
+  support: context_only
+  snapshot_sha256: eafbed7801174adc84217e3253a9b9891865d61aa7641f49ed35643f0fb3c5e5
+- evidence_id: exporter
+  kind: record_content
+  reference: CultureMech KGX exporter
+  locator: transform and organism_grows_in_medium_edge
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Current growth export uses parent medium ID and taxon ID without honoring
+    scoped_to_variant. No KGX export or publication was performed.
+  support: context_only
+  snapshot_sha256: eacbc2e7b363488cc1ed96e91737f54244dc1a2425dfa05c77ba89d0a5cd10e0
+- evidence_id: archive-manifest
+  kind: record_content
+  reference: Source archives
+  locator: 28 archive payload/Markdown/provenance hashes plus exact claim register
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: All three cited papers have primary source files and Markdown; PubMed abstracts
+    are retained. The main supplement is archived but adds no recipe claims. Hashes
+    and content boundaries are explicit.
+  support: context_only
+  snapshot_sha256: 7fc8c839129ea524ddce0e93e3e203596714ebb0f4734f70f41190ef972d0b29
+- evidence_id: validator-cache
+  kind: record_content
+  reference: Primary-text cache conversion
+  locator: Source HTML hash, native Markdown hash and preserved previous metadata-only
+    hash
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Reference validation initially failed on network access, then unavailable
+    full text. A deterministic primary-HTML conversion populated the maintained cache;
+    exact quotes were not altered and checks were not weakened.
+  support: context_only
+  snapshot_sha256: 8b7d727747ffa2fe683562cc8d27ef55bcca82745c25bbc19cfc2b72df06658f
+- evidence_id: baseline-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/baseline-00-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/baseline-01-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/baseline-02-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/baseline-03-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/baseline-04-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/baseline-05-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/baseline-06-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/baseline-07-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/baseline-08-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/baseline-09-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-10
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/baseline-10-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-11
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/baseline-11-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-00-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 2; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: ddb62563c814cdcffd138647e5f55df17375d02c9a75d495aaf7a9df5dd76581
+- evidence_id: post-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-01-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-02-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 2; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: ddb62563c814cdcffd138647e5f55df17375d02c9a75d495aaf7a9df5dd76581
+- evidence_id: post-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-03-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-04-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 2; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: ddb62563c814cdcffd138647e5f55df17375d02c9a75d495aaf7a9df5dd76581
+- evidence_id: post-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-05-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-06-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 2; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: ddb62563c814cdcffd138647e5f55df17375d02c9a75d495aaf7a9df5dd76581
+- evidence_id: post-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-07-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-08-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 2; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: ddb62563c814cdcffd138647e5f55df17375d02c9a75d495aaf7a9df5dd76581
+- evidence_id: post-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-09-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-10
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-10-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 2; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: ddb62563c814cdcffd138647e5f55df17375d02c9a75d495aaf7a9df5dd76581
+- evidence_id: post-11
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-11-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-network-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-network-00-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 1; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 8eec8faf0cae7c24ebf7d5c7c9b0f1b73e466eee88c734aceb2a3aa0488dc07f
+- evidence_id: post-network-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-network-01-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-network-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-network-02-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 1; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 8eec8faf0cae7c24ebf7d5c7c9b0f1b73e466eee88c734aceb2a3aa0488dc07f
+- evidence_id: post-network-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-network-03-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-network-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-network-04-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 1; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 8eec8faf0cae7c24ebf7d5c7c9b0f1b73e466eee88c734aceb2a3aa0488dc07f
+- evidence_id: post-network-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-network-05-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-network-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-network-06-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 1; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 8eec8faf0cae7c24ebf7d5c7c9b0f1b73e466eee88c734aceb2a3aa0488dc07f
+- evidence_id: post-network-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-network-07-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-network-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-network-08-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 1; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 8eec8faf0cae7c24ebf7d5c7c9b0f1b73e466eee88c734aceb2a3aa0488dc07f
+- evidence_id: post-network-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-network-09-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-network-10
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-network-10-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 1; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 8eec8faf0cae7c24ebf7d5c7c9b0f1b73e466eee88c734aceb2a3aa0488dc07f
+- evidence_id: post-network-11
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-network-11-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-cached-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-cached-00-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 1b57289f81ee40378fd4cf02db916fff1b15f774301de00c88c66e94646bedac
+- evidence_id: post-cached-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-cached-01-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-cached-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-cached-02-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 1b57289f81ee40378fd4cf02db916fff1b15f774301de00c88c66e94646bedac
+- evidence_id: post-cached-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-cached-03-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-cached-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-cached-04-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 1b57289f81ee40378fd4cf02db916fff1b15f774301de00c88c66e94646bedac
+- evidence_id: post-cached-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-cached-05-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-cached-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-cached-06-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 1b57289f81ee40378fd4cf02db916fff1b15f774301de00c88c66e94646bedac
+- evidence_id: post-cached-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-cached-07-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-cached-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-cached-08-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 1b57289f81ee40378fd4cf02db916fff1b15f774301de00c88c66e94646bedac
+- evidence_id: post-cached-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-cached-09-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-cached-10
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-cached-10-validate.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 1b57289f81ee40378fd4cf02db916fff1b15f774301de00c88c66e94646bedac
+- evidence_id: post-cached-11
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/post-cached-11-validate-strict.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: merge-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/merge-00-verify-merges.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 1; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 09a2922082db841587410042dc33d7d3f72b2601f1d6b6f2b33322471ee47f2c
+- evidence_id: merge-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/merge-01-audit-merge-freshness.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 1; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: ce0ca477d3492dde95bf9c8c0504f6f009eb0804ea28d1c340fd2507e33740e6
+- evidence_id: extra-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/extra-00.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 64896b005089ec630dc15d027bab003cfdfd666b31f2427831b9d91df077662f
+- evidence_id: extra-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/extra-01.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: 441bdd6ab36f5b87c9edccf771321e1c5f6c11f43bec7799e6e98cd4d756c24c
+- evidence_id: extra-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/extra-02.log
+  locator: Complete retained command output
+  accessed_at: '2026-10-13T08:26:06Z'
+  summary: Command exit code 0; validation is not scientific approval.
+  support: context_only
+  snapshot_sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+assessments:
+- assessment_id: citation-007386
+  area: evidence
+  topic: Paper identity and archived evidence
+  outcome: supported
+  target_ids:
+  - CultureMech:007386
+  evidence_ids:
+  - main-paper
+  - base-paper
+  - hmp-paper
+  - source-links
+  - archive-manifest
+  - readback
+  summary: Three deduplicated DOI citations with PMID aliases, title, authors, year,
+    discovery provenance and local source/Markdown links. Each source's scientific
+    role is explicitly bounded.
+- assessment_id: variant-007386
+  area: quantity
+  topic: Assay formulation and parent preservation
+  outcome: supported
+  target_ids:
+  - CultureMech:007386
+  evidence_ids:
+  - main-paper
+  - main-pdf
+  - base-paper
+  - readback
+  summary: 'Carini 2014 AMS1 phosphite utilization assay: supported differences are
+    explicit, with amount snippets and final basis. Different microarray/methane doses
+    are not mixed into this assay.'
+  details: 'Relative to this imported parent: pyruvate 100 micromolar (parent 1 millimolar);
+    glycine 5 micromolar (parent 50 micromolar); methionine 5 micromolar (parent DL-methionine
+    50 micromolar). The paper does not resolve methionine stereochemistry. | FeCl3
+    1 micromolar (parent 117 nanomolar). The AMS1 base source specifies FeCl3.6H2O,
+    but its 117 nanomolar dose is overridden by the main assay. | Full vitamin mixture:
+    B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6 500 nanomolar, B7 4 nanomolar,
+    B9 4 nanomolar, B12 700 picomolar, myo-inositol 6 micromolar, 4-aminobenzoate
+    60 nanomolar. Parent contains only biotin 4 nanomolar and thiamine 60 micromolar.
+    | AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent magnesium sulfate
+    28 millimolar. Source hydrate forms also specify CaCl2.2H2O, MnCl2.4H2O, ZnSO4.7H2O,
+    CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding parent forms are anhydrous
+    or unspecified. Retain Table 1 molar doses for these unchanged-dose salts, without
+    mass conversion. | No phosphate is added to the alternate-P assay base; omit the
+    phosphate of original AMS1 Table 1. This is not a claim of zero residual phosphate:
+    the Figure 2 inoculum was previously grown on phosphate. | Added phosphite: 1.0
+    micromolar final, numerically equal to the parent''s 0.001 millimolar. This supports
+    the assay, not the complete parent recipe. Phosphite salt is printed as NaPHO3.5H2O;
+    preserve this literal source formula without assigning a corrected stoichiometry
+    or converting to mass. | Base preparation follows Carini 2013 Media preparation
+    (inorganic AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and
+    organics added afterward), rather than the parent''s generic dissolve-all/filter-all
+    steps. Reported base pH 7.5-7.7 is not an optimum or a separate measurement of
+    every 2014 assay.'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only for study-variant amounts; parent values retained
+    definition: Variant evidence does not recertify the complete parent recipe
+    evidence_ids:
+    - main-paper
+    - base-paper
+    - readback
+  metrics:
+  - name: unchanged parent ingredient instances
+    value: 20
+    unit: instances
+    denominator: 20
+    minimum: 0
+    maximum: 20
+    definition: Preservation count, not a scientifically verified concentration count
+- assessment_id: growth-007386
+  area: evidence
+  topic: Scientific name, taxonomy and growth scope
+  outcome: supported
+  target_ids:
+  - CultureMech:007386
+  evidence_ids:
+  - main-paper
+  - main-pdf
+  - taxonomy
+  - readback
+  summary: One HTCC7211 association supported by Figure 2 and Methods, scoped to the
+    named assay variant. NCBITaxon:439493 has species rank despite its strain-like
+    label. No other organism mention or HTCC1062 response is promoted to a positive
+    association.
+- assessment_id: citation-007388
+  area: evidence
+  topic: Paper identity and archived evidence
+  outcome: supported
+  target_ids:
+  - CultureMech:007388
+  evidence_ids:
+  - main-paper
+  - base-paper
+  - hmp-paper
+  - source-links
+  - archive-manifest
+  - readback
+  summary: Three deduplicated DOI citations with PMID aliases, title, authors, year,
+    discovery provenance and local source/Markdown links. Each source's scientific
+    role is explicitly bounded.
+- assessment_id: variant-007388
+  area: quantity
+  topic: Assay formulation and parent preservation
+  outcome: supported
+  target_ids:
+  - CultureMech:007388
+  evidence_ids:
+  - main-paper
+  - main-pdf
+  - base-paper
+  - readback
+  summary: 'Carini 2014 AMS1 glucose 6-phosphate utilization assay: supported differences
+    are explicit, with amount snippets and final basis. Different microarray/methane
+    doses are not mixed into this assay.'
+  details: 'Relative to this imported parent: pyruvate 100 micromolar (parent 1 millimolar);
+    glycine 5 micromolar (parent 50 micromolar); methionine 5 micromolar (parent DL-methionine
+    50 micromolar). The paper does not resolve methionine stereochemistry. | FeCl3
+    1 micromolar (parent 117 nanomolar). The AMS1 base source specifies FeCl3.6H2O,
+    but its 117 nanomolar dose is overridden by the main assay. | Full vitamin mixture:
+    B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6 500 nanomolar, B7 4 nanomolar,
+    B9 4 nanomolar, B12 700 picomolar, myo-inositol 6 micromolar, 4-aminobenzoate
+    60 nanomolar. Parent contains only biotin 4 nanomolar and thiamine 60 micromolar.
+    | AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent magnesium sulfate
+    28 millimolar. Source hydrate forms also specify CaCl2.2H2O, MnCl2.4H2O, ZnSO4.7H2O,
+    CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding parent forms are anhydrous
+    or unspecified. Retain Table 1 molar doses for these unchanged-dose salts, without
+    mass conversion. | No phosphate is added to the alternate-P assay base; omit the
+    phosphate of original AMS1 Table 1. This is not a claim of zero residual phosphate:
+    the Figure 2 inoculum was previously grown on phosphate. | Added glucose 6-phosphate:
+    1.0 micromolar final, numerically equal to the parent''s 0.001 millimolar. This
+    supports the assay, not the complete parent recipe. The paper does not specify
+    D/L stereochemistry for this phosphorus substrate; do not certify the parent''s
+    stereoisomer. Figure 1''s axis says Glucose-5P; Methods, Results and Figure 2
+    identify glucose 6-phosphate. This variant follows those concordant textual identities
+    and retains the figure-label conflict. | Base preparation follows Carini 2013
+    Media preparation (inorganic AMS1 autoclaved, then carbon-dioxide and air sparging;
+    vitamins and organics added afterward), rather than the parent''s generic dissolve-all/filter-all
+    steps. Reported base pH 7.5-7.7 is not an optimum or a separate measurement of
+    every 2014 assay.'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only for study-variant amounts; parent values retained
+    definition: Variant evidence does not recertify the complete parent recipe
+    evidence_ids:
+    - main-paper
+    - base-paper
+    - readback
+  metrics:
+  - name: unchanged parent ingredient instances
+    value: 20
+    unit: instances
+    denominator: 20
+    minimum: 0
+    maximum: 20
+    definition: Preservation count, not a scientifically verified concentration count
+- assessment_id: growth-007388
+  area: evidence
+  topic: Scientific name, taxonomy and growth scope
+  outcome: supported
+  target_ids:
+  - CultureMech:007388
+  evidence_ids:
+  - main-paper
+  - main-pdf
+  - taxonomy
+  - readback
+  summary: One HTCC7211 association supported by Figure 2 and Methods, scoped to the
+    named assay variant. NCBITaxon:439493 has species rank despite its strain-like
+    label. No other organism mention or HTCC1062 response is promoted to a positive
+    association.
+- assessment_id: citation-007389
+  area: evidence
+  topic: Paper identity and archived evidence
+  outcome: supported
+  target_ids:
+  - CultureMech:007389
+  evidence_ids:
+  - main-paper
+  - base-paper
+  - hmp-paper
+  - source-links
+  - archive-manifest
+  - readback
+  summary: Three deduplicated DOI citations with PMID aliases, title, authors, year,
+    discovery provenance and local source/Markdown links. Each source's scientific
+    role is explicitly bounded.
+- assessment_id: variant-007389
+  area: quantity
+  topic: Assay formulation and parent preservation
+  outcome: supported
+  target_ids:
+  - CultureMech:007389
+  evidence_ids:
+  - main-paper
+  - main-pdf
+  - base-paper
+  - readback
+  summary: 'Carini 2014 AMS1 ribose 5-phosphate utilization assay: supported differences
+    are explicit, with amount snippets and final basis. Different microarray/methane
+    doses are not mixed into this assay.'
+  details: 'Relative to this imported parent: pyruvate 100 micromolar (parent 1 millimolar);
+    glycine 5 micromolar (parent 50 micromolar); methionine 5 micromolar (parent DL-methionine
+    50 micromolar). The paper does not resolve methionine stereochemistry. | FeCl3
+    1 micromolar (parent 117 nanomolar). The AMS1 base source specifies FeCl3.6H2O,
+    but its 117 nanomolar dose is overridden by the main assay. | Full vitamin mixture:
+    B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6 500 nanomolar, B7 4 nanomolar,
+    B9 4 nanomolar, B12 700 picomolar, myo-inositol 6 micromolar, 4-aminobenzoate
+    60 nanomolar. Parent contains only biotin 4 nanomolar and thiamine 60 micromolar.
+    | AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent magnesium sulfate
+    28 millimolar. Source hydrate forms also specify CaCl2.2H2O, MnCl2.4H2O, ZnSO4.7H2O,
+    CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding parent forms are anhydrous
+    or unspecified. Retain Table 1 molar doses for these unchanged-dose salts, without
+    mass conversion. | No phosphate is added to the alternate-P assay base; omit the
+    phosphate of original AMS1 Table 1. This is not a claim of zero residual phosphate:
+    the Figure 2 inoculum was previously grown on phosphate. | Added ribose 5-phosphate:
+    1.0 micromolar final, numerically equal to the parent''s 0.001 millimolar. This
+    supports the assay, not the complete parent recipe. The paper does not specify
+    D/L stereochemistry for this phosphorus substrate; do not certify the parent''s
+    stereoisomer. | Base preparation follows Carini 2013 Media preparation (inorganic
+    AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics added
+    afterward), rather than the parent''s generic dissolve-all/filter-all steps. Reported
+    base pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only for study-variant amounts; parent values retained
+    definition: Variant evidence does not recertify the complete parent recipe
+    evidence_ids:
+    - main-paper
+    - base-paper
+    - readback
+  metrics:
+  - name: unchanged parent ingredient instances
+    value: 20
+    unit: instances
+    denominator: 20
+    minimum: 0
+    maximum: 20
+    definition: Preservation count, not a scientifically verified concentration count
+- assessment_id: growth-007389
+  area: evidence
+  topic: Scientific name, taxonomy and growth scope
+  outcome: supported
+  target_ids:
+  - CultureMech:007389
+  evidence_ids:
+  - main-paper
+  - main-pdf
+  - taxonomy
+  - readback
+  summary: One HTCC7211 association supported by Figure 2 and Methods, scoped to the
+    named assay variant. NCBITaxon:439493 has species rank despite its strain-like
+    label. No other organism mention or HTCC1062 response is promoted to a positive
+    association.
+- assessment_id: citation-007390
+  area: evidence
+  topic: Paper identity and archived evidence
+  outcome: supported
+  target_ids:
+  - CultureMech:007390
+  evidence_ids:
+  - main-paper
+  - base-paper
+  - hmp-paper
+  - source-links
+  - archive-manifest
+  - readback
+  summary: Three deduplicated DOI citations with PMID aliases, title, authors, year,
+    discovery provenance and local source/Markdown links. Each source's scientific
+    role is explicitly bounded.
+- assessment_id: variant-007390
+  area: quantity
+  topic: Assay formulation and parent preservation
+  outcome: supported
+  target_ids:
+  - CultureMech:007390
+  evidence_ids:
+  - main-paper
+  - main-pdf
+  - base-paper
+  - readback
+  summary: 'Carini 2014 AMS1 methylphosphonic acid utilization assay: supported differences
+    are explicit, with amount snippets and final basis. Different microarray/methane
+    doses are not mixed into this assay.'
+  details: 'Relative to this imported parent: pyruvate 100 micromolar (parent 1 millimolar);
+    glycine 5 micromolar (parent 50 micromolar); methionine 5 micromolar (parent DL-methionine
+    50 micromolar). The paper does not resolve methionine stereochemistry. | FeCl3
+    1 micromolar (parent 117 nanomolar). The AMS1 base source specifies FeCl3.6H2O,
+    but its 117 nanomolar dose is overridden by the main assay. | Full vitamin mixture:
+    B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6 500 nanomolar, B7 4 nanomolar,
+    B9 4 nanomolar, B12 700 picomolar, myo-inositol 6 micromolar, 4-aminobenzoate
+    60 nanomolar. Parent contains only biotin 4 nanomolar and thiamine 60 micromolar.
+    | AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent magnesium sulfate
+    28 millimolar. Source hydrate forms also specify CaCl2.2H2O, MnCl2.4H2O, ZnSO4.7H2O,
+    CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding parent forms are anhydrous
+    or unspecified. Retain Table 1 molar doses for these unchanged-dose salts, without
+    mass conversion. | No phosphate is added to the alternate-P assay base; omit the
+    phosphate of original AMS1 Table 1. This is not a claim of zero residual phosphate:
+    the Figure 2 inoculum was previously grown on phosphate. | Added methylphosphonic
+    acid: 1.0 micromolar final, numerically equal to the parent''s 0.001 millimolar.
+    This supports the assay, not the complete parent recipe. Use the paper''s substrate
+    identity; no additional protonation/salt-form equivalence is asserted. | Base
+    preparation follows Carini 2013 Media preparation (inorganic AMS1 autoclaved,
+    then carbon-dioxide and air sparging; vitamins and organics added afterward),
+    rather than the parent''s generic dissolve-all/filter-all steps. Reported base
+    pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only for study-variant amounts; parent values retained
+    definition: Variant evidence does not recertify the complete parent recipe
+    evidence_ids:
+    - main-paper
+    - base-paper
+    - readback
+  metrics:
+  - name: unchanged parent ingredient instances
+    value: 20
+    unit: instances
+    denominator: 20
+    minimum: 0
+    maximum: 20
+    definition: Preservation count, not a scientifically verified concentration count
+- assessment_id: growth-007390
+  area: evidence
+  topic: Scientific name, taxonomy and growth scope
+  outcome: supported
+  target_ids:
+  - CultureMech:007390
+  evidence_ids:
+  - main-paper
+  - main-pdf
+  - taxonomy
+  - readback
+  summary: One HTCC7211 association supported by Figure 2 and Methods, scoped to the
+    named assay variant. NCBITaxon:439493 has species rank despite its strain-like
+    label. No other organism mention or HTCC1062 response is promoted to a positive
+    association.
+- assessment_id: citation-007391
+  area: evidence
+  topic: Paper identity and archived evidence
+  outcome: supported
+  target_ids:
+  - CultureMech:007391
+  evidence_ids:
+  - main-paper
+  - base-paper
+  - hmp-paper
+  - source-links
+  - archive-manifest
+  - readback
+  summary: Three deduplicated DOI citations with PMID aliases, title, authors, year,
+    discovery provenance and local source/Markdown links. Each source's scientific
+    role is explicitly bounded.
+- assessment_id: variant-007391
+  area: quantity
+  topic: Assay formulation and parent preservation
+  outcome: supported
+  target_ids:
+  - CultureMech:007391
+  evidence_ids:
+  - main-paper
+  - main-pdf
+  - base-paper
+  - readback
+  summary: 'Carini 2014 AMS1 2-aminoethylphosphonic acid utilization assay: supported
+    differences are explicit, with amount snippets and final basis. Different microarray/methane
+    doses are not mixed into this assay.'
+  details: 'Relative to this imported parent: pyruvate 100 micromolar (parent 1 millimolar);
+    glycine 5 micromolar (parent 50 micromolar); methionine 5 micromolar (parent DL-methionine
+    50 micromolar). The paper does not resolve methionine stereochemistry. | FeCl3
+    1 micromolar (parent 117 nanomolar). The AMS1 base source specifies FeCl3.6H2O,
+    but its 117 nanomolar dose is overridden by the main assay. | Full vitamin mixture:
+    B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6 500 nanomolar, B7 4 nanomolar,
+    B9 4 nanomolar, B12 700 picomolar, myo-inositol 6 micromolar, 4-aminobenzoate
+    60 nanomolar. Parent contains only biotin 4 nanomolar and thiamine 60 micromolar.
+    | AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent magnesium sulfate
+    28 millimolar. Source hydrate forms also specify CaCl2.2H2O, MnCl2.4H2O, ZnSO4.7H2O,
+    CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding parent forms are anhydrous
+    or unspecified. Retain Table 1 molar doses for these unchanged-dose salts, without
+    mass conversion. | No phosphate is added to the alternate-P assay base; omit the
+    phosphate of original AMS1 Table 1. This is not a claim of zero residual phosphate:
+    the Figure 2 inoculum was previously grown on phosphate. | Added 2-aminoethylphosphonic
+    acid: 1.0 micromolar final, numerically equal to the parent''s 0.001 millimolar.
+    This supports the assay, not the complete parent recipe. Use the paper''s substrate
+    identity; no additional protonation/salt-form equivalence is asserted. | Base
+    preparation follows Carini 2013 Media preparation (inorganic AMS1 autoclaved,
+    then carbon-dioxide and air sparging; vitamins and organics added afterward),
+    rather than the parent''s generic dissolve-all/filter-all steps. Reported base
+    pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only for study-variant amounts; parent values retained
+    definition: Variant evidence does not recertify the complete parent recipe
+    evidence_ids:
+    - main-paper
+    - base-paper
+    - readback
+  metrics:
+  - name: unchanged parent ingredient instances
+    value: 20
+    unit: instances
+    denominator: 20
+    minimum: 0
+    maximum: 20
+    definition: Preservation count, not a scientifically verified concentration count
+- assessment_id: growth-007391
+  area: evidence
+  topic: Scientific name, taxonomy and growth scope
+  outcome: supported
+  target_ids:
+  - CultureMech:007391
+  evidence_ids:
+  - main-paper
+  - main-pdf
+  - taxonomy
+  - readback
+  summary: One HTCC7211 association supported by Figure 2 and Methods, scoped to the
+    named assay variant. NCBITaxon:439493 has species rank despite its strain-like
+    label. No other organism mention or HTCC1062 response is promoted to a positive
+    association.
+- assessment_id: citation-007392
+  area: evidence
+  topic: Paper identity and archived evidence
+  outcome: supported
+  target_ids:
+  - CultureMech:007392
+  evidence_ids:
+  - main-paper
+  - base-paper
+  - hmp-paper
+  - source-links
+  - archive-manifest
+  - readback
+  summary: Three deduplicated DOI citations with PMID aliases, title, authors, year,
+    discovery provenance and local source/Markdown links. Each source's scientific
+    role is explicitly bounded.
+- assessment_id: variant-007392
+  area: quantity
+  topic: Assay formulation and parent preservation
+  outcome: supported
+  target_ids:
+  - CultureMech:007392
+  evidence_ids:
+  - main-paper
+  - main-pdf
+  - base-paper
+  - readback
+  summary: 'Carini 2014 AMS1 phosphoserine utilization assay: supported differences
+    are explicit, with amount snippets and final basis. Different microarray/methane
+    doses are not mixed into this assay.'
+  details: 'Relative to this imported parent: pyruvate 100 micromolar (parent 1 millimolar);
+    glycine 5 micromolar (parent 50 micromolar); methionine 5 micromolar (parent DL-methionine
+    50 micromolar). The paper does not resolve methionine stereochemistry. | FeCl3
+    1 micromolar (parent 117 nanomolar). The AMS1 base source specifies FeCl3.6H2O,
+    but its 117 nanomolar dose is overridden by the main assay. | Full vitamin mixture:
+    B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6 500 nanomolar, B7 4 nanomolar,
+    B9 4 nanomolar, B12 700 picomolar, myo-inositol 6 micromolar, 4-aminobenzoate
+    60 nanomolar. Parent contains only biotin 4 nanomolar and thiamine 60 micromolar.
+    | AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent magnesium sulfate
+    28 millimolar. Source hydrate forms also specify CaCl2.2H2O, MnCl2.4H2O, ZnSO4.7H2O,
+    CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding parent forms are anhydrous
+    or unspecified. Retain Table 1 molar doses for these unchanged-dose salts, without
+    mass conversion. | No phosphate is added to the alternate-P assay base; omit the
+    phosphate of original AMS1 Table 1. This is not a claim of zero residual phosphate:
+    the Figure 2 inoculum was previously grown on phosphate. | Added phosphoserine:
+    1.0 micromolar final, numerically equal to the parent''s 0.001 millimolar. This
+    supports the assay, not the complete parent recipe. The paper does not specify
+    D/L stereochemistry for this phosphorus substrate; do not certify the parent''s
+    stereoisomer. | Base preparation follows Carini 2013 Media preparation (inorganic
+    AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics added
+    afterward), rather than the parent''s generic dissolve-all/filter-all steps. Reported
+    base pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only for study-variant amounts; parent values retained
+    definition: Variant evidence does not recertify the complete parent recipe
+    evidence_ids:
+    - main-paper
+    - base-paper
+    - readback
+  metrics:
+  - name: unchanged parent ingredient instances
+    value: 20
+    unit: instances
+    denominator: 20
+    minimum: 0
+    maximum: 20
+    definition: Preservation count, not a scientifically verified concentration count
+- assessment_id: growth-007392
+  area: evidence
+  topic: Scientific name, taxonomy and growth scope
+  outcome: supported
+  target_ids:
+  - CultureMech:007392
+  evidence_ids:
+  - main-paper
+  - main-pdf
+  - taxonomy
+  - readback
+  summary: One HTCC7211 association supported by Figure 2 and Methods, scoped to the
+    named assay variant. NCBITaxon:439493 has species rank despite its strain-like
+    label. No other organism mention or HTCC1062 response is promoted to a positive
+    association.
+findings:
+- finding_id: parent-evidence
+  issue_key: mediadb-151-parent-formulation-evidence
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Imported parent formulations remain uncertified
+  description: Six parent formulations mix amounts/forms or preparation not supported
+    by the named alternate-P assay. Differences are represented in study variants,
+    not silently corrected in parents. Source stereochemistry and phosphite formula
+    ambiguities remain explicit; this is not an assertion that all 120 amounts are
+    wrong.
+  target_ids:
+  - CultureMech:007386
+  - CultureMech:007388
+  - CultureMech:007389
+  - CultureMech:007390
+  - CultureMech:007391
+  - CultureMech:007392
+  field_paths:
+  - ingredients
+  - preparation_steps
+  evidence_ids:
+  - preflight
+  - main-paper
+  - base-paper
+  - readback
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+- finding_id: export-scope
+  issue_key: carini-phosphorus-inline-variant-kgx-scope
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: KGX export cannot preserve these inline variant scopes
+  description: The YAML associations correctly name an inline variant, but the current
+    exporter constructs parent-medium edges without checking that scope. Publishing
+    these edges would inflate the scientific claim. No export or publication was performed.
+  target_ids:
+  - CultureMech:007386
+  - CultureMech:007388
+  - CultureMech:007389
+  - CultureMech:007390
+  - CultureMech:007391
+  - CultureMech:007392
+  field_paths:
+  - target_organisms[0].scoped_to_variant
+  evidence_ids:
+  - exporter
+  - readback
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/export/kgx_export.py
+    role: growth-edge exporter
+actions:
+- action_id: parent-reconciliation
+  description: Reconcile the imported parent formulations against their maintained
+    source scope; correct only with exact source evidence, or retain clearly distinguished
+    source variants.
+  finding_ids:
+  - parent-evidence
+  target_ids:
+  - CultureMech:007386
+  - CultureMech:007388
+  - CultureMech:007389
+  - CultureMech:007390
+  - CultureMech:007391
+  - CultureMech:007392
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Every parent amount correction has DOI/PURL, exact snippet, chemical form and
+    final/stock basis.
+  - Resolve source-form and stereochemistry ambiguity without inventing structures
+    or stoichiometry.
+  - Preserve IDs, scoped growth and prior history; run native checks.
+- action_id: scope-preserving-publication
+  description: Before publication, verify a scope-preserving exporter or an explicitly
+    curated full child-record representation.
+  finding_ids:
+  - export-scope
+  target_ids:
+  - CultureMech:007386
+  - CultureMech:007388
+  - CultureMech:007389
+  - CultureMech:007390
+  - CultureMech:007391
+  - CultureMech:007392
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/export/kgx_export.py
+    role: growth-edge exporter
+  acceptance_checks:
+  - A variant-only growth association cannot become a parent-medium growth edge.
+  - Regression tests cover variant, parent and parent-rank-only taxonomy cases.
+  - No affected edge is published before scope preservation is verified.
+limitations:
+- Focused citation/variant review, not full recipe or corpus approval. Parent concentrations
+  remain uncertified.
+- Methionine and several phosphorus-substrate stereochemistries are unspecified; phosphite
+  salt formula is retained as printed. No unsupported mass conversions.
+- Figure 1 glucose label conflicts with concordant Methods/Results/Figure 2 wording;
+  the conflict remains documented.
+- The HMP paper qualifies its own HTCC1062 thiamin-stock interpretation; no HMP requirement
+  or contaminant dose is inferred for these HTCC7211 assays.
+- Supplement gene-expression values were not curated, and numerical growth metrics
+  were not digitized or transferred from other experiments.
+- Initial network and metadata-only reference failures are retained; post-cached checks
+  use direct primary HTML, not synthetic evidence.
+- Current KGX cannot honor inline variant scope, so no graph export, generated-page
+  publication or GitHub mutations were performed.
+- All started command receipts are terminal when this review is authored. Global merge
+  failures are not disguised as record validation passes.
+- The 325 remaining MediaDB source-owner candidate links are only one unfinished discovery
+  queue; citation exhaustion remains unproven.
+- Next-source Durot full text, Trautwein abstract-only XML and ADP1 taxonomy were
+  archived separately. Their 14 owners were frozen and baseline-checked without adding
+  citations or claiming a scientific review.
