@@ -108,7 +108,7 @@ def build_corpus_map(
             autoescape=select_autoescape(["html"]),
         )
         template = env.get_template("text_map.html")
-        html = template.render(corpus_map_json=json.dumps(payload))
+        html = template.render(corpus_map_json=json.dumps(payload).replace("</", "<\\/"))
         output_html.parent.mkdir(parents=True, exist_ok=True)
         output_html.write_text(html, encoding="utf-8")
         print(f"Rendered interactive text map: {output_html}")

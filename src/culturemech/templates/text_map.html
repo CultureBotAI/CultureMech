@@ -636,7 +636,7 @@
                 const ok = matchesRecord(d);
                 if (ok) visibleCount++;
                 d3.select(this)
-                    .style(" pointer-events", ok ? "auto" : "none")
+                    .style("pointer-events", ok ? "auto" : "none")
                     .attr("opacity", ok ? 0.8 : 0.06);
             });
             document.getElementById("visible-stats").textContent =
