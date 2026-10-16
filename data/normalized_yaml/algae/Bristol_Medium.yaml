@@ -54,6 +54,15 @@ ingredients:
       labels this cell Final Concentration; keep the source molarity and hydrate form
       without importing stock composition as a direct amount. Locator: recipe table,
       row 1, Final Concentration.'
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: 2.94 mM NaNO3
+    explanation: 'ingredients[1].concentration (NaNO3): evidence_only. Hiibel et al.
+      (2015), Materials and Methods / Strains and media, directly states 2.94 mM in
+      the six-salt modified Bristol maintenance medium, not a stock solution. The chemical
+      form and amount match this existing final-medium field. Study pH is 7.7; no stock,
+      preparation or universal condition is inferred. Calculation: none. Canonical amount
+      and existing UTEX evidence unchanged.'
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.17'
@@ -77,6 +86,15 @@ ingredients:
       labels this cell Final Concentration; keep the source molarity and hydrate form
       without importing stock composition as a direct amount. Locator: recipe table,
       row 2, Final Concentration.'
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: 0.17 mM CaCl2 (2H2O)
+    explanation: 'ingredients[2].concentration (CaCl2 x 2 H2O): evidence_only. Hiibel
+      et al. (2015), Materials and Methods / Strains and media, directly states 0.17
+      mM in the six-salt modified Bristol maintenance medium, not a stock solution.
+      The chemical form and amount match this existing final-medium field. Study pH
+      is 7.7; no stock, preparation or universal condition is inferred. Calculation:
+      none. Canonical amount and existing UTEX evidence unchanged.'
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.3'
@@ -103,6 +121,15 @@ ingredients:
       labels this cell Final Concentration; keep the source molarity and hydrate form
       without importing stock composition as a direct amount. Locator: recipe table,
       row 3, Final Concentration.'
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: 0.3 mM MgSO4 (7H2O)
+    explanation: 'ingredients[3].concentration (MgSO4 x 7 H2O): evidence_only. Hiibel
+      et al. (2015), Materials and Methods / Strains and media, directly states 0.3
+      mM in the six-salt modified Bristol maintenance medium, not a stock solution.
+      The chemical form and amount match this existing final-medium field. Study pH
+      is 7.7; no stock, preparation or universal condition is inferred. Calculation:
+      none. Canonical amount and existing UTEX evidence unchanged.'
 - preferred_term: K2HPO4
   concentration:
     value: '0.43'
@@ -130,6 +157,15 @@ ingredients:
       labels this cell Final Concentration; keep the source molarity and hydrate form
       without importing stock composition as a direct amount. Locator: recipe table,
       row 4, Final Concentration.'
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: 0.43 mM K2HPO4
+    explanation: 'ingredients[4].concentration (K2HPO4): evidence_only. Hiibel et al.
+      (2015), Materials and Methods / Strains and media, directly states 0.43 mM in
+      the six-salt modified Bristol maintenance medium, not a stock solution. The chemical
+      form and amount match this existing final-medium field. Study pH is 7.7; no stock,
+      preparation or universal condition is inferred. Calculation: none. Canonical amount
+      and existing UTEX evidence unchanged.'
 - preferred_term: KH2PO4
   concentration:
     value: '1.29'
@@ -157,6 +193,15 @@ ingredients:
       labels this cell Final Concentration; keep the source molarity and hydrate form
       without importing stock composition as a direct amount. Locator: recipe table,
       row 5, Final Concentration.'
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: 1.29 mM KH2PO4
+    explanation: 'ingredients[5].concentration (KH2PO4): evidence_only. Hiibel et al.
+      (2015), Materials and Methods / Strains and media, directly states 1.29 mM in
+      the six-salt modified Bristol maintenance medium, not a stock solution. The chemical
+      form and amount match this existing final-medium field. Study pH is 7.7; no stock,
+      preparation or universal condition is inferred. Calculation: none. Canonical amount
+      and existing UTEX evidence unchanged.'
 - preferred_term: NaCl
   concentration:
     value: '0.43'
@@ -180,6 +225,15 @@ ingredients:
       labels this cell Final Concentration; keep the source molarity and hydrate form
       without importing stock composition as a direct amount. Locator: recipe table,
       row 6, Final Concentration.'
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: 0.43 mM NaCl
+    explanation: 'ingredients[6].concentration (NaCl): evidence_only. Hiibel et al.
+      (2015), Materials and Methods / Strains and media, directly states 0.43 mM in
+      the six-salt modified Bristol maintenance medium, not a stock solution. The chemical
+      form and amount match this existing final-medium field. Study pH is 7.7; no stock,
+      preparation or universal condition is inferred. Calculation: none. Canonical amount
+      and existing UTEX evidence unchanged.'
 solutions: []
 preparation_steps:
 - step_number: 1
@@ -414,6 +468,18 @@ curation_history:
     "reason": "Add the inspected formulation/relationship sources.", "reference":
     "https://utex.org/products/bristol-nacl-medium", "snippet": "Prepare Bristol Medium
     through step one."}]'
+- timestamp: '2026-10-14T04:22:31.227356+00:00'
+  curator: codex
+  action: ADDED_EGJM_OR_HIIBEL_MAINTENANCE_CITATION
+  notes: 'Added archived publication metadata, exact excerpts and qualified scientific-name/NCBI
+    rank mappings. Added evidence for six unchanged final salt concentrations and
+    11 maintenance-cultivation observations: eight with species-level terms and three
+    with parent-only mappings in explanation, not term. Wastewater outcomes are separate.
+    Preserved all previous claims, quantities, physical states, links and evidence;
+    no export or publication.'
+  source: doi:10.3389/fenrg.2015.00020
+  changes: 'This owner: +1 citation; +0 inline variants; +6 concentration evidence
+    items; +11 growth observations. No amount values changed.'
 references:
 - reference: UTEX:bristol-medium
 - reference: https://utex.org/products/bristol-medium
@@ -430,6 +496,92 @@ references:
     accessed_on=2026-10-10. Exact recipe or study formulation and preparation stage
     are retained; source conflicts are not silently repaired. Recipe publication year
     is unknown; website/PDF copyright is not used as publication year.
+- reference: doi:10.3389/fenrg.2015.00020
+  title: Evaluation of Diverse Microalgal Species as Potential Biofuel Feedstocks
+    Grown Using Municipal Wastewater
+  authors: Hiibel, Sage R.; Lemos, Mark S.; Kelly, Brian P.; Cushman, John C.
+  year: 2015
+  notes: 'source_type=journal_article; discovery_mode=cross_reference; accessed_on=2026-10-14;
+    source_url=https://www.frontiersin.org/journals/energy-research/articles/10.3389/fenrg.2015.00020/full;
+    raw_archive=references_cache/papers/primary_html/2asw-frontiers-2015-20261014.html;
+    markdown_archive=references_cache/papers/primary_html/2asw-frontiers-2015-20261014.md;
+    access_scope=Publisher full HTML, Strains and media, Table 1 and footnotes; wastewater
+    assays kept separate. locator=Materials and Methods / Strains and media; Table
+    1 freshwater rows and footnotes b-d; exact excerpt="The freshwater Neochloris
+    strains were maintained on Bold\u2019s modified Bristol medium". The six directly
+    reported salt forms and millimolar values match ingredients[1:7] of this liquid
+    Bristol owner. The study specifies pH 7.7, room temperature and an 18/6 h light/dark
+    cycle for maintenance. These are study conditions, not universal optima or new
+    canonical values. No composition difference from the six stated parent salts is
+    demonstrated; no new recipe variant is invented. Stock preparation and sterilization
+    are not independently certified by this paper. Wastewater centrate assays, acclimation,
+    and maxima in Table 1 are separate and are not Bristol concentration or growth-rate
+    values. The maintenance section cites Bold 1949, while the acclimation section
+    cites Sandnes 2006; no details are inherited from either uninspected base reference.
+    Organism inventory: reported scientific name=Neochloris aquatica; strain=UTEX
+    138; accepted study name=Neochloris aquatica; canonical scientific name=Neochloris
+    aquatica; NCBITaxon:3099; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3099; lookup_date=2026-10-14;
+    Verified species-level name match, not an exact strain taxon or independent biological
+    identification | reported scientific name=Neochloris minuta; strain=UTEX 776;
+    accepted study name=Neochloris minuta; canonical scientific name=Ettlia minuta;
+    NCBITaxon:3097; actual rank=species; taxonomy_match=verified_synonym_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3097; lookup_date=2026-10-14;
+    Verified species-level name match, not an exact strain taxon or independent biological
+    identification | reported scientific name=Neochloris pyrenoidosa; strain=UTEX
+    777; accepted study name=Neochloris pyrenoidosa; canonical scientific name=Neochloris
+    pyrenoidosa; NCBITaxon:3400314; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3400314;
+    lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+    taxon or independent biological identification | reported scientific name=Neochloris
+    oleoabundans; strain=UTEX 1185; accepted study name=Neochloris oleoabundans; canonical
+    scientific name=Ettlia oleoabundans; NCBITaxon:1127754; actual rank=species; taxonomy_match=verified_synonym_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1127754;
+    lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+    taxon or independent biological identification | reported scientific name=Neochloris
+    pseudostigmata; strain=UTEX 1249; accepted study name=Neochloris pseudostigmata;
+    canonical scientific name=Neochloris; NCBITaxon:3098; actual rank=genus; taxonomy_match=parent_rank_only;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3098; lookup_date=2026-10-14;
+    Reported name and checked spelling/strain queries yielded no exact match; Neochloris
+    is a verified genus matching the reported classification, not a species or strain
+    identity. Search misses are not proof of absence | reported scientific name=Neochloris
+    cohaerens; strain=UTEX 1707; accepted study name=Neochloris cohaerens; canonical
+    scientific name=Ettlia cohaerens; NCBITaxon:577485; actual rank=species; taxonomy_match=verified_synonym_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=577485;
+    lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+    taxon or independent biological identification | reported scientific name=Neochloris
+    vigensis; strain=UTEX 1981; accepted study name=Neochloris vigensis; canonical
+    scientific name=Neochloris vigensis; NCBITaxon:3100; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3100; lookup_date=2026-10-14;
+    Verified species-level name match, not an exact strain taxon or independent biological
+    identification | reported scientific name=Neochloris fusispora; strain=UTEX b778;
+    accepted study name=Ettlia fusispora; canonical scientific name=Ettlia; NCBITaxon:577483;
+    actual rank=genus; taxonomy_match=parent_rank_only; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=577483;
+    lookup_date=2026-10-14; Table 1 footnote gives Ettlia fusispora; no exact NCBI
+    match verified for that name | reported scientific name=Neochloris terrestris;
+    strain=UTEX b947; accepted study name=Ettlia terrestris; canonical scientific
+    name=Ettlia; NCBITaxon:577483; actual rank=genus; taxonomy_match=parent_rank_only;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=577483;
+    lookup_date=2026-10-14; Table 1 footnote gives Ettlia terrestris; no exact NCBI
+    match verified for that name. Historical Neochloris terrestris has an NCBI node
+    but is not substituted for the footnote''s Ettlia concept | reported scientific
+    name=Neochloris wimmeri; strain=CCAP 213/4; accepted study name=Ettlia carotinosa;
+    canonical scientific name=Ettlia carotinosa; NCBITaxon:707317; actual rank=species;
+    taxonomy_match=paper_footnote_name_match_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=707317;
+    lookup_date=2026-10-14; Table 1 footnote d identifies CCAP 213/4 as Ettlia carotinosa.
+    NCBI maps the historical name Neochloris wimmeri to Chlorococcum wimmeri (NCBITaxon:1074462),
+    a different species; preserve both observations without claiming their synonymy
+    or independent strain reidentification | reported scientific name=Neochloris conjuncta;
+    strain=CCAP 254/1; accepted study name=Neochloris conjuncta; canonical scientific
+    name=Neochloris conjuncta; NCBITaxon:1521736; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1521736;
+    lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+    taxon or independent biological identification. Positive native entries are limited
+    to maintenance cultivation on the stated six-salt formulation; three parent-only
+    mappings leave term absent. The paper-reported footnote identification of CCAP
+    213/4 is retained with its conflict explicitly qualified. Taxonomy sources=references_cache/papers/taxonomy/hiibel-maintenance-20261014.xml
+    and references_cache/papers/taxonomy/hiibel-followup-20261014.xml. No centrate
+    growth metrics, negative maintenance claims, or optimum conditions are inferred.'
 original_name: Bristol Medium
 organism_culture_type: isolate
 target_organisms:
@@ -449,6 +601,264 @@ target_organisms:
       explanation: Literature evidence supports qualitative growth of Chlorella pyrenoidosa
         on commercial Bristol medium as a comparator.
     is_max_attainment: false
+- preferred_term: Neochloris aquatica
+  strain: UTEX 138
+  evidence:
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: The freshwater Neochloris strains were maintained on Bold’s modified
+      Bristol medium
+    explanation: 'Supports maintenance cultivation on this liquid six-salt Bristol
+      formulation. Locator: Materials and Methods / Strains and media together with
+      Table 1 freshwater row for UTEX 138. reported scientific name=Neochloris aquatica;
+      strain=UTEX 138; accepted study name=Neochloris aquatica; canonical scientific
+      name=Neochloris aquatica; NCBITaxon:3099; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+      lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3099;
+      lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+      taxon or independent biological identification. All six reported salt forms
+      and millimolar amounts match the parent; study conditions are pH 7.7, room temperature,
+      18/6 h light/dark. Stock preparation is not established. Table 1 centrate maxima
+      and zero entries are separate wastewater results, not negative Bristol growth
+      or growth metrics. No claim of an optimum, genus-wide growth or independent
+      strain reidentification. Taxonomy XML archives are linked in the paper bibliography
+      notes.'
+  term:
+    id: NCBITaxon:3099
+    label: Neochloris aquatica
+- preferred_term: Neochloris minuta
+  strain: UTEX 776
+  evidence:
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: The freshwater Neochloris strains were maintained on Bold’s modified
+      Bristol medium
+    explanation: 'Supports maintenance cultivation on this liquid six-salt Bristol
+      formulation. Locator: Materials and Methods / Strains and media together with
+      Table 1 freshwater row for UTEX 776. reported scientific name=Neochloris minuta;
+      strain=UTEX 776; accepted study name=Neochloris minuta; canonical scientific
+      name=Ettlia minuta; NCBITaxon:3097; actual rank=species; taxonomy_match=verified_synonym_at_species_rank;
+      lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3097;
+      lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+      taxon or independent biological identification. All six reported salt forms
+      and millimolar amounts match the parent; study conditions are pH 7.7, room temperature,
+      18/6 h light/dark. Stock preparation is not established. Table 1 centrate maxima
+      and zero entries are separate wastewater results, not negative Bristol growth
+      or growth metrics. No claim of an optimum, genus-wide growth or independent
+      strain reidentification. Taxonomy XML archives are linked in the paper bibliography
+      notes.'
+  term:
+    id: NCBITaxon:3097
+    label: Ettlia minuta
+- preferred_term: Neochloris pyrenoidosa
+  strain: UTEX 777
+  evidence:
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: The freshwater Neochloris strains were maintained on Bold’s modified
+      Bristol medium
+    explanation: 'Supports maintenance cultivation on this liquid six-salt Bristol
+      formulation. Locator: Materials and Methods / Strains and media together with
+      Table 1 freshwater row for UTEX 777. reported scientific name=Neochloris pyrenoidosa;
+      strain=UTEX 777; accepted study name=Neochloris pyrenoidosa; canonical scientific
+      name=Neochloris pyrenoidosa; NCBITaxon:3400314; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+      lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3400314;
+      lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+      taxon or independent biological identification. All six reported salt forms
+      and millimolar amounts match the parent; study conditions are pH 7.7, room temperature,
+      18/6 h light/dark. Stock preparation is not established. Table 1 centrate maxima
+      and zero entries are separate wastewater results, not negative Bristol growth
+      or growth metrics. No claim of an optimum, genus-wide growth or independent
+      strain reidentification. Taxonomy XML archives are linked in the paper bibliography
+      notes.'
+  term:
+    id: NCBITaxon:3400314
+    label: Neochloris pyrenoidosa
+- preferred_term: Neochloris oleoabundans
+  strain: UTEX 1185
+  evidence:
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: The freshwater Neochloris strains were maintained on Bold’s modified
+      Bristol medium
+    explanation: 'Supports maintenance cultivation on this liquid six-salt Bristol
+      formulation. Locator: Materials and Methods / Strains and media together with
+      Table 1 freshwater row for UTEX 1185. reported scientific name=Neochloris oleoabundans;
+      strain=UTEX 1185; accepted study name=Neochloris oleoabundans; canonical scientific
+      name=Ettlia oleoabundans; NCBITaxon:1127754; actual rank=species; taxonomy_match=verified_synonym_at_species_rank;
+      lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1127754;
+      lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+      taxon or independent biological identification. All six reported salt forms
+      and millimolar amounts match the parent; study conditions are pH 7.7, room temperature,
+      18/6 h light/dark. Stock preparation is not established. Table 1 centrate maxima
+      and zero entries are separate wastewater results, not negative Bristol growth
+      or growth metrics. No claim of an optimum, genus-wide growth or independent
+      strain reidentification. Taxonomy XML archives are linked in the paper bibliography
+      notes.'
+  term:
+    id: NCBITaxon:1127754
+    label: Ettlia oleoabundans
+- preferred_term: Neochloris pseudostigmata
+  strain: UTEX 1249
+  evidence:
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: The freshwater Neochloris strains were maintained on Bold’s modified
+      Bristol medium
+    explanation: 'Supports maintenance cultivation on this liquid six-salt Bristol
+      formulation. Locator: Materials and Methods / Strains and media together with
+      Table 1 freshwater row for UTEX 1249. reported scientific name=Neochloris pseudostigmata;
+      strain=UTEX 1249; accepted study name=Neochloris pseudostigmata; canonical scientific
+      name=Neochloris; NCBITaxon:3098; actual rank=genus; taxonomy_match=parent_rank_only;
+      lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3098;
+      lookup_date=2026-10-14; Reported name and checked spelling/strain queries yielded
+      no exact match; Neochloris is a verified genus matching the reported classification,
+      not a species or strain identity. Search misses are not proof of absence. All
+      six reported salt forms and millimolar amounts match the parent; study conditions
+      are pH 7.7, room temperature, 18/6 h light/dark. Stock preparation is not established.
+      Table 1 centrate maxima and zero entries are separate wastewater results, not
+      negative Bristol growth or growth metrics. No claim of an optimum, genus-wide
+      growth or independent strain reidentification. Taxonomy XML archives are linked
+      in the paper bibliography notes.'
+- preferred_term: Neochloris cohaerens
+  strain: UTEX 1707
+  evidence:
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: The freshwater Neochloris strains were maintained on Bold’s modified
+      Bristol medium
+    explanation: 'Supports maintenance cultivation on this liquid six-salt Bristol
+      formulation. Locator: Materials and Methods / Strains and media together with
+      Table 1 freshwater row for UTEX 1707. reported scientific name=Neochloris cohaerens;
+      strain=UTEX 1707; accepted study name=Neochloris cohaerens; canonical scientific
+      name=Ettlia cohaerens; NCBITaxon:577485; actual rank=species; taxonomy_match=verified_synonym_at_species_rank;
+      lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=577485;
+      lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+      taxon or independent biological identification. All six reported salt forms
+      and millimolar amounts match the parent; study conditions are pH 7.7, room temperature,
+      18/6 h light/dark. Stock preparation is not established. Table 1 centrate maxima
+      and zero entries are separate wastewater results, not negative Bristol growth
+      or growth metrics. No claim of an optimum, genus-wide growth or independent
+      strain reidentification. Taxonomy XML archives are linked in the paper bibliography
+      notes.'
+  term:
+    id: NCBITaxon:577485
+    label: Ettlia cohaerens
+- preferred_term: Neochloris vigensis
+  strain: UTEX 1981
+  evidence:
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: The freshwater Neochloris strains were maintained on Bold’s modified
+      Bristol medium
+    explanation: 'Supports maintenance cultivation on this liquid six-salt Bristol
+      formulation. Locator: Materials and Methods / Strains and media together with
+      Table 1 freshwater row for UTEX 1981. reported scientific name=Neochloris vigensis;
+      strain=UTEX 1981; accepted study name=Neochloris vigensis; canonical scientific
+      name=Neochloris vigensis; NCBITaxon:3100; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+      lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3100;
+      lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+      taxon or independent biological identification. All six reported salt forms
+      and millimolar amounts match the parent; study conditions are pH 7.7, room temperature,
+      18/6 h light/dark. Stock preparation is not established. Table 1 centrate maxima
+      and zero entries are separate wastewater results, not negative Bristol growth
+      or growth metrics. No claim of an optimum, genus-wide growth or independent
+      strain reidentification. Taxonomy XML archives are linked in the paper bibliography
+      notes.'
+  term:
+    id: NCBITaxon:3100
+    label: Neochloris vigensis
+- preferred_term: Ettlia fusispora
+  strain: UTEX b778
+  evidence:
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: The freshwater Neochloris strains were maintained on Bold’s modified
+      Bristol medium
+    explanation: 'Supports maintenance cultivation on this liquid six-salt Bristol
+      formulation. Locator: Materials and Methods / Strains and media together with
+      Table 1 freshwater row for UTEX b778. reported scientific name=Neochloris fusispora;
+      strain=UTEX b778; accepted study name=Ettlia fusispora; canonical scientific
+      name=Ettlia; NCBITaxon:577483; actual rank=genus; taxonomy_match=parent_rank_only;
+      lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=577483;
+      lookup_date=2026-10-14; Table 1 footnote gives Ettlia fusispora; no exact NCBI
+      match verified for that name. All six reported salt forms and millimolar amounts
+      match the parent; study conditions are pH 7.7, room temperature, 18/6 h light/dark.
+      Stock preparation is not established. Table 1 centrate maxima and zero entries
+      are separate wastewater results, not negative Bristol growth or growth metrics.
+      No claim of an optimum, genus-wide growth or independent strain reidentification.
+      Taxonomy XML archives are linked in the paper bibliography notes.'
+- preferred_term: Ettlia terrestris
+  strain: UTEX b947
+  evidence:
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: The freshwater Neochloris strains were maintained on Bold’s modified
+      Bristol medium
+    explanation: 'Supports maintenance cultivation on this liquid six-salt Bristol
+      formulation. Locator: Materials and Methods / Strains and media together with
+      Table 1 freshwater row for UTEX b947. reported scientific name=Neochloris terrestris;
+      strain=UTEX b947; accepted study name=Ettlia terrestris; canonical scientific
+      name=Ettlia; NCBITaxon:577483; actual rank=genus; taxonomy_match=parent_rank_only;
+      lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=577483;
+      lookup_date=2026-10-14; Table 1 footnote gives Ettlia terrestris; no exact NCBI
+      match verified for that name. Historical Neochloris terrestris has an NCBI node
+      but is not substituted for the footnote''s Ettlia concept. All six reported
+      salt forms and millimolar amounts match the parent; study conditions are pH
+      7.7, room temperature, 18/6 h light/dark. Stock preparation is not established.
+      Table 1 centrate maxima and zero entries are separate wastewater results, not
+      negative Bristol growth or growth metrics. No claim of an optimum, genus-wide
+      growth or independent strain reidentification. Taxonomy XML archives are linked
+      in the paper bibliography notes.'
+- preferred_term: Ettlia carotinosa
+  strain: CCAP 213/4
+  evidence:
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: The freshwater Neochloris strains were maintained on Bold’s modified
+      Bristol medium
+    explanation: 'Supports maintenance cultivation on this liquid six-salt Bristol
+      formulation. Locator: Materials and Methods / Strains and media together with
+      Table 1 freshwater row for CCAP 213/4. reported scientific name=Neochloris wimmeri;
+      strain=CCAP 213/4; accepted study name=Ettlia carotinosa; canonical scientific
+      name=Ettlia carotinosa; NCBITaxon:707317; actual rank=species; taxonomy_match=paper_footnote_name_match_at_species_rank;
+      lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=707317;
+      lookup_date=2026-10-14; Table 1 footnote d identifies CCAP 213/4 as Ettlia carotinosa.
+      NCBI maps the historical name Neochloris wimmeri to Chlorococcum wimmeri (NCBITaxon:1074462),
+      a different species; preserve both observations without claiming their synonymy
+      or independent strain reidentification. All six reported salt forms and millimolar
+      amounts match the parent; study conditions are pH 7.7, room temperature, 18/6
+      h light/dark. Stock preparation is not established. Table 1 centrate maxima
+      and zero entries are separate wastewater results, not negative Bristol growth
+      or growth metrics. No claim of an optimum, genus-wide growth or independent
+      strain reidentification. Taxonomy XML archives are linked in the paper bibliography
+      notes.'
+  term:
+    id: NCBITaxon:707317
+    label: Ettlia carotinosa
+- preferred_term: Neochloris conjuncta
+  strain: CCAP 254/1
+  evidence:
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: The freshwater Neochloris strains were maintained on Bold’s modified
+      Bristol medium
+    explanation: 'Supports maintenance cultivation on this liquid six-salt Bristol
+      formulation. Locator: Materials and Methods / Strains and media together with
+      Table 1 freshwater row for CCAP 254/1. reported scientific name=Neochloris conjuncta;
+      strain=CCAP 254/1; accepted study name=Neochloris conjuncta; canonical scientific
+      name=Neochloris conjuncta; NCBITaxon:1521736; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+      lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1521736;
+      lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+      taxon or independent biological identification. All six reported salt forms
+      and millimolar amounts match the parent; study conditions are pH 7.7, room temperature,
+      18/6 h light/dark. Stock preparation is not established. Table 1 centrate maxima
+      and zero entries are separate wastewater results, not negative Bristol growth
+      or growth metrics. No claim of an optimum, genus-wide growth or independent
+      strain reidentification. Taxonomy XML archives are linked in the paper bibliography
+      notes.'
+  term:
+    id: NCBITaxon:1521736
+    label: Neochloris conjuncta
 variant_children:
 - path: data/normalized_yaml/algae/Botryococcus_Medium.yaml
   relationship: SUPPLEMENTED_VARIANT

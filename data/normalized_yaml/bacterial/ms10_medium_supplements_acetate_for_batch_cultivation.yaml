@@ -320,6 +320,16 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-10-13T10:19:57.435651+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_AND_SOURCE_SCOPE
+  notes: Added 3 verified paper citation(s) with archived raw/Markdown provenance
+    and organism taxonomy assessment. Added one DOI/snippet-backed source-described
+    variant and qualitative growth scoped only to that variant. Preserved all parent
+    ingredients, generic preparation and prior history; no parent concentration certification
+    or generated publication.
+  source: doi:10.1128/AEM.69.6.3462-3468.2003; doi:10.1111/j.1365-2672.1995.tb03131.x;
+    doi:10.1128/JB.01768-06
 media_term:
   preferred_term: MediaDB Medium 414
   term:
@@ -331,3 +341,145 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1128/AEM.69.6.3462-3468.2003
+  title: 'Glucose metabolism in Lactococcus lactis MG1363 under different aeration
+    conditions: requirement of acetate to sustain growth under microaerobic conditions.'
+  authors: Nordkvist M; Jensen NB; Villadsen J
+  year: 2003
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=127, medID=414. Exact SQL joins establish
+    discovery provenance, not primary growth measurements. PubMed identity metadata
+    checked; the historical Mazumdar import note remains database provenance. No correction/retraction
+    notice appears in the inspected PubMed entry; this is a bounded notice check.
+    PMID:12788751; PMC161490. Full article/Markdown=references_cache/papers/primary_html/nordkvist-2003-pmc.{html,md};
+    PubMed=references_cache/papers/PMID_12788751.{xml,md}; Figure 1 raw/Markdown=references_cache/papers/primary_images/nordkvist-2003-figure1.{jpg,md}.
+    Inspected Methods, growth-results passages, Figure 1 all panels and Table 2. Variant_destination=''Nordkvist
+    2003 microaerobic MS10 with timed acetate addition''; assay=Figure 1B. Source-described
+    bioreactor assay, not a fully normalized expansion of MS10. The cited Cocaign-Bousquet
+    1995 base is available only as an abstract. The parent''s 42.92 mM K2HPO4 and
+    66.13 mM KH2PO4 are not certified: Nordkvist specifies threefold-higher phosphate
+    for precultures, and the complete base formula needed to resolve the reactor concentrations
+    is unavailable. Do not automatically divide these parent amounts or import preculture
+    buffering into the reactor. Chemical hydrates, stereochemistry, and the generic
+    parent filter-sterilization step remain unverified. Reported organism=Lactococcus
+    lactis subsp. lactis MG1363; scientific name and canonical label=Lactococcus cremoris
+    subsp. cremoris MG1363; NCBITaxon:416870; rank=strain; taxonomy_match=exact strain
+    with documented historical reclassification. Wegmann 2007 Discussion (doi:10.1128/JB.01768-06)
+    explicitly reconciles the former lactis classification with the later cremoris
+    classification; NCBI lists the older cremoris name as a synonym of its current
+    node. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=416870&retmode=xml;
+    archive=references_cache/papers/taxonomy/mg1363-20261013.{xml,md}. The article''s
+    analytical 0.22-micrometer filtration concerns extracellular-metabolite samples,
+    not a verified medium-sterilization method. Figure 4''s later rescue experiment
+    is distinct from Figure 1B''s timed supplementation; no outcomes are pooled. Organism
+    inventory is bounded to these cultivation passages; no organisms from cited references
+    become target entries.'
+- reference: doi:10.1111/j.1365-2672.1995.tb03131.x
+  title: Rational development of a simple synthetic medium for the sustained growth
+    of Lactococcus lactis
+  authors: M. Cocaign‐Bousquet; C. Garrigues; L. Novak; N.D. Lindley; P. Loublere
+  year: 1995
+  notes: source_type=publisher_supplied_journal_abstract; discovery_mode=Nordkvist_2003_reference_7;
+    accessed_on=2026-10-13; Primary abstract via Crossref, not full article. Raw/Markdown=references_cache/papers/primary_abstracts/cocaign-bousquet-1995-crossref.{json,md}.
+    DOI/title/year agree with the cited base protocol; no PMID resolved, which does
+    not establish absence of a PMID. Last-author spelling is Loublere in the Crossref
+    deposit versus Loubiere in Nordkvist's bibliography; retained without silent correction.
+    The abstract does not provide a complete MS10 composition. Reported organisms=Lactococcus
+    lactis subsp. lactis NCDO 2118 (vegetable strain) and IL 1403 (dairy strain),
+    exact excerpt='vegetable (NCDO 2118) and dairy origin (IL 1403)'. Both use verified
+    parent scientific name=Lactococcus lactis, NCBITaxon:1358, rank=species, taxonomy_match=parent_rank_only.
+    Parent taxonomy lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1590,1359,1358&retmode=xml;
+    archive=references_cache/papers/taxonomy/lab-parents-20261013.{xml,md}. Queried
+    strain aliases did not resolve exact strain nodes; parent_rank_only is a bounded
+    fallback, not proof that no alternate-name node exists. These are supporting-protocol
+    organisms, not evidence of their growth on MG1363's Nordkvist variant. Publisher
+    access was unavailable; the HAL notice is metadata-only, not a full-text substitute.
+- reference: doi:10.1128/JB.01768-06
+  title: Complete genome sequence of the prototype lactic acid bacterium Lactococcus
+    lactis subsp. cremoris MG1363.
+  authors: Wegmann U; O'Connell-Motherway M; Zomer A; Buist G; Shearman C; Canchaya
+    C; Ventura M; Goesmann A; Gasson MJ; Kuipers OP; van Sinderen D; Kok J
+  year: 2007
+  notes: source_type=journal_article; discovery_mode=MG1363_historical_taxonomy_reconciliation;
+    accessed_on=2026-10-13; PMID:17307855; PMC1855848. Full article/Markdown=references_cache/papers/primary_html/wegmann-2007-pmc.{html,md};
+    PubMed=references_cache/papers/PMID_17307855.{xml,md}. Inspected Discussion paragraph
+    on historical subspecies classification. Exact identity excerpt='L. lactis MG1363
+    was reclassified as L. lactis subsp. cremoris'. Reported organism=Lactococcus
+    lactis subsp. lactis MG1363; scientific name and canonical label=Lactococcus cremoris
+    subsp. cremoris MG1363; NCBITaxon:416870; rank=strain; taxonomy_match=exact strain
+    with documented historical reclassification. Wegmann 2007 Discussion (doi:10.1128/JB.01768-06)
+    explicitly reconciles the former lactis classification with the later cremoris
+    classification; NCBI lists the older cremoris name as a synonym of its current
+    node. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=416870&retmode=xml;
+    archive=references_cache/papers/taxonomy/mg1363-20261013.{xml,md}. This citation
+    resolves organism identity only; it is not a new medium formulation or independent
+    growth experiment for this record. Inventory is limited to the identity paragraph,
+    not every genome-comparison organism elsewhere in the article.
+variants:
+- name: Nordkvist 2003 microaerobic MS10 with timed acetate addition
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  description: 'Source-described bioreactor assay, not a fully normalized expansion
+    of MS10. The cited Cocaign-Bousquet 1995 base is available only as an abstract.
+    The parent''s 42.92 mM K2HPO4 and 66.13 mM KH2PO4 are not certified: Nordkvist
+    specifies threefold-higher phosphate for precultures, and the complete base formula
+    needed to resolve the reactor concentrations is unavailable. Do not automatically
+    divide these parent amounts or import preculture buffering into the reactor. Chemical
+    hydrates, stereochemistry, and the generic parent filter-sterilization step remain
+    unverified. '
+  modifications:
+  - Use source-specified MnSO4 at 1.25e-5 g/liter, not the parent's manganese chloride.
+    Hydration is not specified; no molar conversion is applied.
+  - Keep reactor medium separate from the threefold-phosphate preculture. Exact normalized
+    reactor phosphate amounts remain unresolved pending the full MS10 base source.
+  - Add 0.3 g/liter sodium acetate after 7 h 38 min of microaerobic cultivation; do
+    not interpret the parent's static 3.657 mM acetate as an initial concentration.
+  evidence:
+  - reference: doi:10.1128/AEM.69.6.3462-3468.2003
+    supports: SUPPORT
+    snippet: MnSO 4 (1.25 × 10 −5 g · liter −1 )
+    explanation: 'Supports variants[].modifications manganese identity and literal
+      mass dose; Nordkvist Materials and Methods, medium paragraph. Separate exact
+      timed-addition excerpt=''0.3 g of sodium acetate liter −1 was added after 7
+      h 38 min''; Figure 1B caption and Table 2. Source-described bioreactor assay,
+      not a fully normalized expansion of MS10. The cited Cocaign-Bousquet 1995 base
+      is available only as an abstract. The parent''s 42.92 mM K2HPO4 and 66.13 mM
+      KH2PO4 are not certified: Nordkvist specifies threefold-higher phosphate for
+      precultures, and the complete base formula needed to resolve the reactor concentrations
+      is unavailable. Do not automatically divide these parent amounts or import preculture
+      buffering into the reactor. Chemical hydrates, stereochemistry, and the generic
+      parent filter-sterilization step remain unverified. '
+target_organisms:
+- preferred_term: Lactococcus cremoris subsp. cremoris MG1363
+  strain: MG1363
+  term:
+    id: NCBITaxon:416870
+    label: Lactococcus cremoris subsp. cremoris MG1363
+  scoped_to_variant: Nordkvist 2003 microaerobic MS10 with timed acetate addition
+  evidence:
+  - reference: doi:10.1128/AEM.69.6.3462-3468.2003
+    supports: SUPPORT
+    snippet: Biomass and end product time courses under microaerobic conditions
+    explanation: 'Figure 1B top-row diamond biomass curve increases; caption and full
+      Methods establish the treatment and MG1363 identity. The microaerobic bioreactor
+      experiment is at 30 degrees C, 350 rpm, pH 6.6, DOT 5%, working volume 1.5 liters.
+      Unamended panel A later slows despite residual glucose; this is not no growth,
+      and acetate is not asserted universally necessary in every aeration regime.
+      No rates, yields, maxima or optimum are imported. Reported organism=Lactococcus
+      lactis subsp. lactis MG1363; scientific name and canonical label=Lactococcus
+      cremoris subsp. cremoris MG1363; NCBITaxon:416870; rank=strain; taxonomy_match=exact
+      strain with documented historical reclassification. Wegmann 2007 Discussion
+      (doi:10.1128/JB.01768-06) explicitly reconciles the former lactis classification
+      with the later cremoris classification; NCBI lists the older cremoris name as
+      a synonym of its current node. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=416870&retmode=xml;
+      archive=references_cache/papers/taxonomy/mg1363-20261013.{xml,md}. Growth is
+      limited to the named source-described variant, not the unmodified parent. Source-described
+      bioreactor assay, not a fully normalized expansion of MS10. The cited Cocaign-Bousquet
+      1995 base is available only as an abstract. The parent''s 42.92 mM K2HPO4 and
+      66.13 mM KH2PO4 are not certified: Nordkvist specifies threefold-higher phosphate
+      for precultures, and the complete base formula needed to resolve the reactor
+      concentrations is unavailable. Do not automatically divide these parent amounts
+      or import preculture buffering into the reactor. Chemical hydrates, stereochemistry,
+      and the generic parent filter-sterilization step remain unverified. Current
+      KGX export does not honor scoped_to_variant; no unscoped parent-medium edge
+      is authorized or published. '

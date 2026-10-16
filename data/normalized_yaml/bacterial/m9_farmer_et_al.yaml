@@ -109,6 +109,14 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T21:53:14.388328+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:9251207
 media_term:
   preferred_term: MediaDB Medium 122
   term:
@@ -120,3 +128,37 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:9251207
+  title: Reduction of aerobic acetate production by Escherichia coli.
+  authors: Farmer WR; Liao JC
+  year: 1997
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:122;
+    discovery_sourceID=35; source_url=https://doi.org/10.1128/aem.63.8.3205-3210.1997;
+    alternate_identifier=doi:10.1128/aem.63.8.3205-3210.1997; alternate_identifier=PMC168618;
+    raw=references_cache/papers/PMID_9251207.xml; markdown=references_cache/papers/PMID_9251207.md;
+    PubMed abstract: study context; exact excerpt="during aerobic growth on glucose".
+    The abstract describes E. coli fadR/PPC experiments and a control but does not
+    name M9 or give the complete recipe. Bibliography relevance is supported by the
+    verified MediaDB source-to-MED122 join, not by a name match in the abstract. The
+    importer lists JCL1225 and JCL1535 with pJF118 or pPC201; those exact strain/plasmid
+    assignments are secondary leads, not verified abstract statements. Reported organism=Escherichia
+    coli; canonical scientific name=Escherichia coli; NCBITaxon:562; actual rank=species;
+    taxonomy_match=exact_species; role=experimental species; engineered fadR/PPC and
+    control contexts kept separate. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-20261013.md.
+    Reported organism=Escherichia coli JCL1225 and JCL1535 with pJF118 or pPC201;
+    canonical scientific name=Escherichia coli; NCBITaxon:562; actual rank=species;
+    taxonomy_match=parent_rank_only; role=MediaDB strain leads only; exact nodes and
+    assay assignments unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-20261013.md.
+    The local seven-ingredient M9 has glucose and defined salts. Its concentrations,
+    preparation and individual strain/plasmid assignments remain unverified by the
+    abstract. Inventory covers inspected medium-relevant passages, not the whole paper
+    or bibliography. Correction/retraction coverage is limited to inspected metadata;
+    bounded taxonomy misses do not prove absence. Original ingredients, amounts, preparation,
+    history and links are preserved, not newly certified. No new native growth assertion,
+    resolved variant or concentration evidence.'

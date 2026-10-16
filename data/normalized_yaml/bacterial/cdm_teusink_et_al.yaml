@@ -452,6 +452,15 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 3 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-10-13T10:19:57.435651+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_AND_SOURCE_SCOPE
+  notes: Added 2 verified paper citation(s) with archived raw/Markdown provenance
+    and organism taxonomy assessment. Added one DOI/snippet-backed source-described
+    variant and qualitative growth scoped only to that variant. Preserved all parent
+    ingredients, generic preparation and prior history; no parent concentration certification
+    or generated publication.
+  source: doi:10.1128/AEM.71.11.7253-7262.2005; doi:10.1128/jb.170.2.700-707.1988
 media_term:
   preferred_term: MediaDB Medium 1
   term:
@@ -463,3 +472,123 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1128/AEM.71.11.7253-7262.2005
+  title: 'In silico reconstruction of the metabolic pathways of Lactobacillus plantarum:
+    comparing predictions of nutrient requirements with those from growth experiments.'
+  authors: Teusink B; van Enckevort FH; Francke C; Wiersma A; Wegkamp A; Smid EJ;
+    Siezen RJ
+  year: 2005
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=2, medID=1. Exact SQL joins establish
+    discovery provenance, not primary growth measurements. PubMed identity metadata
+    checked; the historical Mazumdar import note remains database provenance. No correction/retraction
+    notice appears in the inspected PubMed entry; this is a bounded notice check.
+    PMID:16269766; PMC1287688. Full article/Markdown=references_cache/papers/primary_html/teusink-2005-pmc.{html,md};
+    PubMed=references_cache/papers/PMID_16269766.{xml,md}. Inspected Methods, complete
+    Table 1 including headings/boldface/footnotes, Discussion vitamin B6 and amino-acid-comparison
+    paragraphs. Variant_destination='Teusink 2005 Table 1 complete CDM on reported
+    mass basis'. Source-described Table 1 formulation, not an exact certification
+    of the imported molar parent. Source mass doses and boldface minimal membership
+    take precedence over inferred conversions. Hydration, counterion equivalence,
+    other molar conversions and generic parent preparation remain unverified. Poolman
+    1988 is the cited starting protocol; its separate lactococcal batch/continuous
+    overrides are not inherited wholesale. Reported organism=Lactobacillus plantarum
+    WCFS1; scientific name and canonical label=Lactiplantibacillus plantarum WCFS1;
+    NCBITaxon:220668; rank=strain; taxonomy_match=exact synonym. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=220668&retmode=xml;
+    archive=references_cache/papers/taxonomy/lab-20261013.{xml,md}. Background-only
+    reported organism=Lactobacillus plantarum ATCC 8014; current parent scientific
+    name=Lactiplantibacillus plantarum, NCBITaxon:1590, rank=species; taxonomy_match=parent_rank_only.
+    Discussion exact source excerpt='the parent strain of L. plantarum WCFS1'; the
+    paper's lineage statement is retained as reported, not independently verified
+    and not additional growth on this variant. Parent taxonomy lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1590,1359,1358&retmode=xml;
+    archive=references_cache/papers/taxonomy/lab-parents-20261013.{xml,md}. Queried
+    strain aliases did not resolve exact strain nodes; parent_rank_only is a bounded
+    fallback, not proof that no alternate-name node exists. Inventory is bounded to
+    these relevant passages, not all metabolic examples or bibliography organisms
+    throughout the article.
+- reference: doi:10.1128/jb.170.2.700-707.1988
+  title: Relation of growth of Streptococcus lactis and Streptococcus cremoris to
+    amino acid transport.
+  authors: Poolman B; Konings WN
+  year: 1988
+  notes: source_type=journal_article_selected_page_scans; discovery_mode=Teusink_2005_reference_39;
+    accessed_on=2026-10-13; PMID:3123462; PMC210711. Abstract/Markdown=references_cache/papers/PMID_3123462.{xml,md};
+    PMC HTML/Markdown contains abstract/references and scan links, not full body transcription.
+    Selected raw pages=references_cache/papers/primary_images/poolman-1988-page-{700,701}.png;
+    bounded Markdown assessment=references_cache/papers/primary_images/poolman-1988-pages-700-701.md.
+    Methods on page 700 names Streptococcus lactis ML3 and Streptococcus cremoris
+    Wg2; these are separate protocol organisms, not WCFS1 growth on the later Table
+    1 formulation. ML3 verified parent=Lactococcus lactis, NCBITaxon:1358, rank=species;
+    Wg2 verified parent=Lactococcus cremoris, NCBITaxon:1359, rank=species; both taxonomy_match=parent_rank_only.
+    Parent taxonomy lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1590,1359,1358&retmode=xml;
+    archive=references_cache/papers/taxonomy/lab-parents-20261013.{xml,md}. Queried
+    strain aliases did not resolve exact strain nodes; parent_rank_only is a bounded
+    fallback, not proof that no alternate-name node exists. Pages 700-701 distinguish
+    batch and continuous carbon sources, buffering and amino-acid overrides. These
+    do not transfer wholesale to Teusink. No new amount from this supporting protocol
+    is applied. PDF retrieval returned HTML rather than PDF; only the two inspected
+    page scans are archived.
+variants:
+- name: Teusink 2005 Table 1 complete CDM on reported mass basis
+  relationship: DERIVED_FROM
+  description: 'Source-described Table 1 formulation, not an exact certification of
+    the imported molar parent. Source mass doses and boldface minimal membership take
+    precedence over inferred conversions. Hydration, counterion equivalence, other
+    molar conversions and generic parent preparation remain unverified. Poolman 1988
+    is the cited starting protocol; its separate lactococcal batch/continuous overrides
+    are not inherited wholesale. '
+  modifications:
+  - Use the Table 1 Ca-(D)-(+)-pantothenate dose of 0.001 g/liter, rather than certifying
+    the parent's 0.00456 mM calcium pantothenate.
+  - Retain the source's full Table 1 composition and footnote b components; do not
+    infer exact chemical-form equivalence from the imported molar ingredient list.
+    Pyridox-x is a joint-omission experiment, not an ingredient.
+  evidence:
+  - reference: doi:10.1128/AEM.71.11.7253-7262.2005
+    supports: SUPPORT
+    snippet: Ca-( d )-(+)-pantothenate (vitamin B 5 ) 0.001
+    explanation: 'Supports variants[].modifications calcium pantothenate source dose;
+      Table 1 column 2 heading is ''Concn (g/liter)''. Calculation separate from quote:
+      the encoded CHEBI:31345 formula 2C9H16NO5.Ca has average mass 476.536 g/mol;
+      0.001 g/L / 476.536 g/mol * 1000 = 0.00209848 mM formula units, not 0.00456
+      mM. Even two pantothenate equivalents would be about 0.00419695 mM. This conditional
+      comparison is not a hydration or parent-basis certification. Chemistry authority=https://www.ebi.ac.uk/chebi/CHEBI:31345;
+      archived JSON/Markdown=references_cache/papers/chemistry/chebi-31345-20261013.*.
+      The ontology supplies chemical identity/mass, not the recipe amount. Source-described
+      Table 1 formulation, not an exact certification of the imported molar parent.
+      Source mass doses and boldface minimal membership take precedence over inferred
+      conversions. Hydration, counterion equivalence, other molar conversions and
+      generic parent preparation remain unverified. Poolman 1988 is the cited starting
+      protocol; its separate lactococcal batch/continuous overrides are not inherited
+      wholesale. '
+target_organisms:
+- preferred_term: Lactiplantibacillus plantarum WCFS1
+  strain: WCFS1
+  term:
+    id: NCBITaxon:220668
+    label: Lactiplantibacillus plantarum WCFS1
+  scoped_to_variant: Teusink 2005 Table 1 complete CDM on reported mass basis
+  evidence:
+  - reference: doi:10.1128/AEM.71.11.7253-7262.2005
+    supports: SUPPORT
+    snippet: L. plantarum WCFS1 grows well on CDM
+    explanation: 'Methods explicitly reports WCFS1 growth on the complete CDM. No
+      approximate rate or final OD is imported as an exact metric. The 37 degrees
+      C, 10-mL, unstirred microaerobic protocol is explicitly described for single-omission
+      experiments; it is not promoted here into a universal optimum or an independently
+      established incubation condition for every assay. Reported organism=Lactobacillus
+      plantarum WCFS1; scientific name and canonical label=Lactiplantibacillus plantarum
+      WCFS1; NCBITaxon:220668; rank=strain; taxonomy_match=exact synonym. Lookup_on=2026-10-13;
+      https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=220668&retmode=xml;
+      archive=references_cache/papers/taxonomy/lab-20261013.{xml,md}. Qualitative
+      growth applies only to this source-described variant, not to the unmodified
+      molar parent. Source-described Table 1 formulation, not an exact certification
+      of the imported molar parent. Source mass doses and boldface minimal membership
+      take precedence over inferred conversions. Hydration, counterion equivalence,
+      other molar conversions and generic parent preparation remain unverified. Poolman
+      1988 is the cited starting protocol; its separate lactococcal batch/continuous
+      overrides are not inherited wholesale. Current KGX export does not honor scoped_to_variant;
+      no unscoped parent-medium edge is authorized or published. '

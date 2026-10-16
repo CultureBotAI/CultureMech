@@ -152,6 +152,14 @@ curation_history:
   notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T20:04:31.598558+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, source/Markdown archives, short excerpts and
+    qualified scientific-name/NCBI taxonomy notes. Preserved all recipe values, evidence,
+    history and variant links. Formulation and historical identity limitations remain
+    explicit; no new growth or concentration claim.
+  source: doi:10.1007/bf01199868; PMID:9103631
 media_term:
   preferred_term: MediaDB Medium 92
   term:
@@ -163,3 +171,75 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1007/bf01199868
+  title: Effect of temperature upon growth rate and solvent production in batch cultures
+    ofClostridium acetobutylicum
+  authors: McNeil, B; Kristiahsen, B
+  year: 1985
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=publisher_abstract_or_summary_preview; owner=MEDIADB:92;
+    discovery_sourceID=23; source_url=https://doi.org/10.1007/bf01199868; raw=references_cache/papers/primary_html/source-23-publisher-20261013.html;
+    markdown=references_cache/papers/primary_html/source-23-publisher-20261013.md;
+    Summary: reported organism; exact excerpt="Clostridium acetobutylicum". Reported
+    organism=Clostridium acetobutylicum; canonical scientific name=Clostridium acetobutylicum;
+    NCBITaxon:1488; actual rank=species; taxonomy_match=verified_reported_species_not_exact_strain;
+    role=organism named in the 1985 summary. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1488&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    Reported organism=Clostridium beijerinckii NCIMB 8052 (MediaDB lead); canonical
+    scientific name=Clostridium beijerinckii NCIMB 8052; NCBITaxon:290402; actual
+    rank=strain; taxonomy_match=verified_current_strain_node_not_verified_1985_study_assignment;
+    role=database-led candidate. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=290402&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    The source join names NCIMB 8052, but the inspected summary does not name a strain.
+    The separately cited 1997 reclassification supports the current identity of NCIMB
+    8052, not its use in this 1985 experiment. The summary does not provide the complete
+    local CDM formula. Both inspected publisher and Crossref metadata spell the second
+    author Kristiahsen; preserve this provenance rather than correcting from memory.
+    The publisher title''s missing space before Clostridium is retained as metadata.
+    Owner=CultureMech:007440; MediaDB medium=92; inspected local ingredient entries=12.
+    No new resolved inline/full variant is assigned while the study-to-local-formulation
+    mapping remains unresolved. Inventory covers the selected medium-relevant identity
+    passages, not every organism in the full paper. Correction/retraction coverage
+    is limited to inspected publication metadata. Bounded lookup misses do not prove
+    absence. All original ingredients, amounts, preparation, evidence, history and
+    variant links are preserved; none is newly certified. No new native growth assertion,
+    concentration evidence or resolved variant.'
+- reference: PMID:9103631
+  title: Cultures of "Clostridium acetobutylicum" from various collections comprise
+    Clostridium acetobutylicum, Clostridium beijerinckii, and two other distinct types
+    based on DNA-DNA reassociation.
+  authors: Johnson JL; Toth J; Santiwatanakul S; Chen JS
+  year: 1997
+  notes: 'source_type=journal_article; discovery_mode=primary_source_identity_followup;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract_selected_identity_passage;
+    owner=MEDIADB:92; discovery_sourceID=23; source_url=https://doi.org/10.1099/00207713-47-2-420;
+    alternate_identifier=doi:10.1099/00207713-47-2-420; raw=references_cache/papers/PMID_9103631.xml;
+    markdown=references_cache/papers/PMID_9103631.md; Abstract: C. beijerinckii group
+    sentence; identity only; exact excerpt="Clostridium beijerinckii group". Abstract:
+    C. beijerinckii group sentence; identity only; exact excerpt="included strains
+    NCIMB 8052". Reported organism=NCIMB 8052; canonical scientific name=Clostridium
+    beijerinckii NCIMB 8052; NCBITaxon:290402; actual rank=strain; taxonomy_match=verified_strain_identity_in_selected_reclassification_passage;
+    role=taxonomic reconciliation of MediaDB lead. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=290402&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    Reported organism=Clostridium beijerinckii; canonical scientific name=Clostridium
+    beijerinckii; NCBITaxon:1520; actual rank=species; taxonomy_match=verified_species_parent;
+    role=reclassification group. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1520&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    Citation role=identity_reconciliation, not recipe evidence. The selected abstract
+    clause places NCIMB 8052 in the C. beijerinckii group. It does not prove that
+    McNeil''s 1985 experiment used this strain. Other collection strains in the abstract
+    are outside this record-specific identity assessment and are not represented as
+    cultivation targets. No experiment or formula is transferred. Owner=CultureMech:007440;
+    MediaDB medium=92; inspected local ingredient entries=12. No new resolved inline/full
+    variant is assigned while the study-to-local-formulation mapping remains unresolved.
+    Inventory covers the selected medium-relevant identity passages, not every organism
+    in the full paper. Correction/retraction coverage is limited to inspected publication
+    metadata. Bounded lookup misses do not prove absence. All original ingredients,
+    amounts, preparation, evidence, history and variant links are preserved; none
+    is newly certified. No new native growth assertion, concentration evidence or
+    resolved variant.'

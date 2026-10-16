@@ -96,6 +96,15 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:165's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T12:00:49.302978+00:00'
+  curator: codex
+  action: ADDED_ABSTRACT_BACKED_PAPER_CITATIONS
+  notes: Added 2 verified citations with raw abstract/Markdown archives, qualified
+    organism taxonomy and explicit source-access limits. Preserved all ingredients,
+    preparation and prior history. No resolved variant, positive growth association,
+    quantitative metric or parent concentration certification; complete formulation
+    remains unresolved.
+  source: doi:10.1111/j.1574-6968.2007.01006.x; doi:10.1128/jb.177.11.3058-3066.1995
 media_term:
   preferred_term: MediaDB Medium 165
   term:
@@ -107,3 +116,94 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1111/j.1574-6968.2007.01006.x
+  title: Thiamine limitation determines the transition from aerobic to fermentative-like
+    metabolism in Rhizobium etli CE3.
+  authors: Taboada H; Encarnación S; Vargas Mdel C; Mora Y; Miranda-Ríos J; Soberón
+    M; Mora J
+  year: 2008
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=63, medID=165; source_access=abstract_only.
+    SQL joins establish discovery provenance, not primary cultivation evidence. Title,
+    authors, year and DOI/PMID identity verified from raw PubMed XML. No correction/retraction
+    notice in the inspected entry; not an exhaustive notice audit. PMID:18177306;
+    raw_abstract=references_cache/papers/PMID_18177306.xml; abstract_markdown=references_cache/papers/PMID_18177306.md.
+    Additional publisher abstract HTML/Markdown=references_cache/papers/primary_html/taboada-2008-publisher-abstract.*;
+    full text is offered for purchase and was not accessed. The bibliography uses
+    the 2008 journal issue year; the DOI and publisher copyright contain 2007. This
+    imported unsupplemented owner retains succinate and ammonium chloride; exact source
+    recipe correspondence remains unresolved. Abstract; exact excerpt=''Rhizobium
+    etli CE3''. Reported organism=Rhizobium etli CE3; scientific name/canonical mapping=Rhizobium
+    etli; NCBITaxon:29449; actual rank=species; taxonomy_match=parent_rank_only; role=experimental
+    strain; verified species parent only. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=29449&retmode=xml.
+    An exact CE3 taxonomy node was not established by the bounded CE3/CE 3 queries;
+    this is not an exhaustive absence claim. NCBITaxon:347834 is Rhizobium etli CFN
+    42, actual rank=strain, but is not assumed identical to CE3. Mutant identity and
+    phenotype are not inherited from a parent taxon. Abstract; exact excerpt=''A thiC1169::miniTn5lacZ1
+    thiamine auxotroph''. Reported organism=Rhizobium etli thiC1169::miniTn5lacZ1;
+    scientific name/canonical mapping=Rhizobium etli; NCBITaxon:29449; actual rank=species;
+    taxonomy_match=parent_rank_only; role=distinct auxotrophic mutant; species parent
+    only, not an exact mutant node. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=29449&retmode=xml.
+    Abstract; exact excerpt=''resulted in growth arrest''. Growth arrest applies to
+    the thiamine auxotroph under the stated subcultures, not automatically to CE3
+    or every supplemented condition. The abstract reports reversal of fermentative-like
+    metabolism after vitamin supplementation, not a universal recipe requirement or
+    a measured growth optimum. Reported organism=Rhizobium etli M4, Viking 1 and CIAT613
+    (MediaDB labels only); scientific name/canonical mapping=Rhizobium etli; NCBITaxon:29449;
+    actual rank=species; taxonomy_match=parent_rank_only; role=database discovery
+    labels not named in the inspected abstract; their primary strain identities and
+    assay outcomes remain unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=29449&retmode=xml.
+    Only abstract-level scientific content was inspected; complete methods, tables,
+    ingredient chemical forms, doses, pH and preparation remain unresolved. All imported
+    ingredients and generic preparation are preserved, not newly certified. No resolved
+    inline variant, positive target organism, quantitative growth metric or parent
+    concentration evidence is added. Organism inventory is bounded to the inspected
+    abstract, not the complete paper. Taxonomy raw/Markdown archives=references_cache/papers/taxonomy/rhizobium-20261013.*
+    and rhizobium-background-20261013.*. '
+- reference: doi:10.1128/jb.177.11.3058-3066.1995
+  title: Fermentative and aerobic metabolism in Rhizobium etli.
+  authors: Encarnación S; Dunn M; Willms K; Mora J
+  year: 1995
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=59, medID=165; source_access=abstract_only.
+    SQL joins establish discovery provenance, not primary cultivation evidence. Title,
+    authors, year and DOI/PMID identity verified from raw PubMed XML. No correction/retraction
+    notice in the inspected entry; not an exhaustive notice audit. PMID:7768801; PMC176993;
+    raw_abstract=references_cache/papers/PMID_7768801.xml; abstract_markdown=references_cache/papers/PMID_7768801.md.
+    A separate exact MediaDB source-59 join supports this bibliography entry. Historical
+    MediaDB lacks its PMID; title, first author, year, journal and volume/issue/page
+    URL identify PMID:7768801. Abstract; exact excerpt=''Strains of Rhizobium etli,
+    Rhizobium meliloti, and Rhizobium tropici''. Reported organism=Rhizobium etli;
+    scientific name/canonical mapping=Rhizobium etli; NCBITaxon:29449; actual rank=species;
+    taxonomy_match=exact species; role=abstract experimental species; other strains
+    unnamed. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=29449&retmode=xml.
+    Reported organism=Rhizobium meliloti; scientific name/canonical mapping=Sinorhizobium
+    meliloti; NCBITaxon:382; actual rank=species; taxonomy_match=exact species synonym;
+    role=abstract experimental species, currently Sinorhizobium meliloti; no strain
+    identity established. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=382&retmode=xml.
+    Reported organism=Rhizobium tropici; scientific name/canonical mapping=Martinezella
+    tropici; NCBITaxon:398; actual rank=species; taxonomy_match=exact species synonym;
+    role=abstract experimental species, currently Martinezella tropici; no strain
+    identity established. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=398&retmode=xml.
+    Abstract; exact excerpt=''R. etli CE 3''. Reported organism=Rhizobium etli CE
+    3; scientific name/canonical mapping=Rhizobium etli; NCBITaxon:29449; actual rank=species;
+    taxonomy_match=parent_rank_only; role=named abstract strain; species parent only.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=29449&retmode=xml.
+    An exact CE3 taxonomy node was not established by the bounded CE3/CE 3 queries;
+    this is not an exhaustive absence claim. NCBITaxon:347834 is Rhizobium etli CFN
+    42, actual rank=strain, but is not assumed identical to CE3. Mutant identity and
+    phenotype are not inherited from a parent taxon. Abstract; exact excerpt=''In
+    the presence of supplements such as biotin or thiamine''. Serial subculture, inoculum
+    density, oxygen and supplementation are experimental distinctions, not proof of
+    the exact imported ammonium/succinate formulation. Secreted organic/amino acids
+    and intracellular PHB are observations, not unreported medium ingredients. Abstract
+    suggestions about a density signal and symbiosis remain hypotheses, not verified
+    recipe mechanisms. No complete base composition, vitamin amount or unconditional
+    growth claim is inherited.Only abstract-level scientific content was inspected;
+    complete methods, tables, ingredient chemical forms, doses, pH and preparation
+    remain unresolved. All imported ingredients and generic preparation are preserved,
+    not newly certified. No resolved inline variant, positive target organism, quantitative
+    growth metric or parent concentration evidence is added. Organism inventory is
+    bounded to the inspected abstract, not the complete paper. Taxonomy raw/Markdown
+    archives=references_cache/papers/taxonomy/rhizobium-20261013.* and rhizobium-background-20261013.*. '

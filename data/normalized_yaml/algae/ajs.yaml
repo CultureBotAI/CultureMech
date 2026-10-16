@@ -67,9 +67,60 @@ curation_history:
   source: CCAP:AJS; https://www.ccap.ac.uk/wp-content/uploads/MR_AJS.pdf
   notes: Copied the CCAP source identity from references and the original ccap-import
     event into the structured sources slot recognized by review scoring.
+- timestamp: '2026-10-14T03:31:53.109378+00:00'
+  curator: codex
+  action: ADDED_EMAMI_2015_CITATION_AND_STUDY_VARIANTS
+  notes: Added archived paper metadata, exact cultivation excerpts and assay-specific
+    scientific names with verified NCBI name/rank mappings. Stored supported acid
+    or f/2 supplement differences as bounded inline variants where applicable; HCl
+    dose is unquantified, other study concentrations are directly reported and not
+    converted. Complete study formulas remain unresolved. Preserved all existing ingredients,
+    stocks, concentrations, physical state, evidence and links. No new native growth
+    assertion, record merge or publication.
+  source: doi:10.1038/srep10036; PMID:25963242
 references:
 - reference: CCAP:AJS
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_AJS.pdf
+- reference: doi:10.1038/srep10036
+  title: 'Proteomic-based biotyping reveals hidden diversity within a microalgae culture
+    collection: An example using Dunaliella.'
+  authors: Emami K; Hack E; Nelson A; Brain CM; Lyne FM; Mesbahi E; Day JG; Caldwell
+    GS
+  year: 2015
+  notes: 'source_type=journal_article; discovery_mode=catalog_page; discovery_context=CCAP
+    19/18 bibliography followed by full-text methods inspection; accessed_on=2026-10-14;
+    PMID:25963242; PMCID:PMC4650328; source_url=https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4650328/fullTextXML;
+    raw_archive=references_cache/papers/primary_xml/ccap-19-18-PMC4650328-20261014.xml;
+    markdown_archive=references_cache/papers/primary_xml/ccap-19-18-PMC4650328-20261014.md;
+    access_scope=full JATS article, Table 1 and bounded cultivation assays. Publication
+    identity, eight authors and 2015 year verified against archived PubMed XML and
+    JATS; publisher article also inspected. Archived PubMed notice list is empty;
+    not a claim of exhaustive notice discovery. locator=Methods / Microalgae and cyanobacteria
+    strains and culture conditions; exact excerpt="Dunaliella acidophila was grown
+    in AJS medium that was acidified to pH 1.5 using hydrochloric acid."; Reported
+    scientific name=Dunaliella acidophila; strain=CCAP 19/35; canonical scientific
+    name=Dunaliella acidophila; NCBITaxon:38272; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=38272;
+    scope=AJS acidified with hydrochloric acid. Only the AJS organism passage is inventoried
+    for this owner. Other strains and media in the paper are not evidence of AJS growth.
+    The source recipe acid is H2SO4, whereas this paper explicitly uses HCl. The known
+    acid difference is stored in variants[]. No numeric HCl dose, automatic parent
+    concentration correction or claim that every other source component is unchanged.
+    Taxonomy checked against NCBI ESearch/EFetch archived 2026-10-14 at references_cache/papers/taxonomy/emami-2015-20261014.xml
+    and references_cache/papers/taxonomy/emami-2015-strains-20261014.xml. Table 1
+    gives names assigned by depositors; the study questions the reliability of those
+    historical species assignments. Name/rank matching is not independent biological
+    reidentification of a culture. Species-level mappings do not prove an exact strain
+    taxon. This is a medium-use citation and bounded study formulation, not certification
+    of every amount, stock, chemical form, preparation step or condition in the canonical
+    import. Current CCAP sources distinguish stock batches from additions to final
+    medium; flattened local entries cannot be treated as the paper''s measured final
+    concentrations. The current JM/f2 PDFs are revision 002, reviewed 29 May 2026,
+    not proof of the exact 2015 formulation; the inspected AJS PDF gives no comparable
+    revision date. Parent amounts and physical state remain unchanged. No new target_organisms
+    or growth metrics are added: exact full-formula equivalence is unresolved, strain/assay
+    scopes must not be collapsed, and the current KGX growth exporter ignores scoped_to_variant.
+    No affected growth edge is exported.'
 ingredients:
 - preferred_term: Concentrated H2SO4
   concentration:
@@ -115,3 +166,30 @@ preparation_steps:
 - step_number: 3
   action: AUTOCLAVE
   description: Autoclave at 15 psi for 15 minutes.
+variants:
+- name: ajs_hydrochloric_acid_ph_1_5
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  description: Emami et al. (2015) AJS study context for Dunaliella acidophila CCAP
+    19/35. Hydrochloric-acid adjustment differs from the CCAP sulfuric-acid recipe;
+    full study formula remains unresolved.
+  modifications:
+  - Use hydrochloric acid for the reported adjustment to pH 1.5, rather than inheriting
+    the canonical sulfuric-acid instruction. HCl strength and dose are not quantified;
+    no dose or substitution arithmetic is inferred.
+  - The study does not restate the JM/SE2 proportions, stock compositions or complete
+    formulation. Do not certify other local ingredients or physical state from this
+    citation.
+  evidence:
+  - reference: doi:10.1038/srep10036
+    supports: SUPPORT
+    snippet: Dunaliella acidophila was grown in AJS medium that was acidified to pH
+      1.5 using hydrochloric acid.
+    explanation: 'Supports only variants[name=ajs_hydrochloric_acid_ph_1_5].modifications[0].
+      Locator: Methods / Microalgae and cyanobacteria strains and culture conditions.
+      Reported scientific name=Dunaliella acidophila; strain=CCAP 19/35; canonical
+      scientific name=Dunaliella acidophila; NCBITaxon:38272; actual rank=species;
+      taxonomy_match=exact_name_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=38272;
+      scope=AJS acidified with hydrochloric acid. The paper reports the acid and pH
+      but not its concentration or volume: concentration_decision=not_quantified.
+      The inspected CCAP AJS PDF page 1 instead specifies concentrated H2SO4. This
+      is a study difference, not a correction of the parent. No conversion.'

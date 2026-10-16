@@ -157,6 +157,14 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:177's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T17:38:49.917565+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography, raw/Markdown source provenance, exact
+    excerpts and qualified scientific-name/NCBI mappings. Preserved recipe, assay
+    and taxonomy conflicts. Existing fields, variant links and history unchanged;
+    no new native growth, concentration evidence or resolved variant.
+  source: doi:10.1111/j.1472-765X.1996.tb01099.x
 media_term:
   preferred_term: MediaDB Medium 177
   term:
@@ -168,3 +176,42 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1111/j.1472-765X.1996.tb01099.x
+  title: A new chemically-defined medium for Bacillus subtilis (168) NCIMB 12900
+  authors: J. Leitch; P.J. Collier
+  year: 1996
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=publisher_abstract_only; PMID_unresolved_not_proven_absent;
+    owner=MEDIADB:177; discovery_sourceID=67; source_url=https://doi.org/10.1111/j.1472-765X.1996.tb01099.x;
+    raw=references_cache/papers/primary_html/leitch-1996-20261013.html; markdown=references_cache/papers/primary_html/leitch-1996-20261013.md;
+    Publisher abstract, medium distinction; exact excerpt="containing only one added
+    amino". Formulation_unresolved: The abstract describes a defined medium with one
+    added amino acid and compares Fang and Demain medium; it does not enumerate the
+    two local formulas or establish the Dawes and Mandelstam owner as that comparator.
+    Local glucose, tryptophan, magnesium chloride, phosphate and citrate amounts differ;
+    units, chemical forms and exact study-to-owner assignment remain unresolved. No
+    large-factor correction is justified by the abstract. Historical source rows label
+    a doubling time with reciprocal-hour units; no metric is imported. Reported organism=Bacillus
+    subtilis (168) NCIMB 12900; canonical scientific name=Bacillus; NCBITaxon:1386;
+    actual rank=genus; taxonomy_match=parent_rank_only; role=Bacillus bacterial genus
+    only; physical-strain and species identity unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1386&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/leitch-parent-conflict-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/leitch-parent-conflict-20261013.md.
+    The title''s combined designation conflicts with collection evidence: NBIMCC catalog
+    3562 equates NCIMB 12900 with ATCC 19659/PRD66, currently called Bacillus spizizenii
+    by ATCC; ATCC 23857 is B. subtilis strain 168. This does not prove which organism
+    the authors used; neither exact strain nor an unqualified B. subtilis species
+    assignment is made. Collection sources=https://www.atcc.org/products/19659; https://www.atcc.org/products/23857;
+    https://www.nbimcc.org/cat/Catalog%272005/Bacteria/Bacillus%20subtilis.html. Raw
+    HTML and selected identity Markdown: references_cache/papers/taxonomy/leitch-atcc-19659-20261013.html/.md,
+    leitch-atcc-23857-20261013.html/.md, leitch-nbimcc-3562-20261013.html/.md. Full
+    paper and NCIMB accession history are needed to resolve the conflict. Publisher/Crossref
+    metadata identifies the paper; PMID lookup remains unresolved, not proven absent.
+    Bounded lookup misses do not prove taxon absence. Organism inventory covers inspected
+    medium-relevant passages, not the entire paper. Images and supplements have not
+    been verified. Correction/retraction coverage is limited to inspected publication
+    metadata. Related-media candidates were searched without asserting exact formulation
+    equivalence. All prior ingredients, quantities, preparation, variant links and
+    history remain unchanged and uncertified by this citation. No new native growth
+    assertion, concentration evidence or resolved variant.'

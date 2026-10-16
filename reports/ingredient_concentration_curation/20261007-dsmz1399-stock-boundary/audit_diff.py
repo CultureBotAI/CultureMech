@@ -91,6 +91,7 @@ UTEX_SOIL_SEAWATER_PLAN = PLAN.parent.parent / "20261010-utex-soil-seawater/plan
 UTEX_ORGANIC_FIVE_PLAN = PLAN.parent.parent / "20261010-utex-organic-five/plan.json"
 UTEX_SIX_BLENDS_PLAN = PLAN.parent.parent / "20261010-utex-six-blends/plan.json"
 UTEX_VOLVOCACEAN_BG11_PLAN = PLAN.parent.parent / "20261010-utex-volvocacean-bg11/plan-v2.json"
+PAPER_CITATION_PLAN = PLAN.parent.parent / "20261015-paper-citation-successors/plan.json"
 counts = collections.Counter()
 
 
@@ -136,6 +137,11 @@ def provenance_counts(node):
 
 
 def invert_review(before, after, item):
+    if item.get("action") == "REGISTERED_PAPER_CITATION_SUCCESSOR":
+        from audit_paper_citation_successor import check
+
+        counts.update(check(before, after, item))
+        return
     if item.get("action") == "CURATED_UTEX_VOLVOCACEAN_BG11_CONCENTRATION_EVIDENCE":
         from review_utex_volvocacean_bg11 import check
 
@@ -1492,6 +1498,7 @@ def review_plans():
         UTEX_ORGANIC_FIVE_PLAN,
         UTEX_SIX_BLENDS_PLAN,
         UTEX_VOLVOCACEAN_BG11_PLAN,
+        PAPER_CITATION_PLAN,
     )
 
 

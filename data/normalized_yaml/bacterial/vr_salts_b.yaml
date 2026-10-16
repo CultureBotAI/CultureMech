@@ -235,10 +235,56 @@ curation_history:
   notes: Replaced the NaOH-only pH-buffer import with Rogosa's VR salts solution B
     stock recipe, choosing the first listed cobalt and vanadium source alternatives
     and leaving VSO4 x 7 H2O ungrounded.
+- timestamp: '2026-10-14T01:06:41.461765+00:00'
+  curator: codex
+  action: CURATED_PAPER_CITATIONS_AND_PROVENANCE
+  notes: Added or enriched verified paper citations and source archive/Markdown links;
+    recorded bounded formulation and organism assessments, corrected alias/correction
+    dispositions, and consolidated only verified duplicate bibliography entries. Preserved
+    prior recipe fields, evidence, links and history. No new growth, concentration
+    or resolved-variant claim. Whitchurch review is non-operational identity only.
+  source: https://pmc.ncbi.nlm.nih.gov/articles/PMC284882/; https://doi.org/10.1128/jb.98.2.756-766.1969
 data_quality_flags:
 - has_ontology_mappings
 - has_unmapped_ingredients
 - ingredients_curated
 references:
 - reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC284882/
-- reference: https://doi.org/10.1128/jb.98.2.756-766.1969
+  title: Acidaminococcus gen. n., Acidaminococcus fermentans sp. n., anaerobic gram-negative
+    diplococci using amino acids as the sole energy source for growth.
+  authors: Rogosa M
+  year: 1969
+  notes: source_type=journal_article; discovery_mode=existing_source_identity_followup;
+    accessed_on=2026-10-14; source_access=PubMed_abstract_not_full_text; doi=10.1128/jb.98.2.756-766.1969;
+    pmid=5784223; pmcid=PMC284882; raw=references_cache/papers/PMID_5784223.xml; markdown=references_cache/papers/PMID_5784223.md;  PubMed
+    abstract, species description; exact excerpt="Acidaminococcus fermentans". Reported
+    organism/group=Acidaminococcus fermentans; canonical scientific name=Acidaminococcus
+    fermentans; NCBITaxon:905; actual rank=species; taxonomy_match=exact_species;
+    role=species studied, not growth on an isolated stock solution. Lookup_on=2026-10-14;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=905&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/bibliographic-url-leads-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/bibliographic-url-leads-20261014.md.
+    Reported organism/group=Acidaminococcus; canonical scientific name=Acidaminococcus;
+    NCBITaxon:904; actual rank=genus; taxonomy_match=exact_genus; role=taxonomic description/comparison,
+    not a genus-wide cultivation assertion. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=904&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/citation-frontier-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/citation-frontier-20261014.md.
+    Reported organism/group=Veillonella; canonical scientific name=Veillonella; NCBITaxon:29465;
+    actual rank=genus; taxonomy_match=exact_genus; role=taxonomic description/comparison,
+    not a genus-wide cultivation assertion. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=29465&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/citation-frontier-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/citation-frontier-20261014.md.
+    Reported organism/group=Peptococcus; canonical scientific name=Peptococcus; NCBITaxon:2740;
+    actual rank=genus; taxonomy_match=exact_genus; role=taxonomic description/comparison,
+    not a genus-wide cultivation assertion. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2740&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/citation-frontier-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/citation-frontier-20261014.md.
+    The existing DOI and PMC URLs are verified aliases. This owner is record_kind=SOLUTION;
+    VR salts B must not become a complete growth medium. The abstract does not enumerate
+    the stock's chemical forms or amounts. Existing formulation and preparation are
+    preserved but not reverified; full-text access returned a challenge/API error.
+    Correction/retraction coverage is limited to inspected publication metadata and
+    identified notices, not an exhaustive audit. No new native growth assertion, concentration
+    evidence or resolved variant. Prior ingredients, preparation, evidence, links
+    and history are preserved, not newly certified. Verified alternate native URL=https://doi.org/10.1128/jb.98.2.756-766.1969.
+    Duplicate bibliography entry consolidated.

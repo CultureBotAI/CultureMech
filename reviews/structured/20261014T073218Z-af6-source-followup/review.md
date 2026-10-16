@@ -1,0 +1,1809 @@
+# AF6 source identity and amount-stage barriers to citation curation
+
+- Review: 20261014T073218Z-af6-source-followup
+- Repository: culturebotai/CultureMech
+- Started UTC: 2026-10-14T07:31:52Z
+- Finished UTC: 2026-10-14T07:32:18Z
+- Reviewer: codex (self_review)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: false
+
+## Summary
+
+46 encoded amount fields assessed across two unchanged AF6 owners. Sources expose unit/stage loss, explicit pH differences and optional agar. No new concentration, citation, variant or growth claim applied.
+
+## Scope And Provenance
+
+Two source-linked normalized AF6 owners; all current direct ingredients and stock dose
+
+Selection: NBRC964 and linked NBRC1475 encountered while mapping 2019/2021 AF6 paper media
+Coverage: full; 2 reviewed / 2 in the declared population.
+Source: working_tree at Git base 41d4d390123c0d8320cd53e994470c88a1b86d8c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:008317 | data/normalized_yaml/bacterial/af6.yaml | maintained | af6 |
+| CultureMech:008731 | data/normalized_yaml/bacterial/af6_ph4_0.yaml | maintained | af6_ph4_0 |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| just validate-schema data/normalized_yaml/bacterial/af6.yaml | passed | True | CultureMech:008317 | Read-only recipe baseline; no native edits. |
+| just validate-strict data/normalized_yaml/bacterial/af6.yaml | passed | True | CultureMech:008317 | Read-only recipe baseline; no native edits. |
+| just validate-schema data/normalized_yaml/bacterial/af6_ph4_0.yaml | passed | True | CultureMech:008731 | Read-only recipe baseline; no native edits. |
+| just validate-strict data/normalized_yaml/bacterial/af6_ph4_0.yaml | passed | True | CultureMech:008731 | Read-only recipe baseline; no native edits. |
+
+## Scientific And Domain Assessments
+
+### ingredients[0].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+Distilled water: status=unsupported; 101.0 sums 1 L base water and 100 mL stock water without unit conversion or stage separation; neither is a g/L solute amount. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[0].concentration", "ingredient": "Distilled water", "term": {"id": "CHEBI:15377", "label": "water"}, "existing_concentration": {"value": "101.0", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["Distilled water", "1", "L"]}, {"stage": "P IV stock", "cells": ["Distilled water", "100", "mL"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "101.0 sums 1 L base water and 100 mL stock water without unit conversion or stage separation; neither is a g/L solute amount."}
+
+### ingredients[1].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+MgSO4·7H2O: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[1].concentration", "ingredient": "MgSO4·7H2O", "term": {"id": "CHEBI:31795", "label": "magnesium sulfate heptahydrate"}, "existing_concentration": {"value": "30", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["MgSO4·7H2O", "30", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[2].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+CaCl2·2H2O: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[2].concentration", "ingredient": "CaCl2·2H2O", "term": {"id": "CHEBI:86158", "label": "calcium chloride dihydrate"}, "existing_concentration": {"value": "10", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["CaCl2·2H2O", "10", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[3].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+KH2PO4: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[3].concentration", "ingredient": "KH2PO4", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"}, "existing_concentration": {"value": "10", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["KH2PO4", "10", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[4].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+K2HPO4: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[4].concentration", "ingredient": "K2HPO4", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "existing_concentration": {"value": "5", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["K2HPO4", "5", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[5].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+Biotin: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[5].concentration", "ingredient": "Biotin", "term": {"id": "CHEBI:15956", "label": "biotin"}, "existing_concentration": {"value": "2", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["Biotin", "2", "μg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[6].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+Thiamine-HCl: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[6].concentration", "ingredient": "Thiamine-HCl", "term": {"id": "CHEBI:49105", "label": "thiamine hydrochloride"}, "existing_concentration": {"value": "10", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["Thiamine-HCl", "10", "μg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[7].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+Vitamin B12: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[7].concentration", "ingredient": "Vitamin B12", "term": {"id": "CHEBI:176843", "label": "vitamin B12"}, "existing_concentration": {"value": "1", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["Vitamin B12", "1", "μg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[8].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+NaNO3: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[8].concentration", "ingredient": "NaNO3", "term": {"id": "CHEBI:63005", "label": "sodium nitrate"}, "existing_concentration": {"value": "140", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["NaNO3", "140", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[9].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+CaCO3: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[9].concentration", "ingredient": "CaCO3", "term": {"id": "CHEBI:3311", "label": "calcium carbonate"}, "existing_concentration": {"value": "10", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["CaCO3", "10", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[10].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+NH4NO3: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[10].concentration", "ingredient": "NH4NO3", "term": {"id": "CHEBI:63038", "label": "ammonium nitrate"}, "existing_concentration": {"value": "22", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["NH4NO3", "22", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[11].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+Fe-citrate: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[11].concentration", "ingredient": "Fe-citrate", "term": null, "existing_concentration": {"value": "2", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["Fe-citrate", "2", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[12].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+MES buffer: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[12].concentration", "ingredient": "MES buffer", "term": null, "existing_concentration": {"value": "400", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["MES buffer", "400", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[13].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+Vitamin B6: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[13].concentration", "ingredient": "Vitamin B6", "term": {"id": "CHEBI:16709", "label": "pyridoxine"}, "existing_concentration": {"value": "1", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["Vitamin B6", "1", "μg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[14].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+Agar (if needed): status=unsupported; Agar is optional and stated as 12 g; a fixed g/L value and mandatory solid state need separate justification. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[14].concentration", "ingredient": "Agar (if needed)", "term": null, "existing_concentration": {"value": "12", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["Agar (if needed)", "12", "g"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Agar is optional and stated as 12 g; a fixed g/L value and mandatory solid state need separate justification."}
+
+### ingredients[15].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+Citric acid: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[15].concentration", "ingredient": "Citric acid", "term": {"id": "CHEBI:30769", "label": "citric acid"}, "existing_concentration": {"value": "2", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["Citric acid", "2", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[16].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+Na2MoO4·2H2O: status=unsupported; Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[16].concentration", "ingredient": "Na2MoO4·2H2O", "term": {"id": "CHEBI:75213", "label": "sodium molybdate dihydrate"}, "existing_concentration": {"value": "0.25", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "P IV stock", "cells": ["Na2MoO4·2H2O", "0.25", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct."}
+
+### ingredients[17].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+MnCl2·4H2O: status=unsupported; Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[17].concentration", "ingredient": "MnCl2·4H2O", "term": {"id": "CHEBI:86368", "label": "manganese(II) chloride tetrahydrate"}, "existing_concentration": {"value": "3.6", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "P IV stock", "cells": ["MnCl2·4H2O", "3.6", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct."}
+
+### ingredients[18].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+CoCl2·6H2O: status=unsupported; Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[18].concentration", "ingredient": "CoCl2·6H2O", "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "existing_concentration": {"value": "0.4", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "P IV stock", "cells": ["CoCl2·6H2O", "0.4", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct."}
+
+### ingredients[19].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+ZnSO4·7H2O: status=unsupported; Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[19].concentration", "ingredient": "ZnSO4·7H2O", "term": {"id": "CHEBI:32312", "label": "zinc sulfate heptahydrate"}, "existing_concentration": {"value": "2.2", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "P IV stock", "cells": ["ZnSO4·7H2O", "2.2", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct."}
+
+### ingredients[20].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+FeCl3·6H2O: status=unsupported; Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[20].concentration", "ingredient": "FeCl3·6H2O", "term": {"id": "CHEBI:86254", "label": "iron trichloride hexahydrate"}, "existing_concentration": {"value": "19.6", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "P IV stock", "cells": ["FeCl3·6H2O", "19.6", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct."}
+
+### ingredients[21].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+Na2EDTA·2H2O: status=unsupported; Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "ingredients[21].concentration", "ingredient": "Na2EDTA·2H2O", "term": {"id": "CHEBI:64758", "label": "EDTA disodium salt dihydrate"}, "existing_concentration": {"value": "100", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "P IV stock", "cells": ["Na2EDTA·2H2O", "100", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct."}
+
+### solutions[0].concentration
+
+evidence: concern. Targets: CultureMech:008317.
+
+P IV Metals solution*: status=unsupported; 5 mL liquid-stock addition is not 5 g/L and has no explicit final-volume denominator. No numerical replacement approved.
+
+{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml", "field_path": "solutions[0].concentration", "ingredient": "P IV Metals solution*", "term": null, "existing_concentration": {"value": "5", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows": [{"stage": "base", "cells": ["P IV Metals solution*", "5", "ml"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "5 mL liquid-stock addition is not 5 g/L and has no explicit final-volume denominator."}
+
+### Source identity and physical-state scope
+
+evidence: concern. Targets: CultureMech:008317.
+
+Official pH is 6.6; record omits pH and requires SOLID_AGAR although source agar is optional. Source duplicate classification loses the distinct pH.
+
+### ingredients[0].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+Distilled water: status=unsupported; 101.0 sums 1 L base water and 100 mL stock water without unit conversion or stage separation; neither is a g/L solute amount. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[0].concentration", "ingredient": "Distilled water", "term": {"id": "CHEBI:15377", "label": "water"}, "existing_concentration": {"value": "101.0", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["Distilled water", "1", "L"]}, {"stage": "P IV stock", "cells": ["Distilled water", "100", "mL"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "101.0 sums 1 L base water and 100 mL stock water without unit conversion or stage separation; neither is a g/L solute amount."}
+
+### ingredients[1].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+MgSO4·7H2O: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[1].concentration", "ingredient": "MgSO4·7H2O", "term": {"id": "CHEBI:31795", "label": "magnesium sulfate heptahydrate"}, "existing_concentration": {"value": "30", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["MgSO4·7H2O", "30", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[2].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+CaCl2·2H2O: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[2].concentration", "ingredient": "CaCl2·2H2O", "term": {"id": "CHEBI:86158", "label": "calcium chloride dihydrate"}, "existing_concentration": {"value": "10", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["CaCl2·2H2O", "10", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[3].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+KH2PO4: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[3].concentration", "ingredient": "KH2PO4", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"}, "existing_concentration": {"value": "10", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["KH2PO4", "10", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[4].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+K2HPO4: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[4].concentration", "ingredient": "K2HPO4", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "existing_concentration": {"value": "5", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["K2HPO4", "5", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[5].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+Biotin: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[5].concentration", "ingredient": "Biotin", "term": {"id": "CHEBI:15956", "label": "biotin"}, "existing_concentration": {"value": "2", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["Biotin", "2", "μg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[6].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+Thiamine-HCl: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[6].concentration", "ingredient": "Thiamine-HCl", "term": {"id": "CHEBI:49105", "label": "thiamine hydrochloride"}, "existing_concentration": {"value": "10", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["Thiamine-HCl", "10", "μg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[7].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+Vitamin B12: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[7].concentration", "ingredient": "Vitamin B12", "term": {"id": "CHEBI:176843", "label": "vitamin B12"}, "existing_concentration": {"value": "1", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["Vitamin B12", "1", "μg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[8].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+NaNO3: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[8].concentration", "ingredient": "NaNO3", "term": {"id": "CHEBI:63005", "label": "sodium nitrate"}, "existing_concentration": {"value": "140", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["NaNO3", "140", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[9].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+CaCO3: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[9].concentration", "ingredient": "CaCO3", "term": {"id": "CHEBI:3311", "label": "calcium carbonate"}, "existing_concentration": {"value": "10", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["CaCO3", "10", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[10].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+NH4NO3: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[10].concentration", "ingredient": "NH4NO3", "term": {"id": "CHEBI:63038", "label": "ammonium nitrate"}, "existing_concentration": {"value": "22", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["NH4NO3", "22", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[11].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+Fe-citrate: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[11].concentration", "ingredient": "Fe-citrate", "term": null, "existing_concentration": {"value": "2", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["Fe-citrate", "2", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[12].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+MES buffer: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[12].concentration", "ingredient": "MES buffer", "term": null, "existing_concentration": {"value": "400", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["MES buffer", "400", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[13].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+Agar (if needed): status=unsupported; Agar is optional and stated as 12 g; a fixed g/L value and mandatory solid state need separate justification. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[13].concentration", "ingredient": "Agar (if needed)", "term": null, "existing_concentration": {"value": "12", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["Agar (if needed)", "12", "g"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Agar is optional and stated as 12 g; a fixed g/L value and mandatory solid state need separate justification."}
+
+### ingredients[14].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+Vitamin B6: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[14].concentration", "ingredient": "Vitamin B6", "term": {"id": "CHEBI:16709", "label": "pyridoxine"}, "existing_concentration": {"value": "1", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["Vitamin B6", "1", "μg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[15].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+Citric acid: status=unsupported; Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[15].concentration", "ingredient": "Citric acid", "term": {"id": "CHEBI:30769", "label": "citric acid"}, "existing_concentration": {"value": "2", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["Citric acid", "2", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source mass unit is not g/L; converting to final-medium concentration requires an explicit final-volume basis."}
+
+### ingredients[16].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+Na2MoO4·2H2O: status=unsupported; Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[16].concentration", "ingredient": "Na2MoO4·2H2O", "term": {"id": "CHEBI:75213", "label": "sodium molybdate dihydrate"}, "existing_concentration": {"value": "0.25", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "P IV stock", "cells": ["Na2MoO4·2H2O", "0.25", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct."}
+
+### ingredients[17].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+MnCl2·4H2O: status=unsupported; Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[17].concentration", "ingredient": "MnCl2·4H2O", "term": {"id": "CHEBI:86368", "label": "manganese(II) chloride tetrahydrate"}, "existing_concentration": {"value": "3.6", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "P IV stock", "cells": ["MnCl2·4H2O", "3.6", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct."}
+
+### ingredients[18].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+CoCl2·6H2O: status=unsupported; Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[18].concentration", "ingredient": "CoCl2·6H2O", "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "existing_concentration": {"value": "0.4", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "P IV stock", "cells": ["CoCl2·6H2O", "0.4", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct."}
+
+### ingredients[19].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+ZnSO4·7H2O: status=unsupported; Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[19].concentration", "ingredient": "ZnSO4·7H2O", "term": {"id": "CHEBI:32312", "label": "zinc sulfate heptahydrate"}, "existing_concentration": {"value": "2.2", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "P IV stock", "cells": ["ZnSO4·7H2O", "2.2", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct."}
+
+### ingredients[20].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+FeCl3·6H2O: status=unsupported; Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[20].concentration", "ingredient": "FeCl3·6H2O", "term": {"id": "CHEBI:86254", "label": "iron trichloride hexahydrate"}, "existing_concentration": {"value": "19.6", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "P IV stock", "cells": ["FeCl3·6H2O", "19.6", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct."}
+
+### ingredients[21].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+Na2EDTA·2H2O: status=unsupported; Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "ingredients[21].concentration", "ingredient": "Na2EDTA·2H2O", "term": {"id": "CHEBI:64758", "label": "EDTA disodium salt dihydrate"}, "existing_concentration": {"value": "100", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "P IV stock", "cells": ["Na2EDTA·2H2O", "100", "mg"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock recipe mass is flattened into a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct."}
+
+### solutions[0].concentration
+
+evidence: concern. Targets: CultureMech:008731.
+
+P IV Metals solution*: status=unsupported; 5 mL liquid-stock addition is not 5 g/L and has no explicit final-volume denominator. No numerical replacement approved.
+
+{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml", "field_path": "solutions[0].concentration", "ingredient": "P IV Metals solution*", "term": null, "existing_concentration": {"value": "5", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows": [{"stage": "base", "cells": ["P IV Metals solution*", "5", "ml"]}], "quotation_scope": "Individual source cells retained separately, not spliced into a purported sentence.", "status": "unsupported", "basis": "Source batch additions; final-volume denominator not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "5 mL liquid-stock addition is not 5 g/L and has no explicit final-volume denominator."}
+
+### Source identity and physical-state scope
+
+evidence: concern. Targets: CultureMech:008731.
+
+Official pH is 4.0; record omits pH and requires SOLID_AGAR although source agar is optional. Source duplicate classification loses the distinct pH.
+
+## Findings
+
+### units-and-stages: AF6 amount units and stock boundaries are not preserved
+
+major / open / confirmed; issue key: af6-source-followup-units-and-stages.
+
+Both records contain 22 direct g/L entries and one g/L stock dose. Official sources use mass-per-batch units, distinct water amounts, a 5 mL stock dose, and six stock components. The 101.0 g/L water value combines unlike quantities. Final volume is not explicit, so no numeric repair is approved.
+
+### ph-identity: Source duplicate links ignore an explicit pH difference
+
+major / open / confirmed; issue key: af6-source-followup-ph-identity.
+
+NBRC964 is pH6.6 and NBRC1475 is pH4.0 despite identical listed ingredients. Both current reciprocal links and the child variant_relationship say SOURCE_DUPLICATE; ingredient fingerprints cannot establish exact identity.
+
+### optional-agar: Optional agar is represented as a mandatory solid medium
+
+major / open / confirmed; issue key: af6-source-followup-optional-agar.
+
+Both official sources say Agar (if needed), but both owners require SOLID_AGAR. This loses the liquid/optional scope and cannot support unqualified paper-to-owner growth transfer.
+
+## Recommended Actions And Acceptance Checks
+
+### resolve-units-and-stages
+
+AF6 amount units and stock boundaries are not preserved
+
+- Preserve all source row amounts and preparation stages, remove or correct unsupported fixed concentrations only through a guarded evidence-backed preview, and do not assume final volume.
+
+### resolve-ph-identity
+
+Source duplicate links ignore an explicit pH difference
+
+- Represent both verified pH values and a supported pH-variant relationship, preserve IDs, update reciprocal links and pass link validation; do not merge these as exact duplicates.
+
+### resolve-optional-agar
+
+Optional agar is represented as a mandatory solid medium
+
+- Resolve supported liquid/solid scope before assigning paper-specific growth; keep source optionality and avoid inventing a universal physical state.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| nbrc-964 | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964; references_cache/papers/primary_xml/nbrc-964-af6-gr-plus-followup-20261014.html | refutes | Original official recipe leaf-table cells distinguish base/stock, mg and microgram amounts, water volumes, optional agar and source pH; final volume is not explicitly made up. |
+| nbrc-1475 | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475; references_cache/papers/primary_xml/nbrc-1475-af6-ph4-gr-plus-followup-20261014.html | refutes | Original official recipe leaf-table cells distinguish base/stock, mg and microgram amounts, water volumes, optional agar and source pH; final volume is not explicitly made up. |
+| baseline-0 | reports/paper_citation_curation/20261014-gr-plus-citation/af6-baseline-00.log; reports/paper_citation_curation/20261014-gr-plus-citation/af6-baseline-00.log | context_only | Actual baseline exit code 0; schema validity is not concentration support. |
+| baseline-1 | reports/paper_citation_curation/20261014-gr-plus-citation/af6-baseline-01.log; reports/paper_citation_curation/20261014-gr-plus-citation/af6-baseline-01.log | context_only | Actual baseline exit code 0; schema validity is not concentration support. |
+| baseline-2 | reports/paper_citation_curation/20261014-gr-plus-citation/af6-baseline-02.log; reports/paper_citation_curation/20261014-gr-plus-citation/af6-baseline-02.log | context_only | Actual baseline exit code 0; schema validity is not concentration support. |
+| baseline-3 | reports/paper_citation_curation/20261014-gr-plus-citation/af6-baseline-03.log; reports/paper_citation_curation/20261014-gr-plus-citation/af6-baseline-03.log | context_only | Actual baseline exit code 0; schema validity is not concentration support. |
+
+## Limits And Additional Notes
+
+- No values converted without an explicit final-volume denominator; source amounts and cell boundaries retained.
+- No complete ingredient-ontology audit; hydrate and vitamin identity need separate verification before repair.
+- No claim that these are the only AF6 reports or issues in the repository; no prior issue disposition changed.
+- Current official sources do not prove historical paper formulation; NIES AF6 is a separately qualified collection recipe.
+- Only baseline schema/strict checks run; no post-edit checks because no recipe changed.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T073218Z-af6-source-followup
+kind: batch
+repository: culturebotai/CultureMech
+title: AF6 source identity and amount-stage barriers to citation curation
+started_at: '2026-10-14T07:31:52Z'
+finished_at: '2026-10-14T07:32:18Z'
+reviewer:
+  identity: codex
+  kind: agent
+  independence: self_review
+  independence_basis: Curator-performed bounded source comparison, not independent
+    review.
+skill: review-ingredient-concentrations
+completion: partial
+verdict: needs_curation
+scientific_review: false
+summary: 46 encoded amount fields assessed across two unchanged AF6 owners. Sources
+  expose unit/stage loss, explicit pH differences and optional agar. No new concentration,
+  citation, variant or growth claim applied.
+source:
+  git_revision: 41d4d390123c0d8320cd53e994470c88a1b86d8c
+  state: working_tree
+  inputs:
+  - path: data/normalized_yaml/bacterial/af6.yaml
+    sha256: f2338ee44cc52765429961baf41a6f33f175db8e52480a56b08f92356101e7fe
+    role: target
+  - path: data/normalized_yaml/bacterial/af6_ph4_0.yaml
+    sha256: 1f0bd7d406a2c195ecd445296152f1d8d6579fe6f4de763b3c985c9969a60d08
+    role: target
+  - path: references_cache/papers/primary_pdf/nies-af6-gr-plus-followup-20261014.pdf
+    sha256: 807ee6da94079cb2292a764a519d4a3bb009377dc7602c0a113e35d22881c4a1
+    role: context
+  - path: references_cache/papers/primary_xml/nbrc-1475-af6-ph4-gr-plus-followup-20261014.html
+    sha256: 3c6e034dd0e99d0343c0ec657672d48df0ead296c472fa5daabbb6fbff49c3d5
+    role: context
+  - path: references_cache/papers/primary_xml/nbrc-964-af6-gr-plus-followup-20261014.html
+    sha256: f0982953a5e6c9c071a690afa6acb16e5cf3c8e3f394a0bec5de7bbdd3e1d87b
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: Two source-linked normalized AF6 owners; all current direct ingredients
+    and stock dose
+  selection: NBRC964 and linked NBRC1475 encountered while mapping 2019/2021 AF6 paper
+    media
+  coverage: full
+  population_size: 2
+  reviewed_target_ids:
+  - CultureMech:008317
+  - CultureMech:008731
+  exclusions:
+  - target: Full-record scientific approval, chemical grounding and paper growth assignment
+    reason: Bounded source/amount-stage comparison only; unresolved base recipe and
+      taxonomy work remains.
+  - target: Native repair and generated publication
+    reason: No mutation authorized by this read-only follow-up assessment.
+targets:
+- target_id: CultureMech:008317
+  path: data/normalized_yaml/bacterial/af6.yaml
+  label: af6
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/af6.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:008731
+  path: data/normalized_yaml/bacterial/af6_ph4_0.yaml
+  label: af6_ph4_0
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/af6_ph4_0.yaml
+    role: authoritative normalized recipe
+checks:
+- check_id: baseline-0
+  name: just validate-schema data/normalized_yaml/bacterial/af6.yaml
+  command: just validate-schema data/normalized_yaml/bacterial/af6.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - baseline-0
+  summary: Read-only recipe baseline; no native edits.
+- check_id: baseline-1
+  name: just validate-strict data/normalized_yaml/bacterial/af6.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/af6.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - baseline-1
+  summary: Read-only recipe baseline; no native edits.
+- check_id: baseline-2
+  name: just validate-schema data/normalized_yaml/bacterial/af6_ph4_0.yaml
+  command: just validate-schema data/normalized_yaml/bacterial/af6_ph4_0.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - baseline-2
+  summary: Read-only recipe baseline; no native edits.
+- check_id: baseline-3
+  name: just validate-strict data/normalized_yaml/bacterial/af6_ph4_0.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/af6_ph4_0.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - baseline-3
+  summary: Read-only recipe baseline; no native edits.
+evidence:
+- evidence_id: nbrc-964
+  kind: authority
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964
+  locator: references_cache/papers/primary_xml/nbrc-964-af6-gr-plus-followup-20261014.html
+  accessed_at: '2026-10-14T07:32:18Z'
+  snapshot_sha256: f0982953a5e6c9c071a690afa6acb16e5cf3c8e3f394a0bec5de7bbdd3e1d87b
+  support: refutes
+  summary: Original official recipe leaf-table cells distinguish base/stock, mg and
+    microgram amounts, water volumes, optional agar and source pH; final volume is
+    not explicitly made up.
+- evidence_id: nbrc-1475
+  kind: authority
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475
+  locator: references_cache/papers/primary_xml/nbrc-1475-af6-ph4-gr-plus-followup-20261014.html
+  accessed_at: '2026-10-14T07:32:18Z'
+  snapshot_sha256: 3c6e034dd0e99d0343c0ec657672d48df0ead296c472fa5daabbb6fbff49c3d5
+  support: refutes
+  summary: Original official recipe leaf-table cells distinguish base/stock, mg and
+    microgram amounts, water volumes, optional agar and source pH; final volume is
+    not explicitly made up.
+- evidence_id: baseline-0
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-gr-plus-citation/af6-baseline-00.log
+  locator: reports/paper_citation_curation/20261014-gr-plus-citation/af6-baseline-00.log
+  accessed_at: '2026-10-14T07:32:18Z'
+  snapshot_sha256: 7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050
+  support: context_only
+  summary: Actual baseline exit code 0; schema validity is not concentration support.
+- evidence_id: baseline-1
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-gr-plus-citation/af6-baseline-01.log
+  locator: reports/paper_citation_curation/20261014-gr-plus-citation/af6-baseline-01.log
+  accessed_at: '2026-10-14T07:32:18Z'
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+  support: context_only
+  summary: Actual baseline exit code 0; schema validity is not concentration support.
+- evidence_id: baseline-2
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-gr-plus-citation/af6-baseline-02.log
+  locator: reports/paper_citation_curation/20261014-gr-plus-citation/af6-baseline-02.log
+  accessed_at: '2026-10-14T07:32:18Z'
+  snapshot_sha256: 7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050
+  support: context_only
+  summary: Actual baseline exit code 0; schema validity is not concentration support.
+- evidence_id: baseline-3
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-gr-plus-citation/af6-baseline-03.log
+  locator: reports/paper_citation_curation/20261014-gr-plus-citation/af6-baseline-03.log
+  accessed_at: '2026-10-14T07:32:18Z'
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+  support: context_only
+  summary: Actual baseline exit code 0; schema validity is not concentration support.
+assessments:
+- assessment_id: amount-0-0
+  area: evidence
+  topic: ingredients[0].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'Distilled water: status=unsupported; 101.0 sums 1 L base water and 100
+    mL stock water without unit conversion or stage separation; neither is a g/L solute
+    amount. No numerical replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[0].concentration", "ingredient": "Distilled water",
+    "term": {"id": "CHEBI:15377", "label": "water"}, "existing_concentration": {"value":
+    "101.0", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964",
+    "source_rows": [{"stage": "base", "cells": ["Distilled water", "1", "L"]}, {"stage":
+    "P IV stock", "cells": ["Distilled water", "100", "mL"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "101.0
+    sums 1 L base water and 100 mL stock water without unit conversion or stage separation;
+    neither is a g/L solute amount."}'
+- assessment_id: amount-0-1
+  area: evidence
+  topic: ingredients[1].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'MgSO4·7H2O: status=unsupported; Source mass unit is not g/L; converting
+    to final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[1].concentration", "ingredient": "MgSO4·7H2O", "term":
+    {"id": "CHEBI:31795", "label": "magnesium sulfate heptahydrate"}, "existing_concentration":
+    {"value": "30", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows":
+    [{"stage": "base", "cells": ["MgSO4·7H2O", "30", "mg"]}], "quotation_scope": "Individual
+    source cells retained separately, not spliced into a purported sentence.", "status":
+    "unsupported", "basis": "Source batch additions; final-volume denominator not
+    explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-0-2
+  area: evidence
+  topic: ingredients[2].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'CaCl2·2H2O: status=unsupported; Source mass unit is not g/L; converting
+    to final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[2].concentration", "ingredient": "CaCl2·2H2O", "term":
+    {"id": "CHEBI:86158", "label": "calcium chloride dihydrate"}, "existing_concentration":
+    {"value": "10", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows":
+    [{"stage": "base", "cells": ["CaCl2·2H2O", "10", "mg"]}], "quotation_scope": "Individual
+    source cells retained separately, not spliced into a purported sentence.", "status":
+    "unsupported", "basis": "Source batch additions; final-volume denominator not
+    explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-0-3
+  area: evidence
+  topic: ingredients[3].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'KH2PO4: status=unsupported; Source mass unit is not g/L; converting to
+    final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[3].concentration", "ingredient": "KH2PO4", "term":
+    {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"}, "existing_concentration":
+    {"value": "10", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows":
+    [{"stage": "base", "cells": ["KH2PO4", "10", "mg"]}], "quotation_scope": "Individual
+    source cells retained separately, not spliced into a purported sentence.", "status":
+    "unsupported", "basis": "Source batch additions; final-volume denominator not
+    explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-0-4
+  area: evidence
+  topic: ingredients[4].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'K2HPO4: status=unsupported; Source mass unit is not g/L; converting to
+    final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[4].concentration", "ingredient": "K2HPO4", "term":
+    {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "existing_concentration":
+    {"value": "5", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows":
+    [{"stage": "base", "cells": ["K2HPO4", "5", "mg"]}], "quotation_scope": "Individual
+    source cells retained separately, not spliced into a purported sentence.", "status":
+    "unsupported", "basis": "Source batch additions; final-volume denominator not
+    explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-0-5
+  area: evidence
+  topic: ingredients[5].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'Biotin: status=unsupported; Source mass unit is not g/L; converting to
+    final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[5].concentration", "ingredient": "Biotin", "term":
+    {"id": "CHEBI:15956", "label": "biotin"}, "existing_concentration": {"value":
+    "2", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964",
+    "source_rows": [{"stage": "base", "cells": ["Biotin", "2", "μg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-0-6
+  area: evidence
+  topic: ingredients[6].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'Thiamine-HCl: status=unsupported; Source mass unit is not g/L; converting
+    to final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[6].concentration", "ingredient": "Thiamine-HCl", "term":
+    {"id": "CHEBI:49105", "label": "thiamine hydrochloride"}, "existing_concentration":
+    {"value": "10", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows":
+    [{"stage": "base", "cells": ["Thiamine-HCl", "10", "μg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-0-7
+  area: evidence
+  topic: ingredients[7].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'Vitamin B12: status=unsupported; Source mass unit is not g/L; converting
+    to final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[7].concentration", "ingredient": "Vitamin B12", "term":
+    {"id": "CHEBI:176843", "label": "vitamin B12"}, "existing_concentration": {"value":
+    "1", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964",
+    "source_rows": [{"stage": "base", "cells": ["Vitamin B12", "1", "μg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-0-8
+  area: evidence
+  topic: ingredients[8].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'NaNO3: status=unsupported; Source mass unit is not g/L; converting to
+    final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[8].concentration", "ingredient": "NaNO3", "term": {"id":
+    "CHEBI:63005", "label": "sodium nitrate"}, "existing_concentration": {"value":
+    "140", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964",
+    "source_rows": [{"stage": "base", "cells": ["NaNO3", "140", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-0-9
+  area: evidence
+  topic: ingredients[9].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'CaCO3: status=unsupported; Source mass unit is not g/L; converting to
+    final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[9].concentration", "ingredient": "CaCO3", "term": {"id":
+    "CHEBI:3311", "label": "calcium carbonate"}, "existing_concentration": {"value":
+    "10", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964",
+    "source_rows": [{"stage": "base", "cells": ["CaCO3", "10", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-0-10
+  area: evidence
+  topic: ingredients[10].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'NH4NO3: status=unsupported; Source mass unit is not g/L; converting to
+    final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[10].concentration", "ingredient": "NH4NO3", "term":
+    {"id": "CHEBI:63038", "label": "ammonium nitrate"}, "existing_concentration":
+    {"value": "22", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows":
+    [{"stage": "base", "cells": ["NH4NO3", "22", "mg"]}], "quotation_scope": "Individual
+    source cells retained separately, not spliced into a purported sentence.", "status":
+    "unsupported", "basis": "Source batch additions; final-volume denominator not
+    explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-0-11
+  area: evidence
+  topic: ingredients[11].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'Fe-citrate: status=unsupported; Source mass unit is not g/L; converting
+    to final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[11].concentration", "ingredient": "Fe-citrate", "term":
+    null, "existing_concentration": {"value": "2", "unit": "G_PER_L"}, "existing_evidence":
+    [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964",
+    "source_rows": [{"stage": "base", "cells": ["Fe-citrate", "2", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-0-12
+  area: evidence
+  topic: ingredients[12].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'MES buffer: status=unsupported; Source mass unit is not g/L; converting
+    to final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[12].concentration", "ingredient": "MES buffer", "term":
+    null, "existing_concentration": {"value": "400", "unit": "G_PER_L"}, "existing_evidence":
+    [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964",
+    "source_rows": [{"stage": "base", "cells": ["MES buffer", "400", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-0-13
+  area: evidence
+  topic: ingredients[13].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'Vitamin B6: status=unsupported; Source mass unit is not g/L; converting
+    to final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[13].concentration", "ingredient": "Vitamin B6", "term":
+    {"id": "CHEBI:16709", "label": "pyridoxine"}, "existing_concentration": {"value":
+    "1", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964",
+    "source_rows": [{"stage": "base", "cells": ["Vitamin B6", "1", "μg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-0-14
+  area: evidence
+  topic: ingredients[14].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'Agar (if needed): status=unsupported; Agar is optional and stated as 12
+    g; a fixed g/L value and mandatory solid state need separate justification. No
+    numerical replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[14].concentration", "ingredient": "Agar (if needed)",
+    "term": null, "existing_concentration": {"value": "12", "unit": "G_PER_L"}, "existing_evidence":
+    [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964",
+    "source_rows": [{"stage": "base", "cells": ["Agar (if needed)", "12", "g"]}],
+    "quotation_scope": "Individual source cells retained separately, not spliced into
+    a purported sentence.", "status": "unsupported", "basis": "Source batch additions;
+    final-volume denominator not explicit", "proposed_concentration": null, "arithmetic":
+    null, "reason": "Agar is optional and stated as 12 g; a fixed g/L value and mandatory
+    solid state need separate justification."}'
+- assessment_id: amount-0-15
+  area: evidence
+  topic: ingredients[15].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'Citric acid: status=unsupported; Source mass unit is not g/L; converting
+    to final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[15].concentration", "ingredient": "Citric acid", "term":
+    {"id": "CHEBI:30769", "label": "citric acid"}, "existing_concentration": {"value":
+    "2", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964",
+    "source_rows": [{"stage": "base", "cells": ["Citric acid", "2", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-0-16
+  area: evidence
+  topic: ingredients[16].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'Na2MoO4·2H2O: status=unsupported; Stock recipe mass is flattened into
+    a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct.
+    No numerical replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[16].concentration", "ingredient": "Na2MoO4·2H2O", "term":
+    {"id": "CHEBI:75213", "label": "sodium molybdate dihydrate"}, "existing_concentration":
+    {"value": "0.25", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows":
+    [{"stage": "P IV stock", "cells": ["Na2MoO4·2H2O", "0.25", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock
+    recipe mass is flattened into a direct final-medium ingredient; stock preparation
+    volume and 5 mL dose are distinct."}'
+- assessment_id: amount-0-17
+  area: evidence
+  topic: ingredients[17].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'MnCl2·4H2O: status=unsupported; Stock recipe mass is flattened into a
+    direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct.
+    No numerical replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[17].concentration", "ingredient": "MnCl2·4H2O", "term":
+    {"id": "CHEBI:86368", "label": "manganese(II) chloride tetrahydrate"}, "existing_concentration":
+    {"value": "3.6", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows":
+    [{"stage": "P IV stock", "cells": ["MnCl2·4H2O", "3.6", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock
+    recipe mass is flattened into a direct final-medium ingredient; stock preparation
+    volume and 5 mL dose are distinct."}'
+- assessment_id: amount-0-18
+  area: evidence
+  topic: ingredients[18].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'CoCl2·6H2O: status=unsupported; Stock recipe mass is flattened into a
+    direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct.
+    No numerical replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[18].concentration", "ingredient": "CoCl2·6H2O", "term":
+    {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "existing_concentration":
+    {"value": "0.4", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows":
+    [{"stage": "P IV stock", "cells": ["CoCl2·6H2O", "0.4", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock
+    recipe mass is flattened into a direct final-medium ingredient; stock preparation
+    volume and 5 mL dose are distinct."}'
+- assessment_id: amount-0-19
+  area: evidence
+  topic: ingredients[19].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'ZnSO4·7H2O: status=unsupported; Stock recipe mass is flattened into a
+    direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct.
+    No numerical replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[19].concentration", "ingredient": "ZnSO4·7H2O", "term":
+    {"id": "CHEBI:32312", "label": "zinc sulfate heptahydrate"}, "existing_concentration":
+    {"value": "2.2", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows":
+    [{"stage": "P IV stock", "cells": ["ZnSO4·7H2O", "2.2", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock
+    recipe mass is flattened into a direct final-medium ingredient; stock preparation
+    volume and 5 mL dose are distinct."}'
+- assessment_id: amount-0-20
+  area: evidence
+  topic: ingredients[20].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'FeCl3·6H2O: status=unsupported; Stock recipe mass is flattened into a
+    direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct.
+    No numerical replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[20].concentration", "ingredient": "FeCl3·6H2O", "term":
+    {"id": "CHEBI:86254", "label": "iron trichloride hexahydrate"}, "existing_concentration":
+    {"value": "19.6", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows":
+    [{"stage": "P IV stock", "cells": ["FeCl3·6H2O", "19.6", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock
+    recipe mass is flattened into a direct final-medium ingredient; stock preparation
+    volume and 5 mL dose are distinct."}'
+- assessment_id: amount-0-21
+  area: evidence
+  topic: ingredients[21].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'Na2EDTA·2H2O: status=unsupported; Stock recipe mass is flattened into
+    a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct.
+    No numerical replacement approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "ingredients[21].concentration", "ingredient": "Na2EDTA·2H2O", "term":
+    {"id": "CHEBI:64758", "label": "EDTA disodium salt dihydrate"}, "existing_concentration":
+    {"value": "100", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964", "source_rows":
+    [{"stage": "P IV stock", "cells": ["Na2EDTA·2H2O", "100", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock
+    recipe mass is flattened into a direct final-medium ingredient; stock preparation
+    volume and 5 mL dose are distinct."}'
+- assessment_id: amount-0-22
+  area: evidence
+  topic: solutions[0].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: 'P IV Metals solution*: status=unsupported; 5 mL liquid-stock addition
+    is not 5 g/L and has no explicit final-volume denominator. No numerical replacement
+    approved.'
+  details: '{"target_id": "CultureMech:008317", "path": "data/normalized_yaml/bacterial/af6.yaml",
+    "field_path": "solutions[0].concentration", "ingredient": "P IV Metals solution*",
+    "term": null, "existing_concentration": {"value": "5", "unit": "G_PER_L"}, "existing_evidence":
+    [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=964",
+    "source_rows": [{"stage": "base", "cells": ["P IV Metals solution*", "5", "ml"]}],
+    "quotation_scope": "Individual source cells retained separately, not spliced into
+    a purported sentence.", "status": "unsupported", "basis": "Source batch additions;
+    final-volume denominator not explicit", "proposed_concentration": null, "arithmetic":
+    null, "reason": "5 mL liquid-stock addition is not 5 g/L and has no explicit final-volume
+    denominator."}'
+- assessment_id: identity-0
+  area: evidence
+  topic: Source identity and physical-state scope
+  outcome: concern
+  target_ids:
+  - CultureMech:008317
+  evidence_ids:
+  - nbrc-964
+  summary: Official pH is 6.6; record omits pH and requires SOLID_AGAR although source
+    agar is optional. Source duplicate classification loses the distinct pH.
+- assessment_id: amount-1-0
+  area: evidence
+  topic: ingredients[0].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'Distilled water: status=unsupported; 101.0 sums 1 L base water and 100
+    mL stock water without unit conversion or stage separation; neither is a g/L solute
+    amount. No numerical replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[0].concentration", "ingredient": "Distilled water",
+    "term": {"id": "CHEBI:15377", "label": "water"}, "existing_concentration": {"value":
+    "101.0", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475",
+    "source_rows": [{"stage": "base", "cells": ["Distilled water", "1", "L"]}, {"stage":
+    "P IV stock", "cells": ["Distilled water", "100", "mL"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "101.0
+    sums 1 L base water and 100 mL stock water without unit conversion or stage separation;
+    neither is a g/L solute amount."}'
+- assessment_id: amount-1-1
+  area: evidence
+  topic: ingredients[1].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'MgSO4·7H2O: status=unsupported; Source mass unit is not g/L; converting
+    to final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[1].concentration", "ingredient": "MgSO4·7H2O", "term":
+    {"id": "CHEBI:31795", "label": "magnesium sulfate heptahydrate"}, "existing_concentration":
+    {"value": "30", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows":
+    [{"stage": "base", "cells": ["MgSO4·7H2O", "30", "mg"]}], "quotation_scope": "Individual
+    source cells retained separately, not spliced into a purported sentence.", "status":
+    "unsupported", "basis": "Source batch additions; final-volume denominator not
+    explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-1-2
+  area: evidence
+  topic: ingredients[2].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'CaCl2·2H2O: status=unsupported; Source mass unit is not g/L; converting
+    to final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[2].concentration", "ingredient": "CaCl2·2H2O", "term":
+    {"id": "CHEBI:86158", "label": "calcium chloride dihydrate"}, "existing_concentration":
+    {"value": "10", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows":
+    [{"stage": "base", "cells": ["CaCl2·2H2O", "10", "mg"]}], "quotation_scope": "Individual
+    source cells retained separately, not spliced into a purported sentence.", "status":
+    "unsupported", "basis": "Source batch additions; final-volume denominator not
+    explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-1-3
+  area: evidence
+  topic: ingredients[3].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'KH2PO4: status=unsupported; Source mass unit is not g/L; converting to
+    final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[3].concentration", "ingredient": "KH2PO4", "term":
+    {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"}, "existing_concentration":
+    {"value": "10", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows":
+    [{"stage": "base", "cells": ["KH2PO4", "10", "mg"]}], "quotation_scope": "Individual
+    source cells retained separately, not spliced into a purported sentence.", "status":
+    "unsupported", "basis": "Source batch additions; final-volume denominator not
+    explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-1-4
+  area: evidence
+  topic: ingredients[4].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'K2HPO4: status=unsupported; Source mass unit is not g/L; converting to
+    final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[4].concentration", "ingredient": "K2HPO4", "term":
+    {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "existing_concentration":
+    {"value": "5", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows":
+    [{"stage": "base", "cells": ["K2HPO4", "5", "mg"]}], "quotation_scope": "Individual
+    source cells retained separately, not spliced into a purported sentence.", "status":
+    "unsupported", "basis": "Source batch additions; final-volume denominator not
+    explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-1-5
+  area: evidence
+  topic: ingredients[5].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'Biotin: status=unsupported; Source mass unit is not g/L; converting to
+    final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[5].concentration", "ingredient": "Biotin", "term":
+    {"id": "CHEBI:15956", "label": "biotin"}, "existing_concentration": {"value":
+    "2", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475",
+    "source_rows": [{"stage": "base", "cells": ["Biotin", "2", "μg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-1-6
+  area: evidence
+  topic: ingredients[6].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'Thiamine-HCl: status=unsupported; Source mass unit is not g/L; converting
+    to final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[6].concentration", "ingredient": "Thiamine-HCl", "term":
+    {"id": "CHEBI:49105", "label": "thiamine hydrochloride"}, "existing_concentration":
+    {"value": "10", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows":
+    [{"stage": "base", "cells": ["Thiamine-HCl", "10", "μg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-1-7
+  area: evidence
+  topic: ingredients[7].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'Vitamin B12: status=unsupported; Source mass unit is not g/L; converting
+    to final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[7].concentration", "ingredient": "Vitamin B12", "term":
+    {"id": "CHEBI:176843", "label": "vitamin B12"}, "existing_concentration": {"value":
+    "1", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475",
+    "source_rows": [{"stage": "base", "cells": ["Vitamin B12", "1", "μg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-1-8
+  area: evidence
+  topic: ingredients[8].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'NaNO3: status=unsupported; Source mass unit is not g/L; converting to
+    final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[8].concentration", "ingredient": "NaNO3", "term": {"id":
+    "CHEBI:63005", "label": "sodium nitrate"}, "existing_concentration": {"value":
+    "140", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475",
+    "source_rows": [{"stage": "base", "cells": ["NaNO3", "140", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-1-9
+  area: evidence
+  topic: ingredients[9].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'CaCO3: status=unsupported; Source mass unit is not g/L; converting to
+    final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[9].concentration", "ingredient": "CaCO3", "term": {"id":
+    "CHEBI:3311", "label": "calcium carbonate"}, "existing_concentration": {"value":
+    "10", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475",
+    "source_rows": [{"stage": "base", "cells": ["CaCO3", "10", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-1-10
+  area: evidence
+  topic: ingredients[10].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'NH4NO3: status=unsupported; Source mass unit is not g/L; converting to
+    final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[10].concentration", "ingredient": "NH4NO3", "term":
+    {"id": "CHEBI:63038", "label": "ammonium nitrate"}, "existing_concentration":
+    {"value": "22", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows":
+    [{"stage": "base", "cells": ["NH4NO3", "22", "mg"]}], "quotation_scope": "Individual
+    source cells retained separately, not spliced into a purported sentence.", "status":
+    "unsupported", "basis": "Source batch additions; final-volume denominator not
+    explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-1-11
+  area: evidence
+  topic: ingredients[11].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'Fe-citrate: status=unsupported; Source mass unit is not g/L; converting
+    to final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[11].concentration", "ingredient": "Fe-citrate", "term":
+    null, "existing_concentration": {"value": "2", "unit": "G_PER_L"}, "existing_evidence":
+    [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475",
+    "source_rows": [{"stage": "base", "cells": ["Fe-citrate", "2", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-1-12
+  area: evidence
+  topic: ingredients[12].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'MES buffer: status=unsupported; Source mass unit is not g/L; converting
+    to final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[12].concentration", "ingredient": "MES buffer", "term":
+    null, "existing_concentration": {"value": "400", "unit": "G_PER_L"}, "existing_evidence":
+    [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475",
+    "source_rows": [{"stage": "base", "cells": ["MES buffer", "400", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-1-13
+  area: evidence
+  topic: ingredients[13].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'Agar (if needed): status=unsupported; Agar is optional and stated as 12
+    g; a fixed g/L value and mandatory solid state need separate justification. No
+    numerical replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[13].concentration", "ingredient": "Agar (if needed)",
+    "term": null, "existing_concentration": {"value": "12", "unit": "G_PER_L"}, "existing_evidence":
+    [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475",
+    "source_rows": [{"stage": "base", "cells": ["Agar (if needed)", "12", "g"]}],
+    "quotation_scope": "Individual source cells retained separately, not spliced into
+    a purported sentence.", "status": "unsupported", "basis": "Source batch additions;
+    final-volume denominator not explicit", "proposed_concentration": null, "arithmetic":
+    null, "reason": "Agar is optional and stated as 12 g; a fixed g/L value and mandatory
+    solid state need separate justification."}'
+- assessment_id: amount-1-14
+  area: evidence
+  topic: ingredients[14].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'Vitamin B6: status=unsupported; Source mass unit is not g/L; converting
+    to final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[14].concentration", "ingredient": "Vitamin B6", "term":
+    {"id": "CHEBI:16709", "label": "pyridoxine"}, "existing_concentration": {"value":
+    "1", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475",
+    "source_rows": [{"stage": "base", "cells": ["Vitamin B6", "1", "μg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-1-15
+  area: evidence
+  topic: ingredients[15].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'Citric acid: status=unsupported; Source mass unit is not g/L; converting
+    to final-medium concentration requires an explicit final-volume basis. No numerical
+    replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[15].concentration", "ingredient": "Citric acid", "term":
+    {"id": "CHEBI:30769", "label": "citric acid"}, "existing_concentration": {"value":
+    "2", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475",
+    "source_rows": [{"stage": "base", "cells": ["Citric acid", "2", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Source
+    mass unit is not g/L; converting to final-medium concentration requires an explicit
+    final-volume basis."}'
+- assessment_id: amount-1-16
+  area: evidence
+  topic: ingredients[16].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'Na2MoO4·2H2O: status=unsupported; Stock recipe mass is flattened into
+    a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct.
+    No numerical replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[16].concentration", "ingredient": "Na2MoO4·2H2O", "term":
+    {"id": "CHEBI:75213", "label": "sodium molybdate dihydrate"}, "existing_concentration":
+    {"value": "0.25", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows":
+    [{"stage": "P IV stock", "cells": ["Na2MoO4·2H2O", "0.25", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock
+    recipe mass is flattened into a direct final-medium ingredient; stock preparation
+    volume and 5 mL dose are distinct."}'
+- assessment_id: amount-1-17
+  area: evidence
+  topic: ingredients[17].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'MnCl2·4H2O: status=unsupported; Stock recipe mass is flattened into a
+    direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct.
+    No numerical replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[17].concentration", "ingredient": "MnCl2·4H2O", "term":
+    {"id": "CHEBI:86368", "label": "manganese(II) chloride tetrahydrate"}, "existing_concentration":
+    {"value": "3.6", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows":
+    [{"stage": "P IV stock", "cells": ["MnCl2·4H2O", "3.6", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock
+    recipe mass is flattened into a direct final-medium ingredient; stock preparation
+    volume and 5 mL dose are distinct."}'
+- assessment_id: amount-1-18
+  area: evidence
+  topic: ingredients[18].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'CoCl2·6H2O: status=unsupported; Stock recipe mass is flattened into a
+    direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct.
+    No numerical replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[18].concentration", "ingredient": "CoCl2·6H2O", "term":
+    {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "existing_concentration":
+    {"value": "0.4", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows":
+    [{"stage": "P IV stock", "cells": ["CoCl2·6H2O", "0.4", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock
+    recipe mass is flattened into a direct final-medium ingredient; stock preparation
+    volume and 5 mL dose are distinct."}'
+- assessment_id: amount-1-19
+  area: evidence
+  topic: ingredients[19].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'ZnSO4·7H2O: status=unsupported; Stock recipe mass is flattened into a
+    direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct.
+    No numerical replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[19].concentration", "ingredient": "ZnSO4·7H2O", "term":
+    {"id": "CHEBI:32312", "label": "zinc sulfate heptahydrate"}, "existing_concentration":
+    {"value": "2.2", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows":
+    [{"stage": "P IV stock", "cells": ["ZnSO4·7H2O", "2.2", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock
+    recipe mass is flattened into a direct final-medium ingredient; stock preparation
+    volume and 5 mL dose are distinct."}'
+- assessment_id: amount-1-20
+  area: evidence
+  topic: ingredients[20].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'FeCl3·6H2O: status=unsupported; Stock recipe mass is flattened into a
+    direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct.
+    No numerical replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[20].concentration", "ingredient": "FeCl3·6H2O", "term":
+    {"id": "CHEBI:86254", "label": "iron trichloride hexahydrate"}, "existing_concentration":
+    {"value": "19.6", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows":
+    [{"stage": "P IV stock", "cells": ["FeCl3·6H2O", "19.6", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock
+    recipe mass is flattened into a direct final-medium ingredient; stock preparation
+    volume and 5 mL dose are distinct."}'
+- assessment_id: amount-1-21
+  area: evidence
+  topic: ingredients[21].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'Na2EDTA·2H2O: status=unsupported; Stock recipe mass is flattened into
+    a direct final-medium ingredient; stock preparation volume and 5 mL dose are distinct.
+    No numerical replacement approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "ingredients[21].concentration", "ingredient": "Na2EDTA·2H2O", "term":
+    {"id": "CHEBI:64758", "label": "EDTA disodium salt dihydrate"}, "existing_concentration":
+    {"value": "100", "unit": "G_PER_L"}, "existing_evidence": [], "source_reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475", "source_rows":
+    [{"stage": "P IV stock", "cells": ["Na2EDTA·2H2O", "100", "mg"]}], "quotation_scope":
+    "Individual source cells retained separately, not spliced into a purported sentence.",
+    "status": "unsupported", "basis": "Source batch additions; final-volume denominator
+    not explicit", "proposed_concentration": null, "arithmetic": null, "reason": "Stock
+    recipe mass is flattened into a direct final-medium ingredient; stock preparation
+    volume and 5 mL dose are distinct."}'
+- assessment_id: amount-1-22
+  area: evidence
+  topic: solutions[0].concentration
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: 'P IV Metals solution*: status=unsupported; 5 mL liquid-stock addition
+    is not 5 g/L and has no explicit final-volume denominator. No numerical replacement
+    approved.'
+  details: '{"target_id": "CultureMech:008731", "path": "data/normalized_yaml/bacterial/af6_ph4_0.yaml",
+    "field_path": "solutions[0].concentration", "ingredient": "P IV Metals solution*",
+    "term": null, "existing_concentration": {"value": "5", "unit": "G_PER_L"}, "existing_evidence":
+    [], "source_reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1475",
+    "source_rows": [{"stage": "base", "cells": ["P IV Metals solution*", "5", "ml"]}],
+    "quotation_scope": "Individual source cells retained separately, not spliced into
+    a purported sentence.", "status": "unsupported", "basis": "Source batch additions;
+    final-volume denominator not explicit", "proposed_concentration": null, "arithmetic":
+    null, "reason": "5 mL liquid-stock addition is not 5 g/L and has no explicit final-volume
+    denominator."}'
+- assessment_id: identity-1
+  area: evidence
+  topic: Source identity and physical-state scope
+  outcome: concern
+  target_ids:
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-1475
+  summary: Official pH is 4.0; record omits pH and requires SOLID_AGAR although source
+    agar is optional. Source duplicate classification loses the distinct pH.
+findings:
+- finding_id: units-and-stages
+  issue_key: af6-source-followup-units-and-stages
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: AF6 amount units and stock boundaries are not preserved
+  description: Both records contain 22 direct g/L entries and one g/L stock dose.
+    Official sources use mass-per-batch units, distinct water amounts, a 5 mL stock
+    dose, and six stock components. The 101.0 g/L water value combines unlike quantities.
+    Final volume is not explicit, so no numeric repair is approved.
+  target_ids:
+  - CultureMech:008317
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-964
+  - nbrc-1475
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/af6.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/af6_ph4_0.yaml
+    role: authoritative normalized recipe
+- finding_id: ph-identity
+  issue_key: af6-source-followup-ph-identity
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source duplicate links ignore an explicit pH difference
+  description: NBRC964 is pH6.6 and NBRC1475 is pH4.0 despite identical listed ingredients.
+    Both current reciprocal links and the child variant_relationship say SOURCE_DUPLICATE;
+    ingredient fingerprints cannot establish exact identity.
+  target_ids:
+  - CultureMech:008317
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-964
+  - nbrc-1475
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/af6.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/af6_ph4_0.yaml
+    role: authoritative normalized recipe
+- finding_id: optional-agar
+  issue_key: af6-source-followup-optional-agar
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Optional agar is represented as a mandatory solid medium
+  description: Both official sources say Agar (if needed), but both owners require
+    SOLID_AGAR. This loses the liquid/optional scope and cannot support unqualified
+    paper-to-owner growth transfer.
+  target_ids:
+  - CultureMech:008317
+  - CultureMech:008731
+  evidence_ids:
+  - nbrc-964
+  - nbrc-1475
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/af6.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/af6_ph4_0.yaml
+    role: authoritative normalized recipe
+actions:
+- action_id: resolve-units-and-stages
+  description: AF6 amount units and stock boundaries are not preserved
+  finding_ids:
+  - units-and-stages
+  target_ids:
+  - CultureMech:008317
+  - CultureMech:008731
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/af6.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/af6_ph4_0.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Preserve all source row amounts and preparation stages, remove or correct unsupported
+    fixed concentrations only through a guarded evidence-backed preview, and do not
+    assume final volume.
+- action_id: resolve-ph-identity
+  description: Source duplicate links ignore an explicit pH difference
+  finding_ids:
+  - ph-identity
+  target_ids:
+  - CultureMech:008317
+  - CultureMech:008731
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/af6.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/af6_ph4_0.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Represent both verified pH values and a supported pH-variant relationship, preserve
+    IDs, update reciprocal links and pass link validation; do not merge these as exact
+    duplicates.
+- action_id: resolve-optional-agar
+  description: Optional agar is represented as a mandatory solid medium
+  finding_ids:
+  - optional-agar
+  target_ids:
+  - CultureMech:008317
+  - CultureMech:008731
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/af6.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/af6_ph4_0.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Resolve supported liquid/solid scope before assigning paper-specific growth; keep
+    source optionality and avoid inventing a universal physical state.
+limitations:
+- No values converted without an explicit final-volume denominator; source amounts
+  and cell boundaries retained.
+- No complete ingredient-ontology audit; hydrate and vitamin identity need separate
+  verification before repair.
+- No claim that these are the only AF6 reports or issues in the repository; no prior
+  issue disposition changed.
+- Current official sources do not prove historical paper formulation; NIES AF6 is
+  a separately qualified collection recipe.
+- Only baseline schema/strict checks run; no post-edit checks because no recipe changed.
+```

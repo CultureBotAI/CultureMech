@@ -338,6 +338,16 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T09:34:16.263775+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_AND_SOURCE_SCOPED_VARIANT
+  notes: Added two verified paper citations with archived source/Markdown provenance,
+    one source-described inline variant and DOI/snippet-backed wild-type MR-1 growth
+    scoped only to that variant. Preserved all parent ingredients, prior history and
+    full-record variant links. Retained unresolved stock/chemical normalization and
+    source-version limitations; no quantitative growth metric or parent concentration
+    certification.
+  source: doi:10.1002/btpr.227; doi:10.1002/bit.21002
 media_term:
   preferred_term: MediaDB Medium 184
   term:
@@ -349,3 +359,135 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1002/btpr.227
+  title: Invariability of central metabolic flux distribution in Shewanella oneidensis
+    MR-1 under environmental or genetic perturbations.
+  authors: Tang YJ; Martin HG; Deutschbauer A; Feng X; Huang R; Llora X; Arkin A;
+    Keasling JD
+  year: 2009
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=73, medID=184. Publication identity was
+    checked against archived PubMed metadata and the exact SQL joins. Database growth
+    rates are discovery leads, not imported experimental measurements. The historical
+    Mazumdar import note remains database provenance. No correction/retraction notice
+    appears in the inspected PubMed entry; this is a bounded notice check. PMID:19610125.
+    PubMed XML/abstract=references_cache/papers/PMID_19610125.{xml,md}; full manuscript/Markdown=references_cache/papers/primary_pdf/tang-2009-osti-author-manuscript.{pdf,md};
+    https://www.osti.gov/servlets/purl/960243. Identity verified by title, authors
+    and DOI-bearing OSTI metadata. Inspected PDF pages 4-5 (culture versus analysis),
+    8 (growth results), 13 (Figure 1 caption) and 15 (Figure 1 plot). Variant_destination=''Tang
+    2009 manuscript 20 mM PIPES tracer medium with amino acids''. Source version=OSTI
+    author manuscript with visible red revisions; final typeset body was not obtained.
+    This variant represents the reported assay at the stated protocol level, not a
+    completely normalized chemical recipe. Reference 19 (Tang 2006) was inspected:
+    its base uses 10 mM PIPES and different lactate doses, with antifoam and hydrate-specific
+    trace salts. The 2009 explicit overrides take precedence; transfer of antifoam
+    and exact trace/hydrate equivalence remain unverified. The parent''s generic filtration
+    step is not newly certified. Scientific name and canonical label=Shewanella oneidensis
+    MR-1; NCBITaxon:211586; rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI
+    equivalent name. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=211586&retmode=xml;
+    archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This
+    verifies the wild-type background, not an independent exact taxonomy identity
+    for every engineered derivative. The positive entry is wild-type MR-1 only. Ten
+    transposon derivatives are described separately, not collapsed into the wild-type
+    outcome; taxonomy_match=parent_rank_only for these derivatives, with MR-1 (NCBITaxon:211586,
+    rank=strain) as their verified background parent. Escherichia coli WM3064 is a
+    conjugation donor carrying pRL27, not a demonstrated target on this minimal medium.
+    Exact role excerpt=''E. coli donor strain WM3064''. Scientific name=Escherichia
+    coli; verified parent=Escherichia coli, NCBITaxon:562, rank=species; taxonomy_match=parent_rank_only
+    for the reported strains. Exact quoted-name searches did not resolve WM3064, EC100D
+    or Top10 to strain nodes; this is not proof that no alternate-name node exists.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    archive=references_cache/papers/taxonomy/ecoli-species-20261013.{xml,md}. LB preculture,
+    kanamycin selection and HCl/THF/derivatization reagents belong to different experimental
+    stages, not this growth formulation. Organism inventory is bounded to the inspected
+    cultivation and Figure 1 passages. No exact database growth rates or universal
+    optimum are asserted. The publisher''s full-text link returned the abstract page;
+    its linked supplement was not obtained in this pass.'
+- reference: doi:10.1002/bit.21002
+  title: Evaluation of the effects of various culture conditions on Cr(VI) reduction
+    by Shewanella oneidensis MR-1 in a novel high-throughput mini-bioreactor.
+  authors: Tang YJ; Laidlaw D; Gani K; Keasling JD
+  year: 2006
+  notes: source_type=journal_article_author_manuscript; discovery_mode=Tang_2009_reference_19;
+    accessed_on=2026-10-13; PMID:16732598. Full manuscript/Markdown=references_cache/papers/primary_pdf/tang-2006-osti-author-manuscript.{pdf,md};
+    https://www.osti.gov/servlets/purl/919764; PubMed XML/abstract=references_cache/papers/PMID_16732598.{xml,md}.
+    DOI-bearing OSTI metadata and title/authors were checked; line-numbered author
+    manuscript, final published version not compared. PDF page 8, lines 7-14 defines
+    the cited base; exact excerpt='10 mM PIPES'. The 2009 source explicitly overrides
+    PIPES and lactate, and its 17-amino-acid treatment is not the 2006 three-amino-acid
+    mixture. Antifoam transfer and chemical hydration equivalence remain unverified.
+    Literal trace formulas include CoCl2.4H2O and Na2MoO4.4H2O; do not silently change
+    those source tokens or use them to certify anhydrous parent terms. The separate
+    pH experiments on page 14 also use different buffering and do not establish identity
+    with every 2009 assay. Scientific name and canonical label=Shewanella oneidensis
+    MR-1; NCBITaxon:211586; rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI
+    equivalent name. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=211586&retmode=xml;
+    archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This
+    verifies the wild-type background, not an independent exact taxonomy identity
+    for every engineered derivative. The relevant medium paragraph concerns this strain;
+    supporting base-protocol relevance is not additional parent growth evidence.
+variants:
+- name: Tang 2009 manuscript 20 mM PIPES tracer medium with amino acids
+  relationship: DERIVED_FROM
+  description: 'Figure 1: no NaCl stress supplement; 17-amino-acid supplement. Source
+    version=OSTI author manuscript with visible red revisions; final typeset body
+    was not obtained. This variant represents the reported assay at the stated protocol
+    level, not a completely normalized chemical recipe. Reference 19 (Tang 2006) was
+    inspected: its base uses 10 mM PIPES and different lactate doses, with antifoam
+    and hydrate-specific trace salts. The 2009 explicit overrides take precedence;
+    transfer of antifoam and exact trace/hydrate equivalence remain unverified. The
+    parent''s generic filtration step is not newly certified. '
+  modifications:
+  - Use 20 mM PIPES at pH 7 instead of the parent's 10 mM PIPES.
+  - Use the source's 30 mM [3-13C] sodium L-lactate (98% as reported), rather than
+    silently treating unlabelled sodium L-lactate as the tracer substrate.
+  - 'Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan,
+    glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine
+    and other stereochemical terms are not certified by this generic mixture description.'
+  evidence:
+  - reference: doi:10.1002/btpr.227
+    supports: SUPPORT
+    snippet: pH=7, buffered with 20mM PIPES
+    explanation: 'Supports variants[].modifications PIPES amount and pH; OSTI manuscript
+      PDF page 4, culture conditions, visually checked. The same paragraph identifies
+      [3-13C] sodium L-lactate and gives the exact dose token ''30mM''. This is the
+      paper-described tracer assay, not a correction to parent ingredients. Figure
+      1: no NaCl stress supplement; 17-amino-acid supplement. Separate exact amino-acid
+      excerpt=''a final concentration of 25 µM for each amino acid''. 25 micromolar
+      equals 0.025 mM, but no parent amount or stereochemical identity is newly certified.
+      Source version=OSTI author manuscript with visible red revisions; final typeset
+      body was not obtained. This variant represents the reported assay at the stated
+      protocol level, not a completely normalized chemical recipe. Reference 19 (Tang
+      2006) was inspected: its base uses 10 mM PIPES and different lactate doses,
+      with antifoam and hydrate-specific trace salts. The 2009 explicit overrides
+      take precedence; transfer of antifoam and exact trace/hydrate equivalence remain
+      unverified. The parent''s generic filtration step is not newly certified. '
+target_organisms:
+- preferred_term: Shewanella oneidensis MR-1
+  strain: MR-1 (wild type)
+  term:
+    id: NCBITaxon:211586
+    label: Shewanella oneidensis MR-1
+  scoped_to_variant: Tang 2009 manuscript 20 mM PIPES tracer medium with amino acids
+  evidence:
+  - reference: doi:10.1002/btpr.227
+    supports: SUPPORT
+    snippet: Growth kinetics of Shewanella oneidensis MR-1
+    explanation: 'Figure 1: no NaCl stress supplement; 17-amino-acid supplement. Figure
+      1 caption on PDF page 13 identifies four treatments; the plot on page 15 shows
+      increasing dry biomass for each. The matched curve is filled diamonds. Methods
+      on page 4 specify duplicate cultures (n=2), 12 mL glass-tube cultures at 30
+      degrees C and 200 rpm. The amino-acid-plus-salt treatment is supported by Figure
+      1 and page 8 even though the abstract lists only three conditions. No approximate
+      doubling time is converted into an exact database rate. Scientific name and
+      canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586; rank=strain; taxonomy_match=exact;
+      ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=211586&retmode=xml;
+      archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This
+      verifies the wild-type background, not an independent exact taxonomy identity
+      for every engineered derivative. Growth is supported only on the named source-described
+      inline variant, not on the unmodified imported parent. Unresolved chemical normalization
+      is retained in that variant; the source''s qualitative cultivation result is
+      not a certification of the flattened parent recipe. Current KGX export does
+      not honor scoped_to_variant; this curation is not authorization to publish an
+      unscoped parent edge.'

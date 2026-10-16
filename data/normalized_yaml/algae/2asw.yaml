@@ -77,6 +77,15 @@ curation_history:
   source: https://www.ccap.ac.uk/wp-content/uploads/MR_2ASW.pdf; https://www.ebi.ac.uk/chebi/CHEBI:63005
   changes: NaNO / CHEBI:34545 Azimilide -> NaNO3 / CHEBI:63005 sodium nitrate; concentration retained
     and stock basis clarified.
+- timestamp: '2026-10-14T02:43:29.178060+00:00'
+  curator: codex
+  action: ADDED_STUDY_PAPER_CITATIONS_AND_VARIANTS
+  notes: Added archived paper citations, two bounded 2ASW study-variant descriptions
+    and DOI-backed exact amount excerpts. Preserved scientific names, strains, verified
+    NCBI species or parent-rank qualifications in citation notes. Full source formulations
+    remain unresolved; no conversion, parent amount change, new native growth assertion,
+    alteration of existing evidence, owner merge or publication.
+  source: doi:10.1128/spectrum.00069-23; doi:10.3389/fenrg.2015.00020; doi:10.1128/genomeA.01105-17
 references:
 - reference: CCAP:2ASW
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_2ASW.pdf
@@ -104,6 +113,165 @@ references:
   year: 2021
   notes: Source reports Chaetoceros gracilis UTEX LB2658 growth experiments in a modified
     F/2ASW formulation with sodium manipulation.
+- reference: doi:10.1128/spectrum.00069-23
+  title: Roles of Two Phytoene Synthases and Orange Protein in Carotenoid Metabolism
+    of the β-Carotene-Accumulating Dunaliella salina.
+  authors: Liang MH; Xie SR; Dai JL; Chen HH; Jiang JG
+  year: 2023
+  notes: 'source_type=journal_article; discovery_mode=catalog_page; accessed_on=2026-10-14;
+    PMID:37022233; source_url=https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10269666/fullTextXML;
+    access_scope=full JATS body; external supplement not retrieved; raw_archive=references_cache/papers/primary_xml/2asw-spectrum-2023-europepmc-20261014.xml;
+    markdown_archive=references_cache/papers/primary_xml/2asw-spectrum-2023-europepmc-20261014.md;
+    locator=Materials and Methods / Algal strains and cultivation conditions; exact
+    excerpt="D. salina was cultivated in 2ASW (artificial seawater) medium containing
+    1.5 M NaCl"; The methods identify Dunaliella salina CCAP 19/18 as the 2ASW culture;
+    canonical scientific name=Dunaliella salina; NCBITaxon:3046; actual rank=species;
+    taxonomy_match=exact_name_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3046.
+    Dunaliella sp. FACHB-847 is cultured on a separately cited Dunaliella medium,
+    not demonstrated 2ASW; the historical name Dunaliella bardawil is preserved but
+    not used to override the paper''s unresolved species identification; canonical
+    scientific name=Dunaliella; NCBITaxon:3044; actual rank=genus; taxonomy_match=parent_rank_only;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3044. No
+    exact FACHB-847 query match was returned; this does not prove taxon absence. Introduction
+    background comparator Dunaliella tertiolecta CCAP 19/6B: canonical scientific
+    name=Dunaliella tertiolecta; NCBITaxon:3047; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3047; mention
+    only, no 2ASW growth claim. Inventory scope is these 2ASW-relevant algal passages,
+    not organisms in the separate heterologous-expression assays or the entire paper.
+    External Table S2 was not retrieved (source host DNS failure); other recipe ingredients,
+    chemical forms, stocks, final-volume preparation and full equivalence to this
+    local parent remain unverified. The nominal parent NaCl entry is not total seawater-derived
+    NaCl; no higher/lower salt comparison or mass/molar conversion is asserted. Taxonomy
+    checked against NCBI EFetch archived 2026-10-14 at references_cache/papers/taxonomy/2asw-20261014.xml.
+    Species mappings do not verify exact strain identity. Cultivation observations
+    stay in this study''s citation/variant evidence, not parent-medium target_organisms.
+    OrganismDescriptor keys scientific names and scopes the whole descriptor, so repeated
+    strains and different variants cannot be collapsed into one assertion. The current
+    KGX growth exporter also ignores scoped_to_variant; no new native growth edge
+    or export is authorized by these observations. '
+- reference: doi:10.3389/fenrg.2015.00020
+  title: Evaluation of Diverse Microalgal Species as Potential Biofuel Feedstocks
+    Grown Using Municipal Wastewater
+  authors: Hiibel, Sage R.; Lemos, Mark S.; Kelly, Brian P.; Cushman, John C.
+  year: 2015
+  notes: 'source_type=journal_article; discovery_mode=catalog_page; accessed_on=2026-10-14;
+    PMID unresolved by the prior DOI-to-PubMed lookup; source_url=https://www.frontiersin.org/journals/energy-research/articles/10.3389/fenrg.2015.00020/full;
+    access_scope=publisher HTML full article including Table 1; raw_archive=references_cache/papers/primary_html/2asw-frontiers-2015-20261014.html;
+    markdown_archive=references_cache/papers/primary_html/2asw-frontiers-2015-20261014.md;
+    locator=Materials and Methods / Strains and media; exact excerpt="33.6 g/L of
+    sea salts were used in place of the NaCl."; The study separately maintains 18
+    Dunaliella strains on modified 2ASW before centrate screening. The following Table
+    1 identifications apply to that maintenance cohort, not to an unchanged parent
+    recipe or independent validation of collection identity. Reported scientific name=Dunaliella
+    bardawil; strain=UTEX LB 2538; canonical scientific name=Dunaliella salina; NCBITaxon:3046;
+    actual rank=species; taxonomy_match=verified_synonym_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3046;
+    Name-level mapping; strain identity is not independently verified. | Reported
+    scientific name=Dunaliella bioculata; strain=UTEX LB 199; canonical scientific
+    name=Dunaliella bioculata; NCBITaxon:13790; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=13790;
+    Name-level mapping; strain identity is not independently verified. | Reported
+    scientific name=Dunaliella salina; strain=UTEX LB 200; canonical scientific name=Dunaliella;
+    NCBITaxon:3044; actual rank=genus; taxonomy_match=parent_rank_only; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3044;
+    Paper Results / Preliminary centrate screening disputes the reported Dunaliella
+    salina assignment; species unresolved. | Reported scientific name=Dunaliella tertiolecta;
+    strain=UTEX LB 999; canonical scientific name=Dunaliella tertiolecta; NCBITaxon:3047;
+    actual rank=species; taxonomy_match=exact_name_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3047;
+    Name-level mapping; strain identity is not independently verified. | Reported
+    scientific name=Dunaliella salina; strain=UTEX LB 1644; canonical scientific name=Dunaliella
+    salina; NCBITaxon:3046; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3046; Name-level
+    mapping; strain identity is not independently verified. | Reported scientific
+    name=Dunaliella primolecta; strain=UTEX LB 1000; canonical scientific name=Dunaliella
+    primolecta; NCBITaxon:257627; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=257627;
+    Name-level mapping; strain identity is not independently verified. | Reported
+    scientific name=Dunaliella peircei; strain=UTEX LB 2192; canonical scientific
+    name=Dunaliella peircei; NCBITaxon:147822; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=147822;
+    Name-level mapping; strain identity is not independently verified. | Reported
+    scientific name=Dunaliella salina; strain=UTCC 197; canonical scientific name=Dunaliella
+    salina; NCBITaxon:3046; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3046; Name-level
+    mapping; strain identity is not independently verified. | Reported scientific
+    name=Dunaliella tertiolecta; strain=UTCC 420; canonical scientific name=Dunaliella
+    tertiolecta; NCBITaxon:3047; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3047; Name-level
+    mapping; strain identity is not independently verified. | Reported scientific
+    name=Dunaliella sp.; strain=UTCC 457; canonical scientific name=Dunaliella; NCBITaxon:3044;
+    actual rank=genus; taxonomy_match=parent_rank_only; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3044;
+    Paper gives genus only; species unresolved. | Reported scientific name=Dunaliella
+    salina; strain=CCAP 19/18; canonical scientific name=Dunaliella salina; NCBITaxon:3046;
+    actual rank=species; taxonomy_match=exact_name_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3046;
+    Name-level mapping; strain identity is not independently verified. | Reported
+    scientific name=Dunaliella tertiolecta; strain=CCAP 19/6B; canonical scientific
+    name=Dunaliella tertiolecta; NCBITaxon:3047; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3047; Name-level
+    mapping; strain identity is not independently verified. | Reported scientific
+    name=Dunaliella tertiolecta; strain=CCAP 19/24; canonical scientific name=Dunaliella
+    tertiolecta; NCBITaxon:3047; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3047; Name-level
+    mapping; strain identity is not independently verified. | Reported scientific
+    name=Dunaliella tertiolecta; strain=CCAP 19/27; canonical scientific name=Dunaliella
+    tertiolecta; NCBITaxon:3047; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3047; Name-level
+    mapping; strain identity is not independently verified. | Reported scientific
+    name=Dunaliella maritima; strain=SAG 42.89; canonical scientific name=Dunaliella
+    maritima; NCBITaxon:289300; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=289300;
+    Name-level mapping; strain identity is not independently verified. | Reported
+    scientific name=Dunaliella sp.; strain=SAG 19-5; canonical scientific name=Dunaliella;
+    NCBITaxon:3044; actual rank=genus; taxonomy_match=parent_rank_only; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3044;
+    Paper gives genus only; species unresolved. | Reported scientific name=Dunaliella
+    terricola; strain=SAG 43.89; canonical scientific name=Dunaliella terricola; NCBITaxon:3026963;
+    actual rank=species; taxonomy_match=exact_name_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3026963;
+    Name-level mapping; strain identity is not independently verified. | Reported
+    scientific name=Dunaliella granulata; strain=SAG 41.89; canonical scientific name=Dunaliella
+    granulata; NCBITaxon:3026961; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3026961;
+    Name-level mapping; strain identity is not independently verified. Table 1 percentages
+    describe centrate tests, not maintenance growth. The UTCC 197 negative centrate
+    result is not evidence of failure on modified 2ASW. The other maintenance cohorts
+    are on different media: Nannochloropsis (canonical scientific name=Nannochloropsis;
+    NCBITaxon:5748; actual rank=genus; taxonomy_match=exact_genus_label; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5748)
+    on modified f/2, and Neochloris (canonical scientific name=Neochloris; NCBITaxon:3098;
+    actual rank=genus; taxonomy_match=exact_genus_label; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3098)
+    on modified Bristol; neither is a 2ASW growth claim. The 22 non-Dunaliella strain
+    rows and wider discussion are outside this 2ASW organism inventory and remain
+    in the archived full table for separate medium-specific curation. The cited Gomord
+    et al. 2010 base source resolves in the bibliography to a plant-glycosylation
+    review (doi:10.1111/J.1467-7652.2009.00497.X), not an inspected 2ASW recipe. No
+    missing formulation detail is inherited from it. Sea-salt product identity, constituents
+    and all other formulation details remain unverified; no conversion to sodium chloride
+    molarity or assertion of equality to the local seawater alternative. Taxonomy
+    checked against NCBI EFetch archived 2026-10-14 at references_cache/papers/taxonomy/2asw-20261014.xml.
+    Species mappings do not verify exact strain identity. Cultivation observations
+    stay in this study''s citation/variant evidence, not parent-medium target_organisms.
+    OrganismDescriptor keys scientific names and scopes the whole descriptor, so repeated
+    strains and different variants cannot be collapsed into one assertion. The current
+    KGX growth exporter also ignores scoped_to_variant; no new native growth edge
+    or export is authorized by these observations. '
+- reference: doi:10.1128/genomeA.01105-17
+  title: Draft Nuclear Genome Sequence of the Halophilic and Beta-Carotene-Accumulating
+    Green Alga Dunaliella salina Strain CCAP19/18.
+  authors: Polle JEW; Barry K; Cushman J; Schmutz J; Tran D; Hathwaik LT; Yim WC;
+    Jenkins J; McKie-Krisberg Z; Prochnik S; Lindquist E; Dockter RB; Adam C; Molina
+    H; Bunkenborg J; Jin E; Buchheim M; Magnuson J
+  year: 2017
+  notes: 'source_type=journal_article; discovery_mode=catalog_page; accessed_on=2026-10-14;
+    PMID:29074648; source_url=https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5658486/fullTextXML;
+    access_scope=full JATS article; raw_archive=references_cache/papers/primary_xml/ccap-19-18-PMC5658486-20261014.xml;
+    markdown_archive=references_cache/papers/primary_xml/ccap-19-18-PMC5658486-20261014.md;
+    locator=Accession number(s); exact excerpt="The whole-genome sequencing project
+    was deposited in GenBank under BioProject number PRJNA32771."; Identity-support
+    citation for the existing Dunaliella salina CCAP 19/18 / NCBI:PRJNA32771 citation,
+    not evidence for 2ASW formulation or new growth. The accession section also identifies
+    BioSample SAMN02746051, genome NSFN00000000 and first version NSFN01000000. Scientific
+    name=Dunaliella salina; strain=CCAP 19/18; canonical scientific name=Dunaliella
+    salina; NCBITaxon:3046; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3046. The
+    paper''s general salinity discussion is not a measured condition for this CultureMech
+    recipe. Taxonomy checked against NCBI EFetch archived 2026-10-14 at references_cache/papers/taxonomy/2asw-20261014.xml.
+    Species mappings do not verify exact strain identity. '
 ingredients:
 - preferred_term: NaNO3
   term:
@@ -246,6 +414,53 @@ variants:
     supports: SUPPORT
     explanation: Tsuji et al. report Chaetoceros gracilis UTEX LB2658 growth and carbon-concentrating-mechanism
       experiments in modified F/2ASW with defined sodium manipulations.
+- name: 2asw_1_5_m_nacl
+  description: Study-specific 2ASW reported by Liang et al. (2023). Only the explicitly
+    stated NaCl concentration and algal cultivation context are resolved; full Table
+    S2 formulation remains unverified.
+  modifications:
+  - The study reports 1.5 M NaCl in its 2ASW culture medium. This is a reported medium
+    concentration, not a stock concentration or inferred amount to add.
+  - Other ingredients, stock additions, seawater contribution and final-volume preparation
+    remain unspecified in the inspected paragraph. No salt-increase/decrease direction
+    relative to this imported parent is asserted.
+  evidence:
+  - reference: doi:10.1128/spectrum.00069-23
+    supports: SUPPORT
+    snippet: D. salina was cultivated in 2ASW (artificial seawater) medium containing
+      1.5 M NaCl
+    explanation: 'Supports only variants[name=2asw_1_5_m_nacl].modifications[0]: explicitly
+      reported 1.5 M NaCl for Dunaliella salina CCAP 19/18, in Materials and Methods
+      / Algal strains and cultivation conditions. Not a complete recipe certification,
+      stock value, conversion, or canonical parent amount. canonical scientific name=Dunaliella
+      salina; NCBITaxon:3046; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+      lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3046;
+      cultivation applies to this study formulation only. Table S2 is uninspected.
+      Taxonomy checked against NCBI EFetch archived 2026-10-14 at references_cache/papers/taxonomy/2asw-20261014.xml.
+      Species mappings do not verify exact strain identity. '
+- name: 2asw_sea_salt_substitution_33_6_g_l
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  description: Modified 2ASW maintenance medium in Hiibel et al. (2015), with sea
+    salts substituted for NaCl. Separate from the paper's centrate-screening media;
+    the complete base formula is unresolved.
+  modifications:
+  - Use the study-reported 33.6 g/L sea salts in place of NaCl; this is an undefined
+    sea-salt mixture, not 33.6 g/L pure sodium chloride.
+  - The sea-salt brand, full constituent composition and other base-recipe details
+    are not established by the inspected methods. Do not assume equivalence to this
+    parent's seawater alternative or inherit details from the mismatched Gomord base
+    citation.
+  evidence:
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: 33.6 g/L of sea salts were used in place of the NaCl.
+    explanation: 'Supports only variants[name=2asw_sea_salt_substitution_33_6_g_l].modifications[0]:
+      directly reported sea-salt replacement amount in Materials and Methods / Strains
+      and media. It is the maintenance-medium mixture concentration, not a stock or
+      pure NaCl value. No arithmetic was performed. The paragraph assigns this modified
+      2ASW to the 18 Dunaliella strain rows in Table 1, whose scientific names and
+      taxonomy qualifications are preserved in this paper''s citation notes. Centrate
+      results are not parent or maintenance-medium growth metrics.'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Dunaliella salina

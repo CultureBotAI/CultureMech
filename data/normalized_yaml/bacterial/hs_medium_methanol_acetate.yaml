@@ -167,6 +167,14 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T18:20:46.076791+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified publication bibliography, archived abstract/Markdown provenance,
+    exact excerpts and qualified scientific-name/NCBI mappings. Preserved all prior
+    evidence, missing amounts and variant links. Exact formulations and organism/assay
+    assignment remain unresolved; no new native growth or concentration claim.
+  source: PMID:8824630
 media_term:
   preferred_term: MediaDB Medium 472
   term:
@@ -179,3 +187,48 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+references:
+- reference: PMID:8824630
+  title: Molecular, genetic, and biochemical characterization of the serC gene of
+    Methanosarcina barkeri Fusaro.
+  authors: Metcalf WW; Zhang JK; Shi X; Wolfe RS
+  year: 1996
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract_only; owner=MEDIADB:472;
+    discovery_sourceID=144; source_url=https://doi.org/10.1128/jb.178.19.5797-5802.1996;
+    alternate_identifier=doi:10.1128/jb.178.19.5797-5802.1996; alternate_identifier=PMC178424;
+    raw=references_cache/papers/PMID_8824630.xml; markdown=references_cache/papers/PMID_8824630.md;
+    PubMed Abstract, cloning-host role; exact excerpt="cloned by complementation of
+    an Escherichia coli serC mutant". Formulation_unresolved: The abstract supports
+    serC cloning and complementation, not all twelve HS-medium amounts or an exact
+    cultivation variant. The similar TOGO HS owner contains unresolved base/water
+    placeholders and a different sodium-sulfide hydrate; matching methanol/acetate
+    names does not justify merging or evidence transfer. Reported organism=Methanosarcina
+    barkeri Fusaro; canonical scientific name=Methanosarcina barkeri str. Fusaro;
+    NCBITaxon:269797; actual rank=strain; taxonomy_match=verified_strain_designation;
+    role=gene-source study organism named in title; local recipe assignment unresolved.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=269797&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/physiology-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/physiology-study-candidates-20261013.md.
+    Reported organism=Escherichia coli serC mutant and hosts carrying the cloned gene;
+    canonical scientific name=Escherichia coli; NCBITaxon:562; actual rank=species;
+    taxonomy_match=parent_rank_only; role=species parent for distinct complementation
+    hosts; exact derivatives unresolved; not HS-medium growth targets. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/physiology-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/physiology-study-candidates-20261013.md.
+    Reported organism=Methanosarcina acetivorans C2A (historical MediaDB row); canonical
+    scientific name=Methanosarcina acetivorans C2A; NCBITaxon:188937; actual rank=strain;
+    taxonomy_match=historical_strain_name_only; role=verified taxon identity for the
+    database label, but presence and role in this primary study are unverified. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=188937&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/physiology-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/physiology-study-candidates-20261013.md.
+    The historical C2A association is not promoted into a paper-backed cultivation
+    claim. Inventory covers inspected medium-relevant passages, not the entire paper.
+    Bounded taxonomy misses do not prove absence. Images/supplements and complete
+    inherited formulas are not certified; correction/retraction coverage is limited
+    to inspected publication metadata. All existing ingredients, concentrations (including
+    deliberately missing amounts), evidence, references, links, preparation and history
+    remain unchanged. No new native growth assertion, concentration EvidenceItem or
+    resolved variant.'

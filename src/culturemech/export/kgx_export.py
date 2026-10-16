@@ -52,6 +52,7 @@ import hashlib
 import os
 import re
 import uuid
+import warnings
 from collections.abc import Callable, Iterator, Mapping
 from dataclasses import asdict, dataclass
 from functools import lru_cache
@@ -478,6 +479,14 @@ def organism_grows_in_medium_edge(organism: dict, medium_id: str) -> dict | None
 
     Data preserved: Organism ID, strain info (as qualifier), evidence
     """
+    if organism.get("scoped_to_variant"):
+        warnings.warn(
+            f"Omitting variant-scoped growth for {medium_id}: "
+            f"{organism['scoped_to_variant']!r}; a parent-medium edge would broaden the evidence",
+            RuntimeWarning,
+            stacklevel=2,
+        )
+        return None
     org_id = _get_term_id(organism, ["term", "id"])
     if not org_id:
         return None

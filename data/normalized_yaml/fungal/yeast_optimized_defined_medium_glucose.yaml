@@ -314,6 +314,14 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T15:16:39.365769+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography with archived primary source and Markdown,
+    exact excerpts, scientific names and qualified NCBI taxonomy. Preserved recipe
+    differences and access/formulation limits; all prior quantities, links, preparation
+    and history unchanged. No new native growth or resolved variant.
+  source: PMID:11257606
 media_term:
   preferred_term: MediaDB Medium 396
   term:
@@ -325,3 +333,38 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:11257606
+  title: The metabolic burden of the PGK1 and ADH2 promoter systems for heterologous
+    xylanase production by Saccharomyces cerevisiae in defined medium.
+  authors: Görgens JF; van Zyl WH; Knoetze JH; Hahn-Hägerdal B
+  year: 2001
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=PubMed_abstract_only; alternate_identifier=doi:10.1002/bit.1056.
+    owner=MEDIADB:396; discovery_sourceID=138; source_url=https://pubmed.ncbi.nlm.nih.gov/11257606/;
+    raw_abstract=references_cache/papers/PMID_11257606.xml; source_markdown=references_cache/papers/PMID_11257606.md.
+    PubMed abstract; exact excerpt="Five recombinant S. cerevisiae strains". PubMed
+    abstract; exact excerpt="Trichoderma reesei xylanase II". PubMed abstract; exact
+    excerpt="reference". The abstract supports the study''s defined-medium context
+    but does not enumerate this owner''s 28 ingredients or supplement quantities.
+    Reported organism=S. cerevisiae / Saccharomyces cerevisiae; canonical scientific
+    name=Saccharomyces cerevisiae; NCBITaxon:4932; actual rank=species; taxonomy_match=exact
+    species; role=five study constructions, not a single interchangeable genotype.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=4932&retmode=xml.
+    Reported organism=Saccharomyces cerevisiae Y294, Y294[PGK1], Y294[PGK1-XYN], Y294[ADH2],
+    Y294[ADH2-XYN] (historical MediaDB labels); canonical scientific name=Saccharomyces
+    cerevisiae; NCBITaxon:4932; actual rank=species; taxonomy_match=parent_rank_only;
+    role=species parent only; exact construction identities not provided in abstract
+    and exact Y294 node unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=4932&retmode=xml.
+    Reported organism=Trichoderma reesei; canonical scientific name=Trichoderma reesei;
+    NCBITaxon:51453; actual rank=species; taxonomy_match=exact species; role=xylanase
+    gene donor, not cultivation on this yeast recipe. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=51453&retmode=xml.
+    Reported relative growth/yield changes depend on promoter and plasmid construction;
+    no unqualified metric is added. Original PubMed author diacritics are retained
+    rather than silently copying simplified historical author spellings. Taxonomy
+    archives=references_cache/papers/taxonomy/fungal-studies-20261013.* and lu-sfm-additional-20261013.*.
+    Bounded taxonomy lookup failures are not proof of taxon absence. Organism inventory
+    covers inspected medium-relevant passages, not inaccessible full text. Correction/retraction
+    coverage is limited to inspected publication metadata. All prior recipe fields
+    and history preserved, not newly certified. No new ingredient-concentration evidence,
+    resolved variant, native growth association or quantitative metric. '

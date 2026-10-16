@@ -1,0 +1,1841 @@
+schema_version: 1.0.0
+review_id: 20261014T054238Z-egjm-bristol-f2-citations
+kind: batch
+repository: culturebotai/CultureMech
+title: Marvania EG:JM and Hiibel Bristol/f2 citation curation
+started_at: '2026-10-14T04:15:18Z'
+finished_at: '2026-10-14T05:42:38Z'
+reviewer:
+  identity: codex
+  kind: agent
+  independence: self_review
+  independence_basis: Curator-performed bounded assessment, not independent review.
+skill: culturemech-add-paper-citation; review-ingredient-concentrations
+completion: partial
+verdict: needs_curation
+scientific_review: false
+summary: 'Five paper-record citations, two inline vitamin-replacement entries, six
+  concentration evidence additions, and eleven Bristol maintenance observations (eight
+  species-grounded, three parent-only). All 54 prior ingredients and canonical amounts
+  preserved. Twenty-seven post-edit reference issues: six baseline and twenty-one
+  newly exposed.'
+source:
+  git_revision: 41d4d390123c0d8320cd53e994470c88a1b86d8c
+  state: working_tree
+  inputs:
+  - path: data/normalized_yaml/algae/Bristol_Medium.yaml
+    sha256: 6be1ce67a2a1705b4d7c43097c06d9bd2379fa8d82dab0e52bd7c6102451bc35
+    role: target
+  - path: data/normalized_yaml/algae/eg_jm.yaml
+    sha256: deb882cf3681ca96e33922a933e11a296bf741efb9ec3a744531fc25d0ccf7e3
+    role: target
+  - path: data/normalized_yaml/algae/f_2.yaml
+    sha256: ba3cda6e26c8dfcd9e8e5557d3cf9c60f8f6b053567ae57a3bb825809df61017
+    role: target
+  - path: data/normalized_yaml/bacterial/eg_jm.yaml
+    sha256: 86956aaf39a4cca815f938c5f745ef172d01d61d1ae15421b9dfd92cc9f43d05
+    role: target
+  - path: data/normalized_yaml/bacterial/f_2.yaml
+    sha256: b79f6f9593f30ef8a597c5918fa13e35a996994283b67ee896241e68b070ce84
+    role: target
+  - path: src/culturemech/export/kgx_export.py
+    sha256: eacbc2e7b363488cc1ed96e91737f54244dc1a2425dfa05c77ba89d0a5cd10e0
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: Five normalized EG:JM, Bristol and CCAP f/2 owners; bounded paper claims
+    only
+  selection: Marvania cultivation and Hiibel maintenance passages, six-salt formulation,
+    Table 1 and footnotes
+  coverage: full
+  population_size: 5
+  reviewed_target_ids:
+  - CultureMech:000071
+  - CultureMech:000335
+  - CultureMech:000037
+  - CultureMech:000149
+  - CultureMech:000343
+  exclusions:
+  - target: Full-record scientific certification and all prior claims
+    reason: Existing content preserved, not comprehensively recertified.
+  - target: Other owners and all possible citations
+    reason: Active discovery queue; citation exhaustion not established.
+targets:
+- target_id: CultureMech:000071
+  path: data/normalized_yaml/algae/eg_jm.yaml
+  label: eg_jm
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/eg_jm.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000335
+  path: data/normalized_yaml/bacterial/eg_jm.yaml
+  label: eg_jm
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/eg_jm.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000037
+  path: data/normalized_yaml/algae/Bristol_Medium.yaml
+  label: bristol_medium
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/Bristol_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000149
+  path: data/normalized_yaml/algae/f_2.yaml
+  label: f_2
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/f_2.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000343
+  path: data/normalized_yaml/bacterial/f_2.yaml
+  label: f_2
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/f_2.yaml
+    role: authoritative normalized recipe
+checks:
+- check_id: baseline-00
+  name: just validate data/normalized_yaml/algae/eg_jm.yaml
+  command: just validate data/normalized_yaml/algae/eg_jm.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000071
+  evidence_ids:
+  - baseline-00
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: baseline-01
+  name: just validate-strict data/normalized_yaml/algae/eg_jm.yaml
+  command: just validate-strict data/normalized_yaml/algae/eg_jm.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000071
+  evidence_ids:
+  - baseline-01
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: baseline-02
+  name: just validate data/normalized_yaml/bacterial/eg_jm.yaml
+  command: just validate data/normalized_yaml/bacterial/eg_jm.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000335
+  evidence_ids:
+  - baseline-02
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: baseline-03
+  name: just validate-strict data/normalized_yaml/bacterial/eg_jm.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/eg_jm.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000335
+  evidence_ids:
+  - baseline-03
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: baseline-04
+  name: just validate data/normalized_yaml/algae/Bristol_Medium.yaml
+  command: just validate data/normalized_yaml/algae/Bristol_Medium.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - baseline-04
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: baseline-05
+  name: just validate-strict data/normalized_yaml/algae/Bristol_Medium.yaml
+  command: just validate-strict data/normalized_yaml/algae/Bristol_Medium.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - baseline-05
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: baseline-06
+  name: just validate data/normalized_yaml/algae/f_2.yaml
+  command: just validate data/normalized_yaml/algae/f_2.yaml
+  required: true
+  status: failed
+  exit_code: 1
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - baseline-06
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: baseline-07
+  name: just validate-strict data/normalized_yaml/algae/f_2.yaml
+  command: just validate-strict data/normalized_yaml/algae/f_2.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - baseline-07
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: baseline-08
+  name: just validate data/normalized_yaml/bacterial/f_2.yaml
+  command: just validate data/normalized_yaml/bacterial/f_2.yaml
+  required: true
+  status: failed
+  exit_code: 1
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - baseline-08
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: baseline-09
+  name: just validate-strict data/normalized_yaml/bacterial/f_2.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/f_2.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - baseline-09
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: post-00
+  name: just validate data/normalized_yaml/algae/eg_jm.yaml
+  command: just validate data/normalized_yaml/algae/eg_jm.yaml
+  required: true
+  status: failed
+  exit_code: 1
+  target_ids:
+  - CultureMech:000071
+  evidence_ids:
+  - post-00
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: post-01
+  name: just validate-strict data/normalized_yaml/algae/eg_jm.yaml
+  command: just validate-strict data/normalized_yaml/algae/eg_jm.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000071
+  evidence_ids:
+  - post-01
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: post-02
+  name: just validate data/normalized_yaml/bacterial/eg_jm.yaml
+  command: just validate data/normalized_yaml/bacterial/eg_jm.yaml
+  required: true
+  status: failed
+  exit_code: 1
+  target_ids:
+  - CultureMech:000335
+  evidence_ids:
+  - post-02
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: post-03
+  name: just validate-strict data/normalized_yaml/bacterial/eg_jm.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/eg_jm.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000335
+  evidence_ids:
+  - post-03
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: post-04
+  name: just validate data/normalized_yaml/algae/Bristol_Medium.yaml
+  command: just validate data/normalized_yaml/algae/Bristol_Medium.yaml
+  required: true
+  status: failed
+  exit_code: 1
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - post-04
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: post-05
+  name: just validate-strict data/normalized_yaml/algae/Bristol_Medium.yaml
+  command: just validate-strict data/normalized_yaml/algae/Bristol_Medium.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - post-05
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: post-06
+  name: just validate data/normalized_yaml/algae/f_2.yaml
+  command: just validate data/normalized_yaml/algae/f_2.yaml
+  required: true
+  status: failed
+  exit_code: 1
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - post-06
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: post-07
+  name: just validate-strict data/normalized_yaml/algae/f_2.yaml
+  command: just validate-strict data/normalized_yaml/algae/f_2.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - post-07
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: post-08
+  name: just validate data/normalized_yaml/bacterial/f_2.yaml
+  command: just validate data/normalized_yaml/bacterial/f_2.yaml
+  required: true
+  status: failed
+  exit_code: 1
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - post-08
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: post-09
+  name: just validate-strict data/normalized_yaml/bacterial/f_2.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/f_2.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - post-09
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: merge-00
+  name: just verify-merges
+  command: just verify-merges
+  required: true
+  status: failed
+  exit_code: 1
+  target_ids:
+  - CultureMech:000071
+  - CultureMech:000335
+  - CultureMech:000037
+  - CultureMech:000149
+  - CultureMech:000343
+  evidence_ids:
+  - merge-00
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: merge-01
+  name: just audit-merge-freshness
+  command: just audit-merge-freshness
+  required: true
+  status: failed
+  exit_code: 1
+  target_ids:
+  - CultureMech:000071
+  - CultureMech:000335
+  - CultureMech:000037
+  - CultureMech:000149
+  - CultureMech:000343
+  evidence_ids:
+  - merge-01
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: extra-00
+  name: /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py
+  command: /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000071
+  - CultureMech:000335
+  - CultureMech:000037
+  - CultureMech:000149
+  - CultureMech:000343
+  evidence_ids:
+  - extra-00
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: extra-01
+  name: git diff --check
+  command: git diff --check
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000071
+  - CultureMech:000335
+  - CultureMech:000037
+  - CultureMech:000149
+  - CultureMech:000343
+  evidence_ids:
+  - extra-01
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: extra-02
+  name: /tmp/culturemech-parallel-env-20261012/bin/python /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/curate.py
+    --apply
+  command: /tmp/culturemech-parallel-env-20261012/bin/python /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/curate.py
+    --apply
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000071
+  - CultureMech:000335
+  - CultureMech:000037
+  - CultureMech:000149
+  - CultureMech:000343
+  evidence_ids:
+  - extra-02
+  summary: Actual check outcome; failures retained without waiver.
+- check_id: fast-00
+  name: just test-fast
+  command: just test-fast
+  required: true
+  status: passed
+  exit_code: 0
+  target_ids:
+  - CultureMech:000071
+  - CultureMech:000335
+  - CultureMech:000037
+  - CultureMech:000149
+  - CultureMech:000343
+  evidence_ids:
+  - fast-00
+  summary: Actual check outcome; failures retained without waiver.
+evidence:
+- evidence_id: baseline-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-00.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-00.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-01.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-01.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-02.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-02.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-03.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-03.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-04.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-04.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: 0c4f731e9ea8c81338d5b09fe21103390103e1a06bac7e66678ff852aef65caf
+- evidence_id: baseline-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-05.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-05.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-06.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-06.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 1; not scientific approval.
+  support: context_only
+  snapshot_sha256: f6f8d0775221692535ed9ead5f097a81837c6c1e218e9d9e546f1a6059a0ef40
+- evidence_id: baseline-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-07.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-07.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-08.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-08.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 1; not scientific approval.
+  support: context_only
+  snapshot_sha256: f6f8d0775221692535ed9ead5f097a81837c6c1e218e9d9e546f1a6059a0ef40
+- evidence_id: baseline-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-09.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/baseline-09.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-00.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-00.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 1; not scientific approval.
+  support: context_only
+  snapshot_sha256: dc93313945f4058d7c4d2da7ab4f752c3e1c5bca68f73da88d9a739158550840
+- evidence_id: post-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-01.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-01.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-02.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-02.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 1; not scientific approval.
+  support: context_only
+  snapshot_sha256: 9ad11514262f4812c7c5415bc225c7663a1c295895d14fb90dcd4900f9561637
+- evidence_id: post-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-03.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-03.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-04.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-04.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 1; not scientific approval.
+  support: context_only
+  snapshot_sha256: 299355e9a4f59173dddda86e542ea3ecba8717d7cb80f808fb342bc4f119bf86
+- evidence_id: post-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-05.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-05.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-06.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-06.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 1; not scientific approval.
+  support: context_only
+  snapshot_sha256: ac2099330a60972df97596d49177363a6e183ec8f63f773dffda12f8f70aa7d9
+- evidence_id: post-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-07.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-07.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-08.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-08.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 1; not scientific approval.
+  support: context_only
+  snapshot_sha256: ac2099330a60972df97596d49177363a6e183ec8f63f773dffda12f8f70aa7d9
+- evidence_id: post-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-09.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/post-09.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: merge-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/merge-00.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/merge-00.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 1; not scientific approval.
+  support: context_only
+  snapshot_sha256: 09a2922082db841587410042dc33d7d3f72b2601f1d6b6f2b33322471ee47f2c
+- evidence_id: merge-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/merge-01.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/merge-01.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 1; not scientific approval.
+  support: context_only
+  snapshot_sha256: d72423530bab2e78c44c90827bd7cd80cca49e3bc63aa4c7a2c4fc323e9adf40
+- evidence_id: extra-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/extra-00.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/extra-00.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: 441bdd6ab36f5b87c9edccf771321e1c5f6c11f43bec7799e6e98cd4d756c24c
+- evidence_id: extra-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/extra-01.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/extra-01.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+- evidence_id: extra-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/extra-02.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/extra-02.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: c8c6ffb50d1410115297060ceaf111dbcfa93a1a6da0e56094f7086be075d507
+- evidence_id: fast-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/fast-test.log
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/fast-test.log;
+    Complete terminal output
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Exit code 0; not scientific approval.
+  support: context_only
+  snapshot_sha256: 040a78d1e664a9476cd69161ffefa0b4a170c905303fd3c8f537945793b01357
+- evidence_id: marvania2024
+  kind: primary_source
+  reference: doi:10.12688/wellcomeopenres.22468.1
+  locator: references_cache/papers/primary_xml/marvania-PMC11833223-algal-followup-20261014.xml;
+    Full JATS article, version 1; bounded cultivation methods
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Publication identity and bounded cultivation passages inspected; claims
+    checked against original source and Markdown.
+  support: supports
+  snapshot_sha256: b4d2b61381944c7c35e598450a0deac1dd845db5dedbe5fb466a7cffa1efd1cf
+- evidence_id: hiibel2015
+  kind: primary_source
+  reference: doi:10.3389/fenrg.2015.00020
+  locator: references_cache/papers/primary_html/2asw-frontiers-2015-20261014.html;
+    Publisher full HTML, Strains and media, Table 1 and footnotes; wastewater assays
+    kept separate
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Publication identity and bounded cultivation passages inspected; claims
+    checked against original source and Markdown.
+  support: supports
+  snapshot_sha256: 194d2a1a9fb3f25d569d26651d548a877d0e2cc1ec372e68466de4d41de93c52
+- evidence_id: pubmed
+  kind: authority
+  reference: PMID:39967591
+  locator: references_cache/papers/PMID_39967591.xml; Publication identity, authors,
+    year and archived notices
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Marvania title, ten individual and nine collective authors, 2024 year and
+    DOI verified against JATS. Title-ending 2004 is not the publication year.
+  support: supports
+  snapshot_sha256: 38958c73c4b584b85b5295028b31882a99033b1725331878a7906a64f6e19203
+- evidence_id: taxonomy
+  kind: authority
+  reference: NCBI Taxonomy
+  locator: references_cache/papers/taxonomy/hiibel-maintenance-20261014.xml; Names,
+    synonyms, included strain labels and actual ranks
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Mapping confidence is qualified; species rank does not independently establish
+    strain identity.
+  support: supports
+  snapshot_sha256: ac05411483285e175f8b4cba411a3bda670efbcc1b9f4b4cc65c55a918275317
+- evidence_id: taxonomy-followup
+  kind: authority
+  reference: NCBI Taxonomy
+  locator: references_cache/papers/taxonomy/hiibel-followup-20261014.xml; Names, synonyms,
+    included strain labels and actual ranks
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Mapping confidence is qualified; species rank does not independently establish
+    strain identity.
+  support: supports
+  snapshot_sha256: 094f19900db1853ecbd283bbe711bc485ebe0c8c6fd85b792221a587b4c1d214
+- evidence_id: marvania-taxonomy
+  kind: authority
+  reference: NCBI Taxonomy
+  locator: references_cache/papers/taxonomy/algal-followup-next-20261014.xml; Names,
+    synonyms, included strain labels and actual ranks
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Mapping confidence is qualified; species rank does not independently establish
+    strain identity.
+  support: supports
+  snapshot_sha256: 38ca603ad2f970baa85e247c77600a8b04b97b610844bf3db5d549325ec4e632
+- evidence_id: ccap-egjm
+  kind: primary_source
+  reference: Current CCAP EG:JM recipe
+  locator: references_cache/papers/primary_pdf/ccap-eg-jm-algal-followup-20261014.pdf;
+    Current source recipe
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Current 1:1 mixture is not proof of the complete 2024 study formulation.
+  support: context_only
+  snapshot_sha256: 3e213039ce28f0302cb3c9d7b5938c15b03718793e27c0efc26f45073da1541e
+- evidence_id: exporter
+  kind: record_content
+  reference: KGX implementation
+  locator: src/culturemech/export/kgx_export.py; organism_grows_in_medium_edge
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Inline variant scope is not honored; no variant-only growth added. Pure
+    helper readback yields eight Bristol species edges and omits three parent-only
+    entries; no files exported.
+  support: context_only
+  snapshot_sha256: eacbc2e7b363488cc1ed96e91737f54244dc1a2425dfa05c77ba89d0a5cd10e0
+- evidence_id: title-diagnostic
+  kind: validation
+  reference: Local mocked-fetcher reproduction
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/title-check-diagnostic.json;
+    Four formatting cases, no network or record edits
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Entity-only and period-only differences pass separately; their observed
+    combination fails. Existing inline rendering already decodes the entity; exact
+    rendered comparison retains the final period.
+  support: context_only
+  snapshot_sha256: 2a098221863742723b22725399f0a487a7013697345403d4a8fffebf25c29dbe
+- evidence_id: claims
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/claim-plan.json;
+    claim-plan.json
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Applied scope, exact excerpts, preservation checks and unfinished discovery.
+  support: context_only
+  snapshot_sha256: 31c1081300c0205b356696f0b50bcf25b5a631bf5afee079cf741cf7f42572be
+- evidence_id: readback
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/final-readback.json;
+    final-readback.json
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Applied scope, exact excerpts, preservation checks and unfinished discovery.
+  support: context_only
+  snapshot_sha256: 128782f9f4c2418f96025600c36e0d2353163d46c46b8d82195d5d6d527e433f
+- evidence_id: excerpts
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/evidence-readback.json;
+    evidence-readback.json
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Applied scope, exact excerpts, preservation checks and unfinished discovery.
+  support: context_only
+  snapshot_sha256: 7cc5fd7cc97b10b5126bcb87534aa87ce37cd635b8141f33b1347dfa8d082453
+- evidence_id: pending
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261014-egjm-bristol-f2-citations/pending-frontier.json;
+    pending-frontier.json
+  accessed_at: '2026-10-14T05:42:38Z'
+  summary: Applied scope, exact excerpts, preservation checks and unfinished discovery.
+  support: context_only
+  snapshot_sha256: 7ef22226d9366bb246dcc263acb9fee3da28f712e86c467525c9c8f98bfac1ad
+assessments:
+- assessment_id: identity-000071
+  area: evidence
+  topic: Publication identity and owner relevance
+  outcome: supported
+  target_ids:
+  - CultureMech:000071
+  evidence_ids:
+  - marvania2024
+  - claims
+  summary: Verified title, authors, year, DOI, provenance mode/source, raw archive
+    and Markdown; PMID retained where established.
+- assessment_id: formulation-000071
+  area: evidence
+  topic: Formulation comparison and bounded variant scope
+  outcome: unknown
+  target_ids:
+  - CultureMech:000071
+  evidence_ids:
+  - marvania2024
+  - claims
+  - excerpts
+  summary: Named EG:JM cultivation; no demonstrated ingredient difference and no invented
+    variant. Full historical formula and solid/liquid equivalence remain unresolved.
+- assessment_id: taxonomy-000071
+  area: evidence
+  topic: Scientific names and organism dispositions
+  outcome: supported
+  target_ids:
+  - CultureMech:000071
+  evidence_ids:
+  - marvania2024
+  - taxonomy
+  - taxonomy-followup
+  - marvania-taxonomy
+  - claims
+  - exporter
+  summary: 'Marvania coccoides CCAP 251/1B: NCBITaxon:133487, species-level name match;
+    notes only, no new native growth assertion.'
+- assessment_id: preservation-000071
+  area: evidence
+  topic: Prior evidence, quantities and file presentation
+  outcome: supported
+  target_ids:
+  - CultureMech:000071
+  evidence_ids:
+  - readback
+  - extra-02
+  summary: All 0 prior ingredient instances and previous claims preserved. Reverse
+    byte proof and no-op replay passed; one history event per owner.
+- assessment_id: identity-000335
+  area: evidence
+  topic: Publication identity and owner relevance
+  outcome: supported
+  target_ids:
+  - CultureMech:000335
+  evidence_ids:
+  - marvania2024
+  - claims
+  summary: Verified title, authors, year, DOI, provenance mode/source, raw archive
+    and Markdown; PMID retained where established.
+- assessment_id: formulation-000335
+  area: evidence
+  topic: Formulation comparison and bounded variant scope
+  outcome: unknown
+  target_ids:
+  - CultureMech:000335
+  evidence_ids:
+  - marvania2024
+  - claims
+  - excerpts
+  summary: Named EG:JM cultivation; no demonstrated ingredient difference and no invented
+    variant. Full historical formula and solid/liquid equivalence remain unresolved.
+- assessment_id: taxonomy-000335
+  area: evidence
+  topic: Scientific names and organism dispositions
+  outcome: supported
+  target_ids:
+  - CultureMech:000335
+  evidence_ids:
+  - marvania2024
+  - taxonomy
+  - taxonomy-followup
+  - marvania-taxonomy
+  - claims
+  - exporter
+  summary: 'Marvania coccoides CCAP 251/1B: NCBITaxon:133487, species-level name match;
+    notes only, no new native growth assertion.'
+- assessment_id: preservation-000335
+  area: evidence
+  topic: Prior evidence, quantities and file presentation
+  outcome: supported
+  target_ids:
+  - CultureMech:000335
+  evidence_ids:
+  - readback
+  - extra-02
+  summary: All 20 prior ingredient instances and previous claims preserved. Reverse
+    byte proof and no-op replay passed; one history event per owner.
+- assessment_id: identity-000037
+  area: evidence
+  topic: Publication identity and owner relevance
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - claims
+  summary: Verified title, authors, year, DOI, provenance mode/source, raw archive
+    and Markdown; PMID retained where established.
+- assessment_id: formulation-000037
+  area: evidence
+  topic: Formulation comparison and bounded variant scope
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - claims
+  - excerpts
+  summary: Six directly stated final millimolar salt amounts and chemical forms match
+    this liquid owner. No recipe variant or canonical amount change; preparation details
+    not recertified.
+- assessment_id: taxonomy-000037
+  area: evidence
+  topic: Scientific names and organism dispositions
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - taxonomy
+  - taxonomy-followup
+  - marvania-taxonomy
+  - claims
+  - exporter
+  summary: 'Eleven strain-specific maintenance observations: eight species-grounded,
+    three parent-rank-only with term absent. Wastewater outcomes are not Bristol outcomes.'
+- assessment_id: preservation-000037
+  area: evidence
+  topic: Prior evidence, quantities and file presentation
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - readback
+  - extra-02
+  summary: All 7 prior ingredient instances and previous claims preserved. Reverse
+    byte proof and no-op replay passed; one history event per owner.
+- assessment_id: amount-000037-1
+  area: evidence
+  topic: Final-medium concentration evidence-only decision
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - claims
+  - excerpts
+  - readback
+  summary: 'status=evidence_only; ingredients[1].concentration (NaNO3): {''value'':
+    ''2.94'', ''unit'': ''MILLIMOLAR''}; old=new; no arithmetic or stock conversion.'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: 2.94 mM NaNO3.
+    ingredients[1].concentration (NaNO3): evidence_only. Hiibel et al. (2015), Materials
+    and Methods / Strains and media, directly states 2.94 mM in the six-salt modified
+    Bristol maintenance medium, not a stock solution. The chemical form and amount
+    match this existing final-medium field. Study pH is 7.7; no stock, preparation
+    or universal condition is inferred. Calculation: none. Canonical amount and existing
+    UTEX evidence unchanged.'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only
+    definition: Direct final-medium value; existing amount unchanged
+    evidence_ids:
+    - hiibel2015
+- assessment_id: amount-000037-2
+  area: evidence
+  topic: Final-medium concentration evidence-only decision
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - claims
+  - excerpts
+  - readback
+  summary: 'status=evidence_only; ingredients[2].concentration (CaCl2 x 2 H2O): {''value'':
+    ''0.17'', ''unit'': ''MILLIMOLAR''}; old=new; no arithmetic or stock conversion.'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: 0.17 mM CaCl2
+    (2H2O). ingredients[2].concentration (CaCl2 x 2 H2O): evidence_only. Hiibel et
+    al. (2015), Materials and Methods / Strains and media, directly states 0.17 mM
+    in the six-salt modified Bristol maintenance medium, not a stock solution. The
+    chemical form and amount match this existing final-medium field. Study pH is 7.7;
+    no stock, preparation or universal condition is inferred. Calculation: none. Canonical
+    amount and existing UTEX evidence unchanged.'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only
+    definition: Direct final-medium value; existing amount unchanged
+    evidence_ids:
+    - hiibel2015
+- assessment_id: amount-000037-3
+  area: evidence
+  topic: Final-medium concentration evidence-only decision
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - claims
+  - excerpts
+  - readback
+  summary: 'status=evidence_only; ingredients[3].concentration (MgSO4 x 7 H2O): {''value'':
+    ''0.3'', ''unit'': ''MILLIMOLAR''}; old=new; no arithmetic or stock conversion.'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: 0.3 mM MgSO4 (7H2O).
+    ingredients[3].concentration (MgSO4 x 7 H2O): evidence_only. Hiibel et al. (2015),
+    Materials and Methods / Strains and media, directly states 0.3 mM in the six-salt
+    modified Bristol maintenance medium, not a stock solution. The chemical form and
+    amount match this existing final-medium field. Study pH is 7.7; no stock, preparation
+    or universal condition is inferred. Calculation: none. Canonical amount and existing
+    UTEX evidence unchanged.'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only
+    definition: Direct final-medium value; existing amount unchanged
+    evidence_ids:
+    - hiibel2015
+- assessment_id: amount-000037-4
+  area: evidence
+  topic: Final-medium concentration evidence-only decision
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - claims
+  - excerpts
+  - readback
+  summary: 'status=evidence_only; ingredients[4].concentration (K2HPO4): {''value'':
+    ''0.43'', ''unit'': ''MILLIMOLAR''}; old=new; no arithmetic or stock conversion.'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: 0.43 mM K2HPO4.
+    ingredients[4].concentration (K2HPO4): evidence_only. Hiibel et al. (2015), Materials
+    and Methods / Strains and media, directly states 0.43 mM in the six-salt modified
+    Bristol maintenance medium, not a stock solution. The chemical form and amount
+    match this existing final-medium field. Study pH is 7.7; no stock, preparation
+    or universal condition is inferred. Calculation: none. Canonical amount and existing
+    UTEX evidence unchanged.'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only
+    definition: Direct final-medium value; existing amount unchanged
+    evidence_ids:
+    - hiibel2015
+- assessment_id: amount-000037-5
+  area: evidence
+  topic: Final-medium concentration evidence-only decision
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - claims
+  - excerpts
+  - readback
+  summary: 'status=evidence_only; ingredients[5].concentration (KH2PO4): {''value'':
+    ''1.29'', ''unit'': ''MILLIMOLAR''}; old=new; no arithmetic or stock conversion.'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: 1.29 mM KH2PO4.
+    ingredients[5].concentration (KH2PO4): evidence_only. Hiibel et al. (2015), Materials
+    and Methods / Strains and media, directly states 1.29 mM in the six-salt modified
+    Bristol maintenance medium, not a stock solution. The chemical form and amount
+    match this existing final-medium field. Study pH is 7.7; no stock, preparation
+    or universal condition is inferred. Calculation: none. Canonical amount and existing
+    UTEX evidence unchanged.'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only
+    definition: Direct final-medium value; existing amount unchanged
+    evidence_ids:
+    - hiibel2015
+- assessment_id: amount-000037-6
+  area: evidence
+  topic: Final-medium concentration evidence-only decision
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - claims
+  - excerpts
+  - readback
+  summary: 'status=evidence_only; ingredients[6].concentration (NaCl): {''value'':
+    ''0.43'', ''unit'': ''MILLIMOLAR''}; old=new; no arithmetic or stock conversion.'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: 0.43 mM NaCl.
+    ingredients[6].concentration (NaCl): evidence_only. Hiibel et al. (2015), Materials
+    and Methods / Strains and media, directly states 0.43 mM in the six-salt modified
+    Bristol maintenance medium, not a stock solution. The chemical form and amount
+    match this existing final-medium field. Study pH is 7.7; no stock, preparation
+    or universal condition is inferred. Calculation: none. Canonical amount and existing
+    UTEX evidence unchanged.'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only
+    definition: Direct final-medium value; existing amount unchanged
+    evidence_ids:
+    - hiibel2015
+- assessment_id: growth-000037-0
+  area: evidence
+  topic: Maintenance cultivation and exact strain scope
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - taxonomy
+  - taxonomy-followup
+  - excerpts
+  - claims
+  summary: 'Neochloris aquatica UTEX 138: {''id'': ''NCBITaxon:3099'', ''label'':
+    ''Neochloris aquatica''}'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: The freshwater
+    Neochloris strains were maintained on Bold’s modified Bristol medium. Supports
+    maintenance cultivation on this liquid six-salt Bristol formulation. Locator:
+    Materials and Methods / Strains and media together with Table 1 freshwater row
+    for UTEX 138. reported scientific name=Neochloris aquatica; strain=UTEX 138; accepted
+    study name=Neochloris aquatica; canonical scientific name=Neochloris aquatica;
+    NCBITaxon:3099; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3099; lookup_date=2026-10-14;
+    Verified species-level name match, not an exact strain taxon or independent biological
+    identification. All six reported salt forms and millimolar amounts match the parent;
+    study conditions are pH 7.7, room temperature, 18/6 h light/dark. Stock preparation
+    is not established. Table 1 centrate maxima and zero entries are separate wastewater
+    results, not negative Bristol growth or growth metrics. No claim of an optimum,
+    genus-wide growth or independent strain reidentification. Taxonomy XML archives
+    are linked in the paper bibliography notes.'
+- assessment_id: growth-000037-1
+  area: evidence
+  topic: Maintenance cultivation and exact strain scope
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - taxonomy
+  - taxonomy-followup
+  - excerpts
+  - claims
+  summary: 'Neochloris minuta UTEX 776: {''id'': ''NCBITaxon:3097'', ''label'': ''Ettlia
+    minuta''}'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: The freshwater
+    Neochloris strains were maintained on Bold’s modified Bristol medium. Supports
+    maintenance cultivation on this liquid six-salt Bristol formulation. Locator:
+    Materials and Methods / Strains and media together with Table 1 freshwater row
+    for UTEX 776. reported scientific name=Neochloris minuta; strain=UTEX 776; accepted
+    study name=Neochloris minuta; canonical scientific name=Ettlia minuta; NCBITaxon:3097;
+    actual rank=species; taxonomy_match=verified_synonym_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3097;
+    lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+    taxon or independent biological identification. All six reported salt forms and
+    millimolar amounts match the parent; study conditions are pH 7.7, room temperature,
+    18/6 h light/dark. Stock preparation is not established. Table 1 centrate maxima
+    and zero entries are separate wastewater results, not negative Bristol growth
+    or growth metrics. No claim of an optimum, genus-wide growth or independent strain
+    reidentification. Taxonomy XML archives are linked in the paper bibliography notes.'
+- assessment_id: growth-000037-2
+  area: evidence
+  topic: Maintenance cultivation and exact strain scope
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - taxonomy
+  - taxonomy-followup
+  - excerpts
+  - claims
+  summary: 'Neochloris pyrenoidosa UTEX 777: {''id'': ''NCBITaxon:3400314'', ''label'':
+    ''Neochloris pyrenoidosa''}'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: The freshwater
+    Neochloris strains were maintained on Bold’s modified Bristol medium. Supports
+    maintenance cultivation on this liquid six-salt Bristol formulation. Locator:
+    Materials and Methods / Strains and media together with Table 1 freshwater row
+    for UTEX 777. reported scientific name=Neochloris pyrenoidosa; strain=UTEX 777;
+    accepted study name=Neochloris pyrenoidosa; canonical scientific name=Neochloris
+    pyrenoidosa; NCBITaxon:3400314; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3400314;
+    lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+    taxon or independent biological identification. All six reported salt forms and
+    millimolar amounts match the parent; study conditions are pH 7.7, room temperature,
+    18/6 h light/dark. Stock preparation is not established. Table 1 centrate maxima
+    and zero entries are separate wastewater results, not negative Bristol growth
+    or growth metrics. No claim of an optimum, genus-wide growth or independent strain
+    reidentification. Taxonomy XML archives are linked in the paper bibliography notes.'
+- assessment_id: growth-000037-3
+  area: evidence
+  topic: Maintenance cultivation and exact strain scope
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - taxonomy
+  - taxonomy-followup
+  - excerpts
+  - claims
+  summary: 'Neochloris oleoabundans UTEX 1185: {''id'': ''NCBITaxon:1127754'', ''label'':
+    ''Ettlia oleoabundans''}'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: The freshwater
+    Neochloris strains were maintained on Bold’s modified Bristol medium. Supports
+    maintenance cultivation on this liquid six-salt Bristol formulation. Locator:
+    Materials and Methods / Strains and media together with Table 1 freshwater row
+    for UTEX 1185. reported scientific name=Neochloris oleoabundans; strain=UTEX 1185;
+    accepted study name=Neochloris oleoabundans; canonical scientific name=Ettlia
+    oleoabundans; NCBITaxon:1127754; actual rank=species; taxonomy_match=verified_synonym_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1127754;
+    lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+    taxon or independent biological identification. All six reported salt forms and
+    millimolar amounts match the parent; study conditions are pH 7.7, room temperature,
+    18/6 h light/dark. Stock preparation is not established. Table 1 centrate maxima
+    and zero entries are separate wastewater results, not negative Bristol growth
+    or growth metrics. No claim of an optimum, genus-wide growth or independent strain
+    reidentification. Taxonomy XML archives are linked in the paper bibliography notes.'
+- assessment_id: growth-000037-4
+  area: evidence
+  topic: Maintenance cultivation and exact strain scope
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - taxonomy
+  - taxonomy-followup
+  - excerpts
+  - claims
+  summary: 'Neochloris pseudostigmata UTEX 1249: parent_rank_only; no term; no genus-wide
+    assertion'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: The freshwater
+    Neochloris strains were maintained on Bold’s modified Bristol medium. Supports
+    maintenance cultivation on this liquid six-salt Bristol formulation. Locator:
+    Materials and Methods / Strains and media together with Table 1 freshwater row
+    for UTEX 1249. reported scientific name=Neochloris pseudostigmata; strain=UTEX
+    1249; accepted study name=Neochloris pseudostigmata; canonical scientific name=Neochloris;
+    NCBITaxon:3098; actual rank=genus; taxonomy_match=parent_rank_only; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3098;
+    lookup_date=2026-10-14; Reported name and checked spelling/strain queries yielded
+    no exact match; Neochloris is a verified genus matching the reported classification,
+    not a species or strain identity. Search misses are not proof of absence. All
+    six reported salt forms and millimolar amounts match the parent; study conditions
+    are pH 7.7, room temperature, 18/6 h light/dark. Stock preparation is not established.
+    Table 1 centrate maxima and zero entries are separate wastewater results, not
+    negative Bristol growth or growth metrics. No claim of an optimum, genus-wide
+    growth or independent strain reidentification. Taxonomy XML archives are linked
+    in the paper bibliography notes.'
+- assessment_id: growth-000037-5
+  area: evidence
+  topic: Maintenance cultivation and exact strain scope
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - taxonomy
+  - taxonomy-followup
+  - excerpts
+  - claims
+  summary: 'Neochloris cohaerens UTEX 1707: {''id'': ''NCBITaxon:577485'', ''label'':
+    ''Ettlia cohaerens''}'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: The freshwater
+    Neochloris strains were maintained on Bold’s modified Bristol medium. Supports
+    maintenance cultivation on this liquid six-salt Bristol formulation. Locator:
+    Materials and Methods / Strains and media together with Table 1 freshwater row
+    for UTEX 1707. reported scientific name=Neochloris cohaerens; strain=UTEX 1707;
+    accepted study name=Neochloris cohaerens; canonical scientific name=Ettlia cohaerens;
+    NCBITaxon:577485; actual rank=species; taxonomy_match=verified_synonym_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=577485;
+    lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+    taxon or independent biological identification. All six reported salt forms and
+    millimolar amounts match the parent; study conditions are pH 7.7, room temperature,
+    18/6 h light/dark. Stock preparation is not established. Table 1 centrate maxima
+    and zero entries are separate wastewater results, not negative Bristol growth
+    or growth metrics. No claim of an optimum, genus-wide growth or independent strain
+    reidentification. Taxonomy XML archives are linked in the paper bibliography notes.'
+- assessment_id: growth-000037-6
+  area: evidence
+  topic: Maintenance cultivation and exact strain scope
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - taxonomy
+  - taxonomy-followup
+  - excerpts
+  - claims
+  summary: 'Neochloris vigensis UTEX 1981: {''id'': ''NCBITaxon:3100'', ''label'':
+    ''Neochloris vigensis''}'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: The freshwater
+    Neochloris strains were maintained on Bold’s modified Bristol medium. Supports
+    maintenance cultivation on this liquid six-salt Bristol formulation. Locator:
+    Materials and Methods / Strains and media together with Table 1 freshwater row
+    for UTEX 1981. reported scientific name=Neochloris vigensis; strain=UTEX 1981;
+    accepted study name=Neochloris vigensis; canonical scientific name=Neochloris
+    vigensis; NCBITaxon:3100; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3100; lookup_date=2026-10-14;
+    Verified species-level name match, not an exact strain taxon or independent biological
+    identification. All six reported salt forms and millimolar amounts match the parent;
+    study conditions are pH 7.7, room temperature, 18/6 h light/dark. Stock preparation
+    is not established. Table 1 centrate maxima and zero entries are separate wastewater
+    results, not negative Bristol growth or growth metrics. No claim of an optimum,
+    genus-wide growth or independent strain reidentification. Taxonomy XML archives
+    are linked in the paper bibliography notes.'
+- assessment_id: growth-000037-7
+  area: evidence
+  topic: Maintenance cultivation and exact strain scope
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - taxonomy
+  - taxonomy-followup
+  - excerpts
+  - claims
+  summary: 'Ettlia fusispora UTEX b778: parent_rank_only; no term; no genus-wide assertion'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: The freshwater
+    Neochloris strains were maintained on Bold’s modified Bristol medium. Supports
+    maintenance cultivation on this liquid six-salt Bristol formulation. Locator:
+    Materials and Methods / Strains and media together with Table 1 freshwater row
+    for UTEX b778. reported scientific name=Neochloris fusispora; strain=UTEX b778;
+    accepted study name=Ettlia fusispora; canonical scientific name=Ettlia; NCBITaxon:577483;
+    actual rank=genus; taxonomy_match=parent_rank_only; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=577483;
+    lookup_date=2026-10-14; Table 1 footnote gives Ettlia fusispora; no exact NCBI
+    match verified for that name. All six reported salt forms and millimolar amounts
+    match the parent; study conditions are pH 7.7, room temperature, 18/6 h light/dark.
+    Stock preparation is not established. Table 1 centrate maxima and zero entries
+    are separate wastewater results, not negative Bristol growth or growth metrics.
+    No claim of an optimum, genus-wide growth or independent strain reidentification.
+    Taxonomy XML archives are linked in the paper bibliography notes.'
+- assessment_id: growth-000037-8
+  area: evidence
+  topic: Maintenance cultivation and exact strain scope
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - taxonomy
+  - taxonomy-followup
+  - excerpts
+  - claims
+  summary: 'Ettlia terrestris UTEX b947: parent_rank_only; no term; no genus-wide
+    assertion'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: The freshwater
+    Neochloris strains were maintained on Bold’s modified Bristol medium. Supports
+    maintenance cultivation on this liquid six-salt Bristol formulation. Locator:
+    Materials and Methods / Strains and media together with Table 1 freshwater row
+    for UTEX b947. reported scientific name=Neochloris terrestris; strain=UTEX b947;
+    accepted study name=Ettlia terrestris; canonical scientific name=Ettlia; NCBITaxon:577483;
+    actual rank=genus; taxonomy_match=parent_rank_only; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=577483;
+    lookup_date=2026-10-14; Table 1 footnote gives Ettlia terrestris; no exact NCBI
+    match verified for that name. Historical Neochloris terrestris has an NCBI node
+    but is not substituted for the footnote''s Ettlia concept. All six reported salt
+    forms and millimolar amounts match the parent; study conditions are pH 7.7, room
+    temperature, 18/6 h light/dark. Stock preparation is not established. Table 1
+    centrate maxima and zero entries are separate wastewater results, not negative
+    Bristol growth or growth metrics. No claim of an optimum, genus-wide growth or
+    independent strain reidentification. Taxonomy XML archives are linked in the paper
+    bibliography notes.'
+- assessment_id: growth-000037-9
+  area: evidence
+  topic: Maintenance cultivation and exact strain scope
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - taxonomy
+  - taxonomy-followup
+  - excerpts
+  - claims
+  summary: 'Ettlia carotinosa CCAP 213/4: {''id'': ''NCBITaxon:707317'', ''label'':
+    ''Ettlia carotinosa''}'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: The freshwater
+    Neochloris strains were maintained on Bold’s modified Bristol medium. Supports
+    maintenance cultivation on this liquid six-salt Bristol formulation. Locator:
+    Materials and Methods / Strains and media together with Table 1 freshwater row
+    for CCAP 213/4. reported scientific name=Neochloris wimmeri; strain=CCAP 213/4;
+    accepted study name=Ettlia carotinosa; canonical scientific name=Ettlia carotinosa;
+    NCBITaxon:707317; actual rank=species; taxonomy_match=paper_footnote_name_match_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=707317;
+    lookup_date=2026-10-14; Table 1 footnote d identifies CCAP 213/4 as Ettlia carotinosa.
+    NCBI maps the historical name Neochloris wimmeri to Chlorococcum wimmeri (NCBITaxon:1074462),
+    a different species; preserve both observations without claiming their synonymy
+    or independent strain reidentification. All six reported salt forms and millimolar
+    amounts match the parent; study conditions are pH 7.7, room temperature, 18/6
+    h light/dark. Stock preparation is not established. Table 1 centrate maxima and
+    zero entries are separate wastewater results, not negative Bristol growth or growth
+    metrics. No claim of an optimum, genus-wide growth or independent strain reidentification.
+    Taxonomy XML archives are linked in the paper bibliography notes.'
+- assessment_id: growth-000037-10
+  area: evidence
+  topic: Maintenance cultivation and exact strain scope
+  outcome: supported
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - taxonomy
+  - taxonomy-followup
+  - excerpts
+  - claims
+  summary: 'Neochloris conjuncta CCAP 254/1: {''id'': ''NCBITaxon:1521736'', ''label'':
+    ''Neochloris conjuncta''}'
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: The freshwater
+    Neochloris strains were maintained on Bold’s modified Bristol medium. Supports
+    maintenance cultivation on this liquid six-salt Bristol formulation. Locator:
+    Materials and Methods / Strains and media together with Table 1 freshwater row
+    for CCAP 254/1. reported scientific name=Neochloris conjuncta; strain=CCAP 254/1;
+    accepted study name=Neochloris conjuncta; canonical scientific name=Neochloris
+    conjuncta; NCBITaxon:1521736; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1521736;
+    lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+    taxon or independent biological identification. All six reported salt forms and
+    millimolar amounts match the parent; study conditions are pH 7.7, room temperature,
+    18/6 h light/dark. Stock preparation is not established. Table 1 centrate maxima
+    and zero entries are separate wastewater results, not negative Bristol growth
+    or growth metrics. No claim of an optimum, genus-wide growth or independent strain
+    reidentification. Taxonomy XML archives are linked in the paper bibliography notes.'
+- assessment_id: identity-000149
+  area: evidence
+  topic: Publication identity and owner relevance
+  outcome: supported
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - hiibel2015
+  - claims
+  summary: Verified title, authors, year, DOI, provenance mode/source, raw archive
+    and Markdown; PMID retained where established.
+- assessment_id: formulation-000149
+  area: evidence
+  topic: Formulation comparison and bounded variant scope
+  outcome: unknown
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - hiibel2015
+  - claims
+  - excerpts
+  summary: One bounded vitamin-solution replacement per owner. Unspecified composition
+    and dose are not inferred; not an Emami or Quad variant.
+- assessment_id: taxonomy-000149
+  area: evidence
+  topic: Scientific names and organism dispositions
+  outcome: supported
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - hiibel2015
+  - taxonomy
+  - taxonomy-followup
+  - marvania-taxonomy
+  - claims
+  - exporter
+  summary: Eleven Nannochloropsis strain rows with exact, synonym, footnote or parent-only
+    mapping decisions in citation notes. No native growth assertion while formulation
+    and exporter scope remain unresolved.
+- assessment_id: preservation-000149
+  area: evidence
+  topic: Prior evidence, quantities and file presentation
+  outcome: supported
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - readback
+  - extra-02
+  summary: All 13 prior ingredient instances and previous claims preserved. Reverse
+    byte proof and no-op replay passed; one history event per owner.
+- assessment_id: variant-000149-0
+  area: evidence
+  topic: Vitamin replacement with unquantified dose
+  outcome: supported
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - hiibel2015
+  - claims
+  - excerpts
+  summary: status=not_quantified; f_2_2asw_vitamin_replacement_hiibel_2015; replacement
+    stated, no concentration or resolved full formula asserted.
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: the vitamin solution
+    from the 2ASW medium (Gomord et al., 2010), which contained additional vitamin
+    components, was used in place of that described for the original f/2 medium..
+    Supports only the stated replacement in variants[name=f_2_2asw_vitamin_replacement_hiibel_2015].modifications[0].
+    Locator: Materials and Methods / Strains and media. No numerical vitamin quantity,
+    resolved complete formula or parent-medium growth is asserted; cohort names, strain
+    designations, NCBI ranks and qualified taxonomy decisions are retained in this
+    paper''s bibliography notes.'
+- assessment_id: identity-000343
+  area: evidence
+  topic: Publication identity and owner relevance
+  outcome: supported
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - hiibel2015
+  - claims
+  summary: Verified title, authors, year, DOI, provenance mode/source, raw archive
+    and Markdown; PMID retained where established.
+- assessment_id: formulation-000343
+  area: evidence
+  topic: Formulation comparison and bounded variant scope
+  outcome: unknown
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - hiibel2015
+  - claims
+  - excerpts
+  summary: One bounded vitamin-solution replacement per owner. Unspecified composition
+    and dose are not inferred; not an Emami or Quad variant.
+- assessment_id: taxonomy-000343
+  area: evidence
+  topic: Scientific names and organism dispositions
+  outcome: supported
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - hiibel2015
+  - taxonomy
+  - taxonomy-followup
+  - marvania-taxonomy
+  - claims
+  - exporter
+  summary: Eleven Nannochloropsis strain rows with exact, synonym, footnote or parent-only
+    mapping decisions in citation notes. No native growth assertion while formulation
+    and exporter scope remain unresolved.
+- assessment_id: preservation-000343
+  area: evidence
+  topic: Prior evidence, quantities and file presentation
+  outcome: supported
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - readback
+  - extra-02
+  summary: All 14 prior ingredient instances and previous claims preserved. Reverse
+    byte proof and no-op replay passed; one history event per owner.
+- assessment_id: variant-000343-0
+  area: evidence
+  topic: Vitamin replacement with unquantified dose
+  outcome: supported
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - hiibel2015
+  - claims
+  - excerpts
+  summary: status=not_quantified; f_2_2asw_vitamin_replacement_hiibel_2015; replacement
+    stated, no concentration or resolved full formula asserted.
+  details: 'Reference: doi:10.3389/fenrg.2015.00020. Exact snippet: the vitamin solution
+    from the 2ASW medium (Gomord et al., 2010), which contained additional vitamin
+    components, was used in place of that described for the original f/2 medium..
+    Supports only the stated replacement in variants[name=f_2_2asw_vitamin_replacement_hiibel_2015].modifications[0].
+    Locator: Materials and Methods / Strains and media. No numerical vitamin quantity,
+    resolved complete formula or parent-medium growth is asserted; cohort names, strain
+    designations, NCBI ranks and qualified taxonomy decisions are retained in this
+    paper''s bibliography notes.'
+findings:
+- finding_id: merge-gates
+  issue_key: egjm-bristol-f2-citations-merge-gates
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Repository merge gates failed
+  description: Terminal failures retained. Equal aggregate counts cannot establish
+    unchanged rows or isolate attribution. No generated data published.
+  target_ids:
+  - CultureMech:000071
+  - CultureMech:000335
+  - CultureMech:000037
+  - CultureMech:000149
+  - CultureMech:000343
+  evidence_ids:
+  - merge-00
+  - merge-01
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/eg_jm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/eg_jm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/Bristol_Medium.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/f_2.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/f_2.yaml
+    role: authoritative normalized recipe
+- finding_id: title-normalization
+  issue_key: egjm-bristol-f2-citations-title-normalization
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Combined entity and terminal-period differences defeat title comparison
+  description: Two newly failing EG:JM reference checks compare the verified PubMed/JATS
+    title with a DOI title containing literal &amp; and no final period. The maintained
+    fallback already decodes HTML entities, but its exact rendered comparison retains
+    terminal punctuation. A mocked-fetcher diagnostic proves each difference passes
+    alone while the combination fails. Metadata is preserved; both owner baselines
+    passed.
+  target_ids:
+  - CultureMech:000071
+  - CultureMech:000335
+  evidence_ids:
+  - post-00
+  - post-02
+  - marvania2024
+  - pubmed
+  - title-diagnostic
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/eg_jm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/eg_jm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/validation/recipe_references.py
+    role: maintained reference-validation adapter; preserve verified record data
+  - repository: culturebotai/CultureMech
+    path: tests/test_literature_title_markup.py
+    role: title-format equivalence and meaningful-difference regression coverage
+- finding_id: reference-content
+  issue_key: egjm-bristol-f2-citations-reference-content
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Primary excerpts are unavailable to the automatic reference resolver
+  description: Nineteen newly exposed Hiibel reference issues comprise six concentration,
+    eleven maintenance-growth and two variant excerpts. Full archived publisher text
+    contains all exact excerpts. Six Emami f/2 abstract-only errors already existed
+    at baseline. All schema, term and strict checks pass; these reference failures
+    remain open.
+  target_ids:
+  - CultureMech:000037
+  - CultureMech:000149
+  - CultureMech:000343
+  evidence_ids:
+  - baseline-06
+  - baseline-08
+  - post-04
+  - post-06
+  - post-08
+  - hiibel2015
+  - excerpts
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/Bristol_Medium.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/f_2.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/f_2.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/validation/recipe_references.py
+    role: maintained reference-validation adapter; preserve verified record data
+- finding_id: formulation-scope
+  issue_key: egjm-bristol-f2-citations-formulation-scope
+  category: evidence
+  severity: informational
+  status: open
+  certainty: confirmed
+  title: EG:JM and vitamin-replaced f/2 are not complete resolved formulas
+  description: EG:JM is named without a complete historical formula. Hiibel explicitly
+    replaces f/2 vitamins but does not quantify dose or identities; its cited Gomord
+    paper concerns plant glycosylation. Imported agar/stock details are not validated
+    by these studies. Inline-variant growth cannot be exported with current scope
+    handling.
+  target_ids:
+  - CultureMech:000071
+  - CultureMech:000335
+  - CultureMech:000149
+  - CultureMech:000343
+  evidence_ids:
+  - marvania2024
+  - hiibel2015
+  - ccap-egjm
+  - claims
+  - exporter
+  - pending
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/eg_jm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/eg_jm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/f_2.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/f_2.yaml
+    role: authoritative normalized recipe
+- finding_id: qualified-taxonomy
+  issue_key: egjm-bristol-f2-citations-qualified-taxonomy
+  category: evidence
+  severity: informational
+  status: open
+  certainty: confirmed
+  title: Three Bristol observations have only genus-level taxonomy; one footnote identification
+    conflicts with the historical label
+  description: Neochloris pseudostigmata maps only to genus Neochloris; Ettlia fusispora
+    and E. terrestris only to genus Ettlia. Their term fields are absent. The paper
+    footnote assigns CCAP 213/4 to Ettlia carotinosa, whereas historical Neochloris
+    wimmeri maps to another NCBI species. Qualified source identification is retained,
+    not asserted synonymy or independent strain reidentification.
+  target_ids:
+  - CultureMech:000037
+  evidence_ids:
+  - hiibel2015
+  - taxonomy
+  - taxonomy-followup
+  - claims
+  - excerpts
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/Bristol_Medium.yaml
+    role: authoritative normalized recipe
+actions:
+- action_id: resolve-merge-gates
+  description: Repository merge gates failed
+  finding_ids:
+  - merge-gates
+  target_ids:
+  - CultureMech:000071
+  - CultureMech:000335
+  - CultureMech:000037
+  - CultureMech:000149
+  - CultureMech:000343
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/eg_jm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/eg_jm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/Bristol_Medium.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/f_2.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/f_2.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Diagnose maintained merge inputs/rules and pass both merge gates before publication.
+- action_id: resolve-title-normalization
+  description: Combined entity and terminal-period differences defeat title comparison
+  finding_ids:
+  - title-normalization
+  target_ids:
+  - CultureMech:000071
+  - CultureMech:000335
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/eg_jm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/eg_jm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/validation/recipe_references.py
+    role: maintained reference-validation adapter; preserve verified record data
+  - repository: culturebotai/CultureMech
+    path: tests/test_literature_title_markup.py
+    role: title-format equivalence and meaningful-difference regression coverage
+  acceptance_checks:
+  - Compose safe bibliographic formatting rules in src/culturemech/validation/recipe_references.py,
+    test combined entity/punctuation cases and meaningful-title differences, and preserve
+    strict quote matching; rerun without changing verified metadata.
+- action_id: resolve-reference-content
+  description: Primary excerpts are unavailable to the automatic reference resolver
+  finding_ids:
+  - reference-content
+  target_ids:
+  - CultureMech:000037
+  - CultureMech:000149
+  - CultureMech:000343
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/Bristol_Medium.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/f_2.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/f_2.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/validation/recipe_references.py
+    role: maintained reference-validation adapter; preserve verified record data
+  acceptance_checks:
+  - Expose independently verified, identifier-bound primary content through the maintained
+    reference resolver, never use expected record excerpts as source text, and rerun;
+    retain separate baseline and new-failure accounting.
+- action_id: resolve-formulation-scope
+  description: EG:JM and vitamin-replaced f/2 are not complete resolved formulas
+  finding_ids:
+  - formulation-scope
+  target_ids:
+  - CultureMech:000071
+  - CultureMech:000335
+  - CultureMech:000149
+  - CultureMech:000343
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/eg_jm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/eg_jm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/f_2.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/f_2.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Resolve source-specific formula, state and organism scope before asserting or
+    exporting native growth on these owners.
+- action_id: resolve-qualified-taxonomy
+  description: Three Bristol observations have only genus-level taxonomy; one footnote
+    identification conflicts with the historical label
+  finding_ids:
+  - qualified-taxonomy
+  target_ids:
+  - CultureMech:000037
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/algae/Bristol_Medium.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Verify authoritative species/strain identities before replacing parent-only fallbacks
+    or removing the historical-name qualification.
+limitations:
+- Focused self-review, not independent adversarial or full scientific approval.
+- Twenty-three medium-relevant organism/strain rows, not every background organism
+  in both papers.
+- Species-level name matching and paper footnotes do not independently reidentify
+  strains.
+- No recipe amount change, new linked child, generated export, record merge or GitHub
+  mutation.
+- Reference and global merge failures remain open; citation discovery and source gaps
+  remain active.

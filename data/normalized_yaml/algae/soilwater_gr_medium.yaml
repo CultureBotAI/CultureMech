@@ -108,9 +108,46 @@ curation_history:
   action: LINKED_UTEX_SCORE50_ALGAE_CHILDREN
   changes: Linked score-50 UTEX algae child media to prepared-media parents
   notes: Added or refreshed reciprocal parent-child link for algae/soilwater_gr_nh4_medium.yaml.
+- timestamp: '2026-10-14T07:10:47.501053+00:00'
+  curator: codex
+  action: ADDED_VOLVOCINE_GR_PLUS_CITATION
+  notes: Added archived 2021 study and supplement-backed UTEX 2523 cultivation evidence
+    on the named UTEX GR+ product. Species taxonomy verified; strain identity and
+    historical lot composition are not independently certified. No ingredient, concentration,
+    variant or growth metric changes; no export.
+  source: doi:10.1186/s12915-021-01087-0
+  changes: One bibliography addition and one strain-scoped, species-grounded cultivation
+    observation.
 references:
 - reference: UTEX:soilwater-gr-plus-medium
 - reference: https://utex.org/products/soilwater-gr-plus-medium
+- reference: doi:10.1186/s12915-021-01087-0
+  title: Phylotranscriptomics points to multiple independent origins of multicellularity
+    and cellular differentiation in the volvocine algae.
+  authors: Lindsey CR; Rosenzweig F; Herron MD
+  year: 2021
+  notes: 'source_type=journal_article; discovery_mode=primary_literature_followup;
+    accessed_on=2026-10-14; alternate_identifiers=PMID:34465312, PMCID:PMC8408923.
+    Inspected primary JATS Methods and Additional file 1, Table S3. The supplement
+    was archived as DOCX with a Markdown/table-cell transcription, and Table S3 was
+    visually checked on pages 3-4 of the derived PDF. Named supplier-medium use is
+    supported, not certification of every ingredient or amount of the present UTEX
+    recipe or its historical purchased lot. No study-specific GR+ formulation modification
+    is stated. Do not transfer this claim to GR-minus or the ammonium-supplemented
+    child. Exact table-caption excerpt: "Soilwater: GR+ media was purchased from UTEX."
+    Table S3 row: taxon="P. japonica"; collection="UTEX 2523"; culture medium="Soilwater:
+    GR+". The taxon abbreviation expands in its Pleodorina block. Medium-relevant
+    organism scope is this GR+ row, not an exhaustive whole-paper organism inventory.
+    Pleodorina japonica; strain=UTEX 2523; taxonomy_match=exact_species_name; canonical_label=Pleodorina
+    japonica; NCBITaxon:47788; rank=species; lookup=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=47788;
+    lookup_date=2026-10-14. No strain-qualified taxonomy node was returned by the
+    reported-name query, and strain identity is retained from the paper rather than
+    independently certified by the species match. Paper source=https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8408923/fullTextXML;
+    supplement=https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12915-021-01087-0/MediaObjects/12915_2021_1087_MOESM1_ESM.docx;
+    archives=references_cache/papers/primary_xml/volvocine-2021-polytomella-volvox-followup-20261014.xml
+    and .md; references_cache/papers/primary_supplements/volvocine-2021-supplement1-20261014.docx
+    and .md; taxonomy=references_cache/papers/taxonomy/volvocine-tap-20261014.xml
+    and .md.'
 original_name: 'Soilwater: GR+ Medium'
 data_quality_flags:
 - has_ontology_mappings
@@ -121,3 +158,25 @@ variant_children:
   id: CultureMech:000226
   name: soilwater_gr_nh4_medium
   notes: 'Adds 1 mg NH4MgPO4 per 200 mL prepared Soilwater: GR+ Medium.'
+target_organisms:
+- preferred_term: Pleodorina japonica
+  strain: UTEX 2523
+  term:
+    id: NCBITaxon:47788
+    label: Pleodorina japonica
+  evidence:
+  - reference: doi:10.1186/s12915-021-01087-0
+    supports: SUPPORT
+    snippet: Medium used to culture each sequenced strain.
+    explanation: 'Additional file 1, Table S3 caption identifies the rows as actual
+      cultures. The linked row gives taxon "P. japonica", collection "UTEX 2523" and
+      medium "Soilwater: GR+"; the abbreviation belongs to the Pleodorina block. Separate
+      exact caption excerpt: "Soilwater: GR+ media was purchased from UTEX." This
+      supports cultivation of the reported strain on the named purchased UTEX product
+      represented by this record, not an axenic-growth claim, a growth metric, or
+      exact historical lot composition. No formulation change is reported. Species-name
+      mapping is NCBITaxon:47788, Pleodorina japonica, rank species (NCBI Taxonomy
+      lookup 2026-10-14, https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=47788);
+      it does not independently verify the paper''s strain identity. Source table
+      row and caption were visually checked on the derived PDF page 3 against the
+      archived DOCX and Markdown.'

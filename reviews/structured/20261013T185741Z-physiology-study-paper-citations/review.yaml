@@ -1,0 +1,3236 @@
+schema_version: 1.0.0
+review_id: 20261013T185741Z-physiology-study-paper-citations
+kind: batch
+repository: culturebotai/CultureMech
+title: Physiology study citations with qualified formulation and taxon scope
+started_at: '2026-10-13T18:18:42Z'
+finished_at: '2026-10-13T18:57:41Z'
+reviewer:
+  identity: codex
+  kind: agent
+  independence: self_review
+  independence_basis: Curator-performed assessment, not independent adversarial review.
+skill: culturemech-add-paper-citation
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Eleven citation additions across eleven owners from eight archived papers.
+  Preserved 238 ingredient entries, 68 ingredient evidence items, one root evidence
+  item, six prior bibliography entries and existing variant links. No new growth,
+  concentrations or resolved variants.
+source:
+  git_revision: 41d4d390123c0d8320cd53e994470c88a1b86d8c
+  state: working_tree
+  inputs:
+  - path: data/normalized_yaml/bacterial/hs_medium_methanol_acetate.yaml
+    sha256: 4fd852e3a6f5bfdaab2750fa773f746b15990f5bcef62f2c846b453e8d145d53
+    role: target
+  - path: data/normalized_yaml/bacterial/hypertonic_medium.yaml
+    sha256: ad72d93d2fa9345f44780373809d7d6eac80d74ef01336522a067f8ca987d5e0
+    role: target
+  - path: data/normalized_yaml/bacterial/mcna_medium_lupa.yaml
+    sha256: 68a5c8729d648db35ecff60daabaddfcfb4028e3c6e730d29fef9764c3a9940b
+    role: target
+  - path: data/normalized_yaml/bacterial/ms10_medium_supplements_for_continuous_cultivation.yaml
+    sha256: cdff3cc88fc50aa4455c24a9cb07b59e05e0be8b1df8c7a0abf926f15e164ec9
+    role: target
+  - path: data/normalized_yaml/bacterial/protoplasting_medium.yaml
+    sha256: 26f708e14b3e50b90b1e2f7bf616c9bc1e43a44d0d577878f50dda59225b2448
+    role: target
+  - path: data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl.yaml
+    sha256: 78725eaf6c857470a37a73d5d572bf01443065ed0bd902c404e5b62c583ae3dd
+    role: target
+  - path: data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_1_g_l_nh4cl.yaml
+    sha256: 1b874b53e42edf6955017785049397ffa00798130e3250e752ca8c3b1d61c8a5
+    role: target
+  - path: data/normalized_yaml/bacterial/song_cdm.yaml
+    sha256: f4d6b81ebe13682364da2638619ada190755da6ff19e5de73daf5e5edfd15cb8
+    role: target
+  - path: data/normalized_yaml/bacterial/song_optimal_cdm.yaml
+    sha256: 7869a4394bee453e719bcacbf1abc681e40b0cae27c4866df1b82242a0c6f632
+    role: target
+  - path: data/normalized_yaml/bacterial/synthetic_medium_c.yaml
+    sha256: 77ea1f14c8321174fedf27d1cca2703ae2de553a3d2761cc7be336ad7d982f54
+    role: target
+  - path: data/normalized_yaml/bacterial/synthetic_medium_with_15_amino_acids.yaml
+    sha256: 10dbe941850ccbe0f1aeadbb7319ab6d18f3af96198524bed1c8605c48f3be61
+    role: target
+  - path: src/culturemech/export/kgx_export.py
+    sha256: eacbc2e7b363488cc1ed96e91737f54244dc1a2425dfa05c77ba89d0a5cd10e0
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: Eleven normalized MediaDB physiology-study owners.
+  selection: Verified historical source joins; focused citation review, not complete
+    recipe approval.
+  coverage: full
+  population_size: 11
+  reviewed_target_ids:
+  - CultureMech:007188
+  - CultureMech:007189
+  - CultureMech:007215
+  - CultureMech:007216
+  - CultureMech:007285
+  - CultureMech:007286
+  - CultureMech:007214
+  - CultureMech:007313
+  - CultureMech:007213
+  - CultureMech:007379
+  - CultureMech:007381
+  exclusions:
+  - target: Complete formula certification and generated publication
+    reason: Exact local formulation and study assignment remain unresolved.
+targets:
+- target_id: CultureMech:007188
+  path: data/normalized_yaml/bacterial/song_cdm.yaml
+  label: song_cdm
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/song_cdm.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007189
+  path: data/normalized_yaml/bacterial/song_optimal_cdm.yaml
+  label: song_optimal_cdm
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/song_optimal_cdm.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007215
+  path: data/normalized_yaml/bacterial/hypertonic_medium.yaml
+  label: hypertonic_medium
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/hypertonic_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007216
+  path: data/normalized_yaml/bacterial/protoplasting_medium.yaml
+  label: protoplasting_medium
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/protoplasting_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007285
+  path: data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_1_g_l_nh4cl.yaml
+  label: rdm_base_medium_vitamins_maltose_1_g_l_nh4cl
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_1_g_l_nh4cl.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007286
+  path: data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl.yaml
+  label: rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007214
+  path: data/normalized_yaml/bacterial/synthetic_medium_c.yaml
+  label: synthetic_medium_c
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/synthetic_medium_c.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007313
+  path: data/normalized_yaml/bacterial/ms10_medium_supplements_for_continuous_cultivation.yaml
+  label: ms10_medium_supplements_for_continuous_cultivation
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/ms10_medium_supplements_for_continuous_cultivation.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007213
+  path: data/normalized_yaml/bacterial/synthetic_medium_with_15_amino_acids.yaml
+  label: synthetic_medium_with_15_amino_acids
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/synthetic_medium_with_15_amino_acids.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007379
+  path: data/normalized_yaml/bacterial/hs_medium_methanol_acetate.yaml
+  label: hs_medium_methanol_acetate
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/hs_medium_methanol_acetate.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007381
+  path: data/normalized_yaml/bacterial/mcna_medium_lupa.yaml
+  label: mcna_medium_lupa
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mcna_medium_lupa.yaml
+    role: authoritative normalized recipe
+checks:
+- check_id: baseline-00
+  name: just validate data/normalized_yaml/bacterial/song_cdm.yaml
+  command: just validate data/normalized_yaml/bacterial/song_cdm.yaml
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007188
+  evidence_ids:
+  - baseline-00
+- check_id: baseline-01
+  name: just validate-strict data/normalized_yaml/bacterial/song_cdm.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/song_cdm.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007188
+  evidence_ids:
+  - baseline-01
+- check_id: baseline-02
+  name: just validate data/normalized_yaml/bacterial/song_optimal_cdm.yaml
+  command: just validate data/normalized_yaml/bacterial/song_optimal_cdm.yaml
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007189
+  evidence_ids:
+  - baseline-02
+- check_id: baseline-03
+  name: just validate-strict data/normalized_yaml/bacterial/song_optimal_cdm.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/song_optimal_cdm.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007189
+  evidence_ids:
+  - baseline-03
+- check_id: baseline-04
+  name: just validate data/normalized_yaml/bacterial/hypertonic_medium.yaml
+  command: just validate data/normalized_yaml/bacterial/hypertonic_medium.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007215
+  evidence_ids:
+  - baseline-04
+- check_id: baseline-05
+  name: just validate-strict data/normalized_yaml/bacterial/hypertonic_medium.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/hypertonic_medium.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007215
+  evidence_ids:
+  - baseline-05
+- check_id: baseline-06
+  name: just validate data/normalized_yaml/bacterial/protoplasting_medium.yaml
+  command: just validate data/normalized_yaml/bacterial/protoplasting_medium.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007216
+  evidence_ids:
+  - baseline-06
+- check_id: baseline-07
+  name: just validate-strict data/normalized_yaml/bacterial/protoplasting_medium.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/protoplasting_medium.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007216
+  evidence_ids:
+  - baseline-07
+- check_id: baseline-08
+  name: just validate data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_1_g_l_nh4cl.yaml
+  command: just validate data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_1_g_l_nh4cl.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007285
+  evidence_ids:
+  - baseline-08
+- check_id: baseline-09
+  name: just validate-strict data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_1_g_l_nh4cl.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_1_g_l_nh4cl.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007285
+  evidence_ids:
+  - baseline-09
+- check_id: baseline-10
+  name: just validate data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl.yaml
+  command: just validate data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007286
+  evidence_ids:
+  - baseline-10
+- check_id: baseline-11
+  name: just validate-strict data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007286
+  evidence_ids:
+  - baseline-11
+- check_id: baseline-12
+  name: just validate data/normalized_yaml/bacterial/synthetic_medium_c.yaml
+  command: just validate data/normalized_yaml/bacterial/synthetic_medium_c.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007214
+  evidence_ids:
+  - baseline-12
+- check_id: baseline-13
+  name: just validate-strict data/normalized_yaml/bacterial/synthetic_medium_c.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/synthetic_medium_c.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007214
+  evidence_ids:
+  - baseline-13
+- check_id: baseline-14
+  name: just validate data/normalized_yaml/bacterial/ms10_medium_supplements_for_continuous_cultivation.yaml
+  command: just validate data/normalized_yaml/bacterial/ms10_medium_supplements_for_continuous_cultivation.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007313
+  evidence_ids:
+  - baseline-14
+- check_id: baseline-15
+  name: just validate-strict data/normalized_yaml/bacterial/ms10_medium_supplements_for_continuous_cultivation.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/ms10_medium_supplements_for_continuous_cultivation.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007313
+  evidence_ids:
+  - baseline-15
+- check_id: baseline-16
+  name: just validate data/normalized_yaml/bacterial/synthetic_medium_with_15_amino_acids.yaml
+  command: just validate data/normalized_yaml/bacterial/synthetic_medium_with_15_amino_acids.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007213
+  evidence_ids:
+  - baseline-16
+- check_id: baseline-17
+  name: just validate-strict data/normalized_yaml/bacterial/synthetic_medium_with_15_amino_acids.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/synthetic_medium_with_15_amino_acids.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007213
+  evidence_ids:
+  - baseline-17
+- check_id: baseline-18
+  name: just validate data/normalized_yaml/bacterial/hs_medium_methanol_acetate.yaml
+  command: just validate data/normalized_yaml/bacterial/hs_medium_methanol_acetate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007379
+  evidence_ids:
+  - baseline-18
+- check_id: baseline-19
+  name: just validate-strict data/normalized_yaml/bacterial/hs_medium_methanol_acetate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/hs_medium_methanol_acetate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007379
+  evidence_ids:
+  - baseline-19
+- check_id: baseline-20
+  name: just validate data/normalized_yaml/bacterial/mcna_medium_lupa.yaml
+  command: just validate data/normalized_yaml/bacterial/mcna_medium_lupa.yaml
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007381
+  evidence_ids:
+  - baseline-20
+- check_id: baseline-21
+  name: just validate-strict data/normalized_yaml/bacterial/mcna_medium_lupa.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/mcna_medium_lupa.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Exact-input baseline reused.
+  target_ids:
+  - CultureMech:007381
+  evidence_ids:
+  - baseline-21
+- check_id: post-00
+  name: just validate data/normalized_yaml/bacterial/song_cdm.yaml
+  command: just validate data/normalized_yaml/bacterial/song_cdm.yaml
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007188
+  evidence_ids:
+  - post-00
+- check_id: post-01
+  name: just validate-strict data/normalized_yaml/bacterial/song_cdm.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/song_cdm.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007188
+  evidence_ids:
+  - post-01
+- check_id: post-02
+  name: just validate data/normalized_yaml/bacterial/song_optimal_cdm.yaml
+  command: just validate data/normalized_yaml/bacterial/song_optimal_cdm.yaml
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007189
+  evidence_ids:
+  - post-02
+- check_id: post-03
+  name: just validate-strict data/normalized_yaml/bacterial/song_optimal_cdm.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/song_optimal_cdm.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007189
+  evidence_ids:
+  - post-03
+- check_id: post-04
+  name: just validate data/normalized_yaml/bacterial/hypertonic_medium.yaml
+  command: just validate data/normalized_yaml/bacterial/hypertonic_medium.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007215
+  evidence_ids:
+  - post-04
+- check_id: post-05
+  name: just validate-strict data/normalized_yaml/bacterial/hypertonic_medium.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/hypertonic_medium.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007215
+  evidence_ids:
+  - post-05
+- check_id: post-06
+  name: just validate data/normalized_yaml/bacterial/protoplasting_medium.yaml
+  command: just validate data/normalized_yaml/bacterial/protoplasting_medium.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007216
+  evidence_ids:
+  - post-06
+- check_id: post-07
+  name: just validate-strict data/normalized_yaml/bacterial/protoplasting_medium.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/protoplasting_medium.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007216
+  evidence_ids:
+  - post-07
+- check_id: post-08
+  name: just validate data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_1_g_l_nh4cl.yaml
+  command: just validate data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_1_g_l_nh4cl.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007285
+  evidence_ids:
+  - post-08
+- check_id: post-09
+  name: just validate-strict data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_1_g_l_nh4cl.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_1_g_l_nh4cl.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007285
+  evidence_ids:
+  - post-09
+- check_id: post-10
+  name: just validate data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl.yaml
+  command: just validate data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007286
+  evidence_ids:
+  - post-10
+- check_id: post-11
+  name: just validate-strict data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007286
+  evidence_ids:
+  - post-11
+- check_id: post-12
+  name: just validate data/normalized_yaml/bacterial/synthetic_medium_c.yaml
+  command: just validate data/normalized_yaml/bacterial/synthetic_medium_c.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007214
+  evidence_ids:
+  - post-12
+- check_id: post-13
+  name: just validate-strict data/normalized_yaml/bacterial/synthetic_medium_c.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/synthetic_medium_c.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007214
+  evidence_ids:
+  - post-13
+- check_id: post-14
+  name: just validate data/normalized_yaml/bacterial/ms10_medium_supplements_for_continuous_cultivation.yaml
+  command: just validate data/normalized_yaml/bacterial/ms10_medium_supplements_for_continuous_cultivation.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007313
+  evidence_ids:
+  - post-14
+- check_id: post-15
+  name: just validate-strict data/normalized_yaml/bacterial/ms10_medium_supplements_for_continuous_cultivation.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/ms10_medium_supplements_for_continuous_cultivation.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007313
+  evidence_ids:
+  - post-15
+- check_id: post-16
+  name: just validate data/normalized_yaml/bacterial/synthetic_medium_with_15_amino_acids.yaml
+  command: just validate data/normalized_yaml/bacterial/synthetic_medium_with_15_amino_acids.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007213
+  evidence_ids:
+  - post-16
+- check_id: post-17
+  name: just validate-strict data/normalized_yaml/bacterial/synthetic_medium_with_15_amino_acids.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/synthetic_medium_with_15_amino_acids.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007213
+  evidence_ids:
+  - post-17
+- check_id: post-18
+  name: just validate data/normalized_yaml/bacterial/hs_medium_methanol_acetate.yaml
+  command: just validate data/normalized_yaml/bacterial/hs_medium_methanol_acetate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007379
+  evidence_ids:
+  - post-18
+- check_id: post-19
+  name: just validate-strict data/normalized_yaml/bacterial/hs_medium_methanol_acetate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/hs_medium_methanol_acetate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007379
+  evidence_ids:
+  - post-19
+- check_id: post-20
+  name: just validate data/normalized_yaml/bacterial/mcna_medium_lupa.yaml
+  command: just validate data/normalized_yaml/bacterial/mcna_medium_lupa.yaml
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007381
+  evidence_ids:
+  - post-20
+- check_id: post-21
+  name: just validate-strict data/normalized_yaml/bacterial/mcna_medium_lupa.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/mcna_medium_lupa.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007381
+  evidence_ids:
+  - post-21
+- check_id: merge-00
+  name: just verify-merges
+  command: just verify-merges
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007188
+  - CultureMech:007189
+  - CultureMech:007215
+  - CultureMech:007216
+  - CultureMech:007285
+  - CultureMech:007286
+  - CultureMech:007214
+  - CultureMech:007313
+  - CultureMech:007213
+  - CultureMech:007379
+  - CultureMech:007381
+  evidence_ids:
+  - merge-00
+- check_id: merge-01
+  name: just audit-merge-freshness --json
+  command: just audit-merge-freshness --json
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007188
+  - CultureMech:007189
+  - CultureMech:007215
+  - CultureMech:007216
+  - CultureMech:007285
+  - CultureMech:007286
+  - CultureMech:007214
+  - CultureMech:007313
+  - CultureMech:007213
+  - CultureMech:007379
+  - CultureMech:007381
+  evidence_ids:
+  - merge-01
+- check_id: extra-00
+  name: /tmp/culturemech-parallel-env-20261012/bin/python -m pytest --no-cov -q -p
+    no:cacheprovider tests/test_claude_skills.py tests/test_skill_frontmatter.py tests/test_fetch_pubmed_abstracts.py
+    tests/test_record_io.py tests/test_media_variant_links.py tests/test_record_review_contract.py
+  command: /tmp/culturemech-parallel-env-20261012/bin/python -m pytest --no-cov -q
+    -p no:cacheprovider tests/test_claude_skills.py tests/test_skill_frontmatter.py
+    tests/test_fetch_pubmed_abstracts.py tests/test_record_io.py tests/test_media_variant_links.py
+    tests/test_record_review_contract.py
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007188
+  - CultureMech:007189
+  - CultureMech:007215
+  - CultureMech:007216
+  - CultureMech:007285
+  - CultureMech:007286
+  - CultureMech:007214
+  - CultureMech:007313
+  - CultureMech:007213
+  - CultureMech:007379
+  - CultureMech:007381
+  evidence_ids:
+  - extra-00
+- check_id: extra-01
+  name: /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py
+  command: /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007188
+  - CultureMech:007189
+  - CultureMech:007215
+  - CultureMech:007216
+  - CultureMech:007285
+  - CultureMech:007286
+  - CultureMech:007214
+  - CultureMech:007313
+  - CultureMech:007213
+  - CultureMech:007379
+  - CultureMech:007381
+  evidence_ids:
+  - extra-01
+- check_id: extra-02
+  name: git diff --check
+  command: git diff --check
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual terminal result; pre-existing failures retained; no generated files
+    published.
+  target_ids:
+  - CultureMech:007188
+  - CultureMech:007189
+  - CultureMech:007215
+  - CultureMech:007216
+  - CultureMech:007285
+  - CultureMech:007286
+  - CultureMech:007214
+  - CultureMech:007313
+  - CultureMech:007213
+  - CultureMech:007379
+  - CultureMech:007381
+  evidence_ids:
+  - extra-02
+evidence:
+- evidence_id: paper-99
+  kind: primary_source
+  reference: doi:10.1007/s00253-008-1425-2
+  locator: references_cache/papers/PMID_18379780.xml; Article identity and abstract
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Verified publication identity and archived abstract, not complete formulation
+    or local growth approval.
+  support: supports
+  snapshot_sha256: f9f271b9d51fd31c1726e98036bc7ed08c3a6418ebea1287fe55dd82085c0d5b
+- evidence_id: paper-122
+  kind: primary_source
+  reference: doi:10.1128/jb.121.1.390-391.1975
+  locator: references_cache/papers/PMID_803954.xml; Article identity and abstract
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Verified publication identity and archived abstract, not complete formulation
+    or local growth approval.
+  support: supports
+  snapshot_sha256: de2089243aadaaa4bba56c8b14183ff22d5ee4893f45eab3b548ebd366dd3705
+- evidence_id: paper-143
+  kind: primary_source
+  reference: doi:10.1002/1097-0290(20000905)69:5<537::aid-bit8>3.0.co;2-7
+  locator: references_cache/papers/PMID_10898863.xml; Article identity and abstract
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Verified publication identity and archived abstract, not complete formulation
+    or local growth approval.
+  support: supports
+  snapshot_sha256: 898bcc865f39f94326c8d5c892832e4a5fc82c72c45541a81e443719d87386f3
+- evidence_id: paper-123
+  kind: primary_source
+  reference: doi:10.1016/j.biortech.2010.10.124
+  locator: references_cache/papers/PMID_21296571.xml; Article identity and abstract
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Verified publication identity and archived abstract, not complete formulation
+    or local growth approval.
+  support: supports
+  snapshot_sha256: 0be50987bb1330b51986ba63ae61bdbc3016f72fc40d885217ade7ec014f6960
+- evidence_id: paper-126
+  kind: primary_source
+  reference: doi:10.1128/AEM.67.6.2677-2682.2001
+  locator: references_cache/papers/PMID_11375180.xml; Article identity and abstract
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Verified publication identity and archived abstract, not complete formulation
+    or local growth approval.
+  support: supports
+  snapshot_sha256: dc29ed2ba562e9648b0a8912042e2d3361552bbb20f2b00d86fad37b6dac6fd6
+- evidence_id: paper-132
+  kind: primary_source
+  reference: doi:10.1039/b715203e
+  locator: references_cache/papers/PMID_18213408.xml; Article identity and abstract
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Verified publication identity and archived abstract, not complete formulation
+    or local growth approval.
+  support: supports
+  snapshot_sha256: 764bf6713fbbff463ee96ca88f1da75d509359700bdde9fca3e1046be560af83
+- evidence_id: paper-144
+  kind: primary_source
+  reference: doi:10.1128/jb.178.19.5797-5802.1996
+  locator: references_cache/papers/PMID_8824630.xml; Article identity and abstract
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Verified publication identity and archived abstract, not complete formulation
+    or local growth approval.
+  support: supports
+  snapshot_sha256: 63e5e72a751bf680af06a6521076f4e70f43ad60d7af2621301783db6fdf496c
+- evidence_id: paper-147
+  kind: primary_source
+  reference: doi:10.1128/AEM.01455-08
+  locator: references_cache/papers/PMID_18791018.xml; Article identity and abstract
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Verified publication identity and archived abstract, not complete formulation
+    or local growth approval.
+  support: supports
+  snapshot_sha256: 5f2854a6f69d9c5f41b8ce09978bbc11b6649a21799323969bc5548d596844d8
+- evidence_id: body-147
+  kind: primary_source
+  reference: doi:10.1128/AEM.01455-08
+  locator: references_cache/papers/primary_html/pmid-18791018-20261013.html; Selected
+    methods, strain table and results
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Inspected selected full-HTML passages; linked images and complete inherited
+    formulas not certified.
+  support: supports
+  snapshot_sha256: 8c382fdceec20106770810c0d0a428cd875cc850b3b20a6a071962fa40df7680
+- evidence_id: taxonomy-0
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy
+  locator: references_cache/papers/taxonomy/physiology-study-candidates-20261013.xml;
+    ScientificName, TaxId, Rank, OtherNames and lineage
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual ranks and names verified; no strain match inferred merely from a
+    species name.
+  support: supports
+  snapshot_sha256: 701d8d76da1b36c53f06f8f1f82b0db35aa953e11eec3454d8954cee15a6f4f9
+- evidence_id: taxonomy-1
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy
+  locator: references_cache/papers/taxonomy/physiology-additional-candidates-20261013.xml;
+    ScientificName, TaxId, Rank, OtherNames and lineage
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual ranks and names verified; no strain match inferred merely from a
+    species name.
+  support: supports
+  snapshot_sha256: bd8bb6d9cb796f2c8739aa7cb20f94d5d124f4c2a99a0d6a46fa965c27dddead
+- evidence_id: joins
+  kind: database
+  reference: MediaDB SQL 07Oct2015
+  locator: references_cache/papers/mediadb/media_database.07Oct2015.sql; Eight verified
+    study-to-owner source joins
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Historical joins establish discovery relevance, not automatic growth, strain
+    or concentration certification.
+  support: supports
+  snapshot_sha256: e2c60258e2389d4ad383695eb3e01429a67eac90807fe14d02a6728777d35b5c
+- evidence_id: claims
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/claim-plan.json;
+    claim-plan.json
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Ten registered excerpts and qualified taxonomy, recipe and assay assessments.
+  support: context_only
+  snapshot_sha256: cda14da1b1ecd13e605c367a85c1d5fa852e39c681e87753804ecd8bf2623957
+- evidence_id: archives
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/source-preparation.json;
+    source-preparation.json
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Eight raw primary abstracts and Markdown; one full HTML plus one publisher
+    subscription preview.
+  support: context_only
+  snapshot_sha256: a46d915d72ca419f3d833092143f7594e3fd15e96fab1d6e773ebeedc41d94f0
+- evidence_id: readback
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/final-readback.json;
+    final-readback.json
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: All 15,910 normalized hashes checked; exact original bytes recoverable
+    for all eleven intended edits.
+  support: context_only
+  snapshot_sha256: d03dc32dfd3e33ce4953b5f83412704e8a01fea527d8a4aaaa5f0a37364fdfa0
+- evidence_id: excerpts
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/evidence-readback.json;
+    evidence-readback.json
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Thirteen note-excerpt occurrences verified; zero new claim-level EvidenceItems.
+  support: context_only
+  snapshot_sha256: 4cceccab2397fe429b3d1ec6201dba6e926ad5b759f72e10d86361b1cea2704e
+- evidence_id: applied
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/applied.json;
+    applied.json
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Eleven citations and history events; all 238 ingredient entries, prior
+    citations/evidence and links preserved.
+  support: context_only
+  snapshot_sha256: d1aeec4856e5aaa833c62c25faffbd4abc03d56c57836dad8e6dfe07c0c3f7c7
+- evidence_id: baseline-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-00.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-00.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 1; not scientific certification.
+  support: context_only
+  snapshot_sha256: 781a8d867eee162ef5ae268e3ff3ff46d22a8f344db36c34c80106212144f998
+- evidence_id: baseline-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-01.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-01.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-02.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-02.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 1; not scientific certification.
+  support: context_only
+  snapshot_sha256: fa55537d4292204afe2d549788fea8ce1367134fe0b9742742c408dfe9ee65fb
+- evidence_id: baseline-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-03.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-03.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-04.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-04.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-05.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-05.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-06.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-06.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-07.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-07.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-08.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-08.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-09.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-09.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-10
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-10.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-10.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-11
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-11.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-11.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-12
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-12.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-12.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-13
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-13.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-13.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-14
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-14.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-14.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-15
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-15.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-15.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-16
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-16.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-16.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-17
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-17.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-17.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-18
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-18.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-18.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-19
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-19.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-19.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-20
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-20.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-20.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 1; not scientific certification.
+  support: context_only
+  snapshot_sha256: e30740ac94d832499af2ea2b7d602b929ac45fde2774a680002e78b988f54f14
+- evidence_id: baseline-21
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-21.log
+  locator: reports/paper_citation_curation/20261013-environmental-study-citations/next-baseline-21.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-00.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-00.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 1; not scientific certification.
+  support: context_only
+  snapshot_sha256: b5fac4619ece84e00a822c62fed512f8ac5ad0b13b8250a2d20b3912e06e6265
+- evidence_id: post-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-01.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-01.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-02.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-02.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 1; not scientific certification.
+  support: context_only
+  snapshot_sha256: b32c65ae6b10cad906cf706d529f763750e9768889c09fbbd055268b052c825d
+- evidence_id: post-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-03.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-03.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-04.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-04.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-05.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-05.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-06.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-06.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-07.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-07.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-08.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-08.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-09.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-09.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-10
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-10.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-10.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-11
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-11.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-11.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-12
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-12.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-12.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-13
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-13.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-13.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-14
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-14.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-14.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-15
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-15.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-15.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-16
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-16.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-16.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-17
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-17.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-17.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-18
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-18.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-18.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-19
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-19.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-19.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-20
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-20.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-20.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 1; not scientific certification.
+  support: context_only
+  snapshot_sha256: 27c3f0e1618e8a3ab2bd24de883e6100e6e0a57fc86f3c79b010f251d0d3a4c5
+- evidence_id: post-21
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/post-21.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/post-21.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: merge-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/merge-00.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/merge-00.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 1; not scientific certification.
+  support: context_only
+  snapshot_sha256: 09a2922082db841587410042dc33d7d3f72b2601f1d6b6f2b33322471ee47f2c
+- evidence_id: merge-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/merge-01.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/merge-01.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 1; not scientific certification.
+  support: context_only
+  snapshot_sha256: 6be85d9f8a8b4c4805a83310af31a801907645944be428b843a7d28092924dd0
+- evidence_id: extra-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/extra-00.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/extra-00.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 986ff943e9bf5122730b4a662ff5473794ed2756ef3c314d7cda8127eac82deb
+- evidence_id: extra-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/extra-01.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/extra-01.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 441bdd6ab36f5b87c9edccf771321e1c5f6c11f43bec7799e6e98cd4d756c24c
+- evidence_id: extra-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-physiology-study-citations/extra-02.log
+  locator: reports/paper_citation_curation/20261013-physiology-study-citations/extra-02.log;
+    Complete command output
+  accessed_at: '2026-10-13T18:57:41Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+assessments:
+- assessment_id: citation-007188
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007188
+  evidence_ids:
+  - paper-99
+  - archives
+  - readback
+  summary: Verified bibliography and attributable source archive; DOI/PMID equivalence
+    retained.
+- assessment_id: formulation-007188
+  area: evidence
+  topic: Recipe and assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007188
+  evidence_ids:
+  - paper-99
+  - claims
+  - excerpts
+  summary: 'Formulation_unresolved: The abstract separates model-predicted requirements,
+    physical omission experiments and an optimal CDM, but does not enumerate either
+    local formulation. The publisher page is a subscription preview, not full methods.
+    Missing local amino-acid/vitamin amounts remain unavailable; no withdrawn VARIABLE
+    defaults are restored. NCBI strain candidate 221988 is [Mannheimia] succiniciproducens
+    MBEL55E, not an independently established identity for the historical MMBEL55E
+    string. Omission-specific no-growth observations are not a universal negative
+    or positive outcome for this complete owner. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "L-Methionine", "term": {"id": "CHEBI:16643", "label": "L-methionine"},
+    "concentration": null, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[1].concentration", "chemical": "L-Cysteine", "term": {"id": "CHEBI:17561",
+    "label": "L-cysteine"}, "concentration": null, "disposition": "preserved, not
+    newly certified"}, {"field_path": "ingredients[2].concentration", "chemical":
+    "dTMP", "term": null, "concentration": null, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[3].concentration", "chemical": "Magnesium
+    chloride", "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"},
+    "concentration": {"value": "0.984", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[4].concentration", "chemical":
+    "Calcium chloride anhydrous", "term": {"id": "CHEBI:3312", "label": "calcium dichloride"},
+    "concentration": {"value": "0.205", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[5].concentration", "chemical":
+    "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium
+    hydrogen phosphate"}, "concentration": {"value": "55.7", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[6].concentration",
+    "chemical": "Sodium chloride", "term": {"id": "CHEBI:26710", "label": "sodium
+    chloride"}, "concentration": {"value": "17.1", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[7].concentration",
+    "chemical": "Calcium pantothenate", "term": {"id": "CHEBI:31345", "label": "Calcium
+    pantothenate"}, "concentration": null, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[8].concentration", "chemical": "Pyridoxine HCl", "term":
+    {"id": "CHEBI:30961", "label": "pyridoxine hydrochloride"}, "concentration": null,
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[9].concentration",
+    "chemical": "Thiamine HCl", "term": {"id": "CHEBI:49105", "label": "thiamine hydrochloride"},
+    "concentration": null, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[10].concentration", "chemical": "Manganese sulfate", "term": {"id":
+    "CHEBI:86364", "label": "manganese(II) sulfate monohydrate"}, "concentration":
+    {"value": "0.0112", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[11].concentration", "chemical": "Ferrous
+    sulfate", "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"},
+    "concentration": {"value": "0.329", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[12].concentration", "chemical":
+    "Zinc sulfate", "term": {"id": "CHEBI:35176", "label": "zinc sulfate"}, "concentration":
+    {"value": "0.0383", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[13].concentration", "chemical": "Ammonium
+    sulfate", "term": {"id": "CHEBI:62946", "label": "ammonium sulfate"}, "concentration":
+    {"value": "15.1", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[14].concentration", "chemical": "Cupric
+    sulfate", "term": {"id": "CHEBI:23414", "label": "copper(II) sulfate"}, "concentration":
+    {"value": "0.02", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[15].concentration", "chemical": "Sodium
+    borate", "term": null, "concentration": {"value": "0.000262", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[16].concentration",
+    "chemical": "Molybdic acid ammonium salt tetrahydrate", "term": {"id": "CHEBI:91249",
+    "label": "ammonium molybdate"}, "concentration": {"value": "0.000405", "unit":
+    "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new certification of unchanged original amounts.
+    evidence_ids:
+    - paper-99
+- assessment_id: organism-007188
+  area: evidence
+  topic: Scientific names, actual ranks and roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007188
+  evidence_ids:
+  - paper-99
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Mannheimia succiniciproducens: [Mannheimia] succiniciproducens, NCBITaxon:157673,
+    actual rank species; verified_species_synonym; study organism named in the abstract;
+    exact local CDM and omission assay unresolved. Mannheimia succiniciproducens MMBEL55E
+    (historical MediaDB row): [Mannheimia] succiniciproducens, NCBITaxon:157673, actual
+    rank species; parent_rank_only; species parent only; extra-M spelling and physical
+    study strain not resolved by the abstract.Mapping limitations are explicit; not
+    certification of every exact strain or growth association.'
+- assessment_id: preservation-007188
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007188
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/notes and one history event added. Existing concentrations,
+    missing amounts, prior evidence and variant links preserved; no new growth, variants
+    or publication.
+- assessment_id: citation-007189
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007189
+  evidence_ids:
+  - paper-99
+  - archives
+  - readback
+  summary: Verified bibliography and attributable source archive; DOI/PMID equivalence
+    retained.
+- assessment_id: formulation-007189
+  area: evidence
+  topic: Recipe and assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007189
+  evidence_ids:
+  - paper-99
+  - claims
+  - excerpts
+  summary: 'Formulation_unresolved: The abstract separates model-predicted requirements,
+    physical omission experiments and an optimal CDM, but does not enumerate either
+    local formulation. The publisher page is a subscription preview, not full methods.
+    Missing local amino-acid/vitamin amounts remain unavailable; no withdrawn VARIABLE
+    defaults are restored. NCBI strain candidate 221988 is [Mannheimia] succiniciproducens
+    MBEL55E, not an independently established identity for the historical MMBEL55E
+    string. Omission-specific no-growth observations are not a universal negative
+    or positive outcome for this complete owner. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "L-Alanine", "term": {"id": "CHEBI:16977", "label": "L-alanine"},
+    "concentration": null, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[1].concentration", "chemical": "L-Aspartate", "term": {"id": "CHEBI:29991",
+    "label": "L-aspartate(1-)"}, "concentration": null, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[2].concentration", "chemical":
+    "L-Serine", "term": {"id": "CHEBI:17115", "label": "L-serine"}, "concentration":
+    null, "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[3].concentration",
+    "chemical": "Ascorbate", "term": {"id": "CHEBI:22651", "label": "ascorbate"},
+    "concentration": null, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[4].concentration", "chemical": "L-Methionine", "term": {"id": "CHEBI:16643",
+    "label": "L-methionine"}, "concentration": null, "disposition": "preserved, not
+    newly certified"}, {"field_path": "ingredients[5].concentration", "chemical":
+    "L-Cysteine", "term": {"id": "CHEBI:17561", "label": "L-cysteine"}, "concentration":
+    null, "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[6].concentration",
+    "chemical": "Biotin", "term": {"id": "CHEBI:15956", "label": "biotin"}, "concentration":
+    null, "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[7].concentration",
+    "chemical": "L-Proline", "term": {"id": "CHEBI:17203", "label": "L-proline"},
+    "concentration": null, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[8].concentration", "chemical": "L-Asparagine", "term": {"id": "CHEBI:17196",
+    "label": "L-asparagine"}, "concentration": null, "disposition": "preserved, not
+    newly certified"}, {"field_path": "ingredients[9].concentration", "chemical":
+    "dTMP", "term": null, "concentration": null, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[10].concentration", "chemical": "Magnesium
+    chloride", "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"},
+    "concentration": {"value": "0.984", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[11].concentration", "chemical":
+    "Calcium chloride anhydrous", "term": {"id": "CHEBI:3312", "label": "calcium dichloride"},
+    "concentration": {"value": "0.205", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[12].concentration", "chemical":
+    "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium
+    hydrogen phosphate"}, "concentration": {"value": "55.7", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[13].concentration",
+    "chemical": "Sodium chloride", "term": {"id": "CHEBI:26710", "label": "sodium
+    chloride"}, "concentration": {"value": "17.1", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[14].concentration",
+    "chemical": "Calcium pantothenate", "term": {"id": "CHEBI:31345", "label": "Calcium
+    pantothenate"}, "concentration": null, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[15].concentration", "chemical": "Pyridoxine HCl",
+    "term": {"id": "CHEBI:30961", "label": "pyridoxine hydrochloride"}, "concentration":
+    null, "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[16].concentration",
+    "chemical": "Thiamine HCl", "term": {"id": "CHEBI:49105", "label": "thiamine hydrochloride"},
+    "concentration": null, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[17].concentration", "chemical": "Manganese sulfate", "term": {"id":
+    "CHEBI:86364", "label": "manganese(II) sulfate monohydrate"}, "concentration":
+    {"value": "0.0112", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[18].concentration", "chemical": "Ferrous
+    sulfate", "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"},
+    "concentration": {"value": "0.329", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[19].concentration", "chemical":
+    "Zinc sulfate", "term": {"id": "CHEBI:35176", "label": "zinc sulfate"}, "concentration":
+    {"value": "0.0282", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[20].concentration", "chemical": "Ammonium
+    sulfate", "term": {"id": "CHEBI:62946", "label": "ammonium sulfate"}, "concentration":
+    {"value": "15.1", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[21].concentration", "chemical": "Cupric
+    sulfate", "term": {"id": "CHEBI:23414", "label": "copper(II) sulfate"}, "concentration":
+    {"value": "0.02", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[22].concentration", "chemical": "Sodium
+    borate", "term": null, "concentration": {"value": "0.000262", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[23].concentration",
+    "chemical": "Molybdic acid ammonium salt tetrahydrate", "term": {"id": "CHEBI:91249",
+    "label": "ammonium molybdate"}, "concentration": {"value": "0.000405", "unit":
+    "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new certification of unchanged original amounts.
+    evidence_ids:
+    - paper-99
+- assessment_id: organism-007189
+  area: evidence
+  topic: Scientific names, actual ranks and roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007189
+  evidence_ids:
+  - paper-99
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Mannheimia succiniciproducens: [Mannheimia] succiniciproducens, NCBITaxon:157673,
+    actual rank species; verified_species_synonym; study organism named in the abstract;
+    exact local CDM and omission assay unresolved. Mannheimia succiniciproducens MMBEL55E
+    (historical MediaDB row): [Mannheimia] succiniciproducens, NCBITaxon:157673, actual
+    rank species; parent_rank_only; species parent only; extra-M spelling and physical
+    study strain not resolved by the abstract.Mapping limitations are explicit; not
+    certification of every exact strain or growth association.'
+- assessment_id: preservation-007189
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007189
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/notes and one history event added. Existing concentrations,
+    missing amounts, prior evidence and variant links preserved; no new growth, variants
+    or publication.
+- assessment_id: citation-007215
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007215
+  evidence_ids:
+  - paper-122
+  - archives
+  - readback
+  summary: Verified bibliography and attributable source archive; DOI/PMID equivalence
+    retained.
+- assessment_id: formulation-007215
+  area: evidence
+  topic: Recipe and assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007215
+  evidence_ids:
+  - paper-122
+  - claims
+  - excerpts
+  summary: 'Formulation_unresolved: The abstract reports protoplast reversion on soft-agar
+    hypertonic plates, while both local owners are LIQUID. The hypertonic owner additionally
+    contains leucine, glucose and phosphate relative to the protoplasting owner, but
+    the abstract does not establish their full formulas, preparation or separate experimental
+    roles. No agar dose or resolved solid variant is invented. Photomicrographs and
+    full article were not inspected; a browser challenge is not scientific evidence. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "L-Leucine", "term": {"id": "CHEBI:15603", "label": "L-leucine"},
+    "concentration": {"value": "0.3812", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical":
+    "Sucrose", "term": {"id": "CHEBI:17992", "label": "sucrose"}, "concentration":
+    {"value": "200.0", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Ammonium
+    chloride", "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "concentration":
+    {"value": "18.7", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[3].concentration", "chemical": "Potassium
+    dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen
+    phosphate"}, "concentration": {"value": "1.029", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[4].concentration",
+    "chemical": "Sodium sulfate", "term": {"id": "CHEBI:32149", "label": "sodium sulfate"},
+    "concentration": {"value": "0.9311", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[5].concentration", "chemical":
+    "Glucose", "term": {"id": "CHEBI:17234", "label": "glucose"}, "concentration":
+    {"value": "11.1", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Magnesium
+    chloride", "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"},
+    "concentration": {"value": "22.99", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[7].concentration", "chemical":
+    "Sodium chloride", "term": {"id": "CHEBI:26710", "label": "sodium chloride"},
+    "concentration": {"value": "0.9925", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[8].concentration", "chemical":
+    "Potassium chloride", "term": {"id": "CHEBI:32588", "label": "potassium chloride"},
+    "concentration": {"value": "0.4695", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[9].concentration", "chemical":
+    "Tromethamine", "term": {"id": "CHEBI:9754", "label": "tris"}, "concentration":
+    {"value": "99.06", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new certification of unchanged original amounts.
+    evidence_ids:
+    - paper-122
+- assessment_id: organism-007215
+  area: evidence
+  topic: Scientific names, actual ranks and roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007215
+  evidence_ids:
+  - paper-122
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Bacillus megaterium: Priestia megaterium, NCBITaxon:1404, actual rank
+    species; verified_species_synonym; protoplast-reversion organism, not demonstrated
+    growth on each local liquid owner. Bacillus megaterium KM Leu- (historical MediaDB
+    row): Priestia megaterium, NCBITaxon:1404, actual rank species; parent_rank_only;
+    species parent only; reported derivative not verified in accessible primary text
+    and bounded exact-name searches returned no node.Mapping limitations are explicit;
+    not certification of every exact strain or growth association.'
+- assessment_id: preservation-007215
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007215
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/notes and one history event added. Existing concentrations,
+    missing amounts, prior evidence and variant links preserved; no new growth, variants
+    or publication.
+- assessment_id: citation-007216
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007216
+  evidence_ids:
+  - paper-122
+  - archives
+  - readback
+  summary: Verified bibliography and attributable source archive; DOI/PMID equivalence
+    retained.
+- assessment_id: formulation-007216
+  area: evidence
+  topic: Recipe and assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007216
+  evidence_ids:
+  - paper-122
+  - claims
+  - excerpts
+  summary: 'Formulation_unresolved: The abstract reports protoplast reversion on soft-agar
+    hypertonic plates, while both local owners are LIQUID. The hypertonic owner additionally
+    contains leucine, glucose and phosphate relative to the protoplasting owner, but
+    the abstract does not establish their full formulas, preparation or separate experimental
+    roles. No agar dose or resolved solid variant is invented. Photomicrographs and
+    full article were not inspected; a browser challenge is not scientific evidence. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "Sucrose", "term": {"id": "CHEBI:17992", "label": "sucrose"}, "concentration":
+    {"value": "200.0", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Magnesium
+    chloride", "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"},
+    "concentration": {"value": "22.99", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[2].concentration", "chemical":
+    "Ammonium chloride", "term": {"id": "CHEBI:31206", "label": "ammonium chloride"},
+    "concentration": {"value": "18.7", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical":
+    "Potassium chloride", "term": {"id": "CHEBI:32588", "label": "potassium chloride"},
+    "concentration": {"value": "0.4695", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[4].concentration", "chemical":
+    "Tromethamine", "term": {"id": "CHEBI:9754", "label": "tris"}, "concentration":
+    {"value": "99.06", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[5].concentration", "chemical": "Sodium
+    sulfate", "term": {"id": "CHEBI:32149", "label": "sodium sulfate"}, "concentration":
+    {"value": "0.9311", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Sodium
+    chloride", "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "concentration":
+    {"value": "0.9925", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new certification of unchanged original amounts.
+    evidence_ids:
+    - paper-122
+- assessment_id: organism-007216
+  area: evidence
+  topic: Scientific names, actual ranks and roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007216
+  evidence_ids:
+  - paper-122
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Bacillus megaterium: Priestia megaterium, NCBITaxon:1404, actual rank
+    species; verified_species_synonym; protoplast-reversion organism, not demonstrated
+    growth on each local liquid owner. Bacillus megaterium KM Leu- (historical MediaDB
+    row): Priestia megaterium, NCBITaxon:1404, actual rank species; parent_rank_only;
+    species parent only; reported derivative not verified in accessible primary text
+    and bounded exact-name searches returned no node.Mapping limitations are explicit;
+    not certification of every exact strain or growth association.'
+- assessment_id: preservation-007216
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007216
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/notes and one history event added. Existing concentrations,
+    missing amounts, prior evidence and variant links preserved; no new growth, variants
+    or publication.
+- assessment_id: citation-007285
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007285
+  evidence_ids:
+  - paper-143
+  - archives
+  - readback
+  summary: Verified bibliography and attributable source archive; DOI/PMID equivalence
+    retained.
+- assessment_id: formulation-007285
+  area: evidence
+  topic: Recipe and assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007285
+  evidence_ids:
+  - paper-143
+  - claims
+  - excerpts
+  summary: 'Formulation_unresolved: The abstract distinguishes Thermococcus and Thermotoga
+    nitrogen/carbon requirements, inhibitory ammonium conditions, gas conditions,
+    and batch versus continuous experiments. It does not enumerate the 25 local components
+    or certify their chemical forms, amount conversions or the separate 0.5-g/L treatment.
+    The existing reciprocal ammonium-concentration variant links are preserved, not
+    newly endorsed by this paper. NCBI strain candidate 243274 (Thermotoga maritima
+    MSB8) explicitly lists DSM 3109 as a synonym, but that verified nomenclature alone
+    does not establish the primary study strain. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "Maltose", "term": {"id": "CHEBI:17306", "label": "maltose"}, "concentration":
+    {"value": "5.843", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Magnesium
+    chloride", "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"},
+    "concentration": {"value": "4.919", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[2].concentration", "chemical":
+    "Ammonium chloride", "term": {"id": "CHEBI:31206", "label": "ammonium chloride"},
+    "concentration": {"value": "18.7", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical":
+    "Vitamin B12", "term": {"id": "CHEBI:176843", "label": "vitamin B12"}, "concentration":
+    {"value": "7.378e-07", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[4].concentration", "chemical": "Folate",
+    "term": {"id": "CHEBI:27470", "label": "folic acid"}, "concentration": {"value":
+    "4.531e-05", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[5].concentration", "chemical": "Biotin", "term": {"id":
+    "CHEBI:15956", "label": "biotin"}, "concentration": {"value": "8.186e-05", "unit":
+    "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[6].concentration", "chemical": "Riboflavin", "term": {"id": "CHEBI:17015",
+    "label": "riboflavin"}, "concentration": {"value": "0.0001063", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[7].concentration",
+    "chemical": "Lipoate", "term": {"id": "CHEBI:16494", "label": "lipoic acid"},
+    "concentration": {"value": "0.0002423", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[8].concentration",
+    "chemical": "Thiamine HCl", "term": {"id": "CHEBI:49105", "label": "thiamine hydrochloride"},
+    "concentration": {"value": "0.0001482", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[9].concentration",
+    "chemical": "Pyridoxine HCl", "term": {"id": "CHEBI:30961", "label": "pyridoxine
+    hydrochloride"}, "concentration": {"value": "0.0004863", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[10].concentration",
+    "chemical": "Sodium chloride", "term": {"id": "CHEBI:26710", "label": "sodium
+    chloride"}, "concentration": {"value": "256.7", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[11].concentration",
+    "chemical": "Nicotinate", "term": {"id": "CHEBI:15940", "label": "nicotinic acid"},
+    "concentration": {"value": "0.0004061", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[12].concentration",
+    "chemical": "Calcium pantothenate", "term": {"id": "CHEBI:31345", "label": "Calcium
+    pantothenate"}, "concentration": {"value": "0.0001049", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[13].concentration",
+    "chemical": "Potassium iodide", "term": {"id": "CHEBI:8346", "label": "potassium
+    iodide"}, "concentration": {"value": "0.1205", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[14].concentration",
+    "chemical": "Strontium chloride", "term": {"id": "CHEBI:36383", "label": "strontium
+    dichloride"}, "concentration": {"value": "0.03751", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[15].concentration",
+    "chemical": "4-Aminobenzoate", "term": {"id": "CHEBI:17836", "label": "4-aminobenzoate"},
+    "concentration": {"value": "0.0003646", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[16].concentration",
+    "chemical": "Sodium bromide", "term": {"id": "CHEBI:63004", "label": "sodium bromide"},
+    "concentration": {"value": "0.486", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[17].concentration", "chemical":
+    "Boric acid", "term": {"id": "CHEBI:33118", "label": "boric acid"}, "concentration":
+    {"value": "0.3235", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[18].concentration", "chemical": "Calcium
+    chloride anhydrous", "term": {"id": "CHEBI:3312", "label": "calcium dichloride"},
+    "concentration": {"value": "0.5102", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[19].concentration", "chemical":
+    "Sodium sulfide", "term": {"id": "CHEBI:76208", "label": "sodium sulfide (anhydrous)"},
+    "concentration": {"value": "0.4164", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[20].concentration", "chemical":
+    "Resazurin", "term": {"id": "CHEBI:8806", "label": "Resazurin"}, "concentration":
+    {"value": "0.004363", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[21].concentration", "chemical": "Potassium
+    dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen
+    phosphate"}, "concentration": {"value": "0.8038", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[22].concentration",
+    "chemical": "Sodium tungstate", "term": {"id": "CHEBI:63940", "label": "sodium
+    tungstate"}, "concentration": {"value": "0.009095", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[23].concentration",
+    "chemical": "Potassium chloride", "term": {"id": "CHEBI:32588", "label": "potassium
+    chloride"}, "concentration": {"value": "4.695", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[24].concentration",
+    "chemical": "Sodium sulfate", "term": {"id": "CHEBI:32149", "label": "sodium sulfate"},
+    "concentration": {"value": "7.04", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new certification of unchanged original amounts.
+    evidence_ids:
+    - paper-143
+- assessment_id: organism-007285
+  area: evidence
+  topic: Scientific names, actual ranks and roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007285
+  evidence_ids:
+  - paper-143
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Thermococcus litoralis: Thermococcus litoralis, NCBITaxon:2265, actual
+    rank species; species_name; separate archaeal study organism; ammonium inhibition
+    and amino-acid use must not be transferred to Thermotoga. Thermotoga maritima:
+    Thermotoga maritima, NCBITaxon:2336, actual rank species; species_name; separate
+    bacterial study organism; maltose/ammonium and gas-condition results not a blanket
+    growth claim. Thermotoga maritima DSM 3109 (historical MediaDB row): Thermotoga
+    maritima, NCBITaxon:2336, actual rank species; parent_rank_only; species parent
+    for study-assignment purposes; the abstract does not name this strain.Mapping
+    limitations are explicit; not certification of every exact strain or growth association.'
+- assessment_id: preservation-007285
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007285
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/notes and one history event added. Existing concentrations,
+    missing amounts, prior evidence and variant links preserved; no new growth, variants
+    or publication.
+- assessment_id: citation-007286
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007286
+  evidence_ids:
+  - paper-143
+  - archives
+  - readback
+  summary: Verified bibliography and attributable source archive; DOI/PMID equivalence
+    retained.
+- assessment_id: formulation-007286
+  area: evidence
+  topic: Recipe and assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007286
+  evidence_ids:
+  - paper-143
+  - claims
+  - excerpts
+  summary: 'Formulation_unresolved: The abstract distinguishes Thermococcus and Thermotoga
+    nitrogen/carbon requirements, inhibitory ammonium conditions, gas conditions,
+    and batch versus continuous experiments. It does not enumerate the 25 local components
+    or certify their chemical forms, amount conversions or the separate 0.5-g/L treatment.
+    The existing reciprocal ammonium-concentration variant links are preserved, not
+    newly endorsed by this paper. NCBI strain candidate 243274 (Thermotoga maritima
+    MSB8) explicitly lists DSM 3109 as a synonym, but that verified nomenclature alone
+    does not establish the primary study strain. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "Riboflavin", "term": {"id": "CHEBI:17015", "label": "riboflavin"},
+    "concentration": {"value": "0.0001063", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[1].concentration",
+    "chemical": "Biotin", "term": {"id": "CHEBI:15956", "label": "biotin"}, "concentration":
+    {"value": "8.186e-05", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Nicotinate",
+    "term": {"id": "CHEBI:15940", "label": "nicotinic acid"}, "concentration": {"value":
+    "0.0004061", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[3].concentration", "chemical": "Vitamin B12", "term":
+    {"id": "CHEBI:176843", "label": "vitamin B12"}, "concentration": {"value": "7.378e-07",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[4].concentration", "chemical": "Folate", "term": {"id": "CHEBI:27470",
+    "label": "folic acid"}, "concentration": {"value": "4.531e-05", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[5].concentration",
+    "chemical": "Maltose", "term": {"id": "CHEBI:17306", "label": "maltose"}, "concentration":
+    {"value": "5.843", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Lipoate",
+    "term": {"id": "CHEBI:16494", "label": "lipoic acid"}, "concentration": {"value":
+    "0.0002423", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[7].concentration", "chemical": "4-Aminobenzoate",
+    "term": {"id": "CHEBI:17836", "label": "4-aminobenzoate"}, "concentration": {"value":
+    "0.0003646", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[8].concentration", "chemical": "Magnesium chloride",
+    "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "concentration":
+    {"value": "4.919", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[9].concentration", "chemical": "Resazurin",
+    "term": {"id": "CHEBI:8806", "label": "Resazurin"}, "concentration": {"value":
+    "0.004363", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[10].concentration", "chemical": "Potassium iodide",
+    "term": {"id": "CHEBI:8346", "label": "potassium iodide"}, "concentration": {"value":
+    "0.1205", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[11].concentration", "chemical": "Potassium dibasic
+    phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"},
+    "concentration": {"value": "0.8038", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[12].concentration", "chemical":
+    "Boric acid", "term": {"id": "CHEBI:33118", "label": "boric acid"}, "concentration":
+    {"value": "0.3235", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[13].concentration", "chemical": "Thiamine
+    HCl", "term": {"id": "CHEBI:49105", "label": "thiamine hydrochloride"}, "concentration":
+    {"value": "0.0001482", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[14].concentration", "chemical": "Pyridoxine
+    HCl", "term": {"id": "CHEBI:30961", "label": "pyridoxine hydrochloride"}, "concentration":
+    {"value": "0.0004863", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[15].concentration", "chemical": "Sodium
+    sulfide", "term": {"id": "CHEBI:76208", "label": "sodium sulfide (anhydrous)"},
+    "concentration": {"value": "0.4164", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[16].concentration", "chemical":
+    "Sodium tungstate", "term": {"id": "CHEBI:63940", "label": "sodium tungstate"},
+    "concentration": {"value": "0.009095", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[17].concentration", "chemical":
+    "Sodium sulfate", "term": {"id": "CHEBI:32149", "label": "sodium sulfate"}, "concentration":
+    {"value": "7.04", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[18].concentration", "chemical": "Sodium
+    chloride", "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "concentration":
+    {"value": "256.7", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[19].concentration", "chemical": "Calcium
+    chloride anhydrous", "term": {"id": "CHEBI:3312", "label": "calcium dichloride"},
+    "concentration": {"value": "0.5102", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[20].concentration", "chemical":
+    "Sodium bromide", "term": {"id": "CHEBI:63004", "label": "sodium bromide"}, "concentration":
+    {"value": "0.486", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[21].concentration", "chemical": "Ammonium
+    chloride", "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "concentration":
+    {"value": "9.348", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[22].concentration", "chemical": "Strontium
+    chloride", "term": {"id": "CHEBI:36383", "label": "strontium dichloride"}, "concentration":
+    {"value": "0.03751", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[23].concentration", "chemical": "Potassium
+    chloride", "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "concentration":
+    {"value": "4.695", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[24].concentration", "chemical": "Calcium
+    pantothenate", "term": {"id": "CHEBI:31345", "label": "Calcium pantothenate"},
+    "concentration": {"value": "0.0001049", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new certification of unchanged original amounts.
+    evidence_ids:
+    - paper-143
+- assessment_id: organism-007286
+  area: evidence
+  topic: Scientific names, actual ranks and roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007286
+  evidence_ids:
+  - paper-143
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Thermococcus litoralis: Thermococcus litoralis, NCBITaxon:2265, actual
+    rank species; species_name; separate archaeal study organism; ammonium inhibition
+    and amino-acid use must not be transferred to Thermotoga. Thermotoga maritima:
+    Thermotoga maritima, NCBITaxon:2336, actual rank species; species_name; separate
+    bacterial study organism; maltose/ammonium and gas-condition results not a blanket
+    growth claim. Thermotoga maritima DSM 3109 (historical MediaDB row): Thermotoga
+    maritima, NCBITaxon:2336, actual rank species; parent_rank_only; species parent
+    for study-assignment purposes; the abstract does not name this strain.Mapping
+    limitations are explicit; not certification of every exact strain or growth association.'
+- assessment_id: preservation-007286
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007286
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/notes and one history event added. Existing concentrations,
+    missing amounts, prior evidence and variant links preserved; no new growth, variants
+    or publication.
+- assessment_id: citation-007214
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007214
+  evidence_ids:
+  - paper-123
+  - archives
+  - readback
+  summary: Verified bibliography and attributable source archive; DOI/PMID equivalence
+    retained.
+- assessment_id: formulation-007214
+  area: evidence
+  topic: Recipe and assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007214
+  evidence_ids:
+  - paper-123
+  - claims
+  - excerpts
+  summary: 'Formulation_unresolved: The abstract reports supplement effects and 2-keto-L-gulonic-acid
+    production in a context involving two organisms, not independent growth of each
+    on this local recipe. Its highlighted serine, glycine, threonine, proline, nicotinic-acid
+    and biotin supplements are not entries in this 31-ingredient local base; the accessible
+    text does not identify Synthetic Medium C or reconcile that base with the optimized
+    treatment. No supplement amounts, production yield or combined biomass measurement
+    are imported as canonical recipe values or organism-specific growth metrics. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "Valine", "term": {"id": "CHEBI:16414", "label": "L-valine"}, "concentration":
+    {"value": "0.8536", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Potassium
+    dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen
+    phosphate"}, "concentration": {"value": "8.441", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[2].concentration",
+    "chemical": "Magnesium chloride", "term": {"id": "CHEBI:86345", "label": "magnesium
+    dichloride hexahydrate"}, "concentration": {"value": "3.163", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[3].concentration",
+    "chemical": "L-Glutamate", "term": {"id": "CHEBI:16015", "label": "L-glutamic
+    acid"}, "concentration": {"value": "1.767", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[4].concentration",
+    "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium
+    sulfate"}, "concentration": {"value": "0.4057", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[5].concentration",
+    "chemical": "Folate", "term": {"id": "CHEBI:27470", "label": "folic acid"}, "concentration":
+    {"value": "2.266e-06", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Leucine",
+    "term": {"id": "CHEBI:15603", "label": "L-leucine"}, "concentration": {"value":
+    "1.22", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[7].concentration", "chemical": "Urea", "term": {"id":
+    "CHEBI:16199", "label": "urea"}, "concentration": {"value": "199.8", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[8].concentration",
+    "chemical": "L-Sorbose", "term": null, "concentration": {"value": "444.0", "unit":
+    "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[9].concentration", "chemical": "Pyridoxine", "term": {"id": "CHEBI:16709",
+    "label": "pyridoxine"}, "concentration": {"value": "0.0007093", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[10].concentration",
+    "chemical": "DL-methionine", "term": {"id": "CHEBI:16811", "label": "methionine"},
+    "concentration": {"value": "0.2681", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[11].concentration", "chemical":
+    "Isoleucine", "term": {"id": "CHEBI:17191", "label": "L-isoleucine"}, "concentration":
+    {"value": "0.4574", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[12].concentration", "chemical": "Histidine",
+    "term": {"id": "CHEBI:27570", "label": "histidine"}, "concentration": {"value":
+    "0.3222", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[13].concentration", "chemical": "Thiamine", "term":
+    {"id": "CHEBI:18385", "label": "thiamine(1+)"}, "concentration": {"value": "1.507e-05",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[14].concentration", "chemical": "Calcium chloride anhydrous", "term":
+    {"id": "CHEBI:3312", "label": "calcium dichloride"}, "concentration": {"value":
+    "0.1567", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[15].concentration", "chemical": "Cysteine", "term":
+    {"id": "CHEBI:15356", "label": "cysteine"}, "concentration": {"value": "0.08254",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[16].concentration", "chemical": "Potassium chloride", "term": {"id":
+    "CHEBI:32588", "label": "potassium chloride"}, "concentration": {"value": "5.937",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[17].concentration", "chemical": "Alanine", "term": {"id": "CHEBI:16977",
+    "label": "L-alanine"}, "concentration": {"value": "2.133", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[18].concentration",
+    "chemical": "Phenylalanine", "term": {"id": "CHEBI:17295", "label": "L-phenylalanine"},
+    "concentration": {"value": "0.3632", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[19].concentration", "chemical":
+    "Arginine", "term": {"id": "CHEBI:29016", "label": "arginine"}, "concentration":
+    {"value": "0.287", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[20].concentration", "chemical": "Cupric
+    chloride", "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"}, "concentration":
+    {"value": "0.0004463", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[21].concentration", "chemical": "Iron(III)
+    chloride", "term": null, "concentration": {"value": "0.0284", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[22].concentration",
+    "chemical": "DL-Tyrosine", "term": {"id": "CHEBI:18186", "label": "tyrosine"},
+    "concentration": {"value": "0.1656", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[23].concentration", "chemical":
+    "Lysine", "term": {"id": "CHEBI:25094", "label": "lysine"}, "concentration": {"value":
+    "0.342", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[24].concentration", "chemical": "Zinc Chloride", "term":
+    {"id": "CHEBI:49976", "label": "zinc dichloride"}, "concentration": {"value":
+    "0.01284", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[25].concentration", "chemical": "Riboflavin", "term":
+    {"id": "CHEBI:17015", "label": "riboflavin"}, "concentration": {"value": "7.971e-05",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[26].concentration", "chemical": "Pantothenate", "term": {"id": "CHEBI:16454",
+    "label": "pantothenate"}, "concentration": {"value": "0.0005246", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[27].concentration",
+    "chemical": "Aspartate", "term": {"id": "CHEBI:29995", "label": "aspartate(2-)"},
+    "concentration": {"value": "0.7513", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[28].concentration", "chemical":
+    "Manganese chloride", "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"},
+    "concentration": {"value": "0.006755", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[29].concentration", "chemical":
+    "Vitamin B12", "term": {"id": "CHEBI:176843", "label": "vitamin B12"}, "concentration":
+    {"value": "4.427e-06", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[30].concentration", "chemical": "Sodium
+    chloride", "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "concentration":
+    {"value": "0.7651", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new certification of unchanged original amounts.
+    evidence_ids:
+    - paper-123
+- assessment_id: organism-007214
+  area: evidence
+  topic: Scientific names, actual ranks and roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007214
+  evidence_ids:
+  - paper-123
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Ketogulonicigenium vulgare: Ketogulonicigenium vulgare, NCBITaxon:92945,
+    actual rank species; species_name; production-associated organism; strain and
+    individual-versus-associated culture outcome unresolved. Bacillus megaterium:
+    Priestia megaterium, NCBITaxon:1404, actual rank species; verified_species_synonym;
+    production-associated organism; strain and independent growth not established.Mapping
+    limitations are explicit; not certification of every exact strain or growth association.'
+- assessment_id: preservation-007214
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007214
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/notes and one history event added. Existing concentrations,
+    missing amounts, prior evidence and variant links preserved; no new growth, variants
+    or publication.
+- assessment_id: citation-007313
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007313
+  evidence_ids:
+  - paper-126
+  - archives
+  - readback
+  summary: Verified bibliography and attributable source archive; DOI/PMID equivalence
+    retained.
+- assessment_id: formulation-007313
+  area: evidence
+  topic: Recipe and assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007313
+  evidence_ids:
+  - paper-126
+  - claims
+  - excerpts
+  summary: 'Formulation_unresolved: The archived abstract describes glucose-limited
+    continuous cultivation and oxygen-dependent metabolism, but does not enumerate
+    the 30 local components. Earlier web inspection distinguished supplemented MS10
+    culture, altered preculture and analytical reagents; a subsequent access attempt
+    returned a challenge and no verified full local archive was obtained. The inherited
+    MS10 formula, chemical forms and phosphate/preculture assignment remain unresolved.
+    Existing Nordkvist 2003 batch variants are not automatically Jensen 2001 continuous-cultivation
+    variants. Do not substitute a modern Lactococcus lactis species node for the verified
+    Lactococcus cremoris lineage. Enzyme responses and carbon-flow percentages are
+    not parent-medium growth rates. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "Tryptophan", "term": {"id": "CHEBI:27897", "label": "tryptophan"},
+    "concentration": {"value": "0.2448", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical":
+    "Manganese chloride", "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"},
+    "concentration": {"value": "9.933e-05", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[2].concentration",
+    "chemical": "Glucose", "term": {"id": "CHEBI:17234", "label": "glucose"}, "concentration":
+    {"value": "16.65", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[3].concentration", "chemical": "Glycine",
+    "term": {"id": "CHEBI:15428", "label": "glycine"}, "concentration": {"value":
+    "2.265", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[4].concentration", "chemical": "Nicotinate", "term":
+    {"id": "CHEBI:15940", "label": "nicotinic acid"}, "concentration": {"value": "0.008123",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[5].concentration", "chemical": "Cysteine", "term": {"id": "CHEBI:15356",
+    "label": "cysteine"}, "concentration": {"value": "1.403", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[6].concentration",
+    "chemical": "Glutamine", "term": null, "concentration": {"value": "3.49", "unit":
+    "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[7].concentration", "chemical": "Biotin", "term": {"id": "CHEBI:15956",
+    "label": "biotin"}, "concentration": {"value": "0.04093", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[8].concentration",
+    "chemical": "DL-Serine", "term": null, "concentration": {"value": "3.235", "unit":
+    "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[9].concentration", "chemical": "Pyridoxamine", "term": {"id": "CHEBI:16410",
+    "label": "pyridoxamine"}, "concentration": {"value": "0.02973", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[10].concentration",
+    "chemical": "Histidine", "term": {"id": "CHEBI:27570", "label": "histidine"},
+    "concentration": {"value": "0.7089", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[11].concentration", "chemical":
+    "Calcium pantothenate", "term": {"id": "CHEBI:31345", "label": "Calcium pantothenate"},
+    "concentration": {"value": "0.002099", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[12].concentration", "chemical":
+    "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium
+    dihydrogen phosphate"}, "concentration": {"value": "66.13", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[13].concentration",
+    "chemical": "Threonine", "term": {"id": "CHEBI:26986", "label": "threonine"},
+    "concentration": {"value": "1.931", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[14].concentration", "chemical":
+    "Lysine-HCl", "term": null, "concentration": {"value": "1.916", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[15].concentration",
+    "chemical": "DL-methionine", "term": {"id": "CHEBI:16811", "label": "methionine"},
+    "concentration": {"value": "0.8042", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[16].concentration", "chemical":
+    "Thiamine", "term": {"id": "CHEBI:18385", "label": "thiamine(1+)"}, "concentration":
+    {"value": "0.003769", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[17].concentration", "chemical": "Lipoate",
+    "term": {"id": "CHEBI:16494", "label": "lipoic acid"}, "concentration": {"value":
+    "0.01212", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[18].concentration", "chemical": "Leucine", "term":
+    {"id": "CHEBI:15603", "label": "L-leucine"}, "concentration": {"value": "3.583",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[19].concentration", "chemical": "Proline", "term": {"id": "CHEBI:26271",
+    "label": "proline"}, "concentration": {"value": "5.906", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[20].concentration",
+    "chemical": "Isoleucine", "term": {"id": "CHEBI:17191", "label": "L-isoleucine"},
+    "concentration": {"value": "1.525", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[21].concentration", "chemical":
+    "DL-Tyrosine", "term": {"id": "CHEBI:18186", "label": "tyrosine"}, "concentration":
+    {"value": "1.601", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[22].concentration", "chemical": "Alanine",
+    "term": {"id": "CHEBI:16977", "label": "L-alanine"}, "concentration": {"value":
+    "2.694", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[23].concentration", "chemical": "Arginine", "term":
+    {"id": "CHEBI:29016", "label": "arginine"}, "concentration": {"value": "0.6889",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[24].concentration", "chemical": "Phenylalanine", "term": {"id": "CHEBI:17295",
+    "label": "L-phenylalanine"}, "concentration": {"value": "1.695", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[25].concentration",
+    "chemical": "Asparagine", "term": {"id": "CHEBI:22653", "label": "asparagine"},
+    "concentration": {"value": "2.573", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[26].concentration", "chemical":
+    "Valine", "term": {"id": "CHEBI:16414", "label": "L-valine"}, "concentration":
+    {"value": "2.817", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[27].concentration", "chemical": "Ammonium
+    sulfate", "term": {"id": "CHEBI:62946", "label": "ammonium sulfate"}, "concentration":
+    {"value": "1.362", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[28].concentration", "chemical": "Magnesium
+    chloride", "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"},
+    "concentration": {"value": "0.9838", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[29].concentration", "chemical":
+    "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium
+    hydrogen phosphate"}, "concentration": {"value": "42.92", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new certification of unchanged original amounts.
+    evidence_ids:
+    - paper-126
+- assessment_id: organism-007313
+  area: evidence
+  topic: Scientific names, actual ranks and roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007313
+  evidence_ids:
+  - paper-126
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Lactococcus lactis subsp. cremoris MG1363: Lactococcus cremoris subsp.
+    cremoris MG1363, NCBITaxon:416870, actual rank strain; verified_strain_synonym;
+    continuous-cultivation study strain; exact local formula unresolved.Mapping limitations
+    are explicit; not certification of every exact strain or growth association.'
+- assessment_id: preservation-007313
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007313
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/notes and one history event added. Existing concentrations,
+    missing amounts, prior evidence and variant links preserved; no new growth, variants
+    or publication.
+- assessment_id: citation-007213
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007213
+  evidence_ids:
+  - paper-132
+  - archives
+  - readback
+  summary: Verified bibliography and attributable source archive; DOI/PMID equivalence
+    retained.
+- assessment_id: formulation-007213
+  area: evidence
+  topic: Recipe and assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007213
+  evidence_ids:
+  - paper-132
+  - claims
+  - excerpts
+  summary: 'Formulation_unresolved: The abstract presents a metabolic reconstruction
+    and dynamic simulations using multiple carbon/energy sources. Predictions are
+    not measured growth on this 30-component local recipe. The complete simulation
+    inputs, physical experiments and source formula were not inspected; local salt/amino-acid/vitamin
+    values and chemical forms are not newly certified. NCBI places R1 below the strain-rank
+    NRC-34001 node; the actual returned rank is retained. No simulation-derived positive
+    growth edge is added. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "Folate", "term": {"id": "CHEBI:27470", "label": "folic acid"}, "concentration":
+    {"value": "0.0115", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Biotin",
+    "term": {"id": "CHEBI:15956", "label": "biotin"}, "concentration": {"value": "0.0021",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[2].concentration", "chemical": "Thiamine", "term": {"id": "CHEBI:18385",
+    "label": "thiamine(1+)"}, "concentration": {"value": "0.0165", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[3].concentration",
+    "chemical": "Sodium chloride", "term": {"id": "CHEBI:26710", "label": "sodium
+    chloride"}, "concentration": {"value": "4000.0", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[4].concentration",
+    "chemical": "L-Tyrosine", "term": {"id": "CHEBI:17895", "label": "L-tyrosine"},
+    "concentration": {"value": "1.5", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[5].concentration", "chemical":
+    "L-Threonine", "term": {"id": "CHEBI:16857", "label": "L-threonine"}, "concentration":
+    {"value": "8.3", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[6].concentration", "chemical": "L-Lysine", "term":
+    {"id": "CHEBI:18019", "label": "L-lysine"}, "concentration": {"value": "2.7",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[7].concentration", "chemical": "L-Valine", "term": {"id": "CHEBI:16414",
+    "label": "L-valine"}, "concentration": {"value": "1.0", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[8].concentration",
+    "chemical": "L-Serine", "term": {"id": "CHEBI:17115", "label": "L-serine"}, "concentration":
+    {"value": "12.6", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[9].concentration", "chemical": "L-Phenylalanine",
+    "term": {"id": "CHEBI:17295", "label": "L-phenylalanine"}, "concentration": {"value":
+    "0.8", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[10].concentration", "chemical": "Potassium nitrate",
+    "term": {"id": "CHEBI:63043", "label": "potassium nitrate"}, "concentration":
+    {"value": "1.0", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[11].concentration", "chemical": "Potassium chloride",
+    "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "concentration":
+    {"value": "27.0", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[12].concentration", "chemical": "Manganese
+    chloride", "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"}, "concentration":
+    {"value": "0.0018", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[13].concentration", "chemical": "Zinc
+    sulfate", "term": {"id": "CHEBI:35176", "label": "zinc sulfate"}, "concentration":
+    {"value": "0.0015", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[14].concentration", "chemical": "Ferrous
+    sulfate", "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"},
+    "concentration": {"value": "0.0116", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[15].concentration", "chemical":
+    "Cupric sulfate", "term": {"id": "CHEBI:23414", "label": "copper(II) sulfate"},
+    "concentration": {"value": "0.0002", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[16].concentration", "chemical":
+    "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium
+    hydrogen phosphate"}, "concentration": {"value": "0.42", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[17].concentration",
+    "chemical": "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label":
+    "potassium dihydrogen phosphate"}, "concentration": {"value": "0.58", "unit":
+    "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[18].concentration", "chemical": "Magnesium sulfate", "term": {"id":
+    "CHEBI:32599", "label": "magnesium sulfate"}, "concentration": {"value": "81.0",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[19].concentration", "chemical": "Sodium citrate", "term": {"id":
+    "CHEBI:53258", "label": "sodium citrate"}, "concentration": {"value": "1.7", "unit":
+    "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[20].concentration", "chemical": "L-Alanine", "term": {"id": "CHEBI:16977",
+    "label": "L-alanine"}, "concentration": {"value": "7.4", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[21].concentration",
+    "chemical": "Glycine", "term": {"id": "CHEBI:15428", "label": "glycine"}, "concentration":
+    {"value": "2.9", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[22].concentration", "chemical": "L-Leucine", "term":
+    {"id": "CHEBI:15603", "label": "L-leucine"}, "concentration": {"value": "10.0",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[23].concentration", "chemical": "L-Glutamate", "term": {"id": "CHEBI:16015",
+    "label": "L-glutamic acid"}, "concentration": {"value": "16.9", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[24].concentration",
+    "chemical": "L-Proline", "term": {"id": "CHEBI:17203", "label": "L-proline"},
+    "concentration": {"value": "2.4", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[25].concentration", "chemical":
+    "L-Methionine", "term": {"id": "CHEBI:16643", "label": "L-methionine"}, "concentration":
+    {"value": "2.3", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[26].concentration", "chemical": "L-Isoleucine", "term":
+    {"id": "CHEBI:17191", "label": "L-isoleucine"}, "concentration": {"value": "3.4",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[27].concentration", "chemical": "L-Arginine", "term": {"id": "CHEBI:16467",
+    "label": "L-arginine"}, "concentration": {"value": "3.5", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[28].concentration",
+    "chemical": "L-Aspartate", "term": {"id": "CHEBI:29991", "label": "L-aspartate(1-)"},
+    "concentration": {"value": "6.2", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[29].concentration", "chemical":
+    "Sodium molybdate", "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"},
+    "concentration": {"value": "0.0001", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new certification of unchanged original amounts.
+    evidence_ids:
+    - paper-132
+- assessment_id: organism-007213
+  area: evidence
+  topic: Scientific names, actual ranks and roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007213
+  evidence_ids:
+  - paper-132
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Halobacterium salinarum R-1: Halobacterium salinarum R1, NCBITaxon:478009,
+    actual rank no rank; designation_match_R1_at_actual_no_rank; model organism named
+    by title; R1 node is no rank, not strain rank.Mapping limitations are explicit;
+    not certification of every exact strain or growth association.'
+- assessment_id: preservation-007213
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007213
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/notes and one history event added. Existing concentrations,
+    missing amounts, prior evidence and variant links preserved; no new growth, variants
+    or publication.
+- assessment_id: citation-007379
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007379
+  evidence_ids:
+  - paper-144
+  - archives
+  - readback
+  summary: Verified bibliography and attributable source archive; DOI/PMID equivalence
+    retained.
+- assessment_id: formulation-007379
+  area: evidence
+  topic: Recipe and assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007379
+  evidence_ids:
+  - paper-144
+  - claims
+  - excerpts
+  summary: 'Formulation_unresolved: The abstract supports serC cloning and complementation,
+    not all twelve HS-medium amounts or an exact cultivation variant. The similar
+    TOGO HS owner contains unresolved base/water placeholders and a different sodium-sulfide
+    hydrate; matching methanol/acetate names does not justify merging or evidence
+    transfer. The historical C2A association is not promoted into a paper-backed cultivation
+    claim. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "Acetate", "term": {"id": "CHEBI:30089", "label": "acetate"}, "concentration":
+    {"value": "40.0", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Methanol",
+    "term": {"id": "CHEBI:17790", "label": "methanol"}, "concentration": {"value":
+    "125.0", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[2].concentration", "chemical": "Sodium chloride",
+    "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "concentration": {"value":
+    "400.0", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[3].concentration", "chemical": "Resazurin", "term":
+    {"id": "CHEBI:8806", "label": "Resazurin"}, "concentration": {"value": "0.004",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[4].concentration", "chemical": "Calcium chloride anhydrous", "term":
+    {"id": "CHEBI:3312", "label": "calcium dichloride"}, "concentration": {"value":
+    "2.0", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[5].concentration", "chemical": "Sodium sulfide", "term":
+    {"id": "CHEBI:76208", "label": "sodium sulfide (anhydrous)"}, "concentration":
+    {"value": "0.4", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[6].concentration", "chemical": "Cysteine-HCl", "term":
+    {"id": "CHEBI:91247", "label": "L-cysteine hydrochloride"}, "concentration": {"value":
+    "2.8", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[7].concentration", "chemical": "Potassium dihydrogen
+    phosphate", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"},
+    "concentration": {"value": "5.0", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[8].concentration", "chemical":
+    "Potassium chloride", "term": {"id": "CHEBI:32588", "label": "potassium chloride"},
+    "concentration": {"value": "13.0", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[9].concentration", "chemical":
+    "Ammonium chloride", "term": {"id": "CHEBI:31206", "label": "ammonium chloride"},
+    "concentration": {"value": "19.0", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[10].concentration", "chemical":
+    "Sodium bicarbonate", "term": {"id": "CHEBI:32139", "label": "sodium hydrogencarbonate"},
+    "concentration": {"value": "45.0", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[11].concentration", "chemical":
+    "Magnesium chloride", "term": {"id": "CHEBI:86345", "label": "magnesium dichloride
+    hexahydrate"}, "concentration": {"value": "54.0", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new certification of unchanged original amounts.
+    evidence_ids:
+    - paper-144
+- assessment_id: organism-007379
+  area: evidence
+  topic: Scientific names, actual ranks and roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007379
+  evidence_ids:
+  - paper-144
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Methanosarcina barkeri Fusaro: Methanosarcina barkeri str. Fusaro, NCBITaxon:269797,
+    actual rank strain; verified_strain_designation; gene-source study organism named
+    in title; local recipe assignment unresolved. Escherichia coli serC mutant and
+    hosts carrying the cloned gene: Escherichia coli, NCBITaxon:562, actual rank species;
+    parent_rank_only; species parent for distinct complementation hosts; exact derivatives
+    unresolved; not HS-medium growth targets. Methanosarcina acetivorans C2A (historical
+    MediaDB row): Methanosarcina acetivorans C2A, NCBITaxon:188937, actual rank strain;
+    historical_strain_name_only; verified taxon identity for the database label, but
+    presence and role in this primary study are unverified.Mapping limitations are
+    explicit; not certification of every exact strain or growth association.'
+- assessment_id: preservation-007379
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007379
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/notes and one history event added. Existing concentrations,
+    missing amounts, prior evidence and variant links preserved; no new growth, variants
+    or publication.
+- assessment_id: citation-007381
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007381
+  evidence_ids:
+  - paper-147
+  - body-147
+  - archives
+  - readback
+  summary: Verified bibliography and attributable source archive; DOI/PMID equivalence
+    retained.
+- assessment_id: formulation-007381
+  area: evidence
+  topic: Recipe and assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007381
+  evidence_ids:
+  - paper-147
+  - body-147
+  - claims
+  - excerpts
+  summary: 'Formulation_unresolved: Selected full-HTML methods, Table 1 and results
+    distinguish McNA from enriched McCV, gas-fed from formate experiments, growth
+    tests from biomass preparation, and resting-cell/enzyme buffers from culture media.
+    The acetate addition is explicitly described, but the complete inherited McN base
+    (Whitman 1986, reference 32) remains unavailable beyond verified metadata. Consequently
+    the local 27-component expansion, chemical forms, classification and generic preparation
+    are not fully reconciled; no resolved variant or parent growth edge is assigned.
+    Their distinct deletion genotypes and positive, impaired or negative outcomes
+    must remain separately scoped; no wild-type result is inherited by a mutant. Enzyme
+    activity and substrate kinetics are not growth rates or recipe concentrations.
+    Base DOI=10.1016/S0723-2020(86)80012-1; metadata-only archive=references_cache/papers/crossref/mcn-base-whitman-1986-20261013.json
+    and .md, not an inspected base formula. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "Nitrilotriacetic acid", "term": {"id": "CHEBI:44557", "label": "nitrilotriacetic
+    acid"}, "concentration": {"value": "0.07848", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[1].concentration",
+    "chemical": "Magnesium chloride", "term": {"id": "CHEBI:86345", "label": "magnesium
+    dichloride hexahydrate"}, "concentration": {"value": "13.53", "unit": "MILLIMOLAR"},
+    "disposition": "preserved, not newly certified"}, {"field_path": "ingredients[2].concentration",
+    "chemical": "Pentanoate", "term": null, "concentration": {"value": "0.04896",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[3].concentration", "chemical": "2-Mercaptoethanesulfonate", "term":
+    {"id": "CHEBI:17905", "label": "coenzyme M"}, "concentration": {"value": "7.032e-06",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[4].concentration", "chemical": "Sodium bicarbonate", "term": {"id":
+    "CHEBI:32139", "label": "sodium hydrogencarbonate"}, "concentration": {"value":
+    "59.52", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[5].concentration", "chemical": "Calcium chloride anhydrous",
+    "term": {"id": "CHEBI:3312", "label": "calcium dichloride"}, "concentration":
+    {"value": "1.085", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[6].concentration", "chemical": "2-Methylpropanoate",
+    "term": null, "concentration": {"value": "0.05675", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[7].concentration",
+    "chemical": "Resazurin", "term": {"id": "CHEBI:8806", "label": "Resazurin"}, "concentration":
+    {"value": "0.0004363", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[8].concentration", "chemical": "Potassium
+    dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen
+    phosphate"}, "concentration": {"value": "0.8038", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[9].concentration",
+    "chemical": "Sodium sulfide", "term": {"id": "CHEBI:76208", "label": "sodium sulfide
+    (anhydrous)"}, "concentration": {"value": "2.073", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}, {"field_path": "ingredients[10].concentration",
+    "chemical": "Ferrous ammonium sulfate", "term": null, "concentration": {"value":
+    "0.005355", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[11].concentration", "chemical": "Cysteine-HCl", "term":
+    {"id": "CHEBI:91247", "label": "L-cysteine hydrochloride"}, "concentration": {"value":
+    "3.172", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly certified"},
+    {"field_path": "ingredients[12].concentration", "chemical": "Cupric sulfate",
+    "term": {"id": "CHEBI:23414", "label": "copper(II) sulfate"}, "concentration":
+    {"value": "0.0004005", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[13].concentration", "chemical": "Nickel
+    chloride", "term": {"id": "CHEBI:34887", "label": "nickel dichloride"}, "concentration":
+    {"value": "0.001052", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[14].concentration", "chemical": "Ammonium
+    chloride", "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "concentration":
+    {"value": "9.348", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[15].concentration", "chemical": "Sodium
+    chloride", "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "concentration":
+    {"value": "376.0", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[16].concentration", "chemical": "Sodium
+    molybdate", "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"},
+    "concentration": {"value": "0.004133", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[17].concentration", "chemical":
+    "Cobalt chloride", "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"},
+    "concentration": {"value": "0.004203", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[18].concentration", "chemical":
+    "Potassium chloride", "term": {"id": "CHEBI:32588", "label": "potassium chloride"},
+    "concentration": {"value": "4.493", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[19].concentration", "chemical":
+    "Acetate", "term": {"id": "CHEBI:30089", "label": "acetate"}, "concentration":
+    {"value": "10.0", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[20].concentration", "chemical": "Zinc
+    sulfate", "term": {"id": "CHEBI:35176", "label": "zinc sulfate"}, "concentration":
+    {"value": "0.003478", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[21].concentration", "chemical": "Sodium
+    tungstate", "term": {"id": "CHEBI:63940", "label": "sodium tungstate"}, "concentration":
+    {"value": "0.003032", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[22].concentration", "chemical": "Sodium
+    selenite", "term": {"id": "CHEBI:48843", "label": "disodium selenite"}, "concentration":
+    {"value": "0.01156", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[23].concentration", "chemical": "Magnesium
+    sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium sulfate"}, "concentration":
+    {"value": "14.0", "unit": "MILLIMOLAR"}, "disposition": "preserved, not newly
+    certified"}, {"field_path": "ingredients[24].concentration", "chemical": "Manganese
+    sulfate", "term": {"id": "CHEBI:86364", "label": "manganese(II) sulfate monohydrate"},
+    "concentration": {"value": "0.005347", "unit": "MILLIMOLAR"}, "disposition": "preserved,
+    not newly certified"}, {"field_path": "ingredients[25].concentration", "chemical":
+    "2-methylbutanoic acid", "term": null, "concentration": {"value": "0.04896", "unit":
+    "MILLIMOLAR"}, "disposition": "preserved, not newly certified"}, {"field_path":
+    "ingredients[26].concentration", "chemical": "3-Methylbutanoic acid", "term":
+    null, "concentration": {"value": "0.04896", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved, not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new certification of unchanged original amounts.
+    evidence_ids:
+    - paper-147
+    - body-147
+- assessment_id: organism-007381
+  area: evidence
+  topic: Scientific names, actual ranks and roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007381
+  evidence_ids:
+  - paper-147
+  - body-147
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Methanococcus maripaludis S2: Methanococcus maripaludis S2, NCBITaxon:267377,
+    actual rank strain; exact_strain; wild-type reference, kept distinct from mutant
+    states and assay-specific outcomes. M. maripaludis MM707, MM708, MM709, MM1145,
+    MM1183, MM1184, MM1097 and MM1020: Methanococcus maripaludis, NCBITaxon:39152,
+    actual rank species; parent_rank_only; species parent for eight separate Table
+    1 derivatives; bounded exact-name queries yielded no node, not proof of absence.Mapping
+    limitations are explicit; not certification of every exact strain or growth association.'
+- assessment_id: preservation-007381
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007381
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/notes and one history event added. Existing concentrations,
+    missing amounts, prior evidence and variant links preserved; no new growth, variants
+    or publication.
+findings:
+- finding_id: formulation-99
+  issue_key: physiology-study-citations-formulation-99
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact study-to-local-recipe assignment remains unresolved: source 99'
+  target_ids:
+  - CultureMech:007188
+  - CultureMech:007189
+  field_paths:
+  - ingredients
+  - references
+  description: 'Formulation_unresolved: The abstract separates model-predicted requirements,
+    physical omission experiments and an optimal CDM, but does not enumerate either
+    local formulation. The publisher page is a subscription preview, not full methods.
+    Missing local amino-acid/vitamin amounts remain unavailable; no withdrawn VARIABLE
+    defaults are restored. NCBI strain candidate 221988 is [Mannheimia] succiniciproducens
+    MBEL55E, not an independently established identity for the historical MMBEL55E
+    string. Omission-specific no-growth observations are not a universal negative
+    or positive outcome for this complete owner. '
+  evidence_ids:
+  - paper-99
+  - claims
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/song_cdm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/song_optimal_cdm.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-122
+  issue_key: physiology-study-citations-formulation-122
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact study-to-local-recipe assignment remains unresolved: source 122'
+  target_ids:
+  - CultureMech:007215
+  - CultureMech:007216
+  field_paths:
+  - ingredients
+  - references
+  description: 'Formulation_unresolved: The abstract reports protoplast reversion
+    on soft-agar hypertonic plates, while both local owners are LIQUID. The hypertonic
+    owner additionally contains leucine, glucose and phosphate relative to the protoplasting
+    owner, but the abstract does not establish their full formulas, preparation or
+    separate experimental roles. No agar dose or resolved solid variant is invented.
+    Photomicrographs and full article were not inspected; a browser challenge is not
+    scientific evidence. '
+  evidence_ids:
+  - paper-122
+  - claims
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/hypertonic_medium.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/protoplasting_medium.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-143
+  issue_key: physiology-study-citations-formulation-143
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact study-to-local-recipe assignment remains unresolved: source 143'
+  target_ids:
+  - CultureMech:007285
+  - CultureMech:007286
+  field_paths:
+  - ingredients
+  - references
+  description: 'Formulation_unresolved: The abstract distinguishes Thermococcus and
+    Thermotoga nitrogen/carbon requirements, inhibitory ammonium conditions, gas conditions,
+    and batch versus continuous experiments. It does not enumerate the 25 local components
+    or certify their chemical forms, amount conversions or the separate 0.5-g/L treatment.
+    The existing reciprocal ammonium-concentration variant links are preserved, not
+    newly endorsed by this paper. NCBI strain candidate 243274 (Thermotoga maritima
+    MSB8) explicitly lists DSM 3109 as a synonym, but that verified nomenclature alone
+    does not establish the primary study strain. '
+  evidence_ids:
+  - paper-143
+  - claims
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_1_g_l_nh4cl.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-123
+  issue_key: physiology-study-citations-formulation-123
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact study-to-local-recipe assignment remains unresolved: source 123'
+  target_ids:
+  - CultureMech:007214
+  field_paths:
+  - ingredients
+  - references
+  description: 'Formulation_unresolved: The abstract reports supplement effects and
+    2-keto-L-gulonic-acid production in a context involving two organisms, not independent
+    growth of each on this local recipe. Its highlighted serine, glycine, threonine,
+    proline, nicotinic-acid and biotin supplements are not entries in this 31-ingredient
+    local base; the accessible text does not identify Synthetic Medium C or reconcile
+    that base with the optimized treatment. No supplement amounts, production yield
+    or combined biomass measurement are imported as canonical recipe values or organism-specific
+    growth metrics. '
+  evidence_ids:
+  - paper-123
+  - claims
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/synthetic_medium_c.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-126
+  issue_key: physiology-study-citations-formulation-126
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact study-to-local-recipe assignment remains unresolved: source 126'
+  target_ids:
+  - CultureMech:007313
+  field_paths:
+  - ingredients
+  - references
+  description: 'Formulation_unresolved: The archived abstract describes glucose-limited
+    continuous cultivation and oxygen-dependent metabolism, but does not enumerate
+    the 30 local components. Earlier web inspection distinguished supplemented MS10
+    culture, altered preculture and analytical reagents; a subsequent access attempt
+    returned a challenge and no verified full local archive was obtained. The inherited
+    MS10 formula, chemical forms and phosphate/preculture assignment remain unresolved.
+    Existing Nordkvist 2003 batch variants are not automatically Jensen 2001 continuous-cultivation
+    variants. Do not substitute a modern Lactococcus lactis species node for the verified
+    Lactococcus cremoris lineage. Enzyme responses and carbon-flow percentages are
+    not parent-medium growth rates. '
+  evidence_ids:
+  - paper-126
+  - claims
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/ms10_medium_supplements_for_continuous_cultivation.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-132
+  issue_key: physiology-study-citations-formulation-132
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact study-to-local-recipe assignment remains unresolved: source 132'
+  target_ids:
+  - CultureMech:007213
+  field_paths:
+  - ingredients
+  - references
+  description: 'Formulation_unresolved: The abstract presents a metabolic reconstruction
+    and dynamic simulations using multiple carbon/energy sources. Predictions are
+    not measured growth on this 30-component local recipe. The complete simulation
+    inputs, physical experiments and source formula were not inspected; local salt/amino-acid/vitamin
+    values and chemical forms are not newly certified. NCBI places R1 below the strain-rank
+    NRC-34001 node; the actual returned rank is retained. No simulation-derived positive
+    growth edge is added. '
+  evidence_ids:
+  - paper-132
+  - claims
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/synthetic_medium_with_15_amino_acids.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-144
+  issue_key: physiology-study-citations-formulation-144
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact study-to-local-recipe assignment remains unresolved: source 144'
+  target_ids:
+  - CultureMech:007379
+  field_paths:
+  - ingredients
+  - references
+  description: 'Formulation_unresolved: The abstract supports serC cloning and complementation,
+    not all twelve HS-medium amounts or an exact cultivation variant. The similar
+    TOGO HS owner contains unresolved base/water placeholders and a different sodium-sulfide
+    hydrate; matching methanol/acetate names does not justify merging or evidence
+    transfer. The historical C2A association is not promoted into a paper-backed cultivation
+    claim. '
+  evidence_ids:
+  - paper-144
+  - claims
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/hs_medium_methanol_acetate.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-147
+  issue_key: physiology-study-citations-formulation-147
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact study-to-local-recipe assignment remains unresolved: source 147'
+  target_ids:
+  - CultureMech:007381
+  field_paths:
+  - ingredients
+  - references
+  description: 'Formulation_unresolved: Selected full-HTML methods, Table 1 and results
+    distinguish McNA from enriched McCV, gas-fed from formate experiments, growth
+    tests from biomass preparation, and resting-cell/enzyme buffers from culture media.
+    The acetate addition is explicitly described, but the complete inherited McN base
+    (Whitman 1986, reference 32) remains unavailable beyond verified metadata. Consequently
+    the local 27-component expansion, chemical forms, classification and generic preparation
+    are not fully reconciled; no resolved variant or parent growth edge is assigned.
+    Their distinct deletion genotypes and positive, impaired or negative outcomes
+    must remain separately scoped; no wild-type result is inherited by a mutant. Enzyme
+    activity and substrate kinetics are not growth rates or recipe concentrations.
+    Base DOI=10.1016/S0723-2020(86)80012-1; metadata-only archive=references_cache/papers/crossref/mcn-base-whitman-1986-20261013.json
+    and .md, not an inspected base formula. '
+  evidence_ids:
+  - paper-147
+  - claims
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mcna_medium_lupa.yaml
+    role: authoritative normalized recipe
+- finding_id: sql-title-validation
+  issue_key: physiology-study-citations-sql-title-validation
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Existing SQL-export citation fails reference-title validation
+  target_ids:
+  - CultureMech:007188
+  - CultureMech:007189
+  - CultureMech:007381
+  field_paths:
+  - references[1].title
+  description: The native checker falls back to a URL title for the versioned SQL
+    export. The same three owners fail before and after editing; their truthful title
+    and provenance were preserved. This is not a failure of the newly added papers.
+  evidence_ids:
+  - baseline-00
+  - baseline-02
+  - baseline-20
+  - post-00
+  - post-02
+  - post-20
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/song_cdm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/song_optimal_cdm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mcna_medium_lupa.yaml
+    role: authoritative normalized recipe
+actions:
+- action_id: resolve-formulation-99
+  description: 'Exact study-to-local-recipe assignment remains unresolved: source
+    99'
+  finding_ids:
+  - formulation-99
+  target_ids:
+  - CultureMech:007188
+  - CultureMech:007189
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/song_cdm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/song_optimal_cdm.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect relevant full methods and inherited base formulas; resolve chemical forms,
+    stock/final basis and assay/strain assignment before approving exact formulation
+    claims.
+- action_id: resolve-formulation-122
+  description: 'Exact study-to-local-recipe assignment remains unresolved: source
+    122'
+  finding_ids:
+  - formulation-122
+  target_ids:
+  - CultureMech:007215
+  - CultureMech:007216
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/hypertonic_medium.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/protoplasting_medium.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect relevant full methods and inherited base formulas; resolve chemical forms,
+    stock/final basis and assay/strain assignment before approving exact formulation
+    claims.
+- action_id: resolve-formulation-143
+  description: 'Exact study-to-local-recipe assignment remains unresolved: source
+    143'
+  finding_ids:
+  - formulation-143
+  target_ids:
+  - CultureMech:007285
+  - CultureMech:007286
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_1_g_l_nh4cl.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect relevant full methods and inherited base formulas; resolve chemical forms,
+    stock/final basis and assay/strain assignment before approving exact formulation
+    claims.
+- action_id: resolve-formulation-123
+  description: 'Exact study-to-local-recipe assignment remains unresolved: source
+    123'
+  finding_ids:
+  - formulation-123
+  target_ids:
+  - CultureMech:007214
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/synthetic_medium_c.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect relevant full methods and inherited base formulas; resolve chemical forms,
+    stock/final basis and assay/strain assignment before approving exact formulation
+    claims.
+- action_id: resolve-formulation-126
+  description: 'Exact study-to-local-recipe assignment remains unresolved: source
+    126'
+  finding_ids:
+  - formulation-126
+  target_ids:
+  - CultureMech:007313
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/ms10_medium_supplements_for_continuous_cultivation.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect relevant full methods and inherited base formulas; resolve chemical forms,
+    stock/final basis and assay/strain assignment before approving exact formulation
+    claims.
+- action_id: resolve-formulation-132
+  description: 'Exact study-to-local-recipe assignment remains unresolved: source
+    132'
+  finding_ids:
+  - formulation-132
+  target_ids:
+  - CultureMech:007213
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/synthetic_medium_with_15_amino_acids.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect relevant full methods and inherited base formulas; resolve chemical forms,
+    stock/final basis and assay/strain assignment before approving exact formulation
+    claims.
+- action_id: resolve-formulation-144
+  description: 'Exact study-to-local-recipe assignment remains unresolved: source
+    144'
+  finding_ids:
+  - formulation-144
+  target_ids:
+  - CultureMech:007379
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/hs_medium_methanol_acetate.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect relevant full methods and inherited base formulas; resolve chemical forms,
+    stock/final basis and assay/strain assignment before approving exact formulation
+    claims.
+- action_id: resolve-formulation-147
+  description: 'Exact study-to-local-recipe assignment remains unresolved: source
+    147'
+  finding_ids:
+  - formulation-147
+  target_ids:
+  - CultureMech:007381
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mcna_medium_lupa.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect relevant full methods and inherited base formulas; resolve chemical forms,
+    stock/final basis and assay/strain assignment before approving exact formulation
+    claims.
+- action_id: resolve-sql-title-validation
+  description: Existing SQL-export citation fails reference-title validation
+  finding_ids:
+  - sql-title-validation
+  target_ids:
+  - CultureMech:007188
+  - CultureMech:007189
+  - CultureMech:007381
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/song_cdm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/song_optimal_cdm.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mcna_medium_lupa.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Support title verification for the versioned database export without replacing
+    accurate source metadata with the URL or deleting evidence; rerun affected checks.
+limitations:
+- Partial self-review, not independent adversarial approval or complete record review.
+- Eight abstracts; one full HTML inspected selectively; one publisher subscription
+  preview. Images and inherited base formulas not certified.
+- Parent mappings and actual no-rank nodes retained explicitly. Bounded name queries
+  do not establish taxon absence.
+- Three pre-existing per-record reference failures and global merge diagnostic failures
+  remain visible.
+- No generated source, edge or page publication. Candidate queues overlap and do not
+  establish citation exhaustion.

@@ -124,6 +124,14 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T21:09:19.427499+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, source/Markdown archive links, short excerpts
+    and qualified scientific-name/NCBI taxonomy notes. Preserved prior recipe values
+    and history. Formula, chemical-form and strain discrepancies remain explicit;
+    no new native growth or concentration assertion.
+  source: PMID:11056062
 media_term:
   preferred_term: MediaDB Medium 121
   term:
@@ -135,3 +143,39 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:11056062
+  title: DNA microarray detection of metabolic responses to protein overproduction
+    in Escherichia coli.
+  authors: Oh MK; Liao JC
+  year: 2000
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:121;
+    discovery_sourceID=27; source_url=https://doi.org/10.1006/mben.2000.0149; alternate_identifier=doi:10.1006/mben.2000.0149;
+    raw=references_cache/papers/PMID_11056062.xml; markdown=references_cache/papers/PMID_11056062.md;
+    PubMed abstract, named study strains; exact excerpt="E. coli strains JM109, MC4100,
+    and VJS676A during protein overexpression.". Reported organism=Escherichia coli
+    JM109 and VJS676A; canonical scientific name=Escherichia coli; NCBITaxon:562;
+    actual rank=species; taxonomy_match=parent_rank_only; role=named study strains;
+    species parent verified but exact strain nodes unresolved in bounded queries.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    Reported organism=Escherichia coli MC4100; canonical scientific name=Escherichia
+    coli str. K-12 substr. MC4100; NCBITaxon:1403831; actual rank=no rank; taxonomy_match=exact_strain_designation;
+    role=named study strain; NCBI node has no rank, not a curator-assigned strain
+    rank. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1403831&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-additional-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-additional-20261013.md.
+    Abstract distinguishes defined and complex media and induction responses, but
+    gives no complete M9 formula or IPTG amount. MediaDB joins these two owners specifically
+    to JM109; the abstract does not establish every named strain on both exact local
+    recipes. LuxA is a protein product; its source organism is not named in the abstract
+    and is not invented. Formulation-unresolved; no resolved variant or growth assertion.
+    Local pair MEDIADB:120/121 differs by IPTG; the other eight ingredient entries
+    agree. Abstract access does not verify that inducer identity or amount. Inventory
+    covers the inspected medium-relevant passages, not every organism in the full
+    paper or its bibliography. Correction/retraction coverage is limited to inspected
+    publication metadata. Bounded taxonomy misses do not establish absence. All original
+    ingredients, amounts, preparation, history and links are preserved, not newly
+    certified. No new native growth assertion, resolved variant or concentration evidence.

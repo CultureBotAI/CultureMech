@@ -611,6 +611,14 @@ curation_history:
     "label": "sodium chloride"}}, "pointer": ["ingredients", 10]}], "restored_ingredients":
     ["2-methylbutanoic acid", "3-Methylbutanoic acid"], "withdrawn_variable_defaults":
     []}'
+- timestamp: '2026-10-13T18:20:46.076791+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified publication bibliography, archived abstract/Markdown provenance,
+    exact excerpts and qualified scientific-name/NCBI mappings. Preserved all prior
+    evidence, missing amounts and variant links. Exact formulations and organism/assay
+    assignment remain unresolved; no new native growth or concentration claim.
+  source: PMID:18791018
 media_term:
   preferred_term: MediaDB Medium 474
   term:
@@ -671,3 +679,48 @@ references:
     accessed_on=2026-10-09; publisher=Institute for Systems Biology; uncompressed_sha256=e2c60258e2389d4ad383695eb3e01429a67eac90807fe14d02a6728777d35b5c;
     locator=media_names, media_compounds and compounds tables; the database paper's
     DOI is not treated as evidence for individual amounts.
+- reference: PMID:18791018
+  title: Formate-dependent H2 production by the mesophilic methanogen Methanococcus
+    maripaludis.
+  authors: Lupa B; Hendrickson EL; Leigh JA; Whitman WB
+  year: 2008
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PMC_full_HTML_selected_methods_strains_and_results;
+    owner=MEDIADB:474; discovery_sourceID=147; source_url=https://doi.org/10.1128/AEM.01455-08;
+    alternate_identifier=doi:10.1128/AEM.01455-08; alternate_identifier=PMC2576700;
+    raw=references_cache/papers/PMID_18791018.xml; markdown=references_cache/papers/PMID_18791018.md;
+    full_raw=references_cache/papers/primary_html/pmid-18791018-20261013.html; full_markdown=references_cache/papers/primary_html/pmid-18791018-20261013.md;
+    Materials and methods/Strains and growth conditions; exact excerpt="M. maripaludis
+    wild-type strain S2 and the mutant strains are listed in Table 1". Materials and
+    methods/Strains and growth conditions, inherited base; exact excerpt="McN minimal
+    medium". Formulation_unresolved: Selected full-HTML methods, Table 1 and results
+    distinguish McNA from enriched McCV, gas-fed from formate experiments, growth
+    tests from biomass preparation, and resting-cell/enzyme buffers from culture media.
+    The acetate addition is explicitly described, but the complete inherited McN base
+    (Whitman 1986, reference 32) remains unavailable beyond verified metadata. Consequently
+    the local 27-component expansion, chemical forms, classification and generic preparation
+    are not fully reconciled; no resolved variant or parent growth edge is assigned.
+    Reported organism=Methanococcus maripaludis S2; canonical scientific name=Methanococcus
+    maripaludis S2; NCBITaxon:267377; actual rank=strain; taxonomy_match=exact_strain;
+    role=wild-type reference, kept distinct from mutant states and assay-specific
+    outcomes. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=267377&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/physiology-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/physiology-study-candidates-20261013.md.
+    Reported organism=M. maripaludis MM707, MM708, MM709, MM1145, MM1183, MM1184,
+    MM1097 and MM1020; canonical scientific name=Methanococcus maripaludis; NCBITaxon:39152;
+    actual rank=species; taxonomy_match=parent_rank_only; role=species parent for
+    eight separate Table 1 derivatives; bounded exact-name queries yielded no node,
+    not proof of absence. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=39152&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/physiology-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/physiology-study-candidates-20261013.md.
+    Their distinct deletion genotypes and positive, impaired or negative outcomes
+    must remain separately scoped; no wild-type result is inherited by a mutant. Enzyme
+    activity and substrate kinetics are not growth rates or recipe concentrations.
+    Base DOI=10.1016/S0723-2020(86)80012-1; metadata-only archive=references_cache/papers/crossref/mcn-base-whitman-1986-20261013.json
+    and .md, not an inspected base formula. Inventory covers inspected medium-relevant
+    passages, not the entire paper. Bounded taxonomy misses do not prove absence.
+    Images/supplements and complete inherited formulas are not certified; correction/retraction
+    coverage is limited to inspected publication metadata. All existing ingredients,
+    concentrations (including deliberately missing amounts), evidence, references,
+    links, preparation and history remain unchanged. No new native growth assertion,
+    concentration EvidenceItem or resolved variant.'

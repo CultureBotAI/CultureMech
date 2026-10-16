@@ -213,12 +213,224 @@ curation_history:
     "status": "add"}], "counts": {"bibliographic_entries_enriched": 1, "ingredient_context_notes_corrected":
     1, "inline_variant_options_added": 1, "new_curation_history": 1, "new_evidence":
     5, "unsupported_quantity_slots_removed": 1}}'
+- timestamp: '2026-10-14T05:57:54.705159+00:00'
+  curator: codex
+  action: ADDED_POLYTOMELLA_VOLVOX_LITERATURE_CITATIONS
+  notes: Added archived publication metadata, exact cultivation excerpts and qualified
+    scientific-name/NCBI rank mappings. These are named-medium bibliography links,
+    not certification of the exact local formulation. Unresolved chemical forms, percentage
+    bases, base-recipe details and strain identities remain in citation notes. No
+    native growth assertion, concentration change or resolved variant; all previous
+    fields and claims are preserved. No export or publication.
+  source: doi:10.1093/molbev/msm245; doi:10.1007/s00294-010-0311-5; doi:10.1093/gbe/evt122;
+    doi:10.1104/pp.113.233718; doi:10.1104/pp.16.01628
+  changes: Added 5 bibliography entries with source archive/Markdown paths; no variants,
+    target organisms, concentration evidence or amount changes.
 references:
 - reference: UTEX:polytomella-medium
 - reference: https://utex.org/products/polytomella-medium
   title: Polytomella Medium | UTEX Culture Collection of Algae
   notes: source_type=culture_collection_page; discovery_mode=existing_record_reference;
     accessed_on=2026-10-10; Named authors, publication year and DOI not established.
+- reference: doi:10.1093/molbev/msm245
+  title: 'Mitochondrial genome of the colorless green alga Polytomella capuana: a
+    linear molecule with an unprecedented GC content.'
+  authors: Smith DR; Lee RW
+  year: 2008
+  notes: source_type=journal_article; discovery_mode=primary_literature_followup;
+    accessed_on=2026-10-14; PMID:18222946; source_url=https://www.arrogantgenome.com/wp-content/uploads/2013/12/Polytomella_capuana_mtDNA.pdf;
+    raw_archive=references_cache/papers/primary_pdf/polytomella-2008-author-egjm-bristol-followup-20261014.pdf;
+    markdown_archive=references_cache/papers/primary_pdf/polytomella-2008-author-egjm-bristol-followup-20261014.md;
+    access_scope=full primary article; bounded cultivation passages, not a whole-paper
+    organism inventory; locator=PDF page 2, printed 488, Materials and Methods / Strain,
+    Culture Conditions; exact excerpt="Polytomella medium (0.1% tryptone, 0.2% yeast
+    extract, and 0.2% sodium acetate)"; This is a Polytomella-medium literature citation,
+    not evidence that the study purchased UTEX medium or used every detail of this
+    current source-specific recipe. The study prints 0.1% tryptone, 0.2% yeast extract
+    and 0.2% sodium acetate. Percentage basis and acetate hydration are unspecified.
+    The parent records yeast and tryptone in g/L and acetate in mM; no exact equivalence,
+    fold change or mass/molar conversion is established. Study incubation and harvest
+    observations are not universal requirements or growth-rate measurements. Reported
+    scientific name=Polytomella capuana; strain=SAG 63-5; canonical scientific name=Polytomella
+    capuana; NCBITaxon:351368; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=351368;
+    lookup_date=2026-10-14; source_scope=Study's named Polytomella medium; disposition=citation_note_only;
+    exact local recipe match unresolved. Taxonomy names/ranks were checked against
+    the archived NCBI response at references_cache/papers/taxonomy/polytomella-volvox-20261014.xml.
+    A species/forma name match is not an exact strain identification. Formulation
+    disposition=unresolved_exact_match; differences and unspecified fields remain
+    in these citation notes. No resolved inline or linked variant, canonical concentration
+    change, positive target_organisms entry, or growth metric is added. Existing record
+    claims and optional variants are preserved, not comprehensively recertified. The
+    archived PubMed notice list is empty; not a claim of exhaustive notice discovery.
+- reference: doi:10.1007/s00294-010-0311-5
+  title: Evolution of linear mitochondrial DNA in three known lineages of Polytomella.
+  authors: Smith DR; Hua J; Lee RW
+  year: 2010
+  notes: source_type=journal_article; discovery_mode=primary_literature_followup;
+    accessed_on=2026-10-14; PMID:20574726; source_url=https://www.arrogantgenome.com/wp-content/uploads/2013/12/Polytomella_piriformis_mtDNA.pdf;
+    raw_archive=references_cache/papers/primary_pdf/polytomella-2010-author-egjm-bristol-followup-20261014.pdf;
+    markdown_archive=references_cache/papers/primary_pdf/polytomella-2010-author-egjm-bristol-followup-20261014.md;
+    access_scope=full primary article; bounded cultivation passages, not a whole-paper
+    organism inventory; locator=PDF page 5, printed 431, Methods / Culture conditions;
+    exact excerpt="Polytomella medium (0.1% tryptone, 0.2% yeast extract, 0.2% sodium
+    acetate trihydrate)"; This is a Polytomella-medium literature citation, not evidence
+    that the study purchased UTEX medium or used every detail of this current source-specific
+    recipe. The study explicitly specifies sodium acetate trihydrate and prints 0.1%
+    tryptone and 0.2% yeast extract/acetate trihydrate; the percentage basis is unstated.
+    The parent encodes sodium acetate and an asserted molarity. Chemical-form equivalence
+    and concentration differences remain unresolved; do not silently convert or replace
+    the parent. The 2008 and 2017 formulas are not substituted for this study. Reported
+    scientific name=Polytomella piriformis; strain=SAG 63-10; canonical scientific
+    name=Polytomella piriformis; NCBITaxon:351366; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=351366;
+    lookup_date=2026-10-14; source_scope=Study's trihydrate-containing Polytomella
+    medium; disposition=citation_note_only; exact local recipe match unresolved. The
+    paper's nomen nudum wording is historical (2010). PMID:26047054, archived 2015
+    nomenclatural abstract, reports later validation; current NCBI rank is species.
+    Reported scientific name=Polytomella parva; strain=UTEX L 193; canonical scientific
+    name=Polytomella parva; NCBITaxon:51329; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=51329;
+    lookup_date=2026-10-14; source_scope=Study's trihydrate-containing Polytomella
+    medium; disposition=citation_note_only; exact local recipe match unresolved. Retain
+    the paper's label; the later strain-survey abstract (PMID:27168310) flags collection-label/history
+    issues but does not by itself establish an individual correction. Taxonomy names/ranks
+    were checked against the archived NCBI response at references_cache/papers/taxonomy/polytomella-volvox-20261014.xml.
+    A species/forma name match is not an exact strain identification. Formulation
+    disposition=unresolved_exact_match; differences and unspecified fields remain
+    in these citation notes. No resolved inline or linked variant, canonical concentration
+    change, positive target_organisms entry, or growth metric is added. Existing record
+    claims and optional variants are preserved, not comprehensively recertified. The
+    archived PubMed notice list is empty; not a claim of exhaustive notice discovery.
+- reference: doi:10.1093/gbe/evt122
+  title: Palindromic genes in the linear mitochondrial genome of the nonphotosynthetic
+    green alga Polytomella magna.
+  authors: Smith DR; Hua J; Archibald JM; Lee RW
+  year: 2013
+  notes: source_type=journal_article; discovery_mode=primary_literature_followup;
+    accessed_on=2026-10-14; PMID:23940100; PMCID:PMC3787674; source_url=https://www.arrogantgenome.com/wp-content/uploads/2013/12/Polytomella_palindromic_genes.pdf;
+    raw_archive=references_cache/papers/primary_pdf/polytomella-2013-author-egjm-bristol-followup-20261014.pdf;
+    markdown_archive=references_cache/papers/primary_pdf/polytomella-2013-author-egjm-bristol-followup-20261014.md;
+    access_scope=full primary article; bounded cultivation passages, not a whole-paper
+    organism inventory; locator=PDF page 3, printed 1663, A New Polytomella Lineage;
+    Methods on PDF page 5; exact excerpt="our standard Polytomella medium (Sheeler
+    et al. 1968)"; This is a Polytomella-medium literature citation, not evidence
+    that the study purchased UTEX medium or used every detail of this current source-specific
+    recipe. The study names the Polytomella medium of Sheeler et al. (1968), but does
+    not reproduce the base recipe. Sheeler is available here only as bibliographic
+    metadata, not a retrieved formula. No components are inherited from later papers.
+    Historical strain labels and the comparison of SAG 63-4 with SAG 63-9/63-3 remain
+    qualified. Reported scientific name=Polytomella magna; strain=SAG 63-9; canonical
+    scientific name=Polytomella magna; NCBITaxon:353565; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=353565;
+    lookup_date=2026-10-14; source_scope=Study culture and morphology comparison;
+    disposition=citation_note_only; exact local recipe match unresolved. Reported
+    scientific name=Polytomella magna; strain=SAG 63-4; canonical scientific name=Polytomella;
+    NCBITaxon:3049; actual rank=genus; taxonomy_match=parent_rank_only; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3049;
+    lookup_date=2026-10-14; source_scope=Historical label discussed in morphology
+    comparison; disposition=citation_note_only; exact local recipe match unresolved.
+    The authors assign this historically P. magna-labeled strain to the P. parva lineage.
+    Retain the disagreement without asserting synonymy or independently reidentifying
+    the strain. The 2011 paper prints 64-4; do not silently replace that label. Reported
+    scientific name=Polytomella parva; strain=SAG 63-3; canonical scientific name=Polytomella
+    parva; NCBITaxon:51329; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=51329;
+    lookup_date=2026-10-14; source_scope=Morphology comparator, not an independently
+    established exact-owner growth observation; disposition=citation_note_only; exact
+    local recipe match unresolved. Taxonomy names/ranks were checked against the archived
+    NCBI response at references_cache/papers/taxonomy/polytomella-volvox-20261014.xml.
+    A species/forma name match is not an exact strain identification. Formulation
+    disposition=unresolved_exact_match; differences and unspecified fields remain
+    in these citation notes. No resolved inline or linked variant, canonical concentration
+    change, positive target_organisms entry, or growth metric is added. Existing record
+    claims and optional variants are preserved, not comprehensively recertified. The
+    archived PubMed notice list is empty; not a claim of exhaustive notice discovery.
+- reference: doi:10.1104/pp.113.233718
+  title: 'A plastid without a genome: evidence from the nonphotosynthetic green algal
+    genus Polytomella.'
+  authors: Smith DR; Lee RW
+  year: 2014
+  notes: source_type=journal_article; discovery_mode=primary_literature_followup;
+    accessed_on=2026-10-14; PMID:24563281; PMCID:PMC3982744; source_url=https://www.arrogantgenome.com/wp-content/uploads/2013/12/Polytomella_no_ptDNA.pdf;
+    raw_archive=references_cache/papers/primary_pdf/polytomella-2014-author-egjm-bristol-followup-20261014.pdf;
+    markdown_archive=references_cache/papers/primary_pdf/polytomella-2014-author-egjm-bristol-followup-20261014.md;
+    access_scope=full primary article; bounded cultivation passages, not a whole-paper
+    organism inventory; locator=PDF page 7, printed 1818, Materials and Methods; species/strain
+    pairing on PDF pages 1-2; exact excerpt="in Polytomella spp. medium (Sheeler et
+    al., 1968)"; This is a Polytomella-medium literature citation, not evidence that
+    the study purchased UTEX medium or used every detail of this current source-specific
+    recipe. The Methods refer to Sheeler et al. (1968) for Polytomella spp. medium
+    and to Mallet and Lee (2006) for axenization. Neither citation licenses inheritance
+    of an unread formulation. The study's four strain observations are retained in
+    notes only; harvest optical density is not a growth rate or optimum. Reported
+    scientific name=Polytomella parva; strain=SAG 63-3; canonical scientific name=Polytomella
+    parva; NCBITaxon:51329; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=51329;
+    lookup_date=2026-10-14; source_scope=Study Polytomella spp. medium; four-way pairing
+    in Results; disposition=citation_note_only; exact local recipe match unresolved.
+    Reported scientific name=Polytomella piriformis; strain=SAG 63-10; canonical scientific
+    name=Polytomella piriformis; NCBITaxon:351366; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=351366;
+    lookup_date=2026-10-14; source_scope=Study Polytomella spp. medium; four-way pairing
+    in Results; disposition=citation_note_only; exact local recipe match unresolved.
+    Reported scientific name=Polytomella capuana; strain=SAG 63-5; canonical scientific
+    name=Polytomella capuana; NCBITaxon:351368; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=351368;
+    lookup_date=2026-10-14; source_scope=Study Polytomella spp. medium; four-way pairing
+    in Results; disposition=citation_note_only; exact local recipe match unresolved.
+    Reported scientific name=Polytomella magna; strain=SAG 63-9; canonical scientific
+    name=Polytomella magna; NCBITaxon:353565; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=353565;
+    lookup_date=2026-10-14; source_scope=Study Polytomella spp. medium; four-way pairing
+    in Results; disposition=citation_note_only; exact local recipe match unresolved.
+    Taxonomy names/ranks were checked against the archived NCBI response at references_cache/papers/taxonomy/polytomella-volvox-20261014.xml.
+    A species/forma name match is not an exact strain identification. Formulation
+    disposition=unresolved_exact_match; differences and unspecified fields remain
+    in these citation notes. No resolved inline or linked variant, canonical concentration
+    change, positive target_organisms entry, or growth metric is added. Existing record
+    claims and optional variants are preserved, not comprehensively recertified. The
+    archived PubMed notice list is empty; not a claim of exhaustive notice discovery.
+- reference: doi:10.1104/pp.16.01628
+  title: The Plastid Genome of Polytoma uvella Is the Largest Known among Colorless
+    Algae and Plants and Reflects Contrasting Evolutionary Paths to Nonphotosynthetic
+    Lifestyles.
+  authors: Figueroa-Martinez F; Nedelcu AM; Smith DR; Reyes-Prieto A
+  year: 2017
+  notes: source_type=journal_article; discovery_mode=primary_literature_followup;
+    accessed_on=2026-10-14; PMID:27932420; PMCID:PMC5291040; source_url=https://www.arrogantgenome.com/wp-content/uploads/2013/12/Polytoma_ptDNA.pdf;
+    raw_archive=references_cache/papers/primary_pdf/polytoma-2017-author-egjm-bristol-followup-20261014.pdf;
+    markdown_archive=references_cache/papers/primary_pdf/polytoma-2017-author-egjm-bristol-followup-20261014.md;
+    access_scope=full primary article; bounded cultivation passages, not a whole-paper
+    organism inventory; locator=PDF page 10, printed 941, Materials and Methods /
+    Algal Cultures; exact excerpt="Polytoma uvella (strain UTEX 964) was grown in
+    Polytomella medium (0.2% sodium acetate, 0.1% yeast extract, and 0.1% tryptone)
+    with no shaking."; This is a Polytomella-medium literature citation, not evidence
+    that the study purchased UTEX medium or used every detail of this current source-specific
+    recipe. The study keeps P. uvella UTEX 964 in Polytomella medium and C. leiostraca
+    SAG 11-49 in standard Volvox medium citing Kirk et al. (1999). Its Polytomella
+    percentages do not specify a w/v basis or acetate hydration. Its Volvox recipe
+    is not reproduced. Species, shaking and other study conditions must not be transferred
+    between these two cultures. The 2015 paper instead says Polytoma medium and reports
+    a different light cycle; neither wording nor condition is silently replaced. PubMed
+    links PMID:28377793 as CommentIn; its archived abstract identifies an evolutionary
+    addendum, not a cultivation correction. This limited notice check is not exhaustive.
+    Reported scientific name=Polytoma uvella; strain=UTEX 964; canonical scientific
+    name=Polytoma uvella; NCBITaxon:40532; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=40532;
+    lookup_date=2026-10-14; source_scope=Polytomella medium in 2017; Polytoma medium
+    in 2015, not interchangeable wording; disposition=citation_note_only; exact local
+    recipe match unresolved. Reported scientific name=Chlamydomonas leiostraca; strain=SAG
+    11-49; canonical scientific name=Chlamydomonas leiostraca; NCBITaxon:1034604;
+    actual rank=species; taxonomy_match=exact_name_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1034604;
+    lookup_date=2026-10-14; source_scope=Volvox medium; separate from the P. uvella
+    culture; disposition=citation_note_only; exact local recipe match unresolved.
+    Taxonomy names/ranks were checked against the archived NCBI response at references_cache/papers/taxonomy/polytomella-volvox-20261014.xml.
+    A species/forma name match is not an exact strain identification. Formulation
+    disposition=unresolved_exact_match; differences and unspecified fields remain
+    in these citation notes. No resolved inline or linked variant, canonical concentration
+    change, positive target_organisms entry, or growth metric is added. Existing record
+    claims and optional variants are preserved, not comprehensively recertified. Notice
+    metadata and the inspected commentary abstract are retained separately.
 original_name: Polytomella Medium
 data_quality_flags:
 - has_ontology_mappings

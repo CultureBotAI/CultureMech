@@ -101,6 +101,14 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:161's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T23:14:34.949513+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:8932299
 media_term:
   preferred_term: MediaDB Medium 161
   term:
@@ -112,3 +120,43 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:8932299
+  title: Role of the Escherichia coli FadR regulator in stasis survival and growth
+    phase-dependent expression of the uspA, fad, and fab genes.
+  authors: Farewell A; Diez AA; DiRusso CC; Nyström T
+  year: 1996
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:161;
+    discovery_sourceID=55; source_url=https://doi.org/10.1128/jb.178.22.6443-6450.1996;
+    alternate_identifier=doi:10.1128/jb.178.22.6443-6450.1996; alternate_identifier=PMC178529;
+    Historical MediaDB metadata retained for comparison: title="Role of escherichia
+    coli fadr regulator in stasis survival and growth phase-dependant expression of
+    the uspa, fad, and fab genes"; first_author="Farewell"; year=1996. Verified PMID/DOI
+    identity is distinct from unresolved historical metadata differences. raw=references_cache/papers/PMID_8932299.xml;
+    markdown=references_cache/papers/PMID_8932299.md; PubMed abstract, oleate experiment;
+    exact excerpt="including the fatty acid oleate in the growth medium of FadR+ cells".
+    Reported organism=Escherichia coli (E. coli); canonical scientific name=Escherichia
+    coli; NCBITaxon:562; actual rank=species; taxonomy_match=exact_species_not_strain;
+    role=experimental species; exact local formulation unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=Escherichia coli MC4100; canonical scientific name=Escherichia
+    coli str. K-12 substr. MC4100; NCBITaxon:1403831; actual rank=no rank; taxonomy_match=canonical_name_match_secondary_strain_lead;
+    role=MediaDB strain lead not named in abstract. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1403831&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=Escherichia coli fadR null and fadRS219N mutants; canonical
+    scientific name=Escherichia coli; NCBITaxon:562; actual rank=species; taxonomy_match=parent_rank_only;
+    role=genetic backgrounds distinct from FadR+ oleate supplementation; exact clones
+    unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Oleate supplementation is distinct from a genetic FadR perturbation. The abstract
+    does not verify the native 5 mM oleic-acid amount, exact acid/salt form or complete
+    M9 carbon-source context. Survival after prolonged stasis is not a general growth
+    assertion. Local comparison: Seven native entries use (9Z)-octadecenoic acid at
+    5 mM with salts; this amount/form is not certified by the abstract''s oleate wording.
+    Inventory covers inspected medium-relevant passages, not the whole paper or bibliography.
+    Correction/retraction coverage is limited to inspected metadata; bounded taxonomy
+    misses do not prove absence. Original ingredients, amounts, preparation, history
+    and links are preserved, not newly certified. No new native growth assertion,
+    resolved variant or concentration evidence.'

@@ -265,6 +265,14 @@ curation_history:
   notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T20:04:31.598558+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, source/Markdown archives, short excerpts and
+    qualified scientific-name/NCBI taxonomy notes. Preserved all recipe values, evidence,
+    history and variant links. Formulation and historical identity limitations remain
+    explicit; no new growth or concentration claim.
+  source: doi:10.1007/bf00127891
 media_term:
   preferred_term: MediaDB Medium 300
   term:
@@ -276,3 +284,34 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1007/bf00127891
+  title: Production of α-amylase by Bacillus amyloliquefaciens in batch and continuous
+    culture using a defined synthetic medium
+  authors: Hillier, P.; Wase, D. A. J.; Emery, A. N.
+  year: 1996
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=publisher_abstract_or_summary_preview; owner=MEDIADB:300;
+    discovery_sourceID=110; source_url=https://doi.org/10.1007/bf00127891; raw=references_cache/papers/primary_html/source-110-publisher-20261013.html;
+    markdown=references_cache/papers/primary_html/source-110-publisher-20261013.md;
+    Summary: named organism and strain; exact excerpt="Bacillus amyloliquefaciens
+    B155". Reported organism=Bacillus amyloliquefaciens B155; canonical scientific
+    name=Bacillus amyloliquefaciens; NCBITaxon:1390; actual rank=species; taxonomy_match=parent_rank_only;
+    role=reported strain with verified species parent, no exact strain node established.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1390&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    Preserve B155 as reported; the bounded exact-name lookup miss does not prove a
+    strain node is absent. The summary names a defined synthetic medium but does not
+    establish all local ingredients, chemical forms, amounts or distinct condition-specific
+    formulations. Publisher Hillier differs from historical MediaDB Hiller; publisher-readable
+    alpha-amylase title is used instead of corrupted historical/Crossref characters.
+    This disposition changes citation metadata only. Owner=CultureMech:007203; MediaDB
+    medium=300; inspected local ingredient entries=23. No new resolved inline/full
+    variant is assigned while the study-to-local-formulation mapping remains unresolved.
+    Inventory covers the selected medium-relevant identity passages, not every organism
+    in the full paper. Correction/retraction coverage is limited to inspected publication
+    metadata. Bounded lookup misses do not prove absence. All original ingredients,
+    amounts, preparation, evidence, history and variant links are preserved; none
+    is newly certified. No new native growth assertion, concentration evidence or
+    resolved variant.'

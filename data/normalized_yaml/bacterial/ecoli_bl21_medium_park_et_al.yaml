@@ -149,6 +149,14 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:277's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T22:34:41.350925+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:15459799
 media_term:
   preferred_term: MediaDB Medium 277
   term:
@@ -160,3 +168,50 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:15459799
+  title: Batch and fed-batch production of coenzyme Q10 in recombinant Escherichia
+    coli containing the decaprenyl diphosphate synthase gene from Gluconobacter suboxydans.
+  authors: Park YC; Kim SJ; Choi JH; Lee WH; Park KM; Kawamukai M; Ryu YW; Seo JH
+  year: 2005
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:277;
+    discovery_sourceID=70; source_url=https://doi.org/10.1007/s00253-004-1743-y; alternate_identifier=doi:10.1007/s00253-004-1743-y;
+    raw=references_cache/papers/PMID_15459799.xml; markdown=references_cache/papers/PMID_15459799.md;
+    PubMed abstract, gene-donor sentence; exact excerpt="ddsA gene coding for DPS
+    from Gluconobacter suboxydans". Reported organism=Escherichia coli (E. coli);
+    canonical scientific name=Escherichia coli; NCBITaxon:562; actual rank=species;
+    taxonomy_match=exact_species_not_strain; role=experimental species; local formulation
+    unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli BL21/pACDdsA; canonical scientific name=Escherichia
+    coli BL21; NCBITaxon:511693; actual rank=strain; taxonomy_match=parent_rank_only;
+    role=experimental recombinant; BL21 node does not identify its plasmid-bearing
+    clone. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=511693&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Gluconobacter suboxydans; canonical scientific name=Gluconobacter
+    oxydans; NCBITaxon:442; actual rank=species; taxonomy_match=verified_synonym;
+    role=ddsA gene donor, not a demonstrated medium-growth target. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=442&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli KO229; canonical scientific name=Escherichia
+    coli; NCBITaxon:562; actual rank=species; taxonomy_match=parent_rank_only; role=secondary
+    MediaDB lead; exact node and experimental role unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli BL21[pACYC184]; canonical scientific name=Escherichia
+    coli BL21; NCBITaxon:511693; actual rank=strain; taxonomy_match=parent_rank_only;
+    role=secondary control-strain lead; exact clone not verified. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=511693&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    NCBI lists Gluconobacter suboxydans as a synonym of Gluconobacter oxydans. Keep
+    batch and fed-batch outcomes separate: the abstract does not provide the basal
+    recipe, feed composition, antibiotics or strain-specific conditions. Local comparison:
+    Fourteen native entries include 27.753 mM beta-D-glucose, citrate, ferric dicitrate,
+    trace salts and generically named ammonium phosphate. The abstract cannot establish
+    whether this is the batch basal medium, fed-batch medium or feed. Inventory covers
+    inspected medium-relevant passages, not the whole paper or bibliography. Correction/retraction
+    coverage is limited to inspected metadata; bounded taxonomy misses do not prove
+    absence. Original ingredients, amounts, preparation, history and links are preserved,
+    not newly certified. No new native growth assertion, resolved variant or concentration
+    evidence.'

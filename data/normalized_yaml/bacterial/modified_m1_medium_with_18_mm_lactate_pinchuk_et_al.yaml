@@ -322,6 +322,16 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-10-13T09:34:16.263775+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_AND_SOURCE_SCOPED_VARIANT
+  notes: Added two verified paper citations with archived source/Markdown provenance,
+    one source-described inline variant and DOI/snippet-backed wild-type MR-1 growth
+    scoped only to that variant. Preserved all parent ingredients, prior history and
+    full-record variant links. Retained unresolved stock/chemical normalization and
+    source-version limitations; no quantitative growth metric or parent concentration
+    certification.
+  source: doi:10.1371/journal.pcbi.1000822; doi:10.1128/AEM.65.3.1214-1221.1999
 media_term:
   preferred_term: MediaDB Medium 179
   term:
@@ -344,3 +354,135 @@ variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
 - Lactate decreased from 20 mM to 18 mM while the remaining modified M1 medium components
   remain unchanged.
+references:
+- reference: doi:10.1371/journal.pcbi.1000822
+  title: 'Constraint-based model of Shewanella oneidensis MR-1 metabolism: a tool
+    for data analysis and hypothesis generation.'
+  authors: Pinchuk GE; Hill EA; Geydebrekht OV; De Ingeniis J; Zhang X; Osterman A;
+    Scott JH; Reed SB; Romine MF; Konopka AE; Beliaev AS; Fredrickson JK; Reed JL
+  year: 2010
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=72, medID=179. Publication identity was
+    checked against archived PubMed metadata and the exact SQL joins. Database growth
+    rates are discovery leads, not imported experimental measurements. The historical
+    Mazumdar import note remains database provenance. No correction/retraction notice
+    appears in the inspected PubMed entry; this is a bounded notice check. PMID:20589080;
+    PMC2891590.1. Full article and Markdown=references_cache/papers/primary_xml/pinchuk-2010-pmc.{xml,md};
+    Table S6, Text S1, Figures S1 and S4 archived and converted under references_cache/papers/supplements/pinchuk-2010-s{006,008,011,014}.*.
+    Assay=Figure S4, panel A: 18 mM lactate with ammonium chloride. Variant_destination=''Pinchuk
+    2010 reported batch M1 with 18 mM lactate''. The variant denotes the source-described
+    batch assay, not an exact normalized expansion of all stock chemicals. The paper
+    specifies Wolfe vitamin/mineral stock additions; the imported parent instead flattens
+    those stocks into molar amounts. Their equivalence is not certified: Kieft''s
+    submitted manuscript prints H3BO4 and multiple hydrate-specific salts, while the
+    parent contains boric acid and some anhydrous/generalized terms. The original
+    stock formula and final-volume basis remain unresolved at ingredient-normalization
+    level. Parent amounts, terms and generic preparation are unchanged. Figure S4
+    compares wild type with delta SO0781 (gcvP); both plotted curves increase, with
+    treatment-dependent differences. Text S1''s acetate cross-reference to S4B conflicts
+    with the actual figure (acetate is panel C); its later glycine reference to S6C
+    also conflicts with the S4 glycine panel. The actual plot labels establish this
+    variant''s assay scope; no conflicting-panel metric is imported. Scientific name
+    and canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586; rank=strain;
+    taxonomy_match=exact; ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=211586&retmode=xml;
+    archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This
+    verifies the wild-type background, not an independent exact taxonomy identity
+    for every engineered derivative. Table S6 identifies these deletions as MR-1 derivatives;
+    taxonomy_match=parent_rank_only for each mutant, with MR-1 (NCBITaxon:211586,
+    rank=strain) as its verified background parent, not an exact mutant taxon match.
+    Non-growth-target organisms in Table S6: Escherichia coli EC100D pir-116 and Top10
+    (cloning hosts), WM3064 lambda-pir (mating host). Exact role excerpt for WM3064=''Host
+    used for mating with MR-1.'' Scientific name=Escherichia coli; verified parent=Escherichia
+    coli, NCBITaxon:562, rank=species; taxonomy_match=parent_rank_only for the reported
+    strains. Exact quoted-name searches did not resolve WM3064, EC100D or Top10 to
+    strain nodes; this is not proof that no alternate-name node exists. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    archive=references_cache/papers/taxonomy/ecoli-species-20261013.{xml,md}. No E.
+    coli growth on this M1 variant is inferred. Organism inventory is bounded to the
+    growth-media/assay passages and Table S6, not the whole paper or organisms named
+    only inside cited bibliography. Other mutant rescue/selection media are separate
+    experiments. The existing 20/18 mM parent-child link is preserved and does not
+    certify the source phosphate or expanded stocks.'
+- reference: doi:10.1128/AEM.65.3.1214-1221.1999
+  title: Dissimilatory reduction of Fe(III) and other electron acceptors by a Thermus
+    isolate.
+  authors: Kieft TL; Fredrickson JK; Onstott TC; Gorby YA; Kostandarithes HM; Bailey
+    TJ; Kennedy DW; Li SW; Plymale AE; Spadoni CM; Gray MS
+  year: 1999
+  notes: source_type=journal_article_submitted_manuscript; discovery_mode=Pinchuk_2010_reference_56;
+    accessed_on=2026-10-13; PMID:10049886; supporting Wolfe stock protocol, not a
+    Shewanella growth paper. PubMed XML/abstract=references_cache/papers/PMID_10049886.{xml,md};
+    full scanned manuscript/Markdown=references_cache/papers/primary_pdf/kieft-1999-osti-submitted-manuscript.{pdf,md};
+    https://www.osti.gov/servlets/purl/762040. Title, ordered authors and journal
+    match PubMed; OSTI deposit date conflicts with publication year and its metadata
+    supplies no DOI. The bibliography year 1999 is from PubMed, not the deposit date.
+    Version not verified against final published typesetting. Inspected PDF page 6
+    (printed page 3), lines 11-18, for vitamin/mineral stock composition; visual formula
+    H3BO4 is retained as an unresolved source token. Stock mass concentrations per
+    liter of deionized water are not automatically final-medium molar concentrations.
+    No source amount is corrected or certified in this parent. The cited stock-composition
+    sentences name no growth organism; Thermus enrichment results elsewhere are not
+    evidence of Shewanella growth. Bounded supporting-protocol citation only.
+variants:
+- name: Pinchuk 2010 reported batch M1 with 18 mM lactate
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  description: 'Figure S4, panel A: 18 mM lactate with ammonium chloride. The variant
+    denotes the source-described batch assay, not an exact normalized expansion of
+    all stock chemicals. The paper specifies Wolfe vitamin/mineral stock additions;
+    the imported parent instead flattens those stocks into molar amounts. Their equivalence
+    is not certified: Kieft''s submitted manuscript prints H3BO4 and multiple hydrate-specific
+    salts, while the parent contains boric acid and some anhydrous/generalized terms.
+    The original stock formula and final-volume basis remain unresolved at ingredient-normalization
+    level. Parent amounts, terms and generic preparation are unchanged. '
+  modifications:
+  - Use the paper's 4.35 mM sodium dihydrogen phosphate monohydrate (NaH2PO4.H2O),
+    not the parent's dibasic sodium phosphate.
+  - Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence
+    to the parent's flattened molar stock components.
+  - Use the batch formulation at pH 7.0 with 30 mM PIPES; do not import the chemostat's
+    3 mM PIPES, Fe(III)-NTA supplement or anaerobic formulation.
+  evidence:
+  - reference: doi:10.1371/journal.pcbi.1000822
+    supports: SUPPORT
+    snippet: 4.35 mM NaH2PO4•H2O
+    explanation: 'Supports variants[].modifications phosphate identity and 4.35 mM
+      amount only; main Methods/Bacterial Strains and Growth Media. Separate exact
+      stock excerpt=''10 ml each of 10× Wolfe''s vitamin solution and 10× mineral
+      solution''. Separate exact PIPES excerpt=''30 mM and 3 mM for batch and chemostat
+      cultivation, respectively''; pH excerpt=''modified M1 medium (pH 7.0)''. Figure
+      S4, panel A: 18 mM lactate with ammonium chloride. See the archived Figure S1
+      or S4 for assay substrate/nitrogen identity. The variant denotes the source-described
+      batch assay, not an exact normalized expansion of all stock chemicals. The paper
+      specifies Wolfe vitamin/mineral stock additions; the imported parent instead
+      flattens those stocks into molar amounts. Their equivalence is not certified:
+      Kieft''s submitted manuscript prints H3BO4 and multiple hydrate-specific salts,
+      while the parent contains boric acid and some anhydrous/generalized terms. The
+      original stock formula and final-volume basis remain unresolved at ingredient-normalization
+      level. Parent amounts, terms and generic preparation are unchanged. '
+target_organisms:
+- preferred_term: Shewanella oneidensis MR-1
+  strain: MR-1 (wild type)
+  term:
+    id: NCBITaxon:211586
+    label: Shewanella oneidensis MR-1
+  scoped_to_variant: Pinchuk 2010 reported batch M1 with 18 mM lactate
+  evidence:
+  - reference: doi:10.1371/journal.pcbi.1000822
+    supports: SUPPORT
+    snippet: Growth dynamics of S. oneidensis MR-1 wild-type
+    explanation: 'Figure S4, panel A: 18 mM lactate with ammonium chloride. The filled-circle
+      wild-type growth curves were visually inspected in the one-page source PDF.
+      The common batch methods specify 30 degrees C, with microplates for S1 or shaken
+      crimp-sealed serum bottles for S4. No maximum OD, rate, doubling time, well
+      dilution or optimum is inferred. Scientific name and canonical label=Shewanella
+      oneidensis MR-1; NCBITaxon:211586; rank=strain; taxonomy_match=exact; ATCC 700550
+      is an NCBI equivalent name. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=211586&retmode=xml;
+      archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This
+      verifies the wild-type background, not an independent exact taxonomy identity
+      for every engineered derivative. Growth is supported only on the named source-described
+      inline variant, not on the unmodified imported parent. Unresolved chemical normalization
+      is retained in that variant; the source''s qualitative cultivation result is
+      not a certification of the flattened parent recipe. Current KGX export does
+      not honor scoped_to_variant; this curation is not authorization to publish an
+      unscoped parent edge.'

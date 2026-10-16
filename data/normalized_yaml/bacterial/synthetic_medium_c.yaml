@@ -320,6 +320,14 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:315's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T18:20:46.076791+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified publication bibliography, archived abstract/Markdown provenance,
+    exact excerpts and qualified scientific-name/NCBI mappings. Preserved all prior
+    evidence, missing amounts and variant links. Exact formulations and organism/assay
+    assignment remain unresolved; no new native growth or concentration claim.
+  source: PMID:21296571
 media_term:
   preferred_term: MediaDB Medium 315
   term:
@@ -331,3 +339,41 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:21296571
+  title: Development of chemically defined media supporting high cell density growth
+    of Ketogulonicigenium vulgare and Bacillus megaterium.
+  authors: Zhang J; Zhou J; Liu J; Chen K; Liu L; Chen J
+  year: 2011
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract_only; owner=MEDIADB:315;
+    discovery_sourceID=123; source_url=https://doi.org/10.1016/j.biortech.2010.10.124;
+    alternate_identifier=doi:10.1016/j.biortech.2010.10.124; raw=references_cache/papers/PMID_21296571.xml;
+    markdown=references_cache/papers/PMID_21296571.md; PubMed Abstract, study endpoint;
+    exact excerpt="key components were correlated to biomass, 2-KLG productivity".
+    Formulation_unresolved: The abstract reports supplement effects and 2-keto-L-gulonic-acid
+    production in a context involving two organisms, not independent growth of each
+    on this local recipe. Its highlighted serine, glycine, threonine, proline, nicotinic-acid
+    and biotin supplements are not entries in this 31-ingredient local base; the accessible
+    text does not identify Synthetic Medium C or reconcile that base with the optimized
+    treatment. No supplement amounts, production yield or combined biomass measurement
+    are imported as canonical recipe values or organism-specific growth metrics. Reported
+    organism=Ketogulonicigenium vulgare; canonical scientific name=Ketogulonicigenium
+    vulgare; NCBITaxon:92945; actual rank=species; taxonomy_match=species_name; role=production-associated
+    organism; strain and individual-versus-associated culture outcome unresolved.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=92945&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/physiology-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/physiology-study-candidates-20261013.md.
+    Reported organism=Bacillus megaterium; canonical scientific name=Priestia megaterium;
+    NCBITaxon:1404; actual rank=species; taxonomy_match=verified_species_synonym;
+    role=production-associated organism; strain and independent growth not established.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1404&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/physiology-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/physiology-study-candidates-20261013.md.
+    Inventory covers inspected medium-relevant passages, not the entire paper. Bounded
+    taxonomy misses do not prove absence. Images/supplements and complete inherited
+    formulas are not certified; correction/retraction coverage is limited to inspected
+    publication metadata. All existing ingredients, concentrations (including deliberately
+    missing amounts), evidence, references, links, preparation and history remain
+    unchanged. No new native growth assertion, concentration EvidenceItem or resolved
+    variant.'

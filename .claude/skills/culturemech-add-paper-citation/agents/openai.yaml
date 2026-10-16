@@ -1,0 +1,4 @@
+interface:
+  display_name: "CultureMech Paper Citation"
+  short_description: "Add paper evidence, variants, and organism taxonomy"
+  default_prompt: "Use $culturemech-add-paper-citation to add this DOI or PMID to the specified CultureMech record, accounting for recipe variations and organism taxonomy."

@@ -166,6 +166,14 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-10-13T21:09:19.427499+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, source/Markdown archive links, short excerpts
+    and qualified scientific-name/NCBI taxonomy notes. Preserved prior recipe values
+    and history. Formula, chemical-form and strain discrepancies remain explicit;
+    no new native growth or concentration assertion.
+  source: PMID:20543878
 media_term:
   preferred_term: MediaDB Medium 175
   term:
@@ -178,3 +186,95 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+references:
+- reference: PMID:20543878
+  title: Characterization of growth and metabolism of the haloalkaliphile Natronomonas
+    pharaonis.
+  authors: Gonzalez O; Oberwinkler T; Mansueto L; Pfeiffer F; Mendoza E; Zimmer R;
+    Oesterhelt D
+  year: 2010
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract_and_primary_article_with_Text_S1;
+    owner=MEDIADB:175; discovery_sourceID=66; source_url=https://doi.org/10.1371/journal.pcbi.1000799;
+    alternate_identifier=doi:10.1371/journal.pcbi.1000799; alternate_identifier=PMC2881530;
+    raw=references_cache/papers/PMID_20543878.xml; markdown=references_cache/papers/PMID_20543878.md;
+    full_raw=references_cache/papers/primary_html/older-followup-source-66-20261013.html;
+    full_markdown=references_cache/papers/primary_html/older-followup-source-66-20261013.md;
+    supplement_raw=references_cache/papers/primary_pdf/gonzalez-2010-text-s1-20261013.pdf;
+    supplement_markdown=references_cache/papers/primary_pdf/gonzalez-2010-text-s1-20261013.md;
+    Materials and Methods, Growth on acetate; exact excerpt="Natronomonas pharaonis
+    strain Gabara (DSM 2160) was grown under aerobic conditions". Introduction, other
+    strain; exact excerpt="strain SP1 from lake Magadi in Kenya (DSM 3395)". Text
+    S1, PDF page 3, Figure 2 caption; exact excerpt="Natronomonas pharaonis was grown
+    aerobically on a single carbon source:". Reported organism=Natronomonas pharaonis
+    strain Gabara (DSM 2160); canonical scientific name=Natronomonas pharaonis DSM
+    2160; NCBITaxon:348780; actual rank=strain; taxonomy_match=exact_strain_synonym;
+    role=experimental strain; NCBI verifies Gabara synonym and archaeal lineage. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=348780&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    Reported organism=Natronomonas pharaonis SP1 (DSM 3395); canonical scientific
+    name=Natronomonas pharaonis; NCBITaxon:2257; actual rank=species; taxonomy_match=parent_rank_only;
+    role=other strain in Introduction, not the focal strain; species parent only.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2257&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    Reported organism=Halobacterium salinarum; canonical scientific name=Halobacterium
+    salinarum; NCBITaxon:2242; actual rank=species; taxonomy_match=exact_species;
+    role=background physiological/metabolic comparison. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2242&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    Reported organism=Escherichia coli (E. coli); canonical scientific name=Escherichia
+    coli; NCBITaxon:562; actual rank=species; taxonomy_match=exact_species; role=background
+    metabolic-model examples. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    Reported organism=Methanosarcina barkeri (M. barkeri); canonical scientific name=Methanosarcina
+    barkeri; NCBITaxon:2208; actual rank=species; taxonomy_match=exact_species; role=background
+    model; expanded using reference 18 title. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2208&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    Reported organism=Lactobacillus plantarum (L. plantarum); canonical scientific
+    name=Lactiplantibacillus plantarum; NCBITaxon:1590; actual rank=species; taxonomy_match=exact_synonym;
+    role=background model; expanded using reference 19 title; accepted name Lactiplantibacillus
+    plantarum. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1590&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-additional-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-additional-20261013.md.
+    Reported organism=Methanocaldococcus jannaschii; canonical scientific name=Methanocaldococcus
+    jannaschii; NCBITaxon:2190; actual rank=species; taxonomy_match=exact_species;
+    role=background pathway examples, not local-medium growth. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2190&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    Reported organism=Acidianus ambivalens; canonical scientific name=Acidianus ambivalens;
+    NCBITaxon:2283; actual rank=species; taxonomy_match=exact_species; role=respiratory-chain
+    comparison, not local-medium growth. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2283&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    Growth-on-acetate methods explicitly link Gabara DSM 2160 to Text S1 Table 1;
+    Figure 2 of that supplement reports actual cultivation, unlike the separate model
+    predictions. Text S1 pages 2-3 were visually checked against the PDF. Its thirteen
+    table entries numerically correspond to the local molar amounts after unit scaling,
+    but chemical-form identity remains unresolved: the source specifies calcium chloride
+    dihydrate and ferrous sulfate heptahydrate where local labels explicitly say anhydrous,
+    plus hydrated magnesium, copper and zinc sulfates and unusual phosphate-hydrate
+    labels. The phosphate entries are retained as printed in the archived table, not
+    silently swapped or corrected. The source table reports pH 9.2, absent from the
+    native recipe. These may represent import/chemical-form errors rather than biological
+    medium variants; do not manufacture a resolved variant before reconciling identity.
+    The source''s later Table S4 reference is inconsistent with its explicit Text
+    S1 Table 1 citation; both locators are retained as a source discrepancy. Analytical
+    TOC, oxygen-consumption and extraction reagents are not medium ingredients. HTML
+    formula images leave gaps in Markdown and are not reconstructed from guesses.
+    Local category bacterial conflicts with the verified archaeal study organism;
+    classification correction remains a separate unresolved finding. Historical source/owner
+    spelling Gonzales differs from primary Gonzalez; DOI, title and year establish
+    identity. No parent-medium growth or concentration certification is added. MEDIADB:175
+    remains the authoritative owner; inherited preparation and classification are
+    not recertified. See Text S1 chemical-form comparison, not a new resolved variant.
+    Inventory covers the inspected medium-relevant passages, not every organism in
+    the full paper or its bibliography. Correction/retraction coverage is limited
+    to inspected publication metadata. Bounded taxonomy misses do not establish absence.
+    All original ingredients, amounts, preparation, history and links are preserved,
+    not newly certified. No new native growth assertion, resolved variant or concentration
+    evidence.'

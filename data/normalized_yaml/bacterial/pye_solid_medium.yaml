@@ -112,6 +112,15 @@ curation_history:
     FoodOn, or ChEBI terms using TOGO M2872 and Marks et al. 2010. Left pH and recipe
     temperature unset because the source does not report a formulation pH and reports
     30 C as a study incubation condition.
+- timestamp: '2026-10-14T01:06:41.461765+00:00'
+  curator: codex
+  action: CURATED_PAPER_CITATIONS_AND_PROVENANCE
+  notes: Added or enriched verified paper citations and source archive/Markdown links;
+    recorded bounded formulation and organism assessments, corrected alias/correction
+    dispositions, and consolidated only verified duplicate bibliography entries. Preserved
+    prior recipe fields, evidence, links and history. No new growth, concentration
+    or resolved-variant claim. Whitchurch review is non-operational identity only.
+  source: https://doi.org/10.1128/JB.00255-10; https://pmc.ncbi.nlm.nih.gov/articles/PMC2897358/
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
@@ -119,4 +128,40 @@ references:
 - reference: https://togomedium.org/medium/M2872
 - reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2872
 - reference: https://doi.org/10.1128/JB.00255-10
-- reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC2897358/
+  title: The genetic basis of laboratory adaptation in Caulobacter crescentus.
+  authors: Marks ME; Castro-Rojas CM; Teiling C; Du L; Kapatral V; Walunas TL; Crosson
+    S
+  year: 2010
+  notes: source_type=journal_article; discovery_mode=existing_source_identity_followup;
+    accessed_on=2026-10-14; source_access=PubMed_abstract_not_full_text; doi=10.1128/JB.00255-10;
+    pmid=20472802; pmcid=PMC2897358; raw=references_cache/papers/PMID_20472802.xml;
+    markdown=references_cache/papers/PMID_20472802.md;  PubMed abstract, strain comparison;
+    exact excerpt="C. crescentus strain CB15 and its derivative NA1000". Reported
+    organism/group=Caulobacter crescentus CB15; canonical scientific name=Caulobacter
+    vibrioides; NCBITaxon:155892; actual rank=species; taxonomy_match=parent_rank_only;
+    role=named study strain; current species synonym verified but exact strain node
+    not assigned. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=155892&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/bibliographic-url-leads-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/bibliographic-url-leads-20261014.md.
+    Reported organism/group=Caulobacter crescentus NA1000; canonical scientific name=Caulobacter
+    vibrioides; NCBITaxon:155892; actual rank=species; taxonomy_match=parent_rank_only;
+    role=distinct laboratory derivative, not interchangeable with CB15. Lookup_on=2026-10-14;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=155892&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/bibliographic-url-leads-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/bibliographic-url-leads-20261014.md.
+    Reported organism/group=Pseudomonas aeruginosa; canonical scientific name=Pseudomonas
+    aeruginosa; NCBITaxon:287; actual rank=species; taxonomy_match=exact_species;
+    role=abstract background comparator only; no experimental or growth claim curated.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=287&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    PubMed verifies that the existing DOI and PMC URLs identify one paper. The abstract
+    does not enumerate PYE or assign an individual observation to solid versus liquid
+    medium. The record's existing formula is preserved, not newly certified. Full-text
+    access returned a challenge/API error in this review; no strain outcome is transferred
+    to this owner. Correction/retraction coverage is limited to inspected publication
+    metadata and identified notices, not an exhaustive audit. No new native growth
+    assertion, concentration evidence or resolved variant. Prior ingredients, preparation,
+    evidence, links and history are preserved, not newly certified. Verified alternate
+    native URL=https://pmc.ncbi.nlm.nih.gov/articles/PMC2897358/. Duplicate bibliography
+    entry consolidated.

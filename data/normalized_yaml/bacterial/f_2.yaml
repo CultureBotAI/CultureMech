@@ -164,6 +164,286 @@ applications:
 - Microbial cultivation
 references:
 - reference: doi.org/10.1139/m62-029
+- reference: doi:10.1038/srep10036
+  title: 'Proteomic-based biotyping reveals hidden diversity within a microalgae culture
+    collection: An example using Dunaliella.'
+  authors: Emami K; Hack E; Nelson A; Brain CM; Lyne FM; Mesbahi E; Day JG; Caldwell
+    GS
+  year: 2015
+  notes: 'source_type=journal_article; discovery_mode=catalog_page; discovery_context=CCAP
+    19/18 bibliography followed by full-text methods inspection; accessed_on=2026-10-14;
+    PMID:25963242; PMCID:PMC4650328; source_url=https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4650328/fullTextXML;
+    raw_archive=references_cache/papers/primary_xml/ccap-19-18-PMC4650328-20261014.xml;
+    markdown_archive=references_cache/papers/primary_xml/ccap-19-18-PMC4650328-20261014.md;
+    access_scope=full JATS article, Table 1 and bounded cultivation assays. Publication
+    identity, eight authors and 2015 year verified against archived PubMed XML and
+    JATS; publisher article also inspected. Archived PubMed notice list is empty;
+    not a claim of exhaustive notice discovery. locator=Methods / Microalgae and cyanobacteria
+    strains and culture conditions; exact excerpt="using either sterile f/2 or double
+    strength f/2 media"; The general maintenance description leaves f/2 versus double-strength
+    f/2 unassigned per strain. Do not assign both strengths to every isolate or equate
+    double strength with the distinct f/2 Quad child. Component-specific doubling
+    is not specified, so no resolved double-strength variant is assigned. The 34 f/2-relevant
+    study organisms/strain rows are: Reported scientific name=Dunaliella peircei;
+    strain=CCAP 19/2; canonical scientific name=Dunaliella peircei; NCBITaxon:147822;
+    actual rank=species; taxonomy_match=exact_name_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=147822;
+    scope=f/2 or double-strength f/2; general maintenance assignment unresolved. |
+    Reported scientific name=Dunaliella parva; strain=CCAP 19/9; canonical scientific
+    name=Dunaliella parva; NCBITaxon:3048; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3048; scope=f/2
+    or double-strength f/2; general maintenance assignment unresolved. | Reported
+    scientific name=Dunaliella parva; strain=CCAP 19/10; canonical scientific name=Dunaliella
+    parva; NCBITaxon:3048; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3048; scope=f/2
+    or double-strength f/2; general maintenance assignment unresolved. | Reported
+    scientific name=Dunaliella parva; strain=CCAP 19/1; canonical scientific name=Dunaliella
+    parva; NCBITaxon:3048; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3048; scope=f/2
+    or double-strength f/2; general maintenance assignment unresolved. | Reported
+    scientific name=Dunaliella parva; strain=CCAP 19/26; canonical scientific name=Dunaliella
+    parva; NCBITaxon:3048; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3048; scope=f/2
+    or double-strength f/2; general maintenance assignment unresolved. | Reported
+    scientific name=Dunaliella tertiolecta; strain=CCAP 19/6B; canonical scientific
+    name=Dunaliella tertiolecta; NCBITaxon:3047; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3047; scope=f/2
+    or double-strength f/2; general maintenance assignment unresolved. | Reported
+    scientific name=Dunaliella tertiolecta; strain=CCAP 19/24; canonical scientific
+    name=Dunaliella tertiolecta; NCBITaxon:3047; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3047; scope=f/2
+    or double-strength f/2; general maintenance assignment unresolved. | Reported
+    scientific name=Dunaliella tertiolecta; strain=CCAP 19/27; canonical scientific
+    name=Dunaliella tertiolecta; NCBITaxon:3047; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3047; scope=f/2
+    or double-strength f/2; general maintenance assignment unresolved. | Reported
+    scientific name=Dunaliella quartolecta; strain=CCAP 19/8; canonical scientific
+    name=Dunaliella quartolecta; NCBITaxon:346904; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=346904;
+    scope=f/2 or double-strength f/2; general maintenance assignment unresolved. |
+    Reported scientific name=Dunaliella minuta; strain=CCAP 19/5; canonical scientific
+    name=Dunaliella minuta; NCBITaxon:289299; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=289299;
+    scope=f/2 or double-strength f/2; general maintenance assignment unresolved. |
+    Reported scientific name=Dunaliella bioculata; strain=CCAP 19/4; canonical scientific
+    name=Dunaliella bioculata; NCBITaxon:13790; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=13790;
+    scope=f/2 or double-strength f/2; general maintenance assignment unresolved. |
+    Reported scientific name=Dunaliella primolecta; strain=CCAP 19/34; canonical scientific
+    name=Dunaliella primolecta; NCBITaxon:257627; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=257627;
+    scope=f/2 or double-strength f/2; general maintenance assignment unresolved. |
+    Reported scientific name=Dunaliella salina; strain=CCAP 19/3; canonical scientific
+    name=Dunaliella salina; NCBITaxon:3046; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3046; scope=f/2
+    or double-strength f/2; general maintenance assignment unresolved. | Reported
+    scientific name=Dunaliella salina; strain=CCAP 19/18; canonical scientific name=Dunaliella
+    salina; NCBITaxon:3046; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3046; scope=f/2
+    or double-strength f/2; general maintenance assignment unresolved. | Reported
+    scientific name=Dunaliella salina; strain=CCAP 19/20; canonical scientific name=Dunaliella
+    salina; NCBITaxon:3046; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3046; scope=f/2
+    or double-strength f/2; general maintenance assignment unresolved. | Reported
+    scientific name=Dunaliella salina; strain=CCAP 19/25; canonical scientific name=Dunaliella
+    salina; NCBITaxon:3046; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3046; scope=f/2
+    or double-strength f/2; general maintenance assignment unresolved. | Reported
+    scientific name=Dunaliella salina; strain=CCAP 19/30; canonical scientific name=Dunaliella
+    salina; NCBITaxon:3046; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3046; scope=f/2
+    or double-strength f/2; general maintenance assignment unresolved. | Reported
+    scientific name=Dunaliella salina; strain=CCAP 19/31; canonical scientific name=Dunaliella
+    salina; NCBITaxon:3046; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3046; scope=f/2
+    or double-strength f/2; general maintenance assignment unresolved. | Reported
+    scientific name=Dunaliella salina; strain=CCAP 19/39; canonical scientific name=Dunaliella
+    salina; NCBITaxon:3046; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3046; scope=f/2
+    or double-strength f/2; general maintenance assignment unresolved. | Reported
+    scientific name=Dunaliella polymorpha; strain=CCAP 19/7A; canonical scientific
+    name=Dunaliella polymorpha; NCBITaxon:346903; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=346903;
+    scope=f/2 or double-strength f/2; general maintenance assignment unresolved. |
+    Reported scientific name=Dunaliella polymorpha; strain=CCAP 19/7B; canonical scientific
+    name=Dunaliella polymorpha; NCBITaxon:346903; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=346903;
+    scope=f/2 or double-strength f/2; general maintenance assignment unresolved. |
+    Reported scientific name=Dunaliella polymorpha; strain=CCAP 19/7C; canonical scientific
+    name=Dunaliella polymorpha; NCBITaxon:346903; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=346903;
+    scope=f/2 or double-strength f/2; general maintenance assignment unresolved. |
+    Reported scientific name=Dunaliella sp.; strain=CCAP 19/22; canonical scientific
+    name=Dunaliella sp. CCAP19/22; NCBITaxon:1478121; actual rank=species; taxonomy_match=equivalent_strain_label_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1478121;
+    scope=f/2 or double-strength f/2; general maintenance assignment unresolved. |
+    Reported scientific name=Dunaliella sp.; strain=CCAP 19/33; canonical scientific
+    name=Dunaliella sp. CCAP19/33; NCBITaxon:1478124; actual rank=species; taxonomy_match=equivalent_strain_label_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1478124;
+    scope=f/2 or double-strength f/2; general maintenance assignment unresolved. |
+    Reported scientific name=Dunaliella sp.; strain=CCAP 19/15; canonical scientific
+    name=Dunaliella sp. CCAP19/15; NCBITaxon:1478118; actual rank=species; taxonomy_match=equivalent_strain_label_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1478118;
+    scope=f/2 or double-strength f/2; general maintenance assignment unresolved. |
+    Reported scientific name=Dunaliella sp.; strain=CCAP 19/21; canonical scientific
+    name=Dunaliella sp. CCAP19/21; NCBITaxon:1193429; actual rank=species; taxonomy_match=equivalent_strain_label_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1193429;
+    scope=f/2 or double-strength f/2; general maintenance assignment unresolved. |
+    Reported scientific name=Dunaliella sp.; strain=CCAP 19/23; canonical scientific
+    name=Dunaliella sp. CCAP19/23; NCBITaxon:859802; actual rank=species; taxonomy_match=equivalent_strain_label_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=859802;
+    scope=f/2 or double-strength f/2; general maintenance assignment unresolved. |
+    Reported scientific name=Dunaliella sp.; strain=CCAP 19/14; canonical scientific
+    name=Dunaliella polymorpha; NCBITaxon:346903; actual rank=species; taxonomy_match=authority_includes_strain_label_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=346903;
+    scope=f/2 or double-strength f/2; general maintenance assignment unresolved. |
+    Reported scientific name=Dunaliella sp.; strain=CCAP 19/12; canonical scientific
+    name=Dunaliella salina; NCBITaxon:3046; actual rank=species; taxonomy_match=authority_includes_strain_label_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3046; scope=f/2
+    or double-strength f/2; general maintenance assignment unresolved. | Reported
+    scientific name=Dunaliella sp.; strain=CCAP 19/19; canonical scientific name=Dunaliella
+    sp. CCAP19/19; NCBITaxon:1478119; actual rank=species; taxonomy_match=equivalent_strain_label_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1478119;
+    scope=f/2 or double-strength f/2; general maintenance assignment unresolved. |
+    Reported scientific name=Dunaliella sp.; strain=CCAP 19/32; canonical scientific
+    name=Dunaliella sp. CCAP19/32; NCBITaxon:1478123; actual rank=species; taxonomy_match=equivalent_strain_label_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1478123;
+    scope=f/2 or double-strength f/2; general maintenance assignment unresolved. |
+    Reported scientific name=Tetraselmis suecica; strain=Seasalter Shellfish Ltd;
+    no accession reported; canonical scientific name=Tetraselmis suecica; NCBITaxon:270643;
+    actual rank=species; taxonomy_match=exact_name_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=270643;
+    scope=f/2 or double-strength f/2; exact maintenance strength unresolved. | Reported
+    scientific name=Isochrysis galbana; strain=CCAP 927/1; canonical scientific name=Isochrysis
+    galbana; NCBITaxon:37099; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=37099;
+    scope=silicate-supplemented f/2. | Reported scientific name=Arthrospira platensis;
+    strain=CCMP 1295; canonical scientific name=Limnospira platensis; NCBITaxon:118562;
+    actual rank=species; taxonomy_match=verified_synonym_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=118562;
+    scope=nitrate-supplemented f/2 at pH 8. Separate time-course exact excerpt="the
+    isolates CCAP 19/27 and CCAP 19/7C were batch cultured for 20 days using sterile
+    f/2 medium"; locator=Methods / Time course growth study; CCAP 19/27 is reported
+    as Dunaliella tertiolecta and CCAP 19/7C as Dunaliella polymorpha in Table 1.
+    Separate assay strain excerpt="Two strains of D. polymorpha (CCAP 19/7A and 19/7C)";
+    locator=Methods / Bacterial interference experiment. Only the treated cultures
+    support the antibiotic variant; untreated controls and unidentified culturable
+    co-occurring bacteria are separate observations. Bacteria sampled onto marine
+    agar do not establish Dunaliella growth on that agar. Other-media observations
+    excluded from the f/2 cohort: Reported scientific name=Dunaliella acidophila;
+    strain=CCAP 19/35; canonical scientific name=Dunaliella acidophila; NCBITaxon:38272;
+    actual rank=species; taxonomy_match=exact_name_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=38272;
+    scope=AJS acidified with hydrochloric acid. Reported scientific name=Chlorella
+    vulgaris; strain=CCAP 211/63; canonical scientific name=Chlorella vulgaris; NCBITaxon:3077;
+    actual rank=species; taxonomy_match=exact_name_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3077;
+    scope=Jaworski''s medium with sterilised deionised water. No whole-paper or analytical-calibration
+    organism inventory is claimed. The silicate-supplemented study cannot yet be equated
+    to either imported f/2 + Si owner because the paper omits the exact salt/hydrate
+    and other formulation details. The nitrate context remains a reported supplement
+    value, not a calculated total. Seven genus-only strain labels match NCBI unclassified
+    species-rank nodes; the rank is not a newly invented binomial or a strain rank.
+    NCBI includes CCAP 19/12 under Dunaliella salina and CCAP 19/14 under Dunaliella
+    polymorpha; these current authority assignments do not rewrite the paper''s genus-only
+    labels. The exact full-name strain queries for CCAP 211/63, CCAP 927/1 and CCMP
+    1295 returned no result; this is not proof of absence. NCBI Chlorella vulgaris
+    includes the alternative label Chlorella sp. CCAP 211/63. Arthrospira platensis
+    is a verified synonym of current Limnospira platensis. Taxonomy checked against
+    NCBI ESearch/EFetch archived 2026-10-14 at references_cache/papers/taxonomy/emami-2015-20261014.xml
+    and references_cache/papers/taxonomy/emami-2015-strains-20261014.xml. Table 1
+    gives names assigned by depositors; the study questions the reliability of those
+    historical species assignments. Name/rank matching is not independent biological
+    reidentification of a culture. Species-level mappings do not prove an exact strain
+    taxon. This is a medium-use citation and bounded study formulation, not certification
+    of every amount, stock, chemical form, preparation step or condition in the canonical
+    import. Current CCAP sources distinguish stock batches from additions to final
+    medium; flattened local entries cannot be treated as the paper''s measured final
+    concentrations. The current JM/f2 PDFs are revision 002, reviewed 29 May 2026,
+    not proof of the exact 2015 formulation; the inspected AJS PDF gives no comparable
+    revision date. Parent amounts and physical state remain unchanged. No new target_organisms
+    or growth metrics are added: exact full-formula equivalence is unresolved, strain/assay
+    scopes must not be collapsed, and the current KGX growth exporter ignores scoped_to_variant.
+    No affected growth edge is exported. This owner is encoded SOLID_AGAR, but the
+    paper reports flask/OD culture contexts; it is not evidence of growth on that
+    encoded agar parent.'
+- reference: doi:10.3389/fenrg.2015.00020
+  title: Evaluation of Diverse Microalgal Species as Potential Biofuel Feedstocks
+    Grown Using Municipal Wastewater
+  authors: Hiibel, Sage R.; Lemos, Mark S.; Kelly, Brian P.; Cushman, John C.
+  year: 2015
+  notes: 'source_type=journal_article; discovery_mode=cross_reference; accessed_on=2026-10-14;
+    source_url=https://www.frontiersin.org/journals/energy-research/articles/10.3389/fenrg.2015.00020/full;
+    raw_archive=references_cache/papers/primary_html/2asw-frontiers-2015-20261014.html;
+    markdown_archive=references_cache/papers/primary_html/2asw-frontiers-2015-20261014.md;
+    access_scope=Publisher full HTML, Strains and media, Table 1 and footnotes; wastewater
+    assays kept separate. locator=Materials and Methods / Strains and media; Table
+    1 brackish rows and footnote e; exact excerpt="the vitamin solution from the 2ASW
+    medium (Gomord et al., 2010), which contained additional vitamin components, was
+    used in place of that described for the original f/2 medium.". The explicit vitamin
+    replacement is retained as a bounded study variant, not a resolved full formulation.
+    The cited Gomord 2010 bibliography entry is Plant-specific glycosylation patterns
+    in the context of therapeutic protein production, DOI 10.1111/J.1467-7652.2009.00497.X;
+    it does not establish the missing 2ASW vitamin recipe. No dose, extra vitamin
+    identity, seawater base, pH or equivalence to the local flattened stock concentrations
+    is inferred. Organism inventory: reported scientific name=Nannochloropsis sp.;
+    strain=CCAP 211/78; accepted study name=Nannochloropsis sp.; canonical scientific
+    name=Nannochloropsis oceanica; NCBITaxon:145522; actual rank=species; taxonomy_match=authority_includes_strain_label_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=145522;
+    lookup_date=2026-10-14; NCBI includes Nannochloropsis sp. CCAP211/78 under Nannochloropsis
+    oceanica; the returned node rank is species, not strain. Preserve the paper''s
+    genus-only label | reported scientific name=Nannochloropsis sp.; strain=CCAP 849/8;
+    accepted study name=Nannochloropsis sp.; canonical scientific name=Nannochloropsis;
+    NCBITaxon:5748; actual rank=genus; taxonomy_match=parent_rank_only; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5748;
+    lookup_date=2026-10-14; No exact strain-label match verified; genus-only paper
+    identification retained without inventing a binomial | reported scientific name=Nannochloropsis
+    sp.; strain=CCAP 849/9; accepted study name=Nannochloropsis sp.; canonical scientific
+    name=Nannochloropsis; NCBITaxon:5748; actual rank=genus; taxonomy_match=parent_rank_only;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5748; lookup_date=2026-10-14;
+    No exact strain-label match verified; genus-only paper identification retained
+    without inventing a binomial | reported scientific name=Nannochloropsis gaditana;
+    strain=CCAP 849/5; accepted study name=Nannochloropsis gaditana; canonical scientific
+    name=Microchloropsis gaditana; NCBITaxon:72520; actual rank=species; taxonomy_match=verified_synonym_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=72520;
+    lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+    taxon or independent biological identification | reported scientific name=Nannochloropsis
+    oceanica; strain=CCAP 849/10; accepted study name=Nannochloropsis oceanica; canonical
+    scientific name=Nannochloropsis oceanica; NCBITaxon:145522; actual rank=species;
+    taxonomy_match=exact_name_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=145522;
+    lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+    taxon or independent biological identification | reported scientific name=Nannochloropsis
+    oculata; strain=CCAP 849/1; accepted study name=Nannochloropsis oculata; canonical
+    scientific name=Nannochloropsis oculata; NCBITaxon:43925; actual rank=species;
+    taxonomy_match=exact_name_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=43925;
+    lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+    taxon or independent biological identification | reported scientific name=Nannochloropsis
+    oculata; strain=CCAP 849/7; accepted study name=Nannochloropsis oculata; canonical
+    scientific name=Nannochloropsis oculata; NCBITaxon:43925; actual rank=species;
+    taxonomy_match=exact_name_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=43925;
+    lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+    taxon or independent biological identification | reported scientific name=Nannochloropsis
+    salina; strain=CCAP 849/2; accepted study name=Nannochloropsis salina; canonical
+    scientific name=Microchloropsis salina; NCBITaxon:2511165; actual rank=species;
+    taxonomy_match=verified_synonym_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2511165;
+    lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+    taxon or independent biological identification | reported scientific name=Nannochloropsis
+    salina; strain=CCAP 849/3; accepted study name=Nannochloropsis salina; canonical
+    scientific name=Microchloropsis salina; NCBITaxon:2511165; actual rank=species;
+    taxonomy_match=verified_synonym_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2511165;
+    lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+    taxon or independent biological identification | reported scientific name=Nannochloropsis
+    salina; strain=CCAP 849/4; accepted study name=Nannochloropsis salina; canonical
+    scientific name=Microchloropsis salina; NCBITaxon:2511165; actual rank=species;
+    taxonomy_match=verified_synonym_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2511165;
+    lookup_date=2026-10-14; Verified species-level name match, not an exact strain
+    taxon or independent biological identification | reported scientific name=Nannochloropsis
+    salina; strain=CCAP 849/6; accepted study name=Nannochloropsis gaditana; canonical
+    scientific name=Microchloropsis gaditana; NCBITaxon:72520; actual rank=species;
+    taxonomy_match=paper_footnote_synonym_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=72520;
+    lookup_date=2026-10-14; Table 1 footnote e identifies CCAP 849/6 as Nannochloropsis
+    gaditana, an NCBI synonym of Microchloropsis gaditana. Retain the table''s historical
+    salina label, but do not map this row to Microchloropsis salina. Taxonomy sources=references_cache/papers/taxonomy/hiibel-maintenance-20261014.xml
+    and references_cache/papers/taxonomy/hiibel-followup-20261014.xml. The preliminary
+    centrate experiments are not f/2 growth outcomes. General maintenance is room
+    temperature with an 18/6 h light/dark cycle. No new native growth assertion or
+    metric is added because complete study formulation is unresolved and the current
+    exporter ignores scoped_to_variant. This imported owner is SOLID_AGAR; the study
+    does not certify growth on that agar parent. '
 curation_history:
 - timestamp: '2026-01-26T17:53:19.584112Z'
   curator: mediadive-import
@@ -187,6 +467,27 @@ curation_history:
   notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-14T03:31:53.109378+00:00'
+  curator: codex
+  action: ADDED_EMAMI_2015_CITATION_AND_STUDY_VARIANTS
+  notes: Added archived paper metadata, exact cultivation excerpts and assay-specific
+    scientific names with verified NCBI name/rank mappings. Stored supported acid
+    or f/2 supplement differences as bounded inline variants where applicable; HCl
+    dose is unquantified, other study concentrations are directly reported and not
+    converted. Complete study formulas remain unresolved. Preserved all existing ingredients,
+    stocks, concentrations, physical state, evidence and links. No new native growth
+    assertion, record merge or publication.
+  source: doi:10.1038/srep10036; PMID:25963242
+- timestamp: '2026-10-14T04:22:31.227356+00:00'
+  curator: codex
+  action: ADDED_EGJM_OR_HIIBEL_MAINTENANCE_CITATION
+  notes: Added archived publication metadata, exact excerpts and qualified scientific-name/NCBI
+    rank mappings. Added a bounded vitamin replacement variant with unresolved dose
+    and full formula; no new native growth assertion. Preserved all previous claims,
+    quantities, physical states, links and evidence; no export or publication.
+  source: doi:10.3389/fenrg.2015.00020
+  changes: 'This owner: +1 citation; +1 inline variants; +0 concentration evidence
+    items; +0 growth observations. No amount values changed.'
 variant_children:
 - path: data/normalized_yaml/bacterial/f_2_quad.yaml
   relationship: CONCENTRATION_VARIANT
@@ -194,3 +495,111 @@ variant_children:
   name: f_2_quad
   notes: f/2 Quad increases NaNO3 and NaH2PO4 x 2 H2O from 1 g/L to 4 g/L while seawater,
     agar, trace metals, and vitamins remain unchanged.
+variants:
+- name: f_2_silicate_supplement_1_06e_4_m
+  relationship: SUPPLEMENTED_VARIANT
+  description: Emami et al. (2015) f/2 supplemented with silicate for Isochrysis galbana
+    CCAP 927/1; bounded supplement claim, not a fully resolved recipe.
+  modifications:
+  - The study reports f/2 supplemented with 1.06e-4 M silicate. Preserve this stated
+    supplementation concentration without assigning an unreported silicate salt, hydrate,
+    stock recipe or additional mass conversion.
+  - Other nutrients, total silicate including the base, final-volume preparation and
+    equivalence to local f/2 + Si records remain unresolved.
+  evidence:
+  - reference: doi:10.1038/srep10036
+    supports: SUPPORT
+    snippet: Isochrysis galbana was cultured using f/2 supplemented with 1.06 × 10−4
+      M silicate
+    explanation: 'Supports only variants[name=f_2_silicate_supplement_1_06e_4_m].modifications[0].
+      Locator: Methods / Microalgae and cyanobacteria strains and culture conditions.
+      Reported scientific name=Isochrysis galbana; strain=CCAP 927/1; canonical scientific
+      name=Isochrysis galbana; NCBITaxon:37099; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+      lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=37099;
+      scope=silicate-supplemented f/2. Directly stated supplement value in the study
+      medium, not a stock concentration or calculated total including background.
+      No calculation. Local f/2 + Si owners specify sodium silicate nonahydrate and
+      differently encoded stock amounts; the paper does not establish exact equivalence.'
+- name: f_2_nitrate_supplement_29_4_mm
+  relationship: SUPPLEMENTED_VARIANT
+  description: Emami et al. (2015) nitrate-supplemented f/2 at pH 8 for reported Arthrospira
+    platensis CCMP 1295; current NCBI synonym maps to Limnospira platensis.
+  modifications:
+  - The study reports f/2 supplemented with 29.4 mM NaNO3 and adjusted to pH 8. Retain
+    the stated supplement concentration; do not infer whether it includes the base-medium
+    nitrate or calculate a total nitrate concentration.
+  - Remaining formulation details, chemical stock forms and equivalence to a specific
+    canonical amount set are unresolved.
+  evidence:
+  - reference: doi:10.1038/srep10036
+    supports: SUPPORT
+    snippet: A. platensis was cultured using f/2 supplemented with 29.4 mM NaNO3 and
+      adjusted to pH 8.
+    explanation: 'Supports only variants[name=f_2_nitrate_supplement_29_4_mm].modifications[0].
+      Locator: Methods / Microalgae and cyanobacteria strains and culture conditions.
+      Reported scientific name=Arthrospira platensis; strain=CCMP 1295; canonical
+      scientific name=Limnospira platensis; NCBITaxon:118562; actual rank=species;
+      taxonomy_match=verified_synonym_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=118562;
+      scope=nitrate-supplemented f/2 at pH 8. Directly reported supplementation value
+      and study pH, not a stock quantity or a universal optimum. No arithmetic; base-plus-supplement
+      total remains unresolved.'
+- name: f_2_penicillin_g_dihydrostreptomycin_supplement
+  relationship: SUPPLEMENTED_VARIANT
+  description: Emami et al. (2015) antibiotic-treated f/2 cultures of Dunaliella polymorpha
+    CCAP 19/7A and CCAP 19/7C, separated from untreated controls and later bacterial
+    marine-agar sampling.
+  modifications:
+  - 'Reported penicillin G treatment concentration: 200 micrograms per mL in the treated
+    f/2 culture; no unreported salt form, stock strength or conversion is assigned.'
+  - 'Reported dihydrostreptomycin sulphate treatment concentration: 50 micrograms
+    per mL in the same treated culture; not streptomycin, not a stock concentration,
+    and no hydrate assumption.'
+  - The untreated comparator remains separate. Unspecified base formulation details
+    and the later marine-agar bacterial assay must not be combined into this study
+    variant.
+  evidence:
+  - reference: doi:10.1038/srep10036
+    supports: SUPPORT
+    snippet: 'treated with the antibiotics penicillin G and dihydrostreptomycin sulphate
+      in a ratio of 200 μg mL−1: 50 μg mL−1.'
+    explanation: 'Supports only variants[name=f_2_penicillin_g_dihydrostreptomycin_supplement].modifications[0:2].
+      Locator: Methods / Bacterial interference experiment. Reported scientific name=Dunaliella
+      polymorpha; strain=CCAP 19/7A; canonical scientific name=Dunaliella polymorpha;
+      NCBITaxon:346903; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+      lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=346903;
+      scope=f/2 or double-strength f/2; general maintenance assignment unresolved.
+      Reported scientific name=Dunaliella polymorpha; strain=CCAP 19/7C; canonical
+      scientific name=Dunaliella polymorpha; NCBITaxon:346903; actual rank=species;
+      taxonomy_match=exact_name_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=346903;
+      scope=f/2 or double-strength f/2; general maintenance assignment unresolved.
+      These strain rows have a separate assay-specific assignment to f/2 in Methods
+      / Bacterial interference experiment, not an unresolved maintenance-strength
+      assignment. The two directly stated culture-treatment amounts share this exact
+      excerpt; no arithmetic. Marine-agar sampling concerns co-occurring bacteria,
+      not growth of Dunaliella on that agar.'
+- name: f_2_2asw_vitamin_replacement_hiibel_2015
+  relationship: SUBSTITUTED_COMPONENT_VARIANT
+  description: Hiibel et al. (2015) f/2 maintenance medium with a reported 2ASW vitamin-solution
+    replacement; composition and dose unresolved.
+  modifications:
+  - The vitamin solution described as coming from 2ASW replaces the original f/2 vitamin
+    solution; the paper states it contains additional vitamin components.
+  - Vitamin identities, stock composition, addition dose and resulting final concentrations
+    are not quantified in the inspected methods. The cited Gomord 2010 reference is
+    a plant glycosylation paper and cannot supply these missing details.
+  - Other formulation details, physical-state equivalence, and exact correspondence
+    to this imported stock encoding remain unresolved. This is not the silicate, nitrate,
+    antibiotic or Quad formulation.
+  purpose: Maintenance of the Table 1 brackish Nannochloropsis cohort, separate from
+    wastewater screening.
+  evidence:
+  - reference: doi:10.3389/fenrg.2015.00020
+    supports: SUPPORT
+    snippet: the vitamin solution from the 2ASW medium (Gomord et al., 2010), which
+      contained additional vitamin components, was used in place of that described
+      for the original f/2 medium.
+    explanation: 'Supports only the stated replacement in variants[name=f_2_2asw_vitamin_replacement_hiibel_2015].modifications[0].
+      Locator: Materials and Methods / Strains and media. No numerical vitamin quantity,
+      resolved complete formula or parent-medium growth is asserted; cohort names,
+      strain designations, NCBI ranks and qualified taxonomy decisions are retained
+      in this paper''s bibliography notes.'

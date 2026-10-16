@@ -231,6 +231,14 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T16:00:31.974764+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography, archived abstract/Markdown provenance,
+    exact excerpts and qualified scientific-name/NCBI mappings. Preserved formulation,
+    assay and metadata limits. Existing recipe fields and history unchanged; no new
+    native growth, concentration evidence or resolved variant.
+  source: PMID:1902208
 media_term:
   preferred_term: MediaDB Medium 388
   term:
@@ -242,3 +250,42 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:1902208
+  title: 'Light-activated heterotrophic growth of the cyanobacterium Synechocystis
+    sp. strain PCC 6803: a blue-light-requiring process.'
+  authors: Anderson SL; McIntosh L
+  year: 1991
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=PubMed_abstract_only; alternate_identifier=doi:10.1128/jb.173.9.2761-2767.1991;
+    owner=MEDIADB:388; discovery_sourceID=136; source_url=https://pubmed.ncbi.nlm.nih.gov/1902208/;
+    raw_abstract=references_cache/papers/PMID_1902208.xml; source_markdown=references_cache/papers/PMID_1902208.md.
+    alternate_identifier=PMC207855. PubMed abstract; exact excerpt="glucose-tolerant
+    strain". PubMed abstract; exact excerpt="under complete darkness". PubMed abstract;
+    exact excerpt="psbA mutant strain". Existing owners separate 56 mM glucose with
+    HEPES, 5 mM glucose with TES, and a mutant recipe listing diuron and four antibiotics
+    but no TES. These local differences and their amounts are not certified by the
+    abstract. It distinguishes growth after light pulses from failure under complete
+    darkness and separates the glucose-tolerant and psbA cultures. Do not transfer
+    a light-pulse result to uninterrupted darkness or infer that all listed mutant-selection
+    compounds were used together. Reported organism=Synechocystis sp. strain 6803
+    / Synechocystis sp. strain PCC 6803; canonical scientific name=Synechocystis sp.
+    PCC 6803; NCBITaxon:1148; actual rank=species; taxonomy_match=verified species
+    node; role=study organism; title and historical source identify PCC 6803, actual
+    NCBI rank species. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1148&retmode=xml.
+    Reported organism=glucose-tolerant Synechocystis strain 6803 and Synechocystis
+    strain 6803 psbA mutant; canonical scientific name=Synechocystis sp. PCC 6803;
+    NCBITaxon:1148; actual rank=species; taxonomy_match=parent_rank_only; role=distinct
+    experimental derivatives; exact derivative nodes unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1148&retmode=xml.
+    Illumination is a condition, not automatically a recipe variant. Growth yield,
+    rate and fluence are distinct; no unqualified metric or resolved variant is added.
+    Taxonomy archive=references_cache/papers/taxonomy/cyanobacterial-studies-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/cyanobacterial-studies-20261013.md.
+    Bounded lookup misses do not prove taxon absence. Organism inventory is limited
+    to inspected abstract passages, not the inaccessible full paper. Correction/retraction
+    coverage is limited to inspected publication metadata. Existing related-media
+    candidates were checked without asserting exact formulation equivalence. All prior
+    ingredients, quantities, preparation and history remain unchanged and uncertified
+    by this citation. No new native growth assertion, concentration evidence or resolved
+    variant.

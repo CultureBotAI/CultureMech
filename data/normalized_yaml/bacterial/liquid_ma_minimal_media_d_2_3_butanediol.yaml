@@ -169,6 +169,14 @@ curation_history:
   notes: Restored 3 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:20's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T08:37:27.779824+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_FORMULATION_LIMITS
+  notes: Added verified paper bibliography and archived source/Markdown links. Recorded
+    exact formulation discrepancies or abstract-only limitations and verified ADP1
+    taxonomy in citation notes. Preserved parent ingredients, preparation and prior
+    history; no resolved variant or growth association asserted.
+  source: PMID:18840283; PMID:18319726
 media_term:
   preferred_term: MediaDB Medium 20
   term:
@@ -180,3 +188,80 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:18840283
+  title: Iterative reconstruction of a global metabolic model of Acinetobacter baylyi
+    ADP1 using high-throughput growth phenotype and gene essentiality data.
+  authors: Durot M; Le Fèvre F; de Berardinis V; Kreimeyer A; Vallenet D; Combe C;
+    Smidtas S; Salanoubat M; Weissenbach J; Schachter V
+  year: 2008
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=6; medID=20. Publication identity was
+    verified against archived PubMed metadata and the exact MediaDB source/medium
+    joins. Database growth rows are discovery provenance, not independently verified
+    growth evidence. The generic Mazumdar et al. import citation remains historical
+    database provenance, not the specific experimental source. No correction/retraction
+    notice appears in the inspected PubMed entry; this is not an exhaustive notice
+    audit. doi:10.1186/1752-0509-2-85; PMC2606687. Full source/Markdown=references_cache/papers/primary_xml/durot-2008-pmc.xml
+    and durot-2008-pmc.v2.md; PubMed XML/abstract=references_cache/papers/PMID_18840283.{xml,md}.
+    Inspected Table 4 including footnotes, its Results context, and Methods/Growth
+    phenotyping of the mutant strains; the separately described wild-type Biolog assays
+    and in-silico predictions are not transferred to this formulation. Table 4 carbon
+    source=''D-2,3-butanediol''; nitrogen source=''ammonia''; conditionally essential
+    genes=10, dispensable genes=433. These are mutant phenotyping counts, not medium
+    growth rates or evidence that every ADP1 derivative grows. Separate exact Methods
+    excerpt=''supplemented with 25 mM of carbon sources''. Combined with the Table
+    4 row, this identifies the study''s carbon-source dose; it does not certify the
+    whole parent recipe. Table 4 specifies D-2,3-butanediol, whereas the local ingredient
+    is (R,R)-Butane-2,3-diol; the stereochemical equivalence was not independently
+    established here. Formulation_match=unresolved; variant_disposition=deferred_in_citation_notes.
+    Exact Methods excerpt=''25 mM KH2PO4'' specifies potassium dihydrogen phosphate,
+    unlike the parent''s dipotassium hydrogen phosphate. Literal trace-ingredient
+    token=''Na2NoO4''; cited protocol PMID:18319726 instead prints ''Na2MoO2''. Neither
+    token is silently corrected to the parent''s sodium molybdate formula. This unresolved
+    chemical identity prevents claiming an exact study variant. Hydrate forms, pH
+    and the parent''s generic filter-all preparation are not certified by these passages.
+    Exact Methods measurement excerpt=''Absorbance at 600 nm of 24 h cultures was
+    measured to monitor growth.''. This describes an assay endpoint, not an optimum
+    or a quantitative growth rate. No ingredient correction, resolved variant or positive
+    target-organism entry is added. Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977;
+    canonical label=Acinetobacter baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. Organism inventory is scoped to Table 4 and the
+    inspected mutant-phenotyping passages: Acinetobacter baylyi ADP1-derived mutants,
+    with gene-specific positive and negative outcomes; not an exhaustive whole-paper
+    organism review.'
+- reference: PMID:18319726
+  title: A complete collection of single-gene deletion mutants of Acinetobacter baylyi
+    ADP1.
+  authors: de Berardinis V; Vallenet D; Castelli V; Besnard M; Pinet A; Cruaud C;
+    Samair S; Lechaplais C; Gyapay G; Richez C; Durot M; Kreimeyer A; Le Fèvre F;
+    Schächter V; Pezo V; Döring V; Scarpelli C; Médigue C; Cohen GN; Marlière P; Salanoubat
+    M; Weissenbach J
+  year: 2008
+  notes: source_type=journal_article; discovery_mode=Durot_2008_cited_methods_reference_8;
+    accessed_on=2026-10-13; doi:10.1038/msb.2008.10; PMC2290942. Full source/Markdown=references_cache/papers/primary_xml/berardinis-2008-pmc.{xml,md};
+    PubMed XML/abstract=references_cache/papers/PMID_18319726.{xml,md}. Inspected
+    Materials and methods/Bacteria, media, chemicals and reagents and Growth tests,
+    as the explicit protocol reference for Durot's mutant phenotyping. Exact formulation
+    excerpt='25 mM KH2PO4'; literal trace-ingredient token='Na2MoO2'. This corroborates
+    the phosphate discrepancy but does not resolve the conflicting trace formulas
+    or certify the imported sodium molybdate identity. Separate exact assay excerpt='Liquid
+    growth studies were carried out in duplicate and solid growth in triplicate, starting
+    with independent precultures.'. Liquid and solid assays, routine cultivation and
+    selection media are distinct contexts; antibiotic/amino-acid supplements mentioned
+    in other protocol contexts are not automatically added to Durot's assay or this
+    parent. The later paper's explicit carbon/nitrogen treatments remain assay-specific.
+    No positive parent-growth assertion follows from this supporting protocol citation.
+    Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977; canonical label=Acinetobacter
+    baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. The inspected medium and liquid-growth paragraphs
+    concern ADP1-derived mutants; other-species background comparisons are outside
+    this bounded organism inventory. No correction/retraction notice appears in the
+    archived PubMed entry. Linked supplementary files and original PDF typography
+    were not inspected.

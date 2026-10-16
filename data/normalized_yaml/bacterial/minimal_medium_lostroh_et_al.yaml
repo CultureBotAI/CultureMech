@@ -165,6 +165,14 @@ curation_history:
   notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T17:38:49.917565+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography, raw/Markdown source provenance, exact
+    excerpts and qualified scientific-name/NCBI mappings. Preserved recipe, assay
+    and taxonomy conflicts. Existing fields, variant links and history unchanged;
+    no new native growth, concentration evidence or resolved variant.
+  source: PMID:20511417
 media_term:
   preferred_term: MediaDB Medium 32
   term:
@@ -176,3 +184,56 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:20511417
+  title: Acinetobacter baylyi starvation-induced genes identified through incubation
+    in long-term stationary phase.
+  authors: Lostroh CP; Voyles BA
+  year: 2010
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=PMC_full_HTML_selected_medium_relevant_passages;
+    owner=MEDIADB:32; discovery_sourceID=8; source_url=https://doi.org/10.1128/AEM.01806-09;
+    alternate_identifier=doi:10.1128/AEM.01806-09; alternate_identifier=PMC2901722;
+    raw=references_cache/papers/PMID_20511417.xml; markdown=references_cache/papers/PMID_20511417.md;
+    full_raw=references_cache/papers/primary_html/pmid-20511417-20261013.html; full_markdown=references_cache/papers/primary_html/pmid-20511417-20261013.md;
+    PubMed Abstract, population observation; exact excerpt="remain dynamic for 6 weeks
+    in batch culture". PubMed Abstract, reporter context; exact excerpt="lacZ reporters
+    inserted into SalI sites". Growth of Acinetobacter baylyi; exact excerpt="minimal
+    succinate (0.01 M) broth". Formulation_unresolved: Primary growth experiment cites
+    a minimal succinate broth base, reference 7. A separate null-mutant survival experiment
+    uses commercial Davis minimal broth with succinate. Do not combine those media
+    or inherit all 15 local amounts from one shared carbon-source value. Reporter
+    substrate measurements and cell survival are distinct from recipe concentration
+    and a universal growth rate. The recovered HTML contains the short article body
+    despite the archive helper''s initial preview heuristic. Base reference 7 remains
+    a reference-list lead; full formula and supplements have not been verified. Reported
+    organism=Acinetobacter baylyi ADP1; canonical scientific name=Acinetobacter baylyi
+    ADP1; NCBITaxon:62977; actual rank=strain; taxonomy_match=exact_strain; role=study
+    background, exact local assay formulation unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    Reported organism=A. baylyi AGCV1 through AGCV30 and separate null-mutant strains;
+    canonical scientific name=Acinetobacter baylyi; NCBITaxon:202950; actual rank=species;
+    taxonomy_match=parent_rank_only; role=species parent for distinct derivatives;
+    exact derivative nodes unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=202950&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    Reported organism=Acinetobacter species; canonical scientific name=Acinetobacter;
+    NCBITaxon:469; actual rank=genus; taxonomy_match=parent_rank_only; role=genus-only
+    background mention, not positive genus-wide growth. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=469&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    Reported organism=Escherichia coli; canonical scientific name=Escherichia coli;
+    NCBITaxon:562; actual rank=species; taxonomy_match=species_name; role=background
+    long-term-stationary-phase comparison, not target on this owner. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    Six-week population dynamics and reporter measurements are not a universal growth
+    rate or requirement. Bounded lookup misses do not prove taxon absence. Organism
+    inventory covers inspected medium-relevant passages, not the entire paper. Images
+    and supplements have not been verified. Correction/retraction coverage is limited
+    to inspected publication metadata. Related-media candidates were searched without
+    asserting exact formulation equivalence. All prior ingredients, quantities, preparation,
+    variant links and history remain unchanged and uncertified by this citation. No
+    new native growth assertion, concentration evidence or resolved variant.'

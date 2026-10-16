@@ -569,6 +569,14 @@ curation_history:
     [], "withdrawn_variable_defaults": ["L-Alanine", "L-Aspartate", "L-Serine", "Ascorbate",
     "L-Methionine", "L-Cysteine", "Biotin", "L-Proline", "L-Asparagine", "dTMP", "Calcium
     pantothenate", "Pyridoxine HCl", "Thiamine HCl"]}'
+- timestamp: '2026-10-13T18:20:46.076791+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified publication bibliography, archived abstract/Markdown provenance,
+    exact excerpts and qualified scientific-name/NCBI mappings. Preserved all prior
+    evidence, missing amounts and variant links. Exact formulations and organism/assay
+    assignment remain unresolved; no new native growth or concentration claim.
+  source: PMID:18379780
 media_term:
   preferred_term: MediaDB Medium 289
   term:
@@ -594,3 +602,41 @@ references:
     accessed_on=2026-10-09; publisher=Institute for Systems Biology; uncompressed_sha256=e2c60258e2389d4ad383695eb3e01429a67eac90807fe14d02a6728777d35b5c;
     locator=media_names, media_compounds and compounds tables; the database paper's
     DOI is not treated as evidence for individual amounts.
+- reference: PMID:18379780
+  title: Development of chemically defined medium for Mannheimia succiniciproducens
+    based on its genome sequence.
+  authors: Song H; Kim TY; Choi BK; Choi SJ; Nielsen LK; Chang HN; Lee SY
+  year: 2008
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract_and_publisher_subscription_preview_not_full_methods;
+    owner=MEDIADB:289; discovery_sourceID=99; source_url=https://doi.org/10.1007/s00253-008-1425-2;
+    alternate_identifier=doi:10.1007/s00253-008-1425-2; raw=references_cache/papers/PMID_18379780.xml;
+    markdown=references_cache/papers/PMID_18379780.md; PubMed Abstract, omission experiment;
+    exact excerpt="no cell growth on the CDM lacking any one of the non-substitutable
+    essentials". Formulation_unresolved: The abstract separates model-predicted requirements,
+    physical omission experiments and an optimal CDM, but does not enumerate either
+    local formulation. The publisher page is a subscription preview, not full methods.
+    Missing local amino-acid/vitamin amounts remain unavailable; no withdrawn VARIABLE
+    defaults are restored. Reported organism=Mannheimia succiniciproducens; canonical
+    scientific name=[Mannheimia] succiniciproducens; NCBITaxon:157673; actual rank=species;
+    taxonomy_match=verified_species_synonym; role=study organism named in the abstract;
+    exact local CDM and omission assay unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=157673&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/physiology-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/physiology-study-candidates-20261013.md.
+    Reported organism=Mannheimia succiniciproducens MMBEL55E (historical MediaDB row);
+    canonical scientific name=[Mannheimia] succiniciproducens; NCBITaxon:157673; actual
+    rank=species; taxonomy_match=parent_rank_only; role=species parent only; extra-M
+    spelling and physical study strain not resolved by the abstract. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=157673&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/physiology-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/physiology-study-candidates-20261013.md.
+    NCBI strain candidate 221988 is [Mannheimia] succiniciproducens MBEL55E, not an
+    independently established identity for the historical MMBEL55E string. Omission-specific
+    no-growth observations are not a universal negative or positive outcome for this
+    complete owner. Inventory covers inspected medium-relevant passages, not the entire
+    paper. Bounded taxonomy misses do not prove absence. Images/supplements and complete
+    inherited formulas are not certified; correction/retraction coverage is limited
+    to inspected publication metadata. All existing ingredients, concentrations (including
+    deliberately missing amounts), evidence, references, links, preparation and history
+    remain unchanged. No new native growth assertion, concentration EvidenceItem or
+    resolved variant.'

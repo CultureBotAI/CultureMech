@@ -92,6 +92,14 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T22:34:41.350925+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:1629159
 media_term:
   preferred_term: MediaDB Medium 163
   term:
@@ -104,3 +112,37 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+references:
+- reference: PMID:1629159
+  title: 'Osmoprotection of Escherichia coli by ectoine: uptake and accumulation characteristics.'
+  authors: Jebbar M; Talibart R; Gloux K; Bernard T; Blanco C
+  year: 1992
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:163;
+    discovery_sourceID=57; source_url=https://doi.org/10.1128/jb.174.15.5027-5035.1992;
+    alternate_identifier=doi:10.1128/jb.174.15.5027-5035.1992; alternate_identifier=PMC206317;
+    raw=references_cache/papers/PMID_1629159.xml; markdown=references_cache/papers/PMID_1629159.md;
+    PubMed abstract, exogenous-ectoine sentence; exact excerpt="stimulate growth of
+    Escherichia coli in media of inhibitory osmotic strength". Reported organism=Escherichia
+    coli (E. coli); canonical scientific name=Escherichia coli; NCBITaxon:562; actual
+    rank=species; taxonomy_match=exact_species_not_strain; role=experimental species;
+    local formulation unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli MC4100; canonical scientific name=Escherichia
+    coli str. K-12 substr. MC4100; NCBITaxon:1403831; actual rank=no rank; taxonomy_match=canonical_name_match_secondary_strain_lead;
+    role=MediaDB strain lead, not named in abstract. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1403831&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    The broader canonical-name lookup resolves the earlier short-alias MC4100 miss.
+    Unnamed moderately halophilic bacteria are background; no specific organism or
+    exact taxonomy identity is supplied. Ectoine is exogenously supplied in the study;
+    the abstract does not identify its assay base as the local M63 formula, the added
+    amount or osmotic-solute composition. Keep ectoine-supplemented growth and uptake/accumulation
+    assays separate from the unsupplemented native recipe. Local comparison: Six native
+    entries include 22 mM glycerol, 75 mM potassium hydroxide and 100 mM dipotassium
+    phosphate, without ectoine. This differs from the Perroud M63 beyond carbon source
+    alone; source/local phosphate identity needs methods-level reconciliation. Inventory
+    covers inspected medium-relevant passages, not the whole paper or bibliography.
+    Correction/retraction coverage is limited to inspected metadata; bounded taxonomy
+    misses do not prove absence. Original ingredients, amounts, preparation, history
+    and links are preserved, not newly certified. No new native growth assertion,
+    resolved variant or concentration evidence.'

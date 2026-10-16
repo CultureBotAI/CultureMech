@@ -131,6 +131,15 @@ curation_history:
   notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T11:16:53.227257+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_AND_SOURCE_SCOPE
+  notes: Added two verified paper citations with raw/Markdown archives and organism
+    taxonomy assessments; 0 source-described variants and 0 variant-only growth entries.
+    Preserved all parent ingredients, preparation and prior history. Full base formulation
+    remains unresolved; no parent amount certification or unqualified parent growth.
+    No generated publication.
+  source: doi:10.1128/JB.182.24.6892-6899.2000; doi:10.1128/jb.119.3.736-747.1974
 media_term:
   preferred_term: MediaDB Medium 160
   term:
@@ -142,3 +151,106 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1128/JB.182.24.6892-6899.2000
+  title: Functions of the membrane-associated and cytoplasmic malate dehydrogenases
+    in the citric acid cycle of Escherichia coli.
+  authors: van der Rest ME; Frank C; Molenaar D
+  year: 2000
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=54, medID=160; SQL joins are discovery
+    provenance, not growth evidence. PubMed title, authors, year and DOI/PMID identity
+    checked. No correction/retraction notice occurs in the inspected PubMed entry;
+    not an exhaustive notice audit. The historical Mazumdar import event remains database
+    provenance. PMID:11092847; PMC94812; source_access=Full public PMC HTML and inspected
+    Figure 3; raw_abstract=references_cache/papers/PMID_11092847.xml; abstract_markdown=references_cache/papers/PMID_11092847.md.
+    Full paper archives=references_cache/papers/primary_html/vanderrest-2000-pmc.html
+    and .md; Figure 3 image/Markdown=references_cache/papers/primary_images/vanderrest-2000-figure3.jpg
+    and .md. Formulation correspondence remains unresolved beyond the named NMM/carbon-source
+    study: the full Neidhardt base recipe was not obtained. The study''s 0.5% (wt/vol)
+    carbon dose is 5 g/L by definition, but no mass-to-molar equivalence is asserted
+    without the exact chemical form and mass basis. The parent''s integer molarity
+    may reflect rounding; numerical inequality alone is not evidence of a new variant.
+    Local lactate/malate stereochemistry, ion versus acid or salt forms, mineral hydrates,
+    complete micronutrients, pH and the generic 0.22 micrometer filter step remain
+    unverified. No parent concentration, resolved inline variant or positive native
+    target-organism entry is added. This owner retains Acetate at 85.0 mM. Figure
+    3 caption; exact excerpt=''Cells were grown on NMM containing carbon sources (0.5%
+    [wt/vol]) as indicated.''. Figure 3''s black MC4100 bars show positive growth
+    on glucose, pyruvate, lactate, malate, succinate and acetate; no plotted rates
+    digitized. Reported organism=Escherichia coli MC4100; scientific name/canonical
+    mapping=Escherichia coli str. K-12 substr. MC4100; NCBITaxon:1403831; actual rank=no
+    rank; taxonomy_match=exact named substrain; role=Figure 3 experimental wild type;
+    local complete formulation unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1403831&retmode=xml.
+    Reported organism=Escherichia coli DH5alpha (source DH5α); scientific name/canonical
+    mapping=Escherichia coli DH5[alpha]; NCBITaxon:668369; actual rank=strain; taxonomy_match=exact
+    strain synonym; role=standard genetic experiments, not a new NMM growth target.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=668369&retmode=xml.
+    Methods, Bacterial strains; exact excerpt=''E. coli DH5α''. Reported organism=Escherichia
+    coli K-12 DSM 5698 (ATCC 25404); scientific name/canonical mapping=Escherichia
+    coli K-12; NCBITaxon:83333; actual rank=strain; taxonomy_match=parent_rank_only;
+    role=MQO/gene-replacement background; exact collection-node match not established.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=83333&retmode=xml.
+    Methods, Bacterial strains; exact excerpt=''DSM 5698 (ATCC 25404)''. Reported
+    organism=Escherichia coli PC2, PC35 and MC4100 deletion/plasmid derivatives; scientific
+    name/canonical mapping=Escherichia coli str. K-12 substr. MC4100; NCBITaxon:1403831;
+    actual rank=no rank; taxonomy_match=parent_rank_only; role=paper-explicit MC4100
+    background, not exact mutant taxonomy or shared phenotype. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1403831&retmode=xml.
+    Methods, Bacterial strains; exact excerpt=''PC2 (parent, MC4100;''. Methods, Bacterial
+    strains; exact excerpt=''PC35 (parent, MC4100;''. PC2 is delta-fnr2; PC35 is delta-arcA.
+    Other assays use delta-mdh, delta-mqo, delta-mdh/delta-mqo, delta-pps, delta-sfcA/delta-b2463,
+    their mqo-combined derivatives, pML2, pET324 or pECmqo. Preserve genotype/plasmid
+    and assay distinctions. Results, Properties of mdh and mqo deletion strains; exact
+    excerpt=''Strain Δ mdh does not grow on acetate or malate.''. The double mdh/mqo
+    mutant grows more slowly on glucose, pyruvate and lactate; no positive outcome
+    is transferred from wild type to mutants. Table 3''s IPTG/plasmid rates are not
+    wild-type rates. Table 4''s plate-colony symbols, dense-inoculum effects and emerging
+    mutants are not liquid growth rates. The serial-transfer competition experiment
+    is a mixed culture, not an independent pure-culture assertion for each member.
+    Reported organism=Corynebacterium glutamicum ATCC 13032; scientific name/canonical
+    mapping=Corynebacterium glutamicum ATCC 13032; NCBITaxon:196627; actual rank=strain;
+    taxonomy_match=exact strain; role=comparison of enzyme activity, not growth on
+    NMM. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=196627&retmode=xml.
+    Results, The gene mqo; exact excerpt=''C. glutamicum strain ATCC 13032 (wild type)''.
+    Reported organism=Corynebacterium glutamicum DM22; scientific name/canonical mapping=Corynebacterium
+    glutamicum; NCBITaxon:1718; actual rank=species; taxonomy_match=parent_rank_only;
+    role=heterologous-expression comparator; exact strain node not established. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1718&retmode=xml.
+    Results, The gene mqo; exact excerpt=''C. glutamicum DM22 mutant''. Reported organism=Bacillus
+    subtilis; scientific name/canonical mapping=Bacillus subtilis; NCBITaxon:1423;
+    actual rank=species; taxonomy_match=exact species; role=Discussion pathway comparison
+    only. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1423&retmode=xml.
+    Discussion, pyruvate shunt comparison; exact excerpt=''Bacillus subtilis''. Taxonomy
+    raw/Markdown archives=references_cache/papers/taxonomy/nmm-cgc-20261013.*, nmm-cgc-background-20261013.*
+    and nmm-cgc-additional-20261013.*. Organism inventory is bounded to inspected
+    medium-relevant and comparison passages, not all bibliography titles. HEPES/Tris
+    washing and enzyme-assay buffers, DCPIP, ubiquinone, SDS and ONPG are not medium
+    ingredients. Optional antibiotics, controlled-batch oxygen settings and Figure
+    2 pyruvic acid apply only to their stated experiments, not every NMM assay.'
+- reference: doi:10.1128/jb.119.3.736-747.1974
+  title: Culture medium for enterobacteria.
+  authors: Neidhardt FC; Bloch PL; Smith DF
+  year: 1974
+  notes: source_type=journal_article; discovery_mode=cited_base_protocol; accessed_on=2026-10-13;
+    MediaDB sourceID=54, medID=160; SQL joins are discovery provenance, not growth
+    evidence. PubMed title, authors, year and DOI/PMID identity checked. No correction/retraction
+    notice occurs in the inspected PubMed entry; not an exhaustive notice audit. The
+    historical Mazumdar import event remains database provenance. PMID:4604283; PMC245675;
+    source_access=PubMed abstract and abstract-only PMC XML; no full scanned body;
+    raw_abstract=references_cache/papers/PMID_4604283.xml; abstract_markdown=references_cache/papers/PMID_4604283.md.
+    Van der Rest Methods and reference 26 cite this paper for NMM. Only its abstract
+    is available here; it does not enumerate exact base amounts, micronutrients or
+    these six carbon formulations. Abstract; exact excerpt='It supports growth of
+    Escherichia coli and Salmonella typhimurium'. Reported organism=Escherichia coli;
+    scientific name/canonical mapping=Escherichia coli; NCBITaxon:562; actual rank=species;
+    taxonomy_match=exact species; role=base-protocol abstract; not strain identification
+    or growth on this exact owner. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml.
+    Reported organism=Salmonella typhimurium; scientific name/canonical mapping=Salmonella
+    enterica subsp. enterica serovar Typhimurium; NCBITaxon:90371; actual rank=no
+    rank; taxonomy_match=exact synonym; role=base-protocol abstract only; no new target
+    on the six study recipes. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=90371&retmode=xml.
+    Taxonomy archives=references_cache/papers/taxonomy/nmm-cgc-20261013.* and nmm-cgc-background-20261013.*.
+    Additional abstract-only PMC XML/Markdown=references_cache/papers/primary_xml/neidhardt-1974-pmc-abstract.*.
+    Full-body access attempts are documented in reports/paper_citation_curation/20261013-lab-citations/next-access-limits.json;
+    no base composition inferred.

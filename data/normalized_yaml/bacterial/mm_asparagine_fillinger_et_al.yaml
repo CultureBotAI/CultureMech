@@ -105,6 +105,14 @@ curation_history:
   notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T16:46:27.131287+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography, archived primary-source/Markdown provenance,
+    exact excerpts and qualified scientific-name/NCBI mappings. Preserved formulation,
+    assay and metadata limits. Existing recipe fields and history unchanged; no new
+    native growth, concentration evidence or resolved variant.
+  source: PMID:10799476
 media_term:
   preferred_term: MediaDB Medium 222
   term:
@@ -116,3 +124,44 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:10799476
+  title: Two glyceraldehyde-3-phosphate dehydrogenases with opposite physiological
+    roles in a nonphotosynthetic bacterium.
+  authors: Fillinger S; Boschi-Muller S; Azza S; Dervyn E; Branlant G; Aymerich S
+  year: 2000
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=PubMed_abstract_only; alternate_identifier=doi:10.1074/jbc.275.19.14031;
+    owner=MEDIADB:222; discovery_sourceID=79; source_url=https://pubmed.ncbi.nlm.nih.gov/10799476/;
+    raw_abstract=references_cache/papers/PMID_10799476.xml; source_markdown=references_cache/papers/PMID_10799476.md.
+    PubMed abstract; exact excerpt="gapA mutant". PubMed abstract; exact excerpt="gapB
+    mutant". PubMed abstract; exact excerpt="gluconeogenic carbon sources". The two
+    local seven-component owners exchange glucose and asparagine while retaining the
+    other six entries. The abstract does not enumerate their amounts, chemical forms
+    or preparation. It separates failure of the gapA mutant on glycolytic carbon sources
+    from growth on gluconeogenic sources and the opposite gapB phenotype. Do not turn
+    either negative result into universal growth. Reported organism=Bacillus subtilis;
+    canonical scientific name=Bacillus subtilis; NCBITaxon:1423; actual rank=species;
+    taxonomy_match=exact species; role=reported study species. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1423&retmode=xml.
+    Reported organism=Bacillus subtilis wild type, gapA mutant and gapB mutant; canonical
+    scientific name=Bacillus subtilis; NCBITaxon:1423; actual rank=species; taxonomy_match=parent_rank_only;
+    role=distinct experimental backgrounds; exact mutant nodes unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1423&retmode=xml.
+    Reported organism=Bacillus subtilis 168CA, GM1500 and GM1501; canonical scientific
+    name=Bacillus subtilis; NCBITaxon:1423; actual rank=species; taxonomy_match=parent_rank_only;
+    role=historical MediaDB discovery designations, not abstract-verified mutant-to-strain
+    assignments. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1423&retmode=xml.
+    Purified-enzyme Km, cofactor activities and reporter expression are not medium
+    doses. Full methods remain uninspected and no resolved variant is assigned. Taxonomy
+    archive=references_cache/papers/taxonomy/soil-metabolism-studies-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/soil-metabolism-studies-20261013.md.
+    Additional taxonomy archive=references_cache/papers/taxonomy/soil-metabolism-additional-20261013.xml;
+    additional_taxonomy_markdown=references_cache/papers/taxonomy/soil-metabolism-additional-20261013.md.
+    Bounded lookup misses do not prove taxon absence. Organism inventory covers inspected
+    medium-relevant passages, not an exhaustive full-paper inventory. Images and supplements
+    have not been verified. Correction/retraction coverage is limited to inspected
+    publication metadata. Existing related-media candidates were checked without asserting
+    exact formulation equivalence. All prior ingredients, quantities, preparation
+    and history remain unchanged and uncertified by this citation. No new native growth
+    assertion, concentration evidence or resolved variant.

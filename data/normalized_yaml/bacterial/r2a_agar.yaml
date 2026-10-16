@@ -209,6 +209,12 @@ curation_history:
   changes: Linked score-20 direct JCM R2A Agar children
   source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1235; https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=346
   notes: Added or refreshed reciprocal SUPPLEMENTED_VARIANT link for bacterial/r2a_agar_with_fumarate.yaml.
+- timestamp: '2026-10-13T02:57:02.809335+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION
+  notes: Verified original R2A abstract and archived XML/Markdown; added bibliography
+    and formulation evidence without changing amounts, variants, or organisms.
+  source: PMID:3883894
 variant_children:
 - path: data/normalized_yaml/bacterial/1_10_r2a_agar.yaml
   relationship: CONCENTRATION_VARIANT
@@ -258,3 +264,26 @@ source_environment:
     label: rhizosphere
 sterilization:
   method: AUTOCLAVE
+
+references:
+- reference: PMID:3883894
+  title: A new medium for the enumeration and subculture of bacteria from potable
+    water.
+  authors: Reasoner DJ; Geldreich EE
+  year: 1985
+  notes: 'doi:10.1128/aem.49.1.1-7.1985; PMCID:PMC238333; source_type=journal_article;
+    discovery_mode=manual_web_search; accessed_on=2026-10-13; inspected=PubMed abstract.
+    Original R2A formulation; the abstract does not identify individual organisms
+    or strains. Raw source: references_cache/papers/PMID_3883894.xml; Markdown: references_cache/papers/PMID_3883894.md.'
+evidence:
+- reference: PMID:3883894
+  supports: SUPPORT
+  snippet: 0.3 g of sodium pyruvate, and 15 g of agar per liter of laboratory quality
+    water.
+  explanation: 'PubMed abstract, formulation sentence: sodium pyruvate 0.3 g/L and
+    agar 15 g/L match this solid R2A recipe. The paper also specifies yeast extract,
+    proteose peptone No. 3, Casamino Acids, glucose and soluble starch at 0.5 g/L
+    each, K2HPO4 at 0.3 g/L, MgSO4 heptahydrate at 0.05 g/L, and pH 7.2; these agree
+    with the listed composition at the reported precision. The DSMZ entry''s generic
+    proteose peptone and starch names do not independently verify supplier/product
+    identity. No new variant or taxon-medium growth claim is inferred. DOI:10.1128/aem.49.1.1-7.1985.'

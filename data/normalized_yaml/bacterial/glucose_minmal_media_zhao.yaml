@@ -165,6 +165,14 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T21:09:19.427499+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, source/Markdown archive links, short excerpts
+    and qualified scientific-name/NCBI taxonomy notes. Preserved prior recipe values
+    and history. Formula, chemical-form and strain discrepancies remain explicit;
+    no new native growth or concentration assertion.
+  source: PMID:15113569
 media_term:
   preferred_term: MediaDB Medium 128
   term:
@@ -176,3 +184,35 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:15113569
+  title: Effect of zwf gene knockout on the metabolism of Escherichia coli grown on
+    glucose or acetate.
+  authors: Zhao J; Baba T; Mori H; Shimizu K
+  year: 2004
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:128;
+    discovery_sourceID=36; source_url=https://doi.org/10.1016/j.ymben.2004.02.004;
+    alternate_identifier=doi:10.1016/j.ymben.2004.02.004; raw=references_cache/papers/PMID_15113569.xml;
+    markdown=references_cache/papers/PMID_15113569.md; PubMed abstract, carbon-source
+    comparison; exact excerpt="metabolism of Escherichia coli grown on glucose or
+    acetate.". Reported organism=Escherichia coli; canonical scientific name=Escherichia
+    coli; NCBITaxon:562; actual rank=species; taxonomy_match=exact_species; role=parent
+    and zwf-deficient mutant in separate carbon-source experiments. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    The abstract distinguishes growth on glucose from growth on acetate, but does
+    not identify strain designations or provide full formulas. MediaDB's BW25113 and
+    BW25113_zwf- assignments are secondary discovery leads, not independently strain-verified
+    paper assertions. The carbon-source distinction supports study relevance, not
+    exact identity of every local trace ingredient or amount. Formulation-unresolved;
+    retain the two existing owners without creating a redundant variant or new growth
+    assertion. Local pair MEDIADB:128/129 substitutes glucose with acetate while thirteen
+    other ingredient entries agree; source-specific amounts and chemical forms remain
+    unverified. Inventory covers the inspected medium-relevant passages, not every
+    organism in the full paper or its bibliography. Correction/retraction coverage
+    is limited to inspected publication metadata. Bounded taxonomy misses do not establish
+    absence. All original ingredients, amounts, preparation, history and links are
+    preserved, not newly certified. No new native growth assertion, resolved variant
+    or concentration evidence.

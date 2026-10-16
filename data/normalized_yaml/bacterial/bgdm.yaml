@@ -146,6 +146,14 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-10-13T20:04:31.598558+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, source/Markdown archives, short excerpts and
+    qualified scientific-name/NCBI taxonomy notes. Preserved all recipe values, evidence,
+    history and variant links. Formulation and historical identity limitations remain
+    explicit; no new growth or concentration claim.
+  source: doi:10.1007/bf01573470
 media_term:
   preferred_term: MediaDB Medium 72
   term:
@@ -157,3 +165,33 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1007/bf01573470
+  title: Chemically defined and minimal media forBacteroides gingivalis
+  authors: Seddon, S. V.; Shah, H. N.; Hardie, J. M.; Robinson, J. P.
+  year: 1988
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=publisher_abstract_or_summary_preview; owner=MEDIADB:72;
+    discovery_sourceID=20; source_url=https://doi.org/10.1007/bf01573470; raw=references_cache/papers/primary_html/source-20-publisher-20261013.html;
+    markdown=references_cache/papers/primary_html/source-20-publisher-20261013.md;
+    Abstract: named medium and organism; exact excerpt="chemically defined medium
+    (BGDM)". Abstract: named medium and organism; exact excerpt="Bacteroides gingivalis".
+    Reported organism=Bacteroides gingivalis; canonical scientific name=Porphyromonas
+    gingivalis; NCBITaxon:837; actual rank=species; taxonomy_match=verified_historical_synonym_at_species_rank;
+    role=study organism. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=837&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    BGDM is explicitly named, but the abstract does not specify every local chemical
+    form, amount or preparation statement. Its eight strains are unnamed in the abstract.
+    MediaDB''s individual strain labels are not imported as paper-verified names.
+    Supplemented media are separate from the defined base and cannot silently certify
+    this owner. Publisher title metadata omits the space in forBacteroides; it is
+    retained as deposited, not asserted to be the original typography. Owner=CultureMech:007420;
+    MediaDB medium=72; inspected local ingredient entries=12. No new resolved inline/full
+    variant is assigned while the study-to-local-formulation mapping remains unresolved.
+    Inventory covers the selected medium-relevant identity passages, not every organism
+    in the full paper. Correction/retraction coverage is limited to inspected publication
+    metadata. Bounded lookup misses do not prove absence. All original ingredients,
+    amounts, preparation, evidence, history and variant links are preserved; none
+    is newly certified. No new native growth assertion, concentration evidence or
+    resolved variant.'
