@@ -379,6 +379,22 @@ def fetch_one(pmid: str, api_key: str | None) -> str:
         return f"error:{type(e).__name__}"
 
 
+def parse_doi_search(raw: bytes) -> tuple[int, list[str]]:
+    """Reject transient error pages before they can become durable search caches."""
+    root = ET.fromstring(raw)
+    if (
+        root.tag != "eSearchResult"
+        or root.find("ERROR") is not None
+        or root.find("ErrorList") is not None
+    ):
+        raise ValueError("invalid DOI search response")
+    count = int(root.findtext("Count", "-1"))
+    ids = [node.text or "" for node in root.findall("IdList/Id")]
+    if count < 0 or any(not PMID_RE.fullmatch(pmid) for pmid in ids):
+        raise ValueError("invalid DOI search count or PMID")
+    return count, ids
+
+
 def resolve_doi(reference: str, api_key: str | None, delay: float) -> dict:
     """Resolve a DOI only when the archived PubMed article repeats that exact DOI."""
     canonical = publication_reference(reference)
@@ -416,11 +432,14 @@ def resolve_doi(reference: str, api_key: str | None, delay: float) -> dict:
                     or provenance["sha256"] != hashlib.sha256(raw).hexdigest()
                 ):
                     raise ValueError("DOI search cache mismatch")
+                count, ids = parse_doi_search(raw)
             else:
                 request_url = url
                 if api_key:
                     request_url += "&" + urllib.parse.urlencode({"api_key": api_key})
                 raw = fetch_bytes(request_url)
+                time.sleep(delay)
+                count, ids = parse_doi_search(raw)
                 directory.mkdir(parents=True, exist_ok=True)
                 raw_path.write_bytes(raw)
                 provenance_path.write_text(
@@ -435,17 +454,7 @@ def resolve_doi(reference: str, api_key: str | None, delay: float) -> dict:
                     )
                     + "\n"
                 )
-                time.sleep(delay)
-            root = ET.fromstring(raw)
-            if (
-                root.tag != "eSearchResult"
-                or root.find("ERROR") is not None
-                or root.find("ErrorList") is not None
-            ):
-                raise ValueError("invalid DOI search response")
-            count = int(root.findtext("Count", "-1"))
-            ids = [node.text for node in root.findall("IdList/Id")]
-            if count < 0 or count != len(ids):
+            if count != len(ids):
                 return {"status": "ambiguous_or_truncated_search", "count": count}
             for pmid in ids:
                 outcome = fetch_one(pmid, api_key)

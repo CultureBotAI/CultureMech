@@ -238,6 +238,32 @@ def test_same_doi_for_multiple_articles_stays_ambiguous(cache):
     assert archive.resolve_doi("doi:10.1234/example", None, 0)["status"] == "ambiguous_doi"
 
 
+@pytest.mark.parametrize(
+    "invalid",
+    [
+        b"<html>temporary challenge</html>",
+        b"<eSearchResult><ERROR>temporary error</ERROR></eSearchResult>",
+        b"<eSearchResult><Count>invalid</Count><IdList/></eSearchResult>",
+        b"<eSearchResult><Count>-1</Count><IdList/></eSearchResult>",
+        b"<eSearchResult><Count>1</Count><IdList><Id>bad-id</Id></IdList></eSearchResult>",
+    ],
+)
+def test_invalid_doi_search_is_not_persisted_and_retry_recovers(cache, monkeypatch, invalid):
+    responses = iter([invalid, b"<eSearchResult><Count>0</Count><IdList/></eSearchResult>"])
+    requests = []
+
+    def fetch(url):
+        requests.append(url)
+        return next(responses)
+
+    monkeypatch.setattr(archive, "fetch_bytes", fetch)
+    assert archive.resolve_doi("doi:10.1234/example", None, 0)["status"] == "resolution_error"
+    assert not list((cache / "papers/doi_searches").glob("*"))
+    assert archive.resolve_doi("doi:10.1234/example", None, 0)["status"] == "unresolved_in_pubmed"
+    assert archive.resolve_doi("doi:10.1234/example", None, 0)["status"] == "unresolved_in_pubmed"
+    assert len(requests) == 2
+
+
 def test_keyed_doi_search_uses_key_without_archiving_it(cache, monkeypatch):
     requested = []
 

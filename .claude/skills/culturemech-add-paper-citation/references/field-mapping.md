@@ -67,14 +67,14 @@ unresolved species into a genus-wide positive growth assertion.
   from the abstract is not necessarily false. Do not rewrite a correct quote
   to make this abstract-only check pass, or claim it verified a supplement.
 - Inspect `src/culturemech/export/kgx_export.py` before any requested export.
-  Its current `transform`/`organism_grows_in_medium_edge` path creates an edge
-  to the parent record using `term.id`, without honoring `scoped_to_variant`
-  or a parent-match caveat in prose. Thus an inline variant can be represented
-  in YAML but must not be advertised as safely scoped in KGX. Do not publish
-  affected edges without a verified scope-preserving exporter or an existing
-  full child record. Report this limitation; changing the exporter is a
-  separate task. Omitting `term` for a parent-only mapping also avoids an
-  unjustified broader-taxon edge in this exporter.
+  Its current `organism_grows_in_medium_edge` path omits nonempty
+  `scoped_to_variant` observations with a warning rather than broadening them
+  into parent-medium growth. YAML retains the evidence, but KGX growth coverage
+  is incomplete: no variant-target growth edge is emitted. Use a verified
+  scope-preserving exporter or an existing full child record before publishing
+  those associations. Do not remove the scope merely to obtain an edge.
+  Parent-match caveats in prose are not machine-readable identity constraints;
+  leave `term` absent for parent-only mappings to avoid broader-taxon edges.
 
 ## Source archives
 
