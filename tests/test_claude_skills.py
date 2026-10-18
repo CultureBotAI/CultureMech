@@ -23,6 +23,26 @@ def test_stats_report_uses_discoverable_skill_layout() -> None:
     assert not (ROOT / ".claude" / "skills" / "stats-report.md").exists()
 
 
+def test_agents_skills_symlink_exposes_claude_skills_including_review_open_issues() -> None:
+    agents_md = ROOT / "AGENTS.md"
+    assert agents_md.is_file()
+    assert "CLAUDE.md" in agents_md.read_text(encoding="utf-8")
+    assert ".agents/skills" in agents_md.read_text(encoding="utf-8")
+
+    agents_skills = ROOT / ".agents" / "skills"
+    claude_skills = ROOT / ".claude" / "skills"
+
+    assert agents_skills.is_symlink()
+    assert agents_skills.readlink() == Path("../.claude/skills")
+    assert agents_skills.resolve() == claude_skills.resolve()
+    review_skill = agents_skills / "review-open-issues" / "SKILL.md"
+    assert review_skill.is_file()
+    assert validate_claude_skills.frontmatter(review_skill)["name"] == "review-open-issues"
+    review_text = review_skill.read_text(encoding="utf-8")
+    assert "CultureMech" in review_text
+    assert "read-only" in review_text.lower()
+
+
 def test_validator_accepts_standard_nested_skill_metadata(tmp_path, monkeypatch) -> None:
     skill_dir = tmp_path / ".claude" / "skills" / "curate-yaml-record"
     skill_dir.mkdir(parents=True)
