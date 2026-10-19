@@ -251,3 +251,86 @@ def test_an_invalid_composition_type_is_now_caught(validator, tmp_path):
         },
     )
     assert "P1.4" in rules
+
+
+# --- solution & preferred_term placeholder checks (#633) -----------------
+
+
+def test_solution_placeholder_preferred_term_triggers_p3_1(validator, tmp_path):
+    """CultureMech:011215 stores 'See source for composition' in preferred_term
+    on a SolutionDescriptor record and previously received 0 P3.1 issues."""
+    sol_dir = tmp_path / "solutions"
+    sol_dir.mkdir(exist_ok=True)
+    path = sol_dir / "placeholder_sol.yaml"
+    path.write_text(
+        yaml.safe_dump(
+            {
+                "id": "CultureMech:011215",
+                "preferred_term": "Main sol. 1015",
+                "composition": [
+                    {
+                        "preferred_term": "See source for composition",
+                        "notes": "Full composition available at source database",
+                        "concentration": {"value": 1000.0, "unit": "G_PER_L"},
+                    }
+                ],
+            }
+        )
+    )
+    result = validator.validate_recipe(path)
+    rules = [issue["rule"] for issue in result.get("issues", [])]
+    assert "P3.1" in rules
+
+
+def test_media_recipe_placeholder_preferred_term_triggers_p3_1(validator, tmp_path):
+    """CultureMech:000252 stores 'See source for composition' in preferred_term
+    with a non-matching note ('Full composition available at source database')."""
+    rules = _validate(
+        validator,
+        tmp_path,
+        {
+            "id": "CultureMech:000252",
+            "name": "HALOPHILIC MEDIUM",
+            "medium_type": "COMPLEX",
+            "physical_state": "LIQUID",
+            "ingredients": [
+                {
+                    "preferred_term": "See source for composition",
+                    "notes": "Full composition available at source database",
+                    "concentration": {"value": 1000.0, "unit": "G_PER_L"},
+                }
+            ],
+        },
+    )
+    assert "P3.1" in rules
+
+
+def test_solution_chebi_term_counts_toward_coverage_and_null_composition_is_safe(
+    validator, tmp_path
+):
+    sol_dir = tmp_path / "solutions"
+    sol_dir.mkdir(exist_ok=True)
+    path = sol_dir / "chebi_sol.yaml"
+    path.write_text(
+        yaml.safe_dump(
+            {
+                "id": "CultureMech:015445",
+                "preferred_term": "Vitamin Cocktail",
+                "composition": [
+                    {
+                        "preferred_term": "Biotin",
+                        "chebi_term": {"id": "CHEBI:15956", "label": "biotin"},
+                        "concentration": {"value": 0.01, "unit": "G_PER_L"},
+                    }
+                ],
+            }
+        )
+    )
+    result = validator.validate_recipe(path)
+    assert result["coverage"] == 100.0
+    assert "P3.2" not in [issue["rule"] for issue in result.get("issues", [])]
+
+    null_path = sol_dir / "null_sol.yaml"
+    null_path.write_text(yaml.safe_dump({"preferred_term": "Empty", "composition": None}))
+    null_result = validator.validate_recipe(null_path)
+    assert null_result["total_ingredients"] == 0
