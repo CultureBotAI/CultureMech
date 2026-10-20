@@ -1,0 +1,1461 @@
+# Source and formulation review: 1298 (CultureMech:007470)
+
+- Review: 20261019T233801Z-culturemech-007470-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-19T23:30:26Z
+- Finished UTC: 2026-10-19T23:38:01Z
+- Reviewer: OpenAI Codex with delegated source and validator checks (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The generated target identifies NBRC 1296 but contains a MacConkey agar formulation from another source and an invalid blank ingredient. Official NBRC 1296 and the maintained owner specify Kyokuto nutrient broth with sodium pyruvate, water and optional agar. The review is complete; wrong recipe identity blocks scientific use.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Record 16 in Python lexicographic repository-relative path order of the initially uncovered merged corpus; batch 002 covers ordinals 11–20 after batch 001. On fresh origin/main at this batch base, scripts/record_review.py list validated 34 existing bundles and none listed this target path or ID. This bundle selects only the named record; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 7c568537897ee4bba1b8e97f8172133c1572aec0.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007470 | data/merge_yaml/merged/1298.yaml | generated | 1298 |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:007470 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:007470 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-002/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch002/016/strict.tsv |
+| validate-terms | passed | True | CultureMech:007470 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:007470 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:007470 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:007470.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Limits of passing deterministic checks
+
+evidence: concern. Targets: CultureMech:007470.
+
+All four documented target commands exited 0. Strict validation used only layers=schema; reference validation explicitly checked 0 references. These results do not validate recipe identity, source support, concentrations or embedded history claims.
+
+### Organism, growth and cultivation-condition scope
+
+scope: concern. Targets: CultureMech:007470.
+
+The target contains no named organism, strain, growth experiment, temperature, incubation duration, DOI or PMID assertion. Its imported MacConkey notes do make broad inhibition, differentiation and nutrient-role claims, but these cannot be transferred to NBRC 1296. No strain-level growth result or cultivation condition is inferred from those statements.
+
+### Field-level source support
+
+evidence: concern. Targets: CultureMech:007470.
+
+The generated record has no claim-level quantity evidence. Source URLs or historical import notes are useful provenance but do not bind an excerpt, denominator and chemical form to each amount. Follow-up should attach source evidence at each corrected ingredient or stock and preparation claim.
+
+### NBRC 1296 versus MacConkey expansion
+
+identity: concern. Targets: CultureMech:007470.
+
+CultureMech:007470 agrees across target and owner. Both historical import provenance and description point to NBRC 1296, which lists Kyokuto nutrient broth and sodium pyruvate. The generated MacConkey expansion denotes a different formulation; manufacturer SKU existence cannot bridge that identity mismatch.
+
+### ingredients[0].concentration
+
+quantity: concern. Targets: CultureMech:007470.
+
+Target Peptone is 17 g/L. That value belongs to the cited MacConkey expansion and is not supported for NBRC 1296. Do not repair the NBRC record by retaining this unrelated constituent dose.
+
+### ingredients[1].concentration
+
+quantity: concern. Targets: CultureMech:007470.
+
+Target Proteose peptone is 3 g/L. That value belongs to the cited MacConkey expansion and is not supported for NBRC 1296. Do not repair the NBRC record by retaining this unrelated constituent dose.
+
+### ingredients[2].concentration
+
+quantity: concern. Targets: CultureMech:007470.
+
+Target Lactose monohydrate is 10 g/L. That value belongs to the cited MacConkey expansion and is not supported for NBRC 1296. Do not repair the NBRC record by retaining this unrelated constituent dose.
+
+### ingredients[3].concentration
+
+quantity: concern. Targets: CultureMech:007470.
+
+Target Bile salts is 1.5 g/L. That value belongs to the cited MacConkey expansion and is not supported for NBRC 1296. Do not repair the NBRC record by retaining this unrelated constituent dose.
+
+### ingredients[4].concentration
+
+quantity: concern. Targets: CultureMech:007470.
+
+Target Sodium chloride is 5 g/L. That value belongs to the cited MacConkey expansion and is not supported for NBRC 1296. Do not repair the NBRC record by retaining this unrelated constituent dose.
+
+### ingredients[5].concentration
+
+quantity: concern. Targets: CultureMech:007470.
+
+Target Neutral red is 0.03 g/L. That value belongs to the cited MacConkey expansion and is not supported for NBRC 1296. Do not repair the NBRC record by retaining this unrelated constituent dose.
+
+### ingredients[6].concentration
+
+quantity: concern. Targets: CultureMech:007470.
+
+Target Crystal violet is 0.001 g/L. That value belongs to the cited MacConkey expansion and is not supported for NBRC 1296. Do not repair the NBRC record by retaining this unrelated constituent dose.
+
+### ingredients[7].concentration
+
+quantity: concern. Targets: CultureMech:007470.
+
+Target Agar is 13.5 g/L. That value belongs to the cited MacConkey expansion and is not supported for NBRC 1296. Do not repair the NBRC record by retaining this unrelated constituent dose.
+
+### ingredients[8].concentration
+
+quantity: concern. Targets: CultureMech:007470.
+
+The value is Nutrient Broth Powder (Kyokuto*) with unit G_PER_L and an empty ingredient name. It is malformed text, not the source 6 g premix dose.
+
+### owner NBRC_1298.yaml ingredients[0].concentration
+
+quantity: concern. Targets: CultureMech:007470.
+
+The source supports a batch addition of 6 g Kyokuto nutrient broth powder with 1 L distilled water. The owner encodes 6 G_PER_L, which is not independently verified because source water volume is not an explicit final-medium volume. Preserve the literal batch mass and resolve the denominator or use a source-faithful batch-amount representation before regeneration; do not certify the existing rate.
+
+### owner NBRC_1298.yaml ingredients[1].concentration
+
+quantity: concern. Targets: CultureMech:007470.
+
+The source supports a batch addition of 1 g sodium pyruvate with 1 L distilled water. The owner encodes 1 G_PER_L, which is not independently verified because source water volume is not an explicit final-medium volume. Preserve the literal batch mass and resolve the denominator or use a source-faithful batch-amount representation before regeneration; do not certify the existing rate.
+
+### owner NBRC_1298.yaml ingredients[2].concentration
+
+quantity: supported. Targets: CultureMech:007470.
+
+The primary recipe specifies 1 L Distilled water. The owner preserves that recipe-basis amount; agar is conditional. No premix expansion, hydrate conversion or unreported final-volume correction is justified.
+
+### owner NBRC_1298.yaml ingredients[3].concentration
+
+quantity: concern. Targets: CultureMech:007470.
+
+The source supports a batch addition of 15 g optional agar with 1 L distilled water. The owner encodes 15 G_PER_L, which is not independently verified because source water volume is not an explicit final-medium volume. Preserve the literal batch mass and resolve the denominator or use a source-faithful batch-amount representation before regeneration; do not certify the existing rate.
+
+### All eight target ingredient CURIEs and owner replacement links
+
+grounding: concern. Targets: CultureMech:007470.
+
+MICRO:0000178 and MICRO:0000180 resolve with matching labels. All six target CHEBI labels are canonical, but lactose C12H22O11 is less specific than the named monohydrate. Bile salt is a class; neutral red and crystal violet encode chloride-containing forms. Owner sodium pyruvate/water/agar resolve and match pinned MIM links. Identifier validity provides no support for including MacConkey ingredients in NBRC 1296.
+
+### Catalog identifiers and source attribution
+
+provenance: concern. Targets: CultureMech:007470.
+
+BD 212123 resolves to MacConkey agar. The official alternate catalog page uses 1.05465, so the target short Sigma 05465 string remains an unproven exact match. Neither source identifies Kyokuto 551-02480-7; that code is verified as the one NBRC itself specifies, without assuming a premix composition. Repeating a multi-supplier catalog block on eight constituent chemicals does not make those chemicals separately supplied products.
+
+### pH, optional agar, sterilization and classes
+
+completeness: concern. Targets: CultureMech:007470.
+
+Complex/undefined is appropriate for a nutrient-broth premix. The primary specifies pH 7.0 and permits optional agar. SOLID_AGAR may select the agar variant, but the target lacks usable source pH and contains the wrong agar dose within its unrelated expansion. Generic autoclaving is unsupported by NBRC 1296 and encoded as DISSOLVE; it cannot be imported from a different MacConkey recipe.
+
+### Embedded historical claims and owner correction
+
+provenance: concern. Targets: CultureMech:007470.
+
+The generated record ends with the August merge and omits the September owner correction. The owner August recovery note says the source was not used because a grounded list existed; grounding did not establish identity. The later owner correction explicitly replaced the mistaken MacConkey expansion. Current owner/source agreement supports a regeneration follow-up, not a retrospective certification of the old events.
+
+## Findings
+
+### f1: MacConkey agar has replaced the named NBRC recipe
+
+blocker / open / confirmed; issue key: nbrc1296-wrong-formulation.
+
+The target points to NBRC 1296 yet lists a MacConkey constituent formulation. Official NBRC specifies Kyokuto nutrient broth, sodium pyruvate, water and optional agar. Source attribution and valid ontology labels cannot make these different recipes equivalent.
+
+### f2: Blank descriptor carries a product name as a numeric amount
+
+major / open / confirmed; issue key: nbrc1296-invalid-quantity-row.
+
+ingredients[8] has no name and gives Nutrient Broth Powder (Kyokuto*) as a g/L value. The official source supplies a numeric premix dose, and the owner already represents it.
+
+### f3: Lactose monohydrate is equated to nonhydrated lactose
+
+major / open / confirmed; issue key: nbrc1296-lactose-hydrate-grounding.
+
+The target names Lactose monohydrate but binds CHEBI:17716, formula C12H22O11, and declares lactose an EXACT synonym. The asserted water of crystallization is lost. This defect remains observable even though the whole expansion must leave this NBRC record.
+
+### f4: Source pH is lost and sterilization is unsupported
+
+major / open / confirmed; issue key: nbrc1296-preparation-variant.
+
+The target omits pH 7.0 and adds an autoclaving instruction unsupported by NBRC 1296 with action DISSOLVE. These preparation defects would persist if only ingredient values were changed. SOLID_AGAR can validly select the optional agar variant; that classification alone is not a defect.
+
+### f5: Generated metadata presents a secondary article as a multi-supplier product specification
+
+minor / open / confirmed; issue key: nbrc1296-source-attribution.
+
+Each constituent repeats a MacConkey premix supplier/catalog block. The cited article supplies no evidence that these separate chemicals are the listed supplier products, and the Sigma code is abbreviated relative to the inspected official product. The maintained owner has the correct NBRC source reference.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Verify NBRC_1298.yaml against the official NBRC 1296 page, retain the source premix as a premix, then regenerate. Preserve CultureMech identity while removing the unrelated MacConkey expansion and its supplier attribution. Before regeneration, retain literal batch masses and resolve the owner G_PER_L denominator instead of treating 1 L water as proved final volume.
+
+- Generated formulation is 6 g Kyokuto nutrient broth and 1 g sodium pyruvate per source 1 L water basis, with 15 g agar conditional.
+- No MacConkey dyes, lactose, bile salts or unrelated supplier metadata remain under NBRC 1296.
+- Run documented target validators and reviewed regeneration/product gates after authorized curation.
+- Source batch masses are preserved without asserting final-medium g/L until final volume is supported; any representation change is made in the maintained owner.
+
+### a2
+
+Regenerate from the verified owner and ensure the parser remnant is removed rather than carried alongside the corrected premix.
+
+- No empty descriptor or nonnumeric concentration paired with G_PER_L remains.
+- The source premix identity is preserved without a guessed constituent decomposition.
+
+### a3
+
+Remove the unrelated lactose row with the wrong expansion. If a separate correctly sourced MacConkey record retains monohydrate, ground the exact form or explicitly document the broader mapping instead of asserting exact identity.
+
+- This NBRC record contains only source-supported ingredients.
+- Any retained monohydrate assertion elsewhere is reviewed separately with its exact form and mass basis; no automatic transfer is implied.
+
+### a4
+
+Carry the maintained pH into regeneration and retain the source conditional agar context. Remove or independently support additional sterilization instructions, and make the action enum agree with its description.
+
+- pH 7.0 and agar optionality are explicit.
+- Preparation action enums agree with their descriptions and all additional source-dependent instructions are supported.
+
+### a5
+
+Remove mismatched product blocks during regeneration and attach the exact NBRC source, Kyokuto code and claim-level quantity provenance to the premix recipe.
+
+- Source URLs and catalog identifiers support the exact field they annotate.
+- The regenerated source reference and owner correction are retained without certifying unrelated catalog equivalence.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/1298.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/NBRC_1298.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/1298.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/1298.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch002/016/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-002/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch002/016/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/1298.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/1298.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| bounded-search | data/merge_yaml/merged/1298.yaml; Whole target and named normalized owners; explicit-file rg --no-ignore --hidden search plus full YAML reads | context_only | Checked ingredient names, identifiers, stock and source fields, pH, growth conditions, evidence, references and history in every selected file. Ignored files were included through explicit file arguments. Absence statements in this review concern those records only; this was not a corpus-wide claim that no supporting material exists. |
+| merge-owner | src/culturemech/merge/formulation.py; formulation_content, FormulationFingerprinter and merge_formulation_evidence; matcher.group_formulations and merger.merge_group | context_only | Current generator requires equality of scientific formulation fields and preserves scoped evidence; ingredient-set similarity alone is not proof of interchangeable formulations. A future correction belongs in normalized owners followed by reviewed regeneration. Current code was inspected without executing regeneration. |
+| nbrc | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1296; Medium No., full Composition and supplier footnote | supports | NBRC medium 1296 is a nutrient-broth/pyruvate recipe with optional agar and pH 7.0; the source names the Kyokuto premix and code 551-02480-7. It is not presented as MacConkey agar. |
+| macconkey-source | https://microbenotes.com/macconkey-agar/; Composition and Preparation of MacConkey Agar | refutes | The cited teaching page describes MacConkey agar and gives the same eight named constituent amounts as the generated expansion. It is evidence for the origin of that expansion, not evidence that the expansion belongs to NBRC 1296 or is a Kyokuto product. |
+| micro-0000178 | https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000178; terms[0]: label, definition and is_obsolete | supports | MICRO:0000178 is active peptone. Its definition concerns animal-protein digestion; it does not independently identify a specific multi-manufacturer recipe or establish the exact digest blend claimed in target notes. |
+| micro-0000180 | https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000180; terms[0]: label, definition and is_obsolete | supports | MICRO:0000180 is active proteose peptone. Its definition concerns animal-protein digestion; it does not independently identify a specific multi-manufacturer recipe or establish the exact digest blend claimed in target notes. |
+| chebi-17716 | https://www.ebi.ac.uk/chebi/CHEBI:17716; ChEBI Name, definition, formula and ontology relationships | supports | CHEBI:17716 is lactose, formula C12H22O11. The canonical label is correct, but this identity does not preserve the monohydrate named by ingredients[2].preferred_term. |
+| chebi-22868 | https://www.ebi.ac.uk/chebi/CHEBI:22868; ChEBI Name, definition, formula and ontology relationships | supports | CHEBI:22868 is bile salt, a class of conjugated bile-acid sodium salts. It is not an identified single composition for a commercial bile-salt mixture. |
+| chebi-26710 | https://www.ebi.ac.uk/chebi/CHEBI:26710; ChEBI Name, definition, formula and ontology relationships | supports | CHEBI:26710 is sodium chloride, Cl.Na; target label is canonical. |
+| chebi-86370 | https://www.ebi.ac.uk/chebi/CHEBI:86370; ChEBI Name, definition, formula and ontology relationships | supports | CHEBI:86370 is neutral red as the hydrochloride, C15H16N4.HCl; target label is canonical. |
+| chebi-41688 | https://www.ebi.ac.uk/chebi/CHEBI:41688; ChEBI Name, definition, formula and ontology relationships | supports | CHEBI:41688 is crystal violet as its chloride salt, C25H30N3.Cl; target label is canonical. |
+| chebi-2509 | https://www.ebi.ac.uk/chebi/CHEBI:2509; ChEBI Name, definition, formula and ontology relationships | supports | CHEBI:2509 is agar, a complex polysaccharide mixture; target and owner labels are compatible. |
+| chebi-50144 | https://www.ebi.ac.uk/chebi/CHEBI:50144; ChEBI Name, definition, formula and ontology relationships | supports | CHEBI:50144 is sodium pyruvate, C3H3O3.Na; it matches the primary-source ingredient restored in the owner. |
+| chebi-15377 | https://www.ebi.ac.uk/chebi/CHEBI:15377; ChEBI Name, definition, formula and ontology relationships | supports | CHEBI:15377 is water, H2O; it matches distilled water in the owner at the substance level. |
+| mim-index | src/culturemech/data/mediaingredientmech/label_index.csv; Owner-linked CHEBI:50144, CHEBI:15377 and CHEBI:2509 rows; pinned metadata in source.inputs | supports | The maintained owner has three MIM CHEBI links and all three occur in the pinned index. The generated target has no MIM link assertions. |
+| bd-product | https://www.bd.com/en-us/products-and-solutions/products/product-page.212123; Public official page inspected through web browser: product title and SKU/catalog identifier; direct raw retrieval unavailable (BD HTTP 403; Sigma timeout) | supports | Official BD product page identifies SKU 212123 as BD Difco MacConkey Agar 500 g. It is not the Kyokuto nutrient-broth product named by NBRC 1296. |
+| sigma-product | https://www.sigmaaldrich.com/US/en/product/mm/105465; Public official page inspected through web browser: product title and SKU/catalog identifier; direct raw retrieval unavailable (BD HTTP 403; Sigma timeout) | supports | Official Sigma-Aldrich storefront identifies Millipore/Merck product 1.05465 as MacConkey agar. It does not establish that the target abbreviated identifier 05465 is an exact catalog match or that this is Kyokuto nutrient broth. |
+
+## Limits And Additional Notes
+
+- The exact Kyokuto premix composition is not supplied by NBRC and was not inferred from other products. Literal masses with 1 L water are supported; the owner G_PER_L rates remain unverified without a final-volume basis.
+- The catalog string Sigma 05465 is a near match to the official Millipore/Merck product 1.05465. Equivalence of the shortened string was not established; no manufacturer composition or lot equivalence was assumed.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Embedded curation_history was read and compared with present target and owner bytes. Historical assertions are not retroactively certified; no history edits, status promotion or experimental verification were performed.
+- Official BD and Sigma product pages were successfully inspected through the browser. Direct raw capture returned BD HTTP 403 and a Sigma timeout, so those two evidence entries have browser access timestamps and no asserted snapshot hash.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261019T233801Z-culturemech-007470-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 1298 (CultureMech:007470)'
+started_at: '2026-10-19T23:30:26Z'
+finished_at: '2026-10-19T23:38:01Z'
+reviewer:
+  identity: OpenAI Codex with delegated source and validator checks
+  kind: agent
+  independence: independent
+  independence_basis: Review team did not author or edit the assessed recipe bytes;
+    findings were assessed against the frozen checkout and inspected source documents.
+    This is an agent review, not experimental verification.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The generated target identifies NBRC 1296 but contains a MacConkey agar formulation
+  from another source and an invalid blank ingredient. Official NBRC 1296 and the
+  maintained owner specify Kyokuto nutrient broth with sodium pyruvate, water and
+  optional agar. The review is complete; wrong recipe identity blocks scientific use.
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/1298.yaml
+    sha256: 109faa59ba805c99da899b79d3d9cc3a935748fd058b0281a2a0a11e412f9fca
+    role: target
+  - path: data/normalized_yaml/bacterial/NBRC_1298.yaml
+    sha256: 57394871775e8fa6f20bb78ca78cf3d6c408c582dca6754f6a02012abfcb9b91
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/cleanup_residual_errors.py
+    sha256: 370a490a7e1420000b9ea34a694adf441d69dfeb9ad21afb939684498ee3b405
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/recover_nbrc_composition.py
+    sha256: a723e458895350a68ffae3e446006205b2e00cb185bee13976d5047be56405f0
+    role: context
+  - path: scripts/repair_nbrc_1298_score15.py
+    sha256: 9c9662b6044e53db4e767dda778a64b40bfc8b9d49be1884d68bf66d8a5f3034
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/nbrc_raw_yaml.py
+    sha256: de5654d4eed2e01a2383dcf417b7d8e2779dbb622de9351c28373fb691812ec1
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/nbrc_scraper.py
+    sha256: 5c5bbda489abe0b6d000b9318a76913ab5496ee83aff58b530c2b42b5989d1e3
+    role: context
+  - path: src/culturemech/import/nbrc_importer.py
+    sha256: 857b7e0ac88aef783ce4bc9b35c4c6a3d9fc38824a5d463010a6046ac4180924
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 16 in Python lexicographic repository-relative path order of the
+    initially uncovered merged corpus; batch 002 covers ordinals 11–20 after batch
+    001. On fresh origin/main at this batch base, scripts/record_review.py list validated
+    34 existing bundles and none listed this target path or ID. This bundle selects
+    only the named record; no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007470
+targets:
+- target_id: CultureMech:007470
+  path: data/merge_yaml/merged/1298.yaml
+  label: '1298'
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1298.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/1298.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/1298.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch002/016/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-002/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch002/016/strict.tsv"
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/1298.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/1298.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007470
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/1298.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-19T23:36:44Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/NBRC_1298.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-19T23:36:44Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/1298.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:31:40.171647Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/1298.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch002/016/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:31:45.378203Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-002/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch002/016/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/1298.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:31:49.825214Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/1298.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:31:51.833535Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: bounded-search
+  kind: search
+  reference: data/merge_yaml/merged/1298.yaml
+  locator: Whole target and named normalized owners; explicit-file rg --no-ignore
+    --hidden search plus full YAML reads
+  accessed_at: '2026-10-19T23:36:44Z'
+  support: context_only
+  summary: Checked ingredient names, identifiers, stock and source fields, pH, growth
+    conditions, evidence, references and history in every selected file. Ignored files
+    were included through explicit file arguments. Absence statements in this review
+    concern those records only; this was not a corpus-wide claim that no supporting
+    material exists.
+  search_scope: Generated target and its source.inputs authoritative normalized owner
+    paths; no remote or corpus-wide absence inference.
+- evidence_id: merge-owner
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content, FormulationFingerprinter and merge_formulation_evidence;
+    matcher.group_formulations and merger.merge_group
+  accessed_at: '2026-10-19T23:36:44Z'
+  support: context_only
+  summary: Current generator requires equality of scientific formulation fields and
+    preserves scoped evidence; ingredient-set similarity alone is not proof of interchangeable
+    formulations. A future correction belongs in normalized owners followed by reviewed
+    regeneration. Current code was inspected without executing regeneration.
+- evidence_id: nbrc
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1296
+  locator: Medium No., full Composition and supplier footnote
+  accessed_at: '2026-10-19T23:29:37Z'
+  support: supports
+  summary: NBRC medium 1296 is a nutrient-broth/pyruvate recipe with optional agar
+    and pH 7.0; the source names the Kyokuto premix and code 551-02480-7. It is not
+    presented as MacConkey agar.
+  snapshot_sha256: bf1861a6ebb2a3e6554c877becfacb9af74475583d54d17976ab0b2bd8d1ee48
+- evidence_id: macconkey-source
+  kind: database
+  reference: https://microbenotes.com/macconkey-agar/
+  locator: Composition and Preparation of MacConkey Agar
+  accessed_at: '2026-10-19T23:33:02Z'
+  support: refutes
+  summary: The cited teaching page describes MacConkey agar and gives the same eight
+    named constituent amounts as the generated expansion. It is evidence for the origin
+    of that expansion, not evidence that the expansion belongs to NBRC 1296 or is
+    a Kyokuto product.
+  snapshot_sha256: ef9e3f3645106e9a046058531731d03bc7232b274d300b6a4b0bd760d6f99f59
+- evidence_id: micro-0000178
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000178
+  locator: 'terms[0]: label, definition and is_obsolete'
+  accessed_at: '2026-10-19T23:33:02Z'
+  support: supports
+  summary: MICRO:0000178 is active peptone. Its definition concerns animal-protein
+    digestion; it does not independently identify a specific multi-manufacturer recipe
+    or establish the exact digest blend claimed in target notes.
+  snapshot_sha256: ef45aa186438f91d015280171fde8ccb25740a50cc6f2c6e848de6aad3339b31
+- evidence_id: micro-0000180
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000180
+  locator: 'terms[0]: label, definition and is_obsolete'
+  accessed_at: '2026-10-19T23:33:02Z'
+  support: supports
+  summary: MICRO:0000180 is active proteose peptone. Its definition concerns animal-protein
+    digestion; it does not independently identify a specific multi-manufacturer recipe
+    or establish the exact digest blend claimed in target notes.
+  snapshot_sha256: b3a39a531c5ab5508a297228d13ba81c99899b041d5292a9d668eded939bfe73
+- evidence_id: chebi-17716
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:17716
+  locator: ChEBI Name, definition, formula and ontology relationships
+  accessed_at: '2026-10-19T23:32:11.342496Z'
+  support: supports
+  summary: CHEBI:17716 is lactose, formula C12H22O11. The canonical label is correct,
+    but this identity does not preserve the monohydrate named by ingredients[2].preferred_term.
+  snapshot_sha256: 1404cc5cade75333f8c2d1e226ebd5b7d933da5b5ff930c9286c53b07546bd26
+- evidence_id: chebi-22868
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:22868
+  locator: ChEBI Name, definition, formula and ontology relationships
+  accessed_at: '2026-10-19T23:32:11.358387Z'
+  support: supports
+  summary: CHEBI:22868 is bile salt, a class of conjugated bile-acid sodium salts.
+    It is not an identified single composition for a commercial bile-salt mixture.
+  snapshot_sha256: 5b1c79dfadbfe7d940f58dc335859c20929a0bef59349e7a253dd011adca1264
+- evidence_id: chebi-26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:26710
+  locator: ChEBI Name, definition, formula and ontology relationships
+  accessed_at: '2026-10-19T23:32:12.913708Z'
+  support: supports
+  summary: CHEBI:26710 is sodium chloride, Cl.Na; target label is canonical.
+  snapshot_sha256: 20d037f64aa7b26b83d04556c47a29bc5d4808bbdf7d25027e18ad22a5c5f02f
+- evidence_id: chebi-86370
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:86370
+  locator: ChEBI Name, definition, formula and ontology relationships
+  accessed_at: '2026-10-19T23:32:20.278339Z'
+  support: supports
+  summary: CHEBI:86370 is neutral red as the hydrochloride, C15H16N4.HCl; target label
+    is canonical.
+  snapshot_sha256: e7259a62bff88991662fd73fca07fa1ea12411fac24847ae78fb5412d9803e65
+- evidence_id: chebi-41688
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:41688
+  locator: ChEBI Name, definition, formula and ontology relationships
+  accessed_at: '2026-10-19T23:32:14.378964Z'
+  support: supports
+  summary: CHEBI:41688 is crystal violet as its chloride salt, C25H30N3.Cl; target
+    label is canonical.
+  snapshot_sha256: c9f5e8a0ab4842a42ee015f6e43d1fa029bf3004f95c7fc14ccdcb3e952356ba
+- evidence_id: chebi-2509
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:2509
+  locator: ChEBI Name, definition, formula and ontology relationships
+  accessed_at: '2026-10-19T23:32:11.347108Z'
+  support: supports
+  summary: CHEBI:2509 is agar, a complex polysaccharide mixture; target and owner
+    labels are compatible.
+  snapshot_sha256: fdf12a8280861ef7a97ff6940adfaeba3e1bbe69671dbc1e4ee58869fc4f6bd3
+- evidence_id: chebi-50144
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:50144
+  locator: ChEBI Name, definition, formula and ontology relationships
+  accessed_at: '2026-10-19T23:32:48.264430Z'
+  support: supports
+  summary: CHEBI:50144 is sodium pyruvate, C3H3O3.Na; it matches the primary-source
+    ingredient restored in the owner.
+  snapshot_sha256: 6def5decf9b629ef71fab11391190026cedcf849430f722138abe779b875fb53
+- evidence_id: chebi-15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:15377
+  locator: ChEBI Name, definition, formula and ontology relationships
+  accessed_at: '2026-10-19T23:32:48.413412Z'
+  support: supports
+  summary: CHEBI:15377 is water, H2O; it matches distilled water in the owner at the
+    substance level.
+  snapshot_sha256: 1a98a50fba3aa8ec10dc2fd5c355cd22bc1a955252adbd43f4042fd2f1a3ee5d
+- evidence_id: mim-index
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Owner-linked CHEBI:50144, CHEBI:15377 and CHEBI:2509 rows; pinned metadata
+    in source.inputs
+  accessed_at: '2026-10-19T23:36:44Z'
+  support: supports
+  summary: The maintained owner has three MIM CHEBI links and all three occur in the
+    pinned index. The generated target has no MIM link assertions.
+- evidence_id: bd-product
+  kind: primary_source
+  reference: https://www.bd.com/en-us/products-and-solutions/products/product-page.212123
+  locator: 'Public official page inspected through web browser: product title and
+    SKU/catalog identifier; direct raw retrieval unavailable (BD HTTP 403; Sigma timeout)'
+  accessed_at: '2026-10-19T23:36:52Z'
+  support: supports
+  summary: Official BD product page identifies SKU 212123 as BD Difco MacConkey Agar
+    500 g. It is not the Kyokuto nutrient-broth product named by NBRC 1296.
+- evidence_id: sigma-product
+  kind: primary_source
+  reference: https://www.sigmaaldrich.com/US/en/product/mm/105465
+  locator: 'Public official page inspected through web browser: product title and
+    SKU/catalog identifier; direct raw retrieval unavailable (BD HTTP 403; Sigma timeout)'
+  accessed_at: '2026-10-19T23:36:52Z'
+  support: supports
+  summary: Official Sigma-Aldrich storefront identifies Millipore/Merck product 1.05465
+    as MacConkey agar. It does not establish that the target abbreviated identifier
+    05465 is an exact catalog match or that this is Kyokuto nutrient broth.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: check-scope
+  area: evidence
+  topic: Limits of passing deterministic checks
+  outcome: concern
+  summary: All four documented target commands exited 0. Strict validation used only
+    layers=schema; reference validation explicitly checked 0 references. These results
+    do not validate recipe identity, source support, concentrations or embedded history
+    claims.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: growth
+  area: scope
+  topic: Organism, growth and cultivation-condition scope
+  outcome: concern
+  summary: The target contains no named organism, strain, growth experiment, temperature,
+    incubation duration, DOI or PMID assertion. Its imported MacConkey notes do make
+    broad inhibition, differentiation and nutrient-role claims, but these cannot be
+    transferred to NBRC 1296. No strain-level growth result or cultivation condition
+    is inferred from those statements.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - bounded-search
+  - nbrc
+  - macconkey-source
+- assessment_id: evidence-placement
+  area: evidence
+  topic: Field-level source support
+  outcome: concern
+  summary: The generated record has no claim-level quantity evidence. Source URLs
+    or historical import notes are useful provenance but do not bind an excerpt, denominator
+    and chemical form to each amount. Follow-up should attach source evidence at each
+    corrected ingredient or stock and preparation claim.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - bounded-search
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: NBRC 1296 versus MacConkey expansion
+  outcome: concern
+  summary: CultureMech:007470 agrees across target and owner. Both historical import
+    provenance and description point to NBRC 1296, which lists Kyokuto nutrient broth
+    and sodium pyruvate. The generated MacConkey expansion denotes a different formulation;
+    manufacturer SKU existence cannot bridge that identity mismatch.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - macconkey-source
+  - bd-product
+  - sigma-product
+- assessment_id: q-target-0
+  area: quantity
+  topic: ingredients[0].concentration
+  outcome: concern
+  summary: Target Peptone is 17 g/L. That value belongs to the cited MacConkey expansion
+    and is not supported for NBRC 1296. Do not repair the NBRC record by retaining
+    this unrelated constituent dose.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - nbrc
+  - macconkey-source
+  dimensions:
+  - name: decision
+    value: reject for this medium identity
+    definition: Claim-level quantity decision for the stated field; source amount,
+      preparation basis and any derivation are distinguished.
+    evidence_ids:
+    - record
+    - nbrc
+    - macconkey-source
+- assessment_id: q-target-1
+  area: quantity
+  topic: ingredients[1].concentration
+  outcome: concern
+  summary: Target Proteose peptone is 3 g/L. That value belongs to the cited MacConkey
+    expansion and is not supported for NBRC 1296. Do not repair the NBRC record by
+    retaining this unrelated constituent dose.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - nbrc
+  - macconkey-source
+  dimensions:
+  - name: decision
+    value: reject for this medium identity
+    definition: Claim-level quantity decision for the stated field; source amount,
+      preparation basis and any derivation are distinguished.
+    evidence_ids:
+    - record
+    - nbrc
+    - macconkey-source
+- assessment_id: q-target-2
+  area: quantity
+  topic: ingredients[2].concentration
+  outcome: concern
+  summary: Target Lactose monohydrate is 10 g/L. That value belongs to the cited MacConkey
+    expansion and is not supported for NBRC 1296. Do not repair the NBRC record by
+    retaining this unrelated constituent dose.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - nbrc
+  - macconkey-source
+  dimensions:
+  - name: decision
+    value: reject for this medium identity
+    definition: Claim-level quantity decision for the stated field; source amount,
+      preparation basis and any derivation are distinguished.
+    evidence_ids:
+    - record
+    - nbrc
+    - macconkey-source
+- assessment_id: q-target-3
+  area: quantity
+  topic: ingredients[3].concentration
+  outcome: concern
+  summary: Target Bile salts is 1.5 g/L. That value belongs to the cited MacConkey
+    expansion and is not supported for NBRC 1296. Do not repair the NBRC record by
+    retaining this unrelated constituent dose.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - nbrc
+  - macconkey-source
+  dimensions:
+  - name: decision
+    value: reject for this medium identity
+    definition: Claim-level quantity decision for the stated field; source amount,
+      preparation basis and any derivation are distinguished.
+    evidence_ids:
+    - record
+    - nbrc
+    - macconkey-source
+- assessment_id: q-target-4
+  area: quantity
+  topic: ingredients[4].concentration
+  outcome: concern
+  summary: Target Sodium chloride is 5 g/L. That value belongs to the cited MacConkey
+    expansion and is not supported for NBRC 1296. Do not repair the NBRC record by
+    retaining this unrelated constituent dose.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - nbrc
+  - macconkey-source
+  dimensions:
+  - name: decision
+    value: reject for this medium identity
+    definition: Claim-level quantity decision for the stated field; source amount,
+      preparation basis and any derivation are distinguished.
+    evidence_ids:
+    - record
+    - nbrc
+    - macconkey-source
+- assessment_id: q-target-5
+  area: quantity
+  topic: ingredients[5].concentration
+  outcome: concern
+  summary: Target Neutral red is 0.03 g/L. That value belongs to the cited MacConkey
+    expansion and is not supported for NBRC 1296. Do not repair the NBRC record by
+    retaining this unrelated constituent dose.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - nbrc
+  - macconkey-source
+  dimensions:
+  - name: decision
+    value: reject for this medium identity
+    definition: Claim-level quantity decision for the stated field; source amount,
+      preparation basis and any derivation are distinguished.
+    evidence_ids:
+    - record
+    - nbrc
+    - macconkey-source
+- assessment_id: q-target-6
+  area: quantity
+  topic: ingredients[6].concentration
+  outcome: concern
+  summary: Target Crystal violet is 0.001 g/L. That value belongs to the cited MacConkey
+    expansion and is not supported for NBRC 1296. Do not repair the NBRC record by
+    retaining this unrelated constituent dose.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - nbrc
+  - macconkey-source
+  dimensions:
+  - name: decision
+    value: reject for this medium identity
+    definition: Claim-level quantity decision for the stated field; source amount,
+      preparation basis and any derivation are distinguished.
+    evidence_ids:
+    - record
+    - nbrc
+    - macconkey-source
+- assessment_id: q-target-7
+  area: quantity
+  topic: ingredients[7].concentration
+  outcome: concern
+  summary: Target Agar is 13.5 g/L. That value belongs to the cited MacConkey expansion
+    and is not supported for NBRC 1296. Do not repair the NBRC record by retaining
+    this unrelated constituent dose.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - nbrc
+  - macconkey-source
+  dimensions:
+  - name: decision
+    value: reject for this medium identity
+    definition: Claim-level quantity decision for the stated field; source amount,
+      preparation basis and any derivation are distinguished.
+    evidence_ids:
+    - record
+    - nbrc
+    - macconkey-source
+- assessment_id: q-empty
+  area: quantity
+  topic: ingredients[8].concentration
+  outcome: concern
+  summary: The value is Nutrient Broth Powder (Kyokuto*) with unit G_PER_L and an
+    empty ingredient name. It is malformed text, not the source 6 g premix dose.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - nbrc
+  dimensions:
+  - name: decision
+    value: replace parse remnant with owner-backed premix descriptor
+    definition: Claim-level quantity decision for the stated field; source amount,
+      preparation basis and any derivation are distinguished.
+    evidence_ids:
+    - record
+    - nbrc
+- assessment_id: q-owner-0
+  area: quantity
+  topic: owner NBRC_1298.yaml ingredients[0].concentration
+  outcome: concern
+  summary: The source supports a batch addition of 6 g Kyokuto nutrient broth powder
+    with 1 L distilled water. The owner encodes 6 G_PER_L, which is not independently
+    verified because source water volume is not an explicit final-medium volume. Preserve
+    the literal batch mass and resolve the denominator or use a source-faithful batch-amount
+    representation before regeneration; do not certify the existing rate.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  dimensions:
+  - name: decision
+    value: literal batch mass supported; encoded final-volume rate unverified
+    definition: Claim-level quantity decision for the stated field; source amount,
+      preparation basis and any derivation are distinguished.
+    evidence_ids:
+    - record
+    - owner-0
+    - nbrc
+- assessment_id: q-owner-1
+  area: quantity
+  topic: owner NBRC_1298.yaml ingredients[1].concentration
+  outcome: concern
+  summary: The source supports a batch addition of 1 g sodium pyruvate with 1 L distilled
+    water. The owner encodes 1 G_PER_L, which is not independently verified because
+    source water volume is not an explicit final-medium volume. Preserve the literal
+    batch mass and resolve the denominator or use a source-faithful batch-amount representation
+    before regeneration; do not certify the existing rate.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  dimensions:
+  - name: decision
+    value: literal batch mass supported; encoded final-volume rate unverified
+    definition: Claim-level quantity decision for the stated field; source amount,
+      preparation basis and any derivation are distinguished.
+    evidence_ids:
+    - record
+    - owner-0
+    - nbrc
+- assessment_id: q-owner-2
+  area: quantity
+  topic: owner NBRC_1298.yaml ingredients[2].concentration
+  outcome: supported
+  summary: The primary recipe specifies 1 L Distilled water. The owner preserves that
+    recipe-basis amount; agar is conditional. No premix expansion, hydrate conversion
+    or unreported final-volume correction is justified.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  dimensions:
+  - name: decision
+    value: retain exact source ingredient, amount and optionality
+    definition: Claim-level quantity decision for the stated field; source amount,
+      preparation basis and any derivation are distinguished.
+    evidence_ids:
+    - record
+    - owner-0
+    - nbrc
+- assessment_id: q-owner-3
+  area: quantity
+  topic: owner NBRC_1298.yaml ingredients[3].concentration
+  outcome: concern
+  summary: The source supports a batch addition of 15 g optional agar with 1 L distilled
+    water. The owner encodes 15 G_PER_L, which is not independently verified because
+    source water volume is not an explicit final-medium volume. Preserve the literal
+    batch mass and resolve the denominator or use a source-faithful batch-amount representation
+    before regeneration; do not certify the existing rate.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  dimensions:
+  - name: decision
+    value: literal batch mass supported; encoded final-volume rate unverified
+    definition: Claim-level quantity decision for the stated field; source amount,
+      preparation basis and any derivation are distinguished.
+    evidence_ids:
+    - record
+    - owner-0
+    - nbrc
+- assessment_id: grounding
+  area: grounding
+  topic: All eight target ingredient CURIEs and owner replacement links
+  outcome: concern
+  summary: MICRO:0000178 and MICRO:0000180 resolve with matching labels. All six target
+    CHEBI labels are canonical, but lactose C12H22O11 is less specific than the named
+    monohydrate. Bile salt is a class; neutral red and crystal violet encode chloride-containing
+    forms. Owner sodium pyruvate/water/agar resolve and match pinned MIM links. Identifier
+    validity provides no support for including MacConkey ingredients in NBRC 1296.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - owner-0
+  - micro-0000178
+  - micro-0000180
+  - chebi-17716
+  - chebi-22868
+  - chebi-26710
+  - chebi-86370
+  - chebi-41688
+  - chebi-2509
+  - chebi-50144
+  - chebi-15377
+  - mim-index
+- assessment_id: catalog
+  area: provenance
+  topic: Catalog identifiers and source attribution
+  outcome: concern
+  summary: BD 212123 resolves to MacConkey agar. The official alternate catalog page
+    uses 1.05465, so the target short Sigma 05465 string remains an unproven exact
+    match. Neither source identifies Kyokuto 551-02480-7; that code is verified as
+    the one NBRC itself specifies, without assuming a premix composition. Repeating
+    a multi-supplier catalog block on eight constituent chemicals does not make those
+    chemicals separately supplied products.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - bd-product
+  - sigma-product
+  - macconkey-source
+- assessment_id: preparation
+  area: completeness
+  topic: pH, optional agar, sterilization and classes
+  outcome: concern
+  summary: Complex/undefined is appropriate for a nutrient-broth premix. The primary
+    specifies pH 7.0 and permits optional agar. SOLID_AGAR may select the agar variant,
+    but the target lacks usable source pH and contains the wrong agar dose within
+    its unrelated expansion. Generic autoclaving is unsupported by NBRC 1296 and encoded
+    as DISSOLVE; it cannot be imported from a different MacConkey recipe.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+- assessment_id: history
+  area: provenance
+  topic: Embedded historical claims and owner correction
+  outcome: concern
+  summary: The generated record ends with the August merge and omits the September
+    owner correction. The owner August recovery note says the source was not used
+    because a grounded list existed; grounding did not establish identity. The later
+    owner correction explicitly replaced the mistaken MacConkey expansion. Current
+    owner/source agreement supports a regeneration follow-up, not a retrospective
+    certification of the old events.
+  target_ids:
+  - CultureMech:007470
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - merge-owner
+findings:
+- finding_id: f1
+  issue_key: nbrc1296-wrong-formulation
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: MacConkey agar has replaced the named NBRC recipe
+  description: The target points to NBRC 1296 yet lists a MacConkey constituent formulation.
+    Official NBRC specifies Kyokuto nutrient broth, sodium pyruvate, water and optional
+    agar. Source attribution and valid ontology labels cannot make these different
+    recipes equivalent.
+  target_ids:
+  - CultureMech:007470
+  field_paths:
+  - ingredients[0]
+  - ingredients[1]
+  - ingredients[2]
+  - ingredients[3]
+  - ingredients[4]
+  - ingredients[5]
+  - ingredients[6]
+  - ingredients[7]
+  - notes
+  - description
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - macconkey-source
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1298.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: nbrc1296-invalid-quantity-row
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Blank descriptor carries a product name as a numeric amount
+  description: ingredients[8] has no name and gives Nutrient Broth Powder (Kyokuto*)
+    as a g/L value. The official source supplies a numeric premix dose, and the owner
+    already represents it.
+  target_ids:
+  - CultureMech:007470
+  field_paths:
+  - ingredients[8].preferred_term
+  - ingredients[8].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1298.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f3
+  issue_key: nbrc1296-lactose-hydrate-grounding
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Lactose monohydrate is equated to nonhydrated lactose
+  description: The target names Lactose monohydrate but binds CHEBI:17716, formula
+    C12H22O11, and declares lactose an EXACT synonym. The asserted water of crystallization
+    is lost. This defect remains observable even though the whole expansion must leave
+    this NBRC record.
+  target_ids:
+  - CultureMech:007470
+  field_paths:
+  - ingredients[2].preferred_term
+  - ingredients[2].term
+  - ingredients[2].synonyms[0]
+  evidence_ids:
+  - record
+  - chebi-17716
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1298.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f4
+  issue_key: nbrc1296-preparation-variant
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source pH is lost and sterilization is unsupported
+  description: The target omits pH 7.0 and adds an autoclaving instruction unsupported
+    by NBRC 1296 with action DISSOLVE. These preparation defects would persist if
+    only ingredient values were changed. SOLID_AGAR can validly select the optional
+    agar variant; that classification alone is not a defect.
+  target_ids:
+  - CultureMech:007470
+  field_paths:
+  - ph_value
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1298.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f5
+  issue_key: nbrc1296-source-attribution
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Generated metadata presents a secondary article as a multi-supplier product
+    specification
+  description: Each constituent repeats a MacConkey premix supplier/catalog block.
+    The cited article supplies no evidence that these separate chemicals are the listed
+    supplier products, and the Sigma code is abbreviated relative to the inspected
+    official product. The maintained owner has the correct NBRC source reference.
+  target_ids:
+  - CultureMech:007470
+  field_paths:
+  - ingredients[0].supplier_catalog
+  - ingredients[1].supplier_catalog
+  - ingredients[2].supplier_catalog
+  - ingredients[3].supplier_catalog
+  - ingredients[4].supplier_catalog
+  - ingredients[5].supplier_catalog
+  - ingredients[6].supplier_catalog
+  - ingredients[7].supplier_catalog
+  - notes
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - macconkey-source
+  - bd-product
+  - sigma-product
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1298.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Verify NBRC_1298.yaml against the official NBRC 1296 page, retain the
+    source premix as a premix, then regenerate. Preserve CultureMech identity while
+    removing the unrelated MacConkey expansion and its supplier attribution. Before
+    regeneration, retain literal batch masses and resolve the owner G_PER_L denominator
+    instead of treating 1 L water as proved final volume.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007470
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1298.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Generated formulation is 6 g Kyokuto nutrient broth and 1 g sodium pyruvate per
+    source 1 L water basis, with 15 g agar conditional.
+  - No MacConkey dyes, lactose, bile salts or unrelated supplier metadata remain under
+    NBRC 1296.
+  - Run documented target validators and reviewed regeneration/product gates after
+    authorized curation.
+  - Source batch masses are preserved without asserting final-medium g/L until final
+    volume is supported; any representation change is made in the maintained owner.
+- action_id: a2
+  description: Regenerate from the verified owner and ensure the parser remnant is
+    removed rather than carried alongside the corrected premix.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007470
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1298.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - No empty descriptor or nonnumeric concentration paired with G_PER_L remains.
+  - The source premix identity is preserved without a guessed constituent decomposition.
+- action_id: a3
+  description: Remove the unrelated lactose row with the wrong expansion. If a separate
+    correctly sourced MacConkey record retains monohydrate, ground the exact form
+    or explicitly document the broader mapping instead of asserting exact identity.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007470
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1298.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - This NBRC record contains only source-supported ingredients.
+  - Any retained monohydrate assertion elsewhere is reviewed separately with its exact
+    form and mass basis; no automatic transfer is implied.
+- action_id: a4
+  description: Carry the maintained pH into regeneration and retain the source conditional
+    agar context. Remove or independently support additional sterilization instructions,
+    and make the action enum agree with its description.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:007470
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1298.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - pH 7.0 and agar optionality are explicit.
+  - Preparation action enums agree with their descriptions and all additional source-dependent
+    instructions are supported.
+- action_id: a5
+  description: Remove mismatched product blocks during regeneration and attach the
+    exact NBRC source, Kyokuto code and claim-level quantity provenance to the premix
+    recipe.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:007470
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1298.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Source URLs and catalog identifiers support the exact field they annotate.
+  - The regenerated source reference and owner correction are retained without certifying
+    unrelated catalog equivalence.
+limitations:
+- The exact Kyokuto premix composition is not supplied by NBRC and was not inferred
+  from other products. Literal masses with 1 L water are supported; the owner G_PER_L
+  rates remain unverified without a final-volume basis.
+- The catalog string Sigma 05465 is a near match to the official Millipore/Merck product
+  1.05465. Equivalence of the shortened string was not established; no manufacturer
+  composition or lot equivalence was assumed.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Embedded curation_history was read and compared with present target and owner bytes.
+  Historical assertions are not retroactively certified; no history edits, status
+  promotion or experimental verification were performed.
+- Official BD and Sigma product pages were successfully inspected through the browser.
+  Direct raw capture returned BD HTTP 403 and a Sigma timeout, so those two evidence
+  entries have browser access timestamps and no asserted snapshot hash.
+tags:
+- unreviewed-records
+- batch-002
+- generated-medium
+```
