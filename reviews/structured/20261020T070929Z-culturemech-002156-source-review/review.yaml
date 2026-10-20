@@ -1,0 +1,698 @@
+schema_version: 1.0.0
+review_id: 20261020T070929Z-culturemech-002156-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 1_2_ytss_medium (CultureMech:002156)'
+started_at: '2026-10-20T07:07:25Z'
+finished_at: '2026-10-20T07:09:29Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The solid DSMZ 974 branch and all four listed amounts agree with the collection
+  source and provider-declared recipe basis. Sea-salt supplier and water/batch context
+  are omitted; current owner evidence is absent from the generated target. The projected
+  KG ingredient match resolves to a different medium but cannot be reproduced without
+  its graph snapshot.
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/match-kg-microbe/SKILL.md
+    sha256: add85aafc1e18164de2a9717cc9d63e5e20f34a1d597568a0c6d8b039c574a99
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/1_2_YTSS_MEDIUM.yaml
+    sha256: 00f4134cdec9754ba716ef2af8bbf0befd5d8421d37145438b12be023257a353
+    role: target
+  - path: data/normalized_yaml/bacterial/1_2_ytss_medium.yaml
+    sha256: 2aae7adb6f1b7cd9898a3bca9093b9be8a3c6ae5033191b068b823b6b71fd966
+    role: context
+  - path: data/normalized_yaml/bacterial/KOMODO_974_1_2_YTSS_medium.yaml
+    sha256: 06f76072b528636e6b0f17abf73bf6339fbf59e11655438af1f9a8d63692ecb0
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 41 in Python lexicographic repository-relative path order of the
+    initially uncovered merged corpus; Batch 005 selects ordinals 41-50 after four
+    validated local batches; saved bundles are published locally in path order. On
+    fresh origin/main at this batch base, scripts/record_review.py list validated
+    34 existing bundles and none listed this target path or ID. This bundle selects
+    only the named record; no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002156
+targets:
+- target_id: CultureMech:002156
+  path: data/merge_yaml/merged/1_2_YTSS_MEDIUM.yaml
+  label: 1_2_ytss_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_ytss_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_974_1_2_YTSS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/1_2_YTSS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:002156
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/1_2_YTSS_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch005/041/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-005/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch005/041/strict.tsv"
+  target_ids:
+  - CultureMech:002156
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/1_2_YTSS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:002156
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/1_2_YTSS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:002156
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:002156
+- check_id: kg-graph-match
+  name: Reproduce asserted KG-Microbe projected ingredient match
+  required: true
+  status: unavailable
+  summary: Accession resolves, but the required graph snapshot is absent from this
+    checkout. Full formulation differences cannot substitute for reproducing the documented
+    projection.
+  target_ids:
+  - CultureMech:002156
+  evidence_ids:
+  - graph-search
+  - match-code
+  - other-accession
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/1_2_YTSS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-20T07:09:27Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/1_2_ytss_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-20T07:09:27Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_974_1_2_YTSS_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-20T07:09:27Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/1_2_YTSS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T07:07:42.858276Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/1_2_YTSS_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch005/041/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-20T07:07:44.418570Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-005/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch005/041/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/1_2_YTSS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T07:07:46.587090Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/1_2_YTSS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T07:07:47.632200Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-20T07:09:27Z'
+  support: supports
+  summary: './data/merge_yaml/merged/1_2_YTSS_MEDIUM.yaml:1:id: CultureMech:002156
+
+    ./data/normalized_yaml/bacterial/1_2_ytss_medium.yaml:1:id: CultureMech:002156
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:07:41.448510Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-20T07:09:27Z'
+  support: supports
+  summary: '{"CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier":
+    "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}'
+- evidence_id: pdf
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium974.pdf
+  locator: Page 1, full recipe and two preparation sentences
+  accessed_at: '2026-10-20T07:07:36.592171Z'
+  support: supports
+  summary: Official DSMZ 974 sheet identifies the medium, three basal components,
+    supplier-specific sea salts, water basis, final pH and conditional agar addition.
+  quote: Sea salts (Sigma)
+  snapshot_sha256: 05e4f7595c8745f2948041009bc768a8374f2636cf4882378611711408286cb9
+- evidence_id: api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/974
+  locator: $.data.medium; $.data.solutions[0].volume, recipe and steps
+  accessed_at: '2026-10-20T07:07:59.210384Z'
+  support: supports
+  summary: Source accession, main-solution basis and all four target amount rows inspected;
+    source water and supplier attribute are not retained in the target.
+  snapshot_sha256: 8a2657a0dbbf9db4b07f7128059923f42f7ccbd6be0590b393daf2579c88581c
+- evidence_id: other-accession
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/12
+  locator: $.data.medium and $.data.solutions[0].recipe
+  accessed_at: '2026-10-20T07:08:00.973342Z'
+  support: supports
+  summary: Linked medium 12 resolves to SOIL EXTRACT MEDIUM. Its complete formulation
+    differs from DSMZ 974. This does not independently refute equality of a reduced
+    ontology projection.
+  snapshot_sha256: aae1357e31d914ca483bea213eafb7d4a462aa252fc9008b483e42791202bd8b
+- evidence_id: komodo
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: MediaList table row with first cell 974; linked DSMZ PDF
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Inspected the unique primary HTML table row 974 and its DSMZ 974 link;
+    verifies accession mapping only. Stored source hash verified before reading.
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: match-code
+  kind: record_content
+  reference: src/culturemech/match/kg_media_matcher.py
+  locator: extract_recipe_ingredients; find_exact_match; graph load
+  accessed_at: '2026-10-20T07:09:27Z'
+  support: context_only
+  summary: Matcher extracts CHEBI/FOODON IDs, omits ungrounded ingredients and concentrations,
+    then compares projected sets. Target contributes only CHEBI:2509; source identity
+    is a separate claim.
+- evidence_id: graph-search
+  kind: record_content
+  reference: repository checkout
+  locator: Complete filename search filtered for edges.tsv or nodes.tsv
+  accessed_at: '2026-10-20T07:09:27Z'
+  support: context_only
+  summary: '{"argv": ["rg", "--no-ignore", "--hidden", "--files", "."], "scope": "/private/tmp/culturemech-record-review-20261019-batch-005",
+    "matching_files": []}'
+  search_scope: rg --no-ignore --hidden --files . across the entire batch-005 checkout;
+    no matching graph files. No claim about external checkouts.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:002156
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '1 primary CHEBI identities resolve with matching labels; 1 of 1 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:002156
+  evidence_ids:
+  - record
+  - mim
+  - chebi2509
+  details: 4 direct ingredient instances; primary coverage 1/4 (25.00%), verified
+    secondary coverage 1/4 (25.00%). Percentages use a 0–100 linkage scale, not a
+    scientific correctness score. Complex mixtures without asserted IDs remain ungrounded
+    rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: DSMZ source and KOMODO duplicate lineage
+  outcome: supported
+  summary: Record ID and source accession resolve; KOMODO 974 maps to DSMZ 974. Child
+    path/ID CultureMech:006932 and reciprocal parent CultureMech:002156 agree with
+    the maintained records. Both owners have identical listed amounts and physical-state
+    scope.
+  target_ids:
+  - CultureMech:002156
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - pdf
+  - api
+  - komodo
+  - id-search
+- assessment_id: amount-0
+  area: quantity
+  topic: ingredients[0].concentration
+  outcome: supported
+  summary: 'verified: Yeast extract 2 G_PER_L agrees with exact provider g_l and the
+    collection formulation. Provider-declared main solution is 1000 ml; no independent
+    final-volume claim.'
+  target_ids:
+  - CultureMech:002156
+  evidence_ids:
+  - record
+  - pdf
+  - api
+  details: Exact ingredient-name and numeric match performed against the captured
+    JSON. No stock expansion, mass/molar conversion or unstated percent conversion.
+- assessment_id: amount-1
+  area: quantity
+  topic: ingredients[1].concentration
+  outcome: supported
+  summary: 'verified: Tryptone 1.25 G_PER_L agrees with exact provider g_l and the
+    collection formulation. Provider-declared main solution is 1000 ml; no independent
+    final-volume claim.'
+  target_ids:
+  - CultureMech:002156
+  evidence_ids:
+  - record
+  - pdf
+  - api
+  details: Exact ingredient-name and numeric match performed against the captured
+    JSON. No stock expansion, mass/molar conversion or unstated percent conversion.
+- assessment_id: amount-2
+  area: quantity
+  topic: ingredients[2].concentration
+  outcome: supported
+  summary: 'verified: Sea Salt 20 G_PER_L agrees with exact provider g_l and the collection
+    formulation. Provider-declared main solution is 1000 ml; no independent final-volume
+    claim.'
+  target_ids:
+  - CultureMech:002156
+  evidence_ids:
+  - record
+  - pdf
+  - api
+  details: Exact ingredient-name and numeric match performed against the captured
+    JSON. No stock expansion, mass/molar conversion or unstated percent conversion.
+- assessment_id: amount-3
+  area: quantity
+  topic: ingredients[3].concentration
+  outcome: supported
+  summary: 'verified: Agar 15 G_PER_L agrees with exact provider g_l and the collection
+    formulation. Agar is specifically the solid-medium option retained in the target.'
+  target_ids:
+  - CultureMech:002156
+  evidence_ids:
+  - record
+  - pdf
+  - api
+  details: Exact ingredient-name and numeric match performed against the captured
+    JSON. No stock expansion, mass/molar conversion or unstated percent conversion.
+- assessment_id: preparation
+  area: completeness
+  topic: Source product identity and batch basis
+  outcome: concern
+  summary: The source names Sigma sea salts and distilled-water basis; neither is
+    retained in the target or its two normalized owners. pH and the solid-medium qualification
+    are correctly retained.
+  target_ids:
+  - CultureMech:002156
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - pdf
+  - api
+- assessment_id: conditions
+  area: scope
+  topic: Physical state, classification, conditions and growth claims
+  outcome: supported
+  summary: SOLID_AGAR selects the explicitly allowed agar option; pH 7.0 agrees. Complex/undefined
+    classification fits the named extracts and salt mixture. Bacterial filing and
+    generic cultivation use make no strain-specific growth assertion. The inspected
+    sheet supplies no sterilization, incubation, atmosphere or shelf-life instruction
+    to add. No stock or organism reference is asserted.
+  target_ids:
+  - CultureMech:002156
+  evidence_ids:
+  - record
+  - pdf
+  - api
+- assessment_id: kg-match
+  area: consistency
+  topic: Projected match versus medium identity
+  outcome: unknown
+  summary: mediadive.medium:12 is a resolvable different formulation. The matching
+    algorithm uses a reduced ingredient-ID set, so this is not sufficient to declare
+    the stored computational match wrong. Reproducibility remains unresolved.
+  target_ids:
+  - CultureMech:002156
+  evidence_ids:
+  - record
+  - other-accession
+  - match-code
+  - graph-search
+- assessment_id: evidence
+  area: evidence
+  topic: Generated evidence and maintained provenance
+  outcome: concern
+  summary: Generated target has no ingredient evidence or root references. Each maintained
+    owner has three ingredient evidence entries, whose parsed JSON rows match current
+    provider fields. Water and sea-salt details remain gaps in the owners. Existing
+    history distinguishes import and later merge; no status or history was edited.
+  target_ids:
+  - CultureMech:002156
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - api
+findings:
+- finding_id: f1
+  issue_key: CM002156-source-product-batch-context
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source salt product and batch context omitted
+  description: Generic Sea Salt loses the source supplier qualification; omission
+    of the distilled-water basis also leaves the preparation context incomplete despite
+    correctly retained numeric g/L values. These are maintained-input omissions, not
+    evidence that a replacement formulation or sterilization recipe should be guessed.
+  target_ids:
+  - CultureMech:002156
+  field_paths:
+  - ingredients[2]
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - pdf
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_ytss_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_974_1_2_YTSS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: CM002156-generated-formulation-evidence-gap
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Generated record omits current owner evidence
+  description: Three source-supported ingredient evidence entries and bibliographic
+    references in each owner are absent from the older generated target; the salt
+    amount also needs narrow evidence in the owners. This is observed output drift,
+    not proof that the current merger drops those fields.
+  target_ids:
+  - CultureMech:002156
+  field_paths:
+  - ingredients[*].evidence
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_ytss_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_974_1_2_YTSS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Retain the exact supplier-qualified mixture and original water/batch
+    context with source evidence in both maintained source records, then regenerate.
+    Do not infer a catalog number or a measured final volume.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002156
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_ytss_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_974_1_2_YTSS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Preserve verified owner evidence during separately authorized regeneration,
+    complete source evidence for the salt, and check regenerated retention without
+    inventing citations.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002156
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_ytss_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_974_1_2_YTSS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- 'The required KG-Microbe projected ingredient-set match could not be independently
+  reproduced: a hidden/ignored-inclusive checkout file search found no edges.tsv or
+  nodes.tsv. A different accession alone is not proof of an incorrect projected match.'
+- A live KOMODO MediaList request returned HTTP 403. Identity was instead verified
+  against the byte-hashed primary HTML capture retained from this review session;
+  its original access time is preserved.
+- The collection PDF gives water addition, not a separately measured final volume.
+  Reported g/L values are verified against the provider-declared 1000 ml main solution;
+  no physical final-volume measurement or mixture molarity is asserted.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-005
+- generated-medium
