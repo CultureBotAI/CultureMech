@@ -131,8 +131,11 @@ ingredients:
       the PDF copyright year is not asserted as publication year.'
 - preferred_term: Distilled water
   term:
-    id: mediadive.compound:4
-    label: Distilled water
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Water
   concentration:
     value: '0.333'
     unit: L
@@ -229,6 +232,12 @@ curation_history:
     {''value'': ''0.333'', ''unit'': ''L''} (add); None -> solutions[0].composition[8].concentration:
     None -> {''value'': ''1'', ''unit'': ''L''} (add); None -> solutions[0].concentration:
     None -> {''value'': ''0.666'', ''unit'': ''L''} (add)'
+- timestamp: '2026-10-21T03:04:48.273866+00:00'
+  curator: stage5-remediation-v1.0
+  action: CURATED
+  notes: 'Resolved Stage 4 finding CM-C1S4-005 on CultureMech:000252 (Issue #635).'
+  changes: Replaced mediadive.compound:4 pseudo-CURIE on Distilled water entries with
+    CHEBI:15377 and populated mediaingredientmech_chebi_term (#635).
 high_metal: true
 solutions:
 - preferred_term: Total Salts
@@ -504,8 +513,11 @@ solutions:
         the PDF copyright year is not asserted as publication year.'
   - preferred_term: Distilled water
     term:
-      id: mediadive.compound:4
-      label: Distilled water
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: Water
     concentration:
       value: '1'
       unit: L

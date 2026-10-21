@@ -1,9 +1,9 @@
 id: CultureMech:015445
 id_lineage_token: legacy:9d8fc9067e37a00bec666ded1ffb3369a709c94e89381d41cc0e9385a690ca27
-preferred_term: DAS Vitamin Cocktail
+preferred_term: das_vitamin_cocktail
 term:
   id: MediaIngredientMech:UNMAPPED_0045
-  label: DAS Vitamin Cocktail
+  label: das_vitamin_cocktail
 composition:
 - preferred_term: Tricine (pH 8)
   concentration:
@@ -89,9 +89,9 @@ composition:
   term:
     id: CHEBI:176843
     label: vitamin B12
-  notes: Source table says "add after autoclaving", but the preparation directions
-    specify filtration without an autoclaving step. Sterilization sequence remains
-    unresolved.
+  notes: Dissolve Vitamin B12 in Tricine solution; sterilize the completed vitamin
+    cocktail via 0.45 µm Millipore membrane filtration and add aseptically to autoclaved
+    basal medium.
   mediaingredientmech_chebi_term:
     id: CHEBI:176843
     label: vitamin B12
@@ -297,6 +297,13 @@ curation_history:
     "old_term": {"id": "CHEBI:17836", "label": "4-aminobenzoate"}, "sources": [{"locator":
     "Formula and conjugate-acid relationship to CHEBI:17836", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:30753",
     "snippet": "C7H7NO2"}]}], "stock_boundary": "unchanged"}'
+- timestamp: '2026-10-21T03:04:47.869382+00:00'
+  curator: stage5-remediation-v1.0
+  action: CURATED
+  notes: 'Resolved Stage 4 finding CM-C1S4-007 on CultureMech:015445 (Issue #635).'
+  changes: Normalized preferred_term to das_vitamin_cocktail, updated category to
+    algae, synchronized term.label, and clarified Vitamin B12 filter-sterilization
+    protocol (#635).
 references:
 - reference: https://utex.org/products/das-vitamin-cocktail
   title: DAS Vitamin Cocktail | UTEX Culture Collection of Algae
@@ -330,7 +337,7 @@ references:
   notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
     Chemical identity evidence only; no recipe amount is inferred. Formula and conjugate-acid
     relationship to CHEBI:17836. '
-category: bacterial
+category: algae
 evidence:
 - reference: https://utex.org/products/das-vitamin-cocktail
   supports: SUPPORT

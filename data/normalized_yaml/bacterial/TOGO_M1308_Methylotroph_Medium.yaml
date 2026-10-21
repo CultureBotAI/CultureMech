@@ -34,16 +34,21 @@ ingredients:
     value: '0.07'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+    Simple component; JCM Medium 1219 specifies mass per 970 mL distilled water plus
+    24.81 mL stock solutions (~994.81 mL total batch volume)'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
 - preferred_term: KH2PO4
   concentration:
     value: '0.27'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+    compound; JCM Medium 1219 specifies mass per 970 mL distilled water plus 24.81
+    mL stock solutions (~994.81 mL total batch volume)'
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
@@ -59,16 +64,21 @@ ingredients:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+    Defined component; JCM Medium 1219 specifies mass per 970 mL distilled water plus
+    24.81 mL stock solutions (~994.81 mL total batch volume)'
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: Magnesium chloride
 - preferred_term: NaNO3
   concentration:
     value: '0.42'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
-    Defined component'
+    Defined component; JCM Medium 1219 specifies mass per 970 mL distilled water plus
+    24.81 mL stock solutions (~994.81 mL total batch volume)'
   term:
     id: CHEBI:63005
     label: sodium nitrate
@@ -84,7 +94,8 @@ ingredients:
     value: '0.014'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+    Defined component; JCM Medium 1219 specifies mass per 970 mL distilled water plus
+    24.81 mL stock solutions (~994.81 mL total batch volume)'
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -99,7 +110,9 @@ ingredients:
   concentration:
     value: '4.77'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component;
+    JCM Medium 1219 specifies mass per 970 mL distilled water plus 24.81 mL stock
+    solutions (~994.81 mL total batch volume)'
   term:
     id: CHEBI:46756
     label: HEPES
@@ -375,6 +388,15 @@ curation_history:
     evidence_only; unchanged {''value'': ''0.1'', ''unit'': ''MG_PER_L''}; solutions[2].composition[8].concentration:
     evidence_only; unchanged {''value'': ''5'', ''unit'': ''MG_PER_L''}; solutions[2].composition[9].concentration:
     evidence_only; unchanged {''value'': ''5'', ''unit'': ''MG_PER_L''}'
+- timestamp: '2026-10-21T03:04:48.366677+00:00'
+  curator: stage5-remediation-v1.0
+  action: CURATED
+  notes: 'Resolved Stage 4 findings CM-C1S4-004 and CM-C1S4-005 on CultureMech:007843
+    (Issue #634, Issue #635).'
+  changes: Replaced misleading G_PER_L batch-gram units on ingredients[1..6] with
+    GRAM, added 6 source-verified concentration evidence items, and grounded all 6
+    unmapped stock components across solutions[0..3] to canonical CHEBI terms (#634,
+    #635).
 solutions:
 - preferred_term: Trace element solution (see Medium [M278])
   composition:
@@ -385,6 +407,9 @@ solutions:
     term:
       id: CHEBI:44557
       label: nitrilotriacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:44557
+      label: Nitrilotriacetic acid
     evidence:
     - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=284
       supports: SUPPORT
@@ -401,6 +426,9 @@ solutions:
     term:
       id: CHEBI:86254
       label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: FeCl3 x 6 H2O
     evidence:
     - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=284
       supports: SUPPORT
@@ -417,6 +445,9 @@ solutions:
     term:
       id: CHEBI:86368
       label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: MnCl2 x 4 H2O
     evidence:
     - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=284
       supports: SUPPORT
@@ -439,6 +470,12 @@ solutions:
         stock preparation specifies bringing volume to 1.0 L. 0.024 g / 1.0 L = 0.024
         g/L in the stock, not in the final medium. Locator: Trace element solution
         section, CoCl2 x 6 H2O row, g unit cell; following preparation instruction.'
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: Cobalt chloride hexahydrate
   - preferred_term: CaCl2 x 2 H2O
     concentration:
       value: '0.1'
@@ -446,6 +483,9 @@ solutions:
     term:
       id: CHEBI:86158
       label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: CaCl2 x 2 H2O
     evidence:
     - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=284
       supports: SUPPORT
@@ -462,6 +502,9 @@ solutions:
     term:
       id: CHEBI:49976
       label: zinc dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49976
+      label: ZnCl2
     evidence:
     - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=284
       supports: SUPPORT
@@ -478,6 +521,9 @@ solutions:
     term:
       id: CHEBI:86318
       label: copper(II) chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86318
+      label: CuCl2 x 2 H2O
     evidence:
     - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=284
       supports: SUPPORT
@@ -494,6 +540,9 @@ solutions:
     term:
       id: CHEBI:33118
       label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: H3BO3
     evidence:
     - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=284
       supports: SUPPORT
@@ -516,6 +565,12 @@ solutions:
         stock preparation specifies bringing volume to 1.0 L. 0.024 g / 1.0 L = 0.024
         g/L in the stock, not in the final medium. Locator: Trace element solution
         section, Na2MoO4 x 2 H2O row, g unit cell; following preparation instruction.'
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: Na2MoO4 x 2 H2O
   - preferred_term: NiCl2 x 6 H2O
     concentration:
       value: '0.12'
@@ -529,6 +584,12 @@ solutions:
         stock preparation specifies bringing volume to 1.0 L. 0.12 g / 1.0 L = 0.12
         g/L in the stock, not in the final medium. Locator: Trace element solution
         section, NiCl2 x 6 H2O row, g unit cell; following preparation instruction.'
+    term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53542
+      label: Nickel (II) chloride hexahydrate
   preparation_notes: Cross-reference to Medium M278. Dissolve nitrilotriacetic acid
     first in 200 mL distilled water, adjust pH to 6.5 with KOH, add remaining salts,
     bring to 1.0 L, and readjust pH to 7.0 with KOH.
@@ -568,6 +629,12 @@ solutions:
                                 "unit": "ml",
                                 "optional": 0
                             }. Medium response SHA256=ec7bff0980d24724c1052f1e90796ca659808e61f3206a93b61376d2e1dbac67; it identifies original recipe https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219. JCM 1219's cross-reference and the linked JCM stock table were manually checked.
+    term:
+      id: CHEBI:131361
+      label: disodium selenite pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131361
+      label: Na2SeO3 x 5 H2O
   - preferred_term: Na2WO4 x 2 H2O
     concentration:
       value: '4'
@@ -575,6 +642,9 @@ solutions:
     term:
       id: CHEBI:63939
       label: sodium tungstate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63939
+      label: Na2WO4 x 2 H2O
     evidence:
     - reference: https://mediadive.dsmz.de/rest/solution/3981
       supports: SUPPORT
@@ -615,6 +685,9 @@ solutions:
     term:
       id: CHEBI:15956
       label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: Biotin
     evidence:
     - reference: https://mediadive.dsmz.de/rest/solution/3861
       supports: SUPPORT
@@ -649,6 +722,9 @@ solutions:
     term:
       id: CHEBI:27470
       label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: Folic acid
     evidence:
     - reference: https://mediadive.dsmz.de/rest/solution/3861
       supports: SUPPORT
@@ -683,6 +759,9 @@ solutions:
     term:
       id: CHEBI:30961
       label: pyridoxine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
     evidence:
     - reference: https://mediadive.dsmz.de/rest/solution/3861
       supports: SUPPORT
@@ -717,6 +796,9 @@ solutions:
     term:
       id: CHEBI:49105
       label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: Thiamine HCl
     evidence:
     - reference: https://mediadive.dsmz.de/rest/solution/3861
       supports: SUPPORT
@@ -751,6 +833,9 @@ solutions:
     term:
       id: CHEBI:17015
       label: riboflavin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: Riboflavin
     evidence:
     - reference: https://mediadive.dsmz.de/rest/solution/3861
       supports: SUPPORT
@@ -785,6 +870,9 @@ solutions:
     term:
       id: CHEBI:15940
       label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: Nicotinic acid
     evidence:
     - reference: https://mediadive.dsmz.de/rest/solution/3861
       supports: SUPPORT
@@ -817,6 +905,9 @@ solutions:
       value: '5'
       unit: MG_PER_L
     term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
       id: CHEBI:31345
       label: Calcium pantothenate
     evidence:
@@ -853,6 +944,9 @@ solutions:
     term:
       id: CHEBI:176843
       label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: Vitamin B12
     evidence:
     - reference: https://mediadive.dsmz.de/rest/solution/3861
       supports: SUPPORT
@@ -887,6 +981,9 @@ solutions:
     term:
       id: CHEBI:30753
       label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: p-Aminobenzoic acid
     evidence:
     - reference: https://mediadive.dsmz.de/rest/solution/3861
       supports: SUPPORT
@@ -945,6 +1042,12 @@ solutions:
                                 "unit": "ml",
                                 "optional": 0
                             }. Medium response SHA256=ec7bff0980d24724c1052f1e90796ca659808e61f3206a93b61376d2e1dbac67; it identifies original recipe https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219. JCM 1219's cross-reference and the linked JCM stock table were manually checked.
+    term:
+      id: CHEBI:16494
+      label: lipoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16494
+      label: (DL)-alpha-Lipoic acid
   preparation_notes: Cross-reference to Medium M190.
   concentration:
     value: '0.01'
@@ -963,6 +1066,12 @@ solutions:
         specifies a 10 mM stock. Retain 10 MILLIMOLAR within the stock composition;
         the separately represented 2 ml dose does not change its stock strength. Locator:
         post-autoclave additions table, 10 mM CuCl2 solution row label.'
+    term:
+      id: CHEBI:49553
+      label: copper(II) chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49553
+      label: CuCl2
   concentration:
     value: '0.002'
     unit: L
@@ -976,6 +1085,9 @@ solutions:
     term:
       id: CHEBI:35458
       label: cerium trichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:35458
+      label: CeCl3
     evidence:
     - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219
       supports: SUPPORT

@@ -15,7 +15,7 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: glucose
+    label: Glucose
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -25,7 +25,7 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: ammonium sulfate
+    label: (NH4)2SO4
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -35,7 +35,7 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: thiamine hydrochloride
+    label: Thiamine HCl
 - preferred_term: myo-Inositol
   term:
     id: CHEBI:17268
@@ -46,7 +46,7 @@ ingredients:
   notes: 'Cross-references: KEGG:inost'
   mediaingredientmech_chebi_term:
     id: CHEBI:17268
-    label: myo-inositol
+    label: m-Inositol
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -57,7 +57,7 @@ ingredients:
   notes: 'Cross-references: KEGG:4abz'
   mediaingredientmech_chebi_term:
     id: CHEBI:17836
-    label: 4-aminobenzoate
+    label: 4-Aminobenzoate
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.004863'
@@ -67,7 +67,7 @@ ingredients:
     label: pyridoxine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: pyridoxine hydrochloride
+    label: Pyridoxine hydrochloride
 - preferred_term: Nicotinate
   concentration:
     value: '0.008123'
@@ -76,6 +76,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: Nicotinic acid
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -95,7 +98,7 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:27570
-    label: histidine
+    label: DL-Histidine
 - preferred_term: Leucine
   concentration:
     value: '6.632'
@@ -103,6 +106,9 @@ ingredients:
   term:
     id: CHEBI:15603
     label: L-leucine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15603
+    label: L-Leucine
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -112,7 +118,7 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: magnesium sulfate
+    label: Magnesium sulfate
 - preferred_term: EDTA
   term:
     id: CHEBI:4735
@@ -122,11 +128,17 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:4735
-    label: ethylenediaminetetraacetic acid
+    label: EDTA (acid form)
 - preferred_term: DL-Serine
   concentration:
     value: '1.028'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17822
+    label: serine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17822
+    label: Serine
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.04'
@@ -134,6 +146,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: L-Glutamate
   concentration:
     value: '0.435'
@@ -142,6 +157,9 @@ ingredients:
   term:
     id: CHEBI:16015
     label: L-glutamic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16015
+    label: L-Glutamic acid
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
@@ -152,7 +170,7 @@ ingredients:
   notes: 'Cross-references: KEGG:gly'
   mediaingredientmech_chebi_term:
     id: CHEBI:15428
-    label: glycine
+    label: Glycine
 - preferred_term: Tryptophan
   term:
     id: CHEBI:27897
@@ -162,7 +180,7 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:27897
-    label: tryptophan
+    label: Tryptophan
 - preferred_term: Aspartate
   concentration:
     value: '1.931'
@@ -170,6 +188,9 @@ ingredients:
   term:
     id: CHEBI:29995
     label: aspartate(2-)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29995
+    label: Aspartate
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.001653'
@@ -177,6 +198,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
+    label: Na2MoO4
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.01079'
@@ -184,6 +208,9 @@ ingredients:
   term:
     id: CHEBI:75832
     label: iron(2+) sulfate (anhydrous)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75832
+    label: FeSO4
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.03061'
@@ -191,6 +218,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: CaCl2
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.001201'
@@ -198,6 +228,9 @@ ingredients:
   term:
     id: CHEBI:23414
     label: copper(II) sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:23414
+    label: CuSO4
 - preferred_term: Manganese chloride
   concentration:
     value: '0.005053'
@@ -205,6 +238,9 @@ ingredients:
   term:
     id: CHEBI:63041
     label: manganese(II) chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63041
+    label: MnCl2
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -215,7 +251,7 @@ ingredients:
   notes: 'Cross-references: KEGG:btn'
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: biotin
+    label: Biotin
 - preferred_term: Potassium iodide
   term:
     id: CHEBI:8346
@@ -225,7 +261,7 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:8346
-    label: potassium iodide
+    label: KI
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -235,7 +271,7 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: boric acid
+    label: H3BO3
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.001261'
@@ -243,6 +279,9 @@ ingredients:
   term:
     id: CHEBI:35696
     label: cobalt dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: CoCl2
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -252,7 +291,7 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: zinc sulfate
+    label: Zinc sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -322,6 +361,12 @@ curation_history:
     differences and access/formulation limits; all prior quantities, links, preparation
     and history unchanged. No new native growth or resolved variant.
   source: PMID:11257606
+- timestamp: '2026-10-21T03:04:48.388803+00:00'
+  curator: stage5-remediation-v1.0
+  action: CURATED
+  notes: 'Resolved Stage 4 finding CM-C1S4-006 on CultureMech:010554 (Issue #635).'
+  changes: Grounded DL-Serine (ingredients[12]) to CHEBI:17822 and populated mediaingredientmech_chebi_term
+    across all 28 ingredients (100% coverage) (#635).
 media_term:
   preferred_term: MediaDB Medium 396
   term:

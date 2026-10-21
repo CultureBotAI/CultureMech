@@ -1,0 +1,224 @@
+schema_version: 1.0.0
+repository_key: culturemech
+github_repository: CultureBotAI/CultureMech
+run_id: mech-goal-sequence-20261019
+cycle: 1
+stage: 5
+revision: 1
+outcome: completed
+summary: >
+  Consumed all 9 carried-forward Stage 4 findings (CM-C1S4-001 through CM-C1S4-009)
+  and all 17 open findings across the 6 immutable Stage 4 structured review bundles
+  (20261017T084036Z through 20261017T090539Z). Grouped all findings into 2 root-cause
+  groups mapped to existing open GitHub Issues #634 (GRP-C1S5-001: Thermovenabulum /
+  Thermincola DSMZ 962a, 1255, and 962 nomenclature, stock scaling, CaCl2.2H2O
+  deduplication, MIM grounding, and LinkML schema alignment) and #635 (GRP-C1S5-002:
+  cross-category record and solution remediation across CultureMech:000034, 000252,
+  003150, 007843, 010554, 011215, 015445, and 015480). Implemented all record fixes
+  through the native guarded writer (write_validated_recipe + record_curation_event),
+  validated with scripts/validate_strict.py (0 errors across all 17 records),
+  scripts/batch_review_recipes.py (0 errors/warnings), and pytest (115 passed), and
+  recorded post-remediation structured review bundle
+  20261021T071800Z-stage5-remediation-verification (verdict: pass). Zero unresolved
+  findings remain (carry_forward_ids: []).
+source_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-04/revision-0001/evidence.yaml
+  sha256: a10907eb4a96adc166694ee37eedc99fafb144abaefd8abe0d130185470437fd
+artifacts:
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/issue_map.md
+    sha256: e05a467cc79cebc4f6dc149bf14e484fa2b3d9f03b13a13f618c80f456cbf5ff
+    kind: issue_map
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/validation.md
+    sha256: 4de833f21e5f53082bf426cdbfa2dd91fad054c3daa562a21e8ecb46c4313ec7
+    kind: validation
+  - path: reviews/structured/20261021T071800Z-stage5-remediation-verification/review.yaml
+    sha256: ba41e6fcdcac839a8b8f365005a1afee580bbf445c47aab62b573ece4e0cd3d4
+    kind: supporting
+  - path: reviews/structured/20261021T071800Z-stage5-remediation-verification/review.md
+    sha256: 785e343cfedd9a1440d55895c7fd59f96ebc09c8043ff3e347ba23bad27f56d3
+    kind: supporting
+findings:
+  - finding_id: CM-C1S4-001
+    status: resolved
+    summary: >
+      Thermovenabulum / Thermincola family (DSMZ 962, 962a, 1255) nomenclature
+      collision (thermovenabulum_medium), missing MediaIngredientMech terms, and
+      LinkML root/merge schema alignment across 9 records.
+    group_id: GRP-C1S5-001
+    issue_url: https://github.com/CultureBotAI/CultureMech/issues/634
+    disposition: >
+      Resolved under Issue #634: disambiguated DSMZ 962a (thermovenabulum_medium_dsmz_962a),
+      DSMZ 1255 (thermovenabulum_medium_dsmz_1255), and DSMZ 962
+      (thermovenabulum_medium_dsmz_962) across all 9 normalized/merged records and
+      data/culturemech_recipe_catalog.tsv; set tree_root: true on MediaRecipe and
+      aligned SolutionRecipe merge slots in src/culturemech/schema/culturemech.yaml;
+      populated 100% mediaingredientmech_chebi_term links via write_validated_recipe.
+    carried_from: CM-C1S4-001
+  - finding_id: CM-C1S4-002
+    status: resolved
+    summary: >
+      Unscaled 100x-1000x trace element and vitamin stock concentrations and
+      duplicate CaCl2 x 2 H2O entries across flattened DSMZ 962, 962a, and 1255
+      records.
+    group_id: GRP-C1S5-001
+    issue_url: https://github.com/CultureBotAI/CultureMech/issues/634
+    disposition: >
+      Resolved under Issue #634: applied 1:100 (10 mL/L) and 1:1000 (1 mL/L) dilution
+      factors to flattened Wolin trace element and vitamin stock components and
+      consolidated duplicate CaCl2 x 2 H2O to 0.331 G_PER_L (0.330 + 0.001 g/L)
+      across all 9 Thermovenabulum / Thermincola records and
+      scripts/repair_komodo_962_thermincola_score10.py via write_validated_recipe.
+    carried_from: CM-C1S4-002
+  - finding_id: CM-C1S4-003
+    status: resolved
+    summary: >
+      Algae representative CultureMech:000034 (Bold_Basal_Medium.yaml) misclassified
+      as medium_type: COMPLEX / composition_type:bristol_medium with source
+      ambiguity on MnCl2.4H2O.
+    group_id: GRP-C1S5-002
+    issue_url: https://github.com/CultureBotAI/CultureMech/issues/635
+    disposition: >
+      Resolved under Issue #635: updated Bold_Basal_Medium.yaml to medium_type:
+      DEFINED and composition_type: DEFINED and clarified the UTEX MnCl2.4H2O
+      preparation note via write_validated_recipe.
+    carried_from: CM-C1S4-003
+  - finding_id: CM-C1S4-004
+    status: resolved
+    summary: >
+      Bacterial representatives CultureMech:003150 (1_10_r2a_broth.yaml) and
+      CultureMech:007843 (TOGO_M1308_Methylotroph_Medium.yaml) have unmapped premix /
+      hydrate terms, solvent listed as solute, and COMPLEX misclassification.
+    group_id: GRP-C1S5-002
+    issue_url: https://github.com/CultureBotAI/CultureMech/issues/635
+    disposition: >
+      Resolved under Issue #635: grounded R2A broth (DAIGO) (CHEBI:24432), added
+      standard 1/10 R2A constituent breakdown note, and removed Distilled water (1.0 L)
+      solvent entry in 1_10_r2a_broth.yaml; updated TOGO_M1308_Methylotroph_Medium.yaml
+      to DEFINED and grounded all top-level and nested solution ingredients via
+      write_validated_recipe.
+    carried_from: CM-C1S4-004
+  - finding_id: CM-C1S4-005
+    status: resolved
+    summary: >
+      Concentration and grounding audit of CultureMech:007843
+      (TOGO_M1308_Methylotroph_Medium.yaml) identified 26/30 unmapped MIM terms and a
+      1004.81 mL cumulative liquid volume denominator offset.
+    group_id: GRP-C1S5-002
+    issue_url: https://github.com/CultureBotAI/CultureMech/issues/635
+    disposition: >
+      Resolved under Issue #635: populated mediaingredientmech_chebi_term and
+      concentration evidence across all 6 top-level ingredients and 24 nested
+      solutions[].composition[] items and documented the 1004.81 mL liquid addition
+      denominator in TOGO_M1308_Methylotroph_Medium.yaml via write_validated_recipe.
+    carried_from: CM-C1S4-005
+  - finding_id: CM-C1S4-006
+    status: resolved
+    summary: >
+      Fungal representative CultureMech:010554
+      (yeast_optimized_defined_medium_glucose.yaml) lacks CHEBI/MIM grounding on
+      DL-Serine and lacks mediaingredientmech_chebi_term across all 28 ingredients.
+    group_id: GRP-C1S5-002
+    issue_url: https://github.com/CultureBotAI/CultureMech/issues/635
+    disposition: >
+      Resolved under Issue #635: mapped DL-Serine to CHEBI:17822
+      (MediaIngredientMech:000668) and populated mediaingredientmech_chebi_term across
+      all 28/28 ingredients in yeast_optimized_defined_medium_glucose.yaml via
+      write_validated_recipe.
+    carried_from: CM-C1S4-006
+  - finding_id: CM-C1S4-007
+    status: resolved
+    summary: >
+      Solution representative CultureMech:015445 (DAS_Vitamin_Cocktail.yaml) is
+      misclassified under category: bacterial, carries placeholder root term
+      MediaIngredientMech:UNMAPPED_0045, and has a conflicting Vitamin B12
+      sterilization note.
+    group_id: GRP-C1S5-002
+    issue_url: https://github.com/CultureBotAI/CultureMech/issues/635
+    disposition: >
+      Resolved under Issue #635: updated DAS_Vitamin_Cocktail.yaml to category: algae,
+      name: das_vitamin_cocktail, grounded root term (CHEBI:176843) and all 4 vitamin
+      composition items, and documented the two-step UTEX Vitamin B12 addition
+      protocol via write_validated_recipe.
+    carried_from: CM-C1S4-007
+  - finding_id: CM-C1S4-008
+    status: resolved
+    summary: >
+      Archaea representative CultureMech:000252 (DSMZ_1399_HALOPHILIC_MEDIUM.yaml)
+      and specialized representative CultureMech:015480 (2x_uga_defined_nocarbon.yaml)
+      have missing MIM terms, non-canonical water CHEBI:33813, duplicate mineral
+      salts from flattened Wolfe's solution, and stale has_unmapped_ingredients flag.
+    group_id: GRP-C1S5-002
+    issue_url: https://github.com/CultureBotAI/CultureMech/issues/635
+    disposition: >
+      Resolved under Issue #635: normalized Distilled water to CHEBI:15377 and
+      grounded peptone/yeast extract in DSMZ_1399_HALOPHILIC_MEDIUM.yaml; normalized
+      name to 2x_uga_defined_nocarbon, consolidated duplicate Wolfe's mineral salts
+      (MgSO4.7H2O 0.43 G_PER_L, CaCl2.2H2O 0.101 G_PER_L, NaCl 0.81 G_PER_L),
+      populated 100% MIM terms, and removed stale has_unmapped_ingredients flag in
+      2x_uga_defined_nocarbon.yaml via write_validated_recipe.
+    carried_from: CM-C1S4-008
+  - finding_id: CM-C1S4-009
+    status: resolved
+    summary: >
+      SolutionRecipe validator blind spots in scripts/batch_review_recipes.py and
+      placeholder/unit/grounding defects in mediadive_177_Main_sol_104a.yaml
+      (CultureMech:011215).
+    group_id: GRP-C1S5-002
+    issue_url: https://github.com/CultureBotAI/CultureMech/issues/635
+    disposition: >
+      Resolved under Issue #635 (and PR #632 closing #633): removed obsolete
+      placeholder ingredients[] and data_quality_flags: [incomplete_composition],
+      converted Distilled water from 960 PERCENT_V_V to 960 ML_PER_L, and populated
+      100% CHEBI/MIM grounding in mediadive_177_Main_sol_104a.yaml via
+      write_validated_recipe.
+    carried_from: CM-C1S4-009
+groups:
+  - group_id: GRP-C1S5-001
+    finding_ids:
+      - CM-C1S4-001
+      - CM-C1S4-002
+    issue_url: https://github.com/CultureBotAI/CultureMech/issues/634
+    status: resolved
+    summary: >
+      Thermovenabulum / Thermincola family (DSMZ 962a, DSMZ 1255, DSMZ 962)
+      nomenclature disambiguation, 1:100 and 1:1000 trace/vitamin stock scaling,
+      CaCl2.2H2O deduplication, 100% MIM/CHEBI grounding, and LinkML root/merge
+      schema alignment across 9 records and catalog.
+    resolution_evidence:
+      - reviews/structured/20261021T071800Z-stage5-remediation-verification/review.yaml
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/validation.md
+    disposition: >
+      Resolved via native guarded writer (write_validated_recipe +
+      record_curation_event), schema update in src/culturemech/schema/culturemech.yaml,
+      signature update in scripts/repair_komodo_962_thermincola_score10.py, and
+      catalog update in data/culturemech_recipe_catalog.tsv; verified by
+      scripts/validate_strict.py (0 errors) and pytest (115 passed).
+  - group_id: GRP-C1S5-002
+    finding_ids:
+      - CM-C1S4-003
+      - CM-C1S4-004
+      - CM-C1S4-005
+      - CM-C1S4-006
+      - CM-C1S4-007
+      - CM-C1S4-008
+      - CM-C1S4-009
+    issue_url: https://github.com/CultureBotAI/CultureMech/issues/635
+    status: resolved
+    summary: >
+      Cross-category record and solution remediation across CultureMech:000034,
+      000252, 003150, 007843, 010554, 011215, 015445, and 015480 (DEFINED
+      reclassification, 100% MIM/CHEBI grounding, duplicate mineral salt
+      consolidation, water unit/CHEBI normalization, and removal of stale flags and
+      placeholder ingredients).
+    resolution_evidence:
+      - reviews/structured/20261021T071800Z-stage5-remediation-verification/review.yaml
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/validation.md
+    disposition: >
+      Resolved via native guarded writer (write_validated_recipe +
+      record_curation_event) across all 8 normalized media/solution records and
+      catalog update in data/culturemech_recipe_catalog.tsv; verified by
+      scripts/validate_strict.py (0 errors) and scripts/batch_review_recipes.py
+      (0 errors/warnings).
+carry_forward_ids: []
+infra_tasks: []

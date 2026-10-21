@@ -1,5 +1,5 @@
 id: CultureMech:011215
-preferred_term: Main sol. 104a
+preferred_term: main_sol_104a
 term:
   id: mediadive.solution:177
   label: Main sol. 104a
@@ -63,6 +63,9 @@ composition:
     label: sodium chloride
     confidence: 1.0
     match_type: exact_match
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium chloride
   evidence:
   - reference: https://mediadive.dsmz.de/rest/solution/177
     supports: SUPPORT
@@ -101,6 +104,9 @@ composition:
     label: Resazurin
     confidence: 0.7
     match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: L-Cysteine HCl x H2O
   concentration:
     value: '0.5'
@@ -113,6 +119,9 @@ composition:
     label: L-cysteine hydrochloride hydrate
     confidence: 0.7
     match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
   evidence:
   - reference: https://mediadive.dsmz.de/rest/solution/177
     supports: SUPPORT
@@ -152,6 +161,9 @@ composition:
     label: glucose
     confidence: 0.9
     match_type: manual_curated
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: D-Glucose
   evidence:
   - reference: https://mediadive.dsmz.de/rest/solution/177
     supports: SUPPORT
@@ -190,6 +202,9 @@ composition:
     label: sodium thiosulfate pentahydrate
     confidence: 0.7
     match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
   evidence:
   - reference: https://mediadive.dsmz.de/rest/solution/177
     supports: SUPPORT
@@ -219,8 +234,8 @@ composition:
       response SHA256=7056c48a7a9168f55d11001d16b40e7138cae7c0c7ce2c59d9e11e196f5ade2d.'
 - preferred_term: Distilled water
   concentration:
-    value: '960'
-    unit: PERCENT_V_V
+    value: '0.96'
+    unit: L
   term:
     id: mediadive.compound:4
     label: Distilled water
@@ -229,6 +244,9 @@ composition:
     label: water
     confidence: 0.7
     match_type: corpus_consensus
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Water
 preparation_notes: Dissolve ingredients (except cysteine, glucose and thiosulfate),
   boil medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere.
   Add cysteine and adjust pH to 7.0. Thereafter, dispense under100% N2 gas atmosphere
@@ -288,13 +306,14 @@ curation_history:
     "G_PER_L", "value": "1"} -> {"unit": "G_PER_L", "value": "1"} (evidence_only);
     composition[7].concentration: {"unit": "G_PER_L", "value": "2.5"} -> {"unit":
     "G_PER_L", "value": "2.5"} (evidence_only)'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-10-21T03:04:48.433119+00:00'
+  curator: stage5-remediation-v1.0
+  action: CURATED
+  notes: 'Resolved Stage 4 finding CM-C1S4-009 on CultureMech:011215 (Issue #635).'
+  changes: Removed stale placeholder ingredients and incomplete_composition flag,
+    normalized preferred_term to main_sol_104a, converted 960 mL Distilled water unit
+    to 0.96 L, and populated mediaingredientmech_chebi_term on all 6 CHEBI-mapped
+    constituents (#635).
 category: bacterial
 references:
 - reference: https://mediadive.dsmz.de/rest/solution/177

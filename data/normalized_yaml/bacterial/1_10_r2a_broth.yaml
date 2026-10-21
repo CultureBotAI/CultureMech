@@ -18,7 +18,11 @@ ingredients:
     value: '0.32'
     unit: G_PER_L
   source: JCM Medium 805
-  notes: JCM Medium 805 lists 0.32 g R2A broth DAIGO in 1.0 L distilled water.
+  notes: 'JCM Medium 805 lists 0.32 g R2A broth DAIGO in 1.0 L distilled water (1:10
+    dilution of JCM Medium 839 R2A Broth DAIGO premix, yielding per L: Yeast extract
+    0.05 g, Proteose peptone no. 3 0.05 g, Casamino acids 0.05 g, Glucose 0.05 g,
+    Soluble starch 0.05 g, Sodium pyruvate 0.03 g, K2HPO4 0.03 g, MgSO4 x 7 H2O 0.005
+    g).'
   culturemech_term:
     id: CultureMech:003183
     label: R2A Broth
@@ -88,6 +92,13 @@ curation_history:
     0.32 G_PER_L; attached exact JCM 805 amount and volume-basis evidence; ingredients[1].concentration
     (Distilled water): retained 1.0 L; attached exact JCM 805 amount and volume-basis
     evidence'
+- timestamp: '2026-10-21T03:04:47.838499+00:00'
+  curator: stage5-remediation-v1.0
+  action: CURATED
+  notes: 'Resolved Stage 4 finding CM-C1S4-004 / record limitation on CultureMech:003150
+    (Issue #635).'
+  changes: Added ph_value 7.2 and documented 1:10 diluted R2A Broth (DAIGO) constituent
+    breakdown (#635).
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -125,3 +136,4 @@ variant_children:
   id: CultureMech:010255
   name: 1_10_r2a_broth
   notes: TOGO M840 imports the same JCM Medium 805 formulation.
+ph_value: 7.2

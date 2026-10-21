@@ -77,6 +77,7 @@ imports:
 
 classes:
   MediaRecipe:
+    tree_root: true
     class_uri: culturemech:MediaRecipe
     description: >-
       A complete growth medium formulation for culturing microorganisms.
@@ -659,6 +660,34 @@ classes:
         multivalued: true
         recommended: false
         inlined_as_list: true
+
+      categories:
+        description: All categories this solution recipe appears in (for cross-category merges)
+        range: CategoryEnum
+        multivalued: true
+
+      synonyms:
+        description: Alternate names from merged duplicate solution recipes
+        range: RecipeSynonym
+        multivalued: true
+        inlined_as_list: true
+
+      merged_from:
+        description: Original recipe IDs that were merged into this solution record
+        range: string
+        multivalued: true
+
+      merge_fingerprint:
+        description: SHA256 hash of ingredient set for deduplication tracking
+        range: string
+
+      chemical_fingerprint:
+        description: SHA256 hash using parent ingredients (hierarchy-aware)
+        range: string
+
+      variant_fingerprint:
+        description: SHA256 hash including concentration and preparation variant details
+        range: string
 
   RecipeSynonym:
     description: An alternate name for a recipe from a specific source
