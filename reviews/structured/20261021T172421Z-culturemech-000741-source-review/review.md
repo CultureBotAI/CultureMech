@@ -1,0 +1,5676 @@
+# Source and formulation review: archaeoglobus_sulfaticallidus_medium (CultureMech:000741)
+
+- Review: 20261021T172421Z-culturemech-000741-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T17:21:17Z
+- Finished UTC: 2026-10-21T17:24:21Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 1278 resolves the generated identity and both maintained contributors. Main and undiluted mineral/vitamin stock quantities have been combined, while the primary does not establish the stored final-volume denominator. Sodium resazurin and nickel hydrate groundings conflict with exact supplied forms. Preparation survives in the generated and DSMZ layers but is absent from the KOMODO owner, whose reciprocal child path is broken. Complete primary formula comparison is available; current failed APIs do not authenticate historical provider normalization.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 301; batch 031 item 1 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty task batches contain 300 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 303 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000741 | data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml | generated | archaeoglobus_sulfaticallidus_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:000741 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:000741 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-031/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch031/301/strict.tsv |
+| validate-terms | passed | True | CultureMech:000741 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:000741 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:000741 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadive1278api | unavailable | False | CultureMech:000741 | Exact optional source attempt mediadive1278api returned HTTP 503. Full current primary comparison is available; this failure neither authenticates historical normalization nor makes current primary identity unavailable. |
+| Exact source content access: mediadive1278api_retry | unavailable | False | CultureMech:000741 | Exact optional source attempt mediadive1278api_retry returned HTTP 503. Full current primary comparison is available; this failure neither authenticates historical normalization nor makes current primary identity unavailable. |
+| Exact source content access: komodo1278detail | unavailable | False | CultureMech:000741 | Exact optional source attempt komodo1278detail returned HTTP 403. Full current primary comparison is available; this failure neither authenticates historical normalization nor makes current primary identity unavailable. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:000741.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:000741.
+
+51 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "NaCl main input",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "20.7824",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "20.7824",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "20.7824",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "20.00",
+      "final_medium_volume_ml": null,
+      "stock_contribution_separate": true
+    },
+    "rationale": "Separate the main batch amount from stock inputs; no measured final-volume denominator is supplied. The existing value also adds the undiluted stock amount and therefore has the wrong scope.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main table: NaCl",
+        "exact_source_quote": "NaCl 20.00 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "Na2SO4 main input",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3.95648",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3.95648",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3.95648",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "4.00",
+      "final_medium_volume_ml": null,
+      "stock_contribution_separate": false
+    },
+    "rationale": "Separate the main batch amount from stock inputs; no measured final-volume denominator is supplied. The stored rate may reflect an older provider normalization, but current primary input water does not independently verify it.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main table: Na2SO4",
+        "exact_source_quote": "Na2SO4 4.00 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "MgCl2 x 6 H2O main input",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "4.25321",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "4.25321",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "4.25321",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "4.30",
+      "final_medium_volume_ml": null,
+      "stock_contribution_separate": false
+    },
+    "rationale": "Separate the main batch amount from stock inputs; no measured final-volume denominator is supplied. The stored rate may reflect an older provider normalization, but current primary input water does not independently verify it.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main table: MgCl2 x 6 H2O",
+        "exact_source_quote": "MgCl2 x 6 H2O 4.30 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "NH4Cl main input",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.24728",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.24728",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.24728",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "0.25",
+      "final_medium_volume_ml": null,
+      "stock_contribution_separate": false
+    },
+    "rationale": "Separate the main batch amount from stock inputs; no measured final-volume denominator is supplied. The stored rate may reflect an older provider normalization, but current primary input water does not independently verify it.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main table: NH4Cl",
+        "exact_source_quote": "NH4Cl 0.25 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "KCl main input",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.336301",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.336301",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.336301",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "0.34",
+      "final_medium_volume_ml": null,
+      "stock_contribution_separate": false
+    },
+    "rationale": "Separate the main batch amount from stock inputs; no measured final-volume denominator is supplied. The stored rate may reflect an older provider normalization, but current primary input water does not independently verify it.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main table: KCl",
+        "exact_source_quote": "KCl 0.34 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "CaCl2 x 2 H2O main input",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.238477",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.238477",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.238477",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "0.14",
+      "final_medium_volume_ml": null,
+      "stock_contribution_separate": true
+    },
+    "rationale": "Separate the main batch amount from stock inputs; no measured final-volume denominator is supplied. The existing value also adds the undiluted stock amount and therefore has the wrong scope.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main table: CaCl2 x 2 H2O",
+        "exact_source_quote": "CaCl2 x 2 H2O 0.14 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "KH2PO4 main input",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.138477",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.138477",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.138477",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "0.14",
+      "final_medium_volume_ml": null,
+      "stock_contribution_separate": false
+    },
+    "rationale": "Separate the main batch amount from stock inputs; no measured final-volume denominator is supplied. The stored rate may reflect an older provider normalization, but current primary input water does not independently verify it.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main table: KH2PO4",
+        "exact_source_quote": "KH2PO4 0.14 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "Na-DL-lactate main input",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "1.97824",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "1.97824",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "1.97824",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "2.00",
+      "final_medium_volume_ml": null,
+      "stock_contribution_separate": false
+    },
+    "rationale": "Separate the main batch amount from stock inputs; no measured final-volume denominator is supplied. The stored rate may reflect an older provider normalization, but current primary input water does not independently verify it.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main table: Na-DL-lactate",
+        "exact_source_quote": "Na-DL-lactate 2.00 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "Yeast extract (OXOID) main input",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.98912",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.98912",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.98912",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "1.00",
+      "final_medium_volume_ml": null,
+      "stock_contribution_separate": false
+    },
+    "rationale": "Separate the main batch amount from stock inputs; no measured final-volume denominator is supplied. The stored rate may reflect an older provider normalization, but current primary input water does not independently verify it.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main table: Yeast extract (OXOID)",
+        "exact_source_quote": "Yeast extract (OXOID) 1.00 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "Na2CO3 main input",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.98912",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.98912",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.98912",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "1.00",
+      "final_medium_volume_ml": null,
+      "stock_contribution_separate": false
+    },
+    "rationale": "Separate the main batch amount from stock inputs; no measured final-volume denominator is supplied. The stored rate may reflect an older provider normalization, but current primary input water does not independently verify it.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main table: Na2CO3",
+        "exact_source_quote": "Na2CO3 1.00 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "DL-Dithiothreitol main input",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.49456",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.49456",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.49456",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "0.50",
+      "final_medium_volume_ml": null,
+      "stock_contribution_separate": false
+    },
+    "rationale": "Separate the main batch amount from stock inputs; no measured final-volume denominator is supplied. The stored rate may reflect an older provider normalization, but current primary input water does not independently verify it.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main table: DL-Dithiothreitol",
+        "exact_source_quote": "DL-Dithiothreitol 0.50 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "Sodium resazurin stock dose and strength",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.00049456",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.00049456",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.00049456",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "dose_ml": 0.5,
+      "strength_percent_w_v": 0.1,
+      "derived_delivered_mass_mg": 0.5,
+      "final_medium_rate": null
+    },
+    "rationale": "The explicit stock strength permits 0.1 g/100 mL × 0.5 mL = 0.0005 g delivered. It does not establish the stored per-litre rate without final volume. Preserve sodium salt identity and the stock addition stage.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main table: sodium resazurin",
+        "exact_source_quote": "Sodium resazurin (0.1% w/v) 0.50 ml",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "Modified Wolin mineral solution: Nitrilotriacetic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral solution",
+      "batch_amount": "1.50",
+      "source_unit": "g",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 10,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Modified Wolin mineral solution: Nitrilotriacetic acid",
+        "exact_source_quote": "Nitrilotriacetic acid 1.50 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q14",
+    "component_or_context": "Modified Wolin mineral solution: MgSO4 x 7 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral solution",
+      "batch_amount": "3.00",
+      "source_unit": "g",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 10,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Modified Wolin mineral solution: MgSO4 x 7 H2O",
+        "exact_source_quote": "MgSO4 x 7 H2O 3.00 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q15",
+    "component_or_context": "Modified Wolin mineral solution: MnSO4 x H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral solution",
+      "batch_amount": "0.50",
+      "source_unit": "g",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 10,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Modified Wolin mineral solution: MnSO4 x H2O",
+        "exact_source_quote": "MnSO4 x H2O 0.50 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q16",
+    "component_or_context": "Modified Wolin mineral solution: NaCl",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "20.7824",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "20.7824",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "20.7824",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral solution",
+      "batch_amount": "1.00",
+      "source_unit": "g",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 10,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Modified Wolin mineral solution: NaCl",
+        "exact_source_quote": "NaCl 1.00 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q17",
+    "component_or_context": "Modified Wolin mineral solution: FeSO4 x 7 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral solution",
+      "batch_amount": "0.10",
+      "source_unit": "g",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 10,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Modified Wolin mineral solution: FeSO4 x 7 H2O",
+        "exact_source_quote": "FeSO4 x 7 H2O 0.10 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q18",
+    "component_or_context": "Modified Wolin mineral solution: CoSO4 x 7 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral solution",
+      "batch_amount": "0.18",
+      "source_unit": "g",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 10,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Modified Wolin mineral solution: CoSO4 x 7 H2O",
+        "exact_source_quote": "CoSO4 x 7 H2O 0.18 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q19",
+    "component_or_context": "Modified Wolin mineral solution: CaCl2 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.238477",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.238477",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.238477",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral solution",
+      "batch_amount": "0.10",
+      "source_unit": "g",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 10,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Modified Wolin mineral solution: CaCl2 x 2 H2O",
+        "exact_source_quote": "CaCl2 x 2 H2O 0.10 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q20",
+    "component_or_context": "Modified Wolin mineral solution: ZnSO4 x 7 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral solution",
+      "batch_amount": "0.18",
+      "source_unit": "g",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 10,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Modified Wolin mineral solution: ZnSO4 x 7 H2O",
+        "exact_source_quote": "ZnSO4 x 7 H2O 0.18 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q21",
+    "component_or_context": "Modified Wolin mineral solution: CuSO4 x 5 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral solution",
+      "batch_amount": "0.01",
+      "source_unit": "g",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 10,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Modified Wolin mineral solution: CuSO4 x 5 H2O",
+        "exact_source_quote": "CuSO4 x 5 H2O 0.01 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q22",
+    "component_or_context": "Modified Wolin mineral solution: AlK(SO4)2 x 12 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral solution",
+      "batch_amount": "0.02",
+      "source_unit": "g",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 10,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Modified Wolin mineral solution: AlK(SO4)2 x 12 H2O",
+        "exact_source_quote": "AlK(SO4)2 x 12 H2O 0.02 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q23",
+    "component_or_context": "Modified Wolin mineral solution: H3BO3",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral solution",
+      "batch_amount": "0.01",
+      "source_unit": "g",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 10,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Modified Wolin mineral solution: H3BO3",
+        "exact_source_quote": "H3BO3 0.01 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q24",
+    "component_or_context": "Modified Wolin mineral solution: Na2MoO4 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral solution",
+      "batch_amount": "0.01",
+      "source_unit": "g",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 10,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Modified Wolin mineral solution: Na2MoO4 x 2 H2O",
+        "exact_source_quote": "Na2MoO4 x 2 H2O 0.01 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q25",
+    "component_or_context": "Modified Wolin mineral solution: NiCl2 x 6 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral solution",
+      "batch_amount": "0.03",
+      "source_unit": "g",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 10,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Modified Wolin mineral solution: NiCl2 x 6 H2O",
+        "exact_source_quote": "NiCl2 x 6 H2O 0.03 g",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q26",
+    "component_or_context": "Modified Wolin mineral solution: Na2SeO3 x 5 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.0003",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.0003",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.0003",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral solution",
+      "batch_amount": "0.30",
+      "source_unit": "mg",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 10,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Modified Wolin mineral solution: Na2SeO3 x 5 H2O",
+        "exact_source_quote": "Na2SeO3 x 5 H2O 0.30 mg",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q27",
+    "component_or_context": "Modified Wolin mineral solution: Na2WO4 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral solution",
+      "batch_amount": "0.40",
+      "source_unit": "mg",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 10,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Modified Wolin mineral solution: Na2WO4 x 2 H2O",
+        "exact_source_quote": "Na2WO4 x 2 H2O 0.40 mg",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q28",
+    "component_or_context": "Wolin vitamin solution (10x): Biotin",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Wolin vitamin solution (10x)",
+      "batch_amount": "20.00",
+      "source_unit": "mg",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 1,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Wolin vitamin solution (10x): Biotin",
+        "exact_source_quote": "Biotin 20.00 mg",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q29",
+    "component_or_context": "Wolin vitamin solution (10x): Folic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Wolin vitamin solution (10x)",
+      "batch_amount": "20.00",
+      "source_unit": "mg",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 1,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Wolin vitamin solution (10x): Folic acid",
+        "exact_source_quote": "Folic acid 20.00 mg",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q30",
+    "component_or_context": "Wolin vitamin solution (10x): Pyridoxine hydrochloride",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Wolin vitamin solution (10x)",
+      "batch_amount": "100.00",
+      "source_unit": "mg",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 1,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Wolin vitamin solution (10x): Pyridoxine hydrochloride",
+        "exact_source_quote": "Pyridoxine hydrochloride 100.00 mg",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q31",
+    "component_or_context": "Wolin vitamin solution (10x): Thiamine HCl",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Wolin vitamin solution (10x)",
+      "batch_amount": "50.00",
+      "source_unit": "mg",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 1,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Wolin vitamin solution (10x): Thiamine HCl",
+        "exact_source_quote": "Thiamine HCl 50.00 mg",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q32",
+    "component_or_context": "Wolin vitamin solution (10x): Riboflavin",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Wolin vitamin solution (10x)",
+      "batch_amount": "50.00",
+      "source_unit": "mg",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 1,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Wolin vitamin solution (10x): Riboflavin",
+        "exact_source_quote": "Riboflavin 50.00 mg",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q33",
+    "component_or_context": "Wolin vitamin solution (10x): Nicotinic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Wolin vitamin solution (10x)",
+      "batch_amount": "50.00",
+      "source_unit": "mg",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 1,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Wolin vitamin solution (10x): Nicotinic acid",
+        "exact_source_quote": "Nicotinic acid 50.00 mg",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q34",
+    "component_or_context": "Wolin vitamin solution (10x): Calcium D-(+)-pantothenate",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Wolin vitamin solution (10x)",
+      "batch_amount": "50.00",
+      "source_unit": "mg",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 1,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Wolin vitamin solution (10x): Calcium D-(+)-pantothenate",
+        "exact_source_quote": "Calcium D-(+)-pantothenate 50.00 mg",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q35",
+    "component_or_context": "Wolin vitamin solution (10x): Vitamin B12",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Wolin vitamin solution (10x)",
+      "batch_amount": "1.00",
+      "source_unit": "mg",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 1,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Wolin vitamin solution (10x): Vitamin B12",
+        "exact_source_quote": "Vitamin B12 1.00 mg",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q36",
+    "component_or_context": "Wolin vitamin solution (10x): p-Aminobenzoic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Wolin vitamin solution (10x)",
+      "batch_amount": "50.00",
+      "source_unit": "mg",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 1,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Wolin vitamin solution (10x): p-Aminobenzoic acid",
+        "exact_source_quote": "p-Aminobenzoic acid 50.00 mg",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q37",
+    "component_or_context": "Wolin vitamin solution (10x): (DL)-alpha-Lipoic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Wolin vitamin solution (10x)",
+      "batch_amount": "50.00",
+      "source_unit": "mg",
+      "stock_water_input_ml": 1000,
+      "main_stock_dose_ml": 1,
+      "final_medium_rate": null
+    },
+    "rationale": "Restore stock membership and original units. The local number is an undiluted stock amount or a sum of main and stock amounts, not a supported main-medium concentration. Stock water input and main receiving volume remain distinct.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Pages 1–2, Wolin vitamin solution (10x): (DL)-alpha-Lipoic acid",
+        "exact_source_quote": "(DL)-alpha-Lipoic acid 50.00 mg",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q38",
+    "component_or_context": "Main water input",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ingredients[35].concentration",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ingredients[35].concentration",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ingredients[35].concentration",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "main_water_input_ml": 1000,
+      "final_medium_volume_ml": null
+    },
+    "rationale": "Recover this absent source quantity with its exact stock or main scope. The missing water row locator is a proposed new ingredient position; no existing list value is mislabeled as null. No measured final volume is inferred.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main table",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q39",
+    "component_or_context": "Mineral stock receiving dose",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral",
+      "dose_ml": 10
+    },
+    "rationale": "Recover this absent source quantity with its exact stock or main scope. The missing water row locator is a proposed new ingredient position; no existing list value is mislabeled as null. No measured final volume is inferred.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main table",
+        "exact_source_quote": "Modified Wolin's mineral solution 10.00 ml",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q40",
+    "component_or_context": "10x vitamin receiving dose",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Wolin vitamin 10x",
+      "dose_ml": 1
+    },
+    "rationale": "Recover this absent source quantity with its exact stock or main scope. The missing water row locator is a proposed new ingredient position; no existing list value is mislabeled as null. No measured final volume is inferred.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main table",
+        "exact_source_quote": "Wolin's vitamin solution (10x) 1.00 ml",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q41",
+    "component_or_context": "Mineral stock water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Modified Wolin mineral",
+      "water_input_ml": 1000
+    },
+    "rationale": "Recover this absent source quantity with its exact stock or main scope. The missing water row locator is a proposed new ingredient position; no existing list value is mislabeled as null. No measured final volume is inferred.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 2, mineral stock final row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q42",
+    "component_or_context": "Vitamin stock water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Wolin vitamin 10x",
+      "water_input_ml": 1000
+    },
+    "rationale": "Recover this absent source quantity with its exact stock or main scope. The missing water row locator is a proposed new ingredient position; no existing list value is mislabeled as null. No measured final volume is inferred.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 2, vitamin stock final row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q43",
+    "component_or_context": "Initial main pH",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture. Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 7.0, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture. Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 7.0, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "pH_range": [
+        6.8,
+        7
+      ],
+      "stage": "Initial main mixture"
+    },
+    "rationale": "This source statement is retained in target/DSMZ prose but absent in the KOMODO layer. Add claim-level evidence where present and exact scoped context where absent; do not turn preparation into growth evidence.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main preparation paragraph",
+        "exact_source_quote": "adjust pH to 6.8 - 7.0",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q44",
+    "component_or_context": "Initial gas and sparging duration",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture. Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 7.0, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture. Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 7.0, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "gas_percent": {
+        "N2": 80,
+        "CO2": 20
+      },
+      "percent_basis": null,
+      "duration_minutes": [
+        30,
+        45
+      ]
+    },
+    "rationale": "This source statement is retained in target/DSMZ prose but absent in the KOMODO layer. Add claim-level evidence where present and exact scoped context where absent; do not turn preparation into growth evidence.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main preparation paragraph",
+        "exact_source_quote": "sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q45",
+    "component_or_context": "Carbonate stock atmosphere",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture. Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 7.0, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture. Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 7.0, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "carbonate",
+      "gas_percent": {
+        "N2": 80,
+        "CO2": 20
+      },
+      "percent_basis": null
+    },
+    "rationale": "This source statement is retained in target/DSMZ prose but absent in the KOMODO layer. Add claim-level evidence where present and exact scoped context where absent; do not turn preparation into growth evidence.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main preparation paragraph",
+        "exact_source_quote": "under an 80% N2 and 20% CO2 gas mixture.",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q46",
+    "component_or_context": "Vitamin and DTT stock atmosphere",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture. Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 7.0, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture. Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 7.0, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stocks": [
+        "vitamins",
+        "dithiothreitol"
+      ],
+      "N2_percent": 100,
+      "method": "filtration"
+    },
+    "rationale": "This source statement is retained in target/DSMZ prose but absent in the KOMODO layer. Add claim-level evidence where present and exact scoped context where absent; do not turn preparation into growth evidence.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main preparation paragraph",
+        "exact_source_quote": "under 100% N2 gas and sterilized by filtration.",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q47",
+    "component_or_context": "Conditional complete-medium pH",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture. Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 7.0, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture. Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 7.0, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "pH": 7,
+      "conditional": true
+    },
+    "rationale": "This source statement is retained in target/DSMZ prose but absent in the KOMODO layer. Add claim-level evidence where present and exact scoped context where absent; do not turn preparation into growth evidence.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, main preparation paragraph",
+        "exact_source_quote": "pH of the complete medium to 7.0, if necessary.",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q48",
+    "component_or_context": "Typed main pH scope",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0,
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0,
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0,
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "pH": 7,
+      "scope": "Conditional adjustment of complete medium"
+    },
+    "rationale": "The value matches the conditional source context. Preserve the condition rather than treating pH 7 as an experimentally demonstrated optimum.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 1, final main preparation sentence",
+        "exact_source_quote": "pH of the complete medium to 7.0, if necessary.",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q49",
+    "component_or_context": "Mineral initial chelator adjustment",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "pH": 6.5,
+      "stage": "Dissolve nitrilotriacetic acid before adding minerals"
+    },
+    "rationale": "Preserve the existing text but restore its mineral-stock scope; it currently appears as a root preparation step. The KOMODO owner lacks it entirely.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 2, mineral stock preparation",
+        "exact_source_quote": "adjust pH to 6.5 with KOH",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q50",
+    "component_or_context": "Mineral final pH",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "pH": 7,
+      "stage": "After adding minerals"
+    },
+    "rationale": "Preserve the existing text but restore its mineral-stock scope; it currently appears as a root preparation step. The KOMODO owner lacks it entirely.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 2, mineral stock preparation",
+        "exact_source_quote": "final to pH 7.0 with KOH.",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q51",
+    "component_or_context": "Mineral stock KOH amount",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "not_quantified"
+      }
+    ],
+    "proposed_source_representation": {
+      "reagent": "KOH",
+      "fixed_amount": null
+    },
+    "rationale": "The source specifies titration targets, not a fixed KOH dose. Preserve the ordered stock stages without inventing a quantity.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1278",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf",
+        "source_locator": "Page 2, mineral preparation",
+        "exact_source_quote": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust\nfinal to pH 7.0 with KOH.",
+        "snapshot_sha256": "0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88",
+        "parsed_text_sha256": "dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f",
+        "accessed_at": "2026-10-21T17:04:21.604326Z"
+      }
+    ]
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:000741.
+
+34 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 34/35 primary and 32/35 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 35: primary 97.14%; secondary 91.43%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:000741.
+
+27 timestamp instances inspected; 2 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact accession, source identity and generated ownership
+
+identity: supported. Targets: CultureMech:000741.
+
+DSMZ 1278 and the exact KOMODO 1278 catalog row resolve the two maintained identities. Catalogue mapping and a shared ingredient signature do not establish historical formulation equivalence. The generated and DSMZ parent references resolve to CultureMech:004031.
+
+### Maintained reciprocal relationship integrity
+
+graph: concern. Targets: CultureMech:000741.
+
+KOMODO owner variant_children[0].path names a bacterial path absent from the ignored-inclusive inventory; the exact matching ID and basename are under archaea. The actual captured owner is present. Correct the maintained path without inventing another record or conflating categorization with phenotype.
+
+### Source salts, hydrates and stereochemistry
+
+grounding: concern. Targets: CultureMech:000741.
+
+CHEBI:8806 has neutral resazurin formula, unlike source sodium resazurin; CHEBI:34887 lacks the specified nickel hexahydrate. Source D-calcium pantothenate agrees with the D-specific structure of CHEBI:31345; generic sodium lactate and stereo-unspecified lipoic acid do not establish a D/L contradiction. Other inspected hydrate labels/formulae and current CHEBI secondary rows were assessed separately from source amount evidence.
+
+### Retained preparation and lost stock boundaries
+
+completeness: concern. Targets: CultureMech:000741.
+
+Target and DSMZ owner retain the main anoxic preparation and mineral pH prose; the KOMODO owner lacks both. Mineral preparation is incorrectly left at the root while its stock is flattened. Initial and conditional complete-medium pH remain distinct. The primary supplies autoclaving without a numerical cycle, so no temperature/time is added.
+
+### Composition, physical state and source annotations
+
+scope: supported. Targets: CultureMech:000741.
+
+Yeast extract supports a complex, not fully chemically defined formulation; LIQUID is consistent with the source. Catalogue Aerobic: Yes and bacterial/archaea source filing are provenance metadata, not independently supported growth or taxonomy assertions. No organisms, functional roles or optimum conditions are inferred from title or application.
+
+### Current writers and follow-up ownership
+
+provenance: concern. Targets: CultureMech:000741.
+
+Current MediaDive code selects the primary solution and preserves stock references; its fallback unit mapping still requires explicit source basis. Current cleanup avoids summing conflicting duplicates, so persisted sums do not prove that current code created them. Fix both maintained owners and stock boundaries before separately authorized regeneration; preserve old history and append clarification only.
+
+## Findings
+
+### f1: Undiluted stocks and main amounts are combined
+
+blocker / open / confirmed; issue key: culturemech.000741.flattened-stock-amounts.
+
+All layers flatten mineral and 10x vitamin constituents into main ingredients. NaCl and calcium explicitly sum main and undiluted stock values. The 10 mL and 1 mL stock doses and source waters are absent; other main g/L values use an unverified denominator.
+
+### f2: Two asserted chemical forms contradict the supplied ingredients
+
+major / open / confirmed; issue key: culturemech.000741.supplied-forms.
+
+Neutral resazurin and anhydrous nickel dichloride identifiers do not represent the explicitly supplied sodium resazurin and nickel dichloride hexahydrate. Valid IDs and canonical labels do not resolve those mismatches.
+
+### f3: Mineral preparation is detached from its stock
+
+major / open / confirmed; issue key: culturemech.000741.stock-preparation-scope.
+
+The target and DSMZ owner place mineral pH instructions at the recipe root without a stock node; the KOMODO owner omits preparation entirely and retains a catalog aerobic annotation.
+
+### f4: KOMODO owner points to a nonexistent bacterial child path
+
+major / open / confirmed; issue key: culturemech.000741.reciprocal-owner-path.
+
+The generated target parent path resolves. The defect is specifically KOMODO owner variant_children[0].path: its bacterial path is absent from the ignored-inclusive inventory, while CultureMech:000741 resolves under archaea.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the complete source-scoped stocks and receiving doses, separate duplicated main and stock ingredients, preserve water inputs and qualify unsupported main normalization. Add exact claim-level evidence without assuming final volume.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Resolve exact salt and hydrate identities in the maintained owners before refreshing corresponding secondary links. Preserve unambiguous source forms and do not invent replacement CURIEs.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Restore mineral preparation under the resolved stock, retain main-stage and conditional pH context, and add scoped preparation evidence to the KOMODO owner. Label aerobic metadata as catalog provenance rather than a conflicting cultivation assertion.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Correct the KOMODO normalized owner reciprocal child path to the exact captured archaea record, retaining stable IDs. Verify both directions and generated relationship propagation; do not rewrite historical events.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch031/301/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-031/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch031/301/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml:1:id: CultureMech:000741<br>./data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml:1:id: CultureMech:000741<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch031/source-preflight-bound/301/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 41 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-owner-context | /private/tmp/culturemech-review-work-batch031/source-preflight-bound/301/evidence-context-original.json; Whole target, all maintained owners and scoped dependencies | context_only | All frozen local-record objects match fresh inspected YAML. Source interpretations are separately checked against actual bound raw/text bytes. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf; Pages 1–2: main table, preparation, mineral and 10x vitamin subsections | supports | Exact complete primary formula; input water, separate stock amounts and receiving doses are distinct. No measured final volume or numerical autoclave cycle is stated. |
+| mineral-parent | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf; Modified Wolin mineral solution subsection only | supports | The named mineral subsection agrees with the embedded DSMZ 1278 stock. Parent main recipe and its different vitamin strength are excluded. |
+| vitamin-parent | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium120.pdf; Wolin vitamin solution (10x) subsection only | supports | Only the explicitly referenced 10x vitamin formulation transfers; all other parent contents and organism statements are excluded. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch031/301/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131361 resolves to disodium selenite pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15940 resolves to nicotinic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15956 resolves to biotin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:16494 resolves to lipoic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17015 resolves to riboflavin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:176843 resolves to vitamin B12. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi18320 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18320; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:18320 resolves to 1,4-dithiothreitol. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:27470 resolves to folic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29377 resolves to sodium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30753 resolves to 4-aminobenzoic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30961 resolves to pyridoxine hydrochloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31206 resolves to ammonium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31345 resolves to Calcium pantothenate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32149 resolves to sodium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32588 resolves to potassium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:33118 resolves to boric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:34887 resolves to nickel dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi44557 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:44557 resolves to nitrilotriacetic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:49105 resolves to thiamine hydrochloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63939 resolves to sodium tungstate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75228 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75228; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75228 resolves to sodium lactate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86364 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86364 resolves to manganese(II) sulfate monohydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86465 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86465 resolves to potassium aluminium sulfate dodecahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91244 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131361": [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361", "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494": [{"label": "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier": "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015", "preferred_term": "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:18320": [{"label": "DL-Dithiothreitol", "match_type": "preferred_term", "identifier": "CHEBI:18320", "preferred_term": "DL-Dithiothreitol", "ontology_id": "CHEBI:18320", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470": [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32149": [{"label": "Na2SO4", "match_type": "preferred_term", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:44557": [{"label": "Nitrilotriacetic acid", "match_type": "preferred_term", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75228": [{"label": "Sodium lactate", "match_type": "preferred_term", "identifier": "CHEBI:75228", "preferred_term": "Sodium lactate", "ontology_id": "CHEBI:75228", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86364": [{"label": "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86465": [{"label": "AlK(SO4)2 x 12 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86465", "preferred_term": "AlK(SO4)2 x 12 H2O", "ontology_id": "CHEBI:86465", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91244": [{"label": "CoSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml; data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml; data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 10, "timestamp_issues": []}, {"input": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml", "events": 9, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:14.812489"}]}] |
+| catalog | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact MediaInfo=1278 catalog row; Aerobic column header | supports | Catalog maps accession 1278 to DSMZ 1278. Its aerobic flag is source metadata, not evidence overturning the primary anoxic preparation or asserting organism growth. |
+| relationships | /private/tmp/culturemech-review-work-batch031/source-preflight-bound/301/evidence-context-original.json; internal_relationship_context: all declared paths, exact IDs and ignored-inclusive normalized listing | supports | [{"record_path": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml", "field_path": "$.parent_media", "assertion": {"path": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml", "relationship": "SOURCE_DUPLICATE", "id": "CultureMech:004031", "name": "hyl_medium"}, "declared_path_in_ignored_inclusive_listing": true, "resolved_exact_id_and_basename": [{"path": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml", "id": "CultureMech:004031", "sha256": "89dd343f2ec096b3e1f103b5c33e6ce5c4b4d7c41e8eb4be64e6600d1ba2a83f"}], "search_argv": ["rg", "--files", "--no-ignore", "--hidden", "data/normalized_yaml"], "search_scope": "All normalized files in owned030 checkout, including ignored and hidden paths. Exact declared path and basename membership plus parsed stable ID.", "limit": "A different resolved path does not repair the asserted path; relationship meaning is separate from ingredient-set matching."}, {"record_path": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml", "field_path": "$.parent_media", "assertion": {"path": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml", "relationship": "SOURCE_DUPLICATE", "id": "CultureMech:004031", "name": "hyl_medium"}, "declared_path_in_ignored_inclusive_listing": true, "resolved_exact_id_and_basename": [{"path": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml", "id": "CultureMech:004031", "sha256": "89dd343f2ec096b3e1f103b5c33e6ce5c4b4d7c41e8eb4be64e6600d1ba2a83f"}], "search_argv": ["rg", "--files", "--no-ignore", "--hidden", "data/normalized_yaml"], "search_scope": "All normalized files in owned030 checkout, including ignored and hidden paths. Exact declared path and basename membership plus parsed stable ID.", "limit": "A different resolved path does not repair the asserted path; relationship meaning is separate from ingredient-set matching."}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml", "field_path": "$.variant_children[0]", "assertion": {"path": "data/normalized_yaml/bacterial/archaeoglobus_sulfaticallidus_medium.yaml", "relationship": "SOURCE_DUPLICATE", "id": "CultureMech:000741", "name": "archaeoglobus_sulfaticallidus_medium", "notes": "Same ingredient and concentration signature; review as possible duplicate source record."}, "declared_path_in_ignored_inclusive_listing": false, "resolved_exact_id_and_basename": [{"path": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml", "id": "CultureMech:000741", "sha256": "93318a5daf033361f2d9302fe650be22296903f7277d8585cb619099d8dd3a86"}], "search_argv": ["rg", "--files", "--no-ignore", "--hidden", "data/normalized_yaml"], "search_scope": "All normalized files in owned030 checkout, including ignored and hidden paths. Exact declared path and basename membership plus parsed stable ID.", "limit": "A different resolved path does not repair the asserted path; relationship meaning is separate from ingredient-set matching."}] |
+| current-code-0 | src/culturemech/import/mediadive_importer.py; Current scoped code; no historical-version inference | context_only | Current MediaDive code selects the primary solution and preserves stock references; its fallback unit mapping still requires explicit source basis. Current cleanup avoids summing conflicting duplicates, so persisted sums do not prove that current code created them. Fix both maintained owners and stock boundaries before separately authorized regeneration; preserve old history and append clarification only. |
+| current-code-1 | scripts/cleanup_media_quality.py; Current scoped code; no historical-version inference | context_only | Current MediaDive code selects the primary solution and preserves stock references; its fallback unit mapping still requires explicit source basis. Current cleanup avoids summing conflicting duplicates, so persisted sums do not prove that current code created them. Fix both maintained owners and stock boundaries before separately authorized regeneration; preserve old history and append clarification only. |
+| current-code-2 | src/culturemech/merge/merge_recipes.py; Current scoped code; no historical-version inference | context_only | Current MediaDive code selects the primary solution and preserves stock references; its fallback unit mapping still requires explicit source basis. Current cleanup avoids summing conflicting duplicates, so persisted sums do not prove that current code created them. Fix both maintained owners and stock boundaries before separately authorized regeneration; preserve old history and append clarification only. |
+| mediadive1278api-attempt | https://mediadive.dsmz.de/rest/medium/1278; Preserved exact public retrieval result | context_only | Exact optional source attempt mediadive1278api returned HTTP 503. Full current primary comparison is available; this failure neither authenticates historical normalization nor makes current primary identity unavailable. |
+| mediadive1278api_retry-attempt | https://mediadive.dsmz.de/rest/medium/1278; Preserved exact public retrieval result | context_only | Exact optional source attempt mediadive1278api_retry returned HTTP 503. Full current primary comparison is available; this failure neither authenticates historical normalization nor makes current primary identity unavailable. |
+| komodo1278detail-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1278; Preserved exact public retrieval result | context_only | Exact optional source attempt komodo1278detail returned HTTP 403. Full current primary comparison is available; this failure neither authenticates historical normalization nor makes current primary identity unavailable. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Exact optional source attempt mediadive1278api returned HTTP 503. Full current primary comparison is available; this failure neither authenticates historical normalization nor makes current primary identity unavailable.
+- Exact optional source attempt mediadive1278api_retry returned HTTP 503. Full current primary comparison is available; this failure neither authenticates historical normalization nor makes current primary identity unavailable.
+- Exact optional source attempt komodo1278detail returned HTTP 403. Full current primary comparison is available; this failure neither authenticates historical normalization nor makes current primary identity unavailable.
+- The listed main liquids total 1011.5 mL before unquantified additional stock volumes; this is not a measured final volume. No final-medium rates are derived from it.
+- No historical API response is authenticated by the current primary or canonical checks. There are no attached local amount quotations requiring a fabricated raw-response recovery claim.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T172421Z-culturemech-000741-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: archaeoglobus_sulfaticallidus_medium (CultureMech:000741)'
+started_at: '2026-10-21T17:21:17Z'
+finished_at: '2026-10-21T17:24:21Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 1278 resolves the generated identity and both maintained contributors.
+  Main and undiluted mineral/vitamin stock quantities have been combined, while the
+  primary does not establish the stored final-volume denominator. Sodium resazurin
+  and nickel hydrate groundings conflict with exact supplied forms. Preparation survives
+  in the generated and DSMZ layers but is absent from the KOMODO owner, whose reciprocal
+  child path is broken. Complete primary formula comparison is available; current
+  failed APIs do not authenticate historical provider normalization.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml
+    sha256: f6cb5f0d4a114871e65fdf3919b7bbdea14b0578311fcdbe4f63dfc6ce106ded
+    role: target
+  - path: data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml
+    sha256: 93318a5daf033361f2d9302fe650be22296903f7277d8585cb619099d8dd3a86
+    role: context
+  - path: data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml
+    sha256: 89dd343f2ec096b3e1f103b5c33e6ce5c4b4d7c41e8eb4be64e6600d1ba2a83f
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 301; batch 031 item 1 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty task batches contain
+    300 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 303 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000741
+targets:
+- target_id: CultureMech:000741
+  path: data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml
+  label: archaeoglobus_sulfaticallidus_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch031/301/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-031/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch031/301/strict.tsv"
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:000741
+- check_id: mediadive1278api-source-access
+  name: 'Exact source content access: mediadive1278api'
+  required: false
+  status: unavailable
+  summary: Exact optional source attempt mediadive1278api returned HTTP 503. Full
+    current primary comparison is available; this failure neither authenticates historical
+    normalization nor makes current primary identity unavailable.
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - mediadive1278api-attempt
+- check_id: mediadive1278api_retry-source-access
+  name: 'Exact source content access: mediadive1278api_retry'
+  required: false
+  status: unavailable
+  summary: Exact optional source attempt mediadive1278api_retry returned HTTP 503.
+    Full current primary comparison is available; this failure neither authenticates
+    historical normalization nor makes current primary identity unavailable.
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - mediadive1278api_retry-attempt
+- check_id: komodo1278detail-source-access
+  name: 'Exact source content access: komodo1278detail'
+  required: false
+  status: unavailable
+  summary: Exact optional source attempt komodo1278detail returned HTTP 403. Full
+    current primary comparison is available; this failure neither authenticates historical
+    normalization nor makes current primary identity unavailable.
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - komodo1278detail-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T17:24:20Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T17:24:20Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T17:24:20Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:21:30.590852Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch031/301/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:21:32.191220Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-031/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch031/301/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:21:34.426300Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:21:35.531644Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T17:24:20Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml:1:id:
+    CultureMech:000741
+
+    ./data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml:1:id:
+    CultureMech:000741
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch031/source-preflight-bound/301/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T17:24:20Z'
+  support: supports
+  summary: 41 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 90fe8a904734443014bf299642d99a61e7637b932cf361e58fe442bc80ba5eb9
+- evidence_id: bound-owner-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch031/source-preflight-bound/301/evidence-context-original.json
+  locator: Whole target, all maintained owners and scoped dependencies
+  accessed_at: '2026-10-21T17:24:20Z'
+  support: context_only
+  summary: All frozen local-record objects match fresh inspected YAML. Source interpretations
+    are separately checked against actual bound raw/text bytes.
+  snapshot_sha256: 7810e540a6c4af85c367a7d780428ac09e754f9ba010d002e2b6b6b113ef250a
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf
+  locator: 'Pages 1–2: main table, preparation, mineral and 10x vitamin subsections'
+  accessed_at: '2026-10-21T17:04:21.604326Z'
+  support: supports
+  summary: Exact complete primary formula; input water, separate stock amounts and
+    receiving doses are distinct. No measured final volume or numerical autoclave
+    cycle is stated.
+  snapshot_sha256: 0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88
+- evidence_id: mineral-parent
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf
+  locator: Modified Wolin mineral solution subsection only
+  accessed_at: '2026-10-21T10:13:12.306566Z'
+  support: supports
+  summary: The named mineral subsection agrees with the embedded DSMZ 1278 stock.
+    Parent main recipe and its different vitamin strength are excluded.
+  snapshot_sha256: 8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8
+- evidence_id: vitamin-parent
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium120.pdf
+  locator: Wolin vitamin solution (10x) subsection only
+  accessed_at: '2026-10-21T13:16:27.298931Z'
+  support: supports
+  summary: Only the explicitly referenced 10x vitamin formulation transfers; all other
+    parent contents and organism statements are excluded.
+  snapshot_sha256: e1f85e4a546abc825218226bbb18d78bd9c054b7e11399aa7161ad259a3b663f
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch031/301/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T17:24:20Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: f7581a1adfb9d0810b85770e7ebb6a2ba56af012716ffea7677b91f3dd5ddeb6
+- evidence_id: chebi131361
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:27.980786Z'
+  support: supports
+  summary: CHEBI:131361 resolves to disodium selenite pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: CHEBI:15940 resolves to nicotinic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi16494
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:13.001958Z'
+  support: supports
+  summary: CHEBI:16494 resolves to lipoic acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: chebi17015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:11.583596Z'
+  support: supports
+  summary: CHEBI:17015 resolves to riboflavin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: CHEBI:176843 resolves to vitamin B12. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi18320
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18320
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:37:24.678779Z'
+  support: supports
+  summary: CHEBI:18320 resolves to 1,4-dithiothreitol. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 475ff3beab5570f7c37e9627477a11b45f76f0be7b4d04d07c310416b58c5e54
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: CHEBI:27470 resolves to folic acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: CHEBI:30753 resolves to 4-aminobenzoic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: CHEBI:30961 resolves to pyridoxine hydrochloride. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: CHEBI:31345 resolves to Calcium pantothenate. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32149
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:18:34.792120Z'
+  support: supports
+  summary: CHEBI:32149 resolves to sodium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 49c4b3ee63a59ea3acba0006afd53c6050dd13cd2210a15e3395b100bc6749b8
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi44557
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:46:15.250117Z'
+  support: supports
+  summary: CHEBI:44557 resolves to nitrilotriacetic acid. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: CHEBI:49105 resolves to thiamine hydrochloride. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi63939
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:09.796192Z'
+  support: supports
+  summary: CHEBI:63939 resolves to sodium tungstate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75228
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75228
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T14:35:48.010081Z'
+  support: supports
+  summary: CHEBI:75228 resolves to sodium lactate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 725fbc04444c481cec25519a6f632470427a7020613af93e84e05b5f23d66ccf
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86364
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:35.036768Z'
+  support: supports
+  summary: CHEBI:86364 resolves to manganese(II) sulfate monohydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f1da0a281e1fa2263226a8548afc0bf76db61dd36828240b47d83431bd182069
+- evidence_id: chebi86465
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:08.054799Z'
+  support: supports
+  summary: CHEBI:86465 resolves to potassium aluminium sulfate dodecahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 5e74b8136b972b18b427c70e758e12dfe013a6ca671501cddc936038299f7c2c
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91244
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.079384Z'
+  support: supports
+  summary: CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: dd763e0620a8afe61626951123a4de5d100bfa4534ee26ba0a39dad4e7e9bcaa
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T17:24:20Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131361":
+    [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361",
+    "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:15940": [{"label": "Nicotinic acid",
+    "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term":
+    "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term",
+    "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494": [{"label":
+    "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier": "CHEBI:16494",
+    "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type":
+    "preferred_term", "identifier": "CHEBI:17015", "preferred_term": "Riboflavin",
+    "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term", "identifier":
+    "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843",
+    "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:18320": [{"label":
+    "DL-Dithiothreitol", "match_type": "preferred_term", "identifier": "CHEBI:18320",
+    "preferred_term": "DL-Dithiothreitol", "ontology_id": "CHEBI:18320", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id":
+    "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470":
+    [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470",
+    "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id":
+    "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium
+    carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377",
+    "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid",
+    "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term":
+    "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride",
+    "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term":
+    "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term",
+    "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label":
+    "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440",
+    "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32149": [{"label": "Na2SO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id":
+    "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312":
+    [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312",
+    "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118":
+    [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118",
+    "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:44557": [{"label":
+    "Nitrilotriacetic acid", "match_type": "preferred_term", "identifier": "CHEBI:44557",
+    "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl",
+    "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term":
+    "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id":
+    "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75228":
+    [{"label": "Sodium lactate", "match_type": "preferred_term", "identifier": "CHEBI:75228",
+    "preferred_term": "Sodium lactate", "ontology_id": "CHEBI:75228", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term":
+    "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86345":
+    [{"label": "Magnesium chloride", "match_type": "preferred_term", "identifier":
+    "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id": "CHEBI:86345",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term":
+    "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86364": [{"label": "MnSO4 x H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86465": [{"label":
+    "AlK(SO4)2 x 12 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86465",
+    "preferred_term": "AlK(SO4)2 x 12 H2O", "ontology_id": "CHEBI:86465", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:91244": [{"label": "CoSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:91244", "preferred_term":
+    "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml; data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml;
+    data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T17:24:20Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 10, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml", "events":
+    8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+    "events": 9, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:14.812489"}]}]'
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact MediaInfo=1278 catalog row; Aerobic column header
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Catalog maps accession 1278 to DSMZ 1278. Its aerobic flag is source metadata,
+    not evidence overturning the primary anoxic preparation or asserting organism
+    growth.
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: relationships
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch031/source-preflight-bound/301/evidence-context-original.json
+  locator: 'internal_relationship_context: all declared paths, exact IDs and ignored-inclusive
+    normalized listing'
+  accessed_at: '2026-10-21T17:24:20Z'
+  support: supports
+  summary: '[{"record_path": "data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml",
+    "field_path": "$.parent_media", "assertion": {"path": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+    "relationship": "SOURCE_DUPLICATE", "id": "CultureMech:004031", "name": "hyl_medium"},
+    "declared_path_in_ignored_inclusive_listing": true, "resolved_exact_id_and_basename":
+    [{"path": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml", "id":
+    "CultureMech:004031", "sha256": "89dd343f2ec096b3e1f103b5c33e6ce5c4b4d7c41e8eb4be64e6600d1ba2a83f"}],
+    "search_argv": ["rg", "--files", "--no-ignore", "--hidden", "data/normalized_yaml"],
+    "search_scope": "All normalized files in owned030 checkout, including ignored
+    and hidden paths. Exact declared path and basename membership plus parsed stable
+    ID.", "limit": "A different resolved path does not repair the asserted path; relationship
+    meaning is separate from ingredient-set matching."}, {"record_path": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+    "field_path": "$.parent_media", "assertion": {"path": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+    "relationship": "SOURCE_DUPLICATE", "id": "CultureMech:004031", "name": "hyl_medium"},
+    "declared_path_in_ignored_inclusive_listing": true, "resolved_exact_id_and_basename":
+    [{"path": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml", "id":
+    "CultureMech:004031", "sha256": "89dd343f2ec096b3e1f103b5c33e6ce5c4b4d7c41e8eb4be64e6600d1ba2a83f"}],
+    "search_argv": ["rg", "--files", "--no-ignore", "--hidden", "data/normalized_yaml"],
+    "search_scope": "All normalized files in owned030 checkout, including ignored
+    and hidden paths. Exact declared path and basename membership plus parsed stable
+    ID.", "limit": "A different resolved path does not repair the asserted path; relationship
+    meaning is separate from ingredient-set matching."}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml",
+    "field_path": "$.variant_children[0]", "assertion": {"path": "data/normalized_yaml/bacterial/archaeoglobus_sulfaticallidus_medium.yaml",
+    "relationship": "SOURCE_DUPLICATE", "id": "CultureMech:000741", "name": "archaeoglobus_sulfaticallidus_medium",
+    "notes": "Same ingredient and concentration signature; review as possible duplicate
+    source record."}, "declared_path_in_ignored_inclusive_listing": false, "resolved_exact_id_and_basename":
+    [{"path": "data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml",
+    "id": "CultureMech:000741", "sha256": "93318a5daf033361f2d9302fe650be22296903f7277d8585cb619099d8dd3a86"}],
+    "search_argv": ["rg", "--files", "--no-ignore", "--hidden", "data/normalized_yaml"],
+    "search_scope": "All normalized files in owned030 checkout, including ignored
+    and hidden paths. Exact declared path and basename membership plus parsed stable
+    ID.", "limit": "A different resolved path does not repair the asserted path; relationship
+    meaning is separate from ingredient-set matching."}]'
+  snapshot_sha256: 7810e540a6c4af85c367a7d780428ac09e754f9ba010d002e2b6b6b113ef250a
+- evidence_id: current-code-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current scoped code; no historical-version inference
+  accessed_at: '2026-10-21T17:24:20Z'
+  support: context_only
+  summary: Current MediaDive code selects the primary solution and preserves stock
+    references; its fallback unit mapping still requires explicit source basis. Current
+    cleanup avoids summing conflicting duplicates, so persisted sums do not prove
+    that current code created them. Fix both maintained owners and stock boundaries
+    before separately authorized regeneration; preserve old history and append clarification
+    only.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: current-code-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current scoped code; no historical-version inference
+  accessed_at: '2026-10-21T17:24:20Z'
+  support: context_only
+  summary: Current MediaDive code selects the primary solution and preserves stock
+    references; its fallback unit mapping still requires explicit source basis. Current
+    cleanup avoids summing conflicting duplicates, so persisted sums do not prove
+    that current code created them. Fix both maintained owners and stock boundaries
+    before separately authorized regeneration; preserve old history and append clarification
+    only.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: current-code-2
+  kind: record_content
+  reference: src/culturemech/merge/merge_recipes.py
+  locator: Current scoped code; no historical-version inference
+  accessed_at: '2026-10-21T17:24:20Z'
+  support: context_only
+  summary: Current MediaDive code selects the primary solution and preserves stock
+    references; its fallback unit mapping still requires explicit source basis. Current
+    cleanup avoids summing conflicting duplicates, so persisted sums do not prove
+    that current code created them. Fix both maintained owners and stock boundaries
+    before separately authorized regeneration; preserve old history and append clarification
+    only.
+  snapshot_sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+- evidence_id: mediadive1278api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1278
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:04:20.930978Z'
+  support: context_only
+  summary: Exact optional source attempt mediadive1278api returned HTTP 503. Full
+    current primary comparison is available; this failure neither authenticates historical
+    normalization nor makes current primary identity unavailable.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive1278api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1278
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:05:12.222752Z'
+  support: context_only
+  summary: Exact optional source attempt mediadive1278api_retry returned HTTP 503.
+    Full current primary comparison is available; this failure neither authenticates
+    historical normalization nor makes current primary identity unavailable.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo1278detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1278
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:04:20.928610Z'
+  support: context_only
+  summary: Exact optional source attempt komodo1278detail returned HTTP 403. Full
+    current primary comparison is available; this failure neither authenticates historical
+    normalization nor makes current primary identity unavailable.
+  snapshot_sha256: 00591427c35d972369275f479e119968e7d12005dfcd6e88f5050bd86192bcef
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 51 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    NaCl main input\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20.7824\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20.7824\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"20.7824\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"20.00\",\n      \"final_medium_volume_ml\": null,\n\
+    \      \"stock_contribution_separate\": true\n    },\n    \"rationale\": \"Separate\
+    \ the main batch amount from stock inputs; no measured final-volume denominator\
+    \ is supplied. The existing value also adds the undiluted stock amount and therefore\
+    \ has the wrong scope.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, main table: NaCl\",\n        \"exact_source_quote\"\
+    : \"NaCl 20.00 g\",\n        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\": \"Na2SO4\
+    \ main input\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.95648\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.95648\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"3.95648\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"4.00\",\n      \"final_medium_volume_ml\": null,\n\
+    \      \"stock_contribution_separate\": false\n    },\n    \"rationale\": \"Separate\
+    \ the main batch amount from stock inputs; no measured final-volume denominator\
+    \ is supplied. The stored rate may reflect an older provider normalization, but\
+    \ current primary input water does not independently verify it.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1278\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\",\n       \
+    \ \"source_locator\": \"Page 1, main table: Na2SO4\",\n        \"exact_source_quote\"\
+    : \"Na2SO4 4.00 g\",\n        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\": \"MgCl2\
+    \ x 6 H2O main input\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.25321\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.25321\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"4.25321\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"4.30\",\n      \"final_medium_volume_ml\": null,\n\
+    \      \"stock_contribution_separate\": false\n    },\n    \"rationale\": \"Separate\
+    \ the main batch amount from stock inputs; no measured final-volume denominator\
+    \ is supplied. The stored rate may reflect an older provider normalization, but\
+    \ current primary input water does not independently verify it.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1278\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\",\n       \
+    \ \"source_locator\": \"Page 1, main table: MgCl2 x 6 H2O\",\n        \"exact_source_quote\"\
+    : \"MgCl2 x 6 H2O 4.30 g\",\n        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\": \"NH4Cl\
+    \ main input\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.24728\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.24728\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.24728\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"0.25\",\n      \"final_medium_volume_ml\": null,\n\
+    \      \"stock_contribution_separate\": false\n    },\n    \"rationale\": \"Separate\
+    \ the main batch amount from stock inputs; no measured final-volume denominator\
+    \ is supplied. The stored rate may reflect an older provider normalization, but\
+    \ current primary input water does not independently verify it.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1278\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\",\n       \
+    \ \"source_locator\": \"Page 1, main table: NH4Cl\",\n        \"exact_source_quote\"\
+    : \"NH4Cl 0.25 g\",\n        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\": \"KCl\
+    \ main input\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.336301\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.336301\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.336301\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"0.34\",\n      \"final_medium_volume_ml\": null,\n\
+    \      \"stock_contribution_separate\": false\n    },\n    \"rationale\": \"Separate\
+    \ the main batch amount from stock inputs; no measured final-volume denominator\
+    \ is supplied. The stored rate may reflect an older provider normalization, but\
+    \ current primary input water does not independently verify it.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1278\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\",\n       \
+    \ \"source_locator\": \"Page 1, main table: KCl\",\n        \"exact_source_quote\"\
+    : \"KCl 0.34 g\",\n        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\": \"CaCl2\
+    \ x 2 H2O main input\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.238477\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.238477\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.238477\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"0.14\",\n      \"final_medium_volume_ml\": null,\n\
+    \      \"stock_contribution_separate\": true\n    },\n    \"rationale\": \"Separate\
+    \ the main batch amount from stock inputs; no measured final-volume denominator\
+    \ is supplied. The existing value also adds the undiluted stock amount and therefore\
+    \ has the wrong scope.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, main table: CaCl2 x 2 H2O\",\n      \
+    \  \"exact_source_quote\": \"CaCl2 x 2 H2O 0.14 g\",\n        \"snapshot_sha256\"\
+    : \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\",\n    \
+    \    \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\": \"KH2PO4\
+    \ main input\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.138477\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.138477\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[6].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.138477\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"0.14\",\n      \"final_medium_volume_ml\": null,\n\
+    \      \"stock_contribution_separate\": false\n    },\n    \"rationale\": \"Separate\
+    \ the main batch amount from stock inputs; no measured final-volume denominator\
+    \ is supplied. The stored rate may reflect an older provider normalization, but\
+    \ current primary input water does not independently verify it.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1278\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\",\n       \
+    \ \"source_locator\": \"Page 1, main table: KH2PO4\",\n        \"exact_source_quote\"\
+    : \"KH2PO4 0.14 g\",\n        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\": \"Na-DL-lactate\
+    \ main input\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.97824\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.97824\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[7].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"1.97824\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"2.00\",\n      \"final_medium_volume_ml\": null,\n\
+    \      \"stock_contribution_separate\": false\n    },\n    \"rationale\": \"Separate\
+    \ the main batch amount from stock inputs; no measured final-volume denominator\
+    \ is supplied. The stored rate may reflect an older provider normalization, but\
+    \ current primary input water does not independently verify it.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1278\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\",\n       \
+    \ \"source_locator\": \"Page 1, main table: Na-DL-lactate\",\n        \"exact_source_quote\"\
+    : \"Na-DL-lactate 2.00 g\",\n        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\": \"Yeast\
+    \ extract (OXOID) main input\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.98912\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.98912\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[8].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.98912\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"1.00\",\n      \"final_medium_volume_ml\": null,\n\
+    \      \"stock_contribution_separate\": false\n    },\n    \"rationale\": \"Separate\
+    \ the main batch amount from stock inputs; no measured final-volume denominator\
+    \ is supplied. The stored rate may reflect an older provider normalization, but\
+    \ current primary input water does not independently verify it.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1278\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\",\n       \
+    \ \"source_locator\": \"Page 1, main table: Yeast extract (OXOID)\",\n       \
+    \ \"exact_source_quote\": \"Yeast extract (OXOID) 1.00 g\",\n        \"snapshot_sha256\"\
+    : \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\",\n    \
+    \    \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\": \"Na2CO3\
+    \ main input\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.98912\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.98912\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[10].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"0.98912\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"1.00\",\n      \"final_medium_volume_ml\": null,\n\
+    \      \"stock_contribution_separate\": false\n    },\n    \"rationale\": \"Separate\
+    \ the main batch amount from stock inputs; no measured final-volume denominator\
+    \ is supplied. The stored rate may reflect an older provider normalization, but\
+    \ current primary input water does not independently verify it.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1278\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\",\n       \
+    \ \"source_locator\": \"Page 1, main table: Na2CO3\",\n        \"exact_source_quote\"\
+    : \"Na2CO3 1.00 g\",\n        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q11\",\n    \"component_or_context\": \"DL-Dithiothreitol\
+    \ main input\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.49456\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.49456\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[11].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"0.49456\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"0.50\",\n      \"final_medium_volume_ml\": null,\n\
+    \      \"stock_contribution_separate\": false\n    },\n    \"rationale\": \"Separate\
+    \ the main batch amount from stock inputs; no measured final-volume denominator\
+    \ is supplied. The stored rate may reflect an older provider normalization, but\
+    \ current primary input water does not independently verify it.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1278\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\",\n       \
+    \ \"source_locator\": \"Page 1, main table: DL-Dithiothreitol\",\n        \"exact_source_quote\"\
+    : \"DL-Dithiothreitol 0.50 g\",\n        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q12\",\n    \"component_or_context\": \"Sodium\
+    \ resazurin stock dose and strength\",\n    \"decision\": \"unsupported\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00049456\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"unsupported\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00049456\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"unsupported\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00049456\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"dose_ml\": 0.5,\n      \"strength_percent_w_v\": 0.1,\n      \"derived_delivered_mass_mg\"\
+    : 0.5,\n      \"final_medium_rate\": null\n    },\n    \"rationale\": \"The explicit\
+    \ stock strength permits 0.1 g/100 mL × 0.5 mL = 0.0005 g delivered. It does not\
+    \ establish the stored per-litre rate without final volume. Preserve sodium salt\
+    \ identity and the stock addition stage.\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, main table: sodium resazurin\",\n   \
+    \     \"exact_source_quote\": \"Sodium resazurin (0.1% w/v) 0.50 ml\",\n     \
+    \   \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q13\",\n    \"component_or_context\": \"Modified\
+    \ Wolin mineral solution: Nitrilotriacetic acid\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral solution\",\n      \"batch_amount\"\
+    : \"1.50\",\n      \"source_unit\": \"g\",\n      \"stock_water_input_ml\": 1000,\n\
+    \      \"main_stock_dose_ml\": 10,\n      \"final_medium_rate\": null\n    },\n\
+    \    \"rationale\": \"Restore stock membership and original units. The local number\
+    \ is an undiluted stock amount or a sum of main and stock amounts, not a supported\
+    \ main-medium concentration. Stock water input and main receiving volume remain\
+    \ distinct.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Modified Wolin mineral solution: Nitrilotriacetic\
+    \ acid\",\n        \"exact_source_quote\": \"Nitrilotriacetic acid 1.50 g\",\n\
+    \        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q14\",\n    \"component_or_context\": \"Modified\
+    \ Wolin mineral solution: MgSO4 x 7 H2O\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral solution\",\n      \"batch_amount\"\
+    : \"3.00\",\n      \"source_unit\": \"g\",\n      \"stock_water_input_ml\": 1000,\n\
+    \      \"main_stock_dose_ml\": 10,\n      \"final_medium_rate\": null\n    },\n\
+    \    \"rationale\": \"Restore stock membership and original units. The local number\
+    \ is an undiluted stock amount or a sum of main and stock amounts, not a supported\
+    \ main-medium concentration. Stock water input and main receiving volume remain\
+    \ distinct.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Modified Wolin mineral solution: MgSO4\
+    \ x 7 H2O\",\n        \"exact_source_quote\": \"MgSO4 x 7 H2O 3.00 g\",\n    \
+    \    \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q15\",\n    \"component_or_context\": \"Modified\
+    \ Wolin mineral solution: MnSO4 x H2O\",\n    \"decision\": \"correct\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral solution\",\n      \"batch_amount\"\
+    : \"0.50\",\n      \"source_unit\": \"g\",\n      \"stock_water_input_ml\": 1000,\n\
+    \      \"main_stock_dose_ml\": 10,\n      \"final_medium_rate\": null\n    },\n\
+    \    \"rationale\": \"Restore stock membership and original units. The local number\
+    \ is an undiluted stock amount or a sum of main and stock amounts, not a supported\
+    \ main-medium concentration. Stock water input and main receiving volume remain\
+    \ distinct.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Modified Wolin mineral solution: MnSO4\
+    \ x H2O\",\n        \"exact_source_quote\": \"MnSO4 x H2O 0.50 g\",\n        \"\
+    snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q16\",\n    \"component_or_context\": \"Modified\
+    \ Wolin mineral solution: NaCl\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20.7824\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20.7824\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"20.7824\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral solution\",\n      \"batch_amount\"\
+    : \"1.00\",\n      \"source_unit\": \"g\",\n      \"stock_water_input_ml\": 1000,\n\
+    \      \"main_stock_dose_ml\": 10,\n      \"final_medium_rate\": null\n    },\n\
+    \    \"rationale\": \"Restore stock membership and original units. The local number\
+    \ is an undiluted stock amount or a sum of main and stock amounts, not a supported\
+    \ main-medium concentration. Stock water input and main receiving volume remain\
+    \ distinct.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Modified Wolin mineral solution: NaCl\"\
+    ,\n        \"exact_source_quote\": \"NaCl 1.00 g\",\n        \"snapshot_sha256\"\
+    : \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\",\n    \
+    \    \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q17\",\n    \"component_or_context\": \"Modified\
+    \ Wolin mineral solution: FeSO4 x 7 H2O\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral solution\",\n      \"batch_amount\"\
+    : \"0.10\",\n      \"source_unit\": \"g\",\n      \"stock_water_input_ml\": 1000,\n\
+    \      \"main_stock_dose_ml\": 10,\n      \"final_medium_rate\": null\n    },\n\
+    \    \"rationale\": \"Restore stock membership and original units. The local number\
+    \ is an undiluted stock amount or a sum of main and stock amounts, not a supported\
+    \ main-medium concentration. Stock water input and main receiving volume remain\
+    \ distinct.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Modified Wolin mineral solution: FeSO4\
+    \ x 7 H2O\",\n        \"exact_source_quote\": \"FeSO4 x 7 H2O 0.10 g\",\n    \
+    \    \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q18\",\n    \"component_or_context\": \"Modified\
+    \ Wolin mineral solution: CoSO4 x 7 H2O\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[16].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral solution\",\n      \"batch_amount\"\
+    : \"0.18\",\n      \"source_unit\": \"g\",\n      \"stock_water_input_ml\": 1000,\n\
+    \      \"main_stock_dose_ml\": 10,\n      \"final_medium_rate\": null\n    },\n\
+    \    \"rationale\": \"Restore stock membership and original units. The local number\
+    \ is an undiluted stock amount or a sum of main and stock amounts, not a supported\
+    \ main-medium concentration. Stock water input and main receiving volume remain\
+    \ distinct.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Modified Wolin mineral solution: CoSO4\
+    \ x 7 H2O\",\n        \"exact_source_quote\": \"CoSO4 x 7 H2O 0.18 g\",\n    \
+    \    \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q19\",\n    \"component_or_context\": \"Modified\
+    \ Wolin mineral solution: CaCl2 x 2 H2O\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.238477\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.238477\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.238477\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral solution\",\n      \"batch_amount\"\
+    : \"0.10\",\n      \"source_unit\": \"g\",\n      \"stock_water_input_ml\": 1000,\n\
+    \      \"main_stock_dose_ml\": 10,\n      \"final_medium_rate\": null\n    },\n\
+    \    \"rationale\": \"Restore stock membership and original units. The local number\
+    \ is an undiluted stock amount or a sum of main and stock amounts, not a supported\
+    \ main-medium concentration. Stock water input and main receiving volume remain\
+    \ distinct.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Modified Wolin mineral solution: CaCl2\
+    \ x 2 H2O\",\n        \"exact_source_quote\": \"CaCl2 x 2 H2O 0.10 g\",\n    \
+    \    \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q20\",\n    \"component_or_context\": \"Modified\
+    \ Wolin mineral solution: ZnSO4 x 7 H2O\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[17].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral solution\",\n      \"batch_amount\"\
+    : \"0.18\",\n      \"source_unit\": \"g\",\n      \"stock_water_input_ml\": 1000,\n\
+    \      \"main_stock_dose_ml\": 10,\n      \"final_medium_rate\": null\n    },\n\
+    \    \"rationale\": \"Restore stock membership and original units. The local number\
+    \ is an undiluted stock amount or a sum of main and stock amounts, not a supported\
+    \ main-medium concentration. Stock water input and main receiving volume remain\
+    \ distinct.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Modified Wolin mineral solution: ZnSO4\
+    \ x 7 H2O\",\n        \"exact_source_quote\": \"ZnSO4 x 7 H2O 0.18 g\",\n    \
+    \    \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q21\",\n    \"component_or_context\": \"Modified\
+    \ Wolin mineral solution: CuSO4 x 5 H2O\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[18].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral solution\",\n      \"batch_amount\"\
+    : \"0.01\",\n      \"source_unit\": \"g\",\n      \"stock_water_input_ml\": 1000,\n\
+    \      \"main_stock_dose_ml\": 10,\n      \"final_medium_rate\": null\n    },\n\
+    \    \"rationale\": \"Restore stock membership and original units. The local number\
+    \ is an undiluted stock amount or a sum of main and stock amounts, not a supported\
+    \ main-medium concentration. Stock water input and main receiving volume remain\
+    \ distinct.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Modified Wolin mineral solution: CuSO4\
+    \ x 5 H2O\",\n        \"exact_source_quote\": \"CuSO4 x 5 H2O 0.01 g\",\n    \
+    \    \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q22\",\n    \"component_or_context\": \"Modified\
+    \ Wolin mineral solution: AlK(SO4)2 x 12 H2O\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[19].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral solution\",\n      \"batch_amount\"\
+    : \"0.02\",\n      \"source_unit\": \"g\",\n      \"stock_water_input_ml\": 1000,\n\
+    \      \"main_stock_dose_ml\": 10,\n      \"final_medium_rate\": null\n    },\n\
+    \    \"rationale\": \"Restore stock membership and original units. The local number\
+    \ is an undiluted stock amount or a sum of main and stock amounts, not a supported\
+    \ main-medium concentration. Stock water input and main receiving volume remain\
+    \ distinct.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Modified Wolin mineral solution: AlK(SO4)2\
+    \ x 12 H2O\",\n        \"exact_source_quote\": \"AlK(SO4)2 x 12 H2O 0.02 g\",\n\
+    \        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q23\",\n    \"component_or_context\": \"Modified\
+    \ Wolin mineral solution: H3BO3\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[20].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral solution\",\n      \"batch_amount\"\
+    : \"0.01\",\n      \"source_unit\": \"g\",\n      \"stock_water_input_ml\": 1000,\n\
+    \      \"main_stock_dose_ml\": 10,\n      \"final_medium_rate\": null\n    },\n\
+    \    \"rationale\": \"Restore stock membership and original units. The local number\
+    \ is an undiluted stock amount or a sum of main and stock amounts, not a supported\
+    \ main-medium concentration. Stock water input and main receiving volume remain\
+    \ distinct.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Modified Wolin mineral solution: H3BO3\"\
+    ,\n        \"exact_source_quote\": \"H3BO3 0.01 g\",\n        \"snapshot_sha256\"\
+    : \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\",\n    \
+    \    \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q24\",\n    \"component_or_context\": \"Modified\
+    \ Wolin mineral solution: Na2MoO4 x 2 H2O\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[21].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral solution\",\n      \"batch_amount\"\
+    : \"0.01\",\n      \"source_unit\": \"g\",\n      \"stock_water_input_ml\": 1000,\n\
+    \      \"main_stock_dose_ml\": 10,\n      \"final_medium_rate\": null\n    },\n\
+    \    \"rationale\": \"Restore stock membership and original units. The local number\
+    \ is an undiluted stock amount or a sum of main and stock amounts, not a supported\
+    \ main-medium concentration. Stock water input and main receiving volume remain\
+    \ distinct.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Modified Wolin mineral solution: Na2MoO4\
+    \ x 2 H2O\",\n        \"exact_source_quote\": \"Na2MoO4 x 2 H2O 0.01 g\",\n  \
+    \      \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q25\",\n    \"component_or_context\": \"Modified\
+    \ Wolin mineral solution: NiCl2 x 6 H2O\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[22].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral solution\",\n      \"batch_amount\"\
+    : \"0.03\",\n      \"source_unit\": \"g\",\n      \"stock_water_input_ml\": 1000,\n\
+    \      \"main_stock_dose_ml\": 10,\n      \"final_medium_rate\": null\n    },\n\
+    \    \"rationale\": \"Restore stock membership and original units. The local number\
+    \ is an undiluted stock amount or a sum of main and stock amounts, not a supported\
+    \ main-medium concentration. Stock water input and main receiving volume remain\
+    \ distinct.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Modified Wolin mineral solution: NiCl2\
+    \ x 6 H2O\",\n        \"exact_source_quote\": \"NiCl2 x 6 H2O 0.03 g\",\n    \
+    \    \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q26\",\n    \"component_or_context\": \"Modified\
+    \ Wolin mineral solution: Na2SeO3 x 5 H2O\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0003\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0003\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[23].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.0003\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral solution\",\n      \"batch_amount\"\
+    : \"0.30\",\n      \"source_unit\": \"mg\",\n      \"stock_water_input_ml\": 1000,\n\
+    \      \"main_stock_dose_ml\": 10,\n      \"final_medium_rate\": null\n    },\n\
+    \    \"rationale\": \"Restore stock membership and original units. The local number\
+    \ is an undiluted stock amount or a sum of main and stock amounts, not a supported\
+    \ main-medium concentration. Stock water input and main receiving volume remain\
+    \ distinct.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Modified Wolin mineral solution: Na2SeO3\
+    \ x 5 H2O\",\n        \"exact_source_quote\": \"Na2SeO3 x 5 H2O 0.30 mg\",\n \
+    \       \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q27\",\n    \"component_or_context\": \"Modified\
+    \ Wolin mineral solution: Na2WO4 x 2 H2O\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0004\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0004\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[24].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.0004\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral solution\",\n      \"batch_amount\"\
+    : \"0.40\",\n      \"source_unit\": \"mg\",\n      \"stock_water_input_ml\": 1000,\n\
+    \      \"main_stock_dose_ml\": 10,\n      \"final_medium_rate\": null\n    },\n\
+    \    \"rationale\": \"Restore stock membership and original units. The local number\
+    \ is an undiluted stock amount or a sum of main and stock amounts, not a supported\
+    \ main-medium concentration. Stock water input and main receiving volume remain\
+    \ distinct.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Modified Wolin mineral solution: Na2WO4\
+    \ x 2 H2O\",\n        \"exact_source_quote\": \"Na2WO4 x 2 H2O 0.40 mg\",\n  \
+    \      \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q28\",\n    \"component_or_context\": \"Wolin\
+    \ vitamin solution (10x): Biotin\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[25].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Wolin vitamin solution (10x)\",\n      \"batch_amount\"\
+    : \"20.00\",\n      \"source_unit\": \"mg\",\n      \"stock_water_input_ml\":\
+    \ 1000,\n      \"main_stock_dose_ml\": 1,\n      \"final_medium_rate\": null\n\
+    \    },\n    \"rationale\": \"Restore stock membership and original units. The\
+    \ local number is an undiluted stock amount or a sum of main and stock amounts,\
+    \ not a supported main-medium concentration. Stock water input and main receiving\
+    \ volume remain distinct.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Wolin vitamin solution (10x): Biotin\"\
+    ,\n        \"exact_source_quote\": \"Biotin 20.00 mg\",\n        \"snapshot_sha256\"\
+    : \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\",\n    \
+    \    \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q29\",\n    \"component_or_context\": \"Wolin\
+    \ vitamin solution (10x): Folic acid\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[26].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Wolin vitamin solution (10x)\",\n      \"batch_amount\"\
+    : \"20.00\",\n      \"source_unit\": \"mg\",\n      \"stock_water_input_ml\":\
+    \ 1000,\n      \"main_stock_dose_ml\": 1,\n      \"final_medium_rate\": null\n\
+    \    },\n    \"rationale\": \"Restore stock membership and original units. The\
+    \ local number is an undiluted stock amount or a sum of main and stock amounts,\
+    \ not a supported main-medium concentration. Stock water input and main receiving\
+    \ volume remain distinct.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Wolin vitamin solution (10x): Folic\
+    \ acid\",\n        \"exact_source_quote\": \"Folic acid 20.00 mg\",\n        \"\
+    snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q30\",\n    \"component_or_context\": \"Wolin\
+    \ vitamin solution (10x): Pyridoxine hydrochloride\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Wolin vitamin solution (10x)\",\n      \"batch_amount\"\
+    : \"100.00\",\n      \"source_unit\": \"mg\",\n      \"stock_water_input_ml\"\
+    : 1000,\n      \"main_stock_dose_ml\": 1,\n      \"final_medium_rate\": null\n\
+    \    },\n    \"rationale\": \"Restore stock membership and original units. The\
+    \ local number is an undiluted stock amount or a sum of main and stock amounts,\
+    \ not a supported main-medium concentration. Stock water input and main receiving\
+    \ volume remain distinct.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Wolin vitamin solution (10x): Pyridoxine\
+    \ hydrochloride\",\n        \"exact_source_quote\": \"Pyridoxine hydrochloride\
+    \ 100.00 mg\",\n        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q31\",\n    \"component_or_context\": \"Wolin\
+    \ vitamin solution (10x): Thiamine HCl\",\n    \"decision\": \"correct\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[28].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Wolin vitamin solution (10x)\",\n      \"batch_amount\"\
+    : \"50.00\",\n      \"source_unit\": \"mg\",\n      \"stock_water_input_ml\":\
+    \ 1000,\n      \"main_stock_dose_ml\": 1,\n      \"final_medium_rate\": null\n\
+    \    },\n    \"rationale\": \"Restore stock membership and original units. The\
+    \ local number is an undiluted stock amount or a sum of main and stock amounts,\
+    \ not a supported main-medium concentration. Stock water input and main receiving\
+    \ volume remain distinct.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Wolin vitamin solution (10x): Thiamine\
+    \ HCl\",\n        \"exact_source_quote\": \"Thiamine HCl 50.00 mg\",\n       \
+    \ \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q32\",\n    \"component_or_context\": \"Wolin\
+    \ vitamin solution (10x): Riboflavin\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[29].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Wolin vitamin solution (10x)\",\n      \"batch_amount\"\
+    : \"50.00\",\n      \"source_unit\": \"mg\",\n      \"stock_water_input_ml\":\
+    \ 1000,\n      \"main_stock_dose_ml\": 1,\n      \"final_medium_rate\": null\n\
+    \    },\n    \"rationale\": \"Restore stock membership and original units. The\
+    \ local number is an undiluted stock amount or a sum of main and stock amounts,\
+    \ not a supported main-medium concentration. Stock water input and main receiving\
+    \ volume remain distinct.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Wolin vitamin solution (10x): Riboflavin\"\
+    ,\n        \"exact_source_quote\": \"Riboflavin 50.00 mg\",\n        \"snapshot_sha256\"\
+    : \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\",\n    \
+    \    \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q33\",\n    \"component_or_context\": \"Wolin\
+    \ vitamin solution (10x): Nicotinic acid\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[30].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Wolin vitamin solution (10x)\",\n      \"batch_amount\"\
+    : \"50.00\",\n      \"source_unit\": \"mg\",\n      \"stock_water_input_ml\":\
+    \ 1000,\n      \"main_stock_dose_ml\": 1,\n      \"final_medium_rate\": null\n\
+    \    },\n    \"rationale\": \"Restore stock membership and original units. The\
+    \ local number is an undiluted stock amount or a sum of main and stock amounts,\
+    \ not a supported main-medium concentration. Stock water input and main receiving\
+    \ volume remain distinct.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Wolin vitamin solution (10x): Nicotinic\
+    \ acid\",\n        \"exact_source_quote\": \"Nicotinic acid 50.00 mg\",\n    \
+    \    \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q34\",\n    \"component_or_context\": \"Wolin\
+    \ vitamin solution (10x): Calcium D-(+)-pantothenate\",\n    \"decision\": \"\
+    correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[31].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[31].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[31].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Wolin vitamin solution (10x)\",\n      \"batch_amount\"\
+    : \"50.00\",\n      \"source_unit\": \"mg\",\n      \"stock_water_input_ml\":\
+    \ 1000,\n      \"main_stock_dose_ml\": 1,\n      \"final_medium_rate\": null\n\
+    \    },\n    \"rationale\": \"Restore stock membership and original units. The\
+    \ local number is an undiluted stock amount or a sum of main and stock amounts,\
+    \ not a supported main-medium concentration. Stock water input and main receiving\
+    \ volume remain distinct.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Wolin vitamin solution (10x): Calcium\
+    \ D-(+)-pantothenate\",\n        \"exact_source_quote\": \"Calcium D-(+)-pantothenate\
+    \ 50.00 mg\",\n        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q35\",\n    \"component_or_context\": \"Wolin\
+    \ vitamin solution (10x): Vitamin B12\",\n    \"decision\": \"correct\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[32].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[32].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[32].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Wolin vitamin solution (10x)\",\n      \"batch_amount\"\
+    : \"1.00\",\n      \"source_unit\": \"mg\",\n      \"stock_water_input_ml\": 1000,\n\
+    \      \"main_stock_dose_ml\": 1,\n      \"final_medium_rate\": null\n    },\n\
+    \    \"rationale\": \"Restore stock membership and original units. The local number\
+    \ is an undiluted stock amount or a sum of main and stock amounts, not a supported\
+    \ main-medium concentration. Stock water input and main receiving volume remain\
+    \ distinct.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Wolin vitamin solution (10x): Vitamin\
+    \ B12\",\n        \"exact_source_quote\": \"Vitamin B12 1.00 mg\",\n        \"\
+    snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q36\",\n    \"component_or_context\": \"Wolin\
+    \ vitamin solution (10x): p-Aminobenzoic acid\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[33].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[33].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[33].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Wolin vitamin solution (10x)\",\n      \"batch_amount\"\
+    : \"50.00\",\n      \"source_unit\": \"mg\",\n      \"stock_water_input_ml\":\
+    \ 1000,\n      \"main_stock_dose_ml\": 1,\n      \"final_medium_rate\": null\n\
+    \    },\n    \"rationale\": \"Restore stock membership and original units. The\
+    \ local number is an undiluted stock amount or a sum of main and stock amounts,\
+    \ not a supported main-medium concentration. Stock water input and main receiving\
+    \ volume remain distinct.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Wolin vitamin solution (10x): p-Aminobenzoic\
+    \ acid\",\n        \"exact_source_quote\": \"p-Aminobenzoic acid 50.00 mg\",\n\
+    \        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q37\",\n    \"component_or_context\": \"Wolin\
+    \ vitamin solution (10x): (DL)-alpha-Lipoic acid\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[34].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[34].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[34].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Wolin vitamin solution (10x)\",\n      \"batch_amount\"\
+    : \"50.00\",\n      \"source_unit\": \"mg\",\n      \"stock_water_input_ml\":\
+    \ 1000,\n      \"main_stock_dose_ml\": 1,\n      \"final_medium_rate\": null\n\
+    \    },\n    \"rationale\": \"Restore stock membership and original units. The\
+    \ local number is an undiluted stock amount or a sum of main and stock amounts,\
+    \ not a supported main-medium concentration. Stock water input and main receiving\
+    \ volume remain distinct.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2, Wolin vitamin solution (10x): (DL)-alpha-Lipoic\
+    \ acid\",\n        \"exact_source_quote\": \"(DL)-alpha-Lipoic acid 50.00 mg\"\
+    ,\n        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q38\",\n    \"component_or_context\": \"Main\
+    \ water input\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[35].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[35].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[35].concentration\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"main_water_input_ml\": 1000,\n      \"final_medium_volume_ml\": null\n\
+    \    },\n    \"rationale\": \"Recover this absent source quantity with its exact\
+    \ stock or main scope. The missing water row locator is a proposed new ingredient\
+    \ position; no existing list value is mislabeled as null. No measured final volume\
+    \ is inferred.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, main table\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q39\",\n    \"component_or_context\": \"Mineral\
+    \ stock receiving dose\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral\",\n      \"dose_ml\": 10\n\
+    \    },\n    \"rationale\": \"Recover this absent source quantity with its exact\
+    \ stock or main scope. The missing water row locator is a proposed new ingredient\
+    \ position; no existing list value is mislabeled as null. No measured final volume\
+    \ is inferred.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, main table\",\n        \"exact_source_quote\"\
+    : \"Modified Wolin's mineral solution 10.00 ml\",\n        \"snapshot_sha256\"\
+    : \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\",\n    \
+    \    \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q40\",\n    \"component_or_context\": \"10x\
+    \ vitamin receiving dose\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Wolin vitamin 10x\",\n      \"dose_ml\": 1\n  \
+    \  },\n    \"rationale\": \"Recover this absent source quantity with its exact\
+    \ stock or main scope. The missing water row locator is a proposed new ingredient\
+    \ position; no existing list value is mislabeled as null. No measured final volume\
+    \ is inferred.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, main table\",\n        \"exact_source_quote\"\
+    : \"Wolin's vitamin solution (10x) 1.00 ml\",\n        \"snapshot_sha256\": \"\
+    0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\",\n        \"\
+    parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q41\",\n    \"component_or_context\": \"Mineral\
+    \ stock water\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Modified Wolin mineral\",\n      \"water_input_ml\"\
+    : 1000\n    },\n    \"rationale\": \"Recover this absent source quantity with\
+    \ its exact stock or main scope. The missing water row locator is a proposed new\
+    \ ingredient position; no existing list value is mislabeled as null. No measured\
+    \ final volume is inferred.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Page 2, mineral stock final row\",\n        \"\
+    exact_source_quote\": \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\"\
+    : \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\",\n    \
+    \    \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q42\",\n    \"component_or_context\": \"Vitamin\
+    \ stock water\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Wolin vitamin 10x\",\n      \"water_input_ml\"\
+    : 1000\n    },\n    \"rationale\": \"Recover this absent source quantity with\
+    \ its exact stock or main scope. The missing water row locator is a proposed new\
+    \ ingredient position; no existing list value is mislabeled as null. No measured\
+    \ final volume is inferred.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Page 2, vitamin stock final row\",\n        \"\
+    exact_source_quote\": \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\"\
+    : \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\",\n    \
+    \    \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q43\",\n    \"component_or_context\": \"Initial\
+    \ main pH\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust\
+    \ pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30\
+    \ - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a\
+    \ sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture.\
+    \ Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 7.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust\
+    \ pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30\
+    \ - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a\
+    \ sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture.\
+    \ Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 7.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"pH_range\": [\n        6.8,\n        7\n      ],\n      \"stage\"\
+    : \"Initial main mixture\"\n    },\n    \"rationale\": \"This source statement\
+    \ is retained in target/DSMZ prose but absent in the KOMODO layer. Add claim-level\
+    \ evidence where present and exact scoped context where absent; do not turn preparation\
+    \ into growth evidence.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, main preparation paragraph\",\n     \
+    \   \"exact_source_quote\": \"adjust pH to 6.8 - 7.0\",\n        \"snapshot_sha256\"\
+    : \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\",\n    \
+    \    \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q44\",\n    \"component_or_context\": \"Initial\
+    \ gas and sparging duration\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust\
+    \ pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30\
+    \ - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a\
+    \ sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture.\
+    \ Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 7.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust\
+    \ pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30\
+    \ - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a\
+    \ sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture.\
+    \ Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 7.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"gas_percent\": {\n        \"N2\": 80,\n        \"CO2\": 20\n    \
+    \  },\n      \"percent_basis\": null,\n      \"duration_minutes\": [\n       \
+    \ 30,\n        45\n      ]\n    },\n    \"rationale\": \"This source statement\
+    \ is retained in target/DSMZ prose but absent in the KOMODO layer. Add claim-level\
+    \ evidence where present and exact scoped context where absent; do not turn preparation\
+    \ into growth evidence.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, main preparation paragraph\",\n     \
+    \   \"exact_source_quote\": \"sparge medium with 80% N2 and 20% CO2 gas mixture\
+    \ for 30 - 45 min\",\n        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q45\",\n    \"component_or_context\": \"Carbonate\
+    \ stock atmosphere\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust\
+    \ pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30\
+    \ - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a\
+    \ sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture.\
+    \ Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 7.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust\
+    \ pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30\
+    \ - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a\
+    \ sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture.\
+    \ Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 7.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"carbonate\",\n      \"gas_percent\": {\n      \
+    \  \"N2\": 80,\n        \"CO2\": 20\n      },\n      \"percent_basis\": null\n\
+    \    },\n    \"rationale\": \"This source statement is retained in target/DSMZ\
+    \ prose but absent in the KOMODO layer. Add claim-level evidence where present\
+    \ and exact scoped context where absent; do not turn preparation into growth evidence.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1278\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, main preparation paragraph\",\n     \
+    \   \"exact_source_quote\": \"under an 80% N2 and 20% CO2 gas mixture.\",\n  \
+    \      \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q46\",\n    \"component_or_context\": \"Vitamin\
+    \ and DTT stock atmosphere\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust\
+    \ pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30\
+    \ - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a\
+    \ sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture.\
+    \ Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 7.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust\
+    \ pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30\
+    \ - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a\
+    \ sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture.\
+    \ Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 7.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stocks\": [\n        \"vitamins\",\n        \"dithiothreitol\"\
+    \n      ],\n      \"N2_percent\": 100,\n      \"method\": \"filtration\"\n   \
+    \ },\n    \"rationale\": \"This source statement is retained in target/DSMZ prose\
+    \ but absent in the KOMODO layer. Add claim-level evidence where present and exact\
+    \ scoped context where absent; do not turn preparation into growth evidence.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1278\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, main preparation paragraph\",\n     \
+    \   \"exact_source_quote\": \"under 100% N2 gas and sterilized by filtration.\"\
+    ,\n        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q47\",\n    \"component_or_context\": \"Conditional\
+    \ complete-medium pH\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust\
+    \ pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30\
+    \ - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a\
+    \ sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture.\
+    \ Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 7.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, vitamins, and dithiothreitol), adjust\
+    \ pH to 6.8 - 7.0, and sparge medium with 80% N2 and 20% CO2 gas mixture for 30\
+    \ - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate from a\
+    \ sterile anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture.\
+    \ Add vitamins, and dithiothreitol from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 7.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"pH\": 7,\n      \"conditional\": true\n    },\n    \"rationale\"\
+    : \"This source statement is retained in target/DSMZ prose but absent in the KOMODO\
+    \ layer. Add claim-level evidence where present and exact scoped context where\
+    \ absent; do not turn preparation into growth evidence.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1278\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\",\n       \
+    \ \"source_locator\": \"Page 1, main preparation paragraph\",\n        \"exact_source_quote\"\
+    : \"pH of the complete medium to 7.0, if necessary.\",\n        \"snapshot_sha256\"\
+    : \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\",\n    \
+    \    \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q48\",\n    \"component_or_context\": \"Typed\
+    \ main pH scope\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0,\n        \"\
+    decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0,\n        \"\
+    decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0,\n        \"\
+    decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"pH\": 7,\n      \"scope\": \"Conditional adjustment of complete medium\"\
+    \n    },\n    \"rationale\": \"The value matches the conditional source context.\
+    \ Preserve the condition rather than treating pH 7 as an experimentally demonstrated\
+    \ optimum.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, final main preparation sentence\",\n\
+    \        \"exact_source_quote\": \"pH of the complete medium to 7.0, if necessary.\"\
+    ,\n        \"snapshot_sha256\": \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\"\
+    ,\n        \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q49\",\n    \"component_or_context\": \"Mineral\
+    \ initial chelator adjustment\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust final to pH 7.0 with KOH.\",\n        \"decision\": \"correct\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust final to pH 7.0 with KOH.\",\n        \"decision\": \"correct\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"pH\": 6.5,\n      \"stage\": \"Dissolve nitrilotriacetic acid before\
+    \ adding minerals\"\n    },\n    \"rationale\": \"Preserve the existing text but\
+    \ restore its mineral-stock scope; it currently appears as a root preparation\
+    \ step. The KOMODO owner lacks it entirely.\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz1278\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Page 2, mineral stock preparation\",\n      \
+    \  \"exact_source_quote\": \"adjust pH to 6.5 with KOH\",\n        \"snapshot_sha256\"\
+    : \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\",\n    \
+    \    \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q50\",\n    \"component_or_context\": \"Mineral\
+    \ final pH\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust final to pH 7.0 with KOH.\",\n        \"decision\": \"correct\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust final to pH 7.0 with KOH.\",\n        \"decision\": \"correct\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"pH\": 7,\n      \"stage\": \"After adding minerals\"\n    },\n  \
+    \  \"rationale\": \"Preserve the existing text but restore its mineral-stock scope;\
+    \ it currently appears as a root preparation step. The KOMODO owner lacks it entirely.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1278\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\"\
+    ,\n        \"source_locator\": \"Page 2, mineral stock preparation\",\n      \
+    \  \"exact_source_quote\": \"final to pH 7.0 with KOH.\",\n        \"snapshot_sha256\"\
+    : \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\",\n    \
+    \    \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q51\",\n    \"component_or_context\": \"Mineral\
+    \ stock KOH amount\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"not_quantified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"not_quantified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"not_quantified\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"reagent\": \"KOH\",\n      \"fixed_amount\": null\n    },\n    \"\
+    rationale\": \"The source specifies titration targets, not a fixed KOH dose. Preserve\
+    \ the ordered stock stages without inventing a quantity.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1278\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1278.pdf\",\n       \
+    \ \"source_locator\": \"Page 2, mineral preparation\",\n        \"exact_source_quote\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust\\nfinal to pH 7.0 with KOH.\",\n        \"snapshot_sha256\"\
+    : \"0c53f3d3414ead18b80998193bf6a805959d75477efe4d40526fa11b6aa5bf88\",\n    \
+    \    \"parsed_text_sha256\": \"dae6ec538f0254065f6b7abae434745e45692a5b2e2817b3be12c551a398299f\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.604326Z\"\n      }\n    ]\n\
+    \  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '34 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 34/35
+    primary and 32/35 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi131361
+  - chebi15940
+  - chebi15956
+  - chebi16494
+  - chebi17015
+  - chebi176843
+  - chebi18320
+  - chebi26710
+  - chebi27470
+  - chebi29377
+  - chebi30753
+  - chebi30961
+  - chebi31206
+  - chebi31345
+  - chebi31440
+  - chebi31795
+  - chebi32149
+  - chebi32312
+  - chebi32588
+  - chebi33118
+  - chebi34887
+  - chebi44557
+  - chebi49105
+  - chebi63036
+  - chebi63939
+  - chebi75213
+  - chebi75228
+  - chebi75836
+  - chebi86158
+  - chebi86345
+  - chebi86364
+  - chebi86465
+  - chebi8806
+  - chebi91244
+  details: 'Instance coverage on a 0–100 percent scale, denominator 35: primary 97.14%;
+    secondary 91.43%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 27 timestamp instances inspected; 2 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: identity
+  area: identity
+  topic: Exact accession, source identity and generated ownership
+  outcome: supported
+  summary: DSMZ 1278 and the exact KOMODO 1278 catalog row resolve the two maintained
+    identities. Catalogue mapping and a shared ingredient signature do not establish
+    historical formulation equivalence. The generated and DSMZ parent references resolve
+    to CultureMech:004031.
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - bound-owner-context
+- assessment_id: relationships
+  area: graph
+  topic: Maintained reciprocal relationship integrity
+  outcome: concern
+  summary: KOMODO owner variant_children[0].path names a bacterial path absent from
+    the ignored-inclusive inventory; the exact matching ID and basename are under
+    archaea. The actual captured owner is present. Correct the maintained path without
+    inventing another record or conflating categorization with phenotype.
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - relationships
+  - owner-1
+- assessment_id: forms
+  area: grounding
+  topic: Source salts, hydrates and stereochemistry
+  outcome: concern
+  summary: CHEBI:8806 has neutral resazurin formula, unlike source sodium resazurin;
+    CHEBI:34887 lacks the specified nickel hexahydrate. Source D-calcium pantothenate
+    agrees with the D-specific structure of CHEBI:31345; generic sodium lactate and
+    stereo-unspecified lipoic acid do not establish a D/L contradiction. Other inspected
+    hydrate labels/formulae and current CHEBI secondary rows were assessed separately
+    from source amount evidence.
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - primary
+  - chebi8806
+  - chebi34887
+  - chebi31345
+  - chebi75228
+  - chebi16494
+- assessment_id: preparation
+  area: completeness
+  topic: Retained preparation and lost stock boundaries
+  outcome: concern
+  summary: Target and DSMZ owner retain the main anoxic preparation and mineral pH
+    prose; the KOMODO owner lacks both. Mineral preparation is incorrectly left at
+    the root while its stock is flattened. Initial and conditional complete-medium
+    pH remain distinct. The primary supplies autoclaving without a numerical cycle,
+    so no temperature/time is added.
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - primary
+  - quantity-inventory
+  - record
+  - owner-0
+  - owner-1
+- assessment_id: classification
+  area: scope
+  topic: Composition, physical state and source annotations
+  outcome: supported
+  summary: 'Yeast extract supports a complex, not fully chemically defined formulation;
+    LIQUID is consistent with the source. Catalogue Aerobic: Yes and bacterial/archaea
+    source filing are provenance metadata, not independently supported growth or taxonomy
+    assertions. No organisms, functional roles or optimum conditions are inferred
+    from title or application.'
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - primary
+  - catalog
+  - record
+  - owner-1
+- assessment_id: current-writers
+  area: provenance
+  topic: Current writers and follow-up ownership
+  outcome: concern
+  summary: Current MediaDive code selects the primary solution and preserves stock
+    references; its fallback unit mapping still requires explicit source basis. Current
+    cleanup avoids summing conflicting duplicates, so persisted sums do not prove
+    that current code created them. Fix both maintained owners and stock boundaries
+    before separately authorized regeneration; preserve old history and append clarification
+    only.
+  target_ids:
+  - CultureMech:000741
+  evidence_ids:
+  - record
+  - current-code-0
+  - current-code-1
+  - current-code-2
+findings:
+- finding_id: f1
+  issue_key: culturemech.000741.flattened-stock-amounts
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Undiluted stocks and main amounts are combined
+  description: All layers flatten mineral and 10x vitamin constituents into main ingredients.
+    NaCl and calcium explicitly sum main and undiluted stock values. The 10 mL and
+    1 mL stock doses and source waters are absent; other main g/L values use an unverified
+    denominator.
+  target_ids:
+  - CultureMech:000741
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - primary
+  - mineral-parent
+  - vitamin-parent
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.000741.supplied-forms
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Two asserted chemical forms contradict the supplied ingredients
+  description: Neutral resazurin and anhydrous nickel dichloride identifiers do not
+    represent the explicitly supplied sodium resazurin and nickel dichloride hexahydrate.
+    Valid IDs and canonical labels do not resolve those mismatches.
+  target_ids:
+  - CultureMech:000741
+  field_paths:
+  - ingredients[9].term
+  - ingredients[22].term
+  - ingredients[22].mediaingredientmech_chebi_term
+  evidence_ids:
+  - primary
+  - chebi8806
+  - chebi34887
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.000741.stock-preparation-scope
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Mineral preparation is detached from its stock
+  description: The target and DSMZ owner place mineral pH instructions at the recipe
+    root without a stock node; the KOMODO owner omits preparation entirely and retains
+    a catalog aerobic annotation.
+  target_ids:
+  - CultureMech:000741
+  field_paths:
+  - preparation_steps
+  - solutions
+  evidence_ids:
+  - primary
+  - quantity-inventory
+  - owner-0
+  - owner-1
+  - catalog
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.000741.reciprocal-owner-path
+  category: graph
+  severity: major
+  status: open
+  certainty: confirmed
+  title: KOMODO owner points to a nonexistent bacterial child path
+  description: 'The generated target parent path resolves. The defect is specifically
+    KOMODO owner variant_children[0].path: its bacterial path is absent from the ignored-inclusive
+    inventory, while CultureMech:000741 resolves under archaea.'
+  target_ids:
+  - CultureMech:000741
+  field_paths:
+  - parent_media
+  evidence_ids:
+  - relationships
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the complete source-scoped stocks and receiving doses, separate
+    duplicated main and stock ingredients, preserve water inputs and qualify unsupported
+    main normalization. Add exact claim-level evidence without assuming final volume.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000741
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Resolve exact salt and hydrate identities in the maintained owners
+    before refreshing corresponding secondary links. Preserve unambiguous source forms
+    and do not invent replacement CURIEs.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000741
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Restore mineral preparation under the resolved stock, retain main-stage
+    and conditional pH context, and add scoped preparation evidence to the KOMODO
+    owner. Label aerobic metadata as catalog provenance rather than a conflicting
+    cultivation assertion.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000741
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Correct the KOMODO normalized owner reciprocal child path to the exact
+    captured archaea record, retaining stable IDs. Verify both directions and generated
+    relationship propagation; do not rewrite historical events.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:000741
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_sulfaticallidus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1278_HYL_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Exact optional source attempt mediadive1278api returned HTTP 503. Full current primary
+  comparison is available; this failure neither authenticates historical normalization
+  nor makes current primary identity unavailable.
+- Exact optional source attempt mediadive1278api_retry returned HTTP 503. Full current
+  primary comparison is available; this failure neither authenticates historical normalization
+  nor makes current primary identity unavailable.
+- Exact optional source attempt komodo1278detail returned HTTP 403. Full current primary
+  comparison is available; this failure neither authenticates historical normalization
+  nor makes current primary identity unavailable.
+- The listed main liquids total 1011.5 mL before unquantified additional stock volumes;
+  this is not a measured final volume. No final-medium rates are derived from it.
+- No historical API response is authenticated by the current primary or canonical
+  checks. There are no attached local amount quotations requiring a fabricated raw-response
+  recovery claim.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-031
+- generated-medium
+```
