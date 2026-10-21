@@ -1,0 +1,1058 @@
+# Source and formulation review: 2_glucose_yeast_extract_peptone_agar (CultureMech:010522)
+
+- Review: 20261021T074948Z-culturemech-010522-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T07:45:19Z
+- Finished UTC: 2026-10-21T07:49:48Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+MediaDive J37 resolves to JCM 37 and all eight solute concentrations and supplied forms are supported, including iron sulfate heptahydrate 0.05 g/L. Both local layers omit source water and collection sterilization context. The generated target also omits eight verified owner excerpts, their reference metadata and later history; its preserved unadjusted pH statement is misclassified as a mixing action.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 84; batch 009 item 4 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding eight task batches contain 80 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 82 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:010522 | data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml | generated | 2_glucose_yeast_extract_peptone_agar |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:010522 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:010522 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-009/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch009/084/strict.tsv |
+| validate-terms | passed | True | CultureMech:010522 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:010522 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:010522 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:010522.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary ingredient identifiers
+
+grounding: supported. Targets: CultureMech:010522.
+
+6 primary CHEBI identities resolve with matching labels; 6 of 6 current secondary keys have live pinned-index rows. Unresolved keys: [].
+
+8 direct ingredient instances; CHEBI-primary instance linkage 6/8 (75.00%), verified secondary coverage 6/8 (75.00%). Percentages use a 0–100 linkage scale, not a scientific correctness score. Complex mixtures without asserted IDs remain ungrounded rather than receiving invented pure-molecule identities.
+
+### JCM GRMD 37 via MediaDive J37
+
+identity: supported. Targets: CultureMech:010522.
+
+Source accession, title, primary URL, stable ID and merge owner agree. JCM is the original recipe collection; MediaDive is the dataset provider. A similarly named record is not assessed or merged here.
+
+### All eight direct solute concentrations and supplied forms
+
+quantity: supported. Targets: CultureMech:010522.
+
+Each value agrees with explicit provider g_l and the corresponding source batch amount. In particular 50 mg FeSO4 heptahydrate is provider-declared 0.05 g/L. This is concentration evidence within the provider nominal-volume basis, not a measured final volume or downstream dilution. No stock composition or nested addition is present.
+
+[{"field": "ingredients[0].concentration", "material": "Peptone", "record": {"value": "5", "unit": "G_PER_L"}, "source_amount": 5, "source_unit": "g", "provider_g_l": 5, "provider_volume_ml": 1000, "decision": "verified provider concentration"}, {"field": "ingredients[1].concentration", "material": "Yeast extract", "record": {"value": "1", "unit": "G_PER_L"}, "source_amount": 1, "source_unit": "g", "provider_g_l": 1, "provider_volume_ml": 1000, "decision": "verified provider concentration"}, {"field": "ingredients[2].concentration", "material": "Glucose", "record": {"value": "20", "unit": "G_PER_L"}, "source_amount": 20, "source_unit": "g", "provider_g_l": 20, "provider_volume_ml": 1000, "decision": "verified provider concentration"}, {"field": "ingredients[3].concentration", "material": "K2HPO4", "record": {"value": "0.5", "unit": "G_PER_L"}, "source_amount": 0.5, "source_unit": "g", "provider_g_l": 0.5, "provider_volume_ml": 1000, "decision": "verified provider concentration"}, {"field": "ingredients[4].concentration", "material": "MgSO4 x 7 H2O", "record": {"value": "0.5", "unit": "G_PER_L"}, "source_amount": 0.5, "source_unit": "g", "provider_g_l": 0.5, "provider_volume_ml": 1000, "decision": "verified provider concentration"}, {"field": "ingredients[5].concentration", "material": "FeSO4 x 7 H2O", "record": {"value": "0.05", "unit": "G_PER_L"}, "source_amount": 50, "source_unit": "mg", "provider_g_l": 0.05, "provider_volume_ml": 1000, "decision": "verified provider concentration"}, {"field": "ingredients[6].concentration", "material": "CaCO3", "record": {"value": "1", "unit": "G_PER_L"}, "source_amount": 1, "source_unit": "g", "provider_g_l": 1, "provider_volume_ml": 1000, "decision": "verified provider concentration"}, {"field": "ingredients[7].concentration", "material": "Agar", "record": {"value": "15", "unit": "G_PER_L"}, "source_amount": 15, "source_unit": "g", "provider_g_l": 15, "provider_volume_ml": 1000, "decision": "verified provider concentration"}]
+
+### Chemical identity and linkage
+
+grounding: supported. Targets: CultureMech:010522.
+
+Six primary CHEBI IDs and six secondary keys resolve with matching supplied forms and canonical labels; each linkage measure is 6/8 direct ingredient instances. Peptone and yeast remain undefined mixtures. Linkage is not a correctness score and provider agar molarity is not adopted.
+
+### Source-only solvent input
+
+completeness: concern. Targets: CultureMech:010522.
+
+Both full local files omit JCM water 1 L / provider water 1000 ml. Preserve this literal preparation input; it is not independently proof of final volume and need not become a forced water mass edge.
+
+### Unadjusted pH and source sterilization
+
+completeness: concern. Targets: CultureMech:010522.
+
+The unadjusted pH 6.8 text is retained, but MIX mislabels a resulting condition as an operation. The page-wide JCM autoclaving default of 121 C for 15 min unless otherwise stated is absent from both layers. The source specifies no pH adjustment reagent or incubation condition.
+
+### Eight owner excerpts and later provenance
+
+evidence: concern. Targets: CultureMech:010522.
+
+All eight owner snippets are literal current API row objects and carry its matching SHA256; their concentration explanations preserve provider scope. The generated target omits every excerpt, the provider reference and October 7 evidence-only history despite identical quantities.
+
+### Classification, physical state and history
+
+scope: supported. Targets: CultureMech:010522.
+
+Agar 15 g supports SOLID_AGAR; peptone/yeast support COMPLEX/UNDEFINED. Fungal filing and generic microbial cultivation assert no exclusive target or experimentally supported growth. All target/owner history timestamps have timezones and supported quantities were unchanged by the owner evidence event.
+
+## Findings
+
+### f1: Source water input is absent from preparation
+
+major / open / confirmed; issue key: CM010522-water-context-missing.
+
+The primary 1 L water row and provider 1000 ml row are omitted from both local layers.
+
+### f2: JCM default sterilization is omitted
+
+major / open / confirmed; issue key: CM010522-sterilization-missing.
+
+Neither local layer records the page-wide 121 C/15 min instruction, and the source recipe provides no override.
+
+### f3: Generated record omits eight verified concentration excerpts
+
+major / open / confirmed; issue key: CM010522-stale-owner-evidence.
+
+All eight maintained excerpts, the provider reference and October 7 curation history are absent from the generated target; the exact current API supports their narrow claims.
+
+### f4: Unadjusted pH is tagged as a mixing operation
+
+minor / open / confirmed; issue key: CM010522-ph-action-semantics.
+
+The source sentence reports expected pH without an adjustment instruction. Both layers assign MIX to it.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the source solvent input in maintained preparation/batch context without claiming density or an independently measured final volume.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Add the source-scoped default with its exception wording and exact supporting text before regeneration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+After owner preparation is corrected, regenerate and verify preservation of all eight supported excerpts, reference metadata and append-only history without changing the verified amounts.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Preserve the unadjusted pH as a condition with source evidence; inspect the action classifier without inventing a mixing or titration protocol.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/fungal/2_glucose_yeast_extract_peptone_agar.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch009/084/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-009/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch009/084/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml:1:id: CultureMech:010522<br>./data/normalized_yaml/fungal/2_glucose_yeast_extract_peptone_agar.yaml:1:id: CultureMech:010522<br> |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:17234 resolves to glucose and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:2509 resolves to agar and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi3311 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3311; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:3311 resolves to calcium carbonate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; All live preferred-term rows for asserted secondary CHEBI keys; metadata captured | supports | {"CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:3311": [{"label": "CaCO3", "match_type": "preferred_term", "identifier": "CHEBI:3311", "preferred_term": "CaCO3", "ontology_id": "CHEBI:3311", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]} |
+| jcm | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=37; Heading; nine-row recipe; final sentence; page-wide preparation default | supports | Full GRMD 37 formulation, final pH statement and collection preamble inspected. Eight solute rows include 50 mg FeSO4 heptahydrate and a separate water 1 L row. The default is autoclaving at 121 C for 15 min unless otherwise stated; no recipe exception is supplied. |
+| api | https://mediadive.dsmz.de/rest/medium/J37; data.medium; solutions[0].volume, recipe and steps | supports | J37 explicitly names JCM and its GRMD 37 URL. Main solution volume is declared 1000 ml, eight explicit g_l values are present and water is separately 1000 ml. The preparation text preserves unadjusted pH 6.8. |
+| trace | Full target, owner and captured J37 response; All eight quantities, eight literal owner excerpts and every history timestamp | supports | {"amounts": [{"field": "ingredients[0].concentration", "material": "Peptone", "record": {"value": "5", "unit": "G_PER_L"}, "source_amount": 5, "source_unit": "g", "provider_g_l": 5, "provider_volume_ml": 1000, "decision": "verified provider concentration"}, {"field": "ingredients[1].concentration", "material": "Yeast extract", "record": {"value": "1", "unit": "G_PER_L"}, "source_amount": 1, "source_unit": "g", "provider_g_l": 1, "provider_volume_ml": 1000, "decision": "verified provider concentration"}, {"field": "ingredients[2].concentration", "material": "Glucose", "record": {"value": "20", "unit": "G_PER_L"}, "source_amount": 20, "source_unit": "g", "provider_g_l": 20, "provider_volume_ml": 1000, "decision": "verified provider concentration"}, {"field": "ingredients[3].concentration", "material": "K2HPO4", "record": {"value": "0.5", "unit": "G_PER_L"}, "source_amount": 0.5, "source_unit": "g", "provider_g_l": 0.5, "provider_volume_ml": 1000, "decision": "verified provider concentration"}, {"field": "ingredients[4].concentration", "material": "MgSO4 x 7 H2O", "record": {"value": "0.5", "unit": "G_PER_L"}, "source_amount": 0.5, "source_unit": "g", "provider_g_l": 0.5, "provider_volume_ml": 1000, "decision": "verified provider concentration"}, {"field": "ingredients[5].concentration", "material": "FeSO4 x 7 H2O", "record": {"value": "0.05", "unit": "G_PER_L"}, "source_amount": 50, "source_unit": "mg", "provider_g_l": 0.05, "provider_volume_ml": 1000, "decision": "verified provider concentration"}, {"field": "ingredients[6].concentration", "material": "CaCO3", "record": {"value": "1", "unit": "G_PER_L"}, "source_amount": 1, "source_unit": "g", "provider_g_l": 1, "provider_volume_ml": 1000, "decision": "verified provider concentration"}, {"field": "ingredients[7].concentration", "material": "Agar", "record": {"value": "15", "unit": "G_PER_L"}, "source_amount": 15, "source_unit": "g", "provider_g_l": 15, "provider_volume_ml": 1000, "decision": "verified provider concentration"}], "owner_excerpt_checks": [{"field": "ingredients[0].evidence[0]", "literal_match": true, "row_match": true, "source_hash_matches": true}, {"field": "ingredients[1].evidence[0]", "literal_match": true, "row_match": true, "source_hash_matches": true}, {"field": "ingredients[2].evidence[0]", "literal_match": true, "row_match": true, "source_hash_matches": true}, {"field": "ingredients[3].evidence[0]", "literal_match": true, "row_match": true, "source_hash_matches": true}, {"field": "ingredients[4].evidence[0]", "literal_match": true, "row_match": true, "source_hash_matches": true}, {"field": "ingredients[5].evidence[0]", "literal_match": true, "row_match": true, "source_hash_matches": true}, {"field": "ingredients[6].evidence[0]", "literal_match": true, "row_match": true, "source_hash_matches": true}, {"field": "ingredients[7].evidence[0]", "literal_match": true, "row_match": true, "source_hash_matches": true}]} |
+| importer | src/culturemech/import/mediadive_importer.py; _parse_api_composition; _parse_preparation_steps; _classify_preparation_action | supports | The composition parser skips water as solvent context. The action classifier defaults an unclassified pH-result sentence to MIX. These functions were inspected as follow-up ownership context; no importer or regeneration was run. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- No measured final volume, organism-specific growth, mixture molarity or historical importer execution was established. Existing owner snippets were checked directly against the current matching API capture; generated-product repair and corpus-wide merge gates remain proposed follow-up.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T074948Z-culturemech-010522-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 2_glucose_yeast_extract_peptone_agar (CultureMech:010522)'
+started_at: '2026-10-21T07:45:19Z'
+finished_at: '2026-10-21T07:49:48Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: MediaDive J37 resolves to JCM 37 and all eight solute concentrations and
+  supplied forms are supported, including iron sulfate heptahydrate 0.05 g/L. Both
+  local layers omit source water and collection sterilization context. The generated
+  target also omits eight verified owner excerpts, their reference metadata and later
+  history; its preserved unadjusted pH statement is misclassified as a mixing action.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml
+    sha256: 22cd23bfc607b1f8838ceb7d91f9e528a457792ea3b5d241e82c7f8497d84ef4
+    role: target
+  - path: data/normalized_yaml/fungal/2_glucose_yeast_extract_peptone_agar.yaml
+    sha256: c4591777d73623f2df936f1691f99d8f0aa795d4ccad5d7904691c754a1694c9
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 84; batch 009 item 4 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding eight task batches contain
+    80 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 82 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:010522
+targets:
+- target_id: CultureMech:010522
+  path: data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml
+  label: 2_glucose_yeast_extract_peptone_agar
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/fungal/2_glucose_yeast_extract_peptone_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:010522
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch009/084/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-009/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch009/084/strict.tsv"
+  target_ids:
+  - CultureMech:010522
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:010522
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:010522
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:010522
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T07:49:47Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/fungal/2_glucose_yeast_extract_peptone_agar.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T07:49:47Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T07:46:34.426475Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch009/084/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T07:46:36.801305Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-009/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch009/084/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T07:46:40.067908Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T07:46:41.763090Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T07:49:47Z'
+  support: supports
+  summary: './data/merge_yaml/merged/2_glucose_yeast_extract_peptone_agar__32ac0304.yaml:1:id:
+    CultureMech:010522
+
+    ./data/normalized_yaml/fungal/2_glucose_yeast_extract_peptone_agar.yaml:1:id:
+    CultureMech:010522
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:15.193155Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:15.211005Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:15.863758Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:16.624783Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi3311
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3311
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:17.266318Z'
+  support: supports
+  summary: CHEBI:3311 resolves to calcium carbonate and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 5413cec912ec253d62ba7a3f4ce7f0a9312ba8d1cb756713003f77a6e849d4b2
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:18.402233Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-21T07:49:47Z'
+  support: supports
+  summary: '{"CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term",
+    "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:131527": [{"label":
+    "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term":
+    "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:3311":
+    [{"label": "CaCO3", "match_type": "preferred_term", "identifier": "CHEBI:3311",
+    "preferred_term": "CaCO3", "ontology_id": "CHEBI:3311", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term",
+    "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}'
+- evidence_id: jcm
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=37
+  locator: Heading; nine-row recipe; final sentence; page-wide preparation default
+  accessed_at: '2026-10-21T07:31:18.612192Z'
+  support: supports
+  summary: Full GRMD 37 formulation, final pH statement and collection preamble inspected.
+    Eight solute rows include 50 mg FeSO4 heptahydrate and a separate water 1 L row.
+    The default is autoclaving at 121 C for 15 min unless otherwise stated; no recipe
+    exception is supplied.
+  quote: Unadjusted pH will be 6.8.
+  snapshot_sha256: 3d83bb075c39f83d92b1721a8bd519068e33dd26d966bdffad42218c3146b0f7
+- evidence_id: api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J37
+  locator: data.medium; solutions[0].volume, recipe and steps
+  accessed_at: '2026-10-21T07:31:13.268886Z'
+  support: supports
+  summary: J37 explicitly names JCM and its GRMD 37 URL. Main solution volume is declared
+    1000 ml, eight explicit g_l values are present and water is separately 1000 ml.
+    The preparation text preserves unadjusted pH 6.8.
+  snapshot_sha256: 50785d6e97da712b18711e607559e3e123eb9b7f0ac493afc14551274125e4b1
+- evidence_id: trace
+  kind: validation
+  reference: Full target, owner and captured J37 response
+  locator: All eight quantities, eight literal owner excerpts and every history timestamp
+  accessed_at: '2026-10-21T07:49:47Z'
+  support: supports
+  summary: '{"amounts": [{"field": "ingredients[0].concentration", "material": "Peptone",
+    "record": {"value": "5", "unit": "G_PER_L"}, "source_amount": 5, "source_unit":
+    "g", "provider_g_l": 5, "provider_volume_ml": 1000, "decision": "verified provider
+    concentration"}, {"field": "ingredients[1].concentration", "material": "Yeast
+    extract", "record": {"value": "1", "unit": "G_PER_L"}, "source_amount": 1, "source_unit":
+    "g", "provider_g_l": 1, "provider_volume_ml": 1000, "decision": "verified provider
+    concentration"}, {"field": "ingredients[2].concentration", "material": "Glucose",
+    "record": {"value": "20", "unit": "G_PER_L"}, "source_amount": 20, "source_unit":
+    "g", "provider_g_l": 20, "provider_volume_ml": 1000, "decision": "verified provider
+    concentration"}, {"field": "ingredients[3].concentration", "material": "K2HPO4",
+    "record": {"value": "0.5", "unit": "G_PER_L"}, "source_amount": 0.5, "source_unit":
+    "g", "provider_g_l": 0.5, "provider_volume_ml": 1000, "decision": "verified provider
+    concentration"}, {"field": "ingredients[4].concentration", "material": "MgSO4
+    x 7 H2O", "record": {"value": "0.5", "unit": "G_PER_L"}, "source_amount": 0.5,
+    "source_unit": "g", "provider_g_l": 0.5, "provider_volume_ml": 1000, "decision":
+    "verified provider concentration"}, {"field": "ingredients[5].concentration",
+    "material": "FeSO4 x 7 H2O", "record": {"value": "0.05", "unit": "G_PER_L"}, "source_amount":
+    50, "source_unit": "mg", "provider_g_l": 0.05, "provider_volume_ml": 1000, "decision":
+    "verified provider concentration"}, {"field": "ingredients[6].concentration",
+    "material": "CaCO3", "record": {"value": "1", "unit": "G_PER_L"}, "source_amount":
+    1, "source_unit": "g", "provider_g_l": 1, "provider_volume_ml": 1000, "decision":
+    "verified provider concentration"}, {"field": "ingredients[7].concentration",
+    "material": "Agar", "record": {"value": "15", "unit": "G_PER_L"}, "source_amount":
+    15, "source_unit": "g", "provider_g_l": 15, "provider_volume_ml": 1000, "decision":
+    "verified provider concentration"}], "owner_excerpt_checks": [{"field": "ingredients[0].evidence[0]",
+    "literal_match": true, "row_match": true, "source_hash_matches": true}, {"field":
+    "ingredients[1].evidence[0]", "literal_match": true, "row_match": true, "source_hash_matches":
+    true}, {"field": "ingredients[2].evidence[0]", "literal_match": true, "row_match":
+    true, "source_hash_matches": true}, {"field": "ingredients[3].evidence[0]", "literal_match":
+    true, "row_match": true, "source_hash_matches": true}, {"field": "ingredients[4].evidence[0]",
+    "literal_match": true, "row_match": true, "source_hash_matches": true}, {"field":
+    "ingredients[5].evidence[0]", "literal_match": true, "row_match": true, "source_hash_matches":
+    true}, {"field": "ingredients[6].evidence[0]", "literal_match": true, "row_match":
+    true, "source_hash_matches": true}, {"field": "ingredients[7].evidence[0]", "literal_match":
+    true, "row_match": true, "source_hash_matches": true}]}'
+- evidence_id: importer
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition; _parse_preparation_steps; _classify_preparation_action
+  accessed_at: '2026-10-21T07:49:47Z'
+  support: supports
+  summary: The composition parser skips water as solvent context. The action classifier
+    defaults an unclassified pH-result sentence to MIX. These functions were inspected
+    as follow-up ownership context; no importer or regeneration was run.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:010522
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '6 primary CHEBI identities resolve with matching labels; 6 of 6 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:010522
+  evidence_ids:
+  - record
+  - mim
+  - chebi131527
+  - chebi17234
+  - chebi2509
+  - chebi31795
+  - chebi3311
+  - chebi75836
+  details: 8 direct ingredient instances; CHEBI-primary instance linkage 6/8 (75.00%),
+    verified secondary coverage 6/8 (75.00%). Percentages use a 0–100 linkage scale,
+    not a scientific correctness score. Complex mixtures without asserted IDs remain
+    ungrounded rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: JCM GRMD 37 via MediaDive J37
+  outcome: supported
+  summary: Source accession, title, primary URL, stable ID and merge owner agree.
+    JCM is the original recipe collection; MediaDive is the dataset provider. A similarly
+    named record is not assessed or merged here.
+  target_ids:
+  - CultureMech:010522
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - jcm
+  - api
+- assessment_id: amounts
+  area: quantity
+  topic: All eight direct solute concentrations and supplied forms
+  outcome: supported
+  summary: Each value agrees with explicit provider g_l and the corresponding source
+    batch amount. In particular 50 mg FeSO4 heptahydrate is provider-declared 0.05
+    g/L. This is concentration evidence within the provider nominal-volume basis,
+    not a measured final volume or downstream dilution. No stock composition or nested
+    addition is present.
+  target_ids:
+  - CultureMech:010522
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - api
+  - trace
+  details: '[{"field": "ingredients[0].concentration", "material": "Peptone", "record":
+    {"value": "5", "unit": "G_PER_L"}, "source_amount": 5, "source_unit": "g", "provider_g_l":
+    5, "provider_volume_ml": 1000, "decision": "verified provider concentration"},
+    {"field": "ingredients[1].concentration", "material": "Yeast extract", "record":
+    {"value": "1", "unit": "G_PER_L"}, "source_amount": 1, "source_unit": "g", "provider_g_l":
+    1, "provider_volume_ml": 1000, "decision": "verified provider concentration"},
+    {"field": "ingredients[2].concentration", "material": "Glucose", "record": {"value":
+    "20", "unit": "G_PER_L"}, "source_amount": 20, "source_unit": "g", "provider_g_l":
+    20, "provider_volume_ml": 1000, "decision": "verified provider concentration"},
+    {"field": "ingredients[3].concentration", "material": "K2HPO4", "record": {"value":
+    "0.5", "unit": "G_PER_L"}, "source_amount": 0.5, "source_unit": "g", "provider_g_l":
+    0.5, "provider_volume_ml": 1000, "decision": "verified provider concentration"},
+    {"field": "ingredients[4].concentration", "material": "MgSO4 x 7 H2O", "record":
+    {"value": "0.5", "unit": "G_PER_L"}, "source_amount": 0.5, "source_unit": "g",
+    "provider_g_l": 0.5, "provider_volume_ml": 1000, "decision": "verified provider
+    concentration"}, {"field": "ingredients[5].concentration", "material": "FeSO4
+    x 7 H2O", "record": {"value": "0.05", "unit": "G_PER_L"}, "source_amount": 50,
+    "source_unit": "mg", "provider_g_l": 0.05, "provider_volume_ml": 1000, "decision":
+    "verified provider concentration"}, {"field": "ingredients[6].concentration",
+    "material": "CaCO3", "record": {"value": "1", "unit": "G_PER_L"}, "source_amount":
+    1, "source_unit": "g", "provider_g_l": 1, "provider_volume_ml": 1000, "decision":
+    "verified provider concentration"}, {"field": "ingredients[7].concentration",
+    "material": "Agar", "record": {"value": "15", "unit": "G_PER_L"}, "source_amount":
+    15, "source_unit": "g", "provider_g_l": 15, "provider_volume_ml": 1000, "decision":
+    "verified provider concentration"}]'
+- assessment_id: grounding-detail
+  area: grounding
+  topic: Chemical identity and linkage
+  outcome: supported
+  summary: Six primary CHEBI IDs and six secondary keys resolve with matching supplied
+    forms and canonical labels; each linkage measure is 6/8 direct ingredient instances.
+    Peptone and yeast remain undefined mixtures. Linkage is not a correctness score
+    and provider agar molarity is not adopted.
+  target_ids:
+  - CultureMech:010522
+  evidence_ids:
+  - record
+  - mim
+  - jcm
+  - chebi17234
+  - chebi131527
+  - chebi31795
+  - chebi75836
+  - chebi3311
+  - chebi2509
+- assessment_id: water
+  area: completeness
+  topic: Source-only solvent input
+  outcome: concern
+  summary: Both full local files omit JCM water 1 L / provider water 1000 ml. Preserve
+    this literal preparation input; it is not independently proof of final volume
+    and need not become a forced water mass edge.
+  target_ids:
+  - CultureMech:010522
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - api
+  - importer
+- assessment_id: preparation
+  area: completeness
+  topic: Unadjusted pH and source sterilization
+  outcome: concern
+  summary: The unadjusted pH 6.8 text is retained, but MIX mislabels a resulting condition
+    as an operation. The page-wide JCM autoclaving default of 121 C for 15 min unless
+    otherwise stated is absent from both layers. The source specifies no pH adjustment
+    reagent or incubation condition.
+  target_ids:
+  - CultureMech:010522
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - api
+  - importer
+- assessment_id: evidence-freshness
+  area: evidence
+  topic: Eight owner excerpts and later provenance
+  outcome: concern
+  summary: All eight owner snippets are literal current API row objects and carry
+    its matching SHA256; their concentration explanations preserve provider scope.
+    The generated target omits every excerpt, the provider reference and October 7
+    evidence-only history despite identical quantities.
+  target_ids:
+  - CultureMech:010522
+  evidence_ids:
+  - record
+  - owner-0
+  - api
+  - trace
+  - validate-references
+- assessment_id: scope
+  area: scope
+  topic: Classification, physical state and history
+  outcome: supported
+  summary: Agar 15 g supports SOLID_AGAR; peptone/yeast support COMPLEX/UNDEFINED.
+    Fungal filing and generic microbial cultivation assert no exclusive target or
+    experimentally supported growth. All target/owner history timestamps have timezones
+    and supported quantities were unchanged by the owner evidence event.
+  target_ids:
+  - CultureMech:010522
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - api
+  - trace
+findings:
+- finding_id: f1
+  issue_key: CM010522-water-context-missing
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source water input is absent from preparation
+  description: The primary 1 L water row and provider 1000 ml row are omitted from
+    both local layers.
+  target_ids:
+  - CultureMech:010522
+  field_paths:
+  - ingredients
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/fungal/2_glucose_yeast_extract_peptone_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: CM010522-sterilization-missing
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: JCM default sterilization is omitted
+  description: Neither local layer records the page-wide 121 C/15 min instruction,
+    and the source recipe provides no override.
+  target_ids:
+  - CultureMech:010522
+  field_paths:
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/fungal/2_glucose_yeast_extract_peptone_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: CM010522-stale-owner-evidence
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated record omits eight verified concentration excerpts
+  description: All eight maintained excerpts, the provider reference and October 7
+    curation history are absent from the generated target; the exact current API supports
+    their narrow claims.
+  target_ids:
+  - CultureMech:010522
+  field_paths:
+  - ingredients[*].evidence
+  - references
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - api
+  - trace
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/fungal/2_glucose_yeast_extract_peptone_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f4
+  issue_key: CM010522-ph-action-semantics
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Unadjusted pH is tagged as a mixing operation
+  description: The source sentence reports expected pH without an adjustment instruction.
+    Both layers assign MIX to it.
+  target_ids:
+  - CultureMech:010522
+  field_paths:
+  - preparation_steps[0].action
+  - preparation_steps[0].description
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - api
+  - importer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/fungal/2_glucose_yeast_extract_peptone_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Restore the source solvent input in maintained preparation/batch context
+    without claiming density or an independently measured final volume.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:010522
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/fungal/2_glucose_yeast_extract_peptone_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Add the source-scoped default with its exception wording and exact
+    supporting text before regeneration.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:010522
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/fungal/2_glucose_yeast_extract_peptone_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: After owner preparation is corrected, regenerate and verify preservation
+    of all eight supported excerpts, reference metadata and append-only history without
+    changing the verified amounts.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:010522
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/fungal/2_glucose_yeast_extract_peptone_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Preserve the unadjusted pH as a condition with source evidence; inspect
+    the action classifier without inventing a mixing or titration protocol.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:010522
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/fungal/2_glucose_yeast_extract_peptone_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- No measured final volume, organism-specific growth, mixture molarity or historical
+  importer execution was established. Existing owner snippets were checked directly
+  against the current matching API capture; generated-product repair and corpus-wide
+  merge gates remain proposed follow-up.
+tags:
+- unreviewed-records
+- batch-009
+- generated-medium
+```
