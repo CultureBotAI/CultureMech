@@ -1,0 +1,90 @@
+schema_version: 1.0.0
+repository_key: culturemech
+github_repository: CultureBotAI/CultureMech
+run_id: mech-goal-sequence-20261019
+cycle: 1
+stage: 4
+revision: 1
+outcome: completed
+summary: Completed four-skill record and category review across the frozen CultureMech
+  corpus (10,675 recipes and 109 solutions at 4c69a62c25dd5419766533205c215b0aaa5d14f7)
+  with 6 immutable structured review bundles under reviews/structured/20261017* and
+  9 stable findings carried forward to Stage 5.
+source_revision: 4c69a62c25dd5419766533205c215b0aaa5d14f7
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-04/revision-0001/review_report.md
+  sha256: 33f5efaee1ac3b1ae6c30fabdc00b4989a66215abe43241617050118ae4b073e
+  kind: review_report
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-04/revision-0001/review_findings.md
+  sha256: 3bdb9a6e9b1560d5456cd690857a9e2a5cad96982b1cc687eaeb8fe6e8884048
+  kind: review_findings
+findings:
+- finding_id: CM-C1S4-001
+  status: open
+  issue_url: https://github.com/CultureBotAI/CultureMech/issues/634
+  summary: THERMOVENABULUM_MEDIUM name collision across 3 distinct DSMZ formulations
+    (991, 91a, 503) and undeclared merge metadata on CultureMech:000252 and CultureMech:011215.
+  disposition: Carried forward to Stage 5 under Issue #634.
+- finding_id: CM-C1S4-002
+  status: open
+  issue_url: https://github.com/CultureBotAI/CultureMech/issues/634
+  summary: Unscaled 100x-1000x stock concentrations flattened into final 1 L media
+    in CultureMech:000252, 003150, 007843, 011215 and Solution:000109.
+  disposition: Carried forward to Stage 5 under Issue #634.
+- finding_id: CM-C1S4-003
+  status: open
+  issue_url: https://github.com/CultureBotAI/CultureMech/issues/635
+  summary: 'CultureMech:000034 (UTEX_ag_Medium.yaml) contains unparsed concentration
+    text in preferred_term (''Vitamin B12 (0.15 mg/200 mL) '') and false-positive ChEBI
+    mappings (CHEBI:85248, CHEBI:26710).'
+  disposition: Carried forward to Stage 5 under Issue #635.
+- finding_id: CM-C1S4-004
+  status: open
+  issue_url: https://github.com/CultureBotAI/CultureMech/issues/635
+  summary: Duplicate ingredient entries with conflicting concentrations in CultureMech:003150
+    (Agar) and CultureMech:007843 (Resazurin, NaHCO3, Yeast extract, Na2S x 9 H2O).
+  disposition: Carried forward to Stage 5 under Issue #635.
+- finding_id: CM-C1S4-005
+  status: open
+  issue_url: https://github.com/CultureBotAI/CultureMech/issues/635
+  summary: Placeholder ingredient preferred_term 'See source for composition' (0.0
+    G_PER_L) in CultureMech:007843.
+  disposition: Carried forward to Stage 5 under Issue #635.
+- finding_id: CM-C1S4-006
+  status: open
+  issue_url: https://github.com/CultureBotAI/CultureMech/issues/635
+  summary: CultureMech:010554 (BACTERIA_SCREENING_MEDIUM_1.yaml) miscategorized as
+    FUNGAL and has 1000x Glucose scaling error (5000.0 G_PER_L).
+  disposition: Carried forward to Stage 5 under Issue #635.
+- finding_id: CM-C1S4-007
+  status: open
+  issue_url: https://github.com/CultureBotAI/CultureMech/issues/635
+  summary: CultureMech:015445 (MINERAL_MEDIUM_BRUNNER.yaml) flattens SL-4 and SL-6
+    trace metal stocks without 1:1000/1:100 dilution factors and uses category IMPORTS
+    instead of BACTERIAL.
+  disposition: Carried forward to Stage 5 under Issue #635.
+- finding_id: CM-C1S4-008
+  status: open
+  issue_url: https://github.com/CultureBotAI/CultureMech/issues/635
+  summary: CultureMech:015480 (Widdel_Freshwater_Medium.yaml) stores mM and mg/L stock
+    concentrations under G_PER_L, inflating total dissolved solids to 409.5 g/L.
+  disposition: Carried forward to Stage 5 under Issue #635.
+- finding_id: CM-C1S4-009
+  status: open
+  issue_url: https://github.com/CultureBotAI/CultureMech/issues/635
+  summary: Solution:000043 (komodo_532_Trace_element_solution_SL-4.yaml) leaves Trace
+    element solution SL-6 unexpanded with unit G_PER_L instead of ML_PER_L and lacks
+    ChEBI mappings.
+  disposition: Carried forward to Stage 5 under Issue #635.
+groups: []
+carry_forward_ids:
+- CM-C1S4-001
+- CM-C1S4-002
+- CM-C1S4-003
+- CM-C1S4-004
+- CM-C1S4-005
+- CM-C1S4-006
+- CM-C1S4-007
+- CM-C1S4-008
+- CM-C1S4-009
+infra_tasks: []
