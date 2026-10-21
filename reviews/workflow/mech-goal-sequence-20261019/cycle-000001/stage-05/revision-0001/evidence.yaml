@@ -25,6 +25,7 @@ summary: >
   20261021T071800Z-stage5-remediation-verification (verdict: pass). Zero unresolved
   findings remain (carry_forward_ids: []).
 source_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+scope_frozen_at: '2026-10-21T02:24:40Z'
 previous_evidence:
   path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-04/revision-0001/evidence.yaml
   sha256: a10907eb4a96adc166694ee37eedc99fafb144abaefd8abe0d130185470437fd
@@ -35,12 +36,6 @@ artifacts:
   - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/validation.md
     sha256: c1c7984efb424e01c85c23be587794e5dcca11d5d92736f4ecc8531712779e19
     kind: validation
-  - path: reviews/structured/20261021T071800Z-stage5-remediation-verification/review.yaml
-    sha256: 5c8fdb37b63ea8f989d8d4d6be5e14084cac4518e360d6da663001be5a1cc482
-    kind: supporting
-  - path: reviews/structured/20261021T071800Z-stage5-remediation-verification/review.md
-    sha256: 1b5d2684c82b3fe11cc7bd26d5e0dbf89ef6cef839695e31144f5097be3b4975
-    kind: supporting
 findings:
   - finding_id: CM-C1S4-001
     status: resolved
@@ -203,7 +198,7 @@ groups:
       chemical constituents, variant_children synchronization, and LinkML root/merge
       schema alignment across 9 records and catalog.
     resolution_evidence:
-      - reviews/structured/20261021T071800Z-stage5-remediation-verification/review.yaml
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/issue_map.md
       - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/validation.md
     disposition: >
       Resolved via native guarded writer (write_validated_recipe +
@@ -229,7 +224,7 @@ groups:
       constituents, duplicate mineral salt consolidation, water unit/CHEBI
       normalization, and removal of stale flags and placeholder ingredients).
     resolution_evidence:
-      - reviews/structured/20261021T071800Z-stage5-remediation-verification/review.yaml
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/issue_map.md
       - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/validation.md
     disposition: >
       Resolved via native guarded writer (write_validated_recipe +
