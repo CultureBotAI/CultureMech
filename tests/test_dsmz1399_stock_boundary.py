@@ -238,11 +238,28 @@ def test_followup_hash_chain_requires_exact_baseline_and_identity():
 
 
 def test_current_curation_exactly_matches_pinned_plan_after_application():
+    import importlib.util
+
+    audit_spec = importlib.util.spec_from_file_location(
+        "dsmz1399_audit_diff", PLAN.with_name("audit_diff.py")
+    )
+    audit = importlib.util.module_from_spec(audit_spec)
+    audit_spec.loader.exec_module(audit)
+    successors = [
+        record
+        for p in audit.review_plans()
+        if p != PLAN
+        for record in json.loads(p.read_text())["records"]
+    ]
     plan = json.loads(PLAN.read_text())
     for item in plan["records"]:
         raw = (ROOT / item["path"]).read_bytes()
-        assert repair.sha(raw) == item["after_sha256"]
+        expected_sha, depth = reviewer.followup_result_hash(item, successors)
+        assert repair.sha(raw) == expected_sha
         assert repair.sha(item["before_text"].encode()) == item["before_sha256"]
-        doc = yaml.load(raw, Loader=yaml.CSafeLoader)
+        if depth > 0:
+            doc = audit.invert_chain(raw, [r for r in successors if r["path"] == item["path"]])
+        else:
+            doc = yaml.load(raw, Loader=yaml.CSafeLoader)
         assert doc["id"] == item["id"]
         assert doc["curation_history"][-1]["action"] == repair.ACTION

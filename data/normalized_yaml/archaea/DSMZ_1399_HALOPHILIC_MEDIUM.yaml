@@ -21,17 +21,12 @@ ingredients:
   evidence:
   - reference: https://mediadive.dsmz.de/rest/medium/1399
     supports: SUPPORT
-    snippet: |-
-      {
-                              "recipe_order": 1,
-                              "compound": "Proteose peptone no. 3",
-                              "compound_id": 316,
-                              "attribute": "Difco",
-                              "amount": 5,
-                              "unit": "g",
-                              "g_l": 5,
-                              "optional": 0
-                          }
+    snippet: "{\n                        \"recipe_order\": 1,\n                  \
+      \      \"compound\": \"Proteose peptone no. 3\",\n                        \"\
+      compound_id\": 316,\n                        \"attribute\": \"Difco\",\n   \
+      \                     \"amount\": 5,\n                        \"unit\": \"g\"\
+      ,\n                        \"g_l\": 5,\n                        \"optional\"\
+      : 0\n                    }"
     explanation: 'Concentration/formulation evidence for ingredients[0].concentration
       (Proteose peptone no. 3); locator=$.data.solutions[0].recipe[0]. The source
       manufacturer/grade attribute Difco is retained in notes. Existing 5 g/L is explicitly
@@ -47,16 +42,11 @@ ingredients:
   evidence:
   - reference: https://mediadive.dsmz.de/rest/medium/1399
     supports: SUPPORT
-    snippet: |-
-      {
-                              "recipe_order": 2,
-                              "compound": "Yeast extract",
-                              "compound_id": 16,
-                              "amount": 5,
-                              "unit": "g",
-                              "g_l": 5,
-                              "optional": 0
-                          }
+    snippet: "{\n                        \"recipe_order\": 2,\n                  \
+      \      \"compound\": \"Yeast extract\",\n                        \"compound_id\"\
+      : 16,\n                        \"amount\": 5,\n                        \"unit\"\
+      : \"g\",\n                        \"g_l\": 5,\n                        \"optional\"\
+      : 0\n                    }"
     explanation: 'Concentration/formulation evidence for ingredients[1].concentration
       (Yeast extract); locator=$.data.solutions[0].recipe[1]. Existing 5 g/L is explicitly
       reported. 5 g / (1000 ml / 1000 ml per L) = 5 g/L. Exact final-volume instruction
@@ -77,17 +67,11 @@ ingredients:
   evidence:
   - reference: https://mediadive.dsmz.de/rest/medium/1399
     supports: SUPPORT
-    snippet: |-
-      {
-                              "recipe_order": 3,
-                              "compound": "Glucose",
-                              "compound_id": 5,
-                              "amount": 1,
-                              "unit": "g",
-                              "g_l": 1,
-                              "mmol_l": 5.55062,
-                              "optional": 0
-                          }
+    snippet: "{\n                        \"recipe_order\": 3,\n                  \
+      \      \"compound\": \"Glucose\",\n                        \"compound_id\":\
+      \ 5,\n                        \"amount\": 1,\n                        \"unit\"\
+      : \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\"\
+      : 5.55062,\n                        \"optional\": 0\n                    }"
     explanation: 'Concentration/formulation evidence for ingredients[2].concentration
       (Glucose); locator=$.data.solutions[0].recipe[2]. Existing 1 g/L is explicitly
       reported. 1 g / (1000 ml / 1000 ml per L) = 1 g/L. Exact final-volume instruction
@@ -109,18 +93,12 @@ ingredients:
   evidence:
   - reference: https://mediadive.dsmz.de/rest/medium/1399
     supports: SUPPORT
-    snippet: |-
-      {
-                              "recipe_order": 6,
-                              "compound": "Agar",
-                              "compound_id": 3,
-                              "condition": "for solid medium",
-                              "amount": 20,
-                              "unit": "g",
-                              "g_l": 20,
-                              "mmol_l": 59.4654,
-                              "optional": 0
-                          }
+    snippet: "{\n                        \"recipe_order\": 6,\n                  \
+      \      \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n\
+      \                        \"condition\": \"for solid medium\",\n            \
+      \            \"amount\": 20,\n                        \"unit\": \"g\",\n   \
+      \                     \"g_l\": 20,\n                        \"mmol_l\": 59.4654,\n\
+      \                        \"optional\": 0\n                    }"
     explanation: 'Concentration/formulation evidence for ingredients[3].concentration
       (Agar); locator=$.data.solutions[0].recipe[5]. Applies to this record''s SOLID_AGAR
       formulation; optional solidification is not asserted for liquid medium. Existing
@@ -131,23 +109,21 @@ ingredients:
       the PDF copyright year is not asserted as publication year.'
 - preferred_term: Distilled water
   term:
-    id: mediadive.compound:4
-    label: Distilled water
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
   concentration:
     value: '0.333'
     unit: L
   evidence:
   - reference: https://mediadive.dsmz.de/rest/medium/1399
     supports: SUPPORT
-    snippet: |-
-      {
-                              "recipe_order": 5,
-                              "compound": "Distilled water",
-                              "compound_id": 4,
-                              "amount": 333,
-                              "unit": "ml",
-                              "optional": 0
-                          }
+    snippet: "{\n                        \"recipe_order\": 5,\n                  \
+      \      \"compound\": \"Distilled water\",\n                        \"compound_id\"\
+      : 4,\n                        \"amount\": 333,\n                        \"unit\"\
+      : \"ml\",\n                        \"optional\": 0\n                    }"
     explanation: 'Concentration/formulation evidence for ingredients[4].concentration
       (Distilled water); locator=$.data.solutions[0].recipe[4]. Explicit 333 ml water
       addition / 1000 = 0.333 L per batch at this preparation stage. Not a percentage
@@ -229,6 +205,15 @@ curation_history:
     {''value'': ''0.333'', ''unit'': ''L''} (add); None -> solutions[0].composition[8].concentration:
     None -> {''value'': ''1'', ''unit'': ''L''} (add); None -> solutions[0].concentration:
     None -> {''value'': ''0.666'', ''unit'': ''L''} (add)'
+- timestamp: '2026-10-21T03:04:48.273866+00:00'
+  curator: stage5-remediation-v1.0
+  action: CURATED
+  notes: 'Resolved Stage 4 finding CM-C1S4-008 on CultureMech:000252 (Issues #634,
+    #635, #645).'
+  changes: 'Normalized name to halophilic_medium, corrected MGM stock pH step to 7.5,
+    and grounded Distilled water to CHEBI:15377 (''water'') across ingredients[4]
+    and solutions[0].composition[8] (11/13 defined chemical items mapped to ChEBI/MIM)
+    (#634, #635, #645).'
 high_metal: true
 solutions:
 - preferred_term: Total Salts
@@ -252,17 +237,12 @@ solutions:
     evidence:
     - reference: https://mediadive.dsmz.de/rest/medium/1399
       supports: SUPPORT
-      snippet: |-
-        {
-                                "recipe_order": 1,
-                                "compound": "NaCl",
-                                "compound_id": 43,
-                                "amount": 234,
-                                "unit": "g",
-                                "g_l": 234,
-                                "mmol_l": 4004.11,
-                                "optional": 0
-                            }
+      snippet: "{\n                        \"recipe_order\": 1,\n                \
+        \        \"compound\": \"NaCl\",\n                        \"compound_id\"\
+        : 43,\n                        \"amount\": 234,\n                        \"\
+        unit\": \"g\",\n                        \"g_l\": 234,\n                  \
+        \      \"mmol_l\": 4004.11,\n                        \"optional\": 0\n   \
+        \                 }"
       explanation: 'Concentration/formulation evidence for solutions[0].composition[0].concentration
         (NaCl); locator=$.data.solutions[1].recipe[0]. Moved from ingredients[4] into
         stock 2838, explicitly linked in the receiving recipe. The unchanged 234 g/L
@@ -285,17 +265,12 @@ solutions:
     evidence:
     - reference: https://mediadive.dsmz.de/rest/medium/1399
       supports: SUPPORT
-      snippet: |-
-        {
-                                "recipe_order": 2,
-                                "compound": "MgCl2 x 6 H2O",
-                                "compound_id": 79,
-                                "amount": 42,
-                                "unit": "g",
-                                "g_l": 42,
-                                "mmol_l": 206.588,
-                                "optional": 0
-                            }
+      snippet: "{\n                        \"recipe_order\": 2,\n                \
+        \        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\"\
+        : 79,\n                        \"amount\": 42,\n                        \"\
+        unit\": \"g\",\n                        \"g_l\": 42,\n                   \
+        \     \"mmol_l\": 206.588,\n                        \"optional\": 0\n    \
+        \                }"
       explanation: 'Concentration/formulation evidence for solutions[0].composition[1].concentration
         (MgCl2 x 6 H2O); locator=$.data.solutions[1].recipe[1]. Moved from ingredients[5]
         into stock 2838, explicitly linked in the receiving recipe. The unchanged
@@ -318,17 +293,12 @@ solutions:
     evidence:
     - reference: https://mediadive.dsmz.de/rest/medium/1399
       supports: SUPPORT
-      snippet: |-
-        {
-                                "recipe_order": 3,
-                                "compound": "MgSO4 x 7 H2O",
-                                "compound_id": 8,
-                                "amount": 60,
-                                "unit": "g",
-                                "g_l": 60,
-                                "mmol_l": 243.431,
-                                "optional": 0
-                            }
+      snippet: "{\n                        \"recipe_order\": 3,\n                \
+        \        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\"\
+        : 8,\n                        \"amount\": 60,\n                        \"\
+        unit\": \"g\",\n                        \"g_l\": 60,\n                   \
+        \     \"mmol_l\": 243.431,\n                        \"optional\": 0\n    \
+        \                }"
       explanation: 'Concentration/formulation evidence for solutions[0].composition[2].concentration
         (MgSO4 x 7 H2O); locator=$.data.solutions[1].recipe[2]. Moved from ingredients[6]
         into stock 2838, explicitly linked in the receiving recipe. The unchanged
@@ -351,17 +321,12 @@ solutions:
     evidence:
     - reference: https://mediadive.dsmz.de/rest/medium/1399
       supports: SUPPORT
-      snippet: |-
-        {
-                                "recipe_order": 4,
-                                "compound": "CaCl2 x 2 H2O",
-                                "compound_id": 7,
-                                "amount": 1,
-                                "unit": "g",
-                                "g_l": 1,
-                                "mmol_l": 6.80203,
-                                "optional": 0
-                            }
+      snippet: "{\n                        \"recipe_order\": 4,\n                \
+        \        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\"\
+        : 7,\n                        \"amount\": 1,\n                        \"unit\"\
+        : \"g\",\n                        \"g_l\": 1,\n                        \"\
+        mmol_l\": 6.80203,\n                        \"optional\": 0\n            \
+        \        }"
       explanation: 'Concentration/formulation evidence for solutions[0].composition[3].concentration
         (CaCl2 x 2 H2O); locator=$.data.solutions[1].recipe[3]. Moved from ingredients[7]
         into stock 2838, explicitly linked in the receiving recipe. The unchanged
@@ -384,17 +349,12 @@ solutions:
     evidence:
     - reference: https://mediadive.dsmz.de/rest/medium/1399
       supports: SUPPORT
-      snippet: |-
-        {
-                                "recipe_order": 5,
-                                "compound": "KCl",
-                                "compound_id": 61,
-                                "amount": 6,
-                                "unit": "g",
-                                "g_l": 6,
-                                "mmol_l": 80.4829,
-                                "optional": 0
-                            }
+      snippet: "{\n                        \"recipe_order\": 5,\n                \
+        \        \"compound\": \"KCl\",\n                        \"compound_id\":\
+        \ 61,\n                        \"amount\": 6,\n                        \"\
+        unit\": \"g\",\n                        \"g_l\": 6,\n                    \
+        \    \"mmol_l\": 80.4829,\n                        \"optional\": 0\n     \
+        \               }"
       explanation: 'Concentration/formulation evidence for solutions[0].composition[4].concentration
         (KCl); locator=$.data.solutions[1].recipe[4]. Moved from ingredients[8] into
         stock 2838, explicitly linked in the receiving recipe. The unchanged 6 g/L
@@ -417,17 +377,12 @@ solutions:
     evidence:
     - reference: https://mediadive.dsmz.de/rest/medium/1399
       supports: SUPPORT
-      snippet: |-
-        {
-                                "recipe_order": 6,
-                                "compound": "NaBr",
-                                "compound_id": 353,
-                                "amount": 0.7,
-                                "unit": "g",
-                                "g_l": 0.7,
-                                "mmol_l": 6.80338,
-                                "optional": 0
-                            }
+      snippet: "{\n                        \"recipe_order\": 6,\n                \
+        \        \"compound\": \"NaBr\",\n                        \"compound_id\"\
+        : 353,\n                        \"amount\": 0.7,\n                       \
+        \ \"unit\": \"g\",\n                        \"g_l\": 0.7,\n              \
+        \          \"mmol_l\": 6.80338,\n                        \"optional\": 0\n\
+        \                    }"
       explanation: 'Concentration/formulation evidence for solutions[0].composition[5].concentration
         (NaBr); locator=$.data.solutions[1].recipe[5]. Moved from ingredients[9] into
         stock 2838, explicitly linked in the receiving recipe. The unchanged 0.7 g/L
@@ -450,17 +405,12 @@ solutions:
     evidence:
     - reference: https://mediadive.dsmz.de/rest/medium/1399
       supports: SUPPORT
-      snippet: |-
-        {
-                                "recipe_order": 7,
-                                "compound": "NaHCO3",
-                                "compound_id": 55,
-                                "amount": 0.2,
-                                "unit": "g",
-                                "g_l": 0.2,
-                                "mmol_l": 2.38075,
-                                "optional": 0
-                            }
+      snippet: "{\n                        \"recipe_order\": 7,\n                \
+        \        \"compound\": \"NaHCO3\",\n                        \"compound_id\"\
+        : 55,\n                        \"amount\": 0.2,\n                        \"\
+        unit\": \"g\",\n                        \"g_l\": 0.2,\n                  \
+        \      \"mmol_l\": 2.38075,\n                        \"optional\": 0\n   \
+        \                 }"
       explanation: 'Concentration/formulation evidence for solutions[0].composition[6].concentration
         (NaHCO3); locator=$.data.solutions[1].recipe[6]. Moved from ingredients[10]
         into stock 2838, explicitly linked in the receiving recipe. The unchanged
@@ -473,26 +423,21 @@ solutions:
   - preferred_term: FeCl3 x 6 H2O
     term:
       id: CHEBI:86254
-      label: iron trichloride hexahydrate
+      label: iron(III) chloride hexahydrate
     mediaingredientmech_chebi_term:
       id: CHEBI:86254
-      label: iron trichloride hexahydrate
+      label: iron(III) chloride hexahydrate
     notes: 'Source dose: 9 drops of FeCl3 x 6 H2O solution (source attribute: 0,5
       %) per prepared Total Salts stock batch. Percentage basis and drop volume are
       unspecified; no g/L, molarity, or mL conversion is asserted.'
     evidence:
     - reference: https://mediadive.dsmz.de/rest/medium/1399
       supports: SUPPORT
-      snippet: |-
-        {
-                                "recipe_order": 8,
-                                "compound": "FeCl3 x 6 H2O",
-                                "compound_id": 82,
-                                "attribute": "0,5 %",
-                                "amount": 9,
-                                "unit": "drops",
-                                "optional": 0
-                            }
+      snippet: "{\n                        \"recipe_order\": 8,\n                \
+        \        \"compound\": \"FeCl3 x 6 H2O\",\n                        \"compound_id\"\
+        : 82,\n                        \"attribute\": \"0,5 %\",\n               \
+        \         \"amount\": 9,\n                        \"unit\": \"drops\",\n \
+        \                       \"optional\": 0\n                    }"
       explanation: 'Concentration/formulation evidence for solutions[0].composition[7].concentration
         (FeCl3 x 6 H2O); locator=$.data.solutions[1].recipe[7]. Moved into the exact
         stock and removed unsupported 9 g/L. The source dose is retained in notes,
@@ -504,23 +449,22 @@ solutions:
         the PDF copyright year is not asserted as publication year.'
   - preferred_term: Distilled water
     term:
-      id: mediadive.compound:4
-      label: Distilled water
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
     concentration:
       value: '1'
       unit: L
     evidence:
     - reference: https://mediadive.dsmz.de/rest/medium/1399
       supports: SUPPORT
-      snippet: |-
-        {
-                                "recipe_order": 9,
-                                "compound": "Distilled water",
-                                "compound_id": 4,
-                                "amount": 1000,
-                                "unit": "ml",
-                                "optional": 0
-                            }
+      snippet: "{\n                        \"recipe_order\": 9,\n                \
+        \        \"compound\": \"Distilled water\",\n                        \"compound_id\"\
+        : 4,\n                        \"amount\": 1000,\n                        \"\
+        unit\": \"ml\",\n                        \"optional\": 0\n               \
+        \     }"
       explanation: 'Concentration/formulation evidence for solutions[0].composition[8].concentration
         (Distilled water); locator=$.data.solutions[1].recipe[8]. Explicit 1000 ml
         water addition / 1000 = 1 L per batch at this preparation stage. Not a percentage
@@ -531,15 +475,11 @@ solutions:
 evidence:
 - reference: https://mediadive.dsmz.de/rest/medium/1399
   supports: SUPPORT
-  snippet: |-
-    {
-                            "recipe_order": 4,
-                            "solution": "Total Salts",
-                            "solution_id": 2838,
-                            "amount": 666,
-                            "unit": "ml",
-                            "optional": 0
-                        }
+  snippet: "{\n                        \"recipe_order\": 4,\n                    \
+    \    \"solution\": \"Total Salts\",\n                        \"solution_id\":\
+    \ 2838,\n                        \"amount\": 666,\n                        \"\
+    unit\": \"ml\",\n                        \"optional\": 0\n                   \
+    \ }"
   explanation: 'Concentration/formulation evidence for solutions[0].concentration
     (Total Salts); locator=$.data.solutions[0].recipe[3]. 666 ml / 1000 = 0.666 L
     of stock 2838 per receiving batch. This dose establishes the stock boundary; salt

@@ -1,5 +1,5 @@
 id: CultureMech:004016
-name: thermovenabulum_medium
+name: thermovenabulum_medium_dsmz_1255
 original_name: THERMOVENABULUM medium
 category: bacterial
 medium_type: COMPLEX
@@ -85,13 +85,13 @@ ingredients:
 - preferred_term: FeSO4
   term:
     id: CHEBI:75832
-    label: iron(2+) sulfate (anhydrous)
+    label: iron(II) sulfate heptahydrate
   concentration:
     value: '0.000494071'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75832
-    label: iron(2+) sulfate (anhydrous)
+    label: iron(II) sulfate heptahydrate
 - preferred_term: PIPES
   term:
     id: CHEBI:39033
@@ -108,7 +108,10 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:8806
-    label: Resazurin
+    label: resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: resazurin
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -134,7 +137,7 @@ ingredients:
     id: CHEBI:17883
     label: hydrogen chloride
   concentration:
-    value: '2.5'
+    value: '0.0025'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17883
@@ -144,7 +147,7 @@ ingredients:
     id: CHEBI:86249
     label: iron dichloride tetrahydrate
   concentration:
-    value: '1.5'
+    value: '0.0015'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86249
@@ -154,7 +157,7 @@ ingredients:
     id: CHEBI:49976
     label: zinc dichloride
   concentration:
-    value: '0.07'
+    value: '0.00007'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49976
@@ -164,7 +167,7 @@ ingredients:
     id: CHEBI:86368
     label: manganese(II) chloride tetrahydrate
   concentration:
-    value: '0.1'
+    value: '0.0001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
@@ -174,7 +177,7 @@ ingredients:
     id: CHEBI:33118
     label: boric acid
   concentration:
-    value: '0.006'
+    value: '0.000006'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
@@ -184,7 +187,7 @@ ingredients:
     id: CHEBI:53503
     label: cobalt chloride hexahydrate
   concentration:
-    value: '0.19'
+    value: '0.00019'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53503
@@ -194,7 +197,7 @@ ingredients:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
   concentration:
-    value: '0.002'
+    value: '0.000002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86318
@@ -204,7 +207,7 @@ ingredients:
     id: CHEBI:34887
     label: nickel dichloride
   concentration:
-    value: '0.024'
+    value: '0.000024'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
@@ -214,7 +217,7 @@ ingredients:
     id: CHEBI:75213
     label: sodium molybdate dihydrate
   concentration:
-    value: '0.036'
+    value: '0.000036'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
@@ -224,7 +227,7 @@ ingredients:
     id: CHEBI:15956
     label: biotin
   concentration:
-    value: '0.02'
+    value: '0.0002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
@@ -234,7 +237,7 @@ ingredients:
     id: CHEBI:27470
     label: folic acid
   concentration:
-    value: '0.02'
+    value: '0.0002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:27470
@@ -244,7 +247,7 @@ ingredients:
     id: CHEBI:30961
     label: pyridoxine hydrochloride
   concentration:
-    value: '0.1'
+    value: '0.001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
@@ -254,7 +257,7 @@ ingredients:
     id: CHEBI:49105
     label: thiamine hydrochloride
   concentration:
-    value: '0.05'
+    value: '0.0005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
@@ -264,7 +267,7 @@ ingredients:
     id: CHEBI:17015
     label: riboflavin
   concentration:
-    value: '0.05'
+    value: '0.0005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
@@ -274,24 +277,27 @@ ingredients:
     id: CHEBI:15940
     label: nicotinic acid
   concentration:
-    value: '0.05'
+    value: '0.0005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15940
     label: nicotinic acid
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
-    value: '0.05'
+    value: '0.0005'
     unit: G_PER_L
   term:
     id: CHEBI:31345
-    label: Calcium pantothenate
+    label: calcium pantothenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
+    label: calcium pantothenate
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:176843
     label: vitamin B12
   concentration:
-    value: '0.001'
+    value: '0.00001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:176843
@@ -301,7 +307,7 @@ ingredients:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
   concentration:
-    value: '0.05'
+    value: '0.0005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
@@ -311,7 +317,7 @@ ingredients:
     id: CHEBI:16494
     label: lipoic acid
   concentration:
-    value: '0.05'
+    value: '0.0005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16494
@@ -364,11 +370,20 @@ curation_history:
   action: MERGED_RECIPES
   notes: merged 2 source recipe(s) on fingerprint 41e13ba4cd7c1fe23ac0cd0ae798a5637d389e4ab2accc75e38db30b94dd696e
   source: KOMODO_1255_THERMOVENABULUM_medium.yaml, thermovenabulum_medium.yaml
+- timestamp: '2026-10-21T03:02:37.986445+00:00'
+  curator: stage5-remediation-v1.0
+  action: CURATED
+  notes: 'Resolved Stage 4 findings CM-C1S4-009 and CM-C1S4-010 on CultureMech:004016
+    (Issues #634, #635, #645).'
+  changes: 'Applied 1/1000 trace-element and vitamin stock dilution factors, consolidated
+    CaCl2 x 2 H2O (0.327409 G_PER_L in DSMZ 962/962a; 0.0988142 G_PER_L in DSMZ 1255),
+    normalized canonical OBO ChEBI labels across all mapped ingredients, and synchronized
+    parent/child variant topology (#634, #635, #645).'
 parent_media:
   path: data/normalized_yaml/bacterial/thermovenabulum_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000714
-  name: thermovenabulum_medium
+  name: thermovenabulum_medium_dsmz_1255
   notes: KOMODO record explicitly cites DSMZ Medium 1255; one unlinked DSMZ parent
     record exists and the local physical state, pH, ingredient, and concentration
     signatures match exactly.

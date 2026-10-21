@@ -3087,9 +3087,26 @@
             "additionalProperties": false,
             "description": "A standalone stock-solution record (one per YAML file). Used for pre-prepared solutions that are referenced as ingredients by MediaRecipes \u2014 e.g. MediaDive's \"Main sol.\" or \"Trace metals SL10\" records. SolutionDescriptor is the inlined-in-recipe form; this is the root form with its own id, curation history, and provenance.",
             "properties": {
+                "categories": {
+                    "description": "All categories this solution recipe appears in (for cross-category merges)",
+                    "items": {
+                        "$ref": "#/$defs/CategoryEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "category": {
                     "$ref": "#/$defs/CategoryEnum",
                     "description": "Source / collection category (algae, bacterial, fungal, \u2026)"
+                },
+                "chemical_fingerprint": {
+                    "description": "SHA256 hash using parent ingredients (hierarchy-aware)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "composition": {
                     "description": "Ingredients in the stock solution",
@@ -3195,6 +3212,23 @@
                     ],
                     "description": "Legacy MediaIngredientMech:NNNNNN identifier for this solution (pre-CHEBI-keying)."
                 },
+                "merge_fingerprint": {
+                    "description": "SHA256 hash of ingredient set for deduplication tracking",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "merged_from": {
+                    "description": "Original recipe IDs that were merged into this solution record",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "notes": {
                     "description": "Additional free-text notes",
                     "type": [
@@ -3272,6 +3306,16 @@
                     ],
                     "description": "Storage requirements"
                 },
+                "synonyms": {
+                    "description": "Alternate names from merged duplicate solution recipes",
+                    "items": {
+                        "$ref": "#/$defs/RecipeSynonym"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "term": {
                     "anyOf": [
                         {
@@ -3282,6 +3326,13 @@
                         }
                     ],
                     "description": "Ontology term identifying this solution"
+                },
+                "variant_fingerprint": {
+                    "description": "SHA256 hash including concentration and preparation variant details",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 }
             },
             "required": [

@@ -1,8 +1,8 @@
 id: CultureMech:000034
 name: bold_basal_medium
 category: algae
-medium_type: COMPLEX
-composition_type: UNDEFINED
+medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: Bold Basal Medium
@@ -210,10 +210,10 @@ solutions:
       unit: G_PER_L
     term:
       id: CHEBI:4735
-      label: EDTA
+      label: ethylenediaminetetraacetic acid
     mediaingredientmech_chebi_term:
       id: CHEBI:4735
-      label: EDTA
+      label: ethylenediaminetetraacetic acid
     notes: UTEX lists 50 g EDTA acid form per liter.
     physicochemical_roles:
     - CHELATOR
@@ -440,9 +440,9 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:86368
       label: manganese(II) chloride tetrahydrate
-    notes: UTEX prints MnCl with tetrahydrate in this stock row, without the second
-      chloride. The existing MnCl2 identity and 1.44 g/L amount are retained unverified;
-      no final-medium conversion is made.
+    notes: Stoichiometric manganese(II) chloride tetrahydrate (MnCl2·4H2O, CHEBI:86368);
+      the UTEX source page contains a typographical error (MnCl•4H2O) omitting subscript
+      2.
     nutritional_roles:
     - TRACE_ELEMENT
     evidence:
@@ -506,10 +506,10 @@ solutions:
       unit: G_PER_L
     term:
       id: CHEBI:86214
-      label: cobalt(II) nitrate hexahydrate
+      label: cobalt dinitrate hexahydrate
     mediaingredientmech_chebi_term:
       id: CHEBI:86214
-      label: cobalt(II) nitrate hexahydrate
+      label: cobalt dinitrate hexahydrate
     notes: UTEX lists 0.49 g Co(NO3)2 x 6 H2O per liter.
     nutritional_roles:
     - NITROGEN_SOURCE
@@ -1105,6 +1105,14 @@ curation_history:
     Three Different Media", "year": 2022}], "old_length": 7, "pointer": ["references"],
     "reason": "Add the inspected formulation/relationship sources.", "reference":
     "doi:10.3390/plants11131669", "snippet": "0.25, 0.75, 2.50, 5.0, and 15.0 ng/L"}]'
+- timestamp: '2026-10-21T03:04:48.230072+00:00'
+  curator: stage5-remediation-v1.0
+  action: CURATED
+  notes: 'Resolved Stage 4 finding CM-C1S4-003 on CultureMech:000034 (Issues #635,
+    #645).'
+  changes: 'Normalized MnCl2 x 4 H2O to CHEBI:86368 (manganese(II) chloride tetrahydrate),
+    EDTA to CHEBI:4735 (ethylenediaminetetraacetic acid), and Co(NO3)2 x 6 H2O to
+    CHEBI:86214 (cobalt dinitrate hexahydrate) (#635, #645).'
 references:
 - reference: UTEX:bold-basal-medium
 - reference: https://utex.org/products/bold-basal-medium
@@ -1228,3 +1236,4 @@ evidence:
     name EDTA, Iron, Boron and Bold Trace stocks, each dosed as one approximate 0.05
     mL drop per one litre final medium. Preserve approximation; do not infer a precise
     drop from typical practice. Locator: Directions 2-3 and table rows 7-10.'
+ph_value: 6.6

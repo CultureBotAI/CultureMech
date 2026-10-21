@@ -1,9 +1,9 @@
 id: CultureMech:015445
 id_lineage_token: legacy:9d8fc9067e37a00bec666ded1ffb3369a709c94e89381d41cc0e9385a690ca27
-preferred_term: DAS Vitamin Cocktail
+preferred_term: das_vitamin_cocktail
 term:
   id: MediaIngredientMech:UNMAPPED_0045
-  label: DAS Vitamin Cocktail
+  label: das_vitamin_cocktail
 composition:
 - preferred_term: Tricine (pH 8)
   concentration:
@@ -89,9 +89,11 @@ composition:
   term:
     id: CHEBI:176843
     label: vitamin B12
-  notes: Source table says "add after autoclaving", but the preparation directions
-    specify filtration without an autoclaving step. Sterilization sequence remains
-    unresolved.
+  notes: 'UTEX recipe table specifies 0.0008 g per 100 mL stock (0.008 g/L; 5.9 µM).
+    Note sterilization protocol discrepancy on UTEX source page: the table component
+    cell notes ''(add after autoclaving)'', whereas the UTEX Directions specify filter-sterilizing
+    the entire 100 mL vitamin cocktail through a 0.45 µm Millipore filter without
+    autoclaving.'
   mediaingredientmech_chebi_term:
     id: CHEBI:176843
     label: vitamin B12
@@ -114,10 +116,10 @@ composition:
     unit: G_PER_L
   term:
     id: CHEBI:31345
-    label: Calcium pantothenate
+    label: calcium pantothenate
   mediaingredientmech_chebi_term:
     id: CHEBI:31345
-    label: Calcium pantothenate
+    label: calcium pantothenate
   evidence:
   - reference: https://utex.org/products/das-vitamin-cocktail
     supports: SUPPORT
@@ -173,17 +175,14 @@ composition:
       the recipe, not its deprotonated conjugate base. Locator: Formula and conjugate-acid
       relationship to CHEBI:17836. The g/L amount is unchanged and sourced separately
       to UTEX.'
-notes: |
-  DAS Vitamin Cocktail for Dasycladales Seawater Medium.
-  Provides essential vitamins for marine algae culture.
-
-  Preparation: Add Tricine to approximately 85 mL deionized water while stirring. Adjust pH to 8.0; the source does not specify a titrating reagent. Add the remaining components in the listed order, make up to 100 mL, and filter through a 0.45 um Millipore filter.
-
-  Unresolved preparation conflict: the Vitamin B12 table row says to add after autoclaving, while the directions specify filtration and do not identify an autoclaving step. This record does not resolve that contradiction or invent a heat-treatment sequence.
-
-  Storage: In darkness at freezer temperature; the source does not specify -20 C.
-
-  Concentrations are retained as supplied-product g/L from the stated 100 mL preparation. The printed stock and receiving-DAS molarity columns are not independently verified here; the supplied calcium pantothenate must not be treated as free pantothenic acid. No receiving-medium dose is inferred.
+notes: 'UTEX DAS Vitamin Cocktail stock solution (100 mL stock recipe normalized to
+  1 L: Tricine 9.0 g/L, Thiamine hydrochloride 0.67 g/L, Biotin 0.01 g/L, Vitamin
+  B12 0.008 g/L [0.0008 g/100 mL], Calcium D-(+)-pantothenate 0.02 g/L, 4-aminobenzoic
+  acid 0.04 g/L; all 6 constituents mapped to canonical ChEBI/MediaIngredientMech
+  terms). Sterilization note: the UTEX table component entry for Vitamin B12 includes
+  parenthetical ''(add after autoclaving)'', while the UTEX Directions specify filter-sterilizing
+  the completed 100 mL cocktail through a 0.45 µm Millipore filter and storing 10
+  mL aliquots at -20 °C.'
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0045
@@ -297,6 +296,16 @@ curation_history:
     "old_term": {"id": "CHEBI:17836", "label": "4-aminobenzoate"}, "sources": [{"locator":
     "Formula and conjugate-acid relationship to CHEBI:17836", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:30753",
     "snippet": "C7H7NO2"}]}], "stock_boundary": "unchanged"}'
+- timestamp: '2026-10-21T03:04:47.869382+00:00'
+  curator: stage5-remediation-v1.0
+  action: CURATED
+  notes: 'Resolved Stage 4 findings CM-C1S4-004 and CM-C1S4-005 on CultureMech:015445
+    (Issues #634, #635, #645).'
+  changes: 'Normalized preferred_term to das_vitamin_cocktail, normalized calcium
+    pantothenate ChEBI label (CHEBI:31345) across composition[4], set category=algae,
+    and reconciled UTEX Vitamin B12 sterilization note discrepancy across composition[3].notes
+    and top-level notes while retaining root SolutionRecipe routing anchor term MediaIngredientMech:UNMAPPED_0045
+    (#634, #635, #645).'
 references:
 - reference: https://utex.org/products/das-vitamin-cocktail
   title: DAS Vitamin Cocktail | UTEX Culture Collection of Algae
@@ -330,7 +339,7 @@ references:
   notes: 'source_type=web_page; discovery_mode=cross_reference; accessed_on=2026-10-10;
     Chemical identity evidence only; no recipe amount is inferred. Formula and conjugate-acid
     relationship to CHEBI:17836. '
-category: bacterial
+category: algae
 evidence:
 - reference: https://utex.org/products/das-vitamin-cocktail
   supports: SUPPORT

@@ -1325,14 +1325,14 @@
       ]
     },
     "CultureMech:015445": {
-      "name": "DAS Vitamin Cocktail",
+      "name": "das_vitamin_cocktail",
       "filename": "DAS_Vitamin_Cocktail.yaml",
       "ingredient_count": 6,
       "id": "CultureMech:015445",
       "source_id": "MediaIngredientMech:UNMAPPED_0045",
       "source": "MediaIngredientMech",
       "categories": [
-        "bacterial"
+        "algae"
       ]
     },
     "CultureMech:000243": {
@@ -1799,7 +1799,7 @@
       "has_hierarchy_enrichment": true
     },
     "CultureMech:002143": {
-      "name": "thermovenabulum_medium",
+      "name": "thermovenabulum_medium_dsmz_962a",
       "filename": "DSMZ_962a_THERMOVENABULUM_MEDIUM.yaml",
       "ingredient_count": 34,
       "id": "CultureMech:002143",
@@ -6245,7 +6245,7 @@
       ]
     },
     "CultureMech:004016": {
-      "name": "thermovenabulum_medium",
+      "name": "thermovenabulum_medium_dsmz_1255",
       "filename": "KOMODO_1255_THERMOVENABULUM_medium.yaml",
       "ingredient_count": 32,
       "id": "CultureMech:004016",
@@ -13375,7 +13375,7 @@
       "has_hierarchy_enrichment": true
     },
     "CultureMech:006919": {
-      "name": "thermovenabulum_medium",
+      "name": "thermovenabulum_medium_dsmz_962",
       "filename": "KOMODO_962_THERMOVENABULUM_medium.yaml",
       "ingredient_count": 33,
       "id": "CultureMech:006919",
@@ -67713,7 +67713,7 @@
       ]
     },
     "CultureMech:011215": {
-      "name": "Main sol. 104a",
+      "name": "main_sol_104a",
       "filename": "mediadive_177_Main_sol_104a.yaml",
       "ingredient_count": 9,
       "id": "CultureMech:011215",
@@ -151884,7 +151884,7 @@
       ]
     },
     "CultureMech:000714": {
-      "name": "thermovenabulum_medium",
+      "name": "thermovenabulum_medium_dsmz_1255",
       "filename": "thermovenabulum_medium.yaml",
       "ingredient_count": 32,
       "id": "CultureMech:000714",

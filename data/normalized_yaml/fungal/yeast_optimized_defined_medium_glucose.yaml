@@ -76,16 +76,19 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
-    label: Calcium pantothenate
+    label: calcium pantothenate
   concentration:
     value: '0.002099'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31345
-    label: Calcium pantothenate
+    label: calcium pantothenate
 - preferred_term: Histidine
   term:
     id: CHEBI:27570
@@ -101,6 +104,9 @@ ingredients:
     value: '6.632'
     unit: MILLIMOLAR
   term:
+    id: CHEBI:15603
+    label: L-leucine
+  mediaingredientmech_chebi_term:
     id: CHEBI:15603
     label: L-leucine
 - preferred_term: Magnesium sulfate
@@ -127,11 +133,20 @@ ingredients:
   concentration:
     value: '1.028'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17822
+    label: DL-serine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17822
+    label: DL-serine
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.04'
     unit: MILLIMOLAR
   term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
 - preferred_term: L-Glutamate
@@ -140,6 +155,9 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
   term:
+    id: CHEBI:16015
+    label: L-glutamic acid
+  mediaingredientmech_chebi_term:
     id: CHEBI:16015
     label: L-glutamic acid
 - preferred_term: Glycine
@@ -170,11 +188,17 @@ ingredients:
   term:
     id: CHEBI:29995
     label: aspartate(2-)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29995
+    label: aspartate(2-)
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.001653'
     unit: MILLIMOLAR
   term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+  mediaingredientmech_chebi_term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
 - preferred_term: Ferrous sulfate
@@ -183,12 +207,18 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: iron(2+) sulfate (anhydrous)
+    label: iron(II) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75832
+    label: iron(II) sulfate heptahydrate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.03061'
     unit: MILLIMOLAR
   term:
+    id: CHEBI:3312
+    label: calcium dichloride
+  mediaingredientmech_chebi_term:
     id: CHEBI:3312
     label: calcium dichloride
 - preferred_term: Cupric sulfate
@@ -198,11 +228,17 @@ ingredients:
   term:
     id: CHEBI:23414
     label: copper(II) sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.005053'
     unit: MILLIMOLAR
   term:
+    id: CHEBI:63041
+    label: manganese(II) chloride
+  mediaingredientmech_chebi_term:
     id: CHEBI:63041
     label: manganese(II) chloride
 - preferred_term: Biotin
@@ -241,6 +277,9 @@ ingredients:
     value: '0.001261'
     unit: MILLIMOLAR
   term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+  mediaingredientmech_chebi_term:
     id: CHEBI:35696
     label: cobalt dichloride
 - preferred_term: Zinc sulfate
@@ -322,6 +361,12 @@ curation_history:
     differences and access/formulation limits; all prior quantities, links, preparation
     and history unchanged. No new native growth or resolved variant.
   source: PMID:11257606
+- timestamp: '2026-10-21T03:04:48.388803+00:00'
+  curator: stage5-remediation-v1.0
+  action: CURATED
+  notes: 'Resolved Stage 4 finding CM-C1S4-006 on CultureMech:010554 (Issue #635).'
+  changes: Grounded DL-Serine (ingredients[12]) to CHEBI:17822 and populated mediaingredientmech_chebi_term
+    across all 28 ingredients (100% coverage) (#635).
 media_term:
   preferred_term: MediaDB Medium 396
   term:
