@@ -1,0 +1,1933 @@
+# Source and formulation review: alterythrobacter_medium_216l (CultureMech:000919)
+
+- Review: 20261021T143007Z-culturemech-000919-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T14:22:38Z
+- Finished UTC: 2026-10-21T14:30:07Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The seven ingredient amounts agree with DSMZ 1453 on the nominal one-liter basis, but the record combines an optional agar branch with unconditional SOLID_AGAR classification. The seawater alternative correctly requires NaCl omission in prose yet has no explicit branch representation. Source amounts, pH and preparation lack attached evidence; the source-specific seawater example and DSM 25986 observation remain omitted. Generic sodium-salt wording does not independently settle every hydration/stoichiometric choice.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 243; batch 025 item 3 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-four task batches contain 240 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 243 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000919 | data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml | generated | alterythrobacter_medium_216l |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:000919 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:000919 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-025/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch025/243/strict.tsv |
+| validate-terms | passed | True | CultureMech:000919 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:000919 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:000919 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:000919.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: supported. Targets: CultureMech:000919.
+
+5 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 5/7 primary and 5/7 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 7: primary 71.43%; secondary 71.43%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:000919.
+
+13 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "ingredient_or_context": "Sodium acetate",
+    "field_path": "ingredients[0].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1453api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1453",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Sodium acetate\",\n                        \"compound_id\": 731,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 12.1907,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5"
+      },
+      {
+        "source_key": "dsmz1453",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf",
+        "source_locator": "Primary main table or explicit optional agar sentence",
+        "exact_source_quote": " Sodium Acetate                                                               1.0         g",
+        "snapshot_sha256": "db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61",
+        "parsed_text_sha256": "d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467"
+      }
+    ],
+    "rationale": "The literal mass agrees with the nominal provider 1 L basis but has no attached evidence. Preserve source units and scope; do not claim measured post-adjustment volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider declares 1000 mL. Primary lists water and subsequent pH adjustment; no measured post-titration final volume or alternative-seawater composition is inferred."
+  },
+  {
+    "ingredient_or_context": "Tryptone",
+    "field_path": "ingredients[1].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1453api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1453",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Tryptone\",\n                        \"compound_id\": 71,\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 10,\n                        \"mmol_l\": 140.687,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5"
+      },
+      {
+        "source_key": "dsmz1453",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf",
+        "source_locator": "Primary main table or explicit optional agar sentence",
+        "exact_source_quote": " Tryptone                                                                    10.0         g",
+        "snapshot_sha256": "db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61",
+        "parsed_text_sha256": "d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467"
+      }
+    ],
+    "rationale": "The literal mass agrees with the nominal provider 1 L basis but has no attached evidence. Preserve source units and scope; do not claim measured post-adjustment volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider declares 1000 mL. Primary lists water and subsequent pH adjustment; no measured post-titration final volume or alternative-seawater composition is inferred."
+  },
+  {
+    "ingredient_or_context": "Yeast extract",
+    "field_path": "ingredients[2].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1453api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1453",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5"
+      },
+      {
+        "source_key": "dsmz1453",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf",
+        "source_locator": "Primary main table or explicit optional agar sentence",
+        "exact_source_quote": " Yeast Extract                                                                2.0         g",
+        "snapshot_sha256": "db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61",
+        "parsed_text_sha256": "d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467"
+      }
+    ],
+    "rationale": "The literal mass agrees with the nominal provider 1 L basis but has no attached evidence. Preserve source units and scope; do not claim measured post-adjustment volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider declares 1000 mL. Primary lists water and subsequent pH adjustment; no measured post-titration final volume or alternative-seawater composition is inferred."
+  },
+  {
+    "ingredient_or_context": "Sodium citrate",
+    "field_path": "ingredients[3].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1453api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1453",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Sodium citrate\",\n                        \"compound_id\": 792,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 1.93746,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5"
+      },
+      {
+        "source_key": "dsmz1453",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf",
+        "source_locator": "Primary main table or explicit optional agar sentence",
+        "exact_source_quote": " Sodium Citrate                                                               0.5         g",
+        "snapshot_sha256": "db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61",
+        "parsed_text_sha256": "d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467"
+      }
+    ],
+    "rationale": "The literal mass agrees with the nominal provider 1 L basis but has no attached evidence. Preserve source units and scope; do not claim measured post-adjustment volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider declares 1000 mL. Primary lists water and subsequent pH adjustment; no measured post-titration final volume or alternative-seawater composition is inferred."
+  },
+  {
+    "ingredient_or_context": "NH4NO3",
+    "field_path": "ingredients[4].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1453api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1453",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"NH4NO3\",\n                        \"compound_id\": 178,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5"
+      },
+      {
+        "source_key": "dsmz1453",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf",
+        "source_locator": "Primary main table or explicit optional agar sentence",
+        "exact_source_quote": " NH4NO3                                                                       0.2         g",
+        "snapshot_sha256": "db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61",
+        "parsed_text_sha256": "d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467"
+      }
+    ],
+    "rationale": "The literal mass agrees with the nominal provider 1 L basis but has no attached evidence. Preserve source units and scope; do not claim measured post-adjustment volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider declares 1000 mL. Primary lists water and subsequent pH adjustment; no measured post-titration final volume or alternative-seawater composition is inferred."
+  },
+  {
+    "ingredient_or_context": "Distilled water",
+    "field_path": "preparation_steps",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1453api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1453",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5"
+      },
+      {
+        "source_key": "dsmz1453",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf",
+        "source_locator": "Primary main table or explicit optional agar sentence",
+        "exact_source_quote": " Distilled Water                                                          1000.0        ml",
+        "snapshot_sha256": "db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61",
+        "parsed_text_sha256": "d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467"
+      }
+    ],
+    "rationale": "The source 1000 mL distilled-water quantity is absent from preparation text despite the alternative referencing it. Add the solvent basis in the proper preparation scope, retaining the existing full steps.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "MIX",
+            "description": "Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified by adding 12.0 g/l agar."
+          },
+          {
+            "step_number": 2,
+            "action": "MIX",
+            "description": "Note: alternatively, distilled water can be replaced by seawater if the NaCl is omitted."
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "MIX",
+            "description": "Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified by adding 12.0 g/l agar."
+          },
+          {
+            "step_number": 2,
+            "action": "MIX",
+            "description": "Note: alternatively, distilled water can be replaced by seawater if the NaCl is omitted."
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Provider declares 1000 mL. Primary lists water and subsequent pH adjustment; no measured post-titration final volume or alternative-seawater composition is inferred."
+  },
+  {
+    "ingredient_or_context": "Agar",
+    "field_path": "ingredients[5].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1453api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1453",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\": \"for solid medium\",\n                        \"amount\": 12,\n                        \"unit\": \"g\",\n                        \"g_l\": 12,\n                        \"mmol_l\": 35.6792,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5"
+      },
+      {
+        "source_key": "dsmz1453",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf",
+        "source_locator": "Primary main table or explicit optional agar sentence",
+        "exact_source_quote": "12.0 g/l agar.",
+        "snapshot_sha256": "db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61",
+        "parsed_text_sha256": "d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467"
+      }
+    ],
+    "rationale": "The 12 g/L amount is explicitly conditional on solidification. Existing ingredient notes and preparation retain that condition; the unconditional record state still requires an explicit branch decision.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "12",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "12",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider declares 1000 mL. Primary lists water and subsequent pH adjustment; no measured post-titration final volume or alternative-seawater composition is inferred."
+  },
+  {
+    "ingredient_or_context": "NaCl",
+    "field_path": "ingredients[6].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1453api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1453",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 20,\n                        \"unit\": \"g\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5"
+      },
+      {
+        "source_key": "dsmz1453",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf",
+        "source_locator": "Primary main table or explicit optional agar sentence",
+        "exact_source_quote": " NaCl                                                                        20.0         g",
+        "snapshot_sha256": "db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61",
+        "parsed_text_sha256": "d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467"
+      }
+    ],
+    "rationale": "20 g NaCl belongs to the distilled-water branch. The seawater alternative requires omission, not an additional salt dose; preserve both source branches explicitly.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider declares 1000 mL. Primary lists water and subsequent pH adjustment; no measured post-titration final volume or alternative-seawater composition is inferred."
+  },
+  {
+    "ingredient_or_context": "Main pH",
+    "field_path": "preparation.Main_pH",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1453",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf",
+        "source_locator": "Main preparation or alternative paragraph",
+        "exact_source_quote": "Adjust to pH 7.5",
+        "snapshot_sha256": "db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61",
+        "parsed_text_sha256": "d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467"
+      }
+    ],
+    "rationale": "Retain the literal condition and attach evidence; the source gives no fixed titrant dose, seawater ionic composition or autoclave cycle.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_value",
+        "stored": 7.5,
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml",
+        "field_path": "ph_value",
+        "stored": 7.5,
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Preparation pH",
+    "field_path": "preparation.Preparation_pH",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1453",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf",
+        "source_locator": "Main preparation or alternative paragraph",
+        "exact_source_quote": "Adjust to pH 7.5",
+        "snapshot_sha256": "db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61",
+        "parsed_text_sha256": "d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467"
+      }
+    ],
+    "rationale": "Retain the literal condition and attach evidence; the source gives no fixed titrant dose, seawater ionic composition or autoclave cycle.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified by adding 12.0 g/l agar.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified by adding 12.0 g/l agar.",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Optional agar amount",
+    "field_path": "preparation.Optional_agar_amount",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1453",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf",
+        "source_locator": "Main preparation or alternative paragraph",
+        "exact_source_quote": "12.0 g/l agar.",
+        "snapshot_sha256": "db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61",
+        "parsed_text_sha256": "d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467"
+      }
+    ],
+    "rationale": "Retain the literal condition and attach evidence; the source gives no fixed titrant dose, seawater ionic composition or autoclave cycle.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified by adding 12.0 g/l agar.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified by adding 12.0 g/l agar.",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Seawater replacement with NaCl omission",
+    "field_path": "preparation.Seawater_replacement_with_NaCl_omission",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1453",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf",
+        "source_locator": "Main preparation or alternative paragraph",
+        "exact_source_quote": "NaCl is omitted.",
+        "snapshot_sha256": "db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61",
+        "parsed_text_sha256": "d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467"
+      }
+    ],
+    "rationale": "Retain the literal condition and attach evidence; the source gives no fixed titrant dose, seawater ionic composition or autoclave cycle.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Note: alternatively, distilled water can be replaced by seawater if the NaCl is omitted.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Note: alternatively, distilled water can be replaced by seawater if the NaCl is omitted.",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Titrant quantity",
+    "field_path": "preparation.Titrant_quantity",
+    "decision": "not_quantified",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1453",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf",
+        "source_locator": "Main preparation or alternative paragraph",
+        "exact_source_quote": "Adjust to pH 7.5",
+        "snapshot_sha256": "db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61",
+        "parsed_text_sha256": "d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467"
+      }
+    ],
+    "rationale": "Retain the literal condition and attach evidence; the source gives no fixed titrant dose, seawater ionic composition or autoclave cycle.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified by adding 12.0 g/l agar.",
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified by adding 12.0 g/l agar.",
+        "decision": "not_quantified"
+      }
+    ]
+  }
+]
+
+### Exact DSMZ1453 formulation and conditional alternatives
+
+identity: supported. Targets: CultureMech:000919.
+
+The generated target and unique CM000919 owner identify DSMZ 1453. The source is one main formulation with optional agar and a seawater-for-distilled-water alternative requiring NaCl omission; it does not prescribe both saltwater approaches together.
+
+### Every local concentration and solvent basis
+
+consistency: supported. Targets: CultureMech:000919.
+
+All 14 local concentration instances agree with the exact seven source ingredient amounts, subject to the retained agar and seawater conditions. No matching amount currently has attached evidence. The provider nominal 1000 mL basis is separate from measured final volume, and the missing water quantity is inventoried.
+
+### Complex composition and unselected physical-state branch
+
+scope: concern. Targets: CultureMech:000919.
+
+COMPLEX/UNDEFINED is supported by tryptone and yeast extract. SOLID_AGAR is unconditional although the source and local prose make 12 g/L agar optional; no explicit selected-branch statement resolves this. The seawater alternative must remain coupled to NaCl omission.
+
+### Generic salts and missing optional links
+
+grounding: concern. Targets: CultureMech:000919.
+
+NH4NO3, NaCl and agar identities agree with their source names. Generic sodium acetate and sodium citrate are associated with water-free formula terms, and the citrate term explicitly represents the trisodium salt; the source does not independently specify hydration or citrate stoichiometry. These are bounded specificity limits, not proof of an alternative form. Tryptone and yeast extract lack ontology links but remain explicit complex ingredients; no substitute identifier is guessed.
+
+### Preserved autoclaving, solvent alternative and bounded source omissions
+
+completeness: concern. Targets: CultureMech:000919.
+
+Both local layers preserve pH 7.5, autoclaving, optional agar and seawater replacement conditional on NaCl omission, without attached evidence. They omit the 1000 mL water basis, the Biomaris MeeresTIEFwasser example and the DSM 25986 comparative note. No autoclave temperature/duration is supplied by this source and none is inferred.
+
+### Accession observation versus absent taxon/growth records
+
+scope: supported. Targets: CultureMech:000919.
+
+No target organism, taxon, assembly, DOI/PMID or strain-specific growth claim is asserted locally. The exact DSM 25986 seawater observation is an evidence-backed curation candidate only after accession identity is independently resolved; it is not generalized to every organism or to an unrecorded strain.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:000919.
+
+15 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Current owner and generated correspondence
+
+provenance: supported. Targets: CultureMech:000919.
+
+The maintained owner and generated target agree scientifically; the target adds merge metadata. Both need the same bounded evidence and branch clarification. Current importer/merge/cleanup context was read and hash-checked without asserting a historical replay.
+
+## Findings
+
+### f1: Optional agar is presented under an unconditional solid-state classification
+
+major / open / confirmed; issue key: culturemech.000919.branch-scope.
+
+The source and local notes preserve optional 12 g/L agar, but SOLID_AGAR does not document a chosen branch. A separate seawater alternative requires omission of NaCl; branch scope should be explicit rather than inferred from the ingredient list.
+
+### f2: Source-supported quantities and conditions lack attached evidence
+
+minor / open / confirmed; issue key: culturemech.000919.source-evidence.
+
+All seven amounts and pH/preparation have no claim-level evidence. The solvent quantity, named seawater example and accession-specific observation are omitted, while generic sodium salts carry narrower structural choices than the recipe states.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Document the intended agar branch or represent the source alternatives explicitly, keeping 12 g/L agar conditional and coupling seawater substitution to NaCl omission. Preserve the supported amounts and attach branch-specific evidence before regeneration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Attach exact source snippets for each amount and preparation condition, restore the solvent basis and preserve the source example as an example. Verify source-specific salt form choices and DSM accession identity before adding narrower assertions; do not invent a replacement form or broad growth claim.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch025/243/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-025/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch025/243/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml:1:id: CultureMech:000919<br>./data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml:1:id: CultureMech:000919<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch025/source-preflight-bound/243/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 7 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch025/source-preflight-bound/243/evidence-context-original.json; Complete frozen source context rebound to every fresh native input | context_only | All context input hashes match the fresh native inspection. The preflight remains historical preparation; this assessment uses the current bound record catalog and native input hashes. |
+| dsmz1453 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf; Complete main table, optional agar paragraph, seawater alternative and final accession-specific observation | supports | All amounts and alternative conditions read; provider main nominal volume is 1000 mL. The final DSM accession observation is not a taxon assignment. |
+| mediadive1453api | https://mediadive.dsmz.de/rest/medium/1453; Complete main table, optional agar paragraph, seawater alternative and final accession-specific observation | supports | All amounts and alternative conditions read; provider main nominal volume is 1000 mL. The final DSM accession observation is not a taxon assignment. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:2509 resolves to agar. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32954 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32954 resolves to sodium acetate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi53258 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53258; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:53258 resolves to sodium citrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63038 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63038; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63038 resolves to ammonium nitrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32954": [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53258": [{"label": "Trisodium citrate", "match_type": "preferred_term", "identifier": "CHEBI:53258", "preferred_term": "Trisodium citrate", "ontology_id": "CHEBI:53258", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:63038": [{"label": "(NH4)NO3", "match_type": "preferred_term", "identifier": "CHEBI:63038", "preferred_term": "(NH4)NO3", "ontology_id": "CHEBI:63038", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch025/243/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| quantity-local-fields | /private/tmp/culturemech-review-work-batch025/243/quantity-local-field-audit.json; All quantity layer paths and exact stored values against full inspected YAML | context_only | Every local concentration is covered; every layer locator resolves to its exact stored value or explicitly absent intended container. Source locators remain in source_snippets. |
+| accession-observation | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf; Final primary sentence | supports | The primary reports a comparative observation only for DSM 25986; no independent strain equivalence or taxonomy was established. |
+| writer-context-0 | src/culturemech/merge/formulation.py; formulation_content lines 48–70; merge_formulation_evidence lines 92–128 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-1 | src/culturemech/import/mediadive_importer.py; _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570; _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps lines 653–721 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-2 | scripts/cleanup_media_quality.py; normalize_name lines 76–82; _merge_ingredient_group lines 148–216 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| history-metadata | data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml; data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml", "events": 7, "timestamp_issues": []}] |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- No independent DSM 25986 taxonomy/strain-equivalence lookup was performed. The primary comparative statement is preserved with exact accession scope only.
+- Water-free salt formulas and trisodium-citrate structure are narrower than generic source wording; no alternative hydrate or stoichiometry is inferred. The source gives no autoclave cycle or measured post-adjustment volume.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T143007Z-culturemech-000919-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: alterythrobacter_medium_216l (CultureMech:000919)'
+started_at: '2026-10-21T14:22:38Z'
+finished_at: '2026-10-21T14:30:07Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The seven ingredient amounts agree with DSMZ 1453 on the nominal one-liter
+  basis, but the record combines an optional agar branch with unconditional SOLID_AGAR
+  classification. The seawater alternative correctly requires NaCl omission in prose
+  yet has no explicit branch representation. Source amounts, pH and preparation lack
+  attached evidence; the source-specific seawater example and DSM 25986 observation
+  remain omitted. Generic sodium-salt wording does not independently settle every
+  hydration/stoichiometric choice.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml
+    sha256: 698d6fb1bbb17735b47f3dee9b297e90a415f969758277c3a7d8cad36ce2a6f0
+    role: target
+  - path: data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml
+    sha256: fc7031e36f4e929d54672fc1f7b2c7afae27c4bd03fe3b6e68c5d61a0d953c23
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 243; batch 025 item 3 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-four task batches
+    contain 240 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 243 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000919
+targets:
+- target_id: CultureMech:000919
+  path: data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml
+  label: alterythrobacter_medium_216l
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:000919
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch025/243/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-025/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch025/243/strict.tsv"
+  target_ids:
+  - CultureMech:000919
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:000919
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:000919
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:000919
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T14:30:06Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T14:30:06Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:23:15.015352Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch025/243/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:23:16.696968Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-025/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch025/243/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:23:19.257639Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:23:20.611513Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T14:30:06Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml:1:id: CultureMech:000919
+
+    ./data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml:1:id: CultureMech:000919
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/source-preflight-bound/243/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T14:30:06Z'
+  support: supports
+  summary: 7 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 86d8fe01efa24b97cfe48e181ff9eee15685e4edaeb3326d933bce6d9b8f48ee
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/source-preflight-bound/243/evidence-context-original.json
+  locator: Complete frozen source context rebound to every fresh native input
+  accessed_at: '2026-10-21T14:30:06Z'
+  support: context_only
+  summary: All context input hashes match the fresh native inspection. The preflight
+    remains historical preparation; this assessment uses the current bound record
+    catalog and native input hashes.
+  snapshot_sha256: ad53150e539c811f66f1d586251115ab313066345f5d6ae1826cc967cb595f63
+- evidence_id: dsmz1453
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf
+  locator: Complete main table, optional agar paragraph, seawater alternative and
+    final accession-specific observation
+  accessed_at: '2026-10-21T14:05:44.053676Z'
+  support: supports
+  summary: All amounts and alternative conditions read; provider main nominal volume
+    is 1000 mL. The final DSM accession observation is not a taxon assignment.
+  snapshot_sha256: db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61
+- evidence_id: mediadive1453api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1453
+  locator: Complete main table, optional agar paragraph, seawater alternative and
+    final accession-specific observation
+  accessed_at: '2026-10-21T14:05:42.867397Z'
+  support: supports
+  summary: All amounts and alternative conditions read; provider main nominal volume
+    is 1000 mL. The final DSM accession observation is not a taxon assignment.
+  snapshot_sha256: 8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi32954
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:00:48.206583Z'
+  support: supports
+  summary: CHEBI:32954 resolves to sodium acetate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 573cba85f57c363463610a20b17be618893d6432ba239604fbd8aa562f98161b
+- evidence_id: chebi53258
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53258
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:54.823692Z'
+  support: supports
+  summary: CHEBI:53258 resolves to sodium citrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2a35c6dc3532c2276c6b19aef0992260e14b1fc36423fa3eb812bb94f63c4371
+- evidence_id: chebi63038
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63038
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T12:23:44.217684Z'
+  support: supports
+  summary: CHEBI:63038 resolves to ammonium nitrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 3e84a6e44c936aaa0dd03b53fbb9592dccb6de0f8331244a80e4f2292296b2c4
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T14:30:06Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:2509":
+    [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32954": [{"label":
+    "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954", "preferred_term":
+    "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:53258": [{"label": "Trisodium citrate", "match_type": "preferred_term",
+    "identifier": "CHEBI:53258", "preferred_term": "Trisodium citrate", "ontology_id":
+    "CHEBI:53258", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:63038":
+    [{"label": "(NH4)NO3", "match_type": "preferred_term", "identifier": "CHEBI:63038",
+    "preferred_term": "(NH4)NO3", "ontology_id": "CHEBI:63038", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/243/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T14:30:06Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: c1ac1000a112f0d3182afd5b4ee40e327f659f1cef73ef883d6fbbc361d9054c
+- evidence_id: quantity-local-fields
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/243/quantity-local-field-audit.json
+  locator: All quantity layer paths and exact stored values against full inspected
+    YAML
+  accessed_at: '2026-10-21T14:30:06Z'
+  support: context_only
+  summary: Every local concentration is covered; every layer locator resolves to its
+    exact stored value or explicitly absent intended container. Source locators remain
+    in source_snippets.
+  snapshot_sha256: a8a8c0ca4ace2fddd9b1566c31be52aaef647e439f7db68661f426dd037a3123
+- evidence_id: accession-observation
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf
+  locator: Final primary sentence
+  accessed_at: '2026-10-21T14:05:44.053676Z'
+  support: supports
+  summary: The primary reports a comparative observation only for DSM 25986; no independent
+    strain equivalence or taxonomy was established.
+  quote: DSM 25986 shows better growth with seawater than with NaCl.
+  snapshot_sha256: db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61
+- evidence_id: writer-context-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content lines 48–70; merge_formulation_evidence lines 92–128
+  accessed_at: '2026-10-21T14:30:06Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-context-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570;
+    _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps
+    lines 653–721
+  accessed_at: '2026-10-21T14:30:06Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-context-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: normalize_name lines 76–82; _merge_ingredient_group lines 148–216
+  accessed_at: '2026-10-21T14:30:06Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ALTERYTHROBACTER_MEDIUM_216L.yaml; data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T14:30:06Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml",
+    "events": 7, "timestamp_issues": []}]'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:000919
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '5 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 5/7 primary
+    and 5/7 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:000919
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi2509
+  - chebi26710
+  - chebi32954
+  - chebi53258
+  - chebi63038
+  details: 'Instance coverage on a 0–100 percent scale, denominator 7: primary 71.43%;
+    secondary 71.43%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 13 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:000919
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"ingredient_or_context\": \"Sodium acetate\",\n    \"field_path\"\
+    : \"ingredients[0].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1453api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1453\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 1,\\\
+    n                        \\\"compound\\\": \\\"Sodium acetate\\\",\\n        \
+    \                \\\"compound_id\\\": 731,\\n                        \\\"amount\\\
+    \": 1,\\n                        \\\"unit\\\": \\\"g\\\",\\n                 \
+    \       \\\"g_l\\\": 1,\\n                        \\\"mmol_l\\\": 12.1907,\\n\
+    \                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1453\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf\",\n   \
+    \     \"source_locator\": \"Primary main table or explicit optional agar sentence\"\
+    ,\n        \"exact_source_quote\": \" Sodium Acetate                         \
+    \                                      1.0         g\",\n        \"snapshot_sha256\"\
+    : \"db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61\",\n    \
+    \    \"parsed_text_sha256\": \"d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal mass agrees with the nominal\
+    \ provider 1 L basis but has no attached evidence. Preserve source units and scope;\
+    \ do not claim measured post-adjustment volume.\",\n    \"action_taken\": \"Review\
+    \ only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider declares 1000 mL. Primary lists water and subsequent pH adjustment;\
+    \ no measured post-titration final volume or alternative-seawater composition\
+    \ is inferred.\"\n  },\n  {\n    \"ingredient_or_context\": \"Tryptone\",\n  \
+    \  \"field_path\": \"ingredients[1].concentration\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1453api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1453\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[1]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 2,\\\
+    n                        \\\"compound\\\": \\\"Tryptone\\\",\\n              \
+    \          \\\"compound_id\\\": 71,\\n                        \\\"amount\\\":\
+    \ 10,\\n                        \\\"unit\\\": \\\"g\\\",\\n                  \
+    \      \\\"g_l\\\": 10,\\n                        \\\"mmol_l\\\": 140.687,\\n\
+    \                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1453\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf\",\n   \
+    \     \"source_locator\": \"Primary main table or explicit optional agar sentence\"\
+    ,\n        \"exact_source_quote\": \" Tryptone                               \
+    \                                     10.0         g\",\n        \"snapshot_sha256\"\
+    : \"db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61\",\n    \
+    \    \"parsed_text_sha256\": \"d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal mass agrees with the nominal\
+    \ provider 1 L basis but has no attached evidence. Preserve source units and scope;\
+    \ do not claim measured post-adjustment volume.\",\n    \"action_taken\": \"Review\
+    \ only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"ingredients[1].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider declares 1000 mL. Primary lists water and subsequent pH adjustment;\
+    \ no measured post-titration final volume or alternative-seawater composition\
+    \ is inferred.\"\n  },\n  {\n    \"ingredient_or_context\": \"Yeast extract\"\
+    ,\n    \"field_path\": \"ingredients[2].concentration\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive1453api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1453\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 3,\\\
+    n                        \\\"compound\\\": \\\"Yeast extract\\\",\\n         \
+    \               \\\"compound_id\\\": 16,\\n                        \\\"amount\\\
+    \": 2,\\n                        \\\"unit\\\": \\\"g\\\",\\n                 \
+    \       \\\"g_l\\\": 2,\\n                        \\\"optional\\\": 0\\n     \
+    \               }\",\n        \"snapshot_sha256\": \"8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1453\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf\",\n   \
+    \     \"source_locator\": \"Primary main table or explicit optional agar sentence\"\
+    ,\n        \"exact_source_quote\": \" Yeast Extract                          \
+    \                                      2.0         g\",\n        \"snapshot_sha256\"\
+    : \"db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61\",\n    \
+    \    \"parsed_text_sha256\": \"d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal mass agrees with the nominal\
+    \ provider 1 L basis but has no attached evidence. Preserve source units and scope;\
+    \ do not claim measured post-adjustment volume.\",\n    \"action_taken\": \"Review\
+    \ only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"2\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider declares 1000 mL. Primary lists water and subsequent pH adjustment;\
+    \ no measured post-titration final volume or alternative-seawater composition\
+    \ is inferred.\"\n  },\n  {\n    \"ingredient_or_context\": \"Sodium citrate\"\
+    ,\n    \"field_path\": \"ingredients[3].concentration\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive1453api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1453\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"Sodium citrate\\\",\\n        \
+    \                \\\"compound_id\\\": 792,\\n                        \\\"amount\\\
+    \": 0.5,\\n                        \\\"unit\\\": \\\"g\\\",\\n               \
+    \         \\\"g_l\\\": 0.5,\\n                        \\\"mmol_l\\\": 1.93746,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1453\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf\",\n   \
+    \     \"source_locator\": \"Primary main table or explicit optional agar sentence\"\
+    ,\n        \"exact_source_quote\": \" Sodium Citrate                         \
+    \                                      0.5         g\",\n        \"snapshot_sha256\"\
+    : \"db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61\",\n    \
+    \    \"parsed_text_sha256\": \"d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal mass agrees with the nominal\
+    \ provider 1 L basis but has no attached evidence. Preserve source units and scope;\
+    \ do not claim measured post-adjustment volume.\",\n    \"action_taken\": \"Review\
+    \ only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"ingredients[3].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider declares 1000 mL. Primary lists water and subsequent pH adjustment;\
+    \ no measured post-titration final volume or alternative-seawater composition\
+    \ is inferred.\"\n  },\n  {\n    \"ingredient_or_context\": \"NH4NO3\",\n    \"\
+    field_path\": \"ingredients[4].concentration\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1453api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1453\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 5,\\\
+    n                        \\\"compound\\\": \\\"NH4NO3\\\",\\n                \
+    \        \\\"compound_id\\\": 178,\\n                        \\\"amount\\\": 0.2,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 0.2,\\n                        \\\"optional\\\": 0\\n             \
+    \       }\",\n        \"snapshot_sha256\": \"8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1453\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf\",\n   \
+    \     \"source_locator\": \"Primary main table or explicit optional agar sentence\"\
+    ,\n        \"exact_source_quote\": \" NH4NO3                                 \
+    \                                      0.2         g\",\n        \"snapshot_sha256\"\
+    : \"db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61\",\n    \
+    \    \"parsed_text_sha256\": \"d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal mass agrees with the nominal\
+    \ provider 1 L basis but has no attached evidence. Preserve source units and scope;\
+    \ do not claim measured post-adjustment volume.\",\n    \"action_taken\": \"Review\
+    \ only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.2\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider declares 1000 mL. Primary lists water and subsequent pH adjustment;\
+    \ no measured post-titration final volume or alternative-seawater composition\
+    \ is inferred.\"\n  },\n  {\n    \"ingredient_or_context\": \"Distilled water\"\
+    ,\n    \"field_path\": \"preparation_steps\",\n    \"decision\": \"add\",\n  \
+    \  \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1453api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1453\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[5]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 6,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 1000,\\n                        \\\"unit\\\": \\\"ml\\\",\\n             \
+    \           \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz1453\",\n        \"source_url\":\
+    \ \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf\",\n   \
+    \     \"source_locator\": \"Primary main table or explicit optional agar sentence\"\
+    ,\n        \"exact_source_quote\": \" Distilled Water                        \
+    \                                  1000.0        ml\",\n        \"snapshot_sha256\"\
+    : \"db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61\",\n    \
+    \    \"parsed_text_sha256\": \"d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467\"\
+    \n      }\n    ],\n    \"rationale\": \"The source 1000 mL distilled-water quantity\
+    \ is absent from preparation text despite the alternative referencing it. Add\
+    \ the solvent basis in the proper preparation scope, retaining the existing full\
+    \ steps.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": [\n          {\n            \"step_number\"\
+    : 1,\n            \"action\": \"MIX\",\n            \"description\": \"Adjust\
+    \ to pH 7.5 and sterilize by autoclaving. The medium may be solidified by adding\
+    \ 12.0 g/l agar.\"\n          },\n          {\n            \"step_number\": 2,\n\
+    \            \"action\": \"MIX\",\n            \"description\": \"Note: alternatively,\
+    \ distilled water can be replaced by seawater if the NaCl is omitted.\"\n    \
+    \      }\n        ],\n        \"decision\": \"add\"\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"MIX\",\n\
+    \            \"description\": \"Adjust to pH 7.5 and sterilize by autoclaving.\
+    \ The medium may be solidified by adding 12.0 g/l agar.\"\n          },\n    \
+    \      {\n            \"step_number\": 2,\n            \"action\": \"MIX\",\n\
+    \            \"description\": \"Note: alternatively, distilled water can be replaced\
+    \ by seawater if the NaCl is omitted.\"\n          }\n        ],\n        \"decision\"\
+    : \"add\"\n      }\n    ],\n    \"arithmetic\": \"Provider declares 1000 mL. Primary\
+    \ lists water and subsequent pH adjustment; no measured post-titration final volume\
+    \ or alternative-seawater composition is inferred.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Agar\",\n    \"field_path\": \"ingredients[5].concentration\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"mediadive1453api\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/medium/1453\",\n        \"source_locator\": \"\
+    $.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n     \
+    \                   \\\"recipe_order\\\": 7,\\n                        \\\"compound\\\
+    \": \\\"Agar\\\",\\n                        \\\"compound_id\\\": 3,\\n       \
+    \                 \\\"condition\\\": \\\"for solid medium\\\",\\n            \
+    \            \\\"amount\\\": 12,\\n                        \\\"unit\\\": \\\"\
+    g\\\",\\n                        \\\"g_l\\\": 12,\\n                        \\\
+    \"mmol_l\\\": 35.6792,\\n                        \\\"optional\\\": 0\\n      \
+    \              }\",\n        \"snapshot_sha256\": \"8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1453\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf\",\n   \
+    \     \"source_locator\": \"Primary main table or explicit optional agar sentence\"\
+    ,\n        \"exact_source_quote\": \"12.0 g/l agar.\",\n        \"snapshot_sha256\"\
+    : \"db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61\",\n    \
+    \    \"parsed_text_sha256\": \"d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467\"\
+    \n      }\n    ],\n    \"rationale\": \"The 12 g/L amount is explicitly conditional\
+    \ on solidification. Existing ingredient notes and preparation retain that condition;\
+    \ the unconditional record state still requires an explicit branch decision.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[5].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"12\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"12\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider declares 1000 mL. Primary lists water and subsequent pH adjustment;\
+    \ no measured post-titration final volume or alternative-seawater composition\
+    \ is inferred.\"\n  },\n  {\n    \"ingredient_or_context\": \"NaCl\",\n    \"\
+    field_path\": \"ingredients[6].concentration\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1453api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1453\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[7]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 8,\\\
+    n                        \\\"compound\\\": \\\"NaCl\\\",\\n                  \
+    \      \\\"compound_id\\\": 43,\\n                        \\\"amount\\\": 20,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    8bb067776f7c3698a3ea2f1e611e31a3cf22d2be755b2b4bedb43a27fe9bbcd5\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz1453\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf\"\
+    ,\n        \"source_locator\": \"Primary main table or explicit optional agar\
+    \ sentence\",\n        \"exact_source_quote\": \" NaCl                       \
+    \                                                 20.0         g\",\n        \"\
+    snapshot_sha256\": \"db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61\"\
+    ,\n        \"parsed_text_sha256\": \"d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467\"\
+    \n      }\n    ],\n    \"rationale\": \"20 g NaCl belongs to the distilled-water\
+    \ branch. The seawater alternative requires omission, not an additional salt dose;\
+    \ preserve both source branches explicitly.\",\n    \"action_taken\": \"Review\
+    \ only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"20\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider declares 1000 mL. Primary lists water and subsequent pH adjustment;\
+    \ no measured post-titration final volume or alternative-seawater composition\
+    \ is inferred.\"\n  },\n  {\n    \"ingredient_or_context\": \"Main pH\",\n   \
+    \ \"field_path\": \"preparation.Main_pH\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1453\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation or alternative paragraph\",\n\
+    \        \"exact_source_quote\": \"Adjust to pH 7.5\",\n        \"snapshot_sha256\"\
+    : \"db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61\",\n    \
+    \    \"parsed_text_sha256\": \"d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal condition and attach\
+    \ evidence; the source gives no fixed titrant dose, seawater ionic composition\
+    \ or autoclave cycle.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ph_value\",\n        \"stored\": 7.5,\n        \"decision\"\
+    : \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.5,\n        \"\
+    decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Preparation pH\",\n    \"field_path\": \"preparation.Preparation_pH\",\n \
+    \   \"decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1453\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf\",\n       \
+    \ \"source_locator\": \"Main preparation or alternative paragraph\",\n       \
+    \ \"exact_source_quote\": \"Adjust to pH 7.5\",\n        \"snapshot_sha256\":\
+    \ \"db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61\",\n    \
+    \    \"parsed_text_sha256\": \"d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal condition and attach\
+    \ evidence; the source gives no fixed titrant dose, seawater ionic composition\
+    \ or autoclave cycle.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified\
+    \ by adding 12.0 g/l agar.\",\n        \"decision\": \"evidence_only\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified\
+    \ by adding 12.0 g/l agar.\",\n        \"decision\": \"evidence_only\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Optional agar amount\"\
+    ,\n    \"field_path\": \"preparation.Optional_agar_amount\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz1453\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation or alternative paragraph\",\n\
+    \        \"exact_source_quote\": \"12.0 g/l agar.\",\n        \"snapshot_sha256\"\
+    : \"db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61\",\n    \
+    \    \"parsed_text_sha256\": \"d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal condition and attach\
+    \ evidence; the source gives no fixed titrant dose, seawater ionic composition\
+    \ or autoclave cycle.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified\
+    \ by adding 12.0 g/l agar.\",\n        \"decision\": \"evidence_only\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified\
+    \ by adding 12.0 g/l agar.\",\n        \"decision\": \"evidence_only\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Seawater replacement with\
+    \ NaCl omission\",\n    \"field_path\": \"preparation.Seawater_replacement_with_NaCl_omission\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1453\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf\",\n       \
+    \ \"source_locator\": \"Main preparation or alternative paragraph\",\n       \
+    \ \"exact_source_quote\": \"NaCl is omitted.\",\n        \"snapshot_sha256\":\
+    \ \"db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61\",\n    \
+    \    \"parsed_text_sha256\": \"d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal condition and attach\
+    \ evidence; the source gives no fixed titrant dose, seawater ionic composition\
+    \ or autoclave cycle.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Note: alternatively, distilled water can be replaced by seawater if the NaCl\
+    \ is omitted.\",\n        \"decision\": \"evidence_only\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Note: alternatively, distilled water can be replaced by seawater if the NaCl\
+    \ is omitted.\",\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"Titrant quantity\",\n    \"field_path\"\
+    : \"preparation.Titrant_quantity\",\n    \"decision\": \"not_quantified\",\n \
+    \   \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1453\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation or alternative paragraph\",\n\
+    \        \"exact_source_quote\": \"Adjust to pH 7.5\",\n        \"snapshot_sha256\"\
+    : \"db9fc08b55f391fa3d59bef3f3ac33d14bd9528ed28ada9008bf10fc602bcc61\",\n    \
+    \    \"parsed_text_sha256\": \"d753b0211ed865673b5cbf327754cb2988c00a467a586b42af183e740c3fd467\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal condition and attach\
+    \ evidence; the source gives no fixed titrant dose, seawater ionic composition\
+    \ or autoclave cycle.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified\
+    \ by adding 12.0 g/l agar.\",\n        \"decision\": \"not_quantified\"\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified\
+    \ by adding 12.0 g/l agar.\",\n        \"decision\": \"not_quantified\"\n    \
+    \  }\n    ]\n  }\n]"
+- assessment_id: identity
+  area: identity
+  topic: Exact DSMZ1453 formulation and conditional alternatives
+  outcome: supported
+  summary: The generated target and unique CM000919 owner identify DSMZ 1453. The
+    source is one main formulation with optional agar and a seawater-for-distilled-water
+    alternative requiring NaCl omission; it does not prescribe both saltwater approaches
+    together.
+  target_ids:
+  - CultureMech:000919
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - dsmz1453
+  - mediadive1453api
+- assessment_id: source-stage-consistency
+  area: consistency
+  topic: Every local concentration and solvent basis
+  outcome: supported
+  summary: All 14 local concentration instances agree with the exact seven source
+    ingredient amounts, subject to the retained agar and seawater conditions. No matching
+    amount currently has attached evidence. The provider nominal 1000 mL basis is
+    separate from measured final volume, and the missing water quantity is inventoried.
+  target_ids:
+  - CultureMech:000919
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1453
+  - mediadive1453api
+  - quantity-inventory
+  - quantity-local-fields
+- assessment_id: classification
+  area: scope
+  topic: Complex composition and unselected physical-state branch
+  outcome: concern
+  summary: COMPLEX/UNDEFINED is supported by tryptone and yeast extract. SOLID_AGAR
+    is unconditional although the source and local prose make 12 g/L agar optional;
+    no explicit selected-branch statement resolves this. The seawater alternative
+    must remain coupled to NaCl omission.
+  target_ids:
+  - CultureMech:000919
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1453
+  - quantity-inventory
+- assessment_id: forms
+  area: grounding
+  topic: Generic salts and missing optional links
+  outcome: concern
+  summary: NH4NO3, NaCl and agar identities agree with their source names. Generic
+    sodium acetate and sodium citrate are associated with water-free formula terms,
+    and the citrate term explicitly represents the trisodium salt; the source does
+    not independently specify hydration or citrate stoichiometry. These are bounded
+    specificity limits, not proof of an alternative form. Tryptone and yeast extract
+    lack ontology links but remain explicit complex ingredients; no substitute identifier
+    is guessed.
+  target_ids:
+  - CultureMech:000919
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1453
+  - chebi32954
+  - chebi53258
+  - chebi63038
+  - chebi2509
+  - chebi26710
+- assessment_id: preparation
+  area: completeness
+  topic: Preserved autoclaving, solvent alternative and bounded source omissions
+  outcome: concern
+  summary: Both local layers preserve pH 7.5, autoclaving, optional agar and seawater
+    replacement conditional on NaCl omission, without attached evidence. They omit
+    the 1000 mL water basis, the Biomaris MeeresTIEFwasser example and the DSM 25986
+    comparative note. No autoclave temperature/duration is supplied by this source
+    and none is inferred.
+  target_ids:
+  - CultureMech:000919
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1453
+  - accession-observation
+  - quantity-inventory
+- assessment_id: biological-scope
+  area: scope
+  topic: Accession observation versus absent taxon/growth records
+  outcome: supported
+  summary: No target organism, taxon, assembly, DOI/PMID or strain-specific growth
+    claim is asserted locally. The exact DSM 25986 seawater observation is an evidence-backed
+    curation candidate only after accession identity is independently resolved; it
+    is not generalized to every organism or to an unrecorded strain.
+  target_ids:
+  - CultureMech:000919
+  evidence_ids:
+  - record
+  - owner-0
+  - accession-observation
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 15 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:000919
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: generation
+  area: provenance
+  topic: Current owner and generated correspondence
+  outcome: supported
+  summary: The maintained owner and generated target agree scientifically; the target
+    adds merge metadata. Both need the same bounded evidence and branch clarification.
+    Current importer/merge/cleanup context was read and hash-checked without asserting
+    a historical replay.
+  target_ids:
+  - CultureMech:000919
+  evidence_ids:
+  - record
+  - owner-0
+  - history-metadata
+  - writer-context-0
+  - writer-context-1
+  - writer-context-2
+findings:
+- finding_id: f1
+  issue_key: culturemech.000919.branch-scope
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Optional agar is presented under an unconditional solid-state classification
+  description: The source and local notes preserve optional 12 g/L agar, but SOLID_AGAR
+    does not document a chosen branch. A separate seawater alternative requires omission
+    of NaCl; branch scope should be explicit rather than inferred from the ingredient
+    list.
+  target_ids:
+  - CultureMech:000919
+  field_paths:
+  - physical_state
+  - ingredients[5]
+  - ingredients[6]
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1453
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.000919.source-evidence
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source-supported quantities and conditions lack attached evidence
+  description: All seven amounts and pH/preparation have no claim-level evidence.
+    The solvent quantity, named seawater example and accession-specific observation
+    are omitted, while generic sodium salts carry narrower structural choices than
+    the recipe states.
+  target_ids:
+  - CultureMech:000919
+  field_paths:
+  - ingredients
+  - ph_value
+  - preparation_steps
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1453
+  - accession-observation
+  - chebi32954
+  - chebi53258
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Document the intended agar branch or represent the source alternatives
+    explicitly, keeping 12 g/L agar conditional and coupling seawater substitution
+    to NaCl omission. Preserve the supported amounts and attach branch-specific evidence
+    before regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000919
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Attach exact source snippets for each amount and preparation condition,
+    restore the solvent basis and preserve the source example as an example. Verify
+    source-specific salt form choices and DSM accession identity before adding narrower
+    assertions; do not invent a replacement form or broad growth claim.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000919
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alterythrobacter_medium_216l.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- No independent DSM 25986 taxonomy/strain-equivalence lookup was performed. The primary
+  comparative statement is preserved with exact accession scope only.
+- Water-free salt formulas and trisodium-citrate structure are narrower than generic
+  source wording; no alternative hydrate or stoichiometry is inferred. The source
+  gives no autoclave cycle or measured post-adjustment volume.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-025
+- generated-medium
+```

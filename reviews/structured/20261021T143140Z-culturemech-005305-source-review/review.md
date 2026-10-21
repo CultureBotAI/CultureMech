@@ -1,0 +1,2419 @@
+# Source and formulation review: amb_medium (CultureMech:005305)
+
+- Review: 20261021T143140Z-culturemech-005305-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T14:22:39Z
+- Finished UTC: 2026-10-21T14:31:40Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+AMB medium has matching source quantities in all three local layers, but the generated record predates the two owners’ October 7 amount-evidence repairs and retains none of their 18 claims. It also omits the DSMZ owner’s provider-supported anaerobic Hungate preparation. Both owners still omit the source soluble-starch qualifier. The exact source-duplicate links resolve; malformed and timezone-naive historical timestamps require append-only clarification rather than invented corrections.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 244; batch 025 item 4 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-four task batches contain 240 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 243 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:005305 | data/merge_yaml/merged/AMB_MEDIUM.yaml | generated | amb_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:005305 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:005305 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-025/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch025/244/strict.tsv |
+| validate-terms | passed | True | CultureMech:005305 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:005305 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:005305 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: komodoDetail455 | unavailable | False | CultureMech:005305 | The KOMODO detail endpoint returned HTTP 403. The exact public catalog row and complete linked DSMZ primary/provider remain available for this base-medium identity; unobserved historical variants are not inferred. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:005305.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: supported. Targets: CultureMech:005305.
+
+7 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 7/10 primary and 7/10 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 10: primary 70.00%; secondary 70.00%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:005305.
+
+13 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "ingredient_or_context": "Trypticase peptone",
+    "field_path": "ingredients[0].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/455",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Trypticase peptone\",\n                        \"compound_id\": 124,\n                        \"amount\": 4,\n                        \"unit\": \"g\",\n                        \"g_l\": 4,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40"
+      },
+      {
+        "source_key": "dsmz455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf",
+        "source_locator": "Primary table row 1",
+        "exact_source_quote": " Trypticase peptone                                                           4.00          g",
+        "snapshot_sha256": "57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd",
+        "parsed_text_sha256": "5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9"
+      }
+    ],
+    "rationale": "Matching nominal main amount already has exact attached evidence in each maintained owner; retain those two claims and reconcile/regenerate the target instead of repeating the owner repair. Target lacks evidence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "4",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "4",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amb_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "4",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      }
+    ],
+    "arithmetic": "Provider volume is nominal 1000 mL; water alone does not establish measured final volume. No density or dilution is inferred."
+  },
+  {
+    "ingredient_or_context": "Yeast extract",
+    "field_path": "ingredients[1].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/455",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40"
+      },
+      {
+        "source_key": "dsmz455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf",
+        "source_locator": "Primary table row 2",
+        "exact_source_quote": " Yeast extract                                                                5.00          g",
+        "snapshot_sha256": "57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd",
+        "parsed_text_sha256": "5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9"
+      }
+    ],
+    "rationale": "Matching nominal main amount already has exact attached evidence in each maintained owner; retain those two claims and reconcile/regenerate the target instead of repeating the owner repair. Target lacks evidence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amb_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      }
+    ],
+    "arithmetic": "Provider volume is nominal 1000 mL; water alone does not establish measured final volume. No density or dilution is inferred."
+  },
+  {
+    "ingredient_or_context": "Starch",
+    "field_path": "ingredients[2].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/455",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Starch\",\n                        \"compound_id\": 199,\n                        \"condition\": \"\",\n                        \"attribute\": \"soluble\",\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40"
+      },
+      {
+        "source_key": "dsmz455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf",
+        "source_locator": "Primary table row 3",
+        "exact_source_quote": " Starch, soluble                                                              1.00          g",
+        "snapshot_sha256": "57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd",
+        "parsed_text_sha256": "5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9"
+      }
+    ],
+    "rationale": "The 1 g amount agrees, but no local layer has attached amount evidence and all omit the soluble qualifier.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amb_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider volume is nominal 1000 mL; water alone does not establish measured final volume. No density or dilution is inferred."
+  },
+  {
+    "ingredient_or_context": "Meat infusion",
+    "field_path": "ingredients[3].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/455",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Meat infusion\",\n                        \"compound_id\": 491,\n                        \"amount\": 25,\n                        \"unit\": \"g\",\n                        \"g_l\": 25,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40"
+      },
+      {
+        "source_key": "dsmz455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf",
+        "source_locator": "Primary table row 4",
+        "exact_source_quote": " Meat infusion                                                               25.00          g",
+        "snapshot_sha256": "57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd",
+        "parsed_text_sha256": "5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9"
+      }
+    ],
+    "rationale": "Matching nominal main amount already has exact attached evidence in each maintained owner; retain those two claims and reconcile/regenerate the target instead of repeating the owner repair. Target lacks evidence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "25",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "25",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amb_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "25",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      }
+    ],
+    "arithmetic": "Provider volume is nominal 1000 mL; water alone does not establish measured final volume. No density or dilution is inferred."
+  },
+  {
+    "ingredient_or_context": "Glucose",
+    "field_path": "ingredients[4].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/455",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 27.7531,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40"
+      },
+      {
+        "source_key": "dsmz455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf",
+        "source_locator": "Primary table row 5",
+        "exact_source_quote": " Glucose                                                                      5.00          g",
+        "snapshot_sha256": "57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd",
+        "parsed_text_sha256": "5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9"
+      }
+    ],
+    "rationale": "Matching nominal main amount already has exact attached evidence in each maintained owner; retain those two claims and reconcile/regenerate the target instead of repeating the owner repair. Target lacks evidence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amb_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      }
+    ],
+    "arithmetic": "Provider volume is nominal 1000 mL; water alone does not establish measured final volume. No density or dilution is inferred."
+  },
+  {
+    "ingredient_or_context": "Cysteine",
+    "field_path": "ingredients[5].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/455",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Cysteine\",\n                        \"compound_id\": 492,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 8.25355,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40"
+      },
+      {
+        "source_key": "dsmz455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf",
+        "source_locator": "Primary table row 6",
+        "exact_source_quote": " Cysteine                                                                     1.00          g",
+        "snapshot_sha256": "57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd",
+        "parsed_text_sha256": "5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9"
+      }
+    ],
+    "rationale": "Matching nominal main amount already has exact attached evidence in each maintained owner; retain those two claims and reconcile/regenerate the target instead of repeating the owner repair. Target lacks evidence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amb_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      }
+    ],
+    "arithmetic": "Provider volume is nominal 1000 mL; water alone does not establish measured final volume. No density or dilution is inferred."
+  },
+  {
+    "ingredient_or_context": "CaCl2",
+    "field_path": "ingredients[6].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/455",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CaCl2\",\n                        \"compound_id\": 81,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0901063,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40"
+      },
+      {
+        "source_key": "dsmz455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf",
+        "source_locator": "Primary table row 7",
+        "exact_source_quote": " CaCl2                                                                        0.01          g",
+        "snapshot_sha256": "57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd",
+        "parsed_text_sha256": "5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9"
+      }
+    ],
+    "rationale": "Matching nominal main amount already has exact attached evidence in each maintained owner; retain those two claims and reconcile/regenerate the target instead of repeating the owner repair. Target lacks evidence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amb_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      }
+    ],
+    "arithmetic": "Provider volume is nominal 1000 mL; water alone does not establish measured final volume. No density or dilution is inferred."
+  },
+  {
+    "ingredient_or_context": "MgSO4",
+    "field_path": "ingredients[7].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/455",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"MgSO4\",\n                        \"compound_id\": 325,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.66154,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40"
+      },
+      {
+        "source_key": "dsmz455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf",
+        "source_locator": "Primary table row 8",
+        "exact_source_quote": " MgSO4                                                                        0.20          g",
+        "snapshot_sha256": "57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd",
+        "parsed_text_sha256": "5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9"
+      }
+    ],
+    "rationale": "Matching nominal main amount already has exact attached evidence in each maintained owner; retain those two claims and reconcile/regenerate the target instead of repeating the owner repair. Target lacks evidence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amb_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      }
+    ],
+    "arithmetic": "Provider volume is nominal 1000 mL; water alone does not establish measured final volume. No density or dilution is inferred."
+  },
+  {
+    "ingredient_or_context": "(NH4)2SO4",
+    "field_path": "ingredients[8].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/455",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 7.56773,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40"
+      },
+      {
+        "source_key": "dsmz455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf",
+        "source_locator": "Primary table row 9",
+        "exact_source_quote": " (NH4)2SO4                                                                    1.00          g",
+        "snapshot_sha256": "57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd",
+        "parsed_text_sha256": "5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9"
+      }
+    ],
+    "rationale": "Matching nominal main amount already has exact attached evidence in each maintained owner; retain those two claims and reconcile/regenerate the target instead of repeating the owner repair. Target lacks evidence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amb_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      }
+    ],
+    "arithmetic": "Provider volume is nominal 1000 mL; water alone does not establish measured final volume. No density or dilution is inferred."
+  },
+  {
+    "ingredient_or_context": "K2HPO4",
+    "field_path": "ingredients[9].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/455",
+        "source_locator": "$.data.solutions[0].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 86.1198,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40"
+      },
+      {
+        "source_key": "dsmz455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf",
+        "source_locator": "Primary table row 10",
+        "exact_source_quote": " K2HPO4                                                                      15.00          g",
+        "snapshot_sha256": "57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd",
+        "parsed_text_sha256": "5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9"
+      }
+    ],
+    "rationale": "Matching nominal main amount already has exact attached evidence in each maintained owner; retain those two claims and reconcile/regenerate the target instead of repeating the owner repair. Target lacks evidence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amb_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      }
+    ],
+    "arithmetic": "Provider volume is nominal 1000 mL; water alone does not establish measured final volume. No density or dilution is inferred."
+  },
+  {
+    "ingredient_or_context": "Distilled water",
+    "field_path": "preparation_steps",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/455",
+        "source_locator": "$.data.solutions[0].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40"
+      },
+      {
+        "source_key": "dsmz455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf",
+        "source_locator": "Primary table row 11",
+        "exact_source_quote": " Distilled water                                                          1000.00         ml",
+        "snapshot_sha256": "57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd",
+        "parsed_text_sha256": "5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9"
+      }
+    ],
+    "rationale": "Restore the primary 1000 mL water basis in preparation. The DSMZ owner has an existing preparation container; its exact stored steps are retained, not represented as absent.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amb_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "MIX",
+            "description": "pH: 6.9."
+          },
+          {
+            "step_number": 2,
+            "action": "MIX",
+            "description": "Prepare and distribute medium anaerobically by using the Hungate technique."
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Provider volume is nominal 1000 mL; water alone does not establish measured final volume. No density or dilution is inferred."
+  },
+  {
+    "ingredient_or_context": "Main pH",
+    "field_path": "ph_value",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf",
+        "source_locator": "Primary pH line",
+        "exact_source_quote": "pH: 6.9.",
+        "snapshot_sha256": "57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd",
+        "parsed_text_sha256": "5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9"
+      }
+    ],
+    "rationale": "All three layers retain pH 6.9 without attached claim evidence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_value",
+        "stored": 6.9,
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 6.9,
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amb_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 6.9,
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "pH preparation instruction",
+    "field_path": "preparation.pH",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf",
+        "source_locator": "Primary pH line",
+        "exact_source_quote": "pH: 6.9.",
+        "snapshot_sha256": "57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd",
+        "parsed_text_sha256": "5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9"
+      }
+    ],
+    "rationale": "The DSMZ owner retains the pH step, while target/KOMODO owner lack preparation. Preserve the distinct existing and absent layer values.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amb_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "pH: 6.9.",
+        "decision": "evidence_only"
+      }
+    ]
+  }
+]
+
+### Exact two-source identity and reciprocal relations
+
+identity: supported. Targets: CultureMech:005305.
+
+CM005305 is the KOMODO contributor; CM001565 is the DSMZ contributor. Both exact paths and stable IDs match the explicit merge history. Reciprocal SOURCE_DUPLICATE parent/child links resolve. The raw catalog maps KOMODO 455 to DSMZ 455; this is accession identity, not proof that every current provenance/preparation field is equal.
+
+### Complete owner-only concentration evidence and stale generated target
+
+consistency: concern. Targets: CultureMech:005305.
+
+All 30 local concentration instances agree with the ten literal source masses and nominal provider rates. Nine claims per owner, excluding starch, match exact current raw snippets/hash and retain explicit final-volume limits. The August generated target has none of the 18 October owner claims, their references or current curation events. Owner quantity decisions are verified only for those 18 attached claims; target and starch decisions remain evidence_only.
+
+### Soluble starch and generic salt/stereochemical wording
+
+grounding: concern. Targets: CultureMech:005305.
+
+The primary says soluble starch and the provider encodes attribute=soluble, omitted in all three local layers. Generic glucose and cysteine terms preserve unspecified stereochemistry; no D/L identity is inferred. The unqualified CaCl2 and MgSO4 source wording is not upgraded to a hydrate. The generic complex ingredients remain present despite absent optional ontology links.
+
+### Provider handling versus sparse primary
+
+completeness: concern. Targets: CultureMech:005305.
+
+The DSMZ owner preserves pH and anaerobic Hungate preparation; target and KOMODO owner have no preparation_steps. The catalog Aerobic: No flag is compatible but not a substitute protocol. The provider lists autoclave equipment without a cycle; no temperature, duration, pressure or gas ratio is invented. The source 1000 mL solvent basis also needs explicit placement.
+
+### Complex liquid and biological claims
+
+scope: supported. Targets: CultureMech:005305.
+
+COMPLEX/UNDEFINED and LIQUID agree with the peptone/yeast/meat-infusion recipe without agar. No strain, taxon, assembly, DOI/PMID or specific growth claim is asserted. SOURCE_DUPLICATE denotes linked source identity; it does not authorize flattening differing preparation or evidence.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:005305.
+
+24 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Reconciliation of repaired owners rather than repeated repair
+
+provenance: concern. Targets: CultureMech:005305.
+
+Both owner concentration-evidence repairs are already present. The maintained DSMZ owner also contains preparation absent from the KOMODO owner. Current formulation equality excludes claim evidence but retains scientific/preparation fields, and evidence merging requires compatible formulations; therefore reconcile source-specific preparation/provenance explicitly before regenerating. A shared ingredient signature alone is insufficient. Do not rerun the completed October amount repair or erase historical source identities.
+
+## Findings
+
+### f1: Generated AMB lacks the maintained anaerobic preparation
+
+major / open / confirmed; issue key: culturemech.005305.preparation-loss.
+
+The generated target and KOMODO owner omit preparation that survives in the DSMZ owner and exact provider. The catalog anaerobic flag does not supply the missing handling instructions.
+
+### f2: Generated record predates 18 existing owner amount claims
+
+minor / open / confirmed; issue key: culturemech.005305.stale-evidence.
+
+Both maintained owners already contain nine exact source-supported amount claims, references and October curation events; the generated target retains none. These are successful existing repairs, not absent owner evidence.
+
+### f3: Source soluble-starch qualifier is missing
+
+minor / open / confirmed; issue key: culturemech.005305.soluble-starch.
+
+All three local ingredient rows say only starch, although the primary and provider specify soluble starch. The generic starch ontology term does not preserve that product qualifier.
+
+### f4: KOMODO history contains malformed and timezone-naive timestamps
+
+minor / open / confirmed; issue key: culturemech.005305.timestamp-shape.
+
+The target and KOMODO owner each retain malformed 2026-01-27T01:15:02.fZ and timezone-naive 2026-02-03T11:18:55.181726: four problematic instances. Other inspected timestamps retain explicit offsets.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Reconcile the source-specific provider preparation with the maintained DSMZ owner and regenerate only through a formulation-compatible route. Preserve its attribution, the sparse primary boundary and the water/pH basis; do not invent an autoclave cycle.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Preserve all existing owner evidence and reconcile/regenerate the stale target after preparation compatibility is resolved. Add only the still-missing starch/pH/source-only evidence; do not duplicate the completed owner repairs.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Retain the exact soluble-starch qualifier and attach its 1 g source amount evidence without guessing a replacement ontology identifier.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Preserve historical events and append a provenance clarification, correcting interpretation only if original timestamp evidence becomes available. Do not assign an assumed timezone or fabricate fractional seconds.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/AMB_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/amb_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/AMB_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/AMB_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch025/244/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-025/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch025/244/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/AMB_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/AMB_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/AMB_MEDIUM.yaml:1:id: CultureMech:005305<br>./data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml:1:id: CultureMech:005305<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch025/source-preflight-bound/244/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 11 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch025/source-preflight-bound/244/evidence-context-original.json; Complete frozen source context rebound to every fresh native input | context_only | All context input hashes match the fresh native inspection. The preflight remains historical preparation; this assessment uses the current bound record catalog and native input hashes. |
+| dsmz455 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf; Full one-page recipe table and pH line | supports | The primary supplies ten solute masses, 1000 mL water and pH 6.9. It does not supply the provider Hungate paragraph. |
+| mediadive455api | https://mediadive.dsmz.de/rest/medium/455; $.data.medium; $.data.solutions[0].volume/recipe/steps/equipment | supports | Exact nominal main concentrations, soluble-starch attribute and provider-specific anaerobic preparation compared. |
+| catalog455 | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact byte-literal HTML table row for MediaInfo=455 | supports | Source catalog identity, DSMZ cross-reference and encoded metadata only. This does not authenticate the historical copied formulation or establish growth/atmosphere. |
+| komodoDetail455-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=455; Preserved exact public retrieval result | context_only | The KOMODO detail endpoint returned HTTP 403. The exact public catalog row and complete linked DSMZ primary/provider remain available for this base-medium identity; unobserved historical variants are not inferred. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15356 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15356; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15356 resolves to cysteine. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17234 resolves to glucose. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi28017 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28017; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:28017 resolves to starch. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32599 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32599 resolves to magnesium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi3312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:3312 resolves to calcium dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15356": [{"label": "Cysteine", "match_type": "preferred_term", "identifier": "CHEBI:15356", "preferred_term": "Cysteine", "ontology_id": "CHEBI:15356", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:28017": [{"label": "Starch", "match_type": "preferred_term", "identifier": "CHEBI:28017", "preferred_term": "Starch", "ontology_id": "CHEBI:28017", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32599": [{"label": "Magnesium sulfate", "match_type": "preferred_term", "identifier": "CHEBI:32599", "preferred_term": "Magnesium sulfate", "ontology_id": "CHEBI:32599", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:3312": [{"label": "CaCl2", "match_type": "preferred_term", "identifier": "CHEBI:3312", "preferred_term": "CaCl2", "ontology_id": "CHEBI:3312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| attached-evidence-recheck | /private/tmp/culturemech-review-work-batch025/244/attached-evidence-recheck.json; Every existing ingredient evidence object, full reference/snippet/explanation and source locator | supports | 18 attached amount claims match the exact captured source rows and nominal provider basis. Verification applies only in the documented owner layers. |
+| owner-identity-evidence | data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml; evidence[0], full literal row and explanation; references and October 7 history | supports | Existing owner root evidence matches the exact raw catalog row and hash. It supports accession mapping only; the nine ingredient snippets separately support nominal amounts. The historical retrieval time is recorded provenance, not independently authenticated. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch025/244/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| quantity-local-fields | /private/tmp/culturemech-review-work-batch025/244/quantity-local-field-audit.json; All quantity layer paths and exact stored values against full inspected YAML | context_only | Every local concentration is covered; every layer locator resolves to its exact stored value or explicitly absent intended container. Source locators remain in source_snippets. |
+| hungate-provider | https://mediadive.dsmz.de/rest/medium/455; $.data.solutions[0].steps[1].step | supports | This provider-specific instruction survives in the DSMZ owner, not in the generated or KOMODO layers. The primary PDF itself supplies only formulation and pH. |
+| writer-context-0 | src/culturemech/merge/formulation.py; formulation_content lines 48–70; merge_formulation_evidence lines 92–128 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-1 | src/culturemech/import/mediadive_importer.py; _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570; _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps lines 653–721 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-2 | scripts/cleanup_media_quality.py; normalize_name lines 76–82; _merge_ingredient_group lines 148–216 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| history-metadata | data/merge_yaml/merged/AMB_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml; data/normalized_yaml/bacterial/amb_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 9, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:55.181726"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:55.181726"}]}, {"input": "data/normalized_yaml/bacterial/amb_medium.yaml", "events": 7, "timestamp_issues": []}] |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The KOMODO detail endpoint returned HTTP 403. The exact public catalog row and complete linked DSMZ primary/provider remain available for this base-medium identity; unobserved historical variants are not inferred.
+- Existing attached snippets and recorded hashes were rechecked against the current captured bytes; historical retrieval timestamps themselves are not independently authenticated.
+- The current KOMODO detail403 does not establish historical recipe absence. Exact catalog identity plus linked primary/provider support this bounded base-medium assessment; unobserved variants remain outside scope.
+- The primary contains no Hungate instruction; this handling is attributed specifically to the provider and maintained DSMZ owner.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T143140Z-culturemech-005305-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: amb_medium (CultureMech:005305)'
+started_at: '2026-10-21T14:22:39Z'
+finished_at: '2026-10-21T14:31:40Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: AMB medium has matching source quantities in all three local layers, but
+  the generated record predates the two owners’ October 7 amount-evidence repairs
+  and retains none of their 18 claims. It also omits the DSMZ owner’s provider-supported
+  anaerobic Hungate preparation. Both owners still omit the source soluble-starch
+  qualifier. The exact source-duplicate links resolve; malformed and timezone-naive
+  historical timestamps require append-only clarification rather than invented corrections.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/AMB_MEDIUM.yaml
+    sha256: 442697d463a4b57a708063e251fe5b2bd44fbed13cd9e1ca4f3c6e3297b669bb
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml
+    sha256: 997bb12ba0f3770c5b163731d8c570fc77b8b1c0486755286da3f10c7f8f38f8
+    role: context
+  - path: data/normalized_yaml/bacterial/amb_medium.yaml
+    sha256: 2c416ffcf05ba690d64b05a4c5b6eed1a7c9d69b0dd9db44c1af6d46b21e5685
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/recipe_references.py
+    sha256: 5d49d3db2f043a82b253e5a0bed03239004043922e1daab43c399a84d64fc237
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 244; batch 025 item 4 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-four task batches
+    contain 240 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 243 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:005305
+targets:
+- target_id: CultureMech:005305
+  path: data/merge_yaml/merged/AMB_MEDIUM.yaml
+  label: amb_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amb_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/AMB_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:005305
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/AMB_MEDIUM.yaml --workers 1
+    --out /private/tmp/culturemech-review-work-batch025/244/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-025/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch025/244/strict.tsv"
+  target_ids:
+  - CultureMech:005305
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/AMB_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:005305
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/AMB_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:005305
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:005305
+- check_id: komodoDetail455-source-access
+  name: 'Exact source content access: komodoDetail455'
+  required: false
+  status: unavailable
+  summary: The KOMODO detail endpoint returned HTTP 403. The exact public catalog
+    row and complete linked DSMZ primary/provider remain available for this base-medium
+    identity; unobserved historical variants are not inferred.
+  target_ids:
+  - CultureMech:005305
+  evidence_ids:
+  - komodoDetail455-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/AMB_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T14:31:37Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T14:31:37Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/amb_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T14:31:37Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/AMB_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:23:22.158449Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/AMB_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch025/244/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:23:23.818198Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-025/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch025/244/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/AMB_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:23:26.130609Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/AMB_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:23:27.206258Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T14:31:37Z'
+  support: supports
+  summary: './data/merge_yaml/merged/AMB_MEDIUM.yaml:1:id: CultureMech:005305
+
+    ./data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml:1:id: CultureMech:005305
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/source-preflight-bound/244/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T14:31:37Z'
+  support: supports
+  summary: 11 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: b151b6c56ca3522e6666305f3a81aade79ea434018aa4f80536b46a7adddc7f8
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/source-preflight-bound/244/evidence-context-original.json
+  locator: Complete frozen source context rebound to every fresh native input
+  accessed_at: '2026-10-21T14:31:37Z'
+  support: context_only
+  summary: All context input hashes match the fresh native inspection. The preflight
+    remains historical preparation; this assessment uses the current bound record
+    catalog and native input hashes.
+  snapshot_sha256: 8f2a92b51ff55bea3047e14ced88e6bde6584013ce1d623489b30e526ad3eb54
+- evidence_id: dsmz455
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf
+  locator: Full one-page recipe table and pH line
+  accessed_at: '2026-10-21T14:05:44.447929Z'
+  support: supports
+  summary: The primary supplies ten solute masses, 1000 mL water and pH 6.9. It does
+    not supply the provider Hungate paragraph.
+  snapshot_sha256: 57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd
+- evidence_id: mediadive455api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/455
+  locator: $.data.medium; $.data.solutions[0].volume/recipe/steps/equipment
+  accessed_at: '2026-10-21T14:05:43.038136Z'
+  support: supports
+  summary: Exact nominal main concentrations, soluble-starch attribute and provider-specific
+    anaerobic preparation compared.
+  snapshot_sha256: 9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40
+- evidence_id: catalog455
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact byte-literal HTML table row for MediaInfo=455
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Source catalog identity, DSMZ cross-reference and encoded metadata only.
+    This does not authenticate the historical copied formulation or establish growth/atmosphere.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=455'\
+    \ >455</a></TD>\n\t\t\t\t\t<TD>AMB medium</TD>\n\t\t\t\t\t<TD> 6.9</TD>\n\t\t\t\
+    \t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a\
+    \ href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf</a></TD>\n\
+    \t\t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: komodoDetail455-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=455
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T14:05:42.866737Z'
+  support: context_only
+  summary: The KOMODO detail endpoint returned HTTP 403. The exact public catalog
+    row and complete linked DSMZ primary/provider remain available for this base-medium
+    identity; unobserved historical variants are not inferred.
+  snapshot_sha256: 56b9b560f68276aab9c98c5a3b35e3fff223d2843046fc941b3c75b10de19fb2
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15356
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15356
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T14:05:44.557452Z'
+  support: supports
+  summary: CHEBI:15356 resolves to cysteine. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 982384ebb9d387b3242d7d28c58045390e550c08ea5f63cb9a9b37e64095f58b
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi28017
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28017
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.748724Z'
+  support: supports
+  summary: CHEBI:28017 resolves to starch. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 959b4330165a7ff12d2e464f4a7b44e148376624d04cf7764b6a8671c1c99204
+- evidence_id: chebi32599
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.640268Z'
+  support: supports
+  summary: CHEBI:32599 resolves to magnesium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 5da4e37c63d52d06c19a75da5c03a8ba42e81db8b537a053285d895de8f2b9ff
+- evidence_id: chebi3312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.822837Z'
+  support: supports
+  summary: CHEBI:3312 resolves to calcium dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 34ed49d95375c80dcb07576c67d04fa77337bfecf406accb283e8c32253b754b
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T14:31:37Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:15356": [{"label": "Cysteine", "match_type": "preferred_term",
+    "identifier": "CHEBI:15356", "preferred_term": "Cysteine", "ontology_id": "CHEBI:15356",
+    "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:17234": [{"label":
+    "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term":
+    "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:28017": [{"label": "Starch", "match_type": "preferred_term",
+    "identifier": "CHEBI:28017", "preferred_term": "Starch", "ontology_id": "CHEBI:28017",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32599": [{"label":
+    "Magnesium sulfate", "match_type": "preferred_term", "identifier": "CHEBI:32599",
+    "preferred_term": "Magnesium sulfate", "ontology_id": "CHEBI:32599", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:3312": [{"label": "CaCl2", "match_type":
+    "preferred_term", "identifier": "CHEBI:3312", "preferred_term": "CaCl2", "ontology_id":
+    "CHEBI:3312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946":
+    [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946",
+    "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: attached-evidence-recheck
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/244/attached-evidence-recheck.json
+  locator: Every existing ingredient evidence object, full reference/snippet/explanation
+    and source locator
+  accessed_at: '2026-10-21T14:31:37Z'
+  support: supports
+  summary: 18 attached amount claims match the exact captured source rows and nominal
+    provider basis. Verification applies only in the documented owner layers.
+  snapshot_sha256: ab68c5e82e496d087e257f8b04e048ba9cebb138a25df9a7e0f025e57d37ac80
+- evidence_id: owner-identity-evidence
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml
+  locator: evidence[0], full literal row and explanation; references and October 7
+    history
+  accessed_at: '2026-10-21T14:31:37Z'
+  support: supports
+  summary: Existing owner root evidence matches the exact raw catalog row and hash.
+    It supports accession mapping only; the nine ingredient snippets separately support
+    nominal amounts. The historical retrieval time is recorded provenance, not independently
+    authenticated.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=455'\
+    \ >455</a></TD>\n\t\t\t\t\t<TD>AMB medium</TD>\n\t\t\t\t\t<TD> 6.9</TD>\n\t\t\t\
+    \t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a\
+    \ href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf</a></TD>\n\
+    \t\t\t\t</TR>"
+  snapshot_sha256: 997bb12ba0f3770c5b163731d8c570fc77b8b1c0486755286da3f10c7f8f38f8
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/244/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T14:31:37Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 4356a64fe5648b8854dc594cc6faea1bf82d03f5fc9b5c004adfc566203bddf1
+- evidence_id: quantity-local-fields
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/244/quantity-local-field-audit.json
+  locator: All quantity layer paths and exact stored values against full inspected
+    YAML
+  accessed_at: '2026-10-21T14:31:37Z'
+  support: context_only
+  summary: Every local concentration is covered; every layer locator resolves to its
+    exact stored value or explicitly absent intended container. Source locators remain
+    in source_snippets.
+  snapshot_sha256: bf36faf8d8dda08b184cc5a81cf127f5d82fc3ace27b87fa8e0003411f8ac49e
+- evidence_id: hungate-provider
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/455
+  locator: $.data.solutions[0].steps[1].step
+  accessed_at: '2026-10-21T14:05:43.038136Z'
+  support: supports
+  summary: This provider-specific instruction survives in the DSMZ owner, not in the
+    generated or KOMODO layers. The primary PDF itself supplies only formulation and
+    pH.
+  quote: Prepare and distribute medium anaerobically by using the Hungate technique.
+  snapshot_sha256: 9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40
+- evidence_id: writer-context-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content lines 48–70; merge_formulation_evidence lines 92–128
+  accessed_at: '2026-10-21T14:31:37Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-context-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570;
+    _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps
+    lines 653–721
+  accessed_at: '2026-10-21T14:31:37Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-context-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: normalize_name lines 76–82; _merge_ingredient_group lines 148–216
+  accessed_at: '2026-10-21T14:31:37Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/AMB_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml;
+    data/normalized_yaml/bacterial/amb_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T14:31:37Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:18:55.181726"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml",
+    "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:55.181726"}]}, {"input": "data/normalized_yaml/bacterial/amb_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:005305
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '7 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 7/10 primary
+    and 7/10 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:005305
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi131527
+  - chebi15356
+  - chebi17234
+  - chebi28017
+  - chebi32599
+  - chebi3312
+  - chebi62946
+  details: 'Instance coverage on a 0–100 percent scale, denominator 10: primary 70.00%;
+    secondary 70.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 13 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:005305
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"ingredient_or_context\": \"Trypticase peptone\",\n    \"\
+    field_path\": \"ingredients[0].concentration\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive455api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/455\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 1,\\\
+    n                        \\\"compound\\\": \\\"Trypticase peptone\\\",\\n    \
+    \                    \\\"compound_id\\\": 124,\\n                        \\\"\
+    amount\\\": 4,\\n                        \\\"unit\\\": \\\"g\\\",\\n         \
+    \               \\\"g_l\\\": 4,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf\",\n    \
+    \    \"source_locator\": \"Primary table row 1\",\n        \"exact_source_quote\"\
+    : \" Trypticase peptone                                                      \
+    \     4.00          g\",\n        \"snapshot_sha256\": \"57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd\"\
+    ,\n        \"parsed_text_sha256\": \"5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9\"\
+    \n      }\n    ],\n    \"rationale\": \"Matching nominal main amount already has\
+    \ exact attached evidence in each maintained owner; retain those two claims and\
+    \ reconcile/regenerate the target instead of repeating the owner repair. Target\
+    \ lacks evidence.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"4\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"4\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"\
+    verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amb_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\": \"Provider\
+    \ volume is nominal 1000 mL; water alone does not establish measured final volume.\
+    \ No density or dilution is inferred.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Yeast extract\",\n    \"field_path\": \"ingredients[1].concentration\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/455\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 5,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n     \
+    \                   \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf\",\n    \
+    \    \"source_locator\": \"Primary table row 2\",\n        \"exact_source_quote\"\
+    : \" Yeast extract                                                           \
+    \     5.00          g\",\n        \"snapshot_sha256\": \"57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd\"\
+    ,\n        \"parsed_text_sha256\": \"5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9\"\
+    \n      }\n    ],\n    \"rationale\": \"Matching nominal main amount already has\
+    \ exact attached evidence in each maintained owner; retain those two claims and\
+    \ reconcile/regenerate the target instead of repeating the owner repair. Target\
+    \ lacks evidence.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"\
+    verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amb_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\": \"Provider\
+    \ volume is nominal 1000 mL; water alone does not establish measured final volume.\
+    \ No density or dilution is inferred.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Starch\",\n    \"field_path\": \"ingredients[2].concentration\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"mediadive455api\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/medium/455\",\n        \"source_locator\": \"$.data.solutions[0].recipe[2]\"\
+    ,\n        \"exact_source_quote\": \"{\\n                        \\\"recipe_order\\\
+    \": 3,\\n                        \\\"compound\\\": \\\"Starch\\\",\\n        \
+    \                \\\"compound_id\\\": 199,\\n                        \\\"condition\\\
+    \": \\\"\\\",\\n                        \\\"attribute\\\": \\\"soluble\\\",\\\
+    n                        \\\"amount\\\": 1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n                  \
+    \      \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz455\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf\",\n        \"\
+    source_locator\": \"Primary table row 3\",\n        \"exact_source_quote\": \"\
+    \ Starch, soluble                                                            \
+    \  1.00          g\",\n        \"snapshot_sha256\": \"57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd\"\
+    ,\n        \"parsed_text_sha256\": \"5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9\"\
+    \n      }\n    ],\n    \"rationale\": \"The 1 g amount agrees, but no local layer\
+    \ has attached amount evidence and all omit the soluble qualifier.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/amb_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[2].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"\
+    evidence_only\"\n      }\n    ],\n    \"arithmetic\": \"Provider volume is nominal\
+    \ 1000 mL; water alone does not establish measured final volume. No density or\
+    \ dilution is inferred.\"\n  },\n  {\n    \"ingredient_or_context\": \"Meat infusion\"\
+    ,\n    \"field_path\": \"ingredients[3].concentration\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive455api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/455\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"Meat infusion\\\",\\n         \
+    \               \\\"compound_id\\\": 491,\\n                        \\\"amount\\\
+    \": 25,\\n                        \\\"unit\\\": \\\"g\\\",\\n                \
+    \        \\\"g_l\\\": 25,\\n                        \\\"optional\\\": 0\\n   \
+    \                 }\",\n        \"snapshot_sha256\": \"9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf\",\n    \
+    \    \"source_locator\": \"Primary table row 4\",\n        \"exact_source_quote\"\
+    : \" Meat infusion                                                           \
+    \    25.00          g\",\n        \"snapshot_sha256\": \"57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd\"\
+    ,\n        \"parsed_text_sha256\": \"5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9\"\
+    \n      }\n    ],\n    \"rationale\": \"Matching nominal main amount already has\
+    \ exact attached evidence in each maintained owner; retain those two claims and\
+    \ reconcile/regenerate the target instead of repeating the owner repair. Target\
+    \ lacks evidence.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"25\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"25\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\":\
+    \ \"verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amb_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"25\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\": \"Provider\
+    \ volume is nominal 1000 mL; water alone does not establish measured final volume.\
+    \ No density or dilution is inferred.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Glucose\",\n    \"field_path\": \"ingredients[4].concentration\",\n    \"\
+    decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/455\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"Glucose\\\",\\n                        \\\"compound_id\\\":\
+    \ 5,\\n                        \\\"amount\\\": 5,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n          \
+    \              \\\"mmol_l\\\": 27.7531,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf\",\n    \
+    \    \"source_locator\": \"Primary table row 5\",\n        \"exact_source_quote\"\
+    : \" Glucose                                                                 \
+    \     5.00          g\",\n        \"snapshot_sha256\": \"57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd\"\
+    ,\n        \"parsed_text_sha256\": \"5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9\"\
+    \n      }\n    ],\n    \"rationale\": \"Matching nominal main amount already has\
+    \ exact attached evidence in each maintained owner; retain those two claims and\
+    \ reconcile/regenerate the target instead of repeating the owner repair. Target\
+    \ lacks evidence.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[4].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"\
+    verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amb_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\": \"Provider\
+    \ volume is nominal 1000 mL; water alone does not establish measured final volume.\
+    \ No density or dilution is inferred.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Cysteine\",\n    \"field_path\": \"ingredients[5].concentration\",\n    \"\
+    decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/455\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"Cysteine\\\",\\n                        \\\"compound_id\\\"\
+    : 492,\\n                        \\\"amount\\\": 1,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n      \
+    \                  \\\"mmol_l\\\": 8.25355,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf\",\n    \
+    \    \"source_locator\": \"Primary table row 6\",\n        \"exact_source_quote\"\
+    : \" Cysteine                                                                \
+    \     1.00          g\",\n        \"snapshot_sha256\": \"57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd\"\
+    ,\n        \"parsed_text_sha256\": \"5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9\"\
+    \n      }\n    ],\n    \"rationale\": \"Matching nominal main amount already has\
+    \ exact attached evidence in each maintained owner; retain those two claims and\
+    \ reconcile/regenerate the target instead of repeating the owner repair. Target\
+    \ lacks evidence.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[5].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"\
+    verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amb_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\": \"Provider\
+    \ volume is nominal 1000 mL; water alone does not establish measured final volume.\
+    \ No density or dilution is inferred.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"CaCl2\",\n    \"field_path\": \"ingredients[6].concentration\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"mediadive455api\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/medium/455\",\n        \"source_locator\": \"$.data.solutions[0].recipe[6]\"\
+    ,\n        \"exact_source_quote\": \"{\\n                        \\\"recipe_order\\\
+    \": 7,\\n                        \\\"compound\\\": \\\"CaCl2\\\",\\n         \
+    \               \\\"compound_id\\\": 81,\\n                        \\\"amount\\\
+    \": 0.01,\\n                        \\\"unit\\\": \\\"g\\\",\\n              \
+    \          \\\"g_l\\\": 0.01,\\n                        \\\"mmol_l\\\": 0.0901063,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf\",\n    \
+    \    \"source_locator\": \"Primary table row 7\",\n        \"exact_source_quote\"\
+    : \" CaCl2                                                                   \
+    \     0.01          g\",\n        \"snapshot_sha256\": \"57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd\"\
+    ,\n        \"parsed_text_sha256\": \"5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9\"\
+    \n      }\n    ],\n    \"rationale\": \"Matching nominal main amount already has\
+    \ exact attached evidence in each maintained owner; retain those two claims and\
+    \ reconcile/regenerate the target instead of repeating the owner repair. Target\
+    \ lacks evidence.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[6].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[6].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amb_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider volume is nominal 1000 mL; water alone does not establish measured\
+    \ final volume. No density or dilution is inferred.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"MgSO4\",\n    \"field_path\": \"ingredients[7].concentration\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"mediadive455api\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/medium/455\",\n        \"source_locator\": \"$.data.solutions[0].recipe[7]\"\
+    ,\n        \"exact_source_quote\": \"{\\n                        \\\"recipe_order\\\
+    \": 8,\\n                        \\\"compound\\\": \\\"MgSO4\\\",\\n         \
+    \               \\\"compound_id\\\": 325,\\n                        \\\"amount\\\
+    \": 0.2,\\n                        \\\"unit\\\": \\\"g\\\",\\n               \
+    \         \\\"g_l\\\": 0.2,\\n                        \\\"mmol_l\\\": 1.66154,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf\",\n    \
+    \    \"source_locator\": \"Primary table row 8\",\n        \"exact_source_quote\"\
+    : \" MgSO4                                                                   \
+    \     0.20          g\",\n        \"snapshot_sha256\": \"57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd\"\
+    ,\n        \"parsed_text_sha256\": \"5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9\"\
+    \n      }\n    ],\n    \"rationale\": \"Matching nominal main amount already has\
+    \ exact attached evidence in each maintained owner; retain those two claims and\
+    \ reconcile/regenerate the target instead of repeating the owner repair. Target\
+    \ lacks evidence.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[7].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[7].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amb_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\": \"Provider\
+    \ volume is nominal 1000 mL; water alone does not establish measured final volume.\
+    \ No density or dilution is inferred.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"(NH4)2SO4\",\n    \"field_path\": \"ingredients[8].concentration\",\n    \"\
+    decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/455\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"(NH4)2SO4\\\",\\n                        \\\"compound_id\\\"\
+    : 27,\\n                        \\\"amount\\\": 1,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n          \
+    \              \\\"mmol_l\\\": 7.56773,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf\",\n    \
+    \    \"source_locator\": \"Primary table row 9\",\n        \"exact_source_quote\"\
+    : \" (NH4)2SO4                                                               \
+    \     1.00          g\",\n        \"snapshot_sha256\": \"57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd\"\
+    ,\n        \"parsed_text_sha256\": \"5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9\"\
+    \n      }\n    ],\n    \"rationale\": \"Matching nominal main amount already has\
+    \ exact attached evidence in each maintained owner; retain those two claims and\
+    \ reconcile/regenerate the target instead of repeating the owner repair. Target\
+    \ lacks evidence.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[8].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[8].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"\
+    verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amb_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\": \"Provider\
+    \ volume is nominal 1000 mL; water alone does not establish measured final volume.\
+    \ No density or dilution is inferred.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"K2HPO4\",\n    \"field_path\": \"ingredients[9].concentration\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"mediadive455api\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/medium/455\",\n        \"source_locator\": \"$.data.solutions[0].recipe[9]\"\
+    ,\n        \"exact_source_quote\": \"{\\n                        \\\"recipe_order\\\
+    \": 10,\\n                        \\\"compound\\\": \\\"K2HPO4\\\",\\n       \
+    \                 \\\"compound_id\\\": 10,\\n                        \\\"amount\\\
+    \": 15,\\n                        \\\"unit\\\": \\\"g\\\",\\n                \
+    \        \\\"g_l\\\": 15,\\n                        \\\"mmol_l\\\": 86.1198,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf\",\n    \
+    \    \"source_locator\": \"Primary table row 10\",\n        \"exact_source_quote\"\
+    : \" K2HPO4                                                                  \
+    \    15.00          g\",\n        \"snapshot_sha256\": \"57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd\"\
+    ,\n        \"parsed_text_sha256\": \"5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9\"\
+    \n      }\n    ],\n    \"rationale\": \"Matching nominal main amount already has\
+    \ exact attached evidence in each maintained owner; retain those two claims and\
+    \ reconcile/regenerate the target instead of repeating the owner repair. Target\
+    \ lacks evidence.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[9].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[9].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\":\
+    \ \"verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amb_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\": \"Provider\
+    \ volume is nominal 1000 mL; water alone does not establish measured final volume.\
+    \ No density or dilution is inferred.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Distilled water\",\n    \"field_path\": \"preparation_steps\",\n    \"decision\"\
+    : \"add\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"mediadive455api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/455\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[10]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 11,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 1000,\\n                        \\\"unit\\\": \\\"ml\\\",\\n             \
+    \           \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"9529683e2b470a5a0262cd364f122ea00885cbaf1ff87aa038cc6787e194bc40\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz455\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf\",\n        \"\
+    source_locator\": \"Primary table row 11\",\n        \"exact_source_quote\": \"\
+    \ Distilled water                                                          1000.00\
+    \         ml\",\n        \"snapshot_sha256\": \"57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd\"\
+    ,\n        \"parsed_text_sha256\": \"5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore the primary 1000 mL water basis\
+    \ in preparation. The DSMZ owner has an existing preparation container; its exact\
+    \ stored steps are retained, not represented as absent.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amb_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"MIX\",\n\
+    \            \"description\": \"pH: 6.9.\"\n          },\n          {\n      \
+    \      \"step_number\": 2,\n            \"action\": \"MIX\",\n            \"description\"\
+    : \"Prepare and distribute medium anaerobically by using the Hungate technique.\"\
+    \n          }\n        ],\n        \"decision\": \"add\"\n      }\n    ],\n  \
+    \  \"arithmetic\": \"Provider volume is nominal 1000 mL; water alone does not\
+    \ establish measured final volume. No density or dilution is inferred.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"Main pH\",\n    \"field_path\": \"ph_value\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz455\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf\",\n        \"\
+    source_locator\": \"Primary pH line\",\n        \"exact_source_quote\": \"pH:\
+    \ 6.9.\",\n        \"snapshot_sha256\": \"57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd\"\
+    ,\n        \"parsed_text_sha256\": \"5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9\"\
+    \n      }\n    ],\n    \"rationale\": \"All three layers retain pH 6.9 without\
+    \ attached claim evidence.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.9,\n        \"\
+    decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.9,\n        \"\
+    decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amb_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.9,\n        \"\
+    decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"pH preparation instruction\",\n    \"field_path\": \"preparation.pH\",\n \
+    \   \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz455\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium455.pdf\"\
+    ,\n        \"source_locator\": \"Primary pH line\",\n        \"exact_source_quote\"\
+    : \"pH: 6.9.\",\n        \"snapshot_sha256\": \"57cee6e34c19e7f34504659d7e29c8210782d53c8851f8c2c10d473704f90cfd\"\
+    ,\n        \"parsed_text_sha256\": \"5bc5ae9c6321fbcefd4e0e66d3a05d66c3fb95ec12427c40390ff77f0a3e0ea9\"\
+    \n      }\n    ],\n    \"rationale\": \"The DSMZ owner retains the pH step, while\
+    \ target/KOMODO owner lack preparation. Preserve the distinct existing and absent\
+    \ layer values.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n\
+    \    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n       \
+    \ \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amb_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"pH: 6.9.\",\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  }\n\
+    ]"
+- assessment_id: identity
+  area: identity
+  topic: Exact two-source identity and reciprocal relations
+  outcome: supported
+  summary: CM005305 is the KOMODO contributor; CM001565 is the DSMZ contributor. Both
+    exact paths and stable IDs match the explicit merge history. Reciprocal SOURCE_DUPLICATE
+    parent/child links resolve. The raw catalog maps KOMODO 455 to DSMZ 455; this
+    is accession identity, not proof that every current provenance/preparation field
+    is equal.
+  target_ids:
+  - CultureMech:005305
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - id-search
+  - catalog455
+  - owner-identity-evidence
+  - bound-context
+- assessment_id: amounts-and-attachments
+  area: consistency
+  topic: Complete owner-only concentration evidence and stale generated target
+  outcome: concern
+  summary: All 30 local concentration instances agree with the ten literal source
+    masses and nominal provider rates. Nine claims per owner, excluding starch, match
+    exact current raw snippets/hash and retain explicit final-volume limits. The August
+    generated target has none of the 18 October owner claims, their references or
+    current curation events. Owner quantity decisions are verified only for those
+    18 attached claims; target and starch decisions remain evidence_only.
+  target_ids:
+  - CultureMech:005305
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz455
+  - mediadive455api
+  - attached-evidence-recheck
+  - quantity-inventory
+  - quantity-local-fields
+- assessment_id: forms
+  area: grounding
+  topic: Soluble starch and generic salt/stereochemical wording
+  outcome: concern
+  summary: The primary says soluble starch and the provider encodes attribute=soluble,
+    omitted in all three local layers. Generic glucose and cysteine terms preserve
+    unspecified stereochemistry; no D/L identity is inferred. The unqualified CaCl2
+    and MgSO4 source wording is not upgraded to a hydrate. The generic complex ingredients
+    remain present despite absent optional ontology links.
+  target_ids:
+  - CultureMech:005305
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz455
+  - mediadive455api
+  - chebi28017
+  - chebi17234
+  - chebi15356
+  - chebi3312
+  - chebi32599
+- assessment_id: preparation
+  area: completeness
+  topic: Provider handling versus sparse primary
+  outcome: concern
+  summary: 'The DSMZ owner preserves pH and anaerobic Hungate preparation; target
+    and KOMODO owner have no preparation_steps. The catalog Aerobic: No flag is compatible
+    but not a substitute protocol. The provider lists autoclave equipment without
+    a cycle; no temperature, duration, pressure or gas ratio is invented. The source
+    1000 mL solvent basis also needs explicit placement.'
+  target_ids:
+  - CultureMech:005305
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz455
+  - hungate-provider
+  - catalog455
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Complex liquid and biological claims
+  outcome: supported
+  summary: COMPLEX/UNDEFINED and LIQUID agree with the peptone/yeast/meat-infusion
+    recipe without agar. No strain, taxon, assembly, DOI/PMID or specific growth claim
+    is asserted. SOURCE_DUPLICATE denotes linked source identity; it does not authorize
+    flattening differing preparation or evidence.
+  target_ids:
+  - CultureMech:005305
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz455
+  - catalog455
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 24 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:005305
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: generation
+  area: provenance
+  topic: Reconciliation of repaired owners rather than repeated repair
+  outcome: concern
+  summary: Both owner concentration-evidence repairs are already present. The maintained
+    DSMZ owner also contains preparation absent from the KOMODO owner. Current formulation
+    equality excludes claim evidence but retains scientific/preparation fields, and
+    evidence merging requires compatible formulations; therefore reconcile source-specific
+    preparation/provenance explicitly before regenerating. A shared ingredient signature
+    alone is insufficient. Do not rerun the completed October amount repair or erase
+    historical source identities.
+  target_ids:
+  - CultureMech:005305
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - history-metadata
+  - attached-evidence-recheck
+  - writer-context-0
+  - writer-context-1
+  - writer-context-2
+findings:
+- finding_id: f1
+  issue_key: culturemech.005305.preparation-loss
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated AMB lacks the maintained anaerobic preparation
+  description: The generated target and KOMODO owner omit preparation that survives
+    in the DSMZ owner and exact provider. The catalog anaerobic flag does not supply
+    the missing handling instructions.
+  target_ids:
+  - CultureMech:005305
+  field_paths:
+  - preparation_steps
+  - parent_media
+  - variant_modifications
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - hungate-provider
+  - catalog455
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amb_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3.5 is normalized to major because omission of the actual
+    source-specific anaerobic preparation materially limits reproducibility.
+- finding_id: f2
+  issue_key: culturemech.005305.stale-evidence
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Generated record predates 18 existing owner amount claims
+  description: Both maintained owners already contain nine exact source-supported
+    amount claims, references and October curation events; the generated target retains
+    none. These are successful existing repairs, not absent owner evidence.
+  target_ids:
+  - CultureMech:005305
+  field_paths:
+  - ingredients
+  - references
+  - curation_history
+  - evidence
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - attached-evidence-recheck
+  - owner-identity-evidence
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amb_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.005305.soluble-starch
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source soluble-starch qualifier is missing
+  description: All three local ingredient rows say only starch, although the primary
+    and provider specify soluble starch. The generic starch ontology term does not
+    preserve that product qualifier.
+  target_ids:
+  - CultureMech:005305
+  field_paths:
+  - ingredients[2]
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz455
+  - mediadive455api
+  - chebi28017
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amb_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.005305.timestamp-shape
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: KOMODO history contains malformed and timezone-naive timestamps
+  description: 'The target and KOMODO owner each retain malformed 2026-01-27T01:15:02.fZ
+    and timezone-naive 2026-02-03T11:18:55.181726: four problematic instances. Other
+    inspected timestamps retain explicit offsets.'
+  target_ids:
+  - CultureMech:005305
+  field_paths:
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amb_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Reconcile the source-specific provider preparation with the maintained
+    DSMZ owner and regenerate only through a formulation-compatible route. Preserve
+    its attribution, the sparse primary boundary and the water/pH basis; do not invent
+    an autoclave cycle.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:005305
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amb_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Preserve all existing owner evidence and reconcile/regenerate the stale
+    target after preparation compatibility is resolved. Add only the still-missing
+    starch/pH/source-only evidence; do not duplicate the completed owner repairs.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:005305
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amb_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Retain the exact soluble-starch qualifier and attach its 1 g source
+    amount evidence without guessing a replacement ontology identifier.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:005305
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amb_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Preserve historical events and append a provenance clarification, correcting
+    interpretation only if original timestamp evidence becomes available. Do not assign
+    an assumed timezone or fabricate fractional seconds.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:005305
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_455_AMB_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amb_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The KOMODO detail endpoint returned HTTP 403. The exact public catalog row and complete
+  linked DSMZ primary/provider remain available for this base-medium identity; unobserved
+  historical variants are not inferred.
+- Existing attached snippets and recorded hashes were rechecked against the current
+  captured bytes; historical retrieval timestamps themselves are not independently
+  authenticated.
+- The current KOMODO detail403 does not establish historical recipe absence. Exact
+  catalog identity plus linked primary/provider support this bounded base-medium assessment;
+  unobserved variants remain outside scope.
+- The primary contains no Hungate instruction; this handling is attributed specifically
+  to the provider and maintained DSMZ owner.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-025
+- generated-medium
+```

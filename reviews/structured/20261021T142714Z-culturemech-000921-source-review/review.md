@@ -1,0 +1,9877 @@
+# Source and formulation review: alternative_rumen_bacteria_medium (CultureMech:000921)
+
+- Review: 20261021T142714Z-culturemech-000921-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T14:22:33Z
+- Finished UTC: 2026-10-21T14:27:14Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 1455 is identifiable, but the 39-ingredient record substitutes unscaled BHI and unrelated LB constituents for a 6 g BHI premix, flattens three stocks, omits one of seven VFA components and converts two liquid amounts into g/L. Main preparation largely survives, while haemin preparation lacks its stock scope. Source sodium resazurin is grounded to neutral resazurin. Nominal provider concentrations are distinguished from an unresolved final-volume basis.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 241; batch 025 item 1 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-four task batches contain 240 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 243 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000921 | data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml | generated | alternative_rumen_bacteria_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:000921 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:000921 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-025/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch025/241/strict.tsv |
+| validate-terms | passed | True | CultureMech:000921 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:000921 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:000921 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: bdBhiLinked | unavailable | False | CultureMech:000921 | The manufacturer link from the cited secondary BHI page returned HTTP 403. Exact BD BBL product composition remains unverified; the complete DSMZ recipe still explicitly supplies the 6 g commercial-premix amount. |
+| Exact source content access: lbMillerNotes | unavailable | False | CultureMech:000921 | The earlier exact LB-Miller page attempt failed certificate verification. Original failed metadata and time are preserved. DSMZ 1455 contains no LB addition, independently of this optional access failure. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:000921.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:000921.
+
+36 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 38/39 primary and 26/39 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 39: primary 97.44%; secondary 66.67%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:000921.
+
+64 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "ingredient_or_context": "Main sol. 1455 / K2HPO4",
+    "field_path": "ingredients[0].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.23,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.228628,\n                        \"mmol_l\": 1.31263,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 1; primary printed amount",
+        "exact_source_quote": "   K2HPO4                                                            0.23          g",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "The stored value agrees with the provider rounded g/L on its nominal 1006 mL basis, but has no attached source evidence. Preserve the literal batch amount and unresolved denominator rather than validating it as measured final concentration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.228628",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.228628",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider g_l=0.228628; local 0.228628. Literal input liquids total 1006.6 mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured final volume. Rounding is retained, not silently normalized."
+  },
+  {
+    "ingredient_or_context": "Main sol. 1455 / KH2PO4",
+    "field_path": "ingredients[1].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.23,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.228628,\n                        \"mmol_l\": 1.68004,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 2; primary printed amount",
+        "exact_source_quote": "   KH2PO4                                                            0.23          g",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "The stored value agrees with the provider rounded g/L on its nominal 1006 mL basis, but has no attached source evidence. Preserve the literal batch amount and unresolved denominator rather than validating it as measured final concentration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.228628",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.228628",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider g_l=0.228628; local 0.228628. Literal input liquids total 1006.6 mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured final volume. Rounding is retained, not silently normalized."
+  },
+  {
+    "ingredient_or_context": "Main sol. 1455 / NaCl",
+    "field_path": "ingredients[2].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.447316,\n                        \"mmol_l\": 7.65428,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 3; primary printed amount",
+        "exact_source_quote": "   NaCl                                                              0.45          g",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "The stored value agrees with the provider rounded g/L on its nominal 1006 mL basis, but has no attached source evidence. Preserve the literal batch amount and unresolved denominator rather than validating it as measured final concentration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.447316",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.447316",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider g_l=0.447316; local 0.447316. Literal input liquids total 1006.6 mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured final volume. Rounding is retained, not silently normalized."
+  },
+  {
+    "ingredient_or_context": "Main sol. 1455 / (NH4)2SO4",
+    "field_path": "ingredients[3].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.447316,\n                        \"mmol_l\": 3.38517,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 4; primary printed amount",
+        "exact_source_quote": "   (NH4)2SO4                                                         0.45          g",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "The stored value agrees with the provider rounded g/L on its nominal 1006 mL basis, but has no attached source evidence. Preserve the literal batch amount and unresolved denominator rather than validating it as measured final concentration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.447316",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.447316",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider g_l=0.447316; local 0.447316. Literal input liquids total 1006.6 mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured final volume. Rounding is retained, not silently normalized."
+  },
+  {
+    "ingredient_or_context": "Main sol. 1455 / CaCl2 x 2 H2O",
+    "field_path": "ingredients[4].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.06,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0596421,\n                        \"mmol_l\": 0.405687,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 5; primary printed amount",
+        "exact_source_quote": "   CaCl2 x 2 H2O                                                     0.06          g",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "The stored value agrees with the provider rounded g/L on its nominal 1006 mL basis, but has no attached source evidence. Preserve the literal batch amount and unresolved denominator rather than validating it as measured final concentration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.0596421",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.0596421",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider g_l=0.0596421; local 0.0596421. Literal input liquids total 1006.6 mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured final volume. Rounding is retained, not silently normalized."
+  },
+  {
+    "ingredient_or_context": "Main sol. 1455 / MgSO4 x 7 H2O",
+    "field_path": "ingredients[5].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.09,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0894632,\n                        \"mmol_l\": 0.362969,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 6; primary printed amount",
+        "exact_source_quote": "   MgSO4 x 7 H2O                                                     0.09          g",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "The stored value agrees with the provider rounded g/L on its nominal 1006 mL basis, but has no attached source evidence. Preserve the literal batch amount and unresolved denominator rather than validating it as measured final concentration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.0894632",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.0894632",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider g_l=0.0894632; local 0.0894632. Literal input liquids total 1006.6 mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured final volume. Rounding is retained, not silently normalized."
+  },
+  {
+    "ingredient_or_context": "Main sol. 1455 / Brain heart infusion",
+    "field_path": "ingredients",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Brain heart infusion\",\n                        \"compound_id\": 186,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\": 6,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.96421,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 7; primary printed amount",
+        "exact_source_quote": "   Brain heart infusion (BD BBL)                                     6.00          g",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Restore this explicit source-only premix, missing VFA component, receiving-stock dose or solvent amount in its named stage. The actual absent intended local container is recorded; source locators remain separate.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "K2HPO4",
+            "term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.228628",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "KH2PO4",
+            "term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.228628",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "NaCl",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "0.447316",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            }
+          },
+          {
+            "preferred_term": "(NH4)2SO4",
+            "term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            },
+            "concentration": {
+              "value": "0.447316",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            }
+          },
+          {
+            "preferred_term": "CaCl2 x 2 H2O",
+            "term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            },
+            "concentration": {
+              "value": "0.0596421",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            }
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.0894632",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "Calf brains",
+            "term": {
+              "id": "UBERON:0000955",
+              "label": "brain"
+            },
+            "concentration": {
+              "value": "variable",
+              "unit": "VARIABLE"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "infusion from 200 g/L; Tissue infusion - source material is calf brain tissue; Constituent of Brain Heart Infusion commercial product"
+          },
+          {
+            "preferred_term": "Beef heart",
+            "term": {
+              "id": "UBERON:0000948",
+              "label": "heart"
+            },
+            "concentration": {
+              "value": "variable",
+              "unit": "VARIABLE"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "infusion from 250 g/L; Tissue infusion - source material is beef/ox heart tissue; Constituent of Brain Heart Infusion commercial product"
+          },
+          {
+            "preferred_term": "Proteose peptone",
+            "term": {
+              "id": "MICRO:0000180",
+              "label": "proteose peptone"
+            },
+            "concentration": {
+              "value": "10.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "Enzymatic digest of animal protein providing amino acids and peptides; Constituent of Brain Heart Infusion commercial product"
+          },
+          {
+            "preferred_term": "Dextrose",
+            "term": {
+              "id": "CHEBI:17634",
+              "label": "D-glucose"
+            },
+            "concentration": {
+              "value": "2.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "Carbon/energy source; Constituent of Brain Heart Infusion commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "glucose",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "D-glucose",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "dextrose",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "Sodium chloride",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "5.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "NaCl",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "table salt",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "Disodium phosphate",
+            "term": {
+              "id": "CHEBI:34683",
+              "label": "disodium hydrogenphosphate"
+            },
+            "concentration": {
+              "value": "2.5",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "Na2HPO4",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "disodium hydrogen phosphate",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "sodium phosphate dibasic",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "concentration": {
+              "value": "4.97018",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Sodium resazurin",
+            "concentration": {
+              "value": "0.000497018",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "CHEBI:8806",
+              "label": "Resazurin"
+            }
+          },
+          {
+            "preferred_term": "NaHCO3",
+            "term": {
+              "id": "CHEBI:32139",
+              "label": "sodium hydrogencarbonate"
+            },
+            "concentration": {
+              "value": "6.36183",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32139",
+              "label": "sodium hydrogencarbonate"
+            }
+          },
+          {
+            "preferred_term": "Disodium succinate",
+            "term": {
+              "id": "CHEBI:63675",
+              "label": "sodium succinate (anhydrous)"
+            },
+            "concentration": {
+              "value": "4.97018",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:63675",
+              "label": "sodium succinate (anhydrous)"
+            }
+          },
+          {
+            "preferred_term": "L-Cysteine HCl x H2O",
+            "term": {
+              "id": "CHEBI:91248",
+              "label": "L-cysteine hydrochloride hydrate"
+            },
+            "concentration": {
+              "value": "0.298211",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:91248",
+              "label": "L-cysteine hydrochloride hydrate"
+            }
+          },
+          {
+            "preferred_term": "Na2S x 9 H2O",
+            "term": {
+              "id": "CHEBI:76209",
+              "label": "sodium sulfide nonahydrate"
+            },
+            "concentration": {
+              "value": "0.298211",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:76209",
+              "label": "sodium sulfide nonahydrate"
+            }
+          },
+          {
+            "preferred_term": "Acetic acid",
+            "term": {
+              "id": "CHEBI:15366",
+              "label": "acetic acid"
+            },
+            "concentration": {
+              "value": "573.182",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:15366",
+              "label": "acetic acid"
+            }
+          },
+          {
+            "preferred_term": "Propionic acid",
+            "term": {
+              "id": "CHEBI:30768",
+              "label": "propionic acid"
+            },
+            "concentration": {
+              "value": "192.145",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:30768",
+              "label": "propionic acid"
+            }
+          },
+          {
+            "preferred_term": "Butyric acid",
+            "term": {
+              "id": "CHEBI:30772",
+              "label": "butyric acid"
+            },
+            "concentration": {
+              "value": "129",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:30772",
+              "label": "butyric acid"
+            }
+          },
+          {
+            "preferred_term": "n-Valeric acid",
+            "term": {
+              "id": "CHEBI:17418",
+              "label": "valeric acid"
+            },
+            "concentration": {
+              "value": "30.2827",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:17418",
+              "label": "valeric acid"
+            }
+          },
+          {
+            "preferred_term": "iso-Butyric acid",
+            "term": {
+              "id": "CHEBI:16135",
+              "label": "isobutyric acid"
+            },
+            "concentration": {
+              "value": "30.6375",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:16135",
+              "label": "isobutyric acid"
+            }
+          },
+          {
+            "preferred_term": "Tryptone",
+            "term": {
+              "id": "MICRO:0000182",
+              "label": "tryptone"
+            },
+            "concentration": {
+              "value": "10.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+              "catalog_number": "Multiple (L3522 Sigma, 244520 BD)",
+              "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"
+            },
+            "notes": "Pancreatic digest of casein providing amino acids, peptides, and nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "pancreatic digest of casein",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "casein peptone",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "term": {
+              "id": "FOODON:03315426",
+              "label": "yeast extract"
+            },
+            "concentration": {
+              "value": "5.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+              "catalog_number": "Multiple (L3522 Sigma, 244520 BD)",
+              "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"
+            },
+            "notes": "Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product"
+          },
+          {
+            "preferred_term": "Sodium chloride",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "10.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+              "catalog_number": "Multiple (L3522 Sigma, 244520 BD)",
+              "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"
+            },
+            "notes": "Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "NaCl",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "table salt",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "iso-Valeric acid",
+            "term": {
+              "id": "CHEBI:28484",
+              "label": "isovaleric acid"
+            },
+            "concentration": {
+              "value": "30.0247",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_term": {
+              "id": "MediaIngredientMech:000378",
+              "label": "iso-Valeric acid"
+            }
+          },
+          {
+            "preferred_term": "Haemin",
+            "term": {
+              "id": "CHEBI:50385",
+              "label": "hemin"
+            },
+            "concentration": {
+              "value": "0.5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:50385",
+              "label": "hemin"
+            }
+          },
+          {
+            "preferred_term": "NaOH",
+            "term": {
+              "id": "CHEBI:32145",
+              "label": "sodium hydroxide"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32145",
+              "label": "sodium hydroxide"
+            }
+          },
+          {
+            "preferred_term": "Biotin",
+            "term": {
+              "id": "CHEBI:15956",
+              "label": "biotin"
+            },
+            "concentration": {
+              "value": "0.02",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:15956",
+              "label": "biotin"
+            }
+          },
+          {
+            "preferred_term": "Folic acid",
+            "term": {
+              "id": "CHEBI:27470",
+              "label": "folic acid"
+            },
+            "concentration": {
+              "value": "0.02",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:27470",
+              "label": "folic acid"
+            }
+          },
+          {
+            "preferred_term": "Pyridoxine hydrochloride",
+            "term": {
+              "id": "CHEBI:30961",
+              "label": "pyridoxine hydrochloride"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:30961",
+              "label": "pyridoxine hydrochloride"
+            }
+          },
+          {
+            "preferred_term": "Thiamine HCl",
+            "term": {
+              "id": "CHEBI:49105",
+              "label": "thiamine hydrochloride"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:49105",
+              "label": "thiamine hydrochloride"
+            }
+          },
+          {
+            "preferred_term": "Riboflavin",
+            "term": {
+              "id": "CHEBI:17015",
+              "label": "riboflavin"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:17015",
+              "label": "riboflavin"
+            }
+          },
+          {
+            "preferred_term": "Nicotinic acid",
+            "term": {
+              "id": "CHEBI:15940",
+              "label": "nicotinic acid"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:15940",
+              "label": "nicotinic acid"
+            }
+          },
+          {
+            "preferred_term": "Calcium D-(+)-pantothenate",
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "CHEBI:31345",
+              "label": "Calcium pantothenate"
+            }
+          },
+          {
+            "preferred_term": "Vitamin B12",
+            "term": {
+              "id": "CHEBI:176843",
+              "label": "vitamin B12"
+            },
+            "concentration": {
+              "value": "0.001",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:176843",
+              "label": "vitamin B12"
+            }
+          },
+          {
+            "preferred_term": "p-Aminobenzoic acid",
+            "term": {
+              "id": "CHEBI:30753",
+              "label": "4-aminobenzoic acid"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:30753",
+              "label": "4-aminobenzoic acid"
+            }
+          },
+          {
+            "preferred_term": "(DL)-alpha-Lipoic acid",
+            "term": {
+              "id": "CHEBI:16494",
+              "label": "lipoic acid"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:16494",
+              "label": "lipoic acid"
+            }
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "K2HPO4",
+            "term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.228628",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "KH2PO4",
+            "term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.228628",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "NaCl",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "0.447316",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            }
+          },
+          {
+            "preferred_term": "(NH4)2SO4",
+            "term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            },
+            "concentration": {
+              "value": "0.447316",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            }
+          },
+          {
+            "preferred_term": "CaCl2 x 2 H2O",
+            "term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            },
+            "concentration": {
+              "value": "0.0596421",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            }
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.0894632",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "Calf brains",
+            "term": {
+              "id": "UBERON:0000955",
+              "label": "brain"
+            },
+            "concentration": {
+              "value": "variable",
+              "unit": "VARIABLE"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "infusion from 200 g/L; Tissue infusion - source material is calf brain tissue; Constituent of Brain Heart Infusion commercial product"
+          },
+          {
+            "preferred_term": "Beef heart",
+            "term": {
+              "id": "UBERON:0000948",
+              "label": "heart"
+            },
+            "concentration": {
+              "value": "variable",
+              "unit": "VARIABLE"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "infusion from 250 g/L; Tissue infusion - source material is beef/ox heart tissue; Constituent of Brain Heart Infusion commercial product"
+          },
+          {
+            "preferred_term": "Proteose peptone",
+            "term": {
+              "id": "MICRO:0000180",
+              "label": "proteose peptone"
+            },
+            "concentration": {
+              "value": "10.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "Enzymatic digest of animal protein providing amino acids and peptides; Constituent of Brain Heart Infusion commercial product"
+          },
+          {
+            "preferred_term": "Dextrose",
+            "term": {
+              "id": "CHEBI:17634",
+              "label": "D-glucose"
+            },
+            "concentration": {
+              "value": "2.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "Carbon/energy source; Constituent of Brain Heart Infusion commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "glucose",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "D-glucose",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "dextrose",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "Sodium chloride",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "5.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "NaCl",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "table salt",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "Disodium phosphate",
+            "term": {
+              "id": "CHEBI:34683",
+              "label": "disodium hydrogenphosphate"
+            },
+            "concentration": {
+              "value": "2.5",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "Na2HPO4",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "disodium hydrogen phosphate",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "sodium phosphate dibasic",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "concentration": {
+              "value": "4.97018",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Sodium resazurin",
+            "concentration": {
+              "value": "0.000497018",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "CHEBI:8806",
+              "label": "Resazurin"
+            }
+          },
+          {
+            "preferred_term": "NaHCO3",
+            "term": {
+              "id": "CHEBI:32139",
+              "label": "sodium hydrogencarbonate"
+            },
+            "concentration": {
+              "value": "6.36183",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32139",
+              "label": "sodium hydrogencarbonate"
+            }
+          },
+          {
+            "preferred_term": "Disodium succinate",
+            "term": {
+              "id": "CHEBI:63675",
+              "label": "sodium succinate (anhydrous)"
+            },
+            "concentration": {
+              "value": "4.97018",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:63675",
+              "label": "sodium succinate (anhydrous)"
+            }
+          },
+          {
+            "preferred_term": "L-Cysteine HCl x H2O",
+            "term": {
+              "id": "CHEBI:91248",
+              "label": "L-cysteine hydrochloride hydrate"
+            },
+            "concentration": {
+              "value": "0.298211",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:91248",
+              "label": "L-cysteine hydrochloride hydrate"
+            }
+          },
+          {
+            "preferred_term": "Na2S x 9 H2O",
+            "term": {
+              "id": "CHEBI:76209",
+              "label": "sodium sulfide nonahydrate"
+            },
+            "concentration": {
+              "value": "0.298211",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:76209",
+              "label": "sodium sulfide nonahydrate"
+            }
+          },
+          {
+            "preferred_term": "Acetic acid",
+            "term": {
+              "id": "CHEBI:15366",
+              "label": "acetic acid"
+            },
+            "concentration": {
+              "value": "573.182",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:15366",
+              "label": "acetic acid"
+            }
+          },
+          {
+            "preferred_term": "Propionic acid",
+            "term": {
+              "id": "CHEBI:30768",
+              "label": "propionic acid"
+            },
+            "concentration": {
+              "value": "192.145",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:30768",
+              "label": "propionic acid"
+            }
+          },
+          {
+            "preferred_term": "Butyric acid",
+            "term": {
+              "id": "CHEBI:30772",
+              "label": "butyric acid"
+            },
+            "concentration": {
+              "value": "129",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:30772",
+              "label": "butyric acid"
+            }
+          },
+          {
+            "preferred_term": "n-Valeric acid",
+            "term": {
+              "id": "CHEBI:17418",
+              "label": "valeric acid"
+            },
+            "concentration": {
+              "value": "30.2827",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:17418",
+              "label": "valeric acid"
+            }
+          },
+          {
+            "preferred_term": "iso-Butyric acid",
+            "term": {
+              "id": "CHEBI:16135",
+              "label": "isobutyric acid"
+            },
+            "concentration": {
+              "value": "30.6375",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:16135",
+              "label": "isobutyric acid"
+            }
+          },
+          {
+            "preferred_term": "Tryptone",
+            "term": {
+              "id": "MICRO:0000182",
+              "label": "tryptone"
+            },
+            "concentration": {
+              "value": "10.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+              "catalog_number": "Multiple (L3522 Sigma, 244520 BD)",
+              "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"
+            },
+            "notes": "Pancreatic digest of casein providing amino acids, peptides, and nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "pancreatic digest of casein",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "casein peptone",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "term": {
+              "id": "FOODON:03315426",
+              "label": "yeast extract"
+            },
+            "concentration": {
+              "value": "5.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+              "catalog_number": "Multiple (L3522 Sigma, 244520 BD)",
+              "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"
+            },
+            "notes": "Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product"
+          },
+          {
+            "preferred_term": "Sodium chloride",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "10.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+              "catalog_number": "Multiple (L3522 Sigma, 244520 BD)",
+              "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"
+            },
+            "notes": "Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "NaCl",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "table salt",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "iso-Valeric acid",
+            "term": {
+              "id": "CHEBI:28484",
+              "label": "isovaleric acid"
+            },
+            "concentration": {
+              "value": "30.0247",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_term": {
+              "id": "MediaIngredientMech:000378",
+              "label": "iso-Valeric acid"
+            }
+          },
+          {
+            "preferred_term": "Haemin",
+            "term": {
+              "id": "CHEBI:50385",
+              "label": "hemin"
+            },
+            "concentration": {
+              "value": "0.5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:50385",
+              "label": "hemin"
+            }
+          },
+          {
+            "preferred_term": "NaOH",
+            "term": {
+              "id": "CHEBI:32145",
+              "label": "sodium hydroxide"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32145",
+              "label": "sodium hydroxide"
+            }
+          },
+          {
+            "preferred_term": "Biotin",
+            "term": {
+              "id": "CHEBI:15956",
+              "label": "biotin"
+            },
+            "concentration": {
+              "value": "0.02",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:15956",
+              "label": "biotin"
+            }
+          },
+          {
+            "preferred_term": "Folic acid",
+            "term": {
+              "id": "CHEBI:27470",
+              "label": "folic acid"
+            },
+            "concentration": {
+              "value": "0.02",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:27470",
+              "label": "folic acid"
+            }
+          },
+          {
+            "preferred_term": "Pyridoxine hydrochloride",
+            "term": {
+              "id": "CHEBI:30961",
+              "label": "pyridoxine hydrochloride"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:30961",
+              "label": "pyridoxine hydrochloride"
+            }
+          },
+          {
+            "preferred_term": "Thiamine HCl",
+            "term": {
+              "id": "CHEBI:49105",
+              "label": "thiamine hydrochloride"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:49105",
+              "label": "thiamine hydrochloride"
+            }
+          },
+          {
+            "preferred_term": "Riboflavin",
+            "term": {
+              "id": "CHEBI:17015",
+              "label": "riboflavin"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:17015",
+              "label": "riboflavin"
+            }
+          },
+          {
+            "preferred_term": "Nicotinic acid",
+            "term": {
+              "id": "CHEBI:15940",
+              "label": "nicotinic acid"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:15940",
+              "label": "nicotinic acid"
+            }
+          },
+          {
+            "preferred_term": "Calcium D-(+)-pantothenate",
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "CHEBI:31345",
+              "label": "Calcium pantothenate"
+            }
+          },
+          {
+            "preferred_term": "Vitamin B12",
+            "term": {
+              "id": "CHEBI:176843",
+              "label": "vitamin B12"
+            },
+            "concentration": {
+              "value": "0.001",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:176843",
+              "label": "vitamin B12"
+            }
+          },
+          {
+            "preferred_term": "p-Aminobenzoic acid",
+            "term": {
+              "id": "CHEBI:30753",
+              "label": "4-aminobenzoic acid"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:30753",
+              "label": "4-aminobenzoic acid"
+            }
+          },
+          {
+            "preferred_term": "(DL)-alpha-Lipoic acid",
+            "term": {
+              "id": "CHEBI:16494",
+              "label": "lipoic acid"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:16494",
+              "label": "lipoic acid"
+            }
+          }
+        ],
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Main sol. 1455 / Yeast extract",
+    "field_path": "ingredients[12].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.97018,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 8; primary printed amount",
+        "exact_source_quote": "   Yeast extract                                                     5.00          g",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "The stored value agrees with the provider rounded g/L on its nominal 1006 mL basis, but has no attached source evidence. Preserve the literal batch amount and unresolved denominator rather than validating it as measured final concentration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "4.97018",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "4.97018",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider g_l=4.97018; local 4.97018. Literal input liquids total 1006.6 mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured final volume. Rounding is retained, not silently normalized."
+  },
+  {
+    "ingredient_or_context": "Main sol. 1455 / Volatile fatty acid mixture",
+    "field_path": "solutions",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"solution\": \"Volatile fatty acid mixture\",\n                        \"solution_id\": 608,\n                        \"amount\": 3.1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 9; primary printed amount",
+        "exact_source_quote": "   Volatile fatty acid mixture                                       3.10        ml",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Restore this explicit source-only premix, missing VFA component, receiving-stock dose or solvent amount in its named stage. The actual absent intended local container is recorded; source locators remain separate.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Main sol. 1455 / Haemin solution",
+    "field_path": "solutions",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"solution\": \"Haemin solution\",\n                        \"solution_id\": 124,\n                        \"attribute\": \"0.05% w/v\",\n                        \"amount\": 2,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 10; primary printed amount",
+        "exact_source_quote": "   Haemin solution (0.05% w/v)                                       2.00        ml",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Restore this explicit source-only premix, missing VFA component, receiving-stock dose or solvent amount in its named stage. The actual absent intended local container is recorded; source locators remain separate.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Main sol. 1455 / Sodium resazurin",
+    "field_path": "ingredients[13].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000497018,\n                        \"mmol_l\": 0.00197881,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 11; primary printed amount",
+        "exact_source_quote": "   Sodium resazurin (0.1% w/v)                                       0.50        ml",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "The stored value agrees with the provider rounded g/L on its nominal 1006 mL basis, but has no attached source evidence. Preserve the literal batch amount and unresolved denominator rather than validating it as measured final concentration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.000497018",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.000497018",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider g_l=0.000497018; local 0.000497018. Literal input liquids total 1006.6 mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured final volume. Rounding is retained, not silently normalized. Source 0.1% w/v is 1 g/L stock; 0.5 mL supplies 0.0005 g before any final-volume division."
+  },
+  {
+    "ingredient_or_context": "Main sol. 1455 / NaHCO3",
+    "field_path": "ingredients[14].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[11]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\": 6.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 6.36183,\n                        \"mmol_l\": 75.7298,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 12; primary printed amount",
+        "exact_source_quote": "   NaHCO3                                                            6.40          g",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "The stored value agrees with the provider rounded g/L on its nominal 1006 mL basis, but has no attached source evidence. Preserve the literal batch amount and unresolved denominator rather than validating it as measured final concentration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "6.36183",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "6.36183",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider g_l=6.36183; local 6.36183. Literal input liquids total 1006.6 mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured final volume. Rounding is retained, not silently normalized."
+  },
+  {
+    "ingredient_or_context": "Main sol. 1455 / Disodium succinate",
+    "field_path": "ingredients[15].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[12]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Disodium succinate\",\n                        \"compound_id\": 1189,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.97018,\n                        \"mmol_l\": 30.6707,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 13; primary printed amount",
+        "exact_source_quote": "   Disodium succinate                                                5.00          g",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "The stored value agrees with the provider rounded g/L on its nominal 1006 mL basis, but has no attached source evidence. Preserve the literal batch amount and unresolved denominator rather than validating it as measured final concentration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "4.97018",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "4.97018",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider g_l=4.97018; local 4.97018. Literal input liquids total 1006.6 mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured final volume. Rounding is retained, not silently normalized."
+  },
+  {
+    "ingredient_or_context": "Main sol. 1455 / Wolin's vitamin solution (10x)",
+    "field_path": "solutions",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[13]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 14,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 14; primary printed amount",
+        "exact_source_quote": "   Wolin's vitamin solution (10x)                                    1.00        ml",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Restore this explicit source-only premix, missing VFA component, receiving-stock dose or solvent amount in its named stage. The actual absent intended local container is recorded; source locators remain separate.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Main sol. 1455 / L-Cysteine HCl x H2O",
+    "field_path": "ingredients[16].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[14]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.298211,\n                        \"mmol_l\": 1.69789,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 15; primary printed amount",
+        "exact_source_quote": "   L-Cysteine HCl x H2O                                              0.30          g",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "The stored value agrees with the provider rounded g/L on its nominal 1006 mL basis, but has no attached source evidence. Preserve the literal batch amount and unresolved denominator rather than validating it as measured final concentration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.298211",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.298211",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider g_l=0.298211; local 0.298211. Literal input liquids total 1006.6 mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured final volume. Rounding is retained, not silently normalized."
+  },
+  {
+    "ingredient_or_context": "Main sol. 1455 / Na2S x 9 H2O",
+    "field_path": "ingredients[17].concentration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[15]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.298211,\n                        \"mmol_l\": 1.2416,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 16; primary printed amount",
+        "exact_source_quote": "   Na2S x 9 H2O                                                      0.30          g",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "The stored value agrees with the provider rounded g/L on its nominal 1006 mL basis, but has no attached source evidence. Preserve the literal batch amount and unresolved denominator rather than validating it as measured final concentration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.298211",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.298211",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Provider g_l=0.298211; local 0.298211. Literal input liquids total 1006.6 mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured final volume. Rounding is retained, not silently normalized."
+  },
+  {
+    "ingredient_or_context": "Main sol. 1455 / Distilled water",
+    "field_path": "solutions",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[16]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 17,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Main sol. 1455 recipe row 17; primary printed amount",
+        "exact_source_quote": "   Distilled water                                               1000.00         ml",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Restore this explicit source-only premix, missing VFA component, receiving-stock dose or solvent amount in its named stage. The actual absent intended local container is recorded; source locators remain separate.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Volatile fatty acid mixture / Acetic acid",
+    "field_path": "ingredients[18].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Acetic acid\",\n                        \"compound_id\": 380,\n                        \"amount\": 548.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 573.182,\n                        \"mmol_l\": 9545.09,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Volatile fatty acid mixture recipe row 1; primary printed amount",
+        "exact_source_quote": "   Acetic acid                                                    548.50         ml",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "573.182",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "573.182",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 548.5 mL is a VFA stock input. The source main dose is 3.1 mL of the seven-component mixture. Provider stock g_l=573.182; a null conversion does not license treating mL as grams. No independent density or final-medium mass conversion is assumed."
+  },
+  {
+    "ingredient_or_context": "Volatile fatty acid mixture / Propionic acid",
+    "field_path": "ingredients[19].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Propionic acid\",\n                        \"compound_id\": 381,\n                        \"amount\": 193.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 192.145,\n                        \"mmol_l\": 2593.76,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Volatile fatty acid mixture recipe row 2; primary printed amount",
+        "exact_source_quote": "   Propionic acid                                                 193.50         ml",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "192.145",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "192.145",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 193.5 mL is a VFA stock input. The source main dose is 3.1 mL of the seven-component mixture. Provider stock g_l=192.145; a null conversion does not license treating mL as grams. No independent density or final-medium mass conversion is assumed."
+  },
+  {
+    "ingredient_or_context": "Volatile fatty acid mixture / Butyric acid",
+    "field_path": "ingredients[20].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Butyric acid\",\n                        \"compound_id\": 314,\n                        \"amount\": 129,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Volatile fatty acid mixture recipe row 3; primary printed amount",
+        "exact_source_quote": "   Butyric acid                                                   129.00         ml",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "129",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "129",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 129 mL is a VFA stock input. The source main dose is 3.1 mL of the seven-component mixture. Provider stock g_l=None; a null conversion does not license treating mL as grams. No independent density or final-medium mass conversion is assumed."
+  },
+  {
+    "ingredient_or_context": "Volatile fatty acid mixture / n-Valeric acid",
+    "field_path": "ingredients[21].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"n-Valeric acid\",\n                        \"compound_id\": 288,\n                        \"amount\": 32.25,\n                        \"unit\": \"ml\",\n                        \"g_l\": 30.2827,\n                        \"mmol_l\": 296.512,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Volatile fatty acid mixture recipe row 4; primary printed amount",
+        "exact_source_quote": "   n-Valeric acid                                                   32.25        ml",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "30.2827",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "30.2827",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 32.25 mL is a VFA stock input. The source main dose is 3.1 mL of the seven-component mixture. Provider stock g_l=30.2827; a null conversion does not license treating mL as grams. No independent density or final-medium mass conversion is assumed."
+  },
+  {
+    "ingredient_or_context": "Volatile fatty acid mixture / iso-Butyric acid",
+    "field_path": "ingredients[22].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"iso-Butyric acid\",\n                        \"compound_id\": 377,\n                        \"amount\": 32.25,\n                        \"unit\": \"ml\",\n                        \"g_l\": 30.6375,\n                        \"mmol_l\": 347.719,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Volatile fatty acid mixture recipe row 5; primary printed amount",
+        "exact_source_quote": "   iso-Butyric acid                                                 32.25        ml",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "30.6375",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "30.6375",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 32.25 mL is a VFA stock input. The source main dose is 3.1 mL of the seven-component mixture. Provider stock g_l=30.6375; a null conversion does not license treating mL as grams. No independent density or final-medium mass conversion is assumed."
+  },
+  {
+    "ingredient_or_context": "Volatile fatty acid mixture / DL-2-Methylbutyric acid",
+    "field_path": "ingredients",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"DL-2-Methylbutyric acid\",\n                        \"compound_id\": 223,\n                        \"amount\": 32.25,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Volatile fatty acid mixture recipe row 6; primary printed amount",
+        "exact_source_quote": "   DL-2-Methylbutyric acid                                          32.25        ml",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Restore this explicit source-only premix, missing VFA component, receiving-stock dose or solvent amount in its named stage. The actual absent intended local container is recorded; source locators remain separate.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "K2HPO4",
+            "term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.228628",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "KH2PO4",
+            "term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.228628",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "NaCl",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "0.447316",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            }
+          },
+          {
+            "preferred_term": "(NH4)2SO4",
+            "term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            },
+            "concentration": {
+              "value": "0.447316",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            }
+          },
+          {
+            "preferred_term": "CaCl2 x 2 H2O",
+            "term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            },
+            "concentration": {
+              "value": "0.0596421",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            }
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.0894632",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "Calf brains",
+            "term": {
+              "id": "UBERON:0000955",
+              "label": "brain"
+            },
+            "concentration": {
+              "value": "variable",
+              "unit": "VARIABLE"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "infusion from 200 g/L; Tissue infusion - source material is calf brain tissue; Constituent of Brain Heart Infusion commercial product"
+          },
+          {
+            "preferred_term": "Beef heart",
+            "term": {
+              "id": "UBERON:0000948",
+              "label": "heart"
+            },
+            "concentration": {
+              "value": "variable",
+              "unit": "VARIABLE"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "infusion from 250 g/L; Tissue infusion - source material is beef/ox heart tissue; Constituent of Brain Heart Infusion commercial product"
+          },
+          {
+            "preferred_term": "Proteose peptone",
+            "term": {
+              "id": "MICRO:0000180",
+              "label": "proteose peptone"
+            },
+            "concentration": {
+              "value": "10.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "Enzymatic digest of animal protein providing amino acids and peptides; Constituent of Brain Heart Infusion commercial product"
+          },
+          {
+            "preferred_term": "Dextrose",
+            "term": {
+              "id": "CHEBI:17634",
+              "label": "D-glucose"
+            },
+            "concentration": {
+              "value": "2.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "Carbon/energy source; Constituent of Brain Heart Infusion commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "glucose",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "D-glucose",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "dextrose",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "Sodium chloride",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "5.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "NaCl",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "table salt",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "Disodium phosphate",
+            "term": {
+              "id": "CHEBI:34683",
+              "label": "disodium hydrogenphosphate"
+            },
+            "concentration": {
+              "value": "2.5",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "Na2HPO4",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "disodium hydrogen phosphate",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "sodium phosphate dibasic",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "concentration": {
+              "value": "4.97018",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Sodium resazurin",
+            "concentration": {
+              "value": "0.000497018",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "CHEBI:8806",
+              "label": "Resazurin"
+            }
+          },
+          {
+            "preferred_term": "NaHCO3",
+            "term": {
+              "id": "CHEBI:32139",
+              "label": "sodium hydrogencarbonate"
+            },
+            "concentration": {
+              "value": "6.36183",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32139",
+              "label": "sodium hydrogencarbonate"
+            }
+          },
+          {
+            "preferred_term": "Disodium succinate",
+            "term": {
+              "id": "CHEBI:63675",
+              "label": "sodium succinate (anhydrous)"
+            },
+            "concentration": {
+              "value": "4.97018",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:63675",
+              "label": "sodium succinate (anhydrous)"
+            }
+          },
+          {
+            "preferred_term": "L-Cysteine HCl x H2O",
+            "term": {
+              "id": "CHEBI:91248",
+              "label": "L-cysteine hydrochloride hydrate"
+            },
+            "concentration": {
+              "value": "0.298211",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:91248",
+              "label": "L-cysteine hydrochloride hydrate"
+            }
+          },
+          {
+            "preferred_term": "Na2S x 9 H2O",
+            "term": {
+              "id": "CHEBI:76209",
+              "label": "sodium sulfide nonahydrate"
+            },
+            "concentration": {
+              "value": "0.298211",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:76209",
+              "label": "sodium sulfide nonahydrate"
+            }
+          },
+          {
+            "preferred_term": "Acetic acid",
+            "term": {
+              "id": "CHEBI:15366",
+              "label": "acetic acid"
+            },
+            "concentration": {
+              "value": "573.182",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:15366",
+              "label": "acetic acid"
+            }
+          },
+          {
+            "preferred_term": "Propionic acid",
+            "term": {
+              "id": "CHEBI:30768",
+              "label": "propionic acid"
+            },
+            "concentration": {
+              "value": "192.145",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:30768",
+              "label": "propionic acid"
+            }
+          },
+          {
+            "preferred_term": "Butyric acid",
+            "term": {
+              "id": "CHEBI:30772",
+              "label": "butyric acid"
+            },
+            "concentration": {
+              "value": "129",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:30772",
+              "label": "butyric acid"
+            }
+          },
+          {
+            "preferred_term": "n-Valeric acid",
+            "term": {
+              "id": "CHEBI:17418",
+              "label": "valeric acid"
+            },
+            "concentration": {
+              "value": "30.2827",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:17418",
+              "label": "valeric acid"
+            }
+          },
+          {
+            "preferred_term": "iso-Butyric acid",
+            "term": {
+              "id": "CHEBI:16135",
+              "label": "isobutyric acid"
+            },
+            "concentration": {
+              "value": "30.6375",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:16135",
+              "label": "isobutyric acid"
+            }
+          },
+          {
+            "preferred_term": "Tryptone",
+            "term": {
+              "id": "MICRO:0000182",
+              "label": "tryptone"
+            },
+            "concentration": {
+              "value": "10.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+              "catalog_number": "Multiple (L3522 Sigma, 244520 BD)",
+              "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"
+            },
+            "notes": "Pancreatic digest of casein providing amino acids, peptides, and nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "pancreatic digest of casein",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "casein peptone",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "term": {
+              "id": "FOODON:03315426",
+              "label": "yeast extract"
+            },
+            "concentration": {
+              "value": "5.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+              "catalog_number": "Multiple (L3522 Sigma, 244520 BD)",
+              "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"
+            },
+            "notes": "Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product"
+          },
+          {
+            "preferred_term": "Sodium chloride",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "10.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+              "catalog_number": "Multiple (L3522 Sigma, 244520 BD)",
+              "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"
+            },
+            "notes": "Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "NaCl",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "table salt",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "iso-Valeric acid",
+            "term": {
+              "id": "CHEBI:28484",
+              "label": "isovaleric acid"
+            },
+            "concentration": {
+              "value": "30.0247",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_term": {
+              "id": "MediaIngredientMech:000378",
+              "label": "iso-Valeric acid"
+            }
+          },
+          {
+            "preferred_term": "Haemin",
+            "term": {
+              "id": "CHEBI:50385",
+              "label": "hemin"
+            },
+            "concentration": {
+              "value": "0.5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:50385",
+              "label": "hemin"
+            }
+          },
+          {
+            "preferred_term": "NaOH",
+            "term": {
+              "id": "CHEBI:32145",
+              "label": "sodium hydroxide"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32145",
+              "label": "sodium hydroxide"
+            }
+          },
+          {
+            "preferred_term": "Biotin",
+            "term": {
+              "id": "CHEBI:15956",
+              "label": "biotin"
+            },
+            "concentration": {
+              "value": "0.02",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:15956",
+              "label": "biotin"
+            }
+          },
+          {
+            "preferred_term": "Folic acid",
+            "term": {
+              "id": "CHEBI:27470",
+              "label": "folic acid"
+            },
+            "concentration": {
+              "value": "0.02",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:27470",
+              "label": "folic acid"
+            }
+          },
+          {
+            "preferred_term": "Pyridoxine hydrochloride",
+            "term": {
+              "id": "CHEBI:30961",
+              "label": "pyridoxine hydrochloride"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:30961",
+              "label": "pyridoxine hydrochloride"
+            }
+          },
+          {
+            "preferred_term": "Thiamine HCl",
+            "term": {
+              "id": "CHEBI:49105",
+              "label": "thiamine hydrochloride"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:49105",
+              "label": "thiamine hydrochloride"
+            }
+          },
+          {
+            "preferred_term": "Riboflavin",
+            "term": {
+              "id": "CHEBI:17015",
+              "label": "riboflavin"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:17015",
+              "label": "riboflavin"
+            }
+          },
+          {
+            "preferred_term": "Nicotinic acid",
+            "term": {
+              "id": "CHEBI:15940",
+              "label": "nicotinic acid"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:15940",
+              "label": "nicotinic acid"
+            }
+          },
+          {
+            "preferred_term": "Calcium D-(+)-pantothenate",
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "CHEBI:31345",
+              "label": "Calcium pantothenate"
+            }
+          },
+          {
+            "preferred_term": "Vitamin B12",
+            "term": {
+              "id": "CHEBI:176843",
+              "label": "vitamin B12"
+            },
+            "concentration": {
+              "value": "0.001",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:176843",
+              "label": "vitamin B12"
+            }
+          },
+          {
+            "preferred_term": "p-Aminobenzoic acid",
+            "term": {
+              "id": "CHEBI:30753",
+              "label": "4-aminobenzoic acid"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:30753",
+              "label": "4-aminobenzoic acid"
+            }
+          },
+          {
+            "preferred_term": "(DL)-alpha-Lipoic acid",
+            "term": {
+              "id": "CHEBI:16494",
+              "label": "lipoic acid"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:16494",
+              "label": "lipoic acid"
+            }
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "K2HPO4",
+            "term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.228628",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "KH2PO4",
+            "term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.228628",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "NaCl",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "0.447316",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            }
+          },
+          {
+            "preferred_term": "(NH4)2SO4",
+            "term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            },
+            "concentration": {
+              "value": "0.447316",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            }
+          },
+          {
+            "preferred_term": "CaCl2 x 2 H2O",
+            "term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            },
+            "concentration": {
+              "value": "0.0596421",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            }
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.0894632",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "Calf brains",
+            "term": {
+              "id": "UBERON:0000955",
+              "label": "brain"
+            },
+            "concentration": {
+              "value": "variable",
+              "unit": "VARIABLE"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "infusion from 200 g/L; Tissue infusion - source material is calf brain tissue; Constituent of Brain Heart Infusion commercial product"
+          },
+          {
+            "preferred_term": "Beef heart",
+            "term": {
+              "id": "UBERON:0000948",
+              "label": "heart"
+            },
+            "concentration": {
+              "value": "variable",
+              "unit": "VARIABLE"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "infusion from 250 g/L; Tissue infusion - source material is beef/ox heart tissue; Constituent of Brain Heart Infusion commercial product"
+          },
+          {
+            "preferred_term": "Proteose peptone",
+            "term": {
+              "id": "MICRO:0000180",
+              "label": "proteose peptone"
+            },
+            "concentration": {
+              "value": "10.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "Enzymatic digest of animal protein providing amino acids and peptides; Constituent of Brain Heart Infusion commercial product"
+          },
+          {
+            "preferred_term": "Dextrose",
+            "term": {
+              "id": "CHEBI:17634",
+              "label": "D-glucose"
+            },
+            "concentration": {
+              "value": "2.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "Carbon/energy source; Constituent of Brain Heart Infusion commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "glucose",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "D-glucose",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "dextrose",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "Sodium chloride",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "5.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "NaCl",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "table salt",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "Disodium phosphate",
+            "term": {
+              "id": "CHEBI:34683",
+              "label": "disodium hydrogenphosphate"
+            },
+            "concentration": {
+              "value": "2.5",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Difco/BD Brain Heart Infusion",
+              "catalog_number": "237500",
+              "product_url": "https://microbenotes.com/brain-heart-infusion-bhi-agar/"
+            },
+            "notes": "pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "Na2HPO4",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "disodium hydrogen phosphate",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "sodium phosphate dibasic",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "concentration": {
+              "value": "4.97018",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Sodium resazurin",
+            "concentration": {
+              "value": "0.000497018",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "CHEBI:8806",
+              "label": "Resazurin"
+            }
+          },
+          {
+            "preferred_term": "NaHCO3",
+            "term": {
+              "id": "CHEBI:32139",
+              "label": "sodium hydrogencarbonate"
+            },
+            "concentration": {
+              "value": "6.36183",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32139",
+              "label": "sodium hydrogencarbonate"
+            }
+          },
+          {
+            "preferred_term": "Disodium succinate",
+            "term": {
+              "id": "CHEBI:63675",
+              "label": "sodium succinate (anhydrous)"
+            },
+            "concentration": {
+              "value": "4.97018",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:63675",
+              "label": "sodium succinate (anhydrous)"
+            }
+          },
+          {
+            "preferred_term": "L-Cysteine HCl x H2O",
+            "term": {
+              "id": "CHEBI:91248",
+              "label": "L-cysteine hydrochloride hydrate"
+            },
+            "concentration": {
+              "value": "0.298211",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:91248",
+              "label": "L-cysteine hydrochloride hydrate"
+            }
+          },
+          {
+            "preferred_term": "Na2S x 9 H2O",
+            "term": {
+              "id": "CHEBI:76209",
+              "label": "sodium sulfide nonahydrate"
+            },
+            "concentration": {
+              "value": "0.298211",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:76209",
+              "label": "sodium sulfide nonahydrate"
+            }
+          },
+          {
+            "preferred_term": "Acetic acid",
+            "term": {
+              "id": "CHEBI:15366",
+              "label": "acetic acid"
+            },
+            "concentration": {
+              "value": "573.182",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:15366",
+              "label": "acetic acid"
+            }
+          },
+          {
+            "preferred_term": "Propionic acid",
+            "term": {
+              "id": "CHEBI:30768",
+              "label": "propionic acid"
+            },
+            "concentration": {
+              "value": "192.145",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:30768",
+              "label": "propionic acid"
+            }
+          },
+          {
+            "preferred_term": "Butyric acid",
+            "term": {
+              "id": "CHEBI:30772",
+              "label": "butyric acid"
+            },
+            "concentration": {
+              "value": "129",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:30772",
+              "label": "butyric acid"
+            }
+          },
+          {
+            "preferred_term": "n-Valeric acid",
+            "term": {
+              "id": "CHEBI:17418",
+              "label": "valeric acid"
+            },
+            "concentration": {
+              "value": "30.2827",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:17418",
+              "label": "valeric acid"
+            }
+          },
+          {
+            "preferred_term": "iso-Butyric acid",
+            "term": {
+              "id": "CHEBI:16135",
+              "label": "isobutyric acid"
+            },
+            "concentration": {
+              "value": "30.6375",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:16135",
+              "label": "isobutyric acid"
+            }
+          },
+          {
+            "preferred_term": "Tryptone",
+            "term": {
+              "id": "MICRO:0000182",
+              "label": "tryptone"
+            },
+            "concentration": {
+              "value": "10.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+              "catalog_number": "Multiple (L3522 Sigma, 244520 BD)",
+              "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"
+            },
+            "notes": "Pancreatic digest of casein providing amino acids, peptides, and nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "pancreatic digest of casein",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "casein peptone",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "term": {
+              "id": "FOODON:03315426",
+              "label": "yeast extract"
+            },
+            "concentration": {
+              "value": "5.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+              "catalog_number": "Multiple (L3522 Sigma, 244520 BD)",
+              "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"
+            },
+            "notes": "Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product"
+          },
+          {
+            "preferred_term": "Sodium chloride",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "10.0",
+              "unit": "G_PER_L"
+            },
+            "supplier_catalog": {
+              "supplier_name": "Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)",
+              "catalog_number": "Multiple (L3522 Sigma, 244520 BD)",
+              "product_url": "https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/"
+            },
+            "notes": "Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product",
+            "synonyms": [
+              {
+                "synonym_text": "NaCl",
+                "synonym_type": "EXACT"
+              },
+              {
+                "synonym_text": "table salt",
+                "synonym_type": "EXACT"
+              }
+            ]
+          },
+          {
+            "preferred_term": "iso-Valeric acid",
+            "term": {
+              "id": "CHEBI:28484",
+              "label": "isovaleric acid"
+            },
+            "concentration": {
+              "value": "30.0247",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_term": {
+              "id": "MediaIngredientMech:000378",
+              "label": "iso-Valeric acid"
+            }
+          },
+          {
+            "preferred_term": "Haemin",
+            "term": {
+              "id": "CHEBI:50385",
+              "label": "hemin"
+            },
+            "concentration": {
+              "value": "0.5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:50385",
+              "label": "hemin"
+            }
+          },
+          {
+            "preferred_term": "NaOH",
+            "term": {
+              "id": "CHEBI:32145",
+              "label": "sodium hydroxide"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32145",
+              "label": "sodium hydroxide"
+            }
+          },
+          {
+            "preferred_term": "Biotin",
+            "term": {
+              "id": "CHEBI:15956",
+              "label": "biotin"
+            },
+            "concentration": {
+              "value": "0.02",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:15956",
+              "label": "biotin"
+            }
+          },
+          {
+            "preferred_term": "Folic acid",
+            "term": {
+              "id": "CHEBI:27470",
+              "label": "folic acid"
+            },
+            "concentration": {
+              "value": "0.02",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:27470",
+              "label": "folic acid"
+            }
+          },
+          {
+            "preferred_term": "Pyridoxine hydrochloride",
+            "term": {
+              "id": "CHEBI:30961",
+              "label": "pyridoxine hydrochloride"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:30961",
+              "label": "pyridoxine hydrochloride"
+            }
+          },
+          {
+            "preferred_term": "Thiamine HCl",
+            "term": {
+              "id": "CHEBI:49105",
+              "label": "thiamine hydrochloride"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:49105",
+              "label": "thiamine hydrochloride"
+            }
+          },
+          {
+            "preferred_term": "Riboflavin",
+            "term": {
+              "id": "CHEBI:17015",
+              "label": "riboflavin"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:17015",
+              "label": "riboflavin"
+            }
+          },
+          {
+            "preferred_term": "Nicotinic acid",
+            "term": {
+              "id": "CHEBI:15940",
+              "label": "nicotinic acid"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:15940",
+              "label": "nicotinic acid"
+            }
+          },
+          {
+            "preferred_term": "Calcium D-(+)-pantothenate",
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "term": {
+              "id": "CHEBI:31345",
+              "label": "Calcium pantothenate"
+            }
+          },
+          {
+            "preferred_term": "Vitamin B12",
+            "term": {
+              "id": "CHEBI:176843",
+              "label": "vitamin B12"
+            },
+            "concentration": {
+              "value": "0.001",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:176843",
+              "label": "vitamin B12"
+            }
+          },
+          {
+            "preferred_term": "p-Aminobenzoic acid",
+            "term": {
+              "id": "CHEBI:30753",
+              "label": "4-aminobenzoic acid"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:30753",
+              "label": "4-aminobenzoic acid"
+            }
+          },
+          {
+            "preferred_term": "(DL)-alpha-Lipoic acid",
+            "term": {
+              "id": "CHEBI:16494",
+              "label": "lipoic acid"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:16494",
+              "label": "lipoic acid"
+            }
+          }
+        ],
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Volatile fatty acid mixture / iso-Valeric acid",
+    "field_path": "ingredients[26].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[1].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"iso-Valeric acid\",\n                        \"compound_id\": 378,\n                        \"amount\": 32.25,\n                        \"unit\": \"ml\",\n                        \"g_l\": 30.0247,\n                        \"mmol_l\": 293.986,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Volatile fatty acid mixture recipe row 7; primary printed amount",
+        "exact_source_quote": "   iso-Valeric acid                                                 32.25        ml",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "30.0247",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "30.0247",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 32.25 mL is a VFA stock input. The source main dose is 3.1 mL of the seven-component mixture. Provider stock g_l=30.0247; a null conversion does not license treating mL as grams. No independent density or final-medium mass conversion is assumed."
+  },
+  {
+    "ingredient_or_context": "Haemin solution / Haemin",
+    "field_path": "ingredients[27].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[2].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Haemin\",\n                        \"compound_id\": 149,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 0.766989,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Haemin solution recipe row 1; primary printed amount",
+        "exact_source_quote": "   Haemin                                                           50.00       mg",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "50 mg in the explicit make-up-to-100 mL stock corresponds to 0.5 g/L stock. The 2 mL dose nominally delivers 1 mg haemin, not 0.5 g/L final medium."
+  },
+  {
+    "ingredient_or_context": "Haemin solution / NaOH",
+    "field_path": "ingredients[28].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[2].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\": 256,\n                        \"attribute\": \"1 N\",\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Haemin solution recipe row 2; primary printed amount",
+        "exact_source_quote": "   NaOH (1 N)                                                        1.00        ml",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "1 mL of 1 N NaOH is a reagent solution volume/strength, not 1 g/L. The stock is made up to 100 mL; the table does not establish 101 mL final stock."
+  },
+  {
+    "ingredient_or_context": "Haemin solution / Distilled water",
+    "field_path": "solutions",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[2].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Haemin solution recipe row 3; primary printed amount",
+        "exact_source_quote": "   Distilled water                                                100.00         ml",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Restore this explicit source-only premix, missing VFA component, receiving-stock dose or solvent amount in its named stage. The actual absent intended local container is recorded; source locators remain separate.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Haemin table water 100 mL is qualified by make-up-to-100 mL preparation."
+  },
+  {
+    "ingredient_or_context": "Wolin's vitamin solution (10x) / Biotin",
+    "field_path": "ingredients[29].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[3].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Wolin's vitamin solution (10x) recipe row 1; primary printed amount",
+        "exact_source_quote": "   Biotin                                                           20.00       mg",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "20 mg is an input to a stock declared as 1000 mL by the provider. Conditional on that nominal stock basis, the 1 mL dose delivers 0.02 mg. Physical final stock/medium volumes are not independently measured."
+  },
+  {
+    "ingredient_or_context": "Wolin's vitamin solution (10x) / Folic acid",
+    "field_path": "ingredients[30].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[3].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Wolin's vitamin solution (10x) recipe row 2; primary printed amount",
+        "exact_source_quote": "   Folic acid                                                       20.00       mg",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "20 mg is an input to a stock declared as 1000 mL by the provider. Conditional on that nominal stock basis, the 1 mL dose delivers 0.02 mg. Physical final stock/medium volumes are not independently measured."
+  },
+  {
+    "ingredient_or_context": "Wolin's vitamin solution (10x) / Pyridoxine hydrochloride",
+    "field_path": "ingredients[31].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[3].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Wolin's vitamin solution (10x) recipe row 3; primary printed amount",
+        "exact_source_quote": "   Pyridoxine hydrochloride                                       100.00        mg",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "100 mg is an input to a stock declared as 1000 mL by the provider. Conditional on that nominal stock basis, the 1 mL dose delivers 0.1 mg. Physical final stock/medium volumes are not independently measured."
+  },
+  {
+    "ingredient_or_context": "Wolin's vitamin solution (10x) / Thiamine HCl",
+    "field_path": "ingredients[32].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[3].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Wolin's vitamin solution (10x) recipe row 4; primary printed amount",
+        "exact_source_quote": "   Thiamine HCl                                                     50.00       mg",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "50 mg is an input to a stock declared as 1000 mL by the provider. Conditional on that nominal stock basis, the 1 mL dose delivers 0.05 mg. Physical final stock/medium volumes are not independently measured."
+  },
+  {
+    "ingredient_or_context": "Wolin's vitamin solution (10x) / Riboflavin",
+    "field_path": "ingredients[33].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[3].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Wolin's vitamin solution (10x) recipe row 5; primary printed amount",
+        "exact_source_quote": "   Riboflavin                                                       50.00       mg",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "50 mg is an input to a stock declared as 1000 mL by the provider. Conditional on that nominal stock basis, the 1 mL dose delivers 0.05 mg. Physical final stock/medium volumes are not independently measured."
+  },
+  {
+    "ingredient_or_context": "Wolin's vitamin solution (10x) / Nicotinic acid",
+    "field_path": "ingredients[34].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[3].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Wolin's vitamin solution (10x) recipe row 6; primary printed amount",
+        "exact_source_quote": "   Nicotinic acid                                                   50.00       mg",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "50 mg is an input to a stock declared as 1000 mL by the provider. Conditional on that nominal stock basis, the 1 mL dose delivers 0.05 mg. Physical final stock/medium volumes are not independently measured."
+  },
+  {
+    "ingredient_or_context": "Wolin's vitamin solution (10x) / Calcium D-(+)-pantothenate",
+    "field_path": "ingredients[35].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[3].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Wolin's vitamin solution (10x) recipe row 7; primary printed amount",
+        "exact_source_quote": "   Calcium D-(+)-pantothenate                                       50.00       mg",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[35].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[35].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "50 mg is an input to a stock declared as 1000 mL by the provider. Conditional on that nominal stock basis, the 1 mL dose delivers 0.05 mg. Physical final stock/medium volumes are not independently measured."
+  },
+  {
+    "ingredient_or_context": "Wolin's vitamin solution (10x) / Vitamin B12",
+    "field_path": "ingredients[36].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[3].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Wolin's vitamin solution (10x) recipe row 8; primary printed amount",
+        "exact_source_quote": "   Vitamin B12                                                       1.00       mg",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[36].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[36].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "1 mg is an input to a stock declared as 1000 mL by the provider. Conditional on that nominal stock basis, the 1 mL dose delivers 0.001 mg. Physical final stock/medium volumes are not independently measured."
+  },
+  {
+    "ingredient_or_context": "Wolin's vitamin solution (10x) / p-Aminobenzoic acid",
+    "field_path": "ingredients[37].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[3].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Wolin's vitamin solution (10x) recipe row 9; primary printed amount",
+        "exact_source_quote": "   p-Aminobenzoic acid                                              50.00       mg",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[37].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[37].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "50 mg is an input to a stock declared as 1000 mL by the provider. Conditional on that nominal stock basis, the 1 mL dose delivers 0.05 mg. Physical final stock/medium volumes are not independently measured."
+  },
+  {
+    "ingredient_or_context": "Wolin's vitamin solution (10x) / (DL)-alpha-Lipoic acid",
+    "field_path": "ingredients[38].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[3].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Wolin's vitamin solution (10x) recipe row 10; primary printed amount",
+        "exact_source_quote": "   (DL)-alpha-Lipoic acid                                           50.00       mg",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "This value is an undiluted stock quantity or a misrepresented liquid amount, not a final medium concentration. Restore stock scope, original units and receiving dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[38].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[38].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "50 mg is an input to a stock declared as 1000 mL by the provider. Conditional on that nominal stock basis, the 1 mL dose delivers 0.05 mg. Physical final stock/medium volumes are not independently measured."
+  },
+  {
+    "ingredient_or_context": "Wolin's vitamin solution (10x) / Distilled water",
+    "field_path": "solutions",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[3].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      },
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Wolin's vitamin solution (10x) recipe row 11; primary printed amount",
+        "exact_source_quote": "   Distilled water                                               1000.00         ml",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Restore this explicit source-only premix, missing VFA component, receiving-stock dose or solvent amount in its named stage. The actual absent intended local container is recorded; source locators remain separate.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Calf brains",
+    "field_path": "ingredients[6].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Brain heart infusion\",\n                        \"compound_id\": 186,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\": 6,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.96421,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      }
+    ],
+    "rationale": "The source prescribes 6 g BD BBL BHI premix, not unscaled tissue/peptone/glucose/salt/phosphate values from a commercial formulation. VARIABLE infusion descriptors are not measurable amounts for this medium.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Beef heart",
+    "field_path": "ingredients[7].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Brain heart infusion\",\n                        \"compound_id\": 186,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\": 6,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.96421,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      }
+    ],
+    "rationale": "The source prescribes 6 g BD BBL BHI premix, not unscaled tissue/peptone/glucose/salt/phosphate values from a commercial formulation. VARIABLE infusion descriptors are not measurable amounts for this medium.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Proteose peptone",
+    "field_path": "ingredients[8].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Brain heart infusion\",\n                        \"compound_id\": 186,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\": 6,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.96421,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      }
+    ],
+    "rationale": "The source prescribes 6 g BD BBL BHI premix, not unscaled tissue/peptone/glucose/salt/phosphate values from a commercial formulation. VARIABLE infusion descriptors are not measurable amounts for this medium.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "10.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "10.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Dextrose",
+    "field_path": "ingredients[9].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Brain heart infusion\",\n                        \"compound_id\": 186,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\": 6,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.96421,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      }
+    ],
+    "rationale": "The source prescribes 6 g BD BBL BHI premix, not unscaled tissue/peptone/glucose/salt/phosphate values from a commercial formulation. VARIABLE infusion descriptors are not measurable amounts for this medium.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "2.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "2.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Sodium chloride",
+    "field_path": "ingredients[10].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Brain heart infusion\",\n                        \"compound_id\": 186,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\": 6,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.96421,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      }
+    ],
+    "rationale": "The source prescribes 6 g BD BBL BHI premix, not unscaled tissue/peptone/glucose/salt/phosphate values from a commercial formulation. VARIABLE infusion descriptors are not measurable amounts for this medium.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "5.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "5.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Disodium phosphate",
+    "field_path": "ingredients[11].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Brain heart infusion\",\n                        \"compound_id\": 186,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\": 6,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.96421,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      }
+    ],
+    "rationale": "The source prescribes 6 g BD BBL BHI premix, not unscaled tissue/peptone/glucose/salt/phosphate values from a commercial formulation. VARIABLE infusion descriptors are not measurable amounts for this medium.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Tryptone",
+    "field_path": "ingredients[23].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Brain heart infusion\",\n                        \"compound_id\": 186,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\": 6,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.96421,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      }
+    ],
+    "rationale": "The source has no LB addition; these separate 10/5/10 g/L tryptone/yeast/salt rows cannot be justified by the exact DSMZ recipe or by unrelated LB notes.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "10.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "10.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Yeast extract",
+    "field_path": "ingredients[24].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Brain heart infusion\",\n                        \"compound_id\": 186,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\": 6,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.96421,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      }
+    ],
+    "rationale": "The source has no LB addition; these separate 10/5/10 g/L tryptone/yeast/salt rows cannot be justified by the exact DSMZ recipe or by unrelated LB notes.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "5.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "5.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Sodium chloride",
+    "field_path": "ingredients[25].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1455api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1455",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Brain heart infusion\",\n                        \"compound_id\": 186,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\": 6,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.96421,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e"
+      }
+    ],
+    "rationale": "The source has no LB addition; these separate 10/5/10 g/L tryptone/yeast/salt rows cannot be justified by the exact DSMZ recipe or by unrelated LB notes.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "10.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "10.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "CO2 sparging fraction",
+    "field_path": "preparation.CO2_sparging_fraction",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Exact main or haemin/vitamin stock preparation/table wording",
+        "exact_source_quote": "100% CO2 gas for 30 - 45 min",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Retain the literal quantity and its actual main-versus-stock scope; correct existing statements need evidence, while stock preparation must be associated with the restored stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The vitamin solution should be sterilized by filtration. Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The vitamin solution should be sterilized by filtration. Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Sparging duration",
+    "field_path": "preparation.Sparging_duration",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Exact main or haemin/vitamin stock preparation/table wording",
+        "exact_source_quote": "30 - 45 min",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Retain the literal quantity and its actual main-versus-stock scope; correct existing statements need evidence, while stock preparation must be associated with the restored stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The vitamin solution should be sterilized by filtration. Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The vitamin solution should be sterilized by filtration. Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Intermediate pH",
+    "field_path": "preparation.Intermediate_pH",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Exact main or haemin/vitamin stock preparation/table wording",
+        "exact_source_quote": "pH between 6.5 and 7.0",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Retain the literal quantity and its actual main-versus-stock scope; correct existing statements need evidence, while stock preparation must be associated with the restored stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The vitamin solution should be sterilized by filtration. Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The vitamin solution should be sterilized by filtration. Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Dispensing gas",
+    "field_path": "preparation.Dispensing_gas",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Exact main or haemin/vitamin stock preparation/table wording",
+        "exact_source_quote": "medium under 100% CO2 gas atmosphere",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Retain the literal quantity and its actual main-versus-stock scope; correct existing statements need evidence, while stock preparation must be associated with the restored stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The vitamin solution should be sterilized by filtration. Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The vitamin solution should be sterilized by filtration. Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Addition-stock gas",
+    "field_path": "preparation.Addition-stock_gas",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Exact main or haemin/vitamin stock preparation/table wording",
+        "exact_source_quote": "solutions prepared under 100% N2 gas",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Retain the literal quantity and its actual main-versus-stock scope; correct existing statements need evidence, while stock preparation must be associated with the restored stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The vitamin solution should be sterilized by filtration. Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The vitamin solution should be sterilized by filtration. Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Final pH",
+    "field_path": "preparation.Final_pH",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Exact main or haemin/vitamin stock preparation/table wording",
+        "exact_source_quote": "pH of complete medium to 6.6 - 6.8",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Retain the literal quantity and its actual main-versus-stock scope; correct existing statements need evidence, while stock preparation must be associated with the restored stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 6.6,
+          "max": 6.8
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 6.6,
+          "max": 6.8
+        },
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Haemin mass",
+    "field_path": "preparation.Haemin_mass",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Exact main or haemin/vitamin stock preparation/table wording",
+        "exact_source_quote": "50 mg haemin",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Retain the literal quantity and its actual main-versus-stock scope; correct existing statements need evidence, while stock preparation must be associated with the restored stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated.",
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Haemin base volume",
+    "field_path": "preparation.Haemin_base_volume",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Exact main or haemin/vitamin stock preparation/table wording",
+        "exact_source_quote": "1 ml 1 N",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Retain the literal quantity and its actual main-versus-stock scope; correct existing statements need evidence, while stock preparation must be associated with the restored stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated.",
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Haemin base strength",
+    "field_path": "preparation.Haemin_base_strength",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Exact main or haemin/vitamin stock preparation/table wording",
+        "exact_source_quote": "1 N       NaOH",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Retain the literal quantity and its actual main-versus-stock scope; correct existing statements need evidence, while stock preparation must be associated with the restored stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated.",
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Haemin final stock volume",
+    "field_path": "preparation.Haemin_final_stock_volume",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Exact main or haemin/vitamin stock preparation/table wording",
+        "exact_source_quote": "make up to 100 ml",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Retain the literal quantity and its actual main-versus-stock scope; correct existing statements need evidence, while stock preparation must be associated with the restored stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated.",
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Haemin stock percent",
+    "field_path": "preparation.Haemin_stock_percent",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Exact main or haemin/vitamin stock preparation/table wording",
+        "exact_source_quote": "Haemin solution (0.05% w/v)",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Retain the literal quantity and its actual main-versus-stock scope; correct existing statements need evidence, while stock preparation must be associated with the restored stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Resazurin stock percent",
+    "field_path": "preparation.Resazurin_stock_percent",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Exact main or haemin/vitamin stock preparation/table wording",
+        "exact_source_quote": "Sodium resazurin (0.1% w/v)",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Retain the literal quantity and its actual main-versus-stock scope; correct existing statements need evidence, while stock preparation must be associated with the restored stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Vitamin stock factor",
+    "field_path": "preparation.Vitamin_stock_factor",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Exact main or haemin/vitamin stock preparation/table wording",
+        "exact_source_quote": "Wolin's vitamin solution (10x)",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "Retain the literal quantity and its actual main-versus-stock scope; correct existing statements need evidence, while stock preparation must be associated with the restored stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Calf-brain 200 g/L infusion descriptor",
+    "field_path": "ingredients[6].notes",
+    "decision": "unsupported",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Source premix identity or actual main final pH",
+        "exact_source_quote": "Brain heart infusion (BD BBL)",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "The local numeric product descriptor does not establish the amount or pH of DSMZ 1455. Preserve as historical product provenance only until the exact product specification is verified.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].notes",
+        "stored": "infusion from 200 g/L; Tissue infusion - source material is calf brain tissue; Constituent of Brain Heart Infusion commercial product",
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[6].notes",
+        "stored": "infusion from 200 g/L; Tissue infusion - source material is calf brain tissue; Constituent of Brain Heart Infusion commercial product",
+        "decision": "unsupported"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Beef-heart 250 g/L infusion descriptor",
+    "field_path": "ingredients[7].notes",
+    "decision": "unsupported",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Source premix identity or actual main final pH",
+        "exact_source_quote": "Brain heart infusion (BD BBL)",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "The local numeric product descriptor does not establish the amount or pH of DSMZ 1455. Preserve as historical product provenance only until the exact product specification is verified.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].notes",
+        "stored": "infusion from 250 g/L; Tissue infusion - source material is beef/ox heart tissue; Constituent of Brain Heart Infusion commercial product",
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[7].notes",
+        "stored": "infusion from 250 g/L; Tissue infusion - source material is beef/ox heart tissue; Constituent of Brain Heart Infusion commercial product",
+        "decision": "unsupported"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Commercial pH 7.4 ± 0.2 is not main pH",
+    "field_path": "ingredients[11].notes",
+    "decision": "unsupported",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Source premix identity or actual main final pH",
+        "exact_source_quote": "pH of complete medium to 6.6 - 6.8",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "The local numeric product descriptor does not establish the amount or pH of DSMZ 1455. Preserve as historical product provenance only until the exact product specification is verified.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[11].notes",
+        "stored": "pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial product",
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "ingredients[11].notes",
+        "stored": "pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial product",
+        "decision": "unsupported"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Conditional final titrant amount",
+    "field_path": "preparation.final_titrant",
+    "decision": "not_quantified",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1455",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf",
+        "source_locator": "Final adjustment sentence",
+        "exact_source_quote": "if necessary.",
+        "snapshot_sha256": "e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689",
+        "parsed_text_sha256": "2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80"
+      }
+    ],
+    "rationale": "No fixed titrant identity, dose or final-volume correction is supplied. Do not infer one.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The vitamin solution should be sterilized by filtration. Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.",
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The vitamin solution should be sterilized by filtration. Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.",
+        "decision": "not_quantified"
+      }
+    ]
+  }
+]
+
+### Exact medium and stock dependencies
+
+identity: supported. Targets: CultureMech:000921.
+
+The target and unique CM000921 owner identify DSMZ 1455. Its PDF prints the VFA, haemin and tenfold Wolin stock definitions in full. References to media 330/78/120 are stock provenance only; their unrelated recipes and organisms are not transferred.
+
+### Main nominal basis, stock dilution and commercial expansion
+
+consistency: concern. Targets: CultureMech:000921.
+
+Every local concentration, source-only recipe row and quantitative preparation claim is inventoried. The provider declares 1006 mL, whereas listed liquid inputs total 1006.6 mL; neither establishes measured final volume. Main rounded rates agree only on that nominal provider basis. Six VFA acids replace a seven-component liquid mixture, with butyric 129 mL mislabeled as 129 g/L; haemin and tenfold vitamin strengths remain undiluted. BHI and LB expansion rows cannot represent the prescribed 6 g BHI premix.
+
+### Supplied salt forms and product identity
+
+grounding: concern. Targets: CultureMech:000921.
+
+Sodium resazurin is linked only to primary CHEBI:8806, neutral C12H7NO4 without sodium. Generic disodium succinate is narrowed to anhydrous CHEBI:63675 without a source hydration specification. The explicit D-calcium pantothenate agrees with CHEBI:31345 structure, and generic non-stereospecific CHEBI:16494 does not contradict the DL-lipoic source. UBERON brain/heart classes identify anatomy, not a validated chemical composition or infusion amount. Other explicit hydrates and hydrochlorides were compared without inventing replacements.
+
+### Legacy isovalerate linkage
+
+provenance: concern. Targets: CultureMech:000921.
+
+The exact pinned public catalog and complete tree search do not establish legacy MediaIngredientMech:000378. This completed negative lookup leaves historical correspondence unresolved; it is separate from current CHEBI-keyed mappings and does not mean source access was unavailable.
+
+### Main gas/pH sequence and stock-specific sterilization
+
+completeness: concern. Targets: CultureMech:000921.
+
+Main CO2 sparging for 30–45 minutes, pH 6.5–7.0 then 6.6–6.8, dispensing atmosphere, autoclaving, N2-prepared later additions and vitamin filtration are retained without claim evidence. Haemin 50 mg/1 mL 1 N NaOH/make-up-to-100 mL instructions are misplaced as a main step and lack a stock object. Refrigeration is retained; no absent autoclave cycle or storage temperature is invented.
+
+### Complex liquid and organism/reference scope
+
+scope: supported. Targets: CultureMech:000921.
+
+COMPLEX/UNDEFINED and LIQUID fit the source BHI/yeast liquid formulation. No specific organism, strain, taxon, assembly, DOI/PMID or supported-growth claim is asserted. Organisms and solid-agar preparation on the secondary BHI page are outside this medium.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:000921.
+
+19 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Owner versus generated record and current writer boundaries
+
+provenance: concern. Targets: CultureMech:000921.
+
+The generated target and current owner retain the same scientific defects. Product notes assert March research, but no specific historical expansion writer is established. Current inspected importer/merge/cleanup excerpts are implementation context, not historical replay. Correct the owner explicitly and regenerate the target, retaining old history and exact source-version evidence.
+
+## Findings
+
+### f1: Commercial expansions and undiluted stocks replace the source formulation
+
+blocker / open / confirmed; issue key: culturemech.000921.formulation.
+
+The 39-row list is not a faithful DSMZ 1455 formulation: the 6 g BHI premix is replaced by unscaled product constituents, unrelated LB rows add 10/5/10 g/L, three stock doses are missing, one VFA component is absent, and butyric/NaOH liquid amounts are treated as g/L. These changes alter the recipe identity.
+
+### f2: Sodium resazurin is assigned a neutral molecular term
+
+major / open / confirmed; issue key: culturemech.000921.resazurin-form.
+
+The source and local name specify sodium resazurin; CHEBI:8806 has neutral formula C12H7NO4 and no sodium. A canonical-label pass does not establish this salt identity. No current secondary CHEBI linkage is asserted on this row.
+
+### f3: Haemin preparation lacks its stock scope
+
+major / open / confirmed; issue key: culturemech.000921.stock-preparation.
+
+The second main preparation step describes a 100 mL haemin stock without a stock object or 2 mL receiving dose. Literal quantities survive but their scope is essential to faithful preparation.
+
+### f4: Succinate hydration and legacy linkage remain unsupported
+
+minor / open / confirmed; issue key: culturemech.000921.specificity-provenance.
+
+The generic disodium-succinate source does not independently establish anhydrous CHEBI:63675. Legacy 000378 correspondence remains unresolved after the completed pinned lookup. Product notes and secondary citations do not authenticate historical premix expansion.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the exact premix amount and seven-component VFA, haemin and tenfold vitamin stock hierarchies with their receiving doses; reconcile unsupported commercial rows and liquid units explicitly. Preserve nominal provider rates and the unresolved 1006 versus 1006.6 mL basis, without inventing a final denominator. Attach exact evidence before regeneration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Resolve and evidence the exact supplied sodium salt before correcting the primary mapping. Preserve the 0.1% w/v stock and 0.5 mL dose; do not invent a replacement identifier or mass conversion.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Associate the preserved haemin dissolution, make-up, filtration and refrigeration instructions with the restored stock, retaining main gas/pH stages and separate later additions with attached evidence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Verify the source-specific succinate form and historical ingredient correspondence, preserve explicit uncertainty and attach the exact premix specification if expansion is retained. Do not infer a hydrate or legacy-ID replacement.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch025/241/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-025/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch025/241/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml:1:id: CultureMech:000921<br>./data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml:1:id: CultureMech:000921<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch025/source-preflight-bound/241/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 46 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch025/source-preflight-bound/241/evidence-context-original.json; Complete frozen source context rebound to every fresh native input | context_only | All context input hashes match the fresh native inspection. The preflight remains historical preparation; this assessment uses the current bound record catalog and native input hashes. |
+| dsmz1455 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf; Complete main recipe, three stock tables and all preparation, DSMZ PDF pages 1–2 | supports | Exact main and stock identities, every amount, product qualifier and preparation stage compared. The primary prints all three referenced stocks; no unrelated parent-medium formulation is imported. |
+| mediadive1455api | https://mediadive.dsmz.de/rest/medium/1455; $.data.medium; $.data.solutions[0:4].recipe; $.data.solutions[*].steps | supports | Exact main and stock identities, every amount, product qualifier and preparation stage compared. The primary prints all three referenced stocks; no unrelated parent-medium formulation is imported. |
+| solution608 | https://mediadive.dsmz.de/rest/solution/608; Complete exact stock endpoint, all recipe rows and steps | supports | Standalone stock strength and receiving-medium dose are separate quantities. |
+| solution124 | https://mediadive.dsmz.de/rest/solution/124; Complete exact stock endpoint, all recipe rows and steps | supports | Standalone stock strength and receiving-medium dose are separate quantities. |
+| solution5980 | https://mediadive.dsmz.de/rest/solution/5980; Complete exact stock endpoint, all recipe rows and steps | supports | Standalone stock strength and receiving-medium dose are separate quantities. |
+| bhi-context | https://microbenotes.com/brain-heart-infusion-bhi-agar/; Composition of Brain Heart Infusion (BHI) Agar; complete page read only as product-reference context | supports | This secondary agar formulation does not authenticate the exact BD BBL premix or the local unscaled expansion. Unrelated organism-use and preparation claims are not transferred. |
+| bdBhiLinked-attempt | https://www.bd.com/resource.Aspx?IDX=9008; Preserved exact public retrieval result | context_only | The manufacturer link from the cited secondary BHI page returned HTTP 403. Exact BD BBL product composition remains unverified; the complete DSMZ recipe still explicitly supplies the 6 g commercial-premix amount. |
+| lbMillerNotes-attempt | https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/; Preserved exact public retrieval result | context_only | The earlier exact LB-Miller page attempt failed certificate verification. Original failed metadata and time are preserved. DSMZ 1455 contains no LB addition, independently of this optional access failure. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15366 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15366; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15366 resolves to acetic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15940 resolves to nicotinic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15956 resolves to biotin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi16135 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16135; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:16135 resolves to isobutyric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:16494 resolves to lipoic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17015 resolves to riboflavin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17418 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17418; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17418 resolves to valeric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17634 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17634 resolves to D-glucose. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:176843 resolves to vitamin B12. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:27470 resolves to folic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi28484 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28484; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:28484 resolves to isovaleric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30753 resolves to 4-aminobenzoic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30768 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30768; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30768 resolves to propionic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30772 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30772; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30772 resolves to butyric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30961 resolves to pyridoxine hydrochloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31345 resolves to Calcium pantothenate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32145 resolves to sodium hydroxide. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi34683 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:34683 resolves to disodium hydrogenphosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:49105 resolves to thiamine hydrochloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi50385 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50385; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:50385 resolves to hemin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63675 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63675; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63675 resolves to sodium succinate (anhydrous). Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91248 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| foodon03315426 | https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFOODON_03315426; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | FOODON:03315426 resolves to yeast extract. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| micro0000180 | https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000180; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | MICRO:0000180 resolves to proteose peptone. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| micro0000182 | https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000182; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | MICRO:0000182 resolves to tryptone. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| uberon0000948 | https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000948; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | UBERON:0000948 resolves to heart. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| uberon0000955 | https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000955; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | UBERON:0000955 resolves to brain. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15366": [{"label": "Acetic acid", "match_type": "preferred_term", "identifier": "CHEBI:15366", "preferred_term": "Acetic acid", "ontology_id": "CHEBI:15366", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16135": [{"label": "Isobutyric acid", "match_type": "preferred_term", "identifier": "CHEBI:16135", "preferred_term": "Isobutyric acid", "ontology_id": "CHEBI:16135", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494": [{"label": "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier": "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015", "preferred_term": "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17418": [{"label": "Valeric acid", "match_type": "preferred_term", "identifier": "CHEBI:17418", "preferred_term": "Valeric acid", "ontology_id": "CHEBI:17418", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470": [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30768": [{"label": "Propionic acid", "match_type": "preferred_term", "identifier": "CHEBI:30768", "preferred_term": "Propionic acid", "ontology_id": "CHEBI:30768", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30772": [{"label": "Butyric acid", "match_type": "preferred_term", "identifier": "CHEBI:30772", "preferred_term": "Butyric acid", "ontology_id": "CHEBI:30772", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32145": [{"label": "NaOH", "match_type": "preferred_term", "identifier": "CHEBI:32145", "preferred_term": "NaOH", "ontology_id": "CHEBI:32145", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:50385": [{"label": "Haemin", "match_type": "preferred_term", "identifier": "CHEBI:50385", "preferred_term": "Haemin", "ontology_id": "CHEBI:50385", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63675": [{"label": "Sodium succinate", "match_type": "preferred_term", "identifier": "CHEBI:63675", "preferred_term": "Sodium succinate", "ontology_id": "CHEBI:63675", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209": [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209", "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91248": [{"label": "L-Cysteine HCl x H2O", "match_type": "preferred_term", "identifier": "CHEBI:91248", "preferred_term": "L-Cysteine HCl x H2O", "ontology_id": "CHEBI:91248", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch025/241/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| quantity-local-fields | /private/tmp/culturemech-review-work-batch025/241/quantity-local-field-audit.json; All quantity layer paths and exact stored values against full inspected YAML | context_only | Every local concentration is covered; every layer locator resolves to its exact stored value or explicitly absent intended container. Source locators remain in source_snippets. |
+| mimPinnedCatalog | https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json; Pinned complete public catalog/tree, exact legacy identifier and filename-suffix lookup | supports | Completed bounded lookup found no current correspondence for legacy 000378. No historical identity is inferred from the current CHEBI-based index. |
+| mimPinnedTree | https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1; Pinned complete public catalog/tree, exact legacy identifier and filename-suffix lookup | supports | Completed bounded lookup found no current correspondence for legacy 000378. No historical identity is inferred from the current CHEBI-based index. |
+| writer-context-0 | src/culturemech/merge/formulation.py; formulation_content lines 48–70; merge_formulation_evidence lines 92–128 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-1 | src/culturemech/import/mediadive_importer.py; _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570; _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps lines 653–721 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-2 | scripts/cleanup_media_quality.py; normalize_name lines 76–82; _merge_ingredient_group lines 148–216 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-3 | scripts/recover_nbrc_composition.py; has_curated_composition lines 277–301 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| history-metadata | data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml; data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 10, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml", "events": 9, "timestamp_issues": []}] |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The manufacturer link from the cited secondary BHI page returned HTTP 403. Exact BD BBL product composition remains unverified; the complete DSMZ recipe still explicitly supplies the 6 g commercial-premix amount.
+- The earlier exact LB-Miller page attempt failed certificate verification. Original failed metadata and time are preserved. DSMZ 1455 contains no LB addition, independently of this optional access failure.
+- The exact manufacturer product specification and historical LB page were not accessible in the preserved attempts. These optional limits do not prevent assessment against the complete exact DSMZ formulation; no product-level composition is claimed verified.
+- The provider 1006 mL basis and 1006.6 mL input-liquid sum remain distinct; neither is asserted as measured final volume. VFA mass conversions requiring unprovided densities are not invented.
+- All original canonical diagnostics passed once; source findings remain despite structural and identifier checks. This scientific assessment preceded formal review validation and saving; their results are recorded separately.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T142714Z-culturemech-000921-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: alternative_rumen_bacteria_medium (CultureMech:000921)'
+started_at: '2026-10-21T14:22:33Z'
+finished_at: '2026-10-21T14:27:14Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 1455 is identifiable, but the 39-ingredient record substitutes unscaled
+  BHI and unrelated LB constituents for a 6 g BHI premix, flattens three stocks, omits
+  one of seven VFA components and converts two liquid amounts into g/L. Main preparation
+  largely survives, while haemin preparation lacks its stock scope. Source sodium
+  resazurin is grounded to neutral resazurin. Nominal provider concentrations are
+  distinguished from an unresolved final-volume basis.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml
+    sha256: c9ca7aa8f6dc061b34282fee2130fbc3622969913befeccc26bacb2867a5e526
+    role: target
+  - path: data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml
+    sha256: 9720d8e519944cc2afe44f6cd3eb851636239965ca76fe3260da6a2a50d551b2
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/recover_nbrc_composition.py
+    sha256: a723e458895350a68ffae3e446006205b2e00cb185bee13976d5047be56405f0
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 241; batch 025 item 1 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-four task batches
+    contain 240 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 243 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000921
+targets:
+- target_id: CultureMech:000921
+  path: data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml
+  label: alternative_rumen_bacteria_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch025/241/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-025/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch025/241/strict.tsv"
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:000921
+- check_id: bdBhiLinked-source-access
+  name: 'Exact source content access: bdBhiLinked'
+  required: false
+  status: unavailable
+  summary: The manufacturer link from the cited secondary BHI page returned HTTP 403.
+    Exact BD BBL product composition remains unverified; the complete DSMZ recipe
+    still explicitly supplies the 6 g commercial-premix amount.
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - bdBhiLinked-attempt
+- check_id: lbMillerNotes-source-access
+  name: 'Exact source content access: lbMillerNotes'
+  required: false
+  status: unavailable
+  summary: The earlier exact LB-Miller page attempt failed certificate verification.
+    Original failed metadata and time are preserved. DSMZ 1455 contains no LB addition,
+    independently of this optional access failure.
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - lbMillerNotes-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T14:27:13Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T14:27:13Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:22:56.708822Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch025/241/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:22:58.811268Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-025/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch025/241/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:23:01.924672Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:23:03.543592Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T14:27:13Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml:1:id:
+    CultureMech:000921
+
+    ./data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml:1:id:
+    CultureMech:000921
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/source-preflight-bound/241/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T14:27:13Z'
+  support: supports
+  summary: 46 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 4b35b62dd0423fa6e8d85a62f38d848255e60358315f5e97a721ead75e6adbab
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/source-preflight-bound/241/evidence-context-original.json
+  locator: Complete frozen source context rebound to every fresh native input
+  accessed_at: '2026-10-21T14:27:13Z'
+  support: context_only
+  summary: All context input hashes match the fresh native inspection. The preflight
+    remains historical preparation; this assessment uses the current bound record
+    catalog and native input hashes.
+  snapshot_sha256: bb80b6105d7ef229552645380f5097c17481f8f190a8a637a25cdc187f034cf3
+- evidence_id: dsmz1455
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf
+  locator: Complete main recipe, three stock tables and all preparation, DSMZ PDF
+    pages 1–2
+  accessed_at: '2026-10-21T14:05:44.224210Z'
+  support: supports
+  summary: Exact main and stock identities, every amount, product qualifier and preparation
+    stage compared. The primary prints all three referenced stocks; no unrelated parent-medium
+    formulation is imported.
+  snapshot_sha256: e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689
+- evidence_id: mediadive1455api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1455
+  locator: $.data.medium; $.data.solutions[0:4].recipe; $.data.solutions[*].steps
+  accessed_at: '2026-10-21T14:05:42.867792Z'
+  support: supports
+  summary: Exact main and stock identities, every amount, product qualifier and preparation
+    stage compared. The primary prints all three referenced stocks; no unrelated parent-medium
+    formulation is imported.
+  snapshot_sha256: d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e
+- evidence_id: solution608
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/608
+  locator: Complete exact stock endpoint, all recipe rows and steps
+  accessed_at: '2026-10-21T13:42:26.127322Z'
+  support: supports
+  summary: Standalone stock strength and receiving-medium dose are separate quantities.
+  snapshot_sha256: c82c2f685260a674c13acb93c21e12eebc4e31b713fc952da3fa85c37d1ebcca
+- evidence_id: solution124
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/124
+  locator: Complete exact stock endpoint, all recipe rows and steps
+  accessed_at: '2026-10-21T14:06:47.271200Z'
+  support: supports
+  summary: Standalone stock strength and receiving-medium dose are separate quantities.
+  snapshot_sha256: c489ebf63546dcb20932e9972c262f1738402aba626963c8989608a4c41d5c8e
+- evidence_id: solution5980
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5980
+  locator: Complete exact stock endpoint, all recipe rows and steps
+  accessed_at: '2026-10-21T11:03:05.362213Z'
+  support: supports
+  summary: Standalone stock strength and receiving-medium dose are separate quantities.
+  snapshot_sha256: 2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c
+- evidence_id: bhi-context
+  kind: database
+  reference: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  locator: Composition of Brain Heart Infusion (BHI) Agar; complete page read only
+    as product-reference context
+  accessed_at: '2026-10-21T08:42:28.042848Z'
+  support: supports
+  summary: This secondary agar formulation does not authenticate the exact BD BBL
+    premix or the local unscaled expansion. Unrelated organism-use and preparation
+    claims are not transferred.
+  quote: 'Proteose peptone 10.000 Dextrose (Glucose) 2.000 Sodium chloride 5.000 Disodium
+    phosphate 2.500 Agar 15.000 Final pH (at 25°C): 7.4±0.2'
+  snapshot_sha256: b3cc10040924962852a01d9d3341fa2d14616b8c845f83d5d187d03c08db0a01
+- evidence_id: bdBhiLinked-attempt
+  kind: database
+  reference: https://www.bd.com/resource.Aspx?IDX=9008
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T14:06:47.271677Z'
+  support: context_only
+  summary: The manufacturer link from the cited secondary BHI page returned HTTP 403.
+    Exact BD BBL product composition remains unverified; the complete DSMZ recipe
+    still explicitly supplies the 6 g commercial-premix amount.
+  snapshot_sha256: 7ee0d0d400ff02354eead3cd3f626121f4edb6d4d3fef459c0a2294ee2a2a515
+- evidence_id: lbMillerNotes-attempt
+  kind: database
+  reference: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T13:41:02.586238Z'
+  support: context_only
+  summary: The earlier exact LB-Miller page attempt failed certificate verification.
+    Original failed metadata and time are preserved. DSMZ 1455 contains no LB addition,
+    independently of this optional access failure.
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15366
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15366
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T11:29:08.353669Z'
+  support: supports
+  summary: CHEBI:15366 resolves to acetic acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b887e3ee7d15164ff6fa8efd11f052ea16965afb730d69ccf31744ffb64d2139
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: CHEBI:15940 resolves to nicotinic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi16135
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16135
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T11:29:08.576156Z'
+  support: supports
+  summary: CHEBI:16135 resolves to isobutyric acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 9066add4e624c1d66e8ed2b31b6d8cd83aee6227fe29e0fe5a7bf1d36fedb4ab
+- evidence_id: chebi16494
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:13.001958Z'
+  support: supports
+  summary: CHEBI:16494 resolves to lipoic acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: chebi17015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:11.583596Z'
+  support: supports
+  summary: CHEBI:17015 resolves to riboflavin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi17418
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17418
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T11:29:08.845270Z'
+  support: supports
+  summary: CHEBI:17418 resolves to valeric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 6546fe66aa87af53dc1299ff42f673250bf3224d190f83b9b21df72da4eb863b
+- evidence_id: chebi17634
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:33.425023Z'
+  support: supports
+  summary: CHEBI:17634 resolves to D-glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: d11b31a8e91c3fffe7744f612dab69cdb4e02f42068cd2eb1458acee4503a62f
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: CHEBI:176843 resolves to vitamin B12. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: CHEBI:27470 resolves to folic acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi28484
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28484
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T11:29:08.988065Z'
+  support: supports
+  summary: CHEBI:28484 resolves to isovaleric acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2b4dfb8baa01781ecd4134258216b42713d7a04212539eab80e08ba7f10e1a72
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: CHEBI:30753 resolves to 4-aminobenzoic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30768
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30768
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T11:29:09.188555Z'
+  support: supports
+  summary: CHEBI:30768 resolves to propionic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 80537b4c820ccc6f118b47ad4c3cefcd2592c467d49b3097b4caf5bc6d993e59
+- evidence_id: chebi30772
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30772
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T13:41:02.576317Z'
+  support: supports
+  summary: CHEBI:30772 resolves to butyric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: a8b9cd95297c39fb4d94870da094fa17f751fe3504c3b2ebffafa0605c740eff
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: CHEBI:30961 resolves to pyridoxine hydrochloride. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: CHEBI:31345 resolves to Calcium pantothenate. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi32145
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:28.263004Z'
+  support: supports
+  summary: CHEBI:32145 resolves to sodium hydroxide. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: db4eb7586e3b04f5b2ae39b47bae7c1c533316f9bce15ee2829bf6967ca352f1
+- evidence_id: chebi34683
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:46.851695Z'
+  support: supports
+  summary: CHEBI:34683 resolves to disodium hydrogenphosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 288ee6eaa066e7579840122d3411df9987889818425faea2b7203724bbc41fd2
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: CHEBI:49105 resolves to thiamine hydrochloride. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi50385
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50385
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:27:40.648821Z'
+  support: supports
+  summary: CHEBI:50385 resolves to hemin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b989203634707b89526a8664c8fa65cb4976c4cdd791427218cf01b37d17356e
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi63675
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63675
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:27:41.075057Z'
+  support: supports
+  summary: CHEBI:63675 resolves to sodium succinate (anhydrous). Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 4c54df9f2d63f54dea26d64e4ec9fedeb486c2c2abe44b70c5c621512f1fdd3c
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91248
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:32.136441Z'
+  support: supports
+  summary: CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: foodon03315426
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFOODON_03315426
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:00:49.388263Z'
+  support: supports
+  summary: FOODON:03315426 resolves to yeast extract. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: cf2b158469d7dedbe7c31242b5901230a29b5765e04bb37c92f0b1ddd6ea9c44
+- evidence_id: micro0000180
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000180
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:24.290496Z'
+  support: supports
+  summary: MICRO:0000180 resolves to proteose peptone. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: b3a39a531c5ab5508a297228d13ba81c99899b041d5292a9d668eded939bfe73
+- evidence_id: micro0000182
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000182
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:37:21.973857Z'
+  support: supports
+  summary: MICRO:0000182 resolves to tryptone. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 01875997c482a49e4d41eb35c6c697e190afd236a8527625e94b6f96df3872b0
+- evidence_id: uberon0000948
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000948
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:24.915343Z'
+  support: supports
+  summary: UBERON:0000948 resolves to heart. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: c658bbcacd89befa47e3bd4859f176db247b3ce67483b6590c91d0865d41aed4
+- evidence_id: uberon0000955
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000955
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:25.122940Z'
+  support: supports
+  summary: UBERON:0000955 resolves to brain. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: ce200fe58b82652d0f04310c92d23633919fa6ad6aee2a17c6b25c2e490a8877
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T14:27:13Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:15366": [{"label": "Acetic acid", "match_type":
+    "preferred_term", "identifier": "CHEBI:15366", "preferred_term": "Acetic acid",
+    "ontology_id": "CHEBI:15366", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier":
+    "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label":
+    "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term":
+    "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:16135": [{"label": "Isobutyric acid", "match_type": "preferred_term",
+    "identifier": "CHEBI:16135", "preferred_term": "Isobutyric acid", "ontology_id":
+    "CHEBI:16135", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494":
+    [{"label": "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier":
+    "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label":
+    "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015", "preferred_term":
+    "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:17418": [{"label": "Valeric acid", "match_type": "preferred_term",
+    "identifier": "CHEBI:17418", "preferred_term": "Valeric acid", "ontology_id":
+    "CHEBI:17418", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:176843":
+    [{"label": "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843",
+    "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status":
+    "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:26710": [{"label": "NaCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id":
+    "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470":
+    [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470",
+    "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid",
+    "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term":
+    "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:30768": [{"label": "Propionic acid", "match_type":
+    "preferred_term", "identifier": "CHEBI:30768", "preferred_term": "Propionic acid",
+    "ontology_id": "CHEBI:30768", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:30772": [{"label": "Butyric acid", "match_type": "preferred_term", "identifier":
+    "CHEBI:30772", "preferred_term": "Butyric acid", "ontology_id": "CHEBI:30772",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961": [{"label":
+    "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier": "CHEBI:30961",
+    "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id":
+    "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32145":
+    [{"label": "NaOH", "match_type": "preferred_term", "identifier": "CHEBI:32145",
+    "preferred_term": "NaOH", "ontology_id": "CHEBI:32145", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl",
+    "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:50385": [{"label": "Haemin", "match_type": "preferred_term", "identifier":
+    "CHEBI:50385", "preferred_term": "Haemin", "ontology_id": "CHEBI:50385", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4",
+    "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:63675": [{"label": "Sodium succinate",
+    "match_type": "preferred_term", "identifier": "CHEBI:63675", "preferred_term":
+    "Sodium succinate", "ontology_id": "CHEBI:63675", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:76209": [{"label": "Na2S x 9 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:76209", "preferred_term": "Na2S x 9 H2O",
+    "ontology_id": "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91248": [{"label":
+    "L-Cysteine HCl x H2O", "match_type": "preferred_term", "identifier": "CHEBI:91248",
+    "preferred_term": "L-Cysteine HCl x H2O", "ontology_id": "CHEBI:91248", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/241/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T14:27:13Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: a7ffa1011ba195fe63a594e619f59f2d338d4414293309410e74491e1f7b3963
+- evidence_id: quantity-local-fields
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/241/quantity-local-field-audit.json
+  locator: All quantity layer paths and exact stored values against full inspected
+    YAML
+  accessed_at: '2026-10-21T14:27:13Z'
+  support: context_only
+  summary: Every local concentration is covered; every layer locator resolves to its
+    exact stored value or explicitly absent intended container. Source locators remain
+    in source_snippets.
+  snapshot_sha256: 0285fc3595a8941d0456f5d49a71292d2eb3dc796811e857162228b83cb042e0
+- evidence_id: mimPinnedCatalog
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json
+  locator: Pinned complete public catalog/tree, exact legacy identifier and filename-suffix
+    lookup
+  accessed_at: '2026-10-21T09:52:30.606764Z'
+  support: supports
+  summary: Completed bounded lookup found no current correspondence for legacy 000378.
+    No historical identity is inferred from the current CHEBI-based index.
+  snapshot_sha256: 474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7
+- evidence_id: mimPinnedTree
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1
+  locator: Pinned complete public catalog/tree, exact legacy identifier and filename-suffix
+    lookup
+  accessed_at: '2026-10-21T09:51:04.602158Z'
+  support: supports
+  summary: Completed bounded lookup found no current correspondence for legacy 000378.
+    No historical identity is inferred from the current CHEBI-based index.
+  snapshot_sha256: 71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec
+- evidence_id: writer-context-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content lines 48–70; merge_formulation_evidence lines 92–128
+  accessed_at: '2026-10-21T14:27:13Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-context-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570;
+    _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps
+    lines 653–721
+  accessed_at: '2026-10-21T14:27:13Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-context-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: normalize_name lines 76–82; _merge_ingredient_group lines 148–216
+  accessed_at: '2026-10-21T14:27:13Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-context-3
+  kind: record_content
+  reference: scripts/recover_nbrc_composition.py
+  locator: has_curated_composition lines 277–301
+  accessed_at: '2026-10-21T14:27:13Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: a723e458895350a68ffae3e446006205b2e00cb185bee13976d5047be56405f0
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml; data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T14:27:13Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 10, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml", "events":
+    9, "timestamp_issues": []}]'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '36 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 38/39
+    primary and 26/39 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131527
+  - chebi15366
+  - chebi15940
+  - chebi15956
+  - chebi16135
+  - chebi16494
+  - chebi17015
+  - chebi17418
+  - chebi17634
+  - chebi176843
+  - chebi26710
+  - chebi27470
+  - chebi28484
+  - chebi30753
+  - chebi30768
+  - chebi30772
+  - chebi30961
+  - chebi31345
+  - chebi31795
+  - chebi32139
+  - chebi32145
+  - chebi34683
+  - chebi49105
+  - chebi50385
+  - chebi62946
+  - chebi63036
+  - chebi63675
+  - chebi76209
+  - chebi86158
+  - chebi8806
+  - chebi91248
+  - foodon03315426
+  - micro0000180
+  - micro0000182
+  - uberon0000948
+  - uberon0000955
+  details: 'Instance coverage on a 0–100 percent scale, denominator 39: primary 97.44%;
+    secondary 66.67%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 64 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"ingredient_or_context\": \"Main sol. 1455 / K2HPO4\",\n\
+    \    \"field_path\": \"ingredients[0].concentration\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1455api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 1,\\\
+    n                        \\\"compound\\\": \\\"K2HPO4\\\",\\n                \
+    \        \\\"compound_id\\\": 10,\\n                        \\\"amount\\\": 0.23,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 0.228628,\\n                        \\\"mmol_l\\\": 1.31263,\\n   \
+    \                     \\\"optional\\\": 0\\n                    }\",\n       \
+    \ \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Main sol. 1455 recipe row 1; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   K2HPO4                               \
+    \                             0.23          g\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored value agrees with the provider\
+    \ rounded g/L on its nominal 1006 mL basis, but has no attached source evidence.\
+    \ Preserve the literal batch amount and unresolved denominator rather than validating\
+    \ it as measured final concentration.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[0].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.228628\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.228628\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider g_l=0.228628; local 0.228628. Literal input liquids total 1006.6\
+    \ mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured\
+    \ final volume. Rounding is retained, not silently normalized.\"\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Main sol. 1455 / KH2PO4\",\n    \"field_path\"\
+    : \"ingredients[1].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1455api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[1]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 2,\\\
+    n                        \\\"compound\\\": \\\"KH2PO4\\\",\\n                \
+    \        \\\"compound_id\\\": 11,\\n                        \\\"amount\\\": 0.23,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 0.228628,\\n                        \\\"mmol_l\\\": 1.68004,\\n   \
+    \                     \\\"optional\\\": 0\\n                    }\",\n       \
+    \ \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Main sol. 1455 recipe row 2; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   KH2PO4                               \
+    \                             0.23          g\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored value agrees with the provider\
+    \ rounded g/L on its nominal 1006 mL basis, but has no attached source evidence.\
+    \ Preserve the literal batch amount and unresolved denominator rather than validating\
+    \ it as measured final concentration.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[1].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.228628\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.228628\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider g_l=0.228628; local 0.228628. Literal input liquids total 1006.6\
+    \ mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured\
+    \ final volume. Rounding is retained, not silently normalized.\"\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Main sol. 1455 / NaCl\",\n    \"field_path\"\
+    : \"ingredients[2].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1455api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 3,\\\
+    n                        \\\"compound\\\": \\\"NaCl\\\",\\n                  \
+    \      \\\"compound_id\\\": 43,\\n                        \\\"amount\\\": 0.45,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 0.447316,\\n                        \\\"mmol_l\\\": 7.65428,\\n   \
+    \                     \\\"optional\\\": 0\\n                    }\",\n       \
+    \ \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Main sol. 1455 recipe row 3; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   NaCl                                 \
+    \                             0.45          g\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored value agrees with the provider\
+    \ rounded g/L on its nominal 1006 mL basis, but has no attached source evidence.\
+    \ Preserve the literal batch amount and unresolved denominator rather than validating\
+    \ it as measured final concentration.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[2].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.447316\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.447316\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider g_l=0.447316; local 0.447316. Literal input liquids total 1006.6\
+    \ mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured\
+    \ final volume. Rounding is retained, not silently normalized.\"\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Main sol. 1455 / (NH4)2SO4\",\n    \"field_path\"\
+    : \"ingredients[3].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1455api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"(NH4)2SO4\\\",\\n             \
+    \           \\\"compound_id\\\": 27,\\n                        \\\"amount\\\"\
+    : 0.45,\\n                        \\\"unit\\\": \\\"g\\\",\\n                \
+    \        \\\"g_l\\\": 0.447316,\\n                        \\\"mmol_l\\\": 3.38517,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Main sol. 1455 recipe row 4; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   (NH4)2SO4                            \
+    \                             0.45          g\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored value agrees with the provider\
+    \ rounded g/L on its nominal 1006 mL basis, but has no attached source evidence.\
+    \ Preserve the literal batch amount and unresolved denominator rather than validating\
+    \ it as measured final concentration.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[3].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.447316\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.447316\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider g_l=0.447316; local 0.447316. Literal input liquids total 1006.6\
+    \ mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured\
+    \ final volume. Rounding is retained, not silently normalized.\"\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Main sol. 1455 / CaCl2 x 2 H2O\",\n    \"field_path\"\
+    : \"ingredients[4].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1455api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 5,\\\
+    n                        \\\"compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 7,\\n                        \\\"amount\\\
+    \": 0.06,\\n                        \\\"unit\\\": \\\"g\\\",\\n              \
+    \          \\\"g_l\\\": 0.0596421,\\n                        \\\"mmol_l\\\": 0.405687,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Main sol. 1455 recipe row 5; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   CaCl2 x 2 H2O                        \
+    \                             0.06          g\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored value agrees with the provider\
+    \ rounded g/L on its nominal 1006 mL basis, but has no attached source evidence.\
+    \ Preserve the literal batch amount and unresolved denominator rather than validating\
+    \ it as measured final concentration.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[4].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.0596421\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0596421\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider g_l=0.0596421; local 0.0596421. Literal input liquids total 1006.6\
+    \ mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured\
+    \ final volume. Rounding is retained, not silently normalized.\"\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Main sol. 1455 / MgSO4 x 7 H2O\",\n    \"field_path\"\
+    : \"ingredients[5].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1455api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[5]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 6,\\\
+    n                        \\\"compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 8,\\n                        \\\"amount\\\
+    \": 0.09,\\n                        \\\"unit\\\": \\\"g\\\",\\n              \
+    \          \\\"g_l\\\": 0.0894632,\\n                        \\\"mmol_l\\\": 0.362969,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Main sol. 1455 recipe row 6; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   MgSO4 x 7 H2O                        \
+    \                             0.09          g\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored value agrees with the provider\
+    \ rounded g/L on its nominal 1006 mL basis, but has no attached source evidence.\
+    \ Preserve the literal batch amount and unresolved denominator rather than validating\
+    \ it as measured final concentration.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[5].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.0894632\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0894632\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider g_l=0.0894632; local 0.0894632. Literal input liquids total 1006.6\
+    \ mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured\
+    \ final volume. Rounding is retained, not silently normalized.\"\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Main sol. 1455 / Brain heart infusion\",\n \
+    \   \"field_path\": \"ingredients\",\n    \"decision\": \"add\",\n    \"local\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1455api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\",\n \
+    \       \"source_locator\": \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 7,\\n                  \
+    \      \\\"compound\\\": \\\"Brain heart infusion\\\",\\n                    \
+    \    \\\"compound_id\\\": 186,\\n                        \\\"attribute\\\": \\\
+    \"BD BBL\\\",\\n                        \\\"amount\\\": 6,\\n                \
+    \        \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 5.96421,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Main sol. 1455 recipe row 7; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   Brain heart infusion (BD BBL)        \
+    \                             6.00          g\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this explicit source-only premix,\
+    \ missing VFA component, receiving-stock dose or solvent amount in its named stage.\
+    \ The actual absent intended local container is recorded; source locators remain\
+    \ separate.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n  \
+    \  \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"ingredients\",\n        \"stored\": [\n          {\n         \
+    \   \"preferred_term\": \"K2HPO4\",\n            \"term\": {\n              \"\
+    id\": \"CHEBI:131527\",\n              \"label\": \"dipotassium hydrogen phosphate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.228628\",\n              \"unit\": \"G_PER_L\"\n            },\n           \
+    \ \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:131527\"\
+    ,\n              \"label\": \"dipotassium hydrogen phosphate\"\n            }\n\
+    \          },\n          {\n            \"preferred_term\": \"KH2PO4\",\n    \
+    \        \"term\": {\n              \"id\": \"CHEBI:63036\",\n              \"\
+    label\": \"potassium dihydrogen phosphate\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.228628\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:63036\",\n              \"label\": \"potassium dihydrogen\
+    \ phosphate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"NaCl\",\n            \"term\": {\n              \"id\": \"CHEBI:26710\",\n\
+    \              \"label\": \"sodium chloride\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"0.447316\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:26710\",\n              \"label\": \"sodium\
+    \ chloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"(NH4)2SO4\",\n            \"term\": {\n              \"id\": \"CHEBI:62946\"\
+    ,\n              \"label\": \"ammonium sulfate\"\n            },\n           \
+    \ \"concentration\": {\n              \"value\": \"0.447316\",\n             \
+    \ \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:62946\",\n              \"label\": \"ammonium\
+    \ sulfate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"CaCl2 x 2 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86158\"\
+    ,\n              \"label\": \"calcium chloride dihydrate\"\n            },\n \
+    \           \"concentration\": {\n              \"value\": \"0.0596421\",\n  \
+    \            \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:86158\",\n              \"label\": \"calcium\
+    \ chloride dihydrate\"\n            }\n          },\n          {\n           \
+    \ \"preferred_term\": \"MgSO4 x 7 H2O\",\n            \"term\": {\n          \
+    \    \"id\": \"CHEBI:31795\",\n              \"label\": \"magnesium sulfate heptahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.0894632\",\n              \"unit\": \"G_PER_L\"\n            },\n          \
+    \  \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:31795\"\
+    ,\n              \"label\": \"magnesium sulfate heptahydrate\"\n            }\n\
+    \          },\n          {\n            \"preferred_term\": \"Calf brains\",\n\
+    \            \"term\": {\n              \"id\": \"UBERON:0000955\",\n        \
+    \      \"label\": \"brain\"\n            },\n            \"concentration\": {\n\
+    \              \"value\": \"variable\",\n              \"unit\": \"VARIABLE\"\n\
+    \            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Difco/BD Brain Heart Infusion\",\n              \"catalog_number\": \"237500\"\
+    ,\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"infusion from 200 g/L; Tissue infusion\
+    \ - source material is calf brain tissue; Constituent of Brain Heart Infusion\
+    \ commercial product\"\n          },\n          {\n            \"preferred_term\"\
+    : \"Beef heart\",\n            \"term\": {\n              \"id\": \"UBERON:0000948\"\
+    ,\n              \"label\": \"heart\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"variable\",\n              \"unit\": \"VARIABLE\"\
+    \n            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Difco/BD Brain Heart Infusion\",\n              \"catalog_number\": \"237500\"\
+    ,\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"infusion from 250 g/L; Tissue infusion\
+    \ - source material is beef/ox heart tissue; Constituent of Brain Heart Infusion\
+    \ commercial product\"\n          },\n          {\n            \"preferred_term\"\
+    : \"Proteose peptone\",\n            \"term\": {\n              \"id\": \"MICRO:0000180\"\
+    ,\n              \"label\": \"proteose peptone\"\n            },\n           \
+    \ \"concentration\": {\n              \"value\": \"10.0\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"supplier_catalog\": {\n         \
+    \     \"supplier_name\": \"Difco/BD Brain Heart Infusion\",\n              \"\
+    catalog_number\": \"237500\",\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"Enzymatic digest of animal protein\
+    \ providing amino acids and peptides; Constituent of Brain Heart Infusion commercial\
+    \ product\"\n          },\n          {\n            \"preferred_term\": \"Dextrose\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:17634\",\n         \
+    \     \"label\": \"D-glucose\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"2.0\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Difco/BD Brain Heart Infusion\",\n              \"catalog_number\": \"237500\"\
+    ,\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"Carbon/energy source; Constituent of\
+    \ Brain Heart Infusion commercial product\",\n            \"synonyms\": [\n  \
+    \            {\n                \"synonym_text\": \"glucose\",\n             \
+    \   \"synonym_type\": \"EXACT\"\n              },\n              {\n         \
+    \       \"synonym_text\": \"D-glucose\",\n                \"synonym_type\": \"\
+    EXACT\"\n              },\n              {\n                \"synonym_text\":\
+    \ \"dextrose\",\n                \"synonym_type\": \"EXACT\"\n              }\n\
+    \            ]\n          },\n          {\n            \"preferred_term\": \"\
+    Sodium chloride\",\n            \"term\": {\n              \"id\": \"CHEBI:26710\"\
+    ,\n              \"label\": \"sodium chloride\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"5.0\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"supplier_catalog\": {\n         \
+    \     \"supplier_name\": \"Difco/BD Brain Heart Infusion\",\n              \"\
+    catalog_number\": \"237500\",\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"Maintains osmotic equilibrium; Constituent\
+    \ of Brain Heart Infusion commercial product\",\n            \"synonyms\": [\n\
+    \              {\n                \"synonym_text\": \"NaCl\",\n              \
+    \  \"synonym_type\": \"EXACT\"\n              },\n              {\n          \
+    \      \"synonym_text\": \"table salt\",\n                \"synonym_type\": \"\
+    EXACT\"\n              }\n            ]\n          },\n          {\n         \
+    \   \"preferred_term\": \"Disodium phosphate\",\n            \"term\": {\n   \
+    \           \"id\": \"CHEBI:34683\",\n              \"label\": \"disodium hydrogenphosphate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    2.5\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"supplier_catalog\"\
+    : {\n              \"supplier_name\": \"Difco/BD Brain Heart Infusion\",\n   \
+    \           \"catalog_number\": \"237500\",\n              \"product_url\": \"\
+    https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\n            },\n  \
+    \          \"notes\": \"pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart\
+    \ Infusion commercial product\",\n            \"synonyms\": [\n              {\n\
+    \                \"synonym_text\": \"Na2HPO4\",\n                \"synonym_type\"\
+    : \"EXACT\"\n              },\n              {\n                \"synonym_text\"\
+    : \"disodium hydrogen phosphate\",\n                \"synonym_type\": \"EXACT\"\
+    \n              },\n              {\n                \"synonym_text\": \"sodium\
+    \ phosphate dibasic\",\n                \"synonym_type\": \"EXACT\"\n        \
+    \      }\n            ]\n          },\n          {\n            \"preferred_term\"\
+    : \"Yeast extract\",\n            \"concentration\": {\n              \"value\"\
+    : \"4.97018\",\n              \"unit\": \"G_PER_L\"\n            }\n         \
+    \ },\n          {\n            \"preferred_term\": \"Sodium resazurin\",\n   \
+    \         \"concentration\": {\n              \"value\": \"0.000497018\",\n  \
+    \            \"unit\": \"G_PER_L\"\n            },\n            \"term\": {\n\
+    \              \"id\": \"CHEBI:8806\",\n              \"label\": \"Resazurin\"\
+    \n            }\n          },\n          {\n            \"preferred_term\": \"\
+    NaHCO3\",\n            \"term\": {\n              \"id\": \"CHEBI:32139\",\n \
+    \             \"label\": \"sodium hydrogencarbonate\"\n            },\n      \
+    \      \"concentration\": {\n              \"value\": \"6.36183\",\n         \
+    \     \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32139\",\n              \"label\": \"sodium\
+    \ hydrogencarbonate\"\n            }\n          },\n          {\n            \"\
+    preferred_term\": \"Disodium succinate\",\n            \"term\": {\n         \
+    \     \"id\": \"CHEBI:63675\",\n              \"label\": \"sodium succinate (anhydrous)\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    4.97018\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:63675\",\n\
+    \              \"label\": \"sodium succinate (anhydrous)\"\n            }\n  \
+    \        },\n          {\n            \"preferred_term\": \"L-Cysteine HCl x H2O\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:91248\",\n         \
+    \     \"label\": \"L-cysteine hydrochloride hydrate\"\n            },\n      \
+    \      \"concentration\": {\n              \"value\": \"0.298211\",\n        \
+    \      \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:91248\",\n              \"label\": \"L-cysteine\
+    \ hydrochloride hydrate\"\n            }\n          },\n          {\n        \
+    \    \"preferred_term\": \"Na2S x 9 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:76209\",\n              \"label\": \"sodium sulfide nonahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.298211\",\n              \"unit\": \"G_PER_L\"\n            },\n           \
+    \ \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:76209\"\
+    ,\n              \"label\": \"sodium sulfide nonahydrate\"\n            }\n  \
+    \        },\n          {\n            \"preferred_term\": \"Acetic acid\",\n \
+    \           \"term\": {\n              \"id\": \"CHEBI:15366\",\n            \
+    \  \"label\": \"acetic acid\"\n            },\n            \"concentration\":\
+    \ {\n              \"value\": \"573.182\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:15366\",\n              \"label\": \"acetic acid\"\n  \
+    \          }\n          },\n          {\n            \"preferred_term\": \"Propionic\
+    \ acid\",\n            \"term\": {\n              \"id\": \"CHEBI:30768\",\n \
+    \             \"label\": \"propionic acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"192.145\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:30768\",\n              \"label\": \"propionic acid\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Butyric acid\",\n            \"term\": {\n              \"id\": \"CHEBI:30772\"\
+    ,\n              \"label\": \"butyric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"129\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:30772\",\n              \"label\": \"butyric acid\"\n  \
+    \          }\n          },\n          {\n            \"preferred_term\": \"n-Valeric\
+    \ acid\",\n            \"term\": {\n              \"id\": \"CHEBI:17418\",\n \
+    \             \"label\": \"valeric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"30.2827\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:17418\",\n              \"label\": \"valeric acid\"\n \
+    \           }\n          },\n          {\n            \"preferred_term\": \"iso-Butyric\
+    \ acid\",\n            \"term\": {\n              \"id\": \"CHEBI:16135\",\n \
+    \             \"label\": \"isobutyric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"30.6375\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:16135\",\n              \"label\": \"isobutyric acid\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Tryptone\",\n            \"term\": {\n              \"id\": \"MICRO:0000182\"\
+    ,\n              \"label\": \"tryptone\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"10.0\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Pancreatic digest of casein providing\
+    \ amino acids, peptides, and nitrogen; Constituent of LB Medium (Luria-Bertani,\
+    \ Miller formulation) commercial product\",\n            \"synonyms\": [\n   \
+    \           {\n                \"synonym_text\": \"pancreatic digest of casein\"\
+    ,\n                \"synonym_type\": \"EXACT\"\n              },\n           \
+    \   {\n                \"synonym_text\": \"casein peptone\",\n               \
+    \ \"synonym_type\": \"EXACT\"\n              }\n            ]\n          },\n\
+    \          {\n            \"preferred_term\": \"Yeast extract\",\n           \
+    \ \"term\": {\n              \"id\": \"FOODON:03315426\",\n              \"label\"\
+    : \"yeast extract\"\n            },\n            \"concentration\": {\n      \
+    \        \"value\": \"5.0\",\n              \"unit\": \"G_PER_L\"\n          \
+    \  },\n            \"supplier_catalog\": {\n              \"supplier_name\": \"\
+    Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Autodigest of Saccharomyces cerevisiae\
+    \ providing vitamins, amino acids, and trace elements; Constituent of LB Medium\
+    \ (Luria-Bertani, Miller formulation) commercial product\"\n          },\n   \
+    \       {\n            \"preferred_term\": \"Sodium chloride\",\n            \"\
+    term\": {\n              \"id\": \"CHEBI:26710\",\n              \"label\": \"\
+    sodium chloride\"\n            },\n            \"concentration\": {\n        \
+    \      \"value\": \"10.0\",\n              \"unit\": \"G_PER_L\"\n           \
+    \ },\n            \"supplier_catalog\": {\n              \"supplier_name\": \"\
+    Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Maintains osmotic equilibrium (Miller\
+    \ formulation); Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial\
+    \ product\",\n            \"synonyms\": [\n              {\n                \"\
+    synonym_text\": \"NaCl\",\n                \"synonym_type\": \"EXACT\"\n     \
+    \         },\n              {\n                \"synonym_text\": \"table salt\"\
+    ,\n                \"synonym_type\": \"EXACT\"\n              }\n            ]\n\
+    \          },\n          {\n            \"preferred_term\": \"iso-Valeric acid\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:28484\",\n         \
+    \     \"label\": \"isovaleric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"30.0247\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_term\": {\n              \"\
+    id\": \"MediaIngredientMech:000378\",\n              \"label\": \"iso-Valeric\
+    \ acid\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Haemin\",\n            \"term\": {\n              \"id\": \"CHEBI:50385\"\
+    ,\n              \"label\": \"hemin\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.5\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:50385\",\n              \"label\": \"hemin\"\n         \
+    \   }\n          },\n          {\n            \"preferred_term\": \"NaOH\",\n\
+    \            \"term\": {\n              \"id\": \"CHEBI:32145\",\n           \
+    \   \"label\": \"sodium hydroxide\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"1\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          },\n            \"mediaingredientmech_chebi_term\": {\n           \
+    \   \"id\": \"CHEBI:32145\",\n              \"label\": \"sodium hydroxide\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Biotin\",\n            \"term\": {\n              \"id\": \"CHEBI:15956\",\n \
+    \             \"label\": \"biotin\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.02\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:15956\",\n              \"label\": \"biotin\"\n        \
+    \    }\n          },\n          {\n            \"preferred_term\": \"Folic acid\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:27470\",\n         \
+    \     \"label\": \"folic acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.02\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:27470\",\n              \"label\": \"folic acid\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"Pyridoxine\
+    \ hydrochloride\",\n            \"term\": {\n              \"id\": \"CHEBI:30961\"\
+    ,\n              \"label\": \"pyridoxine hydrochloride\"\n            },\n   \
+    \         \"concentration\": {\n              \"value\": \"0.1\",\n          \
+    \    \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:30961\",\n              \"label\": \"pyridoxine\
+    \ hydrochloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Thiamine HCl\",\n            \"term\": {\n              \"id\": \"CHEBI:49105\"\
+    ,\n              \"label\": \"thiamine hydrochloride\"\n            },\n     \
+    \       \"concentration\": {\n              \"value\": \"0.05\",\n           \
+    \   \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:49105\",\n              \"label\": \"thiamine\
+    \ hydrochloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Riboflavin\",\n            \"term\": {\n              \"id\": \"CHEBI:17015\"\
+    ,\n              \"label\": \"riboflavin\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:17015\",\n              \"label\": \"riboflavin\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"Nicotinic\
+    \ acid\",\n            \"term\": {\n              \"id\": \"CHEBI:15940\",\n \
+    \             \"label\": \"nicotinic acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:15940\",\n              \"label\": \"nicotinic acid\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Calcium D-(+)-pantothenate\",\n            \"concentration\": {\n            \
+    \  \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n            },\n\
+    \            \"term\": {\n              \"id\": \"CHEBI:31345\",\n           \
+    \   \"label\": \"Calcium pantothenate\"\n            }\n          },\n       \
+    \   {\n            \"preferred_term\": \"Vitamin B12\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:176843\",\n              \"label\": \"vitamin\
+    \ B12\"\n            },\n            \"concentration\": {\n              \"value\"\
+    : \"0.001\",\n              \"unit\": \"G_PER_L\"\n            },\n          \
+    \  \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:176843\"\
+    ,\n              \"label\": \"vitamin B12\"\n            }\n          },\n   \
+    \       {\n            \"preferred_term\": \"p-Aminobenzoic acid\",\n        \
+    \    \"term\": {\n              \"id\": \"CHEBI:30753\",\n              \"label\"\
+    : \"4-aminobenzoic acid\"\n            },\n            \"concentration\": {\n\
+    \              \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n   \
+    \         },\n            \"mediaingredientmech_chebi_term\": {\n            \
+    \  \"id\": \"CHEBI:30753\",\n              \"label\": \"4-aminobenzoic acid\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    (DL)-alpha-Lipoic acid\",\n            \"term\": {\n              \"id\": \"CHEBI:16494\"\
+    ,\n              \"label\": \"lipoic acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:16494\",\n              \"label\": \"lipoic acid\"\n   \
+    \         }\n          }\n        ],\n        \"decision\": \"add\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": [\n         \
+    \ {\n            \"preferred_term\": \"K2HPO4\",\n            \"term\": {\n  \
+    \            \"id\": \"CHEBI:131527\",\n              \"label\": \"dipotassium\
+    \ hydrogen phosphate\"\n            },\n            \"concentration\": {\n   \
+    \           \"value\": \"0.228628\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          },\n            \"mediaingredientmech_chebi_term\": {\n           \
+    \   \"id\": \"CHEBI:131527\",\n              \"label\": \"dipotassium hydrogen\
+    \ phosphate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"KH2PO4\",\n            \"term\": {\n              \"id\": \"CHEBI:63036\"\
+    ,\n              \"label\": \"potassium dihydrogen phosphate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"0.228628\",\n  \
+    \            \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:63036\",\n              \"label\": \"potassium\
+    \ dihydrogen phosphate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"NaCl\",\n            \"term\": {\n              \"id\"\
+    : \"CHEBI:26710\",\n              \"label\": \"sodium chloride\"\n           \
+    \ },\n            \"concentration\": {\n              \"value\": \"0.447316\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:26710\",\n              \"label\": \"sodium\
+    \ chloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"(NH4)2SO4\",\n            \"term\": {\n              \"id\": \"CHEBI:62946\"\
+    ,\n              \"label\": \"ammonium sulfate\"\n            },\n           \
+    \ \"concentration\": {\n              \"value\": \"0.447316\",\n             \
+    \ \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:62946\",\n              \"label\": \"ammonium\
+    \ sulfate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"CaCl2 x 2 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86158\"\
+    ,\n              \"label\": \"calcium chloride dihydrate\"\n            },\n \
+    \           \"concentration\": {\n              \"value\": \"0.0596421\",\n  \
+    \            \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:86158\",\n              \"label\": \"calcium\
+    \ chloride dihydrate\"\n            }\n          },\n          {\n           \
+    \ \"preferred_term\": \"MgSO4 x 7 H2O\",\n            \"term\": {\n          \
+    \    \"id\": \"CHEBI:31795\",\n              \"label\": \"magnesium sulfate heptahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.0894632\",\n              \"unit\": \"G_PER_L\"\n            },\n          \
+    \  \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:31795\"\
+    ,\n              \"label\": \"magnesium sulfate heptahydrate\"\n            }\n\
+    \          },\n          {\n            \"preferred_term\": \"Calf brains\",\n\
+    \            \"term\": {\n              \"id\": \"UBERON:0000955\",\n        \
+    \      \"label\": \"brain\"\n            },\n            \"concentration\": {\n\
+    \              \"value\": \"variable\",\n              \"unit\": \"VARIABLE\"\n\
+    \            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Difco/BD Brain Heart Infusion\",\n              \"catalog_number\": \"237500\"\
+    ,\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"infusion from 200 g/L; Tissue infusion\
+    \ - source material is calf brain tissue; Constituent of Brain Heart Infusion\
+    \ commercial product\"\n          },\n          {\n            \"preferred_term\"\
+    : \"Beef heart\",\n            \"term\": {\n              \"id\": \"UBERON:0000948\"\
+    ,\n              \"label\": \"heart\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"variable\",\n              \"unit\": \"VARIABLE\"\
+    \n            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Difco/BD Brain Heart Infusion\",\n              \"catalog_number\": \"237500\"\
+    ,\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"infusion from 250 g/L; Tissue infusion\
+    \ - source material is beef/ox heart tissue; Constituent of Brain Heart Infusion\
+    \ commercial product\"\n          },\n          {\n            \"preferred_term\"\
+    : \"Proteose peptone\",\n            \"term\": {\n              \"id\": \"MICRO:0000180\"\
+    ,\n              \"label\": \"proteose peptone\"\n            },\n           \
+    \ \"concentration\": {\n              \"value\": \"10.0\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"supplier_catalog\": {\n         \
+    \     \"supplier_name\": \"Difco/BD Brain Heart Infusion\",\n              \"\
+    catalog_number\": \"237500\",\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"Enzymatic digest of animal protein\
+    \ providing amino acids and peptides; Constituent of Brain Heart Infusion commercial\
+    \ product\"\n          },\n          {\n            \"preferred_term\": \"Dextrose\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:17634\",\n         \
+    \     \"label\": \"D-glucose\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"2.0\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Difco/BD Brain Heart Infusion\",\n              \"catalog_number\": \"237500\"\
+    ,\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"Carbon/energy source; Constituent of\
+    \ Brain Heart Infusion commercial product\",\n            \"synonyms\": [\n  \
+    \            {\n                \"synonym_text\": \"glucose\",\n             \
+    \   \"synonym_type\": \"EXACT\"\n              },\n              {\n         \
+    \       \"synonym_text\": \"D-glucose\",\n                \"synonym_type\": \"\
+    EXACT\"\n              },\n              {\n                \"synonym_text\":\
+    \ \"dextrose\",\n                \"synonym_type\": \"EXACT\"\n              }\n\
+    \            ]\n          },\n          {\n            \"preferred_term\": \"\
+    Sodium chloride\",\n            \"term\": {\n              \"id\": \"CHEBI:26710\"\
+    ,\n              \"label\": \"sodium chloride\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"5.0\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"supplier_catalog\": {\n         \
+    \     \"supplier_name\": \"Difco/BD Brain Heart Infusion\",\n              \"\
+    catalog_number\": \"237500\",\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"Maintains osmotic equilibrium; Constituent\
+    \ of Brain Heart Infusion commercial product\",\n            \"synonyms\": [\n\
+    \              {\n                \"synonym_text\": \"NaCl\",\n              \
+    \  \"synonym_type\": \"EXACT\"\n              },\n              {\n          \
+    \      \"synonym_text\": \"table salt\",\n                \"synonym_type\": \"\
+    EXACT\"\n              }\n            ]\n          },\n          {\n         \
+    \   \"preferred_term\": \"Disodium phosphate\",\n            \"term\": {\n   \
+    \           \"id\": \"CHEBI:34683\",\n              \"label\": \"disodium hydrogenphosphate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    2.5\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"supplier_catalog\"\
+    : {\n              \"supplier_name\": \"Difco/BD Brain Heart Infusion\",\n   \
+    \           \"catalog_number\": \"237500\",\n              \"product_url\": \"\
+    https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\n            },\n  \
+    \          \"notes\": \"pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart\
+    \ Infusion commercial product\",\n            \"synonyms\": [\n              {\n\
+    \                \"synonym_text\": \"Na2HPO4\",\n                \"synonym_type\"\
+    : \"EXACT\"\n              },\n              {\n                \"synonym_text\"\
+    : \"disodium hydrogen phosphate\",\n                \"synonym_type\": \"EXACT\"\
+    \n              },\n              {\n                \"synonym_text\": \"sodium\
+    \ phosphate dibasic\",\n                \"synonym_type\": \"EXACT\"\n        \
+    \      }\n            ]\n          },\n          {\n            \"preferred_term\"\
+    : \"Yeast extract\",\n            \"concentration\": {\n              \"value\"\
+    : \"4.97018\",\n              \"unit\": \"G_PER_L\"\n            }\n         \
+    \ },\n          {\n            \"preferred_term\": \"Sodium resazurin\",\n   \
+    \         \"concentration\": {\n              \"value\": \"0.000497018\",\n  \
+    \            \"unit\": \"G_PER_L\"\n            },\n            \"term\": {\n\
+    \              \"id\": \"CHEBI:8806\",\n              \"label\": \"Resazurin\"\
+    \n            }\n          },\n          {\n            \"preferred_term\": \"\
+    NaHCO3\",\n            \"term\": {\n              \"id\": \"CHEBI:32139\",\n \
+    \             \"label\": \"sodium hydrogencarbonate\"\n            },\n      \
+    \      \"concentration\": {\n              \"value\": \"6.36183\",\n         \
+    \     \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32139\",\n              \"label\": \"sodium\
+    \ hydrogencarbonate\"\n            }\n          },\n          {\n            \"\
+    preferred_term\": \"Disodium succinate\",\n            \"term\": {\n         \
+    \     \"id\": \"CHEBI:63675\",\n              \"label\": \"sodium succinate (anhydrous)\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    4.97018\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:63675\",\n\
+    \              \"label\": \"sodium succinate (anhydrous)\"\n            }\n  \
+    \        },\n          {\n            \"preferred_term\": \"L-Cysteine HCl x H2O\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:91248\",\n         \
+    \     \"label\": \"L-cysteine hydrochloride hydrate\"\n            },\n      \
+    \      \"concentration\": {\n              \"value\": \"0.298211\",\n        \
+    \      \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:91248\",\n              \"label\": \"L-cysteine\
+    \ hydrochloride hydrate\"\n            }\n          },\n          {\n        \
+    \    \"preferred_term\": \"Na2S x 9 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:76209\",\n              \"label\": \"sodium sulfide nonahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.298211\",\n              \"unit\": \"G_PER_L\"\n            },\n           \
+    \ \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:76209\"\
+    ,\n              \"label\": \"sodium sulfide nonahydrate\"\n            }\n  \
+    \        },\n          {\n            \"preferred_term\": \"Acetic acid\",\n \
+    \           \"term\": {\n              \"id\": \"CHEBI:15366\",\n            \
+    \  \"label\": \"acetic acid\"\n            },\n            \"concentration\":\
+    \ {\n              \"value\": \"573.182\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:15366\",\n              \"label\": \"acetic acid\"\n  \
+    \          }\n          },\n          {\n            \"preferred_term\": \"Propionic\
+    \ acid\",\n            \"term\": {\n              \"id\": \"CHEBI:30768\",\n \
+    \             \"label\": \"propionic acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"192.145\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:30768\",\n              \"label\": \"propionic acid\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Butyric acid\",\n            \"term\": {\n              \"id\": \"CHEBI:30772\"\
+    ,\n              \"label\": \"butyric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"129\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:30772\",\n              \"label\": \"butyric acid\"\n  \
+    \          }\n          },\n          {\n            \"preferred_term\": \"n-Valeric\
+    \ acid\",\n            \"term\": {\n              \"id\": \"CHEBI:17418\",\n \
+    \             \"label\": \"valeric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"30.2827\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:17418\",\n              \"label\": \"valeric acid\"\n \
+    \           }\n          },\n          {\n            \"preferred_term\": \"iso-Butyric\
+    \ acid\",\n            \"term\": {\n              \"id\": \"CHEBI:16135\",\n \
+    \             \"label\": \"isobutyric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"30.6375\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:16135\",\n              \"label\": \"isobutyric acid\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Tryptone\",\n            \"term\": {\n              \"id\": \"MICRO:0000182\"\
+    ,\n              \"label\": \"tryptone\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"10.0\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Pancreatic digest of casein providing\
+    \ amino acids, peptides, and nitrogen; Constituent of LB Medium (Luria-Bertani,\
+    \ Miller formulation) commercial product\",\n            \"synonyms\": [\n   \
+    \           {\n                \"synonym_text\": \"pancreatic digest of casein\"\
+    ,\n                \"synonym_type\": \"EXACT\"\n              },\n           \
+    \   {\n                \"synonym_text\": \"casein peptone\",\n               \
+    \ \"synonym_type\": \"EXACT\"\n              }\n            ]\n          },\n\
+    \          {\n            \"preferred_term\": \"Yeast extract\",\n           \
+    \ \"term\": {\n              \"id\": \"FOODON:03315426\",\n              \"label\"\
+    : \"yeast extract\"\n            },\n            \"concentration\": {\n      \
+    \        \"value\": \"5.0\",\n              \"unit\": \"G_PER_L\"\n          \
+    \  },\n            \"supplier_catalog\": {\n              \"supplier_name\": \"\
+    Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Autodigest of Saccharomyces cerevisiae\
+    \ providing vitamins, amino acids, and trace elements; Constituent of LB Medium\
+    \ (Luria-Bertani, Miller formulation) commercial product\"\n          },\n   \
+    \       {\n            \"preferred_term\": \"Sodium chloride\",\n            \"\
+    term\": {\n              \"id\": \"CHEBI:26710\",\n              \"label\": \"\
+    sodium chloride\"\n            },\n            \"concentration\": {\n        \
+    \      \"value\": \"10.0\",\n              \"unit\": \"G_PER_L\"\n           \
+    \ },\n            \"supplier_catalog\": {\n              \"supplier_name\": \"\
+    Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Maintains osmotic equilibrium (Miller\
+    \ formulation); Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial\
+    \ product\",\n            \"synonyms\": [\n              {\n                \"\
+    synonym_text\": \"NaCl\",\n                \"synonym_type\": \"EXACT\"\n     \
+    \         },\n              {\n                \"synonym_text\": \"table salt\"\
+    ,\n                \"synonym_type\": \"EXACT\"\n              }\n            ]\n\
+    \          },\n          {\n            \"preferred_term\": \"iso-Valeric acid\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:28484\",\n         \
+    \     \"label\": \"isovaleric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"30.0247\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_term\": {\n              \"\
+    id\": \"MediaIngredientMech:000378\",\n              \"label\": \"iso-Valeric\
+    \ acid\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Haemin\",\n            \"term\": {\n              \"id\": \"CHEBI:50385\"\
+    ,\n              \"label\": \"hemin\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.5\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:50385\",\n              \"label\": \"hemin\"\n         \
+    \   }\n          },\n          {\n            \"preferred_term\": \"NaOH\",\n\
+    \            \"term\": {\n              \"id\": \"CHEBI:32145\",\n           \
+    \   \"label\": \"sodium hydroxide\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"1\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          },\n            \"mediaingredientmech_chebi_term\": {\n           \
+    \   \"id\": \"CHEBI:32145\",\n              \"label\": \"sodium hydroxide\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Biotin\",\n            \"term\": {\n              \"id\": \"CHEBI:15956\",\n \
+    \             \"label\": \"biotin\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.02\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:15956\",\n              \"label\": \"biotin\"\n        \
+    \    }\n          },\n          {\n            \"preferred_term\": \"Folic acid\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:27470\",\n         \
+    \     \"label\": \"folic acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.02\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:27470\",\n              \"label\": \"folic acid\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"Pyridoxine\
+    \ hydrochloride\",\n            \"term\": {\n              \"id\": \"CHEBI:30961\"\
+    ,\n              \"label\": \"pyridoxine hydrochloride\"\n            },\n   \
+    \         \"concentration\": {\n              \"value\": \"0.1\",\n          \
+    \    \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:30961\",\n              \"label\": \"pyridoxine\
+    \ hydrochloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Thiamine HCl\",\n            \"term\": {\n              \"id\": \"CHEBI:49105\"\
+    ,\n              \"label\": \"thiamine hydrochloride\"\n            },\n     \
+    \       \"concentration\": {\n              \"value\": \"0.05\",\n           \
+    \   \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:49105\",\n              \"label\": \"thiamine\
+    \ hydrochloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Riboflavin\",\n            \"term\": {\n              \"id\": \"CHEBI:17015\"\
+    ,\n              \"label\": \"riboflavin\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:17015\",\n              \"label\": \"riboflavin\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"Nicotinic\
+    \ acid\",\n            \"term\": {\n              \"id\": \"CHEBI:15940\",\n \
+    \             \"label\": \"nicotinic acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:15940\",\n              \"label\": \"nicotinic acid\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Calcium D-(+)-pantothenate\",\n            \"concentration\": {\n            \
+    \  \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n            },\n\
+    \            \"term\": {\n              \"id\": \"CHEBI:31345\",\n           \
+    \   \"label\": \"Calcium pantothenate\"\n            }\n          },\n       \
+    \   {\n            \"preferred_term\": \"Vitamin B12\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:176843\",\n              \"label\": \"vitamin\
+    \ B12\"\n            },\n            \"concentration\": {\n              \"value\"\
+    : \"0.001\",\n              \"unit\": \"G_PER_L\"\n            },\n          \
+    \  \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:176843\"\
+    ,\n              \"label\": \"vitamin B12\"\n            }\n          },\n   \
+    \       {\n            \"preferred_term\": \"p-Aminobenzoic acid\",\n        \
+    \    \"term\": {\n              \"id\": \"CHEBI:30753\",\n              \"label\"\
+    : \"4-aminobenzoic acid\"\n            },\n            \"concentration\": {\n\
+    \              \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n   \
+    \         },\n            \"mediaingredientmech_chebi_term\": {\n            \
+    \  \"id\": \"CHEBI:30753\",\n              \"label\": \"4-aminobenzoic acid\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    (DL)-alpha-Lipoic acid\",\n            \"term\": {\n              \"id\": \"CHEBI:16494\"\
+    ,\n              \"label\": \"lipoic acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:16494\",\n              \"label\": \"lipoic acid\"\n   \
+    \         }\n          }\n        ],\n        \"decision\": \"add\"\n      }\n\
+    \    ]\n  },\n  {\n    \"ingredient_or_context\": \"Main sol. 1455 / Yeast extract\"\
+    ,\n    \"field_path\": \"ingredients[12].concentration\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive1455api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[7]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 8,\\\
+    n                        \\\"compound\\\": \\\"Yeast extract\\\",\\n         \
+    \               \\\"compound_id\\\": 16,\\n                        \\\"amount\\\
+    \": 5,\\n                        \\\"unit\\\": \\\"g\\\",\\n                 \
+    \       \\\"g_l\\\": 4.97018,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Main sol. 1455 recipe row 8; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   Yeast extract                        \
+    \                             5.00          g\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored value agrees with the provider\
+    \ rounded g/L on its nominal 1006 mL basis, but has no attached source evidence.\
+    \ Preserve the literal batch amount and unresolved denominator rather than validating\
+    \ it as measured final concentration.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[12].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"4.97018\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.97018\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider g_l=4.97018; local 4.97018. Literal input liquids total 1006.6 mL,\
+    \ versus declared 1006 mL. This is an input-sum discrepancy, not a measured final\
+    \ volume. Rounding is retained, not silently normalized.\"\n  },\n  {\n    \"\
+    ingredient_or_context\": \"Main sol. 1455 / Volatile fatty acid mixture\",\n \
+    \   \"field_path\": \"solutions\",\n    \"decision\": \"add\",\n    \"local\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1455api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\",\n \
+    \       \"source_locator\": \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 9,\\n                  \
+    \      \\\"solution\\\": \\\"Volatile fatty acid mixture\\\",\\n             \
+    \           \\\"solution_id\\\": 608,\\n                        \\\"amount\\\"\
+    : 3.1,\\n                        \\\"unit\\\": \\\"ml\\\",\\n                \
+    \        \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\":\
+    \ \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Main sol. 1455 recipe row 9; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   Volatile fatty acid mixture          \
+    \                             3.10        ml\",\n        \"snapshot_sha256\":\
+    \ \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this explicit source-only premix,\
+    \ missing VFA component, receiving-stock dose or solvent amount in its named stage.\
+    \ The actual absent intended local container is recorded; source locators remain\
+    \ separate.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n  \
+    \  \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Main sol. 1455 / Haemin solution\",\n    \"field_path\": \"solutions\",\n\
+    \    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"solution\\\": \\\"Haemin solution\\\",\\n                        \\\"solution_id\\\
+    \": 124,\\n                        \\\"attribute\\\": \\\"0.05% w/v\\\",\\n  \
+    \                      \\\"amount\\\": 2,\\n                        \\\"unit\\\
+    \": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\n             \
+    \       }\",\n        \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Main sol. 1455 recipe row 10; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   Haemin solution (0.05% w/v)          \
+    \                             2.00        ml\",\n        \"snapshot_sha256\":\
+    \ \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this explicit source-only premix,\
+    \ missing VFA component, receiving-stock dose or solvent amount in its named stage.\
+    \ The actual absent intended local container is recorded; source locators remain\
+    \ separate.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n  \
+    \  \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Main sol. 1455 / Sodium resazurin\",\n    \"field_path\": \"ingredients[13].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"Sodium resazurin\\\",\\n                        \\\"compound_id\\\
+    \": 1852,\\n                        \\\"attribute\\\": \\\"0.1% w/v\\\",\\n  \
+    \                      \\\"amount\\\": 0.5,\\n                        \\\"unit\\\
+    \": \\\"ml\\\",\\n                        \\\"g_l\\\": 0.000497018,\\n       \
+    \                 \\\"mmol_l\\\": 0.00197881,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Main sol. 1455 recipe row 11; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   Sodium resazurin (0.1% w/v)          \
+    \                             0.50        ml\",\n        \"snapshot_sha256\":\
+    \ \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored value agrees with the provider\
+    \ rounded g/L on its nominal 1006 mL basis, but has no attached source evidence.\
+    \ Preserve the literal batch amount and unresolved denominator rather than validating\
+    \ it as measured final concentration.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[13].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"0.000497018\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000497018\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"\
+    arithmetic\": \"Provider g_l=0.000497018; local 0.000497018. Literal input liquids\
+    \ total 1006.6 mL, versus declared 1006 mL. This is an input-sum discrepancy,\
+    \ not a measured final volume. Rounding is retained, not silently normalized.\
+    \ Source 0.1% w/v is 1 g/L stock; 0.5 mL supplies 0.0005 g before any final-volume\
+    \ division.\"\n  },\n  {\n    \"ingredient_or_context\": \"Main sol. 1455 / NaHCO3\"\
+    ,\n    \"field_path\": \"ingredients[14].concentration\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive1455api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[11]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 12,\\\
+    n                        \\\"compound\\\": \\\"NaHCO3\\\",\\n                \
+    \        \\\"compound_id\\\": 55,\\n                        \\\"amount\\\": 6.4,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 6.36183,\\n                        \\\"mmol_l\\\": 75.7298,\\n    \
+    \                    \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Main sol. 1455 recipe row 12; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   NaHCO3                               \
+    \                             6.40          g\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored value agrees with the provider\
+    \ rounded g/L on its nominal 1006 mL basis, but has no attached source evidence.\
+    \ Preserve the literal batch amount and unresolved denominator rather than validating\
+    \ it as measured final concentration.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[14].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"6.36183\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6.36183\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider g_l=6.36183; local 6.36183. Literal input liquids total 1006.6 mL,\
+    \ versus declared 1006 mL. This is an input-sum discrepancy, not a measured final\
+    \ volume. Rounding is retained, not silently normalized.\"\n  },\n  {\n    \"\
+    ingredient_or_context\": \"Main sol. 1455 / Disodium succinate\",\n    \"field_path\"\
+    : \"ingredients[15].concentration\",\n    \"decision\": \"evidence_only\",\n \
+    \   \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1455api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[12]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 13,\\\
+    n                        \\\"compound\\\": \\\"Disodium succinate\\\",\\n    \
+    \                    \\\"compound_id\\\": 1189,\\n                        \\\"\
+    amount\\\": 5,\\n                        \\\"unit\\\": \\\"g\\\",\\n         \
+    \               \\\"g_l\\\": 4.97018,\\n                        \\\"mmol_l\\\"\
+    : 30.6707,\\n                        \\\"optional\\\": 0\\n                  \
+    \  }\",\n        \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Main sol. 1455 recipe row 13; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   Disodium succinate                   \
+    \                             5.00          g\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored value agrees with the provider\
+    \ rounded g/L on its nominal 1006 mL basis, but has no attached source evidence.\
+    \ Preserve the literal batch amount and unresolved denominator rather than validating\
+    \ it as measured final concentration.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[15].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"4.97018\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.97018\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider g_l=4.97018; local 4.97018. Literal input liquids total 1006.6 mL,\
+    \ versus declared 1006 mL. This is an input-sum discrepancy, not a measured final\
+    \ volume. Rounding is retained, not silently normalized.\"\n  },\n  {\n    \"\
+    ingredient_or_context\": \"Main sol. 1455 / Wolin's vitamin solution (10x)\",\n\
+    \    \"field_path\": \"solutions\",\n    \"decision\": \"add\",\n    \"local\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1455api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\",\n \
+    \       \"source_locator\": \"$.data.solutions[0].recipe[13]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 14,\\n                 \
+    \       \\\"solution\\\": \\\"Wolin's vitamin solution (10x)\\\",\\n         \
+    \               \\\"solution_id\\\": 5980,\\n                        \\\"amount\\\
+    \": 1,\\n                        \\\"unit\\\": \\\"ml\\\",\\n                \
+    \        \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\":\
+    \ \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Main sol. 1455 recipe row 14; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   Wolin's vitamin solution (10x)       \
+    \                             1.00        ml\",\n        \"snapshot_sha256\":\
+    \ \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this explicit source-only premix,\
+    \ missing VFA component, receiving-stock dose or solvent amount in its named stage.\
+    \ The actual absent intended local container is recorded; source locators remain\
+    \ separate.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n  \
+    \  \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Main sol. 1455 / L-Cysteine HCl x H2O\",\n    \"field_path\": \"ingredients[16].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[14]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 15,\\n                        \\\
+    \"compound\\\": \\\"L-Cysteine HCl x H2O\\\",\\n                        \\\"compound_id\\\
+    \": 770,\\n                        \\\"amount\\\": 0.3,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.298211,\\\
+    n                        \\\"mmol_l\\\": 1.69789,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\"\
+    ,\n        \"source_locator\": \"Main sol. 1455 recipe row 15; primary printed\
+    \ amount\",\n        \"exact_source_quote\": \"   L-Cysteine HCl x H2O       \
+    \                                       0.30          g\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored value agrees with the provider\
+    \ rounded g/L on its nominal 1006 mL basis, but has no attached source evidence.\
+    \ Preserve the literal batch amount and unresolved denominator rather than validating\
+    \ it as measured final concentration.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[16].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"0.298211\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.298211\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider g_l=0.298211; local 0.298211. Literal input liquids total 1006.6\
+    \ mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured\
+    \ final volume. Rounding is retained, not silently normalized.\"\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Main sol. 1455 / Na2S x 9 H2O\",\n    \"field_path\"\
+    : \"ingredients[17].concentration\",\n    \"decision\": \"evidence_only\",\n \
+    \   \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1455api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[15]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 16,\\\
+    n                        \\\"compound\\\": \\\"Na2S x 9 H2O\\\",\\n          \
+    \              \\\"compound_id\\\": 54,\\n                        \\\"amount\\\
+    \": 0.3,\\n                        \\\"unit\\\": \\\"g\\\",\\n               \
+    \         \\\"g_l\\\": 0.298211,\\n                        \\\"mmol_l\\\": 1.2416,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Main sol. 1455 recipe row 16; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   Na2S x 9 H2O                         \
+    \                             0.30          g\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored value agrees with the provider\
+    \ rounded g/L on its nominal 1006 mL basis, but has no attached source evidence.\
+    \ Preserve the literal batch amount and unresolved denominator rather than validating\
+    \ it as measured final concentration.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[17].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"0.298211\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.298211\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Provider g_l=0.298211; local 0.298211. Literal input liquids total 1006.6\
+    \ mL, versus declared 1006 mL. This is an input-sum discrepancy, not a measured\
+    \ final volume. Rounding is retained, not silently normalized.\"\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Main sol. 1455 / Distilled water\",\n    \"\
+    field_path\": \"solutions\",\n    \"decision\": \"add\",\n    \"local\": null,\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1455api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\",\n \
+    \       \"source_locator\": \"$.data.solutions[0].recipe[16]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 17,\\n                 \
+    \       \\\"compound\\\": \\\"Distilled water\\\",\\n                        \\\
+    \"compound_id\\\": 4,\\n                        \\\"amount\\\": 1000,\\n     \
+    \                   \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Main sol. 1455 recipe row 17; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   Distilled water                      \
+    \                         1000.00         ml\",\n        \"snapshot_sha256\":\
+    \ \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this explicit source-only premix,\
+    \ missing VFA component, receiving-stock dose or solvent amount in its named stage.\
+    \ The actual absent intended local container is recorded; source locators remain\
+    \ separate.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n  \
+    \  \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Volatile fatty acid mixture / Acetic acid\",\n    \"field_path\": \"ingredients[18].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Acetic acid\\\",\\n                        \\\"compound_id\\\
+    \": 380,\\n                        \\\"amount\\\": 548.5,\\n                 \
+    \       \\\"unit\\\": \\\"ml\\\",\\n                        \\\"g_l\\\": 573.182,\\\
+    n                        \\\"mmol_l\\\": 9545.09,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\"\
+    ,\n        \"source_locator\": \"Volatile fatty acid mixture recipe row 1; primary\
+    \ printed amount\",\n        \"exact_source_quote\": \"   Acetic acid        \
+    \                                            548.50         ml\",\n        \"\
+    snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[18].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"573.182\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"573.182\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source 548.5 mL is a VFA stock input. The source main dose is 3.1 mL of the\
+    \ seven-component mixture. Provider stock g_l=573.182; a null conversion does\
+    \ not license treating mL as grams. No independent density or final-medium mass\
+    \ conversion is assumed.\"\n  },\n  {\n    \"ingredient_or_context\": \"Volatile\
+    \ fatty acid mixture / Propionic acid\",\n    \"field_path\": \"ingredients[19].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"Propionic acid\\\",\\n                        \\\"compound_id\\\
+    \": 381,\\n                        \\\"amount\\\": 193.5,\\n                 \
+    \       \\\"unit\\\": \\\"ml\\\",\\n                        \\\"g_l\\\": 192.145,\\\
+    n                        \\\"mmol_l\\\": 2593.76,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\"\
+    ,\n        \"source_locator\": \"Volatile fatty acid mixture recipe row 2; primary\
+    \ printed amount\",\n        \"exact_source_quote\": \"   Propionic acid     \
+    \                                            193.50         ml\",\n        \"\
+    snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[19].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"192.145\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"192.145\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source 193.5 mL is a VFA stock input. The source main dose is 3.1 mL of the\
+    \ seven-component mixture. Provider stock g_l=192.145; a null conversion does\
+    \ not license treating mL as grams. No independent density or final-medium mass\
+    \ conversion is assumed.\"\n  },\n  {\n    \"ingredient_or_context\": \"Volatile\
+    \ fatty acid mixture / Butyric acid\",\n    \"field_path\": \"ingredients[20].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"Butyric acid\\\",\\n                        \\\"compound_id\\\
+    \": 314,\\n                        \\\"amount\\\": 129,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Volatile fatty acid mixture recipe row 3; primary\
+    \ printed amount\",\n        \"exact_source_quote\": \"   Butyric acid       \
+    \                                            129.00         ml\",\n        \"\
+    snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[20].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"129\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"129\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 129 mL is a VFA stock input. The source main dose is 3.1 mL of the seven-component\
+    \ mixture. Provider stock g_l=None; a null conversion does not license treating\
+    \ mL as grams. No independent density or final-medium mass conversion is assumed.\"\
+    \n  },\n  {\n    \"ingredient_or_context\": \"Volatile fatty acid mixture / n-Valeric\
+    \ acid\",\n    \"field_path\": \"ingredients[21].concentration\",\n    \"decision\"\
+    : \"correct\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"mediadive1455api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"n-Valeric acid\\\",\\n        \
+    \                \\\"compound_id\\\": 288,\\n                        \\\"amount\\\
+    \": 32.25,\\n                        \\\"unit\\\": \\\"ml\\\",\\n            \
+    \            \\\"g_l\\\": 30.2827,\\n                        \\\"mmol_l\\\": 296.512,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Volatile fatty acid mixture recipe row 4; primary\
+    \ printed amount\",\n        \"exact_source_quote\": \"   n-Valeric acid     \
+    \                                              32.25        ml\",\n        \"\
+    snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[21].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"30.2827\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30.2827\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source 32.25 mL is a VFA stock input. The source main dose is 3.1 mL of the\
+    \ seven-component mixture. Provider stock g_l=30.2827; a null conversion does\
+    \ not license treating mL as grams. No independent density or final-medium mass\
+    \ conversion is assumed.\"\n  },\n  {\n    \"ingredient_or_context\": \"Volatile\
+    \ fatty acid mixture / iso-Butyric acid\",\n    \"field_path\": \"ingredients[22].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"iso-Butyric acid\\\",\\n                        \\\"compound_id\\\
+    \": 377,\\n                        \\\"amount\\\": 32.25,\\n                 \
+    \       \\\"unit\\\": \\\"ml\\\",\\n                        \\\"g_l\\\": 30.6375,\\\
+    n                        \\\"mmol_l\\\": 347.719,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\"\
+    ,\n        \"source_locator\": \"Volatile fatty acid mixture recipe row 5; primary\
+    \ printed amount\",\n        \"exact_source_quote\": \"   iso-Butyric acid   \
+    \                                              32.25        ml\",\n        \"\
+    snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[22].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"30.6375\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30.6375\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source 32.25 mL is a VFA stock input. The source main dose is 3.1 mL of the\
+    \ seven-component mixture. Provider stock g_l=30.6375; a null conversion does\
+    \ not license treating mL as grams. No independent density or final-medium mass\
+    \ conversion is assumed.\"\n  },\n  {\n    \"ingredient_or_context\": \"Volatile\
+    \ fatty acid mixture / DL-2-Methylbutyric acid\",\n    \"field_path\": \"ingredients\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"DL-2-Methylbutyric acid\\\",\\n                        \\\"\
+    compound_id\\\": 223,\\n                        \\\"amount\\\": 32.25,\\n    \
+    \                    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Volatile fatty acid mixture recipe row 6; primary\
+    \ printed amount\",\n        \"exact_source_quote\": \"   DL-2-Methylbutyric acid\
+    \                                          32.25        ml\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this explicit source-only premix,\
+    \ missing VFA component, receiving-stock dose or solvent amount in its named stage.\
+    \ The actual absent intended local container is recorded; source locators remain\
+    \ separate.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n  \
+    \  \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"ingredients\",\n        \"stored\": [\n          {\n         \
+    \   \"preferred_term\": \"K2HPO4\",\n            \"term\": {\n              \"\
+    id\": \"CHEBI:131527\",\n              \"label\": \"dipotassium hydrogen phosphate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.228628\",\n              \"unit\": \"G_PER_L\"\n            },\n           \
+    \ \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:131527\"\
+    ,\n              \"label\": \"dipotassium hydrogen phosphate\"\n            }\n\
+    \          },\n          {\n            \"preferred_term\": \"KH2PO4\",\n    \
+    \        \"term\": {\n              \"id\": \"CHEBI:63036\",\n              \"\
+    label\": \"potassium dihydrogen phosphate\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.228628\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:63036\",\n              \"label\": \"potassium dihydrogen\
+    \ phosphate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"NaCl\",\n            \"term\": {\n              \"id\": \"CHEBI:26710\",\n\
+    \              \"label\": \"sodium chloride\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"0.447316\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:26710\",\n              \"label\": \"sodium\
+    \ chloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"(NH4)2SO4\",\n            \"term\": {\n              \"id\": \"CHEBI:62946\"\
+    ,\n              \"label\": \"ammonium sulfate\"\n            },\n           \
+    \ \"concentration\": {\n              \"value\": \"0.447316\",\n             \
+    \ \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:62946\",\n              \"label\": \"ammonium\
+    \ sulfate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"CaCl2 x 2 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86158\"\
+    ,\n              \"label\": \"calcium chloride dihydrate\"\n            },\n \
+    \           \"concentration\": {\n              \"value\": \"0.0596421\",\n  \
+    \            \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:86158\",\n              \"label\": \"calcium\
+    \ chloride dihydrate\"\n            }\n          },\n          {\n           \
+    \ \"preferred_term\": \"MgSO4 x 7 H2O\",\n            \"term\": {\n          \
+    \    \"id\": \"CHEBI:31795\",\n              \"label\": \"magnesium sulfate heptahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.0894632\",\n              \"unit\": \"G_PER_L\"\n            },\n          \
+    \  \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:31795\"\
+    ,\n              \"label\": \"magnesium sulfate heptahydrate\"\n            }\n\
+    \          },\n          {\n            \"preferred_term\": \"Calf brains\",\n\
+    \            \"term\": {\n              \"id\": \"UBERON:0000955\",\n        \
+    \      \"label\": \"brain\"\n            },\n            \"concentration\": {\n\
+    \              \"value\": \"variable\",\n              \"unit\": \"VARIABLE\"\n\
+    \            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Difco/BD Brain Heart Infusion\",\n              \"catalog_number\": \"237500\"\
+    ,\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"infusion from 200 g/L; Tissue infusion\
+    \ - source material is calf brain tissue; Constituent of Brain Heart Infusion\
+    \ commercial product\"\n          },\n          {\n            \"preferred_term\"\
+    : \"Beef heart\",\n            \"term\": {\n              \"id\": \"UBERON:0000948\"\
+    ,\n              \"label\": \"heart\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"variable\",\n              \"unit\": \"VARIABLE\"\
+    \n            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Difco/BD Brain Heart Infusion\",\n              \"catalog_number\": \"237500\"\
+    ,\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"infusion from 250 g/L; Tissue infusion\
+    \ - source material is beef/ox heart tissue; Constituent of Brain Heart Infusion\
+    \ commercial product\"\n          },\n          {\n            \"preferred_term\"\
+    : \"Proteose peptone\",\n            \"term\": {\n              \"id\": \"MICRO:0000180\"\
+    ,\n              \"label\": \"proteose peptone\"\n            },\n           \
+    \ \"concentration\": {\n              \"value\": \"10.0\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"supplier_catalog\": {\n         \
+    \     \"supplier_name\": \"Difco/BD Brain Heart Infusion\",\n              \"\
+    catalog_number\": \"237500\",\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"Enzymatic digest of animal protein\
+    \ providing amino acids and peptides; Constituent of Brain Heart Infusion commercial\
+    \ product\"\n          },\n          {\n            \"preferred_term\": \"Dextrose\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:17634\",\n         \
+    \     \"label\": \"D-glucose\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"2.0\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Difco/BD Brain Heart Infusion\",\n              \"catalog_number\": \"237500\"\
+    ,\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"Carbon/energy source; Constituent of\
+    \ Brain Heart Infusion commercial product\",\n            \"synonyms\": [\n  \
+    \            {\n                \"synonym_text\": \"glucose\",\n             \
+    \   \"synonym_type\": \"EXACT\"\n              },\n              {\n         \
+    \       \"synonym_text\": \"D-glucose\",\n                \"synonym_type\": \"\
+    EXACT\"\n              },\n              {\n                \"synonym_text\":\
+    \ \"dextrose\",\n                \"synonym_type\": \"EXACT\"\n              }\n\
+    \            ]\n          },\n          {\n            \"preferred_term\": \"\
+    Sodium chloride\",\n            \"term\": {\n              \"id\": \"CHEBI:26710\"\
+    ,\n              \"label\": \"sodium chloride\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"5.0\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"supplier_catalog\": {\n         \
+    \     \"supplier_name\": \"Difco/BD Brain Heart Infusion\",\n              \"\
+    catalog_number\": \"237500\",\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"Maintains osmotic equilibrium; Constituent\
+    \ of Brain Heart Infusion commercial product\",\n            \"synonyms\": [\n\
+    \              {\n                \"synonym_text\": \"NaCl\",\n              \
+    \  \"synonym_type\": \"EXACT\"\n              },\n              {\n          \
+    \      \"synonym_text\": \"table salt\",\n                \"synonym_type\": \"\
+    EXACT\"\n              }\n            ]\n          },\n          {\n         \
+    \   \"preferred_term\": \"Disodium phosphate\",\n            \"term\": {\n   \
+    \           \"id\": \"CHEBI:34683\",\n              \"label\": \"disodium hydrogenphosphate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    2.5\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"supplier_catalog\"\
+    : {\n              \"supplier_name\": \"Difco/BD Brain Heart Infusion\",\n   \
+    \           \"catalog_number\": \"237500\",\n              \"product_url\": \"\
+    https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\n            },\n  \
+    \          \"notes\": \"pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart\
+    \ Infusion commercial product\",\n            \"synonyms\": [\n              {\n\
+    \                \"synonym_text\": \"Na2HPO4\",\n                \"synonym_type\"\
+    : \"EXACT\"\n              },\n              {\n                \"synonym_text\"\
+    : \"disodium hydrogen phosphate\",\n                \"synonym_type\": \"EXACT\"\
+    \n              },\n              {\n                \"synonym_text\": \"sodium\
+    \ phosphate dibasic\",\n                \"synonym_type\": \"EXACT\"\n        \
+    \      }\n            ]\n          },\n          {\n            \"preferred_term\"\
+    : \"Yeast extract\",\n            \"concentration\": {\n              \"value\"\
+    : \"4.97018\",\n              \"unit\": \"G_PER_L\"\n            }\n         \
+    \ },\n          {\n            \"preferred_term\": \"Sodium resazurin\",\n   \
+    \         \"concentration\": {\n              \"value\": \"0.000497018\",\n  \
+    \            \"unit\": \"G_PER_L\"\n            },\n            \"term\": {\n\
+    \              \"id\": \"CHEBI:8806\",\n              \"label\": \"Resazurin\"\
+    \n            }\n          },\n          {\n            \"preferred_term\": \"\
+    NaHCO3\",\n            \"term\": {\n              \"id\": \"CHEBI:32139\",\n \
+    \             \"label\": \"sodium hydrogencarbonate\"\n            },\n      \
+    \      \"concentration\": {\n              \"value\": \"6.36183\",\n         \
+    \     \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32139\",\n              \"label\": \"sodium\
+    \ hydrogencarbonate\"\n            }\n          },\n          {\n            \"\
+    preferred_term\": \"Disodium succinate\",\n            \"term\": {\n         \
+    \     \"id\": \"CHEBI:63675\",\n              \"label\": \"sodium succinate (anhydrous)\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    4.97018\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:63675\",\n\
+    \              \"label\": \"sodium succinate (anhydrous)\"\n            }\n  \
+    \        },\n          {\n            \"preferred_term\": \"L-Cysteine HCl x H2O\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:91248\",\n         \
+    \     \"label\": \"L-cysteine hydrochloride hydrate\"\n            },\n      \
+    \      \"concentration\": {\n              \"value\": \"0.298211\",\n        \
+    \      \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:91248\",\n              \"label\": \"L-cysteine\
+    \ hydrochloride hydrate\"\n            }\n          },\n          {\n        \
+    \    \"preferred_term\": \"Na2S x 9 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:76209\",\n              \"label\": \"sodium sulfide nonahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.298211\",\n              \"unit\": \"G_PER_L\"\n            },\n           \
+    \ \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:76209\"\
+    ,\n              \"label\": \"sodium sulfide nonahydrate\"\n            }\n  \
+    \        },\n          {\n            \"preferred_term\": \"Acetic acid\",\n \
+    \           \"term\": {\n              \"id\": \"CHEBI:15366\",\n            \
+    \  \"label\": \"acetic acid\"\n            },\n            \"concentration\":\
+    \ {\n              \"value\": \"573.182\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:15366\",\n              \"label\": \"acetic acid\"\n  \
+    \          }\n          },\n          {\n            \"preferred_term\": \"Propionic\
+    \ acid\",\n            \"term\": {\n              \"id\": \"CHEBI:30768\",\n \
+    \             \"label\": \"propionic acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"192.145\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:30768\",\n              \"label\": \"propionic acid\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Butyric acid\",\n            \"term\": {\n              \"id\": \"CHEBI:30772\"\
+    ,\n              \"label\": \"butyric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"129\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:30772\",\n              \"label\": \"butyric acid\"\n  \
+    \          }\n          },\n          {\n            \"preferred_term\": \"n-Valeric\
+    \ acid\",\n            \"term\": {\n              \"id\": \"CHEBI:17418\",\n \
+    \             \"label\": \"valeric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"30.2827\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:17418\",\n              \"label\": \"valeric acid\"\n \
+    \           }\n          },\n          {\n            \"preferred_term\": \"iso-Butyric\
+    \ acid\",\n            \"term\": {\n              \"id\": \"CHEBI:16135\",\n \
+    \             \"label\": \"isobutyric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"30.6375\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:16135\",\n              \"label\": \"isobutyric acid\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Tryptone\",\n            \"term\": {\n              \"id\": \"MICRO:0000182\"\
+    ,\n              \"label\": \"tryptone\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"10.0\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Pancreatic digest of casein providing\
+    \ amino acids, peptides, and nitrogen; Constituent of LB Medium (Luria-Bertani,\
+    \ Miller formulation) commercial product\",\n            \"synonyms\": [\n   \
+    \           {\n                \"synonym_text\": \"pancreatic digest of casein\"\
+    ,\n                \"synonym_type\": \"EXACT\"\n              },\n           \
+    \   {\n                \"synonym_text\": \"casein peptone\",\n               \
+    \ \"synonym_type\": \"EXACT\"\n              }\n            ]\n          },\n\
+    \          {\n            \"preferred_term\": \"Yeast extract\",\n           \
+    \ \"term\": {\n              \"id\": \"FOODON:03315426\",\n              \"label\"\
+    : \"yeast extract\"\n            },\n            \"concentration\": {\n      \
+    \        \"value\": \"5.0\",\n              \"unit\": \"G_PER_L\"\n          \
+    \  },\n            \"supplier_catalog\": {\n              \"supplier_name\": \"\
+    Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Autodigest of Saccharomyces cerevisiae\
+    \ providing vitamins, amino acids, and trace elements; Constituent of LB Medium\
+    \ (Luria-Bertani, Miller formulation) commercial product\"\n          },\n   \
+    \       {\n            \"preferred_term\": \"Sodium chloride\",\n            \"\
+    term\": {\n              \"id\": \"CHEBI:26710\",\n              \"label\": \"\
+    sodium chloride\"\n            },\n            \"concentration\": {\n        \
+    \      \"value\": \"10.0\",\n              \"unit\": \"G_PER_L\"\n           \
+    \ },\n            \"supplier_catalog\": {\n              \"supplier_name\": \"\
+    Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Maintains osmotic equilibrium (Miller\
+    \ formulation); Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial\
+    \ product\",\n            \"synonyms\": [\n              {\n                \"\
+    synonym_text\": \"NaCl\",\n                \"synonym_type\": \"EXACT\"\n     \
+    \         },\n              {\n                \"synonym_text\": \"table salt\"\
+    ,\n                \"synonym_type\": \"EXACT\"\n              }\n            ]\n\
+    \          },\n          {\n            \"preferred_term\": \"iso-Valeric acid\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:28484\",\n         \
+    \     \"label\": \"isovaleric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"30.0247\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_term\": {\n              \"\
+    id\": \"MediaIngredientMech:000378\",\n              \"label\": \"iso-Valeric\
+    \ acid\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Haemin\",\n            \"term\": {\n              \"id\": \"CHEBI:50385\"\
+    ,\n              \"label\": \"hemin\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.5\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:50385\",\n              \"label\": \"hemin\"\n         \
+    \   }\n          },\n          {\n            \"preferred_term\": \"NaOH\",\n\
+    \            \"term\": {\n              \"id\": \"CHEBI:32145\",\n           \
+    \   \"label\": \"sodium hydroxide\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"1\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          },\n            \"mediaingredientmech_chebi_term\": {\n           \
+    \   \"id\": \"CHEBI:32145\",\n              \"label\": \"sodium hydroxide\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Biotin\",\n            \"term\": {\n              \"id\": \"CHEBI:15956\",\n \
+    \             \"label\": \"biotin\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.02\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:15956\",\n              \"label\": \"biotin\"\n        \
+    \    }\n          },\n          {\n            \"preferred_term\": \"Folic acid\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:27470\",\n         \
+    \     \"label\": \"folic acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.02\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:27470\",\n              \"label\": \"folic acid\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"Pyridoxine\
+    \ hydrochloride\",\n            \"term\": {\n              \"id\": \"CHEBI:30961\"\
+    ,\n              \"label\": \"pyridoxine hydrochloride\"\n            },\n   \
+    \         \"concentration\": {\n              \"value\": \"0.1\",\n          \
+    \    \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:30961\",\n              \"label\": \"pyridoxine\
+    \ hydrochloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Thiamine HCl\",\n            \"term\": {\n              \"id\": \"CHEBI:49105\"\
+    ,\n              \"label\": \"thiamine hydrochloride\"\n            },\n     \
+    \       \"concentration\": {\n              \"value\": \"0.05\",\n           \
+    \   \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:49105\",\n              \"label\": \"thiamine\
+    \ hydrochloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Riboflavin\",\n            \"term\": {\n              \"id\": \"CHEBI:17015\"\
+    ,\n              \"label\": \"riboflavin\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:17015\",\n              \"label\": \"riboflavin\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"Nicotinic\
+    \ acid\",\n            \"term\": {\n              \"id\": \"CHEBI:15940\",\n \
+    \             \"label\": \"nicotinic acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:15940\",\n              \"label\": \"nicotinic acid\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Calcium D-(+)-pantothenate\",\n            \"concentration\": {\n            \
+    \  \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n            },\n\
+    \            \"term\": {\n              \"id\": \"CHEBI:31345\",\n           \
+    \   \"label\": \"Calcium pantothenate\"\n            }\n          },\n       \
+    \   {\n            \"preferred_term\": \"Vitamin B12\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:176843\",\n              \"label\": \"vitamin\
+    \ B12\"\n            },\n            \"concentration\": {\n              \"value\"\
+    : \"0.001\",\n              \"unit\": \"G_PER_L\"\n            },\n          \
+    \  \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:176843\"\
+    ,\n              \"label\": \"vitamin B12\"\n            }\n          },\n   \
+    \       {\n            \"preferred_term\": \"p-Aminobenzoic acid\",\n        \
+    \    \"term\": {\n              \"id\": \"CHEBI:30753\",\n              \"label\"\
+    : \"4-aminobenzoic acid\"\n            },\n            \"concentration\": {\n\
+    \              \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n   \
+    \         },\n            \"mediaingredientmech_chebi_term\": {\n            \
+    \  \"id\": \"CHEBI:30753\",\n              \"label\": \"4-aminobenzoic acid\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    (DL)-alpha-Lipoic acid\",\n            \"term\": {\n              \"id\": \"CHEBI:16494\"\
+    ,\n              \"label\": \"lipoic acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:16494\",\n              \"label\": \"lipoic acid\"\n   \
+    \         }\n          }\n        ],\n        \"decision\": \"add\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": [\n         \
+    \ {\n            \"preferred_term\": \"K2HPO4\",\n            \"term\": {\n  \
+    \            \"id\": \"CHEBI:131527\",\n              \"label\": \"dipotassium\
+    \ hydrogen phosphate\"\n            },\n            \"concentration\": {\n   \
+    \           \"value\": \"0.228628\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          },\n            \"mediaingredientmech_chebi_term\": {\n           \
+    \   \"id\": \"CHEBI:131527\",\n              \"label\": \"dipotassium hydrogen\
+    \ phosphate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"KH2PO4\",\n            \"term\": {\n              \"id\": \"CHEBI:63036\"\
+    ,\n              \"label\": \"potassium dihydrogen phosphate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"0.228628\",\n  \
+    \            \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:63036\",\n              \"label\": \"potassium\
+    \ dihydrogen phosphate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"NaCl\",\n            \"term\": {\n              \"id\"\
+    : \"CHEBI:26710\",\n              \"label\": \"sodium chloride\"\n           \
+    \ },\n            \"concentration\": {\n              \"value\": \"0.447316\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:26710\",\n              \"label\": \"sodium\
+    \ chloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"(NH4)2SO4\",\n            \"term\": {\n              \"id\": \"CHEBI:62946\"\
+    ,\n              \"label\": \"ammonium sulfate\"\n            },\n           \
+    \ \"concentration\": {\n              \"value\": \"0.447316\",\n             \
+    \ \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:62946\",\n              \"label\": \"ammonium\
+    \ sulfate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"CaCl2 x 2 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86158\"\
+    ,\n              \"label\": \"calcium chloride dihydrate\"\n            },\n \
+    \           \"concentration\": {\n              \"value\": \"0.0596421\",\n  \
+    \            \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:86158\",\n              \"label\": \"calcium\
+    \ chloride dihydrate\"\n            }\n          },\n          {\n           \
+    \ \"preferred_term\": \"MgSO4 x 7 H2O\",\n            \"term\": {\n          \
+    \    \"id\": \"CHEBI:31795\",\n              \"label\": \"magnesium sulfate heptahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.0894632\",\n              \"unit\": \"G_PER_L\"\n            },\n          \
+    \  \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:31795\"\
+    ,\n              \"label\": \"magnesium sulfate heptahydrate\"\n            }\n\
+    \          },\n          {\n            \"preferred_term\": \"Calf brains\",\n\
+    \            \"term\": {\n              \"id\": \"UBERON:0000955\",\n        \
+    \      \"label\": \"brain\"\n            },\n            \"concentration\": {\n\
+    \              \"value\": \"variable\",\n              \"unit\": \"VARIABLE\"\n\
+    \            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Difco/BD Brain Heart Infusion\",\n              \"catalog_number\": \"237500\"\
+    ,\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"infusion from 200 g/L; Tissue infusion\
+    \ - source material is calf brain tissue; Constituent of Brain Heart Infusion\
+    \ commercial product\"\n          },\n          {\n            \"preferred_term\"\
+    : \"Beef heart\",\n            \"term\": {\n              \"id\": \"UBERON:0000948\"\
+    ,\n              \"label\": \"heart\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"variable\",\n              \"unit\": \"VARIABLE\"\
+    \n            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Difco/BD Brain Heart Infusion\",\n              \"catalog_number\": \"237500\"\
+    ,\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"infusion from 250 g/L; Tissue infusion\
+    \ - source material is beef/ox heart tissue; Constituent of Brain Heart Infusion\
+    \ commercial product\"\n          },\n          {\n            \"preferred_term\"\
+    : \"Proteose peptone\",\n            \"term\": {\n              \"id\": \"MICRO:0000180\"\
+    ,\n              \"label\": \"proteose peptone\"\n            },\n           \
+    \ \"concentration\": {\n              \"value\": \"10.0\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"supplier_catalog\": {\n         \
+    \     \"supplier_name\": \"Difco/BD Brain Heart Infusion\",\n              \"\
+    catalog_number\": \"237500\",\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"Enzymatic digest of animal protein\
+    \ providing amino acids and peptides; Constituent of Brain Heart Infusion commercial\
+    \ product\"\n          },\n          {\n            \"preferred_term\": \"Dextrose\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:17634\",\n         \
+    \     \"label\": \"D-glucose\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"2.0\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Difco/BD Brain Heart Infusion\",\n              \"catalog_number\": \"237500\"\
+    ,\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"Carbon/energy source; Constituent of\
+    \ Brain Heart Infusion commercial product\",\n            \"synonyms\": [\n  \
+    \            {\n                \"synonym_text\": \"glucose\",\n             \
+    \   \"synonym_type\": \"EXACT\"\n              },\n              {\n         \
+    \       \"synonym_text\": \"D-glucose\",\n                \"synonym_type\": \"\
+    EXACT\"\n              },\n              {\n                \"synonym_text\":\
+    \ \"dextrose\",\n                \"synonym_type\": \"EXACT\"\n              }\n\
+    \            ]\n          },\n          {\n            \"preferred_term\": \"\
+    Sodium chloride\",\n            \"term\": {\n              \"id\": \"CHEBI:26710\"\
+    ,\n              \"label\": \"sodium chloride\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"5.0\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"supplier_catalog\": {\n         \
+    \     \"supplier_name\": \"Difco/BD Brain Heart Infusion\",\n              \"\
+    catalog_number\": \"237500\",\n              \"product_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    \n            },\n            \"notes\": \"Maintains osmotic equilibrium; Constituent\
+    \ of Brain Heart Infusion commercial product\",\n            \"synonyms\": [\n\
+    \              {\n                \"synonym_text\": \"NaCl\",\n              \
+    \  \"synonym_type\": \"EXACT\"\n              },\n              {\n          \
+    \      \"synonym_text\": \"table salt\",\n                \"synonym_type\": \"\
+    EXACT\"\n              }\n            ]\n          },\n          {\n         \
+    \   \"preferred_term\": \"Disodium phosphate\",\n            \"term\": {\n   \
+    \           \"id\": \"CHEBI:34683\",\n              \"label\": \"disodium hydrogenphosphate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    2.5\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"supplier_catalog\"\
+    : {\n              \"supplier_name\": \"Difco/BD Brain Heart Infusion\",\n   \
+    \           \"catalog_number\": \"237500\",\n              \"product_url\": \"\
+    https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\n            },\n  \
+    \          \"notes\": \"pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart\
+    \ Infusion commercial product\",\n            \"synonyms\": [\n              {\n\
+    \                \"synonym_text\": \"Na2HPO4\",\n                \"synonym_type\"\
+    : \"EXACT\"\n              },\n              {\n                \"synonym_text\"\
+    : \"disodium hydrogen phosphate\",\n                \"synonym_type\": \"EXACT\"\
+    \n              },\n              {\n                \"synonym_text\": \"sodium\
+    \ phosphate dibasic\",\n                \"synonym_type\": \"EXACT\"\n        \
+    \      }\n            ]\n          },\n          {\n            \"preferred_term\"\
+    : \"Yeast extract\",\n            \"concentration\": {\n              \"value\"\
+    : \"4.97018\",\n              \"unit\": \"G_PER_L\"\n            }\n         \
+    \ },\n          {\n            \"preferred_term\": \"Sodium resazurin\",\n   \
+    \         \"concentration\": {\n              \"value\": \"0.000497018\",\n  \
+    \            \"unit\": \"G_PER_L\"\n            },\n            \"term\": {\n\
+    \              \"id\": \"CHEBI:8806\",\n              \"label\": \"Resazurin\"\
+    \n            }\n          },\n          {\n            \"preferred_term\": \"\
+    NaHCO3\",\n            \"term\": {\n              \"id\": \"CHEBI:32139\",\n \
+    \             \"label\": \"sodium hydrogencarbonate\"\n            },\n      \
+    \      \"concentration\": {\n              \"value\": \"6.36183\",\n         \
+    \     \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32139\",\n              \"label\": \"sodium\
+    \ hydrogencarbonate\"\n            }\n          },\n          {\n            \"\
+    preferred_term\": \"Disodium succinate\",\n            \"term\": {\n         \
+    \     \"id\": \"CHEBI:63675\",\n              \"label\": \"sodium succinate (anhydrous)\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    4.97018\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:63675\",\n\
+    \              \"label\": \"sodium succinate (anhydrous)\"\n            }\n  \
+    \        },\n          {\n            \"preferred_term\": \"L-Cysteine HCl x H2O\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:91248\",\n         \
+    \     \"label\": \"L-cysteine hydrochloride hydrate\"\n            },\n      \
+    \      \"concentration\": {\n              \"value\": \"0.298211\",\n        \
+    \      \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:91248\",\n              \"label\": \"L-cysteine\
+    \ hydrochloride hydrate\"\n            }\n          },\n          {\n        \
+    \    \"preferred_term\": \"Na2S x 9 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:76209\",\n              \"label\": \"sodium sulfide nonahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.298211\",\n              \"unit\": \"G_PER_L\"\n            },\n           \
+    \ \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:76209\"\
+    ,\n              \"label\": \"sodium sulfide nonahydrate\"\n            }\n  \
+    \        },\n          {\n            \"preferred_term\": \"Acetic acid\",\n \
+    \           \"term\": {\n              \"id\": \"CHEBI:15366\",\n            \
+    \  \"label\": \"acetic acid\"\n            },\n            \"concentration\":\
+    \ {\n              \"value\": \"573.182\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:15366\",\n              \"label\": \"acetic acid\"\n  \
+    \          }\n          },\n          {\n            \"preferred_term\": \"Propionic\
+    \ acid\",\n            \"term\": {\n              \"id\": \"CHEBI:30768\",\n \
+    \             \"label\": \"propionic acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"192.145\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:30768\",\n              \"label\": \"propionic acid\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Butyric acid\",\n            \"term\": {\n              \"id\": \"CHEBI:30772\"\
+    ,\n              \"label\": \"butyric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"129\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:30772\",\n              \"label\": \"butyric acid\"\n  \
+    \          }\n          },\n          {\n            \"preferred_term\": \"n-Valeric\
+    \ acid\",\n            \"term\": {\n              \"id\": \"CHEBI:17418\",\n \
+    \             \"label\": \"valeric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"30.2827\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:17418\",\n              \"label\": \"valeric acid\"\n \
+    \           }\n          },\n          {\n            \"preferred_term\": \"iso-Butyric\
+    \ acid\",\n            \"term\": {\n              \"id\": \"CHEBI:16135\",\n \
+    \             \"label\": \"isobutyric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"30.6375\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_chebi_term\": {\n        \
+    \      \"id\": \"CHEBI:16135\",\n              \"label\": \"isobutyric acid\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Tryptone\",\n            \"term\": {\n              \"id\": \"MICRO:0000182\"\
+    ,\n              \"label\": \"tryptone\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"10.0\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Pancreatic digest of casein providing\
+    \ amino acids, peptides, and nitrogen; Constituent of LB Medium (Luria-Bertani,\
+    \ Miller formulation) commercial product\",\n            \"synonyms\": [\n   \
+    \           {\n                \"synonym_text\": \"pancreatic digest of casein\"\
+    ,\n                \"synonym_type\": \"EXACT\"\n              },\n           \
+    \   {\n                \"synonym_text\": \"casein peptone\",\n               \
+    \ \"synonym_type\": \"EXACT\"\n              }\n            ]\n          },\n\
+    \          {\n            \"preferred_term\": \"Yeast extract\",\n           \
+    \ \"term\": {\n              \"id\": \"FOODON:03315426\",\n              \"label\"\
+    : \"yeast extract\"\n            },\n            \"concentration\": {\n      \
+    \        \"value\": \"5.0\",\n              \"unit\": \"G_PER_L\"\n          \
+    \  },\n            \"supplier_catalog\": {\n              \"supplier_name\": \"\
+    Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Autodigest of Saccharomyces cerevisiae\
+    \ providing vitamins, amino acids, and trace elements; Constituent of LB Medium\
+    \ (Luria-Bertani, Miller formulation) commercial product\"\n          },\n   \
+    \       {\n            \"preferred_term\": \"Sodium chloride\",\n            \"\
+    term\": {\n              \"id\": \"CHEBI:26710\",\n              \"label\": \"\
+    sodium chloride\"\n            },\n            \"concentration\": {\n        \
+    \      \"value\": \"10.0\",\n              \"unit\": \"G_PER_L\"\n           \
+    \ },\n            \"supplier_catalog\": {\n              \"supplier_name\": \"\
+    Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Maintains osmotic equilibrium (Miller\
+    \ formulation); Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial\
+    \ product\",\n            \"synonyms\": [\n              {\n                \"\
+    synonym_text\": \"NaCl\",\n                \"synonym_type\": \"EXACT\"\n     \
+    \         },\n              {\n                \"synonym_text\": \"table salt\"\
+    ,\n                \"synonym_type\": \"EXACT\"\n              }\n            ]\n\
+    \          },\n          {\n            \"preferred_term\": \"iso-Valeric acid\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:28484\",\n         \
+    \     \"label\": \"isovaleric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"30.0247\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"mediaingredientmech_term\": {\n              \"\
+    id\": \"MediaIngredientMech:000378\",\n              \"label\": \"iso-Valeric\
+    \ acid\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Haemin\",\n            \"term\": {\n              \"id\": \"CHEBI:50385\"\
+    ,\n              \"label\": \"hemin\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.5\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:50385\",\n              \"label\": \"hemin\"\n         \
+    \   }\n          },\n          {\n            \"preferred_term\": \"NaOH\",\n\
+    \            \"term\": {\n              \"id\": \"CHEBI:32145\",\n           \
+    \   \"label\": \"sodium hydroxide\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"1\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          },\n            \"mediaingredientmech_chebi_term\": {\n           \
+    \   \"id\": \"CHEBI:32145\",\n              \"label\": \"sodium hydroxide\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Biotin\",\n            \"term\": {\n              \"id\": \"CHEBI:15956\",\n \
+    \             \"label\": \"biotin\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.02\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:15956\",\n              \"label\": \"biotin\"\n        \
+    \    }\n          },\n          {\n            \"preferred_term\": \"Folic acid\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:27470\",\n         \
+    \     \"label\": \"folic acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.02\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:27470\",\n              \"label\": \"folic acid\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"Pyridoxine\
+    \ hydrochloride\",\n            \"term\": {\n              \"id\": \"CHEBI:30961\"\
+    ,\n              \"label\": \"pyridoxine hydrochloride\"\n            },\n   \
+    \         \"concentration\": {\n              \"value\": \"0.1\",\n          \
+    \    \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:30961\",\n              \"label\": \"pyridoxine\
+    \ hydrochloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Thiamine HCl\",\n            \"term\": {\n              \"id\": \"CHEBI:49105\"\
+    ,\n              \"label\": \"thiamine hydrochloride\"\n            },\n     \
+    \       \"concentration\": {\n              \"value\": \"0.05\",\n           \
+    \   \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:49105\",\n              \"label\": \"thiamine\
+    \ hydrochloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Riboflavin\",\n            \"term\": {\n              \"id\": \"CHEBI:17015\"\
+    ,\n              \"label\": \"riboflavin\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:17015\",\n              \"label\": \"riboflavin\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"Nicotinic\
+    \ acid\",\n            \"term\": {\n              \"id\": \"CHEBI:15940\",\n \
+    \             \"label\": \"nicotinic acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:15940\",\n              \"label\": \"nicotinic acid\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Calcium D-(+)-pantothenate\",\n            \"concentration\": {\n            \
+    \  \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n            },\n\
+    \            \"term\": {\n              \"id\": \"CHEBI:31345\",\n           \
+    \   \"label\": \"Calcium pantothenate\"\n            }\n          },\n       \
+    \   {\n            \"preferred_term\": \"Vitamin B12\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:176843\",\n              \"label\": \"vitamin\
+    \ B12\"\n            },\n            \"concentration\": {\n              \"value\"\
+    : \"0.001\",\n              \"unit\": \"G_PER_L\"\n            },\n          \
+    \  \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:176843\"\
+    ,\n              \"label\": \"vitamin B12\"\n            }\n          },\n   \
+    \       {\n            \"preferred_term\": \"p-Aminobenzoic acid\",\n        \
+    \    \"term\": {\n              \"id\": \"CHEBI:30753\",\n              \"label\"\
+    : \"4-aminobenzoic acid\"\n            },\n            \"concentration\": {\n\
+    \              \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n   \
+    \         },\n            \"mediaingredientmech_chebi_term\": {\n            \
+    \  \"id\": \"CHEBI:30753\",\n              \"label\": \"4-aminobenzoic acid\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    (DL)-alpha-Lipoic acid\",\n            \"term\": {\n              \"id\": \"CHEBI:16494\"\
+    ,\n              \"label\": \"lipoic acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.05\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:16494\",\n              \"label\": \"lipoic acid\"\n   \
+    \         }\n          }\n        ],\n        \"decision\": \"add\"\n      }\n\
+    \    ]\n  },\n  {\n    \"ingredient_or_context\": \"Volatile fatty acid mixture\
+    \ / iso-Valeric acid\",\n    \"field_path\": \"ingredients[26].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"iso-Valeric acid\\\",\\n                        \\\"compound_id\\\
+    \": 378,\\n                        \\\"amount\\\": 32.25,\\n                 \
+    \       \\\"unit\\\": \\\"ml\\\",\\n                        \\\"g_l\\\": 30.0247,\\\
+    n                        \\\"mmol_l\\\": 293.986,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\"\
+    ,\n        \"source_locator\": \"Volatile fatty acid mixture recipe row 7; primary\
+    \ printed amount\",\n        \"exact_source_quote\": \"   iso-Valeric acid   \
+    \                                              32.25        ml\",\n        \"\
+    snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[26].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"30.0247\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30.0247\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source 32.25 mL is a VFA stock input. The source main dose is 3.1 mL of the\
+    \ seven-component mixture. Provider stock g_l=30.0247; a null conversion does\
+    \ not license treating mL as grams. No independent density or final-medium mass\
+    \ conversion is assumed.\"\n  },\n  {\n    \"ingredient_or_context\": \"Haemin\
+    \ solution / Haemin\",\n    \"field_path\": \"ingredients[27].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Haemin\\\",\\n                        \\\"compound_id\\\": 149,\\\
+    n                        \\\"amount\\\": 50,\\n                        \\\"unit\\\
+    \": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.5,\\n               \
+    \         \\\"mmol_l\\\": 0.766989,\\n                        \\\"optional\\\"\
+    : 0\\n                    }\",\n        \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Haemin solution recipe row 1; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   Haemin                               \
+    \                            50.00       mg\",\n        \"snapshot_sha256\": \"\
+    e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n        \"\
+    parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[27].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"50\
+    \ mg in the explicit make-up-to-100 mL stock corresponds to 0.5 g/L stock. The\
+    \ 2 mL dose nominally delivers 1 mg haemin, not 0.5 g/L final medium.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"Haemin solution / NaOH\",\n    \"field_path\"\
+    : \"ingredients[28].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1455api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\",\n \
+    \       \"source_locator\": \"$.data.solutions[2].recipe[1]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 2,\\n                  \
+    \      \\\"compound\\\": \\\"NaOH\\\",\\n                        \\\"compound_id\\\
+    \": 256,\\n                        \\\"attribute\\\": \\\"1 N\\\",\\n        \
+    \                \\\"amount\\\": 1,\\n                        \\\"unit\\\": \\\
+    \"ml\\\",\\n                        \\\"optional\\\": 0\\n                   \
+    \ }\",\n        \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Haemin solution recipe row 2; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   NaOH (1 N)                           \
+    \                             1.00        ml\",\n        \"snapshot_sha256\":\
+    \ \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[28].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"1 mL\
+    \ of 1 N NaOH is a reagent solution volume/strength, not 1 g/L. The stock is made\
+    \ up to 100 mL; the table does not establish 101 mL final stock.\"\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Haemin solution / Distilled water\",\n    \"\
+    field_path\": \"solutions\",\n    \"decision\": \"add\",\n    \"local\": null,\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1455api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\",\n \
+    \       \"source_locator\": \"$.data.solutions[2].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"compound\\\": \\\"Distilled water\\\",\\n                        \\\
+    \"compound_id\\\": 4,\\n                        \\\"amount\\\": 100,\\n      \
+    \                  \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Haemin solution recipe row 3; primary printed amount\"\
+    ,\n        \"exact_source_quote\": \"   Distilled water                      \
+    \                          100.00         ml\",\n        \"snapshot_sha256\":\
+    \ \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this explicit source-only premix,\
+    \ missing VFA component, receiving-stock dose or solvent amount in its named stage.\
+    \ The actual absent intended local container is recorded; source locators remain\
+    \ separate.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n  \
+    \  \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"Haemin table water\
+    \ 100 mL is qualified by make-up-to-100 mL preparation.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Wolin's vitamin solution (10x) / Biotin\",\n    \"field_path\": \"ingredients[29].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Biotin\\\",\\n                        \\\"compound_id\\\": 46,\\\
+    n                        \\\"amount\\\": 20,\\n                        \\\"unit\\\
+    \": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.02,\\n              \
+    \          \\\"mmol_l\\\": 0.0818632,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Wolin's vitamin solution (10x) recipe row 1; primary\
+    \ printed amount\",\n        \"exact_source_quote\": \"   Biotin             \
+    \                                              20.00       mg\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[29].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.02\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\":\
+    \ \"20 mg is an input to a stock declared as 1000 mL by the provider. Conditional\
+    \ on that nominal stock basis, the 1 mL dose delivers 0.02 mg. Physical final\
+    \ stock/medium volumes are not independently measured.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Wolin's vitamin solution (10x) / Folic acid\",\n    \"field_path\": \"ingredients[30].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"Folic acid\\\",\\n                        \\\"compound_id\\\"\
+    : 138,\\n                        \\\"amount\\\": 20,\\n                      \
+    \  \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.02,\\n \
+    \                       \\\"mmol_l\\\": 0.0453104,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\"\
+    ,\n        \"source_locator\": \"Wolin's vitamin solution (10x) recipe row 2;\
+    \ primary printed amount\",\n        \"exact_source_quote\": \"   Folic acid \
+    \                                                      20.00       mg\",\n   \
+    \     \"snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[30].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.02\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\":\
+    \ \"20 mg is an input to a stock declared as 1000 mL by the provider. Conditional\
+    \ on that nominal stock basis, the 1 mL dose delivers 0.02 mg. Physical final\
+    \ stock/medium volumes are not independently measured.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Wolin's vitamin solution (10x) / Pyridoxine hydrochloride\",\n    \"field_path\"\
+    : \"ingredients[31].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1455api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\",\n \
+    \       \"source_locator\": \"$.data.solutions[3].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"compound\\\": \\\"Pyridoxine hydrochloride\\\",\\n                \
+    \        \\\"compound_id\\\": 519,\\n                        \\\"amount\\\": 100,\\\
+    n                        \\\"unit\\\": \\\"mg\\\",\\n                        \\\
+    \"g_l\\\": 0.1,\\n                        \\\"mmol_l\\\": 0.486287,\\n       \
+    \                 \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\":\
+    \ \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Wolin's vitamin solution (10x) recipe row 3; primary\
+    \ printed amount\",\n        \"exact_source_quote\": \"   Pyridoxine hydrochloride\
+    \                                       100.00        mg\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[31].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[31].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"100\
+    \ mg is an input to a stock declared as 1000 mL by the provider. Conditional on\
+    \ that nominal stock basis, the 1 mL dose delivers 0.1 mg. Physical final stock/medium\
+    \ volumes are not independently measured.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Wolin's vitamin solution (10x) / Thiamine HCl\",\n    \"field_path\": \"ingredients[32].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"Thiamine HCl\\\",\\n                        \\\"compound_id\\\
+    \": 1207,\\n                        \\\"amount\\\": 50,\\n                   \
+    \     \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.05,\\\
+    n                        \\\"mmol_l\\\": 0.148236,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\"\
+    ,\n        \"source_locator\": \"Wolin's vitamin solution (10x) recipe row 4;\
+    \ primary printed amount\",\n        \"exact_source_quote\": \"   Thiamine HCl\
+    \                                                     50.00       mg\",\n    \
+    \    \"snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[32].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.05\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[32].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\":\
+    \ \"50 mg is an input to a stock declared as 1000 mL by the provider. Conditional\
+    \ on that nominal stock basis, the 1 mL dose delivers 0.05 mg. Physical final\
+    \ stock/medium volumes are not independently measured.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Wolin's vitamin solution (10x) / Riboflavin\",\n    \"field_path\": \"ingredients[33].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"Riboflavin\\\",\\n                        \\\"compound_id\\\"\
+    : 136,\\n                        \\\"amount\\\": 50,\\n                      \
+    \  \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.05,\\n \
+    \                       \\\"mmol_l\\\": 0.132837,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\"\
+    ,\n        \"source_locator\": \"Wolin's vitamin solution (10x) recipe row 5;\
+    \ primary printed amount\",\n        \"exact_source_quote\": \"   Riboflavin \
+    \                                                      50.00       mg\",\n   \
+    \     \"snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[33].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.05\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[33].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\":\
+    \ \"50 mg is an input to a stock declared as 1000 mL by the provider. Conditional\
+    \ on that nominal stock basis, the 1 mL dose delivers 0.05 mg. Physical final\
+    \ stock/medium volumes are not independently measured.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Wolin's vitamin solution (10x) / Nicotinic acid\",\n    \"field_path\": \"\
+    ingredients[34].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1455api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\",\n \
+    \       \"source_locator\": \"$.data.solutions[3].recipe[5]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 6,\\n                  \
+    \      \\\"compound\\\": \\\"Nicotinic acid\\\",\\n                        \\\"\
+    compound_id\\\": 139,\\n                        \\\"amount\\\": 50,\\n       \
+    \                 \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\
+    \": 0.05,\\n                        \\\"mmol_l\\\": 0.406141,\\n             \
+    \           \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\":\
+    \ \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Wolin's vitamin solution (10x) recipe row 6; primary\
+    \ printed amount\",\n        \"exact_source_quote\": \"   Nicotinic acid     \
+    \                                              50.00       mg\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[34].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.05\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[34].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\":\
+    \ \"50 mg is an input to a stock declared as 1000 mL by the provider. Conditional\
+    \ on that nominal stock basis, the 1 mL dose delivers 0.05 mg. Physical final\
+    \ stock/medium volumes are not independently measured.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Wolin's vitamin solution (10x) / Calcium D-(+)-pantothenate\",\n    \"field_path\"\
+    : \"ingredients[35].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1455api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\",\n \
+    \       \"source_locator\": \"$.data.solutions[3].recipe[6]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 7,\\n                  \
+    \      \\\"compound\\\": \\\"Calcium D-(+)-pantothenate\\\",\\n              \
+    \          \\\"compound_id\\\": 1512,\\n                        \\\"amount\\\"\
+    : 50,\\n                        \\\"unit\\\": \\\"mg\\\",\\n                 \
+    \       \\\"g_l\\\": 0.05,\\n                        \\\"mmol_l\\\": 0.209846,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Wolin's vitamin solution (10x) recipe row 7; primary\
+    \ printed amount\",\n        \"exact_source_quote\": \"   Calcium D-(+)-pantothenate\
+    \                                       50.00       mg\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[35].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.05\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[35].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\":\
+    \ \"50 mg is an input to a stock declared as 1000 mL by the provider. Conditional\
+    \ on that nominal stock basis, the 1 mL dose delivers 0.05 mg. Physical final\
+    \ stock/medium volumes are not independently measured.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Wolin's vitamin solution (10x) / Vitamin B12\",\n    \"field_path\": \"ingredients[36].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"Vitamin B12\\\",\\n                        \\\"compound_id\\\
+    \": 18,\\n                        \\\"amount\\\": 1,\\n                      \
+    \  \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.001,\\n\
+    \                        \\\"mmol_l\\\": 0.00073779,\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\":\
+    \ \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Wolin's vitamin solution (10x) recipe row 8; primary\
+    \ printed amount\",\n        \"exact_source_quote\": \"   Vitamin B12        \
+    \                                               1.00       mg\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[36].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.001\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[36].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"1 mg is an input to a stock declared as 1000 mL by the provider. Conditional\
+    \ on that nominal stock basis, the 1 mL dose delivers 0.001 mg. Physical final\
+    \ stock/medium volumes are not independently measured.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Wolin's vitamin solution (10x) / p-Aminobenzoic acid\",\n    \"field_path\"\
+    : \"ingredients[37].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1455api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\",\n \
+    \       \"source_locator\": \"$.data.solutions[3].recipe[8]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 9,\\n                  \
+    \      \\\"compound\\\": \\\"p-Aminobenzoic acid\\\",\\n                     \
+    \   \\\"compound_id\\\": 47,\\n                        \\\"amount\\\": 50,\\n\
+    \                        \\\"unit\\\": \\\"mg\\\",\\n                        \\\
+    \"g_l\\\": 0.05,\\n                        \\\"mmol_l\\\": 0.364591,\\n      \
+    \                  \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Wolin's vitamin solution (10x) recipe row 9; primary\
+    \ printed amount\",\n        \"exact_source_quote\": \"   p-Aminobenzoic acid\
+    \                                              50.00       mg\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[37].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.05\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[37].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\":\
+    \ \"50 mg is an input to a stock declared as 1000 mL by the provider. Conditional\
+    \ on that nominal stock basis, the 1 mL dose delivers 0.05 mg. Physical final\
+    \ stock/medium volumes are not independently measured.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Wolin's vitamin solution (10x) / (DL)-alpha-Lipoic acid\",\n    \"field_path\"\
+    : \"ingredients[38].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1455api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1455\",\n \
+    \       \"source_locator\": \"$.data.solutions[3].recipe[9]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 10,\\n                 \
+    \       \\\"compound\\\": \\\"(DL)-alpha-Lipoic acid\\\",\\n                 \
+    \       \\\"compound_id\\\": 252,\\n                        \\\"amount\\\": 50,\\\
+    n                        \\\"unit\\\": \\\"mg\\\",\\n                        \\\
+    \"g_l\\\": 0.05,\\n                        \\\"mmol_l\\\": 0.24233,\\n       \
+    \                 \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\":\
+    \ \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Wolin's vitamin solution (10x) recipe row 10; primary\
+    \ printed amount\",\n        \"exact_source_quote\": \"   (DL)-alpha-Lipoic acid\
+    \                                           50.00       mg\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"This value is an undiluted stock quantity\
+    \ or a misrepresented liquid amount, not a final medium concentration. Restore\
+    \ stock scope, original units and receiving dose.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[38].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.05\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[38].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\":\
+    \ \"50 mg is an input to a stock declared as 1000 mL by the provider. Conditional\
+    \ on that nominal stock basis, the 1 mL dose delivers 0.05 mg. Physical final\
+    \ stock/medium volumes are not independently measured.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Wolin's vitamin solution (10x) / Distilled water\",\n    \"field_path\": \"\
+    solutions\",\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n   \
+    \     \"source_locator\": \"Wolin's vitamin solution (10x) recipe row 11; primary\
+    \ printed amount\",\n        \"exact_source_quote\": \"   Distilled water    \
+    \                                           1000.00         ml\",\n        \"\
+    snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this explicit source-only premix,\
+    \ missing VFA component, receiving-stock dose or solvent amount in its named stage.\
+    \ The actual absent intended local container is recorded; source locators remain\
+    \ separate.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n  \
+    \  \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Calf brains\",\n    \"field_path\": \"ingredients[6].concentration\",\n  \
+    \  \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Brain heart infusion\\\",\\n                        \\\"compound_id\\\
+    \": 186,\\n                        \\\"attribute\\\": \\\"BD BBL\\\",\\n     \
+    \                   \\\"amount\\\": 6,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 5.96421,\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source prescribes 6 g BD BBL BHI premix,\
+    \ not unscaled tissue/peptone/glucose/salt/phosphate values from a commercial\
+    \ formulation. VARIABLE infusion descriptors are not measurable amounts for this\
+    \ medium.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[6].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"variable\",\n          \"unit\": \"VARIABLE\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"\
+    ingredient_or_context\": \"Beef heart\",\n    \"field_path\": \"ingredients[7].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Brain heart infusion\\\",\\n                        \\\"compound_id\\\
+    \": 186,\\n                        \\\"attribute\\\": \\\"BD BBL\\\",\\n     \
+    \                   \\\"amount\\\": 6,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 5.96421,\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source prescribes 6 g BD BBL BHI premix,\
+    \ not unscaled tissue/peptone/glucose/salt/phosphate values from a commercial\
+    \ formulation. VARIABLE infusion descriptors are not measurable amounts for this\
+    \ medium.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[7].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"variable\",\n          \"unit\": \"VARIABLE\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"\
+    ingredient_or_context\": \"Proteose peptone\",\n    \"field_path\": \"ingredients[8].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Brain heart infusion\\\",\\n                        \\\"compound_id\\\
+    \": 186,\\n                        \\\"attribute\\\": \\\"BD BBL\\\",\\n     \
+    \                   \\\"amount\\\": 6,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 5.96421,\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source prescribes 6 g BD BBL BHI premix,\
+    \ not unscaled tissue/peptone/glucose/salt/phosphate values from a commercial\
+    \ formulation. VARIABLE infusion descriptors are not measurable amounts for this\
+    \ medium.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[8].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"10.0\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.0\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Dextrose\",\n    \"field_path\": \"ingredients[9].concentration\",\n    \"\
+    decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Brain heart infusion\\\",\\n                        \\\"compound_id\\\
+    \": 186,\\n                        \\\"attribute\\\": \\\"BD BBL\\\",\\n     \
+    \                   \\\"amount\\\": 6,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 5.96421,\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source prescribes 6 g BD BBL BHI premix,\
+    \ not unscaled tissue/peptone/glucose/salt/phosphate values from a commercial\
+    \ formulation. VARIABLE infusion descriptors are not measurable amounts for this\
+    \ medium.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[9].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"2.0\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Sodium chloride\",\n    \"field_path\": \"ingredients[10].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Brain heart infusion\\\",\\n                        \\\"compound_id\\\
+    \": 186,\\n                        \\\"attribute\\\": \\\"BD BBL\\\",\\n     \
+    \                   \\\"amount\\\": 6,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 5.96421,\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source prescribes 6 g BD BBL BHI premix,\
+    \ not unscaled tissue/peptone/glucose/salt/phosphate values from a commercial\
+    \ formulation. VARIABLE infusion descriptors are not measurable amounts for this\
+    \ medium.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[10].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"5.0\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Disodium phosphate\",\n    \"field_path\": \"ingredients[11].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Brain heart infusion\\\",\\n                        \\\"compound_id\\\
+    \": 186,\\n                        \\\"attribute\\\": \\\"BD BBL\\\",\\n     \
+    \                   \\\"amount\\\": 6,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 5.96421,\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source prescribes 6 g BD BBL BHI premix,\
+    \ not unscaled tissue/peptone/glucose/salt/phosphate values from a commercial\
+    \ formulation. VARIABLE infusion descriptors are not measurable amounts for this\
+    \ medium.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[11].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Tryptone\",\n    \"field_path\": \"ingredients[23].concentration\",\n    \"\
+    decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Brain heart infusion\\\",\\n                        \\\"compound_id\\\
+    \": 186,\\n                        \\\"attribute\\\": \\\"BD BBL\\\",\\n     \
+    \                   \\\"amount\\\": 6,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 5.96421,\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source has no LB addition; these separate\
+    \ 10/5/10 g/L tryptone/yeast/salt rows cannot be justified by the exact DSMZ recipe\
+    \ or by unrelated LB notes.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.0\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.0\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Yeast extract\",\n    \"field_path\": \"ingredients[24].concentration\",\n\
+    \    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Brain heart infusion\\\",\\n                        \\\"compound_id\\\
+    \": 186,\\n                        \\\"attribute\\\": \\\"BD BBL\\\",\\n     \
+    \                   \\\"amount\\\": 6,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 5.96421,\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source has no LB addition; these separate\
+    \ 10/5/10 g/L tryptone/yeast/salt rows cannot be justified by the exact DSMZ recipe\
+    \ or by unrelated LB notes.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Sodium chloride\",\n    \"field_path\": \"ingredients[25].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1455api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1455\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Brain heart infusion\\\",\\n                        \\\"compound_id\\\
+    \": 186,\\n                        \\\"attribute\\\": \\\"BD BBL\\\",\\n     \
+    \                   \\\"amount\\\": 6,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 5.96421,\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"d82b5454558f58b32513f487c629114daa2721943303b0a2fdafb7e8dae8fe7e\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source has no LB addition; these separate\
+    \ 10/5/10 g/L tryptone/yeast/salt rows cannot be justified by the exact DSMZ recipe\
+    \ or by unrelated LB notes.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.0\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.0\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"CO2 sparging fraction\",\n    \"field_path\": \"preparation.CO2_sparging_fraction\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n       \
+    \ \"source_locator\": \"Exact main or haemin/vitamin stock preparation/table wording\"\
+    ,\n        \"exact_source_quote\": \"100% CO2 gas for 30 - 45 min\",\n       \
+    \ \"snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal quantity and its actual\
+    \ main-versus-stock scope; correct existing statements need evidence, while stock\
+    \ preparation must be associated with the restored stock.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Dissolve ingredients except bicarbonate, succinate, vitamins,\
+    \ cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to\
+    \ make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2\
+    \ gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere\
+    \ into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate,\
+    \ vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. The vitamin solution should be sterilized by filtration.\
+    \ Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and\
+    \ sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic.\
+    \ Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH\
+    \ between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic\
+    \ Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine\
+    \ and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas.\
+    \ The vitamin solution should be sterilized by filtration. Prior to use adjust\
+    \ pH of complete medium to 6.6 - 6.8, if necessary.\",\n        \"decision\":\
+    \ \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Sparging duration\",\n    \"field_path\": \"preparation.Sparging_duration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n       \
+    \ \"source_locator\": \"Exact main or haemin/vitamin stock preparation/table wording\"\
+    ,\n        \"exact_source_quote\": \"30 - 45 min\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal quantity and its actual\
+    \ main-versus-stock scope; correct existing statements need evidence, while stock\
+    \ preparation must be associated with the restored stock.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Dissolve ingredients except bicarbonate, succinate, vitamins,\
+    \ cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to\
+    \ make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2\
+    \ gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere\
+    \ into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate,\
+    \ vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. The vitamin solution should be sterilized by filtration.\
+    \ Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and\
+    \ sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic.\
+    \ Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH\
+    \ between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic\
+    \ Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine\
+    \ and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas.\
+    \ The vitamin solution should be sterilized by filtration. Prior to use adjust\
+    \ pH of complete medium to 6.6 - 6.8, if necessary.\",\n        \"decision\":\
+    \ \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Intermediate pH\",\n    \"field_path\": \"preparation.Intermediate_pH\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n       \
+    \ \"source_locator\": \"Exact main or haemin/vitamin stock preparation/table wording\"\
+    ,\n        \"exact_source_quote\": \"pH between 6.5 and 7.0\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal quantity and its actual\
+    \ main-versus-stock scope; correct existing statements need evidence, while stock\
+    \ preparation must be associated with the restored stock.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Dissolve ingredients except bicarbonate, succinate, vitamins,\
+    \ cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to\
+    \ make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2\
+    \ gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere\
+    \ into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate,\
+    \ vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. The vitamin solution should be sterilized by filtration.\
+    \ Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and\
+    \ sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic.\
+    \ Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH\
+    \ between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic\
+    \ Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine\
+    \ and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas.\
+    \ The vitamin solution should be sterilized by filtration. Prior to use adjust\
+    \ pH of complete medium to 6.6 - 6.8, if necessary.\",\n        \"decision\":\
+    \ \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Dispensing gas\",\n    \"field_path\": \"preparation.Dispensing_gas\",\n \
+    \   \"decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n       \
+    \ \"source_locator\": \"Exact main or haemin/vitamin stock preparation/table wording\"\
+    ,\n        \"exact_source_quote\": \"medium under 100% CO2 gas atmosphere\",\n\
+    \        \"snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal quantity and its actual\
+    \ main-versus-stock scope; correct existing statements need evidence, while stock\
+    \ preparation must be associated with the restored stock.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Dissolve ingredients except bicarbonate, succinate, vitamins,\
+    \ cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to\
+    \ make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2\
+    \ gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere\
+    \ into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate,\
+    \ vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. The vitamin solution should be sterilized by filtration.\
+    \ Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and\
+    \ sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic.\
+    \ Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH\
+    \ between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic\
+    \ Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine\
+    \ and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas.\
+    \ The vitamin solution should be sterilized by filtration. Prior to use adjust\
+    \ pH of complete medium to 6.6 - 6.8, if necessary.\",\n        \"decision\":\
+    \ \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Addition-stock gas\",\n    \"field_path\": \"preparation.Addition-stock_gas\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n       \
+    \ \"source_locator\": \"Exact main or haemin/vitamin stock preparation/table wording\"\
+    ,\n        \"exact_source_quote\": \"solutions prepared under 100% N2 gas\",\n\
+    \        \"snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal quantity and its actual\
+    \ main-versus-stock scope; correct existing statements need evidence, while stock\
+    \ preparation must be associated with the restored stock.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Dissolve ingredients except bicarbonate, succinate, vitamins,\
+    \ cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to\
+    \ make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2\
+    \ gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere\
+    \ into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate,\
+    \ vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. The vitamin solution should be sterilized by filtration.\
+    \ Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and\
+    \ sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic.\
+    \ Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH\
+    \ between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic\
+    \ Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine\
+    \ and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas.\
+    \ The vitamin solution should be sterilized by filtration. Prior to use adjust\
+    \ pH of complete medium to 6.6 - 6.8, if necessary.\",\n        \"decision\":\
+    \ \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Final pH\",\n    \"field_path\": \"preparation.Final_pH\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\"\
+    ,\n        \"source_locator\": \"Exact main or haemin/vitamin stock preparation/table\
+    \ wording\",\n        \"exact_source_quote\": \"pH of complete medium to 6.6 -\
+    \ 6.8\",\n        \"snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal quantity and its actual\
+    \ main-versus-stock scope; correct existing statements need evidence, while stock\
+    \ preparation must be associated with the restored stock.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ph_range\",\n      \
+    \  \"stored\": {\n          \"min\": 6.6,\n          \"max\": 6.8\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\",\n\
+    \        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"min\"\
+    : 6.6,\n          \"max\": 6.8\n        },\n        \"decision\": \"evidence_only\"\
+    \n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Haemin mass\",\n\
+    \    \"field_path\": \"preparation.Haemin_mass\",\n    \"decision\": \"correct\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1455\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\"\
+    ,\n        \"source_locator\": \"Exact main or haemin/vitamin stock preparation/table\
+    \ wording\",\n        \"exact_source_quote\": \"50 mg haemin\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal quantity and its actual\
+    \ main-versus-stock scope; correct existing statements need evidence, while stock\
+    \ preparation must be associated with the restored stock.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps[1].description\"\
+    ,\n        \"stored\": \"Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100\
+    \ ml with distilled water and filter sterilize. Store refrigerated.\",\n     \
+    \   \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water\
+    \ and filter sterilize. Store refrigerated.\",\n        \"decision\": \"correct\"\
+    \n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Haemin base volume\"\
+    ,\n    \"field_path\": \"preparation.Haemin_base_volume\",\n    \"decision\":\
+    \ \"correct\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"dsmz1455\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\"\
+    ,\n        \"source_locator\": \"Exact main or haemin/vitamin stock preparation/table\
+    \ wording\",\n        \"exact_source_quote\": \"1 ml 1 N\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal quantity and its actual\
+    \ main-versus-stock scope; correct existing statements need evidence, while stock\
+    \ preparation must be associated with the restored stock.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps[1].description\"\
+    ,\n        \"stored\": \"Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100\
+    \ ml with distilled water and filter sterilize. Store refrigerated.\",\n     \
+    \   \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water\
+    \ and filter sterilize. Store refrigerated.\",\n        \"decision\": \"correct\"\
+    \n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Haemin base strength\"\
+    ,\n    \"field_path\": \"preparation.Haemin_base_strength\",\n    \"decision\"\
+    : \"correct\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"dsmz1455\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\"\
+    ,\n        \"source_locator\": \"Exact main or haemin/vitamin stock preparation/table\
+    \ wording\",\n        \"exact_source_quote\": \"1 N       NaOH\",\n        \"\
+    snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal quantity and its actual\
+    \ main-versus-stock scope; correct existing statements need evidence, while stock\
+    \ preparation must be associated with the restored stock.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps[1].description\"\
+    ,\n        \"stored\": \"Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100\
+    \ ml with distilled water and filter sterilize. Store refrigerated.\",\n     \
+    \   \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water\
+    \ and filter sterilize. Store refrigerated.\",\n        \"decision\": \"correct\"\
+    \n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Haemin final stock\
+    \ volume\",\n    \"field_path\": \"preparation.Haemin_final_stock_volume\",\n\
+    \    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n       \
+    \ \"source_locator\": \"Exact main or haemin/vitamin stock preparation/table wording\"\
+    ,\n        \"exact_source_quote\": \"make up to 100 ml\",\n        \"snapshot_sha256\"\
+    : \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\",\n    \
+    \    \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal quantity and its actual\
+    \ main-versus-stock scope; correct existing statements need evidence, while stock\
+    \ preparation must be associated with the restored stock.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps[1].description\"\
+    ,\n        \"stored\": \"Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100\
+    \ ml with distilled water and filter sterilize. Store refrigerated.\",\n     \
+    \   \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water\
+    \ and filter sterilize. Store refrigerated.\",\n        \"decision\": \"correct\"\
+    \n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Haemin stock percent\"\
+    ,\n    \"field_path\": \"preparation.Haemin_stock_percent\",\n    \"decision\"\
+    : \"add\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"dsmz1455\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\"\
+    ,\n        \"source_locator\": \"Exact main or haemin/vitamin stock preparation/table\
+    \ wording\",\n        \"exact_source_quote\": \"Haemin solution (0.05% w/v)\"\
+    ,\n        \"snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal quantity and its actual\
+    \ main-versus-stock scope; correct existing statements need evidence, while stock\
+    \ preparation must be associated with the restored stock.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions\",\n     \
+    \   \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Resazurin stock percent\",\n    \"field_path\": \"preparation.Resazurin_stock_percent\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n       \
+    \ \"source_locator\": \"Exact main or haemin/vitamin stock preparation/table wording\"\
+    ,\n        \"exact_source_quote\": \"Sodium resazurin (0.1% w/v)\",\n        \"\
+    snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal quantity and its actual\
+    \ main-versus-stock scope; correct existing statements need evidence, while stock\
+    \ preparation must be associated with the restored stock.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions\",\n     \
+    \   \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Vitamin stock factor\",\n    \"field_path\": \"preparation.Vitamin_stock_factor\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n       \
+    \ \"source_locator\": \"Exact main or haemin/vitamin stock preparation/table wording\"\
+    ,\n        \"exact_source_quote\": \"Wolin's vitamin solution (10x)\",\n     \
+    \   \"snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal quantity and its actual\
+    \ main-versus-stock scope; correct existing statements need evidence, while stock\
+    \ preparation must be associated with the restored stock.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions\",\n     \
+    \   \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Calf-brain 200 g/L infusion descriptor\",\n    \"field_path\": \"ingredients[6].notes\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n       \
+    \ \"source_locator\": \"Source premix identity or actual main final pH\",\n  \
+    \      \"exact_source_quote\": \"Brain heart infusion (BD BBL)\",\n        \"\
+    snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"The local numeric product descriptor does\
+    \ not establish the amount or pH of DSMZ 1455. Preserve as historical product\
+    \ provenance only until the exact product specification is verified.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[6].notes\"\
+    ,\n        \"stored\": \"infusion from 200 g/L; Tissue infusion - source material\
+    \ is calf brain tissue; Constituent of Brain Heart Infusion commercial product\"\
+    ,\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[6].notes\",\n        \"stored\": \"infusion\
+    \ from 200 g/L; Tissue infusion - source material is calf brain tissue; Constituent\
+    \ of Brain Heart Infusion commercial product\",\n        \"decision\": \"unsupported\"\
+    \n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Beef-heart 250 g/L\
+    \ infusion descriptor\",\n    \"field_path\": \"ingredients[7].notes\",\n    \"\
+    decision\": \"unsupported\",\n    \"local\": null,\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\"\
+    ,\n        \"source_locator\": \"Source premix identity or actual main final pH\"\
+    ,\n        \"exact_source_quote\": \"Brain heart infusion (BD BBL)\",\n      \
+    \  \"snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"The local numeric product descriptor does\
+    \ not establish the amount or pH of DSMZ 1455. Preserve as historical product\
+    \ provenance only until the exact product specification is verified.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[7].notes\"\
+    ,\n        \"stored\": \"infusion from 250 g/L; Tissue infusion - source material\
+    \ is beef/ox heart tissue; Constituent of Brain Heart Infusion commercial product\"\
+    ,\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[7].notes\",\n        \"stored\": \"infusion\
+    \ from 250 g/L; Tissue infusion - source material is beef/ox heart tissue; Constituent\
+    \ of Brain Heart Infusion commercial product\",\n        \"decision\": \"unsupported\"\
+    \n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Commercial pH 7.4\
+    \ ± 0.2 is not main pH\",\n    \"field_path\": \"ingredients[11].notes\",\n  \
+    \  \"decision\": \"unsupported\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1455\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\",\n       \
+    \ \"source_locator\": \"Source premix identity or actual main final pH\",\n  \
+    \      \"exact_source_quote\": \"pH of complete medium to 6.6 - 6.8\",\n     \
+    \   \"snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"The local numeric product descriptor does\
+    \ not establish the amount or pH of DSMZ 1455. Preserve as historical product\
+    \ provenance only until the exact product specification is verified.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[11].notes\"\
+    ,\n        \"stored\": \"pH buffer (final pH 7.4 ± 0.2); Constituent of Brain\
+    \ Heart Infusion commercial product\",\n        \"decision\": \"unsupported\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].notes\",\n        \"stored\": \"\
+    pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial\
+    \ product\",\n        \"decision\": \"unsupported\"\n      }\n    ]\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Conditional final titrant amount\",\n    \"\
+    field_path\": \"preparation.final_titrant\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1455\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf\"\
+    ,\n        \"source_locator\": \"Final adjustment sentence\",\n        \"exact_source_quote\"\
+    : \"if necessary.\",\n        \"snapshot_sha256\": \"e45d456b43925005c3fbd906c982b8f804a2553df614b74d40db240c952ae689\"\
+    ,\n        \"parsed_text_sha256\": \"2636df28f8b1d500a4700abf47aedf7e9ba94d7cf8ad7e0f7a6c0ebaa8fe8e80\"\
+    \n      }\n    ],\n    \"rationale\": \"No fixed titrant identity, dose or final-volume\
+    \ correction is supplied. Do not infer one.\",\n    \"action_taken\": \"Review\
+    \ only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Dissolve ingredients except bicarbonate, succinate, vitamins,\
+    \ cysteine and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to\
+    \ make it anoxic. Add the bicarbonate and equilibrate the medium with the CO2\
+    \ gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere\
+    \ into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate,\
+    \ vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. The vitamin solution should be sterilized by filtration.\
+    \ Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.\",\n \
+    \       \"decision\": \"not_quantified\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and\
+    \ sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic.\
+    \ Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH\
+    \ between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic\
+    \ Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine\
+    \ and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas.\
+    \ The vitamin solution should be sterilized by filtration. Prior to use adjust\
+    \ pH of complete medium to 6.6 - 6.8, if necessary.\",\n        \"decision\":\
+    \ \"not_quantified\"\n      }\n    ]\n  }\n]"
+- assessment_id: identity
+  area: identity
+  topic: Exact medium and stock dependencies
+  outcome: supported
+  summary: The target and unique CM000921 owner identify DSMZ 1455. Its PDF prints
+    the VFA, haemin and tenfold Wolin stock definitions in full. References to media
+    330/78/120 are stock provenance only; their unrelated recipes and organisms are
+    not transferred.
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - dsmz1455
+  - mediadive1455api
+- assessment_id: stage-consistency
+  area: consistency
+  topic: Main nominal basis, stock dilution and commercial expansion
+  outcome: concern
+  summary: Every local concentration, source-only recipe row and quantitative preparation
+    claim is inventoried. The provider declares 1006 mL, whereas listed liquid inputs
+    total 1006.6 mL; neither establishes measured final volume. Main rounded rates
+    agree only on that nominal provider basis. Six VFA acids replace a seven-component
+    liquid mixture, with butyric 129 mL mislabeled as 129 g/L; haemin and tenfold
+    vitamin strengths remain undiluted. BHI and LB expansion rows cannot represent
+    the prescribed 6 g BHI premix.
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1455
+  - mediadive1455api
+  - quantity-inventory
+  - quantity-local-fields
+  - bhi-context
+- assessment_id: forms
+  area: grounding
+  topic: Supplied salt forms and product identity
+  outcome: concern
+  summary: Sodium resazurin is linked only to primary CHEBI:8806, neutral C12H7NO4
+    without sodium. Generic disodium succinate is narrowed to anhydrous CHEBI:63675
+    without a source hydration specification. The explicit D-calcium pantothenate
+    agrees with CHEBI:31345 structure, and generic non-stereospecific CHEBI:16494
+    does not contradict the DL-lipoic source. UBERON brain/heart classes identify
+    anatomy, not a validated chemical composition or infusion amount. Other explicit
+    hydrates and hydrochlorides were compared without inventing replacements.
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1455
+  - chebi8806
+  - chebi63675
+  - chebi31345
+  - chebi16494
+  - uberon0000955
+  - uberon0000948
+- assessment_id: legacy-mim
+  area: provenance
+  topic: Legacy isovalerate linkage
+  outcome: concern
+  summary: The exact pinned public catalog and complete tree search do not establish
+    legacy MediaIngredientMech:000378. This completed negative lookup leaves historical
+    correspondence unresolved; it is separate from current CHEBI-keyed mappings and
+    does not mean source access was unavailable.
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - record
+  - owner-0
+  - bound-context
+  - mimPinnedCatalog
+  - mimPinnedTree
+- assessment_id: preparation
+  area: completeness
+  topic: Main gas/pH sequence and stock-specific sterilization
+  outcome: concern
+  summary: Main CO2 sparging for 30–45 minutes, pH 6.5–7.0 then 6.6–6.8, dispensing
+    atmosphere, autoclaving, N2-prepared later additions and vitamin filtration are
+    retained without claim evidence. Haemin 50 mg/1 mL 1 N NaOH/make-up-to-100 mL
+    instructions are misplaced as a main step and lack a stock object. Refrigeration
+    is retained; no absent autoclave cycle or storage temperature is invented.
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1455
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Complex liquid and organism/reference scope
+  outcome: supported
+  summary: COMPLEX/UNDEFINED and LIQUID fit the source BHI/yeast liquid formulation.
+    No specific organism, strain, taxon, assembly, DOI/PMID or supported-growth claim
+    is asserted. Organisms and solid-agar preparation on the secondary BHI page are
+    outside this medium.
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1455
+  - bhi-context
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 19 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: generation
+  area: provenance
+  topic: Owner versus generated record and current writer boundaries
+  outcome: concern
+  summary: The generated target and current owner retain the same scientific defects.
+    Product notes assert March research, but no specific historical expansion writer
+    is established. Current inspected importer/merge/cleanup excerpts are implementation
+    context, not historical replay. Correct the owner explicitly and regenerate the
+    target, retaining old history and exact source-version evidence.
+  target_ids:
+  - CultureMech:000921
+  evidence_ids:
+  - record
+  - owner-0
+  - history-metadata
+  - bound-context
+  - writer-context-0
+  - writer-context-1
+  - writer-context-2
+  - writer-context-3
+findings:
+- finding_id: f1
+  issue_key: culturemech.000921.formulation
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Commercial expansions and undiluted stocks replace the source formulation
+  description: 'The 39-row list is not a faithful DSMZ 1455 formulation: the 6 g BHI
+    premix is replaced by unscaled product constituents, unrelated LB rows add 10/5/10
+    g/L, three stock doses are missing, one VFA component is absent, and butyric/NaOH
+    liquid amounts are treated as g/L. These changes alter the recipe identity.'
+  target_ids:
+  - CultureMech:000921
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1455
+  - mediadive1455api
+  - quantity-inventory
+  - bhi-context
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.000921.resazurin-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Sodium resazurin is assigned a neutral molecular term
+  description: The source and local name specify sodium resazurin; CHEBI:8806 has
+    neutral formula C12H7NO4 and no sodium. A canonical-label pass does not establish
+    this salt identity. No current secondary CHEBI linkage is asserted on this row.
+  target_ids:
+  - CultureMech:000921
+  field_paths:
+  - ingredients[13].term
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1455
+  - chebi8806
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.000921.stock-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Haemin preparation lacks its stock scope
+  description: The second main preparation step describes a 100 mL haemin stock without
+    a stock object or 2 mL receiving dose. Literal quantities survive but their scope
+    is essential to faithful preparation.
+  target_ids:
+  - CultureMech:000921
+  field_paths:
+  - preparation_steps[1]
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1455
+  - solution124
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: 'P2 representation scope is major: the required instructions
+    survive, but associating a 100 mL stock preparation with the main medium materially
+    misrepresents its use.'
+- finding_id: f4
+  issue_key: culturemech.000921.specificity-provenance
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Succinate hydration and legacy linkage remain unsupported
+  description: The generic disodium-succinate source does not independently establish
+    anhydrous CHEBI:63675. Legacy 000378 correspondence remains unresolved after the
+    completed pinned lookup. Product notes and secondary citations do not authenticate
+    historical premix expansion.
+  target_ids:
+  - CultureMech:000921
+  field_paths:
+  - ingredients[15].term
+  - ingredients[15].mediaingredientmech_chebi_term
+  - ingredients[26].mediaingredientmech_term
+  - references
+  - notes
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1455
+  - chebi63675
+  - mimPinnedCatalog
+  - mimPinnedTree
+  - bhi-context
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the exact premix amount and seven-component VFA, haemin and
+    tenfold vitamin stock hierarchies with their receiving doses; reconcile unsupported
+    commercial rows and liquid units explicitly. Preserve nominal provider rates and
+    the unresolved 1006 versus 1006.6 mL basis, without inventing a final denominator.
+    Attach exact evidence before regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000921
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Resolve and evidence the exact supplied sodium salt before correcting
+    the primary mapping. Preserve the 0.1% w/v stock and 0.5 mL dose; do not invent
+    a replacement identifier or mass conversion.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000921
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Associate the preserved haemin dissolution, make-up, filtration and
+    refrigeration instructions with the restored stock, retaining main gas/pH stages
+    and separate later additions with attached evidence.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000921
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Verify the source-specific succinate form and historical ingredient
+    correspondence, preserve explicit uncertainty and attach the exact premix specification
+    if expansion is retained. Do not infer a hydrate or legacy-ID replacement.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:000921
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alternative_rumen_bacteria_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The manufacturer link from the cited secondary BHI page returned HTTP 403. Exact
+  BD BBL product composition remains unverified; the complete DSMZ recipe still explicitly
+  supplies the 6 g commercial-premix amount.
+- The earlier exact LB-Miller page attempt failed certificate verification. Original
+  failed metadata and time are preserved. DSMZ 1455 contains no LB addition, independently
+  of this optional access failure.
+- The exact manufacturer product specification and historical LB page were not accessible
+  in the preserved attempts. These optional limits do not prevent assessment against
+  the complete exact DSMZ formulation; no product-level composition is claimed verified.
+- The provider 1006 mL basis and 1006.6 mL input-liquid sum remain distinct; neither
+  is asserted as measured final volume. VFA mass conversions requiring unprovided
+  densities are not invented.
+- All original canonical diagnostics passed once; source findings remain despite structural
+  and identifier checks. This scientific assessment preceded formal review validation
+  and saving; their results are recorded separately.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-025
+- generated-medium
+```
