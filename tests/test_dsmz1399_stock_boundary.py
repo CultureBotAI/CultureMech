@@ -258,9 +258,7 @@ def test_current_curation_exactly_matches_pinned_plan_after_application():
         assert repair.sha(raw) == expected_sha
         assert repair.sha(item["before_text"].encode()) == item["before_sha256"]
         if depth > 0:
-            doc = audit.invert_chain(
-                raw, [r for r in successors if r["path"] == item["path"]]
-            )
+            doc = audit.invert_chain(raw, [r for r in successors if r["path"] == item["path"]])
         else:
             doc = yaml.load(raw, Loader=yaml.CSafeLoader)
         assert doc["id"] == item["id"]

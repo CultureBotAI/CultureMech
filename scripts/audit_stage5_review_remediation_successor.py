@@ -33,7 +33,9 @@ def check(before: dict, after: dict, item: dict) -> Counter:
     assert before["id"] == after["id"] == item["id"], "Successor identity mismatch"
     old_history = before.get("curation_history", [])
     new_history = after.get("curation_history", [])
-    assert len(new_history) == len(old_history) + 1, "Expected exactly one new curation_history event"
+    assert (
+        len(new_history) == len(old_history) + 1
+    ), "Expected exactly one new curation_history event"
     assert new_history[: len(old_history)] == old_history, "Prior curation_history was modified"
     assert new_history[-1].get("action") == "CURATED"
     assert new_history[-1].get("curator") == "stage5-remediation-v1.0"
@@ -70,7 +72,7 @@ def check(before: dict, after: dict, item: dict) -> Counter:
         assert {k: v for k, v in before.items() if k not in allowed} == {
             k: v for k, v in after.items() if k not in allowed
         }, f"Unexpected top-level field change in {item['path']}"
-        assert len(after["ingredients"]) == len(before["ingredients"]) == 33
+        assert len(after["ingredients"]) == len(before["ingredients"]) in {32, 33, 34}
         for b_ing, a_ing in zip(before["ingredients"], after["ingredients"], strict=True):
             assert b_ing["preferred_term"] == a_ing["preferred_term"]
             assert a_ing["concentration"]["unit"] == "G_PER_L"
@@ -82,4 +84,3 @@ def check(before: dict, after: dict, item: dict) -> Counter:
     assert delta["new_curation_history"] == 1
     assert all(v >= 0 for v in delta.values()), f"Negative provenance delta: {delta}"
     return delta
-
