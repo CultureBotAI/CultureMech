@@ -1,0 +1,3142 @@
+# Source and formulation review: anaerobic_sulfolobales_medium (CultureMech:010119)
+
+- Review: 20261021T194932Z-culturemech-010119-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T19:40:01Z
+- Finished UTC: 2026-10-21T19:49:32Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+TOGO M712 documents an anaerobic receiving medium with a 1 L salt-base dose, 1 mg resazurin and staged preparation, while both local layers record gram-rate units and an empty stock. JCM 692 currently has no recipe; historical sulfur legacy linkage remains unresolved separately from the completed current negative lookup.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 360; batch 036 item 10 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-five task batches contain 350 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 353 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:010119 | data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml | generated | anaerobic_sulfolobales_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:010119 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:010119 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch036/360/strict.tsv |
+| validate-terms | passed | True | CultureMech:010119 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:010119 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:010119 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Required source-scope verification | unavailable | True | CultureMech:010119 | Required historical correspondence of retained sulfur MediaIngredientMech:001072 is not established by the available pinned label-index snapshot. Current exact-key absence is confirmed; it does not prove that the historical assertion was invalid. |
+| Exact source content access: jcm692 | unavailable | True | CultureMech:010119 | Exact JCM 692 returned HTTP 200 with Nothing found and no recipe. Required receiving-primary verification remains unavailable; the exact TOGO receiving source and JCM 691 salt subsection are available separately. |
+| Exact source content access: mediadiveJ692 | unavailable | False | CultureMech:010119 | This optional MediaDive J692 attempt returned no usable recipe; preserve its actual failure independently of the successful TOGO and scoped parent captures. |
+| Exact source content access: mediadiveJ692retry | unavailable | False | CultureMech:010119 | This optional MediaDive J692 attempt returned no usable recipe; preserve its actual failure independently of the successful TOGO and scoped parent captures. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:010119.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:010119.
+
+32 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "Receiving: Resazurin",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_batch_amount": 1,
+      "source_unit": "mg",
+      "final_volume_L": null
+    },
+    "rationale": "The source milligram amount is not a gram rate."
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "Receiving: Na2S・9H2O",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2S・9H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_batch_amount": 0.5,
+      "source_unit": "g",
+      "final_volume_L": null
+    },
+    "rationale": "Literal batch masses are supported, but neither the salt-base dose nor stock-water input establishes a measured final receiving volume. Preserve source stage rather than an unqualified final g/L assertion."
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "Receiving: Sulfur (powder)",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"Sulfur (powder)\",\n          \"volume\": 1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_batch_amount": 1,
+      "source_unit": "g",
+      "final_volume_L": null
+    },
+    "rationale": "Literal batch masses are supported, but neither the salt-base dose nor stock-water input establishes a measured final receiving volume. Preserve source stage rather than an unqualified final g/L assertion."
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "Receiving: Yeast extract (BD-Difco)",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"Yeast extract (BD-Difco)\",\n          \"volume\": 0.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_batch_amount": 0.5,
+      "source_unit": "g",
+      "final_volume_L": null
+    },
+    "rationale": "Literal batch masses are supported, but neither the salt-base dose nor stock-water input establishes a measured final receiving volume. Preserve source stage rather than an unqualified final g/L assertion."
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "Receiving: Carbon dioxide gas",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.components[0].items[5]",
+        "exact_source_quote": "\"component_name\": \"Carbon dioxide gas\"",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_batch_amount": null,
+      "source_unit": null,
+      "final_volume_L": null
+    },
+    "rationale": "Gas amounts are not numerically specified; retain the separate explicit mixture-ratio and atmosphere instructions."
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "Receiving: N2",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.components[0].items[6]",
+        "exact_source_quote": "\"component_name\": \"N2\"",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_batch_amount": null,
+      "source_unit": null,
+      "final_volume_L": null
+    },
+    "rationale": "Gas amounts are not numerically specified; retain the separate explicit mixture-ratio and atmosphere instructions."
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "Receiving: Hydrogen gas",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.components[0].items[7]",
+        "exact_source_quote": "\"component_name\": \"Hydrogen gas\"",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_batch_amount": null,
+      "source_unit": null,
+      "final_volume_L": null
+    },
+    "rationale": "Gas amounts are not numerically specified; retain the separate explicit mixture-ratio and atmosphere instructions."
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "Salt-base receiving dose",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.components[0].items[4]",
+        "exact_source_quote": "\"component_name\": \"Salt base solution (see Medium [M711])\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_dose_L": 1,
+      "receiving_final_volume_L": null
+    },
+    "rationale": "Source explicitly supplies 1 L of prepared salt base, not 1 G_PER_L. This dose does not turn individual source stock masses into final-medium rates."
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "Salt stock: Distilled water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM711original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount": 1,
+      "stock_batch_unit": "L",
+      "reagent_strength": null,
+      "reagent_unit": null,
+      "stock_final_volume_L": null
+    },
+    "rationale": "Add only the named salt-stock constituent. The dependency currently flattens stock amounts at main level and labels water/milligram inputs as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose remains unspecified."
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "Salt stock: MgSO4・7H2O",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM711original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"MgSO4・7H2O\",\n          \"volume\": 0.25,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount": 0.25,
+      "stock_batch_unit": "g",
+      "reagent_strength": null,
+      "reagent_unit": null,
+      "stock_final_volume_L": null
+    },
+    "rationale": "Add only the named salt-stock constituent. The dependency currently flattens stock amounts at main level and labels water/milligram inputs as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose remains unspecified."
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "Salt stock: CaCl2・2H2O",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM711original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"CaCl2・2H2O\",\n          \"volume\": 0.07,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount": 0.07,
+      "stock_batch_unit": "g",
+      "reagent_strength": null,
+      "reagent_unit": null,
+      "stock_final_volume_L": null
+    },
+    "rationale": "Add only the named salt-stock constituent. The dependency currently flattens stock amounts at main level and labels water/milligram inputs as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose remains unspecified."
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "Salt stock: KH2PO4",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.28",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM711original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"KH2PO4\",\n          \"volume\": 0.28,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount": 0.28,
+      "stock_batch_unit": "g",
+      "reagent_strength": null,
+      "reagent_unit": null,
+      "stock_final_volume_L": null
+    },
+    "rationale": "Add only the named salt-stock constituent. The dependency currently flattens stock amounts at main level and labels water/milligram inputs as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose remains unspecified."
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "Salt stock: Na2MoO4・2H2O",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM711original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711",
+        "source_locator": "$.components[1].items[4]",
+        "exact_source_quote": "\"component_name\": \"Na2MoO4・2H2O\",\n          \"volume\": 0.03,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount": 0.03,
+      "stock_batch_unit": "mg",
+      "reagent_strength": null,
+      "reagent_unit": null,
+      "stock_final_volume_L": null
+    },
+    "rationale": "Add only the named salt-stock constituent. The dependency currently flattens stock amounts at main level and labels water/milligram inputs as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose remains unspecified."
+  },
+  {
+    "quantity_id": "q14",
+    "component_or_context": "Salt stock: MnCl2・4H2O",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "1.8",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM711original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711",
+        "source_locator": "$.components[1].items[5]",
+        "exact_source_quote": "\"component_name\": \"MnCl2・4H2O\",\n          \"volume\": 1.8,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount": 1.8,
+      "stock_batch_unit": "mg",
+      "reagent_strength": null,
+      "reagent_unit": null,
+      "stock_final_volume_L": null
+    },
+    "rationale": "Add only the named salt-stock constituent. The dependency currently flattens stock amounts at main level and labels water/milligram inputs as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose remains unspecified."
+  },
+  {
+    "quantity_id": "q15",
+    "component_or_context": "Salt stock: ZnSO4・7H2O",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.22",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM711original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"ZnSO4・7H2O\",\n          \"volume\": 0.22,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount": 0.22,
+      "stock_batch_unit": "mg",
+      "reagent_strength": null,
+      "reagent_unit": null,
+      "stock_final_volume_L": null
+    },
+    "rationale": "Add only the named salt-stock constituent. The dependency currently flattens stock amounts at main level and labels water/milligram inputs as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose remains unspecified."
+  },
+  {
+    "quantity_id": "q16",
+    "component_or_context": "Salt stock: CuCl2・2H2O",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM711original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711",
+        "source_locator": "$.components[1].items[7]",
+        "exact_source_quote": "\"component_name\": \"CuCl2・2H2O\",\n          \"volume\": 0.05,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount": 0.05,
+      "stock_batch_unit": "mg",
+      "reagent_strength": null,
+      "reagent_unit": null,
+      "stock_final_volume_L": null
+    },
+    "rationale": "Add only the named salt-stock constituent. The dependency currently flattens stock amounts at main level and labels water/milligram inputs as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose remains unspecified."
+  },
+  {
+    "quantity_id": "q17",
+    "component_or_context": "Salt stock: (NH4)2SO4",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "1.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM711original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711",
+        "source_locator": "$.components[1].items[8]",
+        "exact_source_quote": "\"component_name\": \"(NH4)2SO4\",\n          \"volume\": 1.3,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount": 1.3,
+      "stock_batch_unit": "g",
+      "reagent_strength": null,
+      "reagent_unit": null,
+      "stock_final_volume_L": null
+    },
+    "rationale": "Add only the named salt-stock constituent. The dependency currently flattens stock amounts at main level and labels water/milligram inputs as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose remains unspecified."
+  },
+  {
+    "quantity_id": "q18",
+    "component_or_context": "Salt stock: CoSO4・7H2O",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM711original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711",
+        "source_locator": "$.components[1].items[9]",
+        "exact_source_quote": "\"component_name\": \"CoSO4・7H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount": 0.01,
+      "stock_batch_unit": "mg",
+      "reagent_strength": null,
+      "reagent_unit": null,
+      "stock_final_volume_L": null
+    },
+    "rationale": "Add only the named salt-stock constituent. The dependency currently flattens stock amounts at main level and labels water/milligram inputs as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose remains unspecified."
+  },
+  {
+    "quantity_id": "q19",
+    "component_or_context": "Salt stock: VOSO4・xH2O",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM711original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711",
+        "source_locator": "$.components[1].items[10]",
+        "exact_source_quote": "\"component_name\": \"VOSO4・xH2O\",\n          \"volume\": 0.03,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount": 0.03,
+      "stock_batch_unit": "mg",
+      "reagent_strength": null,
+      "reagent_unit": null,
+      "stock_final_volume_L": null
+    },
+    "rationale": "Add only the named salt-stock constituent. The dependency currently flattens stock amounts at main level and labels water/milligram inputs as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose remains unspecified."
+  },
+  {
+    "quantity_id": "q20",
+    "component_or_context": "Salt stock: Na2B4O7・10H2O",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "4.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM711original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711",
+        "source_locator": "$.components[1].items[11]",
+        "exact_source_quote": "\"component_name\": \"Na2B4O7・10H2O\",\n          \"volume\": 4.5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount": 4.5,
+      "stock_batch_unit": "mg",
+      "reagent_strength": null,
+      "reagent_unit": null,
+      "stock_final_volume_L": null
+    },
+    "rationale": "Add only the named salt-stock constituent. The dependency currently flattens stock amounts at main level and labels water/milligram inputs as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose remains unspecified."
+  },
+  {
+    "quantity_id": "q21",
+    "component_or_context": "Salt stock: H2SO4",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM711original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711",
+        "source_locator": "$.components[1].items[12]",
+        "exact_source_quote": "\"component_name\": \"H2SO4\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"N\"",
+        "snapshot_sha256": "21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount": null,
+      "stock_batch_unit": null,
+      "reagent_strength": 10,
+      "reagent_unit": "N",
+      "stock_final_volume_L": null
+    },
+    "rationale": "Add only the named salt-stock constituent. The dependency currently flattens stock amounts at main level and labels water/milligram inputs as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose remains unspecified."
+  },
+  {
+    "quantity_id": "q22",
+    "component_or_context": "Receiving gas ratio",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "H2--CO2 (4:1, v/v)",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1",
+        "accessed_at": "2026-10-21T19:24:03.489043Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "H2_CO2_ratio": [
+        4,
+        1
+      ],
+      "basis": "v/v",
+      "stages": [
+        "salt-base autoclaving",
+        "distribution",
+        "post-inoculation pressurization"
+      ]
+    },
+    "rationale": "Preserve the exact named stage, example qualifier and known unit. Bare percentages, pressure reference and unprovided doses remain unknown. Neither the source title nor preparation is an organism-specific growth claim."
+  },
+  {
+    "quantity_id": "q23",
+    "component_or_context": "Separate yeast stock",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Salt base solution (see Medium [M711])",
+            "composition": [],
+            "notes": "Cross-reference to Medium M711",
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "name": "Unknown solution"
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Salt base solution (see Medium [M711])",
+            "composition": [],
+            "notes": "Cross-reference to Medium M711",
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "name": "Unknown solution"
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "yeast extract (as a 10% solution)",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1",
+        "accessed_at": "2026-10-21T19:24:03.489043Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_percent": 10,
+      "basis": null,
+      "aliquot": null,
+      "atmosphere": "nitrogen"
+    },
+    "rationale": "Preserve the exact named stage, example qualifier and known unit. Bare percentages, pressure reference and unprovided doses remain unknown. Neither the source title nor preparation is an organism-specific growth claim."
+  },
+  {
+    "quantity_id": "q24",
+    "component_or_context": "Separate sulfide stock",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Salt base solution (see Medium [M711])",
+            "composition": [],
+            "notes": "Cross-reference to Medium M711",
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "name": "Unknown solution"
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Salt base solution (see Medium [M711])",
+            "composition": [],
+            "notes": "Cross-reference to Medium M711",
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "name": "Unknown solution"
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "stock solution (5%, autoclaved under a N2 atmosphere)",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1",
+        "accessed_at": "2026-10-21T19:24:03.489043Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_percent": 5,
+      "basis": null,
+      "aliquot": null,
+      "atmosphere": "nitrogen"
+    },
+    "rationale": "Preserve the exact named stage, example qualifier and known unit. Bare percentages, pressure reference and unprovided doses remain unknown. Neither the source title nor preparation is an organism-specific growth claim."
+  },
+  {
+    "quantity_id": "q25",
+    "component_or_context": "Sulfur steaming duration",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Steam sulfur for 3 hr on each of 3 successive days.",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1",
+        "accessed_at": "2026-10-21T19:24:03.489043Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "duration_hr_each_day": 3,
+      "successive_days": 3
+    },
+    "rationale": "Preserve the exact named stage, example qualifier and known unit. Bare percentages, pressure reference and unprovided doses remain unknown. Neither the source title nor preparation is an organism-specific growth claim."
+  },
+  {
+    "quantity_id": "q26",
+    "component_or_context": "Example culture aliquot",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "20 ml medium",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1",
+        "accessed_at": "2026-10-21T19:24:03.489043Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "example_medium_ml": 20,
+      "example_only": true
+    },
+    "rationale": "Preserve the exact named stage, example qualifier and known unit. Bare percentages, pressure reference and unprovided doses remain unknown. Neither the source title nor preparation is an organism-specific growth claim."
+  },
+  {
+    "quantity_id": "q27",
+    "component_or_context": "Example sulfur amount",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "0.02 g sulfur",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1",
+        "accessed_at": "2026-10-21T19:24:03.489043Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "example_sulfur_g": 0.02,
+      "paired_medium_ml": 20,
+      "example_only": true
+    },
+    "rationale": "Preserve the exact named stage, example qualifier and known unit. Bare percentages, pressure reference and unprovided doses remain unknown. Neither the source title nor preparation is an organism-specific growth claim."
+  },
+  {
+    "quantity_id": "q28",
+    "component_or_context": "Example bottle capacity",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "120ml serum bottle",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1",
+        "accessed_at": "2026-10-21T19:24:03.489043Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "example_vessel_capacity_ml": 120,
+      "example_only": true
+    },
+    "rationale": "Preserve the exact named stage, example qualifier and known unit. Bare percentages, pressure reference and unprovided doses remain unknown. Neither the source title nor preparation is an organism-specific growth claim."
+  },
+  {
+    "quantity_id": "q29",
+    "component_or_context": "Receiving readjustment pH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "readjust pH to 3.0",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1",
+        "accessed_at": "2026-10-21T19:24:03.489043Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "receiving_pH": 3.0,
+      "stage": "after sulfide addition"
+    },
+    "rationale": "Preserve the exact named stage, example qualifier and known unit. Bare percentages, pressure reference and unprovided doses remain unknown. Neither the source title nor preparation is an organism-specific growth claim."
+  },
+  {
+    "quantity_id": "q30",
+    "component_or_context": "Post-inoculation pressure",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Pressurize the inoculated culture vessels to 100 kPa",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1",
+        "accessed_at": "2026-10-21T19:24:03.489043Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "pressure_kPa": 100,
+      "reference": "unspecified gauge versus absolute",
+      "stage": "after inoculation"
+    },
+    "rationale": "Preserve the exact named stage, example qualifier and known unit. Bare percentages, pressure reference and unprovided doses remain unknown. Neither the source title nor preparation is an organism-specific growth claim."
+  },
+  {
+    "quantity_id": "q31",
+    "component_or_context": "Salt-stock adjustment pH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "solutions[0].preparation_notes",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "solutions[0].preparation_notes",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM711original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711",
+        "source_locator": "$.comments[1].comment",
+        "exact_source_quote": "Adjust pH to 2.5 with 10 N H2SO4.",
+        "snapshot_sha256": "21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a",
+        "accessed_at": "2026-10-21T11:30:39.095461Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_pH": 2.5,
+      "H2SO4_strength_N": 10,
+      "dose": null
+    },
+    "rationale": "Preserve the exact named stage, example qualifier and known unit. Bare percentages, pressure reference and unprovided doses remain unknown. Neither the source title nor preparation is an organism-specific growth claim."
+  },
+  {
+    "quantity_id": "q32",
+    "component_or_context": "Autoclave cycle unavailable for receiving recipe",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+        "field_path": "sterilization",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+        "field_path": "sterilization",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM712original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Autoclave Salt base solution",
+        "snapshot_sha256": "a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1"
+      }
+    ],
+    "proposed_source_representation": {
+      "temperature_C": null,
+      "duration_min": null
+    },
+    "rationale": "The provider states autoclaving but no cycle numbers. Do not import the JCM 691 parent default into the unavailable JCM 692 recipe."
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:010119.
+
+6 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 6/7 primary and 1/7 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Current CHEBI metadata does not authenticate the unresolved legacy sulfur key. The source/ontology borax-formula tension in the named dependency is assessed separately without declaring a replacement identifier.
+
+Instance coverage on a 0–100 percent scale, denominator 7: primary 85.71%; secondary 14.29%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:010119.
+
+23 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact receiving identity and dependency boundary
+
+identity: supported. Targets: CultureMech:010119.
+
+CultureMech:010119 and its archaea owner match TOGO M712 / JCM M692. The specialized same-name CultureMech:015414 is excluded by stable ID and merge provenance. M711 / JCM 691 contributes only its salt base; its sulfur-free child and aerobic parent formulation are outside this review target. No phenotype or taxonomic growth assertion follows from the title.
+
+### Sulfur and stock hydrate specificity
+
+grounding: concern. Targets: CultureMech:010119.
+
+Elemental sulfur CHEBI:33403 is compatible with source sulfur powder without selecting an allotrope; no sulfur-atom replacement is proposed from an excluded namesake. Explicit sulfide and salt hydrates retain their literal source forms. JCM 691 Na2B4O7·10H2O is named by CHEBI:131366, but its current OLS formula 10H2O.H4B4O9.2Na and mass 417.401 do not directly represent that written source stoichiometry. Keep this as unresolved source-to-ontology formula correspondence, not an assumed molecular-weight conversion or confirmed alternative ID. VOSO4·xH2O remains variable hydration; CHEBI:87020 is contextual and not currently asserted in the transferred local dependency.
+
+### Receiving versus stock preparation
+
+completeness: concern. Targets: CultureMech:010119.
+
+Both receiving layers omit the salt-stock composition and pH 2.5/10 N acid adjustment, receiving H2/CO2 4:1 v/v handling, separate yeast/sulfide stocks, sulfur steaming on three successive days, optional vessel example, receiving pH 3 and post-inoculation 100 kPa pressure. Keep nitrogen stock handling distinct and pressure reference unknown. No receiving cycle numbers are recovered from JCM 692.
+
+### Mixtures, medium state and claims
+
+scope: supported. Targets: CultureMech:010119.
+
+Yeast extract supports COMPLEX/UNDEFINED; the liquid medium can contain sulfur powder without becoming an agar medium. Archaea is the retained collection classification, not a newly inferred strain-growth result. Generic microbial cultivation and source titles do not establish growth temperature, yield or physiology.
+
+### Historical mapping and absent amount attachments
+
+provenance: concern. Targets: CultureMech:010119.
+
+Neither receiving layer attaches claim-level amount evidence. Current CHEBI-based secondary correspondence is limited to the asserted current key; it does not authenticate legacy sulfur001072. The initial June grounding event occurs before earlier-dated events in array order, but timestamps are valid and array position is not a causal chronology. Preserve all events and record limitations explicitly.
+
+## Findings
+
+### f1: Resazurin mass and salt-base volume have gram-rate units
+
+blocker / open / confirmed; issue key: culturemech.010119.indicator-stock-units.
+
+Both layers encode source resazurin 1 mg as 1 G_PER_L and the 1 L salt-base dose as 1 G_PER_L. Other source batch masses have no established measured final receiving denominator.
+
+### f2: Salt composition and staged preparation are missing
+
+major / open / confirmed; issue key: culturemech.010119.salt-stock-and-preparation.
+
+The sole Unknown solution is empty, and both layers omit all receiving and stock preparation. The referenced M711 dependency itself flattens water/milligram stock rows into main-level gram rates.
+
+### f3: Historical sulfur mapping and borax formula need bounded clarification
+
+minor / open / confirmed; issue key: culturemech.010119.legacy-and-borax-correspondence.
+
+Legacy sulfur001072 is absent from the complete pinned current label index but historically unresolved. The salt dependency borax label matches its named term while the current formula/structure differs from the printed source formula; this is an unresolved correspondence, not a confirmed wrong-ID diagnosis.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore literal milligram and liter batch units with evidence. Preserve source mass and stock scopes; do not infer final-medium rates from stock-water input.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Recover only the named salt subsection and the receiving source stages, with exact input units, pH scope, gas ratio and example qualifiers. Keep unknown percentage bases, stock aliquots, cycle and pressure reference explicit; no parent-medium or variant transfer.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Seek historical sulfur-key evidence and resolve borax source-to-ontology stoichiometry before any conversion or replacement. Retain elemental sulfur and explicit source hydrate wording; do not infer historical invalidity from current absence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch036/360/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch036/360/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml:1:id: CultureMech:010119<br>./data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml:1:id: CultureMech:010119<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch036/source-preflight-bound/360/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 30 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch036/source-preflight-bound/360/evidence-context-original.json; Complete frozen source context and full local objects | context_only | Frozen target/owner objects match freshly inspected records. Source interpretations are assessed against actual bound capture bytes; historical limitations remain separate. |
+| provider | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712; meta, components[0], comments[0] | supports | Exact receiving provider specifies gas ratio, separate yeast and sulfide stocks, staged sulfur treatment, receiving pH and post-inoculation pressure. No measured final volume or numerical autoclave cycle is supplied. |
+| salt-primary | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=691; Salt base solution subsection and immediately following pH sentence only | supports | Only the eleven salts, water input and stock adjustment transfer from JCM 691. Its aerobic parent medium, yeast/sulfur handling and default cycle are not independent evidence for the unavailable JCM 692 recipe. |
+| salt-provider | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711; components[1] and comments[1] only | supports | Provider identifies the named salt base. Preserve stock units and pH separately from the receiving anaerobic formulation; exclude parent medium and variant-child context. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch036/360/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi16526 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:16526 resolves to carbon dioxide. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi18276 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18276; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:18276 resolves to dihydrogen. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi33403 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33403; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:33403 resolves to elemental sulfur. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml; data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 12, "timestamp_issues": []}, {"input": "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml", "events": 11, "timestamp_issues": []}] |
+| jcm692-attempt | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=692; Preserved exact public retrieval result | context_only | Exact JCM 692 returned HTTP 200 with Nothing found and no recipe. Required receiving-primary verification remains unavailable; the exact TOGO receiving source and JCM 691 salt subsection are available separately. |
+| mediadiveJ692-attempt | https://mediadive.dsmz.de/rest/medium/J692; Preserved exact public retrieval result | context_only | This optional MediaDive J692 attempt returned no usable recipe; preserve its actual failure independently of the successful TOGO and scoped parent captures. |
+| mediadiveJ692retry-attempt | https://mediadive.dsmz.de/rest/medium/J692; Preserved exact public retrieval result | context_only | This optional MediaDive J692 attempt returned no usable recipe; preserve its actual failure independently of the successful TOGO and scoped parent captures. |
+| chebi131366 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131366; Exact OLS label, empirical formula, mass and structural annotations | supports | The borax formula/structure tension and variable vanadyl hydration are scoped to source interpretation, not proof of a replacement identity. |
+| chebi87020 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_87020; Exact OLS label, empirical formula, mass and structural annotations | supports | The borax formula/structure tension and variable vanadyl hydration are scoped to source interpretation, not proof of a replacement identity. |
+| writer-0 | src/culturemech/import/togo_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current import/cleanup code and historical defaults are separately read. Unit fallback and empty-stock migration do not justify treating a liter as a gram or moving parent-stock quantities into the receiving medium. Preserve append-only history, including its nonchronological array order, and append any later authorized clarification. |
+| writer-1 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current import/cleanup code and historical defaults are separately read. Unit fallback and empty-stock migration do not justify treating a liter as a gram or moving parent-stock quantities into the receiving medium. Preserve append-only history, including its nonchronological array order, and append any later authorized clarification. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Required historical correspondence of retained sulfur MediaIngredientMech:001072 is not established by the available pinned label-index snapshot. Current exact-key absence is confirmed; it does not prove that the historical assertion was invalid.
+- Exact JCM 692 returned HTTP 200 with Nothing found and no recipe. Required receiving-primary verification remains unavailable; the exact TOGO receiving source and JCM 691 salt subsection are available separately.
+- This optional MediaDive J692 attempt returned no usable recipe; preserve its actual failure independently of the successful TOGO and scoped parent captures.
+- This optional MediaDive J692 attempt returned no usable recipe; preserve its actual failure independently of the successful TOGO and scoped parent captures.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T194932Z-culturemech-010119-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: anaerobic_sulfolobales_medium (CultureMech:010119)'
+started_at: '2026-10-21T19:40:01Z'
+finished_at: '2026-10-21T19:49:32Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: TOGO M712 documents an anaerobic receiving medium with a 1 L salt-base dose,
+  1 mg resazurin and staged preparation, while both local layers record gram-rate
+  units and an empty stock. JCM 692 currently has no recipe; historical sulfur legacy
+  linkage remains unresolved separately from the completed current negative lookup.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml
+    sha256: b8fa63ef4f63faac706225ff33779ce284350a754b6adf5472eaa3a07aadceab
+    role: target
+  - path: data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml
+    sha256: fc54d1027bb0f9f7b68ba69aec99a97d26205bdf0eb9708fe6b723ec8d787913
+    role: context
+  - path: data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml
+    sha256: 8097a301a30afd5ffadb31230dea511cdf598b502c57c38db71898caa206d7a9
+    role: context
+  - path: data/normalized_yaml/specialized/anaerobic_sulfolobales_medium.yaml
+    sha256: 53225e6e8e84e01f1e0156862c6a1a28be069bb0387c5f3997d9d7e578ae36e9
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 360; batch 036 item 10 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-five task batches
+    contain 350 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 353 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:010119
+targets:
+- target_id: CultureMech:010119
+  path: data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml
+  label: anaerobic_sulfolobales_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch036/360/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch036/360/strict.tsv"
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:010119
+- check_id: legacy-historical-correspondence
+  name: Required source-scope verification
+  required: true
+  status: unavailable
+  summary: Required historical correspondence of retained sulfur MediaIngredientMech:001072
+    is not established by the available pinned label-index snapshot. Current exact-key
+    absence is confirmed; it does not prove that the historical assertion was invalid.
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - record
+  - owner-0
+  - mim
+- check_id: jcm692-source-access
+  name: 'Exact source content access: jcm692'
+  required: true
+  status: unavailable
+  summary: Exact JCM 692 returned HTTP 200 with Nothing found and no recipe. Required
+    receiving-primary verification remains unavailable; the exact TOGO receiving source
+    and JCM 691 salt subsection are available separately.
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - jcm692-attempt
+- check_id: mediadiveJ692-source-access
+  name: 'Exact source content access: mediadiveJ692'
+  required: false
+  status: unavailable
+  summary: This optional MediaDive J692 attempt returned no usable recipe; preserve
+    its actual failure independently of the successful TOGO and scoped parent captures.
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - mediadiveJ692-attempt
+- check_id: mediadiveJ692retry-source-access
+  name: 'Exact source content access: mediadiveJ692retry'
+  required: false
+  status: unavailable
+  summary: This optional MediaDive J692 attempt returned no usable recipe; preserve
+    its actual failure independently of the successful TOGO and scoped parent captures.
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - mediadiveJ692retry-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T19:49:31Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T19:49:31Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:41:32.408620Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch036/360/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:41:36.602875Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch036/360/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:41:42.203340Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:41:45.157229Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T19:49:31Z'
+  support: supports
+  summary: './data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml:1:id:
+    CultureMech:010119
+
+    ./data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml:1:id: CultureMech:010119
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/source-preflight-bound/360/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T19:49:31Z'
+  support: supports
+  summary: 30 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: c7fc5512416cdfb4c5bd8540e44005b7c149b6894d27e50efcea6737993d2919
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/source-preflight-bound/360/evidence-context-original.json
+  locator: Complete frozen source context and full local objects
+  accessed_at: '2026-10-21T19:49:31Z'
+  support: context_only
+  summary: Frozen target/owner objects match freshly inspected records. Source interpretations
+    are assessed against actual bound capture bytes; historical limitations remain
+    separate.
+  snapshot_sha256: 17d9b3713dd2ef3817e224c70733dddb72bfeb9fe3d13ff178425cb52eb17212
+- evidence_id: provider
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712
+  locator: meta, components[0], comments[0]
+  accessed_at: '2026-10-21T19:24:03.489043Z'
+  support: supports
+  summary: Exact receiving provider specifies gas ratio, separate yeast and sulfide
+    stocks, staged sulfur treatment, receiving pH and post-inoculation pressure. No
+    measured final volume or numerical autoclave cycle is supplied.
+  snapshot_sha256: a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1
+- evidence_id: salt-primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=691
+  locator: Salt base solution subsection and immediately following pH sentence only
+  accessed_at: '2026-10-21T11:30:40.417983Z'
+  support: supports
+  summary: Only the eleven salts, water input and stock adjustment transfer from JCM
+    691. Its aerobic parent medium, yeast/sulfur handling and default cycle are not
+    independent evidence for the unavailable JCM 692 recipe.
+  snapshot_sha256: d3293b3a572a899b1971e8da7046252ff521df300921ac067ec906e2cf51e788
+- evidence_id: salt-provider
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711
+  locator: components[1] and comments[1] only
+  accessed_at: '2026-10-21T11:30:39.095461Z'
+  support: supports
+  summary: Provider identifies the named salt base. Preserve stock units and pH separately
+    from the receiving anaerobic formulation; exclude parent medium and variant-child
+    context.
+  snapshot_sha256: 21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/360/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T19:49:31Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: ea005a78fce9d961932aed9333c23f8840e5ec5a9fa8554ee2dfd9889b254934
+- evidence_id: chebi16526
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.337128Z'
+  support: supports
+  summary: CHEBI:16526 resolves to carbon dioxide. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 19b976653e14322f23a21b90b537bfcd19bb4e73d8d0de96446a25888cd3caf6
+- evidence_id: chebi17997
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.385647Z'
+  support: supports
+  summary: CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi18276
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18276
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.615173Z'
+  support: supports
+  summary: CHEBI:18276 resolves to dihydrogen. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 47a32d9cfe41e3759385a0e4e002e9fa208fe1511d84e3d0d1f9f1ca9ce6e86d
+- evidence_id: chebi33403
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33403
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:26:28.748668Z'
+  support: supports
+  summary: CHEBI:33403 resolves to elemental sulfur. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: b349493be5d8cb371d1e71751510f9205880ab9d0a14f560191e05606c127a60
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T19:49:31Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:8806":
+    [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806",
+    "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml; data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T19:49:31Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 12, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml", "events": 11,
+    "timestamp_issues": []}]'
+- evidence_id: jcm692-attempt
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=692
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:24:04.890690Z'
+  support: context_only
+  summary: Exact JCM 692 returned HTTP 200 with Nothing found and no recipe. Required
+    receiving-primary verification remains unavailable; the exact TOGO receiving source
+    and JCM 691 salt subsection are available separately.
+  snapshot_sha256: 8a9fd7ff4cc9f3a8d4fb7564fac2e4083304e069f0fd21d696817fd96b772ad8
+- evidence_id: mediadiveJ692-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J692
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:24:00.842718Z'
+  support: context_only
+  summary: This optional MediaDive J692 attempt returned no usable recipe; preserve
+    its actual failure independently of the successful TOGO and scoped parent captures.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadiveJ692retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J692
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:24:47.611214Z'
+  support: context_only
+  summary: This optional MediaDive J692 attempt returned no usable recipe; preserve
+    its actual failure independently of the successful TOGO and scoped parent captures.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: chebi131366
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131366
+  locator: Exact OLS label, empirical formula, mass and structural annotations
+  accessed_at: '2026-10-21T11:30:39.793244Z'
+  support: supports
+  summary: The borax formula/structure tension and variable vanadyl hydration are
+    scoped to source interpretation, not proof of a replacement identity.
+  snapshot_sha256: 1ea4119e009b41d70522d7bdea7b79b0d2a0c8d774d32606f281ade14be31d5d
+- evidence_id: chebi87020
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_87020
+  locator: Exact OLS label, empirical formula, mass and structural annotations
+  accessed_at: '2026-10-21T11:31:25.172458Z'
+  support: supports
+  summary: The borax formula/structure tension and variable vanadyl hydration are
+    scoped to source interpretation, not proof of a replacement identity.
+  snapshot_sha256: f95552b25b2f452d828c90399dc0d24f7f2be2015694c824fac408e0ea353660
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:49:31Z'
+  support: context_only
+  summary: Current import/cleanup code and historical defaults are separately read.
+    Unit fallback and empty-stock migration do not justify treating a liter as a gram
+    or moving parent-stock quantities into the receiving medium. Preserve append-only
+    history, including its nonchronological array order, and append any later authorized
+    clarification.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:49:31Z'
+  support: context_only
+  summary: Current import/cleanup code and historical defaults are separately read.
+    Unit fallback and empty-stock migration do not justify treating a liter as a gram
+    or moving parent-stock quantities into the receiving medium. Preserve append-only
+    history, including its nonchronological array order, and append any later authorized
+    clarification.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 32 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Receiving: Resazurin\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM712original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\",\n \
+    \       \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Resazurin\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"source_batch_amount\"\
+    : 1,\n      \"source_unit\": \"mg\",\n      \"final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"The source milligram amount is not a gram rate.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\": \"Receiving:\
+    \ Na2S・9H2O\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM712original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\",\n \
+    \       \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2S・9H2O\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"source_batch_amount\"\
+    : 0.5,\n      \"source_unit\": \"g\",\n      \"final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Literal batch masses are supported, but neither the salt-base\
+    \ dose nor stock-water input establishes a measured final receiving volume. Preserve\
+    \ source stage rather than an unqualified final g/L assertion.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q3\",\n    \"component_or_context\": \"Receiving: Sulfur\
+    \ (powder)\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"unsupported\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM712original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\",\n \
+    \       \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Sulfur (powder)\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"source_batch_amount\"\
+    : 1,\n      \"source_unit\": \"g\",\n      \"final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Literal batch masses are supported, but neither the salt-base\
+    \ dose nor stock-water input establishes a measured final receiving volume. Preserve\
+    \ source stage rather than an unqualified final g/L assertion.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q4\",\n    \"component_or_context\": \"Receiving: Yeast\
+    \ extract (BD-Difco)\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM712original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\",\n \
+    \       \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Yeast extract (BD-Difco)\\\",\\n          \\\"\
+    volume\\\": 0.5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\"\n     \
+    \ }\n    ],\n    \"proposed_source_representation\": {\n      \"source_batch_amount\"\
+    : 0.5,\n      \"source_unit\": \"g\",\n      \"final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Literal batch masses are supported, but neither the salt-base\
+    \ dose nor stock-water input establishes a measured final receiving volume. Preserve\
+    \ source stage rather than an unqualified final g/L assertion.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q5\",\n    \"component_or_context\": \"Receiving: Carbon\
+    \ dioxide gas\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM712original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\",\n \
+    \       \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Carbon dioxide gas\\\"\",\n        \"snapshot_sha256\"\
+    : \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\"\n     \
+    \ }\n    ],\n    \"proposed_source_representation\": {\n      \"source_batch_amount\"\
+    : null,\n      \"source_unit\": null,\n      \"final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Gas amounts are not numerically specified; retain the separate\
+    \ explicit mixture-ratio and atmosphere instructions.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q6\",\n    \"component_or_context\": \"Receiving: N2\",\n    \"decision\"\
+    : \"not_quantified\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[5].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"variable\",\n          \"unit\": \"VARIABLE\"\n        },\n        \"decision\"\
+    : \"not_quantified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM712original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\",\n \
+    \       \"source_locator\": \"$.components[0].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"N2\\\"\",\n        \"snapshot_sha256\": \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"source_batch_amount\"\
+    : null,\n      \"source_unit\": null,\n      \"final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Gas amounts are not numerically specified; retain the separate\
+    \ explicit mixture-ratio and atmosphere instructions.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q7\",\n    \"component_or_context\": \"Receiving: Hydrogen gas\",\n    \"\
+    decision\": \"not_quantified\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[6].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n      \
+    \  },\n        \"decision\": \"not_quantified\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM712original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\",\n \
+    \       \"source_locator\": \"$.components[0].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Hydrogen gas\\\"\",\n        \"snapshot_sha256\"\
+    : \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\"\n     \
+    \ }\n    ],\n    \"proposed_source_representation\": {\n      \"source_batch_amount\"\
+    : null,\n      \"source_unit\": null,\n      \"final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Gas amounts are not numerically specified; retain the separate\
+    \ explicit mixture-ratio and atmosphere instructions.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q8\",\n    \"component_or_context\": \"Salt-base receiving dose\",\n    \"\
+    decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\",\n        \"field_path\"\
+    : \"solutions[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"\
+    correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM712original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\",\n \
+    \       \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Salt base solution (see Medium [M711])\\\",\\\
+    n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n       \
+    \ \"snapshot_sha256\": \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"stock_dose_L\"\
+    : 1,\n      \"receiving_final_volume_L\": null\n    },\n    \"rationale\": \"\
+    Source explicitly supplies 1 L of prepared salt base, not 1 G_PER_L. This dose\
+    \ does not turn individual source stock masses into final-medium rates.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\": \"Salt stock:\
+    \ Distilled water\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n        \"\
+    field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM711original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711\",\n \
+    \       \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"stock_batch_amount\"\
+    : 1,\n      \"stock_batch_unit\": \"L\",\n      \"reagent_strength\": null,\n\
+    \      \"reagent_unit\": null,\n      \"stock_final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Add only the named salt-stock constituent. The dependency\
+    \ currently flattens stock amounts at main level and labels water/milligram inputs\
+    \ as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight\
+    \ conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose\
+    \ remains unspecified.\"\n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\"\
+    : \"Salt stock: MgSO4・7H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n        \"\
+    field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM711original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711\",\n \
+    \       \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgSO4・7H2O\\\",\\n          \\\"volume\\\": 0.25,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"stock_batch_amount\"\
+    : 0.25,\n      \"stock_batch_unit\": \"g\",\n      \"reagent_strength\": null,\n\
+    \      \"reagent_unit\": null,\n      \"stock_final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Add only the named salt-stock constituent. The dependency\
+    \ currently flattens stock amounts at main level and labels water/milligram inputs\
+    \ as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight\
+    \ conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose\
+    \ remains unspecified.\"\n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"component_or_context\"\
+    : \"Salt stock: CaCl2・2H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n        \"\
+    field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM711original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711\",\n \
+    \       \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaCl2・2H2O\\\",\\n          \\\"volume\\\": 0.07,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"stock_batch_amount\"\
+    : 0.07,\n      \"stock_batch_unit\": \"g\",\n      \"reagent_strength\": null,\n\
+    \      \"reagent_unit\": null,\n      \"stock_final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Add only the named salt-stock constituent. The dependency\
+    \ currently flattens stock amounts at main level and labels water/milligram inputs\
+    \ as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight\
+    \ conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose\
+    \ remains unspecified.\"\n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"component_or_context\"\
+    : \"Salt stock: KH2PO4\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n        \"\
+    field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.28\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM711original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711\",\n \
+    \       \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KH2PO4\\\",\\n          \\\"volume\\\": 0.28,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"stock_batch_amount\"\
+    : 0.28,\n      \"stock_batch_unit\": \"g\",\n      \"reagent_strength\": null,\n\
+    \      \"reagent_unit\": null,\n      \"stock_final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Add only the named salt-stock constituent. The dependency\
+    \ currently flattens stock amounts at main level and labels water/milligram inputs\
+    \ as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight\
+    \ conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose\
+    \ remains unspecified.\"\n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"component_or_context\"\
+    : \"Salt stock: Na2MoO4・2H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n        \"\
+    field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM711original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711\",\n \
+    \       \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4・2H2O\\\",\\n          \\\"volume\\\":\
+    \ 0.03,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\":\
+    \ \"21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a\"\n     \
+    \ }\n    ],\n    \"proposed_source_representation\": {\n      \"stock_batch_amount\"\
+    : 0.03,\n      \"stock_batch_unit\": \"mg\",\n      \"reagent_strength\": null,\n\
+    \      \"reagent_unit\": null,\n      \"stock_final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Add only the named salt-stock constituent. The dependency\
+    \ currently flattens stock amounts at main level and labels water/milligram inputs\
+    \ as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight\
+    \ conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose\
+    \ remains unspecified.\"\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"component_or_context\"\
+    : \"Salt stock: MnCl2・4H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n        \"\
+    field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.8\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM711original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711\",\n \
+    \       \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MnCl2・4H2O\\\",\\n          \\\"volume\\\": 1.8,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"stock_batch_amount\"\
+    : 1.8,\n      \"stock_batch_unit\": \"mg\",\n      \"reagent_strength\": null,\n\
+    \      \"reagent_unit\": null,\n      \"stock_final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Add only the named salt-stock constituent. The dependency\
+    \ currently flattens stock amounts at main level and labels water/milligram inputs\
+    \ as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight\
+    \ conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose\
+    \ remains unspecified.\"\n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"component_or_context\"\
+    : \"Salt stock: ZnSO4・7H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n        \"\
+    field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.22\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM711original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711\",\n \
+    \       \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"ZnSO4・7H2O\\\",\\n          \\\"volume\\\": 0.22,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"stock_batch_amount\"\
+    : 0.22,\n      \"stock_batch_unit\": \"mg\",\n      \"reagent_strength\": null,\n\
+    \      \"reagent_unit\": null,\n      \"stock_final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Add only the named salt-stock constituent. The dependency\
+    \ currently flattens stock amounts at main level and labels water/milligram inputs\
+    \ as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight\
+    \ conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose\
+    \ remains unspecified.\"\n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"component_or_context\"\
+    : \"Salt stock: CuCl2・2H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n        \"\
+    field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM711original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711\",\n \
+    \       \"source_locator\": \"$.components[1].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CuCl2・2H2O\\\",\\n          \\\"volume\\\": 0.05,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"stock_batch_amount\"\
+    : 0.05,\n      \"stock_batch_unit\": \"mg\",\n      \"reagent_strength\": null,\n\
+    \      \"reagent_unit\": null,\n      \"stock_final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Add only the named salt-stock constituent. The dependency\
+    \ currently flattens stock amounts at main level and labels water/milligram inputs\
+    \ as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight\
+    \ conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose\
+    \ remains unspecified.\"\n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"component_or_context\"\
+    : \"Salt stock: (NH4)2SO4\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n        \"\
+    field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM711original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711\",\n \
+    \       \"source_locator\": \"$.components[1].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"(NH4)2SO4\\\",\\n          \\\"volume\\\": 1.3,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"stock_batch_amount\"\
+    : 1.3,\n      \"stock_batch_unit\": \"g\",\n      \"reagent_strength\": null,\n\
+    \      \"reagent_unit\": null,\n      \"stock_final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Add only the named salt-stock constituent. The dependency\
+    \ currently flattens stock amounts at main level and labels water/milligram inputs\
+    \ as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight\
+    \ conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose\
+    \ remains unspecified.\"\n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"component_or_context\"\
+    : \"Salt stock: CoSO4・7H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n        \"\
+    field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM711original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711\",\n \
+    \       \"source_locator\": \"$.components[1].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CoSO4・7H2O\\\",\\n          \\\"volume\\\": 0.01,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"stock_batch_amount\"\
+    : 0.01,\n      \"stock_batch_unit\": \"mg\",\n      \"reagent_strength\": null,\n\
+    \      \"reagent_unit\": null,\n      \"stock_final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Add only the named salt-stock constituent. The dependency\
+    \ currently flattens stock amounts at main level and labels water/milligram inputs\
+    \ as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight\
+    \ conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose\
+    \ remains unspecified.\"\n  },\n  {\n    \"quantity_id\": \"q19\",\n    \"component_or_context\"\
+    : \"Salt stock: VOSO4・xH2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n        \"\
+    field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM711original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711\",\n \
+    \       \"source_locator\": \"$.components[1].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"VOSO4・xH2O\\\",\\n          \\\"volume\\\": 0.03,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"stock_batch_amount\"\
+    : 0.03,\n      \"stock_batch_unit\": \"mg\",\n      \"reagent_strength\": null,\n\
+    \      \"reagent_unit\": null,\n      \"stock_final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Add only the named salt-stock constituent. The dependency\
+    \ currently flattens stock amounts at main level and labels water/milligram inputs\
+    \ as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight\
+    \ conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose\
+    \ remains unspecified.\"\n  },\n  {\n    \"quantity_id\": \"q20\",\n    \"component_or_context\"\
+    : \"Salt stock: Na2B4O7・10H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n        \"\
+    field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM711original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711\",\n \
+    \       \"source_locator\": \"$.components[1].items[11]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2B4O7・10H2O\\\",\\n          \\\"volume\\\"\
+    : 4.5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a\"\n      }\n\
+    \    ],\n    \"proposed_source_representation\": {\n      \"stock_batch_amount\"\
+    : 4.5,\n      \"stock_batch_unit\": \"mg\",\n      \"reagent_strength\": null,\n\
+    \      \"reagent_unit\": null,\n      \"stock_final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Add only the named salt-stock constituent. The dependency\
+    \ currently flattens stock amounts at main level and labels water/milligram inputs\
+    \ as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight\
+    \ conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose\
+    \ remains unspecified.\"\n  },\n  {\n    \"quantity_id\": \"q21\",\n    \"component_or_context\"\
+    : \"Salt stock: H2SO4\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n        \"\
+    field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM711original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711\",\n \
+    \       \"source_locator\": \"$.components[1].items[12]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"H2SO4\\\",\\n          \\\"conc_value\\\": 10,\\\
+    n          \\\"conc_unit\\\": \\\"N\\\"\",\n        \"snapshot_sha256\": \"21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"stock_batch_amount\"\
+    : null,\n      \"stock_batch_unit\": null,\n      \"reagent_strength\": 10,\n\
+    \      \"reagent_unit\": \"N\",\n      \"stock_final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Add only the named salt-stock constituent. The dependency\
+    \ currently flattens stock amounts at main level and labels water/milligram inputs\
+    \ as G_PER_L. Preserve source hydrate and exact mass units, with no fixed molecular-weight\
+    \ conversion for xH2O. For sulfuric acid, 10 N is a reagent strength and its dose\
+    \ remains unspecified.\"\n  },\n  {\n    \"quantity_id\": \"q22\",\n    \"component_or_context\"\
+    : \"Receiving gas ratio\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM712original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\",\n \
+    \       \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"H2--CO2 (4:1, v/v)\",\n        \"snapshot_sha256\": \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:03.489043Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"H2_CO2_ratio\": [\n      \
+    \  4,\n        1\n      ],\n      \"basis\": \"v/v\",\n      \"stages\": [\n \
+    \       \"salt-base autoclaving\",\n        \"distribution\",\n        \"post-inoculation\
+    \ pressurization\"\n      ]\n    },\n    \"rationale\": \"Preserve the exact named\
+    \ stage, example qualifier and known unit. Bare percentages, pressure reference\
+    \ and unprovided doses remain unknown. Neither the source title nor preparation\
+    \ is an organism-specific growth claim.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q23\",\n    \"component_or_context\": \"Separate yeast stock\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Salt base solution (see Medium [M711])\",\n\
+    \            \"composition\": [],\n            \"notes\": \"Cross-reference to\
+    \ Medium M711\",\n            \"concentration\": {\n              \"value\": \"\
+    1\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"name\"\
+    : \"Unknown solution\"\n          }\n        ],\n        \"decision\": \"add\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Salt base solution (see Medium [M711])\",\n\
+    \            \"composition\": [],\n            \"notes\": \"Cross-reference to\
+    \ Medium M711\",\n            \"concentration\": {\n              \"value\": \"\
+    1\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"name\"\
+    : \"Unknown solution\"\n          }\n        ],\n        \"decision\": \"add\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM712original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"yeast extract (as a 10% solution)\",\n        \"snapshot_sha256\": \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:03.489043Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_percent\": 10,\n   \
+    \   \"basis\": null,\n      \"aliquot\": null,\n      \"atmosphere\": \"nitrogen\"\
+    \n    },\n    \"rationale\": \"Preserve the exact named stage, example qualifier\
+    \ and known unit. Bare percentages, pressure reference and unprovided doses remain\
+    \ unknown. Neither the source title nor preparation is an organism-specific growth\
+    \ claim.\"\n  },\n  {\n    \"quantity_id\": \"q24\",\n    \"component_or_context\"\
+    : \"Separate sulfide stock\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Salt base solution (see Medium [M711])\",\n\
+    \            \"composition\": [],\n            \"notes\": \"Cross-reference to\
+    \ Medium M711\",\n            \"concentration\": {\n              \"value\": \"\
+    1\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"name\"\
+    : \"Unknown solution\"\n          }\n        ],\n        \"decision\": \"add\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Salt base solution (see Medium [M711])\",\n\
+    \            \"composition\": [],\n            \"notes\": \"Cross-reference to\
+    \ Medium M711\",\n            \"concentration\": {\n              \"value\": \"\
+    1\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"name\"\
+    : \"Unknown solution\"\n          }\n        ],\n        \"decision\": \"add\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM712original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"stock solution (5%, autoclaved under a N2 atmosphere)\",\n        \"snapshot_sha256\"\
+    : \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\",\n    \
+    \    \"accessed_at\": \"2026-10-21T19:24:03.489043Z\"\n      }\n    ],\n    \"\
+    proposed_source_representation\": {\n      \"stock_percent\": 5,\n      \"basis\"\
+    : null,\n      \"aliquot\": null,\n      \"atmosphere\": \"nitrogen\"\n    },\n\
+    \    \"rationale\": \"Preserve the exact named stage, example qualifier and known\
+    \ unit. Bare percentages, pressure reference and unprovided doses remain unknown.\
+    \ Neither the source title nor preparation is an organism-specific growth claim.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q25\",\n    \"component_or_context\": \"Sulfur\
+    \ steaming duration\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM712original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\",\n \
+    \       \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Steam sulfur for 3 hr on each of 3 successive days.\",\n        \"snapshot_sha256\"\
+    : \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\",\n    \
+    \    \"accessed_at\": \"2026-10-21T19:24:03.489043Z\"\n      }\n    ],\n    \"\
+    proposed_source_representation\": {\n      \"duration_hr_each_day\": 3,\n    \
+    \  \"successive_days\": 3\n    },\n    \"rationale\": \"Preserve the exact named\
+    \ stage, example qualifier and known unit. Bare percentages, pressure reference\
+    \ and unprovided doses remain unknown. Neither the source title nor preparation\
+    \ is an organism-specific growth claim.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q26\",\n    \"component_or_context\": \"Example culture aliquot\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM712original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\",\n \
+    \       \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"20 ml medium\",\n        \"snapshot_sha256\": \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:03.489043Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"example_medium_ml\": 20,\n\
+    \      \"example_only\": true\n    },\n    \"rationale\": \"Preserve the exact\
+    \ named stage, example qualifier and known unit. Bare percentages, pressure reference\
+    \ and unprovided doses remain unknown. Neither the source title nor preparation\
+    \ is an organism-specific growth claim.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q27\",\n    \"component_or_context\": \"Example sulfur amount\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM712original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\",\n \
+    \       \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"0.02 g sulfur\",\n        \"snapshot_sha256\": \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:03.489043Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"example_sulfur_g\": 0.02,\n\
+    \      \"paired_medium_ml\": 20,\n      \"example_only\": true\n    },\n    \"\
+    rationale\": \"Preserve the exact named stage, example qualifier and known unit.\
+    \ Bare percentages, pressure reference and unprovided doses remain unknown. Neither\
+    \ the source title nor preparation is an organism-specific growth claim.\"\n \
+    \ },\n  {\n    \"quantity_id\": \"q28\",\n    \"component_or_context\": \"Example\
+    \ bottle capacity\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM712original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\",\n \
+    \       \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"120ml serum bottle\",\n        \"snapshot_sha256\": \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:03.489043Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"example_vessel_capacity_ml\"\
+    : 120,\n      \"example_only\": true\n    },\n    \"rationale\": \"Preserve the\
+    \ exact named stage, example qualifier and known unit. Bare percentages, pressure\
+    \ reference and unprovided doses remain unknown. Neither the source title nor\
+    \ preparation is an organism-specific growth claim.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q29\",\n    \"component_or_context\": \"Receiving readjustment pH\",\n   \
+    \ \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\",\n        \"field_path\"\
+    : \"ph_value\",\n        \"stored\": null,\n        \"decision\": \"add\"\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM712original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"readjust pH to 3.0\",\n        \"snapshot_sha256\": \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:03.489043Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"receiving_pH\": 3.0,\n   \
+    \   \"stage\": \"after sulfide addition\"\n    },\n    \"rationale\": \"Preserve\
+    \ the exact named stage, example qualifier and known unit. Bare percentages, pressure\
+    \ reference and unprovided doses remain unknown. Neither the source title nor\
+    \ preparation is an organism-specific growth claim.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q30\",\n    \"component_or_context\": \"Post-inoculation pressure\",\n   \
+    \ \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null,\n        \"decision\": \"\
+    add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM712original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\",\n \
+    \       \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Pressurize the inoculated culture vessels to 100 kPa\",\n        \"snapshot_sha256\"\
+    : \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\",\n    \
+    \    \"accessed_at\": \"2026-10-21T19:24:03.489043Z\"\n      }\n    ],\n    \"\
+    proposed_source_representation\": {\n      \"pressure_kPa\": 100,\n      \"reference\"\
+    : \"unspecified gauge versus absolute\",\n      \"stage\": \"after inoculation\"\
+    \n    },\n    \"rationale\": \"Preserve the exact named stage, example qualifier\
+    \ and known unit. Bare percentages, pressure reference and unprovided doses remain\
+    \ unknown. Neither the source title nor preparation is an organism-specific growth\
+    \ claim.\"\n  },\n  {\n    \"quantity_id\": \"q31\",\n    \"component_or_context\"\
+    : \"Salt-stock adjustment pH\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].preparation_notes\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\",\n     \
+    \   \"field_path\": \"solutions[0].preparation_notes\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM711original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M711\",\n \
+    \       \"source_locator\": \"$.comments[1].comment\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 2.5 with 10 N H2SO4.\",\n        \"snapshot_sha256\": \"21e1c43c188e1fd1b950b66e33c5a4f5d698a04261d62fce00a810f953e10b3a\"\
+    ,\n        \"accessed_at\": \"2026-10-21T11:30:39.095461Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_pH\": 2.5,\n      \"\
+    H2SO4_strength_N\": 10,\n      \"dose\": null\n    },\n    \"rationale\": \"Preserve\
+    \ the exact named stage, example qualifier and known unit. Bare percentages, pressure\
+    \ reference and unprovided doses remain unknown. Neither the source title nor\
+    \ preparation is an organism-specific growth claim.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q32\",\n    \"component_or_context\": \"Autoclave cycle unavailable for receiving\
+    \ recipe\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null,\n   \
+    \     \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null,\n   \
+    \     \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n   \
+    \   {\n        \"source_key\": \"togoM712original\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M712\",\n \
+    \       \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Autoclave Salt base solution\",\n        \"snapshot_sha256\": \"a871fbe005ec372979b9663dd061a656391f2f31ddd0d8dd946c76ab3412e0c1\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"temperature_C\"\
+    : null,\n      \"duration_min\": null\n    },\n    \"rationale\": \"The provider\
+    \ states autoclaving but no cycle numbers. Do not import the JCM 691 parent default\
+    \ into the unavailable JCM 692 recipe.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '6 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 6/7 primary
+    and 1/7 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Current CHEBI metadata does not authenticate the unresolved legacy sulfur key.
+    The source/ontology borax-formula tension in the named dependency is assessed
+    separately without declaring a replacement identifier.'
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi16526
+  - chebi17997
+  - chebi18276
+  - chebi33403
+  - chebi76209
+  - chebi8806
+  details: 'Instance coverage on a 0–100 percent scale, denominator 7: primary 85.71%;
+    secondary 14.29%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 23 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact receiving identity and dependency boundary
+  outcome: supported
+  summary: CultureMech:010119 and its archaea owner match TOGO M712 / JCM M692. The
+    specialized same-name CultureMech:015414 is excluded by stable ID and merge provenance.
+    M711 / JCM 691 contributes only its salt base; its sulfur-free child and aerobic
+    parent formulation are outside this review target. No phenotype or taxonomic growth
+    assertion follows from the title.
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - provider
+  - salt-primary
+  - salt-provider
+  - bound-context
+- assessment_id: forms
+  area: grounding
+  topic: Sulfur and stock hydrate specificity
+  outcome: concern
+  summary: Elemental sulfur CHEBI:33403 is compatible with source sulfur powder without
+    selecting an allotrope; no sulfur-atom replacement is proposed from an excluded
+    namesake. Explicit sulfide and salt hydrates retain their literal source forms.
+    JCM 691 Na2B4O7·10H2O is named by CHEBI:131366, but its current OLS formula 10H2O.H4B4O9.2Na
+    and mass 417.401 do not directly represent that written source stoichiometry.
+    Keep this as unresolved source-to-ontology formula correspondence, not an assumed
+    molecular-weight conversion or confirmed alternative ID. VOSO4·xH2O remains variable
+    hydration; CHEBI:87020 is contextual and not currently asserted in the transferred
+    local dependency.
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - provider
+  - salt-primary
+  - salt-provider
+  - chebi33403
+  - chebi76209
+  - chebi131366
+  - chebi87020
+- assessment_id: preparation
+  area: completeness
+  topic: Receiving versus stock preparation
+  outcome: concern
+  summary: Both receiving layers omit the salt-stock composition and pH 2.5/10 N acid
+    adjustment, receiving H2/CO2 4:1 v/v handling, separate yeast/sulfide stocks,
+    sulfur steaming on three successive days, optional vessel example, receiving pH
+    3 and post-inoculation 100 kPa pressure. Keep nitrogen stock handling distinct
+    and pressure reference unknown. No receiving cycle numbers are recovered from
+    JCM 692.
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - record
+  - owner-0
+  - provider
+  - salt-primary
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Mixtures, medium state and claims
+  outcome: supported
+  summary: Yeast extract supports COMPLEX/UNDEFINED; the liquid medium can contain
+    sulfur powder without becoming an agar medium. Archaea is the retained collection
+    classification, not a newly inferred strain-growth result. Generic microbial cultivation
+    and source titles do not establish growth temperature, yield or physiology.
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - record
+  - owner-0
+  - provider
+- assessment_id: provenance
+  area: provenance
+  topic: Historical mapping and absent amount attachments
+  outcome: concern
+  summary: Neither receiving layer attaches claim-level amount evidence. Current CHEBI-based
+    secondary correspondence is limited to the asserted current key; it does not authenticate
+    legacy sulfur001072. The initial June grounding event occurs before earlier-dated
+    events in array order, but timestamps are valid and array position is not a causal
+    chronology. Preserve all events and record limitations explicitly.
+  target_ids:
+  - CultureMech:010119
+  evidence_ids:
+  - record
+  - owner-0
+  - history-metadata
+  - mim
+  - writer-0
+  - writer-1
+findings:
+- finding_id: f1
+  issue_key: culturemech.010119.indicator-stock-units
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Resazurin mass and salt-base volume have gram-rate units
+  description: Both layers encode source resazurin 1 mg as 1 G_PER_L and the 1 L salt-base
+    dose as 1 G_PER_L. Other source batch masses have no established measured final
+    receiving denominator.
+  target_ids:
+  - CultureMech:010119
+  field_paths:
+  - ingredients[0].concentration
+  - solutions[0].concentration
+  - ingredients
+  evidence_ids:
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.010119.salt-stock-and-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Salt composition and staged preparation are missing
+  description: The sole Unknown solution is empty, and both layers omit all receiving
+    and stock preparation. The referenced M711 dependency itself flattens water/milligram
+    stock rows into main-level gram rates.
+  target_ids:
+  - CultureMech:010119
+  field_paths:
+  - solutions[0].composition
+  - preparation_steps
+  - ph_value
+  evidence_ids:
+  - provider
+  - salt-primary
+  - salt-provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.010119.legacy-and-borax-correspondence
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Historical sulfur mapping and borax formula need bounded clarification
+  description: Legacy sulfur001072 is absent from the complete pinned current label
+    index but historically unresolved. The salt dependency borax label matches its
+    named term while the current formula/structure differs from the printed source
+    formula; this is an unresolved correspondence, not a confirmed wrong-ID diagnosis.
+  target_ids:
+  - CultureMech:010119
+  field_paths:
+  - ingredients[2].mediaingredientmech_term
+  - solutions[0].composition
+  evidence_ids:
+  - mim
+  - salt-primary
+  - chebi131366
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 remains minor because the demonstrated issue is unresolved
+    historical/structural correspondence; no confirmed wrong supplied-form identifier
+    or quantitative conversion is asserted. The confirmed quantity and stock defects
+    are separately blocker/major.
+actions:
+- action_id: a1
+  description: Restore literal milligram and liter batch units with evidence. Preserve
+    source mass and stock scopes; do not infer final-medium rates from stock-water
+    input.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:010119
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Recover only the named salt subsection and the receiving source stages,
+    with exact input units, pH scope, gas ratio and example qualifiers. Keep unknown
+    percentage bases, stock aliquots, cycle and pressure reference explicit; no parent-medium
+    or variant transfer.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:010119
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Seek historical sulfur-key evidence and resolve borax source-to-ontology
+    stoichiometry before any conversion or replacement. Retain elemental sulfur and
+    explicit source hydrate wording; do not infer historical invalidity from current
+    absence.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:010119
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Required historical correspondence of retained sulfur MediaIngredientMech:001072
+  is not established by the available pinned label-index snapshot. Current exact-key
+  absence is confirmed; it does not prove that the historical assertion was invalid.
+- Exact JCM 692 returned HTTP 200 with Nothing found and no recipe. Required receiving-primary
+  verification remains unavailable; the exact TOGO receiving source and JCM 691 salt
+  subsection are available separately.
+- This optional MediaDive J692 attempt returned no usable recipe; preserve its actual
+  failure independently of the successful TOGO and scoped parent captures.
+- This optional MediaDive J692 attempt returned no usable recipe; preserve its actual
+  failure independently of the successful TOGO and scoped parent captures.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-036
+- generated-medium
+```

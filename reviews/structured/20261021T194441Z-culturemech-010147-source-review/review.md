@@ -1,0 +1,1500 @@
+# Source and formulation review: anaerobic_marine_broth_2216 (CultureMech:010147)
+
+- Review: 20261021T194441Z-culturemech-010147-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T19:39:58Z
+- Finished UTC: 2026-10-21T19:44:41Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+TOGO M742 supplies an anaerobic Marine Broth 2216 batch, but both local layers convert 1 L water and 0.5 mg resazurin to gram-per-liter values and omit the separately sterilized reducer stocks. Exact JCM 719 currently returns no recipe, so primary-source verification remains incomplete.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 357; batch 036 item 7 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-five task batches contain 350 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 353 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:010147 | data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml | generated | anaerobic_marine_broth_2216 |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:010147 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:010147 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch036/357/strict.tsv |
+| validate-terms | passed | True | CultureMech:010147 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:010147 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:010147 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: jcm719 | unavailable | True | CultureMech:010147 | Exact current JCM 719 returned HTTP 200 with Nothing found rather than a recipe. Required primary formulation and preparation verification remains unavailable; the exact TOGO provider content is separately assessed. |
+| Exact source content access: mediadiveJ719 | unavailable | False | CultureMech:010147 | This preserved optional MediaDive J719 attempt returned HTTP 503 and supplies no formulation. No passing canonical result authenticates it. |
+| Exact source content access: mediadiveJ719retry | unavailable | False | CultureMech:010147 | This preserved optional MediaDive J719 attempt returned HTTP 503 and supplies no formulation. No passing canonical result authenticates it. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:010147.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:010147.
+
+9 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "Main: Distilled water",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM742original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618",
+        "accessed_at": "2026-10-21T19:24:03.497206Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount": 1,
+      "batch_unit": "L",
+      "measured_final_volume_L": null
+    },
+    "rationale": "The source volume or milligram input is not a gram-per-liter rate."
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "Main: Resazurin",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM742original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"Resazurin\",\n          \"volume\": 0.5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618",
+        "accessed_at": "2026-10-21T19:24:03.497206Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount": 0.5,
+      "batch_unit": "mg",
+      "measured_final_volume_L": null
+    },
+    "rationale": "The source volume or milligram input is not a gram-per-liter rate."
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "Main: Na2S・9H2O",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM742original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"Na2S・9H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618",
+        "accessed_at": "2026-10-21T19:24:03.497206Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount": 0.5,
+      "batch_unit": "g",
+      "measured_final_volume_L": null
+    },
+    "rationale": "The source batch mass agrees numerically, but no measured final-volume denominator is stated. Retain the literal mass and its batch stage rather than claiming an exact final concentration."
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "Main: Marine broth 2216 (BD-Difco)",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "37.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "37.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM742original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"Marine broth 2216 (BD-Difco)\",\n          \"volume\": 37.4,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618",
+        "accessed_at": "2026-10-21T19:24:03.497206Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount": 37.4,
+      "batch_unit": "g",
+      "measured_final_volume_L": null
+    },
+    "rationale": "The source batch mass agrees numerically, but no measured final-volume denominator is stated. Retain the literal mass and its batch stage rather than claiming an exact final concentration."
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "Main: L--Cysteine・HCl・H2O",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM742original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742",
+        "source_locator": "$.components[0].items[4]",
+        "exact_source_quote": "\"component_name\": \"L--Cysteine・HCl・H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618",
+        "accessed_at": "2026-10-21T19:24:03.497206Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount": 0.5,
+      "batch_unit": "g",
+      "measured_final_volume_L": null
+    },
+    "rationale": "The source batch mass agrees numerically, but no measured final-volume denominator is stated. Retain the literal mass and its batch stage rather than claiming an exact final concentration."
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "Main: N2",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM742original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742",
+        "source_locator": "$.components[0].items[5]",
+        "exact_source_quote": "\"component_name\": \"N2\"",
+        "snapshot_sha256": "6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618",
+        "accessed_at": "2026-10-21T19:24:03.497206Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount": null,
+      "batch_unit": null,
+      "measured_final_volume_L": null
+    },
+    "rationale": "Nitrogen is a preparation atmosphere with no quantified amount or percentage."
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "L-cysteine hydrochloride monohydrate separate stock strength",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM742original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "5% L--cysteine・HCl・H2O solution",
+        "snapshot_sha256": "6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618",
+        "accessed_at": "2026-10-21T19:24:03.497206Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_strength_percent": 5,
+      "percentage_basis": null,
+      "receiving_aliquot_ml": null
+    },
+    "rationale": "The provider explicitly requires separate autoclaving under nitrogen and later aseptic anaerobic addition. Bare percent does not establish w/v, density or a calculated stock aliquot; the named batch mass is retained separately."
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "Sodium sulfide nonahydrate separate stock strength",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM742original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "5% Na2S・9H2O solution",
+        "snapshot_sha256": "6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618",
+        "accessed_at": "2026-10-21T19:24:03.497206Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_strength_percent": 5,
+      "percentage_basis": null,
+      "receiving_aliquot_ml": null
+    },
+    "rationale": "The provider explicitly requires separate autoclaving under nitrogen and later aseptic anaerobic addition. Bare percent does not establish w/v, density or a calculated stock aliquot; the named batch mass is retained separately."
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "Sterilization cycle and final-volume limits",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM742original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "seal with butyl rubber stoppers and autoclave",
+        "snapshot_sha256": "6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618",
+        "accessed_at": "2026-10-21T19:24:03.497206Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "temperature_C": null,
+      "duration_min": null,
+      "pH": null,
+      "measured_final_volume_L": null
+    },
+    "rationale": "Restore the documented preparation sequence, but do not invent a cycle, pH, or final-volume make-up from an unavailable JCM page."
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: supported. Targets: CultureMech:010147.
+
+5 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 5/6 primary and 2/6 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 6: primary 83.33%; secondary 33.33%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:010147.
+
+17 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact record, product and accession scope
+
+identity: supported. Targets: CultureMech:010147.
+
+CultureMech:010147 resolves to its single bacterial owner and the exact TOGO M742 / JCM M719 accession. Marine broth 2216 (BD-Difco) is a named mixture, not a pure chemical; its 37.4 g source batch amount does not justify decomposing a manufacturer formulation or claiming product-version equivalence. No organism growth or incubation claim is established.
+
+### Source forms and mixture limits
+
+grounding: supported. Targets: CultureMech:010147.
+
+Explicit sodium sulfide nonahydrate and L-cysteine hydrochloride monohydrate agree with the asserted hydrates. Resazurin is represented by the matching neutral term, with no sodium-salt substitution. Marine broth remains an explicitly named unresolved mixture, and nitrogen is a preparation gas. Current CHEBI-based secondary keys have exact pinned rows; no legacy mapping is asserted.
+
+### Basal preparation and separate reducer stocks
+
+completeness: concern. Targets: CultureMech:010147.
+
+Both layers omit boiling/cooling under nitrogen, distribution and sealing under nitrogen, basal autoclaving, separate autoclaving of the two 5% reducer stocks and their aseptic anaerobic addition before inoculation. The available provider gives neither percent basis nor stock aliquots, cycle numbers or pH.
+
+### Classification and claims
+
+scope: supported. Targets: CultureMech:010147.
+
+COMPLEX/UNDEFINED is compatible with the named Marine Broth mixture, and LIQUID with the listed base. Generic microbial cultivation is not experimental growth evidence or a taxonomic assignment. The anaerobic source preparation does not establish a phenotype for any unspecified organism.
+
+### Attached evidence, ownership and history
+
+provenance: concern. Targets: CultureMech:010147.
+
+Neither target nor owner has claim-level amount evidence. Source URLs and import/grounding history are provenance, not authentication of amounts or preparation. Retain every historical event and append any later authorized source correction; regenerate from the exact maintained owner only.
+
+## Findings
+
+### f1: Water volume and resazurin mass are recorded as gram rates
+
+blocker / open / confirmed; issue key: culturemech.010147.water-resazurin-units.
+
+Both layers encode source water 1 L as 1 G_PER_L and source resazurin 0.5 mg as 0.5 G_PER_L. Other literal batch masses lack an established measured final-volume denominator.
+
+### f2: Separate reducer stocks and preparation stages are absent
+
+major / open / confirmed; issue key: culturemech.010147.reducer-stocks-preparation.
+
+The provider requires two separately autoclaved 5% stocks and later anaerobic addition; neither layer retains this stock architecture or the basal preparation.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore exact volume and milligram batch units and qualify the other masses by their source basis. Attach claim-level excerpts without inventing a measured final volume or changing the commercial mixture.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Recover the stated sequence and distinct reducer stocks. Preserve unknown percent basis, stock aliquots, cycle and pH; seek exact JCM content before claiming primary verification.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch036/357/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch036/357/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml:1:id: CultureMech:010147<br>./data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml:1:id: CultureMech:010147<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch036/source-preflight-bound/357/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 11 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch036/source-preflight-bound/357/evidence-context-original.json; Complete frozen source context and full local objects | context_only | Frozen target/owner objects match freshly inspected records. Source interpretations are assessed against actual bound capture bytes; historical limitations remain separate. |
+| provider | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742; meta, components[0].items and comments[0].comment | supports | The exact provider identifies JCM M719 and supplies the batch amounts and preparation. Its single water input does not declare measured final volume; two reducer stocks have unqualified 5% strengths and no stated aliquots. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch036/357/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15377 resolves to water. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91248 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml; data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 9, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml", "events": 8, "timestamp_issues": []}] |
+| jcm719-attempt | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=719; Preserved exact public retrieval result | context_only | Exact current JCM 719 returned HTTP 200 with Nothing found rather than a recipe. Required primary formulation and preparation verification remains unavailable; the exact TOGO provider content is separately assessed. |
+| mediadiveJ719-attempt | https://mediadive.dsmz.de/rest/medium/J719; Preserved exact public retrieval result | context_only | This preserved optional MediaDive J719 attempt returned HTTP 503 and supplies no formulation. No passing canonical result authenticates it. |
+| mediadiveJ719retry-attempt | https://mediadive.dsmz.de/rest/medium/J719; Preserved exact public retrieval result | context_only | This preserved optional MediaDive J719 attempt returned HTTP 503 and supplies no formulation. No passing canonical result authenticates it. |
+| writer-0 | src/culturemech/import/togo_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current import and cleanup logic is inspected separately from historical default-unit events. Current unit parsing does not authenticate a historical gram fallback or invent stock percentage basis. Correct maintained source fields with evidence before separately authorized regeneration; preserve prior events. |
+| writer-1 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current import and cleanup logic is inspected separately from historical default-unit events. Current unit parsing does not authenticate a historical gram fallback or invent stock percentage basis. Correct maintained source fields with evidence before separately authorized regeneration; preserve prior events. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Exact current JCM 719 returned HTTP 200 with Nothing found rather than a recipe. Required primary formulation and preparation verification remains unavailable; the exact TOGO provider content is separately assessed.
+- This preserved optional MediaDive J719 attempt returned HTTP 503 and supplies no formulation. No passing canonical result authenticates it.
+- This preserved optional MediaDive J719 attempt returned HTTP 503 and supplies no formulation. No passing canonical result authenticates it.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T194441Z-culturemech-010147-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: anaerobic_marine_broth_2216 (CultureMech:010147)'
+started_at: '2026-10-21T19:39:58Z'
+finished_at: '2026-10-21T19:44:41Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: TOGO M742 supplies an anaerobic Marine Broth 2216 batch, but both local layers
+  convert 1 L water and 0.5 mg resazurin to gram-per-liter values and omit the separately
+  sterilized reducer stocks. Exact JCM 719 currently returns no recipe, so primary-source
+  verification remains incomplete.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml
+    sha256: f9d11ed4be58d6afbae4198b275d42b8355a00e24dcc3d7f2c08cdb0db7fe679
+    role: target
+  - path: data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml
+    sha256: b3610311d63527ce2b9115dbd3e05bd4248b64681b959d87f8ffda74b57ad621
+    role: context
+  - path: data/normalized_yaml/specialized/anaerobic_marine_broth_2216.yaml
+    sha256: 10461e18549cdb65b5339cbef8b4c0277aeb6ae7da7af28a7e36a0f5b9b0e9d3
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 357; batch 036 item 7 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-five task batches
+    contain 350 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 353 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:010147
+targets:
+- target_id: CultureMech:010147
+  path: data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml
+  label: anaerobic_marine_broth_2216
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:010147
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch036/357/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch036/357/strict.tsv"
+  target_ids:
+  - CultureMech:010147
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:010147
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:010147
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:010147
+- check_id: jcm719-source-access
+  name: 'Exact source content access: jcm719'
+  required: true
+  status: unavailable
+  summary: Exact current JCM 719 returned HTTP 200 with Nothing found rather than
+    a recipe. Required primary formulation and preparation verification remains unavailable;
+    the exact TOGO provider content is separately assessed.
+  target_ids:
+  - CultureMech:010147
+  evidence_ids:
+  - jcm719-attempt
+- check_id: mediadiveJ719-source-access
+  name: 'Exact source content access: mediadiveJ719'
+  required: false
+  status: unavailable
+  summary: This preserved optional MediaDive J719 attempt returned HTTP 503 and supplies
+    no formulation. No passing canonical result authenticates it.
+  target_ids:
+  - CultureMech:010147
+  evidence_ids:
+  - mediadiveJ719-attempt
+- check_id: mediadiveJ719retry-source-access
+  name: 'Exact source content access: mediadiveJ719retry'
+  required: false
+  status: unavailable
+  summary: This preserved optional MediaDive J719 attempt returned HTTP 503 and supplies
+    no formulation. No passing canonical result authenticates it.
+  target_ids:
+  - CultureMech:010147
+  evidence_ids:
+  - mediadiveJ719retry-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T19:44:39Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T19:44:39Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:41:13.942531Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch036/357/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:41:15.109424Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch036/357/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:41:16.291919Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:41:17.018712Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T19:44:39Z'
+  support: supports
+  summary: './data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml:1:id: CultureMech:010147
+
+    ./data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml:1:id: CultureMech:010147
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/source-preflight-bound/357/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T19:44:39Z'
+  support: supports
+  summary: 11 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 89941a58c1acf4a106284ff0e2fd7c17f9295389722a39a782e848946f22bccc
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/source-preflight-bound/357/evidence-context-original.json
+  locator: Complete frozen source context and full local objects
+  accessed_at: '2026-10-21T19:44:39Z'
+  support: context_only
+  summary: Frozen target/owner objects match freshly inspected records. Source interpretations
+    are assessed against actual bound capture bytes; historical limitations remain
+    separate.
+  snapshot_sha256: cf722eee172696ad0b42664bc33fcc1f0bdbab099f25a90af98cc66adbcfd7fd
+- evidence_id: provider
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742
+  locator: meta, components[0].items and comments[0].comment
+  accessed_at: '2026-10-21T19:24:03.497206Z'
+  support: supports
+  summary: The exact provider identifies JCM M719 and supplies the batch amounts and
+    preparation. Its single water input does not declare measured final volume; two
+    reducer stocks have unqualified 5% strengths and no stated aliquots.
+  snapshot_sha256: 6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/357/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T19:44:39Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 381c5efd685358058a5635a8a468ac099d27a36b470b35fcbda5f1ad13596cb3
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi17997
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.385647Z'
+  support: supports
+  summary: CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91248
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:32.136441Z'
+  support: supports
+  summary: CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T19:44:39Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15377":
+    [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377",
+    "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type":
+    "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id":
+    "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml; data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T19:44:39Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml",
+    "events": 8, "timestamp_issues": []}]'
+- evidence_id: jcm719-attempt
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=719
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:24:05.301422Z'
+  support: context_only
+  summary: Exact current JCM 719 returned HTTP 200 with Nothing found rather than
+    a recipe. Required primary formulation and preparation verification remains unavailable;
+    the exact TOGO provider content is separately assessed.
+  snapshot_sha256: 1bc4a105d18d3fa95050a9e04d5835597a40ed7f2666251f13f08a82cbd90d03
+- evidence_id: mediadiveJ719-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J719
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:24:00.968482Z'
+  support: context_only
+  summary: This preserved optional MediaDive J719 attempt returned HTTP 503 and supplies
+    no formulation. No passing canonical result authenticates it.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadiveJ719retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J719
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:24:46.969662Z'
+  support: context_only
+  summary: This preserved optional MediaDive J719 attempt returned HTTP 503 and supplies
+    no formulation. No passing canonical result authenticates it.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:44:39Z'
+  support: context_only
+  summary: Current import and cleanup logic is inspected separately from historical
+    default-unit events. Current unit parsing does not authenticate a historical gram
+    fallback or invent stock percentage basis. Correct maintained source fields with
+    evidence before separately authorized regeneration; preserve prior events.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:44:39Z'
+  support: context_only
+  summary: Current import and cleanup logic is inspected separately from historical
+    default-unit events. Current unit parsing does not authenticate a historical gram
+    fallback or invent stock percentage basis. Correct maintained source fields with
+    evidence before separately authorized regeneration; preserve prior events.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:010147
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 9 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:010147
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Main: Distilled water\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM742original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742\",\n \
+    \       \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:03.497206Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"batch_amount\": 1,\n     \
+    \ \"batch_unit\": \"L\",\n      \"measured_final_volume_L\": null\n    },\n  \
+    \  \"rationale\": \"The source volume or milligram input is not a gram-per-liter\
+    \ rate.\"\n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\"\
+    : \"Main: Resazurin\",\n    \"decision\": \"correct\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM742original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742\",\n \
+    \       \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Resazurin\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:03.497206Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"batch_amount\": 0.5,\n   \
+    \   \"batch_unit\": \"mg\",\n      \"measured_final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"The source volume or milligram input is not a gram-per-liter\
+    \ rate.\"\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\"\
+    : \"Main: Na2S・9H2O\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml\",\n     \
+    \   \"field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM742original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742\",\n \
+    \       \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2S・9H2O\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:03.497206Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"batch_amount\": 0.5,\n   \
+    \   \"batch_unit\": \"g\",\n      \"measured_final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"The source batch mass agrees numerically, but no measured\
+    \ final-volume denominator is stated. Retain the literal mass and its batch stage\
+    \ rather than claiming an exact final concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q4\",\n    \"component_or_context\": \"Main: Marine broth 2216 (BD-Difco)\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml\",\n\
+    \        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"37.4\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml\",\n     \
+    \   \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"37.4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM742original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742\",\n \
+    \       \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Marine broth 2216 (BD-Difco)\\\",\\n         \
+    \ \\\"volume\\\": 37.4,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618\",\n    \
+    \    \"accessed_at\": \"2026-10-21T19:24:03.497206Z\"\n      }\n    ],\n    \"\
+    proposed_source_representation\": {\n      \"batch_amount\": 37.4,\n      \"batch_unit\"\
+    : \"g\",\n      \"measured_final_volume_L\": null\n    },\n    \"rationale\":\
+    \ \"The source batch mass agrees numerically, but no measured final-volume denominator\
+    \ is stated. Retain the literal mass and its batch stage rather than claiming\
+    \ an exact final concentration.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n \
+    \   \"component_or_context\": \"Main: L--Cysteine・HCl・H2O\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml\",\n     \
+    \   \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM742original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742\",\n \
+    \       \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"L--Cysteine・HCl・H2O\\\",\\n          \\\"volume\\\
+    \": 0.5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\":\
+    \ \"6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618\",\n    \
+    \    \"accessed_at\": \"2026-10-21T19:24:03.497206Z\"\n      }\n    ],\n    \"\
+    proposed_source_representation\": {\n      \"batch_amount\": 0.5,\n      \"batch_unit\"\
+    : \"g\",\n      \"measured_final_volume_L\": null\n    },\n    \"rationale\":\
+    \ \"The source batch mass agrees numerically, but no measured final-volume denominator\
+    \ is stated. Retain the literal mass and its batch stage rather than claiming\
+    \ an exact final concentration.\"\n  },\n  {\n    \"quantity_id\": \"q6\",\n \
+    \   \"component_or_context\": \"Main: N2\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM742original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742\",\n \
+    \       \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"N2\\\"\",\n        \"snapshot_sha256\": \"6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:03.497206Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"batch_amount\": null,\n  \
+    \    \"batch_unit\": null,\n      \"measured_final_volume_L\": null\n    },\n\
+    \    \"rationale\": \"Nitrogen is a preparation atmosphere with no quantified\
+    \ amount or percentage.\"\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\"\
+    : \"L-cysteine hydrochloride monohydrate separate stock strength\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"togoM742original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"5% L--cysteine・HCl・H2O solution\",\n        \"snapshot_sha256\": \"6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:03.497206Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_strength_percent\":\
+    \ 5,\n      \"percentage_basis\": null,\n      \"receiving_aliquot_ml\": null\n\
+    \    },\n    \"rationale\": \"The provider explicitly requires separate autoclaving\
+    \ under nitrogen and later aseptic anaerobic addition. Bare percent does not establish\
+    \ w/v, density or a calculated stock aliquot; the named batch mass is retained\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\"\
+    : \"Sodium sulfide nonahydrate separate stock strength\",\n    \"decision\": \"\
+    add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"togoM742original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"5% Na2S・9H2O solution\",\n        \"snapshot_sha256\": \"6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:03.497206Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_strength_percent\":\
+    \ 5,\n      \"percentage_basis\": null,\n      \"receiving_aliquot_ml\": null\n\
+    \    },\n    \"rationale\": \"The provider explicitly requires separate autoclaving\
+    \ under nitrogen and later aseptic anaerobic addition. Bare percent does not establish\
+    \ w/v, density or a calculated stock aliquot; the named batch mass is retained\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\"\
+    : \"Sterilization cycle and final-volume limits\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Marine_Broth_2216.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM742original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M742\",\n \
+    \       \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"seal with butyl rubber stoppers and autoclave\",\n        \"snapshot_sha256\"\
+    : \"6824c88041161c995ef3d7e5fec5432daabc08b3499af85159ce8581e9483618\",\n    \
+    \    \"accessed_at\": \"2026-10-21T19:24:03.497206Z\"\n      }\n    ],\n    \"\
+    proposed_source_representation\": {\n      \"temperature_C\": null,\n      \"\
+    duration_min\": null,\n      \"pH\": null,\n      \"measured_final_volume_L\"\
+    : null\n    },\n    \"rationale\": \"Restore the documented preparation sequence,\
+    \ but do not invent a cycle, pH, or final-volume make-up from an unavailable JCM\
+    \ page.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '5 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 5/6 primary
+    and 2/6 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:010147
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi15377
+  - chebi17997
+  - chebi76209
+  - chebi8806
+  - chebi91248
+  details: 'Instance coverage on a 0–100 percent scale, denominator 6: primary 83.33%;
+    secondary 33.33%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 17 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:010147
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact record, product and accession scope
+  outcome: supported
+  summary: CultureMech:010147 resolves to its single bacterial owner and the exact
+    TOGO M742 / JCM M719 accession. Marine broth 2216 (BD-Difco) is a named mixture,
+    not a pure chemical; its 37.4 g source batch amount does not justify decomposing
+    a manufacturer formulation or claiming product-version equivalence. No organism
+    growth or incubation claim is established.
+  target_ids:
+  - CultureMech:010147
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - provider
+- assessment_id: forms
+  area: grounding
+  topic: Source forms and mixture limits
+  outcome: supported
+  summary: Explicit sodium sulfide nonahydrate and L-cysteine hydrochloride monohydrate
+    agree with the asserted hydrates. Resazurin is represented by the matching neutral
+    term, with no sodium-salt substitution. Marine broth remains an explicitly named
+    unresolved mixture, and nitrogen is a preparation gas. Current CHEBI-based secondary
+    keys have exact pinned rows; no legacy mapping is asserted.
+  target_ids:
+  - CultureMech:010147
+  evidence_ids:
+  - provider
+  - chebi76209
+  - chebi91248
+  - chebi8806
+  - mim
+- assessment_id: preparation
+  area: completeness
+  topic: Basal preparation and separate reducer stocks
+  outcome: concern
+  summary: Both layers omit boiling/cooling under nitrogen, distribution and sealing
+    under nitrogen, basal autoclaving, separate autoclaving of the two 5% reducer
+    stocks and their aseptic anaerobic addition before inoculation. The available
+    provider gives neither percent basis nor stock aliquots, cycle numbers or pH.
+  target_ids:
+  - CultureMech:010147
+  evidence_ids:
+  - provider
+  - record
+  - owner-0
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Classification and claims
+  outcome: supported
+  summary: COMPLEX/UNDEFINED is compatible with the named Marine Broth mixture, and
+    LIQUID with the listed base. Generic microbial cultivation is not experimental
+    growth evidence or a taxonomic assignment. The anaerobic source preparation does
+    not establish a phenotype for any unspecified organism.
+  target_ids:
+  - CultureMech:010147
+  evidence_ids:
+  - record
+  - owner-0
+  - provider
+- assessment_id: provenance
+  area: provenance
+  topic: Attached evidence, ownership and history
+  outcome: concern
+  summary: Neither target nor owner has claim-level amount evidence. Source URLs and
+    import/grounding history are provenance, not authentication of amounts or preparation.
+    Retain every historical event and append any later authorized source correction;
+    regenerate from the exact maintained owner only.
+  target_ids:
+  - CultureMech:010147
+  evidence_ids:
+  - record
+  - owner-0
+  - provider
+  - history-metadata
+  - writer-0
+  - writer-1
+findings:
+- finding_id: f1
+  issue_key: culturemech.010147.water-resazurin-units
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Water volume and resazurin mass are recorded as gram rates
+  description: Both layers encode source water 1 L as 1 G_PER_L and source resazurin
+    0.5 mg as 0.5 G_PER_L. Other literal batch masses lack an established measured
+    final-volume denominator.
+  target_ids:
+  - CultureMech:010147
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[1].concentration
+  - ingredients
+  evidence_ids:
+  - record
+  - owner-0
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.010147.reducer-stocks-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate reducer stocks and preparation stages are absent
+  description: The provider requires two separately autoclaved 5% stocks and later
+    anaerobic addition; neither layer retains this stock architecture or the basal
+    preparation.
+  target_ids:
+  - CultureMech:010147
+  field_paths:
+  - solutions
+  - preparation_steps
+  evidence_ids:
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore exact volume and milligram batch units and qualify the other
+    masses by their source basis. Attach claim-level excerpts without inventing a
+    measured final volume or changing the commercial mixture.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:010147
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Recover the stated sequence and distinct reducer stocks. Preserve unknown
+    percent basis, stock aliquots, cycle and pH; seek exact JCM content before claiming
+    primary verification.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:010147
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobic_marine_broth_2216.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Exact current JCM 719 returned HTTP 200 with Nothing found rather than a recipe.
+  Required primary formulation and preparation verification remains unavailable; the
+  exact TOGO provider content is separately assessed.
+- This preserved optional MediaDive J719 attempt returned HTTP 503 and supplies no
+  formulation. No passing canonical result authenticates it.
+- This preserved optional MediaDive J719 attempt returned HTTP 503 and supplies no
+  formulation. No passing canonical result authenticates it.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-036
+- generated-medium
+```

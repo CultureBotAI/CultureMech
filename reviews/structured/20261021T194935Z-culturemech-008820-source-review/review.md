@@ -1,0 +1,4218 @@
+# Source and formulation review: allen_medium (CultureMech:008820)
+
+- Review: 20261021T194935Z-culturemech-008820-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T19:39:56Z
+- Finished UTC: 2026-10-21T19:49:35Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+TOGO M2231 distinguishes a main batch, P-IV metals and six separately prepared stock solutions. Both local layers flatten the stocks and convert millilitre doses and water into g/L; 237 mL of listed main liquids is not the separate 250 mL cultivation example or a measured final volume. Cobalt hydration is mismapped. The provider supplies no primary source URL and asserted legacy HEPES 000426 lacks historical correspondence, so the review is partial.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 353; batch 036 item 3 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-five task batches contain 350 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 353 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:008820 | data/merge_yaml/merged/Allen_medium.yaml | generated | allen_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:008820 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:008820 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch036/353/strict.tsv |
+| validate-terms | passed | True | CultureMech:008820 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:008820 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:008820 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Required original primary formulation correspondence | unavailable | True | CultureMech:008820 | TOGO M2231 meta.src_url is empty and no original primary reference is supplied in the captured record. The provider formulation was assessed; no similarly named Allen recipe is substituted. |
+| Exact current legacy MIM lookup | passed | True | CultureMech:008820 | Completed exact 000426 search in the pinned full 2953-record catalog and nontruncated 7384-entry tree; both are negative. This is not a failed retrieval. |
+| Required historical HEPES 000426 correspondence | unavailable | True | CultureMech:008820 | The asserted legacy HEPES identifier is not recovered historically. Current absence does not identify its original object, justify a replacement or invalidate active primary CHEBI:46756. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:008820.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:008820.
+
+14 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 14/23 primary and 9/23 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 23: primary 60.87%; secondary 39.13%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:008820.
+
+29 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact provider and maintained ownership
+
+identity: supported. Targets: CultureMech:008820.
+
+The maintained bacterial allen_medium owner shares CultureMech:008820, exact TOGO M2231 identity and scientific fields with the generated target. Merge history is additional provenance, not a new formulation. The provider’s empty source URL prevents primary correspondence; no external similarly named Allen medium is substituted.
+
+### Stock rates, doses and example volumes
+
+consistency: concern. Targets: CultureMech:008820.
+
+All source stock and main rows are separately inventoried. The 207 G_PER_L water combines 200 mL with seven 1 L stock-water numerals. Main additions are 1, 5, 5, 5, 10, 10 and 1 mL from the seven named stocks; together with 200 mL water they total 237 mL of listed liquids. Neither that sum nor the distinct 250 mL culture example establishes a measured final batch volume.
+
+### Explicit hydrates and unusual phosphate wording
+
+grounding: concern. Targets: CultureMech:008820.
+
+P-IV cobalt chloride hexahydrate is assigned anhydrous CHEBI:35696. The source’s K2HPO4·7H2O wording is unusual and ungrounded; preserve that literal uncertainty rather than silently changing formula or assigning a guessed hydrate. Other asserted hydrates, including calcium chloride dihydrate, ferric chloride hexahydrate, disodium EDTA dihydrate, sodium metasilicate nonahydrate and citric acid monohydrate, match the local named forms. Primary HEPES CHEBI:46756 remains valid; legacy 000426 is a separate unresolved correspondence.
+
+### P-IV preparation and cultivation example
+
+completeness: concern. Targets: CultureMech:008820.
+
+Neither layer preserves provider pH 7.8, P-IV initial water about 950 mL, dissolution order with EDTA fully dissolved, makeup to 1 L and storage at 4 °C. The separate example uses 300 mL Erlenmeyer flasks with 250 mL culture, 5% CO2-containing sterile air, 39 °C and continuous irradiation printed as 80 lmol m-2 s-1. Keep the example qualifier and literal light-unit uncertainty. No sterilization cycle is supplied or invented.
+
+### Defined liquid ingredients and growth limits
+
+scope: concern. Targets: CultureMech:008820.
+
+The listed formulation consists of specified chemicals; COMPLEX/UNDEFINED is unsupported, while LIQUID agrees with the provider’s cultivation example. The bacterial import category and generic Microbial cultivation application do not establish an organism, strain, taxonomy ID or measured growth. No target_organisms, KG match, high_metal Boolean, DOI or PMID is asserted.
+
+### Provider support and two required unavailable correspondences
+
+evidence: unknown. Targets: CultureMech:008820.
+
+Neither layer attaches ingredient or preparation evidence. Exact provider rows support their own stock/batch statements but cannot authenticate an unidentified primary source. The current legacy lookup completed negatively; historical 000426 correspondence remains unavailable. These are separate reasons for partial completion, not evidence that the provider formula or active HEPES ID is nonexistent.
+
+### Maintained repair and history preservation
+
+provenance: supported. Targets: CultureMech:008820.
+
+All target/owner history timestamps are timezone-aware; the history array contains later correction entries ahead of earlier imports and must not be treated as a sorted chronology or current primary proof. Repair the maintained stock representation and claim-level evidence before regeneration, preserving original events and access times.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:008820.
+
+40 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "ingredient_or_context": "NaNO3",
+    "field_path": "ingredients[0].concentration",
+    "local": {
+      "value": "1.5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1.5,
+    "source_unit": "g",
+    "source_stage": "Main batch / explicitly marked cultivation gas example",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"NaNO3\",\n          \"volume\": 1.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Retain the printed main-batch mass, not an assumed g/L rate. The source does not state a measured final main volume; listed liquids and a separate culture-vessel example are not interchangeable denominators."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Retain the printed main-batch mass, not an assumed g/L rate. The source does not state a measured final main volume; listed liquids and a separate culture-vessel example are not interchangeable denominators."
+      }
+    ],
+    "arithmetic_and_scope": "Retain the printed main-batch mass, not an assumed g/L rate. The source does not state a measured final main volume; listed liquids and a separate culture-vessel example are not interchangeable denominators."
+  },
+  {
+    "quantity_id": "q2",
+    "ingredient_or_context": "Deionized water",
+    "field_path": "ingredients[1].concentration",
+    "local": {
+      "value": "207.0",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 200,
+    "source_unit": "ml",
+    "source_stage": "Main batch / explicitly marked cultivation gas example",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"Deionized water\",\n          \"volume\": 200,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "207.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Source main water is 200 mL. Local 207 G_PER_L adds the numeral 200 to seven 1 L stock-water entries without unit or stage conversion; this is neither 207 mL nor a valid water mass concentration."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "207.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Source main water is 200 mL. Local 207 G_PER_L adds the numeral 200 to seven 1 L stock-water entries without unit or stage conversion; this is neither 207 mL nor a valid water mass concentration."
+      }
+    ],
+    "arithmetic_and_scope": "Source main water is 200 mL. Local 207 G_PER_L adds the numeral 200 to seven 1 L stock-water entries without unit or stage conversion; this is neither 207 mL nor a valid water mass concentration."
+  },
+  {
+    "quantity_id": "q3",
+    "ingredient_or_context": "HEPES buffer",
+    "field_path": "ingredients[2].concentration",
+    "local": {
+      "value": "2.3",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 2.3,
+    "source_unit": "g",
+    "source_stage": "Main batch / explicitly marked cultivation gas example",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"HEPES buffer\",\n          \"volume\": 2.3,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "2.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Retain the printed main-batch mass, not an assumed g/L rate. The source does not state a measured final main volume; listed liquids and a separate culture-vessel example are not interchangeable denominators."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "2.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Retain the printed main-batch mass, not an assumed g/L rate. The source does not state a measured final main volume; listed liquids and a separate culture-vessel example are not interchangeable denominators."
+      }
+    ],
+    "arithmetic_and_scope": "Retain the printed main-batch mass, not an assumed g/L rate. The source does not state a measured final main volume; listed liquids and a separate culture-vessel example are not interchangeable denominators."
+  },
+  {
+    "quantity_id": "q4",
+    "ingredient_or_context": "K2HPO4·7H2O (6 g/L)",
+    "field_path": "ingredients[3].concentration",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 5,
+    "source_unit": "ml",
+    "source_stage": "Main batch / explicitly marked cultivation gas example",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[0].items[4]",
+        "exact_source_quote": "\"component_name\": \"K2HPO4·7H2O (6 g/L)\",\n          \"volume\": 5,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+      }
+    ],
+    "arithmetic_and_scope": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+  },
+  {
+    "quantity_id": "q5",
+    "ingredient_or_context": "MgSO4·7H2O (6 g/L)",
+    "field_path": "ingredients[4].concentration",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 5,
+    "source_unit": "ml",
+    "source_stage": "Main batch / explicitly marked cultivation gas example",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[0].items[5]",
+        "exact_source_quote": "\"component_name\": \"MgSO4·7H2O (6 g/L)\",\n          \"volume\": 5,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+      }
+    ],
+    "arithmetic_and_scope": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+  },
+  {
+    "quantity_id": "q6",
+    "ingredient_or_context": "Na2CO3 (4 g/L)",
+    "field_path": "ingredients[5].concentration",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 5,
+    "source_unit": "ml",
+    "source_stage": "Main batch / explicitly marked cultivation gas example",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[0].items[6]",
+        "exact_source_quote": "\"component_name\": \"Na2CO3 (4 g/L)\",\n          \"volume\": 5,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+      }
+    ],
+    "arithmetic_and_scope": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+  },
+  {
+    "quantity_id": "q7",
+    "ingredient_or_context": "CaCl2·2H2O (2.5 g/L)",
+    "field_path": "ingredients[6].concentration",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 10,
+    "source_unit": "ml",
+    "source_stage": "Main batch / explicitly marked cultivation gas example",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[0].items[7]",
+        "exact_source_quote": "\"component_name\": \"CaCl2·2H2O (2.5 g/L)\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+      }
+    ],
+    "arithmetic_and_scope": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+  },
+  {
+    "quantity_id": "q8",
+    "ingredient_or_context": "Na2SiO3·9H2O (4.64 g/L)",
+    "field_path": "ingredients[7].concentration",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 10,
+    "source_unit": "ml",
+    "source_stage": "Main batch / explicitly marked cultivation gas example",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[0].items[8]",
+        "exact_source_quote": "\"component_name\": \"Na2SiO3·9H2O (4.64 g/L)\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+      }
+    ],
+    "arithmetic_and_scope": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+  },
+  {
+    "quantity_id": "q9",
+    "ingredient_or_context": "Citric acid·H2O (4.8 g/L)",
+    "field_path": "ingredients[8].concentration",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "ml",
+    "source_stage": "Main batch / explicitly marked cultivation gas example",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[0].items[9]",
+        "exact_source_quote": "\"component_name\": \"Citric acid·H2O (4.8 g/L)\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+      }
+    ],
+    "arithmetic_and_scope": "This source row is a millilitre addition of the named separately prepared stock, not that many grams per litre of the solute. Restore the source stock strength and its dose, excluding undiluted stock ingredients from the main batch. Final main volume remains unstated."
+  },
+  {
+    "quantity_id": "q10",
+    "ingredient_or_context": "CO2",
+    "field_path": "ingredients[9].concentration",
+    "local": {
+      "value": "variable",
+      "unit": "VARIABLE"
+    },
+    "source_amount": 5,
+    "source_unit": "%",
+    "source_stage": "Main batch / explicitly marked cultivation gas example",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[0].items[10]",
+        "exact_source_quote": "\"component_name\": \"CO2\",\n          \"conc_value\": 5,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct",
+        "rationale": "The provider specifies 5% CO2 in sterile air for the cultivation example, but does not state a percent basis or gas flow. Preserve the percentage in scoped prose without inventing PERCENT_V_V or a molar rate; VARIABLE alone hides the known example ratio."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct",
+        "rationale": "The provider specifies 5% CO2 in sterile air for the cultivation example, but does not state a percent basis or gas flow. Preserve the percentage in scoped prose without inventing PERCENT_V_V or a molar rate; VARIABLE alone hides the known example ratio."
+      }
+    ],
+    "arithmetic_and_scope": "The provider specifies 5% CO2 in sterile air for the cultivation example, but does not state a percent basis or gas flow. Preserve the percentage in scoped prose without inventing PERCENT_V_V or a molar rate; VARIABLE alone hides the known example ratio."
+  },
+  {
+    "quantity_id": "q11",
+    "ingredient_or_context": "Sterile air",
+    "field_path": "ingredients[10].concentration",
+    "local": {
+      "value": "variable",
+      "unit": "VARIABLE"
+    },
+    "source_amount": null,
+    "source_unit": null,
+    "source_stage": "Main batch / explicitly marked cultivation gas example",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "not_quantified",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[0].items[11]",
+        "exact_source_quote": "\"component_name\": \"Sterile air\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified",
+        "rationale": "Sterile air is part of the cultivation gas context but no flow, dose or amount is given. Retain an unquantified value and attach the exact example scope; do not infer a 95% balance as an independently printed quantity."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified",
+        "rationale": "Sterile air is part of the cultivation gas context but no flow, dose or amount is given. Retain an unquantified value and attach the exact example scope; do not infer a 95% balance as an independently printed quantity."
+      }
+    ],
+    "arithmetic_and_scope": "Sterile air is part of the cultivation gas context but no flow, dose or amount is given. Retain an unquantified value and attach the exact example scope; do not infer a 95% balance as an independently printed quantity."
+  },
+  {
+    "quantity_id": "q12",
+    "ingredient_or_context": "P-IV metal solution",
+    "field_path": "solutions[0].concentration",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "ml",
+    "source_stage": "P-IV stock addition to main batch",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"P-IV metal solution\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The source dose is 1 mL of P-IV, not 1 g/L. Rebuild its exact separate composition; no asserted 6129 identity occurs here and none is imported by analogy."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The source dose is 1 mL of P-IV, not 1 g/L. Rebuild its exact separate composition; no asserted 6129 identity occurs here and none is imported by analogy."
+      }
+    ],
+    "arithmetic_and_scope": "The source dose is 1 mL of P-IV, not 1 g/L. Rebuild its exact separate composition; no asserted 6129 identity occurs here and none is imported by analogy."
+  },
+  {
+    "quantity_id": "q13",
+    "ingredient_or_context": "Na2MoO4·2H2O",
+    "field_path": "ingredients[11].concentration",
+    "local": {
+      "value": "0.004",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.004,
+    "source_unit": "g",
+    "source_stage": "P-IV stock; explicit makeup to 1 L",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"Na2MoO4·2H2O\",\n          \"volume\": 0.004,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.004",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.004",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+      }
+    ],
+    "arithmetic_and_scope": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+  },
+  {
+    "quantity_id": "q14",
+    "ingredient_or_context": "MnCl2·4H2O",
+    "field_path": "ingredients[12].concentration",
+    "local": {
+      "value": "0.041",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.041,
+    "source_unit": "g",
+    "source_stage": "P-IV stock; explicit makeup to 1 L",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"MnCl2·4H2O\",\n          \"volume\": 0.041,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.041",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.041",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+      }
+    ],
+    "arithmetic_and_scope": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+  },
+  {
+    "quantity_id": "q15",
+    "ingredient_or_context": "CoCl2·6H2O",
+    "field_path": "ingredients[13].concentration",
+    "local": {
+      "value": "0.002",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.002,
+    "source_unit": "g",
+    "source_stage": "P-IV stock; explicit makeup to 1 L",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"CoCl2·6H2O\",\n          \"volume\": 0.002,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+      }
+    ],
+    "arithmetic_and_scope": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+  },
+  {
+    "quantity_id": "q16",
+    "ingredient_or_context": "ZnCl2",
+    "field_path": "ingredients[14].concentration",
+    "local": {
+      "value": "0.005",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.005,
+    "source_unit": "g",
+    "source_stage": "P-IV stock; explicit makeup to 1 L",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"ZnCl2\",\n          \"volume\": 0.005,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+      }
+    ],
+    "arithmetic_and_scope": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+  },
+  {
+    "quantity_id": "q17",
+    "ingredient_or_context": "FeCl3·6H2O",
+    "field_path": "ingredients[15].concentration",
+    "local": {
+      "value": "0.097",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.097,
+    "source_unit": "g",
+    "source_stage": "P-IV stock; explicit makeup to 1 L",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[1].items[4]",
+        "exact_source_quote": "\"component_name\": \"FeCl3·6H2O\",\n          \"volume\": 0.097,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.097",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.097",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+      }
+    ],
+    "arithmetic_and_scope": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+  },
+  {
+    "quantity_id": "q18",
+    "ingredient_or_context": "Deionized water",
+    "field_path": "ingredients[1].concentration",
+    "local": {
+      "value": "207.0",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "L",
+    "source_stage": "P-IV stock; explicit makeup to 1 L",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[1].items[5]",
+        "exact_source_quote": "\"component_name\": \"Deionized water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "207.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "P-IV stock water is brought to 1 L after initial approximately 950 mL dissolution. It is not another main water addition or part of the local 207 G_PER_L mass."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "207.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "P-IV stock water is brought to 1 L after initial approximately 950 mL dissolution. It is not another main water addition or part of the local 207 G_PER_L mass."
+      }
+    ],
+    "arithmetic_and_scope": "P-IV stock water is brought to 1 L after initial approximately 950 mL dissolution. It is not another main water addition or part of the local 207 G_PER_L mass."
+  },
+  {
+    "quantity_id": "q19",
+    "ingredient_or_context": "Na2EDTA·2H2O",
+    "field_path": "ingredients[16].concentration",
+    "local": {
+      "value": "0.75",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.75,
+    "source_unit": "g",
+    "source_stage": "P-IV stock; explicit makeup to 1 L",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"Na2EDTA·2H2O\",\n          \"volume\": 0.75,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.75",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.75",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+      }
+    ],
+    "arithmetic_and_scope": "This amount belongs to the separately made-up 1 L P-IV stock. Its source composition rate may be represented within that stock; the 1 mL main dose contributes one-thousandth of the stock mass, not the full g/L as a main ingredient. No final main-medium denominator is known."
+  },
+  {
+    "quantity_id": "q20",
+    "ingredient_or_context": "K2HPO4·7H2O",
+    "field_path": "ingredients[17].concentration",
+    "local": {
+      "value": "6",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 6,
+    "source_unit": "g",
+    "source_stage": "Separate named stock section 2",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[2].items[0]",
+        "exact_source_quote": "\"component_name\": \"K2HPO4·7H2O\",\n          \"volume\": 6,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+      }
+    ],
+    "arithmetic_and_scope": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+  },
+  {
+    "quantity_id": "q21",
+    "ingredient_or_context": "Deionized water",
+    "field_path": "ingredients[1].concentration",
+    "local": {
+      "value": "207.0",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "L",
+    "source_stage": "Separate named stock section 2",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[2].items[1]",
+        "exact_source_quote": "\"component_name\": \"Deionized water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "207.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "207.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+      }
+    ],
+    "arithmetic_and_scope": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+  },
+  {
+    "quantity_id": "q22",
+    "ingredient_or_context": "MgSO4·7H2O",
+    "field_path": "ingredients[18].concentration",
+    "local": {
+      "value": "6",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 6,
+    "source_unit": "g",
+    "source_stage": "Separate named stock section 3",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[3].items[0]",
+        "exact_source_quote": "\"component_name\": \"MgSO4·7H2O\",\n          \"volume\": 6,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+      }
+    ],
+    "arithmetic_and_scope": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+  },
+  {
+    "quantity_id": "q23",
+    "ingredient_or_context": "Deionized water",
+    "field_path": "ingredients[1].concentration",
+    "local": {
+      "value": "207.0",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "L",
+    "source_stage": "Separate named stock section 3",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[3].items[1]",
+        "exact_source_quote": "\"component_name\": \"Deionized water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "207.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "207.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+      }
+    ],
+    "arithmetic_and_scope": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+  },
+  {
+    "quantity_id": "q24",
+    "ingredient_or_context": "Na2CO3",
+    "field_path": "ingredients[19].concentration",
+    "local": {
+      "value": "4",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 4,
+    "source_unit": "g",
+    "source_stage": "Separate named stock section 4",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[4].items[0]",
+        "exact_source_quote": "\"component_name\": \"Na2CO3\",\n          \"volume\": 4,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "4",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "4",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+      }
+    ],
+    "arithmetic_and_scope": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+  },
+  {
+    "quantity_id": "q25",
+    "ingredient_or_context": "Deionized water",
+    "field_path": "ingredients[1].concentration",
+    "local": {
+      "value": "207.0",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "L",
+    "source_stage": "Separate named stock section 4",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[4].items[1]",
+        "exact_source_quote": "\"component_name\": \"Deionized water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "207.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "207.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+      }
+    ],
+    "arithmetic_and_scope": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+  },
+  {
+    "quantity_id": "q26",
+    "ingredient_or_context": "CaCl2·2H2O",
+    "field_path": "ingredients[20].concentration",
+    "local": {
+      "value": "2.5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 2.5,
+    "source_unit": "g",
+    "source_stage": "Separate named stock section 5",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[5].items[0]",
+        "exact_source_quote": "\"component_name\": \"CaCl2·2H2O\",\n          \"volume\": 2.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+      }
+    ],
+    "arithmetic_and_scope": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+  },
+  {
+    "quantity_id": "q27",
+    "ingredient_or_context": "Deionized water",
+    "field_path": "ingredients[1].concentration",
+    "local": {
+      "value": "207.0",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "L",
+    "source_stage": "Separate named stock section 5",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[5].items[1]",
+        "exact_source_quote": "\"component_name\": \"Deionized water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "207.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "207.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+      }
+    ],
+    "arithmetic_and_scope": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+  },
+  {
+    "quantity_id": "q28",
+    "ingredient_or_context": "Na2SiO3·9H2O",
+    "field_path": "ingredients[21].concentration",
+    "local": {
+      "value": "4.64",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 4.64,
+    "source_unit": "g",
+    "source_stage": "Separate named stock section 6",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[6].items[0]",
+        "exact_source_quote": "\"component_name\": \"Na2SiO3·9H2O\",\n          \"volume\": 4.64,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "4.64",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "4.64",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+      }
+    ],
+    "arithmetic_and_scope": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+  },
+  {
+    "quantity_id": "q29",
+    "ingredient_or_context": "Deionized water",
+    "field_path": "ingredients[1].concentration",
+    "local": {
+      "value": "207.0",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "L",
+    "source_stage": "Separate named stock section 6",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[6].items[1]",
+        "exact_source_quote": "\"component_name\": \"Deionized water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "207.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "207.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+      }
+    ],
+    "arithmetic_and_scope": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+  },
+  {
+    "quantity_id": "q30",
+    "ingredient_or_context": "Deionized water",
+    "field_path": "ingredients[1].concentration",
+    "local": {
+      "value": "207.0",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "L",
+    "source_stage": "Separate named stock section 7",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[7].items[0]",
+        "exact_source_quote": "\"component_name\": \"Deionized water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "207.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "207.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+      }
+    ],
+    "arithmetic_and_scope": "The separately prepared stock has its own 1 L water entry. Do not add that whole stock volume to the receiving batch or convert it to a water mass."
+  },
+  {
+    "quantity_id": "q31",
+    "ingredient_or_context": "Citric acid·H2O",
+    "field_path": "ingredients[22].concentration",
+    "local": {
+      "value": "4.8",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 4.8,
+    "source_unit": "g",
+    "source_stage": "Separate named stock section 7",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.components[7].items[1]",
+        "exact_source_quote": "\"component_name\": \"Citric acid·H2O\",\n          \"volume\": 4.8,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "4.8",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "4.8",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+      }
+    ],
+    "arithmetic_and_scope": "This is the separately stated stock batch/strength, not an undiluted main ingredient. Its named g/L stock strength and stated mL dose support stock-only delivered-mass arithmetic; no final main g/L can be calculated without a supported denominator."
+  },
+  {
+    "quantity_id": "q32",
+    "ingredient_or_context": "Cultivation vessel capacity",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": "300",
+    "source_unit": "mL",
+    "source_stage": "Source cultivation example",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.comments[0]",
+        "exact_source_quote": "300 ml Erlenmeyer flasks",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Vessel capacity only; not a medium batch or final concentration denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Vessel capacity only; not a medium batch or final concentration denominator."
+      }
+    ],
+    "arithmetic_and_scope": "Vessel capacity only; not a medium batch or final concentration denominator."
+  },
+  {
+    "quantity_id": "q33",
+    "ingredient_or_context": "Culture fill example",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": "250",
+    "source_unit": "mL",
+    "source_stage": "Source cultivation example",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.comments[0]",
+        "exact_source_quote": "250 ml culture per flask",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Example culture fill only; not an instruction to make the listed recipe up to 250 mL. Listed main liquids sum to 237 mL."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Example culture fill only; not an instruction to make the listed recipe up to 250 mL. Listed main liquids sum to 237 mL."
+      }
+    ],
+    "arithmetic_and_scope": "Example culture fill only; not an instruction to make the listed recipe up to 250 mL. Listed main liquids sum to 237 mL."
+  },
+  {
+    "quantity_id": "q34",
+    "ingredient_or_context": "Example gas composition",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": "5",
+    "source_unit": "% CO2, basis unqualified",
+    "source_stage": "Source cultivation example",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.comments[0]",
+        "exact_source_quote": "5% CO2 containing sterile air",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Retain percent wording; no gas-flow amount, w/v or v/v basis is printed."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Retain percent wording; no gas-flow amount, w/v or v/v basis is printed."
+      }
+    ],
+    "arithmetic_and_scope": "Retain percent wording; no gas-flow amount, w/v or v/v basis is printed."
+  },
+  {
+    "quantity_id": "q35",
+    "ingredient_or_context": "Example cultivation temperature",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": "39",
+    "source_unit": "°C",
+    "source_stage": "Source cultivation example",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.comments[0]",
+        "exact_source_quote": "at 39C",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "This temperature is part of the cited example, not a universal optimum or a stock sterilization condition."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "This temperature is part of the cited example, not a universal optimum or a stock sterilization condition."
+      }
+    ],
+    "arithmetic_and_scope": "This temperature is part of the cited example, not a universal optimum or a stock sterilization condition."
+  },
+  {
+    "quantity_id": "q36",
+    "ingredient_or_context": "Example illumination",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": "80",
+    "source_unit": "lmol m-2 s-1 (literal source typography)",
+    "source_stage": "Source cultivation example",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.comments[0]",
+        "exact_source_quote": "continuous irradiation (80 lmol m-2 s-1)",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve the source typography and continuous illumination; do not silently replace lmol with a guessed micro-unit or infer an organism."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve the source typography and continuous illumination; do not silently replace lmol with a guessed micro-unit or infer an organism."
+      }
+    ],
+    "arithmetic_and_scope": "Preserve the source typography and continuous illumination; do not silently replace lmol with a guessed micro-unit or infer an organism."
+  },
+  {
+    "quantity_id": "q37",
+    "ingredient_or_context": "Medium pH",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": "7.8",
+    "source_unit": "pH",
+    "source_stage": "Provider medium context",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.comments[2]",
+        "exact_source_quote": "pH 7.8",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The provider states pH 7.8, but does not specify an adjustment reagent or dose."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The provider states pH 7.8, but does not specify an adjustment reagent or dose."
+      }
+    ],
+    "arithmetic_and_scope": "The provider states pH 7.8, but does not specify an adjustment reagent or dose."
+  },
+  {
+    "quantity_id": "q38",
+    "ingredient_or_context": "P-IV initial dissolution water",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": "approximately 950",
+    "source_unit": "mL",
+    "source_stage": "P-IV preparation only",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.comments[4]",
+        "exact_source_quote": "approximately 950 ml of dH2O",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Initial dissolution stage, distinct from its 1 L makeup and the main 200 mL water."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Initial dissolution stage, distinct from its 1 L makeup and the main 200 mL water."
+      }
+    ],
+    "arithmetic_and_scope": "Initial dissolution stage, distinct from its 1 L makeup and the main 200 mL water."
+  },
+  {
+    "quantity_id": "q39",
+    "ingredient_or_context": "P-IV final makeup",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": "1",
+    "source_unit": "L",
+    "source_stage": "P-IV preparation only",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.comments[4]",
+        "exact_source_quote": "Bring to 1 L with dH2O",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Explicit stock makeup supports stock-only rates; it does not supply a main-medium final volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Explicit stock makeup supports stock-only rates; it does not supply a main-medium final volume."
+      }
+    ],
+    "arithmetic_and_scope": "Explicit stock makeup supports stock-only rates; it does not supply a main-medium final volume."
+  },
+  {
+    "quantity_id": "q40",
+    "ingredient_or_context": "P-IV storage temperature",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": "4",
+    "source_unit": "°C",
+    "source_stage": "P-IV preparation only",
+    "primary_source_evidence_id": "togo2231",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM2231original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231",
+        "source_locator": "$.comments[4]",
+        "exact_source_quote": "store at 4 C",
+        "snapshot_sha256": "2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Storage temperature only, not an incubation or sterilization temperature."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allen_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Storage temperature only, not an incubation or sterilization temperature."
+      }
+    ],
+    "arithmetic_and_scope": "Storage temperature only, not an incubation or sterilization temperature."
+  }
+]
+
+## Findings
+
+### f1: Stock concentrations and addition volumes are flattened into main mass rates
+
+blocker / open / confirmed; issue key: culturemech.008820.stock-volume-collapse.
+
+Both layers contain undiluted P-IV and six other stock components beside their doses, which are represented as grams per litre. Main water is an invalid mixed-unit sum, 207 G_PER_L. The source’s 237 mL listed-liquid sum and 250 mL culture example do not supply a common final denominator.
+
+### f2: P-IV cobalt hexahydrate is grounded as anhydrous cobalt chloride
+
+major / open / confirmed; issue key: culturemech.008820.cobalt-hydrate.
+
+The source and preferred term specify CoCl2·6H2O, whereas CHEBI:35696 describes anhydrous cobalt dichloride. The source stock mass cannot be interpreted as that different supplied form.
+
+### f3: Stock preparation and explicitly qualified culture conditions are missing
+
+major / open / confirmed; issue key: culturemech.008820.preparation-example-scope.
+
+Both layers omit the P-IV preparation/storage stages and provider pH, while variable gas entries omit the known 5% CO2 example context. The example’s vessel/fill/temperature/light conditions must not be promoted to a universal medium formula or final-volume declaration.
+
+### f4: Named-chemical medium is labeled complex and undefined
+
+minor / open / confirmed; issue key: culturemech.008820.classification.
+
+The provider lists individually specified chemicals and stocks; neither local layer supplies a source-defined complex nutrient to support COMPLEX/UNDEFINED.
+
+### f5: Original primary source and historical HEPES link remain unresolved
+
+minor / open / confirmed; issue key: culturemech.008820.primary-legacy-unresolved.
+
+The provider’s source URL is empty and the asserted historical MIM 000426 object is not recovered. Completed negative current lookup is not proof of a wrong historical identifier or a replacement identity.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore all seven separately named stocks, their exact millilitre additions and source stock strengths. Represent main batch masses and water separately, retaining unknown final volume. Reconcile source-only stock makeup and the cultivation example before regenerating the target.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Ground the exact cobalt hexahydrate after source verification and preserve its P-IV stock mass. Separately resolve the ungrounded literal phosphate formula without silently substituting a more familiar salt.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Attach source-scoped P-IV preparation and the cultivation example, preserving percent and light-unit uncertainties and distinguishing stock makeup from main liquid additions. Add no unprinted sterilization cycle, flow rate, organism or growth claim.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Reconcile defined/complex classification with the source formulation after stock restructuring; retain liquid state and avoid taxonomy inference from the name or light conditions.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Recover an exact primary reference and the historical MIM correspondence through authorized sources, or preserve explicit unresolved provenance alongside the current provider evidence. Do not substitute another Allen recipe or infer a new legacy mapping from current absence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/Allen_medium.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/allen_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/Allen_medium.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/Allen_medium.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch036/353/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch036/353/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/Allen_medium.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/Allen_medium.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/Allen_medium.yaml:1:id: CultureMech:008820<br>./data/normalized_yaml/bacterial/allen_medium.yaml:1:id: CultureMech:008820<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch036/source-preflight-bound/353/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 18 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| togo2231 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231; $.meta; components[0:8]; comments[0,2,4] | supports | The exact provider is usable for its own Allen formulation, stocks and cultivation example. It does not identify the original primary publication or collection source. |
+| allen-preparation | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231; $.comments[0,2,4] | supports | The cultivation example, pH and P-IV preparation are separate stages. Listed main liquid inputs sum to 237 mL, while the culture example says 250 mL per 300 mL flask. |
+| chebi132108 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_132108; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:132108 resolves to sodium silicate nonahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi16526 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:16526 resolves to carbon dioxide. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29377 resolves to sodium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31404 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31404; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31404 resolves to Citric acid monohydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi35696 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:35696 resolves to cobalt dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi46756 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_46756; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:46756 resolves to HEPES. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:49976 resolves to zinc dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63005 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63005 resolves to sodium nitrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi64758 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64758; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:64758 resolves to EDTA disodium salt dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86254 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86254 resolves to iron trichloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:132108": [{"label": "Na2SiO3 x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:132108", "preferred_term": "Na2SiO3 x 9 H2O", "ontology_id": "CHEBI:132108", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type": "preferred_term", "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63005": [{"label": "NaNO3", "match_type": "preferred_term", "identifier": "CHEBI:63005", "preferred_term": "NaNO3", "ontology_id": "CHEBI:63005", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:64758": [{"label": "Na2EDTA·2H2O", "match_type": "preferred_term", "identifier": "CHEBI:64758", "preferred_term": "Na2EDTA·2H2O", "ontology_id": "CHEBI:64758", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86254": [{"label": "FeCl3 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86254", "preferred_term": "FeCl3 x 6 H2O", "ontology_id": "CHEBI:86254", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/Allen_medium.yaml; data/normalized_yaml/bacterial/allen_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 15, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/allen_medium.yaml", "events": 14, "timestamp_issues": []}] |
+| mim-current-catalog | https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json; Complete pinned 2953-record catalog; exact legacy ID lookup | supports | The exact asserted legacy identifier 000426 is absent from this current pinned catalog. This completed negative result does not establish historical invalidity. |
+| mim-current-tree | https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1; Complete recursive tree at 6643131b0f12ab40b66f98135245fca04027e0e9; truncated=false; exact 000426 filename lookup | supports | No matching legacy path occurs among 7384 tree entries; the historical HEPES correspondence remains unresolved. |
+| writer-0 | src/culturemech/import/togo_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current TOGO code distinguishes named stock references and can retain ambiguous compositions without normalization; its bare-percent unit mapping is not evidence of a percent basis. Duplicate cleanup now preserves disagreement rather than summing batches. Legacy migration uses a current snapshot; neither current code nor a negative current lookup authenticates the historical 000426 assertion. |
+| writer-1 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current TOGO code distinguishes named stock references and can retain ambiguous compositions without normalization; its bare-percent unit mapping is not evidence of a percent basis. Duplicate cleanup now preserves disagreement rather than summing batches. Legacy migration uses a current snapshot; neither current code nor a negative current lookup authenticates the historical 000426 assertion. |
+| writer-2 | scripts/migrate_legacy_mim_to_chebi.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current TOGO code distinguishes named stock references and can retain ambiguous compositions without normalization; its bare-percent unit mapping is not evidence of a percent basis. Duplicate cleanup now preserves disagreement rather than summing batches. Legacy migration uses a current snapshot; neither current code nor a negative current lookup authenticates the historical 000426 assertion. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch036/353/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| grounding-inventory | /private/tmp/culturemech-review-work-batch036/353/grounding-inventory.json; Complete manually assessed local layers and deterministic exact-field serialization | context_only | Exact field paths, original values and historical objects retained; provenance is not primary authentication. |
+| history-inventory | /private/tmp/culturemech-review-work-batch036/353/history-inventory.json; Complete manually assessed local layers and deterministic exact-field serialization | context_only | Exact field paths, original values and historical objects retained; provenance is not primary authentication. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- This scientific assessment preceded formal validation and saving; their results are recorded separately.
+- Partial completion reflects an unidentified required primary source and unresolved historical 000426 correspondence. Exact current MIM lookup completed successfully with a negative result; all available provider quantities and stages were assessed.
+- The source typography 80 lmol m-2 s-1 is retained without silently correcting the unit. No measured final main volume or gas percent basis is inferred.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T194935Z-culturemech-008820-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: allen_medium (CultureMech:008820)'
+started_at: '2026-10-21T19:39:56Z'
+finished_at: '2026-10-21T19:49:35Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: TOGO M2231 distinguishes a main batch, P-IV metals and six separately prepared
+  stock solutions. Both local layers flatten the stocks and convert millilitre doses
+  and water into g/L; 237 mL of listed main liquids is not the separate 250 mL cultivation
+  example or a measured final volume. Cobalt hydration is mismapped. The provider
+  supplies no primary source URL and asserted legacy HEPES 000426 lacks historical
+  correspondence, so the review is partial.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Allen_medium.yaml
+    sha256: eb2e73bcec312d5c6501c4b0c96a456e54e2e96f9be2ab35af9a2ca9fb1dad66
+    role: target
+  - path: data/normalized_yaml/bacterial/allen_medium.yaml
+    sha256: af65045e3fe660fcac57961abcc27a379f88bd45be403f60084a6b7eb4c3c138
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 353; batch 036 item 3 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-five task batches
+    contain 350 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 353 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:008820
+targets:
+- target_id: CultureMech:008820
+  path: data/merge_yaml/merged/Allen_medium.yaml
+  label: allen_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allen_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/Allen_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/Allen_medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch036/353/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch036/353/strict.tsv"
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/Allen_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/Allen_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:008820
+- check_id: exact-primary-correspondence
+  name: Required original primary formulation correspondence
+  required: true
+  status: unavailable
+  summary: TOGO M2231 meta.src_url is empty and no original primary reference is supplied
+    in the captured record. The provider formulation was assessed; no similarly named
+    Allen recipe is substituted.
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - togo2231
+- check_id: legacy-current-lookup
+  name: Exact current legacy MIM lookup
+  required: true
+  status: passed
+  summary: Completed exact 000426 search in the pinned full 2953-record catalog and
+    nontruncated 7384-entry tree; both are negative. This is not a failed retrieval.
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - mim-current-catalog
+  - mim-current-tree
+- check_id: legacy-historical-correspondence
+  name: Required historical HEPES 000426 correspondence
+  required: true
+  status: unavailable
+  summary: The asserted legacy HEPES identifier is not recovered historically. Current
+    absence does not identify its original object, justify a replacement or invalidate
+    active primary CHEBI:46756.
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - record
+  - mim-current-catalog
+  - mim-current-tree
+  - chebi46756
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/Allen_medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T19:49:34Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/allen_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T19:49:34Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/Allen_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:40:53.099311Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/Allen_medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch036/353/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:40:54.290486Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch036/353/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/Allen_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:40:55.755879Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/Allen_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:40:56.720302Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T19:49:34Z'
+  support: supports
+  summary: './data/merge_yaml/merged/Allen_medium.yaml:1:id: CultureMech:008820
+
+    ./data/normalized_yaml/bacterial/allen_medium.yaml:1:id: CultureMech:008820
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/source-preflight-bound/353/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T19:49:34Z'
+  support: supports
+  summary: 18 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 6604fea828a809993684ae6f442e401f756540a5728773d45c78035f4abd47b0
+- evidence_id: togo2231
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231
+  locator: $.meta; components[0:8]; comments[0,2,4]
+  accessed_at: '2026-10-21T19:22:04.815061Z'
+  support: supports
+  summary: The exact provider is usable for its own Allen formulation, stocks and
+    cultivation example. It does not identify the original primary publication or
+    collection source.
+  quote: '"src_url": ""'
+  snapshot_sha256: 2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f
+- evidence_id: allen-preparation
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231
+  locator: $.comments[0,2,4]
+  accessed_at: '2026-10-21T19:22:04.815061Z'
+  support: supports
+  summary: The cultivation example, pH and P-IV preparation are separate stages. Listed
+    main liquid inputs sum to 237 mL, while the culture example says 250 mL per 300
+    mL flask.
+  quote: 250 ml culture per flask
+  snapshot_sha256: 2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f
+- evidence_id: chebi132108
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_132108
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T19:22:05.555188Z'
+  support: supports
+  summary: CHEBI:132108 resolves to sodium silicate nonahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb99641be164f2dd4c1581303ea6433b6ed1c8dc8518ab4af233b7abd7241c6c
+- evidence_id: chebi16526
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.337128Z'
+  support: supports
+  summary: CHEBI:16526 resolves to carbon dioxide. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 19b976653e14322f23a21b90b537bfcd19bb4e73d8d0de96446a25888cd3caf6
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi31404
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31404
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T19:22:05.626470Z'
+  support: supports
+  summary: CHEBI:31404 resolves to Citric acid monohydrate. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 579fae9b40776b3f1d974ec175315f336272febc4cd0cd9043af3f4e4c15754d
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi35696
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T06:57:48.030715Z'
+  support: supports
+  summary: CHEBI:35696 resolves to cobalt dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d9d394d79450b1671c699eaa08d3ef5d66d1f14909f1bd9c464b3d457e37a7ca
+- evidence_id: chebi46756
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_46756
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:27:40.629039Z'
+  support: supports
+  summary: CHEBI:46756 resolves to HEPES. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 4270cc705078ff2f1787f98b7dbcf05c96b1eccd333801a00cff01b855298a69
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: CHEBI:49976 resolves to zinc dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi63005
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T04:02:36.443517Z'
+  support: supports
+  summary: CHEBI:63005 resolves to sodium nitrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 1ec6a815a0e22ba0d12f84ad998bef39b9e6b80cf90c25cd1ab51903bbb54da3
+- evidence_id: chebi64758
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64758
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T15:16:38.372353Z'
+  support: supports
+  summary: CHEBI:64758 resolves to EDTA disodium salt dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 5432921ff4fea3479e93ce6392a2654e3d5560255beb96022793102e776d9647
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86254
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.289392Z'
+  support: supports
+  summary: CHEBI:86254 resolves to iron trichloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T19:49:34Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:132108":
+    [{"label": "Na2SiO3 x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:132108",
+    "preferred_term": "Na2SiO3 x 9 H2O", "ontology_id": "CHEBI:132108", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id":
+    "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium
+    carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377",
+    "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type":
+    "preferred_term", "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id":
+    "CHEBI:49976", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63005":
+    [{"label": "NaNO3", "match_type": "preferred_term", "identifier": "CHEBI:63005",
+    "preferred_term": "NaNO3", "ontology_id": "CHEBI:63005", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:64758": [{"label": "Na2EDTA·2H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:64758", "preferred_term": "Na2EDTA·2H2O",
+    "ontology_id": "CHEBI:64758", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label":
+    "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86254": [{"label": "FeCl3 x 6 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86254", "preferred_term":
+    "FeCl3 x 6 H2O", "ontology_id": "CHEBI:86254", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/Allen_medium.yaml; data/normalized_yaml/bacterial/allen_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T19:49:34Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 15, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/allen_medium.yaml", "events": 14, "timestamp_issues":
+    []}]'
+- evidence_id: mim-current-catalog
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json
+  locator: Complete pinned 2953-record catalog; exact legacy ID lookup
+  accessed_at: '2026-10-21T09:52:30.606764Z'
+  support: supports
+  summary: The exact asserted legacy identifier 000426 is absent from this current
+    pinned catalog. This completed negative result does not establish historical invalidity.
+  snapshot_sha256: 474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7
+- evidence_id: mim-current-tree
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1
+  locator: Complete recursive tree at 6643131b0f12ab40b66f98135245fca04027e0e9; truncated=false;
+    exact 000426 filename lookup
+  accessed_at: '2026-10-21T09:51:04.602158Z'
+  support: supports
+  summary: No matching legacy path occurs among 7384 tree entries; the historical
+    HEPES correspondence remains unresolved.
+  snapshot_sha256: 71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:49:34Z'
+  support: context_only
+  summary: Current TOGO code distinguishes named stock references and can retain ambiguous
+    compositions without normalization; its bare-percent unit mapping is not evidence
+    of a percent basis. Duplicate cleanup now preserves disagreement rather than summing
+    batches. Legacy migration uses a current snapshot; neither current code nor a
+    negative current lookup authenticates the historical 000426 assertion.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:49:34Z'
+  support: context_only
+  summary: Current TOGO code distinguishes named stock references and can retain ambiguous
+    compositions without normalization; its bare-percent unit mapping is not evidence
+    of a percent basis. Duplicate cleanup now preserves disagreement rather than summing
+    batches. Legacy migration uses a current snapshot; neither current code nor a
+    negative current lookup authenticates the historical 000426 assertion.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-2
+  kind: record_content
+  reference: scripts/migrate_legacy_mim_to_chebi.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:49:34Z'
+  support: context_only
+  summary: Current TOGO code distinguishes named stock references and can retain ambiguous
+    compositions without normalization; its bare-percent unit mapping is not evidence
+    of a percent basis. Duplicate cleanup now preserves disagreement rather than summing
+    batches. Legacy migration uses a current snapshot; neither current code nor a
+    negative current lookup authenticates the historical 000426 assertion.
+  snapshot_sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/353/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T19:49:34Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: b7372b01191695652834e21b3f2b100284e3156d146f8491fc382f428edf88cb
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/353/grounding-inventory.json
+  locator: Complete manually assessed local layers and deterministic exact-field serialization
+  accessed_at: '2026-10-21T19:49:34Z'
+  support: context_only
+  summary: Exact field paths, original values and historical objects retained; provenance
+    is not primary authentication.
+  snapshot_sha256: 7ffc10efa1e52bbf5a15d43258aabdddb4c935438f67953f08789b36c9b0cced
+- evidence_id: history-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/353/history-inventory.json
+  locator: Complete manually assessed local layers and deterministic exact-field serialization
+  accessed_at: '2026-10-21T19:49:34Z'
+  support: context_only
+  summary: Exact field paths, original values and historical objects retained; provenance
+    is not primary authentication.
+  snapshot_sha256: c7cdfe297e326d966d9afc7f0327fbd0a87410006c51cfe68db0b5e16c357229
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '14 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 14/23
+    primary and 9/23 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi132108
+  - chebi16526
+  - chebi29377
+  - chebi31404
+  - chebi31795
+  - chebi35696
+  - chebi46756
+  - chebi49976
+  - chebi63005
+  - chebi64758
+  - chebi75213
+  - chebi86158
+  - chebi86254
+  - chebi86368
+  details: 'Instance coverage on a 0–100 percent scale, denominator 23: primary 60.87%;
+    secondary 39.13%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 29 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact provider and maintained ownership
+  outcome: supported
+  summary: The maintained bacterial allen_medium owner shares CultureMech:008820,
+    exact TOGO M2231 identity and scientific fields with the generated target. Merge
+    history is additional provenance, not a new formulation. The provider’s empty
+    source URL prevents primary correspondence; no external similarly named Allen
+    medium is substituted.
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - record
+  - togo2231
+  - owner-0
+- assessment_id: source-stage-consistency
+  area: consistency
+  topic: Stock rates, doses and example volumes
+  outcome: concern
+  summary: All source stock and main rows are separately inventoried. The 207 G_PER_L
+    water combines 200 mL with seven 1 L stock-water numerals. Main additions are
+    1, 5, 5, 5, 10, 10 and 1 mL from the seven named stocks; together with 200 mL
+    water they total 237 mL of listed liquids. Neither that sum nor the distinct 250
+    mL culture example establishes a measured final batch volume.
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - record
+  - togo2231
+  - quantity-inventory
+  - owner-0
+- assessment_id: forms
+  area: grounding
+  topic: Explicit hydrates and unusual phosphate wording
+  outcome: concern
+  summary: P-IV cobalt chloride hexahydrate is assigned anhydrous CHEBI:35696. The
+    source’s K2HPO4·7H2O wording is unusual and ungrounded; preserve that literal
+    uncertainty rather than silently changing formula or assigning a guessed hydrate.
+    Other asserted hydrates, including calcium chloride dihydrate, ferric chloride
+    hexahydrate, disodium EDTA dihydrate, sodium metasilicate nonahydrate and citric
+    acid monohydrate, match the local named forms. Primary HEPES CHEBI:46756 remains
+    valid; legacy 000426 is a separate unresolved correspondence.
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - togo2231
+  - chebi35696
+  - chebi86158
+  - chebi86254
+  - chebi64758
+  - chebi132108
+  - chebi31404
+  - chebi46756
+- assessment_id: preparation
+  area: completeness
+  topic: P-IV preparation and cultivation example
+  outcome: concern
+  summary: Neither layer preserves provider pH 7.8, P-IV initial water about 950 mL,
+    dissolution order with EDTA fully dissolved, makeup to 1 L and storage at 4 °C.
+    The separate example uses 300 mL Erlenmeyer flasks with 250 mL culture, 5% CO2-containing
+    sterile air, 39 °C and continuous irradiation printed as 80 lmol m-2 s-1. Keep
+    the example qualifier and literal light-unit uncertainty. No sterilization cycle
+    is supplied or invented.
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - togo2231
+  - allen-preparation
+  - quantity-inventory
+  - owner-0
+- assessment_id: classification
+  area: scope
+  topic: Defined liquid ingredients and growth limits
+  outcome: concern
+  summary: The listed formulation consists of specified chemicals; COMPLEX/UNDEFINED
+    is unsupported, while LIQUID agrees with the provider’s cultivation example. The
+    bacterial import category and generic Microbial cultivation application do not
+    establish an organism, strain, taxonomy ID or measured growth. No target_organisms,
+    KG match, high_metal Boolean, DOI or PMID is asserted.
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - record
+  - togo2231
+  - owner-0
+- assessment_id: evidence-history
+  area: evidence
+  topic: Provider support and two required unavailable correspondences
+  outcome: unknown
+  summary: Neither layer attaches ingredient or preparation evidence. Exact provider
+    rows support their own stock/batch statements but cannot authenticate an unidentified
+    primary source. The current legacy lookup completed negatively; historical 000426
+    correspondence remains unavailable. These are separate reasons for partial completion,
+    not evidence that the provider formula or active HEPES ID is nonexistent.
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - record
+  - togo2231
+  - mim-current-catalog
+  - mim-current-tree
+  - owner-0
+- assessment_id: ownership
+  area: provenance
+  topic: Maintained repair and history preservation
+  outcome: supported
+  summary: All target/owner history timestamps are timezone-aware; the history array
+    contains later correction entries ahead of earlier imports and must not be treated
+    as a sorted chronology or current primary proof. Repair the maintained stock representation
+    and claim-level evidence before regeneration, preserving original events and access
+    times.
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - record
+  - history-metadata
+  - writer-0
+  - writer-1
+  - writer-2
+  - owner-0
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 40 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:008820
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"ingredient_or_context\": \"\
+    NaNO3\",\n    \"field_path\": \"ingredients[0].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"1.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1.5,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"Main batch / explicitly\
+    \ marked cultivation gas example\",\n    \"primary_source_evidence_id\": \"togo2231\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"togoM2231original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaNO3\\\",\\n          \\\"volume\\\": 1.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[0].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"Retain\
+    \ the printed main-batch mass, not an assumed g/L rate. The source does not state\
+    \ a measured final main volume; listed liquids and a separate culture-vessel example\
+    \ are not interchangeable denominators.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/allen_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\",\n        \"rationale\": \"Retain the printed main-batch mass, not\
+    \ an assumed g/L rate. The source does not state a measured final main volume;\
+    \ listed liquids and a separate culture-vessel example are not interchangeable\
+    \ denominators.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"Retain the\
+    \ printed main-batch mass, not an assumed g/L rate. The source does not state\
+    \ a measured final main volume; listed liquids and a separate culture-vessel example\
+    \ are not interchangeable denominators.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q2\",\n    \"ingredient_or_context\": \"Deionized water\",\n    \"field_path\"\
+    : \"ingredients[1].concentration\",\n    \"local\": {\n      \"value\": \"207.0\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": 200,\n    \"source_unit\"\
+    : \"ml\",\n    \"source_stage\": \"Main batch / explicitly marked cultivation\
+    \ gas example\",\n    \"primary_source_evidence_id\": \"togo2231\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM2231original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Deionized water\\\",\\n          \\\"volume\\\"\
+    : 200,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"207.0\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"Source main\
+    \ water is 200 mL. Local 207 G_PER_L adds the numeral 200 to seven 1 L stock-water\
+    \ entries without unit or stage conversion; this is neither 207 mL nor a valid\
+    \ water mass concentration.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"207.0\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"Source main\
+    \ water is 200 mL. Local 207 G_PER_L adds the numeral 200 to seven 1 L stock-water\
+    \ entries without unit or stage conversion; this is neither 207 mL nor a valid\
+    \ water mass concentration.\"\n      }\n    ],\n    \"arithmetic_and_scope\":\
+    \ \"Source main water is 200 mL. Local 207 G_PER_L adds the numeral 200 to seven\
+    \ 1 L stock-water entries without unit or stage conversion; this is neither 207\
+    \ mL nor a valid water mass concentration.\"\n  },\n  {\n    \"quantity_id\":\
+    \ \"q3\",\n    \"ingredient_or_context\": \"HEPES buffer\",\n    \"field_path\"\
+    : \"ingredients[2].concentration\",\n    \"local\": {\n      \"value\": \"2.3\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": 2.3,\n    \"source_unit\"\
+    : \"g\",\n    \"source_stage\": \"Main batch / explicitly marked cultivation gas\
+    \ example\",\n    \"primary_source_evidence_id\": \"togo2231\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM2231original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"HEPES buffer\\\",\\n          \\\"volume\\\":\
+    \ 2.3,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Retain the printed\
+    \ main-batch mass, not an assumed g/L rate. The source does not state a measured\
+    \ final main volume; listed liquids and a separate culture-vessel example are\
+    \ not interchangeable denominators.\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/allen_medium.yaml\",\n        \"field_path\": \"\
+    ingredients[2].concentration\",\n        \"stored\": {\n          \"value\": \"\
+    2.3\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"\
+    correct\",\n        \"rationale\": \"Retain the printed main-batch mass, not an\
+    \ assumed g/L rate. The source does not state a measured final main volume; listed\
+    \ liquids and a separate culture-vessel example are not interchangeable denominators.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"Retain the printed main-batch\
+    \ mass, not an assumed g/L rate. The source does not state a measured final main\
+    \ volume; listed liquids and a separate culture-vessel example are not interchangeable\
+    \ denominators.\"\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"ingredient_or_context\"\
+    : \"K2HPO4·7H2O (6 g/L)\",\n    \"field_path\": \"ingredients[3].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": 5,\n    \"source_unit\": \"ml\",\n    \"source_stage\"\
+    : \"Main batch / explicitly marked cultivation gas example\",\n    \"primary_source_evidence_id\"\
+    : \"togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2HPO4·7H2O (6 g/L)\\\",\\n          \\\"volume\\\
+    \": 5,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This source row\
+    \ is a millilitre addition of the named separately prepared stock, not that many\
+    \ grams per litre of the solute. Restore the source stock strength and its dose,\
+    \ excluding undiluted stock ingredients from the main batch. Final main volume\
+    \ remains unstated.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This source row\
+    \ is a millilitre addition of the named separately prepared stock, not that many\
+    \ grams per litre of the solute. Restore the source stock strength and its dose,\
+    \ excluding undiluted stock ingredients from the main batch. Final main volume\
+    \ remains unstated.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This source\
+    \ row is a millilitre addition of the named separately prepared stock, not that\
+    \ many grams per litre of the solute. Restore the source stock strength and its\
+    \ dose, excluding undiluted stock ingredients from the main batch. Final main\
+    \ volume remains unstated.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"\
+    ingredient_or_context\": \"MgSO4·7H2O (6 g/L)\",\n    \"field_path\": \"ingredients[4].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": 5,\n    \"source_unit\": \"ml\",\n    \"source_stage\"\
+    : \"Main batch / explicitly marked cultivation gas example\",\n    \"primary_source_evidence_id\"\
+    : \"togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgSO4·7H2O (6 g/L)\\\",\\n          \\\"volume\\\
+    \": 5,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This source row\
+    \ is a millilitre addition of the named separately prepared stock, not that many\
+    \ grams per litre of the solute. Restore the source stock strength and its dose,\
+    \ excluding undiluted stock ingredients from the main batch. Final main volume\
+    \ remains unstated.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This source row\
+    \ is a millilitre addition of the named separately prepared stock, not that many\
+    \ grams per litre of the solute. Restore the source stock strength and its dose,\
+    \ excluding undiluted stock ingredients from the main batch. Final main volume\
+    \ remains unstated.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This source\
+    \ row is a millilitre addition of the named separately prepared stock, not that\
+    \ many grams per litre of the solute. Restore the source stock strength and its\
+    \ dose, excluding undiluted stock ingredients from the main batch. Final main\
+    \ volume remains unstated.\"\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"\
+    ingredient_or_context\": \"Na2CO3 (4 g/L)\",\n    \"field_path\": \"ingredients[5].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": 5,\n    \"source_unit\": \"ml\",\n    \"source_stage\"\
+    : \"Main batch / explicitly marked cultivation gas example\",\n    \"primary_source_evidence_id\"\
+    : \"togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[0].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2CO3 (4 g/L)\\\",\\n          \\\"volume\\\"\
+    : 5,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This source row\
+    \ is a millilitre addition of the named separately prepared stock, not that many\
+    \ grams per litre of the solute. Restore the source stock strength and its dose,\
+    \ excluding undiluted stock ingredients from the main batch. Final main volume\
+    \ remains unstated.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This source row\
+    \ is a millilitre addition of the named separately prepared stock, not that many\
+    \ grams per litre of the solute. Restore the source stock strength and its dose,\
+    \ excluding undiluted stock ingredients from the main batch. Final main volume\
+    \ remains unstated.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This source\
+    \ row is a millilitre addition of the named separately prepared stock, not that\
+    \ many grams per litre of the solute. Restore the source stock strength and its\
+    \ dose, excluding undiluted stock ingredients from the main batch. Final main\
+    \ volume remains unstated.\"\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"\
+    ingredient_or_context\": \"CaCl2·2H2O (2.5 g/L)\",\n    \"field_path\": \"ingredients[6].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"10\",\n      \"unit\": \"G_PER_L\"\n \
+    \   },\n    \"source_amount\": 10,\n    \"source_unit\": \"ml\",\n    \"source_stage\"\
+    : \"Main batch / explicitly marked cultivation gas example\",\n    \"primary_source_evidence_id\"\
+    : \"togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[0].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaCl2·2H2O (2.5 g/L)\\\",\\n          \\\"volume\\\
+    \": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\":\
+    \ \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This source row\
+    \ is a millilitre addition of the named separately prepared stock, not that many\
+    \ grams per litre of the solute. Restore the source stock strength and its dose,\
+    \ excluding undiluted stock ingredients from the main batch. Final main volume\
+    \ remains unstated.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This source row\
+    \ is a millilitre addition of the named separately prepared stock, not that many\
+    \ grams per litre of the solute. Restore the source stock strength and its dose,\
+    \ excluding undiluted stock ingredients from the main batch. Final main volume\
+    \ remains unstated.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This source\
+    \ row is a millilitre addition of the named separately prepared stock, not that\
+    \ many grams per litre of the solute. Restore the source stock strength and its\
+    \ dose, excluding undiluted stock ingredients from the main batch. Final main\
+    \ volume remains unstated.\"\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"\
+    ingredient_or_context\": \"Na2SiO3·9H2O (4.64 g/L)\",\n    \"field_path\": \"\
+    ingredients[7].concentration\",\n    \"local\": {\n      \"value\": \"10\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": 10,\n    \"source_unit\"\
+    : \"ml\",\n    \"source_stage\": \"Main batch / explicitly marked cultivation\
+    \ gas example\",\n    \"primary_source_evidence_id\": \"togo2231\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM2231original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.components[0].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2SiO3·9H2O (4.64 g/L)\\\",\\n          \\\"\
+    volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\"\
+    : \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This source row\
+    \ is a millilitre addition of the named separately prepared stock, not that many\
+    \ grams per litre of the solute. Restore the source stock strength and its dose,\
+    \ excluding undiluted stock ingredients from the main batch. Final main volume\
+    \ remains unstated.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This source row\
+    \ is a millilitre addition of the named separately prepared stock, not that many\
+    \ grams per litre of the solute. Restore the source stock strength and its dose,\
+    \ excluding undiluted stock ingredients from the main batch. Final main volume\
+    \ remains unstated.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This source\
+    \ row is a millilitre addition of the named separately prepared stock, not that\
+    \ many grams per litre of the solute. Restore the source stock strength and its\
+    \ dose, excluding undiluted stock ingredients from the main batch. Final main\
+    \ volume remains unstated.\"\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"\
+    ingredient_or_context\": \"Citric acid·H2O (4.8 g/L)\",\n    \"field_path\": \"\
+    ingredients[8].concentration\",\n    \"local\": {\n      \"value\": \"1\",\n \
+    \     \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": 1,\n    \"source_unit\"\
+    : \"ml\",\n    \"source_stage\": \"Main batch / explicitly marked cultivation\
+    \ gas example\",\n    \"primary_source_evidence_id\": \"togo2231\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM2231original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.components[0].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Citric acid·H2O (4.8 g/L)\\\",\\n          \\\"\
+    volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\"\
+    : \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This source row\
+    \ is a millilitre addition of the named separately prepared stock, not that many\
+    \ grams per litre of the solute. Restore the source stock strength and its dose,\
+    \ excluding undiluted stock ingredients from the main batch. Final main volume\
+    \ remains unstated.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This source row\
+    \ is a millilitre addition of the named separately prepared stock, not that many\
+    \ grams per litre of the solute. Restore the source stock strength and its dose,\
+    \ excluding undiluted stock ingredients from the main batch. Final main volume\
+    \ remains unstated.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This source\
+    \ row is a millilitre addition of the named separately prepared stock, not that\
+    \ many grams per litre of the solute. Restore the source stock strength and its\
+    \ dose, excluding undiluted stock ingredients from the main batch. Final main\
+    \ volume remains unstated.\"\n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"\
+    ingredient_or_context\": \"CO2\",\n    \"field_path\": \"ingredients[9].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"variable\",\n      \"unit\": \"VARIABLE\"\
+    \n    },\n    \"source_amount\": 5,\n    \"source_unit\": \"%\",\n    \"source_stage\"\
+    : \"Main batch / explicitly marked cultivation gas example\",\n    \"primary_source_evidence_id\"\
+    : \"togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[0].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CO2\\\",\\n          \\\"conc_value\\\": 5,\\\
+    n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[9].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"The\
+    \ provider specifies 5% CO2 in sterile air for the cultivation example, but does\
+    \ not state a percent basis or gas flow. Preserve the percentage in scoped prose\
+    \ without inventing PERCENT_V_V or a molar rate; VARIABLE alone hides the known\
+    \ example ratio.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"correct\",\n        \"rationale\": \"The provider\
+    \ specifies 5% CO2 in sterile air for the cultivation example, but does not state\
+    \ a percent basis or gas flow. Preserve the percentage in scoped prose without\
+    \ inventing PERCENT_V_V or a molar rate; VARIABLE alone hides the known example\
+    \ ratio.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The provider specifies\
+    \ 5% CO2 in sterile air for the cultivation example, but does not state a percent\
+    \ basis or gas flow. Preserve the percentage in scoped prose without inventing\
+    \ PERCENT_V_V or a molar rate; VARIABLE alone hides the known example ratio.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"ingredient_or_context\": \"\
+    Sterile air\",\n    \"field_path\": \"ingredients[10].concentration\",\n    \"\
+    local\": {\n      \"value\": \"variable\",\n      \"unit\": \"VARIABLE\"\n   \
+    \ },\n    \"source_amount\": null,\n    \"source_unit\": null,\n    \"source_stage\"\
+    : \"Main batch / explicitly marked cultivation gas example\",\n    \"primary_source_evidence_id\"\
+    : \"togo2231\",\n    \"decision\": \"not_quantified\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[0].items[11]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Sterile air\\\"\",\n        \"snapshot_sha256\"\
+    : \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\",\n        \"rationale\": \"\
+    Sterile air is part of the cultivation gas context but no flow, dose or amount\
+    \ is given. Retain an unquantified value and attach the exact example scope; do\
+    \ not infer a 95% balance as an independently printed quantity.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\",\n        \"rationale\": \"\
+    Sterile air is part of the cultivation gas context but no flow, dose or amount\
+    \ is given. Retain an unquantified value and attach the exact example scope; do\
+    \ not infer a 95% balance as an independently printed quantity.\"\n      }\n \
+    \   ],\n    \"arithmetic_and_scope\": \"Sterile air is part of the cultivation\
+    \ gas context but no flow, dose or amount is given. Retain an unquantified value\
+    \ and attach the exact example scope; do not infer a 95% balance as an independently\
+    \ printed quantity.\"\n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"ingredient_or_context\"\
+    : \"P-IV metal solution\",\n    \"field_path\": \"solutions[0].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": 1,\n    \"source_unit\": \"ml\",\n    \"source_stage\"\
+    : \"P-IV stock addition to main batch\",\n    \"primary_source_evidence_id\":\
+    \ \"togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"P-IV metal solution\\\",\\n          \\\"volume\\\
+    \": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"solutions[0].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The source dose\
+    \ is 1 mL of P-IV, not 1 g/L. Rebuild its exact separate composition; no asserted\
+    \ 6129 identity occurs here and none is imported by analogy.\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The source dose\
+    \ is 1 mL of P-IV, not 1 g/L. Rebuild its exact separate composition; no asserted\
+    \ 6129 identity occurs here and none is imported by analogy.\"\n      }\n    ],\n\
+    \    \"arithmetic_and_scope\": \"The source dose is 1 mL of P-IV, not 1 g/L. Rebuild\
+    \ its exact separate composition; no asserted 6129 identity occurs here and none\
+    \ is imported by analogy.\"\n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"\
+    ingredient_or_context\": \"Na2MoO4·2H2O\",\n    \"field_path\": \"ingredients[11].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"0.004\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_amount\": 0.004,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"P-IV stock; explicit makeup to 1 L\",\n    \"primary_source_evidence_id\"\
+    : \"togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4·2H2O\\\",\\n          \\\"volume\\\":\
+    \ 0.004,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\":\
+    \ \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.004\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This amount\
+    \ belongs to the separately made-up 1 L P-IV stock. Its source composition rate\
+    \ may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.004\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This amount\
+    \ belongs to the separately made-up 1 L P-IV stock. Its source composition rate\
+    \ may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This\
+    \ amount belongs to the separately made-up 1 L P-IV stock. Its source composition\
+    \ rate may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"ingredient_or_context\"\
+    : \"MnCl2·4H2O\",\n    \"field_path\": \"ingredients[12].concentration\",\n  \
+    \  \"local\": {\n      \"value\": \"0.041\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": 0.041,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"P-IV stock; explicit makeup to 1 L\",\n    \"primary_source_evidence_id\"\
+    : \"togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MnCl2·4H2O\\\",\\n          \\\"volume\\\": 0.041,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[12].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"0.041\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"This\
+    \ amount belongs to the separately made-up 1 L P-IV stock. Its source composition\
+    \ rate may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.041\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This amount\
+    \ belongs to the separately made-up 1 L P-IV stock. Its source composition rate\
+    \ may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This\
+    \ amount belongs to the separately made-up 1 L P-IV stock. Its source composition\
+    \ rate may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"ingredient_or_context\"\
+    : \"CoCl2·6H2O\",\n    \"field_path\": \"ingredients[13].concentration\",\n  \
+    \  \"local\": {\n      \"value\": \"0.002\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": 0.002,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"P-IV stock; explicit makeup to 1 L\",\n    \"primary_source_evidence_id\"\
+    : \"togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CoCl2·6H2O\\\",\\n          \\\"volume\\\": 0.002,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[13].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"This\
+    \ amount belongs to the separately made-up 1 L P-IV stock. Its source composition\
+    \ rate may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This amount\
+    \ belongs to the separately made-up 1 L P-IV stock. Its source composition rate\
+    \ may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This\
+    \ amount belongs to the separately made-up 1 L P-IV stock. Its source composition\
+    \ rate may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"ingredient_or_context\"\
+    : \"ZnCl2\",\n    \"field_path\": \"ingredients[14].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"0.005\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"\
+    source_amount\": 0.005,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"\
+    P-IV stock; explicit makeup to 1 L\",\n    \"primary_source_evidence_id\": \"\
+    togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"ZnCl2\\\",\\n          \\\"volume\\\": 0.005,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[14].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"This\
+    \ amount belongs to the separately made-up 1 L P-IV stock. Its source composition\
+    \ rate may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This amount\
+    \ belongs to the separately made-up 1 L P-IV stock. Its source composition rate\
+    \ may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This\
+    \ amount belongs to the separately made-up 1 L P-IV stock. Its source composition\
+    \ rate may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"ingredient_or_context\"\
+    : \"FeCl3·6H2O\",\n    \"field_path\": \"ingredients[15].concentration\",\n  \
+    \  \"local\": {\n      \"value\": \"0.097\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": 0.097,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"P-IV stock; explicit makeup to 1 L\",\n    \"primary_source_evidence_id\"\
+    : \"togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"FeCl3·6H2O\\\",\\n          \\\"volume\\\": 0.097,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[15].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"0.097\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"This\
+    \ amount belongs to the separately made-up 1 L P-IV stock. Its source composition\
+    \ rate may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.097\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This amount\
+    \ belongs to the separately made-up 1 L P-IV stock. Its source composition rate\
+    \ may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This\
+    \ amount belongs to the separately made-up 1 L P-IV stock. Its source composition\
+    \ rate may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"ingredient_or_context\"\
+    : \"Deionized water\",\n    \"field_path\": \"ingredients[1].concentration\",\n\
+    \    \"local\": {\n      \"value\": \"207.0\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_amount\": 1,\n    \"source_unit\": \"L\",\n    \"source_stage\"\
+    : \"P-IV stock; explicit makeup to 1 L\",\n    \"primary_source_evidence_id\"\
+    : \"togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Deionized water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[1].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"207.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"P-IV\
+    \ stock water is brought to 1 L after initial approximately 950 mL dissolution.\
+    \ It is not another main water addition or part of the local 207 G_PER_L mass.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"207.0\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"P-IV stock\
+    \ water is brought to 1 L after initial approximately 950 mL dissolution. It is\
+    \ not another main water addition or part of the local 207 G_PER_L mass.\"\n \
+    \     }\n    ],\n    \"arithmetic_and_scope\": \"P-IV stock water is brought to\
+    \ 1 L after initial approximately 950 mL dissolution. It is not another main water\
+    \ addition or part of the local 207 G_PER_L mass.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q19\",\n    \"ingredient_or_context\": \"Na2EDTA·2H2O\",\n    \"field_path\"\
+    : \"ingredients[16].concentration\",\n    \"local\": {\n      \"value\": \"0.75\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": 0.75,\n    \"source_unit\"\
+    : \"g\",\n    \"source_stage\": \"P-IV stock; explicit makeup to 1 L\",\n    \"\
+    primary_source_evidence_id\": \"togo2231\",\n    \"decision\": \"correct\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2231original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2EDTA·2H2O\\\",\\n          \\\"volume\\\":\
+    \ 0.75,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.75\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This amount\
+    \ belongs to the separately made-up 1 L P-IV stock. Its source composition rate\
+    \ may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.75\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This amount\
+    \ belongs to the separately made-up 1 L P-IV stock. Its source composition rate\
+    \ may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This\
+    \ amount belongs to the separately made-up 1 L P-IV stock. Its source composition\
+    \ rate may be represented within that stock; the 1 mL main dose contributes one-thousandth\
+    \ of the stock mass, not the full g/L as a main ingredient. No final main-medium\
+    \ denominator is known.\"\n  },\n  {\n    \"quantity_id\": \"q20\",\n    \"ingredient_or_context\"\
+    : \"K2HPO4·7H2O\",\n    \"field_path\": \"ingredients[17].concentration\",\n \
+    \   \"local\": {\n      \"value\": \"6\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 6,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Separate named stock section 2\",\n    \"primary_source_evidence_id\": \"\
+    togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2HPO4·7H2O\\\",\\n          \\\"volume\\\": 6,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[17].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"This\
+    \ is the separately stated stock batch/strength, not an undiluted main ingredient.\
+    \ Its named g/L stock strength and stated mL dose support stock-only delivered-mass\
+    \ arithmetic; no final main g/L can be calculated without a supported denominator.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is the separately\
+    \ stated stock batch/strength, not an undiluted main ingredient. Its named g/L\
+    \ stock strength and stated mL dose support stock-only delivered-mass arithmetic;\
+    \ no final main g/L can be calculated without a supported denominator.\"\n   \
+    \   }\n    ],\n    \"arithmetic_and_scope\": \"This is the separately stated stock\
+    \ batch/strength, not an undiluted main ingredient. Its named g/L stock strength\
+    \ and stated mL dose support stock-only delivered-mass arithmetic; no final main\
+    \ g/L can be calculated without a supported denominator.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q21\",\n    \"ingredient_or_context\": \"Deionized water\",\n\
+    \    \"field_path\": \"ingredients[1].concentration\",\n    \"local\": {\n   \
+    \   \"value\": \"207.0\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"L\",\n    \"source_stage\": \"Separate named stock\
+    \ section 2\",\n    \"primary_source_evidence_id\": \"togo2231\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM2231original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Deionized water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[1].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"207.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"The\
+    \ separately prepared stock has its own 1 L water entry. Do not add that whole\
+    \ stock volume to the receiving batch or convert it to a water mass.\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"207.0\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"The separately\
+    \ prepared stock has its own 1 L water entry. Do not add that whole stock volume\
+    \ to the receiving batch or convert it to a water mass.\"\n      }\n    ],\n \
+    \   \"arithmetic_and_scope\": \"The separately prepared stock has its own 1 L\
+    \ water entry. Do not add that whole stock volume to the receiving batch or convert\
+    \ it to a water mass.\"\n  },\n  {\n    \"quantity_id\": \"q22\",\n    \"ingredient_or_context\"\
+    : \"MgSO4·7H2O\",\n    \"field_path\": \"ingredients[18].concentration\",\n  \
+    \  \"local\": {\n      \"value\": \"6\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 6,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Separate named stock section 3\",\n    \"primary_source_evidence_id\": \"\
+    togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgSO4·7H2O\\\",\\n          \\\"volume\\\": 6,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[18].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"This\
+    \ is the separately stated stock batch/strength, not an undiluted main ingredient.\
+    \ Its named g/L stock strength and stated mL dose support stock-only delivered-mass\
+    \ arithmetic; no final main g/L can be calculated without a supported denominator.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is the separately\
+    \ stated stock batch/strength, not an undiluted main ingredient. Its named g/L\
+    \ stock strength and stated mL dose support stock-only delivered-mass arithmetic;\
+    \ no final main g/L can be calculated without a supported denominator.\"\n   \
+    \   }\n    ],\n    \"arithmetic_and_scope\": \"This is the separately stated stock\
+    \ batch/strength, not an undiluted main ingredient. Its named g/L stock strength\
+    \ and stated mL dose support stock-only delivered-mass arithmetic; no final main\
+    \ g/L can be calculated without a supported denominator.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q23\",\n    \"ingredient_or_context\": \"Deionized water\",\n\
+    \    \"field_path\": \"ingredients[1].concentration\",\n    \"local\": {\n   \
+    \   \"value\": \"207.0\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"L\",\n    \"source_stage\": \"Separate named stock\
+    \ section 3\",\n    \"primary_source_evidence_id\": \"togo2231\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM2231original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.components[3].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Deionized water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[1].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"207.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"The\
+    \ separately prepared stock has its own 1 L water entry. Do not add that whole\
+    \ stock volume to the receiving batch or convert it to a water mass.\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"207.0\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"The separately\
+    \ prepared stock has its own 1 L water entry. Do not add that whole stock volume\
+    \ to the receiving batch or convert it to a water mass.\"\n      }\n    ],\n \
+    \   \"arithmetic_and_scope\": \"The separately prepared stock has its own 1 L\
+    \ water entry. Do not add that whole stock volume to the receiving batch or convert\
+    \ it to a water mass.\"\n  },\n  {\n    \"quantity_id\": \"q24\",\n    \"ingredient_or_context\"\
+    : \"Na2CO3\",\n    \"field_path\": \"ingredients[19].concentration\",\n    \"\
+    local\": {\n      \"value\": \"4\",\n      \"unit\": \"G_PER_L\"\n    },\n   \
+    \ \"source_amount\": 4,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"\
+    Separate named stock section 4\",\n    \"primary_source_evidence_id\": \"togo2231\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"togoM2231original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.components[4].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2CO3\\\",\\n          \\\"volume\\\": 4,\\n\
+    \          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[19].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"4\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"This\
+    \ is the separately stated stock batch/strength, not an undiluted main ingredient.\
+    \ Its named g/L stock strength and stated mL dose support stock-only delivered-mass\
+    \ arithmetic; no final main g/L can be calculated without a supported denominator.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is the separately\
+    \ stated stock batch/strength, not an undiluted main ingredient. Its named g/L\
+    \ stock strength and stated mL dose support stock-only delivered-mass arithmetic;\
+    \ no final main g/L can be calculated without a supported denominator.\"\n   \
+    \   }\n    ],\n    \"arithmetic_and_scope\": \"This is the separately stated stock\
+    \ batch/strength, not an undiluted main ingredient. Its named g/L stock strength\
+    \ and stated mL dose support stock-only delivered-mass arithmetic; no final main\
+    \ g/L can be calculated without a supported denominator.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q25\",\n    \"ingredient_or_context\": \"Deionized water\",\n\
+    \    \"field_path\": \"ingredients[1].concentration\",\n    \"local\": {\n   \
+    \   \"value\": \"207.0\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"L\",\n    \"source_stage\": \"Separate named stock\
+    \ section 4\",\n    \"primary_source_evidence_id\": \"togo2231\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM2231original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.components[4].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Deionized water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[1].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"207.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"The\
+    \ separately prepared stock has its own 1 L water entry. Do not add that whole\
+    \ stock volume to the receiving batch or convert it to a water mass.\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"207.0\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"The separately\
+    \ prepared stock has its own 1 L water entry. Do not add that whole stock volume\
+    \ to the receiving batch or convert it to a water mass.\"\n      }\n    ],\n \
+    \   \"arithmetic_and_scope\": \"The separately prepared stock has its own 1 L\
+    \ water entry. Do not add that whole stock volume to the receiving batch or convert\
+    \ it to a water mass.\"\n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"ingredient_or_context\"\
+    : \"CaCl2·2H2O\",\n    \"field_path\": \"ingredients[20].concentration\",\n  \
+    \  \"local\": {\n      \"value\": \"2.5\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 2.5,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Separate named stock section 5\",\n    \"primary_source_evidence_id\": \"\
+    togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[5].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaCl2·2H2O\\\",\\n          \\\"volume\\\": 2.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[20].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"This\
+    \ is the separately stated stock batch/strength, not an undiluted main ingredient.\
+    \ Its named g/L stock strength and stated mL dose support stock-only delivered-mass\
+    \ arithmetic; no final main g/L can be calculated without a supported denominator.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is the separately\
+    \ stated stock batch/strength, not an undiluted main ingredient. Its named g/L\
+    \ stock strength and stated mL dose support stock-only delivered-mass arithmetic;\
+    \ no final main g/L can be calculated without a supported denominator.\"\n   \
+    \   }\n    ],\n    \"arithmetic_and_scope\": \"This is the separately stated stock\
+    \ batch/strength, not an undiluted main ingredient. Its named g/L stock strength\
+    \ and stated mL dose support stock-only delivered-mass arithmetic; no final main\
+    \ g/L can be calculated without a supported denominator.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q27\",\n    \"ingredient_or_context\": \"Deionized water\",\n\
+    \    \"field_path\": \"ingredients[1].concentration\",\n    \"local\": {\n   \
+    \   \"value\": \"207.0\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"L\",\n    \"source_stage\": \"Separate named stock\
+    \ section 5\",\n    \"primary_source_evidence_id\": \"togo2231\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM2231original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.components[5].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Deionized water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[1].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"207.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"The\
+    \ separately prepared stock has its own 1 L water entry. Do not add that whole\
+    \ stock volume to the receiving batch or convert it to a water mass.\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"207.0\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"The separately\
+    \ prepared stock has its own 1 L water entry. Do not add that whole stock volume\
+    \ to the receiving batch or convert it to a water mass.\"\n      }\n    ],\n \
+    \   \"arithmetic_and_scope\": \"The separately prepared stock has its own 1 L\
+    \ water entry. Do not add that whole stock volume to the receiving batch or convert\
+    \ it to a water mass.\"\n  },\n  {\n    \"quantity_id\": \"q28\",\n    \"ingredient_or_context\"\
+    : \"Na2SiO3·9H2O\",\n    \"field_path\": \"ingredients[21].concentration\",\n\
+    \    \"local\": {\n      \"value\": \"4.64\",\n      \"unit\": \"G_PER_L\"\n \
+    \   },\n    \"source_amount\": 4.64,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Separate named stock section 6\",\n    \"primary_source_evidence_id\": \"\
+    togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[6].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2SiO3·9H2O\\\",\\n          \\\"volume\\\":\
+    \ 4.64,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.64\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This is the\
+    \ separately stated stock batch/strength, not an undiluted main ingredient. Its\
+    \ named g/L stock strength and stated mL dose support stock-only delivered-mass\
+    \ arithmetic; no final main g/L can be calculated without a supported denominator.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.64\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This is the\
+    \ separately stated stock batch/strength, not an undiluted main ingredient. Its\
+    \ named g/L stock strength and stated mL dose support stock-only delivered-mass\
+    \ arithmetic; no final main g/L can be calculated without a supported denominator.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"This is the separately stated\
+    \ stock batch/strength, not an undiluted main ingredient. Its named g/L stock\
+    \ strength and stated mL dose support stock-only delivered-mass arithmetic; no\
+    \ final main g/L can be calculated without a supported denominator.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q29\",\n    \"ingredient_or_context\": \"Deionized\
+    \ water\",\n    \"field_path\": \"ingredients[1].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"207.0\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"\
+    source_amount\": 1,\n    \"source_unit\": \"L\",\n    \"source_stage\": \"Separate\
+    \ named stock section 6\",\n    \"primary_source_evidence_id\": \"togo2231\",\n\
+    \    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"togoM2231original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.components[6].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Deionized water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[1].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"207.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"The\
+    \ separately prepared stock has its own 1 L water entry. Do not add that whole\
+    \ stock volume to the receiving batch or convert it to a water mass.\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"207.0\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"The separately\
+    \ prepared stock has its own 1 L water entry. Do not add that whole stock volume\
+    \ to the receiving batch or convert it to a water mass.\"\n      }\n    ],\n \
+    \   \"arithmetic_and_scope\": \"The separately prepared stock has its own 1 L\
+    \ water entry. Do not add that whole stock volume to the receiving batch or convert\
+    \ it to a water mass.\"\n  },\n  {\n    \"quantity_id\": \"q30\",\n    \"ingredient_or_context\"\
+    : \"Deionized water\",\n    \"field_path\": \"ingredients[1].concentration\",\n\
+    \    \"local\": {\n      \"value\": \"207.0\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_amount\": 1,\n    \"source_unit\": \"L\",\n    \"source_stage\"\
+    : \"Separate named stock section 7\",\n    \"primary_source_evidence_id\": \"\
+    togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[7].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Deionized water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[1].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"207.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"The\
+    \ separately prepared stock has its own 1 L water entry. Do not add that whole\
+    \ stock volume to the receiving batch or convert it to a water mass.\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"207.0\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"The separately\
+    \ prepared stock has its own 1 L water entry. Do not add that whole stock volume\
+    \ to the receiving batch or convert it to a water mass.\"\n      }\n    ],\n \
+    \   \"arithmetic_and_scope\": \"The separately prepared stock has its own 1 L\
+    \ water entry. Do not add that whole stock volume to the receiving batch or convert\
+    \ it to a water mass.\"\n  },\n  {\n    \"quantity_id\": \"q31\",\n    \"ingredient_or_context\"\
+    : \"Citric acid·H2O\",\n    \"field_path\": \"ingredients[22].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"4.8\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_amount\": 4.8,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Separate named stock section 7\",\n    \"primary_source_evidence_id\": \"\
+    togo2231\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.components[7].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Citric acid·H2O\\\",\\n          \\\"volume\\\"\
+    : 4.8,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.8\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is the separately\
+    \ stated stock batch/strength, not an undiluted main ingredient. Its named g/L\
+    \ stock strength and stated mL dose support stock-only delivered-mass arithmetic;\
+    \ no final main g/L can be calculated without a supported denominator.\"\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.8\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is the separately\
+    \ stated stock batch/strength, not an undiluted main ingredient. Its named g/L\
+    \ stock strength and stated mL dose support stock-only delivered-mass arithmetic;\
+    \ no final main g/L can be calculated without a supported denominator.\"\n   \
+    \   }\n    ],\n    \"arithmetic_and_scope\": \"This is the separately stated stock\
+    \ batch/strength, not an undiluted main ingredient. Its named g/L stock strength\
+    \ and stated mL dose support stock-only delivered-mass arithmetic; no final main\
+    \ g/L can be calculated without a supported denominator.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q32\",\n    \"ingredient_or_context\": \"Cultivation vessel capacity\"\
+    ,\n    \"field_path\": \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\"\
+    : \"300\",\n    \"source_unit\": \"mL\",\n    \"source_stage\": \"Source cultivation\
+    \ example\",\n    \"primary_source_evidence_id\": \"togo2231\",\n    \"decision\"\
+    : \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2231original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.comments[0]\",\n        \"exact_source_quote\"\
+    : \"300 ml Erlenmeyer flasks\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Vessel capacity\
+    \ only; not a medium batch or final concentration denominator.\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Vessel capacity only;\
+    \ not a medium batch or final concentration denominator.\"\n      }\n    ],\n\
+    \    \"arithmetic_and_scope\": \"Vessel capacity only; not a medium batch or final\
+    \ concentration denominator.\"\n  },\n  {\n    \"quantity_id\": \"q33\",\n   \
+    \ \"ingredient_or_context\": \"Culture fill example\",\n    \"field_path\": \"\
+    preparation_steps\",\n    \"local\": null,\n    \"source_amount\": \"250\",\n\
+    \    \"source_unit\": \"mL\",\n    \"source_stage\": \"Source cultivation example\"\
+    ,\n    \"primary_source_evidence_id\": \"togo2231\",\n    \"decision\": \"add\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2231original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.comments[0]\",\n        \"exact_source_quote\"\
+    : \"250 ml culture per flask\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Example culture\
+    \ fill only; not an instruction to make the listed recipe up to 250 mL. Listed\
+    \ main liquids sum to 237 mL.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Example culture fill\
+    \ only; not an instruction to make the listed recipe up to 250 mL. Listed main\
+    \ liquids sum to 237 mL.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    Example culture fill only; not an instruction to make the listed recipe up to\
+    \ 250 mL. Listed main liquids sum to 237 mL.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q34\",\n    \"ingredient_or_context\": \"Example gas composition\",\n    \"\
+    field_path\": \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\"\
+    : \"5\",\n    \"source_unit\": \"% CO2, basis unqualified\",\n    \"source_stage\"\
+    : \"Source cultivation example\",\n    \"primary_source_evidence_id\": \"togo2231\"\
+    ,\n    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"togoM2231original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.comments[0]\",\n        \"exact_source_quote\"\
+    : \"5% CO2 containing sterile air\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Retain percent\
+    \ wording; no gas-flow amount, w/v or v/v basis is printed.\"\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Retain percent wording;\
+    \ no gas-flow amount, w/v or v/v basis is printed.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"Retain percent wording; no gas-flow amount, w/v or v/v\
+    \ basis is printed.\"\n  },\n  {\n    \"quantity_id\": \"q35\",\n    \"ingredient_or_context\"\
+    : \"Example cultivation temperature\",\n    \"field_path\": \"preparation_steps\"\
+    ,\n    \"local\": null,\n    \"source_amount\": \"39\",\n    \"source_unit\":\
+    \ \"°C\",\n    \"source_stage\": \"Source cultivation example\",\n    \"primary_source_evidence_id\"\
+    : \"togo2231\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"togoM2231original\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\",\n\
+    \        \"source_locator\": \"$.comments[0]\",\n        \"exact_source_quote\"\
+    : \"at 39C\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"This temperature\
+    \ is part of the cited example, not a universal optimum or a stock sterilization\
+    \ condition.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"This temperature is\
+    \ part of the cited example, not a universal optimum or a stock sterilization\
+    \ condition.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This temperature\
+    \ is part of the cited example, not a universal optimum or a stock sterilization\
+    \ condition.\"\n  },\n  {\n    \"quantity_id\": \"q36\",\n    \"ingredient_or_context\"\
+    : \"Example illumination\",\n    \"field_path\": \"preparation_steps\",\n    \"\
+    local\": null,\n    \"source_amount\": \"80\",\n    \"source_unit\": \"lmol m-2\
+    \ s-1 (literal source typography)\",\n    \"source_stage\": \"Source cultivation\
+    \ example\",\n    \"primary_source_evidence_id\": \"togo2231\",\n    \"decision\"\
+    : \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2231original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.comments[0]\",\n        \"exact_source_quote\"\
+    : \"continuous irradiation (80 lmol m-2 s-1)\",\n        \"snapshot_sha256\":\
+    \ \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Preserve the source\
+    \ typography and continuous illumination; do not silently replace lmol with a\
+    \ guessed micro-unit or infer an organism.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/allen_medium.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null,\n        \"decision\": \"\
+    add\",\n        \"rationale\": \"Preserve the source typography and continuous\
+    \ illumination; do not silently replace lmol with a guessed micro-unit or infer\
+    \ an organism.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"Preserve the\
+    \ source typography and continuous illumination; do not silently replace lmol\
+    \ with a guessed micro-unit or infer an organism.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q37\",\n    \"ingredient_or_context\": \"Medium pH\",\n    \"field_path\"\
+    : \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\": \"7.8\"\
+    ,\n    \"source_unit\": \"pH\",\n    \"source_stage\": \"Provider medium context\"\
+    ,\n    \"primary_source_evidence_id\": \"togo2231\",\n    \"decision\": \"add\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2231original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.comments[2]\",\n        \"exact_source_quote\"\
+    : \"pH 7.8\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"The provider\
+    \ states pH 7.8, but does not specify an adjustment reagent or dose.\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"The provider states\
+    \ pH 7.8, but does not specify an adjustment reagent or dose.\"\n      }\n   \
+    \ ],\n    \"arithmetic_and_scope\": \"The provider states pH 7.8, but does not\
+    \ specify an adjustment reagent or dose.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q38\",\n    \"ingredient_or_context\": \"P-IV initial dissolution water\",\n \
+    \   \"field_path\": \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\"\
+    : \"approximately 950\",\n    \"source_unit\": \"mL\",\n    \"source_stage\":\
+    \ \"P-IV preparation only\",\n    \"primary_source_evidence_id\": \"togo2231\"\
+    ,\n    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"togoM2231original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.comments[4]\",\n        \"exact_source_quote\"\
+    : \"approximately 950 ml of dH2O\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Initial dissolution\
+    \ stage, distinct from its 1 L makeup and the main 200 mL water.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Initial dissolution\
+    \ stage, distinct from its 1 L makeup and the main 200 mL water.\"\n      }\n\
+    \    ],\n    \"arithmetic_and_scope\": \"Initial dissolution stage, distinct from\
+    \ its 1 L makeup and the main 200 mL water.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q39\",\n    \"ingredient_or_context\": \"P-IV final makeup\",\n    \"field_path\"\
+    : \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\": \"1\",\n\
+    \    \"source_unit\": \"L\",\n    \"source_stage\": \"P-IV preparation only\"\
+    ,\n    \"primary_source_evidence_id\": \"togo2231\",\n    \"decision\": \"add\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2231original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.comments[4]\",\n        \"exact_source_quote\"\
+    : \"Bring to 1 L with dH2O\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Explicit stock\
+    \ makeup supports stock-only rates; it does not supply a main-medium final volume.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Explicit stock makeup\
+    \ supports stock-only rates; it does not supply a main-medium final volume.\"\n\
+    \      }\n    ],\n    \"arithmetic_and_scope\": \"Explicit stock makeup supports\
+    \ stock-only rates; it does not supply a main-medium final volume.\"\n  },\n \
+    \ {\n    \"quantity_id\": \"q40\",\n    \"ingredient_or_context\": \"P-IV storage\
+    \ temperature\",\n    \"field_path\": \"preparation_steps\",\n    \"local\": null,\n\
+    \    \"source_amount\": \"4\",\n    \"source_unit\": \"°C\",\n    \"source_stage\"\
+    : \"P-IV preparation only\",\n    \"primary_source_evidence_id\": \"togo2231\"\
+    ,\n    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"togoM2231original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2231\"\
+    ,\n        \"source_locator\": \"$.comments[4]\",\n        \"exact_source_quote\"\
+    : \"store at 4 C\",\n        \"snapshot_sha256\": \"2327091527bfed277c4a2538ae739de9467901f20ec6f3197bd2c040e760fd5f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Storage temperature\
+    \ only, not an incubation or sterilization temperature.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/allen_medium.yaml\",\n  \
+    \      \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n   \
+    \     \"decision\": \"add\",\n        \"rationale\": \"Storage temperature only,\
+    \ not an incubation or sterilization temperature.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Storage temperature only, not an incubation or sterilization temperature.\"\
+    \n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.008820.stock-volume-collapse
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Stock concentrations and addition volumes are flattened into main mass rates
+  description: Both layers contain undiluted P-IV and six other stock components beside
+    their doses, which are represented as grams per litre. Main water is an invalid
+    mixed-unit sum, 207 G_PER_L. The source’s 237 mL listed-liquid sum and 250 mL
+    culture example do not supply a common final denominator.
+  target_ids:
+  - CultureMech:008820
+  field_paths:
+  - ingredients
+  - solutions[0]
+  evidence_ids:
+  - togo2231
+  - quantity-inventory
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allen_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.008820.cobalt-hydrate
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: P-IV cobalt hexahydrate is grounded as anhydrous cobalt chloride
+  description: The source and preferred term specify CoCl2·6H2O, whereas CHEBI:35696
+    describes anhydrous cobalt dichloride. The source stock mass cannot be interpreted
+    as that different supplied form.
+  target_ids:
+  - CultureMech:008820
+  field_paths:
+  - ingredients[13].term
+  evidence_ids:
+  - togo2231
+  - chebi35696
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allen_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.008820.preparation-example-scope
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock preparation and explicitly qualified culture conditions are missing
+  description: Both layers omit the P-IV preparation/storage stages and provider pH,
+    while variable gas entries omit the known 5% CO2 example context. The example’s
+    vessel/fill/temperature/light conditions must not be promoted to a universal medium
+    formula or final-volume declaration.
+  target_ids:
+  - CultureMech:008820
+  field_paths:
+  - preparation_steps
+  - ingredients[9]
+  - ingredients[10]
+  evidence_ids:
+  - togo2231
+  - allen-preparation
+  - quantity-inventory
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allen_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.008820.classification
+  category: scope
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Named-chemical medium is labeled complex and undefined
+  description: The provider lists individually specified chemicals and stocks; neither
+    local layer supplies a source-defined complex nutrient to support COMPLEX/UNDEFINED.
+  target_ids:
+  - CultureMech:008820
+  field_paths:
+  - medium_type
+  - composition_type
+  evidence_ids:
+  - record
+  - togo2231
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allen_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: culturemech.008820.primary-legacy-unresolved
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Original primary source and historical HEPES link remain unresolved
+  description: The provider’s source URL is empty and the asserted historical MIM
+    000426 object is not recovered. Completed negative current lookup is not proof
+    of a wrong historical identifier or a replacement identity.
+  target_ids:
+  - CultureMech:008820
+  field_paths:
+  - media_term
+  - ingredients[2].mediaingredientmech_term
+  evidence_ids:
+  - togo2231
+  - mim-current-catalog
+  - mim-current-tree
+  - chebi46756
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allen_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore all seven separately named stocks, their exact millilitre additions
+    and source stock strengths. Represent main batch masses and water separately,
+    retaining unknown final volume. Reconcile source-only stock makeup and the cultivation
+    example before regenerating the target.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:008820
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allen_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Ground the exact cobalt hexahydrate after source verification and preserve
+    its P-IV stock mass. Separately resolve the ungrounded literal phosphate formula
+    without silently substituting a more familiar salt.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:008820
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allen_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Attach source-scoped P-IV preparation and the cultivation example,
+    preserving percent and light-unit uncertainties and distinguishing stock makeup
+    from main liquid additions. Add no unprinted sterilization cycle, flow rate, organism
+    or growth claim.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:008820
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allen_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Reconcile defined/complex classification with the source formulation
+    after stock restructuring; retain liquid state and avoid taxonomy inference from
+    the name or light conditions.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:008820
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allen_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Recover an exact primary reference and the historical MIM correspondence
+    through authorized sources, or preserve explicit unresolved provenance alongside
+    the current provider evidence. Do not substitute another Allen recipe or infer
+    a new legacy mapping from current absence.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:008820
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allen_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- This scientific assessment preceded formal validation and saving; their results
+  are recorded separately.
+- Partial completion reflects an unidentified required primary source and unresolved
+  historical 000426 correspondence. Exact current MIM lookup completed successfully
+  with a negative result; all available provider quantities and stages were assessed.
+- The source typography 80 lmol m-2 s-1 is retained without silently correcting the
+  unit. No measured final main volume or gas percent basis is inferred.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-036
+- generated-medium
+```
