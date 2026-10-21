@@ -1,0 +1,1973 @@
+schema_version: 1.0.0
+review_id: 20261021T215922Z-culturemech-002000-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: bacteriovorax_medium (CultureMech:002000)'
+started_at: '2026-10-21T21:51:52Z'
+finished_at: '2026-10-21T21:59:22Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 844 and the exact KOMODO PPYE accession support the source identity,
+  five provider-normalized main amounts and two separate sterile 5% w/v salt stocks
+  added after autoclaving. The target and DSMZ owner already retain that preparation
+  paragraph, and all layers already mark agar optional; only PPYE lacks the preparation.
+  Water is absent everywhere. Two DSMZ owner salt claims authenticate to recovered
+  historical raw but are absent from the target and PPYE. Supplied hydrate forms are
+  correctly grounded; stock doses and measured final volume remain unspecified.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml
+    sha256: ea0a962523cddbfd347ea332e9116d3620a35d02ee242908aa48749ad738b2dd
+    role: target
+  - path: data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml
+    sha256: d8a98f68794de1f2a67131f1ad7659070ad462868d1e13548d974576c014a543
+    role: context
+  - path: data/normalized_yaml/bacterial/ppye_medium.yaml
+    sha256: cb62384d13b50ef4ba705a51b9b32f92b339d81016f27904a900de66c5079f70
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/inspected-candidate-context.json
+    sha256: 0bb2da58a82dc2b4a90beef1224a7355fd5632db772be0ef053bde40754ded87
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/plan.json
+    sha256: 1eec521fb8743316925ed3d629323b5c1312db0b35497db1e8bbe560a13e3508
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/ppye_medium.yaml.md
+    sha256: 426ed6a53fa6154459bd3e34439e3bf93566863a9da1c49868e72687732c39d5
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json
+    sha256: 94e89303f14558d9b0d485aa6cb4eb646050837864ab920d759763a3a483b94f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/bacteriovorax_medium.yaml.md
+    sha256: 59e10678efe359de2655a2a27318a77a87e3a82b709b7f60fbf2e7db92036144
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/halobacteriovorax_medium.yaml.md
+    sha256: 183d8781ce3db2dbcf03a6c63239b14dbb1e14aad3957d7a9c70e2b9027a3c73
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 387; batch 039 item 7 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-eight task batches
+    contain 380 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 383 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002000
+targets:
+- target_id: CultureMech:002000
+  path: data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml
+  label: bacteriovorax_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ppye_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:002000
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch039/387/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-039/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch039/387/strict.tsv"
+  target_ids:
+  - CultureMech:002000
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:002000
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:002000
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:002000
+- check_id: mediadive844api-source-access
+  name: 'Exact source content access: mediadive844api'
+  required: false
+  status: unavailable
+  summary: The preserved mediadive844api attempt returned HTTP 503. Current primary
+    and exact recovered historical raw resolve the material formulation claims. Optional
+    detail access is not evidence of formula absence or historical byte equivalence.
+  target_ids:
+  - CultureMech:002000
+  evidence_ids:
+  - mediadive844api-attempt
+- check_id: mediadive844api_retry-source-access
+  name: 'Exact source content access: mediadive844api_retry'
+  required: false
+  status: unavailable
+  summary: The preserved mediadive844api_retry attempt returned HTTP 503. Current
+    primary and exact recovered historical raw resolve the material formulation claims.
+    Optional detail access is not evidence of formula absence or historical byte equivalence.
+  target_ids:
+  - CultureMech:002000
+  evidence_ids:
+  - mediadive844api_retry-attempt
+- check_id: komodo844detail-source-access
+  name: 'Exact source content access: komodo844detail'
+  required: false
+  status: unavailable
+  summary: The preserved komodo844detail attempt returned HTTP 403. Current primary
+    and exact recovered historical raw resolve the material formulation claims. Optional
+    detail access is not evidence of formula absence or historical byte equivalence.
+  target_ids:
+  - CultureMech:002000
+  evidence_ids:
+  - komodo844detail-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T21:59:20Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T21:59:20Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/ppye_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T21:59:20Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:52:32.026179Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch039/387/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:52:33.038805Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-039/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch039/387/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:52:34.164745Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:52:34.876548Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T21:59:20Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml:1:id: CultureMech:002000
+
+    ./data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml:1:id: CultureMech:002000
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch039/source-preflight-bound/387/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T21:59:20Z'
+  support: supports
+  summary: 9 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: cfdd9dfc8eb566f4959e8a7cbb4db1b275bc622596d23d85b054979b5a13ae36
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf
+  locator: Complete DSMZ 844 table and preparation paragraph
+  accessed_at: '2026-10-21T21:13:30.863074Z'
+  support: supports
+  summary: The source distinguishes main inputs, optional agar, separate sterile salt
+    stocks and post-autoclave addition. The 1000 mL water input is not an independently
+    measured final volume.
+  quote: '844: BACTERIOVORAX MEDIUM'
+  snapshot_sha256: d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140
+- evidence_id: historical
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/844
+  locator: Exact recovered historical $.data.medium and $.data.solutions[0]
+  accessed_at: '2026-10-07T12:19:53.214596Z'
+  support: supports
+  summary: The recovered original response preserves solution 1731 volume 1000 mL,
+    ingredient g_l fields and the full preparation paragraph. This is provider normalization,
+    distinct from measured final volume.
+  quote: '"volume": 1000'
+  snapshot_sha256: 469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact accession 844 row, PPYE name and DSMZ 844 source link only
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: The precise accession connects the PPYE name to DSMZ 844, independent of
+    ingredient fingerprints. Catalog oxygen metadata proves no organism-specific physiology;
+    unrelated accession 398.2 is excluded.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=844'\
+    \ >844</a></TD>\n\t\t\t\t\t<TD>PPYE medium</TD>\n\t\t\t\t\t<TD>null</TD>\n\t\t\
+    \t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a\
+    \ href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf</a></TD>\n\
+    \t\t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: mediadive844api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/844
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T21:13:29.875549Z'
+  support: context_only
+  summary: The preserved mediadive844api attempt returned HTTP 503. Current primary
+    and exact recovered historical raw resolve the material formulation claims. Optional
+    detail access is not evidence of formula absence or historical byte equivalence.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive844api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/844
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T21:14:38.789153Z'
+  support: context_only
+  summary: The preserved mediadive844api_retry attempt returned HTTP 503. Current
+    primary and exact recovered historical raw resolve the material formulation claims.
+    Optional detail access is not evidence of formula absence or historical byte equivalence.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo844detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=844
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T21:13:29.548232Z'
+  support: context_only
+  summary: The preserved komodo844detail attempt returned HTTP 403. Current primary
+    and exact recovered historical raw resolve the material formulation claims. Optional
+    detail access is not evidence of formula absence or historical byte equivalence.
+  snapshot_sha256: a20c1af18b84d3106b049276fd89d453ff685dad4bf52575e6dba29fad36cba8
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch039/387/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T21:59:20Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 4fdf57f96ce2478786daba11687a93c4ef167894d3a7a8d6aa5e6592556ed43c
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T21:59:20Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:2509":
+    [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O",
+    "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term",
+    "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id":
+    "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2
+    x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term":
+    "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml; data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml;
+    data/normalized_yaml/bacterial/ppye_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T21:59:20Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml",
+    "events": 6, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/ppye_medium.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:08.219296"}]}]'
+- evidence_id: history-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch039/387/history-inventory.json
+  locator: Two original DSMZ salt claims; one exact PPYE report and two excluded namesake
+    reports
+  accessed_at: '2026-10-21T21:59:20Z'
+  support: context_only
+  summary: Both attached salt claims match exact recovered raw and its cited hash.
+    Target and PPYE lack those claims. The scoped report records prior unresolved
+    stock-stage work; unrelated CM000435/CM000434 reports supply no medium evidence.
+  snapshot_sha256: 27dc266b42610a397e6e53cac17d9c74ea3c353daa1c2f2b711212d485d340e5
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:59:20Z'
+  support: context_only
+  summary: 'Current import and merge code is contextual: solvent exclusion, provider
+    normalization and guarded formulation-compatible evidence unions are read. No
+    claim that the current merger universally loses preparation/evidence, or that
+    these present functions caused the old generated record, is made.'
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:59:20Z'
+  support: context_only
+  summary: 'Current import and merge code is contextual: solvent exclusion, provider
+    normalization and guarded formulation-compatible evidence unions are read. No
+    claim that the current merger universally loses preparation/evidence, or that
+    these present functions caused the old generated record, is made.'
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:59:20Z'
+  support: context_only
+  summary: 'Current import and merge code is contextual: solvent exclusion, provider
+    normalization and guarded formulation-compatible evidence unions are read. No
+    claim that the current merger universally loses preparation/evidence, or that
+    these present functions caused the old generated record, is made.'
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:002000
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 29 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:002000
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"name\": \"Proteose peptone\
+    \ no. 3\",\n    \"stage\": \"Basal main recipe\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"1\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"source_batch_amount\": 1,\n      \"source_batch_unit\"\
+    : \"g\",\n      \"provider_declared_volume_ml\": 1000,\n      \"optional\": false\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz844\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Composition table row 1\",\n        \"exact_source_quote\"\
+    : \"Proteose peptone no. 3 (BD Bacto) 1.00 g\",\n        \"snapshot_sha256\":\
+    \ \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\",\n    \
+    \    \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive844Historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"compound\\\": \\\"Proteose peptone no. 3\\\",\\n                  \
+    \      \\\"compound_id\\\": 316,\\n                        \\\"attribute\\\":\
+    \ \\\"BD Bacto\\\",\\n                        \\\"amount\\\": 1,\\n          \
+    \              \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\"\
+    : 1,\\n                        \\\"optional\\\": 0\\n                    }\",\n\
+    \        \"snapshot_sha256\": \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\
+    \n      }\n    ],\n    \"interpretation\": \"This field has no attached amount\
+    \ evidence; available external support is evidence-only follow-up. The g_l value\
+    \ is a provider declaration, not an independently measured final concentration.\
+    \ No stock volume or volume-additivity assumption is introduced.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q2\",\n    \"name\": \"Proteose peptone no. 3\",\n   \
+    \ \"stage\": \"Basal main recipe\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"1\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"source_batch_amount\": 1,\n      \"source_batch_unit\"\
+    : \"g\",\n      \"provider_declared_volume_ml\": 1000,\n      \"optional\": false\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz844\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Composition table row 1\",\n        \"exact_source_quote\"\
+    : \"Proteose peptone no. 3 (BD Bacto) 1.00 g\",\n        \"snapshot_sha256\":\
+    \ \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\",\n    \
+    \    \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive844Historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"compound\\\": \\\"Proteose peptone no. 3\\\",\\n                  \
+    \      \\\"compound_id\\\": 316,\\n                        \\\"attribute\\\":\
+    \ \\\"BD Bacto\\\",\\n                        \\\"amount\\\": 1,\\n          \
+    \              \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\"\
+    : 1,\\n                        \\\"optional\\\": 0\\n                    }\",\n\
+    \        \"snapshot_sha256\": \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\
+    \n      }\n    ],\n    \"interpretation\": \"This field has no attached amount\
+    \ evidence; available external support is evidence-only follow-up. The g_l value\
+    \ is a provider declaration, not an independently measured final concentration.\
+    \ No stock volume or volume-additivity assumption is introduced.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q3\",\n    \"name\": \"Proteose peptone no. 3\",\n   \
+    \ \"stage\": \"Basal main recipe\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"1\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"source_batch_amount\": 1,\n      \"source_batch_unit\"\
+    : \"g\",\n      \"provider_declared_volume_ml\": 1000,\n      \"optional\": false\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz844\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Composition table row 1\",\n        \"exact_source_quote\"\
+    : \"Proteose peptone no. 3 (BD Bacto) 1.00 g\",\n        \"snapshot_sha256\":\
+    \ \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\",\n    \
+    \    \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive844Historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"compound\\\": \\\"Proteose peptone no. 3\\\",\\n                  \
+    \      \\\"compound_id\\\": 316,\\n                        \\\"attribute\\\":\
+    \ \\\"BD Bacto\\\",\\n                        \\\"amount\\\": 1,\\n          \
+    \              \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\"\
+    : 1,\\n                        \\\"optional\\\": 0\\n                    }\",\n\
+    \        \"snapshot_sha256\": \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\
+    \n      }\n    ],\n    \"interpretation\": \"This field has no attached amount\
+    \ evidence; available external support is evidence-only follow-up. The g_l value\
+    \ is a provider declaration, not an independently measured final concentration.\
+    \ No stock volume or volume-additivity assumption is introduced.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q4\",\n    \"name\": \"Yeast extract\",\n    \"stage\"\
+    : \"Basal main recipe\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"0.3\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"source_batch_amount\": 0.3,\n      \"source_batch_unit\"\
+    : \"g\",\n      \"provider_declared_volume_ml\": 1000,\n      \"optional\": false\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz844\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Composition table row 2\",\n        \"exact_source_quote\"\
+    : \"Yeast extract (BD Bacto) 0.30 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive844Historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 2,\\n                  \
+    \      \\\"compound\\\": \\\"Yeast extract\\\",\\n                        \\\"\
+    compound_id\\\": 16,\\n                        \\\"attribute\\\": \\\"BD Bacto\\\
+    \",\\n                        \\\"amount\\\": 0.3,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.3,\\n        \
+    \                \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"This field has no attached amount evidence;\
+    \ available external support is evidence-only follow-up. The g_l value is a provider\
+    \ declaration, not an independently measured final concentration. No stock volume\
+    \ or volume-additivity assumption is introduced.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q5\",\n    \"name\": \"Yeast extract\",\n    \"stage\": \"Basal main recipe\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"0.3\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"source_batch_amount\": 0.3,\n      \"source_batch_unit\"\
+    : \"g\",\n      \"provider_declared_volume_ml\": 1000,\n      \"optional\": false\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz844\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Composition table row 2\",\n        \"exact_source_quote\"\
+    : \"Yeast extract (BD Bacto) 0.30 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive844Historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 2,\\n                  \
+    \      \\\"compound\\\": \\\"Yeast extract\\\",\\n                        \\\"\
+    compound_id\\\": 16,\\n                        \\\"attribute\\\": \\\"BD Bacto\\\
+    \",\\n                        \\\"amount\\\": 0.3,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.3,\\n        \
+    \                \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"This field has no attached amount evidence;\
+    \ available external support is evidence-only follow-up. The g_l value is a provider\
+    \ declaration, not an independently measured final concentration. No stock volume\
+    \ or volume-additivity assumption is introduced.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q6\",\n    \"name\": \"Yeast extract\",\n    \"stage\": \"Basal main recipe\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n \
+    \     }\n    ],\n    \"desired\": {\n      \"value\": \"0.3\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"source_batch_amount\": 0.3,\n      \"source_batch_unit\"\
+    : \"g\",\n      \"provider_declared_volume_ml\": 1000,\n      \"optional\": false\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz844\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Composition table row 2\",\n        \"exact_source_quote\"\
+    : \"Yeast extract (BD Bacto) 0.30 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive844Historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 2,\\n                  \
+    \      \\\"compound\\\": \\\"Yeast extract\\\",\\n                        \\\"\
+    compound_id\\\": 16,\\n                        \\\"attribute\\\": \\\"BD Bacto\\\
+    \",\\n                        \\\"amount\\\": 0.3,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.3,\\n        \
+    \                \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"This field has no attached amount evidence;\
+    \ available external support is evidence-only follow-up. The g_l value is a provider\
+    \ declaration, not an independently measured final concentration. No stock volume\
+    \ or volume-additivity assumption is introduced.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q7\",\n    \"name\": \"MgCl2 x 6 H2O\",\n    \"stage\": \"Post-autoclave salt\
+    \ contribution to main recipe\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.6\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"0.6\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"source_batch_amount\": 0.6,\n      \"source_batch_unit\"\
+    : \"g\",\n      \"provider_declared_volume_ml\": 1000,\n      \"optional\": false\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz844\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Composition table row 3\",\n        \"exact_source_quote\"\
+    : \"MgCl2 x 6 H2O 0.60 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive844Historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"compound\\\": \\\"MgCl2 x 6 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 79,\\n                        \\\"amount\\\": 0.6,\\n       \
+    \                 \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\
+    \": 0.6,\\n                        \\\"mmol_l\\\": 2.95126,\\n               \
+    \         \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"This field has no attached amount evidence;\
+    \ available external support is evidence-only follow-up. The primary requires\
+    \ this salt after autoclaving from its separate sterile 5% w/v stock. Main amount\
+    \ is not stock strength or an authenticated stock dose. The g_l value is a provider\
+    \ declaration, not an independently measured final concentration. No stock volume\
+    \ or volume-additivity assumption is introduced.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q8\",\n    \"name\": \"MgCl2 x 6 H2O\",\n    \"stage\": \"Post-autoclave salt\
+    \ contribution to main recipe\",\n    \"decision\": \"verified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.6\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"0.6\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"source_batch_amount\": 0.6,\n      \"source_batch_unit\"\
+    : \"g\",\n      \"provider_declared_volume_ml\": 1000,\n      \"optional\": false\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz844\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Composition table row 3\",\n        \"exact_source_quote\"\
+    : \"MgCl2 x 6 H2O 0.60 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive844Historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"compound\\\": \\\"MgCl2 x 6 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 79,\\n                        \\\"amount\\\": 0.6,\\n       \
+    \                 \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\
+    \": 0.6,\\n                        \\\"mmol_l\\\": 2.95126,\\n               \
+    \         \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"The attached DSMZ salt amount claim matches\
+    \ the exact historical raw; verification applies only to this owner field. The\
+    \ primary requires this salt after autoclaving from its separate sterile 5% w/v\
+    \ stock. Main amount is not stock strength or an authenticated stock dose. The\
+    \ g_l value is a provider declaration, not an independently measured final concentration.\
+    \ No stock volume or volume-additivity assumption is introduced.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q9\",\n    \"name\": \"MgCl2 x 6 H2O\",\n    \"stage\"\
+    : \"Post-autoclave salt contribution to main recipe\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.6\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"0.6\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"source_batch_amount\": 0.6,\n      \"source_batch_unit\"\
+    : \"g\",\n      \"provider_declared_volume_ml\": 1000,\n      \"optional\": false\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz844\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Composition table row 3\",\n        \"exact_source_quote\"\
+    : \"MgCl2 x 6 H2O 0.60 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive844Historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"compound\\\": \\\"MgCl2 x 6 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 79,\\n                        \\\"amount\\\": 0.6,\\n       \
+    \                 \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\
+    \": 0.6,\\n                        \\\"mmol_l\\\": 2.95126,\\n               \
+    \         \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"This field has no attached amount evidence;\
+    \ available external support is evidence-only follow-up. The primary requires\
+    \ this salt after autoclaving from its separate sterile 5% w/v stock. Main amount\
+    \ is not stock strength or an authenticated stock dose. The g_l value is a provider\
+    \ declaration, not an independently measured final concentration. No stock volume\
+    \ or volume-additivity assumption is introduced.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q10\",\n    \"name\": \"CaCl2 x 2 H2O\",\n    \"stage\": \"Post-autoclave\
+    \ salt contribution to main recipe\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"0.3\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"source_batch_amount\": 0.3,\n      \"source_batch_unit\"\
+    : \"g\",\n      \"provider_declared_volume_ml\": 1000,\n      \"optional\": false\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz844\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Composition table row 4\",\n        \"exact_source_quote\"\
+    : \"CaCl2 x 2 H2O 0.30 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive844Historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 4,\\n                  \
+    \      \\\"compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 7,\\n                        \\\"amount\\\": 0.3,\\n        \
+    \                \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\"\
+    : 0.3,\\n                        \\\"mmol_l\\\": 2.04061,\\n                 \
+    \       \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"This field has no attached amount evidence;\
+    \ available external support is evidence-only follow-up. The primary requires\
+    \ this salt after autoclaving from its separate sterile 5% w/v stock. Main amount\
+    \ is not stock strength or an authenticated stock dose. The g_l value is a provider\
+    \ declaration, not an independently measured final concentration. No stock volume\
+    \ or volume-additivity assumption is introduced.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q11\",\n    \"name\": \"CaCl2 x 2 H2O\",\n    \"stage\": \"Post-autoclave\
+    \ salt contribution to main recipe\",\n    \"decision\": \"verified\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"0.3\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"source_batch_amount\": 0.3,\n      \"source_batch_unit\"\
+    : \"g\",\n      \"provider_declared_volume_ml\": 1000,\n      \"optional\": false\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz844\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Composition table row 4\",\n        \"exact_source_quote\"\
+    : \"CaCl2 x 2 H2O 0.30 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive844Historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 4,\\n                  \
+    \      \\\"compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 7,\\n                        \\\"amount\\\": 0.3,\\n        \
+    \                \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\"\
+    : 0.3,\\n                        \\\"mmol_l\\\": 2.04061,\\n                 \
+    \       \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"The attached DSMZ salt amount claim matches\
+    \ the exact historical raw; verification applies only to this owner field. The\
+    \ primary requires this salt after autoclaving from its separate sterile 5% w/v\
+    \ stock. Main amount is not stock strength or an authenticated stock dose. The\
+    \ g_l value is a provider declaration, not an independently measured final concentration.\
+    \ No stock volume or volume-additivity assumption is introduced.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q12\",\n    \"name\": \"CaCl2 x 2 H2O\",\n    \"stage\"\
+    : \"Post-autoclave salt contribution to main recipe\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"0.3\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"source_batch_amount\": 0.3,\n      \"source_batch_unit\"\
+    : \"g\",\n      \"provider_declared_volume_ml\": 1000,\n      \"optional\": false\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz844\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Composition table row 4\",\n        \"exact_source_quote\"\
+    : \"CaCl2 x 2 H2O 0.30 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive844Historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 4,\\n                  \
+    \      \\\"compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 7,\\n                        \\\"amount\\\": 0.3,\\n        \
+    \                \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\"\
+    : 0.3,\\n                        \\\"mmol_l\\\": 2.04061,\\n                 \
+    \       \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"This field has no attached amount evidence;\
+    \ available external support is evidence-only follow-up. The primary requires\
+    \ this salt after autoclaving from its separate sterile 5% w/v stock. Main amount\
+    \ is not stock strength or an authenticated stock dose. The g_l value is a provider\
+    \ declaration, not an independently measured final concentration. No stock volume\
+    \ or volume-additivity assumption is introduced.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q13\",\n    \"name\": \"Agar\",\n    \"stage\": \"Optional agar branch\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\",\n      \
+    \  \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"12\",\n          \"unit\": \"G_PER_L\"\n        }\n  \
+    \    }\n    ],\n    \"desired\": {\n      \"value\": \"12\",\n      \"unit\":\
+    \ \"G_PER_L\",\n      \"source_batch_amount\": 12,\n      \"source_batch_unit\"\
+    : \"g\",\n      \"provider_declared_volume_ml\": 1000,\n      \"optional\": true\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz844\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Composition table row 5\",\n        \"exact_source_quote\"\
+    : \"Agar (Bacto) (optional) 12.00 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive844Historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 5,\\n                  \
+    \      \\\"compound\\\": \\\"Agar\\\",\\n                        \\\"compound_id\\\
+    \": 3,\\n                        \\\"attribute\\\": \\\"Bacto\\\",\\n        \
+    \                \\\"amount\\\": 12,\\n                        \\\"unit\\\": \\\
+    \"g\\\",\\n                        \\\"g_l\\\": 12,\\n                       \
+    \ \\\"mmol_l\\\": 35.6792,\\n                        \\\"optional\\\": 1\\n  \
+    \                  }\",\n        \"snapshot_sha256\": \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\
+    \n      }\n    ],\n    \"interpretation\": \"This field has no attached amount\
+    \ evidence; available external support is evidence-only follow-up. Agar is already\
+    \ marked optional in every local layer; retain that annotation and the explicit\
+    \ plate branch. The g_l value is a provider declaration, not an independently\
+    \ measured final concentration. No stock volume or volume-additivity assumption\
+    \ is introduced.\"\n  },\n  {\n    \"decision_id\": \"q14\",\n    \"name\": \"\
+    Agar\",\n    \"stage\": \"Optional agar branch\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"12\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"12\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"source_batch_amount\": 12,\n      \"source_batch_unit\"\
+    : \"g\",\n      \"provider_declared_volume_ml\": 1000,\n      \"optional\": true\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz844\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Composition table row 5\",\n        \"exact_source_quote\"\
+    : \"Agar (Bacto) (optional) 12.00 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive844Historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 5,\\n                  \
+    \      \\\"compound\\\": \\\"Agar\\\",\\n                        \\\"compound_id\\\
+    \": 3,\\n                        \\\"attribute\\\": \\\"Bacto\\\",\\n        \
+    \                \\\"amount\\\": 12,\\n                        \\\"unit\\\": \\\
+    \"g\\\",\\n                        \\\"g_l\\\": 12,\\n                       \
+    \ \\\"mmol_l\\\": 35.6792,\\n                        \\\"optional\\\": 1\\n  \
+    \                  }\",\n        \"snapshot_sha256\": \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\
+    \n      }\n    ],\n    \"interpretation\": \"This field has no attached amount\
+    \ evidence; available external support is evidence-only follow-up. Agar is already\
+    \ marked optional in every local layer; retain that annotation and the explicit\
+    \ plate branch. The g_l value is a provider declaration, not an independently\
+    \ measured final concentration. No stock volume or volume-additivity assumption\
+    \ is introduced.\"\n  },\n  {\n    \"decision_id\": \"q15\",\n    \"name\": \"\
+    Agar\",\n    \"stage\": \"Optional agar branch\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"12\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"12\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"source_batch_amount\": 12,\n      \"source_batch_unit\"\
+    : \"g\",\n      \"provider_declared_volume_ml\": 1000,\n      \"optional\": true\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz844\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Composition table row 5\",\n        \"exact_source_quote\"\
+    : \"Agar (Bacto) (optional) 12.00 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive844Historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 5,\\n                  \
+    \      \\\"compound\\\": \\\"Agar\\\",\\n                        \\\"compound_id\\\
+    \": 3,\\n                        \\\"attribute\\\": \\\"Bacto\\\",\\n        \
+    \                \\\"amount\\\": 12,\\n                        \\\"unit\\\": \\\
+    \"g\\\",\\n                        \\\"g_l\\\": 12,\\n                       \
+    \ \\\"mmol_l\\\": 35.6792,\\n                        \\\"optional\\\": 1\\n  \
+    \                  }\",\n        \"snapshot_sha256\": \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\
+    \n      }\n    ],\n    \"interpretation\": \"This field has no attached amount\
+    \ evidence; available external support is evidence-only follow-up. Agar is already\
+    \ marked optional in every local layer; retain that annotation and the explicit\
+    \ plate branch. The g_l value is a provider declaration, not an independently\
+    \ measured final concentration. No stock volume or volume-additivity assumption\
+    \ is introduced.\"\n  },\n  {\n    \"decision_id\": \"q16\",\n    \"name\": \"\
+    Distilled water\",\n    \"stage\": \"Main recipe solvent input\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": [\n         \
+    \ {\n            \"preferred_term\": \"Proteose peptone no. 3\",\n           \
+    \ \"concentration\": {\n              \"value\": \"1\",\n              \"unit\"\
+    : \"G_PER_L\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Yeast extract\",\n            \"concentration\": {\n              \"value\"\
+    : \"0.3\",\n              \"unit\": \"G_PER_L\"\n            }\n          },\n\
+    \          {\n            \"preferred_term\": \"MgCl2 x 6 H2O\",\n           \
+    \ \"term\": {\n              \"id\": \"CHEBI:86345\",\n              \"label\"\
+    : \"magnesium dichloride hexahydrate\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.6\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:86345\",\n              \"label\": \"magnesium dichloride\
+    \ hexahydrate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"CaCl2 x 2 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86158\"\
+    ,\n              \"label\": \"calcium chloride dihydrate\"\n            },\n \
+    \           \"concentration\": {\n              \"value\": \"0.3\",\n        \
+    \      \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:86158\",\n              \"label\": \"calcium\
+    \ chloride dihydrate\"\n            }\n          },\n          {\n           \
+    \ \"preferred_term\": \"Agar\",\n            \"term\": {\n              \"id\"\
+    : \"CHEBI:2509\",\n              \"label\": \"agar\"\n            },\n       \
+    \     \"concentration\": {\n              \"value\": \"12\",\n              \"\
+    unit\": \"G_PER_L\"\n            },\n            \"notes\": \"Optional ingredient\"\
+    ,\n            \"mediaingredientmech_chebi_term\": {\n              \"id\": \"\
+    CHEBI:2509\",\n              \"label\": \"agar\"\n            }\n          }\n\
+    \        ]\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": [\n         \
+    \ {\n            \"preferred_term\": \"Proteose peptone no. 3\",\n           \
+    \ \"concentration\": {\n              \"value\": \"1\",\n              \"unit\"\
+    : \"G_PER_L\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Yeast extract\",\n            \"concentration\": {\n              \"value\"\
+    : \"0.3\",\n              \"unit\": \"G_PER_L\"\n            }\n          },\n\
+    \          {\n            \"preferred_term\": \"MgCl2 x 6 H2O\",\n           \
+    \ \"term\": {\n              \"id\": \"CHEBI:86345\",\n              \"label\"\
+    : \"magnesium dichloride hexahydrate\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.6\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:86345\",\n              \"label\": \"magnesium dichloride\
+    \ hexahydrate\"\n            },\n            \"evidence\": [\n              {\n\
+    \                \"reference\": \"https://mediadive.dsmz.de/rest/medium/844\"\
+    ,\n                \"supports\": \"SUPPORT\",\n                \"snippet\": \"\
+    {\\n                        \\\"recipe_order\\\": 3,\\n                      \
+    \  \\\"compound\\\": \\\"MgCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 79,\\n                        \\\"amount\\\": 0.6,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.6,\\n \
+    \                       \\\"mmol_l\\\": 2.95126,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n                \"explanation\": \"\
+    Concentration evidence for ingredients[2].concentration (MgCl2 x 6 H2O) in MediaDive\
+    \ medium 844; locator=$.data.solutions[0].recipe[2]. Provider explicitly reports\
+    \ g_l=0.6; check: 0.6 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.6 g/L. This supports\
+    \ the provider-declared main-recipe concentration, not an independently measured\
+    \ final volume, a stock composition, or a downstream assay dilution. Water alone\
+    \ does not establish final volume. Exact source ingredient labels/forms are matched;\
+    \ secondary ontology mappings are not validated by this evidence. Additional exact\
+    \ value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:19:53.214596+00:00;\
+    \ response SHA256=469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e.\"\
+    \n              }\n            ]\n          },\n          {\n            \"preferred_term\"\
+    : \"CaCl2 x 2 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86158\"\
+    ,\n              \"label\": \"calcium chloride dihydrate\"\n            },\n \
+    \           \"concentration\": {\n              \"value\": \"0.3\",\n        \
+    \      \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:86158\",\n              \"label\": \"calcium\
+    \ chloride dihydrate\"\n            },\n            \"evidence\": [\n        \
+    \      {\n                \"reference\": \"https://mediadive.dsmz.de/rest/medium/844\"\
+    ,\n                \"supports\": \"SUPPORT\",\n                \"snippet\": \"\
+    {\\n                        \\\"recipe_order\\\": 4,\\n                      \
+    \  \\\"compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 7,\\n                        \\\"amount\\\": 0.3,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.3,\\n  \
+    \                      \\\"mmol_l\\\": 2.04061,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n                \"explanation\": \"\
+    Concentration evidence for ingredients[3].concentration (CaCl2 x 2 H2O) in MediaDive\
+    \ medium 844; locator=$.data.solutions[0].recipe[3]. Provider explicitly reports\
+    \ g_l=0.3; check: 0.3 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.3 g/L. This supports\
+    \ the provider-declared main-recipe concentration, not an independently measured\
+    \ final volume, a stock composition, or a downstream assay dilution. Water alone\
+    \ does not establish final volume. Exact source ingredient labels/forms are matched;\
+    \ secondary ontology mappings are not validated by this evidence. Additional exact\
+    \ value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T12:19:53.214596+00:00;\
+    \ response SHA256=469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e.\"\
+    \n              }\n            ]\n          },\n          {\n            \"preferred_term\"\
+    : \"Agar\",\n            \"term\": {\n              \"id\": \"CHEBI:2509\",\n\
+    \              \"label\": \"agar\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"12\",\n              \"unit\": \"G_PER_L\"\n \
+    \           },\n            \"notes\": \"Optional ingredient\",\n            \"\
+    mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:2509\",\n \
+    \             \"label\": \"agar\"\n            }\n          }\n        ]\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": [\n         \
+    \ {\n            \"preferred_term\": \"Proteose peptone no. 3\",\n           \
+    \ \"concentration\": {\n              \"value\": \"1\",\n              \"unit\"\
+    : \"G_PER_L\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Yeast extract\",\n            \"concentration\": {\n              \"value\"\
+    : \"0.3\",\n              \"unit\": \"G_PER_L\"\n            }\n          },\n\
+    \          {\n            \"preferred_term\": \"MgCl2 x 6 H2O\",\n           \
+    \ \"term\": {\n              \"id\": \"CHEBI:86345\",\n              \"label\"\
+    : \"magnesium dichloride hexahydrate\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.6\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:86345\",\n              \"label\": \"magnesium dichloride\
+    \ hexahydrate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"CaCl2 x 2 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86158\"\
+    ,\n              \"label\": \"calcium chloride dihydrate\"\n            },\n \
+    \           \"concentration\": {\n              \"value\": \"0.3\",\n        \
+    \      \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:86158\",\n              \"label\": \"calcium\
+    \ chloride dihydrate\"\n            }\n          },\n          {\n           \
+    \ \"preferred_term\": \"Agar\",\n            \"term\": {\n              \"id\"\
+    : \"CHEBI:2509\",\n              \"label\": \"agar\"\n            },\n       \
+    \     \"concentration\": {\n              \"value\": \"12\",\n              \"\
+    unit\": \"G_PER_L\"\n            },\n            \"notes\": \"Optional ingredient\"\
+    ,\n            \"mediaingredientmech_chebi_term\": {\n              \"id\": \"\
+    CHEBI:2509\",\n              \"label\": \"agar\"\n            }\n          }\n\
+    \        ]\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 1000,\n\
+    \      \"source_unit\": \"ml\",\n      \"representation\": \"Preparation solvent\
+    \ input, not water mass or a measured final-volume declaration\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz844\",\n    \
+    \    \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Composition table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive844Historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 6,\\n                  \
+    \      \\\"compound\\\": \\\"Distilled water\\\",\\n                        \\\
+    \"compound_id\\\": 4,\\n                        \\\"amount\\\": 1000,\\n     \
+    \                   \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The explicit water input is absent\
+    \ from every layer. Preserve its main-recipe stage and do not add inferred stock\
+    \ volumes to produce an invented final volume.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q17\",\n    \"name\": \"Magnesium chloride hexahydrate stock\",\n    \"stage\"\
+    : \"Separate sterile stock added after main-medium autoclaving\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\",\n        \"field_path\": \"\
+    preparation_steps[0].description\",\n        \"stored\": \"Dissolve ingredients\
+    \ except magnesium chloride and calcium chloride. Add magnesium chloride and calcium\
+    \ chloride after autoclaving from sterile stock solutions of 5% (w/v) each. For\
+    \ agar plates add 1.2% Bacto agar\"\n      },\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\",\n        \"field_path\": \"\
+    solutions\",\n        \"stored\": null\n      }\n    ],\n    \"desired\": {\n\
+    \      \"strength_value\": 5,\n      \"strength_unit\": \"PERCENT_W_V\",\n   \
+    \   \"separate_stock\": true,\n      \"post_autoclave_addition\": true,\n    \
+    \  \"dose_ml\": null\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz844\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Preparation paragraph, separate chloride stock\
+    \ instruction\",\n        \"exact_source_quote\": \"chloride and calcium chloride\
+    \ after autoclaving from sterile stock solutions of 5% (w/v)\\neach.\",\n    \
+    \    \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz844\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\",\n    \
+    \    \"source_locator\": \"Main recipe supplied hydrate row 3\",\n        \"exact_source_quote\"\
+    : \"MgCl2 x 6 H2O 0.60 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      }\n    ],\n    \"interpretation\": \"This strength and timing are already\
+    \ retained in the preparation prose; do not report them missing. No linked or\
+    \ inline stock definition is stored. Any later structured representation must\
+    \ preserve separate salt identities and the explicit w/v basis; the source gives\
+    \ no addition volume. Do not equate 5% stock strength with the main g/L amount\
+    \ or derive a dose from an assumed final volume.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q18\",\n    \"name\": \"Magnesium chloride hexahydrate stock\",\n    \"stage\"\
+    : \"Separate sterile stock added after main-medium autoclaving\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\",\n       \
+    \ \"field_path\": \"preparation_steps[0].description\",\n        \"stored\": \"\
+    Dissolve ingredients except magnesium chloride and calcium chloride. Add magnesium\
+    \ chloride and calcium chloride after autoclaving from sterile stock solutions\
+    \ of 5% (w/v) each. For agar plates add 1.2% Bacto agar\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"desired\": {\n      \"strength_value\": 5,\n      \"strength_unit\"\
+    : \"PERCENT_W_V\",\n      \"separate_stock\": true,\n      \"post_autoclave_addition\"\
+    : true,\n      \"dose_ml\": null\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz844\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Preparation paragraph, separate chloride stock\
+    \ instruction\",\n        \"exact_source_quote\": \"chloride and calcium chloride\
+    \ after autoclaving from sterile stock solutions of 5% (w/v)\\neach.\",\n    \
+    \    \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz844\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\",\n    \
+    \    \"source_locator\": \"Main recipe supplied hydrate row 3\",\n        \"exact_source_quote\"\
+    : \"MgCl2 x 6 H2O 0.60 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      }\n    ],\n    \"interpretation\": \"This strength and timing are already\
+    \ retained in the preparation prose; do not report them missing. No linked or\
+    \ inline stock definition is stored. Any later structured representation must\
+    \ preserve separate salt identities and the explicit w/v basis; the source gives\
+    \ no addition volume. Do not equate 5% stock strength with the main g/L amount\
+    \ or derive a dose from an assumed final volume.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q19\",\n    \"name\": \"Magnesium chloride hexahydrate stock\",\n    \"stage\"\
+    : \"Separate sterile stock added after main-medium autoclaving\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"desired\": {\n      \"strength_value\": 5,\n      \"strength_unit\"\
+    : \"PERCENT_W_V\",\n      \"separate_stock\": true,\n      \"post_autoclave_addition\"\
+    : true,\n      \"dose_ml\": null\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz844\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Preparation paragraph, separate chloride stock\
+    \ instruction\",\n        \"exact_source_quote\": \"chloride and calcium chloride\
+    \ after autoclaving from sterile stock solutions of 5% (w/v)\\neach.\",\n    \
+    \    \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz844\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\",\n    \
+    \    \"source_locator\": \"Main recipe supplied hydrate row 3\",\n        \"exact_source_quote\"\
+    : \"MgCl2 x 6 H2O 0.60 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      }\n    ],\n    \"interpretation\": \"The PPYE owner omits this preparation\
+    \ instruction. No linked or inline stock definition is stored. Any later structured\
+    \ representation must preserve separate salt identities and the explicit w/v basis;\
+    \ the source gives no addition volume. Do not equate 5% stock strength with the\
+    \ main g/L amount or derive a dose from an assumed final volume.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q20\",\n    \"name\": \"Calcium chloride dihydrate stock\"\
+    ,\n    \"stage\": \"Separate sterile stock added after main-medium autoclaving\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\",\n    \
+    \    \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except magnesium chloride and calcium chloride. Add magnesium\
+    \ chloride and calcium chloride after autoclaving from sterile stock solutions\
+    \ of 5% (w/v) each. For agar plates add 1.2% Bacto agar\"\n      },\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\",\n  \
+    \      \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n   \
+    \ ],\n    \"desired\": {\n      \"strength_value\": 5,\n      \"strength_unit\"\
+    : \"PERCENT_W_V\",\n      \"separate_stock\": true,\n      \"post_autoclave_addition\"\
+    : true,\n      \"dose_ml\": null\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz844\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Preparation paragraph, separate chloride stock\
+    \ instruction\",\n        \"exact_source_quote\": \"chloride and calcium chloride\
+    \ after autoclaving from sterile stock solutions of 5% (w/v)\\neach.\",\n    \
+    \    \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz844\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\",\n    \
+    \    \"source_locator\": \"Main recipe supplied hydrate row 4\",\n        \"exact_source_quote\"\
+    : \"CaCl2 x 2 H2O 0.30 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      }\n    ],\n    \"interpretation\": \"This strength and timing are already\
+    \ retained in the preparation prose; do not report them missing. No linked or\
+    \ inline stock definition is stored. Any later structured representation must\
+    \ preserve separate salt identities and the explicit w/v basis; the source gives\
+    \ no addition volume. Do not equate 5% stock strength with the main g/L amount\
+    \ or derive a dose from an assumed final volume.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q21\",\n    \"name\": \"Calcium chloride dihydrate stock\",\n    \"stage\"\
+    : \"Separate sterile stock added after main-medium autoclaving\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\",\n       \
+    \ \"field_path\": \"preparation_steps[0].description\",\n        \"stored\": \"\
+    Dissolve ingredients except magnesium chloride and calcium chloride. Add magnesium\
+    \ chloride and calcium chloride after autoclaving from sterile stock solutions\
+    \ of 5% (w/v) each. For agar plates add 1.2% Bacto agar\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"desired\": {\n      \"strength_value\": 5,\n      \"strength_unit\"\
+    : \"PERCENT_W_V\",\n      \"separate_stock\": true,\n      \"post_autoclave_addition\"\
+    : true,\n      \"dose_ml\": null\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz844\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Preparation paragraph, separate chloride stock\
+    \ instruction\",\n        \"exact_source_quote\": \"chloride and calcium chloride\
+    \ after autoclaving from sterile stock solutions of 5% (w/v)\\neach.\",\n    \
+    \    \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz844\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\",\n    \
+    \    \"source_locator\": \"Main recipe supplied hydrate row 4\",\n        \"exact_source_quote\"\
+    : \"CaCl2 x 2 H2O 0.30 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      }\n    ],\n    \"interpretation\": \"This strength and timing are already\
+    \ retained in the preparation prose; do not report them missing. No linked or\
+    \ inline stock definition is stored. Any later structured representation must\
+    \ preserve separate salt identities and the explicit w/v basis; the source gives\
+    \ no addition volume. Do not equate 5% stock strength with the main g/L amount\
+    \ or derive a dose from an assumed final volume.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q22\",\n    \"name\": \"Calcium chloride dihydrate stock\",\n    \"stage\"\
+    : \"Separate sterile stock added after main-medium autoclaving\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"desired\": {\n      \"strength_value\": 5,\n      \"strength_unit\"\
+    : \"PERCENT_W_V\",\n      \"separate_stock\": true,\n      \"post_autoclave_addition\"\
+    : true,\n      \"dose_ml\": null\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz844\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\"\
+    ,\n        \"source_locator\": \"Preparation paragraph, separate chloride stock\
+    \ instruction\",\n        \"exact_source_quote\": \"chloride and calcium chloride\
+    \ after autoclaving from sterile stock solutions of 5% (w/v)\\neach.\",\n    \
+    \    \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz844\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\",\n    \
+    \    \"source_locator\": \"Main recipe supplied hydrate row 4\",\n        \"exact_source_quote\"\
+    : \"CaCl2 x 2 H2O 0.30 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      }\n    ],\n    \"interpretation\": \"The PPYE owner omits this preparation\
+    \ instruction. No linked or inline stock definition is stored. Any later structured\
+    \ representation must preserve separate salt identities and the explicit w/v basis;\
+    \ the source gives no addition volume. Do not equate 5% stock strength with the\
+    \ main g/L amount or derive a dose from an assumed final volume.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q23\",\n    \"name\": \"Agar plate percentage\",\n   \
+    \ \"stage\": \"Optional agar branch preparation\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except magnesium chloride and calcium chloride. Add magnesium\
+    \ chloride and calcium chloride after autoclaving from sterile stock solutions\
+    \ of 5% (w/v) each. For agar plates add 1.2% Bacto agar\"\n      },\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\",\n  \
+    \      \"field_path\": \"ingredients[4].notes\",\n        \"stored\": \"Optional\
+    \ ingredient\"\n      }\n    ],\n    \"desired\": {\n      \"source_literal\"\
+    : \"1.2% Bacto agar\",\n      \"percentage_basis\": null,\n      \"structured_concentration_unit\"\
+    : null,\n      \"optional_annotation_preserved\": true\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz844\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\",\n        \"\
+    source_locator\": \"Preparation final sentence\",\n        \"exact_source_quote\"\
+    : \"For agar plates add 1.2% Bacto agar\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz844\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\",\n    \
+    \    \"source_locator\": \"Optional agar mass row\",\n        \"exact_source_quote\"\
+    : \"Agar (Bacto) (optional) 12.00 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary gives 1.2% without a\
+    \ printed percentage basis. Keep that exact source text; do not invent a generic\
+    \ PERCENT enum or silently assign w/v. The separate 12 g table amount and provider\
+    \ 12 g/L declaration remain distinct. Every layer already marks agar optional;\
+    \ target and DSMZ owner already retain the plate instruction.\"\n  },\n  {\n \
+    \   \"decision_id\": \"q24\",\n    \"name\": \"Agar plate percentage\",\n    \"\
+    stage\": \"Optional agar branch preparation\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except magnesium chloride and calcium chloride. Add magnesium\
+    \ chloride and calcium chloride after autoclaving from sterile stock solutions\
+    \ of 5% (w/v) each. For agar plates add 1.2% Bacto agar\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].notes\",\n        \"stored\": \"Optional\
+    \ ingredient\"\n      }\n    ],\n    \"desired\": {\n      \"source_literal\"\
+    : \"1.2% Bacto agar\",\n      \"percentage_basis\": null,\n      \"structured_concentration_unit\"\
+    : null,\n      \"optional_annotation_preserved\": true\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz844\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\",\n        \"\
+    source_locator\": \"Preparation final sentence\",\n        \"exact_source_quote\"\
+    : \"For agar plates add 1.2% Bacto agar\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz844\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\",\n    \
+    \    \"source_locator\": \"Optional agar mass row\",\n        \"exact_source_quote\"\
+    : \"Agar (Bacto) (optional) 12.00 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary gives 1.2% without a\
+    \ printed percentage basis. Keep that exact source text; do not invent a generic\
+    \ PERCENT enum or silently assign w/v. The separate 12 g table amount and provider\
+    \ 12 g/L declaration remain distinct. Every layer already marks agar optional;\
+    \ target and DSMZ owner already retain the plate instruction.\"\n  },\n  {\n \
+    \   \"decision_id\": \"q25\",\n    \"name\": \"Agar plate percentage\",\n    \"\
+    stage\": \"Optional agar branch preparation\",\n    \"decision\": \"add\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].notes\",\n        \"stored\": \"Optional\
+    \ ingredient\"\n      }\n    ],\n    \"desired\": {\n      \"source_literal\"\
+    : \"1.2% Bacto agar\",\n      \"percentage_basis\": null,\n      \"structured_concentration_unit\"\
+    : null,\n      \"optional_annotation_preserved\": true\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz844\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\",\n        \"\
+    source_locator\": \"Preparation final sentence\",\n        \"exact_source_quote\"\
+    : \"For agar plates add 1.2% Bacto agar\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz844\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\",\n    \
+    \    \"source_locator\": \"Optional agar mass row\",\n        \"exact_source_quote\"\
+    : \"Agar (Bacto) (optional) 12.00 g\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary gives 1.2% without a\
+    \ printed percentage basis. Keep that exact source text; do not invent a generic\
+    \ PERCENT enum or silently assign w/v. The separate 12 g table amount and provider\
+    \ 12 g/L declaration remain distinct. Every layer already marks agar optional;\
+    \ target and DSMZ owner already retain the plate instruction.\"\n  },\n  {\n \
+    \   \"decision_id\": \"q26\",\n    \"name\": \"Complete stock and plate preparation\"\
+    ,\n    \"stage\": \"Main dissolution, post-autoclave stocks, optional plates\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\",\n    \
+    \    \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except magnesium chloride and calcium chloride. Add magnesium\
+    \ chloride and calcium chloride after autoclaving from sterile stock solutions\
+    \ of 5% (w/v) each. For agar plates add 1.2% Bacto agar\"\n      }\n    ],\n \
+    \   \"desired\": {\n      \"source_text\": \"Dissolve ingredients except magnesium\
+    \ chloride and calcium chloride. Add magnesium chloride and calcium chloride after\
+    \ autoclaving from sterile stock solutions of 5% (w/v) each. For agar plates add\
+    \ 1.2% Bacto agar\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive844Historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].steps[0].step\",\n      \
+    \  \"exact_source_quote\": \"Dissolve ingredients except magnesium chloride and\
+    \ calcium chloride. Add magnesium chloride and calcium chloride after autoclaving\
+    \ from sterile stock solutions of 5% (w/v) each. For agar plates add 1.2% Bacto\
+    \ agar\",\n        \"snapshot_sha256\": \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The complete existing field is explicitly\
+    \ inventoried, including both 5% stocks and 1.2% agar prose. It already exists\
+    \ and must be preserved.\"\n  },\n  {\n    \"decision_id\": \"q27\",\n    \"name\"\
+    : \"Complete stock and plate preparation\",\n    \"stage\": \"Main dissolution,\
+    \ post-autoclave stocks, optional plates\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except magnesium chloride and calcium chloride. Add magnesium\
+    \ chloride and calcium chloride after autoclaving from sterile stock solutions\
+    \ of 5% (w/v) each. For agar plates add 1.2% Bacto agar\"\n      }\n    ],\n \
+    \   \"desired\": {\n      \"source_text\": \"Dissolve ingredients except magnesium\
+    \ chloride and calcium chloride. Add magnesium chloride and calcium chloride after\
+    \ autoclaving from sterile stock solutions of 5% (w/v) each. For agar plates add\
+    \ 1.2% Bacto agar\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive844Historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].steps[0].step\",\n      \
+    \  \"exact_source_quote\": \"Dissolve ingredients except magnesium chloride and\
+    \ calcium chloride. Add magnesium chloride and calcium chloride after autoclaving\
+    \ from sterile stock solutions of 5% (w/v) each. For agar plates add 1.2% Bacto\
+    \ agar\",\n        \"snapshot_sha256\": \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The complete existing field is explicitly\
+    \ inventoried, including both 5% stocks and 1.2% agar prose. It already exists\
+    \ and must be preserved.\"\n  },\n  {\n    \"decision_id\": \"q28\",\n    \"name\"\
+    : \"Complete stock and plate preparation\",\n    \"stage\": \"Main dissolution,\
+    \ post-autoclave stocks, optional plates\",\n    \"decision\": \"add\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_text\": \"Dissolve ingredients\
+    \ except magnesium chloride and calcium chloride. Add magnesium chloride and calcium\
+    \ chloride after autoclaving from sterile stock solutions of 5% (w/v) each. For\
+    \ agar plates add 1.2% Bacto agar\"\n    },\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"mediadive844Historical\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/844\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].steps[0].step\",\n        \"exact_source_quote\": \"Dissolve\
+    \ ingredients except magnesium chloride and calcium chloride. Add magnesium chloride\
+    \ and calcium chloride after autoclaving from sterile stock solutions of 5% (w/v)\
+    \ each. For agar plates add 1.2% Bacto agar\",\n        \"snapshot_sha256\": \"\
+    469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\n      }\n\
+    \    ],\n    \"interpretation\": \"The complete existing field is explicitly inventoried,\
+    \ including both 5% stocks and 1.2% agar prose. It is absent only in the PPYE\
+    \ owner; add exact supported stages without inferring a sterilization cycle.\"\
+    \n  },\n  {\n    \"decision_id\": \"q29\",\n    \"name\": \"Unquantified conditions\
+    \ and doses\",\n    \"stage\": \"Preparation and cultivation limits\",\n    \"\
+    decision\": \"not_quantified\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ph_value\",\n        \"stored\": null\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\",\n   \
+    \     \"field_path\": \"ph_value\",\n        \"stored\": null\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\",\n\
+    \        \"field_path\": \"ph_value\",\n        \"stored\": null\n      },\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"temperature_value\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"temperature_value\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\"\
+    ,\n        \"field_path\": \"temperature_value\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"temperature_range\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"temperature_range\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\"\
+    ,\n        \"field_path\": \"temperature_range\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/ppye_medium.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null\n    \
+    \  }\n    ],\n    \"desired\": {\n      \"stock_addition_volumes\": null,\n  \
+    \    \"autoclave_temperature_or_duration\": null,\n      \"incubation_temperature_or_duration\"\
+    : null,\n      \"pH\": null,\n      \"measured_final_volume\": null\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive844Historical\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/844\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].steps[0].step\",\n        \"\
+    exact_source_quote\": \"Dissolve ingredients except magnesium chloride and calcium\
+    \ chloride. Add magnesium chloride and calcium chloride after autoclaving from\
+    \ sterile stock solutions of 5% (w/v) each. For agar plates add 1.2% Bacto agar\"\
+    ,\n        \"snapshot_sha256\": \"469dd1a1837ef0ba17cdc3edcdbe32a79188f62bc4eba433c1f310e8f08ac20e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz844\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf\",\n    \
+    \    \"source_locator\": \"Water input\",\n        \"exact_source_quote\": \"\
+    Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"d547c32f5477d7a2b6cbb7525fe8b9104c9752022cf4c65cec9f249a33f8f140\"\
+    ,\n        \"parsed_text_sha256\": \"2be4c6475bc42f851fd81e3a87e629052e7a0e32fffb9cb10a9ba4da9e7624bc\"\
+    \n      }\n    ],\n    \"interpretation\": \"Autoclaving and sterile stocks are\
+    \ explicit, but the source does not specify a cycle, stock dose, pH or incubation\
+    \ conditions. The water input and provider volume do not establish independently\
+    \ measured final volume.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '3 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 3/5 primary
+    and 3/5 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:002000
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi2509
+  - chebi86158
+  - chebi86345
+  details: 'Instance coverage on a 0–100 percent scale, denominator 5: primary 60.00%;
+    secondary 60.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 19 timestamp instances inspected; 2 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:002000
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: identity
+  area: identity
+  topic: DSMZ 844 and PPYE source relationship
+  outcome: supported
+  summary: The exact KOMODO 844 row links PPYE directly to DSMZ 844, whose primary
+    and historical API are titled BACTERIOVORAX MEDIUM. Stable paths and IDs resolve
+    reciprocally. This supports the source relationship independently of fingerprints
+    or the ambiguous common name. DSMZ 1013/1012b reports and catalog 398.2 are excluded.
+  target_ids:
+  - CultureMech:002000
+  evidence_ids:
+  - primary
+  - historical
+  - catalog
+  - record
+  - owner-0
+  - owner-1
+  - history-inventory
+- assessment_id: forms
+  area: grounding
+  topic: Explicit supplied hydrates and product qualifiers
+  outcome: supported
+  summary: CHEBI:86345 is magnesium dichloride hexahydrate and CHEBI:86158 is calcium
+    chloride dihydrate, matching the primary supplied forms exactly. Agar is a complex
+    mixture, not a pure compound warranting molar conversion. The source identifies
+    BD Bacto proteose peptone no. 3 and yeast extract, and Bacto agar; local names
+    omit some source product qualifiers, without proving any different product was
+    actually used. No replacement identifiers or equivalent supplier compositions
+    are inferred.
+  target_ids:
+  - CultureMech:002000
+  evidence_ids:
+  - primary
+  - chebi86345
+  - chebi86158
+  - chebi2509
+  - record
+- assessment_id: preparation
+  area: completeness
+  topic: Existing preparation and missing PPYE stages
+  outcome: concern
+  summary: Target and DSMZ owner already retain the full post-autoclave stock and
+    agar-plate paragraph. PPYE lacks it. Every layer already marks agar Optional ingredient;
+    the current solid selection is supported and does not erase the recorded optional
+    branch. The frozen context description of an unconditional encoding is therefore
+    narrowed by these actual fields. Both 5% strengths are explicitly w/v; the separate
+    1.2% agar phrase has no printed basis.
+  target_ids:
+  - CultureMech:002000
+  evidence_ids:
+  - primary
+  - historical
+  - quantity-inventory
+  - record
+  - owner-0
+  - owner-1
+- assessment_id: evidence-placement
+  area: evidence
+  topic: Claim-specific authentication and generated lag
+  outcome: concern
+  summary: Only the two DSMZ owner salt fields carry attached authenticated amount
+    evidence. Other quantities receive external evidence-only decisions. The generated
+    target lacks those two claims and the source references; this observed difference
+    does not diagnose current merger causation. Water is absent in every layer.
+  target_ids:
+  - CultureMech:002000
+  evidence_ids:
+  - historical
+  - history-inventory
+  - quantity-inventory
+  - record
+  - owner-0
+  - owner-1
+- assessment_id: biological-scope
+  area: scope
+  topic: Medium class and growth claims
+  outcome: supported
+  summary: Peptone and yeast extract support complex undefined classification. The
+    solid-agar selection is a supported optional branch, and each ingredient note
+    retains optionality. No organism-specific growth, oxygen physiology, temperature
+    or pH follows from the medium name or catalog flags.
+  target_ids:
+  - CultureMech:002000
+  evidence_ids:
+  - primary
+  - catalog
+  - record
+findings:
+- finding_id: f1
+  issue_key: culturemech.002000.missing-water-input
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Main solvent input is absent
+  description: The primary and historical provider both list 1000 mL distilled water,
+    but target and both maintained owners omit it. This is a missing preparation input,
+    not proof of a 1000 g/L water concentration or measured final volume.
+  target_ids:
+  - CultureMech:002000
+  field_paths:
+  - ingredients
+  - preparation_steps
+  evidence_ids:
+  - primary
+  - historical
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ppye_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.002000.ppye-preparation-missing
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: PPYE omits the separate post-autoclave stock instruction
+  description: The PPYE owner lacks preparation_steps, including the two separate
+    sterile 5% w/v chloride stocks and plate instruction. Target and DSMZ owner already
+    retain the full paragraph, and all three layers already mark agar optional.
+  target_ids:
+  - CultureMech:002000
+  field_paths:
+  - preparation_steps
+  - solutions
+  evidence_ids:
+  - primary
+  - historical
+  - quantity-inventory
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ppye_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.002000.stale-generated-salt-evidence
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated target lacks authenticated DSMZ salt claims
+  description: The maintained DSMZ owner has two exact historical salt amount claims
+    and a reference that the target omits. PPYE has no corresponding attached claims.
+    Exact current source support does not make unattached target or PPYE fields verified.
+  target_ids:
+  - CultureMech:002000
+  field_paths:
+  - ingredients[2].evidence
+  - ingredients[3].evidence
+  - references
+  - curation_history
+  evidence_ids:
+  - historical
+  - history-inventory
+  - record
+  - owner-0
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ppye_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.002000.source-product-qualifiers
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source product qualifiers are incompletely retained
+  description: The source specifies BD Bacto proteose peptone no. 3 and yeast extract,
+    and Bacto agar. Local ingredient preferred names omit supplier or grade context;
+    target/DSMZ preparation retains Bacto only for agar. No different supplied product
+    or chemical-form mismatch is established.
+  target_ids:
+  - CultureMech:002000
+  field_paths:
+  - ingredients[0].preferred_term
+  - ingredients[1].preferred_term
+  - ingredients[4].preferred_term
+  - ingredients[*].notes
+  evidence_ids:
+  - primary
+  - historical
+  - record
+  - owner-0
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ppye_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: culturemech.002000.ppye-import-timestamps
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: PPYE history has malformed and timezone-naive timestamps
+  description: Only the PPYE owner retains one .fZ timestamp and one timezone-naive
+    timestamp. The target and DSMZ owner history are parseable.
+  target_ids:
+  - CultureMech:002000
+  field_paths:
+  - curation_history[0].timestamp
+  - curation_history[1].timestamp
+  evidence_ids:
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ppye_medium.yaml
+    role: authoritative normalized source
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Preserve the explicit water input in its preparation stage with source
+    evidence; retain separate stock additions and unknown final volume.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002000
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ppye_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Add the exact source-supported preparation to PPYE, preserving existing
+    target/DSMZ prose and optional agar notes. Keep stock strengths separate from
+    main amounts; do not invent stock doses, a percentage basis for 1.2% agar, or
+    an autoclave cycle.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002000
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ppye_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve the authenticated DSMZ salt claims, separately scope any PPYE
+    evidence addition, and verify guarded regeneration carries intended evidence at
+    the correct fields without inferring current-code historical causation.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:002000
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ppye_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Preserve the exact source product qualifiers in appropriate ingredient
+    descriptions and evidence without fabricating a catalog number or asserting supplier
+    equivalence.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:002000
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/DSMZ_844_BACTERIOVORAX_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ppye_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Retain the old history and append a supported clarification if exact
+    timing is established; do not fabricate timestamps.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:002000
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ppye_medium.yaml
+    role: authoritative normalized source
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The preserved mediadive844api attempt returned HTTP 503. Current primary and exact
+  recovered historical raw resolve the material formulation claims. Optional detail
+  access is not evidence of formula absence or historical byte equivalence.
+- The preserved mediadive844api_retry attempt returned HTTP 503. Current primary and
+  exact recovered historical raw resolve the material formulation claims. Optional
+  detail access is not evidence of formula absence or historical byte equivalence.
+- The preserved komodo844detail attempt returned HTTP 403. Current primary and exact
+  recovered historical raw resolve the material formulation claims. Optional detail
+  access is not evidence of formula absence or historical byte equivalence.
+- The source specifies separate sterile 5% w/v chloride stocks but no dose, numerical
+  sterilization cycle, pH, incubation condition or measured final volume. The unqualified
+  1.2% agar phrase remains literal source text without an invented structured percentage
+  basis.
+- Optional agar is already stated in every layer, and target/DSMZ preparation is already
+  present; no blanket loss finding applies. Only PPYE lacks that preparation paragraph.
+- Current API and optional detail failures are preserved. Exact primary and recovered
+  historical raw resolve the material claims; unrelated namesake reports and accession
+  398.2 are excluded.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-039
+- generated-medium

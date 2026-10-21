@@ -1,0 +1,1527 @@
+schema_version: 1.0.0
+review_id: 20261021T215939Z-culturemech-004777-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: bacillus_pasteurii_medium (CultureMech:004777)'
+started_at: '2026-10-21T21:51:49Z'
+finished_at: '2026-10-21T21:59:39Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 2 delegates the nutrient-agar base and adds 20 g/L urea before autoclaving
+  without receiving-stage pH adjustment. The maintained DSMZ owner already restores
+  that boundary, water and preparation, whereas the generated and KOMODO records retain
+  a flat formula and unqualified pH 8. The separate solution 1 has an erroneous water
+  percentage and placeholder. Historical medium 2 and standalone solution 1 raw correspondence
+  remains unresolved.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml
+    sha256: 1c8839ff9483867ef4f5b67e166512e3358a92d04f0ff007e87d36d8d552a00c
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml
+    sha256: c6d72b30b14921976a46c9b130229f1167627f002ab9f3a9cc570ccda7a39049
+    role: context
+  - path: data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml
+    sha256: ab92b341bd473a3ed09c7a28b5c244dd977dc22783f299b728673842c22c36c6
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_1_Main_sol_1.yaml
+    sha256: a97af313352e5de06fa240c8865767d73ecdf5719f73da38441d02db229afd16
+    role: context
+  - path: data/normalized_yaml/bacterial/nutrient_agar.yaml
+    sha256: 0bf78efe34d289f56275a1beaba73092f73b02495d30886928e7a2376b0f7144
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/README.md
+    sha256: c74d4bc5b97641a9c6b056430cf86ce0ec6864ef497aa64c2ca17eaebd7cd9cf
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/followup.md
+    sha256: 33af91dfef921877dbb1bbb8262583f8ca0d286da2ec1b49da0f90cbe7888f28
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/merge-retention.json
+    sha256: 65260b38a8c793f2e8f2682641474964cb1337808c5df94c025ea59a3afe077a
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/plan.json
+    sha256: 6c92a8087fd8b3be7324df41968237766a03b02e56fb8bc51bcbc626608682ba
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-dsmz2-stock-boundary/validation.json
+    sha256: e78c46417990a9b1c87108db134972df1fa9240ab66815b27c96db3d6a3d1a28
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/plan.json
+    sha256: 1ada7bec3dbf8c0a4bb2e448ab02750c2cfd126352f8488695ed34cf2a821f5c
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/bacillus_pasteurii_medium.yaml.md
+    sha256: da10e67ba37c43c5386ea6bcba57672b50018c72885e5e7a87de4e2dbbec576a
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/import_mediadive_solutions.py
+    sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_dsmz2_stock_boundary.py
+    sha256: d1e3d54d4c2cf45c2fcf96c29229b160d9f18cc4605dbab8a136993a46a83d6d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 382; batch 039 item 2 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-eight task batches
+    contain 380 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 383 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:004777
+targets:
+- target_id: CultureMech:004777
+  path: data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml
+  label: bacillus_pasteurii_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch039/382/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-039/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch039/382/strict.tsv"
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:004777
+- check_id: mediadive2api-source-access
+  name: 'Exact source content access: mediadive2api'
+  required: false
+  status: unavailable
+  summary: Preserved exact mediadive2api access limitation; failure itself is not
+    proof of missing identity or a required scientific comparison.
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - mediadive2api-attempt
+- check_id: mediadive2api_retry-source-access
+  name: 'Exact source content access: mediadive2api_retry'
+  required: false
+  status: unavailable
+  summary: Preserved exact mediadive2api_retry access limitation; failure itself is
+    not proof of missing identity or a required scientific comparison.
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - mediadive2api_retry-attempt
+- check_id: solution1-source-access
+  name: 'Exact source content access: solution1'
+  required: false
+  status: unavailable
+  summary: Preserved exact solution1 access limitation; failure itself is not proof
+    of missing identity or a required scientific comparison.
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - solution1-attempt
+- check_id: solution1_retry-source-access
+  name: 'Exact source content access: solution1_retry'
+  required: false
+  status: unavailable
+  summary: Preserved exact solution1_retry access limitation; failure itself is not
+    proof of missing identity or a required scientific comparison.
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - solution1_retry-attempt
+- check_id: komodo2detail-source-access
+  name: 'Exact source content access: komodo2detail'
+  required: false
+  status: unavailable
+  summary: Preserved exact komodo2detail access limitation; failure itself is not
+    proof of missing identity or a required scientific comparison.
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - komodo2detail-attempt
+- check_id: historical-receiving-standalone-raw
+  name: Required historical medium 2 and standalone solution 1 raw correspondence
+  required: true
+  status: unavailable
+  summary: Exact cited receiving and standalone raw responses were not recovered in
+    the frozen ignored-inclusive owned-report/raw search. Six receiving objects have
+    derivative plan matches; two standalone objects do not. The existing receiving-dose
+    assertion and historical authentication remain bounded unknowns.
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - history-inventory
+  - primary
+  - base-api
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T21:59:38Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T21:59:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T21:59:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:52:13.639395Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch039/382/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:52:14.661062Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-039/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch039/382/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:52:15.763347Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:52:16.456456Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T21:59:38Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml:1:id: CultureMech:004777
+
+    ./data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml:1:id:
+    CultureMech:004777
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch039/source-preflight-bound/382/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T21:59:38Z'
+  support: supports
+  summary: 13 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 8d70d9c2da58906b637e106e12b94c2d30227ba8c93053a823e886bb19d62fdc
+- evidence_id: standalone
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_1_Main_sol_1.yaml
+  locator: Entire exact scoped dependency
+  accessed_at: '2026-10-21T21:59:38Z'
+  support: context_only
+  summary: DSMZ 1 basal composition/preparation only. Its other receiving variants
+    and graph match are excluded. Standalone solution 1 is a separate representation,
+    not an override of the repaired inline composition.
+  snapshot_sha256: a97af313352e5de06fa240c8865767d73ecdf5719f73da38441d02db229afd16
+- evidence_id: base-owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/nutrient_agar.yaml
+  locator: Entire exact scoped dependency
+  accessed_at: '2026-10-21T21:59:38Z'
+  support: context_only
+  summary: DSMZ 1 basal composition/preparation only. Its other receiving variants
+    and graph match are excluded. Standalone solution 1 is a separate representation,
+    not an override of the repaired inline composition.
+  snapshot_sha256: 0bf78efe34d289f56275a1beaba73092f73b02495d30886928e7a2376b0f7144
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf
+  locator: Entire one-page recipe
+  accessed_at: '2026-10-21T20:56:16.187110Z'
+  support: supports
+  summary: Explicit urea rate, delegated base, no receiving-stage pH adjustment and
+    conditional manganese.
+  quote: To medium 1 add 20 g/l urea before autoclaving.
+  snapshot_sha256: 2216960d2564bff726b3b45c9f4a3e5d84d5a549cff3bb548c74a118de1e56c9
+- evidence_id: base
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf
+  locator: Four basal rows and following paragraph
+  accessed_at: '2026-10-21T12:53:02.059294Z'
+  support: supports
+  summary: Basal pH and optional solid branch transfer only in their explicit stage.
+  quote: Agar, if necessary 15.0 g
+  snapshot_sha256: 95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f
+- evidence_id: base-api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1
+  locator: $.data.medium; $.data.solutions[0]
+  accessed_at: '2026-10-21T12:53:02.058628Z'
+  support: supports
+  summary: Exact available DSMZ 1 raw declares solution 1 and 1000 mL basal volume;
+    source-specific stock rates and ingredient IDs are inspected, not a measured receiving
+    final volume.
+  snapshot_sha256: 96b8496db5025086f2407d1e2e2738ad74250909ec172a4a76c42ca22a96e319
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact accession 2 row; original recipe URL
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: KOMODO 2 maps to DSMZ 2. Catalog pH and aerobic false are metadata, not
+    independent physiological evidence.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2'\
+    \ >2</a></TD>\n\t\t\t\t\t<TD>BACILLUS PASTEURII medium</TD>\n\t\t\t\t\t<TD> 8</TD>\n\
+    \t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf</a></TD>\n\
+    \t\t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch039/382/grounding-inventory.json
+  locator: Exact local term/history slots and bound source authentication ledger
+  accessed_at: '2026-10-21T21:59:38Z'
+  support: context_only
+  summary: Complete exact-field inventory; current metadata, historical evidence and
+    source forms remain distinct.
+  snapshot_sha256: 28d579a0bd17a6266566ba30eab4716f343a3ae33be531a0660e4202f80e96d0
+- evidence_id: history-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch039/382/history-inventory.json
+  locator: Exact local term/history slots and bound source authentication ledger
+  accessed_at: '2026-10-21T21:59:38Z'
+  support: context_only
+  summary: Complete exact-field inventory; current metadata, historical evidence and
+    source forms remain distinct.
+  snapshot_sha256: 7fd1831faa05cd8abdd4a2fe6d0c17726db9ad1d28746d3f7a19d2294f3e8e90
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi16199
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16199
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T09:27:39.323287Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 5298ca6b7d402b8a6e2091f03adf139a2d777c9614d760976b3953bc88bd862e
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: micro0000178
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000178
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:00:49.423450Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: ef45aa186438f91d015280171fde8ccb25740a50cc6f2c6e848de6aad3339b31
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact pinned current CHEBI preferred-key rows; metadata source commit/hash
+  accessed_at: '2026-10-21T21:59:38Z'
+  support: context_only
+  summary: '{"CHEBI:16199": [{"label": "Urea", "match_type": "preferred_term", "identifier":
+    "CHEBI:16199", "preferred_term": "Urea", "ontology_id": "CHEBI:16199", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type":
+    "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id":
+    "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: writer-0
+  kind: record_content
+  reference: scripts/repair_dsmz2_stock_boundary.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:59:38Z'
+  support: context_only
+  summary: The guarded DSMZ 2 repair explicitly relocates three base solutes, adds
+    water/dose and separates pH stages on one exact owner. Current standalone importer
+    unit conversion and placeholder history are distinct. Current formulation-aware
+    merge rejects incompatible layers; the captured generated target is stale relative
+    to the later owner repair, without asserting that today’s merger recreated the
+    old flattening.
+  snapshot_sha256: d1e3d54d4c2cf45c2fcf96c29229b160d9f18cc4605dbab8a136993a46a83d6d
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/import_mediadive_solutions.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:59:38Z'
+  support: context_only
+  summary: The guarded DSMZ 2 repair explicitly relocates three base solutes, adds
+    water/dose and separates pH stages on one exact owner. Current standalone importer
+    unit conversion and placeholder history are distinct. Current formulation-aware
+    merge rejects incompatible layers; the captured generated target is stale relative
+    to the later owner repair, without asserting that today’s merger recreated the
+    old flattening.
+  snapshot_sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:59:38Z'
+  support: context_only
+  summary: The guarded DSMZ 2 repair explicitly relocates three base solutes, adds
+    water/dose and separates pH stages on one exact owner. Current standalone importer
+    unit conversion and placeholder history are distinct. Current formulation-aware
+    merge rejects incompatible layers; the captured generated target is stale relative
+    to the later owner repair, without asserting that today’s merger recreated the
+    old flattening.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:59:38Z'
+  support: context_only
+  summary: The guarded DSMZ 2 repair explicitly relocates three base solutes, adds
+    water/dose and separates pH stages on one exact owner. Current standalone importer
+    unit conversion and placeholder history are distinct. Current formulation-aware
+    merge rejects incompatible layers; the captured generated target is stale relative
+    to the later owner repair, without asserting that today’s merger recreated the
+    old flattening.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml;
+    data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T21:59:38Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:18:54.412825"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:54.412825"}]}, {"input": "data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml",
+    "events": 6, "timestamp_issues": []}]'
+- evidence_id: mediadive2api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/2
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T20:56:14.798357Z'
+  support: context_only
+  summary: Preserved exact mediadive2api access limitation; failure itself is not
+    proof of missing identity or a required scientific comparison.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive2api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/2
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T20:57:44.228828Z'
+  support: context_only
+  summary: Preserved exact mediadive2api_retry access limitation; failure itself is
+    not proof of missing identity or a required scientific comparison.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: solution1-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/1
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T20:56:15.667681Z'
+  support: context_only
+  summary: Preserved exact solution1 access limitation; failure itself is not proof
+    of missing identity or a required scientific comparison.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: solution1_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/1
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T20:57:44.837487Z'
+  support: context_only
+  summary: Preserved exact solution1_retry access limitation; failure itself is not
+    proof of missing identity or a required scientific comparison.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo2detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=2
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T20:56:14.546904Z'
+  support: context_only
+  summary: Preserved exact komodo2detail access limitation; failure itself is not
+    proof of missing identity or a required scientific comparison.
+  snapshot_sha256: 4fd53ef58457784095db534bfe47d6dae6f73fee56f68dbcefb5d1ead6771bfa
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch039/382/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T21:59:38Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 1a54e0b7fdc497f0415c1baf178ddf4577a4e544d94cd00f93bacd7fe9581caa
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact accession and delegated base
+  outcome: supported
+  summary: KOMODO 2 maps to DSMZ 2; CultureMech:001399 is its maintained DSMZ contributor,
+    distinct from CultureMech:004777 KOMODO/generated identity. DSMZ 1 and solution
+    1 are only basal dependencies. Their other variants and graph match do not transfer.
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - id-search
+  - primary
+  - base
+  - base-api
+  - catalog
+  - standalone
+  - base-owner
+- assessment_id: structure-preparation
+  area: completeness
+  topic: Current layer-specific structure and conditions
+  outcome: concern
+  summary: The DSMZ owner already retains one direct urea ingredient, nested base
+    with 1 L water, correct MIX action and both pH stages. Generated/KOMODO layers
+    retain four flattened direct amounts and scalar pH 8. The source optional agar
+    allows the selected SOLID_AGAR branch. Standalone water percentage and placeholder
+    require separate correction; preserve correct inline data.
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - standalone
+  - primary
+  - base
+  - quantity-inventory
+- assessment_id: grounding
+  area: grounding
+  topic: Chemical, provider and current secondary identities
+  outcome: concern
+  summary: All asserted CHEBI IDs resolve with matching labels and current secondary
+    keys have exact pinned rows; target linkage is 2/4 primary and 2/4 secondary ingredients
+    (50% each, not correctness scores). mediadive.compound:4 water is supported by
+    the exact basal API, not a missing CHEBI error. The basal dependency’s MICRO:0000178
+    label Peptone differs by case from canonical peptone; no chemical-identity change
+    is implied.
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - grounding-inventory
+  - mim
+  - base-api
+  - primary
+- assessment_id: classification-growth
+  area: scope
+  topic: Classification, catalog oxygen and excluded parent claims
+  outcome: supported
+  summary: 'COMPLEX/UNDEFINED and selected solid agar are supported. Catalog Aerobic:
+    No is retained only as catalog provenance, not an experimentally established gas
+    requirement. No Bacillus strain, temperature, target-organism or parent nutrient-agar
+    variant is asserted from titles or generic supplement language. Parent graph mediadive.medium:12
+    is outside the receiving recipe assessment.'
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - catalog
+  - primary
+  - base
+- assessment_id: historical-evidence
+  area: evidence
+  topic: Recovered basal source versus unavailable receiving/standalone sources
+  outcome: concern
+  summary: Six DSMZ-owner evidence objects cite unrecovered medium 2 response e0812b7c…;
+    exact decoded plan agreement is derivative-only. Two standalone solution 1 evidence
+    objects cite unrecovered a8c94163… without matching plan snippets in the bounded
+    search. Three basal medium 1 claims do match available exact raw/hash 96b8496d…
+    . Current primary PDFs independently support their stated fields but do not authenticate
+    those missing API responses.
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - history-inventory
+  - primary
+  - base
+  - base-api
+  - writer-0
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 20 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 11 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:004777
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Urea receiving-medium rate\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz2\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 first sentence\",\n        \"exact_source_quote\"\
+    : \"To medium 1 add 20 g/l urea before autoclaving.\",\n        \"snapshot_sha256\"\
+    : \"2216960d2564bff726b3b45c9f4a3e5d84d5a549cff3bb548c74a118de1e56c9\",\n    \
+    \    \"parsed_text_sha256\": \"281838016d356e749bda2ac0a32dc4a7601916faeca1cf27163d15d273876af6\"\
+    ,\n        \"accessed_at\": \"2026-10-21T20:56:16.187110Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 20,\n      \"unit\"\
+    : \"G_PER_L\",\n      \"stage\": \"add to prepared medium 1 before autoclaving\"\
+    \n    },\n    \"rationale\": \"The rate is explicitly per litre in the primary.\
+    \ Target/KOMODO lack attached evidence; the DSMZ owner has an exact historical\
+    \ API claim whose cited response remains unrecovered. Add current primary evidence\
+    \ without calling the historical raw authenticated.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q2\",\n    \"component_or_context\": \"Peptone\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Restore delegated\
+    \ basal scope; unchanged nominal numeral.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Restore delegated\
+    \ basal scope; unchanged nominal numeral.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml\",\n       \
+    \ \"field_path\": \"solutions[0].composition[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Correct existing\
+    \ stock scope; historical receiving raw remains unavailable.\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/mediadive_1_Main_sol_1.yaml\"\
+    ,\n        \"field_path\": \"composition[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Current base\
+    \ API supports this nominal stock rate independently; historical standalone endpoint\
+    \ remains unauthenticated.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"Attached exact\
+    \ medium 1 raw/hash supports the stated base rate.\"\n      }\n    ],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsmz1\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 basal table\",\n        \"exact_source_quote\"\
+    : \"Peptone 5.0 g\",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    ,\n        \"accessed_at\": \"2026-10-21T12:53:02.059294Z\"\n      },\n      {\n\
+    \        \"source_key\": \"mediadive1api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 1,\\\
+    n                        \\\"compound\\\": \\\"Peptone\\\",\\n               \
+    \         \\\"compound_id\\\": 1,\\n                        \\\"amount\\\": 5,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 5,\\n                        \\\"optional\\\": 0\\n               \
+    \     }\",\n        \"snapshot_sha256\": \"96b8496db5025086f2407d1e2e2738ad74250909ec172a4a76c42ca22a96e319\"\
+    ,\n        \"accessed_at\": \"2026-10-21T12:53:02.058628Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 5,\n      \"unit\"\
+    : \"g\",\n      \"provider_stock_rate_g_L\": 5,\n      \"provider_base_volume_mL\"\
+    : 1000,\n      \"stage\": \"DSMZ 1 basal recipe\",\n      \"optional\": false\n\
+    \    },\n    \"rationale\": \"Retain the current DSMZ owner’s already-correct\
+    \ nesting. Only target/KOMODO lose the explicit base boundary. Optional agar supports\
+    \ the selected solid branch and must not be imposed on a liquid branch. No new\
+    \ receiving dilution is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q3\"\
+    ,\n    \"component_or_context\": \"Meat extract\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Restore delegated\
+    \ basal scope; unchanged nominal numeral.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Restore delegated\
+    \ basal scope; unchanged nominal numeral.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml\",\n       \
+    \ \"field_path\": \"solutions[0].composition[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Correct existing\
+    \ stock scope; historical receiving raw remains unavailable.\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/mediadive_1_Main_sol_1.yaml\"\
+    ,\n        \"field_path\": \"composition[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Current base\
+    \ API supports this nominal stock rate independently; historical standalone endpoint\
+    \ remains unauthenticated.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"Attached exact\
+    \ medium 1 raw/hash supports the stated base rate.\"\n      }\n    ],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsmz1\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 basal table\",\n        \"exact_source_quote\"\
+    : \"Meat extract 3.0 g\",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    ,\n        \"accessed_at\": \"2026-10-21T12:53:02.059294Z\"\n      },\n      {\n\
+    \        \"source_key\": \"mediadive1api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[1]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 2,\\\
+    n                        \\\"compound\\\": \\\"Meat extract\\\",\\n          \
+    \              \\\"compound_id\\\": 2,\\n                        \\\"amount\\\"\
+    : 3,\\n                        \\\"unit\\\": \\\"g\\\",\\n                   \
+    \     \\\"g_l\\\": 3,\\n                        \\\"optional\\\": 0\\n       \
+    \             }\",\n        \"snapshot_sha256\": \"96b8496db5025086f2407d1e2e2738ad74250909ec172a4a76c42ca22a96e319\"\
+    ,\n        \"accessed_at\": \"2026-10-21T12:53:02.058628Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 3,\n      \"unit\"\
+    : \"g\",\n      \"provider_stock_rate_g_L\": 3,\n      \"provider_base_volume_mL\"\
+    : 1000,\n      \"stage\": \"DSMZ 1 basal recipe\",\n      \"optional\": false\n\
+    \    },\n    \"rationale\": \"Retain the current DSMZ owner’s already-correct\
+    \ nesting. Only target/KOMODO lose the explicit base boundary. Optional agar supports\
+    \ the selected solid branch and must not be imposed on a liquid branch. No new\
+    \ receiving dilution is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q4\"\
+    ,\n    \"component_or_context\": \"Optional agar\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Restore delegated\
+    \ basal scope; unchanged nominal numeral.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Restore delegated\
+    \ basal scope; unchanged nominal numeral.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml\",\n       \
+    \ \"field_path\": \"solutions[0].composition[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Correct existing\
+    \ stock scope; historical receiving raw remains unavailable.\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/mediadive_1_Main_sol_1.yaml\"\
+    ,\n        \"field_path\": \"composition[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Current base\
+    \ API supports this nominal stock rate independently; historical standalone endpoint\
+    \ remains unauthenticated.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"Attached exact\
+    \ medium 1 raw/hash supports the stated base rate.\"\n      }\n    ],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsmz1\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 basal table\",\n        \"exact_source_quote\"\
+    : \"Agar, if necessary 15.0 g\",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    ,\n        \"accessed_at\": \"2026-10-21T12:53:02.059294Z\"\n      },\n      {\n\
+    \        \"source_key\": \"mediadive1api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 3,\\\
+    n                        \\\"compound\\\": \\\"Agar\\\",\\n                  \
+    \      \\\"compound_id\\\": 3,\\n                        \\\"condition\\\": \\\
+    \"for solid medium\\\",\\n                        \\\"amount\\\": 15,\\n     \
+    \                   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\
+    \": 15,\\n                        \\\"optional\\\": 0\\n                    }\"\
+    ,\n        \"snapshot_sha256\": \"96b8496db5025086f2407d1e2e2738ad74250909ec172a4a76c42ca22a96e319\"\
+    ,\n        \"accessed_at\": \"2026-10-21T12:53:02.058628Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 15,\n      \"unit\"\
+    : \"g\",\n      \"provider_stock_rate_g_L\": 15,\n      \"provider_base_volume_mL\"\
+    : 1000,\n      \"stage\": \"DSMZ 1 basal recipe\",\n      \"optional\": true\n\
+    \    },\n    \"rationale\": \"Retain the current DSMZ owner’s already-correct\
+    \ nesting. Only target/KOMODO lose the explicit base boundary. Optional agar supports\
+    \ the selected solid branch and must not be imposed on a liquid branch. No new\
+    \ receiving dilution is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q5\"\
+    ,\n    \"component_or_context\": \"Basal water input\",\n    \"decision\": \"\
+    correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[3].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"L\"\n\
+    \        },\n        \"decision\": \"evidence_only\",\n        \"rationale\":\
+    \ \"Existing literal 1 L is correct batch water; historical receiving raw not\
+    \ authenticated.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/mediadive_1_Main_sol_1.yaml\"\
+    ,\n        \"field_path\": \"composition[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1000\",\n          \"unit\": \"PERCENT_V_V\"\n   \
+    \     },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 basal water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    ,\n        \"accessed_at\": \"2026-10-21T12:53:02.059294Z\"\n      },\n      {\n\
+    \        \"source_key\": \"mediadive1api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 1000,\\n                        \\\"unit\\\": \\\"ml\\\",\\n             \
+    \           \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"96b8496db5025086f2407d1e2e2738ad74250909ec172a4a76c42ca22a96e319\",\n    \
+    \    \"accessed_at\": \"2026-10-21T12:53:02.058628Z\"\n      }\n    ],\n    \"\
+    proposed_source_representation\": {\n      \"amount\": 1000,\n      \"unit\":\
+    \ \"mL\",\n      \"stage\": \"DSMZ 1 base batch\"\n    },\n    \"rationale\":\
+    \ \"1000 mL is 1 L of batch water. The standalone definition’s 1000 PERCENT_V_V\
+    \ is unsupported, whereas the maintained receiving owner already has correct 1\
+    \ L. Do not turn water input into a measured final-volume assertion.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\": \"Explicit receiving\
+    \ base-dose historical claim\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"L\"\n        },\n    \
+    \    \"decision\": \"unsupported\",\n        \"rationale\": \"Preserve as historical\
+    \ assertion pending exact receiving-response recovery; no evidence of a wrong\
+    \ numeric value.\"\n      },\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"not_quantified\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"not_quantified\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz2\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 first sentence\",\n        \"exact_source_quote\"\
+    : \"To medium 1 add 20 g/l urea before autoclaving.\",\n        \"snapshot_sha256\"\
+    : \"2216960d2564bff726b3b45c9f4a3e5d84d5a549cff3bb548c74a118de1e56c9\",\n    \
+    \    \"parsed_text_sha256\": \"281838016d356e749bda2ac0a32dc4a7601916faeca1cf27163d15d273876af6\"\
+    ,\n        \"accessed_at\": \"2026-10-21T20:56:16.187110Z\"\n      },\n      {\n\
+    \        \"source_key\": \"mediadive1api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].volume\",\n        \"exact_source_quote\"\
+    : \"\\\"volume\\\": 1000\",\n        \"snapshot_sha256\": \"96b8496db5025086f2407d1e2e2738ad74250909ec172a4a76c42ca22a96e319\"\
+    ,\n        \"accessed_at\": \"2026-10-21T12:53:02.058628Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"historically_asserted_dose_L\"\
+    : 1,\n      \"current_primary_delegation\": \"medium 1\",\n      \"independently_authenticated_receiving_dose\"\
+    : null\n    },\n    \"rationale\": \"The available current base API identifies\
+    \ a 1000 mL basal recipe. The primary delegates medium 1 but does not print a\
+    \ receiving aliquot volume; it does not authenticate the unrecovered medium 2\
+    \ JSON’s explicit 1000 mL dose. Preserve correct structural delegation without\
+    \ claiming a fresh direct dose verification.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q7\",\n    \"component_or_context\": \"Standalone solution placeholder\",\n\
+    \    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/mediadive_1_Main_sol_1.yaml\",\n\
+    \        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 basal water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    ,\n        \"accessed_at\": \"2026-10-21T12:53:02.059294Z\"\n      },\n      {\n\
+    \        \"source_key\": \"mediadive1api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 1000,\\n                        \\\"unit\\\": \\\"ml\\\",\\n             \
+    \           \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"96b8496db5025086f2407d1e2e2738ad74250909ec172a4a76c42ca22a96e319\",\n    \
+    \    \"accessed_at\": \"2026-10-21T12:53:02.058628Z\"\n      }\n    ],\n    \"\
+    proposed_source_representation\": {\n      \"placeholder\": \"See source for composition\"\
+    ,\n      \"quantity\": null\n    },\n    \"rationale\": \"VARIABLE is not another\
+    \ component or dose. Existing composition is populated; reconcile stale placeholder\
+    \ and incomplete-composition flag without duplicating the recipe.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q8\",\n    \"component_or_context\": \"Receiving post-autoclave\
+    \ approximate pH\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 8.0,\n        \"\
+    decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 8.0,\n        \"\
+    decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"To medium 1 add 20 g/l urea before autoclaving. Do not adjust pH; pH raises\
+    \ to about 8 due to heat degraded urea.\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz2\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 first paragraph\",\n        \"exact_source_quote\"\
+    : \"Do not adjust pH; pH raises to about 8\",\n        \"snapshot_sha256\": \"\
+    2216960d2564bff726b3b45c9f4a3e5d84d5a549cff3bb548c74a118de1e56c9\",\n        \"\
+    parsed_text_sha256\": \"281838016d356e749bda2ac0a32dc4a7601916faeca1cf27163d15d273876af6\"\
+    ,\n        \"accessed_at\": \"2026-10-21T20:56:16.187110Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 8,\n      \"qualifier\"\
+    : \"about\",\n      \"stage\": \"rise due to heat-degraded urea; do not adjust\
+    \ at receiving stage\"\n    },\n    \"rationale\": \"The scalar 8.0 loses approximate/observed-stage\
+    \ context. The DSMZ owner already preserves the correct instruction; do not reintroduce\
+    \ an ADJUST_PH action.\"\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\"\
+    : \"Basal preparation pH\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].preparation_notes\",\n        \"stored\"\
+    : \"Adjust pH to 7.0.\\n\\nFor Bacillus strains the addition of 10.0 mg MnSO4\
+    \ x H2O is recommended for sporulation.\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/mediadive_1_Main_sol_1.yaml\"\
+    ,\n        \"field_path\": \"preparation_notes\",\n        \"stored\": \"Adjust\
+    \ pH to 7.0.\\nFor Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended\
+    \ for sporulation.\",\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0,\n        \"\
+    decision\": \"evidence_only\",\n        \"rationale\": \"\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/nutrient_agar.yaml\",\n \
+    \       \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust pH to 7.0.\",\n        \"decision\": \"evidence_only\",\n        \"\
+    rationale\": \"\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"dsmz1\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 basal paragraph\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.0.\",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    ,\n        \"accessed_at\": \"2026-10-21T12:53:02.059294Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 7,\n      \"stage\"\
+    : \"prepare DSMZ 1 base before receiving urea\"\n    },\n    \"rationale\": \"\
+    Preserve basal versus receiving pH; the latter explicitly prohibits adjustment.\
+    \ Current exact primary evidence supports the existing dependency prose.\"\n \
+    \ },\n  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\": \"Conditional\
+    \ sporulation manganese\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"For sporulation enhancement add 10 mg/l MnSO4 x H2O.\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].preparation_notes\",\n        \"stored\"\
+    : \"Adjust pH to 7.0.\\n\\nFor Bacillus strains the addition of 10.0 mg MnSO4\
+    \ x H2O is recommended for sporulation.\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/mediadive_1_Main_sol_1.yaml\"\
+    ,\n        \"field_path\": \"preparation_notes\",\n        \"stored\": \"Adjust\
+    \ pH to 7.0.\\nFor Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended\
+    \ for sporulation.\",\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for\
+    \ sporulation.\",\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz2\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 conditional supplement sentence\",\n \
+    \       \"exact_source_quote\": \"For sporulation enhancement add 10 mg/l MnSO4\
+    \ x H2O.\",\n        \"snapshot_sha256\": \"2216960d2564bff726b3b45c9f4a3e5d84d5a549cff3bb548c74a118de1e56c9\"\
+    ,\n        \"parsed_text_sha256\": \"281838016d356e749bda2ac0a32dc4a7601916faeca1cf27163d15d273876af6\"\
+    ,\n        \"accessed_at\": \"2026-10-21T20:56:16.187110Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 conditional basal note\",\n        \"\
+    exact_source_quote\": \"For Bacillus strains the addition of 10.0 mg MnSO4 x H2O\
+    \ is\",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    ,\n        \"accessed_at\": \"2026-10-21T12:53:02.059294Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 10,\n      \"unit\"\
+    : \"MG_PER_L\",\n      \"form\": \"MnSO4 x H2O\",\n      \"condition\": \"sporulation\
+    \ enhancement\",\n      \"double_addition\": false\n    },\n    \"rationale\"\
+    : \"The repeated base/receiving recommendation is one conditional supplement,\
+    \ not two additions or a mandatory ingredient. No species/strain growth claim\
+    \ follows.\"\n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"component_or_context\"\
+    : \"Autoclaving cycle\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_PASTEURII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"To medium 1 add 20 g/l urea before autoclaving. Do not adjust pH; pH raises\
+    \ to about 8 due to heat degraded urea.\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz2\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 first sentence\",\n        \"exact_source_quote\"\
+    : \"To medium 1 add 20 g/l urea before autoclaving.\",\n        \"snapshot_sha256\"\
+    : \"2216960d2564bff726b3b45c9f4a3e5d84d5a549cff3bb548c74a118de1e56c9\",\n    \
+    \    \"parsed_text_sha256\": \"281838016d356e749bda2ac0a32dc4a7601916faeca1cf27163d15d273876af6\"\
+    ,\n        \"accessed_at\": \"2026-10-21T20:56:16.187110Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"operation\": \"autoclave after\
+    \ urea addition\",\n      \"temperature_C\": null,\n      \"duration_min\": null\n\
+    \    },\n    \"rationale\": \"The exact primary states autoclaving but no numeric\
+    \ cycle. Do not import JCM defaults or a typical 121 °C/15 min cycle into this\
+    \ DSMZ recipe.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.004777.stale-basal-boundary
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated and KOMODO layers omit the restored basal boundary and staged procedure
+  description: The maintained DSMZ owner already has correct nested base and preparation.
+    Target/KOMODO retain flat amounts, missing base water and no staged no-adjustment
+    instruction; scalar pH 8 also loses approximation and stage.
+  target_ids:
+  - CultureMech:004777
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps
+  - ph_value
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - base
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.004777.solution1-water-placeholder
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Standalone base definition retains a false water percentage and stale placeholder
+  description: Solution 1 stores 1000 PERCENT_V_V water rather than source 1000 mL
+    and keeps VARIABLE See source for composition despite four explicit components.
+    The inline DSMZ owner correctly stores 1 L and must not be replaced by the standalone
+    error.
+  target_ids:
+  - CultureMech:004777
+  field_paths:
+  - solutions[0].term
+  - composition[3].concentration
+  - ingredients[0].concentration
+  evidence_ids:
+  - standalone
+  - base
+  - base-api
+  - owner-1
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_1_Main_sol_1.yaml
+    role: scoped maintained dependency
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.004777.historical-source-authentication
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Historical receiving and standalone source claims cannot yet be fully authenticated
+  description: The current primary/base API agreement and exact derivative plan strings
+    do not supply the cited medium 2 and solution 1 raw bytes. Preserve old evidence,
+    identify its limitation, and attach independently inspected source support to
+    the appropriate fields.
+  target_ids:
+  - CultureMech:004777
+  field_paths:
+  - evidence
+  - ingredients[0].evidence
+  - solutions[0].composition
+  - references
+  evidence_ids:
+  - history-inventory
+  - primary
+  - base-api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_1_Main_sol_1.yaml
+    role: scoped maintained dependency
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.004777.provenance-label-shape
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Malformed legacy timestamps and one dependency label need bounded clarification
+  description: Generated/KOMODO histories retain a malformed fractional timestamp
+    and timezone-naive event; the standalone dependency also has naive timestamps.
+    The basal MICRO peptone label differs only in case. These metadata problems do
+    not establish wrong formula identity.
+  target_ids:
+  - CultureMech:004777
+  field_paths:
+  - curation_history
+  - ingredients[0].term.label
+  evidence_ids:
+  - history-inventory
+  - grounding-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_1_Main_sol_1.yaml
+    role: scoped maintained dependency
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_agar.yaml
+    role: scoped maintained dependency
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Preserve the repaired DSMZ owner; reconcile the KOMODO input, source-qualified
+    pH and complete base formula before separately authorized regeneration. Do not
+    apply basal pH 7 after urea addition or duplicate conditional manganese.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:004777
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Correct the separate maintained solution 1 dependency’s volume representation
+    and reconcile placeholder/flag with the populated composition, retaining exact
+    stock scope.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:004777
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_1_Main_sol_1.yaml
+    role: scoped maintained dependency
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Recover exact cited raw responses if available, or append a source-scoped
+    clarification and current primary evidence without silently rewriting historical
+    access/hash claims. Keep the explicit receiving aliquot claim unresolved until
+    supported.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:004777
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_1_Main_sol_1.yaml
+    role: scoped maintained dependency
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Append honest provenance clarification without inventing old timezones
+    or rewriting old events; canonicalize only the demonstrated dependency label through
+    separately authorized curation.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:004777
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_2_BACILLUS_PASTEURII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_pasteurii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_1_Main_sol_1.yaml
+    role: scoped maintained dependency
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_agar.yaml
+    role: scoped maintained dependency
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Preserved exact mediadive2api access limitation; failure itself is not proof of
+  missing identity or a required scientific comparison.
+- Preserved exact mediadive2api_retry access limitation; failure itself is not proof
+  of missing identity or a required scientific comparison.
+- Preserved exact solution1 access limitation; failure itself is not proof of missing
+  identity or a required scientific comparison.
+- Preserved exact solution1_retry access limitation; failure itself is not proof of
+  missing identity or a required scientific comparison.
+- Preserved exact komodo2detail access limitation; failure itself is not proof of
+  missing identity or a required scientific comparison.
+- Partial completion rests on required historical medium 2/solution 1 evidence correspondence,
+  not optional KOMODO 403 or present-day provider 503 alone. Bounded search is not
+  universal raw absence.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-039
+- generated-medium
