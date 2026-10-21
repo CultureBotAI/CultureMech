@@ -1,0 +1,3050 @@
+# Source and formulation review: BG11 noNitrogen (CultureMech:015452)
+
+- Review: 20261021T232146Z-culturemech-015452-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T23:07:36Z
+- Finished UTC: 2026-10-21T23:21:46Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact current FEBA BG11_noNitrogen formula supports the sodium-nitrate omission and the stated 1 X A5 dilution. Both local layers misground citric acid as trisodium citrate and retain unresolved EDTA form metadata. The maintained owner already supplies pH 7.1 and source references, absent from the generated target. Historical CultureBotHT bytes remain unavailable.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 409; batch 041 item 9 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding forty task batches contain 400 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 403 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:015452 | data/merge_yaml/merged/BG11_noNitrogen.yaml | generated | BG11 noNitrogen |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:015452 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:015452 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-041/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch041/409/strict.tsv |
+| validate-terms | passed | True | CultureMech:015452 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:015452 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:015452 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: culturebothtExactBG11_noNitrogen | unavailable | True | CultureMech:015452 | The exact publicly requested CultureBotHT BG11_noNitrogen YAML returned HTTP 404. Its March 2026 imported bytes and time-specific correspondence remain unverified. The later pinned FEBA recipe is available and does not replace that historical authentication requirement. |
+| Exact source content access: culturebothtRepository | unavailable | False | CultureMech:015452 | The public CultureBotHT repository API returned HTTP 404. This is a bounded access result, not proof that the repository or historical file never existed. |
+| Current exact named FEBA formulation and stock check | passed | True | CultureMech:015452 | All seven basal and six stock component concentrations compared with the exact current named block and its explicit 1 X versus 1000 X relationship. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:015452.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:015452.
+
+21 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "topic": "Potassium phosphate dibasic",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.04",
+      "unit": "G_PER_L"
+    },
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.04",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The exact current FEBA variant directly reports 0.04 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version. The compound name, CAS 7758-11-4 and FW 174.18 support the potassium salt; the same source row also contains the inconsistent synonym \"dibasic anhydrous sodium phosphate\". Retain that source discrepancy without switching cations. The OLS related trihydrate synonym does not override the source CAS and formula weight."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.04",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The exact current FEBA variant directly reports 0.04 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version. The compound name, CAS 7758-11-4 and FW 174.18 support the potassium salt; the same source row also contains the inconsistent synonym \"dibasic anhydrous sodium phosphate\". Retain that source discrepancy without switching cations. The OLS related trihydrate synonym does not override the source CAS and formula weight."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Exact named block, original line 86",
+        "exact_source_quote": "Potassium phosphate dibasic\t0.04\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compounds.tsv line 337; complete nonempty cells retained",
+        "exact_source_quote": "Potassium phosphate dibasic\t7758-11-4\tSigma\tP3786\t174.18\tK2HPO4, dibasic anhydrous sodium phosphate",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774"
+      }
+    ],
+    "rationale": "The exact current FEBA variant directly reports 0.04 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version. The compound name, CAS 7758-11-4 and FW 174.18 support the potassium salt; the same source row also contains the inconsistent synonym \"dibasic anhydrous sodium phosphate\". Retain that source discrepancy without switching cations. The OLS related trihydrate synonym does not override the source CAS and formula weight."
+  },
+  {
+    "quantity_id": "q2",
+    "topic": "Magnesium Sulfate Heptahydrate",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.075",
+      "unit": "G_PER_L"
+    },
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.075",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The exact current FEBA variant directly reports 0.075 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.075",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The exact current FEBA variant directly reports 0.075 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Exact named block, original line 87",
+        "exact_source_quote": "Magnesium Sulfate Heptahydrate\t0.075\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compounds.tsv line 277; complete nonempty cells retained",
+        "exact_source_quote": "Magnesium Sulfate Heptahydrate\t10034-99-8\tSigma\tM1880\t246.47\tEpsom salts, MgSO4 7H2O",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774"
+      }
+    ],
+    "rationale": "The exact current FEBA variant directly reports 0.075 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version."
+  },
+  {
+    "quantity_id": "q3",
+    "topic": "Calcium chloride dihydrate",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.036",
+      "unit": "G_PER_L"
+    },
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The exact current FEBA variant directly reports 0.036 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The exact current FEBA variant directly reports 0.036 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Exact named block, original line 88",
+        "exact_source_quote": "Calcium chloride dihydrate\t0.036\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compounds.tsv line 90; complete nonempty cells retained",
+        "exact_source_quote": "Calcium chloride dihydrate\t10035-04-8\tSigma\tC5080\t147.01\tCalcium Chloride Dihydrate, CaCl2*2H2O\t\t\tyes",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774"
+      }
+    ],
+    "rationale": "The exact current FEBA variant directly reports 0.036 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version."
+  },
+  {
+    "quantity_id": "q4",
+    "topic": "Citric Acid",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.006",
+      "unit": "G_PER_L"
+    },
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The exact current FEBA variant directly reports 0.006 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version. The amount belongs to citric acid, CAS 77-92-9, not the asserted CHEBI:53258 trisodium citrate. Correct chemical identity without changing the supported 0.006 g/L number."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The exact current FEBA variant directly reports 0.006 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version. The amount belongs to citric acid, CAS 77-92-9, not the asserted CHEBI:53258 trisodium citrate. Correct chemical identity without changing the supported 0.006 g/L number."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Exact named block, original line 89",
+        "exact_source_quote": "Citric Acid\t0.006\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compounds.tsv line 119; complete nonempty cells retained",
+        "exact_source_quote": "Citric Acid\t77-92-9\tSigma\t251275\t192.12\t\t\t\tno\tyes",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774"
+      }
+    ],
+    "rationale": "The exact current FEBA variant directly reports 0.006 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version. The amount belongs to citric acid, CAS 77-92-9, not the asserted CHEBI:53258 trisodium citrate. Correct chemical identity without changing the supported 0.006 g/L number."
+  },
+  {
+    "quantity_id": "q5",
+    "topic": "Ferric ammonium citrate",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.006",
+      "unit": "G_PER_L"
+    },
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The exact current FEBA variant directly reports 0.006 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version. Ferric ammonium citrate is an indefinite-composition mixture; do not assign it a molarity or exact molecular weight."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The exact current FEBA variant directly reports 0.006 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version. Ferric ammonium citrate is an indefinite-composition mixture; do not assign it a molarity or exact molecular weight."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Exact named block, original line 90",
+        "exact_source_quote": "Ferric ammonium citrate\t0.006\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compounds.tsv line 186; complete nonempty cells retained",
+        "exact_source_quote": "Ferric ammonium citrate\t1185-57-5\tSigma\tF5879",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774"
+      }
+    ],
+    "rationale": "The exact current FEBA variant directly reports 0.006 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version. Ferric ammonium citrate is an indefinite-composition mixture; do not assign it a molarity or exact molecular weight."
+  },
+  {
+    "quantity_id": "q6",
+    "topic": "EDTA (disodium salt)",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.001",
+      "unit": "G_PER_L"
+    },
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The exact current FEBA variant directly reports 0.001 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version. Source CAS 6381-92-6 and FW 336.206 do not jointly establish the asserted anhydrous form (OLS CHEBI:64734 cites CAS 139-33-3). Retain the stated mass concentration while resolving the source/product form; no hydrate conversion is justified."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The exact current FEBA variant directly reports 0.001 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version. Source CAS 6381-92-6 and FW 336.206 do not jointly establish the asserted anhydrous form (OLS CHEBI:64734 cites CAS 139-33-3). Retain the stated mass concentration while resolving the source/product form; no hydrate conversion is justified."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Exact named block, original line 91",
+        "exact_source_quote": "EDTA (disodium salt)\t0.001\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compounds.tsv line 178; complete nonempty cells retained",
+        "exact_source_quote": "EDTA (disodium salt)\t6381-92-6\tSigma\tE6635\t336.206",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774"
+      }
+    ],
+    "rationale": "The exact current FEBA variant directly reports 0.001 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version. Source CAS 6381-92-6 and FW 336.206 do not jointly establish the asserted anhydrous form (OLS CHEBI:64734 cites CAS 139-33-3). Retain the stated mass concentration while resolving the source/product form; no hydrate conversion is justified."
+  },
+  {
+    "quantity_id": "q7",
+    "topic": "Sodium carbonate",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.02",
+      "unit": "G_PER_L"
+    },
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The exact current FEBA variant directly reports 0.02 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The exact current FEBA variant directly reports 0.02 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Exact named block, original line 92",
+        "exact_source_quote": "Sodium carbonate\t0.02\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compounds.tsv line 373; complete nonempty cells retained",
+        "exact_source_quote": "Sodium carbonate\t497-19-8\t\t\t105.9888\tNa2CO3\t\t\tyes",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774"
+      }
+    ],
+    "rationale": "The exact current FEBA variant directly reports 0.02 g/L; retain that source amount and unit with claim-level evidence. No conversion from water volume or another BG11 formula is needed. This comparison does not authenticate the unavailable March CultureBotHT version."
+  },
+  {
+    "quantity_id": "q8",
+    "topic": "Boric Acid at receiving 1 X",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.00286",
+      "unit": "G_PER_L"
+    },
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.00286",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 2.86 g/L / 1000 = 0.00286 g/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.00286",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 2.86 g/L / 1000 = 0.00286 g/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 57",
+        "exact_source_quote": "Boric Acid\t2.86\tg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Exact named block, original line 93",
+        "exact_source_quote": "Trace metal mix A5\t1\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 55",
+        "exact_source_quote": "X\t1000",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 2.86 g/L / 1000 = 0.00286 g/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators."
+  },
+  {
+    "quantity_id": "q9",
+    "topic": "Manganese (II) chloride tetrahydrate at receiving 1 X",
+    "decision": "correct",
+    "local": {
+      "value": "0.0018100000000000002",
+      "unit": "G_PER_L"
+    },
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.0018100000000000002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 1.81 g/L / 1000 = 0.00181 g/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators. Replace only the binary-float display tail by the exact decimal result when curating; it is not evidence for additional experimental precision."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.0018100000000000002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 1.81 g/L / 1000 = 0.00181 g/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators. Replace only the binary-float display tail by the exact decimal result when curating; it is not evidence for additional experimental precision."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 58",
+        "exact_source_quote": "Manganese (II) chloride tetrahydrate\t1.81\tg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Exact named block, original line 93",
+        "exact_source_quote": "Trace metal mix A5\t1\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 55",
+        "exact_source_quote": "X\t1000",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 1.81 g/L / 1000 = 0.00181 g/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators. Replace only the binary-float display tail by the exact decimal result when curating; it is not evidence for additional experimental precision."
+  },
+  {
+    "quantity_id": "q10",
+    "topic": "Zinc sulfate heptahydrate at receiving 1 X",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.000222",
+      "unit": "G_PER_L"
+    },
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.000222",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 0.222 g/L / 1000 = 0.000222 g/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.000222",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 0.222 g/L / 1000 = 0.000222 g/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 59",
+        "exact_source_quote": "Zinc sulfate heptahydrate\t0.222\tg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Exact named block, original line 93",
+        "exact_source_quote": "Trace metal mix A5\t1\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 55",
+        "exact_source_quote": "X\t1000",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 0.222 g/L / 1000 = 0.000222 g/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators."
+  },
+  {
+    "quantity_id": "q11",
+    "topic": "Sodium Molybdate Dihydrate at receiving 1 X",
+    "decision": "correct",
+    "local": {
+      "value": "0.00039000000000000005",
+      "unit": "G_PER_L"
+    },
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.00039000000000000005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 0.39 g/L / 1000 = 0.00039 g/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators. Replace only the binary-float display tail by the exact decimal result when curating; it is not evidence for additional experimental precision."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.00039000000000000005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 0.39 g/L / 1000 = 0.00039 g/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators. Replace only the binary-float display tail by the exact decimal result when curating; it is not evidence for additional experimental precision."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 60",
+        "exact_source_quote": "Sodium Molybdate Dihydrate\t0.39\tg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Exact named block, original line 93",
+        "exact_source_quote": "Trace metal mix A5\t1\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 55",
+        "exact_source_quote": "X\t1000",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 0.39 g/L / 1000 = 0.00039 g/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators. Replace only the binary-float display tail by the exact decimal result when curating; it is not evidence for additional experimental precision."
+  },
+  {
+    "quantity_id": "q12",
+    "topic": "Copper (II) sulfate pentahydrate at receiving 1 X",
+    "decision": "evidence_only",
+    "local": {
+      "value": "7.9e-05",
+      "unit": "G_PER_L"
+    },
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "7.9e-05",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 0.079 g/L / 1000 = 0.000079 g/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "7.9e-05",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 0.079 g/L / 1000 = 0.000079 g/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 61",
+        "exact_source_quote": "Copper (II) sulfate pentahydrate\t0.079\tg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Exact named block, original line 93",
+        "exact_source_quote": "Trace metal mix A5\t1\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 55",
+        "exact_source_quote": "X\t1000",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 0.079 g/L / 1000 = 0.000079 g/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators."
+  },
+  {
+    "quantity_id": "q13",
+    "topic": "Cobalt(II) nitrate hexahydrate at receiving 1 X",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.0494",
+      "unit": "MG_PER_L"
+    },
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.0494",
+          "unit": "MG_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 49.4 mg/L / 1000 = 0.0494 mg/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.0494",
+          "unit": "MG_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 49.4 mg/L / 1000 = 0.0494 mg/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 62",
+        "exact_source_quote": "Cobalt(II) nitrate hexahydrate\t49.4\tmg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Exact named block, original line 93",
+        "exact_source_quote": "Trace metal mix A5\t1\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 55",
+        "exact_source_quote": "X\t1000",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Explicit receiving strength 1 X divided by stock strength 1000 X gives 49.4 mg/L / 1000 = 0.0494 mg/L. This is a supported concentration-ratio calculation for this named variant, not an inferred 1 ml dose or final preparation volume. Preserve the specified supplied form and attach the stock row plus both strength locators."
+  },
+  {
+    "quantity_id": "q14",
+    "topic": "Boric Acid — source-only stock preparation",
+    "decision": "add",
+    "local": null,
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The stock is 2.86 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The stock is 2.86 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 57",
+        "exact_source_quote": "Boric Acid\t2.86\tg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 55",
+        "exact_source_quote": "X\t1000",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "The stock is 2.86 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+  },
+  {
+    "quantity_id": "q15",
+    "topic": "Manganese (II) chloride tetrahydrate — source-only stock preparation",
+    "decision": "add",
+    "local": null,
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The stock is 1.81 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The stock is 1.81 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 58",
+        "exact_source_quote": "Manganese (II) chloride tetrahydrate\t1.81\tg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 55",
+        "exact_source_quote": "X\t1000",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "The stock is 1.81 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+  },
+  {
+    "quantity_id": "q16",
+    "topic": "Zinc sulfate heptahydrate — source-only stock preparation",
+    "decision": "add",
+    "local": null,
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The stock is 0.222 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The stock is 0.222 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 59",
+        "exact_source_quote": "Zinc sulfate heptahydrate\t0.222\tg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 55",
+        "exact_source_quote": "X\t1000",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "The stock is 0.222 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+  },
+  {
+    "quantity_id": "q17",
+    "topic": "Sodium Molybdate Dihydrate — source-only stock preparation",
+    "decision": "add",
+    "local": null,
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The stock is 0.39 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The stock is 0.39 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 60",
+        "exact_source_quote": "Sodium Molybdate Dihydrate\t0.39\tg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 55",
+        "exact_source_quote": "X\t1000",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "The stock is 0.39 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+  },
+  {
+    "quantity_id": "q18",
+    "topic": "Copper (II) sulfate pentahydrate — source-only stock preparation",
+    "decision": "add",
+    "local": null,
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The stock is 0.079 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The stock is 0.079 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 61",
+        "exact_source_quote": "Copper (II) sulfate pentahydrate\t0.079\tg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 55",
+        "exact_source_quote": "X\t1000",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "The stock is 0.079 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+  },
+  {
+    "quantity_id": "q19",
+    "topic": "Cobalt(II) nitrate hexahydrate — source-only stock preparation",
+    "decision": "add",
+    "local": null,
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The stock is 49.4 mg/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The stock is 49.4 mg/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 62",
+        "exact_source_quote": "Cobalt(II) nitrate hexahydrate\t49.4\tmg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 55",
+        "exact_source_quote": "X\t1000",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "The stock is 49.4 mg/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing the recipe. These source stock values must not replace the already diluted receiving concentrations. No stock water amount, sterilization or liquid dose is stated by this row."
+  },
+  {
+    "quantity_id": "q20",
+    "topic": "A5 stock strength and receiving strength",
+    "decision": "add",
+    "local": null,
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Document the explicit 1000 X stock and 1 X receiving strength. A concentration-ratio dilution is justified; a fixed millilitre dose and a measured final litre are not supplied. Do not double-count six direct final concentrations and an added stock representation."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Document the explicit 1000 X stock and 1 X receiving strength. A concentration-ratio dilution is justified; a fixed millilitre dose and a measured final litre are not supplied. Do not double-count six direct final concentrations and an added stock representation."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Exact named block, original line 93",
+        "exact_source_quote": "Trace metal mix A5\t1\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact named block, original line 55",
+        "exact_source_quote": "X\t1000",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Document the explicit 1000 X stock and 1 X receiving strength. A concentration-ratio dilution is justified; a fixed millilitre dose and a measured final litre are not supplied. Do not double-count six direct final concentrations and an added stock representation."
+  },
+  {
+    "quantity_id": "q21",
+    "topic": "Source pH and owner repair",
+    "decision": "add",
+    "local": null,
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The exact variant description specifies pH 7.1. The maintained owner already contains scalar ph_value 7.1, while the target only retains it in description. Preserve the owner value and evidence, then regenerate the scalar into the target. No pH range or titrant dose is supplied."
+      },
+      {
+        "input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+        "field_path": "ph_value",
+        "stored": 7.1,
+        "decision": "evidence_only",
+        "rationale": "The exact variant description specifies pH 7.1. The maintained owner already contains scalar ph_value 7.1, while the target only retains it in description. Preserve the owner value and evidence, then regenerate the scalar into the target. No pH range or titrant dose is supplied."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Exact named block, original line 83",
+        "exact_source_quote": "Description\tFor growing Synechococcus elongatus PCC 7942, no sodium nitrate, pH should be 7.1",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "The exact variant description specifies pH 7.1. The maintained owner already contains scalar ph_value 7.1, while the target only retains it in description. Preserve the owner value and evidence, then regenerate the scalar into the target. No pH range or titrant dose is supplied."
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:015452.
+
+13 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 13/13 primary and 0/13 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 13: primary 100.00%; secondary 0.00%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:015452.
+
+8 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact omitted-component variant
+
+identity: supported. Targets: CultureMech:015452.
+
+The exact FEBA BG11_noNitrogen description says no sodium nitrate and names Synechococcus elongatus PCC 7942. Sodium carbonate, ferric ammonium citrate and cobalt nitrate remain. The title does not mean chemically nitrogen-free, nor does it establish equivalence to BG110, M3120 or another BG11 variant.
+
+### Current owner repair and stale generated metadata
+
+ownership: concern. Targets: CultureMech:015452.
+
+Both layers have identical 13 ingredient concentrations. The owner already adds media_term, pH 7.1, two references and curated/mapping flags. Credit these changes; the flags do not certify citric-acid identity, EDTA form or the inaccessible historical source. Regeneration must follow source-supported owner corrections.
+
+### Versioned formulation versus growth evidence
+
+evidence: concern. Targets: CultureMech:015452.
+
+The current named FEBA recipe and compound table support present source comparisons. The description is an intended-use statement, not an experimental growth result. No target/owner evidence claims or inline variants are present; claims on comparative BG11 records are excluded. The current FEBA commit postdates the import, and the cited CultureBotHT file is inaccessible.
+
+### Stock, preparation and cultivation scope
+
+scope: concern. Targets: CultureMech:015452.
+
+The source supports a 1000 X stock used at 1 X, and variant-specific pH 7.1. It does not provide a water charge, preparation volume, autoclave cycle, growth temperature, light setting or atmosphere for this exact variant. Do not borrow those from M3120 or the paper-backed BG11 comparison record.
+
+### Defined classification and curation flags
+
+consistency: concern. Targets: CultureMech:015452.
+
+The source Minimal TRUE label does not establish chemically exact composition. Ferric ammonium citrate is explicitly an indefinite-composition mixture; DEFINED needs a documented schema-consistent assessment rather than automatic retention or automatic conversion to COMPLEX. Liquid is appropriate. Cyanobacterial use does not justify treating the algae filing as a biological domain assertion. All 13 ingredients have primary IDs but zero secondary slots; absence of optional secondary slots is distinct from a broken asserted link.
+
+### Graph, legacy and comparison boundaries
+
+graph: not_applicable. Targets: CultureMech:015452.
+
+Neither selected layer asserts a kg_microbe_match, legacy MIM identifier or organism taxon ID. The 000171 context belongs to an excluded comparison record and does not impose a historical legacy gap on this target.
+
+### Bounded review completion
+
+completeness: concern. Targets: CultureMech:015452.
+
+Every actual target/owner concentration and source-only stock strength/stock composition/pH was assessed. The review remains partial for historical CultureBotHT correspondence, while the current FEBA source check itself passed.
+
+## Findings
+
+### f1: Citric acid is linked to trisodium citrate
+
+major / open / confirmed; issue key: culturemech.015452.citric-identity.
+
+Both layers name Citric Acid with CAS 77-92-9 and MW 192.12 but assert CHEBI:53258 sodium citrate, the trisodium salt. Exact FEBA compound metadata and CHEBI:30769 support the acid. This is chemical identity disagreement, not a misspelled canonical label.
+
+### f2: EDTA anhydrous specificity is not established by the conflicting source metadata
+
+major / open / confirmed; issue key: culturemech.015452.edta-form.
+
+The stored/source CAS is 6381-92-6, while FW 336.206 is near the asserted anhydrous form. CHEBI:64734 explicitly describes the anhydrous salt and cites a different CAS. Source-internal inconsistency must be reconciled before claiming a hydrate or using molecular-weight conversions.
+
+### f3: Current formula evidence and the supported stock relation are absent
+
+minor / open / confirmed; issue key: culturemech.015452.provenance-preparation.
+
+Neither layer attaches the exact versioned ingredient/stock evidence. The owner references the unavailable repository and marks ingredients curated; the current public source supports a scoped comparison but cannot authenticate its March source.
+
+### f4: Generated pH metadata and two decimal representations need synchronization
+
+minor / open / confirmed; issue key: culturemech.015452.generated-ph-precision.
+
+The owner already has pH 7.1, missing as a scalar in the target. Manganese and molybdate concentrations retain binary floating-point tails rather than exact source-dilution decimals. These tails are not new chemical measurements.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Correct the maintained acid identity using exact source evidence; retain its supported 0.006 g/L amount, preserve history, and regenerate only after validation.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Verify the exact source product/form or retain an explicit unresolved form gap. Do not infer a dihydrate amount or force the anhydrous ID solely from the formula weight.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Attach the exact current source rows and both 1000 X/1 X locators with an explicit version limitation. Reassess curation flags and classification; retain historical authentication as unresolved.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Preserve and cite the existing owner pH; render source-based dilution as 0.00181 and 0.00039 g/L respectively without inventing precision, then regenerate the derived target.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/BG11_noNitrogen.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/algae/bg11_nonitrogen.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/BG11_noNitrogen.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/BG11_noNitrogen.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch041/409/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-041/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch041/409/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/BG11_noNitrogen.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/BG11_noNitrogen.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/algae/bg11_nonitrogen.yaml:1:id: CultureMech:015452<br>./data/merge_yaml/merged/BG11_noNitrogen.yaml:1:id: CultureMech:015452<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch041/source-preflight-bound/409/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 27 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| feba-main | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media; Exact BG11_noNitrogen block | supports | The seven basal chemical rows and 1 X A5 row belong to this exact named variant. |
+| feba-stock | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes; Exact Trace metal mix A5 block | supports | Six stock concentrations at 1000 X; the receiving medium explicitly uses 1 X. |
+| feba-compounds | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv; Exact named compound rows and header | supports | Chemical names, CAS identifiers, formula weights and source-internal tensions assessed independently of ontology label validity. |
+| feba-version | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/commit/803273865ea9e83fab770ec4f13670db80e1180b; Exact commit hash and date | supports | Captured FEBA revision 803273865ea9e83fab770ec4f13670db80e1180b is dated September 10, 2026, after the March import. It supports a current source comparison, not historical byte identity. |
+| culturebothtExactBG11_noNitrogen-attempt | https://raw.githubusercontent.com/CultureBotAI/CultureBotHT/main/media_yaml/BG11_noNitrogen.yaml; Preserved exact public retrieval result | context_only | The exact publicly requested CultureBotHT BG11_noNitrogen YAML returned HTTP 404. Its March 2026 imported bytes and time-specific correspondence remain unverified. The later pinned FEBA recipe is available and does not replace that historical authentication requirement. |
+| culturebothtRepository-attempt | https://api.github.com/repos/CultureBotAI/CultureBotHT; Preserved exact public retrieval result | context_only | The public CultureBotHT repository API returned HTTP 404. This is a bounded access result, not proof that the repository or historical file never existed. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch041/409/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29377 resolves to sodium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31604 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31604; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31604 resolves to ferric ammonium citrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:33118 resolves to boric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi53258 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53258; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:53258 resolves to sodium citrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi64734 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:64734 resolves to EDTA disodium salt (anhydrous). Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86214 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86214; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86214 resolves to cobalt dinitrate hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {}} |
+| history-metadata | data/merge_yaml/merged/BG11_noNitrogen.yaml; data/normalized_yaml/algae/bg11_nonitrogen.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 4, "timestamp_issues": []}, {"input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml", "events": 4, "timestamp_issues": []}] |
+| grounding-detail | /private/tmp/culturemech-review-work-batch041/409/grounding-inventory.json; Complete manually assessed local inventory | context_only | All local fields and historical limits retained; no comparison evidence transferred. |
+| history-detail | /private/tmp/culturemech-review-work-batch041/409/history-inventory.json; Complete manually assessed local inventory | context_only | All local fields and historical limits retained; no comparison evidence transferred. |
+| writer-0 | scripts/import_from_culturebotht.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current CultureBotHT transform copies source content and adds provenance; it does not authenticate unavailable historical bytes. The September repair validates IDs/source/names, adds media_term, flags, references and pH for this target, but does not inspect public chemistry or change ingredient amounts. Current merger requires exact formulation compatibility. None was executed or historically replayed. |
+| writer-1 | scripts/repair_culturebotht_bg11_score15.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current CultureBotHT transform copies source content and adds provenance; it does not authenticate unavailable historical bytes. The September repair validates IDs/source/names, adds media_term, flags, references and pH for this target, but does not inspect public chemistry or change ingredient amounts. Current merger requires exact formulation compatibility. None was executed or historically replayed. |
+| writer-2 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current CultureBotHT transform copies source content and adds provenance; it does not authenticate unavailable historical bytes. The September repair validates IDs/source/names, adds media_term, flags, references and pH for this target, but does not inspect public chemistry or change ingredient amounts. Current merger requires exact formulation compatibility. None was executed or historically replayed. |
+| writer-3 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current CultureBotHT transform copies source content and adds provenance; it does not authenticate unavailable historical bytes. The September repair validates IDs/source/names, adds media_term, flags, references and pH for this target, but does not inspect public chemistry or change ingredient amounts. Current merger requires exact formulation compatibility. None was executed or historically replayed. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The exact publicly requested CultureBotHT BG11_noNitrogen YAML returned HTTP 404. Its March 2026 imported bytes and time-specific correspondence remain unverified. The later pinned FEBA recipe is available and does not replace that historical authentication requirement.
+- The public CultureBotHT repository API returned HTTP 404. This is a bounded access result, not proof that the repository or historical file never existed.
+- This assessment precedes root acceptance and formal review validation/saving, whose outcomes are recorded separately. No historical importer or repair was replayed; no experiment or new source request was performed.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T232146Z-culturemech-015452-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: BG11 noNitrogen (CultureMech:015452)'
+started_at: '2026-10-21T23:07:36Z'
+finished_at: '2026-10-21T23:21:46Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact current FEBA BG11_noNitrogen formula supports the sodium-nitrate
+  omission and the stated 1 X A5 dilution. Both local layers misground citric acid
+  as trisodium citrate and retain unresolved EDTA form metadata. The maintained owner
+  already supplies pH 7.1 and source references, absent from the generated target.
+  Historical CultureBotHT bytes remain unavailable.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BG11_noNitrogen.yaml
+    sha256: b96e73e21aa7dad91c490a02ca4389d0db24048ba0179770692b6d5b8b2d28bf
+    role: target
+  - path: data/normalized_yaml/algae/bg11.yaml
+    sha256: 50cf10be2d7e6c7eec48f0d9ad0911b27e4d6e52b8386cfe43924339a304c468
+    role: context
+  - path: data/normalized_yaml/algae/bg11_no_bicarb.yaml
+    sha256: d22f6c303cef0440c5182310528655bc1bdb7b9d5d8a6aeb1d62010b232ce47f
+    role: context
+  - path: data/normalized_yaml/algae/bg11_nonitrogen.yaml
+    sha256: 70c0b3756ed421754ff565455b8ad742a0131b86cb84f2531fa710951fbedb21
+    role: context
+  - path: data/normalized_yaml/algae/bg11_tes_no_bicarb.yaml
+    sha256: 8b47248a8605be05777c32a1034484710f0962dd91350dc66b994ee97656d815
+    role: context
+  - path: data/normalized_yaml/algae/bg11c.yaml
+    sha256: ea5ea6408a4783f757081d74d318df4c084936509cc2e549ab5bed5e774b864f
+    role: context
+  - path: data/normalized_yaml/algae/bg11c_tes.yaml
+    sha256: c401a2ac26be5861818f429ae6edf4a2de4d45052298f22e5c23f56d0eb797ac
+    role: context
+  - path: data/normalized_yaml/algae/bg11r.yaml
+    sha256: e0e7da1e0ffeea246c52a38eff9a18a5fbb95208d85e2e409743ac5e7ccd3807
+    role: context
+  - path: data/normalized_yaml/bacterial/CCAP_C18_BG11₀.yaml
+    sha256: 35323936b16e681de153b059fe9fc7aba19935c5b39c98cd7f273776963bef59
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M3120_BG11_medium.yaml
+    sha256: 7be6bd727b51c11cc3e54373c18393fb10f93008a3eed744b42a7f06abcc6a35
+    role: context
+  - path: data/normalized_yaml/bacterial/bg11.yaml
+    sha256: 8bdcb2736d5e786086ddce316a057ab341dd4ffe17598fc0f6f733343b972453
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BG11_noNitrogen.md
+    sha256: d8ab18624583dea7a013fe41ad7a3cba1ff4bf96a84c04c7ab5120a0bf94f455
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/algae/bg11_nonitrogen.md
+    sha256: 56b4609015e720af7452e861e3611fcecd26e2efda15c871efe1022bf646ecf4
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/curate_organism_culture_type.py
+    sha256: 8686de3d3736eaaf3702e2009a299a53819a5ba321966ab2ea01104538ca6a65
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_culturebotht_bg11_score15.py
+    sha256: dd0fdb7eeb89759865c968f788c900aa2d6b2f42c60dc2aef93afc14b33c4f36
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 409; batch 041 item 9 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding forty task batches contain
+    400 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 403 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:015452
+targets:
+- target_id: CultureMech:015452
+  path: data/merge_yaml/merged/BG11_noNitrogen.yaml
+  label: BG11 noNitrogen
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11_nonitrogen.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BG11_noNitrogen.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BG11_noNitrogen.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch041/409/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-041/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch041/409/strict.tsv"
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BG11_noNitrogen.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BG11_noNitrogen.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:015452
+- check_id: culturebothtExactBG11_noNitrogen-source-access
+  name: 'Exact source content access: culturebothtExactBG11_noNitrogen'
+  required: true
+  status: unavailable
+  summary: The exact publicly requested CultureBotHT BG11_noNitrogen YAML returned
+    HTTP 404. Its March 2026 imported bytes and time-specific correspondence remain
+    unverified. The later pinned FEBA recipe is available and does not replace that
+    historical authentication requirement.
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - culturebothtExactBG11_noNitrogen-attempt
+- check_id: culturebothtRepository-source-access
+  name: 'Exact source content access: culturebothtRepository'
+  required: false
+  status: unavailable
+  summary: The public CultureBotHT repository API returned HTTP 404. This is a bounded
+    access result, not proof that the repository or historical file never existed.
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - culturebothtRepository-attempt
+- check_id: current-feba-formulation
+  name: Current exact named FEBA formulation and stock check
+  required: true
+  status: passed
+  summary: All seven basal and six stock component concentrations compared with the
+    exact current named block and its explicit 1 X versus 1000 X relationship.
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - feba-main
+  - feba-stock
+  - feba-compounds
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BG11_noNitrogen.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T23:13:35Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/algae/bg11_nonitrogen.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T23:13:35Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BG11_noNitrogen.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:08:11.183118Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BG11_noNitrogen.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch041/409/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:08:12.241897Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-041/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch041/409/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BG11_noNitrogen.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:08:13.411375Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BG11_noNitrogen.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:08:14.173345Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T23:13:35Z'
+  support: supports
+  summary: './data/normalized_yaml/algae/bg11_nonitrogen.yaml:1:id: CultureMech:015452
+
+    ./data/merge_yaml/merged/BG11_noNitrogen.yaml:1:id: CultureMech:015452
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch041/source-preflight-bound/409/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T23:13:35Z'
+  support: supports
+  summary: 27 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 64f749db4e9f1fcc35ecc09473303c2bb29f7fcafa48ec5264c4e3324ce36e8d
+- evidence_id: feba-main
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media
+  locator: Exact BG11_noNitrogen block
+  accessed_at: '2026-10-21T07:58:53.930003Z'
+  support: supports
+  summary: The seven basal chemical rows and 1 X A5 row belong to this exact named
+    variant.
+  quote: "Media\tBG11_noNitrogen"
+  snapshot_sha256: a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848
+- evidence_id: feba-stock
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes
+  locator: Exact Trace metal mix A5 block
+  accessed_at: '2026-10-21T07:58:53.930648Z'
+  support: supports
+  summary: Six stock concentrations at 1000 X; the receiving medium explicitly uses
+    1 X.
+  quote: "Description\t1000X trace metal solution for Synechococcus elongatus PCC\
+    \ 7942"
+  snapshot_sha256: b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4
+- evidence_id: feba-compounds
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Exact named compound rows and header
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Chemical names, CAS identifiers, formula weights and source-internal tensions
+    assessed independently of ontology label validity.
+  quote: "Citric Acid\t77-92-9\tSigma\t251275\t192.12"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: feba-version
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/commit/803273865ea9e83fab770ec4f13670db80e1180b
+  locator: Exact commit hash and date
+  accessed_at: '2026-10-21T07:59:41.378955Z'
+  support: supports
+  summary: Captured FEBA revision 803273865ea9e83fab770ec4f13670db80e1180b is dated
+    September 10, 2026, after the March import. It supports a current source comparison,
+    not historical byte identity.
+  snapshot_sha256: 0a4998d61b96db10c549512e2fe06718e04b687e6bbc6b2c1ea121c3c11a53ca
+- evidence_id: culturebothtExactBG11_noNitrogen-attempt
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/CultureBotHT/main/media_yaml/BG11_noNitrogen.yaml
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:53:14.172950Z'
+  support: context_only
+  summary: The exact publicly requested CultureBotHT BG11_noNitrogen YAML returned
+    HTTP 404. Its March 2026 imported bytes and time-specific correspondence remain
+    unverified. The later pinned FEBA recipe is available and does not replace that
+    historical authentication requirement.
+  snapshot_sha256: d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed
+- evidence_id: culturebothtRepository-attempt
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/CultureBotHT
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:53:13.557900Z'
+  support: context_only
+  summary: The public CultureBotHT repository API returned HTTP 404. This is a bounded
+    access result, not proof that the repository or historical file never existed.
+  snapshot_sha256: 4f50e254a719a6b1b06b529bdaa08980e4acf0878aad0090cba7771f6ebdf0b9
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch041/409/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T23:13:35Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 181bc4b3339d138981a882f4b71e706c8ae0dafbba503985f2edd57c89827c9c
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31604
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31604
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:44.987529Z'
+  support: supports
+  summary: CHEBI:31604 resolves to ferric ammonium citrate. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 31acf125b469ffd64e2de503550d29336a7a0f99c8a3ea24b80b53bdb715e7f8
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi53258
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53258
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:54.823692Z'
+  support: supports
+  summary: CHEBI:53258 resolves to sodium citrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2a35c6dc3532c2276c6b19aef0992260e14b1fc36423fa3eb812bb94f63c4371
+- evidence_id: chebi64734
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.449302Z'
+  support: supports
+  summary: CHEBI:64734 resolves to EDTA disodium salt (anhydrous). Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 95b7557b1867dcce37a69714dbad0a6a6a6c11c66dde39c6793a2307a7fb0e1c
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86214
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86214
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.123051Z'
+  support: supports
+  summary: CHEBI:86214 resolves to cobalt dinitrate hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 90cf3337643bc22bd3940bfbdee70a144b13af549ea12534184385f036b4633c
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T23:13:35Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BG11_noNitrogen.yaml; data/normalized_yaml/algae/bg11_nonitrogen.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T23:13:35Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 4, "timestamp_issues": []}, {"input": "data/normalized_yaml/algae/bg11_nonitrogen.yaml",
+    "events": 4, "timestamp_issues": []}]'
+- evidence_id: grounding-detail
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch041/409/grounding-inventory.json
+  locator: Complete manually assessed local inventory
+  accessed_at: '2026-10-21T23:13:35Z'
+  support: context_only
+  summary: All local fields and historical limits retained; no comparison evidence
+    transferred.
+  snapshot_sha256: d28fddd59836a0cf5f9f1d84780c6bd25027ad25a95f89eb497f7954c38c1bbe
+- evidence_id: history-detail
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch041/409/history-inventory.json
+  locator: Complete manually assessed local inventory
+  accessed_at: '2026-10-21T23:13:35Z'
+  support: context_only
+  summary: All local fields and historical limits retained; no comparison evidence
+    transferred.
+  snapshot_sha256: 2bbc241959abff6d725bac0b480db7ea74158b2e962dbcf579df00dd6cb73610
+- evidence_id: writer-0
+  kind: record_content
+  reference: scripts/import_from_culturebotht.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T23:13:35Z'
+  support: context_only
+  summary: Current CultureBotHT transform copies source content and adds provenance;
+    it does not authenticate unavailable historical bytes. The September repair validates
+    IDs/source/names, adds media_term, flags, references and pH for this target, but
+    does not inspect public chemistry or change ingredient amounts. Current merger
+    requires exact formulation compatibility. None was executed or historically replayed.
+  snapshot_sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/repair_culturebotht_bg11_score15.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T23:13:35Z'
+  support: context_only
+  summary: Current CultureBotHT transform copies source content and adds provenance;
+    it does not authenticate unavailable historical bytes. The September repair validates
+    IDs/source/names, adds media_term, flags, references and pH for this target, but
+    does not inspect public chemistry or change ingredient amounts. Current merger
+    requires exact formulation compatibility. None was executed or historically replayed.
+  snapshot_sha256: dd0fdb7eeb89759865c968f788c900aa2d6b2f42c60dc2aef93afc14b33c4f36
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T23:13:35Z'
+  support: context_only
+  summary: Current CultureBotHT transform copies source content and adds provenance;
+    it does not authenticate unavailable historical bytes. The September repair validates
+    IDs/source/names, adds media_term, flags, references and pH for this target, but
+    does not inspect public chemistry or change ingredient amounts. Current merger
+    requires exact formulation compatibility. None was executed or historically replayed.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T23:13:35Z'
+  support: context_only
+  summary: Current CultureBotHT transform copies source content and adds provenance;
+    it does not authenticate unavailable historical bytes. The September repair validates
+    IDs/source/names, adds media_term, flags, references and pH for this target, but
+    does not inspect public chemistry or change ingredient amounts. Current merger
+    requires exact formulation compatibility. None was executed or historically replayed.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 21 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"topic\": \"Potassium phosphate\
+    \ dibasic\",\n    \"decision\": \"evidence_only\",\n    \"local\": {\n      \"\
+    value\": \"0.04\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.04\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\",\n        \"\
+    rationale\": \"The exact current FEBA variant directly reports 0.04 g/L; retain\
+    \ that source amount and unit with claim-level evidence. No conversion from water\
+    \ volume or another BG11 formula is needed. This comparison does not authenticate\
+    \ the unavailable March CultureBotHT version. The compound name, CAS 7758-11-4\
+    \ and FW 174.18 support the potassium salt; the same source row also contains\
+    \ the inconsistent synonym \\\"dibasic anhydrous sodium phosphate\\\". Retain\
+    \ that source discrepancy without switching cations. The OLS related trihydrate\
+    \ synonym does not override the source CAS and formula weight.\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.04\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"The exact\
+    \ current FEBA variant directly reports 0.04 g/L; retain that source amount and\
+    \ unit with claim-level evidence. No conversion from water volume or another BG11\
+    \ formula is needed. This comparison does not authenticate the unavailable March\
+    \ CultureBotHT version. The compound name, CAS 7758-11-4 and FW 174.18 support\
+    \ the potassium salt; the same source row also contains the inconsistent synonym\
+    \ \\\"dibasic anhydrous sodium phosphate\\\". Retain that source discrepancy without\
+    \ switching cations. The OLS related trihydrate synonym does not override the\
+    \ source CAS and formula weight.\"\n      }\n    ],\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 86\",\n    \
+    \    \"exact_source_quote\": \"Potassium phosphate dibasic\\t0.04\\tg/L\",\n \
+    \       \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 337; complete nonempty cells\
+    \ retained\",\n        \"exact_source_quote\": \"Potassium phosphate dibasic\\\
+    t7758-11-4\\tSigma\\tP3786\\t174.18\\tK2HPO4, dibasic anhydrous sodium phosphate\"\
+    ,\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact current FEBA variant directly\
+    \ reports 0.04 g/L; retain that source amount and unit with claim-level evidence.\
+    \ No conversion from water volume or another BG11 formula is needed. This comparison\
+    \ does not authenticate the unavailable March CultureBotHT version. The compound\
+    \ name, CAS 7758-11-4 and FW 174.18 support the potassium salt; the same source\
+    \ row also contains the inconsistent synonym \\\"dibasic anhydrous sodium phosphate\\\
+    \". Retain that source discrepancy without switching cations. The OLS related\
+    \ trihydrate synonym does not override the source CAS and formula weight.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q2\",\n    \"topic\": \"Magnesium Sulfate Heptahydrate\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"\
+    0.075\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\": [\n  \
+    \    {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[1].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.075\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\",\n        \"\
+    rationale\": \"The exact current FEBA variant directly reports 0.075 g/L; retain\
+    \ that source amount and unit with claim-level evidence. No conversion from water\
+    \ volume or another BG11 formula is needed. This comparison does not authenticate\
+    \ the unavailable March CultureBotHT version.\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\",\n        \"field_path\"\
+    : \"ingredients[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.075\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"The exact current FEBA variant\
+    \ directly reports 0.075 g/L; retain that source amount and unit with claim-level\
+    \ evidence. No conversion from water volume or another BG11 formula is needed.\
+    \ This comparison does not authenticate the unavailable March CultureBotHT version.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 87\",\n    \
+    \    \"exact_source_quote\": \"Magnesium Sulfate Heptahydrate\\t0.075\\tg/L\"\
+    ,\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 277; complete nonempty cells\
+    \ retained\",\n        \"exact_source_quote\": \"Magnesium Sulfate Heptahydrate\\\
+    t10034-99-8\\tSigma\\tM1880\\t246.47\\tEpsom salts, MgSO4 7H2O\",\n        \"\
+    snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact current FEBA variant directly\
+    \ reports 0.075 g/L; retain that source amount and unit with claim-level evidence.\
+    \ No conversion from water volume or another BG11 formula is needed. This comparison\
+    \ does not authenticate the unavailable March CultureBotHT version.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q3\",\n    \"topic\": \"Calcium chloride dihydrate\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"\
+    0.036\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\": [\n  \
+    \    {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.036\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\",\n        \"\
+    rationale\": \"The exact current FEBA variant directly reports 0.036 g/L; retain\
+    \ that source amount and unit with claim-level evidence. No conversion from water\
+    \ volume or another BG11 formula is needed. This comparison does not authenticate\
+    \ the unavailable March CultureBotHT version.\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\",\n        \"field_path\"\
+    : \"ingredients[2].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.036\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"The exact current FEBA variant\
+    \ directly reports 0.036 g/L; retain that source amount and unit with claim-level\
+    \ evidence. No conversion from water volume or another BG11 formula is needed.\
+    \ This comparison does not authenticate the unavailable March CultureBotHT version.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 88\",\n    \
+    \    \"exact_source_quote\": \"Calcium chloride dihydrate\\t0.036\\tg/L\",\n \
+    \       \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 90; complete nonempty cells\
+    \ retained\",\n        \"exact_source_quote\": \"Calcium chloride dihydrate\\\
+    t10035-04-8\\tSigma\\tC5080\\t147.01\\tCalcium Chloride Dihydrate, CaCl2*2H2O\\\
+    t\\t\\tyes\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact current FEBA variant directly\
+    \ reports 0.036 g/L; retain that source amount and unit with claim-level evidence.\
+    \ No conversion from water volume or another BG11 formula is needed. This comparison\
+    \ does not authenticate the unavailable March CultureBotHT version.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q4\",\n    \"topic\": \"Citric Acid\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local\": {\n      \"value\": \"0.006\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[3].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"The exact current FEBA variant directly reports 0.006 g/L; retain that source\
+    \ amount and unit with claim-level evidence. No conversion from water volume or\
+    \ another BG11 formula is needed. This comparison does not authenticate the unavailable\
+    \ March CultureBotHT version. The amount belongs to citric acid, CAS 77-92-9,\
+    \ not the asserted CHEBI:53258 trisodium citrate. Correct chemical identity without\
+    \ changing the supported 0.006 g/L number.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.006\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"The exact current FEBA variant\
+    \ directly reports 0.006 g/L; retain that source amount and unit with claim-level\
+    \ evidence. No conversion from water volume or another BG11 formula is needed.\
+    \ This comparison does not authenticate the unavailable March CultureBotHT version.\
+    \ The amount belongs to citric acid, CAS 77-92-9, not the asserted CHEBI:53258\
+    \ trisodium citrate. Correct chemical identity without changing the supported\
+    \ 0.006 g/L number.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 89\",\n    \
+    \    \"exact_source_quote\": \"Citric Acid\\t0.006\\tg/L\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 119; complete nonempty cells\
+    \ retained\",\n        \"exact_source_quote\": \"Citric Acid\\t77-92-9\\tSigma\\\
+    t251275\\t192.12\\t\\t\\t\\tno\\tyes\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact current FEBA variant directly\
+    \ reports 0.006 g/L; retain that source amount and unit with claim-level evidence.\
+    \ No conversion from water volume or another BG11 formula is needed. This comparison\
+    \ does not authenticate the unavailable March CultureBotHT version. The amount\
+    \ belongs to citric acid, CAS 77-92-9, not the asserted CHEBI:53258 trisodium\
+    \ citrate. Correct chemical identity without changing the supported 0.006 g/L\
+    \ number.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"topic\": \"Ferric\
+    \ ammonium citrate\",\n    \"decision\": \"evidence_only\",\n    \"local\": {\n\
+    \      \"value\": \"0.006\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.006\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\",\n        \"\
+    rationale\": \"The exact current FEBA variant directly reports 0.006 g/L; retain\
+    \ that source amount and unit with claim-level evidence. No conversion from water\
+    \ volume or another BG11 formula is needed. This comparison does not authenticate\
+    \ the unavailable March CultureBotHT version. Ferric ammonium citrate is an indefinite-composition\
+    \ mixture; do not assign it a molarity or exact molecular weight.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"The\
+    \ exact current FEBA variant directly reports 0.006 g/L; retain that source amount\
+    \ and unit with claim-level evidence. No conversion from water volume or another\
+    \ BG11 formula is needed. This comparison does not authenticate the unavailable\
+    \ March CultureBotHT version. Ferric ammonium citrate is an indefinite-composition\
+    \ mixture; do not assign it a molarity or exact molecular weight.\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_media\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 90\",\n    \
+    \    \"exact_source_quote\": \"Ferric ammonium citrate\\t0.006\\tg/L\",\n    \
+    \    \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 186; complete nonempty cells\
+    \ retained\",\n        \"exact_source_quote\": \"Ferric ammonium citrate\\t1185-57-5\\\
+    tSigma\\tF5879\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact current FEBA variant directly\
+    \ reports 0.006 g/L; retain that source amount and unit with claim-level evidence.\
+    \ No conversion from water volume or another BG11 formula is needed. This comparison\
+    \ does not authenticate the unavailable March CultureBotHT version. Ferric ammonium\
+    \ citrate is an indefinite-composition mixture; do not assign it a molarity or\
+    \ exact molecular weight.\"\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"topic\"\
+    : \"EDTA (disodium salt)\",\n    \"decision\": \"evidence_only\",\n    \"local\"\
+    : {\n      \"value\": \"0.001\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[5].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.001\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"The exact current FEBA variant\
+    \ directly reports 0.001 g/L; retain that source amount and unit with claim-level\
+    \ evidence. No conversion from water volume or another BG11 formula is needed.\
+    \ This comparison does not authenticate the unavailable March CultureBotHT version.\
+    \ Source CAS 6381-92-6 and FW 336.206 do not jointly establish the asserted anhydrous\
+    \ form (OLS CHEBI:64734 cites CAS 139-33-3). Retain the stated mass concentration\
+    \ while resolving the source/product form; no hydrate conversion is justified.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"The\
+    \ exact current FEBA variant directly reports 0.001 g/L; retain that source amount\
+    \ and unit with claim-level evidence. No conversion from water volume or another\
+    \ BG11 formula is needed. This comparison does not authenticate the unavailable\
+    \ March CultureBotHT version. Source CAS 6381-92-6 and FW 336.206 do not jointly\
+    \ establish the asserted anhydrous form (OLS CHEBI:64734 cites CAS 139-33-3).\
+    \ Retain the stated mass concentration while resolving the source/product form;\
+    \ no hydrate conversion is justified.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 91\",\n    \
+    \    \"exact_source_quote\": \"EDTA (disodium salt)\\t0.001\\tg/L\",\n       \
+    \ \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 178; complete nonempty cells\
+    \ retained\",\n        \"exact_source_quote\": \"EDTA (disodium salt)\\t6381-92-6\\\
+    tSigma\\tE6635\\t336.206\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact current FEBA variant directly\
+    \ reports 0.001 g/L; retain that source amount and unit with claim-level evidence.\
+    \ No conversion from water volume or another BG11 formula is needed. This comparison\
+    \ does not authenticate the unavailable March CultureBotHT version. Source CAS\
+    \ 6381-92-6 and FW 336.206 do not jointly establish the asserted anhydrous form\
+    \ (OLS CHEBI:64734 cites CAS 139-33-3). Retain the stated mass concentration while\
+    \ resolving the source/product form; no hydrate conversion is justified.\"\n \
+    \ },\n  {\n    \"quantity_id\": \"q7\",\n    \"topic\": \"Sodium carbonate\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"0.02\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\": [\n      {\n\
+    \        \"input\": \"target\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.02\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\",\n        \"\
+    rationale\": \"The exact current FEBA variant directly reports 0.02 g/L; retain\
+    \ that source amount and unit with claim-level evidence. No conversion from water\
+    \ volume or another BG11 formula is needed. This comparison does not authenticate\
+    \ the unavailable March CultureBotHT version.\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\",\n        \"field_path\"\
+    : \"ingredients[6].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.02\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"The exact current FEBA variant\
+    \ directly reports 0.02 g/L; retain that source amount and unit with claim-level\
+    \ evidence. No conversion from water volume or another BG11 formula is needed.\
+    \ This comparison does not authenticate the unavailable March CultureBotHT version.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 92\",\n    \
+    \    \"exact_source_quote\": \"Sodium carbonate\\t0.02\\tg/L\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 373; complete nonempty cells\
+    \ retained\",\n        \"exact_source_quote\": \"Sodium carbonate\\t497-19-8\\\
+    t\\t\\t105.9888\\tNa2CO3\\t\\t\\tyes\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact current FEBA variant directly\
+    \ reports 0.02 g/L; retain that source amount and unit with claim-level evidence.\
+    \ No conversion from water volume or another BG11 formula is needed. This comparison\
+    \ does not authenticate the unavailable March CultureBotHT version.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q8\",\n    \"topic\": \"Boric Acid at receiving 1\
+    \ X\",\n    \"decision\": \"evidence_only\",\n    \"local\": {\n      \"value\"\
+    : \"0.00286\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[7].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.00286\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\",\n        \"\
+    rationale\": \"Explicit receiving strength 1 X divided by stock strength 1000\
+    \ X gives 2.86 g/L / 1000 = 0.00286 g/L. This is a supported concentration-ratio\
+    \ calculation for this named variant, not an inferred 1 ml dose or final preparation\
+    \ volume. Preserve the specified supplied form and attach the stock row plus both\
+    \ strength locators.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00286\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"Explicit\
+    \ receiving strength 1 X divided by stock strength 1000 X gives 2.86 g/L / 1000\
+    \ = 0.00286 g/L. This is a supported concentration-ratio calculation for this\
+    \ named variant, not an inferred 1 ml dose or final preparation volume. Preserve\
+    \ the specified supplied form and attach the stock row plus both strength locators.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 57\",\n    \
+    \    \"exact_source_quote\": \"Boric Acid\\t2.86\\tg/L\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 93\",\n    \
+    \    \"exact_source_quote\": \"Trace metal mix A5\\t1\\tX\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 55\",\n    \
+    \    \"exact_source_quote\": \"X\\t1000\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Explicit receiving strength 1 X divided\
+    \ by stock strength 1000 X gives 2.86 g/L / 1000 = 0.00286 g/L. This is a supported\
+    \ concentration-ratio calculation for this named variant, not an inferred 1 ml\
+    \ dose or final preparation volume. Preserve the specified supplied form and attach\
+    \ the stock row plus both strength locators.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q9\",\n    \"topic\": \"Manganese (II) chloride tetrahydrate at receiving\
+    \ 1 X\",\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"\
+    0.0018100000000000002\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[8].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.0018100000000000002\",\n  \
+    \        \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\
+    ,\n        \"rationale\": \"Explicit receiving strength 1 X divided by stock strength\
+    \ 1000 X gives 1.81 g/L / 1000 = 0.00181 g/L. This is a supported concentration-ratio\
+    \ calculation for this named variant, not an inferred 1 ml dose or final preparation\
+    \ volume. Preserve the specified supplied form and attach the stock row plus both\
+    \ strength locators. Replace only the binary-float display tail by the exact decimal\
+    \ result when curating; it is not evidence for additional experimental precision.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0018100000000000002\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"Explicit\
+    \ receiving strength 1 X divided by stock strength 1000 X gives 1.81 g/L / 1000\
+    \ = 0.00181 g/L. This is a supported concentration-ratio calculation for this\
+    \ named variant, not an inferred 1 ml dose or final preparation volume. Preserve\
+    \ the specified supplied form and attach the stock row plus both strength locators.\
+    \ Replace only the binary-float display tail by the exact decimal result when\
+    \ curating; it is not evidence for additional experimental precision.\"\n    \
+    \  }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 58\",\n    \
+    \    \"exact_source_quote\": \"Manganese (II) chloride tetrahydrate\\t1.81\\tg/L\"\
+    ,\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 93\",\n    \
+    \    \"exact_source_quote\": \"Trace metal mix A5\\t1\\tX\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 55\",\n    \
+    \    \"exact_source_quote\": \"X\\t1000\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Explicit receiving strength 1 X divided\
+    \ by stock strength 1000 X gives 1.81 g/L / 1000 = 0.00181 g/L. This is a supported\
+    \ concentration-ratio calculation for this named variant, not an inferred 1 ml\
+    \ dose or final preparation volume. Preserve the specified supplied form and attach\
+    \ the stock row plus both strength locators. Replace only the binary-float display\
+    \ tail by the exact decimal result when curating; it is not evidence for additional\
+    \ experimental precision.\"\n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"\
+    topic\": \"Zinc sulfate heptahydrate at receiving 1 X\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local\": {\n      \"value\": \"0.000222\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[9].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.000222\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"Explicit receiving strength 1 X divided by stock strength 1000 X gives 0.222\
+    \ g/L / 1000 = 0.000222 g/L. This is a supported concentration-ratio calculation\
+    \ for this named variant, not an inferred 1 ml dose or final preparation volume.\
+    \ Preserve the specified supplied form and attach the stock row plus both strength\
+    \ locators.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000222\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\
+    Explicit receiving strength 1 X divided by stock strength 1000 X gives 0.222 g/L\
+    \ / 1000 = 0.000222 g/L. This is a supported concentration-ratio calculation for\
+    \ this named variant, not an inferred 1 ml dose or final preparation volume. Preserve\
+    \ the specified supplied form and attach the stock row plus both strength locators.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 59\",\n    \
+    \    \"exact_source_quote\": \"Zinc sulfate heptahydrate\\t0.222\\tg/L\",\n  \
+    \      \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 93\",\n    \
+    \    \"exact_source_quote\": \"Trace metal mix A5\\t1\\tX\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 55\",\n    \
+    \    \"exact_source_quote\": \"X\\t1000\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Explicit receiving strength 1 X divided\
+    \ by stock strength 1000 X gives 0.222 g/L / 1000 = 0.000222 g/L. This is a supported\
+    \ concentration-ratio calculation for this named variant, not an inferred 1 ml\
+    \ dose or final preparation volume. Preserve the specified supplied form and attach\
+    \ the stock row plus both strength locators.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q11\",\n    \"topic\": \"Sodium Molybdate Dihydrate at receiving 1 X\",\n\
+    \    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.00039000000000000005\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\": [\n      {\n\
+    \        \"input\": \"target\",\n        \"field_path\": \"ingredients[10].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.00039000000000000005\",\n \
+    \         \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\
+    ,\n        \"rationale\": \"Explicit receiving strength 1 X divided by stock strength\
+    \ 1000 X gives 0.39 g/L / 1000 = 0.00039 g/L. This is a supported concentration-ratio\
+    \ calculation for this named variant, not an inferred 1 ml dose or final preparation\
+    \ volume. Preserve the specified supplied form and attach the stock row plus both\
+    \ strength locators. Replace only the binary-float display tail by the exact decimal\
+    \ result when curating; it is not evidence for additional experimental precision.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00039000000000000005\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\",\n        \"rationale\"\
+    : \"Explicit receiving strength 1 X divided by stock strength 1000 X gives 0.39\
+    \ g/L / 1000 = 0.00039 g/L. This is a supported concentration-ratio calculation\
+    \ for this named variant, not an inferred 1 ml dose or final preparation volume.\
+    \ Preserve the specified supplied form and attach the stock row plus both strength\
+    \ locators. Replace only the binary-float display tail by the exact decimal result\
+    \ when curating; it is not evidence for additional experimental precision.\"\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 60\",\n    \
+    \    \"exact_source_quote\": \"Sodium Molybdate Dihydrate\\t0.39\\tg/L\",\n  \
+    \      \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 93\",\n    \
+    \    \"exact_source_quote\": \"Trace metal mix A5\\t1\\tX\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 55\",\n    \
+    \    \"exact_source_quote\": \"X\\t1000\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Explicit receiving strength 1 X divided\
+    \ by stock strength 1000 X gives 0.39 g/L / 1000 = 0.00039 g/L. This is a supported\
+    \ concentration-ratio calculation for this named variant, not an inferred 1 ml\
+    \ dose or final preparation volume. Preserve the specified supplied form and attach\
+    \ the stock row plus both strength locators. Replace only the binary-float display\
+    \ tail by the exact decimal result when curating; it is not evidence for additional\
+    \ experimental precision.\"\n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"\
+    topic\": \"Copper (II) sulfate pentahydrate at receiving 1 X\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local\": {\n      \"value\": \"7.9e-05\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[11].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"7.9e-05\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"Explicit receiving strength 1 X divided by stock strength 1000 X gives 0.079\
+    \ g/L / 1000 = 0.000079 g/L. This is a supported concentration-ratio calculation\
+    \ for this named variant, not an inferred 1 ml dose or final preparation volume.\
+    \ Preserve the specified supplied form and attach the stock row plus both strength\
+    \ locators.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.9e-05\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"Explicit\
+    \ receiving strength 1 X divided by stock strength 1000 X gives 0.079 g/L / 1000\
+    \ = 0.000079 g/L. This is a supported concentration-ratio calculation for this\
+    \ named variant, not an inferred 1 ml dose or final preparation volume. Preserve\
+    \ the specified supplied form and attach the stock row plus both strength locators.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 61\",\n    \
+    \    \"exact_source_quote\": \"Copper (II) sulfate pentahydrate\\t0.079\\tg/L\"\
+    ,\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 93\",\n    \
+    \    \"exact_source_quote\": \"Trace metal mix A5\\t1\\tX\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 55\",\n    \
+    \    \"exact_source_quote\": \"X\\t1000\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Explicit receiving strength 1 X divided\
+    \ by stock strength 1000 X gives 0.079 g/L / 1000 = 0.000079 g/L. This is a supported\
+    \ concentration-ratio calculation for this named variant, not an inferred 1 ml\
+    \ dose or final preparation volume. Preserve the specified supplied form and attach\
+    \ the stock row plus both strength locators.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q13\",\n    \"topic\": \"Cobalt(II) nitrate hexahydrate at receiving 1 X\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"\
+    0.0494\",\n      \"unit\": \"MG_PER_L\"\n    },\n    \"layer_decisions\": [\n\
+    \      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[12].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.0494\",\n          \"unit\"\
+    : \"MG_PER_L\"\n        },\n        \"decision\": \"evidence_only\",\n       \
+    \ \"rationale\": \"Explicit receiving strength 1 X divided by stock strength 1000\
+    \ X gives 49.4 mg/L / 1000 = 0.0494 mg/L. This is a supported concentration-ratio\
+    \ calculation for this named variant, not an inferred 1 ml dose or final preparation\
+    \ volume. Preserve the specified supplied form and attach the stock row plus both\
+    \ strength locators.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0494\",\n          \"unit\": \"MG_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"Explicit\
+    \ receiving strength 1 X divided by stock strength 1000 X gives 49.4 mg/L / 1000\
+    \ = 0.0494 mg/L. This is a supported concentration-ratio calculation for this\
+    \ named variant, not an inferred 1 ml dose or final preparation volume. Preserve\
+    \ the specified supplied form and attach the stock row plus both strength locators.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 62\",\n    \
+    \    \"exact_source_quote\": \"Cobalt(II) nitrate hexahydrate\\t49.4\\tmg/L\"\
+    ,\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 93\",\n    \
+    \    \"exact_source_quote\": \"Trace metal mix A5\\t1\\tX\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 55\",\n    \
+    \    \"exact_source_quote\": \"X\\t1000\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Explicit receiving strength 1 X divided\
+    \ by stock strength 1000 X gives 49.4 mg/L / 1000 = 0.0494 mg/L. This is a supported\
+    \ concentration-ratio calculation for this named variant, not an inferred 1 ml\
+    \ dose or final preparation volume. Preserve the specified supplied form and attach\
+    \ the stock row plus both strength locators.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q14\",\n    \"topic\": \"Boric Acid — source-only stock preparation\",\n \
+    \   \"decision\": \"add\",\n    \"local\": null,\n    \"layer_decisions\": [\n\
+    \      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\",\n        \"rationale\"\
+    : \"The stock is 2.86 g/L at 1000 X. Retain it as stock-only preparation/provenance\
+    \ if reconstructing the recipe. These source stock values must not replace the\
+    \ already diluted receiving concentrations. No stock water amount, sterilization\
+    \ or liquid dose is stated by this row.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null,\n        \"decision\": \"\
+    add\",\n        \"rationale\": \"The stock is 2.86 g/L at 1000 X. Retain it as\
+    \ stock-only preparation/provenance if reconstructing the recipe. These source\
+    \ stock values must not replace the already diluted receiving concentrations.\
+    \ No stock water amount, sterilization or liquid dose is stated by this row.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 57\",\n    \
+    \    \"exact_source_quote\": \"Boric Acid\\t2.86\\tg/L\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 55\",\n    \
+    \    \"exact_source_quote\": \"X\\t1000\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock is 2.86 g/L at 1000 X. Retain\
+    \ it as stock-only preparation/provenance if reconstructing the recipe. These\
+    \ source stock values must not replace the already diluted receiving concentrations.\
+    \ No stock water amount, sterilization or liquid dose is stated by this row.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"topic\": \"Manganese (II) chloride\
+    \ tetrahydrate — source-only stock preparation\",\n    \"decision\": \"add\",\n\
+    \    \"local\": null,\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"The stock is\
+    \ 1.81 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing\
+    \ the recipe. These source stock values must not replace the already diluted receiving\
+    \ concentrations. No stock water amount, sterilization or liquid dose is stated\
+    \ by this row.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"The stock is 1.81 g/L\
+    \ at 1000 X. Retain it as stock-only preparation/provenance if reconstructing\
+    \ the recipe. These source stock values must not replace the already diluted receiving\
+    \ concentrations. No stock water amount, sterilization or liquid dose is stated\
+    \ by this row.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 58\",\n    \
+    \    \"exact_source_quote\": \"Manganese (II) chloride tetrahydrate\\t1.81\\tg/L\"\
+    ,\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 55\",\n    \
+    \    \"exact_source_quote\": \"X\\t1000\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock is 1.81 g/L at 1000 X. Retain\
+    \ it as stock-only preparation/provenance if reconstructing the recipe. These\
+    \ source stock values must not replace the already diluted receiving concentrations.\
+    \ No stock water amount, sterilization or liquid dose is stated by this row.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"topic\": \"Zinc sulfate heptahydrate\
+    \ — source-only stock preparation\",\n    \"decision\": \"add\",\n    \"local\"\
+    : null,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n \
+    \       \"decision\": \"add\",\n        \"rationale\": \"The stock is 0.222 g/L\
+    \ at 1000 X. Retain it as stock-only preparation/provenance if reconstructing\
+    \ the recipe. These source stock values must not replace the already diluted receiving\
+    \ concentrations. No stock water amount, sterilization or liquid dose is stated\
+    \ by this row.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"The stock is 0.222 g/L\
+    \ at 1000 X. Retain it as stock-only preparation/provenance if reconstructing\
+    \ the recipe. These source stock values must not replace the already diluted receiving\
+    \ concentrations. No stock water amount, sterilization or liquid dose is stated\
+    \ by this row.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 59\",\n    \
+    \    \"exact_source_quote\": \"Zinc sulfate heptahydrate\\t0.222\\tg/L\",\n  \
+    \      \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 55\",\n    \
+    \    \"exact_source_quote\": \"X\\t1000\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock is 0.222 g/L at 1000 X. Retain\
+    \ it as stock-only preparation/provenance if reconstructing the recipe. These\
+    \ source stock values must not replace the already diluted receiving concentrations.\
+    \ No stock water amount, sterilization or liquid dose is stated by this row.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"topic\": \"Sodium Molybdate\
+    \ Dihydrate — source-only stock preparation\",\n    \"decision\": \"add\",\n \
+    \   \"local\": null,\n    \"layer_decisions\": [\n      {\n        \"input\":\
+    \ \"target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"The stock is\
+    \ 0.39 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing\
+    \ the recipe. These source stock values must not replace the already diluted receiving\
+    \ concentrations. No stock water amount, sterilization or liquid dose is stated\
+    \ by this row.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"The stock is 0.39 g/L\
+    \ at 1000 X. Retain it as stock-only preparation/provenance if reconstructing\
+    \ the recipe. These source stock values must not replace the already diluted receiving\
+    \ concentrations. No stock water amount, sterilization or liquid dose is stated\
+    \ by this row.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 60\",\n    \
+    \    \"exact_source_quote\": \"Sodium Molybdate Dihydrate\\t0.39\\tg/L\",\n  \
+    \      \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 55\",\n    \
+    \    \"exact_source_quote\": \"X\\t1000\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock is 0.39 g/L at 1000 X. Retain\
+    \ it as stock-only preparation/provenance if reconstructing the recipe. These\
+    \ source stock values must not replace the already diluted receiving concentrations.\
+    \ No stock water amount, sterilization or liquid dose is stated by this row.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"topic\": \"Copper (II) sulfate\
+    \ pentahydrate — source-only stock preparation\",\n    \"decision\": \"add\",\n\
+    \    \"local\": null,\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"The stock is\
+    \ 0.079 g/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing\
+    \ the recipe. These source stock values must not replace the already diluted receiving\
+    \ concentrations. No stock water amount, sterilization or liquid dose is stated\
+    \ by this row.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"The stock is 0.079 g/L\
+    \ at 1000 X. Retain it as stock-only preparation/provenance if reconstructing\
+    \ the recipe. These source stock values must not replace the already diluted receiving\
+    \ concentrations. No stock water amount, sterilization or liquid dose is stated\
+    \ by this row.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 61\",\n    \
+    \    \"exact_source_quote\": \"Copper (II) sulfate pentahydrate\\t0.079\\tg/L\"\
+    ,\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 55\",\n    \
+    \    \"exact_source_quote\": \"X\\t1000\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock is 0.079 g/L at 1000 X. Retain\
+    \ it as stock-only preparation/provenance if reconstructing the recipe. These\
+    \ source stock values must not replace the already diluted receiving concentrations.\
+    \ No stock water amount, sterilization or liquid dose is stated by this row.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q19\",\n    \"topic\": \"Cobalt(II) nitrate\
+    \ hexahydrate — source-only stock preparation\",\n    \"decision\": \"add\",\n\
+    \    \"local\": null,\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"The stock is\
+    \ 49.4 mg/L at 1000 X. Retain it as stock-only preparation/provenance if reconstructing\
+    \ the recipe. These source stock values must not replace the already diluted receiving\
+    \ concentrations. No stock water amount, sterilization or liquid dose is stated\
+    \ by this row.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"The stock is 49.4 mg/L\
+    \ at 1000 X. Retain it as stock-only preparation/provenance if reconstructing\
+    \ the recipe. These source stock values must not replace the already diluted receiving\
+    \ concentrations. No stock water amount, sterilization or liquid dose is stated\
+    \ by this row.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 62\",\n    \
+    \    \"exact_source_quote\": \"Cobalt(II) nitrate hexahydrate\\t49.4\\tmg/L\"\
+    ,\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 55\",\n    \
+    \    \"exact_source_quote\": \"X\\t1000\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock is 49.4 mg/L at 1000 X. Retain\
+    \ it as stock-only preparation/provenance if reconstructing the recipe. These\
+    \ source stock values must not replace the already diluted receiving concentrations.\
+    \ No stock water amount, sterilization or liquid dose is stated by this row.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q20\",\n    \"topic\": \"A5 stock strength\
+    \ and receiving strength\",\n    \"decision\": \"add\",\n    \"local\": null,\n\
+    \    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n       \
+    \ \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"Document the explicit 1000 X stock\
+    \ and 1 X receiving strength. A concentration-ratio dilution is justified; a fixed\
+    \ millilitre dose and a measured final litre are not supplied. Do not double-count\
+    \ six direct final concentrations and an added stock representation.\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Document the explicit\
+    \ 1000 X stock and 1 X receiving strength. A concentration-ratio dilution is justified;\
+    \ a fixed millilitre dose and a measured final litre are not supplied. Do not\
+    \ double-count six direct final concentrations and an added stock representation.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 93\",\n    \
+    \    \"exact_source_quote\": \"Trace metal mix A5\\t1\\tX\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 55\",\n    \
+    \    \"exact_source_quote\": \"X\\t1000\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Document the explicit 1000 X stock and\
+    \ 1 X receiving strength. A concentration-ratio dilution is justified; a fixed\
+    \ millilitre dose and a measured final litre are not supplied. Do not double-count\
+    \ six direct final concentrations and an added stock representation.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q21\",\n    \"topic\": \"Source pH and owner repair\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ph_value\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\",\n        \"rationale\"\
+    : \"The exact variant description specifies pH 7.1. The maintained owner already\
+    \ contains scalar ph_value 7.1, while the target only retains it in description.\
+    \ Preserve the owner value and evidence, then regenerate the scalar into the target.\
+    \ No pH range or titrant dose is supplied.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/algae/bg11_nonitrogen.yaml\",\n        \"field_path\"\
+    : \"ph_value\",\n        \"stored\": 7.1,\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"The exact variant description specifies pH 7.1. The\
+    \ maintained owner already contains scalar ph_value 7.1, while the target only\
+    \ retains it in description. Preserve the owner value and evidence, then regenerate\
+    \ the scalar into the target. No pH range or titrant dose is supplied.\"\n   \
+    \   }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Exact named block, original line 83\",\n    \
+    \    \"exact_source_quote\": \"Description\\tFor growing Synechococcus elongatus\
+    \ PCC 7942, no sodium nitrate, pH should be 7.1\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The exact variant description specifies pH 7.1.\
+    \ The maintained owner already contains scalar ph_value 7.1, while the target\
+    \ only retains it in description. Preserve the owner value and evidence, then\
+    \ regenerate the scalar into the target. No pH range or titrant dose is supplied.\"\
+    \n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '13 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 13/13
+    primary and 0/13 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131527
+  - chebi29377
+  - chebi31440
+  - chebi31604
+  - chebi31795
+  - chebi32312
+  - chebi33118
+  - chebi53258
+  - chebi64734
+  - chebi75213
+  - chebi86158
+  - chebi86214
+  - chebi86368
+  details: 'Instance coverage on a 0–100 percent scale, denominator 13: primary 100.00%;
+    secondary 0.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 8 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact omitted-component variant
+  outcome: supported
+  summary: The exact FEBA BG11_noNitrogen description says no sodium nitrate and names
+    Synechococcus elongatus PCC 7942. Sodium carbonate, ferric ammonium citrate and
+    cobalt nitrate remain. The title does not mean chemically nitrogen-free, nor does
+    it establish equivalence to BG110, M3120 or another BG11 variant.
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - record
+  - owner-0
+  - feba-main
+  - feba-stock
+- assessment_id: ownership
+  area: ownership
+  topic: Current owner repair and stale generated metadata
+  outcome: concern
+  summary: Both layers have identical 13 ingredient concentrations. The owner already
+    adds media_term, pH 7.1, two references and curated/mapping flags. Credit these
+    changes; the flags do not certify citric-acid identity, EDTA form or the inaccessible
+    historical source. Regeneration must follow source-supported owner corrections.
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - record
+  - owner-0
+  - writer-1
+  - history-detail
+- assessment_id: evidence
+  area: evidence
+  topic: Versioned formulation versus growth evidence
+  outcome: concern
+  summary: The current named FEBA recipe and compound table support present source
+    comparisons. The description is an intended-use statement, not an experimental
+    growth result. No target/owner evidence claims or inline variants are present;
+    claims on comparative BG11 records are excluded. The current FEBA commit postdates
+    the import, and the cited CultureBotHT file is inaccessible.
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - feba-main
+  - feba-version
+  - history-detail
+  - culturebothtExactBG11_noNitrogen-attempt
+- assessment_id: scope
+  area: scope
+  topic: Stock, preparation and cultivation scope
+  outcome: concern
+  summary: The source supports a 1000 X stock used at 1 X, and variant-specific pH
+    7.1. It does not provide a water charge, preparation volume, autoclave cycle,
+    growth temperature, light setting or atmosphere for this exact variant. Do not
+    borrow those from M3120 or the paper-backed BG11 comparison record.
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - feba-main
+  - feba-stock
+  - quantity-inventory
+- assessment_id: classification
+  area: consistency
+  topic: Defined classification and curation flags
+  outcome: concern
+  summary: The source Minimal TRUE label does not establish chemically exact composition.
+    Ferric ammonium citrate is explicitly an indefinite-composition mixture; DEFINED
+    needs a documented schema-consistent assessment rather than automatic retention
+    or automatic conversion to COMPLEX. Liquid is appropriate. Cyanobacterial use
+    does not justify treating the algae filing as a biological domain assertion. All
+    13 ingredients have primary IDs but zero secondary slots; absence of optional
+    secondary slots is distinct from a broken asserted link.
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - record
+  - chebi31604
+  - feba-main
+  - grounding-detail
+- assessment_id: graph
+  area: graph
+  topic: Graph, legacy and comparison boundaries
+  outcome: not_applicable
+  summary: Neither selected layer asserts a kg_microbe_match, legacy MIM identifier
+    or organism taxon ID. The 000171 context belongs to an excluded comparison record
+    and does not impose a historical legacy gap on this target.
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - record
+  - owner-0
+  - history-detail
+- assessment_id: completeness
+  area: completeness
+  topic: Bounded review completion
+  outcome: concern
+  summary: Every actual target/owner concentration and source-only stock strength/stock
+    composition/pH was assessed. The review remains partial for historical CultureBotHT
+    correspondence, while the current FEBA source check itself passed.
+  target_ids:
+  - CultureMech:015452
+  evidence_ids:
+  - quantity-inventory
+  - grounding-detail
+  - history-detail
+  - culturebothtExactBG11_noNitrogen-attempt
+findings:
+- finding_id: f1
+  issue_key: culturemech.015452.citric-identity
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Citric acid is linked to trisodium citrate
+  description: Both layers name Citric Acid with CAS 77-92-9 and MW 192.12 but assert
+    CHEBI:53258 sodium citrate, the trisodium salt. Exact FEBA compound metadata and
+    CHEBI:30769 support the acid. This is chemical identity disagreement, not a misspelled
+    canonical label.
+  target_ids:
+  - CultureMech:015452
+  field_paths:
+  - ingredients[3].term
+  - ingredients[3].notes
+  evidence_ids:
+  - feba-compounds
+  - chebi53258
+  - grounding-detail
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11_nonitrogen.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.015452.edta-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: EDTA anhydrous specificity is not established by the conflicting source metadata
+  description: The stored/source CAS is 6381-92-6, while FW 336.206 is near the asserted
+    anhydrous form. CHEBI:64734 explicitly describes the anhydrous salt and cites
+    a different CAS. Source-internal inconsistency must be reconciled before claiming
+    a hydrate or using molecular-weight conversions.
+  target_ids:
+  - CultureMech:015452
+  field_paths:
+  - ingredients[5].term
+  - ingredients[5].notes
+  evidence_ids:
+  - feba-compounds
+  - chebi64734
+  - grounding-detail
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11_nonitrogen.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.015452.provenance-preparation
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Current formula evidence and the supported stock relation are absent
+  description: Neither layer attaches the exact versioned ingredient/stock evidence.
+    The owner references the unavailable repository and marks ingredients curated;
+    the current public source supports a scoped comparison but cannot authenticate
+    its March source.
+  target_ids:
+  - CultureMech:015452
+  field_paths:
+  - evidence
+  - references
+  - preparation_steps
+  - data_quality_flags
+  evidence_ids:
+  - feba-main
+  - feba-stock
+  - feba-version
+  - history-detail
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11_nonitrogen.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4.3 is normalized to minor because the exact named FEBA rows
+    support the numerical formula and the 1000 X stock to 1 X relation, while both
+    layers omit claim-level links and stock provenance needed to trace those supported
+    values. The unavailable March CultureBotHT version remains a separate historical-authentication
+    limitation.
+- finding_id: f4
+  issue_key: culturemech.015452.generated-ph-precision
+  category: consistency
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Generated pH metadata and two decimal representations need synchronization
+  description: The owner already has pH 7.1, missing as a scalar in the target. Manganese
+    and molybdate concentrations retain binary floating-point tails rather than exact
+    source-dilution decimals. These tails are not new chemical measurements.
+  target_ids:
+  - CultureMech:015452
+  field_paths:
+  - ph_value
+  - ingredients[8].concentration
+  - ingredients[10].concentration
+  evidence_ids:
+  - owner-0
+  - feba-main
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11_nonitrogen.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Correct the maintained acid identity using exact source evidence; retain
+    its supported 0.006 g/L amount, preserve history, and regenerate only after validation.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:015452
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11_nonitrogen.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Verify the exact source product/form or retain an explicit unresolved
+    form gap. Do not infer a dihydrate amount or force the anhydrous ID solely from
+    the formula weight.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:015452
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11_nonitrogen.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Attach the exact current source rows and both 1000 X/1 X locators with
+    an explicit version limitation. Reassess curation flags and classification; retain
+    historical authentication as unresolved.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:015452
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11_nonitrogen.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Preserve and cite the existing owner pH; render source-based dilution
+    as 0.00181 and 0.00039 g/L respectively without inventing precision, then regenerate
+    the derived target.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:015452
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11_nonitrogen.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The exact publicly requested CultureBotHT BG11_noNitrogen YAML returned HTTP 404.
+  Its March 2026 imported bytes and time-specific correspondence remain unverified.
+  The later pinned FEBA recipe is available and does not replace that historical authentication
+  requirement.
+- The public CultureBotHT repository API returned HTTP 404. This is a bounded access
+  result, not proof that the repository or historical file never existed.
+- This assessment precedes root acceptance and formal review validation/saving, whose
+  outcomes are recorded separately. No historical importer or repair was replayed;
+  no experiment or new source request was performed.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-041
+- generated-medium
+```
