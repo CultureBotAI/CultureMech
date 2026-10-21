@@ -1,0 +1,2390 @@
+schema_version: 1.0.0
+review_id: 20261021T185024Z-culturemech-006146-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: acetobacter_europaeus_medium (CultureMech:006146)'
+started_at: '2026-10-21T18:47:05Z'
+finished_at: '2026-10-21T18:50:24Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The generated record combines DSMZ 631, DSMZ 1522 and JCM 96 despite different
+  amounts and preparation. Every layer also treats acetic-acid and ethanol volume
+  additions as grams per litre. Six existing owner amount claims have matching raw
+  bytes; the three DSMZ 1522 claims remain derivative-only. Separate the formulations
+  before reconciliation and regeneration.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Acetobacter_Europaeus_Medium.yaml
+    sha256: 68b5b329b3e9162370eff499eba23660c98eb59928e935280d3170ed20d187b7
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml
+    sha256: 34cce846a9b447469551f29142172b7d5f451f547a726852e975beada9fe7683
+    role: context
+  - path: data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml
+    sha256: 5b640077a3fddd8dd2c1591a4292691f9749760fe407bb3b8636fd09749e44e3
+    role: context
+  - path: data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml
+    sha256: 7032561a5524ef80ac3b493bbda1f14c5c7a21151c7674d1020e795c3b579d78
+    role: context
+  - path: data/normalized_yaml/bacterial/ae_broth.yaml
+    sha256: 28eca19fbf8656e801899808e621f70f22bcca360734832abb18ebd3fed432bd
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/inspected-candidate-context.json
+    sha256: 65c1b3085c5b2101fd274a184820f9de1dd1fa7f7f7d7d0068d6acb67b587934
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/plan.json
+    sha256: f5827bda6e5f7caf5fdb9faddc5f36e3955ee048fa0a066cc40e04ff3e1c4823
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml.md
+    sha256: 10bf71e3d272f61b2039946d3e24c07ce5b8f4be63b08b16bb27fffe26c64b84
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json
+    sha256: bc8c96d09770525e6b6ba6dc0c7680354cf9bc6baa5249e79e82b65328203147
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/acetobacter_europaeus_medium.yaml.md
+    sha256: d1ec90e664aecee5f8dcb28286e87bedb2941547f3334325cbffb9d4c5b4ca2c
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/plan.json
+    sha256: 087b43514367d268b48e568b66203c146b81601303e5c8e3508f3c91e0fcbf26
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/acetobacter_lambicus_medium.yaml.md
+    sha256: a35015f1275e2666321aee00e20ff6f179192f124872b241872ece1bd2a5f22b
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json
+    sha256: 2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/ae_broth.yaml.md
+    sha256: ab8a499808c84d7eeeab6a253517085939097616b0f19d3302440a31d57c0a7d
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 334; batch 034 item 4 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-three task batches
+    contain 330 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 333 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:006146
+targets:
+- target_id: CultureMech:006146
+  path: data/merge_yaml/merged/Acetobacter_Europaeus_Medium.yaml
+  label: acetobacter_europaeus_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ae_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/Acetobacter_Europaeus_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/Acetobacter_Europaeus_Medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch034/334/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-034/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch034/334/strict.tsv"
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/Acetobacter_Europaeus_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/Acetobacter_Europaeus_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:006146
+- check_id: jcm96-source-access
+  name: 'Exact source content access: jcm96'
+  required: true
+  status: unavailable
+  summary: Exact JCM96 primary request returned HTTP 200 with Nothing found. AE BROTH
+    is assessed from the exact MediaDive J96 response, with primary confirmation unavailable.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - jcm96-attempt
+- check_id: mediadive631api-source-access
+  name: 'Exact source content access: mediadive631api'
+  required: false
+  status: unavailable
+  summary: Preserved optional current retrieval failure for mediadive631api; independent
+    primary or historical/provider evidence is scoped separately.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - mediadive631api-attempt
+- check_id: mediadive631api_retry-source-access
+  name: 'Exact source content access: mediadive631api_retry'
+  required: false
+  status: unavailable
+  summary: Preserved optional current retrieval failure for mediadive631api_retry;
+    independent primary or historical/provider evidence is scoped separately.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - mediadive631api_retry-attempt
+- check_id: mediadive1522api-source-access
+  name: 'Exact source content access: mediadive1522api'
+  required: false
+  status: unavailable
+  summary: Preserved optional current retrieval failure for mediadive1522api; independent
+    primary or historical/provider evidence is scoped separately.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - mediadive1522api-attempt
+- check_id: mediadive1522api_retry-source-access
+  name: 'Exact source content access: mediadive1522api_retry'
+  required: false
+  status: unavailable
+  summary: Preserved optional current retrieval failure for mediadive1522api_retry;
+    independent primary or historical/provider evidence is scoped separately.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - mediadive1522api_retry-attempt
+- check_id: komodo631detail-source-access
+  name: 'Exact source content access: komodo631detail'
+  required: false
+  status: unavailable
+  summary: Preserved optional current retrieval failure for komodo631detail; independent
+    primary or historical/provider evidence is scoped separately.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - komodo631detail-attempt
+- check_id: historical1522-authentication
+  name: Original DSM1522 response authentication
+  required: true
+  status: unavailable
+  summary: Three existing owner claims match the pinned local plan, but cited raw
+    eb06b73a77b42ab9e48a123359d0e121a1ae6f1a45dd3af7400f85d7716777e7 remains unrecovered.
+    Primary batch masses do not authenticate that provider response.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - historical-claims
+  - historical1522-plan
+  - historical-search
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/Acetobacter_Europaeus_Medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-3
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/ae_broth.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/Acetobacter_Europaeus_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:47:34.177785Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/Acetobacter_Europaeus_Medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch034/334/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:47:35.206155Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-034/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch034/334/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/Acetobacter_Europaeus_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:47:36.328987Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/Acetobacter_Europaeus_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:47:37.049667Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: supports
+  summary: './data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml:1:id:
+    CultureMech:006146
+
+    ./data/merge_yaml/merged/Acetobacter_Europaeus_Medium.yaml:1:id: CultureMech:006146
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch034/source-preflight-bound/334/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: supports
+  summary: 16 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 92082583c751eac7b82474712423dfa2a5424a8265e44657bc0d80a4ca9f85c9
+- evidence_id: dsmz631
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium631.pdf
+  locator: Page 1 complete table and preparation; PDF image read
+  accessed_at: '2026-10-21T18:31:49.799565Z'
+  support: supports
+  summary: DSMZ 631 specifies 2/3/5 g of yeast extract/peptone/glucose, 40/30 mL acid/ethanol
+    and 930 mL water. The separate plate procedure is not the liquid basal recipe.
+  quote: Acetic acid 40.0 ml
+  snapshot_sha256: 9c9ed19c0e7b7311da957e76ba368669bce269d5a2bfb6bf732a26e7c0c47eba
+- evidence_id: dsmz1522
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1522.pdf
+  locator: Page 1 complete table and post-autoclave pH instruction; PDF image read
+  accessed_at: '2026-10-21T18:31:49.461700Z'
+  support: supports
+  summary: DSMZ 1522 instead specifies 8/15/10 g dry nutrients, 3/5 mL acid/ethanol,
+    992 mL water and pH 3.5.
+  quote: Adjust pH to 3,5 with concentrated HCl after autoclaving.
+  snapshot_sha256: 3c27612161e5e4d88aef14583b5d2b9ca189ed80301414345ca30d7990e2ff38
+- evidence_id: mediadive631historical
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/631
+  locator: $.data.medium; $.data.solutions[0].volume, recipe and steps
+  accessed_at: '2026-10-07T12:16:41.441181Z'
+  support: supports
+  summary: The exact historical 631 response was extracted from a pinned report raw
+    string with original Oct 7 access metadata; its declared 1000 mL basis is not
+    a physical final-volume measurement.
+  quote: '"volume": 1000'
+  snapshot_sha256: e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89
+- evidence_id: mediadiveJ96api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J96
+  locator: $.data.medium; $.data.solutions[0].volume, recipe and steps
+  accessed_at: '2026-10-21T11:30:39.090695Z'
+  support: supports
+  summary: 'J96 is AE BROTH: 15/2/3 g glucose/yeast/peptone, 65/20/900 mL acid/ethanol/water
+    and a declared 985 mL basis. This raw capture was accessed on Oct 21 and matches
+    the hash in separate Oct 7 owner evidence; it is not recovered Oct 7 request metadata.'
+  quote: '"volume": 985'
+  snapshot_sha256: 2c8a0d7cb2e7c66f98ab5962d69be8bffe5b038cbf61e38fd125e753cd70f170
+- evidence_id: komodo-identity
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact raw accession 631 row
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Catalog provenance and attributed flags only; not growth or formulation
+    equivalence.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=631'\
+    \ >631</a></TD>\n\t\t\t\t\t<TD>ACETOBACTER EUROPAEUS medium</TD>\n\t\t\t\t\t<TD>null</TD>\n\
+    \t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium631.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium631.pdf</a></TD>\n\t\
+    \t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: komodo-header
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact raw catalog column header
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Catalog provenance and attributed flags only; not growth or formulation
+    equivalence.
+  quote: "<TR>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\" width=\"50\">ID</TD>\n\
+    \t\t\t\t\t<TD valign=\"top\" align=\"left\">Name</TD>\n\t\t\t\t\t<TD valign=\"\
+    top\" align=\"left\">PH Info</TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\"\
+    >Is Complex</TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\">Is Aerobic</TD>\n\
+    \t\t\t\t\t<TD valign=\"top\" align=\"left\">Is SubMedium</TD>\n\t\t\t\t\t<TD valign=\"\
+    top\" align=\"left\">Instructions</TD>\n\t\t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: historical-claims
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch034/334/historical-claim-recheck.json
+  locator: Six exact raw/hash owner matches and three decoded plan-only matches
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: context_only
+  summary: All nine amount evidence objects were read with their explanations and
+    source dates. The target and KOMODO owner have none. DSM631 has exact historical
+    raw and metadata; J96 has matching raw accessed Oct 21; DSM1522 has derivative-only
+    correspondence.
+  snapshot_sha256: 5c06e1e5c1f3127b2c04ed012c25eb002ce79bc13ebcd72410ccd99b908b6c60
+- evidence_id: historical1522-plan
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/plan.json
+  locator: $.records[118], including source-only rows and preparation claims
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: context_only
+  summary: The historical local plan agrees with three attached DSM1522 snippets but
+    does not authenticate the missing original response. No plan serialization is
+    presented as network raw.
+  snapshot_sha256: 087b43514367d268b48e568b66203c146b81601303e5c8e3508f3c91e0fcbf26
+- evidence_id: historical-search
+  kind: search
+  reference: /private/tmp/culturemech-review-source-preflight-batch034/historical-bounded-search.json
+  locator: Recorded ignored-inclusive digest/candidate and embedded-source search
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: context_only
+  summary: The bounded search recovered DSM631 embedded raw; it did not recover the
+    cited DSM1522 raw. The context sentence implying J96 Oct 7 capture metadata is
+    overridden by the actual Oct 21 capture metadata.
+  snapshot_sha256: d13fde19a1ef945194d44bb10a1894f0aa93a2491d334209487b1739cd89a718
+  search_scope: Recorded owned /private/tmp source/cache and checkout candidate search,
+    including hidden and ignored files; not universal absence.
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch034/334/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 335436e6531faf1b8c7c453085ccd4bd41f1baedfb395f9b613cab7d09846e7b
+- evidence_id: chebi15366
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15366
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T11:29:08.353669Z'
+  support: supports
+  summary: CHEBI:15366 resolves to acetic acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b887e3ee7d15164ff6fa8efd11f052ea16965afb730d69ccf31744ffb64d2139
+- evidence_id: chebi16236
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16236
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T10:07:16.961534Z'
+  support: supports
+  summary: CHEBI:16236 resolves to ethanol. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: afdacc5e401c6545f51974e897eb96eee2a5fa3aef15119edbd415cb7bb802b8
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15366":
+    [{"label": "Acetic acid", "match_type": "preferred_term", "identifier": "CHEBI:15366",
+    "preferred_term": "Acetic acid", "ontology_id": "CHEBI:15366", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:16236": [{"label": "Ethanol", "match_type":
+    "preferred_term", "identifier": "CHEBI:16236", "preferred_term": "Ethanol", "ontology_id":
+    "CHEBI:16236", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234":
+    [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234",
+    "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/Acetobacter_Europaeus_Medium.yaml; data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml;
+    data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml; data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml;
+    data/normalized_yaml/bacterial/ae_broth.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:17.590920"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:17.590920"}]}, {"input": "data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml",
+    "events": 6, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml",
+    "events": 6, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/ae_broth.yaml",
+    "events": 6, "timestamp_issues": []}]'
+- evidence_id: jcm96-attempt
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=96
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T11:30:40.645937Z'
+  support: context_only
+  summary: Exact JCM96 primary request returned HTTP 200 with Nothing found. AE BROTH
+    is assessed from the exact MediaDive J96 response, with primary confirmation unavailable.
+  snapshot_sha256: 8b383d4ce03d244af2f2401ef1cff7914e5e9962573d78a335d5b5e26de92190
+- evidence_id: mediadive631api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/631
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T18:31:47.858412Z'
+  support: context_only
+  summary: Preserved optional current retrieval failure for mediadive631api; independent
+    primary or historical/provider evidence is scoped separately.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive631api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/631
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T18:32:33.147627Z'
+  support: context_only
+  summary: Preserved optional current retrieval failure for mediadive631api_retry;
+    independent primary or historical/provider evidence is scoped separately.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive1522api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1522
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T18:31:47.524737Z'
+  support: context_only
+  summary: Preserved optional current retrieval failure for mediadive1522api; independent
+    primary or historical/provider evidence is scoped separately.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive1522api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1522
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T18:32:33.783704Z'
+  support: context_only
+  summary: Preserved optional current retrieval failure for mediadive1522api_retry;
+    independent primary or historical/provider evidence is scoped separately.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo631detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=631
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T18:31:47.524288Z'
+  support: context_only
+  summary: Preserved optional current retrieval failure for komodo631detail; independent
+    primary or historical/provider evidence is scoped separately.
+  snapshot_sha256: 340161c4ffda655b72f486bb64853e06f41ef8cfefff7f0a1557520e24908627
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/merge/fingerprint.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: context_only
+  summary: Ingredient-set fingerprints exclude amounts and preparation. Current formulation
+    grouping instead requires exact scientific-field equality and preserves scoped
+    evidence; it cannot certify chemistry. Current importer separately handles stock
+    additions and excludes water, while unit normalization remains contextual. These
+    read functions do not prove the historical code path that created the stale target.
+  snapshot_sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: context_only
+  summary: Ingredient-set fingerprints exclude amounts and preparation. Current formulation
+    grouping instead requires exact scientific-field equality and preserves scoped
+    evidence; it cannot certify chemistry. Current importer separately handles stock
+    additions and excludes water, while unit normalization remains contextual. These
+    read functions do not prove the historical code path that created the stale target.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: context_only
+  summary: Ingredient-set fingerprints exclude amounts and preparation. Current formulation
+    grouping instead requires exact scientific-field equality and preserves scoped
+    evidence; it cannot certify chemistry. Current importer separately handles stock
+    additions and excludes water, while unit normalization remains contextual. These
+    read functions do not prove the historical code path that created the stale target.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: relationships
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch034/source-preflight-bound/334/evidence-context-original.json
+  locator: internal_relationship_context; exact paths and IDs; original capture hashes
+  accessed_at: '2026-10-21T18:50:23Z'
+  support: supports
+  summary: The target/KOMODO parent link and DSM631 reciprocal child resolve exactly.
+    Their source accession relationship is distinct from the unsupported DSM1522/J96
+    synonym collapse.
+  snapshot_sha256: e9e33cc08edb770074e10229ea2855f3c5d619080dc26ab981ea7dd254632446
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 33 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"ingredient_or_context\": \"\
+    DSM631 Yeast extract\",\n    \"field_path\": \"ingredients[0].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"2\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": 2,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"DSM631 liquid basal formulation\",\n    \"primary_source_evidence_id\": \"\
+    dsmz631\",\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz631\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium631.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table\",\n        \"exact_source_quote\"\
+    : \"Yeast extract 2.0 g\",\n        \"snapshot_sha256\": \"9c9ed19c0e7b7311da957e76ba368669bce269d5a2bfb6bf732a26e7c0c47eba\"\
+    ,\n        \"parsed_text_sha256\": \"37a5b8a40cebad58ac326c7b7e101f686e7643c34cd3f72d6e86048be8500a6e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive631historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/631\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"compound\\\": \\\"Yeast extract\\\",\\n                        \\\"\
+    compound_id\\\": 16,\\n                        \\\"amount\\\": 2,\\n         \
+    \               \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\"\
+    : 2,\\n                        \\\"optional\\\": 0\\n                    }\",\n\
+    \        \"snapshot_sha256\": \"e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive631historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/631\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].volume\",\n        \"exact_source_quote\"\
+    : \"\\\"volume\\\": 1000\",\n        \"snapshot_sha256\": \"e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[0].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\",\n        \"rationale\":\
+    \ \"The historical provider explicitly declares 1000 mL and g_l; existing DSM\
+    \ owner evidence matches that narrow basis. Target and KOMODO lack attachments.\
+    \ This does not certify the whole formulation or a measured final litre.\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The historical\
+    \ provider explicitly declares 1000 mL and g_l; existing DSM owner evidence matches\
+    \ that narrow basis. Target and KOMODO lack attachments. This does not certify\
+    \ the whole formulation or a measured final litre.\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"The historical\
+    \ provider explicitly declares 1000 mL and g_l; existing DSM owner evidence matches\
+    \ that narrow basis. Target and KOMODO lack attachments. This does not certify\
+    \ the whole formulation or a measured final litre.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"The historical provider explicitly declares 1000 mL\
+    \ and g_l; existing DSM owner evidence matches that narrow basis. Target and KOMODO\
+    \ lack attachments. This does not certify the whole formulation or a measured\
+    \ final litre.\"\n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"ingredient_or_context\"\
+    : \"DSM631 Peptone\",\n    \"field_path\": \"ingredients[1].concentration\",\n\
+    \    \"local\": {\n      \"value\": \"3\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 3,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"DSM631 liquid basal formulation\",\n    \"primary_source_evidence_id\": \"\
+    dsmz631\",\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz631\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium631.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table\",\n        \"exact_source_quote\"\
+    : \"Peptone 3.0 g\",\n        \"snapshot_sha256\": \"9c9ed19c0e7b7311da957e76ba368669bce269d5a2bfb6bf732a26e7c0c47eba\"\
+    ,\n        \"parsed_text_sha256\": \"37a5b8a40cebad58ac326c7b7e101f686e7643c34cd3f72d6e86048be8500a6e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive631historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/631\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 2,\\n                  \
+    \      \\\"compound\\\": \\\"Peptone\\\",\\n                        \\\"compound_id\\\
+    \": 1,\\n                        \\\"amount\\\": 3,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 3,\\n      \
+    \                  \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive631historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/631\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].volume\",\n        \"exact_source_quote\"\
+    : \"\\\"volume\\\": 1000\",\n        \"snapshot_sha256\": \"e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[1].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\",\n        \"rationale\":\
+    \ \"The historical provider explicitly declares 1000 mL and g_l; existing DSM\
+    \ owner evidence matches that narrow basis. Target and KOMODO lack attachments.\
+    \ This does not certify the whole formulation or a measured final litre.\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The historical\
+    \ provider explicitly declares 1000 mL and g_l; existing DSM owner evidence matches\
+    \ that narrow basis. Target and KOMODO lack attachments. This does not certify\
+    \ the whole formulation or a measured final litre.\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"The historical\
+    \ provider explicitly declares 1000 mL and g_l; existing DSM owner evidence matches\
+    \ that narrow basis. Target and KOMODO lack attachments. This does not certify\
+    \ the whole formulation or a measured final litre.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"The historical provider explicitly declares 1000 mL\
+    \ and g_l; existing DSM owner evidence matches that narrow basis. Target and KOMODO\
+    \ lack attachments. This does not certify the whole formulation or a measured\
+    \ final litre.\"\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"ingredient_or_context\"\
+    : \"DSM631 Glucose\",\n    \"field_path\": \"ingredients[2].concentration\",\n\
+    \    \"local\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 5,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"DSM631 liquid basal formulation\",\n    \"primary_source_evidence_id\": \"\
+    dsmz631\",\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz631\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium631.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table\",\n        \"exact_source_quote\"\
+    : \"Glucose 5.0 g\",\n        \"snapshot_sha256\": \"9c9ed19c0e7b7311da957e76ba368669bce269d5a2bfb6bf732a26e7c0c47eba\"\
+    ,\n        \"parsed_text_sha256\": \"37a5b8a40cebad58ac326c7b7e101f686e7643c34cd3f72d6e86048be8500a6e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive631historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/631\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"compound\\\": \\\"Glucose\\\",\\n                        \\\"compound_id\\\
+    \": 5,\\n                        \\\"amount\\\": 5,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n      \
+    \                  \\\"mmol_l\\\": 27.7531,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive631historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/631\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].volume\",\n        \"exact_source_quote\"\
+    : \"\\\"volume\\\": 1000\",\n        \"snapshot_sha256\": \"e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[2].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\",\n        \"rationale\":\
+    \ \"The historical provider explicitly declares 1000 mL and g_l; existing DSM\
+    \ owner evidence matches that narrow basis. Target and KOMODO lack attachments.\
+    \ This does not certify the whole formulation or a measured final litre.\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The historical\
+    \ provider explicitly declares 1000 mL and g_l; existing DSM owner evidence matches\
+    \ that narrow basis. Target and KOMODO lack attachments. This does not certify\
+    \ the whole formulation or a measured final litre.\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"The historical\
+    \ provider explicitly declares 1000 mL and g_l; existing DSM owner evidence matches\
+    \ that narrow basis. Target and KOMODO lack attachments. This does not certify\
+    \ the whole formulation or a measured final litre.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"The historical provider explicitly declares 1000 mL\
+    \ and g_l; existing DSM owner evidence matches that narrow basis. Target and KOMODO\
+    \ lack attachments. This does not certify the whole formulation or a measured\
+    \ final litre.\"\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"ingredient_or_context\"\
+    : \"DSM631 Acetic acid\",\n    \"field_path\": \"ingredients[3].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"40\",\n      \"unit\": \"G_PER_L\"\n \
+    \   },\n    \"source_amount\": 40,\n    \"source_unit\": \"ml\",\n    \"source_stage\"\
+    : \"DSM631 liquid basal formulation\",\n    \"primary_source_evidence_id\": \"\
+    dsmz631\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz631\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium631.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table\",\n        \"exact_source_quote\"\
+    : \"Acetic acid 40.0 ml\",\n        \"snapshot_sha256\": \"9c9ed19c0e7b7311da957e76ba368669bce269d5a2bfb6bf732a26e7c0c47eba\"\
+    ,\n        \"parsed_text_sha256\": \"37a5b8a40cebad58ac326c7b7e101f686e7643c34cd3f72d6e86048be8500a6e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive631historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/631\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 4,\\n                  \
+    \      \\\"compound\\\": \\\"Acetic acid\\\",\\n                        \\\"compound_id\\\
+    \": 380,\\n                        \\\"amount\\\": 40,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[3].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"40\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"Retain\
+    \ the literal volume input; no density or reagent purity supports a mass conversion.\
+    \ The listed 930 + 40 + 30 mL is not a measured final volume.\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"40\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Retain the literal\
+    \ volume input; no density or reagent purity supports a mass conversion. The listed\
+    \ 930 + 40 + 30 mL is not a measured final volume.\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"40\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Retain the literal\
+    \ volume input; no density or reagent purity supports a mass conversion. The listed\
+    \ 930 + 40 + 30 mL is not a measured final volume.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"Retain the literal volume input; no density or reagent\
+    \ purity supports a mass conversion. The listed 930 + 40 + 30 mL is not a measured\
+    \ final volume.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"ingredient_or_context\"\
+    : \"DSM631 Ethanol\",\n    \"field_path\": \"ingredients[4].concentration\",\n\
+    \    \"local\": {\n      \"value\": \"30\",\n      \"unit\": \"G_PER_L\"\n   \
+    \ },\n    \"source_amount\": 30,\n    \"source_unit\": \"ml\",\n    \"source_stage\"\
+    : \"DSM631 liquid basal formulation\",\n    \"primary_source_evidence_id\": \"\
+    dsmz631\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz631\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium631.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table\",\n        \"exact_source_quote\"\
+    : \"Ethanol 30.0 ml\",\n        \"snapshot_sha256\": \"9c9ed19c0e7b7311da957e76ba368669bce269d5a2bfb6bf732a26e7c0c47eba\"\
+    ,\n        \"parsed_text_sha256\": \"37a5b8a40cebad58ac326c7b7e101f686e7643c34cd3f72d6e86048be8500a6e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive631historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/631\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 5,\\n                  \
+    \      \\\"compound\\\": \\\"Ethanol\\\",\\n                        \\\"compound_id\\\
+    \": 201,\\n                        \\\"amount\\\": 30,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[4].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"Retain\
+    \ the literal volume input; no density or reagent purity supports a mass conversion.\
+    \ The listed 930 + 40 + 30 mL is not a measured final volume.\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Retain the literal\
+    \ volume input; no density or reagent purity supports a mass conversion. The listed\
+    \ 930 + 40 + 30 mL is not a measured final volume.\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Retain the literal\
+    \ volume input; no density or reagent purity supports a mass conversion. The listed\
+    \ 930 + 40 + 30 mL is not a measured final volume.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"Retain the literal volume input; no density or reagent\
+    \ purity supports a mass conversion. The listed 930 + 40 + 30 mL is not a measured\
+    \ final volume.\"\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"ingredient_or_context\"\
+    : \"DSM631 Distilled water\",\n    \"field_path\": \"preparation_steps\",\n  \
+    \  \"local\": null,\n    \"source_amount\": 930,\n    \"source_unit\": \"ml\"\
+    ,\n    \"source_stage\": \"DSM631 liquid basal formulation\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz631\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz631\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium631.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table\",\n        \"exact_source_quote\"\
+    : \"Distilled water 930.0 ml\",\n        \"snapshot_sha256\": \"9c9ed19c0e7b7311da957e76ba368669bce269d5a2bfb6bf732a26e7c0c47eba\"\
+    ,\n        \"parsed_text_sha256\": \"37a5b8a40cebad58ac326c7b7e101f686e7643c34cd3f72d6e86048be8500a6e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive631historical\",\n   \
+    \     \"source_url\": \"https://mediadive.dsmz.de/rest/medium/631\",\n       \
+    \ \"source_locator\": \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 6,\\n                  \
+    \      \\\"compound\\\": \\\"Distilled water\\\",\\n                        \\\
+    \"compound_id\\\": 4,\\n                        \\\"amount\\\": 930,\\n      \
+    \                  \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Record the 930\
+    \ mL water input within the DSM631 preparation, preserving the existing DSM procedure.\
+    \ No water concentration is inferred.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Record the 930 mL water\
+    \ input within the DSM631 preparation, preserving the existing DSM procedure.\
+    \ No water concentration is inferred.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml\",\n    \
+    \    \"field_path\": \"preparation_steps\",\n        \"stored\": [\n         \
+    \ {\n            \"step_number\": 1,\n            \"action\": \"FILTER_STERILIZE\"\
+    ,\n            \"description\": \"The ethanol and acetic acid are sterilized separately\
+    \ by filtration (use filter resistant to these solvents), and added aseptically\
+    \ to the sterile medium. Acetobacter europaeus will not grow on plates containing\
+    \ 1-2% agar, and a double layer system has to be used. A layer of growth medium\
+    \ containing 0.5% agar (about 35 ml) is poured into a plate and allowed to solidify.\
+    \ A thin layer (5-10 ml) of the growth medium containing 1% agar is then poured\
+    \ on top. Carefully streak the plates, which are best incubated in closed containers\
+    \ (e.g. plastic boxes) at 30°C.\"\n          }\n        ],\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"Record the 930 mL water input within the\
+    \ DSM631 preparation, preserving the existing DSM procedure. No water concentration\
+    \ is inferred.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"Record the\
+    \ 930 mL water input within the DSM631 preparation, preserving the existing DSM\
+    \ procedure. No water concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q7\",\n    \"ingredient_or_context\": \"DSM1522 Yeast extract\",\n    \"field_path\"\
+    : \"ingredients[0].concentration\",\n    \"local\": {\n      \"value\": \"8\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": 8,\n    \"source_unit\"\
+    : \"g\",\n    \"source_stage\": \"DSM1522 liquid formulation\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz1522\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz1522\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1522.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 table\",\n        \"exact_source_quote\": \"Yeast\
+    \ extract 8.0 g\",\n        \"snapshot_sha256\": \"3c27612161e5e4d88aef14583b5d2b9ca189ed80301414345ca30d7990e2ff38\"\
+    ,\n        \"parsed_text_sha256\": \"027deeba98ed41b5545443540fa98a8b365c5ee5e58c00447af3738a2d286f6d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"8\",\n          \"unit\": \"G_PER_L\"\n        },\n       \
+    \ \"decision\": \"unsupported\",\n        \"rationale\": \"Primary batch mass\
+    \ agrees numerically, but the attached provider G_PER_L claim has only derivative\
+    \ correspondence. The primary water and liquid sums do not independently establish\
+    \ a measured final litre; retain the unverified denominator.\"\n      }\n    ],\n\
+    \    \"arithmetic_and_scope\": \"Primary batch mass agrees numerically, but the\
+    \ attached provider G_PER_L claim has only derivative correspondence. The primary\
+    \ water and liquid sums do not independently establish a measured final litre;\
+    \ retain the unverified denominator.\"\n  },\n  {\n    \"quantity_id\": \"q8\"\
+    ,\n    \"ingredient_or_context\": \"DSM1522 Peptone\",\n    \"field_path\": \"\
+    ingredients[1].concentration\",\n    \"local\": {\n      \"value\": \"15\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": 15,\n    \"source_unit\"\
+    : \"g\",\n    \"source_stage\": \"DSM1522 liquid formulation\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz1522\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz1522\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1522.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 table\",\n        \"exact_source_quote\": \"Peptone\
+    \ 15.0 g\",\n        \"snapshot_sha256\": \"3c27612161e5e4d88aef14583b5d2b9ca189ed80301414345ca30d7990e2ff38\"\
+    ,\n        \"parsed_text_sha256\": \"027deeba98ed41b5545443540fa98a8b365c5ee5e58c00447af3738a2d286f6d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n      \
+    \  \"decision\": \"unsupported\",\n        \"rationale\": \"Primary batch mass\
+    \ agrees numerically, but the attached provider G_PER_L claim has only derivative\
+    \ correspondence. The primary water and liquid sums do not independently establish\
+    \ a measured final litre; retain the unverified denominator.\"\n      }\n    ],\n\
+    \    \"arithmetic_and_scope\": \"Primary batch mass agrees numerically, but the\
+    \ attached provider G_PER_L claim has only derivative correspondence. The primary\
+    \ water and liquid sums do not independently establish a measured final litre;\
+    \ retain the unverified denominator.\"\n  },\n  {\n    \"quantity_id\": \"q9\"\
+    ,\n    \"ingredient_or_context\": \"DSM1522 Glucose\",\n    \"field_path\": \"\
+    ingredients[2].concentration\",\n    \"local\": {\n      \"value\": \"10\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": 10,\n    \"source_unit\"\
+    : \"g\",\n    \"source_stage\": \"DSM1522 liquid formulation\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz1522\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz1522\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1522.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 table\",\n        \"exact_source_quote\": \"Glucose\
+    \ 10.0 g\",\n        \"snapshot_sha256\": \"3c27612161e5e4d88aef14583b5d2b9ca189ed80301414345ca30d7990e2ff38\"\
+    ,\n        \"parsed_text_sha256\": \"027deeba98ed41b5545443540fa98a8b365c5ee5e58c00447af3738a2d286f6d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n      \
+    \  \"decision\": \"unsupported\",\n        \"rationale\": \"Primary batch mass\
+    \ agrees numerically, but the attached provider G_PER_L claim has only derivative\
+    \ correspondence. The primary water and liquid sums do not independently establish\
+    \ a measured final litre; retain the unverified denominator.\"\n      }\n    ],\n\
+    \    \"arithmetic_and_scope\": \"Primary batch mass agrees numerically, but the\
+    \ attached provider G_PER_L claim has only derivative correspondence. The primary\
+    \ water and liquid sums do not independently establish a measured final litre;\
+    \ retain the unverified denominator.\"\n  },\n  {\n    \"quantity_id\": \"q10\"\
+    ,\n    \"ingredient_or_context\": \"DSM1522 Acetic acid\",\n    \"field_path\"\
+    : \"ingredients[3].concentration\",\n    \"local\": {\n      \"value\": \"3\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": 3,\n    \"source_unit\"\
+    : \"ml\",\n    \"source_stage\": \"DSM1522 liquid formulation\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz1522\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz1522\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1522.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table\",\n        \"exact_source_quote\"\
+    : \"Acetic acid 3.0 ml\",\n        \"snapshot_sha256\": \"3c27612161e5e4d88aef14583b5d2b9ca189ed80301414345ca30d7990e2ff38\"\
+    ,\n        \"parsed_text_sha256\": \"027deeba98ed41b5545443540fa98a8b365c5ee5e58c00447af3738a2d286f6d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n       \
+    \ \"decision\": \"correct\",\n        \"rationale\": \"Preserve this DSM1522-specific\
+    \ volume input without mass conversion or transfer to DSM631/J96. Its table lists\
+    \ 992 + 3 + 5 mL, not a measured final litre.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Preserve this DSM1522-specific volume input without mass conversion or transfer\
+    \ to DSM631/J96. Its table lists 992 + 3 + 5 mL, not a measured final litre.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"ingredient_or_context\": \"\
+    DSM1522 Ethanol\",\n    \"field_path\": \"ingredients[4].concentration\",\n  \
+    \  \"local\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 5,\n    \"source_unit\": \"ml\",\n    \"source_stage\"\
+    : \"DSM1522 liquid formulation\",\n    \"primary_source_evidence_id\": \"dsmz1522\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"dsmz1522\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1522.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table\",\n        \"exact_source_quote\"\
+    : \"Ethanol 5.0 ml\",\n        \"snapshot_sha256\": \"3c27612161e5e4d88aef14583b5d2b9ca189ed80301414345ca30d7990e2ff38\"\
+    ,\n        \"parsed_text_sha256\": \"027deeba98ed41b5545443540fa98a8b365c5ee5e58c00447af3738a2d286f6d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n       \
+    \ \"decision\": \"correct\",\n        \"rationale\": \"Preserve this DSM1522-specific\
+    \ volume input without mass conversion or transfer to DSM631/J96. Its table lists\
+    \ 992 + 3 + 5 mL, not a measured final litre.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Preserve this DSM1522-specific volume input without mass conversion or transfer\
+    \ to DSM631/J96. Its table lists 992 + 3 + 5 mL, not a measured final litre.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"ingredient_or_context\": \"\
+    DSM1522 Distilled water\",\n    \"field_path\": \"preparation_steps\",\n    \"\
+    local\": [\n      {\n        \"step_number\": 1,\n        \"action\": \"FILTER_STERILIZE\"\
+    ,\n        \"description\": \"The ethanol and acetic acid are sterilized separately\
+    \ by filtration (use filter resistant to these solvents), and added aseptically\
+    \ to the sterile medium.\"\n      },\n      {\n        \"step_number\": 2,\n \
+    \       \"action\": \"ADJUST_PH\",\n        \"description\": \"Adjust pH to 3,5\
+    \ with concentrated HCl after autoclaving.\"\n      }\n    ],\n    \"source_amount\"\
+    : 992,\n    \"source_unit\": \"ml\",\n    \"source_stage\": \"DSM1522 liquid formulation\"\
+    ,\n    \"primary_source_evidence_id\": \"dsmz1522\",\n    \"decision\": \"add\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1522\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1522.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table\",\n        \"exact_source_quote\"\
+    : \"Distilled water 992.0 ml\",\n        \"snapshot_sha256\": \"3c27612161e5e4d88aef14583b5d2b9ca189ed80301414345ca30d7990e2ff38\"\
+    ,\n        \"parsed_text_sha256\": \"027deeba98ed41b5545443540fa98a8b365c5ee5e58c00447af3738a2d286f6d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml\",\n        \"\
+    field_path\": \"preparation_steps\",\n        \"stored\": [\n          {\n   \
+    \         \"step_number\": 1,\n            \"action\": \"FILTER_STERILIZE\",\n\
+    \            \"description\": \"The ethanol and acetic acid are sterilized separately\
+    \ by filtration (use filter resistant to these solvents), and added aseptically\
+    \ to the sterile medium.\"\n          },\n          {\n            \"step_number\"\
+    : 2,\n            \"action\": \"ADJUST_PH\",\n            \"description\": \"\
+    Adjust pH to 3,5 with concentrated HCl after autoclaving.\"\n          }\n   \
+    \     ],\n        \"decision\": \"add\",\n        \"rationale\": \"Preserve this\
+    \ DSM1522-specific volume input without mass conversion or transfer to DSM631/J96.\
+    \ Its table lists 992 + 3 + 5 mL, not a measured final litre.\"\n      }\n   \
+    \ ],\n    \"arithmetic_and_scope\": \"Preserve this DSM1522-specific volume input\
+    \ without mass conversion or transfer to DSM631/J96. Its table lists 992 + 3 +\
+    \ 5 mL, not a measured final litre.\"\n  },\n  {\n    \"quantity_id\": \"q13\"\
+    ,\n    \"ingredient_or_context\": \"J96 Glucose\",\n    \"field_path\": \"ingredients[0].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"15.2284\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_amount\": 15,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"J96 AE BROTH provider formulation\",\n    \"primary_source_evidence_id\":\
+    \ \"mediadiveJ96api\",\n    \"decision\": \"verified\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ96api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J96\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Glucose\\\",\\n                        \\\"compound_id\\\":\
+    \ 5,\\n                        \\\"amount\\\": 15,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 15.2284,\\n    \
+    \                    \\\"mmol_l\\\": 84.5272,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2c8a0d7cb2e7c66f98ab5962d69be8bffe5b038cbf61e38fd125e753cd70f170\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ96api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J96\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].volume\",\n        \"exact_source_quote\": \"\\\"volume\\\
+    \": 985\",\n        \"snapshot_sha256\": \"2c8a0d7cb2e7c66f98ab5962d69be8bffe5b038cbf61e38fd125e753cd70f170\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/ae_broth.yaml\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"15.2284\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"verified\",\n        \"rationale\"\
+    : \"Provider declares 985 mL: amount / 0.985 gives the stored g_l within provider\
+    \ rounding (15.2284, 2.03046, 3.04569). Existing owner snippets and response hash\
+    \ match. This is a provider-declared concentration, not a measured final volume\
+    \ or recovered JCM primary.\"\n      }\n    ],\n    \"arithmetic_and_scope\":\
+    \ \"Provider declares 985 mL: amount / 0.985 gives the stored g_l within provider\
+    \ rounding (15.2284, 2.03046, 3.04569). Existing owner snippets and response hash\
+    \ match. This is a provider-declared concentration, not a measured final volume\
+    \ or recovered JCM primary.\"\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"\
+    ingredient_or_context\": \"J96 Yeast extract\",\n    \"field_path\": \"ingredients[1].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"2.03046\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_amount\": 2,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"J96 AE BROTH provider formulation\",\n    \"primary_source_evidence_id\":\
+    \ \"mediadiveJ96api\",\n    \"decision\": \"verified\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ96api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J96\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 2,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2.03046,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"2c8a0d7cb2e7c66f98ab5962d69be8bffe5b038cbf61e38fd125e753cd70f170\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ96api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J96\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].volume\",\n        \"exact_source_quote\": \"\\\"volume\\\
+    \": 985\",\n        \"snapshot_sha256\": \"2c8a0d7cb2e7c66f98ab5962d69be8bffe5b038cbf61e38fd125e753cd70f170\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/ae_broth.yaml\",\n        \"field_path\": \"ingredients[1].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"2.03046\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"verified\",\n        \"rationale\"\
+    : \"Provider declares 985 mL: amount / 0.985 gives the stored g_l within provider\
+    \ rounding (15.2284, 2.03046, 3.04569). Existing owner snippets and response hash\
+    \ match. This is a provider-declared concentration, not a measured final volume\
+    \ or recovered JCM primary.\"\n      }\n    ],\n    \"arithmetic_and_scope\":\
+    \ \"Provider declares 985 mL: amount / 0.985 gives the stored g_l within provider\
+    \ rounding (15.2284, 2.03046, 3.04569). Existing owner snippets and response hash\
+    \ match. This is a provider-declared concentration, not a measured final volume\
+    \ or recovered JCM primary.\"\n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"\
+    ingredient_or_context\": \"J96 Peptone\",\n    \"field_path\": \"ingredients[2].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"3.04569\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_amount\": 3,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"J96 AE BROTH provider formulation\",\n    \"primary_source_evidence_id\":\
+    \ \"mediadiveJ96api\",\n    \"decision\": \"verified\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ96api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J96\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"Peptone\\\",\\n                        \\\"compound_id\\\":\
+    \ 1,\\n                        \\\"amount\\\": 3,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 3.04569,\\n    \
+    \                    \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"2c8a0d7cb2e7c66f98ab5962d69be8bffe5b038cbf61e38fd125e753cd70f170\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ96api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J96\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].volume\",\n        \"exact_source_quote\": \"\\\"volume\\\
+    \": 985\",\n        \"snapshot_sha256\": \"2c8a0d7cb2e7c66f98ab5962d69be8bffe5b038cbf61e38fd125e753cd70f170\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/ae_broth.yaml\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"3.04569\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"verified\",\n        \"rationale\"\
+    : \"Provider declares 985 mL: amount / 0.985 gives the stored g_l within provider\
+    \ rounding (15.2284, 2.03046, 3.04569). Existing owner snippets and response hash\
+    \ match. This is a provider-declared concentration, not a measured final volume\
+    \ or recovered JCM primary.\"\n      }\n    ],\n    \"arithmetic_and_scope\":\
+    \ \"Provider declares 985 mL: amount / 0.985 gives the stored g_l within provider\
+    \ rounding (15.2284, 2.03046, 3.04569). Existing owner snippets and response hash\
+    \ match. This is a provider-declared concentration, not a measured final volume\
+    \ or recovered JCM primary.\"\n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"\
+    ingredient_or_context\": \"J96 Acetic acid\",\n    \"field_path\": \"ingredients[3].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"65\",\n      \"unit\": \"G_PER_L\"\n \
+    \   },\n    \"source_amount\": 65,\n    \"source_unit\": \"ml\",\n    \"source_stage\"\
+    : \"J96 AE BROTH provider formulation\",\n    \"primary_source_evidence_id\":\
+    \ \"mediadiveJ96api\",\n    \"decision\": \"correct\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ96api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J96\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"Acetic acid\\\",\\n                        \\\"compound_id\\\
+    \": 380,\\n                        \\\"amount\\\": 65,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"2c8a0d7cb2e7c66f98ab5962d69be8bffe5b038cbf61e38fd125e753cd70f170\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/ae_broth.yaml\",\n        \"field_path\": \"ingredients[3].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"65\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\",\n        \"rationale\"\
+    : \"This source-specific liquid input remains mL; neither g/L nor measured final\
+    \ volume follows. Do not substitute DSM631 or DSM1522 amounts.\"\n      }\n  \
+    \  ],\n    \"arithmetic_and_scope\": \"This source-specific liquid input remains\
+    \ mL; neither g/L nor measured final volume follows. Do not substitute DSM631\
+    \ or DSM1522 amounts.\"\n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"ingredient_or_context\"\
+    : \"J96 Ethanol\",\n    \"field_path\": \"ingredients[4].concentration\",\n  \
+    \  \"local\": {\n      \"value\": \"20\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 20,\n    \"source_unit\": \"ml\",\n    \"source_stage\"\
+    : \"J96 AE BROTH provider formulation\",\n    \"primary_source_evidence_id\":\
+    \ \"mediadiveJ96api\",\n    \"decision\": \"correct\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ96api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J96\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"Ethanol\\\",\\n                        \\\"compound_id\\\":\
+    \ 201,\\n                        \\\"amount\\\": 20,\\n                      \
+    \  \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\n\
+    \                    }\",\n        \"snapshot_sha256\": \"2c8a0d7cb2e7c66f98ab5962d69be8bffe5b038cbf61e38fd125e753cd70f170\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/ae_broth.yaml\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"20\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\",\n        \"rationale\"\
+    : \"This source-specific liquid input remains mL; neither g/L nor measured final\
+    \ volume follows. Do not substitute DSM631 or DSM1522 amounts.\"\n      }\n  \
+    \  ],\n    \"arithmetic_and_scope\": \"This source-specific liquid input remains\
+    \ mL; neither g/L nor measured final volume follows. Do not substitute DSM631\
+    \ or DSM1522 amounts.\"\n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"ingredient_or_context\"\
+    : \"J96 Distilled water\",\n    \"field_path\": \"preparation_steps\",\n    \"\
+    local\": [\n      {\n        \"step_number\": 1,\n        \"action\": \"AUTOCLAVE\"\
+    ,\n        \"description\": \"Mix ingredients, except acetic acid and ethanol,\
+    \ and autoclave. Aseptically add acetic acid and ethanol to the medium. Unadjusted\
+    \ pH will be about 2.9.\"\n      }\n    ],\n    \"source_amount\": 900,\n    \"\
+    source_unit\": \"ml\",\n    \"source_stage\": \"J96 AE BROTH provider formulation\"\
+    ,\n    \"primary_source_evidence_id\": \"mediadiveJ96api\",\n    \"decision\"\
+    : \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadiveJ96api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J96\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 6,\\n                  \
+    \      \\\"compound\\\": \\\"Distilled water\\\",\\n                        \\\
+    \"compound_id\\\": 4,\\n                        \\\"amount\\\": 900,\\n      \
+    \                  \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2c8a0d7cb2e7c66f98ab5962d69be8bffe5b038cbf61e38fd125e753cd70f170\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/ae_broth.yaml\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": [\n          {\n            \"step_number\": 1,\n     \
+    \       \"action\": \"AUTOCLAVE\",\n            \"description\": \"Mix ingredients,\
+    \ except acetic acid and ethanol, and autoclave. Aseptically add acetic acid and\
+    \ ethanol to the medium. Unadjusted pH will be about 2.9.\"\n          }\n   \
+    \     ],\n        \"decision\": \"add\",\n        \"rationale\": \"This source-specific\
+    \ liquid input remains mL; neither g/L nor measured final volume follows. Do not\
+    \ substitute DSM631 or DSM1522 amounts.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"This source-specific liquid input remains mL; neither g/L nor measured final\
+    \ volume follows. Do not substitute DSM631 or DSM1522 amounts.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q19\",\n    \"ingredient_or_context\": \"mediadive631historical\
+    \ declared recipe volume\",\n    \"field_path\": \"preparation_steps\",\n    \"\
+    local\": null,\n    \"source_amount\": 1000,\n    \"source_unit\": \"ml declared\
+    \ recipe volume\",\n    \"source_stage\": \"Provider normalization basis\",\n\
+    \    \"primary_source_evidence_id\": \"mediadive631historical\",\n    \"decision\"\
+    : \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive631historical\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/631\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].volume\",\n        \"exact_source_quote\"\
+    : \"\\\"volume\\\": 1000\",\n        \"snapshot_sha256\": \"e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"This is the\
+    \ explicit provider recipe-volume declaration; retain its provenance and distinguish\
+    \ it from water input, listed-volume sum and measured final physical volume.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"This is the explicit\
+    \ provider recipe-volume declaration; retain its provenance and distinguish it\
+    \ from water input, listed-volume sum and measured final physical volume.\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"FILTER_STERILIZE\"\
+    ,\n            \"description\": \"The ethanol and acetic acid are sterilized separately\
+    \ by filtration (use filter resistant to these solvents), and added aseptically\
+    \ to the sterile medium. Acetobacter europaeus will not grow on plates containing\
+    \ 1-2% agar, and a double layer system has to be used. A layer of growth medium\
+    \ containing 0.5% agar (about 35 ml) is poured into a plate and allowed to solidify.\
+    \ A thin layer (5-10 ml) of the growth medium containing 1% agar is then poured\
+    \ on top. Carefully streak the plates, which are best incubated in closed containers\
+    \ (e.g. plastic boxes) at 30°C.\"\n          }\n        ],\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"This is the explicit provider recipe-volume\
+    \ declaration; retain its provenance and distinguish it from water input, listed-volume\
+    \ sum and measured final physical volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"This is the explicit provider recipe-volume declaration; retain its provenance\
+    \ and distinguish it from water input, listed-volume sum and measured final physical\
+    \ volume.\"\n  },\n  {\n    \"quantity_id\": \"q20\",\n    \"ingredient_or_context\"\
+    : \"mediadiveJ96api declared recipe volume\",\n    \"field_path\": \"preparation_steps\"\
+    ,\n    \"local\": [\n      {\n        \"step_number\": 1,\n        \"action\"\
+    : \"AUTOCLAVE\",\n        \"description\": \"Mix ingredients, except acetic acid\
+    \ and ethanol, and autoclave. Aseptically add acetic acid and ethanol to the medium.\
+    \ Unadjusted pH will be about 2.9.\"\n      }\n    ],\n    \"source_amount\":\
+    \ 985,\n    \"source_unit\": \"ml declared recipe volume\",\n    \"source_stage\"\
+    : \"Provider normalization basis\",\n    \"primary_source_evidence_id\": \"mediadiveJ96api\"\
+    ,\n    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadiveJ96api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J96\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].volume\",\n        \"exact_source_quote\"\
+    : \"\\\"volume\\\": 985\",\n        \"snapshot_sha256\": \"2c8a0d7cb2e7c66f98ab5962d69be8bffe5b038cbf61e38fd125e753cd70f170\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/ae_broth.yaml\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": [\n          {\n            \"step_number\": 1,\n     \
+    \       \"action\": \"AUTOCLAVE\",\n            \"description\": \"Mix ingredients,\
+    \ except acetic acid and ethanol, and autoclave. Aseptically add acetic acid and\
+    \ ethanol to the medium. Unadjusted pH will be about 2.9.\"\n          }\n   \
+    \     ],\n        \"decision\": \"add\",\n        \"rationale\": \"This is the\
+    \ explicit provider recipe-volume declaration; retain its provenance and distinguish\
+    \ it from water input, listed-volume sum and measured final physical volume.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"This is the explicit provider\
+    \ recipe-volume declaration; retain its provenance and distinguish it from water\
+    \ input, listed-volume sum and measured final physical volume.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q21\",\n    \"ingredient_or_context\": \"dsmz631 measured\
+    \ final volume\",\n    \"field_path\": \"preparation_steps\",\n    \"local\":\
+    \ null,\n    \"source_amount\": null,\n    \"source_unit\": \"not established\"\
+    ,\n    \"source_stage\": \"Whole formulation\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz631\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz631\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium631.pdf\"\
+    ,\n        \"source_locator\": \"Table water row or provider volume declaration\"\
+    ,\n        \"exact_source_quote\": \"Distilled water 930.0 ml\",\n        \"snapshot_sha256\"\
+    : \"9c9ed19c0e7b7311da957e76ba368669bce269d5a2bfb6bf732a26e7c0c47eba\",\n    \
+    \    \"parsed_text_sha256\": \"37a5b8a40cebad58ac326c7b7e101f686e7643c34cd3f72d6e86048be8500a6e\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"unsupported\",\n        \"rationale\": \"Measured\
+    \ final volume is not established by this source. Retain batch inputs and any\
+    \ explicit provider denominator separately; do not infer physical final volume\
+    \ from a sum of listed liquids.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"Measured final\
+    \ volume is not established by this source. Retain batch inputs and any explicit\
+    \ provider denominator separately; do not infer physical final volume from a sum\
+    \ of listed liquids.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"FILTER_STERILIZE\"\
+    ,\n            \"description\": \"The ethanol and acetic acid are sterilized separately\
+    \ by filtration (use filter resistant to these solvents), and added aseptically\
+    \ to the sterile medium. Acetobacter europaeus will not grow on plates containing\
+    \ 1-2% agar, and a double layer system has to be used. A layer of growth medium\
+    \ containing 0.5% agar (about 35 ml) is poured into a plate and allowed to solidify.\
+    \ A thin layer (5-10 ml) of the growth medium containing 1% agar is then poured\
+    \ on top. Carefully streak the plates, which are best incubated in closed containers\
+    \ (e.g. plastic boxes) at 30°C.\"\n          }\n        ],\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"Measured final volume is not established\
+    \ by this source. Retain batch inputs and any explicit provider denominator separately;\
+    \ do not infer physical final volume from a sum of listed liquids.\"\n      }\n\
+    \    ],\n    \"arithmetic_and_scope\": \"Measured final volume is not established\
+    \ by this source. Retain batch inputs and any explicit provider denominator separately;\
+    \ do not infer physical final volume from a sum of listed liquids.\"\n  },\n \
+    \ {\n    \"quantity_id\": \"q22\",\n    \"ingredient_or_context\": \"dsmz1522\
+    \ measured final volume\",\n    \"field_path\": \"preparation_steps\",\n    \"\
+    local\": [\n      {\n        \"step_number\": 1,\n        \"action\": \"FILTER_STERILIZE\"\
+    ,\n        \"description\": \"The ethanol and acetic acid are sterilized separately\
+    \ by filtration (use filter resistant to these solvents), and added aseptically\
+    \ to the sterile medium.\"\n      },\n      {\n        \"step_number\": 2,\n \
+    \       \"action\": \"ADJUST_PH\",\n        \"description\": \"Adjust pH to 3,5\
+    \ with concentrated HCl after autoclaving.\"\n      }\n    ],\n    \"source_amount\"\
+    : null,\n    \"source_unit\": \"not established\",\n    \"source_stage\": \"Whole\
+    \ formulation\",\n    \"primary_source_evidence_id\": \"dsmz1522\",\n    \"decision\"\
+    : \"unsupported\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1522\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1522.pdf\"\
+    ,\n        \"source_locator\": \"Table water row or provider volume declaration\"\
+    ,\n        \"exact_source_quote\": \"Distilled water 992.0 ml\",\n        \"snapshot_sha256\"\
+    : \"3c27612161e5e4d88aef14583b5d2b9ca189ed80301414345ca30d7990e2ff38\",\n    \
+    \    \"parsed_text_sha256\": \"027deeba98ed41b5545443540fa98a8b365c5ee5e58c00447af3738a2d286f6d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml\",\n        \"\
+    field_path\": \"preparation_steps\",\n        \"stored\": [\n          {\n   \
+    \         \"step_number\": 1,\n            \"action\": \"FILTER_STERILIZE\",\n\
+    \            \"description\": \"The ethanol and acetic acid are sterilized separately\
+    \ by filtration (use filter resistant to these solvents), and added aseptically\
+    \ to the sterile medium.\"\n          },\n          {\n            \"step_number\"\
+    : 2,\n            \"action\": \"ADJUST_PH\",\n            \"description\": \"\
+    Adjust pH to 3,5 with concentrated HCl after autoclaving.\"\n          }\n   \
+    \     ],\n        \"decision\": \"unsupported\",\n        \"rationale\": \"Measured\
+    \ final volume is not established by this source. Retain batch inputs and any\
+    \ explicit provider denominator separately; do not infer physical final volume\
+    \ from a sum of listed liquids.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Measured final volume is not established by this source. Retain batch inputs\
+    \ and any explicit provider denominator separately; do not infer physical final\
+    \ volume from a sum of listed liquids.\"\n  },\n  {\n    \"quantity_id\": \"q23\"\
+    ,\n    \"ingredient_or_context\": \"mediadiveJ96api measured final volume\",\n\
+    \    \"field_path\": \"preparation_steps\",\n    \"local\": [\n      {\n     \
+    \   \"step_number\": 1,\n        \"action\": \"AUTOCLAVE\",\n        \"description\"\
+    : \"Mix ingredients, except acetic acid and ethanol, and autoclave. Aseptically\
+    \ add acetic acid and ethanol to the medium. Unadjusted pH will be about 2.9.\"\
+    \n      }\n    ],\n    \"source_amount\": null,\n    \"source_unit\": \"not established\"\
+    ,\n    \"source_stage\": \"Whole formulation\",\n    \"primary_source_evidence_id\"\
+    : \"mediadiveJ96api\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ96api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J96\",\n        \"source_locator\":\
+    \ \"Table water row or provider volume declaration\",\n        \"exact_source_quote\"\
+    : \"\\\"volume\\\": 985\",\n        \"snapshot_sha256\": \"2c8a0d7cb2e7c66f98ab5962d69be8bffe5b038cbf61e38fd125e753cd70f170\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/ae_broth.yaml\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": [\n          {\n            \"step_number\": 1,\n     \
+    \       \"action\": \"AUTOCLAVE\",\n            \"description\": \"Mix ingredients,\
+    \ except acetic acid and ethanol, and autoclave. Aseptically add acetic acid and\
+    \ ethanol to the medium. Unadjusted pH will be about 2.9.\"\n          }\n   \
+    \     ],\n        \"decision\": \"unsupported\",\n        \"rationale\": \"Measured\
+    \ final volume is not established by this source. Retain batch inputs and any\
+    \ explicit provider denominator separately; do not infer physical final volume\
+    \ from a sum of listed liquids.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Measured final volume is not established by this source. Retain batch inputs\
+    \ and any explicit provider denominator separately; do not infer physical final\
+    \ volume from a sum of listed liquids.\"\n  },\n  {\n    \"quantity_id\": \"q24\"\
+    ,\n    \"ingredient_or_context\": \"DSM631 Plate limitation\",\n    \"field_path\"\
+    : \"preparation_steps[0].description\",\n    \"local\": \"The ethanol and acetic\
+    \ acid are sterilized separately by filtration (use filter resistant to these\
+    \ solvents), and added aseptically to the sterile medium. Acetobacter europaeus\
+    \ will not grow on plates containing 1-2% agar, and a double layer system has\
+    \ to be used. A layer of growth medium containing 0.5% agar (about 35 ml) is poured\
+    \ into a plate and allowed to solidify. A thin layer (5-10 ml) of the growth medium\
+    \ containing 1% agar is then poured on top. Carefully streak the plates, which\
+    \ are best incubated in closed containers (e.g. plastic boxes) at 30°C.\",\n \
+    \   \"source_amount\": \"1-2\",\n    \"source_unit\": \"% agar\",\n    \"source_stage\"\
+    : \"Separate DSM631 double-layer plate procedure\",\n    \"primary_source_evidence_id\"\
+    : \"mediadive631historical\",\n    \"decision\": \"correct\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive631historical\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/631\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].steps[0].step\",\n        \"exact_source_quote\": \"plates\
+    \ containing 1-2% agar\",\n        \"snapshot_sha256\": \"e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml\",\n        \"\
+    field_path\": \"preparation_steps[0].description\",\n        \"stored\": \"The\
+    \ ethanol and acetic acid are sterilized separately by filtration (use filter\
+    \ resistant to these solvents), and added aseptically to the sterile medium. Acetobacter\
+    \ europaeus will not grow on plates containing 1-2% agar, and a double layer system\
+    \ has to be used. A layer of growth medium containing 0.5% agar (about 35 ml)\
+    \ is poured into a plate and allowed to solidify. A thin layer (5-10 ml) of the\
+    \ growth medium containing 1% agar is then poured on top. Carefully streak the\
+    \ plates, which are best incubated in closed containers (e.g. plastic boxes) at\
+    \ 30°C.\",\n        \"decision\": \"correct\",\n        \"rationale\": \"The DSM631\
+    \ owner retains this source-specific plate procedure inside the liquid recipe.\
+    \ Preserve the literal quantity but scope it to the separate double-layer plate\
+    \ branch. Percent basis is not explicitly supplied; no mass or generic growth\
+    \ assertion is inferred.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    The DSM631 owner retains this source-specific plate procedure inside the liquid\
+    \ recipe. Preserve the literal quantity but scope it to the separate double-layer\
+    \ plate branch. Percent basis is not explicitly supplied; no mass or generic growth\
+    \ assertion is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q25\",\n    \"ingredient_or_context\"\
+    : \"DSM631 Lower layer agar\",\n    \"field_path\": \"preparation_steps[0].description\"\
+    ,\n    \"local\": \"The ethanol and acetic acid are sterilized separately by filtration\
+    \ (use filter resistant to these solvents), and added aseptically to the sterile\
+    \ medium. Acetobacter europaeus will not grow on plates containing 1-2% agar,\
+    \ and a double layer system has to be used. A layer of growth medium containing\
+    \ 0.5% agar (about 35 ml) is poured into a plate and allowed to solidify. A thin\
+    \ layer (5-10 ml) of the growth medium containing 1% agar is then poured on top.\
+    \ Carefully streak the plates, which are best incubated in closed containers (e.g.\
+    \ plastic boxes) at 30°C.\",\n    \"source_amount\": 0.5,\n    \"source_unit\"\
+    : \"% agar\",\n    \"source_stage\": \"Separate DSM631 double-layer plate procedure\"\
+    ,\n    \"primary_source_evidence_id\": \"mediadive631historical\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive631historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/631\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].steps[0].step\",\n      \
+    \  \"exact_source_quote\": \"0.5% agar (about 35 ml)\",\n        \"snapshot_sha256\"\
+    : \"e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"The ethanol and acetic acid are sterilized separately by filtration (use filter\
+    \ resistant to these solvents), and added aseptically to the sterile medium. Acetobacter\
+    \ europaeus will not grow on plates containing 1-2% agar, and a double layer system\
+    \ has to be used. A layer of growth medium containing 0.5% agar (about 35 ml)\
+    \ is poured into a plate and allowed to solidify. A thin layer (5-10 ml) of the\
+    \ growth medium containing 1% agar is then poured on top. Carefully streak the\
+    \ plates, which are best incubated in closed containers (e.g. plastic boxes) at\
+    \ 30°C.\",\n        \"decision\": \"correct\",\n        \"rationale\": \"The DSM631\
+    \ owner retains this source-specific plate procedure inside the liquid recipe.\
+    \ Preserve the literal quantity but scope it to the separate double-layer plate\
+    \ branch. Percent basis is not explicitly supplied; no mass or generic growth\
+    \ assertion is inferred.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    The DSM631 owner retains this source-specific plate procedure inside the liquid\
+    \ recipe. Preserve the literal quantity but scope it to the separate double-layer\
+    \ plate branch. Percent basis is not explicitly supplied; no mass or generic growth\
+    \ assertion is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"ingredient_or_context\"\
+    : \"DSM631 Lower layer volume\",\n    \"field_path\": \"preparation_steps[0].description\"\
+    ,\n    \"local\": \"The ethanol and acetic acid are sterilized separately by filtration\
+    \ (use filter resistant to these solvents), and added aseptically to the sterile\
+    \ medium. Acetobacter europaeus will not grow on plates containing 1-2% agar,\
+    \ and a double layer system has to be used. A layer of growth medium containing\
+    \ 0.5% agar (about 35 ml) is poured into a plate and allowed to solidify. A thin\
+    \ layer (5-10 ml) of the growth medium containing 1% agar is then poured on top.\
+    \ Carefully streak the plates, which are best incubated in closed containers (e.g.\
+    \ plastic boxes) at 30°C.\",\n    \"source_amount\": 35,\n    \"source_unit\"\
+    : \"ml approximately\",\n    \"source_stage\": \"Separate DSM631 double-layer\
+    \ plate procedure\",\n    \"primary_source_evidence_id\": \"mediadive631historical\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"mediadive631historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/631\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].steps[0].step\",\n      \
+    \  \"exact_source_quote\": \"0.5% agar (about 35 ml)\",\n        \"snapshot_sha256\"\
+    : \"e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"The ethanol and acetic acid are sterilized separately by filtration (use filter\
+    \ resistant to these solvents), and added aseptically to the sterile medium. Acetobacter\
+    \ europaeus will not grow on plates containing 1-2% agar, and a double layer system\
+    \ has to be used. A layer of growth medium containing 0.5% agar (about 35 ml)\
+    \ is poured into a plate and allowed to solidify. A thin layer (5-10 ml) of the\
+    \ growth medium containing 1% agar is then poured on top. Carefully streak the\
+    \ plates, which are best incubated in closed containers (e.g. plastic boxes) at\
+    \ 30°C.\",\n        \"decision\": \"correct\",\n        \"rationale\": \"The DSM631\
+    \ owner retains this source-specific plate procedure inside the liquid recipe.\
+    \ Preserve the literal quantity but scope it to the separate double-layer plate\
+    \ branch. Percent basis is not explicitly supplied; no mass or generic growth\
+    \ assertion is inferred.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    The DSM631 owner retains this source-specific plate procedure inside the liquid\
+    \ recipe. Preserve the literal quantity but scope it to the separate double-layer\
+    \ plate branch. Percent basis is not explicitly supplied; no mass or generic growth\
+    \ assertion is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q27\",\n    \"ingredient_or_context\"\
+    : \"DSM631 Upper layer volume\",\n    \"field_path\": \"preparation_steps[0].description\"\
+    ,\n    \"local\": \"The ethanol and acetic acid are sterilized separately by filtration\
+    \ (use filter resistant to these solvents), and added aseptically to the sterile\
+    \ medium. Acetobacter europaeus will not grow on plates containing 1-2% agar,\
+    \ and a double layer system has to be used. A layer of growth medium containing\
+    \ 0.5% agar (about 35 ml) is poured into a plate and allowed to solidify. A thin\
+    \ layer (5-10 ml) of the growth medium containing 1% agar is then poured on top.\
+    \ Carefully streak the plates, which are best incubated in closed containers (e.g.\
+    \ plastic boxes) at 30°C.\",\n    \"source_amount\": \"5-10\",\n    \"source_unit\"\
+    : \"ml\",\n    \"source_stage\": \"Separate DSM631 double-layer plate procedure\"\
+    ,\n    \"primary_source_evidence_id\": \"mediadive631historical\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive631historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/631\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].steps[0].step\",\n      \
+    \  \"exact_source_quote\": \"A thin layer (5-10 ml)\",\n        \"snapshot_sha256\"\
+    : \"e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"The ethanol and acetic acid are sterilized separately by filtration (use filter\
+    \ resistant to these solvents), and added aseptically to the sterile medium. Acetobacter\
+    \ europaeus will not grow on plates containing 1-2% agar, and a double layer system\
+    \ has to be used. A layer of growth medium containing 0.5% agar (about 35 ml)\
+    \ is poured into a plate and allowed to solidify. A thin layer (5-10 ml) of the\
+    \ growth medium containing 1% agar is then poured on top. Carefully streak the\
+    \ plates, which are best incubated in closed containers (e.g. plastic boxes) at\
+    \ 30°C.\",\n        \"decision\": \"correct\",\n        \"rationale\": \"The DSM631\
+    \ owner retains this source-specific plate procedure inside the liquid recipe.\
+    \ Preserve the literal quantity but scope it to the separate double-layer plate\
+    \ branch. Percent basis is not explicitly supplied; no mass or generic growth\
+    \ assertion is inferred.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    The DSM631 owner retains this source-specific plate procedure inside the liquid\
+    \ recipe. Preserve the literal quantity but scope it to the separate double-layer\
+    \ plate branch. Percent basis is not explicitly supplied; no mass or generic growth\
+    \ assertion is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q28\",\n    \"ingredient_or_context\"\
+    : \"DSM631 Upper layer agar\",\n    \"field_path\": \"preparation_steps[0].description\"\
+    ,\n    \"local\": \"The ethanol and acetic acid are sterilized separately by filtration\
+    \ (use filter resistant to these solvents), and added aseptically to the sterile\
+    \ medium. Acetobacter europaeus will not grow on plates containing 1-2% agar,\
+    \ and a double layer system has to be used. A layer of growth medium containing\
+    \ 0.5% agar (about 35 ml) is poured into a plate and allowed to solidify. A thin\
+    \ layer (5-10 ml) of the growth medium containing 1% agar is then poured on top.\
+    \ Carefully streak the plates, which are best incubated in closed containers (e.g.\
+    \ plastic boxes) at 30°C.\",\n    \"source_amount\": 1,\n    \"source_unit\":\
+    \ \"% agar\",\n    \"source_stage\": \"Separate DSM631 double-layer plate procedure\"\
+    ,\n    \"primary_source_evidence_id\": \"mediadive631historical\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive631historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/631\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].steps[0].step\",\n      \
+    \  \"exact_source_quote\": \"growth medium containing 1% agar\",\n        \"snapshot_sha256\"\
+    : \"e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"The ethanol and acetic acid are sterilized separately by filtration (use filter\
+    \ resistant to these solvents), and added aseptically to the sterile medium. Acetobacter\
+    \ europaeus will not grow on plates containing 1-2% agar, and a double layer system\
+    \ has to be used. A layer of growth medium containing 0.5% agar (about 35 ml)\
+    \ is poured into a plate and allowed to solidify. A thin layer (5-10 ml) of the\
+    \ growth medium containing 1% agar is then poured on top. Carefully streak the\
+    \ plates, which are best incubated in closed containers (e.g. plastic boxes) at\
+    \ 30°C.\",\n        \"decision\": \"correct\",\n        \"rationale\": \"The DSM631\
+    \ owner retains this source-specific plate procedure inside the liquid recipe.\
+    \ Preserve the literal quantity but scope it to the separate double-layer plate\
+    \ branch. Percent basis is not explicitly supplied; no mass or generic growth\
+    \ assertion is inferred.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    The DSM631 owner retains this source-specific plate procedure inside the liquid\
+    \ recipe. Preserve the literal quantity but scope it to the separate double-layer\
+    \ plate branch. Percent basis is not explicitly supplied; no mass or generic growth\
+    \ assertion is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q29\",\n    \"ingredient_or_context\"\
+    : \"DSM631 Plate incubation\",\n    \"field_path\": \"preparation_steps[0].description\"\
+    ,\n    \"local\": \"The ethanol and acetic acid are sterilized separately by filtration\
+    \ (use filter resistant to these solvents), and added aseptically to the sterile\
+    \ medium. Acetobacter europaeus will not grow on plates containing 1-2% agar,\
+    \ and a double layer system has to be used. A layer of growth medium containing\
+    \ 0.5% agar (about 35 ml) is poured into a plate and allowed to solidify. A thin\
+    \ layer (5-10 ml) of the growth medium containing 1% agar is then poured on top.\
+    \ Carefully streak the plates, which are best incubated in closed containers (e.g.\
+    \ plastic boxes) at 30°C.\",\n    \"source_amount\": 30,\n    \"source_unit\"\
+    : \"degrees C\",\n    \"source_stage\": \"Separate DSM631 double-layer plate procedure\"\
+    ,\n    \"primary_source_evidence_id\": \"mediadive631historical\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive631historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/631\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].steps[0].step\",\n      \
+    \  \"exact_source_quote\": \"at 30°C.\",\n        \"snapshot_sha256\": \"e3d5d9547bfb0f0f651c693f482cd3caff659b62dc485bc15de25e33721b0a89\"\
+    ,\n        \"parsed_text_sha256\": \"60f96708da4819b6269954e3e46cb70253051c6730cfb69f664765b1ea98bf28\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml\",\n        \"\
+    field_path\": \"preparation_steps[0].description\",\n        \"stored\": \"The\
+    \ ethanol and acetic acid are sterilized separately by filtration (use filter\
+    \ resistant to these solvents), and added aseptically to the sterile medium. Acetobacter\
+    \ europaeus will not grow on plates containing 1-2% agar, and a double layer system\
+    \ has to be used. A layer of growth medium containing 0.5% agar (about 35 ml)\
+    \ is poured into a plate and allowed to solidify. A thin layer (5-10 ml) of the\
+    \ growth medium containing 1% agar is then poured on top. Carefully streak the\
+    \ plates, which are best incubated in closed containers (e.g. plastic boxes) at\
+    \ 30°C.\",\n        \"decision\": \"correct\",\n        \"rationale\": \"The DSM631\
+    \ owner retains this source-specific plate procedure inside the liquid recipe.\
+    \ Preserve the literal quantity but scope it to the separate double-layer plate\
+    \ branch. Percent basis is not explicitly supplied; no mass or generic growth\
+    \ assertion is inferred.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    The DSM631 owner retains this source-specific plate procedure inside the liquid\
+    \ recipe. Preserve the literal quantity but scope it to the separate double-layer\
+    \ plate branch. Percent basis is not explicitly supplied; no mass or generic growth\
+    \ assertion is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q30\",\n    \"ingredient_or_context\"\
+    : \"DSM1522 pH\",\n    \"field_path\": \"ph_value\",\n    \"local\": 3.5,\n  \
+    \  \"source_amount\": 3.5,\n    \"source_unit\": \"pH\",\n    \"source_stage\"\
+    : \"After autoclaving\",\n    \"primary_source_evidence_id\": \"dsmz1522\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz1522\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1522.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 final instruction\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 3,5 with concentrated HCl after autoclaving.\",\n        \"snapshot_sha256\"\
+    : \"3c27612161e5e4d88aef14583b5d2b9ca189ed80301414345ca30d7990e2ff38\",\n    \
+    \    \"parsed_text_sha256\": \"027deeba98ed41b5545443540fa98a8b365c5ee5e58c00447af3738a2d286f6d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml\",\n        \"\
+    field_path\": \"ph_value\",\n        \"stored\": 3.5,\n        \"decision\": \"\
+    evidence_only\",\n        \"rationale\": \"The DSM1522 owner retains pH 3.5; attach\
+    \ exact support for adjustment with concentrated HCl after autoclaving. This is\
+    \ not the J96 unadjusted pH or a DSM631 target.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"The DSM1522 owner retains pH 3.5; attach exact support for adjustment with\
+    \ concentrated HCl after autoclaving. This is not the J96 unadjusted pH or a DSM631\
+    \ target.\"\n  },\n  {\n    \"quantity_id\": \"q31\",\n    \"ingredient_or_context\"\
+    : \"DSM1522 pH\",\n    \"field_path\": \"preparation_steps[1].description\",\n\
+    \    \"local\": \"Adjust pH to 3,5 with concentrated HCl after autoclaving.\"\
+    ,\n    \"source_amount\": 3.5,\n    \"source_unit\": \"pH\",\n    \"source_stage\"\
+    : \"After autoclaving\",\n    \"primary_source_evidence_id\": \"dsmz1522\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz1522\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1522.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 final instruction\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 3,5 with concentrated HCl after autoclaving.\",\n        \"snapshot_sha256\"\
+    : \"3c27612161e5e4d88aef14583b5d2b9ca189ed80301414345ca30d7990e2ff38\",\n    \
+    \    \"parsed_text_sha256\": \"027deeba98ed41b5545443540fa98a8b365c5ee5e58c00447af3738a2d286f6d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml\",\n        \"\
+    field_path\": \"preparation_steps[1].description\",\n        \"stored\": \"Adjust\
+    \ pH to 3,5 with concentrated HCl after autoclaving.\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"The DSM1522 owner retains pH 3.5;\
+    \ attach exact support for adjustment with concentrated HCl after autoclaving.\
+    \ This is not the J96 unadjusted pH or a DSM631 target.\"\n      }\n    ],\n \
+    \   \"arithmetic_and_scope\": \"The DSM1522 owner retains pH 3.5; attach exact\
+    \ support for adjustment with concentrated HCl after autoclaving. This is not\
+    \ the J96 unadjusted pH or a DSM631 target.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q32\",\n    \"ingredient_or_context\": \"DSM1522 HCl titrant\",\n    \"field_path\"\
+    : \"preparation_steps[1].description\",\n    \"local\": \"Adjust pH to 3,5 with\
+    \ concentrated HCl after autoclaving.\",\n    \"source_amount\": null,\n    \"\
+    source_unit\": \"as needed; concentration unspecified\",\n    \"source_stage\"\
+    : \"Post-autoclave pH adjustment\",\n    \"primary_source_evidence_id\": \"dsmz1522\"\
+    ,\n    \"decision\": \"not_quantified\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz1522\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1522.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 final instruction\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 3,5 with concentrated HCl after autoclaving.\",\n        \"snapshot_sha256\"\
+    : \"3c27612161e5e4d88aef14583b5d2b9ca189ed80301414345ca30d7990e2ff38\",\n    \
+    \    \"parsed_text_sha256\": \"027deeba98ed41b5545443540fa98a8b365c5ee5e58c00447af3738a2d286f6d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml\",\n        \"\
+    field_path\": \"preparation_steps[1].description\",\n        \"stored\": \"Adjust\
+    \ pH to 3,5 with concentrated HCl after autoclaving.\",\n        \"decision\"\
+    : \"not_quantified\",\n        \"rationale\": \"Concentrated HCl is a titrant\
+    \ without fixed amount or numerical concentration; neither dose nor molarity may\
+    \ be supplied from convention.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Concentrated HCl is a titrant without fixed amount or numerical concentration;\
+    \ neither dose nor molarity may be supplied from convention.\"\n  },\n  {\n  \
+    \  \"quantity_id\": \"q33\",\n    \"ingredient_or_context\": \"J96 unadjusted\
+    \ pH\",\n    \"field_path\": \"preparation_steps[0].description\",\n    \"local\"\
+    : \"Mix ingredients, except acetic acid and ethanol, and autoclave. Aseptically\
+    \ add acetic acid and ethanol to the medium. Unadjusted pH will be about 2.9.\"\
+    ,\n    \"source_amount\": 2.9,\n    \"source_unit\": \"pH approximately\",\n \
+    \   \"source_stage\": \"After separate acid/ethanol addition\",\n    \"primary_source_evidence_id\"\
+    : \"mediadiveJ96api\",\n    \"decision\": \"evidence_only\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ96api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J96\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].steps[0].step\",\n        \"exact_source_quote\": \"Unadjusted\
+    \ pH will be about 2.9.\",\n        \"snapshot_sha256\": \"2c8a0d7cb2e7c66f98ab5962d69be8bffe5b038cbf61e38fd125e753cd70f170\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/ae_broth.yaml\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Mix ingredients, except acetic acid and ethanol, and\
+    \ autoclave. Aseptically add acetic acid and ethanol to the medium. Unadjusted\
+    \ pH will be about 2.9.\",\n        \"decision\": \"evidence_only\",\n       \
+    \ \"rationale\": \"The J96 owner retains an approximate unadjusted pH, not an\
+    \ instruction to titrate to 2.9; attach source support without converting it into\
+    \ a setpoint.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The J96 owner\
+    \ retains an approximate unadjusted pH, not an instruction to titrate to 2.9;\
+    \ attach source support without converting it into a setpoint.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '3 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 3/5 primary
+    and 3/5 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - chebi15366
+  - chebi16236
+  - chebi17234
+  details: 'Instance coverage on a 0–100 percent scale, denominator 5: primary 60.00%;
+    secondary 60.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 32 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+- assessment_id: identity
+  area: identity
+  topic: Three separate formulations within one generated record
+  outcome: concern
+  summary: Four maintained contributors resolve, but only KOMODO631 and DSM631 share
+    an accession. DSM631 has 2/3/5 g dry nutrients and 40/30 mL acid/ethanol; DSM1522
+    has 8/15/10 g and 3/5 mL; J96 has 2/3/15 g when aligned by ingredient name and
+    65/20 mL. The generated synonyms and merged_from collapse distinct formulations.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - record
+  - dsmz631
+  - dsmz1522
+  - mediadiveJ96api
+  - komodo-identity
+  - relationships
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+- assessment_id: source-stage-consistency
+  area: consistency
+  topic: Every local concentration and source-only quantity
+  outcome: concern
+  summary: All 25 local ingredient concentration occurrences across five layers are
+    covered by formulation-specific decisions. Ten acid/ethanol entries assert mass
+    concentrations for source volume inputs. Six owner dry-nutrient claims are verified
+    only on their explicit provider bases; the three DSM1522 dry-nutrient claims remain
+    unsupported at the cited G_PER_L basis pending original response authentication.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - quantity-inventory
+  - historical-claims
+  - dsmz631
+  - dsmz1522
+  - mediadiveJ96api
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+- assessment_id: preparation
+  area: completeness
+  topic: Separate filtration, pH and plate branches
+  outcome: concern
+  summary: Target and KOMODO631 omit preparation, whereas each of the three source
+    owners already retains its distinct procedure. DSM631 requires separate solvent-resistant
+    filtration of acid and ethanol and describes a separate double-layer plate method.
+    DSM1522 adds post-autoclave pH 3.5 adjustment; J96 provider describes basal autoclaving
+    then aseptic addition and approximately pH 2.9 unadjusted. No numerical sterilization
+    cycle is printed in these usable exact sources.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - dsmz631
+  - dsmz1522
+  - mediadiveJ96api
+  - quantity-inventory
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+- assessment_id: forms
+  area: grounding
+  topic: Generic chemicals and complex products
+  outcome: supported
+  summary: Glucose, acetic acid and ethanol IDs agree with the generic source names;
+    no particular glucose stereochemistry, acid purity, ethanol strength or reagent
+    density is established. Yeast extract and peptone remain complex products without
+    invented molecular IDs. The failure is amount/unit and formulation scope, not
+    a demonstrated wrong ontology ID.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - dsmz631
+  - dsmz1522
+  - mediadiveJ96api
+  - chebi17234
+  - chebi15366
+  - chebi16236
+- assessment_id: classification
+  area: scope
+  topic: Liquid baseline, complex nutrients and attributed catalog flags
+  outcome: supported
+  summary: COMPLEX/UNDEFINED and LIQUID agree with the three liquid baseline formulas.
+    The DSM631 plate branch requires separate scope and must not be silently added
+    to all records. Catalog Aerobic=false is attributed metadata only. No organism/strain
+    experiment, DOI/PMID, high_metal flag or KG match is asserted; names and preparation
+    observations do not establish broad growth claims.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - record
+  - dsmz631
+  - dsmz1522
+  - mediadiveJ96api
+  - komodo-identity
+  - komodo-header
+- assessment_id: evidence-history
+  area: evidence
+  topic: Historical raw recovery, current capture and derivative boundaries
+  outcome: concern
+  summary: The three DSM631 amount objects match recovered Oct 7 raw and original
+    metadata. The three J96 objects match the cited hash and exact snippets in raw
+    accessed Oct 21 11:30:39.090695Z; their separately retained explanations cite
+    Oct 7. The three DSM1522 objects match decoded plan claims only. No raw response
+    or original access timestamp is reconstructed from a derivative. Target and KOMODO631
+    carry no amount attachments.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - historical-claims
+  - historical1522-plan
+  - historical-search
+  - mediadive631historical
+  - mediadiveJ96api
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+- assessment_id: reconciliation
+  area: provenance
+  topic: Maintained owners and stale generated topology
+  outcome: concern
+  summary: Preserve all permanent IDs and existing source-specific owner evidence.
+    Current lossless formulation grouping distinguishes scientific assertions, while
+    the stored ingredient-set fingerprint alone cannot establish identity. Reconcile
+    liquid units and owner preparation scopes, then regenerate distinct formulations;
+    do not repeat already completed owner evidence repairs or propagate them across
+    different accessions. Historical malformed/naive timestamps need append-only clarification.
+  target_ids:
+  - CultureMech:006146
+  evidence_ids:
+  - history-metadata
+  - writer-0
+  - writer-1
+  - writer-2
+  - relationships
+  - historical-claims
+findings:
+- finding_id: f1
+  issue_key: cm006146-distinct-formulations-collapsed
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Three different source formulations are merged as synonyms
+  description: DSM631, DSM1522 and J96 have different dry-nutrient amounts, liquid
+    additions and preparation. The target retains DSM631 quantities while listing
+    DSM1522 and J96 as synonyms and contributors. Shared ingredient identities do
+    not establish recipe identity; the valid KOMODO631-to-DSM631 relationship does
+    not justify the wider collapse.
+  target_ids:
+  - CultureMech:006146
+  field_paths:
+  - merged_from
+  - synonyms
+  - merge_fingerprint
+  - ingredients
+  - parent_media
+  evidence_ids:
+  - dsmz631
+  - dsmz1522
+  - mediadiveJ96api
+  - relationships
+  - writer-0
+  - writer-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ae_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm006146-liquid-inputs-as-mass
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Acetic acid and ethanol volume inputs are represented as mass concentrations
+  description: All five local layers encode their source-specific acid and ethanol
+    mL additions as G_PER_L. Neither density, purity nor a measured final volume is
+    established. Correct the unit/stage representation for all ten occurrences without
+    replacing one formulation with another or guessing reagent mass.
+  target_ids:
+  - CultureMech:006146
+  field_paths:
+  - ingredients[3].concentration
+  - ingredients[4].concentration
+  evidence_ids:
+  - quantity-inventory
+  - dsmz631
+  - dsmz1522
+  - mediadiveJ96api
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ae_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm006146-preparation-and-branch-loss
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Target and KOMODO preparation omit required solvent handling
+  description: The DSM631 owner already retains separate solvent-resistant filtration
+    and aseptic additions, but target and KOMODO omit the procedure. The owner paragraph
+    also embeds a distinct plate branch within a LIQUID record. DSM1522 and J96 retain
+    different procedures that must remain scoped to those sources.
+  target_ids:
+  - CultureMech:006146
+  field_paths:
+  - preparation_steps
+  - physical_state
+  evidence_ids:
+  - dsmz631
+  - dsmz1522
+  - mediadiveJ96api
+  - quantity-inventory
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ae_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm006146-evidence-version-limits
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Evidence recovery remains partial and is absent from the generated target
+  description: Six narrow owner amount claims authenticate against exact cited raw
+    bytes, but DSM1522 retains three derivative-only claims and J96 primary is unavailable.
+    Target/KOMODO lack the supported owner amount evidence. The Oct 21 J96 capture
+    must not be relabeled as an Oct 7 access record.
+  target_ids:
+  - CultureMech:006146
+  field_paths:
+  - ingredients
+  - references
+  - curation_history
+  evidence_ids:
+  - historical-claims
+  - historical-search
+  - historical1522-plan
+  - jcm96-attempt
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ae_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: cm006146-history-timestamp-shape
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Historical timestamps include malformed and timezone-naive values
+  description: The target and KOMODO owner each retain a malformed January timestamp
+    and a timezone-naive February timestamp. They are provenance defects, not grounds
+    to erase historical events or manufacture exact dates.
+  target_ids:
+  - CultureMech:006146
+  field_paths:
+  - curation_history
+  evidence_ids:
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ae_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.4
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Preserve stable IDs and split the generated formulation grouping by
+    exact accession and scientific content. Retain the legitimate KOMODO631/DSM631
+    source relationship with its evidence, and reconcile source-specific owner assertions
+    before regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:006146
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ae_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Restore the exact separate liquid addition volumes and water inputs
+    for each source. Keep provider-declared denominators separately evidenced; do
+    not convert mL to grams or infer measured final volume.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:006146
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ae_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve existing owner procedures; restore the missing DSM631 handling
+    in the appropriate maintained representation and separate its plate branch. Keep
+    DSM1522 pH adjustment and J96 unadjusted pH distinct. Regenerate after reconciliation.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:006146
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ae_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Retain authenticated owner claims with their bounded provider basis,
+    preserve the distinct citation and capture dates, and recover or explicitly qualify
+    DSM1522 original-response correspondence. Reconcile the generated target only
+    after separating formulas; do not copy evidence across accessions.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:006146
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ae_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Append a source-supported clarification of timestamp interpretation
+    if recoverable; preserve original events and unresolved uncertainty.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:006146
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_lambicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ae_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Exact JCM96 primary request returned HTTP 200 with Nothing found. AE BROTH is assessed
+  from the exact MediaDive J96 response, with primary confirmation unavailable.
+- Preserved optional current retrieval failure for mediadive631api; independent primary
+  or historical/provider evidence is scoped separately.
+- Preserved optional current retrieval failure for mediadive631api_retry; independent
+  primary or historical/provider evidence is scoped separately.
+- Preserved optional current retrieval failure for mediadive1522api; independent primary
+  or historical/provider evidence is scoped separately.
+- Preserved optional current retrieval failure for mediadive1522api_retry; independent
+  primary or historical/provider evidence is scoped separately.
+- Preserved optional current retrieval failure for komodo631detail; independent primary
+  or historical/provider evidence is scoped separately.
+- This scientific assessment preceded formal review validation and saving; those results
+  are recorded separately.
+- Completion is partial because exact JCM96 primary content and DSM1522 original-response
+  authentication are required but unavailable. Current 631 failures do not erase the
+  recovered historical response. No source chronology is inferred from access order.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-034
+- generated-medium

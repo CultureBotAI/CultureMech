@@ -1,0 +1,2080 @@
+# Source and formulation review: acetobacter_xylinus_medium (CultureMech:008100)
+
+- Review: 20261021T185343Z-culturemech-008100-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T18:47:06Z
+- Finished UTC: 2026-10-21T18:53:43Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+NBRC350 and TOGO M1551 specify 1 L water, 5 mL separately filtered ethanol, six dry additions including optional agar, and pH 6.6–7.0. The record mislabels both liquid units, places two footnoted ingredients in empty Unknown solution objects, omits preparation and pH, and asserts a solid state without selecting the optional agar branch. Hipolypepton vendor metadata conflicts within the provider context.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 336; batch 034 item 6 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-three task batches contain 330 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 333 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:008100 | data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml | generated | acetobacter_xylinus_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:008100 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:008100 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-034/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch034/336/strict.tsv |
+| validate-terms | passed | True | CultureMech:008100 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:008100 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:008100 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: togoM1551 | unavailable | False | CultureMech:008100 | The optional TOGO mediumapi request failed; the complete original M1551 JSON and exact NBRC350 primary are available. Their quantities, footnotes and vendor disagreement were inspected directly. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:008100.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:008100.
+
+10 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "ingredient_or_context": "Water",
+    "field_path": "ingredients[0].concentration",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "L",
+    "source_stage": "NBRC350 recipe batch; optional agar branch retained",
+    "primary_source_evidence_id": "nbrc350",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "nbrc350",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350",
+        "source_locator": "Composition table; corresponding footnote where applicable",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee",
+        "parsed_text_sha256": "6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d"
+      },
+      {
+        "source_key": "togoM1551original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The exact source input is 1 L water, not 1 G_PER_L. Restore its batch/preparation role without assuming density or measured final volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The exact source input is 1 L water, not 1 G_PER_L. Restore its batch/preparation role without assuming density or measured final volume."
+      }
+    ],
+    "arithmetic_and_scope": "The exact source input is 1 L water, not 1 G_PER_L. Restore its batch/preparation role without assuming density or measured final volume."
+  },
+  {
+    "quantity_id": "q2",
+    "ingredient_or_context": "Magnesium sulfate heptahydrate",
+    "field_path": "ingredients[1].concentration",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "g",
+    "source_stage": "NBRC350 recipe batch; optional agar branch retained",
+    "primary_source_evidence_id": "nbrc350",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "nbrc350",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350",
+        "source_locator": "Composition table; corresponding footnote where applicable",
+        "exact_source_quote": "MgSO 4 ·7H 2 O 1 g",
+        "snapshot_sha256": "8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee",
+        "parsed_text_sha256": "6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d"
+      },
+      {
+        "source_key": "togoM1551original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"MgSO4·7H2O\",\n          \"volume\": 1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is unverified. Retain the source mass and chemical form without silently normalizing to 1 L or 1.005 L."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is unverified. Retain the source mass and chemical form without silently normalizing to 1 L or 1.005 L."
+      }
+    ],
+    "arithmetic_and_scope": "The numeric source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is unverified. Retain the source mass and chemical form without silently normalizing to 1 L or 1.005 L."
+  },
+  {
+    "quantity_id": "q3",
+    "ingredient_or_context": "Yeast extract",
+    "field_path": "ingredients[2].concentration",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 5,
+    "source_unit": "g",
+    "source_stage": "NBRC350 recipe batch; optional agar branch retained",
+    "primary_source_evidence_id": "nbrc350",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "nbrc350",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350",
+        "source_locator": "Composition table; corresponding footnote where applicable",
+        "exact_source_quote": "Yeast extract 5 g",
+        "snapshot_sha256": "8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee",
+        "parsed_text_sha256": "6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d"
+      },
+      {
+        "source_key": "togoM1551original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"Yeast extract\",\n          \"volume\": 5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is unverified. Retain the source mass and chemical form without silently normalizing to 1 L or 1.005 L."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is unverified. Retain the source mass and chemical form without silently normalizing to 1 L or 1.005 L."
+      }
+    ],
+    "arithmetic_and_scope": "The numeric source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is unverified. Retain the source mass and chemical form without silently normalizing to 1 L or 1.005 L."
+  },
+  {
+    "quantity_id": "q4",
+    "ingredient_or_context": "Mannitol",
+    "field_path": "ingredients[3].concentration",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 5,
+    "source_unit": "g",
+    "source_stage": "NBRC350 recipe batch; optional agar branch retained",
+    "primary_source_evidence_id": "nbrc350",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "nbrc350",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350",
+        "source_locator": "Composition table; corresponding footnote where applicable",
+        "exact_source_quote": "Mannitol 5 g",
+        "snapshot_sha256": "8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee",
+        "parsed_text_sha256": "6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d"
+      },
+      {
+        "source_key": "togoM1551original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551",
+        "source_locator": "$.components[0].items[4]",
+        "exact_source_quote": "\"component_name\": \"Mannitol\",\n          \"volume\": 5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is unverified. Retain the source mass and chemical form without silently normalizing to 1 L or 1.005 L."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is unverified. Retain the source mass and chemical form without silently normalizing to 1 L or 1.005 L."
+      }
+    ],
+    "arithmetic_and_scope": "The numeric source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is unverified. Retain the source mass and chemical form without silently normalizing to 1 L or 1.005 L."
+  },
+  {
+    "quantity_id": "q5",
+    "ingredient_or_context": "Glucose",
+    "field_path": "ingredients[4].concentration",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 5,
+    "source_unit": "g",
+    "source_stage": "NBRC350 recipe batch; optional agar branch retained",
+    "primary_source_evidence_id": "nbrc350",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "nbrc350",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350",
+        "source_locator": "Composition table; corresponding footnote where applicable",
+        "exact_source_quote": "Glucose 5 g",
+        "snapshot_sha256": "8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee",
+        "parsed_text_sha256": "6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d"
+      },
+      {
+        "source_key": "togoM1551original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551",
+        "source_locator": "$.components[0].items[5]",
+        "exact_source_quote": "\"component_name\": \"Glucose\",\n          \"volume\": 5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is unverified. Retain the source mass and chemical form without silently normalizing to 1 L or 1.005 L."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is unverified. Retain the source mass and chemical form without silently normalizing to 1 L or 1.005 L."
+      }
+    ],
+    "arithmetic_and_scope": "The numeric source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is unverified. Retain the source mass and chemical form without silently normalizing to 1 L or 1.005 L."
+  },
+  {
+    "quantity_id": "q6",
+    "ingredient_or_context": "Optional agar",
+    "field_path": "ingredients[5].concentration",
+    "local": {
+      "value": "15",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 15,
+    "source_unit": "g",
+    "source_stage": "NBRC350 recipe batch; optional agar branch retained",
+    "primary_source_evidence_id": "nbrc350",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "nbrc350",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350",
+        "source_locator": "Composition table; corresponding footnote where applicable",
+        "exact_source_quote": "Agar (if needed) 15 g",
+        "snapshot_sha256": "8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee",
+        "parsed_text_sha256": "6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d"
+      },
+      {
+        "source_key": "togoM1551original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551",
+        "source_locator": "$.components[0].items[6]",
+        "exact_source_quote": "\"component_name\": \"Agar (if needed)\",\n          \"volume\": 15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is unverified. Retain the source mass and chemical form without silently normalizing to 1 L or 1.005 L. The 15 g agar addition is conditional on the source phrase if needed; no selected physical branch is documented locally."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is unverified. Retain the source mass and chemical form without silently normalizing to 1 L or 1.005 L. The 15 g agar addition is conditional on the source phrase if needed; no selected physical branch is documented locally."
+      }
+    ],
+    "arithmetic_and_scope": "The numeric source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is unverified. Retain the source mass and chemical form without silently normalizing to 1 L or 1.005 L. The 15 g agar addition is conditional on the source phrase if needed; no selected physical branch is documented locally."
+  },
+  {
+    "quantity_id": "q7",
+    "ingredient_or_context": "Separately filtered ethanol",
+    "field_path": "solutions[0].concentration",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 5,
+    "source_unit": "ml",
+    "source_stage": "NBRC350 recipe batch; optional agar branch retained",
+    "primary_source_evidence_id": "nbrc350",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "nbrc350",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350",
+        "source_locator": "Composition table; corresponding footnote where applicable",
+        "exact_source_quote": "Ethanol** 5 ml",
+        "snapshot_sha256": "8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee",
+        "parsed_text_sha256": "6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d"
+      },
+      {
+        "source_key": "togoM1551original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"Ethanol**\",\n          \"volume\": 5,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The source adds 5 mL ethanol and footnote ** requires separate filtration. Neither ethanol strength nor density is specified, so 5 G_PER_L is unsupported. The footnote does not define an empty stock formulation; preserve the liquid reagent and its handling separately."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The source adds 5 mL ethanol and footnote ** requires separate filtration. Neither ethanol strength nor density is specified, so 5 G_PER_L is unsupported. The footnote does not define an empty stock formulation; preserve the liquid reagent and its handling separately."
+      }
+    ],
+    "arithmetic_and_scope": "The source adds 5 mL ethanol and footnote ** requires separate filtration. Neither ethanol strength nor density is specified, so 5 G_PER_L is unsupported. The footnote does not define an empty stock formulation; preserve the liquid reagent and its handling separately."
+  },
+  {
+    "quantity_id": "q8",
+    "ingredient_or_context": "Hipolypepton product",
+    "field_path": "solutions[1].concentration",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 5,
+    "source_unit": "g",
+    "source_stage": "NBRC350 recipe batch; optional agar branch retained",
+    "primary_source_evidence_id": "nbrc350",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "nbrc350",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350",
+        "source_locator": "Composition table; corresponding footnote where applicable",
+        "exact_source_quote": "Hipolypepton* 5 g",
+        "snapshot_sha256": "8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee",
+        "parsed_text_sha256": "6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d"
+      },
+      {
+        "source_key": "togoM1551original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551",
+        "source_locator": "$.components[0].items[7]",
+        "exact_source_quote": "\"component_name\": \"Hipolypepton*\",\n          \"volume\": 5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The source gives 5 g of a complex Hipolypepton product, not an empty named stock. Preserve this batch mass while correcting its structural placement and source-specific footnote. NBRC and the TOGO footnote name Wako; the TOGO normalized label instead names Nihon seiyaku. Product equivalence and a measured final G_PER_L basis are not established."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The source gives 5 g of a complex Hipolypepton product, not an empty named stock. Preserve this batch mass while correcting its structural placement and source-specific footnote. NBRC and the TOGO footnote name Wako; the TOGO normalized label instead names Nihon seiyaku. Product equivalence and a measured final G_PER_L basis are not established."
+      }
+    ],
+    "arithmetic_and_scope": "The source gives 5 g of a complex Hipolypepton product, not an empty named stock. Preserve this batch mass while correcting its structural placement and source-specific footnote. NBRC and the TOGO footnote name Wako; the TOGO normalized label instead names Nihon seiyaku. Product equivalence and a measured final G_PER_L basis are not established."
+  },
+  {
+    "quantity_id": "q9",
+    "ingredient_or_context": "Preparation pH range",
+    "field_path": "ph_range",
+    "local": null,
+    "source_amount": "6.6 - 7.0",
+    "source_unit": "pH",
+    "source_stage": "Medium preparation",
+    "primary_source_evidence_id": "nbrc350",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "nbrc350",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350",
+        "source_locator": "pH line",
+        "exact_source_quote": "pH 6.6 - 7.0",
+        "snapshot_sha256": "8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee",
+        "parsed_text_sha256": "6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d"
+      },
+      {
+        "source_key": "togoM1551original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551",
+        "source_locator": "$.meta.ph",
+        "exact_source_quote": "\"ph\": \"6.6 - 7.0\"",
+        "snapshot_sha256": "41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_range",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Both local pH fields are absent. Preserve the range, not an invented midpoint, organism optimum or titration reagent."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml",
+        "field_path": "ph_range",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Both local pH fields are absent. Preserve the range, not an invented midpoint, organism optimum or titration reagent."
+      }
+    ],
+    "arithmetic_and_scope": "Both local pH fields are absent. Preserve the range, not an invented midpoint, organism optimum or titration reagent."
+  },
+  {
+    "quantity_id": "q10",
+    "ingredient_or_context": "Unknown measured final volume",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": null,
+    "source_unit": "not established",
+    "source_stage": "After liquid and solid additions",
+    "primary_source_evidence_id": "nbrc350",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "nbrc350",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350",
+        "source_locator": "Composition table water row",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee",
+        "parsed_text_sha256": "6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d"
+      },
+      {
+        "source_key": "nbrc350",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350",
+        "source_locator": "Composition table ethanol row",
+        "exact_source_quote": "Ethanol** 5 ml",
+        "snapshot_sha256": "8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee",
+        "parsed_text_sha256": "6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "unsupported",
+        "rationale": "The listed liquids are 1000 mL water plus 5 mL ethanol, an arithmetic input sum of 1005 mL. The source does not declare measured final 1.005 L; no final concentration or solvent contraction is inferred. The sum is outside the quote."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "unsupported",
+        "rationale": "The listed liquids are 1000 mL water plus 5 mL ethanol, an arithmetic input sum of 1005 mL. The source does not declare measured final 1.005 L; no final concentration or solvent contraction is inferred. The sum is outside the quote."
+      }
+    ],
+    "arithmetic_and_scope": "The listed liquids are 1000 mL water plus 5 mL ethanol, an arithmetic input sum of 1005 mL. The source does not declare measured final 1.005 L; no final concentration or solvent contraction is inferred. The sum is outside the quote."
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: supported. Targets: CultureMech:008100.
+
+4 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 4/6 primary and 4/6 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 6: primary 66.67%; secondary 66.67%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:008100.
+
+21 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact NBRC350 via TOGO M1551
+
+identity: supported. Targets: CultureMech:008100.
+
+The complete source metadata and primary title identify the target as NBRC350, with one exact normalized owner and matching stable ID. No external stock reference or parent relationship is asserted; the two inline empty solution objects are assessed as misplaced footnoted ingredients, not unresolved foreign recipes.
+
+### All sixteen local concentrations and source-only conditions
+
+consistency: concern. Targets: CultureMech:008100.
+
+Six direct concentrations and two solution-addition concentrations in each layer are covered. Source water 1 L and ethanol 5 mL are wrongly encoded as G_PER_L. All six dry input numerals agree with the batch table, including Hipolypepton 5 g and optional agar 15 g; a measured final denominator is not supplied.
+
+### Footnotes versus stock formulations
+
+consistency: concern. Targets: CultureMech:008100.
+
+Ethanol** and Hipolypepton* are table components whose markers refer respectively to filtration and supplier footnotes. Both local layers instead contain two empty compositions named Unknown solution. No source defines those empty stocks or supports a stock-strength interpretation. Correct ingredient/preparation representation while retaining every original amount and uncertainty.
+
+### Missing pH and ethanol filtration
+
+completeness: concern. Targets: CultureMech:008100.
+
+The exact source supplies pH 6.6–7.0 and separate filtration of ethanol; both are absent from the record. The double asterisk identifies only ethanol, not Hipolypepton or the entire medium. No basal autoclave cycle, incubation conditions, pH-adjustment reagent or ethanol purity is given; none is imported from another medium.
+
+### Hydrate support and unresolved commercial product qualifier
+
+grounding: concern. Targets: CultureMech:008100.
+
+The magnesium sulfate heptahydrate primary and secondary IDs agree with the explicit 7H2O source form; the prior generic-to-heptahydrate repair is already present and should not be repeated. Generic mannitol, glucose and water agree at the stated form level. Hipolypepton and yeast extract remain complex products. The Wako-versus-Nihon-seiyaku disagreement is a provider/product-provenance conflict, not proof of a wrong molecule or permission to invent a replacement ID.
+
+### Optional agar needs an explicit selected branch
+
+scope: concern. Targets: CultureMech:008100.
+
+COMPLEX/UNDEFINED is supported by yeast extract and Hipolypepton. The ingredient name preserves Agar (if needed), but unconditional SOLID_AGAR does not document which branch was selected. Preserve optionality or qualify a selected solid version; do not silently remove agar or force all uses to liquid. The medium name and provider roles are not strain-specific growth evidence.
+
+### No attached source amount claims or stock identities
+
+evidence: concern. Targets: CultureMech:008100.
+
+Neither layer has attached evidence or a reference list for its eight concentrations. Four of eight material entries have primary and current CHEBI-based secondary links (50% on that denominator); the helper separately reports four of six direct ingredients (66.67%). These are linkage metrics, not correctness scores. No legacy MIM assertion, DOI/PMID, high_metal flag, KG match or taxon/strain identifier is present.
+
+### Owner corrections before generated reconciliation
+
+provenance: supported. Targets: CultureMech:008100.
+
+All current owner and target scientific fields agree; the target additionally carries merge provenance. Twenty-one history timestamps are timezone-aware. Current repair/default functions explain a plausible representation mechanism and local history records the relevant actions, but the review does not replay historical code or claim a current importer rerun will repair every defect. Preserve append-only history and the existing heptahydrate correction.
+
+## Findings
+
+### f1: Liquid inputs and footnoted ingredients are misrepresented
+
+major / open / confirmed; issue key: cm008100-liquid-units-and-footnote-stocks.
+
+Both layers turn 1 L water into 1 G_PER_L and 5 mL ethanol into 5 G_PER_L. Ethanol** and Hipolypepton* are additionally empty Unknown solution objects even though the source markers identify filtration and supplier notes, not stock compositions. This changes how the recipe additions are interpreted.
+
+### f2: Separate ethanol filtration and pH range are missing
+
+major / open / confirmed; issue key: cm008100-filtration-ph-omission.
+
+NBRC350 explicitly assigns separate filtration to ethanol and lists pH 6.6–7.0. Both local layers omit preparation and pH. These are source-specific preparation conditions, not optional enrichment or a general sterilization convention.
+
+### f3: Unconditional solid classification does not select the optional agar branch
+
+major / open / confirmed; issue key: cm008100-optional-agar-state.
+
+The source and local ingredient name retain Agar (if needed), 15 g. Both local records nevertheless assert SOLID_AGAR without documenting a selected solid formulation. This collapses the source physical-state alternatives.
+
+### f4: Hipolypepton footnote and provider vendor label disagree
+
+minor / open / confirmed; issue key: cm008100-product-source-qualifier.
+
+NBRC350 and the TOGO footnote identify Wako Pure Chemical Ind., Ltd., while the TOGO normalized component label names Nihon seiyaku. The local Hipolypepton* entry retains neither resolved supplier context nor an evidence explanation. The name alone does not prove vendor-product equivalence.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore water as the literal batch solvent input, ethanol as the separately filtered 5 mL reagent addition and Hipolypepton as the 5 g complex product. Preserve source footnotes and all dry batch masses; do not invent stock recipes, purity, density or final-volume normalization. Correct the maintained owner before regeneration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Add the exact ethanol-only filtration instruction and pH range to the owner with literal evidence. Do not invent a basal autoclave cycle, ethanol concentration, titrant, or pH midpoint.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Preserve the optional agar condition and explicitly qualify the selected physical-state branch or represent distinct source-supported versions. Retain the original 15 g batch amount rather than treating optionality as absence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Attach the exact primary product footnote and preserve the conflicting provider label as provenance. Resolve any requested product substitution through exact supplier evidence rather than silently equating vendors; add narrow amount/preparation evidence during owner repair.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch034/336/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-034/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch034/336/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml:1:id: CultureMech:008100<br>./data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml:1:id: CultureMech:008100<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch034/source-preflight-bound/336/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 8 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| nbrc350 | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350; Exact Medium No.350 composition, pH and both footnotes | supports | NBRC350 gives the complete eight-item table, optional agar, pH 6.6–7.0, Wako product footnote and separate ethanol filtration. No numerical autoclave cycle, ethanol purity or measured final volume is printed. |
+| togoM1551original | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551; $.meta; $.components[0].items[0:8]; $.comments[0,2,4] | supports | The exact original TOGO payload points to NBRC_M350. All quantities agree, but its Hipolypepton label names Nihon seiyaku while its footnote and NBRC identify Wako. |
+| hipolypepton-provider-label | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551; $.components[0].items[7].label | supports | This normalized provider label conflicts with the source-specific Wako footnote. It is preserved as a conflict, not treated as proof that the products are equivalent. |
+| hipolypepton-primary-footnote | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350; Product footnote immediately following pH | supports | The primary identifies the supplied Hipolypepton product with Wako; this does not establish a replacement catalog number or molecular composition. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch034/336/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15377 resolves to water. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17234 resolves to glucose. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi29864 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29864; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29864 resolves to mannitol. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29864": [{"label": "Mannitol", "match_type": "preferred_term", "identifier": "CHEBI:29864", "preferred_term": "Mannitol", "ontology_id": "CHEBI:29864", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml; data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 11, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml", "events": 10, "timestamp_issues": []}] |
+| togoM1551-attempt | https://mediumapi.dbcls.jp/medium/M1551; Preserved exact public retrieval result | context_only | The optional TOGO mediumapi request failed; the complete original M1551 JSON and exact NBRC350 primary are available. Their quantities, footnotes and vendor disagreement were inspected directly. |
+| writer-0 | scripts/migrate_solutions_from_ingredients.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Read current migration, defaulting, TOGO extraction and grouping code without execution. The migrator treats trailing asterisks as solution markers and produces empty compositions when unresolved; defaulting supplies Unknown solution names. Local history records two migrations and two default names, but no historical mutator replay is claimed. Current TOGO code retains comments, while _extract_ph reads top-level ph and this source puts ph under meta. Regeneration alone is not demonstrated to repair source identity or scope. |
+| writer-1 | src/culturemech/validation/schema_defaulter.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Read current migration, defaulting, TOGO extraction and grouping code without execution. The migrator treats trailing asterisks as solution markers and produces empty compositions when unresolved; defaulting supplies Unknown solution names. Local history records two migrations and two default names, but no historical mutator replay is claimed. Current TOGO code retains comments, while _extract_ph reads top-level ph and this source puts ph under meta. Regeneration alone is not demonstrated to repair source identity or scope. |
+| writer-2 | src/culturemech/import/togo_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Read current migration, defaulting, TOGO extraction and grouping code without execution. The migrator treats trailing asterisks as solution markers and produces empty compositions when unresolved; defaulting supplies Unknown solution names. Local history records two migrations and two default names, but no historical mutator replay is claimed. Current TOGO code retains comments, while _extract_ph reads top-level ph and this source puts ph under meta. Regeneration alone is not demonstrated to repair source identity or scope. |
+| writer-3 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Read current migration, defaulting, TOGO extraction and grouping code without execution. The migrator treats trailing asterisks as solution markers and produces empty compositions when unresolved; defaulting supplies Unknown solution names. Local history records two migrations and two default names, but no historical mutator replay is claimed. Current TOGO code retains comments, while _extract_ph reads top-level ph and this source puts ph under meta. Regeneration alone is not demonstrated to repair source identity or scope. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The optional TOGO mediumapi request failed; the complete original M1551 JSON and exact NBRC350 primary are available. Their quantities, footnotes and vendor disagreement were inspected directly.
+- This scientific assessment preceded formal review validation and saving; their results are recorded separately.
+- Completed review scope does not establish measured final volume, a particular ethanol purity or equivalent commercial products. No new growth or physiological assertion is made from the medium name.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T185343Z-culturemech-008100-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: acetobacter_xylinus_medium (CultureMech:008100)'
+started_at: '2026-10-21T18:47:06Z'
+finished_at: '2026-10-21T18:53:43Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: NBRC350 and TOGO M1551 specify 1 L water, 5 mL separately filtered ethanol,
+  six dry additions including optional agar, and pH 6.6–7.0. The record mislabels
+  both liquid units, places two footnoted ingredients in empty Unknown solution objects,
+  omits preparation and pH, and asserts a solid state without selecting the optional
+  agar branch. Hipolypepton vendor metadata conflicts within the provider context.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml
+    sha256: 24e97083e8119a232d4d2ac4503fc320a8c3d2fb5cfeb494df68efb61d7119c9
+    role: target
+  - path: data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml
+    sha256: 07b1a8eff3944080ae4f7bc8821c8c7d142d9a37fef0effb2c4ff0529c15ed12
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 336; batch 034 item 6 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-three task batches
+    contain 330 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 333 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:008100
+targets:
+- target_id: CultureMech:008100
+  path: data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml
+  label: acetobacter_xylinus_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch034/336/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-034/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch034/336/strict.tsv"
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:008100
+- check_id: togoM1551-source-access
+  name: 'Exact source content access: togoM1551'
+  required: false
+  status: unavailable
+  summary: The optional TOGO mediumapi request failed; the complete original M1551
+    JSON and exact NBRC350 primary are available. Their quantities, footnotes and
+    vendor disagreement were inspected directly.
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - togoM1551-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T18:53:42Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T18:53:42Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:47:41.343442Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch034/336/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:47:42.370141Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-034/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch034/336/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:47:43.485364Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:47:44.194561Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T18:53:42Z'
+  support: supports
+  summary: './data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml:1:id: CultureMech:008100
+
+    ./data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml:1:id: CultureMech:008100
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch034/source-preflight-bound/336/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T18:53:42Z'
+  support: supports
+  summary: 8 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 5ac65fff2c3575eee0a955e92659326d9c589e9088b73f01f50fcaf8950d51df
+- evidence_id: nbrc350
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350
+  locator: Exact Medium No.350 composition, pH and both footnotes
+  accessed_at: '2026-10-21T18:28:15.928983Z'
+  support: supports
+  summary: NBRC350 gives the complete eight-item table, optional agar, pH 6.6–7.0,
+    Wako product footnote and separate ethanol filtration. No numerical autoclave
+    cycle, ethanol purity or measured final volume is printed.
+  quote: '**Sterilize separately by filtration.'
+  snapshot_sha256: 8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee
+- evidence_id: togoM1551original
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551
+  locator: $.meta; $.components[0].items[0:8]; $.comments[0,2,4]
+  accessed_at: '2026-10-21T18:28:12.463955Z'
+  support: supports
+  summary: The exact original TOGO payload points to NBRC_M350. All quantities agree,
+    but its Hipolypepton label names Nihon seiyaku while its footnote and NBRC identify
+    Wako.
+  quote: '"original_media_id": "NBRC_M350"'
+  snapshot_sha256: 41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa
+- evidence_id: hipolypepton-provider-label
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551
+  locator: $.components[0].items[7].label
+  accessed_at: '2026-10-21T18:28:12.463955Z'
+  support: supports
+  summary: This normalized provider label conflicts with the source-specific Wako
+    footnote. It is preserved as a conflict, not treated as proof that the products
+    are equivalent.
+  quote: '"label": "Hipolypepton (Nihon seiyaku)"'
+  snapshot_sha256: 41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa
+- evidence_id: hipolypepton-primary-footnote
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350
+  locator: Product footnote immediately following pH
+  accessed_at: '2026-10-21T18:28:15.928983Z'
+  support: supports
+  summary: The primary identifies the supplied Hipolypepton product with Wako; this
+    does not establish a replacement catalog number or molecular composition.
+  quote: '*Wako Pure Chemical Ind., Ltd., Osaka, Japan.'
+  snapshot_sha256: 8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch034/336/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T18:53:42Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 43d447cc62f9e4be223fbadf07831629f4b3d3d9c69c6b362d31e197441bc99a
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi29864
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29864
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T17:05:54.508350Z'
+  support: supports
+  summary: CHEBI:29864 resolves to mannitol. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b4a4ee12a98c8d4b77ed7735296503e802d79c420826547ff2fe174a96896d8c
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T18:53:42Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15377":
+    [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377",
+    "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type":
+    "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id":
+    "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29864":
+    [{"label": "Mannitol", "match_type": "preferred_term", "identifier": "CHEBI:29864",
+    "preferred_term": "Mannitol", "ontology_id": "CHEBI:29864", "mapping_status":
+    "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:31795": [{"label": "MgSO4 x
+    7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/Acetobacter_xylinus_Medium.yaml; data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T18:53:42Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 11, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml", "events": 10,
+    "timestamp_issues": []}]'
+- evidence_id: togoM1551-attempt
+  kind: database
+  reference: https://mediumapi.dbcls.jp/medium/M1551
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T18:28:10.998732Z'
+  support: context_only
+  summary: The optional TOGO mediumapi request failed; the complete original M1551
+    JSON and exact NBRC350 primary are available. Their quantities, footnotes and
+    vendor disagreement were inspected directly.
+- evidence_id: writer-0
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:53:42Z'
+  support: context_only
+  summary: Read current migration, defaulting, TOGO extraction and grouping code without
+    execution. The migrator treats trailing asterisks as solution markers and produces
+    empty compositions when unresolved; defaulting supplies Unknown solution names.
+    Local history records two migrations and two default names, but no historical
+    mutator replay is claimed. Current TOGO code retains comments, while _extract_ph
+    reads top-level ph and this source puts ph under meta. Regeneration alone is not
+    demonstrated to repair source identity or scope.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/validation/schema_defaulter.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:53:42Z'
+  support: context_only
+  summary: Read current migration, defaulting, TOGO extraction and grouping code without
+    execution. The migrator treats trailing asterisks as solution markers and produces
+    empty compositions when unresolved; defaulting supplies Unknown solution names.
+    Local history records two migrations and two default names, but no historical
+    mutator replay is claimed. Current TOGO code retains comments, while _extract_ph
+    reads top-level ph and this source puts ph under meta. Regeneration alone is not
+    demonstrated to repair source identity or scope.
+  snapshot_sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:53:42Z'
+  support: context_only
+  summary: Read current migration, defaulting, TOGO extraction and grouping code without
+    execution. The migrator treats trailing asterisks as solution markers and produces
+    empty compositions when unresolved; defaulting supplies Unknown solution names.
+    Local history records two migrations and two default names, but no historical
+    mutator replay is claimed. Current TOGO code retains comments, while _extract_ph
+    reads top-level ph and this source puts ph under meta. Regeneration alone is not
+    demonstrated to repair source identity or scope.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:53:42Z'
+  support: context_only
+  summary: Read current migration, defaulting, TOGO extraction and grouping code without
+    execution. The migrator treats trailing asterisks as solution markers and produces
+    empty compositions when unresolved; defaulting supplies Unknown solution names.
+    Local history records two migrations and two default names, but no historical
+    mutator replay is claimed. Current TOGO code retains comments, while _extract_ph
+    reads top-level ph and this source puts ph under meta. Regeneration alone is not
+    demonstrated to repair source identity or scope.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 10 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"ingredient_or_context\": \"\
+    Water\",\n    \"field_path\": \"ingredients[0].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"L\",\n    \"source_stage\": \"NBRC350 recipe batch;\
+    \ optional agar branch retained\",\n    \"primary_source_evidence_id\": \"nbrc350\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"nbrc350\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350\"\
+    ,\n        \"source_locator\": \"Composition table; corresponding footnote where\
+    \ applicable\",\n        \"exact_source_quote\": \"Distilled water 1 L\",\n  \
+    \      \"snapshot_sha256\": \"8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee\"\
+    ,\n        \"parsed_text_sha256\": \"6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1551original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[0].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"correct\",\n        \"rationale\": \"The\
+    \ exact source input is 1 L water, not 1 G_PER_L. Restore its batch/preparation\
+    \ role without assuming density or measured final volume.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The exact source\
+    \ input is 1 L water, not 1 G_PER_L. Restore its batch/preparation role without\
+    \ assuming density or measured final volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"The exact source input is 1 L water, not 1 G_PER_L. Restore its batch/preparation\
+    \ role without assuming density or measured final volume.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q2\",\n    \"ingredient_or_context\": \"Magnesium sulfate heptahydrate\"\
+    ,\n    \"field_path\": \"ingredients[1].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"NBRC350 recipe batch;\
+    \ optional agar branch retained\",\n    \"primary_source_evidence_id\": \"nbrc350\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"nbrc350\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350\"\
+    ,\n        \"source_locator\": \"Composition table; corresponding footnote where\
+    \ applicable\",\n        \"exact_source_quote\": \"MgSO 4 ·7H 2 O 1 g\",\n   \
+    \     \"snapshot_sha256\": \"8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee\"\
+    ,\n        \"parsed_text_sha256\": \"6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1551original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgSO4·7H2O\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[1].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    The numeric source mass per recipe batch agrees. The source lists 1 L water plus\
+    \ 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is\
+    \ unverified. Retain the source mass and chemical form without silently normalizing\
+    \ to 1 L or 1.005 L.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol,\
+    \ not a measured final volume; the stored G_PER_L denominator is unverified. Retain\
+    \ the source mass and chemical form without silently normalizing to 1 L or 1.005\
+    \ L.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The numeric source mass\
+    \ per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a\
+    \ measured final volume; the stored G_PER_L denominator is unverified. Retain\
+    \ the source mass and chemical form without silently normalizing to 1 L or 1.005\
+    \ L.\"\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"ingredient_or_context\"\
+    : \"Yeast extract\",\n    \"field_path\": \"ingredients[2].concentration\",\n\
+    \    \"local\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 5,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"NBRC350 recipe batch; optional agar branch retained\",\n    \"primary_source_evidence_id\"\
+    : \"nbrc350\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"nbrc350\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350\"\
+    ,\n        \"source_locator\": \"Composition table; corresponding footnote where\
+    \ applicable\",\n        \"exact_source_quote\": \"Yeast extract 5 g\",\n    \
+    \    \"snapshot_sha256\": \"8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee\"\
+    ,\n        \"parsed_text_sha256\": \"6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1551original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551\"\
+    ,\n        \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Yeast extract\\\",\\n          \\\"volume\\\"\
+    : 5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[2].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    The numeric source mass per recipe batch agrees. The source lists 1 L water plus\
+    \ 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is\
+    \ unverified. Retain the source mass and chemical form without silently normalizing\
+    \ to 1 L or 1.005 L.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol,\
+    \ not a measured final volume; the stored G_PER_L denominator is unverified. Retain\
+    \ the source mass and chemical form without silently normalizing to 1 L or 1.005\
+    \ L.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The numeric source mass\
+    \ per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a\
+    \ measured final volume; the stored G_PER_L denominator is unverified. Retain\
+    \ the source mass and chemical form without silently normalizing to 1 L or 1.005\
+    \ L.\"\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"ingredient_or_context\"\
+    : \"Mannitol\",\n    \"field_path\": \"ingredients[3].concentration\",\n    \"\
+    local\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n    },\n   \
+    \ \"source_amount\": 5,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"\
+    NBRC350 recipe batch; optional agar branch retained\",\n    \"primary_source_evidence_id\"\
+    : \"nbrc350\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"nbrc350\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350\"\
+    ,\n        \"source_locator\": \"Composition table; corresponding footnote where\
+    \ applicable\",\n        \"exact_source_quote\": \"Mannitol 5 g\",\n        \"\
+    snapshot_sha256\": \"8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee\"\
+    ,\n        \"parsed_text_sha256\": \"6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1551original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551\"\
+    ,\n        \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Mannitol\\\",\\n          \\\"volume\\\": 5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[3].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    The numeric source mass per recipe batch agrees. The source lists 1 L water plus\
+    \ 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is\
+    \ unverified. Retain the source mass and chemical form without silently normalizing\
+    \ to 1 L or 1.005 L.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol,\
+    \ not a measured final volume; the stored G_PER_L denominator is unverified. Retain\
+    \ the source mass and chemical form without silently normalizing to 1 L or 1.005\
+    \ L.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The numeric source mass\
+    \ per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a\
+    \ measured final volume; the stored G_PER_L denominator is unverified. Retain\
+    \ the source mass and chemical form without silently normalizing to 1 L or 1.005\
+    \ L.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"ingredient_or_context\"\
+    : \"Glucose\",\n    \"field_path\": \"ingredients[4].concentration\",\n    \"\
+    local\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n    },\n   \
+    \ \"source_amount\": 5,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"\
+    NBRC350 recipe batch; optional agar branch retained\",\n    \"primary_source_evidence_id\"\
+    : \"nbrc350\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"nbrc350\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350\"\
+    ,\n        \"source_locator\": \"Composition table; corresponding footnote where\
+    \ applicable\",\n        \"exact_source_quote\": \"Glucose 5 g\",\n        \"\
+    snapshot_sha256\": \"8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee\"\
+    ,\n        \"parsed_text_sha256\": \"6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1551original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551\"\
+    ,\n        \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Glucose\\\",\\n          \\\"volume\\\": 5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[4].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    The numeric source mass per recipe batch agrees. The source lists 1 L water plus\
+    \ 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator is\
+    \ unverified. Retain the source mass and chemical form without silently normalizing\
+    \ to 1 L or 1.005 L.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol,\
+    \ not a measured final volume; the stored G_PER_L denominator is unverified. Retain\
+    \ the source mass and chemical form without silently normalizing to 1 L or 1.005\
+    \ L.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The numeric source mass\
+    \ per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol, not a\
+    \ measured final volume; the stored G_PER_L denominator is unverified. Retain\
+    \ the source mass and chemical form without silently normalizing to 1 L or 1.005\
+    \ L.\"\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"ingredient_or_context\"\
+    : \"Optional agar\",\n    \"field_path\": \"ingredients[5].concentration\",\n\
+    \    \"local\": {\n      \"value\": \"15\",\n      \"unit\": \"G_PER_L\"\n   \
+    \ },\n    \"source_amount\": 15,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"NBRC350 recipe batch; optional agar branch retained\",\n    \"primary_source_evidence_id\"\
+    : \"nbrc350\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"nbrc350\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350\"\
+    ,\n        \"source_locator\": \"Composition table; corresponding footnote where\
+    \ applicable\",\n        \"exact_source_quote\": \"Agar (if needed) 15 g\",\n\
+    \        \"snapshot_sha256\": \"8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee\"\
+    ,\n        \"parsed_text_sha256\": \"6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1551original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551\"\
+    ,\n        \"source_locator\": \"$.components[0].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Agar (if needed)\\\",\\n          \\\"volume\\\
+    \": 15,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol,\
+    \ not a measured final volume; the stored G_PER_L denominator is unverified. Retain\
+    \ the source mass and chemical form without silently normalizing to 1 L or 1.005\
+    \ L. The 15 g agar addition is conditional on the source phrase if needed; no\
+    \ selected physical branch is documented locally.\"\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ source mass per recipe batch agrees. The source lists 1 L water plus 5 mL ethanol,\
+    \ not a measured final volume; the stored G_PER_L denominator is unverified. Retain\
+    \ the source mass and chemical form without silently normalizing to 1 L or 1.005\
+    \ L. The 15 g agar addition is conditional on the source phrase if needed; no\
+    \ selected physical branch is documented locally.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"The numeric source mass per recipe batch agrees. The source lists 1 L water\
+    \ plus 5 mL ethanol, not a measured final volume; the stored G_PER_L denominator\
+    \ is unverified. Retain the source mass and chemical form without silently normalizing\
+    \ to 1 L or 1.005 L. The 15 g agar addition is conditional on the source phrase\
+    \ if needed; no selected physical branch is documented locally.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q7\",\n    \"ingredient_or_context\": \"Separately filtered\
+    \ ethanol\",\n    \"field_path\": \"solutions[0].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 5,\n    \"source_unit\": \"ml\",\n    \"source_stage\": \"NBRC350 recipe batch;\
+    \ optional agar branch retained\",\n    \"primary_source_evidence_id\": \"nbrc350\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"nbrc350\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350\"\
+    ,\n        \"source_locator\": \"Composition table; corresponding footnote where\
+    \ applicable\",\n        \"exact_source_quote\": \"Ethanol** 5 ml\",\n       \
+    \ \"snapshot_sha256\": \"8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee\"\
+    ,\n        \"parsed_text_sha256\": \"6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1551original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Ethanol**\\\",\\n          \\\"volume\\\": 5,\\\
+    n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions[0].concentration\",\n        \"\
+    stored\": {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\",\n        \"rationale\": \"The source\
+    \ adds 5 mL ethanol and footnote ** requires separate filtration. Neither ethanol\
+    \ strength nor density is specified, so 5 G_PER_L is unsupported. The footnote\
+    \ does not define an empty stock formulation; preserve the liquid reagent and\
+    \ its handling separately.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The source adds\
+    \ 5 mL ethanol and footnote ** requires separate filtration. Neither ethanol strength\
+    \ nor density is specified, so 5 G_PER_L is unsupported. The footnote does not\
+    \ define an empty stock formulation; preserve the liquid reagent and its handling\
+    \ separately.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The source adds\
+    \ 5 mL ethanol and footnote ** requires separate filtration. Neither ethanol strength\
+    \ nor density is specified, so 5 G_PER_L is unsupported. The footnote does not\
+    \ define an empty stock formulation; preserve the liquid reagent and its handling\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"ingredient_or_context\"\
+    : \"Hipolypepton product\",\n    \"field_path\": \"solutions[1].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": 5,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"NBRC350 recipe batch; optional agar branch retained\",\n    \"primary_source_evidence_id\"\
+    : \"nbrc350\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"nbrc350\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350\"\
+    ,\n        \"source_locator\": \"Composition table; corresponding footnote where\
+    \ applicable\",\n        \"exact_source_quote\": \"Hipolypepton* 5 g\",\n    \
+    \    \"snapshot_sha256\": \"8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee\"\
+    ,\n        \"parsed_text_sha256\": \"6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1551original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551\"\
+    ,\n        \"source_locator\": \"$.components[0].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Hipolypepton*\\\",\\n          \\\"volume\\\"\
+    : 5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions[1].concentration\",\n        \"\
+    stored\": {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\",\n        \"rationale\": \"The source\
+    \ gives 5 g of a complex Hipolypepton product, not an empty named stock. Preserve\
+    \ this batch mass while correcting its structural placement and source-specific\
+    \ footnote. NBRC and the TOGO footnote name Wako; the TOGO normalized label instead\
+    \ names Nihon seiyaku. Product equivalence and a measured final G_PER_L basis\
+    \ are not established.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The source gives\
+    \ 5 g of a complex Hipolypepton product, not an empty named stock. Preserve this\
+    \ batch mass while correcting its structural placement and source-specific footnote.\
+    \ NBRC and the TOGO footnote name Wako; the TOGO normalized label instead names\
+    \ Nihon seiyaku. Product equivalence and a measured final G_PER_L basis are not\
+    \ established.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The source\
+    \ gives 5 g of a complex Hipolypepton product, not an empty named stock. Preserve\
+    \ this batch mass while correcting its structural placement and source-specific\
+    \ footnote. NBRC and the TOGO footnote name Wako; the TOGO normalized label instead\
+    \ names Nihon seiyaku. Product equivalence and a measured final G_PER_L basis\
+    \ are not established.\"\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"ingredient_or_context\"\
+    : \"Preparation pH range\",\n    \"field_path\": \"ph_range\",\n    \"local\"\
+    : null,\n    \"source_amount\": \"6.6 - 7.0\",\n    \"source_unit\": \"pH\",\n\
+    \    \"source_stage\": \"Medium preparation\",\n    \"primary_source_evidence_id\"\
+    : \"nbrc350\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"nbrc350\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350\"\
+    ,\n        \"source_locator\": \"pH line\",\n        \"exact_source_quote\": \"\
+    pH 6.6 - 7.0\",\n        \"snapshot_sha256\": \"8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee\"\
+    ,\n        \"parsed_text_sha256\": \"6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1551original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1551\"\
+    ,\n        \"source_locator\": \"$.meta.ph\",\n        \"exact_source_quote\"\
+    : \"\\\"ph\\\": \\\"6.6 - 7.0\\\"\",\n        \"snapshot_sha256\": \"41bc4617e126d2ebbbd8b686e1f8c7f1a9bdab40209e75098b404cd3dbb8f7fa\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ph_range\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Both local pH fields\
+    \ are absent. Preserve the range, not an invented midpoint, organism optimum or\
+    \ titration reagent.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"Both local pH fields are absent.\
+    \ Preserve the range, not an invented midpoint, organism optimum or titration\
+    \ reagent.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"Both local pH fields\
+    \ are absent. Preserve the range, not an invented midpoint, organism optimum or\
+    \ titration reagent.\"\n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"ingredient_or_context\"\
+    : \"Unknown measured final volume\",\n    \"field_path\": \"preparation_steps\"\
+    ,\n    \"local\": null,\n    \"source_amount\": null,\n    \"source_unit\": \"\
+    not established\",\n    \"source_stage\": \"After liquid and solid additions\"\
+    ,\n    \"primary_source_evidence_id\": \"nbrc350\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"nbrc350\",\n\
+    \        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350\"\
+    ,\n        \"source_locator\": \"Composition table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1 L\",\n        \"snapshot_sha256\": \"8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee\"\
+    ,\n        \"parsed_text_sha256\": \"6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc350\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=350\",\n\
+    \        \"source_locator\": \"Composition table ethanol row\",\n        \"exact_source_quote\"\
+    : \"Ethanol** 5 ml\",\n        \"snapshot_sha256\": \"8e4b1c5620293cf5784513d13c321d1c26ce4627913d10e0c1fc6b5454a05bee\"\
+    ,\n        \"parsed_text_sha256\": \"6f960ff4787aa9c4d366c0ecfd03f513335ffd927d81724f7024616f7f3b2b2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The\
+    \ listed liquids are 1000 mL water plus 5 mL ethanol, an arithmetic input sum\
+    \ of 1005 mL. The source does not declare measured final 1.005 L; no final concentration\
+    \ or solvent contraction is inferred. The sum is outside the quote.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The listed liquids\
+    \ are 1000 mL water plus 5 mL ethanol, an arithmetic input sum of 1005 mL. The\
+    \ source does not declare measured final 1.005 L; no final concentration or solvent\
+    \ contraction is inferred. The sum is outside the quote.\"\n      }\n    ],\n\
+    \    \"arithmetic_and_scope\": \"The listed liquids are 1000 mL water plus 5 mL\
+    \ ethanol, an arithmetic input sum of 1005 mL. The source does not declare measured\
+    \ final 1.005 L; no final concentration or solvent contraction is inferred. The\
+    \ sum is outside the quote.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '4 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 4/6 primary
+    and 4/6 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi15377
+  - chebi17234
+  - chebi29864
+  - chebi31795
+  details: 'Instance coverage on a 0–100 percent scale, denominator 6: primary 66.67%;
+    secondary 66.67%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 21 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact NBRC350 via TOGO M1551
+  outcome: supported
+  summary: The complete source metadata and primary title identify the target as NBRC350,
+    with one exact normalized owner and matching stable ID. No external stock reference
+    or parent relationship is asserted; the two inline empty solution objects are
+    assessed as misplaced footnoted ingredients, not unresolved foreign recipes.
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - record
+  - nbrc350
+  - togoM1551original
+  - owner-0
+- assessment_id: source-stage-consistency
+  area: consistency
+  topic: All sixteen local concentrations and source-only conditions
+  outcome: concern
+  summary: Six direct concentrations and two solution-addition concentrations in each
+    layer are covered. Source water 1 L and ethanol 5 mL are wrongly encoded as G_PER_L.
+    All six dry input numerals agree with the batch table, including Hipolypepton
+    5 g and optional agar 15 g; a measured final denominator is not supplied.
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - quantity-inventory
+  - nbrc350
+  - togoM1551original
+  - owner-0
+- assessment_id: stock-boundaries
+  area: consistency
+  topic: Footnotes versus stock formulations
+  outcome: concern
+  summary: Ethanol** and Hipolypepton* are table components whose markers refer respectively
+    to filtration and supplier footnotes. Both local layers instead contain two empty
+    compositions named Unknown solution. No source defines those empty stocks or supports
+    a stock-strength interpretation. Correct ingredient/preparation representation
+    while retaining every original amount and uncertainty.
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - record
+  - nbrc350
+  - togoM1551original
+  - writer-0
+  - writer-1
+  - owner-0
+- assessment_id: preparation
+  area: completeness
+  topic: Missing pH and ethanol filtration
+  outcome: concern
+  summary: The exact source supplies pH 6.6–7.0 and separate filtration of ethanol;
+    both are absent from the record. The double asterisk identifies only ethanol,
+    not Hipolypepton or the entire medium. No basal autoclave cycle, incubation conditions,
+    pH-adjustment reagent or ethanol purity is given; none is imported from another
+    medium.
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - nbrc350
+  - togoM1551original
+  - quantity-inventory
+  - owner-0
+- assessment_id: forms
+  area: grounding
+  topic: Hydrate support and unresolved commercial product qualifier
+  outcome: concern
+  summary: The magnesium sulfate heptahydrate primary and secondary IDs agree with
+    the explicit 7H2O source form; the prior generic-to-heptahydrate repair is already
+    present and should not be repeated. Generic mannitol, glucose and water agree
+    at the stated form level. Hipolypepton and yeast extract remain complex products.
+    The Wako-versus-Nihon-seiyaku disagreement is a provider/product-provenance conflict,
+    not proof of a wrong molecule or permission to invent a replacement ID.
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - nbrc350
+  - togoM1551original
+  - chebi31795
+  - chebi29864
+  - chebi17234
+  - chebi15377
+  - hipolypepton-provider-label
+  - hipolypepton-primary-footnote
+- assessment_id: classification
+  area: scope
+  topic: Optional agar needs an explicit selected branch
+  outcome: concern
+  summary: COMPLEX/UNDEFINED is supported by yeast extract and Hipolypepton. The ingredient
+    name preserves Agar (if needed), but unconditional SOLID_AGAR does not document
+    which branch was selected. Preserve optionality or qualify a selected solid version;
+    do not silently remove agar or force all uses to liquid. The medium name and provider
+    roles are not strain-specific growth evidence.
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - record
+  - nbrc350
+  - togoM1551original
+  - owner-0
+- assessment_id: evidence-placement
+  area: evidence
+  topic: No attached source amount claims or stock identities
+  outcome: concern
+  summary: Neither layer has attached evidence or a reference list for its eight concentrations.
+    Four of eight material entries have primary and current CHEBI-based secondary
+    links (50% on that denominator); the helper separately reports four of six direct
+    ingredients (66.67%). These are linkage metrics, not correctness scores. No legacy
+    MIM assertion, DOI/PMID, high_metal flag, KG match or taxon/strain identifier
+    is present.
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - record
+  - nbrc350
+  - togoM1551original
+  - mim
+  - quantity-inventory
+  - owner-0
+- assessment_id: ownership
+  area: provenance
+  topic: Owner corrections before generated reconciliation
+  outcome: supported
+  summary: All current owner and target scientific fields agree; the target additionally
+    carries merge provenance. Twenty-one history timestamps are timezone-aware. Current
+    repair/default functions explain a plausible representation mechanism and local
+    history records the relevant actions, but the review does not replay historical
+    code or claim a current importer rerun will repair every defect. Preserve append-only
+    history and the existing heptahydrate correction.
+  target_ids:
+  - CultureMech:008100
+  evidence_ids:
+  - record
+  - history-metadata
+  - writer-0
+  - writer-1
+  - writer-2
+  - writer-3
+  - owner-0
+findings:
+- finding_id: f1
+  issue_key: cm008100-liquid-units-and-footnote-stocks
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Liquid inputs and footnoted ingredients are misrepresented
+  description: Both layers turn 1 L water into 1 G_PER_L and 5 mL ethanol into 5 G_PER_L.
+    Ethanol** and Hipolypepton* are additionally empty Unknown solution objects even
+    though the source markers identify filtration and supplier notes, not stock compositions.
+    This changes how the recipe additions are interpreted.
+  target_ids:
+  - CultureMech:008100
+  field_paths:
+  - ingredients[0].concentration
+  - solutions[0]
+  - solutions[1]
+  evidence_ids:
+  - nbrc350
+  - togoM1551original
+  - quantity-inventory
+  - writer-0
+  - writer-1
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm008100-filtration-ph-omission
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate ethanol filtration and pH range are missing
+  description: NBRC350 explicitly assigns separate filtration to ethanol and lists
+    pH 6.6–7.0. Both local layers omit preparation and pH. These are source-specific
+    preparation conditions, not optional enrichment or a general sterilization convention.
+  target_ids:
+  - CultureMech:008100
+  field_paths:
+  - preparation_steps
+  - ph_range
+  evidence_ids:
+  - nbrc350
+  - togoM1551original
+  - quantity-inventory
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3.5
+  normalization_reason: P3.5 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm008100-optional-agar-state
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Unconditional solid classification does not select the optional agar branch
+  description: The source and local ingredient name retain Agar (if needed), 15 g.
+    Both local records nevertheless assert SOLID_AGAR without documenting a selected
+    solid formulation. This collapses the source physical-state alternatives.
+  target_ids:
+  - CultureMech:008100
+  field_paths:
+  - physical_state
+  - ingredients[5]
+  evidence_ids:
+  - nbrc350
+  - togoM1551original
+  - quantity-inventory
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm008100-product-source-qualifier
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Hipolypepton footnote and provider vendor label disagree
+  description: NBRC350 and the TOGO footnote identify Wako Pure Chemical Ind., Ltd.,
+    while the TOGO normalized component label names Nihon seiyaku. The local Hipolypepton*
+    entry retains neither resolved supplier context nor an evidence explanation. The
+    name alone does not prove vendor-product equivalence.
+  target_ids:
+  - CultureMech:008100
+  field_paths:
+  - solutions[1].preferred_term
+  - solutions[1].notes
+  - references
+  evidence_ids:
+  - hipolypepton-primary-footnote
+  - hipolypepton-provider-label
+  - togoM1551original
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore water as the literal batch solvent input, ethanol as the separately
+    filtered 5 mL reagent addition and Hipolypepton as the 5 g complex product. Preserve
+    source footnotes and all dry batch masses; do not invent stock recipes, purity,
+    density or final-volume normalization. Correct the maintained owner before regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:008100
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Add the exact ethanol-only filtration instruction and pH range to the
+    owner with literal evidence. Do not invent a basal autoclave cycle, ethanol concentration,
+    titrant, or pH midpoint.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:008100
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve the optional agar condition and explicitly qualify the selected
+    physical-state branch or represent distinct source-supported versions. Retain
+    the original 15 g batch amount rather than treating optionality as absence.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:008100
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Attach the exact primary product footnote and preserve the conflicting
+    provider label as provenance. Resolve any requested product substitution through
+    exact supplier evidence rather than silently equating vendors; add narrow amount/preparation
+    evidence during owner repair.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:008100
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_xylinus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The optional TOGO mediumapi request failed; the complete original M1551 JSON and
+  exact NBRC350 primary are available. Their quantities, footnotes and vendor disagreement
+  were inspected directly.
+- This scientific assessment preceded formal review validation and saving; their results
+  are recorded separately.
+- Completed review scope does not establish measured final volume, a particular ethanol
+  purity or equivalent commercial products. No new growth or physiological assertion
+  is made from the medium name.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-034
+- generated-medium
+```
