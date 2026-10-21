@@ -1,0 +1,864 @@
+schema_version: 1.0.0
+review_id: 20261021T064609Z-culturemech-002803-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 1_5_nutrient_agar_no_2 (CultureMech:002803)'
+started_at: '2026-10-21T06:36:43Z'
+finished_at: '2026-10-21T06:46:09Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The MediaDive J453 accession and all four direct amounts resolve and agree
+  with the provider; pH metadata and the preparation range are preserved. Supplier
+  and water/batch context are omitted, and generated output lacks two maintained evidence
+  objects. Original JCM and pinned KG graph verification are unavailable.
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/match-kg-microbe/SKILL.md
+    sha256: add85aafc1e18164de2a9717cc9d63e5e20f34a1d597568a0c6d8b039c574a99
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/1_5_nutrient_agar_no_2.yaml
+    sha256: aa98db87cbdf3c5e84e3018abe368a55158a677026f8c9f8308a53ad54f0cdbb
+    role: target
+  - path: data/normalized_yaml/bacterial/1_5_nutrient_agar_no_2.yaml
+    sha256: 5a407ed66a6d9f193a9da087fa2468ba5e10a456cf2772268f19c637f1bbb52e
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/enrich_with_kg_microbe_matches.py
+    sha256: 61351f99ef2cb0cef03e74ad92d21dcf3b38df77a06602bdac814974e7728eeb
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 57 in Python lexicographic repository-relative path order of the
+    initially uncovered merged corpus; Batch 006 selects ordinals 51-60 after five
+    validated local batches; saved bundles are published locally in path order. On
+    fresh origin/main at this batch base, scripts/record_review.py list validated
+    34 existing bundles and none listed this target path or ID. This bundle selects
+    only the named record; no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002803
+targets:
+- target_id: CultureMech:002803
+  path: data/merge_yaml/merged/1_5_nutrient_agar_no_2.yaml
+  label: 1_5_nutrient_agar_no_2
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_5_nutrient_agar_no_2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/1_5_nutrient_agar_no_2.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/1_5_nutrient_agar_no_2.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch006/057/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-006/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch006/057/strict.tsv"
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/1_5_nutrient_agar_no_2.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/1_5_nutrient_agar_no_2.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:002803
+- check_id: original-collection
+  name: Inspect original JCM453 recipe
+  required: true
+  status: unavailable
+  summary: The exact collection endpoint returns Nothing found. Provider-level evidence
+    remains available.
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - jcm-access
+  - api
+- check_id: kg-projected-set
+  name: Verify KG match against the pinned graph snapshot
+  required: true
+  status: unavailable
+  summary: Target projected CHEBI/FOODON set can be extracted, but the graph files
+    required to compare it with medium101 are unavailable in this checkout. Endpoint
+    title differences are not a match failure.
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - kg-semantics
+  - kg-endpoint
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/1_5_nutrient_agar_no_2.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T06:46:08Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/1_5_nutrient_agar_no_2.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T06:46:08Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/1_5_nutrient_agar_no_2.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:38:32.490568Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/1_5_nutrient_agar_no_2.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch006/057/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:38:34.378248Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-006/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch006/057/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/1_5_nutrient_agar_no_2.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:38:36.815452Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/1_5_nutrient_agar_no_2.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:38:38.032272Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T06:46:08Z'
+  support: supports
+  summary: './data/merge_yaml/merged/1_5_nutrient_agar_no_2.yaml:1:id: CultureMech:002803
+
+    ./data/normalized_yaml/bacterial/1_5_nutrient_agar_no_2.yaml:1:id: CultureMech:002803
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:07:41.448510Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:11:31.325976Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-21T06:46:08Z'
+  support: supports
+  summary: '{"CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type":
+    "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id":
+    "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]}'
+- evidence_id: api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J453
+  locator: data.medium; data.solutions[0]
+  accessed_at: '2026-10-21T06:41:11.066663Z'
+  support: supports
+  summary: Complete provider record inspected, including source link, ingredient attributes,
+    quantities, declared volume, pH metadata and preparation.
+  snapshot_sha256: 26d3aa0b8a3590ae37a442a1913d4b67156fe41622ef586c8f5d7c4933db9132
+- evidence_id: kg-endpoint
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/101
+  locator: data.medium; data.solutions[0]
+  accessed_at: '2026-10-21T06:41:11.060900Z'
+  support: supports
+  summary: Identifier101 resolves to a separately named recipe. This establishes endpoint
+    existence, not the field-specific KG projected-set match.
+  snapshot_sha256: 762bacc1b539ed4dea529db4180b635a9c2aacea139352b6ae45928e78d9dbc4
+- evidence_id: jcm-access
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=453
+  locator: Response body after lookup of GRMD453
+  accessed_at: '2026-10-21T06:41:16.059704Z'
+  support: context_only
+  summary: HTTP200 response says Nothing found. The collection recipe was unavailable
+    at this endpoint; this is not evidence that the historical recipe never existed.
+  snapshot_sha256: 642eb54c6ca393babc22fc835b9f06cb42d5d7c8b50eb60058861030fb4ffeea
+- evidence_id: trace
+  kind: validation
+  reference: Target, maintained owner and provider comparison
+  locator: All four amounts; exact owner evidence snippets and pH/preparation correspondence
+  accessed_at: '2026-10-21T06:45:24.341248Z'
+  support: supports
+  summary: '{"accessed_at": "2026-10-21T06:45:24.341248+00:00", "rows": [{"index":
+    0, "matches_provider": true, "owner_evidence": 0, "target_evidence": 0, "source_attribute":
+    "BD-Difco"}, {"index": 1, "matches_provider": true, "owner_evidence": 0, "target_evidence":
+    0, "source_attribute": "BD-Difco"}, {"index": 2, "matches_provider": true, "owner_evidence":
+    1, "target_evidence": 0, "source_attribute": null}, {"index": 3, "matches_provider":
+    true, "owner_evidence": 1, "target_evidence": 0, "source_attribute": null}], "pH_scalar_matches_provider":
+    true, "pH_range_preserved_in_preparation": true, "owner_evidence_json_matches":
+    2, "source_water_ml": 1000, "main_volume_ml": 1000}'
+- evidence_id: kg-semantics
+  kind: validation
+  reference: Repository KG matching implementation and graph inventory
+  locator: Field-specific set semantics; current target extraction; ignored-inclusive
+    checkout inventory
+  accessed_at: '2026-10-21T06:46:08Z'
+  support: context_only
+  summary: '{"target_id": "CultureMech:002803", "target_path": "data/merge_yaml/merged/1_5_nutrient_agar_no_2.yaml",
+    "kg_microbe_match": "mediadive.medium:101", "started_at": "2026-10-21T06:45:56.664883+00:00",
+    "finished_at": "2026-10-21T06:46:00.609046+00:00", "scope": "Read-only KG match
+    semantics, target projection, and graph-availability check confined to this batch006
+    checkout, including hidden and ignored files. No external checkout was accessed.",
+    "skill": ".claude/skills/match-kg-microbe/SKILL.md", "scientific_match_verification":
+    "unavailable", "required_check": {"name": "Recompute stored KG-Microbe match against
+    the relevant MediaDive graph snapshot", "required": true, "result": "unavailable",
+    "reason": "The required graph edges.tsv and nodes.tsv are not available in the
+    searched checkout; graph membership and ingredient set for mediadive.medium:101
+    cannot be established."}, "projection": {"method": "KGMediaMatcher.extract_recipe_ingredients(None,
+    recipe_path); no constructor, graph loading, enrichment, or mutation invoked",
+    "sets": {"data/merge_yaml/merged/1_5_nutrient_agar_no_2.yaml": ["CHEBI:2509",
+    "CHEBI:26710"], "data/normalized_yaml/bacterial/1_5_nutrient_agar_no_2.yaml":
+    ["CHEBI:2509", "CHEBI:26710"]}, "ingredient_trace": [{"field_path": "ingredients[0]",
+    "preferred_term": "Bacto peptone", "term_id": null, "included_by_current_projection":
+    false}, {"field_path": "ingredients[1]", "preferred_term": "Beef extract", "term_id":
+    null, "included_by_current_projection": false}, {"field_path": "ingredients[2]",
+    "preferred_term": "NaCl", "term_id": "CHEBI:26710", "included_by_current_projection":
+    true}, {"field_path": "ingredients[3]", "preferred_term": "Agar", "term_id": "CHEBI:2509",
+    "included_by_current_projection": true}], "exact_match_recomputed": false}, "semantics":
+    ["Schema kg_microbe_match is a CHEBI/FOODON ingredient-set association that ignores
+    concentrations. It is not a source-accession or complete-medium-identity assertion.",
+    "Current recipe extraction includes primary term.id with CHEBI/FOODON prefixes
+    from ingredients, and eligible term/chebi_term entries from top-level composition.
+    Ungrounded ingredient names and amounts do not enter the set.", "Graph loading
+    follows biolink:has_part from mediadive.medium to mediadive.solution and then
+    direct CHEBI/FOODON ingredients; it skips internal compound IDs and nested solutions.
+    Graph-side ontology numeric portions are normalized.", "find_exact_match delegates
+    to Jaccard>=1.0 over those projected sets. The KG matcher does not compare the
+    separate merge_fingerprint field.", "The record has four direct ingredients but
+    only sodium chloride and agar contribute to this projection. Peptone and beef
+    extract are ungrounded and therefore excluded. This fact alone neither verifies
+    nor refutes the stored KG match.", "The skill names data/transformed_last9/mediadive,
+    while the current built-in module uses data/transformed/mediadive. Both expected
+    layouts were checked; neither supplies the required pair in this checkout.", "Current
+    built-in implementation sorts Jaccard and shared-count scores without an explicit
+    lowest-numeric-ID tie break; the skill prose promises such a tie break. No historical
+    producer or chosen graph snapshot was verified for this record."], "graph_inventory":
+    {"command": ["rg", "--files", "--no-ignore", "--hidden", "."], "cwd": "/private/tmp/culturemech-record-review-20261019-batch-006",
+    "exit_code": 0, "stderr": "", "includes_hidden_and_ignored": true, "listed_file_count":
+    64843, "required_graph_filename_matches": [], "mediadive_archive_or_table_candidates":
+    [], "expected_paths": [{"path": "data/transformed/mediadive/edges.tsv", "exists":
+    false}, {"path": "data/transformed/mediadive/nodes.tsv", "exists": false}, {"path":
+    "data/transformed_last9/mediadive/edges.tsv", "exists": false}, {"path": "data/transformed_last9/mediadive/nodes.tsv",
+    "exists": false}], "limits": "File listing covered this physical worktree and
+    did not traverse external checkout symlinks, read other repositories, inspect
+    Git object contents, or download graph data. Absence is scoped to required graph
+    artifacts in this checkout."}, "stored_link_search": {"command": ["rg", "--no-ignore",
+    "--hidden", "-l", "mediadive[.]medium:101([^0-9A-Za-z_-]|$)", "."], "exit_code":
+    0, "stderr": "", "matching_files": ["./reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/inspected-candidate-context.json",
+    "./data/import_tracking/reports/deep_research_priority.json", "./reports/yaml_record_review/20260921T095924Z-AIDINGIMONAS_MEDIUM.md",
+    "./reports/yaml_record_review/20260923T183857Z-lb_agar_miller.md", "./reports/yaml_record_review/20260924T151255Z-mrs_medium_with_5_nacl__ce8d4b67.md",
+    "./reports/media_content_review_manifest.tsv", "./reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/inspected-candidate-context.json",
+    "./reports/yaml_record_review/20260923T032454Z-flavobacterium_m1_agar__55975ca4.md",
+    "./reports/yaml_record_review/20260921T223151Z-BLOOD_AGAR_II.md", "./reports/yaml_record_review/20260924T150915Z-mrs_medium_with_2_5_nacl_ph_9_0__13784bdc.md",
+    "./data/normalized_yaml/fungal/nutrient_agar_with_0_05_yeast_extract_and_3_nacl.yaml",
+    "./reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/inspected-candidate-context.json",
+    "./data/normalized_yaml/bacterial_index.json", "./reports/yaml_record_review/20260923T184257Z-lb_agar_with_mnso_sub_4_sub.md",
+    "./data/normalized_yaml/algae/sna.yaml", "./reports/yaml_record_review/20260921T231943Z-bordet_gengou_medium_difco.md",
+    "./data/normalized_yaml/algae/sna_5.yaml", "./data/normalized_yaml/specialized/brewer_anaerobic_agar_with_2_nacl.yaml",
+    "./data/normalized_yaml/specialized/marine_agar_2216_with_10_nacl.yaml", "./data/normalized_yaml/specialized/marine_agar_2216_with_8_0_nacl.yaml",
+    "./data/merge_yaml/merged/Vibrio_Natriegens_Medium.yaml", "./data/normalized_yaml/specialized/marine_agar_2216_with_8_nacl.yaml",
+    "./data/normalized_yaml/specialized/marine_agar_2216_with_5_nacl.yaml", "./reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/adversarial-review.md",
+    "./data/normalized_yaml/bacterial/vibrio_natriegens_medium.yaml", "./data/merge_yaml/merged/BLOOD_AGAR_II.yaml",
+    "./data/normalized_yaml/specialized/marine_agar_2216_with_3_1_nacl.yaml", "./data/normalized_yaml/specialized/marine_agar_2216_with_1_nacl.yaml",
+    "./data/merge_yaml/merged/XENORHABDUS_MEDIUM.yaml", "./data/normalized_yaml/bacterial/r2a_agar_with_2_nacl.yaml",
+    "./data/merge_yaml/merged/lb_agar_miller.yaml", "./data/merge_yaml/merged/caso_agar_merck_105458__07c62853.yaml",
+    "./data/normalized_yaml/bacterial/blood_agar_ii.yaml", "./data/normalized_yaml/bacterial/KOMODO_423_XENORHABDUS_medium.yaml",
+    "./data/merge_yaml/merged/bordet_gengou_medium_difco.yaml", "./data/merge_yaml/merged/alcanivorax_balericus_medium.yaml",
+    "./data/normalized_yaml/bacterial/xenorhabdus_medium.yaml", "./data/normalized_yaml/bacterial/pyea_medium.yaml",
+    "./reports/ingredient_concentration_curation/20261007-followup-coverage-after-1399.json",
+    "./reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/inspected-candidate-context.json",
+    "./data/merge_yaml/merged/NUTRIMENT_AGAR_WITH_150_G_L_NACL.yaml", "./data/normalized_yaml/bacterial/inorganic_salts_starch_agar_isp_4_with_15_nacl.yaml",
+    "./data/normalized_yaml/bacterial/bordet_gengou_medium_difco.yaml", "./data/normalized_yaml/bacterial/1_3_lb_agar.yaml",
+    "./data/normalized_yaml/bacterial/alcanivorax_balericus_medium.yaml", "./data/merge_yaml/merged/mrs_medium_with_2_5_nacl_ph_9_0__13784bdc.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M2447_LB_Agar_Miller.yaml", "./data/normalized_yaml/bacterial/stappia_quadratibracata_medium_28m_7.yaml",
+    "./data/normalized_yaml/bacterial/volcanobacter_medium.yaml", "./data/merge_yaml/merged/LB_agar_medium.yaml",
+    "./data/merge_yaml/merged/r_agar_with_5_nacl.yaml", "./data/normalized_yaml/bacterial/KOMODO_362_FLAVOBACTERIUM_TIRRENICUM_medium.yaml",
+    "./data/normalized_yaml/bacterial/r_agar_with_10_nacl.yaml", "./data/merge_yaml/merged/1_5_nutrient_agar_no_2.yaml",
+    "./data/merge_yaml/merged/tssy_medium__a0ba65d1.yaml", "./data/merge_yaml/merged/flavobacterium_m1_agar__55975ca4.yaml",
+    "./data/merge_yaml/merged/MODIFIED_M1_AGAR.yaml", "./data/merge_yaml/merged/aidingimonas_medium__57f46a70.yaml",
+    "./data/merge_yaml/merged/AIDINGIMONAS_MEDIUM.yaml", "./data/merge_yaml/merged/blood_agar__45bfc12d.yaml",
+    "./data/merge_yaml/merged/nutrient_agar__b9a5b042.yaml", "./data/merge_yaml/merged/nutrient_agar_oxoid_cm3.yaml",
+    "./data/merge_yaml/merged/nutrient_agar_with_0_05_yeast_extract_and_3_nacl__c7db8d34.yaml",
+    "./data/merge_yaml/merged/sna_5__a63033ae.yaml", "./data/merge_yaml/merged/SNA_5.yaml",
+    "./data/merge_yaml/merged/mrs_medium_with_5_nacl__ce8d4b67.yaml", "./data/merge_yaml/merged/FLAVOBACTERIUM_TIRRENICUM_MEDIUM.yaml",
+    "./data/merge_yaml/merged/lb_agar_with_mnso_sub_4_sub.yaml", "./data/normalized_yaml/by_source_mediadive_index.json",
+    "./data/normalized_yaml/recipe_index.json", "./data/normalized_yaml/bacterial/inorganic_salts_starch_agar_isp_4_with_10_nacl.yaml",
+    "./data/normalized_yaml/bacterial/lb_luria_bertani_agar_with_5_nacl.yaml", "./data/normalized_yaml/bacterial/lb_luria_bertani_agar.yaml",
+    "./data/normalized_yaml/bacterial/1_100_nutrient_agar_no_2.yaml", "./data/normalized_yaml/bacterial/KOMODO_438_BORDET-GENGOU-MEDIUM_DIFCO.yaml",
+    "./data/normalized_yaml/bacterial/lb_luria_bertani_medium.yaml", "./data/normalized_yaml/bacterial/KOMODO_101_NUTRIENT_AGAR_or_BROTH_WITH_NaCl.yaml",
+    "./data/normalized_yaml/bacterial/KOMODO_245_BLOOD_AGAR_II.yaml", "./data/normalized_yaml/bacterial/lb_agar_broth_miller.yaml",
+    "./data/normalized_yaml/bacterial/half_concentrated_lb_luria_bertani_medium.yaml",
+    "./data/normalized_yaml/bacterial/r2a_agar_with_1_nacl.yaml", "./data/normalized_yaml/bacterial/mrs_medium_with_5_nacl.yaml",
+    "./data/normalized_yaml/bacterial/KOMODO_952_1_10_NUTRIENT_AGAR_NO.2.yaml", "./data/normalized_yaml/bacterial/mrs_medium_with_2_5_nacl_ph_9_0.yaml",
+    "./data/normalized_yaml/bacterial/glycerol_asparagine_agar_isp_5_with_10_nacl.yaml",
+    "./data/normalized_yaml/bacterial/nutrient_agar_no_2.yaml", "./data/normalized_yaml/bacterial/1_10_nutrient_agar_no_2.yaml",
+    "./data/normalized_yaml/bacterial/mrs_medium_with_2_5_nacl.yaml", "./data/normalized_yaml/bacterial/TOGO_M3212_Nutrient_agar.yaml",
+    "./data/normalized_yaml/bacterial/sna_5.yaml", "./data/normalized_yaml/bacterial/nutrient_agar_with_50_soil_extract_and_5_nacl.yaml",
+    "./data/normalized_yaml/bacterial/KOMODO_115_VIBRIO_NATRIEGENS_medium.yaml", "./data/normalized_yaml/bacterial/KOMODO_1289_ALCANIVORAX_BALERICUS_medium.yaml",
+    "./data/normalized_yaml/bacterial/flavobacterium_m1_agar.yaml", "./data/normalized_yaml/bacterial/nutriment_agar.yaml",
+    "./data/normalized_yaml/bacterial/flavobacterium_tirrenicum_medium.yaml", "./data/normalized_yaml/bacterial/2yt_medium.yaml",
+    "./data/normalized_yaml/bacterial/na_sphingobacterium_medium.yaml", "./data/normalized_yaml/bacterial/r_agar_with_3_nacl.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M2192_Nutrient_Agar_Broth.yaml", "./data/normalized_yaml/bacterial/lb_agar_with_mnso_sub_4_sub.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M2417_Nutrient_Agar.yaml", "./data/normalized_yaml/bacterial/JCM_J24_1_100_NUTRIENT_AGAR_NO._2.yaml",
+    "./data/normalized_yaml/bacterial/lb_luria_bertani_agar_with_5_nacl_ph_9_0.yaml",
+    "./data/normalized_yaml/bacterial/reactivation_with_liquid_medium_115.yaml", "./data/normalized_yaml/bacterial/DSMZ_1658_AIDINGIMONAS_MEDIUM.yaml",
+    "./data/normalized_yaml/bacterial/aidingimonas_medium.yaml", "./data/normalized_yaml/bacterial/tssy_medium.yaml",
+    "./data/normalized_yaml/bacterial/1_5_nutrient_agar_no_2.yaml", "./data/normalized_yaml/bacterial/paracoccus_halodenitrificans_medium.yaml",
+    "./data/normalized_yaml/bacterial/r_agar_with_5_nacl.yaml", "./data/normalized_yaml/bacterial/lb_agar_medium.yaml",
+    "./data/normalized_yaml/bacterial/caso_agar_merck_105458.yaml", "./data/normalized_yaml/bacterial/nutrient_agar_or_broth_with_nacl.yaml",
+    "./data/normalized_yaml/bacterial/inorganic_salts_starch_agar_isp_4_with_5_nacl.yaml",
+    "./data/normalized_yaml/bacterial/KOMODO_953_1_100_NUTRIENT_AGAR_NO.2.yaml", "./data/normalized_yaml/bacterial/KOMODO_364_PYEA_medium.yaml",
+    "./data/normalized_yaml/bacterial/nutriment_agar_with_150_g_l_nacl.yaml", "./data/normalized_yaml/bacterial/KOMODO_114_PARACOCCUS_HALODENITRIFICANS_medium.yaml",
+    "./data/normalized_yaml/bacterial/mrs_medium_with_10_nacl.yaml", "./data/normalized_yaml/bacterial/TOGO_M834_Modified_M1_Agar.yaml",
+    "./data/normalized_yaml/bacterial/JCM_J23_1_10_NUTRIENT_AGAR_NO._2.yaml", "./data/normalized_yaml/bacterial/blood_agar.yaml",
+    "./data/normalized_yaml/bacterial/sna.yaml", "./data/normalized_yaml/bacterial/r2a_agar_with_3_nacl.yaml"],
+    "interpretation": "These are textual references to the exact identifier, not inspected
+    graph edges and not proof of the graph-side projection."}, "source_context": [{"path":
+    ".claude/skills/match-kg-microbe/SKILL.md", "sha256": "add85aafc1e18164de2a9717cc9d63e5e20f34a1d597568a0c6d8b039c574a99",
+    "locators": [{"needle": "## Prerequisites", "line": 102}, {"needle": "**Match
+    seems wrong**", "line": 159}]}, {"path": "src/culturemech/match/kg_media_matcher.py",
+    "sha256": "43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33",
+    "locators": [{"needle": "self.mediadive_dir =", "line": 39}, {"needle": "def _load_kg_microbe_data",
+    "line": 53}, {"needle": "def extract_recipe_ingredients", "line": 200}, {"needle":
+    "def find_matches", "line": 264}, {"needle": "def find_exact_match", "line": 312}]},
+    {"path": "scripts/enrich_with_kg_microbe_matches.py", "sha256": "61351f99ef2cb0cef03e74ad92d21dcf3b38df77a06602bdac814974e7728eeb",
+    "locators": [{"needle": "recipe_ingredients = matcher.extract_recipe_ingredients",
+    "line": 66}, {"needle": "exact_match_id = matcher.find_exact_match", "line": 74}]},
+    {"path": "src/culturemech/schema/culturemech.yaml", "sha256": "cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6",
+    "locators": [{"needle": "      kg_microbe_match:", "line": 216}]}], "inspection_extension":
+    {"command": ["uv", "run", "python", "scripts/record_review.py", "inspect", "--targets",
+    "/private/tmp/culturemech-review-work-batch006/057/targets.yaml", "--input", ".claude/skills/curate-yaml-record/references/review-checklist.md",
+    "--input", ".claude/skills/match-kg-microbe/SKILL.md", "--input", ".claude/skills/review-ingredient-concentrations/references/evidence-contract.md",
+    "--input", ".claude/skills/review-recipes/reference/linkage-and-duplicates.md",
+    "--input", ".claude/skills/review-recipes/reference/validation-rules.md", "--input",
+    ".claude/skills/review-yaml-record/SKILL.md", "--input", "CLAUDE.md", "--input",
+    "conf/oak_config.yaml", "--input", "conf/record_review.yaml", "--input", "data/normalized_yaml/bacterial/1_5_nutrient_agar_no_2.yaml",
+    "--input", "docs/DATA_LAYERS.md", "--input", "docs/record-review-profile.md",
+    "--input", "docs/record-reviews.md", "--input", "justfile", "--input", "project.justfile",
+    "--input", "scripts/enrich_with_kg_microbe_matches.py", "--input", "scripts/validate_recipe_references.py",
+    "--input", "scripts/validate_strict.py", "--input", "src/culturemech/convert/mediadive_raw_yaml.py",
+    "--input", "src/culturemech/convert/togo_raw_yaml.py", "--input", "src/culturemech/data/mediaingredientmech/label_index.csv",
+    "--input", "src/culturemech/data/mediaingredientmech/label_index.metadata.json",
+    "--input", "src/culturemech/fetch/mediadive_api_fetcher.py", "--input", "src/culturemech/import/mediadive_importer.py",
+    "--input", "src/culturemech/import/togo_importer.py", "--input", "src/culturemech/match/kg_media_matcher.py",
+    "--input", "src/culturemech/merge/fingerprint.py", "--input", "src/culturemech/merge/formulation.py",
+    "--input", "src/culturemech/merge/matcher.py", "--input", "src/culturemech/merge/merge_recipes.py",
+    "--input", "src/culturemech/merge/merger.py", "--input", "src/culturemech/schema/culturemech.yaml"],
+    "exit_code": 0, "stderr": "", "previous_inspection_backup": "/private/tmp/culturemech-review-work-batch006/057/inspect.before-kg-match-context.json",
+    "previous_inspection_sha256": "9807babdcca96c767e92e23c139fc090f15dce1cfee90210a04437575a241192",
+    "all_previous_input_hashes_preserved": true, "previous_input_count": 30, "current_input_count":
+    33, "added_input_paths": [".claude/skills/match-kg-microbe/SKILL.md", "src/culturemech/match/kg_media_matcher.py",
+    "scripts/enrich_with_kg_microbe_matches.py"]}, "conclusion": "No wrong-KG-match
+    finding is supported. The target projection is verified, while the stored link
+    remains unverified pending the relevant graph snapshot. A different provider medium
+    name or formula does not itself refute this projected-set association."}'
+  search_scope: Entire batch006 checkout, including ignored and hidden files. Other
+    checkouts and external graph locations were not inspected.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '2 primary CHEBI identities resolve with matching labels; 2 of 2 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - record
+  - mim
+  - chebi2509
+  - chebi26710
+  details: 4 direct ingredient instances; primary coverage 2/4 (50.00%), verified
+    secondary coverage 2/4 (50.00%). Percentages use a 0–100 linkage scale, not a
+    scientific correctness score. Complex mixtures without asserted IDs remain ungrounded
+    rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: Source accession and maintained owner
+  outcome: supported
+  summary: The record identifies JCM453 through MediaDive J453 and a sole normalized
+    owner. The original collection endpoint is presently unavailable, so the provider
+    source identity is recoverable but direct collection verification is incomplete.
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - api
+  - jcm-access
+- assessment_id: amount-0
+  area: quantity
+  topic: ingredients[0].concentration
+  outcome: supported
+  summary: 'verified against the provider: exact ingredient row, gram amount and provider-declared
+    per-liter value match. This does not imply direct original-collection confirmation
+    or an independently measured final volume.'
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - record
+  - api
+  - trace
+- assessment_id: amount-1
+  area: quantity
+  topic: ingredients[1].concentration
+  outcome: supported
+  summary: 'verified against the provider: exact ingredient row, gram amount and provider-declared
+    per-liter value match. This does not imply direct original-collection confirmation
+    or an independently measured final volume.'
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - record
+  - api
+  - trace
+- assessment_id: amount-2
+  area: quantity
+  topic: ingredients[2].concentration
+  outcome: supported
+  summary: 'verified against the provider: exact ingredient row, gram amount and provider-declared
+    per-liter value match. This does not imply direct original-collection confirmation
+    or an independently measured final volume.'
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - record
+  - api
+  - trace
+- assessment_id: amount-3
+  area: quantity
+  topic: ingredients[3].concentration
+  outcome: supported
+  summary: 'verified against the provider: exact ingredient row, gram amount and provider-declared
+    per-liter value match. This does not imply direct original-collection confirmation
+    or an independently measured final volume.'
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - record
+  - api
+  - trace
+- assessment_id: pH
+  area: consistency
+  topic: Scalar pH and preparation range
+  outcome: supported
+  summary: The scalar pH matches provider metadata, and the broader adjustment range
+    is preserved verbatim in preparation. Retain both source scopes; neither should
+    be represented as a measured experimental pH.
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - record
+  - api
+  - trace
+- assessment_id: source-context
+  area: completeness
+  topic: Supplier and water/batch context
+  outcome: concern
+  summary: Both undefined ingredients carry BD-Difco attributes upstream. Those attributes
+    and the source water/batch volume are absent locally. Bacto in one ingredient
+    name does not recover the full supplier context for both.
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - record
+  - owner-0
+  - api
+  - trace
+- assessment_id: kg-match
+  area: identity
+  topic: Meaning of kg_microbe_match
+  outcome: unknown
+  summary: This field denotes equality of projected CHEBI/FOODON ingredient sets,
+    not equal amounts or shared medium identity. The target projection contains sodium
+    chloride and agar only. Provider101 has a different full formulation, which is
+    not sufficient to invalidate the field. Exact graph comparison remains unavailable.
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - record
+  - kg-semantics
+  - kg-endpoint
+- assessment_id: grounding-forms
+  area: grounding
+  topic: Asserted salts, agar and ungrounded mixtures
+  outcome: supported
+  summary: The two asserted primary CHEBI terms and two secondary keys resolve. Bacto
+    peptone and beef extract remain named undefined materials. Direct-instance primary
+    and secondary linkage are each 2/4 (50%), not measures of scientific accuracy.
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - record
+  - mim
+  - chebi26710
+  - chebi2509
+  - api
+- assessment_id: classification
+  area: scope
+  topic: Composition, state and organism claims
+  outcome: supported
+  summary: COMPLEX/UNDEFINED and SOLID_AGAR match the provider mixture/extract inventory
+    and agar. Generic bacterial cultivation does not assert strain-specific growth
+    or mechanism.
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - record
+  - api
+- assessment_id: evidence
+  area: evidence
+  topic: Maintained evidence omitted by generated output
+  outcome: concern
+  summary: The two owner evidence snippets match current provider rows exactly when
+    parsed as JSON and correctly constrain their claim to the main-recipe concentration.
+    The target omits those objects and later provenance. The other two amounts lack
+    narrow owner evidence; reference validation on the target examined zero excerpts.
+  target_ids:
+  - CultureMech:002803
+  evidence_ids:
+  - record
+  - owner-0
+  - api
+  - trace
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: CM002803-source-context-omitted
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Supplier and water/batch context are omitted
+  description: Provider supplier attributes and original water/batch volume are missing
+    from both local layers.
+  target_ids:
+  - CultureMech:002803
+  field_paths:
+  - ingredients[0:2].supplier_catalog
+  - notes
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - api
+  - trace
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_5_nutrient_agar_no_2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: CM002803-generated-evidence-gap
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Generated output drops maintained concentration evidence
+  description: Two current owner evidence objects and later provenance are absent
+    from the target, while two remaining amounts still lack narrow owner evidence.
+  target_ids:
+  - CultureMech:002803
+  field_paths:
+  - ingredients[*].evidence
+  - curation_history
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - api
+  - trace
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_5_nutrient_agar_no_2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Retain supported provider context with its source status explicit;
+    verify against the original collection if it becomes available. Do not infer an
+    exact product catalog or density.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002803
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_5_nutrient_agar_no_2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Preserve verified owner evidence during separately authorized regeneration
+    and add narrow support for the remaining amounts, with original-source limitations
+    explicit.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002803
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_5_nutrient_agar_no_2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Completion is partial because the original JCM recipe and pinned KG graph match
+  could not be verified. A different recipe title or amount set is not automatically
+  a wrong kg_microbe_match.
+- No organism growth claim, experimental pH measurement, stock calculation or protocol
+  optimization is inferred.
+tags:
+- unreviewed-records
+- batch-006
+- generated-medium
