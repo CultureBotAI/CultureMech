@@ -1,0 +1,2063 @@
+# Source and formulation review: acidobacterium_medium (CultureMech:009515)
+
+- Review: 20261021T112320Z-culturemech-009515-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T11:18:00Z
+- Finished UTC: 2026-10-21T11:23:20Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact TOGO M2999 / JCM 142 source uses separate A and B preparations. Both local layers instead reference unrelated generic-name-matched stocks, and their water representations lose the two source stages: the generated target sums them to 1000 g/L while the later owner collapses them to 500 g/L. Source-specific preparation, pH, optional agar scope and narrow quantity evidence require recovery.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 179; batch 018 item 9 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding seventeen task batches contain 170 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 172 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:009515 | data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml | generated | acidobacterium_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:009515 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:009515 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch018/179/strict.tsv |
+| validate-terms | passed | True | CultureMech:009515 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:009515 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:009515 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:009515.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Exact accession and solution-reference identity
+
+identity: concern. Targets: CultureMech:009515.
+
+The medium itself resolves exactly to CultureMech:009515, TOGO M2999, original JCM_M142-1 and live JCM 142. The generic Solution A/B names do not establish identity: asserted mediadive.solution:5342 and :5343 resolve but describe incompatible compositions. Current J142 exposes main solution 3786, not independently verified replacement A/B IDs.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:009515.
+
+14 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence. All 20 ingredient and stock-dose concentration instances across the target and maintained owners are explicitly covered; additional rows retain preparation quantities and source-only components.
+
+[
+  {
+    "quantity_id": "q1",
+    "ingredient_or_context": "Water in two separate preparation stages",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1000.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "500.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": "500 ml water in solution A and separately 500 ml water in solution B; preserve both aliquots/stages, not a mass concentration.",
+    "source_snippets": [
+      {
+        "source_key": "togoM2999",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 500,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2"
+      },
+      {
+        "source_key": "togoM2999",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999",
+        "source_locator": "$.components[2].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 500,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2"
+      }
+    ],
+    "rationale": "Both water rows are deliberate source additions in different sections. The target 1000 G_PER_L and owner 500 G_PER_L are wrong-dimensional representations; the later identical-row collapse also loses a source stage. 500+500=1000 ml listed water, not a measured final volume after dissolved solutes."
+  },
+  {
+    "quantity_id": "q2",
+    "ingredient_or_context": "MgSO4・7H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": "Preserve the original batch amount in source solution A; retain any per-litre expression only with the explicit provider-declared 1000 ml mixed-medium basis.",
+    "source_snippets": [
+      {
+        "source_key": "togoM2999",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"MgSO4・7H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2"
+      },
+      {
+        "source_key": "mediadiveJ142api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J142",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.02859,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "f00ee9741c1f6d31374f3427f34afb27d0b85c9085b07ade40874e104b2d307d"
+      }
+    ],
+    "rationale": "The local scalar matches the current provider g_l value but has no attached exact evidence. The primary supplies g per A/B batch; provider normalization is a separate nominal basis, not primary proof of measured final volume or stock concentration. Do not put this solute in both a restored stock and the direct receiving array."
+  },
+  {
+    "quantity_id": "q3",
+    "ingredient_or_context": "K2HPO4",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": "Preserve the original batch amount in source solution A; retain any per-litre expression only with the explicit provider-declared 1000 ml mixed-medium basis.",
+    "source_snippets": [
+      {
+        "source_key": "togoM2999",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"K2HPO4\",\n          \"volume\": 0.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2"
+      },
+      {
+        "source_key": "mediadiveJ142api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J142",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.87066,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "f00ee9741c1f6d31374f3427f34afb27d0b85c9085b07ade40874e104b2d307d"
+      }
+    ],
+    "rationale": "The local scalar matches the current provider g_l value but has no attached exact evidence. The primary supplies g per A/B batch; provider normalization is a separate nominal basis, not primary proof of measured final volume or stock concentration. Do not put this solute in both a restored stock and the direct receiving array."
+  },
+  {
+    "quantity_id": "q4",
+    "ingredient_or_context": "KCl",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": "Preserve the original batch amount in source solution A; retain any per-litre expression only with the explicit provider-declared 1000 ml mixed-medium basis.",
+    "source_snippets": [
+      {
+        "source_key": "togoM2999",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"KCl\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2"
+      },
+      {
+        "source_key": "mediadiveJ142api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J142",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 1.34138,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "f00ee9741c1f6d31374f3427f34afb27d0b85c9085b07ade40874e104b2d307d"
+      }
+    ],
+    "rationale": "The local scalar matches the current provider g_l value but has no attached exact evidence. The primary supplies g per A/B batch; provider normalization is a separate nominal basis, not primary proof of measured final volume or stock concentration. Do not put this solute in both a restored stock and the direct receiving array."
+  },
+  {
+    "quantity_id": "q5",
+    "ingredient_or_context": "(NH4)2SO4",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": "Preserve the original batch amount in source solution A; retain any per-litre expression only with the explicit provider-declared 1000 ml mixed-medium basis.",
+    "source_snippets": [
+      {
+        "source_key": "togoM2999",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999",
+        "source_locator": "$.components[1].items[4]",
+        "exact_source_quote": "\"component_name\": \"(NH4)2SO4\",\n          \"volume\": 2,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2"
+      },
+      {
+        "source_key": "mediadiveJ142api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J142",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\": 15.1355,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "f00ee9741c1f6d31374f3427f34afb27d0b85c9085b07ade40874e104b2d307d"
+      }
+    ],
+    "rationale": "The local scalar matches the current provider g_l value but has no attached exact evidence. The primary supplies g per A/B batch; provider normalization is a separate nominal basis, not primary proof of measured final volume or stock concentration. Do not put this solute in both a restored stock and the direct receiving array."
+  },
+  {
+    "quantity_id": "q6",
+    "ingredient_or_context": "Yeast extract (BD-Difco)",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": "Preserve the original batch amount in source solution A; retain any per-litre expression only with the explicit provider-declared 1000 ml mixed-medium basis.",
+    "source_snippets": [
+      {
+        "source_key": "togoM2999",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999",
+        "source_locator": "$.components[1].items[5]",
+        "exact_source_quote": "\"component_name\": \"Yeast extract (BD-Difco)\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2"
+      },
+      {
+        "source_key": "mediadiveJ142api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J142",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "f00ee9741c1f6d31374f3427f34afb27d0b85c9085b07ade40874e104b2d307d"
+      }
+    ],
+    "rationale": "The local scalar matches the current provider g_l value but has no attached exact evidence. The primary supplies g per A/B batch; provider normalization is a separate nominal basis, not primary proof of measured final volume or stock concentration. Do not put this solute in both a restored stock and the direct receiving array."
+  },
+  {
+    "quantity_id": "q7",
+    "ingredient_or_context": "Glucose",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": "Preserve the original batch amount in source solution B; retain any per-litre expression only with the explicit provider-declared 1000 ml mixed-medium basis.",
+    "source_snippets": [
+      {
+        "source_key": "togoM2999",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999",
+        "source_locator": "$.components[2].items[1]",
+        "exact_source_quote": "\"component_name\": \"Glucose\",\n          \"volume\": 1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2"
+      },
+      {
+        "source_key": "mediadiveJ142api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J142",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 5.55062,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "f00ee9741c1f6d31374f3427f34afb27d0b85c9085b07ade40874e104b2d307d"
+      }
+    ],
+    "rationale": "The local scalar matches the current provider g_l value but has no attached exact evidence. The primary supplies g per A/B batch; provider normalization is a separate nominal basis, not primary proof of measured final volume or stock concentration. Do not put this solute in both a restored stock and the direct receiving array."
+  },
+  {
+    "quantity_id": "q8",
+    "ingredient_or_context": "Sulfuric acid adjustment",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ],
+    "proposed_source_scope": "Unquantified H2SO4 solution to adjust solution A to pH 3.5.",
+    "source_snippets": [
+      {
+        "source_key": "togoM2999",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"H2SO4\"",
+        "snapshot_sha256": "97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2"
+      },
+      {
+        "source_key": "jcm142",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=142",
+        "source_locator": "Immediately after solution A water row",
+        "exact_source_quote": "Adjust pH to 3.5 with H 2 SO 4 solution.",
+        "snapshot_sha256": "d6bb502452a5488244d0d3af0b7cbb16c708743a23e177cc0f5cf254286c91e5",
+        "parsed_text_sha256": "5ba5cd794521856ec542c537eda625cd6f856f4dc671f3c8bced2311fb3f9751"
+      }
+    ],
+    "rationale": "VARIABLE is appropriate for an unspecified titration amount, but preserve its solution-A purpose and pH target; do not invent acid strength or amount."
+  },
+  {
+    "quantity_id": "q9",
+    "ingredient_or_context": "Solution A assembly reference and dose",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "500",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "500",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": "Source provider lists 500 ml of the locally defined A/B batch. Resolve by the exact local recipe section, without the unrelated 5342/5343 IDs.",
+    "source_snippets": [
+      {
+        "source_key": "togoM2999",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Solution A\",\n          \"volume\": 500,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2"
+      }
+    ],
+    "rationale": "The 500 G_PER_L value is dimensionally wrong and the current linked stock identity is incompatible. Preserve the source-listed assembly and primary preparation stages; a same-name lookup is insufficient."
+  },
+  {
+    "quantity_id": "q10",
+    "ingredient_or_context": "Solution B assembly reference and dose",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "500",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "500",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": "Source provider lists 500 ml of the locally defined A/B batch. Resolve by the exact local recipe section, without the unrelated 5342/5343 IDs.",
+    "source_snippets": [
+      {
+        "source_key": "togoM2999",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"Solution B\",\n          \"volume\": 500,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2"
+      }
+    ],
+    "rationale": "The 500 G_PER_L value is dimensionally wrong and the current linked stock identity is incompatible. Preserve the source-listed assembly and primary preparation stages; a same-name lookup is insufficient."
+  },
+  {
+    "quantity_id": "q11",
+    "ingredient_or_context": "Solution A pH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml",
+        "field_path": "solutions[0].preparation_notes",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml",
+        "field_path": "solutions[0].preparation_notes",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "Adjust pH to 3.5 with H 2 SO 4 solution.",
+    "source_snippets": [
+      {
+        "source_key": "jcm142",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=142",
+        "source_locator": "JCM 142 solution A preparation",
+        "exact_source_quote": "Adjust pH to 3.5 with H 2 SO 4 solution.",
+        "snapshot_sha256": "d6bb502452a5488244d0d3af0b7cbb16c708743a23e177cc0f5cf254286c91e5",
+        "parsed_text_sha256": "5ba5cd794521856ec542c537eda625cd6f856f4dc671f3c8bced2311fb3f9751"
+      }
+    ],
+    "rationale": "Missing in both local layers. Keep the pH in A, optional agar concentration explicitly in B, and separate sterilization before aseptic mixing. No unqualified final-medium agar dose, acid concentration, or culture optimization is inferred."
+  },
+  {
+    "quantity_id": "q12",
+    "ingredient_or_context": "Optional solid branch",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "add 15.0 g/L agar in solution B before autoclaving.",
+    "source_snippets": [
+      {
+        "source_key": "jcm142",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=142",
+        "source_locator": "JCM 142 final sentence, conditional solid medium",
+        "exact_source_quote": "add 15.0 g/L agar in solution B before autoclaving.",
+        "snapshot_sha256": "d6bb502452a5488244d0d3af0b7cbb16c708743a23e177cc0f5cf254286c91e5",
+        "parsed_text_sha256": "5ba5cd794521856ec542c537eda625cd6f856f4dc671f3c8bced2311fb3f9751"
+      }
+    ],
+    "rationale": "Missing in both local layers. Keep the pH in A, optional agar concentration explicitly in B, and separate sterilization before aseptic mixing. No unqualified final-medium agar dose, acid concentration, or culture optimization is inferred."
+  },
+  {
+    "quantity_id": "q13",
+    "ingredient_or_context": "Separate sterilization and assembly",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "Autoclave Solutions A and B separately, and mix aseptically.",
+    "source_snippets": [
+      {
+        "source_key": "jcm142",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=142",
+        "source_locator": "JCM 142 final preparation",
+        "exact_source_quote": "Autoclave Solutions A and B separately, and mix aseptically.",
+        "snapshot_sha256": "d6bb502452a5488244d0d3af0b7cbb16c708743a23e177cc0f5cf254286c91e5",
+        "parsed_text_sha256": "5ba5cd794521856ec542c537eda625cd6f856f4dc671f3c8bced2311fb3f9751"
+      }
+    ],
+    "rationale": "Missing in both local layers. Keep the pH in A, optional agar concentration explicitly in B, and separate sterilization before aseptic mixing. No unqualified final-medium agar dose, acid concentration, or culture optimization is inferred."
+  },
+  {
+    "quantity_id": "q14",
+    "ingredient_or_context": "JCM default cycle",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml",
+        "field_path": "sterilization",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml",
+        "field_path": "sterilization",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "autoclaving at 121°C for 15 min.",
+    "source_snippets": [
+      {
+        "source_key": "jcm142",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=142",
+        "source_locator": "Page default unless otherwise stated",
+        "exact_source_quote": "autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "d6bb502452a5488244d0d3af0b7cbb16c708743a23e177cc0f5cf254286c91e5",
+        "parsed_text_sha256": "5ba5cd794521856ec542c537eda625cd6f856f4dc671f3c8bced2311fb3f9751"
+      }
+    ],
+    "rationale": "Missing in both local layers. Keep the pH in A, optional agar concentration explicitly in B, and separate sterilization before aseptic mixing. No unqualified final-medium agar dose, acid concentration, or culture optimization is inferred."
+  }
+]
+
+### Source-specific forms and current CHEBI-based secondary correspondence
+
+grounding: supported. Targets: CultureMech:009515.
+
+7 distinct asserted chemical IDs resolve as nonobsolete. 0 local label instances differ from canonical labels. 6 of 6 distinct current CHEBI-based secondary keys have exact mapped preferred-term rows in the pinned index; unresolved keys: []. This does not validate historical legacy MIM IDs, supplied hydrates, stereochemistry or catalog products.
+
+{"metrics": [{"input": "data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml", "ingredient_instances": 8, "primary": 7, "current_secondary": 6, "primary_percent": 87.5, "current_secondary_percent": 75.0}, {"input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml", "ingredient_instances": 8, "primary": 7, "current_secondary": 6, "primary_percent": 87.5, "current_secondary_percent": 75.0}], "definition": "Ingredient-instance linkage percentages on a 0–100 scale, using each stated layer denominator; these are not scientific correctness scores.", "label_drift": []}
+
+### Source-scoped preparation, conditions and physical-state branches
+
+completeness: concern. Targets: CultureMech:009515.
+
+Both layers omit the source pH, A/B-specific preparation, separate autoclaving and aseptic mixing, and optional solid branch. The 15 g/L agar wording belongs to solution B before sterilization; the primary does not authorize silently reporting 15 g/L in the final mixed medium. The exact JCM default cycle is applicable unless otherwise stated.
+
+### Medium classification, applications and organism claim scope
+
+scope: supported. Targets: CultureMech:009515.
+
+COMPLEX/SEMI_DEFINED fits defined salts/glucose plus undefined yeast extract; LIQUID is consistent with the unsupplemented branch. The optional solid branch is separately source supported and presently unrepresented. No growth claim or taxonomic identification follows from the title alone.
+
+### Exact supplied chemical forms and mixture identity
+
+grounding: supported. Targets: CultureMech:009515.
+
+Asserted source forms were compared with the captured ontology metadata; no unsupported replacement terms are proposed.
+
+### Claim-level formulation evidence and current annotations
+
+evidence: concern. Targets: CultureMech:009515.
+
+Both layers have source URLs only in notes, without narrow formulation snippets or root bibliography. Their source metadata identifies the correct medium, but does not validate the unrelated stock links or the subsequent water collapse. Preserve prior history and append a source-based clarification after authorized repair.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:009515.
+
+28 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Source-stage-aware repair and regenerated output
+
+ownership: concern. Targets: CultureMech:009515.
+
+Fix the exact normalized owner and source-stage handling in the duplicate-repair/solution-resolution paths if reused. The generated target preserves an earlier summed-water state; the September owner collapse is a different incorrect representation. Do not rewrite either historical event to suggest it was source verified.
+
+## Findings
+
+### f1: Generic A/B links resolve to different formulations
+
+blocker / open / confirmed; issue key: cm009515-wrong-a-b-stock-links.
+
+Both layers assert mediadive.solution:5342 and :5343 for the JCM 142 A/B components, but exact APIs and maintained stock records identify different high-salt formulations. The references are resolvable yet scientifically wrong. Neither scalar 500 G_PER_L is a source-supported dose.
+
+### f2: Two legitimate water aliquots were first summed as mass and then collapsed
+
+blocker / open / confirmed; issue key: cm009515-water-stage-collapse.
+
+JCM 142 and TOGO M2999 each specify 500 ml water in A and 500 ml in B. Target ingredients[0] is 1000 G_PER_L with a merged-duplicate note; owner ingredients[0] is 500 G_PER_L with a collapsed-duplicate note and later repair event. Equal numbers in distinct source stages are not duplicate evidence.
+
+### f3: The source preparation and conditional solid branch are missing
+
+major / open / confirmed; issue key: cm009515-stage-preparation-evidence.
+
+Neither local layer retains solution-A pH 3.5, separate A/B sterilization and aseptic mixing, the default JCM cycle, or the optional agar instruction scoped to B. Quantity evidence is missing despite exact collection/provider content being available.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Replace the name-only associations with exact, evidence-backed A/B inline sections or independently verified references. Preserve their source aliquots and preparation stages; do not invent a replacement identifier or import any 5342/5343 constituents.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Recover the two water entries within their respective A/B formulations. Correct dimensional and stage scope while retaining original history and adding an explicit source-based clarification. Guard future duplicate repair against collapsing separate source-stage additions.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Attach exact source snippets to the relevant quantities and A/B preparation claims; represent the optional solid branch without changing the base liquid formulation or inventing its final-medium agar dose.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch018/179/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch018/179/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml:1:id: CultureMech:009515<br>./data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml:1:id: CultureMech:009515<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch018/source-preflight-bound/179/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 17 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| togoM2999 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999; $.meta; $.components[0:3]; $.comments | supports | M2999 preserves original token JCM_M142-1 and points to the actual JCM 142 recipe, with separate A/B sections. |
+| jcm142 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=142; Complete JCM 142 recipe and page default | supports | Primary identifies two independently prepared solutions, each with its own 500 ml water; optional agar is explicitly in solution B. |
+| mediadiveJ142api | https://mediadive.dsmz.de/rest/medium/J142; $.data.medium; $.data.solutions[0] | supports | Current provider J142 is a flattened main solution 3786, declared 1000 ml. Its amount/g_l fields support provider transcription but do not replace the primary A/B stage definitions. |
+| mediadiveSolution5342 | https://mediadive.dsmz.de/rest/solution/5342; $.data.id, $.data.recipe and $.data.steps | supports | Resolved solution 5342 is a different yeast/casamino-acids/high-salt formulation. It is an identity comparator only, never a substitute for JCM 142 solution A. |
+| mediadiveSolution5343 | https://mediadive.dsmz.de/rest/solution/5343; $.data.id, $.data.recipe and $.data.steps | supports | Resolved solution 5343 is a different carbonate/high-salt formulation. It is an identity comparator only, never a substitute for JCM 142 solution B. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch018/179/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:131527: dipotassium hydrogen phosphate. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:15377: water. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:17234: glucose. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi26836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26836; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:26836: sulfuric acid. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:31795: magnesium sulfate heptahydrate. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:32588: potassium chloride. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:62946: ammonium sulfate. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chemical-context | /private/tmp/culturemech-review-work-batch018/179/chemical-grounding-context.json; Every primary and current CHEBI-based secondary ingredient term in the target and maintained owners | context_only | Full OLS annotations, local instance locators, label differences, pinned exact-key MIM rows and layer-specific linkage metrics. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Exact identifier rows and pinned metadata source commit; no fuzzy replacements | context_only | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "current_secondary_rows": {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26836": [{"label": "H2SO4", "match_type": "preferred_term", "identifier": "CHEBI:26836", "preferred_term": "H2SO4", "ontology_id": "CHEBI:26836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, "missing": []} |
+| history-metadata | data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 14, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml", "events": 14, "timestamp_issues": []}] |
+| writer-0 | scripts/repair_merged_duplicates.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current duplicate repair collapses identical historical parts without checking their source stages; the maintained water note/event records this collapse. Solution migration resolves generic names from an index and copies concentrations. Current TOGO code already recognizes primary/local sections and retains comments, so no blanket claim that the current importer always flattens every section is made. Current merging guards formulation equality. |
+| writer-1 | scripts/migrate_solutions_from_ingredients.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current duplicate repair collapses identical historical parts without checking their source stages; the maintained water note/event records this collapse. Solution migration resolves generic names from an index and copies concentrations. Current TOGO code already recognizes primary/local sections and retains comments, so no blanket claim that the current importer always flattens every section is made. Current merging guards formulation equality. |
+| writer-2 | src/culturemech/import/togo_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current duplicate repair collapses identical historical parts without checking their source stages; the maintained water note/event records this collapse. Solution migration resolves generic names from an index and copies concentrations. Current TOGO code already recognizes primary/local sections and retains comments, so no blanket claim that the current importer always flattens every section is made. Current merging guards formulation equality. |
+| writer-3 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current duplicate repair collapses identical historical parts without checking their source stages; the maintained water note/event records this collapse. Solution migration resolves generic names from an index and copies concentrations. Current TOGO code already recognizes primary/local sections and retains comments, so no blanket claim that the current importer always flattens every section is made. Current merging guards formulation equality. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- All required exact source and asserted target/owner chemical-ID checks were available. External sources establish the stated formulation, not experimental growth or optimization.
+- The raw primary supplies stage-specific batch masses and water aliquots. The current MediaDive 1000 ml normalization is explicitly distinguished from a measured final volume.
+- Wrongly linked stock records were examined only to determine identity; their chemical constituents and unrelated preparation are not proposed for this medium.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T112320Z-culturemech-009515-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: acidobacterium_medium (CultureMech:009515)'
+started_at: '2026-10-21T11:18:00Z'
+finished_at: '2026-10-21T11:23:20Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: 'The exact TOGO M2999 / JCM 142 source uses separate A and B preparations.
+  Both local layers instead reference unrelated generic-name-matched stocks, and their
+  water representations lose the two source stages: the generated target sums them
+  to 1000 g/L while the later owner collapses them to 500 g/L. Source-specific preparation,
+  pH, optional agar scope and narrow quantity evidence require recovery.'
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml
+    sha256: 1aa5adb4885a6966afde46c67cf56db5068913a32baa77060ce8bdac8a7a81a6
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml
+    sha256: d546609b83a03af46b8c72cc1b803b0bf0c4de962ecc625c01e867eda3874f9e
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml
+    sha256: fbc65564968b86b312f7795ff5c4527f199c51d04dc2764452d46bb5ba339566
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml
+    sha256: 84a4c07adfb1f11f32159a52f5e575738eb641428074b0958a68b8d5ba265ba5
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/enrich_solutions_with_chebi.py
+    sha256: b4054fb4f13ecfb8362d421c549dfd34f1e94823caa107f2d1bf2d4462697b29
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_io.py
+    sha256: bff4715f85d7ff2ff681b88f0a2de2667e5767d7a2c196bd50a37d5d329957ac
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 179; batch 018 item 9 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding seventeen task batches
+    contain 170 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 172 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009515
+targets:
+- target_id: CultureMech:009515
+  path: data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml
+  label: acidobacterium_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:009515
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch018/179/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch018/179/strict.tsv"
+  target_ids:
+  - CultureMech:009515
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:009515
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:009515
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:009515
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T11:23:19Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T11:23:19Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:19:41.552081Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch018/179/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:19:43.967612Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch018/179/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:19:47.651310Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:19:50.583135Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T11:23:19Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml:1:id: CultureMech:009515
+
+    ./data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml:1:id: CultureMech:009515
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch018/source-preflight-bound/179/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T11:23:19Z'
+  support: supports
+  summary: 17 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 876159de231272849cffa5e900d1d34490ab68e3140fc49c7261209bf0f12333
+- evidence_id: togoM2999
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999
+  locator: $.meta; $.components[0:3]; $.comments
+  accessed_at: '2026-10-21T11:01:46.297736Z'
+  support: supports
+  summary: M2999 preserves original token JCM_M142-1 and points to the actual JCM
+    142 recipe, with separate A/B sections.
+  snapshot_sha256: 97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2
+- evidence_id: jcm142
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=142
+  locator: Complete JCM 142 recipe and page default
+  accessed_at: '2026-10-21T11:01:48.039904Z'
+  support: supports
+  summary: Primary identifies two independently prepared solutions, each with its
+    own 500 ml water; optional agar is explicitly in solution B.
+  snapshot_sha256: d6bb502452a5488244d0d3af0b7cbb16c708743a23e177cc0f5cf254286c91e5
+- evidence_id: mediadiveJ142api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J142
+  locator: $.data.medium; $.data.solutions[0]
+  accessed_at: '2026-10-21T11:01:45.593355Z'
+  support: supports
+  summary: Current provider J142 is a flattened main solution 3786, declared 1000
+    ml. Its amount/g_l fields support provider transcription but do not replace the
+    primary A/B stage definitions.
+  snapshot_sha256: f00ee9741c1f6d31374f3427f34afb27d0b85c9085b07ade40874e104b2d307d
+- evidence_id: mediadiveSolution5342
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5342
+  locator: $.data.id, $.data.recipe and $.data.steps
+  accessed_at: '2026-10-21T07:31:13.269119Z'
+  support: supports
+  summary: Resolved solution 5342 is a different yeast/casamino-acids/high-salt formulation.
+    It is an identity comparator only, never a substitute for JCM 142 solution A.
+  snapshot_sha256: 4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240
+- evidence_id: mediadiveSolution5343
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5343
+  locator: $.data.id, $.data.recipe and $.data.steps
+  accessed_at: '2026-10-21T07:31:13.547266Z'
+  support: supports
+  summary: Resolved solution 5343 is a different carbonate/high-salt formulation.
+    It is an identity comparator only, never a substitute for JCM 142 solution B.
+  snapshot_sha256: 28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch018/179/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T11:23:19Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 57513f85472e4741ddf1710c2151641a7ec005d8cb2a8a7ced6cd8f515fae1b6
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: 'CHEBI:131527: dipotassium hydrogen phosphate. Source-specific forms are
+    assessed separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: 'CHEBI:15377: water. Source-specific forms are assessed separately; valid
+    ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: 'CHEBI:17234: glucose. Source-specific forms are assessed separately; valid
+    ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi26836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26836
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T07:29:13.222926Z'
+  support: supports
+  summary: 'CHEBI:26836: sulfuric acid. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 19e202cd697eed2be3130d5b0b29cc0c1d18575ad103110877303ee678779737
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: 'CHEBI:31795: magnesium sulfate heptahydrate. Source-specific forms are
+    assessed separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: 'CHEBI:32588: potassium chloride. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: 'CHEBI:62946: ammonium sulfate. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chemical-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch018/179/chemical-grounding-context.json
+  locator: Every primary and current CHEBI-based secondary ingredient term in the
+    target and maintained owners
+  accessed_at: '2026-10-21T11:23:19Z'
+  support: context_only
+  summary: Full OLS annotations, local instance locators, label differences, pinned
+    exact-key MIM rows and layer-specific linkage metrics.
+  snapshot_sha256: e32aa18949042a843907e2dde665f4f165670efbdd7cb783472c344ba37ab132
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact identifier rows and pinned metadata source commit; no fuzzy replacements
+  accessed_at: '2026-10-21T11:23:19Z'
+  support: context_only
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "current_secondary_rows":
+    {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water",
+    "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term":
+    "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term",
+    "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26836": [{"label":
+    "H2SO4", "match_type": "preferred_term", "identifier": "CHEBI:26836", "preferred_term":
+    "H2SO4", "ontology_id": "CHEBI:26836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4",
+    "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}]},
+    "missing": []}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T11:23:19Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 14, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml", "events":
+    14, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: scripts/repair_merged_duplicates.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:23:19Z'
+  support: context_only
+  summary: Current duplicate repair collapses identical historical parts without checking
+    their source stages; the maintained water note/event records this collapse. Solution
+    migration resolves generic names from an index and copies concentrations. Current
+    TOGO code already recognizes primary/local sections and retains comments, so no
+    blanket claim that the current importer always flattens every section is made.
+    Current merging guards formulation equality.
+  snapshot_sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:23:19Z'
+  support: context_only
+  summary: Current duplicate repair collapses identical historical parts without checking
+    their source stages; the maintained water note/event records this collapse. Solution
+    migration resolves generic names from an index and copies concentrations. Current
+    TOGO code already recognizes primary/local sections and retains comments, so no
+    blanket claim that the current importer always flattens every section is made.
+    Current merging guards formulation equality.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:23:19Z'
+  support: context_only
+  summary: Current duplicate repair collapses identical historical parts without checking
+    their source stages; the maintained water note/event records this collapse. Solution
+    migration resolves generic names from an index and copies concentrations. Current
+    TOGO code already recognizes primary/local sections and retains comments, so no
+    blanket claim that the current importer always flattens every section is made.
+    Current merging guards formulation equality.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:23:19Z'
+  support: context_only
+  summary: Current duplicate repair collapses identical historical parts without checking
+    their source stages; the maintained water note/event records this collapse. Solution
+    migration resolves generic names from an index and copies concentrations. Current
+    TOGO code already recognizes primary/local sections and retains comments, so no
+    blanket claim that the current importer always flattens every section is made.
+    Current merging guards formulation equality.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:009515
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact accession and solution-reference identity
+  outcome: concern
+  summary: 'The medium itself resolves exactly to CultureMech:009515, TOGO M2999,
+    original JCM_M142-1 and live JCM 142. The generic Solution A/B names do not establish
+    identity: asserted mediadive.solution:5342 and :5343 resolve but describe incompatible
+    compositions. Current J142 exposes main solution 3786, not independently verified
+    replacement A/B IDs.'
+  target_ids:
+  - CultureMech:009515
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - togoM2999
+  - jcm142
+  - mediadiveJ142api
+  - mediadiveSolution5342
+  - mediadiveSolution5343
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 14 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence. All 20 ingredient and stock-dose concentration instances across
+    the target and maintained owners are explicitly covered; additional rows retain
+    preparation quantities and source-only components.
+  target_ids:
+  - CultureMech:009515
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"ingredient_or_context\": \"\
+    Water in two separate preparation stages\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1000.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"500.0\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"500 ml water in solution A and separately 500 ml water in solution B; preserve\
+    \ both aliquots/stages, not a mass concentration.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM2999\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999\",\n\
+    \        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 500,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2\"\n      },\n\
+    \      {\n        \"source_key\": \"togoM2999\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999\"\
+    ,\n        \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 500,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2\"\n      }\n\
+    \    ],\n    \"rationale\": \"Both water rows are deliberate source additions\
+    \ in different sections. The target 1000 G_PER_L and owner 500 G_PER_L are wrong-dimensional\
+    \ representations; the later identical-row collapse also loses a source stage.\
+    \ 500+500=1000 ml listed water, not a measured final volume after dissolved solutes.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"ingredient_or_context\": \"MgSO4・7H2O\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml\",\n   \
+    \     \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"Preserve the original batch amount in source solution A; retain any per-litre\
+    \ expression only with the explicit provider-declared 1000 ml mixed-medium basis.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2999\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgSO4・7H2O\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ142api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J142\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 0.5,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n  \
+    \                      \\\"mmol_l\\\": 2.02859,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"f00ee9741c1f6d31374f3427f34afb27d0b85c9085b07ade40874e104b2d307d\"\
+    \n      }\n    ],\n    \"rationale\": \"The local scalar matches the current provider\
+    \ g_l value but has no attached exact evidence. The primary supplies g per A/B\
+    \ batch; provider normalization is a separate nominal basis, not primary proof\
+    \ of measured final volume or stock concentration. Do not put this solute in both\
+    \ a restored stock and the direct receiving array.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q3\",\n    \"ingredient_or_context\": \"K2HPO4\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"Preserve the original batch amount in source solution A; retain any per-litre\
+    \ expression only with the explicit provider-declared 1000 ml mixed-medium basis.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2999\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999\"\
+    ,\n        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2HPO4\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ142api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J142\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"K2HPO4\\\",\\n                        \\\"compound_id\\\": 10,\\\
+    n                        \\\"amount\\\": 0.5,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n                \
+    \        \\\"mmol_l\\\": 2.87066,\\n                        \\\"optional\\\":\
+    \ 0\\n                    }\",\n        \"snapshot_sha256\": \"f00ee9741c1f6d31374f3427f34afb27d0b85c9085b07ade40874e104b2d307d\"\
+    \n      }\n    ],\n    \"rationale\": \"The local scalar matches the current provider\
+    \ g_l value but has no attached exact evidence. The primary supplies g per A/B\
+    \ batch; provider normalization is a separate nominal basis, not primary proof\
+    \ of measured final volume or stock concentration. Do not put this solute in both\
+    \ a restored stock and the direct receiving array.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q4\",\n    \"ingredient_or_context\": \"KCl\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"Preserve the original batch amount in source solution A; retain any per-litre\
+    \ expression only with the explicit provider-declared 1000 ml mixed-medium basis.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2999\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999\"\
+    ,\n        \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KCl\\\",\\n          \\\"volume\\\": 0.1,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ142api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J142\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"KCl\\\",\\n                        \\\"compound_id\\\": 61,\\\
+    n                        \\\"amount\\\": 0.1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n                \
+    \        \\\"mmol_l\\\": 1.34138,\\n                        \\\"optional\\\":\
+    \ 0\\n                    }\",\n        \"snapshot_sha256\": \"f00ee9741c1f6d31374f3427f34afb27d0b85c9085b07ade40874e104b2d307d\"\
+    \n      }\n    ],\n    \"rationale\": \"The local scalar matches the current provider\
+    \ g_l value but has no attached exact evidence. The primary supplies g per A/B\
+    \ batch; provider normalization is a separate nominal basis, not primary proof\
+    \ of measured final volume or stock concentration. Do not put this solute in both\
+    \ a restored stock and the direct receiving array.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q5\",\n    \"ingredient_or_context\": \"(NH4)2SO4\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"Preserve the original batch amount in source solution A; retain any per-litre\
+    \ expression only with the explicit provider-declared 1000 ml mixed-medium basis.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2999\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999\"\
+    ,\n        \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"(NH4)2SO4\\\",\\n          \\\"volume\\\": 2,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ142api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J142\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"(NH4)2SO4\\\",\\n                        \\\"compound_id\\\"\
+    : 27,\\n                        \\\"amount\\\": 2,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2,\\n          \
+    \              \\\"mmol_l\\\": 15.1355,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"f00ee9741c1f6d31374f3427f34afb27d0b85c9085b07ade40874e104b2d307d\"\
+    \n      }\n    ],\n    \"rationale\": \"The local scalar matches the current provider\
+    \ g_l value but has no attached exact evidence. The primary supplies g per A/B\
+    \ batch; provider normalization is a separate nominal basis, not primary proof\
+    \ of measured final volume or stock concentration. Do not put this solute in both\
+    \ a restored stock and the direct receiving array.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q6\",\n    \"ingredient_or_context\": \"Yeast extract (BD-Difco)\",\n    \"\
+    decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[5].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"Preserve the original batch amount in source solution A; retain any per-litre\
+    \ expression only with the explicit provider-declared 1000 ml mixed-medium basis.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2999\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999\"\
+    ,\n        \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Yeast extract (BD-Difco)\\\",\\n          \\\"\
+    volume\\\": 0.1,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2\"\n     \
+    \ },\n      {\n        \"source_key\": \"mediadiveJ142api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J142\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"optional\\\": 0\\n                    }\",\n     \
+    \   \"snapshot_sha256\": \"f00ee9741c1f6d31374f3427f34afb27d0b85c9085b07ade40874e104b2d307d\"\
+    \n      }\n    ],\n    \"rationale\": \"The local scalar matches the current provider\
+    \ g_l value but has no attached exact evidence. The primary supplies g per A/B\
+    \ batch; provider normalization is a separate nominal basis, not primary proof\
+    \ of measured final volume or stock concentration. Do not put this solute in both\
+    \ a restored stock and the direct receiving array.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q7\",\n    \"ingredient_or_context\": \"Glucose\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"Preserve the original batch amount in source solution B; retain any per-litre\
+    \ expression only with the explicit provider-declared 1000 ml mixed-medium basis.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2999\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999\"\
+    ,\n        \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Glucose\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ142api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J142\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"Glucose\\\",\\n                        \\\"compound_id\\\":\
+    \ 5,\\n                        \\\"amount\\\": 1,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n          \
+    \              \\\"mmol_l\\\": 5.55062,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"f00ee9741c1f6d31374f3427f34afb27d0b85c9085b07ade40874e104b2d307d\"\
+    \n      }\n    ],\n    \"rationale\": \"The local scalar matches the current provider\
+    \ g_l value but has no attached exact evidence. The primary supplies g per A/B\
+    \ batch; provider normalization is a separate nominal basis, not primary proof\
+    \ of measured final volume or stock concentration. Do not put this solute in both\
+    \ a restored stock and the direct receiving array.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q8\",\n    \"ingredient_or_context\": \"Sulfuric acid adjustment\",\n    \"\
+    decision\": \"not_quantified\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[6].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"variable\",\n          \"unit\": \"VARIABLE\"\n        },\n        \"decision\"\
+    : \"not_quantified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"Unquantified H2SO4 solution to adjust solution A to pH 3.5.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM2999\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999\",\n\
+    \        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"H2SO4\\\"\",\n        \"snapshot_sha256\": \"\
+    97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2\"\n      },\n\
+    \      {\n        \"source_key\": \"jcm142\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=142\"\
+    ,\n        \"source_locator\": \"Immediately after solution A water row\",\n \
+    \       \"exact_source_quote\": \"Adjust pH to 3.5 with H 2 SO 4 solution.\",\n\
+    \        \"snapshot_sha256\": \"d6bb502452a5488244d0d3af0b7cbb16c708743a23e177cc0f5cf254286c91e5\"\
+    ,\n        \"parsed_text_sha256\": \"5ba5cd794521856ec542c537eda625cd6f856f4dc671f3c8bced2311fb3f9751\"\
+    \n      }\n    ],\n    \"rationale\": \"VARIABLE is appropriate for an unspecified\
+    \ titration amount, but preserve its solution-A purpose and pH target; do not\
+    \ invent acid strength or amount.\"\n  },\n  {\n    \"quantity_id\": \"q9\",\n\
+    \    \"ingredient_or_context\": \"Solution A assembly reference and dose\",\n\
+    \    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"solutions[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"500\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"500\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"Source provider lists 500 ml of the locally defined A/B batch. Resolve by\
+    \ the exact local recipe section, without the unrelated 5342/5343 IDs.\",\n  \
+    \  \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2999\",\n \
+    \       \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Solution A\\\",\\n          \\\"volume\\\": 500,\\\
+    n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2\"\
+    \n      }\n    ],\n    \"rationale\": \"The 500 G_PER_L value is dimensionally\
+    \ wrong and the current linked stock identity is incompatible. Preserve the source-listed\
+    \ assembly and primary preparation stages; a same-name lookup is insufficient.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"ingredient_or_context\": \"\
+    Solution B assembly reference and dose\",\n    \"decision\": \"correct\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"500\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"500\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"Source provider lists 500 ml of the locally defined A/B batch. Resolve by\
+    \ the exact local recipe section, without the unrelated 5342/5343 IDs.\",\n  \
+    \  \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2999\",\n \
+    \       \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2999\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Solution B\\\",\\n          \\\"volume\\\": 500,\\\
+    n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"97280a2c85236fc56d79238ca1d9eed7d9b4f13723bb58e6becde556f17836f2\"\
+    \n      }\n    ],\n    \"rationale\": \"The 500 G_PER_L value is dimensionally\
+    \ wrong and the current linked stock identity is incompatible. Preserve the source-listed\
+    \ assembly and primary preparation stages; a same-name lookup is insufficient.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"ingredient_or_context\": \"\
+    Solution A pH\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml\",\n \
+    \       \"field_path\": \"solutions[0].preparation_notes\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml\",\n\
+    \        \"field_path\": \"solutions[0].preparation_notes\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"Adjust pH to 3.5 with H 2 SO 4 solution.\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm142\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=142\"\
+    ,\n        \"source_locator\": \"JCM 142 solution A preparation\",\n        \"\
+    exact_source_quote\": \"Adjust pH to 3.5 with H 2 SO 4 solution.\",\n        \"\
+    snapshot_sha256\": \"d6bb502452a5488244d0d3af0b7cbb16c708743a23e177cc0f5cf254286c91e5\"\
+    ,\n        \"parsed_text_sha256\": \"5ba5cd794521856ec542c537eda625cd6f856f4dc671f3c8bced2311fb3f9751\"\
+    \n      }\n    ],\n    \"rationale\": \"Missing in both local layers. Keep the\
+    \ pH in A, optional agar concentration explicitly in B, and separate sterilization\
+    \ before aseptic mixing. No unqualified final-medium agar dose, acid concentration,\
+    \ or culture optimization is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q12\"\
+    ,\n    \"ingredient_or_context\": \"Optional solid branch\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"variants\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml\"\
+    ,\n        \"field_path\": \"variants\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": \"add 15.0\
+    \ g/L agar in solution B before autoclaving.\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm142\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=142\"\
+    ,\n        \"source_locator\": \"JCM 142 final sentence, conditional solid medium\"\
+    ,\n        \"exact_source_quote\": \"add 15.0 g/L agar in solution B before autoclaving.\"\
+    ,\n        \"snapshot_sha256\": \"d6bb502452a5488244d0d3af0b7cbb16c708743a23e177cc0f5cf254286c91e5\"\
+    ,\n        \"parsed_text_sha256\": \"5ba5cd794521856ec542c537eda625cd6f856f4dc671f3c8bced2311fb3f9751\"\
+    \n      }\n    ],\n    \"rationale\": \"Missing in both local layers. Keep the\
+    \ pH in A, optional agar concentration explicitly in B, and separate sterilization\
+    \ before aseptic mixing. No unqualified final-medium agar dose, acid concentration,\
+    \ or culture optimization is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q13\"\
+    ,\n    \"ingredient_or_context\": \"Separate sterilization and assembly\",\n \
+    \   \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null,\n        \"decision\": \"\
+    add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"Autoclave Solutions A and B separately, and mix aseptically.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm142\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=142\",\n        \"source_locator\"\
+    : \"JCM 142 final preparation\",\n        \"exact_source_quote\": \"Autoclave\
+    \ Solutions A and B separately, and mix aseptically.\",\n        \"snapshot_sha256\"\
+    : \"d6bb502452a5488244d0d3af0b7cbb16c708743a23e177cc0f5cf254286c91e5\",\n    \
+    \    \"parsed_text_sha256\": \"5ba5cd794521856ec542c537eda625cd6f856f4dc671f3c8bced2311fb3f9751\"\
+    \n      }\n    ],\n    \"rationale\": \"Missing in both local layers. Keep the\
+    \ pH in A, optional agar concentration explicitly in B, and separate sterilization\
+    \ before aseptic mixing. No unqualified final-medium agar dose, acid concentration,\
+    \ or culture optimization is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q14\"\
+    ,\n    \"ingredient_or_context\": \"JCM default cycle\",\n    \"decision\": \"\
+    add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null,\n   \
+    \     \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null,\n   \
+    \     \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": \"\
+    autoclaving at 121°C for 15 min.\",\n    \"source_snippets\": [\n      {\n   \
+    \     \"source_key\": \"jcm142\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=142\"\
+    ,\n        \"source_locator\": \"Page default unless otherwise stated\",\n   \
+    \     \"exact_source_quote\": \"autoclaving at 121°C for 15 min.\",\n        \"\
+    snapshot_sha256\": \"d6bb502452a5488244d0d3af0b7cbb16c708743a23e177cc0f5cf254286c91e5\"\
+    ,\n        \"parsed_text_sha256\": \"5ba5cd794521856ec542c537eda625cd6f856f4dc671f3c8bced2311fb3f9751\"\
+    \n      }\n    ],\n    \"rationale\": \"Missing in both local layers. Keep the\
+    \ pH in A, optional agar concentration explicitly in B, and separate sterilization\
+    \ before aseptic mixing. No unqualified final-medium agar dose, acid concentration,\
+    \ or culture optimization is inferred.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Source-specific forms and current CHEBI-based secondary correspondence
+  outcome: supported
+  summary: '7 distinct asserted chemical IDs resolve as nonobsolete. 0 local label
+    instances differ from canonical labels. 6 of 6 distinct current CHEBI-based secondary
+    keys have exact mapped preferred-term rows in the pinned index; unresolved keys:
+    []. This does not validate historical legacy MIM IDs, supplied hydrates, stereochemistry
+    or catalog products.'
+  target_ids:
+  - CultureMech:009515
+  evidence_ids:
+  - record
+  - chemical-context
+  - mim
+  - owner-0
+  - chebi131527
+  - chebi15377
+  - chebi17234
+  - chebi26836
+  - chebi31795
+  - chebi32588
+  - chebi62946
+  details: '{"metrics": [{"input": "data/merge_yaml/merged/ACIDOBACTERIUM_MEDIUM.yaml",
+    "ingredient_instances": 8, "primary": 7, "current_secondary": 6, "primary_percent":
+    87.5, "current_secondary_percent": 75.0}, {"input": "data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml",
+    "ingredient_instances": 8, "primary": 7, "current_secondary": 6, "primary_percent":
+    87.5, "current_secondary_percent": 75.0}], "definition": "Ingredient-instance
+    linkage percentages on a 0–100 scale, using each stated layer denominator; these
+    are not scientific correctness scores.", "label_drift": []}'
+- assessment_id: preparation
+  area: completeness
+  topic: Source-scoped preparation, conditions and physical-state branches
+  outcome: concern
+  summary: Both layers omit the source pH, A/B-specific preparation, separate autoclaving
+    and aseptic mixing, and optional solid branch. The 15 g/L agar wording belongs
+    to solution B before sterilization; the primary does not authorize silently reporting
+    15 g/L in the final mixed medium. The exact JCM default cycle is applicable unless
+    otherwise stated.
+  target_ids:
+  - CultureMech:009515
+  evidence_ids:
+  - record
+  - owner-0
+  - togoM2999
+  - jcm142
+  - mediadiveJ142api
+- assessment_id: classification
+  area: scope
+  topic: Medium classification, applications and organism claim scope
+  outcome: supported
+  summary: COMPLEX/SEMI_DEFINED fits defined salts/glucose plus undefined yeast extract;
+    LIQUID is consistent with the unsupplemented branch. The optional solid branch
+    is separately source supported and presently unrepresented. No growth claim or
+    taxonomic identification follows from the title alone.
+  target_ids:
+  - CultureMech:009515
+  evidence_ids:
+  - record
+  - owner-0
+  - togoM2999
+  - jcm142
+  - mediadiveJ142api
+- assessment_id: forms
+  area: grounding
+  topic: Exact supplied chemical forms and mixture identity
+  outcome: supported
+  summary: Asserted source forms were compared with the captured ontology metadata;
+    no unsupported replacement terms are proposed.
+  target_ids:
+  - CultureMech:009515
+  evidence_ids:
+  - record
+  - chemical-context
+  - owner-0
+  - togoM2999
+  - jcm142
+  - mediadiveJ142api
+- assessment_id: evidence-placement
+  area: evidence
+  topic: Claim-level formulation evidence and current annotations
+  outcome: concern
+  summary: Both layers have source URLs only in notes, without narrow formulation
+    snippets or root bibliography. Their source metadata identifies the correct medium,
+    but does not validate the unrelated stock links or the subsequent water collapse.
+    Preserve prior history and append a source-based clarification after authorized
+    repair.
+  target_ids:
+  - CultureMech:009515
+  evidence_ids:
+  - record
+  - quantity-inventory
+  - owner-0
+  - togoM2999
+  - jcm142
+  - mediadiveJ142api
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 28 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:009515
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: ownership
+  area: ownership
+  topic: Source-stage-aware repair and regenerated output
+  outcome: concern
+  summary: Fix the exact normalized owner and source-stage handling in the duplicate-repair/solution-resolution
+    paths if reused. The generated target preserves an earlier summed-water state;
+    the September owner collapse is a different incorrect representation. Do not rewrite
+    either historical event to suggest it was source verified.
+  target_ids:
+  - CultureMech:009515
+  evidence_ids:
+  - record
+  - owner-0
+  - writer-0
+  - writer-1
+  - writer-2
+  - writer-3
+findings:
+- finding_id: f1
+  issue_key: cm009515-wrong-a-b-stock-links
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Generic A/B links resolve to different formulations
+  description: Both layers assert mediadive.solution:5342 and :5343 for the JCM 142
+    A/B components, but exact APIs and maintained stock records identify different
+    high-salt formulations. The references are resolvable yet scientifically wrong.
+    Neither scalar 500 G_PER_L is a source-supported dose.
+  target_ids:
+  - CultureMech:009515
+  field_paths:
+  - solutions[0].term
+  - solutions[1].term
+  - solutions[*].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - togoM2999
+  - jcm142
+  - mediadiveSolution5342
+  - mediadiveSolution5343
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm009515-water-stage-collapse
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Two legitimate water aliquots were first summed as mass and then collapsed
+  description: JCM 142 and TOGO M2999 each specify 500 ml water in A and 500 ml in
+    B. Target ingredients[0] is 1000 G_PER_L with a merged-duplicate note; owner ingredients[0]
+    is 500 G_PER_L with a collapsed-duplicate note and later repair event. Equal numbers
+    in distinct source stages are not duplicate evidence.
+  target_ids:
+  - CultureMech:009515
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[0].notes
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - quantity-inventory
+  - togoM2999
+  - jcm142
+  - writer-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm009515-stage-preparation-evidence
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The source preparation and conditional solid branch are missing
+  description: Neither local layer retains solution-A pH 3.5, separate A/B sterilization
+    and aseptic mixing, the default JCM cycle, or the optional agar instruction scoped
+    to B. Quantity evidence is missing despite exact collection/provider content being
+    available.
+  target_ids:
+  - CultureMech:009515
+  field_paths:
+  - preparation_steps
+  - sterilization
+  - ph_value
+  - variants
+  - references
+  - ingredients[*].evidence
+  evidence_ids:
+  - record
+  - owner-0
+  - quantity-inventory
+  - jcm142
+  - togoM2999
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Replace the name-only associations with exact, evidence-backed A/B
+    inline sections or independently verified references. Preserve their source aliquots
+    and preparation stages; do not invent a replacement identifier or import any 5342/5343
+    constituents.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009515
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Recover the two water entries within their respective A/B formulations.
+    Correct dimensional and stage scope while retaining original history and adding
+    an explicit source-based clarification. Guard future duplicate repair against
+    collapsing separate source-stage additions.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009515
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Attach exact source snippets to the relevant quantities and A/B preparation
+    claims; represent the optional solid branch without changing the base liquid formulation
+    or inventing its final-medium agar dose.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:009515
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2999_Acidobacterium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- All required exact source and asserted target/owner chemical-ID checks were available.
+  External sources establish the stated formulation, not experimental growth or optimization.
+- The raw primary supplies stage-specific batch masses and water aliquots. The current
+  MediaDive 1000 ml normalization is explicitly distinguished from a measured final
+  volume.
+- Wrongly linked stock records were examined only to determine identity; their chemical
+  constituents and unrelated preparation are not proposed for this medium.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-018
+- generated-medium
+```

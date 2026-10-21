@@ -1,0 +1,1694 @@
+# Source and formulation review: acidithiobacillus_medium (CultureMech:001459)
+
+- Review: 20261021T112249Z-culturemech-001459-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T11:17:53Z
+- Finished UTC: 2026-10-21T11:22:49Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The five base-medium concentrations, pH and staged sulfur preparation agree with DSMZ 35. Sulfur has a valid primary ontology identity but its asserted secondary key is absent from the pinned MIM index. The generated copy omits later owner evidence; source batch/material details and conditional strain scope require bounded follow-up.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 176; batch 018 item 6 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding seventeen task batches contain 170 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 172 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001459 | data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml | generated | acidithiobacillus_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001459 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:001459 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch018/176/strict.tsv |
+| validate-terms | passed | True | CultureMech:001459 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:001459 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:001459 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:001459.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Every asserted ontology ID and pinned secondary key
+
+grounding: concern. Targets: CultureMech:001459.
+
+All five primary and secondary term labels resolve to matching nonobsolete OLS terms in both layers. Primary instance linkage is 5/5 (100%); asserted secondary linkage is 5/5 (100%), but exact current MIM preferred-key membership is only 4/5 (80%). Sulfur CHEBI:26833 has zero rows anywhere in the pinned index. These 0–100 percent metrics use five ingredient instances as the denominator; they do not measure scientific accuracy.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:001459.
+
+14 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### DSMZ 35 and maintained ownership
+
+identity: supported. Targets: CultureMech:001459.
+
+The stable ID, source accession, collection URL, five named ingredients and preparation match the single maintained owner. The owner is the source of a future correction; no stock reference or kg_microbe_match is asserted. The base DSMZ 35 source is distinct from its separately labeled strain instructions.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:001459.
+
+All five base concentrations are supported; 15 native source-scoped decisions distinguish four already evidenced owner rows from generated evidence gaps, water/final-volume context and separately qualified strain instructions.
+
+[
+  {
+    "field_path": "ingredients[0].concentration",
+    "decision": "evidence_only",
+    "layer_decisions": {
+      "target": "evidence_only",
+      "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml": "verified"
+    },
+    "source_stage": "DSMZ 35 base medium, explicit final volume 1000 ml",
+    "source_snippets": [
+      {
+        "source_key": "mediadive35api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/35",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 1.86951,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd"
+      },
+      {
+        "source_key": "dsmz35",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf",
+        "source_locator": "DSMZ 35 page 1, base ingredient table",
+        "exact_source_quote": "NH4Cl 0.10 g",
+        "snapshot_sha256": "1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58",
+        "parsed_text_sha256": "486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906"
+      }
+    ],
+    "explanation": "Retain the unchanged base solute concentration and attach exact source support. The first four owner rows already have matching attached literal evidence; the generated rows and sulfur owner row do not.",
+    "source_name": "NH4Cl",
+    "source_original_amount": 0.1,
+    "source_original_unit": "g",
+    "primary_source_evidence_id": "dsmz35",
+    "arithmetic": "0.1 g / (1000 ml / 1000 ml per L) = 0.1 g/L; the primary explicitly states final volume and the provider independently prints g_l."
+  },
+  {
+    "field_path": "ingredients[1].concentration",
+    "decision": "evidence_only",
+    "layer_decisions": {
+      "target": "evidence_only",
+      "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml": "verified"
+    },
+    "source_stage": "DSMZ 35 base medium, explicit final volume 1000 ml",
+    "source_snippets": [
+      {
+        "source_key": "mediadive35api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/35",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\": 22.0449,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd"
+      },
+      {
+        "source_key": "dsmz35",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf",
+        "source_locator": "DSMZ 35 page 1, base ingredient table",
+        "exact_source_quote": "KH2PO4 3.00 g",
+        "snapshot_sha256": "1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58",
+        "parsed_text_sha256": "486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906"
+      }
+    ],
+    "explanation": "Retain the unchanged base solute concentration and attach exact source support. The first four owner rows already have matching attached literal evidence; the generated rows and sulfur owner row do not.",
+    "source_name": "KH2PO4",
+    "source_original_amount": 3,
+    "source_original_unit": "g",
+    "primary_source_evidence_id": "dsmz35",
+    "arithmetic": "3 g / (1000 ml / 1000 ml per L) = 3 g/L; the primary explicitly states final volume and the provider independently prints g_l."
+  },
+  {
+    "field_path": "ingredients[2].concentration",
+    "decision": "evidence_only",
+    "layer_decisions": {
+      "target": "evidence_only",
+      "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml": "verified"
+    },
+    "source_stage": "DSMZ 35 base medium, explicit final volume 1000 ml",
+    "source_snippets": [
+      {
+        "source_key": "mediadive35api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/35",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.491877,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd"
+      },
+      {
+        "source_key": "dsmz35",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf",
+        "source_locator": "DSMZ 35 page 1, base ingredient table",
+        "exact_source_quote": "MgCl2 x 6 H2O 0.10 g",
+        "snapshot_sha256": "1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58",
+        "parsed_text_sha256": "486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906"
+      }
+    ],
+    "explanation": "Retain the unchanged base solute concentration and attach exact source support. The first four owner rows already have matching attached literal evidence; the generated rows and sulfur owner row do not.",
+    "source_name": "MgCl2 x 6 H2O",
+    "source_original_amount": 0.1,
+    "source_original_unit": "g",
+    "primary_source_evidence_id": "dsmz35",
+    "arithmetic": "0.1 g / (1000 ml / 1000 ml per L) = 0.1 g/L; the primary explicitly states final volume and the provider independently prints g_l."
+  },
+  {
+    "field_path": "ingredients[3].concentration",
+    "decision": "evidence_only",
+    "layer_decisions": {
+      "target": "evidence_only",
+      "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml": "verified"
+    },
+    "source_stage": "DSMZ 35 base medium, explicit final volume 1000 ml",
+    "source_snippets": [
+      {
+        "source_key": "mediadive35api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/35",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.14,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.14,\n                        \"mmol_l\": 0.952284,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd"
+      },
+      {
+        "source_key": "dsmz35",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf",
+        "source_locator": "DSMZ 35 page 1, base ingredient table",
+        "exact_source_quote": "CaCl2 x 2 H2O 0.14 g",
+        "snapshot_sha256": "1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58",
+        "parsed_text_sha256": "486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906"
+      }
+    ],
+    "explanation": "Retain the unchanged base solute concentration and attach exact source support. The first four owner rows already have matching attached literal evidence; the generated rows and sulfur owner row do not.",
+    "source_name": "CaCl2 x 2 H2O",
+    "source_original_amount": 0.14,
+    "source_original_unit": "g",
+    "primary_source_evidence_id": "dsmz35",
+    "arithmetic": "0.14 g / (1000 ml / 1000 ml per L) = 0.14 g/L; the primary explicitly states final volume and the provider independently prints g_l."
+  },
+  {
+    "field_path": "ingredients[4].concentration",
+    "decision": "evidence_only",
+    "layer_decisions": {
+      "target": "evidence_only",
+      "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml": "evidence_only"
+    },
+    "source_stage": "DSMZ 35 base medium, explicit final volume 1000 ml",
+    "source_snippets": [
+      {
+        "source_key": "mediadive35api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/35",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Sulfur\",\n                        \"compound_id\": 80,\n                        \"condition\": \"\",\n                        \"attribute\": \"powdered\",\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 10,\n                        \"mmol_l\": 311.818,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd"
+      },
+      {
+        "source_key": "dsmz35",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf",
+        "source_locator": "DSMZ 35 page 1, base ingredient table",
+        "exact_source_quote": "Sulfur (powdered) 10.00 g",
+        "snapshot_sha256": "1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58",
+        "parsed_text_sha256": "486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906"
+      }
+    ],
+    "explanation": "Retain the unchanged base solute concentration and attach exact source support. The first four owner rows already have matching attached literal evidence; the generated rows and sulfur owner row do not.",
+    "source_name": "Sulfur",
+    "source_original_amount": 10,
+    "source_original_unit": "g",
+    "primary_source_evidence_id": "dsmz35",
+    "arithmetic": "10 g / (1000 ml / 1000 ml per L) = 10 g/L; the primary explicitly states final volume and the provider independently prints g_l."
+  },
+  {
+    "field_path": "preparation.water_batch",
+    "decision": "add",
+    "layer_decisions": {
+      "target": "add",
+      "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml": "add"
+    },
+    "source_stage": "DSMZ 35 base medium, explicit final volume 1000 ml",
+    "source_snippets": [
+      {
+        "source_key": "mediadive35api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/35",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd"
+      },
+      {
+        "source_key": "dsmz35",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf",
+        "source_locator": "DSMZ 35 page 1, base ingredient table",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58",
+        "parsed_text_sha256": "486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906"
+      }
+    ],
+    "explanation": "Retain the literal 1000 ml distilled-water row and explicit final-volume basis in scoped preparation/evidence; do not create a water mass concentration.",
+    "source_name": "Distilled water",
+    "source_original_amount": 1000,
+    "source_original_unit": "ml",
+    "primary_source_evidence_id": "dsmz35"
+  },
+  {
+    "field_path": "preparation.final_volume",
+    "decision": "add",
+    "layer_decisions": {
+      "target": "add",
+      "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml": "add"
+    },
+    "source_stage": "Complete base medium",
+    "source_snippets": [
+      {
+        "source_key": "dsmz35",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf",
+        "source_locator": "DSMZ 35 page 1, header or specifically named preparation/strain clause",
+        "exact_source_quote": "Final volume: 1000 ml",
+        "snapshot_sha256": "1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58",
+        "parsed_text_sha256": "486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906"
+      }
+    ],
+    "explanation": "Retain the explicit primary final-volume header; the local G_PER_L values agree, but the preparation does not state this batch basis.",
+    "primary_source_evidence_id": "dsmz35"
+  },
+  {
+    "field_path": "ph_value",
+    "decision": "evidence_only",
+    "layer_decisions": {
+      "target": "evidence_only",
+      "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml": "evidence_only"
+    },
+    "source_stage": "Complete base medium",
+    "source_snippets": [
+      {
+        "source_key": "dsmz35",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf",
+        "source_locator": "DSMZ 35 page 1, header or specifically named preparation/strain clause",
+        "exact_source_quote": "Final pH: 4.2",
+        "snapshot_sha256": "1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58",
+        "parsed_text_sha256": "486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906"
+      }
+    ],
+    "explanation": "The local 4.2 endpoint agrees; attach source evidence without changing it.",
+    "primary_source_evidence_id": "dsmz35"
+  },
+  {
+    "field_path": "preparation_steps[0].sulfur_temperature",
+    "decision": "evidence_only",
+    "layer_decisions": {
+      "target": "evidence_only",
+      "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml": "evidence_only"
+    },
+    "source_stage": "Separate sulfur sterilization",
+    "source_snippets": [
+      {
+        "source_key": "dsmz35",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf",
+        "source_locator": "DSMZ 35 page 1, header or specifically named preparation/strain clause",
+        "exact_source_quote": "90 - 100°C",
+        "snapshot_sha256": "1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58",
+        "parsed_text_sha256": "486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906"
+      }
+    ],
+    "explanation": "Retain the exact range, not a midpoint or an autoclave temperature.",
+    "primary_source_evidence_id": "dsmz35"
+  },
+  {
+    "field_path": "preparation_steps[0].sulfur_duration",
+    "decision": "evidence_only",
+    "layer_decisions": {
+      "target": "evidence_only",
+      "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml": "evidence_only"
+    },
+    "source_stage": "Separate sulfur sterilization, each day",
+    "source_snippets": [
+      {
+        "source_key": "dsmz35",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf",
+        "source_locator": "DSMZ 35 page 1, header or specifically named preparation/strain clause",
+        "exact_source_quote": "3 hours",
+        "snapshot_sha256": "1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58",
+        "parsed_text_sha256": "486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906"
+      }
+    ],
+    "explanation": "Retain 3 hours per treatment; this is not incubation duration.",
+    "primary_source_evidence_id": "dsmz35"
+  },
+  {
+    "field_path": "preparation_steps[0].successive_days",
+    "decision": "evidence_only",
+    "layer_decisions": {
+      "target": "evidence_only",
+      "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml": "evidence_only"
+    },
+    "source_stage": "Separate sulfur sterilization",
+    "source_snippets": [
+      {
+        "source_key": "dsmz35",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf",
+        "source_locator": "DSMZ 35 page 1, header or specifically named preparation/strain clause",
+        "exact_source_quote": "each of three successive days",
+        "snapshot_sha256": "1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58",
+        "parsed_text_sha256": "486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906"
+      }
+    ],
+    "explanation": "Retain all three successive days and the subsequent aseptic layering.",
+    "primary_source_evidence_id": "dsmz35"
+  },
+  {
+    "field_path": "preparation_steps[0].wetting_water",
+    "decision": "not_quantified",
+    "layer_decisions": {
+      "target": "not_quantified",
+      "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml": "not_quantified"
+    },
+    "source_stage": "Separate sulfur wetting",
+    "source_snippets": [
+      {
+        "source_key": "dsmz35",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf",
+        "source_locator": "DSMZ 35 page 1, header or specifically named preparation/strain clause",
+        "exact_source_quote": "wet with a few drops of",
+        "snapshot_sha256": "1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58",
+        "parsed_text_sha256": "486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906"
+      }
+    ],
+    "explanation": "The source gives a nonfixed few-drop amount, already retained. Do not substitute a measured volume.",
+    "primary_source_evidence_id": "dsmz35"
+  },
+  {
+    "field_path": "source_variant.DSM612.yeast_extract",
+    "decision": "add",
+    "layer_decisions": {
+      "target": "add",
+      "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml": "add"
+    },
+    "source_stage": "DSM 612 only",
+    "source_snippets": [
+      {
+        "source_key": "dsmz35",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf",
+        "source_locator": "DSMZ 35 page 1, header or specifically named preparation/strain clause",
+        "exact_source_quote": "0.10 g/l yeast extract (sterilized separately)",
+        "snapshot_sha256": "1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58",
+        "parsed_text_sha256": "486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906"
+      }
+    ],
+    "explanation": "Source-only conditional supplement; retain as a qualified variant/context note if represented, never as an unconditional base ingredient.",
+    "primary_source_evidence_id": "dsmz35"
+  },
+  {
+    "field_path": "source_variant.DSM9463.pH",
+    "decision": "add",
+    "layer_decisions": {
+      "target": "add",
+      "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml": "add"
+    },
+    "source_stage": "DSM 9463 only",
+    "source_snippets": [
+      {
+        "source_key": "dsmz35",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf",
+        "source_locator": "DSMZ 35 page 1, header or specifically named preparation/strain clause",
+        "exact_source_quote": "For DSM 9463: Adjust pH of the complete medium to 3.5.",
+        "snapshot_sha256": "1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58",
+        "parsed_text_sha256": "486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906"
+      }
+    ],
+    "explanation": "Source-only conditional pH 3.5; it does not contradict the base 4.2.",
+    "primary_source_evidence_id": "dsmz35"
+  },
+  {
+    "field_path": "source_variant.DSM105150.pH",
+    "decision": "add",
+    "layer_decisions": {
+      "target": "add",
+      "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml": "add"
+    },
+    "source_stage": "DSM 105150 only",
+    "source_snippets": [
+      {
+        "source_key": "dsmz35",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf",
+        "source_locator": "DSMZ 35 page 1, header or specifically named preparation/strain clause",
+        "exact_source_quote": "For DSM 105150: Adjust pH of complete medium to 3.0.",
+        "snapshot_sha256": "1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58",
+        "parsed_text_sha256": "486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906"
+      }
+    ],
+    "explanation": "Source-only conditional pH 3.0; do not broaden it to the base or infer organism identity.",
+    "primary_source_evidence_id": "dsmz35"
+  }
+]
+
+### Every supplied salt/hydrate and sulfur material scope
+
+grounding: supported. Targets: CultureMech:001459.
+
+NH4Cl, KH2PO4, magnesium chloride hexahydrate and calcium chloride dihydrate match their asserted primary and secondary terms. CHEBI:26833 is the source element-level sulfur identifier (OLS also carries CAS 7704-34-9); it does not encode the source physical qualifier powdered or establish an allotrope. Preserve that material qualifier without inventing a replacement ID, molecular form or molar conversion.
+
+### Sterilization, pH, static incubation and batch detail
+
+completeness: concern. Targets: CultureMech:001459.
+
+The local descriptions correctly retain pH 4.2, sulfur exclusion from basal autoclaving, wetting, 90–100°C for 3 hours on three successive days, aseptic layering and static incubation. No exact basal autoclave cycle is supplied by the source, so none is invented. The source water/final-volume statement and powdered sulfur qualifier are not explicit locally.
+
+### Base classification and source variants
+
+scope: supported. Targets: CultureMech:001459.
+
+DEFINED/DEFINED, bacterial placement and liquid basal medium agree with the base source. Layered particulate sulfur does not make this an agar-solid medium. DSM 612 yeast extract is a conditional source variant, not an ingredient of the base recipe; DSM 9463/105150 pH adjustments likewise remain separate. Missing optional organism fields do not establish a defect.
+
+### Existing evidence and generated freshness
+
+provenance: concern. Targets: CultureMech:001459.
+
+Four owner ingredient excerpts and their recorded response hash match the bound current MediaDive response exactly. The October owner enrichment is later than the August generated merge; the target has none of these four attached entries or the corresponding reference/history. Sulfur has no attached concentration evidence in either layer. Current merge code preserves owner fields, so the observed stale output is not evidence that current merging necessarily discards evidence.
+
+### Biological identifiers, cultivation claims and literature scope
+
+scope: supported. Targets: CultureMech:001459.
+
+The medium title, generic cultivation application and source-specific strain instructions do not establish an experimental growth result or a taxon/strain equivalence. No target-organism CURIE, genome assembly, DOI or PMID is asserted in the reviewed target or maintained owners. No organism identifier, incubation optimum or unreported growth claim is added. DSM accession-specific preparation notes are preserved only as collection instructions, not verified strain taxonomy or experimental growth claims.
+
+## Findings
+
+### f1: The generated copy omits later owner concentration evidence
+
+minor / open / confirmed; issue key: cm001459-concentration-evidence-generated-freshness.
+
+The four maintained mineral rows have exact matching source excerpts, but the older generated target lacks them and their bibliography. Sulfur is source-supported at 10 g/L but has no attached amount evidence in either layer. Values are supported; the gap is claim-level traceability and generated freshness.
+
+### f2: Explicit batch basis and powdered sulfur detail are omitted
+
+minor / open / confirmed; issue key: cm001459-source-batch-and-material-detail.
+
+The primary states final volume 1000 ml, distilled water 1000 ml and powdered sulfur. The local preparation retains the unusual sulfur treatment but omits these supporting batch/material details.
+
+### f3: The asserted sulfur secondary key is absent from the pinned MIM index
+
+major / open / confirmed; issue key: cm001459-secondary-sulfur-index-membership.
+
+Both layers assert CHEBI:26833 in mediaingredientmech_chebi_term, but exhaustive exact lookup of the packaged index finds no row for it. The primary CHEBI term exists and its label matches; that does not establish this secondary-index correspondence.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Preserve the four verified owner evidence objects, add exact sulfur amount support without changing supported values, and regenerate only after maintained-input review. Confirm the target retains those scoped entries.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Retain the explicit final-volume/water context and powdered qualifier with source evidence; keep the existing preparation sequence and do not infer an unstated autoclave cycle or sulfur allotrope.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Resolve the source-specific sulfur material against the current pinned MIM resolver contract and qualify, remove or correct the unsupported secondary linkage only with evidence. Preserve the valid primary term and supported 10 g/L amount; do not guess a replacement ID.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch018/176/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch018/176/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml:1:id: CultureMech:001459<br>./data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml:1:id: CultureMech:001459<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch018/source-preflight-bound/176/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 7 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| dsmz35 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf; Complete one-page DSMZ 35 recipe: final-volume/pH header, six table rows, both steps and three strain-specific notes | supports | DSMZ explicitly identifies a 1000 ml final volume, five solute masses, separate sulfur preparation and bounded strain modifications. |
+| mediadive35api | https://mediadive.dsmz.de/rest/medium/35; $.data.medium; $.data.solutions[0], complete recipe and steps | supports | Exact MediaDive medium 35 / main solution 49 reports the same base composition, volume 1000 ml and g_l values; its response hash matches the owner evidence capture. |
+| chebi26833 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26833; Exact OLS identifier, canonical label, obsolete flag and material scope | supports | CHEBI:26833 resolves to sulfur atom. This verifies ontology metadata, not membership in the pinned secondary MIM snapshot. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS identifier, canonical label, obsolete flag and material scope | supports | CHEBI:31206 resolves to ammonium chloride. This verifies ontology metadata, not membership in the pinned secondary MIM snapshot. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS identifier, canonical label, obsolete flag and material scope | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. This verifies ontology metadata, not membership in the pinned secondary MIM snapshot. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS identifier, canonical label, obsolete flag and material scope | supports | CHEBI:86158 resolves to calcium chloride dihydrate. This verifies ontology metadata, not membership in the pinned secondary MIM snapshot. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS identifier, canonical label, obsolete flag and material scope | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate. This verifies ontology metadata, not membership in the pinned secondary MIM snapshot. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Complete pinned index exact identifier-column lookup; adjacent metadata hash/source commit | partial | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "preferred_rows": {"CHEBI:26833": [], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, "missing_identifier": "CHEBI:26833"} |
+| history-metadata | data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml; data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml", "events": 7, "timestamp_issues": []}] |
+| existing-amount-evidence | data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml; Every existing attached ingredient excerpt, exact provider object and response hash | supports | [{"owner": "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml", "field_path": "ingredients[0].evidence", "literal_and_parsed_object_match": true, "response_sha256": "7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd"}, {"owner": "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml", "field_path": "ingredients[1].evidence", "literal_and_parsed_object_match": true, "response_sha256": "7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd"}, {"owner": "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml", "field_path": "ingredients[2].evidence", "literal_and_parsed_object_match": true, "response_sha256": "7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd"}, {"owner": "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml", "field_path": "ingredients[3].evidence", "literal_and_parsed_object_match": true, "response_sha256": "7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd"}] |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current MediaDive ingredient extraction skips water, uses explicit provider g_l before fallback amount/unit, and retains optional/condition notes. Current single-owner merge returns the maintained record with merge metadata; multi-owner merging requires compatible formulation assertions and retains scoped evidence. No generator is run and no historical import replay is claimed. |
+| writer-1 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current MediaDive ingredient extraction skips water, uses explicit provider g_l before fallback amount/unit, and retains optional/condition notes. Current single-owner merge returns the maintained record with merge metadata; multi-owner merging requires compatible formulation assertions and retains scoped evidence. No generator is run and no historical import replay is claimed. |
+| writer-2 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current MediaDive ingredient extraction skips water, uses explicit provider g_l before fallback amount/unit, and retains optional/condition notes. Current single-owner merge returns the maintained record with merge metadata; multi-owner merging requires compatible formulation assertions and retains scoped evidence. No generator is run and no historical import replay is claimed. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch018/176/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- No source-specified basal autoclave temperature/duration or growth incubation temperature/duration is available in the inspected recipe. This does not justify typical-value supplementation.
+- The three collection strain notes were bounded and read; separate taxonomic identity, equivalence and growth experiments were not investigated because none is asserted locally.
+- The sulfur ontology identifier is assessed at element-level scope. Supplier particle size, purity and allotrope are not specified or verified. Secondary-key absence is limited to the inspected packaged MIM snapshot, not all current remote MIM data.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T112249Z-culturemech-001459-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: acidithiobacillus_medium (CultureMech:001459)'
+started_at: '2026-10-21T11:17:53Z'
+finished_at: '2026-10-21T11:22:49Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The five base-medium concentrations, pH and staged sulfur preparation agree
+  with DSMZ 35. Sulfur has a valid primary ontology identity but its asserted secondary
+  key is absent from the pinned MIM index. The generated copy omits later owner evidence;
+  source batch/material details and conditional strain scope require bounded follow-up.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml
+    sha256: 1c30fd9cd1f04797a0c80e58ff675f0f8f1d94f186c4fdec8163efe6915f0e87
+    role: target
+  - path: data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml
+    sha256: 4022a88ae9ba6a8fa8d0933d2d022b70cdf079f83355642dc0ba93b1737dee87
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_io.py
+    sha256: bff4715f85d7ff2ff681b88f0a2de2667e5767d7a2c196bd50a37d5d329957ac
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 176; batch 018 item 6 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding seventeen task batches
+    contain 170 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 172 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001459
+targets:
+- target_id: CultureMech:001459
+  path: data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml
+  label: acidithiobacillus_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001459
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch018/176/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch018/176/strict.tsv"
+  target_ids:
+  - CultureMech:001459
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001459
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001459
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001459
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T11:22:48Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T11:22:48Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:19:08.747901Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch018/176/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:19:10.947059Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch018/176/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:19:15.501263Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:19:19.189687Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T11:22:48Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml:1:id: CultureMech:001459
+
+    ./data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml:1:id: CultureMech:001459
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch018/source-preflight-bound/176/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T11:22:48Z'
+  support: supports
+  summary: 7 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 414b6ed331ccfffccc7c0f67357fdd860f8e9a8f9658d9650a79d345380c97f8
+- evidence_id: dsmz35
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf
+  locator: 'Complete one-page DSMZ 35 recipe: final-volume/pH header, six table rows,
+    both steps and three strain-specific notes'
+  accessed_at: '2026-10-21T11:01:46.544439Z'
+  support: supports
+  summary: DSMZ explicitly identifies a 1000 ml final volume, five solute masses,
+    separate sulfur preparation and bounded strain modifications.
+  snapshot_sha256: 1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58
+- evidence_id: mediadive35api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/35
+  locator: $.data.medium; $.data.solutions[0], complete recipe and steps
+  accessed_at: '2026-10-21T11:01:44.785265Z'
+  support: supports
+  summary: Exact MediaDive medium 35 / main solution 49 reports the same base composition,
+    volume 1000 ml and g_l values; its response hash matches the owner evidence capture.
+  snapshot_sha256: 7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd
+- evidence_id: chebi26833
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26833
+  locator: Exact OLS identifier, canonical label, obsolete flag and material scope
+  accessed_at: '2026-10-20T06:55:04.114839Z'
+  support: supports
+  summary: CHEBI:26833 resolves to sulfur atom. This verifies ontology metadata, not
+    membership in the pinned secondary MIM snapshot.
+  snapshot_sha256: 34952547270a6bcbbfa3a3699082c8d5359e51d0f90518ab9ca5400494a8ae33
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS identifier, canonical label, obsolete flag and material scope
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. This verifies ontology metadata,
+    not membership in the pinned secondary MIM snapshot.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS identifier, canonical label, obsolete flag and material scope
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. This verifies ontology
+    metadata, not membership in the pinned secondary MIM snapshot.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS identifier, canonical label, obsolete flag and material scope
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. This verifies ontology
+    metadata, not membership in the pinned secondary MIM snapshot.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS identifier, canonical label, obsolete flag and material scope
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. This verifies
+    ontology metadata, not membership in the pinned secondary MIM snapshot.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete pinned index exact identifier-column lookup; adjacent metadata
+    hash/source commit
+  accessed_at: '2026-10-21T11:22:48Z'
+  support: partial
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "preferred_rows":
+    {"CHEBI:26833": [], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term",
+    "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label":
+    "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86345":
+    [{"label": "Magnesium chloride", "match_type": "preferred_term", "identifier":
+    "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id": "CHEBI:86345",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term":
+    "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}, "missing_identifier": "CHEBI:26833"}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+  search_scope: All rows of the exact packaged index, plus rg --no-ignore --hidden
+    exact CHEBI:26833 search returning 1 with no hits; no remote/global absence claim.
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ACIDITHIOBACILLUS_MEDIUM.yaml; data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T11:22:48Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+- evidence_id: existing-amount-evidence
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml
+  locator: Every existing attached ingredient excerpt, exact provider object and response
+    hash
+  accessed_at: '2026-10-21T11:22:48Z'
+  support: supports
+  summary: '[{"owner": "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml",
+    "field_path": "ingredients[0].evidence", "literal_and_parsed_object_match": true,
+    "response_sha256": "7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd"},
+    {"owner": "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml", "field_path":
+    "ingredients[1].evidence", "literal_and_parsed_object_match": true, "response_sha256":
+    "7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd"}, {"owner":
+    "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml", "field_path":
+    "ingredients[2].evidence", "literal_and_parsed_object_match": true, "response_sha256":
+    "7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd"}, {"owner":
+    "data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml", "field_path":
+    "ingredients[3].evidence", "literal_and_parsed_object_match": true, "response_sha256":
+    "7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd"}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:22:48Z'
+  support: context_only
+  summary: Current MediaDive ingredient extraction skips water, uses explicit provider
+    g_l before fallback amount/unit, and retains optional/condition notes. Current
+    single-owner merge returns the maintained record with merge metadata; multi-owner
+    merging requires compatible formulation assertions and retains scoped evidence.
+    No generator is run and no historical import replay is claimed.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:22:48Z'
+  support: context_only
+  summary: Current MediaDive ingredient extraction skips water, uses explicit provider
+    g_l before fallback amount/unit, and retains optional/condition notes. Current
+    single-owner merge returns the maintained record with merge metadata; multi-owner
+    merging requires compatible formulation assertions and retains scoped evidence.
+    No generator is run and no historical import replay is claimed.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:22:48Z'
+  support: context_only
+  summary: Current MediaDive ingredient extraction skips water, uses explicit provider
+    g_l before fallback amount/unit, and retains optional/condition notes. Current
+    single-owner merge returns the maintained record with merge metadata; multi-owner
+    merging requires compatible formulation assertions and retains scoped evidence.
+    No generator is run and no historical import replay is claimed.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch018/176/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T11:22:48Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: f98372b08f2446a6064a1b75ecc66e0d5b3a52bf1147c84593b8913fbbd329db
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001459
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Every asserted ontology ID and pinned secondary key
+  outcome: concern
+  summary: All five primary and secondary term labels resolve to matching nonobsolete
+    OLS terms in both layers. Primary instance linkage is 5/5 (100%); asserted secondary
+    linkage is 5/5 (100%), but exact current MIM preferred-key membership is only
+    4/5 (80%). Sulfur CHEBI:26833 has zero rows anywhere in the pinned index. These
+    0–100 percent metrics use five ingredient instances as the denominator; they do
+    not measure scientific accuracy.
+  target_ids:
+  - CultureMech:001459
+  evidence_ids:
+  - record
+  - owner-0
+  - mim
+  - chebi26833
+  - chebi31206
+  - chebi63036
+  - chebi86158
+  - chebi86345
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 14 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:001459
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: DSMZ 35 and maintained ownership
+  outcome: supported
+  summary: The stable ID, source accession, collection URL, five named ingredients
+    and preparation match the single maintained owner. The owner is the source of
+    a future correction; no stock reference or kg_microbe_match is asserted. The base
+    DSMZ 35 source is distinct from its separately labeled strain instructions.
+  target_ids:
+  - CultureMech:001459
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz35
+  - mediadive35api
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: All five base concentrations are supported; 15 native source-scoped decisions
+    distinguish four already evidenced owner rows from generated evidence gaps, water/final-volume
+    context and separately qualified strain instructions.
+  target_ids:
+  - CultureMech:001459
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"field_path\": \"ingredients[0].concentration\",\n    \"\
+    decision\": \"evidence_only\",\n    \"layer_decisions\": {\n      \"target\":\
+    \ \"evidence_only\",\n      \"data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml\"\
+    : \"verified\"\n    },\n    \"source_stage\": \"DSMZ 35 base medium, explicit\
+    \ final volume 1000 ml\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive35api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/35\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 1,\\\
+    n                        \\\"compound\\\": \\\"NH4Cl\\\",\\n                 \
+    \       \\\"compound_id\\\": 42,\\n                        \\\"amount\\\": 0.1,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 0.1,\\n                        \\\"mmol_l\\\": 1.86951,\\n        \
+    \                \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz35\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf\",\n        \"\
+    source_locator\": \"DSMZ 35 page 1, base ingredient table\",\n        \"exact_source_quote\"\
+    : \"NH4Cl 0.10 g\",\n        \"snapshot_sha256\": \"1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58\"\
+    ,\n        \"parsed_text_sha256\": \"486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906\"\
+    \n      }\n    ],\n    \"explanation\": \"Retain the unchanged base solute concentration\
+    \ and attach exact source support. The first four owner rows already have matching\
+    \ attached literal evidence; the generated rows and sulfur owner row do not.\"\
+    ,\n    \"source_name\": \"NH4Cl\",\n    \"source_original_amount\": 0.1,\n   \
+    \ \"source_original_unit\": \"g\",\n    \"primary_source_evidence_id\": \"dsmz35\"\
+    ,\n    \"arithmetic\": \"0.1 g / (1000 ml / 1000 ml per L) = 0.1 g/L; the primary\
+    \ explicitly states final volume and the provider independently prints g_l.\"\n\
+    \  },\n  {\n    \"field_path\": \"ingredients[1].concentration\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"layer_decisions\": {\n      \"target\": \"evidence_only\"\
+    ,\n      \"data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml\": \"\
+    verified\"\n    },\n    \"source_stage\": \"DSMZ 35 base medium, explicit final\
+    \ volume 1000 ml\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive35api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/35\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[1]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 2,\\\
+    n                        \\\"compound\\\": \\\"KH2PO4\\\",\\n                \
+    \        \\\"compound_id\\\": 11,\\n                        \\\"amount\\\": 3,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 3,\\n                        \\\"mmol_l\\\": 22.0449,\\n          \
+    \              \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz35\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf\",\n        \"\
+    source_locator\": \"DSMZ 35 page 1, base ingredient table\",\n        \"exact_source_quote\"\
+    : \"KH2PO4 3.00 g\",\n        \"snapshot_sha256\": \"1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58\"\
+    ,\n        \"parsed_text_sha256\": \"486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906\"\
+    \n      }\n    ],\n    \"explanation\": \"Retain the unchanged base solute concentration\
+    \ and attach exact source support. The first four owner rows already have matching\
+    \ attached literal evidence; the generated rows and sulfur owner row do not.\"\
+    ,\n    \"source_name\": \"KH2PO4\",\n    \"source_original_amount\": 3,\n    \"\
+    source_original_unit\": \"g\",\n    \"primary_source_evidence_id\": \"dsmz35\"\
+    ,\n    \"arithmetic\": \"3 g / (1000 ml / 1000 ml per L) = 3 g/L; the primary\
+    \ explicitly states final volume and the provider independently prints g_l.\"\n\
+    \  },\n  {\n    \"field_path\": \"ingredients[2].concentration\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"layer_decisions\": {\n      \"target\": \"evidence_only\"\
+    ,\n      \"data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml\": \"\
+    verified\"\n    },\n    \"source_stage\": \"DSMZ 35 base medium, explicit final\
+    \ volume 1000 ml\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive35api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/35\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 3,\\\
+    n                        \\\"compound\\\": \\\"MgCl2 x 6 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 79,\\n                        \\\"amount\\\
+    \": 0.1,\\n                        \\\"unit\\\": \\\"g\\\",\\n               \
+    \         \\\"g_l\\\": 0.1,\\n                        \\\"mmol_l\\\": 0.491877,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz35\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf\",\n     \
+    \   \"source_locator\": \"DSMZ 35 page 1, base ingredient table\",\n        \"\
+    exact_source_quote\": \"MgCl2 x 6 H2O 0.10 g\",\n        \"snapshot_sha256\":\
+    \ \"1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58\",\n    \
+    \    \"parsed_text_sha256\": \"486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906\"\
+    \n      }\n    ],\n    \"explanation\": \"Retain the unchanged base solute concentration\
+    \ and attach exact source support. The first four owner rows already have matching\
+    \ attached literal evidence; the generated rows and sulfur owner row do not.\"\
+    ,\n    \"source_name\": \"MgCl2 x 6 H2O\",\n    \"source_original_amount\": 0.1,\n\
+    \    \"source_original_unit\": \"g\",\n    \"primary_source_evidence_id\": \"\
+    dsmz35\",\n    \"arithmetic\": \"0.1 g / (1000 ml / 1000 ml per L) = 0.1 g/L;\
+    \ the primary explicitly states final volume and the provider independently prints\
+    \ g_l.\"\n  },\n  {\n    \"field_path\": \"ingredients[3].concentration\",\n \
+    \   \"decision\": \"evidence_only\",\n    \"layer_decisions\": {\n      \"target\"\
+    : \"evidence_only\",\n      \"data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml\"\
+    : \"verified\"\n    },\n    \"source_stage\": \"DSMZ 35 base medium, explicit\
+    \ final volume 1000 ml\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive35api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/35\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 7,\\n                        \\\"amount\\\
+    \": 0.14,\\n                        \\\"unit\\\": \\\"g\\\",\\n              \
+    \          \\\"g_l\\\": 0.14,\\n                        \\\"mmol_l\\\": 0.952284,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz35\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf\",\n     \
+    \   \"source_locator\": \"DSMZ 35 page 1, base ingredient table\",\n        \"\
+    exact_source_quote\": \"CaCl2 x 2 H2O 0.14 g\",\n        \"snapshot_sha256\":\
+    \ \"1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58\",\n    \
+    \    \"parsed_text_sha256\": \"486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906\"\
+    \n      }\n    ],\n    \"explanation\": \"Retain the unchanged base solute concentration\
+    \ and attach exact source support. The first four owner rows already have matching\
+    \ attached literal evidence; the generated rows and sulfur owner row do not.\"\
+    ,\n    \"source_name\": \"CaCl2 x 2 H2O\",\n    \"source_original_amount\": 0.14,\n\
+    \    \"source_original_unit\": \"g\",\n    \"primary_source_evidence_id\": \"\
+    dsmz35\",\n    \"arithmetic\": \"0.14 g / (1000 ml / 1000 ml per L) = 0.14 g/L;\
+    \ the primary explicitly states final volume and the provider independently prints\
+    \ g_l.\"\n  },\n  {\n    \"field_path\": \"ingredients[4].concentration\",\n \
+    \   \"decision\": \"evidence_only\",\n    \"layer_decisions\": {\n      \"target\"\
+    : \"evidence_only\",\n      \"data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml\"\
+    : \"evidence_only\"\n    },\n    \"source_stage\": \"DSMZ 35 base medium, explicit\
+    \ final volume 1000 ml\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive35api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/35\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 5,\\\
+    n                        \\\"compound\\\": \\\"Sulfur\\\",\\n                \
+    \        \\\"compound_id\\\": 80,\\n                        \\\"condition\\\"\
+    : \\\"\\\",\\n                        \\\"attribute\\\": \\\"powdered\\\",\\n\
+    \                        \\\"amount\\\": 10,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 10,\\n                 \
+    \       \\\"mmol_l\\\": 311.818,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz35\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf\",\n     \
+    \   \"source_locator\": \"DSMZ 35 page 1, base ingredient table\",\n        \"\
+    exact_source_quote\": \"Sulfur (powdered) 10.00 g\",\n        \"snapshot_sha256\"\
+    : \"1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58\",\n    \
+    \    \"parsed_text_sha256\": \"486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906\"\
+    \n      }\n    ],\n    \"explanation\": \"Retain the unchanged base solute concentration\
+    \ and attach exact source support. The first four owner rows already have matching\
+    \ attached literal evidence; the generated rows and sulfur owner row do not.\"\
+    ,\n    \"source_name\": \"Sulfur\",\n    \"source_original_amount\": 10,\n   \
+    \ \"source_original_unit\": \"g\",\n    \"primary_source_evidence_id\": \"dsmz35\"\
+    ,\n    \"arithmetic\": \"10 g / (1000 ml / 1000 ml per L) = 10 g/L; the primary\
+    \ explicitly states final volume and the provider independently prints g_l.\"\n\
+    \  },\n  {\n    \"field_path\": \"preparation.water_batch\",\n    \"decision\"\
+    : \"add\",\n    \"layer_decisions\": {\n      \"target\": \"add\",\n      \"data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"DSMZ 35 base medium, explicit final\
+    \ volume 1000 ml\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive35api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/35\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[5]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 6,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 1000,\\n                        \\\"unit\\\": \\\"ml\\\",\\n             \
+    \           \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"7a979def231555ef8b54bb0feff6459e251e4eadc9589f51c4c24a7024d141fd\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz35\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf\",\n        \"\
+    source_locator\": \"DSMZ 35 page 1, base ingredient table\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58\"\
+    ,\n        \"parsed_text_sha256\": \"486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906\"\
+    \n      }\n    ],\n    \"explanation\": \"Retain the literal 1000 ml distilled-water\
+    \ row and explicit final-volume basis in scoped preparation/evidence; do not create\
+    \ a water mass concentration.\",\n    \"source_name\": \"Distilled water\",\n\
+    \    \"source_original_amount\": 1000,\n    \"source_original_unit\": \"ml\",\n\
+    \    \"primary_source_evidence_id\": \"dsmz35\"\n  },\n  {\n    \"field_path\"\
+    : \"preparation.final_volume\",\n    \"decision\": \"add\",\n    \"layer_decisions\"\
+    : {\n      \"target\": \"add\",\n      \"data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"Complete base medium\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz35\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf\",\n        \"\
+    source_locator\": \"DSMZ 35 page 1, header or specifically named preparation/strain\
+    \ clause\",\n        \"exact_source_quote\": \"Final volume: 1000 ml\",\n    \
+    \    \"snapshot_sha256\": \"1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58\"\
+    ,\n        \"parsed_text_sha256\": \"486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906\"\
+    \n      }\n    ],\n    \"explanation\": \"Retain the explicit primary final-volume\
+    \ header; the local G_PER_L values agree, but the preparation does not state this\
+    \ batch basis.\",\n    \"primary_source_evidence_id\": \"dsmz35\"\n  },\n  {\n\
+    \    \"field_path\": \"ph_value\",\n    \"decision\": \"evidence_only\",\n   \
+    \ \"layer_decisions\": {\n      \"target\": \"evidence_only\",\n      \"data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml\"\
+    : \"evidence_only\"\n    },\n    \"source_stage\": \"Complete base medium\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz35\",\n  \
+    \      \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 35 page 1, header or specifically named\
+    \ preparation/strain clause\",\n        \"exact_source_quote\": \"Final pH: 4.2\"\
+    ,\n        \"snapshot_sha256\": \"1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58\"\
+    ,\n        \"parsed_text_sha256\": \"486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906\"\
+    \n      }\n    ],\n    \"explanation\": \"The local 4.2 endpoint agrees; attach\
+    \ source evidence without changing it.\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz35\"\n  },\n  {\n    \"field_path\": \"preparation_steps[0].sulfur_temperature\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"layer_decisions\": {\n      \"\
+    target\": \"evidence_only\",\n      \"data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml\"\
+    : \"evidence_only\"\n    },\n    \"source_stage\": \"Separate sulfur sterilization\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz35\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 35 page 1, header or specifically named\
+    \ preparation/strain clause\",\n        \"exact_source_quote\": \"90 - 100°C\"\
+    ,\n        \"snapshot_sha256\": \"1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58\"\
+    ,\n        \"parsed_text_sha256\": \"486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906\"\
+    \n      }\n    ],\n    \"explanation\": \"Retain the exact range, not a midpoint\
+    \ or an autoclave temperature.\",\n    \"primary_source_evidence_id\": \"dsmz35\"\
+    \n  },\n  {\n    \"field_path\": \"preparation_steps[0].sulfur_duration\",\n \
+    \   \"decision\": \"evidence_only\",\n    \"layer_decisions\": {\n      \"target\"\
+    : \"evidence_only\",\n      \"data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml\"\
+    : \"evidence_only\"\n    },\n    \"source_stage\": \"Separate sulfur sterilization,\
+    \ each day\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz35\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 35 page 1, header or specifically named\
+    \ preparation/strain clause\",\n        \"exact_source_quote\": \"3 hours\",\n\
+    \        \"snapshot_sha256\": \"1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58\"\
+    ,\n        \"parsed_text_sha256\": \"486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906\"\
+    \n      }\n    ],\n    \"explanation\": \"Retain 3 hours per treatment; this is\
+    \ not incubation duration.\",\n    \"primary_source_evidence_id\": \"dsmz35\"\n\
+    \  },\n  {\n    \"field_path\": \"preparation_steps[0].successive_days\",\n  \
+    \  \"decision\": \"evidence_only\",\n    \"layer_decisions\": {\n      \"target\"\
+    : \"evidence_only\",\n      \"data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml\"\
+    : \"evidence_only\"\n    },\n    \"source_stage\": \"Separate sulfur sterilization\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz35\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 35 page 1, header or specifically named\
+    \ preparation/strain clause\",\n        \"exact_source_quote\": \"each of three\
+    \ successive days\",\n        \"snapshot_sha256\": \"1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58\"\
+    ,\n        \"parsed_text_sha256\": \"486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906\"\
+    \n      }\n    ],\n    \"explanation\": \"Retain all three successive days and\
+    \ the subsequent aseptic layering.\",\n    \"primary_source_evidence_id\": \"\
+    dsmz35\"\n  },\n  {\n    \"field_path\": \"preparation_steps[0].wetting_water\"\
+    ,\n    \"decision\": \"not_quantified\",\n    \"layer_decisions\": {\n      \"\
+    target\": \"not_quantified\",\n      \"data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml\"\
+    : \"not_quantified\"\n    },\n    \"source_stage\": \"Separate sulfur wetting\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz35\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 35 page 1, header or specifically named\
+    \ preparation/strain clause\",\n        \"exact_source_quote\": \"wet with a few\
+    \ drops of\",\n        \"snapshot_sha256\": \"1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58\"\
+    ,\n        \"parsed_text_sha256\": \"486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906\"\
+    \n      }\n    ],\n    \"explanation\": \"The source gives a nonfixed few-drop\
+    \ amount, already retained. Do not substitute a measured volume.\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz35\"\n  },\n  {\n    \"field_path\": \"source_variant.DSM612.yeast_extract\"\
+    ,\n    \"decision\": \"add\",\n    \"layer_decisions\": {\n      \"target\": \"\
+    add\",\n      \"data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"DSM 612 only\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz35\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf\",\n        \"\
+    source_locator\": \"DSMZ 35 page 1, header or specifically named preparation/strain\
+    \ clause\",\n        \"exact_source_quote\": \"0.10 g/l yeast extract (sterilized\
+    \ separately)\",\n        \"snapshot_sha256\": \"1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58\"\
+    ,\n        \"parsed_text_sha256\": \"486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906\"\
+    \n      }\n    ],\n    \"explanation\": \"Source-only conditional supplement;\
+    \ retain as a qualified variant/context note if represented, never as an unconditional\
+    \ base ingredient.\",\n    \"primary_source_evidence_id\": \"dsmz35\"\n  },\n\
+    \  {\n    \"field_path\": \"source_variant.DSM9463.pH\",\n    \"decision\": \"\
+    add\",\n    \"layer_decisions\": {\n      \"target\": \"add\",\n      \"data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"DSM 9463 only\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz35\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf\",\n        \"\
+    source_locator\": \"DSMZ 35 page 1, header or specifically named preparation/strain\
+    \ clause\",\n        \"exact_source_quote\": \"For DSM 9463: Adjust pH of the\
+    \ complete medium to 3.5.\",\n        \"snapshot_sha256\": \"1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58\"\
+    ,\n        \"parsed_text_sha256\": \"486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906\"\
+    \n      }\n    ],\n    \"explanation\": \"Source-only conditional pH 3.5; it does\
+    \ not contradict the base 4.2.\",\n    \"primary_source_evidence_id\": \"dsmz35\"\
+    \n  },\n  {\n    \"field_path\": \"source_variant.DSM105150.pH\",\n    \"decision\"\
+    : \"add\",\n    \"layer_decisions\": {\n      \"target\": \"add\",\n      \"data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"DSM 105150 only\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz35\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35.pdf\",\n        \"\
+    source_locator\": \"DSMZ 35 page 1, header or specifically named preparation/strain\
+    \ clause\",\n        \"exact_source_quote\": \"For DSM 105150: Adjust pH of complete\
+    \ medium to 3.0.\",\n        \"snapshot_sha256\": \"1c81117b7f6594c67d6430406fe877d103763ce841b9eb859cde175b206eba58\"\
+    ,\n        \"parsed_text_sha256\": \"486d4957bbefd75746eadc841a6669730d59647d4abefc2800b7b3367c008906\"\
+    \n      }\n    ],\n    \"explanation\": \"Source-only conditional pH 3.0; do not\
+    \ broaden it to the base or infer organism identity.\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz35\"\n  }\n]"
+- assessment_id: forms
+  area: grounding
+  topic: Every supplied salt/hydrate and sulfur material scope
+  outcome: supported
+  summary: NH4Cl, KH2PO4, magnesium chloride hexahydrate and calcium chloride dihydrate
+    match their asserted primary and secondary terms. CHEBI:26833 is the source element-level
+    sulfur identifier (OLS also carries CAS 7704-34-9); it does not encode the source
+    physical qualifier powdered or establish an allotrope. Preserve that material
+    qualifier without inventing a replacement ID, molecular form or molar conversion.
+  target_ids:
+  - CultureMech:001459
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz35
+  - chebi26833
+  - chebi31206
+  - chebi63036
+  - chebi86158
+  - chebi86345
+- assessment_id: preparation
+  area: completeness
+  topic: Sterilization, pH, static incubation and batch detail
+  outcome: concern
+  summary: The local descriptions correctly retain pH 4.2, sulfur exclusion from basal
+    autoclaving, wetting, 90–100°C for 3 hours on three successive days, aseptic layering
+    and static incubation. No exact basal autoclave cycle is supplied by the source,
+    so none is invented. The source water/final-volume statement and powdered sulfur
+    qualifier are not explicit locally.
+  target_ids:
+  - CultureMech:001459
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz35
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Base classification and source variants
+  outcome: supported
+  summary: DEFINED/DEFINED, bacterial placement and liquid basal medium agree with
+    the base source. Layered particulate sulfur does not make this an agar-solid medium.
+    DSM 612 yeast extract is a conditional source variant, not an ingredient of the
+    base recipe; DSM 9463/105150 pH adjustments likewise remain separate. Missing
+    optional organism fields do not establish a defect.
+  target_ids:
+  - CultureMech:001459
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz35
+  - mediadive35api
+- assessment_id: provenance
+  area: provenance
+  topic: Existing evidence and generated freshness
+  outcome: concern
+  summary: Four owner ingredient excerpts and their recorded response hash match the
+    bound current MediaDive response exactly. The October owner enrichment is later
+    than the August generated merge; the target has none of these four attached entries
+    or the corresponding reference/history. Sulfur has no attached concentration evidence
+    in either layer. Current merge code preserves owner fields, so the observed stale
+    output is not evidence that current merging necessarily discards evidence.
+  target_ids:
+  - CultureMech:001459
+  evidence_ids:
+  - record
+  - owner-0
+  - existing-amount-evidence
+  - history-metadata
+  - writer-1
+  - writer-2
+- assessment_id: biology
+  area: scope
+  topic: Biological identifiers, cultivation claims and literature scope
+  outcome: supported
+  summary: The medium title, generic cultivation application and source-specific strain
+    instructions do not establish an experimental growth result or a taxon/strain
+    equivalence. No target-organism CURIE, genome assembly, DOI or PMID is asserted
+    in the reviewed target or maintained owners. No organism identifier, incubation
+    optimum or unreported growth claim is added. DSM accession-specific preparation
+    notes are preserved only as collection instructions, not verified strain taxonomy
+    or experimental growth claims.
+  target_ids:
+  - CultureMech:001459
+  evidence_ids:
+  - record
+  - owner-0
+findings:
+- finding_id: f1
+  issue_key: cm001459-concentration-evidence-generated-freshness
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The generated copy omits later owner concentration evidence
+  description: The four maintained mineral rows have exact matching source excerpts,
+    but the older generated target lacks them and their bibliography. Sulfur is source-supported
+    at 10 g/L but has no attached amount evidence in either layer. Values are supported;
+    the gap is claim-level traceability and generated freshness.
+  target_ids:
+  - CultureMech:001459
+  field_paths:
+  - ingredients[*].evidence
+  - references
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - existing-amount-evidence
+  - dsmz35
+  - mediadive35api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4.3 is normalized to minor because the generated record lacks
+    existing claim-level evidence and bibliography, while independent primary/provider
+    review supports the current numerical values.
+- finding_id: f2
+  issue_key: cm001459-source-batch-and-material-detail
+  category: completeness
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Explicit batch basis and powdered sulfur detail are omitted
+  description: The primary states final volume 1000 ml, distilled water 1000 ml and
+    powdered sulfur. The local preparation retains the unusual sulfur treatment but
+    omits these supporting batch/material details.
+  target_ids:
+  - CultureMech:001459
+  field_paths:
+  - preparation_steps
+  - ingredients[4].preferred_term
+  - ingredients[4].notes
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz35
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm001459-secondary-sulfur-index-membership
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The asserted sulfur secondary key is absent from the pinned MIM index
+  description: Both layers assert CHEBI:26833 in mediaingredientmech_chebi_term, but
+    exhaustive exact lookup of the packaged index finds no row for it. The primary
+    CHEBI term exists and its label matches; that does not establish this secondary-index
+    correspondence.
+  target_ids:
+  - CultureMech:001459
+  field_paths:
+  - ingredients[4].mediaingredientmech_chebi_term
+  evidence_ids:
+  - record
+  - owner-0
+  - mim
+  - chebi26833
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Preserve the four verified owner evidence objects, add exact sulfur
+    amount support without changing supported values, and regenerate only after maintained-input
+    review. Confirm the target retains those scoped entries.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001459
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Retain the explicit final-volume/water context and powdered qualifier
+    with source evidence; keep the existing preparation sequence and do not infer
+    an unstated autoclave cycle or sulfur allotrope.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001459
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Resolve the source-specific sulfur material against the current pinned
+    MIM resolver contract and qualify, remove or correct the unsupported secondary
+    linkage only with evidence. Preserve the valid primary term and supported 10 g/L
+    amount; do not guess a replacement ID.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001459
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidithiobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- No source-specified basal autoclave temperature/duration or growth incubation temperature/duration
+  is available in the inspected recipe. This does not justify typical-value supplementation.
+- The three collection strain notes were bounded and read; separate taxonomic identity,
+  equivalence and growth experiments were not investigated because none is asserted
+  locally.
+- The sulfur ontology identifier is assessed at element-level scope. Supplier particle
+  size, purity and allotrope are not specified or verified. Secondary-key absence
+  is limited to the inspected packaged MIM snapshot, not all current remote MIM data.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-018
+- generated-medium
+```
